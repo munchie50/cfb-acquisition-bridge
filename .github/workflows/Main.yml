@@ -1,4 +1,4 @@
-name: CFB Cross-Source Adjudication
+name: CFB Semantic Canary
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  adjudicate:
+  semantic-canary:
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
@@ -21,302 +21,289 @@ jobs:
           sudo apt-get install -y r-base
           Rscript --version
 
-      - name: Acquire independent ESPN PBP
+      - name: Acquire primary PBP proof seasons
         run: |
           mkdir -p raw evidence
 
-          for YEAR in 2017 2018 2019 2020 2022 2025; do
+          for YEAR in 2017 2018 2022; do
             curl --fail --location --retry 3 \
-              --output "raw/espn_${YEAR}.rds" \
-              "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/espn_cfb_pbp/play_by_play_${YEAR}.rds"
+              --output "raw/pbp_${YEAR}.rds" \
+              "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"
           done
 
-      - name: Cross-source adjudication
+      - name: Inspect canary semantics and freeze lineage evidence
         shell: Rscript {0}
         run: |
-          dir.create("evidence", showWarnings = FALSE)
-
-          regular_missing <- c(
-            "400935239",
-            "400941794",
-            "400944860",
-            "400944873",
-            "401015050",
-            "401019521",
-            "401121942",
-            "401260158",
-            "401265699",
-            "401267165",
-            "401267166",
-            "401269375",
-            "401269376",
-            "401269378",
-            "401269381",
-            "401269382",
-            "401269384"
+          dir.create(
+            "evidence",
+            showWarnings = FALSE
           )
 
-          primitive_exception_games <- c(
-            "401403882",
-            "401403885",
-            "401403886",
-            "401403888",
-            "401403994",
-            "401756900"
+          required <- c(
+            "game_id",
+            "id_play",
+            "pos_team",
+            "def_pos_team",
+            "play_type",
+            "play_text",
+            "down",
+            "distance",
+            "yards_gained",
+            "period"
           )
 
-          years <- c(
-            2017, 2018, 2019,
-            2020, 2022, 2025
+          semantic_candidates <- c(
+            "rush",
+            "pass",
+            "turnover",
+            "turnover_indicator",
+            "fumble_lost",
+            "interception",
+            "scoring_play",
+            "offense_play",
+            "defense_play",
+            "drive_id",
+            "home",
+            "away",
+            "home_score",
+            "away_score",
+            "pos_team_score",
+            "def_pos_team_score",
+            "start_time",
+            "game_date",
+            "week",
+            "season_type",
+            "completed"
           )
 
-          coverage <- list()
-          exception_rows <- list()
-          schema_rows <- list()
+          schema <- list()
+          samples <- list()
 
-          for (year in years) {
+          for (year in c(
+            2017,
+            2018,
+            2022
+          )) {
 
             x <- readRDS(
-              sprintf("raw/espn_%d.rds", year)
+              sprintf(
+                "raw/pbp_%d.rds",
+                year
+              )
             )
 
-            game_col <- intersect(
-              c(
-                "game_id",
-                "gameId",
-                "id_game",
-                "id"
-              ),
+            missing_required <- setdiff(
+              required,
               names(x)
             )
 
-            if (length(game_col) == 0) {
+            if (
+              length(
+                missing_required
+              ) > 0
+            ) {
               stop(
                 paste(
                   year,
-                  "has no recognized game ID column"
+                  "missing required columns:",
+                  paste(
+                    missing_required,
+                    collapse = ","
+                  )
                 )
               )
             }
 
-            game_col <- game_col[[1]]
-
-            x$game_id_chr <-
-              as.character(x[[game_col]])
-
-            schema_rows[[as.character(year)]] <-
-              data.frame(
-                season = year,
-                rows = nrow(x),
-                columns = ncol(x),
-                game_id_column = game_col,
-                unique_games =
-                  length(unique(
-                    x$game_id_chr[
-                      !is.na(x$game_id_chr)
-                    ]
-                  )),
-                stringsAsFactors = FALSE
-              )
-
-            target_missing <- intersect(
-              regular_missing,
-              unique(x$game_id_chr)
+            available_semantics <- intersect(
+              semantic_candidates,
+              names(x)
             )
 
-            for (gid in regular_missing) {
+            schema[[
+              as.character(year)
+            ]] <- data.frame(
+              season = year,
+              rows = nrow(x),
+              columns = ncol(x),
+              unique_games =
+                length(
+                  unique(
+                    as.character(
+                      x$game_id
+                    )
+                  )
+                ),
+              required_columns_present =
+                TRUE,
+              semantic_columns =
+                paste(
+                  available_semantics,
+                  collapse = "|"
+                ),
+              stringsAsFactors = FALSE
+            )
 
-              if (!(gid %in% unique(x$game_id_chr))) {
-                next
-              }
-
-              g <- x[
-                x$game_id_chr == gid,
-                ,
-                drop = FALSE
-              ]
-
-              coverage[[paste(year, gid)]] <-
-                data.frame(
-                  season = year,
-                  game_id = gid,
-                  rows = nrow(g),
-                  columns = ncol(g),
-                  source = "espn_cfb_pbp",
-                  classification =
-                    "ALTERNATE_SOURCE_PRESENT",
-                  stringsAsFactors = FALSE
+            gids <- sort(
+              unique(
+                as.character(
+                  x$game_id
                 )
-            }
+              )
+            )
 
-            for (gid in primitive_exception_games) {
+            gids <- gids[
+              !is.na(gids)
+            ]
 
-              if (!(gid %in% unique(x$game_id_chr))) {
-                next
-              }
+            pick <- unique(
+              gids[
+                c(
+                  1,
+                  ceiling(
+                    length(gids) / 2
+                  ),
+                  length(gids)
+                )
+              ]
+            )
+
+            for (gid in pick) {
 
               g <- x[
-                x$game_id_chr == gid,
+                as.character(
+                  x$game_id
+                ) == gid,
                 ,
                 drop = FALSE
               ]
 
-              wanted <- intersect(
+              keep <- intersect(
                 c(
-                  "game_id_chr",
-                  "game_id",
-                  "id_play",
-                  "play_id",
-                  "period",
-                  "clock",
-                  "clock_minutes",
-                  "clock_seconds",
-                  "down",
-                  "distance",
-                  "yards_to_goal",
-                  "yards_gained",
-                  "play_type",
-                  "play_text",
-                  "text",
-                  "pos_team",
-                  "def_pos_team",
-                  "drive_id",
-                  "rush",
-                  "pass",
-                  "scoring_play",
-                  "turnover_indicator"
+                  required,
+                  semantic_candidates
                 ),
                 names(g)
               )
 
-              z <- g[, wanted, drop=FALSE]
-              z$adjudication_season <- year
-              z$adjudication_game_id <- gid
+              z <- g[
+                ,
+                keep,
+                drop = FALSE
+              ]
 
-              exception_rows[[paste(year, gid)]] <- z
+              z$canary_season <-
+                year
+
+              z$canary_game_id <-
+                gid
+
+              samples[[
+                paste(
+                  year,
+                  gid
+                )
+              ]] <- z
             }
-
-            cat(
-              "ESPN_SOURCE",
-              year,
-              "ROWS", nrow(x),
-              "GAMES",
-              length(unique(
-                x$game_id_chr[
-                  !is.na(x$game_id_chr)
-                ]
-              )),
-              "MISSING_TARGETS_FOUND",
-              length(target_missing),
-              "\n"
-            )
-          }
-
-          schema <- do.call(
-            rbind,
-            schema_rows
-          )
-
-          write.csv(
-            schema,
-            "evidence/espn_schema_summary.csv",
-            row.names = FALSE
-          )
-
-          if (length(coverage) > 0) {
-            cov <- do.call(rbind, coverage)
-          } else {
-            cov <- data.frame(
-              season = integer(),
-              game_id = character(),
-              rows = integer(),
-              columns = integer(),
-              source = character(),
-              classification = character()
-            )
           }
 
           write.csv(
-            cov,
-            "evidence/alternate_source_coverage.csv",
+            do.call(
+              rbind,
+              schema
+            ),
+            "evidence/schema_contract_check.csv",
             row.names = FALSE
           )
 
-          found <- unique(cov$game_id)
-
-          unresolved <- setdiff(
-            regular_missing,
-            found
+          all_names <- unique(
+            unlist(
+              lapply(
+                samples,
+                names
+              )
+            )
           )
 
-          resolution <- data.frame(
-            game_id = regular_missing,
-            alternate_source_present =
-              regular_missing %in% found,
-            classification =
-              ifelse(
-                regular_missing %in% found,
-                "ALTERNATE_SOURCE_PRESENT",
-                "UNRESOLVED_AFTER_ESPN_RELEASE"
-              ),
-            stringsAsFactors = FALSE
-          )
+          aligned <- lapply(
+            samples,
+            function(z) {
 
-          write.csv(
-            resolution,
-            "evidence/missing_game_resolution.csv",
-            row.names = FALSE
-          )
-
-          if (length(exception_rows) > 0) {
-
-            all_names <- unique(unlist(
-              lapply(exception_rows, names)
-            ))
-
-            aligned <- lapply(
-              exception_rows,
-              function(z) {
-                miss <- setdiff(
+              for (
+                m in setdiff(
                   all_names,
                   names(z)
                 )
-
-                for (m in miss) {
-                  z[[m]] <- NA
-                }
-
-                z[, all_names, drop=FALSE]
+              ) {
+                z[[m]] <- NA
               }
-            )
 
-            exceptions <- do.call(
-              rbind,
-              aligned
-            )
-
-            write.csv(
-              exceptions,
-              "evidence/espn_exception_games.csv",
-              row.names = FALSE
-            )
-          }
-
-          cat(
-            "RESOLUTION",
-            "TARGETS", length(regular_missing),
-            "FOUND", length(found),
-            "UNRESOLVED", length(unresolved),
-            "\n"
+              z[
+                ,
+                all_names,
+                drop = FALSE
+              ]
+            }
           )
 
-          if (length(unresolved) > 0) {
-            cat(
-              "UNRESOLVED_IDS",
-              paste(unresolved, collapse=","),
-              "\n"
+          write.csv(
+            do.call(
+              rbind,
+              aligned
+            ),
+            "evidence/conceptual_input_samples.csv",
+            row.names = FALSE
+          )
+
+          contract <- list(
+            derivation_version =
+              "semantic_canary_v0.1",
+
+            proof_families = c(
+              "PRIOR_SCORING",
+              "PRIOR_PLAY_VOLUME",
+              "RAW_TURNOVER_RATE"
+            ),
+
+            temporal_invariant =
+              paste(
+                "every source_available_at",
+                "< target_prediction_cutoff"
+              ),
+
+            separate_tests = c(
+              "REPRODUCTION",
+              "LEAKAGE",
+              "APPLICABILITY",
+              "MISSINGNESS"
+            ),
+
+            no_history_policy =
+              paste(
+                "explicit applicable-no-prior-history;",
+                "never coerce to zero"
+              ),
+
+            no_fitting = TRUE,
+            no_tuning = TRUE,
+
+            no_test_outcome_optimization =
+              TRUE,
+
+            note = paste(
+              "This run freezes executable",
+              "input/schema evidence before",
+              "formulas are promoted.",
+              "It intentionally does not",
+              "infer scoring or turnover",
+              "semantics from column names alone."
             )
-          }
+          )
+
+          dput(
+            contract,
+            file =
+              "evidence/canary_contract.dput"
+          )
 
       - name: Freeze evidence hashes
         run: |
@@ -327,31 +314,50 @@ jobs:
 
           records = []
 
-          for p in sorted(Path("evidence").rglob("*")):
+          for p in sorted(
+              Path("evidence").rglob("*")
+          ):
               if (
                   p.is_file()
-                  and p.name != "evidence_manifest.json"
+                  and
+                  p.name !=
+                  "evidence_manifest.json"
               ):
-                  data = p.read_bytes()
+                  b = p.read_bytes()
+
                   records.append({
                       "filename":
-                          str(p.relative_to("evidence")),
-                      "bytes": len(data),
+                          str(
+                              p.relative_to(
+                                  "evidence"
+                              )
+                          ),
+                      "bytes":
+                          len(b),
                       "sha256":
-                          hashlib.sha256(data).hexdigest(),
+                          hashlib.sha256(
+                              b
+                          ).hexdigest(),
                   })
 
           manifest = {
               "scope":
-                  "CFB cross-source adjudication",
-              "primary_source":
-                  "cfbfastR_cfb_pbp",
-              "alternate_source":
-                  "espn_cfb_pbp",
-              "fitting_performed": False,
-              "tuning_performed": False,
-              "test_outcome_optimization": False,
-              "records": records,
+                  "CFB semantic canary input/schema proof",
+
+              "derivation_version":
+                  "semantic_canary_v0.1",
+
+              "fitting_performed":
+                  False,
+
+              "tuning_performed":
+                  False,
+
+              "test_outcome_optimization":
+                  False,
+
+              "records":
+                  records,
           }
 
           out = Path(
@@ -361,10 +367,10 @@ jobs:
           out.write_text(
               json.dumps(
                   manifest,
-                  indent=2,
-                  sort_keys=True
+                  indent = 2,
+                  sort_keys = True
               ) + "\n",
-              encoding="utf-8"
+              encoding = "utf-8"
           )
 
           print(
@@ -375,10 +381,10 @@ jobs:
           )
           PY
 
-      - name: Upload adjudication evidence
+      - name: Upload semantic canary evidence
         uses: actions/upload-artifact@v4
         with:
-          name: cfb-cross-source-adjudication
+          name: cfb-semantic-canary-input-proof
           path: evidence/
           if-no-files-found: error
           retention-days: 1
