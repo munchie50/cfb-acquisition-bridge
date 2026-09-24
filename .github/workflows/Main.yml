@@ -489,8 +489,7 @@ jobs:
                     ),
                   turnovers =
                     if (
-                      "turnover_indicator" %
-                      in% names(g)
+                      "turnover_indicator" %in% names(g)
                     ) {
                       sum(
                         g$turnover_indicator == 1,
