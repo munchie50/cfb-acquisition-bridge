@@ -1,4 +1,4 @@
-name: 2025 Schedule Canary
+name: CFB Schedule Acquisition 2016-2025
 
 on:
   workflow_dispatch:
@@ -14,14 +14,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Download original 2025 schedule bytes
+      - name: Acquire original schedule bytes
         run: |
           mkdir -p out
-          curl --fail --location --retry 3 \
-            --output out/cfb_schedules_2025.csv \
-            "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-data/main/schedules/csv/cfb_schedules_2025.csv"
 
-      - name: Hash and verify
+          for YEAR in {2016..2025}; do
+            echo "Downloading ${YEAR}"
+
+            curl --fail --location --retry 3 \
+              --output "out/cfb_schedules_${YEAR}.csv" \
+              "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-data/main/schedules/csv/cfb_schedules_${YEAR}.csv"
+          done
+
+      - name: Build deterministic evidence manifest
         run: |
           python - <<'PY'
           import csv
@@ -29,38 +34,71 @@ jobs:
           import json
           from pathlib import Path
 
-          p = Path("out/cfb_schedules_2025.csv")
-          data = p.read_bytes()
+          evidence = []
 
-          with p.open("r", encoding="utf-8-sig", newline="") as f:
-              rows = list(csv.reader(f))
+          for year in range(2016, 2026):
+              p = Path(f"out/cfb_schedules_{year}.csv")
+              data = p.read_bytes()
 
-          assert len(rows) == 3832, (
-              f"Expected 3832 CSV rows including header; got {len(rows)}"
-          )
+              with p.open(
+                  "r",
+                  encoding="utf-8-sig",
+                  newline=""
+              ) as f:
+                  rows = list(csv.reader(f))
+
+              if len(rows) < 2:
+                  raise RuntimeError(
+                      f"{year}: schedule has no data rows"
+                  )
+
+              item = {
+                  "season": year,
+                  "filename": p.name,
+                  "bytes": len(data),
+                  "sha256": hashlib.sha256(data).hexdigest(),
+                  "csv_rows_including_header": len(rows),
+                  "data_rows": len(rows) - 1,
+              }
+
+              evidence.append(item)
+
+              print(
+                  year,
+                  item["data_rows"],
+                  item["bytes"],
+                  item["sha256"],
+              )
 
           manifest = {
               "source": "SportsDataverse/cfbfastR-data",
-              "season": 2025,
-              "filename": p.name,
-              "bytes": len(data),
-              "sha256": hashlib.sha256(data).hexdigest(),
-              "csv_rows_including_header": len(rows),
-              "data_rows": len(rows) - 1,
+              "seasons": "2016-2025",
+              "files": evidence,
           }
 
-          Path("out/manifest.json").write_text(
-              json.dumps(manifest, indent=2) + "\n",
+          Path("out/schedule_manifest_2016_2025.json").write_text(
+              json.dumps(
+                  manifest,
+                  indent=2,
+                  sort_keys=True
+              ) + "\n",
               encoding="utf-8",
           )
 
-          print(json.dumps(manifest, indent=2))
+          manifest_bytes = Path(
+              "out/schedule_manifest_2016_2025.json"
+          ).read_bytes()
+
+          print(
+              "MANIFEST_SHA256",
+              hashlib.sha256(manifest_bytes).hexdigest()
+          )
           PY
 
-      - name: Upload canary evidence
+      - name: Upload schedule evidence
         uses: actions/upload-artifact@v4
         with:
-          name: cfb-schedule-2025-canary
+          name: cfb-schedules-2016-2025
           path: out/
           if-no-files-found: error
           retention-days: 1
