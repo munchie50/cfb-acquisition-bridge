@@ -43,6 +43,7 @@ jobs:
           seasonal <- list()
           fourth_exceptions <- list()
           range_exceptions <- list()
+          tod_exceptions <- list()
 
           for (year in 2016:2025) {
             x <- readRDS(sprintf("raw/pbp_%d.rds", year))
@@ -89,6 +90,23 @@ jobs:
               stringsAsFactors=FALSE
             )
 
+            tod_bad <- tod & (!fourth_attempt | gained_line)
+            ix0 <- which(tod_bad)
+            if (length(ix0)) {
+              tod_exceptions[[length(tod_exceptions)+1]] <- data.frame(
+                season=year, game_id=as.character(x$game_id[ix0]), id_play=as.character(x$id_play[ix0]),
+                pos_team=as.character(x$pos_team[ix0]), def_pos_team=as.character(x$def_pos_team[ix0]),
+                period=x$period[ix0], down=x$down[ix0], down_end=x$down_end[ix0],
+                distance=x$distance[ix0], yards_gained=x$yards_gained[ix0],
+                rush=x$rush[ix0], pass=x$pass[ix0], pass_attempt=x$pass_attempt[ix0],
+                downs_turnover=x$downs_turnover[ix0],
+                play_type=as.character(x$play_type[ix0]), play_text=as.character(x$play_text[ix0]),
+                drive_result=as.character(x$drive_result[ix0]),
+                drive_result_detailed=as.character(x$drive_result_detailed[ix0]),
+                stringsAsFactors=FALSE
+              )
+            }
+
             ix <- which(unexplained_fourth_failure)
             if (length(ix)) {
               fourth_exceptions[[length(fourth_exceptions)+1]] <- data.frame(
@@ -117,6 +135,12 @@ jobs:
 
           seasonal <- do.call(rbind, seasonal)
           write.csv(seasonal, "evidence/seasonal_semantic_audit.csv", row.names=FALSE)
+
+          if (length(tod_exceptions)) {
+            write.csv(do.call(rbind,tod_exceptions), "evidence/downs_turnover_counterexamples.csv", row.names=FALSE)
+          } else {
+            write.csv(data.frame(), "evidence/downs_turnover_counterexamples.csv", row.names=FALSE)
+          }
 
           if (length(fourth_exceptions)) {
             write.csv(do.call(rbind,fourth_exceptions), "evidence/fourth_down_unexplained.csv", row.names=FALSE)
@@ -165,7 +189,7 @@ jobs:
           import csv, hashlib, json
           from pathlib import Path
           e=Path("evidence")
-          req=["seasonal_semantic_audit.csv","fourth_down_unexplained.csv","range_exception_rows.csv","canary_contract_v05.dput"]
+          req=["seasonal_semantic_audit.csv","downs_turnover_counterexamples.csv","fourth_down_unexplained.csv","range_exception_rows.csv","canary_contract_v05.dput"]
           for n in req:
               if not (e/n).is_file(): raise SystemExit(f"missing {n}")
           with (e/"seasonal_semantic_audit.csv").open() as f:
