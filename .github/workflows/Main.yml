@@ -19,19 +19,17 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y r-base
-          Rscript --version
 
       - name: Acquire primary PBP proof seasons
         run: |
           mkdir -p raw evidence
-
           for YEAR in 2017 2018 2022; do
             curl --fail --location --retry 3 \
               --output "raw/pbp_${YEAR}.rds" \
               "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"
           done
 
-      - name: Inspect canary semantics and freeze lineage evidence
+      - name: Prove football semantics and lineage inputs
         shell: Rscript {0}
         run: |
           dir.create(
@@ -39,45 +37,8 @@ jobs:
             showWarnings = FALSE
           )
 
-          required <- c(
-            "game_id",
-            "id_play",
-            "pos_team",
-            "def_pos_team",
-            "play_type",
-            "play_text",
-            "down",
-            "distance",
-            "yards_gained",
-            "period"
-          )
-
-          semantic_candidates <- c(
-            "rush",
-            "pass",
-            "turnover",
-            "turnover_indicator",
-            "fumble_lost",
-            "interception",
-            "scoring_play",
-            "offense_play",
-            "defense_play",
-            "drive_id",
-            "home",
-            "away",
-            "home_score",
-            "away_score",
-            "pos_team_score",
-            "def_pos_team_score",
-            "start_time",
-            "game_date",
-            "week",
-            "season_type",
-            "completed"
-          )
-
-          schema <- list()
-          samples <- list()
+          out <- list()
+          k <- 0
 
           for (year in c(
             2017,
@@ -92,217 +53,365 @@ jobs:
               )
             )
 
-            missing_required <- setdiff(
-              required,
+            need <- c(
+              "game_id",
+              "id_play",
+              "pos_team",
+              "def_pos_team",
+              "play_type",
+              "play_text",
+              "down",
+              "distance",
+              "yards_gained",
+              "period",
+              "rush",
+              "pass",
+              "turnover",
+              "turnover_indicator",
+              "fumble_lost",
+              "interception",
+              "drive_id"
+            )
+
+            miss <- setdiff(
+              need,
               names(x)
             )
 
-            if (
-              length(
-                missing_required
-              ) > 0
-            ) {
+            if (length(miss)) {
               stop(
                 paste(
                   year,
-                  "missing required columns:",
+                  "missing",
                   paste(
-                    missing_required,
+                    miss,
                     collapse = ","
                   )
                 )
               )
             }
 
-            available_semantics <- intersect(
-              semantic_candidates,
-              names(x)
-            )
+            # Preserve source semantics.
+            #
+            # A possession turnover is not automatically equivalent
+            # to the narrower statistical giveaway category.
+            #
+            # Turnovers on downs are first-class football events and
+            # must remain available to every feature family where
+            # their football meaning is relevant.
 
-            schema[[
-              as.character(year)
-            ]] <- data.frame(
-              season = year,
-              rows = nrow(x),
-              columns = ncol(x),
-              unique_games =
-                length(
-                  unique(
-                    as.character(
-                      x$game_id
-                    )
-                  )
-                ),
-              required_columns_present =
-                TRUE,
-              semantic_columns =
-                paste(
-                  available_semantics,
-                  collapse = "|"
-                ),
-              stringsAsFactors = FALSE
-            )
-
-            gids <- sort(
-              unique(
-                as.character(
-                  x$game_id
-                )
+            txt <- tolower(
+              ifelse(
+                is.na(x$play_text),
+                "",
+                as.character(x$play_text)
               )
             )
 
-            gids <- gids[
-              !is.na(gids)
-            ]
-
-            pick <- unique(
-              gids[
-                c(
-                  1,
-                  ceiling(
-                    length(gids) / 2
-                  ),
-                  length(gids)
-                )
-              ]
+            typ <- tolower(
+              ifelse(
+                is.na(x$play_type),
+                "",
+                as.character(x$play_type)
+              )
             )
 
-            for (gid in pick) {
-
-              g <- x[
-                as.character(
-                  x$game_id
-                ) == gid,
-                ,
-                drop = FALSE
-              ]
-
-              keep <- intersect(
-                c(
-                  required,
-                  semantic_candidates
-                ),
-                names(g)
+            fourth_attempt <-
+              !is.na(x$down) &
+              x$down == 4 &
+              (
+                x$rush == 1 |
+                x$pass == 1
               )
 
-              z <- g[
-                ,
-                keep,
-                drop = FALSE
-              ]
+            # This is deliberately only a CANDIDATE classification.
+            #
+            # Final turnover-on-downs semantics must be validated
+            # against the resulting possession / drive transition.
+            #
+            # We do not want a penalty, replayed down, or another
+            # exceptional sequence to be silently promoted into a
+            # true turnover on downs merely because text resembles
+            # a failed fourth-down play.
 
-              z$canary_season <-
-                year
-
-              z$canary_game_id <-
-                gid
-
-              samples[[
+            fourth_failure_text <-
+              fourth_attempt &
+              grepl(
                 paste(
-                  year,
-                  gid
-                )
-              ]] <- z
-            }
+                  "turnover on downs",
+                  "no gain",
+                  "incomplete",
+                  "sacked",
+                  "loss of",
+                  sep = "|"
+                ),
+                txt
+              )
+
+            interception_event <-
+              (
+                !is.na(x$interception) &
+                x$interception == 1
+              ) |
+              grepl(
+                "intercept",
+                txt
+              )
+
+            lost_fumble_event <-
+              !is.na(x$fumble_lost) &
+              x$fumble_lost == 1
+
+            # GIVEAWAY is intentionally narrower than the broader
+            # possession-turnover concept.
+            #
+            # This preserves the conventional interception /
+            # lost-fumble category without erasing turnovers on
+            # downs from the football representation.
+
+            giveaway_event <-
+              interception_event |
+              lost_fumble_event
+
+            # Preserve the provider's broad turnover representation
+            # as its own evidence instead of assuming what the field
+            # means from its name.
+
+            source_turnover <-
+              (
+                !is.na(x$turnover) &
+                x$turnover == 1
+              ) |
+              (
+                !is.na(x$turnover_indicator) &
+                x$turnover_indicator == 1
+              )
+
+            missed_fg <-
+              grepl(
+                "field goal",
+                txt
+              ) &
+              grepl(
+                "miss|no good|blocked",
+                txt
+              )
+
+            rows <-
+              source_turnover |
+              fourth_attempt |
+              interception_event |
+              lost_fumble_event |
+              missed_fg
+
+            z <- data.frame(
+              season =
+                year,
+
+              game_id =
+                as.character(
+                  x$game_id[rows]
+                ),
+
+              id_play =
+                as.character(
+                  x$id_play[rows]
+                ),
+
+              pos_team =
+                as.character(
+                  x$pos_team[rows]
+                ),
+
+              def_pos_team =
+                as.character(
+                  x$def_pos_team[rows]
+                ),
+
+              period =
+                x$period[rows],
+
+              down =
+                x$down[rows],
+
+              distance =
+                x$distance[rows],
+
+              yards_gained =
+                x$yards_gained[rows],
+
+              play_type =
+                as.character(
+                  x$play_type[rows]
+                ),
+
+              play_text =
+                as.character(
+                  x$play_text[rows]
+                ),
+
+              source_turnover =
+                source_turnover[rows],
+
+              fourth_down_attempt =
+                fourth_attempt[rows],
+
+              fourth_down_failure_text_candidate =
+                fourth_failure_text[rows],
+
+              interception_event =
+                interception_event[rows],
+
+              lost_fumble_event =
+                lost_fumble_event[rows],
+
+              giveaway_event =
+                giveaway_event[rows],
+
+              missed_fg =
+                missed_fg[rows],
+
+              drive_id =
+                as.character(
+                  x$drive_id[rows]
+                ),
+
+              stringsAsFactors =
+                FALSE
+            )
+
+            k <- k + 1
+            out[[k]] <- z
           }
 
+          e <- do.call(
+            rbind,
+            out
+          )
+
           write.csv(
-            do.call(
-              rbind,
-              schema
-            ),
-            "evidence/schema_contract_check.csv",
+            e,
+            "evidence/turnover_semantic_events.csv",
             row.names = FALSE
           )
 
-          all_names <- unique(
-            unlist(
-              lapply(
-                samples,
-                names
+          # Learn what the provider turnover fields actually cover.
+          # Do not judge their semantics from their names alone.
+
+          tab <- as.data.frame(
+            with(
+              e,
+              table(
+                source_turnover,
+                fourth_down_attempt,
+                interception_event,
+                lost_fumble_event,
+                missed_fg
               )
             )
           )
 
-          aligned <- lapply(
-            samples,
-            function(z) {
-
-              for (
-                m in setdiff(
-                  all_names,
-                  names(z)
-                )
-              ) {
-                z[[m]] <- NA
-              }
-
-              z[
-                ,
-                all_names,
-                drop = FALSE
-              ]
-            }
+          write.csv(
+            tab,
+            "evidence/turnover_semantic_crosstab.csv",
+            row.names = FALSE
           )
 
-          write.csv(
-            do.call(
-              rbind,
-              aligned
+          examples <- e[
+            e$source_turnover |
+            e$giveaway_event |
+            e$fourth_down_attempt |
+            e$missed_fg,
+          ]
+
+          examples <- examples[
+            order(
+              examples$season,
+              examples$game_id,
+              examples$id_play
             ),
-            "evidence/conceptual_input_samples.csv",
+          ]
+
+          write.csv(
+            head(
+              examples,
+              500
+            ),
+            "evidence/semantic_examples.csv",
             row.names = FALSE
           )
 
           contract <- list(
             derivation_version =
-              "semantic_canary_v0.1",
+              "semantic_canary_v0.2",
 
-            proof_families = c(
-              "PRIOR_SCORING",
-              "PRIOR_PLAY_VOLUME",
-              "RAW_TURNOVER_RATE"
-            ),
-
-            temporal_invariant =
+            principle =
               paste(
-                "every source_available_at",
-                "< target_prediction_cutoff"
+                "football event first,",
+                "source representation second,",
+                "feature aggregation third"
               ),
 
-            separate_tests = c(
-              "REPRODUCTION",
-              "LEAKAGE",
-              "APPLICABILITY",
-              "MISSINGNESS"
+            primitives = c(
+              "INTERCEPTION",
+              "LOST_FUMBLE",
+              "FOURTH_DOWN_ATTEMPT",
+              "FOURTH_DOWN_FAILURE",
+              "TURNOVER_ON_DOWNS",
+              "MISSED_FIELD_GOAL",
+              "SOURCE_POSSESSION_TURNOVER"
             ),
 
-            no_history_policy =
+            aggregates = c(
+              "GIVEAWAY",
+              "POSSESSION_CHANGE"
+            ),
+
+            rules = c(
               paste(
-                "explicit applicable-no-prior-history;",
-                "never coerce to zero"
+                "turnover on downs is first-class",
+                "and retained wherever football logic",
+                "makes it relevant"
               ),
 
-            no_fitting = TRUE,
-            no_tuning = TRUE,
+              paste(
+                "giveaway is narrower than",
+                "possession turnover"
+              ),
 
-            no_test_outcome_optimization =
-              TRUE,
+              paste(
+                "one event may have multiple semantic",
+                "views but must not be double counted",
+                "inside one aggregate"
+              ),
 
-            note = paste(
-              "This run freezes executable",
-              "input/schema evidence before",
-              "formulas are promoted.",
-              "It intentionally does not",
-              "infer scoring or turnover",
-              "semantics from column names alone."
-            )
+              paste(
+                "preserve fourth-down distance,",
+                "field position, period, score and",
+                "drive context when available"
+              ),
+
+              paste(
+                "do not infer final fourth-down failure",
+                "solely from the text candidate without",
+                "possession or next-play validation"
+              )
+            ),
+
+            fitting_performed =
+              FALSE,
+
+            tuning_performed =
+              FALSE,
+
+            test_outcome_optimization =
+              FALSE
           )
 
           dput(
             contract,
             file =
-              "evidence/canary_contract.dput"
+              "evidence/canary_contract_v02.dput"
           )
 
       - name: Freeze evidence hashes
@@ -320,8 +429,7 @@ jobs:
               if (
                   p.is_file()
                   and
-                  p.name !=
-                  "evidence_manifest.json"
+                  p.name != "evidence_manifest.json"
               ):
                   b = p.read_bytes()
 
@@ -342,10 +450,10 @@ jobs:
 
           manifest = {
               "scope":
-                  "CFB semantic canary input/schema proof",
+                  "CFB semantic canary football-event proof",
 
               "derivation_version":
-                  "semantic_canary_v0.1",
+                  "semantic_canary_v0.2",
 
               "fitting_performed":
                   False,
@@ -384,7 +492,7 @@ jobs:
       - name: Upload semantic canary evidence
         uses: actions/upload-artifact@v4
         with:
-          name: cfb-semantic-canary-input-proof
+          name: cfb-semantic-canary-football-semantics
           path: evidence/
           if-no-files-found: error
           retention-days: 1
