@@ -19,17 +19,26 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y r-base
+          Rscript --version
 
       - name: Acquire primary PBP proof seasons
         run: |
+          set -euo pipefail
+
           mkdir -p raw evidence
+
           for YEAR in 2017 2018 2022; do
-            curl --fail --location --retry 3 \
+            curl \
+              --fail \
+              --location \
+              --retry 3 \
               --output "raw/pbp_${YEAR}.rds" \
               "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"
+
+            test -s "raw/pbp_${YEAR}.rds"
           done
 
-      - name: Prove football semantics and lineage inputs
+      - name: Inventory football semantics and validate known schema
         shell: Rscript {0}
         run: |
           dir.create(
@@ -37,8 +46,39 @@ jobs:
             showWarnings = FALSE
           )
 
-          out <- list()
-          k <- 0
+          # These are the columns already demonstrated by our
+          # previous successful schema proof.
+          #
+          # We require only demonstrated fields here.
+          #
+          # More-specific interception / fumble / recovery fields
+          # are DISCOVERED below rather than assumed.
+
+          required <- c(
+            "game_id",
+            "id_play",
+            "pos_team",
+            "def_pos_team",
+            "play_type",
+            "play_text",
+            "down",
+            "distance",
+            "yards_gained",
+            "period",
+            "rush",
+            "pass",
+            "turnover",
+            "turnover_indicator",
+            "drive_id"
+          )
+
+          schema_out <- list()
+          discovered_out <- list()
+          semantic_rows_out <- list()
+
+          schema_k <- 0
+          discovered_k <- 0
+          semantic_k <- 0
 
           for (year in c(
             2017,
@@ -46,65 +86,130 @@ jobs:
             2022
           )) {
 
-            x <- readRDS(
-              sprintf(
-                "raw/pbp_%d.rds",
-                year
+            path <- sprintf(
+              "raw/pbp_%d.rds",
+              year
+            )
+
+            if (!file.exists(path)) {
+              stop(
+                paste(
+                  "Missing downloaded RDS:",
+                  path
+                )
               )
-            )
+            }
 
-            need <- c(
-              "game_id",
-              "id_play",
-              "pos_team",
-              "def_pos_team",
-              "play_type",
-              "play_text",
-              "down",
-              "distance",
-              "yards_gained",
-              "period",
-              "rush",
-              "pass",
-              "turnover",
-              "turnover_indicator",
-              "fumble_lost",
-              "interception",
-              "drive_id"
-            )
+            x <- readRDS(path)
 
-            miss <- setdiff(
-              need,
+            missing_required <- setdiff(
+              required,
               names(x)
             )
 
-            if (length(miss)) {
+            if (length(missing_required) > 0) {
               stop(
                 paste(
                   year,
-                  "missing",
+                  "missing demonstrated required columns:",
                   paste(
-                    miss,
+                    missing_required,
                     collapse = ","
                   )
                 )
               )
             }
 
-            # Preserve source semantics.
+            schema_k <- schema_k + 1
+
+            schema_out[[schema_k]] <- data.frame(
+              season = year,
+              rows = nrow(x),
+              columns = ncol(x),
+              unique_games = length(
+                unique(
+                  as.character(
+                    x$game_id
+                  )
+                )
+              ),
+              required_columns_present = TRUE,
+              stringsAsFactors = FALSE
+            )
+
+            # Discover potentially relevant semantic fields from
+            # the ACTUAL schema.
             #
-            # A possession turnover is not automatically equivalent
-            # to the narrower statistical giveaway category.
+            # This is intentionally broad.
             #
-            # Turnovers on downs are first-class football events and
-            # must remain available to every feature family where
-            # their football meaning is relevant.
+            # We are searching the surrounding evidence structure
+            # before deciding which fields represent the football
+            # concepts we need.
+
+            semantic_pattern <- paste(
+              c(
+                "turnover",
+                "intercept",
+                "fumble",
+                "recover",
+                "possession",
+                "drive",
+                "down",
+                "rush",
+                "pass",
+                "punt",
+                "field",
+                "kick",
+                "score",
+                "yard",
+                "clock",
+                "period"
+              ),
+              collapse = "|"
+            )
+
+            discovered <- names(x)[
+              grepl(
+                semantic_pattern,
+                names(x),
+                ignore.case = TRUE
+              )
+            ]
+
+            if (length(discovered) == 0) {
+              stop(
+                paste(
+                  year,
+                  "semantic discovery unexpectedly returned zero fields"
+                )
+              )
+            }
+
+            discovered_k <- discovered_k + 1
+
+            discovered_out[[discovered_k]] <- data.frame(
+              season = year,
+              column = discovered,
+              class = vapply(
+                x[discovered],
+                function(z) {
+                  paste(
+                    class(z),
+                    collapse = "|"
+                  )
+                },
+                character(1)
+              ),
+              stringsAsFactors = FALSE
+            )
 
             txt <- tolower(
               ifelse(
                 is.na(x$play_text),
                 "",
-                as.character(x$play_text)
+                as.character(
+                  x$play_text
+                )
               )
             )
 
@@ -112,70 +217,110 @@ jobs:
               ifelse(
                 is.na(x$play_type),
                 "",
-                as.character(x$play_type)
+                as.character(
+                  x$play_type
+                )
               )
             )
 
-            fourth_attempt <-
+            rush_flag <-
+              !is.na(x$rush) &
+              x$rush == 1
+
+            pass_flag <-
+              !is.na(x$pass) &
+              x$pass == 1
+
+            fourth_down <-
               !is.na(x$down) &
-              x$down == 4 &
+              x$down == 4
+
+            fourth_down_scrimmage_candidate <-
+              fourth_down &
               (
-                x$rush == 1 |
-                x$pass == 1
+                rush_flag |
+                pass_flag
               )
 
-            # This is deliberately only a CANDIDATE classification.
+            # Text indicators are EVIDENCE CANDIDATES only.
             #
-            # Final turnover-on-downs semantics must be validated
-            # against the resulting possession / drive transition.
+            # They are not promoted here to final primitives.
             #
-            # We do not want a penalty, replayed down, or another
-            # exceptional sequence to be silently promoted into a
-            # true turnover on downs merely because text resembles
-            # a failed fourth-down play.
+            # Final turnover-on-downs classification must account
+            # for possession / drive continuation and exceptional
+            # sequences such as penalties and replayed downs.
 
-            fourth_failure_text <-
-              fourth_attempt &
+            fourth_failure_text_candidate <-
+              fourth_down &
               grepl(
                 paste(
-                  "turnover on downs",
-                  "no gain",
-                  "incomplete",
-                  "sacked",
-                  "loss of",
-                  sep = "|"
+                  c(
+                    "turnover on downs",
+                    "incomplete",
+                    "no gain",
+                    "sacked",
+                    "loss of"
+                  ),
+                  collapse = "|"
                 ),
                 txt
               )
 
-            interception_event <-
-              (
-                !is.na(x$interception) &
-                x$interception == 1
-              ) |
+            interception_text_candidate <-
               grepl(
                 "intercept",
                 txt
+              ) |
+              grepl(
+                "intercept",
+                typ
               )
 
-            lost_fumble_event <-
-              !is.na(x$fumble_lost) &
-              x$fumble_lost == 1
+            fumble_text_candidate <-
+              grepl(
+                "fumble",
+                txt
+              ) |
+              grepl(
+                "fumble",
+                typ
+              )
 
-            # GIVEAWAY is intentionally narrower than the broader
-            # possession-turnover concept.
-            #
-            # This preserves the conventional interception /
-            # lost-fumble category without erasing turnovers on
-            # downs from the football representation.
+            recovery_text_candidate <-
+              grepl(
+                "recover",
+                txt
+              ) |
+              grepl(
+                "recover",
+                typ
+              )
 
-            giveaway_event <-
-              interception_event |
-              lost_fumble_event
-
-            # Preserve the provider's broad turnover representation
-            # as its own evidence instead of assuming what the field
-            # means from its name.
+            missed_field_goal_candidate <-
+              (
+                grepl(
+                  "field goal",
+                  txt
+                ) |
+                grepl(
+                  "field goal",
+                  typ
+                )
+              ) &
+              grepl(
+                paste(
+                  c(
+                    "miss",
+                    "no good",
+                    "blocked"
+                  ),
+                  collapse = "|"
+                ),
+                paste(
+                  txt,
+                  typ
+                )
+              )
 
             source_turnover <-
               (
@@ -183,26 +328,19 @@ jobs:
                 x$turnover == 1
               ) |
               (
-                !is.na(x$turnover_indicator) &
+                !is.na(
+                  x$turnover_indicator
+                ) &
                 x$turnover_indicator == 1
               )
 
-            missed_fg <-
-              grepl(
-                "field goal",
-                txt
-              ) &
-              grepl(
-                "miss|no good|blocked",
-                txt
-              )
-
-            rows <-
+            interesting <-
               source_turnover |
-              fourth_attempt |
-              interception_event |
-              lost_fumble_event |
-              missed_fg
+              fourth_down |
+              interception_text_candidate |
+              fumble_text_candidate |
+              recovery_text_candidate |
+              missed_field_goal_candidate
 
             z <- data.frame(
               season =
@@ -210,191 +348,321 @@ jobs:
 
               game_id =
                 as.character(
-                  x$game_id[rows]
+                  x$game_id[interesting]
                 ),
 
               id_play =
                 as.character(
-                  x$id_play[rows]
+                  x$id_play[interesting]
                 ),
 
               pos_team =
                 as.character(
-                  x$pos_team[rows]
+                  x$pos_team[interesting]
                 ),
 
               def_pos_team =
                 as.character(
-                  x$def_pos_team[rows]
+                  x$def_pos_team[interesting]
                 ),
 
               period =
-                x$period[rows],
+                x$period[interesting],
 
               down =
-                x$down[rows],
+                x$down[interesting],
 
               distance =
-                x$distance[rows],
+                x$distance[interesting],
 
               yards_gained =
-                x$yards_gained[rows],
+                x$yards_gained[interesting],
+
+              drive_id =
+                as.character(
+                  x$drive_id[interesting]
+                ),
 
               play_type =
                 as.character(
-                  x$play_type[rows]
+                  x$play_type[interesting]
                 ),
 
               play_text =
                 as.character(
-                  x$play_text[rows]
+                  x$play_text[interesting]
                 ),
+
+              rush =
+                x$rush[interesting],
+
+              pass =
+                x$pass[interesting],
+
+              turnover =
+                x$turnover[interesting],
+
+              turnover_indicator =
+                x$turnover_indicator[interesting],
 
               source_turnover =
-                source_turnover[rows],
+                source_turnover[interesting],
 
-              fourth_down_attempt =
-                fourth_attempt[rows],
+              fourth_down =
+                fourth_down[interesting],
+
+              fourth_down_scrimmage_candidate =
+                fourth_down_scrimmage_candidate[
+                  interesting
+                ],
 
               fourth_down_failure_text_candidate =
-                fourth_failure_text[rows],
+                fourth_failure_text_candidate[
+                  interesting
+                ],
 
-              interception_event =
-                interception_event[rows],
+              interception_text_candidate =
+                interception_text_candidate[
+                  interesting
+                ],
 
-              lost_fumble_event =
-                lost_fumble_event[rows],
+              fumble_text_candidate =
+                fumble_text_candidate[
+                  interesting
+                ],
 
-              giveaway_event =
-                giveaway_event[rows],
+              recovery_text_candidate =
+                recovery_text_candidate[
+                  interesting
+                ],
 
-              missed_fg =
-                missed_fg[rows],
-
-              drive_id =
-                as.character(
-                  x$drive_id[rows]
-                ),
+              missed_field_goal_candidate =
+                missed_field_goal_candidate[
+                  interesting
+                ],
 
               stringsAsFactors =
                 FALSE
             )
 
-            k <- k + 1
-            out[[k]] <- z
+            semantic_k <- semantic_k + 1
+
+            semantic_rows_out[[semantic_k]] <- z
           }
 
-          e <- do.call(
+          schema <- do.call(
             rbind,
-            out
+            schema_out
+          )
+
+          discovered <- do.call(
+            rbind,
+            discovered_out
+          )
+
+          semantic_rows <- do.call(
+            rbind,
+            semantic_rows_out
           )
 
           write.csv(
-            e,
-            "evidence/turnover_semantic_events.csv",
+            schema,
+            "evidence/schema_validation.csv",
             row.names = FALSE
           )
 
-          # Learn what the provider turnover fields actually cover.
-          # Do not judge their semantics from their names alone.
+          write.csv(
+            discovered,
+            "evidence/discovered_semantic_columns.csv",
+            row.names = FALSE
+          )
 
-          tab <- as.data.frame(
+          write.csv(
+            semantic_rows,
+            "evidence/semantic_event_candidates.csv",
+            row.names = FALSE
+          )
+
+          # Cross-tab the provider turnover representation against
+          # observable candidate event classes.
+          #
+          # This helps us learn what turnover / turnover_indicator
+          # actually encode instead of imposing a definition.
+
+          cross <- as.data.frame(
             with(
-              e,
+              semantic_rows,
               table(
                 source_turnover,
-                fourth_down_attempt,
-                interception_event,
-                lost_fumble_event,
-                missed_fg
+                fourth_down,
+                interception_text_candidate,
+                fumble_text_candidate,
+                missed_field_goal_candidate
               )
             )
           )
 
           write.csv(
-            tab,
-            "evidence/turnover_semantic_crosstab.csv",
+            cross,
+            "evidence/source_turnover_crosstab.csv",
             row.names = FALSE
           )
 
-          examples <- e[
-            e$source_turnover |
-            e$giveaway_event |
-            e$fourth_down_attempt |
-            e$missed_fg,
-          ]
+          # Produce concept-specific examples instead of arbitrary
+          # first / middle / last games.
+          #
+          # These are evidence samples, not a fitted or tuned set.
 
-          examples <- examples[
-            order(
-              examples$season,
-              examples$game_id,
-              examples$id_play
-            ),
-          ]
+          concepts <- list(
+            FOURTH_DOWN =
+              semantic_rows$fourth_down,
+
+            SOURCE_TURNOVER =
+              semantic_rows$source_turnover,
+
+            INTERCEPTION_TEXT =
+              semantic_rows$interception_text_candidate,
+
+            FUMBLE_TEXT =
+              semantic_rows$fumble_text_candidate,
+
+            RECOVERY_TEXT =
+              semantic_rows$recovery_text_candidate,
+
+            MISSED_FIELD_GOAL =
+              semantic_rows$missed_field_goal_candidate
+          )
+
+          example_out <- list()
+          example_k <- 0
+
+          for (
+            concept_name in names(concepts)
+          ) {
+
+            idx <- which(
+              !is.na(
+                concepts[[concept_name]]
+              ) &
+              concepts[[concept_name]]
+            )
+
+            if (length(idx) > 0) {
+
+              # Keep deterministic source-order examples.
+              idx <- head(
+                idx,
+                100
+              )
+
+              q <- semantic_rows[
+                idx,
+                ,
+                drop = FALSE
+              ]
+
+              q$concept_sample <-
+                concept_name
+
+              example_k <- example_k + 1
+
+              example_out[[example_k]] <- q
+            }
+          }
+
+          if (length(example_out) == 0) {
+            stop(
+              "No conceptual semantic examples were produced"
+            )
+          }
+
+          examples <- do.call(
+            rbind,
+            example_out
+          )
 
           write.csv(
-            head(
-              examples,
-              500
-            ),
-            "evidence/semantic_examples.csv",
+            examples,
+            "evidence/conceptual_semantic_examples.csv",
             row.names = FALSE
           )
 
           contract <- list(
             derivation_version =
-              "semantic_canary_v0.2",
+              "semantic_canary_v0.3",
 
             principle =
               paste(
-                "football event first,",
-                "source representation second,",
+                "football event first;",
+                "source representation second;",
                 "feature aggregation third"
               ),
 
-            primitives = c(
+            demonstrated_required_fields =
+              required,
+
+            discovery_policy =
+              paste(
+                "specific interception, fumble, recovery,",
+                "possession and related fields are discovered",
+                "from the actual schema before semantic promotion"
+              ),
+
+            primitive_targets = c(
               "INTERCEPTION",
+              "FUMBLE",
               "LOST_FUMBLE",
               "FOURTH_DOWN_ATTEMPT",
+              "FOURTH_DOWN_SUCCESS",
               "FOURTH_DOWN_FAILURE",
               "TURNOVER_ON_DOWNS",
               "MISSED_FIELD_GOAL",
               "SOURCE_POSSESSION_TURNOVER"
             ),
 
-            aggregates = c(
+            aggregate_targets = c(
               "GIVEAWAY",
               "POSSESSION_CHANGE"
             ),
 
             rules = c(
               paste(
-                "turnover on downs is first-class",
-                "and retained wherever football logic",
-                "makes it relevant"
+                "turnover on downs is a first-class",
+                "football event"
               ),
 
               paste(
-                "giveaway is narrower than",
-                "possession turnover"
+                "fourth-down information remains available",
+                "to every feature family where its football",
+                "meaning is relevant"
               ),
 
               paste(
-                "one event may have multiple semantic",
-                "views but must not be double counted",
-                "inside one aggregate"
+                "giveaway remains distinct from broader",
+                "possession-turnover concepts"
               ),
 
               paste(
-                "preserve fourth-down distance,",
-                "field position, period, score and",
-                "drive context when available"
+                "one underlying event may support multiple",
+                "semantic views but may not be double counted",
+                "inside a single aggregate"
               ),
 
               paste(
-                "do not infer final fourth-down failure",
-                "solely from the text candidate without",
-                "possession or next-play validation"
+                "text matches are candidate evidence only",
+                "until event and possession semantics are",
+                "independently validated"
+              ),
+
+              paste(
+                "penalties, replayed downs and exceptional",
+                "sequences must not be silently classified",
+                "as turnovers on downs"
+              ),
+
+              paste(
+                "do not infer source semantics from column",
+                "names alone"
               )
             ),
 
@@ -411,20 +679,156 @@ jobs:
           dput(
             contract,
             file =
-              "evidence/canary_contract_v02.dput"
+              "evidence/canary_contract_v03.dput"
+          )
+
+          cat(
+            "SCHEMA_VALIDATION_PASS\n"
+          )
+
+          cat(
+            "SEMANTIC_DISCOVERY_PASS\n"
+          )
+
+          cat(
+            "SEMANTIC_PROMOTION_NOT_YET_PERFORMED\n"
+          )
+
+      - name: Validate generated evidence
+        shell: Rscript {0}
+        run: |
+          required_files <- c(
+            "evidence/schema_validation.csv",
+            "evidence/discovered_semantic_columns.csv",
+            "evidence/semantic_event_candidates.csv",
+            "evidence/source_turnover_crosstab.csv",
+            "evidence/conceptual_semantic_examples.csv",
+            "evidence/canary_contract_v03.dput"
+          )
+
+          missing_files <- required_files[
+            !file.exists(
+              required_files
+            )
+          ]
+
+          if (length(missing_files) > 0) {
+            stop(
+              paste(
+                "Missing evidence files:",
+                paste(
+                  missing_files,
+                  collapse = ","
+                )
+              )
+            )
+          }
+
+          empty_files <- required_files[
+            file.info(
+              required_files
+            )$size <= 0
+          ]
+
+          if (length(empty_files) > 0) {
+            stop(
+              paste(
+                "Empty evidence files:",
+                paste(
+                  empty_files,
+                  collapse = ","
+                )
+              )
+            )
+          }
+
+          schema <- read.csv(
+            "evidence/schema_validation.csv",
+            stringsAsFactors = FALSE
+          )
+
+          if (nrow(schema) != 3) {
+            stop(
+              paste(
+                "Expected 3 schema rows; found",
+                nrow(schema)
+              )
+            )
+          }
+
+          if (
+            !all(
+              schema$required_columns_present
+            )
+          ) {
+            stop(
+              "Required schema validation failed"
+            )
+          }
+
+          discovered <- read.csv(
+            "evidence/discovered_semantic_columns.csv",
+            stringsAsFactors = FALSE
+          )
+
+          if (nrow(discovered) == 0) {
+            stop(
+              "Semantic column discovery is empty"
+            )
+          }
+
+          candidates <- read.csv(
+            "evidence/semantic_event_candidates.csv",
+            stringsAsFactors = FALSE
+          )
+
+          if (nrow(candidates) == 0) {
+            stop(
+              "Semantic event candidate evidence is empty"
+            )
+          }
+
+          cat(
+            "GENERATED_EVIDENCE_VALIDATION_PASS\n"
           )
 
       - name: Freeze evidence hashes
         run: |
+          set -euo pipefail
+
           python - <<'PY'
           import hashlib
           import json
           from pathlib import Path
 
+          evidence = Path("evidence")
+
+          required = [
+              "schema_validation.csv",
+              "discovered_semantic_columns.csv",
+              "semantic_event_candidates.csv",
+              "source_turnover_crosstab.csv",
+              "conceptual_semantic_examples.csv",
+              "canary_contract_v03.dput",
+          ]
+
+          for name in required:
+              path = evidence / name
+
+              if not path.is_file():
+                  raise SystemExit(
+                      f"missing evidence file: {name}"
+                  )
+
+              if path.stat().st_size == 0:
+                  raise SystemExit(
+                      f"empty evidence file: {name}"
+                  )
+
           records = []
 
           for p in sorted(
-              Path("evidence").rglob("*")
+              evidence.rglob("*")
           ):
               if (
                   p.is_file()
@@ -437,7 +841,7 @@ jobs:
                       "filename":
                           str(
                               p.relative_to(
-                                  "evidence"
+                                  evidence
                               )
                           ),
                       "bytes":
@@ -450,10 +854,13 @@ jobs:
 
           manifest = {
               "scope":
-                  "CFB semantic canary football-event proof",
+                  "CFB semantic canary football-event discovery proof",
 
               "derivation_version":
-                  "semantic_canary_v0.2",
+                  "semantic_canary_v0.3",
+
+              "semantic_promotion_performed":
+                  False,
 
               "fitting_performed":
                   False,
@@ -468,31 +875,31 @@ jobs:
                   records,
           }
 
-          out = Path(
-              "evidence/evidence_manifest.json"
-          )
+          out = evidence / "evidence_manifest.json"
 
           out.write_text(
               json.dumps(
                   manifest,
-                  indent = 2,
-                  sort_keys = True
+                  indent=2,
+                  sort_keys=True
               ) + "\n",
-              encoding = "utf-8"
+              encoding="utf-8"
           )
+
+          digest = hashlib.sha256(
+              out.read_bytes()
+          ).hexdigest()
 
           print(
               "EVIDENCE_MANIFEST_SHA256",
-              hashlib.sha256(
-                  out.read_bytes()
-              ).hexdigest()
+              digest
           )
           PY
 
       - name: Upload semantic canary evidence
         uses: actions/upload-artifact@v4
         with:
-          name: cfb-semantic-canary-football-semantics
+          name: cfb-semantic-canary-football-semantics-v03
           path: evidence/
           if-no-files-found: error
           retention-days: 1
