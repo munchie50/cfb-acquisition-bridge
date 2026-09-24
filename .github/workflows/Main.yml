@@ -45,6 +45,7 @@ jobs:
           range_exceptions <- list()
           tod_exceptions <- list()
           turnover_semantics <- list()
+          reproduction <- list()
 
           for (year in 2016:2025) {
             x <- readRDS(sprintf("raw/pbp_%d.rds", year))
@@ -142,6 +143,36 @@ jobs:
               stringsAsFactors=FALSE
             )
 
+            # Deterministic raw-to-game reproduction sample. This proves the
+            # aggregation mechanics only; it is not a fitted model feature.
+            game_ids <- unique(as.character(x$game_id))
+            sample_ids <- unique(game_ids[pmax(1, pmin(length(game_ids), c(1, ceiling(length(game_ids)/2), length(game_ids))))])
+            for (gid in sample_ids) {
+              g <- x[as.character(x$game_id) == gid, , drop=FALSE]
+              teams <- unique(as.character(g$pos_team[!is.na(g$pos_team) & as.character(g$pos_team)!=""]))
+              for (tm in teams) {
+                team_rows <- as.character(g$pos_team) == tm
+                opp_rows <- as.character(g$def_pos_team) == tm
+                team_rows[is.na(team_rows)] <- FALSE
+                opp_rows[is.na(opp_rows)] <- FALSE
+                scrim <- (one(g$rush) | one(g$pass) | one(g$pass_attempt)) & !one(g$punt)
+                reproduction[[length(reproduction)+1]] <- data.frame(
+                  season=year, game_id=gid, team=tm,
+                  source_row_count=nrow(g),
+                  team_possession_rows=sum(team_rows),
+                  opponent_possession_rows=sum(opp_rows),
+                  team_scrimmage_plays=sum(team_rows & scrim),
+                  opponent_scrimmage_plays=sum(opp_rows & scrim),
+                  team_interceptions_thrown=sum(team_rows & (one(g$interception_thrown_stat) | one(g$interception_stat))),
+                  team_fumble_event_rows=sum(team_rows & (one(g$fumble_stat) | grepl("fumble",tolower(ifelse(is.na(g$play_text),"",as.character(g$play_text)))))),
+                  team_turnover_on_down_candidates=sum(team_rows & !one(g$punt) & !one(g$field_goal_missed_stat) &
+                    one(g$downs_turnover) & !(one(g$interception_thrown_stat) | one(g$interception_stat)) &
+                    !(one(g$fumble_stat) | one(g$fumble_recovered_stat))),
+                  stringsAsFactors=FALSE
+                )
+              }
+            }
+
             ix <- which(unexplained_fourth_failure)
             if (length(ix)) {
               fourth_exceptions[[length(fourth_exceptions)+1]] <- data.frame(
@@ -170,8 +201,10 @@ jobs:
 
           seasonal <- do.call(rbind, seasonal)
           turnover_semantics <- do.call(rbind, turnover_semantics)
+          reproduction <- do.call(rbind, reproduction)
           write.csv(seasonal, "evidence/seasonal_semantic_audit.csv", row.names=FALSE)
           write.csv(turnover_semantics, "evidence/possession_event_taxonomy.csv", row.names=FALSE)
+          write.csv(reproduction, "evidence/raw_to_game_reproduction_sample.csv", row.names=FALSE)
 
           if (length(tod_exceptions)) {
             write.csv(do.call(rbind,tod_exceptions), "evidence/downs_turnover_counterexamples.csv", row.names=FALSE)
@@ -197,7 +230,7 @@ jobs:
             all(seasonal$tod_gain_reaches_line == 0)
 
           contract <- list(
-            derivation_version="semantic_canary_v0.7",
+            derivation_version="semantic_canary_v0.8",
             seasons=2016:2025,
             promoted_semantics=list(
               FOURTH_DOWN_ATTEMPT="down==4, non-special-teams, with rush/pass/pass_attempt flag or explicit scrimmage text evidence"
@@ -227,7 +260,7 @@ jobs:
           import csv, hashlib, json
           from pathlib import Path
           e=Path("evidence")
-          req=["seasonal_semantic_audit.csv","possession_event_taxonomy.csv","downs_turnover_counterexamples.csv","fourth_down_unexplained.csv","range_exception_rows.csv","canary_contract_v05.dput"]
+          req=["seasonal_semantic_audit.csv","possession_event_taxonomy.csv","raw_to_game_reproduction_sample.csv","downs_turnover_counterexamples.csv","fourth_down_unexplained.csv","range_exception_rows.csv","canary_contract_v05.dput"]
           for n in req:
               if not (e/n).is_file(): raise SystemExit(f"missing {n}")
           with (e/"seasonal_semantic_audit.csv").open() as f:
@@ -238,7 +271,7 @@ jobs:
               if p.is_file() and p.name!="evidence_manifest.json":
                   b=p.read_bytes()
                   records.append({"filename":p.name,"bytes":len(b),"sha256":hashlib.sha256(b).hexdigest()})
-          m={"scope":"2016-2025 possession-event taxonomy and semantic invariant audit","derivation_version":"semantic_canary_v0.7",
+          m={"scope":"2016-2025 semantic audit plus deterministic raw-to-game reproduction sample","derivation_version":"semantic_canary_v0.8",
              "turnover_on_downs_semantic_promotion":False,"other_turnover_composites_promoted":False,
              "fitting_performed":False,"tuning_performed":False,"test_outcome_optimization":False,"records":records}
           out=e/"evidence_manifest.json"; out.write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
@@ -248,7 +281,7 @@ jobs:
       - name: Upload v0.5 evidence
         uses: actions/upload-artifact@v4
         with:
-          name: cfb-semantic-canary-full-season-v07
+          name: cfb-semantic-canary-full-season-v08
           path: evidence/
           if-no-files-found: error
           retention-days: 1
