@@ -20,7 +20,7 @@ jobs:
 
           curl --fail --location --retry 3 \
             --output "out/play_by_play_2025.rds" \
-            "https://github.com/sportsdataverse/cfbfastR-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2025.rds"
+            https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2025.rds
 
       - name: Verify and manifest original bytes
         run: |
