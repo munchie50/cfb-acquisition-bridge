@@ -275,6 +275,8 @@ jobs:
           primitive_game_ids <- unique(team_game_primitives[,c("season","game_id")])
           primitive_game_ids <- primitive_game_ids[order(primitive_game_ids$season, primitive_game_ids$game_id),]
           write.csv(primitive_game_ids, "evidence/primitive_game_ids.csv", row.names=FALSE)
+          primitive_2016_game_ids <- primitive_game_ids[primitive_game_ids$season == 2016,]
+          write.csv(primitive_2016_game_ids, "evidence/primitive_2016_game_ids.csv", row.names=FALSE)
           # Compact per-game team primitive rows for deterministic external chronology join.
           # Keep chronology external; this export contains no invented game timestamp.
           primitive_game_team_rows <- team_game_primitives[order(team_game_primitives$season, team_game_primitives$game_id, team_game_primitives$team),]
@@ -311,7 +313,7 @@ jobs:
             all(seasonal$tod_gain_reaches_line == 0)
 
           contract <- list(
-            derivation_version="semantic_canary_v0.16",
+            derivation_version="semantic_canary_v0.17",
             seasons=2016:2025,
             promoted_semantics=list(
               FOURTH_DOWN_ATTEMPT="down==4, non-special-teams, with rush/pass/pass_attempt flag or explicit scrimmage text evidence"
@@ -341,7 +343,7 @@ jobs:
           import csv, hashlib, json
           from pathlib import Path
           e=Path("evidence")
-          req=["seasonal_semantic_audit.csv","possession_event_taxonomy.csv","raw_to_game_reproduction_sample.csv","team_game_primitives.csv","team_game_primitive_integrity.csv","lineage_join_readiness.csv","primitive_season_game_counts.csv","primitive_game_ids.csv","primitive_game_team_rows.csv","primitive_game_team_rows.canonical.txt","primitive_game_team_rows.sha256","downs_turnover_counterexamples.csv","fourth_down_unexplained.csv","range_exception_rows.csv","canary_contract_v05.dput"]
+          req=["seasonal_semantic_audit.csv","possession_event_taxonomy.csv","raw_to_game_reproduction_sample.csv","team_game_primitives.csv","team_game_primitive_integrity.csv","lineage_join_readiness.csv","primitive_season_game_counts.csv","primitive_game_ids.csv","primitive_2016_game_ids.csv","primitive_game_team_rows.csv","primitive_game_team_rows.canonical.txt","primitive_game_team_rows.sha256","downs_turnover_counterexamples.csv","fourth_down_unexplained.csv","range_exception_rows.csv","canary_contract_v05.dput"]
           for n in req:
               if not (e/n).is_file(): raise SystemExit(f"missing {n}")
           with (e/"seasonal_semantic_audit.csv").open() as f:
@@ -352,7 +354,7 @@ jobs:
               if p.is_file() and p.name!="evidence_manifest.json":
                   b=p.read_bytes()
                   records.append({"filename":p.name,"bytes":len(b),"sha256":hashlib.sha256(b).hexdigest()})
-          m={"scope":"2016-2025 primitive join-key export and seasonal game reconciliation; authoritative chronology remains external","derivation_version":"semantic_canary_v0.16",
+          m={"scope":"2016-2025 primitive join-key export and seasonal game reconciliation; authoritative chronology remains external","derivation_version":"semantic_canary_v0.17",
              "turnover_on_downs_semantic_promotion":False,"other_turnover_composites_promoted":False,
              "fitting_performed":False,"tuning_performed":False,"test_outcome_optimization":False,"records":records}
           out=e/"evidence_manifest.json"; out.write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
@@ -362,7 +364,7 @@ jobs:
       - name: Upload v0.5 evidence
         uses: actions/upload-artifact@v4
         with:
-          name: cfb-semantic-canary-full-season-v16
+          name: cfb-semantic-canary-full-season-v17
           path: evidence/
           if-no-files-found: error
           retention-days: 1
