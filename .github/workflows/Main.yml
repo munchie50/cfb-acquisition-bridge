@@ -75,7 +75,13 @@ jobs:
               hashlib.sha256(p.read_bytes()).hexdigest()
           )
           PY
-
+     
+      - name: Install R
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y r-base
+          Rscript --version
+     
       - name: Build structural manifests from RDS
         shell: Rscript {0}
         run: |
