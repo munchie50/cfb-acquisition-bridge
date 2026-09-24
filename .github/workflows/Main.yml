@@ -1,4 +1,4 @@
-name: CFB Schedule Acquisition 2016-2025
+name: CFB PBP 2025 Canary
 
 on:
   workflow_dispatch:
@@ -14,69 +14,37 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Acquire original schedule bytes
+      - name: Acquire original 2025 PBP bytes
         run: |
           mkdir -p out
 
-          for YEAR in {2016..2025}; do
-            echo "Downloading ${YEAR}"
+          curl --fail --location --retry 3 \
+            --output "out/play_by_play_2025.rds" \
+            "https://github.com/sportsdataverse/cfbfastR-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2025.rds"
 
-            curl --fail --location --retry 3 \
-              --output "out/cfb_schedules_${YEAR}.csv" \
-              "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-data/main/schedules/csv/cfb_schedules_${YEAR}.csv"
-          done
-
-      - name: Build deterministic evidence manifest
+      - name: Verify and manifest original bytes
         run: |
           python - <<'PY'
-          import csv
           import hashlib
           import json
           from pathlib import Path
 
-          evidence = []
+          p = Path("out/play_by_play_2025.rds")
+          data = p.read_bytes()
 
-          for year in range(2016, 2026):
-              p = Path(f"out/cfb_schedules_{year}.csv")
-              data = p.read_bytes()
-
-              with p.open(
-                  "r",
-                  encoding="utf-8-sig",
-                  newline=""
-              ) as f:
-                  rows = list(csv.reader(f))
-
-              if len(rows) < 2:
-                  raise RuntimeError(
-                      f"{year}: schedule has no data rows"
-                  )
-
-              item = {
-                  "season": year,
-                  "filename": p.name,
-                  "bytes": len(data),
-                  "sha256": hashlib.sha256(data).hexdigest(),
-                  "csv_rows_including_header": len(rows),
-                  "data_rows": len(rows) - 1,
-              }
-
-              evidence.append(item)
-
-              print(
-                  year,
-                  item["data_rows"],
-                  item["bytes"],
-                  item["sha256"],
-              )
+          if len(data) == 0:
+              raise RuntimeError("Downloaded PBP file is empty")
 
           manifest = {
               "source": "SportsDataverse/cfbfastR-data",
-              "seasons": "2016-2025",
-              "files": evidence,
+              "release": "cfbfastR_cfb_pbp",
+              "season": 2025,
+              "filename": p.name,
+              "bytes": len(data),
+              "sha256": hashlib.sha256(data).hexdigest(),
           }
 
-          Path("out/schedule_manifest_2016_2025.json").write_text(
+          Path("out/pbp_manifest_2025.json").write_text(
               json.dumps(
                   manifest,
                   indent=2,
@@ -85,20 +53,13 @@ jobs:
               encoding="utf-8",
           )
 
-          manifest_bytes = Path(
-              "out/schedule_manifest_2016_2025.json"
-          ).read_bytes()
-
-          print(
-              "MANIFEST_SHA256",
-              hashlib.sha256(manifest_bytes).hexdigest()
-          )
+          print(json.dumps(manifest, indent=2))
           PY
 
-      - name: Upload schedule evidence
+      - name: Upload PBP canary evidence
         uses: actions/upload-artifact@v4
         with:
-          name: cfb-schedules-2016-2025
+          name: cfb-pbp-2025-canary
           path: out/
           if-no-files-found: error
           retention-days: 1
