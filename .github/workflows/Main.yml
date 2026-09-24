@@ -130,16 +130,21 @@ jobs:
             write.csv(data.frame(), "evidence/range_exception_rows.csv", row.names=FALSE)
           }
 
-          if (any(seasonal$tod_not_fourth_attempt != 0)) stop("downs_turnover occurs outside fourth-down scrimmage attempt")
-          if (any(seasonal$tod_gain_reaches_line != 0)) stop("downs_turnover conflicts with gain reaching line-to-gain")
+          # Discovery run: preserve counterexamples rather than abort before upload.
+          # Promotion remains blocked whenever either counterexample count is nonzero.
+          promotion_ready <- all(seasonal$tod_not_fourth_attempt == 0) &&
+            all(seasonal$tod_gain_reaches_line == 0)
 
           contract <- list(
             derivation_version="semantic_canary_v0.5",
             seasons=2016:2025,
             promoted_semantics=list(
-              FOURTH_DOWN_ATTEMPT="down==4 and rush/pass/pass_attempt evidence",
-              TURNOVER_ON_DOWNS="downs_turnover==1, qualified only after full-season invariant audit"
+              FOURTH_DOWN_ATTEMPT="down==4 and rush/pass/pass_attempt evidence"
             ),
+            candidate_semantics=list(
+              TURNOVER_ON_DOWNS="downs_turnover==1; promotion blocked pending counterexample adjudication"
+            ),
+            turnover_on_downs_promotion_ready=promotion_ready,
             not_promoted=c("turnover","turnover_indicator","turnover_vec","fumble_recovered_stat as lost-fumble identity"),
             rules=c(
               "fourth-down context alone is not an attempt",
@@ -172,7 +177,7 @@ jobs:
                   b=p.read_bytes()
                   records.append({"filename":p.name,"bytes":len(b),"sha256":hashlib.sha256(b).hexdigest()})
           m={"scope":"2016-2025 semantic invariant audit","derivation_version":"semantic_canary_v0.5",
-             "turnover_on_downs_semantic_promotion":True,"other_turnover_composites_promoted":False,
+             "turnover_on_downs_semantic_promotion":False,"other_turnover_composites_promoted":False,
              "fitting_performed":False,"tuning_performed":False,"test_outcome_optimization":False,"records":records}
           out=e/"evidence_manifest.json"; out.write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
           print("EVIDENCE_MANIFEST_SHA256",hashlib.sha256(out.read_bytes()).hexdigest())
