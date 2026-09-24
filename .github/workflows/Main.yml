@@ -1,0 +1,66 @@
+name: 2025 Schedule Canary
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download original 2025 schedule bytes
+        run: |
+          mkdir -p out
+          curl --fail --location --retry 3 \
+            --output out/cfb_schedules_2025.csv \
+            "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-data/main/schedules/csv/cfb_schedules_2025.csv"
+
+      - name: Hash and verify
+        run: |
+          python - <<'PY'
+          import csv
+          import hashlib
+          import json
+          from pathlib import Path
+
+          p = Path("out/cfb_schedules_2025.csv")
+          data = p.read_bytes()
+
+          with p.open("r", encoding="utf-8-sig", newline="") as f:
+              rows = list(csv.reader(f))
+
+          assert len(rows) == 3832, (
+              f"Expected 3832 CSV rows including header; got {len(rows)}"
+          )
+
+          manifest = {
+              "source": "SportsDataverse/cfbfastR-data",
+              "season": 2025,
+              "filename": p.name,
+              "bytes": len(data),
+              "sha256": hashlib.sha256(data).hexdigest(),
+              "csv_rows_including_header": len(rows),
+              "data_rows": len(rows) - 1,
+          }
+
+          Path("out/manifest.json").write_text(
+              json.dumps(manifest, indent=2) + "\n",
+              encoding="utf-8",
+          )
+
+          print(json.dumps(manifest, indent=2))
+          PY
+
+      - name: Upload canary evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-schedule-2025-canary
+          path: out/
+          if-no-files-found: error
+          retention-days: 1
