@@ -336,6 +336,44 @@ jobs:
           dput(contract,file="evidence/canary_contract_v05.dput")
           cat("V05_FULL_SEASON_SEMANTIC_AUDIT_PASS\n")
 
+      - name: Export per-game primitive field completeness
+        shell: Rscript {0}
+        run: |
+          coverage <- list()
+          one <- function(v) !is.na(v) & v == 1
+          missing_text <- function(v) is.na(v) | trimws(as.character(v)) == ""
+          for (year in 2016:2025) {
+            x <- readRDS(sprintf("raw/pbp_%d.rds", year))
+            required <- c("game_id","id_play","pos_team","def_pos_team","period",
+              "down","distance","yards_gained","yards_to_goal","drive_id",
+              "play_type","rush","pass","pass_attempt","punt")
+            absent <- setdiff(required, names(x))
+            if (length(absent)) stop(paste(year,"absent fields:",paste(absent,collapse=",")))
+            gid <- as.character(x$game_id)
+            if (any(is.na(gid) | gid == "")) stop(paste(year,"unkeyed play rows"))
+            scrim <- (one(x$rush) | one(x$pass) | one(x$pass_attempt)) & !one(x$punt)
+            flags <- data.frame(
+              raw_rows=rep(1L,nrow(x)), scrimmage_rows=as.integer(scrim),
+              missing_play_id=as.integer(missing_text(x$id_play)),
+              missing_offense=as.integer(missing_text(x$pos_team)),
+              missing_defense=as.integer(missing_text(x$def_pos_team)),
+              missing_period=as.integer(is.na(x$period)),
+              missing_drive_id=as.integer(missing_text(x$drive_id)),
+              scrimmage_missing_down=as.integer(scrim & is.na(x$down)),
+              scrimmage_missing_distance=as.integer(scrim & is.na(x$distance)),
+              scrimmage_missing_yards_gained=as.integer(scrim & is.na(x$yards_gained)),
+              scrimmage_missing_yards_to_goal=as.integer(scrim & is.na(x$yards_to_goal)),
+              scrimmage_missing_play_type=as.integer(scrim & missing_text(x$play_type))
+            )
+            a <- aggregate(flags, by=list(game_id=gid), FUN=sum)
+            a$season <- year
+            coverage[[length(coverage)+1]] <- a
+          }
+          out <- do.call(rbind,coverage)
+          out <- out[,c("season","game_id",setdiff(names(out),c("season","game_id")))]
+          write.csv(out,"evidence/primitive_field_coverage_by_game.csv",row.names=FALSE)
+          cat("PRIMITIVE_FIELD_COVERAGE_ROWS",nrow(out),"\n")
+
       - name: Validate and hash evidence
         run: |
           set -euo pipefail
@@ -343,7 +381,7 @@ jobs:
           import csv, hashlib, json
           from pathlib import Path
           e=Path("evidence")
-          req=["seasonal_semantic_audit.csv","possession_event_taxonomy.csv","raw_to_game_reproduction_sample.csv","team_game_primitives.csv","team_game_primitive_integrity.csv","lineage_join_readiness.csv","primitive_season_game_counts.csv","primitive_game_ids.csv","primitive_2016_game_ids.csv","primitive_game_team_rows.csv","primitive_game_team_rows.canonical.txt","primitive_game_team_rows.sha256","downs_turnover_counterexamples.csv","fourth_down_unexplained.csv","range_exception_rows.csv","canary_contract_v05.dput"]
+          req=["seasonal_semantic_audit.csv","possession_event_taxonomy.csv","raw_to_game_reproduction_sample.csv","team_game_primitives.csv","team_game_primitive_integrity.csv","lineage_join_readiness.csv","primitive_season_game_counts.csv","primitive_game_ids.csv","primitive_2016_game_ids.csv","primitive_game_team_rows.csv","primitive_game_team_rows.canonical.txt","primitive_game_team_rows.sha256","primitive_field_coverage_by_game.csv","downs_turnover_counterexamples.csv","fourth_down_unexplained.csv","range_exception_rows.csv","canary_contract_v05.dput"]
           for n in req:
               if not (e/n).is_file(): raise SystemExit(f"missing {n}")
           with (e/"seasonal_semantic_audit.csv").open() as f:
@@ -364,7 +402,7 @@ jobs:
       - name: Upload v0.5 evidence
         uses: actions/upload-artifact@v4
         with:
-          name: cfb-semantic-canary-full-season-v17
+          name: cfb-semantic-canary-full-season-v18
           path: evidence/
           if-no-files-found: error
           retention-days: 1
