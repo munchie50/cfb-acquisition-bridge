@@ -1,4 +1,4 @@
-name: CFB PBP Acquisition 2016-2025
+name: CFB PBP Coverage Gate 2016-2025
 
 on:
   workflow_dispatch:
@@ -10,206 +10,323 @@ permissions:
   contents: read
 
 jobs:
-  acquire:
+  qualify:
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
     steps:
-      - name: Acquire original PBP bytes
-        run: |
-          mkdir -p out
-
-          for YEAR in {2016..2025}; do
-            echo "Downloading ${YEAR}"
-
-            curl --fail --location --retry 3 \
-              --output "out/play_by_play_${YEAR}.rds" \
-              "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"
-          done
-
-      - name: Freeze byte manifest
-        run: |
-          python - <<'PY'
-          import hashlib
-          import json
-          from pathlib import Path
-
-          files = []
-
-          for year in range(2016, 2026):
-              p = Path(f"out/play_by_play_{year}.rds")
-              data = p.read_bytes()
-
-              if not data:
-                  raise RuntimeError(f"{year}: empty PBP file")
-
-              item = {
-                  "season": year,
-                  "filename": p.name,
-                  "bytes": len(data),
-                  "sha256": hashlib.sha256(data).hexdigest(),
-              }
-              files.append(item)
-
-              print(
-                  year,
-                  item["bytes"],
-                  item["sha256"],
-              )
-
-          manifest = {
-              "source": "sportsdataverse/sportsdataverse-data",
-              "release": "cfbfastR_cfb_pbp",
-              "seasons": "2016-2025",
-              "files": files,
-          }
-
-          p = Path("out/pbp_byte_manifest_2016_2025.json")
-          p.write_text(
-              json.dumps(manifest, indent=2, sort_keys=True) + "\n",
-              encoding="utf-8",
-          )
-
-          print(
-              "BYTE_MANIFEST_SHA256",
-              hashlib.sha256(p.read_bytes()).hexdigest()
-          )
-          PY
-     
       - name: Install R
         run: |
           sudo apt-get update
           sudo apt-get install -y r-base
           Rscript --version
-     
-      - name: Build structural manifests from RDS
+
+      - name: Acquire schedules and PBP
+        run: |
+          mkdir -p raw evidence
+
+          for YEAR in {2016..2025}; do
+            echo "Acquiring ${YEAR}"
+
+            curl --fail --location --retry 3 \
+              --output "raw/schedule_${YEAR}.rds" \
+              "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_schedules/schedule_${YEAR}.rds" \
+            || true
+
+            curl --fail --location --retry 3 \
+              --output "raw/play_by_play_${YEAR}.rds" \
+              "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"
+          done
+
+      - name: Qualify PBP coverage and primitives
         shell: Rscript {0}
         run: |
           dir.create("evidence", showWarnings = FALSE)
 
-          years <- 2016:2025
+          all_summary <- list()
+          all_exceptions <- list()
+          all_samples <- list()
 
-          primitive_candidates <- c(
-            "game_id",
-            "id",
-            "play_id",
-            "drive_id",
-            "period",
-            "quarter",
-            "clock",
-            "down",
-            "distance",
-            "yards_to_go",
-            "yards_gained",
-            "yards_to_goal",
-            "yard_line",
-            "play_type",
-            "play_text",
-            "offense",
-            "offense_play",
-            "defense",
-            "home",
-            "away",
-            "home_score",
-            "away_score",
-            "score",
-            "scoring",
-            "rush",
-            "pass"
-          )
+          for (year in 2016:2025) {
 
-          for (year in years) {
-            f <- sprintf(
-              "out/play_by_play_%d.rds",
-              year
+            pbp_file <- sprintf(
+              "raw/play_by_play_%d.rds", year
             )
 
-            x <- readRDS(f)
+            x <- readRDS(pbp_file)
 
-            if (!is.data.frame(x)) {
+            required <- c(
+              "game_id",
+              "period",
+              "down",
+              "distance",
+              "yards_to_goal",
+              "yards_gained",
+              "play_type",
+              "pos_team",
+              "def_pos_team",
+              "drive_id",
+              "rush",
+              "pass",
+              "home",
+              "away",
+              "home_team",
+              "away_team",
+              "completed",
+              "season_type"
+            )
+
+            missing_columns <- setdiff(required, names(x))
+
+            if (length(missing_columns) > 0) {
               stop(
                 sprintf(
-                  "%d: RDS is not a data.frame",
-                  year
+                  "%d missing required columns: %s",
+                  year,
+                  paste(missing_columns, collapse = ",")
                 )
               )
             }
 
-            cols <- names(x)
-            lower <- tolower(cols)
+            x$game_id_chr <- as.character(x$game_id)
 
-            game_candidates <- cols[
-              lower %in% c(
-                "game_id",
-                "gameid",
-                "game_id_espn",
-                "espn_game_id"
-              )
-            ]
+            game_ids <- sort(unique(
+              x$game_id_chr[
+                !is.na(x$game_id_chr)
+              ]
+            ))
 
-            unique_games <- NA_integer_
-            game_id_column <- NA_character_
+            scrimmage <- (
+              (!is.na(x$rush) & x$rush == 1) |
+              (!is.na(x$pass) & x$pass == 1)
+            )
 
-            if (length(game_candidates) > 0) {
-              game_id_column <- game_candidates[[1]]
-              unique_games <- length(
-                unique(x[[game_id_column]][
-                  !is.na(x[[game_id_column]])
-                ])
+            completeness <- data.frame(
+              game_id = game_ids,
+              stringsAsFactors = FALSE
+            )
+
+            game_metric <- function(gid, col, applicable) {
+              z <- x[
+                x$game_id_chr == gid & applicable,
+                col
+              ]
+
+              if (length(z) == 0) {
+                return(NA_real_)
+              }
+
+              mean(!is.na(z))
+            }
+
+            fields <- c(
+              "period",
+              "down",
+              "distance",
+              "yards_to_goal",
+              "yards_gained",
+              "pos_team",
+              "def_pos_team",
+              "drive_id"
+            )
+
+            for (field in fields) {
+              completeness[[field]] <- vapply(
+                game_ids,
+                function(gid) {
+                  game_metric(
+                    gid,
+                    field,
+                    scrimmage
+                  )
+                },
+                numeric(1)
               )
             }
 
-            matched <- cols[
-              lower %in% primitive_candidates
+            completeness$scrimmage_rows <- vapply(
+              game_ids,
+              function(gid) {
+                sum(
+                  x$game_id_chr == gid &
+                  scrimmage,
+                  na.rm = TRUE
+                )
+              },
+              integer(1)
+            )
+
+            completeness$primitive_complete <- apply(
+              completeness[
+                fields
+              ],
+              1,
+              function(z) {
+                all(is.na(z) | z == 1)
+              }
+            )
+
+            # Schedule reconciliation when the maintained
+            # schedule artifact is available.
+            schedule_file <- sprintf(
+              "raw/schedule_%d.rds", year
+            )
+
+            schedule_present <- file.exists(schedule_file) &&
+              file.info(schedule_file)$size > 0
+
+            schedule_unique_ids <- NA_integer_
+            pbp_missing_from_schedule <- NA_integer_
+            schedule_missing_from_pbp <- NA_integer_
+
+            if (schedule_present) {
+              s <- readRDS(schedule_file)
+
+              schedule_id_candidates <- c(
+                "game_id",
+                "id",
+                "gameid"
+              )
+
+              sid <- schedule_id_candidates[
+                schedule_id_candidates %in% names(s)
+              ]
+
+              if (length(sid) > 0) {
+                sid <- sid[[1]]
+
+                schedule_ids <- sort(unique(
+                  as.character(
+                    s[[sid]][!is.na(s[[sid]])]
+                  )
+                ))
+
+                schedule_unique_ids <- length(schedule_ids)
+
+                pbp_missing_from_schedule <- length(
+                  setdiff(game_ids, schedule_ids)
+                )
+
+                schedule_missing_from_pbp <- length(
+                  setdiff(schedule_ids, game_ids)
+                )
+              }
+            }
+
+            exceptions <- completeness[
+              completeness$scrimmage_rows == 0 |
+              !completeness$primitive_complete,
+              ,
+              drop = FALSE
             ]
 
-            evidence <- list(
+            summary_row <- data.frame(
               season = year,
-              rows = nrow(x),
-              columns = ncol(x),
-              game_id_column = game_id_column,
-              unique_game_ids = unique_games,
-              column_names = cols,
-              primitive_candidate_columns = matched
+              pbp_rows = nrow(x),
+              pbp_unique_game_ids = length(game_ids),
+              schedule_present = schedule_present,
+              schedule_unique_game_ids = schedule_unique_ids,
+              pbp_ids_not_in_schedule = pbp_missing_from_schedule,
+              schedule_ids_not_in_pbp = schedule_missing_from_pbp,
+              primitive_complete_games =
+                sum(completeness$primitive_complete),
+              primitive_exception_games =
+                nrow(exceptions),
+              zero_scrimmage_games =
+                sum(completeness$scrimmage_rows == 0),
+              stringsAsFactors = FALSE
             )
 
-            saveRDS(
-              evidence,
+            write.csv(
+              completeness,
               sprintf(
-                "evidence/schema_%d.rds",
+                "evidence/game_completeness_%d.csv",
                 year
-              )
+              ),
+              row.names = FALSE
             )
 
-            dput(
-              evidence,
-              file = sprintf(
-                "evidence/schema_%d.txt",
+            write.csv(
+              exceptions,
+              sprintf(
+                "evidence/exceptions_%d.csv",
                 year
-              )
+              ),
+              row.names = FALSE
             )
+
+            # Deterministic structural sample.
+            sample_cols <- c(
+              "game_id",
+              "id_play",
+              "period",
+              "down",
+              "distance",
+              "yards_to_goal",
+              "yards_gained",
+              "pos_team",
+              "def_pos_team",
+              "drive_id",
+              "rush",
+              "pass"
+            )
+
+            sample_cols <- sample_cols[
+              sample_cols %in% names(x)
+            ]
+
+            sample_rows <- x[
+              scrimmage &
+              !is.na(x$game_id_chr),
+              sample_cols,
+              drop = FALSE
+            ]
+
+            sample_rows <- head(sample_rows, 25)
+
+            write.csv(
+              sample_rows,
+              sprintf(
+                "evidence/sample_%d.csv",
+                year
+              ),
+              row.names = FALSE
+            )
+
+            all_summary[[as.character(year)]] <- summary_row
 
             cat(
-              "STRUCTURE",
+              "QUALIFICATION",
               year,
-              "rows", nrow(x),
-              "columns", ncol(x),
-              "game_id_column", game_id_column,
-              "unique_games", unique_games,
-              "\n"
-            )
-
-            cat(
-              "PRIMITIVE_COLUMNS",
-              year,
-              paste(matched, collapse = "|"),
+              "PBP_ROWS", nrow(x),
+              "GAME_IDS", length(game_ids),
+              "COMPLETE",
+              summary_row$primitive_complete_games,
+              "EXCEPTIONS",
+              summary_row$primitive_exception_games,
+              "ZERO_SCRIMMAGE",
+              summary_row$zero_scrimmage_games,
               "\n"
             )
           }
 
-      - name: Hash structural evidence
+          final_summary <- do.call(
+            rbind,
+            all_summary
+          )
+
+          write.csv(
+            final_summary,
+            "evidence/coverage_summary.csv",
+            row.names = FALSE
+          )
+
+          print(final_summary)
+
+      - name: Freeze evidence hashes
         run: |
           python - <<'PY'
+          import csv
           import hashlib
           import json
           from pathlib import Path
@@ -217,20 +334,29 @@ jobs:
           records = []
 
           for p in sorted(Path("evidence").glob("*")):
+              if p.name == "evidence_manifest.json":
+                  continue
+
               data = p.read_bytes()
+
               records.append({
                   "filename": p.name,
                   "bytes": len(data),
                   "sha256": hashlib.sha256(data).hexdigest(),
               })
 
-          out = Path(
-              "evidence/evidence_manifest.json"
-          )
+          manifest = {
+              "scope": "CFB PBP structural coverage 2016-2025",
+              "fitting_performed": False,
+              "tuning_performed": False,
+              "records": records,
+          }
+
+          out = Path("evidence/evidence_manifest.json")
 
           out.write_text(
               json.dumps(
-                  records,
+                  manifest,
                   indent=2,
                   sort_keys=True
               ) + "\n",
@@ -243,12 +369,10 @@ jobs:
           )
           PY
 
-      - name: Upload compact structural evidence
+      - name: Upload coverage evidence
         uses: actions/upload-artifact@v4
         with:
-          name: cfb-pbp-structure-2016-2025
-          path: |
-            out/pbp_byte_manifest_2016_2025.json
-            evidence/
+          name: cfb-pbp-coverage-gate-2016-2025
+          path: evidence/
           if-no-files-found: error
           retention-days: 1
