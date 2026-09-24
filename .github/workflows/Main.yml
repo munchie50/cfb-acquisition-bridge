@@ -49,6 +49,7 @@ jobs:
           team_game_primitives <- list()
           primitive_integrity <- list()
           lineage_readiness <- list()
+          primitive_season_summary <- list()
 
           for (year in 2016:2025) {
             x <- readRDS(sprintf("raw/pbp_%d.rds", year))
@@ -258,12 +259,19 @@ jobs:
             stringsAsFactors=FALSE
           )
           lineage_readiness <- do.call(rbind, lineage_readiness)
+          primitive_season_summary[[1]] <- aggregate(
+            game_id ~ season, data=team_game_primitives,
+            FUN=function(z) length(unique(as.character(z)))
+          )
+          names(primitive_season_summary[[1]])[2] <- "primitive_unique_games"
+          primitive_season_summary <- do.call(rbind, primitive_season_summary)
           write.csv(seasonal, "evidence/seasonal_semantic_audit.csv", row.names=FALSE)
           write.csv(turnover_semantics, "evidence/possession_event_taxonomy.csv", row.names=FALSE)
           write.csv(reproduction, "evidence/raw_to_game_reproduction_sample.csv", row.names=FALSE)
           write.csv(team_game_primitives, "evidence/team_game_primitives.csv", row.names=FALSE)
           write.csv(primitive_integrity, "evidence/team_game_primitive_integrity.csv", row.names=FALSE)
           write.csv(lineage_readiness, "evidence/lineage_join_readiness.csv", row.names=FALSE)
+          write.csv(primitive_season_summary, "evidence/primitive_season_game_counts.csv", row.names=FALSE)
 
           if (length(tod_exceptions)) {
             write.csv(do.call(rbind,tod_exceptions), "evidence/downs_turnover_counterexamples.csv", row.names=FALSE)
@@ -289,7 +297,7 @@ jobs:
             all(seasonal$tod_gain_reaches_line == 0)
 
           contract <- list(
-            derivation_version="semantic_canary_v0.11",
+            derivation_version="semantic_canary_v0.12",
             seasons=2016:2025,
             promoted_semantics=list(
               FOURTH_DOWN_ATTEMPT="down==4, non-special-teams, with rush/pass/pass_attempt flag or explicit scrimmage text evidence"
@@ -319,7 +327,7 @@ jobs:
           import csv, hashlib, json
           from pathlib import Path
           e=Path("evidence")
-          req=["seasonal_semantic_audit.csv","possession_event_taxonomy.csv","raw_to_game_reproduction_sample.csv","team_game_primitives.csv","team_game_primitive_integrity.csv","lineage_join_readiness.csv","downs_turnover_counterexamples.csv","fourth_down_unexplained.csv","range_exception_rows.csv","canary_contract_v05.dput"]
+          req=["seasonal_semantic_audit.csv","possession_event_taxonomy.csv","raw_to_game_reproduction_sample.csv","team_game_primitives.csv","team_game_primitive_integrity.csv","lineage_join_readiness.csv","primitive_season_game_counts.csv","downs_turnover_counterexamples.csv","fourth_down_unexplained.csv","range_exception_rows.csv","canary_contract_v05.dput"]
           for n in req:
               if not (e/n).is_file(): raise SystemExit(f"missing {n}")
           with (e/"seasonal_semantic_audit.csv").open() as f:
@@ -330,7 +338,7 @@ jobs:
               if p.is_file() and p.name!="evidence_manifest.json":
                   b=p.read_bytes()
                   records.append({"filename":p.name,"bytes":len(b),"sha256":hashlib.sha256(b).hexdigest()})
-          m={"scope":"2016-2025 primitive lineage join readiness; authoritative chronology intentionally external","derivation_version":"semantic_canary_v0.11",
+          m={"scope":"2016-2025 primitive join-key export and seasonal game reconciliation; authoritative chronology remains external","derivation_version":"semantic_canary_v0.12",
              "turnover_on_downs_semantic_promotion":False,"other_turnover_composites_promoted":False,
              "fitting_performed":False,"tuning_performed":False,"test_outcome_optimization":False,"records":records}
           out=e/"evidence_manifest.json"; out.write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
@@ -340,7 +348,7 @@ jobs:
       - name: Upload v0.5 evidence
         uses: actions/upload-artifact@v4
         with:
-          name: cfb-semantic-canary-full-season-v11
+          name: cfb-semantic-canary-full-season-v12
           path: evidence/
           if-no-files-found: error
           retention-days: 1
