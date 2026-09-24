@@ -1,4 +1,4 @@
-name: CFB Pre-Gate Integrity Audit 2016-2025
+name: CFB Cross-Source Adjudication
 
 on:
   workflow_dispatch:
@@ -10,9 +10,9 @@ permissions:
   contents: read
 
 jobs:
-  audit:
+  adjudicate:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 45
 
     steps:
       - name: Install R
@@ -21,31 +21,22 @@ jobs:
           sudo apt-get install -y r-base
           Rscript --version
 
-      - name: Acquire maintained PBP
+      - name: Acquire independent ESPN PBP
         run: |
           mkdir -p raw evidence
 
-          for YEAR in {2016..2025}; do
+          for YEAR in 2017 2018 2019 2020 2022 2025; do
             curl --fail --location --retry 3 \
-              --output "raw/play_by_play_${YEAR}.rds" \
-              "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"
+              --output "raw/espn_${YEAR}.rds" \
+              "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/espn_cfb_pbp/play_by_play_${YEAR}.rds"
           done
 
-      - name: Run pre-gate integrity audit
+      - name: Cross-source adjudication
         shell: Rscript {0}
         run: |
           dir.create("evidence", showWarnings = FALSE)
 
-          exception_ids <- c(
-            "401403882",
-            "401403885",
-            "401403886",
-            "401403888",
-            "401403994",
-            "401756900"
-          )
-
-          missing_population_ids <- c(
+          regular_missing <- c(
             "400935239",
             "400941794",
             "400944860",
@@ -53,16 +44,7 @@ jobs:
             "401015050",
             "401019521",
             "401121942",
-            "401237074",
-            "401240101",
-            "401247349",
-            "401249043",
-            "401249434",
-            "401249854",
-            "401256001",
             "401260158",
-            "401262060",
-            "401264085",
             "401265699",
             "401267165",
             "401267166",
@@ -74,91 +56,79 @@ jobs:
             "401269384"
           )
 
-          championship_ids <- c(
-            "401237074",
-            "401240101",
-            "401247349",
-            "401249043",
-            "401249434",
-            "401249854",
-            "401256001",
-            "401262060",
-            "401264085"
+          primitive_exception_games <- c(
+            "401403882",
+            "401403885",
+            "401403886",
+            "401403888",
+            "401403994",
+            "401756900"
           )
 
-          regular_missing_ids <- setdiff(
-            missing_population_ids,
-            championship_ids
+          years <- c(
+            2017, 2018, 2019,
+            2020, 2022, 2025
           )
 
-          summaries <- list()
-          invariant_failures <- list()
-          samples <- list()
+          coverage <- list()
+          exception_rows <- list()
+          schema_rows <- list()
 
-          for (year in 2016:2025) {
+          for (year in years) {
 
             x <- readRDS(
-              sprintf(
-                "raw/play_by_play_%d.rds",
-                year
-              )
+              sprintf("raw/espn_%d.rds", year)
             )
 
-            x$game_id_chr <- as.character(x$game_id)
-
-            required <- c(
-              "game_id",
-              "id_play",
-              "period",
-              "down",
-              "distance",
-              "yards_to_goal",
-              "yards_gained",
-              "play_type",
-              "play_text",
-              "pos_team",
-              "def_pos_team",
-              "drive_id",
-              "rush",
-              "pass",
-              "home",
-              "away",
-              "home_team",
-              "away_team",
-              "completed",
-              "season_type"
+            game_col <- intersect(
+              c(
+                "game_id",
+                "gameId",
+                "id_game",
+                "id"
+              ),
+              names(x)
             )
 
-            missing_cols <- setdiff(required, names(x))
-
-            if (length(missing_cols) > 0) {
+            if (length(game_col) == 0) {
               stop(
                 paste(
                   year,
-                  "missing required columns:",
-                  paste(missing_cols, collapse=",")
+                  "has no recognized game ID column"
                 )
               )
             }
 
-            # -----------------------------
-            # Population-wide invariants
-            # -----------------------------
+            game_col <- game_col[[1]]
 
-            gids <- sort(unique(
-              x$game_id_chr[
-                !is.na(x$game_id_chr)
-              ]
-            ))
+            x$game_id_chr <-
+              as.character(x[[game_col]])
 
-            audit_rows <- vector(
-              "list",
-              length(gids)
+            schema_rows[[as.character(year)]] <-
+              data.frame(
+                season = year,
+                rows = nrow(x),
+                columns = ncol(x),
+                game_id_column = game_col,
+                unique_games =
+                  length(unique(
+                    x$game_id_chr[
+                      !is.na(x$game_id_chr)
+                    ]
+                  )),
+                stringsAsFactors = FALSE
+              )
+
+            target_missing <- intersect(
+              regular_missing,
+              unique(x$game_id_chr)
             )
 
-            for (i in seq_along(gids)) {
+            for (gid in regular_missing) {
 
-              gid <- gids[[i]]
+              if (!(gid %in% unique(x$game_id_chr))) {
+                next
+              }
 
               g <- x[
                 x$game_id_chr == gid,
@@ -166,523 +136,187 @@ jobs:
                 drop = FALSE
               ]
 
-              home_vals <- unique(
-                g$home_team[
-                  !is.na(g$home_team)
-                ]
-              )
-
-              away_vals <- unique(
-                g$away_team[
-                  !is.na(g$away_team)
-                ]
-              )
-
-              period_vals <- g$period[
-                !is.na(g$period)
-              ]
-
-              offense_defense_same <- any(
-                !is.na(g$pos_team) &
-                !is.na(g$def_pos_team) &
-                g$pos_team == g$def_pos_team
-              )
-
-              negative_distance <- any(
-                !is.na(g$distance) &
-                g$distance < 0
-              )
-
-              invalid_yards_to_goal <- any(
-                !is.na(g$yards_to_goal) &
-                (
-                  g$yards_to_goal < 0 |
-                  g$yards_to_goal > 100
+              coverage[[paste(year, gid)]] <-
+                data.frame(
+                  season = year,
+                  game_id = gid,
+                  rows = nrow(g),
+                  columns = ncol(g),
+                  source = "espn_cfb_pbp",
+                  classification =
+                    "ALTERNATE_SOURCE_PRESENT",
+                  stringsAsFactors = FALSE
                 )
-              )
-
-              invalid_period <- any(
-                period_vals < 1
-              )
-
-              audit_rows[[i]] <- data.frame(
-                season = year,
-                game_id = gid,
-                rows = nrow(g),
-                unique_home_teams =
-                  length(home_vals),
-                unique_away_teams =
-                  length(away_vals),
-                offense_defense_same =
-                  offense_defense_same,
-                negative_distance =
-                  negative_distance,
-                invalid_yards_to_goal =
-                  invalid_yards_to_goal,
-                invalid_period =
-                  invalid_period,
-                stringsAsFactors = FALSE
-              )
             }
 
-            inv <- do.call(
-              rbind,
-              audit_rows
-            )
+            for (gid in primitive_exception_games) {
 
-            inv$failure <- (
-              inv$unique_home_teams != 1 |
-              inv$unique_away_teams != 1 |
-              inv$offense_defense_same |
-              inv$negative_distance |
-              inv$invalid_yards_to_goal |
-              inv$invalid_period
-            )
+              if (!(gid %in% unique(x$game_id_chr))) {
+                next
+              }
 
-            write.csv(
-              inv,
-              sprintf(
-                "evidence/invariants_%d.csv",
-                year
-              ),
-              row.names = FALSE
-            )
-
-            bad <- inv[
-              inv$failure,
-              ,
-              drop = FALSE
-            ]
-
-            write.csv(
-              bad,
-              sprintf(
-                "evidence/invariant_failures_%d.csv",
-                year
-              ),
-              row.names = FALSE
-            )
-
-            # -----------------------------
-            # Exact six primitive exceptions
-            # -----------------------------
-
-            target <- x[
-              x$game_id_chr %in% exception_ids,
-              ,
-              drop = FALSE
-            ]
-
-            if (nrow(target) > 0) {
-
-              target_scrimmage <- (
-                (!is.na(target$rush) &
-                 target$rush == 1) |
-                (!is.na(target$pass) &
-                 target$pass == 1)
-              )
-
-              exact <- target[
-                target_scrimmage &
-                (
-                  is.na(target$down) |
-                  is.na(target$distance)
-                ),
+              g <- x[
+                x$game_id_chr == gid,
                 ,
                 drop = FALSE
               ]
 
-              exact_cols <- c(
-                "game_id",
-                "id_play",
-                "period",
-                "clock_minutes",
-                "clock_seconds",
-                "play_type",
-                "play_text",
-                "down",
-                "distance",
-                "yards_to_goal",
-                "yards_gained",
-                "pos_team",
-                "def_pos_team",
-                "drive_id",
-                "rush",
-                "pass",
-                "scoring",
-                "scoring_play",
-                "turnover_indicator"
-              )
-
-              exact_cols <- exact_cols[
-                exact_cols %in% names(exact)
-              ]
-
-              write.csv(
-                exact[, exact_cols, drop=FALSE],
-                sprintf(
-                  "evidence/primitive_exception_plays_%d.csv",
-                  year
+              wanted <- intersect(
+                c(
+                  "game_id_chr",
+                  "game_id",
+                  "id_play",
+                  "play_id",
+                  "period",
+                  "clock",
+                  "clock_minutes",
+                  "clock_seconds",
+                  "down",
+                  "distance",
+                  "yards_to_goal",
+                  "yards_gained",
+                  "play_type",
+                  "play_text",
+                  "text",
+                  "pos_team",
+                  "def_pos_team",
+                  "drive_id",
+                  "rush",
+                  "pass",
+                  "scoring_play",
+                  "turnover_indicator"
                 ),
-                row.names = FALSE
+                names(g)
               )
+
+              z <- g[, wanted, drop=FALSE]
+              z$adjudication_season <- year
+              z$adjudication_game_id <- gid
+
+              exception_rows[[paste(year, gid)]] <- z
             }
-
-            # -----------------------------
-            # Missing-ID confirmation
-            # -----------------------------
-
-            expected_here <- missing_population_ids[
-              substr(
-                missing_population_ids,
-                1,
-                0
-              ) == ""
-            ]
-
-            present_missing_ids <- intersect(
-              gids,
-              missing_population_ids
-            )
-
-            if (length(present_missing_ids) > 0) {
-              stop(
-                paste(
-                  "Previously absent IDs unexpectedly present:",
-                  paste(
-                    present_missing_ids,
-                    collapse=","
-                  )
-                )
-              )
-            }
-
-            # -----------------------------
-            # Deterministic stratified sample
-            # -----------------------------
-
-            ordered <- x[
-              !is.na(x$game_id_chr),
-              ,
-              drop = FALSE
-            ]
-
-            sample_ids <- unique(
-              ordered$game_id_chr
-            )
-
-            if (length(sample_ids) >= 9) {
-              idx <- unique(round(seq(
-                1,
-                length(sample_ids),
-                length.out = 9
-              )))
-              sample_ids <- sample_ids[idx]
-            }
-
-            s <- ordered[
-              ordered$game_id_chr %in%
-                sample_ids,
-              ,
-              drop = FALSE
-            ]
-
-            sample_cols <- c(
-              "game_id",
-              "id_play",
-              "week",
-              "home_team",
-              "away_team",
-              "neutral_site",
-              "period",
-              "clock_minutes",
-              "clock_seconds",
-              "pos_team",
-              "def_pos_team",
-              "down",
-              "distance",
-              "yards_to_goal",
-              "yards_gained",
-              "play_type",
-              "drive_id",
-              "rush",
-              "pass",
-              "scoring",
-              "scoring_play",
-              "turnover_indicator"
-            )
-
-            sample_cols <- sample_cols[
-              sample_cols %in% names(s)
-            ]
-
-            write.csv(
-              s[, sample_cols, drop=FALSE],
-              sprintf(
-                "evidence/stratified_sample_%d.csv",
-                year
-              ),
-              row.names = FALSE
-            )
-
-            # -----------------------------
-            # Deterministic primitive-derived
-            # feature proof by game/team
-            # No fitting or tuning.
-            # -----------------------------
-
-            scrimmage <- (
-              (!is.na(x$rush) & x$rush == 1) |
-              (!is.na(x$pass) & x$pass == 1)
-            )
-
-            z <- x[
-              scrimmage &
-              !is.na(x$game_id_chr) &
-              !is.na(x$pos_team),
-              ,
-              drop = FALSE
-            ]
-
-            key <- paste(
-              z$game_id_chr,
-              z$pos_team,
-              sep = "|"
-            )
-
-            groups <- split(
-              seq_len(nrow(z)),
-              key
-            )
-
-            feat <- lapply(
-              groups,
-              function(ii) {
-
-                g <- z[ii, , drop=FALSE]
-
-                data.frame(
-                  season = year,
-                  game_id =
-                    as.character(g$game_id[[1]]),
-                  offense =
-                    as.character(g$pos_team[[1]]),
-                  plays = nrow(g),
-                  rush_plays =
-                    sum(g$rush == 1, na.rm=TRUE),
-                  pass_plays =
-                    sum(g$pass == 1, na.rm=TRUE),
-                  yards =
-                    sum(
-                      g$yards_gained,
-                      na.rm=TRUE
-                    ),
-                  yards_per_play =
-                    mean(
-                      g$yards_gained,
-                      na.rm=TRUE
-                    ),
-                  explosive_plays =
-                    sum(
-                      !is.na(g$yards_gained) &
-                      g$yards_gained >= 20
-                    ),
-                  turnovers =
-                    if (
-                      "turnover_indicator" %in% names(g)
-                    ) {
-                      sum(
-                        g$turnover_indicator == 1,
-                        na.rm=TRUE
-                      )
-                    } else {
-                      NA_integer_
-                    },
-                  mean_start_field_position =
-                    mean(
-                      g$yards_to_goal,
-                      na.rm=TRUE
-                    ),
-                  unique_drives =
-                    length(unique(
-                      g$drive_id[
-                        !is.na(g$drive_id)
-                      ]
-                    )),
-                  stringsAsFactors = FALSE
-                )
-              }
-            )
-
-            feat <- do.call(
-              rbind,
-              feat
-            )
-
-            write.csv(
-              feat,
-              sprintf(
-                "evidence/feature_proof_%d.csv",
-                year
-              ),
-              row.names = FALSE
-            )
-
-            summaries[[as.character(year)]] <-
-              data.frame(
-                season = year,
-                pbp_rows = nrow(x),
-                unique_games = length(gids),
-                invariant_failures = nrow(bad),
-                feature_rows = nrow(feat),
-                stringsAsFactors = FALSE
-              )
 
             cat(
-              "AUDIT",
+              "ESPN_SOURCE",
               year,
               "ROWS", nrow(x),
-              "GAMES", length(gids),
-              "INVARIANT_FAILURES",
-              nrow(bad),
-              "FEATURE_ROWS",
-              nrow(feat),
+              "GAMES",
+              length(unique(
+                x$game_id_chr[
+                  !is.na(x$game_id_chr)
+                ]
+              )),
+              "MISSING_TARGETS_FOUND",
+              length(target_missing),
               "\n"
             )
           }
 
-          summary <- do.call(
+          schema <- do.call(
             rbind,
-            summaries
+            schema_rows
           )
 
           write.csv(
-            summary,
-            "evidence/audit_summary.csv",
+            schema,
+            "evidence/espn_schema_summary.csv",
             row.names = FALSE
+          )
+
+          if (length(coverage) > 0) {
+            cov <- do.call(rbind, coverage)
+          } else {
+            cov <- data.frame(
+              season = integer(),
+              game_id = character(),
+              rows = integer(),
+              columns = integer(),
+              source = character(),
+              classification = character()
+            )
+          }
+
+          write.csv(
+            cov,
+            "evidence/alternate_source_coverage.csv",
+            row.names = FALSE
+          )
+
+          found <- unique(cov$game_id)
+
+          unresolved <- setdiff(
+            regular_missing,
+            found
+          )
+
+          resolution <- data.frame(
+            game_id = regular_missing,
+            alternate_source_present =
+              regular_missing %in% found,
+            classification =
+              ifelse(
+                regular_missing %in% found,
+                "ALTERNATE_SOURCE_PRESENT",
+                "UNRESOLVED_AFTER_ESPN_RELEASE"
+              ),
+            stringsAsFactors = FALSE
           )
 
           write.csv(
-            data.frame(
-              game_id = regular_missing_ids,
-              classification =
-                "REGULAR_SEASON_SOURCE_ABSENCE_PENDING_ALTERNATE_RETRIEVAL"
-            ),
-            "evidence/regular_missing_ids.csv",
+            resolution,
+            "evidence/missing_game_resolution.csv",
             row.names = FALSE
           )
 
-          write.csv(
-            data.frame(
-              game_id = championship_ids,
-              classification =
-                "CHAMPIONSHIP_SCOPE_PENDING"
-            ),
-            "evidence/championship_scope_ids.csv",
-            row.names = FALSE
-          )
+          if (length(exception_rows) > 0) {
 
-          print(summary)
+            all_names <- unique(unlist(
+              lapply(exception_rows, names)
+            ))
 
-      - name: Attempt alternate ESPN retrieval for regular missing games
-        run: |
-          python - <<'PY'
-          import csv
-          import json
-          import time
-          import urllib.request
-          from pathlib import Path
+            aligned <- lapply(
+              exception_rows,
+              function(z) {
+                miss <- setdiff(
+                  all_names,
+                  names(z)
+                )
 
-          ids = []
+                for (m in miss) {
+                  z[[m]] <- NA
+                }
 
-          with open(
-              "evidence/regular_missing_ids.csv",
-              newline=""
-          ) as f:
-              for row in csv.DictReader(f):
-                  ids.append(row["game_id"])
-
-          outdir = Path("evidence/alternate_espn")
-          outdir.mkdir(exist_ok=True)
-
-          results = []
-
-          for gid in ids:
-              url = (
-                  "https://site.api.espn.com/apis/site/"
-                  "v2/sports/football/college-football/"
-                  f"summary?event={gid}"
-              )
-
-              record = {
-                  "game_id": gid,
-                  "retrieved": False,
-                  "has_plays": False,
-                  "play_count": 0,
-                  "error": None,
+                z[, all_names, drop=FALSE]
               }
+            )
 
-              try:
-                  req = urllib.request.Request(
-                      url,
-                      headers={
-                          "User-Agent":
-                          "Mozilla/5.0"
-                      },
-                  )
+            exceptions <- do.call(
+              rbind,
+              aligned
+            )
 
-                  with urllib.request.urlopen(
-                      req,
-                      timeout=30
-                  ) as r:
-                      data = json.load(r)
+            write.csv(
+              exceptions,
+              "evidence/espn_exception_games.csv",
+              row.names = FALSE
+            )
+          }
 
-                  plays = data.get("plays") or []
-
-                  record["retrieved"] = True
-                  record["has_plays"] = len(plays) > 0
-                  record["play_count"] = len(plays)
-
-                  Path(
-                      outdir /
-                      f"{gid}.json"
-                  ).write_text(
-                      json.dumps(
-                          data,
-                          sort_keys=True
-                      ),
-                      encoding="utf-8"
-                  )
-
-              except Exception as e:
-                  record["error"] = repr(e)
-
-              results.append(record)
-              time.sleep(0.2)
-
-          with open(
-              "evidence/alternate_retrieval_summary.csv",
-              "w",
-              newline=""
-          ) as f:
-              w = csv.DictWriter(
-                  f,
-                  fieldnames=[
-                      "game_id",
-                      "retrieved",
-                      "has_plays",
-                      "play_count",
-                      "error",
-                  ],
-              )
-              w.writeheader()
-              w.writerows(results)
-
-          print(
-              "ALTERNATE_RETRIEVAL",
-              json.dumps(results)
+          cat(
+            "RESOLUTION",
+            "TARGETS", length(regular_missing),
+            "FOUND", length(found),
+            "UNRESOLVED", length(unresolved),
+            "\n"
           )
-          PY
+
+          if (length(unresolved) > 0) {
+            cat(
+              "UNRESOLVED_IDS",
+              paste(unresolved, collapse=","),
+              "\n"
+            )
+          }
 
       - name: Freeze evidence hashes
         run: |
@@ -693,35 +327,30 @@ jobs:
 
           records = []
 
-          for p in sorted(
-              Path("evidence").rglob("*")
-          ):
+          for p in sorted(Path("evidence").rglob("*")):
               if (
-                  p.is_file() and
-                  p.name !=
-                  "evidence_manifest.json"
+                  p.is_file()
+                  and p.name != "evidence_manifest.json"
               ):
                   data = p.read_bytes()
-
                   records.append({
                       "filename":
-                          str(p.relative_to(
-                              "evidence"
-                          )),
+                          str(p.relative_to("evidence")),
                       "bytes": len(data),
                       "sha256":
-                          hashlib.sha256(
-                              data
-                          ).hexdigest(),
+                          hashlib.sha256(data).hexdigest(),
                   })
 
           manifest = {
               "scope":
-                  "CFB pre-gate integrity audit 2016-2025",
+                  "CFB cross-source adjudication",
+              "primary_source":
+                  "cfbfastR_cfb_pbp",
+              "alternate_source":
+                  "espn_cfb_pbp",
               "fitting_performed": False,
               "tuning_performed": False,
-              "test_outcome_optimization":
-                  False,
+              "test_outcome_optimization": False,
               "records": records,
           }
 
@@ -735,7 +364,7 @@ jobs:
                   indent=2,
                   sort_keys=True
               ) + "\n",
-              encoding="utf-8",
+              encoding="utf-8"
           )
 
           print(
@@ -746,10 +375,10 @@ jobs:
           )
           PY
 
-      - name: Upload pre-gate evidence
+      - name: Upload adjudication evidence
         uses: actions/upload-artifact@v4
         with:
-          name: cfb-pre-gate-integrity-audit-2016-2025
+          name: cfb-cross-source-adjudication
           path: evidence/
           if-no-files-found: error
           retention-days: 1
