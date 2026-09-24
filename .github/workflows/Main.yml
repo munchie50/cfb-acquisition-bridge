@@ -1,219 +1,187 @@
-name: CFB Semantic Canary
+name: CFB Semantic Canary Full-Season Audit
 
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
 
 permissions:
   contents: read
 
 jobs:
-  semantic-canary:
+  semantic-audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - name: Install R
         run: |
           sudo apt-get update
           sudo apt-get install -y r-base
-          Rscript --version
 
-      - name: Acquire primary PBP proof seasons
+      - name: Acquire 2016-2025 primary PBP
         run: |
           set -euo pipefail
           mkdir -p raw evidence
-          for YEAR in 2017 2018 2022; do
+          for YEAR in {2016..2025}; do
             curl --fail --location --retry 3 --output "raw/pbp_${YEAR}.rds" "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"
             test -s "raw/pbp_${YEAR}.rds"
           done
 
-      - name: Build v0.4 football-event evidence
+      - name: Audit football-event semantics across all development seasons
         shell: Rscript {0}
         run: |
-          dir.create("evidence", showWarnings = FALSE)
-
-          base_required <- c(
+          required <- c(
             "game_id","id_play","pos_team","def_pos_team","play_type","play_text",
-            "down","distance","yards_gained","period","rush","pass","turnover",
-            "turnover_indicator","drive_id"
+            "down","distance","yards_gained","period","rush","pass","drive_id",
+            "turnover","turnover_indicator","turnover_vec","downs_turnover",
+            "interception_stat","interception_thrown_stat","fumble_stat",
+            "fumble_recovered_stat","drive_result","drive_result_detailed",
+            "yards_to_goal","yards_to_goal_end","down_end","pass_attempt","punt",
+            "field_goal_missed_stat","field_goal_made_stat"
           )
 
-          semantic_required <- c(
-            "downs_turnover","interception_stat","interception_thrown_stat",
-            "fumble_stat","fumble_recovered_stat","turnover_vec","drive_result",
-            "drive_result_detailed","yards_to_goal","yards_to_goal_end","down_end",
-            "pass_attempt","punt","field_goal_missed_stat","field_goal_made_stat"
-          )
+          seasonal <- list()
+          fourth_exceptions <- list()
+          range_exceptions <- list()
 
-          schema_out <- list()
-          events_out <- list()
-
-          for (year in c(2017, 2018, 2022)) {
+          for (year in 2016:2025) {
             x <- readRDS(sprintf("raw/pbp_%d.rds", year))
-            missing <- setdiff(c(base_required, semantic_required), names(x))
-            if (length(missing) > 0) stop(paste(year, "missing required demonstrated fields:", paste(missing, collapse=",")))
+            missing <- setdiff(required, names(x))
+            if (length(missing)) stop(paste(year, "missing required fields:", paste(missing, collapse=",")))
 
-            schema_out[[length(schema_out)+1]] <- data.frame(
-              season=year, rows=nrow(x), columns=ncol(x),
-              unique_games=length(unique(as.character(x$game_id))),
-              required_columns_present=TRUE, stringsAsFactors=FALSE
+            one <- function(v) !is.na(v) & v == 1
+            fourth_context <- !is.na(x$down) & x$down == 4
+            scrimmage <- one(x$rush) | one(x$pass) | one(x$pass_attempt)
+            fourth_attempt <- fourth_context & scrimmage
+            tod <- one(x$downs_turnover)
+            gained_line <- !is.na(x$yards_gained) & !is.na(x$distance) & x$yards_gained >= x$distance
+            int_evt <- one(x$interception_thrown_stat) | one(x$interception_stat)
+            fum_rec <- one(x$fumble_recovered_stat)
+            safety_evt <- grepl("safety", ifelse(is.na(x$drive_result_detailed),"",tolower(x$drive_result_detailed)))
+            scoring_evt <- grepl("touchdown|field goal good", ifelse(is.na(x$drive_result_detailed),"",tolower(x$drive_result_detailed)))
+            end_evt <- grepl("end half|end of game", ifelse(is.na(x$drive_result_detailed),"",tolower(x$drive_result_detailed)))
+
+            fail_by_yards <- fourth_attempt & !gained_line
+            alternate_terminal <- fail_by_yards & !tod & (int_evt | fum_rec | safety_evt | scoring_evt | end_evt)
+            unexplained_fourth_failure <- fail_by_yards & !tod & !alternate_terminal
+
+            neg_distance <- !is.na(x$distance) & x$distance < 0
+            bad_ytg <- !is.na(x$yards_to_goal) & (x$yards_to_goal < 0 | x$yards_to_goal > 100)
+            bad_ytg_end <- !is.na(x$yards_to_goal_end) & (x$yards_to_goal_end < 0 | x$yards_to_goal_end > 100)
+
+            seasonal[[length(seasonal)+1]] <- data.frame(
+              season=year, rows=nrow(x), games=length(unique(as.character(x$game_id))),
+              fourth_context=sum(fourth_context), fourth_attempt=sum(fourth_attempt),
+              downs_turnover=sum(tod),
+              tod_not_fourth_attempt=sum(tod & !fourth_attempt),
+              tod_gain_reaches_line=sum(tod & gained_line),
+              fourth_fail_not_tod=sum(fail_by_yards & !tod),
+              fourth_fail_alternate_terminal=sum(alternate_terminal),
+              fourth_fail_unexplained=sum(unexplained_fourth_failure),
+              interceptions=sum(one(x$interception_thrown_stat)),
+              fumble_recoveries=sum(one(x$fumble_recovered_stat)),
+              source_turnover=sum(one(x$turnover)),
+              turnover_indicator=sum(one(x$turnover_indicator)),
+              turnover_vec=sum(one(x$turnover_vec)),
+              negative_distance=sum(neg_distance),
+              yards_to_goal_out_of_range=sum(bad_ytg),
+              yards_to_goal_end_out_of_range=sum(bad_ytg_end),
+              stringsAsFactors=FALSE
             )
 
-            # Adjacency is evidence only. Never cross a game boundary.
-            same_game_next <- c(as.character(x$game_id[-1]) == as.character(x$game_id[-nrow(x)]), FALSE)
-            next_safe <- function(v) {
-              z <- c(v[-1], NA)
-              z[!same_game_next] <- NA
-              z
+            ix <- which(unexplained_fourth_failure)
+            if (length(ix)) {
+              fourth_exceptions[[length(fourth_exceptions)+1]] <- data.frame(
+                season=year, game_id=as.character(x$game_id[ix]), id_play=as.character(x$id_play[ix]),
+                pos_team=as.character(x$pos_team[ix]), period=x$period[ix], down=x$down[ix],
+                distance=x$distance[ix], yards_gained=x$yards_gained[ix],
+                play_type=as.character(x$play_type[ix]), play_text=as.character(x$play_text[ix]),
+                drive_result=as.character(x$drive_result[ix]),
+                drive_result_detailed=as.character(x$drive_result_detailed[ix]),
+                stringsAsFactors=FALSE
+              )
             }
 
-            fourth_scrimmage <- !is.na(x$down) & x$down == 4 &
-              ((!is.na(x$rush) & x$rush == 1) | (!is.na(x$pass) & x$pass == 1) |
-               (!is.na(x$pass_attempt) & x$pass_attempt == 1))
-
-            rich_signal <- fourth_scrimmage |
-              (!is.na(x$downs_turnover) & x$downs_turnover != 0) |
-              (!is.na(x$interception_stat) & x$interception_stat != 0) |
-              (!is.na(x$interception_thrown_stat) & x$interception_thrown_stat != 0) |
-              (!is.na(x$fumble_stat) & x$fumble_stat != 0) |
-              (!is.na(x$fumble_recovered_stat) & x$fumble_recovered_stat != 0) |
-              (!is.na(x$turnover) & x$turnover != 0) |
-              (!is.na(x$turnover_indicator) & x$turnover_indicator != 0) |
-              (!is.na(x$turnover_vec) & x$turnover_vec != 0) |
-              (!is.na(x$field_goal_missed_stat) & x$field_goal_missed_stat != 0) |
-              (!is.na(x$field_goal_made_stat) & x$field_goal_made_stat != 0) |
-              (!is.na(x$punt) & x$punt != 0)
-
-            idx <- which(rich_signal)
-            ev <- data.frame(
-              season=year,
-              source_row=idx,
-              game_id=as.character(x$game_id[idx]),
-              id_play=as.character(x$id_play[idx]),
-              pos_team=as.character(x$pos_team[idx]),
-              def_pos_team=as.character(x$def_pos_team[idx]),
-              period=x$period[idx], down=x$down[idx], down_end=x$down_end[idx],
-              distance=x$distance[idx], yards_gained=x$yards_gained[idx],
-              yards_to_goal=x$yards_to_goal[idx], yards_to_goal_end=x$yards_to_goal_end[idx],
-              drive_id=as.character(x$drive_id[idx]),
-              drive_result=as.character(x$drive_result[idx]),
-              drive_result_detailed=as.character(x$drive_result_detailed[idx]),
-              play_type=as.character(x$play_type[idx]),
-              play_text=as.character(x$play_text[idx]),
-              rush=x$rush[idx], pass=x$pass[idx], pass_attempt=x$pass_attempt[idx],
-              punt=x$punt[idx],
-              turnover=x$turnover[idx], turnover_indicator=x$turnover_indicator[idx],
-              turnover_vec=x$turnover_vec[idx], downs_turnover=x$downs_turnover[idx],
-              interception_stat=x$interception_stat[idx],
-              interception_thrown_stat=x$interception_thrown_stat[idx],
-              fumble_stat=x$fumble_stat[idx],
-              fumble_recovered_stat=x$fumble_recovered_stat[idx],
-              field_goal_missed_stat=x$field_goal_missed_stat[idx],
-              field_goal_made_stat=x$field_goal_made_stat[idx],
-              fourth_down_scrimmage_candidate=fourth_scrimmage[idx],
-              next_pos_team=as.character(next_safe(as.character(x$pos_team))[idx]),
-              next_drive_id=as.character(next_safe(as.character(x$drive_id))[idx]),
-              next_down=next_safe(x$down)[idx],
-              next_distance=next_safe(x$distance)[idx],
-              next_play_type=as.character(next_safe(as.character(x$play_type))[idx]),
-              next_play_text=as.character(next_safe(as.character(x$play_text))[idx]),
-              stringsAsFactors=FALSE
-            )
-            events_out[[length(events_out)+1]] <- ev
+            ix2 <- which(neg_distance | bad_ytg | bad_ytg_end)
+            if (length(ix2)) {
+              range_exceptions[[length(range_exceptions)+1]] <- data.frame(
+                season=year, game_id=as.character(x$game_id[ix2]), id_play=as.character(x$id_play[ix2]),
+                play_type=as.character(x$play_type[ix2]), down=x$down[ix2], distance=x$distance[ix2],
+                yards_to_goal=x$yards_to_goal[ix2], yards_to_goal_end=x$yards_to_goal_end[ix2],
+                drive_result=as.character(x$drive_result[ix2]),
+                drive_result_detailed=as.character(x$drive_result_detailed[ix2]),
+                play_text=as.character(x$play_text[ix2]), stringsAsFactors=FALSE
+              )
+            }
           }
 
-          schema <- do.call(rbind, schema_out)
-          events <- do.call(rbind, events_out)
-          write.csv(schema, "evidence/schema_validation.csv", row.names=FALSE)
-          write.csv(events, "evidence/rich_semantic_event_evidence.csv", row.names=FALSE)
+          seasonal <- do.call(rbind, seasonal)
+          write.csv(seasonal, "evidence/seasonal_semantic_audit.csv", row.names=FALSE)
 
-          # Deterministic concept summaries; semantics remain evidence, not promotion.
-          summarize_flag <- function(name) {
-            v <- events[[name]]
-            data.frame(
-              field=name,
-              non_missing=sum(!is.na(v)),
-              nonzero=sum(!is.na(v) & v != 0),
-              stringsAsFactors=FALSE
-            )
+          if (length(fourth_exceptions)) {
+            write.csv(do.call(rbind,fourth_exceptions), "evidence/fourth_down_unexplained.csv", row.names=FALSE)
+          } else {
+            write.csv(data.frame(), "evidence/fourth_down_unexplained.csv", row.names=FALSE)
           }
-          summary <- do.call(rbind, lapply(c(
-            "downs_turnover","interception_stat","interception_thrown_stat",
-            "fumble_stat","fumble_recovered_stat","turnover","turnover_indicator",
-            "turnover_vec","field_goal_missed_stat","field_goal_made_stat","punt"
-          ), summarize_flag))
-          write.csv(summary, "evidence/semantic_field_summary.csv", row.names=FALSE)
 
-          # Boundary audit proves that next-row context was never copied across games.
-          boundary <- data.frame(
-            evidence_rows=nrow(events),
-            next_context_rows=sum(!is.na(events$next_pos_team)),
-            cross_game_next_context_violations=0,
-            stringsAsFactors=FALSE
-          )
-          write.csv(boundary, "evidence/adjacency_boundary_audit.csv", row.names=FALSE)
+          if (length(range_exceptions)) {
+            write.csv(do.call(rbind,range_exceptions), "evidence/range_exception_rows.csv", row.names=FALSE)
+          } else {
+            write.csv(data.frame(), "evidence/range_exception_rows.csv", row.names=FALSE)
+          }
+
+          if (any(seasonal$tod_not_fourth_attempt != 0)) stop("downs_turnover occurs outside fourth-down scrimmage attempt")
+          if (any(seasonal$tod_gain_reaches_line != 0)) stop("downs_turnover conflicts with gain reaching line-to-gain")
 
           contract <- list(
-            derivation_version="semantic_canary_v0.4",
-            principle="football event first; source representation second; feature aggregation third",
-            required_fields=c(base_required, semantic_required),
-            semantic_promotion_performed=FALSE,
-            adjacency_is_evidence_only=TRUE,
-            next_context_game_boundary_safe=TRUE,
-            fourth_down_context_is_not_itself_an_attempt=TRUE,
-            source_turnover_fields_are_not_canonical_without_adjudication=TRUE,
-            fitting_performed=FALSE,
-            tuning_performed=FALSE,
-            test_outcome_optimization=FALSE
+            derivation_version="semantic_canary_v0.5",
+            seasons=2016:2025,
+            promoted_semantics=list(
+              FOURTH_DOWN_ATTEMPT="down==4 and rush/pass/pass_attempt evidence",
+              TURNOVER_ON_DOWNS="downs_turnover==1, qualified only after full-season invariant audit"
+            ),
+            not_promoted=c("turnover","turnover_indicator","turnover_vec","fumble_recovered_stat as lost-fumble identity"),
+            rules=c(
+              "fourth-down context alone is not an attempt",
+              "turnover on downs is first-class and distinct from giveaways",
+              "interception/fumble/safety/scoring/end-state fourth-down terminals are not double-counted as turnover on downs",
+              "provider turnover composites remain evidence until separately adjudicated",
+              "range anomalies remain applicability evidence until classified"
+            ),
+            fitting_performed=FALSE,tuning_performed=FALSE,test_outcome_optimization=FALSE
           )
-          dput(contract, file="evidence/canary_contract_v04.dput")
-          cat("V04_SCHEMA_PASS\nV04_EVIDENCE_BUILD_PASS\nSEMANTIC_PROMOTION_NOT_YET_PERFORMED\n")
+          dput(contract,file="evidence/canary_contract_v05.dput")
+          cat("V05_FULL_SEASON_SEMANTIC_AUDIT_PASS\n")
 
-      - name: Validate generated evidence
-        shell: Rscript {0}
-        run: |
-          required_files <- c(
-            "evidence/schema_validation.csv",
-            "evidence/rich_semantic_event_evidence.csv",
-            "evidence/semantic_field_summary.csv",
-            "evidence/adjacency_boundary_audit.csv",
-            "evidence/canary_contract_v04.dput"
-          )
-          if (any(!file.exists(required_files))) stop("Missing v0.4 evidence file")
-          if (any(file.info(required_files)$size <= 0)) stop("Empty v0.4 evidence file")
-          schema <- read.csv(required_files[1])
-          if (nrow(schema) != 3 || !all(schema$required_columns_present)) stop("Schema validation failed")
-          ev <- read.csv(required_files[2], stringsAsFactors=FALSE)
-          if (nrow(ev) == 0) stop("Rich semantic evidence empty")
-          b <- read.csv(required_files[4])
-          if (b$cross_game_next_context_violations[1] != 0) stop("Cross-game adjacency violation")
-          cat("V04_GENERATED_EVIDENCE_VALIDATION_PASS\n")
-
-      - name: Freeze evidence hashes
+      - name: Validate and hash evidence
         run: |
           set -euo pipefail
           python - <<'PY'
-          import hashlib, json
+          import csv, hashlib, json
           from pathlib import Path
-          evidence=Path("evidence")
+          e=Path("evidence")
+          req=["seasonal_semantic_audit.csv","fourth_down_unexplained.csv","range_exception_rows.csv","canary_contract_v05.dput"]
+          for n in req:
+              if not (e/n).is_file(): raise SystemExit(f"missing {n}")
+          with (e/"seasonal_semantic_audit.csv").open() as f:
+              rows=list(csv.DictReader(f))
+          if len(rows)!=10: raise SystemExit("expected ten seasonal audit rows")
           records=[]
-          for p in sorted(evidence.rglob("*")):
-              if p.is_file() and p.name != "evidence_manifest.json":
+          for p in sorted(e.iterdir()):
+              if p.is_file() and p.name!="evidence_manifest.json":
                   b=p.read_bytes()
-                  if not b: raise SystemExit(f"empty evidence file: {p.name}")
-                  records.append({"filename":str(p.relative_to(evidence)),"bytes":len(b),"sha256":hashlib.sha256(b).hexdigest()})
-          manifest={"scope":"CFB semantic canary v0.4 richer event evidence","derivation_version":"semantic_canary_v0.4","semantic_promotion_performed":False,"fitting_performed":False,"tuning_performed":False,"test_outcome_optimization":False,"records":records}
-          out=evidence/"evidence_manifest.json"
-          out.write_text(json.dumps(manifest,indent=2,sort_keys=True)+"\n",encoding="utf-8")
+                  records.append({"filename":p.name,"bytes":len(b),"sha256":hashlib.sha256(b).hexdigest()})
+          m={"scope":"2016-2025 semantic invariant audit","derivation_version":"semantic_canary_v0.5",
+             "turnover_on_downs_semantic_promotion":True,"other_turnover_composites_promoted":False,
+             "fitting_performed":False,"tuning_performed":False,"test_outcome_optimization":False,"records":records}
+          out=e/"evidence_manifest.json"; out.write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
           print("EVIDENCE_MANIFEST_SHA256",hashlib.sha256(out.read_bytes()).hexdigest())
           PY
 
-      - name: Upload semantic canary evidence
+      - name: Upload v0.5 evidence
         uses: actions/upload-artifact@v4
         with:
-          name: cfb-semantic-canary-football-semantics-v04
+          name: cfb-semantic-canary-full-season-v05
           path: evidence/
           if-no-files-found: error
           retention-days: 1
