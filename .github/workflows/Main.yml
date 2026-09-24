@@ -272,6 +272,9 @@ jobs:
           write.csv(primitive_integrity, "evidence/team_game_primitive_integrity.csv", row.names=FALSE)
           write.csv(lineage_readiness, "evidence/lineage_join_readiness.csv", row.names=FALSE)
           write.csv(primitive_season_summary, "evidence/primitive_season_game_counts.csv", row.names=FALSE)
+          primitive_game_ids <- unique(team_game_primitives[,c("season","game_id")])
+          primitive_game_ids <- primitive_game_ids[order(primitive_game_ids$season, primitive_game_ids$game_id),]
+          write.csv(primitive_game_ids, "evidence/primitive_game_ids.csv", row.names=FALSE)
 
           if (length(tod_exceptions)) {
             write.csv(do.call(rbind,tod_exceptions), "evidence/downs_turnover_counterexamples.csv", row.names=FALSE)
