@@ -52,8 +52,15 @@ jobs:
 
             one <- function(v) !is.na(v) & v == 1
             fourth_context <- !is.na(x$down) & x$down == 4
-            scrimmage <- one(x$rush) | one(x$pass) | one(x$pass_attempt)
-            fourth_attempt <- fourth_context & scrimmage
+            scrimmage_flag <- one(x$rush) | one(x$pass) | one(x$pass_attempt)
+            txt <- tolower(ifelse(is.na(x$play_text),"",as.character(x$play_text)))
+            typ <- tolower(ifelse(is.na(x$play_type),"",as.character(x$play_type)))
+            special_teams <- one(x$punt) |
+              one(x$field_goal_missed_stat) | one(x$field_goal_made_stat) |
+              grepl("punt|field goal|kickoff|extra point", txt) |
+              grepl("punt|field goal|kickoff|extra point", typ)
+            scrimmage_text <- grepl(" rush | pass | sacked| sack | kneel", paste0(" ",txt," "))
+            fourth_attempt <- fourth_context & !special_teams & (scrimmage_flag | scrimmage_text)
             tod <- one(x$downs_turnover)
             gained_line <- !is.na(x$yards_gained) & !is.na(x$distance) & x$yards_gained >= x$distance
             int_evt <- one(x$interception_thrown_stat) | one(x$interception_stat)
@@ -75,6 +82,8 @@ jobs:
               fourth_context=sum(fourth_context), fourth_attempt=sum(fourth_attempt),
               downs_turnover=sum(tod),
               tod_not_fourth_attempt=sum(tod & !fourth_attempt),
+              tod_special_teams=sum(tod & special_teams),
+              tod_non_special_fourth=sum(tod & fourth_context & !special_teams),
               tod_gain_reaches_line=sum(tod & gained_line),
               fourth_fail_not_tod=sum(fail_by_yards & !tod),
               fourth_fail_alternate_terminal=sum(alternate_terminal),
@@ -99,6 +108,7 @@ jobs:
                 period=x$period[ix0], down=x$down[ix0], down_end=x$down_end[ix0],
                 distance=x$distance[ix0], yards_gained=x$yards_gained[ix0],
                 rush=x$rush[ix0], pass=x$pass[ix0], pass_attempt=x$pass_attempt[ix0],
+                punt=x$punt[ix0], special_teams=special_teams[ix0], scrimmage_text=scrimmage_text[ix0],
                 downs_turnover=x$downs_turnover[ix0],
                 play_type=as.character(x$play_type[ix0]), play_text=as.character(x$play_text[ix0]),
                 drive_result=as.character(x$drive_result[ix0]),
@@ -160,13 +170,13 @@ jobs:
             all(seasonal$tod_gain_reaches_line == 0)
 
           contract <- list(
-            derivation_version="semantic_canary_v0.5",
+            derivation_version="semantic_canary_v0.6",
             seasons=2016:2025,
             promoted_semantics=list(
-              FOURTH_DOWN_ATTEMPT="down==4 and rush/pass/pass_attempt evidence"
+              FOURTH_DOWN_ATTEMPT="down==4, non-special-teams, with rush/pass/pass_attempt flag or explicit scrimmage text evidence"
             ),
             candidate_semantics=list(
-              TURNOVER_ON_DOWNS="downs_turnover==1; promotion blocked pending counterexample adjudication"
+              TURNOVER_ON_DOWNS="downs_turnover is supporting evidence only; special-teams contamination and event-priority adjudication prevent standalone use"
             ),
             turnover_on_downs_promotion_ready=promotion_ready,
             not_promoted=c("turnover","turnover_indicator","turnover_vec","fumble_recovered_stat as lost-fumble identity"),
@@ -200,7 +210,7 @@ jobs:
               if p.is_file() and p.name!="evidence_manifest.json":
                   b=p.read_bytes()
                   records.append({"filename":p.name,"bytes":len(b),"sha256":hashlib.sha256(b).hexdigest()})
-          m={"scope":"2016-2025 semantic invariant audit","derivation_version":"semantic_canary_v0.5",
+          m={"scope":"2016-2025 semantic invariant audit with special-teams and text-aware fourth-down applicability","derivation_version":"semantic_canary_v0.6",
              "turnover_on_downs_semantic_promotion":False,"other_turnover_composites_promoted":False,
              "fitting_performed":False,"tuning_performed":False,"test_outcome_optimization":False,"records":records}
           out=e/"evidence_manifest.json"; out.write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
@@ -210,7 +220,7 @@ jobs:
       - name: Upload v0.5 evidence
         uses: actions/upload-artifact@v4
         with:
-          name: cfb-semantic-canary-full-season-v05
+          name: cfb-semantic-canary-full-season-v06
           path: evidence/
           if-no-files-found: error
           retention-days: 1
