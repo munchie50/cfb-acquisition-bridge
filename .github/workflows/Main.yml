@@ -374,6 +374,53 @@ jobs:
           write.csv(out,"evidence/primitive_field_coverage_by_game.csv",row.names=FALSE)
           cat("PRIMITIVE_FIELD_COVERAGE_ROWS",nrow(out),"\n")
 
+      - name: Export source context for missing-field exceptions
+        shell: Rscript {0}
+        run: |
+          ids <- c("401403882","401403885","401403886","401403888",
+                   "401403994","401756900")
+          one <- function(v) !is.na(v) & v == 1
+          missing_text <- function(v) is.na(v) | trimws(as.character(v)) == ""
+          context <- list()
+          for (year in c(2022,2025)) {
+            x <- readRDS(sprintf("raw/pbp_%d.rds",year))
+            scrim <- (one(x$rush) | one(x$pass) | one(x$pass_attempt)) & !one(x$punt)
+            for (gid in ids) {
+              ix <- which(as.character(x$game_id) == gid)
+              if (!length(ix)) next
+              centers <- which(scrim[ix] & (is.na(x$down[ix]) |
+                is.na(x$distance[ix]) | missing_text(x$play_type[ix])))
+              for (center in centers) {
+                for (offset in -1:1) {
+                  neighbor <- center + offset
+                  if (neighbor < 1 || neighbor > length(ix)) next
+                  j <- ix[neighbor]
+                  context[[length(context)+1]] <- data.frame(
+                    season=year, game_id=gid, case_source_index=ix[center],
+                    neighbor_source_index=j, offset=offset,
+                    id_play=as.character(x$id_play[j]),
+                    pos_team=as.character(x$pos_team[j]),
+                    def_pos_team=as.character(x$def_pos_team[j]),
+                    period=as.character(x$period[j]),
+                    down=as.character(x$down[j]),
+                    distance=as.character(x$distance[j]),
+                    yards_gained=as.character(x$yards_gained[j]),
+                    play_type=as.character(x$play_type[j]),
+                    play_text=as.character(x$play_text[j]),
+                    rush=as.character(x$rush[j]), pass=as.character(x$pass[j]),
+                    pass_attempt=as.character(x$pass_attempt[j]),
+                    drive_id=as.character(x$drive_id[j]),
+                    drive_result_detailed=as.character(x$drive_result_detailed[j]),
+                    stringsAsFactors=FALSE)
+                }
+              }
+            }
+          }
+          out <- do.call(rbind,context)
+          if (is.null(out) || sum(out$offset==0) != 10) stop("missing-field case count changed")
+          write.csv(out,"evidence/primitive_missing_field_context.csv",row.names=FALSE)
+          cat("MISSING_FIELD_CONTEXT_CASES",sum(out$offset==0),"\n")
+
       - name: Validate and hash evidence
         run: |
           set -euo pipefail
@@ -381,7 +428,7 @@ jobs:
           import csv, hashlib, json
           from pathlib import Path
           e=Path("evidence")
-          req=["seasonal_semantic_audit.csv","possession_event_taxonomy.csv","raw_to_game_reproduction_sample.csv","team_game_primitives.csv","team_game_primitive_integrity.csv","lineage_join_readiness.csv","primitive_season_game_counts.csv","primitive_game_ids.csv","primitive_2016_game_ids.csv","primitive_game_team_rows.csv","primitive_game_team_rows.canonical.txt","primitive_game_team_rows.sha256","primitive_field_coverage_by_game.csv","downs_turnover_counterexamples.csv","fourth_down_unexplained.csv","range_exception_rows.csv","canary_contract_v05.dput"]
+          req=["seasonal_semantic_audit.csv","possession_event_taxonomy.csv","raw_to_game_reproduction_sample.csv","team_game_primitives.csv","team_game_primitive_integrity.csv","lineage_join_readiness.csv","primitive_season_game_counts.csv","primitive_game_ids.csv","primitive_2016_game_ids.csv","primitive_game_team_rows.csv","primitive_game_team_rows.canonical.txt","primitive_game_team_rows.sha256","primitive_field_coverage_by_game.csv","primitive_missing_field_context.csv","downs_turnover_counterexamples.csv","fourth_down_unexplained.csv","range_exception_rows.csv","canary_contract_v05.dput"]
           for n in req:
               if not (e/n).is_file(): raise SystemExit(f"missing {n}")
           with (e/"seasonal_semantic_audit.csv").open() as f:
@@ -402,7 +449,7 @@ jobs:
       - name: Upload v0.5 evidence
         uses: actions/upload-artifact@v4
         with:
-          name: cfb-semantic-canary-full-season-v18
+          name: cfb-semantic-canary-full-season-v19
           path: evidence/
           if-no-files-found: error
           retention-days: 1
