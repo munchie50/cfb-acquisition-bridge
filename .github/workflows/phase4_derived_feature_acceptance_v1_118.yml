@@ -14,12 +14,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p pbp
-          Rscript - <<'RS'
-          for (yr in 2016:2024) {
-            u <- sprintf("https://github.com/sportsdataverse/cfbfastR-data/raw/master/data/rds/pbp/play_by_play_%d.rds", yr)
-            download.file(u, sprintf("pbp/pbp_%d.rds",yr), mode="wb", quiet=TRUE)
-          }
-          RS
+          for YEAR in {2016..2024}; do curl --fail --location --retry 3 --output "pbp/pbp_${YEAR}.rds" "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"; done
       - name: Run independent acceptance diagnostics
         run: Rscript scripts/phase4_derived_feature_acceptance_v1_118.R pbp evidence/phase4_qualified_schedule_2016_2024.csv
       - name: Assert TEST excluded
