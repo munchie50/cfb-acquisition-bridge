@@ -1,0 +1,75 @@
+name: CFB 2022 Frozen Giveaway Replay Preflight
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/giveaway_replay.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Install R
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y r-base
+      - name: Acquire exact frozen 2022 PBP
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 -o play_by_play_2022.rds \
+            https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2022.rds
+          echo 'dcf59fe1f694c5eaef0ce89d1ce14dbcbe571c60fa7d94f40399e50c9a38ea8a  play_by_play_2022.rds' | sha256sum -c -
+      - name: Export schema and giveaway-relevant substrate
+        shell: Rscript {0}
+        run: |
+          x <- readRDS("play_by_play_2022.rds")
+          dir.create("evidence", showWarnings=FALSE)
+          writeLines(names(x), "evidence/columns.txt")
+          wanted <- c(
+            "game_id","id_play","pos_team","def_pos_team","play_type","play_text",
+            "home_team","away_team","home_team_id","away_team_id",
+            "home_team_abbreviation","away_team_abbreviation",
+            "homeTeamId","awayTeamId","homeTeamAbbrev","awayTeamAbbrev",
+            "fumble_vec","fumble_stat","fumble_recovered_stat",
+            "interception_stat","interception_thrown_stat","int",
+            "change_of_poss","change_of_pos_team","turnover","turnover_indicator","turnover_vec",
+            "rush","pass","pass_attempt","punt","kickoff_play"
+          )
+          present <- intersect(wanted,names(x))
+          write.csv(data.frame(field=wanted,present=wanted %in% names(x)),
+                    "evidence/giveaway_field_presence.csv",row.names=FALSE)
+          y <- x[,present,drop=FALSE]
+          txt <- if ("play_text" %in% names(y)) tolower(ifelse(is.na(y$play_text),"",as.character(y$play_text))) else rep("",nrow(y))
+          flag <- function(nm) nm %in% names(y) & !is.na(y[[nm]]) & suppressWarnings(as.numeric(y[[nm]])) > 0
+          f <- rep(FALSE,nrow(y))
+          for (nm in intersect(c("fumble_vec","fumble_stat","fumble_recovered_stat"),names(y))) f <- f | flag(nm)
+          f <- f | grepl("fumble|muff|recovered by",txt)
+          i <- rep(FALSE,nrow(y))
+          for (nm in intersect(c("interception_stat","interception_thrown_stat","int"),names(y))) i <- i | flag(nm)
+          z <- y[f|i,,drop=FALSE]
+          write.csv(z,"evidence/giveaway_candidate_rows.csv",row.names=FALSE)
+          summary <- data.frame(
+            rows=nrow(x),
+            games=length(unique(as.character(x$game_id))),
+            candidate_rows=nrow(z),
+            candidate_games=length(unique(as.character(z$game_id))),
+            stringsAsFactors=FALSE)
+          write.csv(summary,"evidence/preflight_summary.csv",row.names=FALSE)
+          cat("ROWS",nrow(x),"CANDIDATES",nrow(z),"\n")
+      - name: Hash evidence
+        run: |
+          cd evidence
+          sha256sum * > SHA256SUMS.txt
+      - name: Upload evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-2022-frozen-giveaway-preflight
+          path: evidence/
+          if-no-files-found: error
+          retention-days: 3
