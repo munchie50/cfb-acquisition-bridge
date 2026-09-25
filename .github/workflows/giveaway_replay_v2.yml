@@ -1,0 +1,101 @@
+name: CFB 2022 Frozen Giveaway Attribution Replay
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/giveaway_replay_v2.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Install R dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y r-base r-cran-stringr
+      - name: Acquire exact frozen source and pinned attribution support
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 -o play_by_play_2022.rds https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2022.rds
+          echo 'dcf59fe1f694c5eaef0ce89d1ce14dbcbe571c60fa7d94f40399e50c9a38ea8a  play_by_play_2022.rds' | sha256sum -c -
+          curl --fail --location -o helper_air.R https://raw.githubusercontent.com/sportsdataverse/cfbfastR/006729304e8b7b6ec392dff93cfd0b649e741675/R/helper_pbp_air_yards.R
+      - name: Derive giveaway attribution with game-learned text aliases
+        shell: Rscript {0}
+        run: |
+          library(stringr)
+          source("helper_air.R")
+          x <- readRDS("play_by_play_2022.rds")
+          dir.create("evidence",showWarnings=FALSE)
+          one <- function(v) !is.na(v) & suppressWarnings(as.numeric(v)) > 0
+          txt <- ifelse(is.na(x$play_text),"",as.character(x$play_text))
+          clean <- str_remove(txt, "(?is)\\(Original Play:.*?\\)\\s*$")
+          recs <- str_match_all(clean, regex("recovered by\\s+([A-Z&]{2,})\\b",ignore_case=TRUE))
+          rec1 <- vapply(recs,function(m) if(nrow(m)>=1) toupper(m[1,2]) else NA_character_,character(1))
+          rec2 <- vapply(recs,function(m) if(nrow(m)>=2) toupper(m[2,2]) else NA_character_,character(1))
+          gid <- as.character(x$game_id)
+          rec_team1 <- rep(NA_character_,nrow(x)); rec_team2 <- rep(NA_character_,nrow(x))
+          alias_keys <- 0L
+          for(ix in split(seq_len(nrow(x)),gid)){
+            side <- .spot_side_map(txt[ix],x$yards_to_goal_end[ix],as.character(x$pos_team[ix]),as.character(x$def_pos_team[ix]))
+            alias_keys <- alias_keys + length(side)
+            if(length(side)){
+              rec_team1[ix] <- unname(side[.spot_key(rec1[ix])])
+              rec_team2[ix] <- unname(side[.spot_key(rec2[ix])])
+            }
+          }
+          is_int <- one(x$int) | one(x$interception_stat) | one(x$interception_thrown_stat)
+          fumble <- one(x$fumble_vec) | one(x$fumble_stat) | one(x$fumble_recovered_stat) | str_detect(txt,regex("fumble|muff",ignore_case=TRUE))
+          fumbling <- ifelse(!fumble,NA_character_,ifelse(is_int,as.character(x$def_pos_team),as.character(x$pos_team)))
+          same <- function(a,b) !is.na(a)&!is.na(b)&a==b
+          diff <- function(a,b) !is.na(a)&!is.na(b)&a!=b
+          loser1 <- ifelse(fumble & !is.na(rec_team1) & !is.na(fumbling) & diff(rec_team1,fumbling),fumbling,NA_character_)
+          loser2 <- ifelse(fumble & !is.na(rec_team2) & !is.na(rec_team1) & diff(rec_team2,rec_team1),rec_team1,NA_character_)
+          pos <- as.character(x$pos_team); def <- as.character(x$def_pos_team)
+          pos_fumble_lost <- same(loser1,pos) | same(loser2,pos)
+          def_fumble_lost <- same(loser1,def) | same(loser2,def)
+          pos_giveaway <- is_int | pos_fumble_lost
+          def_giveaway <- def_fumble_lost
+          # Event rows; preserve side accounting on double-change plays.
+          out <- rbind(
+            data.frame(game_id=gid[is_int],team=pos[is_int],event="INTERCEPTION",id_play=as.character(x$id_play[is_int]),stringsAsFactors=FALSE),
+            data.frame(game_id=gid[pos_fumble_lost],team=pos[pos_fumble_lost],event="FUMBLE_LOST",id_play=as.character(x$id_play[pos_fumble_lost]),stringsAsFactors=FALSE),
+            data.frame(game_id=gid[def_fumble_lost],team=def[def_fumble_lost],event="FUMBLE_LOST",id_play=as.character(x$id_play[def_fumble_lost]),stringsAsFactors=FALSE)
+          )
+          write.csv(out,"evidence/giveaway_events_raw.csv",row.names=FALSE)
+          # Exact duplicate event identities are surfaced, not silently discarded.
+          k <- paste(out$game_id,out$team,out$event,out$id_play,sep="|")
+          dup <- duplicated(k)|duplicated(k,fromLast=TRUE)
+          write.csv(out[dup,,drop=FALSE],"evidence/duplicate_event_identities.csv",row.names=FALSE)
+          # Rows where a fumble recovery token could not be sided are explicit exceptions.
+          rec_present <- vapply(recs,nrow,integer(1))>0
+          unresolved <- fumble & rec_present & is.na(rec_team1)
+          ex <- data.frame(game_id=gid[unresolved],id_play=as.character(x$id_play[unresolved]),pos_team=pos[unresolved],def_pos_team=def[unresolved],play_type=as.character(x$play_type[unresolved]),play_text=txt[unresolved],recovery_token=rec1[unresolved],stringsAsFactors=FALSE)
+          write.csv(ex,"evidence/unresolved_recovery_aliases.csv",row.names=FALSE)
+          # Aggregate without shrinking denominator: all observed game/team sides.
+          keys <- unique(rbind(data.frame(game_id=gid,team=pos),data.frame(game_id=gid,team=def)))
+          keys <- keys[!is.na(keys$team)&keys$team!="",,drop=FALSE]
+          ints <- aggregate(rep(1,nrow(out[out$event=="INTERCEPTION",,drop=FALSE])),by=list(game_id=out$game_id[out$event=="INTERCEPTION"],team=out$team[out$event=="INTERCEPTION"]),FUN=sum)
+          fl <- aggregate(rep(1,nrow(out[out$event=="FUMBLE_LOST",,drop=FALSE])),by=list(game_id=out$game_id[out$event=="FUMBLE_LOST"],team=out$team[out$event=="FUMBLE_LOST"]),FUN=sum)
+          names(ints)[3]<-"interceptions"; names(fl)[3]<-"fumbles_lost"
+          a <- merge(keys,ints,by=c("game_id","team"),all.x=TRUE); a <- merge(a,fl,by=c("game_id","team"),all.x=TRUE)
+          a$interceptions[is.na(a$interceptions)]<-0; a$fumbles_lost[is.na(a$fumbles_lost)]<-0; a$giveaways<-a$interceptions+a$fumbles_lost
+          write.csv(a,"evidence/team_game_giveaways.csv",row.names=FALSE)
+          s <- data.frame(source_rows=nrow(x),games=length(unique(gid)),team_game_denominator=nrow(a),alias_keys=alias_keys,recovery_rows=sum(rec_present),resolved_recovery_rows=sum(rec_present & !is.na(rec_team1)),unresolved_recovery_rows=sum(unresolved),interception_events=sum(is_int),pos_fumble_lost_events=sum(pos_fumble_lost),def_fumble_lost_events=sum(def_fumble_lost),raw_event_rows=nrow(out),duplicate_event_rows=sum(dup),stringsAsFactors=FALSE)
+          write.csv(s,"evidence/replay_summary.csv",row.names=FALSE)
+          print(s)
+      - name: Hash and upload
+        run: |
+          cd evidence
+          sha256sum * > SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-2022-frozen-giveaway-attribution
+          path: evidence/
+          retention-days: 3
+          if-no-files-found: error
