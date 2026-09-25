@@ -28,7 +28,7 @@ for (yr in 2016:2024) {
       rr <- sr & one(g$rush); pr <- sr & (one(g$pass)|one(g$pass_attempt))
       pf <- if(tm==sg$home_team[1]) sg$home_points[1] else sg$away_points[1]
       pa <- if(tm==sg$home_team[1]) sg$away_points[1] else sg$home_points[1]
-      venue <- if(tm==sg$home_team[1]) "HOME" else "AWAY"
+      venue <- if(isTRUE(sg$neutral_site[1])) "NEUTRAL" else if(tm==sg$home_team[1]) "HOME" else "AWAY"
       out[[length(out)+1]] <- data.frame(season=yr,game_id=gid,team=tm,start_date=sg$start_date[1],venue=venue,
         game_points_for=pf,game_points_against=pa,
         off_plays=sum(tr&sr),def_plays=sum(dr&sr),
