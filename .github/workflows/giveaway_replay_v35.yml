@@ -144,7 +144,8 @@ jobs:
           # V35 conservative shadow: explicit fumble verb + explicit recovery text only.
           explicit_fumble<-str_detect(clean,regex("\\bfumbles?\\b|\\bfumbled\\b",ignore_case=TRUE))
           explicit_recovery<-str_detect(clean,regex("\\brecover",ignore_case=TRUE))
-          implicit_return_td<-explicit_fumble & !is.na(ptyp) & ptyp=="Fumble Return Touchdown"\n          fumble_cons<-(fumble|(explicit_fumble&explicit_recovery)|implicit_return_td) & !no_play
+          implicit_return_td<-explicit_fumble & !is.na(ptyp) & ptyp=="Fumble Return Touchdown"
+          fumble_cons<-(fumble|(explicit_fumble&explicit_recovery)|implicit_return_td) & !no_play
           fumbling_c<-ifelse(!fumble_cons,NA_character_,ifelse(is_int,def,ifelse(kr,pos,ifelse(pr,def,ifelse(sp,ret,pos)))))
           loser1_c<-ifelse(fumble_cons&!is.na(rt1)&!is.na(fumbling_c)&diff(rt1,fumbling_c),fumbling_c,
                     ifelse(fumble_cons&is.na(rt1)&scrim&!is_int&!pr&!kr&same(fumbling_c,pos)&coposs,fumbling_c,NA_character_))
