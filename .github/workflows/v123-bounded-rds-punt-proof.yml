@@ -1,0 +1,57 @@
+name: CFB v1.23 bounded RDS punt proof
+on:
+  push:
+    branches: [audit/rds-punt-v123]
+permissions:
+  contents: read
+jobs:
+  bounded-proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Install R
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y r-base
+      - name: Download pinned 2022 RDS and extract bounded rows
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 -o play_by_play_2022.rds "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2022.rds"
+          sha256sum play_by_play_2022.rds | tee source.sha256
+          test "$(cut -d' ' -f1 source.sha256)" = "dcf59fe1f694c5eaef0ce89d1ce14dbcbe571c60fa7d94f40399e50c9a38ea8a"
+      - name: Extract exact target and control fields
+        shell: Rscript {0}
+        run: |
+          x <- readRDS("play_by_play_2022.rds")
+          target <- c(54243L,54784L,54986L,55105L,55344L,55419L,55462L,57654L)
+          unpaired <- 55326L
+          cols <- c("game_id","id_play","pos_team","def_pos_team","period","down","distance","yards_gained","play_type","play_text","rush","pass","pass_attempt","punt","drive_id")
+          stopifnot(all(cols %in% names(x)), nrow(x)==252307L)
+          out <- cbind(source_index=target, x[target, cols, drop=FALSE])
+          write.csv(out,"target_rows.csv",row.names=FALSE)
+          write.csv(cbind(source_index=unpaired,x[unpaired,cols,drop=FALSE]),"unpaired_row.csv",row.names=FALSE)
+          cat("TARGET_PUNT\n")
+          print(out[,c("source_index","game_id","id_play","pos_team","rush","pass","pass_attempt","punt")],row.names=FALSE)
+          stopifnot(all(!is.na(out$punt)))
+          one <- function(v) !is.na(v) & v==1
+          scrim <- (one(out$rush)|one(out$pass)|one(out$pass_attempt)) & !one(out$punt)
+          out$scrimmage_flag <- scrim
+          write.csv(out,"target_rows_with_scrim.csv",row.names=FALSE)
+          cat("SCRIMMAGE_FLAGS",paste(as.integer(scrim),collapse=","),"\n")
+      - name: Hash evidence
+        run: |
+          sha256sum target_rows.csv unpaired_row.csv target_rows_with_scrim.csv source.sha256 > evidence.sha256
+          cat evidence.sha256
+      - name: Upload bounded proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-v123-bounded-rds-punt-proof
+          path: |
+            target_rows.csv
+            unpaired_row.csv
+            target_rows_with_scrim.csv
+            source.sha256
+            evidence.sha256
+          if-no-files-found: error
+          retention-days: 1
