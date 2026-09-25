@@ -1,0 +1,318 @@
+name: CFB 2022 Giveaway Replay v33 Conservative Occurrence Event-Identity Shadow
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/giveaway_replay_v33.yml']
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Install R
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y r-base r-cran-stringr
+      - name: Acquire exact frozen source and pinned helper
+        run: |
+          set -euo pipefail
+          curl -L --fail --retry 3 -o x.rds https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2022.rds
+          echo 'dcf59fe1f694c5eaef0ce89d1ce14dbcbe571c60fa7d94f40399e50c9a38ea8a  x.rds' | sha256sum -c -
+          curl -L --fail -o helper_air.R https://raw.githubusercontent.com/sportsdataverse/cfbfastR/006729304e8b7b6ec392dff93cfd0b649e741675/R/helper_pbp_air_yards.R
+      - name: Acquire independent ESPN 2022 team box
+        run: |
+          set -euo pipefail
+          curl -L --fail --retry 3 -o team_box_2022.csv https://github.com/sportsdataverse/sportsdataverse-data/releases/download/espn_cfb_team_box/team_box_2022.csv
+          echo 'f0254f784613d3918315f3cd1998ca3cbaf90fe39165ee9d6b05ed13fe88a239  team_box_2022.csv' | sha256sum -c -
+      - name: Replay pinned-aligned semantics
+        shell: Rscript {0}
+        run: |
+          library(stringr); source("helper_air.R"); x<-readRDS("x.rds"); dir.create("evidence")
+          n<-nrow(x); gid<-as.character(x$game_id); pos<-as.character(x$pos_team); def<-as.character(x$def_pos_team)
+          txt<-ifelse(is.na(x$play_text),"",as.character(x$play_text)); clean<-trimws(str_remove(txt,"(?is)\\(Original Play:.*?\\)\\s*$"))
+          no_play<-str_detect(clean,regex("\\bNO PLAY\\b|play was overturned",ignore_case=TRUE))
+          one<-function(v)!is.na(v)&suppressWarnings(as.numeric(v))>0
+          flag<-function(nm)if(nm%in%names(x))one(x[[nm]])else rep(FALSE,n)
+          is_int<-flag("int"); is_int[no_play]<-FALSE
+          # exact pinned occurrence rule: fumble_vec OR muff text
+          fumble<-(flag("fumble_vec")|str_detect(txt,regex("muff",ignore_case=TRUE))) & !no_play
+          ptyp<-as.character(x$play_type)
+          kickoff<-flag("kickoff_play")|(!is.na(ptyp)&str_detect(ptyp,regex("kickoff",ignore_case=TRUE)))
+          punt<-flag("punt")|(!is.na(ptyp)&str_detect(ptyp,regex("punt",ignore_case=TRUE)))
+          fg<-flag("fg_attempt")|(!is.na(ptyp)&str_detect(ptyp,regex("field goal",ignore_case=TRUE)))
+          sp<-kickoff|punt|fg
+          coposs<-flag("change_of_poss")|flag("change_of_pos_team")
+          has<-function(p)str_detect(txt,regex(p,ignore_case=TRUE))
+          kr<-kickoff|(has("kickoff")&has("return|muff")); pr<-punt|(has("punt")&has("return|muff|fair catch"))
+          ret<-ifelse(kickoff,pos,ifelse(punt|fg,def,NA_character_))
+          fumbling<-ifelse(!fumble,NA_character_,ifelse(is_int,def,ifelse(kr,pos,ifelse(pr,def,ifelse(sp,ret,pos)))))
+          recs<-str_match_all(clean,regex("recovered by\\s+([A-Z&]{2,})\\b",ignore_case=TRUE))
+          r1<-vapply(recs,function(m)if(nrow(m)>=1)toupper(m[1,2])else NA_character_,character(1)); r2<-vapply(recs,function(m)if(nrow(m)>=2)toupper(m[2,2])else NA_character_,character(1))
+          rt1<-rt2<-rep(NA_character_,n)
+          alias_evidence<-data.frame()
+          for(ix in split(seq_len(n),gid)){
+            side<-.spot_side_map(txt[ix],x$yards_to_goal_end[ix],pos[ix],def[ix])
+            toks<-unique(c(r1[ix],r2[ix])); toks<-toks[!is.na(toks)&toks!=""]
+            # deterministic game-local aliases only: token must map unambiguously to exactly one side by observed team-name forms
+            teams<-unique(c(pos[ix],def[ix])); teams<-teams[!is.na(teams)&teams!=""]
+            norm<-function(s)toupper(gsub("[^A-Z0-9]","",s))
+            for(tok in toks){
+              key<-.spot_key(tok)
+              if(!is.na(side[key])) next
+              nt<-norm(tok); cand<-teams[vapply(teams,function(tm){
+                nm<-norm(tm); parts<-unlist(strsplit(toupper(tm),"[^A-Z0-9]+")); initials<-paste0(substr(parts[nzchar(parts)],1,1),collapse="")
+                startsWith(nm,nt)||startsWith(nt,nm)||nt==initials||
+                (nt=="NORTH"&&grepl("^NORTH AMERICAN UNIVERSITY$",toupper(tm)))||
+                (nt=="TAMCM"&&grepl("^EAST TEXAS A&M$",toupper(tm)))||
+                (nt=="LINCOL"&&grepl("^LINCOLN \\(CA\\)$",toupper(tm)))
+              },logical(1))]
+              cand<-unique(cand)
+              if(length(cand)==1){side[key]<-cand;alias_evidence<-rbind(alias_evidence,data.frame(game_id=gid[ix[1]],token=tok,resolved_team=cand,method="GAME_LOCAL_UNAMBIGUOUS"))}
+            }
+            if(length(side)){rt1[ix]<-unname(side[.spot_key(r1[ix])]);rt2[ix]<-unname(side[.spot_key(r2[ix])])}
+          }
+          same<-function(a,b)!is.na(a)&!is.na(b)&a==b; diff<-function(a,b)!is.na(a)&!is.na(b)&a!=b
+          admin<-(!is.na(ptyp)&ptyp%in%c("Penalty","End Period","End of Half","End of Game","Timeout","Coin Toss"))|no_play
+          scrim<-!sp&!admin
+          loser1<-ifelse(fumble&!is.na(rt1)&!is.na(fumbling)&diff(rt1,fumbling),fumbling,
+                   ifelse(fumble&is.na(rt1)&scrim&!is_int&!pr&!kr&same(fumbling,pos)&coposs,fumbling,NA_character_))
+          loser2<-ifelse(fumble&!is.na(rt2)&!is.na(rt1)&diff(rt2,rt1),rt1,NA_character_)
+          pfl<-same(loser1,pos)|same(loser2,pos); dfl<-same(loser1,def)|same(loser2,def)
+          ev<-rbind(data.frame(game_id=gid[is_int],team=pos[is_int],event="INTERCEPTION",id_play=as.character(x$id_play[is_int])),
+                    data.frame(game_id=gid[pfl],team=pos[pfl],event="FUMBLE_LOST",id_play=as.character(x$id_play[pfl])),
+                    data.frame(game_id=gid[dfl],team=def[dfl],event="FUMBLE_LOST",id_play=as.character(x$id_play[dfl])))
+          k<-paste(ev$game_id,ev$team,ev$event,ev$id_play,sep="|"); evu<-ev[!duplicated(k),]
+          keys<-unique(rbind(data.frame(game_id=gid,team=pos),data.frame(game_id=gid,team=def)));keys<-keys[!is.na(keys$team)&keys$team!="",]
+          cnt<-function(e,nm){q<-evu[evu$event==e,];z<-aggregate(rep(1,nrow(q)),list(game_id=q$game_id,team=q$team),sum);names(z)[3]<-nm;z}
+          a<-merge(keys,cnt("INTERCEPTION","interceptions"),all.x=T);a<-merge(a,cnt("FUMBLE_LOST","fumbles_lost"),all.x=T)
+          a[is.na(a)]<-0;a$giveaways<-a$interceptions+a$fumbles_lost
+          unresolved<-fumble&vapply(recs,nrow,integer(1))>0&is.na(rt1)
+          # Preserve native stable home/away IDs on replay team-games. Map names only within each source game by exact source home/away labels.
+          if(!all(c("home","away","home_team_id","away_team_id")%in%names(x))) stop("native identity fields missing")
+          ident<-unique(data.frame(game_id=gid,home=as.character(x$home),away=as.character(x$away),home_team_id=as.character(x$home_team_id),away_team_id=as.character(x$away_team_id)))
+          ident<-ident[!duplicated(ident$game_id),]
+          idmap<-rbind(data.frame(game_id=ident$game_id,team=ident$home,team_id=ident$home_team_id),data.frame(game_id=ident$game_id,team=ident$away,team_id=ident$away_team_id))
+          # Keep the full replay population. Native IDs are required only where
+          # the independent official-control source actually covers the game.
+          a<-merge(a,idmap,by=c("game_id","team"),all.x=TRUE)
+          box<-read.csv("team_box_2022.csv",check.names=FALSE,stringsAsFactors=FALSE)
+          stopifnot(all(c("game_id","team_id") %in% names(box)))
+          control_games<-unique(as.character(box$game_id))
+          in_control<-a$game_id %in% control_games
+          miss_native<-is.na(a$team_id)|a$team_id==""
+          # For control-covered games only, the frozen ESPN control can supply its
+          # own stable ID via exact game_id + exact team_name. This is a bounded
+          # canonical bridge, not fuzzy matching and not a replay-population filter.
+          # V22 proved each covered game has exactly two ESPN control rows with
+          # stable team_id and explicit home_away. Bridge only through the replay's
+          # own exact game-local side identity, never through display names.
+          # The frozen replay already exposes home/away side labels even where its
+          # native home_team_id/away_team_id fields are absent.
+          # a is team-game aggregate and does not carry raw home/away columns.
+          # Recover side only from the frozen raw source x, scoped by exact game.
+          raw_side<-unique(rbind(
+            data.frame(game_id=as.character(gid),team=as.character(x$home),side="home",stringsAsFactors=FALSE),
+            data.frame(game_id=as.character(gid),team=as.character(x$away),side="away",stringsAsFactors=FALSE)
+          ))
+          raw_side<-raw_side[raw_side$team!="" & !is.na(raw_side$team),]
+          diag<-merge(a[miss_native & in_control,c("game_id","team")],raw_side,by=c("game_id","team"),all.x=TRUE)
+          write.csv(diag,"evidence/replay_side_identity_diagnostic.csv",row.names=FALSE)
+          cat("covered missing rows:",nrow(diag),"side resolved:",sum(!is.na(diag$side)),"side unresolved:",sum(is.na(diag$side)),"\n")
+          if(anyDuplicated(diag[,c("game_id","team")])) stop("diagnostic boundary: raw replay side mapping is not unique")
+          if(any(is.na(diag$side))) stop("diagnostic boundary: inspect replay team versus raw home/away representation before bridge")
+          side_key<-paste(diag$game_id,diag$team,sep="||")
+          akey<-paste(a$game_id,a$team,sep="||")
+          side<-rep(NA_character_,nrow(a)); side[match(side_key,akey)]<-diag$side
+          bid<-unique(data.frame(game_id=as.character(box$game_id),side=as.character(box$home_away),box_team_id=as.character(box$team_id)))
+          if(anyDuplicated(bid[,c("game_id","side")])) stop("official-control game-side identity not unique")
+          bridge<-merge(data.frame(game_id=a$game_id[miss_native & in_control],team=a$team[miss_native & in_control],side=side[miss_native & in_control]),bid,by=c("game_id","side"),all.x=TRUE)
+          write.csv(bridge,"evidence/covered_postseason_id_bridge.csv",row.names=FALSE)
+          if(any(is.na(bridge$box_team_id)|bridge$box_team_id=="")) stop("exact game-side control identity bridge incomplete")
+          key<-paste(a$game_id,a$team,sep="||"); bkey<-paste(bridge$game_id,bridge$team,sep="||")
+          a$team_id[match(bkey,key)]<-bridge$box_team_id
+          miss<-is.na(a$team_id)|a$team_id==""
+          scope<-data.frame(game_id=a$game_id,team=a$team,in_official_control=in_control,native_team_id_present=!miss_native,final_team_id_present=!miss)
+          write.csv(scope,"evidence/control_scope_ledger.csv",row.names=FALSE)
+          if(any(miss & in_control)) stop("stable identity still missing inside official-control population")
+          write.csv(a[miss & !in_control,c("game_id","team","team_id")],"evidence/noncontrol_missing_native_ids.csv",row.names=FALSE)
+          cat("full replay team-games:",nrow(a),"official-control team-games:",sum(in_control),"covered IDs bridged:",nrow(bridge),"noncontrol missing native IDs:",sum(miss & !in_control),"\n")
+          write.csv(a,"evidence/team_game.csv",row.names=F);write.csv(evu,"evidence/events_unique.csv",row.names=F);write.csv(unique(alias_evidence),"evidence/alias_evidence.csv",row.names=F)
+          write.csv(data.frame(game_id=gid[unresolved],id_play=as.character(x$id_play[unresolved]),pos_team=pos[unresolved],def_pos_team=def[unresolved],play_type=ptyp[unresolved],token=r1[unresolved],coposs=coposs[unresolved],play_text=txt[unresolved]),"evidence/unresolved.csv",row.names=F)
+          write.csv(data.frame(rows=n,games=length(unique(gid)),team_games=nrow(a),interceptions=sum(a$interceptions),fumbles_lost=sum(a$fumbles_lost),giveaways=sum(a$giveaways),events_before=nrow(ev),events_unique=nrow(evu),duplicate_removed=nrow(ev)-nrow(evu),unresolved=sum(unresolved),fallback_loser1=sum(fumble&is.na(rt1)&scrim&!is_int&!pr&!kr&same(fumbling,pos)&coposs),double_side=sum(pfl&dfl)),"evidence/summary.csv",row.names=F)
+          # V33 conservative shadow: explicit fumble verb + explicit recovery text only.
+          explicit_fumble<-str_detect(clean,regex("\\bfumbles?\\b|\\bfumbled\\b",ignore_case=TRUE))
+          explicit_recovery<-str_detect(clean,regex("\\brecover",ignore_case=TRUE))
+          fumble_cons<-(fumble|(explicit_fumble&explicit_recovery)) & !no_play
+          fumbling_c<-ifelse(!fumble_cons,NA_character_,ifelse(is_int,def,ifelse(kr,pos,ifelse(pr,def,ifelse(sp,ret,pos)))))
+          loser1_c<-ifelse(fumble_cons&!is.na(rt1)&!is.na(fumbling_c)&diff(rt1,fumbling_c),fumbling_c,
+                    ifelse(fumble_cons&is.na(rt1)&scrim&!is_int&!pr&!kr&same(fumbling_c,pos)&coposs,fumbling_c,NA_character_))
+          loser2_c<-ifelse(fumble_cons&!is.na(rt2)&!is.na(rt1)&diff(rt2,rt1),rt1,NA_character_)
+          pfl_c<-same(loser1_c,pos)|same(loser2_c,pos); dfl_c<-same(loser1_c,def)|same(loser2_c,def)
+          evc<-rbind(data.frame(game_id=gid[is_int],id_play=as.character(x$id_play[is_int]),team=pos[is_int],stat="interception",stringsAsFactors=FALSE),
+                     data.frame(game_id=gid[pfl_c],id_play=as.character(x$id_play[pfl_c]),team=pos[pfl_c],stat="fumble_lost",stringsAsFactors=FALSE),
+                     data.frame(game_id=gid[dfl_c],id_play=as.character(x$id_play[dfl_c]),team=def[dfl_c],stat="fumble_lost",stringsAsFactors=FALSE))
+          evc<-unique(evc[!is.na(evc$team)&nzchar(evc$team),c("game_id","id_play","team","stat")])
+          if(anyDuplicated(evc[,c("game_id","id_play","team","stat")])) stop("V33 event identity dedup failed")
+          ac<-aggregate(rep(1,nrow(evc)),by=list(game_id=evc$game_id,team=evc$team,stat=evc$stat),FUN=sum);names(ac)[4]<-"n"
+          multi<-ac[ac$stat=="fumble_lost"&ac$n>=2,]
+          if(nrow(multi)==0) stop("V33 representative preflight failed: no multi-fumble team-games survived event identity")
+          write.csv(evc,"evidence/conservative_shadow_events.csv",row.names=FALSE)
+          write.csv(multi,"evidence/conservative_shadow_multi_fumble_preflight.csv",row.names=FALSE)
+          ic<-ac[ac$stat=="interception",c("game_id","team","n")];names(ic)[3]<-"interceptions_replay_cons"
+          fc<-ac[ac$stat=="fumble_lost",c("game_id","team","n")];names(fc)[3]<-"fumbles_lost_replay_cons"
+          tgc<-merge(a,ic,by=c("game_id","team"),all.x=TRUE);tgc<-merge(tgc,fc,by=c("game_id","team"),all.x=TRUE)
+          tgc$interceptions_replay_cons[is.na(tgc$interceptions_replay_cons)]<-0;tgc$fumbles_lost_replay_cons[is.na(tgc$fumbles_lost_replay_cons)]<-0
+          tgc$giveaways_replay_cons<-tgc$interceptions_replay_cons+tgc$fumbles_lost_replay_cons
+          write.csv(tgc,"evidence/conservative_shadow_team_game.csv",row.names=FALSE)
+          cat("V33 conservative fumble losses:",sum(tgc$fumbles_lost_replay_cons),"baseline:",sum(a$fumbles_lost),"delta:",sum(tgc$fumbles_lost_replay_cons)-sum(a$fumbles_lost),"\\n")
+          # V27 diagnostic only: classify raw fumble candidates for the clean replay=0 / ESPN=1 exception population.
+          # Use exact game+side control identity; do not alter replay semantics.
+          bx<-box[,c("game_id","home_away","fumblesLost")]; bx$game_id<-as.character(bx$game_id)
+          aside<-merge(a,raw_side,by=c("game_id","team"),all.x=TRUE)
+          ctrl<-merge(aside,bx,by.x=c("game_id","side"),by.y=c("game_id","home_away"),all.x=TRUE)
+          targ<-ctrl[ctrl$fumbles_lost==0 & !is.na(ctrl$fumblesLost) & ctrl$fumblesLost==1,c("game_id","team","side")]
+          if(nrow(targ)!=157) stop(paste("preflight target count changed:",nrow(targ),"expected 157"))
+          tk<-paste(targ$game_id,targ$team,sep="||")
+          rowk<-paste(gid,fumbling,sep="||")
+          cand<-fumble & rowk %in% tk
+          diag_f<-data.frame(game_id=gid[cand],team=fumbling[cand],id_play=as.character(x$id_play[cand]),play_type=ptyp[cand],
+            recovery_mentions=vapply(recs,nrow,integer(1))[cand],recovery1=r1[cand],resolved_recovery1=rt1[cand],
+            coposs=coposs[cand],scrimmage=scrim[cand],classified_loss=(pfl|dfl)[cand],play_text=txt[cand])
+          write.csv(targ,"evidence/zero_vs_one_targets.csv",row.names=FALSE)
+          write.csv(diag_f,"evidence/zero_vs_one_fumble_candidates.csv",row.names=FALSE)
+          per<-aggregate(cbind(candidate=rep(1,nrow(diag_f)),classified=as.integer(diag_f$classified_loss),
+            recovery_mentions=as.integer(diag_f$recovery_mentions>0),resolved_recovery=as.integer(!is.na(diag_f$resolved_recovery1)),
+            coposs=as.integer(diag_f$coposs))~game_id+team,data=diag_f,sum)
+          write.csv(per,"evidence/zero_vs_one_funnel.csv",row.names=FALSE)
+          cat("V27 zero-vs-one targets:",nrow(targ),"raw fumble candidates:",nrow(diag_f),"targets with candidates:",nrow(per),"\n")
+          # V33 diagnostic only: inspect all raw fumbles in same games as targets with no target-role candidate.
+          pk<-paste(per$game_id,per$team,sep="||")
+          missing_t<-targ[!paste(targ$game_id,targ$team,sep="||") %in% pk,]
+          if(nrow(missing_t)!=99) stop(paste("missing-candidate boundary changed:",nrow(missing_t),"expected 99"))
+          mg<-unique(missing_t$game_id); allf<-which(fumble & gid %in% mg)
+          rawgame<-data.frame(game_id=gid[allf],id_play=as.character(x$id_play[allf]),pos_team=pos[allf],def_pos_team=def[allf],
+            inferred_fumbling=fumbling[allf],play_type=ptyp[allf],recovery_mentions=vapply(recs,nrow,integer(1))[allf],
+            recovery1=r1[allf],resolved_recovery1=rt1[allf],coposs=coposs[allf],scrimmage=scrim[allf],
+            classified_pos_loss=pfl[allf],classified_def_loss=dfl[allf],play_text=txt[allf])
+          rawgame<-merge(rawgame,missing_t[,c("game_id","team")],by="game_id",all.x=FALSE)
+          rawgame$target_is_pos<-rawgame$team==rawgame$pos_team
+          rawgame$target_is_def<-rawgame$team==rawgame$def_pos_team
+          rawgame$target_is_inferred_fumbler<-rawgame$team==rawgame$inferred_fumbling
+          rawgame$target_is_resolved_recovery<-rawgame$team==rawgame$resolved_recovery1
+          write.csv(missing_t,"evidence/missing_candidate_targets.csv",row.names=FALSE)
+          write.csv(rawgame,"evidence/missing_candidate_game_fumbles.csv",row.names=FALSE)
+          cat("V33 missing targets:",nrow(missing_t),"games:",length(mg),"same-game raw fumble rows:",nrow(rawgame),
+              "target pos rows:",sum(rawgame$target_is_pos,na.rm=TRUE),"target def rows:",sum(rawgame$target_is_def,na.rm=TRUE),
+              "target inferred fumbler rows:",sum(rawgame$target_is_inferred_fumbler,na.rm=TRUE),"\n")
+          # V33 diagnostic only: inspect every offensive row for the 99 missing targets, not only detected fumbles.
+          target_rows<-merge(data.frame(game_id=gid,id_play=as.character(x$id_play),pos_team=pos,def_pos_team=def,play_type=ptyp,
+            fumble_vec=if("fumble_vec"%in%names(x)) x$fumble_vec else NA,
+            change_of_poss=if("change_of_poss"%in%names(x)) x$change_of_poss else NA,
+            change_of_pos_team=if("change_of_pos_team"%in%names(x)) x$change_of_pos_team else NA,
+            detected_fumble=fumble,play_text=txt,stringsAsFactors=FALSE),missing_t[,c("game_id","team")],by="game_id",all.x=FALSE)
+          target_rows<-target_rows[target_rows$pos_team==target_rows$team,]
+          target_rows$text_signal<-str_detect(target_rows$play_text,regex("fumb|muff|recover",ignore_case=TRUE))
+          write.csv(target_rows,"evidence/missing_target_offensive_rows.csv",row.names=FALSE)
+          sig<-target_rows[target_rows$text_signal | target_rows$detected_fumble |
+            (!is.na(target_rows$change_of_poss) & suppressWarnings(as.numeric(target_rows$change_of_poss))>0) |
+            (!is.na(target_rows$change_of_pos_team) & suppressWarnings(as.numeric(target_rows$change_of_pos_team))>0),]
+          write.csv(sig,"evidence/missing_target_occurrence_signals.csv",row.names=FALSE)
+          cat("V33 target offensive rows:",nrow(target_rows),"signal rows:",nrow(sig),
+              "text fumble/recovery rows:",sum(target_rows$text_signal,na.rm=TRUE),
+              "already-detected fumble rows:",sum(target_rows$detected_fumble,na.rm=TRUE),"\\n")
+          # V33 shadow only: expand occurrence to explicit active-play fumble language; preserve all downstream loss semantics.
+          explicit_fumble<-str_detect(clean,regex("\\bfumbles?\\b|\\bfumbled\\b",ignore_case=TRUE))
+          fumble_shadow<-(fumble|explicit_fumble) & !no_play
+          newly<-fumble_shadow & !fumble
+          fumbling_s<-ifelse(!fumble_shadow,NA_character_,ifelse(is_int,def,ifelse(kr,pos,ifelse(pr,def,ifelse(sp,ret,pos)))))
+          loser1_s<-ifelse(fumble_shadow&!is.na(rt1)&!is.na(fumbling_s)&diff(rt1,fumbling_s),fumbling_s,
+                    ifelse(fumble_shadow&is.na(rt1)&scrim&!is_int&!pr&!kr&same(fumbling_s,pos)&coposs,fumbling_s,NA_character_))
+          loser2_s<-ifelse(fumble_shadow&!is.na(rt2)&!is.na(rt1)&diff(rt2,rt1),rt1,NA_character_)
+          pfl_s<-same(loser1_s,pos)|same(loser2_s,pos); dfl_s<-same(loser1_s,def)|same(loser2_s,def)
+          shadow<-data.frame(game_id=gid[newly],id_play=as.character(x$id_play[newly]),pos_team=pos[newly],def_pos_team=def[newly],
+            play_type=ptyp[newly],resolved_recovery1=rt1[newly],coposs=coposs[newly],shadow_pos_loss=pfl_s[newly],
+            shadow_def_loss=dfl_s[newly],play_text=txt[newly],stringsAsFactors=FALSE)
+          write.csv(shadow,"evidence/occurrence_expansion_new_rows.csv",row.names=FALSE)
+          sk<-paste(gid,ifelse(pfl_s,pos,ifelse(dfl_s,def,NA_character_)),sep="||")
+          recovered<-missing_t[paste(missing_t$game_id,missing_t$team,sep="||") %in% sk[pfl_s|dfl_s],]
+          write.csv(recovered,"evidence/occurrence_expansion_recovered_targets.csv",row.names=FALSE)
+          cat("V33 new occurrence rows:",sum(newly),"new classified-loss rows:",sum(newly&(pfl_s|dfl_s)),
+              "recovered missing targets:",nrow(recovered),"of",nrow(missing_t),"\\n")
+      - name: Diagnose stable identity fields in frozen replay source
+        shell: Rscript {0}
+        run: |
+          x<-readRDS("x.rds")
+          nm<-names(x)
+          cand<-nm[grepl("team.*id|id.*team|home|away|pos_team|def_pos_team",nm,ignore.case=TRUE)]
+          writeLines(cand,"evidence/source_identity_columns.txt")
+          keep<-intersect(c("game_id","pos_team","pos_team_id","def_pos_team","def_pos_team_id","home","away","home_team","away_team","home_id","away_id","home_team_id","away_team_id"),nm)
+          write.csv(x[seq_len(min(200,nrow(x))),keep,drop=FALSE],"evidence/source_identity_sample.csv",row.names=FALSE)
+          required<-c("game_id","pos_team","def_pos_team")
+          stopifnot(all(required %in% nm))
+          idcols<-intersect(c("pos_team_id","def_pos_team_id","home_id","away_id","home_team_id","away_team_id"),nm)
+          if(length(idcols)==0) stop("stable identity diagnostic: no candidate numeric team-ID columns in frozen source")
+          cat("candidate stable ID columns:",paste(idcols,collapse=","),"\n")
+      - name: Install and verify Python reconciliation dependency
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --no-input pandas==2.2.3
+          python - <<'PY'
+          import pandas as pd
+          assert pd.__version__ == "2.2.3", pd.__version__
+          print("pandas", pd.__version__)
+          PY
+      - name: Reconcile official controls
+        run: |
+          python - <<'PY'
+          import pandas as pd,re
+          a=pd.read_csv("evidence/team_game.csv",dtype={"game_id":str})
+          b=pd.read_csv("team_box_2022.csv",dtype={"game_id":str})
+          # Diagnostic v2 proved exact upstream headers: team_name, interceptions, fumblesLost, turnovers.
+          need=["game_id","team_name","interceptions","fumblesLost","turnovers"]
+          miss=[c for c in need if c not in b.columns]
+          if miss: raise SystemExit("proven ESPN schema changed; missing="+str(miss)+" columns="+str(list(b.columns)))
+          bb=b[need].copy();bb.columns=["game_id","team","interceptions","fumbles_lost","turnovers"]
+          # Stable ESPN team identity. Replay now carries native source team_id; no name bridge is permitted.
+          if "team_id" not in b.columns: raise SystemExit("stable identity gate failed: ESPN team_id missing")
+          # CSV round-trip can infer replay IDs as floats (e.g. 62.0) while ESPN IDs are ints (62).
+          # Canonicalize both through numeric nullable integer before strict string identity.
+          def canon_id(s):
+            n=pd.to_numeric(s,errors="coerce")
+            bad=n.notna() & (n % 1 != 0)
+            if bad.any(): raise SystemExit("non-integral team_id encountered during canonicalization")
+            return n.astype("Int64").astype("string")
+          bb["team_id"]=canon_id(b["team_id"])
+          a["team_id"]=canon_id(a["team_id"])
+          pd.DataFrame([{"replay_id_nonmissing":int(a.team_id.notna().sum()),"box_id_nonmissing":int(bb.team_id.notna().sum()),"replay_id_unique":int(a.team_id.nunique()),"box_id_unique":int(bb.team_id.nunique())}]).to_csv("evidence/id_canonicalization_summary.csv",index=False)
+          # Identity diagnostic: preserve raw source identity and prove game/team overlap before accepting control.
+          replay_games=set(a.game_id.astype(str)); box_games=set(bb.game_id.astype(str))
+          game_overlap=sorted(replay_games & box_games)
+          pd.DataFrame([{"replay_rows":len(a),"replay_games":len(replay_games),"box_rows":len(bb),"box_games":len(box_games),"game_overlap":len(game_overlap)}]).to_csv("evidence/identity_summary.csv",index=False)
+          a[a.game_id.astype(str).isin(game_overlap)].head(100).to_csv("evidence/identity_replay_overlap_sample.csv",index=False)
+          bb[bb.game_id.astype(str).isin(game_overlap)].head(100).to_csv("evidence/identity_box_overlap_sample.csv",index=False)
+          if not game_overlap:
+            raise SystemExit("identity gate failed: zero game_id overlap; inspect identity_summary and raw source lineage before any team aliasing")
+          # Strict native-ID join; never fuzzy-match team names.
+          j=a.merge(bb,on=["game_id","team_id"],how="left",suffixes=("_replay","_box"),indicator=True)
+          expected_post_merge={"interceptions_replay","interceptions_box","fumbles_lost_replay","fumbles_lost_box","giveaways","turnovers"}
+          missing_post_merge=sorted(expected_post_merge-set(j.columns))
+          if missing_post_merge: raise SystemExit("post-merge schema mismatch; missing="+str(missing_post_merge)+" columns="+str(list(j.columns)))
+          j.to_csv("evidence/official_reconciliation.csv",index=False)
+          if int((j._merge=="both").sum()) == 0: raise SystemExit("identity gate failed: zero joined team-games; do not treat execution as official-control validation")
+          j[j._merge!="both"].to_csv("evidence/official_unmatched.csv",index=False)
+          rows=[]
+          for rs,bs in [("interceptions_replay","interceptions_box"),("fumbles_lost_replay","fumbles_lost_box"),("giveaways","turnovers")]:
+            x=pd.to_numeric(j[rs],errors="coerce");y=pd.to_numeric(j[bs],errors="coerce");ok=y.notna()
+            rows.append({"stat":rs.replace("_replay",""),"denominator":len(j),"comparable":int(ok.sum()),"exact":int((x[ok]==y[ok]).sum()),"rate":float((x[ok]==y[ok]).mean()) if ok.any() else None,"delta_sum":float((x[ok]-y[ok]).sum()) if ok.any() else None})
+          pd.DataFrame(rows).to_csv("evidence/official_summary.csv",index=False)
+          pd.DataFrame([{"replay_rows":len(a),"replay_games":a.game_id.nunique(),"box_rows":len(b),"box_games":b.game_id.nunique(),"joined":int((j._merge=="both").sum()),"unmatched":int((j._merge!="both").sum())}]).to_csv("evidence/official_denominator.csv",index=False)
+          print(pd.DataFrame(rows).to_string(index=False))
+          PY
+      - name: Hash evidence
+        if: always()
+        run: |
+          if compgen -G "evidence/*" > /dev/null; then (cd evidence && sha256sum * > SHA256SUMS.txt); fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: cfb-2022-giveaway-replay-v33, path: evidence/, retention-days: 3}
