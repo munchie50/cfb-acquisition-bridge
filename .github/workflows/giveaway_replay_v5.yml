@@ -26,10 +26,11 @@ jobs:
           library(stringr); source("helper_air.R"); x<-readRDS("x.rds"); dir.create("evidence")
           n<-nrow(x); gid<-as.character(x$game_id); pos<-as.character(x$pos_team); def<-as.character(x$def_pos_team)
           txt<-ifelse(is.na(x$play_text),"",as.character(x$play_text)); clean<-trimws(str_remove(txt,"(?is)\\(Original Play:.*?\\)\\s*$"))
+          no_play<-str_detect(clean,regex("\\bNO PLAY\\b|play was overturned",ignore_case=TRUE))
           one<-function(v)!is.na(v)&suppressWarnings(as.numeric(v))>0
           flag<-function(nm)if(nm%in%names(x))one(x[[nm]])else rep(FALSE,n)
-          is_int<-flag("int")\n          is_int[no_play]<-FALSE
-          # pinned occurrence rule plus deterministic no-play/overturned exclusion
+          is_int<-flag("int"); is_int[no_play]<-FALSE
+          # exact pinned occurrence rule: fumble_vec OR muff text
           fumble<-(flag("fumble_vec")|str_detect(txt,regex("muff",ignore_case=TRUE))) & !no_play
           ptyp<-as.character(x$play_type)
           kickoff<-flag("kickoff_play")|(!is.na(ptyp)&str_detect(ptyp,regex("kickoff",ignore_case=TRUE)))
@@ -46,7 +47,7 @@ jobs:
           rt1<-rt2<-rep(NA_character_,n)
           for(ix in split(seq_len(n),gid)){side<-.spot_side_map(txt[ix],x$yards_to_goal_end[ix],pos[ix],def[ix]);if(length(side)){rt1[ix]<-unname(side[.spot_key(r1[ix])]);rt2[ix]<-unname(side[.spot_key(r2[ix])])}}
           same<-function(a,b)!is.na(a)&!is.na(b)&a==b; diff<-function(a,b)!is.na(a)&!is.na(b)&a!=b
-          no_play<-str_detect(clean,regex("\\bNO PLAY\\b|play was overturned",ignore_case=TRUE))\n          admin<-(!is.na(ptyp)&ptyp%in%c("Penalty","End Period","End of Half","End of Game","Timeout","Coin Toss"))|no_play
+          admin<-(!is.na(ptyp)&ptyp%in%c("Penalty","End Period","End of Half","End of Game","Timeout","Coin Toss"))|no_play
           scrim<-!sp&!admin
           loser1<-ifelse(fumble&!is.na(rt1)&!is.na(fumbling)&diff(rt1,fumbling),fumbling,
                    ifelse(fumble&is.na(rt1)&scrim&!is_int&!pr&!kr&same(fumbling,pos)&coposs,fumbling,NA_character_))
@@ -66,5 +67,5 @@ jobs:
           write.csv(data.frame(rows=n,games=length(unique(gid)),team_games=nrow(a),interceptions=sum(a$interceptions),fumbles_lost=sum(a$fumbles_lost),giveaways=sum(a$giveaways),events_before=nrow(ev),events_unique=nrow(evu),duplicate_removed=nrow(ev)-nrow(evu),unresolved=sum(unresolved),fallback_loser1=sum(fumble&is.na(rt1)&scrim&!is_int&!pr&!kr&same(fumbling,pos)&coposs),double_side=sum(pfl&dfl)),"evidence/summary.csv",row.names=F)
       - name: Hash evidence
         run: cd evidence && sha256sum * > SHA256SUMS.txt
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v4
         with: {name: cfb-2022-giveaway-replay-v5, path: evidence/, retention-days: 3}
