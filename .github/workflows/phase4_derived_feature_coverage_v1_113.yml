@@ -1,0 +1,60 @@
+name: CFB Phase4 Derived Feature Coverage v1.113
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/phase4_derived_feature_coverage_v1_113.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Install R
+        run: sudo apt-get update && sudo apt-get install -y r-base
+      - name: Acquire development PBP only
+        run: |
+          mkdir -p raw
+          for YEAR in {2016..2024}; do
+            curl --fail --location --retry 3 --output "raw/pbp_${YEAR}.rds" "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"
+          done
+      - name: Audit frozen derived-feature context
+        shell: Rscript {0}
+        run: |
+          one <- function(v) !is.na(v) & v==1
+          rows <- list()
+          for(year in 2016:2024){
+            x <- readRDS(sprintf("raw/pbp_%d.rds",year))
+            req <- c("game_id","id_play","pos_team","def_pos_team","rush","pass","pass_attempt","punt","yards_gained","down","distance","drive_id","yards_to_goal","drive_result","drive_result_detailed")
+            m <- setdiff(req,names(x)); if(length(m)) stop(paste(year,"missing",paste(m,collapse=",")))
+            scr <- (one(x$rush)|one(x$pass)|one(x$pass_attempt)) & !one(x$punt)
+            expq <- scr & !is.na(x$yards_gained)
+            succq <- expq & !is.na(x$down) & !is.na(x$distance) & x$distance>0 & x$down %in% 1:4
+            driveq <- !is.na(x$pos_team) & !is.na(x$drive_id) & !is.na(x$yards_to_goal)
+            dk <- paste(x$game_id,x$pos_team,x$drive_id,sep="|")
+            valid_drives <- unique(dk[driveq])
+            opp40_drives <- unique(dk[driveq & x$yards_to_goal<=40])
+            dup_opp40_rows <- sum(driveq & x$yards_to_goal<=40)-length(opp40_drives)
+            rows[[length(rows)+1]] <- data.frame(
+              season=year, rows=nrow(x), scrimmage=sum(scr),
+              explosive_context=sum(expq), explosive_missing=sum(scr & is.na(x$yards_gained)),
+              success_context=sum(succq), success_missing=sum(scr & !succq),
+              valid_drive_context_rows=sum(driveq), unique_valid_drives=length(valid_drives),
+              scoring_opportunity_rows=sum(driveq & x$yards_to_goal<=40),
+              unique_scoring_opportunity_drives=length(opp40_drives),
+              scoring_opportunity_repeat_rows=dup_opp40_rows,
+              missing_drive_id_rows=sum(!is.na(x$pos_team)&is.na(x$drive_id)),
+              missing_yards_to_goal_rows=sum(!is.na(x$pos_team)&is.na(x$yards_to_goal)),
+              drive_result_nonnull=sum(!is.na(x$drive_result)),
+              drive_result_detailed_nonnull=sum(!is.na(x$drive_result_detailed)))
+          }
+          out<-do.call(rbind,rows)
+          write.csv(out,"phase4_derived_feature_coverage_v1_113.csv",row.names=FALSE)
+          stopifnot(!any(out$season==2025))
+          print(out)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-phase4-derived-feature-coverage-v1-113
+          path: phase4_derived_feature_coverage_v1_113.csv
