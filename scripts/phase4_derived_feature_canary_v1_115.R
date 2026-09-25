@@ -37,7 +37,7 @@ for(yr in sort(unique(g$season)))for(tm in unique(g$team[g$season==yr])){
   offensive_explosive_play_rate=safe(cs(z$off_exp),cs(z$off_scr)),defensive_explosive_play_rate=safe(cs(z$def_exp),cs(z$def_scr)),
   offensive_success_rate=safe(cs(z$off_succ),cs(z$off_succ_q)),defensive_success_rate_allowed=safe(cs(z$def_succ),cs(z$def_succ_q)),
   average_starting_yards_to_goal=safe(cs(z$start_ytg_sum),cs(z$start_drive_n)),
-  explosive_play_denominator=cs(z$off_scr),success_play_denominator=cs(z$off_succ_q),field_position_drive_denominator=cs(z$start_drive_n))}
+  explosive_play_denominator=cs(z$off_scr),success_play_denominator=cs(z$off_succ_q),field_position_drive_denominator=cs(z$start_drive_n))
 }
 out<-do.call(rbind,rows);if(any(out$season==2025))stop("2025 TEST leakage")
 write.csv(g,"phase4_derived_team_game_primitives_v1_115.csv",row.names=FALSE);write.csv(out,"phase4_derived_feature_canary_v1_115.csv",row.names=FALSE)
