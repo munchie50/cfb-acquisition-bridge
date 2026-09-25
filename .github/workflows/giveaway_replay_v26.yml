@@ -216,4 +216,4 @@ jobs:
           if compgen -G "evidence/*" > /dev/null; then (cd evidence && sha256sum * > SHA256SUMS.txt); fi
       - uses: actions/upload-artifact@v4
         if: always()
-        with: {name: cfb-2022-giveaway-replay-v26/g, path: evidence/, retention-days: 3}
+        with: {name: cfb-2022-giveaway-replay-v26, path: evidence/, retention-days: 3}
