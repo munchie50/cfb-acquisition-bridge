@@ -5,6 +5,7 @@ on:
     paths: ['.github/workflows/giveaway_replay_v35.yml']
   workflow_dispatch:
 permissions: {contents: read}
+# v35 execution nonce: 2
 jobs:
   replay:
     runs-on: ubuntu-latest
