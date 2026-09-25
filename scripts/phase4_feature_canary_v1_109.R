@@ -26,8 +26,8 @@ for(yr in 2016:2024){
  vals$venue<-ifelse(vals$neutral_site,"NEUTRAL",ifelse(vals$team==vals$home_team,"HOME","AWAY")); vals$season<-yr
  parts[[length(parts)+1]]<-vals[,c("season","game_id","team","start_date","venue","game_points_for","game_points_against","off_plays","def_plays","off_yards","def_yards","rush_plays","pass_plays","rush_yards","pass_yards","pass_attempts","interceptions")]
 }
-tg<-do.call(rbind,parts); tg<-tg[order(tg$team,tg$start_date,tg$game_id),]; safe<-function(n,d)ifelse(d==0,NA_real_,n/d); rows<-list()
-for(tm in unique(tg$team)){z<-tg[tg$team==tm,,drop=FALSE]; n<-nrow(z); prior_n<-0:(n-1); cs<-function(v)c(0,head(cumsum(v),-1))
+tg<-do.call(rbind,parts); tg<-tg[order(tg$season,tg$team,tg$start_date,tg$game_id),]; safe<-function(n,d)ifelse(d==0,NA_real_,n/d); rows<-list()
+for(yr in sort(unique(tg$season))) for(tm in unique(tg$team[tg$season==yr])){z<-tg[tg$season==yr & tg$team==tm,,drop=FALSE]; n<-nrow(z); prior_n<-0:(n-1); cs<-function(v)c(0,head(cumsum(v),-1))
  rows[[length(rows)+1]]<-data.frame(season=z$season,game_id=z$game_id,team=tm,start_date=z$start_date,home_away_neutral=z$venue,qualified_prior_games=prior_n,
  points_for_per_game=safe(cs(z$game_points_for),prior_n),points_against_per_game=safe(cs(z$game_points_against),prior_n),
  offensive_scrimmage_plays_per_game=safe(cs(z$off_plays),prior_n),defensive_scrimmage_plays_per_game=safe(cs(z$def_plays),prior_n),
