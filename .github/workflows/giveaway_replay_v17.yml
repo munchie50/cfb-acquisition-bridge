@@ -169,7 +169,9 @@ jobs:
           print(pd.DataFrame(rows).to_string(index=False))
           PY
       - name: Hash evidence
-        run: cd evidence && sha256sum * > SHA256SUMS.txt
+        if: always()
+        run: |
+          if compgen -G "evidence/*" > /dev/null; then (cd evidence && sha256sum * > SHA256SUMS.txt); fi
       - uses: actions/upload-artifact@v4
         if: always()
         with: {name: cfb-2022-giveaway-replay-v17, path: evidence/, retention-days: 3}
