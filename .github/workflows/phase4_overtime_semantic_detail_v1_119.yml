@@ -1,0 +1,39 @@
+name: CFB Phase4 Overtime Semantic Detail v1.119
+on:
+  push:
+    paths:
+      - '.github/workflows/phase4_overtime_semantic_detail_v1_119.yml'
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install R
+        run: sudo apt-get update && sudo apt-get install -y r-base
+      - name: Acquire TRAIN VALIDATION PBP only
+        run: |
+          mkdir -p raw
+          for YEAR in {2019..2024}; do curl --fail --location --retry 3 --output "raw/pbp_${YEAR}.rds" "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"; done
+      - name: Extract overtime semantic candidates
+        run: |
+          Rscript - <<'RS'
+          one<-function(v)!is.na(v)&v==1
+          out<-list()
+          for(yr in 2019:2024){
+            x<-readRDS(sprintf("raw/pbp_%d.rds",yr)); x$.row<-seq_len(nrow(x))
+            scr<-(one(x$rush)|one(x$pass)|one(x$pass_attempt))&!one(x$punt)&!is.na(x$yards_gained)
+            txt<-tolower(ifelse(is.na(x$play_text),"",x$play_text)); typ<-tolower(ifelse(is.na(x$play_type),"",x$play_type))
+            twopt<-grepl("two.point|2.point|two point",txt)|grepl("two.point|2.point|two point",typ)
+            q<-!is.na(x$period)&x$period>4 & (twopt | (!is.na(x$period)&x$period>=7&scr))
+            cols<-intersect(c("game_id","id_play","period","pos_team","def_pos_team","play_type","play_text","down","distance","yards_gained","rush","pass","pass_attempt","drive_id","yards_to_goal","drive_result","drive_result_detailed"),names(x))
+            if(any(q)){ z<-x[q,cols,drop=FALSE]; z$season<-yr; z$scrimmage_classifier<-scr[q]; z$twopt_heuristic<-twopt[q]; out[[length(out)+1]]<-z }
+          }
+          y<-do.call(rbind,out); y<-y[,c("season",setdiff(names(y),"season"))]
+          write.csv(y,"phase4_overtime_semantic_candidates_v1_119.csv",row.names=FALSE)
+          RS
+      - name: Assert TEST excluded
+        run: '! grep -q "^2025," phase4_overtime_semantic_candidates_v1_119.csv'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-phase4-overtime-semantic-detail-v1-119
+          path: phase4_overtime_semantic_candidates_v1_119.csv
