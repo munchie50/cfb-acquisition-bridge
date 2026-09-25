@@ -3,7 +3,7 @@ on:
   push:
     branches: [audit/rds-punt-v123]
 permissions:
-  contents: read
+  contents: write
 jobs:
   bounded-proof:
     runs-on: ubuntu-latest
@@ -43,15 +43,13 @@ jobs:
         run: |
           sha256sum target_rows.csv unpaired_row.csv target_rows_with_scrim.csv source.sha256 > evidence.sha256
           cat evidence.sha256
-      - name: Upload bounded proof
-        uses: actions/upload-artifact@v4
-        with:
-          name: cfb-v123-bounded-rds-punt-proof
-          path: |
-            target_rows.csv
-            unpaired_row.csv
-            target_rows_with_scrim.csv
-            source.sha256
-            evidence.sha256
-          if-no-files-found: error
-          retention-days: 1
+      - name: Persist bounded proof on audit branch
+        run: |
+          set -euo pipefail
+          mkdir -p audit_evidence/v123
+          cp target_rows.csv unpaired_row.csv target_rows_with_scrim.csv source.sha256 evidence.sha256 audit_evidence/v123/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audit_evidence/v123
+          git commit -m "audit evidence: v1.23 bounded RDS punt proof"
+          git push origin HEAD:audit/rds-punt-v123
