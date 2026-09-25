@@ -1,0 +1,121 @@
+name: CFB 2022 Giveaway Replay v10 Proven-Schema Official Control
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/giveaway_replay_v10.yml']
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Install R
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y r-base r-cran-stringr
+      - name: Acquire exact frozen source and pinned helper
+        run: |
+          set -euo pipefail
+          curl -L --fail --retry 3 -o x.rds https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2022.rds
+          echo 'dcf59fe1f694c5eaef0ce89d1ce14dbcbe571c60fa7d94f40399e50c9a38ea8a  x.rds' | sha256sum -c -
+          curl -L --fail -o helper_air.R https://raw.githubusercontent.com/sportsdataverse/cfbfastR/006729304e8b7b6ec392dff93cfd0b649e741675/R/helper_pbp_air_yards.R
+      - name: Replay pinned-aligned semantics
+        shell: Rscript {0}
+        run: |
+          library(stringr); source("helper_air.R"); x<-readRDS("x.rds"); dir.create("evidence")
+          n<-nrow(x); gid<-as.character(x$game_id); pos<-as.character(x$pos_team); def<-as.character(x$def_pos_team)
+          txt<-ifelse(is.na(x$play_text),"",as.character(x$play_text)); clean<-trimws(str_remove(txt,"(?is)\\(Original Play:.*?\\)\\s*$"))
+          no_play<-str_detect(clean,regex("\\bNO PLAY\\b|play was overturned",ignore_case=TRUE))
+          one<-function(v)!is.na(v)&suppressWarnings(as.numeric(v))>0
+          flag<-function(nm)if(nm%in%names(x))one(x[[nm]])else rep(FALSE,n)
+          is_int<-flag("int"); is_int[no_play]<-FALSE
+          # exact pinned occurrence rule: fumble_vec OR muff text
+          fumble<-(flag("fumble_vec")|str_detect(txt,regex("muff",ignore_case=TRUE))) & !no_play
+          ptyp<-as.character(x$play_type)
+          kickoff<-flag("kickoff_play")|(!is.na(ptyp)&str_detect(ptyp,regex("kickoff",ignore_case=TRUE)))
+          punt<-flag("punt")|(!is.na(ptyp)&str_detect(ptyp,regex("punt",ignore_case=TRUE)))
+          fg<-flag("fg_attempt")|(!is.na(ptyp)&str_detect(ptyp,regex("field goal",ignore_case=TRUE)))
+          sp<-kickoff|punt|fg
+          coposs<-flag("change_of_poss")|flag("change_of_pos_team")
+          has<-function(p)str_detect(txt,regex(p,ignore_case=TRUE))
+          kr<-kickoff|(has("kickoff")&has("return|muff")); pr<-punt|(has("punt")&has("return|muff|fair catch"))
+          ret<-ifelse(kickoff,pos,ifelse(punt|fg,def,NA_character_))
+          fumbling<-ifelse(!fumble,NA_character_,ifelse(is_int,def,ifelse(kr,pos,ifelse(pr,def,ifelse(sp,ret,pos)))))
+          recs<-str_match_all(clean,regex("recovered by\\s+([A-Z&]{2,})\\b",ignore_case=TRUE))
+          r1<-vapply(recs,function(m)if(nrow(m)>=1)toupper(m[1,2])else NA_character_,character(1)); r2<-vapply(recs,function(m)if(nrow(m)>=2)toupper(m[2,2])else NA_character_,character(1))
+          rt1<-rt2<-rep(NA_character_,n)
+          alias_evidence<-data.frame()
+          for(ix in split(seq_len(n),gid)){
+            side<-.spot_side_map(txt[ix],x$yards_to_goal_end[ix],pos[ix],def[ix])
+            toks<-unique(c(r1[ix],r2[ix])); toks<-toks[!is.na(toks)&toks!=""]
+            # deterministic game-local aliases only: token must map unambiguously to exactly one side by observed team-name forms
+            teams<-unique(c(pos[ix],def[ix])); teams<-teams[!is.na(teams)&teams!=""]
+            norm<-function(s)toupper(gsub("[^A-Z0-9]","",s))
+            for(tok in toks){
+              key<-.spot_key(tok)
+              if(!is.na(side[key])) next
+              nt<-norm(tok); cand<-teams[vapply(teams,function(tm){
+                nm<-norm(tm); parts<-unlist(strsplit(toupper(tm),"[^A-Z0-9]+")); initials<-paste0(substr(parts[nzchar(parts)],1,1),collapse="")
+                startsWith(nm,nt)||startsWith(nt,nm)||nt==initials||
+                (nt=="NORTH"&&grepl("^NORTH AMERICAN UNIVERSITY$",toupper(tm)))||
+                (nt=="TAMCM"&&grepl("^EAST TEXAS A&M$",toupper(tm)))||
+                (nt=="LINCOL"&&grepl("^LINCOLN \\(CA\\)$",toupper(tm)))
+              },logical(1))]
+              cand<-unique(cand)
+              if(length(cand)==1){side[key]<-cand;alias_evidence<-rbind(alias_evidence,data.frame(game_id=gid[ix[1]],token=tok,resolved_team=cand,method="GAME_LOCAL_UNAMBIGUOUS"))}
+            }
+            if(length(side)){rt1[ix]<-unname(side[.spot_key(r1[ix])]);rt2[ix]<-unname(side[.spot_key(r2[ix])])}
+          }
+          same<-function(a,b)!is.na(a)&!is.na(b)&a==b; diff<-function(a,b)!is.na(a)&!is.na(b)&a!=b
+          admin<-(!is.na(ptyp)&ptyp%in%c("Penalty","End Period","End of Half","End of Game","Timeout","Coin Toss"))|no_play
+          scrim<-!sp&!admin
+          loser1<-ifelse(fumble&!is.na(rt1)&!is.na(fumbling)&diff(rt1,fumbling),fumbling,
+                   ifelse(fumble&is.na(rt1)&scrim&!is_int&!pr&!kr&same(fumbling,pos)&coposs,fumbling,NA_character_))
+          loser2<-ifelse(fumble&!is.na(rt2)&!is.na(rt1)&diff(rt2,rt1),rt1,NA_character_)
+          pfl<-same(loser1,pos)|same(loser2,pos); dfl<-same(loser1,def)|same(loser2,def)
+          ev<-rbind(data.frame(game_id=gid[is_int],team=pos[is_int],event="INTERCEPTION",id_play=as.character(x$id_play[is_int])),
+                    data.frame(game_id=gid[pfl],team=pos[pfl],event="FUMBLE_LOST",id_play=as.character(x$id_play[pfl])),
+                    data.frame(game_id=gid[dfl],team=def[dfl],event="FUMBLE_LOST",id_play=as.character(x$id_play[dfl])))
+          k<-paste(ev$game_id,ev$team,ev$event,ev$id_play,sep="|"); evu<-ev[!duplicated(k),]
+          keys<-unique(rbind(data.frame(game_id=gid,team=pos),data.frame(game_id=gid,team=def)));keys<-keys[!is.na(keys$team)&keys$team!="",]
+          cnt<-function(e,nm){q<-evu[evu$event==e,];z<-aggregate(rep(1,nrow(q)),list(game_id=q$game_id,team=q$team),sum);names(z)[3]<-nm;z}
+          a<-merge(keys,cnt("INTERCEPTION","interceptions"),all.x=T);a<-merge(a,cnt("FUMBLE_LOST","fumbles_lost"),all.x=T)
+          a[is.na(a)]<-0;a$giveaways<-a$interceptions+a$fumbles_lost
+          unresolved<-fumble&vapply(recs,nrow,integer(1))>0&is.na(rt1)
+          write.csv(a,"evidence/team_game.csv",row.names=F);write.csv(evu,"evidence/events_unique.csv",row.names=F);write.csv(unique(alias_evidence),"evidence/alias_evidence.csv",row.names=F)
+          write.csv(data.frame(game_id=gid[unresolved],id_play=as.character(x$id_play[unresolved]),pos_team=pos[unresolved],def_pos_team=def[unresolved],play_type=ptyp[unresolved],token=r1[unresolved],coposs=coposs[unresolved],play_text=txt[unresolved]),"evidence/unresolved.csv",row.names=F)
+          write.csv(data.frame(rows=n,games=length(unique(gid)),team_games=nrow(a),interceptions=sum(a$interceptions),fumbles_lost=sum(a$fumbles_lost),giveaways=sum(a$giveaways),events_before=nrow(ev),events_unique=nrow(evu),duplicate_removed=nrow(ev)-nrow(evu),unresolved=sum(unresolved),fallback_loser1=sum(fumble&is.na(rt1)&scrim&!is_int&!pr&!kr&same(fumbling,pos)&coposs),double_side=sum(pfl&dfl)),"evidence/summary.csv",row.names=F)
+      - name: Acquire independent ESPN 2022 team box
+        run: |
+          set -euo pipefail
+          curl -L --fail --retry 3 -o team_box_2022.csv https://github.com/sportsdataverse/sportsdataverse-data/releases/download/espn_cfb_team_box/team_box_2022.csv
+          echo 'f0254f784613d3918315f3cd1998ca3cbaf90fe39165ee9d6b05ed13fe88a239  team_box_2022.csv' | sha256sum -c -
+      - name: Reconcile official controls
+        run: |
+          python - <<'PY'
+          import pandas as pd,re
+          a=pd.read_csv("evidence/team_game.csv",dtype={"game_id":str})
+          b=pd.read_csv("team_box_2022.csv",dtype={"game_id":str})
+          # Diagnostic v2 proved exact upstream headers: team_name, interceptions, fumblesLost, turnovers.
+          need=["game_id","team_name","interceptions","fumblesLost","turnovers"]
+          miss=[c for c in need if c not in b.columns]
+          if miss: raise SystemExit("proven ESPN schema changed; missing="+str(miss)+" columns="+str(list(b.columns)))
+          bb=b[need].copy();bb.columns=["game_id","team","interceptions","fumbles_lost","turnovers"]
+          norm=lambda s: re.sub(r"[^A-Z0-9]","",str(s).upper())
+          a["team_key"]=a.team.map(norm); bb["team_key"]=bb.team.map(norm)
+          j=a.merge(bb,on=["game_id","team_key"],how="left",suffixes=("_replay","_box"),indicator=True)
+          j.to_csv("evidence/official_reconciliation.csv",index=False)
+          j[j._merge!="both"].to_csv("evidence/official_unmatched.csv",index=False)
+          rows=[]
+          for rs,bs in [("interceptions_replay","interceptions"),("fumbles_lost_replay","fumbles_lost"),("giveaways","turnovers")]:
+            x=pd.to_numeric(j[rs],errors="coerce");y=pd.to_numeric(j[bs],errors="coerce");ok=y.notna()
+            rows.append({"stat":rs.replace("_replay",""),"denominator":len(j),"comparable":int(ok.sum()),"exact":int((x[ok]==y[ok]).sum()),"rate":float((x[ok]==y[ok]).mean()) if ok.any() else None,"delta_sum":float((x[ok]-y[ok]).sum()) if ok.any() else None})
+          pd.DataFrame(rows).to_csv("evidence/official_summary.csv",index=False)
+          pd.DataFrame([{"replay_rows":len(a),"replay_games":a.game_id.nunique(),"box_rows":len(b),"box_games":b.game_id.nunique(),"joined":int((j._merge=="both").sum()),"unmatched":int((j._merge!="both").sum())}]).to_csv("evidence/official_denominator.csv",index=False)
+          print(pd.DataFrame(rows).to_string(index=False))
+          PY
+      - name: Hash evidence
+        run: cd evidence && sha256sum * > SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with: {name: cfb-2022-giveaway-replay-v10, path: evidence/, retention-days: 3}
