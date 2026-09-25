@@ -1,0 +1,48 @@
+name: CFB Giveaway Oracle Validation v2
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/giveaway_oracle_validation_v2.yml']
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - run: |
+          mkdir evidence
+          base=https://raw.githubusercontent.com/sportsdataverse/cfbfastR/006729304e8b7b6ec392dff93cfd0b649e741675/tests/testthat/fixtures/parity
+          curl -L --fail -o box.parquet "$base/boxparity_box.parquet"
+          curl -L --fail -o pbp.parquet "$base/boxparity_pbp.parquet"
+      - run: |
+          python -m pip install --quiet pandas pyarrow
+          python - <<'PY'
+          import pandas as pd
+          p=pd.read_parquet("pbp.parquet"); b=pd.read_parquet("box.parquet")
+          p["game_id"]=p["fixture_game_id"].astype(str); b["game_id"]=b["fixture_game_id"].astype(str)
+          b["team_key"]=b["team_key"].astype(str)
+          # Match upstream helper: prefer pos_team_id, fallback to pos_team only if ID column absent.
+          pos="pos_team_id" if "pos_team_id" in p else "pos_team"
+          raw=p[pos]
+          # R as.character() on numeric IDs does not append .0.
+          p["team_key"]=pd.to_numeric(raw,errors="coerce").astype("Int64").astype("string") if pd.api.types.is_numeric_dtype(raw) else raw.astype("string")
+          def flag(n):
+            return (pd.to_numeric(p[n],errors="coerce").fillna(0)>0).astype(int) if n in p else pd.Series(0,index=p.index)
+          off=pd.DataFrame({"game_id":p.game_id,"team_key":p.team_key,"interceptions":flag("int"),"fumbles_lost":flag("fumble_lost")})
+          off=off[off.team_key.notna()]
+          a=off.groupby(["game_id","team_key"],as_index=False)[["interceptions","fumbles_lost"]].sum(); a["turnovers"]=a.interceptions+a.fumbles_lost
+          j=a.merge(b,on=["game_id","team_key"],how="left")
+          rows=[]
+          for s,bs in [("interceptions","espn_interceptions"),("fumbles_lost","espn_fumbles_lost"),("turnovers","espn_turnovers")]:
+            bv=pd.to_numeric(j[bs],errors="coerce"); ok=bv.notna()
+            rows.append({"stat":s,"n":int(ok.sum()),"matched":int((j.loc[ok,s]==bv[ok]).sum()),"rate":float((j.loc[ok,s]==bv[ok]).mean())})
+          pd.DataFrame(rows).to_csv("evidence/parity.csv",index=False)
+          ak=set(zip(a.game_id,a.team_key)); miss=b[[k not in ak for k in zip(b.game_id,b.team_key)]]
+          miss.to_csv("evidence/unmatched_box_team_games.csv",index=False)
+          pd.DataFrame([{"aggregate_rows":len(a),"box_rows":len(b),"unmatched_box_rows":len(miss),"aggregate_games":a.game_id.nunique(),"box_games":b.game_id.nunique()}]).to_csv("evidence/denominator.csv",index=False)
+          print(pd.DataFrame(rows).to_string(index=False)); print("denominator",len(a),len(b),len(miss))
+          PY
+      - run: cd evidence && sha256sum * > SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with: {name: cfb-giveaway-oracle-validation-v2, path: evidence/, retention-days: 3}
