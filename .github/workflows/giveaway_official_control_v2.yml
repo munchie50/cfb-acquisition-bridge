@@ -1,0 +1,54 @@
+name: CFB 2022 Giveaway Official Control Reconciliation v2
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/giveaway_official_control_v2.yml']
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Acquire frozen replay evidence
+        run: |
+          set -euo pipefail
+          curl -L --fail --retry 3 -o replay.zip https://github.com/munchie50/cfb-acquisition-bridge/actions/runs/36148245435/artifacts/10870770466
+          test -s replay.zip
+          unzip -t replay.zip
+          unzip -q replay.zip -d replay
+      - name: Acquire independent ESPN team box
+        run: |
+          set -euo pipefail
+          curl -L --fail --retry 3 -o team_box_2022.csv https://github.com/sportsdataverse/sportsdataverse-data/releases/download/espn_cfb_team_box/team_box_2022.csv
+          echo 'f0254f784613d3918315f3cd1998ca3cbaf90fe39165ee9d6b05ed13fe88a239  team_box_2022.csv' | sha256sum -c -
+      - name: Reconcile full denominator
+        run: |
+          python - <<'PY'
+          import pandas as pd, re, os
+          a=pd.read_csv("replay/team_game.csv",dtype={"game_id":str})
+          b=pd.read_csv("team_box_2022.csv",dtype={"game_id":str})
+          print("box columns",list(b.columns))
+          need=["game_id","team","interceptions","fumbles_lost","turnovers"]
+          missing=[x for x in need if x not in b.columns]
+          if missing: raise SystemExit("missing box columns "+str(missing))
+          def norm(s): return re.sub(r"[^A-Z0-9]","",str(s).upper())
+          a["team_key"]=a.team.map(norm); b["team_key"]=b.team.map(norm)
+          # exact game+normalized-team only; no fuzzy shrinkage
+          bb=b[need].copy(); bb["team_key"]=b.team.map(norm)
+          j=a.merge(bb,on=["game_id","team_key"],how="left",suffixes=("_replay","_box"),indicator=True)
+          os.makedirs("evidence",exist_ok=True)
+          j.to_csv("evidence/reconciliation.csv",index=False)
+          unmatched=j[j["_merge"]!="both"]; unmatched.to_csv("evidence/unmatched.csv",index=False)
+          rows=[]
+          for rs,bs in [("interceptions_replay","interceptions"),("fumbles_lost_replay","fumbles_lost"),("giveaways","turnovers")]:
+            x=pd.to_numeric(j[rs],errors="coerce"); y=pd.to_numeric(j[bs],errors="coerce"); ok=y.notna()
+            rows.append({"stat":rs.replace("_replay",""),"denominator":len(j),"comparable":int(ok.sum()),"exact":int((x[ok]==y[ok]).sum()),"rate":float((x[ok]==y[ok]).mean()) if ok.any() else None,"delta_sum":float((x[ok]-y[ok]).sum()) if ok.any() else None})
+          pd.DataFrame(rows).to_csv("evidence/summary.csv",index=False)
+          pd.DataFrame([{"replay_rows":len(a),"replay_games":a.game_id.nunique(),"box_rows":len(b),"box_games":b.game_id.nunique(),"joined":int((j._merge=="both").sum()),"unmatched":len(unmatched)}]).to_csv("evidence/denominator.csv",index=False)
+          print(pd.DataFrame(rows).to_string(index=False)); print("unmatched",len(unmatched))
+          PY
+      - name: Hash evidence
+        run: cd evidence && sha256sum * > SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with: {name: cfb-2022-giveaway-official-control-v2, path: evidence/, retention-days: 3}
