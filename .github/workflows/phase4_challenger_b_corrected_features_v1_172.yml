@@ -1,0 +1,34 @@
+name: CFB Phase4 Challenger B Corrected Features v1.172
+# v1.172 proven identity normalization + frozen v1.115 derived semantics
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/phase4_challenger_b_corrected_features_v1_172.yml']
+  workflow_dispatch:
+permissions: {contents: read, actions: read}
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas pyreadr
+      - name: Acquire accepted schedule, legacy keyset, accepted PBP-missing ledger, and PBP
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir hist old miss raw
+          gh api repos/${{ github.repository }}/actions/artifacts/10895405612/zip > /tmp/h.zip
+          unzip -q /tmp/h.zip -d hist
+          gh api repos/${{ github.repository }}/actions/artifacts/10890704969/zip > /tmp/o.zip
+          unzip -q /tmp/o.zip -d old
+          gh api repos/${{ github.repository }}/actions/artifacts/10894969326/zip > /tmp/m.zip
+          unzip -q /tmp/m.zip -d miss
+          for YEAR in {2016..2024}; do curl --fail --location --retry 3 --output "raw/pbp_${YEAR}.rds" "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"; done
+      - name: Compile producer before execution
+        run: python -m py_compile scripts/phase4_challenger_b_corrected_features_v1_172.py
+      - run: python scripts/phase4_challenger_b_corrected_features_v1_172.py hist raw old miss/missing_pbp_ledger_v1_165.csv out
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: cfb-phase4-challenger-b-corrected-features-v1-172, path: out/}
