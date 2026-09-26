@@ -21,6 +21,20 @@ if (s.season==2025).any(): raise SystemExit('2025 present in development schedul
 # temporal exclusions v1.128
 excluded=set('401403894 401403903 401403911 401403920 401403927 401403935 401403940 401426613 401403957 401403899 401403906 401403914 401403919 401403922 401403944 401403956 401411122 401411129 401411132 401411141 401411147 401411157 401411160 401411168 401403959 401426564 401403912 401403925 401403929 401403938 401403941 401403953 401403962 401404001 401404007 401404009 401404013 401404019 401404031 401404037 401404042 401404051'.split())
 if len(excluded)!=42: raise SystemExit('temporal exclusion cardinality')
+temporal_side_map={
+'401403894':['Auburn'],'401403903':['Auburn'],'401403911':['Auburn'],'401403920':['Auburn'],'401403927':['Auburn'],'401403935':['Auburn','Mississippi State'],'401403940':['Auburn'],'401426613':['Auburn'],'401403957':['Auburn'],
+'401403899':['Mississippi State'],'401403906':['Mississippi State'],'401403914':['Mississippi State'],'401403919':['Mississippi State'],'401403922':['Mississippi State'],'401403944':['Mississippi State'],'401403956':['Mississippi State'],
+'401411122':['Georgia Tech'],'401411129':['Georgia Tech'],'401411132':['Georgia Tech'],'401411141':['Georgia Tech'],'401411147':['Georgia Tech'],'401411157':['Georgia Tech'],'401411160':['Georgia Tech'],'401411168':['Georgia Tech'],'401403959':['Georgia Tech'],
+'401426564':['South Carolina'],'401403912':['South Carolina'],'401403925':['South Carolina'],'401403929':['South Carolina'],'401403938':['South Carolina'],'401403941':['South Carolina'],'401403953':['South Carolina'],'401403962':['South Carolina'],
+'401404001':['Washington'],'401404007':['Washington'],'401404009':['Washington'],'401404013':['Washington'],'401404019':['Washington'],'401404031':['Washington'],'401404037':['Washington'],'401404042':['Washington'],'401404051':['Washington']}
+if set(temporal_side_map)!=excluded or sum(map(len,temporal_side_map.values()))!=43: raise SystemExit('temporal side mapping mismatch')
+def parse_neutral(v):
+    if isinstance(v,bool): return v
+    if isinstance(v,(int,float)) and not pd.isna(v) and v in (0,1): return bool(v)
+    z=str(v).strip().lower()
+    if z in ('true','t','1','yes','y'): return True
+    if z in ('false','f','0','no','n'): return False
+    raise SystemExit('unrecognized neutral_site value: '+repr(v))
 rows=[]; ledger=[]
 for _,g in s.sort_values(['season','start_date','game_id']).iterrows():
     key=(g.season,g.game_id)
@@ -35,10 +49,10 @@ for _,g in s.sort_values(['season','start_date','game_id']).iterrows():
     if pd.isna(g.home_points) or pd.isna(g.away_points): reasons.append('target_missing')
     if pd.isna(g.neutral_site): reasons.append('venue_missing')
     if reasons:
-        ledger.append({'season':g.season,'game_id':g.game_id,'home_team':g.home_team,'away_team':g.away_team,'reasons':'|'.join(sorted(set(reasons)))})
+        ledger.append({'season':g.season,'game_id':g.game_id,'home_team':g.home_team,'away_team':g.away_team,'reasons':'|'.join(sorted(set(reasons))),'temporal_affected_sides':'|'.join(temporal_side_map.get(g.game_id,[]))})
         continue
     rec={'season':int(g.season),'game_id':g.game_id,'start_date':g.start_date,'home_team':g.home_team,'away_team':g.away_team,
-         'venue_state':'NEUTRAL' if bool(g.neutral_site) else 'HOME',
+         'venue_state':'NEUTRAL' if parse_neutral(g.neutral_site) else 'HOME',
          'target_home_margin':float(g.home_points)-float(g.away_points),
          'target_total_points':float(g.home_points)+float(g.away_points),
          'target_home_win':int(float(g.home_points)>float(g.away_points))}
@@ -73,6 +87,7 @@ def sha(p):
 manifest={'rows':len(out),'excluded_schedule_games':len(led),'rows_by_season':{str(k):int(v) for k,v in out.groupby('season').size().items()},
 'exclusions_by_season':{str(k):int(v) for k,v in led.groupby('season').size().items()},
 'temporal_exclusion_games_present_in_ledger':int(led.reasons.str.contains('v1.128_temporal_exclusion',regex=False).sum()),
+'temporal_exclusion_team_sides':int(sum(len(temporal_side_map.get(g,[])) for g in led.loc[led.reasons.str.contains('v1.128_temporal_exclusion',regex=False),'game_id'])),
 'predictor_count_numeric':len(pred),'schedule_blob_sha':'e8d96b9135f625a868cc613e124545ac51828e54',
 'sha256':{}}
 for p in ['phase4_challenger_a_dataset_v1_131.csv','phase4_challenger_a_exclusion_ledger_v1_131.csv','phase4_challenger_a_config_v1_131.json']:
