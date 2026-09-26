@@ -1,0 +1,23 @@
+name: CFB Phase4 Challenger B Chronology Acceptance Audit v1.173
+on:
+  workflow_dispatch:
+permissions: {contents: read, actions: read}
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas
+      - name: Acquire accepted v1.172 candidate
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir candidate
+          gh api repos/${{ github.repository }}/actions/artifacts/10895523493/zip > /tmp/v172.zip
+          unzip -q /tmp/v172.zip -d candidate
+      - run: python -m py_compile scripts/phase4_challenger_b_chronology_acceptance_audit_v1_173.py
+      - run: python scripts/phase4_challenger_b_chronology_acceptance_audit_v1_173.py candidate out
+      - uses: actions/upload-artifact@v4
+        with: {name: cfb-phase4-challenger-b-chronology-acceptance-audit-v1-173, path: out/}
