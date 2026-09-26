@@ -24,6 +24,7 @@ jobs:
           echo "e6d8b794dda56535fcabe4c479444c600325fedb00e0186afe0a031f7a74263a  /tmp/schedule.zip" | sha256sum -c -
           unzip -q /tmp/schedule.zip -d schedule
           gh api repos/${{ github.repository }}/actions/artifacts/10895838069/zip > /tmp/fit.zip
+          echo "3a2cabfcd37e0bcf0cae85efc77eaa6755ffb12734d1e48c4c582ed1de375587  /tmp/fit.zip" | sha256sum -c -
           unzip -q /tmp/fit.zip -d fit
           test -f schedule/challenger_b_schedule_2025_v1_157.csv
           test -f fit/selected_coefficients.csv
