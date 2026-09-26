@@ -7,7 +7,7 @@ import pandas as pd, numpy as np, pyreadr
 schedp, raw_schedp, pbpp, fitp, outp = map(Path,sys.argv[1:6]); outp.mkdir(parents=True,exist_ok=True)
 S=pd.read_csv(schedp,dtype={"game_id":str}); S["start_date"]=pd.to_datetime(S.start_date,utc=True)
 REQS=["season","game_id","start_date","home_team","away_team","neutral_site","population_class","competition_class"]
-if set(S.columns)!=set(REQS) or len(S)!=934 or S.game_id.nunique()!=880 or S.game_id.duplicated().any(): raise SystemExit(f"target schedule identity cols={list(S.columns)} rows={len(S)} unique={S.game_id.nunique()}")
+if set(S.columns)!=set(REQS) or len(S)!=934 or S.game_id.nunique()!=934 or S.game_id.duplicated().any(): raise SystemExit(f"target schedule identity cols={list(S.columns)} rows={len(S)} unique={S.game_id.nunique()}")
 S=S[REQS].copy()
 if set(S.population_class.value_counts().to_dict().items())!={("FBS_VS_FBS",808),("FBS_VS_NONFBS",126)}: raise SystemExit("population class mismatch")
 if set(S.competition_class.value_counts().to_dict().items())!={("REGULAR",879),("CONFERENCE_CHAMPIONSHIP",9),("POSTSEASON",46)}: raise SystemExit("competition class mismatch")
