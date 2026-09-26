@@ -95,5 +95,5 @@ manifest={"status":"DIAGNOSTIC_COMPLETE","target_games":7701,"target_team_sides"
 mraw.to_csv(out/"challenger_b_mechanical_primitives_v1_169.csv",index=False); mf.to_csv(out/"challenger_b_mechanical_features_v1_169.csv",index=False)
 draw.to_csv(out/"challenger_b_derived_primitives_v1_169.csv",index=False); df.to_csv(out/"challenger_b_derived_features_v1_169.csv",index=False)
 ledger.to_csv(out/"challenger_b_feature_eligibility_ledger_v1_169.csv",index=False)
-(out/"manifest_v1_168.json").write_text(json.dumps(manifest,indent=2)+"
-"); print(json.dumps(manifest,indent=2))
+(out/"manifest_v1_169.json").write_text(json.dumps(manifest,indent=2))
+print(json.dumps(manifest,indent=2))
