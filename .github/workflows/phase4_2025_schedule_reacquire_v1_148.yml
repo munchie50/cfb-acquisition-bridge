@@ -1,0 +1,38 @@
+name: CFB Phase4 2025 Outcome-Blind Schedule v1.148
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase4_2025_schedule_reacquire_v1_148.py'
+      - '.github/workflows/phase4_2025_schedule_reacquire_v1_148.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reacquire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --disable-pip-version-check pandas pyarrow
+      - name: Acquire pinned-path current 2025 schedule bytes
+        run: |
+          curl --fail --location --retry 3 -o cfb_schedules_2025.parquet \
+            https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_2025.parquet
+          test -s cfb_schedules_2025.parquet
+      - name: Produce isolated outcome-blind projection
+        run: python scripts/phase4_2025_schedule_reacquire_v1_148.py cfb_schedules_2025.parquet out_v1_148
+      - name: Assert no outcome/market fields
+        run: |
+          python - <<'PY'
+          import pandas as pd
+          p=pd.read_csv('out_v1_148/phase4_2025_outcome_blind_schedule_projection_v1_148.csv')
+          bad=('point','score','winner','spread','moneyline','over_under','odds','bet')
+          assert not [c for c in p if any(x in c.lower() for x in bad)]
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-phase4-2025-outcome-blind-schedule-v1-148
+          path: out_v1_148/
