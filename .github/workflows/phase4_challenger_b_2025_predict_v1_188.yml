@@ -1,0 +1,45 @@
+name: CFB Phase4 Challenger B 2025 Fair Predictions v1.188
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase4_challenger_b_2025_predict_v1_188.py'
+      - '.github/workflows/phase4_challenger_b_2025_predict_v1_188.yml'
+  workflow_dispatch:
+permissions: {contents: read, actions: read}
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas numpy pyarrow pyreadr
+      - name: Acquire pinned accepted artifacts
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir schedule fit raw out
+          gh api repos/${{ github.repository }}/actions/artifacts/10893997859/zip > /tmp/schedule.zip
+          echo "e6d8b794dda56535fcabe4c479444c600325fedb00e0186afe0a031f7a74263a  /tmp/schedule.zip" | sha256sum -c -
+          unzip -q /tmp/schedule.zip -d schedule
+          gh api repos/${{ github.repository }}/actions/artifacts/10895838069/zip > /tmp/fit.zip
+          unzip -q /tmp/fit.zip -d fit
+          test -f schedule/challenger_b_schedule_2025_v1_157.csv
+          test -f fit/selected_coefficients.csv
+          test -f fit/train_scaling.csv
+      - name: Acquire quarantined 2025 source bytes
+        run: |
+          curl --fail --location --retry 3 -o raw/cfb_schedules_2025.parquet "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_2025.parquet"
+          curl --fail --location --retry 3 -o raw/pbp_2025.rds "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2025.rds"
+          test -s raw/cfb_schedules_2025.parquet
+          test -s raw/pbp_2025.rds
+      - name: Compile gate
+        run: python -m py_compile scripts/phase4_challenger_b_2025_predict_v1_188.py
+      - name: Produce frozen fair predictions
+        run: python scripts/phase4_challenger_b_2025_predict_v1_188.py schedule/challenger_b_schedule_2025_v1_157.csv raw/cfb_schedules_2025.parquet raw/pbp_2025.rds fit out
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-phase4-challenger-b-2025-fair-predictions-v1-188
+          path: out/
