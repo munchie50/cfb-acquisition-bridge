@@ -1,0 +1,23 @@
+name: CFB Phase4 Challenger B Identity Diagnostic v1.171
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/phase4_challenger_b_identity_diagnostic_v1_171.yml']
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas pyreadr
+      - run: |
+          mkdir raw
+          for YEAR in {2016..2024}; do curl --fail --location --retry 3 --output "raw/pbp_${YEAR}.rds" "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"; done
+      - run: python -m py_compile scripts/phase4_challenger_b_identity_diagnostic_v1_171.py
+      - run: python scripts/phase4_challenger_b_identity_diagnostic_v1_171.py raw out
+      - uses: actions/upload-artifact@v4
+        with: {name: cfb-phase4-challenger-b-identity-diagnostic-v1-171, path: out/}
