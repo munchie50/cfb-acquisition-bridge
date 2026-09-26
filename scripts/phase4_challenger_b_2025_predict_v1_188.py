@@ -49,26 +49,34 @@ def side_features(team,target_time,prior_ids):
     if not np.isfinite(vals).all(): return None,"required_feature_na"
     return dict(zip(features,map(float,vals))),None
 
-rows=[]; exclusions=[]; audit=[]
+rows=[]; exclusions=[]; audit=[]; sideledger=[]
 for _,g in S.sort_values(["start_date","game_id"]).iterrows():
     rec={"season":2025,"game_id":g.game_id,"start_date":g.start_date.isoformat(),"home_team":g.home_team,"away_team":g.away_team,"population_class":g.population_class,"competition_class":g.competition_class,"venue_state":"NEUTRAL" if bool(g.neutral_site) else "HOME"}
     reasons=[]; sides={}
     for label,team in [("home",g.home_team),("away",g.away_team)]:
         prior=S[(S.start_date<g.start_date)&((S.home_team==team)|(S.away_team==team))].sort_values("start_date")
         ids=prior.game_id.tolist()
-        if not ids: reasons.append(label+"_opening_no_prior"); continue
+        if not ids:
+            reasons.append(label+"_opening_no_prior")
+            sideledger.append({"game_id":g.game_id,"side":label,"team":team,"target_kickoff":g.start_date.isoformat(),"qualified_prior_games":0,"eligible":False,"reason":"opening_no_prior"})
+            continue
         if g.game_id in ids: raise SystemExit("own game leaked")
         f,err=side_features(team,g.start_date,ids)
         audit.append({"game_id":g.game_id,"side":label,"team":team,"prior_games":len(ids),"max_prior_kickoff":prior.start_date.max().isoformat(),"target_kickoff":g.start_date.isoformat(),"own_game_excluded":g.game_id not in ids,"strict_chronology":bool((prior.start_date<g.start_date).all())})
-        if err: reasons.append(label+"_"+err)
-        else: sides[label]=f
+        if err:
+            reasons.append(label+"_"+err)
+            sideledger.append({"game_id":g.game_id,"side":label,"team":team,"target_kickoff":g.start_date.isoformat(),"qualified_prior_games":len(ids),"eligible":False,"reason":err})
+        else:
+            sides[label]=f
+            sideledger.append({"game_id":g.game_id,"side":label,"team":team,"target_kickoff":g.start_date.isoformat(),"qualified_prior_games":len(ids),"eligible":True,"reason":"",**f})
     if reasons:
         exclusions.append(rec|{"reasons":"|".join(sorted(set(reasons)))})
     else:
         for f in features:
             rec["home_"+f]=sides["home"][f]; rec["away_"+f]=sides["away"][f]
         rows.append(rec)
-X=pd.DataFrame(rows); E=pd.DataFrame(exclusions); A=pd.DataFrame(audit)
+X=pd.DataFrame(rows); E=pd.DataFrame(exclusions); A=pd.DataFrame(audit); L=pd.DataFrame(sideledger)
+if len(L)!=1868 or L.duplicated(["game_id","side"]).any(): raise SystemExit("team-side ledger identity")
 pred=[p+f for f in features for p in ("home_","away_")]
 if len(pred)!=34 or (len(X) and (X[pred].isna().any(axis=None) or not np.isfinite(X[pred].to_numpy(float)).all())): raise SystemExit("predictor invariant")
 if len(X)+len(E)!=934 or set(X.game_id).intersection(set(E.game_id)): raise SystemExit("population accounting")
@@ -90,7 +98,7 @@ for kind,lam in [("margin",0.1),("total",0.1),("win",0.01)]:
     if kind=="win": q=1/(1+np.exp(-np.clip(q,-40,40)))
     X["pred_"+kind]=q
 if len(X) and (not np.isfinite(X[["pred_margin","pred_total","pred_win"]]).all(axis=None) or not X.pred_win.between(0,1).all()): raise SystemExit("prediction invariant")
-X.to_csv(outp/"challenger_b_2025_fair_predictions_v1_188.csv",index=False); E.to_csv(outp/"challenger_b_2025_exclusions_v1_188.csv",index=False); A.to_csv(outp/"challenger_b_2025_chronology_audit_v1_188.csv",index=False); S.to_csv(outp/"challenger_b_2025_target_ledger_v1_188.csv",index=False)
+X.to_csv(outp/"challenger_b_2025_fair_predictions_v1_188.csv",index=False); E.to_csv(outp/"challenger_b_2025_exclusions_v1_188.csv",index=False); A.to_csv(outp/"challenger_b_2025_chronology_audit_v1_188.csv",index=False); L.to_csv(outp/"challenger_b_2025_feature_eligibility_ledger_v1_188.csv",index=False); S.to_csv(outp/"challenger_b_2025_target_ledger_v1_188.csv",index=False)
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 manifest={"status":"EXECUTED_NOT_ACCEPTED","target_games":934,"eligible_predictions":len(X),"excluded_games":len(E),"target_population":{"FBS_VS_FBS":808,"FBS_VS_NONFBS":126,"REGULAR":879,"CONFERENCE_CHAMPIONSHIP":9,"POSTSEASON":46},"predictor_count":34,"fit_or_optimization_performed":False,"market_joined":False,"target_outcomes_joined":False,"source_chronology":"strictly earlier kickoff only","hashes":{}}
 for p in sorted(outp.iterdir()): manifest["hashes"][p.name]=sha(p)
