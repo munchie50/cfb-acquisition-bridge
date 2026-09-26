@@ -25,7 +25,7 @@ jobs:
           gh api repos/${{ github.repository }}/actions/artifacts/10894969326/zip > /tmp/m.zip
           unzip -q /tmp/m.zip -d miss
           for YEAR in {2016..2024}; do curl --fail --location --retry 3 --output "raw/pbp_${YEAR}.rds" "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"; done
-      - run: python scripts/phase4_challenger_b_corrected_features_v1_169.py hist raw old miss/missing_pbp_ledger_v1_165.csv out
+      - name: Compile producer before execution\n        run: python -m py_compile scripts/phase4_challenger_b_corrected_features_v1_169.py\n      - run: python scripts/phase4_challenger_b_corrected_features_v1_169.py hist raw old miss/missing_pbp_ledger_v1_165.csv out
       - uses: actions/upload-artifact@v4
         if: always()
         with: {name: cfb-phase4-challenger-b-corrected-features-v1-169, path: out/}
