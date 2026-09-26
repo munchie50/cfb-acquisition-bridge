@@ -1,0 +1,35 @@
+name: CFB Phase4 Challenger B Fit v1.183
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase4_challenger_b_fit_v1_183.py'
+      - '.github/workflows/phase4_challenger_b_fit_v1_183.yml'
+permissions: {contents: read, actions: read}
+jobs:
+  fit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install numpy pandas scipy
+      - name: Download accepted v1.179 dataset artifact
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          gh api repos/${{ github.repository }}/actions/artifacts/10896565577/zip > freeze.zip
+          echo "8eeb67f5da87df4a75f2f785838553679928e370eefeea3945f2b2e688e69780  freeze.zip" | sha256sum -c -
+          unzip -q freeze.zip
+      - name: Verify accepted dataset identity
+        run: |
+          echo "f8c479c83abf5dac3be6dcb4bba3d6a0996ae2623297a9a3514465824b7c4af8  challenger_b_dataset_v1_179.csv" | sha256sum -c -
+          echo "cf0b2e98dbee36b8f3b2f5b504e6024f1d097d1be9b99cb6356d273f6c1d7fa0  challenger_b_config_v1_179.json" | sha256sum -c -
+      - name: Compile gate
+        run: python -m py_compile scripts/phase4_challenger_b_fit_v1_183.py
+      - name: Fit authorized Challenger B
+        run: python scripts/phase4_challenger_b_fit_v1_183.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-phase4-challenger-b-fit-v1-183
+          path: phase4_challenger_b_fit_v1_183/
