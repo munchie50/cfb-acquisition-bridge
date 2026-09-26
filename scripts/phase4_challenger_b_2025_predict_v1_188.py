@@ -7,10 +7,10 @@ import pandas as pd, numpy as np, pyreadr
 schedp, raw_schedp, pbpp, fitp, outp = map(Path,sys.argv[1:6]); outp.mkdir(parents=True,exist_ok=True)
 S=pd.read_csv(schedp,dtype={"game_id":str}); S["start_date"]=pd.to_datetime(S.start_date,utc=True)
 REQS=["season","game_id","start_date","home_team","away_team","neutral_site","population_class","competition_class"]
-if set(S.columns)!=set(REQS) or len(S)!=880 or S.game_id.nunique()!=880 or S.game_id.duplicated().any(): raise SystemExit(f"target schedule identity cols={list(S.columns)} rows={len(S)} unique={S.game_id.nunique()}")
+if set(S.columns)!=set(REQS) or len(S)!=934 or S.game_id.nunique()!=880 or S.game_id.duplicated().any(): raise SystemExit(f"target schedule identity cols={list(S.columns)} rows={len(S)} unique={S.game_id.nunique()}")
 S=S[REQS].copy()
-if set(S.population_class.value_counts().to_dict().items())!={("FBS_VS_FBS",770),("FBS_VS_NONFBS",110)}: raise SystemExit("population class mismatch")
-if set(S.competition_class.value_counts().to_dict().items())!={("REGULAR",839),("CONFERENCE_CHAMPIONSHIP",10),("POSTSEASON",31)}: raise SystemExit("competition class mismatch")
+if set(S.population_class.value_counts().to_dict().items())!={("FBS_VS_FBS",808),("FBS_VS_NONFBS",126)}: raise SystemExit("population class mismatch")
+if set(S.competition_class.value_counts().to_dict().items())!={("REGULAR",879),("CONFERENCE_CHAMPIONSHIP",9),("POSTSEASON",46)}: raise SystemExit("competition class mismatch")
 bad=("point","score","winner","spread","moneyline","over_under","odds","bet","post_win","postgame","market")
 if any(any(x in c.lower() for x in bad) for c in S.columns): raise SystemExit("target outcome/market field")
 
@@ -71,7 +71,7 @@ for _,g in S.sort_values(["start_date","game_id"]).iterrows():
 X=pd.DataFrame(rows); E=pd.DataFrame(exclusions); A=pd.DataFrame(audit)
 pred=[p+f for f in features for p in ("home_","away_")]
 if len(pred)!=34 or (len(X) and (X[pred].isna().any(axis=None) or not np.isfinite(X[pred].to_numpy(float)).all())): raise SystemExit("predictor invariant")
-if len(X)+len(E)!=880 or set(X.game_id).intersection(set(E.game_id)): raise SystemExit("population accounting")
+if len(X)+len(E)!=934 or set(X.game_id).intersection(set(E.game_id)): raise SystemExit("population accounting")
 if len(A) and (not A.own_game_excluded.all() or not A.strict_chronology.all()): raise SystemExit("leakage audit")
 
 coef=pd.read_csv(fitp/"selected_coefficients.csv"); scale=pd.read_csv(fitp/"train_scaling.csv")
@@ -88,7 +88,7 @@ for kind,lam in [("margin",10),("total",100),("win",10)]:
 if len(X) and (not np.isfinite(X[["pred_margin","pred_total","pred_win"]]).all(axis=None) or not X.pred_win.between(0,1).all()): raise SystemExit("prediction invariant")
 X.to_csv(outp/"challenger_b_2025_fair_predictions_v1_188.csv",index=False); E.to_csv(outp/"challenger_b_2025_exclusions_v1_188.csv",index=False); A.to_csv(outp/"challenger_b_2025_chronology_audit_v1_188.csv",index=False); S.to_csv(outp/"challenger_b_2025_target_ledger_v1_188.csv",index=False)
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
-manifest={"status":"EXECUTED_NOT_ACCEPTED","target_games":880,"eligible_predictions":len(X),"excluded_games":len(E),"target_population":{"FBS_VS_FBS":770,"FBS_VS_NONFBS":110,"REGULAR":839,"CONFERENCE_CHAMPIONSHIP":10,"POSTSEASON":31},"predictor_count":34,"fit_or_optimization_performed":False,"market_joined":False,"target_outcomes_joined":False,"source_chronology":"strictly earlier kickoff only","hashes":{}}
+manifest={"status":"EXECUTED_NOT_ACCEPTED","target_games":934,"eligible_predictions":len(X),"excluded_games":len(E),"target_population":{"FBS_VS_FBS":808,"FBS_VS_NONFBS":126,"REGULAR":879,"CONFERENCE_CHAMPIONSHIP":9,"POSTSEASON":46},"predictor_count":34,"fit_or_optimization_performed":False,"market_joined":False,"target_outcomes_joined":False,"source_chronology":"strictly earlier kickoff only","hashes":{}}
 for p in sorted(outp.iterdir()): manifest["hashes"][p.name]=sha(p)
 (outp/"manifest_v1_188.json").write_text(json.dumps(manifest,indent=2,sort_keys=True)+"\n")
 print(json.dumps(manifest,indent=2))
