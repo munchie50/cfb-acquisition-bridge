@@ -6,7 +6,7 @@ import pandas as pd, numpy as np, pyreadr
 
 schedp, raw_schedp, pbpp, fitp, outp = map(Path,sys.argv[1:6]); outp.mkdir(parents=True,exist_ok=True)
 S=pd.read_csv(schedp,dtype={"game_id":str}); S["start_date"]=pd.to_datetime(S.start_date,utc=True)
-REQS=["season","game_id","start_date","home_team","away_team","neutral_site","population_class","competition_class"]
+REQS=["season","game_id","start_date","home_team","away_team","neutral_site","population_class"]
 if set(S.columns)!=set(REQS) or len(S)!=622 or S.game_id.nunique()!=622 or S.game_id.duplicated().any(): raise SystemExit(f"target schedule identity cols={list(S.columns)} rows={len(S)} unique={S.game_id.nunique()}")
 S=S[REQS].copy()
 if set(S.population_class.value_counts().to_dict().items())!={("FBS_VS_FBS",599),("FBS_VS_NONFBS",23)}: raise SystemExit("population class mismatch")
@@ -15,6 +15,14 @@ if any(any(x in c.lower() for x in bad) for c in S.columns): raise SystemExit("t
 
 # Quarantine layer: outcome-bearing source is never merged to target rows. Only strict-prior IDs are projected below.
 R=pd.read_parquet(raw_schedp); R["game_id"]=R.game_id.astype(str).str.replace(r"\\.0$","",regex=True); R["start_date"]=pd.to_datetime(R.start_date,utc=True)
+BASE2017=["Air Force","Akron","Alabama","Appalachian State","Arizona","Arizona State","Arkansas","Arkansas State","Army","Auburn","BYU","Ball State","Baylor","Boise State","Boston College","Bowling Green","Buffalo","California","Central Michigan","Charlotte","Cincinnati","Clemson","Coastal Carolina","Colorado","Colorado State","Duke","East Carolina","Eastern Michigan","FIU","Florida","Florida Atlantic","Florida State","Fresno State","Georgia","Georgia Southern","Georgia State","Georgia Tech","Hawaii","Houston","Idaho","Illinois","Indiana","Iowa","Iowa State","Kansas","Kansas State","Kent State","Kentucky","LSU","Louisiana","Louisiana Tech","Louisville","Marshall","Maryland","Memphis","Miami (FL)","Miami (OH)","Michigan","Michigan State","Middle Tennessee","Minnesota","Mississippi State","Missouri","NC State","Navy","Nebraska","Nevada","New Mexico","New Mexico State","North Carolina","North Texas","Northern Illinois","Northwestern","Notre Dame","Ohio","Ohio State","Oklahoma","Oklahoma State","Old Dominion","Ole Miss","Oregon","Oregon State","Penn State","Pittsburgh","Purdue","Rice","Rutgers","SMU","San Diego State","San Jose State","South Alabama","South Carolina","South Florida","Southern Miss","Stanford","Syracuse","TCU","Temple","Tennessee","Texas","Texas A&M","Texas State","Texas Tech","Toledo","Troy","Tulane","Tulsa","UAB","UCF","UCLA","UConn","UL Monroe","UMass","UNLV","USC","UTEP","UTSA","Utah","Utah State","Vanderbilt","Virginia","Virginia Tech","Wake Forest","Washington","Washington State","West Virginia","Western Kentucky","Western Michigan","Wisconsin","Wyoming"]
+m=set(BASE2017)
+for add,rem in [({"Liberty"},{"Idaho"}),({"James Madison"},set()),({"Jacksonville State","Sam Houston"},set()),({"Kennesaw State"},set()),({"Delaware","Missouri State"},set()),({"North Dakota State","Sacramento State"},set())]: m=(m|add)-rem
+aliases={"Hawai'i":"Hawaii","App State":"Appalachian State","San José State":"San Jose State","Massachusetts":"UMass","Florida International":"FIU","Miami":"Miami (FL)"}
+canon=lambda x: aliases.get(str(x),str(x))
+R=R[R.season.astype(int)==2026].copy()
+R["home_canonical"]=R.home_team.map(canon); R["away_canonical"]=R.away_team.map(canon)
+R=R[R.home_canonical.isin(m)|R.away_canonical.isin(m)].copy()
 P=next(iter(pyreadr.read_r(pbpp).values())); P["game_id"]=P.game_id.astype(str).str.replace(r"\\.0$","",regex=True)
 P["pos_team"]=P.pos_team.replace({"Savannah St":"Savannah State","St. Francis (PA)":"Saint Francis"})
 P["def_pos_team"]=P.def_pos_team.replace({"Savannah St":"Savannah State","St. Francis (PA)":"Saint Francis"})
@@ -50,10 +58,10 @@ def side_features(team,target_time,prior_ids):
 
 rows=[]; exclusions=[]; audit=[]; sideledger=[]
 for _,g in S.sort_values(["start_date","game_id"]).iterrows():
-    rec={"season":2026,"game_id":g.game_id,"start_date":g.start_date.isoformat(),"home_team":g.home_team,"away_team":g.away_team,"population_class":g.population_class,"competition_class":g.competition_class,"venue_state":"NEUTRAL" if bool(g.neutral_site) else "HOME"}
+    rec={"season":2026,"game_id":g.game_id,"start_date":g.start_date.isoformat(),"home_team":g.home_team,"away_team":g.away_team,"population_class":g.population_class,"venue_state":"NEUTRAL" if bool(g.neutral_site) else "HOME"}
     reasons=[]; sides={}
     for label,team in [("home",g.home_team),("away",g.away_team)]:
-        prior=S[(S.start_date<g.start_date)&((S.home_team==team)|(S.away_team==team))].sort_values("start_date")
+        prior=R[(R.start_date<g.start_date)&((R.home_team==team)|(R.away_team==team))].sort_values("start_date")
         ids=prior.game_id.tolist()
         if not ids:
             reasons.append(label+"_opening_no_prior")
