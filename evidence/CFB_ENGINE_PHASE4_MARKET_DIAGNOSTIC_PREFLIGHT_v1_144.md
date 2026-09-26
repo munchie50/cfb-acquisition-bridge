@@ -1,0 +1,40 @@
+# CFB Engine — Market Diagnostic Preflight v1.144
+
+Status: SOURCE/SEMANTIC RECOVERY REQUIRED BEFORE MARKET JOIN
+Parent: v1.143 prospective post-validation contract
+
+## Recovered authoritative boundary
+Curated dependency authority says:
+- current market consensus/benchmark prices require fresh web/market retrieval and timestamps;
+- execution sportsbook prices are separate from the benchmark layer and are authoritative for an actual wager only when Adam provides/confirms them;
+- a previously frozen fair line may remain a model artifact, but no actionable bet is valid without a current qualified comparison price.
+
+Repository search at the current frontier does not expose a frozen historical market-source/timestamp/vig/game-mapping contract suitable for retrospective 2023–2024 Challenger-A diagnostics.
+
+## Classification
+Do NOT fetch a convenient historical odds dataset and silently declare it equivalent. Historical market diagnostics are BLOCKED at source-semantic qualification, not at model execution.
+
+A valid historical diagnostic source must prospectively establish, before result inspection:
+1. provider/source and provenance;
+2. coverage population and missingness;
+3. exact timestamp semantics (opening/closing/snapshot);
+4. spread/total home-away sign conventions;
+5. moneyline/odds representation and vig-removal method where applicable;
+6. game identity and neutral-site mapping;
+7. handling of pushes, pick'em, stale/conflicting books and line moves;
+8. whether source values were actually available at the represented time;
+9. immutable fair-prediction join key so market data cannot feed back into Challenger A.
+
+Until recovered or newly qualified, historical market-relative evaluation remains OPEN.
+
+## Dependency consequence
+Because market diagnostics are source-blocked, the highest-value safe branch is 2025 holdout PREPARATION ONLY:
+- recover/generate predictor inputs using the already frozen Challenger-A rules;
+- do not read/join 2025 outcomes into model evaluation;
+- freeze exact 2025 prediction population and fair predictions before any outcome scoring;
+- independently audit leakage and candidate identity;
+- require a separate explicit checkpoint/authorization before scoring 2025 outcomes.
+
+This preflight does not itself authorize 2025 scoring.
+
+Locks unchanged: production v1 champion; Challenger A shadow; no market join; no TEST scoring; no promotion.
