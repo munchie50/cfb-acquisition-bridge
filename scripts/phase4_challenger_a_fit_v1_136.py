@@ -9,7 +9,7 @@ LAM=[0,0.0001,0.001,0.01,0.1,1,10,100]
 df=pd.read_csv(DATA,dtype={"game_id":str})
 cfg=json.load(open(CFG))
 if any(df.season==2025): raise SystemExit("2025 TEST exposure")
-features=cfg["numeric_predictor_order"]
+features=cfg["numeric_predictors"]
 if len(features)!=34 or df[features].isna().any().any(): raise SystemExit("bad predictor matrix")
 if any(any(x in c.lower() for x in ["spread","moneyline","over_under","market","odds"]) for c in features): raise SystemExit("market-like predictor")
 if not set(df.venue_state).issubset({"HOME","NEUTRAL"}): raise SystemExit("unknown venue")
