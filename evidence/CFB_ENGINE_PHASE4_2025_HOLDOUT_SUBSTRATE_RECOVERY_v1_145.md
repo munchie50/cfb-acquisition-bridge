@@ -49,3 +49,9 @@ If executable ancestry is recoverable:
 If exact executable ancestry is not recoverable, preserve the blocker and do not reconstruct feature semantics from observed 2025 outcomes.
 
 Locks unchanged: production v1 champion; Challenger A shadow; 2025 TEST unscored; no market join; no promotion.
+
+
+## Direct producer readback clarification
+The frozen v1.109 and v1.115 producer scripts and workflows were subsequently read back directly. Both explicitly restrict schedule/PBP execution to 2016–2024 and hard-fail on 2025 in the accepted development path. Both compute same-season cumulative prior-game features. Therefore a 2025 holdout substrate requires a new execution wrapper/extension that preserves the exact feature definitions while proving each target row uses only strictly earlier 2025 games; it cannot be treated as a trivial filter of existing accepted artifacts.
+
+A qualified 2025 schedule projection must expose only game identity/start-time/home-away/neutral metadata to prediction construction. Score/outcome fields must be stripped or inaccessible until the prediction freeze is durably persisted and independently audited.
