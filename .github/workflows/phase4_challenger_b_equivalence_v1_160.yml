@@ -1,0 +1,43 @@
+name: CFB Phase4 Challenger B Producer Equivalence v1.160
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase4_challenger_b_equivalence_v1_160.py'
+      - '.github/workflows/phase4_challenger_b_equivalence_v1_160.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  equivalence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install R and Python deps
+        run: |
+          sudo apt-get update && sudo apt-get install -y r-base
+          pip install --disable-pip-version-check pandas numpy
+      - name: Acquire original TRAIN VALIDATION PBP
+        run: |
+          mkdir -p raw old fresh out
+          for YEAR in {2016..2024}; do curl --fail --location --retry 3 --output "raw/pbp_${YEAR}.rds" "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"; done
+      - name: Download accepted artifacts
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          gh api repos/${{ github.repository }}/actions/artifacts/10890704969/zip > /tmp/v109.zip
+          gh api repos/${{ github.repository }}/actions/artifacts/10891634424/zip > /tmp/v115.zip
+          unzip -q /tmp/v109.zip -d old
+          unzip -q /tmp/v115.zip -d old
+      - name: Fresh frozen producer execution
+        run: |
+          (cd fresh && Rscript ../scripts/phase4_feature_canary_v1_109.R ../raw ../evidence/phase4_qualified_schedule_2016_2024.csv)
+          (cd fresh && Rscript ../scripts/phase4_derived_feature_canary_v1_115.R ../raw ../evidence/phase4_qualified_schedule_2016_2024.csv)
+      - name: Exact numerical equivalence audit
+        run: python scripts/phase4_challenger_b_equivalence_v1_160.py old fresh out
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-phase4-challenger-b-equivalence-v1-160
+          path: out/
