@@ -25,7 +25,8 @@ assert set(A.game_id)==set(Q.game_id) and len(Q)==793
 # Frozen prediction values must survive scoring byte-for-value after CSV parse.
 for c in ["pred_margin","pred_total","pred_win"]:
     z=Q.set_index("game_id").loc[P.game_id,c].to_numpy(float)
-    d=np.abs(z-P[c].to_numpy(float))\n    assert np.allclose(z,P[c].to_numpy(float),rtol=0,atol=1e-12), (c,float(d.max()))
+    d=np.abs(z-P[c].to_numpy(float))
+    assert np.allclose(z,P[c].to_numpy(float),rtol=0,atol=1e-12), (c,float(d.max()))
 for c in ["actual_margin","actual_total","actual_home_win"]:
     z=Q.set_index("game_id").loc[A.game_id,c].to_numpy(float)
     assert np.array_equal(z,A[c].to_numpy(float))
@@ -47,5 +48,6 @@ report={"status":"PASS","target_games":934,"scored_predictions":793,"frozen_excl
 "target_key_exact":True,"outcomes_complete":True,"prediction_values_numerically_unchanged_at_1e_12":True,
 "metrics_independently_recomputed":True,"scoring_artifact_hashes_reproduced":True,"metrics":metrics,
 "market_joined":False,"refit_performed":False,"recalibration_performed":False,"redesign_performed":False}
-(out/"acceptance_v1_197.json").write_text(json.dumps(report,indent=2,sort_keys=True)+"\n")
+(out/"acceptance_v1_197.json").write_text(json.dumps(report,indent=2,sort_keys=True)+"
+")
 print(json.dumps(report,indent=2))
