@@ -1,0 +1,25 @@
+name: CFB Phase4 Challenger B Population Invariants v1.164
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/phase4_challenger_b_population_invariants_v1_164.yml']
+  workflow_dispatch:
+permissions: {contents: read, actions: read}
+jobs:
+  invariants:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas
+      - name: Get accepted v1.157 population
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir population
+          gh api repos/${{ github.repository }}/actions/artifacts/10893997859/zip > /tmp/p.zip
+          unzip -q /tmp/p.zip -d population
+      - run: python scripts/phase4_challenger_b_population_invariants_v1_164.py population out
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: cfb-phase4-challenger-b-population-invariants-v1-164, path: out/}
