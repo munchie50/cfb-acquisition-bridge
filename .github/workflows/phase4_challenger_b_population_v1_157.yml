@@ -1,0 +1,32 @@
+name: CFB Phase4 Challenger B Population v1.157
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase4_challenger_b_population_v1_157.py'
+      - '.github/workflows/phase4_challenger_b_population_v1_157.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  population:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas pyarrow
+      - name: Acquire current source-lineage schedules
+        run: |
+          mkdir raw
+          for y in $(seq 2016 2025); do
+            curl --fail --location --retry 3 -o raw/cfb_schedules_${y}.parquet "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_${y}.parquet"
+            test -s raw/cfb_schedules_${y}.parquet
+          done
+      - name: Build and enforce population conformance
+        run: python scripts/phase4_challenger_b_population_v1_157.py raw out_v1_157
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-phase4-challenger-b-population-v1-157
+          path: out_v1_157/
