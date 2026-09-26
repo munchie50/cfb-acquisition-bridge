@@ -23,7 +23,7 @@ jobs:
       - name: Acquire same-lineage historical schedules and project scores
         run: |
           for YEAR in {2016..2024}; do
-            curl --fail --location --retry 3 --output "source/cfb_schedules_${YEAR}.parquet" "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_schedules/cfb_schedules_${YEAR}.parquet"
+            curl --fail --location --retry 3 --output "source/cfb_schedules_${YEAR}.parquet" "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_${YEAR}.parquet"
           done
           python - <<'PY'
           import pandas as pd
