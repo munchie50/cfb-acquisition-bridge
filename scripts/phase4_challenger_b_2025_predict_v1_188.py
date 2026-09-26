@@ -74,12 +74,16 @@ if len(pred)!=34 or (len(X) and (X[pred].isna().any(axis=None) or not np.isfinit
 if len(X)+len(E)!=934 or set(X.game_id).intersection(set(E.game_id)): raise SystemExit("population accounting")
 if len(A) and (not A.own_game_excluded.all() or not A.strict_chronology.all()): raise SystemExit("leakage audit")
 
-coef=pd.read_csv(fitp/"selected_coefficients.csv"); scale=pd.read_csv(fitp/"train_scaling.csv")
+coefp=fitp/"selected_coefficients.csv"; scalep=fitp/"train_scaling.csv"
+def filesha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+if filesha(coefp)!="bf15ce41180bfb4e250d311df279e98c13b65432756ae07f7a30264cbae0e221": raise SystemExit("coefficient file hash identity")
+if filesha(scalep)!="68fb5193ccb8828ac8d34dfe820101181c2bde078a04a6d5afd4c08bcf0cab45": raise SystemExit("scaling file hash identity")
+coef=pd.read_csv(coefp); scale=pd.read_csv(scalep)
 if len(scale)!=34 or set(scale.feature)!=set(pred): raise SystemExit("scaling identity")
 Z=(X[pred].to_numpy(float)-scale.set_index("feature").loc[pred,"mean"].to_numpy(float))/scale.set_index("feature").loc[pred,"sd"].to_numpy(float)
 Z=np.c_[Z,(X.venue_state=="NEUTRAL").astype(float).to_numpy()]
 names=["intercept"]+pred+["venue_neutral"]
-for kind,lam in [("margin",10),("total",100),("win",10)]:
+for kind,lam in [("margin",0.1),("total",0.1),("win",0.01)]:
     c=coef[(coef.target==kind)&(coef["lambda"]==lam)].set_index("term")
     if set(c.index)!=set(names): raise SystemExit("coefficient identity")
     w=c.loc[names,"coefficient"].to_numpy(float); q=np.c_[np.ones(len(Z)),Z]@w
