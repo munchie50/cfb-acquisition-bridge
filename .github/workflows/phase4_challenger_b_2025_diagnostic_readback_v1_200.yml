@@ -1,0 +1,30 @@
+name: CFB Phase4 Challenger B 2025 Diagnostic Readback v1.200
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase4_challenger_b_2025_diagnostic_readback_v1_200.py'
+      - '.github/workflows/phase4_challenger_b_2025_diagnostic_readback_v1_200.yml'
+  workflow_dispatch:
+permissions: {contents: read, actions: read}
+jobs:
+  readback:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas
+      - name: Acquire accepted scoring artifact
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir scored out
+          gh api repos/${{ github.repository }}/actions/artifacts/10897190974/zip > /tmp/scored.zip
+          echo "d2b27f45b3e83ac014676702873424a416faac9613a5c767de97a0feb83085db  /tmp/scored.zip" | sha256sum -c -
+          unzip -q /tmp/scored.zip -d scored
+      - run: python -m py_compile scripts/phase4_challenger_b_2025_diagnostic_readback_v1_200.py
+      - run: python scripts/phase4_challenger_b_2025_diagnostic_readback_v1_200.py scored out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-phase4-challenger-b-2025-diagnostic-readback-v1-200
+          path: out/
