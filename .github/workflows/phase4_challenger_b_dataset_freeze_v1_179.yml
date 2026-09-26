@@ -1,0 +1,36 @@
+name: CFB Phase4 Challenger B Dataset Freeze v1.179
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase4_challenger_b_dataset_freeze_v1_179.py'
+      - '.github/workflows/phase4_challenger_b_dataset_freeze_v1_179.yml'
+permissions: {contents: read, actions: read}
+jobs:
+  freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas
+      - name: Acquire accepted corrected features and historical schedule
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir features schedule
+          gh api repos/${{ github.repository }}/actions/artifacts/10895523493/zip > /tmp/f.zip
+          echo "702930b2ba905c9f917acbc627d12342e8190cfb44a4c8afd1aee49fbf59e239  /tmp/f.zip" | sha256sum -c -
+          unzip -q /tmp/f.zip -d features
+          gh api repos/${{ github.repository }}/actions/artifacts/10895405612/zip > /tmp/s.zip
+          unzip -q /tmp/s.zip -d schedule
+      - name: Compile gate
+        run: python -m py_compile scripts/phase4_challenger_b_dataset_freeze_v1_179.py
+      - name: Freeze corrected dataset
+        run: python scripts/phase4_challenger_b_dataset_freeze_v1_179.py features schedule out
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-phase4-challenger-b-dataset-freeze-v1-179
+          path: out/
