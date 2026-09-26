@@ -3,7 +3,8 @@
 import sys,json
 from pathlib import Path
 import pandas as pd, pyreadr, numpy as np
-hist,raw,old,miss,out=map(Path,sys.argv[1:6]); out.mkdir(parents=True,exist_ok=True)\nmissing_ids=set(pd.read_csv(miss,dtype={"game_id":str}).game_id)
+hist,raw,old,miss,out=map(Path,sys.argv[1:6]); out.mkdir(parents=True,exist_ok=True)
+missing_ids=set(pd.read_csv(miss,dtype={"game_id":str}).game_id)
 mech_parts=[]; der_parts=[]
 def one(s): return s.fillna(0).eq(1)
 for y in range(2016,2025):
@@ -81,7 +82,8 @@ mf=pd.concat(mech,ignore_index=True); df=pd.concat(der,ignore_index=True)
 ledger=mraw[key+["start_date","population_class","competition_class"]].merge(mf[key+["qualified_prior_games","missing_prior_mechanical_source_games","mechanical_history_complete","own_pbp_game_present","own_mechanical_primitive_complete"]],on=key).merge(df[key+["missing_prior_derived_source_games","derived_history_complete","own_derived_primitive_complete"]],on=key)
 legacy=pd.read_csv(old/"phase4_feature_canary_v1_109.csv",dtype={"game_id":str}); legacy_ids=set(legacy.game_id)
 ledger["newly_admitted_v1_158"]=~ledger.game_id.isin(legacy_ids)
-assert ledger.game_id.nunique()==7701 and ledger.loc[ledger.newly_admitted_v1_158,"game_id"].nunique()==1342\nassert ledger.loc[~ledger.own_pbp_game_present,"game_id"].nunique()==45 and (~ledger.own_pbp_game_present).sum()==90
+assert ledger.game_id.nunique()==7701 and ledger.loc[ledger.newly_admitted_v1_158,"game_id"].nunique()==1342
+assert ledger.loc[~ledger.own_pbp_game_present,"game_id"].nunique()==45 and (~ledger.own_pbp_game_present).sum()==90
 opening=ledger.qualified_prior_games.eq(0)
 by=[]
 for (season,pc),z in ledger.groupby(["season","population_class"]):
@@ -93,4 +95,5 @@ manifest={"status":"DIAGNOSTIC_COMPLETE","target_games":7701,"target_team_sides"
 mraw.to_csv(out/"challenger_b_mechanical_primitives_v1_168.csv",index=False); mf.to_csv(out/"challenger_b_mechanical_features_v1_168.csv",index=False)
 draw.to_csv(out/"challenger_b_derived_primitives_v1_168.csv",index=False); df.to_csv(out/"challenger_b_derived_features_v1_168.csv",index=False)
 ledger.to_csv(out/"challenger_b_feature_eligibility_ledger_v1_168.csv",index=False)
-(out/"manifest_v1_168.json").write_text(json.dumps(manifest,indent=2)+"\n"); print(json.dumps(manifest,indent=2))
+(out/"manifest_v1_168.json").write_text(json.dumps(manifest,indent=2)+"
+"); print(json.dumps(manifest,indent=2))
