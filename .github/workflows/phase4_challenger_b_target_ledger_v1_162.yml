@@ -1,0 +1,29 @@
+name: CFB Phase4 Challenger B Target Ledger v1.162
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/phase4_challenger_b_target_ledger_v1_162.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  ledger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas
+      - name: Download accepted v1.157 population
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          gh api repos/${{ github.repository }}/actions/artifacts/10893997859/zip > /tmp/p.zip
+          mkdir population && unzip -q /tmp/p.zip -d population
+      - name: Build explicit target ledger
+        run: python scripts/phase4_challenger_b_target_ledger_v1_162.py population out_v1_162
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-phase4-challenger-b-target-ledger-v1-162
+          path: out_v1_162/
