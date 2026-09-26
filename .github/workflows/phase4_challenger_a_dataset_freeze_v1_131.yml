@@ -16,7 +16,7 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
-      - name: Download accepted feature artifacts
+      - name: Install Python dependency\n        run: python -m pip install pandas\n      - name: Download accepted feature artifacts
         run: |
           curl -L --fail -H "Authorization: Bearer ${{ github.token }}" -H "Accept: application/vnd.github+json" -o v109.zip https://api.github.com/repos/${{ github.repository }}/actions/artifacts/10890704969/zip
           curl -L --fail -H "Authorization: Bearer ${{ github.token }}" -H "Accept: application/vnd.github+json" -o v115.zip https://api.github.com/repos/${{ github.repository }}/actions/artifacts/10891634424/zip
