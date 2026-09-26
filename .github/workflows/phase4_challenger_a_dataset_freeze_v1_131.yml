@@ -1,0 +1,28 @@
+name: CFB Phase4 Challenger A Dataset Freeze v1.131
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download accepted feature artifacts
+        run: |
+          curl -L --fail -H "Authorization: Bearer ${{ github.token }}" -H "Accept: application/vnd.github+json" -o v109.zip https://api.github.com/repos/${{ github.repository }}/actions/artifacts/10890704969/zip
+          curl -L --fail -H "Authorization: Bearer ${{ github.token }}" -H "Accept: application/vnd.github+json" -o v115.zip https://api.github.com/repos/${{ github.repository }}/actions/artifacts/10891634424/zip
+          mkdir v109 v115
+          unzip -q v109.zip -d v109
+          unzip -q v115.zip -d v115
+      - name: Build frozen dataset
+        run: python scripts/phase4_challenger_a_dataset_freeze_v1_131.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-phase4-challenger-a-dataset-freeze-v1-131
+          path: |
+            phase4_challenger_a_dataset_v1_131.csv
+            phase4_challenger_a_exclusion_ledger_v1_131.csv
+            phase4_challenger_a_config_v1_131.json
+            phase4_challenger_a_manifest_v1_131.json
