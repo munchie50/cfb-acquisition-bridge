@@ -34,6 +34,7 @@ for y in range(2016,2025):
  h=s.assign(team=s.home_team,venue=np.where(s.neutral_site,"NEUTRAL","HOME"),game_points_for=s.home_points,game_points_against=s.away_points)
  a=s.assign(team=s.away_team,venue=np.where(s.neutral_site,"NEUTRAL","AWAY"),game_points_for=s.away_points,game_points_against=s.home_points)
  t=pd.concat([h,a],ignore_index=True)
+ t["pbp_game_present"]=~t.game_id.isin(missing_ids)
  mm=t.merge(mp,on=["game_id","team"],how="left",validate="one_to_one")
  dm=t.merge(dp,on=["game_id","team"],how="left",validate="one_to_one")
  mech_req=["off_plays","off_yards","rush_plays","pass_plays","rush_yards","pass_yards","pass_attempts","interceptions","def_plays","def_yards"]
