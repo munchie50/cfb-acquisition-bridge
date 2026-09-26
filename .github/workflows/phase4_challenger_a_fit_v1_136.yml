@@ -1,0 +1,33 @@
+name: CFB Phase4 Challenger A Fit v1.136
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase4_challenger_a_fit_v1_136.py'
+      - '.github/workflows/phase4_challenger_a_fit_v1_136.yml'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  fit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: python -m pip install numpy pandas scipy
+      - name: Download accepted v1.131 dataset artifact
+        run: |
+          curl -L --fail -H "Authorization: Bearer ${{ github.token }}" -H "Accept: application/vnd.github+json" -o freeze.zip https://api.github.com/repos/${{ github.repository }}/actions/artifacts/10893287560/zip
+          unzip -q freeze.zip
+      - name: Verify accepted dataset identity
+        run: |
+          echo "17939728b9939e9b2b2f11f02da0b449656c0a01034c954d4e5d0f6655509053  phase4_challenger_a_dataset_v1_131.csv" | sha256sum -c -
+          echo "fbcca938b75d3c151cd8ad8547c24ddecc6bd86b02030495d65da240a6df63a7  phase4_challenger_a_config_v1_131.json" | sha256sum -c -
+      - name: Fit authorized Challenger A
+        run: python scripts/phase4_challenger_a_fit_v1_136.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-phase4-challenger-a-fit-v1-136
+          path: phase4_challenger_a_fit_v1_136/
