@@ -1,0 +1,35 @@
+name: CFB Phase4 Challenger B 2025 Prediction Acceptance v1.189
+on:
+  workflow_dispatch:
+permissions: {contents: read, actions: read}
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas numpy
+      - name: Acquire exact producer and accepted authorities
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir producer schedule fit audit
+          gh api repos/${{ github.repository }}/actions/artifacts/10896494289/zip > /tmp/producer.zip
+          echo "386facc0452a2a8a4914d178cac6dc0c75db4bc30ff8f023c212f8eaac678038  /tmp/producer.zip" | sha256sum -c -
+          unzip -q /tmp/producer.zip -d producer
+          gh api repos/${{ github.repository }}/actions/artifacts/10893997859/zip > /tmp/schedule.zip
+          echo "e6d8b794dda56535fcabe4c479444c600325fedb00e0186afe0a031f7a74263a  /tmp/schedule.zip" | sha256sum -c -
+          unzip -q /tmp/schedule.zip -d schedule
+          gh api repos/${{ github.repository }}/actions/artifacts/10895838069/zip > /tmp/fit.zip
+          echo "3a2cabfcd37e0bcf0cae85efc77eaa6755ffb12734d1e48c4c582ed1de375587  /tmp/fit.zip" | sha256sum -c -
+          unzip -q /tmp/fit.zip -d fit
+      - name: Compile independent auditor
+        run: python -m py_compile scripts/phase4_challenger_b_2025_prediction_acceptance_audit_v1_189.py
+      - name: Independently audit frozen predictions
+        run: python scripts/phase4_challenger_b_2025_prediction_acceptance_audit_v1_189.py producer schedule/challenger_b_schedule_2025_v1_157.csv fit audit
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-phase4-challenger-b-2025-prediction-acceptance-v1-189
+          path: audit/
