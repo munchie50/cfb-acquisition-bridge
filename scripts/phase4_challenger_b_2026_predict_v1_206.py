@@ -4,7 +4,7 @@ import sys,json,hashlib,os
 from pathlib import Path
 import pandas as pd, numpy as np, pyreadr
 
-schedp, raw_schedp, pbpp, fitp, outp = map(Path,sys.argv[1:6]); outp.mkdir(parents=True,exist_ok=True)
+schedp, raw_schedp, pbpp, fitp, outp = map(Path,sys.argv[1:6]); cutoff=pd.Timestamp(sys.argv[6]); outp.mkdir(parents=True,exist_ok=True)
 S=pd.read_csv(schedp,dtype={"game_id":str}); S["start_date"]=pd.to_datetime(S.start_date,utc=True)
 REQS=["season","game_id","start_date","home_team","away_team","neutral_site","population_class"]
 if set(S.columns)!=set(REQS) or len(S)!=622 or S.game_id.nunique()!=622 or S.game_id.duplicated().any(): raise SystemExit(f"target schedule identity cols={list(S.columns)} rows={len(S)} unique={S.game_id.nunique()}")
@@ -61,7 +61,7 @@ for _,g in S.sort_values(["start_date","game_id"]).iterrows():
     rec={"season":2026,"game_id":g.game_id,"start_date":g.start_date.isoformat(),"home_team":g.home_team,"away_team":g.away_team,"population_class":g.population_class,"venue_state":"NEUTRAL" if bool(g.neutral_site) else "HOME"}
     reasons=[]; sides={}
     for label,team in [("home",g.home_team),("away",g.away_team)]:
-        prior=R[(R.start_date<g.start_date)&((R.home_team==team)|(R.away_team==team))].sort_values("start_date")
+        prior=R[(R.start_date<cutoff)&(R.start_date<g.start_date)&((R.home_team==team)|(R.away_team==team))].sort_values("start_date")
         ids=prior.game_id.tolist()
         if not ids:
             reasons.append(label+"_opening_no_prior")
@@ -107,7 +107,7 @@ for kind,lam in [("margin",0.1),("total",0.1),("win",0.01)]:
 if len(X) and (not np.isfinite(X[["pred_margin","pred_total","pred_win"]]).all(axis=None) or not X.pred_win.between(0,1).all()): raise SystemExit("prediction invariant")
 X.to_csv(outp/"challenger_b_2026_fair_predictions_v1_206.csv",index=False); E.to_csv(outp/"challenger_b_2026_exclusions_v1_206.csv",index=False); A.to_csv(outp/"challenger_b_2026_chronology_audit_v1_206.csv",index=False); L.to_csv(outp/"challenger_b_2026_feature_eligibility_ledger_v1_206.csv",index=False); S.to_csv(outp/"challenger_b_2026_target_ledger_v1_206.csv",index=False)
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
-manifest={"status":"EXECUTED_NOT_ACCEPTED","target_games":622,"eligible_predictions":len(X),"excluded_games":len(E),"target_population":{"FBS_VS_FBS":599,"FBS_VS_NONFBS":23},"predictor_count":34,"fit_or_optimization_performed":False,"market_joined":False,"target_outcomes_joined":False,"source_chronology":"strictly earlier kickoff only","hashes":{}}
+manifest={"status":"EXECUTED_NOT_ACCEPTED","target_games":622,"eligible_predictions":len(X),"excluded_games":len(E),"target_population":{"FBS_VS_FBS":599,"FBS_VS_NONFBS":23},"predictor_count":34,"fit_or_optimization_performed":False,"market_joined":False,"target_outcomes_joined":False,"source_chronology":"strictly before frozen execution cutoff and target kickoff","cutoff_utc":cutoff.isoformat(),"hashes":{}}
 for p in sorted(outp.iterdir()): manifest["hashes"][p.name]=sha(p)
 (outp/"manifest_v1_206.json").write_text(json.dumps(manifest,indent=2,sort_keys=True)+"\n")
 print(json.dumps(manifest,indent=2))
