@@ -1,0 +1,34 @@
+name: CFB Phase4 Challenger B 2026 Source Preflight v1.204
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase4_challenger_b_2026_source_preflight_v1_204.py'
+      - '.github/workflows/phase4_challenger_b_2026_source_preflight_v1_204.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas pyarrow pyreadr
+      - name: Acquire current quarantined 2026 sources
+        run: |
+          mkdir raw out
+          curl --fail --location --retry 3 -o raw/cfb_schedules_2026.parquet "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_2026.parquet"
+          curl --fail --location --retry 3 -o raw/pbp_2026.rds "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2026.rds"
+          test -s raw/cfb_schedules_2026.parquet
+          test -s raw/pbp_2026.rds
+          sha256sum raw/*
+      - run: python -m py_compile scripts/phase4_challenger_b_2026_source_preflight_v1_204.py
+      - name: Freeze source preflight and cutoff
+        run: python scripts/phase4_challenger_b_2026_source_preflight_v1_204.py raw/cfb_schedules_2026.parquet raw/pbp_2026.rds out
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-phase4-challenger-b-2026-source-preflight-v1-204
+          path: out/
