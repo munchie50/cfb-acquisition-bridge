@@ -1,0 +1,31 @@
+name: CFB Phase4 Challenger B 2026 Exclusion Diagnostic v1.209
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase4_challenger_b_2026_exclusion_diagnostic_v1_209.py'
+      - '.github/workflows/phase4_challenger_b_2026_exclusion_diagnostic_v1_209.yml'
+permissions: {contents: read, actions: read}
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas pyarrow
+      - env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir art raw out
+          gh api repos/${{ github.repository }}/actions/artifacts/10897612260/zip > /tmp/a.zip
+          echo "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf  /tmp/a.zip" | sha256sum -c -
+          unzip -q /tmp/a.zip -d art
+          curl --fail --location --retry 3 -o raw/s.parquet "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_2026.parquet"
+          echo "5b2ff52996862b06b67309f1ebc27742e55c279ff4785c7a942915cdf820f1b1  raw/s.parquet" | sha256sum -c -
+      - run: python -m py_compile scripts/phase4_challenger_b_2026_exclusion_diagnostic_v1_209.py
+      - run: python scripts/phase4_challenger_b_2026_exclusion_diagnostic_v1_209.py art raw/s.parquet out
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-phase4-challenger-b-2026-exclusion-diagnostic-v1-209
+          path: out/
