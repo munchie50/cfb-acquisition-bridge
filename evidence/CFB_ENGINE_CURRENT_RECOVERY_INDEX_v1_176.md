@@ -12,6 +12,13 @@ This is the current recovery entry point. It supersedes v1.99 **as an entry-poin
 2. `CFB_ENGINE_PHASE4_CHALLENGER_B_CORRECTED_FEATURE_ACCEPTANCE_v1_173.md` — substantive corrected-feature acceptance.
 3. `CFB_ENGINE_SEMANTIC_CANARY_TRIGGER_SCOPE_MAINTENANCE_v1_175.md` — current semantic-canary execution policy.
 
+## Current routine authority
+- Production/master routine: **v5**, promoted by v1.103.
+- Stable fallback routine: **v4**, frozen unchanged.
+- Candidate/test routine: **v6**.
+- Mandatory active controls alongside production v5: v1.132 learning-enforcement rule and v1.133 execution controls.
+- Historical statements that v4 is production / v5 is test (including v1.99) are superseded for current routine governance.
+
 ## Current state in one paragraph
 Corrected Challenger-B 2016–2024 population and feature substrate are accepted at 7,701 games / 15,402 team-sides. The accepted v1.172 feature artifact retains exactly 45 authoritative PBP-missing games, resolves the two proven raw-PBP alias families, has zero PBP-present primitive incompletes, and passed strict-prior chronology/target-exclusion audit. Production v1 remains champion/fallback. Challenger-B fitting/scoring is not authorized. 2025 TEST remains protected/unscored; no market join or production promotion is authorized.
 
