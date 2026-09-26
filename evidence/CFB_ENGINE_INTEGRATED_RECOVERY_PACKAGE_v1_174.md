@@ -1,6 +1,6 @@
 # CFB Engine — Integrated Recovery Package v1.174
 
-Status: **CURRENT FRONTIER RECOVERY AUTHORITY / REPOSITORY READBACK REQUIRED**
+Status: **CURRENT FRONTIER RECOVERY AUTHORITY / REPOSITORY READBACK VERIFIED**
 Parent substantive acceptance: v1.173
 Supersedes for current-frontier recovery: v1.142 integrated recovery package.
 Historical packages remain preserved and are not invalidated.
