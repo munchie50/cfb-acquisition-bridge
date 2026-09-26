@@ -92,8 +92,8 @@ manifest={"status":"DIAGNOSTIC_COMPLETE","target_games":7701,"target_team_sides"
 "opening_no_prior_team_sides":int(opening.sum()),"own_pbp_missing_games":int(ledger.loc[~ledger.own_pbp_game_present,"game_id"].nunique()),"own_pbp_missing_team_sides":int((~ledger.own_pbp_game_present).sum()),"team_side_primitive_unmaterialized_with_pbp_present":int((ledger.own_pbp_game_present & ~ledger.own_mechanical_primitive_complete).sum()),
 "mechanical_history_incomplete_team_sides":int((~ledger.mechanical_history_complete).sum()),"derived_history_incomplete_team_sides":int((~ledger.derived_history_complete).sum()),
 "by_season_population_class":by,"2025_accessed":False,"fit_or_score":False}
-mraw.to_csv(out/"challenger_b_mechanical_primitives_v1_168.csv",index=False); mf.to_csv(out/"challenger_b_mechanical_features_v1_168.csv",index=False)
-draw.to_csv(out/"challenger_b_derived_primitives_v1_168.csv",index=False); df.to_csv(out/"challenger_b_derived_features_v1_168.csv",index=False)
-ledger.to_csv(out/"challenger_b_feature_eligibility_ledger_v1_168.csv",index=False)
+mraw.to_csv(out/"challenger_b_mechanical_primitives_v1_169.csv",index=False); mf.to_csv(out/"challenger_b_mechanical_features_v1_169.csv",index=False)
+draw.to_csv(out/"challenger_b_derived_primitives_v1_169.csv",index=False); df.to_csv(out/"challenger_b_derived_features_v1_169.csv",index=False)
+ledger.to_csv(out/"challenger_b_feature_eligibility_ledger_v1_169.csv",index=False)
 (out/"manifest_v1_168.json").write_text(json.dumps(manifest,indent=2)+"
 "); print(json.dumps(manifest,indent=2))
