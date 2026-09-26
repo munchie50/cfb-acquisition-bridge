@@ -1,5 +1,10 @@
 name: CFB Phase4 Challenger B 2025 Prediction Acceptance v1.189
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/phase4_challenger_b_2025_prediction_acceptance_v1_189.yml'
+      - 'scripts/phase4_challenger_b_2025_prediction_acceptance_audit_v1_189.py'
   workflow_dispatch:
 permissions: {contents: read, actions: read}
 jobs:
