@@ -1,0 +1,44 @@
+name: CFB Phase4 Challenger B 2026 Prospective Predictions v1.206
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase4_challenger_b_2026_predict_v1_206.py'
+      - '.github/workflows/phase4_challenger_b_2026_predict_v1_206.yml'
+  workflow_dispatch:
+permissions: {contents: read, actions: read}
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas numpy pyarrow pyreadr
+      - name: Acquire immutable target preflight and frozen fit
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir preflight fit raw out
+          gh api repos/${{ github.repository }}/actions/artifacts/10897001956/zip > /tmp/preflight.zip
+          echo "4dc70419b9aa3afdfa2570861490598da69b2bccfed878e438dc17b69a9a7ea8  /tmp/preflight.zip" | sha256sum -c -
+          unzip -q /tmp/preflight.zip -d preflight
+          gh api repos/${{ github.repository }}/actions/artifacts/10895838069/zip > /tmp/fit.zip
+          echo "3a2cabfcd37e0bcf0cae85efc77eaa6755ffb12734d1e48c4c582ed1de375587  /tmp/fit.zip" | sha256sum -c -
+          unzip -q /tmp/fit.zip -d fit
+      - name: Reacquire exact frozen source bytes
+        run: |
+          curl --fail --location --retry 3 -o raw/cfb_schedules_2026.parquet "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_2026.parquet"
+          curl --fail --location --retry 3 -o raw/pbp_2026.rds "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2026.rds"
+          echo "5b2ff52996862b06b67309f1ebc27742e55c279ff4785c7a942915cdf820f1b1  raw/cfb_schedules_2026.parquet" | sha256sum -c -
+          echo "81e38e7e874d249300bb108de0029a8ffb0b19c31cfea6e7aafab5507115e5da  raw/pbp_2026.rds" | sha256sum -c -
+      - run: python -m py_compile scripts/phase4_challenger_b_2026_predict_v1_206.py
+      - name: Produce first prospective live-shadow freeze
+        run: |
+          CUTOFF=$(python -c 'import json; print(json.load(open("preflight/preflight_v1_204.json"))["cutoff_utc"])')
+          python scripts/phase4_challenger_b_2026_predict_v1_206.py preflight/challenger_b_2026_future_target_projection_v1_204.csv raw/cfb_schedules_2026.parquet raw/pbp_2026.rds fit out "$CUTOFF"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-phase4-challenger-b-2026-prospective-predictions-v1-206
+          path: out/
