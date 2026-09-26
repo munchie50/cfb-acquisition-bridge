@@ -1,8 +1,15 @@
 name: CFB Phase4 Challenger A Dataset Freeze v1.131
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase4_challenger_a_dataset_freeze_v1_131.py'
+      - 'evidence/phase4_qualified_schedule_2016_2024.csv'
+      - '.github/workflows/phase4_challenger_a_dataset_freeze_v1_131.yml'
 permissions:
   contents: read
+  actions: read
 jobs:
   freeze:
     runs-on: ubuntu-latest
