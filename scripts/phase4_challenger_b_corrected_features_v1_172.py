@@ -12,7 +12,10 @@ for y in range(2016,2025):
  s["start_date"]=pd.to_datetime(s.start_date,utc=True)
  p=next(iter(pyreadr.read_r(raw/f"pbp_{y}.rds").values()))
  p["game_id"]=p.game_id.astype(str).str.replace(r"\.0$","",regex=True)
- p=p[p.game_id.isin(set(s.game_id))].copy()\n # v1.171 proved exact raw-PBP aliases for these schedule identities.\n p["pos_team"]=p.pos_team.replace({"Savannah St":"Savannah State","St. Francis (PA)":"Saint Francis"})\n p["def_pos_team"]=p.def_pos_team.replace({"Savannah St":"Savannah State","St. Francis (PA)":"Saint Francis"})
+ p=p[p.game_id.isin(set(s.game_id))].copy()
+ # v1.171 proved exact raw-PBP aliases for these schedule identities.
+ p["pos_team"]=p.pos_team.replace({"Savannah St":"Savannah State","St. Francis (PA)":"Saint Francis"})
+ p["def_pos_team"]=p.def_pos_team.replace({"Savannah St":"Savannah State","St. Francis (PA)":"Saint Francis"})
  sr=(one(p.rush)|one(p["pass"])|one(p.pass_attempt)) & ~one(p.punt)
  rr=sr&one(p.rush); pr=sr&(one(p["pass"])|one(p.pass_attempt)); ints=one(p.interception_thrown_stat)|one(p.interception_stat)
  yg=p.yards_gained.fillna(0)
@@ -26,11 +29,16 @@ for y in range(2016,2025):
  dq=q.assign(scr=scr.astype(int),exp=(scr&(p.yards_gained>=20)).astype(int),succq=succq.astype(int),succ=succ.astype(int))
  do=dq.groupby(["game_id","pos_team"],dropna=True).agg(off_scr=("scr","sum"),off_exp=("exp","sum"),off_succ_q=("succq","sum"),off_succ=("succ","sum")).reset_index().rename(columns={"pos_team":"team"})
  dd=dq.groupby(["game_id","def_pos_team"],dropna=True).agg(def_scr=("scr","sum"),def_exp=("exp","sum"),def_succ_q=("succq","sum"),def_succ=("succ","sum")).reset_index().rename(columns={"def_pos_team":"team"})
- dp=do.merge(dd,on=["game_id","team"],how="outer")\n # Frozen v1.115 establishes team/game by scrimmage participation, then zero-fills absent aggregate event counts.\n der_counts=["off_scr","off_exp","off_succ_q","off_succ","def_scr","def_exp","def_succ_q","def_succ"]\n for c in der_counts:\n  if c in dp: dp[c]=dp[c].fillna(0)
+ dp=do.merge(dd,on=["game_id","team"],how="outer")
+ # Frozen v1.115 establishes team/game by scrimmage participation, then zero-fills absent aggregate event counts.
+ der_counts=["off_scr","off_exp","off_succ_q","off_succ","def_scr","def_exp","def_succ_q","def_succ"]
+ for c in der_counts:
+  if c in dp: dp[c]=dp[c].fillna(0)
  drive=p[p.pos_team.notna()&p.drive_id.notna()&p.yards_to_goal.notna()][["game_id","pos_team","drive_id","yards_to_goal"]].copy()
  drive["ord"]=np.arange(len(drive)); drive=drive.sort_values(["game_id","pos_team","drive_id","ord"]).drop_duplicates(["game_id","pos_team","drive_id"])
  fd=drive.groupby(["game_id","pos_team"]).yards_to_goal.agg(["sum","count"]).reset_index().rename(columns={"pos_team":"team","sum":"start_ytg_sum","count":"start_drive_n"})
- dp=dp.merge(fd,on=["game_id","team"],how="left")\n dp["start_ytg_sum"]=dp.start_ytg_sum.fillna(0); dp["start_drive_n"]=dp.start_drive_n.fillna(0)
+ dp=dp.merge(fd,on=["game_id","team"],how="left")
+ dp["start_ytg_sum"]=dp.start_ytg_sum.fillna(0); dp["start_drive_n"]=dp.start_drive_n.fillna(0)
  h=s.assign(team=s.home_team,venue=np.where(s.neutral_site,"NEUTRAL","HOME"),game_points_for=s.home_points,game_points_against=s.away_points)
  a=s.assign(team=s.away_team,venue=np.where(s.neutral_site,"NEUTRAL","AWAY"),game_points_for=s.away_points,game_points_against=s.home_points)
  t=pd.concat([h,a],ignore_index=True)
