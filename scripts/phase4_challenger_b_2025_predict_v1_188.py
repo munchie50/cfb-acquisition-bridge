@@ -7,7 +7,7 @@ import pandas as pd, numpy as np, pyreadr
 schedp, raw_schedp, pbpp, fitp, outp = map(Path,sys.argv[1:6]); outp.mkdir(parents=True,exist_ok=True)
 S=pd.read_csv(schedp,dtype={"game_id":str}); S["start_date"]=pd.to_datetime(S.start_date,utc=True)
 REQS=["season","game_id","start_date","home_team","away_team","neutral_site","population_class","competition_class"]
-if list(S.columns)!=REQS or len(S)!=880 or S.game_id.nunique()!=880 or S.game_id.duplicated().any(): raise SystemExit("target schedule identity")
+if set(S.columns)!=set(REQS) or len(S)!=880 or S.game_id.nunique()!=880 or S.game_id.duplicated().any(): raise SystemExit(f"target schedule identity cols={list(S.columns)} rows={len(S)} unique={S.game_id.nunique()}")\nS=S[REQS].copy()
 if set(S.population_class.value_counts().to_dict().items())!={("FBS_VS_FBS",770),("FBS_VS_NONFBS",110)}: raise SystemExit("population class mismatch")
 if set(S.competition_class.value_counts().to_dict().items())!={("REGULAR",839),("CONFERENCE_CHAMPIONSHIP",10),("POSTSEASON",31)}: raise SystemExit("competition class mismatch")
 bad=("point","score","winner","spread","moneyline","over_under","odds","bet","post_win","postgame","market")
