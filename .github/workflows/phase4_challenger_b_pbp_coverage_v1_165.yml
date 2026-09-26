@@ -1,0 +1,27 @@
+name: CFB Phase4 Challenger B PBP Coverage v1.165
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/phase4_challenger_b_pbp_coverage_v1_165.yml']
+  workflow_dispatch:
+permissions: {contents: read, actions: read}
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas pyreadr
+      - name: Acquire accepted population and PBP
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir population raw
+          gh api repos/${{ github.repository }}/actions/artifacts/10893997859/zip > /tmp/p.zip
+          unzip -q /tmp/p.zip -d population
+          for YEAR in {2016..2024}; do curl --fail --location --retry 3 --output "raw/pbp_${YEAR}.rds" "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_${YEAR}.rds"; done
+      - run: python scripts/phase4_challenger_b_pbp_coverage_v1_165.py population raw out
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: cfb-phase4-challenger-b-pbp-coverage-v1-165, path: out/}
