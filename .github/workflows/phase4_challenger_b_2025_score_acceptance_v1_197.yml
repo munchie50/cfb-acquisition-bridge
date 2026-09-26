@@ -1,0 +1,40 @@
+name: CFB Phase4 Challenger B 2025 Score Acceptance v1.197
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase4_challenger_b_2025_score_acceptance_audit_v1_197.py'
+      - '.github/workflows/phase4_challenger_b_2025_score_acceptance_v1_197.yml'
+  workflow_dispatch:
+permissions: {contents: read, actions: read}
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas numpy pyarrow
+      - name: Acquire pinned frozen and scoring artifacts
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir frozen scored raw audit
+          gh api repos/${{ github.repository }}/actions/artifacts/10896494289/zip > /tmp/frozen.zip
+          echo "386facc0452a2a8a4914d178cac6dc0c75db4bc30ff8f023c212f8eaac678038  /tmp/frozen.zip" | sha256sum -c -
+          unzip -q /tmp/frozen.zip -d frozen
+          gh api repos/${{ github.repository }}/actions/artifacts/10897190974/zip > /tmp/scored.zip
+          echo "d2b27f45b3e83ac014676702873424a416faac9613a5c767de97a0feb83085db  /tmp/scored.zip" | sha256sum -c -
+          unzip -q /tmp/scored.zip -d scored
+      - name: Reacquire outcome source
+        run: |
+          curl --fail --location --retry 3 -o raw/cfb_schedules_2025.parquet "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_2025.parquet"
+          test -s raw/cfb_schedules_2025.parquet
+      - run: python -m py_compile scripts/phase4_challenger_b_2025_score_acceptance_audit_v1_197.py
+      - name: Independently audit score
+        run: python scripts/phase4_challenger_b_2025_score_acceptance_audit_v1_197.py frozen raw/cfb_schedules_2025.parquet scored audit
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-phase4-challenger-b-2025-score-acceptance-v1-197
+          path: audit/
