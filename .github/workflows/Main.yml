@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths-ignore:
-      - '.github/workflows/giveaway_*.yml'
+    paths:
+      - '.github/workflows/Main.yml'
 
 permissions:
   contents: read
