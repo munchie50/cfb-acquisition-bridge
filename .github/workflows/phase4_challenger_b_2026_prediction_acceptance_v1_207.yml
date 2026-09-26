@@ -1,0 +1,39 @@
+name: CFB Phase4 Challenger B 2026 Prediction Acceptance v1.207
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/phase4_challenger_b_2026_prediction_acceptance_audit_v1_207.py'
+      - '.github/workflows/phase4_challenger_b_2026_prediction_acceptance_v1_207.yml'
+  workflow_dispatch:
+permissions: {contents: read, actions: read}
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas numpy
+      - name: Acquire immutable producer, target and fit artifacts
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir producer preflight fit out
+          gh api repos/${{ github.repository }}/actions/artifacts/10897612260/zip > /tmp/producer.zip
+          echo "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf  /tmp/producer.zip" | sha256sum -c -
+          unzip -q /tmp/producer.zip -d producer
+          gh api repos/${{ github.repository }}/actions/artifacts/10897001956/zip > /tmp/preflight.zip
+          echo "4dc70419b9aa3afdfa2570861490598da69b2bccfed878e438dc17b69a9a7ea8  /tmp/preflight.zip" | sha256sum -c -
+          unzip -q /tmp/preflight.zip -d preflight
+          gh api repos/${{ github.repository }}/actions/artifacts/10895838069/zip > /tmp/fit.zip
+          echo "3a2cabfcd37e0bcf0cae85efc77eaa6755ffb12734d1e48c4c582ed1de375587  /tmp/fit.zip" | sha256sum -c -
+          unzip -q /tmp/fit.zip -d fit
+      - run: python -m py_compile scripts/phase4_challenger_b_2026_prediction_acceptance_audit_v1_207.py
+      - name: Independently audit prospective freeze
+        run: python scripts/phase4_challenger_b_2026_prediction_acceptance_audit_v1_207.py producer preflight/challenger_b_2026_future_target_projection_v1_204.csv fit out
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-phase4-challenger-b-2026-prediction-acceptance-v1-207
+          path: out/
