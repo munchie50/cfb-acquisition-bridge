@@ -419,7 +419,12 @@ def main():
       "input_sha256":runtime_input_sha256,
       "prediction_sha256":sha(p)}
     manifest_path=out/"manifest.json"
-    manifest_path.write_text(json.dumps(manifest,indent=2))
+    manifest_tmp=out/"manifest.json.tmp"
+    manifest_tmp.write_text(json.dumps(manifest,indent=2))
+    staged_manifest=json.loads(manifest_tmp.read_text())
+    if staged_manifest!=manifest:
+        raise SystemExit("staged manifest persistence/readback mismatch")
+    os.replace(manifest_tmp,manifest_path)
     persisted_manifest=json.loads(manifest_path.read_text())
     if persisted_manifest!=manifest:
         raise SystemExit("manifest persistence/readback mismatch")
