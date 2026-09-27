@@ -207,9 +207,18 @@ def main():
     if counts.get("S0",0)!=expected_s0 or counts.get("S1",0)!=expected_s1 or counts.get("S2",0)!=expected_s2:
         raise SystemExit("candidate family cardinality mismatch")
     p=out/"sandbox_candidate_predictions.csv"; pred.to_csv(p,index=False)
+    config={"k_grid":list(KGRID),"features":FEATURES,"s2_mapping":MAP,
+      "population_cutoff":"UTC_DATE_MIDNIGHT_STRICT_PRIOR",
+      "s2_fail_closed":True,"expected_prediction_rows":56170}
+    config_sha256=hashlib.sha256(json.dumps(config,sort_keys=True,separators=(",",":")).encode()).hexdigest()
     manifest={"status":"PREDICTIONS_FROZEN_NOT_SCORED","games":len(work),"prediction_rows":len(pred),
       "candidate_ids":sorted(pred.candidate_id.unique()),"seasons":sorted(map(int,pred.season.unique())),
-      "2025_accessed":False,"outcomes_joined":False,"prediction_sha256":sha(p)}
+      "2025_accessed":False,"outcomes_joined":False,"generator_sha256":sha(__file__),
+      "config_sha256":config_sha256,"config":config,
+      "input_sha256":{"dataset":sha(a.dataset),"mechanical_primitives":sha(a.mechanical_primitives),
+        "derived_primitives":sha(a.derived_primitives),"mechanical_features":sha(a.mechanical_features),
+        "derived_features":sha(a.derived_features),"scaling":sha(a.scaling),"coefficients":sha(a.coefficients)},
+      "prediction_sha256":sha(p)}
     (out/"manifest.json").write_text(json.dumps(manifest,indent=2))
     print(json.dumps(manifest,indent=2))
 if __name__=="__main__": main()
