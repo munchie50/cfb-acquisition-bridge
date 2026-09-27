@@ -1,0 +1,173 @@
+#!/usr/bin/env python3
+"""CFB QA Sandbox S1/S2 candidate generator.
+Outcome-blind construction only. Frozen 2026-09-27 semantics.
+"""
+import argparse, hashlib, json, os, re
+from pathlib import Path
+import numpy as np
+import pandas as pd
+
+KGRID=(1,2,4,8)
+FEATURES=[
+"points_for_per_game","points_against_per_game",
+"offensive_scrimmage_plays_per_game","defensive_scrimmage_plays_per_game",
+"offensive_yards_per_play","defensive_yards_per_play",
+"rush_play_rate","pass_play_rate","rush_yards_per_play","pass_yards_per_play",
+"interception_rate","rest_days","offensive_explosive_play_rate",
+"defensive_explosive_play_rate","offensive_success_rate",
+"defensive_success_rate_allowed","average_starting_yards_to_goal"]
+MAP={
+"points_for_per_game":"points_against_per_game",
+"points_against_per_game":"points_for_per_game",
+"offensive_scrimmage_plays_per_game":"defensive_scrimmage_plays_per_game",
+"defensive_scrimmage_plays_per_game":"offensive_scrimmage_plays_per_game",
+"offensive_yards_per_play":"defensive_yards_per_play",
+"defensive_yards_per_play":"offensive_yards_per_play",
+"offensive_explosive_play_rate":"defensive_explosive_play_rate",
+"defensive_explosive_play_rate":"offensive_explosive_play_rate",
+"offensive_success_rate":"defensive_success_rate_allowed",
+"defensive_success_rate_allowed":"offensive_success_rate"}
+FORBID=re.compile(r"(target|actual|final_|market|spread|odds|moneyline|wager|stake|closing|close_|outcome)",re.I)
+
+def sha(path):
+    h=hashlib.sha256()
+    with open(path,"rb") as f:
+        for b in iter(lambda:f.read(1<<20),b""): h.update(b)
+    return h.hexdigest()
+
+def main():
+    ap=argparse.ArgumentParser()
+    ap.add_argument("--dataset",required=True)
+    ap.add_argument("--mechanical-primitives",required=True)
+    ap.add_argument("--derived-primitives",required=True)
+    ap.add_argument("--mechanical-features",required=True)
+    ap.add_argument("--derived-features",required=True)
+    ap.add_argument("--scaling",required=True)
+    ap.add_argument("--coefficients",required=True)
+    ap.add_argument("--out",required=True)
+    a=ap.parse_args(); out=Path(a.out); out.mkdir(parents=True,exist_ok=True)
+
+    ds=pd.read_csv(a.dataset,dtype={"game_id":str})
+    if (ds.season==2025).any(): raise SystemExit("2025 TEST exposure")
+    # Outcome columns may exist in the accepted dataset, but are stripped before candidate construction.
+    safe_cols=[c for c in ds.columns if not FORBID.search(c)]
+    work=ds[safe_cols].copy()
+    if any(FORBID.search(c) for c in work.columns): raise SystemExit("forbidden candidate input")
+
+    mf=pd.read_csv(a.mechanical_features,dtype={"game_id":str})
+    df=pd.read_csv(a.derived_features,dtype={"game_id":str})
+    mp=pd.read_csv(a.mechanical_primitives,dtype={"game_id":str})
+    dp=pd.read_csv(a.derived_primitives,dtype={"game_id":str})
+    for z in (mf,df,mp,dp):
+        if (z.season==2025).any(): raise SystemExit("2025 substrate exposure")
+        z["start_date"]=pd.to_datetime(z["start_date"],utc=True)
+
+    # Feature-side table keyed to each team pregame state.
+    side=mf[["season","game_id","team","start_date","qualified_prior_games"]+[x for x in FEATURES if x in mf]].merge(
+        df[["season","game_id","team"]+[x for x in FEATURES if x in df]],
+        on=["season","game_id","team"],how="inner",validate="one_to_one")
+    if side[FEATURES].isna().any().any():
+        # opening/incomplete sides are permitted in substrate but never in accepted candidate population.
+        pass
+
+    # Accepted eligible game-side rows.
+    homes=work[["season","game_id","start_date","home_team"]].rename(columns={"home_team":"team"})
+    aways=work[["season","game_id","start_date","away_team"]].rename(columns={"away_team":"team"})
+    need=pd.concat([homes,aways],ignore_index=True)[["season","game_id","team"]]
+    elig=need.merge(side,on=["season","game_id","team"],how="left",validate="one_to_one")
+    if elig[FEATURES+["qualified_prior_games"]].isna().any().any(): raise SystemExit("eligible side missing feature/history")
+
+    # Strict-prior population baseline from pregame feature states. This implementation
+    # intentionally refuses full-season grouping; each lookup is bounded by kickoff.
+    side=side.sort_values("start_date")
+    def baseline(feature,t):
+        z=side[(side.start_date<t)&side[feature].notna()]
+        if z.empty: raise RuntimeError("unreproducible baseline")
+        return float(z[feature].mean())
+
+    # S1 states for any side on demand.
+    cache={}
+    def s1(row,feature,k):
+        key=(row.season,row.game_id,row.team,feature,k)
+        if key in cache:return cache[key]
+        b=baseline(feature,row.start_date); n=float(row.qualified_prior_games)
+        v=n/(n+k)*float(row[feature])+k/(n+k)*b
+        cache[key]=v; return v
+
+    # Build game/opponent lookup and source histories from accepted primitive identities.
+    ident=mp[["season","game_id","team","start_date","home_team","away_team"]].copy()
+    ident["opponent"]=np.where(ident.team==ident.home_team,ident.away_team,
+                      np.where(ident.team==ident.away_team,ident.home_team,None))
+    if ident.opponent.isna().any(): raise SystemExit("opponent identity failure")
+    side_idx=side.set_index(["season","game_id","team"],drop=False)
+
+    def s2(row,feature,k):
+        base=s1(row,feature,k)
+        if feature not in MAP:return base
+        prior=ident[(ident.season==row.season)&(ident.team==row.team)&(ident.start_date<row.start_date)].sort_values("start_date")
+        if len(prior)!=int(row.qualified_prior_games): raise RuntimeError("source chronology/count mismatch")
+        residuals=[]
+        pair=MAP[feature]
+        for g in prior.itertuples():
+            key=(g.season,g.game_id,g.opponent)
+            if key not in side_idx.index: raise RuntimeError("missing opponent pregame state")
+            opp=side_idx.loc[key]
+            if not opp.start_date < row.start_date: raise RuntimeError("future context")
+            # Opponent context is S1 at the source game's pregame state; no S2 recursion.
+            ob=baseline(pair,opp.start_date)
+            ov=s1(opp,pair,k)
+            residuals.append(ov-ob)
+        return base-float(np.mean(residuals)) if residuals else base
+
+    scale=pd.read_csv(a.scaling).set_index("feature")
+    coef=pd.read_csv(a.coefficients)
+    if set(scale.index)!=set(FEATURES): raise SystemExit("scaling feature mismatch")
+    def predict(vec,venue,target):
+        w=coef[coef.target==target].set_index("term").coefficient
+        z=float(w["intercept"])
+        for f in FEATURES:
+            z+=((vec[f]-float(scale.loc[f,"mean"]))/float(scale.loc[f,"sd"]))*float(w[f])
+        z+=(1.0 if venue=="NEUTRAL" else 0.0)*float(w["venue_neutral"])
+        return 1/(1+np.exp(-np.clip(z,-40,40))) if target=="win" else z
+
+    rows=[]
+    work["start_date"]=pd.to_datetime(work.start_date,utc=True)
+    for game in work.itertuples():
+        hs=side_idx.loc[(game.season,game.game_id,game.home_team)]
+        as_=side_idx.loc[(game.season,game.game_id,game.away_team)]
+        candidates=[("S0",None,None)]
+        for k in KGRID:
+            candidates += [(f"S1_K{k}","S1",k),(f"S2_K{k}","S2",k)]
+        for cid,kind,k in candidates:
+            hv={}; av={}
+            for f in FEATURES:
+                if cid=="S0": hv[f]=float(hs[f]); av[f]=float(as_[f])
+                elif kind=="S1": hv[f]=s1(hs,f,k); av[f]=s1(as_,f,k)
+                else: hv[f]=s2(hs,f,k); av[f]=s2(as_,f,k)
+            vec={}
+            for f in FEATURES:
+                vec["home_"+f]=hv[f]; vec["away_"+f]=av[f]
+            # scaling/coefficients use 34 home_/away_ names.
+            def pred34(target):
+                w=coef[coef.target==target].set_index("term").coefficient
+                z=float(w["intercept"])
+                for name,val in vec.items():
+                    z+=((val-float(scale.loc[name,"mean"]))/float(scale.loc[name,"sd"]))*float(w[name])
+                z+=(1.0 if game.venue_state=="NEUTRAL" else 0.0)*float(w["venue_neutral"])
+                return 1/(1+np.exp(-np.clip(z,-40,40))) if target=="win" else z
+            rows.append({"season":int(game.season),"game_id":str(game.game_id),
+                "start_date":game.start_date.isoformat(),"home_team":game.home_team,
+                "away_team":game.away_team,"venue_state":game.venue_state,
+                "candidate_id":cid,"k":k,"pred_margin":pred34("margin"),
+                "pred_total":pred34("total"),"pred_win":pred34("win")})
+    pred=pd.DataFrame(rows)
+    if any(FORBID.search(c) for c in pred.columns): raise SystemExit("forbidden prediction column")
+    expected=len(work)*9
+    if len(pred)!=expected: raise SystemExit("candidate row count mismatch")
+    p=out/"sandbox_candidate_predictions.csv"; pred.to_csv(p,index=False)
+    manifest={"status":"PREDICTIONS_FROZEN_NOT_SCORED","games":len(work),"prediction_rows":len(pred),
+      "candidate_ids":sorted(pred.candidate_id.unique()),"seasons":sorted(map(int,pred.season.unique())),
+      "2025_accessed":False,"outcomes_joined":False,"prediction_sha256":sha(p)}
+    (out/"manifest.json").write_text(json.dumps(manifest,indent=2))
+    print(json.dumps(manifest,indent=2))
+if __name__=="__main__": main()
