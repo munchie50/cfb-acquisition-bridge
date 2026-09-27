@@ -223,6 +223,9 @@ def main():
         if not 0.0<weight<1.0: raise RuntimeError("invalid S1 shrinkage weight")
         v=weight*raw+(1.0-weight)*b
         if not np.isfinite(v): raise RuntimeError("non-finite S1 output")
+        lo=min(raw,b); hi=max(raw,b)
+        if v < lo-1e-12 or v > hi+1e-12:
+            raise RuntimeError("S1 convex-combination invariant failure")
         cache[key]=v; return v
 
     # Build game/opponent lookup and source histories from accepted primitive identities.
