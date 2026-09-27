@@ -40,3 +40,14 @@ Champion snapshot: v1.208 FIRST_FROZEN / v1.193 accepted Beta Champion. Market o
 - Ohio State at Iowa — INCONCLUSIVE. Very large Champion/market side disagreement (Champion Iowa by 6.290 vs FanDuel Ohio State -14.5). Await: independent qualified market confirmation and matchup/injury/source review before any controlled-Beta expression. Opportunity at risk: Iowa +14.5 (-122) at observed source. Next review: next governed market-monitor pass.
 - Maryland at Nebraska — WAIT. Champion Nebraska by 10.521 versus market Nebraska -12.5; raw side disagreement is modest and does not itself establish a bet. Await: cross-book confirmation and next information cycle. Current opportunity: Maryland +12.5 (-110); total 52.5 versus Champion 56.012. Next review: next governed monitor pass. Nebraska inclusion preserved regardless of Hot Sheet cutoff.
 - Vanderbilt at Georgia — WAIT. Side is near Champion/market alignment; total differs by about 4.06 points (Champion 57.560 vs market 53.5). Await: cross-book total confirmation and matchup/injury review. Current opportunity: total 53.5 (-110). Next review: next governed monitor pass.
+
+
+## Full-slate decision sweep — 2026-09-27 13:13 CT
+- Scope: 47 relevant FBS-vs-FBS FIRST_FROZEN Week 5 games reconciled against the broad market benchmark where available.
+- BET EARLY: 0 established from this sweep.
+- BET NOW: 0 established from this sweep.
+- Large raw Champion/market disagreements are INCONCLUSIVE pending independent market confirmation plus football/injury/source reconciliation; raw disagreement is not treated as calibrated EV or automatic wager authority.
+- Other available games remain WAIT/monitor where no stronger governed state is supported.
+- NOT_YET_AVAILABLE: UTSA at Rice; Utah State at Boise State; Arkansas State at Louisiana. Recheck on next governed market-monitor pass.
+- Nebraska remains WAIT and is explicitly retained on the Early Board regardless of Hot Sheet cutoff.
+- Minimum acceptable line/price is not invented where the betting layer has not earned one. Do not chase later movement beyond any prospectively established threshold.
