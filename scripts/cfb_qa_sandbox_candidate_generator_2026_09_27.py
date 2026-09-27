@@ -147,7 +147,8 @@ def main():
 
     scale=pd.read_csv(a.scaling).set_index("feature")
     coef=pd.read_csv(a.coefficients)
-    EXPECTED34=set(["home_"+x for x in FEATURES]+["away_"+x for x in FEATURES])\n    if set(scale.index)!=EXPECTED34: raise SystemExit("scaling feature mismatch")
+    EXPECTED34=set(["home_"+x for x in FEATURES]+["away_"+x for x in FEATURES])
+    if set(scale.index)!=EXPECTED34: raise SystemExit("scaling feature mismatch")
     def predict(vec,venue,target):
         w=coef[coef.target==target].set_index("term").coefficient
         z=float(w["intercept"])
