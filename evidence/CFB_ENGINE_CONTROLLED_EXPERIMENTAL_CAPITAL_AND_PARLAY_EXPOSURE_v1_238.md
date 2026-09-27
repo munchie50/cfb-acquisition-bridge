@@ -112,4 +112,13 @@ Sunday Weekly Beta Review must report:
 - No use of Adam's wager as Champion model input.
 - Source/semantic failures remain fail-closed.
 
+## Initial ledger state
+- Sandbox starting capital: **$20.00**
+- Current available capital: **$20.00**
+- Current committed/open exposure: **$0.00**
+- Cumulative established experimental amount risked: **$0.00**
+- Established experimental wagers under this authority: **0**
+
+This initial state changes only from established execution evidence; recommendations/candidate slips do not consume capital.
+
 Scientific effect: none on the frozen Beta Champion. This contract authorizes and governs controlled experimental capital exposure and prospective learning around the betting layer.
