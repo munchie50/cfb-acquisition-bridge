@@ -192,6 +192,9 @@ def main():
                     raise SystemExit(f"S0 feature equivalence mismatch: {game.season}/{game.game_id}/{col}")
 
     # Persisted qualified-prior count must equal strict earlier same-season primitive history.
+    # Same-team/same-season kickoff ties would make cumcount an arbitrary ordering rather than strict chronology.
+    if mp.duplicated(["season","team","start_date"],keep=False).any():
+        raise SystemExit("ambiguous same-team kickoff tie in qualified-prior chronology")
     prior_check=mp[["season","game_id","team","start_date"]].sort_values(
       ["season","team","start_date","game_id"]).copy()
     prior_check["recomputed_prior"]=prior_check.groupby(["season","team"]).cumcount()
