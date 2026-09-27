@@ -212,8 +212,17 @@ def main():
     def s1(row,feature,k):
         key=(row.season,row.game_id,row.team,feature,k)
         if key in cache:return cache[key]
+        if k not in KGRID: raise RuntimeError("S1 k outside frozen grid")
         b=baseline(feature,row.start_date,row.season); n=float(row.qualified_prior_games)
-        v=n/(n+k)*float(row[feature])+k/(n+k)*b
+        raw=float(row[feature])
+        if not np.isfinite(n) or n<=0 or not n.is_integer():
+            raise RuntimeError("invalid S1 qualified-prior count")
+        if not np.isfinite(raw) or not np.isfinite(b):
+            raise RuntimeError("non-finite S1 input")
+        weight=n/(n+k)
+        if not 0.0<weight<1.0: raise RuntimeError("invalid S1 shrinkage weight")
+        v=weight*raw+(1.0-weight)*b
+        if not np.isfinite(v): raise RuntimeError("non-finite S1 output")
         cache[key]=v; return v
 
     # Build game/opponent lookup and source histories from accepted primitive identities.
