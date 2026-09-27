@@ -157,14 +157,6 @@ def main():
     coef=pd.read_csv(a.coefficients)
     EXPECTED34=set(["home_"+x for x in FEATURES]+["away_"+x for x in FEATURES])
     if set(scale.index)!=EXPECTED34: raise SystemExit("scaling feature mismatch")
-    def predict(vec,venue,target):
-        w=coef[coef.target==target].set_index("term").coefficient
-        z=float(w["intercept"])
-        for f in FEATURES:
-            z+=((vec[f]-float(scale.loc[f,"mean"]))/float(scale.loc[f,"sd"]))*float(w[f])
-        z+=(1.0 if venue=="NEUTRAL" else 0.0)*float(w["venue_neutral"])
-        return 1/(1+np.exp(-np.clip(z,-40,40))) if target=="win" else z
-
     rows=[]
     work["start_date"]=pd.to_datetime(work.start_date,utc=True)
     for game in work.itertuples():
