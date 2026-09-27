@@ -143,6 +143,20 @@ def main():
     if len(elig)!=12492: raise SystemExit("eligible side join cardinality mismatch")
     if elig[FEATURES+["qualified_prior_games"]].isna().any().any(): raise SystemExit("eligible side missing feature/history")
 
+    # S0 executable equivalence: accepted v1.179 vector must match reconstructed v1.172 side state.
+    side_lookup=side.set_index(["season","game_id","team"],drop=False)
+    for game in work.itertuples():
+        hs0=side_lookup.loc[(game.season,game.game_id,game.home_team)]
+        as0=side_lookup.loc[(game.season,game.game_id,game.away_team)]
+        for feature in FEATURES:
+            for role,row in (("home",hs0),("away",as0)):
+                col=f"{role}_{feature}"
+                if col not in work.columns: raise SystemExit(f"S0 accepted feature missing: {col}")
+                accepted=float(getattr(game,col))
+                rebuilt=float(row[feature])
+                if not np.isfinite(accepted) or not np.isfinite(rebuilt) or abs(accepted-rebuilt)>1e-12:
+                    raise SystemExit(f"S0 feature equivalence mismatch: {game.season}/{game.game_id}/{col}")
+
     # Frozen pooled-component population baselines: season-local and strict-cutoff-local.
     side=side.sort_values("start_date")
     COMPONENTS={
