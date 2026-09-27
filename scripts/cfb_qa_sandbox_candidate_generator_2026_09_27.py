@@ -145,9 +145,12 @@ def main():
             try:
                 ob=baseline(pair,opp.start_date,opp.season)
                 ov=s1(opp,pair,k)
-            except RuntimeError:
-                # Completion-safe population baseline unavailable at this source kickoff.
-                continue
+            except RuntimeError as e:
+                # Only absence of a completion-safe population pool is an expected
+                # source-context omission. Other baseline defects fail closed.
+                if str(e) in ("unreproducible component baseline","unreproducible rest-days baseline"):
+                    continue
+                raise
             residuals.append(ov-ob)
         if not residuals:
             raise RuntimeError("no valid completion-safe S2 context")
