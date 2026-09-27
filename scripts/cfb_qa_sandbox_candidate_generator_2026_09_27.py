@@ -27,6 +27,20 @@ MAP={
 "defensive_explosive_play_rate":"offensive_explosive_play_rate",
 "offensive_success_rate":"defensive_success_rate_allowed",
 "defensive_success_rate_allowed":"offensive_success_rate"}
+EXPECTED_MAP={
+"points_for_per_game":"points_against_per_game",
+"points_against_per_game":"points_for_per_game",
+"offensive_scrimmage_plays_per_game":"defensive_scrimmage_plays_per_game",
+"defensive_scrimmage_plays_per_game":"offensive_scrimmage_plays_per_game",
+"offensive_yards_per_play":"defensive_yards_per_play",
+"defensive_yards_per_play":"offensive_yards_per_play",
+"offensive_explosive_play_rate":"defensive_explosive_play_rate",
+"defensive_explosive_play_rate":"offensive_explosive_play_rate",
+"offensive_success_rate":"defensive_success_rate_allowed",
+"defensive_success_rate_allowed":"offensive_success_rate"}
+if MAP!=EXPECTED_MAP: raise RuntimeError("frozen S2 mapping mismatch")
+if len(MAP)!=10 or any(k not in FEATURES or v not in FEATURES or k==v or MAP.get(v)!=k for k,v in MAP.items()):
+    raise RuntimeError("invalid frozen S2 mapping structure")
 FORBID=re.compile(r"(target|actual|final_|market|spread|odds|moneyline|wager|stake|closing|close_|outcome)",re.I)
 
 def sha(path):
