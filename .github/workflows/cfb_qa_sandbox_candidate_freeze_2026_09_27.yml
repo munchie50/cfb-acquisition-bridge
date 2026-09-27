@@ -62,13 +62,11 @@ jobs:
           echo "68fb5193ccb8828ac8d34dfe820101181c2bde078a04a6d5afd4c08bcf0cab45  $SCALING" | sha256sum -c -
           echo "bf15ce41180bfb4e250d311df279e98c13b65432756ae07f7a30264cbae0e221  $COEF" | sha256sum -c -
 
-      - name: Observe corrected generator identity and stop
+      - name: Verify and compile frozen generator
         run: |
           set -euo pipefail
-          sha256sum scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py
+          echo "e12bc88ba1eadcf2df59911e79d3d21cebdda47e6923fce2046c5aa493d033b3  scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py" | sha256sum -c -
           python -m py_compile scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py
-          echo "IDENTITY_OBSERVATION_ONLY: authoritative candidate generation intentionally blocked"
-          exit 86
 
       - name: Generate outcome-blind frozen candidates
         run: |
