@@ -98,13 +98,15 @@ def main():
       "average_starting_yards_to_goal":("D","start_ytg_sum","start_drive_n")}
     def baseline(feature,t,season):
         if feature=="rest_days":
-            z=side[(side.season==season)&(side.start_date<t)&side.rest_days.notna()]
+            cutoff=pd.Timestamp(t).normalize()
+            z=side[(side.season==season)&(side.start_date<cutoff)&side.rest_days.notna()]
             if z.empty: raise RuntimeError("unreproducible rest-days baseline")
             return float(z.rest_days.mean())
         typ,num,den=COMPONENTS[feature]
         src=mp if typ=="M" else dp
         complete="mechanical_primitive_complete" if typ=="M" else "derived_primitive_complete"
-        z=src[(src.season==season)&(src.start_date<t)&src[complete].astype(bool)].copy()
+        cutoff=pd.Timestamp(t).normalize()
+        z=src[(src.season==season)&(src.start_date<cutoff)&src[complete].astype(bool)].copy()
         if z.empty: raise RuntimeError("unreproducible component baseline")
         n=float(z[num].sum())
         d=float(len(z)) if den=="GAME" else float(z[den].sum())
@@ -140,10 +142,16 @@ def main():
             opp=side_idx.loc[key]
             if not opp.start_date < row.start_date: raise RuntimeError("future context")
             # Opponent context is S1 at the source game's pregame state; no S2 recursion.
-            ob=baseline(pair,opp.start_date,opp.season)
-            ov=s1(opp,pair,k)
+            try:
+                ob=baseline(pair,opp.start_date,opp.season)
+                ov=s1(opp,pair,k)
+            except RuntimeError:
+                # Completion-safe population baseline unavailable at this source kickoff.
+                continue
             residuals.append(ov-ob)
-        return base-float(np.mean(residuals)) if residuals else base
+        if not residuals:
+            raise RuntimeError("no valid completion-safe S2 context")
+        return base-float(np.mean(residuals))
 
     scale=pd.read_csv(a.scaling).set_index("feature")
     coef=pd.read_csv(a.coefficients)
@@ -167,10 +175,19 @@ def main():
             candidates += [(f"S1_K{k}","S1",k),(f"S2_K{k}","S2",k)]
         for cid,kind,k in candidates:
             hv={}; av={}
-            for f in FEATURES:
-                if cid=="S0": hv[f]=float(hs[f]); av[f]=float(as_[f])
-                elif kind=="S1": hv[f]=s1(hs,f,k); av[f]=s1(as_,f,k)
-                else: hv[f]=s2(hs,f,k); av[f]=s2(as_,f,k)
+            unavailable=False
+            try:
+                for f in FEATURES:
+                    if cid=="S0": hv[f]=float(hs[f]); av[f]=float(as_[f])
+                    elif kind=="S1": hv[f]=s1(hs,f,k); av[f]=s1(as_,f,k)
+                    else: hv[f]=s2(hs,f,k); av[f]=s2(as_,f,k)
+            except RuntimeError as e:
+                if kind=="S2" and str(e)=="no valid completion-safe S2 context":
+                    unavailable=True
+                else:
+                    raise
+            if unavailable:
+                continue
             vec={}
             for f in FEATURES:
                 vec["home_"+f]=hv[f]; vec["away_"+f]=av[f]
@@ -189,8 +206,14 @@ def main():
                 "pred_total":pred34("total"),"pred_win":pred34("win")})
     pred=pd.DataFrame(rows)
     if any(FORBID.search(c) for c in pred.columns): raise SystemExit("forbidden prediction column")
-    expected=len(work)*9
+    expected=56170
+    expected_s0=len(work)
+    expected_s1=len(work)*4
+    expected_s2=(len(work)-11)*4
+    counts=pred.candidate_id.str.extract(r'^(S[012])')[0].value_counts().to_dict()
     if len(pred)!=expected: raise SystemExit("candidate row count mismatch")
+    if counts.get("S0",0)!=expected_s0 or counts.get("S1",0)!=expected_s1 or counts.get("S2",0)!=expected_s2:
+        raise SystemExit("candidate family cardinality mismatch")
     p=out/"sandbox_candidate_predictions.csv"; pred.to_csv(p,index=False)
     manifest={"status":"PREDICTIONS_FROZEN_NOT_SCORED","games":len(work),"prediction_rows":len(pred),
       "candidate_ids":sorted(pred.candidate_id.unique()),"seasons":sorted(map(int,pred.season.unique())),
