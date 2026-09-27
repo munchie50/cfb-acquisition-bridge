@@ -65,6 +65,34 @@ def main():
     df=pd.read_csv(a.derived_features,dtype={"game_id":str})
     mp=pd.read_csv(a.mechanical_primitives,dtype={"game_id":str})
     dp=pd.read_csv(a.derived_primitives,dtype={"game_id":str})
+    structural_inputs={"mechanical_features":mf,"derived_features":df,
+      "mechanical_primitives":mp,"derived_primitives":dp}
+    required_columns={
+      "mechanical_features":{"season","game_id","team","start_date","qualified_prior_games",
+        "points_for_per_game","points_against_per_game","offensive_scrimmage_plays_per_game",
+        "defensive_scrimmage_plays_per_game","offensive_yards_per_play","defensive_yards_per_play",
+        "rush_play_rate","pass_play_rate","rush_yards_per_play","pass_yards_per_play",
+        "interception_rate","rest_days"},
+      "derived_features":{"season","game_id","team","start_date","qualified_prior_games",
+        "offensive_explosive_play_rate","defensive_explosive_play_rate","offensive_success_rate",
+        "defensive_success_rate_allowed","average_starting_yards_to_goal"},
+      "mechanical_primitives":{"season","game_id","team","start_date","mechanical_primitive_complete",
+        "game_points_for","game_points_against","off_plays","off_yards","rush_plays","pass_plays",
+        "rush_yards","pass_yards","pass_attempts","interceptions","def_plays","def_yards"},
+      "derived_primitives":{"season","game_id","team","start_date","derived_primitive_complete",
+        "off_scr","off_exp","off_succ_q","off_succ","def_scr","def_exp","def_succ_q","def_succ",
+        "start_ytg_sum","start_drive_n"}}
+    key=["season","game_id","team"]
+    keysets={}
+    for label,frame in structural_inputs.items():
+        if len(frame)!=15402: raise SystemExit(f"v1.172 row cardinality mismatch: {label}")
+        if not required_columns[label].issubset(frame.columns):
+            raise SystemExit(f"v1.172 required-column mismatch: {label}")
+        if frame.duplicated(key).any(): raise SystemExit(f"v1.172 duplicate team-side key: {label}")
+        if frame["start_date"].isna().any(): raise SystemExit(f"v1.172 missing start_date: {label}")
+        keysets[label]=set(map(tuple,frame[key].to_numpy()))
+    if any(s!=keysets["mechanical_features"] for s in keysets.values()):
+        raise SystemExit("v1.172 team-side key reconciliation mismatch")
     for z in (mf,df,mp,dp):
         if (z.season==2025).any(): raise SystemExit("2025 substrate exposure")
         z["start_date"]=pd.to_datetime(z["start_date"],utc=True)
