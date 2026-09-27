@@ -224,6 +224,9 @@ def main():
     derived_complete=normalize_complete_flag(accepted_history["derived_history_complete"],"derived")
     if not mechanical_complete.all() or not derived_complete.all():
         raise SystemExit("accepted side has incomplete v1.172 history")
+    accepted_prior_counts=pd.to_numeric(elig["qualified_prior_games"],errors="coerce")
+    if not np.isfinite(accepted_prior_counts.to_numpy(dtype=float)).all() or (accepted_prior_counts<1).any():
+        raise SystemExit("accepted side lacks required strictly-prior game history")
 
     # S0 executable equivalence: accepted v1.179 vector must match reconstructed v1.172 side state.
     side_lookup=side.set_index(["season","game_id","team"],drop=False)
