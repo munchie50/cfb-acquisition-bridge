@@ -64,6 +64,10 @@ def main():
     existing_staging=[str(p) for p in stale_staging if p.exists()]
     if existing_staging:
         raise SystemExit(f"stale sandbox staging artifact requires review: {existing_staging}")
+    frozen_outputs=[out/"sandbox_candidate_predictions.csv",out/"manifest.json"]
+    existing_outputs=[str(p) for p in frozen_outputs if p.exists()]
+    if existing_outputs:
+        raise SystemExit(f"existing frozen sandbox artifact requires review/new output directory: {existing_outputs}")
 
     expected_authoritative_sha256={
       "dataset":"f8c479c83abf5dac3be6dcb4bba3d6a0996ae2623297a9a3514465824b7c4af8",
