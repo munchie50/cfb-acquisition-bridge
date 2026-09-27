@@ -22,3 +22,8 @@ Results may be joined only after the corresponding prediction was genuinely froz
 
 ## Initial state
 This file defines the durable surface. Historical 2026 scoring is populated only by a governed scoring run from the accepted frozen prediction artifact plus authoritative final results; it is not reconstructed from memory.
+
+## Write-path validation — 2026-09-27 13:03 CT
+- Purpose: controlled repair validation for canonical existing-file mutation.
+- Governance effect: none; no decision, execution, settlement, prediction, score, or outcome state created.
+- Method: SHA-guarded existing-file update followed by direct repository readback.
