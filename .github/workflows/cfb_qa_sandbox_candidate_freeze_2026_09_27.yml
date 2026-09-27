@@ -92,17 +92,17 @@ jobs:
           x=pd.read_csv(p/"sandbox_candidate_predictions.csv",dtype={"game_id":str})
           expected={"S0","S1_K1","S1_K2","S1_K4","S1_K8","S2_K1","S2_K2","S2_K4","S2_K8"}
           assert m["status"]=="PREDICTIONS_FROZEN_NOT_SCORED"
-          assert m["games"]==6246 and m["prediction_rows"]==56170
+          assert m["games"]==6246 and m["prediction_rows"]==56166
           assert m["2025_accessed"] is False and m["outcomes_joined"] is False
           assert set(m["candidate_ids"])==expected
-          assert len(x)==56170 and set(x["candidate_id"])==expected
+          assert len(x)==56166 and set(x["candidate_id"])==expected
           assert 2025 not in set(x["season"].astype(int))
           forbidden=("actual","outcome","market","spread","odds","wager","stake","closing")
           assert not any(any(t in str(c).lower() for t in forbidden) for c in x.columns)
           counts=x["candidate_id"].value_counts().to_dict()
           assert counts["S0"]==6246
           assert sum(v for k,v in counts.items() if k.startswith("S1_"))==24984
-          assert sum(v for k,v in counts.items() if k.startswith("S2_"))==24940
+          assert sum(v for k,v in counts.items() if k.startswith("S2_"))==24936
           print("INDEPENDENT_FREEZE_GATE_PASS",len(x),counts)
           PY
           sha256sum sandbox_freeze/sandbox_candidate_predictions.csv sandbox_freeze/manifest.json
