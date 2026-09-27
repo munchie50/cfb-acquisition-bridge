@@ -65,9 +65,13 @@ def main():
     if existing_staging:
         raise SystemExit(f"stale sandbox staging artifact requires review: {existing_staging}")
     frozen_outputs=[out/"sandbox_candidate_predictions.csv",out/"manifest.json"]
-    existing_outputs=[str(p) for p in frozen_outputs if p.exists()]
-    if existing_outputs:
-        raise SystemExit(f"existing frozen sandbox artifact requires review/new output directory: {existing_outputs}")
+    output_exists=[p.exists() for p in frozen_outputs]
+    if any(output_exists) and not all(output_exists):
+        existing=[str(p) for p,exists in zip(frozen_outputs,output_exists) if exists]
+        missing=[str(p) for p,exists in zip(frozen_outputs,output_exists) if not exists]
+        raise SystemExit(f"orphaned sandbox freeze artifact requires recovery review; existing={existing}; missing={missing}")
+    if all(output_exists):
+        raise SystemExit(f"complete frozen sandbox artifact pair already exists; use a new output directory: {[str(p) for p in frozen_outputs]}")
 
     expected_authoritative_sha256={
       "dataset":"f8c479c83abf5dac3be6dcb4bba3d6a0996ae2623297a9a3514465824b7c4af8",
