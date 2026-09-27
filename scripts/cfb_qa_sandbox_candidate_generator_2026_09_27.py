@@ -138,6 +138,14 @@ def main():
         raise SystemExit("v1.172 primitive home-team identity mismatch")
     if not prim_ident["away_team_mechanical"].eq(prim_ident["away_team_derived"]).all():
         raise SystemExit("v1.172 primitive away-team identity mismatch")
+    for label,primitive in (("mechanical",mp),("derived",dp)):
+        game_counts=primitive.groupby(["season","game_id"]).size()
+        if not game_counts.eq(2).all():
+            raise SystemExit(f"v1.172 primitive game-side cardinality mismatch: {label}")
+        home_counts=primitive["team"].eq(primitive["home_team"]).groupby([primitive["season"],primitive["game_id"]]).sum()
+        away_counts=primitive["team"].eq(primitive["away_team"]).groupby([primitive["season"],primitive["game_id"]]).sum()
+        if not home_counts.eq(1).all() or not away_counts.eq(1).all():
+            raise SystemExit(f"v1.172 primitive home/away side resolution mismatch: {label}")
     for z in (mf,df,mp,dp):
         if (z.season==2025).any(): raise SystemExit("2025 substrate exposure")
         z["start_date"]=pd.to_datetime(z["start_date"],utc=True)
