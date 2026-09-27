@@ -383,6 +383,10 @@ def main():
     actual_s2_omissions=all_games-s2_games
     if actual_s2_omissions!=expected_s2_omissions:
         raise SystemExit("S2 omitted-game identity mismatch")
+    final_input_sha256={label:sha(path) for label,path in input_paths.items()}
+    if final_input_sha256!=runtime_input_sha256:
+        changed=sorted(label for label in input_paths if final_input_sha256[label]!=runtime_input_sha256[label])
+        raise SystemExit(f"runtime input changed during candidate construction: {changed}")
     p=out/"sandbox_candidate_predictions.csv"; pred.to_csv(p,index=False)
     config={"k_grid":list(KGRID),"features":FEATURES,"s2_mapping":MAP,
       "population_cutoff":"UTC_DATE_MIDNIGHT_STRICT_PRIOR",
