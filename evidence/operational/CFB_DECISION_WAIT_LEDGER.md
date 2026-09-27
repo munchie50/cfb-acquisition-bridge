@@ -26,3 +26,8 @@ Canonical durable ledger for prospective BET EARLY / BET NOW / WAIT / PASS / INC
 
 ## Initial state
 No missing historical decision or WAIT state is inferred. Earlier unpersisted states remain UNRECOVERABLE unless separate genuinely pre-event evidence establishes them.
+
+## Write-path validation — 2026-09-27 13:03 CT
+- Purpose: controlled repair validation for canonical existing-file mutation.
+- Governance effect: none; no decision, execution, settlement, prediction, score, or outcome state created.
+- Method: SHA-guarded existing-file update followed by direct repository readback.
