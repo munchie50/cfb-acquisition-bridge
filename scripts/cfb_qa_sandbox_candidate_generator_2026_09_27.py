@@ -201,8 +201,11 @@ def main():
         if z.empty: raise RuntimeError("unreproducible component baseline")
         n=float(z[num].sum())
         d=float(len(z)) if den=="GAME" else float(z[den].sum())
+        if not np.isfinite(n): raise RuntimeError("non-finite pooled numerator")
         if not np.isfinite(d) or d<=0: raise RuntimeError("zero/unavailable pooled denominator")
-        return n/d
+        v=n/d
+        if not np.isfinite(v): raise RuntimeError("non-finite pooled baseline")
+        return v
 
     # S1 states for any side on demand.
     cache={}
