@@ -157,6 +157,17 @@ def main():
                 if not np.isfinite(accepted) or not np.isfinite(rebuilt) or abs(accepted-rebuilt)>1e-12:
                     raise SystemExit(f"S0 feature equivalence mismatch: {game.season}/{game.game_id}/{col}")
 
+    # Persisted qualified-prior count must equal strict earlier same-season primitive history.
+    prior_check=mp[["season","game_id","team","start_date"]].sort_values(
+      ["season","team","start_date","game_id"]).copy()
+    prior_check["recomputed_prior"]=prior_check.groupby(["season","team"]).cumcount()
+    qcheck=elig[["season","game_id","team","start_date","qualified_prior_games"]].merge(
+      prior_check[["season","game_id","team","recomputed_prior"]],
+      on=["season","game_id","team"],how="left",validate="one_to_one")
+    if qcheck["recomputed_prior"].isna().any() or not qcheck["qualified_prior_games"].astype(int).eq(
+      qcheck["recomputed_prior"].astype(int)).all():
+        raise SystemExit("qualified-prior-games chronology mismatch")
+
     # Frozen pooled-component population baselines: season-local and strict-cutoff-local.
     side=side.sort_values("start_date")
     COMPONENTS={
