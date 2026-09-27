@@ -34,3 +34,11 @@ Champion link: v1.208 FIRST_FROZEN artifact 10897612260 / accepted Beta Champion
 - Game 401856707 — Alabama at Mississippi State, 2026-10-03 11:00 CT. ESPN/DraftKings: Alabama -5.5 (-110), Mississippi State +5.5 (-110); total 59.5 (-110); Alabama ML -218, Mississippi State +180. Availability: executable market displayed. Champion FIRST_FROZEN: Mississippi State by 9.8652; total 60.0377; Mississippi State win 0.743319. Market-vs-Champion: major side disagreement; Champion favors Mississippi State outright while market favors Alabama by 5.5. Total nearly aligned.
 - Game 401856705 — Vanderbilt at Georgia, 2026-10-03 11:45 CT. ESPN/DraftKings: Vanderbilt +25.5 (-110), Georgia -25.5 (-110); total 53.5 (-110); Vanderbilt ML +1700, Georgia -4500. Availability: executable market displayed. Champion FIRST_FROZEN: Georgia by 24.5805; total 57.5598; Georgia win 0.922243. Market-vs-Champion: side near alignment; market total about 4.06 below Champion.
 - Game 401858473 — Ohio State at Iowa, 2026-10-03 14:30 CT. FanDuel: Ohio State -14.5 (+100), Iowa +14.5 (-122); total 43.5 (-110); Ohio State ML -720, Iowa +500. Availability: executable market displayed. Champion FIRST_FROZEN: Iowa by 6.2898; total 51.1058; Iowa win 0.593141. Market-vs-Champion: major side disagreement; Champion favors Iowa outright while market favors Ohio State by 14.5. Market total about 7.61 below Champion.
+
+
+## Full relevant-FBS slate sweep — 2026-09-27 13:13 CT
+- Scope: all 47 FBS-vs-FBS FIRST_FROZEN games in the Oct. 1–3 Week 5 window.
+- Broad benchmark: CBS Sports Week 5 FBS scoreboard, retrieved prospectively during this run. Benchmark lines without displayed prices are retained as benchmark observations only; they do not replace the exact-book/price records already captured at 13:08 CT.
+- Coverage: benchmark side/total available for 44 of 47; NOT_YET_AVAILABLE for UTSA at Rice, Utah State at Boise State, and Arkansas State at Louisiana.
+- Champion comparison source: accepted v1.208 FIRST_FROZEN artifact 10897612260. Full comparison is persisted in the governed Early Board/Hot Sheet created by this run.
+- Chronology: this 13:13 sweep does not backfill the failed/unpersisted 13:00 observation boundary.
