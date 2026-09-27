@@ -174,6 +174,12 @@ def main():
     feature_history=mf[["season","game_id","team","qualified_prior_games","mechanical_history_complete"]].merge(
       df[["season","game_id","team","qualified_prior_games","derived_history_complete"]],
       on=["season","game_id","team"],how="inner",validate="one_to_one",suffixes=("_mechanical","_derived"))
+    for label,col in (("mechanical","qualified_prior_games_mechanical"),("derived","qualified_prior_games_derived")):
+        counts=pd.to_numeric(feature_history[col],errors="coerce")
+        if not np.isfinite(counts.to_numpy(dtype=float)).all():
+            raise SystemExit(f"non-finite v1.172 qualified-prior count: {label}")
+        if (counts<0).any() or not np.equal(counts,np.floor(counts)).all():
+            raise SystemExit(f"invalid non-integer/negative v1.172 qualified-prior count: {label}")
     if not feature_history["qualified_prior_games_mechanical"].eq(feature_history["qualified_prior_games_derived"]).all():
         raise SystemExit("v1.172 mechanical/derived qualified-prior count mismatch")
     def normalize_complete_flag(series,label):
