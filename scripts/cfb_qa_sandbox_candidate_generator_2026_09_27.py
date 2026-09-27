@@ -388,6 +388,16 @@ def main():
         changed=sorted(label for label in input_paths if final_input_sha256[label]!=runtime_input_sha256[label])
         raise SystemExit(f"runtime input changed during candidate construction: {changed}")
     p=out/"sandbox_candidate_predictions.csv"; pred.to_csv(p,index=False)
+    persisted=pd.read_csv(p,dtype={"game_id":str})
+    if list(persisted.columns)!=list(pred.columns) or len(persisted)!=len(pred):
+        raise SystemExit("prediction persistence schema/cardinality mismatch")
+    idcols=["season","game_id","candidate_id"]
+    if not persisted[idcols].astype(str).equals(pred[idcols].astype(str).reset_index(drop=True)):
+        raise SystemExit("prediction persistence identity mismatch")
+    for col in ("pred_margin","pred_total","pred_win"):
+        if not np.allclose(persisted[col].to_numpy(dtype=float),pred[col].to_numpy(dtype=float),
+                           rtol=0.0,atol=1e-12,equal_nan=False):
+            raise SystemExit(f"prediction persistence numeric mismatch: {col}")
     config={"k_grid":list(KGRID),"features":FEATURES,"s2_mapping":MAP,
       "population_cutoff":"UTC_DATE_MIDNIGHT_STRICT_PRIOR",
       "s2_fail_closed":True,"expected_prediction_rows":56170}
