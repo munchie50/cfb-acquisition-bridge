@@ -70,10 +70,14 @@ def main():
             raise SystemExit(f"authoritative input hash mismatch: {label}")
     ds=pd.read_csv(a.dataset,dtype={"game_id":str})
     if (ds.season==2025).any(): raise SystemExit("2025 TEST exposure")
-    # Outcome columns may exist in the accepted dataset, but are stripped before candidate construction.
-    safe_cols=[c for c in ds.columns if not FORBID.search(c)]
-    work=ds[safe_cols].copy()
+    # Outcome columns may exist in the accepted dataset, but candidate construction is explicit-allowlist only.
+    model_cols=["home_"+x for x in FEATURES]+["away_"+x for x in FEATURES]
+    allowed_work=["season","game_id","start_date","home_team","away_team","venue_state"]+model_cols
+    missing_allowed=[c for c in allowed_work if c not in ds.columns]
+    if missing_allowed: raise SystemExit(f"accepted dataset missing construction columns: {missing_allowed}")
+    work=ds[allowed_work].copy()
     if any(FORBID.search(c) for c in work.columns): raise SystemExit("forbidden candidate input")
+    if set(work.columns)!=set(allowed_work): raise SystemExit("candidate construction allowlist mismatch")
 
     mf=pd.read_csv(a.mechanical_features,dtype={"game_id":str})
     df=pd.read_csv(a.derived_features,dtype={"game_id":str})
