@@ -205,6 +205,23 @@ def main():
     expected_s0=len(work)
     expected_s1=len(work)*4
     expected_s2=(len(work)-11)*4
+    if pred.duplicated(["season","game_id","candidate_id"]).any():
+        raise SystemExit("duplicate candidate prediction rows")
+    vals=pred[["pred_margin","pred_total","pred_win"]].to_numpy(dtype=float)
+    if not np.isfinite(vals).all():
+        raise SystemExit("non-finite candidate prediction")
+    if not pred["pred_win"].between(0.0,1.0,inclusive="both").all():
+        raise SystemExit("candidate win probability outside [0,1]")
+    expected_k={"S0":None,"S1_K1":1,"S1_K2":2,"S1_K4":4,"S1_K8":8,
+      "S2_K1":1,"S2_K2":2,"S2_K4":4,"S2_K8":8}
+    for cid,kexp in expected_k.items():
+        z=pred[pred.candidate_id.eq(cid)]
+        if z.empty:
+            raise SystemExit(f"missing candidate id {cid}")
+        if kexp is None:
+            if z.k.notna().any(): raise SystemExit("S0 k must be null")
+        elif not z.k.eq(kexp).all():
+            raise SystemExit(f"candidate k mismatch {cid}")
     counts=pred.candidate_id.str.extract(r'^(S[012])')[0].value_counts().to_dict()
     if len(pred)!=expected: raise SystemExit("candidate row count mismatch")
     if counts.get("S0",0)!=expected_s0 or counts.get("S1",0)!=expected_s1 or counts.get("S2",0)!=expected_s2:
