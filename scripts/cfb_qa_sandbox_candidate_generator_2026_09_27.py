@@ -209,6 +209,15 @@ def main():
     if len(pred)!=expected: raise SystemExit("candidate row count mismatch")
     if counts.get("S0",0)!=expected_s0 or counts.get("S1",0)!=expected_s1 or counts.get("S2",0)!=expected_s2:
         raise SystemExit("candidate family cardinality mismatch")
+    expected_s2_omissions={
+      (2017,"400935254"),(2018,"401022521"),(2018,"401022524"),(2019,"401112443"),
+      (2020,"401246425"),(2022,"401403946"),(2022,"401403976"),(2022,"401405073"),
+      (2022,"401413257"),(2022,"401415219"),(2022,"401426543")}
+    s2_games=set(map(tuple,pred[pred.candidate_id.str.startswith("S2")][["season","game_id"]].drop_duplicates().to_numpy()))
+    all_games=set(map(tuple,work[["season","game_id"]].drop_duplicates().to_numpy()))
+    actual_s2_omissions=all_games-s2_games
+    if actual_s2_omissions!=expected_s2_omissions:
+        raise SystemExit("S2 omitted-game identity mismatch")
     p=out/"sandbox_candidate_predictions.csv"; pred.to_csv(p,index=False)
     config={"k_grid":list(KGRID),"features":FEATURES,"s2_mapping":MAP,
       "population_cutoff":"UTC_DATE_MIDNIGHT_STRICT_PRIOR",
