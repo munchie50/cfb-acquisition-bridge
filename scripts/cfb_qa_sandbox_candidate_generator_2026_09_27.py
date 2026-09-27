@@ -408,6 +408,14 @@ def main():
       "config_sha256":config_sha256,"config":config,
       "input_sha256":runtime_input_sha256,
       "prediction_sha256":sha(p)}
-    (out/"manifest.json").write_text(json.dumps(manifest,indent=2))
-    print(json.dumps(manifest,indent=2))
+    manifest_path=out/"manifest.json"
+    manifest_path.write_text(json.dumps(manifest,indent=2))
+    persisted_manifest=json.loads(manifest_path.read_text())
+    if persisted_manifest!=manifest:
+        raise SystemExit("manifest persistence/readback mismatch")
+    if persisted_manifest["status"]!="PREDICTIONS_FROZEN_NOT_SCORED" or persisted_manifest["outcomes_joined"] is not False:
+        raise SystemExit("manifest freeze-state mismatch")
+    if persisted_manifest["prediction_sha256"]!=sha(p):
+        raise SystemExit("manifest prediction hash readback mismatch")
+    print(json.dumps(persisted_manifest,indent=2))
 if __name__=="__main__": main()
