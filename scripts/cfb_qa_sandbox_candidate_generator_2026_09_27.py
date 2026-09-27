@@ -200,6 +200,13 @@ def main():
     elig=need.merge(side,on=["season","game_id","team"],how="left",validate="one_to_one")
     if len(elig)!=12492: raise SystemExit("eligible side join cardinality mismatch")
     if elig[FEATURES+["qualified_prior_games"]].isna().any().any(): raise SystemExit("eligible side missing feature/history")
+    accepted_history=elig[["season","game_id","team"]].merge(
+      feature_history[["season","game_id","team","mechanical_history_complete","derived_history_complete"]],
+      on=["season","game_id","team"],how="left",validate="one_to_one")
+    if accepted_history[["mechanical_history_complete","derived_history_complete"]].isna().any().any():
+        raise SystemExit("accepted side missing v1.172 history-complete state")
+    if not accepted_history["mechanical_history_complete"].astype(bool).all() or not accepted_history["derived_history_complete"].astype(bool).all():
+        raise SystemExit("accepted side has incomplete v1.172 history")
 
     # S0 executable equivalence: accepted v1.179 vector must match reconstructed v1.172 side state.
     side_lookup=side.set_index(["season","game_id","team"],drop=False)
