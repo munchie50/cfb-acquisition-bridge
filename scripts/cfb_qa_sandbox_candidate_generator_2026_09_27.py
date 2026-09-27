@@ -65,8 +65,12 @@ def main():
       "dataset":"f8c479c83abf5dac3be6dcb4bba3d6a0996ae2623297a9a3514465824b7c4af8",
       "scaling":"68fb5193ccb8828ac8d34dfe820101181c2bde078a04a6d5afd4c08bcf0cab45",
       "coefficients":"bf15ce41180bfb4e250d311df279e98c13b65432756ae07f7a30264cbae0e221"}
-    for label,path in (("dataset",a.dataset),("scaling",a.scaling),("coefficients",a.coefficients)):
-        if sha(path)!=expected_authoritative_sha256[label]:
+    input_paths={"dataset":a.dataset,"mechanical_primitives":a.mechanical_primitives,
+      "derived_primitives":a.derived_primitives,"mechanical_features":a.mechanical_features,
+      "derived_features":a.derived_features,"scaling":a.scaling,"coefficients":a.coefficients}
+    runtime_input_sha256={label:sha(path) for label,path in input_paths.items()}
+    for label in ("dataset","scaling","coefficients"):
+        if runtime_input_sha256[label]!=expected_authoritative_sha256[label]:
             raise SystemExit(f"authoritative input hash mismatch: {label}")
     ds=pd.read_csv(a.dataset,dtype={"game_id":str})
     if (ds.season==2025).any(): raise SystemExit("2025 TEST exposure")
@@ -388,9 +392,7 @@ def main():
       "candidate_ids":sorted(pred.candidate_id.unique()),"seasons":sorted(map(int,pred.season.unique())),
       "2025_accessed":False,"outcomes_joined":False,"generator_sha256":sha(__file__),
       "config_sha256":config_sha256,"config":config,
-      "input_sha256":{"dataset":sha(a.dataset),"mechanical_primitives":sha(a.mechanical_primitives),
-        "derived_primitives":sha(a.derived_primitives),"mechanical_features":sha(a.mechanical_features),
-        "derived_features":sha(a.derived_features),"scaling":sha(a.scaling),"coefficients":sha(a.coefficients)},
+      "input_sha256":runtime_input_sha256,
       "prediction_sha256":sha(p)}
     (out/"manifest.json").write_text(json.dumps(manifest,indent=2))
     print(json.dumps(manifest,indent=2))
