@@ -60,6 +60,10 @@ def main():
     ap.add_argument("--coefficients",required=True)
     ap.add_argument("--out",required=True)
     a=ap.parse_args(); out=Path(a.out); out.mkdir(parents=True,exist_ok=True)
+    stale_staging=[out/"sandbox_candidate_predictions.csv.tmp",out/"manifest.json.tmp"]
+    existing_staging=[str(p) for p in stale_staging if p.exists()]
+    if existing_staging:
+        raise SystemExit(f"stale sandbox staging artifact requires review: {existing_staging}")
 
     expected_authoritative_sha256={
       "dataset":"f8c479c83abf5dac3be6dcb4bba3d6a0996ae2623297a9a3514465824b7c4af8",
