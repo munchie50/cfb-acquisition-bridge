@@ -20,3 +20,8 @@ Execution evidence is observational downstream evidence only. It is never a Cham
 
 ## Initial state
 Do not backfill from memory. Previously established execution evidence may be appended only when its original evidence can be recovered and classified under the active screenshot/execution controls.
+
+## Write-path validation — 2026-09-27 13:03 CT
+- Purpose: controlled repair validation for canonical existing-file mutation.
+- Governance effect: none; no decision, execution, settlement, prediction, score, or outcome state created.
+- Method: SHA-guarded existing-file update followed by direct repository readback.
