@@ -149,6 +149,14 @@ def main():
     for z in (mf,df,mp,dp):
         if (z.season==2025).any(): raise SystemExit("2025 substrate exposure")
         z["start_date"]=pd.to_datetime(z["start_date"],utc=True)
+    for label,feature_surface in (("mechanical",mf),("derived",df)):
+        feature_counts=feature_surface.groupby(["season","game_id"]).size()
+        if not feature_counts.eq(2).all():
+            raise SystemExit(f"v1.172 feature game-side cardinality mismatch: {label}")
+        primitive_keys=set(map(tuple,mp[["season","game_id","team"]].to_numpy()))
+        feature_keys=set(map(tuple,feature_surface[["season","game_id","team"]].to_numpy()))
+        if feature_keys!=primitive_keys:
+            raise SystemExit(f"v1.172 feature/primitive team-side identity mismatch: {label}")
 
     accepted_identity=work[["season","game_id","start_date","home_team","away_team"]].merge(
       mp[["season","game_id","start_date","home_team","away_team"]].drop_duplicates(),
