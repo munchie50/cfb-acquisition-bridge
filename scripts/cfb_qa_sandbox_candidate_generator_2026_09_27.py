@@ -102,12 +102,12 @@ def main():
     structural_inputs={"mechanical_features":mf,"derived_features":df,
       "mechanical_primitives":mp,"derived_primitives":dp}
     required_columns={
-      "mechanical_features":{"season","game_id","team","start_date","qualified_prior_games",
+      "mechanical_features":{"season","game_id","team","start_date","qualified_prior_games","mechanical_history_complete",
         "points_for_per_game","points_against_per_game","offensive_scrimmage_plays_per_game",
         "defensive_scrimmage_plays_per_game","offensive_yards_per_play","defensive_yards_per_play",
         "rush_play_rate","pass_play_rate","rush_yards_per_play","pass_yards_per_play",
         "interception_rate","rest_days"},
-      "derived_features":{"season","game_id","team","start_date","qualified_prior_games",
+      "derived_features":{"season","game_id","team","start_date","qualified_prior_games","derived_history_complete",
         "offensive_explosive_play_rate","defensive_explosive_play_rate","offensive_success_rate",
         "defensive_success_rate_allowed","average_starting_yards_to_goal"},
       "mechanical_primitives":{"season","game_id","team","start_date","mechanical_primitive_complete",
@@ -170,6 +170,14 @@ def main():
         raise SystemExit("accepted/v1.172 home-team identity mismatch")
     if not accepted_identity["away_team_accepted"].eq(accepted_identity["away_team_v172"]).all():
         raise SystemExit("accepted/v1.172 away-team identity mismatch")
+
+    feature_history=mf[["season","game_id","team","qualified_prior_games","mechanical_history_complete"]].merge(
+      df[["season","game_id","team","qualified_prior_games","derived_history_complete"]],
+      on=["season","game_id","team"],how="inner",validate="one_to_one",suffixes=("_mechanical","_derived"))
+    if not feature_history["qualified_prior_games_mechanical"].eq(feature_history["qualified_prior_games_derived"]).all():
+        raise SystemExit("v1.172 mechanical/derived qualified-prior count mismatch")
+    if not feature_history["mechanical_history_complete"].eq(feature_history["derived_history_complete"]).all():
+        raise SystemExit("v1.172 mechanical/derived history-complete mismatch")
 
     # Feature-side table keyed to each team pregame state.
     side=mf[["season","game_id","team","start_date","qualified_prior_games"]+[x for x in FEATURES if x in mf]].merge(
