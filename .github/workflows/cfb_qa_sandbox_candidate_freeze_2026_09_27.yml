@@ -1,0 +1,114 @@
+name: CFB QA Sandbox Candidate Freeze 2026-09-27
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_qa_sandbox_candidate_freeze_2026_09_27.yml'
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check numpy pandas
+
+      - name: Acquire frozen authoritative artifacts
+        env:
+          GH_TOKEN: "${{ github.token }}"
+        run: |
+          set -euo pipefail
+          mkdir -p inputs/v172 inputs/v179 inputs/v183
+          gh api repos/${{ github.repository }}/actions/artifacts/10895523493/zip > /tmp/v172.zip
+          echo "702930b2ba905c9f917acbc627d12342e8190cfb44a4c8afd1aee49fbf59e239  /tmp/v172.zip" | sha256sum -c -
+          unzip -q /tmp/v172.zip -d inputs/v172
+          gh api repos/${{ github.repository }}/actions/artifacts/10896565577/zip > /tmp/v179.zip
+          echo "8eeb67f5da87df4a75f2f785838553679928e370eefeea3945f2b2e688e69780  /tmp/v179.zip" | sha256sum -c -
+          unzip -q /tmp/v179.zip -d inputs/v179
+          gh api repos/${{ github.repository }}/actions/artifacts/10895838069/zip > /tmp/v183.zip
+          echo "3a2cabfcd37e0bcf0cae85efc77eaa6755ffb12734d1e48c4c582ed1de375587  /tmp/v183.zip" | sha256sum -c -
+          unzip -q /tmp/v183.zip -d inputs/v183
+
+      - name: Verify frozen child identities
+        run: |
+          set -euo pipefail
+          test "$(find inputs/v179 -name challenger_b_dataset_v1_179.csv | wc -l)" -eq 1
+          test "$(find inputs/v172 -name challenger_b_mechanical_primitives_v1_172.csv | wc -l)" -eq 1
+          test "$(find inputs/v172 -name challenger_b_derived_primitives_v1_172.csv | wc -l)" -eq 1
+          test "$(find inputs/v172 -name challenger_b_mechanical_features_v1_172.csv | wc -l)" -eq 1
+          test "$(find inputs/v172 -name challenger_b_derived_features_v1_172.csv | wc -l)" -eq 1
+          test "$(find inputs/v183 -name train_scaling.csv | wc -l)" -eq 1
+          test "$(find inputs/v183 -name selected_coefficients.csv | wc -l)" -eq 1
+          DATASET="$(find inputs/v179 -name challenger_b_dataset_v1_179.csv)"
+          MP="$(find inputs/v172 -name challenger_b_mechanical_primitives_v1_172.csv)"
+          DP="$(find inputs/v172 -name challenger_b_derived_primitives_v1_172.csv)"
+          MF="$(find inputs/v172 -name challenger_b_mechanical_features_v1_172.csv)"
+          DF="$(find inputs/v172 -name challenger_b_derived_features_v1_172.csv)"
+          SCALING="$(find inputs/v183 -name train_scaling.csv)"
+          COEF="$(find inputs/v183 -name selected_coefficients.csv)"
+          echo "f8c479c83abf5dac3be6dcb4bba3d6a0996ae2623297a9a3514465824b7c4af8  $DATASET" | sha256sum -c -
+          echo "bc02b5cc41eee5cd6f109ccef625c73258efd6347c5d81a8754be4b3a93f4563  $MP" | sha256sum -c -
+          echo "f5a4fac267109cc4b06ceccfa883f1ffaec0ed789aee6c69b25a783a708b8782  $DP" | sha256sum -c -
+          echo "57aefddf68afdd996c914e5a98bf0ba31710d2a83cf11b192354e93328872a9b  $MF" | sha256sum -c -
+          echo "2d36ab91b5d5660e5a7d713b6b89480b93f4ccc31fa6dc30034f9eeba5d60c58  $DF" | sha256sum -c -
+          echo "68fb5193ccb8828ac8d34dfe820101181c2bde078a04a6d5afd4c08bcf0cab45  $SCALING" | sha256sum -c -
+          echo "bf15ce41180bfb4e250d311df279e98c13b65432756ae07f7a30264cbae0e221  $COEF" | sha256sum -c -
+
+      - name: Verify and compile frozen generator
+        run: |
+          set -euo pipefail
+          echo "638c4a774e0159f59b185635359624670efa1208c1521f6ba8d9f8eb1f556a95  scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py" | sha256sum -c -
+          python -m py_compile scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py
+
+      - name: Generate outcome-blind frozen candidates
+        run: |
+          set -euo pipefail
+          test ! -e sandbox_freeze
+          DATASET="$(find inputs/v179 -name challenger_b_dataset_v1_179.csv)"
+          MP="$(find inputs/v172 -name challenger_b_mechanical_primitives_v1_172.csv)"
+          DP="$(find inputs/v172 -name challenger_b_derived_primitives_v1_172.csv)"
+          MF="$(find inputs/v172 -name challenger_b_mechanical_features_v1_172.csv)"
+          DF="$(find inputs/v172 -name challenger_b_derived_features_v1_172.csv)"
+          SCALING="$(find inputs/v183 -name train_scaling.csv)"
+          COEF="$(find inputs/v183 -name selected_coefficients.csv)"
+          python scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py             --dataset "$DATASET"             --mechanical-primitives "$MP"             --derived-primitives "$DP"             --mechanical-features "$MF"             --derived-features "$DF"             --scaling "$SCALING"             --coefficients "$COEF"             --out sandbox_freeze
+
+      - name: Independent frozen-output gate
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, pandas as pd
+          from pathlib import Path
+          p=Path("sandbox_freeze")
+          m=json.loads((p/"manifest.json").read_text())
+          x=pd.read_csv(p/"sandbox_candidate_predictions.csv",dtype={"game_id":str})
+          expected={"S0","S1_K1","S1_K2","S1_K4","S1_K8","S2_K1","S2_K2","S2_K4","S2_K8"}
+          assert m["status"]=="PREDICTIONS_FROZEN_NOT_SCORED"
+          assert m["games"]==6246 and m["prediction_rows"]==56170
+          assert m["2025_accessed"] is False and m["outcomes_joined"] is False
+          assert set(m["candidate_ids"])==expected
+          assert len(x)==56170 and set(x["candidate_id"])==expected
+          assert 2025 not in set(x["season"].astype(int))
+          forbidden=("actual","outcome","market","spread","odds","wager","stake","closing")
+          assert not any(any(t in str(c).lower() for t in forbidden) for c in x.columns)
+          counts=x["candidate_id"].value_counts().to_dict()
+          assert counts["S0"]==6246
+          assert sum(v for k,v in counts.items() if k.startswith("S1_"))==24984
+          assert sum(v for k,v in counts.items() if k.startswith("S2_"))==24940
+          print("INDEPENDENT_FREEZE_GATE_PASS",len(x),counts)
+          PY
+          sha256sum sandbox_freeze/sandbox_candidate_predictions.csv sandbox_freeze/manifest.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-qa-sandbox-candidate-freeze-2026-09-27
+          path: sandbox_freeze/
+          if-no-files-found: error
