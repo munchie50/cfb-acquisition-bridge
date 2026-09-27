@@ -27,3 +27,13 @@ This file defines the durable surface. Historical 2026 scoring is populated only
 - Purpose: controlled repair validation for canonical existing-file mutation.
 - Governance effect: none; no decision, execution, settlement, prediction, score, or outcome state created.
 - Method: SHA-guarded existing-file update followed by direct repository readback.
+
+
+## Week 4 QA summary — 2026-09-27
+- 53 frozen games matched to 53 final results; no unresolved matches.
+- Winner direction: 36/53 (67.9%).
+- Margin mean absolute error: 14.781 points.
+- Total mean absolute error: 11.071 points.
+- Frozen prediction source: artifact 10897612260.
+- Final result source: CBS Sports Week 4 FBS scoreboard retrieved 2026-09-27.
+- This append does not alter any frozen prediction.
