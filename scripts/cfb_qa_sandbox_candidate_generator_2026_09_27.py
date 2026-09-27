@@ -267,9 +267,14 @@ def main():
 
     # Build game/opponent lookup and source histories from accepted primitive identities.
     ident=mp[["season","game_id","team","start_date","home_team","away_team"]].copy()
-    ident["opponent"]=np.where(ident.team==ident.home_team,ident.away_team,
-                      np.where(ident.team==ident.away_team,ident.home_team,None))
-    if ident.opponent.isna().any(): raise SystemExit("opponent identity failure")
+    if ident["home_team"].eq(ident["away_team"]).any():
+        raise SystemExit("primitive game has identical home/away team")
+    valid_membership=ident["team"].eq(ident["home_team"])|ident["team"].eq(ident["away_team"])
+    if not valid_membership.all():
+        raise SystemExit("primitive team-side is not a home/away participant")
+    ident["opponent"]=np.where(ident.team==ident.home_team,ident.away_team,ident.home_team)
+    if ident["opponent"].eq(ident["team"]).any():
+        raise SystemExit("primitive opponent self-reference")
     side_idx=side.set_index(["season","game_id","team"],drop=False)
 
     def s2(row,feature,k):
