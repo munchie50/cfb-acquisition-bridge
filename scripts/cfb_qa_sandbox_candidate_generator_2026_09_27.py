@@ -226,6 +226,18 @@ def main():
     coef=pd.read_csv(a.coefficients)
     EXPECTED34=set(["home_"+x for x in FEATURES]+["away_"+x for x in FEATURES])
     if set(scale.index)!=EXPECTED34: raise SystemExit("scaling feature mismatch")
+    if not np.isfinite(scale[["mean","sd"]].to_numpy(dtype=float)).all():
+        raise SystemExit("non-finite scaling surface")
+    if not scale["sd"].gt(0).all(): raise SystemExit("non-positive scaling sd")
+    expected_terms=EXPECTED34|{"intercept","venue_neutral"}
+    expected_targets={"margin","total","win"}
+    if set(coef["target"])!=expected_targets: raise SystemExit("coefficient target mismatch")
+    if coef.duplicated(["target","term"]).any(): raise SystemExit("duplicate coefficient term")
+    for target in expected_targets:
+        if set(coef.loc[coef.target.eq(target),"term"])!=expected_terms:
+            raise SystemExit(f"coefficient term coverage mismatch: {target}")
+    if not np.isfinite(coef["coefficient"].to_numpy(dtype=float)).all():
+        raise SystemExit("non-finite coefficient surface")
     rows=[]
     work["start_date"]=pd.to_datetime(work.start_date,utc=True)
     for game in work.itertuples():
