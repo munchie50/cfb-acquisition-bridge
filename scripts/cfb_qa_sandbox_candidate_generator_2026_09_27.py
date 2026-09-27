@@ -93,6 +93,17 @@ def main():
         keysets[label]=set(map(tuple,frame[key].to_numpy()))
     if any(s!=keysets["mechanical_features"] for s in keysets.values()):
         raise SystemExit("v1.172 team-side key reconciliation mismatch")
+    chronology=mf[key+["start_date"]].rename(columns={"start_date":"mf_start_date"})
+    for label,frame in structural_inputs.items():
+        z=chronology.merge(frame[key+["start_date"]],on=key,how="left")
+        if not z["mf_start_date"].eq(z["start_date"]).all():
+            raise SystemExit(f"v1.172 start_date reconciliation mismatch: {label}")
+    prim_ident=mp[key+["home_team","away_team"]].merge(
+      dp[key+["home_team","away_team"]],on=key,suffixes=("_mechanical","_derived"))
+    if not prim_ident["home_team_mechanical"].eq(prim_ident["home_team_derived"]).all():
+        raise SystemExit("v1.172 primitive home-team identity mismatch")
+    if not prim_ident["away_team_mechanical"].eq(prim_ident["away_team_derived"]).all():
+        raise SystemExit("v1.172 primitive away-team identity mismatch")
     for z in (mf,df,mp,dp):
         if (z.season==2025).any(): raise SystemExit("2025 substrate exposure")
         z["start_date"]=pd.to_datetime(z["start_date"],utc=True)
