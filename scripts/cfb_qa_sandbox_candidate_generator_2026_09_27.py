@@ -108,6 +108,19 @@ def main():
         if (z.season==2025).any(): raise SystemExit("2025 substrate exposure")
         z["start_date"]=pd.to_datetime(z["start_date"],utc=True)
 
+    accepted_identity=work[["season","game_id","start_date","home_team","away_team"]].merge(
+      mp[["season","game_id","start_date","home_team","away_team"]].drop_duplicates(),
+      on=["season","game_id"],how="left",validate="one_to_one",suffixes=("_accepted","_v172"),indicator=True)
+    if not accepted_identity["_merge"].eq("both").all():
+        raise SystemExit("accepted game missing from v1.172 substrate")
+    if not pd.to_datetime(accepted_identity["start_date_accepted"],utc=True).eq(
+      pd.to_datetime(accepted_identity["start_date_v172"],utc=True)).all():
+        raise SystemExit("accepted/v1.172 kickoff identity mismatch")
+    if not accepted_identity["home_team_accepted"].eq(accepted_identity["home_team_v172"]).all():
+        raise SystemExit("accepted/v1.172 home-team identity mismatch")
+    if not accepted_identity["away_team_accepted"].eq(accepted_identity["away_team_v172"]).all():
+        raise SystemExit("accepted/v1.172 away-team identity mismatch")
+
     # Feature-side table keyed to each team pregame state.
     side=mf[["season","game_id","team","start_date","qualified_prior_games"]+[x for x in FEATURES if x in mf]].merge(
         df[["season","game_id","team"]+[x for x in FEATURES if x in df]],
