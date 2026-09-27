@@ -285,7 +285,10 @@ def main():
                 for name,val in vec.items():
                     z+=((val-float(scale.loc[name,"mean"]))/float(scale.loc[name,"sd"]))*float(w[name])
                 z+=(1.0 if game.venue_state=="NEUTRAL" else 0.0)*float(w["venue_neutral"])
-                return 1/(1+np.exp(-np.clip(z,-40,40))) if target=="win" else z
+                if not np.isfinite(z): raise RuntimeError(f"non-finite model score: {target}")
+                if target=="win" and abs(z)>=40:
+                    raise RuntimeError("win logit reached numerical saturation guard")
+                return 1/(1+np.exp(-z)) if target=="win" else z
             rows.append({"season":int(game.season),"game_id":str(game.game_id),
                 "start_date":game.start_date.isoformat(),"home_team":game.home_team,
                 "away_team":game.away_team,"venue_state":game.venue_state,
