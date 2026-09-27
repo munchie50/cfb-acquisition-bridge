@@ -133,7 +133,14 @@ def main():
     homes=work[["season","game_id","start_date","home_team"]].rename(columns={"home_team":"team"})
     aways=work[["season","game_id","start_date","away_team"]].rename(columns={"away_team":"team"})
     need=pd.concat([homes,aways],ignore_index=True)[["season","game_id","team"]]
+    if len(need)!=12492: raise SystemExit("accepted side cardinality mismatch")
+    if need.duplicated(["season","game_id","team"]).any():
+        raise SystemExit("duplicate accepted team-side")
+    side_counts=need.groupby(["season","game_id"])["team"].nunique()
+    if len(side_counts)!=6246 or not side_counts.eq(2).all():
+        raise SystemExit("accepted game does not resolve to two distinct team-sides")
     elig=need.merge(side,on=["season","game_id","team"],how="left",validate="one_to_one")
+    if len(elig)!=12492: raise SystemExit("eligible side join cardinality mismatch")
     if elig[FEATURES+["qualified_prior_games"]].isna().any().any(): raise SystemExit("eligible side missing feature/history")
 
     # Frozen pooled-component population baselines: season-local and strict-cutoff-local.
