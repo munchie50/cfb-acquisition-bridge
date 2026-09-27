@@ -205,7 +205,16 @@ def main():
       on=["season","game_id","team"],how="left",validate="one_to_one")
     if accepted_history[["mechanical_history_complete","derived_history_complete"]].isna().any().any():
         raise SystemExit("accepted side missing v1.172 history-complete state")
-    if not accepted_history["mechanical_history_complete"].astype(bool).all() or not accepted_history["derived_history_complete"].astype(bool).all():
+    def strict_complete_flag(series,label):
+        normalized=series.map(lambda v: str(v).strip().lower())
+        allowed={"true","false","1","0"}
+        unknown=set(normalized.unique())-allowed
+        if unknown:
+            raise SystemExit(f"unrecognized v1.172 history-complete encoding: {label}: {sorted(unknown)}")
+        return normalized.isin({"true","1"})
+    mechanical_complete=strict_complete_flag(accepted_history["mechanical_history_complete"],"mechanical")
+    derived_complete=strict_complete_flag(accepted_history["derived_history_complete"],"derived")
+    if not mechanical_complete.all() or not derived_complete.all():
         raise SystemExit("accepted side has incomplete v1.172 history")
 
     # S0 executable equivalence: accepted v1.179 vector must match reconstructed v1.172 side state.
