@@ -176,7 +176,16 @@ def main():
       on=["season","game_id","team"],how="inner",validate="one_to_one",suffixes=("_mechanical","_derived"))
     if not feature_history["qualified_prior_games_mechanical"].eq(feature_history["qualified_prior_games_derived"]).all():
         raise SystemExit("v1.172 mechanical/derived qualified-prior count mismatch")
-    if not feature_history["mechanical_history_complete"].eq(feature_history["derived_history_complete"]).all():
+    def normalize_complete_flag(series,label):
+        normalized=series.map(lambda v: str(v).strip().lower())
+        allowed={"true","false","1","0"}
+        unknown=set(normalized.unique())-allowed
+        if unknown:
+            raise SystemExit(f"unrecognized v1.172 history-complete encoding: {label}: {sorted(unknown)}")
+        return normalized.isin({"true","1"})
+    mechanical_history_flag=normalize_complete_flag(feature_history["mechanical_history_complete"],"mechanical")
+    derived_history_flag=normalize_complete_flag(feature_history["derived_history_complete"],"derived")
+    if not mechanical_history_flag.eq(derived_history_flag).all():
         raise SystemExit("v1.172 mechanical/derived history-complete mismatch")
 
     # Feature-side table keyed to each team pregame state.
@@ -205,15 +214,8 @@ def main():
       on=["season","game_id","team"],how="left",validate="one_to_one")
     if accepted_history[["mechanical_history_complete","derived_history_complete"]].isna().any().any():
         raise SystemExit("accepted side missing v1.172 history-complete state")
-    def strict_complete_flag(series,label):
-        normalized=series.map(lambda v: str(v).strip().lower())
-        allowed={"true","false","1","0"}
-        unknown=set(normalized.unique())-allowed
-        if unknown:
-            raise SystemExit(f"unrecognized v1.172 history-complete encoding: {label}: {sorted(unknown)}")
-        return normalized.isin({"true","1"})
-    mechanical_complete=strict_complete_flag(accepted_history["mechanical_history_complete"],"mechanical")
-    derived_complete=strict_complete_flag(accepted_history["derived_history_complete"],"derived")
+    mechanical_complete=normalize_complete_flag(accepted_history["mechanical_history_complete"],"mechanical")
+    derived_complete=normalize_complete_flag(accepted_history["derived_history_complete"],"derived")
     if not mechanical_complete.all() or not derived_complete.all():
         raise SystemExit("accepted side has incomplete v1.172 history")
 
