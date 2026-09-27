@@ -389,7 +389,13 @@ def main():
     if final_input_sha256!=runtime_input_sha256:
         changed=sorted(label for label in input_paths if final_input_sha256[label]!=runtime_input_sha256[label])
         raise SystemExit(f"runtime input changed during candidate construction: {changed}")
-    p=out/"sandbox_candidate_predictions.csv"; pred.to_csv(p,index=False)
+    p=out/"sandbox_candidate_predictions.csv"
+    p_tmp=out/"sandbox_candidate_predictions.csv.tmp"
+    pred.to_csv(p_tmp,index=False)
+    staged=pd.read_csv(p_tmp,dtype={"game_id":str})
+    if list(staged.columns)!=list(pred.columns) or len(staged)!=len(pred):
+        raise SystemExit("staged prediction schema/cardinality mismatch")
+    os.replace(p_tmp,p)
     persisted=pd.read_csv(p,dtype={"game_id":str})
     if list(persisted.columns)!=list(pred.columns) or len(persisted)!=len(pred):
         raise SystemExit("prediction persistence schema/cardinality mismatch")
