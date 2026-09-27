@@ -47,6 +47,13 @@ def main():
     ap.add_argument("--out",required=True)
     a=ap.parse_args(); out=Path(a.out); out.mkdir(parents=True,exist_ok=True)
 
+    expected_authoritative_sha256={
+      "dataset":"f8c479c83abf5dac3be6dcb4bba3d6a0996ae2623297a9a3514465824b7c4af8",
+      "scaling":"68fb5193ccb8828ac8d34dfe820101181c2bde078a04a6d5afd4c08bcf0cab45",
+      "coefficients":"bf15ce41180bfb4e250d311df279e98c13b65432756ae07f7a30264cbae0e221"}
+    for label,path in (("dataset",a.dataset),("scaling",a.scaling),("coefficients",a.coefficients)):
+        if sha(path)!=expected_authoritative_sha256[label]:
+            raise SystemExit(f"authoritative input hash mismatch: {label}")
     ds=pd.read_csv(a.dataset,dtype={"game_id":str})
     if (ds.season==2025).any(): raise SystemExit("2025 TEST exposure")
     # Outcome columns may exist in the accepted dataset, but are stripped before candidate construction.
