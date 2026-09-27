@@ -293,7 +293,12 @@ def main():
                 for f in FEATURES:
                     if cid=="S0": hv[f]=float(hs[f]); av[f]=float(as_[f])
                     elif kind=="S1": hv[f]=s1(hs,f,k); av[f]=s1(as_,f,k)
-                    else: hv[f]=s2(hs,f,k); av[f]=s2(as_,f,k)
+                    else:
+                        hv[f]=s2(hs,f,k); av[f]=s2(as_,f,k)
+                        if f not in MAP:
+                            h1=s1(hs,f,k); a1=s1(as_,f,k)
+                            if hv[f] != h1 or av[f] != a1:
+                                raise RuntimeError("S2 altered frozen S1-only feature")
             except RuntimeError as e:
                 if kind=="S2" and str(e)=="no valid completion-safe S2 context":
                     unavailable=True
