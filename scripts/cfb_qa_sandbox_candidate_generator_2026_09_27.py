@@ -77,20 +77,46 @@ def main():
     elig=need.merge(side,on=["season","game_id","team"],how="left",validate="one_to_one")
     if elig[FEATURES+["qualified_prior_games"]].isna().any().any(): raise SystemExit("eligible side missing feature/history")
 
-    # Strict-prior population baseline from pregame feature states. This implementation
-    # intentionally refuses full-season grouping; each lookup is bounded by kickoff.
+    # Frozen pooled-component population baselines: season-local and strict-cutoff-local.
     side=side.sort_values("start_date")
-    def baseline(feature,t):
-        z=side[(side.start_date<t)&side[feature].notna()]
-        if z.empty: raise RuntimeError("unreproducible baseline")
-        return float(z[feature].mean())
+    COMPONENTS={
+      "points_for_per_game":("M","game_points_for","GAME"),
+      "points_against_per_game":("M","game_points_against","GAME"),
+      "offensive_scrimmage_plays_per_game":("M","off_plays","GAME"),
+      "defensive_scrimmage_plays_per_game":("M","def_plays","GAME"),
+      "offensive_yards_per_play":("M","off_yards","off_plays"),
+      "defensive_yards_per_play":("M","def_yards","def_plays"),
+      "rush_play_rate":("M","rush_plays","off_plays"),
+      "pass_play_rate":("M","pass_plays","off_plays"),
+      "rush_yards_per_play":("M","rush_yards","rush_plays"),
+      "pass_yards_per_play":("M","pass_yards","pass_plays"),
+      "interception_rate":("M","interceptions","pass_attempts"),
+      "offensive_explosive_play_rate":("D","off_exp","off_scr"),
+      "defensive_explosive_play_rate":("D","def_exp","def_scr"),
+      "offensive_success_rate":("D","off_succ","off_succ_q"),
+      "defensive_success_rate_allowed":("D","def_succ","def_succ_q"),
+      "average_starting_yards_to_goal":("D","start_ytg_sum","start_drive_n")}
+    def baseline(feature,t,season):
+        if feature=="rest_days":
+            z=side[(side.season==season)&(side.start_date<t)&side.rest_days.notna()]
+            if z.empty: raise RuntimeError("unreproducible rest-days baseline")
+            return float(z.rest_days.mean())
+        typ,num,den=COMPONENTS[feature]
+        src=mp if typ=="M" else dp
+        complete="mechanical_primitive_complete" if typ=="M" else "derived_primitive_complete"
+        z=src[(src.season==season)&(src.start_date<t)&src[complete].astype(bool)].copy()
+        if z.empty: raise RuntimeError("unreproducible component baseline")
+        n=float(z[num].sum())
+        d=float(len(z)) if den=="GAME" else float(z[den].sum())
+        if not np.isfinite(d) or d<=0: raise RuntimeError("zero/unavailable pooled denominator")
+        return n/d
 
     # S1 states for any side on demand.
     cache={}
     def s1(row,feature,k):
         key=(row.season,row.game_id,row.team,feature,k)
         if key in cache:return cache[key]
-        b=baseline(feature,row.start_date); n=float(row.qualified_prior_games)
+        b=baseline(feature,row.start_date,row.season); n=float(row.qualified_prior_games)
         v=n/(n+k)*float(row[feature])+k/(n+k)*b
         cache[key]=v; return v
 
@@ -114,7 +140,7 @@ def main():
             opp=side_idx.loc[key]
             if not opp.start_date < row.start_date: raise RuntimeError("future context")
             # Opponent context is S1 at the source game's pregame state; no S2 recursion.
-            ob=baseline(pair,opp.start_date)
+            ob=baseline(pair,opp.start_date,opp.season)
             ov=s1(opp,pair,k)
             residuals.append(ov-ob)
         return base-float(np.mean(residuals)) if residuals else base
