@@ -268,6 +268,8 @@ def main():
             key=(g.season,g.game_id,g.opponent)
             if key not in side_idx.index: raise RuntimeError("missing opponent pregame state")
             opp=side_idx.loc[key]
+            if opp.start_date != g.start_date:
+                raise RuntimeError("opponent/source kickoff identity mismatch")
             if not opp.start_date < row.start_date: raise RuntimeError("future context")
             # Opponent context is S1 at the source game's pregame state; no S2 recursion.
             try:
