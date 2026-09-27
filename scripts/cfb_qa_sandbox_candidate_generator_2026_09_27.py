@@ -303,17 +303,22 @@ def main():
         if k not in KGRID: raise RuntimeError("S1 k outside frozen grid")
         b=baseline(feature,row.start_date,row.season); n=float(row.qualified_prior_games)
         raw=float(row[feature])
-        if not np.isfinite(n) or n<=0 or not n.is_integer():
+        if not np.isfinite(n) or n<0 or not n.is_integer():
             raise RuntimeError("invalid S1 qualified-prior count")
-        if not np.isfinite(raw) or not np.isfinite(b):
-            raise RuntimeError("non-finite S1 input")
-        weight=n/(n+k)
-        if not 0.0<weight<1.0: raise RuntimeError("invalid S1 shrinkage weight")
-        v=weight*raw+(1.0-weight)*b
+        if not np.isfinite(b):
+            raise RuntimeError("non-finite S1 baseline")
+        if n==0:
+            v=b
+        else:
+            if not np.isfinite(raw):
+                raise RuntimeError("non-finite S1 input")
+            weight=n/(n+k)
+            if not 0.0<weight<1.0: raise RuntimeError("invalid S1 shrinkage weight")
+            v=weight*raw+(1.0-weight)*b
+            lo=min(raw,b); hi=max(raw,b)
+            if v < lo-1e-12 or v > hi+1e-12:
+                raise RuntimeError("S1 convex-combination invariant failure")
         if not np.isfinite(v): raise RuntimeError("non-finite S1 output")
-        lo=min(raw,b); hi=max(raw,b)
-        if v < lo-1e-12 or v > hi+1e-12:
-            raise RuntimeError("S1 convex-combination invariant failure")
         cache[key]=v; return v
 
     # Build game/opponent lookup and source histories from accepted primitive identities.
@@ -343,23 +348,29 @@ def main():
                 raise RuntimeError("opponent/source kickoff identity mismatch")
             if not opp.start_date < row.start_date: raise RuntimeError("future context")
             # Opponent context is S1 at the source game's pregame state; no S2 recursion.
-            # A source-game opponent with no qualified prior team history has
-            # no pregame S1 state. The frozen chronology audit classifies that
-            # source residual as unavailable context; omit it rather than aborting
-            # the entire target. The target still fails closed below if no valid
-            # completion-safe S2 residual survives.
-            oq=float(opp.qualified_prior_games)
-            if np.isfinite(oq) and oq==0:
-                continue
+            # Zero-history S1 is the frozen formula's baseline-only limit, so its
+            # residual is zero when a completion-safe baseline exists. Incomplete
+            # positive-history opponent states are unavailable source context.
             try:
                 ob=baseline(pair,opp.start_date,opp.season)
-                ov=s1(opp,pair,k)
             except RuntimeError as e:
-                # Only absence of a completion-safe population pool is an expected
-                # source-context omission. Other baseline defects fail closed.
                 if str(e) in ("unreproducible component baseline","unreproducible rest-days baseline"):
                     continue
                 raise
+            oq=float(opp.qualified_prior_games)
+            if not np.isfinite(oq) or oq<0 or not oq.is_integer():
+                raise RuntimeError("invalid opponent qualified-prior count")
+            if oq==0:
+                residuals.append(0.0)
+                continue
+            hkey=(opp.season,opp.game_id,opp.team)
+            hrow=feature_history.set_index(["season","game_id","team"]).loc[hkey]
+            if not bool(normalize_complete_flag(pd.Series([hrow.mechanical_history_complete]),"mechanical").iloc[0]) or not bool(normalize_complete_flag(pd.Series([hrow.derived_history_complete]),"derived").iloc[0]):
+                continue
+            raw_pair=float(opp[pair])
+            if not np.isfinite(raw_pair):
+                continue
+            ov=s1(opp,pair,k)
             residuals.append(ov-ob)
         if not residuals:
             raise RuntimeError("no valid completion-safe S2 context")
@@ -430,10 +441,10 @@ def main():
                 "pred_total":pred34("total"),"pred_win":pred34("win")})
     pred=pd.DataFrame(rows)
     if any(FORBID.search(c) for c in pred.columns): raise SystemExit("forbidden prediction column")
-    expected=56170
+    expected=56166
     expected_s0=len(work)
     expected_s1=len(work)*4
-    expected_s2=(len(work)-11)*4
+    expected_s2=(len(work)-12)*4
     if pred.duplicated(["season","game_id","candidate_id"]).any():
         raise SystemExit("duplicate candidate prediction rows")
     vals=pred[["pred_margin","pred_total","pred_win"]].to_numpy(dtype=float)
@@ -456,7 +467,7 @@ def main():
     if counts.get("S0",0)!=expected_s0 or counts.get("S1",0)!=expected_s1 or counts.get("S2",0)!=expected_s2:
         raise SystemExit("candidate family cardinality mismatch")
     expected_s2_omissions={
-      (2017,"400935254"),(2018,"401022521"),(2018,"401022524"),(2019,"401112443"),
+      (2016,"400869117"),(2017,"400935254"),(2018,"401022521"),(2018,"401022524"),(2019,"401112443"),
       (2020,"401246425"),(2022,"401403946"),(2022,"401403976"),(2022,"401405073"),
       (2022,"401413257"),(2022,"401415219"),(2022,"401426543")}
     s2_games=set(map(tuple,pred[pred.candidate_id.str.startswith("S2")][["season","game_id"]].drop_duplicates().to_numpy()))
@@ -489,7 +500,7 @@ def main():
             raise SystemExit(f"prediction persistence numeric mismatch: {col}")
     config={"k_grid":list(KGRID),"features":FEATURES,"s2_mapping":MAP,
       "population_cutoff":"UTC_DATE_MIDNIGHT_STRICT_PRIOR",
-      "s2_fail_closed":True,"expected_prediction_rows":56170}
+      "s2_fail_closed":True,"expected_prediction_rows":56166}
     config_sha256=hashlib.sha256(json.dumps(config,sort_keys=True,separators=(",",":")).encode()).hexdigest()
     manifest={"status":"PREDICTIONS_FROZEN_NOT_SCORED","games":len(work),"prediction_rows":len(pred),
       "candidate_ids":sorted(pred.candidate_id.unique()),"seasons":sorted(map(int,pred.season.unique())),
