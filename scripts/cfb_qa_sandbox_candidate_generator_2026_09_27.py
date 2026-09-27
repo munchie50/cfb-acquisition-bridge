@@ -393,9 +393,11 @@ def main():
     persisted=pd.read_csv(p,dtype={"game_id":str})
     if list(persisted.columns)!=list(pred.columns) or len(persisted)!=len(pred):
         raise SystemExit("prediction persistence schema/cardinality mismatch")
-    idcols=["season","game_id","candidate_id"]
-    if not persisted[idcols].astype(str).equals(pred[idcols].astype(str).reset_index(drop=True)):
-        raise SystemExit("prediction persistence identity mismatch")
+    identity_cols=["season","game_id","start_date","home_team","away_team","venue_state","candidate_id"]
+    if not persisted[identity_cols].astype(str).equals(pred[identity_cols].astype(str).reset_index(drop=True)):
+        raise SystemExit("prediction persistence identity/metadata mismatch")
+    if not persisted["k"].fillna(-1).astype(int).equals(pred["k"].fillna(-1).astype(int).reset_index(drop=True)):
+        raise SystemExit("prediction persistence k mismatch")
     for col in ("pred_margin","pred_total","pred_win"):
         if not np.allclose(persisted[col].to_numpy(dtype=float),pred[col].to_numpy(dtype=float),
                            rtol=0.0,atol=1e-12,equal_nan=False):
