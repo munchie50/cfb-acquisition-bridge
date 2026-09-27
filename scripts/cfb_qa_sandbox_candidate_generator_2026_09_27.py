@@ -343,6 +343,14 @@ def main():
                 raise RuntimeError("opponent/source kickoff identity mismatch")
             if not opp.start_date < row.start_date: raise RuntimeError("future context")
             # Opponent context is S1 at the source game's pregame state; no S2 recursion.
+            # A source-game opponent with no qualified prior team history has
+            # no pregame S1 state. The frozen chronology audit classifies that
+            # source residual as unavailable context; omit it rather than aborting
+            # the entire target. The target still fails closed below if no valid
+            # completion-safe S2 residual survives.
+            oq=float(opp.qualified_prior_games)
+            if np.isfinite(oq) and oq==0:
+                continue
             try:
                 ob=baseline(pair,opp.start_date,opp.season)
                 ov=s1(opp,pair,k)
