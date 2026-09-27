@@ -285,7 +285,7 @@ def main():
         src=mp if typ=="M" else dp
         complete="mechanical_primitive_complete" if typ=="M" else "derived_primitive_complete"
         cutoff=pd.Timestamp(t).normalize()
-        z=src[(src.season==season)&(src.start_date<cutoff)&src[complete].astype(bool)].copy()
+        z=src[(src.season==season)&(src.start_date<cutoff)&normalize_complete_flag(src[complete],complete)].copy()
         if z.empty: raise RuntimeError("unreproducible component baseline")
         n=float(z[num].sum())
         d=float(len(z)) if den=="GAME" else float(z[den].sum())
