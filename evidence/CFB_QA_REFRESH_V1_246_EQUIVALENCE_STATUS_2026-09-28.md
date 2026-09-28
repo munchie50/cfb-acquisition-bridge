@@ -94,3 +94,17 @@ Recovery audit found:
 - current upstream bytes may not substitute for frozen source bytes.
 
 Gate remains PENDING.
+
+
+## Alternate scientific-equivalence proof design — frozen downstream substrate
+The exact 2026 PBP RDS container used by v1.206 is no longer recoverable from the mutable upstream release. This does not authorize substitution of current PBP bytes and does not convert the raw-byte replay gate to PASS.
+
+A separate bounded proof is authorized for QA construction validation:
+1. Treat accepted v1.206 artifact 10897612260 (digest sha256:772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf) as immutable downstream scientific authority.
+2. The accepted feature-eligibility ledger is the boundary after strict-prior schedule/PBP feature construction. For eligible sides it preserves the 17 model feature values consumed by the prediction matrix; chronology audit preserves prior-game counts/max-prior kickoff/strict chronology; target ledger preserves target population; exclusions preserve fail-closed disposition; predictions preserve final standardized Champion-model outputs.
+3. Compare v1.206 and v1.246 source from that boundary forward: identical feature ordering, scaling identity checks, standardization, coefficient application, probability transformation, and prediction invariants, allowing only generalized target/snapshot metadata/output naming differences already enumerated.
+4. Independently recompute accepted v1.206 final predictions from its preserved feature ledger plus the frozen accepted fit artifact and require exact agreement within the existing 1e-12 numeric tolerance.
+5. If steps 3–4 pass, classify SCIENTIFIC TRANSFORMATION EQUIVALENCE PASS FROM ACCEPTED FEATURE BOUNDARY. Do not call RAW-SOURCE BYTE REPLAY PASS; that remains unresolved because the historical RDS container was overwritten upstream.
+6. This proof may validate v1.246 construction semantics but may not authorize production promotion, Champion mutation, retrospective data replacement, or use of current PBP as a substitute.
+
+Reason: RDS serialization bytes are transport/container provenance. The model consumes the loaded strict-prior projected feature values; those consumed values and their chronology/fail-closed outcomes were durably preserved in the accepted v1.206 artifact.
