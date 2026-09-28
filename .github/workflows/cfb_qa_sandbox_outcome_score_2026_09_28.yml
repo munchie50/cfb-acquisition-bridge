@@ -28,7 +28,7 @@ jobs:
           echo "8955c64f72ea8068279aed3b4ac1f062200394fbc1eb278cb1864de4da9fe5c9  /tmp/freeze.zip" | sha256sum -c -
           unzip -q /tmp/freeze.zip -d frozen
           gh api repos/${{ github.repository }}/actions/artifacts/10896565577/zip > /tmp/v179.zip
-          echo "8eeb67f5da87df4a75f2f785838553679928e370eefea3945f2b2e688e69780  /tmp/v179.zip" | sha256sum -c -
+          echo "8eeb67f5da87df4a75f2f785838553679928e370eefeea3945f2b2e688e69780  /tmp/v179.zip" | sha256sum -c -
           unzip -q /tmp/v179.zip -d dataset
           P="$(find frozen -name sandbox_candidate_predictions.csv)"
           D="$(find dataset -name challenger_b_dataset_v1_179.csv)"
