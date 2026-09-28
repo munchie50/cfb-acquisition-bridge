@@ -60,3 +60,11 @@ Bounded implementation correction persisted on main:
 
 ### Current next gate
 Observe and pin the corrected generator identity under controlled pre-execution conditions, then execute a fresh outcome-blind candidate freeze. The frozen acceptance expectation remains 55,834 rows with 42 S1 omitted games and 53 S2 omitted games unless new pre-outcome evidence proves otherwise.
+
+
+## Run #13 — accepted freeze
+| Run | Run ID | Head | Terminal evidence / QA classification |
+|---|---:|---|---|
+| #13 | 36421939025 | a3318105... | SUCCESS + INDEPENDENT ACCEPTANCE — exact frozen inputs and corrected generator identity passed; generation produced 55,834 rows; independent runner gate passed; artifact 10970862853 uploaded; independent post-run download reproduced ZIP/CSV/manifest hashes, exact family counts, exact 42 S1 and 53 S2 omission sets, no 2025, no forbidden outcome/market/wager/closing columns, and outcomes_joined=false. Candidate freeze accepted in `evidence/CFB_QA_SANDBOX_CANDIDATE_FREEZE_ACCEPTANCE_2026-09-28.md`. |
+
+Construction/freeze phase is CLOSED. Outcome scoring remains a separate authorization boundary and was not performed by Run #13.
