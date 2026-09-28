@@ -81,3 +81,16 @@ Intentional generalized-refresh differences remain:
 Classification: CONSTRUCTION VALIDATION PASS ONLY. This does not prove byte/output equivalence on accepted v1.206 inputs and does not satisfy the executable equivalence gate.
 
 Current gate state: PENDING.
+
+
+## First executable replay attempt — source drift stop
+Run 36497510380 / job 109180408219 executed the equivalence workflow. Exact accepted v1.204 preflight ZIP and v1.193 fit ZIP checks passed. Reacquired current upstream schedule bytes did not match frozen schedule SHA-256 5b2ff52996862b06b67309f1ebc27742e55c279ff4785c7a942915cdf820f1b1, so the workflow failed closed before compilation or either producer executed. No equivalence evidence was produced.
+
+Classification: MUTABLE-UPSTREAM REPLAY INPUT FAILURE, not scientific/equivalence failure.
+
+Recovery audit found:
+- v1.204 artifact 10897001956 preserves projection/preflight outputs and source hashes, not raw schedule/PBP bytes;
+- v1.206 artifact 10897612260 remains available and is being inspected as possible preserved derived replay authority;
+- current upstream bytes may not substitute for frozen source bytes.
+
+Gate remains PENDING.
