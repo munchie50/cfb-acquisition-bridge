@@ -37,7 +37,7 @@ jobs:
       - name: Verify diagnostic generator identity
         run: |
           set -euo pipefail
-          echo "GENERATOR_SHA_PLACEHOLDER  scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py" | sha256sum -c -
+          test "$(git hash-object scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py)" = "22cfdc3fc9cda0b12685ee3a4ba22eec7df892fa"
           python -m py_compile scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py
       - name: Run fail-closed cardinality diagnostic
         run: |
