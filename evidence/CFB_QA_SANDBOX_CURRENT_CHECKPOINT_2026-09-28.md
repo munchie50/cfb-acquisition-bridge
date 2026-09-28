@@ -74,7 +74,7 @@ DONE:
 
 ACTIVE:
 - Prospective S2_K1 continuation is frozen by evidence/CFB_QA_SANDBOX_PROSPECTIVE_S2_K1_CONTINUATION_CONTRACT_2026-09-28.md.
-- WAIT for the next v1.216 weekly refresh cadence and qualified fresh source state; do not manufacture a snapshot.
+- BLOCKED implementation gate: generalized S0 refresh producer v1.246 exists, but exact executable equivalence to accepted v1.206 is pending. See evidence/CFB_QA_REFRESH_V1_246_EQUIVALENCE_STATUS_2026-09-28.md.\n- External cadence WAIT remains: do not manufacture a weekly snapshot.
 
 CURRENT CLASSIFICATION:
 - S2_K1 may continue in Sandbox study because the historical signal is broad enough to warrant further prospective validation.
