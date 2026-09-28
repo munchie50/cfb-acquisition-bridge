@@ -481,6 +481,14 @@ def main():
         elif not z.k.eq(kexp).all():
             raise SystemExit(f"candidate k mismatch {cid}")
     counts=pred.candidate_id.str.extract(r'^(S[012])')[0].value_counts().to_dict()
+    diagnostic_counts={str(k):int(v) for k,v in pred["candidate_id"].value_counts().sort_index().items()}
+    diagnostic_s1_games=set(map(tuple,pred[pred.candidate_id.str.startswith("S1")][["season","game_id"]].drop_duplicates().to_numpy()))
+    diagnostic_s2_games=set(map(tuple,pred[pred.candidate_id.str.startswith("S2")][["season","game_id"]].drop_duplicates().to_numpy()))
+    diagnostic_all_games=set((int(r.season),str(r.game_id)) for r in work[["season","game_id"]].drop_duplicates().itertuples(index=False))
+    print(json.dumps({"diagnostic_only":True,"prediction_rows":int(len(pred)),
+      "candidate_counts":diagnostic_counts,
+      "s1_omissions":sorted([list(x) for x in diagnostic_all_games-diagnostic_s1_games]),
+      "s2_omissions":sorted([list(x) for x in diagnostic_all_games-diagnostic_s2_games])},sort_keys=True))
     if len(pred)!=expected: raise SystemExit("candidate row count mismatch")
     if counts.get("S0",0)!=expected_s0 or counts.get("S1",0)!=expected_s1 or counts.get("S2",0)!=expected_s2:
         raise SystemExit("candidate family cardinality mismatch")
