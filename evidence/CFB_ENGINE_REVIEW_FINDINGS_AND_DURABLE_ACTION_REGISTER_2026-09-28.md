@@ -14,8 +14,8 @@ Scope: findings from the bounded historical-integrity, whole-engine seam, produc
 A. Full execution history Runs #1–#12 and Run #12 root cause are now reconciled in `evidence/CFB_QA_SANDBOX_EXECUTION_ATTEMPT_LEDGER_2026-09-28.md`.
 B. Current Sandbox recovery doorway is `evidence/CFB_QA_SANDBOX_CURRENT_CHECKPOINT_2026-09-28.md`.
 C. Stale S2 inner exception handling was confirmed causal for Run #12's excess omissions and boundedly corrected on main commit `2f8aad0963d6a09ae9b8eb749163f3ff65d3566a`; corrected generator blob `40447984a58dbc530cbe942bc1176f0c5bcbe9b2`.
-D. Corrected generator identity observation/pinning and fresh candidate freeze remain open.
-E. Outcome scoring remains separately unauthorized.
+D. CLOSED: corrected generator identity was observed/pinned and fresh candidate freeze accepted from run 36421939025; artifact 10970862853.
+E. CLOSED: historical outcome scoring was separately authorized, executed by run 36491252415, independently reproduced, and accepted as valid evidence. S2_K1 alone continues to prospective Sandbox study; no promotion.
 
 ## Production operational findings — open durable actions
 1. **Controlled execution reconciliation:** the canonical execution ledger currently lacks the previously established 2026-09-26 controlled executions. Reconcile only from original screenshot/evidence records; do not backfill from memory. Preserve downstream/execution-only classification and prohibit model contamination.
@@ -33,7 +33,7 @@ E. Outcome scoring remains separately unauthorized.
 ## Technical-debt classification
 HIGH: production close-market durable surface.
 HIGH: terminal receipt/readback closure semantics.
-HIGH while QA active: corrected S2 generator identity/pinning/fresh freeze.
+RESOLVED: corrected S2 generator identity/pinning/fresh freeze.
 MEDIUM: controlled execution ledger reconciliation from original evidence.
 MEDIUM: permanent diagnostic ergonomics so cardinality failures expose actual family counts/omissions before generic assertion without weakening fail-closed gates.
 LOW/RESOLVED: broad Main.yml trigger concern (current trigger is already bounded).
