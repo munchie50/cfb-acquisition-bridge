@@ -1,6 +1,6 @@
 # CFB QA Sandbox — Current Checkpoint and Handoff Index — 2026-09-28
 
-Status: CURRENT QA SANDBOX HANDOFF ENTRY POINT — HISTORICAL OUTCOME SCORING ACCEPTED / S2_K1 CONTINUED-STUDY DISPOSITION PENDING PERSISTENCE
+Status: CURRENT QA SANDBOX HANDOFF ENTRY POINT — HISTORICAL OUTCOME SCORING ACCEPTED / S2_K1 CONTINUED-STUDY DISPOSITION PERSISTED
 Scope: QA Sandbox only. Production/Champion authority is unchanged.
 Parent recovery doorway: evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md
 Operating procedure: Production Routine v5 (evidence/CFB_ENGINE_ROUTINE_V5_PRODUCTION_PROMOTION_v1_103.md) + ACTIVE CORE RULE v1.132 (evidence/CFB_ENGINE_CORE_LEARNING_ENFORCEMENT_RULE_v1_132.md) + ACTIVE CORE RULES v1.133 (evidence/CFB_ENGINE_CORE_EXECUTION_CONTROLS_v1_133.md).
@@ -82,11 +82,10 @@ CURRENT CLASSIFICATION:
 - S0 remains the control and production/Champion authority is unchanged.
 
 NEXT:
-1. Persist/read back the bounded S2_K1 continued-study disposition.
-2. Preserve S2_K1 exactly as frozen; no post-outcome parameter tuning or k-grid expansion.
-3. Define a genuinely prospective, outcome-blind continuation window before its outcomes are known, with the required history-depth metadata frozen at prediction time.
-4. Keep 2025 TEST protected unless separately authorized.
-5. Independently evaluate the prospective window before any later advancement decision.
+1. Preserve S2_K1 exactly as frozen; no post-outcome parameter tuning or k-grid expansion.
+2. Define a genuinely prospective, outcome-blind continuation window before its outcomes are known, with the required history-depth metadata frozen at prediction time.
+3. Keep 2025 TEST protected unless separately authorized.
+4. Independently evaluate the prospective window before any later advancement decision.
 
 ## DO NOT TOUCH
 - Champion v1.193 or production coefficients/scaling.
