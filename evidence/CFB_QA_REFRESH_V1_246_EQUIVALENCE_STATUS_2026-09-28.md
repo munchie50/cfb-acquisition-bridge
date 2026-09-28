@@ -48,3 +48,17 @@ Smallest repair:
 - only the two malformed literal newline boundaries were converted to actual source line breaks.
 
 Classification: implementation/construction defect caught pre-execution. The equivalence gate remains PENDING and must still execute; this repair is not equivalence evidence.
+
+
+## Verification correction
+A subsequent direct full-source readback proved the first newline repair/verification was itself insufficient: the repository still contained the literal backslash-n bytes. The earlier check searched for the wrong escaped representation and produced a false clean result.
+
+Actual byte-level repair:
+- commit fc98cffc6300a81ea9e8d33445d753a53ed62a00;
+- direct readback blob/content SHA 43f00fb6cada12a651307cdd14af79096c978efa;
+- literal backslash-n occurrence count in the producer: 0;
+- both affected boundaries directly read back as real source line breaks.
+
+Process lesson: for escaped-text construction defects, verify the actual persisted bytes/full source, not a differently escaped search literal.
+
+Equivalence remains PENDING.
