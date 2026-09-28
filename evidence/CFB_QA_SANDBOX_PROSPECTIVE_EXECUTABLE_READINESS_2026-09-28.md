@@ -2,7 +2,7 @@
 
 Status: **READINESS GAP CONFIRMED / IMPLEMENTATION MAY PROCEED OUTCOME-BLIND**
 
-The prospective continuation contract is frozen, and the existing v1.217 refresh preflight can qualify a future source/cutoff snapshot. However, no dedicated 2026 S2_K1 companion producer currently exists.
+The prospective continuation contract is frozen, and the existing v1.217 refresh preflight can qualify a future source/cutoff snapshot. However, no dedicated 2026 S2_K1 companion producer currently exists. Deeper interface recovery also found that v1.206 is a first-freeze producer hard-coded to the original 622-target identity, while v1.217 is source-preflight only. There is not yet an accepted generalized REFRESH_SNAPSHOT prediction producer.
 
 This is implementation debt, not scientific authority to change S2_K1.
 
@@ -20,3 +20,16 @@ Create a separate QA Sandbox producer that:
 Implementation, syntax checks, identity observation and synthetic/structural tests may occur now.
 No live 2026 S2_K1 prediction freeze should occur before the next qualified v1.216 weekly refresh cadence.
 No outcome scoring is authorized.
+
+
+## Dependency-order correction
+Do not implement an independent S2_K1 live producer ahead of the ordinary refresh producer. That would duplicate 2026 source/feature construction and create avoidable semantic drift.
+
+Required order:
+1. create a generalized S0 REFRESH_SNAPSHOT producer from frozen v1.206/v1.216 semantics, without mutating v1.206;
+2. prove S0 model/feature/chronology identity and append-only lineage behavior;
+3. expose the same pre-cutoff team-side source/feature substrate needed by QA;
+4. build S2_K1 as a separate companion transform over that frozen substrate;
+5. observe/pin identities and structurally validate before the next live freeze.
+
+No live refresh is triggered by this finding.
