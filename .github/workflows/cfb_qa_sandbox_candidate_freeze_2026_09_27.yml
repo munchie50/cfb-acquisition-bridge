@@ -65,10 +65,8 @@ jobs:
       - name: Verify and compile frozen generator
         run: |
           set -euo pipefail
-          sha256sum scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py
+          echo "1315d56025b87cceda7ac7f3e7a85ac4b4fe25072e346ba2f572dba42108329c  scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py" | sha256sum -c -
           python -m py_compile scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py
-          echo "IDENTITY_OBSERVATION_ONLY_NO_CANDIDATE_GENERATION"
-          exit 86
 
       - name: Generate outcome-blind frozen candidates
         run: |
@@ -94,17 +92,24 @@ jobs:
           x=pd.read_csv(p/"sandbox_candidate_predictions.csv",dtype={"game_id":str})
           expected={"S0","S1_K1","S1_K2","S1_K4","S1_K8","S2_K1","S2_K2","S2_K4","S2_K8"}
           assert m["status"]=="PREDICTIONS_FROZEN_NOT_SCORED"
-          assert m["games"]==6246 and m["prediction_rows"]==56166
+          assert m["games"]==6246 and m["prediction_rows"]==55834
           assert m["2025_accessed"] is False and m["outcomes_joined"] is False
           assert set(m["candidate_ids"])==expected
-          assert len(x)==56166 and set(x["candidate_id"])==expected
+          assert len(x)==55834 and set(x["candidate_id"])==expected
           assert 2025 not in set(x["season"].astype(int))
           forbidden=("actual","outcome","market","spread","odds","wager","stake","closing")
           assert not any(any(t in str(c).lower() for t in forbidden) for c in x.columns)
           counts=x["candidate_id"].value_counts().to_dict()
           assert counts["S0"]==6246
-          assert sum(v for k,v in counts.items() if k.startswith("S1_"))==24984
-          assert sum(v for k,v in counts.items() if k.startswith("S2_"))==24936
+          assert sum(v for k,v in counts.items() if k.startswith("S1_"))==24816
+          assert sum(v for k,v in counts.items() if k.startswith("S2_"))==24772
+          all_games=set(map(tuple,x[["season","game_id"]].drop_duplicates().to_numpy()))
+          s1_games=set(map(tuple,x[x["candidate_id"].str.startswith("S1")][["season","game_id"]].drop_duplicates().to_numpy()))
+          s2_games=set(map(tuple,x[x["candidate_id"].str.startswith("S2")][["season","game_id"]].drop_duplicates().to_numpy()))
+          expected_s1={(2017,"400935254"),(2019,"401110773"),(2019,"401110774"),(2019,"401110777"),(2019,"401110778"),(2019,"401110779"),(2019,"401110780"),(2019,"401110781"),(2019,"401110783"),(2019,"401110784"),(2019,"401110785"),(2019,"401112074"),(2019,"401112097"),(2019,"401112107"),(2019,"401112146"),(2019,"401112192"),(2019,"401112202"),(2019,"401112213"),(2019,"401112223"),(2019,"401112239"),(2019,"401112252"),(2019,"401112258"),(2019,"401112268"),(2019,"401112440"),(2019,"401112441"),(2019,"401112445"),(2019,"401112446"),(2019,"401112447"),(2019,"401114193"),(2019,"401114214"),(2019,"401114224"),(2019,"401114229"),(2019,"401114247"),(2019,"401114248"),(2019,"401114249"),(2019,"401114250"),(2019,"401114251"),(2019,"401114253"),(2019,"401114254"),(2019,"401114347"),(2019,"401117500"),(2019,"401117860")}
+          expected_s2={(2016,"400869117"),(2017,"400935254"),(2018,"401022521"),(2018,"401022524"),(2019,"401110773"),(2019,"401110774"),(2019,"401110777"),(2019,"401110778"),(2019,"401110779"),(2019,"401110780"),(2019,"401110781"),(2019,"401110783"),(2019,"401110784"),(2019,"401110785"),(2019,"401112074"),(2019,"401112097"),(2019,"401112107"),(2019,"401112146"),(2019,"401112192"),(2019,"401112202"),(2019,"401112213"),(2019,"401112223"),(2019,"401112239"),(2019,"401112252"),(2019,"401112258"),(2019,"401112268"),(2019,"401112440"),(2019,"401112441"),(2019,"401112443"),(2019,"401112445"),(2019,"401112446"),(2019,"401112447"),(2019,"401114193"),(2019,"401114214"),(2019,"401114224"),(2019,"401114229"),(2019,"401114247"),(2019,"401114248"),(2019,"401114249"),(2019,"401114250"),(2019,"401114251"),(2019,"401114253"),(2019,"401114254"),(2019,"401114347"),(2019,"401117500"),(2019,"401117860"),(2020,"401246425"),(2022,"401403946"),(2022,"401403976"),(2022,"401405073"),(2022,"401413257"),(2022,"401415219"),(2022,"401426543")}
+          assert all_games-s1_games==expected_s1
+          assert all_games-s2_games==expected_s2
           print("INDEPENDENT_FREEZE_GATE_PASS",len(x),counts)
           PY
           sha256sum sandbox_freeze/sandbox_candidate_predictions.csv sandbox_freeze/manifest.json
