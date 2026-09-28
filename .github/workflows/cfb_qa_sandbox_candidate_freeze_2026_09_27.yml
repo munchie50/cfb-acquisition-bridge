@@ -65,8 +65,10 @@ jobs:
       - name: Verify and compile frozen generator
         run: |
           set -euo pipefail
-          echo "f2e0bf46fd40e3d40b7d2ddf318cdf06a597fd22c0b577d572a05377446f6a22  scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py" | sha256sum -c -
+          sha256sum scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py
           python -m py_compile scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py
+          echo "IDENTITY_OBSERVATION_ONLY_NO_CANDIDATE_GENERATION"
+          exit 86
 
       - name: Generate outcome-blind frozen candidates
         run: |
