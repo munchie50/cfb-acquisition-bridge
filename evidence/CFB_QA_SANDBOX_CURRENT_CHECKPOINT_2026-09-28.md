@@ -1,6 +1,6 @@
 # CFB QA Sandbox — Current Checkpoint and Handoff Index — 2026-09-28
 
-Status: CURRENT QA SANDBOX HANDOFF ENTRY POINT — OUTCOME-BLIND CANDIDATE FREEZE ACCEPTED / CONSTRUCTION PHASE CLOSED
+Status: CURRENT QA SANDBOX HANDOFF ENTRY POINT — HISTORICAL OUTCOME SCORING ACCEPTED / S2_K1 CONTINUED-STUDY DISPOSITION PENDING PERSISTENCE
 Scope: QA Sandbox only. Production/Champion authority is unchanged.
 Parent recovery doorway: evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md
 Operating procedure: Production Routine v5 (evidence/CFB_ENGINE_ROUTINE_V5_PRODUCTION_PROMOTION_v1_103.md) + ACTIVE CORE RULE v1.132 (evidence/CFB_ENGINE_CORE_LEARNING_ENFORCEMENT_RULE_v1_132.md) + ACTIVE CORE RULES v1.133 (evidence/CFB_ENGINE_CORE_EXECUTION_CONTROLS_v1_133.md).
@@ -24,7 +24,7 @@ Frozen acceptance expectation: 55,834 rows = S0 6,246 + S1 24,816 + S2 24,772.
 Expected S1 omitted games: 42.
 Expected S2 omitted games: 53.
 2025 protected TEST: forbidden.
-Outcome scoring/join: not authorized by current execution authority.
+Outcome scoring/join: separately authorized, executed, and independently accepted on 2026-09-28; see evidence/CFB_QA_SANDBOX_OUTCOME_SCORING_ACCEPTANCE_2026-09-28.md.
 
 ## Authoritative input identities
 - dataset: f8c479c83abf5dac3be6dcb4bba3d6a0996ae2623297a9a3514465824b7c4af8
@@ -63,39 +63,35 @@ No Champion/model/science/chronology/k-grid/mapping/coefficient/scaling/2025/out
 
 ## Current frontier
 DONE:
-- S0 equivalence PASS.
-- frozen S1/S2 mapping/spec established.
-- rest_days baseline coverage reconciled.
-- performance optimization demonstrated material runtime improvement.
-- Runs #1–#13 execution history reconciled.
-- Run #12 exact diagnostic and S2 stale-handler root cause reconciled.
-- corrected generator identity observed and pinned.
-- Run #13 (36421939025) generated the frozen outcome-blind candidate artifact.
-- runner independent gate PASS.
-- independent post-run artifact download/readback PASS.
-- accepted freeze: evidence/CFB_QA_SANDBOX_CANDIDATE_FREEZE_ACCEPTANCE_2026-09-28.md.
-- accepted artifact 10970862853; ZIP sha256 8955c64f72ea8068279aed3b4ac1f062200394fbc1eb278cb1864de4da9fe5c9.
-- prediction CSV sha256 ed858f1bd72decd93d02aec4de507c3217470b8d01294c2cf677a2d79ed78ee3.
-- manifest sha256 270de37c5fa523e333799a2325f8baa4488cfa0eb114970886d43702fc2211e7.
-- exact 55,834 rows; exact 42 S1 omissions; exact 53 S2 omissions; no 2025; no outcomes joined.
+- Outcome-blind candidate freeze accepted and construction phase closed.
+- Historical outcome scoring separately authorized.
+- Authoritative scoring run 36491252415 SUCCESS on exact frozen predictions and accepted v1.179 outcomes.
+- 55,834 scored rows, seasons 2016–2024 only; 2025 not accessed; no market/wager/execution inputs.
+- Scoring artifact 11000219253, ZIP SHA-256 9fd59b3e98cdf6644cde707ebc991165caacd03ddd48680bce0f463b880e48a3.
+- Independent reproduction accepted; see evidence/CFB_QA_SANDBOX_OUTCOME_SCORING_ACCEPTANCE_2026-09-28.md.
+- S2_K1 is the only candidate supported for deeper bounded disposition review. Its common-game margin MAE and proper win metrics improve, with margin improvement in 7 of 9 seasons and stronger results in predeclared large-disagreement slices.
+- S2_K1 also has mixed evidence: slight aggregate total-MAE and winner-direction degradation, 2022/2024 margin exceptions, and history-depth stability unavailable because the required field was not frozen. No post-outcome reconstruction is allowed.
 
 ACTIVE:
-- No construction/freeze execution is active.
+- Bounded candidate disposition under the original pre-outcome acceptance bar.
 
-BLOCKED / SEPARATE AUTHORIZATION:
-- Outcome scoring/evaluation has not been authorized by the construction/freeze authority.
-- Candidate/k selection, model refit, Champion mutation and production promotion remain unauthorized.
+CURRENT CLASSIFICATION:
+- S2_K1 may continue in Sandbox study because the historical signal is broad enough to warrant further prospective validation.
+- This is NOT scientific acceptance, Challenger promotion, Champion mutation, refit, recalibration, or production authorization.
+- The original stability bar is not fully demonstrated because the predeclared history-depth diagnostic is unavailable.
+- S0 remains the control and production/Champion authority is unchanged.
 
 NEXT:
-1. Recover/read the accepted freeze evidence and artifact identities.
-2. Do not rerun construction absent a demonstrated integrity reason.
-3. If outcome-scoring/evaluation is separately authorized, create a bounded outcome-evaluation plan that preserves the frozen prediction artifact and keeps 2025 TEST protected.
-4. Independently evaluate any scoring result before scientific interpretation or candidate selection.
+1. Persist/read back the bounded S2_K1 continued-study disposition.
+2. Preserve S2_K1 exactly as frozen; no post-outcome parameter tuning or k-grid expansion.
+3. Define a genuinely prospective, outcome-blind continuation window before its outcomes are known, with the required history-depth metadata frozen at prediction time.
+4. Keep 2025 TEST protected unless separately authorized.
+5. Independently evaluate the prospective window before any later advancement decision.
 
 ## DO NOT TOUCH
 - Champion v1.193 or production coefficients/scaling.
 - 2025 protected TEST.
-- outcomes/postgame scoring.
+- any new outcome/postgame scoring outside separately authorized bounded evaluation.
 - frozen S1/S2 formulas, mapping, k-grid, chronology, or expected omission sets absent new pre-outcome evidence.
 - market/wager/execution data as model inputs.
 - production promotion.
