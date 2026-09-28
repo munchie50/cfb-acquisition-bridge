@@ -1,0 +1,65 @@
+name: CFB QA Refresh v1.246 Equivalence
+on:
+  workflow_dispatch:
+permissions: {contents: read, actions: read}
+jobs:
+  equivalence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas numpy pyarrow pyreadr
+      - name: Acquire exact accepted first-freeze inputs
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir preflight fit raw old new
+          gh api repos/${{ github.repository }}/actions/artifacts/10897001956/zip > /tmp/preflight.zip
+          echo "4dc70419b9aa3afdfa2570861490598da69b2bccfed878e438dc17b69a9a7ea8  /tmp/preflight.zip" | sha256sum -c -
+          unzip -q /tmp/preflight.zip -d preflight
+          gh api repos/${{ github.repository }}/actions/artifacts/10895838069/zip > /tmp/fit.zip
+          echo "3a2cabfcd37e0bcf0cae85efc77eaa6755ffb12734d1e48c4c582ed1de375587  /tmp/fit.zip" | sha256sum -c -
+          unzip -q /tmp/fit.zip -d fit
+      - name: Reacquire exact frozen source bytes
+        run: |
+          curl --fail --location --retry 3 -o raw/s.parquet "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_2026.parquet"
+          curl --fail --location --retry 3 -o raw/p.rds "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2026.rds"
+          echo "5b2ff52996862b06b67309f1ebc27742e55c279ff4785c7a942915cdf820f1b1  raw/s.parquet" | sha256sum -c -
+          echo "81e38e7e874d249300bb108de0029a8ffb0b19c31cfea6e7aafab5507115e5da  raw/p.rds" | sha256sum -c -
+      - run: python -m py_compile scripts/phase4_challenger_b_2026_predict_v1_206.py scripts/phase4_challenger_b_2026_refresh_predict_v1_246.py
+      - name: Execute both producers
+        run: |
+          CUTOFF=$(python -c 'import json; print(json.load(open("preflight/preflight_v1_204.json"))["cutoff_utc"])')
+          python scripts/phase4_challenger_b_2026_predict_v1_206.py preflight/challenger_b_2026_future_target_projection_v1_204.csv raw/s.parquet raw/p.rds fit old "$CUTOFF"
+          python scripts/phase4_challenger_b_2026_refresh_predict_v1_246.py preflight/challenger_b_2026_future_target_projection_v1_204.csv raw/s.parquet raw/p.rds fit new "$CUTOFF"
+      - name: Independent exact scientific equivalence
+        run: |
+          python - <<'PY'
+          import pandas as pd, numpy as np, json
+          pairs=[
+           ("challenger_b_2026_fair_predictions_v1_206.csv","challenger_b_2026_refresh_fair_predictions_v1_246.csv"),
+           ("challenger_b_2026_exclusions_v1_206.csv","challenger_b_2026_refresh_exclusions_v1_246.csv"),
+           ("challenger_b_2026_chronology_audit_v1_206.csv","challenger_b_2026_refresh_chronology_audit_v1_246.csv"),
+           ("challenger_b_2026_feature_eligibility_ledger_v1_206.csv","challenger_b_2026_refresh_feature_eligibility_ledger_v1_246.csv"),
+           ("challenger_b_2026_target_ledger_v1_206.csv","challenger_b_2026_refresh_target_ledger_v1_246.csv")]
+          for a,b in pairs:
+            x=pd.read_csv("old/"+a,dtype={"game_id":str}); y=pd.read_csv("new/"+b,dtype={"game_id":str})
+            y=y.drop(columns=["snapshot_type","snapshot_cutoff_utc"])
+            assert list(x.columns)==list(y.columns),(a,list(x.columns),list(y.columns))
+            assert len(x)==len(y),(a,len(x),len(y))
+            for col in x.columns:
+              if pd.api.types.is_numeric_dtype(x[col]) and pd.api.types.is_numeric_dtype(y[col]):
+                assert np.allclose(x[col].to_numpy(float),y[col].to_numpy(float),rtol=0,atol=1e-12,equal_nan=True),(a,col)
+              else:
+                assert x[col].fillna("<NA>").astype(str).equals(y[col].fillna("<NA>").astype(str)),(a,col)
+          m=json.load(open("new/manifest_v1_246.json"))
+          assert m["snapshot_type"]=="REFRESH_SNAPSHOT" and m["parent_lineage"]=="v1.216"
+          assert m["target_games"]==622 and m["eligible_predictions"]==526 and m["excluded_games"]==96
+          print("REFRESH_V1_246_EXACT_SCIENTIFIC_EQUIVALENCE_PASS")
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-qa-refresh-v1-246-equivalence
+          path: new/
