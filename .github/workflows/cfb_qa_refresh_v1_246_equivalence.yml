@@ -1,6 +1,10 @@
 name: CFB QA Refresh v1.246 Equivalence
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_qa_refresh_v1_246_equivalence.yml'
 permissions: {contents: read, actions: read}
 jobs:
   equivalence:
