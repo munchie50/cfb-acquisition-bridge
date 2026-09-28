@@ -27,7 +27,7 @@ jobs:
           unzip -q /tmp/fit.zip -d fit
       - name: Reacquire exact frozen source bytes
         run: |
-          curl --fail --location --retry 3 -o raw/s.parquet "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_2026.parquet"
+          curl --fail --location --retry 3 -o raw/s.parquet "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/f8467b023a9a52a0596d66f59523d6b4874b077c/cfb/cfb_schedules/parquet/cfb_schedules_2026.parquet"
           curl --fail --location --retry 3 -o raw/p.rds "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2026.rds"
           echo "5b2ff52996862b06b67309f1ebc27742e55c279ff4785c7a942915cdf820f1b1  raw/s.parquet" | sha256sum -c -
           echo "81e38e7e874d249300bb108de0029a8ffb0b19c31cfea6e7aafab5507115e5da  raw/p.rds" | sha256sum -c -
