@@ -275,17 +275,26 @@ def main():
       "offensive_success_rate":("D","off_succ","off_succ_q"),
       "defensive_success_rate_allowed":("D","def_succ","def_succ_q"),
       "average_starting_yards_to_goal":("D","start_ytg_sum","start_drive_n")}
+    # Cache completion flags and frozen baselines. These are pure memoization:
+    # keys include every input that can affect the frozen baseline value.
+    mp_complete=normalize_complete_flag(mp["mechanical_primitive_complete"],"mechanical_primitive_complete")
+    dp_complete=normalize_complete_flag(dp["derived_primitive_complete"],"derived_primitive_complete")
+    baseline_cache={}
     def baseline(feature,t,season):
+        cutoff=pd.Timestamp(t).normalize()
+        bkey=(feature,cutoff,int(season))
+        if bkey in baseline_cache:
+            return baseline_cache[bkey]
         if feature=="rest_days":
-            cutoff=pd.Timestamp(t).normalize()
             z=side[(side.season==season)&(side.start_date<cutoff)&side.rest_days.notna()]
             if z.empty: raise RuntimeError("unavailable frozen population baseline")
-            return float(z.rest_days.mean())
+            v=float(z.rest_days.mean())
+            baseline_cache[bkey]=v
+            return v
         typ,num,den=COMPONENTS[feature]
         src=mp if typ=="M" else dp
-        complete="mechanical_primitive_complete" if typ=="M" else "derived_primitive_complete"
-        cutoff=pd.Timestamp(t).normalize()
-        z=src[(src.season==season)&(src.start_date<cutoff)&normalize_complete_flag(src[complete],complete)].copy()
+        complete_mask=mp_complete if typ=="M" else dp_complete
+        z=src[(src.season==season)&(src.start_date<cutoff)&complete_mask]
         if z.empty: raise RuntimeError("unavailable frozen population baseline")
         n=float(z[num].sum())
         d=float(len(z)) if den=="GAME" else float(z[den].sum())
@@ -293,6 +302,7 @@ def main():
         if not np.isfinite(d) or d<=0: raise RuntimeError("zero/unavailable pooled denominator")
         v=n/d
         if not np.isfinite(v): raise RuntimeError("non-finite pooled baseline")
+        baseline_cache[bkey]=v
         return v
 
     # S1 states for any side on demand.
@@ -332,11 +342,18 @@ def main():
     if ident["opponent"].eq(ident["team"]).any():
         raise SystemExit("primitive opponent self-reference")
     side_idx=side.set_index(["season","game_id","team"],drop=False)
+    feature_history_idx=feature_history.set_index(["season","game_id","team"],drop=False).copy()
+    feature_history_idx["_mechanical_complete_bool"]=mechanical_history_flag.to_numpy()
+    feature_history_idx["_derived_complete_bool"]=derived_history_flag.to_numpy()
+    prior_history_cache={}
 
     def s2(row,feature,k):
         base=s1(row,feature,k)
         if feature not in MAP:return base
-        prior=ident[(ident.season==row.season)&(ident.team==row.team)&(ident.start_date<row.start_date)].sort_values("start_date")
+        pkey=(int(row.season),str(row.team),pd.Timestamp(row.start_date))
+        if pkey not in prior_history_cache:
+            prior_history_cache[pkey]=ident[(ident.season==row.season)&(ident.team==row.team)&(ident.start_date<row.start_date)].sort_values("start_date")
+        prior=prior_history_cache[pkey]
         if len(prior)!=int(row.qualified_prior_games): raise RuntimeError("source chronology/count mismatch")
         residuals=[]
         pair=MAP[feature]
@@ -364,8 +381,8 @@ def main():
                 residuals.append(0.0)
                 continue
             hkey=(opp.season,opp.game_id,opp.team)
-            hrow=feature_history.set_index(["season","game_id","team"]).loc[hkey]
-            if not bool(normalize_complete_flag(pd.Series([hrow.mechanical_history_complete]),"mechanical").iloc[0]) or not bool(normalize_complete_flag(pd.Series([hrow.derived_history_complete]),"derived").iloc[0]):
+            hrow=feature_history_idx.loc[hkey]
+            if not bool(hrow["_mechanical_complete_bool"]) or not bool(hrow["_derived_complete_bool"]):
                 continue
             raw_pair=float(opp[pair])
             if not np.isfinite(raw_pair):
