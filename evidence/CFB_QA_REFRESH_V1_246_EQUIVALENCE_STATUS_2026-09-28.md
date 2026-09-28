@@ -62,3 +62,22 @@ Actual byte-level repair:
 Process lesson: for escaped-text construction defects, verify the actual persisted bytes/full source, not a differently escaped search literal.
 
 Equivalence remains PENDING.
+
+
+## Construction validation after escape repairs
+Persisted producer identity reviewed: abbdb43b38f24052e7d5cdb29e7065cb63c08c56.
+
+Parser/source review confirms the repaired newline representation is syntactically valid. Direct v1.206-vs-v1.246 source comparison shows the feature list, strict-prior source selection, side-feature formulas, chronology audit, Champion coefficient/scaling hash locks, standardization, prediction equations, and prediction invariants remain unchanged.
+
+Intentional generalized-refresh differences remain:
+- dynamic nonempty unique target cardinality instead of fixed 622;
+- allowed population classes instead of fixed 599/23 counts;
+- target kickoff must be strictly after refresh cutoff;
+- team-side/population accounting is dynamic;
+- REFRESH_SNAPSHOT and cutoff metadata are appended;
+- refresh-specific filenames;
+- manifest uses dynamic counts and records parent lineage v1.216.
+
+Classification: CONSTRUCTION VALIDATION PASS ONLY. This does not prove byte/output equivalence on accepted v1.206 inputs and does not satisfy the executable equivalence gate.
+
+Current gate state: PENDING.
