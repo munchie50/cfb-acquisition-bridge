@@ -36,14 +36,12 @@ jobs:
           test "$(printf '%s\n' "$D" | grep -c .)" -eq 1
           echo "ed858f1bd72decd93d02aec4de507c3217470b8d01294c2cf677a2d79ed78ee3  $P" | sha256sum -c -
           echo "f8c479c83abf5dac3be6dcb4bba3d6a0996ae2623297a9a3514465824b7c4af8  $D" | sha256sum -c -
-      - name: Observe scorer identity and stop before outcomes
+      - name: Verify pinned scorer identity
         run: |
           set -euo pipefail
-          sha256sum scripts/cfb_qa_sandbox_outcome_score_2026_09_28.py
-          git hash-object scripts/cfb_qa_sandbox_outcome_score_2026_09_28.py
+          echo "0a229ddb38304b38e366853f6b8a095e8008970f16f2620c55805ecf28d61b23  scripts/cfb_qa_sandbox_outcome_score_2026_09_28.py" | sha256sum -c -
+          test "$(git hash-object scripts/cfb_qa_sandbox_outcome_score_2026_09_28.py)" = "2336002317b4ba0a73acb5c012884f34c6999c67"
           python -m py_compile scripts/cfb_qa_sandbox_outcome_score_2026_09_28.py
-          echo "SCORER_IDENTITY_OBSERVATION_ONLY: outcome scoring intentionally blocked"
-          exit 86
       - name: Score immutable predictions
         run: |
           set -euo pipefail
