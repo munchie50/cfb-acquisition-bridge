@@ -24,3 +24,39 @@ Rule: GitHub Actions UI conclusion is not by itself the scientific classificatio
 Run #9 established repeated-friction evidence: extending Run #6's 30-minute ceiling to 90 minutes did not resolve execution. Static hot-loop audit then identified repeated identical dataframe filtering/index construction. The bounded repair memoized/reused those computations without intentionally changing the frozen scientific contract.
 
 Future rule: after repeated expensive execution failure, perform structural/performance inspection before increasing runtime/resources again.
+
+
+## 2026-09-28 reconciliation — Runs #1–#12
+This section appends the previously missing early attempts and terminal evidence discovered after the original ledger was created. Earlier rows are preserved as historical-at-the-time statements; this section supersedes their status where noted.
+
+| Run | Run ID | Head | Terminal evidence / QA classification |
+|---|---:|---|---|
+| #1 | 36358628895 | 092fc052... | FAILURE — real implementation/construction defect: `invalid S1 qualified-prior count`. Frozen inputs and then-current generator identity verified before generation. |
+| #2 | 36358999979 | 1687b7f... | EXPECTED CONTROLLED STOP / PASS FOR PURPOSE — corrected generator identity observed/compiled; intentional exit 86 before generation. |
+| #3 | 36359139294 | ebeef8a... | FAILURE — real S2 construction defect: `non-finite S1 input`; led to deeper completion-safe S2-context reconciliation including California–San Diego State. |
+| #4 | 36359963199 | 09ed85e... | IDENTITY-CONTROL FAILURE / PREEXEC STOP — workflow expected prior generator SHA; persisted generator differed; generation did not run. |
+| #5 | 36360042694 | d77929a... | EXPECTED CONTROLLED STOP / PASS FOR PURPOSE — generator identity observed/compiled; intentional exit 86. |
+| #6 | 36360100360 | c11ae945... | CANCELLED — ~30-minute infrastructure timeout during generation. |
+| #7 | 36362050431 | 6d50ba1... | FAILURE — rest_days feature-specific baseline coverage defect exposed and reconciled. |
+| #8 | 36366403150 | ba722ad3... | EXPECTED CONTROLLED STOP / PASS FOR PURPOSE — corrected identity observation. |
+| #9 | 36366519864 | 4efdccf8... | CANCELLED — >90-minute performance timeout; triggered structural optimization. |
+| #10 | 36413444864 | e2b0846a... | EXPECTED CONTROLLED STOP / PASS FOR PURPOSE — optimized identity observation; generator SHA-256 `ad2609f14bc4b30d61d19ffb90083a9dc7a5b171dc9e60f513dec5d0a4145641`. |
+| #11 | 36413551460 | 496d5b0b... | FAILURE — optimized generation reached cardinality gate in ~19 minutes; `candidate row count mismatch`; no artifact uploaded and independent acceptance gate did not run. |
+| #12 staging | 36417744069 | ebe9481c... | PREEXEC/STAGING FAILURE — diagnostic workflow still contained placeholder generator identity; no scientific evidence. |
+| #12 diagnostic | 36417777142 | efef5c23... | DIAGNOSTIC FAILURE / PASS FOR PURPOSE — exact frozen inputs and diagnostic identity passed; generator emitted actual cardinalities before preserved fail-closed assertion. S0=6,246; each S1=6,204; each S2=5,731; total=53,986; S1 omissions exactly 42; S2 omissions 515. |
+
+### Run #12 causal reconciliation
+The 1,848-row shortfall from the frozen 55,834 expectation is entirely S2: 462 excess omitted games × four k values. S1 exactly reproduces its frozen 42-game omission set, so the general target baseline/rest_days path is not the source.
+
+Comparison of the optimized and pre-optimization S2 implementations shows the optimization preserved the relevant S2 logic; the performance optimization did not create the semantic defect.
+
+Root cause: the inner S2 source-opponent baseline handler retained legacy exception strings while current `baseline()` emits `unavailable frozen population baseline`. The current error escaped the source-residual handler to the outer candidate-level handler, causing the whole S2 candidate to be omitted instead of skipping only that unavailable historical residual and retaining other valid residuals. This contradicts the already-frozen completion-safe S2 rule; it does not justify redefining the frozen expectation to 515 omissions.
+
+Bounded implementation correction persisted on main:
+- commit `2f8aad0963d6a09ae9b8eb749163f3ff65d3566a`
+- generator Git blob `40447984a58dbc530cbe942bc1176f0c5bcbe9b2`
+- correction: inner S2 source-baseline handler now recognizes `unavailable frozen population baseline` while retaining legacy recognized strings.
+- no S1/S2 formula, k-grid, chronology, mapping, coefficient/scaling, expected omission set, Champion, outcome boundary, or 2025 TEST boundary changed.
+
+### Current next gate
+Observe and pin the corrected generator identity under controlled pre-execution conditions, then execute a fresh outcome-blind candidate freeze. The frozen acceptance expectation remains 55,834 rows with 42 S1 omitted games and 53 S2 omitted games unless new pre-outcome evidence proves otherwise.
