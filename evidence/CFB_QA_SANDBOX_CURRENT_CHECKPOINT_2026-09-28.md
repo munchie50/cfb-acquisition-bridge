@@ -74,7 +74,8 @@ DONE:
 
 ACTIVE:
 - Prospective S2_K1 continuation is frozen by evidence/CFB_QA_SANDBOX_PROSPECTIVE_S2_K1_CONTINUATION_CONTRACT_2026-09-28.md.
-- BLOCKED implementation gate: generalized S0 refresh producer v1.246 exists, but exact executable equivalence to accepted v1.206 is pending. See evidence/CFB_QA_REFRESH_V1_246_EQUIVALENCE_STATUS_2026-09-28.md.\n- External cadence WAIT remains: do not manufacture a weekly snapshot.
+- BLOCKED implementation gate: generalized S0 refresh producer v1.246 exists, but exact executable equivalence to accepted v1.206 is pending. See evidence/CFB_QA_REFRESH_V1_246_EQUIVALENCE_STATUS_2026-09-28.md. 
+- External cadence WAIT remains: do not manufacture a weekly snapshot.
 
 CURRENT CLASSIFICATION:
 - S2_K1 may continue in Sandbox study because the historical signal is broad enough to warrant further prospective validation.
@@ -84,10 +85,12 @@ CURRENT CLASSIFICATION:
 
 NEXT:
 1. Preserve S2_K1 exactly as frozen; no post-outcome parameter tuning or k-grid expansion.
-2. At the next v1.216 weekly cadence, run current source preflight.
-3. If and only if fresh source state qualifies for REFRESH_SNAPSHOT, freeze ordinary S0 refresh plus the separate S2_K1 companion with predeclared history-depth metadata before outcomes.
-4. If refresh is a no-op, create no QA snapshot.
-5. Keep 2025 TEST protected unless separately authorized; independently evaluate any future prospective window only under separate scoring authority.
+2. First execute and independently read back the exact v1.246-vs-v1.206 equivalence gate. Structural review alone is not acceptance.
+3. Do not build or execute the live S2_K1 companion on v1.246 until that gate passes.
+4. After equivalence acceptance, complete the separate S2_K1 companion and its outcome-blind identity/structural gates.
+5. At the next v1.216 weekly cadence, run current source preflight; only a qualified fresh state may create REFRESH_SNAPSHOT artifacts.
+6. If refresh is a no-op, create no QA snapshot.
+7. Keep 2025 TEST protected unless separately authorized; independently evaluate any future prospective window only under separate scoring authority.
 
 ## DO NOT TOUCH
 - Champion v1.193 or production coefficients/scaling.
