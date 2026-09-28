@@ -37,3 +37,14 @@ Structural review is weaker than executable equivalence and cannot close the gat
 
 ## Stop rule
 Do not build the S2_K1 live companion on v1.246 as accepted substrate until the exact executable equivalence gate passes and is independently read back.
+
+
+## 2026-09-28 pre-execution implementation defect
+WAIT-sweep source readback found two literal backslash-n sequences introduced during v1.246 construction. They made the producer syntactically invalid before any scientific execution.
+
+Smallest repair:
+- commit cec992bf9fd9c617d11307640592ef88a3be6c68;
+- no formula, chronology, coefficient/scaling, source, target, or lineage rule changed;
+- only the two malformed literal newline boundaries were converted to actual source line breaks.
+
+Classification: implementation/construction defect caught pre-execution. The equivalence gate remains PENDING and must still execute; this repair is not equivalence evidence.
