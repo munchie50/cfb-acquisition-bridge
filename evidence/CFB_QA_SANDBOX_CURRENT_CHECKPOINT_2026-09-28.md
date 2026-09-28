@@ -73,7 +73,8 @@ DONE:
 - S2_K1 also has mixed evidence: slight aggregate total-MAE and winner-direction degradation, 2022/2024 margin exceptions, and history-depth stability unavailable because the required field was not frozen. No post-outcome reconstruction is allowed.
 
 ACTIVE:
-- Bounded candidate disposition under the original pre-outcome acceptance bar.
+- Prospective S2_K1 continuation is frozen by evidence/CFB_QA_SANDBOX_PROSPECTIVE_S2_K1_CONTINUATION_CONTRACT_2026-09-28.md.
+- WAIT for the next v1.216 weekly refresh cadence and qualified fresh source state; do not manufacture a snapshot.
 
 CURRENT CLASSIFICATION:
 - S2_K1 may continue in Sandbox study because the historical signal is broad enough to warrant further prospective validation.
@@ -83,9 +84,10 @@ CURRENT CLASSIFICATION:
 
 NEXT:
 1. Preserve S2_K1 exactly as frozen; no post-outcome parameter tuning or k-grid expansion.
-2. Define a genuinely prospective, outcome-blind continuation window before its outcomes are known, with the required history-depth metadata frozen at prediction time.
-3. Keep 2025 TEST protected unless separately authorized.
-4. Independently evaluate the prospective window before any later advancement decision.
+2. At the next v1.216 weekly cadence, run current source preflight.
+3. If and only if fresh source state qualifies for REFRESH_SNAPSHOT, freeze ordinary S0 refresh plus the separate S2_K1 companion with predeclared history-depth metadata before outcomes.
+4. If refresh is a no-op, create no QA snapshot.
+5. Keep 2025 TEST protected unless separately authorized; independently evaluate any future prospective window only under separate scoring authority.
 
 ## DO NOT TOUCH
 - Champion v1.193 or production coefficients/scaling.
