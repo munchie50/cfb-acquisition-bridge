@@ -1,0 +1,62 @@
+name: CFB QA Refresh v1.246 Frozen-Boundary Equivalence
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_qa_refresh_v1_246_boundary_equivalence.yml'
+permissions: {contents: read, actions: read}
+jobs:
+  boundary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas numpy
+      - name: Acquire accepted v1.206 and frozen fit artifacts
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir accepted fit
+          gh api repos/${{ github.repository }}/actions/artifacts/10897612260/zip > /tmp/accepted.zip
+          echo "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf  /tmp/accepted.zip" | sha256sum -c -
+          unzip -q /tmp/accepted.zip -d accepted
+          gh api repos/${{ github.repository }}/actions/artifacts/10895838069/zip > /tmp/fit.zip
+          echo "3a2cabfcd37e0bcf0cae85efc77eaa6755ffb12734d1e48c4c582ed1de375587  /tmp/fit.zip" | sha256sum -c -
+          unzip -q /tmp/fit.zip -d fit
+      - name: Recompute accepted predictions from frozen feature boundary
+        run: |
+          python - <<'PY'
+          import pandas as pd, numpy as np, json, pathlib
+          A=pathlib.Path("accepted"); F=pathlib.Path("fit")
+          L=pd.read_csv(A/"challenger_b_2026_feature_eligibility_ledger_v1_206.csv",dtype={"game_id":str})
+          X=pd.read_csv(A/"challenger_b_2026_fair_predictions_v1_206.csv",dtype={"game_id":str})
+          features=["points_for_per_game","points_against_per_game","offensive_scrimmage_plays_per_game","defensive_scrimmage_plays_per_game","offensive_yards_per_play","defensive_yards_per_play","rush_play_rate","pass_play_rate","rush_yards_per_play","pass_yards_per_play","interception_rate","rest_days","offensive_explosive_play_rate","defensive_explosive_play_rate","offensive_success_rate","defensive_success_rate_allowed","average_starting_yards_to_goal"]
+          eligible=L[L["eligible"].astype(str).str.lower().isin(["true","1"])].copy()
+          H=eligible[eligible.side=="home"].set_index("game_id")
+          W=eligible[eligible.side=="away"].set_index("game_id")
+          ids=X.game_id.astype(str).tolist()
+          assert set(ids)<=set(H.index) and set(ids)<=set(W.index)
+          M=pd.DataFrame({"game_id":ids})
+          for f in features:
+            M["home_"+f]=[float(H.loc[g,f]) for g in ids]
+            M["away_"+f]=[float(W.loc[g,f]) for g in ids]
+          pred=[p+f for f in features for p in ("home_","away_")]
+          scales=list(F.rglob("*scal*.csv")); coeffs=list(F.rglob("*coeff*.csv"))
+          assert len(scales)==1,(scales); assert len(coeffs)==1,(coeffs)
+          scale=pd.read_csv(scales[0]); coef=pd.read_csv(coeffs[0])
+          assert len(scale)==34 and set(scale.feature)==set(pred)
+          Z=(M[pred].to_numpy(float)-scale.set_index("feature").loc[pred,"mean"].to_numpy(float))/scale.set_index("feature").loc[pred,"sd"].to_numpy(float)
+          # mirror accepted producer coefficient schema dynamically
+          print("FIT_FILES",scales[0],coeffs[0]); print("COEF_COLUMNS",list(coef.columns))
+          for target,outcol in [("margin","pred_margin"),("total","pred_total"),("win","pred_win")]:
+            q=coef[coef["target"].astype(str).str.lower().eq(target)].copy()
+            assert len(q)==35,(target,len(q))
+            intercept=float(q[q.feature=="(Intercept)"].coefficient.iloc[0])
+            beta=q[q.feature!="(Intercept)"].set_index("feature").loc[pred,"coefficient"].to_numpy(float)
+            v=intercept+Z@beta
+            if target=="win": v=1/(1+np.exp(-v))
+            assert np.allclose(v,X[outcol].to_numpy(float),rtol=0,atol=1e-12,equal_nan=False),(target,float(np.max(np.abs(v-X[outcol].to_numpy(float)))))
+          print("V1_206_FROZEN_FEATURE_BOUNDARY_REPRODUCTION_PASS",len(X))
+          PY
