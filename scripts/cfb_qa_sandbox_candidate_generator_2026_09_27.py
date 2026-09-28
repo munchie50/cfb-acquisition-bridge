@@ -279,14 +279,14 @@ def main():
         if feature=="rest_days":
             cutoff=pd.Timestamp(t).normalize()
             z=side[(side.season==season)&(side.start_date<cutoff)&side.rest_days.notna()]
-            if z.empty: raise RuntimeError("unreproducible rest-days baseline")
+            if z.empty: raise RuntimeError("unavailable frozen population baseline")
             return float(z.rest_days.mean())
         typ,num,den=COMPONENTS[feature]
         src=mp if typ=="M" else dp
         complete="mechanical_primitive_complete" if typ=="M" else "derived_primitive_complete"
         cutoff=pd.Timestamp(t).normalize()
         z=src[(src.season==season)&(src.start_date<cutoff)&normalize_complete_flag(src[complete],complete)].copy()
-        if z.empty: raise RuntimeError("unreproducible component baseline")
+        if z.empty: raise RuntimeError("unavailable frozen population baseline")
         n=float(z[num].sum())
         d=float(len(z)) if den=="GAME" else float(z[den].sum())
         if not np.isfinite(n): raise RuntimeError("non-finite pooled numerator")
@@ -414,7 +414,8 @@ def main():
                             if hv[f] != h1 or av[f] != a1:
                                 raise RuntimeError("S2 altered frozen S1-only feature")
             except RuntimeError as e:
-                if kind=="S2" and str(e)=="no valid completion-safe S2 context":
+                if (kind in ("S1","S2") and str(e)=="unavailable frozen population baseline") or \
+                   (kind=="S2" and str(e)=="no valid completion-safe S2 context"):
                     unavailable=True
                 else:
                     raise
@@ -441,10 +442,10 @@ def main():
                 "pred_total":pred34("total"),"pred_win":pred34("win")})
     pred=pd.DataFrame(rows)
     if any(FORBID.search(c) for c in pred.columns): raise SystemExit("forbidden prediction column")
-    expected=56166
+    expected=55834
     expected_s0=len(work)
-    expected_s1=len(work)*4
-    expected_s2=(len(work)-12)*4
+    expected_s1=(len(work)-42)*4
+    expected_s2=(len(work)-53)*4
     if pred.duplicated(["season","game_id","candidate_id"]).any():
         raise SystemExit("duplicate candidate prediction rows")
     vals=pred[["pred_margin","pred_total","pred_win"]].to_numpy(dtype=float)
@@ -466,14 +467,14 @@ def main():
     if len(pred)!=expected: raise SystemExit("candidate row count mismatch")
     if counts.get("S0",0)!=expected_s0 or counts.get("S1",0)!=expected_s1 or counts.get("S2",0)!=expected_s2:
         raise SystemExit("candidate family cardinality mismatch")
-    expected_s2_omissions={
-      (2016,"400869117"),(2017,"400935254"),(2018,"401022521"),(2018,"401022524"),(2019,"401112443"),
-      (2020,"401246425"),(2022,"401403946"),(2022,"401403976"),(2022,"401405073"),
-      (2022,"401413257"),(2022,"401415219"),(2022,"401426543")}
-    s2_games=set(map(tuple,pred[pred.candidate_id.str.startswith("S2")][["season","game_id"]].drop_duplicates().to_numpy()))
+    expected_s1_omissions={(2017,"400935254"),(2019,"401110773"),(2019,"401110774"),(2019,"401110777"),(2019,"401110778"),(2019,"401110779"),(2019,"401110780"),(2019,"401110781"),(2019,"401110783"),(2019,"401110784"),(2019,"401110785"),(2019,"401112074"),(2019,"401112097"),(2019,"401112107"),(2019,"401112146"),(2019,"401112192"),(2019,"401112202"),(2019,"401112213"),(2019,"401112223"),(2019,"401112239"),(2019,"401112252"),(2019,"401112258"),(2019,"401112268"),(2019,"401112440"),(2019,"401112441"),(2019,"401112445"),(2019,"401112446"),(2019,"401112447"),(2019,"401114193"),(2019,"401114214"),(2019,"401114224"),(2019,"401114229"),(2019,"401114247"),(2019,"401114248"),(2019,"401114249"),(2019,"401114250"),(2019,"401114251"),(2019,"401114253"),(2019,"401114254"),(2019,"401114347"),(2019,"401117500"),(2019,"401117860")}
+    expected_s2_omissions={(2016,"400869117"),(2017,"400935254"),(2018,"401022521"),(2018,"401022524"),(2019,"401110773"),(2019,"401110774"),(2019,"401110777"),(2019,"401110778"),(2019,"401110779"),(2019,"401110780"),(2019,"401110781"),(2019,"401110783"),(2019,"401110784"),(2019,"401110785"),(2019,"401112074"),(2019,"401112097"),(2019,"401112107"),(2019,"401112146"),(2019,"401112192"),(2019,"401112202"),(2019,"401112213"),(2019,"401112223"),(2019,"401112239"),(2019,"401112252"),(2019,"401112258"),(2019,"401112268"),(2019,"401112440"),(2019,"401112441"),(2019,"401112443"),(2019,"401112445"),(2019,"401112446"),(2019,"401112447"),(2019,"401114193"),(2019,"401114214"),(2019,"401114224"),(2019,"401114229"),(2019,"401114247"),(2019,"401114248"),(2019,"401114249"),(2019,"401114250"),(2019,"401114251"),(2019,"401114253"),(2019,"401114254"),(2019,"401114347"),(2019,"401117500"),(2019,"401117860"),(2020,"401246425"),(2022,"401403946"),(2022,"401403976"),(2022,"401405073"),(2022,"401413257"),(2022,"401415219"),(2022,"401426543")}
     all_games=set((int(r.season),str(r.game_id)) for r in work[["season","game_id"]].drop_duplicates().itertuples(index=False))
-    actual_s2_omissions=all_games-s2_games
-    if actual_s2_omissions!=expected_s2_omissions:
+    s1_games=set(map(tuple,pred[pred.candidate_id.str.startswith("S1")][["season","game_id"]].drop_duplicates().to_numpy()))
+    s2_games=set(map(tuple,pred[pred.candidate_id.str.startswith("S2")][["season","game_id"]].drop_duplicates().to_numpy()))
+    if all_games-s1_games!=expected_s1_omissions:
+        raise SystemExit("S1 omitted-game identity mismatch")
+    if all_games-s2_games!=expected_s2_omissions:
         raise SystemExit("S2 omitted-game identity mismatch")
     final_input_sha256={label:sha(path) for label,path in input_paths.items()}
     if final_input_sha256!=runtime_input_sha256:
@@ -500,7 +501,7 @@ def main():
             raise SystemExit(f"prediction persistence numeric mismatch: {col}")
     config={"k_grid":list(KGRID),"features":FEATURES,"s2_mapping":MAP,
       "population_cutoff":"UTC_DATE_MIDNIGHT_STRICT_PRIOR",
-      "s2_fail_closed":True,"expected_prediction_rows":56166}
+      "s2_fail_closed":True,"expected_prediction_rows":55834}
     config_sha256=hashlib.sha256(json.dumps(config,sort_keys=True,separators=(",",":")).encode()).hexdigest()
     manifest={"status":"PREDICTIONS_FROZEN_NOT_SCORED","games":len(work),"prediction_rows":len(pred),
       "candidate_ids":sorted(pred.candidate_id.unique()),"seasons":sorted(map(int,pred.season.unique())),
