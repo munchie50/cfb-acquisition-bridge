@@ -9,7 +9,8 @@ S=pd.read_csv(schedp,dtype={"game_id":str}); S["start_date"]=pd.to_datetime(S.st
 REQS=["season","game_id","start_date","home_team","away_team","neutral_site","population_class"]
 if set(S.columns)!=set(REQS) or len(S)<1 or S.game_id.nunique()!=len(S) or S.game_id.duplicated().any(): raise SystemExit(f"target schedule identity cols={list(S.columns)} rows={len(S)} unique={S.game_id.nunique()}")
 S=S[REQS].copy()
-if not set(S.population_class.unique()).issubset({"FBS_VS_FBS","FBS_VS_NONFBS"}): raise SystemExit("population class mismatch")\nif not (S.start_date>cutoff).all(): raise SystemExit("refresh target not strictly future at cutoff")
+if not set(S.population_class.unique()).issubset({"FBS_VS_FBS","FBS_VS_NONFBS"}): raise SystemExit("population class mismatch")
+if not (S.start_date>cutoff).all(): raise SystemExit("refresh target not strictly future at cutoff")
 bad=("point","score","winner","spread","moneyline","over_under","odds","bet","post_win","postgame","market")
 if any(any(x in c.lower() for x in bad) for c in S.columns): raise SystemExit("target outcome/market field")
 
@@ -105,9 +106,11 @@ for kind,lam in [("margin",0.1),("total",0.1),("win",0.01)]:
     if kind=="win": q=1/(1+np.exp(-np.clip(q,-40,40)))
     X["pred_"+kind]=q
 if len(X) and (not np.isfinite(X[["pred_margin","pred_total","pred_win"]]).all(axis=None) or not X.pred_win.between(0,1).all()): raise SystemExit("prediction invariant")
-for df in (X,E,A,L,S): df["snapshot_type"]="REFRESH_SNAPSHOT"; df["snapshot_cutoff_utc"]=cutoff.isoformat()\nX.to_csv(outp/"challenger_b_2026_refresh_fair_predictions_v1_246.csv",index=False); E.to_csv(outp/"challenger_b_2026_refresh_exclusions_v1_246.csv",index=False); A.to_csv(outp/"challenger_b_2026_refresh_chronology_audit_v1_246.csv",index=False); L.to_csv(outp/"challenger_b_2026_refresh_feature_eligibility_ledger_v1_246.csv",index=False); S.to_csv(outp/"challenger_b_2026_refresh_target_ledger_v1_246.csv",index=False)
+for df in (X,E,A,L,S): df["snapshot_type"]="REFRESH_SNAPSHOT"; df["snapshot_cutoff_utc"]=cutoff.isoformat()
+X.to_csv(outp/"challenger_b_2026_refresh_fair_predictions_v1_246.csv",index=False); E.to_csv(outp/"challenger_b_2026_refresh_exclusions_v1_246.csv",index=False); A.to_csv(outp/"challenger_b_2026_refresh_chronology_audit_v1_246.csv",index=False); L.to_csv(outp/"challenger_b_2026_refresh_feature_eligibility_ledger_v1_246.csv",index=False); S.to_csv(outp/"challenger_b_2026_refresh_target_ledger_v1_246.csv",index=False)
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 manifest={"status":"EXECUTED_NOT_ACCEPTED","snapshot_type":"REFRESH_SNAPSHOT","parent_lineage":"v1.216","target_games":len(S),"eligible_predictions":len(X),"excluded_games":len(E),"target_population":S.population_class.value_counts().to_dict(),"predictor_count":34,"fit_or_optimization_performed":False,"market_joined":False,"target_outcomes_joined":False,"source_chronology":"strictly before frozen execution cutoff and target kickoff","cutoff_utc":cutoff.isoformat(),"hashes":{}}
 for p in sorted(outp.iterdir()): manifest["hashes"][p.name]=sha(p)
-(outp/"manifest_v1_246.json").write_text(json.dumps(manifest,indent=2,sort_keys=True)+"\n")
+(outp/"manifest_v1_246.json").write_text(json.dumps(manifest,indent=2,sort_keys=True)+"
+")
 print(json.dumps(manifest,indent=2))
