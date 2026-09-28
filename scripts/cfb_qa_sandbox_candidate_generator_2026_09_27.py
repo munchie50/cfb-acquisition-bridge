@@ -371,7 +371,7 @@ def main():
             try:
                 ob=baseline(pair,opp.start_date,opp.season)
             except RuntimeError as e:
-                if str(e) in ("unreproducible component baseline","unreproducible rest-days baseline"):
+                if str(e) in ("unavailable frozen population baseline","unreproducible component baseline","unreproducible rest-days baseline"):
                     continue
                 raise
             oq=float(opp.qualified_prior_games)
