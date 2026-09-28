@@ -1,0 +1,52 @@
+name: CFB QA Sandbox Cardinality Diagnostic Run 12
+on:
+  push:
+    branches: ['qa/cardinality-diagnostic-run12']
+    paths:
+      - '.github/workflows/cfb_qa_sandbox_cardinality_diagnostic_run12.yml'
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check numpy pandas
+      - name: Acquire exact frozen inputs
+        env:
+          GH_TOKEN: "${{ github.token }}"
+        run: |
+          set -euo pipefail
+          mkdir -p inputs/v172 inputs/v179 inputs/v183
+          gh api repos/${{ github.repository }}/actions/artifacts/10895523493/zip > /tmp/v172.zip
+          echo "702930b2ba905c9f917acbc627d12342e8190cfb44a4c8afd1aee49fbf59e239  /tmp/v172.zip" | sha256sum -c -
+          unzip -q /tmp/v172.zip -d inputs/v172
+          gh api repos/${{ github.repository }}/actions/artifacts/10896565577/zip > /tmp/v179.zip
+          echo "8eeb67f5da87df4a75f2f785838553679928e370eefeea3945f2b2e688e69780  /tmp/v179.zip" | sha256sum -c -
+          unzip -q /tmp/v179.zip -d inputs/v179
+          gh api repos/${{ github.repository }}/actions/artifacts/10895838069/zip > /tmp/v183.zip
+          echo "3a2cabfcd37e0bcf0cae85efc77eaa6755ffb12734d1e48c4c582ed1de375587  /tmp/v183.zip" | sha256sum -c -
+          unzip -q /tmp/v183.zip -d inputs/v183
+      - name: Verify diagnostic generator identity
+        run: |
+          set -euo pipefail
+          echo "GENERATOR_SHA_PLACEHOLDER  scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py" | sha256sum -c -
+          python -m py_compile scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py
+      - name: Run fail-closed cardinality diagnostic
+        run: |
+          set -euo pipefail
+          DATASET="$(find inputs/v179 -name challenger_b_dataset_v1_179.csv)"
+          MP="$(find inputs/v172 -name challenger_b_mechanical_primitives_v1_172.csv)"
+          DP="$(find inputs/v172 -name challenger_b_derived_primitives_v1_172.csv)"
+          MF="$(find inputs/v172 -name challenger_b_mechanical_features_v1_172.csv)"
+          DF="$(find inputs/v172 -name challenger_b_derived_features_v1_172.csv)"
+          SCALING="$(find inputs/v183 -name train_scaling.csv)"
+          COEF="$(find inputs/v183 -name selected_coefficients.csv)"
+          python scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py --dataset "$DATASET" --mechanical-primitives "$MP" --derived-primitives "$DP" --mechanical-features "$MF" --derived-features "$DF" --scaling "$SCALING" --coefficients "$COEF" --out sandbox_diagnostic
