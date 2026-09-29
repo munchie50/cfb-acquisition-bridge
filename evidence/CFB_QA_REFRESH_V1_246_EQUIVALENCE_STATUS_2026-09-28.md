@@ -126,3 +126,16 @@ Classification: **FROZEN FEATURE BOUNDARY SUFFICIENCY PASS.** The accepted v1.20
 This does **not** convert the historical raw-PBP replay gate to PASS. Exact historical PBP RDS container bytes remain unavailable because the upstream release asset was mutable and overwritten. The raw-byte replay limitation remains explicitly recorded.
 
 Next bounded QA gate: use this accepted feature boundary to validate that the generalized v1.246 refresh producer's downstream scientific transformation is identical to v1.206 while separately validating its intended generalized target/snapshot plumbing. No S2_K1 live companion acceptance or prospective freeze is implied.
+
+
+## v1.246 static scientific-core identity — PASS
+- Run: `36504978563`
+- Head: `7e8a9d56e37bceb8ef275a64cf3f91ea36910ea9`
+- Job: `109204260758`
+- Marker: `V1_246_GENERALIZED_PLUMBING_STATIC_PASS`.
+- v1.246 compiled successfully.
+- Source comparison from the 17-feature declaration through the final prediction invariant is exact after normalizing only the two authorized dynamic-accounting expressions: `len(L)==2*len(S)` versus fixed 1244 and `len(X)+len(E)==len(S)` versus fixed 622.
+- Static checks also confirm strict-future target enforcement, allowed population classes, REFRESH_SNAPSHOT metadata, cutoff metadata, parent lineage v1.216, dynamic target count/population manifest fields, and actual newline manifest termination.
+
+Classification: **STATIC SCIENTIFIC-CORE IDENTITY PASS / DYNAMIC EXECUTION STILL REQUIRED.**
+This is not by itself generalized-refresh acceptance. A synthetic/dynamic execution gate must exercise variable target cardinality and fail-closed target validation before v1.246 can be accepted as the S0 refresh substrate.
