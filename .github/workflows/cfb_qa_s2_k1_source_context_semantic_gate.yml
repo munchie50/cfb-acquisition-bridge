@@ -1,0 +1,16 @@
+name: CFB QA S2 K1 Source Context Semantic Gate
+on:
+  push:
+    paths:
+      - 'scripts/cfb_qa_s2_k1_source_context_semantic_gate_2026_09_28.py'
+      - '.github/workflows/cfb_qa_s2_k1_source_context_semantic_gate.yml'
+jobs:
+  semantic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pandas numpy
+      - run: python scripts/cfb_qa_s2_k1_source_context_semantic_gate_2026_09_28.py
