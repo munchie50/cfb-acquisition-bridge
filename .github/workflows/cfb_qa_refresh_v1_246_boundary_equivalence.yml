@@ -50,13 +50,14 @@ jobs:
           Z=(M[pred].to_numpy(float)-scale.set_index("feature").loc[pred,"mean"].to_numpy(float))/scale.set_index("feature").loc[pred,"sd"].to_numpy(float)
           # mirror accepted producer coefficient schema dynamically
           print("FIT_FILES",scales[0],coeffs[0]); print("COEF_COLUMNS",list(coef.columns))
-          for target,outcol in [("margin","pred_margin"),("total","pred_total"),("win","pred_win")]:
-            q=coef[coef["target"].astype(str).str.lower().eq(target)].copy()
-            assert len(q)==35,(target,len(q))
-            intercept=float(q[q.feature=="(Intercept)"].coefficient.iloc[0])
-            beta=q[q.feature!="(Intercept)"].set_index("feature").loc[pred,"coefficient"].to_numpy(float)
-            v=intercept+Z@beta
-            if target=="win": v=1/(1+np.exp(-v))
+          Z=np.c_[Z,(X.venue_state=="NEUTRAL").astype(float).to_numpy()]
+          names=["intercept"]+pred+["venue_neutral"]
+          for target,lam,outcol in [("margin",0.1,"pred_margin"),("total",0.1,"pred_total"),("win",0.01,"pred_win")]:
+            q=coef[(coef["target"]==target)&(coef["lambda"]==lam)].set_index("term")
+            assert set(q.index)==set(names),(target,set(q.index)^set(names))
+            w=q.loc[names,"coefficient"].to_numpy(float)
+            v=np.c_[np.ones(len(Z)),Z]@w
+            if target=="win": v=1/(1+np.exp(-np.clip(v,-40,40)))
             assert np.allclose(v,X[outcol].to_numpy(float),rtol=0,atol=1e-12,equal_nan=False),(target,float(np.max(np.abs(v-X[outcol].to_numpy(float)))))
           print("V1_206_FROZEN_FEATURE_BOUNDARY_REPRODUCTION_PASS",len(X))
           PY
