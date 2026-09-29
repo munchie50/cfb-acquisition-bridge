@@ -59,3 +59,23 @@ Build a separate QA companion exporter. Do not modify accepted v1.246 scientific
 9. source implementation identity pinned and read back.
 
 Passing this contract authorizes only construction of the separate S2_K1 consumer. It does not authorize live freezing, outcome scoring, acceptance, promotion, or production change.
+
+
+## Recovered primitive ancestry and 2026 adapter lock
+Exact recovered builder: `scripts/phase4_challenger_b_corrected_features_v1_172.py`, Git blob `37c05aba201d3c2935b5d2b646437552949766fd`.
+
+The 2026 companion must reuse these frozen per-game primitive semantics:
+- mechanical: off_plays, off_yards, rush_plays, pass_plays, rush_yards, pass_yards, pass_attempts, interceptions, def_plays, def_yards;
+- derived: off_scr, off_exp, off_succ_q, off_succ, def_scr, def_exp, def_succ_q, def_succ, start_ytg_sum, start_drive_n;
+- derived event counts zero-fill only after team/game identity is established by scrimmage participation;
+- drive start uses first yards_to_goal by game/team/drive in source order;
+- mechanical/derived primitive completeness are per-game team-side flags;
+- history completeness is cumulative strict-prior state and is distinct from own-game primitive completeness;
+- strict same-team chronology must be deterministic and fail on equal-kickoff ambiguity.
+
+2026-only adapter:
+v1.172 used a separately persisted historical known-missing-PBP game-ID ledger. The accepted v1.246 2026 source boundary instead establishes PBP availability directly from the supplied P surface and already fails a target side when its required prior game IDs are not all represented. The companion will therefore derive `pbp_game_present` from membership in the supplied 2026 P game-ID set. It must not invent or import a different missing-ID ledger.
+
+Population baseline construction will pool only per-game primitive rows whose corresponding primitive-complete flag is true and whose kickoff is strictly before `pd.Timestamp(source_kickoff).normalize()`, matching the frozen historical baseline rule. rest_days remains the mean of reproducible strict-prior team-side rest-day states under the same normalized cutoff.
+
+This adapter does not change frozen S2 science; it maps the accepted 2026 source-availability boundary onto the recovered v1.172 primitive semantics.
