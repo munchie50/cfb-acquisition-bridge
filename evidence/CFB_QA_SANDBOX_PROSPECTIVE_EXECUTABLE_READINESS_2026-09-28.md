@@ -83,3 +83,24 @@ Therefore the next dependency is **not** an S2 prediction consumer yet. First ex
 Classification: **TARGET-SIDE SUBSTRATE ACCEPTED; SOURCE-CONTEXT/BASELINE SUBSTRATE STILL REQUIRED BEFORE S2_K1 IMPLEMENTATION.**
 
 No S2 predictions, outcomes, market/wager data, 2025 TEST access, Champion mutation, or production promotion are authorized by this correction.
+
+
+## Source-context companion implementation review — v0 QUARANTINED
+Reviewed implementation: `scripts/cfb_qa_s2_k1_source_context_companion_2026_09_28.py`
+Observed source blob: `a72406f927c0466a659e909493319c25ba88f22f`
+Frozen historical generator blob used for comparison: `40447984a58dbc530cbe942bc1176f0c5bcbe9b2`.
+
+Pre-execution semantic review found two material mismatches, so the implementation is **QUARANTINED / NOT EXECUTED / NOT ACCEPTED**:
+
+1. The companion's `side_state` currently makes context availability effectively all-17-features/all-denominators. Frozen S2 is paired-feature-specific: each mapped feature obtains its own paired baseline/context; zero-history context contributes residual zero when its paired baseline exists; positive-history context is skipped according to frozen completion-safe state and paired raw availability. One unrelated unavailable denominator must not suppress every mapped feature.
+
+2. The companion exports cumulative target/opponent-history numerators and denominators. Frozen population baselines are pooled from completion-safe **per-game primitive rows across the season population before the calendar-day-normalized cutoff**. Cumulative team-history components are not a valid substitute for that primitive population surface.
+
+Disposition:
+- Do not create an execution workflow for this v0 script.
+- Do not use its outputs for S2.
+- Preserve it as rejected QA evidence; do not delete history.
+- Recover/reuse the accepted v1.172-style per-game mechanical/derived primitive construction semantics, adapted only to the already-qualified 2026 R/P source boundary, or expose equivalent per-game primitive rows directly from the same R/P inputs.
+- Keep target-side v1.246 acceptance unchanged.
+
+This is an implementation correction only. Frozen S2_K1 science, mapping, chronology, k=1, production/Champion state, protected 2025 TEST, and no-outcome/no-market constraints remain unchanged.
