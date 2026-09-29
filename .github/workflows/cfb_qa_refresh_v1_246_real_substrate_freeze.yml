@@ -2,8 +2,8 @@ name: CFB QA v1.246 Real Substrate Freeze
 on:
   push:
     branches: [main]
-    paths: ['.github/workflows/cfb_qa_refresh_v1_246_real_substrate_freeze.yml']
-permissions: {contents: read, actions: read}
+    paths:\n      - '.github/workflows/cfb_qa_refresh_v1_246_real_substrate_freeze.yml'
+permissions:\n  contents: read\n  actions: read
 jobs:
   substrate:
     runs-on: ubuntu-latest
@@ -13,7 +13,7 @@ jobs:
         with: {python-version: '3.12'}
       - run: pip install --disable-pip-version-check pandas numpy pyarrow pyreadr
       - name: Download immutable raw boundary and frozen fit
-        env: {GH_TOKEN: ${{ github.token }}}
+        env:\n          GH_TOKEN: ${{ github.token }}
         run: |
           gh api repos/munchie50/cfb-acquisition-bridge/actions/artifacts/11031055060/zip > raw.zip
           echo "1495f453e5d9f262baddfa2b7ad21d2d9e8d5f8c2436f058f88fcb6ebc6d8d68  raw.zip" | sha256sum -c -
