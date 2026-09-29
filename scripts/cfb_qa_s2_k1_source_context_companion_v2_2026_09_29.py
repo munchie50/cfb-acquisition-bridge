@@ -3,8 +3,11 @@
 import sys,json,hashlib
 from pathlib import Path
 import pandas as pd, numpy as np, pyreadr
-schedp,rawp,pbpp,outp=map(Path,sys.argv[1:5]); cutoff=pd.Timestamp(sys.argv[5]); outp.mkdir(parents=True,exist_ok=True)
+schedp,rawp,pbpp,targetsidep,outp=map(Path,sys.argv[1:6]); cutoff=pd.Timestamp(sys.argv[6]); outp.mkdir(parents=True,exist_ok=True)
 S=pd.read_csv(schedp,dtype={"game_id":str});S["start_date"]=pd.to_datetime(S.start_date,utc=True)
+T=pd.read_csv(targetsidep,dtype={"game_id":str});T["start_date"]=pd.to_datetime(T.start_date,utc=True)
+if T.duplicated(["game_id","team"]).any():raise SystemExit("target-side identity")
+tq=T.set_index(["game_id","team"]).qualified_prior_games
 R=pd.read_parquet(rawp);R["game_id"]=R.game_id.astype(str).str.replace(r"\.0$","",regex=True);R["start_date"]=pd.to_datetime(R.start_date,utc=True);R=R[(R.season.astype(int)==2026)&(R.start_date<cutoff)].copy()
 P=next(iter(pyreadr.read_r(pbpp).values()));P["game_id"]=P.game_id.astype(str).str.replace(r"\.0$","",regex=True);P["pos_team"]=P.pos_team.replace({"Savannah St":"Savannah State","St. Francis (PA)":"Saint Francis"});P["def_pos_team"]=P.def_pos_team.replace({"Savannah St":"Savannah State","St. Francis (PA)":"Saint Francis"})
 if (S.start_date<=cutoff).any():raise SystemExit("target not future")
@@ -53,11 +56,18 @@ idx=side.set_index(["game_id","team"],drop=False);rows=[]
 for g in S.sort_values(["start_date","game_id"]).itertuples():
  for role,team in (("home",g.home_team),("away",g.away_team)):
   prior=mm[(mm.team==team)&(mm.start_date<g.start_date)&(mm.start_date<cutoff)].sort_values("start_date")
+  tk=(str(g.game_id),team)
+  if tk not in tq.index:raise SystemExit("missing accepted target-side state")
+  expected=tq.loc[tk]
+  if (not np.isfinite(expected)) or int(expected)!=expected or int(expected)<0 or len(prior)!=int(expected):raise SystemExit("target/source history count mismatch")
   for src in prior.itertuples():
    opp=src.away_team if team==src.home_team else src.home_team
    k=(src.game_id,opp)
    if k not in idx.index:raise SystemExit("missing opponent state")
    o=idx.loc[k]
+   if pd.Timestamp(o.start_date)!=pd.Timestamp(src.start_date) or not (pd.Timestamp(src.start_date)<pd.Timestamp(g.start_date)):raise SystemExit("opponent/source kickoff identity")
+   oq=o.qualified_prior_games
+   if (not np.isfinite(oq)) or int(oq)!=oq or int(oq)<0:raise SystemExit("opponent qualified-prior identity")
    rec={"target_game_id":g.game_id,"target_side":role,"target_team":team,"target_kickoff":g.start_date.isoformat(),"source_game_id":src.game_id,"source_kickoff":src.start_date.isoformat(),"source_opponent":opp,"opponent_qualified_prior_games":int(o.qualified_prior_games),"mechanical_history_complete":bool(o.mechanical_history_complete),"derived_history_complete":bool(o.derived_history_complete)}
    for f,pair in MAP.items():
     b=baseline(pair,o.start_date);raw=o[pair];rec["baseline__"+pair]=b;rec["raw__"+pair]=raw;rec["context_valid__"+f]=bool(np.isfinite(b) and (int(o.qualified_prior_games)==0 or ((bool(o.mechanical_history_complete) and bool(o.derived_history_complete)) and np.isfinite(raw))))
@@ -65,6 +75,6 @@ for g in S.sort_values(["start_date","game_id"]).itertuples():
 C=pd.DataFrame(rows);C["snapshot_type"]="S2_K1_SOURCE_CONTEXT";C["snapshot_cutoff_utc"]=cutoff.isoformat()
 for name,d in [("mechanical_primitives",mm),("derived_primitives",dm),("source_context",C)]:
  op=outp/(name+".csv");d.to_csv(op,index=False)
-manifest={"status":"EXECUTED_NOT_ACCEPTED","s2_predictions_produced":False,"target_outcomes_joined":False,"market_joined":False,"primitive_ancestry_blob":"37c05aba201d3c2935b5d2b646437552949766fd","rows":{"mechanical":len(mm),"derived":len(dm),"context":len(C)},"hashes":{}}
+manifest={"status":"EXECUTED_NOT_ACCEPTED","s2_predictions_produced":False,"target_outcomes_joined":False,"market_joined":False,"primitive_ancestry_blob":"37c05aba201d3c2935b5d2b646437552949766fd","accepted_target_side_crosscheck":True,"rows":{"mechanical":len(mm),"derived":len(dm),"context":len(C)},"hashes":{}}
 for p in sorted(outp.glob("*.csv")):manifest["hashes"][p.name]=hashlib.sha256(p.read_bytes()).hexdigest()
 (outp/"manifest.json").write_text(json.dumps(manifest,indent=2,sort_keys=True)+"\n");print(json.dumps(manifest,indent=2))
