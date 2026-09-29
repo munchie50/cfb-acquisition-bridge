@@ -25,7 +25,13 @@ assert m["target_population"]=={"FBS_VS_FBS":2,"FBS_VS_NONFBS":1}
 assert m["snapshot_type"]=="REFRESH_SNAPSHOT" and m["parent_lineage"]=="v1.216"
 assert not m["fit_or_optimization_performed"] and not m["market_joined"] and not m["target_outcomes_joined"]
 files=[p for p in outp.iterdir() if p.name!="manifest_v1_246.json"]
-assert len(m["hashes"])==5 and set(m["hashes"])==set(p.name for p in files)
+expected={p.name for p in files}
+assert set(m["hashes"])==expected
+assert len(files) in (5,6)
+if len(files)==6:
+ substrate=outp/"challenger_b_2026_refresh_team_side_substrate_v1_246.csv"
+ ledger=outp/"challenger_b_2026_refresh_feature_eligibility_ledger_v1_246.csv"
+ assert substrate.exists() and ledger.exists() and substrate.read_bytes()==ledger.read_bytes()
 for p in files:
  assert m["hashes"][p.name]==hashlib.sha256(p.read_bytes()).hexdigest()
  if p.suffix==".csv":
