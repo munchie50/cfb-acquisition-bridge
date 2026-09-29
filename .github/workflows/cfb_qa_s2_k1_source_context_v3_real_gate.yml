@@ -1,0 +1,45 @@
+name: CFB QA S2 Source Context v3 Real Gate
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_qa_s2_k1_source_context_v3_real_gate.yml'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas numpy pyarrow pyreadr
+      - name: Lock implementation and retained inputs
+        run: |
+          echo "be916e3f71dc4ee91230709b4ad8094bb12814126ae3e500031de0d3b7cc0561  scripts/cfb_qa_s2_k1_source_context_companion_v3_2026_09_29.py" | sha256sum -c -
+      - name: Fetch retained boundaries
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/munchie50/cfb-acquisition-bridge/actions/artifacts/11031055060/zip > raw.zip
+          mkdir rawpkg && unzip -q raw.zip -d rawpkg
+          gh api repos/munchie50/cfb-acquisition-bridge/actions/artifacts/11064541770/zip > substrate.zip
+          mkdir substrate && unzip -q substrate.zip -d substrate
+      - name: Verify retained bytes
+        run: |
+          echo "1495f453e5d9f262baddfa2b7ad21d2d9e8d5f8c2436f058f88fcb6ebc6d8d68  raw.zip" | sha256sum -c -
+          echo "9847952ba52279318018a259c07197df23392086f03bd6a308fd2cf60e83cd2c  rawpkg/cfb_schedules_2026.parquet" | sha256sum -c -
+          echo "eab0562fb2f9dd9c65cf1457c469d656d9247212694370cac10c789e673a2ddb  rawpkg/pbp_2026.rds" | sha256sum -c -
+          echo "78b58979a7a1a81bd3af0473c65fb760a94b73421e0ee97aa51adce1a540a259  substrate.zip" | sha256sum -c -
+          echo "eb2ea9a24831fbb485070c038118aedd11934951f28d02484d30654b0e067e75  substrate/challenger_b_2026_refresh_team_side_substrate_v1_246.csv" | sha256sum -c -
+      - name: Execute v3 context only
+        run: |
+          mkdir out
+          python scripts/cfb_qa_s2_k1_source_context_companion_v3_2026_09_29.py rawpkg/challenger_b_2026_future_target_projection_v1_217.csv rawpkg/cfb_schedules_2026.parquet rawpkg/pbp_2026.rds substrate/challenger_b_2026_refresh_team_side_substrate_v1_246.csv out "2026-09-29T11:39:08.824054+00:00"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-qa-s2-k1-source-context-v3-real
+          path: out/
+          retention-days: 90
