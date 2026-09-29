@@ -23,7 +23,8 @@ jobs:
           p=Path("scripts/phase4_challenger_b_2026_refresh_predict_v1_246.py").read_text()
           def block(s):
               a=s.index("BASE2017=")
-              b=s.index("P=next(",a)
+              marker='R=R[R.home_canonical.isin(m)|R.away_canonical.isin(m)].copy()'
+              b=s.index(marker,a)+len(marker)
               return s[a:b]
           assert block(v)==block(p)
           assert 'R=R[R.start_date<cutoff].copy()' in v
