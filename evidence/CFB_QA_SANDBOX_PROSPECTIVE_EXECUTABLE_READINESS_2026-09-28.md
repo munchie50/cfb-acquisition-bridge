@@ -104,3 +104,25 @@ Disposition:
 - Keep target-side v1.246 acceptance unchanged.
 
 This is an implementation correction only. Frozen S2_K1 science, mapping, chronology, k=1, production/Champion state, protected 2025 TEST, and no-outcome/no-market constraints remain unchanged.
+
+
+## S2_K1 source-context synthetic semantic gate — PASS
+Workflow run `36508003233`, job `109213689953`, head `9f7c6e760bbc78522836c5f7a3d4ff9c0bf65ea5`, conclusion SUCCESS.
+
+Observed marker:
+`S2_K1_SOURCE_CONTEXT_SYNTHETIC_SEMANTIC_PASS`
+
+The bounded synthetic gate proved:
+- calendar-day-normalized cutoff excludes same-date primitive rows;
+- pooled numerator/denominator baseline behavior;
+- incomplete primitive rows excluded from population baselines;
+- zero-history opponent context contributes residual zero when baseline exists;
+- positive-history context with either history-complete flag false is unavailable;
+- positive-history non-finite paired raw context is unavailable;
+- feature-specific context invalidity does not suppress unrelated mapped features;
+- k=1 S1 residual arithmetic;
+- strict source-before-target chronology.
+
+Classification: **SYNTHETIC SEMANTIC RULES PASS / COMPANION IMPLEMENTATION NOT YET ACCEPTED.**
+
+This run contains no live 2026 outcome evaluation and does not validate the v1 companion against real executable R/P inputs. The next authorized dependency is implementation-structure/static equivalence followed by bounded executable structural QA. No S2 prediction generation is authorized.
