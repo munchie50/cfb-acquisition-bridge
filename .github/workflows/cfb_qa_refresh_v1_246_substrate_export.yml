@@ -1,0 +1,59 @@
+name: CFB QA Refresh v1.246 Substrate Export
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_qa_refresh_v1_246_substrate_export.yml'
+permissions:
+  contents: read
+jobs:
+  substrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --disable-pip-version-check pandas numpy
+      - name: Static boundary proof
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          p=Path("scripts/phase4_challenger_b_2026_refresh_predict_v1_246.py")
+          s=p.read_text()
+          needle='L.to_csv(outp/"challenger_b_2026_refresh_team_side_substrate_v1_246.csv",index=False)'
+          assert s.count(needle)==1
+          # Export must be direct from L: no new feature construction or mutation between snapshot tagging and output.
+          a=s.index('for df in (X,E,A,L,S):')
+          b=s.index('def sha(p):',a)
+          region=s[a:b]
+          assert needle in region
+          assert 'side_features(' not in region and 'L[' not in region and 'L.' not in region.replace(needle,'')
+          print("V1_246_SUBSTRATE_EXPORT_STATIC_PASS",hashlib.sha256(p.read_bytes()).hexdigest())
+          PY
+      - name: Re-run exact output harness with six-file manifest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/munchie50/cfb-acquisition-bridge/actions/artifacts/10895838069/zip > fit.zip
+          echo "3a2cabfcd37e0bcf0cae85efc77eaa6755ffb12734d1e48c4c582ed1de375587  fit.zip" | sha256sum -c -
+          mkdir fit
+          unzip -q fit.zip -d fit
+          find fit -name selected_coefficients.csv -print -quit | xargs dirname > fitpath.txt
+          python scripts/cfb_qa_refresh_v1_246_output_plumbing_2026_09_28.py "$(cat fitpath.txt)" out || true
+          python - <<'PY'
+          import pandas as pd,json,hashlib
+          from pathlib import Path
+          o=Path("out")
+          a=o/"challenger_b_2026_refresh_feature_eligibility_ledger_v1_246.csv"
+          b=o/"challenger_b_2026_refresh_team_side_substrate_v1_246.csv"
+          assert a.exists() and b.exists()
+          assert a.read_bytes()==b.read_bytes()
+          m=json.loads((o/"manifest_v1_246.json").read_text())
+          assert len(m["hashes"])==6
+          assert m["hashes"][b.name]==hashlib.sha256(b.read_bytes()).hexdigest()
+          x=pd.read_csv(b)
+          assert {"snapshot_type","snapshot_cutoff_utc","qualified_prior_games","eligible","reason"}.issubset(x.columns)
+          print("V1_246_SUBSTRATE_EXPORT_DYNAMIC_PASS",len(x),hashlib.sha256(b.read_bytes()).hexdigest())
+          PY
