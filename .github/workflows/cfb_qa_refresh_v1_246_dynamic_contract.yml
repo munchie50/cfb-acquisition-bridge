@@ -16,18 +16,17 @@ jobs:
         run: |
           mkdir -p qa
           python - <<'PY'
-          import pandas as pd, pathlib
-          base=dict(season=2026,neutral_site=False)
-          rows=[
-            base|dict(game_id="qa1",start_date="2026-10-01T17:00:00Z",home_team="Nebraska",away_team="Purdue",population_class="FBS_VS_FBS"),
-            base|dict(game_id="qa2",start_date="2026-10-02T17:00:00Z",home_team="Army",away_team="Test NonFBS",population_class="FBS_VS_NONFBS"),
-            base|dict(game_id="qa3",start_date="2026-10-03T17:00:00Z",home_team="Iowa",away_team="Minnesota",population_class="FBS_VS_FBS")]
-          ]
+          import pandas as pd
           cols=["season","game_id","start_date","home_team","away_team","neutral_site","population_class"]
-          for n in (1,2,3): pd.DataFrame(rows[:n])[cols].to_csv(f"qa/valid{n}.csv",index=False)
-          x=pd.DataFrame(rows[:2])[cols]; x.loc[1,"game_id"]="qa1"; x.to_csv("qa/duplicate.csv",index=False)
-          x=pd.DataFrame(rows[:1])[cols]; x.loc[0,"start_date"]="2026-09-28T00:00:00Z"; x.to_csv("qa/notfuture.csv",index=False)
-          x=pd.DataFrame(rows[:1])[cols]; x.loc[0,"population_class"]="BAD_CLASS"; x.to_csv("qa/badclass.csv",index=False)
+          rows=[
+            [2026,"qa1","2026-10-01T17:00:00Z","Nebraska","Purdue",False,"FBS_VS_FBS"],
+            [2026,"qa2","2026-10-02T17:00:00Z","Army","Test NonFBS",False,"FBS_VS_NONFBS"],
+            [2026,"qa3","2026-10-03T17:00:00Z","Iowa","Minnesota",False,"FBS_VS_FBS"],
+          ]
+          for n in (1,2,3): pd.DataFrame(rows[:n],columns=cols).to_csv(f"qa/valid{n}.csv",index=False)
+          x=pd.DataFrame(rows[:2],columns=cols); x.loc[1,"game_id"]="qa1"; x.to_csv("qa/duplicate.csv",index=False)
+          x=pd.DataFrame(rows[:1],columns=cols); x.loc[0,"start_date"]="2026-09-28T00:00:00Z"; x.to_csv("qa/notfuture.csv",index=False)
+          x=pd.DataFrame(rows[:1],columns=cols); x.loc[0,"population_class"]="BAD_CLASS"; x.to_csv("qa/badclass.csv",index=False)
           pd.DataFrame(columns=cols).to_csv("qa/empty.csv",index=False)
           PY
           # Valid dynamic cardinalities must advance beyond target-validation and fail only when nonexistent raw source is opened.
