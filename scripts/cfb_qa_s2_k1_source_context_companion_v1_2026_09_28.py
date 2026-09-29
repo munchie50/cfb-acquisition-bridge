@@ -5,7 +5,7 @@ from pathlib import Path
 import pandas as pd, numpy as np, pyreadr
 schedp,rawp,pbpp,outp=map(Path,sys.argv[1:5]); cutoff=pd.Timestamp(sys.argv[5]); outp.mkdir(parents=True,exist_ok=True)
 S=pd.read_csv(schedp,dtype={"game_id":str});S["start_date"]=pd.to_datetime(S.start_date,utc=True)
-R=pd.read_parquet(rawp);R["game_id"]=R.game_id.astype(str).str.replace(r"\.0$","",regex=True);R["start_date"]=pd.to_datetime(R.start_date,utc=True);R=R[R.season.astype(int)==2026].copy()
+R=pd.read_parquet(rawp);R["game_id"]=R.game_id.astype(str).str.replace(r"\.0$","",regex=True);R["start_date"]=pd.to_datetime(R.start_date,utc=True);R=R[(R.season.astype(int)==2026)&(R.start_date<cutoff)].copy()
 P=next(iter(pyreadr.read_r(pbpp).values()));P["game_id"]=P.game_id.astype(str).str.replace(r"\.0$","",regex=True);P["pos_team"]=P.pos_team.replace({"Savannah St":"Savannah State","St. Francis (PA)":"Saint Francis"});P["def_pos_team"]=P.def_pos_team.replace({"Savannah St":"Savannah State","St. Francis (PA)":"Saint Francis"})
 if (S.start_date<=cutoff).any():raise SystemExit("target not future")
 one=lambda x:x.fillna(0).eq(1);pids=set(P.game_id.unique())
