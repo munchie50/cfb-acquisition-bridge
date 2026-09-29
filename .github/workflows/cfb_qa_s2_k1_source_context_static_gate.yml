@@ -1,0 +1,13 @@
+name: CFB QA S2 K1 Source Context Static Gate
+on:
+  push:
+    paths:
+      - 'scripts/cfb_qa_s2_k1_source_context_companion_v1_2026_09_28.py'
+      - 'scripts/cfb_qa_s2_k1_source_context_static_gate_2026_09_28.py'
+      - '.github/workflows/cfb_qa_s2_k1_source_context_static_gate.yml'
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/cfb_qa_s2_k1_source_context_static_gate_2026_09_28.py
