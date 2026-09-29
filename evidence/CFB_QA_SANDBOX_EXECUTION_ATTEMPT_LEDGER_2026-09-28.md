@@ -68,3 +68,20 @@ Observe and pin the corrected generator identity under controlled pre-execution 
 | #13 | 36421939025 | a3318105... | SUCCESS + INDEPENDENT ACCEPTANCE — exact frozen inputs and corrected generator identity passed; generation produced 55,834 rows; independent runner gate passed; artifact 10970862853 uploaded; independent post-run download reproduced ZIP/CSV/manifest hashes, exact family counts, exact 42 S1 and 53 S2 omission sets, no 2025, no forbidden outcome/market/wager/closing columns, and outcomes_joined=false. Candidate freeze accepted in `evidence/CFB_QA_SANDBOX_CANDIDATE_FREEZE_ACCEPTANCE_2026-09-28.md`. |
 
 Construction/freeze phase is CLOSED. Outcome scoring remains a separate authorization boundary and was not performed by Run #13.
+
+
+## 2026-09-29 source-context/real-substrate terminal reconciliation
+Earlier historical ledger rows remain unchanged.
+
+| Run | Job | Result / classification |
+|---|---:|---|
+| 36636336698 | 109637770259 | SUCCESS; retained real v1.246 target-side substrate independently accepted in CFB_QA_V1_246_REAL_TARGET_SIDE_ACCEPTANCE_2026-09-29.md. No operational prospective prediction snapshot acceptance implied. |
+| 36636555611 | 109638500020 | v2 real FAILURE: AttributeError, DataFrame has no start_date. Accepted target-side field is target_kickoff. No artifact acceptance. |
+| 36637160447 | 109640501749 | v3 real FAILURE: target/source history count mismatch. v4 restores the exact accepted v1.246 population filter rather than relaxing the invariant. |
+| 36637495501 | 109641596028 | First v4 static FAILURE: AssertionError in gate. Preserved; superseded by corrected static gate, not accepted. |
+| 36637684023 | 109642221487 | Corrected v4 static SUCCESS; marker and exact SHA verified. |
+| 36637810698 | 109642643453 | v4 real SUCCESS + independent semantic/output ACCEPTANCE as QA substrate only; artifact 11065575217, ZIP f1104a7fc509f2ef9ee1825698e0210bfd232c9acfafb34635bbd75f93567c8f. |
+
+v0 quarantine and v1 unaccepted source remain preserved; no earlier version is silently promoted. Local audit SHA stop caused by added trailing newline in staging was corrected by restoring exact connector bytes and verifying Git blobs; no producer mutation. Initial sandbox data-reader install failed; approved install succeeded. No invariant was relaxed.
+Source-context acceptance details: CFB_QA_S2_K1_SOURCE_CONTEXT_V4_ACCEPTANCE_2026-09-29.md. Immutable original manifests remain EXECUTED_NOT_ACCEPTED; post-run acceptance is separate.
+Global dependency reconsideration: infrastructure closed; current frontier is weekly cadence/preflight before any S2 prediction freeze. No prospective S2 predictions, outcomes, refit, TEST access or production changes.

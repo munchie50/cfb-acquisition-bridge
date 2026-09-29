@@ -1,4 +1,6 @@
 # CFB QA Sandbox — S2_K1 Source-Context Companion Contract
+
+Current QA status (2026-09-29): **REAL TARGET-SIDE AND v4 SOURCE-CONTEXT CAPABILITIES ACCEPTED / PROSPECTIVE CADENCE WAIT.** Earlier dated statuses are retained as historical evidence; the final 2026-09-29 reconciliation governs the current frontier.
 Date: 2026-09-28
 Status: FROZEN IMPLEMENTATION CONTRACT / NOT YET EXECUTED OR ACCEPTED
 
@@ -79,3 +81,14 @@ v1.172 used a separately persisted historical known-missing-PBP game-ID ledger. 
 Population baseline construction will pool only per-game primitive rows whose corresponding primitive-complete flag is true and whose kickoff is strictly before `pd.Timestamp(source_kickoff).normalize()`, matching the frozen historical baseline rule. rest_days remains the mean of reproducible strict-prior team-side rest-day states under the same normalized cutoff.
 
 This adapter does not change frozen S2 science; it maps the accepted 2026 source-availability boundary onto the recovered v1.172 primitive semantics.
+
+
+## 2026-09-29 reconciled current frontier — supersedes older ACTIVE/NEXT statuses above
+Direct terminal/artifact reconciliation accepted:
+- real S0 target-side boundary: CFB_QA_V1_246_REAL_TARGET_SIDE_ACCEPTANCE_2026-09-29.md (run 36636336698, artifact 11064541770; 1,114 sides);
+- v4 source-context capability: CFB_QA_S2_K1_SOURCE_CONTEXT_V4_ACCEPTANCE_2026-09-29.md (run 36637810698, artifact 11065575217; 4,355 context rows, 662 rows per primitive surface).
+Exact hashes, counts, independent semantic proof and limitations are in those acceptance records. All 1,114 target-side counts, including six zero-history cases, passed. No S2 predictions or 2026 S2 outcomes evaluated.
+Current disposition: ACCEPTED QA INPUT CAPABILITIES / S2_K1 STILL STUDY-ONLY / CADENCE WAIT.
+v1.246 and source-context infrastructure gates are closed for these retained bytes. Do not blindly rerun earlier pending dependencies. Original historical raw-byte replay limitation remains.
+Next: at the next v1.216 weekly cadence, requalify source state and determine refresh/no-op before constructing/producing a prospective S2 consumer. September 29 is within the cycle anchored by September 26 FIRST_FROZEN; no exception is authorized here. Structural QA runs do not constitute an operational prospective refresh.
+No-op means no manufactured snapshot. Qualified consumer/freeze must remain exact k=1, use same-cutoff accepted boundaries, whitelist frozen input fields, freeze deterministic history-depth slices, and remain separate from S0. Outcome scoring remains separately gated. Champion unchanged.

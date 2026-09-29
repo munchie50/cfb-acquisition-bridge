@@ -1,5 +1,7 @@
 # CFB QA — Refresh v1.246 Equivalence Status — 2026-09-28
 
+Current QA status (2026-09-29): **REAL TARGET-SIDE AND v4 SOURCE-CONTEXT CAPABILITIES ACCEPTED / PROSPECTIVE CADENCE WAIT.** Earlier dated statuses are retained as historical evidence; the final 2026-09-29 reconciliation governs the current frontier.
+
 Status: **GATE DEFINED / EXECUTION PENDING — DO NOT TREAT AS PASS**
 
 ## Purpose
@@ -204,3 +206,7 @@ This acceptance is supported jointly by:
 - No S2_K1 acceptance yet.
 
 Dependency order may now advance to exposing the same pre-cutoff team-side substrate for a separate S2_K1 transform, followed by structural validation and identity pinning before any qualifying live prospective freeze.
+
+
+## 2026-09-29 real-data substrate acceptance integration
+The accepted QA producer has now executed on retained immutable 2026 inputs. Real target-side output run 36636336698 / artifact 11064541770 is independently accepted in CFB_QA_V1_246_REAL_TARGET_SIDE_ACCEPTANCE_2026-09-29.md. Acceptance scope is the retained 1,114-side boundary, not unretained prediction files or an operational weekly refresh. Source-context v4 is independently accepted in CFB_QA_S2_K1_SOURCE_CONTEXT_V4_ACCEPTANCE_2026-09-29.md. Historical raw-byte replay limitation and all scientific/production locks remain. Prospective consumer/freeze remains subject to weekly cadence/preflight; no S2 predictions or outcomes evaluated.
