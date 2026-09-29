@@ -111,5 +111,5 @@ X.to_csv(outp/"challenger_b_2026_refresh_fair_predictions_v1_246.csv",index=Fals
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 manifest={"status":"EXECUTED_NOT_ACCEPTED","snapshot_type":"REFRESH_SNAPSHOT","parent_lineage":"v1.216","target_games":len(S),"eligible_predictions":len(X),"excluded_games":len(E),"target_population":S.population_class.value_counts().to_dict(),"predictor_count":34,"fit_or_optimization_performed":False,"market_joined":False,"target_outcomes_joined":False,"source_chronology":"strictly before frozen execution cutoff and target kickoff","cutoff_utc":cutoff.isoformat(),"hashes":{}}
 for p in sorted(outp.iterdir()): manifest["hashes"][p.name]=sha(p)
-(outp/"manifest_v1_246.json").write_text(json.dumps(manifest,indent=2,sort_keys=True)+"\\n")
+(outp/"manifest_v1_246.json").write_text(json.dumps(manifest,indent=2,sort_keys=True)+"\n")
 print(json.dumps(manifest,indent=2))
