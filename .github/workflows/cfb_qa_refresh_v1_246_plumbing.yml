@@ -22,13 +22,17 @@ jobs:
           # Scientific core from feature declaration through prediction invariant must remain exact.
           def core(s):
             a=s.index('features=[')
-            b=s.index('X.to_csv(',a)
+            marker='if len(X) and (not np.isfinite(X[["pred_margin","pred_total","pred_win"]]).all(axis=None) or not X.pred_win.between(0,1).all()): raise SystemExit("prediction invariant")'
+            b=s.index(marker,a)+len(marker)
             return s[a:b]
           oc, nc=core(old),core(new)
           # Only generalized population-accounting expressions differ inside this region.
           nc=nc.replace('if len(L)!=2*len(S) or','if len(L)!=1244 or')
           nc=nc.replace('if len(X)+len(E)!=len(S) or','if len(X)+len(E)!=622 or')
-          assert oc==nc, "scientific core drift beyond authorized generalized accounting"
+          if oc!=nc:
+            import difflib
+            print("".join(difflib.unified_diff(oc.splitlines(True),nc.splitlines(True),fromfile="v1.206-core",tofile="v1.246-core")))
+            raise AssertionError("scientific core drift beyond authorized generalized accounting")
           tree=ast.parse(new)
           assert any(isinstance(n,ast.Compare) and any(isinstance(op,ast.Gt) for op in n.ops) for n in ast.walk(tree))
           assert 'S.start_date>cutoff' in new
