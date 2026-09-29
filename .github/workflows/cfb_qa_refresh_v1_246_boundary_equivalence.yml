@@ -61,3 +61,4 @@ jobs:
             assert np.allclose(v,X[outcol].to_numpy(float),rtol=0,atol=1e-12,equal_nan=False),(target,float(np.max(np.abs(v-X[outcol].to_numpy(float)))))
           print("V1_206_FROZEN_FEATURE_BOUNDARY_REPRODUCTION_PASS",len(X))
           PY
+# rerun-marker: corrected-coefficient-schema
