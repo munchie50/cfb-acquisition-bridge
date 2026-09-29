@@ -1,0 +1,37 @@
+name: CFB QA S2 Source Context v4 Static Gate
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_qa_s2_k1_source_context_v4_static_gate.yml'
+permissions:
+  contents: read
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify exact v1.246 population block
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          v=Path("scripts/cfb_qa_s2_k1_source_context_companion_v4_2026_09_29.py").read_text()
+          p=Path("scripts/phase4_challenger_b_2026_refresh_predict_v1_246.py").read_text()
+          def block(s):
+              a=s.index("BASE2017=")
+              b=s.index("P=next(",a)
+              return s[a:b]
+          assert block(v)==block(p)
+          assert 'R=R[R.start_date<cutoff].copy()' in v
+          assert 'target/source history count mismatch' in v
+          assert 'accepted_target_side_crosscheck' in v
+          assert '"s2_predictions_produced":False' in v
+          assert '"target_outcomes_joined":False' in v
+          assert '"market_joined":False' in v
+          h=hashlib.sha256(Path("scripts/cfb_qa_s2_k1_source_context_companion_v4_2026_09_29.py").read_bytes()).hexdigest()
+          print("S2_K1_SOURCE_CONTEXT_V4_STATIC_PASS",h)
+          PY
