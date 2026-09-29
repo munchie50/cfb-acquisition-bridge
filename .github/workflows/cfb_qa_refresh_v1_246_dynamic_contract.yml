@@ -1,0 +1,59 @@
+name: CFB QA Refresh v1.246 Dynamic Contract
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/cfb_qa_refresh_v1_246_dynamic_contract.yml']
+permissions: {contents: read}
+jobs:
+  dynamic-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas numpy pyarrow pyreadr
+      - name: Exercise dynamic target validation before source/PBP access
+        run: |
+          mkdir -p qa
+          python - <<'PY'
+          import pandas as pd, pathlib
+          base=dict(season=2026,neutral_site=False)
+          rows=[
+            base|dict(game_id="qa1",start_date="2026-10-01T17:00:00Z",home_team="Nebraska",away_team="Purdue",population_class="FBS_VS_FBS"),
+            base|dict(game_id="qa2",start_date="2026-10-02T17:00:00Z",home_team="Army",away_team="Test NonFBS",population_class="FBS_VS_NONFBS"),
+            base|dict(game_id="qa3",start_date="2026-10-03T17:00:00Z",home_team="Iowa",away_team="Minnesota",population_class="FBS_VS_FBS")]
+          ]
+          cols=["season","game_id","start_date","home_team","away_team","neutral_site","population_class"]
+          for n in (1,2,3): pd.DataFrame(rows[:n])[cols].to_csv(f"qa/valid{n}.csv",index=False)
+          x=pd.DataFrame(rows[:2])[cols]; x.loc[1,"game_id"]="qa1"; x.to_csv("qa/duplicate.csv",index=False)
+          x=pd.DataFrame(rows[:1])[cols]; x.loc[0,"start_date"]="2026-09-28T00:00:00Z"; x.to_csv("qa/notfuture.csv",index=False)
+          x=pd.DataFrame(rows[:1])[cols]; x.loc[0,"population_class"]="BAD_CLASS"; x.to_csv("qa/badclass.csv",index=False)
+          pd.DataFrame(columns=cols).to_csv("qa/empty.csv",index=False)
+          PY
+          # Valid dynamic cardinalities must advance beyond target-validation and fail only when nonexistent raw source is opened.
+          for n in 1 2 3; do
+            set +e
+            out=$(python scripts/phase4_challenger_b_2026_refresh_predict_v1_246.py qa/valid$n.csv qa/no.parquet qa/no.rds qa/no-fit qa/out$n "2026-09-28T12:00:00Z" 2>&1)
+            rc=$?
+            set -e
+            test $rc -ne 0
+            echo "$out" | grep -q "no.parquet"
+            ! echo "$out" | grep -q "target schedule identity"
+            ! echo "$out" | grep -q "population class mismatch"
+            ! echo "$out" | grep -q "refresh target not strictly future"
+          done
+          check_fail () {
+            file="$1"; msg="$2"
+            set +e
+            out=$(python scripts/phase4_challenger_b_2026_refresh_predict_v1_246.py "qa/$file" qa/no.parquet qa/no.rds qa/no-fit qa/outbad "2026-09-28T12:00:00Z" 2>&1)
+            rc=$?
+            set -e
+            test $rc -ne 0
+            echo "$out" | grep -q "$msg"
+            ! echo "$out" | grep -q "no.parquet"
+          }
+          check_fail duplicate.csv "target schedule identity"
+          check_fail notfuture.csv "refresh target not strictly future"
+          check_fail badclass.csv "population class mismatch"
+          check_fail empty.csv "target schedule identity"
+          echo "V1_246_DYNAMIC_TARGET_CONTRACT_PASS"
