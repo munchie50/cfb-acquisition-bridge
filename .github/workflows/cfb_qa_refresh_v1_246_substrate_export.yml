@@ -29,7 +29,7 @@ jobs:
           b=s.index('def sha(p):',a)
           region=s[a:b]
           assert needle in region
-          assert 'side_features(' not in region and 'L[' not in region and 'L.' not in region.replace(needle,'')
+          assert 'side_features(' not in region and 'L[' not in region\n          exports=[x for x in region.split(';') if 'L.to_csv(' in x]\n          assert len(exports)==2 and all('index=False' in x for x in exports)
           print("V1_246_SUBSTRATE_EXPORT_STATIC_PASS",hashlib.sha256(p.read_bytes()).hexdigest())
           PY
       - name: Re-run exact output harness with six-file manifest
@@ -41,7 +41,7 @@ jobs:
           mkdir fit
           unzip -q fit.zip -d fit
           find fit -name selected_coefficients.csv -print -quit | xargs dirname > fitpath.txt
-          python scripts/cfb_qa_refresh_v1_246_output_plumbing_2026_09_28.py "$(cat fitpath.txt)" out || true
+          python scripts/cfb_qa_refresh_v1_246_output_plumbing_2026_09_28.py "$(cat fitpath.txt)" out
           python - <<'PY'
           import pandas as pd,json,hashlib
           from pathlib import Path
