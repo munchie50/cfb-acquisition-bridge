@@ -1,0 +1,44 @@
+name: CFB QA 2026 Raw Source Freeze
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_qa_2026_raw_source_freeze.yml'
+permissions: {contents: read}
+jobs:
+  freeze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas pyarrow pyreadr
+      - name: Acquire current prospective sources
+        run: |
+          mkdir raw out package
+          curl --fail --location --retry 3 -o raw/cfb_schedules_2026.parquet "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_2026.parquet"
+          curl --fail --location --retry 3 -o raw/pbp_2026.rds "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2026.rds"
+          test -s raw/cfb_schedules_2026.parquet
+          test -s raw/pbp_2026.rds
+          sha256sum raw/* | tee package/RAW_SOURCE_SHA256SUMS.txt
+      - name: Freeze qualified target/cutoff metadata
+        run: |
+          python scripts/phase4_challenger_b_2026_refresh_source_preflight_v1_217.py raw/cfb_schedules_2026.parquet raw/pbp_2026.rds out
+          cp raw/cfb_schedules_2026.parquet package/
+          cp raw/pbp_2026.rds package/
+          cp out/challenger_b_2026_future_target_projection_v1_217.csv package/
+          cp out/preflight_v1_217.json package/
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          p=Path("package")
+          files=sorted(x for x in p.iterdir() if x.is_file())
+          m={"status":"QA_RAW_SOURCE_FROZEN_NOT_EXECUTED","files":{x.name:hashlib.sha256(x.read_bytes()).hexdigest() for x in files},"s2_predictions_produced":False,"market_joined":False,"target_outcomes_joined":False}
+          (p/"QA_RAW_SOURCE_FREEZE_MANIFEST.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          print("QA_RAW_SOURCE_FREEZE_READY",len(files))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-qa-2026-raw-source-freeze
+          path: package/
+          retention-days: 90
