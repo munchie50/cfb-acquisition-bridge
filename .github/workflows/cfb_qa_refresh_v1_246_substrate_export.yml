@@ -24,12 +24,15 @@ jobs:
           s=p.read_text()
           needle='L.to_csv(outp/"challenger_b_2026_refresh_team_side_substrate_v1_246.csv",index=False)'
           assert s.count(needle)==1
-          # Export must be direct from L: no new feature construction or mutation between snapshot tagging and output.
           a=s.index('for df in (X,E,A,L,S):')
           b=s.index('def sha(p):',a)
           region=s[a:b]
           assert needle in region
-          assert 'side_features(' not in region and 'L[' not in region\n          exports=[x for x in region.split(';') if 'L.to_csv(' in x]\n          assert len(exports)==2 and all('index=False' in x for x in exports)
+          assert 'side_features(' not in region
+          assert 'L[' not in region
+          exports=[x for x in region.split(';') if 'L.to_csv(' in x]
+          assert len(exports)==2
+          assert all('index=False' in x for x in exports)
           print("V1_246_SUBSTRATE_EXPORT_STATIC_PASS",hashlib.sha256(p.read_bytes()).hexdigest())
           PY
       - name: Re-run exact output harness with six-file manifest
