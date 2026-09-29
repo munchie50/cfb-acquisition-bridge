@@ -126,3 +126,18 @@ The bounded synthetic gate proved:
 Classification: **SYNTHETIC SEMANTIC RULES PASS / COMPANION IMPLEMENTATION NOT YET ACCEPTED.**
 
 This run contains no live 2026 outcome evaluation and does not validate the v1 companion against real executable R/P inputs. The next authorized dependency is implementation-structure/static equivalence followed by bounded executable structural QA. No S2 prediction generation is authorized.
+
+
+## Exact 2026 raw-source replay recovery closure
+Pinned-source preflight run `36508651547`, job `109215690292`, head `315d61ee7ad82ba32e77df6db773bde7f8fb961f` failed closed at the accepted schedule-byte boundary:
+- immutable target preflight artifact `10897001956`: PASS, ZIP SHA `4dc70419b9aa3afdfa2570861490598da69b2bccfed878e438dc17b69a9a7ea8`;
+- current schedule URL no longer matches accepted SHA `5b2ff52996862b06b67309f1ebc27742e55c279ff4785c7a942915cdf820f1b1`;
+- PBP hash check was not reached in that run.
+
+A broader workflow-definition recovery sweep covered v1.204, v1.206, v1.209, v1.211, v1.213, v1.214 and v1.217 lineage. Workflows that downloaded 2026 raw schedule/PBP inputs uploaded only their derived `out/` directories. No reviewed workflow retained its `raw/` directory in an Actions artifact. The repository recursive tree likewise contains no frozen 2026 schedule parquet or PBP RDS raw snapshot.
+
+Classification: **EXACT ACCEPTED 2026 RAW-BYTE REPLAY UNAVAILABLE / RAW-SOURCE RETENTION DEFECT DEMONSTRATED.**
+
+This does not invalidate the accepted v1.206 freeze, its derived artifacts, the v1.246 frozen-feature-boundary proof, or the S2_K1 synthetic/static semantic gates. It means the S2 source-context companion cannot receive a real-data executable-equivalence PASS against the original accepted source bytes.
+
+Required forward correction: any new prospective source acquisition used for S2_K1 QA must freeze and retain the exact raw schedule/PBP bytes (or an immutable byte-addressed package) together with hashes before downstream execution. Current mutable upstream bytes must not be substituted and described as historical replay.
