@@ -139,3 +139,28 @@ Next bounded QA gate: use this accepted feature boundary to validate that the ge
 
 Classification: **STATIC SCIENTIFIC-CORE IDENTITY PASS / DYNAMIC EXECUTION STILL REQUIRED.**
 This is not by itself generalized-refresh acceptance. A synthetic/dynamic execution gate must exercise variable target cardinality and fail-closed target validation before v1.246 can be accepted as the S0 refresh substrate.
+
+
+## v1.246 dynamic target-contract execution — PASS
+- Run: `36505279253`
+- Head: `03c715009f14ac657d8a92458a7ae005ad666abb`
+- Job: `109205204346`
+- Marker: `V1_246_DYNAMIC_TARGET_CONTRACT_PASS`.
+- Valid 1-, 2-, and 3-target schedules passed all v1.246 target validation and advanced to the intentionally absent raw-source boundary.
+- Duplicate game IDs failed closed at target schedule identity.
+- A target not strictly after cutoff failed closed.
+- An unauthorized population class failed closed.
+- An empty target population failed closed.
+- These cases execute the actual v1.246 producer entry path; they are not source-text assertions.
+
+Classification: **DYNAMIC GENERALIZED TARGET CONTRACT PASS.**
+
+### Layered equivalence status
+The evidence now establishes three independent layers:
+1. accepted v1.206 frozen feature-boundary numerical reproduction for all 526 accepted predictions at rtol=0/atol=1e-12;
+2. v1.206→v1.246 scientific-core source identity through the final prediction invariant, except only the two authorized dynamic-accounting expressions;
+3. actual v1.246 dynamic target-validation execution for variable cardinality and fail-closed invalid cases.
+
+Exact historical raw-PBP RDS byte replay remains unresolved and is not reclassified.
+
+Remaining acceptance question is bounded to end-to-end generalized output plumbing after feature construction (dynamic ledger/output cardinality, snapshot columns, manifest/file hashes). Do not call v1.246 accepted substrate until that executable output layer is either demonstrated or formally shown redundant by preserved accepted evidence.
