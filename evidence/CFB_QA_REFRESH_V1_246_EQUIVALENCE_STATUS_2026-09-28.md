@@ -164,3 +164,43 @@ The evidence now establishes three independent layers:
 Exact historical raw-PBP RDS byte replay remains unresolved and is not reclassified.
 
 Remaining acceptance question is bounded to end-to-end generalized output plumbing after feature construction (dynamic ledger/output cardinality, snapshot columns, manifest/file hashes). Do not call v1.246 accepted substrate until that executable output layer is either demonstrated or formally shown redundant by preserved accepted evidence.
+
+
+## v1.246 post-feature/output plumbing — PASS
+- Run: `36505758899`
+- Head: `80ca582aa054f26f48cd2220674f7665e1ac9602`
+- Job: `109206726832`
+- Frozen fit ZIP checksum independently enforced: `3a2cabfcd37e0bcf0cae85efc77eaa6755ffb12734d1e48c4c582ed1de375587`.
+- The QA harness executes the exact persisted v1.246 block beginning at predictor construction through output/manifest emission.
+- Marker: `V1_246_OUTPUT_PLUMBING_PASS 3 2 1`.
+- Demonstrated dynamic accounting: 3 targets = 2 eligible predictions + 1 exclusion.
+- Demonstrated population manifest: 2 FBS_VS_FBS + 1 FBS_VS_NONFBS.
+- Demonstrated `REFRESH_SNAPSHOT`, parent lineage `v1.216`, and frozen cutoff metadata.
+- Demonstrated no fit/optimization, market join, or target-outcome join.
+- Demonstrated all five emitted file hashes exactly match manifest hashes.
+- Demonstrated snapshot metadata on emitted CSVs and valid newline-terminated manifest JSON.
+
+Classification: **POST-FEATURE GENERALIZED OUTPUT PLUMBING PASS.**
+
+## Acceptance disposition
+The bounded evidence stack is now sufficient to accept `scripts/phase4_challenger_b_2026_refresh_predict_v1_246.py` as the **ACCEPTED QA REFRESH SUBSTRATE** for the next dependency step.
+
+This acceptance is supported jointly by:
+1. exact reproduction of all 526 accepted v1.206 predictions from the preserved frozen feature boundary and frozen fit;
+2. static v1.206→v1.246 scientific-core identity through the prediction invariant, with only authorized dynamic accounting normalization;
+3. actual dynamic v1.246 target-contract execution across variable target cardinalities and fail-closed invalid cases;
+4. actual execution of the exact persisted v1.246 post-feature/output block, including dynamic accounting, metadata, lineage, and output hashes.
+
+### Explicit limitation retained
+**Historical raw-PBP RDS byte replay remains unresolved.** The original mutable upstream release bytes were overwritten and were not recovered from examined normal upstream Git/Actions surfaces. This acceptance does not reclassify that raw-source replay gate as PASS and does not substitute current PBP bytes.
+
+### Scope / non-effects
+- QA substrate acceptance only.
+- No Champion/production mutation.
+- No promotion.
+- No 2025 protected TEST access.
+- No market/wager/execution inputs.
+- No prospective outcome scoring.
+- No S2_K1 acceptance yet.
+
+Dependency order may now advance to exposing the same pre-cutoff team-side substrate for a separate S2_K1 transform, followed by structural validation and identity pinning before any qualifying live prospective freeze.
