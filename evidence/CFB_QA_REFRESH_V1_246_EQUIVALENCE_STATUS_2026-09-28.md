@@ -108,3 +108,21 @@ A separate bounded proof is authorized for QA construction validation:
 6. This proof may validate v1.246 construction semantics but may not authorize production promotion, Champion mutation, retrospective data replacement, or use of current PBP as a substitute.
 
 Reason: RDS serialization bytes are transport/container provenance. The model consumes the loaded strict-prior projected feature values; those consumed values and their chronology/fail-closed outcomes were durably preserved in the accepted v1.206 artifact.
+
+
+## Frozen feature-boundary reproduction — PASS
+- Authoritative completed run: `36503794587`
+- Head: `369ce94294fdcc7d9eb8b865c7ce1929e15e6463`
+- Job: `109200493173`
+- Accepted v1.206 artifact ZIP SHA verification: PASS.
+- Frozen fit artifact ZIP SHA verification: PASS.
+- Reconstructed the 34 home/away model features for all 526 accepted prediction rows from the accepted v1.206 feature-eligibility ledger.
+- Reapplied exact accepted scaling, venue-neutral term, coefficient terms/lambdas, and clipped logistic win transform.
+- Exact marker: `V1_206_FROZEN_FEATURE_BOUNDARY_REPRODUCTION_PASS 526`.
+- Numeric comparison used rtol=0, atol=1e-12 for margin, total, and win predictions.
+
+Classification: **FROZEN FEATURE BOUNDARY SUFFICIENCY PASS.** The accepted v1.206 artifact plus frozen fit artifact preserve the complete numerical boundary required to reproduce all 526 accepted v1.206 model predictions.
+
+This does **not** convert the historical raw-PBP replay gate to PASS. Exact historical PBP RDS container bytes remain unavailable because the upstream release asset was mutable and overwritten. The raw-byte replay limitation remains explicitly recorded.
+
+Next bounded QA gate: use this accepted feature boundary to validate that the generalized v1.246 refresh producer's downstream scientific transformation is identical to v1.206 while separately validating its intended generalized target/snapshot plumbing. No S2_K1 live companion acceptance or prospective freeze is implied.
