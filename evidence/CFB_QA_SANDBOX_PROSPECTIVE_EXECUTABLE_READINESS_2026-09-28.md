@@ -33,3 +33,32 @@ Required order:
 5. observe/pin identities and structurally validate before the next live freeze.
 
 No live refresh is triggered by this finding.
+
+
+## v1.246 shared pre-cutoff team-side substrate — ACCEPTED
+Accepted QA run: `36506258474`
+Head: `e4e50da38a67f16e2dc6e5c5b1c0c30c187a4ab3`
+Job: `109208262604`
+Producer source SHA observed by gate: `62784e62d49e92b11a069792f8c8c14def0e9e7bc9eb7a00b4793b95f1a8ebfd`
+Output-harness SHA: `cdc1ff1bd0807e4b0311be7e2a78e737413a3c6e`
+
+Markers:
+- `V1_246_SUBSTRATE_EXPORT_STATIC_PASS`
+- `V1_246_OUTPUT_PLUMBING_PASS 3 2 1`
+- `V1_246_SUBSTRATE_EXPORT_DYNAMIC_PASS 6 599493d47151ca029b577e442d4642ababfce6d5477a2813425be57c04b4a814`
+
+The new `challenger_b_2026_refresh_team_side_substrate_v1_246.csv` is a direct export of the already-computed in-memory `L` ledger. The gate proves no new feature construction or ledger mutation in the export region. On executable synthetic state it is byte-for-byte identical to the existing feature-eligibility ledger; both have SHA-256 `599493d47151ca029b577e442d4642ababfce6d5477a2813425be57c04b4a814`.
+
+The frozen fit ZIP checksum `3a2cabfcd37e0bcf0cae85efc77eaa6755ffb12734d1e48c4c582ed1de375587` passed. Six-file manifest integrity passed, including the substrate hash. Existing generalized output-plumbing assertions also passed.
+
+Classification: **SHARED PRE-CUTOFF TEAM-SIDE SUBSTRATE ACCEPTED FOR QA DEPENDENCY USE.**
+
+Scope:
+- This is an exported boundary, not a second feature engine.
+- S0 calculations/chronology remain the accepted v1.246 path.
+- No S2 transform has been applied by this acceptance.
+- No outcome, market, wager, or 2025 protected TEST information is introduced.
+- No Champion/production mutation or promotion.
+- Historical raw-PBP byte replay limitation remains unchanged.
+
+Dependency order may advance to a separate S2_K1 consumer using this accepted shared boundary and the already-frozen S1/S2 transform/mapping semantics. The S2 consumer must not reconstruct or fork S0 feature chronology.
