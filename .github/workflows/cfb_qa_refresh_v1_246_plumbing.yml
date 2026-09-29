@@ -1,0 +1,45 @@
+name: CFB QA Refresh v1.246 Generalized Plumbing
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/cfb_qa_refresh_v1_246_plumbing.yml']
+permissions: {contents: read}
+jobs:
+  plumbing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install --disable-pip-version-check pandas numpy pyarrow pyreadr
+      - name: Static delta and generalized invariant validation
+        run: |
+          python -m py_compile scripts/phase4_challenger_b_2026_refresh_predict_v1_246.py
+          python - <<'PY'
+          import ast, pathlib
+          old=pathlib.Path("scripts/phase4_challenger_b_2026_predict_v1_206.py").read_text()
+          new=pathlib.Path("scripts/phase4_challenger_b_2026_refresh_predict_v1_246.py").read_text()
+          # Scientific core from feature declaration through prediction invariant must remain exact.
+          def core(s):
+            a=s.index('features=[')
+            b=s.index('X.to_csv(',a)
+            return s[a:b]
+          oc, nc=core(old),core(new)
+          # Only generalized population-accounting expressions differ inside this region.
+          nc=nc.replace('if len(L)!=2*len(S) or','if len(L)!=1244 or')
+          nc=nc.replace('if len(X)+len(E)!=len(S) or','if len(X)+len(E)!=622 or')
+          assert oc==nc, "scientific core drift beyond authorized generalized accounting"
+          tree=ast.parse(new)
+          assert any(isinstance(n,ast.Compare) and any(isinstance(op,ast.Gt) for op in n.ops) for n in ast.walk(tree))
+          assert 'S.start_date>cutoff' in new
+          assert 'set(S.population_class.unique()).issubset({"FBS_VS_FBS","FBS_VS_NONFBS"})' in new
+          assert 'len(L)!=2*len(S)' in new
+          assert 'len(X)+len(E)!=len(S)' in new
+          assert 'df["snapshot_type"]="REFRESH_SNAPSHOT"' in new
+          assert 'df["snapshot_cutoff_utc"]=cutoff.isoformat()' in new
+          assert '"parent_lineage":"v1.216"' in new
+          assert '"target_games":len(S)' in new
+          assert '"target_population":S.population_class.value_counts().to_dict()' in new
+          assert 'write_text(json.dumps(manifest,indent=2,sort_keys=True)+"\\n")' in new
+          print("V1_246_GENERALIZED_PLUMBING_STATIC_PASS")
+          PY
