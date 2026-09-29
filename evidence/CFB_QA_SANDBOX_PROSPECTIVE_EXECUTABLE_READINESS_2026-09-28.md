@@ -62,3 +62,24 @@ Scope:
 - Historical raw-PBP byte replay limitation remains unchanged.
 
 Dependency order may advance to a separate S2_K1 consumer using this accepted shared boundary and the already-frozen S1/S2 transform/mapping semantics. The S2 consumer must not reconstruct or fork S0 feature chronology.
+
+
+## S2_K1 exact-interface recovery — dependency correction
+A full read of the frozen historical generator `scripts/cfb_qa_sandbox_candidate_generator_2026_09_27.py` confirms that the accepted v1.246 target-side substrate is necessary but not by itself sufficient to reproduce frozen S2_K1.
+
+Frozen S2_K1 requires, for each mapped target-side feature and each qualified source game:
+1. exact source-game identity and kickoff;
+2. source team's opponent identity;
+3. that opponent's pregame 17-feature state at the source kickoff;
+4. opponent `qualified_prior_games`;
+5. completion-safe mechanical/derived history status for positive-history opponent states;
+6. the frozen season-local population baseline for the paired feature at the source kickoff, using calendar-day-normalized cutoff and pooled primitive numerators/denominators (rest_days uses mean strict-prior side state);
+7. one-step opponent S1 residual only; no S2 recursion.
+
+The exact frozen correction remains `target_S1 - mean(valid paired opponent S1 residuals)`. Zero-history opponent context contributes residual 0 when a completion-safe baseline exists. Unavailable baseline/context is skipped exactly as frozen; a mapped target feature fails only when no valid completion-safe S2 context remains.
+
+Therefore the next dependency is **not** an S2 prediction consumer yet. First expose a separate source-context/baseline companion substrate from the same qualified pre-cutoff source state used by v1.246. This companion must not reconstruct S0 target features, alter v1.246 outputs, change chronology, or approximate pooled baselines with simple feature means.
+
+Classification: **TARGET-SIDE SUBSTRATE ACCEPTED; SOURCE-CONTEXT/BASELINE SUBSTRATE STILL REQUIRED BEFORE S2_K1 IMPLEMENTATION.**
+
+No S2 predictions, outcomes, market/wager data, 2025 TEST access, Champion mutation, or production promotion are authorized by this correction.
