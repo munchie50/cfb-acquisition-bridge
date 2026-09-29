@@ -1,0 +1,31 @@
+name: CFB QA S2 K1 Source Context Source Preflight
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_qa_s2_k1_source_context_source_preflight.yml'
+permissions: {contents: read, actions: read}
+jobs:
+  source-preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Acquire immutable target preflight
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir preflight raw
+          gh api repos/${{ github.repository }}/actions/artifacts/10897001956/zip > /tmp/preflight.zip
+          echo "4dc70419b9aa3afdfa2570861490598da69b2bccfed878e438dc17b69a9a7ea8  /tmp/preflight.zip" | sha256sum -c -
+          unzip -q /tmp/preflight.zip -d preflight
+          test -f preflight/challenger_b_2026_future_target_projection_v1_204.csv
+          test -f preflight/preflight_v1_204.json
+      - name: Reacquire pinned schedule source
+        run: |
+          curl --fail --location --retry 3 -o raw/cfb_schedules_2026.parquet "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_2026.parquet"
+          echo "5b2ff52996862b06b67309f1ebc27742e55c279ff4785c7a942915cdf820f1b1  raw/cfb_schedules_2026.parquet" | sha256sum -c -
+      - name: Reacquire pinned PBP source
+        run: |
+          curl --fail --location --retry 3 -o raw/pbp_2026.rds "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2026.rds"
+          echo "81e38e7e874d249300bb108de0029a8ffb0b19c31cfea6e7aafab5507115e5da  raw/pbp_2026.rds" | sha256sum -c -
+      - name: Source boundary PASS
+        run: echo "S2_K1_SOURCE_CONTEXT_PINNED_SOURCE_PREFLIGHT_PASS"
