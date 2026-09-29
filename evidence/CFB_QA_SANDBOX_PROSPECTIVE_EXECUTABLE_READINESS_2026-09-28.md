@@ -141,3 +141,23 @@ Classification: **EXACT ACCEPTED 2026 RAW-BYTE REPLAY UNAVAILABLE / RAW-SOURCE R
 This does not invalidate the accepted v1.206 freeze, its derived artifacts, the v1.246 frozen-feature-boundary proof, or the S2_K1 synthetic/static semantic gates. It means the S2 source-context companion cannot receive a real-data executable-equivalence PASS against the original accepted source bytes.
 
 Required forward correction: any new prospective source acquisition used for S2_K1 QA must freeze and retain the exact raw schedule/PBP bytes (or an immutable byte-addressed package) together with hashes before downstream execution. Current mutable upstream bytes must not be substituted and described as historical replay.
+
+
+## Prospective raw-source freeze acceptance
+QA raw-source freeze run `36563040022`, job `109388231240`, head `90492e218a86df4e5bd28c43d7ebb9f3d2b0ace9`: SUCCESS.
+
+Artifact `11031055060`, `cfb-qa-2026-raw-source-freeze`, retained the raw schedule and PBP bytes plus target projection, preflight metadata, source checksum file and manifest. GitHub artifact ZIP digest and independent downloaded-byte SHA agree exactly:
+`1495f453e5d9f262baddfa2b7ad21d2d9e8d5f8c2436f058f88fcb6ebc6d8d68`.
+
+Independent extraction/readback recalculated and matched every manifest hash:
+- schedule: `9847952ba52279318018a259c07197df23392086f03bd6a308fd2cf60e83cd2c`;
+- PBP: `eab0562fb2f9dd9c65cf1457c469d656d9247212694370cac10c789e673a2ddb`;
+- target projection: `9303d7137ca19b5ccbdaf657d7d2f80746a82274ea4ced56dcb3d1509765307f`;
+- preflight JSON: `351f20a80d452c4ec8311a41b950ca618e30b589514744b0642267bbb1c5f2d2`;
+- raw checksum file: `6a45de9d226a65bf4d6f4188c2945392c2e2425a02ee58bef9a7adcadfb0148a`.
+
+Preflight cutoff `2026-09-29T11:39:08.824054+00:00`; qualified relevant-FBS rows 888; future targets 557. Manifest remains `QA_RAW_SOURCE_FROZEN_NOT_EXECUTED`, with S2 predictions, target-outcome join and market join all false.
+
+Classification: **PROSPECTIVE QA RAW-SOURCE FREEZE ACCEPTED AS IMMUTABLE EXECUTABLE INPUT BOUNDARY.**
+
+Downstream S2 source-context structural QA must consume artifact `11031055060` and verify the ZIP and internal source hashes before execution; it must not reacquire mutable upstream URLs.
