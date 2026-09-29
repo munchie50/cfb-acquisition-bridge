@@ -1,0 +1,34 @@
+name: CFB QA S2 Source Context v3 Static Gate
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_qa_s2_k1_source_context_v3_static_gate.yml'
+permissions:
+  contents: read
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify v3 exact interface correction
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          p=Path("scripts/cfb_qa_s2_k1_source_context_companion_v3_2026_09_29.py")
+          s=p.read_text()
+          assert 'reqT={"game_id","team","target_kickoff","qualified_prior_games","snapshot_type","snapshot_cutoff_utc"}' in s
+          assert 'target-side kickoff mismatch' in s
+          assert 'target-side cutoff' in s
+          assert 'target-side snapshot type' in s
+          assert 'T["start_date"]' not in s and 'T.start_date' not in s
+          assert 'accepted_target_side_crosscheck' in s
+          assert '"s2_predictions_produced":False' in s
+          assert '"target_outcomes_joined":False' in s
+          assert '"market_joined":False' in s
+          print("S2_K1_SOURCE_CONTEXT_V3_STATIC_PASS",hashlib.sha256(p.read_bytes()).hexdigest())
+          PY
