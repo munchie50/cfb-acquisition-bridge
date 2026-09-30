@@ -1,0 +1,43 @@
+name: CFB Weekly Wednesday Fallback
+
+on:
+  schedule:
+    - cron: '0 15 * * 3'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  fallback:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recover fallback authority
+        run: |
+          set -euo pipefail
+          grep -q "WEDNESDAY — bounded fallback" evidence/CFB_ENGINE_FOOTBALL_WEEK_OPERATING_CADENCE_CONTRACT_v1_247.md
+      - name: Check Tuesday and dispatch only if needed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,subprocess,datetime,sys
+          cmd=["gh","run","list","--workflow","cfb_weekly_tuesday_candidate_freeze.yml","--limit","10","--json","databaseId,status,conclusion,createdAt,event"]
+          runs=json.loads(subprocess.check_output(cmd,text=True))
+          now=datetime.datetime.now(datetime.timezone.utc)
+          recent=[]
+          for r in runs:
+              t=datetime.datetime.fromisoformat(r["createdAt"].replace("Z","+00:00"))
+              if now-t <= datetime.timedelta(hours=36):
+                  recent.append(r)
+          ok=any(r["status"]=="completed" and r["conclusion"]=="success" for r in recent)
+          if ok:
+              print("CFB_WEEKLY_WEDNESDAY_FALLBACK_NOOP_TUESDAY_SUCCESS")
+              sys.exit(0)
+          print("CFB_WEEKLY_WEDNESDAY_FALLBACK_REQUIRED")
+          subprocess.check_call(["gh","workflow","run","cfb_weekly_tuesday_candidate_freeze.yml","--ref","main"])
+          print("CFB_WEEKLY_WEDNESDAY_FALLBACK_DISPATCHED")
+          PY
