@@ -133,3 +133,36 @@ Whenever a new or modified routine control is under test, successful use alone i
 The demonstration record must distinguish USING a control from PROVING the control behaved as intended. A control cannot receive DEMONSTRATED status from implicit success.
 
 When authentic evidence already exists, use it; do not rerun operational work solely to make the demonstration visible.
+
+
+## 11. Interface / Boundary Ancestry Check
+Before classifying a required field, capability or interface as missing, trace the complete accepted boundary:
+1. consumer requirement;
+2. current artifact(s);
+3. authoritative producer;
+4. companion outputs produced by the same accepted path;
+5. acceptance/reconciliation evidence for those outputs.
+
+Absence from one artifact is not evidence that the capability is absent from the accepted boundary. Treat a governed interface as potentially composite until producer ancestry and companion outputs prove otherwise.
+
+Only after this bounded ancestry check fails may the routine classify the requirement as genuinely missing and authorize a new interface/substrate correction.
+
+Do not respond to a single-artifact absence by guessing, duplicating derivation, reopening a lower-authority/raw source, or extending an accepted interface unless the ancestry check establishes that such a correction is actually required.
+
+### Demonstration — v1.246 S2_K1 role/venue interface
+Trigger: prospective S2_K1 consumer construction found `side` on the accepted team-side substrate but not `venue_state` and initially classified the consumer interface as incomplete.
+
+Expected behavior under this control: recover the accepted v1.246 producer and companion boundaries before declaring a new interface requirement.
+
+Observed behavior after ancestry recovery:
+- the accepted team-side ledger/substrate already carries explicit `side = home|away`, team identity, target kickoff, prior-game count and 17 raw features;
+- the accepted target ledger carries game identity, home/away teams, `neutral_site`, population and kickoff;
+- the authoritative v1.246 producer deterministically derives `venue_state = NEUTRAL|HOME` from that accepted target boundary and uses it for the frozen `venue_neutral` model term;
+- therefore the accepted interface is composite and no new venue source or team-side schema extension is required.
+
+Risk prevented: unnecessary mutation of an accepted substrate, duplicate venue derivation from lower-authority data, or reopening raw schedule data merely because one companion artifact did not contain every consumer field.
+
+Expected vs actual: PASS.
+Demonstration result: `INTERFACE_BOUNDARY_ANCESTRY_CHECK = DEMONSTRATED_PASS` for this case.
+
+Remaining debt: correct the prospective S2_K1 consumer to compose the accepted team-side substrate with the accepted target ledger and statically reconcile their identities before any live execution.
