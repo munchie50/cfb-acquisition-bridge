@@ -91,3 +91,41 @@ A scheduler consolidation is not complete merely because the desired number of t
 
 ### Disposition
 CORRECTED / DEMONSTRATION PENDING. The structural correction is installed in task ownership and prompts. Demonstration requires successful prospective Market Monitor runs that persist/read back current state and surface the Hot Sheet under the corrected cadence. Do not mark LEARNED until demonstrated.
+
+
+## Hot Sheet chronological decision-window correction — 2026-09-29
+
+### User-facing problem
+A single mixed Hot Sheet made near-term Thursday/Friday games compete visually with larger Saturday model-market disagreements, and INCONCLUSIVE did not have an explicit enforced maturity deadline.
+
+### Correction
+Active output/decision controls now require:
+- chronological NEXT-UP sections for Thursday, Friday, Saturday morning, Saturday afternoon, and Saturday evening/night;
+- all governed games in the applicable chronological section regardless of normal priority rank;
+- earliest active section visually first;
+- PRIORITY WATCHLIST retained separately across days;
+- FULL WEEKLY SLATE retained so no game disappears;
+- label Engine Prediction (Frozen) to distinguish the locked Engine fair line from sportsbook market lines;
+- every INCONCLUSIVE receives a kickoff-window reconciliation deadline;
+- deadline transition is actionable / governed WAIT with explicit trigger + hard final cutoff / PASS; a deadline never forces a wager;
+- final practical execution cutoff resolves WAIT to actionable or PASS;
+- decision windows remain separate from execution-trip planning and must not manufacture extra trips.
+
+### Default CT reconciliation windows
+- Thursday: final governed Market Monitor pass that still leaves practical pre-kickoff execution opportunity; normally 13:00 CT if safely pre-kickoff, otherwise earlier.
+- Friday: normally 13:00 CT, earlier when kickoff/execution requires.
+- Saturday before 12:00 CT: Friday evening availability review, or last Friday Market Monitor if no evening review applies.
+- Saturday 12:00–16:59 CT: Saturday 07:00 CT Market Monitor.
+- Saturday 17:00 CT or later: Saturday 13:00 CT Market Monitor.
+
+### Ownership / contamination check
+- Sole Hot Sheet producer remains CFB Market Monitor.
+- CFB Evening Availability is downstream and persists canonical state for the next Market Monitor; it does not create a competing Hot Sheet.
+- Dual Engine Health remains integrity-only.
+- Dual Weekly Engine QA remains consumer/QA.
+- Four-active-task / one-open-slot constraint remains satisfied.
+- Frozen Champion/model predictions, Tuesday candidate automation, FIRST_FROZEN chronology, market append-only chronology, and scientific authority are unchanged.
+- Market/injury/wager/execution/outcome evidence remains downstream and cannot alter Engine Prediction (Frozen).
+
+### Disposition
+INSTALLED / DEMONSTRATION PENDING. Demonstrate on the next scheduled Hot Sheet cycle and verify chronological sections, deadline fields, state transitions, canonical readback, and task ownership before classifying LEARNED.
