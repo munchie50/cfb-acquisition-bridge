@@ -166,3 +166,13 @@ Routine acceptance-path review found that the existing v1.207 independent accept
 A static regression gate rejects FIRST_FROZEN fixed counts/artifact IDs in the generic audit. The audit is deliberately not wired to candidate generation; actual weekly bytes must still be independently recovered, audited, accepted, persisted and read back before pointer advancement or S2_K1 consumer execution.
 
 See `CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_READINESS_2026-09-30.md`. Frontier remains CADENCE WAIT.
+
+
+## 2026-09-30 accepted-source pointer advancement readiness
+Post-acceptance dependency review found no bounded transition procedure from a persisted weekly REFRESH_SNAPSHOT acceptance to the canonical accepted prediction-source pointer. `scripts/cfb_qa_prepare_accepted_source_pointer.py` now prepares—but cannot persist—that transition.
+
+The preparer requires a later-cutoff PASS acceptance with independent recomputation/hash/chronology proof, forbidden outcome/market/refit states false, changed schedule/PBP identities, and an explicit persisted acceptance-evidence record. A static gate prevents the preparer from acquiring repository/network mutation capability.
+
+Required order is now explicit: candidate → independent audit → persisted/read-back acceptance → pointer preparation → separate canonical pointer write → direct pointer readback. See `CFB_QA_ACCEPTED_SOURCE_POINTER_ADVANCEMENT_READINESS_2026-09-30.md`.
+
+Current pointer remains unchanged at v1.208/v1.218. Frontier remains CADENCE WAIT.
