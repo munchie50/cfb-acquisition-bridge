@@ -128,3 +128,37 @@ This does not prove loss: controlled-bet screenshots are known downstream-only e
 2. Reconcile execution-evidence ancestry/location.
 3. Harden recovery-current-frontier readability only if it can be done without competing authority.
 4. Continue weekly/Market Monitor/Health natural-run demonstration debt at their proper triggers.
+
+
+## Pass 3 — deterministic closure and recovery hardening
+
+### Finding H1 advancement — S2_K1 repaired consumer
+Static guard strengthened in commit a83c91bae2b36bda5d025cdbd3b5638845fc0863.
+Direct source reconciliation against consumer blob 3eedf046f53f808f3c2ed236c4ea511b3ac2166d and gate blob fcdde60be70091943f37215832d9a0fa9d46fdc7 found:
+- all 22 required source invariants present;
+- exactly one `s2=s1+` application;
+- no pyreadr/read_parquet/raw schedule/PBP reopeners;
+- explicit target-ledger load and composite role/venue boundary;
+- accepted v1.246 34-predictor ordering;
+- frozen scaling/coefficient identities and lambdas;
+- output, population-accounting and contamination manifest machinery present.
+Disposition: STATIC SOURCE RECONCILIATION PASS. Runtime/static-gate execution remains DEMONSTRATION_PENDING; no prospective candidate was manufactured.
+
+### Finding H2 advancement — recovery quick-read installed
+Commit b04e203c00e89dd2a1bb3d81bd08e268d9787f1 updated the existing Current Recovery Index in place rather than creating competing authority.
+Readback blob 721ec9564aa6c9947d5a1092eeb4cfbe204c451d confirms a dated current-frontier quick-read near the top that points to Champion v1.193, Routine v5/v6 status, active holistic map, S2_K1 study-only status, v1.247 cadence, canonical operational surfaces and open holistic items.
+Historical text remains preserved.
+Disposition: RECOVERY-INTEGRATION DEBT CORRECTED / PERSISTED / READ_BACK. Demonstration remains prospective: next independent recovery/handoff should prove the quick-read reduces stale-frontier interpretation without bypassing detailed authority.
+
+### Finding H3 advancement — execution evidence
+Repeated repository commit ancestry searches for controlled-bet, Caesars, Baylor, Harrah and Sep. 26 execution terms returned no repository commit evidence.
+Disposition remains OPEN RECONCILIATION, not LOST/MISSING. Repository negative search is insufficient to override original screenshot evidence. No ledger mutation or memory backfill performed.
+
+## Current holistic radar after Pass 3
+- H1 S2_K1 truncation: CORRECTED / PERSISTED / READ_BACK / STATIC_SOURCE_RECONCILED / RUNTIME_DEMONSTRATION_PENDING.
+- H2 recovery layering: CORRECTED / PERSISTED / READ_BACK / RECOVERY_DEMONSTRATION_PENDING.
+- H3 execution evidence: OPEN_RECONCILIATION.
+- Weekly acceptance->pointer: NATURAL_WAIT_DEMONSTRATION.
+- Market Monitor + exactly-once Hot Sheet: NATURAL_WAIT_DEMONSTRATION.
+- Dual Engine Health retrospective audit: NATURAL_WAIT_DEMONSTRATION.
+- Champion/model science defect discovered by holistic review: NONE SO FAR.
