@@ -95,3 +95,36 @@ No 2025 protected TEST access.
 No outcome-driven refit/recalibration.
 No market/wager/execution data enters model construction.
 No artificial weekly candidate or operational run solely for this audit.
+
+
+## Pass 2 — seam reconciliation findings
+
+### Finding H1 — S2_K1 consumer truncation (REAL IMPLEMENTATION DEFECT)
+Classification: implementation/integration defect; caught pre-execution; no science/model effect.
+Persisted inspection proved the prospective consumer ended immediately after venue-state derivation and referenced target ledger variable G without loading it. The static gate expected downstream prediction/manifest invariants absent from the truncated file, so no static PASS could legitimately be claimed.
+
+Correction sequence:
+1. commit f92612384d52fb375baad74552bd9b8b53c14e82 restored the prediction/output tail, mirroring accepted v1.246 predictor order, scaling order, coefficient term identity/lambdas, venue term, finite prediction checks, history-depth slices, population accounting and contamination manifest.
+2. mandatory readback found the old argument header had survived that first patch, leaving G undefined.
+3. commit b224e5353770817e4eb994629ac444e16264dce1 separately restored the target-ledger argument/load.
+4. direct readback blob 3eedf046f53f808f3c2ed236c4ea511b3ac2166d confirms G load, 34-predictor assembly, exact frozen hashes/lambdas, one S2 context addition, output/manifest block and absence of raw schedule/PBP readers.
+
+Current state: CORRECTED / PERSISTED / READ_BACK / STATIC SOURCE RECONCILED; executable/static-gate runtime demonstration still pending. Do not call it accepted.
+
+Routine learning: a patch commit is not a correction claim. Readback detected an incomplete first repair and forced a second bounded correction. This is a concrete v6 back-half demonstration.
+
+### Finding H2 — recovery surface layering
+Classification: recovery/integration debt, not authority loss.
+The current recovery doorway explicitly says later reconciliation supersedes older ACTIVE/NEXT text, but historical instructions remain inline before the current frontier. This preserves evidence correctly while increasing recovery interpretation burden.
+Next action: design only a compact current-frontier summary/pointer at the top of the existing authoritative doorway, without deleting historical content or creating a second authority surface; verify against existing recovery rules before mutation.
+
+### Finding H3 — execution evidence persistence
+Classification: OPEN RECONCILIATION, not yet a defect.
+The canonical execution ledger currently contains initialization/write-path evidence but no established wager rows. Repository commit searches for controlled-bet/Caesars/Baylor/screenshot execution terms returned no matching commit evidence.
+This does not prove loss: controlled-bet screenshots are known downstream-only evidence and may exist outside repository text history. Do not backfill from conversation memory. Recover original evidence/authority before any ledger mutation.
+
+## Updated priority
+1. Finish deterministic structural/static validation of repaired S2_K1 consumer without a live prospective snapshot.
+2. Reconcile execution-evidence ancestry/location.
+3. Harden recovery-current-frontier readability only if it can be done without competing authority.
+4. Continue weekly/Market Monitor/Health natural-run demonstration debt at their proper triggers.
