@@ -28,7 +28,7 @@ assert set(C.snapshot_type)=={"S2_K1_SOURCE_CONTEXT"}
 assert set(map(tuple,S[["game_id","team"]].astype(str).to_numpy()))==set(map(tuple,B[["game_id","team"]].astype(str).to_numpy()))
 
 bad=("winner","spread","moneyline","over_under","odds","wager","bet_","execution","actual_","postgame")
-for df,label in ((S,"s0"),(B,"baseline"),(C,"context")):
+for df,label in ((S,"s0_side"),(G,"s0_target"),(B,"baseline"),(C,"context")):
     forbidden=[c for c in df.columns if any(x in c.lower() for x in bad)]
     assert not forbidden, f"{label} forbidden fields: {forbidden}"
 
@@ -83,34 +83,19 @@ coef=pd.read_csv(coefp); scale=pd.read_csv(scalep)
 assert len(FEATURES)==17 and len(scale)==34
 assert set(coef.groupby("target")["lambda"].first().to_dict().items())=={("margin",0.1),("total",0.1),("win",0.01)}
 
-# Structural readiness stops here unless the supplied S0 side surface contains explicit home/away role + venue.
-required_role={"side","venue_state"}
-if not required_role.issubset(S.columns):
-    raise SystemExit("S2_K1_CONSUMER_ROLE_VENUE_INTERFACE_REQUIRED")
+# Compose the accepted v1.246 boundary instead of extending either artifact.
+assert "side" in S.columns and set(S.side).issubset({"home","away"})
+assert not S.duplicated(["game_id","side"]).any()
+assert set(S.game_id.astype(str))==set(G.game_id.astype(str))
+role=S[["game_id","side","team"]].merge(G[["game_id","home_team","away_team","neutral_site"]],on="game_id",validate="many_to_one")
+assert ((role.side=="home")==(role.team==role.home_team)).all()
+assert ((role.side=="away")==(role.team==role.away_team)).all()
+venue=G[["game_id","home_team","away_team","neutral_site"]].copy()
+def neutral_state(x):
+    if isinstance(x,(bool,np.bool_)): return bool(x)
+    z=str(x).strip().lower()
+    if z in {"true","t","1","yes","y"}: return True
+    if z in {"false","f","0","no","n"}: return False
+    raise SystemExit("unrecognized neutral_site value")
+venue["venue_state"]=np.where(venue.neutral_site.map(neutral_state),"NEUTRAL","HOME")
 
-pred=[]
-for gid,z in X.groupby("game_id"):
-    if len(z)!=2: continue
-    orig=S[S.game_id.astype(str)==str(gid)]
-    home=orig[orig.side=="home"]; away=orig[orig.side=="away"]
-    if len(home)!=1 or len(away)!=1: raise SystemExit("target side role identity")
-    hv=X[(X.game_id.astype(str)==str(gid))&(X.team==home.iloc[0].team)]
-    av=X[(X.game_id.astype(str)==str(gid))&(X.team==away.iloc[0].team)]
-    if len(hv)!=1 or len(av)!=1: continue
-    vals={**{"home_"+f:float(hv.iloc[0][f]) for f in FEATURES},**{"away_"+f:float(av.iloc[0][f]) for f in FEATURES}}
-    fs=scale.feature.tolist(); assert set(fs)==set(vals)
-    arr=np.array([vals[f] for f in fs],float); mu=scale.set_index("feature").loc[fs,"mean"].to_numpy(float); sd=scale.set_index("feature").loc[fs,"sd"].to_numpy(float)
-    zz=(arr-mu)/sd; neutral=float(home.iloc[0].venue_state=="NEUTRAL"); terms=["intercept"]+fs+["venue_neutral"]; q=np.r_[1.0,zz,neutral]
-    out={"game_id":gid,"home_team":home.iloc[0].team,"away_team":away.iloc[0].team,"venue_state":home.iloc[0].venue_state,"snapshot_type":"REFRESH_SNAPSHOT","snapshot_cutoff_utc":cutoff.isoformat(),"candidate_id":"S2_K1","k":1}
-    for kind,lam in (("margin",.1),("total",.1),("win",.01)):
-        cc=coef[(coef.target==kind)&(coef["lambda"]==lam)].set_index("term"); assert set(cc.index)==set(terms)
-        v=float(q@cc.loc[terms,"coefficient"].to_numpy(float)); out["pred_"+kind]=1/(1+np.exp(-np.clip(v,-40,40))) if kind=="win" else v
-    pred.append(out)
-P=pd.DataFrame(pred)
-if len(P):
-    assert np.isfinite(P[["pred_margin","pred_total","pred_win"]].to_numpy(float)).all() and P.pred_win.between(0,1).all()
-P.to_csv(outdir/"s2_k1_predictions.csv",index=False); E.to_csv(outdir/"s2_k1_side_exclusions.csv",index=False)
-manifest={"status":"EXECUTED_NOT_ACCEPTED","candidate_id":"S2_K1","k":1,"cutoff_utc":cutoff.isoformat(),"target_outcomes_opened":False,"market_joined":False,"wager_or_execution_joined":False,"protected_2025_test_opened":False,"fit_or_optimization_performed":False,"rows":{"predictions":len(P),"side_exclusions":len(E)},"hashes":{}}
-for p in sorted(outdir.glob("*.csv")):manifest["hashes"][p.name]=hashlib.sha256(p.read_bytes()).hexdigest()
-(outdir/"manifest.json").write_text(json.dumps(manifest,indent=2,sort_keys=True)+"\n")
-print(json.dumps(manifest,indent=2,sort_keys=True))
