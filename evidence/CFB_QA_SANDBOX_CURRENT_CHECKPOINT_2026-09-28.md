@@ -210,3 +210,11 @@ The temporary target-baseline rest_days blocker is now structurally resolved wit
 The target-baseline companion now reconstructs this strictly-prior rest_days feature-history surface from the accepted mechanical primitive schedule identities, never from future target rows. Its general `TARGET_BASELINE_UNAVAILABLE:<features>` state remains fail closed for any actual cutoff where a required baseline cannot be reproduced.
 
 See `CFB_QA_S2_K1_REST_DAYS_ANCESTRY_RECOVERY_2026-09-30.md`. The earlier blocker record remains preserved as discovery evidence but is superseded on this point. No live baseline artifact or S2 prediction has been executed/accepted. Frontier remains CADENCE WAIT.
+
+
+## 2026-09-30 weekly target-baseline candidate integration
+Executable wiring review confirmed accepted v4 already emits the mechanical/derived primitive surfaces required by the recovered target-baseline companion. Tuesday now runs that companion only when the source-state gate qualifies a candidate and retains its EXECUTED_NOT_ACCEPTED output under `package/baseline/`.
+
+The producer is pinned by Git blob `c04f59ae2c4a591727816476d5b1099990bf6657`, its manifest must explicitly deny S2 prediction/outcome/market joins, and the weekly no-op static guard now protects this step from running on unchanged source state.
+
+See `CFB_QA_WEEKLY_TARGET_BASELINE_CANDIDATE_INTEGRATION_2026-09-30.md`. This closes candidate packaging only; independent baseline acceptance is still required before S2_K1 execution. No workflow was dispatched. Frontier remains CADENCE WAIT.
