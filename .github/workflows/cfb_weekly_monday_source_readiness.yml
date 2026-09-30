@@ -1,0 +1,74 @@
+name: CFB Weekly Monday Source Readiness
+
+on:
+  schedule:
+    # 15:00 UTC = 10:00 CT while CDT is active. Governance uses America/Chicago;
+    # actual immutable cutoff is recorded by the preflight, so DST does not alter chronology.
+    - cron: '0 15 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cfb-weekly-source-readiness
+  cancel-in-progress: false
+
+jobs:
+  readiness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --disable-pip-version-check pandas pyarrow pyreadr
+      - name: Recover cadence authority
+        run: |
+          set -euo pipefail
+          test -s evidence/CFB_ENGINE_FOOTBALL_WEEK_OPERATING_CADENCE_CONTRACT_v1_247.md
+          grep -q "MONDAY — source readiness" evidence/CFB_ENGINE_FOOTBALL_WEEK_OPERATING_CADENCE_CONTRACT_v1_247.md
+          grep -q "TUESDAY — preferred weekly immutable model freeze" evidence/CFB_ENGINE_FOOTBALL_WEEK_OPERATING_CADENCE_CONTRACT_v1_247.md
+      - name: Acquire current sources
+        run: |
+          set -euo pipefail
+          mkdir -p raw out package
+          curl --fail --location --retry 3 -o raw/cfb_schedules_2026.parquet "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_2026.parquet"
+          curl --fail --location --retry 3 -o raw/pbp_2026.rds "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2026.rds"
+          test -s raw/cfb_schedules_2026.parquet
+          test -s raw/pbp_2026.rds
+          sha256sum raw/* | tee package/RAW_SOURCE_SHA256SUMS.txt
+      - name: Run no-prediction source preflight
+        run: |
+          set -euo pipefail
+          python scripts/phase4_challenger_b_2026_refresh_source_preflight_v1_217.py raw/cfb_schedules_2026.parquet raw/pbp_2026.rds out
+          cp raw/cfb_schedules_2026.parquet package/
+          cp raw/pbp_2026.rds package/
+          cp out/challenger_b_2026_future_target_projection_v1_217.csv package/
+          cp out/preflight_v1_217.json package/
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          p=Path("package")
+          report=json.loads(Path("out/preflight_v1_217.json").read_text())
+          assert report["status"]=="PASS_REFRESH_SOURCE_PREFLIGHT"
+          m={
+            "status":"MONDAY_SOURCE_READINESS_ONLY",
+            "preflight_status":report["status"],
+            "cutoff_utc":report["cutoff_utc"],
+            "future_at_cutoff":report["future_at_cutoff"],
+            "files":{x.name:hashlib.sha256(x.read_bytes()).hexdigest() for x in sorted(p.iterdir()) if x.is_file()},
+            "model_prediction_performed":False,
+            "s2_predictions_produced":False,
+            "market_joined":False,
+            "target_outcomes_joined":False
+          }
+          (p/"CFB_WEEKLY_SOURCE_READINESS_MANIFEST.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          print("CFB_WEEKLY_MONDAY_READINESS_PASS",report["cutoff_utc"],report["future_at_cutoff"])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-weekly-monday-source-readiness
+          path: package/
+          retention-days: 90
