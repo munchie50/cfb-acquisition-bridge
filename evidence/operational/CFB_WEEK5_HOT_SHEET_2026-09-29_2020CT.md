@@ -5,10 +5,19 @@ Status: PROSPECTIVE BETA OPERATIONS OUTPUT / USER-AUTHORIZED EXTRA REFRESH
 Boundary: This is a new prospective refresh using the 2026-09-30 morning market capture. It does not reconstruct the incomplete 07:01 CT scheduled cycle. Champion remains accepted v1.193 / v1.208 FIRST_FROZEN artifact 10897612260. Market and decision evidence remain downstream and separate from the frozen Champion.
 
 ## NEXT UP — THURSDAY
-All governed Thursday games remain on the canonical full-slate view. No new actionable state was established in this morning reconciliation.
+| Kickoff CT | Game | Frozen Engine | Current market | Total | State |
+|---|---|---:|---:|---:|---|
+| 7:00 PM | Western Kentucky @ New Mexico State | NMSU -26.5 | NMSU -2.5 (-113) | 57.5 | INCONCLUSIVE |
+| 8:00 PM | North Texas @ Tulsa | Tulsa -15.1 | Tulsa -1.0 (-110) | 57.5 | INCONCLUSIVE |
 
 ## NEXT UP — FRIDAY
-All governed Friday games remain on the canonical full-slate view. No new actionable state was established in this morning reconciliation.
+| Kickoff CT | Game | Frozen Engine | Current market | Total | State |
+|---|---|---:|---:|---:|---|
+| 6:00 PM | Liberty @ Delaware | — | Delaware +7.0 (-108) | 50.0 | Existing governed state retained; no new transition |
+| 6:00 PM | Pittsburgh @ Virginia Tech | — | Virginia Tech -3.5 (-106) | 55.0 | Existing governed state retained; no new transition |
+| 7:00 PM | Penn State @ Northwestern | — | Penn State -2.5 (-114) | 45.5 | Existing governed state retained; no new transition |
+
+Frozen Engine cells are left unresolved where the complete frozen row was not recovered into the morning repair render; values are not invented.
 
 ## NEXT UP — SATURDAY MORNING
 Priority games carried forward prospectively:
