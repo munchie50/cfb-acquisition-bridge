@@ -51,3 +51,19 @@ Champion snapshot: v1.208 FIRST_FROZEN / v1.193 accepted Beta Champion. Market o
 - NOT_YET_AVAILABLE: UTSA at Rice; Utah State at Boise State; Arkansas State at Louisiana. Recheck on next governed market-monitor pass.
 - Nebraska remains WAIT and is explicitly retained on the Early Board regardless of Hot Sheet cutoff.
 - Minimum acceptable line/price is not invented where the betting layer has not earned one. Do not chase later movement beyond any prospectively established threshold.
+
+
+## Prospective decision refresh — 2026-09-29 20:20 CT
+Champion snapshot: v1.208 FIRST_FROZEN / v1.193 accepted Beta Champion.
+Market reference: CFB_MARKET_MONITOR_STATE 2026-09-29 20:20 CT prospective reset capture.
+Boundary: this is a new prospective decision boundary after the 2026-09-28 persistence gap; no missing Monday decision is reconstructed.
+
+- BET EARLY: 0 newly established.
+- BET NOW: 0 newly established.
+- Priority large-disagreement games remain INCONCLUSIVE pending football/injury/source reconciliation and betting-layer evidence sufficient to establish an actionable threshold: Western Kentucky-New Mexico State; North Texas-Tulsa; Notre Dame-North Carolina; Alabama-Mississippi State; Syracuse-UConn; Michigan-Minnesota; Ohio State-Iowa; Memphis-Charlotte; Eastern Michigan-UMass; Old Dominion-Georgia State; Marshall-James Madison; Kentucky-South Carolina; Texas Tech-Colorado.
+- Maryland at Nebraska — WAIT. Champion Nebraska by 10.5205 / total 56.0116; current broad market Nebraska -14.5 (-112) / total 52.0, with BetMGM cross-check at Nebraska -15 / 52.5. The side has moved farther from the Champion since Sunday's broad -13.5 observation. Await: next availability/injury and market cycle plus cross-book/executable-price review. Do not chase; no minimum acceptable line/price has yet been earned.
+- Vanderbilt at Georgia — WAIT. Champion Georgia by 24.5805 / total 57.5598; current broad market Georgia -24 / total 50.5. Side remains close to Champion while total disagreement has widened. Await: total confirmation plus matchup/availability review.
+- Previously unavailable UTSA-Rice, Utah State-Boise State, and Arkansas State-Louisiana now have current market coverage. They return to normal monitoring from this timestamp forward; no earlier decision is inferred.
+
+Execution planning: no new casino trip is triggered by this refresh. Preserve the 1–2 trip/week portfolio objective; third trip requires a compelling documented reason.
+Next trigger: scheduled CFB Market Monitor plus Wednesday-Friday Evening Availability where applicable. Any material new availability/price information must append prospectively.
