@@ -1,0 +1,23 @@
+name: CFB QA Accepted-Source Pointer Static Gate
+
+on:
+  push:
+    paths:
+      - 'scripts/cfb_qa_prepare_accepted_source_pointer.py'
+      - 'scripts/cfb_qa_accepted_source_pointer_static_gate.py'
+      - '.github/workflows/cfb_qa_accepted_source_pointer_static_gate.yml'
+      - 'evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/cfb_qa_accepted_source_pointer_static_gate.py
