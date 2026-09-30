@@ -4,10 +4,11 @@ import sys,json,hashlib
 from pathlib import Path
 import pandas as pd, numpy as np
 
-s0p, basep, ctxp, fitdir, outdir = map(Path,sys.argv[1:6])
-cutoff=pd.Timestamp(sys.argv[6]); outdir.mkdir(parents=True,exist_ok=True)
+targetsidep, targetledgerp, basep, ctxp, fitdir, outdir = map(Path,sys.argv[1:7])
+cutoff=pd.Timestamp(sys.argv[7]); outdir.mkdir(parents=True,exist_ok=True)
 assert cutoff.tz is not None
-S=pd.read_csv(s0p,dtype={"game_id":str})
+S=pd.read_csv(targetsidep,dtype={"game_id":str})
+G=pd.read_csv(targetledgerp,dtype={"game_id":str})
 B=pd.read_csv(basep,dtype={"game_id":str})
 C=pd.read_csv(ctxp,dtype={"target_game_id":str,"source_game_id":str})
 
