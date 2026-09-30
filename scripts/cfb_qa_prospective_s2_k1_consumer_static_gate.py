@@ -3,6 +3,7 @@ from pathlib import Path
 p=Path("scripts/cfb_qa_prospective_s2_k1_consumer_v1_2026_09_30.py").read_text()
 required=[
  'MAPPED=set(MAP); S1ONLY=set(FEATURES)-MAPPED',
+ 'G=pd.read_csv(targetledgerp,dtype={"game_id":str})',
  'len(MAPPED)==10 and len(S1ONLY)==7',
  'n/(n+1.0)*float(raw)+1/(n+1.0)*float(b)',
  'resid=(no/(no+1.0)*rawo+1/(no+1.0)*bo)-bo',
@@ -18,6 +19,11 @@ required=[
  '"fit_or_optimization_performed":False',
  'role=S[["game_id","side","team"]].merge(G[["game_id","home_team","away_team","neutral_site"]]',
  'venue["venue_state"]=np.where(venue.neutral_site.map(neutral_state),"NEUTRAL","HOME")',
+ 'pred=[p+f for f in FEATURES for p in ("home_","away_")]',
+ 'set(scale.feature)==set(pred)',
+ 'coef_expected={"margin":0.1,"total":0.1,"win":0.01}',
+ 'P.to_csv(outdir/"s2_k1_predictions.csv",index=False)',
+ 'assert predicted|side_excluded|game_failed==set(G.game_id.astype(str))',
 ]
 for x in required: assert x in p, f"missing S2_K1 invariant: {x}"
 for forbidden in ("pyreadr","read_parquet","cfb_schedules_2026","pbp_2026","S2_K1_CONSUMER_ROLE_VENUE_INTERFACE_REQUIRED","k={1,2,4,8}"):
