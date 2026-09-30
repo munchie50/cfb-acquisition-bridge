@@ -131,3 +131,12 @@ Existing workflows are evidence for the September 29 boundary, with pinned input
 
 ## Accepted-boundary preservation — 2026-09-29
 `CFB_QA_ACCEPTED_BOUNDARY_ARCHIVE_2026-09-29.md` records byte-identical secondary archives of raw artifact 11031055060, S0 artifact 11064541770 and v4 artifact 11065575217. All saved copies passed independent materialization and exact ZIP-byte/hash readback. The finite GitHub-retention gap for these packages is closed; absent S0 prediction-file bytes and original historical replay limitations remain. Scientific frontier stays CADENCE WAIT.
+
+
+## 2026-09-30 weekly no-op enforcement correction
+Cadence-wait routine review found that the installed Tuesday scheduler proved future targets but did not compare fresh source identity with the last independently accepted prediction-source boundary. This could manufacture a candidate boundary on unchanged source bytes, contrary to v1.218/v1.247.
+
+Correction persisted in `CFB_QA_WEEKLY_SOURCE_STATE_NOOP_GATE_CORRECTION_2026-09-30.md`.
+The operational pointer `evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json` is initialized from accepted v1.208/v1.218 source identities and may advance only after a later prediction boundary is independently accepted and persisted. Tuesday now exits as a successful no-op before Champion-fit/S0/context execution when source identities are unchanged or no future targets remain.
+
+Scientific frontier remains CADENCE WAIT. No workflow was dispatched, no prediction generated, no S2 consumer built, no 2025 TEST accessed, and Champion remains unchanged. Real-path demonstration of the installed trigger is pending the next normal Tuesday run.
