@@ -218,3 +218,13 @@ Executable wiring review confirmed accepted v4 already emits the mechanical/deri
 The producer is pinned by Git blob `c04f59ae2c4a591727816476d5b1099990bf6657`, its manifest must explicitly deny S2 prediction/outcome/market joins, and the weekly no-op static guard now protects this step from running on unchanged source state.
 
 See `CFB_QA_WEEKLY_TARGET_BASELINE_CANDIDATE_INTEGRATION_2026-09-30.md`. This closes candidate packaging only; independent baseline acceptance is still required before S2_K1 execution. No workflow was dispatched. Frontier remains CADENCE WAIT.
+
+
+## 2026-09-30 scheduled Market Monitor silent-completion incident
+The 07:01 CT scheduled CFB Market Monitor cycle launched but left no conforming terminal receipt, no 2026-09-30 Hot Sheet, and no attributable canonical market/decision append. It is therefore INCOMPLETE under v1.239/v1.242/v1.245; scheduler execution is not engine completion.
+
+The task was observed disabled after the run and has been restored to enabled. Available scheduler evidence does not identify the actor/reason for the disable transition, so attribution remains unresolved.
+
+Structural correction: the Market Monitor must now persist/read back a non-terminal RUN_STARTED marker immediately after authority recovery, then a separate terminal RUN_PASS/RUN_INCOMPLETE/RUN_FAIL receipt. RUN_PASS additionally requires Hot Sheet persistence/readback. An independent 07:30/13:30 CT receipt watchdog now checks each preceding scheduled cycle and alerts on missing terminal evidence without creating competing market state.
+
+See `CFB_QA_MARKET_MONITOR_SILENT_COMPLETION_INCIDENT_2026-09-30.md`. The failed 07:01 cycle is not reconstructed retroactively. Configuration is INSTALLED; end-to-end demonstration awaits the next actual scheduled cycle. Scientific frontier remains CADENCE WAIT.
