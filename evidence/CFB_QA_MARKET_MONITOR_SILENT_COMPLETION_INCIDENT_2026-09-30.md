@@ -29,3 +29,16 @@ The 2026-09-30 07:01 CT cycle remains INCOMPLETE / TERMINAL RECEIPT MISSING. Do 
 Configuration corrections are installed and task enabled-state readback succeeded. End-to-end RUN_STARTED + terminal-receipt + watchdog behavior requires the next actual scheduled Market Monitor cycle; do not claim DEMONSTRATED before that evidence exists.
 
 Scientific effect: none. Champion and frozen prediction lineage unchanged.
+
+
+## Superseding task-topology correction — 2026-09-30
+The earlier correction text above records an independent CFB Monitor Receipt Watch as installed. That scheduler design was subsequently rejected because the established operating envelope is four active production tasks with remaining task capacity preserved by default.
+
+Current governing topology:
+- CFB Market Monitor owns its own RUN_STARTED and terminal-receipt persistence.
+- Dual Engine Health owns independent retrospective verification of Market Monitor completion evidence.
+- CFB Evening Availability and Dual Weekly Engine QA retain their established roles.
+- The separately created CFB Monitor Receipt Watch is disabled and is not production authority.
+- Creating or activating an additional recurring production task requires explicit reconsideration of ownership across the four established tasks and explicit user authorization.
+
+This section supersedes only the obsolete fifth-task/watchdog installation language above. The original incident evidence and the requirement for independent completion verification remain valid.
