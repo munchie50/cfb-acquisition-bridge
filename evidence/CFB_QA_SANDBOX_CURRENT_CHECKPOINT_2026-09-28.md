@@ -122,3 +122,8 @@ Current disposition: ACCEPTED QA INPUT CAPABILITIES / S2_K1 STILL STUDY-ONLY / C
 v1.246 and source-context infrastructure gates are closed for these retained bytes. Do not blindly rerun earlier pending dependencies. Original historical raw-byte replay limitation remains.
 Next: at the next v1.216 weekly cadence, requalify source state and determine refresh/no-op before constructing/producing a prospective S2 consumer. September 29 is within the cycle anchored by September 26 FIRST_FROZEN; no exception is authorized here. Structural QA runs do not constitute an operational prospective refresh.
 No-op means no manufactured snapshot. Qualified consumer/freeze must remain exact k=1, use same-cutoff accepted boundaries, whitelist frozen input fields, freeze deterministic history-depth slices, and remain separate from S0. Outcome scoring remains separately gated. Champion unchanged.
+
+
+## Cadence-wait independent-work sweep — 2026-09-29
+Read-only next-cycle plumbing/retention audit: `CFB_QA_CADENCE_WAIT_READINESS_AUDIT_2026-09-29.md`.
+Existing workflows are evidence for the September 29 boundary, with pinned inputs and finite artifact retention; they are not an automatic fresh prospective freeze. The S0 retained package excludes prediction-file bytes. Next-cycle prerequisites and retention metadata are recorded in the audit. No new executable, scientific acceptance, or cadence exception is introduced. Current frontier remains CADENCE WAIT.
