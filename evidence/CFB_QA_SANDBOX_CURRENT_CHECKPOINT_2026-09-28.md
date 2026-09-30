@@ -127,3 +127,7 @@ No-op means no manufactured snapshot. Qualified consumer/freeze must remain exac
 ## Cadence-wait independent-work sweep — 2026-09-29
 Read-only next-cycle plumbing/retention audit: `CFB_QA_CADENCE_WAIT_READINESS_AUDIT_2026-09-29.md`.
 Existing workflows are evidence for the September 29 boundary, with pinned inputs and finite artifact retention; they are not an automatic fresh prospective freeze. The S0 retained package excludes prediction-file bytes. Next-cycle prerequisites and retention metadata are recorded in the audit. No new executable, scientific acceptance, or cadence exception is introduced. Current frontier remains CADENCE WAIT.
+
+
+## Accepted-boundary preservation — 2026-09-29
+`CFB_QA_ACCEPTED_BOUNDARY_ARCHIVE_2026-09-29.md` records byte-identical secondary archives of raw artifact 11031055060, S0 artifact 11064541770 and v4 artifact 11065575217. All saved copies passed independent materialization and exact ZIP-byte/hash readback. The finite GitHub-retention gap for these packages is closed; absent S0 prediction-file bytes and original historical replay limitations remain. Scientific frontier stays CADENCE WAIT.
