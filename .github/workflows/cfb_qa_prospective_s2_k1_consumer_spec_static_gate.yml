@@ -1,0 +1,22 @@
+name: CFB QA Prospective S2_K1 Consumer Spec Gate
+
+on:
+  push:
+    paths:
+      - 'evidence/CFB_QA_PROSPECTIVE_S2_K1_CONSUMER_SPEC_2026-09-30.md'
+      - 'scripts/cfb_qa_prospective_s2_k1_consumer_spec_static_gate.py'
+      - '.github/workflows/cfb_qa_prospective_s2_k1_consumer_spec_static_gate.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/cfb_qa_prospective_s2_k1_consumer_spec_static_gate.py
