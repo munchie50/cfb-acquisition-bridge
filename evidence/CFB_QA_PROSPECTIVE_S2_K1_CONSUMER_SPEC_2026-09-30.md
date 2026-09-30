@@ -9,8 +9,9 @@ Freeze the exact prospective S2_K1 consumer interface and mechanics before a qua
 ## Required accepted inputs
 A future execution may consume only one same-cutoff, independently accepted weekly boundary:
 1. complete accepted v1.246 S0 REFRESH_SNAPSHOT package;
-2. same-cutoff accepted v4 source-context package produced from the exact same raw schedule/PBP identities;
-3. frozen Champion v1.193 scaling and coefficients.
+2. same-cutoff independently accepted target-baseline companion containing B_F(target cutoff) for all 17 frozen features;
+3. same-cutoff accepted v4 source-context package produced from the exact same raw schedule/PBP identities;
+4. frozen Champion v1.193 scaling and coefficients.
 
 Candidate workflow success alone is insufficient. Cutoff, target identities and raw source identities must reconcile before execution.
 
@@ -53,6 +54,7 @@ No mapping, sign, k, baseline rule, eligibility rule, scaling or coefficient cha
 Consumer code must explicitly select only:
 - S0 target identity/cutoff/venue fields;
 - target-side qualified_prior_games and the 17 raw frozen features;
+- independently accepted same-cutoff target-baseline values B_F(target cutoff) and availability for all 17 features;
 - v4 source_context identity/chronology fields;
 - for the ten mapped pairs: paired raw opponent value, paired population baseline, availability/completion flags and the source/target/opponent identities required to prove chronology;
 - accepted scaling and coefficients.
@@ -94,7 +96,7 @@ Persist explicit exclusions separately with fail-closed reasons.
 
 ## Freeze gate
 Before any outcome evaluation:
-- target/cutoff/source identity reconciliation PASS;
+- target/cutoff/source identity reconciliation across S0, target-baseline and v4 context PASS;
 - k exactly 1 and candidate exactly S2_K1;
 - frozen mapping/config hash persisted;
 - forbidden-column scan zero;
@@ -107,4 +109,4 @@ Before any outcome evaluation:
 Outcome scoring remains separately gated.
 
 ## Current disposition
-Specification frozen. Consumer executable may be constructed/tested structurally against synthetic or already-spent non-2025 fixtures only if that does not create a live prospective snapshot. Actual prospective execution requires the next accepted weekly S0 + same-cutoff v4 context boundary. Frontier remains CADENCE WAIT.
+Specification frozen. Consumer executable may be constructed/tested structurally against synthetic or already-spent non-2025 fixtures only if that does not create a live prospective snapshot. Actual prospective execution requires the next accepted weekly S0 + same-cutoff accepted target-baseline + same-cutoff accepted v4 context boundary. Consumer construction is deferred until the target-baseline substrate identified in CFB_QA_PROSPECTIVE_S2_K1_TARGET_BASELINE_GAP_2026-09-30.md is executable and independently accepted. Frontier remains CADENCE WAIT.
