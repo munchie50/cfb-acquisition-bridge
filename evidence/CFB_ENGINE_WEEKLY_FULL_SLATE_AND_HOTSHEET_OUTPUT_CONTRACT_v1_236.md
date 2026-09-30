@@ -39,3 +39,7 @@ Weekly Beta Learning Review answers: What did reality teach us and what happens 
 These outputs must remain distinct even when packaged together.
 
 Scientific effect: none. This contract changes presentation and required coverage only; it does not modify Champion predictions, features, calibration, betting authority or market-source qualification.
+
+## Daily refresh requirement — 2026-09-29
+For an active football week, the user-facing Hot Sheet is a living downstream decision surface. Refresh it each operating day Tuesday through Saturday against the same accepted frozen Engine snapshot. Show material market movement, current qualified line/price, decision-state changes, WAIT trigger status, minimum acceptable number/price where established, and execution timing when governed evidence supports it.
+Append changes with timestamps/provenance; never overwrite earlier observations or decisions. A daily Hot Sheet refresh is presentation/market/decision work only and has no scientific/model effect.
