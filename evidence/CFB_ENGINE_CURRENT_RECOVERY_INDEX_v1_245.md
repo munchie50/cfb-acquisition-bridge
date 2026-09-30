@@ -2,6 +2,19 @@
 
 Current QA status (2026-09-29): **REAL TARGET-SIDE AND v4 SOURCE-CONTEXT CAPABILITIES ACCEPTED / PROSPECTIVE CADENCE WAIT.** Earlier dated statuses are retained as historical evidence; the final 2026-09-29 reconciliation governs the current frontier.
 
+
+## Current frontier quick-read — 2026-09-30
+This block is a navigation summary inside the existing authoritative recovery doorway; it does not replace the detailed evidence below.
+- Production Champion: v1.193 unchanged.
+- Production procedure: Routine v5; v6 remains candidate/test.
+- Whole-system QA: ACTIVE under `evidence/CFB_ENGINE_HOLISTIC_SYSTEM_QA_MAP_2026-09-30.md`.
+- QA Sandbox: S2_K1 remains study-only; prospective execution is not accepted or authorized merely by implementation readiness.
+- Weekly cadence: v1.247 Monday readiness / Tuesday candidate / Wednesday bounded fallback; generated candidate != accepted state.
+- Operational surfaces: market, decision/WAIT, execution and postgame ledgers remain canonical.
+- Current holistic open items: repaired S2_K1 consumer demonstration; execution-evidence ancestry reconciliation; natural weekly/Market Monitor/Health demonstrations.
+- Historical ACTIVE/NEXT text retained below is evidence; later dated reconciliations and this quick-read govern navigation, subject to the detailed authority chain.
+
+
 Status: **CURRENT ENTRY POINT — CFB BETA PRODUCTION CHAMPION ACTIVE**
 Date: 2026-09-28
 Supersedes v1.243 as the current entry point. Historical evidence remains preserved.
