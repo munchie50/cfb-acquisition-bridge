@@ -67,3 +67,17 @@ Boundary: this is a new prospective decision boundary after the 2026-09-28 persi
 
 Execution planning: no new casino trip is triggered by this refresh. Preserve the 1–2 trip/week portfolio objective; third trip requires a compelling documented reason.
 Next trigger: scheduled CFB Market Monitor plus Wednesday-Friday Evening Availability where applicable. Any material new availability/price information must append prospectively.
+
+
+## 2026-09-30 morning authorized-extra reconciliation
+Boundary: prospective only; linked to the 2026-09-30 authorized-extra market observation already persisted in CFB_MARKET_MONITOR_STATE.md. The incomplete 07:01 CT cycle is not reconstructed.
+Champion: v1.208 FIRST_FROZEN / v1.193 remains unchanged.
+
+- No new actionable wager state is established by this reconciliation.
+- Existing unresolved large model/market disagreements remain pending the previously required football, availability, and source reconciliation; raw disagreement alone does not establish action.
+- Maryland at Nebraska remains WAIT. Frozen Engine: Nebraska by 10.5205, total 56.0116. Current qualified consensus observation: Nebraska -14.5 (-112), total 52.0. No acceptable threshold is established by this append.
+- Vanderbilt at Georgia remains WAIT. Frozen Engine: Georgia by 24.5805, total 57.5598. Current qualified consensus observation: Georgia -24.5 (-109), total 51.0.
+- Portfolio execution posture is unchanged: no additional casino trip is triggered by this reconciliation.
+- No calibrated probability, EV, confidence, or threshold is inferred from market distance.
+
+Next trigger: governed reconciliation deadlines and the normal 13:00 CT Market Monitor.
