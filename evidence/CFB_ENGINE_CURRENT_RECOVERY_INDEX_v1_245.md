@@ -77,3 +77,11 @@ Authority: `CFB_ENGINE_FOOTBALL_WEEK_OPERATING_CADENCE_CONTRACT_v1_247.md`.
 The v1.216 seven-day/FIRST_FROZEN-anniversary timing is superseded prospectively as the operating dispatch clock; all v1.216 lineage and evidence rules remain.
 New planning rhythm (America/Chicago): Sunday postgame closure, Monday source readiness, Tuesday preferred qualified immutable S0/S2_K1 freeze, Wednesday bounded source/operational fallback, Thursday–Saturday downstream market/decision/execution work.
 Do not create an extra September 29 snapshot. The next normal cycle begins after the current Week 5 slate. Fresh preflight remains mandatory; no-op means create nothing. S2_K1 remains study-only and scientifically unchanged; Champion v1.193 and FIRST_FROZEN remain unchanged.
+
+
+## 2026-09-29 installed weekly automation
+v1.247 is now backed by recurring repository workflows:
+- Monday: `cfb_weekly_monday_source_readiness.yml` — source/preflight only, no predictions.
+- Tuesday: `cfb_weekly_tuesday_candidate_freeze.yml` — fresh same-cutoff raw boundary + complete S0 outputs + v4 context, explicitly NOT_ACCEPTED.
+- Wednesday: `cfb_weekly_wednesday_fallback.yml` — no-op after recent Tuesday success; otherwise one bounded Tuesday-workflow dispatch.
+Automated generation never equals acceptance. Fresh weekly candidate artifacts require independent reconciliation/persisted acceptance before downstream S2_K1 consumer use. The exact S2_K1 prediction consumer is not yet an accepted executable; do not fabricate it into automation. S2 outcome scoring remains separately gated.
