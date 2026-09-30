@@ -41,6 +41,7 @@ guarded_steps = [
     "Fetch frozen Champion fit",
     "Run accepted S0 refresh producer",
     "Run accepted v4 source-context producer",
+    "Run S2_K1 target-baseline candidate companion",
     "Retain complete candidate boundary",
 ]
 for step in guarded_steps:
