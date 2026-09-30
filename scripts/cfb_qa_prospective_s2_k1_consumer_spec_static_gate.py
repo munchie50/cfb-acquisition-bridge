@@ -15,6 +15,8 @@ required=[
  "margin 0.1; total 0.1; win 0.01",
  "same-cutoff",
  "independently accepted weekly boundary",
+ "independently accepted target-baseline companion",
+ "B_F(target cutoff)",
  "Unused source schedule metadata",
  "winner/rank fields",
  "Outcome scoring remains separately gated",
