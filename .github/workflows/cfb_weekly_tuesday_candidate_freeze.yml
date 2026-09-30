@@ -1,0 +1,109 @@
+name: CFB Weekly Tuesday Candidate Freeze
+
+on:
+  schedule:
+    # 15:00 UTC = 10:00 CT while CDT is active. Actual cutoff is captured in UTC.
+    - cron: '0 15 * * 2'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: cfb-weekly-tuesday-candidate-freeze
+  cancel-in-progress: false
+
+jobs:
+  candidate-freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --disable-pip-version-check pandas numpy pyarrow pyreadr
+      - name: Recover cadence and implementation authority
+        run: |
+          set -euo pipefail
+          grep -q "TUESDAY — preferred weekly immutable model freeze" evidence/CFB_ENGINE_FOOTBALL_WEEK_OPERATING_CADENCE_CONTRACT_v1_247.md
+          echo "62784e62d49e92b11a069792f8c8c14def0e9e7bc9eb7a00b4793b95f1a8ebfd  scripts/phase4_challenger_b_2026_refresh_predict_v1_246.py" | sha256sum -c -
+          echo "8500b5365ccc374105156106501f2335be80de4bde7d97bb82fe3c47cc92c1f0  scripts/cfb_qa_s2_k1_source_context_companion_v4_2026_09_29.py" | sha256sum -c -
+      - name: Acquire and preflight one fresh same-cutoff boundary
+        run: |
+          set -euo pipefail
+          mkdir -p raw preflight s0 context package/raw package/s0 package/context
+          curl --fail --location --retry 3 -o raw/cfb_schedules_2026.parquet "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_2026.parquet"
+          curl --fail --location --retry 3 -o raw/pbp_2026.rds "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2026.rds"
+          test -s raw/cfb_schedules_2026.parquet
+          test -s raw/pbp_2026.rds
+          python scripts/phase4_challenger_b_2026_refresh_source_preflight_v1_217.py raw/cfb_schedules_2026.parquet raw/pbp_2026.rds preflight
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=json.loads(Path("preflight/preflight_v1_217.json").read_text())
+          assert r["status"]=="PASS_REFRESH_SOURCE_PREFLIGHT"
+          assert r["future_at_cutoff"]>0, "weekly no-op: no future targets"
+          Path("cutoff.txt").write_text(r["cutoff_utc"])
+          print("CFB_WEEKLY_TUESDAY_PREFLIGHT_PASS",r["cutoff_utc"],r["future_at_cutoff"])
+          PY
+      - name: Fetch frozen Champion fit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh api repos/munchie50/cfb-acquisition-bridge/actions/artifacts/10895838069/zip > fit.zip
+          echo "3a2cabfcd37e0bcf0cae85efc77eaa6755ffb12734d1e48c4c582ed1de375587  fit.zip" | sha256sum -c -
+          mkdir fit
+          unzip -q fit.zip -d fit
+          find fit -name selected_coefficients.csv -print -quit | xargs dirname > fitpath.txt
+      - name: Run accepted S0 refresh producer
+        run: |
+          set -euo pipefail
+          python scripts/phase4_challenger_b_2026_refresh_predict_v1_246.py preflight/challenger_b_2026_future_target_projection_v1_217.csv raw/cfb_schedules_2026.parquet raw/pbp_2026.rds "$(cat fitpath.txt)" s0 "$(cat cutoff.txt)"
+          test -s s0/challenger_b_2026_refresh_team_side_substrate_v1_246.csv
+      - name: Run accepted v4 source-context producer
+        run: |
+          set -euo pipefail
+          python scripts/cfb_qa_s2_k1_source_context_companion_v4_2026_09_29.py preflight/challenger_b_2026_future_target_projection_v1_217.csv raw/cfb_schedules_2026.parquet raw/pbp_2026.rds s0/challenger_b_2026_refresh_team_side_substrate_v1_246.csv context "$(cat cutoff.txt)"
+          test -s context/source_context.csv
+          test -s context/manifest.json
+      - name: Retain complete candidate boundary
+        run: |
+          set -euo pipefail
+          cp raw/* package/raw/
+          cp preflight/* package/raw/
+          cp s0/* package/s0/
+          cp context/* package/context/
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          root=Path("package")
+          files=[p for p in root.rglob("*") if p.is_file()]
+          pre=json.loads(Path("preflight/preflight_v1_217.json").read_text())
+          cm=json.loads(Path("context/manifest.json").read_text())
+          assert cm["status"]=="EXECUTED_NOT_ACCEPTED"
+          assert cm["s2_predictions_produced"] is False
+          assert cm["target_outcomes_joined"] is False
+          assert cm["market_joined"] is False
+          m={
+            "status":"WEEKLY_CANDIDATE_BOUNDARY_NOT_ACCEPTED",
+            "cutoff_utc":pre["cutoff_utc"],
+            "future_at_cutoff":pre["future_at_cutoff"],
+            "s0_producer_sha256":"62784e62d49e92b11a069792f8c8c14def0e9e7bc9eb7a00b4793b95f1a8ebfd",
+            "source_context_producer_sha256":"8500b5365ccc374105156106501f2335be80de4bde7d97bb82fe3c47cc92c1f0",
+            "files":{str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(files)},
+            "scientific_acceptance":False,
+            "s2_predictions_produced":False,
+            "target_outcomes_joined":False,
+            "market_joined":False
+          }
+          (root/"CFB_WEEKLY_CANDIDATE_BOUNDARY_MANIFEST.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
+          print("CFB_WEEKLY_TUESDAY_CANDIDATE_BOUNDARY_READY_NOT_ACCEPTED",pre["cutoff_utc"],len(files))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-weekly-tuesday-candidate-boundary
+          path: package/
+          retention-days: 90
