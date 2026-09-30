@@ -194,3 +194,11 @@ The consumer was therefore NOT constructed. See `CFB_QA_PROSPECTIVE_S2_K1_TARGET
 The consumer specification and its static gate were corrected to require a separately accepted same-cutoff target-baseline companion. Accepted v4 remains unchanged. This is substrate exposure of an already-frozen equation, not a formula/mapping/k/science change.
 
 Next safe independent work: construct and structurally validate the target-baseline companion using the frozen pooled-baseline semantics. Frontier remains CADENCE WAIT.
+
+
+## 2026-09-30 target-baseline v1 / rest_days blocker
+The target-baseline companion executable now reproduces the frozen pooled-baseline rules for the 16 primitive-backed features from the accepted v4 primitive surfaces. Construction exposed one remaining ancestry dependency: `rest_days` has no primitive numerator/denominator pair and its frozen baseline requires the mean of valid strictly-prior pregame rest intervals.
+
+The accepted v4 package does not retain that feature-history surface, and future v1.246 target rows cannot legitimately substitute for it. The v1 companion therefore fails closed with `TARGET_BASELINE_BLOCKED_REST_DAYS_HISTORY_SURFACE_REQUIRED`; no baseline artifact or S2 prediction is accepted.
+
+See `CFB_QA_S2_K1_TARGET_BASELINE_V1_READINESS_2026-09-30.md`. Next safe work is executable-ancestry recovery for the strictly-prior rest_days feature-history surface, not formula modification. Frontier remains CADENCE WAIT.
