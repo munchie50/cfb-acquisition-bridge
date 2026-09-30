@@ -43,3 +43,24 @@ Scientific effect: none. This contract changes presentation and required coverag
 ## Daily refresh requirement — 2026-09-29
 For an active football week, the user-facing Hot Sheet is a living downstream decision surface. Refresh it each operating day Tuesday through Saturday against the same accepted frozen Engine snapshot. Show material market movement, current qualified line/price, decision-state changes, WAIT trigger status, minimum acceptable number/price where established, and execution timing when governed evidence supports it.
 Append changes with timestamps/provenance; never overwrite earlier observations or decisions. A daily Hot Sheet refresh is presentation/market/decision work only and has no scientific/model effect.
+
+
+## Chronological Next-Up presentation — 2026-09-29
+The Hot Sheet must prioritize what requires attention next without hiding the rest of the slate.
+
+At the top of every active-week Hot Sheet, render chronological NEXT-UP sections using America/Chicago kickoff time:
+1. THURSDAY — all governed relevant games scheduled Thursday, regardless of normal Hot Sheet rank;
+2. FRIDAY — all governed relevant games scheduled Friday, regardless of normal Hot Sheet rank;
+3. SATURDAY MORNING — all governed Saturday games with kickoff before 12:00 CT;
+4. SATURDAY AFTERNOON — all governed Saturday games with kickoff from 12:00 through 16:59 CT;
+5. SATURDAY EVENING/NIGHT — all governed Saturday games with kickoff at or after 17:00 CT.
+
+Within each section, order by kickoff then game identity. Show at minimum: kickoff CT; Engine Prediction (Frozen) fair spread; frozen projected total and win probability when earned; current qualified market/price; movement from first qualified observation when available; current decision state; pending information/reason; reconciliation deadline; established acceptable number/price if any; and realistic execution window.
+
+The earliest still-active chronological section is visually the primary NEXT-UP section. Completed/started games must leave active decision sections and may move to historical/settlement presentation; never re-decide them.
+
+After the chronological NEXT-UP sections, retain a PRIORITY WATCHLIST for the most decision-relevant opportunities regardless of kickoff day, then retain the complete FULL WEEKLY SLATE. A game may appear in both NEXT-UP and PRIORITY WATCHLIST for usability, but both displays must reference the same canonical decision/market state rather than create duplicate baselines.
+
+Use the label **Engine Prediction (Frozen)** instead of ambiguous shorthand such as **Frozen Engine** where practical. This means the Engine's locked fair prediction, never the first/current sportsbook line.
+
+This presentation change must not change Hot Sheet ownership, model inputs, prediction values, market chronology, or scientific authority.
