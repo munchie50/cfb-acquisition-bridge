@@ -140,3 +140,11 @@ Correction persisted in `CFB_QA_WEEKLY_SOURCE_STATE_NOOP_GATE_CORRECTION_2026-09
 The operational pointer `evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json` is initialized from accepted v1.208/v1.218 source identities and may advance only after a later prediction boundary is independently accepted and persisted. Tuesday now exits as a successful no-op before Champion-fit/S0/context execution when source identities are unchanged or no future targets remain.
 
 Scientific frontier remains CADENCE WAIT. No workflow was dispatched, no prediction generated, no S2 consumer built, no 2025 TEST accessed, and Champion remains unchanged. Real-path demonstration of the installed trigger is pending the next normal Tuesday run.
+
+
+## 2026-09-30 weekly no-op regression guard
+Routine WAIT-sweep follow-through added a dedicated static regression guard for the accepted-source no-op correction. See `CFB_QA_WEEKLY_SOURCE_STATE_NOOP_REGRESSION_GUARD_2026-09-30.md`.
+
+The guard fails if the accepted-source pointer loses required governance/source identities, if Tuesday stops comparing fresh schedule/PBP identities with the accepted pointer, or if Champion-fit/S0/context/package/upload work becomes unconditional. It is wired to changes in the Tuesday workflow, pointer, guard script, and guard workflow.
+
+Static repository readback is verified. Runtime execution is not claimed because the available connector run helper exposes PR-triggered runs only and returned no proof for the push-triggered workflow. Frontier remains CADENCE WAIT; no operational snapshot or scientific evidence was created.
