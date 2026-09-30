@@ -118,3 +118,18 @@ FIX -> VERIFY PRODUCER -> DEMONSTRATE -> RECONCILE -> CLOSE
 
 ## Candidate evaluation
 Test this candidate first against existing real CFB operational/rebuild evidence. Do not promote it to production/master routine until demonstrated across materially different cases and explicitly authorized under routine governance.
+
+
+## 10. Routine-Control Demonstration Record
+Whenever a new or modified routine control is under test, successful use alone is not sufficient to mark it DEMONSTRATED. The test must explicitly surface and persist, in a bounded demonstration record or appropriate existing checkpoint:
+- trigger / starting state;
+- expected control behavior;
+- actual observed behavior;
+- work, defect or risk detected/prevented;
+- expected-vs-actual reconciliation;
+- demonstration result;
+- remaining debt and natural next trigger, if any.
+
+The demonstration record must distinguish USING a control from PROVING the control behaved as intended. A control cannot receive DEMONSTRATED status from implicit success.
+
+When authentic evidence already exists, use it; do not rerun operational work solely to make the demonstration visible.
