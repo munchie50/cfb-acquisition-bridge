@@ -148,3 +148,11 @@ Routine WAIT-sweep follow-through added a dedicated static regression guard for 
 The guard fails if the accepted-source pointer loses required governance/source identities, if Tuesday stops comparing fresh schedule/PBP identities with the accepted pointer, or if Champion-fit/S0/context/package/upload work becomes unconditional. It is wired to changes in the Tuesday workflow, pointer, guard script, and guard workflow.
 
 Static repository readback is verified. Runtime execution is not claimed because the available connector run helper exposes PR-triggered runs only and returned no proof for the push-triggered workflow. Frontier remains CADENCE WAIT; no operational snapshot or scientific evidence was created.
+
+
+## 2026-09-30 Wednesday fallback cycle binding
+Routine chain review found that Wednesday's original 36-hour success test could let a manual/test Tuesday run suppress the normal weekly fallback. The correction is persisted in `CFB_QA_WEDNESDAY_FALLBACK_CYCLE_BINDING_CORRECTION_2026-09-30.md`.
+
+Wednesday now accepts only a successful scheduled Tuesday run from the immediately preceding UTC calendar day as the weekly disposition. Otherwise it dispatches the bounded Tuesday fallback once. A dedicated static regression gate protects that binding and rejects restoration of the broad 36-hour rule.
+
+The same review confirmed Monday readiness and Tuesday reacquisition are intentionally separate: Monday proves readiness; Tuesday must capture the actual immutable candidate cutoff with freshly qualified same-cutoff raw bytes. Frontier remains CADENCE WAIT; runtime demonstration is pending normal schedule.
