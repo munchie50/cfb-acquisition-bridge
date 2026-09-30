@@ -1,0 +1,22 @@
+name: CFB QA Wednesday Fallback Static Gate
+
+on:
+  push:
+    paths:
+      - '.github/workflows/cfb_weekly_wednesday_fallback.yml'
+      - '.github/workflows/cfb_qa_weekly_wednesday_fallback_static_gate.yml'
+      - 'scripts/cfb_qa_weekly_wednesday_fallback_static_gate.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/cfb_qa_weekly_wednesday_fallback_static_gate.py
