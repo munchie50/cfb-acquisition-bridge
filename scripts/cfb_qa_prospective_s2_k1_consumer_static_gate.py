@@ -16,10 +16,11 @@ required=[
  '"wager_or_execution_joined":False',
  '"protected_2025_test_opened":False',
  '"fit_or_optimization_performed":False',
- 'S2_K1_CONSUMER_ROLE_VENUE_INTERFACE_REQUIRED',
+ 'role=S[["game_id","side","team"]].merge(G[["game_id","home_team","away_team","neutral_site"]]',
+ 'venue["venue_state"]=np.where(venue.neutral_site.map(neutral_state),"NEUTRAL","HOME")',
 ]
 for x in required: assert x in p, f"missing S2_K1 invariant: {x}"
-for forbidden in ("pyreadr","read_parquet","cfb_schedules_2026","pbp_2026","k={1,2,4,8}"):
+for forbidden in ("pyreadr","read_parquet","cfb_schedules_2026","pbp_2026","S2_K1_CONSUMER_ROLE_VENUE_INTERFACE_REQUIRED","k={1,2,4,8}"):
     assert forbidden not in p, f"consumer reopened forbidden/raw surface: {forbidden}"
 assert p.count("s2=s1+") == 1
 print("PASS_PROSPECTIVE_S2_K1_CONSUMER_STATIC_GATE")
