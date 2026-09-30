@@ -176,3 +176,11 @@ The preparer requires a later-cutoff PASS acceptance with independent recomputat
 Required order is now explicit: candidate → independent audit → persisted/read-back acceptance → pointer preparation → separate canonical pointer write → direct pointer readback. See `CFB_QA_ACCEPTED_SOURCE_POINTER_ADVANCEMENT_READINESS_2026-09-30.md`.
 
 Current pointer remains unchanged at v1.208/v1.218. Frontier remains CADENCE WAIT.
+
+
+## 2026-09-30 prospective S2_K1 consumer specification freeze
+Routine S2 handoff review confirmed the historical Sandbox generator cannot be reused directly for prospective execution because it is bound to the historical 2016–2024 population/cardinalities. The accepted v4 source-context capability plus accepted weekly S0 boundary are the correct prospective substrate.
+
+`CFB_QA_PROSPECTIVE_S2_K1_CONSUMER_SPEC_2026-09-30.md` now freezes the future consumer interface/mechanics before live execution: exact k=1, frozen ten-feature mapping, seven S1-only features, same-cutoff accepted S0+v4 inputs, explicit field allowlist, no unused winner/rank metadata, fail-closed eligibility, frozen history-depth slices, v1.193 scaling/coefficients, separate S2 artifact, and pre-outcome freeze/readback gate.
+
+A static gate rejects prospective k-grid expansion and loss of the chronology/contamination/output locks. No consumer prediction was generated and actual execution remains gated on the next independently accepted weekly S0 plus same-cutoff accepted v4 context boundary. Frontier remains CADENCE WAIT.
