@@ -70,3 +70,10 @@ Current disposition: ACCEPTED QA INPUT CAPABILITIES / S2_K1 STILL STUDY-ONLY / C
 v1.246 and source-context infrastructure gates are closed for these retained bytes. Do not blindly rerun earlier pending dependencies. Original historical raw-byte replay limitation remains.
 Next: at the next v1.216 weekly cadence, requalify source state and determine refresh/no-op before constructing/producing a prospective S2 consumer. September 29 is within the cycle anchored by September 26 FIRST_FROZEN; no exception is authorized here. Structural QA runs do not constitute an operational prospective refresh.
 No-op means no manufactured snapshot. Qualified consumer/freeze must remain exact k=1, use same-cutoff accepted boundaries, whitelist frozen input fields, freeze deterministic history-depth slices, and remain separate from S0. Outcome scoring remains separately gated. Champion unchanged.
+
+
+## 2026-09-29 prospective football-week cadence correction — v1.247
+Authority: `CFB_ENGINE_FOOTBALL_WEEK_OPERATING_CADENCE_CONTRACT_v1_247.md`.
+The v1.216 seven-day/FIRST_FROZEN-anniversary timing is superseded prospectively as the operating dispatch clock; all v1.216 lineage and evidence rules remain.
+New planning rhythm (America/Chicago): Sunday postgame closure, Monday source readiness, Tuesday preferred qualified immutable S0/S2_K1 freeze, Wednesday bounded source/operational fallback, Thursday–Saturday downstream market/decision/execution work.
+Do not create an extra September 29 snapshot. The next normal cycle begins after the current Week 5 slate. Fresh preflight remains mandatory; no-op means create nothing. S2_K1 remains study-only and scientifically unchanged; Champion v1.193 and FIRST_FROZEN remain unchanged.
