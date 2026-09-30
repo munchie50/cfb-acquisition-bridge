@@ -1,0 +1,19 @@
+name: CFB QA S2_K1 Target Baseline Static Gate
+on:
+  push:
+    paths:
+      - 'scripts/cfb_qa_s2_k1_target_baseline_companion_v1_2026_09_30.py'
+      - 'scripts/cfb_qa_s2_k1_target_baseline_static_gate.py'
+      - '.github/workflows/cfb_qa_s2_k1_target_baseline_static_gate.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/cfb_qa_s2_k1_target_baseline_static_gate.py
