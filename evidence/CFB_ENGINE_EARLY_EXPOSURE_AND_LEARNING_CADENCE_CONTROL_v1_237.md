@@ -52,3 +52,28 @@ Observation and controlled prospective use are legitimate ways to learn when aut
 Weekly Beta Review must identify: newly exposed candidate layers; their maturity state; outputs produced; confidence/uncertainty; what was learned; layers still hidden; exact reason each remains hidden; and the next evidence/action required to expose it.
 
 Scientific effect: none by itself. This control accelerates transparent prospective learning while preserving existing model, evidence, calibration and promotion boundaries.
+
+## Kickoff-window reconciliation deadlines — 2026-09-29
+INCONCLUSIVE is a temporary investigation state, not an indefinite destination. Every INCONCLUSIVE game must carry a prospective reconciliation deadline tied to its kickoff window and practical execution needs.
+
+Default America/Chicago deadline windows:
+- THURSDAY games: reconcile by the final scheduled Market Monitor pass that leaves a practical pre-kickoff execution opportunity; if the ordinary 13:00 CT pass is safely pre-kickoff, use it as the default decision deadline, otherwise use the last earlier governed pass.
+- FRIDAY games: default reconciliation deadline Friday 13:00 CT, unless kickoff/execution constraints require an earlier governed pass.
+- SATURDAY MORNING games (kickoff before 12:00 CT): default reconciliation deadline Friday evening availability review; if no Friday evening run is applicable, use the last Friday Market Monitor pass.
+- SATURDAY AFTERNOON games (12:00–16:59 CT): default reconciliation deadline Saturday 07:00 CT Market Monitor.
+- SATURDAY EVENING/NIGHT games (17:00 CT or later): default reconciliation deadline Saturday 13:00 CT Market Monitor.
+
+These are decision-reconciliation deadlines, not automatic bet triggers and not promises that a particular sportsbook remains executable. A game-specific earlier deadline must be used when kickoff, travel, sportsbook access, line availability, or the portfolio execution plan makes the default too late.
+
+At the reconciliation deadline:
+- INCONCLUSIVE may not simply roll forward because research remains imperfect.
+- If governed evidence supports action, transition prospectively to BET NOW or other earned actionable state.
+- If a specific unresolved condition can still mature before a genuine later execution cutoff, WAIT is allowed only with an explicit trigger, opportunity at risk, next review, and hard final execution cutoff.
+- If evidence is insufficient to justify action and no governed WAIT condition remains, transition to PASS.
+- Never force a bet merely to eliminate INCONCLUSIVE.
+
+At the game's final practical execution cutoff, WAIT must resolve to an earned actionable state or PASS. Preserve every transition append-only; never rewrite the earlier INCONCLUSIVE/WAIT record.
+
+Decision deadlines must coordinate with the portfolio objective of roughly 1–2 casino trips per week. Kickoff windows organize research and decision maturity; they do not independently create five execution trips.
+
+Scientific effect: none. This is downstream decision-cadence governance only and cannot alter frozen Engine predictions or admit market/injury/wager/outcome information into the model.
