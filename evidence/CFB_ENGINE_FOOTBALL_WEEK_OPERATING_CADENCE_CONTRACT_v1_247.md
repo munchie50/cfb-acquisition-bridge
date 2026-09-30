@@ -64,3 +64,14 @@ Any future cadence change must again be prospective and documented.
 ## Immediate frontier
 The previous CADENCE WAIT tied to the September 26 seven-day anniversary is superseded as an operating-time constraint by this contract.
 Do not create an extra September 29 snapshot merely because this contract exists. The next target is the next normal early-week cycle after the current Week 5 slate, beginning with Sunday postgame closure / Monday source readiness and a preferred Tuesday qualified freeze.
+
+
+## Installed recurring automation — 2026-09-29
+Repository automation now implements the early-week readiness/candidate portion of this contract:
+- `.github/workflows/cfb_weekly_monday_source_readiness.yml`: scheduled Monday source acquisition + v1.217 no-prediction preflight; retains exact source bytes/preflight package; never predicts.
+- `.github/workflows/cfb_weekly_tuesday_candidate_freeze.yml`: scheduled Tuesday fresh same-cutoff boundary; locks accepted v1.246/v4 executable bytes and frozen Champion fit; retains raw/preflight plus COMPLETE S0 output directory plus v4 context output; package status is WEEKLY_CANDIDATE_BOUNDARY_NOT_ACCEPTED.
+- `.github/workflows/cfb_weekly_wednesday_fallback.yml`: scheduled Wednesday check; no-op after a successful recent Tuesday run, otherwise dispatches one bounded rerun of the Tuesday candidate workflow.
+
+Automation does not self-accept scientific or operational evidence. Every new candidate package still requires independent artifact/hash/count/chronology/manifest reconciliation and persisted acceptance before downstream S2_K1 prediction-consumer use.
+The exact S2_K1 prediction consumer is not yet an accepted executable and is therefore deliberately not fabricated into the scheduler. Its construction/static gate remains the next authorized implementation dependency after a fresh weekly S0/context boundary is independently accepted.
+S2 outcome scoring remains separately authorized and is not scheduled here.
