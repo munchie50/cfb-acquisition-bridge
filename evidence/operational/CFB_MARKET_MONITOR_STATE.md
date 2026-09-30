@@ -69,3 +69,38 @@ Current priority observations:
 Coverage repair: current broad Week 5 board now displays qualified lines for the three games that were NOT_YET_AVAILABLE in the 2026-09-27 sweep: UTSA at Rice (UTSA -11.5, total 54.5), Utah State at Boise State (Boise State -20.5, total 51.5), and Arkansas State at Louisiana (Louisiana -6.5, total 47.5). These are current 2026-09-29 observations only; they are not backfilled as Sunday/Monday observations.
 
 Interpretation: current market disagreement remains an investigation/decision-prioritization signal only. No market data entered the frozen Champion. No missing Monday line was reconstructed.
+
+
+## User-authorized extra prospective capture — 2026-09-30 ~07:12 CT
+Observation class: INTERMEDIATE / USER_AUTHORIZED_EXTRA.
+Boundary: new prospective observation only; the incomplete 07:01 CT scheduled cycle is not reconstructed.
+Source semantics: FantasyData NCAA Football Odds Week 5 consensus board retrieved live during this cycle; CBS Sports Week 5 FBS scoreboard independently cross-checked for broad board presence and selected lines. Champion remains v1.208 FIRST_FROZEN / v1.193 accepted Beta Champion; market information is downstream only.
+
+Full relevant-FBS board coverage: current spread/total consensus was available for all 47 FBS-vs-FBS FIRST_FROZEN Week 5 games. FBS-vs-FCS rows displayed by the source were excluded from this governed relevant-FBS comparison.
+
+Priority/current observations:
+- Western Kentucky at New Mexico State: WKU +2.5 (-107), NMSU -2.5 (-113), total 57.5.
+- North Texas at Tulsa: North Texas +1.0 (-112), Tulsa -1.0 (-110), total 57.5. CBS broad benchmark displayed Tulsa -1.5.
+- Pittsburgh at Virginia Tech: Pitt +3.5 (-117), Virginia Tech -3.5 (-106), total 55.0.
+- Liberty at Delaware: Liberty -7.0 (-114), Delaware +7.0 (-108), total 50.0.
+- Penn State at Northwestern: Penn State -2.5 (-114), Northwestern +2.5 (-108), total 45.5.
+- Alabama at Mississippi State: Alabama -6.0 (-110), Mississippi State +6.0 (-112), total 60.0. CBS broad benchmark displayed Alabama -5.5 / total 60.5 during this research window.
+- Michigan at Minnesota: Michigan -5.5 (-111), Minnesota +5.5 (-111), total 43.5.
+- Syracuse at UConn: Syracuse -6.5 (-110), UConn +6.5 (-110), total 50.5.
+- Notre Dame at North Carolina: Notre Dame -21.0 (-110), North Carolina +21.0 (-110), total 47.0.
+- Vanderbilt at Georgia: Vanderbilt +24.5 (-114), Georgia -24.5 (-109), total 51.0.
+- Old Dominion at Georgia State: Old Dominion +2.5 (-112), Georgia State -2.5 (-107), total 51.5.
+- Memphis at Charlotte: Memphis -20.5 (-110), Charlotte +20.5 (-112), total 52.5.
+- Ohio State at Iowa: Ohio State -14.5 (-108), Iowa +14.5 (-115), total 45.5.
+- Eastern Michigan at Massachusetts: EMU +6.5 (-111), UMass -6.5 (-109), total 48.5.
+- Marshall at James Madison: Marshall +18.5 (-110), JMU -18.5 (-111), total 56.5.
+- Maryland at Nebraska: Maryland +14.5 (-110), Nebraska -14.5 (-112), total 52.0.
+- Kentucky at South Carolina: Kentucky +3.0 (-115), South Carolina -3.0 (-107), total 53.5.
+- Texas Tech at Colorado: Texas Tech -13.0 (-110), Colorado +13.0 (-110), total 50.5.
+- UTSA at Rice: UTSA -11.5 (-111), Rice +11.5 (-110), total 55.5.
+- Utah State at Boise State: Utah State +20.5 (-111), Boise State -20.5 (-111), total 51.5.
+- Arkansas State at Louisiana: Arkansas State +6.5 (-108), Louisiana -6.5 (-113), total 47.5.
+
+The remaining relevant-FBS games were also present on the same current consensus board; this cycle establishes current broad-board availability without inventing exact frozen-model comparisons not recovered into the user-facing render.
+
+No market observation altered Champion/model state.
