@@ -1,0 +1,24 @@
+name: CFB QA Weekly Source-State No-Op Static Gate
+
+on:
+  push:
+    paths:
+      - '.github/workflows/cfb_weekly_tuesday_candidate_freeze.yml'
+      - '.github/workflows/cfb_qa_weekly_source_state_noop_static_gate.yml'
+      - 'evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json'
+      - 'scripts/cfb_qa_weekly_source_state_noop_static_gate.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Enforce accepted-source no-op control
+        run: python scripts/cfb_qa_weekly_source_state_noop_static_gate.py
