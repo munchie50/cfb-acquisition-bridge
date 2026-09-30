@@ -156,3 +156,13 @@ Routine chain review found that Wednesday's original 36-hour success test could 
 Wednesday now accepts only a successful scheduled Tuesday run from the immediately preceding UTC calendar day as the weekly disposition. Otherwise it dispatches the bounded Tuesday fallback once. A dedicated static regression gate protects that binding and rejects restoration of the broad 36-hour rule.
 
 The same review confirmed Monday readiness and Tuesday reacquisition are intentionally separate: Monday proves readiness; Tuesday must capture the actual immutable candidate cutoff with freshly qualified same-cutoff raw bytes. Frontier remains CADENCE WAIT; runtime demonstration is pending normal schedule.
+
+
+## 2026-09-30 generic weekly REFRESH_SNAPSHOT acceptance readiness
+Routine acceptance-path review found that the existing v1.207 independent acceptance audit is FIRST_FROZEN-specific and cannot accept a normal v1.246 REFRESH_SNAPSHOT. The next weekly candidate therefore lacked a generic independent acceptance executable.
+
+`scripts/cfb_qa_weekly_refresh_acceptance.py` now supplies that bridge without self-acceptance. It requires the complete retained v1.246 S0 package, independently verifies population/chronology/model identity/output hashes, recomputes predictions, and emits exact raw schedule/PBP hashes for a later accepted-source pointer advance.
+
+A static regression gate rejects FIRST_FROZEN fixed counts/artifact IDs in the generic audit. The audit is deliberately not wired to candidate generation; actual weekly bytes must still be independently recovered, audited, accepted, persisted and read back before pointer advancement or S2_K1 consumer execution.
+
+See `CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_READINESS_2026-09-30.md`. Frontier remains CADENCE WAIT.
