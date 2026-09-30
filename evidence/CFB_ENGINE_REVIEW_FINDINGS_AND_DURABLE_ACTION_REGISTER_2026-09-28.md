@@ -48,3 +48,46 @@ For each open action:
 - record demonstration evidence before classifying the lesson LEARNED.
 
 This register is an action/review record, not authorization for outcome access, model tuning, Champion mutation, Challenger promotion, destructive cleanup, or retrospective manufacture of missing pre-event evidence.
+
+
+## Scheduler/output ownership incident review — 2026-09-29
+
+### Incident
+The governed Hot Sheet existed and was successfully produced on the 2026-09-27 Sunday Market run, but its continuing in-week refresh responsibility became operationally orphaned.
+
+### Evidence chain
+1. The 2026-09-27 13:13 CT Sunday Market run completed the 47-game Week 5 sweep, persisted market and decision state, created the Sunday Early Board, and explicitly named continued scheduled market monitoring/deeper reconciliation as the next safe action.
+2. The 2026-09-28 07:00 CT Market Monitor found material fresh Week 5 information but canonical mutation was blocked. It correctly terminated RUN_INCOMPLETE and explicitly required prospective persistence plus rerun of the Early Board/Hot Sheet completion gate.
+3. The failed Monday observation itself remains non-authoritative and must not be reconstructed.
+4. During later scheduler consolidation the CFB Market Monitor was paused while other tasks retained only partial market/availability/health responsibilities. No control verified that the Hot Sheet's end-to-end owner had become disabled.
+5. The result was not loss of the frozen model or canonical Sunday evidence. It was loss of continuing output ownership: ingredients continued to exist, but no enabled task was explicitly responsible for assembling and delivering the governed Hot Sheet through Saturday.
+
+### Root cause classification
+- PRIMARY: scheduler/output ownership gap during task consolidation.
+- CONTRIBUTING: Monday persistence failure left an explicit recovery action pending.
+- CONTRIBUTING: task prompts overlapped on market/availability/health but did not define producer-vs-consumer ownership clearly enough.
+- CONTRIBUTING: prior Hot Sheet delivery wording emphasized Sunday/Monday instead of an explicit daily through-Saturday refresh requirement.
+- NOT CAUSAL: Champion/model failure, prediction contamination, or loss of FIRST_FROZEN evidence.
+
+### Corrections installed
+- CFB Market Monitor restored as the sole primary Hot Sheet producer and runs 07:00/13:00 CT Sunday-Saturday.
+- Active output contract now explicitly requires daily Hot Sheet refresh through Saturday.
+- Evening Availability is downstream incremental availability/wager management and must persist material changes for the next Market Monitor; it does not own a competing Hot Sheet.
+- Dual Engine Health is an integrity/readback layer and must detect failed/incomplete prerequisite runs rather than silently duplicate them.
+- Dual Weekly Engine QA consumes the latest Hot Sheet/market/decision state for Saturday/Sunday CFB QA; Tuesday CFB model/data candidate generation remains repository-automation owned.
+- Stale fixed recovery-version anchors were removed from the four active task prompts; each must discover current repository authority.
+
+### Durable control — required for future scheduler/cadence changes
+Any enable/disable, schedule change, consolidation, split, rename, or responsibility transfer involving an operational task must perform an OUTPUT OWNERSHIP / COVERAGE CHECK before the change is considered complete:
+1. enumerate required recurring outputs and governed surfaces;
+2. identify exactly one primary producer/owner for each output and any downstream consumers;
+3. verify every required owner remains enabled on a cadence capable of meeting the active contract;
+4. verify dependency order and avoid competing baselines;
+5. inspect unresolved RUN_INCOMPLETE/RUN_FAIL receipts whose next-safe-action depends on the changed task;
+6. after mutation, re-enumerate active tasks and prove no required output is orphaned;
+7. preserve one intentionally open task slot when the user's four-active-task operating constraint applies.
+
+A scheduler consolidation is not complete merely because the desired number of tasks is active. Coverage and ownership must also pass.
+
+### Disposition
+CORRECTED / DEMONSTRATION PENDING. The structural correction is installed in task ownership and prompts. Demonstration requires successful prospective Market Monitor runs that persist/read back current state and surface the Hot Sheet under the corrected cadence. Do not mark LEARNED until demonstrated.
