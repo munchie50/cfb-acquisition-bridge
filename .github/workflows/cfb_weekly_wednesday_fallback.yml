@@ -24,20 +24,24 @@ jobs:
         run: |
           set -euo pipefail
           python - <<'PY'
-          import json,subprocess,datetime,sys
-          cmd=["gh","run","list","--workflow","cfb_weekly_tuesday_candidate_freeze.yml","--limit","10","--json","databaseId,status,conclusion,createdAt,event"]
+          import json,subprocess,datetime,sys,os
+          cmd=["gh","run","list","--workflow","cfb_weekly_tuesday_candidate_freeze.yml","--limit","20","--json","databaseId,status,conclusion,createdAt,event"]
           runs=json.loads(subprocess.check_output(cmd,text=True))
           now=datetime.datetime.now(datetime.timezone.utc)
-          recent=[]
+          # Scheduled Wednesday fallback may only be satisfied by the immediately
+          # preceding Tuesday's scheduled disposition. Manual/test Tuesday runs
+          # never suppress the normal fallback.
+          target_date=(now-datetime.timedelta(days=1)).date()
+          scheduled=[]
           for r in runs:
               t=datetime.datetime.fromisoformat(r["createdAt"].replace("Z","+00:00"))
-              if now-t <= datetime.timedelta(hours=36):
-                  recent.append(r)
-          ok=any(r["status"]=="completed" and r["conclusion"]=="success" for r in recent)
+              if r["event"]=="schedule" and t.date()==target_date:
+                  scheduled.append(r)
+          ok=any(r["status"]=="completed" and r["conclusion"]=="success" for r in scheduled)
           if ok:
-              print("CFB_WEEKLY_WEDNESDAY_FALLBACK_NOOP_TUESDAY_SUCCESS")
+              print("CFB_WEEKLY_WEDNESDAY_FALLBACK_NOOP_PRECEDING_TUESDAY_SCHEDULE_SUCCESS",target_date)
               sys.exit(0)
-          print("CFB_WEEKLY_WEDNESDAY_FALLBACK_REQUIRED")
+          print("CFB_WEEKLY_WEDNESDAY_FALLBACK_REQUIRED",target_date,"scheduled_candidates",len(scheduled))
           subprocess.check_call(["gh","workflow","run","cfb_weekly_tuesday_candidate_freeze.yml","--ref","main"])
-          print("CFB_WEEKLY_WEDNESDAY_FALLBACK_DISPATCHED")
+          print("CFB_WEEKLY_WEDNESDAY_FALLBACK_DISPATCHED",target_date)
           PY
