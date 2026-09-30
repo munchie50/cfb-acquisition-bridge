@@ -44,11 +44,34 @@ jobs:
           from pathlib import Path
           r=json.loads(Path("preflight/preflight_v1_217.json").read_text())
           assert r["status"]=="PASS_REFRESH_SOURCE_PREFLIGHT"
-          assert r["future_at_cutoff"]>0, "weekly no-op: no future targets"
           Path("cutoff.txt").write_text(r["cutoff_utc"])
           print("CFB_WEEKLY_TUESDAY_PREFLIGHT_PASS",r["cutoff_utc"],r["future_at_cutoff"])
           PY
+      - name: Compare with last independently accepted prediction source state
+        id: source_gate
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib,json,os
+          from pathlib import Path
+          accepted=json.loads(Path("evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json").read_text())
+          pre=json.loads(Path("preflight/preflight_v1_217.json").read_text())
+          current={
+            "schedule_sha256":hashlib.sha256(Path("raw/cfb_schedules_2026.parquet").read_bytes()).hexdigest(),
+            "pbp_sha256":hashlib.sha256(Path("raw/pbp_2026.rds").read_bytes()).hexdigest()
+          }
+          changed=any(current[k] != accepted[k] for k in current)
+          candidate_needed=pre["future_at_cutoff"] > 0 and changed
+          with open(os.environ["GITHUB_OUTPUT"],"a") as fh:
+              fh.write(f"candidate_needed={'true' if candidate_needed else 'false'}\n")
+          if candidate_needed:
+              print("CFB_WEEKLY_TUESDAY_SOURCE_CHANGE_QUALIFIED",current)
+          else:
+              reason="NO_FUTURE_TARGETS" if pre["future_at_cutoff"] <= 0 else "SOURCE_STATE_UNCHANGED"
+              print("CFB_WEEKLY_TUESDAY_NOOP",reason,current)
+          PY
       - name: Fetch frozen Champion fit
+        if: steps.source_gate.outputs.candidate_needed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -59,17 +82,20 @@ jobs:
           unzip -q fit.zip -d fit
           find fit -name selected_coefficients.csv -print -quit | xargs dirname > fitpath.txt
       - name: Run accepted S0 refresh producer
+        if: steps.source_gate.outputs.candidate_needed == 'true'
         run: |
           set -euo pipefail
           python scripts/phase4_challenger_b_2026_refresh_predict_v1_246.py preflight/challenger_b_2026_future_target_projection_v1_217.csv raw/cfb_schedules_2026.parquet raw/pbp_2026.rds "$(cat fitpath.txt)" s0 "$(cat cutoff.txt)"
           test -s s0/challenger_b_2026_refresh_team_side_substrate_v1_246.csv
       - name: Run accepted v4 source-context producer
+        if: steps.source_gate.outputs.candidate_needed == 'true'
         run: |
           set -euo pipefail
           python scripts/cfb_qa_s2_k1_source_context_companion_v4_2026_09_29.py preflight/challenger_b_2026_future_target_projection_v1_217.csv raw/cfb_schedules_2026.parquet raw/pbp_2026.rds s0/challenger_b_2026_refresh_team_side_substrate_v1_246.csv context "$(cat cutoff.txt)"
           test -s context/source_context.csv
           test -s context/manifest.json
       - name: Retain complete candidate boundary
+        if: steps.source_gate.outputs.candidate_needed == 'true'
         run: |
           set -euo pipefail
           cp raw/* package/raw/
@@ -103,6 +129,7 @@ jobs:
           print("CFB_WEEKLY_TUESDAY_CANDIDATE_BOUNDARY_READY_NOT_ACCEPTED",pre["cutoff_utc"],len(files))
           PY
       - uses: actions/upload-artifact@v4
+        if: steps.source_gate.outputs.candidate_needed == 'true'
         with:
           name: cfb-weekly-tuesday-candidate-boundary
           path: package/
