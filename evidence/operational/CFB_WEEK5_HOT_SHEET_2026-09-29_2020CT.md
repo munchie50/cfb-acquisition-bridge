@@ -1,38 +1,49 @@
-# CFB Week 5 Hot Sheet — 2026-09-29 20:20 CT
+# CFB Week 5 Hot Sheet — 2026-09-30 Morning Authorized Extra
 
-Status: PROSPECTIVE BETA OPERATIONS OUTPUT / FRESH RESET BOUNDARY
+Status: PROSPECTIVE BETA OPERATIONS OUTPUT / USER-AUTHORIZED EXTRA REFRESH
 
-This sheet resumes prospective monitoring after the 2026-09-28 persistence gap. Missing Monday observations are not reconstructed.
+Boundary: This is a new prospective refresh using the 2026-09-30 morning market capture. It does not reconstruct the incomplete 07:01 CT scheduled cycle. Champion remains accepted v1.193 / v1.208 FIRST_FROZEN artifact 10897612260. Market and decision evidence remain downstream and separate from the frozen Champion.
 
-Champion: accepted v1.193 / v1.208 FIRST_FROZEN artifact 10897612260. Market source: current FantasyData Week 5 consensus board retrieved 2026-09-29; Nebraska additionally cross-checked against BetMGM. Market/availability evidence remains downstream and separate from frozen Champion.
+## NEXT UP — THURSDAY
+All governed Thursday games remain on the canonical full-slate view. No new actionable state was established in this morning reconciliation.
 
-| Game | Frozen Engine | Engine total | Current market | Current total | State |
-|---|---:|---:|---:|---:|---|
-| Western Kentucky @ New Mexico State | NMSU -26.5 | 55.6 | NMSU -2.5 (-112) | 57.5 | INCONCLUSIVE |
-| North Texas @ Tulsa | Tulsa -15.1 | 56.2 | Tulsa -1 (-110) | 57.5 | INCONCLUSIVE |
-| Notre Dame @ North Carolina | Notre Dame -3.1 | 45.3 | Notre Dame -21 (-110) | 47.5 | INCONCLUSIVE |
-| Alabama @ Mississippi State | MSST -9.9 | 60.0 | Alabama -6 (-110) | 60.5 | INCONCLUSIVE |
-| Syracuse @ UConn | UConn -6.9 | 55.6 | Syracuse -6.5 (-110) | 50.5 | INCONCLUSIVE |
-| Michigan @ Minnesota | Minnesota -5.7 | 45.3 | Michigan -5.5 (-111) | 43.5 | INCONCLUSIVE |
-| Ohio State @ Iowa | Iowa -6.3 | 51.1 | Ohio State -14 (-111) | 45.5 | INCONCLUSIVE |
-| Memphis @ Charlotte | Memphis -10.0 | 61.3 | Memphis -20.5 (-112) | 53.5 | INCONCLUSIVE |
-| Eastern Michigan @ UMass | UMass -22.1 | 49.0 | UMass -6.5 (-109) | 48.5 | INCONCLUSIVE |
-| Old Dominion @ Georgia State | Georgia State -11.1 | 52.8 | Georgia State -1.5 (-112) | 50.5 | INCONCLUSIVE |
-| Marshall @ James Madison | JMU -29.5 | 51.9 | JMU -18.5 (-110) | 55.5 | INCONCLUSIVE |
-| **Maryland @ Nebraska** | **Nebraska -10.5** | **56.0** | **Nebraska -14.5 (-112)** | **52.0** | **WAIT** |
-| Kentucky @ South Carolina | South Carolina -13.8 | 58.7 | South Carolina -3 (-107) | 53.5 | INCONCLUSIVE |
-| Texas Tech @ Colorado | Texas Tech -1.8 | 53.3 | Texas Tech -13 (-113) | 50.5 | INCONCLUSIVE |
-| Vanderbilt @ Georgia | Georgia -24.6 | 57.6 | Georgia -24 (-110) | 50.5 | WAIT |
+## NEXT UP — FRIDAY
+All governed Friday games remain on the canonical full-slate view. No new actionable state was established in this morning reconciliation.
 
-## What changed since Sunday
-- Nebraska broad spread moved from about -13.5 Sunday to -14.5 on the current consensus board; BetMGM displayed -15 during the same evening window. Frozen Engine remains Nebraska -10.5.
-- Alabama-Mississippi State remains a major opposite-side disagreement; current market Alabama -6 while frozen Engine favors Mississippi State by about 9.9.
-- Ohio State-Iowa remains a major opposite-side disagreement; current market Ohio State -14 while frozen Engine favors Iowa by about 6.3.
-- The three Sunday NOT_YET_AVAILABLE games now have current coverage: UTSA-Rice, Utah State-Boise State, Arkansas State-Louisiana.
-- No BET EARLY or BET NOW state was earned by this refresh.
+## NEXT UP — SATURDAY MORNING
+Priority games carried forward prospectively:
+- Alabama at Mississippi State — Engine Prediction (Frozen): Mississippi State by 9.8652; frozen total 60.0377. Current qualified market: Alabama -6.0 (-110), total 60.0. State: INCONCLUSIVE pending governed football/availability/source reconciliation.
+- Vanderbilt at Georgia — Engine Prediction (Frozen): Georgia by 24.5805; frozen total 57.5598. Current qualified market: Georgia -24.5 (-109), total 51.0. State: WAIT.
+
+## NEXT UP — SATURDAY AFTERNOON
+- Ohio State at Iowa — Engine Prediction (Frozen): Iowa by 6.2898; frozen total 51.1058. Current qualified market: Ohio State -14.5 (-108), total 45.5. State: INCONCLUSIVE pending governed reconciliation.
+- Maryland at Nebraska — Engine Prediction (Frozen): Nebraska by 10.5205; frozen total 56.0116; frozen Nebraska win probability 0.733503. Current qualified market: Nebraska -14.5 (-112), total 52.0. State: WAIT. No acceptable threshold has been earned; no chase.
+
+## NEXT UP — SATURDAY EVENING/NIGHT
+All governed games remain on the canonical full-slate view. No new actionable state was established in this morning reconciliation.
+
+## PRIORITY WATCHLIST
+- Western Kentucky at New Mexico State — current NMSU -2.5 (-113), total 57.5; existing INCONCLUSIVE state retained.
+- North Texas at Tulsa — current Tulsa -1.0 (-110), total 57.5; existing INCONCLUSIVE state retained.
+- Notre Dame at North Carolina — current Notre Dame -21.0 (-110), total 47.0; existing INCONCLUSIVE state retained.
+- Alabama at Mississippi State — current Alabama -6.0 (-110), total 60.0; existing INCONCLUSIVE state retained.
+- Syracuse at UConn — current Syracuse -6.5 (-110), total 50.5; existing INCONCLUSIVE state retained.
+- Michigan at Minnesota — current Michigan -5.5 (-111), total 43.5; existing INCONCLUSIVE state retained.
+- Ohio State at Iowa — current Ohio State -14.5 (-108), total 45.5; existing INCONCLUSIVE state retained.
+- Memphis at Charlotte — current Memphis -20.5 (-110), total 52.5; existing INCONCLUSIVE state retained.
+- Eastern Michigan at Massachusetts — current UMass -6.5 (-109), total 48.5; existing INCONCLUSIVE state retained.
+- Old Dominion at Georgia State — current Georgia State -2.5 (-107), total 51.5; existing INCONCLUSIVE state retained.
+- Marshall at James Madison — current JMU -18.5 (-111), total 56.5; existing INCONCLUSIVE state retained.
+- Kentucky at South Carolina — current South Carolina -3.0 (-107), total 53.5; existing INCONCLUSIVE state retained.
+- Texas Tech at Colorado — current Texas Tech -13.0 (-110), total 50.5; existing INCONCLUSIVE state retained.
+- Maryland at Nebraska — WAIT.
+- Vanderbilt at Georgia — WAIT.
+
+## FULL WEEKLY SLATE
+The current consensus board established spread/total availability for all 47 relevant FBS-vs-FBS FIRST_FROZEN Week 5 games during the authorized-extra cycle. Exact current observations and provenance are retained in CFB_MARKET_MONITOR_STATE.md. This Hot Sheet does not invent frozen comparisons or decision transitions for games whose complete frozen row was not recovered into this render.
 
 ## Execution
-No new casino trip is triggered. Continue portfolio-level 1–2 trip/week planning; a third requires a compelling documented reason. No acceptable threshold is invented from raw model-market distance.
+No new actionable wager state and no additional casino trip were established by this refresh. Existing portfolio-level execution governance remains unchanged.
 
 ## Next review
-Next scheduled Market Monitor. Wednesday-Friday Evening Availability may append material injury/QB/weather/executable-price changes for incorporation into the next Hot Sheet.
+Normal 13:00 CT CFB Market Monitor. It must recover this morning's persisted prospective observation and may advance state only from then-current evidence.
