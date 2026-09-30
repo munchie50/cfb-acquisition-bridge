@@ -75,3 +75,10 @@ Repository automation now implements the early-week readiness/candidate portion 
 Automation does not self-accept scientific or operational evidence. Every new candidate package still requires independent artifact/hash/count/chronology/manifest reconciliation and persisted acceptance before downstream S2_K1 prediction-consumer use.
 The exact S2_K1 prediction consumer is not yet an accepted executable and is therefore deliberately not fabricated into the scheduler. Its construction/static gate remains the next authorized implementation dependency after a fresh weekly S0/context boundary is independently accepted.
 S2 outcome scoring remains separately authorized and is not scheduled here.
+
+
+## Daily Hot Sheet operating cadence clarification — 2026-09-29
+The early-week model freeze does NOT freeze the downstream Hot Sheet.
+After a qualified frozen model snapshot exists, the Hot Sheet market/decision layer refreshes every operating day through Saturday. Tuesday through Saturday daily passes compare newly qualified market observations against the same accepted frozen model snapshot, append movement/decision evidence, and surface BET EARLY / BET NOW / WAIT / PASS / INCONCLUSIVE under existing authority.
+Market, odds, wager, execution, injury/news, and outcome information remain downstream and must never alter the frozen model prediction or become model inputs.
+Saturday refresh continues only while relevant games remain future; started/completed games are not re-decided.
