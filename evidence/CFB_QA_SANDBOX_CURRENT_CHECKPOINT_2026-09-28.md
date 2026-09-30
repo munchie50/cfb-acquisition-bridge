@@ -202,3 +202,11 @@ The target-baseline companion executable now reproduces the frozen pooled-baseli
 The accepted v4 package does not retain that feature-history surface, and future v1.246 target rows cannot legitimately substitute for it. The v1 companion therefore fails closed with `TARGET_BASELINE_BLOCKED_REST_DAYS_HISTORY_SURFACE_REQUIRED`; no baseline artifact or S2 prediction is accepted.
 
 See `CFB_QA_S2_K1_TARGET_BASELINE_V1_READINESS_2026-09-30.md`. Next safe work is executable-ancestry recovery for the strictly-prior rest_days feature-history surface, not formula modification. Frontier remains CADENCE WAIT.
+
+
+## 2026-09-30 rest_days executable ancestry recovered
+The temporary target-baseline rest_days blocker is now structurally resolved without changing the frozen formula. Accepted v1.172 ancestry proves rest_days is the interval between consecutive same-team/same-season schedule kickoffs; the Sep. 27 reconciliation proves the season-local, UTC-date-midnight strict-prior population-baseline rule and its historical fail-closed consequences.
+
+The target-baseline companion now reconstructs this strictly-prior rest_days feature-history surface from the accepted mechanical primitive schedule identities, never from future target rows. Its general `TARGET_BASELINE_UNAVAILABLE:<features>` state remains fail closed for any actual cutoff where a required baseline cannot be reproduced.
+
+See `CFB_QA_S2_K1_REST_DAYS_ANCESTRY_RECOVERY_2026-09-30.md`. The earlier blocker record remains preserved as discovery evidence but is superseded on this point. No live baseline artifact or S2 prediction has been executed/accepted. Frontier remains CADENCE WAIT.
