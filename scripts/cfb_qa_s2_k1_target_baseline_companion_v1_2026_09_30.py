@@ -38,12 +38,17 @@ def baseline(f):
     # Frozen historical semantics normalize the target/source kickoff to UTC date midnight.
     t=cutoff.normalize()
     if f=="rest_days":
-        # target-side pregame rest_days is itself computed from strict-prior history;
-        # population baseline is the mean of valid pregame rest intervals whose state exists before cutoff day.
-        z=T[(T.target_kickoff.dt.normalize()==t)&T.rest_days.notna()]
-        # T is future target state, so using its rest_days would make the pool target-population dependent.
-        # Fail closed here; rest-days baseline requires an accepted pregame feature-history surface.
-        return np.nan
+        # Frozen v1.172 ancestry: rest_days is the interval between consecutive
+        # same-team, same-season schedule kickoffs. Reconstruct from the accepted
+        # primitive schedule identities; never from future target rows.
+        ident=M[["season","game_id","team","start_date"]].copy()
+        assert not ident.duplicated(["season","team","start_date"],keep=False).any()
+        ident=ident.sort_values(["season","team","start_date","game_id"])
+        ident["rest_days"]=ident.groupby(["season","team"]).start_date.diff().dt.total_seconds()/86400
+        z=ident[(ident.start_date<t)&ident.rest_days.notna()]
+        if z.empty:return np.nan
+        v=float(z.rest_days.mean())
+        return v if np.isfinite(v) else np.nan
     typ,num,den=COMP[f]; src=M if typ=="M" else D; complete=mc if typ=="M" else dc
     z=src[(src.start_date<t)&complete]
     if z.empty:return np.nan
@@ -58,9 +63,11 @@ for r in T.itertuples():
         rec["baseline__"+f]=b[f]; rec["available__"+f]=bool(np.isfinite(b[f]))
     rows.append(rec)
 O=pd.DataFrame(rows)
-# The executable is deliberately blocked until rest_days gets a legitimate strict-prior feature-history source.
-if not O["available__rest_days"].all():
-    raise SystemExit("TARGET_BASELINE_BLOCKED_REST_DAYS_HISTORY_SURFACE_REQUIRED")
+# Every feature baseline must be reproducible; otherwise the companion fails closed.
+avail=[c for c in O.columns if c.startswith("available__")]
+if not O[avail].all().all():
+    missing=[c.removeprefix("available__") for c in avail if not O[c].all()]
+    raise SystemExit(f"TARGET_BASELINE_UNAVAILABLE:{','.join(missing)}")
 O.to_csv(outp/"target_baselines.csv",index=False)
 manifest={"status":"EXECUTED_NOT_ACCEPTED","s2_predictions_produced":False,"target_outcomes_joined":False,"market_joined":False,"cutoff_utc":cutoff.isoformat(),"rows":len(O),"features":FEATURES,"hashes":{"target_baselines.csv":hashlib.sha256((outp/"target_baselines.csv").read_bytes()).hexdigest()}}
 (outp/"manifest.json").write_text(json.dumps(manifest,indent=2,sort_keys=True)+"\n")
