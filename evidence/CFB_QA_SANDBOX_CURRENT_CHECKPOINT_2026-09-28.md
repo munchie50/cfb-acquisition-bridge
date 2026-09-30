@@ -184,3 +184,13 @@ Routine S2 handoff review confirmed the historical Sandbox generator cannot be r
 `CFB_QA_PROSPECTIVE_S2_K1_CONSUMER_SPEC_2026-09-30.md` now freezes the future consumer interface/mechanics before live execution: exact k=1, frozen ten-feature mapping, seven S1-only features, same-cutoff accepted S0+v4 inputs, explicit field allowlist, no unused winner/rank metadata, fail-closed eligibility, frozen history-depth slices, v1.193 scaling/coefficients, separate S2 artifact, and pre-outcome freeze/readback gate.
 
 A static gate rejects prospective k-grid expansion and loss of the chronology/contamination/output locks. No consumer prediction was generated and actual execution remains gated on the next independently accepted weekly S0 plus same-cutoff accepted v4 context boundary. Frontier remains CADENCE WAIT.
+
+
+## 2026-09-30 prospective S2_K1 target-baseline gap
+Executable-readiness reconciliation found that accepted v1.246 + accepted v4 do not yet contain every quantity required by the frozen prospective S2_K1 equation. v1.246 supplies target raw features/history counts; v4 supplies source-opponent raw/baseline context at each source-game cutoff. Neither persists B_F(target cutoff) for all 17 target features, which is required for target-side S1(k=1).
+
+The consumer was therefore NOT constructed. See `CFB_QA_PROSPECTIVE_S2_K1_TARGET_BASELINE_GAP_2026-09-30.md`.
+
+The consumer specification and its static gate were corrected to require a separately accepted same-cutoff target-baseline companion. Accepted v4 remains unchanged. This is substrate exposure of an already-frozen equation, not a formula/mapping/k/science change.
+
+Next safe independent work: construct and structurally validate the target-baseline companion using the frozen pooled-baseline semantics. Frontier remains CADENCE WAIT.
