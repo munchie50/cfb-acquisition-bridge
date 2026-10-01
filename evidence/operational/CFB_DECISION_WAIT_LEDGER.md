@@ -81,3 +81,16 @@ Champion: v1.208 FIRST_FROZEN / v1.193 remains unchanged.
 - No calibrated probability, EV, confidence, or threshold is inferred from market distance.
 
 Next trigger: governed reconciliation deadlines and the normal 13:00 CT Market Monitor.
+
+
+## 2026-10-01 ~17:40 CT user-authorized extra reconciliation
+Boundary: prospective only; the missed 13:00 CT decision deadline is preserved as missed and is not reconstructed. Champion v1.208 FIRST_FROZEN / v1.193 unchanged.
+
+THURSDAY — deadline reconciliation:
+- Western Kentucky at New Mexico State — PASS. Prior state was INCONCLUSIVE. The governed Thursday default reconciliation deadline was the safely pre-kickoff 13:00 CT Market Monitor, which did not execute. At this new late prospective boundary, current benchmark remains New Mexico State -2.5 / 57.5, but no governed minimum acceptable line/price or calibrated actionable edge has been earned and relevant availability uncertainty remains. Do not force a bet or chase after the missed decision window.
+- North Texas at Tulsa — PASS. Prior state was INCONCLUSIVE. The governed Thursday default 13:00 CT reconciliation deadline was missed. Current benchmark is Tulsa -1.5 / 57.5; late QB/availability uncertainty remains and no governed actionable threshold has been earned. Do not force a bet or create an extra casino trip to compensate for the missed cycle.
+
+FRIDAY/SATURDAY:
+- No new BET EARLY or BET NOW state is established by this extra cycle.
+- Friday and Saturday games remain governed by their existing states and applicable future reconciliation deadlines. Newly retrieved benchmark movement is monitoring evidence only.
+- Portfolio execution posture: no additional casino trip is triggered by this cycle.
