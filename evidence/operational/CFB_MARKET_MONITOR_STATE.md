@@ -104,3 +104,40 @@ Priority/current observations:
 The remaining relevant-FBS games were also present on the same current consensus board; this cycle establishes current broad-board availability without inventing exact frozen-model comparisons not recovered into the user-facing render.
 
 No market observation altered Champion/model state.
+
+
+## User-authorized extra prospective capture — 2026-10-01 ~17:40 CT
+Observation class: INTERMEDIATE / USER_AUTHORIZED_EXTRA.
+Boundary: new prospective observation only. The incomplete 07:00 CT and missed/incomplete 13:00 CT scheduled cycles are not reconstructed.
+Source semantics: CBS Sports 2026 Week 5 betting guide retrieved live during this cycle; displayed spread/total values are retained as broad benchmark observations where exact book/price was not established. Champion remains v1.208 FIRST_FROZEN / v1.193 accepted Beta Champion; market information is downstream only.
+
+Nearest-window benchmark:
+- Western Kentucky at New Mexico State: New Mexico State -2.5, total 57.5.
+- North Texas at Tulsa: Tulsa -1.5, total 57.5.
+- Pittsburgh at Virginia Tech: Virginia Tech -3, total 54.5.
+- Liberty at Delaware: Delaware +7, total 50.5.
+- Penn State at Northwestern: Northwestern +2.5, total 45.5.
+Selected Saturday priority/current benchmark:
+- Notre Dame at North Carolina: North Carolina +21, total 47.5.
+- Alabama at Mississippi State: Mississippi State +6, total 60.5.
+- Syracuse at UConn: UConn +6.5, total 50.5.
+- Michigan at Minnesota: Minnesota +5.5, total 43.5.
+- Vanderbilt at Georgia: Georgia -24.5, total 50.5.
+- Ohio State at Iowa: Iowa +14, total 45.5.
+- Memphis at Charlotte: Charlotte +20.5, total 54.5.
+- Old Dominion at Georgia State: Georgia State -1.5, total 50.5.
+- Eastern Michigan at Massachusetts: Massachusetts -6, total 48.5.
+- Marshall at James Madison: James Madison -18.5, total 55.5.
+- Maryland at Nebraska: Nebraska -14.5, total 52.5.
+- Kentucky at South Carolina: South Carolina -2.5, total 53.5.
+- Texas Tech at Colorado: Colorado +13.5, total 50.5.
+- UTSA at Rice: Rice +11.5, total 54.5.
+- Utah State at Boise State: Boise State -19.5, total 51.5.
+- Arkansas State at Louisiana: Louisiana -6.5, total 46.5.
+
+Availability notes from same-day public reporting:
+- Thursday slate remains Western Kentucky-New Mexico State and North Texas-Tulsa.
+- New Mexico State WR Brodie Malone-Bradford was reported questionable with an undisclosed injury in same-day coverage.
+- Tulsa QB availability remained a material uncertainty in same-day preview coverage; no late evidence recovered in this cycle was sufficient to establish a governed actionable threshold.
+
+No observation altered Champion/model state. Exact governed 47-game FIRST_FROZEN identity reconciliation was not recoverable from the current repository render during this cycle, so this capture does not claim full-slate exactly-once completion.
