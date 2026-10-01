@@ -162,3 +162,40 @@ Disposition remains OPEN RECONCILIATION, not LOST/MISSING. Repository negative s
 - Market Monitor + exactly-once Hot Sheet: NATURAL_WAIT_DEMONSTRATION.
 - Dual Engine Health retrospective audit: NATURAL_WAIT_DEMONSTRATION.
 - Champion/model science defect discovered by holistic review: NONE SO FAR.
+
+
+## Pass 4 — Hot Sheet producer recovery-control correction — 2026-10-01
+
+### Incident diagnosis
+The 2026-09-30 12:57 CT CFB Market Monitor persisted RUN_STARTED but no conforming terminal receipt or completed governed Hot Sheet cycle. Dual Engine Health later detected and correctly classified the cycle START_ONLY / INCOMPLETE. Evening Availability also reconciled the incomplete daytime state and later terminated RUN_INCOMPLETE when fresh governed state could not be durably appended.
+
+Subsequent task-state readback on 2026-10-01 found the designated sole primary Hot Sheet producer, CFB Market Monitor, disabled. The previously created CFB Monitor Receipt Watch was also disabled. Available task state does not provide reliable actor/reason history for the disable transition, so attribution remains UNRESOLVED.
+
+### Structural classification
+REPEATED FRICTION / OPERATIONAL OWNERSHIP-RECOVERY DEFECT.
+Detection existed, but recovery enforcement did not. This repeated the scheduler/output-ownership failure class previously documented on 2026-09-29. The prior OUTPUT OWNERSHIP / COVERAGE CHECK was documented/installed but had not been demonstrated as an enforced closed loop.
+
+No Champion/model mutation, FIRST_FROZEN contamination, or science defect observed.
+
+### Correction applied
+1. Restored CFB Market Monitor enabled state only; cadence remains 07:00/13:00 CT Sunday-Saturday and scope/ownership are unchanged.
+2. Strengthened Dual Engine Health from detection-only to completion + ownership enforcement:
+   - audit every expected Market Monitor cycle for RUN_STARTED plus separate terminal receipt;
+   - verify Market Monitor remains sole primary Hot Sheet producer, enabled, and on governed cadence;
+   - when unexpectedly disabled and authority/ownership/cadence/scope are unchanged with no governance conflict, restore only enabled state, re-read topology, and record recovery;
+   - never replay/reconstruct a missed historical cycle;
+   - fail closed if ownership/cadence/scope is ambiguous or changed.
+3. Installed transactional OUTPUT OWNERSHIP / COVERAGE completion criteria inside Health: exactly four active recurring production tasks; one enabled primary Hot Sheet producer; correct cadence; downstream consumers intact; no competing producer; one intentionally open task slot.
+4. Explicitly prohibited creation/enabling of a fifth recurring watchdog. Receipt-watch responsibility is incorporated into Health. Existing CFB Monitor Receipt Watch remains disabled.
+
+### Immediate readback
+Task topology re-enumerated after mutation:
+- CFB Market Monitor: ENABLED; 07:00/13:00 CT Sunday-Saturday; primary Hot Sheet producer.
+- Dual Engine Health: ENABLED; completion + ownership audit/recovery installed.
+- CFB Evening Availability: ENABLED; downstream of Market Monitor.
+- Dual Weekly Engine QA: ENABLED; downstream consumer/QA.
+- CFB Monitor Receipt Watch: DISABLED.
+- CFB Hot Sheet Refresh redundant task: DISABLED.
+
+Disposition: CORRECTED / CONFIGURATION READ_BACK / PROSPECTIVE DEMONSTRATION_PENDING.
+The historical Sep. 30 failed/incomplete cycles remain immutable. Demonstration requires a future prospective Market Monitor cycle to persist/read back RUN_STARTED, governed Hot Sheet/canonical surfaces, and a separate terminal receipt, followed by independent Health confirmation.
