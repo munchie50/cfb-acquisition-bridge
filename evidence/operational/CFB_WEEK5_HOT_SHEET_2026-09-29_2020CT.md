@@ -23,6 +23,19 @@ Execution plan: batch these into one Friday trip if the stated floors are availa
 - Texas Tech @ Colorado — **WAIT** for later-window review; Colorado +13.5 currently, but QB/roster instability remains material.
 - Kentucky @ South Carolina — **WAIT** one more availability review; current defensive-line injury context and movement toward Kentucky matter.
 
+## NEXT UP — THURSDAY — CLOSED
+| Kickoff CT | Game | Engine Prediction (Frozen) | Final monitored benchmark | State |
+|---|---|---:|---:|---|
+| 7:00 PM Thu | Western Kentucky @ New Mexico State | NMSU -26.5 | NMSU -2.5 / 57.5 | PASS |
+| 8:00 PM Thu | North Texas @ Tulsa | Tulsa -15.1 | Tulsa -1.5 / 57.5 | PASS |
+
+## NEXT UP — FRIDAY — CLOSED / NEAR CLOSE
+| Kickoff CT | Game | Engine Prediction (Frozen) | Current benchmark | State |
+|---|---|---:|---:|---|
+| 6:00 PM Fri | Pittsburgh @ Virginia Tech | Virginia Tech -7.9 | Virginia Tech about -3 / 54.5 | PASS — missed 13:00 deadline; no late chase |
+
+Liberty @ Delaware and Penn State @ Northwestern are explicit v1.208 exclusions/unmodeled and are not part of the 47 modeled-game invariant.
+
 ## MODELED SATURDAY SLATE
 
 ### NEXT UP — SATURDAY MORNING
