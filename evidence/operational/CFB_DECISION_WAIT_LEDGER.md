@@ -106,3 +106,25 @@ Boundary: prospective only; Thursday persisted PASS states remain closed after t
 - Liberty at Delaware — likewise explicit FIRST_FROZEN exclusion; do not render as unresolved Champion prediction.
 
 Portfolio posture: no additional trip is triggered by this evening reconciliation. No execution inferred.
+
+
+## Friday recovery decision reconciliation — 2026-10-02 ~18:00 CT
+Boundary: prospective only. The missed Friday 13:00 scheduled reconciliation is not reconstructed. Direct recovery of accepted artifact 10897612260 restored exact frozen Week 5 modeled rows. Decisions below use current qualified market/availability evidence; raw disagreement alone remains insufficient.
+
+### BET NOW — portfolio execution candidates
+- Alabama at Mississippi State — BET NOW: Mississippi State +5.5 or better; do not pay worse than -115. Current exact-price reference recovered at +5.5 (+100), with broad board +6. Frozen Engine favors Mississippi State by 9.8652. The disagreement persisted all week; current matchup reporting describes both teams as unbeaten and competitive, with no recovered availability evidence sufficient to explain a market reversal of this magnitude. If +5.5 is unavailable, take +6 or better; do not chase below +5.5.
+- Syracuse at UConn — BET NOW: UConn +6.5 or better; do not pay worse than -115. Current exact-price reference +6.5 (+100). Frozen Engine favors UConn by 6.8817. Independent current numberFire material also favored UConn to win while current local matchup reporting identifies Syracuse QB performance/health uncertainty. Conflicting Syracuse-local opinion remains acknowledged; this is a controlled Beta expression, not calibrated EV.
+- Ohio State at Iowa — BET NOW: Iowa +14 or better; prefer +14.5; do not pay worse than -120. Current exact-price reference +14.5 (-115). Frozen Engine favors Iowa by 6.2898. Iowa is 4-0 after beating Michigan; current reporting confirms elite early defensive results and a strong rushing profile, while independent current models/analysts also identify spread value near +14.5 even when projecting Ohio State to win. Do not take +13.5.
+- Eastern Michigan at Massachusetts — BET NOW: UMass -6 or better; maximum -6.5 at -115 or better. Current DraftKings reference -6 (-108). Frozen Engine UMass by 22.0802 / home win 0.894632. Current UMass is 4-0 with a sellout expected; multiple current previews support UMass as the stronger side. Do not lay -7 or worse.
+- Marshall at James Madison — BET NOW: James Madison -18.5 or better at -115 or better. Current cross-book references include Caesars -18.5 (-107), DraftKings -18.5 (-105), FanDuel -18.5 (-110). Frozen Engine JMU by 29.5062 / home win 0.955715; current preview evidence also supports JMU materially above the market number. Do not lay -19.5 or worse.
+
+### WAIT / PASS
+- Vanderbilt at Georgia — WAIT on total. Frozen total 57.5598 vs market 50.5, but Vanderbilt QB Jared Curtis remains a pregame decision. Trigger: confirmed Curtis availability. Hard cutoff: final practical pregame execution window before 11:45 CT kickoff Saturday. Side PASS at current Georgia -24.5 because frozen side is essentially aligned.
+- Maryland at Nebraska — PASS side at Nebraska -14.5. Frozen fair margin Nebraska 10.5205; no chase. Nebraska remains on Hot Sheet. Total remains monitoring only; no threshold invented.
+- Notre Dame at North Carolina — PASS for this Friday trip. Frozen Notre Dame by 3.1262 vs market about Notre Dame -21/-21.5, but current football analysis strongly supports Notre Dame and multiple Notre Dame injuries/UNC uncertainties complicate the stale-frozen disagreement. Do not force UNC solely from raw model distance.
+- Michigan at Minnesota — PASS for this Friday trip. Frozen Engine favors Minnesota by 5.6597 vs market Michigan -5.5/-6.5, but current matchup/injury-aware analysis materially favors Michigan. The disagreement is not clean enough for controlled action.
+- Texas Tech at Colorado — WAIT. Frozen Texas Tech by 1.7697 vs Colorado +13.5; some current analysis supports Colorado against the spread, but Colorado quarterback instability and player-dismissal context remains material. Later kickoff preserves a Saturday review window.
+- South Carolina vs Kentucky — WAIT. Frozen South Carolina by 13.7709 vs current South Carolina -2.5/-3, but current defensive-line injury context and market movement toward Kentucky require one more availability review before action.
+- All other modeled Week 5 games: no new BET NOW/BET EARLY state established by this Friday recovery unless separately listed above. Morning games not listed actionable are PASS for this execution trip rather than silently retaining INCONCLUSIVE beyond the Friday-evening decision boundary. Afternoon/evening non-actionable games remain eligible for the governed Saturday review where their execution window remains practical.
+
+Portfolio posture: the five BET NOW candidates are intended to be batched into one Friday execution trip if the stated line/price floors are available. No execution is recorded until actual wager evidence is established.
