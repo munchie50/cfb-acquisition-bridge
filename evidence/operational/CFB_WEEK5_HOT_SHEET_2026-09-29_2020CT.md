@@ -15,9 +15,9 @@ Both Thursday games crossed the governed 13:00 CT reconciliation deadline withou
 ## NEXT UP — FRIDAY
 | Kickoff CT | Game | Engine Prediction (Frozen) | Current benchmark | Total | State |
 |---|---|---:|---:|---:|---|
-| 6:00 PM | Pittsburgh @ Virginia Tech | UNRESOLVED IN CURRENT RENDER | Virginia Tech -3 | 54.5 | Existing state retained |
-| 6:00 PM | Liberty @ Delaware | UNRESOLVED IN CURRENT RENDER | Delaware +7 | 50.5 | Existing state retained |
-| 7:00 PM | Penn State @ Northwestern | UNRESOLVED IN CURRENT RENDER | Penn State -2.5 | 45.5 | Existing state retained |
+| 6:00 PM | Pittsburgh @ Virginia Tech | UNRESOLVED IN CURRENT RENDER | Virginia Tech -2.5 | 54.5 | Existing state retained; Friday 13:00 CT reconciliation |
+| 6:00 PM | Liberty @ Delaware | EXCLUDED / UNMODELED (v1.208) | market-only | — | Explicit FIRST_FROZEN exclusion; not a Champion disagreement |
+| 7:00 PM | Penn State @ Northwestern | EXCLUDED / UNMODELED (v1.208) | Penn State -2.5 | 46.5 | Explicit FIRST_FROZEN exclusion; market-only |
 
 Friday reconciliation deadline remains Friday 13:00 CT unless a game-specific earlier execution constraint is established.
 
@@ -55,3 +55,7 @@ No new actionable wager state and no additional casino trip are established by t
 
 ## Next safe action
 Recover the complete accepted 47-game FIRST_FROZEN identity/frozen-row substrate, reconcile every game exactly once into Thursday/Friday/Saturday morning/afternoon/evening/unresolved sections, then persist/read back a complete Hot Sheet. Until then this cycle must terminate RUN_INCOMPLETE.
+
+
+## Evening downstream note — 2026-10-01 ~20:06 CT
+Thursday PASS states remain closed after the execution boundary. Friday is now the nearest active section. Pittsburgh-Virginia Tech remains unresolved pending the Friday 13:00 CT governed reconciliation. Liberty-Delaware and Penn State-Northwestern are explicitly labeled excluded/unmodeled from the recovered v1.208 substrate and are no longer allowed to masquerade as unresolved frozen Champion predictions. No new trip or execution is established.
