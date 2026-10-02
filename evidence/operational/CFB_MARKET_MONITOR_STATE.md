@@ -141,3 +141,16 @@ Availability notes from same-day public reporting:
 - Tulsa QB availability remained a material uncertainty in same-day preview coverage; no late evidence recovered in this cycle was sufficient to establish a governed actionable threshold.
 
 No observation altered Champion/model state. Exact governed 47-game FIRST_FROZEN identity reconciliation was not recoverable from the current repository render during this cycle, so this capture does not claim full-slate exactly-once completion.
+
+
+## Evening downstream capture — 2026-10-01 ~20:06 CT
+Observation class: INTERMEDIATE / EVENING_AVAILABILITY. Prospective only; no earlier boundary is reconstructed. Champion v1.193 / v1.208 unchanged.
+
+- Thursday games: practical decision boundary passed; existing PASS states remain closed.
+- North Texas at Tulsa: same-day reporting confirmed Baylor Hayes as Tulsa's starting quarterback and Dexter Williams II as not starting. This late availability update does not reopen the prior PASS.
+- Pittsburgh at Virginia Tech: current public reference Pittsburgh +2.5, Virginia Tech -2.5, total 54.5. Friday 13:00 CT remains the default reconciliation deadline.
+- Penn State at Northwestern: current public reference Penn State -2.5, total 46.5. Game 401858476 is an explicit v1.208 FIRST_FROZEN exclusion, so this is market-only/unmodeled evidence.
+- Liberty at Delaware: game 401871050 is an explicit v1.208 FIRST_FROZEN exclusion; any observation remains market-only/unmodeled.
+- Northwestern availability reporting: two starting defensive backs doubtful, Luke Dehnicke questionable, Ezomo Oratokhai out. Weather reporting: mid/upper 50s, about 9 mph wind, no rain.
+
+No market or availability evidence altered Champion/model state.
