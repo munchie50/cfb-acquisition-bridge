@@ -94,3 +94,15 @@ FRIDAY/SATURDAY:
 - No new BET EARLY or BET NOW state is established by this extra cycle.
 - Friday and Saturday games remain governed by their existing states and applicable future reconciliation deadlines. Newly retrieved benchmark movement is monitoring evidence only.
 - Portfolio execution posture: no additional casino trip is triggered by this cycle.
+
+
+## 2026-10-01 ~20:06 CT evening downstream reconciliation
+Boundary: prospective only; Thursday persisted PASS states remain closed after their practical execution boundary. Champion v1.193 / v1.208 remains unchanged.
+
+- Western Kentucky at New Mexico State — PASS remains final for this cycle; no reopening after deadline.
+- North Texas at Tulsa — PASS remains final for this cycle. Later same-day confirmation that Baylor Hayes would start resolves part of the earlier availability uncertainty but does not retroactively reopen the decision.
+- Pittsburgh at Virginia Tech — existing unresolved state retained for Friday. Current public reference moved to Pittsburgh +2.5 / Virginia Tech -2.5 with total 54.5. No earned minimum acceptable line/price is established here. Next governed reconciliation: Friday 13:00 CT; at that boundary it must transition to actionable, governed WAIT with hard final cutoff, or PASS.
+- Penn State at Northwestern — not eligible for Champion-relative decision presentation under the recovered v1.208 Week 5 substrate because it is an explicit FIRST_FROZEN exclusion. Keep any market monitoring separately labeled unmodeled/excluded.
+- Liberty at Delaware — likewise explicit FIRST_FROZEN exclusion; do not render as unresolved Champion prediction.
+
+Portfolio posture: no additional trip is triggered by this evening reconciliation. No execution inferred.
