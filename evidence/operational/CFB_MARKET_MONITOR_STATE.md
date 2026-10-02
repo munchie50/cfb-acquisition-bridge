@@ -154,3 +154,21 @@ Observation class: INTERMEDIATE / EVENING_AVAILABILITY. Prospective only; no ear
 - Northwestern availability reporting: two starting defensive backs doubtful, Luke Dehnicke questionable, Ezomo Oratokhai out. Weather reporting: mid/upper 50s, about 9 mph wind, no rain.
 
 No market or availability evidence altered Champion/model state.
+
+
+## Friday recovery prospective capture — 2026-10-02 ~18:00 CT
+Observation class: INTERMEDIATE / USER_AUTHORIZED_FRIDAY_RECOVERY. The incomplete/missed 07:00 and 13:00 CT scheduled cycles remain immutable and are not reconstructed.
+Champion link: accepted v1.208 FIRST_FROZEN artifact 10897612260 / v1.193 Champion. Artifact 10897612260 was directly recovered during this cycle; digest and accepted identity match v1.208. Exact Week 5 modeled substrate is recoverable as 47 FBS-vs-FBS frozen predictions; explicit exclusions remain separate/unmodeled.
+Current broad benchmark: CBS Sports Week 5 board retrieved Oct. 2. Selected exact-price cross-checks are noted below.
+
+Priority observations:
+- Alabama at Mississippi State: broad MSST +6 / 60.5; FanDuel research displayed MSST +5.5 (+100), Alabama -5.5 (-122), total 60.5. Frozen Engine: MSST by 9.8652, total 60.0377, home win 0.743319.
+- Syracuse at UConn: broad UConn +6.5 / 50.5; FanDuel research displayed UConn +6.5 (+100). Frozen Engine: UConn by 6.8817, total 55.6316, home win 0.670083.
+- Ohio State at Iowa: broad Iowa +14 / 45.5; bet365 displayed Iowa +14.5 (-115), total 45.5. Frozen Engine: Iowa by 6.2898, total 51.1058, home win 0.593141.
+- Eastern Michigan at Massachusetts: broad UMass -6 / 48.5; DraftKings displayed UMass -6 (-108). Frozen Engine: UMass by 22.0802, total 49.0269, home win 0.894632. Same-day reporting has UMass 4-0 and expecting a sellout.
+- Marshall at James Madison: broad JMU -18.5 / 55.5; cross-book table displayed Caesars JMU -18.5 (-107), DraftKings -18.5 (-105), FanDuel -18.5 (-110). Frozen Engine: JMU by 29.5062, total 51.9170, home win 0.955715.
+- Maryland at Nebraska: broad Nebraska -14.5 / 52.5. Frozen Engine: Nebraska by 10.5205, total 56.0116, home win 0.733503. Nebraska WR Jacob Barney Jr. reported questionable. Side remains beyond frozen fair margin; no chase.
+- Vanderbilt at Georgia: broad Georgia -24.5 / 50.5. Frozen Engine: Georgia by 24.5805, total 57.5598. Vanderbilt QB Jared Curtis remained a pregame decision after limited practice and Friday walkthrough; availability is decision-relevant to the total.
+- Texas Tech at Colorado: broad Colorado +13.5 / 50.5; DraftKings displayed Colorado +13.5 (-115). Frozen Engine: Texas Tech by 1.7697, total 53.2790. Current reporting notes Colorado quarterback instability/player dismissals; preserve as later-window review rather than forcing action.
+
+No market or availability evidence altered frozen Champion predictions. No execution is inferred by this capture.
