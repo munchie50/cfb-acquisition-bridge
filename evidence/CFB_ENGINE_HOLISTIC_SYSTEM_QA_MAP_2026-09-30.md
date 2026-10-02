@@ -199,3 +199,62 @@ Task topology re-enumerated after mutation:
 
 Disposition: CORRECTED / CONFIGURATION READ_BACK / PROSPECTIVE DEMONSTRATION_PENDING.
 The historical Sep. 30 failed/incomplete cycles remain immutable. Demonstration requires a future prospective Market Monitor cycle to persist/read back RUN_STARTED, governed Hot Sheet/canonical surfaces, and a separate terminal receipt, followed by independent Health confirmation.
+
+
+## Pass 5 — FIRST_FROZEN operational substrate ancestry recovery — 2026-10-01
+
+### Trigger
+The 2026-10-01 ~17:40 CT user-authorized Market Monitor cycle terminated RUN_INCOMPLETE because the complete governed Week 5 FIRST_FROZEN row substrate was not recoverable into that run's repository render.
+
+### Ancestry recovery
+Test Routine v6 traced the accepted v1.208 freeze rather than reconstructing rows from later market or conversation evidence.
+- accepted producer run: 36216090860
+- accepted artifact: 10897612260
+- artifact name: cfb-phase4-challenger-b-2026-prospective-predictions-v1-206
+- accepted digest: sha256:772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf
+- artifact status on 2026-10-01: live / not expired / directly downloadable
+- recovered prediction file: challenger_b_2026_fair_predictions_v1_206.csv
+- recovered target ledger: challenger_b_2026_target_ledger_v1_206.csv
+- recovered exclusions: challenger_b_2026_exclusions_v1_206.csv
+
+Deterministic Week 5 extraction (America/Chicago local date 2026-10-01 through 2026-10-03, population_class=FBS_VS_FBS) reconciled:
+- target identities = 56 unique games
+- frozen fair-prediction identities = 47 unique games
+- explicit exclusion identities = 9 unique games
+- 47 + 9 = 56 exactly
+- no prediction was recomputed or reconstructed
+- no market, execution or outcome data entered the frozen substrate
+
+### Finding H4 — governed-slate identity boundary contamination
+Classification: REAL OPERATIONAL/INTEGRATION DEFECT; no Champion/science mutation.
+
+The partial Hot Sheet had treated some current market-board games that are explicit FIRST_FROZEN exclusions as though they belonged to the governed frozen-prediction presentation. Confirmed examples:
+- Liberty at Delaware (game 401871050): explicit v1.208 exclusion, reason away_prior_pbp_missing.
+- Penn State at Northwestern (game 401858476): explicit v1.208 exclusion, reason home_prior_points_missing.
+
+Therefore the Hot Sheet's governed prediction population must be keyed from the 47 accepted fair-prediction identities, not from the broader current market board or the 56-game target population. Excluded games may be shown only in a separately labeled excluded/unmodeled surface if operationally useful; they may not be rendered as unresolved frozen predictions.
+
+### Additional schedule-boundary finding
+The frozen artifact's start_date is part of the immutable freeze evidence, but operational kickoff sectioning may require a later authoritative schedule observation when kickoff assignments change. Identity/prediction values remain keyed by game_id and frozen; current kickoff may affect presentation/deadline section only. Do not mutate FIRST_FROZEN timestamps or prediction bytes to reflect later schedule information.
+
+### Correction state
+- accepted artifact ancestry: RECOVERED / VERIFIED
+- Week 5 population boundary: DETERMINISTICALLY RECONCILED (56 targets = 47 predictions + 9 exclusions)
+- root cause of 17:40 substrate blocker: RECOVERY/PATHING GAP, not lost frozen evidence
+- H4 population-boundary defect: DETECTED / CLASSIFIED
+- Hot Sheet correction: PENDING PRODUCER/PRESENTATION CORRECTION AND DEMONSTRATION
+- prior 17:40 RUN_INCOMPLETE remains historically correct and is not rewritten into RUN_PASS
+
+### Producer control required
+Market Monitor / Hot Sheet producer must:
+1. recover the accepted FIRST_FROZEN artifact by accepted run/artifact identity when repository render lacks the rows;
+2. build the governed prediction slate from accepted fair-prediction game_ids;
+3. reconcile explicit exclusions separately;
+4. assert prediction_count + exclusion_count = target_count for the scoped window;
+5. assert every governed prediction game_id appears exactly once in Hot Sheet kickoff sections;
+6. prohibit excluded identities from masquerading as unresolved frozen predictions;
+7. use later authoritative kickoff evidence only for operational section/deadline placement, never to rewrite frozen prediction evidence.
+
+### v6 demonstration result
+Interface/Boundary Ancestry Check and expected-vs-actual reconciliation both behaved as intended: they recovered the supposedly unavailable accepted substrate and exposed the broader identity-boundary defect before another live retry.
+Status: TEST ROUTINE v6 CONTROL USEFUL / THIS CASE DEMONSTRATED_PASS.
