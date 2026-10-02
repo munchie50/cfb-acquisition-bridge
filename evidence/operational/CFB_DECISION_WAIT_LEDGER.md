@@ -128,3 +128,5 @@ Boundary: prospective only. The missed Friday 13:00 scheduled reconciliation is 
 - All other modeled Week 5 games: no new BET NOW/BET EARLY state established by this Friday recovery unless separately listed above. Morning games not listed actionable are PASS for this execution trip rather than silently retaining INCONCLUSIVE beyond the Friday-evening decision boundary. Afternoon/evening non-actionable games remain eligible for the governed Saturday review where their execution window remains practical.
 
 Portfolio posture: the five BET NOW candidates are intended to be batched into one Friday execution trip if the stated line/price floors are available. No execution is recorded until actual wager evidence is established.
+
+- Pittsburgh at Virginia Tech — PASS at the Friday recovery boundary. Frozen Engine Virginia Tech by 7.8503 / total 51.6457 versus current broad Virginia Tech about -3 / 54.5, but the governed 13:00 reconciliation was missed and the practical execution window is too compressed to manufacture a late trip. Preserve as PASS; do not chase immediately before kickoff.
