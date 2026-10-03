@@ -172,3 +172,14 @@ Priority observations:
 - Texas Tech at Colorado: broad Colorado +13.5 / 50.5; DraftKings displayed Colorado +13.5 (-115). Frozen Engine: Texas Tech by 1.7697, total 53.2790. Current reporting notes Colorado quarterback instability/player dismissals; preserve as later-window review rather than forcing action.
 
 No market or availability evidence altered frozen Champion predictions. No execution is inferred by this capture.
+
+
+## Friday evening availability capture — 2026-10-02 ~19:40 CT
+Observation class: INTERMEDIATE / USER_AUTHORIZED_EVENING_AVAILABILITY. Downstream of the persisted ~18:00 CT Friday Recovery RUN_PASS; no competing baseline.
+- Vanderbilt at Georgia: Vanderbilt QB Jared Curtis remains unresolved tonight. Same-day reporting says he made it through Friday walkthrough without issue and will attempt to play, but the final decision comes after Saturday pregame evaluation. Existing total WAIT remains decision-relevant; no Friday resolution is manufactured.
+- Texas Tech at Colorado: Texas Tech backup QB Thomas Castellanos was ruled ineligible Friday afternoon. This is genuinely new late availability information. It does not by itself establish an actionable Colorado threshold or alter the frozen prediction; existing later-window WAIT remains.
+- Ohio State at Iowa: current Friday reporting still shows Ohio State -14.5 / Iowa +14.5; weather expected not to materially affect the game. The persisted Iowa cutoff remains available in current public board evidence.
+- Eastern Michigan at Massachusetts: current same-day reporting confirms the UMass home game is sold out; no late evidence recovered invalidates the persisted UMass cutoff.
+- Kentucky at South Carolina: late search recovered Kentucky LB Alex Afari becoming ineligible after an NCAA appeal, while South Carolina defensive-line availability concerns remain part of the matchup context. Conflicting availability changes do not earn a new Friday action; WAIT remains.
+- No sufficiently newer executable-price evidence was recovered to overwrite the ~18:00 exact-price references for Mississippi State, UConn, Iowa, UMass or James Madison. Their established minimum acceptable line/price cutoffs remain authoritative; user should verify the actual Caesars window before execution.
+No observation altered Champion/FIRST_FROZEN state. No execution inferred.
