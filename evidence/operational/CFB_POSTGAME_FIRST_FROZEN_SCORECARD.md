@@ -37,3 +37,14 @@ This file defines the durable surface. Historical 2026 scoring is populated only
 - Frozen prediction source: artifact 10897612260.
 - Final result source: CBS Sports Week 4 FBS scoreboard retrieved 2026-09-27.
 - This append does not alter any frozen prediction.
+
+
+## Week 5 partial final-result join — 2026-10-03 morning
+Final-result source boundary: authoritative/public final-score recovery after games were final. Only genuinely pre-event v1.208 FIRST_FROZEN predictions are joined. Explicit exclusions are not scored.
+
+- Western Kentucky @ New Mexico State — FIRST_FROZEN: NMSU by 26.5495; projected total 55.5829. Final: NMSU 34, WKU 13. Realized home margin +21; realized total 47. Signed margin error (actual minus frozen) -5.5495; absolute margin error 5.5495. Signed total error -8.5829; absolute total error 8.5829.
+- North Texas @ Tulsa — FIRST_FROZEN: Tulsa by 15.1102; projected total 56.2123. Final: North Texas 45, Tulsa 44 (OT). Realized Tulsa margin -1; realized total 89. Signed margin error -16.1102; absolute margin error 16.1102. Signed total error +32.7877; absolute total error 32.7877.
+- Pittsburgh @ Virginia Tech — FIRST_FROZEN: Virginia Tech by 7.8503; projected total 51.6457. Final: Pittsburgh 35, Virginia Tech 33. Realized Virginia Tech margin -2; realized total 68. Signed margin error -9.8503; absolute margin error 9.8503. Signed total error +16.3543; absolute total error 16.3543.
+- Liberty @ Delaware and Penn State @ Northwestern: explicit v1.208 FIRST_FROZEN exclusions/unmodeled; finals are not used to manufacture predictions or score rows.
+
+Win-probability pairing is omitted for these rows where the exact frozen win-probability value was not recovered in this scoring step. No probability is invented. Champion unchanged.
