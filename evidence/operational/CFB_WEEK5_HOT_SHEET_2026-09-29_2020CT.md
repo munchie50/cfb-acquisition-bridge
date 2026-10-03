@@ -1,6 +1,6 @@
-# CFB Week 5 Hot Sheet — 2026-10-02 Friday Recovery Refresh
+# CFB Week 5 Hot Sheet — 2026-10-02 Friday Evening Availability Refresh
 
-Status: PROSPECTIVE BETA OPERATIONS OUTPUT / FRIDAY RECOVERY / FROZEN SUBSTRATE RECOVERED
+Status: PROSPECTIVE BETA OPERATIONS OUTPUT / FRIDAY EVENING AVAILABILITY / RUNNING FROM RECOVERED FROZEN SUBSTRATE
 
 Boundary: user-authorized prospective refresh beginning ~18:00 CT Friday. The missed 07:00/13:00 scheduled cycles are not reconstructed. Accepted v1.208 artifact 10897612260 was directly recovered; the 47 modeled FBS-vs-FBS Week 5 frozen predictions are authoritative. Explicit v1.208 exclusions remain separately labeled unmodeled. Current market/availability evidence is downstream only.
 
@@ -14,6 +14,14 @@ Boundary: user-authorized prospective refresh beginning ~18:00 CT Friday. The mi
 | Marshall @ James Madison | JMU -29.5 | JMU -18.5 (-107 Caesars / -105 DK ref.) | **BET NOW — -18.5 or better; max -115** |
 
 Execution plan: batch these into one Friday trip if the stated floors are available. Do not chase. No execution is inferred until actual wager evidence is established.
+
+## EVENING READBACK — 19:40 CT
+- **Five BET NOW candidates unchanged. No sixth Friday bet added.**
+- Vanderbilt @ Georgia total: WAIT — Jared Curtis will be evaluated pregame Saturday; no Friday resolution.
+- Texas Tech @ Colorado: WAIT — Texas Tech backup QB Thomas Castellanos ruled ineligible Friday; broader uncertainty remains.
+- Kentucky @ South Carolina: WAIT — Kentucky LB Alex Afari newly ineligible while South Carolina defensive-line concerns remain; mixed evidence.
+- Nebraska @ Maryland side: PASS/no chase unchanged.
+- Actual Caesars window must satisfy the persisted line/price floors before execution.
 
 ## IMPORTANT WAIT / PASS
 - Vanderbilt @ Georgia — **WAIT total** pending Vanderbilt QB Jared Curtis pregame availability; frozen total 57.6 vs market 50.5. Side PASS at Georgia -24.5.
