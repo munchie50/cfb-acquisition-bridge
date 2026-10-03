@@ -144,3 +144,29 @@ Downstream of the ~18:00 Friday Recovery baseline. No historical decision is rec
 - Kentucky-South Carolina: WAIT unchanged. Kentucky LB Alex Afari is newly ineligible; South Carolina defensive-line availability concerns remain. Mixed availability evidence does not earn a Friday bet. Reconcile Saturday.
 - Nebraska-Maryland side: PASS/no-chase unchanged.
 Portfolio posture: no sixth Friday wager is added. The existing five-candidate trip remains the complete Friday execution card, conditional on actual line/price cutoffs at the window. No execution recorded.
+
+
+## Saturday morning decision reconciliation — 2026-10-03 07:19 CT
+Prospective boundary: CFB_RUN_STARTED_2026-10-03_0719CT_MARKET_MONITOR. Current market source is the same-cycle persisted full-slate FantasyData consensus capture in CFB_MARKET_MONITOR_STATE. Champion remains v1.193 / v1.208 FIRST_FROZEN.
+
+### BET NOW — unchanged and currently within established cutoffs
+- Alabama @ Mississippi State — Mississippi State +5.5 (-113): BET NOW. Minimum +5.5 or better; max price -115. Current number qualifies. If unavailable at actual execution window, do not take +5 or worse.
+- Syracuse @ UConn — UConn +6.5 (-106): BET NOW. Minimum +6.5 or better; max price -115. Current number qualifies.
+- Ohio State @ Iowa — Iowa +14.5 (-117): BET NOW. Minimum +14 or better; prefer +14.5; max price -120. Current number qualifies. Do not take +13.5.
+- Eastern Michigan @ UMass — UMass -5.5 (-109): BET NOW. This is better than Friday's -6 reference and inside the established maximum -6.5 at -115 or better.
+- Marshall @ James Madison — James Madison -18 (-110): BET NOW. This is better than Friday's -18.5 reference and inside the established max -115 price.
+
+Execution state: NONE ESTABLISHED in CFB_EXECUTION_LEDGER as of this read. Do not infer that Friday's planned trip occurred. If these candidates were not already executed, one practical Saturday-morning execution window before the 11:00 CT games is the portfolio window; actual book numbers must satisfy each persisted cutoff. Do not chase.
+
+### WAIT with hard reconciliation/cutoff
+- Vanderbilt @ Georgia total — WAIT. Current total 50.5; frozen total 57.5598. Jared Curtis remains scheduled for pregame evaluation. Reconciliation deadline: 10:15 CT (approximately 90 minutes before 11:45 CT kickoff, aligned to final pregame availability reporting). Hard practical execution cutoff: 10:45 CT. At deadline resolve to actionable or PASS; no forced bet.
+- Kentucky @ South Carolina — WAIT. Current SC -2.5 / total 53.5. Kentucky has multiple confirmed absences including Alex Afari; South Carolina still carries defensive-line uncertainty including Gabriel Brownlow-Dindy and Dylan Stewart's suspension. Reconciliation deadline: 13:45 CT. Hard practical execution cutoff: 14:15 CT for 15:15 CT kickoff. Resolve to actionable or PASS.
+- Texas Tech @ Colorado — WAIT. Current TTU -13.5 / total 50.5. Thomas Castellanos is ineligible; Colorado QB choice/roster context remains decision-relevant. Reconciliation deadline: 17:00 CT. Hard practical execution cutoff: 17:30 CT for 18:30 CT kickoff. Resolve to actionable or PASS.
+
+### PASS / no-chase
+- Maryland @ Nebraska — PASS side at Nebraska -14.5. Frozen Engine Prediction (Frozen) fair spread Nebraska -10.5205; current market is beyond the frozen fair margin. Nebraska remains mandatory Hot Sheet display.
+- Notre Dame @ North Carolina and Michigan @ Minnesota — Friday PASS remains closed; no reopening from raw frozen/market disagreement.
+- Other Saturday morning modeled games not listed BET NOW or WAIT remain PASS at this morning execution boundary rather than drifting as INCONCLUSIVE.
+- Afternoon/evening modeled games not already resolved remain governed by their applicable later-window review; no new threshold is invented solely from raw model/market disagreement.
+
+Portfolio rule: no separate later Saturday trip is justified yet by the three WAIT games. A later trip requires an earned actionable transition at a stated cutoff and must be considered against the 1–2 trip/week objective. No execution is inferred.
