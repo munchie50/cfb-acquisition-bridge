@@ -130,3 +130,17 @@ Boundary: prospective only. The missed Friday 13:00 scheduled reconciliation is 
 Portfolio posture: the five BET NOW candidates are intended to be batched into one Friday execution trip if the stated line/price floors are available. No execution is recorded until actual wager evidence is established.
 
 - Pittsburgh at Virginia Tech — PASS at the Friday recovery boundary. Frozen Engine Virginia Tech by 7.8503 / total 51.6457 versus current broad Virginia Tech about -3 / 54.5, but the governed 13:00 reconciliation was missed and the practical execution window is too compressed to manufacture a late trip. Preserve as PASS; do not chase immediately before kickoff.
+
+
+## 2026-10-02 ~19:40 CT Friday evening availability reconciliation
+Downstream of the ~18:00 Friday Recovery baseline. No historical decision is reconstructed.
+- Mississippi State +5.5 or better (max -115): BET NOW unchanged.
+- UConn +6.5 or better (max -115): BET NOW unchanged.
+- Iowa +14 or better, prefer +14.5 (max -120): BET NOW unchanged; current Friday reporting still shows +14.5.
+- UMass -6 preferred, maximum -6.5 at -115: BET NOW unchanged.
+- James Madison -18.5 or better (max -115): BET NOW unchanged.
+- Vanderbilt-Georgia total: WAIT unchanged. Trigger remains final Jared Curtis pregame status; hard cutoff remains final practical execution window before kickoff. Do not bet the total tonight solely from the frozen/market gap.
+- Texas Tech-Colorado: WAIT unchanged. New information: Texas Tech backup QB Thomas Castellanos ruled ineligible. This does not resolve the broader Colorado QB/roster uncertainty or earn an actionable threshold tonight. Reconcile Saturday before the later kickoff.
+- Kentucky-South Carolina: WAIT unchanged. Kentucky LB Alex Afari is newly ineligible; South Carolina defensive-line availability concerns remain. Mixed availability evidence does not earn a Friday bet. Reconcile Saturday.
+- Nebraska-Maryland side: PASS/no-chase unchanged.
+Portfolio posture: no sixth Friday wager is added. The existing five-candidate trip remains the complete Friday execution card, conditional on actual line/price cutoffs at the window. No execution recorded.
