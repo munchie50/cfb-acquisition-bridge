@@ -183,3 +183,68 @@ Observation class: INTERMEDIATE / USER_AUTHORIZED_EVENING_AVAILABILITY. Downstre
 - Kentucky at South Carolina: late search recovered Kentucky LB Alex Afari becoming ineligible after an NCAA appeal, while South Carolina defensive-line availability concerns remain part of the matchup context. Conflicting availability changes do not earn a new Friday action; WAIT remains.
 - No sufficiently newer executable-price evidence was recovered to overwrite the ~18:00 exact-price references for Mississippi State, UConn, Iowa, UMass or James Madison. Their established minimum acceptable line/price cutoffs remain authoritative; user should verify the actual Caesars window before execution.
 No observation altered Champion/FIRST_FROZEN state. No execution inferred.
+
+
+## Saturday prospective full-slate capture — 2026-10-03 07:19 CT
+Observation class: SCHEDULED MARKET MONITOR / PROSPECTIVE SATURDAY.
+Prospective boundary: evidence/run_receipts/CFB_RUN_STARTED_2026-10-03_0719CT_MARKET_MONITOR.md.
+Source: FantasyData NCAA Football Odds consensus board retrieved after RUN_STARTED on 2026-10-03; spread/price, moneyline, total/price recorded below. Source semantics are consensus/executable-reference evidence, not a claim of universal book identity. CBS current Week 5 odds was used as a broad cross-check on priority games. Champion remains accepted v1.193 / v1.208 FIRST_FROZEN; no market information alters frozen predictions.
+
+Current Saturday modeled-slate observations:
+- Memphis @ Charlotte: MEM -20.5 (-111), CHA +20.5 (-110); ML MEM -2122 / CHA +955; total 52.5 O-108/U-114.
+- Alabama @ Mississippi State: ALA -5.5 (-109), MSST +5.5 (-113); ML ALA -217 / MSST +177; total 60.5 O-114/U-108.
+- Syracuse @ UConn: SYR -6.5 (-115), UConn +6.5 (-106); ML SYR -264 / UConn +211; total 50.5 O-110/U-112.
+- Michigan @ Minnesota: MICH -6.5 (-107), MINN +6.5 (-115); ML MICH -232 / MINN +189; total 43.5 O-110/U-111.
+- Notre Dame @ North Carolina: ND -21 (-112), UNC +21 (-110); ML ND -2776 / UNC +1093; total 46.5 O-113/U-107.
+- Middle Tennessee @ Kansas: MTSU +20.5 (-108), KU -20.5 (-112); ML MTSU +959 / KU -2083; total 50.5 O-110/U-112.
+- Stanford @ Wake Forest: STAN +14.5 (-110), WAKE -14.5 (-110); ML STAN +464 / WAKE -650; total 53.5 O-113/U-109.
+- West Virginia @ Iowa State: WVU +3 (-106), ISU -3 (-116); ML WVU +134 / ISU -163; total 53.5 O-115/U-108.
+- UCF @ Houston: UCF +11.5 (-112), HOU -11.5 (-112); ML UCF +331 / HOU -443; total 51.0 O-113/U-109.
+- Boston College @ SMU: BC +21.5 (-113), SMU -21.5 (-107); ML BC +965 / SMU -1955; total 55.5 O-108/U-114.
+- Michigan State @ Wisconsin: MSU +9.5 (-110), WISC -9.5 (-112); ML MSU +281 / WISC -369; total 43.5 O-110/U-112.
+- Vanderbilt @ Georgia: VAN +25 (-110), UGA -25 (-112); ML VAN +1471 / UGA -5633; total 50.5 O-114/U-108.
+- Western Michigan @ Buffalo: WMU -12.5 (-112), BUF +12.5 (-112); ML WMU -612 / BUF +435; total 46.5 O-109/U-114.
+- Toledo @ Ball State: TOL -21 (-107), BALL +21 (-115); ML TOL -3559 / BALL +967; total 51.5 O-113/U-109.
+- Akron @ Central Michigan: AKR +7 (-114), CMU -7 (-109); ML AKR +216 / CMU -268; total 47.5 O-108/U-114.
+- Ohio @ Kent State: OHIO -3.5 (-109), KENT +3.5 (-113); ML OHIO -174 / KENT +142; total 50.5 O-111/U-111.
+- Wyoming @ North Dakota State: WYO +17 (-110), NDSU -17 (-110); ML WYO +695 / NDSU -1150; total 44.5 O-110/U-110.
+- Old Dominion @ Georgia State: ODU +2.5 (-110), GAST -2.5 (-112); ML ODU +115 / GAST -140; total 51.5 O-109/U-113.
+- Virginia @ Florida State: UVA -1.5 (-110), FSU +1.5 (-110); ML UVA -123 / FSU +101; total 51.5 O-109/U-112.
+- Auburn @ Tennessee: AUB +6.5 (-107), TENN -6.5 (-114); ML AUB +205 / TENN -253; total 54.5 O-112/U-112.
+- Louisville @ NC State: LOU -3.5 (-104), NCST +3.5 (-119); ML LOU -166 / NCST +136; total 58.0 O-109/U-113.
+- Eastern Michigan @ UMass: EMU +5.5 (-111), UMass -5.5 (-109); ML EMU +179 / UMass -222; total 48.5 O-111/U-111.
+- Ohio State @ Iowa: OSU -14.5 (-107), IOWA +14.5 (-117); ML OSU -696 / IOWA +477; total 45.5 O-110/U-111.
+- Florida @ Missouri: FLA -5.5 (-112), MIZ +5.5 (-110); ML FLA -221 / MIZ +178; total 57.5 O-113/U-109.
+- Bowling Green @ Miami (OH): BGSU +12.5 (-110), M-OH -12.5 (-112); ML BGSU +422 / M-OH -591; total 43.0 O-110/U-110.
+- Marshall @ James Madison: MAR +18 (-110), JMU -18 (-110); ML MAR +730 / JMU -1280; total 56.5 O-111/U-112.
+- UTEP @ New Mexico: UTEP +22.5 (-110), UNM -22.5 (-112); ML UTEP +1170 / UNM -4131; total 48.5 O-112/U-112.
+- Maryland @ Nebraska: MD +14.5 (-110), NEB -14.5 (-110); ML MD +503 / NEB -756; total 52.5 O-110/U-110.
+- Purdue @ Illinois: PUR +10 (-112), ILL -10 (-110); ML PUR +318 / ILL -422; total 62.5 O-112/U-110.
+- Kentucky @ South Carolina: UK +2.5 (-107), SC -2.5 (-115); ML UK +117 / SC -143; total 53.5 O-114/U-108.
+- Oregon State @ Colorado State: ORST -6.5 (-113), CSU +6.5 (-110); ML ORST -248 / CSU +201; total 62.5 O-106/U-114.
+- UTSA @ Rice: UTSA -13 (-113), RICE +13 (-110); ML UTSA -591 / RICE +424; total 56.0 O-110/U-110.
+- Arkansas @ Texas A&M: ARK +14 (-111), TAMU -14 (-111); ML ARK +457 / TAMU -650; total 50.5 O-107/U-113.
+- BYU @ TCU: BYU -6 (-111), TCU +6 (-112); ML BYU -233 / TCU +189; total 47.5 O-114/U-108.
+- UL Monroe @ South Alabama: ULM +14 (-107), USA -14 (-115); ML ULM +490 / USA -726; total 56.5 O-111/U-111.
+- Washington @ USC: WASH +9.5 (-109), USC -9.5 (-113); ML WASH +297 / USC -381; total 58.5 O-108/U-114.
+- Texas Tech @ Colorado: TTU -13.5 (-110), COLO +13.5 (-110); ML TTU -572 / COLO +409; total 50.5 O-108/U-115.
+- Utah State @ Boise State: USU +19.5 (-112), BOISE -19.5 (-110); ML USU +971 / BOISE -2106; total 51.5 O-111/U-110.
+- Arkansas State @ Louisiana: ARKST +6.5 (-109), UL -6.5 (-113); ML ARKST +195 / UL -244; total 48.5 O-107/U-116.
+- Fresno State @ Washington State: FRES +2 (-112), WSU -2 (-111); ML FRES +105 / WSU -127; total 45.5 O-110/U-111.
+- Texas State @ San Diego State: TXST -9.5 (-113), SDSU +9.5 (-109); ML TXST -392 / SDSU +302; total 57.5 O-110/U-112.
+- Baylor @ Arizona State: BAY +3.5 (-108), ASU -3.5 (-115); ML BAY +148 / ASU -180; total 48.5 O-111/U-111.
+- Cincinnati @ Arizona: CIN +7 (-117), ARIZ -7 (-106); ML CIN +207 / ARIZ -257; total 55.5 O-111/U-111.
+- San Jose State @ Hawai'i: SJSU +3 (-111), HAW -3 (-111); ML SJSU +128 / HAW -155; total 50.5 O-114/U-108.
+
+Priority movement vs Friday persisted references:
+- Mississippi State remains +5.5 and price -113: within established +5.5-or-better / max -115 cutoff.
+- UConn remains +6.5 and price -106: within established cutoff.
+- Iowa remains +14.5 and price -117: within established +14-or-better / max -120 cutoff.
+- UMass improved from -6 reference to -5.5 (-109): within established maximum -6.5 / max -115 cutoff.
+- James Madison improved from -18.5 reference to -18 (-110): within established cutoff.
+- Vanderbilt/Georgia total remains 50.5; Jared Curtis remains pending pregame evaluation, so WAIT trigger remains live.
+- Nebraska remains -14.5 / 52.5; side PASS/no-chase remains supported by the frozen fair margin of Nebraska -10.5.
+- Texas Tech/Colorado remains TTU -13.5 / 50.5.
+- Kentucky/South Carolina remains SC -2.5 / 53.5.
+
+No market observation altered Champion/FIRST_FROZEN state.
