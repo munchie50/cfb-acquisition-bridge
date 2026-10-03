@@ -98,3 +98,9 @@ v1.247 is now backed by recurring repository workflows:
 - Tuesday: `cfb_weekly_tuesday_candidate_freeze.yml` — fresh same-cutoff raw boundary + complete S0 outputs + v4 context, explicitly NOT_ACCEPTED.
 - Wednesday: `cfb_weekly_wednesday_fallback.yml` — no-op after recent Tuesday success; otherwise one bounded Tuesday-workflow dispatch.
 Automated generation never equals acceptance. Fresh weekly candidate artifacts require independent reconciliation/persisted acceptance before downstream S2_K1 consumer use. The exact S2_K1 prediction consumer is not yet an accepted executable; do not fabricate it into automation. S2 outcome scoring remains separately gated.
+
+
+## 2026-10-03 GitHub persistence-mechanics correction
+Active procedure: `evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md`.
+For connected GitHub persistence, new append-only receipt/evidence paths use create_file followed by independent fetch_file readback. Existing canonical surfaces use immediate fetch_file, exact current blob SHA, serialized update_file with complete append-preserving content, then independent fetch_file readback. Stale-SHA conflicts fail closed and require re-fetch/reconciliation; never overwrite competing changes.
+This corrects the repeated unsupported/generic write invocation failure. v1.239/v1.242 completion and evidence semantics remain unchanged. Scientific effect: NONE. Champion effect: NONE.
