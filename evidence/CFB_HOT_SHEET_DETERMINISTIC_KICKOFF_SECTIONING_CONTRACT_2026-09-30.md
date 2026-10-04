@@ -45,3 +45,25 @@ Before persistence:
 CBS Week 5 schedule authority establishes Thursday Oct. 1 games Western Kentucky at New Mexico State (8:00 PM ET = 7:00 PM CT) and North Texas at Tulsa (9:00 PM ET = 8:00 PM CT). Friday Oct. 2 establishes Liberty at Delaware and Pittsburgh at Virginia Tech at 7:00 PM ET = 6:00 PM CT, plus Penn State at Northwestern at 8:00 PM ET = 7:00 PM CT. These must render as actual Thursday/Friday rows rather than placeholders.
 
 Installed under Production Routine v5 after the 2026-09-30 Hot Sheet presentation defect was observed.
+
+
+## 2026-10-04 prospective football-week day coverage correction
+Trigger: the Sunday 2026-10-04 07:05 CT Market Monitor recovered authoritative Week 6 Tuesday and Wednesday modeled kickoffs. The prior six-bucket contract could not classify those known kickoffs without omission or false relabeling and correctly failed closed.
+
+This section prospectively supersedes **Required mutually exclusive sections** above for all future Hot Sheets. Historical Hot Sheets and historical RUN_INCOMPLETE receipts are not rewritten.
+
+### Required mutually exclusive sections — superseding set
+1. NEXT UP — TUESDAY: every governed Tuesday game.
+2. NEXT UP — WEDNESDAY: every governed Wednesday game.
+3. NEXT UP — THURSDAY: every governed Thursday game.
+4. NEXT UP — FRIDAY: every governed Friday game.
+5. NEXT UP — SATURDAY MORNING: every governed Saturday game with CT kickoff before 12:00.
+6. NEXT UP — SATURDAY AFTERNOON: every governed Saturday game with CT kickoff at or after 12:00 and before 17:00.
+7. NEXT UP — SATURDAY EVENING/NIGHT: every governed Saturday game with CT kickoff at or after 17:00.
+8. UNRESOLVED KICKOFF: governed game whose authoritative kickoff cannot be established. Never guess a bucket.
+
+Exactly-once validation now applies across all eight buckets. Known Tuesday/Wednesday kickoffs may not be placed in UNRESOLVED KICKOFF or relabeled into Thursday-Saturday. If a future governed football-week schedule contains a known kickoff on a day not covered by this superseding set, fail closed and amend the presentation authority prospectively rather than omit or misclassify the game.
+
+Decision cadence follows the same principle: Tuesday/Wednesday games require a realistic pre-kickoff reconciliation deadline and final practical execution cutoff based on their actual kickoff window. Do not inherit a Thursday-Saturday deadline mechanically.
+
+Scientific/Champion effect: NONE. Presentation/operational control only.
