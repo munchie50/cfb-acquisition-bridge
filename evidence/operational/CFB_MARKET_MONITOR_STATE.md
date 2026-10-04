@@ -248,3 +248,7 @@ Priority movement vs Friday persisted references:
 - Kentucky/South Carolina remains SC -2.5 / 53.5.
 
 No market observation altered Champion/FIRST_FROZEN state.
+
+
+## Persistence health probe — 2026-10-03 21:55 CT
+Operational-only diagnostic. Existing-file SHA-guarded append path verified after the 13:00 CT rejection. No market, decision, execution, outcome, Champion, FIRST_FROZEN, or scientific state change. PROBE_PASS
