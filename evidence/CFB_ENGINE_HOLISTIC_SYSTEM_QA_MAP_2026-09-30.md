@@ -258,3 +258,30 @@ Market Monitor / Hot Sheet producer must:
 ### v6 demonstration result
 Interface/Boundary Ancestry Check and expected-vs-actual reconciliation both behaved as intended: they recovered the supposedly unavailable accepted substrate and exposed the broader identity-boundary defect before another live retry.
 Status: TEST ROUTINE v6 CONTROL USEFUL / THIS CASE DEMONSTRATED_PASS.
+
+
+## Improvement finding — premature correction closure / 2026-10-03
+
+Finding: repeated Market Monitor persistence work exposed a procedural weakness in how corrections were being described. Successful primitive diagnostics and even one successful real cycle were allowed to support language broader than the evidence. The subsequent 13:00 CT production cycle exposed a different condition in the same persistence failure class.
+
+Classification: ROUTINE / QA CLOSURE-CRITERIA GAP, not Champion/model science defect.
+
+Installed candidate improvement:
+- Routine v6 section 12, Failure-Class Closure and Representative-Load Gate.
+- Requires failure-envelope classification, primitive test, material boundary tests, representative production-load demonstration, end-to-end demonstration, independent reconciliation, and bounded status language before FIXED/CLOSED.
+- A later failure in the same class reopens the lifecycle at the newly exposed causal layer rather than being treated as an unrelated surprise.
+- Existing v1.133 repeated-friction escalation remains mandatory.
+
+Current Market Monitor persistence lifecycle:
+- root failure class: canonical persistence/integration reliability;
+- create-file primitive: VERIFIED;
+- existing-file SHA-guarded primitive: VERIFIED;
+- minimal same-canonical-file post-failure probe: VERIFIED;
+- content-envelope hardening: PERSISTED / READ_BACK;
+- representative scheduled-load demonstration under hardening: PENDING;
+- full end-to-end closure: PENDING.
+Therefore current status must not be described as fully fixed.
+
+Whole-system value: this gate applies to future infrastructure/integration corrections generally, preventing toy-test success from being mistaken for production closure. It is procedural candidate learning only and does not mutate Champion, FIRST_FROZEN, model science, or accepted production routine v5.
+
+Natural next proof: next qualified Market Monitor scheduled cycle. Do not manufacture historical/prospective market observations solely to prove the routine.
