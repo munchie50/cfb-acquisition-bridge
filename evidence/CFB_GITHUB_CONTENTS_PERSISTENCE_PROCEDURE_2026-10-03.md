@@ -29,3 +29,24 @@ Prior statements that the connected repository was generally unable to write are
 
 Scientific effect: NONE.
 Champion effect: NONE.
+
+
+## 2026-10-03 canonical-update hardening
+Observed evidence:
+- 07:19 CT: full canonical existing-file updates succeeded using immediate fetch -> exact blob SHA -> update -> readback.
+- 13:00 CT: two attempts to append a larger externally researched market delta to CFB_MARKET_MONITOR_STATE were rejected by the connected write-safety layer.
+- 21:55 CT diagnostic: the same canonical file accepted and independently read back a minimal operational-only SHA-guarded append.
+
+Classification: connector write-safety/content-envelope rejection, not repository-wide write denial, branch failure, persistent permission failure, or broken existing-file update primitive. The exact proprietary safety trigger is not exposed, so do not claim a narrower cause without evidence.
+
+Required hardening for scheduled runs:
+1. Keep each canonical mutation to the smallest governed delta required for that surface. Do not resend/rewrite unrelated historical prose beyond the complete file content mechanically required by update_file.
+2. Separate market observations, decision transitions, Hot Sheet rendering, settlement, and diagnostics into their own serialized surface writes; never combine them into one oversized semantic mutation.
+3. If a canonical update is rejected, immediately re-fetch the same path and verify whether any competing change occurred.
+4. If SHA is unchanged, retry once with a reduced/minimal delta that preserves the same governed facts and provenance without optional explanatory prose. This is a persistence-envelope retry, not permission to omit required data, alter semantics, or backfill.
+5. If the reduced retry also fails, terminate RUN_INCOMPLETE with the rejected surface named. Do not proceed as though downstream surfaces incorporated the missing state.
+6. Never split one logical market observation in a way that loses timestamp/source/book/availability/executability/provenance. Required observation fields remain atomic.
+7. Never retry after a deadline by reconstructing prospective state from outcomes. Historical incomplete cycles stay incomplete.
+8. A diagnostic probe may establish write-path health but cannot upgrade a historical RUN_INCOMPLETE to RUN_PASS.
+
+Scientific effect: NONE. Champion effect: NONE.
