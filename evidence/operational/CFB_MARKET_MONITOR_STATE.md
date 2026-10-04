@@ -252,3 +252,27 @@ No market observation altered Champion/FIRST_FROZEN state.
 
 ## Persistence health probe — 2026-10-03 21:55 CT
 Operational-only diagnostic. Existing-file SHA-guarded append path verified after the 13:00 CT rejection. No market, decision, execution, outcome, Champion, FIRST_FROZEN, or scientific state change. PROBE_PASS
+
+
+## Week 6 opening-board capture — 2026-10-04 ~08:40 CT
+Observation class: FIRST_QUALIFIED_MARKET_OBSERVATION where an exact number is listed below; otherwise NOT_YET_AVAILABLE. Source: CBS Week 6 scoreboard retrieved prospectively after manual RUN_STARTED. CBS board was checked across the coming FBS slate; no moneyline/price was treated as established where the recovered board did not display it. Current CBS schedule is used for operational kickoff placement only; frozen prediction bytes remain unchanged.
+- Southern Miss @ Troy: Troy -10.5; total 49.5.
+- Jacksonville State @ Kennesaw State: Kennesaw State +4.5; total 49.5.
+- New Mexico State @ FIU: FIU -4.5; total 47.5.
+- Florida State @ Louisville: Louisville -7; total 58.5.
+- Iowa @ Washington: Washington -1.5; total 42.5.
+- Iowa State @ BYU: BYU -14.5; total 50.5.
+- Texas A&M @ Missouri: Missouri -2.5; total 49.5.
+- South Carolina @ Florida: Florida -13.5; total 58.5.
+- Illinois @ Michigan State: Michigan State +2.5; total 51.5.
+- Ole Miss @ Vanderbilt: Vanderbilt +10.5; total 57.5.
+- Stanford @ Notre Dame: Notre Dame -35.5; total 55.5.
+- Texas @ Oklahoma: Oklahoma +9.5; total 41.5.
+- UCLA @ Oregon: Oregon -13; total 61.5.
+- Maryland @ Ohio State: Ohio State -34.5; total 55.5.
+- Tennessee @ Arkansas: Arkansas +14.5; total 54.5.
+- LSU @ Kentucky: Kentucky +10.5; total 52.5.
+- Georgia @ Alabama: Alabama +1.5; total 57.5.
+- USC @ Penn State: Penn State +2.5; total 55.5.
+- Indiana @ Nebraska is an explicit v1.208 exclusion/unmodeled row; current board Indiana -8.5 / 51.5 is preserved only as downstream operational context, not as a modeled disagreement.
+Other modeled Week 6 games: exact qualified spread/total not established from the recovered board in this capture; no number is invented. No market observation altered Champion/FIRST_FROZEN state.
