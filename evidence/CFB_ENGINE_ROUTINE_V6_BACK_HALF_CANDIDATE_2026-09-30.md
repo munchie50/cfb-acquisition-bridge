@@ -166,3 +166,34 @@ Expected vs actual: PASS.
 Demonstration result: `INTERFACE_BOUNDARY_ANCESTRY_CHECK = DEMONSTRATED_PASS` for this case.
 
 Remaining debt: correct the prospective S2_K1 consumer to compose the accepted team-side substrate with the accepted target ledger and statically reconcile their identities before any live execution.
+
+
+## 12. Failure-Class Closure and Representative-Load Gate — candidate addition 2026-10-03
+
+Trigger: a material correction addresses infrastructure, persistence, scheduling, integration, producer behavior, or another mechanism whose failure can vary by payload, boundary condition, workload, timing, or downstream consumer.
+
+A reproduction-specific PASS is not sufficient evidence that the failure class is closed.
+
+Before using FIXED/CLOSED language for that class:
+1. **Classify the failure envelope.** State what is actually proven and what remains unknown. Distinguish mechanism failure from payload/content envelope, scale, timing, concurrency, permission, stale-state, and downstream-integration possibilities when applicable.
+2. **Test the corrected primitive.** Verify the smallest deterministic reproduction of the failed mechanism.
+3. **Test material boundaries.** Exercise known materially different conditions that could reproduce the class, using existing evidence/static replay before creating live work. Do not claim a proprietary/opaque trigger more narrowly than evidence permits.
+4. **Representative-load demonstration.** Execute the corrected path with a workload representative of real production complexity/size, not only a toy diagnostic. When only a natural scheduled event can supply the representative workload, status is DEMONSTRATION_PENDING.
+5. **End-to-end demonstration.** For shared infrastructure, prove the correction through the complete affected producer-to-consumer path, including persistence/readback and terminal evidence required by that path.
+6. **Independent reconciliation.** Compare expected vs actual identities, cardinalities, persistence locations, readbacks, terminal state, and any relevant invariants.
+7. **Closure language discipline.** Until steps 1-6 applicable to the case pass, report the narrow proven state: e.g. PRIMITIVE_VERIFIED, BOUNDARY_TEST_PENDING, REPRESENTATIVE_LOAD_PENDING, END_TO_END_PENDING, or DEMONSTRATION_PENDING. Do not collapse these into FIXED.
+
+If a later representative run exposes another failure mode in the same class, reopen the lifecycle record at the newly discovered causal layer rather than treating it as an unrelated surprise or merely stacking another patch.
+
+This gate strengthens, and does not replace, v1.133 repeated-friction escalation and this candidate's existing Demonstration Gate.
+
+### 2026-10-03 motivating case — Market Monitor persistence
+- Toy/primitive evidence proved create_file/readback and SHA-guarded update_file/readback.
+- A 07:19 CT real cycle reached RUN_PASS.
+- A later 13:00 CT cycle exposed a connected write-safety/content-envelope rejection on a larger canonical mutation.
+- A later minimal append to the same canonical file passed, ruling out persistent repository permission/branch/update-primitive failure but not identifying the opaque safety trigger.
+- Correct classification after the minimal diagnostic is therefore **PRIMITIVE_VERIFIED / HARDENING_PERSISTED / REPRESENTATIVE_SCHEDULED_LOAD_DEMONSTRATION_PENDING**, not fully FIXED.
+- Closure requires a subsequent representative scheduled Market Monitor cycle to persist/read back applicable canonical surfaces and Hot Sheet and end in a read-back terminal RUN_PASS under the hardened procedure.
+
+Scientific effect: NONE.
+Champion effect: NONE.
