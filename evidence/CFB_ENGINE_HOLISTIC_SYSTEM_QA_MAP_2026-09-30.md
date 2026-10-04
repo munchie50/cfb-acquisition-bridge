@@ -285,3 +285,23 @@ Therefore current status must not be described as fully fixed.
 Whole-system value: this gate applies to future infrastructure/integration corrections generally, preventing toy-test success from being mistaken for production closure. It is procedural candidate learning only and does not mutate Champion, FIRST_FROZEN, model science, or accepted production routine v5.
 
 Natural next proof: next qualified Market Monitor scheduled cycle. Do not manufacture historical/prospective market observations solely to prove the routine.
+
+
+## Pass 6 — football-week Hot Sheet day-coverage correction — 2026-10-04
+Trigger: scheduled Sunday 07:05 CT Market Monitor terminated RUN_INCOMPLETE after recovering authoritative Week 6 Tuesday/Wednesday modeled kickoffs that the prior six-bucket sectioning contract could not truthfully classify.
+
+Classification: PRESENTATION / OPERATIONAL GOVERNANCE DEFECT; no Champion/science mutation.
+
+Correction:
+- existing deterministic sectioning authority updated in place prospectively with Tuesday and Wednesday first-class sections;
+- exactly-once invariant now spans TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY MORNING, SATURDAY AFTERNOON, SATURDAY EVENING/NIGHT, UNRESOLVED KICKOFF;
+- known Tuesday/Wednesday kickoffs cannot be relabeled or omitted;
+- Tuesday/Wednesday games receive realistic pre-kickoff reconciliation/final execution cutoffs based on actual kickoff windows;
+- live CFB Market Monitor producer instructions updated to consume the corrected authority;
+- task topology unchanged: four active recurring production tasks, Market Monitor remains sole primary Hot Sheet producer, no fifth watchdog enabled.
+
+Persistence/readback: sectioning correction commit c948d0b380e29b3a4d381858851ea8c9adbe5c3d; readback blob e67ac6c6d6b32ff831486c833cbdc4918bd77f11 confirms Tuesday/Wednesday correction.
+
+Historical Sunday 07:05 RUN_INCOMPLETE remains immutable. Current state: CORRECTED / PERSISTED / READ_BACK / PRODUCER_INSTALLED / PROSPECTIVE_DEMONSTRATION_PENDING.
+
+Next proof: a fresh prospective Market Monitor cycle must recover Week 6, classify the complete governed slate exactly once under the corrected sections, persist/read back canonical surfaces and Hot Sheet, and terminate with a conforming receipt. This demonstration may be user-authorized manually because the Sunday opening-board capture is operationally useful now; it must begin from a new RUN_STARTED and must not backfill the 07:05 cycle.
