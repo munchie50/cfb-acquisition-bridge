@@ -170,3 +170,16 @@ Execution state: NONE ESTABLISHED in CFB_EXECUTION_LEDGER as of this read. Do no
 - Afternoon/evening modeled games not already resolved remain governed by their applicable later-window review; no new threshold is invented solely from raw model/market disagreement.
 
 Portfolio rule: no separate later Saturday trip is justified yet by the three WAIT games. A later trip requires an earned actionable transition at a stated cutoff and must be considered against the 1–2 trip/week objective. No execution is inferred.
+
+
+## Week 6 Sunday opening-board decision boundary — 2026-10-04 ~08:40 CT
+All 49 accepted modeled Week 6 rows begin OBSERVATION-STAGE / INCONCLUSIVE. Raw frozen-vs-market disagreement is an investigation flag only; no BET EARLY/BET NOW is manufactured from the opening board alone.
+Reconciliation deadlines by current authoritative kickoff section:
+- Tuesday (1 modeled game): Monday 13:00 CT review; must resolve to actionable, governed WAIT with explicit trigger/hard cutoff, or PASS by Tuesday final practical execution window.
+- Wednesday (2): Tuesday 13:00 CT review; final practical Wednesday cutoff.
+- Thursday (3): Wednesday evening availability review; final practical Thursday cutoff.
+- Friday (5): Thursday evening review; final practical Friday cutoff.
+- Saturday morning (7): Friday evening review; final practical pre-kickoff cutoff.
+- Saturday afternoon (17): Saturday 07:00 review; final practical pre-kickoff cutoff.
+- Saturday evening/night (14): Saturday 13:00 review; final practical pre-kickoff cutoff.
+Exactly-once modeled count = 49; UNRESOLVED kickoff = 0. Indiana @ Nebraska is separately excluded/unmodeled under v1.208 and cannot receive a manufactured frozen prediction. Portfolio/trip optimization remains 1–2 trips/week; early-week games do not automatically justify an extra trip. No execution inferred.
