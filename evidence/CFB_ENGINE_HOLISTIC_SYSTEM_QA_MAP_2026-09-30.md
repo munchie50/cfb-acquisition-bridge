@@ -305,3 +305,21 @@ Persistence/readback: sectioning correction commit c948d0b380e29b3a4d381858851ea
 Historical Sunday 07:05 RUN_INCOMPLETE remains immutable. Current state: CORRECTED / PERSISTED / READ_BACK / PRODUCER_INSTALLED / PROSPECTIVE_DEMONSTRATION_PENDING.
 
 Next proof: a fresh prospective Market Monitor cycle must recover Week 6, classify the complete governed slate exactly once under the corrected sections, persist/read back canonical surfaces and Hot Sheet, and terminate with a conforming receipt. This demonstration may be user-authorized manually because the Sunday opening-board capture is operationally useful now; it must begin from a new RUN_STARTED and must not backfill the 07:05 cycle.
+
+
+## Pass 7 — scheduled Market Monitor post-start termination recurrence — 2026-10-05
+Trigger: natural scheduled Market Monitor cycles 2026-10-04 13:00 CT and 2026-10-05 07:03 CT each persisted/read back RUN_STARTED, then produced no later repository mutation or terminal receipt; after the 2026-10-05 scheduler invocation the Market Monitor was again observed disabled.
+
+Comparison boundary:
+- 2026-10-04 08:40 CT user-authorized manual prospective Market Monitor: end-to-end RUN_PASS, including canonical market update, decision update, full Hot Sheet persistence/readback, terminal receipt.
+- 2026-10-04 13:00 CT natural scheduled Market Monitor: RUN_STARTED only; no terminal receipt.
+- 2026-10-05 07:03 CT natural scheduled Market Monitor: RUN_STARTED only; no terminal receipt.
+- 2026-10-04 09:00 Sunday QA: connector safety rejected required review/scorecard writes, but workflow still persisted a terminal RUN_INCOMPLETE. Therefore connector write-safety is a real overlapping defect class but does not by itself explain scheduled Market Monitor disappearing immediately after its first successful receipt write without terminalization.
+
+Classification: REPRODUCIBLE SCHEDULED-EXECUTION / CONTROL-PLANE POST-START TERMINATION; exact terminating actor/reason remains UNOBSERVABLE from available task/repository evidence. Scope is narrower than Engine/model logic: manual execution can complete representative production load. Do not claim root cause beyond this boundary.
+
+Governed recovery applied under existing Health ownership rule: Market Monitor enabled state restored only; authority, ownership, prompt scope, and 07:00/13:00 CT cadence unchanged. Immediate topology readback: Market Monitor enabled; Health, Evening Availability, Weekly QA enabled; redundant Receipt Watch and Hot Sheet Refresh disabled. Exactly four active recurring production tasks; one primary Hot Sheet producer; no fifth watchdog enabled.
+
+Historical start-only cycles remain incomplete and are not replayed/backfilled. Next natural proof is the 2026-10-05 13:00 CT scheduled Market Monitor. If it again terminates after RUN_STARTED or disables itself, treat as third reproduced scheduled-control failure and escalate away from Engine-level prompt/persistence tuning toward scheduler/platform containment; do not keep patching model/Hot Sheet logic.
+
+Lifecycle: REOPENED / REPRODUCED / BOUNDARY_NARROWED / ENABLE_STATE_RECOVERED / ROOT_ACTOR_UNOBSERVABLE / NATURAL_DEMONSTRATION_PENDING.
