@@ -158,3 +158,16 @@ Create-file persistence succeeded and direct repository readback confirmed ACTIV
 ### Disposition
 CLOSED FOR SURFACE EXISTENCE / PROSPECTIVE DEMONSTRATION PENDING.
 The structural debt (no durable close surface) is corrected. Full LEARNED closure requires a future genuinely pre-kickoff qualified CLOSE observation to be appended and independently read back under normal operation.
+
+
+## October 4 QA continuation — terminal receipt closure semantics — 2026-10-05
+
+### Correction
+Formalized the already-demonstrated two-phase terminal closure pattern in evidence/CFB_TERMINAL_RUN_RECEIPT_CLOSURE_CONTRACT_2026-10-05.md. Historical receipts remain immutable. RUN_PASS now requires applicable surface readback plus independent terminal-receipt-candidate readback before a separate RUN_CLOSURE certification.
+
+### Verification
+Contract persisted and direct readback confirmed the two-phase rule, immutable-history rule, and prospective-demonstration requirement.
+
+### Disposition
+STRUCTURAL CORRECTION VERIFIED / PROSPECTIVE NATURAL-SCHEDULE DEMONSTRATION PENDING.
+The 2026-09-27 13:13 Sunday Market receipt remains historical evidence and is not rewritten; because it declared RUN_PASS while its own closure proof was pending, audit consumers must not use it as sole proof of fully closed completion absent a later conforming closure record.
