@@ -171,3 +171,15 @@ Contract persisted and direct readback confirmed the two-phase rule, immutable-h
 ### Disposition
 STRUCTURAL CORRECTION VERIFIED / PROSPECTIVE NATURAL-SCHEDULE DEMONSTRATION PENDING.
 The 2026-09-27 13:13 Sunday Market receipt remains historical evidence and is not rewritten; because it declared RUN_PASS while its own closure proof was pending, audit consumers must not use it as sole proof of fully closed completion absent a later conforming closure record.
+
+
+## October 4 QA continuation — Sep. 27 Sunday Early Board persistence audit — 2026-10-05
+
+### Evidence recovered
+- evidence/operational/CFB_WEEK5_SUNDAY_EARLY_BOARD_2026-09-27_1313CT.md exists on main and directly reads back at blob 825fd131b0365d77daf26d986e95d3e040f452a8.
+- Path-specific commit history shows it was persisted in commit ff37459be0bb6d25a55c587263fbf0b7ddb7a272 at 2026-09-27T18:41:37Z with commit message "Persist Sunday Early Board and governed run receipt."
+- The historical Sunday Market receipt's statement that same-commit creation/readback was pending therefore reflects incomplete terminal-certification semantics, not absence of the Early Board artifact.
+
+### Disposition
+CLOSED FOR ARTIFACT EXISTENCE/PERSISTENCE.
+The Early Board itself is durably present and independently readable. This finding does not retroactively convert the Sep. 27 receipt into a conforming two-phase RUN_PASS; terminal-certification ambiguity remains governed by the new terminal closure contract.
