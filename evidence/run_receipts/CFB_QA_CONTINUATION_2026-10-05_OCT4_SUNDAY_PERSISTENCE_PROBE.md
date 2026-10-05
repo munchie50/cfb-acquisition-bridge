@@ -17,6 +17,13 @@ Reconciliation:
 This file is the deterministic create-file primitive for the resumed Sunday QA persistence path.
 It does not complete the missing Weekly Beta Learning Review or scorecard append and does not convert the historical Sunday run to PASS.
 
-Status: CREATE_PRIMITIVE_VERIFIED_BY_READBACK / EXISTING_FILE_UPDATE_PRIMITIVE_VERIFIED_BY_READBACK / SUNDAY_REPRESENTATIVE_PAYLOAD_PENDING.
+Status: CLOSED_FOR_OCT4_SUNDAY_PERSISTENCE_CLASS / CREATE_PRIMITIVE_VERIFIED / EXACT_SHA_UPDATE_VERIFIED / REPRESENTATIVE_SCORECARD_PAYLOAD_VERIFIED / WEEKLY_REVIEW_CREATE_VERIFIED.
 Scientific effect: NONE.
 Champion effect: NONE.
+
+
+Closure evidence:
+- Week 5 complete scorecard commit: 0f0ad20b5f28e681c9f4033b4b26b0973293c8e8; independent readback confirmed 47/47 join, Brier metric, and terminal row.
+- Recovered October 4 Weekly Beta Learning Review commit: f6f46207255a9da7f9a86190308273ced1b810c0; independent readback confirmed complete required sections and Week 5 metrics.
+- Historical CFB_RUN_RECEIPT_2026-10-04_0900CT_SUNDAY_QA.md remains RUN_INCOMPLETE; recovery closure does not rewrite history.
+- Separate scheduled-control-plane post-start termination remains OPEN and is not closed by this persistence proof.
