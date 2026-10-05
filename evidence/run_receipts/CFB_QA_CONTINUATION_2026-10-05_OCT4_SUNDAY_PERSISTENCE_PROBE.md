@@ -17,6 +17,6 @@ Reconciliation:
 This file is the deterministic create-file primitive for the resumed Sunday QA persistence path.
 It does not complete the missing Weekly Beta Learning Review or scorecard append and does not convert the historical Sunday run to PASS.
 
-Status: CREATE_PRIMITIVE_VERIFIED_BY_READBACK / EXISTING_FILE_UPDATE_PRIMITIVE_PENDING_READBACK.
+Status: CREATE_PRIMITIVE_VERIFIED_BY_READBACK / EXISTING_FILE_UPDATE_PRIMITIVE_VERIFIED_BY_READBACK / SUNDAY_REPRESENTATIVE_PAYLOAD_PENDING.
 Scientific effect: NONE.
 Champion effect: NONE.
