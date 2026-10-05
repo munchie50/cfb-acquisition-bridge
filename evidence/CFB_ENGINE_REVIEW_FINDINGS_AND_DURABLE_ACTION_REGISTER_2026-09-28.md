@@ -183,3 +183,19 @@ The 2026-09-27 13:13 Sunday Market receipt remains historical evidence and is no
 ### Disposition
 CLOSED FOR ARTIFACT EXISTENCE/PERSISTENCE.
 The Early Board itself is durably present and independently readable. This finding does not retroactively convert the Sep. 27 receipt into a conforming two-phase RUN_PASS; terminal-certification ambiguity remains governed by the new terminal closure contract.
+
+
+## October 4 QA continuation — Master Standards applicability — 2026-10-05
+
+### Dependency correction
+The register's prior v1.4 applicability-review target became stale. Validated Library authority now identifies Universal Project Standards Master v1.5 as current and explicitly requires existing projects to review its material additions without silent adoption.
+
+### Review result
+Bounded review persisted at evidence/CFB_UNIVERSAL_PROJECT_STANDARDS_v1_5_APPLICABILITY_REVIEW_2026-10-05.md and independently read back.
+- ADOPT as governance clarification: cross-project learning classification/graduation, with CFB-local evidence required before any broader graduation.
+- ADOPT: failure-class closure proof depth. Closure may not exceed demonstrated scope; primitive/manual/structural proof cannot be promoted by prose into representative/natural/prospective/accepted proof.
+- DEFER wholesale Master routine/template migration. CFB Production Routine v5 plus v1.132/v1.133 remain controlling.
+- NOT APPLICABLE as automatic Champion/model/source/betting authority change.
+
+### Disposition
+CLOSED FOR CURRENT v1.5 APPLICABILITY REVIEW. Prior v1.4 target is superseded, not separately executed.
