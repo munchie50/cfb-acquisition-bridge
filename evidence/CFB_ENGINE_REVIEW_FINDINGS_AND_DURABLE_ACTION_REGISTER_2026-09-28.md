@@ -145,3 +145,16 @@ BLOCKED ON ORIGINAL EVIDENCE / NO CANONICAL MUTATION.
 
 ### Routine classification
 This is a genuine external-evidence gate for this action, not a reason to stop independent QA work. Bug #3 remains OPEN/EVIDENCE-BLOCKED.
+
+
+## October 4 QA continuation — closing-market durable surface — 2026-10-05
+
+### Correction
+Established evidence/operational/CFB_CLOSING_MARKET_LEDGER.md as the prospective append-only CLOSE surface required by v1.226. Initialization deliberately contains no hindsight Week 5 closing lines. Missing historical qualified closes remain CLV UNVERIFIED.
+
+### Verification
+Create-file persistence succeeded and direct repository readback confirmed ACTIVE append-only status, no-backfill language, and fail-closed CLV semantics.
+
+### Disposition
+CLOSED FOR SURFACE EXISTENCE / PROSPECTIVE DEMONSTRATION PENDING.
+The structural debt (no durable close surface) is corrected. Full LEARNED closure requires a future genuinely pre-kickoff qualified CLOSE observation to be appended and independently read back under normal operation.
