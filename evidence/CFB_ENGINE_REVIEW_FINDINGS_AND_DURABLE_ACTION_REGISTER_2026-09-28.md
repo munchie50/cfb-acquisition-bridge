@@ -129,3 +129,19 @@ Active output/decision controls now require:
 
 ### Disposition
 INSTALLED / DEMONSTRATION PENDING. Demonstrate on the next scheduled Hot Sheet cycle and verify chronological sections, deadline fields, state transitions, canonical readback, and task ownership before classifying LEARNED.
+
+
+## October 4 QA continuation — execution reconciliation evidence gate — 2026-10-05
+
+### Finding
+The canonical CFB_EXECUTION_LEDGER remains empty of the previously established Sep. 26 / Oct. 2 actual wager executions. A bounded recovery sweep found no original ticket image/evidence object in the repository tree and no recoverable original ticket file in current Project/Library file search. The active v1.224 screenshot boundary permits routing sufficiently established screenshot observations to the execution ledger, but the execution ledger itself explicitly prohibits backfill from memory.
+
+### Disposition
+BLOCKED ON ORIGINAL EVIDENCE / NO CANONICAL MUTATION.
+- Do not populate exact line, odds, stake, timestamp, ticket state, settlement, or game identity into the canonical ledger from conversation memory alone.
+- Do not reinterpret the missing execution evidence as proof that no wagers occurred.
+- Do not use execution/ticket information as Champion model input, fitting/calibration evidence, or retrospective decision reconstruction.
+- When original ticket evidence becomes directly recoverable, route it observation-by-observation through v1.224 and append only established fields.
+
+### Routine classification
+This is a genuine external-evidence gate for this action, not a reason to stop independent QA work. Bug #3 remains OPEN/EVIDENCE-BLOCKED.
