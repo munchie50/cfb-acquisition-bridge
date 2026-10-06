@@ -70,3 +70,37 @@ Current-week scheduler behavior: NATURAL_PRODUCTION_DEMONSTRATION_PENDING.
 
 Scientific effect: NONE.
 Champion effect: NONE.
+
+
+## Checkpoint reconciliation — pass 1
+
+### Sunday early-board checkpoint — 2026-09-27 13:13 CT
+Recoverable evidence: CFB_WEEK5_SUNDAY_EARLY_BOARD_2026-09-27_1313CT.md and the 13:00 Market Monitor receipt.
+- 47 modeled FIRST_FROZEN games were in scope; broad benchmark existed for 44 and three were not yet available.
+- No BET EARLY/BET NOW was established from the broad sweep; Nebraska remained WAIT.
+- The 13:00 run was RUN_INCOMPLETE because qualified observations could not be persisted to the canonical market surface.
+Replay finding: PASS_DETECTION. A replay using only evidence available at this checkpoint would identify canonical persistence/readback failure without outcome knowledge.
+
+### Tuesday prospective reset checkpoint — 2026-09-29 20:20 CT
+Recoverable terminal receipt establishes a fresh prospective market boundary after the persistence gap, with current coverage restored and zero new BET EARLY/BET NOW states. It explicitly prohibited Monday backfill and hindsight reconstruction.
+Replay finding: PASS_BOUNDARY_RECOVERY. The correct replay behavior is to preserve the historical gap and resume prospectively, not fill it from later evidence.
+
+### Saturday morning checkpoint — 2026-10-03 07:19 CT
+Terminal receipt establishes a 47-game exactly-once modeled reconciliation: 2 Thursday + 1 Friday + 11 Saturday morning + 19 Saturday afternoon + 14 Saturday evening/night; duplicate identities 0. Five BET NOW states and three explicit WAIT/hard-cutoff items were present, with Nebraska PASS/no-chase.
+Replay finding: PASS_DECISION_MATURITY_AND_CARDINALITY for the receipt-supported state. This proves the replay can test section/cardinality and decision-maturity controls before Saturday games complete.
+
+### Saturday 13:00 checkpoint — persistence recurrence
+The 13:00 receipt records fresh prospective retrieval followed by two rejected SHA-guarded canonical market appends. Decision-ledger/Hot Sheet mutation was correctly withheld and RUN_PASS prohibited.
+Replay finding: PASS_FAILURE_CLASS_DETECTION. The replay distinguishes a repeated persistence/content-write failure from model/decision logic and prevents false completion.
+
+## New QA finding — mutable artifact chronology hazard
+The path CFB_WEEK5_HOT_SHEET_2026-09-29_2020CT.md currently contains a later Saturday refresh and closed Thursday/Friday finals even though its filename retains the Sep. 29 timestamp. Therefore filename/path date alone is not a valid replay-time authority boundary for a mutable artifact.
+
+Required V6 replay correction: for any mutable artifact, replay eligibility must be established from commit/blob history, explicit embedded boundary metadata, or a contemporaneous immutable receipt/reference. If current file content contains information later than the simulated checkpoint, that content is quarantined from that checkpoint even when the filename is older. Never use current mutable-file bytes to reconstruct an earlier state unless repository history proves those exact bytes existed then.
+
+Classification: PROCEDURAL REPLAY-CONTAMINATION RISK DETECTED. Scientific effect NONE. Historical artifacts remain unchanged.
+
+## Pass-1 status
+Week 5 replay checkpoint reconciliation: PARTIAL_PASS.
+Demonstrated without outcome leakage: early persistence failure detection; prospective reset/no-backfill behavior; Saturday exactly-once cardinality and decision maturity from contemporaneous receipt evidence; recurrent persistence failure detection.
+New correction required: install mutable-artifact chronology validation into the V6 replay gate, then read back and rerun the affected evidence-selection step.
