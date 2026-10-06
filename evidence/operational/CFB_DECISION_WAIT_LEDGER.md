@@ -183,3 +183,16 @@ Reconciliation deadlines by current authoritative kickoff section:
 - Saturday afternoon (17): Saturday 07:00 review; final practical pre-kickoff cutoff.
 - Saturday evening/night (14): Saturday 13:00 review; final practical pre-kickoff cutoff.
 Exactly-once modeled count = 49; UNRESOLVED kickoff = 0. Indiana @ Nebraska is separately excluded/unmodeled under v1.208 and cannot receive a manufactured frozen prediction. Portfolio/trip optimization remains 1–2 trips/week; early-week games do not automatically justify an extra trip. No execution inferred.
+
+
+## Tuesday morning recovery decision reconciliation — 2026-10-06 ~07:04 CT
+Prospective boundary: manual recovery run after scheduled-control failures. Uses accepted frozen v1.208 predictions and same-run qualified market observations. Raw disagreement is not calibrated EV.
+
+### Tuesday final-day decision
+- Southern Miss @ Troy — **PASS side / PASS total at this morning boundary.** Frozen fair spread Troy -6.4 versus current Troy -10.5 (-108): the market requires laying materially beyond the frozen fair margin and no governed evidence earns chasing that number. Frozen total 51.9 versus current 50.5 is only a modest raw disagreement and no established threshold/edge converts it to an actionable wager. No extra casino trip is justified. Re-open only if genuinely new pre-kickoff information prospectively earns a governed decision before the practical cutoff; do not relax the PASS from price movement alone.
+
+### Wednesday 13:00 CT reconciliation boundary remains active
+- Jacksonville State @ Kennesaw State — **INCONCLUSIVE until Tue 13:00 review.** Frozen fair Kennesaw State -3.6; current market Kennesaw State +3.5 (-124), total 50.5. Large raw disagreement is an investigation flag only. No BET NOW threshold is manufactured.
+- New Mexico State @ FIU — **INCONCLUSIVE until Tue 13:00 review.** Frozen fair FIU -3.2; current FIU -6 (-112), with CBS displaying side-specific total quotes around 46.5/47.5. No actionable threshold is earned solely from movement.
+
+Portfolio posture: no Tuesday-morning trip is created. The 13:00 CT Market Monitor remains the required prospective Wednesday reconciliation point. No execution recorded.
