@@ -323,3 +323,18 @@ Governed recovery applied under existing Health ownership rule: Market Monitor e
 Historical start-only cycles remain incomplete and are not replayed/backfilled. Next natural proof is the 2026-10-05 13:00 CT scheduled Market Monitor. If it again terminates after RUN_STARTED or disables itself, treat as third reproduced scheduled-control failure and escalate away from Engine-level prompt/persistence tuning toward scheduler/platform containment; do not keep patching model/Hot Sheet logic.
 
 Lifecycle: REOPENED / REPRODUCED / BOUNDARY_NARROWED / ENABLE_STATE_RECOVERED / ROOT_ACTOR_UNOBSERVABLE / NATURAL_DEMONSTRATION_PENDING.
+
+
+## Pass 8 — V6 terminal-proof vocabulary reconciliation — 2026-10-06
+
+### Finding H5 — holistic-map demonstration wording lag
+The holistic map contains historical/current radar language describing Market Monitor demonstration as RUN_PASS + exactly-once Hot Sheet + terminal receipt. The later active terminal-closure contract requires a stronger two-phase proof: applicable surface persistence/readback, terminal receipt candidate persistence/readback, then a separate RUN_CLOSURE certification. Historical text remains evidence and is not rewritten.
+
+Current governing interpretation for every NATURAL_WAIT_DEMONSTRATION reference in this map:
+1. RUN_STARTED persisted/read back;
+2. applicable canonical surfaces and governed Hot Sheet persisted/read back;
+3. terminal receipt candidate persisted/read back;
+4. separate RUN_CLOSURE persisted/read back and certifies the final classification;
+5. for scheduled-control closure, all of the above must occur on the natural scheduled lineage. A manual recovery may demonstrate Engine logic/persistence but cannot substitute for natural scheduler proof.
+
+Disposition: RECOVERY/QA VOCABULARY RECONCILED. This does not retroactively upgrade historical RUN_PASS receipts and does not close the open scheduled-control defect. No science, Champion, prediction or betting authority change.
