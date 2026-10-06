@@ -197,3 +197,28 @@ This gate strengthens, and does not replace, v1.133 repeated-friction escalation
 
 Scientific effect: NONE.
 Champion effect: NONE.
+
+
+## 13. Time-Hidden Prior-Week Replay-Ahead Gate — candidate addition 2026-10-06
+
+Purpose: use already-completed prior-week evidence to expose later-week operational defects before the current live week reaches the same frontier, without hindsight contamination.
+
+When a completed prior football week has sufficient genuinely timestamped/frozen evidence, Test Routine v6 SHOULD run a bounded replay track in parallel with natural live confirmation.
+
+### Replay controls
+1. Freeze the replay start boundary. Identify the accepted pre-event prediction artifact, exclusions, source/market/decision artifacts, timestamps and producer authority that actually existed for the replayed week.
+2. Time-hide future information. At each simulated checkpoint, expose only evidence whose authoritative timestamp is at or before that checkpoint. Final scores, later market observations/closing lines, later injuries/availability, execution evidence and postgame learning are prohibited before their historical availability boundary.
+3. Advance chronologically. Replay the governed weekly checkpoints in order, including source/candidate boundaries where applicable, Hot Sheet sectioning, market/decision updates, INCONCLUSIVE/WAIT maturity, practical execution cutoffs, persistence/readback, terminal closure and postgame learning.
+4. Replay ahead of the live frontier. During a current week, preferentially replay prior-week stages that the current week has not yet reached when sufficient historical evidence exists. The objective is early defect discovery, not retrospective optimization.
+5. Expected-vs-actual reconciliation. At each checkpoint compare expected inputs, producer/control behavior, identities/cardinalities, state transitions, persistence/readback and terminal state with what the historical path actually produced. A known historical defect is valid replay test evidence; do not rewrite history to make it pass.
+6. Smallest correction and affected-segment rerun. A replay-detected procedural/control defect may justify the smallest non-scientific correction under existing authority, followed by rerun of the affected replay segment. Model/science/Champion/Challenger changes require their separate governance and are never authorized merely by replay error.
+7. Separate proof classes. Record REPLAY_DEMONSTRATED separately from NATURAL_PRODUCTION_DEMONSTRATED. Replay can prove deterministic logic/control behavior against authentic historical evidence; it cannot by itself prove scheduler, current external-source, current connector, or other live production behavior.
+8. No hindsight learning leakage. Outcomes may score genuinely frozen predictions after the simulated final boundary and may generate diagnostic hypotheses. They may not alter the replayed pre-event prediction, decision, market chronology, exclusions, or execution history.
+
+### Replay demonstration record
+A material replay must record replay week and immutable starting boundary; simulated checkpoints and evidence-visibility cutoff; hidden/prohibited future evidence classes; expected behavior; actual historical behavior; defects detected/prevented; corrections; affected-segment rerun result; proof classification; and remaining debt/natural trigger.
+
+### Week 5 initial demonstration target
+Use Week 5 as the first controlled replay because accepted v1.208 FIRST_FROZEN predictions and a complete 47-game postgame scorecard are durably recoverable, while known operational defects provide authentic detection targets. The first pass must test whether the replay control can surface known persistence/scheduled-completion, Hot Sheet/decision-maturity and end-stage reconciliation weaknesses without exposing Week 5 outcomes before their simulated final boundaries. Existing Week 5 outcomes are scoring/diagnostic evidence only after those boundaries.
+
+This gate changes QA sequencing only. It does not change Production Routine v5, Champion v1.193, v1.208 frozen predictions, candidate acceptance, betting authority, execution history or scientific acceptance.
