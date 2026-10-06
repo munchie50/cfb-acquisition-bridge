@@ -10,7 +10,7 @@ This block is a navigation summary inside the existing authoritative recovery do
 - Whole-system QA: ACTIVE under `evidence/CFB_ENGINE_HOLISTIC_SYSTEM_QA_MAP_2026-09-30.md`.
 - QA Sandbox: S2_K1 remains study-only; prospective execution is not accepted or authorized merely by implementation readiness.
 - Weekly cadence: v1.247 Monday readiness / Tuesday candidate / Wednesday bounded fallback; generated candidate != accepted state.
-- Operational surfaces: market, decision/WAIT, execution and postgame ledgers remain canonical.
+- Operational surfaces: market, decision/WAIT, execution, closing-market, and postgame ledgers remain canonical.
 - Current holistic open items: repaired S2_K1 consumer demonstration; execution-evidence ancestry reconciliation; natural weekly/Market Monitor/Health demonstrations.
 - Historical ACTIVE/NEXT text retained below is evidence; later dated reconciliations and this quick-read govern navigation, subject to the detailed authority chain.
 
@@ -51,13 +51,14 @@ Directly recover/read:
 1. `evidence/operational/CFB_MARKET_MONITOR_STATE.md`
 2. `evidence/operational/CFB_DECISION_WAIT_LEDGER.md`
 3. `evidence/operational/CFB_EXECUTION_LEDGER.md`
-4. `evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md`
-5. `evidence/run_receipts/` for new conforming receipts.
+4. `evidence/operational/CFB_CLOSING_MARKET_LEDGER.md`
+5. `evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md`
+6. `evidence/run_receipts/` for new conforming receipts.
 
 A scheduled run must persist applicable changes to these surfaces before RUN_PASS. NO_MATERIAL_CHANGE still requires direct readback and receipt documentation.
 
 ## Sunday QA
-Sunday QA directly consumes the four operational surfaces. It may report missing historical coverage honestly, but may not reconstruct missing pre-event market/decision/execution evidence after outcomes. RUN_PASS requires the dated/versioned Weekly Beta Learning Review plus applicable surface readbacks and conforming run receipt under v1.239/v1.242.
+Sunday QA directly consumes the canonical operational surfaces listed above. It may report missing historical coverage honestly, but may not reconstruct missing pre-event market/decision/execution evidence after outcomes. RUN_PASS requires the dated/versioned Weekly Beta Learning Review plus applicable surface readbacks and conforming run receipt under v1.239/v1.242.
 
 ## Locks
 Keep prediction, market, decision, execution, close and outcome separate. User screenshots/wagers are downstream execution evidence only and never Champion model inputs. No outcome-driven refit, retroactive prediction/decision manufacture, invented probability/EV/confidence, automatic Champion mutation, or automatic Challenger promotion.
