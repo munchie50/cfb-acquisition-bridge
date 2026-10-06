@@ -276,3 +276,14 @@ Observation class: FIRST_QUALIFIED_MARKET_OBSERVATION where an exact number is l
 - USC @ Penn State: Penn State +2.5; total 55.5.
 - Indiana @ Nebraska is an explicit v1.208 exclusion/unmodeled row; current board Indiana -8.5 / 51.5 is preserved only as downstream operational context, not as a modeled disagreement.
 Other modeled Week 6 games: exact qualified spread/total not established from the recovered board in this capture; no number is invented. No market observation altered Champion/FIRST_FROZEN state.
+
+
+## Week 6 Tuesday morning prospective recovery — 2026-10-06 ~07:04 CT
+Boundary: manual prospective recovery after repeated scheduled-control start-only failures. Failed scheduled cycles are not reconstructed. Source: current CBS Week 6 odds board retrieved during this manual run; current prices are observational downstream evidence only.
+
+Nearest governed windows:
+- Southern Miss @ Troy (Tue 19:00 CT): Southern Miss +10.5 (-111), Troy -10.5 (-108); ML Southern Miss +320 / Troy -410; total 50.5 (Over -105 / Under -110). Sunday first qualified observation remains Troy -10.5 / 49.5; spread unchanged, total +1.0.
+- Jacksonville State @ Kennesaw State (Wed 18:00 CT): Jacksonville State -3 (-108), Kennesaw State +3.5 (-124); ML Jacksonville State -148 / Kennesaw State +126; total 50.5 (Over -104 / Under -108). Sunday first qualified observation was Kennesaw State +4.5 / 49.5.
+- New Mexico State @ FIU (Wed 18:30 CT): New Mexico State +6.5 (-110), FIU -6 (-112); ML New Mexico State +190 / FIU -230; total 46.5/47.5 market display depending side price (NMSU Over 46.5 -111; FIU Under 47.5 -114). Sunday first qualified observation was FIU -4.5 / 47.5. Preserve the displayed asymmetric total quotes rather than inventing a single consensus number.
+
+Kickoff corroboration: Southern Miss official athletics lists Tue 19:00 CT; New Mexico State official athletics lists Wed 18:30 CT. Champion/FIRST_FROZEN unchanged. No execution inferred.
