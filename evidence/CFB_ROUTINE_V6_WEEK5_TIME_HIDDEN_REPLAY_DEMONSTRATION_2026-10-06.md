@@ -104,3 +104,38 @@ Classification: PROCEDURAL REPLAY-CONTAMINATION RISK DETECTED. Scientific effect
 Week 5 replay checkpoint reconciliation: PARTIAL_PASS.
 Demonstrated without outcome leakage: early persistence failure detection; prospective reset/no-backfill behavior; Saturday exactly-once cardinality and decision maturity from contemporaneous receipt evidence; recurrent persistence failure detection.
 New correction required: install mutable-artifact chronology validation into the V6 replay gate, then read back and rerun the affected evidence-selection step.
+
+
+## Checkpoint reconciliation — pass 2: deadlines and end-stage closure
+
+### Saturday WAIT maturity at the 13:00 cycle
+The Saturday 07:19 decision state contained three explicit WAIT items with hard practical cutoffs: Vanderbilt-Georgia total (10:15 reconciliation / 10:45 execution cutoff), Kentucky-South Carolina (13:45 / 14:15), and Texas Tech-Colorado (17:00 / 17:30). The 13:00 scheduled cycle recovered new prospective information, including Jared Curtis OUT, but its canonical market append failed twice before decision-ledger/Hot Sheet mutation.
+
+Replay disposition:
+- Vanderbilt-Georgia: do not manufacture a terminal decision from the later recovered information because the governed 13:00 cycle did not durably persist the market delta/decision transition. Historical unresolved/missed state is preserved.
+- Kentucky-South Carolina and Texas Tech-Colorado: later-window WAIT authority remained, but the failed 13:00 persistence path means replay may only use subsequently timestamped durable evidence if such evidence exists before each hard cutoff. Absent that, terminal decision state is UNVERIFIED rather than reconstructed.
+
+Finding: PASS_FAIL_CLOSED_DEADLINE_BEHAVIOR. V6 correctly treats a missed/persistence-blocked decision transition as an operational defect, not permission to use later information to make the historical decision look complete.
+
+### Closing-market checkpoint
+The active closing-market ledger was initialized 2026-10-05 and explicitly prohibits Week 5 backfill. It contains no established Week 5 CLOSE observations.
+Replay finding: PASS_NO_BACKFILL. Week 5 CLV is UNVERIFIED. Later public lines or final-score knowledge cannot create a historical close.
+
+### Post-final learning checkpoint
+The recovered Week 5 scorecard joins 47/47 genuinely frozen modeled games with zero unresolved joins. The recovered weekly learning review keeps outcome diagnostics downstream, preserves exclusions, keeps execution separate, and makes no Champion/Challenger/scientific mutation.
+Replay finding: PASS_POSTGAME_SEPARATION. Outcomes may identify diagnostic queues only after finals; they do not rewrite pre-event prediction, market, decision or execution history.
+
+### End-stage replay classification
+Week 5 chronological replay is COMPLETE FOR RECOVERABLE GOVERNED EVIDENCE with explicit evidence gaps retained rather than reconstructed.
+- prediction boundary: PASS
+- time-hidden evidence firewall: PASS
+- mutable-artifact chronology: PASS after V6 correction
+- market persistence defect detection: PASS
+- Hot Sheet/cardinality control: PASS where contemporaneous immutable receipt evidence exists
+- decision maturity/deadlines: PASS; unresolved historical transitions remain unresolved when persistence failed
+- closing market: UNVERIFIED / correctly not backfilled
+- execution: UNVERIFIED / evidence-blocked; not inferred
+- postgame scoring/learning separation: PASS
+- natural scheduled control-plane repair: NOT PROVED by replay; current natural-production demonstration remains required
+
+Proof class: REPLAY_DEMONSTRATED_COMPLETE_FOR_RECOVERABLE_WEEK5_EVIDENCE. This is not NATURAL_PRODUCTION_DEMONSTRATED and does not close the scheduled-control defect.
