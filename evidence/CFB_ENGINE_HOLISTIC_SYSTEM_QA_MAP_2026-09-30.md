@@ -338,3 +338,21 @@ Current governing interpretation for every NATURAL_WAIT_DEMONSTRATION reference 
 5. for scheduled-control closure, all of the above must occur on the natural scheduled lineage. A manual recovery may demonstrate Engine logic/persistence but cannot substitute for natural scheduler proof.
 
 Disposition: RECOVERY/QA VOCABULARY RECONCILED. This does not retroactively upgrade historical RUN_PASS receipts and does not close the open scheduled-control defect. No science, Champion, prediction or betting authority change.
+
+
+## Pass 9 — Tuesday cadence pre-trigger executable-readiness reconciliation — 2026-10-06
+
+Natural Tuesday Candidate Freeze had not yet appeared in Actions at this checkpoint. No manual dispatch was performed.
+
+Fresh workflow readback confirms the scheduled contract remains intact before the natural trigger:
+- schedule: 15:00 UTC Tuesday (10:00 CT while CDT is active);
+- concurrency is serialized and cancel-in-progress is false;
+- cadence authority plus pinned S0, source-context and target-baseline producer identities are checked before acquisition;
+- one fresh same-cutoff schedule/PBP boundary is preflighted;
+- candidate generation is gated on future targets plus source-state change relative to the independently accepted source pointer;
+- unchanged source state legitimately terminates as NOOP;
+- changed source state may produce only WEEKLY_CANDIDATE_BOUNDARY_NOT_ACCEPTED;
+- candidate manifest explicitly keeps scientific_acceptance=false, s2_predictions_produced=false, target_outcomes_joined=false and market_joined=false;
+- workflow has contents:read/actions:read only and cannot self-persist acceptance or advance the accepted-source pointer.
+
+V6 disposition: EXECUTABLE_READINESS_PASS / NATURAL_TRIGGER_PENDING. This is readiness evidence only, not execution evidence. The next natural run must be classified from its actual run/artifact/log evidence as NOOP, FAILED/INCOMPLETE, or CANDIDATE_NOT_ACCEPTED; a green workflow alone is insufficient for acceptance.
