@@ -199,3 +199,18 @@ Bounded review persisted at evidence/CFB_UNIVERSAL_PROJECT_STANDARDS_v1_5_APPLIC
 
 ### Disposition
 CLOSED FOR CURRENT v1.5 APPLICABILITY REVIEW. Prior v1.4 target is superseded, not separately executed.
+
+
+## 2026-10-06 V6 cold-recovery reconciliation
+
+### Recovery doorway / closing-market surface
+Test Routine V6 cold-recovery review found the current recovery index quick-read and canonical-surface list still omitted the closing-market ledger even though the durable action register had already classified that surface as structurally created on 2026-10-05. This created a recovery/navigation risk: a future operator could correctly recover market, decision, execution and postgame state while silently skipping CLOSE evidence.
+
+Correction persisted in commit 8e0f1e7b56b18f8393102af2e348243f02d25a61. CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md now directly lists evidence/operational/CFB_CLOSING_MARKET_LEDGER.md between execution and postgame and describes the canonical set without the stale four-surface count. Independent readback passed.
+
+Disposition: RECOVERY/NAVIGATION GAP CLOSED. Prospective closing-market demonstration remains separately pending; this navigation correction does not manufacture a Week 5 close or CLV.
+
+### Diagnostic-ergonomics debt reconsideration
+Run #12 and the current Sandbox checkpoint already preserve the governing lesson: expose actual family cardinalities/omission evidence before a generic cardinality assertion without weakening fail-closed behavior. The historical diagnostic branch demonstrated the value of this pattern and the accepted scientific generator is no longer at that failed frontier. No scientific-generator mutation is justified solely to cosmetically close this debt.
+
+Disposition: REQUIREMENT PRESERVED / CODE MUTATION DEFERRED UNTIL THE RELEVANT EXECUTABLE IS NEXT TOUCHED OR A CURRENT FAILURE DEMONSTRATES THE GAP. Do not weaken assertions, alter frozen science, or manufacture a rerun merely for diagnostic output.
