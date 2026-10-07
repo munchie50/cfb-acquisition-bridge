@@ -118,3 +118,6 @@ Indiana @ Nebraska is an explicit v1.208 FIRST_FROZEN exclusion (away_prior_poin
 - Exactly-once modeled membership remains 49; no game moved sections; UNRESOLVED remains 0.
 - Later rows explicitly retain last-qualified observations where no newer number was applied in this recovery.
 - Champion/FIRST_FROZEN unchanged; no execution inferred.
+
+
+DIAGNOSTIC_UPDATE_VERIFIED invocation_id=20261007T113543901Z
