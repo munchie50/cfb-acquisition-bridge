@@ -1,0 +1,21 @@
+# CFB Scheduler Canary V3 — Payload Complete
+
+- invocation_id: 20261007T113543901Z
+- actual_utc_timestamp: 2026-10-07T11:36:52.248Z
+- task_id: 6ac4e807aaac8191b3255fae8ab82577
+- test_version: V3
+- payload_path: evidence/scheduler_qa/CFB_CANARY_V3_20261007T113543901Z_PAYLOAD.md
+- fixture_path: evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-06_0704CT.md
+- fixture_ref: aa27d7c07a97f19cfc662156ba7434e4a425cf68
+- fixture_sha: 913be01ddc21d78a1b42e92ee0d3f09de52faba8
+- payload_sha_before_exact_sha_update: e85e7d667ea59631069dd59cc38fef4556b059bb
+- payload_sha_after_exact_sha_update: cbacf71dfe924d7a6a5bc1081f96ae21327521ba
+- initial_payload_readback: EXACT_CONTENT_VERIFIED
+- second_pre_update_fetch: EXACT_CONTENT_VERIFIED
+- exact_sha_update_result: SUCCESS
+- post_update_readback: EXACT_CONTENT_VERIFIED
+- original_fixture_bytes_preserved: true
+- actual_section_counts: 1,2,3,5,7,17,14
+- actual_total_game_rows: 49
+- row_reconciliation_match: true
+- production_effect: ZERO
