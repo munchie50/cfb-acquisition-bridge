@@ -39,3 +39,29 @@ with readback proving the terminal artifact.
 Until then: OPEN.
 
 Scientific effect: NONE. Champion v1.193 unchanged.
+
+
+## 2026-10-07 V6 narrowing update — representative scheduled canary vs production lineage
+
+New evidence materially narrows the open failure envelope.
+
+### Natural Tuesday workflow control
+The 2026-10-06 scheduled CFB Weekly Tuesday Candidate Freeze ran naturally at 15:11Z and completed successfully. All candidate-producing steps executed, including fresh source acquisition/preflight, accepted S0 refresh, v4 source-context production, S2_K1 target-baseline candidate, package retention, and artifact upload. Artifact 11423386216 (`cfb-weekly-tuesday-candidate-boundary`) was retained with digest sha256:674501a82f6eb207b58b30c483910304c881b3ce29ba2506258152455cb6047b. This proves scheduled GitHub Actions can execute the weekly external-source/model-candidate path; it does not prove ChatGPT Market Monitor task completion or scientific acceptance.
+
+### Scheduler canary v3
+Natural task invocation 20261007T113543901Z completed STARTED -> four fixture reads -> full 9,523-byte Hot Sheet preservation -> 49-row/section reconciliation -> create -> exact-SHA update -> PAYLOAD_COMPLETE -> RESULT -> separate CLOSURE. Independent readback classified CANARY_V3_PASS. Production effects were zero.
+
+This exonerates, for the tested task envelope, blanket failure hypotheses involving basic scheduled dispatch, connected GitHub reads, representative Hot Sheet-size payload handling, isolated exact-SHA update, and general two-phase diagnostic persistence/closure.
+
+### Production contrast
+The 2026-10-06 12:58 CT natural Market Monitor persisted RUN_STARTED at commit aa27d7c07a97f19cfc662156ba7434e4a425cf68. Complete repository enumeration still shows no matching terminal receipt or RUN_CLOSURE for that production lineage. It remains START_ONLY / INCOMPLETE.
+
+### Updated defect envelope
+The defect remains OPEN but is now narrower. Highest-value untested boundaries are:
+1. ChatGPT scheduled-task external web/research/current-source retrieval inside the production Market Monitor;
+2. production-specific canonical mutation sequence and its interaction with live research;
+3. production duration/resource/context envelope beyond the v3 fixture workload;
+4. scheduler timing/control behavior specific to the production task configuration;
+5. exact terminating actor remains unobserved.
+
+Do not repeat equivalent toy persistence canaries. Next isolated test should instrument the external-source/research-to-persistence boundary without mutating production surfaces, while the natural 07:00/13:00 Market Monitor remains the representative production proof. Manual recovery cannot close this defect.
