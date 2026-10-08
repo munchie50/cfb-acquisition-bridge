@@ -37,25 +37,27 @@ Frozen Engine: v1.193 Champion / v1.208 accepted FIRST_FROZEN. All 49 rows copie
 | Central Michigan @ Ohio | Central Michigan -1.1 | +3 (-111) | -2.5 (-122) | MATCHED SOURCE DISPLAY |
 | Charlotte @ North Texas | North Texas -7.8 | +28.5 (-108) | -28.5 (-106) | MATCHED SOURCE DISPLAY |
 | Buffalo @ Toledo | Toledo -22.1 | +21 (-112) | -20.5 (-114) | MATCHED SOURCE DISPLAY |
-| Kent State @ Western Michigan | Western Michigan -26.7 | — | — | NOT VERIFIED |
+| Kent State @ Western Michigan | Western Michigan -26.7 | +14 (-112) | -13.5 (-114) | MATCHED SOURCE DISPLAY (alias verified) |
 | Rice @ East Carolina | East Carolina -0.4 | +10 (-110) | -9.5 (-115) | MATCHED SOURCE DISPLAY |
 | Maryland @ Ohio State | Ohio State -11.4 | +34.5 (-108) | -34 (-111) | MATCHED SOURCE DISPLAY |
 | Tennessee @ Arkansas | Tennessee -19.0 | -13.5 (-110) | +13.5 (-108) | MATCHED SOURCE DISPLAY |
 | San Diego State @ Oregon State | Oregon State -7.7 | +15.5 (-111) | -14.5 (-115) | MATCHED SOURCE DISPLAY |
 | Nevada @ UTEP | Nevada -5.1 | -8.5 (-114) | +10 (-111) | MATCHED SOURCE DISPLAY |
-| North Dakota State @ UNLV | North Dakota State -8.7 | — | — | NOT VERIFIED |
+| North Dakota State @ UNLV | North Dakota State -8.7 | -3 (-118) | +3.5 (-120) | MATCHED SOURCE DISPLAY (alias verified) |
 | LSU @ Kentucky | LSU -2.5 | -8.5 (-105) | +8.5 (-108) | MATCHED SOURCE DISPLAY |
 | Air Force @ Northern Illinois | Air Force -16.1 | -7.5 (-102) | +7.5 (-112) | MATCHED SOURCE DISPLAY |
 | Syracuse @ Virginia | Virginia -10.1 | +9.5 (-110) | -9 (-111) | MATCHED SOURCE DISPLAY |
-| James Madison @ Georgia Southern | James Madison -8.0 | — | — | NOT VERIFIED |
+| James Madison @ Georgia Southern | James Madison -8.0 | -7.5 (-105) | +7.5 (-114) | MATCHED SOURCE DISPLAY (alias verified) |
 | Georgia @ Alabama | Georgia -7.0 | +1.5 (-108) | -1.5 (-111) | MATCHED SOURCE DISPLAY |
 | Louisiana @ Louisiana Tech | Louisiana Tech -0.1 | +3 (-111) | -2.5 (-122) | MATCHED SOURCE DISPLAY |
 | USC @ Penn State | Penn State -11.8 | +1.5 (-108) | -1.5 (-106) | MATCHED SOURCE DISPLAY |
 | Minnesota @ Purdue | Minnesota -5.8 | -2.5 (-110) | +2.5 (-105) | MATCHED SOURCE DISPLAY |
 | Kansas @ Utah | Utah -18.9 | +15.5 (-110) | -15.5 (-108) | MATCHED SOURCE DISPLAY |
-| Hawai'i @ Arizona State | Arizona State -14.1 | — | — | NOT VERIFIED |
-| Boise State @ Fresno State | Fresno State -1.6 | — | — | NOT VERIFIED |
+| Hawai'i @ Arizona State | Arizona State -14.1 | +20.5 (-105) | -20.5 (-114) | MATCHED SOURCE DISPLAY (alias verified) |
+| Boise State @ Fresno State | Fresno State -1.6 | -6.5 (-108) | +6.5 (-110) | MATCHED SOURCE DISPLAY (alias verified) |
 
-Matched rows with two source spread prices: 43/49. Unmatched are not asserted unavailable; some may be naming/parser mismatches.
+Matched rows with two source spread prices: 48/49. The remaining Tuesday Southern Miss @ Troy is completed; the CBS historical game entry does not expose a two-sided current spread, so do not backfill a current price. Five alias mismatches were independently resolved by direct team-name inspection.
 Wednesday games have completed per CBS displayed scores; do not manufacture pregame decisions after the event. No bet threshold or action is earned by this crosswalk.
 This is independent research evidence only. The production decision ledger, market observation ledger, accepted Hot Sheet and 13:00 scheduled RUN_STARTED are not modified by this research.
+## October 7 manual alias reconciliation
+Five remaining Saturday mismatches were naming aliases, not missing games: Kent St./W. Michigan, N. Dakota St./UNLV, James Madison/Ga. Southern, Hawaii/Arizona St., Boise St./Fresno St. Source-displayed spread pairs have been added above. The sixth unmatched game is the completed Tuesday Southern Miss/Troy game, for which a current actionable price is not applicable. This does not qualify any line as currently executable or close the Market Monitor run.
