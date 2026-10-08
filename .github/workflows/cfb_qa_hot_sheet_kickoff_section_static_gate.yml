@@ -1,0 +1,21 @@
+name: CFB QA Hot Sheet Kickoff Section Static Gate
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/cfb_hot_sheet_kickoff_section_static_gate.py'
+      - 'evidence/operational/CFB_WEEK6_HOT_SHEET_RESEARCH_CANDIDATE_2026-10-07.md'
+      - '.github/workflows/cfb_qa_hot_sheet_kickoff_section_static_gate.yml'
+  workflow_dispatch:
+jobs:
+  static-gate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate kickoff section membership
+        run: python scripts/cfb_hot_sheet_kickoff_section_static_gate.py
