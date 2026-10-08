@@ -22,3 +22,8 @@ Source: CBS Sports Week 6 odds page, accessed prospectively October 7, 2026: htt
 Source schedule cross-check: https://www.cbssports.com/college-football/schedule/ . Source has four Thursday FBS games, including Sam Houston at Liberty; the accepted frozen 49-row Hot Sheet contains three Thursday modeled games. Sam Houston at Liberty must not be added as a modeled game without FIRST_FROZEN ancestry proof.
 
 Open issues: full 49-row source-qualified refresh, odds timestamp/price provenance, Wednesday post-kickoff closure without retroactive decisions, remaining future games' availability/decision review, persisted readback, terminal receipt and independent closure. Existing 2026-10-07 13:00 RUN_STARTED is not completed by this document.
+
+## Subsequent live-fetch verification / source quality exception
+A fresh uncached Firecrawl retrieval of the CBS Week 6 odds URL returned a page whose Wednesday games carry FINAL scores (Jacksonville State 21, Kennesaw State 23; New Mexico State 3, FIU 10), while Thursday and later games also show the table header `Final` despite scores 0–0. Therefore the page's generic `Final` field is **not reliable for determining later-game completion**. The earlier partial transcription must not be treated as a universal current/executable market board. The Wednesday games must not be retrospectively assigned pregame BET decisions. Later market numbers are only observation candidates pending game-specific timestamp and execution validation.
+
+The full current Hot Sheet is NOT ACCEPTED. No terminal Market Monitor receipt or decision-ledger update is asserted here. Frozen model and original October 6 Hot Sheet remain untouched.
