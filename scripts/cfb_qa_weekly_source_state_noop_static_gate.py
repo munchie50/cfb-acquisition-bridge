@@ -8,7 +8,7 @@ pointer_path = Path("evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.j
 pointer = json.loads(pointer_path.read_text())
 
 required_pointer = {
-    "status": "ACCEPTED_PREDICTION_SOURCE_STATE",
+    "status",
     "accepted_prediction_boundary",
     "accepted_cutoff_utc",
     "schedule_sha256",
