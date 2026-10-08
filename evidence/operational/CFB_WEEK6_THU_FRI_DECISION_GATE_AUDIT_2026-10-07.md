@@ -31,8 +31,17 @@ HOLD — NOT ACTIONABLE is a research-only classification, not a canonical WAIT,
 
 BUILT: eight-game decision gate audit.
 EXECUTED: all eight observations assessed for evidence completeness.
-VERIFIED: pending independent GitHub readback.
+VERIFIED: independent GitHub readback completed after initial commit; content matched.
 ACCEPTED: NO.
 PRODUCTION: NO.
 
 No model, frozen prediction, prior decision, execution record, scheduled task, or run receipt is changed by this audit.
+
+
+## Follow-up verification — October 7
+
+- Recovered eight source research rows and eight decision-gate rows from main; no matchup missing.
+- Verified 2026-10-07 13:00 CT Market Monitor receipt is still RUN_STARTED, not a terminal RUN_PASS/RUN_INCOMPLETE receipt. Do not declare scheduled execution successful.
+- The canonical CFB_DECISION_WAIT_LEDGER remains at its October 6 prospective state; this audit does not silently promote its HOLD classification to a production decision.
+- Thursday/Friday totals and moneylines are available in the separate CBS expression research file, but they remain unqualified as executable Caesars quotes.
+- Outstanding control-plane defect and betting decision closure are independent workstreams; neither is resolved by a successful research-file write.
