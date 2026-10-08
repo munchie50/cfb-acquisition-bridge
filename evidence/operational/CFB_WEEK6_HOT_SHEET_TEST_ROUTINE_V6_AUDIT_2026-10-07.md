@@ -36,3 +36,11 @@ Status: EXECUTED QA CHECKS / RESEARCH CANDIDATE ONLY. No production acceptance o
 ## Next controlled work
 
 Prioritize Thursday then Friday kickoff games: qualify current source quote and game status; reconcile market vs frozen only under governing betting controls; set explicit cutoff or PASS, then work through Saturday. Preserve historical failures and previous snapshots. Do not promote candidate until all acceptance checks pass.
+
+## Subsequent sectioning correction
+
+The original seven static checks did not validate individual kickoff bucket membership. They passed despite Old Dominion at App State (Saturday noon CT) appearing in the evening/night section. The original checks above remain historical evidence, not a current complete sectioning pass.
+
+The research candidate was corrected in commit cc86762024132f78e984d6db842dbea2c01e0841 and independently read back. Revised counts: Tuesday 1, Wednesday 2, Thursday 3, Friday 5, Saturday morning 7, afternoon 17, evening/night 14; 49 total. Each of the 38 Saturday rows was checked against its kickoff-hour bucket. No model, market quote, or decision was changed.
+
+Test Routine lesson: require per-row classification assertions as well as total-count assertions. Candidate remains unaccepted and the scheduled Market Monitor terminal closure remains unproven.
