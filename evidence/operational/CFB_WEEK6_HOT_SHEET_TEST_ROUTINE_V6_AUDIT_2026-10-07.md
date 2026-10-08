@@ -44,3 +44,8 @@ The original seven static checks did not validate individual kickoff bucket memb
 The research candidate was corrected in commit cc86762024132f78e984d6db842dbea2c01e0841 and independently read back. Revised counts: Tuesday 1, Wednesday 2, Thursday 3, Friday 5, Saturday morning 7, afternoon 17, evening/night 14; 49 total. Each of the 38 Saturday rows was checked against its kickoff-hour bucket. No model, market quote, or decision was changed.
 
 Test Routine lesson: require per-row classification assertions as well as total-count assertions. Candidate remains unaccepted and the scheduled Market Monitor terminal closure remains unproven.
+
+
+## Automated regression demonstration — October 8
+
+The kickoff-section static gate script and push-triggered GitHub Actions workflow were installed at commits 7ae01d9b3b677402e1eeda05fff05f20c0074d38 and 24856476f564923d7dde5c0bc0a3afcb42130152. GitHub Actions run 37716851551 completed SUCCESS; job 113115183629 and its `Validate kickoff section membership` step both completed SUCCESS. The gate checks all 49 modeled game identities, exact section membership based on CT kickoff, duplicate exclusion, and section counts. This proves the new regression gate executes; it does not accept the research candidate for betting or resolve the ChatGPT Market Monitor scheduled-terminal defect.
