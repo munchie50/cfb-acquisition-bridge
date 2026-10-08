@@ -51,10 +51,11 @@ Crosswalk: evidence/operational/CFB_WEEK6_CBS_ODDS_CROSSWALK_2026-10-07.md
 | Sat 11:00 AM | Sacramento State @ Bowling Green | Sacramento State -12.7 | 45.8 | .200 home | +7.5 (-108) | -7.5 (-110) | INCONCLUSIVE; prospective decision review required |
 | Sat 11:45 AM | South Carolina @ Florida | Florida -7.1 | 61.9 | .693 home | +12.5 (-110) | -11.5 (-108) | INCONCLUSIVE; prospective decision review required |
 
-## Saturday afternoon (16)
+## Saturday afternoon (17)
 
 | Kickoff CT | Game | Engine Prediction (Frozen) | Frozen total | Frozen win probability | CBS away spread | CBS home spread | Decision |
 |---|---|---|---|---|---|---|---|
+| Sat 12:00 PM | Old Dominion @ App State | App State -14.3 | 50.1 | .823 home | +10 (-111) | -9.5 (-115) | INCONCLUSIVE; prospective decision review required |
 | Sat 1:00 PM | Miami (OH) @ Massachusetts | Massachusetts -14.8 | 54.6 | .818 home | -2 (-115) | +2.5 (-112) | INCONCLUSIVE; prospective decision review required |
 | Sat 2:30 PM | Texas @ Oklahoma | Oklahoma -3.4 | 42.8 | .519 home | -7.5 (-108) | +7.5 (-110) | INCONCLUSIVE; prospective decision review required |
 | Sat 2:30 PM | UCLA @ Oregon | Oregon -5.1 | 62.8 | .655 home | +11.5 (-110) | -11 (-111) | INCONCLUSIVE; prospective decision review required |
@@ -72,11 +73,10 @@ Crosswalk: evidence/operational/CFB_WEEK6_CBS_ODDS_CROSSWALK_2026-10-07.md
 | Sat 3:15 PM | Maryland @ Ohio State | Ohio State -11.4 | 56.4 | .759 home | +34.5 (-108) | -34 (-111) | INCONCLUSIVE; prospective decision review required |
 | Sat 3:15 PM | Tennessee @ Arkansas | Tennessee -19.0 | 54.7 | .144 home | -13.5 (-110) | +13.5 (-108) | INCONCLUSIVE; prospective decision review required |
 
-## Saturday evening/night (15)
+## Saturday evening/night (14)
 
 | Kickoff CT | Game | Engine Prediction (Frozen) | Frozen total | Frozen win probability | CBS away spread | CBS home spread | Decision |
 |---|---|---|---|---|---|---|---|
-| Sat 12:00 PM | Old Dominion @ App State | App State -14.3 | 50.1 | .823 home | +10 (-111) | -9.5 (-115) | INCONCLUSIVE; prospective decision review required |
 | Sat 5:00 PM | San Diego State @ Oregon State | Oregon State -7.7 | 56.9 | .678 home | +15.5 (-111) | -14.5 (-115) | INCONCLUSIVE; prospective decision review required |
 | Sat 6:00 PM | Nevada @ UTEP | Nevada -5.1 | 49.6 | .368 home | -8.5 (-114) | +10 (-111) | INCONCLUSIVE; prospective decision review required |
 | Sat 6:00 PM | North Dakota State @ UNLV | North Dakota State -8.7 | 46.1 | .273 home | -3 (-118) | +3.5 (-120) | INCONCLUSIVE; prospective decision review required |
@@ -103,3 +103,6 @@ Upcoming Thursday and Friday games are first for governed review. No calibrated 
 ## Test Routine verification
 
 49 modeled rows carried exactly once; 48 matched CBS spread pairs and one completed Tuesday game without a current quote. This candidate is a presentation/research output, not a production acceptance, decision ledger update or terminal receipt.
+## Test Routine v6 sectioning correction — October 7
+
+The earlier research candidate placed Old Dominion @ App State at Saturday 12:00 PM CT in the evening/night section, violating the active CT kickoff contract. The initial static QA checked section totals but did not check bucket membership against the time boundary. This correction moves that existing row to Saturday afternoon, yielding afternoon 17 and evening/night 14. Historical erroneous 16/15 counts remain in the original QA audit for traceability. No kickoff, market quote, prediction, or decision was changed.
