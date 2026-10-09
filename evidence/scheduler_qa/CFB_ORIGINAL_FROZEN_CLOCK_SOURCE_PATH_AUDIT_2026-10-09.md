@@ -25,3 +25,98 @@ Integration disposition: existing active kickoff contract already separates froz
 
 scientific_effect: NONE
 champion_effect: NONE
+
+## October9 original runtime corroboration and file-access classification
+
+Run CFB_FROZEN_CLOCK_RUNTIME_QA_20261009T225834Z: recovered original preflight job108331631762 and producer job108332223631 via permitted workflow-log connector. Twelve unique runtime facts match accepted cutoff/source/archive digests and622/526/96accounting; original producer logged preflight.zip and rawschedule hash checksOK. Static source path now corroborated by actual original runtime logs, not a new rerun. Does not authenticate local raw/preflight row bytes or prove timezone/TBDvalues. Fresh artifact reference stillHTTP403 with error code:1010; origin/layer unknown, no repair claim. Existing historical incomplete closure preserved; rawcause remainsOPEN.
+
+Twelve independently retrieved original log facts (narrow safe excerpts only):
+[
+  {
+    "job_id": 108331631762,
+    "term": "5b2ff52996862b06b67309f1ebc27742e55c279ff4785c7a942915cdf820f1b1  raw/cfb_schedules_2026.parquet",
+    "exact_log_lines": [
+      "2026-09-26T03:47:36.7640672Z 5b2ff52996862b06b67309f1ebc27742e55c279ff4785c7a942915cdf820f1b1  raw/cfb_schedules_2026.parquet"
+    ]
+  },
+  {
+    "job_id": 108331631762,
+    "term": "\"status\": \"PASS_SOURCE_PREFLIGHT\"",
+    "exact_log_lines": [
+      "2026-09-26T03:47:41.4127671Z   \"status\": \"PASS_SOURCE_PREFLIGHT\","
+    ]
+  },
+  {
+    "job_id": 108331631762,
+    "term": "\"cutoff_utc\": \"2026-09-26T03:47:37.497112+00:00\"",
+    "exact_log_lines": [
+      "2026-09-26T03:47:41.4128411Z   \"cutoff_utc\": \"2026-09-26T03:47:37.497112+00:00\","
+    ]
+  },
+  {
+    "job_id": 108331631762,
+    "term": "\"raw_schedule_rows_2026\": 3679",
+    "exact_log_lines": [
+      "2026-09-26T03:47:41.4131655Z   \"raw_schedule_rows_2026\": 3679,"
+    ]
+  },
+  {
+    "job_id": 108331631762,
+    "term": "\"future_at_cutoff\": 622",
+    "exact_log_lines": [
+      "2026-09-26T03:47:41.4133390Z   \"future_at_cutoff\": 622,"
+    ]
+  },
+  {
+    "job_id": 108331631762,
+    "term": "SHA256 digest of uploaded artifact zip is 4dc70419b9aa3afdfa2570861490598da69b2bccfed878e438dc17b69a9a7ea8",
+    "exact_log_lines": [
+      "2026-09-26T03:47:42.0847156Z SHA256 digest of uploaded artifact zip is 4dc70419b9aa3afdfa2570861490598da69b2bccfed878e438dc17b69a9a7ea8"
+    ]
+  },
+  {
+    "job_id": 108332223631,
+    "term": "/tmp/preflight.zip: OK",
+    "exact_log_lines": [
+      "2026-09-26T03:51:44.7944502Z /tmp/preflight.zip: OK"
+    ]
+  },
+  {
+    "job_id": 108332223631,
+    "term": "raw/cfb_schedules_2026.parquet: OK",
+    "exact_log_lines": [
+      "2026-09-26T03:51:45.4655783Z raw/cfb_schedules_2026.parquet: OK"
+    ]
+  },
+  {
+    "job_id": 108332223631,
+    "term": "\"target_games\": 622",
+    "exact_log_lines": [
+      "2026-09-26T03:52:11.5609917Z   \"target_games\": 622,"
+    ]
+  },
+  {
+    "job_id": 108332223631,
+    "term": "\"eligible_predictions\": 526",
+    "exact_log_lines": [
+      "2026-09-26T03:52:11.5610238Z   \"eligible_predictions\": 526,"
+    ]
+  },
+  {
+    "job_id": 108332223631,
+    "term": "\"excluded_games\": 96",
+    "exact_log_lines": [
+      "2026-09-26T03:52:11.5610542Z   \"excluded_games\": 96,"
+    ]
+  },
+  {
+    "job_id": 108332223631,
+    "term": "Artifact ID 10897612260",
+    "exact_log_lines": [
+      "2026-09-26T03:52:12.3250429Z Artifact cfb-phase4-challenger-b-2026-prospective-predictions-v1-206.zip successfully finalized. Artifact ID 10897612260"
+    ]
+  }
+]
+
+Source class: original GitHub Actions runtime logs, read through github_fetch_workflow_job_logs; not a reproduced source-row or prediction run. Job metadata independently reports both original jobs completed/success. Original preflight upload digest and producer download checksum success agree with v1.205 authority. This closes the earlier STATIC_ONLY evidence limit for executed ingestion/checksum stages; original raw source row/status inspection remains blocked.
+File transport: one fresh artifact-download connector call returned a file reference, then two scratch GET attempts returned403. Second GET captured17byte plain-text error code:1010. No Azure error header/XML code observed; do not assign proprietary cause, browser/login requirement, expired artifact, source corruption or canonical write denial. No URL/signature/token/rawfull-log copied. No further attempts or alternate destination. Next safe action remains permitted original source recovery; do independent work during WAIT. No schedule, model, operational kickoff/deadline or frozen change.
