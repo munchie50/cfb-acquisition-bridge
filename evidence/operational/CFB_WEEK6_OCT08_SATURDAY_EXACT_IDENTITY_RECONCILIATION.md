@@ -7,15 +7,15 @@ Parent: evidence/operational/CFB_WEEK6_OCT08_SATURDAY_SOURCE_COVERAGE_AUDIT.md, 
 Method: Split each of 38 immutable Saturday frozen-game rows into away/home; normalize case, accents, punctuation and explicitly enumerated team-name abbreviations; match full ordered away-home key to ESPN game URL slug from the retrieved odds source. Require exactly one source match per frozen row and no reused source slug. This verifies matchup identity but **does not verify kickoff timestamp** (the source index stores no times), executable quotes, or decisions.
 
 - Frozen rows: 38
-- Unique exact normalized ordered source matches: 37
-- Unmatched or ambiguous: 1
-- Extra ESPN Saturday matchups not in frozen modeled set: 9
+- Unique exact normalized ordered source matches: 38
+- Unmatched or ambiguous: 0
+- Extra ESPN Saturday matchups not in frozen modeled set: 8
 
 | Frozen kickoff CT | Frozen matchup | Matched ESPN game slug | ESPN source linked away/home spreads (unqualified) |
 |---|---|---|---|
 | Sat 11:00 AM | Arizona @ West Virginia | arizona-west-virginia | -3 (-115) / +3 (-105) |
 | Sat 11:00 AM | Texas A&M @ Missouri | texas-am-missouri | +3.5 (-115) / -3.5 (-105) |
-| Sat 11:00 AM | UCF @ Oklahoma State | UNMATCHED | N/A |
+| Sat 11:00 AM | UCF @ Oklahoma State | ucf-oklahoma-st | +10.5 (-108) / -10.5 (-105) |
 | Sat 11:00 AM | North Carolina @ Pittsburgh | north-carolina-pitt | +3.5 (-108) / -3.5 (-112) |
 | Sat 11:00 AM | Wake Forest @ NC State | wake-forest-nc-state | -3.5 (-105) / +3.5 (-115) |
 | Sat 11:00 AM | Sacramento State @ Bowling Green | sacramento-st-bowling-green | +7.5 (-110) / -7.5 (-110) |
@@ -53,7 +53,6 @@ Method: Split each of 38 immutable Saturday frozen-game rows into away/home; nor
 | Sat 9:30 PM | Boise State @ Fresno State | boise-st-fresno-st | -6.5 (-110) / +6.5 (-110) |
 
 ## Extra ESPN games excluded from modeled recommendation set
-- ucf-oklahoma-st
 - indiana-nebraska
 - tulane-army
 - ball-state-northwestern
@@ -65,3 +64,6 @@ Method: Split each of 38 immutable Saturday frozen-game rows into away/home; nor
 
 ## Remaining gates
 Validate kickoff timestamps from source and authoritative schedule; verify sportsbook quote freshness, price, source and executability; preserve frozen predictions and original acceptable cutoffs; reconcile governed decision deadlines and full Hot Sheet; persist canonical changes only with readback and terminal receipt plus separate closure. No BET NOW or BET EARLY certified by this artifact.
+
+## Readback correction
+Initial artifact incorrectly counted UCF @ Oklahoma State as unmatched because the deterministic abbreviation dictionary omitted Oklahoma State → oklahoma-st. Source audit independently includes slug `ucf-oklahoma-st`. This revision corrects that matching alias, reconciles counts to 38/38, and retains the failed first-pass finding as evidence. No other source match was changed.
