@@ -16,3 +16,7 @@ Independent GitHubpushQA run38002507121 head70478afaf946b967a01a63d3c5253aa60b5e
 Sourcecode/workflow independently readback at returnedcommit/currentmain. No currentHotSheet, operationalclock/deadline, frozenprediction, market, decision, wager, scorecard orschedulerconfigchange. Rawarchive403/error1010 clockcauseinvestigation remainsOPEN and previousincompleteclosures preserved.
 scientific_effect:NONE
 champion_effect:NONE
+
+## Changed-file path independently exercised — October9 continuation
+
+Three additional regressionchecks use isolated temporarygit repositories only: avalid syntheticnew datedproductionfile isselected by realgitdiff andchecked; malformednewfile fails while retainedbaselinepasses; similarlynamedQAprose isnotparsed asproduction. No syntheticHotSheetfile written to connectedrepository orcanonical state. Fullsuite20passed locally and GitHubpushrun38002666488/job114064181099 atcommita815b0107e8cecc9015f62dcf19ac1c70ba17e33; originalresearchgate and actualretained49rowproductiongatealsoPASS. Latesttestscript blob71ee524e372c21d70327ac99173b4985bcc458d2. Earlier17testdemonstrationpreserved. Lifecycle now DIFF_SELECTION_AND_REJECTION_PATH_SYNTHETICALLY_DEMONSTRATED; nextnaturalMonitorchanged-sheetenforcement remainspending, not simulatedaway. No recurringtask/configurationorproductionHotSheetchange.
