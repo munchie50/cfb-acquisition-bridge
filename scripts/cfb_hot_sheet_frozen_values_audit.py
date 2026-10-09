@@ -50,7 +50,7 @@ def main():
     assert blob == obj["sha"], "Hot Sheet Git blob digest mismatch"
     rows = []
     for line in content.splitlines():
-        if not re.match(r"^\| (Tue|Wed|Thu|Fri|Sat) ", line):
+        if not re.match(r"^\| (Tue|Wed|Thu|Fri|Sat|UNRESOLVED) ", line):
             continue
         cells = [c.strip() for c in line.split("|")][1:-1]
         assert len(cells) == 9, "unsupported Hot Sheet row schema"
@@ -92,4 +92,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
