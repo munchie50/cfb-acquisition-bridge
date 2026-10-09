@@ -176,3 +176,66 @@ Carry-forward demonstration: simulated next health newly-due filter yields zero 
 Independent live readback after correction passed 68 preservation assertions: same inventory, four enabled, all schedules/timing modes/timezones/titles/enabled states unchanged, other prompts unchanged, Health old prompt plus exact suffix verified.
 
 Result: MANUAL_REPLAY_DEMONSTRATED for classification and carry-forward rule; HEALTH_CONTROL_INSTALLED_AND_READ_BACK. Natural Health enforcement, evening end-to-end proof and root-cause closure remain pending. No historical receipt, model, operational market/decision/Hot Sheet or wager was changed. No extra run dispatched.
+
+
+## CFB-wide carry-forward extension — October 9 15:29 CT continuation
+
+Fresh main before work: 294f53b25484897b5a114945ffe15dca36ee2775. Four tasks still enabled, no intervening production completion discovered. Test Routine v6 dependency sweep found the same moving-invocation-watermark risk in Market Monitor audit, not only the evening audit. A failed or incomplete Health invocation itself cannot advance a proved coverage watermark.
+
+Installed CFB-WIDE CLOSURE DEBT in existing Health prompt, preserving its complete prior text and schedule. The rule now explicitly covers Monitor, Evening, prior CFB Health coverage and required CFB Weekly QA outputs, requires artifact/disposition ancestry before reopening old work, and separates historical incomplete cycles from actionable recovery debt. No Big Nine authority change. Independent fresh task readback passed 68 assertions (same 11-task inventory, four enabled, every title/cadence/timing mode/timezone/enabled state preserved, other prompts unchanged, Health exact old prompt plus suffix).
+
+Bounded recovered evidence:
+- Morning cycle CFB_MARKET_MONITOR_20261009T120138Z STARTED independently read back, f8e38321fa66a72a50cee591ec40f8e19b43ccf6. Current full tree retains no same-cycle terminal candidate/closure. Keep DURABLE_TERMINAL_UNVERIFIED, with previously recovered reported RUN_INCOMPLETE separate.
+- October 8 evening gap remains as previously evidenced. Existing enabled task and later Monitor PASS cannot close it.
+- Current tree's named Health receipt family has latest dated entry October 2 (blob 28043558a218f4fe52fd4e483c392cb702daba52, RUN_INCOMPLETE), while live Health metadata has October 8 invocation time. Full-tree health-name sweep found no later named Health receipt. This is bounded search evidence, not proof that no differently named artifact exists. October 8 Health coverage is COVERAGE_UNVERIFIED; its exact invocation response and alternate naming/receipt ancestry must be recovered if available. Do not infer an active run or missed dispatch.
+- October 4 Sunday receipt 8bd4875ed6eeb989363d8696e420fa541159e51d is historically RUN_INCOMPLETE. Companion October 5 probe/closure 7c9e55bfc3ed3650a63f1d7a51816e930ecce642 identifies genuine recovery: scorecard commit 0f0ad20b5f28e681c9f4033b4b26b0973293c8e8 and review commit f6f46207255a9da7f9a86190308273ced1b810c0. Independent present readbacks verified recovered review daee098decf80e970a732b71dbd689eda3dfd921 and scorecard 6ae881224fa18b65a4408fa807a2582aebccf6fd. Thus the tested output-persistence work is recovered; historical Sunday failure is retained without reopening that completed recovery or treating it as natural Sunday success. Review's embedded pending language is creation-stage history; later independent companion readback governs that persistence status.
+
+Executed manual lifecycle reconciliation:
+```json
+{
+  "fixtures": [
+    {
+      "key": "CFB_MARKET_MONITOR_20261009T120138Z",
+      "classification": "DURABLE_TERMINAL_UNVERIFIED",
+      "carry": true
+    },
+    {
+      "key": "CFB_EVENING_AVAILABILITY_2026-10-08",
+      "classification": "DURABLE_TERMINAL_UNVERIFIED",
+      "carry": true
+    },
+    {
+      "key": "CFB_SUNDAY_QA_2026-10-04_OUTPUT_PERSISTENCE",
+      "classification": "RECOVERY_PERSISTENCE_VERIFIED",
+      "carry": false
+    },
+    {
+      "key": "CFB_HEALTH_2026-10-08_COVERAGE",
+      "classification": "COVERAGE_UNVERIFIED",
+      "carry": true
+    }
+  ],
+  "newlyDue": [
+    {
+      "key": "CFB_MARKET_MONITOR_20261009T120138Z",
+      "classification": "DURABLE_TERMINAL_UNVERIFIED",
+      "carry": true
+    },
+    {
+      "key": "CFB_MARKET_MONITOR_20261009T180108Z",
+      "classification": "VERIFIED_PASS",
+      "carry": false
+    }
+  ],
+  "retained": [
+    "CFB_MARKET_MONITOR_20261009T120138Z",
+    "CFB_EVENING_AVAILABILITY_2026-10-08",
+    "CFB_HEALTH_2026-10-08_COVERAGE"
+  ],
+  "result": "PASS",
+  "scope": "bounded manual lifecycle reconciliation; not an exhaustive health audit"
+}
+```
+Keys other than the exact Monitor cycle IDs are descriptive audit locators, not invented scheduler invocation identities. The Health key records a bounded coverage question, not a proved terminal failure. The reference reconciliation retained three distinct open evidence/coverage questions, deduplicated the morning row, excluded later afternoon PASS from debt and kept recovered Sunday persistence out of outstanding work. This manual fixture is not exhaustive current Health coverage and is not production execution.
+
+Classification: CFB_WIDE_CARRY_FORWARD_INSTALLED_AND_READ_BACK; MANUAL_ANCESTRY_AND_LIFECYCLE_RECONCILIATION_PASS; NATURAL_HEALTH_ENFORCEMENT_PENDING. Opaque write-rejection cause and repeated scheduled reliability remain OPEN. No additional canary, run-now, historical receipt rewrite, canonical operational update or model/science mutation. Next natural Health at 16:30 CT flexible schedule is the appropriate producer demonstration, not more equivalent manual tests.
