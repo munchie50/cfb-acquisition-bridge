@@ -1,0 +1,8 @@
+# Production Hot Sheet gate QA
+run_id:CFB_PRODUCTION_SHEET_GATE_QA_20261009T230338Z
+prospective_mutation_boundary_utc:2026-10-09T23:03:38Z
+execution_class:USER_DIRECTED_MANUAL_TEST_ROUTINE_V6
+status:RUN_STARTED
+scope: repair Week6production presentation validation coverage in existing GitHub QA workflow; localread-only development/tests preceded this marker, repositorymutation follows readback.
+Authority:current recovery57f98c3f4eef32f83161efc59de980a7e5466c6e; activekickoffcontract3d43cc420e5f7cb4a97c687216218091f0f3f3e7; original accepted49modeled displaybaseline9c2ae1f17bf01bcde2aa82c56c01b1431a1bd6eb.
+No recurring task creation/configuration, source/model/prediction/market/decision/operationalkickoff/deadline/HotSheetmutation. ExistingGitHubpushQA is codevalidation, not another engine scheduler or HotSheetproducer.
