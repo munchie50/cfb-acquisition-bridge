@@ -1,5 +1,10 @@
 # CFB Engine — Current Recovery Index v1.245
 
+## October 9 07:45 CT runtime-status correction
+Morning invocation stopped: recovered indexed 07:04:52 CT run response reports RUN_INCOMPLETE after two rejected market updates and two rejected terminal-receipt attempts, then schedule pausing. It was not a verified active 45-minute run. Durable receipt remains STARTED-only; reported runtime result and persisted terminal proof are separate. Exact error transcript/payload remains unavailable.
+Read `evidence/scheduler_qa/CFB_SCHEDULER_V6_OCT09_START_ONLY_AND_TASK_LIFECYCLE_REPAIR.md`, blob 3aea990e8fbd940386c210b7dab0ff9e2bbe6422, for evidence classes and reconciled timeline. Task restored for future schedules; restoration does not resume the morning run. Four enabled tasks verified. Separate successful manual Friday appends do not certify the scheduled path.
+
+
 ## October 9 current Friday follow-through — prospective manual boundary
 This current block supersedes earlier Friday missing-record summaries from the new boundary onward; missed Thursday evidence and the scheduled morning completion gap remain preserved.
 
