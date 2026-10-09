@@ -4,7 +4,9 @@ on:
     branches: [main]
     paths:
       - 'scripts/cfb_hot_sheet_kickoff_section_static_gate.py'
-      - 'evidence/operational/CFB_WEEK6_HOT_SHEET_RESEARCH_CANDIDATE_2026-10-07.md'
+      - 'scripts/cfb_hot_sheet_production_section_gate.py'
+      - 'scripts/test_cfb_hot_sheet_production_section_gate.py'
+      - 'evidence/operational/CFB_WEEK6_HOT_SHEET_*.md'
       - '.github/workflows/cfb_qa_hot_sheet_kickoff_section_static_gate.yml'
   workflow_dispatch:
 jobs:
@@ -14,8 +16,21 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Validate kickoff section membership
+      - name: Validate original research candidate
         run: python scripts/cfb_hot_sheet_kickoff_section_static_gate.py
+      - name: Exercise production presentation rejection boundaries
+        run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_production_section_gate.py
+      - name: Validate retained and newly changed Week 6 production sheets
+        env:
+          BEFORE_COMMIT: ${{ github.event.before }}
+        run: |
+          args=(--sheet evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md)
+          if [[ -n "$BEFORE_COMMIT" ]]; then
+            args+=(--changed-since "$BEFORE_COMMIT")
+          fi
+          python scripts/cfb_hot_sheet_production_section_gate.py "${args[@]}"
