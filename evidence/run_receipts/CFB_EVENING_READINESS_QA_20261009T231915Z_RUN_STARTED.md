@@ -1,0 +1,8 @@
+# Evening readiness and coverage helper repair
+run_id:CFB_EVENING_READINESS_QA_20261009T231915Z
+prospective_mutation_boundary_utc:2026-10-09T23:19:15Z
+execution_class:USER_DIRECTED_MANUAL_TEST_ROUTINE_V6
+status:RUN_STARTED
+scope: read-only eveninginputreadiness and namingcoveragehelper repair; localreadonlyprobes/tests preceded marker,repositorywritesfollowreadback.
+Authority:current recovery6fab7b7eb22ccdad927416462624c1bbb52b1f68; activecadencev1.237blob1fdecbe7d873876b6dbe2dd18e23d56256f5117a; canonicaldecisionfcbdc7f48e8518dc6826d0d39c06d864da1a12e9 andcurrent15:38sheet eaeded90f81dd1190e0ef77fc52a448f73ea5dca.
+No market/sourcefreshness/kickoff/decision/cutoff/wager/model/scientific/taskmutation. Tonight19:30flexiblecycle isnotyetdue; readbackreadinesscannotguaranteeruntime/persistence.
