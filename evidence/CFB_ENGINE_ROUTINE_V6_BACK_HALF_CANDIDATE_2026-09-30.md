@@ -223,3 +223,15 @@ A material replay must record replay week and immutable starting boundary; simul
 Use Week 5 as the first controlled replay because accepted v1.208 FIRST_FROZEN predictions and a complete 47-game postgame scorecard are durably recoverable, while known operational defects provide authentic detection targets. The first pass must test whether the replay control can surface known persistence/scheduled-completion, Hot Sheet/decision-maturity and end-stage reconciliation weaknesses without exposing Week 5 outcomes before their simulated final boundaries. Existing Week 5 outcomes are scoring/diagnostic evidence only after those boundaries.
 
 This gate changes QA sequencing only. It does not change Production Routine v5, Champion v1.193, v1.208 frozen predictions, candidate acceptance, betting authority, execution history or scientific acceptance.
+
+## 14. Review / Decision / Execution Timing Authority Check — candidate addition 2026-10-09
+
+Trigger: classify a game review or decision as overdue, missing a deadline, or ready for an execution cutoff.
+
+Recover the complete active boundary before the classification: decision-cadence contract and its accepted amendments, game-specific canonical ledger, authoritative kickoff/context and any actual execution-access constraint. Keep separate the initial review obligation, default decision-reconciliation deadline, effective game-specific deadline, and hard final execution cutoff. A review day passing does not prove that a later default deadline passed. A default does not override an earned earlier constraint or establish executable access. Missing clock detail in one ledger is not evidence that the governing contract lacks it.
+
+Record unresolved effective deadlines/cutoffs explicitly. Do not derive a final execution cutoff from kickoff, invent an evening hour, or silently relax a missed earlier obligation. Fail closed on missing/ambiguous recovered authority.
+
+Bounded demonstration: evidence/operational/CFB_WEEK6_OCT08_DECISION_LEDGER_COVERAGE_GAP_V6.md, October 9 morning correction. The corrected coverage helper requires recovered cadence authority and separately exposes review timing/default clocks. Eighteen authority, timing-boundary and CLI assertions passed. Friday five had a missed Thursday review day but a future default Friday 13:00 clock at the audited 07:27:26 CT boundary; effective earlier constraints and hard cutoffs remained uncertified.
+
+This demonstrates a manual QA detection control, not an accepted betting decision, automated recurring integration, natural production success or routine promotion. Existing v1.237 authority and Production Routine v5 remain unchanged.
