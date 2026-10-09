@@ -1,5 +1,11 @@
 # CFB Engine — Current Recovery Index v1.245
 
+## October 9 benchmark pre-write replay validation
+Optional scripts/cfb_benchmark_observation_envelope.py is built, executed and independently read back; 30 checks passed on five retained 07:34 public observations. Input/output are isolated scheduler-QA replay artifacts, not new market observations or a reconstruction of the failed morning request.
+Recover `evidence/scheduler_qa/CFB_SCHEDULER_V6_CANONICAL_WRITE_DIFFERENTIAL_2026-10-08.md`, blob e9e1a61d0eb5dc172af3515115d83665acc9da76, for exact source/input/output hashes and limitations. Active persistence procedure now describes the limited pregame retrieval-only validator. Source qualification, exact frozen identity, execution, kickoff conflicts and betting decisions remain separate.
+No new schedule or canonical mutation. Actual scheduled runtime use and production rejection cause remain OPEN; successful replay does not fix or certify the natural producer.
+
+
 ## October 9 new scheduled failure-path demonstration
 Existing temporary canary V7 was reused once; requested 07:55:19 CT, actual start 07:57:29.109 CT (+130.109s). It preserved a declared simulated operational block as DIAGNOSTIC_INCOMPLETE, independently read back its candidate, and persisted/read back separate closure. Four production tasks stayed enabled with identical prompts/cadences; temporary canary auto-disabled. No new task or further test schedule.
 Recover `evidence/scheduler_qa/CFB_SCHEDULER_V7_NATURAL_FAILURE_PATH_RECONCILIATION_2026-10-09.md`, blob 69d3ee856285968704ebe3fedb0ec286da3886a1. Bounded failure-result/closure/topology demonstration PASS; actual production write rejection and natural full Market Monitor acceptance remain OPEN. This was not a forced real rejection or a resumed morning cycle.
