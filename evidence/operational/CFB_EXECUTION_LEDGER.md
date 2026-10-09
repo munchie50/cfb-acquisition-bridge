@@ -68,3 +68,23 @@ These are derived full-game FINAL_SCORE_GRADES, not confirmation of sportsbook s
 | CFB_OCT02-05 | Wisconsin 31, Michigan State 3 | SPREAD / -9.5 | 28 | 18.5 | WIN |
 
 Arithmetic: selected-team final margin + signed accepted spread; moneyline uses final winner only. Positive WIN, negative LOSS, zero PUSH. Eleven distinct actual wagers = 7 WIN / 4 LOSS / 0 PUSH. Ten not-live-labelled tickets = 6 WIN / 4 LOSS (this does not certify their pregame timing); separate Baylor LIVE_IN_GAME = 1 WIN, +0.5 after accepted -9.5. Preserve Baylor outside pregame evaluation. Staked total remains $33.45; cash profit and paid status UNVERIFIED. No model, prediction, historical recommendation, market/close or FIRST_FROZEN scorecard modification.
+
+## Original FIRST_FROZEN row-reference lookup — October 9
+
+Run CFB_WAGER_FROZEN_REFERENCE_QA_20261009T224012Z; audit evidence/operational/CFB_ORIGINAL_WAGER_FROZEN_REFERENCE_AUDIT_2026-10-09.json, blob b13ef5bacf7a47199ca139a429137427f0346fca. Authenticated original artifact10897612260 / producer36216090860 / archiveSHA256 772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf; accepted cutoff2026-09-26T03:47:37.497112+00:00. Eleven unique exact ordered team-pair/date references, one original prediction and zero exclusions each. Only alias Connecticut->UConn. Original CSV physical line references below include header. Original prediction values retained in audit unchanged; HOME margin/win semantics explicit. These are accepted pre-GAME artifact references, not proof of predictions before execution or engine recommendations. Independent official game-id certification UNVERIFIED.
+
+| Execution ID | Original game ID | Target CSV line | Prediction CSV line | Source schedule clock |
+|---|---|---|---|---|
+| CFB_SEP26-01 | 401858464 | 35 | 31 | Date consistent; exact kickoff unverified |
+| CFB_SEP26-02 | 401858463 | 25 | 22 | Date consistent; exact kickoff unverified |
+| CFB_SEP26-03 | 401862785 | 37 | 33 | Date consistent; exact kickoff unverified |
+| CFB_SEP26-04 | 401856700 | 21 | 19 | Date consistent; exact kickoff unverified |
+| CFB_SEP26-05 | 401858466 | 36 | 32 | Date consistent; exact kickoff unverified |
+| CFB_SEP26-06 | 401856813 | 4 | 4 | Date consistent; exact kickoff unverified |
+| CFB_OCT02-01 | 401858252 | 81 | 73 | Date consistent; exact kickoff unverified |
+| CFB_OCT02-02 | 401856707 | 73 | 66 | CONFLICT; unresolved |
+| CFB_OCT02-03 | 401858473 | 92 | 82 | Date consistent; exact kickoff unverified |
+| CFB_OCT02-04 | 401869962 | 101 | 90 | Date consistent; exact kickoff unverified |
+| CFB_OCT02-05 | 401858479 | 84 | 75 | Date consistent; exact kickoff unverified |
+
+Mississippi State original frozen start2026-10-03 04:00UTC converts to Oct2 23:00CT; official final page establishes Oct3 event and displays11:07AM kickoff. Preserve original source clock as CONFLICT, cause unresolved; do not use it as authoritative kickoff/deadline. Exact ordered pair and original UTC date give a unique reference; local-date/kickoff lineage certification remains OPEN. No frozen source repair or outcome-selected prediction substitution. Baylor reference does not qualify live execution for pregame analysis. Receipt timezone, pre-execution chronology, genuine Champion/decision attribution, book payment, budget and CLV remain UNVERIFIED. This append supersedes UNRECONCILED only for original FIRST_FROZEN row lookup, not those other fields.
