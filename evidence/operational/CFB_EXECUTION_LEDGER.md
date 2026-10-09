@@ -47,3 +47,24 @@ Common fields: Caesars Sportsbook / Harrah's Columbus; ACTUAL_REAL_MONEY; produc
 | CFB_OCT02-05 | 2026-10-02 07:54 PM | Michigan State at Wisconsin | Wisconsin / SPREAD | -9.5 | -121 | $3.40 | 2026-10-03 11:35 AM | NOT_LIVE_LABELLED |
 
 Reconciliation: six Sep26-issued wagers $18.05 plus five Oct2-issued wagers $15.40 = 11 actual wagers / $33.45 staked. One separate historical market board excluded. No raw serials/barcodes, model inputs, market benchmark, closing prices, outcomes or retroactive decisions created. Earlier initial/write-probe history preserved.
+
+## Verified final-score result grades — October 9 prospective reconciliation
+
+Run: CFB_WAGER_RESULT_RECONCILIATION_20261009T223030Z. Evidence: evidence/operational/CFB_ORIGINAL_WAGER_FINAL_RESULT_RECONCILIATION_2026-10-09.json, blob c84336516210f55fbd5d130275202da2b8899092, with exact original source identities, official final-result URLs/date, session retrieval bounds and deterministic signed-line comparison.
+These are derived full-game FINAL_SCORE_GRADES, not confirmation of sportsbook settlement/adjudication, ticket redemption or cash payment. Original execution entries remain unchanged. Overtime included in official finals. Book void/cancellation/special rules unverified. Budget classification, receipt timezone, genuine pre-event prediction/decision attribution and CLV remain unverified.
+
+| Execution ID | Official final (selection first) | Accepted market / line | Selection final margin | Signed grade comparison | Final-score grade |
+|---|---|---|---|---|---|
+| CFB_SEP26-01 | Nebraska 31, Michigan State 13 | SPREAD / -5.5 | 18 | 12.5 | WIN |
+| CFB_SEP26-02 | Iowa 20, Michigan 19 | MONEYLINE / N/A | 1 | 1 | WIN |
+| CFB_SEP26-03 | South Florida 14, Bowling Green 6 | SPREAD / -18.5 | 8 | -10.5 | LOSS |
+| CFB_SEP26-04 | Georgia 41, Oklahoma 13 | SPREAD / -13.5 | 28 | 14.5 | WIN |
+| CFB_SEP26-05 | Penn State 20, Wisconsin 24 | SPREAD / -10 | -4 | -14 | LOSS |
+| CFB_SEP26-06 | Baylor 23, Colorado 13 | SPREAD_LIVE / -9.5 | 10 | 0.5 | WIN |
+| CFB_OCT02-01 | Connecticut 41, Syracuse 42 (OT) | SPREAD / +6.5 | -1 | 5.5 | WIN |
+| CFB_OCT02-02 | Mississippi State 23, Alabama 56 | SPREAD / +5.5 | -33 | -27.5 | LOSS |
+| CFB_OCT02-03 | Iowa 14, Ohio State 31 | SPREAD / +14.5 | -17 | -2.5 | LOSS |
+| CFB_OCT02-04 | James Madison 45, Marshall 17 | SPREAD / -18.5 | 28 | 9.5 | WIN |
+| CFB_OCT02-05 | Wisconsin 31, Michigan State 3 | SPREAD / -9.5 | 28 | 18.5 | WIN |
+
+Arithmetic: selected-team final margin + signed accepted spread; moneyline uses final winner only. Positive WIN, negative LOSS, zero PUSH. Eleven distinct actual wagers = 7 WIN / 4 LOSS / 0 PUSH. Ten not-live-labelled tickets = 6 WIN / 4 LOSS (this does not certify their pregame timing); separate Baylor LIVE_IN_GAME = 1 WIN, +0.5 after accepted -9.5. Preserve Baylor outside pregame evaluation. Staked total remains $33.45; cash profit and paid status UNVERIFIED. No model, prediction, historical recommendation, market/close or FIRST_FROZEN scorecard modification.
