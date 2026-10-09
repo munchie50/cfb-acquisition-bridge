@@ -20,3 +20,7 @@ Manual correction cycle CFB_PRESENTATION_QA_20261009T203813Z: STARTED read-back 
 ## Producer/closure debt
 The current correction is persisted/read back and deterministic audit demonstrates values retained. No prompt or scheduled-producer code was changed during this audit. Natural future Hot Sheet producers must still demonstrate canonical quote-display reconciliation; numerical/frozen audit helper is reusable manual tooling, not claimed recurring integration. The helper checks frozen values and identity, not external-source truth, calibrated edges, actionable thresholds, prices or Caesars execution.
 Opaque rejection cause, Health and Evening natural demonstration debt remain OPEN. No source capture, new wager, settlement, model/calibration/Champion change or routine promotion.
+
+
+## Producer-control follow-through
+After artifact correction, appended a prospective canonical row-value fidelity guard to the active deterministic Hot Sheet contract already bound to Market Monitor. Exact independent contract readback: 7636214c24ea061f70dc225cbce0cd28b146feb9. Requires frozen-value/identity reconciliation and displayed market tuple/divergence/timestamp fidelity before persistence; unsupported range endpoints fail closed. Existing task prompts/cadences unchanged. This addresses the recreating producer requirement; natural enforcement remains pending and is not certified by manual helper execution.
