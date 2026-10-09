@@ -86,3 +86,12 @@ Expected versus actual: PASS for distinguishing review-day duty, default decisio
 Status: CORRECTED / EXECUTED / READ_BACK / BOUNDED_REPLAY_DEMONSTRATED. This is not Friday decision acceptance, a full production Hot Sheet, a natural scheduled RUN_PASS, Test Routine promotion, or closure of the production persistence defect.
 
 Next: prospective Friday review before the applicable genuine cutoff with qualified observations and earned decision state; retain missing Thursday evidence honestly. Do not manufacture thresholds, calibrated EV, final availability or actual executions.
+
+## October 9 prospective Friday follow-through
+New current evidence supersedes the earlier statement that Friday has no named records, from the new decision boundary 2026-10-09T12:38:21.065Z onward only.
+Five fresh public benchmark observations and five current PASS side/total no-bet reviews were appended to the canonical surfaces under separate manual run CFB_MANUAL_FRIDAY_REVIEW_20261009T123613Z.
+Exact market blob d13c5be0a12aed50242515e10362cdcd388cdcf2; exact decision blob 1030aac4df11c82c74a936317db2591b1dbb5f52. Prior bytes preserved; real planned-append metadata and expected blob readbacks verified.
+Executed corrected naming audit on exact new decision bytes: overall 8/49 named records, Friday 5/5 named, with 49 unique slate rows. Naming alone does not certify the decision; actual decision text and authority govern. No missed Thursday event is reconstructed.
+Detailed source, rationale, timestamp limitations and metadata: evidence/operational/CFB_WEEK6_OCT09_FRIDAY_PROSPECTIVE_BENCHMARK_AND_DECISION_REVIEW.md; independently read-back blob de96db0eb8c227ead026f5251a0f3fe1962d11c0.
+Separate terminal candidate and closure independently fetched; closure evidence/run_receipts/CFB_MANUAL_FRIDAY_REVIEW_20261009T123613Z_RUN_CLOSURE.md, blob db395f97a79c99bf11aac4c8cb60304c5a18414c, remains RUN_INCOMPLETE because full fresh production Hot Sheet/full-slate maintenance and natural scheduled reliability remain open.
+No actionable wager is established. Friday default 13:00 review remains the next normal material reconciliation point; earlier qualified information can be reviewed prospectively. No minimum line, execution cutoff, user wager or extra trip is invented.
