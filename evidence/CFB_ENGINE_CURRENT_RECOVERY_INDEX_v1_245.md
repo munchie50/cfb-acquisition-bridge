@@ -1,5 +1,17 @@
 # CFB Engine — Current Recovery Index v1.245
 
+## Current frontier quick-read — 2026-10-09 morning QA
+Navigation-only reconciliation; detailed authority and evidence govern. All previous recovery content remains preserved below.
+
+- Morning scheduled Market Monitor has persisted STARTED for cycle CFB_MARKET_MONITOR_20261009T120138Z; terminal candidate/closure and current canonical/Hot Sheet completion are not evidenced. Do not infer RUN_PASS from scheduler metadata.
+- Market Monitor was observed disabled and has been restored under the standing four-schedule authority. Exactly four enabled recurring tasks and all existing cadences were independently verified. Canary/retired tasks remain disabled.
+- Failure-containment guard installed/read back in the persistence procedure and both Market Monitor/Evening Availability prompts: affected work fails closed and reports permitted terminal evidence; scheduled engine invocations must not mutate task lifecycle because of failure. Natural demonstration remains pending; current disabling actor/cause remains unproved.
+- Detailed current audit, exact identities and limitations: `evidence/scheduler_qa/CFB_SCHEDULER_V6_OCT09_START_ONLY_AND_TASK_LIFECYCLE_REPAIR.md`, read-back blob 6b6b88bc330de900494dbc8d2d16a01297cc8bcd.
+- Executed read-only decision coverage audit at 07:20:27 CT: Friday five Thursday-review-day obligations passed without named reconciliations; Saturday-morning seven require today's Friday review. Naming coverage is not semantic decision validation, and no exact evening deadline, quote or cutoff is invented.
+- Production persistence/freshness remains OPEN. Next natural 13:00 CT cycle requires actual canonical/Hot Sheet and two-phase terminal readback proof while preserving topology. Static, canary, task enablement and navigation updates are separate proof classes.
+- Champion v1.193, FIRST_FROZEN, S2 study-only and protected TEST boundaries remain unchanged.
+
+
 ## Current frontier quick-read — 2026-10-08 reconciled QA
 Navigation-only update under existing v1.245 authority. This block supersedes earlier quick-read ACTIVE/NEXT summaries for navigation; detailed acceptance contracts and evidence govern each claim. Historical content below is preserved in full.
 
