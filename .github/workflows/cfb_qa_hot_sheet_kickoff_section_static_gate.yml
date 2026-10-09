@@ -6,6 +6,9 @@ on:
       - 'scripts/cfb_hot_sheet_kickoff_section_static_gate.py'
       - 'scripts/cfb_hot_sheet_production_section_gate.py'
       - 'scripts/test_cfb_hot_sheet_production_section_gate.py'
+      - 'scripts/cfb_hot_sheet_frozen_values_audit.py'
+      - 'scripts/cfb_week6_production_frozen_gate.py'
+      - 'scripts/test_cfb_week6_production_frozen_gate.py'
       - 'evidence/operational/CFB_WEEK6_HOT_SHEET_*.md'
       - '.github/workflows/cfb_qa_hot_sheet_kickoff_section_static_gate.yml'
   workflow_dispatch:
@@ -14,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      actions: read
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,6 +29,16 @@ jobs:
         run: python scripts/cfb_hot_sheet_kickoff_section_static_gate.py
       - name: Exercise production presentation rejection boundaries
         run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_production_section_gate.py
+      - name: Recover authenticated accepted FIRST_FROZEN archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/${{ github.repository }}/actions/artifacts/10897612260/zip > "$RUNNER_TEMP/cfb_first_frozen.zip"
+          echo "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf  $RUNNER_TEMP/cfb_first_frozen.zip" | sha256sum -c -
+      - name: Exercise frozen display rejection boundaries
+        env:
+          CFB_ACCEPTED_FREEZE_ARCHIVE: ${{ runner.temp }}/cfb_first_frozen.zip
+        run: python -m unittest discover -s scripts -p test_cfb_week6_production_frozen_gate.py
       - name: Validate retained and newly changed Week 6 production sheets
         env:
           BEFORE_COMMIT: ${{ github.event.before }}
@@ -33,4 +47,6 @@ jobs:
           if [[ -n "$BEFORE_COMMIT" ]]; then
             args+=(--changed-since "$BEFORE_COMMIT")
           fi
-          python scripts/cfb_hot_sheet_production_section_gate.py "${args[@]}"
+          python scripts/cfb_hot_sheet_production_section_gate.py "${args[@]}" > "$RUNNER_TEMP/cfb_selected_sheets.jsonl"
+          cat "$RUNNER_TEMP/cfb_selected_sheets.jsonl"
+          python scripts/cfb_week6_production_frozen_gate.py --archive "$RUNNER_TEMP/cfb_first_frozen.zip" --selection-file "$RUNNER_TEMP/cfb_selected_sheets.jsonl"
