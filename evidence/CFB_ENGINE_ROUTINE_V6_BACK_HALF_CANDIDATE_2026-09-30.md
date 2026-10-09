@@ -235,3 +235,15 @@ Record unresolved effective deadlines/cutoffs explicitly. Do not derive a final 
 Bounded demonstration: evidence/operational/CFB_WEEK6_OCT08_DECISION_LEDGER_COVERAGE_GAP_V6.md, October 9 morning correction. The corrected coverage helper requires recovered cadence authority and separately exposes review timing/default clocks. Eighteen authority, timing-boundary and CLI assertions passed. Friday five had a missed Thursday review day but a future default Friday 13:00 clock at the audited 07:27:26 CT boundary; effective earlier constraints and hard cutoffs remained uncertified.
 
 This demonstrates a manual QA detection control, not an accepted betting decision, automated recurring integration, natural production success or routine promotion. Existing v1.237 authority and Production Routine v5 remain unchanged.
+
+## 15. Composite Source Region / Chronology Gate — candidate addition 2026-10-09
+
+Trigger: a fetched page or search excerpt combines a dated article, live navigation/scoreboard widgets, availability statements or market display, especially when an event/status conflicts with the observation clock.
+
+Do not treat primary-domain provenance, successful fresh retrieval or the article publication date as chronology proof for every surrounding region. Qualify identity and time semantics per region. A score/final for a corroborated future kickoff is SOURCE_CHRONOLOGY_CONFLICT and is quarantined from outcome, availability inference and betting/model use pending independent resolution. Preserve the conflict; do not select the convenient region, manufacture a result, or infer health from absent search results.
+
+A dated expected-absence report remains an expectation unless independently confirmed as current/final. Quote retrieval time remains distinct from book offer time. Keep qualified facts at their earned scope and maturity.
+
+Manual demonstration: evidence/operational/CFB_WEEK6_OCT09_FRIDAY_PROSPECTIVE_BENCHMARK_AND_DECISION_REVIEW.md. Fresh BYU dated game-week page supplied a future kickoff but surrounding chrome displayed score-like output; that region was excluded. Opponent-authored availability expectations and the official Iowa kickoff-minute conflict remained unresolved. Five uniquely identified linked benchmark blocks passed 26 extraction/clock checks and were preserved separately from executable offers. No outcome or frozen prediction was changed.
+
+Result: MANUAL_SOURCE_GATE_DEMONSTRATED; recurring producer enforcement and natural production acceptance remain pending. Production Routine v5 and scientific/Champion authority unchanged.
