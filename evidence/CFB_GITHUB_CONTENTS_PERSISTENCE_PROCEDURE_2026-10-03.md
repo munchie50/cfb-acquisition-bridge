@@ -84,3 +84,15 @@ Within scheduled Market Monitor and Evening Availability invocations:
 Observed motivating cases: recovered October 8 Evening Availability response says it disabled its recurring task after write rejection; that task was restored. October 9 morning Market Monitor is observed disabled after a STARTED-only cycle. The latter disabling actor/reason is not established by the available metadata; do not assert an identical cause without a trace.
 
 Scientific effect: NONE. Champion effect: NONE. Existing schedule cadence and protected evidence boundaries unchanged.
+
+## 2026-10-09 terminal-persistence unavailable response envelope
+
+Trigger: a permitted terminal receipt cannot be persisted/read back. Keep the affected operational run incomplete and preserve task lifecycle under the guard above.
+
+When permitted, the final run response must carry a small content-free diagnostic envelope: run identity, reported terminal status, last proven stage, failed target path/operation and actual tool name, allowed observed rejection classification/code, baseline/refetched SHA, each attempted proposal/delta digest and byte/character length when computed, attempt count, and terminal_persistence=UNAVAILABLE. Reuse already computed values; if absent, explicitly say HASH_UNAVAILABLE, SIZE_UNAVAILABLE, ERROR_DETAIL_UNAVAILABLE or TOOL_NAME_UNAVAILABLE. Distinguish intended proposal metadata from proof of connector receipt.
+
+A chat response is reported runtime evidence, not durable repository closure or RUN_PASS. It does not authorize exposing restricted error details, raw attempted bodies or secrets, nor retrying via another destination to bypass a rejection. The envelope improves permitted observability even when a durable terminal cannot be written.
+
+Motivation: recovered October 9 07:04 response reports two market-update and two terminal-receipt rejections but lacks exact operation names/errors/proposal metadata. Do not reconstruct them from later successful manual writes.
+
+Status: RESPONSE_REQUIREMENT_INSTALLED; natural failure-response demonstration pending. This does not fix the opaque write restriction.
