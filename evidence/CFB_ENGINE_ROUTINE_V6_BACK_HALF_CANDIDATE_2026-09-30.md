@@ -247,3 +247,13 @@ A dated expected-absence report remains an expectation unless independently conf
 Manual demonstration: evidence/operational/CFB_WEEK6_OCT09_FRIDAY_PROSPECTIVE_BENCHMARK_AND_DECISION_REVIEW.md. Fresh BYU dated game-week page supplied a future kickoff but surrounding chrome displayed score-like output; that region was excluded. Opponent-authored availability expectations and the official Iowa kickoff-minute conflict remained unresolved. Five uniquely identified linked benchmark blocks passed 26 extraction/clock checks and were preserved separately from executable offers. No outcome or frozen prediction was changed.
 
 Result: MANUAL_SOURCE_GATE_DEMONSTRATED; recurring producer enforcement and natural production acceptance remain pending. Production Routine v5 and scientific/Champion authority unchanged.
+
+## 16. STARTED-only Runtime Evidence Recovery — candidate addition 2026-10-09
+
+Trigger: a scheduled cycle has STARTED but no durable terminal evidence.
+
+Recover the invocation's own response/error evidence, scheduler timestamps/state and exact repository receipts before describing it as slow, stuck or still running. Distinguish dispatch, reported runtime result, durable terminal persistence and future schedule enablement. Re-enabling a task is not evidence that an earlier run resumed. A reported terminal-write failure explains why a stopped invocation can remain STARTED-only; preserve that distinction without fabricating closure.
+
+If response/trace access is unavailable, say runtime state is unverified rather than inferring activity from elapsed time. Current connector tooling exposes metadata, not an active-execution trace; recovered conversation output must be labelled separately from raw tool logs.
+
+Demonstration: October 9 07:45 investigation in evidence/scheduler_qa/CFB_SCHEDULER_V6_OCT09_START_ONLY_AND_TASK_LIFECYCLE_REPAIR.md recovered the 07:04:52 response reporting incomplete writes and rejected terminal attempts, reconciling the 07:05 scheduler timestamp and later disabled state. Exact transcript retrieval failed; narrower payload/root-cause claims remain prohibited. Status: MANUAL_RECOVERY_DEMONSTRATED; production reliability remains OPEN.
