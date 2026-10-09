@@ -1,4 +1,7 @@
 import unittest
+import subprocess
+import sys
+import tempfile
 from pathlib import Path
 import cfb_hot_sheet_production_section_gate as gate
 
@@ -67,5 +70,39 @@ class ProductionSectionGateTests(unittest.TestCase):
 
     def test_fiu_alias(self):
         self.assertEqual(gate.identity('New Mexico State @ FIU'),gate.identity('New Mexico State @ Florida International'))
+
+    def changed_sheet_cli(self, changed_path, content):
+        # Synthetic files live only in an isolated temporary git repository.
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            ref=root/gate.REFERENCE; ref.parent.mkdir(parents=True); ref.write_text(self.reference)
+            retained=root/'evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md'
+            retained.write_text(self.sheet)
+            def git(*args):
+                return subprocess.run(['git','-c','user.name=QA Fixture','-c','user.email=qa@example.invalid',
+                                       '-c','commit.gpgsign=false',*args],cwd=root,check=True,
+                                      capture_output=True,text=True).stdout.strip()
+            git('init'); git('add','.'); git('commit','-m','synthetic baseline'); before=git('rev-parse','HEAD')
+            changed=root/changed_path; changed.parent.mkdir(parents=True,exist_ok=True); changed.write_text(content)
+            git('add','.'); git('commit','-m','synthetic changed file')
+            return subprocess.run([sys.executable,str(Path(gate.__file__).resolve()),'--sheet',
+                                   str(retained.relative_to(root)),'--changed-since',before],cwd=root,
+                                  capture_output=True,text=True)
+
+    def test_changed_production_sheet_is_validated(self):
+        r=self.changed_sheet_cli('evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1804CT.md',self.sheet)
+        self.assertEqual(r.returncode,0,r.stderr)
+        self.assertEqual(r.stdout.count('PASS_WEEK6_PRODUCTION_SECTION_PRESENTATION'),2)
+
+    def test_bad_changed_sheet_fails_despite_valid_retained_sheet(self):
+        bad=self.sheet.replace('| Sat 12:00 PM |','| Sat 11:59 AM |')
+        r=self.changed_sheet_cli('evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1804CT.md',bad)
+        self.assertNotEqual(r.returncode,0)
+        self.assertIn('kickoff/section conflict',r.stderr)
+
+    def test_qa_document_is_not_misparsed_as_production_sheet(self):
+        r=self.changed_sheet_cli('evidence/operational/CFB_WEEK6_HOT_SHEET_QA_2026-10-09.md','synthetic QA prose')
+        self.assertEqual(r.returncode,0,r.stderr)
+        self.assertEqual(r.stdout.count('PASS_WEEK6_PRODUCTION_SECTION_PRESENTATION'),1)
 
 if __name__=='__main__': unittest.main()
