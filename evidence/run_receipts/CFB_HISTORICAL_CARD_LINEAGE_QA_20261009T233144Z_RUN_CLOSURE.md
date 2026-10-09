@@ -1,0 +1,22 @@
+# Separate RUN_CLOSURE — CFB_HISTORICAL_CARD_LINEAGE_QA_20261009T233144Z
+
+Final terminal state:RUN_INCOMPLETE.
+Run type:user-directed historical execution-card lineage continuation.
+Prospective boundary:2026-10-09T23:31:44Z.
+Closure issued only after applicable output/canonicalreadbacks and terminalcandidate independentreadback. Candidate evidence/run_receipts/CFB_HISTORICAL_CARD_LINEAGE_QA_20261009T233144Z_TERMINAL_CANDIDATE.md, blob 729f0144597013ea1a43767df1d0b088efc7bfd2, returnedcommit 50a06fa093dc61bc48a50d609d9f05dd99917621; exactbytesverified atimmutablecommitandmain BEFORE thisclosure waswritten. October5two-phasecontract followed.
+Applicable verified surfaces:
+- evidence/operational/CFB_ORIGINAL_WAGER_EXECUTION_CARD_LINEAGE_AUDIT_2026-10-09.json: ff6e1274c08ebc734e1ae3d822e49e49e4182535; ref main; PASS
+- evidence/run_receipts/CFB_HISTORICAL_CARD_LINEAGE_QA_20261009T233144Z_RUN_STARTED.md: aa82885f333bfe127691cdb085f9e7e5da0a3fcc; ref main; PASS
+- evidence/operational/CFB_EXECUTION_LEDGER.md: cce489b65a62cb6bfefbfb167318aa7a2584a59f; ref main; PASS
+- evidence/CFB_ENGINE_HOLISTIC_SYSTEM_QA_MAP_2026-09-30.md: c087ac5c5ed0675d52c5c364f244e77aee0edf13; ref main; PASS
+- evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md: d47302e11a9fe1a1392087e73bed9471d984fe84; ref main; PASS
+- evidence/operational/CFB_DECISION_WAIT_LEDGER.md: fcbdc7f48e8518dc6826d0d39c06d864da1a12e9; ref main; PASS
+- evidence/operational/CFB_MARKET_MONITOR_STATE.md: bbc222ec291ba1faff3f083f6da132d8e8214cae; ref main; PASS
+- evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md: 6ae881224fa18b65a4408fa807a2582aebccf6fd; ref main; PASS
+- evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md: eaeded90f81dd1190e0ef77fc52a448f73ea5dca; ref main; PASS
+- evidence/operational/CFB_ORIGINAL_WAGER_HISTORICAL_DECISION_REFERENCE_AUDIT_2026-10-09.json: 59eab5836ff4716cb44953285b72094ad4752f33; ref main; PASS
+- evidence/operational/CFB_WEEK5_HOT_SHEET_2026-09-29_2020CT.md: a018b009d6ed4cf29fc5f774e39194ab2815378e; ref 093a8c978e4441ebda5168ba871ff99e9f9bd826; PASS
+Append commits:execution f95a9e67edae1b50ca7524c0eb8b3234f21ae45b;map 512c7cd393785fb4fb320c14096c6d22e5e72739;recovery e13e223298948559a07f34ae4fe78a7867f0bd8d. SerializedimmediateSHA/preservedpriorbytes/plannedmetadata/returnedcommitandmainreadbacks proven; candidate holdsmetadata. Taskproof:{"enabled":4,"inventory":11,"governed_fields_unchanged":66}.
+Earned checkpoint:immutableOctober2card->pinneddecisionparentlineage verified; alltenactualdatachecks passed.4actualOct2ticketsmatchfive-entrycard;Wisconsin isfull-slatepresent butoffcard;UMasscardentryhasnorecoveredticket. Historicalfilename is not contenttimestamp. Priorfourrecordedcutoffcomparisons retained,notdecision-quality/causalproof.
+Missing originalWisconsin/Sept26recommendations ortimezoneconfirmation not recovered inboundedPersonalContextsearch; reportedretrievalsummariesare not originaltranscript/delivery. No absence-everywhereclaim. Receipttimezone,preexecutionsequence,independentidentity/delivery/causalattribution remainunverified, requiringRUN_INCOMPLETE. Original11actualwagers andBaylorLIVE separation preserved; no newbet,settlement,CLV,budget orprofitclaim.
+No currentmarket/decision/HotSheet/scorecard/task orscientificstate change. Productionv5,Championv1.193/FIRST_FROZENv1.208,S2study-only,v6candidateand2025TESTunopened unchanged. Scientific/Champion effect:NONE. Existinghistoricfailures/opaqueproductionrejection/rawclock403debts unchanged. Successfulcheckpointpersistencecannotupgrade incompleteattribution oroldercycles.
