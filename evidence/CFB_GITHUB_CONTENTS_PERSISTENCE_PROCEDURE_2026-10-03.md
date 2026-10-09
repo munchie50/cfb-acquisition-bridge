@@ -50,3 +50,20 @@ Required hardening for scheduled runs:
 8. A diagnostic probe may establish write-path health but cannot upgrade a historical RUN_INCOMPLETE to RUN_PASS.
 
 Scientific effect: NONE. Champion effect: NONE.
+
+## 2026-10-09 test-routing planned-append metadata capture
+
+Purpose: preserve content-free evidence for future permitted canonical append attempts. This does not resolve the October 8 rejection cause, reconstruct a missing historical payload, authorize a rejected action, or certify a production run.
+
+1. Before each permitted append attempt, retain its run identity, attempt number, operation and target path, and the immediately fetched baseline blob SHA. Where a computation runtime is available, compute the proposed complete-content and appended-delta SHA-256 digests, proposed Git blob SHA, UTF-8 byte lengths, Unicode character counts, and whether all prior bytes are preserved.
+2. The read-only helper scripts/cfb_planned_append_metadata.py computes those values from local baseline and proposal files. Supply --prior, --proposed, --expected-prior-sha and a comma-separated --inventory. It rejects stale baselines, rewritten history, invalid UTF-8, and empty, duplicate or unsupported inventory names. It never invokes a repository write.
+3. Governed field inventory is caller-declared: game_identity, observation_timestamp, source, book, line, price, availability, executability, provenance, champion_snapshot, decision_state. Include only applicable names. Inventory presence is not semantic validation of their values or completeness.
+4. If computation is unavailable, explicitly record HASH_UNAVAILABLE or SIZE_UNAVAILABLE with the reason; never invent metadata. A helper result is PROPOSED_ONLY_NOT_WRITE_SUCCESS and is not proof that the connector received or accepted those exact bytes.
+5. When allowed, preserve the metadata with the run receipt. After rejection, record the observed failure classification and permitted non-sensitive explanation, then immediately re-fetch the target and retain the observed blob SHA. Bind each allowed reduced attempt to its own metadata; do not conflate attempts.
+6. Do not archive raw rejected content, secrets, or restricted tool traces through this procedure. Do not encode, relocate or split content to evade a restriction. Existing rejection handling, atomic governed observation fields, deadlines and terminal closure requirements remain governing.
+7. Successful append completion still requires independent canonical readback matching the proposal and the separately verified terminal closure. Metadata alone cannot upgrade RUN_INCOMPLETE.
+8. Test-routing verification: the helper passed 11 synthetic metadata and fail-closed assertions, including independent Git blob hashing, delta hashing, UTF-8 byte/character distinction, no raw content in output, proposal-only status, stale SHA, historical rewrite, duplicate/unknown inventory and invalid UTF-8 rejection. A zero-length delta is metadata only and does not establish a mutation.
+
+Integration: Market Monitor already names this persistence procedure as an authority. No recurring task prompt, schedule or enabled state is changed. Runtime use and receipt capture in a natural scheduled production attempt remain unverified.
+
+Scientific effect: NONE. Champion effect: NONE. Production rejection root cause: OPEN.
