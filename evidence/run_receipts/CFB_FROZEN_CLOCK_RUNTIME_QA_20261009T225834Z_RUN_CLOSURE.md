@@ -1,0 +1,19 @@
+# CFB_FROZEN_CLOCK_RUNTIME_QA_20261009T225834Z closure
+
+final_terminal_state: RUN_INCOMPLETE
+execution_class: USER_DIRECTED_MANUAL_TEST_ROUTINE_V6
+prospective_mutation_boundary_utc:2026-10-09T22:58:34Z
+scope: original runtime clock ingestion/hash ancestry plus original raw timezone/status recovery
+
+Closure issued only after applicable changed evidence/checkpoint and terminal candidate independently read on returned immutable commits and currentmain.
+Start:evidence/run_receipts/CFB_FROZEN_CLOCK_RUNTIME_QA_20261009T225834Z_RUN_STARTED.md, blob6271b6817061fbdff1afe1be3a5686a4680bde74
+Candidate:evidence/run_receipts/CFB_FROZEN_CLOCK_RUNTIME_QA_20261009T225834Z_TERMINAL_CANDIDATE.md, blob57d5d2745366a9133a5b78f057fd5f66f12a6247
+evidence/scheduler_qa/CFB_ORIGINAL_FROZEN_CLOCK_SOURCE_PATH_AUDIT_2026-10-09.md, blob3e7969b9d8a5a9a94dd67fb481e039d29f3521f3, commit96e1d060d929b090073eae39f229abf39ca54a59; exactcommit/currentmainPASS
+evidence/CFB_ENGINE_HOLISTIC_SYSTEM_QA_MAP_2026-09-30.md, blob1cd9a6e2c77cd9129312f78331a873f55aa46c7d, commitf1ca074d7af36447a5c257169900aa99ee6ed8ed; exactcommit/currentmainPASS
+evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md, blob57f98c3f4eef32f83161efc59de980a7e5466c6e, commite75d81a14627319a98db3006c44fcb209b2f76d2; exactcommit/currentmainPASS
+
+Verified:12unique original preflight/producer log facts corroborate source/preflightarchive digests, originalcutoff and622/526/96accounting. Originaljobs108331631762/108332223631 completed successfully; no rerun. EarlierSTATIC_ONLY ingestion evidence now has contemporaneous original-runtime corroboration. Originalraw/preflightbytes and timezone/TBD/status rows remain unread.
+Unresolved blocker: refreshed connectorfilereference stillHTTP403;2scratchGETs captured17byte plaintext error code:1010. No narrower transport layer/cause, originalartifactcorruption, expiry, canonical writerejection or scheduler defect inferred. No furtherattempts or alternatedestination. Nextsafeaction permitted originalbyte recovery atacceptedhash then exacttimezone/statusinspection; currentproviderrows cannot replacehistoricalbytes.
+Priorincompleteclosure preserved. Sixcanonical/historicalclosure boundariesunchanged,66taskfields unchanged across11tasks,exactly4enabled. CurrentHotSheet operationaltimes, predictions, source/model/scientific, scorecard, market, decision, wager, deadline and schedulesunchanged. Clock-separationnatural enforcement and broader reliability debt remainOPEN. Successfulcheckpointpersistence does not turn this incomplete rawcauseinvestigation intoRUN_PASS.
+scientific_effect:NONE
+champion_effect:NONE
