@@ -295,3 +295,6 @@ Kickoff corroboration: Southern Miss official athletics lists Tue 19:00 CT; New 
 
 ## Diagnostic-only synthetic prospective record
 TEST_ONLY | 2026-10-08 07:00 CT | fixture-market | hypothetical spread -3.5 | price -110 | NOT_EXECUTABLE | not a real sportsbook quote | no betting decision
+
+## Synthetic market observation fixture
+TEST_ONLY | market=FBS football spread | observation=2026-10-08T19:00:00-05:00 | source=QA_SYNTHETIC | book=NONE | price=-110 | line=-3.5 | availability=NOT_EXECUTABLE | provenance=isolated scheduler_qa | decision=INCONCLUSIVE | no wager | no canonical effect
