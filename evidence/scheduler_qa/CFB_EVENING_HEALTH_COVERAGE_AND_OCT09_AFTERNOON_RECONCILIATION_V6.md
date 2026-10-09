@@ -254,3 +254,247 @@ Structural finding: Health itself shares terminal-write failure exposure but did
 Independent fresh task readback passed 68 preservation assertions: inventory and four enabled unchanged; every schedule/title/timezone/timing mode/enabled state preserved; other prompts identical; complete Health old bytes plus exact intended suffix verified. This is installation/readback proof, not a natural Health success/failure demonstration. No toy write, intentional rejection, new schedule or historical receipt was generated. Original runtime response and old failure remain preserved rather than upgraded.
 
 Lifecycle: RUNTIME_RESPONSE_RECOVERED; HEALTH_CONTAINMENT_INSTALLED_AND_READ_BACK; NATURAL_HEALTH_RESPONSE_AND_CLOSURE_DEMONSTRATION_PENDING. Shared post-dispatch receipt rejection is now evidenced by reported Health and Monitor responses, but exact opaque trigger remains OPEN. Actual Health fallback identity/raw trace unavailable. Next natural 16:30 CT flexible Health cycle is the representative producer proof. Champion/FIRST_FROZEN, Production Routine v5, candidate v6 and all contamination boundaries unchanged.
+
+## Natural Health success-side demonstration — October 9 17:13 CT, independently reconciled after 17:22
+
+Trigger: previously installed Health evening audit, unresolved-cycle carry-forward and two-phase terminal persistence were awaiting their next natural producer. No extra schedule, dispatch or diagnostic run was used.
+
+Actual natural cycle: CFB_DUAL_ENGINE_HEALTH_20261009T221353Z. Observation boundary 17:13:53 CT lies inside the existing 16:30–17:30 flexible window. Scheduler last_run_time 22:18:23.676832Z corroborates the invocation but is not its start or completion proof.
+
+Independent repository proof: audit b69370754d03f01a8403277da4df64565478a01e; terminal candidate 1d1a66035febfb7f024a163205a99379500acda5; separate closure f8d76e548372599b0186eda75b41362f400d7e49 ending RUN_PASS. Commit ancestry proves audit e2217dc859166c430978125262d4ccd38ff7972d (22:17:01Z) -> candidate eba42af99289062993a6ce97ca2aa7abe2481c3c (22:17:30Z) -> closure 7cb0ef52ac7734188413f84ad1138be8ec43b90c (22:17:54Z). Closure binds exact independently fetched audit/candidate blobs; source surfaces were separately fetched and matched cited identities.
+
+Expected versus actual: PASS, 34 executed semantic/reference/ancestry/topology checks; 66 title/prompt/schedule/timing/timezone/enabled comparisons preserved all eleven task controls between beginning/end of this manual reconciliation. Exactly four intended production tasks enabled. This private comparison is post-run; do not invent an unavailable pre-invocation prompt snapshot. Natural audit separately reports no mutation.
+
+Demonstrated through the real scheduled CFB Health producer: success-side evidence/candidate/separate closure; historical carry-forward for CFB_MARKET_MONITOR_20261009T120138Z, OCT08_EVENING_AVAILABILITY and OCT08_DUAL_ENGINE_HEALTH_COVERAGE_UNVERIFIED; tonight NOT_YET_DUE; recovered October4 QA outputs retained without reopening; 11 actual wagers acknowledged with Baylor live separation. Its broader CFB coverage is through its 17:13 observation boundary with those unresolved exceptions carried, not proof that all prior history is complete. Original prior failures are preserved.
+
+Still pending: terminal-persistence failure response/envelope was not exercised because writes succeeded; conditional Monitor restoration was not exercised because none was needed; tonight Evening Availability natural candidate/closure and repeated scheduled reliability remain pending; earlier opaque rejection cause remains OPEN. This does not certify Big Nine public NFL claims, which are outside this bounded CFB reconciliation, or promote Routine v6/Champion/S2.
+
+Result: NATURAL_HEALTH_CFB_AUDIT_AND_SUCCESS_CLOSURE_DEMONSTRATED / INDEPENDENT_RECONCILIATION_PASS. Earlier broad NATURAL_HEALTH_ENFORCEMENT_PENDING summaries are superseded only for the enumerated demonstrated controls. Failure-side and sustained-reliability debt are retained separately.
+
+Executed reconciliation record:
+```json
+{
+  "check_count": 34,
+  "checks": [
+    {
+      "name": "closure binds exact audit",
+      "pass": true
+    },
+    {
+      "name": "closure binds exact candidate",
+      "pass": true
+    },
+    {
+      "name": "candidate binds exact audit",
+      "pass": true
+    },
+    {
+      "name": "separate final RUN_PASS",
+      "pass": true
+    },
+    {
+      "name": "audit commit precedes candidate",
+      "pass": true
+    },
+    {
+      "name": "candidate commit precedes closure",
+      "pass": true
+    },
+    {
+      "name": "same cycle across three artifacts",
+      "pass": true
+    },
+    {
+      "name": "observation boundary inside Health window",
+      "pass": true
+    },
+    {
+      "name": "exact direct source readback: evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "pass": true
+    },
+    {
+      "name": "audit references exact source: evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "pass": true
+    },
+    {
+      "name": "exact direct source readback: evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "pass": true
+    },
+    {
+      "name": "audit references exact source: evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "pass": true
+    },
+    {
+      "name": "exact direct source readback: evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "pass": true
+    },
+    {
+      "name": "audit references exact source: evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "pass": true
+    },
+    {
+      "name": "exact direct source readback: evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "pass": true
+    },
+    {
+      "name": "audit references exact source: evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "pass": true
+    },
+    {
+      "name": "exact direct source readback: evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1301CT.md",
+      "pass": true
+    },
+    {
+      "name": "audit references exact source: evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1301CT.md",
+      "pass": true
+    },
+    {
+      "name": "exact direct source readback: evidence/run_receipts/CFB_MARKET_MONITOR_20261009T180108Z_RUN_STARTED.md",
+      "pass": true
+    },
+    {
+      "name": "audit references exact source: evidence/run_receipts/CFB_MARKET_MONITOR_20261009T180108Z_RUN_STARTED.md",
+      "pass": true
+    },
+    {
+      "name": "exact direct source readback: evidence/run_receipts/CFB_MARKET_MONITOR_20261009T180108Z_TERMINAL_CANDIDATE.md",
+      "pass": true
+    },
+    {
+      "name": "audit references exact source: evidence/run_receipts/CFB_MARKET_MONITOR_20261009T180108Z_TERMINAL_CANDIDATE.md",
+      "pass": true
+    },
+    {
+      "name": "exact direct source readback: evidence/run_receipts/CFB_MARKET_MONITOR_20261009T180108Z_RUN_CLOSURE.md",
+      "pass": true
+    },
+    {
+      "name": "audit references exact source: evidence/run_receipts/CFB_MARKET_MONITOR_20261009T180108Z_RUN_CLOSURE.md",
+      "pass": true
+    },
+    {
+      "name": "historical gap carried: CFB_MARKET_MONITOR_20261009T120138Z",
+      "pass": true
+    },
+    {
+      "name": "historical gap carried: OCT08_EVENING_AVAILABILITY",
+      "pass": true
+    },
+    {
+      "name": "historical gap carried: OCT08_DUAL_ENGINE_HEALTH_COVERAGE_UNVERIFIED",
+      "pass": true
+    },
+    {
+      "name": "tonight not yet due",
+      "pass": true
+    },
+    {
+      "name": "Sunday recovered outputs preserved",
+      "pass": true
+    },
+    {
+      "name": "presentation-only correction separate",
+      "pass": true
+    },
+    {
+      "name": "Baylor live isolated",
+      "pass": true
+    },
+    {
+      "name": "manual QA task inventory preserved",
+      "pass": true
+    },
+    {
+      "name": "66 manual QA task fields preserved",
+      "pass": true
+    },
+    {
+      "name": "four enabled expected tasks",
+      "pass": true
+    }
+  ],
+  "task_control_field_assertions": 66,
+  "task_comparison_scope": "Independent beginning/end of this manual post-run reconciliation; natural audit reports its own no-mutation result. Do not invent a missing pre-invocation private prompt snapshot.",
+  "artifacts": {
+    "audit": {
+      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261009T221353Z_AUDIT.md",
+      "sha": "b69370754d03f01a8403277da4df64565478a01e"
+    },
+    "candidate": {
+      "path": "evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261009T221353Z_TERMINAL_CANDIDATE.md",
+      "sha": "1d1a66035febfb7f024a163205a99379500acda5"
+    },
+    "closure": {
+      "path": "evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261009T221353Z_RUN_CLOSURE.md",
+      "sha": "f8d76e548372599b0186eda75b41362f400d7e49"
+    }
+  },
+  "source_readbacks": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "sha": "bbc222ec291ba1faff3f083f6da132d8e8214cae"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "sha": "fcbdc7f48e8518dc6826d0d39c06d864da1a12e9"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "sha": "f56be836e12fa28a737da8f4c70320726be04875"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "sha": "6ae881224fa18b65a4408fa807a2582aebccf6fd"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1301CT.md",
+      "sha": "0d99c7c2aa1cebbce35e726992c38fa7e6c43083"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261009T180108Z_RUN_STARTED.md",
+      "sha": "562f2eb6b16f66ef7879303c74c217c49a0ae73a"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261009T180108Z_TERMINAL_CANDIDATE.md",
+      "sha": "36f0782dd840114aa22ef109a6054d60ded77fd4"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261009T180108Z_RUN_CLOSURE.md",
+      "sha": "0aef35d8204a5c48c142ca8724cf33c0401c297a"
+    }
+  ],
+  "commit_order": [
+    {
+      "kind": "AUDIT.md",
+      "sha": "e2217dc859166c430978125262d4ccd38ff7972d",
+      "utc": "2026-10-09T22:17:01Z"
+    },
+    {
+      "kind": "TERMINAL_CANDIDATE.md",
+      "sha": "eba42af99289062993a6ce97ca2aa7abe2481c3c",
+      "utc": "2026-10-09T22:17:30Z"
+    },
+    {
+      "kind": "RUN_CLOSURE.md",
+      "sha": "7cb0ef52ac7734188413f84ad1138be8ec43b90c",
+      "utc": "2026-10-09T22:17:54Z"
+    }
+  ],
+  "demonstrated": [
+    "Natural CFB Health audit persistence and success-side two-phase closure",
+    "Three unresolved historical identities carried forward",
+    "Tonight not-yet-due classification",
+    "Recovered Sunday outputs kept distinct from historical failure",
+    "Recovered eleven-wager ledger acknowledged, Baylor live isolated",
+    "Current four-task invariant independently read back"
+  ],
+  "not_demonstrated": [
+    "Health terminal-persistence failure-response envelope",
+    "Conditional Monitor restoration (no restoration needed)",
+    "Tonight Evening Availability completion",
+    "Sustained scheduler/connector reliability",
+    "Opaque historical rejection cause",
+    "Big Nine public NFL statements (outside CFB reconciliation)"
+  ]
+}
+```
