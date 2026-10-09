@@ -298,3 +298,4 @@ TEST_ONLY | 2026-10-08 07:00 CT | fixture-market | hypothetical spread -3.5 | pr
 
 ## Synthetic market observation fixture
 TEST_ONLY | market=FBS football spread | observation=2026-10-08T19:00:00-05:00 | source=QA_SYNTHETIC | book=NONE | price=-110 | line=-3.5 | availability=NOT_EXECUTABLE | provenance=isolated scheduler_qa | decision=INCONCLUSIVE | no wager | no canonical effect
+TEST_ONLY | invocation_utc=2026-10-09T01:25:09.391Z | source=QA_SYNTHETIC | availability=NOT_EXECUTABLE | provenance=scheduled_canary_v6 | betting_decision=NONE
