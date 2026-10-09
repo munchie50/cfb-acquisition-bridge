@@ -1,0 +1,174 @@
+{
+  "run_id": "CFB_HISTORICAL_CARD_LINEAGE_QA_20261009T233144Z",
+  "prospective_boundary": "2026-10-09T23:31:44Z",
+  "scope": "Immutable historical display/card/ledger membership; not preexecution or causal attribution",
+  "source": {
+    "path": "evidence/operational/CFB_WEEK5_HOT_SHEET_2026-09-29_2020CT.md",
+    "commit": "093a8c978e4441ebda5168ba871ff99e9f9bd826",
+    "blob": "a018b009d6ed4cf29fc5f774e39194ab2815378e",
+    "commit_time_utc": "2026-10-03T00:44:04Z",
+    "internal_title": "CFB Week 5 Hot Sheet — 2026-10-02 Friday Evening Availability Refresh",
+    "filename_date": "2026-09-29",
+    "filename_date_not_content_timestamp": true
+  },
+  "parent_decision": {
+    "commit": "09c479bca87e08b92b9d3e42b539b27c21be8120",
+    "blob": "e2b0f4f7fa72ba793f5c468958f4c25162897c1b",
+    "commit_time_utc": "2026-10-03T00:43:58Z",
+    "sheet_direct_child": true,
+    "seconds_to_sheet_commit": 6
+  },
+  "original_ticket_audit_blob": "2ea1f35c353665c373eb19961aa52692f680dbea",
+  "prior_reference_audit_blob": "59eab5836ff4716cb44953285b72094ad4752f33",
+  "card": [
+    {
+      "game": "Alabama @ Mississippi State",
+      "cutoff": "**BET NOW — +5.5 or better; max price -115**"
+    },
+    {
+      "game": "Syracuse @ UConn",
+      "cutoff": "**BET NOW — +6.5 or better; max price -115**"
+    },
+    {
+      "game": "Ohio State @ Iowa",
+      "cutoff": "**BET NOW — +14 or better; prefer +14.5; max -120**"
+    },
+    {
+      "game": "Eastern Michigan @ UMass",
+      "cutoff": "**BET NOW — -6 preferred; max -6.5 at -115**"
+    },
+    {
+      "game": "Marshall @ James Madison",
+      "cutoff": "**BET NOW — -18.5 or better; max -115**"
+    }
+  ],
+  "tickets": [
+    {
+      "execution_id": "CFB_OCT02-01",
+      "game": "Syracuse at Connecticut",
+      "selection": "Connecticut",
+      "market": "SPREAD",
+      "stake_usd": 3,
+      "card_matches": [
+        {
+          "game": "Syracuse @ UConn",
+          "cutoff": "**BET NOW — +6.5 or better; max price -115**"
+        }
+      ],
+      "full_slate_matches": 1,
+      "receipt_timezone": "UNSPECIFIED",
+      "pre_execution_sequence": "UNVERIFIED",
+      "causal_attribution": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_OCT02-02",
+      "game": "Alabama at Mississippi State",
+      "selection": "Mississippi State",
+      "market": "SPREAD",
+      "stake_usd": 3,
+      "card_matches": [
+        {
+          "game": "Alabama @ Mississippi State",
+          "cutoff": "**BET NOW — +5.5 or better; max price -115**"
+        }
+      ],
+      "full_slate_matches": 1,
+      "receipt_timezone": "UNSPECIFIED",
+      "pre_execution_sequence": "UNVERIFIED",
+      "causal_attribution": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_OCT02-03",
+      "game": "Ohio State at Iowa",
+      "selection": "Iowa",
+      "market": "SPREAD",
+      "stake_usd": 3,
+      "card_matches": [
+        {
+          "game": "Ohio State @ Iowa",
+          "cutoff": "**BET NOW — +14 or better; prefer +14.5; max -120**"
+        }
+      ],
+      "full_slate_matches": 1,
+      "receipt_timezone": "UNSPECIFIED",
+      "pre_execution_sequence": "UNVERIFIED",
+      "causal_attribution": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_OCT02-04",
+      "game": "Marshall at James Madison",
+      "selection": "James Madison",
+      "market": "SPREAD",
+      "stake_usd": 3,
+      "card_matches": [
+        {
+          "game": "Marshall @ James Madison",
+          "cutoff": "**BET NOW — -18.5 or better; max -115**"
+        }
+      ],
+      "full_slate_matches": 1,
+      "receipt_timezone": "UNSPECIFIED",
+      "pre_execution_sequence": "UNVERIFIED",
+      "causal_attribution": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_OCT02-05",
+      "game": "Michigan State at Wisconsin",
+      "selection": "Wisconsin",
+      "market": "SPREAD",
+      "stake_usd": 3.4,
+      "card_matches": [],
+      "full_slate_matches": 1,
+      "receipt_timezone": "UNSPECIFIED",
+      "pre_execution_sequence": "UNVERIFIED",
+      "causal_attribution": "UNVERIFIED"
+    }
+  ],
+  "card_without_ticket": [
+    {
+      "game": "Eastern Michigan @ UMass",
+      "cutoff": "**BET NOW — -6 preferred; max -6.5 at -115**",
+      "execution_in_original_tickets": "NOT_ESTABLISHED"
+    }
+  ],
+  "counts": {
+    "card": 5,
+    "modeled_display": 47,
+    "oct02_tickets": 5,
+    "on_card": 4,
+    "off_card": 1,
+    "card_without_ticket": 1
+  },
+  "checks": {
+    "five_unique_card": true,
+    "fortyseven_unique_slate": true,
+    "card_games_once_in_slate": true,
+    "five_explicit_ledger_entries": true,
+    "four_tickets_on_card": true,
+    "wisconsin_only_off_card": true,
+    "wisconsin_once_in_slate": true,
+    "umass_only_card_without_ticket": true,
+    "sheet_direct_child_of_ledger": true,
+    "unverified_links_preserved": true
+  },
+  "conversation_search": {
+    "proof_class": "RETRIEVAL_SUMMARY_NOT_ORIGINAL_TRANSCRIPT",
+    "targets": "Wisconsin October2, six September26 wagers, receipt timezone confirmation",
+    "result": "No original preexecution recommendation or timezone confirmation recovered for these seven targets. Wager/grading summaries and explicit market-only observations cannot be promoted to recommendations.",
+    "supplemental_reported_context": "Oct2 23:25:29Z assistant summary reports five BETNOWselections;23:46:22Z summary reports no recorded execution. Context only; not original delivery proof. Inconsistent relative-age labels excluded from chronology.",
+    "search_completeness": "NOT_CERTIFIED; no proof recommendations never existed"
+  },
+  "classification": "CARD_LINEAGE_VERIFIED / ATTRIBUTION_RUN_INCOMPLETE",
+  "limits": [
+    "No outcomes used",
+    "Wisconsin slate/benchmark/frozen display is not an explicit BETNOWentry",
+    "Off-card describes this recoveredcard only, never invalid or unauthorized user wager",
+    "Original message delivery,receipt timezone,preexecutionsequence,independentgameidentity/causal attribution unverified",
+    "Sept26recommendation evidence not recovered;Baylorliveexclusion preserved",
+    "Budget,settlement,CLV,decision-source/rule quality not reevaluated",
+    "Historical filename reused; immutable commit/content authority governs",
+    "No current/historical HotSheet,model,market,decision,scorecard orschedule rewrite"
+  ],
+  "scientific_effect": "NONE",
+  "champion_effect": "NONE"
+}
