@@ -498,3 +498,51 @@ Executed reconciliation record:
   ]
 }
 ```
+
+## Independent QA persistence exception — accepted write followed by prior-version read
+
+During this natural-Health reconciliation checkpoint, two immediate expected-content readbacks mismatched after accepted append writes. Work stopped at the mismatch; no duplicate mutation/rejected-action retry was made. Recovery-index first returned main blob 1c4ea311ad20e29d351fe2d1c74bdbe86fd4adbb after the connector accepted proposed blob 256c1e698d21c9aecbbbbb1715c56b20eeb04e12. Subsequent immutable-commit and main reads matched exactly. The earlier QA append also subsequently matched; its first full response was not retained, so no initial blob is asserted for that event.
+
+Active persistence procedure now installs bounded read-only accepted-commit/current-branch reconciliation, independently verified at commit 823498f950492a0cca3081a2a114c015018b015b and current-main blob cba5016eeedb091cce3059c257d3086219a3f284. Do not repeat an accepted write on a mismatched fetch; fail incomplete if the bounded proof still cannot close. Rejected writes remain governed separately. The opaque caching/replication/root causal layer is unproved; this observation does not explain the earlier rejection class.
+
+Candidate v6 repeated-friction / producer / expected-versus-actual control: detected two mismatch events, classified accepted-write versus read evidence, recovered immutable commit and current branch, installed the limited readback guard. MANUAL_EXISTING_EVENT_RECONCILIATION_DEMONSTRATED; natural scheduled guard enforcement remains pending. No model/market/decision/execution/settlement mutation, historical closure upgrade, schedule change or extra run.
+
+Retained non-sensitive observed record:
+```json
+{
+  "observed_update_commit": "67976b33dabdcf31f4c60bd7f2ca198411d7b15d",
+  "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md",
+  "baseline_blob_sha": "1c4ea311ad20e29d351fe2d1c74bdbe86fd4adbb",
+  "write_returned_blob_sha": "256c1e698d21c9aecbbbbb1715c56b20eeb04e12",
+  "first_main_readback_blob_sha": "1c4ea311ad20e29d351fe2d1c74bdbe86fd4adbb",
+  "first_main_content_matches": false,
+  "subsequent_commit_and_main_readback": "EXACT_EXPECTED_CONTENT_AND_BLOB",
+  "second_incident": {
+    "path": "evidence/scheduler_qa/CFB_EVENING_HEALTH_COVERAGE_AND_OCT09_AFTERNOON_RECONCILIATION_V6.md",
+    "accepted_commit": "139dd11fa6f256d1cb8480e28dc07f53b6c5f1a1",
+    "immediate_readback": "MISMATCH_ASSERTION; full first read response was not retained, so no exact first blob is claimed",
+    "subsequent_main_blob": "6130aa6c98acecb3a6f239b09aab5351e1e96a4c",
+    "subsequent_main_content_matches": true
+  },
+  "classification": "POST_WRITE_PRIOR_VERSION_READ_OBSERVED; causal layer/caching/replication behavior not proven; distinct from rejected-write class",
+  "operational_mutation_retried": false
+}
+```
+Guard planned-append metadata (proposal-only values; separate actual readbacks above prove persistence):
+```json
+{
+  "target": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
+  "operation": "update_file",
+  "attempt": 1,
+  "baseline_blob_sha": "35534d7e3a8a20fb2555e5333f28fc9998790e52",
+  "proposed_blob_sha": "cba5016eeedb091cce3059c257d3086219a3f284",
+  "proposal_sha256": "89812189d1c76f12f4ffb36ca44078d90b7827791237b171dbe6a9dfbc93b39e",
+  "delta_sha256": "329c50cd2e4a5340975e2c2aa6bff6425017dc51d30822f3a94eec24bdd16929",
+  "proposal_bytes": 18637,
+  "delta_bytes": 2499,
+  "proposal_characters": 18633,
+  "delta_characters": 2499,
+  "all_prior_bytes_preserved": true,
+  "status": "PROPOSED_ONLY_NOT_WRITE_SUCCESS"
+}
+```
