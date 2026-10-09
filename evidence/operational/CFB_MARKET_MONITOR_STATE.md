@@ -297,3 +297,63 @@ Run: CFB_MANUAL_FRIDAY_REVIEW_20261009T123613Z. Observation timestamp: 2026-10-0
 - Wyoming @ San Jose State (ESPN 401864519; scheduled kickoff 2026-10-10T01:00Z): away spread +4.5 -112; home spread -4.5 -108; total o42.5 -112 / u42.5 -108; moneyline away +160, home -192. Availability: PUBLIC_DISPLAY_OBSERVED_ONLY; execution-book availability UNVERIFIED.
 - Iowa State @ BYU (ESPN 401856826; scheduled kickoff 2026-10-10T02:15Z): away spread +10.5 -112; home spread -10.5 -108; total o46.5 -108 / u46.5 -112; moneyline away +330, home -425. Availability: PUBLIC_DISPLAY_OBSERVED_ONLY; execution-book availability UNVERIFIED.
 Comparison to separately preserved Oct 8 benchmark: Iowa +3 (-115)/Washington -3 (-105) is now +2.5 (-105)/-2.5 (-115); Wyoming +4.5 (-108)/SJSU -4.5 (-112) is now +4.5 (-112)/-4.5 (-108). These are cross-retrieval benchmark changes, not independently timestamped book movement or earned betting thresholds. No FIRST_OBSERVED record is overwritten.
+
+
+## Friday 13:01 CT scheduled full-board benchmark — 2026-10-09
+Run: CFB_MARKET_MONITOR_20261009T180108Z. Retrieval boundary: approximately 2026-10-09 13:02 CT. Class: CURRENT_PUBLIC_BENCHMARK / MIXED_BOOK; prospective only. Sources: CBS Week 6 live odds board and CBS Week 6 odds article published 2026-10-09 08:14 CT. Executability: NOT_VERIFIED; Caesars offer/accepted price: NOT_ESTABLISHED except where a later actual execution record is separately supplied. CBS labels lines subject to change. Article rows provide spread/total only; price and moneyline are UNAVAILABLE from that article render and are not invented. Frozen predictions remain unchanged.
+
+Friday live-board observations:
+- Florida State @ Louisville: Louisville -3.5 (-112); FSU +4 (-110); ML Louisville -182 / FSU +154; displayed totals FSU o59.5 (-112), Louisville u60.5 (-115). First observation Louisville -7 / 58.5.
+- Iowa @ Washington: Washington -2.5 (-118); Iowa +2.5 (+100); ML Washington -148 / Iowa +126; total 40.5 (Iowa over -110 / Washington under -102). First observation Washington -1.5 / 42.5.
+- Washington State @ Utah State: Utah State -5.5; Washington State +5.5 (-110); ML Washington State +175; total 43.5 over -115 on displayed away row. Remaining paired price/ML not recovered from the rendered excerpt. First observation: NOT_YET_QUALIFIED on Oct. 4.
+- Wyoming @ San Jose State: San Jose State -4.5 (-105); Wyoming +4.5 (-110); ML San Jose State -184 / Wyoming +165; total 42.5 (over -105 / under -110). First observation: NOT_YET_QUALIFIED on Oct. 4.
+- Iowa State @ BYU: BYU -10.5; total 46.5 from the current CBS Week 6 article. Exact same-render price/ML unavailable. First observation BYU -14.5 / 50.5.
+
+Saturday morning governed modeled rows:
+- Arizona @ West Virginia: Arizona -3; total 61.5.
+- Texas A&M @ Missouri: Missouri -3.5 (home -105; Texas A&M +3.5 -114); ML Missouri -166 / Texas A&M +145; total 48.5.
+- UCF @ Oklahoma State: Oklahoma State -10.5 (-110 displayed live board; article snapshot -9.5); ML Oklahoma State -410 / UCF +350; displayed total 53.5/54.5. Preserve source-display divergence; do not manufacture consensus.
+- North Carolina @ Pittsburgh: Pittsburgh -3.5; total 47.5.
+- Wake Forest @ NC State: Wake Forest -3.5 (-102); NC State +3.5 (-115); ML Wake Forest -156 / NC State +145; total 58.5.
+- Sacramento State @ Bowling Green: Bowling Green -7.5; total 44.5.
+- South Carolina @ Florida: Florida -12.5; total 61.5.
+
+Saturday afternoon governed modeled rows:
+- Old Dominion @ Appalachian State: Appalachian State -9.5; total 50.5.
+- Miami (OH) @ Massachusetts: Miami (OH) -2.5; total 47.5.
+- Texas vs Oklahoma: Texas -8.5; total 39.5.
+- UCLA @ Oregon: Oregon -11.5; total 58.5.
+- Stanford @ Notre Dame: Notre Dame -38.5; total 54.5.
+- Ole Miss @ Vanderbilt: Ole Miss -10; total 59.5.
+- Illinois @ Michigan State: Illinois -2.5; total 49.5.
+- Houston @ Kansas State: Kansas State -2.5; total 55.5.
+- Eastern Michigan @ Akron: Eastern Michigan -7; total 51.5.
+- Duke @ Georgia Tech: Duke -7; total 48.5.
+- Central Michigan @ Ohio: Ohio -3.5; total 46.5.
+- Charlotte @ North Texas: North Texas -28.5; total 57.5.
+- Buffalo @ Toledo: Toledo -20.5; total 52.5.
+- Kent State @ Western Michigan: Western Michigan -13.5; total 43.5.
+- Rice @ East Carolina: East Carolina -10; total 47.5.
+- Maryland @ Ohio State: Ohio State -32.5 (-110 displayed live board; article snapshot -34.5); ML Ohio State -10000 / Maryland +3500; total 56.5. Preserve source-display divergence.
+- Tennessee @ Arkansas: Tennessee -13.5 (-110); Arkansas +13.5 (-105); ML Tennessee -526 / Arkansas +420; total 51.5.
+
+Saturday evening/night governed modeled rows:
+- San Diego State @ Oregon State: Oregon State -14.5; total 53.5.
+- Nevada @ UTEP: Nevada -9.5; total 49.5.
+- North Dakota State @ UNLV: North Dakota State -3; total 47.5.
+- LSU @ Kentucky: LSU -8.5; total 52.5.
+- Air Force @ Northern Illinois: Air Force -7.5; total 46.5.
+- Syracuse @ Virginia: Virginia -9.5; total 54.5.
+- James Madison @ Georgia Southern: James Madison -7.5; total 53.5.
+- Georgia @ Alabama: Alabama -1.5; total 52.5.
+- Louisiana @ Louisiana Tech: Louisiana Tech -3; total 57.5.
+- USC @ Penn State: Penn State -1.5; total 54.5.
+- Minnesota @ Purdue: Minnesota -2.5; total 50.5.
+- Kansas @ Utah: Utah -15.5; total 51.5.
+- Hawai'i @ Arizona State: Arizona State -20.5; total 57.5.
+- Boise State @ Fresno State: Boise State -6.5; total 48.5.
+
+Mandatory unmodeled inclusion:
+- Indiana @ Nebraska: Indiana -7.5 (-105); Nebraska +7.5 (-110); ML Indiana -305 / Nebraska +250; displayed total 47.5/48.5. Nebraska remains an explicit v1.208 exclusion; no frozen prediction is manufactured.
+
+Coverage assertions for this append: 43 unique still-upcoming governed modeled games = Friday 5 + Saturday morning 7 + Saturday afternoon 17 + Saturday evening/night 14; no duplicate identity. The full accepted 49-game weekly modeled slate remains Tuesday 1 + Wednesday 2 + Thursday 3 + these 43. Nebraska is displayed separately and is not added to modeled cardinality. No market observation altered Champion/FIRST_FROZEN state.
