@@ -48,11 +48,15 @@ def audit(slate, ledger, as_of, tuesday, cadence):
     named_lines = [line for line in tail.splitlines() if line.startswith("- ") and (" @ " in line or " at " in line)]
     rows = []
     section = None
+    widths = set()
     days = {"Tue": 0, "Wed": 1, "Thu": 2, "Fri": 3, "Sat": 4}
     for line in slate.splitlines():
-        m = re.fullmatch(r"## (Tuesday|Wednesday|Thursday|Friday|Saturday morning|Saturday afternoon|Saturday evening/night) \((\d+)\)", line)
-        if m:
-            section = m[1]
+        if line.startswith('#'):
+            heading = re.sub(r' \(\d+\)$', '', line.lstrip('#').strip()).lower()
+            sections = {'tuesday':'Tuesday','wednesday':'Wednesday','thursday':'Thursday','friday':'Friday',
+                        'saturday morning':'Saturday morning','saturday afternoon':'Saturday afternoon',
+                        'saturday evening/night':'Saturday evening/night'}
+            section = sections.get(heading)
             continue
         if not line.startswith("| "):
             continue
@@ -60,8 +64,9 @@ def audit(slate, ledger, as_of, tuesday, cadence):
         m = re.fullmatch(r"(Tue|Wed|Thu|Fri|Sat) (\d{1,2}):(\d{2}) (AM|PM)", cols[0])
         if not m:
             continue
-        if len(cols) != 8 or section is None:
+        if len(cols) not in (8, 9) or section is None:
             raise ValueError("invalid slate row")
+        widths.add(len(cols))
         day, hour, minute, meridiem = m.groups()
         hour, minute = int(hour), int(minute)
         if not 1 <= hour <= 12 or not 0 <= minute < 60:
@@ -75,8 +80,8 @@ def audit(slate, ledger, as_of, tuesday, cadence):
         kickoff = datetime.combine(tuesday + timedelta(days=days[day]), time(hour24, minute), CT)
         # Naming coverage only. A matched line is not a qualified decision.
         matches = [line for line in named_lines if key(cols[1]) == key(line.split(" — ", 1)[0])]
-        if len(matches) > 1:
-            raise ValueError("ambiguous named ledger record")
+        # Append-only history can name a game more than once. This audit does
+        # not select a latest decision or certify competing decision states.
         if as_of >= kickoff:
             timing = "KICKOFF_BOUNDARY_PASSED"
         elif section == "Friday" and as_of.date() == tuesday + timedelta(days=2):
@@ -113,6 +118,7 @@ def audit(slate, ledger, as_of, tuesday, cadence):
             deadline_event = None
         rows.append({"game": cols[1], "section": section, "kickoff_ct": kickoff.isoformat(),
                      "timing": timing, "named_week6_ledger_record": bool(matches),
+                     "named_ledger_occurrences": len(matches),
                      "default_reconciliation_deadline_ct": default.isoformat() if default else None,
                      "default_reconciliation_event": deadline_event,
                      "default_deadline_status": deadline_status,
@@ -121,9 +127,10 @@ def audit(slate, ledger, as_of, tuesday, cadence):
     identities = [key(r["game"]) for r in rows]
     expected_counts = {"Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 5,
                        "Saturday morning": 7, "Saturday afternoon": 17, "Saturday evening/night": 14}
-    if len(rows) != 49 or len(set(identities)) != 49 or dict(Counter(r["section"] for r in rows)) != expected_counts:
+    if len(widths) != 1 or len(rows) != 49 or len(set(identities)) != 49 or dict(Counter(r["section"] for r in rows)) != expected_counts:
         raise ValueError("Week 6 49-row unique section population mismatch")
     return {"status": "QA_COVERAGE_ONLY", "as_of_ct": as_of.isoformat(), "rows": rows,
+            "slate_row_columns": next(iter(widths)),
             "counts": {"slate": len(rows), "named_records": sum(r["named_week6_ledger_record"] for r in rows),
                        "timing": dict(Counter(r["timing"] for r in rows)),
                        "default_deadline_status": dict(Counter(r["default_deadline_status"] for r in rows))},
