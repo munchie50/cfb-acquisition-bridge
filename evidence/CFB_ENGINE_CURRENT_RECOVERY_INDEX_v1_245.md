@@ -1,5 +1,14 @@
 # CFB Engine — Current Recovery Index v1.245
 
+## October 9 timing-claim correction — 07:27 CT audit
+This clarification supersedes any broad description of Friday's decision deadline as already overdue; prior missed-review evidence remains preserved.
+
+- Friday five missed their recorded Thursday review day. Active v1.237 supplies the default Friday decision-reconciliation deadline of 13:00 CT, still future at 07:27:26 CT. Earlier game-specific execution constraints may require an earlier deadline; no final execution cutoff is invented or certified.
+- Corrected scripts/cfb_week6_decision_coverage_audit.py now requires --cadence and distinguishes review duties from default decision clocks. Eighteen checks passed; exact executed/read-back source blob fcd95ea762a6857e2eebc8769e2d4398d790c134.
+- Detailed correction and remaining debt: `evidence/operational/CFB_WEEK6_OCT08_DECISION_LEDGER_COVERAGE_GAP_V6.md`, blob 7a9dccfa58a9525ceab6b8360d4a773c89302074. Friday five still lack named decisions; audit coverage is not decision acceptance.
+- Candidate Test Routine v6 now installs the timing-authority composition check; bounded manual demonstration only. Production Routine v5, active deadline authority, task topology and Champion are unchanged.
+
+
 ## Current frontier quick-read — 2026-10-09 morning QA
 Navigation-only reconciliation; detailed authority and evidence govern. All previous recovery content remains preserved below.
 
