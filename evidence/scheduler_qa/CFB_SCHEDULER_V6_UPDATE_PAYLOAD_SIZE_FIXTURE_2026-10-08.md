@@ -1,523 +1,297 @@
-# Scheduler V6 isolated size fixture
-State: LARGE_PAYLOAD_UPDATE_TEST
-Scope: diagnostic only; never production market data.
-Diagnostic fixture record 0001 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0002 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0003 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0004 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0005 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0006 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0007 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0008 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0009 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0010 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0011 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0012 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0013 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0014 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0015 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0016 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0017 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0018 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0019 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0020 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0021 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0022 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0023 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0024 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0025 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0026 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0027 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0028 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0029 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0030 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0031 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0032 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0033 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0034 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0035 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0036 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0037 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0038 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0039 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0040 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0041 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0042 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0043 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0044 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0045 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0046 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0047 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0048 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0049 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0050 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0051 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0052 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0053 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0054 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0055 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0056 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0057 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0058 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0059 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0060 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0061 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0062 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0063 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0064 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0065 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0066 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0067 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0068 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0069 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0070 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0071 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0072 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0073 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0074 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0075 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0076 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0077 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0078 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0079 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0080 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0081 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0082 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0083 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0084 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0085 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0086 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0087 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0088 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0089 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0090 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0091 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0092 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0093 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0094 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0095 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0096 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0097 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0098 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0099 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0100 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0101 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0102 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0103 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0104 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0105 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0106 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0107 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0108 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0109 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0110 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0111 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0112 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0113 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0114 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0115 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0116 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0117 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0118 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0119 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0120 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0121 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0122 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0123 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0124 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0125 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0126 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0127 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0128 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0129 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0130 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0131 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0132 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0133 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0134 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0135 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0136 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0137 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0138 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0139 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0140 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0141 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0142 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0143 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0144 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0145 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0146 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0147 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0148 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0149 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0150 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0151 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0152 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0153 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0154 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0155 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0156 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0157 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0158 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0159 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0160 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0161 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0162 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0163 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0164 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0165 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0166 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0167 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0168 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0169 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0170 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0171 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0172 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0173 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0174 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0175 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0176 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0177 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0178 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0179 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0180 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0181 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0182 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0183 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0184 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0185 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0186 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0187 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0188 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0189 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0190 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0191 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0192 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0193 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0194 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0195 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0196 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0197 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0198 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0199 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0200 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0201 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0202 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0203 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0204 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0205 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0206 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0207 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0208 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0209 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0210 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0211 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0212 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0213 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0214 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0215 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0216 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0217 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0218 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0219 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0220 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0221 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0222 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0223 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0224 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0225 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0226 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0227 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0228 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0229 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0230 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0231 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0232 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0233 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0234 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0235 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0236 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0237 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0238 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0239 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0240 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0241 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0242 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0243 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0244 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0245 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0246 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0247 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0248 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0249 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0250 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0251 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0252 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0253 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0254 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0255 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0256 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0257 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0258 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0259 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0260 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0261 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0262 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0263 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0264 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0265 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0266 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0267 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0268 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0269 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0270 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0271 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0272 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0273 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0274 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0275 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0276 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0277 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0278 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0279 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0280 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0281 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0282 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0283 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0284 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0285 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0286 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0287 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0288 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0289 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0290 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0291 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0292 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0293 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0294 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0295 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0296 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0297 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0298 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0299 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0300 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0301 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0302 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0303 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0304 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0305 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0306 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0307 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0308 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0309 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0310 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0311 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0312 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0313 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0314 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0315 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0316 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0317 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0318 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0319 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0320 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0321 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0322 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0323 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0324 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0325 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0326 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0327 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0328 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0329 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0330 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0331 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0332 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0333 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0334 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0335 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0336 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0337 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0338 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0339 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0340 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0341 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0342 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0343 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0344 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0345 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0346 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0347 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0348 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0349 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0350 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0351 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0352 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0353 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0354 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0355 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0356 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0357 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0358 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0359 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0360 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0361 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0362 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0363 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0364 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0365 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0366 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0367 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0368 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0369 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0370 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0371 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0372 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0373 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0374 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0375 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0376 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0377 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0378 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0379 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0380 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0381 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0382 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0383 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0384 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0385 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0386 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0387 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0388 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0389 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0390 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0391 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0392 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0393 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0394 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0395 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0396 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0397 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0398 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0399 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0400 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0401 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0402 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0403 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0404 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0405 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0406 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0407 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0408 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0409 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0410 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0411 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0412 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0413 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0414 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0415 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0416 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0417 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0418 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0419 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0420 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0421 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0422 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0423 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0424 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0425 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0426 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0427 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0428 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0429 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0430 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0431 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0432 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0433 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0434 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0435 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0436 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0437 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0438 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0439 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0440 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0441 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0442 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0443 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0444 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0445 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0446 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0447 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0448 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0449 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0450 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0451 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0452 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0453 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0454 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0455 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0456 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0457 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0458 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0459 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0460 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0461 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0462 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0463 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0464 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0465 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0466 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0467 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0468 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0469 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0470 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0471 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0472 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0473 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0474 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0475 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0476 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0477 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0478 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0479 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0480 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0481 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0482 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0483 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0484 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0485 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0486 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0487 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0488 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0489 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0490 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0491 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0492 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0493 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0494 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0495 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0496 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0497 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0498 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0499 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0500 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0501 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0502 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0503 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0504 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0505 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0506 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0507 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0508 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0509 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0510 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0511 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0512 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0513 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0514 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0515 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0516 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0517 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0518 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0519 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
-Diagnostic fixture record 0520 | section=SATURDAY | status=TEST_ONLY | source=synthetic | provenance=isolated QA fixture
+# Scheduler V6 isolated market-shaped content test
+State: DIAGNOSTIC_COPY_ONLY
+Not a canonical market observation or operational write.
+
+# CFB Market Monitor State
+
+Status: ACTIVE APPEND-ONLY OPERATIONAL SURFACE
+Initialized: 2026-09-27
+
+## Recovery semantics
+This is the canonical durable recovery surface for qualified CFB market-monitor observations. Append only; never reconstruct an earlier observation from a later quote or outcome.
+
+## Required record fields
+- game/market identity
+- observation timestamp CT
+- source/book/benchmark
+- line and price
+- FIRST_QUALIFIED_MARKET_OBSERVATION / INTERMEDIATE / EXECUTION / CLOSE / NOT_YET_AVAILABLE
+- availability/executability
+- provenance/timestamp semantics
+- linked Champion snapshot identity where applicable
+
+## Initial state
+No historical Sunday observation is backfilled here. Missing earlier observations remain missing rather than being reconstructed after the fact.
+
+## Write-path validation — 2026-09-27 13:03 CT
+- Purpose: controlled repair validation for canonical existing-file mutation.
+- Governance effect: none; no market observation, decision, execution, prediction, or outcome state created.
+- Method: existing file fetched with current blob SHA, then replaced through SHA-guarded repository update.
+
+
+## Prospective capture — 2026-09-27 13:08 CT
+Observation class: FIRST_QUALIFIED_MARKET_OBSERVATION for the records below. These are the earliest qualified observations durably established after the write-path repair; they do not reconstruct the unpersisted 13:00 CT observations.
+Source semantics: live web retrieval during this run. ESPN game/odds surfaces identify DraftKings where stated; FanDuel is identified directly where stated. Exact fields not established are omitted rather than inferred.
+Champion link: v1.208 FIRST_FROZEN artifact 10897612260 / accepted Beta Champion lineage v1.193.
+
+- Game 401858475 — Maryland at Nebraska, 2026-10-03 15:00 CT. ESPN/DraftKings: Maryland +12.5 (-110); total 52.5 (-110 each side shown); Maryland ML +410. Availability: executable market displayed. Champion FIRST_FROZEN: Nebraska by 10.5205; total 56.0116; Nebraska win 0.733503. Market-vs-Champion: market makes Nebraska a larger favorite than Champion by about 1.98 points; market total about 3.51 below Champion.
+- Game 401856707 — Alabama at Mississippi State, 2026-10-03 11:00 CT. ESPN/DraftKings: Alabama -5.5 (-110), Mississippi State +5.5 (-110); total 59.5 (-110); Alabama ML -218, Mississippi State +180. Availability: executable market displayed. Champion FIRST_FROZEN: Mississippi State by 9.8652; total 60.0377; Mississippi State win 0.743319. Market-vs-Champion: major side disagreement; Champion favors Mississippi State outright while market favors Alabama by 5.5. Total nearly aligned.
+- Game 401856705 — Vanderbilt at Georgia, 2026-10-03 11:45 CT. ESPN/DraftKings: Vanderbilt +25.5 (-110), Georgia -25.5 (-110); total 53.5 (-110); Vanderbilt ML +1700, Georgia -4500. Availability: executable market displayed. Champion FIRST_FROZEN: Georgia by 24.5805; total 57.5598; Georgia win 0.922243. Market-vs-Champion: side near alignment; market total about 4.06 below Champion.
+- Game 401858473 — Ohio State at Iowa, 2026-10-03 14:30 CT. FanDuel: Ohio State -14.5 (+100), Iowa +14.5 (-122); total 43.5 (-110); Ohio State ML -720, Iowa +500. Availability: executable market displayed. Champion FIRST_FROZEN: Iowa by 6.2898; total 51.1058; Iowa win 0.593141. Market-vs-Champion: major side disagreement; Champion favors Iowa outright while market favors Ohio State by 14.5. Market total about 7.61 below Champion.
+
+
+## Full relevant-FBS slate sweep — 2026-09-27 13:13 CT
+- Scope: all 47 FBS-vs-FBS FIRST_FROZEN games in the Oct. 1–3 Week 5 window.
+- Broad benchmark: CBS Sports Week 5 FBS scoreboard, retrieved prospectively during this run. Benchmark lines without displayed prices are retained as benchmark observations only; they do not replace the exact-book/price records already captured at 13:08 CT.
+- Coverage: benchmark side/total available for 44 of 47; NOT_YET_AVAILABLE for UTSA at Rice, Utah State at Boise State, and Arkansas State at Louisiana.
+- Champion comparison source: accepted v1.208 FIRST_FROZEN artifact 10897612260. Full comparison is persisted in the governed Early Board/Hot Sheet created by this run.
+- Chronology: this 13:13 sweep does not backfill the failed/unpersisted 13:00 observation boundary.
+
+
+## Prospective reset capture — 2026-09-29 20:20 CT
+Observation class: INTERMEDIATE / NEW_PROSPECTIVE_BOUNDARY. This capture resumes governed monitoring after the unrecoverable 2026-09-28 persistence gap. It does not reconstruct Monday observations.
+Source semantics: FantasyData Week 5 consensus odds page retrieved live on 2026-09-29, with direct/cross-source confirmation where noted. Source URL: https://fantasydata.com/ncaa-football/odds
+Champion link: v1.208 FIRST_FROZEN artifact 10897612260 / accepted Beta Champion lineage v1.193. Frozen prediction bytes were recovered directly from accepted artifact 10897612260; no model values were recomputed from current market information.
+
+Current priority observations:
+- Western Kentucky at New Mexico State: WKU +2.5 (-108), NMSU -2.5 (-112), total 57.5. Champion: NMSU by 26.5495, total 55.5829.
+- North Texas at Tulsa: North Texas +1 (-111), Tulsa -1 (-110), total 57.5. Champion: Tulsa by 15.1102, total 56.2123.
+- Notre Dame at North Carolina: Notre Dame -21 (-110), UNC +21 (-110), total 47.5. Champion: Notre Dame by 3.1262, total 45.3242.
+- Alabama at Mississippi State: Alabama -6 (-110), MSST +6 (-112), total 60.5. Champion: MSST by 9.8652, total 60.0377.
+- Syracuse at UConn: Syracuse -6.5 (-110), UConn +6.5 (-110), total 50.5. Champion: UConn by 6.8817, total 55.6316.
+- Michigan at Minnesota: Michigan -5.5 (-111), Minnesota +5.5 (-111), total 43.5. Champion: Minnesota by 5.6597, total 45.2986.
+- Ohio State at Iowa: Ohio State -14 (-111), Iowa +14 (-111), total 45.5. Champion: Iowa by 6.2898, total 51.1058.
+- Memphis at Charlotte: Memphis -20.5 (-112), Charlotte +20.5 (-110), total 53.5. Champion: Memphis by 10.0046, total 61.3418.
+- Eastern Michigan at Massachusetts: EMU +6.5 (-112), UMass -6.5 (-109), total 48.5. Champion: UMass by 22.0802, total 49.0269.
+- Old Dominion at Georgia State: ODU +1.5 (-110), Georgia State -1.5 (-112), total 50.5. Champion: Georgia State by 11.1151, total 52.7631.
+- Marshall at James Madison: Marshall +18.5 (-112), JMU -18.5 (-110), total 55.5. Champion: JMU by 29.5062, total 51.9170.
+- Maryland at Nebraska: Maryland +14.5 (-110), Nebraska -14.5 (-112), total 52.0. Champion: Nebraska by 10.5205, total 56.0116. Direct BetMGM cross-check displayed Nebraska -15 and total 52.5 during the same evening research window, confirming meaningful cross-book spread variance rather than a single exact universal line.
+- Kentucky at South Carolina: Kentucky +3 (-116), South Carolina -3 (-107), total 53.5. Champion: South Carolina by 13.7709, total 58.7110.
+- Texas Tech at Colorado: Texas Tech -13 (-113), Colorado +13 (-109), total 50.5. Champion: Texas Tech by 1.7697, total 53.2790.
+- Vanderbilt at Georgia: Vanderbilt +24 (-113), Georgia -24 (-110), total 50.5. Champion: Georgia by 24.5805, total 57.5598.
+
+Coverage repair: current broad Week 5 board now displays qualified lines for the three games that were NOT_YET_AVAILABLE in the 2026-09-27 sweep: UTSA at Rice (UTSA -11.5, total 54.5), Utah State at Boise State (Boise State -20.5, total 51.5), and Arkansas State at Louisiana (Louisiana -6.5, total 47.5). These are current 2026-09-29 observations only; they are not backfilled as Sunday/Monday observations.
+
+Interpretation: current market disagreement remains an investigation/decision-prioritization signal only. No market data entered the frozen Champion. No missing Monday line was reconstructed.
+
+
+## User-authorized extra prospective capture — 2026-09-30 ~07:12 CT
+Observation class: INTERMEDIATE / USER_AUTHORIZED_EXTRA.
+Boundary: new prospective observation only; the incomplete 07:01 CT scheduled cycle is not reconstructed.
+Source semantics: FantasyData NCAA Football Odds Week 5 consensus board retrieved live during this cycle; CBS Sports Week 5 FBS scoreboard independently cross-checked for broad board presence and selected lines. Champion remains v1.208 FIRST_FROZEN / v1.193 accepted Beta Champion; market information is downstream only.
+
+Full relevant-FBS board coverage: current spread/total consensus was available for all 47 FBS-vs-FBS FIRST_FROZEN Week 5 games. FBS-vs-FCS rows displayed by the source were excluded from this governed relevant-FBS comparison.
+
+Priority/current observations:
+- Western Kentucky at New Mexico State: WKU +2.5 (-107), NMSU -2.5 (-113), total 57.5.
+- North Texas at Tulsa: North Texas +1.0 (-112), Tulsa -1.0 (-110), total 57.5. CBS broad benchmark displayed Tulsa -1.5.
+- Pittsburgh at Virginia Tech: Pitt +3.5 (-117), Virginia Tech -3.5 (-106), total 55.0.
+- Liberty at Delaware: Liberty -7.0 (-114), Delaware +7.0 (-108), total 50.0.
+- Penn State at Northwestern: Penn State -2.5 (-114), Northwestern +2.5 (-108), total 45.5.
+- Alabama at Mississippi State: Alabama -6.0 (-110), Mississippi State +6.0 (-112), total 60.0. CBS broad benchmark displayed Alabama -5.5 / total 60.5 during this research window.
+- Michigan at Minnesota: Michigan -5.5 (-111), Minnesota +5.5 (-111), total 43.5.
+- Syracuse at UConn: Syracuse -6.5 (-110), UConn +6.5 (-110), total 50.5.
+- Notre Dame at North Carolina: Notre Dame -21.0 (-110), North Carolina +21.0 (-110), total 47.0.
+- Vanderbilt at Georgia: Vanderbilt +24.5 (-114), Georgia -24.5 (-109), total 51.0.
+- Old Dominion at Georgia State: Old Dominion +2.5 (-112), Georgia State -2.5 (-107), total 51.5.
+- Memphis at Charlotte: Memphis -20.5 (-110), Charlotte +20.5 (-112), total 52.5.
+- Ohio State at Iowa: Ohio State -14.5 (-108), Iowa +14.5 (-115), total 45.5.
+- Eastern Michigan at Massachusetts: EMU +6.5 (-111), UMass -6.5 (-109), total 48.5.
+- Marshall at James Madison: Marshall +18.5 (-110), JMU -18.5 (-111), total 56.5.
+- Maryland at Nebraska: Maryland +14.5 (-110), Nebraska -14.5 (-112), total 52.0.
+- Kentucky at South Carolina: Kentucky +3.0 (-115), South Carolina -3.0 (-107), total 53.5.
+- Texas Tech at Colorado: Texas Tech -13.0 (-110), Colorado +13.0 (-110), total 50.5.
+- UTSA at Rice: UTSA -11.5 (-111), Rice +11.5 (-110), total 55.5.
+- Utah State at Boise State: Utah State +20.5 (-111), Boise State -20.5 (-111), total 51.5.
+- Arkansas State at Louisiana: Arkansas State +6.5 (-108), Louisiana -6.5 (-113), total 47.5.
+
+The remaining relevant-FBS games were also present on the same current consensus board; this cycle establishes current broad-board availability without inventing exact frozen-model comparisons not recovered into the user-facing render.
+
+No market observation altered Champion/model state.
+
+
+## User-authorized extra prospective capture — 2026-10-01 ~17:40 CT
+Observation class: INTERMEDIATE / USER_AUTHORIZED_EXTRA.
+Boundary: new prospective observation only. The incomplete 07:00 CT and missed/incomplete 13:00 CT scheduled cycles are not reconstructed.
+Source semantics: CBS Sports 2026 Week 5 betting guide retrieved live during this cycle; displayed spread/total values are retained as broad benchmark observations where exact book/price was not established. Champion remains v1.208 FIRST_FROZEN / v1.193 accepted Beta Champion; market information is downstream only.
+
+Nearest-window benchmark:
+- Western Kentucky at New Mexico State: New Mexico State -2.5, total 57.5.
+- North Texas at Tulsa: Tulsa -1.5, total 57.5.
+- Pittsburgh at Virginia Tech: Virginia Tech -3, total 54.5.
+- Liberty at Delaware: Delaware +7, total 50.5.
+- Penn State at Northwestern: Northwestern +2.5, total 45.5.
+Selected Saturday priority/current benchmark:
+- Notre Dame at North Carolina: North Carolina +21, total 47.5.
+- Alabama at Mississippi State: Mississippi State +6, total 60.5.
+- Syracuse at UConn: UConn +6.5, total 50.5.
+- Michigan at Minnesota: Minnesota +5.5, total 43.5.
+- Vanderbilt at Georgia: Georgia -24.5, total 50.5.
+- Ohio State at Iowa: Iowa +14, total 45.5.
+- Memphis at Charlotte: Charlotte +20.5, total 54.5.
+- Old Dominion at Georgia State: Georgia State -1.5, total 50.5.
+- Eastern Michigan at Massachusetts: Massachusetts -6, total 48.5.
+- Marshall at James Madison: James Madison -18.5, total 55.5.
+- Maryland at Nebraska: Nebraska -14.5, total 52.5.
+- Kentucky at South Carolina: South Carolina -2.5, total 53.5.
+- Texas Tech at Colorado: Colorado +13.5, total 50.5.
+- UTSA at Rice: Rice +11.5, total 54.5.
+- Utah State at Boise State: Boise State -19.5, total 51.5.
+- Arkansas State at Louisiana: Louisiana -6.5, total 46.5.
+
+Availability notes from same-day public reporting:
+- Thursday slate remains Western Kentucky-New Mexico State and North Texas-Tulsa.
+- New Mexico State WR Brodie Malone-Bradford was reported questionable with an undisclosed injury in same-day coverage.
+- Tulsa QB availability remained a material uncertainty in same-day preview coverage; no late evidence recovered in this cycle was sufficient to establish a governed actionable threshold.
+
+No observation altered Champion/model state. Exact governed 47-game FIRST_FROZEN identity reconciliation was not recoverable from the current repository render during this cycle, so this capture does not claim full-slate exactly-once completion.
+
+
+## Evening downstream capture — 2026-10-01 ~20:06 CT
+Observation class: INTERMEDIATE / EVENING_AVAILABILITY. Prospective only; no earlier boundary is reconstructed. Champion v1.193 / v1.208 unchanged.
+
+- Thursday games: practical decision boundary passed; existing PASS states remain closed.
+- North Texas at Tulsa: same-day reporting confirmed Baylor Hayes as Tulsa's starting quarterback and Dexter Williams II as not starting. This late availability update does not reopen the prior PASS.
+- Pittsburgh at Virginia Tech: current public reference Pittsburgh +2.5, Virginia Tech -2.5, total 54.5. Friday 13:00 CT remains the default reconciliation deadline.
+- Penn State at Northwestern: current public reference Penn State -2.5, total 46.5. Game 401858476 is an explicit v1.208 FIRST_FROZEN exclusion, so this is market-only/unmodeled evidence.
+- Liberty at Delaware: game 401871050 is an explicit v1.208 FIRST_FROZEN exclusion; any observation remains market-only/unmodeled.
+- Northwestern availability reporting: two starting defensive backs doubtful, Luke Dehnicke questionable, Ezomo Oratokhai out. Weather reporting: mid/upper 50s, about 9 mph wind, no rain.
+
+No market or availability evidence altered Champion/model state.
+
+
+## Friday recovery prospective capture — 2026-10-02 ~18:00 CT
+Observation class: INTERMEDIATE / USER_AUTHORIZED_FRIDAY_RECOVERY. The incomplete/missed 07:00 and 13:00 CT scheduled cycles remain immutable and are not reconstructed.
+Champion link: accepted v1.208 FIRST_FROZEN artifact 10897612260 / v1.193 Champion. Artifact 10897612260 was directly recovered during this cycle; digest and accepted identity match v1.208. Exact Week 5 modeled substrate is recoverable as 47 FBS-vs-FBS frozen predictions; explicit exclusions remain separate/unmodeled.
+Current broad benchmark: CBS Sports Week 5 board retrieved Oct. 2. Selected exact-price cross-checks are noted below.
+
+Priority observations:
+- Alabama at Mississippi State: broad MSST +6 / 60.5; FanDuel research displayed MSST +5.5 (+100), Alabama -5.5 (-122), total 60.5. Frozen Engine: MSST by 9.8652, total 60.0377, home win 0.743319.
+- Syracuse at UConn: broad UConn +6.5 / 50.5; FanDuel research displayed UConn +6.5 (+100). Frozen Engine: UConn by 6.8817, total 55.6316, home win 0.670083.
+- Ohio State at Iowa: broad Iowa +14 / 45.5; bet365 displayed Iowa +14.5 (-115), total 45.5. Frozen Engine: Iowa by 6.2898, total 51.1058, home win 0.593141.
+- Eastern Michigan at Massachusetts: broad UMass -6 / 48.5; DraftKings displayed UMass -6 (-108). Frozen Engine: UMass by 22.0802, total 49.0269, home win 0.894632. Same-day reporting has UMass 4-0 and expecting a sellout.
+- Marshall at James Madison: broad JMU -18.5 / 55.5; cross-book table displayed Caesars JMU -18.5 (-107), DraftKings -18.5 (-105), FanDuel -18.5 (-110). Frozen Engine: JMU by 29.5062, total 51.9170, home win 0.955715.
+- Maryland at Nebraska: broad Nebraska -14.5 / 52.5. Frozen Engine: Nebraska by 10.5205, total 56.0116, home win 0.733503. Nebraska WR Jacob Barney Jr. reported questionable. Side remains beyond frozen fair margin; no chase.
+- Vanderbilt at Georgia: broad Georgia -24.5 / 50.5. Frozen Engine: Georgia by 24.5805, total 57.5598. Vanderbilt QB Jared Curtis remained a pregame decision after limited practice and Friday walkthrough; availability is decision-relevant to the total.
+- Texas Tech at Colorado: broad Colorado +13.5 / 50.5; DraftKings displayed Colorado +13.5 (-115). Frozen Engine: Texas Tech by 1.7697, total 53.2790. Current reporting notes Colorado quarterback instability/player dismissals; preserve as later-window review rather than forcing action.
+
+No market or availability evidence altered frozen Champion predictions. No execution is inferred by this capture.
+
+
+## Friday evening availability capture — 2026-10-02 ~19:40 CT
+Observation class: INTERMEDIATE / USER_AUTHORIZED_EVENING_AVAILABILITY. Downstream of the persisted ~18:00 CT Friday Recovery RUN_PASS; no competing baseline.
+- Vanderbilt at Georgia: Vanderbilt QB Jared Curtis remains unresolved tonight. Same-day reporting says he made it through Friday walkthrough without issue and will attempt to play, but the final decision comes after Saturday pregame evaluation. Existing total WAIT remains decision-relevant; no Friday resolution is manufactured.
+- Texas Tech at Colorado: Texas Tech backup QB Thomas Castellanos was ruled ineligible Friday afternoon. This is genuinely new late availability information. It does not by itself establish an actionable Colorado threshold or alter the frozen prediction; existing later-window WAIT remains.
+- Ohio State at Iowa: current Friday reporting still shows Ohio State -14.5 / Iowa +14.5; weather expected not to materially affect the game. The persisted Iowa cutoff remains available in current public board evidence.
+- Eastern Michigan at Massachusetts: current same-day reporting confirms the UMass home game is sold out; no late evidence recovered invalidates the persisted UMass cutoff.
+- Kentucky at South Carolina: late search recovered Kentucky LB Alex Afari becoming ineligible after an NCAA appeal, while South Carolina defensive-line availability concerns remain part of the matchup context. Conflicting availability changes do not earn a new Friday action; WAIT remains.
+- No sufficiently newer executable-price evidence was recovered to overwrite the ~18:00 exact-price references for Mississippi State, UConn, Iowa, UMass or James Madison. Their established minimum acceptable line/price cutoffs remain authoritative; user should verify the actual Caesars window before execution.
+No observation altered Champion/FIRST_FROZEN state. No execution inferred.
+
+
+## Saturday prospective full-slate capture — 2026-10-03 07:19 CT
+Observation class: SCHEDULED MARKET MONITOR / PROSPECTIVE SATURDAY.
+Prospective boundary: evidence/run_receipts/CFB_RUN_STARTED_2026-10-03_0719CT_MARKET_MONITOR.md.
+Source: FantasyData NCAA Football Odds consensus board retrieved after RUN_STARTED on 2026-10-03; spread/price, moneyline, total/price recorded below. Source semantics are consensus/executable-reference evidence, not a claim of universal book identity. CBS current Week 5 odds was used as a broad cross-check on priority games. Champion remains accepted v1.193 / v1.208 FIRST_FROZEN; no market information alters frozen predictions.
+
+Current Saturday modeled-slate observations:
+- Memphis @ Charlotte: MEM -20.5 (-111), CHA +20.5 (-110); ML MEM -2122 / CHA +955; total 52.5 O-108/U-114.
+- Alabama @ Mississippi State: ALA -5.5 (-109), MSST +5.5 (-113); ML ALA -217 / MSST +177; total 60.5 O-114/U-108.
+- Syracuse @ UConn: SYR -6.5 (-115), UConn +6.5 (-106); ML SYR -264 / UConn +211; total 50.5 O-110/U-112.
+- Michigan @ Minnesota: MICH -6.5 (-107), MINN +6.5 (-115); ML MICH -232 / MINN +189; total 43.5 O-110/U-111.
+- Notre Dame @ North Carolina: ND -21 (-112), UNC +21 (-110); ML ND -2776 / UNC +1093; total 46.5 O-113/U-107.
+- Middle Tennessee @ Kansas: MTSU +20.5 (-108), KU -20.5 (-112); ML MTSU +959 / KU -2083; total 50.5 O-110/U-112.
+- Stanford @ Wake Forest: STAN +14.5 (-110), WAKE -14.5 (-110); ML STAN +464 / WAKE -650; total 53.5 O-113/U-109.
+- West Virginia @ Iowa State: WVU +3 (-106), ISU -3 (-116); ML WVU +134 / ISU -163; total 53.5 O-115/U-108.
+- UCF @ Houston: UCF +11.5 (-112), HOU -11.5 (-112); ML UCF +331 / HOU -443; total 51.0 O-113/U-109.
+- Boston College @ SMU: BC +21.5 (-113), SMU -21.5 (-107); ML BC +965 / SMU -1955; total 55.5 O-108/U-114.
+- Michigan State @ Wisconsin: MSU +9.5 (-110), WISC -9.5 (-112); ML MSU +281 / WISC -369; total 43.5 O-110/U-112.
+- Vanderbilt @ Georgia: VAN +25 (-110), UGA -25 (-112); ML VAN +1471 / UGA -5633; total 50.5 O-114/U-108.
+- Western Michigan @ Buffalo: WMU -12.5 (-112), BUF +12.5 (-112); ML WMU -612 / BUF +435; total 46.5 O-109/U-114.
+- Toledo @ Ball State: TOL -21 (-107), BALL +21 (-115); ML TOL -3559 / BALL +967; total 51.5 O-113/U-109.
+- Akron @ Central Michigan: AKR +7 (-114), CMU -7 (-109); ML AKR +216 / CMU -268; total 47.5 O-108/U-114.
+- Ohio @ Kent State: OHIO -3.5 (-109), KENT +3.5 (-113); ML OHIO -174 / KENT +142; total 50.5 O-111/U-111.
+- Wyoming @ North Dakota State: WYO +17 (-110), NDSU -17 (-110); ML WYO +695 / NDSU -1150; total 44.5 O-110/U-110.
+- Old Dominion @ Georgia State: ODU +2.5 (-110), GAST -2.5 (-112); ML ODU +115 / GAST -140; total 51.5 O-109/U-113.
+- Virginia @ Florida State: UVA -1.5 (-110), FSU +1.5 (-110); ML UVA -123 / FSU +101; total 51.5 O-109/U-112.
+- Auburn @ Tennessee: AUB +6.5 (-107), TENN -6.5 (-114); ML AUB +205 / TENN -253; total 54.5 O-112/U-112.
+- Louisville @ NC State: LOU -3.5 (-104), NCST +3.5 (-119); ML LOU -166 / NCST +136; total 58.0 O-109/U-113.
+- Eastern Michigan @ UMass: EMU +5.5 (-111), UMass -5.5 (-109); ML EMU +179 / UMass -222; total 48.5 O-111/U-111.
+- Ohio State @ Iowa: OSU -14.5 (-107), IOWA +14.5 (-117); ML OSU -696 / IOWA +477; total 45.5 O-110/U-111.
+- Florida @ Missouri: FLA -5.5 (-112), MIZ +5.5 (-110); ML FLA -221 / MIZ +178; total 57.5 O-113/U-109.
+- Bowling Green @ Miami (OH): BGSU +12.5 (-110), M-OH -12.5 (-112); ML BGSU +422 / M-OH -591; total 43.0 O-110/U-110.
+- Marshall @ James Madison: MAR +18 (-110), JMU -18 (-110); ML MAR +730 / JMU -1280; total 56.5 O-111/U-112.
+- UTEP @ New Mexico: UTEP +22.5 (-110), UNM -22.5 (-112); ML UTEP +1170 / UNM -4131; total 48.5 O-112/U-112.
+- Maryland @ Nebraska: MD +14.5 (-110), NEB -14.5 (-110); ML MD +503 / NEB -756; total 52.5 O-110/U-110.
+- Purdue @ Illinois: PUR +10 (-112), ILL -10 (-110); ML PUR +318 / ILL -422; total 62.5 O-112/U-110.
+- Kentucky @ South Carolina: UK +2.5 (-107), SC -2.5 (-115); ML UK +117 / SC -143; total 53.5 O-114/U-108.
+- Oregon State @ Colorado State: ORST -6.5 (-113), CSU +6.5 (-110); ML ORST -248 / CSU +201; total 62.5 O-106/U-114.
+- UTSA @ Rice: UTSA -13 (-113), RICE +13 (-110); ML UTSA -591 / RICE +424; total 56.0 O-110/U-110.
+- Arkansas @ Texas A&M: ARK +14 (-111), TAMU -14 (-111); ML ARK +457 / TAMU -650; total 50.5 O-107/U-113.
+- BYU @ TCU: BYU -6 (-111), TCU +6 (-112); ML BYU -233 / TCU +189; total 47.5 O-114/U-108.
+- UL Monroe @ South Alabama: ULM +14 (-107), USA -14 (-115); ML ULM +490 / USA -726; total 56.5 O-111/U-111.
+- Washington @ USC: WASH +9.5 (-109), USC -9.5 (-113); ML WASH +297 / USC -381; total 58.5 O-108/U-114.
+- Texas Tech @ Colorado: TTU -13.5 (-110), COLO +13.5 (-110); ML TTU -572 / COLO +409; total 50.5 O-108/U-115.
+- Utah State @ Boise State: USU +19.5 (-112), BOISE -19.5 (-110); ML USU +971 / BOISE -2106; total 51.5 O-111/U-110.
+- Arkansas State @ Louisiana: ARKST +6.5 (-109), UL -6.5 (-113); ML ARKST +195 / UL -244; total 48.5 O-107/U-116.
+- Fresno State @ Washington State: FRES +2 (-112), WSU -2 (-111); ML FRES +105 / WSU -127; total 45.5 O-110/U-111.
+- Texas State @ San Diego State: TXST -9.5 (-113), SDSU +9.5 (-109); ML TXST -392 / SDSU +302; total 57.5 O-110/U-112.
+- Baylor @ Arizona State: BAY +3.5 (-108), ASU -3.5 (-115); ML BAY +148 / ASU -180; total 48.5 O-111/U-111.
+- Cincinnati @ Arizona: CIN +7 (-117), ARIZ -7 (-106); ML CIN +207 / ARIZ -257; total 55.5 O-111/U-111.
+- San Jose State @ Hawai'i: SJSU +3 (-111), HAW -3 (-111); ML SJSU +128 / HAW -155; total 50.5 O-114/U-108.
+
+Priority movement vs Friday persisted references:
+- Mississippi State remains +5.5 and price -113: within established +5.5-or-better / max -115 cutoff.
+- UConn remains +6.5 and price -106: within established cutoff.
+- Iowa remains +14.5 and price -117: within established +14-or-better / max -120 cutoff.
+- UMass improved from -6 reference to -5.5 (-109): within established maximum -6.5 / max -115 cutoff.
+- James Madison improved from -18.5 reference to -18 (-110): within established cutoff.
+- Vanderbilt/Georgia total remains 50.5; Jared Curtis remains pending pregame evaluation, so WAIT trigger remains live.
+- Nebraska remains -14.5 / 52.5; side PASS/no-chase remains supported by the frozen fair margin of Nebraska -10.5.
+- Texas Tech/Colorado remains TTU -13.5 / 50.5.
+- Kentucky/South Carolina remains SC -2.5 / 53.5.
+
+No market observation altered Champion/FIRST_FROZEN state.
+
+
+## Persistence health probe — 2026-10-03 21:55 CT
+Operational-only diagnostic. Existing-file SHA-guarded append path verified after the 13:00 CT rejection. No market, decision, execution, outcome, Champion, FIRST_FROZEN, or scientific state change. PROBE_PASS
+
+
+## Week 6 opening-board capture — 2026-10-04 ~08:40 CT
+Observation class: FIRST_QUALIFIED_MARKET_OBSERVATION where an exact number is listed below; otherwise NOT_YET_AVAILABLE. Source: CBS Week 6 scoreboard retrieved prospectively after manual RUN_STARTED. CBS board was checked across the coming FBS slate; no moneyline/price was treated as established where the recovered board did not display it. Current CBS schedule is used for operational kickoff placement only; frozen prediction bytes remain unchanged.
+- Southern Miss @ Troy: Troy -10.5; total 49.5.
+- Jacksonville State @ Kennesaw State: Kennesaw State +4.5; total 49.5.
+- New Mexico State @ FIU: FIU -4.5; total 47.5.
+- Florida State @ Louisville: Louisville -7; total 58.5.
+- Iowa @ Washington: Washington -1.5; total 42.5.
+- Iowa State @ BYU: BYU -14.5; total 50.5.
+- Texas A&M @ Missouri: Missouri -2.5; total 49.5.
+- South Carolina @ Florida: Florida -13.5; total 58.5.
+- Illinois @ Michigan State: Michigan State +2.5; total 51.5.
+- Ole Miss @ Vanderbilt: Vanderbilt +10.5; total 57.5.
+- Stanford @ Notre Dame: Notre Dame -35.5; total 55.5.
+- Texas @ Oklahoma: Oklahoma +9.5; total 41.5.
+- UCLA @ Oregon: Oregon -13; total 61.5.
+- Maryland @ Ohio State: Ohio State -34.5; total 55.5.
+- Tennessee @ Arkansas: Arkansas +14.5; total 54.5.
+- LSU @ Kentucky: Kentucky +10.5; total 52.5.
+- Georgia @ Alabama: Alabama +1.5; total 57.5.
+- USC @ Penn State: Penn State +2.5; total 55.5.
+- Indiana @ Nebraska is an explicit v1.208 exclusion/unmodeled row; current board Indiana -8.5 / 51.5 is preserved only as downstream operational context, not as a modeled disagreement.
+Other modeled Week 6 games: exact qualified spread/total not established from the recovered board in this capture; no number is invented. No market observation altered Champion/FIRST_FROZEN state.
+
+
+## Week 6 Tuesday morning prospective recovery — 2026-10-06 ~07:04 CT
+Boundary: manual prospective recovery after repeated scheduled-control start-only failures. Failed scheduled cycles are not reconstructed. Source: current CBS Week 6 odds board retrieved during this manual run; current prices are observational downstream evidence only.
+
+Nearest governed windows:
+- Southern Miss @ Troy (Tue 19:00 CT): Southern Miss +10.5 (-111), Troy -10.5 (-108); ML Southern Miss +320 / Troy -410; total 50.5 (Over -105 / Under -110). Sunday first qualified observation remains Troy -10.5 / 49.5; spread unchanged, total +1.0.
+- Jacksonville State @ Kennesaw State (Wed 18:00 CT): Jacksonville State -3 (-108), Kennesaw State +3.5 (-124); ML Jacksonville State -148 / Kennesaw State +126; total 50.5 (Over -104 / Under -108). Sunday first qualified observation was Kennesaw State +4.5 / 49.5.
+- New Mexico State @ FIU (Wed 18:30 CT): New Mexico State +6.5 (-110), FIU -6 (-112); ML New Mexico State +190 / FIU -230; total 46.5/47.5 market display depending side price (NMSU Over 46.5 -111; FIU Under 47.5 -114). Sunday first qualified observation was FIU -4.5 / 47.5. Preserve the displayed asymmetric total quotes rather than inventing a single consensus number.
+
+Kickoff corroboration: Southern Miss official athletics lists Tue 19:00 CT; New Mexico State official athletics lists Wed 18:30 CT. Champion/FIRST_FROZEN unchanged. No execution inferred.
+
+
+## Diagnostic-only synthetic prospective record
+TEST_ONLY | 2026-10-08 07:00 CT | fixture-market | hypothetical spread -3.5 | price -110 | NOT_EXECUTABLE | not a real sportsbook quote | no betting decision
