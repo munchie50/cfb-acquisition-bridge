@@ -1,0 +1,17 @@
+# V7 controlled failure-path terminal candidate
+
+test_id: CFB_CANARY_V7_MANUAL_20261009T125151253Z
+boundary: 2026-10-09T12:51:51.253Z
+execution_class: MANUAL_FAST_LOOP
+workload_status: DIAGNOSTIC_INCOMPLETE
+failed_stage: SIMULATED_OPERATIONAL_BLOCK
+reason_code: QA_CONTROLLED_BLOCK
+applicable_surfaces: NONE_PRODUCTION
+started_path: evidence/scheduler_qa/CFB_CANARY_V7_MANUAL_20261009T125151253Z_STARTED.md
+started_readback_blob: eae870694ff9abd43f58c8d7cd8c83566d444f77
+terminal_readback: PENDING_SEPARATE_FETCH
+simulation: NOT_ACTUAL_CONNECTOR_REJECTION
+scientific_effect: NONE
+production_effect: ZERO
+production_mutations: NONE
+required_next_step: independent candidate fetch then separate closure; no production task pause
