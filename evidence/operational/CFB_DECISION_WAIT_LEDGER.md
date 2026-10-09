@@ -196,3 +196,19 @@ Prospective boundary: manual recovery run after scheduled-control failures. Uses
 - New Mexico State @ FIU — **INCONCLUSIVE until Tue 13:00 review.** Frozen fair FIU -3.2; current FIU -6 (-112), with CBS displaying side-specific total quotes around 46.5/47.5. No actionable threshold is earned solely from movement.
 
 Portfolio posture: no Tuesday-morning trip is created. The 13:00 CT Market Monitor remains the required prospective Wednesday reconciliation point. No execution recorded.
+
+## Friday prospective fail-closed review — 2026-10-09T12:38:21.065Z
+Run: CFB_MANUAL_FRIDAY_REVIEW_20261009T123613Z; manual incremental review, separate from the morning scheduled STARTED-only cycle.
+Authority: v1.226/v1.235/v1.237/v1.242; Champion v1.193 and FIRST_FROZEN unchanged. Current public benchmark capture: canonical market blob d13c5be0a12aed50242515e10362cdcd388cdcf2, observation boundary 2026-10-09T12:34:26.452Z. These are ESPN DraftKings-labelled retrieval observations, not verified executable Caesars offers or calibrated edges.
+
+Current state for each listed game: PASS / NO BET AT THIS REVIEW BOUNDARY. The evidence does not establish an executable offer and an earned minimum acceptable line/price or otherwise justify action. This is a conservative prospective no-bet disposition, not proof that the price is bad or that the frozen model is wrong.
+- Florida State @ Louisville — PASS side / PASS total. Large prior frozen-versus-benchmark discrepancy remains investigation-only; current team/offer completeness and an earned threshold are not established.
+- Iowa @ Washington — PASS side / PASS total. Benchmark number/price changed, but no actionable rule or executable price is earned. Official 20:00 versus 20:05 CT kickoff conflict remains OPEN; do not extend a cutoff.
+- Washington State @ Utah State — PASS side / PASS total. Opposite prior frozen/benchmark favorites remain investigation-only; no qualified execution offer or earned threshold established.
+- Wyoming @ San Jose State — PASS side / PASS total. Benchmark price changed while spread stayed 4.5; neither small raw disagreement nor price change establishes a betting rule.
+- Iowa State @ BYU — PASS side / PASS total. Opponent-authored expectations for LJ Martin/Isaiah Glasker remain unconfirmed final availability. A future-game score displayed in BYU page chrome is excluded from outcome and decision use. No earned threshold/executable offer established.
+
+Moneyline/parlay recommendations: NONE established. Minimum acceptable line/price: NOT_ESTABLISHED for all five; none invented. Hard final execution cutoff: NOT_ESTABLISHED; no promise of a book/travel opportunity.
+Next review: scheduled Friday 13:00 CT default v1.237 reconciliation, or earlier genuinely material qualified information before a valid practical execution cutoff. Reconsider prospectively only if evidence earns a changed decision; raw benchmark movement alone does not reopen or relax this PASS.
+Opportunity at risk: a potentially useful price before verified information, not an earned bet. No drifting WAIT is created without a supportable final cutoff. Portfolio: no additional casino trip justified by this review; no user execution inferred.
+Thursday missed-review evidence remains missing and is not retroactively repaired. These new decisions exist only from the current boundary onward. Later observations or outcomes must not rewrite them.
