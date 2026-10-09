@@ -1,5 +1,11 @@
 # CFB Engine — Current Recovery Index v1.245
 
+## October 9 new scheduled failure-path demonstration
+Existing temporary canary V7 was reused once; requested 07:55:19 CT, actual start 07:57:29.109 CT (+130.109s). It preserved a declared simulated operational block as DIAGNOSTIC_INCOMPLETE, independently read back its candidate, and persisted/read back separate closure. Four production tasks stayed enabled with identical prompts/cadences; temporary canary auto-disabled. No new task or further test schedule.
+Recover `evidence/scheduler_qa/CFB_SCHEDULER_V7_NATURAL_FAILURE_PATH_RECONCILIATION_2026-10-09.md`, blob 69d3ee856285968704ebe3fedb0ec286da3886a1. Bounded failure-result/closure/topology demonstration PASS; actual production write rejection and natural full Market Monitor acceptance remain OPEN. This was not a forced real rejection or a resumed morning cycle.
+Permitted metadata-in-response fallback is now installed in the active persistence procedure for terminal-persistence failures; natural failure-response demonstration remains pending. Candidate clock-field ambiguity was clarified in the disabled future canary prompt, without rewriting tested receipts or scheduling a repeat.
+
+
 ## October 9 07:45 CT runtime-status correction
 Morning invocation stopped: recovered indexed 07:04:52 CT run response reports RUN_INCOMPLETE after two rejected market updates and two rejected terminal-receipt attempts, then schedule pausing. It was not a verified active 45-minute run. Durable receipt remains STARTED-only; reported runtime result and persisted terminal proof are separate. Exact error transcript/payload remains unavailable.
 Read `evidence/scheduler_qa/CFB_SCHEDULER_V6_OCT09_START_ONLY_AND_TASK_LIFECYCLE_REPAIR.md`, blob 3aea990e8fbd940386c210b7dab0ff9e2bbe6422, for evidence classes and reconciled timeline. Task restored for future schedules; restoration does not resume the morning run. Four enabled tasks verified. Separate successful manual Friday appends do not certify the scheduled path.
