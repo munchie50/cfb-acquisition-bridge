@@ -150,3 +150,9 @@ This is a procedural/provenance control only. It:
 - does not modify any frozen prediction or recommendation.
 
 Future Adam-provided screenshots used in CFB work must be interpreted through this boundary before observations are routed downstream.
+
+## October 9 established-ticket durable handoff guard
+
+An issued actual-wager ticket is downstream execution evidence even when its evaluation context is controlled/experimental; this designation never means simulated money. Once original evidence is recovered and sufficiently establishes execution, reconcile against the canonical execution ledger before claiming the bet recorded. Use original-source identity and byte hash plus a private ticket-identity comparison to avoid duplicates; never copy cashable serials/barcodes into public evidence.
+Persist the established safe facts with their best available printed execution timestamp and provenance to evidence/operational/CFB_EXECUTION_LEDGER.md under v1.242 and the active Contents procedure, then independently read back. Preserve missing budget allocation, receipt timezone, pre-event links, authoritative timing/settlement and CLV as unverified; unknown comparison fields do not turn an established actual ticket into a simulated wager. Market boards/candidate slips remain excluded. Explicit live/in-game tickets must remain separate from pregame evaluation. Original upload time is not execution time; a receipt event display does not supersede authoritative kickoff.
+This is a durable handoff check under existing v1.224/v1.226/v1.242, not authorization for outcome-driven reconstruction. October 9 manual recovery demonstrated original-source classification and canonical readback for eleven actual wagers; future screenshot-intake producer enforcement remains DEMONSTRATION_PENDING. No model, market, decision or scientific effect.
