@@ -1,0 +1,317 @@
+{
+  "run_id": "CFB_WAGER_DECISION_REFERENCE_QA_20261009T232630Z",
+  "prospective_boundary_utc": "2026-10-09T23:26:30Z",
+  "scope": "Original immutable decision-reference recovery and recorded cutoff compatibility; genuine pre-execution attribution remains incomplete",
+  "input_blobs": {
+    "original_ticket_audit": "2ea1f35c353665c373eb19961aa52692f680dbea",
+    "frozen_reference_audit": "b13ef5bacf7a47199ca139a429137427f0346fca",
+    "current_decision_ledger": "fcbdc7f48e8518dc6826d0d39c06d864da1a12e9"
+  },
+  "historical_commit_proof": {
+    "sha": "09c479bca87e08b92b9d3e42b539b27c21be8120",
+    "time": "2026-10-03T00:43:58Z",
+    "parents": [
+      "d5aef879def8c7504c439d55380d2c848ee7af80"
+    ],
+    "files": [
+      {
+        "filename": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+        "status": "modified",
+        "additions": 14,
+        "deletions": 0
+      }
+    ]
+  },
+  "history_scope": {
+    "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+    "until_utc": "2026-10-03T06:00:00Z",
+    "commits_returned": 11,
+    "earliest_initialization_utc": "2026-09-27T14:56:55Z",
+    "pinned_bytes_readback": true,
+    "current_preserves_pinned_bytes": true,
+    "earlier_recovery_bytes_preserved": true
+  },
+  "matched": [
+    {
+      "execution_id": "CFB_OCT02-01",
+      "game": "Syracuse at Connecticut",
+      "market": "SPREAD",
+      "selection": "Connecticut",
+      "accepted_line": 6.5,
+      "american_odds": 100,
+      "stake_usd": 3,
+      "decision_reference": {
+        "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+        "initial_commit": "aff7c227fac581adcdd80668ff7c9c4bbb26fb81",
+        "initial_blob": "6a506b727ce9ece41c64ce6d10c2a88afc95f937",
+        "initial_commit_time_utc": "2026-10-02T23:24:02Z",
+        "confirmation_commit": "09c479bca87e08b92b9d3e42b539b27c21be8120",
+        "confirmation_blob": "e2b0f4f7fa72ba793f5c468958f4c25162897c1b",
+        "confirmation_commit_time_utc": "2026-10-03T00:43:58Z",
+        "initial_decision_line": "- Syracuse at UConn — BET NOW: UConn +6.5 or better; do not pay worse than -115. Current exact-price reference +6.5 (+100). Frozen Engine favors UConn by 6.8817. Independent current numberFire material also favored UConn to win while current local matchup reporting identifies Syracuse QB performance/health uncertainty. Conflicting Syracuse-local opinion remains acknowledged; this is a controlled Beta expression, not calibrated EV.",
+        "state": "BET NOW",
+        "line_floor": 6.5,
+        "preferred_line": null,
+        "odds_floor": -115,
+        "identity_scope": "Exact ordered team-pair text; Connecticut/UConn explicit alias only; independent game-id certification unverified"
+      },
+      "threshold_comparison": {
+        "line_inside_recorded_limit": true,
+        "price_inside_recorded_limit": true,
+        "classification": "RECORDED_THRESHOLD_COMPATIBLE_NOT_DECISION_VALIDATION"
+      },
+      "execution_time_printed": "2026-10-02 07:50 PM",
+      "receipt_timezone": "UNSPECIFIED",
+      "chronology": {
+        "unconditional_status": "PRE_EXECUTION_SEQUENCE_UNVERIFIED",
+        "hypothesis": "IF printed receipt time is America/Chicago (not established)",
+        "hypothetical_execution_utc": "2026-10-03T00:50:00Z",
+        "hypothetical_seconds_after_confirmation_commit": 362,
+        "hypothetical_commit_precedes_execution": true
+      },
+      "causal_engine_attribution": "UNVERIFIED",
+      "recommendation_quality": "NOT_REEVALUATED",
+      "evaluation_routing": "DOWNSTREAM_REFERENCE_ONLY_NO_MODEL_INPUT"
+    },
+    {
+      "execution_id": "CFB_OCT02-02",
+      "game": "Alabama at Mississippi State",
+      "market": "SPREAD",
+      "selection": "Mississippi State",
+      "accepted_line": 5.5,
+      "american_odds": -107,
+      "stake_usd": 3,
+      "decision_reference": {
+        "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+        "initial_commit": "aff7c227fac581adcdd80668ff7c9c4bbb26fb81",
+        "initial_blob": "6a506b727ce9ece41c64ce6d10c2a88afc95f937",
+        "initial_commit_time_utc": "2026-10-02T23:24:02Z",
+        "confirmation_commit": "09c479bca87e08b92b9d3e42b539b27c21be8120",
+        "confirmation_blob": "e2b0f4f7fa72ba793f5c468958f4c25162897c1b",
+        "confirmation_commit_time_utc": "2026-10-03T00:43:58Z",
+        "initial_decision_line": "- Alabama at Mississippi State — BET NOW: Mississippi State +5.5 or better; do not pay worse than -115. Current exact-price reference recovered at +5.5 (+100), with broad board +6. Frozen Engine favors Mississippi State by 9.8652. The disagreement persisted all week; current matchup reporting describes both teams as unbeaten and competitive, with no recovered availability evidence sufficient to explain a market reversal of this magnitude. If +5.5 is unavailable, take +6 or better; do not chase below +5.5.",
+        "state": "BET NOW",
+        "line_floor": 5.5,
+        "preferred_line": null,
+        "odds_floor": -115,
+        "identity_scope": "Exact ordered team-pair text; Connecticut/UConn explicit alias only; independent game-id certification unverified"
+      },
+      "threshold_comparison": {
+        "line_inside_recorded_limit": true,
+        "price_inside_recorded_limit": true,
+        "classification": "RECORDED_THRESHOLD_COMPATIBLE_NOT_DECISION_VALIDATION"
+      },
+      "execution_time_printed": "2026-10-02 07:51 PM",
+      "receipt_timezone": "UNSPECIFIED",
+      "chronology": {
+        "unconditional_status": "PRE_EXECUTION_SEQUENCE_UNVERIFIED",
+        "hypothesis": "IF printed receipt time is America/Chicago (not established)",
+        "hypothetical_execution_utc": "2026-10-03T00:51:00Z",
+        "hypothetical_seconds_after_confirmation_commit": 422,
+        "hypothetical_commit_precedes_execution": true
+      },
+      "causal_engine_attribution": "UNVERIFIED",
+      "recommendation_quality": "NOT_REEVALUATED",
+      "evaluation_routing": "DOWNSTREAM_REFERENCE_ONLY_NO_MODEL_INPUT"
+    },
+    {
+      "execution_id": "CFB_OCT02-03",
+      "game": "Ohio State at Iowa",
+      "market": "SPREAD",
+      "selection": "Iowa",
+      "accepted_line": 14.5,
+      "american_odds": -117,
+      "stake_usd": 3,
+      "decision_reference": {
+        "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+        "initial_commit": "aff7c227fac581adcdd80668ff7c9c4bbb26fb81",
+        "initial_blob": "6a506b727ce9ece41c64ce6d10c2a88afc95f937",
+        "initial_commit_time_utc": "2026-10-02T23:24:02Z",
+        "confirmation_commit": "09c479bca87e08b92b9d3e42b539b27c21be8120",
+        "confirmation_blob": "e2b0f4f7fa72ba793f5c468958f4c25162897c1b",
+        "confirmation_commit_time_utc": "2026-10-03T00:43:58Z",
+        "initial_decision_line": "- Ohio State at Iowa — BET NOW: Iowa +14 or better; prefer +14.5; do not pay worse than -120. Current exact-price reference +14.5 (-115). Frozen Engine favors Iowa by 6.2898. Iowa is 4-0 after beating Michigan; current reporting confirms elite early defensive results and a strong rushing profile, while independent current models/analysts also identify spread value near +14.5 even when projecting Ohio State to win. Do not take +13.5.",
+        "state": "BET NOW",
+        "line_floor": 14,
+        "preferred_line": 14.5,
+        "odds_floor": -120,
+        "identity_scope": "Exact ordered team-pair text; Connecticut/UConn explicit alias only; independent game-id certification unverified"
+      },
+      "threshold_comparison": {
+        "line_inside_recorded_limit": true,
+        "price_inside_recorded_limit": true,
+        "classification": "RECORDED_THRESHOLD_COMPATIBLE_NOT_DECISION_VALIDATION"
+      },
+      "execution_time_printed": "2026-10-02 07:51 PM",
+      "receipt_timezone": "UNSPECIFIED",
+      "chronology": {
+        "unconditional_status": "PRE_EXECUTION_SEQUENCE_UNVERIFIED",
+        "hypothesis": "IF printed receipt time is America/Chicago (not established)",
+        "hypothetical_execution_utc": "2026-10-03T00:51:00Z",
+        "hypothetical_seconds_after_confirmation_commit": 422,
+        "hypothetical_commit_precedes_execution": true
+      },
+      "causal_engine_attribution": "UNVERIFIED",
+      "recommendation_quality": "NOT_REEVALUATED",
+      "evaluation_routing": "DOWNSTREAM_REFERENCE_ONLY_NO_MODEL_INPUT"
+    },
+    {
+      "execution_id": "CFB_OCT02-04",
+      "game": "Marshall at James Madison",
+      "market": "SPREAD",
+      "selection": "James Madison",
+      "accepted_line": -18.5,
+      "american_odds": -106,
+      "stake_usd": 3,
+      "decision_reference": {
+        "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+        "initial_commit": "aff7c227fac581adcdd80668ff7c9c4bbb26fb81",
+        "initial_blob": "6a506b727ce9ece41c64ce6d10c2a88afc95f937",
+        "initial_commit_time_utc": "2026-10-02T23:24:02Z",
+        "confirmation_commit": "09c479bca87e08b92b9d3e42b539b27c21be8120",
+        "confirmation_blob": "e2b0f4f7fa72ba793f5c468958f4c25162897c1b",
+        "confirmation_commit_time_utc": "2026-10-03T00:43:58Z",
+        "initial_decision_line": "- Marshall at James Madison — BET NOW: James Madison -18.5 or better at -115 or better. Current cross-book references include Caesars -18.5 (-107), DraftKings -18.5 (-105), FanDuel -18.5 (-110). Frozen Engine JMU by 29.5062 / home win 0.955715; current preview evidence also supports JMU materially above the market number. Do not lay -19.5 or worse.",
+        "state": "BET NOW",
+        "line_floor": -18.5,
+        "preferred_line": null,
+        "odds_floor": -115,
+        "identity_scope": "Exact ordered team-pair text; Connecticut/UConn explicit alias only; independent game-id certification unverified"
+      },
+      "threshold_comparison": {
+        "line_inside_recorded_limit": true,
+        "price_inside_recorded_limit": true,
+        "classification": "RECORDED_THRESHOLD_COMPATIBLE_NOT_DECISION_VALIDATION"
+      },
+      "execution_time_printed": "2026-10-02 07:52 PM",
+      "receipt_timezone": "UNSPECIFIED",
+      "chronology": {
+        "unconditional_status": "PRE_EXECUTION_SEQUENCE_UNVERIFIED",
+        "hypothesis": "IF printed receipt time is America/Chicago (not established)",
+        "hypothetical_execution_utc": "2026-10-03T00:52:00Z",
+        "hypothetical_seconds_after_confirmation_commit": 482,
+        "hypothetical_commit_precedes_execution": true
+      },
+      "causal_engine_attribution": "UNVERIFIED",
+      "recommendation_quality": "NOT_REEVALUATED",
+      "evaluation_routing": "DOWNSTREAM_REFERENCE_ONLY_NO_MODEL_INPUT"
+    }
+  ],
+  "unmatched": [
+    {
+      "execution_id": "CFB_SEP26-01",
+      "game": "Nebraska at Michigan State",
+      "market": "SPREAD",
+      "receipt_timezone": "UNSPECIFIED",
+      "decision_reference_status": "NOT_RECOVERED_IN_THIS_LEDGER_HISTORY_SCOPE",
+      "note": "This ledger was initialized September27, after the September26 tickets. This does not prove no earlier recommendation existed elsewhere.",
+      "causal_engine_attribution": "UNVERIFIED",
+      "pre_execution_sequence": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_SEP26-02",
+      "game": "Iowa at Michigan",
+      "market": "MONEYLINE",
+      "receipt_timezone": "UNSPECIFIED",
+      "decision_reference_status": "NOT_RECOVERED_IN_THIS_LEDGER_HISTORY_SCOPE",
+      "note": "This ledger was initialized September27, after the September26 tickets. This does not prove no earlier recommendation existed elsewhere.",
+      "causal_engine_attribution": "UNVERIFIED",
+      "pre_execution_sequence": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_SEP26-03",
+      "game": "South Florida at Bowling Green",
+      "market": "SPREAD",
+      "receipt_timezone": "UNSPECIFIED",
+      "decision_reference_status": "NOT_RECOVERED_IN_THIS_LEDGER_HISTORY_SCOPE",
+      "note": "This ledger was initialized September27, after the September26 tickets. This does not prove no earlier recommendation existed elsewhere.",
+      "causal_engine_attribution": "UNVERIFIED",
+      "pre_execution_sequence": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_SEP26-04",
+      "game": "Oklahoma at Georgia",
+      "market": "SPREAD",
+      "receipt_timezone": "UNSPECIFIED",
+      "decision_reference_status": "NOT_RECOVERED_IN_THIS_LEDGER_HISTORY_SCOPE",
+      "note": "This ledger was initialized September27, after the September26 tickets. This does not prove no earlier recommendation existed elsewhere.",
+      "causal_engine_attribution": "UNVERIFIED",
+      "pre_execution_sequence": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_SEP26-05",
+      "game": "Wisconsin at Penn State",
+      "market": "SPREAD",
+      "receipt_timezone": "UNSPECIFIED",
+      "decision_reference_status": "NOT_RECOVERED_IN_THIS_LEDGER_HISTORY_SCOPE",
+      "note": "This ledger was initialized September27, after the September26 tickets. This does not prove no earlier recommendation existed elsewhere.",
+      "causal_engine_attribution": "UNVERIFIED",
+      "pre_execution_sequence": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_SEP26-06",
+      "game": "Colorado at Baylor",
+      "market": "SPREAD_LIVE",
+      "receipt_timezone": "UNSPECIFIED",
+      "decision_reference_status": "NOT_RECOVERED_IN_THIS_LEDGER_HISTORY_SCOPE",
+      "note": "Explicit LIVE_IN_GAME; never use a pregame decision comparison.",
+      "causal_engine_attribution": "UNVERIFIED",
+      "pre_execution_sequence": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_OCT02-05",
+      "game": "Michigan State at Wisconsin",
+      "market": "SPREAD",
+      "receipt_timezone": "UNSPECIFIED",
+      "decision_reference_status": "NO_EXPLICIT_BET_NOW_MATCH_IN_PINNED_OCT02_LEDGER",
+      "note": "Wisconsin is absent from the pinned ledger; it is not one of the five Friday candidates. Do not substitute the unexecuted UMass recommendation or a frozen-only match.",
+      "causal_engine_attribution": "UNVERIFIED",
+      "pre_execution_sequence": "UNVERIFIED"
+    }
+  ],
+  "unexecuted_candidate": {
+    "game": "Eastern Michigan at Massachusetts",
+    "selection": "UMass",
+    "status": "RECORDED_BET_NOW_BUT_NO_TICKET_IN_ORIGINAL_ELEVEN",
+    "execution": "NOT_INFERRED"
+  },
+  "counts": {
+    "original_wagers": 11,
+    "original_stake_usd": 33.45,
+    "matching_explicit_oct02_references": 4,
+    "matching_stake_usd": 12,
+    "recorded_threshold_compatible": 4,
+    "unmatched_in_scope": 7,
+    "unconditionally_verified_preexecution_links": 0,
+    "causally_attributed_engine_bets": 0
+  },
+  "checks": {
+    "eleven_unique_execution_ids": true,
+    "partition_exact": true,
+    "no_moneyline_spread_crossmatch": true,
+    "live_baylor_excluded": true,
+    "immutable_historical_commit_readbacks": true,
+    "current_append_only_preservation": true,
+    "all_four_limits_compatible": true,
+    "no_receipt_timezone_inferred": true,
+    "no_outcome_input": true
+  },
+  "remaining_debt": [
+    "Actual receipt timezone/absolute execution chronology",
+    "Independent decision-to-execution game-id and delivery/user-choice attribution",
+    "September26 genuine pre-execution decision evidence outside this scoped ledger",
+    "Wisconsin explicit prior decision evidence, if any",
+    "Historical decision source/rule qualification not reevaluated",
+    "Budget/settlement/CLV and original source-clock conflict unchanged"
+  ],
+  "scientific_effect": "NONE",
+  "champion_effect": "NONE",
+  "terminal_workload_state": "RUN_INCOMPLETE",
+  "current_branch_ancestry": {
+    "status": "ahead",
+    "base_commit": "09c479bca87e08b92b9d3e42b539b27c21be8120",
+    "merge_base_commit": "09c479bca87e08b92b9d3e42b539b27c21be8120",
+    "total_commits": 333,
+    "head_commit": "4dea34822c5b4b30c045773d4419b8198940a97b"
+  }
+}
