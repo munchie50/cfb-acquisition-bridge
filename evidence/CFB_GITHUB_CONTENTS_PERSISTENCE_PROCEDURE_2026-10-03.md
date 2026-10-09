@@ -108,3 +108,16 @@ Duplicate JSON keys/identities, unknown or missing fields, copied outcome/raw-bo
 Source qualification, exact frozen game mapping, actual kickoff conflicts, current availability, practical execution and betting decisions remain separate gates. Do not discard known facts or observations to satisfy this schema. Canonical append still requires immediate fetch, preserved prior bytes, exact SHA, planned-attempt metadata and independent readback. This helper is not authority to reinterpret/replay restricted rejected content or bypass a write rejection.
 
 Demonstration: thirty boundary/rejection/CLI checks and deterministic replay of five genuinely retained October 9 07:34 observations passed. Input/output retained only under evidence/scheduler_qa/; no new market/decision observation, canonical mutation or scheduled test was made by this replay. Actual production failure cause and natural producer integration remain OPEN.
+
+
+## 2026-10-09 Health terminal-failure containment integration
+
+Observed evidence: recovered indexed October 8 21:42:36Z Dual Engine Health response reports RUN_INCOMPLETE and two rejected CFB health-receipt writes. It describes a non-authoritative fallback, but its exact file identity and the original tool trace/error/payload are not recovered. This is reported runtime evidence, not new durable closure or narrower rejection-cause proof.
+
+For the CFB portion of Dual Engine Health, explicitly apply this procedure's permitted persistence primitives, atomic provenance, allowed rejection handling and terminal-persistence-unavailable response envelope, with the October 5 two-phase terminal closure contract. An incomplete or rejected health-receipt write must preserve the unresolved audit coverage boundary. Never advance that boundary from last_run_time or another task's PASS.
+
+The Health invocation must not disable/change schedules or create/dispatch replacement tasks because its own repository/tool work failed. Its existing separately governed Market Monitor enabled-state recovery remains permitted only when all existing ownership/cadence/scope/conflict checks pass, followed by independent four-task readback and truthful recovery reporting. A blocked recovery receipt means reported recovery with durable evidence unavailable; configuration readback and receipt persistence are separate proof classes.
+
+If terminal persistence is unavailable, report RUN_INCOMPLETE/RUN_FAIL as earned, TERMINAL_PERSISTENCE_UNAVAILABLE and the permitted content-free diagnostic envelope. Missing exact fields must be explicitly UNAVAILABLE, never reconstructed from later successful writes. A fallback file/chat response is not a GitHub terminal receipt, not authoritative operational completion and not RUN_PASS. Do not use another destination or operation to evade a write restriction. Preserve all historical failures.
+
+Integration status: installed operational containment; natural Health success/failure demonstration remains pending. This does not identify or repair the opaque connector rejection and does not change scientific/model/Champion authority or task cadence.
