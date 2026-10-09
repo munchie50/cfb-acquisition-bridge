@@ -1,5 +1,17 @@
 # CFB Engine — Current Recovery Index v1.245
 
+## October 9 current Friday follow-through — prospective manual boundary
+This current block supersedes earlier Friday missing-record summaries from the new boundary onward; missed Thursday evidence and the scheduled morning completion gap remain preserved.
+
+- Five fresh ESPN DraftKings-labelled public benchmark observations are now canonical, market blob d13c5be0a12aed50242515e10362cdcd388cdcf2; retrieval time is separate from underlying offer time and executability remains unverified.
+- Five Friday PASS side/total no-bet reviews are now canonical from 2026-10-09T12:38:21.065Z, decision blob 1030aac4df11c82c74a936317db2591b1dbb5f52. No earned actionable rule/executable offer/minimum cutoff is established. This is a conservative current no-bet disposition, not a backfilled Thursday decision or a claim of bad market prices.
+- Corrected audit executed on new canonical bytes: Friday naming coverage 5/5, total 8/49; naming is not semantic certification.
+- Directly recover `evidence/operational/CFB_WEEK6_OCT09_FRIDAY_PROSPECTIVE_BENCHMARK_AND_DECISION_REVIEW.md`, blob de96db0eb8c227ead026f5251a0f3fe1962d11c0, for exact quote pairs, source limits, real metadata collector proof and decision rationale. Primary BYU page chrome contains a future-game score conflict; quarantine it from outcome/availability/decision ingestion. Iowa exact-minute conflict remains open.
+- Separate manual terminal candidate/closure read back; `evidence/run_receipts/CFB_MANUAL_FRIDAY_REVIEW_20261009T123613Z_RUN_CLOSURE.md`, blob db395f97a79c99bf11aac4c8cb60304c5a18414c, correctly ends RUN_INCOMPLETE. Full fresh production Hot Sheet and natural scheduled RUN_PASS remain pending. Manual canonical success does not certify the scheduled producer.
+- Friday 13:00 CT remains the default next reconciliation point, subject to any earlier genuine constraint. Saturday-morning seven still require today's review.
+- Candidate Test Routine v6 source-region chronology gate installed and manually demonstrated. Four-task topology, Production Routine v5, Champion/FIRST_FROZEN and protected evidence unchanged.
+
+
 ## October 9 timing-claim correction — 07:27 CT audit
 This clarification supersedes any broad description of Friday's decision deadline as already overdue; prior missed-review evidence remains preserved.
 
