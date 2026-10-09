@@ -212,3 +212,38 @@ Moneyline/parlay recommendations: NONE established. Minimum acceptable line/pric
 Next review: scheduled Friday 13:00 CT default v1.237 reconciliation, or earlier genuinely material qualified information before a valid practical execution cutoff. Reconsider prospectively only if evidence earns a changed decision; raw benchmark movement alone does not reopen or relax this PASS.
 Opportunity at risk: a potentially useful price before verified information, not an earned bet. No drifting WAIT is created without a supportable final cutoff. Portfolio: no additional casino trip justified by this review; no user execution inferred.
 Thursday missed-review evidence remains missing and is not retroactively repaired. These new decisions exist only from the current boundary onward. Later observations or outcomes must not rewrite them.
+
+
+## Friday 13:01 CT scheduled decision reconciliation — 2026-10-09
+Run: CFB_MARKET_MONITOR_20261009T180108Z. Uses independently read-back canonical market blob bbc222ec291ba1faff3f083f6da132d8e8214cae. Champion v1.193 and FIRST_FROZEN remain unchanged. Public CBS mixed-book benchmarks are not verified Caesars offers; raw disagreement is not calibrated EV.
+
+### Friday — final scheduled review
+The five prospective PASS / NO BET decisions established by the 07:38 CT manual review remain closed:
+- Florida State @ Louisville — PASS side / PASS total.
+- Iowa @ Washington — PASS side / PASS total.
+- Washington State @ Utah State — PASS side / PASS total.
+- Wyoming @ San Jose State — PASS side / PASS total.
+- Iowa State @ BYU — PASS side / PASS total.
+No minimum acceptable line/price is established; no late reopening from market movement alone; no casino trip is justified. Practical execution window: CLOSED by decision, not by kickoff.
+
+### Saturday morning — Friday review resolved prospectively
+All seven modeled rows transition from INCONCLUSIVE to PASS / NO BET at this review boundary. None has a verified executable Caesars offer plus an earned rule/minimum acceptable threshold. No bet is forced merely to clear INCONCLUSIVE.
+- Arizona @ West Virginia — PASS side / PASS total. Frozen West Virginia -3.4 / 53.8 versus benchmark Arizona -3 / 61.5 is a large investigation flag only.
+- Texas A&M @ Missouri — PASS side / PASS total. Frozen Missouri -7.7 / 48.5 versus benchmark Missouri -3.5 / 48.5; no calibrated threshold or executable offer.
+- UCF @ Oklahoma State — PASS side / PASS total. Frozen Oklahoma State -4.3 / 55.1 versus displayed benchmark around Oklahoma State -9.5 to -10.5 / 53.5 to 54.5; side is beyond the frozen fair margin and no chase is permitted.
+- North Carolina @ Pittsburgh — PASS side / PASS total. Frozen Pittsburgh -8.3 / 46.7 versus benchmark Pittsburgh -3.5 / 47.5; no earned actionable rule.
+- Wake Forest @ NC State — PASS side / PASS total. Frozen NC State -9.3 / 59.3 versus benchmark Wake Forest -3.5 / 58.5; opposite favorites remain investigation-only.
+- Sacramento State @ Bowling Green — PASS side / PASS total. Frozen Sacramento State -12.7 / 45.8 versus benchmark Bowling Green -7.5 / 44.5; opposite favorites remain investigation-only.
+- South Carolina @ Florida — PASS side / PASS total. Frozen Florida -7.1 / 61.9 versus benchmark Florida -12.5 / 61.5; side is beyond frozen fair margin and no chase is permitted.
+
+Minimum acceptable line/price: NOT_ESTABLISHED for all seven and none invented.
+Pending reason/information: none retained as a drifting WAIT; current evidence is insufficient to earn action.
+Reconciliation deadline: satisfied by this scheduled review.
+Final practical execution cutoff: CLOSED by PASS.
+Opportunity at risk: none established.
+Portfolio posture: no Friday or Saturday-morning casino trip is justified from these rows.
+
+### Later Saturday windows
+- Saturday afternoon 17 modeled rows remain INCONCLUSIVE until the governed Saturday 07:00 CT reconciliation. Required transition then: earned actionable state, explicit governed WAIT with hard cutoff, or PASS.
+- Saturday evening/night 14 modeled rows remain INCONCLUSIVE until the governed Saturday 13:00 CT reconciliation with the same fail-closed transition rule.
+No execution is established or inferred. No additional trip is authorized. Market movement alone cannot create or relax an acceptable threshold.
