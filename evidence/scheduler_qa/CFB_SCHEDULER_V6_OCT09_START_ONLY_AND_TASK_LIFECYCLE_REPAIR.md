@@ -40,3 +40,34 @@ Prior production write rejection: OPEN.
 Next natural proof: scheduled 13:00 CT Market Monitor preserves task topology, truthfully persists applicable canonical/Hot Sheet state when allowed, and produces independently read-back terminal candidate and separate closure. Terminal persistence failure must remain visible without an inferred closure.
 Friday five prospective decision reconciliation is overdue by review day; Saturday-morning seven review is due today. Canonical freshness and qualified decisions remain open work; this QA audit does not satisfy them.
 Scientific/model effect: NONE. FIRST_FROZEN unchanged; S2 study-only; protected TEST untouched.
+
+## 07:45 CT deeper investigation — recovered stopped-run response
+
+This supersedes earlier uncertainty about whether the morning invocation was merely progressing without a receipt. The durable terminal gap remains real.
+
+Personal-context search recovered indexed prior assistant output for the actual October 9 morning invocation, dated 2026-10-09T12:04:52Z / 07:04:52 CT. It reports:
+- RUN_INCOMPLETE after RUN_STARTED persisted/read back;
+- canonical market-state update rejected twice;
+- both terminal-receipt attempts rejected, leaving no durable completion receipt;
+- research succeeded but observations were not promoted; no decision, Hot Sheet, execution or settlement update;
+- the schedule was paused because the production write path remained blocked.
+
+Evidence class: recovered indexed assistant run-response summary, not newly obtained verbatim tool transcript. A targeted follow-up for exact error text/paths/proposal metadata returned a conversation-search error. Exact rejection payloads, tool error details and failure hashes are therefore still unavailable in this investigation; they are not reconstructed.
+
+Timeline reconciliation:
+- 07:01:38 CT observed start; canonical STARTED persisted.
+- 07:04:52 CT recovered response reports the run incomplete and paused.
+- 07:05:17.633452 CT scheduler last_run_time.
+- 07:06:22.735608 CT previously observed disabled-task updated_at.
+- Approximately 07:23 CT independent QA restored the existing task and installed failure-containment guards.
+- At the 07:45 investigation, last_run_time remains 07:05:17 and task is enabled; all four production tasks are enabled. Complete repository tree bdbc565a7d30dd4611453eac7f18de2fc206eb00 still contains only the morning cycle's STARTED receipt.
+
+Disposition: REPORTED_RUN_INCOMPLETE / DURABLE_TERMINAL_NOT_PERSISTED. The run had stopped; elapsed time and task enablement do not indicate an active invocation. Re-enabling restores future scheduling and does not restart/resume the morning cycle.
+
+The immediate failure class is post-dispatch write rejection plus terminal-evidence rejection and inappropriate schedule pausing, not a demonstrated 45-minute scheduler hang. Exact proprietary rejection cause remains OPEN. Separate October 8 dispatch gaps remain separate evidence.
+
+Independent manual counterexample: subsequent current Friday market and decision updates succeeded with exact readbacks d13c5be0a12aed50242515e10362cdcd388cdcf2 and 1030aac4df11c82c74a936317db2591b1dbb5f52. This excludes a blanket claim that all repository writes are unavailable; it does not identify the failed scheduled payload or certify the scheduled path.
+
+Process correction: STARTED-only investigation must recover the invocation's own response/error evidence before suggesting it is slow or still running. Report runtime result separately from durable terminal proof. If exact traces are unavailable, name that limitation rather than waiting indefinitely or inferring an active run.
+
+No old receipt is rewritten, no natural closure fabricated, no automatic rerun dispatched, no task cadence/model/prediction/outcome change.
