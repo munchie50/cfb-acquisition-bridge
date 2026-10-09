@@ -121,3 +121,18 @@ The Health invocation must not disable/change schedules or create/dispatch repla
 If terminal persistence is unavailable, report RUN_INCOMPLETE/RUN_FAIL as earned, TERMINAL_PERSISTENCE_UNAVAILABLE and the permitted content-free diagnostic envelope. Missing exact fields must be explicitly UNAVAILABLE, never reconstructed from later successful writes. A fallback file/chat response is not a GitHub terminal receipt, not authoritative operational completion and not RUN_PASS. Do not use another destination or operation to evade a write restriction. Preserve all historical failures.
 
 Integration status: installed operational containment; natural Health success/failure demonstration remains pending. This does not identify or repair the opaque connector rejection and does not change scientific/model/Champion authority or task cadence.
+
+## October 9 accepted-write / prior-version readback reconciliation
+
+Two immediate post-update fetches in user-directed QA failed the expected-content check. For the recovery-index update, the accepted write returned commit 67976b33dabdcf31f4c60bd7f2ca198411d7b15d and blob 256c1e698d21c9aecbbbbb1715c56b20eeb04e12 while the immediate main fetch returned the exact prior blob 1c4ea311ad20e29d351fe2d1c74bdbe86fd4adbb. Subsequent independent exact-commit and main reads matched the planned content/blob. No write was repeated. The other accepted QA append subsequently read back exactly; its first response was not retained, so its initial blob is not claimed.
+
+This establishes a prior-version post-write read, not its caching/replication cause and not the earlier rejected-write cause. A write response alone still never establishes completed readback.
+
+If a permitted update returns a commit/content identity but immediate readback mismatches:
+1. Retain the accepted-write response, proposed content/blob digest and observed readback blob. Stop downstream completion claims. Do not repeat the write merely because the read mismatched.
+2. Use bounded read-only reconciliation: independently fetch the affected file at the returned immutable commit, then independently fetch the same path on the intended current branch. Compare exact expected content/blob, and inspect commit ancestry/current branch if needed. No fallback destination, alternate mutation primitive or restricted-action bypass is authorized.
+3. If both exact-commit and current-branch evidence match, record initial mismatch plus successful independent reconciliation. Only then continue the original completion/closure checks.
+4. If a read is blocked, the commit/file is absent, or the branch still differs after this bounded reconciliation, keep the affected work RUN_INCOMPLETE with the last proved stage. Classify a genuine competing change separately and reconcile from fresh current bytes under the existing serialized SHA rule; never overwrite it or pretend the originally planned readback passed.
+5. An opaque/rejected write without a proved accepted commit continues to follow the existing rejection rules. This guard grants no additional write retry. Natural producer use remains DEMONSTRATION_PENDING; the observed manual exact-commit/current-branch recovery is bounded proof only.
+
+This read-only reconciliation strengthens existing independent readback. No schedule, scientific, Champion or semantic authority change.
