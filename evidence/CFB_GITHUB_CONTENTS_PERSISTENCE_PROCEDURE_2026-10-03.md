@@ -96,3 +96,15 @@ A chat response is reported runtime evidence, not durable repository closure or 
 Motivation: recovered October 9 07:04 response reports two market-update and two terminal-receipt rejections but lacks exact operation names/errors/proposal metadata. Do not reconstruct them from later successful manual writes.
 
 Status: RESPONSE_REQUIREMENT_INSTALLED; natural failure-response demonstration pending. This does not fix the opaque write restriction.
+
+## 2026-10-09 pre-write benchmark envelope validation
+
+For permitted new pregame retrieval-only public benchmark observations, scripts/cfb_benchmark_observation_envelope.py provides a deterministic typed formatter before the first write attempt. It does not invoke a write or qualify source truth. Use --input JSON, --as-of timezone-aware timestamp and --run-id. When this runtime is unavailable, do not claim its validation ran.
+
+The narrow envelope preserves source/game identity, observed and source-scheduled kickoff timestamps, source URL/book label/provenance, retrieval-only time semantics, unknown offer update time, unverified execution status and atomic side-specific spread/total/moneyline quote availability. Missing prices remain null; genuinely not-yet-available selections have null values and explicit availability. Preserve asymmetric side-specific numbers; never create a consensus by coercion.
+
+Duplicate JSON keys/identities, unknown or missing fields, copied outcome/raw-body fields, control characters, malformed timestamps/URLs/numbers and a false verified-execution claim fail closed. It never accepts bookmaker-update timing or post-kickoff captures under this retrieval-only pregame schema; use the separately governed appropriate observation path for other valid classes rather than relabelling them.
+
+Source qualification, exact frozen game mapping, actual kickoff conflicts, current availability, practical execution and betting decisions remain separate gates. Do not discard known facts or observations to satisfy this schema. Canonical append still requires immediate fetch, preserved prior bytes, exact SHA, planned-attempt metadata and independent readback. This helper is not authority to reinterpret/replay restricted rejected content or bypass a write rejection.
+
+Demonstration: thirty boundary/rejection/CLI checks and deterministic replay of five genuinely retained October 9 07:34 observations passed. Input/output retained only under evidence/scheduler_qa/; no new market/decision observation, canonical mutation or scheduled test was made by this replay. Actual production failure cause and natural producer integration remain OPEN.
