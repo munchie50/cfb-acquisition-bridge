@@ -1,0 +1,17 @@
+# V7 controlled failure-path manual closure
+
+test_id: CFB_CANARY_V7_MANUAL_20261009T125151253Z
+boundary: 2026-10-09T12:51:51.253Z
+execution_class: MANUAL_FAST_LOOP
+workload_status: DIAGNOSTIC_INCOMPLETE
+simulation: QA_CONTROLLED_BLOCK_NOT_ACTUAL_CONNECTOR_REJECTION
+candidate_path: evidence/scheduler_qa/CFB_CANARY_V7_MANUAL_20261009T125151253Z_CANDIDATE.md
+candidate_independent_readback_blob: df8ba42251686135e9401b5e23b8832b662a90c9
+closure_issued_after_candidate_readback: true
+production_four_tasks_enabled_unchanged: true
+production_prompts_cadences_timezones_unchanged: true
+production_effect: ZERO
+scientific_effect: NONE
+closure_readback: PENDING_SEPARATE_FETCH
+harness_verdict: PENDING_CLOSURE_READBACK
+acceptance_limit: controlled manual failure handling only; no actual rejection or natural production certification
