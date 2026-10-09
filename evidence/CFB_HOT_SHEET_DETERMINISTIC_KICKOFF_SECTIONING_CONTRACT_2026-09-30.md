@@ -67,3 +67,19 @@ Exactly-once validation now applies across all eight buckets. Known Tuesday/Wedn
 Decision cadence follows the same principle: Tuesday/Wednesday games require a realistic pre-kickoff reconciliation deadline and final practical execution cutoff based on their actual kickoff window. Do not inherit a Thursday-Saturday deadline mechanically.
 
 Scientific/Champion effect: NONE. Presentation/operational control only.
+
+
+## 2026-10-08 exact-time source-conflict QA clarification
+Trigger: independent primary-source recovery for Iowa at Washington found the official schedule/UW preview at 20:00 CT but Iowa game-week notes at 20:05 CT. Research evidence: `evidence/operational/CFB_WEEK6_OCT08_FRIDAY_PRIMARY_SOURCE_CONTEXT_QA.md`, independently read-back blob 6833796673dfd7a063342ec7d14f43aef744c9d3.
+
+Before treating multiple sources as kickoff-time corroboration:
+1. Normalize every observation's explicit date, time and timezone to America/Chicago.
+2. Compare exact timestamps, not merely weekday or section labels. Two times in the same section can still conflict.
+3. If primary sources conflict, preserve each source/time and mark exact-time qualification unresolved. Do not silently round, average, select the later time or claim an exact match.
+4. Where all observations establish the same section, that section may remain established while the exact minute is unresolved. Do not falsely discard known day/section information.
+5. Preserve immutable frozen timestamps. Any later operational presentation change requires separately qualified schedule evidence.
+6. Do not extend an already-governed practical cutoff based solely on a conflicting later timestamp. No missing cutoff is invented by this control.
+7. Sectioning/time QA is independent of final player availability, current market offer qualification and decision completion.
+
+Bounded demonstration: actual Friday source evidence was normalized using Python datetime/ZoneInfo. Five schedule times matched the retained research; the Iowa notes observation differed by exactly +5 minutes. This demonstrates source-conflict detection against this case, not resolution of the conflict or natural production execution.
+Producer-consumer demonstration remains pending at the next real Hot Sheet source qualification. Champion/scientific/decision authority is unchanged.
