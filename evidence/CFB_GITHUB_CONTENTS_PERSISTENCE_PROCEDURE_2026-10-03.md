@@ -67,3 +67,20 @@ Purpose: preserve content-free evidence for future permitted canonical append at
 Integration: Market Monitor already names this persistence procedure as an authority. No recurring task prompt, schedule or enabled state is changed. Runtime use and receipt capture in a natural scheduled production attempt remain unverified.
 
 Scientific effect: NONE. Champion effect: NONE. Production rejection root cause: OPEN.
+
+## 2026-10-09 scheduled-run failure containment and task lifecycle guard
+
+Scope: error containment for existing engine schedules. User-authorized topology remains the four recurring production tasks with their existing cadences; the temporary diagnostic canary and retired duplicates remain disabled.
+
+A repository/tool rejection or an incomplete engine cycle stops the affected operational mutation and triggers truthful terminal reporting under the closure contract. It does not grant the scheduled engine invocation authority to disable itself or another recurring task, alter prompts/cadences, create a replacement task, or initiate another run.
+
+Within scheduled Market Monitor and Evening Availability invocations:
+1. Keep automation-management mutations out of the engine work path. Scheduling/lifecycle changes require an explicit user-directed scheduling or QA instruction; failure alone is not that instruction.
+2. Preserve the failure. Attempt a permitted terminal candidate naming completed work, unresolved surfaces, observed blocker and next safe action; independently read it back before a separate closure. If receipt persistence is unavailable, report TERMINAL_PERSISTENCE_UNAVAILABLE with the permitted observed explanation, never manufacture repository closure.
+3. Continue to respect write restrictions and allowed retry limits. Keeping a schedule enabled does not authorize bypassing restrictions, repeating rejected actions, completing downstream work from missing state, or claiming success.
+4. During user-directed QA, inspect topology independently. Reconcile any drift against current user instructions before correction; never undo an explicit user pause.
+5. Installation/readback is not a natural execution demonstration. This guard remains NATURAL_DEMONSTRATION_PENDING until later applicable scheduled invocations preserve topology and produce honest terminal evidence.
+
+Observed motivating cases: recovered October 8 Evening Availability response says it disabled its recurring task after write rejection; that task was restored. October 9 morning Market Monitor is observed disabled after a STARTED-only cycle. The latter disabling actor/reason is not established by the available metadata; do not assert an identical cause without a trace.
+
+Scientific effect: NONE. Champion effect: NONE. Existing schedule cadence and protected evidence boundaries unchanged.
