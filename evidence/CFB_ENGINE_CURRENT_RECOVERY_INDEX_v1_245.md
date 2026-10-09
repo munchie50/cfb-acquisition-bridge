@@ -1,5 +1,24 @@
 # CFB Engine — Current Recovery Index v1.245
 
+## Current frontier quick-read — 2026-10-08 reconciled QA
+Navigation-only update under existing v1.245 authority. This block supersedes earlier quick-read ACTIVE/NEXT summaries for navigation; detailed acceptance contracts and evidence govern each claim. Historical content below is preserved in full.
+
+- Champion v1.193 and immutable FIRST_FROZEN remain unchanged. Production Routine v5 remains active; Test Routine v6 is candidate/test.
+- Executed independent static QA: repaired S2_K1 consumer guard, 49-row research Hot Sheet section guard, weekly source-state no-op guard all PASS on exact repository bytes. Numerical prediction execution, current-source freshness and production acceptance are separate gates. Read `evidence/scheduler_qa/CFB_TEST_ROUTINE_V6_INDEPENDENT_STRUCTURAL_SWEEP_2026-10-08.md`.
+- Natural scheduled canary existing-file update/readback/two-phase closure PASS is isolated diagnostic proof only. Read `evidence/scheduler_qa/CFB_SCHEDULER_V6_NATURAL_SCHEDULED_UPDATE_ACCEPTANCE_2026-10-08.md`; do not repeat equivalent canaries as production certification.
+- Production OPEN: October 8 morning canonical market update rejected; afternoon dispatch NOT_EVIDENCED; current Hot Sheet freshness pending. Read `evidence/scheduler_qa/CFB_SCHEDULER_V6_PRODUCTION_DISPATCH_VS_PERSISTENCE_GATE_2026-10-08.md` and `evidence/scheduler_qa/CFB_SCHEDULER_V6_REJECTED_PAYLOAD_EVIDENCE_GAP_2026-10-08.md`. Exact rejected payload is not preserved in the recovered receipt; do not fabricate it or use canonical state as a diagnostic target.
+- Source-status inconsistency already has independent source reconciliation research: `evidence/operational/CFB_WEEK6_OCT08_MANUAL_SOURCE_RECONCILIATION_CANDIDATE.md`. It remains research, not an executable quote or production RUN_PASS.
+- Saturday identity/time checks and readable kickoff correction are retained in `evidence/operational/CFB_WEEK6_OCT08_SATURDAY_KICKOFF_PRESENTATION_CORRECTION_V6.md` and its referenced ancestors. Section/time proof does not close decisions.
+- Decision execution debt: `evidence/operational/CFB_WEEK6_OCT08_DECISION_LEDGER_COVERAGE_GAP_V6.md`. Friday-five Thursday-evening and Saturday-morning-seven Friday-evening review obligations require prospective qualified reconciliation; never backfill started games or fabricate cutoffs/EV.
+- Weekly natural candidate now has later acceptance records. Recover `evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-07.md`, `evidence/CFB_QA_S2_K1_TARGET_BASELINE_ACCEPTANCE_2026-10-07.md` and the canonical accepted-source pointer before following September cadence WAIT instructions. Artifact generation, persisted acceptance, pointer readback and S2 execution remain distinct.
+- Recover by full repository path enumeration and explicit dependency links. Date-text filters or guessed filenames alone miss records named OCT08 or UTC timestamps. Filename ordering and highest version remain non-authoritative.
+- Re-read live topology before task mutation: four enabled recurring production tasks, sole primary Market Monitor, temporary canary disabled at last verified readback. Metadata never proves completion.
+- Required natural production proof: RUN_STARTED; applicable canonical state and governed Hot Sheet readbacks; terminal candidate readback; separate RUN_CLOSURE under active contract. Manual/static/canary proof cannot substitute.
+- Execution-evidence ancestry, protected 2025 TEST, S2 study-only restrictions, and all downstream contamination locks remain governed by existing detailed authority.
+
+### Historical recovery summaries and authority
+All content below is the unchanged prior recovery record. Earlier dated frontier language must be reconciled through the current quick-read links and detailed supersession evidence before action.
+
 Current QA status (2026-09-29): **REAL TARGET-SIDE AND v4 SOURCE-CONTEXT CAPABILITIES ACCEPTED / PROSPECTIVE CADENCE WAIT.** Earlier dated statuses are retained as historical evidence; the final 2026-09-29 reconciliation governs the current frontier.
 
 
