@@ -8,6 +8,8 @@ on:
       - 'scripts/test_cfb_hot_sheet_production_section_gate.py'
       - 'scripts/cfb_hot_sheet_frozen_values_audit.py'
       - 'scripts/cfb_week6_production_frozen_gate.py'
+      - 'scripts/cfb_week6_decision_coverage_audit.py'
+      - 'scripts/test_cfb_week6_decision_coverage_audit.py'
       - 'scripts/test_cfb_week6_production_frozen_gate.py'
       - 'evidence/operational/CFB_WEEK6_HOT_SHEET_*.md'
       - '.github/workflows/cfb_qa_hot_sheet_kickoff_section_static_gate.yml'
@@ -29,6 +31,8 @@ jobs:
         run: python scripts/cfb_hot_sheet_kickoff_section_static_gate.py
       - name: Exercise production presentation rejection boundaries
         run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_production_section_gate.py
+      - name: Exercise append-only decision naming coverage boundaries
+        run: python -m unittest discover -s scripts -p test_cfb_week6_decision_coverage_audit.py
       - name: Recover authenticated accepted FIRST_FROZEN archive
         env:
           GH_TOKEN: ${{ github.token }}
