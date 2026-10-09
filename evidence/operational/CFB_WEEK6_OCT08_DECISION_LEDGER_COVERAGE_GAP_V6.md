@@ -55,3 +55,34 @@ Scope limits: this is Week 6 prose-aware naming coverage, not a general semantic
 Correction state: BUILT / EXECUTED / VERIFIED / SOURCE_PERSISTED_READ_BACK. Automatic producer integration: NOT INSTALLED. Natural production decision closure: OPEN. Before integration into a scheduled producer, its supported input contract and output interpretation require separate verification; no production prompt was changed.
 
 Next prospective priority: qualify Friday market and football/availability evidence, then resolve each game under existing decision authority before its practical execution window. A research-only HOLD row or successful coverage checker cannot satisfy that obligation. No canonical ledger/market/Hot Sheet, task, prediction, wager, outcome or Champion mutation.
+
+## October 9 morning correction — review timing versus default decision deadline
+
+Trigger: QA recovered the canonical ledger's Thursday-evening Friday review obligation, but earlier summaries described Friday decision reconciliation broadly as overdue without composing that ledger with active deadline authority.
+
+Root cause: incomplete authority-boundary composition. The coverage helper consumed slate and ledger only. It did not load evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md, whose accepted September 29 addition supplies default reconciliation clocks. A missing exact Thursday-evening review time is not evidence that Friday has no defined default decision deadline.
+
+Correction to prior summaries: the Thursday review day has passed; the v1.237 default Friday decision-reconciliation clock is Friday 13:00 CT, still future at 2026-10-09 07:27:26 CT. The prior missed review obligation is preserved. An earlier game-specific deadline can supersede the default when kickoff, travel, book access, availability or the portfolio plan requires it. No default or scheduled kickoff is a hard final execution cutoff.
+
+Recovered deadline authority: v1.237 blob 1fdecbe7d873876b6dbe2dd18e23d56256f5117a; exact local input matched its Git blob and SHA-256 3f6de41e2788f7cb497f4bee854fff53d0fdeb5266a0ebcc973c39f0db9af156.
+
+Producer correction:
+- scripts/cfb_week6_decision_coverage_audit.py now requires --cadence in addition to --slate, --ledger, --as-of and --week-tuesday.
+- Known active authority fragments must be unique and match recovered v1.237; missing, changed or ambiguous authority fails closed for reconciliation instead of supplying a guessed clock.
+- Existing review-day timing remains separate from default_reconciliation_deadline_ct / default_deadline_status.
+- Saturday-morning deadline remains event-timed: Friday evening availability review, with the contract's last-Friday-Monitor fallback if no evening run applies. No exact hour is invented.
+- effective_game_deadline remains NOT_CERTIFIED_EARLIER_CONSTRAINTS_NOT_EXTRACTED. Hard execution cutoff remains NOT_EXTRACTED.
+- Scope remains the bounded 49-row Week 6 research population and naming coverage; no semantic decision, source freshness, execution opportunity or current recommendation is certified.
+
+Executed demonstration:
+- 18 assertions passed across exact authority bytes, unique active deadline declarations, Friday before/at 13:00 boundaries, equivalent UTC conversion, Saturday before/at 07:00 and 13:00 boundaries, event-timed morning handling, population/naming counts, invalid authority rejection, CLI/direct-result equality and required CLI authority input.
+- Actual as-of 2026-10-09T07:27:26-05:00: 49 unique rows; 3 named Week 6 records; 6 scheduled kickoff boundaries passed; Friday five Thursday review days passed with all five default 13:00 decision clocks FUTURE; Saturday-morning seven remain EVENT_TIMED_NOT_CERTIFIED; Saturday afternoon 17 and evening 14 default clocks FUTURE.
+- No named Friday-five decision records were found. Defaults do not cure that coverage gap or retroactively complete Thursday review.
+- Source update commit e763ceb8e6a615fbdfab1a71c89be84908122487; independent GitHub content readback and executed local source Git blob both fcd95ea762a6857e2eebc8769e2d4398d790c134.
+- This helper is manually executed QA; recurring-task invocation of it is not installed or demonstrated.
+
+Expected versus actual: PASS for distinguishing review-day duty, default decision-reconciliation timing and unqualified execution cutoffs. Prior authoritative ledger and deadlines unchanged; prior evidence retained.
+
+Status: CORRECTED / EXECUTED / READ_BACK / BOUNDED_REPLAY_DEMONSTRATED. This is not Friday decision acceptance, a full production Hot Sheet, a natural scheduled RUN_PASS, Test Routine promotion, or closure of the production persistence defect.
+
+Next: prospective Friday review before the applicable genuine cutoff with qualified observations and earned decision state; retain missing Thursday evidence honestly. Do not manufacture thresholds, calibrated EV, final availability or actual executions.
