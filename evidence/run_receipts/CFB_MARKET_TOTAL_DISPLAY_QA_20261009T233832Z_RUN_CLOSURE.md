@@ -1,0 +1,26 @@
+# Separate RUN_CLOSURE — CFB_MARKET_TOTAL_DISPLAY_QA_20261009T233832Z
+
+Final terminal state:RUN_PASS forbounded manual canonical-market-total display coverage repair.
+Prospective boundary:2026-10-09T23:38:32Z.
+Closure issued ONLY AFTER independentapplicablesurfaceandterminalcandidate readback. Candidate evidence/run_receipts/CFB_MARKET_TOTAL_DISPLAY_QA_20261009T233832Z_TERMINAL_CANDIDATE.md, blob fe866f04bc89bfcbabb1096af675fec01e7aa062, returnedcommit d346ed8aca9e73c9d131a16d61ce0416250f1bde; exactbytesverified atimmutablecommitandmainbeforethisclosure. October5two-phasecontract followed.
+Applicable independentcurrent-main proofs:
+- scripts/cfb_week6_market_total_display_gate.py: 5bbb8b110f1e17295e2a31093c3e083dd9dcf242; PASS
+- scripts/test_cfb_week6_market_total_display_gate.py: 42a00ea0b9521fc2131d51871f594770cecb5b2c; PASS
+- .github/workflows/cfb_qa_hot_sheet_kickoff_section_static_gate.yml: 2f75ae708cf58c8f9c0f44e393e5162547868f36; PASS
+- evidence/scheduler_qa/CFB_WEEK6_CANONICAL_MARKET_TOTAL_DISPLAY_GATE_2026-10-09.md: 10939df20c97ada2266216b5c905d5f5217120de; PASS
+- evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md: 3f82f1ad402007a3ac0d0b9ba7be8b525ee1af8c; PASS
+- evidence/CFB_ENGINE_HOLISTIC_SYSTEM_QA_MAP_2026-09-30.md: 1d9e31d3bb050e43557493eb4028bc1311ef51e8; PASS
+- evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md: 8976e1ed250ae75f91033615b560c3fa5b14f135; PASS
+- evidence/run_receipts/CFB_MARKET_TOTAL_DISPLAY_QA_20261009T233832Z_RUN_STARTED.md: 87fe6228c45a90de6a1aaf8df80e014cc8247a24; PASS
+- evidence/operational/CFB_MARKET_MONITOR_STATE.md: bbc222ec291ba1faff3f083f6da132d8e8214cae; PASS
+- evidence/operational/CFB_DECISION_WAIT_LEDGER.md: fcbdc7f48e8518dc6826d0d39c06d864da1a12e9; PASS
+- evidence/operational/CFB_EXECUTION_LEDGER.md: cce489b65a62cb6bfefbfb167318aa7a2584a59f; PASS
+- evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md: 6ae881224fa18b65a4408fa807a2582aebccf6fd; PASS
+- evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md: eaeded90f81dd1190e0ef77fc52a448f73ea5dca; PASS
+- evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1301CT.md: 0d99c7c2aa1cebbce35e726992c38fa7e6c43083; PASS
+Canonicalappendcommits:contract 6bd20ea4bfdcc78a8bc6c86663baa4a30ed05d29;map 158598ab4a5ff339027384213314f59c7a55a985;recovery 7e27cf88637e09272ac8cb5a70527d00abf655fb; freshSHA/preservedpriorbytes/proposalmetadata/returnedcommitandmainreadbacks verified. Metadataretainedincandidate.
+CI:{"run":38005583878,"job":114073492883,"head_sha":"ee4b9f5a7a4b80fd4d25c814a5a82d5ba5490330","status":"completed","conclusion":"success","logs_independently_retrieved":true,"tests":51}; actual retrievedlogs51tests,current49rows/147numericfields/49directions/44totaldisplaychecksPASS. Originalbad13:01endpointrejectedandcorrected15:38passes. No manualdispatch ornewproductiontask.
+Task proof:{"enabled":4,"inventory":11,"fields_unchanged":66,"baseline":"last independently verified historical-card QA task inventory"}.
+Limitsremain:total-numberdisplayonlyforqualifiedOct9cycle/schema;43modeled+Nebraska,6earlier-weekrowsuncovered. Otherquoteattributes/sourcefreshness/decision/executiongates separate; unsupportedfuturecycle/schemafailsclosedpendingqualification. PostwriteCIisnotnaturalproduceruse orprospectiveclosure. Source retrievalstill13:02CT,no freshquote/newbet/inventedthreshold.
+Currentcanonicalmarket/decision/execution/scorecard/HotSheetunchanged. Historicalreceiptssnapshots andinitialfailuregapsnotrewritten/upgraded. Rawclock403/1010cause,wagerpreexecution/causallinks,settlementCLVandbroadernaturalenforcementdebtscarried. Tonight19:30–20:30CTfutureatprospectiveboundary;no guaranteeofexecution/success.
+Scientific/Champion effect:NONE. ProductionRoutinev5,Championv1.193/FIRST_FROZENv1.208,v6candidate,S2study-onlyand2025TESTunopenedunchanged.
