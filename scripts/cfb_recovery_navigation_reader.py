@@ -25,9 +25,14 @@ def clock(value):
 
 def read(text, as_of):
     now=clock(as_of)
-    markers=re.findall(r'^```'+TAG+r'\s*$',text,re.M)
-    bodies=re.findall(r'^```'+TAG+r'\s*\n(.*?)^```\s*$',text,re.M|re.S)
+    markers=re.findall(r'^```'+TAG+r'[ \t]*\r?$',text,re.M)
+    matches=list(re.finditer(r'^```'+TAG+r'[ \t]*\r?\n(.*?)^```[ \t]*\r?$',text,re.M|re.S))
+    bodies=[match.group(1) for match in matches]
     if not bodies or len(bodies)!=len(markers): raise ValueError('missing or incomplete explicit navigation checkpoint')
+    # The writer must reconcile every later append into a new checkpoint.
+    # Never guess whether uncheckpointed prose is material or still current.
+    if text[matches[-1].end():].strip():
+        raise ValueError('uncheckpointed trailing content; inspect complete index and append a reconciled checkpoint')
     prior=None
     records=[]
     for body in bodies:
@@ -60,6 +65,7 @@ def read(text, as_of):
             'limitations':['Recover full detailed authority; verify each applicable pointer independently before reliance.',
                            'Declared checkpoint clock orders navigation records only; claims are not certified.',
                            'Later material state changes require reconciliation; this is explicitly as-of state, not a live feed.',
+                           'Trailing content after the last checkpoint is rejected; this does not certify intervening claims.',
                            'Old untagged summaries are historical context, not reader-selected current checkpoints.']}
 
 def main():
@@ -70,3 +76,4 @@ def main():
     print(json.dumps(read(a.index.read_text(),a.as_of),indent=2))
 
 if __name__=='__main__':main()
+
