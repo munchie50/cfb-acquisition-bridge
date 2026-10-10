@@ -13,7 +13,8 @@ def blob(text):
     return hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()
 
 def audit(sheet, ledger):
-    refs=re.findall(r'^Canonical inputs: market [0-9a-f]{40}; decision ([0-9a-f]{40})\.$',sheet,re.M)
+    # A qualified execution reference is optional metadata, not decision authority.
+    refs=re.findall(r'^Canonical inputs: market [0-9a-f]{40}; decision ([0-9a-f]{40})(?:; execution [0-9a-f]{40})?\.$',sheet,re.M)
     if len(refs)!=1:
         raise ValueError('unique canonical decision binding required')
     if refs[0]!=blob(ledger):
