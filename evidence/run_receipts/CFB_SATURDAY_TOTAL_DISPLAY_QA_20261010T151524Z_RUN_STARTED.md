@@ -1,0 +1,3 @@
+# RUN_STARTED — CFB_SATURDAY_TOTAL_DISPLAY_QA_20261010T151524Z
+
+Manual independent Test Routine presentation QA, actual measured start2026-10-10T15:15:24Z. Scope separatelyqualify knownSaturday07:03market schema and enforce actualcurrentselectedsheet in existingfullQA. CurrentdatedFriday-only totalhelper rejectsSaturdaycycle; latestgreenrun selectedFridaybaseline afterrecoveryupdate, notnewSaturdaynumbercheck. No attemptto recreate/retry blocked9AMQAartifact/terminalwrites. No taskdispatch/mutation, market/decision/wager/modelchange. Two-phase manualclosure required; source/display checksnotbookverification.
