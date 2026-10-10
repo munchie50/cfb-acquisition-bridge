@@ -749,3 +749,119 @@ Original receipts and all earlier bytes preserved. Manual repair is prospective;
   ]
 }
 ```
+
+
+## Explicit current-view navigation selector
+
+Exactly one CURRENT_HOT_SHEET pointer identifies the current view; selection does not certify claims. Code14localregressions passed; independent existingworkflow integration is underway, not yet certified here.
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-10T02:21:39Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Production v5 / Champion v1.193 / immutable FIRST_FROZEN v1.208 unchanged; v6 remains candidate, S2 study-only, 2025 TEST unopened.",
+    "Latest evening canonical20:22CT state: App-10orbetter/UMass+4.5orbetter max-115 remain conditional; FresnoWAIT because retained public+6.5 below+7minimum. Actual+7orbetter max-115 required by recordedhardSaturday20:30CTcutoff, otherwisePASS; earlierpracticaltriplimit remainsbinding.35otherSaturday sides/all38totals PASS; Nebraskaunmodeled.",
+    "ActualCaesars offers, actualbets and completefinalavailability remainunverified. Evening publicobservations are retainedscheduled evidence, not thismanualQA newretrieval; sourceweather/availability claims not independentlycertified here. Prior dinnerRUN_INCOMPLETE unchanged.",
+    "Latest saved49weekly presentation is manual2114CT evening view with2conditional/1WAIT/35PASS Saturday sides. Frozen49/147/49 preserved; fulltable stillapproximately13:02CT retainedquotes; laterobservations separatelylabelled. Older2012sheet historical.",
+    "Recovery tail guard remains installed/tested; latest full38card is not hidden behind oldercheckpoint. New full-review scope/explicitclock helper16tests and actual narrowreport rejection/full38coveragePASS independently verified in existing GitHubrun38011828740/job114093326128. Structuralcoverage is not football/source/availability/betting acceptance.",
+    "Four enabledproduction tasks freshlyverified. NaturalEvening20:19:34CTwithinwindow and20:23:45CTclosure independentlyrecovered; closureclaimedRUNPASS but retainedHotSheet conflictswithFresnoWAIT ledger. IndependentQAcurrentpresentation RUN_INCOMPLETE; originalreceipt unchanged. Manualrepair doesnotretroactivelyupgrade scheduledrun. No taskmutation/dispatch.",
+    "Original11actual wagers/$33.45 and recorded7WIN/4LOSS grades remain separate execution evidence; grades not paid settlement/profit. Baylor LIVE separated; receipt timezone/preexecution causal links/budget/CLV/settlement remain incomplete.",
+    "Newcurrentdecisionbindinghelper8localchecks/realstale-sheet rejection, manual38statechecks and49section/frozen/43+1totalchecksPASS. Activecontract/candidate/holisticintegrated. Naturalcorrectedproduceruse andbook/source/executionqualification remainOPEN; no independentCIclaim fornewbindinghelper.",
+    "This checkpoint is as-of navigation only. Independently recover applicable evidence, reconcile later changes, and append a new final tagged checkpoint with future material index updates. All prior bytes retained."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261009T180108Z_RUN_CLOSURE.md",
+      "blob": "0aef35d8204a5c48c142ca8724cf33c0401c297a",
+      "purpose": "independently recover natural afternoon closure; do not close morning failure"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261009T221353Z_RUN_CLOSURE.md",
+      "blob": "f8d76e548372599b0186eda75b41362f400d7e49",
+      "purpose": "independently recover natural Health success and retained older coverage gaps"
+    },
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "742e7801332564da2869a3be969b512004d11b26",
+      "purpose": "canonical market as-of checkpoint; compare freshly fetched bytes before current reliance"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "414655435785070be2fd7531e859799863e9a082",
+      "purpose": "current decision as-of checkpoint; read complete appended history"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "cce489b65a62cb6bfefbfb167318aa7a2584a59f",
+      "purpose": "eleven original actual wagers, grades and incomplete historical links as-of checkpoint"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md",
+      "blob": "eaeded90f81dd1190e0ef77fc52a448f73ea5dca",
+      "purpose": "historical baseline and approximately13:02 quotes; not latest decision presentation"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md",
+      "blob": "63ec14c167dfb4c64fb845ebd862f6aac588e487",
+      "purpose": "active default/earlier practical deadline authority with full-scope clarification; natural consumer pending"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_WEEK6_CANONICAL_MARKET_TOTAL_DISPLAY_GATE_2026-10-09.md",
+      "blob": "10939df20c97ada2266216b5c905d5f5217120de",
+      "purpose": "51-test bounded QA coverage; natural use and broader quote-fields pending"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_FULL_SATURDAY_DINNER_REVIEW_2026-10-09.md",
+      "blob": "020a377974b8b04edcc607bf0180da9c0666637c",
+      "purpose": "current full 38-game dinner review and conditional Beta card; actual Caesars unverified"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_FULL_SATURDAY_DINNER_REVIEW_20261010T004642Z_RUN_CLOSURE.md",
+      "blob": "65e659e61907e0de77f44a28a8cd19561914e9bc",
+      "purpose": "full review remains RUN_INCOMPLETE for actual execution/final availability readiness"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_DINNER_RECOVERY_TRAILING_UPDATE_GUARD_2026-10-09.md",
+      "blob": "b7c32b1142b37e1157c479641934537d9e8dbe3d",
+      "purpose": "recovery trailing-update guard tested on authentic full-index failure; independent QA limits"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_FULL_SATURDAY_SCOPE_AND_TRIP_DEADLINE_GUARD_2026-10-09.md",
+      "blob": "af73e23d60731aeff36bcb915252a240378a36a0",
+      "purpose": "full review scope and explicit earlier trip-clock guard built/tested/independent CI; actual source/execution not certified"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_2012CT.md",
+      "blob": "1575bdc9e386d8cced3a223a875e2d1a81f7f00c",
+      "purpose": "historical2012decisionview; supersededFresno status, not latestpublication"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_HOT_SHEET_CURRENT_DECISION_PROJECTION_2026-10-09.md",
+      "blob": "96f58016f715a748bece97e91370ad63829f336a",
+      "purpose": "manual saved-decision projection QA and independent CI proof boundaries"
+    },
+    {
+      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
+      "blob": "6e020ebf07ef08555d8df366e59d126d3184e260",
+      "purpose": "active current-decision display clarification; natural producer use pending"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_2114CT.md",
+      "blob": "db109dbee1a509c894a2eceef153e9812b96b4a3",
+      "purpose": "CURRENT_HOT_SHEET: latest governed manual evening view; source/execution limitations retained"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_OCT09_EVENING_TERMINAL_AND_CURRENT_DISPLAY_RECONCILIATION.md",
+      "blob": "d64c6b465f920a58d7eb018378404557b6cec2b7",
+      "purpose": "naturalclaimedPASS versus independentlyverifiedstaledisplay; manualcorrection proofboundaries"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_EVENING_AVAILABILITY_20261010T011934Z_RUN_CLOSURE.md",
+      "blob": "74b9ab3c8563af9c871edcd68ca711a0b223a036",
+      "purpose": "originalnaturaleveningclosure preserved; notunqualifiedQAacceptance"
+    }
+  ]
+}
+```
