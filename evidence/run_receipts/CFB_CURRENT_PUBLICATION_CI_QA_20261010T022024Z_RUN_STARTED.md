@@ -1,0 +1,3 @@
+# RUN_STARTED — CFB_CURRENT_PUBLICATION_CI_QA_20261010T022024Z
+
+Manual user-directed Test Routine QA, actual measured boundary 2026-10-10T02:20:24Z. Extend existing HotSheetQA to independently consume explicit current publication pointer and current canonical ledger, separately from dated historical validation. Existing helper369befcecef4e81f08536e36497e941df03c5680 was locally exercised but not wired into CI. Scope code/regressions/existingworkflow/current recovery navigation/control integration; no new engine dispatch/task, market/decision/wager/model change. Candidate/readback/separateclosure required; RUN_STARTED notcompletion.
