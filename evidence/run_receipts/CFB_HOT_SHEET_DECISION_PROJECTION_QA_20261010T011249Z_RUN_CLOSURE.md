@@ -1,0 +1,5 @@
+# Separate run closure — CFB_HOT_SHEET_DECISION_PROJECTION_QA_20261010T011249Z
+
+RUN_PASS — bounded manual saved-decision Hot Sheet presentation/QA only. Independently fetched terminal candidate at immutable commit33225faf6b9f3425039fbe0da0a2bb6e9158fa09, blob8b9c5e35e7fbb323084b9f7cb4ef54295af0cdef; exact content matches. Candidate and closure are separate persisted artifacts. Exact code/sheet/workflow/report/threecontrol/index readbacks,11regression checks, fourauthenticprewrite gates, independent GitHub38012433466/job114095198628 SUCCESS and navigation replay are retained in candidate and QA report. RUN_STARTED independently recovered. All prior control/index bytes preserved.
+
+Actual Caesars offers/finalavailability remain UNVERIFIED; retained quotes not refreshed. Prior dinner RUN_INCOMPLETE unchanged. Natural scheduled producer enforcement and older incomplete cycles remain OPEN. No taskmutation/newdispatch/newwager/modelchange. User now reports being at Caesars; this update does not establish actual counter prices. Separate closure must itself be independently read back before reporting closure success.
