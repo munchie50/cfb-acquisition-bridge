@@ -257,3 +257,53 @@ Run: CFB_DINNER_CARD_REVIEW_20261010T003803Z; manual user-directed review. User 
 - Air Force @ Northern Illinois: PASS / NO BET FOR THIS DINNER WINDOW. Frozen -16.1 / 48.4; saved benchmark -7.5 / 46.5. Starting QB Szarka confirmed season-ending injury in report of team announcement; replacement offense not sufficiently assessed to earn a cutoff.
 All four: acceptable line/maximum price NOT_ESTABLISHED; decision reconciliation satisfied now; current dinner execution window CLOSED by PASS. BET NOW singles/parlays NONE; no execution inferred; no separate trip justified. This is no-bet at the current practical window, not a price-quality/model-quality verdict. A later genuinely material qualified change requires a new prospective decision before any independently established execution window; price movement alone cannot reopen this PASS.
 Full provenance/limitations: evidence/operational/CFB_WEEK6_DINNER_EXECUTION_CARD_2026-10-09.md. Other 27 later-window rows not individually reconciled in this manual four-candidate scope. Saturday-morning seven retain earlier PASS; Nebraska remains UNMODELED. Production sheet and frozen authority unchanged.
+
+
+## October 9 19:53:50 CT — full Saturday dinner review
+
+Run CFB_FULL_SATURDAY_DINNER_REVIEW_20261010T004642Z; prospective start 19:46:42 CT. Complete 38 modeled Saturday identities, side+total separately, plus Nebraska excluded. Evidence/card: evidence/operational/CFB_WEEK6_FULL_SATURDAY_DINNER_REVIEW_2026-10-09.md (report commit a6eace644007f2d1c001ae027fcd65ff50447602). Its source URL inventory may include navigation links; only specifically evaluated football evidence supports decisions, not presence of a URL.
+
+Decision boundary 2026-10-10T00:53:50Z. Three qualitative controlled-Beta CONDITIONAL BET NOW side recommendations: App State -10 or better; UMass +4.5 or better; Fresno State +7 or better; each maximum -115, actual Caesars line/price must meet cutoff during dinner visit before kickoff. Retained ESPN/DK benchmark capture interval 00:46:42Z–00:53:50Z, source offer-update unknown, execution unverified. No bet placed, calibrated EV, cover probabilities or numerical injury adjustments invented. Champion/FIRST_FROZEN unchanged.
+
+| Game | Side verdict | Total verdict |
+|---|---|---|
+| Arizona @ West Virginia | PASS | PASS |
+| Texas A&M @ Missouri | PASS | PASS |
+| UCF @ Oklahoma State | PASS | PASS |
+| North Carolina @ Pittsburgh | PASS | PASS |
+| Wake Forest @ NC State | PASS | PASS |
+| Sacramento State @ Bowling Green | PASS | PASS |
+| South Carolina @ Florida | PASS | PASS |
+| Old Dominion @ App State | BET NOW CONDITIONAL — CONTROLLED BETA | PASS |
+| Miami (OH) @ Massachusetts | BET NOW CONDITIONAL — CONTROLLED BETA | PASS |
+| Texas vs Oklahoma | PASS | PASS |
+| UCLA @ Oregon | PASS | PASS |
+| Stanford @ Notre Dame | PASS | PASS |
+| Ole Miss @ Vanderbilt | PASS | PASS |
+| Illinois @ Michigan State | PASS | PASS |
+| Houston @ Kansas State | PASS | PASS |
+| Eastern Michigan @ Akron | PASS | PASS |
+| Duke @ Georgia Tech | PASS | PASS |
+| Central Michigan @ Ohio | PASS | PASS |
+| Charlotte @ North Texas | PASS | PASS |
+| Buffalo @ Toledo | PASS | PASS |
+| Kent State @ Western Michigan | PASS | PASS |
+| Rice @ East Carolina | PASS | PASS |
+| Maryland @ Ohio State | PASS | PASS |
+| Tennessee @ Arkansas | PASS | PASS |
+| San Diego State @ Oregon State | PASS | PASS |
+| Nevada @ UTEP | PASS | PASS |
+| North Dakota State @ UNLV | PASS | PASS |
+| LSU @ Kentucky | PASS | PASS |
+| Air Force @ Northern Illinois | PASS | PASS |
+| Syracuse @ Virginia | PASS | PASS |
+| James Madison @ Georgia Southern | PASS | PASS |
+| Georgia @ Alabama | PASS | PASS |
+| Louisiana @ Louisiana Tech | PASS | PASS |
+| USC @ Penn State | PASS | PASS |
+| Minnesota @ Purdue | PASS | PASS |
+| Kansas @ Utah | PASS | PASS |
+| Hawai'i @ Arizona State | PASS | PASS |
+| Boise State @ Fresno State | BET NOW CONDITIONAL — CONTROLLED BETA | PASS |
+
+Nebraska unmodeled: PASS/no Champion-derived wager. No WAIT drifts. Earlier morning seven and dinner four PASS preserved. Newly reviewed App/UMass/Fresno were unresolved rows; qualitative football/current availability corroboration, not movement alone. Other35 sides and all38 totals PASS for the report's row-specific reasons. Kentucky excluded after final injury-report coverage. Rice/ECU time prospectively noon CT. Full final-team availability coverage incomplete; this is controlled Beta, not production certification. Earlier four-only RUN_INCOMPLETE unchanged. Scheduling/prompt enforcement repair and natural execution proof remain pending.
