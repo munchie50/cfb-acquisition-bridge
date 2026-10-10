@@ -1,0 +1,3 @@
+# Full-review scope/trip guard QA — RUN_STARTED
+
+Run CFB_FULL_REVIEW_SCOPE_TRIP_GUARD_QA_20261010T010437Z, manual Test Routine v6 candidate. Prospective boundary 20261010T010437Z UTC. Reuse retained pregame report/baseline without new source capture: build/test read-only exact-scope and explicit earlier-trip-clock guards; integrate existing GitHub QA and procedural candidate, read back and two-phase close. No new task/cadence/dispatch; no wager, quote, decision/model change. Test earlier-deadline logic without inventing actual dinner cutoff. Existing Evening window currently active; no lifecycle/prompt mutation of active tasks. Natural scheduler/producer use remains separate.
