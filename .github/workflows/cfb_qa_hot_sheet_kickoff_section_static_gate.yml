@@ -15,6 +15,9 @@ on:
       - 'scripts/test_cfb_week6_saturday_total_display_gate.py'
       - 'scripts/test_cfb_week6_afternoon_total_display_gate.py'
       - 'scripts/cfb_hot_sheet_current_decision_binding_gate.py'
+      - 'scripts/cfb_hot_sheet_execution_aware_decision_gate.py'
+      - 'scripts/test_cfb_hot_sheet_execution_aware_decision_gate.py'
+      - 'evidence/operational/CFB_EXECUTION_LEDGER.md'
       - 'scripts/test_cfb_hot_sheet_current_decision_binding_gate.py'
       - 'evidence/operational/CFB_DECISION_WAIT_LEDGER.md'
       - 'evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v*.md'
@@ -68,6 +71,10 @@ jobs:
         run: |
           python scripts/cfb_hot_sheet_current_decision_binding_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md --current-ledger evidence/operational/CFB_DECISION_WAIT_LEDGER.md > "$RUNNER_TEMP/cfb_current_sheet_binding.json"
           cat "$RUNNER_TEMP/cfb_current_sheet_binding.json"
+      - name: Exercise execution-aware current decision rejection boundaries
+        run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_execution_aware_decision_gate.py
+      - name: Validate current execution-aware decision and ticket projection
+        run: python scripts/cfb_hot_sheet_execution_aware_decision_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --baseline evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md
       - name: Validate retained historical dinner decision Hot Sheet projection
         run: python scripts/cfb_hot_sheet_decision_projection_gate.py --baseline evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md --review evidence/operational/CFB_WEEK6_FULL_SATURDAY_DINNER_REVIEW_2026-10-09.md --sheet evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_2012CT.md
       - name: Recover authenticated accepted FIRST_FROZEN archive
