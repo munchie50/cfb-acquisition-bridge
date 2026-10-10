@@ -354,3 +354,9 @@ This explicitly dated navigation checkpoint supersedes earlier morning navigatio
   ]
 }
 ```
+
+
+## October 9 dinner execution-card reconciliation — 19:42:26 CT
+Later material update after 19:19:31 CT navigation checkpoint: user needs Saturday bets tonight. Four named candidates now prospectively PASS / NO BET FOR THIS DINNER WINDOW; no threshold or bet manufactured, no execution recorded.
+Recover evidence/operational/CFB_WEEK6_DINNER_EXECUTION_CARD_2026-10-09.md, blob 06011f4cbe6dbe1086b2be9182bd75db482e3b78, for exact scope, sourced matchup/availability findings and Caesars retrieval limits. Canonical evidence/operational/CFB_DECISION_WAIT_LEDGER.md now blob 733338939a542bd16e5b18edd9e0be90b4179b79; recover this newer decision state rather than older navigation pointer. Original production Hot Sheet remains a retained 13:02 benchmark/display snapshot; it has not been refreshed by this manual card and its four older INCONCLUSIVE rows are superseded by the current scoped ledger decision.
+Run CFB_DINNER_CARD_REVIEW_20261010T003803Z: manual downstream review, not scheduled Evening Availability certification. Other 27 later-window modeled rows not individually reviewed in this scope; Saturday-morning seven retain earlier PASS, Nebraska UNMODELED. Planned-trip enforcement/task changes remain unfinished. Champion/FIRST_FROZEN, task controls, wagers and outcomes unchanged.
