@@ -317,3 +317,15 @@ Run: CFB_EVENING_AVAILABILITY_20261010T011934Z. Downstream of the persisted 19:5
 - Georgia @ Alabama side and total: PASS remains. Hurricane risk is material, and the game remains scheduled; no raw weather/market disagreement earns a wager.
 - Remaining 35 Saturday sides and all 38 Saturday totals remain PASS as persisted in the full dinner review. No new WAIT is created from silence or raw disagreement.
 Portfolio/execution: no wager is established by this run. The three conditional singles are the only potential card and should share one practical trip; no third trip is justified. CFB_EXECUTION_LEDGER remains unchanged. Champion/FIRST_FROZEN unchanged.
+
+
+## Saturday scheduled decision refresh — 2026-10-10 07:08 CT
+Run: CFB_MARKET_MONITOR_20261010T120036Z. Linked Champion snapshot: accepted Champion v1.193 / FIRST_FROZEN v1.208. Qualified observation: canonical market append at 2026-10-10 07:03 CT, CBS Sports mixed-book public benchmark. Actual Caesars availability/executability remains UNVERIFIED; no execution is inferred.
+
+- Appalachian State side: BET NOW CONDITIONAL — CONTROLLED BETA. Current public Appalachian State -9.5 (-115) qualifies against the established -10 or better, maximum -115 limit. Accept only an independently verified actual Caesars offer at -10 or better and no worse than -115. Reconciliation deadline is satisfied; practical final execution cutoff 11:00 CT for the 12:00 CT kickoff. Worse line/price => PASS; do not chase.
+- Massachusetts side: BET NOW CONDITIONAL — CONTROLLED BETA. Current public Massachusetts +4.5 (-108) qualifies against the established +4.5 or better, maximum -115 limit. Accept only an independently verified actual Caesars offer at +4.5 or better and no worse than -115. Reconciliation deadline is satisfied; practical final execution cutoff 12:00 CT for the 13:00 CT kickoff. Worse line/price => PASS; do not chase.
+- Fresno State side: WAIT resolves prospectively to BET NOW CONDITIONAL — CONTROLLED BETA. Current public Fresno State +7 (-110) reaches the established +7 or better, maximum -115 limit; the prior +6.5 WAIT is preserved as history. Accept only an independently verified actual Caesars offer at +7 or better and no worse than -115. Practical final execution cutoff remains 20:30 CT for the 21:30 CT kickoff. Worse line/price => PASS; do not chase.
+- Remaining 35 Saturday sides and all 38 Saturday totals remain PASS. Fresh board movement alone is an investigation flag, not calibrated EV, and does not reopen resolved PASS decisions.
+- Nebraska remains UNMODELED / no Champion-relative wager manufactured.
+
+Portfolio/execution window: the three conditional singles are the only potential card. Prefer one combined practical trip before the earliest 11:00 CT cutoff; a later Fresno-only trip is not justified absent a documented compelling reason and a qualifying actual offer. No third trip. No wager is established by this refresh; CFB_EXECUTION_LEDGER remains unchanged. Champion/FIRST_FROZEN remains unchanged.
