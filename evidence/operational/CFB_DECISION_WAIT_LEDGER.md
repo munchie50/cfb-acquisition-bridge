@@ -307,3 +307,13 @@ Decision boundary 2026-10-10T00:53:50Z. Three qualitative controlled-Beta CONDIT
 | Boise State @ Fresno State | BET NOW CONDITIONAL — CONTROLLED BETA | PASS |
 
 Nebraska unmodeled: PASS/no Champion-derived wager. No WAIT drifts. Earlier morning seven and dinner four PASS preserved. Newly reviewed App/UMass/Fresno were unresolved rows; qualitative football/current availability corroboration, not movement alone. Other35 sides and all38 totals PASS for the report's row-specific reasons. Kentucky excluded after final injury-report coverage. Rice/ECU time prospectively noon CT. Full final-team availability coverage incomplete; this is controlled Beta, not production certification. Earlier four-only RUN_INCOMPLETE unchanged. Scheduling/prompt enforcement repair and natural execution proof remain pending.
+
+
+## Friday scheduled evening decision reconciliation — 2026-10-09 20:22 CT
+Run: CFB_EVENING_AVAILABILITY_20261010T011934Z. Downstream of the persisted 19:53 CT full Saturday dinner review; no competing baseline.
+- Appalachian State side: BET NOW CONDITIONAL remains. Accept only Appalachian State -10 or better at max -115. Fresh public -10 benchmark has no verified price/book execution; actual Caesars offer must qualify. Execution window: one combined trip tonight or Saturday before practical pre-kickoff cutoff; do not chase -10.5 or worse.
+- Massachusetts side: BET NOW CONDITIONAL remains. Accept only Massachusetts +4.5 or better at max -115. No newer qualified quote was recovered; actual Caesars offer must qualify. Same combined-trip rule; worse than +4.5 is PASS.
+- Fresno State side: current public Fresno +6.5 does not meet the established +7 or better / max -115 threshold. State at this observed number: WAIT for actual Caesars comparison, with hard final execution cutoff 20:30 CT Saturday for the 21:30 CT kickoff. If +7 or better at max -115 is not available by cutoff, PASS; never chase +6.5.
+- Georgia @ Alabama side and total: PASS remains. Hurricane risk is material, and the game remains scheduled; no raw weather/market disagreement earns a wager.
+- Remaining 35 Saturday sides and all 38 Saturday totals remain PASS as persisted in the full dinner review. No new WAIT is created from silence or raw disagreement.
+Portfolio/execution: no wager is established by this run. The three conditional singles are the only potential card and should share one practical trip; no third trip is justified. CFB_EXECUTION_LEDGER remains unchanged. Champion/FIRST_FROZEN unchanged.
