@@ -12,6 +12,8 @@ on:
       - 'scripts/test_cfb_week6_decision_coverage_audit.py'
       - 'scripts/cfb_week6_market_total_display_gate.py'
       - 'scripts/test_cfb_week6_market_total_display_gate.py'
+      - 'scripts/cfb_recovery_navigation_reader.py'
+      - 'scripts/test_cfb_recovery_navigation_reader.py'
       - 'scripts/test_cfb_week6_production_frozen_gate.py'
       - 'evidence/operational/CFB_WEEK6_HOT_SHEET_*.md'
       - '.github/workflows/cfb_qa_hot_sheet_kickoff_section_static_gate.yml'
@@ -37,6 +39,8 @@ jobs:
         run: python -m unittest discover -s scripts -p test_cfb_week6_decision_coverage_audit.py
       - name: Exercise declared canonical market-total display boundaries
         run: python -m unittest discover -s scripts -p test_cfb_week6_market_total_display_gate.py
+      - name: Exercise explicit recovery navigation boundaries
+        run: python -m unittest discover -s scripts -p test_cfb_recovery_navigation_reader.py
       - name: Recover authenticated accepted FIRST_FROZEN archive
         env:
           GH_TOKEN: ${{ github.token }}
