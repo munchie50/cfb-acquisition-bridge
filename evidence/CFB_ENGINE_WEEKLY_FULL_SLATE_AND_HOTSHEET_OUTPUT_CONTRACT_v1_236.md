@@ -64,3 +64,7 @@ After the chronological NEXT-UP sections, retain a PRIORITY WATCHLIST for the mo
 Use the label **Engine Prediction (Frozen)** instead of ambiguous shorthand such as **Frozen Engine** where practical. This means the Engine's locked fair prediction, never the first/current sportsbook line.
 
 This presentation change must not change Hot Sheet ownership, model inputs, prediction values, market chronology, or scientific authority.
+
+
+## October10 user-approved consensus / Caesars comparison
+Apply evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md prospectively. Prefer a qualified multi-book consensus as market benchmark; keep Caesars actual offer and accepted Engine Prediction (Frozen) independent. Render consensus qualification/count/dispersion/time and paired Caesars line/price/execution status separately within the governed market cell or compatible per-game view. Single/mixed-book fallback observations remain honestly labelled, never renamed consensus. Unknown consensus/Caesars data must remain UNAVAILABLE/UNVERIFIED. Existing limits, maturity, practical deadlines, no-chase, coverage and source/frozen binding remain governing. Adoption changes no current pick, frozen value or historical observation; actual acquisition/producer demonstration is separate.
