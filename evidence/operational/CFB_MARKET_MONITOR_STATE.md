@@ -366,3 +366,56 @@ Run: CFB_EVENING_AVAILABILITY_20261010T011934Z. Class: INTERMEDIATE_PUBLIC_BENCH
 - Miami (OH) @ Massachusetts: no sufficiently newer qualified public quote was recovered in this cycle. The prior qualified dinner observation UMass +4.5 (-108) remains the latest canonical benchmark; actual Caesars availability is unverified.
 - Georgia @ Alabama: authoritative public reporting at this boundary says the 18:30 CT game remains scheduled despite Hurricane Isaias; hazardous weather remains material. Sources: https://apnews.com/article/4e6bc73acd34bac5ecfaa829c54b467e and https://rolltide.com/sports/football/schedule . Existing side/total PASS remains supported; no market or execution inference.
 No observation altered Champion/FIRST_FROZEN state.
+
+
+## Saturday scheduled board refresh — 2026-10-10 07:03 CT
+Run: CFB_MARKET_MONITOR_20261010T120036Z. Class: INTERMEDIATE_PUBLIC_BENCHMARK. Source: CBS Sports Week 6 odds board, retrieved 2026-10-10 approximately 07:03 CT: https://www.cbssports.com/college-football/odds/ALL/2026/regular/week-6/ . The board displays mixed-book current quotes; retrieval time is not bookmaker offer time. Actual Caesars availability/executability is UNVERIFIED. Prices are recorded exactly where recovered; paired total endpoints can differ by side/book. No earlier observation is overwritten and no observation alters Champion/FIRST_FROZEN state.
+
+Saturday morning:
+- Arizona @ West Virginia: Arizona -3.5 (-105), ML -160; West Virginia +3.5 (-108), ML +145; displayed total 60.5/61.5.
+- Texas A&M @ Missouri: Texas A&M +3.5 (-110), ML +150; Missouri -3.5 (-105), ML -167; total 49.5.
+- UCF @ Oklahoma State: UCF +10.5 (-108), ML +350; Oklahoma State -10.5 (-105), ML -385; displayed total 53.5/54.5.
+- North Carolina @ Pittsburgh: North Carolina +3.5 (-104), ML +160; Pittsburgh -3.5 (-110), ML -175; displayed total 46.5/47.5.
+- Wake Forest @ NC State: Wake Forest -3.5 (+100), ML -162; NC State +3.5 (-115), ML +145; displayed total 57.5/58.5.
+- Sacramento State @ Bowling Green: Sacramento State +8.5 (-110), ML +270; Bowling Green -8.5 (-108), ML -325; total 43.5.
+- South Carolina @ Florida: South Carolina +11.5 (-110), ML +360; Florida -10.5 (-115), ML -450; total 58.5.
+
+Saturday afternoon:
+- Old Dominion @ Appalachian State: Appalachian State -9.5 (-115), ML -375; Old Dominion +10 (-112), ML +310; total 47.5.
+- Miami (OH) @ Massachusetts: Massachusetts +4.5 (-108), ML +164; Miami (OH) -2.5 (-108), ML -125; displayed total 44.5/47.5.
+- Texas @ Oklahoma: Texas -7.5 (-105), ML -310; Oklahoma +7.5 (-115), ML +260; total 39.5.
+- UCLA @ Oregon: UCLA +10.5 (-112), ML +320; Oregon -10.5 (-105), ML -410; displayed total 57.5/58.5.
+- Stanford @ Notre Dame: Stanford +39.5 (-108), ML +8000; Notre Dame -39.5 (-105), ML -100000; total 54.5.
+- Ole Miss @ Vanderbilt: Ole Miss -9.5 (-110), ML -333; Vanderbilt +9.5 (-105), ML +285; total 54.5.
+- Illinois @ Michigan State: Illinois -2.5 (-115), ML -135; Michigan State +2.5 (+100), ML +115; displayed total 47.5/48.5.
+- Houston @ Kansas State: Houston +2.5 (-105), ML +120; Kansas State -2.5 (-110), ML -135; displayed total 54.5/55.5.
+- Eastern Michigan @ Akron: Eastern Michigan -5.5 (-110), ML -210; Akron +5.5 (-110), ML +180; displayed total 51.5/52.5.
+- Duke @ Georgia Tech: Duke -6.5 (-106), ML -225; Georgia Tech +6.5 (-105), ML +200; displayed total 43.5/44.5.
+- Central Michigan @ Ohio: Central Michigan +2.5 (-105), ML +110; Ohio -2.5 (-102), ML -130; displayed total 45.5/46.5.
+- Charlotte @ North Texas: Charlotte +28.5 (-105), ML +2200; North Texas -28.5 (-106), ML -4545; displayed total 57.5/58.5.
+- Buffalo @ Toledo: Buffalo +19.5 (-110), ML +810; Toledo -18.5 (-112), ML -1099; total 55.5.
+- Kent State @ Western Michigan: Kent State +14 (-112), ML +450; Western Michigan -13.5 (-114), ML -588; total 43.5.
+- Rice @ East Carolina: Rice +10 (-110), ML +300; East Carolina -9.5 (-110), ML -375; displayed total 46.5/47.5.
+- Maryland @ Ohio State: Maryland +33.5 (-110), ML +3500; Ohio State -33.5 (-108), ML -10000; total 56.5.
+- Tennessee @ Arkansas: Tennessee -13.5 (-110), ML -549; Arkansas +13.5 (-105), ML +410; total 51.5.
+
+Saturday evening/night:
+- San Diego State @ Oregon State: San Diego State +16.5 (-112), ML +580; Oregon State -15.5 (-118), ML -752; displayed total 52.5/53.5.
+- North Dakota State @ UNLV: North Dakota State -2.5 (-110), ML -130; UNLV +2.5 (-102), ML +118; total 47.5.
+- Nevada @ UTEP: Nevada -9.5 (-110), ML -365; UTEP +10 (-110), ML +300; total 49.5.
+- LSU @ Kentucky: LSU -8.5 (-110), ML -319; Kentucky +8.5 (-105), ML +280; total 50.5.
+- Air Force @ Northern Illinois: Air Force -7 (-115), ML -303; Northern Illinois +7.5 (-114), ML +255; total 46.5.
+- Louisiana @ Louisiana Tech: Louisiana +3 (-105), ML +130; Louisiana Tech -2.5 (-122), ML -152; displayed total 47.5/48.5.
+- Georgia @ Alabama: Georgia +2.5 (-115), ML +105; Alabama -1.5 (-110), ML -118; total 51.5.
+- Syracuse @ Virginia: Syracuse +11.5 (-110), ML +350; Virginia -10.5 (-115), ML -441; displayed total 49.5/50.5.
+- USC @ Penn State: USC +1.5 (-108), ML +105; Penn State -1.5 (-110), ML -120; total 54.5.
+- James Madison @ Georgia Southern: James Madison -7.5 (-105), ML -285; Georgia Southern +7.5 (-110), ML +250; total 51.5.
+- Kansas @ Utah: Kansas +15.5 (-110), ML +550; Utah -15.5 (-110), ML -699; displayed total 50.5/51.5.
+- Minnesota @ Purdue: Minnesota -2.5 (-114), ML -137; Purdue +2.5 (-105), ML +120; total 50.5.
+- Hawai'i @ Arizona State: Hawai'i +21 (-112), ML +920; Arizona State -20.5 (-115), ML -1587; total 50.5.
+- Boise State @ Fresno State: Fresno State +7 (-110), ML +220; Boise State -6.5 (-115), ML -258; total 48.5.
+
+Mandatory unmodeled inclusion:
+- Indiana @ Nebraska: Indiana -7.5 (-115), ML -312; Nebraska +8.5 (-115), ML +270; displayed total 47.5/48.5. Nebraska remains an explicit v1.208 exclusion; no frozen prediction is manufactured.
+
+Coverage assertion: 38 unique modeled Saturday games = morning 7 + afternoon 17 + evening/night 14, plus Nebraska separately. Together with the 11 elapsed Tuesday-Friday modeled games, the governed weekly modeled slate remains 49 unique games exactly once. Full-board pricing is public-benchmark evidence only; it does not establish a casino execution.
