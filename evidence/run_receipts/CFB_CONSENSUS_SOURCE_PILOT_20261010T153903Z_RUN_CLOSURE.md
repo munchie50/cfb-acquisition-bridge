@@ -1,0 +1,12 @@
+# CFB consensus source pilot — RUN_CLOSURE
+
+Run:CFB_CONSENSUS_SOURCE_PILOT_20261010T153903Z
+Type:manual TestRoutinev6 public-source pilot
+Prospectiveboundary:2026-10-10T15:39:03Z
+Finalterminalstate:RUN_INCOMPLETE
+Closure issued only after independent terminalcandidate readback:evidence/run_receipts/CFB_CONSENSUS_SOURCE_PILOT_20261010T153903Z_TERMINAL_CANDIDATE.md, blobf03ac59d084c4b11c824957c9eba850b836f33a5.
+Applicable report3106407c450000e8d3d31c1a73f61d0c5c3a4eab, controlc87498072194ee07e62ac8c40dfc61f5e3b30ad9, indexdcaaef0be0e44ec3cea5eb204c60c81b61a3680b independentlyreadback. Market/decision/currentHotSheet unchanged;4taskconfiguration preserved.
+Unresolved: genuine qualifiedthree-bookconsensus, underlyingofferfreshness, exactcanonicalgamemapping andactualCaesarsexecution. Observedaccessgate respected; no hidden-valueingestion orauthentication/locationbypass. Public source findings persisted, no bets/predictions/thresholds/cutoffs/outcomes changed. Nextsafeaction inreport; earlierfailedcycles remain unchanged.
+Scientific/Champion effect:NONE.
+
+RUN_INCOMPLETE
