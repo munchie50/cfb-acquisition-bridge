@@ -1537,3 +1537,76 @@ Navigation only. Current underlying HotSheet and canonical operational state unc
   ]
 }
 ```
+
+
+## Execution-aware current display QA — actual observed authoring boundary
+
+Navigation only; unchanged operational state independently read back.
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-10T20:07:50Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Production v5 / Champion v1.193 / immutable FIRST_FROZEN v1.208 unchanged.",
+    "Fresh13:03CT CBS mixed-book fallback appended for28 still-pregame modeled games;10 modeled games plusNebraska were underway or at the kickoff boundary and received no later pregame backfill.",
+    "MarketConsensus remains CONSENSUS_UNAVAILABLE for all49modeled games plusNebraska because no qualified three-operator non-Caesars constituent set was recovered. CurrentCaesars offers remainUNVERIFIED.",
+    "Four previously established October9 Caesars tickets remain current exposure: AppState-10/-110, Massachusetts+5/-110, JMU-7.5/-107, Fresno+7/-113; each$5,total$20. Historical execution is not current offer evidence.",
+    "FinalSaturday reconciliation carries noINCONCLUSIVE orWAIT. Three previously conditional sides are execution-complete; JMU prospectivePASS remains preserved; remaining34 sides and all38 totalsPASS. No additional wager/trip.",
+    "Execution ledger and postgame scorecard read back; no newly authoritative final was available for the four Saturday tickets, so no settlement was invented.",
+    "CurrentHotSheet has49 unique modeled rows exactlyonce across section counts1/2/3/5/7/17/14 plusNebraska separately.",
+    "This checkpoint is as-of navigation only; later runs must independently read current canonical bytes.",
+    "Independent TestRoutinev6 found natural13:09 QA failure: future18:12Z checkpoint, tee-hidden validator error, then exact execution-header and afternoon-total schema gaps. Parser/workflow/profiles corrected and readback verified. GitHub38081980577/job114300612317 SUCCESS:49frozen rows/147numbers/49directions,38Saturday total endpoints=28fresh+10retained; Nebraska numeric quote withheld. Oldfailed runs/RUN_PASS receipts preserved; future actual-clock producer demonstration pending. No output/market/decision/wager/model/scheduler change.",
+    "User money-ledger add-$20 request remains pending clarification; four issued tickets/$20 stakes do not establish an additional bankroll credit or separate debit.",
+    "TestRoutinev6 current execution-aware semantic profile demonstrated:38games/76side-totalverdicts,3completedconditional sides,1JMU separatelyexecutedPASS,34otherPASS/all38totalPASS,4ticketfacts/$20. Twentyrejectionassertions andGitHub38082395266/job114301815510SUCCESS. ExistingQAworkflow enforces exact currentdecision/execution pointers and projection; unknownfuturecyclesrequirequalification. No operational bytes/task/model/moneychange; future natural producer demonstration remains pending."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "d25896f5eb476b2c70dae292d7e099627f0f528c",
+      "purpose": "canonical market after13:03CT fallback refresh and consensus-unavailable qualification"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "8e4ef9544c52cbf0d8b3ce5d0d99fbc6249ff623",
+      "purpose": "finalSaturday execution-aware decision reconciliation; noINCONCLUSIVE/WAIT"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "3e165dec97d2ebe4e595f2109d12c1f7e2d86f4e",
+      "purpose": "fifteen actual wagers/$53.45 historical stake; four October9 tickets/$20; no new settlement"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "6ae881224fa18b65a4408fa807a2582aebccf6fd",
+      "purpose": "unchanged; no newly applicable authoritative final"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-10_1312CT.md",
+      "blob": "1d64f2bc69414ea9816a08eb8fef22edd47decc3",
+      "purpose": "CURRENT_HOT_SHEET: natural Saturday13:12CT final reconciliation with consensus/Caesars separation"
+    },
+    {
+      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
+      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
+      "purpose": "ACTIVE consensus benchmark / Caesars execution separation"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_CURRENT_PUBLICATION_FAILURE_RECONCILIATION_2026-10-10.md",
+      "blob": "80e9628e6dae2a55314dcb7d99731bc469be5293",
+      "purpose": "TestRoutinev6 demonstrated current QA repairs / original failure preservation / remaining timing debt"
+    },
+    {
+      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
+      "blob": "240afbe321ad1f28d577f4e155373622384ebb87",
+      "purpose": "active current-output validation and actual-clock authoring correction"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "blob": "10174c41bb573125e6f974ce0f5a449594c842c7",
+      "purpose": "durable QA findings: execution-aware semantic detection gap closed for exact Oct10 profile; natural future use pending"
+    }
+  ]
+}
+```
