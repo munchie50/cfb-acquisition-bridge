@@ -1,0 +1,21 @@
+# RUN_STARTED — CFB_MARKET_MONITOR_20261010T120036Z
+
+- run_identity: CFB_MARKET_MONITOR_20261010T120036Z
+- run_type: CFB Market Monitor
+- prospective_boundary: Saturday 2026-10-10 07:00:36 America/Chicago
+- started_at_utc: 2026-10-10T12:00:36Z
+- recovered_repository_head: eb2cf24dbb92d16680309c423bff81d4e586c7c8
+- current_recovery_authority: evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md
+- recovery_authority_blob: e91581e7cc324d43c2806efe19235b2bbdccaae2
+- cadence_authority: evidence/CFB_ENGINE_FOOTBALL_WEEK_OPERATING_CADENCE_CONTRACT_v1_247.md
+- cadence_blob: 2a41f5cee71152c9f0a84cc3ee2f634020819dc2
+- persistence_authority: evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md
+- persistence_blob: cba5016eeedb091cce3059c257d3086219a3f284
+- terminal_contract: evidence/CFB_TERMINAL_RUN_RECEIPT_CLOSURE_CONTRACT_2026-10-05.md
+- terminal_contract_blob: 9a2f158beddcde783c25fbecfa6d8d66dd8b2ca8
+- sectioning_authority: evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md
+- sectioning_blob: 6e020ebf07ef08555d8df366e59d126d3184e260
+- decision_cadence: evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md
+- decision_cadence_blob: 63ec14c167dfb4c64fb845ebd862f6aac588e487
+- scope: full governed Week 6 relevant-FBS slate with Saturday morning primary reconciliation, downstream of accepted frozen snapshot and latest canonical decisions
+- notice: RUN_STARTED is not completion evidence.
