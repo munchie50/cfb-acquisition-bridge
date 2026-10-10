@@ -986,3 +986,51 @@ Prior bytes retained. Explicit current-view selector remains navigation only; so
   ]
 }
 ```
+
+
+## Saturday 07:08 CT natural producer navigation checkpoint
+
+Prior bytes retained. This final tagged checkpoint supersedes earlier navigation pointers for current-view selection only; repository authority and immutable prediction lineage remain unchanged.
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-10T12:08:00Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Production v5 / Champion v1.193 / immutable FIRST_FROZEN v1.208 unchanged.",
+    "Fresh full Saturday public benchmark appended at 07:03 CT; actual Caesars executability remains unverified.",
+    "App State, Massachusetts and Fresno State sides are BET NOW CONDITIONAL at their established limits; Fresno prior WAIT is preserved and resolved prospectively by public +7 (-110). Remaining35 Saturday sides and all38 totals PASS; Nebraska unmodeled.",
+    "No execution or new settlement is established. Execution ledger and postgame scorecard were independently read back unchanged.",
+    "Current Hot Sheet has49 unique modeled rows exactly once across section counts1/2/3/5/7/17/14 plus Nebraska separately.",
+    "This checkpoint is as-of navigation only; later runs must independently read current canonical bytes."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "120bd197c24ec79e15c2cecc443e17e6e4685031",
+      "purpose": "canonical market after 07:03 CT full Saturday board append"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "2fa8428caad7e57204c1c9ca6ce5fee4d9acaa5c",
+      "purpose": "current decision ledger after Fresno WAIT resolution"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "cce489b65a62cb6bfefbfb167318aa7a2584a59f",
+      "purpose": "unchanged; no new execution inferred"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "6ae881224fa18b65a4408fa807a2582aebccf6fd",
+      "purpose": "unchanged; no new Week6 final settlement"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-10_0708CT.md",
+      "blob": "7ba3defaabb1f5092b45c9b8d69d51131b1fe9ef",
+      "purpose": "CURRENT_HOT_SHEET: natural Saturday 07:08 CT full governed presentation"
+    }
+  ]
+}
+```
