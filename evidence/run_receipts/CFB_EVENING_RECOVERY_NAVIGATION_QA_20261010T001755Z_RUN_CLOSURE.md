@@ -1,0 +1,27 @@
+# Separate RUN_CLOSURE — CFB_EVENING_RECOVERY_NAVIGATION_QA_20261010T001755Z
+
+Final terminal state:RUN_PASS forbounded user-directed evening recovery navigation correction.
+Prospective boundary:2026-10-10T00:17:55Z;checkpointas-of2026-10-10T00:19:31Z /October9 19:19:31CT.
+Closure issued onlyAFTER independentapplicablesurface and terminalcandidate readback. Candidate evidence/run_receipts/CFB_EVENING_RECOVERY_NAVIGATION_QA_20261010T001755Z_TERMINAL_CANDIDATE.md, blob edad9814d6b137bc3d543962a18b6c72b143a23b, commit 288fcfc4d6473b7218208787f7390b310c2cf348; exactbytesverified atreturnedimmutablecommit andcurrentmainBEFOREthisclosure. October5two-phasecontract followed.
+Applicable independentmainproofs:
+- scripts/cfb_recovery_navigation_reader.py: deff4ed43059ebbca74a2ebc9861d4ca812827a5; main exact PASS
+- scripts/test_cfb_recovery_navigation_reader.py: 2f6d735602948f3d878cf4897d1741a18b6fa12d; main exact PASS
+- .github/workflows/cfb_qa_hot_sheet_kickoff_section_static_gate.yml: 4fd782e21ab3d74c41af4bdb41e782dea4e6db0d; main exact PASS
+- evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md: e0c0c5dc973a30757f93d3a7189e583eb1042bf2; main exact PASS
+- evidence/scheduler_qa/CFB_EVENING_RECOVERY_NAVIGATION_CHECKPOINT_2026-10-09.md: 0a811e709633f20b87a8ad1852e28354c39d1b03; main exact PASS
+- evidence/CFB_ENGINE_HOLISTIC_SYSTEM_QA_MAP_2026-09-30.md: 4263e6f4e2b10a938da3a916659b33363e53e289; main exact PASS
+- evidence/run_receipts/CFB_EVENING_RECOVERY_NAVIGATION_QA_20261010T001755Z_RUN_STARTED.md: 6baa03d8214975498213719708a3132e2a72f868; main exact PASS
+- evidence/run_receipts/CFB_MARKET_MONITOR_20261009T180108Z_RUN_CLOSURE.md: 0aef35d8204a5c48c142ca8724cf33c0401c297a; main exact PASS
+- evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261009T221353Z_RUN_CLOSURE.md: f8d76e548372599b0186eda75b41362f400d7e49; main exact PASS
+- evidence/operational/CFB_MARKET_MONITOR_STATE.md: bbc222ec291ba1faff3f083f6da132d8e8214cae; main exact PASS
+- evidence/operational/CFB_DECISION_WAIT_LEDGER.md: fcbdc7f48e8518dc6826d0d39c06d864da1a12e9; main exact PASS
+- evidence/operational/CFB_EXECUTION_LEDGER.md: cce489b65a62cb6bfefbfb167318aa7a2584a59f; main exact PASS
+- evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md: eaeded90f81dd1190e0ef77fc52a448f73ea5dca; main exact PASS
+- evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md: 1fdecbe7d873876b6dbe2dd18e23d56256f5117a; main exact PASS
+- evidence/scheduler_qa/CFB_WEEK6_CANONICAL_MARKET_TOTAL_DISPLAY_GATE_2026-10-09.md: 10939df20c97ada2266216b5c905d5f5217120de; main exact PASS
+Recoveryappendcommit:c8caab11e978de54573fb6b2a7efa61b656d4619;mapappendcommit:45391f97f8d173f8d328531bf85e91607c402886;immediateSHA/preservedpriorbytes/proposalmetadata/returnedcommitandmainreadbacks verified,metadataretainedincandidate.
+CodeQA:{"run":38008548701,"job":114082936590,"head_sha":"548312125dead9db3f9188c071be1741fef8e7d7","status":"completed","conclusion":"success","tests":61,"logs_independently_retrieved":true}; actualretrievedlogs20+10+14+10+7=61tests andcurrentsection/frozen/totalchecksPASS. Fullactualindexlocalreader1record/8pointers verifiedseparately,notclaimedrunneractualindexexecution. Eightpointerblobs independentlyreadback.
+Taskproof:{"inventory":11,"enabled":4,"fields_unchanged":66}; no automationmutation/manualdispatch orengine rerun.
+Earned:explicit eveningnavigationcheckpointandoptionalreader correctstale topfrontierselection whilepreservinghistoricaltext andsoleexistingrecoverydoorway. ReaderNAVIGATION_ONLY_NOT_AUTHORITY nevercertifiesclaims,pointers,freshnessorcompletedproductionwork. Detailedauthorityandlatermaterialchangesrequireindependentrecovery. Nextnatural/independentconsumerdemonstrationpending.
+Limitscarried:tonight19:30–20:30CTnotdueatcheckpoint andfutureexecutionunverified;oldmorning/Oct8failuregapsnotclosedbyafternoon/HealthPASS. LaterSaturdaydefaultsnotyetdue;earlierpracticalconstraints separate. Oldquoteclockpreserved,no newmarket/bet/wager/settlementCLV/causalattribution claim. Opaquewritecause/rawpreflight403clockcause andbroadernaturalenforcementremainopen.
+Canonicalmarket/decision/execution/HotSheet/scorecard, fourtasks,ProductionRoutinev5,Championv1.193/FIRST_FROZENv1.208,v6candidate,S2study-only,2025TESTunopened unchanged. Scientific/Champion effect:NONE. Successfulboundednavigationclosuredoesnotupgradeolderincompletecycles orcertifytheupcomingrun.
