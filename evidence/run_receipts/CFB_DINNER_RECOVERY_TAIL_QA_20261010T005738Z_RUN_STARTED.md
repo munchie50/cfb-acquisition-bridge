@@ -1,0 +1,3 @@
+# Dinner recovery tail QA — RUN_STARTED
+
+Run CFB_DINNER_RECOVERY_TAIL_QA_20261010T005738Z. Manual Test Routine v6 candidate continuation. Prospective boundary 20261010T005738Z, UTC. Scope: reproduce actual recovery reader silently selecting 19:19 checkpoint despite later dinner update; repair read-only reader and meaningful regression cases, append new explicit checkpoint preserving all prior bytes, integrate candidate routine/holistic evidence, independently read back and two-phase close. Current recommendations/quotes remain unchanged; no new source capture, task mutation/dispatch, wager, model, protected study or production-routine promotion. Natural consumer/scheduler use remains separate.
