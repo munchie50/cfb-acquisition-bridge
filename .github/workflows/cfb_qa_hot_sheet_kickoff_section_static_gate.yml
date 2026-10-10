@@ -12,6 +12,8 @@ on:
       - 'scripts/test_cfb_week6_decision_coverage_audit.py'
       - 'scripts/cfb_week6_market_total_display_gate.py'
       - 'scripts/test_cfb_week6_market_total_display_gate.py'
+      - 'scripts/cfb_hot_sheet_decision_projection_gate.py'
+      - 'scripts/test_cfb_hot_sheet_decision_projection_gate.py'
       - 'scripts/cfb_full_review_scope_gate.py'
       - 'scripts/test_cfb_full_review_scope_gate.py'
       - 'evidence/operational/CFB_WEEK6_FULL_SATURDAY_DINNER_REVIEW_2026-10-09.md'
@@ -48,6 +50,10 @@ jobs:
         run: python -m unittest discover -s scripts -p test_cfb_full_review_scope_gate.py
       - name: Validate retained full Saturday dinner review coverage
         run: python scripts/cfb_full_review_scope_gate.py --baseline evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md --review evidence/operational/CFB_WEEK6_FULL_SATURDAY_DINNER_REVIEW_2026-10-09.md
+      - name: Exercise current decision and conditional cutoff display boundaries
+        run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_decision_projection_gate.py
+      - name: Validate current saved dinner decision Hot Sheet projection
+        run: python scripts/cfb_hot_sheet_decision_projection_gate.py --baseline evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md --review evidence/operational/CFB_WEEK6_FULL_SATURDAY_DINNER_REVIEW_2026-10-09.md --sheet evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_2012CT.md
       - name: Recover authenticated accepted FIRST_FROZEN archive
         env:
           GH_TOKEN: ${{ github.token }}
