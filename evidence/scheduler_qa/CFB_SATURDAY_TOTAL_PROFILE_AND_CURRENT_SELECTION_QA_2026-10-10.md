@@ -1,0 +1,23 @@
+# Saturday total profile and actual-current selection QA
+
+Run CFB_SATURDAY_TOTAL_DISPLAY_QA_20261010T151524Z; actual measured start2026-10-10T15:15:24Z. Independent user-directed Test Routine display QA, not a retry/reconstruction of blocked09AMQA artifacts.
+
+## Defects and corrections
+Original scripts/cfb_week6_market_total_display_gate.py sha5bbb8b110f1e17295e2a31093c3e083dd9dcf242 supports only qualifiedFriday13:01cycle; authentic07:08Saturday sheet failed unsupportedcanonicalcycle/sourcebinding. Final morninggreenCI selectedFriday1538baseline afterrecovery-onlycommit, so sourcebindingPASS was not currentSaturday total-number proof. Preserve priorgreen scope; do not reinterpret it as fullnewnumbercoverage.
+
+Existinghelper nowhas two explicitlyqualified profiles: Friday43modeled+Nebraska/6earlierrowsuncovered; Saturday38modeled+Nebraska/11earlierrowsuncovered. Each selects exact run/marker/declaredcanonicalblob; unknownfuturecycle remainsfailclosed. Totalsparser and asymmetricendpointpreservation unchanged. Historicalsource recoveredatcanonicalGitpath; no current-source freshness inferred.
+Existingworkflow's currentbinding JSON output nowfeeds current-sheet path into existingsection/frozen/total selection alongwithFridayretainedbaseline andchangedfiles. No newworkflow/task/dispatch;14old+8newSaturdayregressions=22totalboundarytests.
+Saturday07:08sheet copied into new10:15presentation view evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-10_1015CT.md, blobcb2c926f293a0570a6fb0907a862f44b61f0eabb. Original0708sheet retained. Only Saturday column clock labels corrected fromFriday~13:02 toSaturday~07:03; header explicitlyNO_NEW_MARKET_RETRIEVAL. Frozenvalues/quotevalues/decisions/limits unchanged.
+
+## Verified proof
+22localregressionsPASS: original14retained, new8actualSaturday/paircollapse/wrongendpoint/copiedFridayendpoint/wrongbytes/unknownfuture/wrongcycle/Nebraskaasymmetricpair cases.
+Newactualsheet38modeled+1unmodeledtotalendpointsetsPASS againstcanonicalmarket120bd197c24ec79e15c2cecc443e17e6e4685031, cycleCFB_MARKET_MONITOR_20261010T120036Z. Section49/sevencounts1/2/3/5/7/17/14PASS. Frozen49rows/147values/49directionsPASS againstauthenticatedarchiveSHA256772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf.
+Source/tests/sheet/workflow exactcreationcommit+mainreadbacksverified: helper9b8c2949f26e1fd15f5aa2deea9747e6f7dac372, tests230b5f9fdd5ad48cfdceb92f234e2c3d32406f9c, sheetcb2c926f293a0570a6fb0907a862f44b61f0eabb, workflow4ebdc7c3505c2facd3b4f6de022cd348462c0667.
+IndependentGitHub38063060107/job114245068955 completedSUCCESS onexactworkflow000f163afed7d48ba18aeb3784d5d492dbe036a6. ExposedstepsSaturdayboundarysuite/currentbinding/fullselectedsheet audit independentlyPASS. Currentselector atthatcommit was0708sheet; actualnew1015samequotevalues independentlyprewriteverified. Separateupdatedcurrentpointer/CI proof remainsdistinct integrationobligation before closure. No rawjoblogclaim.
+
+## Boundaries
+Onlydeclared total-number endpoint fidelity; notspread/price/ML/source truth/freshness, finalinjuries/weather, calibratedEV, sportsbookexecution orbetquality. Callermust stillapply activebroaderfields/decision/sourcecontrols. Unknownlatercyclesneedseparatequalification. No actualmarket/decision/frozen/wager/modelmutation. Currentcard remains3conditional singles at establishedlimits, actualCaesarsUNVERIFIED. No inference userplacedbets.
+
+Separate09AMQA run remainsreportedRUN_INCOMPLETE/STARTED-only; rejectedartifact/error exactdetailsunrecovered; no deniedwrite retried orclosure manufactured. WeeklyQA futurepromptchange is previouslyapproved separateintegration, not naturalfailure repair. Fourenabledtasks/configurationpreserved. ManualQA/currentprofile installation doesnotretroactivelyrepair earlierfailures orprove futureproduceruse. No scientific/Champion/Productionv5/S2/2025TEST change.
+
+Activecontract/candidate/holistic/recovery append+plannedmetadata/readbacks and separateterminalcandidate/readback/closure required before thismanualrun reports closure success.
