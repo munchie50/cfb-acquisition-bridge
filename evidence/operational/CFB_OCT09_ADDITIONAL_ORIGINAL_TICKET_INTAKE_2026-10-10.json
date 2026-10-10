@@ -1,0 +1,52 @@
+{
+  "run": "CFB_OCT09_ADDITIONAL_TICKET_INTAKE_20261010T155228Z",
+  "source": "user original issued ticket images; private visual inspection and untouched byte hashes",
+  "book": "Caesars Sportsbook",
+  "venue": "Harrah's Columbus",
+  "cashable_identifiers": "EXCLUDED",
+  "duplicate_check": "two distinct private ticket identities; distinct original hashes; no matching Oct9 App State or Massachusetts execution rows in current ledger",
+  "classification": "ACTUAL_REAL_MONEY",
+  "budget": "UNASSIGNED",
+  "receipt_timezone": "UNSPECIFIED",
+  "timing": "NOT_LIVE_LABELLED",
+  "settlement_payment_clv": "UNVERIFIED",
+  "tickets": [
+    {
+      "execution_id": "CFB_OCT09-03",
+      "filename": "IMG_8092.jpeg",
+      "source_file_id": "file_00000000a33081f59d49a128d51b4ad8",
+      "sha256": "21f1a9a45ef4ff151aa5de9f0acd4a6b6120275cabddb6429682ee2f7201171e",
+      "game": "Old Dominion at Appalachian State",
+      "selection": "Appalachian State",
+      "market": "SPREAD",
+      "line": -10,
+      "american_odds": -110,
+      "stake_usd": 5,
+      "max_win_printed_usd": 4.55,
+      "max_payout_printed_usd": 9.55,
+      "issued_printed": "2026-10-09 08:26 PM",
+      "event_printed": "2026-10-10 12:05 PM"
+    },
+    {
+      "execution_id": "CFB_OCT09-04",
+      "filename": "IMG_8091.jpeg",
+      "source_file_id": "file_00000000db9881f5878cee05cbaf10fc",
+      "sha256": "6ebc284d185dc683e4832b6db855c06020d079a8852ab0343fa89a49907f1c8f",
+      "game": "Miami (OH) at Massachusetts",
+      "selection": "Massachusetts",
+      "market": "SPREAD",
+      "line": 5,
+      "american_odds": -110,
+      "stake_usd": 5,
+      "max_win_printed_usd": 4.55,
+      "max_payout_printed_usd": 9.55,
+      "issued_printed": "2026-10-09 08:26 PM",
+      "event_printed": "2026-10-10 01:05 PM"
+    }
+  ],
+  "money_instruction": {
+    "user_text": "Also add 20 to money ledger",
+    "disposition": "PENDING_CLARIFICATION",
+    "reason": "additional funding versus four-ticket $20 stake total unspecified; no extra debit or bankroll credit booked"
+  }
+}
