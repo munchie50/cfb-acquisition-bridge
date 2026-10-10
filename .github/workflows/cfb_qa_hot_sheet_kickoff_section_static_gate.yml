@@ -12,6 +12,7 @@ on:
       - 'scripts/test_cfb_week6_decision_coverage_audit.py'
       - 'scripts/cfb_week6_market_total_display_gate.py'
       - 'scripts/test_cfb_week6_market_total_display_gate.py'
+      - 'scripts/test_cfb_week6_saturday_total_display_gate.py'
       - 'scripts/cfb_hot_sheet_current_decision_binding_gate.py'
       - 'scripts/test_cfb_hot_sheet_current_decision_binding_gate.py'
       - 'evidence/operational/CFB_DECISION_WAIT_LEDGER.md'
@@ -48,6 +49,8 @@ jobs:
         run: python -m unittest discover -s scripts -p test_cfb_week6_decision_coverage_audit.py
       - name: Exercise declared canonical market-total display boundaries
         run: python -m unittest discover -s scripts -p test_cfb_week6_market_total_display_gate.py
+      - name: Exercise qualified Saturday market-total boundaries
+        run: python -m unittest discover -s scripts -p test_cfb_week6_saturday_total_display_gate.py
       - name: Exercise explicit recovery navigation boundaries
         run: python -m unittest discover -s scripts -p test_cfb_recovery_navigation_reader.py
       - name: Exercise full-review scope and explicit trip-clock boundaries
@@ -59,7 +62,8 @@ jobs:
       - name: Exercise explicit current-publication source binding boundaries
         run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_current_decision_binding_gate.py
       - name: Validate explicitly selected current Hot Sheet against canonical decision state
-        run: python scripts/cfb_hot_sheet_current_decision_binding_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md --current-ledger evidence/operational/CFB_DECISION_WAIT_LEDGER.md
+        run: |
+          python scripts/cfb_hot_sheet_current_decision_binding_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md --current-ledger evidence/operational/CFB_DECISION_WAIT_LEDGER.md | tee "$RUNNER_TEMP/cfb_current_sheet_binding.json"
       - name: Validate retained historical dinner decision Hot Sheet projection
         run: python scripts/cfb_hot_sheet_decision_projection_gate.py --baseline evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md --review evidence/operational/CFB_WEEK6_FULL_SATURDAY_DINNER_REVIEW_2026-10-09.md --sheet evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_2012CT.md
       - name: Recover authenticated accepted FIRST_FROZEN archive
@@ -76,7 +80,8 @@ jobs:
         env:
           BEFORE_COMMIT: ${{ github.event.before }}
         run: |
-          args=(--sheet evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md)
+          cfb_current_sheet=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["sheet_path"])' "$RUNNER_TEMP/cfb_current_sheet_binding.json")
+          args=(--sheet evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md --sheet "$cfb_current_sheet")
           if [[ -n "$BEFORE_COMMIT" ]]; then
             args+=(--changed-since "$BEFORE_COMMIT")
           fi
