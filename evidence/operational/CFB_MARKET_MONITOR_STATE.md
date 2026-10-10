@@ -419,3 +419,45 @@ Mandatory unmodeled inclusion:
 - Indiana @ Nebraska: Indiana -7.5 (-115), ML -312; Nebraska +8.5 (-115), ML +270; displayed total 47.5/48.5. Nebraska remains an explicit v1.208 exclusion; no frozen prediction is manufactured.
 
 Coverage assertion: 38 unique modeled Saturday games = morning 7 + afternoon 17 + evening/night 14, plus Nebraska separately. Together with the 11 elapsed Tuesday-Friday modeled games, the governed weekly modeled slate remains 49 unique games exactly once. Full-board pricing is public-benchmark evidence only; it does not establish a casino execution.
+
+
+## Saturday 13:03 CT scheduled fallback refresh and consensus qualification — 2026-10-10
+Run: CFB_MARKET_MONITOR_20261010T180302Z. Collection window approximately 13:03–13:10 CT. Source: CBS Sports Week 6 odds board, https://www.cbssports.com/college-football/odds/ALL/2026/regular/week-6/ . Class: INTERMEDIATE_PUBLIC_BENCHMARK / MIXED-BOOK FALLBACK. The text surface exposes book-logo references but does not bind every quote to three distinct identified non-Caesars operators; therefore Market Consensus = CONSENSUS_UNAVAILABLE for every governed game. Retrieval time is not offer-update time. Current Caesars Offer = UNVERIFIED. No quote below is labelled consensus or executable Caesars.
+
+Games already underway or at the kickoff boundary when retrieved:
+- All seven governed Saturday-morning games and mandatory Nebraska were underway; no post-kickoff displayed number is promoted as a new pregame observation.
+- Old Dominion @ Appalachian State and Rice @ East Carolina were underway; no new pregame observation is appended.
+- Miami (OH) @ Massachusetts was at the retained 13:00 CT boundary with exact-minute source conflict; no later displayed number is promoted as a new pregame observation.
+Historical issued Caesars tickets for Appalachian State -10 (-110), Massachusetts +5 (-110), James Madison -7.5 (-107), and Fresno State +7 (-113) remain execution evidence at their printed October 9 issue clocks. They are not current Caesars offers or consensus constituents.
+
+Still-pregame governed fallback observations:
+- Texas vs Oklahoma: Texas -7.5 (-110), ML -319; Oklahoma +7.5 (-106), ML +270; displayed total 39.5/41.5.
+- UCLA @ Oregon: UCLA +10.5 (-110), ML +340; Oregon -10.5 (-105), ML -417; displayed total 57.5/58.5.
+- Stanford @ Notre Dame: Stanford +39.5 (-108), ML +8000; Notre Dame -39.5 (-110), ML -100000; total 55.5.
+- Ole Miss @ Vanderbilt: Ole Miss -9.5 (-110), ML -333; Vanderbilt +9.5 (-108), ML +280; total 54.5.
+- Illinois @ Michigan State: Illinois -2.5 (-112), ML -132; Michigan State +2.5 (-105), ML +120; total 48.5.
+- Houston @ Kansas State: Houston +2.5 (-105), ML +115; Kansas State -2.5 (-105), ML -120; displayed total 54.5/55.5.
+- Eastern Michigan @ Akron: Eastern Michigan -5.5 (-105), ML -210; Akron +5.5 (-110), ML +180; total 51.5.
+- Duke @ Georgia Tech: Duke -4.5 (-114), ML -194; Georgia Tech +6.5 (-115), ML +190; total 45.5. Asymmetric displayed sides preserved.
+- Central Michigan @ Ohio: Central Michigan +2.5 (-102), ML +120; Ohio -2.5 (-110), ML -133; total 45.5.
+- Charlotte @ North Texas: Charlotte +29.5 (-110), ML +2200; North Texas -27.5 (-110), ML -4545; total 57.5. Asymmetric displayed sides preserved.
+- Buffalo @ Toledo: Buffalo +19.5 (-110), ML +810; Toledo -18.5 (-112), ML -1205; total 55.5. Asymmetric displayed sides preserved.
+- Kent State @ Western Michigan: Kent State +14 (-112), ML +450; Western Michigan -13.5 (-114), ML -588; total 43.5. Asymmetric displayed sides preserved.
+- Maryland @ Ohio State: Maryland +33.5 (-110), ML +3300; Ohio State -31.5 (-110), ML -10000; total 56.5. Asymmetric displayed sides preserved.
+- Tennessee @ Arkansas: Tennessee -13.5 (-115), ML -575; Arkansas +13.5 (-105), ML +440; total 51.5.
+- San Diego State @ Oregon State: San Diego State +16.5 (-110), ML +580; Oregon State -16.5 (-108), ML -752; displayed total 52.5/53.5.
+- Nevada @ UTEP: Nevada -9.5 (-114), ML -375; UTEP +10 (-110), ML +300; displayed total 47.5/49.5.
+- North Dakota State @ UNLV: North Dakota State -2.5 (-105), ML -130; UNLV +2.5 (-110), ML +112; displayed total 47.5/48.5.
+- LSU @ Kentucky: LSU -8.5 (-110), ML -345; Kentucky +9.5 (-110), ML +280; total 50.5.
+- Air Force @ Northern Illinois: Air Force -7 (-112), ML -295; Northern Illinois +7.5 (-115), ML +240; total 48.5. Asymmetric displayed sides preserved.
+- Syracuse @ Virginia: Syracuse +14 (-112), ML +450; Virginia -11.5 (-115), ML -455; total 49.5. Asymmetric displayed sides preserved.
+- James Madison @ Georgia Southern: James Madison -7.5 (-105), ML -295; Georgia Southern +7.5 (-110), ML +250; total 51.5.
+- Georgia @ Alabama: Georgia +2.5 (-108), ML +105; Alabama -2.5 (-110), ML -125; total 51.5.
+- Louisiana @ Louisiana Tech: Louisiana +3 (-105), ML +130; Louisiana Tech -2.5 (-120), ML -152; total 48.5. Asymmetric displayed sides preserved.
+- USC @ Penn State: USC +2.5 (-115), ML +105; Penn State -1.5 (-110), ML -118; total 54.5. Asymmetric displayed sides preserved.
+- Minnesota @ Purdue: Minnesota -2.5 (-115), ML -139; Purdue +2.5 (-104), ML +120; displayed total 49.5/50.5.
+- Kansas @ Utah: Kansas +15.5 (-110), ML +550; Utah -15.5 (-110), ML -699; displayed total 49.5/51.5.
+- Hawai'i @ Arizona State: Hawai'i +21 (-115), ML +1000; Arizona State -20.5 (-115), ML -1667; total 50.5. Asymmetric displayed sides preserved.
+- Boise State @ Fresno State: Fresno State +7.5 (-105), ML +240; Boise State -6.5 (-115), ML -278; total 48.5. The historical executed Fresno +7 (-113) remains distinct from this later fallback.
+
+Coverage: 28 still-pregame governed modeled games received a fresh fallback observation; 10 modeled Saturday games plus Nebraska were already underway or at the kickoff boundary and retain earlier pregame observations only. Across all 49 modeled weekly games, Market Consensus remains CONSENSUS_UNAVAILABLE and current Caesars offers remain UNVERIFIED. No observation changes Champion/FIRST_FROZEN, creates calibrated EV, relaxes a cutoff, or establishes a new execution.
