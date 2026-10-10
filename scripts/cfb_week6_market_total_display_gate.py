@@ -19,6 +19,8 @@ PROFILES = {
         ('Sat ',), 38, 11, 'PASS_QUALIFIED_OCT10_MARKET_TOTAL_DISPLAY'),
 }
 ALIASES = {'Appalachian State': 'App State', 'Massachusetts': 'UMass'}
+AFTERNOON_CYCLE = 'CFB_MARKET_MONITOR_20261010T180302Z'
+AFTERNOON_MARKER = '## Saturday 13:03 CT scheduled fallback refresh and consensus qualification — 2026-10-10'
 
 def blob(content):
     raw = content.encode('utf-8')
@@ -35,9 +37,9 @@ def identity(game):
     return tuple(team(p) for p in parts)
 
 def declared_market(sheet):
-    refs = re.findall(r'^Canonical inputs: market ([0-9a-f]{40}); decision [0-9a-f]{40}\.$', sheet, re.M)
+    refs = re.findall(r'^Canonical inputs: market ([0-9a-f]{40}); decision [0-9a-f]{40}(?:; execution [0-9a-f]{40})?\.$', sheet, re.M)
     cycles = re.findall(r'^(?:Run|Underlying market/decision cycle): (CFB_MARKET_MONITOR_[A-Za-z0-9]+)$', sheet, re.M)
-    if len(refs) != 1 or len(cycles) != 1 or cycles[0] not in PROFILES:
+    if len(refs) != 1 or len(cycles) != 1 or cycles[0] not in {*PROFILES, AFTERNOON_CYCLE}:
         raise ValueError('unsupported or ambiguous sheet canonical cycle/source binding')
     return refs[0]
 
@@ -61,6 +63,8 @@ def totals(text):
 def audit(sheet, market):
     source_sha = declared_market(sheet)
     cycle = re.findall(r'^(?:Run|Underlying market/decision cycle): (CFB_MARKET_MONITOR_[A-Za-z0-9]+)$', sheet, re.M)[0]
+    if cycle == AFTERNOON_CYCLE:
+        return audit_afternoon(sheet, market, source_sha)
     marker, days, modeled, uncovered, verdict = PROFILES[cycle]
     if blob(market) != source_sha:
         raise ValueError('declared market blob does not match supplied bytes')
@@ -111,6 +115,81 @@ def audit(sheet, market):
             'market_blob': source_sha, 'sheet_blob': blob(sheet),
             'uncovered_earlier_week_modeled_rows': uncovered,
             'scope': 'declared canonical total-number endpoints only; no spread/price/ML, source truth/freshness, execution or decision certification'}
+
+def audit_afternoon(sheet, market, source_sha):
+    """Exact retained 38-row Saturday plus 28-row fresh source composition."""
+    if blob(market) != source_sha:
+        raise ValueError('declared market blob does not match supplied bytes')
+    morning_marker = PROFILES['CFB_MARKET_MONITOR_20261010T120036Z'][0]
+    def block(marker, cycle):
+        if market.count(marker) != 1:
+            raise ValueError('ambiguous afternoon source boundary')
+        body = market.split(marker, 1)[1].split('\n## ', 1)[0]
+        if len(re.findall(r'^Run: '+cycle+r'\.', body, re.M)) != 1:
+            raise ValueError('canonical benchmark cycle mismatch')
+        return body
+    def quotes(body):
+        result = {}
+        for line in body.splitlines():
+            if not line.startswith('- ') or ': ' not in line:
+                continue
+            game, quote = line[2:].split(': ', 1)
+            key = identity(game)
+            if key in result:
+                raise ValueError('duplicate canonical quote identity')
+            result[key] = totals(quote)
+        return result
+    morning = quotes(block(morning_marker, 'CFB_MARKET_MONITOR_20261010T120036Z'))
+    afternoon = block(AFTERNOON_MARKER, AFTERNOON_CYCLE)
+    if afternoon.count('Still-pregame governed fallback observations:') != 1:
+        raise ValueError('missing explicit afternoon quote partition')
+    fresh = quotes(afternoon.split('Still-pregame governed fallback observations:', 1)[1])
+    nebraska = identity('Indiana @ Nebraska')
+    if len(morning) != 39 or nebraska not in morning or len(fresh) != 28 or nebraska in fresh or not set(fresh) < set(morning):
+        raise ValueError('qualified afternoon source population mismatch')
+    saturday = {}
+    weekly = 0
+    retained = 0
+    for line in sheet.splitlines():
+        if not re.match(r'^\| (Tue|Wed|Thu|Fri|Sat) ', line):
+            continue
+        cols = [s.strip() for s in line.strip('|').split('|')]
+        if len(cols) != 9:
+            raise ValueError('unsupported production table schema')
+        weekly += 1
+        if not cols[0].startswith('Sat '):
+            continue
+        key = identity(cols[1])
+        if key in saturday:
+            raise ValueError('duplicate displayed quote identity')
+        text = cols[3]
+        if key in fresh:
+            expected = fresh[key]
+            if 'CBS mixed-book fallback ~13:03 CT:' not in text or 'retained pregame fallback:' in text:
+                raise ValueError('fresh quote partition/clock mislabeled')
+        else:
+            if key not in morning or key == nebraska:
+                raise ValueError('display/source identity union mismatch')
+            expected = morning[key]
+            if 'retained pregame fallback:' not in text or 'no later pregame quote promoted' not in text or 'CBS mixed-book fallback ~13:03 CT:' in text:
+                raise ValueError('retained quote partition/clock mislabeled')
+            retained += 1
+        observed = totals(text)
+        if observed != expected:
+            raise ValueError('unsupported or omitted total endpoint for '+str(key))
+        saturday[key] = observed
+    if weekly != 49 or len(saturday) != 38 or set(saturday) != set(morning)-{nebraska} or retained != 10:
+        raise ValueError('display/source identity union mismatch')
+    lines = [l for l in sheet.splitlines() if l.startswith('Indiana @ Nebraska — ')]
+    if len(lines) != 1 or 'no later displayed number is promoted as pregame evidence' not in lines[0]:
+        raise ValueError('mandatory Nebraska withheld-quote qualifier required')
+    if re.search(r'\btotal[s]?\s+\d', lines[0], re.I):
+        raise ValueError('unsupported numeric Nebraska quote in withheld format')
+    return {'verdict': 'PASS_QUALIFIED_OCT10_AFTERNOON_TOTAL_COMPOSITION', 'cycle': AFTERNOON_CYCLE,
+            'matched_modeled_total_displays': 38, 'fresh_total_displays': 28, 'retained_total_displays': 10,
+            'matched_unmodeled_total_displays': 0, 'nebraska_quote': 'WITHHELD_NOT_NUMERICALLY_CERTIFIED',
+            'uncovered_earlier_week_modeled_rows': 11, 'market_blob': source_sha, 'sheet_blob': blob(sheet),
+            'scope': 'declared afternoon/morning total endpoint and retained-label composition only; no source truth, execution, offer-update clock or decisions certified'}
 
 def recovered_market(sha):
     objects = subprocess.run(['git', 'rev-list', '--objects', '--all', '--', MARKET_PATH],
