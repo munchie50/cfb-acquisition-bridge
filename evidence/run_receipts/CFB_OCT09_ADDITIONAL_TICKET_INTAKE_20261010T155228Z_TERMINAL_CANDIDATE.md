@@ -1,0 +1,8 @@
+# Additional original-ticket intake terminal candidate
+
+Run: CFB_OCT09_ADDITIONAL_TICKET_INTAKE_20261010T155228Z
+Bounded result: RUN_PASS for two-ticket source intake and execution persistence only; money-ledger addition remains PENDING_CLARIFICATION, not completed.
+Checks: 7/7 passed; source image inspection, untouched SHA256 and private ticket dedup completed. Previous ledger bytes preserved. Exactly two new wagers/$10; four October9 tickets/$20; historical fifteen/$53.45. No extra $20 debit/credit or assigned sandbox budget.
+Independent readbacks: STARTED 35101c5e1c79b46e96004925325869528137030e; manifest evidence/operational/CFB_OCT09_ADDITIONAL_ORIGINAL_TICKET_INTAKE_2026-10-10.json blob 0eaed6f744bdb47f4dc475730a0cdc210a161641; execution ledger blob 3e165dec97d2ebe4e595f2109d12c1f7e2d86f4e; recovery index blob 0e66dc43123bf146b60d25844cdde603193badc7.
+Planned append metadata: prior blob93405c823b1726932b4425d0d4d81a44ffd5181b; prior bytes18132; proposal bytes20517, characters20501; delta bytes2385, characters2383; proposal SHA25625561c507f846dfa70a05dab0104bd7273c94e58cd656a26ee6d6d095ce95092; delta SHA256197e591658045c91c445d03589e02babf6e76aba439448a7f34ac729ae9e49ab; proposal Gitblob3e165dec97d2ebe4e595f2109d12c1f7e2d86f4e; prior bytes preserved true. Caller-declared inventory game_identity,observation_timestamp,source,book,line,price,provenance,executability. Hashes are computation evidence, success independently read back.
+Unresolved: money instruction funding versus four-ticket total; production/sandbox allocation; receipt timezone; causal attribution; authoritative chronology; settlement/payment/CLV. No model, Champion, frozen prediction, market, decision, Hot Sheet, scorecard or task mutation. Candidate alone is not final closure.
