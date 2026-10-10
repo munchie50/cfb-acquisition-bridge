@@ -50,4 +50,18 @@ class CurrentBindingTests(unittest.TestCase):
         r=copy.deepcopy(self.record);r['as_of_utc']='2026-10-11T00:00:00Z'
         with self.assertRaises(ValueError):self.run_publication(r)
 
+    def test_exact_optional_execution_reference(self):
+        sheet=self.sheet.replace('.\n','; execution '+'b'*40+'.\n')
+        self.assertEqual(audit(sheet,self.ledger)['decision_blob'],blob(self.ledger))
+    def test_optional_execution_does_not_override_stale_decision(self):
+        sheet=self.sheet.replace('.\n','; execution '+'b'*40+'.\n')
+        with self.assertRaisesRegex(ValueError,'stale current'):audit(sheet,'later canonical')
+    def test_malformed_execution_reference(self):
+        with self.assertRaises(ValueError):audit(self.sheet.replace('.\n','; execution bbb.\n'),self.ledger)
+    def test_unknown_extra_source_reference(self):
+        with self.assertRaises(ValueError):audit(self.sheet.replace('.\n','; arbitrary '+'b'*40+'.\n'),self.ledger)
+    def test_duplicate_extended_binding(self):
+        sheet=self.sheet.replace('.\n','; execution '+'b'*40+'.\n')
+        with self.assertRaises(ValueError):audit(sheet*2,self.ledger)
+
 if __name__=='__main__':unittest.main()
