@@ -329,3 +329,17 @@ Run: CFB_MARKET_MONITOR_20261010T120036Z. Linked Champion snapshot: accepted Cha
 - Nebraska remains UNMODELED / no Champion-relative wager manufactured.
 
 Portfolio/execution window: the three conditional singles are the only potential card. Prefer one combined practical trip before the earliest 11:00 CT cutoff; a later Fresno-only trip is not justified absent a documented compelling reason and a qualifying actual offer. No third trip. No wager is established by this refresh; CFB_EXECUTION_LEDGER remains unchanged. Champion/FIRST_FROZEN remains unchanged.
+
+
+## Saturday 13:00 CT final reconciliation and execution-aware disposition — 2026-10-10 13:12 CT
+Run: CFB_MARKET_MONITOR_20261010T180302Z. Linked Champion snapshot: accepted Champion v1.193 / FIRST_FROZEN v1.208. Market evidence: canonical 13:03 CT mixed-book fallback append, blob d25896f5eb476b2c70dae292d7e099627f0f528c. Consensus qualification: CONSENSUS_UNAVAILABLE for every governed game; current Caesars offer UNVERIFIED.
+
+This is the required Saturday-evening decision boundary. No INCONCLUSIVE or WAIT is carried forward:
+- Appalachian State side: prior BET NOW CONDITIONAL is now execution-complete for portfolio management. Canonical execution CFB_OCT09-03 records actual Appalachian State -10 (-110), $5. The numerical limit was satisfied. Game is underway; no duplicate wager and no later quote may reopen the decision.
+- Massachusetts side: prior BET NOW CONDITIONAL is now execution-complete for portfolio management. Canonical execution CFB_OCT09-04 records actual Massachusetts +5 (-110), $5. The numerical limit was satisfied. Kickoff boundary has passed; no duplicate wager and no later quote may reopen the decision.
+- Fresno State side: prior BET NOW CONDITIONAL is now execution-complete for portfolio management. Canonical execution CFB_OCT09-02 records actual Fresno State +7 (-113), $5, within the established +7 or better / max -115 limit. The later fallback +7.5 (-105) is not a verified current Caesars offer and does not justify a duplicate or chase.
+- James Madison @ Georgia Southern: decision remains PASS / TOTAL PASS. Canonical execution CFB_OCT09-01 records an actual James Madison -7.5 (-107), $5 separately. Execution evidence does not rewrite the prospective PASS or manufacture prior recommendation attribution. No additional wager.
+- Remaining 34 Saturday sides and all 38 Saturday totals remain PASS. Fresh mixed-book movement alone is not calibrated EV and does not reopen resolved decisions.
+- Nebraska remains UNMODELED / no Champion-relative wager manufactured.
+
+Portfolio disposition: four October 9 issued tickets are established executions totaling $20. No further casino trip or Saturday wager is recommended by this reconciliation. Current Caesars offers are unverified, all practical App State/UMass cutoffs are closed, Fresno is already executed, and a third trip is not justified. Settlements remain pending authoritative finals. Champion/FIRST_FROZEN unchanged.
