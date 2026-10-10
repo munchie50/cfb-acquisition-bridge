@@ -1245,3 +1245,85 @@ Previous evidence preserved; source research is not a bet or new current quote c
   ]
 }
 ```
+
+
+## October10 original Caesars tickets — execution navigation checkpoint
+Two actual executions now established from new original evidence; all older run observations/decisions preserved.
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-10T15:45:41Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Production v5 / Champion v1.193 / immutable FIRST_FROZEN v1.208 unchanged.",
+    "Fresh full Saturday public benchmark appended at 07:03 CT; actual Caesars executability remains unverified.",
+    "App State, Massachusetts and Fresno State sides are BET NOW CONDITIONAL at their established limits; Fresno prior WAIT is preserved and resolved prospectively by public +7 (-110). Remaining35 Saturday sides and all38 totals PASS; Nebraska unmodeled.",
+    "Two newly provided original Oct9issued actual wagers established at current intake: JMU-7.5(-107)$5, Fresno+7(-113)$5. Totalnewstake$10; settlement/budget/receipttimezone/causalrecommendation unverified. Previous execution-free claims were as-of historical runs, not current intake.",
+    "Current Hot Sheet has49 unique modeled rows exactly once across section counts1/2/3/5/7/17/14 plus Nebraska separately.",
+    "This checkpoint is as-of navigation only; later runs must independently read current canonical bytes.",
+    "Manual10:15viewcorrectsSaturdaytablequoteclockstoapproximately07:03CT only; all49frozenrows/147values/49directions unchanged. NewqualifiedSaturdaytotalprofile38+Nebraskaand22boundarytestsPASS; existingGitHub38063060107/job114245068955SUCCESS includesactualcurrentnumericselection. Profile remainsboundedknowncycle; futureproduceruse/source/book/finalavailabilityqualification separate.",
+    "Separate09AMQA remainsreportedRUN_INCOMPLETE/STARTED-only afterrejectedQAartifact/terminalwrites; originalfailurepath/errorunrecovered. No rejectedwrites retried/reconstructed. User-approvedWeeklyQA futureprompt persistence/containment instructions installed/readback, schedules unchanged; naturaldemonstrationpending. Earlierfailuresnotupgraded.",
+    "User-approved consensusbenchmark/Caesarsexecution control installed; all49modeled+Nebraska currentconsensusUNAVAILABLE andactualCaesarsUNVERIFIED. No newquotes/decisions/limits/modelchanges. Fourexisting taskprompts integrated, schedules unchanged; genuineacquisition andnaturalproducerdemonstrationpending.",
+    "Three-game publicsourcepilot executed; directbook observations1/2/1 only, notqualifiedconsensus orCaesarsexecution. VegasInsider format/accessgates andFanDuel genericlocationcontent preservedas blockers; no hiddenquotes ingested. Canonicalmarket/decision/currentpicks/cutoffs unchanged. Pilot RUN_INCOMPLETE, notproductionacceptance.",
+    "Originalsourceintake manifestedandcanonicalexecutionreadbackverified; cashableserials/barcodesnotcopied. Fresno numericalrecorded-limitcompatibility only; currentJMU savedPASS preserved. No currentmarket/decision/frozen/HotSheetchange or settlement."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "120bd197c24ec79e15c2cecc443e17e6e4685031",
+      "purpose": "canonical market after 07:03 CT full Saturday board append"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "2fa8428caad7e57204c1c9ca6ce5fee4d9acaa5c",
+      "purpose": "current decision ledger after Fresno WAIT resolution"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "93405c823b1726932b4425d0d4d81a44ffd5181b",
+      "purpose": "canonical execution after two original Oct9issued actual-ticket appends;13wagers/$43.45historicstake; newsettlementunverified"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "6ae881224fa18b65a4408fa807a2582aebccf6fd",
+      "purpose": "unchanged; no new Week6 final settlement"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-10_0708CT.md",
+      "blob": "7ba3defaabb1f5092b45c9b8d69d51131b1fe9ef",
+      "purpose": "historical07:08snapshot; originalquotes/decisionsretained, Saturdaycolumnclockclarifiedinlatermanualview"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-10_1015CT.md",
+      "blob": "a798c35faf8aa409c8a982084cdf70c46b456946",
+      "purpose": "CURRENT_HOT_SHEET: retained10:15manualview with10:36consensus/Caesarsunavailabilityadoptionnote; no newretrieval/decision"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_SATURDAY_TOTAL_PROFILE_AND_CURRENT_SELECTION_QA_2026-10-10.md",
+      "blob": "8166a6dbbdfd15325406702ed2e3ae1aeea80df7",
+      "purpose": "qualifiedSaturday38+Nebraska totals and actual-current numericselectionQA"
+    },
+    {
+      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
+      "blob": "67d4a99da6bf7102c2e98d9ca4772c63d283e02f",
+      "purpose": "activepresentation numericfidelity/quoteclock/currentselectionrequirement"
+    },
+    {
+      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
+      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
+      "purpose": "ACTIVE user-approved downstream consensus benchmark / Caesars execution separation"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_CONSENSUS_PUBLIC_SOURCE_PILOT_2026-10-10.md",
+      "blob": "3106407c450000e8d3d31c1a73f61d0c5c3a4eab",
+      "purpose": "TestRoutinev6 three-game public source qualification / access-gate findings; not accepted live consensus"
+    },
+    {
+      "path": "evidence/operational/CFB_OCT09_ORIGINAL_TICKET_INTAKE_2026-10-10.json",
+      "blob": "fbcc829cedaedf6d35c99f8e947e1b2553a8a850",
+      "purpose": "safe original source identity/hash and executionfacts for JMU/Fresno; no rawcashable identifiers"
+    }
+  ]
+}
+```
