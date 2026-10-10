@@ -1,0 +1,7 @@
+# Separate manual QA closure — CFB_CURRENT_PUBLICATION_CI_QA_20261010T022024Z
+
+RUN_PASS for bounded current-publication source-binding CI enforcement only. Issued after independent terminalcandidate fetch at14f328bbba4e7ba7b3058882653e71d77fb14aed blob1445805a17648010d67fcf4d84d9a739aeb528de, and allapplicable source/test/workflow/contract/report/control/recovery exactcommit/main readbacks. Candidate captures exact identities, plannedmetadata, 14localregressions/actualindexCLI and independentGitHub38016732746/job114108548815 SUCCESS on7040beacad92696cddb6dbdda7a087dd511ed51a.
+
+Explicitcurrentpointer resolves2114sheetdb109dbee1a509c894a2eceef153e9812b96b4a3 to currentcanonicaldecision414655435785070be2fd7531e859799863e9a082. Finalrecoverye91581e7cc324d43c2806efe19235b2bbdccaae2 sevencheckpoints/latest19pointers/navigation-only replay verified. Historicalprojection isseparate. Binding alone doesnotcertify rendereddecisions/source/availability/bookexecution/bettingreadiness; currentknownacceptedv1.245/schema only. Naturalcorrectedproduceruse remainspending. OriginaleveningclaimedPASS/current-outputindependentRUN_INCOMPLETE and olderfailures retained, notupgraded.
+
+No taskmutation/dispatch/newworkflow, market/decision/wager/model/frozen change; fourenabledtaskfieldsunchanged. Scientific/Champion/Productionv5effectNONE, S2study-only/2025TESTunopened. ActualCaesars/finalavailability OPEN. Currentcard2conditional singlesplusFresnoWAIT with+7/max-115threshold unchanged. Separateclosure itself must bereadback before finalclaim.
