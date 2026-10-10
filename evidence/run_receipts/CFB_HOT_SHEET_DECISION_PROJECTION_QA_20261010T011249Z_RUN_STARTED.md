@@ -1,0 +1,3 @@
+# Hot Sheet decision projection QA — RUN_STARTED
+
+Run CFB_HOT_SHEET_DECISION_PROJECTION_QA_20261010T011249Z, manual downstream presentation QA, prospective 2026-10-10T01:12:49Z / 2026-10-09 20:12:49 CT. Recover canonical38latest dinner decisions and full49historicalsheet. Build/test currentdecision projection fidelity guard; produce fullweekly currentdecisionpresentation using unchangedfrozen/canonical13:02marketbytes, withexplicitoldquoteage andseparatedconditionalcountercutoffs. No newmarket/availabilityrefresh/wager/model/taskchange or scheduledMonitorclaim. Applicable prewrite49section/frozen/44total gates anddecisionguard; independently readbackrequired surfaces; separateterminalclosure. Naturalproducerintegration remainsseparate.
