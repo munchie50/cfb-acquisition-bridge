@@ -1,0 +1,6 @@
+# Current publication QA separate closure
+
+Run: CFB_CURRENT_PUBLICATION_QA_20261010T195627Z
+Final state: RUN_PASS — bounded current-publication QA correction and independent existing-evidence demonstration.
+Closure issued only after independent terminal candidate readbacka323ea6321592ec00d827b26070457baddccc2a8, report80e9628e6dae2a55314dcb7d99731bc469be5293, all six code/control surfaces named there and current recovery indexea2644eeac935aa6e331e2bdf5643984d53060cb readbacks matched. Final explicit selector replay with that exact index also passed. GitHub38081980577/job114300612317 SUCCESS independently reconciled original archive/current view/qualified afternoon composition. Four tasks unchanged; no new market/decision/wager/output/model observation or task dispatch. Original and intermediate failed runs retained.
+Remaining: corrected-clock natural producer demonstration PENDING; general scheduler/persistence rejection failure class OPEN; source-qualified consensus/currentCaesars not established; earlier morningQA still incomplete; money-ledger instruction unclassified; settlement/budget/CLV unverified. This closure does not upgrade original13:09producer assertions or certify broader market/betting/source truth. Scientific/Champion effect:NONE; ProductionRoutinev5 unchanged.
