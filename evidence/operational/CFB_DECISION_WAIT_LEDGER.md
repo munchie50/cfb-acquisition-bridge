@@ -247,3 +247,13 @@ Portfolio posture: no Friday or Saturday-morning casino trip is justified from t
 - Saturday afternoon 17 modeled rows remain INCONCLUSIVE until the governed Saturday 07:00 CT reconciliation. Required transition then: earned actionable state, explicit governed WAIT with hard cutoff, or PASS.
 - Saturday evening/night 14 modeled rows remain INCONCLUSIVE until the governed Saturday 13:00 CT reconciliation with the same fail-closed transition rule.
 No execution is established or inferred. No additional trip is authorized. Market movement alone cannot create or relax an acceptable threshold.
+
+
+## Friday dinner practical-window reconciliation — 2026-10-10T00:42:26Z
+Run: CFB_DINNER_CARD_REVIEW_20261010T003803Z; manual user-directed review. User needs Saturday bets tonight; default Saturday review times do not govern these four dinner-window decisions. Exact departure time unspecified; no later WAIT created.
+- Kent State @ Western Michigan: PASS / NO BET FOR THIS DINNER WINDOW. Frozen -26.7 / 48.3; saved benchmark -13.5 / 43.5 is not a current Caesars quote. Official preview supports directional research, but no earned selection/price cutoff or complete current availability/offer established.
+- Houston @ Kansas State: PASS / NO BET FOR THIS DINNER WINDOW. Frozen -10.6 / 55.0; saved benchmark -2.5 / 55.5. Official season-ending Anciaux injury and Houston run-defense/third-down matchup make evidence mixed; no earned cutoff established.
+- USC @ Penn State: PASS / NO BET FOR THIS DINNER WINDOW. Frozen -11.8 / 55.0; saved benchmark -1.5 / 54.5. Retrieved availability has significant absences/questionables; current Friday report and earned cutoff not established.
+- Air Force @ Northern Illinois: PASS / NO BET FOR THIS DINNER WINDOW. Frozen -16.1 / 48.4; saved benchmark -7.5 / 46.5. Starting QB Szarka confirmed season-ending injury in report of team announcement; replacement offense not sufficiently assessed to earn a cutoff.
+All four: acceptable line/maximum price NOT_ESTABLISHED; decision reconciliation satisfied now; current dinner execution window CLOSED by PASS. BET NOW singles/parlays NONE; no execution inferred; no separate trip justified. This is no-bet at the current practical window, not a price-quality/model-quality verdict. A later genuinely material qualified change requires a new prospective decision before any independently established execution window; price movement alone cannot reopen this PASS.
+Full provenance/limitations: evidence/operational/CFB_WEEK6_DINNER_EXECUTION_CARD_2026-10-09.md. Other 27 later-window rows not individually reconciled in this manual four-candidate scope. Saturday-morning seven retain earlier PASS; Nebraska remains UNMODELED. Production sheet and frozen authority unchanged.
