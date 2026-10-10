@@ -357,3 +357,12 @@ Mandatory unmodeled inclusion:
 - Indiana @ Nebraska: Indiana -7.5 (-105); Nebraska +7.5 (-110); ML Indiana -305 / Nebraska +250; displayed total 47.5/48.5. Nebraska remains an explicit v1.208 exclusion; no frozen prediction is manufactured.
 
 Coverage assertions for this append: 43 unique still-upcoming governed modeled games = Friday 5 + Saturday morning 7 + Saturday afternoon 17 + Saturday evening/night 14; no duplicate identity. The full accepted 49-game weekly modeled slate remains Tuesday 1 + Wednesday 2 + Thursday 3 + these 43. Nebraska is displayed separately and is not added to modeled cardinality. No market observation altered Champion/FIRST_FROZEN state.
+
+
+## Friday scheduled evening downstream reconciliation — 2026-10-09 20:22 CT
+Run: CFB_EVENING_AVAILABILITY_20261010T011934Z. Class: INTERMEDIATE_PUBLIC_BENCHMARK / AVAILABILITY. Retrieval time is not bookmaker offer time. Executability and actual Caesars availability remain UNVERIFIED. No prior observation is overwritten.
+- Old Dominion @ Appalachian State: newly retrieved public preview displays Appalachian State -10 and total 50.5; exact book and price unavailable. Source: https://www.docsports.com/free-picks/football/2026/old-dominion-monarchs-vs-appalachian-state-mountaineers-prediction-10-10-2026-college-football-picks-best-bets-odds.html . This supports, but does not execute, the established App State -10 or better / max -115 conditional cutoff.
+- Boise State @ Fresno State: same-day public conference preview displays Boise State -6.5 and total 48.5. Source: https://www.mwcconnection.com/pac-12-football/93956/2026-pac-12-week-6-game-previews-game-time-tv-schedule-odds-predictions . Fresno State +6.5 does not meet the established +7 or better cutoff; price unavailable.
+- Miami (OH) @ Massachusetts: no sufficiently newer qualified public quote was recovered in this cycle. The prior qualified dinner observation UMass +4.5 (-108) remains the latest canonical benchmark; actual Caesars availability is unverified.
+- Georgia @ Alabama: authoritative public reporting at this boundary says the 18:30 CT game remains scheduled despite Hurricane Isaias; hazardous weather remains material. Sources: https://apnews.com/article/4e6bc73acd34bac5ecfaa829c54b467e and https://rolltide.com/sports/football/schedule . Existing side/total PASS remains supported; no market or execution inference.
+No observation altered Champion/FIRST_FROZEN state.
