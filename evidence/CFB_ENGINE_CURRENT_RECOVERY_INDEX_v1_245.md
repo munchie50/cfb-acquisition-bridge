@@ -446,3 +446,89 @@ This replaces 19:19 navigation only from its new as-of boundary. Earlier prose, 
   ]
 }
 ```
+
+
+## Full review scope / practical trip guard — latest navigation checkpoint
+
+Earlier explicit state remains historical. Current recommendations and actual quote/availability limitations are retained. Existing default clocks are unchanged; later producer use still requires natural demonstration.
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-10T01:08:12Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Production v5 / Champion v1.193 / immutable FIRST_FROZEN v1.208 unchanged; v6 remains candidate, S2 study-only, 2025 TEST unopened.",
+    "Latest Saturday decision presentation is the full 19:53:50 CT dinner review: 38 modeled Saturday games/76 side and total verdicts, three conditional controlled-Beta singles App -10/UMass +4.5/Fresno +7, all max -115; other35 sides/all38 totals PASS. Nebraska separately unmodeled. Not full final availability verification or calibrated EV.",
+    "Actual Caesars offers remain UNVERIFIED; prices are retained fresh-retrieval public ESPN/DK benchmarks from prior manual run, not this QA run. User actual counter must meet cutoff; worse line/price PASS. Current dinner closure RUN_INCOMPLETE for execution/final full-team availability/weather readiness.",
+    "Seven morning/four narrow-dinner historical PASS retained. Narrow four-only report and old incomplete cycles remain historical; new unresolved-row recommendations are prospective. Original 15:38 Hot Sheet is historical ~13:02 market display; Rice/ECU noon CT applies prospectively in current dinner report.",
+    "Recovery tail guard remains installed/tested; latest full38card is not hidden behind oldercheckpoint. New full-review scope/explicitclock helper16tests and actual narrowreport rejection/full38coveragePASS independently verified in existing GitHubrun38011828740/job114093326128. Structuralcoverage is not football/source/availability/betting acceptance.",
+    "Read-only automationpeek thismanualrun confirms exactly4enabledproductiontasks and existingcadences. EveningFriday19:30–20:30flexiblewindow unexpired; last_run_time remains priorcycle and doesnotprove currentabsence/activity/success. No taskfieldmutation/newdispatch bythisQA.",
+    "Original11actual wagers/$33.45 and recorded7WIN/4LOSS grades remain separate execution evidence; grades not paid settlement/profit. Baylor LIVE separated; receipt timezone/preexecution causal links/budget/CLV/settlement remain incomplete.",
+    "Activev1.237 nowclarifies existing earlierpracticaldeadline/fullscope-before-ranking enforcement and references applicable testedhelper. Candidatev6/holistic integrated. ExistingGitHubQAautomaticallytests currentfullreviewcoverage; naturalscheduledproduceruse/deadlineenforcement and actualtripclockextraction/earlydispatchremainpending. Olderopaque/sourceclockdebtsOPEN.",
+    "This checkpoint is as-of navigation only. Independently recover applicable evidence, reconcile later changes, and append a new final tagged checkpoint with future material index updates. All prior bytes retained."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261009T180108Z_RUN_CLOSURE.md",
+      "blob": "0aef35d8204a5c48c142ca8724cf33c0401c297a",
+      "purpose": "independently recover natural afternoon closure; do not close morning failure"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261009T221353Z_RUN_CLOSURE.md",
+      "blob": "f8d76e548372599b0186eda75b41362f400d7e49",
+      "purpose": "independently recover natural Health success and retained older coverage gaps"
+    },
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "bbc222ec291ba1faff3f083f6da132d8e8214cae",
+      "purpose": "canonical market as-of checkpoint; compare freshly fetched bytes before current reliance"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "6d5f70c5b8c9d0bf49dd8853f581a0357321a497",
+      "purpose": "current decision as-of checkpoint; read complete appended history"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "cce489b65a62cb6bfefbfb167318aa7a2584a59f",
+      "purpose": "eleven original actual wagers, grades and incomplete historical links as-of checkpoint"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md",
+      "blob": "eaeded90f81dd1190e0ef77fc52a448f73ea5dca",
+      "purpose": "current corrected presentation with original approximately13:02 market retrieval; not a freshquote"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md",
+      "blob": "63ec14c167dfb4c64fb845ebd862f6aac588e487",
+      "purpose": "active default/earlier practical deadline authority with full-scope clarification; natural consumer pending"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_WEEK6_CANONICAL_MARKET_TOTAL_DISPLAY_GATE_2026-10-09.md",
+      "blob": "10939df20c97ada2266216b5c905d5f5217120de",
+      "purpose": "51-test bounded QA coverage; natural use and broader quote-fields pending"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_FULL_SATURDAY_DINNER_REVIEW_2026-10-09.md",
+      "blob": "020a377974b8b04edcc607bf0180da9c0666637c",
+      "purpose": "current full 38-game dinner review and conditional Beta card; actual Caesars unverified"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_FULL_SATURDAY_DINNER_REVIEW_20261010T004642Z_RUN_CLOSURE.md",
+      "blob": "65e659e61907e0de77f44a28a8cd19561914e9bc",
+      "purpose": "full review remains RUN_INCOMPLETE for actual execution/final availability readiness"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_DINNER_RECOVERY_TRAILING_UPDATE_GUARD_2026-10-09.md",
+      "blob": "b7c32b1142b37e1157c479641934537d9e8dbe3d",
+      "purpose": "recovery trailing-update guard tested on authentic full-index failure; independent QA limits"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_FULL_SATURDAY_SCOPE_AND_TRIP_DEADLINE_GUARD_2026-10-09.md",
+      "blob": "af73e23d60731aeff36bcb915252a240378a36a0",
+      "purpose": "full review scope and explicit earlier trip-clock guard built/tested/independent CI; actual source/execution not certified"
+    }
+  ]
+}
+```
