@@ -1034,3 +1034,68 @@ Prior bytes retained. This final tagged checkpoint supersedes earlier navigation
   ]
 }
 ```
+
+
+## Saturday actual-current numeric coverage — reconciled navigation checkpoint
+
+Prior bytes and original receipts retained. Manual presentation correction is not new market retrieval or a rerun of blocked game-day QA.
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-10T15:20:14Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Production v5 / Champion v1.193 / immutable FIRST_FROZEN v1.208 unchanged.",
+    "Fresh full Saturday public benchmark appended at 07:03 CT; actual Caesars executability remains unverified.",
+    "App State, Massachusetts and Fresno State sides are BET NOW CONDITIONAL at their established limits; Fresno prior WAIT is preserved and resolved prospectively by public +7 (-110). Remaining35 Saturday sides and all38 totals PASS; Nebraska unmodeled.",
+    "No execution or new settlement is established. Execution ledger and postgame scorecard were independently read back unchanged.",
+    "Current Hot Sheet has49 unique modeled rows exactly once across section counts1/2/3/5/7/17/14 plus Nebraska separately.",
+    "This checkpoint is as-of navigation only; later runs must independently read current canonical bytes.",
+    "Manual10:15viewcorrectsSaturdaytablequoteclockstoapproximately07:03CT only; all49frozenrows/147values/49directions unchanged. NewqualifiedSaturdaytotalprofile38+Nebraskaand22boundarytestsPASS; existingGitHub38063060107/job114245068955SUCCESS includesactualcurrentnumericselection. Profile remainsboundedknowncycle; futureproduceruse/source/book/finalavailabilityqualification separate.",
+    "Separate09AMQA remainsreportedRUN_INCOMPLETE/STARTED-only afterrejectedQAartifact/terminalwrites; originalfailurepath/errorunrecovered. No rejectedwrites retried/reconstructed. User-approvedWeeklyQA futureprompt persistence/containment instructions installed/readback, schedules unchanged; naturaldemonstrationpending. Earlierfailuresnotupgraded."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "120bd197c24ec79e15c2cecc443e17e6e4685031",
+      "purpose": "canonical market after 07:03 CT full Saturday board append"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "2fa8428caad7e57204c1c9ca6ce5fee4d9acaa5c",
+      "purpose": "current decision ledger after Fresno WAIT resolution"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "cce489b65a62cb6bfefbfb167318aa7a2584a59f",
+      "purpose": "unchanged; no new execution inferred"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "6ae881224fa18b65a4408fa807a2582aebccf6fd",
+      "purpose": "unchanged; no new Week6 final settlement"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-10_0708CT.md",
+      "blob": "7ba3defaabb1f5092b45c9b8d69d51131b1fe9ef",
+      "purpose": "historical07:08snapshot; originalquotes/decisionsretained, Saturdaycolumnclockclarifiedinlatermanualview"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-10_1015CT.md",
+      "blob": "cb2c926f293a0570a6fb0907a862f44b61f0eabb",
+      "purpose": "CURRENT_HOT_SHEET: 10:15manualpresentationclockclarification; no newretrieval ordecision"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_SATURDAY_TOTAL_PROFILE_AND_CURRENT_SELECTION_QA_2026-10-10.md",
+      "blob": "8166a6dbbdfd15325406702ed2e3ae1aeea80df7",
+      "purpose": "qualifiedSaturday38+Nebraska totals and actual-current numericselectionQA"
+    },
+    {
+      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
+      "blob": "67d4a99da6bf7102c2e98d9ca4772c63d283e02f",
+      "purpose": "activepresentation numericfidelity/quoteclock/currentselectionrequirement"
+    }
+  ]
+}
+```
