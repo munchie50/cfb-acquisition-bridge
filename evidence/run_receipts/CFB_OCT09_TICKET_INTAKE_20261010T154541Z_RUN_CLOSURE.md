@@ -1,0 +1,12 @@
+# CFB original-ticket intake — RUN_CLOSURE
+
+Run:CFB_OCT09_TICKET_INTAKE_20261010T154541Z
+Type:manual executionintake under standing screenshot/evidence controls
+Prospectiveboundary:2026-10-10T15:45:41Z
+Finalterminalstate:RUN_PASS
+Scope:actualexecution intake only; not bettingacceptance or settlement.
+Issued only after independentterminalcandidate readback:evidence/run_receipts/CFB_OCT09_TICKET_INTAKE_20261010T154541Z_TERMINAL_CANDIDATE.md, blob8aa87c6c07979019980ff75fe7fead38b5f632f1.
+Applicableexactreadbacks: originalmanifestfbcc829cedaedf6d35c99f8e947e1b2553a8a850; append-preservedcanonicalledger93405c823b1726932b4425d0d4d81a44ffd5181b; recoveryindexeffebf9dc026cafbf94f62d2603304954e941f64. Twelveexecuted safe-fact andseparation assertionsPASS. Two distinctactual$5wagers registered;13historicwagers/$43.45 totalstake. Rawticketidentifiers/imagesnotcopiedpublicly.
+Outstanding: budget, receiptclocktimezone/independenttiming, causalrecommendation andsettlement/CLV remainunverified, explicitlyoutsideintakecompletion. No frozenprediction/currentdecision/market/HotSheet/schedulechange. Scientific/Champion effect:NONE.
+
+RUN_PASS
