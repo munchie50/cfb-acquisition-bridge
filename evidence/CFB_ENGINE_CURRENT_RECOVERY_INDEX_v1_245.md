@@ -289,3 +289,68 @@ Disposition:CARD_LINEAGE_VERIFIED / ATTRIBUTION_RUN_INCOMPLETE. Persisted checkp
 ## Week6 canonical market-total display coverage — October9
 
 Run CFB_MARKET_TOTAL_DISPLAY_QA_20261009T233832Z; recover evidence/scheduler_qa/CFB_WEEK6_CANONICAL_MARKET_TOTAL_DISPLAY_GATE_2026-10-09.md, blob 10939df20c97ada2266216b5c905d5f5217120de. New read-only scripts/cfb_week6_market_total_display_gate.py checks exactdeclared canonicaltotal endpointsets forqualifiedOct9Week6block/cycle:43modeledFriday/SaturdayplusNebraska, preservesasymmetricpairs andrejectsunsupported/omittedendpoint. Original13:01UCF52.5–54.5rejected;existingcorrected15:3853.5/54.5passes. SourceGitblob recoveredatcanonicalpath, so laterappendsdonot falselyinvalidatehistoricalsheet. Fourteenregressions+existing37checks=51independentlypassed GitHubrun38005583878/job114073492883 at ee4b9f5a7a4b80fd4d25c814a5a82d5ba5490330; current49rows/147frozennumbers/49directions/44totaldisplayspassed. Workflowvalidates exactsection-selectedfiles. Useapplicablehelperbeforepersistencewherecomputationavailable; unknowncycle/schemafailsclosedpendingseparatequalification. This is onlytotal-numberdisplayfidelity:6earlier-weekrows,spreads/prices/ML/sourcewording/freshness/executability/decisionsnotcertified. Existingbroadercanonicalrowfidelityguardstillgoverns. PostwriteCIisnotprospectiveclosure ornaturalproduceruse; naturaldemonstration/futurephasecoveragepending. Currentcanonicalmarket/decision/execution/scorecard/HotSheetand4taskfieldsunchanged; nohistoricreceiptupgrade. Productionv5/Champion/scienceunchanged; earlierdebtspreserved.
+
+## Current frontier navigation checkpoint — October9 evening 19:19CT
+
+This explicitly dated navigation checkpoint supersedes earlier morning navigation summaries at its as-of boundary only. Detailed accepted authority and independently read-back current surfaces govern. Older text is preserved in full. Recovery consumers must inspect the complete doorway for these explicit checkpoints, not stop at the first historical ACTIVE/NEXT/quick-read paragraph. Where a computation runtime is available, scripts/cfb_recovery_navigation_reader.py extracts the latest valid explicit record and fails closed on absent/ambiguous clocks/schema. Reader output is NAVIGATION_ONLY_NOT_AUTHORITY and does not perform pointer readback or certify claims; independently recover each applicable pointer and reconcile later material changes. If no runtime is available, inspect the complete record and underlying evidence directly. No competing authority surface or task change.
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-10T00:19:31Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Production Routine v5 and Champion v1.193 / immutable FIRST_FROZEN v1.208 unchanged; v6 candidate, S2 study-only, 2025 TEST unopened.",
+    "Natural October9 13:01CT Market Monitor has separate independently observed closure; natural Health17:13CT has separate closure. These do not close October9 morning STARTED-only/reported failure, October8 Evening/Health coverage gaps or older incomplete cycles.",
+    "Friday five and Saturday-morning seven have prospective PASS/no-bet decisions. Seventeen Saturday-afternoon defaults due October10 07:00CT; fourteen Saturday-evening defaults due October10 13:00CT; earlier game-specific practical constraints remain separate.",
+    "Current saved Hot Sheet is October9 15:38presentation correction; underlying market retrieval approximately13:02CT, not fresh at19:19CT. No executable Caesars price/earned threshold or additional casino trip is established by this checkpoint.",
+    "Four enabled production schedules verified at19:16CT: MarketMonitor07:00/13:00 daily exact; EveningAvailabilityWed/Thu/Fri19:30flexible window through20:30; Healthdaily16:30flexible; WeeklyQA Sat/Sun/Tue09:00exact. Next eveningwindownotdue atcheckpoint; metadata next_run_time is null and does not certify absence, execution or success.",
+    "Eleven actual wagers total$33.45 are canonical; result grades7WIN/4LOSS are not book-paid settlement/profit. BaylorLIVE separated. Four October2tickets match immutable recordedlimits/card; Wisconsin outside recoveredcard; preexecution/causal links,receiptzone,budget,CLV andsettlement unverified.",
+    "Code QA demonstrates sections/frozenvalues/naming and qualifiedOct9market-total endpoints. Broader quoteattributes,current-source truth/freshness,natural changed-artifact enforcement andfuturephase parserqualification remainpending.",
+    "Opaque productionwrite-rejection cause andoriginalraw/preflightartifact403/1010clockcause remainOPEN. No alternate access/retries,canary,manualengine rerun ornewtask.",
+    "Historical top quick-read text is superseded for as-of navigation by this explicitcheckpoint, while its facts remainhistorical evidence. On material statechange re-read canonical surfaces/receipts; this record is not a livefeed."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261009T180108Z_RUN_CLOSURE.md",
+      "blob": "0aef35d8204a5c48c142ca8724cf33c0401c297a",
+      "purpose": "independently recover natural afternoon closure; do not close morning failure"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261009T221353Z_RUN_CLOSURE.md",
+      "blob": "f8d76e548372599b0186eda75b41362f400d7e49",
+      "purpose": "independently recover natural Health success and retained older coverage gaps"
+    },
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "bbc222ec291ba1faff3f083f6da132d8e8214cae",
+      "purpose": "canonical market as-of checkpoint; compare freshly fetched bytes before current reliance"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "fcbdc7f48e8518dc6826d0d39c06d864da1a12e9",
+      "purpose": "current decision as-of checkpoint; read complete appended history"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "cce489b65a62cb6bfefbfb167318aa7a2584a59f",
+      "purpose": "eleven original actual wagers, grades and incomplete historical links as-of checkpoint"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md",
+      "blob": "eaeded90f81dd1190e0ef77fc52a448f73ea5dca",
+      "purpose": "current corrected presentation with original approximately13:02 market retrieval; not a freshquote"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md",
+      "blob": "1fdecbe7d873876b6dbe2dd18e23d56256f5117a",
+      "purpose": "recover accepted deadline authority and earlier practical constraints separately"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_WEEK6_CANONICAL_MARKET_TOTAL_DISPLAY_GATE_2026-10-09.md",
+      "blob": "10939df20c97ada2266216b5c905d5f5217120de",
+      "purpose": "51-test bounded QA coverage; natural use and broader quote-fields pending"
+    }
+  ]
+}
+```
