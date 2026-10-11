@@ -2484,3 +2484,118 @@ Historical wording does not supersede exact accepted S0 evidence; operational au
   ]
 }
 ```
+
+
+## OriginalFIRST_FROZEN correction independently reconciled — actual2026-10-11T19:38:47Z
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-11T19:38:47Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Navigation only; independently recover governing controls and canonical current state. ProductionRoutinev5 remains active, TestRoutinev6 candidate, frozenChampionv1.193 unchanged.",
+    "Original accepted September26 FIRST_FROZEN artifact10897612260 independently recovered at ZIP772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf. All62Week7targets covered:51original predictions+11explicitexclusions; all4Tue/Wed original predictions exist. HistoricalChallengerB is today's BetaProductionChampion underv1.222.",
+    "Earlier blanket absentWeek7Champion/FIRST_FROZEN claims in originalSundayviews and priorQA were incomplete; preserved as historical evidence and prospectively superseded only on absence classification. October6S0research audit remains correct for its narrow refreshcoverage61+1, not complete FIRST_FROZEN ancestry.",
+    "Current sole HotSheet is manual14:29CTlineage correction with51faithfullyprojected original fairspread/total/homewintriples and11originalexclusions. October6REFRESH isseparate; no refreshprediction substitutesfor originalprediction/exclusion. No acceptedpointeradvance, new modelrun/acceptance orpromotion.",
+    "Canonicaldecision append corrects ancestry claim only; all62dispositions remainINCONCLUSIVE, thresholds/notrips/executions unchanged. Qualifiedconsensus unavailable andcurrentCaesars unverified. Marketquotes/movement/sourceclock remain13:05CT; newdisplayclock isnot newretrieval.",
+    "Currentoperationalkickoffs and archivedmodelclocks remainseparate. Saveddeadline/cutoff values remain retainedplanninginformation withUNVERIFIED/CUTOFF_AUTHORITY_UNVERIFIED; no effectiveaccessclock accepted, deadline extended, casinoaccess/tripinvented oroverduestate inferred.",
+    "IndependentGitHub38168633837/job114556348721 at760ff6bc andfollowup38168800068/job114556842196 at31e432e8 SUCCESS: bothacceptedZIPs,12ancestry+23projection+16opening+22afternoon tests,currentbinding/actual51+11CLI andfullretainedQA independentlyverified.153numericfields/51directions and11originalexclusions matched. Originalintermediatebindingfailures38168568853/38168571102 preserved; finalcoherentviewpassedseparately.",
+    "Whole assembled index validated beforewrite withunchanged strictreader; fullhistoricalactive validation, evidence-onlypaths andobservedUTCclock retained. Exactlytwooriginalrejectedrecords andoriginalincompleteclockQA unchanged.",
+    "New weekly Mondayreadiness/Tuesdaycandidate remainsseparatefuture operational dependency; candidate success/noop isnotacceptance. Naturalcorrectedabsence/display produceruse and broader scheduler/source/execution/cutoff/close/CLV/moneyambiguity debts remainOPEN. Fourproductiontaskfields unchanged.",
+    "Manualdisplay/absence-classification correction isCORRECTED/PERSISTED/READ_BACK/EXISTING_CI_DEMONSTRATED/INDEPENDENTLY_RECONCILED; NATURAL_PRODUCER_PENDING. EarlierpartialS0audit/report preserved andexplicitlybounded, originalFIRST_FROZEN nowcomplete. Exactlyfourproductiontaskconfigurationfields andacceptedsourcepointer independentlyunchanged."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "3d4aa26b8ca2c5ff9bad1e3b5545d41ebfd64c0a",
+      "purpose": "current canonical Sunday afternoon market observations; mixed-book fallback qualification preserved"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "6f287f813f8f0d364b408d13070c20137b2a17a4",
+      "purpose": "current canonical Sunday afternoon decision state and prospective Nebraska kickoff-clock correction"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
+      "purpose": "current execution surface; independently read and unchanged"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "6f7650d340bf63f8f93a2b825e35f8b8e41fa80b",
+      "purpose": "current scorecard; independently read and unchanged"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_0708CT.md",
+      "blob": "6d4e94b3646b6277a8b84152b1c5ead911714a9a",
+      "purpose": "HISTORICAL_WEEK7_MORNING_HOT_SHEET: immutable first-observation source"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md",
+      "blob": "c027e59eb0f752cd0225d69938f52e924f5c1a68",
+      "purpose": "HISTORICAL_WEEK7_AFTERNOON_HOT_SHEET: immutable13:05 market/movement; original absence classification superseded"
+    },
+    {
+      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
+      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
+      "purpose": "ACTIVE consensus benchmark and Caesars execution separation"
+    },
+    {
+      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
+      "blob": "c81e4d87944d0d2483dbf8d52aaee18f2941f9f7",
+      "purpose": "active current-output exact-once sectioning and actual-clock control"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R1.md",
+      "blob": "31d72be8927068879c9f5cf867c65eec3b8ff5e0",
+      "purpose": "current independent closing and learning surface; no model change"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "blob": "c4983b8ab05f098d16c208ed294e2e75ec5bb03f",
+      "purpose": "current durable findings: original51FIRST_FROZEN display corrected; independent CI passed, naturalproducer andoperationaldebts open"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md",
+      "blob": "63ec14c167dfb4c64fb845ebd862f6aac588e487",
+      "purpose": "active default/event/practical decision cadence authority"
+    },
+    {
+      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
+      "blob": "f90f0d87f5027fe93bf4ca2c22440539904890ef",
+      "purpose": "ACTIVE persistence and full proposed navigation-history pre-write validation"
+    },
+    {
+      "path": "evidence/CFB_WEEK7_PREDICTION_ANCESTRY_AND_EARLY_WEEK_HANDOFF_QA_2026-10-11.md",
+      "blob": "3d3a4caf1676770a7ad316e6375bdb074a329f72",
+      "purpose": "HISTORICAL bounded October6 S0 ancestry audit; original FIRST_FROZEN recovered separately afterward"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_ACCEPTED_S0_ANCESTRY_AUDIT_2026-10-11.json",
+      "blob": "bf21c4e684b09907084c63cf0b8b1a994ed1018f",
+      "purpose": "62game exact ancestry coverage and43 immutable start-time differences; not operational acceptance"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1429CT.md",
+      "blob": "71006586178a1829c51f119fff872b6f981cd865",
+      "purpose": "CURRENT_HOT_SHEET: faithful51FIRST_FROZEN values+11exclusions; retained13:05markets, unverifiedplanningclocks, no new decisions"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
+      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+      "purpose": "acceptedoriginal62target lineage census; distinct from October6REFRESH"
+    },
+    {
+      "path": "evidence/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_DISPLAY_CORRECTION_2026-10-11.md",
+      "blob": "6148d81b51073cc98d1f05319cfd108d710b548c",
+      "purpose": "original51+11 lineage/current-display correction and independent CI proof; naturalproducer pending"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_ROUTINE_V6_BACK_HALF_CANDIDATE_2026-09-30.md",
+      "blob": "240d7ce844af16412210b52263f511644c3063e1",
+      "purpose": "TestRoutinev6 CANDIDATE proceduralcontrol with explicit complete-boundary demonstration; Productionv5 unchanged"
+    }
+  ]
+}
+```
