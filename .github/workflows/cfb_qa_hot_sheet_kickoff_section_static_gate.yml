@@ -104,6 +104,8 @@ jobs:
         run: |
           python -m unittest discover -s scripts -p test_cfb_week7_accepted_s0_ancestry_audit.py
           python -m unittest discover -s scripts -p test_cfb_week7_first_frozen_projection_gate.py
+          python -m unittest discover -s scripts -p test_cfb_week7_opening_display_gate.py
+          python -m unittest discover -s scripts -p test_cfb_week7_afternoon_display_gate.py
       - name: Exercise execution-aware current decision rejection boundaries
         run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_execution_aware_decision_gate.py
       - name: Validate current execution-aware decision and ticket projection
