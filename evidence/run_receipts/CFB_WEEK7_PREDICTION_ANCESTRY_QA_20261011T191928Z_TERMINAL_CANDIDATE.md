@@ -1,0 +1,15 @@
+# Week7 prediction ancestry QA terminal candidate
+
+Run: CFB_WEEK7_PREDICTION_ANCESTRY_QA_20261011T191928Z
+Type: MANUAL_USER_DIRECTED_BOUNDED_DIAGNOSTIC
+Prospective boundary:2026-10-11T19:19:28Z
+STARTED evidence/run_receipts/CFB_WEEK7_PREDICTION_ANCESTRY_QA_20261011T191928Z_RUN_STARTED.md — aac227397987fa85bf307ce7a7e6550ea90a4339
+Factual result:12localregressions PASS, checksum-bound acceptedarchive coverage62targets/61S0predictions/1explicitexclusion;43startdifferences;4Tue/Wedpredictions andmatchingstarts.
+Report evidence/CFB_WEEK7_PREDICTION_ANCESTRY_AND_EARLY_WEEK_HANDOFF_QA_2026-10-11.md — 3d3a4caf1676770a7ad316e6375bdb074a329f72
+JSON evidence/operational/CFB_WEEK7_ACCEPTED_S0_ANCESTRY_AUDIT_2026-10-11.json — bf21c4e684b09907084c63cf0b8b1a994ed1018f
+Auditor scripts/cfb_week7_accepted_s0_ancestry_audit.py —6002edb0d72eb30ce7364e2ddcc07dd9afd164fe;12test script —eef0eff7fe336899a6719d3e40e32aad730ff13d.
+Register — e9fe02642526beb16660ef0bc9c62afe65a02f7d
+Recovery index — 02c5ece0b47ef0156231eb6c9f3b75c9c0ea0ead
+Every written surface independently reread; full assembled index validated before write with unchanged strict reader;14finalfrontier pointers independently freshly verified.
+Candidate doesnotcertify its own persistence; separate closure required after independent candidate readback.
+Bounded diagnostic complete; freshChampion/FIRST_FROZEN/consumerauthority, actualfuture workflowcompletion, practicalcutoffs, consensus/Caesars and otherdebt remainOPEN. No newCI/naturalcycle/fullnumericalacceptance claimed. Acceptedpointer/currentHotSheet/market/decision/execution/scorecard/model/wager/cash/task/schedules unchanged. Scientific/Champion effect NONE. Productionv5 unchanged/v6candidate.
