@@ -1849,3 +1849,79 @@ Prior checkpoints remain historical. This checkpoint is navigation-only and reco
   ]
 }
 ```
+
+
+## Sunday afternoon independent QA checkpoint — actual 2026-10-11T18:54:03Z
+
+Historical producer checkpoint and original receipts remain intact. Deterministic display evidence is not market/model/betting authority.
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-11T18:54:03Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Navigation only. Current detailed authority and canonical state must be independently read; prior Week6 and Week7 morning checkpoints are historical.",
+    "ProductionRoutinev5/Championv1.193 and accepted frozen FIRST_FROZEN lineage are unchanged; no Week7 frozen prediction has yet been earned and no scientific acceptance or routine promotion occurred.",
+    "Natural Sunday afternoon Market Monitor refreshed all 62 Week7 games and exactly-once sectioned them 2/2/3/3/13/17/22/0 after Oregon athletics established Nebraska at Oregon for 8:00PM PT / 10:00PM CT.",
+    "CBS field-level display remains mixed-book fallback: Market Consensus CONSENSUS_UNAVAILABLE and actual Caesars offer UNVERIFIED. 34 previously priced rows moved and 28 previously unavailable rows received their first qualified price observation at 13:05CT.",
+    "All 62 decisions remain INCONCLUSIVE because accepted Week7 frozen prediction, qualified consensus, and verified Caesars execution inputs are not earned. No acceptable number, execution, trip, probability, EV, or confidence was invented.",
+    "Execution ledger and postgame FIRST_FROZEN scorecard were independently read and unchanged; no new Week7 execution or applicable final exists.",
+    "The current Hot Sheet is the afternoon 62-game publication. The morning Hot Sheet remains historical and its earliest qualified observations remain immutable.",
+    "Independent QA38162504997 rejected bold four-source header; exact source identities matched. Subsequent strict-header compatibility plus separately qualified afternoon display passed existing GitHub38165617673/job114547451617 at4215e26f:27header/22afternoon/16opening/20historical execution regressions plus retained numeric gates. Original failures and natural completion assertions preserved; manual post-run QA is supplemental, not retroactive pre-closure validation.",
+    "Narrow prior current-navigation handoff debt NATURAL_PRODUCER_DEMONSTRATED: afternoon current checkpoint preceded candidate/closure, exact source/current-view identities match. Format/profile guard natural enforcement remains pending; broad scheduler/rejection, independent kickoff/deadline/execution authority, consensus/Caesars, close/CLV and money allocation/extra-$20 meaning remain OPEN. No operational/model/money/task change by QA."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "3d4aa26b8ca2c5ff9bad1e3b5545d41ebfd64c0a",
+      "purpose": "current canonical Sunday afternoon market observations; mixed-book fallback qualification preserved"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "4a525667b6ecfbeaf6e74222d18640e91e5d35f2",
+      "purpose": "current canonical Sunday afternoon decision state and prospective Nebraska kickoff-clock correction"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
+      "purpose": "current execution surface; independently read and unchanged"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "6f7650d340bf63f8f93a2b825e35f8b8e41fa80b",
+      "purpose": "current scorecard; independently read and unchanged"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_0708CT.md",
+      "blob": "6d4e94b3646b6277a8b84152b1c5ead911714a9a",
+      "purpose": "HISTORICAL_WEEK7_MORNING_HOT_SHEET: immutable first-observation source"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md",
+      "blob": "c027e59eb0f752cd0225d69938f52e924f5c1a68",
+      "purpose": "CURRENT_HOT_SHEET: Week7 Sunday afternoon 62-game refresh with authoritative Nebraska kickoff correction"
+    },
+    {
+      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
+      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
+      "purpose": "ACTIVE consensus benchmark and Caesars execution separation"
+    },
+    {
+      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
+      "blob": "fd72ed8186138cebc58db89a72b28745f18cbff7",
+      "purpose": "active current-output exact-once sectioning and actual-clock control"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R1.md",
+      "blob": "31d72be8927068879c9f5cf867c65eec3b8ff5e0",
+      "purpose": "current independent closing and learning surface; no model change"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "blob": "9f02880aa2a251d6cc0d460bbd56291eacef470c",
+      "purpose": "TestRoutinev6 natural current-handoff demonstrated; strict header/afternoon QA passed; broader and future enforcement debt open"
+    }
+  ]
+}
+```
