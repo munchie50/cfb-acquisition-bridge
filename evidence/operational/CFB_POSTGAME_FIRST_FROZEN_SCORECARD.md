@@ -128,3 +128,62 @@ Scientific effect: descriptive prospective evaluation only. Champion v1.193 unch
 | Boise State @ Fresno State | Fresno State -1.6 | +1.6 | 49.6 | .560 | Boise State 38, Fresno State 31 | -7 | 69 | -8.6 | +19.4 | 0 | https://www.reuters.com/sports/top-25-roundup-south-carolina-hands-no-16-florida-second-straight-loss--flm-2026-10-10/ |
 
 **Scientific effect:** Descriptive prospective evaluation only. No automatic Champion mutation, Challenger promotion, S2 acceptance, probability revision, or outcome-informed reconstruction.
+
+
+## Week 6 full-slate completion join — 2026-10-11 09:02 CT
+
+**Cycle:** CFB_WEEKLY_QA_20261011T135620Z  
+**Scope:** 45 previously unscored genuine pre-event Week 6 FIRST_FROZEN rows joined to final results from the CBS Sports FBS Week 6 scoreboard retrieved 2026-10-11. Four established-ticket games were already appended from official/authoritative sources by the 07:04 CT Market Monitor and are not duplicated. Union: 49/49 modeled games; unresolved joins 0. Nebraska remains an explicit unmodeled exclusion outside this denominator.  
+**Outcome source:** https://www.cbssports.com/college-football/scoreboard/FBS/2026/regular/6/?layout=compact
+
+| Game | Frozen home margin | Frozen total | Frozen home-win probability | Final (away-home) | Realized home margin | Realized total | Margin error | Total error | Home outcome |
+|---|---:|---:|---:|---|---:|---:|---:|---:|---:|
+| Southern Miss @ Troy | +6.4 | 51.9 | 0.612 | 34-55 | +21 | 89 | +14.6 | +37.1 | 1 |
+| Jacksonville State @ Kennesaw State | +3.6 | 52.1 | 0.579 | 27-26 | -1 | 53 | -4.6 | +0.9 | 0 |
+| New Mexico State @ FIU | +3.2 | 52.2 | 0.530 | 3-22 | +19 | 25 | +15.8 | -27.2 | 1 |
+| Missouri State @ Western Kentucky | -17.3 | 55.7 | 0.150 | 13-34 | +21 | 47 | +38.3 | -8.7 | 1 |
+| South Florida @ UTSA | -3.1 | 54.8 | 0.447 | 24-31 | +7 | 55 | +10.1 | +0.2 | 1 |
+| South Alabama @ Arkansas State | +2.3 | 54.8 | 0.613 | 56-49 | -7 | 105 | -9.3 | +50.2 | 0 |
+| Florida State @ Louisville | +17.5 | 64.8 | 0.873 | 20-44 | +24 | 64 | +6.5 | -0.8 | 1 |
+| Iowa @ Washington | -1.9 | 46.0 | 0.457 | 41-24 | -17 | 65 | -15.1 | +19.0 | 0 |
+| Washington State @ Utah State | -1.7 | 44.9 | 0.446 | 16-17 | +1 | 33 | +2.7 | -11.9 | 1 |
+| Wyoming @ San José State | +5.1 | 50.1 | 0.602 | 16-13 | -3 | 29 | -8.1 | -21.1 | 0 |
+| Iowa State @ BYU | +11.8 | 51.7 | 0.804 | 10-24 | +14 | 34 | +2.2 | -17.7 | 1 |
+| Arizona @ West Virginia | +3.4 | 53.8 | 0.564 | 52-31 | -21 | 83 | -24.4 | +29.2 | 0 |
+| Texas A&M @ Missouri | +7.7 | 48.5 | 0.643 | 6-27 | +21 | 33 | +13.3 | -15.5 | 1 |
+| UCF @ Oklahoma State | +4.3 | 55.1 | 0.600 | 28-42 | +14 | 70 | +9.7 | +14.9 | 1 |
+| North Carolina @ Pittsburgh | +8.3 | 46.7 | 0.680 | 21-17 | -4 | 38 | -12.3 | -8.7 | 0 |
+| Wake Forest @ NC State | +9.3 | 59.3 | 0.704 | 38-14 | -24 | 52 | -33.3 | -7.3 | 0 |
+| Sacramento State @ Bowling Green | -12.7 | 45.8 | 0.200 | 10-38 | +28 | 48 | +40.7 | +2.2 | 1 |
+| South Carolina @ Florida | +7.1 | 61.9 | 0.693 | 38-19 | -19 | 57 | -26.1 | -4.9 | 0 |
+| Texas vs Oklahoma | +3.4 | 42.8 | 0.519 | 24-27 | +3 | 51 | -0.4 | +8.2 | 1 |
+| UCLA @ Oregon | +5.1 | 62.8 | 0.655 | 17-15 | -2 | 32 | -7.1 | -30.8 | 0 |
+| Stanford @ Notre Dame | +27.6 | 49.3 | 0.943 | 7-58 | +51 | 65 | +23.4 | +15.7 | 1 |
+| Ole Miss @ Vanderbilt | +1.9 | 54.7 | 0.520 | 52-17 | -35 | 69 | -36.9 | +14.3 | 0 |
+| Illinois @ Michigan State | -4.4 | 50.9 | 0.359 | 38-37 | -1 | 75 | +3.4 | +24.1 | 0 |
+| Houston @ Kansas State | +10.6 | 55.0 | 0.757 | 35-16 | -19 | 51 | -29.6 | -4.0 | 0 |
+| Eastern Michigan @ Akron | +11.1 | 50.1 | 0.746 | 25-23 | -2 | 48 | -13.1 | -2.1 | 0 |
+| Duke @ Georgia Tech | +0.9 | 47.9 | 0.568 | 25-28 | +3 | 53 | +2.1 | +5.1 | 1 |
+| Central Michigan @ Ohio | -1.1 | 48.4 | 0.483 | 14-31 | +17 | 45 | +18.1 | -3.4 | 1 |
+| Charlotte @ North Texas | +7.8 | 62.1 | 0.669 | 10-50 | +40 | 60 | +32.2 | -2.1 | 1 |
+| Buffalo @ Toledo | +22.1 | 56.1 | 0.900 | 23-8 | -15 | 31 | -37.1 | -25.1 | 0 |
+| Kent State @ Western Michigan | +26.7 | 48.3 | 0.939 | 7-38 | +31 | 45 | +4.3 | -3.3 | 1 |
+| Rice @ East Carolina | +0.4 | 44.9 | 0.544 | 12-28 | +16 | 40 | +15.6 | -4.9 | 1 |
+| Maryland @ Ohio State | +11.4 | 56.4 | 0.759 | 16-45 | +29 | 61 | +17.6 | +4.6 | 1 |
+| Tennessee @ Arkansas | -19.0 | 54.7 | 0.144 | 24-17 | -7 | 41 | +12.0 | -13.7 | 0 |
+| San Diego State @ Oregon State | +7.7 | 56.9 | 0.678 | 14-66 | +52 | 80 | +44.3 | +23.1 | 1 |
+| Nevada @ UTEP | -5.1 | 49.6 | 0.368 | 30-13 | -17 | 43 | -11.9 | -6.6 | 0 |
+| North Dakota State @ UNLV | -8.7 | 46.1 | 0.273 | 7-13 | +6 | 20 | +14.7 | -26.1 | 1 |
+| LSU @ Kentucky | -2.5 | 55.1 | 0.453 | 34-35 | +1 | 69 | +3.5 | +13.9 | 1 |
+| Air Force @ Northern Illinois | -16.1 | 48.4 | 0.180 | 28-7 | -21 | 35 | -4.9 | -13.4 | 0 |
+| Syracuse @ Virginia | +10.1 | 50.8 | 0.732 | 25-28 | +3 | 53 | -7.1 | +2.2 | 1 |
+| Georgia @ Alabama | -7.0 | 61.7 | 0.329 | 20-17 | -3 | 37 | +4.0 | -24.7 | 0 |
+| Louisiana @ Louisiana Tech | +0.1 | 54.5 | 0.497 | 31-32 | +1 | 63 | +0.9 | +8.5 | 1 |
+| USC @ Penn State | +11.8 | 55.0 | 0.749 | 31-23 | -8 | 54 | -19.8 | -1.0 | 0 |
+| Minnesota @ Purdue | -5.8 | 58.6 | 0.345 | 13-41 | +28 | 54 | +33.8 | -4.6 | 1 |
+| Kansas @ Utah | +18.9 | 52.2 | 0.873 | 24-41 | +17 | 65 | -1.9 | +12.8 | 1 |
+| Hawai'i @ Arizona State | +14.1 | 53.4 | 0.781 | 12-30 | +18 | 42 | +3.9 | -11.4 | 1 |
+
+**Week 6 full 49-game diagnostic summary (45 rows here + 4 prior rows):** margin MAE 15.13; mean margin error +0.9; total MAE 13.54; mean total error -0.89; straight-up direction 25/49 (51.0%); home-win Brier 0.284. Descriptive one-week evidence only; not a calibration or promotion basis.
+
+**Scientific effect:** NONE. Champion v1.193, FIRST_FROZEN/accepted REFRESH lineage, exclusions, Challenger status, and betting rules remain unchanged. No outcome-informed reconstruction occurred.
