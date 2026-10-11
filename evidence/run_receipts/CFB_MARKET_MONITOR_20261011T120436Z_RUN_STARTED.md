@@ -1,0 +1,27 @@
+# RUN_STARTED — CFB_MARKET_MONITOR_20261011T120436Z
+
+- run_identity: CFB_MARKET_MONITOR_20261011T120436Z
+- run_type: natural scheduled CFB Market Monitor
+- prospective_boundary: Sunday 2026-10-11 07:04:36 America/Chicago
+- started_at_utc: 2026-10-11T12:04:36Z
+- recovered_repository_head: 0cc92483542d1a8d2d4fb770b04c8899b8e379af
+- current_recovery_authority: evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md
+- recovery_authority_blob: 11ceb95907a1a2411331669255fe9077bb0debb2
+- cadence_authority: evidence/CFB_ENGINE_FOOTBALL_WEEK_OPERATING_CADENCE_CONTRACT_v1_247.md
+- cadence_blob: 2a41f5cee71152c9f0a84cc3ee2f634020819dc2
+- persistence_authority: evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md
+- persistence_blob: cba5016eeedb091cce3059c257d3086219a3f284
+- terminal_contract: evidence/CFB_TERMINAL_RUN_RECEIPT_CLOSURE_CONTRACT_2026-10-05.md
+- terminal_contract_blob: 9a2f158beddcde783c25fbecfa6d8d66dd8b2ca8
+- sectioning_authority: evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md
+- sectioning_blob: 240afbe321ad1f28d577f4e155373622384ebb87
+- consensus_caesars_control: evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md
+- consensus_caesars_blob: c87498072194ee07e62ac8c40dfc61f5e3b30ad9
+- recovered_market_blob: d25896f5eb476b2c70dae292d7e099627f0f528c
+- recovered_decision_blob: 8e4ef9544c52cbf0d8b3ce5d0d99fbc6249ff623
+- recovered_execution_blob: 3e165dec97d2ebe4e595f2109d12c1f7e2d86f4e
+- recovered_scorecard_blob: 6ae881224fa18b65a4408fa807a2582aebccf6fd
+- current_hot_sheet: evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-10_1312CT.md
+- current_hot_sheet_blob: 1d64f2bc69414ea9816a08eb8fef22edd47decc3
+- scope: Sunday postgame settlement plus prospective next-week opening-board capture; no prediction freeze, acceptance, or task-lifecycle mutation
+- notice: RUN_STARTED is observability evidence only and is not completion evidence.
