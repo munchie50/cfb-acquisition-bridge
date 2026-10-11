@@ -136,3 +136,18 @@ If a permitted update returns a commit/content identity but immediate readback m
 5. An opaque/rejected write without a proved accepted commit continues to follow the existing rejection rules. This guard grants no additional write retry. Natural producer use remains DEMONSTRATION_PENDING; the observed manual exact-commit/current-branch recovery is bounded proof only.
 
 This read-only reconciliation strengthens existing independent readback. No schedule, scientific, Champion or semantic authority change.
+
+## October11 recovery-index pre-write validation and rejected-checkpoint containment
+
+Trigger: any mutation of the tagged current recovery navigation. The reader validates EVERY active tagged checkpoint, not only the last. A new valid tail cannot repair an earlier active malformed record or duplicated/reversed checkpoint clock. Never assume append-only construction proves conformance.
+
+Before writing the complete proposed index:
+1. Recover the exact current blob and entire active history; assemble the full proposal against those bytes.
+2. Apply unchanged scripts/cfb_recovery_navigation_reader.py to that complete proposal with actual timezone-aware current UTC. Verify accepted fields, evidence/-only paths, unique pointers, strictly increasing active checkpoint clocks, no future clock, and no uncheckpointed tail. Independently reconcile each applicable current source/view pointer; navigation output itself is not source readback.
+3. Inspect the actual validator result before issuing update_file. A failing proposal must not reach repository mutation. When computation is unavailable, perform the equivalent complete validation and state what remains unverified; do not claim an executable ran or use post-write CI as prospective proof.
+4. Preserve prior valid records and all failed-run evidence. An old malformed active record is not permission to relax reader validation. Reclassifying historical fence status requires specific user/accepted governance direction; do not silently erase, rewrite JSON, invent chronology or self-authorize quarantine.
+5. Under the user's narrowly directed October11 repair only, two QA-authored19:02:07Z malformed opening fences are now cfb-frontier-json-rejected. Complete original JSON, all other prior bytes, original Git blobs/commits and incomplete receipts remain intact. Rejected records are historical evidence, not active navigation or accepted claims. Any such authorized reclassification must be followed by a fresh valid final checkpoint and independently executed full reader/source/display checks.
+6. After accepted write, independently fetch exact expected content/blob and use existing immutable-commit/current-branch reconciliation if needed. Preserve actual original failures; a subsequent repair never upgrades an earlier RUN_INCOMPLETE.
+
+Demonstrated current repair: complete local proposal validated before update,20navigation assertions preserve invalid-active-history, duplicate/reversed-clock, rejected-tail and no-active-recovery rejection. Strict reader unchanged. Full independent GitHub/current pointer reconciliation remains separately required before closure. Future producer pre-write use remains DEMONSTRATION_PENDING; no broad scheduler/rejection class closure.
+Scientific/Champion/model/task schedule effect NONE.
