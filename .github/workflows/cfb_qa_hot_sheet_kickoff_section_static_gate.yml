@@ -16,6 +16,10 @@ on:
       - 'scripts/test_cfb_week6_afternoon_total_display_gate.py'
       - 'scripts/cfb_hot_sheet_current_decision_binding_gate.py'
       - 'scripts/cfb_hot_sheet_execution_aware_decision_gate.py'
+      - 'scripts/cfb_week7_timing_authority_audit.py'
+      - 'scripts/test_cfb_week7_timing_authority_audit.py'
+      - 'evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md'
+      - 'evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md'
       - 'scripts/cfb_week7_afternoon_display_gate.py'
       - 'scripts/test_cfb_week7_afternoon_display_gate.py'
       - 'scripts/cfb_week7_opening_display_gate.py'
@@ -96,6 +100,16 @@ jobs:
               python scripts/cfb_week7_afternoon_display_gate.py --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --morning-market "$RUNNER_TEMP/cfb_week7_morning_market.md" --morning-decision "$RUNNER_TEMP/cfb_week7_morning_decision.md" --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md ;;
             *) echo "Unsupported current publication requires qualification"; exit 1 ;;
           esac
+      - name: Report saved timing exceptions without certifying practical deadlines
+        run: |
+          cfb_current_sheet=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["sheet_path"])' "$RUNNER_TEMP/cfb_current_sheet_binding.json")
+          if [[ "$cfb_current_sheet" == evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md ]]; then
+            python -m unittest discover -s scripts -p test_cfb_week7_timing_authority_audit.py
+            python scripts/cfb_week7_timing_authority_audit.py --sheet "$cfb_current_sheet" --ledger evidence/operational/CFB_DECISION_WAIT_LEDGER.md --cadence evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md --sectioning evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md --as-of "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$RUNNER_TEMP/cfb_timing_exceptions.json"
+            python -c 'import json,sys; r=json.load(open(sys.argv[1])); r.pop("rows"); print(json.dumps(r,indent=2))' "$RUNNER_TEMP/cfb_timing_exceptions.json"
+          else
+            echo "Timing diagnostic not qualified for this boundary; no timing authority acceptance."
+          fi
       - name: Validate retained historical dinner decision Hot Sheet projection
         run: python scripts/cfb_hot_sheet_decision_projection_gate.py --baseline evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md --review evidence/operational/CFB_WEEK6_FULL_SATURDAY_DINNER_REVIEW_2026-10-09.md --sheet evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_2012CT.md
       - name: Recover authenticated accepted FIRST_FROZEN archive
