@@ -72,5 +72,20 @@ class NavigationTests(unittest.TestCase):
             else:bad['pointers'].append(copy.deepcopy(bad['pointers'][0]))
             with self.assertRaises(ValueError):reader.read(block(bad),NOW)
 
+    def rejected(self,r):return block(r).replace('cfb-frontier-json\n','cfb-frontier-json-rejected\n')
+    def test_rejected_records_do_not_replace_active_navigation(self):
+        bad=copy.deepcopy(BASE);bad['pointers'][0]['path']='scripts/invalid.py'
+        later=copy.deepcopy(BASE);later['as_of_utc']='2026-10-10T00:18:55Z'
+        result=reader.read(block(BASE)+self.rejected(bad)+block(later),NOW)
+        self.assertEqual(result['checkpoint_count'],2);self.assertEqual(result['frontier'],later)
+    def test_active_invalid_history_still_fails(self):
+        bad=copy.deepcopy(BASE);bad['as_of_utc']='2026-10-10T00:18:00Z';bad['pointers'][0]['path']='scripts/invalid.py'
+        later=copy.deepcopy(BASE);later['as_of_utc']='2026-10-10T00:18:55Z'
+        with self.assertRaises(ValueError):reader.read(block(BASE)+block(bad)+block(later),NOW)
+    def test_rejected_tail_requires_new_final_checkpoint(self):
+        with self.assertRaisesRegex(ValueError,'uncheckpointed'):reader.read(block(BASE)+self.rejected(BASE),NOW)
+    def test_only_rejected_is_not_recovery(self):
+        with self.assertRaises(ValueError):reader.read(self.rejected(BASE),NOW)
+
 if __name__=='__main__':unittest.main()
 
