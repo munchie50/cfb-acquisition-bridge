@@ -12,7 +12,20 @@ class ExecutionProjectionTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.sheet=(ROOT/SHEET).read_bytes().decode()
-        decision_sha,execution_sha=re.findall(r'^Canonical inputs: market [0-9a-f]{40}; decision ([0-9a-f]{40}); execution ([0-9a-f]{40})\\.
+        refs=re.findall(r'^Canonical inputs: market [0-9a-f]{40}; decision ([0-9a-f]{40}); execution ([0-9a-f]{40})\.$',cls.sheet,re.M)
+        if len(refs)!=1:raise ValueError('Historical sheet must declare one decision/execution identity')
+        decision_sha,execution_sha=refs[0]
+        def historical(path,sha):
+            current=(ROOT/path).read_bytes().decode()
+            if gate.blob_sha(current)==sha:return current
+            objects=subprocess.check_output(['git','rev-list','--objects','--all','--',path],cwd=ROOT,text=True)
+            if not any(line.split(' ',1)[0]==sha for line in objects.splitlines()):
+                raise ValueError('Declared historical canonical identity absent from authenticated path history')
+            value=subprocess.check_output(['git','cat-file','blob',sha],cwd=ROOT).decode()
+            if gate.blob_sha(value)!=sha:raise ValueError('Historical source identity mismatch')
+            return value
+        cls.decision=historical(DECISION,decision_sha)
+        cls.execution=historical(EXECUTION,execution_sha)
         cls.baseline=(ROOT/BASELINE).read_bytes().decode()
     def check(self, sheet=None, decision=None, execution=None):
         return gate.audit(self.sheet if sheet is None else sheet, self.baseline,
