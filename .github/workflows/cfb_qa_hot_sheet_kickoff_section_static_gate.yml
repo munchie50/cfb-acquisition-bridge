@@ -16,6 +16,8 @@ on:
       - 'scripts/test_cfb_week6_afternoon_total_display_gate.py'
       - 'scripts/cfb_hot_sheet_current_decision_binding_gate.py'
       - 'scripts/cfb_hot_sheet_execution_aware_decision_gate.py'
+      - 'scripts/cfb_week7_afternoon_display_gate.py'
+      - 'scripts/test_cfb_week7_afternoon_display_gate.py'
       - 'scripts/cfb_week7_opening_display_gate.py'
       - 'scripts/test_cfb_week7_opening_display_gate.py'
       - 'scripts/test_cfb_hot_sheet_execution_aware_decision_gate.py'
@@ -83,9 +85,15 @@ jobs:
           case "$cfb_current_sheet" in
             evidence/operational/CFB_WEEK6_HOT_SHEET_*)
               python scripts/cfb_hot_sheet_execution_aware_decision_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --baseline evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md ;;
-            evidence/operational/CFB_WEEK7_HOT_SHEET_*)
+            evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_0708CT.md)
               python -m unittest discover -s scripts -p test_cfb_week7_opening_display_gate.py
               python scripts/cfb_week7_opening_display_gate.py --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md ;;
+            evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md)
+              python -m unittest discover -s scripts -p test_cfb_week7_opening_display_gate.py
+              python -m unittest discover -s scripts -p test_cfb_week7_afternoon_display_gate.py
+              PYTHONPATH=scripts python -c 'import sys; from test_cfb_week7_opening_display_gate import snapshot; sys.stdout.write(snapshot("evidence/operational/CFB_MARKET_MONITOR_STATE.md","444d42107c646c379b2b51ac643460f3123ea9e6"))' > "$RUNNER_TEMP/cfb_week7_morning_market.md"
+              PYTHONPATH=scripts python -c 'import sys; from test_cfb_week7_opening_display_gate import snapshot; sys.stdout.write(snapshot("evidence/operational/CFB_DECISION_WAIT_LEDGER.md","4c6b3468f0e0839ce85be0c96a5e9498b94d692a"))' > "$RUNNER_TEMP/cfb_week7_morning_decision.md"
+              python scripts/cfb_week7_afternoon_display_gate.py --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --morning-market "$RUNNER_TEMP/cfb_week7_morning_market.md" --morning-decision "$RUNNER_TEMP/cfb_week7_morning_decision.md" --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md ;;
             *) echo "Unsupported current publication requires qualification"; exit 1 ;;
           esac
       - name: Validate retained historical dinner decision Hot Sheet projection
