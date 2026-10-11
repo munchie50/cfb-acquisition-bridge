@@ -139,3 +139,18 @@ Run: CFB_OCT09_ADDITIONAL_TICKET_INTAKE_20261010T155228Z; source manifest eviden
 Common fields: budget UNASSIGNED production/sandbox; receipt timezone UNSPECIFIED; NOT_LIVE_LABELLED; authoritative kickoff/execution chronology, genuine pre-execution recommendation attribution, settlement/redemption/payment and CLV UNVERIFIED. Receipt event times do not replace operational kickoff clocks or extend practical cutoffs. App State -10/-110 and Massachusetts +5/-110 numerically satisfy saved -10-or-better and +4.5-or-better/max-115 limits; this is numeric compatibility only, not causal recommendation or pre-execution sequence certification. Current offers/consensus are not certified by historical tickets.
 
 Additional actual stake $10.00; prior thirteen wagers/$43.45 plus two = fifteen actual wagers/$53.45 cumulative historical stake. All four October9-issued tickets now total $20.00 staked; combined printed maximum payout $38.15 if all four win, not realized cash. No settlement or profit booked. User instruction "Also add 20 to money ledger" retained as PENDING_CLARIFICATION: additional bankroll funding versus the four-ticket stake total unspecified. No additional $20 debit or capital credit booked, no budget assignment or changed sandbox balance inferred. No model, frozen prediction, decision, market, Hot Sheet, scorecard or scheduler change.
+
+
+## Week 6 authoritative settlement — 2026-10-11 07:18 CT
+
+**Cycle:** CFB_MARKET_MONITOR_20261011T120436Z  
+**Scope:** Settlement of four established October 9-issued tickets only. Ticket identity, accepted line/price, and unassigned production/sandbox classification remain unchanged. Results do not prove causal recommendation attribution, receipt timezone, or execution chronology and do not alter frozen predictions or earlier decisions.
+
+| Execution ID | Selection | Stake | Accepted price | Authoritative final | Grade | Return | Net P/L | Result source |
+|---|---|---:|---|---|---|---:|---:|---|
+| CFB_OCT09-03 | Appalachian State -10 | $5.00 | -110 | Old Dominion 10, Appalachian State 3 | LOSS | $0.00 | -$5.00 | Appalachian State Athletics: https://appstatesports.com/sports/football |
+| CFB_OCT09-04 | Massachusetts +5 | $5.00 | -110 | Miami (OH) 20, Massachusetts 19 | WIN | $9.55 | +$4.55 | Massachusetts Athletics: https://umassathletics.com/news/2026/10/10/football-minutemen-comeback-falls-one-point-short-to-miami-oh-20-19 |
+| CFB_OCT09-01 | James Madison -7.5 | $5.00 | -107 | James Madison 27, Georgia Southern 24 | LOSS | $0.00 | -$5.00 | James Madison Athletics: https://jmusports.com/news/2026/10/11/football-dukes-grind-out-road-win-at-georgia-southern |
+| CFB_OCT09-02 | Fresno State +7 | $5.00 | -113 | Boise State 38, Fresno State 31 | PUSH | $5.00 | $0.00 | Reuters: https://www.reuters.com/sports/top-25-roundup-south-carolina-hands-no-16-florida-second-straight-loss--flm-2026-10-10/ |
+
+**Settlement arithmetic:** $20.00 stake; $14.55 return; **-$5.45 net P/L**. No redemption/payment status is inferred. The prior “additional $20” ambiguity remains unresolved; no additional debit, capital credit, or budget assignment is booked.
