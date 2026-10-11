@@ -14,7 +14,11 @@ def blob(text):
 
 def audit(sheet, ledger):
     # A qualified execution reference is optional metadata, not decision authority.
-    refs=re.findall(r'^Canonical inputs: market [0-9a-f]{40}; decision ([0-9a-f]{40})(?:; execution [0-9a-f]{40})?\.$',sheet,re.M)
+    plain=r'^Canonical inputs: market [0-9a-f]{40}; decision ([0-9a-f]{40})(?:; execution [0-9a-f]{40})?\.$'
+    bold=r'^\*\*Canonical inputs:\*\* market [0-9a-f]{40}; decision ([0-9a-f]{40}); execution [0-9a-f]{40}; scorecard [0-9a-f]{40}\.$'
+    declarations=[l for l in sheet.splitlines() if 'Canonical inputs:' in l]
+    refs=re.findall(plain,sheet,re.M)+re.findall(bold,sheet,re.M)
+    if len(declarations)!=1:raise ValueError('unique canonical decision binding required')
     if len(refs)!=1:
         raise ValueError('unique canonical decision binding required')
     if refs[0]!=blob(ledger):
