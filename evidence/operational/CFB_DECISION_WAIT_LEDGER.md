@@ -431,3 +431,12 @@ Portfolio disposition: four October 9 issued tickets are established executions 
 | Nebraska @ Oregon | Sat Oct 17 2:00 PM CT (07:08 capture; now superseded prospectively) | Sat Oct 17 10:00 PM CT — Oregon athletics announcement, 8:00 PM PT on FOX | INCONCLUSIVE | Accepted frozen prediction plus qualified benchmark or verified Caesars offer; availability/weather as relevant | Sat Oct 17 1:00 PM CT | Sat Oct 17 9:00 PM CT | Not established; no execution before inputs are earned |
 
 All other governed Week 7 game states, triggers, reconciliation deadlines, and hard cutoffs are unchanged from the 07:08 CT opening capture. Tuesday games remain due for reconciliation Tuesday 13:00 CT; INCONCLUSIVE may not drift beyond its applicable deadline.
+
+
+## Week 7 FIRST_FROZEN lineage clarification — 2026-10-11 14:29 CT
+
+Original September26 accepted artifact10897612260 (ZIP 772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf) covers all62 currentWeek7 targets:51 immutable FIRST_FROZEN predictions and11 explicit original exclusions. This prospectively corrects the earlier blanket no-accepted-Week7-FIRST_FROZEN claim; historical statements remain preserved. All4Tuesday/Wednesday games have original predictions. Historical Challenger B is the active Beta Production Champion under v1.222, not a different model.
+
+Accepted October6 REFRESH artifact11423386216 (ZIP 674501a82f6eb207b58b30c483910304c881b3ce29ba2506258152455cb6047b) covers61 predictions+1 exclusion, including10 targets excluded in the original snapshot. REFRESH never substitutes for or rewrites original predictions/exclusions. The upcoming Monday readiness/Tuesday candidate is a separate weekly-cycle dependency, not the existence test for original accepted predictions.
+
+All62 decision dispositions remain INCONCLUSIVE; acceptable numbers/prices remain not established. No bet, trip, execution or confidence is authorized. Qualified consensus/current Caesars and material availability remain unresolved.51 rows can display accepted original numbers;11 original exclusions stay explicit. Current schedule and historical model clocks remain separate. Existing saved reconciliation/cutoff values are retained only as planning information: CUTOFF_AUTHORITY_UNVERIFIED; effective practical provenance remains unresolved. No deadline is relaxed or invented.
