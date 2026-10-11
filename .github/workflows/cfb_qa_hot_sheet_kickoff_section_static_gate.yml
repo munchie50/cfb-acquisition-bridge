@@ -20,6 +20,12 @@ on:
       - 'scripts/test_cfb_week7_timing_authority_audit.py'
       - 'evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md'
       - 'evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md'
+      - 'scripts/cfb_weekly_carry_forward_gate.py'
+      - 'scripts/test_cfb_weekly_carry_forward_gate.py'
+      - 'evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_*.md'
+      - 'evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md'
+      - 'evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json'
+      - 'evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md'
       - 'scripts/cfb_week7_first_frozen_projection_gate.py'
       - 'scripts/test_cfb_week7_first_frozen_projection_gate.py'
       - 'scripts/cfb_week7_accepted_s0_ancestry_audit.py'
@@ -59,6 +65,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Exercise weekly carry-forward ancestry and historical-preservation boundaries
+        run: python -m unittest discover -s scripts -p test_cfb_weekly_carry_forward_gate.py
+      - name: Validate selected weekly learning correction and exact source bindings
+        run: |
+          python scripts/cfb_weekly_carry_forward_gate.py --review evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md --original evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R1.md --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json --health evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md
       - name: Validate original research candidate
         run: python scripts/cfb_hot_sheet_kickoff_section_static_gate.py
       - name: Exercise production presentation rejection boundaries
