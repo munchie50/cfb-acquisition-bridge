@@ -416,3 +416,18 @@ Portfolio disposition: four October 9 issued tickets are established executions 
 | Sat Oct 17 9:30 PM CT | Wake Forest @ California | INCONCLUSIVE | Accepted frozen prediction; qualified multi-book benchmark; independently verified Caesars offer; availability/weather as relevant | Sat Oct 17 1:00 PM CT | Sat Oct 17 8:30 PM CT | Not established | None until inputs are earned; at deadline transition to actionable, governed WAIT with explicit trigger, or PASS |
 | Sat Oct 17 9:30 PM CT | Fresno St. @ San Diego St. | INCONCLUSIVE | Accepted frozen prediction; qualified multi-book benchmark; independently verified Caesars offer; availability/weather as relevant | Sat Oct 17 1:00 PM CT | Sat Oct 17 8:30 PM CT | Not established | None until inputs are earned; at deadline transition to actionable, governed WAIT with explicit trigger, or PASS |
 | Sat Oct 17 9:30 PM CT | New Mexico @ Hawaii | INCONCLUSIVE | Accepted frozen prediction; qualified multi-book benchmark; independently verified Caesars offer; availability/weather as relevant | Sat Oct 17 1:00 PM CT | Sat Oct 17 8:30 PM CT | Not established | None until inputs are earned; at deadline transition to actionable, governed WAIT with explicit trigger, or PASS |
+
+
+## Week 7 afternoon decision reconciliation — 2026-10-11 13:05 CT
+
+**Cycle:** CFB_MARKET_MONITOR_20261011T180208Z  
+**Outcome:** 62/62 games remain **INCONCLUSIVE** because an accepted Week 7 Champion/FIRST_FROZEN prediction is not yet earned, qualified multi-book consensus is unavailable, and an actual Caesars execution offer is unverified. No raw market move is converted into EV, confidence, or an actionable wager. No acceptable number/price is established. Production and $20 sandbox executions remain none for Week 7.  
+**Portfolio control:** no trip is authorized; retain the approximately 1–2 trips/week objective and do not chase a later number.
+
+### Prospective kickoff-clock correction
+
+| Game | Prior carried kickoff | Authoritative current kickoff | State | Pending reason / next trigger | Reconciliation deadline | Hard final execution cutoff | Acceptable number / execution window |
+|---|---|---|---|---|---|---|---|
+| Nebraska @ Oregon | Sat Oct 17 2:00 PM CT (07:08 capture; now superseded prospectively) | Sat Oct 17 10:00 PM CT — Oregon athletics announcement, 8:00 PM PT on FOX | INCONCLUSIVE | Accepted frozen prediction plus qualified benchmark or verified Caesars offer; availability/weather as relevant | Sat Oct 17 1:00 PM CT | Sat Oct 17 9:00 PM CT | Not established; no execution before inputs are earned |
+
+All other governed Week 7 game states, triggers, reconciliation deadlines, and hard cutoffs are unchanged from the 07:08 CT opening capture. Tuesday games remain due for reconciliation Tuesday 13:00 CT; INCONCLUSIVE may not drift beyond its applicable deadline.
