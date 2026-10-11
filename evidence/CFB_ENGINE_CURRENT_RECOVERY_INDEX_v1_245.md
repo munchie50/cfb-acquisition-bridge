@@ -1610,3 +1610,88 @@ Navigation only; unchanged operational state independently read back.
   ]
 }
 ```
+
+
+## Sunday Week7 opening-view recovery reconciliation — actual authoring boundary
+
+Prior bytes retained. Current selector is Week7; prior Week6 snapshots remain historical.
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-11T14:25:24Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Navigation only. Current detailed authority/canonical state must be independently read; old Week6 checkpoints are historical.",
+    "ProductionRoutinev5/Championv1.193/frozen FIRST_FROZEN unchanged; no scientific acceptance or routine promotion.",
+    "Sunday monitor created Week7 pre-freeze opening view:62 games across2/2/3/3/13/18/21, Nebraska@Oregon included. Exact display gate validated against saved market/decision bytes; no new observations, model predictions or bets.",
+    "MarketConsensus CONSENSUS_UNAVAILABLE and currentCaesars UNVERIFIED. CBS field-level mixed-book fallback and unavailable quotes remain explicit. Printed Open field is a source reference, not earlier observed chronology.",
+    "Sunday WeeklyReview and completed49-row Week6 scorecard exist. Four ticket grades1WIN/2LOSS/1PUSH and arithmetic$14.55return/-$5.45net recorded, NOT proof of sportsbook payment/redemption.15actualhistoric tickets/$53.45stake; allocation and extra-$20 instruction unresolved.",
+    "Morning independentQA38138622504 failed on stale recoverycanonical decision pointer. New currentselector/header and separately qualifiedWeek7 gate correct that handoff; original failures/naturalRUN_PASS receipts preserved. Full correctedGitHub demonstration pending until independently verified.",
+    "Week6 originalHotSheet remains historical and its profile regressions use immutable source blobs, not changedWeek7 ledgers. Unknown futurephase/sourceboundary failsclosed.",
+    "Saved Week7 deadlines/cutoffs are compared for display fidelity only; independent authority qualification is separate. No new deadline or cutoff inferred. Next natural producer must demonstrate currentnavigation reconciliation before closure."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "444d42107c646c379b2b51ac643460f3123ea9e6",
+      "purpose": "current canonical Sunday state; independent source semantics remain separate"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "4c6b3468f0e0839ce85be0c96a5e9498b94d692a",
+      "purpose": "current canonical Sunday state; independent source semantics remain separate"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
+      "purpose": "current canonical Sunday state; independent source semantics remain separate"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "6f7650d340bf63f8f93a2b825e35f8b8e41fa80b",
+      "purpose": "current canonical Sunday state; independent source semantics remain separate"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-10_1312CT.md",
+      "blob": "1d64f2bc69414ea9816a08eb8fef22edd47decc3",
+      "purpose": "HISTORICAL_WEEK6_HOT_SHEET: original final view; no currentWeek7 certification"
+    },
+    {
+      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
+      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
+      "purpose": "ACTIVE consensus benchmark / Caesars execution separation"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_CURRENT_PUBLICATION_FAILURE_RECONCILIATION_2026-10-10.md",
+      "blob": "80e9628e6dae2a55314dcb7d99731bc469be5293",
+      "purpose": "TestRoutinev6 demonstrated current QA repairs / original failure preservation / remaining timing debt"
+    },
+    {
+      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
+      "blob": "471c049fb88043f0a2bb99a55d6ea660bc119716",
+      "purpose": "active current-output validation and actual-clock authoring correction"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "blob": "10174c41bb573125e6f974ce0f5a449594c842c7",
+      "purpose": "durable QA findings: execution-aware semantic detection gap closed for exact Oct10 profile; natural future use pending"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_0708CT.md",
+      "blob": "6d4e94b3646b6277a8b84152b1c5ead911714a9a",
+      "purpose": "CURRENT_HOT_SHEET: Week7 Sunday pre-freeze opening view; no new retrieval"
+    },
+    {
+      "path": "evidence/operational/CFB_CLOSING_MARKET_LEDGER.md",
+      "blob": "29d5b67be99cefb477f3cf05192513379e6bb05f",
+      "purpose": "current independent closing/learning surface; no model change"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R1.md",
+      "blob": "31d72be8927068879c9f5cf867c65eec3b8ff5e0",
+      "purpose": "current independent closing/learning surface; no model change"
+    }
+  ]
+}
+```
