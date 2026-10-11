@@ -64,4 +64,22 @@ class CurrentBindingTests(unittest.TestCase):
         sheet=self.sheet.replace('.\n','; execution '+'b'*40+'.\n')
         with self.assertRaises(ValueError):audit(sheet*2,self.ledger)
 
+    def bold(self):
+        return '**'+self.sheet.strip().split(': ',1)[0]+':** '+self.sheet.strip().split(': ',1)[1][:-1]+'; execution '+'b'*40+'; scorecard '+'c'*40+'.\n'
+    def test_bold_four_surface_header(self):self.assertEqual(audit(self.bold(),self.ledger)['decision_blob'],blob(self.ledger))
+    def test_bold_stale_decision(self):
+        with self.assertRaises(ValueError):audit(self.bold(),'later')
+    def test_mixed_duplicate_declarations(self):
+        with self.assertRaises(ValueError):audit(self.sheet+self.bold(),self.ledger)
+    def test_bold_malformed_scorecard(self):
+        with self.assertRaises(ValueError):audit(self.bold().replace('c'*40,'ccc'),self.ledger)
+    def test_bold_unknown_source(self):
+        with self.assertRaises(ValueError):audit(self.bold().replace('scorecard','arbitrary'),self.ledger)
+    def test_bold_missing_execution(self):
+        with self.assertRaises(ValueError):audit(self.bold().replace('; execution '+'b'*40,''),self.ledger)
+    def test_bold_bad_punctuation(self):
+        with self.assertRaises(ValueError):audit(self.bold().replace('inputs:**','inputs:***'),self.ledger)
+    def test_valid_plus_malformed_declaration(self):
+        with self.assertRaises(ValueError):audit(self.sheet+'Canonical inputs: nonsense\n',self.ledger)
+
 if __name__=='__main__':unittest.main()
