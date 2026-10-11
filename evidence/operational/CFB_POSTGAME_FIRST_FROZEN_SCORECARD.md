@@ -113,3 +113,18 @@ Remaining Saturday modeled rows:
 - San José State @ Hawai'i — frozen home margin +1.3578; total 52.9283; home win 0.516507. Final: 20-16. Realized home margin -4; total 36. Margin error -5.3578; total error -16.9283; home-win outcome 0.
 
 Scientific effect: descriptive prospective evaluation only. Champion v1.193 unchanged.
+
+
+## Week 6 authoritative postgame join — 2026-10-11 07:18 CT
+
+**Cycle:** CFB_MARKET_MONITOR_20261011T120436Z  
+**Join rule:** Only genuine pre-event Week 6 FIRST_FROZEN rows joined to authoritative finals. These four rows are appended prospectively; no missing prediction is reconstructed from an outcome. Champion remains unchanged.
+
+| Game | Engine Prediction (Frozen) | Frozen home margin | Frozen total | Frozen home-win probability | Authoritative final | Realized home margin | Realized total | Margin error | Total error | Home outcome | Source |
+|---|---|---:|---:|---:|---|---:|---:|---:|---:|---:|---|
+| Old Dominion @ Appalachian State | Appalachian State -14.3 | +14.3 | 50.1 | .823 | Old Dominion 10, Appalachian State 3 | -7 | 13 | -21.3 | -37.1 | 0 | https://appstatesports.com/sports/football |
+| Miami (OH) @ Massachusetts | Massachusetts -14.8 | +14.8 | 54.6 | .818 | Miami (OH) 20, Massachusetts 19 | -1 | 39 | -15.8 | -15.6 | 0 | https://umassathletics.com/news/2026/10/10/football-minutemen-comeback-falls-one-point-short-to-miami-oh-20-19 |
+| James Madison @ Georgia Southern | James Madison -8.0 | -8.0 | 46.7 | .291 | James Madison 27, Georgia Southern 24 | -3 | 51 | +5.0 | +4.3 | 0 | https://jmusports.com/news/2026/10/11/football-dukes-grind-out-road-win-at-georgia-southern |
+| Boise State @ Fresno State | Fresno State -1.6 | +1.6 | 49.6 | .560 | Boise State 38, Fresno State 31 | -7 | 69 | -8.6 | +19.4 | 0 | https://www.reuters.com/sports/top-25-roundup-south-carolina-hands-no-16-florida-second-straight-loss--flm-2026-10-10/ |
+
+**Scientific effect:** Descriptive prospective evaluation only. No automatic Champion mutation, Challenger promotion, S2 acceptance, probability revision, or outcome-informed reconstruction.
