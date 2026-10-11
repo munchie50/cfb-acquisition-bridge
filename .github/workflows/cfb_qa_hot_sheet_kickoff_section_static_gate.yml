@@ -16,6 +16,8 @@ on:
       - 'scripts/test_cfb_week6_afternoon_total_display_gate.py'
       - 'scripts/cfb_hot_sheet_current_decision_binding_gate.py'
       - 'scripts/cfb_hot_sheet_execution_aware_decision_gate.py'
+      - 'scripts/cfb_week7_opening_display_gate.py'
+      - 'scripts/test_cfb_week7_opening_display_gate.py'
       - 'scripts/test_cfb_hot_sheet_execution_aware_decision_gate.py'
       - 'evidence/operational/CFB_EXECUTION_LEDGER.md'
       - 'scripts/test_cfb_hot_sheet_current_decision_binding_gate.py'
@@ -30,6 +32,8 @@ on:
       - 'scripts/test_cfb_recovery_navigation_reader.py'
       - 'scripts/test_cfb_week6_production_frozen_gate.py'
       - 'evidence/operational/CFB_WEEK6_HOT_SHEET_*.md'
+      - 'evidence/operational/CFB_WEEK7_HOT_SHEET_*.md'
+      - 'evidence/operational/CFB_MARKET_MONITOR_STATE.md'
       - '.github/workflows/cfb_qa_hot_sheet_kickoff_section_static_gate.yml'
   workflow_dispatch:
 jobs:
@@ -74,7 +78,16 @@ jobs:
       - name: Exercise execution-aware current decision rejection boundaries
         run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_execution_aware_decision_gate.py
       - name: Validate current execution-aware decision and ticket projection
-        run: python scripts/cfb_hot_sheet_execution_aware_decision_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --baseline evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md
+        run: |
+          cfb_current_sheet=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["sheet_path"])' "$RUNNER_TEMP/cfb_current_sheet_binding.json")
+          case "$cfb_current_sheet" in
+            evidence/operational/CFB_WEEK6_HOT_SHEET_*)
+              python scripts/cfb_hot_sheet_execution_aware_decision_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --baseline evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md ;;
+            evidence/operational/CFB_WEEK7_HOT_SHEET_*)
+              python -m unittest discover -s scripts -p test_cfb_week7_opening_display_gate.py
+              python scripts/cfb_week7_opening_display_gate.py --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md ;;
+            *) echo "Unsupported current publication requires qualification"; exit 1 ;;
+          esac
       - name: Validate retained historical dinner decision Hot Sheet projection
         run: python scripts/cfb_hot_sheet_decision_projection_gate.py --baseline evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md --review evidence/operational/CFB_WEEK6_FULL_SATURDAY_DINNER_REVIEW_2026-10-09.md --sheet evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_2012CT.md
       - name: Recover authenticated accepted FIRST_FROZEN archive
@@ -92,7 +105,10 @@ jobs:
           BEFORE_COMMIT: ${{ github.event.before }}
         run: |
           cfb_current_sheet=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["sheet_path"])' "$RUNNER_TEMP/cfb_current_sheet_binding.json")
-          args=(--sheet evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md --sheet "$cfb_current_sheet")
+          args=(--sheet evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md)
+          if [[ "$cfb_current_sheet" == evidence/operational/CFB_WEEK6_HOT_SHEET_* ]]; then
+            args+=(--sheet "$cfb_current_sheet")
+          fi
           if [[ -n "$BEFORE_COMMIT" ]]; then
             args+=(--changed-since "$BEFORE_COMMIT")
           fi
