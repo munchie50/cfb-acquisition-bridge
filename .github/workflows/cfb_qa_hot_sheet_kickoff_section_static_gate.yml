@@ -20,6 +20,10 @@ on:
       - 'scripts/test_cfb_week7_timing_authority_audit.py'
       - 'evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md'
       - 'evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md'
+      - 'scripts/cfb_week7_first_frozen_projection_gate.py'
+      - 'scripts/test_cfb_week7_first_frozen_projection_gate.py'
+      - 'scripts/cfb_week7_accepted_s0_ancestry_audit.py'
+      - 'scripts/test_cfb_week7_accepted_s0_ancestry_audit.py'
       - 'scripts/cfb_week7_afternoon_display_gate.py'
       - 'scripts/test_cfb_week7_afternoon_display_gate.py'
       - 'scripts/cfb_week7_opening_display_gate.py'
@@ -81,6 +85,25 @@ jobs:
         run: |
           python scripts/cfb_hot_sheet_current_decision_binding_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md --current-ledger evidence/operational/CFB_DECISION_WAIT_LEDGER.md > "$RUNNER_TEMP/cfb_current_sheet_binding.json"
           cat "$RUNNER_TEMP/cfb_current_sheet_binding.json"
+      - name: Recover authenticated accepted FIRST_FROZEN archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/${{ github.repository }}/actions/artifacts/10897612260/zip > "$RUNNER_TEMP/cfb_first_frozen.zip"
+          echo "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf  $RUNNER_TEMP/cfb_first_frozen.zip" | sha256sum -c -
+      - name: Recover separate accepted October6 REFRESH ancestry archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/${{ github.repository }}/actions/artifacts/11423386216/zip > "$RUNNER_TEMP/cfb_accepted_refresh.zip"
+          echo "674501a82f6eb207b58b30c483910304c881b3ce29ba2506258152455cb6047b  $RUNNER_TEMP/cfb_accepted_refresh.zip" | sha256sum -c -
+      - name: Exercise original Week7 lineage and no-substitution boundaries
+        env:
+          CFB_ACCEPTED_FREEZE_ARCHIVE: ${{ runner.temp }}/cfb_first_frozen.zip
+          CFB_ACCEPTED_REFRESH_ARCHIVE: ${{ runner.temp }}/cfb_accepted_refresh.zip
+        run: |
+          python -m unittest discover -s scripts -p test_cfb_week7_accepted_s0_ancestry_audit.py
+          python -m unittest discover -s scripts -p test_cfb_week7_first_frozen_projection_gate.py
       - name: Exercise execution-aware current decision rejection boundaries
         run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_execution_aware_decision_gate.py
       - name: Validate current execution-aware decision and ticket projection
@@ -98,6 +121,9 @@ jobs:
               PYTHONPATH=scripts python -c 'import sys; from test_cfb_week7_opening_display_gate import snapshot; sys.stdout.write(snapshot("evidence/operational/CFB_MARKET_MONITOR_STATE.md","444d42107c646c379b2b51ac643460f3123ea9e6"))' > "$RUNNER_TEMP/cfb_week7_morning_market.md"
               PYTHONPATH=scripts python -c 'import sys; from test_cfb_week7_opening_display_gate import snapshot; sys.stdout.write(snapshot("evidence/operational/CFB_DECISION_WAIT_LEDGER.md","4c6b3468f0e0839ce85be0c96a5e9498b94d692a"))' > "$RUNNER_TEMP/cfb_week7_morning_decision.md"
               python scripts/cfb_week7_afternoon_display_gate.py --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --morning-market "$RUNNER_TEMP/cfb_week7_morning_market.md" --morning-decision "$RUNNER_TEMP/cfb_week7_morning_decision.md" --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md ;;
+            evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1429CT.md)
+              PYTHONPATH=scripts python -c 'import sys; from test_cfb_week7_opening_display_gate import snapshot; sys.stdout.write(snapshot("evidence/operational/CFB_DECISION_WAIT_LEDGER.md","4a525667b6ecfbeaf6e74222d18640e91e5d35f2"))' > "$RUNNER_TEMP/cfb_week7_prior_decision.md"
+              python scripts/cfb_week7_first_frozen_projection_gate.py --sheet "$cfb_current_sheet" --parent evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --prior-decision "$RUNNER_TEMP/cfb_week7_prior_decision.md" --first "$RUNNER_TEMP/cfb_first_frozen.zip" --refresh "$RUNNER_TEMP/cfb_accepted_refresh.zip" ;;
             *) echo "Unsupported current publication requires qualification"; exit 1 ;;
           esac
       - name: Report saved timing exceptions without certifying practical deadlines
@@ -112,12 +138,6 @@ jobs:
           fi
       - name: Validate retained historical dinner decision Hot Sheet projection
         run: python scripts/cfb_hot_sheet_decision_projection_gate.py --baseline evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md --review evidence/operational/CFB_WEEK6_FULL_SATURDAY_DINNER_REVIEW_2026-10-09.md --sheet evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_2012CT.md
-      - name: Recover authenticated accepted FIRST_FROZEN archive
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh api repos/${{ github.repository }}/actions/artifacts/10897612260/zip > "$RUNNER_TEMP/cfb_first_frozen.zip"
-          echo "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf  $RUNNER_TEMP/cfb_first_frozen.zip" | sha256sum -c -
       - name: Exercise frozen display rejection boundaries
         env:
           CFB_ACCEPTED_FREEZE_ARCHIVE: ${{ runner.temp }}/cfb_first_frozen.zip
