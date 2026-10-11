@@ -145,3 +145,10 @@ No Week 7 production or $20 sandbox execution was established in this capture. A
 - Retrieval: 2026-10-11 07:08 CT.
 - Earliest qualified observation is the captured current line/price pair in each row. The page's “Open” field is retained only as source-displayed reference and is not backfilled as an earlier observed timestamp.
 - All future movement must be appended against this first qualified observation.
+
+
+## Independent source-binding clarification — CFB_WEEK7_OPENING_VIEW_QA_20261011T142040Z
+
+Canonical inputs: market 444d42107c646c379b2b51ac643460f3123ea9e6; decision 4c6b3468f0e0839ce85be0c96a5e9498b94d692a.
+
+This append identifies the existing Sunday source bytes only. No new retrieval, prediction, price, decision, cutoff or execution is created; original 07:08 CT source clock remains unchanged. These declared identities require independent validation and do not upgrade the original natural completion assertions.
