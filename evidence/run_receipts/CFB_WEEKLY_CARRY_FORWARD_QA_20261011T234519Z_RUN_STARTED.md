@@ -1,0 +1,11 @@
+# Test Routine v6 weekly carry-forward QA RUN_STARTED
+
+Run:CFB_WEEKLY_CARRY_FORWARD_QA_20261011T234519Z
+Actual prospective boundary:2026-10-11T23:45:19Z
+State:RUN_STARTED
+User direction:Continue work using test routine.
+Recovered head:0ae80afc5f21adee690b0e0ccce37acc4d909fca.
+Trigger: naturalHealth audit6b1097abd4cb082a1e60e4d1f09573576d804001/closure13775259fa2c3be8c36473b5067647e635014abd honestlyRUN_INCOMPLETE; SundayWeeklyReviewR1 at31d72be8927068879c9f5cf867c65eec3b8ff5e0 still falselystatesmissingWeek7FIRST_FROZEN andoverstatesnaturalcycle fidelity.
+Planned work: preserve originalR1/health/receipts; prospectiveR2 correctonly carry-forward/control-status semantics, retainWeek6 numeric/results/actualwagers/accounting unchanged; exactsource-bound read-only guard/tests inexistingQA; weeklyproducercontrol; findings/navigation/two-phase closure.
+Accepted originalWeek7lineage JSONd80e26c398de48e7a386ad9a627fe44f4111ac45 supplies51originalpredictions+11exclusions/62IDs; October6refresh61+1 separate. CurrentHotSheet71006586178a1829c51f119fff872b6f981cd865 andalloperationalstate unchanged.
+No live research/modelrun, outcomes/recommendations/thresholds/cash/sourceacceptance/pointer/task/schedule/Championmutation. Productionv5 active/v6candidate. Naturalproducerdebts remainopen; nohistoricalreplay/retroclosure.
