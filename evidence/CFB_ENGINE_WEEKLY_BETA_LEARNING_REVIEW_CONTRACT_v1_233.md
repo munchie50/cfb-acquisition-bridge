@@ -52,3 +52,13 @@ This requirement does not authorize automatic self-modification. Learning become
 The review should be persisted as a dated/versioned repository evidence document after the Sunday QA/Q&A cycle and linked into recovery/audit lineage as appropriate. No new scheduled task is created; the existing Sunday QA is the operational trigger.
 
 Scientific effect: none by itself. This contract governs learning output and future-build consumption without modifying frozen Champion state.
+
+## October11 prospective weekly carry-forward and natural-proof scope guard
+
+Before stating that an upcoming-week Champion/FIRST_FROZEN opinion is missing, recover originalacceptedtarget/prediction/exclusion boundary, laterREFRESH companion/acceptance and currentChampion namingauthority. A pendingnextweeklycandidate, historicalChallengerB filename orabsencefromoneartifact doesnot eraseanoriginalprediction. Preserveoriginalexclusions; do notfillthemwithlaterREFRESH orselectabetter-lookingcutoff. State51originalpredictions+11exclusions separatelyfromOctober6REFRESH61+1 for the qualifiedWeek7case. CurrentHotSheet/decisions remainindependently governed.
+
+Weeklyoperational-success claims mustdistinguish dispatch,durablepersistence/readback, renderedsemanticfidelity and naturalcorrectedproducer demonstration. A latermanualcorrection orgreenQA neverretroactively certifies a priornaturalcycle. RecoverlatestHealth classifications andcarryunresolvedcycleIDs/lessons forward; do notclose themfromnewerinvocationtimestamps.
+
+For thisboundedOctober11R1-to-R2correction, preserve originalR1 at31d72be8927068879c9f5cf867c65eec3b8ff5e0, originalHealthaudit6b1097abd4cb082a1e60e4d1f09573576d804001 andtheirreceipts. R2 prospectivelysupersedescarry-forward/status semantics only;49Week6gamerows, metrics, wagercomparisons, limits andaccounting staybyte-identical. Explicitchanges/nonchanges andChampion/Challengerstatus appearnearfront. No rescoring/refit/cashallocation/acceptance/promotion.
+
+Finalnavigation mustmark exactlyone CURRENT_WEEKLY_REVIEW: pointer for currentlearning output, whileolderreviews stayhistorical. Newread-only scripts/cfb_weekly_carry_forward_gate.py at1a0293e2e2968bf4efa35bb144e9067d09d3fa23 and25tests qualifyexactR2/source/currentselector boundaries; unknownweek/schema/source requiresseparatequalification. Prospectiveproducer mustvalidateapplicableancestry/preservation/status requirementsbeforepublication; postwriteQA isdetection, notproof itranbeforewrite. NaturalWeeklyQA/Monitoruse remainsDEMONSTRATION_PENDING. ExistingSundayQAremainsowner; no newtask/schedule,model,decision,wager,outcome orscientific authoritychange.
