@@ -26,6 +26,8 @@ on:
       - 'evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md'
       - 'evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json'
       - 'evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md'
+      - 'scripts/cfb_week7_frozen_field_invariant.py'
+      - 'scripts/test_cfb_week7_frozen_field_invariant.py'
       - 'scripts/cfb_week7_first_frozen_projection_gate.py'
       - 'scripts/test_cfb_week7_first_frozen_projection_gate.py'
       - 'scripts/cfb_week7_accepted_s0_ancestry_audit.py'
@@ -115,6 +117,7 @@ jobs:
         run: |
           python -m unittest discover -s scripts -p test_cfb_week7_accepted_s0_ancestry_audit.py
           python -m unittest discover -s scripts -p test_cfb_week7_first_frozen_projection_gate.py
+          python -m unittest discover -s scripts -p test_cfb_week7_frozen_field_invariant.py
           python -m unittest discover -s scripts -p test_cfb_week7_opening_display_gate.py
           python -m unittest discover -s scripts -p test_cfb_week7_afternoon_display_gate.py
       - name: Exercise execution-aware current decision rejection boundaries
@@ -122,6 +125,9 @@ jobs:
       - name: Validate current execution-aware decision and ticket projection
         run: |
           cfb_current_sheet=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["sheet_path"])' "$RUNNER_TEMP/cfb_current_sheet_binding.json")
+          if [[ "$cfb_current_sheet" == evidence/operational/CFB_WEEK7_HOT_SHEET_* ]]; then
+            python scripts/cfb_week7_frozen_field_invariant.py --sheet "$cfb_current_sheet" --first "$RUNNER_TEMP/cfb_first_frozen.zip" --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json
+          fi
           case "$cfb_current_sheet" in
             evidence/operational/CFB_WEEK6_HOT_SHEET_*)
               python scripts/cfb_hot_sheet_execution_aware_decision_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --baseline evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md ;;
