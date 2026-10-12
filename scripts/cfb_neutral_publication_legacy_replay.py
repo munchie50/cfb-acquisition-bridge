@@ -1,5 +1,5 @@
 """Authentic Oct12 saved-input normalization for QA only; never canonical writer."""
-import argparse,copy,json,re
+import argparse,copy,json,re,subprocess
 from datetime import datetime
 from pathlib import Path
 from cfb_hot_sheet_current_decision_binding_gate import blob
@@ -12,6 +12,15 @@ AT='2026-10-12T18:05:00Z'
 CYCLE='CFB_MARKET_MONITOR_20261012T180232Z'
 CBS='https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/'
 DK='https://sportsbook.draftkings.com/leagues/football/ncaaf'
+def historical(path,digest):
+    raw=Path(path).read_text()
+    if blob(raw)==digest:return raw
+    # Match the immutable blob at its canonical Git history path before reading.
+    objects=subprocess.run(['git','rev-list','--objects','--all','--',str(path)],check=True,capture_output=True,text=True).stdout.splitlines()
+    if digest+' '+str(path) not in objects:raise ValueError('historical canonical source ancestry not recovered')
+    result=subprocess.run(['git','cat-file','blob',digest],check=True,capture_output=True).stdout.decode()
+    if blob(result)!=digest:raise ValueError('historical blob mismatch')
+    return result
 def cells(l):return [v.strip() for v in l.strip('|').split('|')]
 def pair(g):return tuple(ALIASES.get(v,v) for v in g.split(' @ '))
 def block(s,label):
@@ -85,4 +94,8 @@ if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     names=['market','decision','execution','scorecard','lineage']
     for n in names:p.add_argument('--'+n,required=True,type=Path)
-    a=p.parse_args();print(json.dumps(replay(*(getattr(a,n).read_text() for n in names)),indent=2))
+    p.add_argument('--historical',action='store_true')
+    a=p.parse_args();values=[getattr(a,n).read_text() for n in names]
+    if a.historical:
+        values[0]=historical(a.market,MARKET_SHA);values[1]=historical(a.decision,DECISION_SHA)
+    print(json.dumps(replay(*values),indent=2))
