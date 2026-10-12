@@ -1,0 +1,159 @@
+{
+  "schema": "CFB_BOUNDED_EARLY_WEEK_SOURCE_READINESS_V1",
+  "run_id": "CFB_WEEK7_EARLY_WEEK_SOURCE_QA_20261012T105514Z",
+  "execution_class": "USER_DIRECTED_MANUAL_TEST_ROUTINE_V6",
+  "collection_window_utc": {
+    "start": "2026-10-12T10:55:14Z",
+    "end": "2026-10-12T10:58:10Z",
+    "per_call_retrieval": "NOT_RETAINED_EXACTLY; only bounded collection window is claimed"
+  },
+  "scope": "TWO_TUESDAY_GAMES_ONLY_NOT_FULL_SLATE_OR_HOT_SHEET",
+  "source_boundary": {
+    "original_lineage_path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
+    "original_lineage_blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+    "current_sheet_blob": "71006586178a1829c51f119fff872b6f981cd865",
+    "decision_blob": "6f287f813f8f0d364b408d13070c20137b2a17a4"
+  },
+  "games": [
+    {
+      "game_id": "401871067",
+      "away": "Delaware",
+      "home": "Middle Tennessee",
+      "operational_kickoff_ct": "2026-10-13T18:00:00-05:00",
+      "operational_kickoff_utc": "2026-10-13T23:00:00Z",
+      "kickoff_source": "https://goblueraiders.com/sports/football/schedule/2026",
+      "kickoff_scrape_id": "01a12fc1-7441-7705-9a4a-594c68ffaa56",
+      "timezone_companion": "https://goblueraiders.com/news/2026/5/27/football-cusa-announces-football-game-times-tv-for-2026",
+      "timezone_companion_scrape_id": "01a12fc1-1d58-70f8-ab72-1439fc625fec",
+      "source_timezone": "All times listed are CT",
+      "public_draftkings": {
+        "event_id": "34788187",
+        "away_spread": {
+          "line": -2.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": 2.5,
+          "price": -110
+        },
+        "over": {
+          "line": 47.5,
+          "price": -115
+        },
+        "under": {
+          "line": 47.5,
+          "price": -105
+        },
+        "away_moneyline": -135,
+        "home_moneyline": 114
+      },
+      "consensus": "CONSENSUS_UNAVAILABLE",
+      "caesars": "UNVERIFIED",
+      "decision": "UNCHANGED_INCONCLUSIVE",
+      "saved_reconciliation_ct": "2026-10-13T13:00:00-05:00",
+      "saved_cutoff_ct": "2026-10-13T17:00:00-05:00",
+      "effective_execution_cutoff": "UNVERIFIED_NO_INDEPENDENT_PRACTICAL_ACCESS_EVIDENCE"
+    },
+    {
+      "game_id": "401871053",
+      "away": "Florida International",
+      "home": "Jacksonville State",
+      "operational_kickoff_ct": "2026-10-13T19:00:00-05:00",
+      "operational_kickoff_utc": "2026-10-14T00:00:00Z",
+      "kickoff_source": "https://jaxstatesports.com/sports/football/schedule/2026",
+      "kickoff_scrape_id": "01a12fc1-fb26-71dd-8760-04d1eea7eeb1",
+      "source_timezone": "All times listed are Central",
+      "corroboration": "https://conferenceusa.com/schedule.aspx?schedule=4520",
+      "corroboration_scrape_id": "01a12fc1-35ef-7183-8d1f-22cf952aeda1",
+      "public_draftkings": {
+        "event_id": "34788188",
+        "away_spread": {
+          "line": 3,
+          "price": -112
+        },
+        "home_spread": {
+          "line": -3,
+          "price": -108
+        },
+        "over": {
+          "line": 43.5,
+          "price": -105
+        },
+        "under": {
+          "line": 43.5,
+          "price": -115
+        },
+        "away_moneyline": 120,
+        "home_moneyline": -142
+      },
+      "consensus": "CONSENSUS_UNAVAILABLE",
+      "caesars": "UNVERIFIED",
+      "decision": "UNCHANGED_INCONCLUSIVE",
+      "saved_reconciliation_ct": "2026-10-13T13:00:00-05:00",
+      "saved_cutoff_ct": "2026-10-13T18:00:00-05:00",
+      "effective_execution_cutoff": "UNVERIFIED_NO_INDEPENDENT_PRACTICAL_ACCESS_EVIDENCE"
+    }
+  ],
+  "draftkings_qualification": {
+    "source": "https://sportsbook.draftkings.com/leagues/football/ncaaf",
+    "scrape_id": "01a12fc1-a22c-7539-a580-c79f3f41e572",
+    "market": "PREGAME_FULL_GAME_GAME_LINES",
+    "operator": "DraftKings",
+    "bookmaker_update_time": "UNKNOWN",
+    "qualification": "PUBLIC_RETRIEVAL_ONLY_FALLBACK_NOT_EXECUTABLE_OR_CURRENT_CONSENSUS",
+    "execution": "NOT_VERIFIED",
+    "server_clock": "Displayed server clock is not a bookmaker quote update"
+  },
+  "source_exceptions": [
+    {
+      "source": "https://sportsbook.fanduel.com/football/ncaa-football-games/fiu-@-jacksonville-state-36152735",
+      "scrape_id": "01a12fc1-f078-7645-91d8-91d27f01929f",
+      "status": "CONTENT_NOT_READY_LOCATION_VERIFICATION",
+      "http_status": 200,
+      "numeric_ingestion": false
+    },
+    {
+      "source": "https://sportsbook.fanduel.com/football/ncaa-football-games/delaware-@-middle-tennessee-36152733",
+      "scrape_id": "01a12fc2-6083-77de-9a00-5feec962a5d1",
+      "status": "CONTENT_NOT_READY_LOCATION_VERIFICATION",
+      "http_status": 200,
+      "numeric_ingestion": false
+    },
+    {
+      "source": "https://www.fanduel.com/research/middle-tennessee-vs-delaware-college-football-odds-picks-best-bets-for-10-13-2026",
+      "scrape_id": "01a12fc1-aee6-75ba-8707-f23beeca4fb4",
+      "status": "EDITORIAL_INTERNAL_SELECTION_PRICE_CONFLICT",
+      "detail": "Top odds list attaches -115 to Delaware/-105 to Middle Tennessee; later point-spread prose reverses those prices. Editorial publication time is not offer update time; no numeric bookmaker constituent was accepted.",
+      "numeric_ingestion": false
+    },
+    {
+      "source": "https://www.betmgm.com/en/sports/football-11/betting/usa-9/college-football-211",
+      "scrape_id": "01a12fc2-dc4c-77af-81e1-a1e12023b7be",
+      "status": "CONTENT_NOT_READY_LOCATION_SELECTOR",
+      "http_status": 200,
+      "numeric_ingestion": false
+    }
+  ],
+  "expected_vs_actual": {
+    "games_expected": 2,
+    "unique_game_ids": 2,
+    "current_accepted_lineage_matches": 2,
+    "official_operational_kickoff_matches": 2,
+    "kickoffs_strictly_future": 2,
+    "minimum_non_caesars_books_for_consensus": 3,
+    "readable_direct_book_operators": 1,
+    "qualified_current_consensus_games": 0,
+    "verified_caesars_games": 0,
+    "independently_qualified_practical_execution_cutoffs": 0
+  },
+  "classification": "KICKOFF_SOURCE_RECOVERY_DEMONSTRATED; MARKET_EXECUTION_READINESS_INCOMPLETE",
+  "next_safe_action": "Next existing Market Monitor should independently recover/requalify these two sources and full-slate/current-output gates, retain readable single-book fallback honestly, source at least three qualified non-Caesars operators before claiming consensus, and establish genuine practical execution constraints before treating saved one-hour-before-kickoff cutoffs as hard authority. Do not require a new weekly freeze to acknowledge existing original predictions. INCONCLUSIVE must mature by earned decision deadlines, never force a wager.",
+  "effects": {
+    "scientific": "NONE",
+    "champion": "NONE",
+    "canonical_market_decision_hot_sheet": "UNCHANGED",
+    "model_source_pointer": "UNCHANGED",
+    "money_wagers": "UNCHANGED",
+    "task_schedule": "UNCHANGED"
+  }
+}
