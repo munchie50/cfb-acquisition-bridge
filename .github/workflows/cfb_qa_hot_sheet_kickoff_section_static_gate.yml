@@ -26,6 +26,10 @@ on:
       - 'evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md'
       - 'evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json'
       - 'evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md'
+      - 'scripts/cfb_accepted_refresh_field_adapter.py'
+      - 'scripts/test_cfb_accepted_refresh_field_adapter.py'
+      - 'evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json'
+      - 'evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-07.md'
       - 'scripts/cfb_week7_frozen_field_invariant.py'
       - 'scripts/test_cfb_week7_frozen_field_invariant.py'
       - 'scripts/cfb_week7_first_frozen_projection_gate.py'
@@ -118,8 +122,14 @@ jobs:
           python -m unittest discover -s scripts -p test_cfb_week7_accepted_s0_ancestry_audit.py
           python -m unittest discover -s scripts -p test_cfb_week7_first_frozen_projection_gate.py
           python -m unittest discover -s scripts -p test_cfb_week7_frozen_field_invariant.py
+          python -m unittest discover -s scripts -p test_cfb_accepted_refresh_field_adapter.py
           python -m unittest discover -s scripts -p test_cfb_week7_opening_display_gate.py
           python -m unittest discover -s scripts -p test_cfb_week7_afternoon_display_gate.py
+      - name: Validate separate historical accepted October6 refresh field interface
+        run: |
+          PYTHONPATH=scripts python -c 'import sys; from test_cfb_week7_opening_display_gate import snapshot; sys.stdout.write(snapshot("evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json","6254ab28b90d9fa4a815124ea7ffec2850ddfc30"))' > "$RUNNER_TEMP/cfb_accepted_oct6_pointer.json"
+          PYTHONPATH=scripts python -c 'import sys; from test_cfb_week7_opening_display_gate import snapshot; sys.stdout.write(snapshot("evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-07.md","a4fb4c56addf12335a477034673e167afc28ebb4"))' > "$RUNNER_TEMP/cfb_oct6_acceptance.md"
+          python scripts/cfb_accepted_refresh_field_adapter.py --refresh "$RUNNER_TEMP/cfb_accepted_refresh.zip" --pointer "$RUNNER_TEMP/cfb_accepted_oct6_pointer.json" --acceptance "$RUNNER_TEMP/cfb_oct6_acceptance.md" --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json
       - name: Exercise execution-aware current decision rejection boundaries
         run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_execution_aware_decision_gate.py
       - name: Validate current execution-aware decision and ticket projection
