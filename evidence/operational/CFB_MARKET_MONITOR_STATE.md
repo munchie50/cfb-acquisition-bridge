@@ -683,3 +683,13 @@ Coverage: 28 still-pregame governed modeled games received a fresh fallback obse
 | Sat Oct 17 9:30 PM CT | Fresno St. @ San Diego St. | CONSENSUS_UNAVAILABLE; Caesars UNVERIFIED; DraftKings public single-book fallback 07:07 CT — Fresno State -8.5 (-110), ML -340; San Diego State +8.5 (-110), ML +270; o45.5 -105 / u45.5 -115 | Public display retrieved; quote-update time UNKNOWN; execution NOT_VERIFIED | event 34788284; https://sportsbook.draftkings.com/leagues/football/ncaaf |
 | Sat Oct 17 9:30 PM CT | New Mexico @ Hawaii | CONSENSUS_UNAVAILABLE; Caesars UNVERIFIED; DraftKings public single-book fallback 07:07 CT — New Mexico -14.5 (-108), ML -650; Hawaii +14.5 (-112), ML +470; o45.5 -112 / u45.5 -108 | Public display retrieved; quote-update time UNKNOWN; execution NOT_VERIFIED | event 34788285; https://sportsbook.draftkings.com/leagues/football/ncaaf |
 | Sat Oct 17 10:00 PM CT | Nebraska @ Oregon | CONSENSUS_UNAVAILABLE; Caesars UNVERIFIED; DraftKings public single-book fallback 07:07 CT — Nebraska +7 (-110), ML +210; Oregon -7 (-110), ML -258; o52.5 -110 / u52.5 -110 | Public display retrieved; quote-update time UNKNOWN; execution NOT_VERIFIED | event 34226154; https://sportsbook.draftkings.com/leagues/football/ncaaf |
+
+### Monday observation coverage correction — 2026-10-12 07:07 CT
+
+The immediately preceding generated coverage table failed to normalize **Central Michigan** to **C. Michigan**, so its declared 55/7 totals did not match its rendered rows. The source retrieval itself contained the event and is preserved here prospectively; prior erroneous count text remains historical.
+
+- Correct coverage: 55/62 matched DraftKings events; 7/62 Monday current public-board quote unavailable; unique governed identities 62; duplicates 0.
+- Additional matched observation: **W. Michigan @ C. Michigan** — CONSENSUS_UNAVAILABLE; Caesars UNVERIFIED; DraftKings public single-book fallback 07:07 CT: Western Michigan -7 (-110), ML -298; Central Michigan +7 (-110), ML +240; o42.5 -110 / u42.5 -110.
+- Qualification/provenance: event 34788204; bookmaker quote-update time UNKNOWN; execution NOT_VERIFIED; https://sportsbook.draftkings.com/leagues/football/ncaaf
+- The seven actually unavailable governed games are Ga. Southern @ Old Dominion; Virginia @ SMU; Georgia St. @ James Madison; Charleston So. @ Clemson; The Citadel @ Texas A&M; Georgia Tech @ Virginia Tech; Elon @ Stanford.
+
