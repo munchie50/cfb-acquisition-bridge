@@ -122,3 +122,11 @@ Sunday Weekly Beta Review must report:
 This initial state changes only from established execution evidence; recommendations/candidate slips do not consume capital.
 
 Scientific effect: none on the frozen Beta Champion. This contract authorizes and governs controlled experimental capital exposure and prospective learning around the betting layer.
+
+## October11 funding-versus-execution accounting clarification
+
+Canonicalfunding/money surface is evidence/operational/CFB_MONEY_LEDGER.md; actualwagers remain in evidence/operational/CFB_EXECUTION_LEDGER.md. User clarifiedthepreviouspending“Alsoadd20tomoneyledger” instruction asNEW+20USDfunding, separatefromfour$5betstakes. RecordthisoriginalinstructionONCE, unique funding_id/idempotency_key; a clarification isnotanotherfundingevent. Preserve original pendingstatements ashistorical andsupersede onlytheirambiguousmeaning.
+
+Funding remainsUNASSIGNED betweenproduction/sandbox unlessdirectallocationauthority exists. Actualfundingeventdate/time isunspecified; recordingclock doesnot backdatefunds. Contributions,stakes,expected/result-grade returns,confirmedcashpayments,withdrawals andbudgettransfers aredistinct. Do notdoubledebitfour-ticketstakes, infercashedreturns, ormanufactureanopening/combinedbankrollbalance. User-confirmedfunding isbookkeeping, notanautomatedbanktransfer.
+
+Theinitialsandbox20ceiling/available20/assignedexposure0 remainsunchanged; thisunassignedfunding doesnotauthorize40sandboxcapitalorassignpriorwagers. All15actualexecutions/53.45historicalstakes andfour-ticket20stake/14.55arithmeticreturn/-5.45net remainunchanged. Futuremoneyappend mustdedupebothfunding_id andsourceinstructionkey beforewrite/readback. No model,decision,stake/risk rule,wager,result orschedulechange.
