@@ -1,13 +1,16 @@
 import unittest
 from pathlib import Path
 import cfb_week7_monday_publication_gate as gate
+from cfb_neutral_publication_legacy_replay import historical
 
 class MondayPublicationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         root=Path('evidence/operational')
         cls.sheet=(root/'CFB_WEEK7_HOT_SHEET_2026-10-12_1828CT.md').read_text()
-        cls.inputs=[(root/p).read_text() for p in ['CFB_MARKET_MONITOR_STATE.md','CFB_DECISION_WAIT_LEDGER.md','CFB_EXECUTION_LEDGER.md','CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md','CFB_WEEK7_HOT_SHEET_2026-10-12_0707CT.md','CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json']]
+        paths=['CFB_MARKET_MONITOR_STATE.md','CFB_DECISION_WAIT_LEDGER.md','CFB_EXECUTION_LEDGER.md','CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md','CFB_WEEK7_HOT_SHEET_2026-10-12_0707CT.md','CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json']
+        digests=[gate.MARKET_SHA,gate.DECISION_SHA,gate.EXECUTION_SHA,gate.SCORECARD_SHA,gate.MORNING_SHA,gate.LINEAGE_SHA]
+        cls.inputs=[historical(root/p,sha) for p,sha in zip(paths,digests)]
     def reject(self,sheet):
         with self.assertRaises(ValueError):gate.audit(sheet,*self.inputs)
     def test_real_corrected_projection(self):
