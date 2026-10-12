@@ -34,6 +34,8 @@ on:
       - 'scripts/test_cfb_accepted_refresh_field_adapter.py'
       - 'evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json'
       - 'evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-07.md'
+      - 'scripts/cfb_week7_monday_publication_gate.py'
+      - 'scripts/test_cfb_week7_monday_publication_gate.py'
       - 'scripts/cfb_week7_frozen_field_invariant.py'
       - 'scripts/test_cfb_week7_frozen_field_invariant.py'
       - 'scripts/cfb_week7_first_frozen_projection_gate.py'
@@ -142,6 +144,8 @@ jobs:
           python scripts/cfb_accepted_refresh_field_adapter.py --refresh "$RUNNER_TEMP/cfb_accepted_refresh.zip" --pointer "$RUNNER_TEMP/cfb_accepted_oct6_pointer.json" --acceptance "$RUNNER_TEMP/cfb_oct6_acceptance.md" --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json
       - name: Exercise execution-aware current decision rejection boundaries
         run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_execution_aware_decision_gate.py
+      - name: Exercise bounded Monday source-profile and publication rejection boundaries
+        run: python -m unittest discover -s scripts -p test_cfb_week7_monday_publication_gate.py
       - name: Validate current execution-aware decision and ticket projection
         run: |
           cfb_current_sheet=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["sheet_path"])' "$RUNNER_TEMP/cfb_current_sheet_binding.json")
@@ -163,6 +167,8 @@ jobs:
             evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1429CT.md)
               PYTHONPATH=scripts python -c 'import sys; from test_cfb_week7_opening_display_gate import snapshot; sys.stdout.write(snapshot("evidence/operational/CFB_DECISION_WAIT_LEDGER.md","4a525667b6ecfbeaf6e74222d18640e91e5d35f2"))' > "$RUNNER_TEMP/cfb_week7_prior_decision.md"
               python scripts/cfb_week7_first_frozen_projection_gate.py --sheet "$cfb_current_sheet" --parent evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --prior-decision "$RUNNER_TEMP/cfb_week7_prior_decision.md" --first "$RUNNER_TEMP/cfb_first_frozen.zip" --refresh "$RUNNER_TEMP/cfb_accepted_refresh.zip" ;;
+            evidence/operational/CFB_WEEK7_HOT_SHEET_*)
+              python scripts/cfb_week7_monday_publication_gate.py --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md --morning evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_0707CT.md --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json ;;
             *) echo "Unsupported current publication requires qualification"; exit 1 ;;
           esac
       - name: Report saved timing exceptions without certifying practical deadlines
