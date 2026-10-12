@@ -693,3 +693,23 @@ The immediately preceding generated coverage table failed to normalize **Central
 - Qualification/provenance: event 34788204; bookmaker quote-update time UNKNOWN; execution NOT_VERIFIED; https://sportsbook.draftkings.com/leagues/football/ncaaf
 - The seven actually unavailable governed games are Ga. Southern @ Old Dominion; Virginia @ SMU; Georgia St. @ James Madison; Charleston So. @ Clemson; The Citadel @ Texas A&M; Georgia Tech @ Virginia Tech; Elon @ Stanford.
 
+## Week 7 Monday afternoon public-board observation — 2026-10-12 13:05 CT
+
+**Cycle:** CFB_MARKET_MONITOR_20261012T180232Z  
+**Retrieval:** DraftKings public NCAAF Game Lines page, live fetch 2026-10-12T18:05Z; scrape ID 01a13149-7b72-7730-9114-eabeae25749b.  
+**Coverage/qualification:** the live page exposed 8/62 governed events. Five have internally coherent spread-favorite and moneyline-favorite directions and are accepted only as identified DraftKings public single-book fallback observations. Three have internal spread/moneyline favorite-direction conflicts and are preserved as diagnostics, not qualified current decision evidence. Bookmaker quote-update time UNKNOWN; execution NOT_VERIFIED. Market Consensus: CONSENSUS_UNAVAILABLE 62/62. Caesars: UNVERIFIED 62/62.  
+**Full-slate continuity:** for the other governed games, no new afternoon quote is claimed. The 07:07 CT Monday observations remain the latest qualified fallback where previously earned; seven games remain without a Monday qualified observation. No historical observation is overwritten or presented as a new retrieval.  
+**Monday readiness:** repository workflow run 38268900152 completed SUCCESS at 2026-10-12T15:16:01Z with PASS_REFRESH_SOURCE_PREFLIGHT, 440 future games, and no prediction, market join, or outcome projection. This is source readiness only, not prediction acceptance.
+
+| Event | Raw public observation | Classification | Decision use | Provenance |
+|---|---|---|---|---|
+| Delaware @ Middle Tennessee | Delaware -1.5 (-112), ML +102; Middle Tennessee +1.5 (-108), ML -122; o47.5 -115 / u47.5 -105 | FIELD_DIRECTION_CONFLICT; diagnostic only | WITHHELD from current decision evidence; retain prior qualified observation | event 34788187; https://sportsbook.draftkings.com/leagues/football/ncaaf |
+| FIU @ Jacksonville State | FIU +3 (-115), ML +120; Jacksonville State -3 (-105), ML -142; o43.5 -108 / u43.5 -112 | IDENTIFIED_SINGLE_BOOK_FALLBACK; internally coherent | May update fallback comparison only; not consensus/executable | event 34788188; https://sportsbook.draftkings.com/leagues/football/ncaaf |
+| Kennesaw State @ Missouri State | Kennesaw State -3 (-118), ML +136; Missouri State +3 (-102), ML -162; o51.5 -112 / u51.5 -108 | FIELD_DIRECTION_CONFLICT; diagnostic only | WITHHELD from current decision evidence; retain prior qualified observation | event 34788189; https://sportsbook.draftkings.com/leagues/football/ncaaf |
+| Western Kentucky @ Sam Houston | Western Kentucky -1.5 (-102), ML -105; Sam Houston +1.5 (-118), ML -115; o53.5 -108 / u53.5 -112 | FIELD_DIRECTION_CONFLICT; diagnostic only | WITHHELD from current decision evidence; retain prior qualified observation | event 34788192; https://sportsbook.draftkings.com/leagues/football/ncaaf |
+| East Carolina @ UAB | East Carolina -4.5 (-110), ML -192; UAB +4.5 (-110), ML +160; o48.5 -110 / u48.5 -110 | IDENTIFIED_SINGLE_BOOK_FALLBACK; internally coherent | May update fallback comparison only; not consensus/executable | event 34788195; https://sportsbook.draftkings.com/leagues/football/ncaaf |
+| Colorado State @ Texas State | Colorado State +14 (-110), ML +425; Texas State -14 (-110), ML -575; o69.5 -110 / u69.5 -110 | IDENTIFIED_SINGLE_BOOK_FALLBACK; internally coherent | May update fallback comparison only; not consensus/executable | event 34788200; https://sportsbook.draftkings.com/leagues/football/ncaaf |
+| Memphis @ Tulane | Memphis -7 (-105), ML -265; Tulane +7 (-115), ML +215; o53.5 -110 / u53.5 -110 | IDENTIFIED_SINGLE_BOOK_FALLBACK; internally coherent | May update fallback comparison only; not consensus/executable | event 34788203; https://sportsbook.draftkings.com/leagues/football/ncaaf |
+| Washington @ Purdue | Washington +3 (-105), ML +136; Purdue -3 (-115), ML -162; o52.5 -110 / u52.5 -110 | IDENTIFIED_SINGLE_BOOK_FALLBACK; internally coherent | May update fallback comparison only; not consensus/executable | event 34788206; https://sportsbook.draftkings.com/leagues/football/ncaaf |
+
+Accepted afternoon fallback identities: East Carolina @ UAB; Colorado State @ Texas State; Memphis @ Tulane; Washington @ Purdue; FIU @ Jacksonville State. Diagnostic conflict identities: Delaware @ Middle Tennessee; Kennesaw State @ Missouri State; Western Kentucky @ Sam Houston.
