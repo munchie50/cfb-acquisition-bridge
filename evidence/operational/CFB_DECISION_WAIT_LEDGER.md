@@ -440,3 +440,18 @@ Original September26 accepted artifact10897612260 (ZIP 772b8683365ebf62d35fc3813
 Accepted October6 REFRESH artifact11423386216 (ZIP 674501a82f6eb207b58b30c483910304c881b3ce29ba2506258152455cb6047b) covers61 predictions+1 exclusion, including10 targets excluded in the original snapshot. REFRESH never substitutes for or rewrites original predictions/exclusions. The upcoming Monday readiness/Tuesday candidate is a separate weekly-cycle dependency, not the existence test for original accepted predictions.
 
 All62 decision dispositions remain INCONCLUSIVE; acceptable numbers/prices remain not established. No bet, trip, execution or confidence is authorized. Qualified consensus/current Caesars and material availability remain unresolved.51 rows can display accepted original numbers;11 original exclusions stay explicit. Current schedule and historical model clocks remain separate. Existing saved reconciliation/cutoff values are retained only as planning information: CUTOFF_AUTHORITY_UNVERIFIED; effective practical provenance remains unresolved. No deadline is relaxed or invented.
+
+## Week 7 Monday decision reconciliation — 2026-10-12 07:07 CT
+
+**Cycle:** CFB_MARKET_MONITOR_20261012T120147Z  
+**State:** 62/62 remain **INCONCLUSIVE**. Accepted original FIRST_FROZEN is available for 51 games and 11 retain explicit original exclusions; no model value is reconstructed or replaced by the October 6 REFRESH. The Monday live public board produced 55 identified DraftKings fallback observations and seven current-quote unavailabilities, but no qualified multi-book consensus, independently verified Caesars offer, or practical execution-access authority. Raw disagreement is only an investigation flag. No acceptable number/price, wager, trip, or confidence was earned.  
+**WAIT integrity:** no WAIT exists and none was rolled forward. No practical final cutoff is independently qualified; retained saved clocks remain planning times with CUTOFF_AUTHORITY_UNVERIFIED and are not relaxed or promoted.  
+**Portfolio:** production and separate $20 sandbox Week 7 exposures remain zero. No casino trip is authorized; retain the approximately 1–2 trips/week objective and never chase.
+
+| Nearest game | State | Pending reason / awaited information | Decision relevance / opportunity at risk | Reconciliation deadline | Retained planning cutoff | Acceptable number / execution window |
+|---|---|---|---|---|---|---|
+| Delaware @ Middle Tennessee | INCONCLUSIVE | Qualified multi-book benchmark; verified Caesars offer; material availability; practical access | Original FIRST_FROZEN exists; DraftKings fallback shows Delaware -2.5 -110 / Middle Tennessee +2.5 -110 and total 47.5, but no calibrated EV | Tue Oct 13 1:00 PM CT | Tue Oct 13 5:00 PM CT; CUTOFF_AUTHORITY_UNVERIFIED | Not established; at deadline transition prospectively to earned actionable state, governed WAIT with explicit trigger and hard cutoff, or PASS |
+| FIU @ Jacksonville State | INCONCLUSIVE | Qualified multi-book benchmark; verified Caesars offer; material availability; practical access | Original FIRST_FROZEN exists; DraftKings fallback shows FIU +3 -112 / Jacksonville State -3 -108 and total 43.5, but no calibrated EV | Tue Oct 13 1:00 PM CT | Tue Oct 13 6:00 PM CT; CUTOFF_AUTHORITY_UNVERIFIED | Not established; at deadline transition prospectively to earned actionable state, governed WAIT with explicit trigger and hard cutoff, or PASS |
+
+All remaining 60 governed games preserve their already-recorded game-specific reconciliation deadlines and retained planning cutoffs. INCONCLUSIVE may not drift beyond those deadlines; no bet is forced merely to eliminate it.
+
