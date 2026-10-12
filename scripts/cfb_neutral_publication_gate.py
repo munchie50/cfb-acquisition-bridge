@@ -172,7 +172,7 @@ def audit(sheet,market,decision,execution,scorecard,lineage,as_of):
 def bootstrap(market,decision,lineage):
     # The first typed boundary must descend from the independently qualified
     # complete Monday legacy sources, not a self-authored packet or sheet.
-    from cfb_neutral_publication_legacy_replay import normalize,MARKET_SHA,DECISION_SHA
+    from cfb_neutral_publication_legacy_replay import normalize,MARKET_SHA,DECISION_SHA,AT
     prefixes=[];first=[]
     for content,tag,digest in [(market,MARKET_TAG,MARKET_SHA),(decision,DECISION_TAG,DECISION_SHA)]:
         m=re.search(r'^```'+tag+r'[ \t]*\n(.*?)^```[ \t]*$',content,re.M|re.S)
@@ -185,7 +185,10 @@ def bootstrap(market,decision,lineage):
     expected=normalize(*prefixes,lineage)
     base={r['game_id']:r for r in expected['market']['rows']}
     for r in first[0]['rows']:
-        if r['game_id'] not in base or r['first']!=base[r['game_id']]['first']:raise ValueError('first typed observation ancestry mismatch')
+        if r['game_id'] not in base:raise ValueError('first typed observation ancestry mismatch')
+        old=base[r['game_id']]['first']
+        if old is not None and r['first']!=old:raise ValueError('first typed observation ancestry mismatch')
+        if old is None and r['first'] is not None and clock(r['first']['retrieved_at'])<=clock(AT):raise ValueError('bootstrap first observation hindsight-backfilled')
     return 'PASS_QUALIFIED_LEGACY_TO_TYPED_FIRST_OBSERVATION_ANCESTRY_ONLY'
 
 if __name__=='__main__':
