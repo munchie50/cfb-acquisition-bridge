@@ -455,3 +455,17 @@ All62 decision dispositions remain INCONCLUSIVE; acceptable numbers/prices remai
 
 All remaining 60 governed games preserve their already-recorded game-specific reconciliation deadlines and retained planning cutoffs. INCONCLUSIVE may not drift beyond those deadlines; no bet is forced merely to eliminate it.
 
+## Week 7 Monday afternoon decision reconciliation — 2026-10-12 13:05 CT
+
+**Cycle:** CFB_MARKET_MONITOR_20261012T180232Z  
+**State:** 62/62 remain **INCONCLUSIVE**. The repository Monday source-readiness workflow passed its no-prediction source preflight, but that is not a new model snapshot or acceptance. The afternoon DraftKings public view exposed eight governed games: five internally coherent single-book fallback observations and three spread/moneyline direction conflicts withheld from current decision evidence. Qualified multi-book consensus and independently verified Caesars remain unavailable for every game. No raw disagreement is treated as EV, confidence, or an automatic bet.  
+**WAIT integrity:** no WAIT exists and none was rolled forward. No acceptable number/price, trip, production wager, or separate $20 sandbox wager was established. Retained practical cutoffs remain CUTOFF_AUTHORITY_UNVERIFIED.  
+**Portfolio:** no casino trip is authorized. Preserve the approximately 1–2 trips/week objective and do not chase.
+
+| Nearest game | State | Current qualified fallback used | Withheld/awaited information | Decision relevance / opportunity at risk | Reconciliation deadline | Retained planning cutoff | Acceptable number / execution window |
+|---|---|---|---|---|---|---|---|
+| Delaware @ Middle Tennessee | INCONCLUSIVE | Retain Monday 07:07 CT DraftKings: Delaware -2.5 -110 / Middle Tennessee +2.5 -110; total 47.5; ML -135/+114 | 13:05 observation withheld for side/ML favorite-direction conflict; qualified consensus; verified Caesars; availability; practical access | Original FIRST_FROZEN exists; movement cannot be certified from conflicted fields | Tue Oct 13 1:00 PM CT | Tue Oct 13 5:00 PM CT; CUTOFF_AUTHORITY_UNVERIFIED | Not established; at deadline transition to earned actionable state, governed WAIT with explicit trigger and hard cutoff, or PASS |
+| FIU @ Jacksonville State | INCONCLUSIVE | DraftKings 13:05 CT: FIU +3 -115 / Jacksonville State -3 -105; total 43.5; ML +120/-142 | Qualified consensus; verified Caesars; availability; practical access | Original FIRST_FROZEN exists; single-book fallback alone is insufficient for calibrated action | Tue Oct 13 1:00 PM CT | Tue Oct 13 6:00 PM CT; CUTOFF_AUTHORITY_UNVERIFIED | Not established; at deadline transition to earned actionable state, governed WAIT with explicit trigger and hard cutoff, or PASS |
+
+All remaining 60 governed games retain their recorded reconciliation deadlines and cutoffs. Five coherent afternoon fallback observations update comparison context only; three conflicted observations do not. INCONCLUSIVE may not drift beyond its applicable deadline, and no bet is forced.
+
