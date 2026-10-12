@@ -151,7 +151,7 @@ jobs:
       - name: Exercise typed neutral publication chronology and decision boundaries
         run: python -m unittest discover -s scripts -p 'test_cfb_neutral_publication*.py'
       - name: Replay authentic Monday legacy inputs through the neutral schema without operational writes
-        run: python scripts/cfb_neutral_publication_legacy_replay.py --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json
+        run: python scripts/cfb_neutral_publication_legacy_replay.py --historical --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json
       - name: Exercise bounded Monday source-profile and publication rejection boundaries
         run: python -m unittest discover -s scripts -p test_cfb_week7_monday_publication_gate.py
       - name: Validate current execution-aware decision and ticket projection
