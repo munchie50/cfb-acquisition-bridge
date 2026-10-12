@@ -7,7 +7,7 @@ class AuthenticReplayTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         root=Path('evidence/operational')
-        cls.m=(root/'CFB_MARKET_MONITOR_STATE.md').read_text();cls.d=(root/'CFB_DECISION_WAIT_LEDGER.md').read_text();cls.l=(root/'CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json').read_text()
+        cls.m=replay.historical(root/'CFB_MARKET_MONITOR_STATE.md',replay.MARKET_SHA);cls.d=replay.historical(root/'CFB_DECISION_WAIT_LEDGER.md',replay.DECISION_SHA);cls.l=(root/'CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json').read_text()
         cls.c={r['game_id']:(r['away_team'],r['home_team']) for r in json.loads(cls.l)['rows']}
     def normalized(self):return replay.normalize(self.m,self.d,self.l)
     def row(self,n,pair):return next(r for r in n['market']['rows'] if self.c[r['game_id']]==pair)
