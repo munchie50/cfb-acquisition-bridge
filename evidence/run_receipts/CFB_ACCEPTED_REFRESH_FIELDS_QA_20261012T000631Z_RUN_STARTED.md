@@ -1,0 +1,9 @@
+# TestRoutinev6 accepted REFRESH field-path QA RUN_STARTED
+
+Run:CFB_ACCEPTED_REFRESH_FIELDS_QA_20261012T000631Z
+Actual prospective boundary:2026-10-12T00:06:31Z
+State:RUN_STARTED
+User direction:Continue work using test routine.
+Scope: read-only explicitlylabelled October6 acceptedS0REFRESH field adapter/validator againstacceptedpointer6254ab28b90d9fa4a815124ea7ffec2850ddfc30, separateacceptancerecorda4fb4c56addf12335a477034673e167afc28ebb4 andacceptedZIP674501a82f6eb207b58b30c483910304c881b3ce29ba2506258152455cb6047b.
+Compare62Week7IDs: original51+11 remainimmutable; acceptedREFRESH61+1 distinct, including10originallyexcludedtargetsnoweligible onlyinREFRESH. Explicitcutoff/type/source/parentstatus required; no FIRST relabeling/backfill/snapshotselectionafteroutcomes.
+Plannedgovernedwrites: helper/tests inexistingQA, boundedproducercontrol/durablefindings/navigation andtwo-phaseclosure. Candidatefieldrecordsareephemeraldiagnosticsfromalreadyacceptedbytes, notnewpredictions/currentHotSheet/canonicaldata orfuturepublication. No newsourcecapture/modelrun/scientificacceptance/acceptedpointeradvance/operationalconsumerselection/decision/wager/cash/task/schedulechange. Allfullsource/decision/practicalclock/publicationgates retained. Productionv5 unchanged/v6candidate.
