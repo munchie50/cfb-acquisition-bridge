@@ -35,5 +35,11 @@ class AuthenticReplayTests(unittest.TestCase):
     def test_original_first_changed_before_bootstrap_rejected(self):
         n=self.normalized();r=next(r for r in n['market']['rows'] if r['first'] is not None);r['first']['over_price']=-101
         with self.assertRaises(ValueError):gate.bootstrap(self.m+replay.packet(n['market'],gate.MARKET_TAG),self.d+replay.packet(n['decision'],gate.DECISION_TAG),self.l)
+    def test_new_first_after_authentic_unavailability_boundary(self):
+        from test_cfb_neutral_publication_gate import offer
+        n=self.normalized();r=next(r for r in n['market']['rows'] if r['first'] is None);o=offer();o['retrieved_at']='2026-10-13T12:00:00Z';r['first']=o
+        gate.bootstrap(self.m+replay.packet(n['market'],gate.MARKET_TAG),self.d+replay.packet(n['decision'],gate.DECISION_TAG),self.l)
+        r['first']['retrieved_at']='2026-10-11T12:00:00Z'
+        with self.assertRaises(ValueError):gate.bootstrap(self.m+replay.packet(n['market'],gate.MARKET_TAG),self.d+replay.packet(n['decision'],gate.DECISION_TAG),self.l)
 
 if __name__=='__main__':unittest.main()
