@@ -3585,3 +3585,16 @@ Accepted afternoon fallback identities: East Carolina @ UAB; Colorado State @ Te
   ]
 }
 ```
+
+
+## Scheduled full-slate refresh — 2026-10-13 13:03 CT
+
+**Cycle:** CFB_MARKET_MONITOR_20261013T180204Z  
+**Observation class:** INTERMEDIATE / QUALIFIED_MIXED_BOOK_FALLBACK.  
+**Scope:** Full governed Week 7 relevant-FBS slate rechecked prospectively on the CBS Sports Week 7 odds board. All 62 governed game identities remained present and kickoff-section membership remained unchanged. CBS displayed book logos per offer but the accessible render did not expose recoverable constituent book names; therefore these observations remain mixed-book fallback, never consensus. CONSENSUS_UNAVAILABLE; actual Caesars UNVERIFIED; execution UNVERIFIED. Retrieval clock: 2026-10-13T18:03Z, EXACT to minute. Source: https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/
+
+Decision-window observations:
+- Delaware @ Middle Tennessee — Delaware -1 (-111), ML -114; Middle Tennessee +1.5 (-114), ML -104; over 47.5 (-114), under 47.5 (-105). Compared with the 12:09Z fallback, side price and moneyline changed but no qualified consensus or Caesars offer was established.
+- Florida International @ Jacksonville State — FIU +3 (-110), ML +128; Jacksonville State -2.5 (-124), ML -148; over 43.5 (-110), under 43.5 (-108). Compared with the 12:09Z fallback, prices moved but the displayed spread/total remained within the same narrow market range.
+
+All remaining board observations were rechecked at the same source/retrieval boundary and remain downstream market evidence. Exact first-qualified observations and earlier snapshots are preserved above and in prior Hot Sheets; nothing is overwritten or hindsight-backfilled. No displayed disagreement is treated as calibrated EV. No Champion/FIRST_FROZEN/REFRESH field changed.
