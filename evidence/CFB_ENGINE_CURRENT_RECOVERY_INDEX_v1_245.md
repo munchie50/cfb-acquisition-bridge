@@ -356,6 +356,8 @@ This explicitly dated navigation checkpoint supersedes earlier morning navigatio
 ```
 
 
+
+
 ## October 9 dinner execution-card reconciliation — 19:42:26 CT
 Later material update after 19:19:31 CT navigation checkpoint: user needs Saturday bets tonight. Four named candidates now prospectively PASS / NO BET FOR THIS DINNER WINDOW; no threshold or bet manufactured, no execution recorded.
 Recover evidence/operational/CFB_WEEK6_DINNER_EXECUTION_CARD_2026-10-09.md, blob 06011f4cbe6dbe1086b2be9182bd75db482e3b78, for exact scope, sourced matchup/availability findings and Caesars retrieval limits. Canonical evidence/operational/CFB_DECISION_WAIT_LEDGER.md now blob 733338939a542bd16e5b18edd9e0be90b4179b79; recover this newer decision state rather than older navigation pointer. Original production Hot Sheet remains a retained 13:02 benchmark/display snapshot; it has not been refreshed by this manual card and its four older INCONCLUSIVE rows are superseded by the current scoped ledger decision.
@@ -5275,6 +5277,79 @@ Historical wording does not supersede exact accepted S0 evidence; operational au
       "path": "evidence/scheduler_qa/CFB_NEUTRAL_PUBLICATION_SCHEMA_AND_AUTHENTIC_REPLAY_2026-10-12.md",
       "blob": "bed8a2eccb7ff4c2c762b4bf02aeedc339623b2c",
       "purpose": "CURRENT_NEUTRAL_SCHEMA_QA:54independenttests/62authenticinputreplay/source-root qualification/producer integration; broader adapters and natural use open"
+    }
+  ]
+}
+```
+
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-13T12:19:59Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Natural Tuesday07:00CT Market Monitor recovered active authority, persisted/read back RUN_STARTED before research, and adopted the bounded neutral typed source-derived publication route prospectively.",
+    "Fresh CBS Week7 full-slate multi-book display was captured at2026-10-13T12:09:20Z. 58/62 rows passed the neutral source/chronology consistency gate as UNIDENTIFIED_MIXED_BOOK_FALLBACK; WesternKentucky-SamHouston failed internal spread/moneyline direction consistency and three FCS-at-FBS rows had no current quote, so all four fail closed to current UNAVAILABLE with historical latest retained.",
+    "Qualified multi-book consensus remains unavailable62/62 and actual Caesars execution remains unverified62/62. All62 decisions remainINCONCLUSIVE; no acceptable number, execution window, trip, wager, confidence, EV or automatic action was established. Tuesday2 retain governed13:00CT reconciliation and unverified planning cutoffs.",
+    "Original accepted FIRST_FROZEN lineage remains51 predictions+11exclusions with October6 REFRESH separate and no substitution. Exact62 identity/section reconciliation passed2/2/3/3/13/17/22/0; Nebraska retained.",
+    "Canonical market29699c58cb5feb2334ab26c70cf8cbe30180bf63, decisionac1c9db9c13975e48988b9d21b8b2898fa89a9d7 and HotSheet150ced3096204bf95f50e54261bc2d981de5a8c8 persisted/readback. Execution/scorecard/money unchanged; no new settlement. Tuesday candidate workflow is scheduled10:00CT and had not yet reached its scheduled boundary; candidate generation remains nonacceptance."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "29699c58cb5feb2334ab26c70cf8cbe30180bf63",
+      "purpose": "CURRENT_MARKET_STATE: Tuesday07:00CT typed neutral append;58 current mixed-book fallback,4 unavailable with retained history"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "ac1c9db9c13975e48988b9d21b8b2898fa89a9d7",
+      "purpose": "CURRENT_DECISION_STATE:62INCONCLUSIVE;Tuesday2 reconcile13:00CT; no threshold/trip/execution"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
+      "purpose": "CURRENT_EXECUTION_LEDGER: independently read and unchanged; no Week7 execution"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "6f7650d340bf63f8f93a2b825e35f8b8e41fa80b",
+      "purpose": "CURRENT_SCORECARD: independently read and unchanged; no new applicable final"
+    },
+    {
+      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
+      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
+      "purpose": "CURRENT_MONEY_LEDGER: independently read and unchanged"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-13_0709CT.md",
+      "blob": "150ced3096204bf95f50e54261bc2d981de5a8c8",
+      "purpose": "CURRENT_HOT_SHEET: natural typed neutral Tuesday publication; exact62 sections,58 current fallback,4 fail-closed unavailable, all62INCONCLUSIVE"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
+      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+      "purpose": "accepted original62 target lineage census;51 predictions+11 exclusions; REFRESH separate"
+    },
+    {
+      "path": "evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md",
+      "blob": "fbfc773461587e209951d5a9113f5fb7fa3e2319",
+      "purpose": "ACTIVE bounded neutral source-derived Week7 pregame publication route"
+    },
+    {
+      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
+      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
+      "purpose": "ACTIVE consensus benchmark and Caesars execution separation"
+    },
+    {
+      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
+      "blob": "52661d275915bcf84b03fd3f2adb6f2bad532c0a",
+      "purpose": "ACTIVE exact-once kickoff sectioning authority"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261013T115928Z_RUN_STARTED.md",
+      "blob": "8e35388fb89f36bf22adaf5d298e07203d47e426",
+      "purpose": "cycle observability start marker; not completion evidence"
     }
   ]
 }
