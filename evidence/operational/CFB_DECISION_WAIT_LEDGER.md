@@ -1099,3 +1099,16 @@ All remaining 60 governed games retain their recorded reconciliation deadlines a
   ]
 }
 ```
+
+
+## Tuesday deadline reconciliation — 2026-10-13 13:04 CT
+
+**Cycle:** CFB_MARKET_MONITOR_20261013T180204Z  
+**Authority boundary:** Prospective decision at the scheduled 13:00 CT reconciliation point. Frozen predictions remain unchanged. The current board is an unidentified CBS mixed-book fallback; qualified consensus is unavailable and actual Caesars execution is unverified. Raw model/market disagreement is not calibrated EV.
+
+| Game | State transition | Current fallback | Reason / awaited information | Acceptable number / price | Execution window |
+|---|---|---|---|---|---|
+| Delaware @ Middle Tennessee | INCONCLUSIVE → PASS | Delaware -1 (-111), ML -114; Middle Tennessee +1.5 (-114), ML -104; total 47.5 (-114/-105) | No qualified consensus, no verified Caesars offer, no established actionable threshold, and Delaware QB Nick Minicucci's lower-body availability remains decision-relevant. The earned conservative disposition is no bet; do not reopen from price movement alone. | Not established | CLOSED — no production or sandbox wager; no casino trip |
+| FIU @ Jacksonville State | INCONCLUSIVE → PASS | FIU +3 (-110), ML +128; Jacksonville State -2.5 (-124), ML -148; total 43.5 (-110/-108) | Frozen Jacksonville State -4.5 versus fallback -2.5 is only a raw investigation flag. Consensus, Caesars executability, and calibrated EV remain unavailable; no governed threshold was earned. | Not established | CLOSED — no production or sandbox wager; no casino trip |
+
+**Portfolio:** Week 7 production exposure remains $0; separate $20 sandbox exposure remains $0. No trip is authorized for Tuesday. The remaining 60 games retain their already assigned prospective reconciliation deadlines; no other state is changed by this append.
