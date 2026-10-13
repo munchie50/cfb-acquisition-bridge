@@ -469,3 +469,633 @@ All remaining 60 governed games preserve their already-recorded game-specific re
 
 All remaining 60 governed games retain their recorded reconciliation deadlines and cutoffs. Five coherent afternoon fallback observations update comparison context only; three conflicted observations do not. INCONCLUSIVE may not drift beyond its applicable deadline, and no bet is forced.
 
+
+```cfb-neutral-decision-v1
+{
+  "schema": "CFB_NEUTRAL_DECISION_PRESENTATION_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261013T115928Z",
+  "as_of_utc": "2026-10-13T12:09:29Z",
+  "rows": [
+    {
+      "game_id": "401871067",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; Tuesday weather forecast clear, no qualified official availability change located, consensus unavailable, Caesars unverified, and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-13T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-13T22:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401871053",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; Tuesday weather forecast clear, no qualified official availability change located, consensus unavailable, Caesars unverified, and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-13T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-13T23:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401871054",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-14T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-14T22:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401871068",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-14T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-14T23:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401869950",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-15T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-15T22:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401862800",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-15T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-15T22:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401860923",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-15T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-15T23:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401862801",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-16T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-16T22:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401869844",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-16T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-16T23:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858493",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-16T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-16T23:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856724",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T00:30:00Z",
+      "planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858268",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T00:30:00Z",
+      "planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856720",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T00:30:00Z",
+      "planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856830",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T00:30:00Z",
+      "planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856829",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T00:30:00Z",
+      "planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401869957",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T00:30:00Z",
+      "planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858267",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T00:30:00Z",
+      "planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401862802",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T00:30:00Z",
+      "planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858491",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T00:30:00Z",
+      "planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401866441",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T00:30:00Z",
+      "planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858261",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T00:30:00Z",
+      "planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858488",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T00:30:00Z",
+      "planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858489",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T00:30:00Z",
+      "planning_cutoff_utc": "2026-10-17T15:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401862803",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T16:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856725",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T16:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401866442",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T16:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401866443",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T16:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858264",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401864522",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401864524",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856828",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856721",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858490",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856723",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856719",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401866444",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858266",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401866478",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401862805",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T19:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401869966",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T20:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401860903",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T21:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858263",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401862806",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856832",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401864520",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401869934",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856726",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858262",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858494",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858265",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856809",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856722",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856831",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401871091",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T23:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401862804",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T23:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401864523",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-18T00:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401866445",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-18T01:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401856833",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-18T01:15:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858269",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-18T01:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401860904",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-18T01:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401864521",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-18T01:30:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    },
+    {
+      "game_id": "401858492",
+      "state": "INCONCLUSIVE",
+      "reason": "Current full-slate CBS mixed-book fallback captured; consensus unavailable, Caesars unverified, material availability and practical access unresolved; no actionable number earned",
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-18T02:00:00Z",
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null
+    }
+  ]
+}
+```
