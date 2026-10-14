@@ -5354,3 +5354,75 @@ Historical wording does not supersede exact accepted S0 evidence; operational au
   ]
 }
 ```
+
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-14T12:10:00Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Natural Wednesday07:00CT Market Monitor recovered active authority and persisted/read back RUN_STARTED before external research.",
+    "Full62 identity and kickoff-section reconciliation passed2/2/3/3/13/17/22/0 with Wednesday primary. Wednesday2 were requalified from the live CBS mixed-book display; later-game full-board structured extraction was partial and therefore those rows retain latest qualified fallback with CURRENT_REQUALIFICATION_UNAVAILABLE rather than invented current offers.",
+    "Qualified multi-book consensus remains unavailable and actual Caesars execution remains unverified. Tuesday2 remain PASS; Wednesday2 and the other58 remain INCONCLUSIVE on their prospective deadlines. No acceptable number, trip, execution or automatic action was established.",
+    "Tuesday authoritative finals were joined only to genuine pre-event FIRST_FROZEN rows; there were no established Week7 production or sandbox wagers to settle. Champion v1.193, original51FIRST_FROZEN+11exclusions and accepted October6 REFRESH separation remain unchanged."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "d6cc1d8372e19faaee1d835e9f7eb5b8f09a54b0",
+      "purpose": "CURRENT_MARKET_STATE: Wednesday07:00CT append; Wednesday2 live mixed-book fallback; full-slate qualification limitation explicit"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "2429dd9d1eaab8e8b470c5856e3a3ae356b26e8c",
+      "purpose": "CURRENT_DECISION_STATE: Tuesday2PASS; Wednesday2 retain13:00CT reconciliation; remaining58 on assigned deadlines; no threshold/trip/execution"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
+      "purpose": "CURRENT_EXECUTION_LEDGER: independently read and unchanged; no Week7 execution"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "11160bb2f725555994067e72985024dc809a9241",
+      "purpose": "CURRENT_SCORECARD: Tuesday2 authoritative finals joined to genuine pre-event FIRST_FROZEN only"
+    },
+    {
+      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
+      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
+      "purpose": "CURRENT_MONEY_LEDGER: independently read and unchanged"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-14_0706CT.md",
+      "blob": "c6e468f60a25a3da74e9e9591d83aa50ecc6bb23",
+      "purpose": "CURRENT_HOT_SHEET: Wednesday-primary neutral publication; exact62 sections; Wednesday2 refreshed; partial later-game requalification explicit"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
+      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
+      "purpose": "CURRENT_WEEKLY_REVIEW: accepted Week6 learning review; no automatic Champion or Challenger mutation"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
+      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+      "purpose": "accepted original62 target lineage census;51 predictions+11 exclusions; REFRESH separate"
+    },
+    {
+      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
+      "blob": "6254ab28b90d9fa4a815124ea7ffec2850ddfc30",
+      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October6 independently accepted REFRESH source; no Tuesday candidate acceptance"
+    },
+    {
+      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
+      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
+      "purpose": "ACTIVE consensus benchmark and Caesars execution separation"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261014T120046Z_RUN_STARTED.md",
+      "blob": "bc3b608f2063667d3ded670b709e6da048e28799",
+      "purpose": "cycle observability start marker; not completion evidence"
+    }
+  ]
+}
+```
