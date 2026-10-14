@@ -3615,3 +3615,20 @@ Availability/weather boundary:
 - Springfield, Missouri forecast for the 18:30 CT kickoff window was cloudy near 75°F, with thunderstorms possible later in the evening; Huntsville, Texas forecast for the 19:00 CT kickoff window was clear near 83°F after a late-afternoon thunderstorm possibility. Weather remains monitored and does not by itself earn an action.
 
 Exact first-qualified observations and all earlier snapshots remain preserved above and in prior Hot Sheets. Nothing is overwritten or hindsight-backfilled. No displayed disagreement is treated as calibrated EV. No Champion/FIRST_FROZEN/REFRESH field changed.
+
+
+## Scheduled full-slate refresh — 2026-10-14 12:58 CT
+
+**Cycle:** CFB_MARKET_MONITOR_20261014T175552Z  
+**Observation class:** INTERMEDIATE / UNIDENTIFIED_MIXED_BOOK_FALLBACK.  
+**Scope:** The live CBS Sports Week 7 board was re-fetched prospectively at 2026-10-14T17:58:01Z and the full governed 62-game identity slate was rechecked across the Wednesday-through-Saturday board. The accessible render continued to display source logos without recoverable constituent book names, so this is fallback evidence only, never consensus. CONSENSUS_UNAVAILABLE; actual Caesars UNVERIFIED; execution UNVERIFIED. Source: https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/
+
+Wednesday deadline observations:
+- Kennesaw State @ Missouri State — Kennesaw State -2.5 (-111), ML -140; Missouri State +2.5 (-105), ML +120; over 52.5 (-110), under 52.5 (-105). Since the 07:03 CT observation, the Kennesaw spread shortened from -3 to -2.5 and its moneyline from -154 to -140; the total remained 52.5.
+- Western Kentucky @ Sam Houston — Western Kentucky -1 (-111), ML -115; Sam Houston +1.5 (-114), ML +102; over 52.5 (-111), under 53.5 (-112). Since the 07:03 CT observation, the WKU spread shortened from -1.5 to -1 and its moneyline from -122 to -115; the displayed two-sided total remains internally asymmetric by one point and is retained as source-rendered rather than normalized.
+
+Availability/weather boundary:
+- A same-day report indicates Missouri State starting quarterback Skyler Locklear was injured in the prior game and quarterback availability remained uncertain. This is downstream availability evidence and does not alter FIRST_FROZEN.
+- Springfield, Missouri was forecast cloudy near the 18:30 CT kickoff after afternoon thunderstorms, with another thunderstorm possibility later in the evening. Huntsville, Texas was forecast clear near 83°F at the 19:00 CT kickoff after afternoon thunderstorm risk. Weather did not establish an actionable threshold.
+
+The board-wide observation was rechecked without overwriting first observations. Exact normalized per-game constituent identity remained unavailable outside the priority rows; earlier qualified row history remains intact. No raw model/market disagreement is treated as calibrated EV. No Champion/FIRST_FROZEN/REFRESH field changed.
