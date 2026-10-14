@@ -187,3 +187,16 @@ Scientific effect: descriptive prospective evaluation only. Champion v1.193 unch
 **Week 6 full 49-game diagnostic summary (45 rows here + 4 prior rows):** margin MAE 15.13; mean margin error +0.9; total MAE 13.54; mean total error -0.89; straight-up direction 25/49 (51.0%); home-win Brier 0.284. Descriptive one-week evidence only; not a calibration or promotion basis.
 
 **Scientific effect:** NONE. Champion v1.193, FIRST_FROZEN/accepted REFRESH lineage, exclusions, Challenger status, and betting rules remain unchanged. No outcome-informed reconstruction occurred.
+
+
+## Week 7 Tuesday FIRST_FROZEN outcomes — authoritative finals joined 2026-10-14
+
+**Join boundary:** Authoritative CBS Sports finals were joined only to genuinely pre-event Week 7 FIRST_FROZEN rows. These games had no established production or $20 sandbox execution, so this is model scoring only and not wager settlement. Frozen predictions were not reconstructed or mutated.
+
+| Game | FIRST_FROZEN home margin | FIRST_FROZEN total | FIRST_FROZEN home win p | Authoritative final | Actual home margin | Actual total | Margin error | Total error | SU direction correct |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Delaware @ Middle Tennessee | +1.8 | 50.6 | 0.530 | 30-33 | +3 | 63 | +1.2 | +12.4 | 1 |
+| Florida International @ Jacksonville State | +4.5 | 47.7 | 0.614 | 24-27 | +3 | 51 | -1.5 | +3.3 | 1 |
+
+**Source:** CBS Sports Week 7 schedule/odds finals, retrieved 2026-10-14T12:03:33Z; https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/  
+**Scientific effect:** NONE. Champion v1.193, FIRST_FROZEN/accepted REFRESH lineage, exclusions, Challenger status, and betting rules remain unchanged. No outcome-informed reconstruction occurred.
