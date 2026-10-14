@@ -1,0 +1,3578 @@
+{
+  "dataset_role": "MANUAL_QA_CAPTURE_NOT_CANONICAL_MARKET_OR_PRIMARY_HOT_SHEET",
+  "scrape_id": "01a13ca4-0866-7688-b73d-4860fb9e900d",
+  "max_age_requested": 0,
+  "response_characters_reported": 130294,
+  "retained_representation": "Every markdown table line from the returned response; unrelated page prose excluded",
+  "fixture_path": "evidence/scheduler_qa/CFB_CBS_FULL_BOARD_TABLES_20261014T225920Z.md",
+  "fixture_blob": "aedb05861d14da4f6dfc7dd0a1cc85ff8629403e",
+  "normalized": {
+    "schema": "CFB_CBS_COMPLETE_FALLBACK_CAPTURE_V1",
+    "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/",
+    "response_recovered_by_utc": "2026-10-14T22:59:20Z",
+    "clock_semantics": "RESPONSE_RECOVERED_BY_NOT_EXACT_FETCH_OR_BOOK_UPDATE",
+    "source_timezone": "America/New_York",
+    "source_sha256": "f75d0da511bad774a806e4adf00583eed1604cb011349065c7ffced77af85215",
+    "games": [
+      {
+        "game_id": "401871054",
+        "away_team": "Kennesaw State",
+        "home_team": "Missouri State",
+        "source_kickoff_utc": "2026-10-14T23:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Kennesaw State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -2.5,
+              "price": -112,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -138,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 52.5,
+              "price": -110,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Missouri State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 2.5,
+              "price": -102,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 120,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 53.5,
+              "price": -111,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401871068",
+        "away_team": "Western Kentucky",
+        "home_team": "Sam Houston",
+        "source_kickoff_utc": "2026-10-15T00:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Western Kentucky",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -1.0,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -112,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 53.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Sam Houston",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 1.5,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -105,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 53.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401869950",
+        "away_team": "Georgia Southern",
+        "home_team": "Old Dominion",
+        "source_kickoff_utc": "2026-10-15T23:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Georgia Southern",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -3.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -175,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 47.5,
+              "price": -110,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "Old Dominion",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 3.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 150,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 47.5,
+              "price": -108,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401862800",
+        "away_team": "East Carolina",
+        "home_team": "UAB",
+        "source_kickoff_utc": "2026-10-15T23:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "East Carolina",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -4.5,
+              "price": -114,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -200,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 47.5,
+              "price": -106,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "UAB",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 5.5,
+              "price": -112,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 170,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 47.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401860923",
+        "away_team": "Colorado State",
+        "home_team": "Texas State",
+        "source_kickoff_utc": "2026-10-16T00:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Colorado State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 14.5,
+              "price": -112,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 475,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 69.5,
+              "price": -111,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Texas State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -14.0,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -599,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 69.5,
+              "price": -108,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401862801",
+        "away_team": "Memphis",
+        "home_team": "Tulane",
+        "source_kickoff_utc": "2026-10-16T23:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Memphis",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -7.0,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -265,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 55.5,
+              "price": -111,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Tulane",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 7.5,
+              "price": -122,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 225,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 55.5,
+              "price": -104,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401869844",
+        "away_team": "App State",
+        "home_team": "Coastal Carolina",
+        "source_kickoff_utc": "2026-10-17T00:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "App State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -1.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 48.5,
+              "price": -114,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Coastal Carolina",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 1.5,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -102,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 49.5,
+              "price": -114,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858493",
+        "away_team": "Washington",
+        "home_team": "Purdue",
+        "source_kickoff_utc": "2026-10-17T00:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Washington",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 3.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 142,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 51.5,
+              "price": -115,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Purdue",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -3.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -166,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 52.5,
+              "price": -115,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401869957",
+        "away_team": "Georgia State",
+        "home_team": "James Madison",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Georgia State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 12.5,
+              "price": -112,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 350,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 57.5,
+              "price": -110,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "James Madison",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -12.0,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -429,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 58.5,
+              "price": -115,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858491",
+        "away_team": "Northwestern",
+        "home_team": "Michigan State",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Northwestern",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -7.5,
+              "price": -102,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -294,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 48.5,
+              "price": -118,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "Michigan State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 7.5,
+              "price": -112,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 250,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 49.5,
+              "price": -112,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856724",
+        "away_team": "Florida",
+        "home_team": "Texas",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Florida",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 11.0,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 340,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 51.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "Texas",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -10.5,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -435,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 51.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858268",
+        "away_team": "Virginia",
+        "home_team": "SMU",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Virginia",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 9.5,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 270,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 51.5,
+              "price": -114,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "SMU",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -8.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -330,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 52.5,
+              "price": -122,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856720",
+        "away_team": "Mississippi State",
+        "home_team": "LSU",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Mississippi State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 14.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 475,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 56.5,
+              "price": -115,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "LSU",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -14.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -599,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 57.5,
+              "price": -111,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856830",
+        "away_team": "Kansas",
+        "home_team": "Kansas State",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Kansas",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 4.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 164,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 55.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Kansas State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -4.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -192,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 55.5,
+              "price": -114,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856829",
+        "away_team": "Cincinnati",
+        "home_team": "West Virginia",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Cincinnati",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 1.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 102,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 62.5,
+              "price": -115,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "West Virginia",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -1.0,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 63.5,
+              "price": -112,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858261",
+        "away_team": "Charleston Southern",
+        "home_team": "Clemson",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Charleston Southern",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 42.5,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 8000,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 56.5,
+              "price": -110,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "Clemson",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -42.5,
+              "price": -105,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -100000,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 56.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858488",
+        "away_team": "Ohio State",
+        "home_team": "Indiana",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Ohio State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -3.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -170,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 50.5,
+              "price": -110,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "Indiana",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 3.5,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 150,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 51.5,
+              "price": -120,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401866441",
+        "away_team": "Ball State",
+        "home_team": "Bowling Green",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Ball State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 6.5,
+              "price": -102,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 225,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 47.5,
+              "price": -110,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Bowling Green",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -6.5,
+              "price": -114,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -256,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 47.5,
+              "price": -108,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858267",
+        "away_team": "Pittsburgh",
+        "home_team": "Boston College",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Pittsburgh",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -6.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -233,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 42.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Boston College",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 6.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 195,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 42.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401862802",
+        "away_team": "Florida Atlantic",
+        "home_team": "Army",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Florida Atlantic",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 3.0,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 120,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 54.5,
+              "price": -118,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Army",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -2.5,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -137,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 55.5,
+              "price": -118,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858489",
+        "away_team": "Rutgers",
+        "home_team": "Maryland",
+        "source_kickoff_utc": "2026-10-17T16:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Rutgers",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 4.5,
+              "price": -106,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 164,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 57.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Maryland",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -4.5,
+              "price": -112,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -196,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 57.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401866442",
+        "away_team": "Massachusetts",
+        "home_team": "Buffalo",
+        "source_kickoff_utc": "2026-10-17T17:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Massachusetts",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 6.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 205,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 41.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Buffalo",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -6.5,
+              "price": -105,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -244,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 41.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401862803",
+        "away_team": "Charlotte",
+        "home_team": "Temple",
+        "source_kickoff_utc": "2026-10-17T17:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Charlotte",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 21.0,
+              "price": -112,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 1100,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 46.5,
+              "price": -111,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Temple",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -20.5,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -1786,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 46.5,
+              "price": -105,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856725",
+        "away_team": "The Citadel",
+        "home_team": "Texas A&M",
+        "source_kickoff_utc": "2026-10-17T17:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "The Citadel",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 45.5,
+              "price": -105,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 8000,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 56.5,
+              "price": -110,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "Texas A&M",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -45.5,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -100000,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 56.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401866443",
+        "away_team": "Western Michigan",
+        "home_team": "Central Michigan",
+        "source_kickoff_utc": "2026-10-17T17:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Western Michigan",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -6.5,
+              "price": -118,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -256,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 43.5,
+              "price": -104,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "Central Michigan",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 7.0,
+              "price": -114,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 220,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 43.5,
+              "price": -114,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856828",
+        "away_team": "Arizona State",
+        "home_team": "Texas Tech",
+        "source_kickoff_utc": "2026-10-17T19:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Arizona State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 14.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 500,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 48.5,
+              "price": -111,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Texas Tech",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -14.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -667,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 48.5,
+              "price": -105,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401864524",
+        "away_team": "UNLV",
+        "home_team": "Air Force",
+        "source_kickoff_utc": "2026-10-17T19:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "UNLV",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -1.0,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 48.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Air Force",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 1.5,
+              "price": -118,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -105,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 48.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858490",
+        "away_team": "Penn State",
+        "home_team": "Michigan",
+        "source_kickoff_utc": "2026-10-17T19:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Penn State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 6.5,
+              "price": -102,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 200,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 42.5,
+              "price": -111,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Michigan",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -6.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -244,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 42.5,
+              "price": -106,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401864522",
+        "away_team": "Northern Illinois",
+        "home_team": "Wyoming",
+        "source_kickoff_utc": "2026-10-17T19:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Northern Illinois",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 7.5,
+              "price": -105,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 255,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 40.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Wyoming",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -7.5,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -305,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 40.5,
+              "price": -108,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858264",
+        "away_team": "Georgia Tech",
+        "home_team": "Virginia Tech",
+        "source_kickoff_utc": "2026-10-17T19:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Georgia Tech",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 10.0,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 295,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 57.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Virginia Tech",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -10.0,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -370,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 57.5,
+              "price": -111,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856721",
+        "away_team": "Missouri",
+        "home_team": "Ole Miss",
+        "source_kickoff_utc": "2026-10-17T19:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Missouri",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 6.5,
+              "price": -122,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 185,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 58.5,
+              "price": -110,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "Ole Miss",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -5.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -205,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 59.5,
+              "price": -118,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856719",
+        "away_team": "Auburn",
+        "home_team": "Georgia",
+        "source_kickoff_utc": "2026-10-17T19:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Auburn",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 20.5,
+              "price": -102,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 1000,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 49.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Georgia",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -20.5,
+              "price": -114,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -1429,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 49.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856723",
+        "away_team": "Alabama",
+        "home_team": "Tennessee",
+        "source_kickoff_utc": "2026-10-17T19:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Alabama",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -7.5,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -310,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 51.5,
+              "price": -115,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Tennessee",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 8.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 275,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 51.5,
+              "price": -105,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401866478",
+        "away_team": "Akron",
+        "home_team": "Miami (OH)",
+        "source_kickoff_utc": "2026-10-17T19:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Akron",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 10.0,
+              "price": -112,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 290,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 46.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Miami (OH)",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -9.5,
+              "price": -114,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -360,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 46.5,
+              "price": -111,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401866444",
+        "away_team": "Toledo",
+        "home_team": "Eastern Michigan",
+        "source_kickoff_utc": "2026-10-17T19:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Toledo",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -6.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -238,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 53.5,
+              "price": -111,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Eastern Michigan",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 6.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 200,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 53.5,
+              "price": -108,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858266",
+        "away_team": "North Carolina",
+        "home_team": "Duke",
+        "source_kickoff_utc": "2026-10-17T19:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "North Carolina",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 3.5,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 136,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 47.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "Duke",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -3.5,
+              "price": 100,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -154,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 47.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401862805",
+        "away_team": "Tulsa",
+        "home_team": "Rice",
+        "source_kickoff_utc": "2026-10-17T20:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Tulsa",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -4.0,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -184,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 46.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Rice",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 4.5,
+              "price": -114,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 160,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 46.5,
+              "price": -105,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401869966",
+        "away_team": "Troy",
+        "home_team": "Louisiana",
+        "source_kickoff_utc": "2026-10-17T21:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Troy",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 4.0,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 150,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 49.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Louisiana",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -4.0,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -180,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 49.5,
+              "price": -114,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401860903",
+        "away_team": "Washington State",
+        "home_team": "Oregon State",
+        "source_kickoff_utc": "2026-10-17T22:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Washington State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 18.5,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 700,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 52.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Oregon State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -17.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -1000,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 52.5,
+              "price": -114,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856832",
+        "away_team": "TCU",
+        "home_team": "Baylor",
+        "source_kickoff_utc": "2026-10-17T23:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "TCU",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 6.0,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 180,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 48.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Baylor",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -6.0,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -217,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 48.5,
+              "price": -112,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856726",
+        "away_team": "Arkansas",
+        "home_team": "Vanderbilt",
+        "source_kickoff_utc": "2026-10-17T23:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Arkansas",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 6.0,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 190,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 49.5,
+              "price": -114,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Vanderbilt",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -6.0,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -225,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 50.5,
+              "price": -115,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401864520",
+        "away_team": "Nevada",
+        "home_team": "North Dakota State",
+        "source_kickoff_utc": "2026-10-17T23:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Nevada",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 14.5,
+              "price": -106,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 550,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 42.5,
+              "price": -110,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "North Dakota State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -14.5,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -699,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 42.5,
+              "price": -108,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401869934",
+        "away_team": "Arkansas State",
+        "home_team": "Southern Miss",
+        "source_kickoff_utc": "2026-10-17T23:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Arkansas State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -7.0,
+              "price": -105,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -256,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 62.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Southern Miss",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 7.0,
+              "price": -114,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 215,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 62.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401862806",
+        "away_team": "Kent State",
+        "home_team": "South Florida",
+        "source_kickoff_utc": "2026-10-17T23:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Kent State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 20.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 900,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 45.5,
+              "price": -102,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "South Florida",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -20.5,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -1429,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 45.5,
+              "price": -115,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858263",
+        "away_team": "Florida State",
+        "home_team": "Miami",
+        "source_kickoff_utc": "2026-10-17T23:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Florida State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 21.5,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 1050,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 56.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Miami",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -21.5,
+              "price": -104,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -1667,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 56.5,
+              "price": -111,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858265",
+        "away_team": "Louisville",
+        "home_team": "Syracuse",
+        "source_kickoff_utc": "2026-10-17T23:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Louisville",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -14.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -649,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 55.5,
+              "price": -112,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Syracuse",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 14.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 500,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 55.5,
+              "price": -105,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856831",
+        "away_team": "Oklahoma State",
+        "home_team": "Houston",
+        "source_kickoff_utc": "2026-10-17T23:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Oklahoma State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 4.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 160,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 62.5,
+              "price": -110,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Houston",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -4.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -192,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 62.5,
+              "price": -108,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856722",
+        "away_team": "Kentucky",
+        "home_team": "Oklahoma",
+        "source_kickoff_utc": "2026-10-17T23:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Kentucky",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 7.0,
+              "price": -112,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 210,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 43.5,
+              "price": -114,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Oklahoma",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -7.0,
+              "price": -105,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -256,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 43.5,
+              "price": -105,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856809",
+        "away_team": "Notre Dame",
+        "home_team": "BYU",
+        "source_kickoff_utc": "2026-10-17T23:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Notre Dame",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -10.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -395,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 46.5,
+              "price": -110,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "BYU",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 10.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 320,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 46.5,
+              "price": -108,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858262",
+        "away_team": "Elon",
+        "home_team": "Stanford",
+        "source_kickoff_utc": "2026-10-17T23:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Elon",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 35.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 3000,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 56.5,
+              "price": -106,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "Stanford",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -35.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -10000,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 56.5,
+              "price": -114,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858494",
+        "away_team": "Wisconsin",
+        "home_team": "UCLA",
+        "source_kickoff_utc": "2026-10-17T23:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Wisconsin",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 3.0,
+              "price": -120,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 120,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 42.5,
+              "price": -114,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "UCLA",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -2.5,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -142,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 42.5,
+              "price": -105,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401871091",
+        "away_team": "Louisiana Tech",
+        "home_team": "UL Monroe",
+        "source_kickoff_utc": "2026-10-18T00:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Louisiana Tech",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -15.0,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -714,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 57.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "UL Monroe",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 15.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 525,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 57.5,
+              "price": -114,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401862804",
+        "away_team": "Navy",
+        "home_team": "UTSA",
+        "source_kickoff_utc": "2026-10-18T00:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Navy",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 7.0,
+              "price": -114,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 215,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 55.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "UTSA",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -6.5,
+              "price": -120,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -256,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 55.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401864523",
+        "away_team": "San Jos\u00e9 State",
+        "home_team": "UTEP",
+        "source_kickoff_utc": "2026-10-18T01:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "San Jos\u00e9 State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -7.5,
+              "price": -102,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -294,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 46.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "UTEP",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 7.5,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 250,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 46.5,
+              "price": -108,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401866445",
+        "away_team": "Ohio",
+        "home_team": "Sacramento State",
+        "source_kickoff_utc": "2026-10-18T02:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Ohio",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -15.0,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -667,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 48.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Sacramento State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 15.5,
+              "price": -112,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 500,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 48.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401856833",
+        "away_team": "Utah",
+        "home_team": "Colorado",
+        "source_kickoff_utc": "2026-10-18T02:15:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Utah",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -15.5,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -752,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 49.5,
+              "price": -110,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Colorado",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 15.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 550,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 49.5,
+              "price": -108,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401864521",
+        "away_team": "New Mexico",
+        "home_team": "Hawai'i",
+        "source_kickoff_utc": "2026-10-18T02:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "New Mexico",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -14.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -667,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 44.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "Hawai'i",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 15.0,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 520,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 44.5,
+              "price": -111,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401860904",
+        "away_team": "Fresno State",
+        "home_team": "San Diego State",
+        "source_kickoff_utc": "2026-10-18T02:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Fresno State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -7.5,
+              "price": -105,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -294,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 46.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "San Diego State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 7.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 250,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 46.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858269",
+        "away_team": "Wake Forest",
+        "home_team": "California",
+        "source_kickoff_utc": "2026-10-18T02:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Wake Forest",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -9.0,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -345,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 53.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "California",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 9.0,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 275,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 53.5,
+              "price": -114,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401858492",
+        "away_team": "Nebraska",
+        "home_team": "Oregon",
+        "source_kickoff_utc": "2026-10-18T03:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Nebraska",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 7.5,
+              "price": -112,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 240,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 52.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Oregon",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -7.5,
+              "price": -105,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -286,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 52.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401871053",
+        "away_team": "Florida International",
+        "home_team": "Jacksonville State",
+        "source_kickoff_utc": null,
+        "temporal_status": "PAST_SOURCE_DATE_ONLY_EXACT_KICKOFF_UNAVAILABLE",
+        "team_offers": [
+          {
+            "team": "Florida International",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 3.5,
+              "price": -122,
+              "side": null,
+              "opaque_book_icon_id": null
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 130,
+              "side": null,
+              "opaque_book_icon_id": null
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 44.5,
+              "price": -106,
+              "side": "o",
+              "opaque_book_icon_id": null
+            }
+          },
+          {
+            "team": "Jacksonville State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -2.5,
+              "price": -124,
+              "side": null,
+              "opaque_book_icon_id": null
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -142,
+              "side": null,
+              "opaque_book_icon_id": null
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 44.5,
+              "price": -105,
+              "side": "u",
+              "opaque_book_icon_id": null
+            }
+          }
+        ]
+      },
+      {
+        "game_id": "401871067",
+        "away_team": "Delaware",
+        "home_team": "Middle Tennessee",
+        "source_kickoff_utc": null,
+        "temporal_status": "PAST_SOURCE_DATE_ONLY_EXACT_KICKOFF_UNAVAILABLE",
+        "team_offers": [
+          {
+            "team": "Delaware",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -1.5,
+              "price": -105,
+              "side": null,
+              "opaque_book_icon_id": null
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": null
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 49.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": null
+            }
+          },
+          {
+            "team": "Middle Tennessee",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 1.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": null
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 100,
+              "side": null,
+              "opaque_book_icon_id": null
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 49.5,
+              "price": -111,
+              "side": "u",
+              "opaque_book_icon_id": null
+            }
+          }
+        ]
+      }
+    ],
+    "coverage": {
+      "governed_games": 62,
+      "matched_games": 62,
+      "source_team_rows": 124,
+      "future_games": 60,
+      "future_team_rows": 120,
+      "past_or_started_games": 2,
+      "missing_game_ids": []
+    },
+    "qualification": "UNIDENTIFIED_FIELD_LEVEL_MIXED_BOOK_FALLBACK_ONLY",
+    "consensus": "CONSENSUS_UNAVAILABLE",
+    "caesars": "UNVERIFIED",
+    "book_update_time": "UNKNOWN",
+    "executability": "UNVERIFIED",
+    "quarantined_columns": [
+      "Final",
+      "Open"
+    ],
+    "scope": "exact source-display capture and identity completeness only; no outcome/schedule-truth/consensus/execution/decision acceptance"
+  },
+  "clock_crosscheck": {
+    "prior_primary_sheet_blob": "edb1806a4ebe4d1ae0c5e4a5c75d50869d9b4b3e",
+    "active_clocks_compared": 60,
+    "matching_clocks": 60,
+    "source_truth_corroboration": false
+  }
+}
