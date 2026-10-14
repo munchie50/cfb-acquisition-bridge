@@ -1112,3 +1112,16 @@ All remaining 60 governed games retain their recorded reconciliation deadlines a
 | FIU @ Jacksonville State | INCONCLUSIVE → PASS | FIU +3 (-110), ML +128; Jacksonville State -2.5 (-124), ML -148; total 43.5 (-110/-108) | Frozen Jacksonville State -4.5 versus fallback -2.5 is only a raw investigation flag. Consensus, Caesars executability, and calibrated EV remain unavailable; no governed threshold was earned. | Not established | CLOSED — no production or sandbox wager; no casino trip |
 
 **Portfolio:** Week 7 production exposure remains $0; separate $20 sandbox exposure remains $0. No trip is authorized for Tuesday. The remaining 60 games retain their already assigned prospective reconciliation deadlines; no other state is changed by this append.
+
+
+## Wednesday morning pre-deadline reconciliation — 2026-10-14 07:04 CT
+
+**Cycle:** CFB_MARKET_MONITOR_20261014T120046Z  
+**Authority boundary:** Prospective review before the governed 13:00 CT Wednesday reconciliation deadline. Frozen predictions remain unchanged. The refreshed board is an unidentified CBS mixed-book fallback; qualified consensus is unavailable and actual Caesars execution is unverified. Raw model/market disagreement is not calibrated EV.
+
+| Game | State | Current fallback | Reason / awaited information | Next trigger and hard cutoff | Acceptable number / execution window |
+|---|---|---|---|---|---|
+| Kennesaw State @ Missouri State | INCONCLUSIVE (retained) | Kennesaw State -3 (-108), ML -154; Missouri State +3.5 (-122), ML +136; total 52.5 (-105/-114) | Consensus unavailable; Caesars unverified; no governed acceptable number or price earned. Official preview supplied no qualified new scratch/QB change. Springfield weather is cloudy near kickoff with later thunderstorm risk, which remains monitoring evidence only. | Reconcile at 2026-10-14T18:00:00Z; no drift beyond that point. If still unqualified, transition prospectively to governed WAIT with an explicit trigger and hard cutoff or PASS. Planning cutoff 2026-10-14T22:30:00Z. | Not established; no executable recommendation before the deadline |
+| Western Kentucky @ Sam Houston | INCONCLUSIVE (retained) | Western Kentucky -1.5 (-110), ML -122; Sam Houston +1.5 (-108), ML +105; total 52.5 (-110/-108) | Favorite flip from the preserved opening fallback is an investigation flag only. Consensus unavailable; Caesars unverified; no governed acceptable number or price earned. Official preview supplied no qualified new scratch/QB change. | Reconcile at 2026-10-14T18:00:00Z; no drift beyond that point. If still unqualified, transition prospectively to governed WAIT with an explicit trigger and hard cutoff or PASS. Planning cutoff 2026-10-14T23:00:00Z. | Not established; no executable recommendation before the deadline |
+
+**Portfolio:** Week 7 production exposure remains $0; separate $20 sandbox exposure remains $0. No morning casino trip is authorized. The 58 other unresolved games retain their assigned prospective reconciliation deadlines, and the two Tuesday games remain PASS. No Champion/FIRST_FROZEN/REFRESH field changed.
