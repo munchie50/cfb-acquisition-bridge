@@ -5,9 +5,9 @@
 **Publication boundary:** 2026-10-14T12:06:00Z
 **Scope:** canonical neutral display only; source/kickoff/execution truth and full-run completion require independent qualification.
 **Frozen-model boundary:** Original accepted FIRST_FROZEN cutoff 2026-09-26T03:47:37.497112+00:00; 51 predictions and 11 exclusions; no REFRESH substitution.
-**Canonical inputs:** market d6cc1d8372e19faaee1d835e9f7eb5b8f09a54b0; decision 2429dd9d1eaab8e8b470c5856e3a3ae356b26e8c; execution 75caee4052e02ea7d2453d1d37fd3866e13ecc07; scorecard 6f7650d340bf63f8f93a2b825e35f8b8e41fa80b.
+**Canonical inputs:** market d6cc1d8372e19faaee1d835e9f7eb5b8f09a54b0; decision 2429dd9d1eaab8e8b470c5856e3a3ae356b26e8c; execution 75caee4052e02ea7d2453d1d37fd3866e13ecc07; scorecard 11160bb2f725555994067e72985024dc809a9241.
 **Neutral summary:** 60 INCONCLUSIVE; 2 PASS; no actionable recommendation; consensus unavailable; Caesars unverified; no Tuesday trip.
-**Primary active section:** WEDNESDAY; Tuesday rows remain displayed as resolved PASS.
+**Primary active section:** WEDNESDAY; Tuesday rows remain displayed as resolved PASS. Authoritative Tuesday finals were joined to genuine pre-event FIRST_FROZEN rows in the governed scorecard; no wager settlement applied.
 **Refresh boundary:** CBS Sports Week 7 board fetched live at 2026-10-14T12:03:33Z. Nearest-window Wednesday offers were requalified and are rendered below. For later games, the accessible source did not expose recoverable constituent book identity and the structured full-board extraction was partial; each affected row therefore retains its latest qualified fallback and is explicitly marked CURRENT_REQUALIFICATION_UNAVAILABLE rather than being guessed. CONSENSUS_UNAVAILABLE throughout; actual Caesars UNVERIFIED throughout.
 
 ## TUESDAY
