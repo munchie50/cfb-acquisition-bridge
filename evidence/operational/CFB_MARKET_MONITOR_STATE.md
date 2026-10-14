@@ -3598,3 +3598,20 @@ Decision-window observations:
 - Florida International @ Jacksonville State — FIU +3 (-110), ML +128; Jacksonville State -2.5 (-124), ML -148; over 43.5 (-110), under 43.5 (-108). Compared with the 12:09Z fallback, prices moved but the displayed spread/total remained within the same narrow market range.
 
 All remaining board observations were rechecked at the same source/retrieval boundary and remain downstream market evidence. Exact first-qualified observations and earlier snapshots are preserved above and in prior Hot Sheets; nothing is overwritten or hindsight-backfilled. No displayed disagreement is treated as calibrated EV. No Champion/FIRST_FROZEN/REFRESH field changed.
+
+
+## Scheduled full-slate refresh — 2026-10-14 07:03 CT
+
+**Cycle:** CFB_MARKET_MONITOR_20261014T120046Z  
+**Observation class:** INTERMEDIATE / QUALIFIED_MIXED_BOOK_FALLBACK.  
+**Scope:** Full governed Week 7 relevant-FBS slate rechecked prospectively on the CBS Sports Week 7 odds board at 2026-10-14T12:03:33Z (EXACT). All 62 governed game identities remained represented by the accepted slate and kickoff-section membership remains 2/2/3/3/13/17/22/0. CBS displayed book logos per offer but the accessible render did not expose recoverable constituent book names; these observations are single/mixed-book fallback, never consensus. CONSENSUS_UNAVAILABLE; actual Caesars UNVERIFIED; execution UNVERIFIED. Source: https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/
+
+Nearest-window observations:
+- Kennesaw State @ Missouri State — Kennesaw State -3 (-108), ML -154; Missouri State +3.5 (-122), ML +136; over 52.5 (-105), under 52.5 (-114). First preserved fallback was Kennesaw State -2.5 (-105), Missouri State +2.5 (-115), total 51.5; movement is toward Kennesaw State and a one-point higher total. No qualified consensus or Caesars offer was established.
+- Western Kentucky @ Sam Houston — Western Kentucky -1.5 (-110), ML -122; Sam Houston +1.5 (-108), ML +105; over 52.5 (-110), under 52.5 (-108). First preserved fallback was Sam Houston -2.5 (-110), Western Kentucky +2.5 (-110), total 50.5; the displayed favorite flipped to Western Kentucky and the total rose two points. This is an investigation flag only, not calibrated EV.
+
+Availability/weather boundary:
+- Official Kennesaw State and Western Kentucky game previews confirm the Wednesday kickoff windows and expected participating teams; no qualified new official scratch or quarterback-status change was found in the checked official previews.
+- Springfield, Missouri forecast for the 18:30 CT kickoff window was cloudy near 75°F, with thunderstorms possible later in the evening; Huntsville, Texas forecast for the 19:00 CT kickoff window was clear near 83°F after a late-afternoon thunderstorm possibility. Weather remains monitored and does not by itself earn an action.
+
+Exact first-qualified observations and all earlier snapshots remain preserved above and in prior Hot Sheets. Nothing is overwritten or hindsight-backfilled. No displayed disagreement is treated as calibrated EV. No Champion/FIRST_FROZEN/REFRESH field changed.
