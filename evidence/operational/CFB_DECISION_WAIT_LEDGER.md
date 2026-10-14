@@ -1125,3 +1125,16 @@ All remaining 60 governed games retain their recorded reconciliation deadlines a
 | Western Kentucky @ Sam Houston | INCONCLUSIVE (retained) | Western Kentucky -1.5 (-110), ML -122; Sam Houston +1.5 (-108), ML +105; total 52.5 (-110/-108) | Favorite flip from the preserved opening fallback is an investigation flag only. Consensus unavailable; Caesars unverified; no governed acceptable number or price earned. Official preview supplied no qualified new scratch/QB change. | Reconcile at 2026-10-14T18:00:00Z; no drift beyond that point. If still unqualified, transition prospectively to governed WAIT with an explicit trigger and hard cutoff or PASS. Planning cutoff 2026-10-14T23:00:00Z. | Not established; no executable recommendation before the deadline |
 
 **Portfolio:** Week 7 production exposure remains $0; separate $20 sandbox exposure remains $0. No morning casino trip is authorized. The 58 other unresolved games retain their assigned prospective reconciliation deadlines, and the two Tuesday games remain PASS. No Champion/FIRST_FROZEN/REFRESH field changed.
+
+
+## Wednesday deadline reconciliation — 2026-10-14 13:00 CT
+
+**Cycle:** CFB_MARKET_MONITOR_20261014T175552Z  
+**Authority boundary:** Prospective decision at the governed Wednesday reconciliation deadline. Frozen predictions remain unchanged. The refreshed board is an unidentified CBS mixed-book fallback; qualified consensus is unavailable and actual Caesars execution is unverified. Raw model/market disagreement is not calibrated EV.
+
+| Game | State transition | Current fallback | Reason / awaited information | Acceptable number / price | Execution window |
+|---|---|---|---|---|---|
+| Kennesaw State @ Missouri State | INCONCLUSIVE → PASS | Kennesaw State -2.5 (-111), ML -140; Missouri State +2.5 (-105), ML +120; total 52.5 (-110/-105) | No qualified consensus, no verified Caesars offer, and no governed acceptable threshold was earned. Missouri State quarterback uncertainty and late weather risk add uncertainty rather than a usable edge. The earned disposition is no bet; do not reopen from price movement alone. | Not established | CLOSED — no production or sandbox wager; no casino trip |
+| Western Kentucky @ Sam Houston | INCONCLUSIVE → PASS | Western Kentucky -1 (-111), ML -115; Sam Houston +1.5 (-114), ML +102; source-rendered over 52.5 (-111) / under 53.5 (-112) | Frozen Sam Houston -36.5 versus a near-pick'em fallback is a severe raw disagreement and likely model-risk signal, not calibrated EV. The asymmetric displayed total, unavailable consensus, unverified Caesars offer, and absent governed threshold prohibit action. | Not established | CLOSED — no production or sandbox wager; no casino trip |
+
+**Portfolio:** Week 7 production exposure remains $0; separate $20 sandbox exposure remains $0. No Wednesday trip is authorized. The remaining 58 active games retain their assigned prospective reconciliation deadlines; the two Tuesday and two Wednesday games are now PASS. No Champion/FIRST_FROZEN/REFRESH field changed.
