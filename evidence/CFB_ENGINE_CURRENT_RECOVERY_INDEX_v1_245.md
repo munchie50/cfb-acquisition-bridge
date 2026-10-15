@@ -5859,3 +5859,36 @@ Current operational recovery surfaces:
 All three Thursday decisions are PASS / NO BET. Current census is 55 INCONCLUSIVE and 7 PASS; Friday is the earliest active section. The Hot Sheet preserves 62 unique governed identities and section counts 2/2/3/3/13/17/22/0. No wager or trip was established. Frozen Champion/FIRST_FROZEN/accepted REFRESH lineage is unchanged.
 
 Open integrity debt: the market and decision additions are still untyped append-only tails relative to CFB_NEUTRAL_MARKET_PRESENTATION_V1 / CFB_NEUTRAL_DECISION_PRESENTATION_V1, and Friday/Saturday afternoon source rows are retained in the full-board capture but not individually normalized into the current Hot Sheet. Do not certify typed neutral-source reconciliation or RUN_PASS until prospective complete typed blocks and independent rendering succeed. This frontier does not authorize historical reconstruction.
+
+
+```cfb-frontier-json
+{
+  "schema":"CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc":"2026-10-15T18:06:30Z",
+  "scope":"NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims":[
+    "Thursday13:00CT Market Monitor persisted and read back RUN_STARTED before external research.",
+    "Fresh complete CBS render retained62gameheaders/124teamrows. Opaque field-level book identities remain unidentified; consensus unavailable; Caesars/execution unverified.",
+    "All three Thursday games resolved prospectively to PASS/NO BET at the deadline. Current decision census is55INCONCLUSIVE+7PASS; Friday is earliest active section; no acceptable threshold, wager or trip was established.",
+    "Hot Sheet preserves62unique governed identities with counts2/2/3/3/13/17/22/0. Champion/FIRST_FROZEN/acceptedREFRESH remain unchanged.",
+    "Current typed neutral market/decision reconciliation and complete Friday/Saturday per-row afternoon normalization remain open; RUN_PASS prohibited."
+  ],
+  "pointers":[
+    {"path":"evidence/operational/CFB_MARKET_MONITOR_STATE.md","blob":"29b5aa348e3224ed596c41ce96d2fa73b5e193af","purpose":"CURRENT_MARKET_STATE: Thursday13:00CT complete-response capture plus deadline-priority projection;consensus unavailable;Caesars/execution unverified"},
+    {"path":"evidence/operational/CFB_DECISION_WAIT_LEDGER.md","blob":"9d36041b96e12deaec608019ea5d77cd754fe845","purpose":"CURRENT_DECISION_STATE:7PASS+55INCONCLUSIVE;all Thursday PASS;Friday earliest active;no threshold/trip/execution"},
+    {"path":"evidence/operational/CFB_EXECUTION_LEDGER.md","blob":"75caee4052e02ea7d2453d1d37fd3866e13ecc07","purpose":"CURRENT_EXECUTION_LEDGER: independently read and unchanged;no Week7 execution"},
+    {"path":"evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md","blob":"d0726d8f758bfcde02a0196379bc46ec83d0a0ff","purpose":"CURRENT_SCORECARD: Tuesday2 and Wednesday2 authoritative finals joined only to genuine pre-event FIRST_FROZEN"},
+    {"path":"evidence/operational/CFB_MONEY_LEDGER.md","blob":"3aebcbdcc535479c29c31f18073cba09f59aab01","purpose":"CURRENT_MONEY_LEDGER: independently read and unchanged"},
+    {"path":"evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-15_1300CT.md","blob":"02e470ddb486008cba819735e06de77d1639ea3e","purpose":"CURRENT_HOT_SHEET: Friday-primary bounded afternoon publication;exact62 sections;55INCONCLUSIVE+7PASS;typed/per-row normalization debt explicit"},
+    {"path":"evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261015T175838Z.md","blob":"6ff67e5c57060fde38509d09afbcaaf402cdb77d","purpose":"CURRENT_COMPLETE_RESPONSE_CAPTURE:62headers/124teamrows;fallbackonly;Final/Open quarantined"},
+    {"path":"evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md","blob":"0dda6d5a92f12ce08512e0509a9ca457870f514b","purpose":"CURRENT_WEEKLY_REVIEW: acceptedWeek6 learning review;no automatic Champion or Challenger mutation"},
+    {"path":"evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md","blob":"6b1097abd4cb082a1e60e4d1f09573576d804001","purpose":"HISTORICAL_WEEKLY_REVIEW_SOURCE: exact immutable Health ancestor required by currentR2 carry-forward audit;not latestHealth"},
+    {"path":"evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261014T221540Z_AUDIT.md","blob":"fbb0cbc5f96b42e2017899e3ad39fd9b56f40760","purpose":"LATEST_PERSISTED_HEALTH_AUDIT: October14 RUN_INCOMPLETE;historical gaps retained"},
+    {"path":"evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json","blob":"d80e26c398de48e7a386ad9a627fe44f4111ac45","purpose":"accepted original62 target lineage census;51predictions+11exclusions;REFRESH separate"},
+    {"path":"evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json","blob":"6254ab28b90d9fa4a815124ea7ffec2850ddfc30","purpose":"CURRENT_ACCEPTED_PREDICTION_SOURCE: October6 independently acceptedREFRESH source;no automatic substitution"},
+    {"path":"evidence/run_receipts/CFB_MARKET_MONITOR_20261015T175838Z_RUN_STARTED.md","blob":"b272e308796c5d83161de83be3aa484d730424f8","purpose":"cycle observability start marker;not completion evidence"},
+    {"path":"evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md","blob":"e1349015aa6d2b34f7564ff60b405f9cf3841cfa","purpose":"ACTIVE_PRESENTATION_CONTROL"},
+    {"path":"evidence/CFB_CBS_COMPLETE_RESPONSE_CAPTURE_PROCEDURE_2026-10-14.md","blob":"ab554daa0446c3fccd27b7026a74700d65bc6daf","purpose":"ACTIVE_COMPLETE_RESPONSE_CAPTURE_CONTROL"}
+  ]
+}
+```
