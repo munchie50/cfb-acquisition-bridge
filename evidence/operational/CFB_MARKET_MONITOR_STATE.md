@@ -3632,3 +3632,25 @@ Availability/weather boundary:
 - Springfield, Missouri was forecast cloudy near the 18:30 CT kickoff after afternoon thunderstorms, with another thunderstorm possibility later in the evening. Huntsville, Texas was forecast clear near 83°F at the 19:00 CT kickoff after afternoon thunderstorm risk. Weather did not establish an actionable threshold.
 
 The board-wide observation was rechecked without overwriting first observations. Exact normalized per-game constituent identity remained unavailable outside the priority rows; earlier qualified row history remains intact. No raw model/market disagreement is treated as calibrated EV. No Champion/FIRST_FROZEN/REFRESH field changed.
+
+
+## Wednesday Evening Availability complete-response refresh — 2026-10-14 20:16 CT
+
+**Cycle:** CFB_EVENING_AVAILABILITY_20261015T011649Z  
+**Authority:** downstream of CFB_MARKET_MONITOR_20261014T175552Z; no competing baseline. Original FIRST_FROZEN, accepted REFRESH and all prior market observations remain unchanged.
+
+**Complete-response provenance:** Fresh CBS Week 7 response captured with maxAge=0 during this run and retained at evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261015T011649Z.md @ 5d6f37ed470342a641f75436287661cfc5a9151c. Retained table representation SHA-256 2f8b09237bab9ef51bc7d58cf98b9726355495587d0a57b15c449d3c2111e959; 62 game headers, 124 team rows, and all 58 future Thursday-through-Saturday games recovered. Exact bookmaker update clocks are unavailable. Opaque field-level book icons remain unidentified, so this is UNIDENTIFIED_FIELD_LEVEL_MIXED_BOOK_FALLBACK_ONLY; CONSENSUS_UNAVAILABLE; actual Caesars UNVERIFIED; execution UNVERIFIED. Source: https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/
+
+### Nearest active Thursday observations
+
+- Georgia Southern @ Old Dominion — Georgia Southern -3.5 (-108), ML -172; Old Dominion +3.5 (-108), ML +150; over 47.5 (-110), under 47.5 (-108). Versus the prior qualified fallback, spread and total are unchanged; Georgia Southern moneyline shortened from -180 to -172. Field-level offers remain mixed-book/asymmetric and non-executable.
+- East Carolina @ UAB — East Carolina -4.5 (-114), ML -200; UAB +5.5 (-112), ML +170; over 47.5 (-106), under 47.5 (-110). Versus the prior fallback, East Carolina remains -4.5 while the displayed UAB side moved from +4.5 to +5.5; the total remains 47.5. The one-point side asymmetry is preserved exactly and not normalized into a single-book line.
+- Colorado State @ Texas State — Colorado State +14.5 (-112), ML +475; Texas State -14 (-115), ML -599; over 69.5 (-111), under 69.5 (-108). Versus the prior fallback, the spread remains +14.5/-14 and the total display tightened from source-asymmetric over 69.5/under 70.5 to 69.5 on both sides. The half-point spread asymmetry is preserved.
+
+### Availability and weather boundary
+
+- Official team previews confirm the Thursday fixtures and kickoff windows. No new official quarterback-out or starter-change announcement was independently qualified for these three games at this boundary. Third-party injury aggregations were not promoted into actionable availability evidence.
+- Birmingham forecast near kickoff: clear and about 80°F; Norfolk: intermittent clouds near 68°F after possible afternoon showers; San Marcos: mostly sunny near 83°F. No forecast establishes an actionable edge or changes a frozen prediction.
+- Official sources: https://uabsports.com/news/2026/10/14/football-uab-hosts-east-carolina-for-homecoming-thursday-night-on-espn ; https://gseagles.com/news/2026/10/12/football-game-preview-thursday-night-lights-on-tap-for-eagles ; https://txst.com/news/2026/10/13/football-game-preview-txst-vs-colorado-state.aspx
+
+No acceptable number or price was earned, no wager or trip was authorized, and no market/model disagreement was converted into EV, probability or confidence.
