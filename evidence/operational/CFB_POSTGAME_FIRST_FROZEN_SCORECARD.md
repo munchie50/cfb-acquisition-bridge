@@ -200,3 +200,17 @@ Scientific effect: descriptive prospective evaluation only. Champion v1.193 unch
 
 **Source:** CBS Sports Week 7 schedule/odds finals, retrieved 2026-10-14T12:03:33Z; https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/  
 **Scientific effect:** NONE. Champion v1.193, FIRST_FROZEN/accepted REFRESH lineage, exclusions, Challenger status, and betting rules remain unchanged. No outcome-informed reconstruction occurred.
+
+
+## Week 7 Wednesday FIRST_FROZEN outcomes — authoritative finals joined 2026-10-15
+
+**Cycle:** CFB_MARKET_MONITOR_20261015T115839Z  
+**Join rule:** Authoritative school finals were joined only to genuine pre-event Week 7 FIRST_FROZEN rows. Neither game had an established production or $20 sandbox execution, so this is model scoring only and not wager settlement. Frozen predictions were not reconstructed or mutated.
+
+| Game | FIRST_FROZEN home margin | FIRST_FROZEN total | FIRST_FROZEN home win p | Authoritative final | Actual home margin | Actual total | Margin error | Total error | SU direction correct |
+|---|---:|---:|---:|---|---:|---:|---:|---:|---:|
+| Kennesaw State @ Missouri State | -0.6 | 52.6 | 0.469 | Kennesaw State 21, Missouri State 24 | +3 | 45 | +3.6 | -7.6 | 0 |
+| Western Kentucky @ Sam Houston | +36.5 | 52.7 | 0.972 | Western Kentucky 16, Sam Houston 3 | -13 | 19 | -49.5 | -33.7 | 0 |
+
+**Sources:** Missouri State Athletics, https://missouristatebears.com/news/2026/10/14/football-bears-walk-off-kennesaw-state-in-cusa-home-opener ; Western Kentucky Athletics, https://wkusports.com/news/2026/10/14/football-hilltoppers-claim-16-3-road-win-at-sam-houston  
+**Scientific effect:** NONE. Champion v1.193, FIRST_FROZEN/accepted REFRESH lineage, exclusions, Challenger status, and betting rules remain unchanged. No outcome-informed reconstruction occurred.
