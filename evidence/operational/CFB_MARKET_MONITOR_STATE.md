@@ -3654,3 +3654,24 @@ The board-wide observation was rechecked without overwriting first observations.
 - Official sources: https://uabsports.com/news/2026/10/14/football-uab-hosts-east-carolina-for-homecoming-thursday-night-on-espn ; https://gseagles.com/news/2026/10/12/football-game-preview-thursday-night-lights-on-tap-for-eagles ; https://txst.com/news/2026/10/13/football-game-preview-txst-vs-colorado-state.aspx
 
 No acceptable number or price was earned, no wager or trip was authorized, and no market/model disagreement was converted into EV, probability or confidence.
+
+
+## Scheduled full-slate complete-response refresh — 2026-10-15 07:00 CT
+
+**Cycle:** CFB_MARKET_MONITOR_20261015T115839Z  
+**Observation class:** INTERMEDIATE / UNIDENTIFIED_FIELD_LEVEL_MIXED_BOOK_FALLBACK_ONLY.  
+**Scope:** Fresh CBS Week 7 response captured with maxAge=0 during this cycle and retained at evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261015T115839Z.md @ 4a18bf524f6ca9f20b056b96f178e2179750b06e. Retained table representation SHA-256 ad3623d3ab4bf0795ca0eadcb82e553195c2dd08eba212af2e4b6995790b6e22; 62 game headers and 124 team rows recovered. All 58 future Thursday-through-Saturday games are present; the four completed Tuesday/Wednesday games are quarantined from current-offer use. Firecrawl scrape id 01a13f70-032d-710a-bb8e-be3dfef5a775; source timezone America/New_York; HTTP 200. Exact retrieval-completion and book-update clocks are unavailable. Opaque field-level book icons remain unidentified, so this is fallback evidence only, never consensus. CONSENSUS_UNAVAILABLE; actual Caesars UNVERIFIED; execution UNVERIFIED. Source: https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/
+
+### Nearest active Thursday observations
+
+- Georgia Southern @ Old Dominion — Georgia Southern -3.5 (-108), ML -176; Old Dominion +3.5 (-108), ML +150; over 47.5 (-110), under 47.5 (-108). Versus the Wednesday-evening capture, the spread and total are unchanged and the Georgia Southern moneyline moved from -172 to -176. No qualified consensus or Caesars offer was established.
+- East Carolina @ UAB — East Carolina -4.5 (-118), ML -204; UAB +5.5 (-112), ML +170; over 47.5 (-108), under 47.5 (-108). Versus the Wednesday-evening capture, the displayed lines are unchanged while ECU spread price moved from -114 to -118 and moneyline from -200 to -204. The one-point side asymmetry is preserved exactly and not normalized.
+- Colorado State @ Texas State — Colorado State +14.5 (-115), ML +450; Texas State -14 (-114), ML -588; source-rendered over 69.5 (-112), under 70.5 (-110). Versus the Wednesday-evening capture, the total returned to a one-point asymmetric display and the field-level prices changed. The half-point spread asymmetry is preserved exactly.
+
+### Availability, weather and results boundary
+
+- No independently qualified new official quarterback-out or starter-change announcement was found for the three Thursday games at this boundary. Official team previews remain the governing fixture/participation context; third-party injury aggregations are not promoted.
+- Norfolk is forecast near 66°F with intermittent clouds around kickoff; Birmingham clear near 79°F; San Marcos mostly sunny near 85°F. Weather does not establish an actionable edge or alter a frozen prediction.
+- Authoritative school results show Missouri State 24, Kennesaw State 21 and Western Kentucky 16, Sam Houston 3. These finals are outcome evidence only and are joined separately to genuine pre-event FIRST_FROZEN rows; neither game had an established wager.
+
+Every current field-level offer for the 58 future games is permanently retained in the complete-response capture and projected into this cycle's governed Hot Sheet. First observations and all prior snapshots remain immutable. No raw model/market disagreement is treated as calibrated EV. No Champion/FIRST_FROZEN/REFRESH field changed.
