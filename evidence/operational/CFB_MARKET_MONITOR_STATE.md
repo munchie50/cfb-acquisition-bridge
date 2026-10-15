@@ -3675,3 +3675,18 @@ No acceptable number or price was earned, no wager or trip was authorized, and n
 - Authoritative school results show Missouri State 24, Kennesaw State 21 and Western Kentucky 16, Sam Houston 3. These finals are outcome evidence only and are joined separately to genuine pre-event FIRST_FROZEN rows; neither game had an established wager.
 
 Every current field-level offer for the 58 future games is permanently retained in the complete-response capture and projected into this cycle's governed Hot Sheet. First observations and all prior snapshots remain immutable. No raw model/market disagreement is treated as calibrated EV. No Champion/FIRST_FROZEN/REFRESH field changed.
+
+
+## Scheduled full-slate complete-response refresh — 2026-10-15 13:00 CT
+
+**Cycle:** CFB_MARKET_MONITOR_20261015T175838Z  
+**Observation class:** INTERMEDIATE / UNIDENTIFIED_FIELD_LEVEL_MIXED_BOOK_FALLBACK_ONLY.  
+**Complete-response provenance:** Fresh CBS Week 7 response captured with maxAge=0 and retained at evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261015T175838Z.md @ 6ff67e5c57060fde38509d09afbcaaf402cdb77d. Firecrawl scrape id 01a140ba-ae4f-71d8-8353-04f440178a6c; HTTP 200; source timezone America/New_York; 62 game headers, 124 team rows, 132178 retained characters. The connector runtime could not compute an independent payload SHA-256, so that field is explicitly UNAVAILABLE rather than guessed. Opaque field-level book icons remain unidentified; this is fallback evidence only, never consensus. CONSENSUS_UNAVAILABLE; actual Caesars UNVERIFIED; execution UNVERIFIED. Source: https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/
+
+### Thursday deadline observations
+
+- Georgia Southern @ Old Dominion — Georgia Southern -3 (-111), ML -156; Old Dominion +3.5 (-118), ML +140; over 46.5 (-106), under 46.5 (-110). Since the morning capture, Georgia Southern shortened from -3.5 to -3 while its moneyline moved from -176 to -156; the source-rendered total fell from 47.5 to 46.5. The half-point side asymmetry is preserved exactly.
+- East Carolina @ UAB — East Carolina -5.5 (-110), ML -213; UAB +5.5 (-108), ML +180; over 48.5 (-105), under 48.5 (-114). Since morning, ECU moved from -4.5 to -5.5 and the total from 47.5 to 48.5.
+- Colorado State @ Texas State — Colorado State +14.5 (-105), ML +475; Texas State -14.5 (-110), ML -625; over 70.5 (-110), under 70.5 (-105). Since morning, the displayed spread became symmetric at 14.5 and the total became symmetric at 70.5.
+
+All current page-rendered offers across the full 62-game board are permanently retained in the complete-response capture. The three Thursday rows above are the deadline-priority projection. Earlier first observations and snapshots remain immutable. No raw model/market disagreement is treated as calibrated EV, and no Champion/FIRST_FROZEN/REFRESH field changed.
