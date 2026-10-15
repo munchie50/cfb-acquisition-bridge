@@ -1152,3 +1152,17 @@ All remaining 60 governed games retain their recorded reconciliation deadlines a
 | Colorado State @ Texas State | INCONCLUSIVE → PASS | Colorado State +14.5 (-112), ML +475; Texas State -14 (-115), ML -599; total 69.5 (-111/-108) | Original frozen opinion is Colorado State -2.4 / 63.4 / 0.456 home while the fallback makes Texas State roughly a two-touchdown favorite. This extreme reversal is a model-risk investigation flag, not calibrated EV. No qualified consensus, verified Caesars offer or acceptable threshold exists. Do not force a side or total. | Not established | CLOSED prospectively; no later than the Thursday 13:00 CT reconciliation | CLOSED — no wager and no trip |
 
 **Portfolio result:** No Wednesday-night trip. Week 7 production exposure remains $0 and separate Week 7 sandbox exposure remains $0. Current state becomes 56 INCONCLUSIVE and 6 PASS. The one remaining Thursday INCONCLUSIVE has a Thursday 13:00 CT reconciliation deadline and a hard 17:30 CT final execution cutoff if a governed WAIT is earned. No acceptable number, price, EV, probability or confidence was invented. No Champion/FIRST_FROZEN/REFRESH field changed.
+
+
+## Thursday 13:00 CT reconciliation — 2026-10-15
+
+**Cycle:** CFB_MARKET_MONITOR_20261015T175838Z  
+**Prospective boundary:** 2026-10-15T18:00:00Z. The established Thursday reconciliation deadline is reached. No current observation below is qualified multi-book consensus and no actual Caesars offer is independently verified. No acceptable number/price has been established. Market/model disagreement is not calibrated EV.
+
+| Game | Prospective state | Current fallback evidence | Reason / awaited information | Acceptable number / price | Next trigger / hard cutoff | Execution window |
+|---|---|---|---|---|---|---|
+| Georgia Southern @ Old Dominion | PASS | Georgia Southern -3 (-111), ML -156; Old Dominion +3.5 (-118), ML +140; o46.5 (-106) / u46.5 (-110) | The deadline arrived without identified three-book consensus, verified Caesars execution, or a governed acceptable threshold. Frozen Old Dominion -1.2 / 41.1 / 0.476 home remains immutable; disagreement is a model-risk flag only. No governed WAIT trigger was earned. | Not established | CLOSED prospectively at the 13:00 CT reconciliation; do not chase later movement | CLOSED — no wager and no trip |
+| East Carolina @ UAB | PASS reaffirmed | East Carolina -5.5 (-110), ML -213; UAB +5.5 (-108), ML +180; o48.5 (-105) / u48.5 (-114) | Prior PASS remains controlling. The new mixed-book fallback does not establish consensus, Caesars execution, or an acceptable threshold. | Not established | CLOSED | CLOSED — no wager and no trip |
+| Colorado State @ Texas State | PASS reaffirmed | Colorado State +14.5 (-105), ML +475; Texas State -14.5 (-110), ML -625; o70.5 (-110) / u70.5 (-105) | Prior PASS remains controlling. The extreme frozen/market disagreement remains an investigation flag, not calibrated EV; no qualified consensus, verified Caesars offer, or acceptable threshold exists. | Not established | CLOSED | CLOSED — no wager and no trip |
+
+**Portfolio result:** All three Thursday games are PASS / NO BET. No Thursday trip is authorized. Week 7 production exposure remains $0 and separate Week 7 sandbox exposure remains $0. Current state becomes 55 INCONCLUSIVE and 7 PASS. Friday is now the earliest active chronological section. No acceptable number, price, EV, probability or confidence was invented. No Champion/FIRST_FROZEN/REFRESH field changed.
