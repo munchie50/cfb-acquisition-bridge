@@ -12,6 +12,16 @@ MARKET_TAG='cfb-neutral-market-v1'
 DECISION_TAG='cfb-neutral-decision-v1'
 MARKET_SCHEMA='CFB_NEUTRAL_MARKET_PRESENTATION_V1'
 DECISION_SCHEMA='CFB_NEUTRAL_DECISION_PRESENTATION_V1'
+WEEKLY_MARKET_SCHEMA='CFB_NEUTRAL_WEEKLY_MARKET_PRESENTATION_V2'
+WEEKLY_DECISION_SCHEMA='CFB_NEUTRAL_WEEKLY_DECISION_PRESENTATION_V2'
+# Independently recovered canonical ancestor, not a new decision or a source of outcomes.
+PASS_ANCESTOR='0ed8166d1cbeab88d6e9ec5259a0c033de1f90db'
+PASS_ANCESTOR_CHARS=119941
+HISTORICAL_PASS_TIMES={
+ '401871067':'2026-10-13T18:04:00Z', '401871053':'2026-10-13T18:04:00Z',
+ '401871054':'2026-10-14T18:00:00Z', '401871068':'2026-10-14T18:00:00Z',
+ '401862800':'2026-10-15T01:16:00Z', '401860923':'2026-10-15T01:16:00Z',
+ '401869950':'2026-10-15T18:00:00Z'}
 CT=ZoneInfo('America/Chicago')
 
 def keys(value,expected):
@@ -35,16 +45,17 @@ def selected_block(content,tag,schema,as_of):
     for m in blocks:
         r=json.loads(m.group(1),object_pairs_hook=unique)
         keys(r,['schema','cycle_id','as_of_utc','rows'])
-        if r['schema']!=schema:raise ValueError('unknown schema')
+        if r['schema'] not in ((schema,) if isinstance(schema,str) else schema):raise ValueError('unknown schema')
         at=clock(r['as_of_utc'])
         if at>as_of or (prior and at<=prior):raise ValueError('future/reversed canonical clock')
-        if not re.fullmatch(r'CFB_MARKET_MONITOR_\d{8}T\d{6}Z',r['cycle_id']):raise ValueError('unsupported cycle identity')
+        cycle_pattern=r'(?:CFB_MARKET_MONITOR|CFB_PRESENTATION_RECONCILIATION)_\d{8}T\d{6}Z' if r['schema'] in (WEEKLY_MARKET_SCHEMA,WEEKLY_DECISION_SCHEMA) else r'CFB_MARKET_MONITOR_\d{8}T\d{6}Z'
+        if not re.fullmatch(cycle_pattern,r['cycle_id']):raise ValueError('unsupported cycle identity')
         if r['cycle_id'] in cycles:raise ValueError('duplicate canonical cycle')
         cycles.add(r['cycle_id'])
         if clock(datetime.strptime(r['cycle_id'].split('_')[-1],'%Y%m%dT%H%M%SZ').replace(tzinfo=timezone.utc).isoformat())>at:
             raise ValueError('cycle start after source boundary')
         if not isinstance(r['rows'],list):raise ValueError('rows must be list')
-        if result is not None and schema==MARKET_SCHEMA:
+        if result is not None and r['schema'] in (MARKET_SCHEMA,WEEKLY_MARKET_SCHEMA):
             old={x['game_id']:x for x in result['rows']};new={x['game_id']:x for x in r['rows']}
             if set(old)!=set(new):raise ValueError('canonical history identity union changed')
             for gid,x in new.items():
@@ -54,19 +65,27 @@ def selected_block(content,tag,schema,as_of):
                 old_last=old[gid]['current'] or old[gid]['retained'];new_last=x['current'] or x['retained']
                 if old_last is not None:
                     if new_last is None:raise ValueError('latest historical observation lost')
-                    if x['current'] is None and new_last!=old_last:raise ValueError('unavailable update must retain prior latest observation')
+                    if x['current'] is None and new_last!=old_last and not (r['schema']==WEEKLY_MARKET_SCHEMA and clock(new_last['retrieved_at'])>clock(old_last['retrieved_at'])):raise ValueError('unavailable update must retain prior latest observation')
                     old_at=clock(old_last['retrieved_at']);new_at=clock(new_last['retrieved_at'])
                     if new_at<old_at or (new_at==old_at and new_last!=old_last):raise ValueError('latest observation rewritten or chronology reversed')
+        if result is not None and r['schema']==WEEKLY_DECISION_SCHEMA:
+            old={x['game_id']:x for x in result['rows']}
+            for x in r['rows']:
+                if x['game_id'] in old and old[x['game_id']]['state']=='PASS':
+                    if x['state']!='PASS':raise ValueError('closed PASS reopened')
+                    for k in ('state_recorded_at_utc','state_evidence'):
+                        if k in old[x['game_id']] and x[k]!=old[x['game_id']][k]:raise ValueError('PASS evidence rewritten')
+        if result is not None and result['schema'] in (WEEKLY_MARKET_SCHEMA,WEEKLY_DECISION_SCHEMA) and r['schema'] in (MARKET_SCHEMA,DECISION_SCHEMA):raise ValueError('weekly schema downgrade')
         prior=at;result=r
     # The typed block closes the canonical surface's current presentation boundary.
     if content[blocks[-1].end():].strip():raise ValueError('untyped canonical tail requires reconciliation')
     return result
 
-def offer(value,as_of,kickoff):
+def offer(value,as_of,kickoff,weekly=False):
     if value is None:return
     keys(value,['book','source_type','source_url','event_id','retrieved_at','retrieval_precision','offer_updated_at','execution','away_spread','away_spread_price','home_spread','home_spread_price','away_ml','home_ml','over_total','over_price','under_total','under_price'])
     text(value['book']);url(value['source_url']);text(value['event_id'])
-    if value['source_type'] not in ('IDENTIFIED_SINGLE_BOOK_FALLBACK','UNIDENTIFIED_MIXED_BOOK_FALLBACK') or value['retrieval_precision'] not in ('EXACT','MINUTE'):
+    if value['source_type'] not in ('IDENTIFIED_SINGLE_BOOK_FALLBACK','UNIDENTIFIED_MIXED_BOOK_FALLBACK') or value['retrieval_precision'] not in (('EXACT','MINUTE','RECOVERED_BY') if weekly else ('EXACT','MINUTE')):
         raise ValueError('unsupported source role/clock precision')
     at=clock(value['retrieved_at'])
     if at>as_of or (kickoff is not None and at>=kickoff):raise ValueError('future/postkickoff quote in pregame schema')
@@ -87,18 +106,38 @@ def fmt(n):return '—' if n is None else f'{n:g}'
 def price(n):return '—' if n is None else f'{n:+d}'
 def quote(o):
     return ('away '+fmt(o['away_spread'])+' '+price(o['away_spread_price'])+', ML '+price(o['away_ml'])+'; home '+fmt(o['home_spread'])+' '+price(o['home_spread_price'])+', ML '+price(o['home_ml'])+'; o'+fmt(o['over_total'])+' '+price(o['over_price'])+' / u'+fmt(o['under_total'])+' '+price(o['under_price']))
-def source(o):return o['book']+(' single-book fallback' if o['source_type']=='IDENTIFIED_SINGLE_BOOK_FALLBACK' else ' mixed-book fallback, constituents unidentified')+' retrieved '+o['retrieved_at']+' ('+o['retrieval_precision']+' precision) — '+quote(o)+'; offer-update UNKNOWN; execution UNVERIFIED; '+o['source_url']
+def source(o):return o['book']+(' single-book fallback' if o['source_type']=='IDENTIFIED_SINGLE_BOOK_FALLBACK' else ' mixed-book fallback, constituents unidentified')+(' response recovered by ' if o['retrieval_precision']=='RECOVERED_BY' else ' retrieved ')+o['retrieved_at']+' ('+o['retrieval_precision']+' precision) — '+quote(o)+'; offer-update UNKNOWN; execution UNVERIFIED; '+o['source_url']
+
+def state_evidence(row,packet,content,kickoff,now):
+    recorded=clock(row['state_recorded_at_utc']);proof=row['state_evidence']
+    if recorded>clock(packet['as_of_utc']) or recorded>now:raise ValueError('future state evidence')
+    if proof==PASS_ANCESTOR:
+        if blob(content[:PASS_ANCESTOR_CHARS])!=PASS_ANCESTOR:raise ValueError('historical decision ancestor missing/changed')
+        if row['state']!='PASS' or HISTORICAL_PASS_TIMES.get(row['game_id'])!=row['state_recorded_at_utc']:raise ValueError('unqualified historical PASS evidence')
+    else:
+        origins=[json.loads(m.group(1),object_pairs_hook=unique) for m in re.finditer(r'^```'+DECISION_TAG+r'[ \t]*\n(.*?)^```[ \t]*$',content,re.M|re.S)]
+        origins=[p for p in origins if p['schema']==WEEKLY_DECISION_SCHEMA and p['cycle_id']==proof]
+        if len(origins)!=1:raise ValueError('state evidence origin missing/ambiguous')
+        origin=origins[0];matches=[r for r in origin['rows'] if r['game_id']==row['game_id']]
+        if len(matches)!=1 or any(matches[0][k]!=row[k] for k in ('state','state_recorded_at_utc','state_evidence')):raise ValueError('state evidence origin mismatch')
+        cycle_at=clock(datetime.strptime(proof.split('_')[-1],'%Y%m%dT%H%M%SZ').replace(tzinfo=timezone.utc).isoformat())
+        if not cycle_at<=recorded<=clock(origin['as_of_utc']):raise ValueError('backdated typed decision')
+        if kickoff is not None and clock(origin['as_of_utc'])>=kickoff:raise ValueError('postkickoff decision reconstruction')
+    if kickoff is not None and kickoff<=now:
+        if row['state']!='PASS' or recorded>=kickoff:raise ValueError('elapsed game requires proved prospective PASS')
 
 def inputs(market,decision,lineage,as_of):
     now=clock(as_of)
     if blob(lineage)!=LINEAGE_SHA:raise ValueError('unqualified original Week7 lineage')
     census=json.loads(lineage,object_pairs_hook=unique)['rows']; c={r['game_id']:r for r in census}
     if len(c)!=62:raise ValueError('original identity census mismatch')
-    m=selected_block(market,MARKET_TAG,MARKET_SCHEMA,now);d=selected_block(decision,DECISION_TAG,DECISION_SCHEMA,now)
+    m=selected_block(market,MARKET_TAG,(MARKET_SCHEMA,WEEKLY_MARKET_SCHEMA),now);d=selected_block(decision,DECISION_TAG,(DECISION_SCHEMA,WEEKLY_DECISION_SCHEMA),now)
+    weekly=m['schema']==WEEKLY_MARKET_SCHEMA
+    if weekly!=(d['schema']==WEEKLY_DECISION_SCHEMA):raise ValueError('market/decision schema profile mismatch')
     if (m['cycle_id'],m['as_of_utc'])!=(d['cycle_id'],d['as_of_utc']):raise ValueError('market/decision boundary mismatch')
     at=clock(m['as_of_utc']);mr={};dr={}
     for r in m['rows']:
-        keys(r,['game_id','kickoff_utc','kickoff_source_url','kickoff_status','first','current','current_availability','retained'])
+        keys(r,['game_id','kickoff_utc','kickoff_source_url','kickoff_status','first','current','current_availability','retained']+(['diagnostic'] if weekly else []))
         gid=r['game_id']
         if not isinstance(gid,str) or gid not in c or gid in mr:raise ValueError('unknown/duplicate market identity')
         status=r['kickoff_status'];kickoff=None
@@ -108,21 +147,30 @@ def inputs(market,decision,lineage,as_of):
             kickoff=clock(r['kickoff_utc']);url(r['kickoff_source_url'])
             local=kickoff.astimezone(CT)
             if not datetime(2026,10,13,tzinfo=CT)<=local<datetime(2026,10,18,tzinfo=CT):raise ValueError('outside qualified Week7 identity/week')
-            if kickoff<=at:raise ValueError('started game unsupported by pregame schema')
+            if kickoff<=now and not weekly:raise ValueError('started game unsupported by pregame schema')
         else:raise ValueError('unknown kickoff qualification')
-        for k in ['first','current','retained']:offer(r[k],at,kickoff)
+        for k in ['first','current','retained']:offer(r[k],at,kickoff,weekly)
+        if weekly and r['diagnostic'] is not None:
+            diag=r['diagnostic'];keys(diag,['offer','reason'])
+            if diag['reason']!='SPREAD_MONEYLINE_DIRECTION_CONFLICT' or diag['offer'] is None:raise ValueError('unsupported diagnostic')
+            try:offer(diag['offer'],at,kickoff,weekly)
+            except ValueError as e:
+                if str(e)!='spread/moneyline direction conflict':raise
+            else:raise ValueError('diagnostic does not contain declared conflict')
+            if r['current'] is not None or r['current_availability']!='UNAVAILABLE':raise ValueError('quarantined quote cannot be current')
+        if weekly and kickoff is not None and kickoff<=now and (r['current'] is not None or r['current_availability']!='UNAVAILABLE'):raise ValueError('elapsed game cannot carry a current pregame offer')
         if r['current_availability']=='AVAILABLE':
             if r['current'] is None or r['retained'] is not None:raise ValueError('available observation requires unique current offer')
-            if r['first'] is None:raise ValueError('current offer needs first-observation ancestry')
+            if r['first'] is None and not weekly:raise ValueError('current offer needs first-observation ancestry')
         elif r['current_availability']=='UNAVAILABLE':
             if r['current'] is not None:raise ValueError('unavailable current offer invented')
         else:raise ValueError('unknown availability')
         history=[o for o in [r['retained'],r['current']] if o is not None]
-        if history and r['first'] is None:raise ValueError('retained/current offer lacks first observation')
+        if history and r['first'] is None and not weekly:raise ValueError('retained/current offer lacks first observation')
         if r['first'] and any(clock(r['first']['retrieved_at'])>clock(o['retrieved_at']) for o in history):raise ValueError('first observation after later offer')
         mr[gid]=r
     for r in d['rows']:
-        keys(r,['game_id','state','reason','reconciliation_utc','planning_cutoff_utc','cutoff_authority','acceptable_number','execution_window'])
+        keys(r,['game_id','state','reason','reconciliation_utc','planning_cutoff_utc','cutoff_authority','acceptable_number','execution_window']+(['state_recorded_at_utc','state_evidence'] if weekly else []))
         gid=r['game_id']
         if not isinstance(gid,str) or gid not in c or gid in dr:raise ValueError('unknown/duplicate decision identity')
         if r['state'] not in ('INCONCLUSIVE','PASS'):raise ValueError('unsupported actionable/WAIT decision; separate qualified profile required')
@@ -131,6 +179,8 @@ def inputs(market,decision,lineage,as_of):
         deadline=clock(r['reconciliation_utc']) if r['reconciliation_utc'] is not None else None
         if r['state']=='INCONCLUSIVE' and (deadline is None or deadline<=now):raise ValueError('missing/overdue INCONCLUSIVE reconciliation; prospective decision required')
         k=clock(mr[gid]['kickoff_utc']) if gid in mr and mr[gid]['kickoff_utc'] is not None else None
+        if weekly:
+            state_evidence(r,d,decision,k,now)
         if deadline and k and deadline>=k:raise ValueError('reconciliation cannot wait until kickoff')
         if r['planning_cutoff_utc'] is not None:
             cut=clock(r['planning_cutoff_utc'])
@@ -148,13 +198,19 @@ def render(market,decision,execution,scorecard,lineage,as_of):
             ct=clock(kick).astimezone(CT);day=ct.strftime('%A').upper()
             section=day if day!='SATURDAY' else 'SATURDAY MORNING' if ct.hour<12 else 'SATURDAY AFTERNOON' if ct.hour<17 else 'SATURDAY EVENING/NIGHT'
             display=ct.strftime('%a %b %d %-I:%M %p CT')+(' [RETAINED_UNVERIFIED]' if x['kickoff_status']=='RETAINED_UNVERIFIED' else '')
+        elapsed=kick is not None and clock(kick)<=clock(as_of)
+        if elapsed:display+=' [AT/PAST SAVED KICKOFF — historical PASS; no execution]'
         roles='CONSENSUS_UNAVAILABLE; Caesars UNVERIFIED; '
         current=roles+(source(x['current']) if x['current'] else 'CURRENT QUOTE UNAVAILABLE'+('; historical retained '+source(x['retained']) if x['retained'] else ''))
+        if m['schema']==WEEKLY_MARKET_SCHEMA and x['diagnostic'] is not None:
+            current+='; CURRENT SOURCE CONFLICT QUARANTINED — '+source(x['diagnostic']['offer'])+'; '+x['diagnostic']['reason']
         movement='No qualified first observation' if x['first'] is None else 'First '+source(x['first'])+(' → current '+source(x['current']) if x['current'] else '; no current observation, historical only')
         cutoff=('Reconcile '+y['reconciliation_utc'] if y['reconciliation_utc'] else 'Reconciliation unavailable')+'; planning cutoff '+(y['planning_cutoff_utc'] or 'UNAVAILABLE')+'; CUTOFF_AUTHORITY_UNVERIFIED'
+        if m['schema']==WEEKLY_MARKET_SCHEMA:
+            cutoff+='; state recorded '+y['state_recorded_at_utc']+('; source-declared minute precision' if y['state_evidence']==PASS_ANCESTOR else '')+'; evidence '+y['state_evidence']
         row=[display,c[gid]['away_team']+' @ '+c[gid]['home_team'],c[gid]['display'],current,movement,y['state'],y['reason'],cutoff,'Not established; no executable recommendation']
         groups[section].append((kick or '9999',gid,row))
-    lines=['# CFB Week7 neutral source-derived Hot Sheet','', '**Presentation schema:** CFB_NEUTRAL_PUBLICATION_V1','**Cycle:** '+m['cycle_id'],'**Publication boundary:** '+m['as_of_utc'],'**Scope:** canonical neutral display only; source/kickoff/execution truth and full-run completion require independent qualification.', '**Frozen-model boundary:** Original accepted FIRST_FROZEN cutoff 2026-09-26T03:47:37.497112+00:00; 51 predictions and 11 exclusions; no REFRESH substitution.',f'**Canonical inputs:** market {blob(market)}; decision {blob(decision)}; execution {blob(execution)}; scorecard {blob(scorecard)}.', '**Neutral summary:** '+str(sum(r['state']=='INCONCLUSIVE' for r in dr.values()))+' INCONCLUSIVE; '+str(sum(r['state']=='PASS' for r in dr.values()))+' PASS; no actionable recommendation; consensus unavailable; Caesars unverified; practical cutoffs unverified.','']
+    lines=['# CFB Week7 neutral source-derived Hot Sheet','', '**Presentation schema:** '+('CFB_NEUTRAL_WEEKLY_PUBLICATION_V2' if m['schema']==WEEKLY_MARKET_SCHEMA else 'CFB_NEUTRAL_PUBLICATION_V1'),'**Cycle:** '+m['cycle_id'],'**Publication boundary:** '+m['as_of_utc'],'**Scope:** canonical neutral display only; source/kickoff/execution truth and full-run completion require independent qualification.', '**Frozen-model boundary:** Original accepted FIRST_FROZEN cutoff 2026-09-26T03:47:37.497112+00:00; 51 predictions and 11 exclusions; no REFRESH substitution.',f'**Canonical inputs:** market {blob(market)}; decision {blob(decision)}; execution {blob(execution)}; scorecard {blob(scorecard)}.', '**Neutral summary:** '+str(sum(r['state']=='INCONCLUSIVE' for r in dr.values()))+' INCONCLUSIVE; '+str(sum(r['state']=='PASS' for r in dr.values()))+' PASS; no actionable recommendation; consensus unavailable; Caesars unverified; practical cutoffs unverified.','']
     for s in SECTIONS:
         lines+=['## '+s,'']
         if not groups[s]:lines+=['No governed games.',''];continue
