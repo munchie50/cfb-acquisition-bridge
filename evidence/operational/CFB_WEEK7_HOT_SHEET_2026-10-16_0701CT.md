@@ -5,7 +5,7 @@
 **Publication boundary:** 2026-10-16T12:01:17Z
 **Scope:** canonical neutral display only; source/kickoff/execution truth and full-run completion require independent qualification.
 **Frozen-model boundary:** Original accepted FIRST_FROZEN cutoff 2026-09-26T03:47:37.497112+00:00; 51 predictions and 11 exclusions; no REFRESH substitution.
-**Canonical inputs:** market f75a633de39ffd1febbc73999e3b96c4915fff92; decision 66deebbd8a87ded86fbee4ff275daff7c82ac340; execution 75caee4052e02ea7d2453d1d37fd3866e13ecc07; scorecard d0726d8f758bfcde02a0196379bc46ec83d0a0ff.
+**Canonical inputs:** market f75a633de39ffd1febbc73999e3b96c4915fff92; decision 66deebbd8a87ded86fbee4ff275daff7c82ac340; execution 75caee4052e02ea7d2453d1d37fd3866e13ecc07; scorecard 4380a04b9ce285288861e910fc7b754f977529d1.
 **Neutral summary:** 55 INCONCLUSIVE; 7 PASS; no actionable recommendation; consensus unavailable; Caesars unverified; practical cutoffs unverified.
 
 **Primary section:** FRIDAY — earliest open neutral decision section; saved kickoff qualification labels remain applicable
