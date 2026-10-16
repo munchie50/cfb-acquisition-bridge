@@ -97,6 +97,36 @@ class WeeklyReconciliationTests(unittest.TestCase):
         with self.assertRaises(ValueError):gate.render(packet(m,gate.MARKET_TAG),packet(d,gate.DECISION_TAG),'e','s',lineage,'2026-10-12T23:36:32Z')
     def test_unknown_producer_identity_still_rejected(self):
         self.m['cycle_id']=self.d['cycle_id']='CFB_UNKNOWN_PRODUCER_20261016T023112Z';self.reject()
+    def test_caller_cannot_postpone_overdue_inconclusive(self):
+        rows=self.next_rows()
+        for row in rows[7:10]:row['reconciliation_utc']='2026-10-16T19:00:00Z'
+        with self.assertRaises(ValueError):repair.advance(self.pm,self.pd,self.capture,self.lineage,'CFB_MARKET_MONITOR_20261016T180000Z','2026-10-16T18:01:00Z','2026-10-16T18:00:30Z',rows)
+    def test_caller_cannot_postpone_before_deadline_either(self):
+        rows=self.next_rows();rows[7]['reconciliation_utc']='2026-10-16T19:00:00Z'
+        with self.assertRaises(ValueError):self.advance(rows=rows)
+    def test_caller_cannot_extend_saved_planning_cutoff(self):
+        rows=self.next_rows();rows[7]['planning_cutoff_utc']='2026-10-16T23:00:00Z'
+        with self.assertRaises(ValueError):self.advance(rows=rows)
+    def test_caller_cannot_remove_saved_planning_cutoff(self):
+        rows=self.next_rows();rows[7]['planning_cutoff_utc']=None
+        with self.assertRaises(ValueError):self.advance(rows=rows)
+    def test_earlier_deadline_remains_permitted(self):
+        rows=self.next_rows();rows[7]['reconciliation_utc']='2026-10-16T17:00:00Z'
+        m,d=self.advance(rows=rows);self.assertEqual(repair.latest(d,gate.DECISION_TAG)['rows'][7]['reconciliation_utc'],'2026-10-16T17:00:00Z')
+    def test_friday_is_primary_ahead_of_closed_days(self):
+        sheet=gate.render(*self.args());headings=[l for l in sheet.splitlines() if l.startswith('## ')]
+        self.assertEqual(headings[0],'## FRIDAY');self.assertTrue('**Primary section:** FRIDAY' in sheet)
+        self.assertLess(sheet.index('## FRIDAY'),sheet.index('## TUESDAY'))
+    def test_closed_friday_yields_saturday_morning_primary(self):
+        for row in self.d['rows'][7:10]:row.update(state='PASS',reason='Synthetic neutral PASS fixture only')
+        sheet=gate.render(*self.args());self.assertTrue('**Primary section:** SATURDAY MORNING' in sheet)
+        self.assertEqual(next(l for l in sheet.splitlines() if l.startswith('## ')),'## SATURDAY MORNING')
+        self.assertEqual(sheet.count('| Fri Oct 16'),3)
+    def test_all_closed_has_no_actionable_primary(self):
+        for row in self.d['rows']:
+            if row['state']!='PASS':row.update(state='PASS',reason='Synthetic neutral PASS fixture only')
+        sheet=gate.render(*self.args());self.assertTrue('**Primary section:** NONE' in sheet)
+        self.assertIn('0 INCONCLUSIVE; 62 PASS',sheet)
     def test_advance_rejects_stale_source_bound(self):
         with self.assertRaises(ValueError):self.advance(recovered=AT)
     def test_advance_rejects_future_source_bound(self):
