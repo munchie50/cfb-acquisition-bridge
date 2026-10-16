@@ -90,4 +90,43 @@ class NeutralPublicationTests(unittest.TestCase):
         self.available();s=self.render().replace('o48.5 -105','o48.5 -115',1)
         with self.assertRaises(ValueError):gate.audit(s,*self.args())
 
+class TypedHistoryContinuityTests(unittest.TestCase):
+    """Synthetic three-cycle histories; never current decisions or observations."""
+    def setUp(self):
+        self.m,self.d,self.l=fixture()
+        self.m['schema']=gate.WEEKLY_MARKET_SCHEMA
+        self.d['schema']=gate.WEEKLY_DECISION_SCHEMA
+        for r in self.m['rows']:r['diagnostic']=None
+        for r in self.d['rows']:
+            r.update(state_recorded_at_utc=self.d['as_of_utc'],state_evidence=self.d['cycle_id'])
+        self.middle=copy.deepcopy(self.d);self.final=copy.deepcopy(self.d)
+        self.middle.update(cycle_id='CFB_MARKET_MONITOR_20261013T120000Z',as_of_utc='2026-10-13T12:00:00Z')
+        self.final.update(cycle_id='CFB_MARKET_MONITOR_20261013T130000Z',as_of_utc='2026-10-13T13:00:00Z')
+    def render_chain(self,market_history=None):
+        m=copy.deepcopy(self.m);m.update(cycle_id=self.final['cycle_id'],as_of_utc=self.final['as_of_utc'])
+        d=''.join(packet(p,gate.DECISION_TAG) for p in (self.d,self.middle,self.final))
+        return gate.render(market_history or packet(m,gate.MARKET_TAG),d,'e','s',self.l,self.final['as_of_utc'])
+    def test_complete_history_remains_valid(self):self.render_chain()
+    def test_missing_intermediate_row_cannot_erase_deadline(self):
+        self.middle['rows'].pop(0);self.final['rows'][0]['reconciliation_utc']='2026-10-13T19:00:00Z'
+        with self.assertRaises(ValueError):self.render_chain()
+    def test_missing_intermediate_row_cannot_erase_closed_pass(self):
+        self.d['rows'][0]['state']='PASS';self.middle['rows'].pop(0)
+        self.final['rows'][0].update(state_recorded_at_utc=self.final['as_of_utc'],state_evidence=self.final['cycle_id'])
+        with self.assertRaises(ValueError):self.render_chain()
+    def test_duplicate_intermediate_row_cannot_hide_constraint(self):
+        self.middle['rows'].append(copy.deepcopy(self.middle['rows'][0]))
+        with self.assertRaises(ValueError):self.render_chain()
+    def test_unknown_intermediate_identity_rejected(self):
+        self.middle['rows'][0]['game_id']='not-a-governed-game'
+        with self.assertRaises(ValueError):self.render_chain()
+    def test_duplicate_historical_market_identity_rejected(self):
+        old=copy.deepcopy(self.m);old['rows'].append(copy.deepcopy(old['rows'][0]))
+        new=copy.deepcopy(self.m);new.update(cycle_id=self.final['cycle_id'],as_of_utc=self.final['as_of_utc'])
+        with self.assertRaises(ValueError):
+            self.render_chain(packet(old,gate.MARKET_TAG)+packet(new,gate.MARKET_TAG))
+    def test_unknown_first_history_identity_cannot_be_restored_later(self):
+        unknown=copy.deepcopy(self.d['rows'][0]);unknown['game_id']='not-a-governed-game';self.d['rows'].append(unknown)
+        with self.assertRaises(ValueError):self.render_chain()
+
 if __name__=='__main__':unittest.main()
