@@ -3690,3 +3690,27 @@ Every current field-level offer for the 58 future games is permanently retained 
 - Colorado State @ Texas State — Colorado State +14.5 (-105), ML +475; Texas State -14.5 (-110), ML -625; over 70.5 (-110), under 70.5 (-105). Since morning, the displayed spread became symmetric at 14.5 and the total became symmetric at 70.5.
 
 All current page-rendered offers across the full 62-game board are permanently retained in the complete-response capture. The three Thursday rows above are the deadline-priority projection. Earlier first observations and snapshots remain immutable. No raw model/market disagreement is treated as calibrated EV, and no Champion/FIRST_FROZEN/REFRESH field changed.
+
+
+## Thursday Evening Availability Friday refresh — 2026-10-15 20:09 CT
+
+**Cycle:** CFB_EVENING_AVAILABILITY_20261016T010936Z  
+**Authority boundary:** Downstream of CFB_MARKET_MONITOR_20261015T175838Z; no competing Hot Sheet or market baseline. Original FIRST_FROZEN and accepted REFRESH lineage remain immutable.  
+**Observation class:** INTERMEDIATE / UNIDENTIFIED_FIELD_LEVEL_MIXED_BOOK_FALLBACK_ONLY. CONSENSUS_UNAVAILABLE; actual Caesars UNVERIFIED; execution UNVERIFIED.
+
+**Market provenance:** The CBS Sports Week 7 page was freshly fetched with maxAge=0 during this run (HTTP 200; Firecrawl scrape id 01a14244-d7ac-73e2-8729-f7316fef9593). The page exposed opaque field-level book icons rather than recoverable constituent names or common clocks; its best-price display is therefore retained only as mixed-book fallback, never consensus or an executable offer. Retrieval-completion and book-update clocks are UNAVAILABLE. Source: https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/
+
+### Friday primary-section observations
+
+- Memphis @ Tulane — Memphis -6.5 (-122), ML -256; Tulane +7 (-111), ML +220; over 55.5 (-108), under 55.5 (-108). Versus the 13:00 CT fallback, Memphis shortened from -7 to -6.5 while the best displayed Tulane side moved from +7.5 to +7; the total remains 55.5. The half-point side asymmetry is preserved exactly.
+- Washington @ Purdue — Washington +3.5 (-110), ML +145; Purdue -3.5 (-105), ML -170; source-rendered over 49.5 (-112), under 50.5 (-112). Versus 13:00 CT, the spread remains 3.5 while the displayed total fell from 51.5 to an asymmetric 49.5/50.5. The one-point total asymmetry is preserved exactly.
+- Appalachian State @ Coastal Carolina — Appalachian State -1 (-111), ML -115; Coastal Carolina +1.5 (-112), ML -102; source-rendered over 47.5 (-115), under 48.5 (-110). Versus 13:00 CT, the spread display is unchanged while the total fell from 49.5 to an asymmetric 47.5/48.5. A separately identified FanDuel snapshot on a page updated 20:02 CT showed Appalachian State -1.5, total 48.5, ML -115/-104; it is retained as identified single-book fallback, not consensus and not Caesars. Source: https://ncfootballnews.com/games/app-state-at-coastal-carolina-football-2026/
+
+### Availability and weather boundary
+
+- Washington @ Purdue — the official Big Ten availability report lists Washington quarterback Demond Williams Jr. QUESTIONABLE on both the initial and first update. Washington also lists Jordan Washington, Christian Moss, Jayden Limar, Quaid Carr and CJ Christian OUT; Purdue lists Mister Clark, Kylan Fox, Raderrion Daniels and Joey Tanona OUT. Later updates and game-day statuses were not yet posted. Source: https://bigten.org/fb/availability-reports/
+- Appalachian State @ Coastal Carolina — the page updated 20:02 CT lists Appalachian State quarterback Malachi Singleton QUESTIONABLE, along with multiple other player statuses. This is material availability evidence but not an official conference report; final participation remains unresolved. Source: https://ncfootballnews.com/games/app-state-at-coastal-carolina-football-2026/
+- Memphis @ Tulane — official team game centers confirmed the 18:30 CT kickoff and matchup; no independently qualified new quarterback-out or starter-change announcement was found in the checked official material. Sources: https://gotigersgo.com/game-center/20060 and https://tulanegreenwave.com/game-center/23453
+- Forecast check for the Friday kickoff windows: New Orleans mostly clear near 80°F; West Lafayette showery near 52°F; Conway clear near 79°F. Weather remains monitoring evidence only and does not establish an actionable edge.
+
+No acceptable number or price was earned, no wager or trip was authorized, and no market/model disagreement was converted into EV, probability or confidence. Week 7 production exposure remains $0; separate $20 sandbox exposure remains $0. No Champion/FIRST_FROZEN/REFRESH field changed.
