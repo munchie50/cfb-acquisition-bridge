@@ -37,7 +37,7 @@ def number(value,price=False):
 def url(value):
     text(value)
     if not re.fullmatch(r'https://[^\s/]+/[^\s]*',value):raise ValueError('source URL required')
-def selected_block(content,tag,schema,as_of):
+def selected_block(content,tag,schema,as_of,expected_ids=None):
     markers=re.findall(r'^```'+tag+r'[ \t]*$',content,re.M)
     blocks=list(re.finditer(r'^```'+tag+r'[ \t]*\n(.*?)^```[ \t]*$',content,re.M|re.S))
     if not blocks or len(markers)!=len(blocks):raise ValueError('missing/incomplete canonical presentation block')
@@ -55,6 +55,14 @@ def selected_block(content,tag,schema,as_of):
         if clock(datetime.strptime(r['cycle_id'].split('_')[-1],'%Y%m%dT%H%M%SZ').replace(tzinfo=timezone.utc).isoformat())>at:
             raise ValueError('cycle start after source boundary')
         if not isinstance(r['rows'],list):raise ValueError('rows must be list')
+        # Validate each historical packet before building dictionaries or
+        # comparing adjacent constraints. An omitted row must never erase its
+        # deadline/PASS history, and duplicates must not collapse silently.
+        ids=[x.get('game_id') if isinstance(x,dict) else None for x in r['rows']]
+        if any(not isinstance(gid,str) for gid in ids) or len(set(ids))!=len(ids):
+            raise ValueError('unknown/duplicate canonical history identity')
+        required=expected_ids if expected_ids is not None else ({x['game_id'] for x in result['rows']} if result is not None else None)
+        if required is not None and set(ids)!=set(required):raise ValueError('canonical history identity union changed')
         if result is not None and r['schema'] in (MARKET_SCHEMA,WEEKLY_MARKET_SCHEMA):
             old={x['game_id']:x for x in result['rows']};new={x['game_id']:x for x in r['rows']}
             if set(old)!=set(new):raise ValueError('canonical history identity union changed')
@@ -142,7 +150,7 @@ def inputs(market,decision,lineage,as_of):
     if blob(lineage)!=LINEAGE_SHA:raise ValueError('unqualified original Week7 lineage')
     census=json.loads(lineage,object_pairs_hook=unique)['rows']; c={r['game_id']:r for r in census}
     if len(c)!=62:raise ValueError('original identity census mismatch')
-    m=selected_block(market,MARKET_TAG,(MARKET_SCHEMA,WEEKLY_MARKET_SCHEMA),now);d=selected_block(decision,DECISION_TAG,(DECISION_SCHEMA,WEEKLY_DECISION_SCHEMA),now)
+    m=selected_block(market,MARKET_TAG,(MARKET_SCHEMA,WEEKLY_MARKET_SCHEMA),now,set(c));d=selected_block(decision,DECISION_TAG,(DECISION_SCHEMA,WEEKLY_DECISION_SCHEMA),now,set(c))
     weekly=m['schema']==WEEKLY_MARKET_SCHEMA
     if weekly!=(d['schema']==WEEKLY_DECISION_SCHEMA):raise ValueError('market/decision schema profile mismatch')
     if (m['cycle_id'],m['as_of_utc'])!=(d['cycle_id'],d['as_of_utc']):raise ValueError('market/decision boundary mismatch')
