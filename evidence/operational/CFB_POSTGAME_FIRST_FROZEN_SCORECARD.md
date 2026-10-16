@@ -214,3 +214,17 @@ Scientific effect: descriptive prospective evaluation only. Champion v1.193 unch
 
 **Sources:** Missouri State Athletics, https://missouristatebears.com/news/2026/10/14/football-bears-walk-off-kennesaw-state-in-cusa-home-opener ; Western Kentucky Athletics, https://wkusports.com/news/2026/10/14/football-hilltoppers-claim-16-3-road-win-at-sam-houston  
 **Scientific effect:** NONE. Champion v1.193, FIRST_FROZEN/accepted REFRESH lineage, exclusions, Challenger status, and betting rules remain unchanged. No outcome-informed reconstruction occurred.
+
+
+## Week 7 Thursday FIRST_FROZEN outcomes — authoritative finals joined 2026-10-16
+
+**Cycle:** CFB_MARKET_MONITOR_20261016T115625Z  
+**Join rule:** Authoritative school finals were joined only to genuine pre-event Week 7 FIRST_FROZEN rows. East Carolina @ UAB remained a governed FIRST_FROZEN exclusion and was not scored. None of the three Thursday games had an established production or $20 sandbox execution, so this is model scoring only and not wager settlement. Frozen predictions were not reconstructed or mutated.
+
+| Game | FIRST_FROZEN home margin | FIRST_FROZEN total | FIRST_FROZEN home win p | Authoritative final | Actual home margin | Actual total | Margin error | Total error | SU direction correct |
+|---|---:|---:|---:|---|---:|---:|---:|---:|---:|
+| Georgia Southern @ Old Dominion | -1.2 | 41.1 | 0.476 | Georgia Southern 23, Old Dominion 15 | -8 | 38 | -6.8 | -3.1 | 1 |
+| Colorado State @ Texas State | -2.4 | 63.4 | 0.456 | Colorado State 27, Texas State 66 | +39 | 93 | +41.4 | +29.6 | 0 |
+
+**Sources:** Old Dominion Athletics, https://odusports.com/boxscore/14878 ; Colorado State Athletics, https://csurams.com/boxscore.aspx?id=21975  
+**Scientific effect:** NONE. Champion v1.193, FIRST_FROZEN/accepted REFRESH lineage, exclusions, Challenger status, and betting rules remain unchanged. No outcome-informed reconstruction occurred.
