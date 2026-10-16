@@ -48,7 +48,7 @@ def selected_block(content,tag,schema,as_of):
         if r['schema'] not in ((schema,) if isinstance(schema,str) else schema):raise ValueError('unknown schema')
         at=clock(r['as_of_utc'])
         if at>as_of or (prior and at<=prior):raise ValueError('future/reversed canonical clock')
-        cycle_pattern=r'(?:CFB_MARKET_MONITOR|CFB_PRESENTATION_RECONCILIATION)_\d{8}T\d{6}Z' if r['schema'] in (WEEKLY_MARKET_SCHEMA,WEEKLY_DECISION_SCHEMA) else r'CFB_MARKET_MONITOR_\d{8}T\d{6}Z'
+        cycle_pattern=r'(?:CFB_MARKET_MONITOR|CFB_PRESENTATION_RECONCILIATION|CFB_EVENING_AVAILABILITY)_\d{8}T\d{6}Z' if r['schema'] in (WEEKLY_MARKET_SCHEMA,WEEKLY_DECISION_SCHEMA) else r'CFB_MARKET_MONITOR_\d{8}T\d{6}Z'
         if not re.fullmatch(cycle_pattern,r['cycle_id']):raise ValueError('unsupported cycle identity')
         if r['cycle_id'] in cycles:raise ValueError('duplicate canonical cycle')
         cycles.add(r['cycle_id'])
