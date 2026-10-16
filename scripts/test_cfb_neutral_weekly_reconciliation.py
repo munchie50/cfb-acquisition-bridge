@@ -80,6 +80,23 @@ class WeeklyReconciliationTests(unittest.TestCase):
     def test_ephemeral_next_cycle_complete_compilation(self):
         m,d=self.advance();self.assertEqual(len(repair.latest(m,gate.MARKET_TAG)['rows']),62)
         self.assertEqual(sum(r['state']=='PASS' for r in repair.latest(d,gate.DECISION_TAG)['rows']),7)
+    def test_ephemeral_evening_uses_its_own_identity_without_untyped_tail(self):
+        cycle='CFB_EVENING_AVAILABILITY_20261016T030000Z';at='2026-10-16T03:01:00Z'
+        m,d=repair.advance(self.pm,self.pd,self.capture,self.lineage,cycle,at,'2026-10-16T03:00:30Z',self.next_rows())
+        self.assertEqual(repair.latest(m,gate.MARKET_TAG)['cycle_id'],cycle)
+        self.assertEqual(repair.latest(d,gate.DECISION_TAG)['cycle_id'],cycle)
+        sheet=gate.render(m,d,'execution','scorecard',self.lineage,at)
+        self.assertEqual(gate.audit(sheet,m,d,'execution','scorecard',self.lineage,at)['games'],62)
+        # The next Monitor consumes the complete Evening packet without adopting
+        # an Evening publication or changing output ownership.
+        m,d=repair.advance(m,d,self.capture,self.lineage,'CFB_MARKET_MONITOR_20261016T115900Z','2026-10-16T12:00:00Z','2026-10-16T11:59:30Z',self.next_rows())
+        self.assertEqual(repair.latest(m,gate.MARKET_TAG)['cycle_id'],'CFB_MARKET_MONITOR_20261016T115900Z')
+    def test_evening_identity_does_not_expand_v1_pregame_profile(self):
+        from test_cfb_neutral_publication_gate import fixture
+        m,d,lineage=fixture();m['cycle_id']=d['cycle_id']='CFB_EVENING_AVAILABILITY_20261012T233632Z'
+        with self.assertRaises(ValueError):gate.render(packet(m,gate.MARKET_TAG),packet(d,gate.DECISION_TAG),'e','s',lineage,'2026-10-12T23:36:32Z')
+    def test_unknown_producer_identity_still_rejected(self):
+        self.m['cycle_id']=self.d['cycle_id']='CFB_UNKNOWN_PRODUCER_20261016T023112Z';self.reject()
     def test_advance_rejects_stale_source_bound(self):
         with self.assertRaises(ValueError):self.advance(recovered=AT)
     def test_advance_rejects_future_source_bound(self):
