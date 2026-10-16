@@ -71,6 +71,17 @@ def selected_block(content,tag,schema,as_of):
         if result is not None and r['schema']==WEEKLY_DECISION_SCHEMA:
             old={x['game_id']:x for x in result['rows']}
             for x in r['rows']:
+                previous=old.get(x['game_id'])
+                if previous is not None:
+                    # Current-cycle clocks cannot erase an earlier constraint.
+                    # A separately qualified amendment profile would be needed
+                    # for any later deadline; the neutral profile has none.
+                    prior_deadline=previous.get('reconciliation_utc')
+                    if x['state']=='INCONCLUSIVE' and prior_deadline is not None:
+                        if x.get('reconciliation_utc') is None or clock(x['reconciliation_utc'])>clock(prior_deadline):raise ValueError('INCONCLUSIVE deadline extension prohibited')
+                    prior_cutoff=previous.get('planning_cutoff_utc')
+                    if prior_cutoff is not None:
+                        if x.get('planning_cutoff_utc') is None or clock(x['planning_cutoff_utc'])>clock(prior_cutoff):raise ValueError('saved planning cutoff removal/extension prohibited')
                 if x['game_id'] in old and old[x['game_id']]['state']=='PASS':
                     if x['state']!='PASS':raise ValueError('closed PASS reopened')
                     for k in ('state_recorded_at_utc','state_evidence'):
@@ -211,7 +222,13 @@ def render(market,decision,execution,scorecard,lineage,as_of):
         row=[display,c[gid]['away_team']+' @ '+c[gid]['home_team'],c[gid]['display'],current,movement,y['state'],y['reason'],cutoff,'Not established; no executable recommendation']
         groups[section].append((kick or '9999',gid,row))
     lines=['# CFB Week7 neutral source-derived Hot Sheet','', '**Presentation schema:** '+('CFB_NEUTRAL_WEEKLY_PUBLICATION_V2' if m['schema']==WEEKLY_MARKET_SCHEMA else 'CFB_NEUTRAL_PUBLICATION_V1'),'**Cycle:** '+m['cycle_id'],'**Publication boundary:** '+m['as_of_utc'],'**Scope:** canonical neutral display only; source/kickoff/execution truth and full-run completion require independent qualification.', '**Frozen-model boundary:** Original accepted FIRST_FROZEN cutoff 2026-09-26T03:47:37.497112+00:00; 51 predictions and 11 exclusions; no REFRESH substitution.',f'**Canonical inputs:** market {blob(market)}; decision {blob(decision)}; execution {blob(execution)}; scorecard {blob(scorecard)}.', '**Neutral summary:** '+str(sum(r['state']=='INCONCLUSIVE' for r in dr.values()))+' INCONCLUSIVE; '+str(sum(r['state']=='PASS' for r in dr.values()))+' PASS; no actionable recommendation; consensus unavailable; Caesars unverified; practical cutoffs unverified.','']
-    for s in SECTIONS:
+    section_order=SECTIONS
+    if m['schema']==WEEKLY_MARKET_SCHEMA:
+        active=[s for s in SECTIONS if any(dr[gid]['state']=='INCONCLUSIVE' for _,gid,_ in groups[s])]
+        primary=active[0] if active else 'NONE'
+        lines+=['**Primary section:** '+primary+' — '+('earliest open neutral decision section; saved kickoff qualification labels remain applicable' if active else 'no open neutral decisions; all governed games remain visible below'), '']
+        section_order=active+[s for s in SECTIONS if s not in active]
+    for s in section_order:
         lines+=['## '+s,'']
         if not groups[s]:lines+=['No governed games.',''];continue
         lines+=['| Kickoff CT | Game | Engine Prediction (Frozen) | Current qualified market / price | Movement from first observation | Decision state | Pending reason / information | Reconciliation deadline / final execution cutoff | Acceptable number / execution window |','|---|---|---|---|---|---|---|---|---|']
