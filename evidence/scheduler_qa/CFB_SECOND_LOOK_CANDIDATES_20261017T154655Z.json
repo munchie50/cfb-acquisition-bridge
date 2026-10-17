@@ -1,0 +1,123 @@
+{
+  "schema": "CFB_SECOND_LOOK_DIAGNOSTIC_V1",
+  "recorded_at_utc": "2026-10-17T15:46:55.150Z",
+  "user_request": "Is there time to do a deeper/dry-run review for additional candidates?",
+  "scope": "INITIAL_TARGETED_RECONSIDERATION_DIAGNOSTIC_NOT_PRODUCTION_RECOMMENDATION_OR_COMPLETE_SLATE_REVIEW",
+  "authority_index_blob": "3710f3ebc9fac0ddd25d5f3ea46dfb4ed1b3f49b",
+  "original_lineage_blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+  "source_window": {
+    "start": "2026-10-17T15:44:07.254Z",
+    "recovered_by": "2026-10-17T15:44:16.705Z",
+    "semantics": "RESPONSE_RECOVERED_BY;unknownbookupdates;notconsensus;unverifiedexecution"
+  },
+  "rows": [
+    {
+      "rank": 1,
+      "game_id": "401856831",
+      "game": "Oklahoma State @ Houston",
+      "kickoff_ct": "2026-10-17 18:30 America/Chicago",
+      "observed_selection": "Houston -4.5 (-108)",
+      "classification": "SECONDARY_RECONSIDERATION_CANDIDATE_NOT_CLEARED_BET",
+      "support": "Original Houston -8.7 versus observed -4.5; qualitative4.2point discrepancy only. Houston230rushypg attacks OSU149rushypgallowed; Houstonrun-defense74ypgallowed, Weigman15TD1INT and team+4turnovermargin support home favorite. Independent counterarguments must be weighed, not treated as automatic veto.",
+      "risk": "OSU322.4passypg versus Houston248.3passypgallowed is directly adverse. Official FridayHouston report lists Yates and Thomas OUT, Williamson doubtful, Mayo questionable, Rhym/Malone/Egodogbare probable, adding defensive risk. No QB designation found in this matchup report is not final health certification. Opponent's strong red-zone defense also matters.",
+      "weather": "NWS Houston: today sunny,north10–15mph gust25; tonight partlycloudy,north5–10. Period forecast, not exact stadium/kickoff conditions.",
+      "disposition": "Highest-priority candidate for a separately qualified prospective second review. Not added to canonical Hot Sheet; no acceptable limits, stake, EV or practical execution clock invented.",
+      "prior_pass_reason": "Houston ground strength supports its model direction, but Oklahoma State sixth-ranked passing offense attacks Houston117th-ranked pass defense. The4.2point gap does not resolve that matchup risk."
+    },
+    {
+      "rank": 2,
+      "game_id": "401856832",
+      "game": "TCU @ Baylor",
+      "kickoff_ct": "2026-10-17 18:00 America/Chicago",
+      "observed_selection": "TCU +5.5 (-110)",
+      "classification": "SECONDARY_RECONSIDERATION_CANDIDATE_NOT_CLEARED_BET",
+      "support": "Original Baylor -1.5 versus observed Baylor -5.5 gives4point raw discrepancy towardTCU, not calibratededge. TCU255defenseypg/13.4ppgallowed supports underdog competitiveness. TCU280passingypg versus Baylor229.2passypgallowed provides independent offensive route despite weakTCUrushing.",
+      "risk": "Baylor461.4offenseypg/34.8ppg, home setting and Lagway's latest4TDperformance are meaningful counterarguments. Official FridayTCU report: kickerLemmermann OUT plus McGee/Fierro/Robison/Cunningham/Reid/GuidryOUT; Scott/Teason/Dominguez/Ashley probable. Kicker absence matters in a close-game underdog thesis. BaylorRedding/Richardson/Tezino/Tone/AshtonJonesOUT. Secondary reporting cited olderWednesday reports and differs onnames/status; officialFriday report prioritized.",
+      "weather": "NWS Waco: today sunny,north10–15mph gust20; tonight mostlyclear,northabout5mph becomingcalm. Period forecast only.",
+      "disposition": "Lower-priority candidate after explicitly weighing kicking/availability and offensive limitations. Not added to canonical Hot Sheet; no invented limits or execution clock.",
+      "prior_pass_reason": "TCU defensive strength supports investigation of the underdog, but Baylor offense23rd, home setting and unresolved final availability leave insufficient independent support for a four-point model-gap judgment."
+    },
+    {
+      "rank": null,
+      "game_id": "401858494",
+      "game": "Wisconsin @ UCLA",
+      "kickoff_ct": "2026-10-17 18:30 America/Chicago",
+      "observed_selection": "UCLA -1.5 (-105)",
+      "classification": "RETAIN_PASS_MATERIAL_QB_ABSENCE",
+      "support": "Original UCLA -7.3 versus -1.5 is a5.8point raw discrepancy, not an earnededge.",
+      "risk": "Official BigTen Friday report explicitly lists UCLAQB NicoIamaleava OUT, alongside Matthews/Johnson/Smith/YoonOUT and furtherdoubtful/questionableplayers. This is materially different from ordinary matchupcounterargument. Historical preview lists seasonleaders and priorgame; it is not currentavailabilityconfirmation.",
+      "disposition": "RemainPASS; do not infer Wisconsinbet or revisedfairline from uncalibrated QB adjustment.",
+      "prior_pass_reason": "UCLA raw4.8point separation is offset by Wisconsin15th-ranked total defense, rest advantage and UCLA substantial turnover/penalty uncertainty. Official BigTen report content was not readable in this retrieval; no full-availability assertion."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.espn.com/college-football/odds",
+      "request_start_utc": "2026-10-17T15:44:07.254Z",
+      "response_recovered_by_utc": "2026-10-17T15:44:16.705Z",
+      "scrape_id": "01a14a89-0072-776d-bb5c-60561eca4090",
+      "role": "DRAFTKINGS_IDENTIFIED_PUBLIC_RETRIEVAL_ONLY"
+    },
+    {
+      "url": "https://www.espn.com/college-football/preview/_/gameId/401856831",
+      "request_start_utc": "2026-10-17T15:44:07.254Z",
+      "response_recovered_by_utc": "2026-10-17T15:44:12.260Z",
+      "scrape_id": "01a14a88-f0f2-77c1-8909-a9d4d684182a",
+      "role": "DATED_PREVIEW_BODY_AND_SEPARATE_LIVE_WIDGETS"
+    },
+    {
+      "url": "https://www.espn.com/college-football/preview/_/gameId/401856832",
+      "request_start_utc": "2026-10-17T15:44:07.254Z",
+      "response_recovered_by_utc": "2026-10-17T15:44:09.285Z",
+      "scrape_id": "01a14a88-e5d4-7476-abae-2e2c84e27553",
+      "role": "DATED_PREVIEW_BODY_AND_SEPARATE_LIVE_WIDGETS"
+    },
+    {
+      "url": "https://www.espn.com/college-football/preview/_/gameId/401858494",
+      "request_start_utc": "2026-10-17T15:44:07.254Z",
+      "response_recovered_by_utc": "2026-10-17T15:44:14.277Z",
+      "scrape_id": "01a14a88-f806-7488-85fb-6c8f1704a25b",
+      "role": "DATED_PREVIEW_BODY_AND_SEPARATE_LIVE_WIDGETS"
+    },
+    {
+      "url": "https://big12sports.com/sports/2025/8/14/FBreporting.aspx",
+      "request_start_utc": "2026-10-17T15:45:14.386Z",
+      "response_recovered_by_utc": "2026-10-17T15:45:17.117Z",
+      "scrape_id": "01a14a89-eb5f-72b5-a920-ceec7f789542",
+      "role": "OFFICIAL_CONFERENCE_AVAILABILITY_REPORT"
+    },
+    {
+      "url": "https://bigten.org/fb/availability-reports/",
+      "request_start_utc": "2026-10-17T15:45:14.386Z",
+      "response_recovered_by_utc": "2026-10-17T15:45:21.218Z",
+      "scrape_id": "01a14a89-f643-7630-b255-01fdfebf70db",
+      "role": "OFFICIAL_CONFERENCE_AVAILABILITY_REPORT"
+    },
+    {
+      "url": "https://forecast.weather.gov/MapClick.php?lat=31.56&lon=-97.115",
+      "request_start_utc": null,
+      "response_recovered_by_utc": "2026-10-17T15:45:59.397Z",
+      "scrape_id": "01a14a8a-9216-7432-8500-450d2643706c",
+      "role": "OFFICIAL_PERIOD_FORECAST"
+    },
+    {
+      "url": "https://forecast.weather.gov/MapClick.php?lat=29.722&lon=-95.349",
+      "request_start_utc": null,
+      "response_recovered_by_utc": "2026-10-17T15:45:57.260Z",
+      "scrape_id": "01a14a8a-893e-739e-990e-1c4e76a65c74",
+      "role": "OFFICIAL_PERIOD_FORECAST"
+    }
+  ],
+  "process_finding": "Publication contract b29de141c6b88c205f43e337eb16e14b81ec8323 explicitly prohibits closedPASS reopening in currentV2/V3 typedhistory. Preserving oldrecords must not be confused with proof every earlierfootballdecision was optimal. A separately qualified prospective reconsideration route is needed before changing canonical PASS to conditional; this diagnostic does not amend or bypass that guard. No policy/code/threshold change made to generatepicks.",
+  "result": "TWO_REVIEW_CANDIDATES_ZERO_NEW_CLEARED_RECOMMENDATIONS_ONE_QB_BASED_PASS_CONFIRMED",
+  "remaining_work": "Prospective reconsideration governance/publication qualification and candidate-specific final judgments/limits/cutoff evidence before any new canonical recommendation. Current9:52CTHotSheet remains unchanged. These laterkickoffs mean calendar time remains; no promise of finalclearedpicks or automatedbackgroundwork.",
+  "effects": {
+    "canonical_market": "NONE",
+    "canonical_decisions": "NONE",
+    "hot_sheet": "NONE",
+    "model": "NONE",
+    "execution": "NONE",
+    "schedules": "NONE",
+    "big_nine": "PAUSED"
+  }
+}
