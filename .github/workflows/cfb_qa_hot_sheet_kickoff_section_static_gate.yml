@@ -39,6 +39,8 @@ on:
       - 'evidence/scheduler_qa/CFB_CBS_FULL_BOARD_TABLES_20261014T225920Z.md'
       - 'scripts/cfb_neutral_publication_gate.py'
       - 'scripts/cfb_hot_sheet_readiness.py'
+      - 'scripts/cfb_saved_publication_audit.py'
+      - 'scripts/test_cfb_saved_publication_audit.py'
       - 'scripts/cfb_consensus_reference.py'
       - 'scripts/test_cfb_consensus_reference.py'
       - 'scripts/test_cfb_hot_sheet_readiness.py'
@@ -98,6 +100,8 @@ jobs:
         run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_readiness.py
       - name: Exercise descriptive consensus source and price boundaries
         run: python -m unittest discover -s scripts -p test_cfb_consensus_reference.py
+      - name: Exercise saved-view clock separation without weakening live gate
+        run: python -m unittest discover -s scripts -p test_cfb_saved_publication_audit.py
       - name: Normalize retained real full-board capture without operational mutation
         run: python scripts/cfb_cbs_full_board_normalizer.py --markdown evidence/scheduler_qa/CFB_CBS_FULL_BOARD_TABLES_20261014T225920Z.md --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json --recovered-by 2026-10-14T22:59:20Z
       - name: Exercise confirmed funding deduplication and transaction-type boundaries
@@ -198,7 +202,7 @@ jobs:
               python scripts/cfb_week7_first_frozen_projection_gate.py --sheet "$cfb_current_sheet" --parent evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --prior-decision "$RUNNER_TEMP/cfb_week7_prior_decision.md" --first "$RUNNER_TEMP/cfb_first_frozen.zip" --refresh "$RUNNER_TEMP/cfb_accepted_refresh.zip" ;;
             evidence/operational/CFB_WEEK7_HOT_SHEET_*)
               if python -c 'import sys; from pathlib import Path; sys.exit(0 if any(x in Path(sys.argv[1]).read_text().splitlines() for x in ("**Presentation schema:** CFB_NEUTRAL_PUBLICATION_V1", "**Presentation schema:** CFB_NEUTRAL_WEEKLY_PUBLICATION_V2")) else 1)' "$cfb_current_sheet"; then
-                python scripts/cfb_neutral_publication_gate.py --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json --as-of "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+                python scripts/cfb_saved_publication_audit.py --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json --as-of "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
               else
               python scripts/cfb_week7_monday_publication_gate.py --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md --morning evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_0707CT.md --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json
               fi ;;
