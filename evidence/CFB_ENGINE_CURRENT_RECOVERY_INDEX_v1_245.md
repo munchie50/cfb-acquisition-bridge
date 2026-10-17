@@ -7788,3 +7788,117 @@ CBS remains `UNIDENTIFIED_MIXED_BOOK_FALLBACK`; `CONSENSUS_UNAVAILABLE`, Caesars
   ]
 }
 ```
+
+
+## October17 Test Routine — complete recovery consumer boundary
+
+The morning navigation advance omitted unchanged dependencies required by existing downstream guards. Restore the complete composite boundary prospectively; retain the failed checkpoint, CI evidence and original scheduled receipt unchanged. Preflight the proposed complete index before a write and run independent whole-publication validation afterward. No automatic inheritance from old checkpoints.
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-17T13:40:57.662361+00:00",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Scheduled Market Monitor natural normal-advance compiler and independent whole-view publication audit completed for cycle CFB_MARKET_MONITOR_20261017T120424Z; detailed authority and receipts govern exact completion.",
+    "Current Week7 display is 62 exact-once rows with 41 PASS and 21 INCONCLUSIVE; no actionable recommendation or execution was invented.",
+    "CBS is unidentified mixed-book fallback only; consensus unavailable, Caesars unverified and executability unverified. Caesars absence alone is not a recommendation blocker.",
+    "Eighteen overdue rows were prospectively resolved PASS/NO BET at the deadline from documented qualification gaps; no rollover, forced bet, threshold invention or deadline extension.",
+    "Friday finals were joined to two genuine FIRST_FROZEN rows; one frozen exclusion remained unscored. Champion/scientific boundaries and all four schedules remain unchanged.",
+    "User-directed Test Routine QA found four omitted recovery dependencies in the morning checkpoint. The historical checkpoint and failed GitHub run39031845936 remain preserved; a prospective complete checkpoint restores consumer bindings without changing source/decision/HotSheet/money/model bytes.",
+    "Current-consumer preflight checks every declared pointer hash plus money, weekly-review/source and publication bindings before future index writes. This is navigation integration proof only; broad recommendation/source readiness remains OPEN."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "210e16209b064f7acadc9bb86772de845668e324",
+      "purpose": "CURRENT_MARKET_STATE:fresh complete120424Z CBS fallback typed packet;62 governed games;source limits preserved"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "8eba1865589019028888297766f5f3482da76134",
+      "purpose": "CURRENT_DECISION_STATE:41PASS21INCONCLUSIVE;18 deadline PASS rows;no forced bet or deadline extension"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
+      "purpose": "CURRENT_EXECUTION_LEDGER:read unchanged;no Week7 established execution"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "fbea94d5836388d3afd6c571b24409135fe9c6ce",
+      "purpose": "CURRENT_SCORECARD:Friday2 authoritative finals joined;AppState-Coastal exclusion unscored"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-17_0708CT.md",
+      "blob": "b8a3b3627201a99fe13d7f758045dd48a0d66e3a",
+      "purpose": "CURRENT_HOT_SHEET:scheduled typed natural publication;62 exact-once;Saturday evening/night primary"
+    },
+    {
+      "path": "evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261017T120424Z.md",
+      "blob": "126c85e2ce308bbd2d3073a89467aa3ca0b6dab7",
+      "purpose": "CURRENT_COMPLETE_RESPONSE_CAPTURE:fresh maxAge0 CBS;honest recovered-by120735Z;fallback only"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_SATURDAY_0700_DEADLINE_REVIEW_20261017T120424Z.json",
+      "blob": "9fcdf0e2ca839cbd2f823ade17976f142a4abffa",
+      "purpose": "CURRENT_DEADLINE_REVIEW:18 prospective PASS/NO BET rows with per-game blockers"
+    },
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_READINESS_20261017T120424Z.json",
+      "blob": "32995482bcf3ebbb20720c93d4aa2b00847663f1",
+      "purpose": "CURRENT_READINESS_DIAGNOSTIC:21 open;no overdue decision or elapsed quote at120850Z"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_RUN_STARTED.md",
+      "blob": "c5e6d74205f6127182be84d769f8fdb0fb7d9cae",
+      "purpose": "cycle observability start marker;not completion evidence"
+    },
+    {
+      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
+      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
+      "purpose": "CURRENT_MONEY_LEDGER: independently read and unchanged"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
+      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
+      "purpose": "CURRENT_WEEKLY_REVIEW: acceptedWeek6 learning review;no automatic Champion or Challenger mutation"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
+      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+      "purpose": "accepted original62 target lineage census;51predictions+11exclusions;REFRESH separate"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
+      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
+      "purpose": "HISTORICAL_WEEKLY_REVIEW_SOURCE: exact immutable Health ancestor required by currentR2 carry-forward audit;not latestHealth"
+    },
+    {
+      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
+      "blob": "467e21006cc51fcc46b9577d7f98f301f9e63f84",
+      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October13 exactS0 independently accepted lateOct16CT; source pointer only, not operational model substitution"
+    },
+    {
+      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
+      "blob": "528f2be56d2eb61bb37625b94ad40686be63346b",
+      "purpose": "ACTIVE_CONSENSUS_AND_VENUE_CONTROL:CaesarsNOTrequiredforrecommendations;sourceandlimitprotectionsunchanged"
+    },
+    {
+      "path": "evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md",
+      "blob": "ee15138c2ed397fb0e393eb6af9e6a2038a483c4",
+      "purpose": "ACTIVE_NEUTRAL_V1_V2_AND_BOUNDED_CONDITIONAL_V3_CONTROL: live actual clock strict; saved QA separate; WAIT/BETNOW unsupported"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_TERMINAL_CANDIDATE.md",
+      "blob": "b76179dddf4ff1982dcc3d50175d110d9df5db89",
+      "purpose": "CURRENT_MORNING_TERMINAL_CANDIDATE: independent completion evidence; scope unchanged"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_RUN_CLOSURE.md",
+      "blob": "9de85515762d611a65a555225a15c244c12ac2fa",
+      "purpose": "CURRENT_MORNING_RUN_CLOSURE: independent completion evidence; scope unchanged"
+    }
+  ]
+}
+```
