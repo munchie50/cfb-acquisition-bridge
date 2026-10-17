@@ -8,7 +8,7 @@ import re
 import subprocess
 from pathlib import Path
 import cfb_neutral_publication_gate as gate
-from cfb_consensus_reference import reference
+from cfb_consensus_reference import identity_key, reference
 
 SCHEMA = 'CFB_WEEKLY_CONDITIONAL_DECISION_V3'
 REVIEW_SCHEMA = 'CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V1'
@@ -106,6 +106,6 @@ def display(row, market_row, model, as_of):
     context = f"REVIEW-EVIDENCED non-Caesars reference: {benchmark['operator_count']} operators; points {benchmark['reference_points']}; dispersion {benchmark['points_range']}; boundary {r['market_reference']['collection_end']}; source truth independently reviewed, not certified by renderer"
     context += '; prices at reference line '+str(benchmark['exact_reference_line_price_range'])+'; '+benchmark['price_comparison']
     for q in benchmark['constituents']:
-        exclusion=' [EXCLUDED FROM REFERENCE]' if any(s.casefold().startswith('caesars') for s in (q['book'],q['operator'])) else ''
+        exclusion=' [EXCLUDED FROM REFERENCE]' if any(identity_key(s).startswith('caesars') for s in (q['book'],q['operator'])) else ''
         context += f"; {q['book']}{exclusion}: line {q['line']}, price {q['price']:+d}, retrieved {q['retrieved_at']}, updated {q['offer_updated_at']}, {q['source_url']}"
     return conditions, context
