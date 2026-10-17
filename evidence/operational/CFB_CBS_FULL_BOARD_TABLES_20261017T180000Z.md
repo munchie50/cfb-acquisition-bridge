@@ -1,7 +1,7 @@
 # CBS Week 7 complete response capture
 
 - source_url: https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/
-- collection_start_utc: 2026-10-17T18:00:00Z
+- collection_start_utc: 2026-10-17T17:59:30Z
 - response_recovered_by_utc: 2026-10-17T17:59:40.809Z
 - clock_semantics: RESPONSE_RECOVERED_BY
 - cache_policy: maxAge=0 live Firecrawl fetch
