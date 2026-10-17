@@ -228,3 +228,18 @@ Scientific effect: descriptive prospective evaluation only. Champion v1.193 unch
 
 **Sources:** Old Dominion Athletics, https://odusports.com/boxscore/14878 ; Colorado State Athletics, https://csurams.com/boxscore.aspx?id=21975  
 **Scientific effect:** NONE. Champion v1.193, FIRST_FROZEN/accepted REFRESH lineage, exclusions, Challenger status, and betting rules remain unchanged. No outcome-informed reconstruction occurred.
+
+
+## Week 7 Friday FIRST_FROZEN outcomes — authoritative finals joined 2026-10-17
+
+**Cycle:** CFB_MARKET_MONITOR_20261017T120424Z  
+**Join rule:** Authoritative school finals were joined only to genuine pre-event Week 7 FIRST_FROZEN rows. Appalachian State @ Coastal Carolina remained a governed FIRST_FROZEN exclusion (`home_prior_pbp_missing`) and was not scored. None of the Friday games had an established production or $20 sandbox execution, so this is model scoring only and not wager settlement. Frozen predictions were not reconstructed or mutated.
+
+| Game | FIRST_FROZEN home margin | FIRST_FROZEN total | FIRST_FROZEN home win p | Authoritative final | Actual home margin | Actual total | Margin error | Total error | SU direction correct |
+|---|---:|---:|---:|---|---:|---:|---:|---:|---:|
+| Memphis @ Tulane | -4.0 | 55.0 | 0.398 | Memphis 17, Tulane 31 | +14 | 48 | +18.0 | -7.0 | 0 |
+| Washington @ Purdue | -5.6 | 57.5 | 0.363 | Washington 38, Purdue 26 | -12 | 64 | -6.4 | +6.5 | 1 |
+
+**Excluded final retained without scoring:** Appalachian State 35, Coastal Carolina 32.  
+**Sources:** Tulane Athletics, https://tulanegreenwave.com/game-center/23453 ; Washington Athletics, https://gohuskies.com/game-center/25204 ; Appalachian State Athletics, https://appstatesports.com/sports/football/schedule/2026  
+**Scientific effect:** NONE. Champion v1.193, FIRST_FROZEN/accepted REFRESH lineage, exclusions, Challenger status, and betting rules remain unchanged. No outcome-informed reconstruction occurred.
