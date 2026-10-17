@@ -97,9 +97,12 @@ def selected_block(content,tag,schema,as_of,expected_ids=None):
                         if x['state']=='CONDITIONAL' and x.get('acceptable_number')!=previous.get('acceptable_number'):
                             raise ValueError('original conditional number/price limits cannot change')
                 if x['game_id'] in old and old[x['game_id']]['state']=='PASS':
-                    if x['state']!='PASS':raise ValueError('closed PASS reopened')
-                    for k in ('state_recorded_at_utc','state_evidence'):
-                        if k in old[x['game_id']] and x[k]!=old[x['game_id']][k]:raise ValueError('PASS evidence rewritten')
+                    if x['state']!='PASS':
+                        from cfb_conditional_recommendation_profile import reconsideration
+                        reconsideration(x,old[x['game_id']],r['as_of_utc'])
+                    else:
+                        for k in ('state_recorded_at_utc','state_evidence'):
+                            if k in old[x['game_id']] and x[k]!=old[x['game_id']][k]:raise ValueError('PASS evidence rewritten')
         if result is not None and result['schema'] in (WEEKLY_MARKET_SCHEMA,)+WEEKLY_DECISION_SCHEMAS and r['schema'] in (MARKET_SCHEMA,DECISION_SCHEMA):raise ValueError('weekly schema downgrade')
         if result is not None and result['schema']==CONDITIONAL_DECISION_SCHEMA and r['schema']!=CONDITIONAL_DECISION_SCHEMA:
             raise ValueError('conditional schema downgrade')
