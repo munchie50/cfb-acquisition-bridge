@@ -1,0 +1,1018 @@
+{
+  "schema": "CFB_MANUAL_DUE_REVIEW_V1",
+  "run_id": "CFB_PRESENTATION_RECONCILIATION_20261017T003530Z",
+  "reviewed_at_utc": "2026-10-17T00:38:31Z",
+  "scope": "PROSPECTIVE_OPERATIONAL_NO_BET_REVIEW_NOT_FULL_FOOTBALL_AVAILABILITY_OR_BETTING_ACCEPTANCE",
+  "source": {
+    "capture_path": "evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261017T003625Z.md",
+    "scrape_id": "01a14749-9f78-72be-b26b-699413604dc3",
+    "response_recovered_by": "2026-10-17T00:36:25Z",
+    "table_sha256": "889c6e13fa6b82f632ea4297bfd3b3a699a3f521ad84bbe452c2bfa8e510a80b",
+    "coverage": {
+      "governed_games": 62,
+      "matched_games": 62,
+      "source_team_rows": 124,
+      "future_games": 52,
+      "future_team_rows": 104,
+      "past_or_started_games": 10,
+      "missing_game_ids": []
+    },
+    "consensus": "CONSENSUS_UNAVAILABLE"
+  },
+  "prior": {
+    "market_blob": "f96df574ef69a6d1e21139c9c721bd1804295501",
+    "decision_blob": "579ee3d16c76663428b3a00e49d4861a8ed512f1",
+    "state_counts": {
+      "PASS": 10,
+      "INCONCLUSIVE": 52
+    }
+  },
+  "proposed": {
+    "market_blob": "0e410400554d04db094dbb9f64b4ecc74497a93d",
+    "decision_blob": "6bb4bea7caa78b94ede8dcc545aade3a2afef477",
+    "sheet_blob": "682e542d77d18d3e7a6b9b9bd46714bd3a01d761",
+    "state_counts": {
+      "PASS": 23,
+      "INCONCLUSIVE": 39
+    }
+  },
+  "preserved_original_exclusions": 11,
+  "original_modeled_reviews": 8,
+  "excluded_reviews": 5,
+  "due_games": 13,
+  "no_deadline_or_cutoff_extension": true,
+  "no_old_pass_reopened": true,
+  "no_wait_or_bet_fabricated": true,
+  "material_availability_certified": false,
+  "review_rows": [
+    {
+      "game_id": "401856724",
+      "game": "Florida @ Texas",
+      "original_prediction": "FIRST_FROZEN: Texas -0.9 / 58.6 / 0.556 home",
+      "source_game": {
+        "game_id": "401856724",
+        "away_team": "Florida",
+        "home_team": "Texas",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Florida",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 11.5,
+              "price": -112,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 340,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 51.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Texas",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -11.0,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -420,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 51.5,
+              "price": -114,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      "previous_state": "INCONCLUSIVE",
+      "new_state": "PASS",
+      "reviewed_at_utc": "2026-10-17T00:38:31Z",
+      "preserved_reconciliation_utc": "2026-10-17T00:30:00Z",
+      "preserved_planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "model_market_assessment": "Original Texas -0.9 versus fresh mixed-book Texas -11 / Florida +11.5 is a large model-market disagreement, not an accepted ATS rule or executable threshold.",
+      "material_review": "NOT_COMPLETED_NO_POSITIVE_AVAILABILITY_CLAIM",
+      "decision_rule": "v1.237: insufficient supported action and no independently established governed WAIT condition -> prospective PASS",
+      "actionable_review_earned": false,
+      "acceptable_number": null,
+      "venue_missing_is_recommendation_blocker": false
+    },
+    {
+      "game_id": "401858268",
+      "game": "Virginia @ SMU",
+      "original_prediction": "FIRST_FROZEN: Virginia -0.1 / 57.0 / 0.515 home",
+      "source_game": {
+        "game_id": "401858268",
+        "away_team": "Virginia",
+        "home_team": "SMU",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Virginia",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 10.0,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 310,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 51.5,
+              "price": -110,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "SMU",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -9.5,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -340,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 51.5,
+              "price": -105,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      "previous_state": "INCONCLUSIVE",
+      "new_state": "PASS",
+      "reviewed_at_utc": "2026-10-17T00:38:31Z",
+      "preserved_reconciliation_utc": "2026-10-17T00:30:00Z",
+      "preserved_planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "model_market_assessment": "Original Virginia -0.1 versus fresh mixed-book SMU -9.5 / Virginia +10 is a disagreement flag only; no independently earned recommendation rule or price limit exists.",
+      "material_review": "NOT_COMPLETED_NO_POSITIVE_AVAILABILITY_CLAIM",
+      "decision_rule": "v1.237: insufficient supported action and no independently established governed WAIT condition -> prospective PASS",
+      "actionable_review_earned": false,
+      "acceptable_number": null,
+      "venue_missing_is_recommendation_blocker": false
+    },
+    {
+      "game_id": "401856720",
+      "game": "Mississippi State @ LSU",
+      "original_prediction": "FIRST_FROZEN: Mississippi State -0.9 / 60.3 / 0.470 home",
+      "source_game": {
+        "game_id": "401856720",
+        "away_team": "Mississippi State",
+        "home_team": "LSU",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Mississippi State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 17.5,
+              "price": -118,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 575,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 56.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "LSU",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -16.5,
+              "price": -122,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -769,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 56.5,
+              "price": -111,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      "previous_state": "INCONCLUSIVE",
+      "new_state": "PASS",
+      "reviewed_at_utc": "2026-10-17T00:38:31Z",
+      "preserved_reconciliation_utc": "2026-10-17T00:30:00Z",
+      "preserved_planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "model_market_assessment": "Original Mississippi State -0.9 versus fresh mixed-book LSU -16.5 / Mississippi State +17.5 is a large investigation flag, not calibrated betting edge.",
+      "material_review": "NOT_COMPLETED_NO_POSITIVE_AVAILABILITY_CLAIM",
+      "decision_rule": "v1.237: insufficient supported action and no independently established governed WAIT condition -> prospective PASS",
+      "actionable_review_earned": false,
+      "acceptable_number": null,
+      "venue_missing_is_recommendation_blocker": false
+    },
+    {
+      "game_id": "401856830",
+      "game": "Kansas @ Kansas State",
+      "original_prediction": "FIRST_FROZEN: Kansas State -19.6 / 50.6 / 0.878 home",
+      "source_game": {
+        "game_id": "401856830",
+        "away_team": "Kansas",
+        "home_team": "Kansas State",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Kansas",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 3.5,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 145,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 55.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Kansas State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -3.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -172,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 55.5,
+              "price": -115,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      "previous_state": "INCONCLUSIVE",
+      "new_state": "PASS",
+      "reviewed_at_utc": "2026-10-17T00:38:31Z",
+      "preserved_reconciliation_utc": "2026-10-17T00:30:00Z",
+      "preserved_planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "model_market_assessment": "Original Kansas State -19.6 versus fresh mixed-book Kansas State -3.5 is an investigation flag; original-model magnitude alone does not establish a supported bet or maximum price.",
+      "material_review": "NOT_COMPLETED_NO_POSITIVE_AVAILABILITY_CLAIM",
+      "decision_rule": "v1.237: insufficient supported action and no independently established governed WAIT condition -> prospective PASS",
+      "actionable_review_earned": false,
+      "acceptable_number": null,
+      "venue_missing_is_recommendation_blocker": false
+    },
+    {
+      "game_id": "401856829",
+      "game": "Cincinnati @ West Virginia",
+      "original_prediction": "FIRST_FROZEN: West Virginia -4.0 / 55.7 / 0.617 home",
+      "source_game": {
+        "game_id": "401856829",
+        "away_team": "Cincinnati",
+        "home_team": "West Virginia",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Cincinnati",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 1.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 102,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 63.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "West Virginia",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -1.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -120,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 63.5,
+              "price": -105,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      "previous_state": "INCONCLUSIVE",
+      "new_state": "PASS",
+      "reviewed_at_utc": "2026-10-17T00:38:31Z",
+      "preserved_reconciliation_utc": "2026-10-17T00:30:00Z",
+      "preserved_planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "model_market_assessment": "Original West Virginia -4.0 versus fresh mixed-book West Virginia -1.5 is directional disagreement only, without a governed decision rule or original acceptable number/price.",
+      "material_review": "NOT_COMPLETED_NO_POSITIVE_AVAILABILITY_CLAIM",
+      "decision_rule": "v1.237: insufficient supported action and no independently established governed WAIT condition -> prospective PASS",
+      "actionable_review_earned": false,
+      "acceptable_number": null,
+      "venue_missing_is_recommendation_blocker": false
+    },
+    {
+      "game_id": "401869957",
+      "game": "Georgia State @ James Madison",
+      "original_prediction": "FIRST_FROZEN: James Madison -17.0 / 55.8 / 0.856 home",
+      "source_game": {
+        "game_id": "401869957",
+        "away_team": "Georgia State",
+        "home_team": "James Madison",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Georgia State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 10.5,
+              "price": -122,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 290,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 57.5,
+              "price": -110,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "James Madison",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -9.5,
+              "price": -111,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -360,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 57.5,
+              "price": -108,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      "previous_state": "INCONCLUSIVE",
+      "new_state": "PASS",
+      "reviewed_at_utc": "2026-10-17T00:38:31Z",
+      "preserved_reconciliation_utc": "2026-10-17T00:30:00Z",
+      "preserved_planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "model_market_assessment": "Original James Madison -17.0 versus fresh mixed-book James Madison -9.5 / Georgia State +10.5 is an investigation flag; no independent football/material/rule qualification or original limit is earned.",
+      "material_review": "NOT_COMPLETED_NO_POSITIVE_AVAILABILITY_CLAIM",
+      "decision_rule": "v1.237: insufficient supported action and no independently established governed WAIT condition -> prospective PASS",
+      "actionable_review_earned": false,
+      "acceptable_number": null,
+      "venue_missing_is_recommendation_blocker": false
+    },
+    {
+      "game_id": "401858267",
+      "game": "Pittsburgh @ Boston College",
+      "original_prediction": "FIRST_FROZEN: Pittsburgh -6.3 / 47.4 / 0.344 home",
+      "source_game": {
+        "game_id": "401858267",
+        "away_team": "Pittsburgh",
+        "home_team": "Boston College",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Pittsburgh",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -6.5,
+              "price": -105,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -225,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 42.5,
+              "price": -111,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Boston College",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 6.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 195,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 43.5,
+              "price": -122,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      "previous_state": "INCONCLUSIVE",
+      "new_state": "PASS",
+      "reviewed_at_utc": "2026-10-17T00:38:31Z",
+      "preserved_reconciliation_utc": "2026-10-17T00:30:00Z",
+      "preserved_planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "model_market_assessment": "Original Pittsburgh -6.3 is close to fresh mixed-book Pittsburgh -6.5; no calibrated side/total rule or earned price threshold supports a recommendation from that comparison.",
+      "material_review": "NOT_COMPLETED_NO_POSITIVE_AVAILABILITY_CLAIM",
+      "decision_rule": "v1.237: insufficient supported action and no independently established governed WAIT condition -> prospective PASS",
+      "actionable_review_earned": false,
+      "acceptable_number": null,
+      "venue_missing_is_recommendation_blocker": false
+    },
+    {
+      "game_id": "401862802",
+      "game": "Florida Atlantic @ Army",
+      "original_prediction": "FIRST_FROZEN EXCLUDED \u2014 home_prior_pbp_missing; Oct6 REFRESH PREDICTION (not substituted)",
+      "source_game": {
+        "game_id": "401862802",
+        "away_team": "Florida Atlantic",
+        "home_team": "Army",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Florida Atlantic",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 2.5,
+              "price": -118,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 105,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 54.5,
+              "price": -114,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "Army",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -1.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -122,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 54.5,
+              "price": -102,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      "previous_state": "INCONCLUSIVE",
+      "new_state": "PASS",
+      "reviewed_at_utc": "2026-10-17T00:38:31Z",
+      "preserved_reconciliation_utc": "2026-10-17T00:30:00Z",
+      "preserved_planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "model_market_assessment": "Original FIRST_FROZEN excludes Florida Atlantic at Army for home_prior_pbp_missing; later REFRESH eligibility cannot replace the original exclusion in this consumer.",
+      "material_review": "NOT_COMPLETED_NO_POSITIVE_AVAILABILITY_CLAIM",
+      "decision_rule": "v1.237: insufficient supported action and no independently established governed WAIT condition -> prospective PASS",
+      "actionable_review_earned": false,
+      "acceptable_number": null,
+      "venue_missing_is_recommendation_blocker": false
+    },
+    {
+      "game_id": "401858491",
+      "game": "Northwestern @ Michigan State",
+      "original_prediction": "FIRST_FROZEN EXCLUDED \u2014 away_prior_points_missing; Oct6 REFRESH PREDICTION (not substituted)",
+      "source_game": {
+        "game_id": "401858491",
+        "away_team": "Northwestern",
+        "home_team": "Michigan State",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Northwestern",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -7.0,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -294,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 49.5,
+              "price": -112,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Michigan State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 7.5,
+              "price": -115,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 250,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 50.5,
+              "price": -111,
+              "side": "u",
+              "opaque_book_icon_id": "34"
+            }
+          }
+        ]
+      },
+      "previous_state": "INCONCLUSIVE",
+      "new_state": "PASS",
+      "reviewed_at_utc": "2026-10-17T00:38:31Z",
+      "preserved_reconciliation_utc": "2026-10-17T00:30:00Z",
+      "preserved_planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "model_market_assessment": "Original FIRST_FROZEN excludes Northwestern at Michigan State for away_prior_points_missing; no original accepted prediction is available for this recommendation consumer.",
+      "material_review": "NOT_COMPLETED_NO_POSITIVE_AVAILABILITY_CLAIM",
+      "decision_rule": "v1.237: insufficient supported action and no independently established governed WAIT condition -> prospective PASS",
+      "actionable_review_earned": false,
+      "acceptable_number": null,
+      "venue_missing_is_recommendation_blocker": false
+    },
+    {
+      "game_id": "401866441",
+      "game": "Ball State @ Bowling Green",
+      "original_prediction": "FIRST_FROZEN: Ball State -2.4 / 51.8 / 0.432 home",
+      "source_game": {
+        "game_id": "401866441",
+        "away_team": "Ball State",
+        "home_team": "Bowling Green",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Ball State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 6.5,
+              "price": -105,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 210,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 47.5,
+              "price": -105,
+              "side": "o",
+              "opaque_book_icon_id": "30"
+            }
+          },
+          {
+            "team": "Bowling Green",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -6.5,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -235,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 47.5,
+              "price": -114,
+              "side": "u",
+              "opaque_book_icon_id": "35"
+            }
+          }
+        ]
+      },
+      "previous_state": "INCONCLUSIVE",
+      "new_state": "PASS",
+      "reviewed_at_utc": "2026-10-17T00:38:31Z",
+      "preserved_reconciliation_utc": "2026-10-17T00:30:00Z",
+      "preserved_planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "model_market_assessment": "Original Ball State -2.4 versus fresh mixed-book Ball State +6.5 is a disagreement flag, not a verified win/ATS probability or independently earned betting limit.",
+      "material_review": "NOT_COMPLETED_NO_POSITIVE_AVAILABILITY_CLAIM",
+      "decision_rule": "v1.237: insufficient supported action and no independently established governed WAIT condition -> prospective PASS",
+      "actionable_review_earned": false,
+      "acceptable_number": null,
+      "venue_missing_is_recommendation_blocker": false
+    },
+    {
+      "game_id": "401858261",
+      "game": "Charleston Southern @ Clemson",
+      "original_prediction": "FIRST_FROZEN EXCLUDED \u2014 home_prior_points_missing; Oct6 REFRESH PREDICTION (not substituted)",
+      "source_game": {
+        "game_id": "401858261",
+        "away_team": "Charleston Southern",
+        "home_team": "Clemson",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Charleston Southern",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 43.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 8000,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 57.5,
+              "price": -106,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "Clemson",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -42.5,
+              "price": -105,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -100000,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 57.5,
+              "price": -108,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      "previous_state": "INCONCLUSIVE",
+      "new_state": "PASS",
+      "reviewed_at_utc": "2026-10-17T00:38:31Z",
+      "preserved_reconciliation_utc": "2026-10-17T00:30:00Z",
+      "preserved_planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "model_market_assessment": "Original FIRST_FROZEN excludes Charleston Southern at Clemson for home_prior_points_missing; later REFRESH eligibility is not substituted.",
+      "material_review": "NOT_COMPLETED_NO_POSITIVE_AVAILABILITY_CLAIM",
+      "decision_rule": "v1.237: insufficient supported action and no independently established governed WAIT condition -> prospective PASS",
+      "actionable_review_earned": false,
+      "acceptable_number": null,
+      "venue_missing_is_recommendation_blocker": false
+    },
+    {
+      "game_id": "401858488",
+      "game": "Ohio State @ Indiana",
+      "original_prediction": "FIRST_FROZEN EXCLUDED \u2014 home_prior_points_missing; Oct6 REFRESH PREDICTION (not substituted)",
+      "source_game": {
+        "game_id": "401858488",
+        "away_team": "Ohio State",
+        "home_team": "Indiana",
+        "source_kickoff_utc": "2026-10-17T16:00:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Ohio State",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -3.0,
+              "price": -108,
+              "side": null,
+              "opaque_book_icon_id": "34"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -154,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 50.5,
+              "price": -108,
+              "side": "o",
+              "opaque_book_icon_id": "34"
+            }
+          },
+          {
+            "team": "Indiana",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 3.5,
+              "price": -124,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 136,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 50.5,
+              "price": -110,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      "previous_state": "INCONCLUSIVE",
+      "new_state": "PASS",
+      "reviewed_at_utc": "2026-10-17T00:38:31Z",
+      "preserved_reconciliation_utc": "2026-10-17T00:30:00Z",
+      "preserved_planning_cutoff_utc": "2026-10-17T15:00:00Z",
+      "model_market_assessment": "Original FIRST_FROZEN excludes Ohio State at Indiana for home_prior_points_missing; no model number is fabricated or borrowed from REFRESH.",
+      "material_review": "NOT_COMPLETED_NO_POSITIVE_AVAILABILITY_CLAIM",
+      "decision_rule": "v1.237: insufficient supported action and no independently established governed WAIT condition -> prospective PASS",
+      "actionable_review_earned": false,
+      "acceptable_number": null,
+      "venue_missing_is_recommendation_blocker": false
+    },
+    {
+      "game_id": "401858489",
+      "game": "Rutgers @ Maryland",
+      "original_prediction": "FIRST_FROZEN EXCLUDED \u2014 away_prior_points_missing; Oct6 REFRESH PREDICTION (not substituted)",
+      "source_game": {
+        "game_id": "401858489",
+        "away_team": "Rutgers",
+        "home_team": "Maryland",
+        "source_kickoff_utc": "2026-10-17T16:30:00Z",
+        "temporal_status": "FUTURE_AT_CAPTURE",
+        "team_offers": [
+          {
+            "team": "Rutgers",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": 5.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": 180,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 55.5,
+              "price": -115,
+              "side": "o",
+              "opaque_book_icon_id": "35"
+            }
+          },
+          {
+            "team": "Maryland",
+            "spread": {
+              "availability": "DISPLAYED",
+              "line": -5.5,
+              "price": -110,
+              "side": null,
+              "opaque_book_icon_id": "30"
+            },
+            "moneyline": {
+              "availability": "DISPLAYED",
+              "line": null,
+              "price": -205,
+              "side": null,
+              "opaque_book_icon_id": "35"
+            },
+            "total": {
+              "availability": "DISPLAYED",
+              "line": 56.5,
+              "price": -112,
+              "side": "u",
+              "opaque_book_icon_id": "30"
+            }
+          }
+        ]
+      },
+      "previous_state": "INCONCLUSIVE",
+      "new_state": "PASS",
+      "reviewed_at_utc": "2026-10-17T00:38:31Z",
+      "preserved_reconciliation_utc": "2026-10-17T00:30:00Z",
+      "preserved_planning_cutoff_utc": "2026-10-17T15:30:00Z",
+      "model_market_assessment": "Original FIRST_FROZEN excludes Rutgers at Maryland for away_prior_points_missing; original exclusion remains primary and unchanged.",
+      "material_review": "NOT_COMPLETED_NO_POSITIVE_AVAILABILITY_CLAIM",
+      "decision_rule": "v1.237: insufficient supported action and no independently established governed WAIT condition -> prospective PASS",
+      "actionable_review_earned": false,
+      "acceptable_number": null,
+      "venue_missing_is_recommendation_blocker": false
+    }
+  ],
+  "presentation_proof": {
+    "verdict": "PASS_NEUTRAL_CANONICAL_PRESENTATION_ONLY",
+    "games": 62,
+    "sheet_blob": "682e542d77d18d3e7a6b9b9bd46714bd3a01d761",
+    "scope": "typed neutral canonical display only; no source truth/betting/natural-run acceptance"
+  },
+  "frozen_field_proof": {
+    "verdict": "PASS_ORIGINAL_FROZEN_FIELDS_ONLY",
+    "games": 62,
+    "predictions": 51,
+    "exclusions": 11,
+    "numeric_fields": 153,
+    "favorite_directions": 51,
+    "archive_sha256": "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf",
+    "lineage_census_blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+    "sheet_blob": "682e542d77d18d3e7a6b9b9bd46714bd3a01d761",
+    "scope": "original frozen fields/exclusions only; publication cycle, market/decision/cutoff/current-source truth NOT accepted"
+  },
+  "overdue_open_decision_game_ids": [],
+  "elapsed_current_quote_game_ids": []
+}
