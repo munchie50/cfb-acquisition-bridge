@@ -81,4 +81,59 @@ class ReadinessTests(unittest.TestCase):
         self.assertGreater(len(r['overdue_open_decision_game_ids']), 0)
 
 
+class ReviewWindowTests(unittest.TestCase):
+    def window(self, state='PASS', kick='2026-10-18T00:00:00Z',
+               cutoff='2026-10-17T23:30:00Z', status='QUALIFIED',
+               now='2026-10-17T20:00:00Z'):
+        return readiness.review_window(
+            {'state': state, 'planning_cutoff_utc': cutoff,
+             'reconciliation_utc': '2026-10-17T18:00:00Z'},
+            {'kickoff_utc': kick, 'kickoff_status': status}, now)
+
+    def test_pass_remains_in_review_after_reconciliation_deadline(self):
+        r = self.window()
+        self.assertTrue(r['review_required'])
+        self.assertEqual(r['disposition'], 'PASS_FOR_NOW_REEVALUATE')
+        self.assertEqual(r['review_due_by_utc'], '2026-10-17T23:30:00Z')
+
+    def test_recommendations_and_inconclusives_also_remain_in_review(self):
+        for state in ('CONDITIONAL', 'INCONCLUSIVE'):
+            self.assertTrue(self.window(state=state)['review_required'])
+
+    def test_exact_cutoff_closes_without_extending_to_kickoff(self):
+        r = self.window(now='2026-10-17T23:30:00Z')
+        self.assertFalse(r['review_required'])
+        self.assertEqual(r['disposition'], 'PREGAME_WINDOW_CLOSED')
+
+    def test_earlier_kickoff_binds(self):
+        r = self.window(kick='2026-10-17T19:00:00Z')
+        self.assertFalse(r['review_required'])
+
+    def test_missing_cutoff_does_not_silently_drop_pass(self):
+        r = self.window(cutoff=None)
+        self.assertTrue(r['review_required'])
+        self.assertEqual(r['timing_issue'], 'PRACTICAL_CUTOFF_MISSING')
+
+    def test_unknown_or_unqualified_kickoff_is_visible_debt(self):
+        for kick, status in ((None, 'UNAVAILABLE'),
+                             ('2026-10-17T19:00:00Z', 'RETAINED_UNVERIFIED')):
+            r = self.window(kick=kick, status=status, cutoff=None)
+            self.assertTrue(r['review_required'])
+            self.assertEqual(r['timing_issue'], 'KICKOFF_REQUIRES_QUALIFICATION')
+
+    def test_no_market_inherits_a_pass(self):
+        r = self.window()
+        self.assertEqual(r['markets_to_review'], list(readiness.MARKETS))
+        self.assertIn('OVER', r['markets_to_review'])
+        self.assertIn('UNDER', r['markets_to_review'])
+        self.assertIn('AWAY_MONEYLINE', r['markets_to_review'])
+        self.assertIn('PARLAY_SUITABILITY', r['markets_to_review'])
+
+    def test_review_requirement_does_not_create_a_decision(self):
+        r = self.window()
+        self.assertNotIn('acceptable_number', r)
+        self.assertNotIn('stake', r)
+        self.assertIn('NOT_REOPEN_AUTHORITY', r['scope'])
+
+
 if __name__ == '__main__': unittest.main()
