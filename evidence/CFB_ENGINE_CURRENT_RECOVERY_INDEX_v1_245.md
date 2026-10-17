@@ -7390,3 +7390,178 @@ Open integrity debt: the market and decision additions are still untyped append-
   ]
 }
 ```
+
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-17T00:40:30Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Navigationonly;independentlyrecoveractivecontrols/canonicalbytes. ProductionRoutinev5active/TestRoutinev6candidate;Champion/originalFIRST_FROZENunchanged.",
+    "User-directedmanualCFB_PRESENTATION_RECONCILIATION_20261017T003530Z at003831Z prospectivelyresolves13dueSaturdaymorningstatesunderexistingv1.237:8originalmodeledcomparisonsonly/noearnedbettingrulelimits,5originalexclusions. PASS/NO BETnotnegativefootball/priceverdict;materialavailabilitynotcertified;nospecificgovernedWAITconditionearned. CaesarsabsenceNOTdecisionreason.",
+    "NewcurrentmanualHotSheet1938CT:62gamesexactlyonce/23PASS39INCONCLUSIVE/0recommendations;primarySATURDAYAFTERNOON. Original10PASS/evidenceandallreconciliation/planningcutoffvaluesunchanged; nodeadlineextension/backdating/reopening. Historical0030Zmissedreviewsremainpreserved,notretroactivelysuccessful.",
+    "FreshgenuineCBSmaxAge0response/completefaithfultables scrape01a14749-9f78-72be-b26b-699413604dc3 recovered003625Z:62games124teamrows/52future104futureteamrows. Unidentifiedmixedbookfallbackonly;Final/Openquarantined;consensusUNAVAILABLE/CaesarsUNVERIFIED/updateUNKNOWN;noopaqueoperatorinference.",
+    "Actualnormaltypedcompiler/wholehistory/bootstrap/proposalchecksranbefore serializedmarket/decisionwritesandexactreadbacks. ActualarchivedoriginalZIP772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf verified;51predictions11exclusions153numbers51directionsPASS. Postreadbackactualclock003941.735177Zwhole-render/readiness0overdue0elapsedcurrentquotes. Boundedmanualproofnotfullfootball/source/executionacceptance.",
+    "NaturalEvening/Monitoradoptionnotclaimed;manualcorrectionisNOTscheduledexecution. NextMonitorconsumeslatestcanonical23PASS39INCONCLUSIVEwitholdPASSlocked. Coherentcurrent-index/fullCI/two-phaseclosurearerequiredforcompletion; seeactualrunreceipts. Existinghistoricalfailures/HealthRUN_INCOMPLETE remainunchanged.",
+    "ConditionalV3andCaesarsrecommendationdecouplingremainactive;guardstrip/casefold/selectionrepairindependentCIproved. Qualifiedmulti-bookfeedaccess/clockprofileandearnedmaterial/rule/limit/cutoffevidenceforremaining39remainOPEN. No account/credential/signupornewbet/model/acceptedsource/money/task/schedulemutation."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "0e410400554d04db094dbb9f64b4ecc74497a93d",
+      "purpose": "CURRENT_MARKET_STATE: genuine003625Z fullCBS fallback/62typedgames;52future;pastquotesretained;consensusunavailable"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "6bb4bea7caa78b94ede8dcc545aade3a2afef477",
+      "purpose": "CURRENT_DECISION_STATE: manual003831Z23PASS39INCONCLUSIVE;13dueprospectiveNO BET;alloldPASS/clocks preserved"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
+      "purpose": "CURRENT_EXECUTION_LEDGER: independently read and unchanged;no Week7 execution"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "4380a04b9ce285288861e910fc7b754f977529d1",
+      "purpose": "CURRENT_SCORECARD: Tuesday2 Wednesday2 Thursday2 authoritative finals joined only to genuine pre-event FIRST_FROZEN"
+    },
+    {
+      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
+      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
+      "purpose": "CURRENT_MONEY_LEDGER: independently read and unchanged"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
+      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
+      "purpose": "CURRENT_WEEKLY_REVIEW: acceptedWeek6 learning review;no automatic Champion or Challenger mutation"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
+      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
+      "purpose": "HISTORICAL_WEEKLY_REVIEW_SOURCE: exact immutable Health ancestor required by currentR2 carry-forward audit;not latestHealth"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261016T221451Z_AUDIT.md",
+      "blob": "7da79b672ead3c44e6a948d37caaf7875fd241eb",
+      "purpose": "LATEST_PERSISTED_HEALTH_AUDIT: October16 scoped CFBcyclesverified;overallRUN_INCOMPLETEhistoricaldebtpreserved"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
+      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+      "purpose": "accepted original62 target lineage census;51predictions+11exclusions;REFRESH separate"
+    },
+    {
+      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
+      "blob": "6254ab28b90d9fa4a815124ea7ffec2850ddfc30",
+      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October6 independently acceptedREFRESH source;no automatic substitution"
+    },
+    {
+      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
+      "blob": "e1349015aa6d2b34f7564ff60b405f9cf3841cfa",
+      "purpose": "ACTIVE_PRESENTATION_CONTROL"
+    },
+    {
+      "path": "evidence/CFB_CBS_COMPLETE_RESPONSE_CAPTURE_PROCEDURE_2026-10-14.md",
+      "blob": "ab554daa0446c3fccd27b7026a74700d65bc6daf",
+      "purpose": "ACTIVE_COMPLETE_RESPONSE_CAPTURE_CONTROL"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_TYPED_WEEKLY_RECONCILIATION_QA_20261016T023112Z_AUDIT.md",
+      "blob": "df80a11164b4c4efed7e4bc4a5fa2788c8e98fff",
+      "purpose": "CURRENT_TYPED_PUBLICATION_REPAIR_QA: local107checks and accepted-archive frozen invariant; saved/read-back manual correction; see terminal closure for CI outcome"
+    },
+    {
+      "path": "evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md",
+      "blob": "ee15138c2ed397fb0e393eb6af9e6a2038a483c4",
+      "purpose": "ACTIVE_NEUTRAL_V1_V2_AND_BOUNDED_CONDITIONAL_V3_CONTROL: live actual clock strict; saved QA separate; WAIT/BETNOW unsupported"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_MONITOR_COMPILER_INTEGRATION_QA_20261016T025016Z_AUDIT.md",
+      "blob": "fc0f8f228fb1558198f087a7e3236151662351eb",
+      "purpose": "CURRENT_MONITOR_COMPILER_INTEGRATION_QA: existingtaskpromptandmanualCLIverified;schedulesunchanged;actualscheduledruntimeunproved"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_MONITOR_COMPILER_INTEGRATION_QA_20261016T025016Z_TYPED_EVENING_HANDOFF_ADDENDUM.md",
+      "blob": "9820a200d00e775d7f6f7a6e0bfa45d76bfb3fdf",
+      "purpose": "CURRENT_TYPED_EVENING_HANDOFF_QA: ownidentityV2EveningtoMonitortestsandtwoexistingtaskpromptintegration;naturaladoptionpending"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_DEADLINE_PRIMARY_SECTION_QA_20261016T025952Z_AUDIT.md",
+      "blob": "84b89f4771495eb1bdc9c9780f96af8aec665d90",
+      "purpose": "CURRENT_DEADLINE_PRIMARY_SECTION_QA: reproduceddeadlinebypassandFridayprimarycorrection;81localchecks;readterminalclosureforindependentCI"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_TYPED_HISTORY_QA_20261016T031417Z_AUDIT.md",
+      "blob": "efb701860ec4f7b2c5cf001f89ab76fd6f747b8d",
+      "purpose": "CURRENT_TYPED_HISTORY_CONTINUITY_QA: omission/duplicate/unknownhistoryrejected;125localchecksandindependentCI;manualonly;naturaladoptionpending"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-16_1301CT.md",
+      "blob": "441ec2a74dae91804b602ae8f6cfb1942f6545c7",
+      "purpose": "HISTORICAL_HOT_SHEET: immutable Friday13:01CT52INCONCLUSIVE10PASS source/display; superseded prospectively by manual1938CT correction"
+    },
+    {
+      "path": "evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261016T180051Z.md",
+      "blob": "080ef7be020bbaa6a41e5349d95f28758d25774b",
+      "purpose": "HISTORICAL_COMPLETE_RESPONSE_CAPTURE: Friday13:00CT source retained, not current fresh retrieval"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261016T175851Z_RUN_STARTED.md",
+      "blob": "388a73d66a515190d852799ce303e1a3896eb09c",
+      "purpose": "cycle observability start marker;not completion evidence"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_HOT_SHEET_READINESS_QA_20261016T235756Z_AUDIT.md",
+      "blob": "b2d8a6f9c7b6fecb61e85bea8ad4f12c3f4181e9",
+      "purpose": "CURRENT_RECOMMENDATION_DECOUPLING_QA:532localtests;independentCISUCCESS;fourpromptsupdated;schedulesunchanged;naturaladoptionpending"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_HOT_SHEET_READINESS_QA_20261016T235756Z_READINESS.json",
+      "blob": "7158c485b4fb5e2775fa123ae4659f3fae70f93a",
+      "purpose": "CURRENT_READ_ONLY_READINESS_DIAGNOSTIC:52open;9originalexclusions;3elapsedFridayquotes;noCaesarsrecommendationblock"
+    },
+    {
+      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
+      "blob": "528f2be56d2eb61bb37625b94ad40686be63346b",
+      "purpose": "ACTIVE_CONSENSUS_AND_VENUE_CONTROL:CaesarsNOTrequiredforrecommendations;sourceandlimitprotectionsunchanged"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_MARKET_SOURCE_DISCOVERY_QA_20261017T002257Z_AUDIT.md",
+      "blob": "e86be891bb0140015cf38d1fdc953869c7796f3a",
+      "purpose": "LATEST_STRUCTURED_ODDS_SOURCE_DISCOVERY: actual feed access USER_CHOICE_REQUIRED; docs only, clock qualification OPEN"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "blob": "9f85dc323c88773510f4c407df043dc3b4eaa1ac",
+      "purpose": "CURRENT_DURABLE_ACTION_REGISTER: source access/clock-profile gate and corrected boundedV3 navigation"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_CONSENSUS_IDENTITY_QA_20261017T002939Z_AUDIT.md",
+      "blob": "afe95f41ffc16bb83df149c3d1fb722d4e63fbec",
+      "purpose": "LATEST_CONSENSUS_IDENTITY_QA: test-before-fix and existingCI proof;13bounded saved-deadline exceptions; natural/source readiness OPEN"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-16_1938CT.md",
+      "blob": "682e542d77d18d3e7a6b9b9bd46714bd3a01d761",
+      "purpose": "CURRENT_HOT_SHEET: user-directedmanual1938CT;23PASS39INCONCLUSIVE62exactonce;Saturdayafternoonprimary;notnaturalproducerproof"
+    },
+    {
+      "path": "evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261017T003625Z.md",
+      "blob": "6bce08347e8b24ae45f5df2317028ad216f37e94",
+      "purpose": "CURRENT_COMPLETE_RESPONSE_CAPTURE: actual003625Z recoveredCBS62headers124teamrows;fallbackonly;noFinal/Openingestion"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_SATURDAY_MORNING_NO_BET_REVIEW_20261017T003831Z.json",
+      "blob": "9ac2326db7dd369260285c7fcab7d57507e0266f",
+      "purpose": "CURRENT_MANUAL_DUE_REVIEW:13prospectiveNO BETdecisions;8originalmodeledflags5exclusions;notfullavailability/edgeacceptance"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_PRESENTATION_RECONCILIATION_20261017T003530Z_AUDIT.md",
+      "blob": "4c113cfa148fa9b17d2dbdf405feb8ff3efbaf60",
+      "purpose": "LATEST_MANUAL_RECONCILIATION_AUDIT:actualsource/typedproducer/archivedfrozenchecks;13deadlineexceptionsprospectivelyresolved;naturalusepending"
+    }
+  ]
+}
+```
