@@ -1,0 +1,68 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401858263",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-10-17T13:57:26.783858Z",
+  "original_lineage_blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "home",
+  "rationale": "Qualitative controlled Beta: Miami -20.5 or better at -110 or better. Original Miami -27.7 is independently supported by the AP-reported top-ranked offense facing a weak FSU defense and the reviewed official ACC availability report. Rivalry/backdoor and Miami absences remain material risks; no calibrated EV claimed.",
+  "model_review": "Original accepted FIRST_FROZEN Miami -27.7/60.8/0.949home retained unchanged;7.2point raw spread disagreement is context only, not ATS probability or EV. Current AP matchup and ACC absences independently reviewed.",
+  "material_sources": [
+    {
+      "url": "https://www.espn.com/college-football/preview/_/gameId/401858263",
+      "retrieved_at": "2026-10-17T13:54:09Z",
+      "finding": "Response recovered by this bound, not exact retrieval. AP October15 preview: Miami leads offense, FSU weak FBS-adjusted defense; rivalry/backdoor concern retained."
+    },
+    {
+      "url": "https://theacc.com/sports/2025/8/28/availability-reporting-football.aspx",
+      "retrieved_at": "2026-10-17T13:54:09Z",
+      "finding": "Response recovered by this bound. Official Friday8pmET report:Miami Moore/Brown/Antoine/Frederique/Buchanan/Gilbert OUT;FSU multiple defensive absences,Desir/Bowling probable. No final-game healthy claim; no Mensah questionable designation in this report. Official matchup confirms7pmET kickoff."
+    }
+  ],
+  "uncertainty": "Qualitative Beta only; frozen September26 opinion may be stale in football terms; rivalry/backdoor risk, six Miami absences including an OL, unknown bookmaker update time and unverified casino offer. Any new material QB/availability news requires reassessment before execution.",
+  "decision_rule": "Existing v1.237 qualitative controlled Beta and October9 full-review practice, clarified by user-directed October17 completion control: require original eligible prediction, identified current public benchmark, independently supportive football/material review and explicit no-chase limits; discretionary judgment, not a universal point-gap or calibrated EV rule.",
+  "source_qualification": "DraftKings explicitly named on ESPN and linked for exact Miami full-game spread selection. One retrieval-only public book benchmark; no consensus, update-time or execution claim.",
+  "market_reference": {
+    "game_id": "401858263",
+    "market": "SPREAD",
+    "selection": "home",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-10-17T23:00:00Z",
+    "kickoff_source_url": "https://theacc.com/sports/2025/8/28/availability-reporting-football.aspx",
+    "collection_start": "2026-10-17T13:54:09Z",
+    "collection_end": "2026-10-17T13:54:22Z",
+    "clock_semantics": "RESPONSE_RECOVERED_BY",
+    "quotes": [
+      {
+        "game_id": "401858263",
+        "market": "SPREAD",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "operator_evidence_url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226106%3Foutcomes%3D0HC84998461N2050_1",
+        "source_url": "https://www.espn.com/college-football/odds",
+        "retrieved_at": "2026-10-17T13:54:22Z",
+        "offer_updated_at": null,
+        "line": -20.5,
+        "price": -105
+      }
+    ]
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "home",
+    "line": -20.5,
+    "minimum_price": -110,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-10-17T18:00:00Z",
+  "planning_cutoff_utc": "2026-10-17T22:00:00Z",
+  "cutoff_basis": "Preserves existing13CT reconciliation and17CT planning cutoff, one hour before official18CT kickoff. No trip invented; require posted line/price and material-news recheck before any user execution. -110 is a prospective conservative discretionary maximum, not fitted or expected-value-derived.",
+  "execution_window": {
+    "start_utc": "2026-10-17T13:57:26.783858Z",
+    "end_utc": "2026-10-17T22:00:00Z"
+  }
+}
