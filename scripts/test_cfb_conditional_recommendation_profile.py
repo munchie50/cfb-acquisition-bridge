@@ -149,6 +149,16 @@ class ConditionalTests(unittest.TestCase):
         with self.mocked(),self.assertRaisesRegex(ValueError,'binding mismatch'):
             gate.selected_block(original+packet(self.d,gate.DECISION_TAG),gate.DECISION_TAG,gate.WEEKLY_DECISION_SCHEMAS,gate.clock(AT))
 
+    def test_intervening_pass_cannot_reset_original_conditional_limits(self):
+        prior=self.reconsideration_fixture()
+        first=copy.deepcopy(self.d);first.update(cycle_id='CFB_MARKET_MONITOR_20261017T000000Z',as_of_utc='2026-10-17T00:00:00Z')
+        middle=copy.deepcopy(first);middle.update(cycle_id='CFB_MARKET_MONITOR_20261017T000300Z',as_of_utc='2026-10-17T00:03:00Z')
+        middle['rows']=[prior if r['game_id']==prior['game_id'] else r for r in middle['rows']]
+        self.target['acceptable_number']['line']=15
+        content=packet(first,gate.DECISION_TAG)+packet(middle,gate.DECISION_TAG)+packet(self.d,gate.DECISION_TAG)
+        with self.mocked(),self.assertRaisesRegex(ValueError,'historical original conditional limits'):
+            gate.selected_block(content,gate.DECISION_TAG,gate.WEEKLY_DECISION_SCHEMAS,gate.clock(AT))
+
     def retrieval_only_review(self):
         self.review['schema']='CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2'
         ref=self.review['market_reference']
