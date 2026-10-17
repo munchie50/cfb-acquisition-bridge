@@ -38,6 +38,11 @@ on:
       - 'scripts/test_cfb_cbs_full_board_normalizer.py'
       - 'evidence/scheduler_qa/CFB_CBS_FULL_BOARD_TABLES_20261014T225920Z.md'
       - 'scripts/cfb_neutral_publication_gate.py'
+      - 'scripts/cfb_hot_sheet_readiness.py'
+      - 'scripts/cfb_consensus_reference.py'
+      - 'scripts/test_cfb_consensus_reference.py'
+      - 'scripts/test_cfb_hot_sheet_readiness.py'
+      - 'evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md'
       - 'scripts/cfb_neutral_weekly_reconciliation.py'
       - 'scripts/test_cfb_neutral_weekly_reconciliation.py'
       - 'scripts/cfb_neutral_publication_legacy_replay.py'
@@ -80,6 +85,7 @@ jobs:
       contents: read
       actions: read
     steps:
+      # Completeness diagnostics cannot promote bets or verify venue offers.
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -88,6 +94,10 @@ jobs:
           python-version: '3.12'
       - name: Exercise complete CBS table capture and incomplete-response rejection
         run: python -m unittest discover -s scripts -p test_cfb_cbs_full_board_normalizer.py
+      - name: Exercise recommendation versus venue readiness separation
+        run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_readiness.py
+      - name: Exercise descriptive consensus source and price boundaries
+        run: python -m unittest discover -s scripts -p test_cfb_consensus_reference.py
       - name: Normalize retained real full-board capture without operational mutation
         run: python scripts/cfb_cbs_full_board_normalizer.py --markdown evidence/scheduler_qa/CFB_CBS_FULL_BOARD_TABLES_20261014T225920Z.md --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json --recovered-by 2026-10-14T22:59:20Z
       - name: Exercise confirmed funding deduplication and transaction-type boundaries
