@@ -102,6 +102,7 @@ def display(row, market_row, model, as_of):
     limit = r['acceptable_number']
     number = '' if limit['line'] is None else f"{limit['direction']} {limit['line']:g}; "
     conditions = f"{r['selection']} {r['market']}; {number}minimum price {limit['minimum_price']:+d}; valid until {r['planning_cutoff_utc']}; VENUE_CONFIRMATION_PENDING; not a placed bet"
+    conditions += '; uncertainty: '+r['uncertainty']
     context = f"REVIEW-EVIDENCED non-Caesars reference: {benchmark['operator_count']} operators; points {benchmark['reference_points']}; dispersion {benchmark['points_range']}; boundary {r['market_reference']['collection_end']}; source truth independently reviewed, not certified by renderer"
     context += '; prices at reference line '+str(benchmark['exact_reference_line_price_range'])+'; '+benchmark['price_comparison']
     for q in benchmark['constituents']:

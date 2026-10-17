@@ -168,6 +168,8 @@ class ConditionalTests(unittest.TestCase):
 
     def test_normal_compiler_and_replay_do_not_require_caesars(self):
         # Accepted qualified schedule persists only when a new source clock agrees.
+        self.source['kickoff_utc']=self.source['kickoff_utc'].replace('Z','+00:00')
+        self.review['market_reference']['kickoff_utc']=self.source['kickoff_utc']
         base_m=copy.deepcopy(self.m);base_d=copy.deepcopy(self.d)
         for p in (base_m,base_d):p.update(cycle_id='CFB_MARKET_MONITOR_20261017T000100Z',as_of_utc='2026-10-17T00:02:00Z')
         base_d['schema']=gate.WEEKLY_DECISION_SCHEMA

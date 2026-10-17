@@ -51,7 +51,7 @@ def advance(market,decision,capture,lineage,cycle,as_of,recovered_by,decision_ro
     for game in board['games']:
         row=byid[game['game_id']]
         if game['temporal_status']=='FUTURE_AT_CAPTURE':
-            if row['kickoff_status']!='QUALIFIED' or row['kickoff_utc']!=game['source_kickoff_utc']:
+            if row['kickoff_status']!='QUALIFIED' or gate.clock(row['kickoff_utc'])!=gate.clock(game['source_kickoff_utc']):
                 row.update(kickoff_utc=game['source_kickoff_utc'],kickoff_source_url=URL,kickoff_status='RETAINED_UNVERIFIED')
             apply_offer(row,board_offer(game,recovered_by),as_of)
         else:
