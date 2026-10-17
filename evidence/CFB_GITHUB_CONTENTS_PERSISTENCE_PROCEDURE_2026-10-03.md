@@ -151,3 +151,12 @@ Before writing the complete proposed index:
 
 Demonstrated current repair: complete local proposal validated before update,20navigation assertions preserve invalid-active-history, duplicate/reversed-clock, rejected-tail and no-active-recovery rejection. Strict reader unchanged. Full independent GitHub/current pointer reconciliation remains separately required before closure. Future producer pre-write use remains DEMONSTRATION_PENDING; no broad scheduler/rejection class closure.
 Scientific/Champion/model/task schedule effect NONE.
+
+
+## October17 complete recovery-consumer preflight
+
+Before appending a new cfb-frontier-json checkpoint, recover the previous complete checkpoint and all current consumer requirements. A new checkpoint replaces navigation as a whole; unchanged money/weekly/source references are not inherited automatically. Reconcile required references explicitly, preserving exact hashes and active role uniqueness; do not guess a missing reference from filenames.
+
+Run `python scripts/cfb_recovery_consumer_preflight.py --index <complete-proposed-index> --repository-root <recovered-repository>` at the actual clock BEFORE the index write. It verifies every declared pointer against recovered bytes, the currently qualified money/weekly-source consumers and current sheet/decision binding. Any omission, stale hash, missing/ambiguous current role or source-binding error blocks the navigation write; repair the proposal, never weaken the guard. This bounded preflight uses current qualified Week7/October11-review dependencies; separately qualify a changed weekly consumer rather than carrying this boundary into a different week by assumption.
+
+After fresh-SHA update/readback, repeat the preflight on independent readback bytes and require the existing full Hot Sheet workflow result before claiming integrated validation. If runtime/recovered dependencies are unavailable, report incomplete verification. Preflight is navigation integration only: not market freshness, model acceptance, earned recommendations, current operational readiness or RUN_PASS. Existing two-phase closure requirements and historical failure preservation remain unchanged.
