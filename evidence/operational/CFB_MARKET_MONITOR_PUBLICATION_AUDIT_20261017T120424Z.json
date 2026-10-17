@@ -1,0 +1,128 @@
+{
+  "schema": "CFB_MARKET_MONITOR_PUBLICATION_AUDIT_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261017T120424Z",
+  "as_of_utc": "2026-10-17T12:08:50Z",
+  "runtime": {
+    "python": "3.12.14",
+    "supported": true,
+    "normal_advance": true,
+    "bootstrap_saved": false
+  },
+  "source_capture": {
+    "path": "evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261017T120424Z.md",
+    "blob": "126c85e2ce308bbd2d3073a89467aa3ca0b6dab7",
+    "sha256": "fd5c6df7dfa3864a286da9a6dd7135b0131c9940636bdab57b7bf0ada44a9f47",
+    "bytes": 182189,
+    "retrieval_id": "01a149c2-5664-70b7-a5ec-4b761d8e1ba7",
+    "response_recovered_by_utc": "2026-10-17T12:07:35Z",
+    "qualification": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+    "consensus": "CONSENSUS_UNAVAILABLE",
+    "caesars": "UNVERIFIED",
+    "executability": "UNVERIFIED"
+  },
+  "compiler": {
+    "verdict": "VALIDATED_PROPOSALS_ONLY_NOT_PERSISTED",
+    "games": 62,
+    "market": {
+      "baseline_blob": "1f1e184ef4affe18ac95069972ff3ad126a1898f",
+      "refetched_blob": "1f1e184ef4affe18ac95069972ff3ad126a1898f",
+      "proposal_blob": "210e16209b064f7acadc9bb86772de845668e324",
+      "baseline_bytes": 799850,
+      "delta_bytes": 107305,
+      "proposal_bytes": 907155,
+      "delta_sha256": "9e8422b361dd4c6ea8bdea9e319f1b881e5be067524c6a04692ad66d55f560d5",
+      "operation": "update_file",
+      "tool": "GitHub Contents API",
+      "attempt_count": 1,
+      "observed_error_classification": "NONE"
+    },
+    "decision": {
+      "baseline_blob": "edac8c2d1893bb2c66bcc0af58cb26fb4375f6cb",
+      "refetched_blob": "edac8c2d1893bb2c66bcc0af58cb26fb4375f6cb",
+      "proposal_blob": "8eba1865589019028888297766f5f3482da76134",
+      "baseline_bytes": 318885,
+      "delta_bytes": 45555,
+      "proposal_bytes": 364440,
+      "delta_sha256": "d3c2fb1d241e4e824c446f7144505f0deb358dc184e1d12b0c2f9ce23a7f8058",
+      "operation": "update_file",
+      "tool": "GitHub Contents API",
+      "attempt_count": 1,
+      "observed_error_classification": "NONE"
+    }
+  },
+  "deadline_review": {
+    "path": "evidence/operational/CFB_WEEK7_SATURDAY_0700_DEADLINE_REVIEW_20261017T120424Z.json",
+    "blob": "9fcdf0e2ca839cbd2f823ade17976f142a4abffa",
+    "resolved_pass": 18,
+    "deadline_extended": false,
+    "forced_bet": false,
+    "caesars_was_decision_reason": false
+  },
+  "current_decisions": {
+    "PASS": 41,
+    "INCONCLUSIVE": 21,
+    "CONDITIONAL": 0,
+    "WAIT": 0,
+    "BET_NOW": 0,
+    "BET_EARLY": 0,
+    "overdue": 0
+  },
+  "publication": {
+    "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-17_0708CT.md",
+    "blob": "b8a3b3627201a99fe13d7f758045dd48a0d66e3a",
+    "sha256": "1db25e3564b3c0e2923a0277abebdb4ca4575603d87989d645ecf2230edd4459",
+    "bytes": 107356,
+    "characters": 106872,
+    "whole_view_verdict": "PASS_NEUTRAL_CANONICAL_PRESENTATION_ONLY",
+    "decision_binding": "PASS_SUPPLIED_CURRENT_DECISION_BINDING_ONLY",
+    "games": 62,
+    "duplicates": 0,
+    "section_counts": {
+      "TUESDAY": 2,
+      "WEDNESDAY": 2,
+      "THURSDAY": 3,
+      "FRIDAY": 3,
+      "SATURDAY_MORNING": 13,
+      "SATURDAY_AFTERNOON": 17,
+      "SATURDAY_EVENING_NIGHT": 22,
+      "UNRESOLVED_KICKOFF": 0
+    },
+    "operation": "create_file",
+    "tool": "GitHub Contents API",
+    "attempt_count": 1,
+    "observed_error_classification": "NONE"
+  },
+  "scorecard": {
+    "baseline_blob": "4380a04b9ce285288861e910fc7b754f977529d1",
+    "refetched_blob": "4380a04b9ce285288861e910fc7b754f977529d1",
+    "proposal_blob": "fbea94d5836388d3afd6c571b24409135fe9c6ce",
+    "operation": "update_file",
+    "tool": "GitHub Contents API",
+    "attempt_count": 1,
+    "observed_error_classification": "NONE",
+    "scored_friday_games": 2,
+    "excluded_unscored_games": 1,
+    "settled_wagers": 0
+  },
+  "navigation": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md",
+    "baseline_blob": "118b64821673fda532d5aa5a296f921ce4497654",
+    "refetched_blob": "118b64821673fda532d5aa5a296f921ce4497654",
+    "proposal_blob": "959e4fe523cd3bcb7acc0b0c2f4b7d91f1d4a01b",
+    "reader_status": "NAVIGATION_ONLY_NOT_AUTHORITY",
+    "selected_as_of_utc": "2026-10-17T12:08:50Z",
+    "operation": "update_file",
+    "tool": "GitHub Contents API",
+    "attempt_count": 1,
+    "observed_error_classification": "NONE"
+  },
+  "unavailable_fields": [
+    "qualified multi-book consensus constituent identities/lines/prices/clocks/count/dispersion",
+    "independently verified Caesars execution offers",
+    "independently verified executable offers",
+    "full-slate safely attributable material availability transitions",
+    "full-slate venue-specific weather qualification"
+  ],
+  "scientific_effect": "NONE",
+  "schedule_effect": "NONE"
+}
