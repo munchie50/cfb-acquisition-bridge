@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
     paths:
+      - 'scripts/cfb_recovery_consumer_preflight.py'
+      - 'scripts/test_cfb_recovery_consumer_preflight.py'
       - 'scripts/cfb_hot_sheet_kickoff_section_static_gate.py'
       - 'scripts/cfb_hot_sheet_production_section_gate.py'
       - 'scripts/test_cfb_hot_sheet_production_section_gate.py'
@@ -110,6 +112,10 @@ jobs:
         run: python scripts/cfb_cbs_full_board_normalizer.py --markdown evidence/scheduler_qa/CFB_CBS_FULL_BOARD_TABLES_20261014T225920Z.md --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json --recovered-by 2026-10-14T22:59:20Z
       - name: Exercise confirmed funding deduplication and transaction-type boundaries
         run: python -m unittest discover -s scripts -p test_cfb_money_ledger_guard.py
+      - name: Exercise complete recovery consumer dependency boundaries
+        run: python -m unittest discover -s scripts -p test_cfb_recovery_consumer_preflight.py
+      - name: Validate complete current recovery consumer bindings
+        run: python scripts/cfb_recovery_consumer_preflight.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md
       - name: Validate selected money record and its historical execution snapshot
         run: |
           PYTHONPATH=scripts python -c 'import sys; from test_cfb_week7_opening_display_gate import snapshot; sys.stdout.write(snapshot("evidence/operational/CFB_EXECUTION_LEDGER.md","75caee4052e02ea7d2453d1d37fd3866e13ecc07"))' > "$RUNNER_TEMP/cfb_funding_execution_snapshot.md"
