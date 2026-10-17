@@ -96,6 +96,59 @@ class ConditionalTests(unittest.TestCase):
         for r in self.d['rows']:r.pop('review_ref')
         self.reject()
 
+    def reconsideration_fixture(self):
+        self.retrieval_only_review()
+        prior=copy.deepcopy(self.target)
+        prior.update(state='PASS',reason='Earlier evidence-limited PASS',review_ref=None,
+            state_recorded_at_utc='2026-10-17T00:01:00Z',state_evidence='EARLIER_TEST_CYCLE',
+            acceptable_number=None,execution_window=None,cutoff_authority='UNVERIFIED')
+        self.review['schema']='CFB_PROSPECTIVE_RECONSIDERATION_REVIEW_V3'
+        self.review['reconsideration']={'prior_row_blob':gate.blob(json.dumps(prior,sort_keys=True,separators=(',',':'))),
+            'reason':'New identified benchmark and material review complete the earlier missing evaluation'}
+        return prior
+
+    def test_explicit_prospective_reconsideration_preserves_prior_pass(self):
+        prior=self.reconsideration_fixture();unchanged=copy.deepcopy(prior)
+        with self.mocked():profile.reconsideration(self.target,prior,AT)
+        self.assertEqual(prior,unchanged)
+
+    def test_reconsideration_requires_exact_prior_row_binding(self):
+        prior=self.reconsideration_fixture();prior['reason']='Different earlier decision'
+        with self.mocked(),self.assertRaises(ValueError):profile.reconsideration(self.target,prior,AT)
+
+    def test_ordinary_review_still_cannot_reopen_pass(self):
+        prior=self.reconsideration_fixture();self.review['schema']=profile.RETRIEVAL_REVIEW_SCHEMA
+        with self.mocked(),self.assertRaises(ValueError):profile.reconsideration(self.target,prior,AT)
+
+    def test_reconsideration_cannot_reuse_old_source_or_erase_limits(self):
+        prior=self.reconsideration_fixture();prior['state_recorded_at_utc']='2026-10-17T00:04:10Z'
+        self.review['reconsideration']['prior_row_blob']=gate.blob(json.dumps(prior,sort_keys=True,separators=(',',':')))
+        with self.mocked(),self.assertRaises(ValueError):profile.reconsideration(self.target,prior,AT)
+        prior=self.reconsideration_fixture();prior['acceptable_number']={'existing':'limit'}
+        self.review['reconsideration']['prior_row_blob']=gate.blob(json.dumps(prior,sort_keys=True,separators=(',',':')))
+        with self.mocked(),self.assertRaises(ValueError):profile.reconsideration(self.target,prior,AT)
+
+    def test_reconsideration_cannot_reopen_expired_cutoff(self):
+        prior=self.reconsideration_fixture();prior['planning_cutoff_utc']='2026-10-17T00:05:00Z'
+        self.review['reconsideration']['prior_row_blob']=gate.blob(json.dumps(prior,sort_keys=True,separators=(',',':')))
+        with self.mocked(),self.assertRaises(ValueError):profile.reconsideration(self.target,prior,AT)
+
+    def test_reconsideration_full_render_still_requires_qualified_review(self):
+        self.reconsideration_fixture()
+        with self.mocked():gate.render(*self.args())
+
+    def test_history_accepts_only_bound_reconsideration_and_keeps_old_packet(self):
+        prior=self.reconsideration_fixture()
+        first=copy.deepcopy(self.d);first.update(cycle_id='CFB_MARKET_MONITOR_20261017T000300Z',as_of_utc='2026-10-17T00:03:00Z')
+        first['rows']=[prior if r['game_id']==prior['game_id'] else r for r in first['rows']]
+        original=packet(first,gate.DECISION_TAG)
+        with self.mocked():result=gate.selected_block(original+packet(self.d,gate.DECISION_TAG),gate.DECISION_TAG,gate.WEEKLY_DECISION_SCHEMAS,gate.clock(AT))
+        self.assertEqual(next(r for r in result['rows'] if r['game_id']==prior['game_id'])['state'],'CONDITIONAL')
+        self.assertEqual(first['rows'][next(i for i,r in enumerate(first['rows']) if r['game_id']==prior['game_id'])],prior)
+        self.review['reconsideration']['prior_row_blob']='0'*40
+        with self.mocked(),self.assertRaisesRegex(ValueError,'binding mismatch'):
+            gate.selected_block(original+packet(self.d,gate.DECISION_TAG),gate.DECISION_TAG,gate.WEEKLY_DECISION_SCHEMAS,gate.clock(AT))
+
     def retrieval_only_review(self):
         self.review['schema']='CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2'
         ref=self.review['market_reference']
