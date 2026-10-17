@@ -8639,3 +8639,166 @@ Future CFB health/QA reports must identify Big Nine as PAUSED / OUT OF SCOPE; mi
   ]
 }
 ```
+
+
+## October17 09:52 CT user-directed current Hot Sheet refresh
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-17T14:55:38.646607Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Navigation only; recover exact detailed authority. User-directed manual Hot Sheet refresh under unchanged evaluation rules; no routine/model/scientific promotion.",
+    "Fresh CBS complete62game/124team-row capture;52future games independently matched to DraftKings-labelled ESPN board. Original62first observations and61closedPASS decisions preserved. This is a fresh board plus activeMiami review, not a claim to have reopened or newly researched every priorPASS.",
+    "Current62game HotSheet:61PASS1CONDITIONAL0INCONCLUSIVE. Miami -20.5orbetter at -110orbetter unchanged. Direct FanDuel full-game event -20.5(-105) meets limits; ESPN/DraftKings -19.5(-115) fails price limit. Same-operator FanDuel team aggregate -20.5(-110) retained as conflicting display, event-specific selection used; not consensus or verifiedcasinooffer.",
+    "Fresh officialACC Miami-FSU report still FridayOctober16 8pmET:sameMiami sixOUT; no newQBdesignation observed, not finalhealthconfirmation. Fresh AP preview body unchanged. NWS nearby point forecast issuedOct17 04:02EDT addsheavy-rain/thunderstorm and gust risk, not exactstadiumconditions. QualitativeBeta retained with weather/material/postedoffer recheck beforeexecution; original13CT reconciliation/17CTcutoff/18CTofficialkickoff preserved.",
+    "Market canonical now exceeds1MiB. GitHub fetch_file at currentbranch and exactcommit returned correctblobSHA but emptycontent; raw fetch reported file-too-large/unsupported. Supported github.fetch_blob by independently recoveredSHA returned exactfullcontent and matched proposal. For recovery, do not interpret emptycontent as emptyfile or successfulreadback:use fetch_file metadataSHA then fetch_blob and verify exacthash; gitshow exactacceptedcommit is also read-only evidence. No write retry, history deletion or source/state weakening.",
+    "Actual compiler/savedwholeview/readiness checked; independent exactcanonical/sheetreadback complete. Final coherent recoverypreflight/fullCI and separate terminal closure govern manualruncompletion; natural scheduled use remains unproved. Readiness alone is not sourcefreshness or bettingacceptance.",
+    "Original51predictions11exclusions153frozennumbers, acceptedREFRESH separate, execution/money/scorecard unchanged. No wager,stake,deadlineextension,thresholdchange or scheduledtaskchange in thisrefresh.",
+    "BigNine remainsPAUSED until explicituserresumption; CFBonlyHealth andSaturday/SundayQA retained. Current5\u20137defensibleweeklypick aim is notquota; sameanalyticaldepth. Balancedwholeenginebaseline/crossweekperformanceandcontrolcostbenefit audit remainpending; todayrefreshdoesnotestablishstabilization orprofitability."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "0cea587c59356e11b6207ce464104c969314a9e7",
+      "purpose": "CURRENT_MARKET_STATE:fresh52futuregames;fileover1MiBfetch_fileSHAthenfetch_blobexactcontent"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "e3a043ca7c0cd47f56bd7d706623430a7f77c3d9",
+      "purpose": "CURRENT_DECISION_STATE:61PASS1CONDITIONAL0INCONCLUSIVE;unchangedlimits;freshweatherreview"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
+      "purpose": "CURRENT_EXECUTION_LEDGER:read unchanged;no Week7 established execution"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "fbea94d5836388d3afd6c571b24409135fe9c6ce",
+      "purpose": "CURRENT_SCORECARD:Friday2 authoritative finals joined;AppState-Coastal exclusion unscored"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-17_0952CT.md",
+      "blob": "89b3950847c34b1376ae08775d1a7f5fb64bde7d",
+      "purpose": "CURRENT_HOT_SHEET:current manualrefresh62exactonce61PASS1CONDITIONAL0INCONCLUSIVE"
+    },
+    {
+      "path": "evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261017T144939Z.md",
+      "blob": "2f5ff776e4165a57c0f3adc0cd330450b52981ff",
+      "purpose": "CURRENT_COMPLETE_RESPONSE_CAPTURE:fresh52futuregames62governedCBSfallback;FinalOpenquarantined"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_SATURDAY_0700_DEADLINE_REVIEW_20261017T120424Z.json",
+      "blob": "9fcdf0e2ca839cbd2f823ade17976f142a4abffa",
+      "purpose": "HISTORICAL_MORNING_DEADLINE_REVIEW:18morningNO BETdispositionspreserved;notcompletedfootballreview"
+    },
+    {
+      "path": "evidence/operational/CFB_BETTING_READINESS_20261017T144939Z.json",
+      "blob": "cf6c27ba62fbd250a70a3dbfc3a639dda6b38306",
+      "purpose": "CURRENT_READINESS_DIAGNOSTIC:actualclock;nooverdueorelapsedquotes;notexecutioncertification"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_RUN_STARTED.md",
+      "blob": "c5e6d74205f6127182be84d769f8fdb0fb7d9cae",
+      "purpose": "cycle observability start marker;not completion evidence"
+    },
+    {
+      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
+      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
+      "purpose": "CURRENT_MONEY_LEDGER: independently read and unchanged"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
+      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
+      "purpose": "CURRENT_WEEKLY_REVIEW: acceptedWeek6 learning review;no automatic Champion or Challenger mutation"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
+      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+      "purpose": "accepted original62 target lineage census;51predictions+11exclusions;REFRESH separate"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
+      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
+      "purpose": "HISTORICAL_WEEKLY_REVIEW_SOURCE: exact immutable Health ancestor required by currentR2 carry-forward audit;not latestHealth"
+    },
+    {
+      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
+      "blob": "467e21006cc51fcc46b9577d7f98f301f9e63f84",
+      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October13 exactS0 independently accepted lateOct16CT; source pointer only, not operational model substitution"
+    },
+    {
+      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
+      "blob": "c8daffd209ca1575d057b8d73839fa74998ccce6",
+      "purpose": "ACTIVE_CONSENSUS_AND_VENUE_CONTROL:CaesarsNOTrequiredforrecommendations;sourceandlimitprotectionsunchanged"
+    },
+    {
+      "path": "evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md",
+      "blob": "b29de141c6b88c205f43e337eb16e14b81ec8323",
+      "purpose": "ACTIVE_NEUTRAL_V1_V2_AND_BOUNDED_CONDITIONAL_V3_CONTROL: live actual clock strict; saved QA separate; WAIT/BETNOW unsupported"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_TERMINAL_CANDIDATE.md",
+      "blob": "b76179dddf4ff1982dcc3d50175d110d9df5db89",
+      "purpose": "CURRENT_MORNING_TERMINAL_CANDIDATE: independent completion evidence; scope unchanged"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_RUN_CLOSURE.md",
+      "blob": "9de85515762d611a65a555225a15c244c12ac2fa",
+      "purpose": "CURRENT_MORNING_RUN_CLOSURE: independent completion evidence; scope unchanged"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_HOT_SHEET_RECOVERY_QA_20261017T133946Z_AUDIT.md",
+      "blob": "d4b23ab90ff81ac7427a77c51c404487bf2f2725",
+      "purpose": "LATEST_RECOVERY_CONSUMER_QA: recovery dependency preflight correction; bounded scope; natural next use pending"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "blob": "3c62d9cad114e6c7647a265e2c916f320654dbe7",
+      "purpose": "CURRENT_DURABLE_ACTION_REGISTER:latest5\u20137defensiblepicktarget;thoroughanalysisunchanged;unnecessarycertaintyrejectionreconsidered"
+    },
+    {
+      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
+      "blob": "a58839b8551554a4514afad5dbbf8ff34889115e",
+      "purpose": "ACTIVE_PERSISTENCE_PROCEDURE: recovery dependency preflight correction; bounded scope; natural next use pending"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_COMPLETE_BETTING_REVIEW_20261017T135409Z.json",
+      "blob": "e48bb315221cd3b06152357755ad4c21110f2353",
+      "purpose": "CURRENT_COMPLETE_BETTING_REVIEW:21games63dispositions18originalpredictions3exclusions;source/coverage/footballreasons"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_MIAMI_CONTROLLED_BETA_REFRESH_20261017T144939Z.json",
+      "blob": "b662404763a3e447e7cce8bf28e94073a237bf0f",
+      "purpose": "CURRENT_IMMUTABLE_CONDITIONAL_REVIEW:freshFanDuelreferenceweatherreview;originalMiami-20.5price-110limits"
+    },
+    {
+      "path": "evidence/operational/CFB_HOT_SHEET_REFRESH_REVIEW_20261017T144939Z.json",
+      "blob": "597b9be8b9f3de742986867423793613ab4d2cb4",
+      "purpose": "CURRENT_PUBLICATION_AUDIT:freshboardchangesandmaterialreview;sourceclockmetadata;savedwholeview62"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_ROUTINE_V6_BACK_HALF_CANDIDATE_2026-09-30.md",
+      "blob": "a3de9737fd6047845dcf0e7888ec46f04e5e9fc1",
+      "purpose": "ACTIVE_TEST_ROUTINE_V6_CANDIDATE:completeuserdecisionnotjustcodeQA;v5productionunchanged"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md",
+      "blob": "f72a597d0e9c6723c1104ce045eae9f8131c26b0",
+      "purpose": "ACTIVE_WEEKLY_LEARNING_REVIEW_CONTROL:balanced net-objective impact across all CFB layers and QA; cross-week audit still pending"
+    },
+    {
+      "path": "evidence/operational/CFB_ESPN_DRAFTKINGS_BOARD_20261017T144939Z.md",
+      "blob": "5b6454fa0923253125c62a064dd1394a2031ac6a",
+      "purpose": "CURRENT_IDENTIFIED_ESPN_BOARD_CAPTURE:52futuregameDraftKingsquotes;notconsensus"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_PRESENTATION_RECONCILIATION_20261017T144939Z_RUN_STARTED.md",
+      "blob": "d4c4f38bce3ed99498b117055c0fad6f704027e5",
+      "purpose": "CURRENT_MANUAL_REFRESH_START:observabilityonly;notcompletion"
+    }
+  ]
+}
+```
