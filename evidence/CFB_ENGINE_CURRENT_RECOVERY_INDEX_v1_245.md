@@ -8030,3 +8030,150 @@ The morning navigation advance omitted unchanged dependencies required by existi
   ]
 }
 ```
+
+
+## October17 actual complete betting-review publication
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-17T14:02:34.889212Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Navigation only: recover full detailed authority and exact bytes. User-directed completion under existing v1.237 qualitative controlled-Beta maturity, not model/routine/scientific promotion.",
+    "Completed21previously-open games with63spread/total/moneyline dispositions:1controlled-Beta conditional side,20sidePASS,21totalPASS,21MLPASS;41olderclosedPASS preserved. Full62game display now61PASS1CONDITIONAL0INCONCLUSIVE. Source-limited/excluded no-bets are explicitly distinguished from no-value judgments.",
+    "Miami -20.5orbetter,price-110orbetter;actual DraftKings-labelled ESPN benchmark -20.5(-105),unknown underlying update,notconsensus/notverifiedCaesars. OriginalMiami-27.7 plus independently reviewed AP matchup and officialACC absences support discretionary qualitative Beta with stated model-age/rivalry/backdoor/availability risks. No wager/stake/EV/calibration claim.",
+    "Immutable review persisted/read back before prospective canonical decision.13CT review and17CT final cutoff retained;18CT official kickoff qualified. Recheck actual offer and material news before execution; preserve original line/price limits or PASS without chase.",
+    "Active conditional publisher now supports reviewV2 identified retrieval-only public-book benchmark for qualitative Beta, restoring established October9 practice without requiring full consensus for that lower maturity. Original reviewV1 consensus qualification unchanged. No new task/account/feed/purchase/framework; allfour schedules unchanged.",
+    "Actual-source manual compiler, independent whole-view audit/readbacks and actual14:01Z readiness passed. Final coherent navigation/fullCI and separate terminal closure govern integration completion. Natural scheduled use of this added completion path remains pending; next existing13CT cycle must reconcile original conditional limits and material news.",
+    "Champion v1.193/ProductionRoutinev5/original51predictions11exclusions/153numbers/acceptedREFRESH boundaries unchanged. Current money/execution/scorecard and prior failures remain preserved."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "21f22e64f4e31eacddaf63864760f5d56c30b5c8",
+      "purpose": "CURRENT_MARKET_STATE:freshCBSfullcaptureand21identifiedDraftKings/ESPNretrievalonlyquotes;consensusunavailable"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "49f59e2db876e4eab6f0789f0f81591e58afed41",
+      "purpose": "CURRENT_DECISION_STATE:61PASS1CONDITIONAL0INCONCLUSIVE;41oldPASSunchanged;63newreviewdispositions"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
+      "purpose": "CURRENT_EXECUTION_LEDGER:read unchanged;no Week7 established execution"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "fbea94d5836388d3afd6c571b24409135fe9c6ce",
+      "purpose": "CURRENT_SCORECARD:Friday2 authoritative finals joined;AppState-Coastal exclusion unscored"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-17_0859CT.md",
+      "blob": "201ba6e757d478d7a3d03cab200f9a8d0b3934b9",
+      "purpose": "CURRENT_HOT_SHEET: user-directed actual complete betting review;61PASS1CONDITIONAL0INCONCLUSIVE62exactonce"
+    },
+    {
+      "path": "evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261017T135409Z.md",
+      "blob": "4b804c63b20650dec8f5538db8dae204db42594a",
+      "purpose": "CURRENT_COMPLETE_RESPONSE_CAPTURE:fresh135409Z request/recoveredby135422Z;CBSfallback62games;Final/Openquarantined"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_SATURDAY_0700_DEADLINE_REVIEW_20261017T120424Z.json",
+      "blob": "9fcdf0e2ca839cbd2f823ade17976f142a4abffa",
+      "purpose": "HISTORICAL_MORNING_DEADLINE_REVIEW:18morningNO BETdispositionspreserved;notcompletedfootballreview"
+    },
+    {
+      "path": "evidence/operational/CFB_BETTING_READINESS_20261017T135409Z.json",
+      "blob": "a60ea8b00e0e1b2dcc6087568bcbe9d10aaac645",
+      "purpose": "CURRENT_READINESS_DIAGNOSTIC:actual140101Z;0open1conditional61PASS;nooverdue/elapsedexceptions;notexecutionacceptance"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_RUN_STARTED.md",
+      "blob": "c5e6d74205f6127182be84d769f8fdb0fb7d9cae",
+      "purpose": "cycle observability start marker;not completion evidence"
+    },
+    {
+      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
+      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
+      "purpose": "CURRENT_MONEY_LEDGER: independently read and unchanged"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
+      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
+      "purpose": "CURRENT_WEEKLY_REVIEW: acceptedWeek6 learning review;no automatic Champion or Challenger mutation"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
+      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+      "purpose": "accepted original62 target lineage census;51predictions+11exclusions;REFRESH separate"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
+      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
+      "purpose": "HISTORICAL_WEEKLY_REVIEW_SOURCE: exact immutable Health ancestor required by currentR2 carry-forward audit;not latestHealth"
+    },
+    {
+      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
+      "blob": "467e21006cc51fcc46b9577d7f98f301f9e63f84",
+      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October13 exactS0 independently accepted lateOct16CT; source pointer only, not operational model substitution"
+    },
+    {
+      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
+      "blob": "c8daffd209ca1575d057b8d73839fa74998ccce6",
+      "purpose": "ACTIVE_CONSENSUS_AND_VENUE_CONTROL:CaesarsNOTrequiredforrecommendations;sourceandlimitprotectionsunchanged"
+    },
+    {
+      "path": "evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md",
+      "blob": "b29de141c6b88c205f43e337eb16e14b81ec8323",
+      "purpose": "ACTIVE_NEUTRAL_V1_V2_AND_BOUNDED_CONDITIONAL_V3_CONTROL: live actual clock strict; saved QA separate; WAIT/BETNOW unsupported"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_TERMINAL_CANDIDATE.md",
+      "blob": "b76179dddf4ff1982dcc3d50175d110d9df5db89",
+      "purpose": "CURRENT_MORNING_TERMINAL_CANDIDATE: independent completion evidence; scope unchanged"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_RUN_CLOSURE.md",
+      "blob": "9de85515762d611a65a555225a15c244c12ac2fa",
+      "purpose": "CURRENT_MORNING_RUN_CLOSURE: independent completion evidence; scope unchanged"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_HOT_SHEET_RECOVERY_QA_20261017T133946Z_AUDIT.md",
+      "blob": "d4b23ab90ff81ac7427a77c51c404487bf2f2725",
+      "purpose": "LATEST_RECOVERY_CONSUMER_QA: recovery dependency preflight correction; bounded scope; natural next use pending"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "blob": "b0933ff693529610b15383111486e4f7f56b6290",
+      "purpose": "CURRENT_DURABLE_ACTION_REGISTER: recovery dependency preflight correction; bounded scope; natural next use pending"
+    },
+    {
+      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
+      "blob": "a58839b8551554a4514afad5dbbf8ff34889115e",
+      "purpose": "ACTIVE_PERSISTENCE_PROCEDURE: recovery dependency preflight correction; bounded scope; natural next use pending"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_COMPLETE_BETTING_REVIEW_20261017T135409Z.json",
+      "blob": "e48bb315221cd3b06152357755ad4c21110f2353",
+      "purpose": "CURRENT_COMPLETE_BETTING_REVIEW:21games63dispositions18originalpredictions3exclusions;source/coverage/footballreasons"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_MIAMI_CONTROLLED_BETA_20261017T135409Z.json",
+      "blob": "9c789f9d1c5632adeb256031d3723fa339ea5a9a",
+      "purpose": "CURRENT_IMMUTABLE_CONDITIONAL_REVIEW:commit0a91623b1fdff37b87d8990dd140e7b1e336a873;Miami-20.5price-110;notexecution"
+    },
+    {
+      "path": "evidence/operational/CFB_BETTING_PUBLICATION_AUDIT_20261017T135409Z.json",
+      "blob": "2555b41121b4b55cb9a3f3ca9624ea6b18edee2b",
+      "purpose": "CURRENT_PUBLICATION_AUDIT:independentwholeV3render62games;source/decisiontruthseparatelyreviewed"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_ROUTINE_V6_BACK_HALF_CANDIDATE_2026-09-30.md",
+      "blob": "0bbfc88aa895c5bc771c997094d342746a412fa1",
+      "purpose": "ACTIVE_TEST_ROUTINE_V6_CANDIDATE:completeuserdecisionnotjustcodeQA;v5productionunchanged"
+    }
+  ]
+}
+```
