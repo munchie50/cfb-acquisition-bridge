@@ -1,0 +1,1221 @@
+{
+  "schema": "CFB_NEUTRAL_READINESS_AUDIT_V1",
+  "scope": "READ_ONLY_DIAGNOSTIC_NOT_DECISION_OR_SOURCE_QUALIFICATION",
+  "as_of_utc": "2026-10-17T00:55:28Z",
+  "canonical_cycle": "CFB_EVENING_AVAILABILITY_20261017T005201Z",
+  "canonical_as_of_utc": "2026-10-17T00:55:28Z",
+  "saved_state_validated_at_own_boundary_only": true,
+  "elapsed_current_quote_game_ids": [],
+  "overdue_open_decision_game_ids": [],
+  "market_blob": "1f1e184ef4affe18ac95069972ff3ad126a1898f",
+  "decision_blob": "edac8c2d1893bb2c66bcc0af58cb26fb4375f6cb",
+  "lineage_blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+  "games": 62,
+  "open_games": 39,
+  "preserved_pass": 23,
+  "conditional_recommendations": 0,
+  "recommendation_blocker_counts": {
+    "DECISION_RULE_UNREVIEWED": 39,
+    "LINE_PRICE_LIMITS_MISSING": 39,
+    "MARKET_REFERENCE_MISSING": 39,
+    "MATERIAL_REVIEW_UNREVIEWED": 39,
+    "MODEL_REVIEW_MISSING": 4,
+    "MODEL_REVIEW_UNREVIEWED": 35,
+    "PRACTICAL_CUTOFF_MISSING": 39
+  },
+  "caesars_required_for_recommendation": false,
+  "publication_capability": "CONDITIONAL_V3_SUPPORTED_WAIT_ADAPTER_OPEN",
+  "rows": [
+    {
+      "game_id": "401871067",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401871053",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401871054",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401871068",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401869950",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401862800",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401860923",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401862801",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401869844",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401858493",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401856724",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401858268",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401856720",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401856830",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401856829",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401869957",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401858267",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401862802",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401858491",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401866441",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401858261",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401858488",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401858489",
+      "state": "PASS",
+      "recommendation_blockers": [],
+      "disposition": "PRESERVE_CLOSED_PASS"
+    },
+    {
+      "game_id": "401862803",
+      "game": "Charlotte @ Temple",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T16:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401856725",
+      "game": "The Citadel @ Texas A&M",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T16:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401866442",
+      "game": "Massachusetts @ Buffalo",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T16:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401866443",
+      "game": "Western Michigan @ Central Michigan",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T16:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401858264",
+      "game": "Georgia Tech @ Virginia Tech",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401864522",
+      "game": "Northern Illinois @ Wyoming",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401864524",
+      "game": "UNLV @ Air Force",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401856828",
+      "game": "Arizona State @ Texas Tech",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401856721",
+      "game": "Missouri @ Ole Miss",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401858490",
+      "game": "Penn State @ Michigan",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401856723",
+      "game": "Alabama @ Tennessee",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401856719",
+      "game": "Auburn @ Georgia",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401866444",
+      "game": "Toledo @ Eastern Michigan",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401858266",
+      "game": "North Carolina @ Duke",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401866478",
+      "game": "Akron @ Miami (OH)",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T18:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401862805",
+      "game": "Tulsa @ Rice",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T19:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401869966",
+      "game": "Troy @ Louisiana",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T20:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401860903",
+      "game": "Washington State @ Oregon State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T21:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401858263",
+      "game": "Florida State @ Miami",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401862806",
+      "game": "Kent State @ South Florida",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401856832",
+      "game": "TCU @ Baylor",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401864520",
+      "game": "Nevada @ North Dakota State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401869934",
+      "game": "Arkansas State @ Southern Miss",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401856726",
+      "game": "Arkansas @ Vanderbilt",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401858262",
+      "game": "Elon @ Stanford",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401858494",
+      "game": "Wisconsin @ UCLA",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401858265",
+      "game": "Louisville @ Syracuse",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401856809",
+      "game": "Notre Dame @ BYU",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401856722",
+      "game": "Kentucky @ Oklahoma",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401856831",
+      "game": "Oklahoma State @ Houston",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T22:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401871091",
+      "game": "Louisiana Tech @ UL Monroe",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T23:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401862804",
+      "game": "Navy @ UTSA",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-17T23:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401864523",
+      "game": "San Jos\u00e9 State @ UTEP",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-18T00:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401866445",
+      "game": "Ohio @ Sacramento State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-18T01:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401856833",
+      "game": "Utah @ Colorado",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-18T01:15:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401858269",
+      "game": "Wake Forest @ California",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-18T01:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401860904",
+      "game": "Fresno State @ San Diego State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-18T01:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401864521",
+      "game": "New Mexico @ Hawai'i",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T18:00:00Z",
+      "planning_cutoff_utc": "2026-10-18T01:30:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    },
+    {
+      "game_id": "401858492",
+      "game": "Nebraska @ Oregon",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-17T12:00:00Z",
+      "planning_cutoff_utc": "2026-10-18T02:00:00Z",
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY"
+    }
+  ]
+}
