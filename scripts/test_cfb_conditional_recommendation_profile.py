@@ -96,6 +96,48 @@ class ConditionalTests(unittest.TestCase):
         for r in self.d['rows']:r.pop('review_ref')
         self.reject()
 
+    def retrieval_only_review(self):
+        self.review['schema']='CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2'
+        ref=self.review['market_reference']
+        ref['clock_semantics']='RESPONSE_RECOVERED_BY'
+        ref['quotes']=ref['quotes'][:1]
+        ref['quotes'][0].update(book='DraftKings',operator='DraftKings',offer_updated_at=None,
+            source_url='https://www.espn.com/college-football/odds',
+            operator_evidence_url='https://sportsbook.draftkings.com/gateway?s=example')
+
+    def test_identified_retrieval_only_beta_review_can_publish_without_consensus(self):
+        self.retrieval_only_review()
+        with self.mocked():
+            sheet=gate.render(*self.args());gate.audit(sheet,*self.args())
+        self.assertIn('IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK',sheet)
+        self.assertIn('CONSENSUS_UNAVAILABLE',sheet)
+        self.assertIn('offer-update UNKNOWN',sheet)
+        self.assertIn('VENUE_CONFIRMATION_PENDING',sheet)
+        self.assertNotIn('3 operators',sheet)
+
+    def test_retrieval_only_profile_cannot_accept_unidentified_or_wrong_source(self):
+        for change in ({'operator':'UNIDENTIFIED'},{'book':'Caesars','operator':'Caesars'},
+                       {'source_url':'https://example.org/not-the-identified-book'},
+                       {'operator_evidence_url':'https://example.org/unrelated'}):
+            self.retrieval_only_review();self.review['market_reference']['quotes'][0].update(change);self.reject()
+
+    def test_retrieval_only_profile_requires_one_quote_and_clock_semantics(self):
+        self.retrieval_only_review();self.review['market_reference'].pop('clock_semantics');self.reject()
+        self.retrieval_only_review();self.review['market_reference']['clock_semantics']='BOOK_UPDATE_VERIFIED';self.reject()
+        self.retrieval_only_review();self.review['market_reference']['quotes']*=2;self.reject()
+
+    def test_retrieval_only_profile_preserves_old_consensus_rejections(self):
+        self.review['market_reference']['quotes'][0]['offer_updated_at']=None;self.reject()
+        self.retrieval_only_review();self.review['maturity']='PRODUCTION_QUALIFIED';self.reject()
+
+    def test_retrieval_only_profile_still_requires_material_limits_and_future_kickoff(self):
+        self.retrieval_only_review();self.review['material_sources']=[];self.reject()
+        self.setUp();self.retrieval_only_review();self.review['acceptable_number']['minimum_price']=None;self.reject()
+        self.setUp();self.retrieval_only_review();self.source['kickoff_status']='RETAINED_UNVERIFIED';self.reject()
+
+    def test_retrieval_only_profile_cannot_relabel_known_stale_update(self):
+        self.retrieval_only_review();self.review['market_reference']['quotes'][0]['offer_updated_at']='2026-10-16T00:00:00Z';self.reject()
+
     def test_missing_review_cannot_publish(self):
         with patch.object(profile,'load_review',side_effect=ValueError('missing actual review')),self.assertRaises(ValueError):gate.render(*self.args())
 
