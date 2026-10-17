@@ -14,6 +14,7 @@ from cfb_consensus_reference import identity_key, reference
 SCHEMA = 'CFB_WEEKLY_CONDITIONAL_DECISION_V3'
 REVIEW_SCHEMA = 'CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V1'
 RETRIEVAL_REVIEW_SCHEMA = 'CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2'
+RECONSIDERATION_REVIEW_SCHEMA = 'CFB_PROSPECTIVE_RECONSIDERATION_REVIEW_V3'
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -72,6 +73,35 @@ def load_review(ref):
     return content, committed
 
 
+def reconsideration(row, previous, as_of):
+    """Qualify a new prospective review, never modify the earlier PASS."""
+    if previous.get('state') != 'PASS' or row.get('state') != 'CONDITIONAL':
+        raise ValueError('closed PASS reopened without qualified conditional reconsideration')
+    content, committed_at = load_review(row['review_ref'])
+    r = json.loads(content, object_pairs_hook=gate.unique)
+    if r.get('schema') != RECONSIDERATION_REVIEW_SCHEMA:
+        raise ValueError('closed PASS reopened without explicit reconsideration review')
+    evidence = r.get('reconsideration')
+    gate.keys(evidence, ['prior_row_blob', 'reason'])
+    if evidence['prior_row_blob'] != gate.blob(json.dumps(previous, sort_keys=True, separators=(',', ':'))):
+        raise ValueError('reconsideration prior PASS row binding mismatch')
+    gate.text(evidence['reason'])
+    prior_at = gate.clock(previous['state_recorded_at_utc'])
+    recorded, committed, state_at, now = map(gate.clock, (r['recorded_at_utc'], committed_at, row['state_recorded_at_utc'], as_of))
+    if not prior_at < recorded <= committed <= state_at <= now:
+        raise ValueError('reconsideration must be prospective after prior PASS')
+    if gate.clock(r['market_reference']['collection_start']) <= prior_at:
+        raise ValueError('reconsideration requires newly acquired benchmark after PASS')
+    if not any(gate.clock(s['retrieved_at']) > prior_at for s in r['material_sources']):
+        raise ValueError('reconsideration requires new material review after PASS')
+    limit = previous.get('acceptable_number')
+    if limit is not None and row.get('acceptable_number') != limit:
+        raise ValueError('reconsideration cannot change an established original limit')
+    cutoff = previous.get('planning_cutoff_utc')
+    if cutoff is not None and (now >= gate.clock(cutoff) or row.get('planning_cutoff_utc') is None or gate.clock(row['planning_cutoff_utc']) > gate.clock(cutoff)):
+        raise ValueError('reconsideration cannot reopen expired or extend saved cutoff')
+
+
 def validate(row, market_row, model, as_of):
     content, committed_at = load_review(row['review_ref'])
     r = json.loads(content, object_pairs_hook=gate.unique)
@@ -79,8 +109,14 @@ def validate(row, market_row, model, as_of):
                   'maturity', 'market', 'selection', 'rationale', 'model_review',
                   'material_sources', 'uncertainty', 'decision_rule', 'source_qualification',
                   'market_reference', 'acceptable_number', 'reconciliation_utc',
-                  'planning_cutoff_utc', 'cutoff_basis', 'execution_window'])
-    if r['schema'] not in (REVIEW_SCHEMA, RETRIEVAL_REVIEW_SCHEMA) or r['state'] != 'CONDITIONAL': raise ValueError('unsupported recommendation review/state')
+                  'planning_cutoff_utc', 'cutoff_basis', 'execution_window'] +
+                  (['reconsideration'] if r.get('schema') == RECONSIDERATION_REVIEW_SCHEMA else []))
+    if r['schema'] not in (REVIEW_SCHEMA, RETRIEVAL_REVIEW_SCHEMA, RECONSIDERATION_REVIEW_SCHEMA) or r['state'] != 'CONDITIONAL': raise ValueError('unsupported recommendation review/state')
+    if r['schema'] == RECONSIDERATION_REVIEW_SCHEMA:
+        gate.keys(r['reconsideration'], ['prior_row_blob', 'reason'])
+        gate.text(r['reconsideration']['reason'])
+        if not re.fullmatch(r'[0-9a-f]{40}', r['reconsideration']['prior_row_blob']):
+            raise ValueError('invalid reconsideration prior-row digest')
     if r['game_id'] != row['game_id'] or r['original_lineage_blob'] != gate.LINEAGE_SHA:
         raise ValueError('review game/original-model lineage mismatch')
     if model['first_frozen_status'] != 'PREDICTION': raise ValueError('conditional review cannot replace original model exclusion')
