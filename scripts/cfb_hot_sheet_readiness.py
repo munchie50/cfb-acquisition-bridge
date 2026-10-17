@@ -30,6 +30,38 @@ def assess(review, venue_verified=False):
             'scope': 'COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY'}
 
 
+MARKETS = ('FAVORITE_SPREAD', 'UNDERDOG_SPREAD', 'AWAY_MONEYLINE',
+           'HOME_MONEYLINE', 'OVER', 'UNDER', 'ALTERNATE_SPREADS',
+           'ALTERNATE_TOTALS', 'TEAM_TOTALS', 'PARLAY_SUITABILITY')
+
+
+def review_window(decision, market, as_of):
+    """Keep every state in the review pool until its existing betting cutoff.
+
+    This is work selection, not a new decision/transition rule. Missing timing
+    stays visible as work debt; it never authorizes a late recommendation.
+    Reconciliation deadlines do not silently become final execution cutoffs.
+    """
+    now = gate.clock(as_of)
+    cutoff = decision.get('planning_cutoff_utc')
+    kick = market.get('kickoff_utc')
+    qualified_kick = kick is not None and market.get('kickoff_status') == 'QUALIFIED'
+    bounds = ([gate.clock(cutoff)] if cutoff else [])
+    if qualified_kick:
+        bounds.append(gate.clock(kick))
+    closed = bool(bounds) and min(bounds) <= now
+    issue = ('KICKOFF_REQUIRES_QUALIFICATION' if not qualified_kick else
+             'PRACTICAL_CUTOFF_MISSING' if cutoff is None else None)
+    disposition = ('PREGAME_WINDOW_CLOSED' if closed else
+                   'PASS_FOR_NOW_REEVALUATE' if decision['state'] == 'PASS' else
+                   'REEVALUATE_CURRENT_DECISION')
+    return {'review_required': not closed, 'disposition': disposition,
+            'review_due_by_utc': min(bounds).isoformat().replace('+00:00', 'Z') if bounds else None,
+            'timing_issue': issue,
+            'markets_to_review': list(MARKETS) if not closed else [],
+            'scope': 'REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY'}
+
+
 def audit(market, decision, lineage, as_of):
     """Diagnose the bounded neutral profile from canonical packets, not prose.
 
@@ -58,7 +90,7 @@ def audit(market, decision, lineage, as_of):
         if row['state'] == 'PASS':
             rows.append({'game_id': gid, 'state': 'PASS',
                          'recommendation_blockers': [],
-                         'disposition': 'PRESERVE_CLOSED_PASS'})
+                         'disposition': 'PASS_FOR_NOW_REEVALUATE'})
             continue
         if row['state'] == 'CONDITIONAL':
             rows.append({'game_id': gid, 'state': 'CONDITIONAL',
@@ -84,6 +116,13 @@ def audit(market, decision, lineage, as_of):
                      'planning_cutoff_utc': row['planning_cutoff_utc'],
                      'source_type': (markets[gid]['current'] or markets[gid]['retained'] or {}).get('source_type'),
                      **result})
+    for row in rows:
+        gid = row['game_id']
+        window = review_window(decisions[gid], markets[gid], as_of)
+        row['review_window'] = window
+        if row['state'] == 'PASS':
+            row['disposition'] = window['disposition']
+    review_ids = [r['game_id'] for r in rows if r['review_window']['review_required']]
     return {'schema': 'CFB_NEUTRAL_READINESS_AUDIT_V1',
             'scope': 'READ_ONLY_DIAGNOSTIC_NOT_DECISION_OR_SOURCE_QUALIFICATION',
             'as_of_utc': as_of, 'canonical_cycle': m['cycle_id'],
@@ -99,6 +138,11 @@ def audit(market, decision, lineage, as_of):
             'recommendation_blocker_counts': dict(sorted(counts.items())),
             'caesars_required_for_recommendation': False,
             'publication_capability': 'CONDITIONAL_V3_SUPPORTED_WAIT_ADAPTER_OPEN',
+            'review_required_game_ids': review_ids,
+            'pass_for_now_game_ids': [r['game_id'] for r in rows
+                                     if r['state'] == 'PASS' and r['review_window']['review_required']],
+            'review_schedule': 'EXISTING_CYCLES_PLUS_FINAL_REVIEW_BEFORE_EXISTING_CUTOFF',
+            'review_coverage': 'NOT_CERTIFIED_BY_QUEUE_MEMBERSHIP',
             'rows': rows}
 
 
