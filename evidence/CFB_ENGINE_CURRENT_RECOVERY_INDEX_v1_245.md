@@ -8478,6 +8478,16 @@ The morning navigation advance omitted unchanged dependencies required by existi
 
 ## October17 whole-engine stabilization and balanced learning
 
+
+
+## User-directed Big Nine pause — 2026-10-17 09:34 America/Chicago
+
+Big Nine is PAUSED until the user explicitly resumes it. Pause all Big Nine research, monitoring, recommendations, development, QA, Yahoo/league-state checks and backup/recovery work. Preserve its records and historical failures. CFB is the sole active engine priority. This explicit user direction supersedes older dual-engine responsibilities without changing CFB model, recommendation or execution rules.
+
+Configuration applied and independently read back on 2026-10-17: Health task `6ab4296b60608191a7ebb238d4fa70bd` is now CFB Engine Health with its existing daily 16:30 CT flexible cadence and CFB-only scope. Weekly task `6ab4297470448191b96d8542283c1808` is now CFB Weekly Engine QA; Saturday/Sunday 09:00 CT remain, Tuesday Big Nine mode and recurrence are removed. Existing Market Monitor and Evening Availability prompts, enabled states and schedules are unchanged. Exactly four recurring production tasks remain enabled; Market Monitor remains the sole primary Hot Sheet producer, the other three retain downstream/integrity roles, and no task was added or re-enabled. Disabled diagnostics remain disabled.
+
+Future CFB health/QA reports must identify Big Nine as PAUSED / OUT OF SCOPE; missing private Yahoo evidence must not make CFB incomplete. Preserve genuine CFB defects, unresolved historical cycles and current verification limits. Prior dual-engine reports remain historical evidence, not retroactively upgraded. Resumption requires explicit user direction; no automatic restart. Whole-CFB baseline assessment remains pending; this scope change does not establish stabilization or betting effectiveness.
+
 ```cfb-frontier-json
 {
   "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
