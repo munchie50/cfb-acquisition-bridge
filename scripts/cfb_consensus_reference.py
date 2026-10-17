@@ -10,12 +10,20 @@ from statistics import median
 import cfb_neutral_publication_gate as gate
 
 
+def identity_key(value):
+    """Compare supplied labels without padding/case; never infer ownership aliases."""
+    return gate.text(value).strip().casefold()
+
+
 def reference(packet, as_of):
     gate.keys(packet, ['game_id', 'market', 'selection', 'period',
                        'kickoff_utc', 'kickoff_source_url', 'collection_start', 'collection_end', 'quotes'])
     gate.text(packet['game_id']); gate.text(packet['selection'])
     if packet['market'] not in ('SPREAD', 'TOTAL', 'MONEYLINE') or packet['period'] != 'PREGAME_FULL_GAME':
         raise ValueError('unsupported market/period')
+    selections = ('over', 'under') if packet['market'] == 'TOTAL' else ('away', 'home')
+    if packet['selection'] not in selections:
+        raise ValueError('invalid market selection')
     start, end, now = map(gate.clock, (packet['collection_start'], packet['collection_end'], as_of))
     if not start <= end <= now:
         raise ValueError('invalid/future collection window')
@@ -44,7 +52,7 @@ def reference(packet, as_of):
                 raise ValueError('missing/invalid points line')
         # Book and operator labels must both be checked; don't let a skin label
         # accidentally introduce Caesars into the non-Caesars benchmark.
-        if any(s.casefold().startswith('caesars') for s in (q['book'], q['operator'])):
+        if any(identity_key(s).startswith('caesars') for s in (q['book'], q['operator'])):
             excluded.append({'book': q['book'], 'reason': 'CAESARS_EXCLUDED'}); continue
         if q['offer_updated_at'] is None:
             reasons.add('OFFER_UPDATE_UNKNOWN')
@@ -52,7 +60,7 @@ def reference(packet, as_of):
             updated = gate.clock(q['offer_updated_at'])
             if updated > at: raise ValueError('offer update after retrieval')
             if updated < start: reasons.add('OFFER_UPDATE_OUTSIDE_COLLECTION_WINDOW')
-        operator = q['operator'].casefold()
+        operator = identity_key(q['operator'])
         if operator in eligible and (q['line'], q['price']) != (eligible[operator]['line'], eligible[operator]['price']):
             raise ValueError('conflicting same-operator observations require reconciliation')
         eligible.setdefault(operator, q)
