@@ -9358,3 +9358,203 @@ Future CFB health/QA reports must identify Big Nine as PAUSED / OUT OF SCOPE; mi
   ]
 }
 ```
+
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-17T20:33:11Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Navigationonly; recoverexactdetailedauthority. Userdirectedfullmultimarketreviewaim4–5higherqualitygameswithordinaryriskaccepted, unchangedanalyticaldepth; no quota/model/routinepromotion.",
+    "CurrentHotSheet62exactonce:57PASS5CONDITIONAL0INCONCLUSIVE. RankedqualitativeBeta singles:1Nebraska+6.5price-110;2PennState+6price-110;3Houston-4.5price-110;4AirForceMLminimum-115;5VirginiaTech-8.5price-110. LineorpriceworsemeansPASS,nochase. ActualcasinooffersUNVERIFIED,notplacedbets.",
+    "Full40futuregames at16:01sourceboundary,120spread/total/moneylinedispositions:4spreadselections1moneyline0totals; no coreparlay. Fiveearlygamesretainpracticalcutoff/exclusionno-bets,35latergames assessedusingfresh14previewfetches plusretained21individualearlierreviews; materialreport/forecastdepth concentrated onshortlist, notexhaustivefinalallteamhealthclaim. Missingpreview andoriginalexclusion no-bets remain distinctfromno-valuejudgment.",
+    "Nebraska supportedbybalancedoffense/defenseandOregonMooreOUT; PennStatepoints byMichiganoffensiveinefficiencyandPSpassdefense/discipline; Houston byground/QB/possessionstrength withadversepassingmatchupanddefensiveabsencesexplicitlyweighed. AirForcewin-only byindependentprimaryreplacementQBgroundsuccessandUNLVrushingvulnerability; original0.877notcalibrated andnewQBsamplelimited. VirginiaTechbetteroverallfootball/currentQB andGeorgiaTechabsencesweighedagainstVTlineinjuries,penalties,wind. None isriskfree.",
+    "Miami nowprospectivePASSatobservedDraftKings-19.5(-115)/FanDuel-19.5(-118),outsideoriginalprice-110limit; historical-20.5/price-110reviewpreserved. TCUreserveidea,kickerOUTweakenscloseunderdogcase; UCLAQBofficiallyOUTretainsPASS. Totalsindividuallyconsidered; noneoutrankedcorefive. No verifiedparlayjointprice/probability/capitaldecision, no inventedEV.",
+    "UserdirectedboundedprospectivePASSreconsiderationinstalledinexistingV3publisher/normalcompiler. NewreviewV3bindsexactimmediatelypriorPASSrowGitblobofsortedcompactJSON andmeaningfulnewreviewbasis; freshbenchmark/materialreviewafterPASS, immutablepersistedreviewbeforedecision,qualifiedfuturekickoff,existingcutoffsandanyhistoricaloriginallimitsmandatory. Everyearlierpacketbytepreserved; ordinaryV1/V2reviewcannotreopenPASS; noPASStoINCONCLUSIVE,expiredcutoffresurrection,deadlineextensionorlimitchange. OriginalconditionallimitsremainboundevenacrossinterveningPASS.",
+    "Eightnewreconsideration/history/limitregressionsplusaffectedconditional/neutral/compilertests passed; actualsource five-reviewfullcompiler/render/readiness passed. Final coherentnavigation/fullCIandseparateterminalclosuregovernmanualRUN_PASS. Natural scheduledadoptionpending; next13CTcyclemustreconcilematerialnewsandunchangedlimitsbefore18:30Zafternooncutoffs.",
+    "Marketfileover1MiB:fetch_filemetadataSHAthenfetch_blobexactcontent; do nottreatemptycontentasreadback. Canonicalappendmetadata/priorbytepreservationandindependentreadbacksverified. ExactlyfourCFBtasksunchanged; BigNinePAUSED. Frozen51predictions11exclusions153numbers,acceptedREFRESHseparate,execution/money/scorecardunchanged. Wholeenginebaselineandcrossweekeffectivenessauditremainpending.",
+    "Latestuserinstruction11:14CT:repeattruefullslate/allstyle/parlayevaluationconsistently,notstaticfivepicks. Standingstandardpersisted/readback andallfourexistingtaskpromptsupdated/independentlyverified;timing,enabledstates,ownershipanddisableddiagnosticsunchanged. Existingrecordsidentifynewlyassessed/revalidated/missingreview;ordinaryriskweighed,marketexpressionsindependentlyearned,parlayvssingles/exposurecomparisonrequiredwithoutforcingparlayorquota. QAevaluatesusefulness/timeliness/opportunitycostaswellasintegrity. Naturalrecurringdemonstrationpending. Userlikelybettingisintentonly,noexecutions/moneymutations;awaitactualconfirmation/tickets. Currentfivecardandoriginallimitsunchanged,BigNinepaused.",
+    "User-directed Hot Sheet stabilization: top10 opportunities supersedes prior card-width preferences; all eligible PASS/current states remain in existing-cycle full-market review until preserved practical cutoff. Four task prompt changes independently read back, schedules/enabled/roles unchanged; exactly4enabled,BigNinepaused. Deferred discussion5-19 preserved in existing action register for WeeklyQA/manualmaintenance, no new gates/tasks.",
+    "User continued after PR2 integration approval request; exact reviewed head merged834d9d09e3f555fe009f66d49cbe80edc437004b. Existing GitHub39067045249/job117496760706 SUCCESS; main code blobs independently readback. Readiness review pool correction INTEGRATED_CI_VERIFIED;natural recurring analysis/top10 publication still pending.",
+    "Before renderer redesign, existing conditional renewal full-history/render protocol replay PASS with separately renewed synthetic immutable review, unchanged original limits/finalcutoff;expired oldreview rejected. Earlier13CTblanketadapter-required diagnosis too broad; existing genuine-new-review path must be considered first. Protocol uses mockedsource/reviews,NOTactualcurrentreview or operationalpublication. SaturdayprimaryMonitorlast13CT,EveningWedThuFri,Healthintegrityonly:laterfinal-windowcoverage remainsOPEN. No newtask/schedule/schema/gate or market/decision/wager mutation."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "87d735251e328226087daa9aa1519c22c702a762",
+      "purpose": "CURRENT_MARKET_STATE:fresh40pregamegames;over1MiBfetch_fileSHAthenfetch_blob"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "65b87247a18060069402d9814692ab57ce97dcf3",
+      "purpose": "CURRENT_DECISION_STATE:57PASS5CONDITIONAL0INCONCLUSIVE;boundprospectivereconsiderations"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
+      "purpose": "CURRENT_EXECUTION_LEDGER:read unchanged;no Week7 established execution"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "fbea94d5836388d3afd6c571b24409135fe9c6ce",
+      "purpose": "CURRENT_SCORECARD:Friday2 authoritative finals joined;AppState-Coastal exclusion unscored"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-17_1105CT.md",
+      "blob": "9dbec0ff1469fd06132ecd47374bcae25e9b3f5c",
+      "purpose": "CURRENT_HOT_SHEET:fullmulti-marketreviewfivecontrolledBetasingles62exactonce"
+    },
+    {
+      "path": "evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261017T155337Z.md",
+      "blob": "37c514d52325b3eca2b384451ed8f9ddea8d9d40",
+      "purpose": "CURRENT_COMPLETE_RESPONSE_CAPTURE:freshCBS62game40futurefallback;FinalOpenquarantined"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_SATURDAY_0700_DEADLINE_REVIEW_20261017T120424Z.json",
+      "blob": "9fcdf0e2ca839cbd2f823ade17976f142a4abffa",
+      "purpose": "HISTORICAL_MORNING_DEADLINE_REVIEW:18morningNO BETdispositionspreserved;notcompletedfootballreview"
+    },
+    {
+      "path": "evidence/operational/CFB_BETTING_READINESS_20261017T155337Z.json",
+      "blob": "a4bb0d63c37b6ef49529d61e790daa6bc0586a41",
+      "purpose": "CURRENT_READINESS_DIAGNOSTIC:actual16:07:41Z;5conditional0overdue0elapsed"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_RUN_STARTED.md",
+      "blob": "c5e6d74205f6127182be84d769f8fdb0fb7d9cae",
+      "purpose": "cycle observability start marker;not completion evidence"
+    },
+    {
+      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
+      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
+      "purpose": "CURRENT_MONEY_LEDGER: independently read and unchanged"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
+      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
+      "purpose": "CURRENT_WEEKLY_REVIEW: acceptedWeek6 learning review;no automatic Champion or Challenger mutation"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
+      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+      "purpose": "accepted original62 target lineage census;51predictions+11exclusions;REFRESH separate"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
+      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
+      "purpose": "HISTORICAL_WEEKLY_REVIEW_SOURCE: exact immutable Health ancestor required by currentR2 carry-forward audit;not latestHealth"
+    },
+    {
+      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
+      "blob": "467e21006cc51fcc46b9577d7f98f301f9e63f84",
+      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October13 exactS0 independently accepted lateOct16CT; source pointer only, not operational model substitution"
+    },
+    {
+      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
+      "blob": "c8daffd209ca1575d057b8d73839fa74998ccce6",
+      "purpose": "ACTIVE_CONSENSUS_AND_VENUE_CONTROL:CaesarsNOTrequiredforrecommendations;sourceandlimitprotectionsunchanged"
+    },
+    {
+      "path": "evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md",
+      "blob": "a21567a789aac18dfe283abb07053fc6bf65dfa5",
+      "purpose": "ACTIVE_PUBLICATION_CONTROL:top10/allgame/allstyle/PASSongoingreview;existingcutoffs;codePRpending"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_TERMINAL_CANDIDATE.md",
+      "blob": "b76179dddf4ff1982dcc3d50175d110d9df5db89",
+      "purpose": "CURRENT_MORNING_TERMINAL_CANDIDATE: independent completion evidence; scope unchanged"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_RUN_CLOSURE.md",
+      "blob": "9de85515762d611a65a555225a15c244c12ac2fa",
+      "purpose": "CURRENT_MORNING_RUN_CLOSURE: independent completion evidence; scope unchanged"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_HOT_SHEET_RECOVERY_QA_20261017T133946Z_AUDIT.md",
+      "blob": "d4b23ab90ff81ac7427a77c51c404487bf2f2725",
+      "purpose": "LATEST_RECOVERY_CONSUMER_QA: recovery dependency preflight correction; bounded scope; natural next use pending"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "blob": "26d8a6bb2426d4c2d1fbb3ce3c307a5889d20185",
+      "purpose": "CURRENT_DURABLE_ACTION_REGISTER:activefirst4plusTop10;deferred5-19WeeklyQAmanualmaintenance"
+    },
+    {
+      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
+      "blob": "a58839b8551554a4514afad5dbbf8ff34889115e",
+      "purpose": "ACTIVE_PERSISTENCE_PROCEDURE: recovery dependency preflight correction; bounded scope; natural next use pending"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_COMPLETE_MULTI_MARKET_REVIEW_20261017T155337Z.json",
+      "blob": "35d11b59ee76d1876060c869efd0950313657fa9",
+      "purpose": "CURRENT_COMPLETE_BETTING_REVIEW:40futuregames120dispositions;4spreads1ML0totalsnoparlay"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_NEBRASKA_RECONSIDERATION_20261017T155337Z.json",
+      "blob": "13c958d61aa34628d1e373ef55adfcc27725ce97",
+      "purpose": "CURRENT_IMMUTABLE_CONDITIONAL_REVIEW:rank1Nebraska;otherfourreviewrefsincurrentfullreviewandcanonicalrows"
+    },
+    {
+      "path": "evidence/operational/CFB_BETTING_PUBLICATION_AUDIT_20261017T155337Z.json",
+      "blob": "6512bdaedb3f13add39e014fea9365f7c8f9ed98",
+      "purpose": "CURRENT_PUBLICATION_AUDIT:fiveconditional62exactonce;notnaturalrunorbettingedgeproof"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_ROUTINE_V6_BACK_HALF_CANDIDATE_2026-09-30.md",
+      "blob": "a3de9737fd6047845dcf0e7888ec46f04e5e9fc1",
+      "purpose": "ACTIVE_TEST_ROUTINE_V6_CANDIDATE:completeuserdecisionnotjustcodeQA;v5productionunchanged"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md",
+      "blob": "f72a597d0e9c6723c1104ce045eae9f8131c26b0",
+      "purpose": "ACTIVE_WEEKLY_LEARNING_REVIEW_CONTROL:balanced net-objective impact across all CFB layers and QA; cross-week audit still pending"
+    },
+    {
+      "path": "evidence/operational/CFB_ESPN_DRAFTKINGS_BOARD_20261017T155337Z.md",
+      "blob": "9424e4fe5f94c2c5d8dbfca797bf995907ed3b97",
+      "purpose": "CURRENT_IDENTIFIED_ESPN_BOARD_CAPTURE:currentDraftKingspairs;onlypregameobservationsused"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_PRESENTATION_RECONCILIATION_20261017T155337Z_RUN_STARTED.md",
+      "blob": "ec5c6113e13b1e67b7160af76d111d96d7767be6",
+      "purpose": "CURRENT_MANUAL_REFRESH_START:fullmultimarketreconsiderationobservabilitynotcompletion"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_PENNSTATE_RECONSIDERATION_20261017T155337Z.json",
+      "blob": "04ce32fb780bdd211a9dddc8d72a1cca2f534793",
+      "purpose": "CURRENT_RANKED_RECONSIDERATION_REVIEW_2:immutablepriorPASSbinding;notexecution"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_HOUSTON_RECONSIDERATION_20261017T155337Z.json",
+      "blob": "99e2ecdb0cf55118b754cb7b3b921ca53e0e8054",
+      "purpose": "CURRENT_RANKED_RECONSIDERATION_REVIEW_3:immutablepriorPASSbinding;notexecution"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_AIRFORCE_RECONSIDERATION_20261017T155337Z.json",
+      "blob": "97932758aaea964d854575d0771cd346de625c4e",
+      "purpose": "CURRENT_RANKED_RECONSIDERATION_REVIEW_4:immutablepriorPASSbinding;notexecution"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_VIRGINIATECH_RECONSIDERATION_20261017T155337Z.json",
+      "blob": "73b4a52912bc14592c6cf697bf9a7a1ce77d9e20",
+      "purpose": "CURRENT_RANKED_RECONSIDERATION_REVIEW_5:immutablepriorPASSbinding;notexecution"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_HOT_SHEET_STABILITY_QA_20261017T202511Z_AUDIT.md",
+      "blob": "d2d5288b4283ca217b3a8ba03addba5a6025670e",
+      "purpose": "CURRENT_STABILIZATION_QA:589localtests;PR2pendingapproval;taskinstructionsinstalled;deferredbacklogpreserved"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_HOT_SHEET_INTEGRATION_QA_20261017T203033Z_AUDIT.md",
+      "blob": "16744e1288ecd2fc89f877858533ff8c33a395bc",
+      "purpose": "LATEST_INTEGRATION_QA:PR2mergedCIpass;existingconditionalrenewalreplay;SaturdaywindowcoverageOPEN"
+    },
+    {
+      "path": "evidence/scheduler_qa/cfb_conditional_renewal_protocol_replay_20261017.py",
+      "blob": "d8f1d5f55424e4e75bff5f1eb44824bc30e01d20",
+      "purpose": "SYNTHETIC_PROTOCOL_REPLAY:existingconditionalrenewal;notgenuinesourceoractualrecommendation"
+    }
+  ]
+}
+```
