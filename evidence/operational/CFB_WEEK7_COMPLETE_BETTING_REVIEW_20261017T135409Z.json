@@ -1,0 +1,925 @@
+{
+  "schema": "CFB_COMPLETE_BETTING_REVIEW_V1",
+  "cycle_id": "CFB_PRESENTATION_RECONCILIATION_20261017T135409Z",
+  "recorded_at_utc": "2026-10-17T13:57:26.783858Z",
+  "scope": "21 previously open games, spread/total/moneyline63 prospective dispositions;41 prior PASS preserved; no wager",
+  "original_lineage_blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+  "market_source": {
+    "url": "https://www.espn.com/college-football/odds",
+    "book": "DraftKings",
+    "source_role": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+    "request_window_start_utc": "2026-10-17T13:54:09Z",
+    "response_recovered_by_utc": "2026-10-17T13:54:22Z",
+    "scrape_id": "01a14a24-5d41-743c-a7a5-172dde47f068",
+    "maxAge": 0,
+    "offer_updated_at": "UNKNOWN",
+    "consensus": "CONSENSUS_UNAVAILABLE",
+    "executability": "UNVERIFIED",
+    "qualification": "Explicit DraftKings board label and each exact selection gateway link. Repeated board copies agreed. Ignore Open and never infer missing opposite-side/ML fields."
+  },
+  "counts": {
+    "games": 21,
+    "original_predictions_reviewed": 18,
+    "original_exclusions_preserved": 3,
+    "side_conditional": 1,
+    "side_pass": 20,
+    "total_pass": 21,
+    "moneyline_pass": 21,
+    "prior_closed_pass_preserved": 41
+  },
+  "coverage_limits": "16 current ESPN preview bodies reviewed;2 exact previews returned No Story Available;3 original exclusions. ACC official Friday report recovered for relevant games; other final full-team reports remain unverified. This completes dispositions, not an assertion of exhaustive injury knowledge. Source-limited PASS is distinct from a fully supported no-edge conclusion.",
+  "rows": [
+    {
+      "game_id": "401860903",
+      "game": "Washington State @ Oregon State",
+      "kickoff_utc": "2026-10-17T22:00Z",
+      "original": "FIRST_FROZEN: Oregon State -6.1 / 53.1 / 0.641 home",
+      "quotes": [
+        {
+          "display": "+18.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788239%3Foutcomes%3D0HC86628949P1850_3"
+        },
+        {
+          "display": "o52.5 -105",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788239%3Foutcomes%3D0OU86628949O5250_1"
+        },
+        {
+          "display": "+650",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788239%3Foutcomes%3D0ML86628949_3"
+        },
+        {
+          "display": "-18.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788239%3Foutcomes%3D0HC86628949N1850_1"
+        },
+        {
+          "display": "u52.5 -115",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788239%3Foutcomes%3D0OU86628949U5250_3"
+        },
+        {
+          "display": "-1000",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788239%3Foutcomes%3D0ML86628949_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "Frozen Washington State points preference is contradicted by its133rd-ranked offense and Oregon State first-ranked passing attack. The large gap is model-risk context, not adequate support to back the weaker offense.",
+      "total_decision": "PASS",
+      "total_rationale": "Near-model total53.1 versus52.5 offers little numerical separation; mismatched offenses add uncertainty.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401860903",
+        "scrape_id": "01a14a20-2bc6-75b8-b6b6-1045ae883952",
+        "status": "CONTENT_REVIEWED"
+      }
+    },
+    {
+      "game_id": "401856726",
+      "game": "Arkansas @ Vanderbilt",
+      "kickoff_utc": "2026-10-17T23:00Z",
+      "original": "FIRST_FROZEN: Vanderbilt -15.4 / 50.7 / 0.794 home",
+      "quotes": [
+        {
+          "display": "+6 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788249%3Foutcomes%3D0HC86628959P600_3"
+        },
+        {
+          "display": "o50.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788249%3Foutcomes%3D0OU86628959O5050_1"
+        },
+        {
+          "display": "+185",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788249%3Foutcomes%3D0ML86628959_3"
+        },
+        {
+          "display": "-6 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788249%3Foutcomes%3D0HC86628959N600_1"
+        },
+        {
+          "display": "u50.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788249%3Foutcomes%3D0OU86628959U5050_3"
+        },
+        {
+          "display": "-225",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788249%3Foutcomes%3D0ML86628959_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "Frozen Vanderbilt margin exceeds the benchmark, but current offense103rd and scoring defense117th do not independently support laying points; both teams have material weaknesses.",
+      "total_decision": "PASS",
+      "total_rationale": "Frozen50.7 and benchmark50.5 are essentially aligned; no supported total expression.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401856726",
+        "scrape_id": "01a14a1f-fb44-716a-969f-e8acb1ec4c36",
+        "status": "CONTENT_REVIEWED"
+      }
+    },
+    {
+      "game_id": "401856832",
+      "game": "TCU @ Baylor",
+      "kickoff_utc": "2026-10-17T23:00Z",
+      "original": "FIRST_FROZEN: Baylor -1.5 / 48.5 / 0.518 home",
+      "quotes": [
+        {
+          "display": "+5.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788250%3Foutcomes%3D0HC86628960P550_3"
+        },
+        {
+          "display": "o49.5 -105",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788250%3Foutcomes%3D0OU86628960O4950_1"
+        },
+        {
+          "display": "+180",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788250%3Foutcomes%3D0ML86628960_3"
+        },
+        {
+          "display": "-5.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788250%3Foutcomes%3D0HC86628960N550_1"
+        },
+        {
+          "display": "u49.5 -115",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788250%3Foutcomes%3D0OU86628960U4950_3"
+        },
+        {
+          "display": "-218",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788250%3Foutcomes%3D0ML86628960_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "TCU defensive strength supports investigation of the underdog, but Baylor offense23rd, home setting and unresolved final availability leave insufficient independent support for a four-point model-gap judgment.",
+      "total_decision": "PASS",
+      "total_rationale": "Both teams allow few points and have strong red-zone defenses; opposing offensive capability and near-model49.5 benchmark do not earn a total.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401856832",
+        "scrape_id": "01a14a20-345b-77a8-9c04-e6b12dd2261f",
+        "status": "CONTENT_REVIEWED"
+      }
+    },
+    {
+      "game_id": "401858263",
+      "game": "Florida State @ Miami",
+      "kickoff_utc": "2026-10-17T23:00Z",
+      "original": "FIRST_FROZEN: Miami -27.7 / 60.8 / 0.949 home",
+      "quotes": [
+        {
+          "display": "+20.5 -115",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226106%3Foutcomes%3D0HC84998461P2050_3"
+        },
+        {
+          "display": "o56.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226106%3Foutcomes%3D0OU84998461O5650_1"
+        },
+        {
+          "display": "+950",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226106%3Foutcomes%3D0ML84998461_3"
+        },
+        {
+          "display": "-20.5 -105",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226106%3Foutcomes%3D0HC84998461N2050_1"
+        },
+        {
+          "display": "u56.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226106%3Foutcomes%3D0OU84998461U5650_3"
+        },
+        {
+          "display": "-1650",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226106%3Foutcomes%3D0ML84998461_1"
+        }
+      ],
+      "side_decision": "CONDITIONAL",
+      "side_rationale": "Qualitative controlled Beta: Miami -20.5 or better at -110 or better. Original Miami -27.7 is independently supported by the AP-reported top-ranked offense facing a weak FSU defense and the reviewed official ACC availability report. Rivalry/backdoor and Miami absences remain material risks; no calibrated EV claimed.",
+      "total_decision": "PASS",
+      "total_rationale": "PASS: model60.8 exceeds56.5, but six Miami absences, FSU offensive uncertainty, pace and possible blowout substitutions prevent an independently supported total recommendation.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401858263",
+        "scrape_id": "01a14a20-3eb1-71c1-b07b-e081e9988d15",
+        "status": "CONTENT_REVIEWED"
+      },
+      "official_material_source": "https://theacc.com/sports/2025/8/28/availability-reporting-football.aspx"
+    },
+    {
+      "game_id": "401862806",
+      "game": "Kent State @ South Florida",
+      "kickoff_utc": "2026-10-17T23:00Z",
+      "original": "FIRST_FROZEN: South Florida -31.3 / 53.4 / 0.964 home",
+      "quotes": [
+        {
+          "display": "+20.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788251%3Foutcomes%3D0HC86628961P2050_3"
+        },
+        {
+          "display": "o45.5 -102",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788251%3Foutcomes%3D0OU86628961O4550_1"
+        },
+        {
+          "display": "+850",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788251%3Foutcomes%3D0ML86628961_3"
+        },
+        {
+          "display": "-20.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788251%3Foutcomes%3D0HC86628961N2050_1"
+        },
+        {
+          "display": "u45.5 -118",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788251%3Foutcomes%3D0OU86628961U4550_3"
+        },
+        {
+          "display": "-1450",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788251%3Foutcomes%3D0ML86628961_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "Frozen South Florida preference is visible, but the exact ESPN preview returned No Story Available; no sufficiently reviewed current football/availability basis supports the large favorite. This is an evidence-limited no-bet, not a finding of no value.",
+      "total_decision": "PASS",
+      "total_rationale": "Large model-versus-total disagreement is observation only; missing material support cannot justify a total.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401862806",
+        "scrape_id": "01a14a20-4713-748b-9f73-425c50a3677e",
+        "status": "NO_STORY_AVAILABLE"
+      }
+    },
+    {
+      "game_id": "401864520",
+      "game": "Nevada @ North Dakota State",
+      "kickoff_utc": "2026-10-17T23:00Z",
+      "original": "FIRST_FROZEN: North Dakota State -10.4 / 49.0 / 0.728 home",
+      "quotes": [
+        {
+          "display": "+14.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788252%3Foutcomes%3D0HC86628962P1450_3"
+        },
+        {
+          "display": "o42.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788252%3Foutcomes%3D0OU86628962O4250_1"
+        },
+        {
+          "display": "+500",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788252%3Foutcomes%3D0ML86628962_3"
+        },
+        {
+          "display": "-14.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788252%3Foutcomes%3D0HC86628962N1450_1"
+        },
+        {
+          "display": "u42.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788252%3Foutcomes%3D0OU86628962U4250_3"
+        },
+        {
+          "display": "-700",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788252%3Foutcomes%3D0ML86628962_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "Frozen Nevada points preference has only a modest raw separation; exact ESPN preview returned No Story Available and current quarterback/availability support was not earned. Evidence-limited no-bet.",
+      "total_decision": "PASS",
+      "total_rationale": "Model49 versus42.5 requires independent offense/availability confirmation that is unavailable in the retrieved preview.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401864520",
+        "scrape_id": "01a14a20-4fba-757a-95fb-55eefa40b855",
+        "status": "NO_STORY_AVAILABLE"
+      }
+    },
+    {
+      "game_id": "401869934",
+      "game": "Arkansas State @ Southern Miss",
+      "kickoff_utc": "2026-10-17T23:00Z",
+      "original": "FIRST_FROZEN: Southern Miss -1.7 / 56.4 / 0.559 home",
+      "quotes": [
+        {
+          "display": "-6.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788253%3Foutcomes%3D0HC86628963N650_3"
+        },
+        {
+          "display": "o61.5 -115",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788253%3Foutcomes%3D0OU86628963O6150_1"
+        },
+        {
+          "display": "-245",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788253%3Foutcomes%3D0ML86628963_3"
+        },
+        {
+          "display": "+6.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788253%3Foutcomes%3D0HC86628963P650_1"
+        },
+        {
+          "display": "u61.5 -105",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788253%3Foutcomes%3D0OU86628963U6150_3"
+        },
+        {
+          "display": "+200",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788253%3Foutcomes%3D0ML86628963_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "The frozen Southern Miss underdog direction conflicts with its134th-ranked overall defense and last-ranked rushing defense. Arkansas State also has defensive weaknesses; neither side has enough independent support.",
+      "total_decision": "PASS",
+      "total_rationale": "Both defenses are vulnerable while the model leans lower than61.5; conflicting current evidence prevents a total.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401869934",
+        "scrape_id": "01a14a20-5734-773f-94ed-831d899e16bb",
+        "status": "CONTENT_REVIEWED"
+      }
+    },
+    {
+      "game_id": "401856722",
+      "game": "Kentucky @ Oklahoma",
+      "kickoff_utc": "2026-10-17T23:30Z",
+      "original": "FIRST_FROZEN: Oklahoma -10.0 / 48.3 / 0.730 home",
+      "quotes": [
+        {
+          "display": "+6.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788255%3Foutcomes%3D0HC86628965P650_3"
+        },
+        {
+          "display": "o43.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788255%3Foutcomes%3D0OU86628965O4350_1"
+        },
+        {
+          "display": "+205",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788255%3Foutcomes%3D0ML86628965_3"
+        },
+        {
+          "display": "-6.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788255%3Foutcomes%3D0HC86628965N650_1"
+        },
+        {
+          "display": "u43.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788255%3Foutcomes%3D0OU86628965U4350_3"
+        },
+        {
+          "display": "-250",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788255%3Foutcomes%3D0ML86628965_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "Oklahoma model preference is tempered by128th-ranked total offense, poor third-down conversion and turnover disadvantage against Kentucky. A3.5point raw gap is insufficient qualitative support here.",
+      "total_decision": "PASS",
+      "total_rationale": "Good Oklahoma defense conflicts with Kentucky scoring/defensive weakness; no independent total rule supports48.3 versus43.5.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401856722",
+        "scrape_id": "01a14a1f-f4b2-73bc-8299-24d8fc08b728",
+        "status": "CONTENT_REVIEWED"
+      }
+    },
+    {
+      "game_id": "401856809",
+      "game": "Notre Dame @ BYU",
+      "kickoff_utc": "2026-10-17T23:30Z",
+      "original": "FIRST_FROZEN: BYU -6.0 / 51.1 / 0.658 home",
+      "quotes": [
+        {
+          "display": "-10.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226092%3Foutcomes%3D0HC84998435N1050_3"
+        },
+        {
+          "display": "o46.5 -115",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226092%3Foutcomes%3D0OU84998435O4650_1"
+        },
+        {
+          "display": "-410",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226092%3Foutcomes%3D0ML84998435_3"
+        },
+        {
+          "display": "+10.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226092%3Foutcomes%3D0HC84998435P1050_1"
+        },
+        {
+          "display": "u46.5 -105",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226092%3Foutcomes%3D0OU84998435U4650_3"
+        },
+        {
+          "display": "+320",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226092%3Foutcomes%3D0ML84998435_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "Frozen BYU home-favorite opinion conflicts sharply with the market; AP reports leading rusher LJ Martin out until November and Notre Dame first-ranked total defense. Do not treat the large disagreement as established value.",
+      "total_decision": "PASS",
+      "total_rationale": "Two strong defenses support investigation, but model51.1 versus46.5 and the documented BYU absence pull in different directions; no total recommendation.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401856809",
+        "scrape_id": "01a14a20-6114-73ed-955e-d14591c3b4a4",
+        "status": "CONTENT_REVIEWED"
+      }
+    },
+    {
+      "game_id": "401856831",
+      "game": "Oklahoma State @ Houston",
+      "kickoff_utc": "2026-10-17T23:30Z",
+      "original": "FIRST_FROZEN: Houston -8.7 / 57.0 / 0.711 home",
+      "quotes": [
+        {
+          "display": "+4.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788254%3Foutcomes%3D0HC86628964P450_3"
+        },
+        {
+          "display": "o62.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788254%3Foutcomes%3D0OU86628964O6250_1"
+        },
+        {
+          "display": "+160",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788254%3Foutcomes%3D0ML86628964_3"
+        },
+        {
+          "display": "-4.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788254%3Foutcomes%3D0HC86628964N450_1"
+        },
+        {
+          "display": "u62.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788254%3Foutcomes%3D0OU86628964U6250_3"
+        },
+        {
+          "display": "-192",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788254%3Foutcomes%3D0ML86628964_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "Houston ground strength supports its model direction, but Oklahoma State sixth-ranked passing offense attacks Houston117th-ranked pass defense. The4.2point gap does not resolve that matchup risk.",
+      "total_decision": "PASS",
+      "total_rationale": "Model57 below62.5 conflicts with both productive offenses; no robust lower-total decision.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401856831",
+        "scrape_id": "01a14a20-675f-711a-8b1c-8c5509342961",
+        "status": "CONTENT_REVIEWED"
+      }
+    },
+    {
+      "game_id": "401858262",
+      "game": "Elon @ Stanford",
+      "kickoff_utc": "2026-10-17T23:30Z",
+      "original": "FIRST_FROZEN EXCLUDED \u2014 away_opening_no_prior; Oct6 REFRESH EXCLUDED (not substituted)",
+      "quotes": [
+        {
+          "display": "+34.5 -102",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34827685%3Foutcomes%3D0HC86732929P3450_3"
+        },
+        {
+          "display": "o56.5 -105",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34827685%3Foutcomes%3D0OU86732929O5650_1"
+        },
+        {
+          "display": "-34.5 -118",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34827685%3Foutcomes%3D0HC86732929N3450_1"
+        },
+        {
+          "display": "u56.5 -115",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34827685%3Foutcomes%3D0OU86732929U5650_3"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "Original FIRST_FROZEN excluded for away_opening_no_prior. No replacement with REFRESH or market-derived forecast.",
+      "total_decision": "PASS",
+      "total_rationale": "No eligible original total prediction; no model-based total recommendation.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "status": "ORIGINAL_MODEL_EXCLUSION_NO_SUBSTITUTION"
+      }
+    },
+    {
+      "game_id": "401858265",
+      "game": "Louisville @ Syracuse",
+      "kickoff_utc": "2026-10-17T23:30Z",
+      "original": "FIRST_FROZEN: Louisville -1.9 / 60.4 / 0.459 home",
+      "quotes": [
+        {
+          "display": "-14.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788267%3Foutcomes%3D0HC86628977N1450_3"
+        },
+        {
+          "display": "o55.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788267%3Foutcomes%3D0OU86628977O5550_1"
+        },
+        {
+          "display": "-650",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788267%3Foutcomes%3D0ML86628977_3"
+        },
+        {
+          "display": "+14.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788267%3Foutcomes%3D0HC86628977P1450_1"
+        },
+        {
+          "display": "u55.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788267%3Foutcomes%3D0OU86628977U5550_3"
+        },
+        {
+          "display": "+470",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788267%3Foutcomes%3D0ML86628977_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "Do not back Syracuse merely from the large frozen-market gap: official ACC lists Angeli doubtful, Nelson questionable and Odom out. Louisville also has line absences. Current quarterback uncertainty directly undermines the model comparison.",
+      "total_decision": "PASS",
+      "total_rationale": "Quarterback and offensive-line uncertainty prevent turning frozen60.4 versus55.5 into an over recommendation.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401858265",
+        "scrape_id": "01a14a20-79d7-763a-8af1-cca7af3ac89d",
+        "status": "CONTENT_REVIEWED"
+      },
+      "official_material_source": "https://theacc.com/sports/2025/8/28/availability-reporting-football.aspx"
+    },
+    {
+      "game_id": "401858494",
+      "game": "Wisconsin @ UCLA",
+      "kickoff_utc": "2026-10-17T23:30Z",
+      "original": "FIRST_FROZEN: UCLA -7.3 / 57.4 / 0.665 home",
+      "quotes": [
+        {
+          "display": "+2.5 -105",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788222%3Foutcomes%3D0HC86628932P250_3"
+        },
+        {
+          "display": "o42.5 -115",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788222%3Foutcomes%3D0OU86628932O4250_1"
+        },
+        {
+          "display": "+114",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788222%3Foutcomes%3D0ML86628932_3"
+        },
+        {
+          "display": "-2.5 -115",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788222%3Foutcomes%3D0HC86628932N250_1"
+        },
+        {
+          "display": "u42.5 -105",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788222%3Foutcomes%3D0OU86628932U4250_3"
+        },
+        {
+          "display": "-135",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788222%3Foutcomes%3D0ML86628932_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "UCLA raw4.8point separation is offset by Wisconsin15th-ranked total defense, rest advantage and UCLA substantial turnover/penalty uncertainty. Official BigTen report content was not readable in this retrieval; no full-availability assertion.",
+      "total_decision": "PASS",
+      "total_rationale": "Frozen57.4 versus42.5 is a large over flag, but both defenses allow fewer than19points per game in the current preview; do not blindly follow the frozen total.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401858494",
+        "scrape_id": "01a14a1f-e0b9-72ee-9728-4365212a5548",
+        "status": "CONTENT_REVIEWED"
+      }
+    },
+    {
+      "game_id": "401862804",
+      "game": "Navy @ UTSA",
+      "kickoff_utc": "2026-10-18T00:00Z",
+      "original": "FIRST_FROZEN EXCLUDED \u2014 away_prior_points_missing; Oct6 REFRESH PREDICTION (not substituted)",
+      "quotes": [
+        {
+          "display": "+6.5 +102",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788269%3Foutcomes%3D0HC86628979P650_3"
+        },
+        {
+          "display": "o54.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788269%3Foutcomes%3D0OU86628979O5450_1"
+        },
+        {
+          "display": "+210",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788269%3Foutcomes%3D0ML86628979_3"
+        },
+        {
+          "display": "-6.5 -122",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788269%3Foutcomes%3D0HC86628979N650_1"
+        },
+        {
+          "display": "u54.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788269%3Foutcomes%3D0OU86628979U5450_3"
+        },
+        {
+          "display": "-258",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788269%3Foutcomes%3D0ML86628979_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "Original FIRST_FROZEN excluded for away_prior_points_missing. Accepted REFRESH remains separate and cannot supply a substitute bet.",
+      "total_decision": "PASS",
+      "total_rationale": "No eligible original total prediction; total and moneyline not recommended.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "status": "ORIGINAL_MODEL_EXCLUSION_NO_SUBSTITUTION"
+      }
+    },
+    {
+      "game_id": "401871091",
+      "game": "Louisiana Tech @ UL Monroe",
+      "kickoff_utc": "2026-10-18T00:00Z",
+      "original": "FIRST_FROZEN: Louisiana Tech -6.2 / 53.8 / 0.373 home",
+      "quotes": [
+        {
+          "display": "-15.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788271%3Foutcomes%3D0HC86628981N1550_3"
+        },
+        {
+          "display": "o55.5 -115",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788271%3Foutcomes%3D0OU86628981O5550_1"
+        },
+        {
+          "display": "-675",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788271%3Foutcomes%3D0ML86628981_3"
+        },
+        {
+          "display": "+15.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788271%3Foutcomes%3D0HC86628981P1550_1"
+        },
+        {
+          "display": "u55.5 -105",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788271%3Foutcomes%3D0OU86628981U5550_3"
+        },
+        {
+          "display": "+490",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788271%3Foutcomes%3D0ML86628981_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "UL Monroe points preference from the frozen line is contradicted by last-ranked total/scoring defense, poor third-down defense and a weak current offense. Do not buy the underdog from raw discrepancy alone.",
+      "total_decision": "PASS",
+      "total_rationale": "Bad ULM defense counters model53.8 below55.5; no supported total expression.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401871091",
+        "scrape_id": "01a14a20-705b-7625-896b-3f2abb5e7b08",
+        "status": "CONTENT_REVIEWED"
+      }
+    },
+    {
+      "game_id": "401864523",
+      "game": "San Jos\u00e9 State @ UTEP",
+      "kickoff_utc": "2026-10-18T01:00Z",
+      "original": "FIRST_FROZEN: San Jos\u00e9 State -1.5 / 50.8 / 0.447 home",
+      "quotes": [
+        {
+          "display": "-7 -105",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788277%3Foutcomes%3D0HC86628992N700_3"
+        },
+        {
+          "display": "o45.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788277%3Foutcomes%3D0OU86628992O4550_1"
+        },
+        {
+          "display": "-278",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788277%3Foutcomes%3D0ML86628992_3"
+        },
+        {
+          "display": "+7 -115",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788277%3Foutcomes%3D0HC86628992P700_1"
+        },
+        {
+          "display": "u45.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788277%3Foutcomes%3D0OU86628992U4550_3"
+        },
+        {
+          "display": "+225",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788277%3Foutcomes%3D0ML86628992_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "UTEP points preference is undermined by last-ranked current offense and inconsistent quarterback context: Colson is listed as season passing leader while Moore handled the latest game. No supported underdog recommendation.",
+      "total_decision": "PASS",
+      "total_rationale": "Frozen50.8 over45.5 conflicts with UTEP offensive production and quarterback uncertainty; no total.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401864523",
+        "scrape_id": "01a14a21-3ffe-74ec-a4e0-f990560a2f04",
+        "status": "CONTENT_REVIEWED"
+      }
+    },
+    {
+      "game_id": "401866445",
+      "game": "Ohio @ Sacramento State",
+      "kickoff_utc": "2026-10-18T02:00Z",
+      "original": "FIRST_FROZEN: Sacramento State -9.1 / 52.4 / 0.691 home",
+      "quotes": [
+        {
+          "display": "-15.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788283%3Foutcomes%3D0HC86629003N1550_3"
+        },
+        {
+          "display": "o46.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788283%3Foutcomes%3D0OU86629003O4650_1"
+        },
+        {
+          "display": "-675",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788283%3Foutcomes%3D0ML86629003_3"
+        },
+        {
+          "display": "+15.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788283%3Foutcomes%3D0HC86629003P1550_1"
+        },
+        {
+          "display": "u46.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788283%3Foutcomes%3D0OU86629003U4650_3"
+        },
+        {
+          "display": "+490",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788283%3Foutcomes%3D0ML86629003_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "The frozen Sacramento State favorite opinion conflicts with a1-5 team scoring16.3ppg and last-ranked turnover margin against an effective Ohio run game. This extreme reversal is a model-risk flag, not a24point betting edge.",
+      "total_decision": "PASS",
+      "total_rationale": "Low Sacramento State offensive output contradicts the model-over direction; no total recommendation.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401866445",
+        "scrape_id": "01a14a21-3768-71dc-bd6c-983659a0a4ea",
+        "status": "CONTENT_REVIEWED"
+      }
+    },
+    {
+      "game_id": "401856833",
+      "game": "Utah @ Colorado",
+      "kickoff_utc": "2026-10-18T02:15Z",
+      "original": "FIRST_FROZEN: Utah -13.9 / 52.0 / 0.180 home",
+      "quotes": [
+        {
+          "display": "-14.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788220%3Foutcomes%3D0HC86628930N1450_3"
+        },
+        {
+          "display": "o49.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788220%3Foutcomes%3D0OU86628930O4950_1"
+        },
+        {
+          "display": "-750",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788220%3Foutcomes%3D0ML86628930_3"
+        },
+        {
+          "display": "+14.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788220%3Foutcomes%3D0HC86628930P1450_1"
+        },
+        {
+          "display": "u49.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788220%3Foutcomes%3D0OU86628930U4950_3"
+        },
+        {
+          "display": "+525",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788220%3Foutcomes%3D0ML86628930_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "Utah market14.5 is already close to frozen13.9. Strong Utah current performance does not create a useful model-market separation; Colorado quarterback context also remains unresolved.",
+      "total_decision": "PASS",
+      "total_rationale": "Utah strong defense and Colorado weak scoring conflict with frozen52 versus49.5; no independent total decision.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401856833",
+        "scrape_id": "01a14a21-4ad1-746c-93db-8b3d40903058",
+        "status": "CONTENT_REVIEWED"
+      }
+    },
+    {
+      "game_id": "401858269",
+      "game": "Wake Forest @ California",
+      "kickoff_utc": "2026-10-18T02:30Z",
+      "original": "FIRST_FROZEN EXCLUDED \u2014 home_prior_points_missing; Oct6 REFRESH PREDICTION (not substituted)",
+      "quotes": [
+        {
+          "display": "-10 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788224%3Foutcomes%3D0HC86628934N1000_3"
+        },
+        {
+          "display": "o53.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788224%3Foutcomes%3D0OU86628934O5350_1"
+        },
+        {
+          "display": "-375",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788224%3Foutcomes%3D0ML86628934_3"
+        },
+        {
+          "display": "+10 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788224%3Foutcomes%3D0HC86628934P1000_1"
+        },
+        {
+          "display": "u53.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788224%3Foutcomes%3D0OU86628934U5350_3"
+        },
+        {
+          "display": "+295",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788224%3Foutcomes%3D0ML86628934_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "Original FIRST_FROZEN excluded for home_prior_points_missing. Preserve exclusion despite a later REFRESH prediction; official ACC also lists several Cal running-back absences/status questions.",
+      "total_decision": "PASS",
+      "total_rationale": "No eligible original total prediction; no substitution.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "status": "ORIGINAL_MODEL_EXCLUSION_NO_SUBSTITUTION"
+      },
+      "official_material_source": "https://theacc.com/sports/2025/8/28/availability-reporting-football.aspx"
+    },
+    {
+      "game_id": "401860904",
+      "game": "Fresno State @ San Diego State",
+      "kickoff_utc": "2026-10-18T02:30Z",
+      "original": "FIRST_FROZEN: Fresno State -0.3 / 46.4 / 0.515 home",
+      "quotes": [
+        {
+          "display": "-7.5 -102",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788284%3Foutcomes%3D0HC86629004N750_3"
+        },
+        {
+          "display": "o45.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788284%3Foutcomes%3D0OU86629004O4550_1"
+        },
+        {
+          "display": "-305",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788284%3Foutcomes%3D0ML86629004_3"
+        },
+        {
+          "display": "+7.5 -118",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788284%3Foutcomes%3D0HC86629004P750_1"
+        },
+        {
+          "display": "u45.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788284%3Foutcomes%3D0OU86629004U4550_3"
+        },
+        {
+          "display": "+245",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788284%3Foutcomes%3D0ML86629004_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "Frozen San Diego State points direction conflicts with135th-ranked offense/defense, severe passing-defense weakness and the recent heavy defeat. Fresno disciplined play supports caution against taking the home dog.",
+      "total_decision": "PASS",
+      "total_rationale": "Frozen46.4 and45.5 are close; weak SDSU offense and defense create offsetting risks.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401860904",
+        "scrape_id": "01a14a21-5ae9-703a-bf02-2593de288353",
+        "status": "CONTENT_REVIEWED"
+      }
+    },
+    {
+      "game_id": "401864521",
+      "game": "New Mexico @ Hawai'i",
+      "kickoff_utc": "2026-10-18T02:30Z",
+      "original": "FIRST_FROZEN: New Mexico -9.8 / 43.5 / 0.268 home",
+      "quotes": [
+        {
+          "display": "-14.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788285%3Foutcomes%3D0HC86629005N1450_3"
+        },
+        {
+          "display": "o44.5 -108",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788285%3Foutcomes%3D0OU86629005O4450_1"
+        },
+        {
+          "display": "-675",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788285%3Foutcomes%3D0ML86629005_3"
+        },
+        {
+          "display": "+14.5 -110",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788285%3Foutcomes%3D0HC86629005P1450_1"
+        },
+        {
+          "display": "u44.5 -112",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788285%3Foutcomes%3D0OU86629005U4450_3"
+        },
+        {
+          "display": "+490",
+          "url": "https://sportsbook.draftkings.com/gateway?s=653737441&wpcid=427129&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=ESPNcom&wpcrid=LeagueSpecificOdds&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34788285%3Foutcomes%3D0ML86629005_1"
+        }
+      ],
+      "side_decision": "PASS",
+      "side_rationale": "Hawaii points preference faces a New Mexico top10 defense, strong ground attack and large turnover advantage; travel uncertainty is not enough to justify backing the weaker offense.",
+      "total_decision": "PASS",
+      "total_rationale": "Frozen43.5 versus44.5 provides little separation; no supported total expression.",
+      "moneyline_decision": "PASS",
+      "moneyline_rationale": "No separately earned calibrated moneyline/price rule; home-win probability is not automatic EV or a reason to duplicate spread exposure.",
+      "material_review": {
+        "url": "https://www.espn.com/college-football/preview/_/gameId/401864521",
+        "scrape_id": "01a14a21-6fe9-7195-8592-26815077df4e",
+        "status": "CONTENT_REVIEWED"
+      }
+    }
+  ]
+}
