@@ -70,8 +70,9 @@ class ReadinessTests(unittest.TestCase):
 
     def test_stale_publication_is_diagnosed_not_retimed(self):
         root = Path('evidence/operational')
-        m = (root / 'CFB_MARKET_MONITOR_STATE.md').read_text()
-        d = (root / 'CFB_DECISION_WAIT_LEDGER.md').read_text()
+        from cfb_neutral_publication_legacy_replay import historical
+        m = historical(root / 'CFB_MARKET_MONITOR_STATE.md', 'f96df574ef69a6d1e21139c9c721bd1804295501')
+        d = historical(root / 'CFB_DECISION_WAIT_LEDGER.md', '579ee3d16c76663428b3a00e49d4861a8ed512f1')
         lineage = (root / 'CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json').read_text()
         r = readiness.audit(m, d, lineage, '2026-10-17T00:31:00Z')
         self.assertTrue(r['saved_state_validated_at_own_boundary_only'])
