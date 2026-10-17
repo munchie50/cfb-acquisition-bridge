@@ -7755,3 +7755,36 @@ Open integrity debt: the market and decision additions are still untyped append-
   ]
 }
 ```
+
+
+## October 17 07:04 CT scheduled Market Monitor — typed natural advance and current publication
+
+The scheduled producer recovered current authority, persisted/read back its start marker, retained a genuinely fresh complete CBS response, ran the neutral weekly compiler in normal advance mode, and passed the independent whole-view publication audit. The current display contains all 62 governed Week 7 games exactly once (section counts 2/2/3/3/13/17/22/0). At the 07:00 CT reconciliation boundary, 18 overdue INCONCLUSIVE rows earned prospective PASS / NO BET from documented qualification gaps; no deadline was extended and no bet was forced. Current state is 41 PASS and 21 INCONCLUSIVE.
+
+CBS remains `UNIDENTIFIED_MIXED_BOOK_FALLBACK`; `CONSENSUS_UNAVAILABLE`, Caesars `UNVERIFIED`, and executability `UNVERIFIED`. Missing Caesars was not the decision reason. Friday authoritative finals were joined only to genuine pre-event FIRST_FROZEN rows for Memphis @ Tulane and Washington @ Purdue; Appalachian State @ Coastal Carolina remains excluded and unscored. No Week 7 production or $20 sandbox wager required settlement. Champion v1.193, FIRST_FROZEN/accepted REFRESH lineage, candidate/acceptance boundaries, schedules, and ownership remain unchanged.
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-17T12:08:50Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Scheduled Market Monitor natural normal-advance compiler and independent whole-view publication audit completed for cycle CFB_MARKET_MONITOR_20261017T120424Z; detailed authority and receipts govern exact completion.",
+    "Current Week7 display is 62 exact-once rows with 41 PASS and 21 INCONCLUSIVE; no actionable recommendation or execution was invented.",
+    "CBS is unidentified mixed-book fallback only; consensus unavailable, Caesars unverified and executability unverified. Caesars absence alone is not a recommendation blocker.",
+    "Eighteen overdue rows were prospectively resolved PASS/NO BET at the deadline from documented qualification gaps; no rollover, forced bet, threshold invention or deadline extension.",
+    "Friday finals were joined to two genuine FIRST_FROZEN rows; one frozen exclusion remained unscored. Champion/scientific boundaries and all four schedules remain unchanged."
+  ],
+  "pointers": [
+    {"path":"evidence/operational/CFB_MARKET_MONITOR_STATE.md","blob":"210e16209b064f7acadc9bb86772de845668e324","purpose":"CURRENT_MARKET_STATE:fresh complete120424Z CBS fallback typed packet;62 governed games;source limits preserved"},
+    {"path":"evidence/operational/CFB_DECISION_WAIT_LEDGER.md","blob":"8eba1865589019028888297766f5f3482da76134","purpose":"CURRENT_DECISION_STATE:41PASS21INCONCLUSIVE;18 deadline PASS rows;no forced bet or deadline extension"},
+    {"path":"evidence/operational/CFB_EXECUTION_LEDGER.md","blob":"75caee4052e02ea7d2453d1d37fd3866e13ecc07","purpose":"CURRENT_EXECUTION_LEDGER:read unchanged;no Week7 established execution"},
+    {"path":"evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md","blob":"fbea94d5836388d3afd6c571b24409135fe9c6ce","purpose":"CURRENT_SCORECARD:Friday2 authoritative finals joined;AppState-Coastal exclusion unscored"},
+    {"path":"evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-17_0708CT.md","blob":"b8a3b3627201a99fe13d7f758045dd48a0d66e3a","purpose":"CURRENT_HOT_SHEET:scheduled typed natural publication;62 exact-once;Saturday evening/night primary"},
+    {"path":"evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261017T120424Z.md","blob":"126c85e2ce308bbd2d3073a89467aa3ca0b6dab7","purpose":"CURRENT_COMPLETE_RESPONSE_CAPTURE:fresh maxAge0 CBS;honest recovered-by120735Z;fallback only"},
+    {"path":"evidence/operational/CFB_WEEK7_SATURDAY_0700_DEADLINE_REVIEW_20261017T120424Z.json","blob":"9fcdf0e2ca839cbd2f823ade17976f142a4abffa","purpose":"CURRENT_DEADLINE_REVIEW:18 prospective PASS/NO BET rows with per-game blockers"},
+    {"path":"evidence/operational/CFB_MARKET_MONITOR_READINESS_20261017T120424Z.json","blob":"32995482bcf3ebbb20720c93d4aa2b00847663f1","purpose":"CURRENT_READINESS_DIAGNOSTIC:21 open;no overdue decision or elapsed quote at120850Z"},
+    {"path":"evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_RUN_STARTED.md","blob":"c5e6d74205f6127182be84d769f8fdb0fb7d9cae","purpose":"cycle observability start marker;not completion evidence"}
+  ]
+}
+```
