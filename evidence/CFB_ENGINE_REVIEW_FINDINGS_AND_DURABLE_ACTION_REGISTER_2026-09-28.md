@@ -473,3 +473,36 @@ User identifies unbalanced learning: local risk corrections accumulated while th
 Prioritized evaluation before further discretionary production changes: (1) reconstruct earlier card decisions and actual wager outcomes versus the recent weeks from genuine pre-event/accepted records, keeping recommendations, executions, prices/stakes/pushes, net results, omissions and populations separate; (2) audit scheduled end-to-end acquisition→model/source lineage→football review→decision→publication/readback/closure against practical windows, counting manual rescues and administrative no-bets; (3) inventory accumulated gating/QA requirements for actual defects prevented versus false/inapplicable blocking, lost coverage/timeliness and maintenance burden; (4) separate prediction/source/selection/market-expression/timing/execution/variance findings rather than attributing every miss to the model or relaxing rules from recent returns; (5) establish one stable operating baseline and observe a defined prospective comparison window, batch nonurgent changes at existing weekly QA with rollback criteria, and repair genuine integrity blockers promptly. Recommended initial stabilization observation: two complete weekly cycles, a process comparison rather than statistical proof of betting advantage; no schedule or baseline freeze enacted by this agenda.
 
 Balanced outcome measures belong in the existing weekly review: on-time evaluated coverage; natural full-cycle reliability/manual rescue; useful recommendation/PASS dispositions and process-caused losses of opportunity; integrity exceptions; actual financial results with prices/stakes and missingness; and whether adopted changes helped the whole objective. Five-to-seven picks remains a preference when defensible, with analytical depth and no-chase limits intact. Current Miami review/card and historical decisions/frozen model/accepted source/money/execution/schedules unchanged. This entry defines the evaluation agenda and installs the review requirement; it does NOT claim the cross-week audit, control-retirement decisions, two-cycle observation or natural adoption have been executed. Existing QA/maintenance ownership remains.
+
+
+## October17 15:23CT Hot Sheet discussion — stabilization work and deferred backlog
+
+User authorization: work on the first several discussion items with Test Routine v6; preserve the remainder for later. Stability takes precedence over a larger redesign. This entry supersedes earlier card-width preferences with TOP 10 OPPORTUNITIES, not ten required bets. One existing maintenance workstream; no added recurring task.
+
+ACTIVE scope (not all closed):
+1. Passed games stay in the review pool until existing practical cutoff. Existing V3 prospective reopening exists; readiness previously misleadingly labelled every PASS PRESERVE_CLOSED_PASS. Correct diagnostic disposition/work selection and test real saved slate. Natural repeated evaluation still requires demonstration.
+2. Review all games/all betting styles independently, using existing review artifacts. Favorite/underdog spreads, both MLs, over/under; alternates and team totals explicitly unavailable/not evaluated when unsupported; plausible parlays separately assessed. Ranking becomes top ten supported opportunities. Full per-market analytical consistency and top-ten output remain to be demonstrated.
+3. Timing: retain existing cutoffs and trip batching; distinguish review/reconciliation from final execution cutoff. Use existing cycles; identify intervals with no scheduled review rather than imply continuous coverage. End-to-end timely demonstration OPEN.
+4. Refresh/delivery: actual saved-clock disclosure and truthful incomplete status. October17 13CT richer decision-state publisher blocker is confirmed in evidence/operational/CFB_WEEK7_FULL_EVALUATION_20261017T180420Z.md; current selected sheet remains 11:05CT. Adapter qualification/delivery repair OPEN, do not force PASS.
+
+DEFERRED IDEAS — preserve, do not implement automatically. Owner: existing CFB Weekly Engine QA / manual maintenance. Revisit at the next existing weekly/manual backlog review; select at most a justified smallest improvement after active scope, considering benefit, instability and maintenance cost. These are investigation ideas, not new required production gates.
+
+| Discussion item | Preserved idea | Later review question |
+|---|---|---|
+| 5 | Reasons and reconsideration triggers | Can existing reason fields explain what changes a judgment without a new trigger system? |
+| 6 | Line/price limits and checked time | Is existing price/timestamp display sufficient and consistent? |
+| 7 | Downgrade/withdraw recommendations | Does the existing transition path preserve facts and show changes correctly? |
+| 8 | Existing tickets separate from opportunities | Prevent duplicate/conflicting exposure using confirmed actual executions only. |
+| 9 | Whole-card exposure | Is existing singles/parlay exposure review sufficient? |
+| 10 | Missing research distinct from a football PASS | Use existing provenance; do not create another blocking layer. |
+| 11 | Changes since prior sheet | Would a simple comparison help without fragile state machinery? |
+| 12 | Preserve recommendations and learn from outcomes | Audit existing immutable recommendation/execution/outcome separation. |
+| 13 | Coverage proof | Check existing review artifacts before considering additional coverage tooling. |
+| 14 | Basis of edge and disagreement | Improve explanation only if existing evidence supports it; no invented EV. |
+| 15 | Sensitivity to uncertainty | Assess usefulness/cost before adding calculations or inputs. |
+| 16 | Top-ten overlap | Make repeated-game exposure understandable without forcing diversity. |
+| 17 | Timing value | Support bet-now/wait judgments from evidence; avoid unsupported movement predictions. |
+| 18 | Full decision-cycle tests | Reuse existing tests; add only tests for actual behavioral gaps. |
+| 19 | Missed opportunities | Review pre-event evidence without outcome-driven hindsight or treating every winner as a missed pick. |
+
+Closure rule: distinguish DOCUMENTED, BUILT/TESTED, PERSISTED/READ_BACK, real producer DEMONSTRATED and CLOSED. Technical QA does not establish useful recurring all-market evaluation or a current betting card. Remaining ideas persist here through recovery navigation; this is not a new task/framework.
