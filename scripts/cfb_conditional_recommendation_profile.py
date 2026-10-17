@@ -7,12 +7,50 @@ import json
 import re
 import subprocess
 from pathlib import Path
+from urllib.parse import urlparse
 import cfb_neutral_publication_gate as gate
 from cfb_consensus_reference import identity_key, reference
 
 SCHEMA = 'CFB_WEEKLY_CONDITIONAL_DECISION_V3'
 REVIEW_SCHEMA = 'CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V1'
+RETRIEVAL_REVIEW_SCHEMA = 'CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2'
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def market_reference(review, as_of):
+    packet = review['market_reference']
+    if review['schema'] == REVIEW_SCHEMA:
+        result = reference(packet, as_of)
+        if result['status'] != 'STRUCTURALLY_QUALIFIED_DESCRIPTIVE_REFERENCE':
+            raise ValueError('conditional review requires qualified non-Caesars reference constituents/clocks')
+        return result
+    # Lower-maturity qualitative Beta may use one explicitly identified public
+    # benchmark. This never turns unknown update clocks into current consensus.
+    allowed = ['game_id', 'market', 'selection', 'period', 'kickoff_utc',
+               'kickoff_source_url', 'collection_start', 'collection_end', 'quotes', 'clock_semantics']
+    gate.keys(packet, allowed)
+    if packet['clock_semantics'] not in ('EXACT_RETRIEVAL', 'RESPONSE_RECOVERED_BY'):
+        raise ValueError('explicit retrieval-only clock semantics required')
+    if not isinstance(packet['quotes'], list) or len(packet['quotes']) != 1:
+        raise ValueError('one identified benchmark required; do not synthesize consensus')
+    q = packet['quotes'][0]
+    providers = {'draftkings': ('sportsbook.draftkings.com', 'www.espn.com'),
+                 'fanduel': ('sportsbook.fanduel.com',)}
+    operator = identity_key(q['operator'])
+    if operator not in providers or identity_key(q['book']) != operator:
+        raise ValueError('unqualified identified benchmark operator')
+    if (urlparse(q['source_url']).hostname not in providers[operator] or
+            urlparse(q['operator_evidence_url']).hostname != providers[operator][0]):
+        raise ValueError('identified benchmark source/operator evidence mismatch')
+    base = {k: v for k, v in packet.items() if k != 'clock_semantics'}
+    result = reference(base, as_of)
+    if set(result['reasons']) - {'FEWER_THAN_THREE_INDEPENDENT_OPERATORS', 'OFFER_UPDATE_UNKNOWN'}:
+        raise ValueError('unqualified retrieval-only source chronology')
+    if (gate.clock(packet['collection_end']) - gate.clock(packet['collection_start'])).total_seconds() > 900:
+        raise ValueError('retrieval-only collection window exceeds fifteen minutes')
+    result.update(status='IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK',
+                  clock_semantics=packet['clock_semantics'], consensus='CONSENSUS_UNAVAILABLE')
+    return result
 
 
 def load_review(ref):
@@ -42,7 +80,7 @@ def validate(row, market_row, model, as_of):
                   'material_sources', 'uncertainty', 'decision_rule', 'source_qualification',
                   'market_reference', 'acceptable_number', 'reconciliation_utc',
                   'planning_cutoff_utc', 'cutoff_basis', 'execution_window'])
-    if r['schema'] != REVIEW_SCHEMA or r['state'] != 'CONDITIONAL': raise ValueError('unsupported recommendation review/state')
+    if r['schema'] not in (REVIEW_SCHEMA, RETRIEVAL_REVIEW_SCHEMA) or r['state'] != 'CONDITIONAL': raise ValueError('unsupported recommendation review/state')
     if r['game_id'] != row['game_id'] or r['original_lineage_blob'] != gate.LINEAGE_SHA:
         raise ValueError('review game/original-model lineage mismatch')
     if model['first_frozen_status'] != 'PREDICTION': raise ValueError('conditional review cannot replace original model exclusion')
@@ -70,9 +108,7 @@ def validate(row, market_row, model, as_of):
     if packet.get('kickoff_utc') != market_row['kickoff_utc'] or packet.get('kickoff_source_url') != market_row['kickoff_source_url']:
         raise ValueError('review/canonical kickoff binding mismatch')
     if gate.clock(packet['collection_end']) > recorded: raise ValueError('market source acquired after review')
-    benchmark = reference(packet, as_of)
-    if benchmark['status'] != 'STRUCTURALLY_QUALIFIED_DESCRIPTIVE_REFERENCE':
-        raise ValueError('conditional review requires qualified non-Caesars reference constituents/clocks')
+    benchmark = market_reference(r, as_of)
     limit = r['acceptable_number']
     gate.keys(limit, ['market', 'selection', 'line', 'minimum_price', 'direction'])
     if any(limit[k] != r[k] for k in ('market', 'selection')): raise ValueError('limit selection mismatch')
@@ -103,7 +139,13 @@ def display(row, market_row, model, as_of):
     number = '' if limit['line'] is None else f"{limit['direction']} {limit['line']:g}; "
     conditions = f"{r['selection']} {r['market']}; {number}minimum price {limit['minimum_price']:+d}; valid until {r['planning_cutoff_utc']}; VENUE_CONFIRMATION_PENDING; not a placed bet"
     conditions += '; uncertainty: '+r['uncertainty']
-    context = f"REVIEW-EVIDENCED non-Caesars reference: {benchmark['operator_count']} operators; points {benchmark['reference_points']}; dispersion {benchmark['points_range']}; boundary {r['market_reference']['collection_end']}; source truth independently reviewed, not certified by renderer"
+    if benchmark['status'] == 'IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK':
+        context = (f"IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK; CONSENSUS_UNAVAILABLE; "
+                   f"{benchmark['clock_semantics']}; boundary {r['market_reference']['collection_end']}; "
+                   "offer-update UNKNOWN unless explicitly supplied; execution UNVERIFIED; "
+                   "source truth independently reviewed, not certified by renderer")
+    else:
+        context = f"REVIEW-EVIDENCED non-Caesars reference: {benchmark['operator_count']} operators; points {benchmark['reference_points']}; dispersion {benchmark['points_range']}; boundary {r['market_reference']['collection_end']}; source truth independently reviewed, not certified by renderer"
     context += '; prices at reference line '+str(benchmark['exact_reference_line_price_range'])+'; '+benchmark['price_comparison']
     for q in benchmark['constituents']:
         exclusion=' [EXCLUDED FROM REFERENCE]' if any(identity_key(s).startswith('caesars') for s in (q['book'],q['operator'])) else ''
