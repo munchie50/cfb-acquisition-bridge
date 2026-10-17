@@ -7565,3 +7565,193 @@ Open integrity debt: the market and decision additions are still untyped append-
   ]
 }
 ```
+
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-17T00:49:47Z",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "Navigation only; recover detailed authority and exact bytes. Production Routine v5 active/Test Routine v6 candidate; Champion and original FIRST_FROZEN unchanged.",
+    "October13 retained scheduled Tuesday38420115839/artifact11825867738 independently audited NOW, lateOctober16CT/October17UTC. Exact S0 ACCEPTED:440targets/437predictions3exclusions/880sides877chronology rows. All17hashes/frozenmodel identity/independent prediction recomputation/strict chronology PASS. No outcomes/market/execution join/refit/protected2025 analysis. Acceptance not backdated.",
+    "Acceptance and machine audit independently persisted/read back BEFORE separate accepted-source pointer advance October6 to October13. Candidate immutable NOT_ACCEPTED manifest unchanged; independent acceptance record governs exact S0 bytes only. Weekly candidate success alone is not acceptance.",
+    "Same-cutoff v4 context/target-baseline semantic acceptance and October13 consumer/display binding remain OPEN. No S2 output/promotion/operational model selection follows by implication. Historical October6 adapter evidence remains historical. No new candidate/source acquisition or workflow dispatch.",
+    "Existing current manual1938CT HotSheet remains23PASS39INCONCLUSIVE62games; all51original predictions11exclusions/original153numeric values and23PASS preserved. No recommendations/wagers/money/execution/task/schedule mutation. Natural Evening/Monitor adoption not proved; historical failures/HealthRUN_INCOMPLETE preserved.",
+    "Independent existing CI at530923fb: accepted-pointer38987981334/source-noop38987981316 PASS and HotSheet38987981313 SUCCESS; structural/current-publication proof separate from actual retained-byte acceptance audit. Qualified market/material/rule/limit readiness for remaining39 still OPEN; Caesars absence alone is not recommendation blocker.",
+    "Current source/decision/publication controls and prior detailed manual reconciliation audit remain applicable. Terminal candidate then separate closure required; consult this run receipts for completion."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "0e410400554d04db094dbb9f64b4ecc74497a93d",
+      "purpose": "CURRENT_MARKET_STATE: genuine003625Z fullCBS fallback/62typedgames;52future;pastquotesretained;consensusunavailable"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "6bb4bea7caa78b94ede8dcc545aade3a2afef477",
+      "purpose": "CURRENT_DECISION_STATE: manual003831Z23PASS39INCONCLUSIVE;13dueprospectiveNO BET;alloldPASS/clocks preserved"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
+      "purpose": "CURRENT_EXECUTION_LEDGER: independently read and unchanged;no Week7 execution"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "4380a04b9ce285288861e910fc7b754f977529d1",
+      "purpose": "CURRENT_SCORECARD: Tuesday2 Wednesday2 Thursday2 authoritative finals joined only to genuine pre-event FIRST_FROZEN"
+    },
+    {
+      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
+      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
+      "purpose": "CURRENT_MONEY_LEDGER: independently read and unchanged"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
+      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
+      "purpose": "CURRENT_WEEKLY_REVIEW: acceptedWeek6 learning review;no automatic Champion or Challenger mutation"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
+      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
+      "purpose": "HISTORICAL_WEEKLY_REVIEW_SOURCE: exact immutable Health ancestor required by currentR2 carry-forward audit;not latestHealth"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261016T221451Z_AUDIT.md",
+      "blob": "7da79b672ead3c44e6a948d37caaf7875fd241eb",
+      "purpose": "LATEST_PERSISTED_HEALTH_AUDIT: October16 scoped CFBcyclesverified;overallRUN_INCOMPLETEhistoricaldebtpreserved"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
+      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+      "purpose": "accepted original62 target lineage census;51predictions+11exclusions;REFRESH separate"
+    },
+    {
+      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
+      "blob": "467e21006cc51fcc46b9577d7f98f301f9e63f84",
+      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October13 exactS0 independently accepted lateOct16CT; source pointer only, not operational model substitution"
+    },
+    {
+      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
+      "blob": "e1349015aa6d2b34f7564ff60b405f9cf3841cfa",
+      "purpose": "ACTIVE_PRESENTATION_CONTROL"
+    },
+    {
+      "path": "evidence/CFB_CBS_COMPLETE_RESPONSE_CAPTURE_PROCEDURE_2026-10-14.md",
+      "blob": "ab554daa0446c3fccd27b7026a74700d65bc6daf",
+      "purpose": "ACTIVE_COMPLETE_RESPONSE_CAPTURE_CONTROL"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_TYPED_WEEKLY_RECONCILIATION_QA_20261016T023112Z_AUDIT.md",
+      "blob": "df80a11164b4c4efed7e4bc4a5fa2788c8e98fff",
+      "purpose": "CURRENT_TYPED_PUBLICATION_REPAIR_QA: local107checks and accepted-archive frozen invariant; saved/read-back manual correction; see terminal closure for CI outcome"
+    },
+    {
+      "path": "evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md",
+      "blob": "ee15138c2ed397fb0e393eb6af9e6a2038a483c4",
+      "purpose": "ACTIVE_NEUTRAL_V1_V2_AND_BOUNDED_CONDITIONAL_V3_CONTROL: live actual clock strict; saved QA separate; WAIT/BETNOW unsupported"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_MONITOR_COMPILER_INTEGRATION_QA_20261016T025016Z_AUDIT.md",
+      "blob": "fc0f8f228fb1558198f087a7e3236151662351eb",
+      "purpose": "CURRENT_MONITOR_COMPILER_INTEGRATION_QA: existingtaskpromptandmanualCLIverified;schedulesunchanged;actualscheduledruntimeunproved"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_MONITOR_COMPILER_INTEGRATION_QA_20261016T025016Z_TYPED_EVENING_HANDOFF_ADDENDUM.md",
+      "blob": "9820a200d00e775d7f6f7a6e0bfa45d76bfb3fdf",
+      "purpose": "CURRENT_TYPED_EVENING_HANDOFF_QA: ownidentityV2EveningtoMonitortestsandtwoexistingtaskpromptintegration;naturaladoptionpending"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_DEADLINE_PRIMARY_SECTION_QA_20261016T025952Z_AUDIT.md",
+      "blob": "84b89f4771495eb1bdc9c9780f96af8aec665d90",
+      "purpose": "CURRENT_DEADLINE_PRIMARY_SECTION_QA: reproduceddeadlinebypassandFridayprimarycorrection;81localchecks;readterminalclosureforindependentCI"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_TYPED_HISTORY_QA_20261016T031417Z_AUDIT.md",
+      "blob": "efb701860ec4f7b2c5cf001f89ab76fd6f747b8d",
+      "purpose": "CURRENT_TYPED_HISTORY_CONTINUITY_QA: omission/duplicate/unknownhistoryrejected;125localchecksandindependentCI;manualonly;naturaladoptionpending"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-16_1301CT.md",
+      "blob": "441ec2a74dae91804b602ae8f6cfb1942f6545c7",
+      "purpose": "HISTORICAL_HOT_SHEET: immutable Friday13:01CT52INCONCLUSIVE10PASS source/display; superseded prospectively by manual1938CT correction"
+    },
+    {
+      "path": "evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261016T180051Z.md",
+      "blob": "080ef7be020bbaa6a41e5349d95f28758d25774b",
+      "purpose": "HISTORICAL_COMPLETE_RESPONSE_CAPTURE: Friday13:00CT source retained, not current fresh retrieval"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261016T175851Z_RUN_STARTED.md",
+      "blob": "388a73d66a515190d852799ce303e1a3896eb09c",
+      "purpose": "cycle observability start marker;not completion evidence"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_HOT_SHEET_READINESS_QA_20261016T235756Z_AUDIT.md",
+      "blob": "b2d8a6f9c7b6fecb61e85bea8ad4f12c3f4181e9",
+      "purpose": "CURRENT_RECOMMENDATION_DECOUPLING_QA:532localtests;independentCISUCCESS;fourpromptsupdated;schedulesunchanged;naturaladoptionpending"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_HOT_SHEET_READINESS_QA_20261016T235756Z_READINESS.json",
+      "blob": "7158c485b4fb5e2775fa123ae4659f3fae70f93a",
+      "purpose": "CURRENT_READ_ONLY_READINESS_DIAGNOSTIC:52open;9originalexclusions;3elapsedFridayquotes;noCaesarsrecommendationblock"
+    },
+    {
+      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
+      "blob": "528f2be56d2eb61bb37625b94ad40686be63346b",
+      "purpose": "ACTIVE_CONSENSUS_AND_VENUE_CONTROL:CaesarsNOTrequiredforrecommendations;sourceandlimitprotectionsunchanged"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_MARKET_SOURCE_DISCOVERY_QA_20261017T002257Z_AUDIT.md",
+      "blob": "e86be891bb0140015cf38d1fdc953869c7796f3a",
+      "purpose": "LATEST_STRUCTURED_ODDS_SOURCE_DISCOVERY: actual feed access USER_CHOICE_REQUIRED; docs only, clock qualification OPEN"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "blob": "5b812476fbe1e3fb13ccbb7f192eadc189bddf9a",
+      "purpose": "CURRENT_DURABLE_ACTION_REGISTER: October13S0accepted; companion/consumer and source readiness remain OPEN"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_CONSENSUS_IDENTITY_QA_20261017T002939Z_AUDIT.md",
+      "blob": "afe95f41ffc16bb83df149c3d1fb722d4e63fbec",
+      "purpose": "LATEST_CONSENSUS_IDENTITY_QA: test-before-fix and existingCI proof;13bounded saved-deadline exceptions; natural/source readiness OPEN"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-16_1938CT.md",
+      "blob": "682e542d77d18d3e7a6b9b9bd46714bd3a01d761",
+      "purpose": "CURRENT_HOT_SHEET: user-directedmanual1938CT;23PASS39INCONCLUSIVE62exactonce;Saturdayafternoonprimary;notnaturalproducerproof"
+    },
+    {
+      "path": "evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261017T003625Z.md",
+      "blob": "6bce08347e8b24ae45f5df2317028ad216f37e94",
+      "purpose": "CURRENT_COMPLETE_RESPONSE_CAPTURE: actual003625Z recoveredCBS62headers124teamrows;fallbackonly;noFinal/Openingestion"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_SATURDAY_MORNING_NO_BET_REVIEW_20261017T003831Z.json",
+      "blob": "9ac2326db7dd369260285c7fcab7d57507e0266f",
+      "purpose": "CURRENT_MANUAL_DUE_REVIEW:13prospectiveNO BETdecisions;8originalmodeledflags5exclusions;notfullavailability/edgeacceptance"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_PRESENTATION_RECONCILIATION_20261017T003530Z_AUDIT.md",
+      "blob": "4c113cfa148fa9b17d2dbdf405feb8ff3efbaf60",
+      "purpose": "LATEST_MANUAL_RECONCILIATION_AUDIT:actualsource/typedproducer/archivedfrozenchecks;13deadlineexceptionsprospectivelyresolved;naturalusepending"
+    },
+    {
+      "path": "evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-16_OCT13.md",
+      "blob": "18073bb6953082c9089e210cca1efe867140dcad",
+      "purpose": "LATEST_EXACT_S0_ACCEPTANCE: retained October13 boundary; late acceptance not backdated"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEKLY_REFRESH_AUDIT_20261017T004424Z.json",
+      "blob": "479f36c5dc9828ed959ba4bb5e288da18d042673",
+      "purpose": "LATEST_EXACT_S0_MACHINE_AUDIT: independently executed frozen recomputation and strictprior/hash audit"
+    },
+    {
+      "path": "evidence/CFB_QA_SANDBOX_CURRENT_CHECKPOINT_2026-09-28.md",
+      "blob": "13a5ffb03e9dc34010b4aee80c91d5990bbd8aaf",
+      "purpose": "CURRENT_SCIENTIFIC_CHECKPOINT: October13S0accepted; samecutoff companions and prospectiveconsumer still gated"
+    }
+  ]
+}
+```
