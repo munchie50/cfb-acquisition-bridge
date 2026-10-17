@@ -52,7 +52,7 @@ class ReadinessTests(unittest.TestCase):
         self.assertNotIn('BET NOW', str(r))
         self.assertNotIn('stake', r)
 
-    def test_authentic_current_neutral_diagnostic(self):
+    def test_authentic_current_diagnostic_covers_all_qualified_states(self):
         root = Path('evidence/operational')
         m = (root / 'CFB_MARKET_MONITOR_STATE.md').read_text()
         d = (root / 'CFB_DECISION_WAIT_LEDGER.md').read_text()
@@ -63,9 +63,9 @@ class ReadinessTests(unittest.TestCase):
         r = readiness.audit(m, d, lineage, at)
         self.assertEqual(r['games'], 62)
         self.assertEqual(len({x['game_id'] for x in r['rows']}), 62)
-        self.assertEqual(r['open_games'] + r['preserved_pass'], 62)
+        self.assertEqual(r['open_games'] + r['preserved_pass'] + r['conditional_recommendations'], 62)
         self.assertFalse(r['caesars_required_for_recommendation'])
-        self.assertEqual(r['recommendation_blocker_counts']['MARKET_REFERENCE_MISSING'], r['open_games'])
+        self.assertEqual(r['recommendation_blocker_counts'].get('MARKET_REFERENCE_MISSING', 0), r['open_games'])
         self.assertTrue(all('CAESARS' not in b for b in r['recommendation_blocker_counts']))
 
     def test_stale_publication_is_diagnosed_not_retimed(self):
