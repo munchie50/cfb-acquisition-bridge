@@ -66,8 +66,11 @@ def advance(market,decision,capture,lineage,cycle,as_of,recovered_by,decision_ro
         if row['game_id'] not in old_decisions:raise ValueError('unknown decision game')
         old=old_decisions[row['game_id']]
         if old['state']=='PASS':
-            if row['state']!='PASS':raise ValueError('closed PASS reopened')
-            row.update(state_recorded_at_utc=old['state_recorded_at_utc'],state_evidence=old['state_evidence'])
+            if row['state']!='PASS':
+                row.update(state_recorded_at_utc=as_of,state_evidence=cycle)
+                from cfb_conditional_recommendation_profile import reconsideration
+                reconsideration(row,old,as_of)
+            else:row.update(state_recorded_at_utc=old['state_recorded_at_utc'],state_evidence=old['state_evidence'])
         else:row.update(state_recorded_at_utc=as_of,state_evidence=cycle)
     for obj in (m,d):obj.update(cycle_id=cycle,as_of_utc=as_of)
     pm=market+packet(m,gate.MARKET_TAG);pd=decision+packet(d,gate.DECISION_TAG)
