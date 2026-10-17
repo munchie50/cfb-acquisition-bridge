@@ -43,22 +43,26 @@ def advance(market,decision,capture,lineage,cycle,as_of,recovered_by,decision_ro
     """
     gate.bootstrap(market,decision,lineage)
     m=copy.deepcopy(gate.selected_block(market,gate.MARKET_TAG,(gate.MARKET_SCHEMA,gate.WEEKLY_MARKET_SCHEMA),gate.clock(as_of)))
-    d=copy.deepcopy(gate.selected_block(decision,gate.DECISION_TAG,(gate.DECISION_SCHEMA,gate.WEEKLY_DECISION_SCHEMA),gate.clock(as_of)))
-    if m['schema']!=gate.WEEKLY_MARKET_SCHEMA or d['schema']!=gate.WEEKLY_DECISION_SCHEMA:raise ValueError('weekly bootstrap required before advance')
+    d=copy.deepcopy(gate.selected_block(decision,gate.DECISION_TAG,(gate.DECISION_SCHEMA,)+gate.WEEKLY_DECISION_SCHEMAS,gate.clock(as_of)))
+    if m['schema']!=gate.WEEKLY_MARKET_SCHEMA or d['schema'] not in gate.WEEKLY_DECISION_SCHEMAS:raise ValueError('weekly bootstrap required before advance')
     if not gate.clock(m['as_of_utc'])<gate.clock(recovered_by)<=gate.clock(as_of):raise ValueError('fresh source recovery must follow prior typed boundary')
     board=normalize(capture,lineage,recovered_by)
     byid={r['game_id']:r for r in m['rows']};old_decisions={r['game_id']:r for r in d['rows']}
     for game in board['games']:
         row=byid[game['game_id']]
         if game['temporal_status']=='FUTURE_AT_CAPTURE':
-            row.update(kickoff_utc=game['source_kickoff_utc'],kickoff_source_url=URL,kickoff_status='RETAINED_UNVERIFIED')
+            if row['kickoff_status']!='QUALIFIED' or row['kickoff_utc']!=game['source_kickoff_utc']:
+                row.update(kickoff_utc=game['source_kickoff_utc'],kickoff_source_url=URL,kickoff_status='RETAINED_UNVERIFIED')
             apply_offer(row,board_offer(game,recovered_by),as_of)
         else:
             if row['kickoff_utc'] is None or gate.clock(row['kickoff_utc'])>gate.clock(recovered_by):raise ValueError('source/retained kickoff conflict requires qualification')
             row.update(current=None,current_availability='UNAVAILABLE',retained=row['current'] or row['retained'])
     d['rows']=copy.deepcopy(decision_rows)
+    conditional=d['schema']==gate.CONDITIONAL_DECISION_SCHEMA or any(r.get('state')=='CONDITIONAL' or 'review_ref' in r for r in d['rows'])
+    if conditional:d['schema']=gate.CONDITIONAL_DECISION_SCHEMA
     for row in d['rows']:
-        gate.keys(row,['game_id','state','reason','reconciliation_utc','planning_cutoff_utc','cutoff_authority','acceptable_number','execution_window'])
+        if conditional:row.setdefault('review_ref',None)
+        gate.keys(row,['game_id','state','reason','reconciliation_utc','planning_cutoff_utc','cutoff_authority','acceptable_number','execution_window']+(['review_ref'] if conditional else []))
         if row['game_id'] not in old_decisions:raise ValueError('unknown decision game')
         old=old_decisions[row['game_id']]
         if old['state']=='PASS':

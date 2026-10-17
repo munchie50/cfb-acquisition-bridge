@@ -60,6 +60,12 @@ def audit(market, decision, lineage, as_of):
                          'recommendation_blockers': [],
                          'disposition': 'PRESERVE_CLOSED_PASS'})
             continue
+        if row['state'] == 'CONDITIONAL':
+            rows.append({'game_id': gid, 'state': 'CONDITIONAL',
+                         'recommendation_blockers': [],
+                         'disposition': 'REVIEW_EVIDENCED_CONDITIONAL_NOT_VERIFIED_EXECUTION',
+                         'review_ref': row['review_ref'], 'venue_confirmation': 'PENDING'})
+            continue
         review = {name: 'UNREVIEWED' for name in REVIEW_FIELDS}
         # Qualified consensus cannot be represented by this neutral market
         # schema. A fallback observation is retained, never renamed consensus.
@@ -89,9 +95,10 @@ def audit(market, decision, lineage, as_of):
             'lineage_blob': gate.blob(lineage), 'games': len(rows),
             'open_games': sum(r['state'] == 'INCONCLUSIVE' for r in rows),
             'preserved_pass': sum(r['state'] == 'PASS' for r in rows),
+            'conditional_recommendations': sum(r['state'] == 'CONDITIONAL' for r in rows),
             'recommendation_blocker_counts': dict(sorted(counts.items())),
             'caesars_required_for_recommendation': False,
-            'publication_capability': 'NEUTRAL_ONLY_RICHER_RECOMMENDATION_ADAPTER_OPEN',
+            'publication_capability': 'CONDITIONAL_V3_SUPPORTED_WAIT_ADAPTER_OPEN',
             'rows': rows}
 
 
