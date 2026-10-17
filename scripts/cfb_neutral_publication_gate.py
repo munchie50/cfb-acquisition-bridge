@@ -43,7 +43,7 @@ def selected_block(content,tag,schema,as_of,expected_ids=None):
     markers=re.findall(r'^```'+tag+r'[ \t]*$',content,re.M)
     blocks=list(re.finditer(r'^```'+tag+r'[ \t]*\n(.*?)^```[ \t]*$',content,re.M|re.S))
     if not blocks or len(markers)!=len(blocks):raise ValueError('missing/incomplete canonical presentation block')
-    prior=None; result=None; cycles=set()
+    prior=None; result=None; cycles=set(); established_limits={}
     for m in blocks:
         r=json.loads(m.group(1),object_pairs_hook=unique)
         keys(r,['schema','cycle_id','as_of_utc','rows'])
@@ -81,6 +81,8 @@ def selected_block(content,tag,schema,as_of,expected_ids=None):
         if result is not None and r['schema'] in WEEKLY_DECISION_SCHEMAS:
             old={x['game_id']:x for x in result['rows']}
             for x in r['rows']:
+                if x.get('state')=='CONDITIONAL' and x['game_id'] in established_limits and x.get('acceptable_number')!=established_limits[x['game_id']]:
+                    raise ValueError('historical original conditional limits cannot change through PASS')
                 previous=old.get(x['game_id'])
                 if previous is not None:
                     # Current-cycle clocks cannot erase an earlier constraint.
@@ -106,6 +108,10 @@ def selected_block(content,tag,schema,as_of,expected_ids=None):
         if result is not None and result['schema'] in (WEEKLY_MARKET_SCHEMA,)+WEEKLY_DECISION_SCHEMAS and r['schema'] in (MARKET_SCHEMA,DECISION_SCHEMA):raise ValueError('weekly schema downgrade')
         if result is not None and result['schema']==CONDITIONAL_DECISION_SCHEMA and r['schema']!=CONDITIONAL_DECISION_SCHEMA:
             raise ValueError('conditional schema downgrade')
+        if r['schema'] in WEEKLY_DECISION_SCHEMAS:
+            for x in r['rows']:
+                if x.get('acceptable_number') is not None:
+                    established_limits.setdefault(x['game_id'],x['acceptable_number'])
         prior=at;result=r
     # The typed block closes the canonical surface's current presentation boundary.
     if content[blocks[-1].end():].strip():raise ValueError('untyped canonical tail requires reconciliation')
