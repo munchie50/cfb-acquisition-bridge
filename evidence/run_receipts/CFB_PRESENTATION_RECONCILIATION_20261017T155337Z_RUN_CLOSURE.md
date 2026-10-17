@@ -1,0 +1,18 @@
+# CFB full multi-market review closure
+
+run_id: CFB_PRESENTATION_RECONCILIATION_20261017T155337Z
+execution_class: USER_DIRECTED_MANUAL_FULL_REVIEW
+prospective_publication_boundary_utc: 2026-10-17T16:05:00.440723Z
+closure_issued_at_utc: 2026-10-17T16:10:45.678Z
+final_terminal_state: RUN_PASS
+
+Closure issued only AFTER allapplicablecode/control/source/review/canonical/view/readiness/indexsurfaces were independentlyreadback and terminalcandidate evidence/run_receipts/CFB_PRESENTATION_RECONCILIATION_20261017T155337Z_TERMINAL_CANDIDATE.md blob 0de68a67ab5b16968c547f3f6bbe5f7a2d3b5ea2 commit 97ea06698e05a8c8820fe67d5df914ef3fe0ad2f was independentlyfetched andmatchedexactly. Exactapplicablesurfaceidentities andretainedintermediatefailure/proofdetails areinthatcandidate.
+
+CurrentHotSheet evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-17_1105CT.md blob 9dbec0ff1469fd06132ecd47374bcae25e9b3f5c reconciles62games57PASS5CONDITIONAL0INCONCLUSIVE. Five rankedqualitativecontrolledBetasingles: Nebraska+6.5(-110minimum),PennState+6(-110minimum),Houston-4.5(-110minimum),AirForceML(-115minimum),VirginiaTech-8.5(-110minimum). Allfive earnednewimmutableprospectivereviews beforedecision; earlierPASS history andallhardcutoffs/originallimits preserved. Miami currentpricefailure nowPASS; no historicalrewrite. ActualcasinooffersUNVERIFIED; no wagerplaced. Allstylesconsidered40games120dispositions,0coretotals/parlays,notquota.
+
+Final coherentCI39048139604/job117440928138 SUCCESS564methods/28groups.32pointerconsumerpreflightbeforewriteandafterreadback,independentwholeviewaudit,currentreadiness andprotectedhashcheckspassed. Newreconsiderationprofileactualsourceendtoenddemonstratedmanually; natural scheduledadoptionpending. No routine/modelpromotion,task/schedule/capital/executionmutation. BigNinepaused.
+
+unresolved_manual_review_scope: NONE
+remaining_engine_debt: natural scheduledadoption,wholeenginebaseline,crossweekperformance/controlcostanalysis remainpending. This manualsuccess doesnotestablishsustainedbettingadvantage or overallstabilization.
+scientific_effect: NONE
+champion_effect: NONE
