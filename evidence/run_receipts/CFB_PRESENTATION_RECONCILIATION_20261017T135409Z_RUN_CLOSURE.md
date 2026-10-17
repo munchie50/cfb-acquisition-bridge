@@ -1,0 +1,19 @@
+# Complete betting review — closure
+
+cycle_id:CFB_PRESENTATION_RECONCILIATION_20261017T135409Z
+final_terminal_state:RUN_PASS_SCOPED_MANUAL_BETTING_REVIEW
+terminal_candidate:evidence/run_receipts/CFB_PRESENTATION_RECONCILIATION_20261017T135409Z_TERMINAL_CANDIDATE.md
+terminal_candidate_readback_blob:4e1e4a6ba4a90b993e5ab2127ab31117338727bd
+closure_order:AFTER exact independent candidate/source/review/canonical/sheet/navigation readbacks and final fullCI39039178382 SUCCESS;556methods,accepted original153numericfields,currentV3wholeview
+
+Completed21previously-open games/63market dispositions with their football/source limitations explicit. Current62game output61PASS1CONDITIONAL0INCONCLUSIVE. One controlled-Beta Miami-20.5orbetter atprice-110orbetter;13CTreview/17CThardcutoff/18CTkickoff preserved. OfficialACC/AP evidence and identified retrieval-only DraftKings benchmark independently reviewed; consensus/execution remain unverified. No stake or bet created. Earlier41PASS/51originalpredictions11exclusions/153numbers,acceptedsource,money,execution,scorecard,Champion and task/schedule configuration unchanged by the scoped recommendation process correction.
+
+recovery_index_readback_blob:6796ba510e20386329c4ece4621ea9e033c37c14
+current_sheet_readback_blob:201ba6e757d478d7a3d03cab200f9a8d0b3934b9
+current_decision_readback_blob:49f59e2db876e4eab6f0789f0f81591e58afed41
+current_market_readback_blob:21f22e64f4e31eacddaf63864760f5d56c30b5c8
+immutable_review_readback_blob:9c789f9d1c5632adeb256031d3723fa339ea5a9a
+full_review_readback_blob:e48bb315221cd3b06152357755ad4c21110f2353
+action_register_readback_blob:b0933ff693529610b15383111486e4f7f56b6290
+
+Scoped actual-source manual review and publication complete. Additional path's natural scheduled adoption remains DEMONSTRATION_PENDING at next existing13CTcycle, which must reassess the original conditional limits/material facts or PASS. No production/scientific/routine promotion, future background execution guarantee, fake consensus, perfect-availability claim or historical failure upgrade.
