@@ -63,6 +63,67 @@ class ConsensusTests(unittest.TestCase):
         self.p['quotes'][0]['line']=float('nan')
         with self.assertRaises(ValueError):self.run_ref()
 
+    def test_padded_operator_labels_cannot_manufacture_three_books(self):
+        for q, label in zip(self.p['quotes'], ('SyntheticOperator0', ' SyntheticOperator0', 'SyntheticOperator0 ')):
+            q.update(operator=label, line=3)
+        result=self.run_ref()
+        self.assertEqual(result['operator_count'],1)
+        self.assertEqual(result['status'],'CONSENSUS_UNAVAILABLE')
+
+    def test_padding_and_case_together_still_deduplicate(self):
+        for q, label in zip(self.p['quotes'], (' SyntheticOperator0 ', 'SYNTHETICOPERATOR0', '\u00a0syntheticoperator0\u00a0')):
+            q.update(operator=label, line=3)
+        self.assertEqual(self.run_ref()['operator_count'],1)
+
+    def test_same_operator_conflict_cannot_hide_in_padding(self):
+        self.p['quotes'][1]['operator']=' '+self.p['quotes'][0]['operator']+' '
+        with self.assertRaisesRegex(ValueError,'same-operator'):
+            self.run_ref()
+
+    def test_padded_caesars_book_label_is_excluded(self):
+        self.p['quotes'][0].update(book=' Caesars NJ ',operator='SyntheticSkin')
+        result=self.run_ref()
+        self.assertEqual(result['operator_count'],2)
+        self.assertEqual(result['excluded'],[{'book':' Caesars NJ ','reason':'CAESARS_EXCLUDED'}])
+        self.assertEqual(result['status'],'CONSENSUS_UNAVAILABLE')
+
+    def test_padded_caesars_operator_label_is_excluded(self):
+        self.p['quotes'][0].update(book='SyntheticSkin',operator='\u00a0cAeSaRs Entertainment\u00a0')
+        result=self.run_ref()
+        self.assertEqual(result['operator_count'],2)
+        self.assertEqual(result['status'],'CONSENSUS_UNAVAILABLE')
+
+    def test_semantically_invalid_market_selection_rejected(self):
+        for market, selection in (('SPREAD','over'),('TOTAL','away'),('MONEYLINE','under'),('SPREAD','invented')):
+            with self.subTest(market=market,selection=selection):
+                p=copy.deepcopy(self.p);p.update(market=market,selection=selection)
+                for q in p['quotes']:q.update(market=market,selection=selection,line=None if market=='MONEYLINE' else 3)
+                with self.assertRaisesRegex(ValueError,'selection'):
+                    consensus.reference(p,'2026-10-16T23:05:00Z')
+
+    def test_normalization_preserves_all_raw_constituent_labels(self):
+        self.p['quotes'][0].update(book=' SyntheticBook0 ',operator=' SyntheticOperator0 ')
+        original=copy.deepcopy(self.p)
+        result=self.run_ref()
+        self.assertEqual(self.p,original)
+        self.assertEqual(result['constituents'],original['quotes'])
+        self.assertEqual(result['operator_count'],3)
+
+    def test_conditional_display_marks_padded_caesars_excluded(self):
+        from unittest.mock import patch
+        import cfb_conditional_recommendation_profile as profile
+        q=copy.deepcopy(self.p['quotes'][0]);q.update(book=' Caesars NJ ',operator='SyntheticSkin')
+        self.p['quotes'].append(q)
+        reference=self.run_ref()
+        review=dict(acceptable_number=dict(line=3,minimum_price=-110,direction='AT_LEAST'),
+                    selection='away',market='SPREAD',planning_cutoff_utc='2026-10-17T14:00:00Z',
+                    uncertainty='Synthetic only',market_reference=self.p)
+        with patch.object(profile,'validate',return_value=(review,reference)):
+            conditions,context=profile.display({}, {}, {}, '2026-10-16T23:05:00Z')
+        self.assertIn(' Caesars NJ  [EXCLUDED FROM REFERENCE]',context)
+        self.assertIn('3 operators',context)
+        self.assertIn('VENUE_CONFIRMATION_PENDING',conditions)
+
     def test_postkickoff_collection_rejected_and_old_reference_labelled(self):
         r=consensus.reference(self.p,'2026-10-18T00:00:00Z')
         self.assertIn('AT_OR_AFTER_KICKOFF',r['reasons'])
