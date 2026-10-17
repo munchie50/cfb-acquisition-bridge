@@ -1,0 +1,1113 @@
+site: media \| arena: collegefootball \| pageType: odds \|
+section: \| slug: \| sport: collegefootball \| route: odds\_college\_football \|
+6-keys: media/spln/collegefootball/reg/free/odds
+
+[Skip to Main Content](https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/#page-content)
+
+Close
+
+Sign in with your TV provider
+
+If not listed, please contact your TV provider.
+
+![[object Object] Logo](https://sportshub.cbsistatic.com/i/2020/04/22/e9ceb731-8b3f-4c60-98fe-090ab66a2997/screen-shot-2020-04-22-at-11-04-56-am.png)
+
+All ProvidersXfinity
+
+[![college-football Subnav Logo](https://sports.cbsimg.net/fly/images/icon-logos/light/football.svg)](https://www.cbssports.com/college-football/)
+
+# Odds - Week 7
+
+This page may contain affiliate links. If you click a link and sign up, make a deposit, place a wager, or make a trade, we may earn a commission at no additional cost to you.
+
+
+Odds and lines are subject to change.
+
+
+Week 1
+
+Week 2
+
+Week 3
+
+Week 4
+
+Week 5
+
+Week 6
+
+Week 7
+
+Week 8
+
+Week 9
+
+Week 10
+
+Week 11
+
+Week 12
+
+Week 13
+
+Week 14
+
+Week 15
+
+Week 16
+
+Bowls 16
+
+Bowls 17
+
+Bowls 18
+
+Bowls 19
+
+Semifinals
+
+Championship
+
+
+All Games
+
+Top 25
+
+All FBS Games
+
+All FCS Games
+
+American
+
+ACC
+
+Big Ten
+
+Big 12
+
+Conference USA
+
+FBS Independents
+
+Mid American
+
+Mountain West
+
+Pac-12
+
+SEC
+
+Sun Belt
+
+Big Sky
+
+Big South-OVC
+
+Coastal
+
+FCS Independents
+
+Ivy
+
+MEAC
+
+Missouri Valley
+
+Northeast
+
+Patriot
+
+Pioneer
+
+Southern
+
+Southland
+
+SWAC
+
+United Athletic
+
+
+| Fri Oct 16, 7:30pm<br> <br> Fri 7:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/681.svg)](https://www.cbssports.com/college-football/teams/MEMP/memphis-tigers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/681.svg)](https://www.cbssports.com/college-football/teams/MEMP/memphis-tigers/)<br>[MEM](https://www.cbssports.com/college-football/teams/MEMP/memphis-tigers/)[Memphis](https://www.cbssports.com/college-football/teams/MEMP/memphis-tigers/) | 10 | o54.5<br> <br> <br> -110 | -6.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -258<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o55.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/867.svg)](https://www.cbssports.com/college-football/teams/TULANE/tulane-green-wave/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/867.svg)](https://www.cbssports.com/college-football/teams/TULANE/tulane-green-wave/)<br>[TUL](https://www.cbssports.com/college-football/teams/TULANE/tulane-green-wave/)[Tulane](https://www.cbssports.com/college-football/teams/TULANE/tulane-green-wave/) | 6 | +5.5<br> <br> <br> -110 | +7<br> <br> -114<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +215<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | u55.5<br> <br> -104<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| - [4 Expert Picks](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261016_MEMP@TULANE/) |
+
+| Fri Oct 16, 8:00pm<br> <br> Fri 8:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/466.svg)](https://www.cbssports.com/college-football/teams/APLST/appalachian-state-mountaineers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/466.svg)](https://www.cbssports.com/college-football/teams/APLST/appalachian-state-mountaineers/)<br>[APP](https://www.cbssports.com/college-football/teams/APLST/appalachian-state-mountaineers/)[App. St.](https://www.cbssports.com/college-football/teams/APLST/appalachian-state-mountaineers/) | 14 | o49.5<br> <br> <br> -111 | +1<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o48.5<br> <br> -114<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/431245.svg)](https://www.cbssports.com/college-football/teams/CSTCAR/coastal-carolina-chanticleers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/431245.svg)](https://www.cbssports.com/college-football/teams/CSTCAR/coastal-carolina-chanticleers/)<br>[CCU](https://www.cbssports.com/college-football/teams/CSTCAR/coastal-carolina-chanticleers/)[C. Carolina](https://www.cbssports.com/college-football/teams/CSTCAR/coastal-carolina-chanticleers/) | 7 | +1.5<br> <br> <br> -109 | +1.5<br> <br> -114<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | u48.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+
+| Fri Oct 16, 8:00pm<br> <br> Fri 8:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/895.svg)](https://www.cbssports.com/college-football/teams/WASH/washington-huskies/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/895.svg)](https://www.cbssports.com/college-football/teams/WASH/washington-huskies/)<br>[WASH](https://www.cbssports.com/college-football/teams/WASH/washington-huskies/)[Washington](https://www.cbssports.com/college-football/teams/WASH/washington-huskies/) | 7 | o53.5<br> <br> <br> -110 | +3.5<br> <br> -118<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +137<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o50.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/774.svg)](https://www.cbssports.com/college-football/teams/PURDUE/purdue-boilermakers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/774.svg)](https://www.cbssports.com/college-football/teams/PURDUE/purdue-boilermakers/)<br>[PUR](https://www.cbssports.com/college-football/teams/PURDUE/purdue-boilermakers/)[Purdue](https://www.cbssports.com/college-football/teams/PURDUE/purdue-boilermakers/) | 3 | -1.5<br> <br> <br> -105 | -3<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -155<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u50.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261016_WASH@PURDUE/)<br>- [2 Expert Picks](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261016_WASH@PURDUE/) |
+
+| Sat Oct 17, 12:00pm<br> <br> Sat 12:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/758.svg)](https://www.cbssports.com/college-football/teams/OHIOST/ohio-state-buckeyes/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/758.svg)](https://www.cbssports.com/college-football/teams/OHIOST/ohio-state-buckeyes/)<br>4[OHST](https://www.cbssports.com/college-football/teams/OHIOST/ohio-state-buckeyes/)[Ohio State](https://www.cbssports.com/college-football/teams/OHIOST/ohio-state-buckeyes/) | 0 | o50.5<br> <br> <br> -110 | -3<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -154<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o50.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/629.svg)](https://www.cbssports.com/college-football/teams/IND/indiana-hoosiers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/629.svg)](https://www.cbssports.com/college-football/teams/IND/indiana-hoosiers/)<br>5[IND](https://www.cbssports.com/college-football/teams/IND/indiana-hoosiers/)[Indiana](https://www.cbssports.com/college-football/teams/IND/indiana-hoosiers/) | 0 | +3.5<br> <br> <br> -114 | +3.5<br> <br> -124<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | +136<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u50.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_OHIOST@IND/)<br>- [6 Expert Picks](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_OHIOST@IND/) |
+
+| Sat Oct 17, 12:00pm<br> <br> Sat 12:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/483.svg)](https://www.cbssports.com/college-football/teams/BALLST/ball-state-cardinals/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/483.svg)](https://www.cbssports.com/college-football/teams/BALLST/ball-state-cardinals/)<br>[BALL](https://www.cbssports.com/college-football/teams/BALLST/ball-state-cardinals/)[Ball St.](https://www.cbssports.com/college-football/teams/BALLST/ball-state-cardinals/) | 0 | o44.5<br> <br> <br> -110 | +6.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +210<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o47.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/496.svg)](https://www.cbssports.com/college-football/teams/BGREEN/bowling-green-falcons/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/496.svg)](https://www.cbssports.com/college-football/teams/BGREEN/bowling-green-falcons/)<br>[BG](https://www.cbssports.com/college-football/teams/BGREEN/bowling-green-falcons/)[Bowling Green](https://www.cbssports.com/college-football/teams/BGREEN/bowling-green-falcons/) | 0 | -8.5<br> <br> <br> -110 | -6.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -235<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | u47.5<br> <br> -114<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| - [1 Expert Pick](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_BALLST@BGREEN/) |
+
+| Sat Oct 17, 12:00pm<br> <br> Sat 12:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/644.svg)](https://www.cbssports.com/college-football/teams/KANSAS/kansas-jayhawks/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/644.svg)](https://www.cbssports.com/college-football/teams/KANSAS/kansas-jayhawks/)<br>[KAN](https://www.cbssports.com/college-football/teams/KANSAS/kansas-jayhawks/)[Kansas](https://www.cbssports.com/college-football/teams/KANSAS/kansas-jayhawks/) | 0 | o54.5<br> <br> <br> -110 | +3.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +145<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o55.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/645.svg)](https://www.cbssports.com/college-football/teams/KSTATE/kansas-state-wildcats/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/645.svg)](https://www.cbssports.com/college-football/teams/KSTATE/kansas-state-wildcats/)<br>[KSU](https://www.cbssports.com/college-football/teams/KSTATE/kansas-state-wildcats/)[Kansas State](https://www.cbssports.com/college-football/teams/KSTATE/kansas-state-wildcats/) | 0 | -7.5<br> <br> <br> -110 | -3.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -172<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u55.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_KANSAS@KSTATE/) |
+
+| Sat Oct 17, 12:00pm<br> <br> Sat 12:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/531.svg)](https://www.cbssports.com/college-football/teams/CINCY/cincinnati-bearcats/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/531.svg)](https://www.cbssports.com/college-football/teams/CINCY/cincinnati-bearcats/)<br>[CIN](https://www.cbssports.com/college-football/teams/CINCY/cincinnati-bearcats/)[Cincinnati](https://www.cbssports.com/college-football/teams/CINCY/cincinnati-bearcats/) | 0 | o61.5<br> <br> <br> -110 | +1.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +102<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o63.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/907.svg)](https://www.cbssports.com/college-football/teams/WVU/west-virginia-mountaineers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/907.svg)](https://www.cbssports.com/college-football/teams/WVU/west-virginia-mountaineers/)<br>[WVU](https://www.cbssports.com/college-football/teams/WVU/west-virginia-mountaineers/)[West Virginia](https://www.cbssports.com/college-football/teams/WVU/west-virginia-mountaineers/) | 0 | -1.5<br> <br> <br> -110 | -1.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -120<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | u63.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_CINCY@WVU/) |
+
+| Sat Oct 17, 12:00pm<br> <br> Sat 12:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/751.svg)](https://www.cbssports.com/college-football/teams/NWEST/northwestern-wildcats/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/751.svg)](https://www.cbssports.com/college-football/teams/NWEST/northwestern-wildcats/)<br>25[NW](https://www.cbssports.com/college-football/teams/NWEST/northwestern-wildcats/)[Northwestern](https://www.cbssports.com/college-football/teams/NWEST/northwestern-wildcats/) | 0 | o48.5<br> <br> <br> -110 | -7<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -294<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o49.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/690.svg)](https://www.cbssports.com/college-football/teams/MICHST/michigan-state-spartans/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/690.svg)](https://www.cbssports.com/college-football/teams/MICHST/michigan-state-spartans/)<br>[MSU](https://www.cbssports.com/college-football/teams/MICHST/michigan-state-spartans/)[Michigan St.](https://www.cbssports.com/college-football/teams/MICHST/michigan-state-spartans/) | 0 | +7.5<br> <br> <br> -105 | +7.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | +250<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | u50.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_NWEST@MICHST/) |
+
+| Sat Oct 17, 12:00pm<br> <br> Sat 12:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/1748174.svg)](https://www.cbssports.com/college-football/teams/GAST/georgia-state-panthers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/1748174.svg)](https://www.cbssports.com/college-football/teams/GAST/georgia-state-panthers/)<br>[GAST](https://www.cbssports.com/college-football/teams/GAST/georgia-state-panthers/)[Georgia St.](https://www.cbssports.com/college-football/teams/GAST/georgia-state-panthers/) | 0 | o52.5<br> <br> <br> -115 | +10.5<br> <br> -122<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | +290<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o57.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/639.svg)](https://www.cbssports.com/college-football/teams/JMAD/james-madison-dukes/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/639.svg)](https://www.cbssports.com/college-football/teams/JMAD/james-madison-dukes/)<br>[JMAD](https://www.cbssports.com/college-football/teams/JMAD/james-madison-dukes/)[James Madison](https://www.cbssports.com/college-football/teams/JMAD/james-madison-dukes/) | 0 | -11.5<br> <br> <br> -105 | -9.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -360<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u57.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+
+| Sat Oct 17, 12:00pm<br> <br> Sat 12:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/581.svg)](https://www.cbssports.com/college-football/teams/FLA/florida-gators/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/581.svg)](https://www.cbssports.com/college-football/teams/FLA/florida-gators/)<br>[FLA](https://www.cbssports.com/college-football/teams/FLA/florida-gators/)[Florida](https://www.cbssports.com/college-football/teams/FLA/florida-gators/) | 0 | o51.5<br> <br> <br> -107 | +11.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +340<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o51.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/853.svg)](https://www.cbssports.com/college-football/teams/TEXAS/texas-longhorns/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/853.svg)](https://www.cbssports.com/college-football/teams/TEXAS/texas-longhorns/)<br>7[TEX](https://www.cbssports.com/college-football/teams/TEXAS/texas-longhorns/)[Texas](https://www.cbssports.com/college-football/teams/TEXAS/texas-longhorns/) | 0 | -9.5<br> <br> <br> -114 | -11<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -420<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | u51.5<br> <br> -114<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_FLA@TEXAS/)<br>- [1 Expert Pick](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_FLA@TEXAS/) |
+
+| Sat Oct 17, 12:00pm<br> <br> Sat 12:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/527.svg)](https://www.cbssports.com/college-football/teams/CHARSO/charleston-southern-buccaneers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/527.svg)](https://www.cbssports.com/college-football/teams/CHARSO/charleston-southern-buccaneers/)<br>[CHSO](https://www.cbssports.com/college-football/teams/CHARSO/charleston-southern-buccaneers/)[Charleston So.](https://www.cbssports.com/college-football/teams/CHARSO/charleston-southern-buccaneers/) | 0 | o58.5<br> <br> <br> -110 | +43.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +8000<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o57.5<br> <br> -106<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/535.svg)](https://www.cbssports.com/college-football/teams/CLEM/clemson-tigers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/535.svg)](https://www.cbssports.com/college-football/teams/CLEM/clemson-tigers/)<br>[CLEM](https://www.cbssports.com/college-football/teams/CLEM/clemson-tigers/)[Clemson](https://www.cbssports.com/college-football/teams/CLEM/clemson-tigers/) | 0 | -43.5<br> <br> <br> -110 | -42.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | -100000<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | u57.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_CHARSO@CLEM/) |
+
+| Sat Oct 17, 12:00pm<br> <br> Sat 12:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/237794.svg)](https://www.cbssports.com/college-football/teams/FAU/florida-atlantic-owls/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/237794.svg)](https://www.cbssports.com/college-football/teams/FAU/florida-atlantic-owls/)<br>[FAU](https://www.cbssports.com/college-football/teams/FAU/florida-atlantic-owls/)[FAU](https://www.cbssports.com/college-football/teams/FAU/florida-atlantic-owls/) | 0 | o59.5<br> <br> <br> -110 | +2.5<br> <br> -118<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o54.5<br> <br> -114<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/474.svg)](https://www.cbssports.com/college-football/teams/ARMY/army-west-point-black-knights/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/474.svg)](https://www.cbssports.com/college-football/teams/ARMY/army-west-point-black-knights/)<br>[ARMY](https://www.cbssports.com/college-football/teams/ARMY/army-west-point-black-knights/)[Army](https://www.cbssports.com/college-football/teams/ARMY/army-west-point-black-knights/) | 0 | -3<br> <br> <br> -110 | -1.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | -122<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | u54.5<br> <br> -102<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+
+| Sat Oct 17, 12:00pm<br> <br> Sat 12:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/767.svg)](https://www.cbssports.com/college-football/teams/PITT/pittsburgh-panthers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/767.svg)](https://www.cbssports.com/college-football/teams/PITT/pittsburgh-panthers/)<br>[PITT](https://www.cbssports.com/college-football/teams/PITT/pittsburgh-panthers/)[Pittsburgh](https://www.cbssports.com/college-football/teams/PITT/pittsburgh-panthers/) | 0 | o48.5<br> <br> <br> -110 | -6.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | -225<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o42.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/493.svg)](https://www.cbssports.com/college-football/teams/BC/boston-college-eagles/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/493.svg)](https://www.cbssports.com/college-football/teams/BC/boston-college-eagles/)<br>[BC](https://www.cbssports.com/college-football/teams/BC/boston-college-eagles/)[Boston College](https://www.cbssports.com/college-football/teams/BC/boston-college-eagles/) | 0 | +6.5<br> <br> <br>+100 | +6.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +195<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u43.5<br> <br> -122<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_PITT@BC/)<br>- [2 Expert Picks](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_PITT@BC/) |
+
+| Sat Oct 17, 12:00pm<br> <br> Sat 12:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/884.svg)](https://www.cbssports.com/college-football/teams/UVA/virginia-cavaliers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/884.svg)](https://www.cbssports.com/college-football/teams/UVA/virginia-cavaliers/)<br>[UVA](https://www.cbssports.com/college-football/teams/UVA/virginia-cavaliers/)[Virginia](https://www.cbssports.com/college-football/teams/UVA/virginia-cavaliers/) | 0 | o55.5<br> <br> <br> -110 | +10<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +310<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o51.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/807.svg)](https://www.cbssports.com/college-football/teams/SMU/smu-mustangs/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/807.svg)](https://www.cbssports.com/college-football/teams/SMU/smu-mustangs/)<br>24[SMU](https://www.cbssports.com/college-football/teams/SMU/smu-mustangs/)[SMU](https://www.cbssports.com/college-football/teams/SMU/smu-mustangs/) | 0 | -6.5<br> <br> <br> -110 | -9.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -340<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u51.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_UVA@SMU/) |
+
+| Sat Oct 17, 12:00pm<br> <br> Sat 12:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/703.svg)](https://www.cbssports.com/college-football/teams/MISSST/mississippi-state-bulldogs/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/703.svg)](https://www.cbssports.com/college-football/teams/MISSST/mississippi-state-bulldogs/)<br>16[MSST](https://www.cbssports.com/college-football/teams/MISSST/mississippi-state-bulldogs/)[Miss. State](https://www.cbssports.com/college-football/teams/MISSST/mississippi-state-bulldogs/) | 0 | o57.5<br> <br> <br> -112 | +17.5<br> <br> -118<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +575<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o56.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/669.svg)](https://www.cbssports.com/college-football/teams/LSU/lsu-tigers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/669.svg)](https://www.cbssports.com/college-football/teams/LSU/lsu-tigers/)<br>22[LSU](https://www.cbssports.com/college-football/teams/LSU/lsu-tigers/)[LSU](https://www.cbssports.com/college-football/teams/LSU/lsu-tigers/) | 0 | -10.5<br> <br> <br> -115 | -16.5<br> <br> -122<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | -769<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u56.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_MISSST@LSU/) |
+
+| Sat Oct 17, 12:30pm<br> <br> Sat 12:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/785.svg)](https://www.cbssports.com/college-football/teams/RUT/rutgers-scarlet-knights/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/785.svg)](https://www.cbssports.com/college-football/teams/RUT/rutgers-scarlet-knights/)<br>[RUT](https://www.cbssports.com/college-football/teams/RUT/rutgers-scarlet-knights/)[Rutgers](https://www.cbssports.com/college-football/teams/RUT/rutgers-scarlet-knights/) | 0 | o56.5<br> <br> <br> -110 | +5.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +180<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o55.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/675.svg)](https://www.cbssports.com/college-football/teams/MD/maryland-terrapins/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/675.svg)](https://www.cbssports.com/college-football/teams/MD/maryland-terrapins/)<br>[MD](https://www.cbssports.com/college-football/teams/MD/maryland-terrapins/)[Maryland](https://www.cbssports.com/college-football/teams/MD/maryland-terrapins/) | 0 | -4.5<br> <br> <br> -112 | -5.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -205<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | u56.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_RUT@MD/)<br>- [1 Expert Pick](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_RUT@MD/) |
+
+| Sat Oct 17, 1:00pm<br> <br> Sat 1:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/677.svg)](https://www.cbssports.com/college-football/teams/UMASS/massachusetts-minutemen/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/677.svg)](https://www.cbssports.com/college-football/teams/UMASS/massachusetts-minutemen/)<br>[MASS](https://www.cbssports.com/college-football/teams/UMASS/massachusetts-minutemen/)[UMass](https://www.cbssports.com/college-football/teams/UMASS/massachusetts-minutemen/) | 0 | o47.5<br> <br> <br> -110 | +7.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | +240<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o42.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/501.svg)](https://www.cbssports.com/college-football/teams/BUFF/buffalo-bulls/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/501.svg)](https://www.cbssports.com/college-football/teams/BUFF/buffalo-bulls/)<br>[BUFF](https://www.cbssports.com/college-football/teams/BUFF/buffalo-bulls/)[Buffalo](https://www.cbssports.com/college-football/teams/BUFF/buffalo-bulls/) | 0 | -3.5<br> <br> <br> -110 | -7<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -285<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u42.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+
+| Sat Oct 17, 1:00pm<br> <br> Sat 1:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/2054618.svg)](https://www.cbssports.com/college-football/teams/CHARLO/charlotte-49ers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/2054618.svg)](https://www.cbssports.com/college-football/teams/CHARLO/charlotte-49ers/)<br>[CHAR](https://www.cbssports.com/college-football/teams/CHARLO/charlotte-49ers/)[Charlotte](https://www.cbssports.com/college-football/teams/CHARLO/charlotte-49ers/) | 0 | o49.5<br> <br> <br> -110 | +20.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +1050<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o46.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/847.svg)](https://www.cbssports.com/college-football/teams/TEMPLE/temple-owls/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/847.svg)](https://www.cbssports.com/college-football/teams/TEMPLE/temple-owls/)<br>[TEMP](https://www.cbssports.com/college-football/teams/TEMPLE/temple-owls/)[Temple](https://www.cbssports.com/college-football/teams/TEMPLE/temple-owls/) | 0 | -23.5<br> <br> <br> -110 | -20<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -1667<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u46.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+
+| Sat Oct 17, 1:00pm<br> <br> Sat 1:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/860.svg)](https://www.cbssports.com/college-football/teams/CIT/citadel-bulldogs/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/860.svg)](https://www.cbssports.com/college-football/teams/CIT/citadel-bulldogs/)<br>[CIT](https://www.cbssports.com/college-football/teams/CIT/citadel-bulldogs/)[The Citadel](https://www.cbssports.com/college-football/teams/CIT/citadel-bulldogs/) | 0 | o54.5<br> <br> <br> -110 | +45.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | +8000<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o56.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/854.svg)](https://www.cbssports.com/college-football/teams/TXAM/texas-am-aggies/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/854.svg)](https://www.cbssports.com/college-football/teams/TXAM/texas-am-aggies/)<br>[TA&M](https://www.cbssports.com/college-football/teams/TXAM/texas-am-aggies/)[Texas A&M](https://www.cbssports.com/college-football/teams/TXAM/texas-am-aggies/) | 0 | -44.5<br> <br> <br> -110 | -45.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -100000<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | u57.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_CIT@TXAM/) |
+
+| Sat Oct 17, 1:30pm<br> <br> Sat 1:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/910.svg)](https://www.cbssports.com/college-football/teams/WMICH/western-michigan-broncos/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/910.svg)](https://www.cbssports.com/college-football/teams/WMICH/western-michigan-broncos/)<br>[WMU](https://www.cbssports.com/college-football/teams/WMICH/western-michigan-broncos/)[W. Michigan](https://www.cbssports.com/college-football/teams/WMICH/western-michigan-broncos/) | 0 | o47.5<br> <br> <br> -110 | -6.5<br> <br> -122<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | -256<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o42.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/520.svg)](https://www.cbssports.com/college-football/teams/CMICH/central-michigan-chippewas/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/520.svg)](https://www.cbssports.com/college-football/teams/CMICH/central-michigan-chippewas/)<br>[CMU](https://www.cbssports.com/college-football/teams/CMICH/central-michigan-chippewas/)[C. Michigan](https://www.cbssports.com/college-football/teams/CMICH/central-michigan-chippewas/) | 0 | +8.5<br> <br> <br> -110 | +7<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +220<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u43.5<br> <br> -118<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+
+| Sat Oct 17, 3:30pm<br> <br> Sat 3:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/765.svg)](https://www.cbssports.com/college-football/teams/PSU/penn-state-nittany-lions/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/765.svg)](https://www.cbssports.com/college-football/teams/PSU/penn-state-nittany-lions/)<br>[PSU](https://www.cbssports.com/college-football/teams/PSU/penn-state-nittany-lions/)[Penn State](https://www.cbssports.com/college-football/teams/PSU/penn-state-nittany-lions/) | 0 | o51.5<br> <br> <br> -110 | +6.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +190<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o42.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/689.svg)](https://www.cbssports.com/college-football/teams/MICH/michigan-wolverines/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/689.svg)](https://www.cbssports.com/college-football/teams/MICH/michigan-wolverines/)<br>[MICH](https://www.cbssports.com/college-football/teams/MICH/michigan-wolverines/)[Michigan](https://www.cbssports.com/college-football/teams/MICH/michigan-wolverines/) | 0 | -6.5<br> <br> <br> -110 | -6.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | -227<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u42.5<br> <br> -106<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_PSU@MICH/) |
+
+| Sat Oct 17, 3:30pm<br> <br> Sat 3:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/455.svg)](https://www.cbssports.com/college-football/teams/AKRON/akron-zips/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/455.svg)](https://www.cbssports.com/college-football/teams/AKRON/akron-zips/)<br>[AKR](https://www.cbssports.com/college-football/teams/AKRON/akron-zips/)[Akron](https://www.cbssports.com/college-football/teams/AKRON/akron-zips/) | 0 | o46.5<br> <br> <br> -110 | +10<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +290<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o46.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/688.svg)](https://www.cbssports.com/college-football/teams/MIAOH/miami-oh-redhawks/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/688.svg)](https://www.cbssports.com/college-football/teams/MIAOH/miami-oh-redhawks/)<br>[M-OH](https://www.cbssports.com/college-football/teams/MIAOH/miami-oh-redhawks/)[Miami-OH](https://www.cbssports.com/college-football/teams/MIAOH/miami-oh-redhawks/) | 0 | -9.5<br> <br> <br> -110 | -9.5<br> <br> -114<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -360<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u46.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+
+| Sat Oct 17, 3:30pm<br> <br> Sat 3:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/600.svg)](https://www.cbssports.com/college-football/teams/GATECH/georgia-tech-yellow-jackets/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/600.svg)](https://www.cbssports.com/college-football/teams/GATECH/georgia-tech-yellow-jackets/)<br>[GT](https://www.cbssports.com/college-football/teams/GATECH/georgia-tech-yellow-jackets/)[Georgia Tech](https://www.cbssports.com/college-football/teams/GATECH/georgia-tech-yellow-jackets/) | 0 | o55.5<br> <br> <br> -110 | +8.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +285<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o56.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/886.svg)](https://www.cbssports.com/college-football/teams/VATECH/virginia-tech-hokies/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/886.svg)](https://www.cbssports.com/college-football/teams/VATECH/virginia-tech-hokies/)<br>[VT](https://www.cbssports.com/college-football/teams/VATECH/virginia-tech-hokies/)[Virginia Tech](https://www.cbssports.com/college-football/teams/VATECH/virginia-tech-hokies/) | 0 | -10<br> <br> <br> -110 | -8.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -345<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u56.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_GATECH@VATECH/) |
+
+| Sat Oct 17, 3:30pm<br> <br> Sat 3:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/704.svg)](https://www.cbssports.com/college-football/teams/MIZZOU/missouri-tigers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/704.svg)](https://www.cbssports.com/college-football/teams/MIZZOU/missouri-tigers/)<br>13[MIZZ](https://www.cbssports.com/college-football/teams/MIZZOU/missouri-tigers/)[Missouri](https://www.cbssports.com/college-football/teams/MIZZOU/missouri-tigers/) | 0 | o57.5<br> <br> <br> -110 | +5.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | +185<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o58.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/701.svg)](https://www.cbssports.com/college-football/teams/MISS/ole-miss-rebels/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/701.svg)](https://www.cbssports.com/college-football/teams/MISS/ole-miss-rebels/)<br>9[MISS](https://www.cbssports.com/college-football/teams/MISS/ole-miss-rebels/)[Ole Miss](https://www.cbssports.com/college-football/teams/MISS/ole-miss-rebels/) | 0 | -7.5<br> <br> <br>+100 | -5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -217<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u58.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_MIZZOU@MISS/)<br>- [2 Expert Picks](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_MIZZOU@MISS/) |
+
+| Sat Oct 17, 3:30pm<br> <br> Sat 3:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/468.svg)](https://www.cbssports.com/college-football/teams/ARIZST/arizona-state-sun-devils/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/468.svg)](https://www.cbssports.com/college-football/teams/ARIZST/arizona-state-sun-devils/)<br>[ASU](https://www.cbssports.com/college-football/teams/ARIZST/arizona-state-sun-devils/)[Arizona St.](https://www.cbssports.com/college-football/teams/ARIZST/arizona-state-sun-devils/) | 0 | o51.5<br> <br> <br> -110 | +15.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +540<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o49.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/859.svg)](https://www.cbssports.com/college-football/teams/TXTECH/texas-tech-red-raiders/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/859.svg)](https://www.cbssports.com/college-football/teams/TXTECH/texas-tech-red-raiders/)<br>10[TTU](https://www.cbssports.com/college-football/teams/TXTECH/texas-tech-red-raiders/)[Texas Tech](https://www.cbssports.com/college-football/teams/TXTECH/texas-tech-red-raiders/) | 0 | -12.5<br> <br> <br> -110 | -15.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -699<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u50.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_ARIZST@TXTECH/) |
+
+| Sat Oct 17, 3:30pm<br> <br> Sat 3:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/728.svg)](https://www.cbssports.com/college-football/teams/UNLV/unlv-rebels/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/728.svg)](https://www.cbssports.com/college-football/teams/UNLV/unlv-rebels/)<br>[UNLV](https://www.cbssports.com/college-football/teams/UNLV/unlv-rebels/)[UNLV](https://www.cbssports.com/college-football/teams/UNLV/unlv-rebels/) | 0 | o48.5<br> <br> <br> -110 | +1.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -102<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o47.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/454.svg)](https://www.cbssports.com/college-football/teams/AF/air-force-falcons/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/454.svg)](https://www.cbssports.com/college-football/teams/AF/air-force-falcons/)<br>[AF](https://www.cbssports.com/college-football/teams/AF/air-force-falcons/)[Air Force](https://www.cbssports.com/college-football/teams/AF/air-force-falcons/) | 0 | +3<br> <br> <br> -120 | -1.5<br> <br>+100<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -114<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | u48.5<br> <br> -114<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+
+| Sat Oct 17, 3:30pm<br> <br> Sat 3:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/747.svg)](https://www.cbssports.com/college-football/teams/NILL/northern-illinois-huskies/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/747.svg)](https://www.cbssports.com/college-football/teams/NILL/northern-illinois-huskies/)<br>[NIU](https://www.cbssports.com/college-football/teams/NILL/northern-illinois-huskies/)[N. Illinois](https://www.cbssports.com/college-football/teams/NILL/northern-illinois-huskies/) | 0 | o38.5<br> <br> <br> -110 | +8<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +270<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o41.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/931.svg)](https://www.cbssports.com/college-football/teams/WYO/wyoming-cowboys/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/931.svg)](https://www.cbssports.com/college-football/teams/WYO/wyoming-cowboys/)<br>[WYO](https://www.cbssports.com/college-football/teams/WYO/wyoming-cowboys/)[Wyoming](https://www.cbssports.com/college-football/teams/WYO/wyoming-cowboys/) | 0 | -7.5<br> <br> <br> -110 | -7.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -305<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u41.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+
+| Sat Oct 17, 3:30pm<br> <br> Sat 3:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/457.svg)](https://www.cbssports.com/college-football/teams/BAMA/alabama-crimson-tide/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/457.svg)](https://www.cbssports.com/college-football/teams/BAMA/alabama-crimson-tide/)<br>6[BAMA](https://www.cbssports.com/college-football/teams/BAMA/alabama-crimson-tide/)[Alabama](https://www.cbssports.com/college-football/teams/BAMA/alabama-crimson-tide/) | 0 | o53.5<br> <br> <br> -108 | -7.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -315<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o50.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/849.svg)](https://www.cbssports.com/college-football/teams/TENN/tennessee-volunteers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/849.svg)](https://www.cbssports.com/college-football/teams/TENN/tennessee-volunteers/)<br>14[TENN](https://www.cbssports.com/college-football/teams/TENN/tennessee-volunteers/)[Tennessee](https://www.cbssports.com/college-football/teams/TENN/tennessee-volunteers/) | 0 | +1.5<br> <br> <br> -110 | +7.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +270<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u50.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_BAMA@TENN/)<br>- [4 Expert Picks](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_BAMA@TENN/) |
+
+| Sat Oct 17, 3:30pm<br> <br> Sat 3:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/742.svg)](https://www.cbssports.com/college-football/teams/UNC/north-carolina-tar-heels/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/742.svg)](https://www.cbssports.com/college-football/teams/UNC/north-carolina-tar-heels/)<br>[UNC](https://www.cbssports.com/college-football/teams/UNC/north-carolina-tar-heels/)[North Carolina](https://www.cbssports.com/college-football/teams/UNC/north-carolina-tar-heels/) | 0 | o54.5<br> <br> <br> -110 | +3.5<br> <br> -122<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | +130<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o46.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/559.svg)](https://www.cbssports.com/college-football/teams/DUKE/duke-blue-devils/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/559.svg)](https://www.cbssports.com/college-football/teams/DUKE/duke-blue-devils/)<br>[DUKE](https://www.cbssports.com/college-football/teams/DUKE/duke-blue-devils/)[Duke](https://www.cbssports.com/college-football/teams/DUKE/duke-blue-devils/) | 0 | -4.5<br> <br> <br> -108 | -3<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -154<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u46.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_UNC@DUKE/)<br>- [1 Expert Pick](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_UNC@DUKE/) |
+
+| Sat Oct 17, 3:30pm<br> <br> Sat 3:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/477.svg)](https://www.cbssports.com/college-football/teams/AUBURN/auburn-tigers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/477.svg)](https://www.cbssports.com/college-football/teams/AUBURN/auburn-tigers/)<br>[AUB](https://www.cbssports.com/college-football/teams/AUBURN/auburn-tigers/)[Auburn](https://www.cbssports.com/college-football/teams/AUBURN/auburn-tigers/) | 0 | o55.5<br> <br> <br> -102 | +19.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | +860<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o49.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/599.svg)](https://www.cbssports.com/college-football/teams/UGA/georgia-bulldogs/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/599.svg)](https://www.cbssports.com/college-football/teams/UGA/georgia-bulldogs/)<br>1[UGA](https://www.cbssports.com/college-football/teams/UGA/georgia-bulldogs/)[Georgia](https://www.cbssports.com/college-football/teams/UGA/georgia-bulldogs/) | 0 | -16.5<br> <br> <br> -112 | -19.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -1250<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u49.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_AUBURN@UGA/)<br>- [2 Expert Picks](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_AUBURN@UGA/) |
+
+| Sat Oct 17, 3:30pm<br> <br> Sat 3:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/863.svg)](https://www.cbssports.com/college-football/teams/TOLEDO/toledo-rockets/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/863.svg)](https://www.cbssports.com/college-football/teams/TOLEDO/toledo-rockets/)<br>[TOL](https://www.cbssports.com/college-football/teams/TOLEDO/toledo-rockets/)[Toledo](https://www.cbssports.com/college-football/teams/TOLEDO/toledo-rockets/) | 0 | o53.5<br> <br> <br> -111 | -6.5<br> <br> -118<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -245<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o52.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/570.svg)](https://www.cbssports.com/college-football/teams/EMICH/eastern-michigan-eagles/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/570.svg)](https://www.cbssports.com/college-football/teams/EMICH/eastern-michigan-eagles/)<br>[EMU](https://www.cbssports.com/college-football/teams/EMICH/eastern-michigan-eagles/)[E. Michigan](https://www.cbssports.com/college-football/teams/EMICH/eastern-michigan-eagles/) | 0 | +6.5<br> <br> <br> -111 | +7<br> <br> -114<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +200<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u52.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+
+| Sat Oct 17, 4:30pm<br> <br> Sat 4:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/868.svg)](https://www.cbssports.com/college-football/teams/TULSA/tulsa-golden-hurricane/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/868.svg)](https://www.cbssports.com/college-football/teams/TULSA/tulsa-golden-hurricane/)<br>[TLSA](https://www.cbssports.com/college-football/teams/TULSA/tulsa-golden-hurricane/)[Tulsa](https://www.cbssports.com/college-football/teams/TULSA/tulsa-golden-hurricane/) | 0 | o46.5<br> <br> <br> -110 | -4.5<br> <br> -106<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | -184<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o46.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/780.svg)](https://www.cbssports.com/college-football/teams/RICE/rice-owls/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/780.svg)](https://www.cbssports.com/college-football/teams/RICE/rice-owls/)<br>[RICE](https://www.cbssports.com/college-football/teams/RICE/rice-owls/)[Rice](https://www.cbssports.com/college-football/teams/RICE/rice-owls/) | 0 | +3<br> <br> <br> -115 | +4.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +160<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u46.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+
+| Sat Oct 17, 5:00pm<br> <br> Sat 5:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/865.svg)](https://www.cbssports.com/college-football/teams/TROY/troy-trojans/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/865.svg)](https://www.cbssports.com/college-football/teams/TROY/troy-trojans/)<br>[TROY](https://www.cbssports.com/college-football/teams/TROY/troy-trojans/)[Troy](https://www.cbssports.com/college-football/teams/TROY/troy-trojans/) | 0 | o47.5<br> <br> <br> -110 | +3<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +130<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o48.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/841.svg)](https://www.cbssports.com/college-football/teams/UL/louisiana-ragin-cajuns/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/841.svg)](https://www.cbssports.com/college-football/teams/UL/louisiana-ragin-cajuns/)<br>[UL](https://www.cbssports.com/college-football/teams/UL/louisiana-ragin-cajuns/)[Louisiana](https://www.cbssports.com/college-football/teams/UL/louisiana-ragin-cajuns/) | 0 | -3.5<br> <br> <br> -110 | -3<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -155<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u49.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+
+| Sat Oct 17, 6:00pm<br> <br> Sat 6:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/896.svg)](https://www.cbssports.com/college-football/teams/WASHST/washington-state-cougars/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/896.svg)](https://www.cbssports.com/college-football/teams/WASHST/washington-state-cougars/)<br>[WSU](https://www.cbssports.com/college-football/teams/WASHST/washington-state-cougars/)[Washington St.](https://www.cbssports.com/college-football/teams/WASHST/washington-state-cougars/) | 0 | o48.5<br> <br> <br> -110 | +18.5<br> <br> -114<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | +680<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o52.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/762.svg)](https://www.cbssports.com/college-football/teams/OREGST/oregon-state-beavers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/762.svg)](https://www.cbssports.com/college-football/teams/OREGST/oregon-state-beavers/)<br>[ORST](https://www.cbssports.com/college-football/teams/OREGST/oregon-state-beavers/)[Oregon State](https://www.cbssports.com/college-football/teams/OREGST/oregon-state-beavers/) | 0 | -13.5<br> <br> <br> -110 | -18<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -1000<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u52.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| - [2 Expert Picks](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_WASHST@OREGST/) |
+
+| Sat Oct 17, 7:00pm<br> <br> Sat 7:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/471.svg)](https://www.cbssports.com/college-football/teams/ARK/arkansas-razorbacks/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/471.svg)](https://www.cbssports.com/college-football/teams/ARK/arkansas-razorbacks/)<br>[ARK](https://www.cbssports.com/college-football/teams/ARK/arkansas-razorbacks/)[Arkansas](https://www.cbssports.com/college-football/teams/ARK/arkansas-razorbacks/) | 0 | o50.5<br> <br> <br> -110 | +6.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +190<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o49.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/882.svg)](https://www.cbssports.com/college-football/teams/VANDY/vanderbilt-commodores/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/882.svg)](https://www.cbssports.com/college-football/teams/VANDY/vanderbilt-commodores/)<br>[VAN](https://www.cbssports.com/college-football/teams/VANDY/vanderbilt-commodores/)[Vanderbilt](https://www.cbssports.com/college-football/teams/VANDY/vanderbilt-commodores/) | 0 | -6.5<br> <br> <br> -110 | -6<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -225<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u49.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_ARK@VANDY/) |
+
+| Sat Oct 17, 7:00pm<br> <br> Sat 7:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/472.svg)](https://www.cbssports.com/college-football/teams/ARKST/arkansas-state-red-wolves/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/472.svg)](https://www.cbssports.com/college-football/teams/ARKST/arkansas-state-red-wolves/)<br>[ARST](https://www.cbssports.com/college-football/teams/ARKST/arkansas-state-red-wolves/)[Arkansas St.](https://www.cbssports.com/college-football/teams/ARKST/arkansas-state-red-wolves/) | 0 | o56.5<br> <br> <br> -110 | -6.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -238<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o62.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/812.svg)](https://www.cbssports.com/college-football/teams/USM/southern-miss-golden-eagles/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/812.svg)](https://www.cbssports.com/college-football/teams/USM/southern-miss-golden-eagles/)<br>[USM](https://www.cbssports.com/college-football/teams/USM/southern-miss-golden-eagles/)[So. Miss](https://www.cbssports.com/college-football/teams/USM/southern-miss-golden-eagles/) | 0 | +7<br> <br> <br> -110 | +6.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +200<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u62.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+
+| Sat Oct 17, 7:00pm<br> <br> Sat 7:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/729.svg)](https://www.cbssports.com/college-football/teams/NEVADA/nevada-wolf-pack/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/729.svg)](https://www.cbssports.com/college-football/teams/NEVADA/nevada-wolf-pack/)<br>[NEV](https://www.cbssports.com/college-football/teams/NEVADA/nevada-wolf-pack/)[Nevada](https://www.cbssports.com/college-football/teams/NEVADA/nevada-wolf-pack/) | 0 | o46.5<br> <br> <br> -110 | +14.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +500<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o42.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/13548.svg)](https://www.cbssports.com/college-football/teams/NDST/north-dakota-state-bison/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/13548.svg)](https://www.cbssports.com/college-football/teams/NDST/north-dakota-state-bison/)<br>[NDST](https://www.cbssports.com/college-football/teams/NDST/north-dakota-state-bison/)[N. Dakota St.](https://www.cbssports.com/college-football/teams/NDST/north-dakota-state-bison/) | 0 | -14.5<br> <br> <br> -106 | -14<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -667<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u42.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+
+| Sat Oct 17, 7:00pm<br> <br> Sat 7:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/846.svg)](https://www.cbssports.com/college-football/teams/TCU/tcu-horned-frogs/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/846.svg)](https://www.cbssports.com/college-football/teams/TCU/tcu-horned-frogs/)<br>[TCU](https://www.cbssports.com/college-football/teams/TCU/tcu-horned-frogs/)[TCU](https://www.cbssports.com/college-football/teams/TCU/tcu-horned-frogs/) | 0 | o51.5<br> <br> <br> -110 | +5.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +180<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o48.5<br> <br> -114<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/484.svg)](https://www.cbssports.com/college-football/teams/BAYLOR/baylor-bears/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/484.svg)](https://www.cbssports.com/college-football/teams/BAYLOR/baylor-bears/)<br>[BAY](https://www.cbssports.com/college-football/teams/BAYLOR/baylor-bears/)[Baylor](https://www.cbssports.com/college-football/teams/BAYLOR/baylor-bears/) | 0 | -6.5<br> <br> <br> -110 | -5.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -217<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u49.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_TCU@BAYLOR/) |
+
+| Sat Oct 17, 7:00pm<br> <br> Sat 7:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/646.svg)](https://www.cbssports.com/college-football/teams/KENTST/kent-state-golden-flashes/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/646.svg)](https://www.cbssports.com/college-football/teams/KENTST/kent-state-golden-flashes/)<br>[KENT](https://www.cbssports.com/college-football/teams/KENTST/kent-state-golden-flashes/)[Kent St.](https://www.cbssports.com/college-football/teams/KENTST/kent-state-golden-flashes/) | 0 | o45.5<br> <br> <br> -104 | +20.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +900<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o45.5<br> <br> -102<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/818.svg)](https://www.cbssports.com/college-football/teams/SFLA/south-florida-bulls/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/818.svg)](https://www.cbssports.com/college-football/teams/SFLA/south-florida-bulls/)<br>[USF](https://www.cbssports.com/college-football/teams/SFLA/south-florida-bulls/)[South Florida](https://www.cbssports.com/college-football/teams/SFLA/south-florida-bulls/) | 0 | -18.5<br> <br> <br> -110 | -20.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -1429<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u45.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+
+| Sat Oct 17, 7:00pm<br> <br> Sat 7:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/583.svg)](https://www.cbssports.com/college-football/teams/FSU/florida-state-seminoles/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/583.svg)](https://www.cbssports.com/college-football/teams/FSU/florida-state-seminoles/)<br>[FSU](https://www.cbssports.com/college-football/teams/FSU/florida-state-seminoles/)[Florida State](https://www.cbssports.com/college-football/teams/FSU/florida-state-seminoles/) | 0 | o53.5<br> <br> <br> -112 | +20.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +1050<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o56.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/687.svg)](https://www.cbssports.com/college-football/teams/MIAMI/miami-fla-hurricanes/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/687.svg)](https://www.cbssports.com/college-football/teams/MIAMI/miami-fla-hurricanes/)<br>3[MIA](https://www.cbssports.com/college-football/teams/MIAMI/miami-fla-hurricanes/)[Miami (Fla.)](https://www.cbssports.com/college-football/teams/MIAMI/miami-fla-hurricanes/) | 0 | -21.5<br> <br> <br> -105 | -20.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | -1639<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u56.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_FSU@MIAMI/)<br>- [1 Expert Pick](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_FSU@MIAMI/) |
+
+| Sat Oct 17, 7:30pm<br> <br> Sat 7:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/760.svg)](https://www.cbssports.com/college-football/teams/OKLAST/oklahoma-state-cowboys/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/760.svg)](https://www.cbssports.com/college-football/teams/OKLAST/oklahoma-state-cowboys/)<br>18[OKST](https://www.cbssports.com/college-football/teams/OKLAST/oklahoma-state-cowboys/)[Oklahoma State](https://www.cbssports.com/college-football/teams/OKLAST/oklahoma-state-cowboys/) | 0 | o62.5<br> <br> <br> -108 | +4.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +160<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o62.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/620.svg)](https://www.cbssports.com/college-football/teams/HOU/houston-cougars/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/620.svg)](https://www.cbssports.com/college-football/teams/HOU/houston-cougars/)<br>20[HOU](https://www.cbssports.com/college-football/teams/HOU/houston-cougars/)[Houston](https://www.cbssports.com/college-football/teams/HOU/houston-cougars/) | 0 | -3.5<br> <br> <br> -110 | -4.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -192<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u62.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_OKLAST@HOU/) |
+
+| Sat Oct 17, 7:30pm<br> <br> Sat 7:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/668.svg)](https://www.cbssports.com/college-football/teams/LVILLE/louisville-cardinals/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/668.svg)](https://www.cbssports.com/college-football/teams/LVILLE/louisville-cardinals/)<br>[LOU](https://www.cbssports.com/college-football/teams/LVILLE/louisville-cardinals/)[Louisville](https://www.cbssports.com/college-football/teams/LVILLE/louisville-cardinals/) | 0 | o55.5<br> <br> <br> -111 | -14.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | -649<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o55.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/844.svg)](https://www.cbssports.com/college-football/teams/CUSE/syracuse-orange/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/844.svg)](https://www.cbssports.com/college-football/teams/CUSE/syracuse-orange/)<br>[SYR](https://www.cbssports.com/college-football/teams/CUSE/syracuse-orange/)[Syracuse](https://www.cbssports.com/college-football/teams/CUSE/syracuse-orange/) | 0 | +12.5<br> <br> <br> -110 | +15<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +500<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u55.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_LVILLE@CUSE/) |
+
+| Sat Oct 17, 7:30pm<br> <br> Sat 7:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/647.svg)](https://www.cbssports.com/college-football/teams/UK/kentucky-wildcats/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/647.svg)](https://www.cbssports.com/college-football/teams/UK/kentucky-wildcats/)<br>15[UK](https://www.cbssports.com/college-football/teams/UK/kentucky-wildcats/)[Kentucky](https://www.cbssports.com/college-football/teams/UK/kentucky-wildcats/) | 0 | o41.5<br> <br> <br> -110 | +6.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +205<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o43.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/759.svg)](https://www.cbssports.com/college-football/teams/OKLA/oklahoma-sooners/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/759.svg)](https://www.cbssports.com/college-football/teams/OKLA/oklahoma-sooners/)<br>[OKLA](https://www.cbssports.com/college-football/teams/OKLA/oklahoma-sooners/)[Oklahoma](https://www.cbssports.com/college-football/teams/OKLA/oklahoma-sooners/) | 0 | -6.5<br> <br> <br> -110 | -6.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -244<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u43.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_UK@OKLA/)<br>- [3 Expert Picks](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_UK@OKLA/) |
+
+| Sat Oct 17, 7:30pm<br> <br> Sat 7:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/753.svg)](https://www.cbssports.com/college-football/teams/ND/notre-dame-fighting-irish/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/753.svg)](https://www.cbssports.com/college-football/teams/ND/notre-dame-fighting-irish/)<br>2[ND](https://www.cbssports.com/college-football/teams/ND/notre-dame-fighting-irish/)[Notre Dame](https://www.cbssports.com/college-football/teams/ND/notre-dame-fighting-irish/) | 0 | o46.5<br> <br> <br> -114 | -10.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -410<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o46.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/504.svg)](https://www.cbssports.com/college-football/teams/BYU/byu-cougars/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/504.svg)](https://www.cbssports.com/college-football/teams/BYU/byu-cougars/)<br>8[BYU](https://www.cbssports.com/college-football/teams/BYU/byu-cougars/)[BYU](https://www.cbssports.com/college-football/teams/BYU/byu-cougars/) | 0 | +10<br> <br> <br> -112 | +10.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | +340<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | u46.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_ND@BYU/)<br>- [3 Expert Picks](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_ND@BYU/) |
+
+| Sat Oct 17, 7:30pm<br> <br> Sat 7:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/574.svg)](https://www.cbssports.com/college-football/teams/ELON/elon-phoenix/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/574.svg)](https://www.cbssports.com/college-football/teams/ELON/elon-phoenix/)<br>[ELON](https://www.cbssports.com/college-football/teams/ELON/elon-phoenix/)[Elon](https://www.cbssports.com/college-football/teams/ELON/elon-phoenix/) | 0 | o52.5<br> <br> <br> -110 | +35.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +3500<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o56.5<br> <br> -106<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/836.svg)](https://www.cbssports.com/college-football/teams/STNFRD/stanford-cardinal/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/836.svg)](https://www.cbssports.com/college-football/teams/STNFRD/stanford-cardinal/)<br>[STAN](https://www.cbssports.com/college-football/teams/STNFRD/stanford-cardinal/)[Stanford](https://www.cbssports.com/college-football/teams/STNFRD/stanford-cardinal/) | 0 | -32.5<br> <br> <br> -110 | -35.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -20000<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | u56.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_ELON@STNFRD/) |
+
+| Sat Oct 17, 7:30pm<br> <br> Sat 7:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/928.svg)](https://www.cbssports.com/college-football/teams/WISC/wisconsin-badgers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/928.svg)](https://www.cbssports.com/college-football/teams/WISC/wisconsin-badgers/)<br>[WISC](https://www.cbssports.com/college-football/teams/WISC/wisconsin-badgers/)[Wisconsin](https://www.cbssports.com/college-football/teams/WISC/wisconsin-badgers/) | 0 | — | +2.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +120<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o42.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/873.svg)](https://www.cbssports.com/college-football/teams/UCLA/ucla-bruins/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/873.svg)](https://www.cbssports.com/college-football/teams/UCLA/ucla-bruins/)<br>12[UCLA](https://www.cbssports.com/college-football/teams/UCLA/ucla-bruins/)[UCLA](https://www.cbssports.com/college-football/teams/UCLA/ucla-bruins/) | 0 | -3<br> <br> <br> -115 | -2.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -139<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u43.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_WISC@UCLA/) |
+
+| Sat Oct 17, 8:00pm<br> <br> Sat 8:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/722.svg)](https://www.cbssports.com/college-football/teams/NAVY/navy-midshipmen/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/722.svg)](https://www.cbssports.com/college-football/teams/NAVY/navy-midshipmen/)<br>[NAVY](https://www.cbssports.com/college-football/teams/NAVY/navy-midshipmen/)[Navy](https://www.cbssports.com/college-football/teams/NAVY/navy-midshipmen/) | 0 | o55.5<br> <br> <br> -110 | +7<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +220<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | o54.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/1827968.svg)](https://www.cbssports.com/college-football/teams/TXSA/utsa-roadrunners/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/1827968.svg)](https://www.cbssports.com/college-football/teams/TXSA/utsa-roadrunners/)<br>[UTSA](https://www.cbssports.com/college-football/teams/TXSA/utsa-roadrunners/)[UTSA](https://www.cbssports.com/college-football/teams/TXSA/utsa-roadrunners/) | 0 | -7<br> <br> <br> -110 | -6.5<br> <br> -120<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | -256<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u54.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+
+| Sat Oct 17, 8:00pm<br> <br> Sat 8:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/667.svg)](https://www.cbssports.com/college-football/teams/LATECH/louisiana-tech-bulldogs/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/667.svg)](https://www.cbssports.com/college-football/teams/LATECH/louisiana-tech-bulldogs/)<br>[LT](https://www.cbssports.com/college-football/teams/LATECH/louisiana-tech-bulldogs/)[Louisiana Tech](https://www.cbssports.com/college-football/teams/LATECH/louisiana-tech-bulldogs/) | 0 | o52.5<br> <br> <br> -110 | -15.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | -676<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o56.5<br> <br> -105<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/724.svg)](https://www.cbssports.com/college-football/teams/LAMON/louisianamonroe-warhawks/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/724.svg)](https://www.cbssports.com/college-football/teams/LAMON/louisianamonroe-warhawks/)<br>[ULM](https://www.cbssports.com/college-football/teams/LAMON/louisianamonroe-warhawks/)[UL-Monroe](https://www.cbssports.com/college-football/teams/LAMON/louisianamonroe-warhawks/) | 0 | +14.5<br> <br> <br> -110 | +15.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +525<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u56.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+
+| Sat Oct 17, 9:00pm<br> <br> Sat 9:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/795.svg)](https://www.cbssports.com/college-football/teams/SJST/san-jose-state-spartans/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/795.svg)](https://www.cbssports.com/college-football/teams/SJST/san-jose-state-spartans/)<br>[SJSU](https://www.cbssports.com/college-football/teams/SJST/san-jose-state-spartans/)[San Jose St.](https://www.cbssports.com/college-football/teams/SJST/san-jose-state-spartans/) | 0 | o52.5<br> <br> <br> -110 | -6.5<br> <br> -118<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | -256<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o45.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/856.svg)](https://www.cbssports.com/college-football/teams/UTEP/utep-miners/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/856.svg)](https://www.cbssports.com/college-football/teams/UTEP/utep-miners/)<br>[UTEP](https://www.cbssports.com/college-football/teams/UTEP/utep-miners/)[UTEP](https://www.cbssports.com/college-football/teams/UTEP/utep-miners/) | 0 | +10<br> <br> <br> -110 | +7<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +220<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u46.5<br> <br> -114<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+
+| Sat Oct 17, 10:00pm<br> <br> Sat 10:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/757.svg)](https://www.cbssports.com/college-football/teams/OHIO/ohio-bobcats/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/757.svg)](https://www.cbssports.com/college-football/teams/OHIO/ohio-bobcats/)<br>[OHIO](https://www.cbssports.com/college-football/teams/OHIO/ohio-bobcats/)[Ohio](https://www.cbssports.com/college-football/teams/OHIO/ohio-bobcats/) | 0 | o49.5<br> <br> <br> -110 | -15<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -667<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o46.5<br> <br> -114<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/548.svg)](https://www.cbssports.com/college-football/teams/SACST/sacramento-state-hornets/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/548.svg)](https://www.cbssports.com/college-football/teams/SACST/sacramento-state-hornets/)<br>[SAC](https://www.cbssports.com/college-football/teams/SACST/sacramento-state-hornets/)[Sacramento St.](https://www.cbssports.com/college-football/teams/SACST/sacramento-state-hornets/) | 0 | +13.5<br> <br> <br> -110 | +15.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +500<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u47.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [1 Expert Pick](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_OHIO@SACST/) |
+
+| Sat Oct 17, 10:15pm<br> <br> Sat 10:15pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/878.svg)](https://www.cbssports.com/college-football/teams/UTAH/utah-utes/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/878.svg)](https://www.cbssports.com/college-football/teams/UTAH/utah-utes/)<br>11[UTAH](https://www.cbssports.com/college-football/teams/UTAH/utah-utes/)[Utah](https://www.cbssports.com/college-football/teams/UTAH/utah-utes/) | 0 | o49.5<br> <br> <br> -110 | -15<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -714<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o49.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/540.svg)](https://www.cbssports.com/college-football/teams/COLO/colorado-buffaloes/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/540.svg)](https://www.cbssports.com/college-football/teams/COLO/colorado-buffaloes/)<br>[COLO](https://www.cbssports.com/college-football/teams/COLO/colorado-buffaloes/)[Colorado](https://www.cbssports.com/college-football/teams/COLO/colorado-buffaloes/) | 0 | +16.5<br> <br> <br> -102 | +15.5<br> <br> -112<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +525<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u49.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_UTAH@COLO/) |
+
+| Sat Oct 17, 10:30pm<br> <br> Sat 10:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/732.svg)](https://www.cbssports.com/college-football/teams/NMEX/new-mexico-lobos/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/732.svg)](https://www.cbssports.com/college-football/teams/NMEX/new-mexico-lobos/)<br>[NMEX](https://www.cbssports.com/college-football/teams/NMEX/new-mexico-lobos/)[New Mexico](https://www.cbssports.com/college-football/teams/NMEX/new-mexico-lobos/) | 0 | o48.5<br> <br> <br> -105 | -14.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | -667<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o44.5<br> <br> -106<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/612.svg)](https://www.cbssports.com/college-football/teams/HAWAII/hawaii-rainbow-warriors/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/612.svg)](https://www.cbssports.com/college-football/teams/HAWAII/hawaii-rainbow-warriors/)<br>[HAW](https://www.cbssports.com/college-football/teams/HAWAII/hawaii-rainbow-warriors/)[Hawaii](https://www.cbssports.com/college-football/teams/HAWAII/hawaii-rainbow-warriors/) | 0 | +17.5<br> <br> <br> -110 | +14.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +530<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/35.svg) | u44.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| - [1 Expert Pick](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_NMEX@HAWAII/) |
+
+| Sat Oct 17, 10:30pm<br> <br> Sat 10:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/587.svg)](https://www.cbssports.com/college-football/teams/FRESNO/fresno-state-bulldogs/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/587.svg)](https://www.cbssports.com/college-football/teams/FRESNO/fresno-state-bulldogs/)<br>[FRES](https://www.cbssports.com/college-football/teams/FRESNO/fresno-state-bulldogs/)[Fresno St.](https://www.cbssports.com/college-football/teams/FRESNO/fresno-state-bulldogs/) | 0 | o45.5<br> <br> <br> -112 | -7.5<br> <br> -102<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -294<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o45.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/793.svg)](https://www.cbssports.com/college-football/teams/SDGST/san-diego-state-aztecs/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/793.svg)](https://www.cbssports.com/college-football/teams/SDGST/san-diego-state-aztecs/)<br>[SDSU](https://www.cbssports.com/college-football/teams/SDGST/san-diego-state-aztecs/)[San Diego St.](https://www.cbssports.com/college-football/teams/SDGST/san-diego-state-aztecs/) | 0 | +7.5<br> <br> <br> -114 | +7.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +245<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | u45.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+
+| Sat Oct 17, 10:30pm<br> <br> Sat 10:30pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/891.svg)](https://www.cbssports.com/college-football/teams/WAKE/wake-forest-demon-deacons/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/891.svg)](https://www.cbssports.com/college-football/teams/WAKE/wake-forest-demon-deacons/)<br>21[WAKE](https://www.cbssports.com/college-football/teams/WAKE/wake-forest-demon-deacons/)[Wake Forest](https://www.cbssports.com/college-football/teams/WAKE/wake-forest-demon-deacons/) | 0 | o53.5<br> <br> <br> -114 | -10<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -370<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | o53.5<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/509.svg)](https://www.cbssports.com/college-football/teams/CAL/california-golden-bears/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/509.svg)](https://www.cbssports.com/college-football/teams/CAL/california-golden-bears/)<br>[CAL](https://www.cbssports.com/college-football/teams/CAL/california-golden-bears/)[California](https://www.cbssports.com/college-football/teams/CAL/california-golden-bears/) | 0 | +8.5<br> <br> <br> -111 | +10<br> <br> -111<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | +290<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u53.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_WAKE@CAL/)<br>- [1 Expert Pick](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261017_WAKE@CAL/) |
+
+| Sat Oct 17, 11:00pm<br> <br> Sat 11:00pm | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/726.svg)](https://www.cbssports.com/college-football/teams/NEB/nebraska-cornhuskers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/726.svg)](https://www.cbssports.com/college-football/teams/NEB/nebraska-cornhuskers/)<br>[NEB](https://www.cbssports.com/college-football/teams/NEB/nebraska-cornhuskers/)[Nebraska](https://www.cbssports.com/college-football/teams/NEB/nebraska-cornhuskers/) | 0 | o51.5<br> <br> <br> -112 | +7<br> <br> -118<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | +210<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) | o51.5<br> <br> -108<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/761.svg)](https://www.cbssports.com/college-football/teams/OREG/oregon-ducks/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/761.svg)](https://www.cbssports.com/college-football/teams/OREG/oregon-ducks/)<br>[ORE](https://www.cbssports.com/college-football/teams/OREG/oregon-ducks/)[Oregon](https://www.cbssports.com/college-football/teams/OREG/oregon-ducks/) | 0 | -21.5<br> <br> <br> -110 | -6.5<br> <br> -115<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | -250<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/34.svg) | u51.5<br> <br> -110<br> <br>Remove<br> <br>![book logo](https://sports.cbsimg.net/fly/images/books-icons/30.svg) |
+| - [View Matchup](https://www.cbssports.com/college-football/gametracker/preview/NCAAF_20261017_NEB@OREG/) |
+
+| Thu Oct 15 | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/541.svg)](https://www.cbssports.com/college-football/teams/COLOST/colorado-state-rams/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/541.svg)](https://www.cbssports.com/college-football/teams/COLOST/colorado-state-rams/)<br>[CSU](https://www.cbssports.com/college-football/teams/COLOST/colorado-state-rams/)[Colorado St.](https://www.cbssports.com/college-football/teams/COLOST/colorado-state-rams/) | 27 | o69.5<br> <br> <br> -112 | +15.5<br> <br> <br> -108 | +525 | o69.5<br> <br> <br> -112 |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/843.svg)](https://www.cbssports.com/college-football/teams/TXSTSM/texas-state-bobcats/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/843.svg)](https://www.cbssports.com/college-football/teams/TXSTSM/texas-state-bobcats/)<br>[TXST](https://www.cbssports.com/college-football/teams/TXSTSM/texas-state-bobcats/)[Texas St.](https://www.cbssports.com/college-football/teams/TXSTSM/texas-state-bobcats/) | 66 | -14.5<br> <br> <br> -107 | -15.5<br> <br> <br> -108 | -667 | u69.5<br> <br> <br> -105 |
+| - [TXST 66, CSU 27 (Recap)View Recap](https://www.cbssports.com/college-football/gametracker/recap/NCAAF_20261015_COLOST@TXSTSM/)<br>- [1 Expert Pick](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261015_COLOST@TXSTSM/) |
+
+| Thu Oct 15 | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/565.svg)](https://www.cbssports.com/college-football/teams/ECU/east-carolina-pirates/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/565.svg)](https://www.cbssports.com/college-football/teams/ECU/east-carolina-pirates/)<br>[ECU](https://www.cbssports.com/college-football/teams/ECU/east-carolina-pirates/)[East Carolina](https://www.cbssports.com/college-football/teams/ECU/east-carolina-pirates/) | 17 | o54.5<br> <br> <br> -105 | -5.5<br> <br> <br> -105 | -198 | o49.5<br> <br> <br> -105 |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/456.svg)](https://www.cbssports.com/college-football/teams/UAB/uab-blazers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/456.svg)](https://www.cbssports.com/college-football/teams/UAB/uab-blazers/)<br>[UAB](https://www.cbssports.com/college-football/teams/UAB/uab-blazers/)[UAB](https://www.cbssports.com/college-football/teams/UAB/uab-blazers/) | 30 | +5.5<br> <br> <br> -110 | +5.5<br> <br> <br> -110 | +176 | u49.5<br> <br> <br> -112 |
+| - [UAB 30, ECU 17 (Recap)View Recap](https://www.cbssports.com/college-football/gametracker/recap/NCAAF_20261015_ECU@UAB/) |
+
+| Thu Oct 15 | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/596.svg)](https://www.cbssports.com/college-football/teams/GAS/georgia-southern-eagles/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/596.svg)](https://www.cbssports.com/college-football/teams/GAS/georgia-southern-eagles/)<br>[GASO](https://www.cbssports.com/college-football/teams/GAS/georgia-southern-eagles/)[Ga. Southern](https://www.cbssports.com/college-football/teams/GAS/georgia-southern-eagles/) | 23 | o47.5<br> <br> <br> -111 | -3<br> <br> <br> -110 | -155 | o44.5<br> <br> <br> -118 |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/1678007.svg)](https://www.cbssports.com/college-football/teams/ODU/old-dominion-monarchs/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/1678007.svg)](https://www.cbssports.com/college-football/teams/ODU/old-dominion-monarchs/)<br>[ODU](https://www.cbssports.com/college-football/teams/ODU/old-dominion-monarchs/)[Old Dominion](https://www.cbssports.com/college-football/teams/ODU/old-dominion-monarchs/) | 15 | +3.5<br> <br> <br> -111 | +3.5<br> <br> <br> -120 | +136 | u45.5<br> <br> <br> -114 |
+| - [GASO 23, ODU 15 (Recap)View Recap](https://www.cbssports.com/college-football/gametracker/recap/NCAAF_20261015_GAS@ODU/) |
+
+| Wed Oct 14 | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/909.svg)](https://www.cbssports.com/college-football/teams/WKY/western-kentucky-hilltoppers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/909.svg)](https://www.cbssports.com/college-football/teams/WKY/western-kentucky-hilltoppers/)<br>[WKY](https://www.cbssports.com/college-football/teams/WKY/western-kentucky-hilltoppers/)[W. Kentucky](https://www.cbssports.com/college-football/teams/WKY/western-kentucky-hilltoppers/) | 16 | o50.5<br> <br> <br> -110 | +1.5<br> <br> <br> -118 | -108 | o53.5<br> <br> <br> -110 |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/790.svg)](https://www.cbssports.com/college-football/teams/SAMST/sam-houston-bearkats/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/790.svg)](https://www.cbssports.com/college-football/teams/SAMST/sam-houston-bearkats/)<br>[SHOU](https://www.cbssports.com/college-football/teams/SAMST/sam-houston-bearkats/)[Sam Houston](https://www.cbssports.com/college-football/teams/SAMST/sam-houston-bearkats/) | 3 | +1.5<br> <br> <br> -105 | +1.5<br> <br> <br> -118 | -108 | u53.5<br> <br> <br> -108 |
+| - [WKY 16, SHOU 3 (Recap)View Recap](https://www.cbssports.com/college-football/gametracker/recap/NCAAF_20261014_WKY@SAMST/)<br>- [1 Expert Pick](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261014_WKY@SAMST/) |
+
+| Wed Oct 14 | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/2169062.svg)](https://www.cbssports.com/college-football/teams/KENSAW/kennesaw-state-owls/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/2169062.svg)](https://www.cbssports.com/college-football/teams/KENSAW/kennesaw-state-owls/)<br>[KENN](https://www.cbssports.com/college-football/teams/KENSAW/kennesaw-state-owls/)[Kennesaw St.](https://www.cbssports.com/college-football/teams/KENSAW/kennesaw-state-owls/) | 21 | o50.5<br> <br> <br> -110 | -2.5<br> <br> <br> -112 | -135 | o52.5<br> <br> <br> -111 |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/842.svg)](https://www.cbssports.com/college-football/teams/MOST/missouri-state-bears/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/842.svg)](https://www.cbssports.com/college-football/teams/MOST/missouri-state-bears/)<br>[MOSU](https://www.cbssports.com/college-football/teams/MOST/missouri-state-bears/)[Missouri St.](https://www.cbssports.com/college-football/teams/MOST/missouri-state-bears/) | 24 | +5.5<br> <br> <br> -110 | +2.5<br> <br> <br> -105 | +118 | u53.5<br> <br> <br> -110 |
+| - [MOSU 24, KENN 21 (Recap)View Recap](https://www.cbssports.com/college-football/gametracker/recap/NCAAF_20261014_KENSAW@MOST/) |
+
+| Tue Oct 13 | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/344993.svg)](https://www.cbssports.com/college-football/teams/FIU/fiu-panthers/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/344993.svg)](https://www.cbssports.com/college-football/teams/FIU/fiu-panthers/)<br>[FIU](https://www.cbssports.com/college-football/teams/FIU/fiu-panthers/)[FIU](https://www.cbssports.com/college-football/teams/FIU/fiu-panthers/) | 24 | o47.5<br> <br> <br> -105 | +3.5<br> <br> <br> -122 | +130 | o44.5<br> <br> <br> -106 |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/638.svg)](https://www.cbssports.com/college-football/teams/JAXST/jacksonville-state-gamecocks/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/638.svg)](https://www.cbssports.com/college-football/teams/JAXST/jacksonville-state-gamecocks/)<br>[JXST](https://www.cbssports.com/college-football/teams/JAXST/jacksonville-state-gamecocks/)[Jacksonville St.](https://www.cbssports.com/college-football/teams/JAXST/jacksonville-state-gamecocks/) | 27 | -2.5<br> <br> <br> -105 | -2.5<br> <br> <br> -124 | -142 | u44.5<br> <br> <br> -105 |
+| - [JXST 27, FIU 24 (Recap)View Recap](https://www.cbssports.com/college-football/gametracker/recap/NCAAF_20261013_FIU@JAXST/)<br>- [2 Expert Picks](https://www.cbssports.com/college-football/gametracker/expert-picks/NCAAF_20261013_FIU@JAXST/) |
+
+| Tue Oct 13 | Final | Open | Spread | MLMoneyline | Total |
+| --- | --- | --- | --- | --- | --- |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/553.svg)](https://www.cbssports.com/college-football/teams/DE/delaware-fightin-blue-hens/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/553.svg)](https://www.cbssports.com/college-football/teams/DE/delaware-fightin-blue-hens/)<br>[DEL](https://www.cbssports.com/college-football/teams/DE/delaware-fightin-blue-hens/)[Delaware](https://www.cbssports.com/college-football/teams/DE/delaware-fightin-blue-hens/) | 30 | o49.5<br> <br> <br> -110 | -1.5<br> <br> <br> -105 | -115 | o49.5<br> <br> <br> -105 |
+| [![team logo](https://sports.cbsimg.net/fly/images/team-logos/692.svg)](https://www.cbssports.com/college-football/teams/MTSU/middle-tenn-blue-raiders/)<br>[![team logo](https://sports.cbsimg.net/fly/images/team-logos/692.svg)](https://www.cbssports.com/college-football/teams/MTSU/middle-tenn-blue-raiders/)<br>[MTSU](https://www.cbssports.com/college-football/teams/MTSU/middle-tenn-blue-raiders/)[Middle Tenn.](https://www.cbssports.com/college-football/teams/MTSU/middle-tenn-blue-raiders/) | 33 | -1.5<br> <br> <br> -105 | +1.5<br> <br> <br> -110 | +100 | u49.5<br> <br> <br> -111 |
+| - [MTSU 33, DEL 30 (Recap)View Recap](https://www.cbssports.com/college-football/gametracker/recap/NCAAF_20261013_DE@MTSU/) |
+
+Now Playing
+
+Share
+
+Share Video
+
+- [Copy the video link](https://www.cbssports.com/watch/general/video/week-7-preview-no-6-alabama-vs-no-14-tennessee "Copy the video link")
+- [X](https://twitter.com/intent/tweet?text=week-7-preview-no-6-alabama-vs-no-14-tennessee&url=https://www.cbssports.com/watch/general/video/week-7-preview-no-6-alabama-vs-no-14-tennessee "X")
+- [Facebook](https://www.facebook.com/dialog/share?app_id=297742330311988&display=popup&href=https://www.cbssports.com/watch/general/video/week-7-preview-no-6-alabama-vs-no-14-tennessee "Facebook")
+
+Link copied!
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/16/8f0a59a2-3b1c-47d0-a00d-0c8473a56ffe/thumbnail/320x180/bc4bf2ece43e9d302c208af0b19d4493/3.jpg)
+
+
+
+
+1:46
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Week 7 Preview: No. 6 Alabama vs. No. 14 Tennessee
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/16/4438226d-7a4a-4385-bf80-b03b8c5536e2/thumbnail/320x180/ba19660402bb1951e2e5238b6e88a1e6/2.jpg)
+
+
+
+
+1:56
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### What's at Stake for Arch Manning vs. Florida?
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/16/09b62923-36c8-4f88-bb05-ecdb3594ed5b/thumbnail/320x180/ece2f2014184c0dc5ffb31bc82ea35f3/1.jpg)
+
+
+
+
+1:59
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Can Indiana Keep Jeremiah Smith Without a TD Again?
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/16/31d35b9f-4004-43e0-bc1d-68c9e2f545ad/thumbnail/320x180/caf2b7f45167c2b3ea728c39672adab1/gettyimages-2299857280-1920x1080.jpg)
+
+
+
+
+0:48
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Notre Dame's Defense Can Win Them A National Championship?
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/16/b9593c2f-eb68-40b3-b650-97b6f3b52f73/thumbnail/320x180/b345bb81d87bef8f9857c4068b74144b/gettyimages-2299302647-1920x1080.jpg)
+
+
+
+
+1:20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Austin Simmons Returns To Oxford
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/16/b18fd1d9-96a1-4444-a723-9f3fe6f2bc99/thumbnail/320x180/3aea2e6994df5b4e521b15c8f41483fb/gettyimages-2299386893-1920x1080.jpg)
+
+
+
+
+1:00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Oklahoma State vs. Houston: Week 7 Matchup to Watch
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/16/5d7429d9-aec9-49a6-93fc-3f736fda403d/thumbnail/320x180/fad84894caabb2c495f4a736bce18815/gettyimages-2295665491-1920x1080.jpg)
+
+
+
+
+1:03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Is Defense in Way of Ole Miss' National Title Hopes?
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/16/e7a5a133-49dd-4bba-9597-b76ad7e91c73/thumbnail/320x180/3831fed0ff636221484db9ac2dbf7227/gettyimages-2300299650-1920x1080.jpg)
+
+
+
+
+1:06
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Biggest Takeaways From BYU's 5-0 Start
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/15/6507db6a-cf41-4477-a531-f11eda376366/thumbnail/320x180/0f50674cacb6966045e63b6c02794a5a/cfp-logo-field-1.jpg)
+
+
+
+
+1:58
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### What Would This Year's 24 Team CFP Look Like?
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/16/99edb2a1-d561-47ac-bd49-d357154e8d51/thumbnail/320x180/4bd2794314d537000195d6f8d9274ed2/burgess.jpg)
+
+
+
+
+0:41
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Highlights: Colorado State at Texas State (10/15)
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/15/34dffffb-5930-4ca2-a8f7-fb6672236044/thumbnail/320x180/1a2098bc4edd65c78450799faf706148/toneyyyyy.jpg)
+
+
+
+
+8:43
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### FSU vs. No. 3 Miami Preview & Predictions \| HQ CFB Preview & Predictions \| HQ CFB
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/15/408a5292-a5c7-4b83-8980-d5623ac11f10/thumbnail/320x180/32292445b9a1cd775186b4bb24aac820/baughhh.jpg)
+
+
+
+
+11:12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Florida vs. No. 7 Texas Preview & Predictions \| HQ CFB Preview & Predictions \| HQ CFB
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/01/384031ad-5709-4bc4-b23e-c0753d432aaa/thumbnail/320x180/5799a2f63c516b008a877277c048a219/mike-norvell.png)
+
+
+
+
+1:51
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### How Hot Is Mike Norvell's Seat at Florida State?
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/09/10/5504f841-27a8-49df-9718-1738df18149b/thumbnail/320x180/6e32ac860884dfc219fdbe807636de77/miami-hurricanes-usa.jpg)
+
+
+
+
+1:04
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Florida State vs. No. 3 Miami Predictions
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/09/29/dbdc3c70-8e60-402b-9768-3b9e184f349b/thumbnail/320x180/bcc07c689efe9e35a978658aa122fc53/miami-hurricanes.jpg)
+
+
+
+
+1:58
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Miami Gets Injured Defensive Players Back Ahead of FSU
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/15/8a9e5534-4c04-4666-a579-44fe245ac82b/thumbnail/320x180/7d7f30d1aad2c7bdc9c9d24e28020220/gettyimages-2299540721-1920x1080.jpg)
+
+
+
+
+1:44
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Steve Sarkisian Defends Criticism of QB Arch Manning
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/15/439d5073-1bea-4f73-bdc6-2352b0f23bdd/thumbnail/320x180/a8763e4d46c14f7eee9f8065a7aeceb0/gettyimages-2295622765-1920x1080.jpg)
+
+
+
+
+1:21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Gators Look To QB Tramell Jones if Aaron Philo Can't Go
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/01/6586a901-4aa2-4ee3-8bb3-56d58edec3d0/thumbnail/320x180/4ea920a054e2dae7dee69f06e65ba8e6/cfp.png)
+
+
+
+
+0:48
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Report: CFP Nearing a Deal to Expand to 24 Teams
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/15/0c13683b-3520-458b-bc21-661c74b89165/thumbnail/320x180/8d1e91b721982124f4d2a3b0ed8e8145/gettyimages-2299688314-1920x1080.jpg)
+
+
+
+
+1:29
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Players To Watch For CFB Week 7: Tobi Osunsanmi
+
+- ![Image thumbnail](https://sportshub.cbsistatic.com/i/r/2026/10/15/e4d1690b-63d6-4d47-be0f-366c9e7c402c/thumbnail/320x180/ffebe45b8b46047487b9455e2d250547/gettyimages-2300256632-1920x1080.jpg)
+
+
+
+
+0:57
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Players To Watch For CFB Week 7: Xavier Gilliam
+
+
+[See All NCAAF Videos](https://www.cbssports.com/watch/college-football)
+
+College football betting enables sports fans to place wagers on Big Ten and SEC action, as well as matchups in all other FBS conferences, and beyond to FCS, Division II, and other leagues. As with the overwhelmingly popular NFL betting, standard college football markets allow bettors to take a position on which team will win, which will cover a point spread set by sportsbooks, and whether the points scored in a game will be over or under a designated total.
+
+
+## College Football Sports Betting Terms:
+
+- College football odds can fluctuate up to kickoff based on betting action, injuries, and other factors, and monitoring this movement is a key part of making the best college football bets possible. Here are several football sports betting terms to know:
+
+
+- ### Alternate lines:
+
+
+
+Most college football games have alternate lines, as sportsbooks post different spreads and totals with adjusted odds. For example, if a team is favored by one touchdown, many sportsbooks will offer odds on the team to win by at least 10 points instead.
+
+
+- ### American odds:
+
+
+
+American odds are the most common odds used in college football, with the money line indicating the amount of money needed to win $100 (favorite) or the amount that a $100 wager would pay (underdog). This is one of the three main types of betting odds.
+
+
+- ### Closing line:
+
+
+
+The final odds posted before the game begins are considered the closing line. Once the game starts, live odds are offered by many sportsbooks and typically remain in effect until the game concludes.
+
+
+- ### Consensus:
+
+
+
+The consensus line is a combination of odds from the top sportsbooks. If a team is a 7-point consensus favorite, it means that a majority of oddsmakers have the team favored by seven points.
+
+
+- ### Decimal odds:
+
+
+
+Decimal odds, also known as European odds, are a format used to present betting odds. They represent the amount of money someone would win for every $1 wagered.
+
+
+- ### Favorite:
+
+
+
+The favorite is the team expected to win the game outright. Favorites have a negative sign in front of their spread and money line odds.
+
+
+- ### Fractional odds:
+
+
+
+British (fractional) odds are the final type of odds used in sports betting. They are the ratio of the profit won to the stake, as a 6-1 underdog would pay $6 for every $1 wagered.
+
+
+- ### Futures:
+
+
+
+These can be some of the most interesting odds to monitor, as they relate to things such as the championship winner or conference winner. Most sportsbooks update their futures odds weekly, giving fans a chance to see how their team stacks up in the eyes of the oddsmakers.
+
+
+- ### Home-field advantage:
+
+
+
+One factor that influences every college football game is home-field advantage, which alters the odds based on which team is playing at home. Some teams have a bigger advantage than others, as their crowd noise or location can adjust the odds more significantly than others.
+
+
+
+- ### Hook:
+
+
+
+If the betting odds have a half-point attached to them, that is called the hook. The hook makes it impossible for the betting result to end in a tie, as college football games do not have half-points.
+
+
+- ### Juice:
+
+
+
+Also known as vigorish or vig, the juice is the amount factored into the odds by oddsmakers. An American odds bet of -110 contains $10 of juice for every $100 wagered.
+
+
+- ### Line movement:
+
+
+
+College football odds for most games generally do not move as much as those in other sports, but they still feature line movement due to various reasons. Weather, injuries, or wagers made by professional bettors are all reasons for line movement on college football games.
+
+
+- ### Money line:
+
+
+
+The money line is the odds related to the winner of the game with no point spread involved. Favorites have negative odds, while underdogs have positive odds in an American odds format.
+
+
+- ### Oddsmaker:
+
+
+
+A person who sets betting odds and lines is known as an oddsmaker. Some oddsmakers create their betting odds (originators), while others copy odds that are already in the market.
+
+
+- ### Over/Under:
+
+
+
+This is one of the primary sets of odds used for college football, with the number representing the expected points scored in the game. These are also used for some futures odds, such as how many games a team will win in a season.
+
+
+- ### Pick ‘em:
+
+
+
+If neither team is favored, the game is called a pick ‘em. The betting odds have not determined a favorite or an underdog, so they are usually good games to watch.
+
+
+- ### Spread:
+
+
+
+The point spread levels the playing field between two teams, as it is the number of points the favorite is expected to win by. The favorite is designated by a negative spread (-7), while the underdog has a positive spread (+7).
+
+
+- ### Underdog:
+
+
+
+Unless a game is a pick ‘em, every college football contest has an underdog, which is the team that is expected to lose. They are denoted by a positive number in the betting odds.
+
+
+
+## FAQ:
+
+- ### What are the types of college football betting odds?
+
+
+
+The three primary types of betting odds are American (money line), fractional (British) and decimal (European). They are alternate ways of presenting the same odds, offering the same payout in each scenario. The percentage probability of an event occurring can be converted and presented in any of the odds offered.
+
+
+- ### How do I know which team is favored?
+
+
+
+Favorites are always priced with a negative sign in front of their spread or money line, while underdogs have a positive sign in front of theirs. If both teams have negative money lines, the team with the larger negative number is favored. If a team is -6.5 on the spread, they are the favorite and would need to win by at least seven points to cover the spread. Their opponent would be +6.5, needing to lose by six points or fewer (or win outright) to cover as an underdog.
+
+
+- ### Who sets the college football odds?
+
+
+
+Odds are originally set by oddsmakers, who are also called sports traders or bookmakers. They usually adjust their odds once bettors start wagering money. The odds can also be moved due to things like injuries or weather forecasts.
+
+
+- ### Why can I not find football odds for a game?
+
+
+
+Sportsbooks take games off the board when a star player suffers an injury, the venue changes or another factor occurs. Oddsmakers usually re-post the updated line within a few hours, depending on the severity of the news. The odds are frozen so the sportsbook avoids taking large wagers on odds that are likely to change.
+
+
+- ### What is the total?
+
+
+
+This is another way to reference the over/under, which is the number of points expected to be scored in a game. If a game has an over/under of 45.5 points, it will go over the total with 46 or more points and under the total with 45 or fewer points.
+
+
+
+AccessEnablerProxy 4.7.1-5a99613
