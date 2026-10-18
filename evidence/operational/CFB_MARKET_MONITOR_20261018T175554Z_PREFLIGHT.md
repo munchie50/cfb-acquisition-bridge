@@ -1,0 +1,16 @@
+# CFB Market Monitor preflight — 2026-10-18 afternoon
+
+- Cycle: `CFB_MARKET_MONITOR_20261018T175554Z`
+- Result: `RUN_INCOMPLETE`
+- Authority recovery: `CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md`; active football-week cadence `v1.247`; persistence, terminal-closure, deterministic sectioning, consensus/Caesars, neutral publication, and CBS complete-capture controls recovered from the repository.
+- Observability: RUN_STARTED was persisted and independently read back at `evidence/run_receipts/CFB_MARKET_MONITOR_20261018T175554Z_RUN_STARTED.md` (blob `4cbfb84d7258c65ec217fca5a5ea1e0f137cbd76`).
+- Runtime proof: Python 3.12.14 executed the repository readiness audit, board normalizer, and full normal-advance reconciliation entry point in this invocation. The relevant programs are standard-library compatible; the unrelated optional `bs4` package is absent and was not required by these programs.
+- Fresh source: a live CBS Week 8 response was recovered with cache bypass and retained at `evidence/operational/CFB_CBS_WEEK8_FULL_BOARD_TABLES_20261018T175907Z.md` (blob `68ec244bd982d0822930746de52a13b8b4ba7543`; scrape `01a1502a-6b43-77bc-9a72-1fd47e0f83c3`; recovered by `2026-10-18T17:59:07Z`). It contains 56 game headers and 112 team rows. Its embedded books are a mixed-book fallback; no qualified multi-book consensus or independently verified Caesars execution offer is claimed.
+- Saved Week 7 readiness at `2026-10-18T18:00:00Z`: 62 governed games; 57 PASS; 5 CONDITIONAL; zero open games; zero overdue open decisions; zero review-required identities. All Week 7 practical windows are closed.
+- Canonical readback blobs: market `87d735251e328226087daa9aa1519c22c702a762`; decision `65b87247a18060069402d9814692ab57ce97dcf3`; execution `75caee4052e02ea7d2453d1d37fd3866e13ecc07`; scorecard `7a6defc4b93ff5c1752890130ff9bdaf50deb2e5`.
+- Compiler invocation: `scripts/cfb_neutral_weekly_reconciliation.py` was executed in normal advance mode with the actual cycle, audit clock, and honest recovered-by bound. No `--bootstrap-saved` was used.
+- Blocking validation error: `ValueError: unknown/reversed directed game identity ('Missouri State', 'Delaware')`.
+- Root cause: the accepted normalizer/compiler and original-lineage archive remain Week 7-specific (62 governed identities), while the fresh source is the 56-game Week 8 board. No accepted Week 8 FIRST_FROZEN/original-lineage boundary exists at this repository state. Substituting, retiming, or outcome-informed reconstruction is prohibited.
+- Mutation disposition: no market, decision, execution, scorecard, or Hot Sheet mutation was attempted. No prediction, threshold, recommendation, wager, or settlement was invented. Frozen Champion state is unchanged.
+- Publication disposition: a Week 8 exactly-once Hot Sheet cannot be validated or published without the accepted Week 8 governed slate and frozen lineage. RUN_PASS is prohibited.
+- Next safe action: allow the governed Monday readiness and Tuesday candidate/acceptance boundary to establish an accepted Week 8 FIRST_FROZEN/original-lineage archive, then run a prospective Monitor cycle against a fresh complete Week 8 response. Candidate generation alone is not acceptance. Do not reconstruct this cycle.
