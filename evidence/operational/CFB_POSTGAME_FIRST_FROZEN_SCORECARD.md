@@ -243,3 +243,72 @@ Scientific effect: descriptive prospective evaluation only. Champion v1.193 unch
 **Excluded final retained without scoring:** Appalachian State 35, Coastal Carolina 32.  
 **Sources:** Tulane Athletics, https://tulanegreenwave.com/game-center/23453 ; Washington Athletics, https://gohuskies.com/game-center/25204 ; Appalachian State Athletics, https://appstatesports.com/sports/football/schedule/2026  
 **Scientific effect:** NONE. Champion v1.193, FIRST_FROZEN/accepted REFRESH lineage, exclusions, Challenger status, and betting rules remain unchanged. No outcome-informed reconstruction occurred.
+
+## Week 7 Saturday FIRST_FROZEN completion join — 2026-10-18
+
+**Cycle:** `CFB_MARKET_MONITOR_20261018T115603Z`  
+**Join rule:** A fresh complete CBS Week 7 board recovered at `2026-10-18T12:03:00Z` supplied final scores for all 62 governed identities. This append contains the 43 previously unscored Saturday rows that had genuine pre-event FIRST_FROZEN predictions. Nine Saturday FIRST_FROZEN exclusions are retained below without scoring. No prediction, exclusion, market decision, recommendation, wager, or execution record was reconstructed from an outcome.  
+**Outcome source:** https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/
+
+| Game ID | Game | Frozen home margin | Frozen total | Frozen home-win p | Final (away-home) | Actual home margin | Actual total | Margin error | Total error | SU correct |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 401858492 | Nebraska @ Oregon | -1.8 | 59.0 | 0.471 | 14-17 | +3 | 31 | +4.8 | -28.0 | 0 |
+| 401864521 | New Mexico @ Hawai'i | -9.8 | 43.5 | 0.268 | 21-10 | -11 | 31 | -1.2 | -12.5 | 1 |
+| 401860904 | Fresno State @ San Diego State | -0.3 | 46.4 | 0.515 | 23-26 | +3 | 49 | +3.3 | +2.6 | 0 |
+| 401856833 | Utah @ Colorado | -13.9 | 52.0 | 0.180 | 27-24 | -3 | 51 | +10.9 | -1.0 | 1 |
+| 401866445 | Ohio @ Sacramento State | +9.1 | 52.4 | 0.691 | 48-7 | -41 | 55 | -50.1 | +2.6 | 0 |
+| 401864523 | San José State @ UTEP | -1.5 | 50.8 | 0.447 | 24-11 | -13 | 35 | -11.5 | -15.8 | 1 |
+| 401871091 | Louisiana Tech @ UL Monroe | -6.2 | 53.8 | 0.373 | 24-0 | -24 | 24 | -17.8 | -29.8 | 1 |
+| 401856722 | Kentucky @ Oklahoma | +10.0 | 48.3 | 0.730 | 21-13 | -8 | 34 | -18.0 | -14.3 | 0 |
+| 401856831 | Oklahoma State @ Houston | +8.7 | 57.0 | 0.711 | 32-35 | +3 | 67 | -5.7 | +10.0 | 1 |
+| 401858265 | Louisville @ Syracuse | -1.9 | 60.4 | 0.459 | 34-26 | -8 | 60 | -6.1 | -0.4 | 1 |
+| 401856809 | Notre Dame @ BYU | +6.0 | 51.1 | 0.658 | 24-28 | +4 | 52 | -2.0 | +0.9 | 1 |
+| 401858494 | Wisconsin @ UCLA | +7.3 | 57.4 | 0.665 | 7-17 | +10 | 24 | +2.7 | -33.4 | 1 |
+| 401856832 | TCU @ Baylor | +1.5 | 48.5 | 0.518 | 17-6 | -11 | 23 | -12.5 | -25.5 | 0 |
+| 401862806 | Kent State @ South Florida | +31.3 | 53.4 | 0.964 | 2-29 | +27 | 31 | -4.3 | -22.4 | 1 |
+| 401858263 | Florida State @ Miami | +27.7 | 60.8 | 0.949 | 35-43 | +8 | 78 | -19.7 | +17.2 | 1 |
+| 401864520 | Nevada @ North Dakota State | +10.4 | 49.0 | 0.728 | 17-31 | +14 | 48 | +3.6 | -1.0 | 1 |
+| 401869934 | Arkansas State @ Southern Miss | +1.7 | 56.4 | 0.559 | 23-13 | -10 | 36 | -11.7 | -20.4 | 0 |
+| 401856726 | Arkansas @ Vanderbilt | +15.4 | 50.7 | 0.794 | 31-21 | -10 | 52 | -25.4 | +1.3 | 0 |
+| 401860903 | Washington State @ Oregon State | +6.1 | 53.1 | 0.641 | 30-48 | +18 | 78 | +11.9 | +24.9 | 1 |
+| 401869966 | Troy @ Louisiana | +4.3 | 48.3 | 0.616 | 6-33 | +27 | 39 | +22.7 | -9.3 | 1 |
+| 401862805 | Tulsa @ Rice | -8.6 | 42.5 | 0.299 | 38-17 | -21 | 55 | -12.4 | +12.5 | 1 |
+| 401856723 | Alabama @ Tennessee | +10.2 | 56.2 | 0.753 | 10-26 | +16 | 36 | +5.8 | -20.2 | 1 |
+| 401864522 | Northern Illinois @ Wyoming | +10.6 | 46.7 | 0.725 | 23-41 | +18 | 64 | +7.4 | +17.3 | 1 |
+| 401864524 | UNLV @ Air Force | +17.2 | 45.5 | 0.877 | 31-41 | +10 | 72 | -7.2 | +26.5 | 1 |
+| 401856828 | Arizona State @ Texas Tech | +5.6 | 54.8 | 0.664 | 25-53 | +28 | 78 | +22.4 | +23.2 | 1 |
+| 401856721 | Missouri @ Ole Miss | +2.0 | 54.6 | 0.580 | 3-31 | +28 | 34 | +26.0 | -20.6 | 1 |
+| 401858264 | Georgia Tech @ Virginia Tech | +15.1 | 54.4 | 0.806 | 24-34 | +10 | 58 | -5.1 | +3.6 | 1 |
+| 401858490 | Penn State @ Michigan | -3.9 | 42.3 | 0.420 | 18-21 | +3 | 39 | +6.9 | -3.3 | 0 |
+| 401866478 | Akron @ Miami (OH) | +3.4 | 55.1 | 0.571 | 14-34 | +20 | 48 | +16.6 | -7.1 | 1 |
+| 401856719 | Auburn @ Georgia | +22.5 | 61.7 | 0.915 | 27-24 | -3 | 51 | -25.5 | -10.7 | 0 |
+| 401866444 | Toledo @ Eastern Michigan | -10.7 | 55.7 | 0.249 | 34-14 | -20 | 48 | -9.3 | -7.7 | 1 |
+| 401858266 | North Carolina @ Duke | +2.5 | 44.5 | 0.539 | 24-20 | -4 | 44 | -6.5 | -0.5 | 0 |
+| 401866443 | Western Michigan @ Central Michigan | -3.6 | 40.0 | 0.415 | 21-14 | -7 | 35 | -3.4 | -5.0 | 1 |
+| 401856725 | The Citadel @ Texas A&M | +14.3 | 59.6 | 0.852 | 0-41 | +41 | 41 | +26.7 | -18.6 | 1 |
+| 401866442 | Massachusetts @ Buffalo | -14.3 | 47.4 | 0.181 | 18-24 | +6 | 42 | +20.3 | -5.4 | 0 |
+| 401858267 | Pittsburgh @ Boston College | -6.3 | 47.4 | 0.344 | 21-27 | +6 | 48 | +12.3 | +0.6 | 0 |
+| 401866441 | Ball State @ Bowling Green | -2.4 | 51.8 | 0.432 | 32-31 | -1 | 63 | +1.4 | +11.2 | 1 |
+| 401856829 | Cincinnati @ West Virginia | +4.0 | 55.7 | 0.617 | 42-45 | +3 | 87 | -1.0 | +31.3 | 1 |
+| 401869957 | Georgia State @ James Madison | +17.0 | 55.8 | 0.856 | 22-49 | +27 | 71 | +10.0 | +15.2 | 1 |
+| 401856830 | Kansas @ Kansas State | +19.6 | 50.6 | 0.878 | 24-35 | +11 | 59 | -8.6 | +8.4 | 1 |
+| 401856720 | Mississippi State @ LSU | -0.9 | 60.3 | 0.470 | 0-31 | +31 | 31 | +31.9 | -29.3 | 0 |
+| 401858268 | Virginia @ SMU | -0.1 | 57.0 | 0.515 | 13-23 | +10 | 36 | +10.1 | -21.0 | 0 |
+| 401856724 | Florida @ Texas | +0.9 | 58.6 | 0.556 | 27-24 | -3 | 51 | -3.9 | -7.6 | 0 |
+
+**Saturday exclusions retained without scoring:**
+- `401858269` Wake Forest @ California — FIRST_FROZEN exclusion `home_prior_points_missing`; final 41-7 retained only as outcome context.
+- `401862804` Navy @ UTSA — FIRST_FROZEN exclusion `away_prior_points_missing`; final 34-38 retained only as outcome context.
+- `401858262` Elon @ Stanford — FIRST_FROZEN exclusion `away_opening_no_prior`; final 7-34 retained only as outcome context.
+- `401862803` Charlotte @ Temple — FIRST_FROZEN exclusion `home_prior_pbp_missing`; final 38-31 retained only as outcome context.
+- `401858489` Rutgers @ Maryland — FIRST_FROZEN exclusion `away_prior_points_missing`; final 37-30 retained only as outcome context.
+- `401858491` Northwestern @ Michigan State — FIRST_FROZEN exclusion `away_prior_points_missing`; final 24-21 retained only as outcome context.
+- `401862802` Florida Atlantic @ Army — FIRST_FROZEN exclusion `home_prior_pbp_missing`; final 24-56 retained only as outcome context.
+- `401858261` Charleston Southern @ Clemson — FIRST_FROZEN exclusion `home_prior_points_missing`; final 0-37 retained only as outcome context.
+- `401858488` Ohio State @ Indiana — FIRST_FROZEN exclusion `home_prior_points_missing`; final 19-15 retained only as outcome context.
+
+**Saturday modeled summary:** 43/43 matched; unresolved 0; SU direction 28/43 (65.1%); margin MAE 12.25; total MAE 13.49.
+**Complete Week 7 modeled summary:** 51/51 matched; unresolved 0; SU direction 31/51 (60.8%); margin MAE 12.89; total MAE 13.40; home-win Brier 0.224.
+
+No established Week 7 production or $20 sandbox execution was present in the canonical execution ledger at this scoring boundary, so no wager settlement was created. Descriptive outcome scoring does not mutate Champion v1.193, FIRST_FROZEN, accepted REFRESH, Challenger, TIME-HIDDEN, market, decision, or execution state.
+
