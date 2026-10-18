@@ -9558,3 +9558,32 @@ Future CFB health/QA reports must identify Big Nine as PAUSED / OUT OF SCOPE; mi
   ]
 }
 ```
+
+
+## 2026-10-18 Sunday Weekly QA navigation append
+
+This is the latest weekly-learning navigation block. For current recovery, its `CURRENT_WEEKLY_REVIEW` pointer supersedes the older historical weekly-review pointer labels preserved above. It does not modify Champion, frozen predictions, market, decision, execution, settlement, task, or schedule authority.
+
+```json
+{
+  "accepted_at_utc": "2026-10-18T14:10:00Z",
+  "source_run": "CFB_WEEKLY_QA_20261018T135505Z",
+  "pointers": [
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-18_R1.md",
+      "blob": "89d646b66ad845ef1f00985ae55ef88cabba92b6",
+      "purpose": "CURRENT_WEEKLY_REVIEW: authoritative Week7 learning closure; no automatic Champion or Challenger mutation"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "7a6defc4b93ff5c1752890130ff9bdaf50deb2e5",
+      "purpose": "CURRENT_SCORECARD: complete Week7 51/51 modeled join plus 11 preserved exclusions"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261018T115603Z_RUN_CLOSURE.md",
+      "blob": "a66e70aa787070c295ac291345397476c4a6946e",
+      "purpose": "LATEST_SUNDAY_MONITOR_CLOSURE: Week8 opening-board advance RUN_INCOMPLETE; not upgraded by Weekly QA"
+    }
+  ]
+}
+```
