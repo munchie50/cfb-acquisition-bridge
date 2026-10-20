@@ -7,6 +7,8 @@ from cfb_week7_accepted_s0_ancestry_audit import ALIASES
 
 URL='https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/'
 LINEAGE_SHA='d80e26c398de48e7a386ad9a627fe44f4111ac45'
+WEEK8_LINEAGE_SHA='337a23b03a10617ff87d9ba8c1c224cd3ebe1d9c'
+WEEK8_URL=URL.replace('week-7','week-8')
 def blob(s):
     b=s.encode();return hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()
 def at(s):
@@ -37,12 +39,16 @@ def market(cell,kind):
     if abs(price)<100:raise ValueError('invalid American price')
     return {'availability':'DISPLAYED','line':line,'price':price,'side':side,'opaque_book_icon_id':book}
 
-def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='America/New_York'):
+def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='America/New_York',*,profile='WEEK7'):
     observed=at(recovered_by)
-    if source_url!=URL or source_timezone!='America/New_York':raise ValueError('unqualified source page/year/timezone')
-    if blob(lineage)!=LINEAGE_SHA:raise ValueError('unqualified original identity baseline')
+    profiles={'WEEK7':(URL,LINEAGE_SHA,62),'WEEK8':(WEEK8_URL,WEEK8_LINEAGE_SHA,56)}
+    if profile not in profiles:raise ValueError('unqualified source profile')
+    page,digest,count=profiles[profile]
+    if source_url!=page or source_timezone!='America/New_York':raise ValueError('unqualified source page/year/timezone')
+    if blob(lineage)!=digest:raise ValueError('unqualified original identity baseline')
     census=json.loads(lineage)['rows'];expected={(r['away_team'],r['home_team']):r['game_id'] for r in census}
-    if len(expected)!=62:raise ValueError('identity baseline mismatch')
+    if len(expected)!=count:raise ValueError('identity baseline mismatch')
+    aliases={**ALIASES,**({'New Mexico St.':'New Mexico State','Boise St.':'Boise State','Utah St.':'Utah State','Iowa St.':'Iowa State'} if profile=='WEEK8' else {})}
     result=[];pending=None;rows=[];all_team_rows=0
     def finish():
         nonlocal pending,rows
@@ -72,7 +78,7 @@ def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='Amer
         if not names:continue
         all_team_rows+=1
         if pending is None or len(c)!=6:raise ValueError('unscoped/malformed team offer row')
-        name=names[-1];team=ALIASES.get(name,name)
+        name=names[-1];team=aliases.get(name,name)
         # Explicitly quarantine Final and Open columns: never parse as live prices/outcomes.
         rows.append({'team':team,'spread':market(c[3],'spread'),'moneyline':market(c[4],'moneyline'),'total':market(c[5],'total')})
         if len(rows)>2:raise ValueError('extra team offer row')
@@ -81,7 +87,7 @@ def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='Amer
     if len(ids)!=len(set(ids)):raise ValueError('duplicate game identity')
     if set(ids)!=set(expected.values()):raise ValueError('incomplete source identity coverage')
     active=[r for r in result if r['temporal_status']=='FUTURE_AT_CAPTURE']
-    return {'schema':'CFB_CBS_COMPLETE_FALLBACK_CAPTURE_V1','source_url':source_url,'response_recovered_by_utc':recovered_by,'clock_semantics':'RESPONSE_RECOVERED_BY_NOT_EXACT_FETCH_OR_BOOK_UPDATE','source_timezone':source_timezone,'source_sha256':hashlib.sha256(markdown.encode()).hexdigest(),'games':result,'coverage':{'governed_games':62,'matched_games':len(result),'source_team_rows':all_team_rows,'future_games':len(active),'future_team_rows':sum(len(r['team_offers']) for r in active),'past_or_started_games':len(result)-len(active),'missing_game_ids':[]},'qualification':'UNIDENTIFIED_FIELD_LEVEL_MIXED_BOOK_FALLBACK_ONLY','consensus':'CONSENSUS_UNAVAILABLE','caesars':'UNVERIFIED','book_update_time':'UNKNOWN','executability':'UNVERIFIED','quarantined_columns':['Final','Open'],'scope':'exact source-display capture and identity completeness only; no outcome/schedule-truth/consensus/execution/decision acceptance'}
+    return {'schema':'CFB_CBS_COMPLETE_FALLBACK_CAPTURE_V1','source_url':source_url,'response_recovered_by_utc':recovered_by,'clock_semantics':'RESPONSE_RECOVERED_BY_NOT_EXACT_FETCH_OR_BOOK_UPDATE','source_timezone':source_timezone,'source_sha256':hashlib.sha256(markdown.encode()).hexdigest(),'games':result,'coverage':{'governed_games':count,'matched_games':len(result),'source_team_rows':all_team_rows,'future_games':len(active),'future_team_rows':sum(len(r['team_offers']) for r in active),'past_or_started_games':len(result)-len(active),'missing_game_ids':[]},'qualification':'UNIDENTIFIED_FIELD_LEVEL_MIXED_BOOK_FALLBACK_ONLY','consensus':'CONSENSUS_UNAVAILABLE','caesars':'UNVERIFIED','book_update_time':'UNKNOWN','executability':'UNVERIFIED','quarantined_columns':['Final','Open'],'scope':'exact source-display capture and identity completeness only; no outcome/schedule-truth/consensus/execution/decision acceptance'}
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
