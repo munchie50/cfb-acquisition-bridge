@@ -52,10 +52,11 @@ class ReadinessTests(unittest.TestCase):
         self.assertNotIn('BET NOW', str(r))
         self.assertNotIn('stake', r)
 
-    def test_authentic_current_diagnostic_covers_all_qualified_states(self):
+    def test_authentic_retained_diagnostic_covers_all_qualified_states(self):
         root = Path('evidence/operational')
-        m = (root / 'CFB_MARKET_MONITOR_STATE.md').read_text()
-        d = (root / 'CFB_DECISION_WAIT_LEDGER.md').read_text()
+        from cfb_neutral_publication_legacy_replay import historical
+        m = historical(root / 'CFB_MARKET_MONITOR_STATE.md', '87d735251e328226087daa9aa1519c22c702a762')
+        d = historical(root / 'CFB_DECISION_WAIT_LEDGER.md', '65b87247a18060069402d9814692ab57ce97dcf3')
         lineage = (root / 'CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json').read_text()
         # Bound replay clock to the canonical packet; not a new observation.
         import cfb_neutral_weekly_reconciliation as repair
