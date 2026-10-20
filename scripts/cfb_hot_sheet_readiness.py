@@ -62,20 +62,20 @@ def review_window(decision, market, as_of):
             'scope': 'REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY'}
 
 
-def audit(market, decision, lineage, as_of):
+def audit(market, decision, lineage, as_of, profile='WEEK7'):
     """Diagnose the bounded neutral profile from canonical packets, not prose.
 
     This profile cannot prove completed football/rule reviews. Do not infer
     them from a model number, a generic pending reason or an HTTP success.
     """
     now = gate.clock(as_of)
-    selected = gate.selected_block(market, gate.MARKET_TAG,
+    selected = gate.selected_block(market, gate.profile_config(profile)['market_tag'],
                                    (gate.MARKET_SCHEMA, gate.WEEKLY_MARKET_SCHEMA), now)
     # Prove the saved publication at its own boundary, then diagnose age at the
     # actual audit clock. An old pregame row is stale, not permission to retime
     # its source, silently accept it as current, or reconstruct a decision.
     saved_at = selected['as_of_utc']
-    m, d, census, markets, decisions = gate.inputs(market, decision, lineage, saved_at)
+    m, d, census, markets, decisions = gate.inputs(market, decision, lineage, saved_at, profile)
     rows = []
     counts = Counter()
     elapsed_current = []
@@ -151,6 +151,7 @@ if __name__ == '__main__':
     for name in ('market', 'decision', 'lineage'):
         p.add_argument('--' + name, type=Path, required=True)
     p.add_argument('--as-of', required=True)
+    p.add_argument('--profile', choices=('WEEK7','WEEK8'), default='WEEK7')
     args = p.parse_args()
     print(json.dumps(audit(args.market.read_text(), args.decision.read_text(),
-                           args.lineage.read_text(), args.as_of), indent=2))
+                           args.lineage.read_text(), args.as_of, args.profile), indent=2))
