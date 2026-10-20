@@ -63,4 +63,22 @@ class CarryTests(unittest.TestCase):
         with self.assertRaises(ValueError):gate.bind(self.navigation(lambda p:p[1].update(purpose='CURRENT_WEEKLY_REVIEW: competing')),self.review,self.lineage,self.health,'2026-10-11T23:45:19Z')
     def test_stale_health_pointer(self):
         with self.assertRaises(ValueError):gate.bind(self.navigation(lambda p:p[2].update(blob='0'*40)),self.review,self.lineage,self.health,'2026-10-11T23:45:19Z')
+    def test_qualified_week7_navigation_retains_historical_review(self):
+        def advance(p):
+            p[0]['purpose']='HISTORICAL_WEEKLY_REVIEW: retained correction'
+            p.append({'path':gate.WEEK7_REVIEW,'blob':gate.WEEK7_REVIEW_SHA,'purpose':'CURRENT_WEEKLY_REVIEW: Week7 closure'})
+        result=gate.bind(self.navigation(advance),self.review,self.lineage,self.health,'2026-10-20T01:40:30Z')
+        self.assertEqual(result['current_weekly_review_blob'],gate.WEEK7_REVIEW_SHA)
+    def test_unqualified_weekly_successor_rejected(self):
+        for path,sha in [(gate.WEEK7_REVIEW,'0'*40),('evidence/future_week.md',gate.WEEK7_REVIEW_SHA)]:
+            def advance(p):
+                p[0]['purpose']='historical'
+                p.append({'path':path,'blob':sha,'purpose':'CURRENT_WEEKLY_REVIEW: unsupported'})
+            with self.assertRaises(ValueError):
+                gate.bind(self.navigation(advance),self.review,self.lineage,self.health,'2026-10-20T01:40:30Z')
+    def test_successor_cannot_erase_historical_correction(self):
+        def advance(p):
+            p[0].update(path=gate.WEEK7_REVIEW,blob=gate.WEEK7_REVIEW_SHA)
+        with self.assertRaisesRegex(ValueError,'historical weekly correction'):
+            gate.bind(self.navigation(advance),self.review,self.lineage,self.health,'2026-10-20T01:40:30Z')
 if __name__=='__main__':unittest.main()
