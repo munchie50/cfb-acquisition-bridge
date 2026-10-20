@@ -1,3 +1,6 @@
+Warning: truncated output (original token count: 193216)
+Total output lines: 9798
+
 # CFB Engine — Current Recovery Index v1.245
 
 ## October 9 benchmark pre-write replay validation
@@ -3578,1731 +3581,7 @@ Historical wording does not supersede exact accepted S0 evidence; operational au
       "purpose": "HISTORICAL_WEEKLY_REVIEW: immutable Week6 learning; Week7 carry-forward/natural-success classification superseded prospectively by R2"
     },
     {
-      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
-      "blob": "ec6fef317b55ee4a6db2a1a758d73cfb886d9965",
-      "purpose": "current durable findings: original51FIRST_FROZEN display corrected; independent CI passed, naturalproducer andoperationaldebts open"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md",
-      "blob": "63ec14c167dfb4c64fb845ebd862f6aac588e487",
-      "purpose": "active default/event/practical decision cadence authority"
-    },
-    {
-      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
-      "blob": "f90f0d87f5027fe93bf4ca2c22440539904890ef",
-      "purpose": "ACTIVE persistence and full proposed navigation-history pre-write validation"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_PREDICTION_ANCESTRY_AND_EARLY_WEEK_HANDOFF_QA_2026-10-11.md",
-      "blob": "3d3a4caf1676770a7ad316e6375bdb074a329f72",
-      "purpose": "HISTORICAL bounded October6 S0 ancestry audit; original FIRST_FROZEN recovered separately afterward"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ACCEPTED_S0_ANCESTRY_AUDIT_2026-10-11.json",
-      "blob": "bf21c4e684b09907084c63cf0b8b1a994ed1018f",
-      "purpose": "62game exact ancestry coverage and43 immutable start-time differences; not operational acceptance"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1429CT.md",
-      "blob": "71006586178a1829c51f119fff872b6f981cd865",
-      "purpose": "CURRENT_HOT_SHEET: faithful51FIRST_FROZEN values+11exclusions; retained13:05markets, unverifiedplanningclocks, no new decisions"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
-      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
-      "purpose": "acceptedoriginal62target lineage census; distinct from October6REFRESH"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_DISPLAY_CORRECTION_2026-10-11.md",
-      "blob": "6148d81b51073cc98d1f05319cfd108d710b548c",
-      "purpose": "original51+11 lineage/current-display correction and independent CI proof; naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_ROUTINE_V6_BACK_HALF_CANDIDATE_2026-09-30.md",
-      "blob": "240d7ce844af16412210b52263f511644c3063e1",
-      "purpose": "TestRoutinev6 CANDIDATE proceduralcontrol with explicit complete-boundary demonstration; Productionv5 unchanged"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
-      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
-      "purpose": "CURRENT_WEEKLY_REVIEW: manual prospective carry-forward correction; Week6 learning unchanged, naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md",
-      "blob": "6cb8b60706b2338a37df85f5ae277983dcf2d5a5",
-      "purpose": "ACTIVE weeklylearning output and complete-boundary/proof-scope producer control"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
-      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
-      "purpose": "LATEST_PERSISTED_HEALTH_AUDIT: natural current-state reconciliation RUN_INCOMPLETE; preserve unresolvedcycles"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_RUN_CLOSURE.md",
-      "blob": "13775259fa2c3be8c36473b5067647e635014abd",
-      "purpose": "naturalHealth independentclosure RUN_INCOMPLETE, not a missing/still-running invocation"
-    },
-    {
-      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
-      "blob": "6254ab28b90d9fa4a815124ea7ffec2850ddfc30",
-      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October6 independentlyacceptedREFRESH source; separatefromoriginalFIRST_FROZEN/currentconsumerchoice"
-    },
-    {
-      "path": "evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-07.md",
-      "blob": "a4fb4c56addf12335a477034673e167afc28ebb4",
-      "purpose": "independentexactOctober6S0REFRESHacceptance; noS2/Champion/pointeradvanceimpliedbyfieldchecker"
-    },
-    {
-      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
-      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
-      "purpose": "CURRENT_MONEY_LEDGER: originaluserinstructionconfirmedNEW+20funding, bookedonce; budgetallocation/time/combinedbalance unassigned/unresolved"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_CONTROLLED_EXPERIMENTAL_CAPITAL_AND_PARLAY_EXPOSURE_v1_238.md",
-      "blob": "3fdaa4ff8618695b77e659dd0d12536b510acda6",
-      "purpose": "ACTIVE capitalcontrol withfunding/executionseparation/idempotence; sandbox20ceiling andriskbehavior unchanged"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_WEEK7_TUESDAY_SOURCE_READINESS_2026-10-12.json",
-      "blob": "7f6d913dc7afd192219db2bdc3be50f66976ae5d",
-      "purpose": "LATEST_BOUNDED_TUESDAY_SOURCE_READINESS: official kickoff2/2; onebookretrievalfallback; consensus/Caesars/practicalcutoffs unverified; nextproducer requalification required"
-    }
-  ]
-}
-```
-
-```cfb-frontier-json
-{
-  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
-  "as_of_utc": "2026-10-12T12:12:00Z",
-  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
-  "claims": [
-    "Navigation only; independently recover governing controls and canonical current state. ProductionRoutinev5 remains active, TestRoutinev6 candidate, frozenChampionv1.193 unchanged.",
-    "Original accepted September26 FIRST_FROZEN artifact10897612260 independently recovered at ZIP772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf. All62Week7targets covered:51original predictions+11explicitexclusions; all4Tue/Wed original predictions exist. HistoricalChallengerB is today's BetaProductionChampion underv1.222.",
-    "Earlier blanket absentWeek7Champion/FIRST_FROZEN claims in originalSundayviews and priorQA were incomplete; preserved as historical evidence and prospectively superseded only on absence classification. October6S0research audit remains correct for its narrow refreshcoverage61+1, not complete FIRST_FROZEN ancestry.",
-    "Current sole HotSheet is manual14:29CTlineage correction with51faithfullyprojected original fairspread/total/homewintriples and11originalexclusions. October6REFRESH isseparate; no refreshprediction substitutesfor originalprediction/exclusion. No acceptedpointeradvance, new modelrun/acceptance orpromotion.",
-    "Canonicaldecision append corrects ancestry claim only; all62dispositions remainINCONCLUSIVE, thresholds/notrips/executions unchanged. Qualifiedconsensus unavailable andcurrentCaesars unverified. Marketquotes/movement/sourceclock remain13:05CT; newdisplayclock isnot newretrieval.",
-    "Currentoperationalkickoffs and archivedmodelclocks remainseparate. Saveddeadline/cutoff values remain retainedplanninginformation withUNVERIFIED/CUTOFF_AUTHORITY_UNVERIFIED; no effectiveaccessclock accepted, deadline extended, casinoaccess/tripinvented oroverduestate inferred.",
-    "IndependentGitHub38168633837/job114556348721 at760ff6bc andfollowup38168800068/job114556842196 at31e432e8 SUCCESS: bothacceptedZIPs,12ancestry+23projection+16opening+22afternoon tests,currentbinding/actual51+11CLI andfullretainedQA independentlyverified.153numericfields/51directions and11originalexclusions matched. Originalintermediatebindingfailures38168568853/38168571102 preserved; finalcoherentviewpassedseparately.",
-    "Whole assembled index validated beforewrite withunchanged strictreader; fullhistoricalactive validation, evidence-onlypaths andobservedUTCclock retained. Exactlytwooriginalrejectedrecords andoriginalincompleteclockQA unchanged.",
-    "New weekly Mondayreadiness/Tuesdaycandidate remainsseparatefuture operational dependency; candidate success/noop isnotacceptance. Naturalcorrectedabsence/display produceruse and broader scheduler/source/execution/cutoff/close/CLV/moneyambiguity debts remainOPEN. Fourproductiontaskfields unchanged.",
-    "Manualdisplay/absence-classification correction isCORRECTED/PERSISTED/READ_BACK/EXISTING_CI_DEMONSTRATED/INDEPENDENTLY_RECONCILED; NATURAL_PRODUCER_PENDING. EarlierpartialS0audit/report preserved andexplicitlybounded, originalFIRST_FROZEN nowcomplete. Exactlyfourproductiontaskconfigurationfields andacceptedsourcepointer independentlyunchanged.",
-    "Natural16:54:56CTHealthaudit/16:59:03closure correctlyRUN_INCOMPLETE, current51+11HotSheet validmanualstate. Itcarried SundayMonitor/WeeklyQAsemanticdefects plus historicalMonitor/Evening/Healthgaps andBigNineprivateauthority; noSundayeveningcycledue. Runtimeinvocationclosedincomplete, notstillrunning. NextMonitorMonday07CT isprospectiveproducerconfirmation, notmissedSundayreplay.",
-    "CurrentmanualR2weeklyreview corrects5Week7absence/natural-successsemanticboundaries andW6-L9 status only; originalR1/receipts/all49Week6numeric/gamerows/wager/threshold/accountingcontent unchanged.25tests andactualselectedR2/sourceCLI independentlypassedGitHub38185781106/job114607667896 at454b1cb0; fullretainedQA passed. CurrentHotSheet/currentdecisions/acceptedsource/model/money/task/schedules unchanged. Naturalproducerproof remainsPENDING.",
-    "LatestnaturalHealthaudit6b1097abd4cb082a1e60e4d1f09573576d804001/closure13775259fa2c3be8c36473b5067647e635014abd remainRUN_INCOMPLETE. Carry SundayMonitor120436Z/180208Z andWeeklyQA135620Z semanticdefects, historicalMonitorOct09T120138Z/Oct10T180302Z, EveningOct08/Oct10T011934Z andHealthOct08 gaps; newerinvocation/CI/manualcorrectionneverretrocloses these. BigNineacceptedprivateauthority remainsmissing; noYahoointegrationchange.",
-    "Orthogonaloriginalfrozen-fieldcheck built/readback/independentlyexecuted inexistingGitHub38186246745/job114609074671 atb7650113:26tests/current62IDs/51predictions153numbers/51directions/11exclusions PASS. Presentationtitle/cycle-only diagnosticsretainoriginalnumbers; changedmarket/decision/title casesstillREJECTunderunchangedfullprofile. No syntheticfuturepublication/observation/decisionpersisted.",
-    "PASS_ORIGINAL_FROZEN_FIELDS_ONLY isnot fullpublication/currentmarket/decision/practicalcutoffauthority. Existingunknownfullcycle rejection unchanged; nextnaturalMondaypublication stillrequiresfreshqualifiedfullsource/decisionphase. NewacceptedREFRESH consumerrequiresseparateapprovedroute; no originaloverwrite. Naturalproducerdemonstration pending. CurrentHotSheet/operational/accepted/model/wager/money/taskstate andHealthRUN_INCOMPLETE unchanged.",
-    "AcceptedOctober6REFRESH fieldadapter independentlypassed24tests/actualCLI inexistingGitHub38186943599/job114611193825:62IDs/61REFRESHpredictions183numbers/1exclusion whileoriginal51+11values/status/reasons remainunchanged.10originalexclusionslatereligible onlyinREFRESH, neverbackfilled. Exactacceptedpointer/independentrecord/ZIP/cutoff/typebound; candidateworkflowgreen alone rejected.",
-    "PASS_ACCEPTED_REFRESH_FIELDS_ONLY isnot operationalconsumerselection orfullpublicationacceptance. CurrentHotSheetstilloriginal51+11/all62INCONCLUSIVE; no current/futureview, prediction, sourceobservation, decision,wager/cash/task created. Diagnosticrecords ephemeral; lateracceptedboundary requiresindependentqualification. Fullsource/decision/practicalcutoff/lineageintegration/naturalproducer debts andHealthRUN_INCOMPLETE remainOPEN.",
-    "Directuserclarificationearned:original“Alsoadd20tomoneyledger” meansNEW+20USDfundingseparatefromfour$5bets, nottheirstaketotal. Currentmoneyledgerpostsoneuniqueoriginalinstructionfundingentry. Clarification isnotsecondcredit; oldpendingmeaningstatementsremainhistorical andsuperseded prospectively.",
-    "New+20funding remainsUNASSIGNEDproduction/sandbox, actualfundingtimeunspecified andcombinedcashbalance NOT_COMPUTABLE. Sandbox20ceiling/available20/exposure0 remainsunchanged. Existing15actualwagers/53.45stake,fourticket20stake/14.55arithmeticreturn/-5.45net andallgrades/executionrecords unchanged; no payout/debit/transfer/risklimit inferred. Fundingmeaningdebt CLOSED; allocation/openingbalance/redemption/date andotheroperationaldebts remainOPEN.",
-    "OriginalconfirmedADD20moneyrecord nowconsumedbyEXISTINGQA:28record/table/source/dedup/currentselector tests andactualCLI independentlypassedGitHub38192674570/job114628594210. Exactmoneyledger3aebcbdcc535479c29c31f18073cba09f59aab01 unchanged; stilloneUNASSIGNED+20funding, distinctfromfour20stake/historical53.45stake/payouts, no balance/limit inference.",
-    "PASS_QUALIFIED_ADD20_FUNDING_RECORD_ONLY isnotbank/paymentverification,fullcashbalance ornewfunding/allocation/riskauthority. Producercontrolinstalled/prewriteusewhenavailable required, butnaturalscheduleduse andbroadaccounting/operationalfailureclassesnotclosed. Existingall4tasks/currentHotSheet/model/wager/result/sourceacceptedstate unchanged; budget/fundingdate/openingbalance/cashpayment andHealthincomplete/otherdebts remainOPEN.",
-    "User-directedTestRoutinev6 Tuesday source-readiness audit independentlypersisted/readback:2acceptedIDs andofficial18/19CT October13kickoffclocks matched; bothfuture. Actualpracticalexecutionaccess/cutoffs remainUNVERIFIED; all62currentdecisions andcanonicalHotSheet/source/model/wager/money unchanged.",
-    "DraftKingsreadable fullgame2rowpublicfallback collected105514Z-105810Z;bookmakerupdatetimeUNKNOWN/executionUNVERIFIED. BothFanDuelevents locationverification;BetMGM locationselector;FanDueleditorial Delaware sidepricesinternallyconflict. Oneoperatornot3bookqualifiedconsensus; no sourcegate bypass, median/EV/recommendation. Qualifiedconsensus/Caesars/practicalaccess remainOPEN.",
-    "Boundedretainedkickoffrecovery CORRECTED/PERSISTED/READ_BACK/DETERMINISTIC_RECONCILIATION_DEMONSTRATED; nextexistingMonitor mustindependentlyrequalify source/fullslate/decision/publication. NaturalproducerusePENDING; currentHealthRUN_INCOMPLETE/historicalgaps unchanged. Fourenabledtaskfields independentlyunchanged; no newtask/dispatch.",
-    "Natural Monday07:01CT Market Monitor consumed corrected original51FIRST_FROZEN+11exclusions without REFRESH substitution. Full62-game exactly-once Hot Sheet sectioning passed2/2/3/3/13/17/22/0; Nebraska retained. This is prospective natural-producer use, not historical replay or model acceptance.",
-    "Live DraftKings public Game Lines retrieval120702Z matched55/62 governed identities with complete spread/total/moneyline pairs. Identified single-book fallback only: bookmaker update UNKNOWN, execution NOT_VERIFIED, consensus unavailable62/62, Caesars unverified62/62. Seven unmatched current quotes explicitly unavailable; Sunday observations remain historical.",
-    "All62 decisions remainINCONCLUSIVE; acceptable numbers/trips/Week7 executions remainnone. Tuesday2 retain13:00CT reconciliation; saved practical cutoffs remainCUTOFF_AUTHORITY_UNVERIFIED. No forced bet, confidence, EV or threshold invented.",
-    "Monday repository readiness workflow for current date had not yet run by1207Z; last scheduled run Oct5 success. Bounded manual source QA remains two-game/test-only and incomplete for market execution readiness. Candidate generation remains nonacceptance.",
-    "Canonical market6a59f9063527b342fb80b73aad82096de2610c8d and decisioncd6bf4246d63789c4d9f0977dc365966df0a8968 persisted/readback. Current HotSheet57fcf76162dfdd5aed54159a6b567107705d7643 persisted/readback; execution/scorecard/money unchanged. Initial generated market coverage row mis-normalized Central Michigan; append-only correction preserves exact55/7 coverage."
-  ],
-  "pointers": [
-    {
-      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
-      "blob": "6a59f9063527b342fb80b73aad82096de2610c8d",
-      "purpose": "current canonical Monday07:07CT DraftKings public single-book fallback55/62 plus explicit7 unavailable; correction retained"
-    },
-    {
-      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
-      "blob": "cd6bf4246d63789c4d9f0977dc365966df0a8968",
-      "purpose": "current canonical Monday decision reconciliation;62INCONCLUSIVE, Tuesdaydeadline retained, no threshold/trip/execution"
-    },
-    {
-      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
-      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
-      "purpose": "current execution surface; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
-      "blob": "6f7650d340bf63f8f93a2b825e35f8b8e41fa80b",
-      "purpose": "current scorecard; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_0708CT.md",
-      "blob": "6d4e94b3646b6277a8b84152b1c5ead911714a9a",
-      "purpose": "HISTORICAL_WEEK7_MORNING_HOT_SHEET: immutable first-observation source"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md",
-      "blob": "c027e59eb0f752cd0225d69938f52e924f5c1a68",
-      "purpose": "HISTORICAL_WEEK7_AFTERNOON_HOT_SHEET: immutable13:05 market/movement; original absence classification superseded"
-    },
-    {
-      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
-      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
-      "purpose": "ACTIVE consensus benchmark and Caesars execution separation"
-    },
-    {
-      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
-      "blob": "9b72cb316492e270be3c27c882ded189f965eed0",
-      "purpose": "active current-output exact-once sectioning and actual-clock control"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R1.md",
-      "blob": "31d72be8927068879c9f5cf867c65eec3b8ff5e0",
-      "purpose": "HISTORICAL_WEEKLY_REVIEW: immutable Week6 learning; Week7 carry-forward/natural-success classification superseded prospectively by R2"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
-      "blob": "ec6fef317b55ee4a6db2a1a758d73cfb886d9965",
-      "purpose": "current durable findings: original51FIRST_FROZEN display corrected; independent CI passed, naturalproducer andoperationaldebts open"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md",
-      "blob": "63ec14c167dfb4c64fb845ebd862f6aac588e487",
-      "purpose": "active default/event/practical decision cadence authority"
-    },
-    {
-      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
-      "blob": "f90f0d87f5027fe93bf4ca2c22440539904890ef",
-      "purpose": "ACTIVE persistence and full proposed navigation-history pre-write validation"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_PREDICTION_ANCESTRY_AND_EARLY_WEEK_HANDOFF_QA_2026-10-11.md",
-      "blob": "3d3a4caf1676770a7ad316e6375bdb074a329f72",
-      "purpose": "HISTORICAL bounded October6 S0 ancestry audit; original FIRST_FROZEN recovered separately afterward"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ACCEPTED_S0_ANCESTRY_AUDIT_2026-10-11.json",
-      "blob": "bf21c4e684b09907084c63cf0b8b1a994ed1018f",
-      "purpose": "62game exact ancestry coverage and43 immutable start-time differences; not operational acceptance"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1429CT.md",
-      "blob": "71006586178a1829c51f119fff872b6f981cd865",
-      "purpose": "HISTORICAL_HOT_SHEET: faithful51FIRST_FROZEN values+11exclusions; retained13:05markets, unverifiedplanningclocks, no new decisions"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
-      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
-      "purpose": "acceptedoriginal62target lineage census; distinct from October6REFRESH"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_DISPLAY_CORRECTION_2026-10-11.md",
-      "blob": "6148d81b51073cc98d1f05319cfd108d710b548c",
-      "purpose": "original51+11 lineage/current-display correction and independent CI proof; naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_ROUTINE_V6_BACK_HALF_CANDIDATE_2026-09-30.md",
-      "blob": "240d7ce844af16412210b52263f511644c3063e1",
-      "purpose": "TestRoutinev6 CANDIDATE proceduralcontrol with explicit complete-boundary demonstration; Productionv5 unchanged"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
-      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
-      "purpose": "CURRENT_WEEKLY_REVIEW: manual prospective carry-forward correction; Week6 learning unchanged, naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md",
-      "blob": "6cb8b60706b2338a37df85f5ae277983dcf2d5a5",
-      "purpose": "ACTIVE weeklylearning output and complete-boundary/proof-scope producer control"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
-      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
-      "purpose": "LATEST_PERSISTED_HEALTH_AUDIT: natural current-state reconciliation RUN_INCOMPLETE; preserve unresolvedcycles"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_RUN_CLOSURE.md",
-      "blob": "13775259fa2c3be8c36473b5067647e635014abd",
-      "purpose": "naturalHealth independentclosure RUN_INCOMPLETE, not a missing/still-running invocation"
-    },
-    {
-      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
-      "blob": "6254ab28b90d9fa4a815124ea7ffec2850ddfc30",
-      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October6 independentlyacceptedREFRESH source; separatefromoriginalFIRST_FROZEN/currentconsumerchoice"
-    },
-    {
-      "path": "evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-07.md",
-      "blob": "a4fb4c56addf12335a477034673e167afc28ebb4",
-      "purpose": "independentexactOctober6S0REFRESHacceptance; noS2/Champion/pointeradvanceimpliedbyfieldchecker"
-    },
-    {
-      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
-      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
-      "purpose": "CURRENT_MONEY_LEDGER: originaluserinstructionconfirmedNEW+20funding, bookedonce; budgetallocation/time/combinedbalance unassigned/unresolved"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_CONTROLLED_EXPERIMENTAL_CAPITAL_AND_PARLAY_EXPOSURE_v1_238.md",
-      "blob": "3fdaa4ff8618695b77e659dd0d12536b510acda6",
-      "purpose": "ACTIVE capitalcontrol withfunding/executionseparation/idempotence; sandbox20ceiling andriskbehavior unchanged"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_WEEK7_TUESDAY_SOURCE_READINESS_2026-10-12.json",
-      "blob": "7f6d913dc7afd192219db2bdc3be50f66976ae5d",
-      "purpose": "LATEST_BOUNDED_TUESDAY_SOURCE_READINESS: official kickoff2/2; onebookretrievalfallback; consensus/Caesars/practicalcutoffs unverified; nextproducer requalification required"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_0707CT.md",
-      "blob": "57fcf76162dfdd5aed54159a6b567107705d7643",
-      "purpose": "CURRENT_HOT_SHEET: natural Monday producer; original51+11, DraftKings55/62 fallback, exact section counts, all62INCONCLUSIVE"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261012T120147Z_RUN_STARTED.md",
-      "blob": "1a67d181d97e94af85c05f5776b8f86aef4d88ba",
-      "purpose": "current cycle observability start marker; not completion evidence"
-    }
-  ]
-}
-```
-
-```cfb-frontier-json
-{
-  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
-  "as_of_utc": "2026-10-12T12:12:11Z",
-  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
-  "claims": [
-    "Navigation only; independently recover governing controls and canonical current state. ProductionRoutinev5 remains active, TestRoutinev6 candidate, frozenChampionv1.193 unchanged.",
-    "Original accepted September26 FIRST_FROZEN artifact10897612260 independently recovered at ZIP772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf. All62Week7targets covered:51original predictions+11explicitexclusions; all4Tue/Wed original predictions exist. HistoricalChallengerB is today's BetaProductionChampion underv1.222.",
-    "Earlier blanket absentWeek7Champion/FIRST_FROZEN claims in originalSundayviews and priorQA were incomplete; preserved as historical evidence and prospectively superseded only on absence classification. October6S0research audit remains correct for its narrow refreshcoverage61+1, not complete FIRST_FROZEN ancestry.",
-    "Current sole HotSheet is manual14:29CTlineage correction with51faithfullyprojected original fairspread/total/homewintriples and11originalexclusions. October6REFRESH isseparate; no refreshprediction substitutesfor originalprediction/exclusion. No acceptedpointeradvance, new modelrun/acceptance orpromotion.",
-    "Canonicaldecision append corrects ancestry claim only; all62dispositions remainINCONCLUSIVE, thresholds/notrips/executions unchanged. Qualifiedconsensus unavailable andcurrentCaesars unverified. Marketquotes/movement/sourceclock remain13:05CT; newdisplayclock isnot newretrieval.",
-    "Currentoperationalkickoffs and archivedmodelclocks remainseparate. Saveddeadline/cutoff values remain retainedplanninginformation withUNVERIFIED/CUTOFF_AUTHORITY_UNVERIFIED; no effectiveaccessclock accepted, deadline extended, casinoaccess/tripinvented oroverduestate inferred.",
-    "IndependentGitHub38168633837/job114556348721 at760ff6bc andfollowup38168800068/job114556842196 at31e432e8 SUCCESS: bothacceptedZIPs,12ancestry+23projection+16opening+22afternoon tests,currentbinding/actual51+11CLI andfullretainedQA independentlyverified.153numericfields/51directions and11originalexclusions matched. Originalintermediatebindingfailures38168568853/38168571102 preserved; finalcoherentviewpassedseparately.",
-    "Whole assembled index validated beforewrite withunchanged strictreader; fullhistoricalactive validation, evidence-onlypaths andobservedUTCclock retained. Exactlytwooriginalrejectedrecords andoriginalincompleteclockQA unchanged.",
-    "New weekly Mondayreadiness/Tuesdaycandidate remainsseparatefuture operational dependency; candidate success/noop isnotacceptance. Naturalcorrectedabsence/display produceruse and broader scheduler/source/execution/cutoff/close/CLV/moneyambiguity debts remainOPEN. Fourproductiontaskfields unchanged.",
-    "Manualdisplay/absence-classification correction isCORRECTED/PERSISTED/READ_BACK/EXISTING_CI_DEMONSTRATED/INDEPENDENTLY_RECONCILED; NATURAL_PRODUCER_PENDING. EarlierpartialS0audit/report preserved andexplicitlybounded, originalFIRST_FROZEN nowcomplete. Exactlyfourproductiontaskconfigurationfields andacceptedsourcepointer independentlyunchanged.",
-    "Natural16:54:56CTHealthaudit/16:59:03closure correctlyRUN_INCOMPLETE, current51+11HotSheet validmanualstate. Itcarried SundayMonitor/WeeklyQAsemanticdefects plus historicalMonitor/Evening/Healthgaps andBigNineprivateauthority; noSundayeveningcycledue. Runtimeinvocationclosedincomplete, notstillrunning. NextMonitorMonday07CT isprospectiveproducerconfirmation, notmissedSundayreplay.",
-    "CurrentmanualR2weeklyreview corrects5Week7absence/natural-successsemanticboundaries andW6-L9 status only; originalR1/receipts/all49Week6numeric/gamerows/wager/threshold/accountingcontent unchanged.25tests andactualselectedR2/sourceCLI independentlypassedGitHub38185781106/job114607667896 at454b1cb0; fullretainedQA passed. CurrentHotSheet/currentdecisions/acceptedsource/model/money/task/schedules unchanged. Naturalproducerproof remainsPENDING.",
-    "LatestnaturalHealthaudit6b1097abd4cb082a1e60e4d1f09573576d804001/closure13775259fa2c3be8c36473b5067647e635014abd remainRUN_INCOMPLETE. Carry SundayMonitor120436Z/180208Z andWeeklyQA135620Z semanticdefects, historicalMonitorOct09T120138Z/Oct10T180302Z, EveningOct08/Oct10T011934Z andHealthOct08 gaps; newerinvocation/CI/manualcorrectionneverretrocloses these. BigNineacceptedprivateauthority remainsmissing; noYahoointegrationchange.",
-    "Orthogonaloriginalfrozen-fieldcheck built/readback/independentlyexecuted inexistingGitHub38186246745/job114609074671 atb7650113:26tests/current62IDs/51predictions153numbers/51directions/11exclusions PASS. Presentationtitle/cycle-only diagnosticsretainoriginalnumbers; changedmarket/decision/title casesstillREJECTunderunchangedfullprofile. No syntheticfuturepublication/observation/decisionpersisted.",
-    "PASS_ORIGINAL_FROZEN_FIELDS_ONLY isnot fullpublication/currentmarket/decision/practicalcutoffauthority. Existingunknownfullcycle rejection unchanged; nextnaturalMondaypublication stillrequiresfreshqualifiedfullsource/decisionphase. NewacceptedREFRESH consumerrequiresseparateapprovedroute; no originaloverwrite. Naturalproducerdemonstration pending. CurrentHotSheet/operational/accepted/model/wager/money/taskstate andHealthRUN_INCOMPLETE unchanged.",
-    "AcceptedOctober6REFRESH fieldadapter independentlypassed24tests/actualCLI inexistingGitHub38186943599/job114611193825:62IDs/61REFRESHpredictions183numbers/1exclusion whileoriginal51+11values/status/reasons remainunchanged.10originalexclusionslatereligible onlyinREFRESH, neverbackfilled. Exactacceptedpointer/independentrecord/ZIP/cutoff/typebound; candidateworkflowgreen alone rejected.",
-    "PASS_ACCEPTED_REFRESH_FIELDS_ONLY isnot operationalconsumerselection orfullpublicationacceptance. CurrentHotSheetstilloriginal51+11/all62INCONCLUSIVE; no current/futureview, prediction, sourceobservation, decision,wager/cash/task created. Diagnosticrecords ephemeral; lateracceptedboundary requiresindependentqualification. Fullsource/decision/practicalcutoff/lineageintegration/naturalproducer debts andHealthRUN_INCOMPLETE remainOPEN.",
-    "Directuserclarificationearned:original“Alsoadd20tomoneyledger” meansNEW+20USDfundingseparatefromfour$5bets, nottheirstaketotal. Currentmoneyledgerpostsoneuniqueoriginalinstructionfundingentry. Clarification isnotsecondcredit; oldpendingmeaningstatementsremainhistorical andsuperseded prospectively.",
-    "New+20funding remainsUNASSIGNEDproduction/sandbox, actualfundingtimeunspecified andcombinedcashbalance NOT_COMPUTABLE. Sandbox20ceiling/available20/exposure0 remainsunchanged. Existing15actualwagers/53.45stake,fourticket20stake/14.55arithmeticreturn/-5.45net andallgrades/executionrecords unchanged; no payout/debit/transfer/risklimit inferred. Fundingmeaningdebt CLOSED; allocation/openingbalance/redemption/date andotheroperationaldebts remainOPEN.",
-    "OriginalconfirmedADD20moneyrecord nowconsumedbyEXISTINGQA:28record/table/source/dedup/currentselector tests andactualCLI independentlypassedGitHub38192674570/job114628594210. Exactmoneyledger3aebcbdcc535479c29c31f18073cba09f59aab01 unchanged; stilloneUNASSIGNED+20funding, distinctfromfour20stake/historical53.45stake/payouts, no balance/limit inference.",
-    "PASS_QUALIFIED_ADD20_FUNDING_RECORD_ONLY isnotbank/paymentverification,fullcashbalance ornewfunding/allocation/riskauthority. Producercontrolinstalled/prewriteusewhenavailable required, butnaturalscheduleduse andbroadaccounting/operationalfailureclassesnotclosed. Existingall4tasks/currentHotSheet/model/wager/result/sourceacceptedstate unchanged; budget/fundingdate/openingbalance/cashpayment andHealthincomplete/otherdebts remainOPEN.",
-    "User-directedTestRoutinev6 Tuesday source-readiness audit independentlypersisted/readback:2acceptedIDs andofficial18/19CT October13kickoffclocks matched; bothfuture. Actualpracticalexecutionaccess/cutoffs remainUNVERIFIED; all62currentdecisions andcanonicalHotSheet/source/model/wager/money unchanged.",
-    "DraftKingsreadable fullgame2rowpublicfallback collected105514Z-105810Z;bookmakerupdatetimeUNKNOWN/executionUNVERIFIED. BothFanDuelevents locationverification;BetMGM locationselector;FanDueleditorial Delaware sidepricesinternallyconflict. Oneoperatornot3bookqualifiedconsensus; no sourcegate bypass, median/EV/recommendation. Qualifiedconsensus/Caesars/practicalaccess remainOPEN.",
-    "Boundedretainedkickoffrecovery CORRECTED/PERSISTED/READ_BACK/DETERMINISTIC_RECONCILIATION_DEMONSTRATED; nextexistingMonitor mustindependentlyrequalify source/fullslate/decision/publication. NaturalproducerusePENDING; currentHealthRUN_INCOMPLETE/historicalgaps unchanged. Fourenabledtaskfields independentlyunchanged; no newtask/dispatch.",
-    "Natural Monday07:01CT Market Monitor consumed corrected original51FIRST_FROZEN+11exclusions without REFRESH substitution. Full62-game exactly-once Hot Sheet sectioning passed2/2/3/3/13/17/22/0; Nebraska retained. This is prospective natural-producer use, not historical replay or model acceptance.",
-    "Live DraftKings public Game Lines retrieval120702Z matched55/62 governed identities with complete spread/total/moneyline pairs. Identified single-book fallback only: bookmaker update UNKNOWN, execution NOT_VERIFIED, consensus unavailable62/62, Caesars unverified62/62. Seven unmatched current quotes explicitly unavailable; Sunday observations remain historical.",
-    "All62 decisions remainINCONCLUSIVE; acceptable numbers/trips/Week7 executions remainnone. Tuesday2 retain13:00CT reconciliation; saved practical cutoffs remainCUTOFF_AUTHORITY_UNVERIFIED. No forced bet, confidence, EV or threshold invented.",
-    "Monday repository readiness workflow for current date had not yet run by1207Z; last scheduled run Oct5 success. Bounded manual source QA remains two-game/test-only and incomplete for market execution readiness. Candidate generation remains nonacceptance.",
-    "Canonical market6a59f9063527b342fb80b73aad82096de2610c8d and decisioncd6bf4246d63789c4d9f0977dc365966df0a8968 persisted/readback. Current HotSheet57fcf76162dfdd5aed54159a6b567107705d7643 persisted/readback; execution/scorecard/money unchanged. Initial generated market coverage row mis-normalized Central Michigan; append-only correction preserves exact55/7 coverage.",
-    "Prior navigation checkpoint as_of120000Z was written before that observed clock and failed the existing future-clock gate. It is preserved as rejected history; this later observed121211Z checkpoint carries identical pointers/facts and restores strict clock validity."
-  ],
-  "pointers": [
-    {
-      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
-      "blob": "6a59f9063527b342fb80b73aad82096de2610c8d",
-      "purpose": "current canonical Monday07:07CT DraftKings public single-book fallback55/62 plus explicit7 unavailable; correction retained"
-    },
-    {
-      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
-      "blob": "cd6bf4246d63789c4d9f0977dc365966df0a8968",
-      "purpose": "current canonical Monday decision reconciliation;62INCONCLUSIVE, Tuesdaydeadline retained, no threshold/trip/execution"
-    },
-    {
-      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
-      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
-      "purpose": "current execution surface; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
-      "blob": "6f7650d340bf63f8f93a2b825e35f8b8e41fa80b",
-      "purpose": "current scorecard; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_0708CT.md",
-      "blob": "6d4e94b3646b6277a8b84152b1c5ead911714a9a",
-      "purpose": "HISTORICAL_WEEK7_MORNING_HOT_SHEET: immutable first-observation source"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md",
-      "blob": "c027e59eb0f752cd0225d69938f52e924f5c1a68",
-      "purpose": "HISTORICAL_WEEK7_AFTERNOON_HOT_SHEET: immutable13:05 market/movement; original absence classification superseded"
-    },
-    {
-      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
-      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
-      "purpose": "ACTIVE consensus benchmark and Caesars execution separation"
-    },
-    {
-      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
-      "blob": "9b72cb316492e270be3c27c882ded189f965eed0",
-      "purpose": "active current-output exact-once sectioning and actual-clock control"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R1.md",
-      "blob": "31d72be8927068879c9f5cf867c65eec3b8ff5e0",
-      "purpose": "HISTORICAL_WEEKLY_REVIEW: immutable Week6 learning; Week7 carry-forward/natural-success classification superseded prospectively by R2"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
-      "blob": "ec6fef317b55ee4a6db2a1a758d73cfb886d9965",
-      "purpose": "current durable findings: original51FIRST_FROZEN display corrected; independent CI passed, naturalproducer andoperationaldebts open"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md",
-      "blob": "63ec14c167dfb4c64fb845ebd862f6aac588e487",
-      "purpose": "active default/event/practical decision cadence authority"
-    },
-    {
-      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
-      "blob": "f90f0d87f5027fe93bf4ca2c22440539904890ef",
-      "purpose": "ACTIVE persistence and full proposed navigation-history pre-write validation"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_PREDICTION_ANCESTRY_AND_EARLY_WEEK_HANDOFF_QA_2026-10-11.md",
-      "blob": "3d3a4caf1676770a7ad316e6375bdb074a329f72",
-      "purpose": "HISTORICAL bounded October6 S0 ancestry audit; original FIRST_FROZEN recovered separately afterward"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ACCEPTED_S0_ANCESTRY_AUDIT_2026-10-11.json",
-      "blob": "bf21c4e684b09907084c63cf0b8b1a994ed1018f",
-      "purpose": "62game exact ancestry coverage and43 immutable start-time differences; not operational acceptance"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1429CT.md",
-      "blob": "71006586178a1829c51f119fff872b6f981cd865",
-      "purpose": "HISTORICAL_HOT_SHEET: faithful51FIRST_FROZEN values+11exclusions; retained13:05markets, unverifiedplanningclocks, no new decisions"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
-      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
-      "purpose": "acceptedoriginal62target lineage census; distinct from October6REFRESH"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_DISPLAY_CORRECTION_2026-10-11.md",
-      "blob": "6148d81b51073cc98d1f05319cfd108d710b548c",
-      "purpose": "original51+11 lineage/current-display correction and independent CI proof; naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_ROUTINE_V6_BACK_HALF_CANDIDATE_2026-09-30.md",
-      "blob": "240d7ce844af16412210b52263f511644c3063e1",
-      "purpose": "TestRoutinev6 CANDIDATE proceduralcontrol with explicit complete-boundary demonstration; Productionv5 unchanged"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
-      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
-      "purpose": "CURRENT_WEEKLY_REVIEW: manual prospective carry-forward correction; Week6 learning unchanged, naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md",
-      "blob": "6cb8b60706b2338a37df85f5ae277983dcf2d5a5",
-      "purpose": "ACTIVE weeklylearning output and complete-boundary/proof-scope producer control"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
-      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
-      "purpose": "LATEST_PERSISTED_HEALTH_AUDIT: natural current-state reconciliation RUN_INCOMPLETE; preserve unresolvedcycles"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_RUN_CLOSURE.md",
-      "blob": "13775259fa2c3be8c36473b5067647e635014abd",
-      "purpose": "naturalHealth independentclosure RUN_INCOMPLETE, not a missing/still-running invocation"
-    },
-    {
-      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
-      "blob": "6254ab28b90d9fa4a815124ea7ffec2850ddfc30",
-      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October6 independentlyacceptedREFRESH source; separatefromoriginalFIRST_FROZEN/currentconsumerchoice"
-    },
-    {
-      "path": "evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-07.md",
-      "blob": "a4fb4c56addf12335a477034673e167afc28ebb4",
-      "purpose": "independentexactOctober6S0REFRESHacceptance; noS2/Champion/pointeradvanceimpliedbyfieldchecker"
-    },
-    {
-      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
-      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
-      "purpose": "CURRENT_MONEY_LEDGER: originaluserinstructionconfirmedNEW+20funding, bookedonce; budgetallocation/time/combinedbalance unassigned/unresolved"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_CONTROLLED_EXPERIMENTAL_CAPITAL_AND_PARLAY_EXPOSURE_v1_238.md",
-      "blob": "3fdaa4ff8618695b77e659dd0d12536b510acda6",
-      "purpose": "ACTIVE capitalcontrol withfunding/executionseparation/idempotence; sandbox20ceiling andriskbehavior unchanged"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_WEEK7_TUESDAY_SOURCE_READINESS_2026-10-12.json",
-      "blob": "7f6d913dc7afd192219db2bdc3be50f66976ae5d",
-      "purpose": "LATEST_BOUNDED_TUESDAY_SOURCE_READINESS: official kickoff2/2; onebookretrievalfallback; consensus/Caesars/practicalcutoffs unverified; nextproducer requalification required"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_0707CT.md",
-      "blob": "57fcf76162dfdd5aed54159a6b567107705d7643",
-      "purpose": "CURRENT_HOT_SHEET: natural Monday producer; original51+11, DraftKings55/62 fallback, exact section counts, all62INCONCLUSIVE"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261012T120147Z_RUN_STARTED.md",
-      "blob": "1a67d181d97e94af85c05f5776b8f86aef4d88ba",
-      "purpose": "current cycle observability start marker; not completion evidence"
-    }
-  ]
-}
-```
-
-```cfb-frontier-json
-{
-  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
-  "as_of_utc": "2026-10-12T12:13:13Z",
-  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
-  "claims": [
-    "Navigation only; independently recover governing controls and canonical current state. ProductionRoutinev5 remains active, TestRoutinev6 candidate, frozenChampionv1.193 unchanged.",
-    "Original accepted September26 FIRST_FROZEN artifact10897612260 independently recovered at ZIP772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf. All62Week7targets covered:51original predictions+11explicitexclusions; all4Tue/Wed original predictions exist. HistoricalChallengerB is today's BetaProductionChampion underv1.222.",
-    "Earlier blanket absentWeek7Champion/FIRST_FROZEN claims in originalSundayviews and priorQA were incomplete; preserved as historical evidence and prospectively superseded only on absence classification. October6S0research audit remains correct for its narrow refreshcoverage61+1, not complete FIRST_FROZEN ancestry.",
-    "Current sole HotSheet is manual14:29CTlineage correction with51faithfullyprojected original fairspread/total/homewintriples and11originalexclusions. October6REFRESH isseparate; no refreshprediction substitutesfor originalprediction/exclusion. No acceptedpointeradvance, new modelrun/acceptance orpromotion.",
-    "Canonicaldecision append corrects ancestry claim only; all62dispositions remainINCONCLUSIVE, thresholds/notrips/executions unchanged. Qualifiedconsensus unavailable andcurrentCaesars unverified. Marketquotes/movement/sourceclock remain13:05CT; newdisplayclock isnot newretrieval.",
-    "Currentoperationalkickoffs and archivedmodelclocks remainseparate. Saveddeadline/cutoff values remain retainedplanninginformation withUNVERIFIED/CUTOFF_AUTHORITY_UNVERIFIED; no effectiveaccessclock accepted, deadline extended, casinoaccess/tripinvented oroverduestate inferred.",
-    "IndependentGitHub38168633837/job114556348721 at760ff6bc andfollowup38168800068/job114556842196 at31e432e8 SUCCESS: bothacceptedZIPs,12ancestry+23projection+16opening+22afternoon tests,currentbinding/actual51+11CLI andfullretainedQA independentlyverified.153numericfields/51directions and11originalexclusions matched. Originalintermediatebindingfailures38168568853/38168571102 preserved; finalcoherentviewpassedseparately.",
-    "Whole assembled index validated beforewrite withunchanged strictreader; fullhistoricalactive validation, evidence-onlypaths andobservedUTCclock retained. Exactlytwooriginalrejectedrecords andoriginalincompleteclockQA unchanged.",
-    "New weekly Mondayreadiness/Tuesdaycandidate remainsseparatefuture operational dependency; candidate success/noop isnotacceptance. Naturalcorrectedabsence/display produceruse and broader scheduler/source/execution/cutoff/close/CLV/moneyambiguity debts remainOPEN. Fourproductiontaskfields unchanged.",
-    "Manualdisplay/absence-classification correction isCORRECTED/PERSISTED/READ_BACK/EXISTING_CI_DEMONSTRATED/INDEPENDENTLY_RECONCILED; NATURAL_PRODUCER_PENDING. EarlierpartialS0audit/report preserved andexplicitlybounded, originalFIRST_FROZEN nowcomplete. Exactlyfourproductiontaskconfigurationfields andacceptedsourcepointer independentlyunchanged.",
-    "Natural16:54:56CTHealthaudit/16:59:03closure correctlyRUN_INCOMPLETE, current51+11HotSheet validmanualstate. Itcarried SundayMonitor/WeeklyQAsemanticdefects plus historicalMonitor/Evening/Healthgaps andBigNineprivateauthority; noSundayeveningcycledue. Runtimeinvocationclosedincomplete, notstillrunning. NextMonitorMonday07CT isprospectiveproducerconfirmation, notmissedSundayreplay.",
-    "CurrentmanualR2weeklyreview corrects5Week7absence/natural-successsemanticboundaries andW6-L9 status only; originalR1/receipts/all49Week6numeric/gamerows/wager/threshold/accountingcontent unchanged.25tests andactualselectedR2/sourceCLI independentlypassedGitHub38185781106/job114607667896 at454b1cb0; fullretainedQA passed. CurrentHotSheet/currentdecisions/acceptedsource/model/money/task/schedules unchanged. Naturalproducerproof remainsPENDING.",
-    "LatestnaturalHealthaudit6b1097abd4cb082a1e60e4d1f09573576d804001/closure13775259fa2c3be8c36473b5067647e635014abd remainRUN_INCOMPLETE. Carry SundayMonitor120436Z/180208Z andWeeklyQA135620Z semanticdefects, historicalMonitorOct09T120138Z/Oct10T180302Z, EveningOct08/Oct10T011934Z andHealthOct08 gaps; newerinvocation/CI/manualcorrectionneverretrocloses these. BigNineacceptedprivateauthority remainsmissing; noYahoointegrationchange.",
-    "Orthogonaloriginalfrozen-fieldcheck built/readback/independentlyexecuted inexistingGitHub38186246745/job114609074671 atb7650113:26tests/current62IDs/51predictions153numbers/51directions/11exclusions PASS. Presentationtitle/cycle-only diagnosticsretainoriginalnumbers; changedmarket/decision/title casesstillREJECTunderunchangedfullprofile. No syntheticfuturepublication/observation/decisionpersisted.",
-    "PASS_ORIGINAL_FROZEN_FIELDS_ONLY isnot fullpublication/currentmarket/decision/practicalcutoffauthority. Existingunknownfullcycle rejection unchanged; nextnaturalMondaypublication stillrequiresfreshqualifiedfullsource/decisionphase. NewacceptedREFRESH consumerrequiresseparateapprovedroute; no originaloverwrite. Naturalproducerdemonstration pending. CurrentHotSheet/operational/accepted/model/wager/money/taskstate andHealthRUN_INCOMPLETE unchanged.",
-    "AcceptedOctober6REFRESH fieldadapter independentlypassed24tests/actualCLI inexistingGitHub38186943599/job114611193825:62IDs/61REFRESHpredictions183numbers/1exclusion whileoriginal51+11values/status/reasons remainunchanged.10originalexclusionslatereligible onlyinREFRESH, neverbackfilled. Exactacceptedpointer/independentrecord/ZIP/cutoff/typebound; candidateworkflowgreen alone rejected.",
-    "PASS_ACCEPTED_REFRESH_FIELDS_ONLY isnot operationalconsumerselection orfullpublicationacceptance. CurrentHotSheetstilloriginal51+11/all62INCONCLUSIVE; no current/futureview, prediction, sourceobservation, decision,wager/cash/task created. Diagnosticrecords ephemeral; lateracceptedboundary requiresindependentqualification. Fullsource/decision/practicalcutoff/lineageintegration/naturalproducer debts andHealthRUN_INCOMPLETE remainOPEN.",
-    "Directuserclarificationearned:original“Alsoadd20tomoneyledger” meansNEW+20USDfundingseparatefromfour$5bets, nottheirstaketotal. Currentmoneyledgerpostsoneuniqueoriginalinstructionfundingentry. Clarification isnotsecondcredit; oldpendingmeaningstatementsremainhistorical andsuperseded prospectively.",
-    "New+20funding remainsUNASSIGNEDproduction/sandbox, actualfundingtimeunspecified andcombinedcashbalance NOT_COMPUTABLE. Sandbox20ceiling/available20/exposure0 remainsunchanged. Existing15actualwagers/53.45stake,fourticket20stake/14.55arithmeticreturn/-5.45net andallgrades/executionrecords unchanged; no payout/debit/transfer/risklimit inferred. Fundingmeaningdebt CLOSED; allocation/openingbalance/redemption/date andotheroperationaldebts remainOPEN.",
-    "OriginalconfirmedADD20moneyrecord nowconsumedbyEXISTINGQA:28record/table/source/dedup/currentselector tests andactualCLI independentlypassedGitHub38192674570/job114628594210. Exactmoneyledger3aebcbdcc535479c29c31f18073cba09f59aab01 unchanged; stilloneUNASSIGNED+20funding, distinctfromfour20stake/historical53.45stake/payouts, no balance/limit inference.",
-    "PASS_QUALIFIED_ADD20_FUNDING_RECORD_ONLY isnotbank/paymentverification,fullcashbalance ornewfunding/allocation/riskauthority. Producercontrolinstalled/prewriteusewhenavailable required, butnaturalscheduleduse andbroadaccounting/operationalfailureclassesnotclosed. Existingall4tasks/currentHotSheet/model/wager/result/sourceacceptedstate unchanged; budget/fundingdate/openingbalance/cashpayment andHealthincomplete/otherdebts remainOPEN.",
-    "User-directedTestRoutinev6 Tuesday source-readiness audit independentlypersisted/readback:2acceptedIDs andofficial18/19CT October13kickoffclocks matched; bothfuture. Actualpracticalexecutionaccess/cutoffs remainUNVERIFIED; all62currentdecisions andcanonicalHotSheet/source/model/wager/money unchanged.",
-    "DraftKingsreadable fullgame2rowpublicfallback collected105514Z-105810Z;bookmakerupdatetimeUNKNOWN/executionUNVERIFIED. BothFanDuelevents locationverification;BetMGM locationselector;FanDueleditorial Delaware sidepricesinternallyconflict. Oneoperatornot3bookqualifiedconsensus; no sourcegate bypass, median/EV/recommendation. Qualifiedconsensus/Caesars/practicalaccess remainOPEN.",
-    "Boundedretainedkickoffrecovery CORRECTED/PERSISTED/READ_BACK/DETERMINISTIC_RECONCILIATION_DEMONSTRATED; nextexistingMonitor mustindependentlyrequalify source/fullslate/decision/publication. NaturalproducerusePENDING; currentHealthRUN_INCOMPLETE/historicalgaps unchanged. Fourenabledtaskfields independentlyunchanged; no newtask/dispatch.",
-    "Natural Monday07:01CT Market Monitor consumed corrected original51FIRST_FROZEN+11exclusions without REFRESH substitution. Full62-game exactly-once Hot Sheet sectioning passed2/2/3/3/13/17/22/0; Nebraska retained. This is prospective natural-producer use, not historical replay or model acceptance.",
-    "Live DraftKings public Game Lines retrieval120702Z matched55/62 governed identities with complete spread/total/moneyline pairs. Identified single-book fallback only: bookmaker update UNKNOWN, execution NOT_VERIFIED, consensus unavailable62/62, Caesars unverified62/62. Seven unmatched current quotes explicitly unavailable; Sunday observations remain historical.",
-    "All62 decisions remainINCONCLUSIVE; acceptable numbers/trips/Week7 executions remainnone. Tuesday2 retain13:00CT reconciliation; saved practical cutoffs remainCUTOFF_AUTHORITY_UNVERIFIED. No forced bet, confidence, EV or threshold invented.",
-    "Monday repository readiness workflow for current date had not yet run by1207Z; last scheduled run Oct5 success. Bounded manual source QA remains two-game/test-only and incomplete for market execution readiness. Candidate generation remains nonacceptance.",
-    "Canonical market6a59f9063527b342fb80b73aad82096de2610c8d and decisioncd6bf4246d63789c4d9f0977dc365966df0a8968 persisted/readback. Current HotSheet57fcf76162dfdd5aed54159a6b567107705d7643 persisted/readback; execution/scorecard/money unchanged. Initial generated market coverage row mis-normalized Central Michigan; append-only correction preserves exact55/7 coverage.",
-    "Prior navigation checkpoint as_of120000Z was written before that observed clock and failed the existing future-clock gate. It is preserved as rejected history; this later observed121211Z checkpoint carries identical pointers/facts and restores strict clock validity.",
-    "HotSheet canonical-input declaration normalized by one minimal existing-file delta after current-binding CI rejection; values unchanged. Current publication blob is now fd2eb9234e11419b70073f7e30d63d3946230c7d."
-  ],
-  "pointers": [
-    {
-      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
-      "blob": "6a59f9063527b342fb80b73aad82096de2610c8d",
-      "purpose": "current canonical Monday07:07CT DraftKings public single-book fallback55/62 plus explicit7 unavailable; correction retained"
-    },
-    {
-      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
-      "blob": "cd6bf4246d63789c4d9f0977dc365966df0a8968",
-      "purpose": "current canonical Monday decision reconciliation;62INCONCLUSIVE, Tuesdaydeadline retained, no threshold/trip/execution"
-    },
-    {
-      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
-      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
-      "purpose": "current execution surface; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
-      "blob": "6f7650d340bf63f8f93a2b825e35f8b8e41fa80b",
-      "purpose": "current scorecard; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_0708CT.md",
-      "blob": "6d4e94b3646b6277a8b84152b1c5ead911714a9a",
-      "purpose": "HISTORICAL_WEEK7_MORNING_HOT_SHEET: immutable first-observation source"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md",
-      "blob": "c027e59eb0f752cd0225d69938f52e924f5c1a68",
-      "purpose": "HISTORICAL_WEEK7_AFTERNOON_HOT_SHEET: immutable13:05 market/movement; original absence classification superseded"
-    },
-    {
-      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
-      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
-      "purpose": "ACTIVE consensus benchmark and Caesars execution separation"
-    },
-    {
-      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
-      "blob": "9b72cb316492e270be3c27c882ded189f965eed0",
-      "purpose": "active current-output exact-once sectioning and actual-clock control"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R1.md",
-      "blob": "31d72be8927068879c9f5cf867c65eec3b8ff5e0",
-      "purpose": "HISTORICAL_WEEKLY_REVIEW: immutable Week6 learning; Week7 carry-forward/natural-success classification superseded prospectively by R2"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
-      "blob": "ec6fef317b55ee4a6db2a1a758d73cfb886d9965",
-      "purpose": "current durable findings: original51FIRST_FROZEN display corrected; independent CI passed, naturalproducer andoperationaldebts open"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md",
-      "blob": "63ec14c167dfb4c64fb845ebd862f6aac588e487",
-      "purpose": "active default/event/practical decision cadence authority"
-    },
-    {
-      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
-      "blob": "f90f0d87f5027fe93bf4ca2c22440539904890ef",
-      "purpose": "ACTIVE persistence and full proposed navigation-history pre-write validation"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_PREDICTION_ANCESTRY_AND_EARLY_WEEK_HANDOFF_QA_2026-10-11.md",
-      "blob": "3d3a4caf1676770a7ad316e6375bdb074a329f72",
-      "purpose": "HISTORICAL bounded October6 S0 ancestry audit; original FIRST_FROZEN recovered separately afterward"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ACCEPTED_S0_ANCESTRY_AUDIT_2026-10-11.json",
-      "blob": "bf21c4e684b09907084c63cf0b8b1a994ed1018f",
-      "purpose": "62game exact ancestry coverage and43 immutable start-time differences; not operational acceptance"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1429CT.md",
-      "blob": "71006586178a1829c51f119fff872b6f981cd865",
-      "purpose": "HISTORICAL_HOT_SHEET: faithful51FIRST_FROZEN values+11exclusions; retained13:05markets, unverifiedplanningclocks, no new decisions"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
-      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
-      "purpose": "acceptedoriginal62target lineage census; distinct from October6REFRESH"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_DISPLAY_CORRECTION_2026-10-11.md",
-      "blob": "6148d81b51073cc98d1f05319cfd108d710b548c",
-      "purpose": "original51+11 lineage/current-display correction and independent CI proof; naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_ROUTINE_V6_BACK_HALF_CANDIDATE_2026-09-30.md",
-      "blob": "240d7ce844af16412210b52263f511644c3063e1",
-      "purpose": "TestRoutinev6 CANDIDATE proceduralcontrol with explicit complete-boundary demonstration; Productionv5 unchanged"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
-      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
-      "purpose": "CURRENT_WEEKLY_REVIEW: manual prospective carry-forward correction; Week6 learning unchanged, naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md",
-      "blob": "6cb8b60706b2338a37df85f5ae277983dcf2d5a5",
-      "purpose": "ACTIVE weeklylearning output and complete-boundary/proof-scope producer control"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
-      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
-      "purpose": "LATEST_PERSISTED_HEALTH_AUDIT: natural current-state reconciliation RUN_INCOMPLETE; preserve unresolvedcycles"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_RUN_CLOSURE.md",
-      "blob": "13775259fa2c3be8c36473b5067647e635014abd",
-      "purpose": "naturalHealth independentclosure RUN_INCOMPLETE, not a missing/still-running invocation"
-    },
-    {
-      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
-      "blob": "6254ab28b90d9fa4a815124ea7ffec2850ddfc30",
-      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October6 independentlyacceptedREFRESH source; separatefromoriginalFIRST_FROZEN/currentconsumerchoice"
-    },
-    {
-      "path": "evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-07.md",
-      "blob": "a4fb4c56addf12335a477034673e167afc28ebb4",
-      "purpose": "independentexactOctober6S0REFRESHacceptance; noS2/Champion/pointeradvanceimpliedbyfieldchecker"
-    },
-    {
-      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
-      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
-      "purpose": "CURRENT_MONEY_LEDGER: originaluserinstructionconfirmedNEW+20funding, bookedonce; budgetallocation/time/combinedbalance unassigned/unresolved"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_CONTROLLED_EXPERIMENTAL_CAPITAL_AND_PARLAY_EXPOSURE_v1_238.md",
-      "blob": "3fdaa4ff8618695b77e659dd0d12536b510acda6",
-      "purpose": "ACTIVE capitalcontrol withfunding/executionseparation/idempotence; sandbox20ceiling andriskbehavior unchanged"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_WEEK7_TUESDAY_SOURCE_READINESS_2026-10-12.json",
-      "blob": "7f6d913dc7afd192219db2bdc3be50f66976ae5d",
-      "purpose": "LATEST_BOUNDED_TUESDAY_SOURCE_READINESS: official kickoff2/2; onebookretrievalfallback; consensus/Caesars/practicalcutoffs unverified; nextproducer requalification required"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_0707CT.md",
-      "blob": "fd2eb9234e11419b70073f7e30d63d3946230c7d",
-      "purpose": "CURRENT_HOT_SHEET: natural Monday producer; original51+11, DraftKings55/62 fallback, exact section counts, all62INCONCLUSIVE"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261012T120147Z_RUN_STARTED.md",
-      "blob": "1a67d181d97e94af85c05f5776b8f86aef4d88ba",
-      "purpose": "current cycle observability start marker; not completion evidence"
-    }
-  ]
-}
-```
-
-```cfb-frontier-json
-{
-  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
-  "as_of_utc": "2026-10-12T12:14:29Z",
-  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
-  "claims": [
-    "Navigation only; independently recover governing controls and canonical current state. ProductionRoutinev5 remains active, TestRoutinev6 candidate, frozenChampionv1.193 unchanged.",
-    "Original accepted September26 FIRST_FROZEN artifact10897612260 independently recovered at ZIP772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf. All62Week7targets covered:51original predictions+11explicitexclusions; all4Tue/Wed original predictions exist. HistoricalChallengerB is today's BetaProductionChampion underv1.222.",
-    "Earlier blanket absentWeek7Champion/FIRST_FROZEN claims in originalSundayviews and priorQA were incomplete; preserved as historical evidence and prospectively superseded only on absence classification. October6S0research audit remains correct for its narrow refreshcoverage61+1, not complete FIRST_FROZEN ancestry.",
-    "Current sole HotSheet is manual14:29CTlineage correction with51faithfullyprojected original fairspread/total/homewintriples and11originalexclusions. October6REFRESH isseparate; no refreshprediction substitutesfor originalprediction/exclusion. No acceptedpointeradvance, new modelrun/acceptance orpromotion.",
-    "Canonicaldecision append corrects ancestry claim only; all62dispositions remainINCONCLUSIVE, thresholds/notrips/executions unchanged. Qualifiedconsensus unavailable andcurrentCaesars unverified. Marketquotes/movement/sourceclock remain13:05CT; newdisplayclock isnot newretrieval.",
-    "Currentoperationalkickoffs and archivedmodelclocks remainseparate. Saveddeadline/cutoff values remain retainedplanninginformation withUNVERIFIED/CUTOFF_AUTHORITY_UNVERIFIED; no effectiveaccessclock accepted, deadline extended, casinoaccess/tripinvented oroverduestate inferred.",
-    "IndependentGitHub38168633837/job114556348721 at760ff6bc andfollowup38168800068/job114556842196 at31e432e8 SUCCESS: bothacceptedZIPs,12ancestry+23projection+16opening+22afternoon tests,currentbinding/actual51+11CLI andfullretainedQA independentlyverified.153numericfields/51directions and11originalexclusions matched. Originalintermediatebindingfailures38168568853/38168571102 preserved; finalcoherentviewpassedseparately.",
-    "Whole assembled index validated beforewrite withunchanged strictreader; fullhistoricalactive validation, evidence-onlypaths andobservedUTCclock retained. Exactlytwooriginalrejectedrecords andoriginalincompleteclockQA unchanged.",
-    "New weekly Mondayreadiness/Tuesdaycandidate remainsseparatefuture operational dependency; candidate success/noop isnotacceptance. Naturalcorrectedabsence/display produceruse and broader scheduler/source/execution/cutoff/close/CLV/moneyambiguity debts remainOPEN. Fourproductiontaskfields unchanged.",
-    "Manualdisplay/absence-classification correction isCORRECTED/PERSISTED/READ_BACK/EXISTING_CI_DEMONSTRATED/INDEPENDENTLY_RECONCILED; NATURAL_PRODUCER_PENDING. EarlierpartialS0audit/report preserved andexplicitlybounded, originalFIRST_FROZEN nowcomplete. Exactlyfourproductiontaskconfigurationfields andacceptedsourcepointer independentlyunchanged.",
-    "Natural16:54:56CTHealthaudit/16:59:03closure correctlyRUN_INCOMPLETE, current51+11HotSheet validmanualstate. Itcarried SundayMonitor/WeeklyQAsemanticdefects plus historicalMonitor/Evening/Healthgaps andBigNineprivateauthority; noSundayeveningcycledue. Runtimeinvocationclosedincomplete, notstillrunning. NextMonitorMonday07CT isprospectiveproducerconfirmation, notmissedSundayreplay.",
-    "CurrentmanualR2weeklyreview corrects5Week7absence/natural-successsemanticboundaries andW6-L9 status only; originalR1/receipts/all49Week6numeric/gamerows/wager/threshold/accountingcontent unchanged.25tests andactualselectedR2/sourceCLI independentlypassedGitHub38185781106/job114607667896 at454b1cb0; fullretainedQA passed. CurrentHotSheet/currentdecisions/acceptedsource/model/money/task/schedules unchanged. Naturalproducerproof remainsPENDING.",
-    "LatestnaturalHealthaudit6b1097abd4cb082a1e60e4d1f09573576d804001/closure13775259fa2c3be8c36473b5067647e635014abd remainRUN_INCOMPLETE. Carry SundayMonitor120436Z/180208Z andWeeklyQA135620Z semanticdefects, historicalMonitorOct09T120138Z/Oct10T180302Z, EveningOct08/Oct10T011934Z andHealthOct08 gaps; newerinvocation/CI/manualcorrectionneverretrocloses these. BigNineacceptedprivateauthority remainsmissing; noYahoointegrationchange.",
-    "Orthogonaloriginalfrozen-fieldcheck built/readback/independentlyexecuted inexistingGitHub38186246745/job114609074671 atb7650113:26tests/current62IDs/51predictions153numbers/51directions/11exclusions PASS. Presentationtitle/cycle-only diagnosticsretainoriginalnumbers; changedmarket/decision/title casesstillREJECTunderunchangedfullprofile. No syntheticfuturepublication/observation/decisionpersisted.",
-    "PASS_ORIGINAL_FROZEN_FIELDS_ONLY isnot fullpublication/currentmarket/decision/practicalcutoffauthority. Existingunknownfullcycle rejection unchanged; nextnaturalMondaypublication stillrequiresfreshqualifiedfullsource/decisionphase. NewacceptedREFRESH consumerrequiresseparateapprovedroute; no originaloverwrite. Naturalproducerdemonstration pending. CurrentHotSheet/operational/accepted/model/wager/money/taskstate andHealthRUN_INCOMPLETE unchanged.",
-    "AcceptedOctober6REFRESH fieldadapter independentlypassed24tests/actualCLI inexistingGitHub38186943599/job114611193825:62IDs/61REFRESHpredictions183numbers/1exclusion whileoriginal51+11values/status/reasons remainunchanged.10originalexclusionslatereligible onlyinREFRESH, neverbackfilled. Exactacceptedpointer/independentrecord/ZIP/cutoff/typebound; candidateworkflowgreen alone rejected.",
-    "PASS_ACCEPTED_REFRESH_FIELDS_ONLY isnot operationalconsumerselection orfullpublicationacceptance. CurrentHotSheetstilloriginal51+11/all62INCONCLUSIVE; no current/futureview, prediction, sourceobservation, decision,wager/cash/task created. Diagnosticrecords ephemeral; lateracceptedboundary requiresindependentqualification. Fullsource/decision/practicalcutoff/lineageintegration/naturalproducer debts andHealthRUN_INCOMPLETE remainOPEN.",
-    "Directuserclarificationearned:original“Alsoadd20tomoneyledger” meansNEW+20USDfundingseparatefromfour$5bets, nottheirstaketotal. Currentmoneyledgerpostsoneuniqueoriginalinstructionfundingentry. Clarification isnotsecondcredit; oldpendingmeaningstatementsremainhistorical andsuperseded prospectively.",
-    "New+20funding remainsUNASSIGNEDproduction/sandbox, actualfundingtimeunspecified andcombinedcashbalance NOT_COMPUTABLE. Sandbox20ceiling/available20/exposure0 remainsunchanged. Existing15actualwagers/53.45stake,fourticket20stake/14.55arithmeticreturn/-5.45net andallgrades/executionrecords unchanged; no payout/debit/transfer/risklimit inferred. Fundingmeaningdebt CLOSED; allocation/openingbalance/redemption/date andotheroperationaldebts remainOPEN.",
-    "OriginalconfirmedADD20moneyrecord nowconsumedbyEXISTINGQA:28record/table/source/dedup/currentselector tests andactualCLI independentlypassedGitHub38192674570/job114628594210. Exactmoneyledger3aebcbdcc535479c29c31f18073cba09f59aab01 unchanged; stilloneUNASSIGNED+20funding, distinctfromfour20stake/historical53.45stake/payouts, no balance/limit inference.",
-    "PASS_QUALIFIED_ADD20_FUNDING_RECORD_ONLY isnotbank/paymentverification,fullcashbalance ornewfunding/allocation/riskauthority. Producercontrolinstalled/prewriteusewhenavailable required, butnaturalscheduleduse andbroadaccounting/operationalfailureclassesnotclosed. Existingall4tasks/currentHotSheet/model/wager/result/sourceacceptedstate unchanged; budget/fundingdate/openingbalance/cashpayment andHealthincomplete/otherdebts remainOPEN.",
-    "User-directedTestRoutinev6 Tuesday source-readiness audit independentlypersisted/readback:2acceptedIDs andofficial18/19CT October13kickoffclocks matched; bothfuture. Actualpracticalexecutionaccess/cutoffs remainUNVERIFIED; all62currentdecisions andcanonicalHotSheet/source/model/wager/money unchanged.",
-    "DraftKingsreadable fullgame2rowpublicfallback collected105514Z-105810Z;bookmakerupdatetimeUNKNOWN/executionUNVERIFIED. BothFanDuelevents locationverification;BetMGM locationselector;FanDueleditorial Delaware sidepricesinternallyconflict. Oneoperatornot3bookqualifiedconsensus; no sourcegate bypass, median/EV/recommendation. Qualifiedconsensus/Caesars/practicalaccess remainOPEN.",
-    "Boundedretainedkickoffrecovery CORRECTED/PERSISTED/READ_BACK/DETERMINISTIC_RECONCILIATION_DEMONSTRATED; nextexistingMonitor mustindependentlyrequalify source/fullslate/decision/publication. NaturalproducerusePENDING; currentHealthRUN_INCOMPLETE/historicalgaps unchanged. Fourenabledtaskfields independentlyunchanged; no newtask/dispatch.",
-    "Natural Monday07:01CT Market Monitor consumed corrected original51FIRST_FROZEN+11exclusions without REFRESH substitution. Full62-game exactly-once Hot Sheet sectioning passed2/2/3/3/13/17/22/0; Nebraska retained. This is prospective natural-producer use, not historical replay or model acceptance.",
-    "Live DraftKings public Game Lines retrieval120702Z matched55/62 governed identities with complete spread/total/moneyline pairs. Identified single-book fallback only: bookmaker update UNKNOWN, execution NOT_VERIFIED, consensus unavailable62/62, Caesars unverified62/62. Seven unmatched current quotes explicitly unavailable; Sunday observations remain historical.",
-    "All62 decisions remainINCONCLUSIVE; acceptable numbers/trips/Week7 executions remainnone. Tuesday2 retain13:00CT reconciliation; saved practical cutoffs remainCUTOFF_AUTHORITY_UNVERIFIED. No forced bet, confidence, EV or threshold invented.",
-    "Monday repository readiness workflow for current date had not yet run by1207Z; last scheduled run Oct5 success. Bounded manual source QA remains two-game/test-only and incomplete for market execution readiness. Candidate generation remains nonacceptance.",
-    "Canonical market6a59f9063527b342fb80b73aad82096de2610c8d and decisioncd6bf4246d63789c4d9f0977dc365966df0a8968 persisted/readback. Current HotSheet57fcf76162dfdd5aed54159a6b567107705d7643 persisted/readback; execution/scorecard/money unchanged. Initial generated market coverage row mis-normalized Central Michigan; append-only correction preserves exact55/7 coverage.",
-    "Prior navigation checkpoint as_of120000Z was written before that observed clock and failed the existing future-clock gate. It is preserved as rejected history; this later observed121211Z checkpoint carries identical pointers/facts and restores strict clock validity.",
-    "HotSheet canonical-input declaration normalized by one minimal existing-file delta after current-binding CI rejection; values unchanged. Current publication blob is now fd2eb9234e11419b70073f7e30d63d3946230c7d.",
-    "HotSheet frozen-model boundary restored exact immutable cutoff2026-09-26T03:47:37.497112+00:00 after invariant gate rejection; prediction/exclusion values and all operational facts unchanged. Current publication blob is6ca663dbf6eb883ededb2155b152aa0941c10a03."
-  ],
-  "pointers": [
-    {
-      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
-      "blob": "6a59f9063527b342fb80b73aad82096de2610c8d",
-      "purpose": "current canonical Monday07:07CT DraftKings public single-book fallback55/62 plus explicit7 unavailable; correction retained"
-    },
-    {
-      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
-      "blob": "cd6bf4246d63789c4d9f0977dc365966df0a8968",
-      "purpose": "current canonical Monday decision reconciliation;62INCONCLUSIVE, Tuesdaydeadline retained, no threshold/trip/execution"
-    },
-    {
-      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
-      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
-      "purpose": "current execution surface; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
-      "blob": "6f7650d340bf63f8f93a2b825e35f8b8e41fa80b",
-      "purpose": "current scorecard; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_0708CT.md",
-      "blob": "6d4e94b3646b6277a8b84152b1c5ead911714a9a",
-      "purpose": "HISTORICAL_WEEK7_MORNING_HOT_SHEET: immutable first-observation source"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md",
-      "blob": "c027e59eb0f752cd0225d69938f52e924f5c1a68",
-      "purpose": "HISTORICAL_WEEK7_AFTERNOON_HOT_SHEET: immutable13:05 market/movement; original absence classification superseded"
-    },
-    {
-      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
-      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
-      "purpose": "ACTIVE consensus benchmark and Caesars execution separation"
-    },
-    {
-      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
-      "blob": "9b72cb316492e270be3c27c882ded189f965eed0",
-      "purpose": "active current-output exact-once sectioning and actual-clock control"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R1.md",
-      "blob": "31d72be8927068879c9f5cf867c65eec3b8ff5e0",
-      "purpose": "HISTORICAL_WEEKLY_REVIEW: immutable Week6 learning; Week7 carry-forward/natural-success classification superseded prospectively by R2"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
-      "blob": "ec6fef317b55ee4a6db2a1a758d73cfb886d9965",
-      "purpose": "current durable findings: original51FIRST_FROZEN display corrected; independent CI passed, naturalproducer andoperationaldebts open"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md",
-      "blob": "63ec14c167dfb4c64fb845ebd862f6aac588e487",
-      "purpose": "active default/event/practical decision cadence authority"
-    },
-    {
-      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
-      "blob": "f90f0d87f5027fe93bf4ca2c22440539904890ef",
-      "purpose": "ACTIVE persistence and full proposed navigation-history pre-write validation"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_PREDICTION_ANCESTRY_AND_EARLY_WEEK_HANDOFF_QA_2026-10-11.md",
-      "blob": "3d3a4caf1676770a7ad316e6375bdb074a329f72",
-      "purpose": "HISTORICAL bounded October6 S0 ancestry audit; original FIRST_FROZEN recovered separately afterward"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ACCEPTED_S0_ANCESTRY_AUDIT_2026-10-11.json",
-      "blob": "bf21c4e684b09907084c63cf0b8b1a994ed1018f",
-      "purpose": "62game exact ancestry coverage and43 immutable start-time differences; not operational acceptance"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1429CT.md",
-      "blob": "71006586178a1829c51f119fff872b6f981cd865",
-      "purpose": "HISTORICAL_HOT_SHEET: faithful51FIRST_FROZEN values+11exclusions; retained13:05markets, unverifiedplanningclocks, no new decisions"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
-      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
-      "purpose": "acceptedoriginal62target lineage census; distinct from October6REFRESH"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_DISPLAY_CORRECTION_2026-10-11.md",
-      "blob": "6148d81b51073cc98d1f05319cfd108d710b548c",
-      "purpose": "original51+11 lineage/current-display correction and independent CI proof; naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_ROUTINE_V6_BACK_HALF_CANDIDATE_2026-09-30.md",
-      "blob": "240d7ce844af16412210b52263f511644c3063e1",
-      "purpose": "TestRoutinev6 CANDIDATE proceduralcontrol with explicit complete-boundary demonstration; Productionv5 unchanged"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
-      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
-      "purpose": "CURRENT_WEEKLY_REVIEW: manual prospective carry-forward correction; Week6 learning unchanged, naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md",
-      "blob": "6cb8b60706b2338a37df85f5ae277983dcf2d5a5",
-      "purpose": "ACTIVE weeklylearning output and complete-boundary/proof-scope producer control"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
-      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
-      "purpose": "LATEST_PERSISTED_HEALTH_AUDIT: natural current-state reconciliation RUN_INCOMPLETE; preserve unresolvedcycles"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_RUN_CLOSURE.md",
-      "blob": "13775259fa2c3be8c36473b5067647e635014abd",
-      "purpose": "naturalHealth independentclosure RUN_INCOMPLETE, not a missing/still-running invocation"
-    },
-    {
-      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
-      "blob": "6254ab28b90d9fa4a815124ea7ffec2850ddfc30",
-      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October6 independentlyacceptedREFRESH source; separatefromoriginalFIRST_FROZEN/currentconsumerchoice"
-    },
-    {
-      "path": "evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-07.md",
-      "blob": "a4fb4c56addf12335a477034673e167afc28ebb4",
-      "purpose": "independentexactOctober6S0REFRESHacceptance; noS2/Champion/pointeradvanceimpliedbyfieldchecker"
-    },
-    {
-      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
-      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
-      "purpose": "CURRENT_MONEY_LEDGER: originaluserinstructionconfirmedNEW+20funding, bookedonce; budgetallocation/time/combinedbalance unassigned/unresolved"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_CONTROLLED_EXPERIMENTAL_CAPITAL_AND_PARLAY_EXPOSURE_v1_238.md",
-      "blob": "3fdaa4ff8618695b77e659dd0d12536b510acda6",
-      "purpose": "ACTIVE capitalcontrol withfunding/executionseparation/idempotence; sandbox20ceiling andriskbehavior unchanged"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_WEEK7_TUESDAY_SOURCE_READINESS_2026-10-12.json",
-      "blob": "7f6d913dc7afd192219db2bdc3be50f66976ae5d",
-      "purpose": "LATEST_BOUNDED_TUESDAY_SOURCE_READINESS: official kickoff2/2; onebookretrievalfallback; consensus/Caesars/practicalcutoffs unverified; nextproducer requalification required"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_0707CT.md",
-      "blob": "6ca663dbf6eb883ededb2155b152aa0941c10a03",
-      "purpose": "CURRENT_HOT_SHEET: natural Monday producer; original51+11, DraftKings55/62 fallback, exact section counts, all62INCONCLUSIVE"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261012T120147Z_RUN_STARTED.md",
-      "blob": "1a67d181d97e94af85c05f5776b8f86aef4d88ba",
-      "purpose": "current cycle observability start marker; not completion evidence"
-    }
-  ]
-}
-```
-
-```cfb-frontier-json
-{
-  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
-  "as_of_utc": "2026-10-12T18:08:11Z",
-  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
-  "claims": [
-    "Navigation only; independently recover governing controls and canonical current state. ProductionRoutinev5 remains active, TestRoutinev6 candidate, frozenChampionv1.193 unchanged.",
-    "Original accepted September26 FIRST_FROZEN artifact10897612260 independently recovered at ZIP772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf. All62Week7targets covered:51original predictions+11explicitexclusions; all4Tue/Wed original predictions exist. HistoricalChallengerB is today's BetaProductionChampion underv1.222.",
-    "Earlier blanket absentWeek7Champion/FIRST_FROZEN claims in originalSundayviews and priorQA were incomplete; preserved as historical evidence and prospectively superseded only on absence classification. October6S0research audit remains correct for its narrow refreshcoverage61+1, not complete FIRST_FROZEN ancestry.",
-    "Current sole HotSheet is manual14:29CTlineage correction with51faithfullyprojected original fairspread/total/homewintriples and11originalexclusions. October6REFRESH isseparate; no refreshprediction substitutesfor originalprediction/exclusion. No acceptedpointeradvance, new modelrun/acceptance orpromotion.",
-    "Canonicaldecision append corrects ancestry claim only; all62dispositions remainINCONCLUSIVE, thresholds/notrips/executions unchanged. Qualifiedconsensus unavailable andcurrentCaesars unverified. Marketquotes/movement/sourceclock remain13:05CT; newdisplayclock isnot newretrieval.",
-    "Currentoperationalkickoffs and archivedmodelclocks remainseparate. Saveddeadline/cutoff values remain retainedplanninginformation withUNVERIFIED/CUTOFF_AUTHORITY_UNVERIFIED; no effectiveaccessclock accepted, deadline extended, casinoaccess/tripinvented oroverduestate inferred.",
-    "IndependentGitHub38168633837/job114556348721 at760ff6bc andfollowup38168800068/job114556842196 at31e432e8 SUCCESS: bothacceptedZIPs,12ancestry+23projection+16opening+22afternoon tests,currentbinding/actual51+11CLI andfullretainedQA independentlyverified.153numericfields/51directions and11originalexclusions matched. Originalintermediatebindingfailures38168568853/38168571102 preserved; finalcoherentviewpassedseparately.",
-    "Whole assembled index validated beforewrite withunchanged strictreader; fullhistoricalactive validation, evidence-onlypaths andobservedUTCclock retained. Exactlytwooriginalrejectedrecords andoriginalincompleteclockQA unchanged.",
-    "New weekly Mondayreadiness/Tuesdaycandidate remainsseparatefuture operational dependency; candidate success/noop isnotacceptance. Naturalcorrectedabsence/display produceruse and broader scheduler/source/execution/cutoff/close/CLV/moneyambiguity debts remainOPEN. Fourproductiontaskfields unchanged.",
-    "Manualdisplay/absence-classification correction isCORRECTED/PERSISTED/READ_BACK/EXISTING_CI_DEMONSTRATED/INDEPENDENTLY_RECONCILED; NATURAL_PRODUCER_PENDING. EarlierpartialS0audit/report preserved andexplicitlybounded, originalFIRST_FROZEN nowcomplete. Exactlyfourproductiontaskconfigurationfields andacceptedsourcepointer independentlyunchanged.",
-    "Natural16:54:56CTHealthaudit/16:59:03closure correctlyRUN_INCOMPLETE, current51+11HotSheet validmanualstate. Itcarried SundayMonitor/WeeklyQAsemanticdefects plus historicalMonitor/Evening/Healthgaps andBigNineprivateauthority; noSundayeveningcycledue. Runtimeinvocationclosedincomplete, notstillrunning. NextMonitorMonday07CT isprospectiveproducerconfirmation, notmissedSundayreplay.",
-    "CurrentmanualR2weeklyreview corrects5Week7absence/natural-successsemanticboundaries andW6-L9 status only; originalR1/receipts/all49Week6numeric/gamerows/wager/threshold/accountingcontent unchanged.25tests andactualselectedR2/sourceCLI independentlypassedGitHub38185781106/job114607667896 at454b1cb0; fullretainedQA passed. CurrentHotSheet/currentdecisions/acceptedsource/model/money/task/schedules unchanged. Naturalproducerproof remainsPENDING.",
-    "LatestnaturalHealthaudit6b1097abd4cb082a1e60e4d1f09573576d804001/closure13775259fa2c3be8c36473b5067647e635014abd remainRUN_INCOMPLETE. Carry SundayMonitor120436Z/180208Z andWeeklyQA135620Z semanticdefects, historicalMonitorOct09T120138Z/Oct10T180302Z, EveningOct08/Oct10T011934Z andHealthOct08 gaps; newerinvocation/CI/manualcorrectionneverretrocloses these. BigNineacceptedprivateauthority remainsmissing; noYahoointegrationchange.",
-    "Orthogonaloriginalfrozen-fieldcheck built/readback/independentlyexecuted inexistingGitHub38186246745/job114609074671 atb7650113:26tests/current62IDs/51predictions153numbers/51directions/11exclusions PASS. Presentationtitle/cycle-only diagnosticsretainoriginalnumbers; changedmarket/decision/title casesstillREJECTunderunchangedfullprofile. No syntheticfuturepublication/observation/decisionpersisted.",
-    "PASS_ORIGINAL_FROZEN_FIELDS_ONLY isnot fullpublication/currentmarket/decision/practicalcutoffauthority. Existingunknownfullcycle rejection unchanged; nextnaturalMondaypublication stillrequiresfreshqualifiedfullsource/decisionphase. NewacceptedREFRESH consumerrequiresseparateapprovedroute; no originaloverwrite. Naturalproducerdemonstration pending. CurrentHotSheet/operational/accepted/model/wager/money/taskstate andHealthRUN_INCOMPLETE unchanged.",
-    "AcceptedOctober6REFRESH fieldadapter independentlypassed24tests/actualCLI inexistingGitHub38186943599/job114611193825:62IDs/61REFRESHpredictions183numbers/1exclusion whileoriginal51+11values/status/reasons remainunchanged.10originalexclusionslatereligible onlyinREFRESH, neverbackfilled. Exactacceptedpointer/independentrecord/ZIP/cutoff/typebound; candidateworkflowgreen alone rejected.",
-    "PASS_ACCEPTED_REFRESH_FIELDS_ONLY isnot operationalconsumerselection orfullpublicationacceptance. CurrentHotSheetstilloriginal51+11/all62INCONCLUSIVE; no current/futureview, prediction, sourceobservation, decision,wager/cash/task created. Diagnosticrecords ephemeral; lateracceptedboundary requiresindependentqualification. Fullsource/decision/practicalcutoff/lineageintegration/naturalproducer debts andHealthRUN_INCOMPLETE remainOPEN.",
-    "Directuserclarificationearned:original“Alsoadd20tomoneyledger” meansNEW+20USDfundingseparatefromfour$5bets, nottheirstaketotal. Currentmoneyledgerpostsoneuniqueoriginalinstructionfundingentry. Clarification isnotsecondcredit; oldpendingmeaningstatementsremainhistorical andsuperseded prospectively.",
-    "New+20funding remainsUNASSIGNEDproduction/sandbox, actualfundingtimeunspecified andcombinedcashbalance NOT_COMPUTABLE. Sandbox20ceiling/available20/exposure0 remainsunchanged. Existing15actualwagers/53.45stake,fourticket20stake/14.55arithmeticreturn/-5.45net andallgrades/executionrecords unchanged; no payout/debit/transfer/risklimit inferred. Fundingmeaningdebt CLOSED; allocation/openingbalance/redemption/date andotheroperationaldebts remainOPEN.",
-    "OriginalconfirmedADD20moneyrecord nowconsumedbyEXISTINGQA:28record/table/source/dedup/currentselector tests andactualCLI independentlypassedGitHub38192674570/job114628594210. Exactmoneyledger3aebcbdcc535479c29c31f18073cba09f59aab01 unchanged; stilloneUNASSIGNED+20funding, distinctfromfour20stake/historical53.45stake/payouts, no balance/limit inference.",
-    "PASS_QUALIFIED_ADD20_FUNDING_RECORD_ONLY isnotbank/paymentverification,fullcashbalance ornewfunding/allocation/riskauthority. Producercontrolinstalled/prewriteusewhenavailable required, butnaturalscheduleduse andbroadaccounting/operationalfailureclassesnotclosed. Existingall4tasks/currentHotSheet/model/wager/result/sourceacceptedstate unchanged; budget/fundingdate/openingbalance/cashpayment andHealthincomplete/otherdebts remainOPEN.",
-    "User-directedTestRoutinev6 Tuesday source-readiness audit independentlypersisted/readback:2acceptedIDs andofficial18/19CT October13kickoffclocks matched; bothfuture. Actualpracticalexecutionaccess/cutoffs remainUNVERIFIED; all62currentdecisions andcanonicalHotSheet/source/model/wager/money unchanged.",
-    "DraftKingsreadable fullgame2rowpublicfallback collected105514Z-105810Z;bookmakerupdatetimeUNKNOWN/executionUNVERIFIED. BothFanDuelevents locationverification;BetMGM locationselector;FanDueleditorial Delaware sidepricesinternallyconflict. Oneoperatornot3bookqualifiedconsensus; no sourcegate bypass, median/EV/recommendation. Qualifiedconsensus/Caesars/practicalaccess remainOPEN.",
-    "Boundedretainedkickoffrecovery CORRECTED/PERSISTED/READ_BACK/DETERMINISTIC_RECONCILIATION_DEMONSTRATED; nextexistingMonitor mustindependentlyrequalify source/fullslate/decision/publication. NaturalproducerusePENDING; currentHealthRUN_INCOMPLETE/historicalgaps unchanged. Fourenabledtaskfields independentlyunchanged; no newtask/dispatch.",
-    "Natural Monday07:01CT Market Monitor consumed corrected original51FIRST_FROZEN+11exclusions without REFRESH substitution. Full62-game exactly-once Hot Sheet sectioning passed2/2/3/3/13/17/22/0; Nebraska retained. This is prospective natural-producer use, not historical replay or model acceptance.",
-    "Live DraftKings public Game Lines retrieval120702Z matched55/62 governed identities with complete spread/total/moneyline pairs. Identified single-book fallback only: bookmaker update UNKNOWN, execution NOT_VERIFIED, consensus unavailable62/62, Caesars unverified62/62. Seven unmatched current quotes explicitly unavailable; Sunday observations remain historical.",
-    "All62 decisions remainINCONCLUSIVE; acceptable numbers/trips/Week7 executions remainnone. Tuesday2 retain13:00CT reconciliation; saved practical cutoffs remainCUTOFF_AUTHORITY_UNVERIFIED. No forced bet, confidence, EV or threshold invented.",
-    "Monday repository readiness workflow for current date had not yet run by1207Z; last scheduled run Oct5 success. Bounded manual source QA remains two-game/test-only and incomplete for market execution readiness. Candidate generation remains nonacceptance.",
-    "Canonical market6a59f9063527b342fb80b73aad82096de2610c8d and decisioncd6bf4246d63789c4d9f0977dc365966df0a8968 persisted/readback. Current HotSheet57fcf76162dfdd5aed54159a6b567107705d7643 persisted/readback; execution/scorecard/money unchanged. Initial generated market coverage row mis-normalized Central Michigan; append-only correction preserves exact55/7 coverage.",
-    "Prior navigation checkpoint as_of120000Z was written before that observed clock and failed the existing future-clock gate. It is preserved as rejected history; this later observed121211Z checkpoint carries identical pointers/facts and restores strict clock validity.",
-    "HotSheet canonical-input declaration normalized by one minimal existing-file delta after current-binding CI rejection; values unchanged. Current publication blob is now fd2eb9234e11419b70073f7e30d63d3946230c7d.",
-    "HotSheet frozen-model boundary restored exact immutable cutoff2026-09-26T03:47:37.497112+00:00 after invariant gate rejection; prediction/exclusion values and all operational facts unchanged. Current publication blob is6ca663dbf6eb883ededb2155b152aa0941c10a03.",
-    "Natural Monday13:02CT Market Monitor consumed morning incomplete state prospectively; no replay. Start marker persisted/readback before research. Current recovery/cadence/controls unchanged.",
-    "Repository Monday source-readiness run38268900152 succeeded: PASS_REFRESH_SOURCE_PREFLIGHT cutoff2026-10-12T15:15:47.709251Z,440future, no prediction/market/outcome join. Readiness isnot acceptance; Tuesday candidate remains separate.",
-    "Afternoon DraftKings public page exposed8/62 events. Five internally coherent identified single-book fallback updates accepted for comparison only; Delaware-MTSU,Kennesaw-MissouriSt,WKU-SamHouston spread/ML favorite-direction conflicts preserved diagnostic and withheld. Consensus unavailable/Caesars unverified62/62.",
-    "Current market05e5dd2d49ae9592897014515e1690ba3a784fb9, decision2d1530d038c27db5e3305233cec6add775b8aa0f, HotSheet989b4dbe87fa96a34b3d01d5f638c1df76deb2ca persisted/readback. Exact62 section counts2/2/3/3/13/17/22/0, original51+11 unchanged, all62INCONCLUSIVE, no threshold/trip/execution.",
-    "Morning publication-specific gate blocker remains inherited. New dated13:05 path requires non-weakened qualification; RUN_PASS prohibited absent acceptance. No workflow/task mutation."
-  ],
-  "pointers": [
-    {
-      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
-      "blob": "05e5dd2d49ae9592897014515e1690ba3a784fb9",
-      "purpose": "current canonical Monday13:05CT partial DraftKings refresh;5 coherent fallback+3diagnostic conflicts, prior full-slate lineage retained"
-    },
-    {
-      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
-      "blob": "2d1530d038c27db5e3305233cec6add775b8aa0f",
-      "purpose": "current canonical Monday13:05CT decisions;62INCONCLUSIVE, Tuesday deadline retained, no threshold/trip/execution"
-    },
-    {
-      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
-      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
-      "purpose": "current execution surface; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
-      "blob": "6f7650d340bf63f8f93a2b825e35f8b8e41fa80b",
-      "purpose": "current scorecard; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_0708CT.md",
-      "blob": "6d4e94b3646b6277a8b84152b1c5ead911714a9a",
-      "purpose": "HISTORICAL_WEEK7_MORNING_HOT_SHEET: immutable first-observation source"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md",
-      "blob": "c027e59eb0f752cd0225d69938f52e924f5c1a68",
-      "purpose": "HISTORICAL_WEEK7_AFTERNOON_HOT_SHEET: immutable13:05 market/movement; original absence classification superseded"
-    },
-    {
-      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
-      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
-      "purpose": "ACTIVE consensus benchmark and Caesars execution separation"
-    },
-    {
-      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
-      "blob": "9b72cb316492e270be3c27c882ded189f965eed0",
-      "purpose": "active current-output exact-once sectioning and actual-clock control"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R1.md",
-      "blob": "31d72be8927068879c9f5cf867c65eec3b8ff5e0",
-      "purpose": "HISTORICAL_WEEKLY_REVIEW: immutable Week6 learning; Week7 carry-forward/natural-success classification superseded prospectively by R2"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
-      "blob": "ec6fef317b55ee4a6db2a1a758d73cfb886d9965",
-      "purpose": "current durable findings: original51FIRST_FROZEN display corrected; independent CI passed, naturalproducer andoperationaldebts open"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md",
-      "blob": "63ec14c167dfb4c64fb845ebd862f6aac588e487",
-      "purpose": "active default/event/practical decision cadence authority"
-    },
-    {
-      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
-      "blob": "f90f0d87f5027fe93bf4ca2c22440539904890ef",
-      "purpose": "ACTIVE persistence and full proposed navigation-history pre-write validation"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_PREDICTION_ANCESTRY_AND_EARLY_WEEK_HANDOFF_QA_2026-10-11.md",
-      "blob": "3d3a4caf1676770a7ad316e6375bdb074a329f72",
-      "purpose": "HISTORICAL bounded October6 S0 ancestry audit; original FIRST_FROZEN recovered separately afterward"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ACCEPTED_S0_ANCESTRY_AUDIT_2026-10-11.json",
-      "blob": "bf21c4e684b09907084c63cf0b8b1a994ed1018f",
-      "purpose": "62game exact ancestry coverage and43 immutable start-time differences; not operational acceptance"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1429CT.md",
-      "blob": "71006586178a1829c51f119fff872b6f981cd865",
-      "purpose": "HISTORICAL_HOT_SHEET: faithful51FIRST_FROZEN values+11exclusions; retained13:05markets, unverifiedplanningclocks, no new decisions"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
-      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
-      "purpose": "acceptedoriginal62target lineage census; distinct from October6REFRESH"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_DISPLAY_CORRECTION_2026-10-11.md",
-      "blob": "6148d81b51073cc98d1f05319cfd108d710b548c",
-      "purpose": "original51+11 lineage/current-display correction and independent CI proof; naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_ROUTINE_V6_BACK_HALF_CANDIDATE_2026-09-30.md",
-      "blob": "240d7ce844af16412210b52263f511644c3063e1",
-      "purpose": "TestRoutinev6 CANDIDATE proceduralcontrol with explicit complete-boundary demonstration; Productionv5 unchanged"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
-      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
-      "purpose": "CURRENT_WEEKLY_REVIEW: manual prospective carry-forward correction; Week6 learning unchanged, naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md",
-      "blob": "6cb8b60706b2338a37df85f5ae277983dcf2d5a5",
-      "purpose": "ACTIVE weeklylearning output and complete-boundary/proof-scope producer control"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
-      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
-      "purpose": "LATEST_PERSISTED_HEALTH_AUDIT: natural current-state reconciliation RUN_INCOMPLETE; preserve unresolvedcycles"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_RUN_CLOSURE.md",
-      "blob": "13775259fa2c3be8c36473b5067647e635014abd",
-      "purpose": "naturalHealth independentclosure RUN_INCOMPLETE, not a missing/still-running invocation"
-    },
-    {
-      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
-      "blob": "6254ab28b90d9fa4a815124ea7ffec2850ddfc30",
-      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October6 independentlyacceptedREFRESH source; separatefromoriginalFIRST_FROZEN/currentconsumerchoice"
-    },
-    {
-      "path": "evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-07.md",
-      "blob": "a4fb4c56addf12335a477034673e167afc28ebb4",
-      "purpose": "independentexactOctober6S0REFRESHacceptance; noS2/Champion/pointeradvanceimpliedbyfieldchecker"
-    },
-    {
-      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
-      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
-      "purpose": "CURRENT_MONEY_LEDGER: originaluserinstructionconfirmedNEW+20funding, bookedonce; budgetallocation/time/combinedbalance unassigned/unresolved"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_CONTROLLED_EXPERIMENTAL_CAPITAL_AND_PARLAY_EXPOSURE_v1_238.md",
-      "blob": "3fdaa4ff8618695b77e659dd0d12536b510acda6",
-      "purpose": "ACTIVE capitalcontrol withfunding/executionseparation/idempotence; sandbox20ceiling andriskbehavior unchanged"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_WEEK7_TUESDAY_SOURCE_READINESS_2026-10-12.json",
-      "blob": "7f6d913dc7afd192219db2bdc3be50f66976ae5d",
-      "purpose": "LATEST_BOUNDED_TUESDAY_SOURCE_READINESS: official kickoff2/2; onebookretrievalfallback; consensus/Caesars/practicalcutoffs unverified; nextproducer requalification required"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_0707CT.md",
-      "blob": "6ca663dbf6eb883ededb2155b152aa0941c10a03",
-      "purpose": "HISTORICAL_HOT_SHEET: natural Monday producer; original51+11, DraftKings55/62 fallback, exact section counts, all62INCONCLUSIVE"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261012T120147Z_RUN_STARTED.md",
-      "blob": "1a67d181d97e94af85c05f5776b8f86aef4d88ba",
-      "purpose": "current cycle observability start marker; not completion evidence"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_1305CT.md",
-      "blob": "989b4dbe87fa96a34b3d01d5f638c1df76deb2ca",
-      "purpose": "CURRENT_HOT_SHEET: Monday afternoon; original51+11, partial5qualified+3conflicted refresh, exact section counts, all62INCONCLUSIVE; publication gate pending"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261012T180232Z_RUN_STARTED.md",
-      "blob": "b6e553182a3010263c089115906372159646e172",
-      "purpose": "current afternoon cycle start marker; not completion evidence"
-    }
-  ]
-}
-```
-
-
-```cfb-frontier-json
-{
-  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
-  "as_of_utc": "2026-10-12T23:30:13.573641+00:00",
-  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
-  "claims": [
-    "Navigation only; independently recover governing controls and canonical current state. ProductionRoutinev5 remains active, TestRoutinev6 candidate, frozenChampionv1.193 unchanged.",
-    "Original accepted September26 FIRST_FROZEN artifact10897612260 independently recovered at ZIP772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf. All62Week7targets covered:51original predictions+11explicitexclusions; all4Tue/Wed original predictions exist. HistoricalChallengerB is today's BetaProductionChampion underv1.222.",
-    "Earlier blanket absentWeek7Champion/FIRST_FROZEN claims in originalSundayviews and priorQA were incomplete; preserved as historical evidence and prospectively superseded only on absence classification. October6S0research audit remains correct for its narrow refreshcoverage61+1, not complete FIRST_FROZEN ancestry.",
-    "Current sole HotSheet is manual14:29CTlineage correction with51faithfullyprojected original fairspread/total/homewintriples and11originalexclusions. October6REFRESH isseparate; no refreshprediction substitutesfor originalprediction/exclusion. No acceptedpointeradvance, new modelrun/acceptance orpromotion.",
-    "Canonicaldecision append corrects ancestry claim only; all62dispositions remainINCONCLUSIVE, thresholds/notrips/executions unchanged. Qualifiedconsensus unavailable andcurrentCaesars unverified. Marketquotes/movement/sourceclock remain13:05CT; newdisplayclock isnot newretrieval.",
-    "Currentoperationalkickoffs and archivedmodelclocks remainseparate. Saveddeadline/cutoff values remain retainedplanninginformation withUNVERIFIED/CUTOFF_AUTHORITY_UNVERIFIED; no effectiveaccessclock accepted, deadline extended, casinoaccess/tripinvented oroverduestate inferred.",
-    "IndependentGitHub38168633837/job114556348721 at760ff6bc andfollowup38168800068/job114556842196 at31e432e8 SUCCESS: bothacceptedZIPs,12ancestry+23projection+16opening+22afternoon tests,currentbinding/actual51+11CLI andfullretainedQA independentlyverified.153numericfields/51directions and11originalexclusions matched. Originalintermediatebindingfailures38168568853/38168571102 preserved; finalcoherentviewpassedseparately.",
-    "Whole assembled index validated beforewrite withunchanged strictreader; fullhistoricalactive validation, evidence-onlypaths andobservedUTCclock retained. Exactlytwooriginalrejectedrecords andoriginalincompleteclockQA unchanged.",
-    "New weekly Mondayreadiness/Tuesdaycandidate remainsseparatefuture operational dependency; candidate success/noop isnotacceptance. Naturalcorrectedabsence/display produceruse and broader scheduler/source/execution/cutoff/close/CLV/moneyambiguity debts remainOPEN. Fourproductiontaskfields unchanged.",
-    "Manualdisplay/absence-classification correction isCORRECTED/PERSISTED/READ_BACK/EXISTING_CI_DEMONSTRATED/INDEPENDENTLY_RECONCILED; NATURAL_PRODUCER_PENDING. EarlierpartialS0audit/report preserved andexplicitlybounded, originalFIRST_FROZEN nowcomplete. Exactlyfourproductiontaskconfigurationfields andacceptedsourcepointer independentlyunchanged.",
-    "Natural16:54:56CTHealthaudit/16:59:03closure correctlyRUN_INCOMPLETE, current51+11HotSheet validmanualstate. Itcarried SundayMonitor/WeeklyQAsemanticdefects plus historicalMonitor/Evening/Healthgaps andBigNineprivateauthority; noSundayeveningcycledue. Runtimeinvocationclosedincomplete, notstillrunning. NextMonitorMonday07CT isprospectiveproducerconfirmation, notmissedSundayreplay.",
-    "CurrentmanualR2weeklyreview corrects5Week7absence/natural-successsemanticboundaries andW6-L9 status only; originalR1/receipts/all49Week6numeric/gamerows/wager/threshold/accountingcontent unchanged.25tests andactualselectedR2/sourceCLI independentlypassedGitHub38185781106/job114607667896 at454b1cb0; fullretainedQA passed. CurrentHotSheet/currentdecisions/acceptedsource/model/money/task/schedules unchanged. Naturalproducerproof remainsPENDING.",
-    "LatestnaturalHealthaudit6b1097abd4cb082a1e60e4d1f09573576d804001/closure13775259fa2c3be8c36473b5067647e635014abd remainRUN_INCOMPLETE. Carry SundayMonitor120436Z/180208Z andWeeklyQA135620Z semanticdefects, historicalMonitorOct09T120138Z/Oct10T180302Z, EveningOct08/Oct10T011934Z andHealthOct08 gaps; newerinvocation/CI/manualcorrectionneverretrocloses these. BigNineacceptedprivateauthority remainsmissing; noYahoointegrationchange.",
-    "Orthogonaloriginalfrozen-fieldcheck built/readback/independentlyexecuted inexistingGitHub38186246745/job114609074671 atb7650113:26tests/current62IDs/51predictions153numbers/51directions/11exclusions PASS. Presentationtitle/cycle-only diagnosticsretainoriginalnumbers; changedmarket/decision/title casesstillREJECTunderunchangedfullprofile. No syntheticfuturepublication/observation/decisionpersisted.",
-    "PASS_ORIGINAL_FROZEN_FIELDS_ONLY isnot fullpublication/currentmarket/decision/practicalcutoffauthority. Existingunknownfullcycle rejection unchanged; nextnaturalMondaypublication stillrequiresfreshqualifiedfullsource/decisionphase. NewacceptedREFRESH consumerrequiresseparateapprovedroute; no originaloverwrite. Naturalproducerdemonstration pending. CurrentHotSheet/operational/accepted/model/wager/money/taskstate andHealthRUN_INCOMPLETE unchanged.",
-    "AcceptedOctober6REFRESH fieldadapter independentlypassed24tests/actualCLI inexistingGitHub38186943599/job114611193825:62IDs/61REFRESHpredictions183numbers/1exclusion whileoriginal51+11values/status/reasons remainunchanged.10originalexclusionslatereligible onlyinREFRESH, neverbackfilled. Exactacceptedpointer/independentrecord/ZIP/cutoff/typebound; candidateworkflowgreen alone rejected.",
-    "PASS_ACCEPTED_REFRESH_FIELDS_ONLY isnot operationalconsumerselection orfullpublicationacceptance. CurrentHotSheetstilloriginal51+11/all62INCONCLUSIVE; no current/futureview, prediction, sourceobservation, decision,wager/cash/task created. Diagnosticrecords ephemeral; lateracceptedboundary requiresindependentqualification. Fullsource/decision/practicalcutoff/lineageintegration/naturalproducer debts andHealthRUN_INCOMPLETE remainOPEN.",
-    "Directuserclarificationearned:original\u201cAlsoadd20tomoneyledger\u201d meansNEW+20USDfundingseparatefromfour$5bets, nottheirstaketotal. Currentmoneyledgerpostsoneuniqueoriginalinstructionfundingentry. Clarification isnotsecondcredit; oldpendingmeaningstatementsremainhistorical andsuperseded prospectively.",
-    "New+20funding remainsUNASSIGNEDproduction/sandbox, actualfundingtimeunspecified andcombinedcashbalance NOT_COMPUTABLE. Sandbox20ceiling/available20/exposure0 remainsunchanged. Existing15actualwagers/53.45stake,fourticket20stake/14.55arithmeticreturn/-5.45net andallgrades/executionrecords unchanged; no payout/debit/transfer/risklimit inferred. Fundingmeaningdebt CLOSED; allocation/openingbalance/redemption/date andotheroperationaldebts remainOPEN.",
-    "OriginalconfirmedADD20moneyrecord nowconsumedbyEXISTINGQA:28record/table/source/dedup/currentselector tests andactualCLI independentlypassedGitHub38192674570/job114628594210. Exactmoneyledger3aebcbdcc535479c29c31f18073cba09f59aab01 unchanged; stilloneUNASSIGNED+20funding, distinctfromfour20stake/historical53.45stake/payouts, no balance/limit inference.",
-    "PASS_QUALIFIED_ADD20_FUNDING_RECORD_ONLY isnotbank/paymentverification,fullcashbalance ornewfunding/allocation/riskauthority. Producercontrolinstalled/prewriteusewhenavailable required, butnaturalscheduleduse andbroadaccounting/operationalfailureclassesnotclosed. Existingall4tasks/currentHotSheet/model/wager/result/sourceacceptedstate unchanged; budget/fundingdate/openingbalance/cashpayment andHealthincomplete/otherdebts remainOPEN.",
-    "User-directedTestRoutinev6 Tuesday source-readiness audit independentlypersisted/readback:2acceptedIDs andofficial18/19CT October13kickoffclocks matched; bothfuture. Actualpracticalexecutionaccess/cutoffs remainUNVERIFIED; all62currentdecisions andcanonicalHotSheet/source/model/wager/money unchanged.",
-    "DraftKingsreadable fullgame2rowpublicfallback collected105514Z-105810Z;bookmakerupdatetimeUNKNOWN/executionUNVERIFIED. BothFanDuelevents locationverification;BetMGM locationselector;FanDueleditorial Delaware sidepricesinternallyconflict. Oneoperatornot3bookqualifiedconsensus; no sourcegate bypass, median/EV/recommendation. Qualifiedconsensus/Caesars/practicalaccess remainOPEN.",
-    "Boundedretainedkickoffrecovery CORRECTED/PERSISTED/READ_BACK/DETERMINISTIC_RECONCILIATION_DEMONSTRATED; nextexistingMonitor mustindependentlyrequalify source/fullslate/decision/publication. NaturalproducerusePENDING; currentHealthRUN_INCOMPLETE/historicalgaps unchanged. Fourenabledtaskfields independentlyunchanged; no newtask/dispatch.",
-    "Natural Monday07:01CT Market Monitor consumed corrected original51FIRST_FROZEN+11exclusions without REFRESH substitution. Full62-game exactly-once Hot Sheet sectioning passed2/2/3/3/13/17/22/0; Nebraska retained. This is prospective natural-producer use, not historical replay or model acceptance.",
-    "Live DraftKings public Game Lines retrieval120702Z matched55/62 governed identities with complete spread/total/moneyline pairs. Identified single-book fallback only: bookmaker update UNKNOWN, execution NOT_VERIFIED, consensus unavailable62/62, Caesars unverified62/62. Seven unmatched current quotes explicitly unavailable; Sunday observations remain historical.",
-    "All62 decisions remainINCONCLUSIVE; acceptable numbers/trips/Week7 executions remainnone. Tuesday2 retain13:00CT reconciliation; saved practical cutoffs remainCUTOFF_AUTHORITY_UNVERIFIED. No forced bet, confidence, EV or threshold invented.",
-    "Monday repository readiness workflow for current date had not yet run by1207Z; last scheduled run Oct5 success. Bounded manual source QA remains two-game/test-only and incomplete for market execution readiness. Candidate generation remains nonacceptance.",
-    "Canonical market6a59f9063527b342fb80b73aad82096de2610c8d and decisioncd6bf4246d63789c4d9f0977dc365966df0a8968 persisted/readback. Current HotSheet57fcf76162dfdd5aed54159a6b567107705d7643 persisted/readback; execution/scorecard/money unchanged. Initial generated market coverage row mis-normalized Central Michigan; append-only correction preserves exact55/7 coverage.",
-    "Prior navigation checkpoint as_of120000Z was written before that observed clock and failed the existing future-clock gate. It is preserved as rejected history; this later observed121211Z checkpoint carries identical pointers/facts and restores strict clock validity.",
-    "HotSheet canonical-input declaration normalized by one minimal existing-file delta after current-binding CI rejection; values unchanged. Current publication blob is now fd2eb9234e11419b70073f7e30d63d3946230c7d.",
-    "HotSheet frozen-model boundary restored exact immutable cutoff2026-09-26T03:47:37.497112+00:00 after invariant gate rejection; prediction/exclusion values and all operational facts unchanged. Current publication blob is6ca663dbf6eb883ededb2155b152aa0941c10a03.",
-    "Natural Monday13:02CT Market Monitor consumed morning incomplete state prospectively; no replay. Start marker persisted/readback before research. Current recovery/cadence/controls unchanged.",
-    "Repository Monday source-readiness run38268900152 succeeded: PASS_REFRESH_SOURCE_PREFLIGHT cutoff2026-10-12T15:15:47.709251Z,440future, no prediction/market/outcome join. Readiness isnot acceptance; Tuesday candidate remains separate.",
-    "Afternoon DraftKings public page exposed8/62 events. Five internally coherent identified single-book fallback updates accepted for comparison only; Delaware-MTSU,Kennesaw-MissouriSt,WKU-SamHouston spread/ML favorite-direction conflicts preserved diagnostic and withheld. Consensus unavailable/Caesars unverified62/62.",
-    "Current market05e5dd2d49ae9592897014515e1690ba3a784fb9, decision2d1530d038c27db5e3305233cec6add775b8aa0f, HotSheet989b4dbe87fa96a34b3d01d5f638c1df76deb2ca persisted/readback. Exact62 section counts2/2/3/3/13/17/22/0, original51+11 unchanged, all62INCONCLUSIVE, no threshold/trip/execution.",
-    "Morning publication-specific gate blocker remains inherited. New dated13:05 path requires non-weakened qualification; RUN_PASS prohibited absent acceptance. No workflow/task mutation.",
-    "User-directed Test Routine v6 Monday saved-publication correction: stale afternoon readiness sentence corrected prospectively in new 18:28CT view. All62 game rows/51original predictions/11exclusions/current quotes/movement/decisions/cutoffs preserved. Bounded Monday source-profile gate built/readback and20 local regressions plus actualCLI passed; independent existing-workflow demonstration PENDING. Both original Monday cycles stay RUN_INCOMPLETE. Later source/cycle boundaries require separate qualification; consensus/Caesars/practicalcutoffs/naturalproducer debts remainOPEN. No task/model/operational ledger mutation."
-  ],
-  "pointers": [
-    {
-      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
-      "blob": "05e5dd2d49ae9592897014515e1690ba3a784fb9",
-      "purpose": "current canonical Monday13:05CT partial DraftKings refresh;5 coherent fallback+3diagnostic conflicts, prior full-slate lineage retained"
-    },
-    {
-      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
-      "blob": "2d1530d038c27db5e3305233cec6add775b8aa0f",
-      "purpose": "current canonical Monday13:05CT decisions;62INCONCLUSIVE, Tuesday deadline retained, no threshold/trip/execution"
-    },
-    {
-      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
-      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
-      "purpose": "current execution surface; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
-      "blob": "6f7650d340bf63f8f93a2b825e35f8b8e41fa80b",
-      "purpose": "current scorecard; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_0708CT.md",
-      "blob": "6d4e94b3646b6277a8b84152b1c5ead911714a9a",
-      "purpose": "HISTORICAL_WEEK7_MORNING_HOT_SHEET: immutable first-observation source"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md",
-      "blob": "c027e59eb0f752cd0225d69938f52e924f5c1a68",
-      "purpose": "HISTORICAL_WEEK7_AFTERNOON_HOT_SHEET: immutable13:05 market/movement; original absence classification superseded"
-    },
-    {
-      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
-      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
-      "purpose": "ACTIVE consensus benchmark and Caesars execution separation"
-    },
-    {
-      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
-      "blob": "9b72cb316492e270be3c27c882ded189f965eed0",
-      "purpose": "active current-output exact-once sectioning and actual-clock control"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R1.md",
-      "blob": "31d72be8927068879c9f5cf867c65eec3b8ff5e0",
-      "purpose": "HISTORICAL_WEEKLY_REVIEW: immutable Week6 learning; Week7 carry-forward/natural-success classification superseded prospectively by R2"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
-      "blob": "ec6fef317b55ee4a6db2a1a758d73cfb886d9965",
-      "purpose": "current durable findings: original51FIRST_FROZEN display corrected; independent CI passed, naturalproducer andoperationaldebts open"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md",
-      "blob": "63ec14c167dfb4c64fb845ebd862f6aac588e487",
-      "purpose": "active default/event/practical decision cadence authority"
-    },
-    {
-      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
-      "blob": "f90f0d87f5027fe93bf4ca2c22440539904890ef",
-      "purpose": "ACTIVE persistence and full proposed navigation-history pre-write validation"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_PREDICTION_ANCESTRY_AND_EARLY_WEEK_HANDOFF_QA_2026-10-11.md",
-      "blob": "3d3a4caf1676770a7ad316e6375bdb074a329f72",
-      "purpose": "HISTORICAL bounded October6 S0 ancestry audit; original FIRST_FROZEN recovered separately afterward"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ACCEPTED_S0_ANCESTRY_AUDIT_2026-10-11.json",
-      "blob": "bf21c4e684b09907084c63cf0b8b1a994ed1018f",
-      "purpose": "62game exact ancestry coverage and43 immutable start-time differences; not operational acceptance"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1429CT.md",
-      "blob": "71006586178a1829c51f119fff872b6f981cd865",
-      "purpose": "HISTORICAL_HOT_SHEET: faithful51FIRST_FROZEN values+11exclusions; retained13:05markets, unverifiedplanningclocks, no new decisions"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
-      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
-      "purpose": "acceptedoriginal62target lineage census; distinct from October6REFRESH"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_DISPLAY_CORRECTION_2026-10-11.md",
-      "blob": "6148d81b51073cc98d1f05319cfd108d710b548c",
-      "purpose": "original51+11 lineage/current-display correction and independent CI proof; naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_ROUTINE_V6_BACK_HALF_CANDIDATE_2026-09-30.md",
-      "blob": "240d7ce844af16412210b52263f511644c3063e1",
-      "purpose": "TestRoutinev6 CANDIDATE proceduralcontrol with explicit complete-boundary demonstration; Productionv5 unchanged"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
-      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
-      "purpose": "CURRENT_WEEKLY_REVIEW: manual prospective carry-forward correction; Week6 learning unchanged, naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md",
-      "blob": "6cb8b60706b2338a37df85f5ae277983dcf2d5a5",
-      "purpose": "ACTIVE weeklylearning output and complete-boundary/proof-scope producer control"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
-      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
-      "purpose": "LATEST_PERSISTED_HEALTH_AUDIT: natural current-state reconciliation RUN_INCOMPLETE; preserve unresolvedcycles"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_RUN_CLOSURE.md",
-      "blob": "13775259fa2c3be8c36473b5067647e635014abd",
-      "purpose": "naturalHealth independentclosure RUN_INCOMPLETE, not a missing/still-running invocation"
-    },
-    {
-      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
-      "blob": "6254ab28b90d9fa4a815124ea7ffec2850ddfc30",
-      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October6 independentlyacceptedREFRESH source; separatefromoriginalFIRST_FROZEN/currentconsumerchoice"
-    },
-    {
-      "path": "evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-07.md",
-      "blob": "a4fb4c56addf12335a477034673e167afc28ebb4",
-      "purpose": "independentexactOctober6S0REFRESHacceptance; noS2/Champion/pointeradvanceimpliedbyfieldchecker"
-    },
-    {
-      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
-      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
-      "purpose": "CURRENT_MONEY_LEDGER: originaluserinstructionconfirmedNEW+20funding, bookedonce; budgetallocation/time/combinedbalance unassigned/unresolved"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_CONTROLLED_EXPERIMENTAL_CAPITAL_AND_PARLAY_EXPOSURE_v1_238.md",
-      "blob": "3fdaa4ff8618695b77e659dd0d12536b510acda6",
-      "purpose": "ACTIVE capitalcontrol withfunding/executionseparation/idempotence; sandbox20ceiling andriskbehavior unchanged"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_WEEK7_TUESDAY_SOURCE_READINESS_2026-10-12.json",
-      "blob": "7f6d913dc7afd192219db2bdc3be50f66976ae5d",
-      "purpose": "LATEST_BOUNDED_TUESDAY_SOURCE_READINESS: official kickoff2/2; onebookretrievalfallback; consensus/Caesars/practicalcutoffs unverified; nextproducer requalification required"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_0707CT.md",
-      "blob": "6ca663dbf6eb883ededb2155b152aa0941c10a03",
-      "purpose": "HISTORICAL_HOT_SHEET: natural Monday producer; original51+11, DraftKings55/62 fallback, exact section counts, all62INCONCLUSIVE"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261012T120147Z_RUN_STARTED.md",
-      "blob": "1a67d181d97e94af85c05f5776b8f86aef4d88ba",
-      "purpose": "current cycle observability start marker; not completion evidence"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_1305CT.md",
-      "blob": "989b4dbe87fa96a34b3d01d5f638c1df76deb2ca",
-      "purpose": "HISTORICAL_HOT_SHEET: original Monday afternoon publication preserved; readiness sentence corrected prospectively in new current view; original cycle RUN_INCOMPLETE"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261012T180232Z_RUN_STARTED.md",
-      "blob": "b6e553182a3010263c089115906372159646e172",
-      "purpose": "current afternoon cycle start marker; not completion evidence"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_1828CT.md",
-      "blob": "36d7345b2788da32a6db3edd01e04078320673bb",
-      "purpose": "CURRENT_HOT_SHEET: manual Monday presentation correction; same13:05quotes/62INCONCLUSIVE; independent CI qualification pending; no run upgrade"
-    }
-  ]
-}
-```
-
-
-```cfb-frontier-json
-{
-  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
-  "as_of_utc": "2026-10-12T23:32:18Z",
-  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
-  "claims": [
-    "Navigation only; independently recover governing controls and canonical current state. ProductionRoutinev5 remains active, TestRoutinev6 candidate, frozenChampionv1.193 unchanged.",
-    "Original accepted September26 FIRST_FROZEN artifact10897612260 independently recovered at ZIP772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf. All62Week7targets covered:51original predictions+11explicitexclusions; all4Tue/Wed original predictions exist. HistoricalChallengerB is today's BetaProductionChampion underv1.222.",
-    "Earlier blanket absentWeek7Champion/FIRST_FROZEN claims in originalSundayviews and priorQA were incomplete; preserved as historical evidence and prospectively superseded only on absence classification. October6S0research audit remains correct for its narrow refreshcoverage61+1, not complete FIRST_FROZEN ancestry.",
-    "Current sole HotSheet is manual14:29CTlineage correction with51faithfullyprojected original fairspread/total/homewintriples and11originalexclusions. October6REFRESH isseparate; no refreshprediction substitutesfor originalprediction/exclusion. No acceptedpointeradvance, new modelrun/acceptance orpromotion.",
-    "Canonicaldecision append corrects ancestry claim only; all62dispositions remainINCONCLUSIVE, thresholds/notrips/executions unchanged. Qualifiedconsensus unavailable andcurrentCaesars unverified. Marketquotes/movement/sourceclock remain13:05CT; newdisplayclock isnot newretrieval.",
-    "Currentoperationalkickoffs and archivedmodelclocks remainseparate. Saveddeadline/cutoff values remain retainedplanninginformation withUNVERIFIED/CUTOFF_AUTHORITY_UNVERIFIED; no effectiveaccessclock accepted, deadline extended, casinoaccess/tripinvented oroverduestate inferred.",
-    "IndependentGitHub38168633837/job114556348721 at760ff6bc andfollowup38168800068/job114556842196 at31e432e8 SUCCESS: bothacceptedZIPs,12ancestry+23projection+16opening+22afternoon tests,currentbinding/actual51+11CLI andfullretainedQA independentlyverified.153numericfields/51directions and11originalexclusions matched. Originalintermediatebindingfailures38168568853/38168571102 preserved; finalcoherentviewpassedseparately.",
-    "Whole assembled index validated beforewrite withunchanged strictreader; fullhistoricalactive validation, evidence-onlypaths andobservedUTCclock retained. Exactlytwooriginalrejectedrecords andoriginalincompleteclockQA unchanged.",
-    "New weekly Mondayreadiness/Tuesdaycandidate remainsseparatefuture operational dependency; candidate success/noop isnotacceptance. Naturalcorrectedabsence/display produceruse and broader scheduler/source/execution/cutoff/close/CLV/moneyambiguity debts remainOPEN. Fourproductiontaskfields unchanged.",
-    "Manualdisplay/absence-classification correction isCORRECTED/PERSISTED/READ_BACK/EXISTING_CI_DEMONSTRATED/INDEPENDENTLY_RECONCILED; NATURAL_PRODUCER_PENDING. EarlierpartialS0audit/report preserved andexplicitlybounded, originalFIRST_FROZEN nowcomplete. Exactlyfourproductiontaskconfigurationfields andacceptedsourcepointer independentlyunchanged.",
-    "Natural16:54:56CTHealthaudit/16:59:03closure correctlyRUN_INCOMPLETE, current51+11HotSheet validmanualstate. Itcarried SundayMonitor/WeeklyQAsemanticdefects plus historicalMonitor/Evening/Healthgaps andBigNineprivateauthority; noSundayeveningcycledue. Runtimeinvocationclosedincomplete, notstillrunning. NextMonitorMonday07CT isprospectiveproducerconfirmation, notmissedSundayreplay.",
-    "CurrentmanualR2weeklyreview corrects5Week7absence/natural-successsemanticboundaries andW6-L9 status only; originalR1/receipts/all49Week6numeric/gamerows/wager/threshold/accountingcontent unchanged.25tests andactualselectedR2/sourceCLI independentlypassedGitHub38185781106/job114607667896 at454b1cb0; fullretainedQA passed. CurrentHotSheet/currentdecisions/acceptedsource/model/money/task/schedules unchanged. Naturalproducerproof remainsPENDING.",
-    "LatestnaturalHealthaudit6b1097abd4cb082a1e60e4d1f09573576d804001/closure13775259fa2c3be8c36473b5067647e635014abd remainRUN_INCOMPLETE. Carry SundayMonitor120436Z/180208Z andWeeklyQA135620Z semanticdefects, historicalMonitorOct09T120138Z/Oct10T180302Z, EveningOct08/Oct10T011934Z andHealthOct08 gaps; newerinvocation/CI/manualcorrectionneverretrocloses these. BigNineacceptedprivateauthority remainsmissing; noYahoointegrationchange.",
-    "Orthogonaloriginalfrozen-fieldcheck built/readback/independentlyexecuted inexistingGitHub38186246745/job114609074671 atb7650113:26tests/current62IDs/51predictions153numbers/51directions/11exclusions PASS. Presentationtitle/cycle-only diagnosticsretainoriginalnumbers; changedmarket/decision/title casesstillREJECTunderunchangedfullprofile. No syntheticfuturepublication/observation/decisionpersisted.",
-    "PASS_ORIGINAL_FROZEN_FIELDS_ONLY isnot fullpublication/currentmarket/decision/practicalcutoffauthority. Existingunknownfullcycle rejection unchanged; nextnaturalMondaypublication stillrequiresfreshqualifiedfullsource/decisionphase. NewacceptedREFRESH consumerrequiresseparateapprovedroute; no originaloverwrite. Naturalproducerdemonstration pending. CurrentHotSheet/operational/accepted/model/wager/money/taskstate andHealthRUN_INCOMPLETE unchanged.",
-    "AcceptedOctober6REFRESH fieldadapter independentlypassed24tests/actualCLI inexistingGitHub38186943599/job114611193825:62IDs/61REFRESHpredictions183numbers/1exclusion whileoriginal51+11values/status/reasons remainunchanged.10originalexclusionslatereligible onlyinREFRESH, neverbackfilled. Exactacceptedpointer/independentrecord/ZIP/cutoff/typebound; candidateworkflowgreen alone rejected.",
-    "PASS_ACCEPTED_REFRESH_FIELDS_ONLY isnot operationalconsumerselection orfullpublicationacceptance. CurrentHotSheetstilloriginal51+11/all62INCONCLUSIVE; no current/futureview, prediction, sourceobservation, decision,wager/cash/task created. Diagnosticrecords ephemeral; lateracceptedboundary requiresindependentqualification. Fullsource/decision/practicalcutoff/lineageintegration/naturalproducer debts andHealthRUN_INCOMPLETE remainOPEN.",
-    "Directuserclarificationearned:original“Alsoadd20tomoneyledger” meansNEW+20USDfundingseparatefromfour$5bets, nottheirstaketotal. Currentmoneyledgerpostsoneuniqueoriginalinstructionfundingentry. Clarification isnotsecondcredit; oldpendingmeaningstatementsremainhistorical andsuperseded prospectively.",
-    "New+20funding remainsUNASSIGNEDproduction/sandbox, actualfundingtimeunspecified andcombinedcashbalance NOT_COMPUTABLE. Sandbox20ceiling/available20/exposure0 remainsunchanged. Existing15actualwagers/53.45stake,fourticket20stake/14.55arithmeticreturn/-5.45net andallgrades/executionrecords unchanged; no payout/debit/transfer/risklimit inferred. Fundingmeaningdebt CLOSED; allocation/openingbalance/redemption/date andotheroperationaldebts remainOPEN.",
-    "OriginalconfirmedADD20moneyrecord nowconsumedbyEXISTINGQA:28record/table/source/dedup/currentselector tests andactualCLI independentlypassedGitHub38192674570/job114628594210. Exactmoneyledger3aebcbdcc535479c29c31f18073cba09f59aab01 unchanged; stilloneUNASSIGNED+20funding, distinctfromfour20stake/historical53.45stake/payouts, no balance/limit inference.",
-    "PASS_QUALIFIED_ADD20_FUNDING_RECORD_ONLY isnotbank/paymentverification,fullcashbalance ornewfunding/allocation/riskauthority. Producercontrolinstalled/prewriteusewhenavailable required, butnaturalscheduleduse andbroadaccounting/operationalfailureclassesnotclosed. Existingall4tasks/currentHotSheet/model/wager/result/sourceacceptedstate unchanged; budget/fundingdate/openingbalance/cashpayment andHealthincomplete/otherdebts remainOPEN.",
-    "User-directedTestRoutinev6 Tuesday source-readiness audit independentlypersisted/readback:2acceptedIDs andofficial18/19CT October13kickoffclocks matched; bothfuture. Actualpracticalexecutionaccess/cutoffs remainUNVERIFIED; all62currentdecisions andcanonicalHotSheet/source/model/wager/money unchanged.",
-    "DraftKingsreadable fullgame2rowpublicfallback collected105514Z-105810Z;bookmakerupdatetimeUNKNOWN/executionUNVERIFIED. BothFanDuelevents locationverification;BetMGM locationselector;FanDueleditorial Delaware sidepricesinternallyconflict. Oneoperatornot3bookqualifiedconsensus; no sourcegate bypass, median/EV/recommendation. Qualifiedconsensus/Caesars/practicalaccess remainOPEN.",
-    "Boundedretainedkickoffrecovery CORRECTED/PERSISTED/READ_BACK/DETERMINISTIC_RECONCILIATION_DEMONSTRATED; nextexistingMonitor mustindependentlyrequalify source/fullslate/decision/publication. NaturalproducerusePENDING; currentHealthRUN_INCOMPLETE/historicalgaps unchanged. Fourenabledtaskfields independentlyunchanged; no newtask/dispatch.",
-    "Natural Monday07:01CT Market Monitor consumed corrected original51FIRST_FROZEN+11exclusions without REFRESH substitution. Full62-game exactly-once Hot Sheet sectioning passed2/2/3/3/13/17/22/0; Nebraska retained. This is prospective natural-producer use, not historical replay or model acceptance.",
-    "Live DraftKings public Game Lines retrieval120702Z matched55/62 governed identities with complete spread/total/moneyline pairs. Identified single-book fallback only: bookmaker update UNKNOWN, execution NOT_VERIFIED, consensus unavailable62/62, Caesars unverified62/62. Seven unmatched current quotes explicitly unavailable; Sunday observations remain historical.",
-    "All62 decisions remainINCONCLUSIVE; acceptable numbers/trips/Week7 executions remainnone. Tuesday2 retain13:00CT reconciliation; saved practical cutoffs remainCUTOFF_AUTHORITY_UNVERIFIED. No forced bet, confidence, EV or threshold invented.",
-    "Monday repository readiness workflow for current date had not yet run by1207Z; last scheduled run Oct5 success. Bounded manual source QA remains two-game/test-only and incomplete for market execution readiness. Candidate generation remains nonacceptance.",
-    "Canonical market6a59f9063527b342fb80b73aad82096de2610c8d and decisioncd6bf4246d63789c4d9f0977dc365966df0a8968 persisted/readback. Current HotSheet57fcf76162dfdd5aed54159a6b567107705d7643 persisted/readback; execution/scorecard/money unchanged. Initial generated market coverage row mis-normalized Central Michigan; append-only correction preserves exact55/7 coverage.",
-    "Prior navigation checkpoint as_of120000Z was written before that observed clock and failed the existing future-clock gate. It is preserved as rejected history; this later observed121211Z checkpoint carries identical pointers/facts and restores strict clock validity.",
-    "HotSheet canonical-input declaration normalized by one minimal existing-file delta after current-binding CI rejection; values unchanged. Current publication blob is now fd2eb9234e11419b70073f7e30d63d3946230c7d.",
-    "HotSheet frozen-model boundary restored exact immutable cutoff2026-09-26T03:47:37.497112+00:00 after invariant gate rejection; prediction/exclusion values and all operational facts unchanged. Current publication blob is6ca663dbf6eb883ededb2155b152aa0941c10a03.",
-    "Natural Monday13:02CT Market Monitor consumed morning incomplete state prospectively; no replay. Start marker persisted/readback before research. Current recovery/cadence/controls unchanged.",
-    "Repository Monday source-readiness run38268900152 succeeded: PASS_REFRESH_SOURCE_PREFLIGHT cutoff2026-10-12T15:15:47.709251Z,440future, no prediction/market/outcome join. Readiness isnot acceptance; Tuesday candidate remains separate.",
-    "Afternoon DraftKings public page exposed8/62 events. Five internally coherent identified single-book fallback updates accepted for comparison only; Delaware-MTSU,Kennesaw-MissouriSt,WKU-SamHouston spread/ML favorite-direction conflicts preserved diagnostic and withheld. Consensus unavailable/Caesars unverified62/62.",
-    "Current market05e5dd2d49ae9592897014515e1690ba3a784fb9, decision2d1530d038c27db5e3305233cec6add775b8aa0f, HotSheet989b4dbe87fa96a34b3d01d5f638c1df76deb2ca persisted/readback. Exact62 section counts2/2/3/3/13/17/22/0, original51+11 unchanged, all62INCONCLUSIVE, no threshold/trip/execution.",
-    "Morning publication-specific gate blocker remains inherited. New dated13:05 path requires non-weakened qualification; RUN_PASS prohibited absent acceptance. No workflow/task mutation.",
-    "User-directed Test Routine v6 Monday saved-publication correction: stale afternoon readiness sentence corrected prospectively in new 18:28CT view. All62 game rows/51original predictions/11exclusions/current quotes/movement/decisions/cutoffs preserved. Bounded Monday source-profile gate built/readback and20 local regressions plus actualCLI passed; independent existing-workflow demonstration PENDING. Both original Monday cycles stay RUN_INCOMPLETE. Later source/cycle boundaries require separate qualification; consensus/Caesars/practicalcutoffs/naturalproducer debts remainOPEN. No task/model/operational ledger mutation.",
-    "Independent existing GitHub38322526285/job115053664798 at eac13bc70bbe60d9b835e36a4eb35eb9621cadb6 SUCCESS:20new Monday source-profile regressions/actualcurrent62projection/original51+11 frozen153fields/currentbinding/allretainedQA PASS. New18:28view36d7345b2788da32a6db3edd01e04078320673bb is qualified saved-source display only. Both originalMonday cycles remainRUN_INCOMPLETE; tomorrow newsourcecycle qualification remainsOPEN, not automaticallyaccepted. Report671cbb50ca847a14a2065b0b1ace374dda635f4f captures limits/intermediate failures/nextwork. All4tasks configurationfields unchanged; canonicalledgers/model/wager/cash unchanged."
-  ],
-  "pointers": [
-    {
-      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
-      "blob": "05e5dd2d49ae9592897014515e1690ba3a784fb9",
-      "purpose": "current canonical Monday13:05CT partial DraftKings refresh;5 coherent fallback+3diagnostic conflicts, prior full-slate lineage retained"
-    },
-    {
-      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
-      "blob": "2d1530d038c27db5e3305233cec6add775b8aa0f",
-      "purpose": "current canonical Monday13:05CT decisions;62INCONCLUSIVE, Tuesday deadline retained, no threshold/trip/execution"
-    },
-    {
-      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
-      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
-      "purpose": "current execution surface; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
-      "blob": "6f7650d340bf63f8f93a2b825e35f8b8e41fa80b",
-      "purpose": "current scorecard; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_0708CT.md",
-      "blob": "6d4e94b3646b6277a8b84152b1c5ead911714a9a",
-      "purpose": "HISTORICAL_WEEK7_MORNING_HOT_SHEET: immutable first-observation source"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md",
-      "blob": "c027e59eb0f752cd0225d69938f52e924f5c1a68",
-      "purpose": "HISTORICAL_WEEK7_AFTERNOON_HOT_SHEET: immutable13:05 market/movement; original absence classification superseded"
-    },
-    {
-      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
-      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
-      "purpose": "ACTIVE consensus benchmark and Caesars execution separation"
-    },
-    {
-      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
-      "blob": "9b72cb316492e270be3c27c882ded189f965eed0",
-      "purpose": "active current-output exact-once sectioning and actual-clock control"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R1.md",
-      "blob": "31d72be8927068879c9f5cf867c65eec3b8ff5e0",
-      "purpose": "HISTORICAL_WEEKLY_REVIEW: immutable Week6 learning; Week7 carry-forward/natural-success classification superseded prospectively by R2"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
-      "blob": "ec6fef317b55ee4a6db2a1a758d73cfb886d9965",
-      "purpose": "current durable findings: original51FIRST_FROZEN display corrected; independent CI passed, naturalproducer andoperationaldebts open"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md",
-      "blob": "63ec14c167dfb4c64fb845ebd862f6aac588e487",
-      "purpose": "active default/event/practical decision cadence authority"
-    },
-    {
-      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
-      "blob": "f90f0d87f5027fe93bf4ca2c22440539904890ef",
-      "purpose": "ACTIVE persistence and full proposed navigation-history pre-write validation"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_PREDICTION_ANCESTRY_AND_EARLY_WEEK_HANDOFF_QA_2026-10-11.md",
-      "blob": "3d3a4caf1676770a7ad316e6375bdb074a329f72",
-      "purpose": "HISTORICAL bounded October6 S0 ancestry audit; original FIRST_FROZEN recovered separately afterward"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ACCEPTED_S0_ANCESTRY_AUDIT_2026-10-11.json",
-      "blob": "bf21c4e684b09907084c63cf0b8b1a994ed1018f",
-      "purpose": "62game exact ancestry coverage and43 immutable start-time differences; not operational acceptance"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1429CT.md",
-      "blob": "71006586178a1829c51f119fff872b6f981cd865",
-      "purpose": "HISTORICAL_HOT_SHEET: faithful51FIRST_FROZEN values+11exclusions; retained13:05markets, unverifiedplanningclocks, no new decisions"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
-      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
-      "purpose": "acceptedoriginal62target lineage census; distinct from October6REFRESH"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_DISPLAY_CORRECTION_2026-10-11.md",
-      "blob": "6148d81b51073cc98d1f05319cfd108d710b548c",
-      "purpose": "original51+11 lineage/current-display correction and independent CI proof; naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_ROUTINE_V6_BACK_HALF_CANDIDATE_2026-09-30.md",
-      "blob": "2479081f3f15df63bd78710cf7d4a64620692a30",
-      "purpose": "TestRoutinev6 CANDIDATE proceduralcontrol with explicit complete-boundary demonstration; Productionv5 unchanged"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
-      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
-      "purpose": "CURRENT_WEEKLY_REVIEW: manual prospective carry-forward correction; Week6 learning unchanged, naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md",
-      "blob": "6cb8b60706b2338a37df85f5ae277983dcf2d5a5",
-      "purpose": "ACTIVE weeklylearning output and complete-boundary/proof-scope producer control"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
-      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
-      "purpose": "LATEST_PERSISTED_HEALTH_AUDIT: natural current-state reconciliation RUN_INCOMPLETE; preserve unresolvedcycles"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_RUN_CLOSURE.md",
-      "blob": "13775259fa2c3be8c36473b5067647e635014abd",
-      "purpose": "naturalHealth independentclosure RUN_INCOMPLETE, not a missing/still-running invocation"
-    },
-    {
-      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
-      "blob": "6254ab28b90d9fa4a815124ea7ffec2850ddfc30",
-      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October6 independentlyacceptedREFRESH source; separatefromoriginalFIRST_FROZEN/currentconsumerchoice"
-    },
-    {
-      "path": "evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-07.md",
-      "blob": "a4fb4c56addf12335a477034673e167afc28ebb4",
-      "purpose": "independentexactOctober6S0REFRESHacceptance; noS2/Champion/pointeradvanceimpliedbyfieldchecker"
-    },
-    {
-      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
-      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
-      "purpose": "CURRENT_MONEY_LEDGER: originaluserinstructionconfirmedNEW+20funding, bookedonce; budgetallocation/time/combinedbalance unassigned/unresolved"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_CONTROLLED_EXPERIMENTAL_CAPITAL_AND_PARLAY_EXPOSURE_v1_238.md",
-      "blob": "3fdaa4ff8618695b77e659dd0d12536b510acda6",
-      "purpose": "ACTIVE capitalcontrol withfunding/executionseparation/idempotence; sandbox20ceiling andriskbehavior unchanged"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_WEEK7_TUESDAY_SOURCE_READINESS_2026-10-12.json",
-      "blob": "7f6d913dc7afd192219db2bdc3be50f66976ae5d",
-      "purpose": "LATEST_BOUNDED_TUESDAY_SOURCE_READINESS: official kickoff2/2; onebookretrievalfallback; consensus/Caesars/practicalcutoffs unverified; nextproducer requalification required"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_0707CT.md",
-      "blob": "6ca663dbf6eb883ededb2155b152aa0941c10a03",
-      "purpose": "HISTORICAL_HOT_SHEET: natural Monday producer; original51+11, DraftKings55/62 fallback, exact section counts, all62INCONCLUSIVE"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261012T120147Z_RUN_STARTED.md",
-      "blob": "1a67d181d97e94af85c05f5776b8f86aef4d88ba",
-      "purpose": "current cycle observability start marker; not completion evidence"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_1305CT.md",
-      "blob": "989b4dbe87fa96a34b3d01d5f638c1df76deb2ca",
-      "purpose": "HISTORICAL_HOT_SHEET: original Monday afternoon publication preserved; readiness sentence corrected prospectively in new current view; original cycle RUN_INCOMPLETE"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261012T180232Z_RUN_STARTED.md",
-      "blob": "b6e553182a3010263c089115906372159646e172",
-      "purpose": "current afternoon cycle start marker; not completion evidence"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_1828CT.md",
-      "blob": "36d7345b2788da32a6db3edd01e04078320673bb",
-      "purpose": "CURRENT_HOT_SHEET: manual Monday presentation correction; same13:05quotes/62INCONCLUSIVE; independently qualified saved-source projection in existing CI38322526285; no natural cycle upgrade"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_MONDAY_PUBLICATION_QUALIFICATION_2026-10-12.md",
-      "blob": "671cbb50ca847a14a2065b0b1ace374dda635f4f",
-      "purpose": "CURRENT_MONDAY_PUBLICATION_QA: independent bounded saved-source display correction/CI demonstration; future source-profile/natural completion debts remain open"
-    }
-  ]
-}
-```
-
-
-```cfb-frontier-json
-{
-  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
-  "as_of_utc": "2026-10-12T23:53:49Z",
-  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
-  "claims": [
-    "Navigation only; independently recover governing controls and canonical current state. ProductionRoutinev5 remains active, TestRoutinev6 candidate, frozenChampionv1.193 unchanged.",
-    "Original accepted September26 FIRST_FROZEN artifact10897612260 independently recovered at ZIP772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf. All62Week7targets covered:51original predictions+11explicitexclusions; all4Tue/Wed original predictions exist. HistoricalChallengerB is today's BetaProductionChampion underv1.222.",
-    "Earlier blanket absentWeek7Champion/FIRST_FROZEN claims in originalSundayviews and priorQA were incomplete; preserved as historical evidence and prospectively superseded only on absence classification. October6S0research audit remains correct for its narrow refreshcoverage61+1, not complete FIRST_FROZEN ancestry.",
-    "Current sole HotSheet is manual14:29CTlineage correction with51faithfullyprojected original fairspread/total/homewintriples and11originalexclusions. October6REFRESH isseparate; no refreshprediction substitutesfor originalprediction/exclusion. No acceptedpointeradvance, new modelrun/acceptance orpromotion.",
-    "Canonicaldecision append corrects ancestry claim only; all62dispositions remainINCONCLUSIVE, thresholds/notrips/executions unchanged. Qualifiedconsensus unavailable andcurrentCaesars unverified. Marketquotes/movement/sourceclock remain13:05CT; newdisplayclock isnot newretrieval.",
-    "Currentoperationalkickoffs and archivedmodelclocks remainseparate. Saveddeadline/cutoff values remain retainedplanninginformation withUNVERIFIED/CUTOFF_AUTHORITY_UNVERIFIED; no effectiveaccessclock accepted, deadline extended, casinoaccess/tripinvented oroverduestate inferred.",
-    "IndependentGitHub38168633837/job114556348721 at760ff6bc andfollowup38168800068/job114556842196 at31e432e8 SUCCESS: bothacceptedZIPs,12ancestry+23projection+16opening+22afternoon tests,currentbinding/actual51+11CLI andfullretainedQA independentlyverified.153numericfields/51directions and11originalexclusions matched. Originalintermediatebindingfailures38168568853/38168571102 preserved; finalcoherentviewpassedseparately.",
-    "Whole assembled index validated beforewrite withunchanged strictreader; fullhistoricalactive validation, evidence-onlypaths andobservedUTCclock retained. Exactlytwooriginalrejectedrecords andoriginalincompleteclockQA unchanged.",
-    "New weekly Mondayreadiness/Tuesdaycandidate remainsseparatefuture operational dependency; candidate success/noop isnotacceptance. Naturalcorrectedabsence/display produceruse and broader scheduler/source/execution/cutoff/close/CLV/moneyambiguity debts remainOPEN. Fourproductiontaskfields unchanged.",
-    "Manualdisplay/absence-classification correction isCORRECTED/PERSISTED/READ_BACK/EXISTING_CI_DEMONSTRATED/INDEPENDENTLY_RECONCILED; NATURAL_PRODUCER_PENDING. EarlierpartialS0audit/report preserved andexplicitlybounded, originalFIRST_FROZEN nowcomplete. Exactlyfourproductiontaskconfigurationfields andacceptedsourcepointer independentlyunchanged.",
-    "Natural16:54:56CTHealthaudit/16:59:03closure correctlyRUN_INCOMPLETE, current51+11HotSheet validmanualstate. Itcarried SundayMonitor/WeeklyQAsemanticdefects plus historicalMonitor/Evening/Healthgaps andBigNineprivateauthority; noSundayeveningcycledue. Runtimeinvocationclosedincomplete, notstillrunning. NextMonitorMonday07CT isprospectiveproducerconfirmation, notmissedSundayreplay.",
-    "CurrentmanualR2weeklyreview corrects5Week7absence/natural-successsemanticboundaries andW6-L9 status only; originalR1/receipts/all49Week6numeric/gamerows/wager/threshold/accountingcontent unchanged.25tests andactualselectedR2/sourceCLI independentlypassedGitHub38185781106/job114607667896 at454b1cb0; fullretainedQA passed. CurrentHotSheet/currentdecisions/acceptedsource/model/money/task/schedules unchanged. Naturalproducerproof remainsPENDING.",
-    "LatestnaturalHealthaudit6b1097abd4cb082a1e60e4d1f09573576d804001/closure13775259fa2c3be8c36473b5067647e635014abd remainRUN_INCOMPLETE. Carry SundayMonitor120436Z/180208Z andWeeklyQA135620Z semanticdefects, historicalMonitorOct09T120138Z/Oct10T180302Z, EveningOct08/Oct10T011934Z andHealthOct08 gaps; newerinvocation/CI/manualcorrectionneverretrocloses these. BigNineacceptedprivateauthority remainsmissing; noYahoointegrationchange.",
-    "Orthogonaloriginalfrozen-fieldcheck built/readback/independentlyexecuted inexistingGitHub38186246745/job114609074671 atb7650113:26tests/current62IDs/51predictions153numbers/51directions/11exclusions PASS. Presentationtitle/cycle-only diagnosticsretainoriginalnumbers; changedmarket/decision/title casesstillREJECTunderunchangedfullprofile. No syntheticfuturepublication/observation/decisionpersisted.",
-    "PASS_ORIGINAL_FROZEN_FIELDS_ONLY isnot fullpublication/currentmarket/decision/practicalcutoffauthority. Existingunknownfullcycle rejection unchanged; nextnaturalMondaypublication stillrequiresfreshqualifiedfullsource/decisionphase. NewacceptedREFRESH consumerrequiresseparateapprovedroute; no originaloverwrite. Naturalproducerdemonstration pending. CurrentHotSheet/operational/accepted/model/wager/money/taskstate andHealthRUN_INCOMPLETE unchanged.",
-    "AcceptedOctober6REFRESH fieldadapter independentlypassed24tests/actualCLI inexistingGitHub38186943599/job114611193825:62IDs/61REFRESHpredictions183numbers/1exclusion whileoriginal51+11values/status/reasons remainunchanged.10originalexclusionslatereligible onlyinREFRESH, neverbackfilled. Exactacceptedpointer/independentrecord/ZIP/cutoff/typebound; candidateworkflowgreen alone rejected.",
-    "PASS_ACCEPTED_REFRESH_FIELDS_ONLY isnot operationalconsumerselection orfullpublicationacceptance. CurrentHotSheetstilloriginal51+11/all62INCONCLUSIVE; no current/futureview, prediction, sourceobservation, decision,wager/cash/task created. Diagnosticrecords ephemeral; lateracceptedboundary requiresindependentqualification. Fullsource/decision/practicalcutoff/lineageintegration/naturalproducer debts andHealthRUN_INCOMPLETE remainOPEN.",
-    "Directuserclarificationearned:original“Alsoadd20tomoneyledger” meansNEW+20USDfundingseparatefromfour$5bets, nottheirstaketotal. Currentmoneyledgerpostsoneuniqueoriginalinstructionfundingentry. Clarification isnotsecondcredit; oldpendingmeaningstatementsremainhistorical andsuperseded prospectively.",
-    "New+20funding remainsUNASSIGNEDproduction/sandbox, actualfundingtimeunspecified andcombinedcashbalance NOT_COMPUTABLE. Sandbox20ceiling/available20/exposure0 remainsunchanged. Existing15actualwagers/53.45stake,fourticket20stake/14.55arithmeticreturn/-5.45net andallgrades/executionrecords unchanged; no payout/debit/transfer/risklimit inferred. Fundingmeaningdebt CLOSED; allocation/openingbalance/redemption/date andotheroperationaldebts remainOPEN.",
-    "OriginalconfirmedADD20moneyrecord nowconsumedbyEXISTINGQA:28record/table/source/dedup/currentselector tests andactualCLI independentlypassedGitHub38192674570/job114628594210. Exactmoneyledger3aebcbdcc535479c29c31f18073cba09f59aab01 unchanged; stilloneUNASSIGNED+20funding, distinctfromfour20stake/historical53.45stake/payouts, no balance/limit inference.",
-    "PASS_QUALIFIED_ADD20_FUNDING_RECORD_ONLY isnotbank/paymentverification,fullcashbalance ornewfunding/allocation/riskauthority. Producercontrolinstalled/prewriteusewhenavailable required, butnaturalscheduleduse andbroadaccounting/operationalfailureclassesnotclosed. Existingall4tasks/currentHotSheet/model/wager/result/sourceacceptedstate unchanged; budget/fundingdate/openingbalance/cashpayment andHealthincomplete/otherdebts remainOPEN.",
-    "User-directedTestRoutinev6 Tuesday source-readiness audit independentlypersisted/readback:2acceptedIDs andofficial18/19CT October13kickoffclocks matched; bothfuture. Actualpracticalexecutionaccess/cutoffs remainUNVERIFIED; all62currentdecisions andcanonicalHotSheet/source/model/wager/money unchanged.",
-    "DraftKingsreadable fullgame2rowpublicfallback collected105514Z-105810Z;bookmakerupdatetimeUNKNOWN/executionUNVERIFIED. BothFanDuelevents locationverification;BetMGM locationselector;FanDueleditorial Delaware sidepricesinternallyconflict. Oneoperatornot3bookqualifiedconsensus; no sourcegate bypass, median/EV/recommendation. Qualifiedconsensus/Caesars/practicalaccess remainOPEN.",
-    "Boundedretainedkickoffrecovery CORRECTED/PERSISTED/READ_BACK/DETERMINISTIC_RECONCILIATION_DEMONSTRATED; nextexistingMonitor mustindependentlyrequalify source/fullslate/decision/publication. NaturalproducerusePENDING; currentHealthRUN_INCOMPLETE/historicalgaps unchanged. Fourenabledtaskfields independentlyunchanged; no newtask/dispatch.",
-    "Natural Monday07:01CT Market Monitor consumed corrected original51FIRST_FROZEN+11exclusions without REFRESH substitution. Full62-game exactly-once Hot Sheet sectioning passed2/2/3/3/13/17/22/0; Nebraska retained. This is prospective natural-producer use, not historical replay or model acceptance.",
-    "Live DraftKings public Game Lines retrieval120702Z matched55/62 governed identities with complete spread/total/moneyline pairs. Identified single-book fallback only: bookmaker update UNKNOWN, execution NOT_VERIFIED, consensus unavailable62/62, Caesars unverified62/62. Seven unmatched current quotes explicitly unavailable; Sunday observations remain historical.",
-    "All62 decisions remainINCONCLUSIVE; acceptable numbers/trips/Week7 executions remainnone. Tuesday2 retain13:00CT reconciliation; saved practical cutoffs remainCUTOFF_AUTHORITY_UNVERIFIED. No forced bet, confidence, EV or threshold invented.",
-    "Monday repository readiness workflow for current date had not yet run by1207Z; last scheduled run Oct5 success. Bounded manual source QA remains two-game/test-only and incomplete for market execution readiness. Candidate generation remains nonacceptance.",
-    "Canonical market6a59f9063527b342fb80b73aad82096de2610c8d and decisioncd6bf4246d63789c4d9f0977dc365966df0a8968 persisted/readback. Current HotSheet57fcf76162dfdd5aed54159a6b567107705d7643 persisted/readback; execution/scorecard/money unchanged. Initial generated market coverage row mis-normalized Central Michigan; append-only correction preserves exact55/7 coverage.",
-    "Prior navigation checkpoint as_of120000Z was written before that observed clock and failed the existing future-clock gate. It is preserved as rejected history; this later observed121211Z checkpoint carries identical pointers/facts and restores strict clock validity.",
-    "HotSheet canonical-input declaration normalized by one minimal existing-file delta after current-binding CI rejection; values unchanged. Current publication blob is now fd2eb9234e11419b70073f7e30d63d3946230c7d.",
-    "HotSheet frozen-model boundary restored exact immutable cutoff2026-09-26T03:47:37.497112+00:00 after invariant gate rejection; prediction/exclusion values and all operational facts unchanged. Current publication blob is6ca663dbf6eb883ededb2155b152aa0941c10a03.",
-    "Natural Monday13:02CT Market Monitor consumed morning incomplete state prospectively; no replay. Start marker persisted/readback before research. Current recovery/cadence/controls unchanged.",
-    "Repository Monday source-readiness run38268900152 succeeded: PASS_REFRESH_SOURCE_PREFLIGHT cutoff2026-10-12T15:15:47.709251Z,440future, no prediction/market/outcome join. Readiness isnot acceptance; Tuesday candidate remains separate.",
-    "Afternoon DraftKings public page exposed8/62 events. Five internally coherent identified single-book fallback updates accepted for comparison only; Delaware-MTSU,Kennesaw-MissouriSt,WKU-SamHouston spread/ML favorite-direction conflicts preserved diagnostic and withheld. Consensus unavailable/Caesars unverified62/62.",
-    "Current market05e5dd2d49ae9592897014515e1690ba3a784fb9, decision2d1530d038c27db5e3305233cec6add775b8aa0f, HotSheet989b4dbe87fa96a34b3d01d5f638c1df76deb2ca persisted/readback. Exact62 section counts2/2/3/3/13/17/22/0, original51+11 unchanged, all62INCONCLUSIVE, no threshold/trip/execution.",
-    "Morning publication-specific gate blocker remains inherited. New dated13:05 path requires non-weakened qualification; RUN_PASS prohibited absent acceptance. No workflow/task mutation.",
-    "User-directed Test Routine v6 Monday saved-publication correction: stale afternoon readiness sentence corrected prospectively in new 18:28CT view. All62 game rows/51original predictions/11exclusions/current quotes/movement/decisions/cutoffs preserved. Bounded Monday source-profile gate built/readback and20 local regressions plus actualCLI passed; independent existing-workflow demonstration PENDING. Both original Monday cycles stay RUN_INCOMPLETE. Later source/cycle boundaries require separate qualification; consensus/Caesars/practicalcutoffs/naturalproducer debts remainOPEN. No task/model/operational ledger mutation.",
-    "Independent existing GitHub38322526285/job115053664798 at eac13bc70bbe60d9b835e36a4eb35eb9621cadb6 SUCCESS:20new Monday source-profile regressions/actualcurrent62projection/original51+11 frozen153fields/currentbinding/allretainedQA PASS. New18:28view36d7345b2788da32a6db3edd01e04078320673bb is qualified saved-source display only. Both originalMonday cycles remainRUN_INCOMPLETE; tomorrow newsourcecycle qualification remainsOPEN, not automaticallyaccepted. Report671cbb50ca847a14a2065b0b1ace374dda635f4f captures limits/intermediate failures/nextwork. All4tasks configurationfields unchanged; canonicalledgers/model/wager/cash unchanged.",
-    "User-directed TestRoutinev6 source-derived neutral Week7pregame schema nowBUILT/EXECUTED/INDEPENDENT_EXISTING_CI_DEMONSTRATED and linked into active producercontrol. ExistingGitHub38324316715/job115059345521 at917125452a887a9752ea8f55b94ffe81e7e9207f SUCCESS:54protocol/authentic tests, full62saved-source replay55current/7unavailable, immutable first/bootstrap/3withheldconflicts/sourceprecision/currentretainedQA PASS. Futurefixtures ephemeral; no typed operational append or new primary sheet persisted. Nextexistingproducer mustprove actual typed source/write/render/navigation/closure adoption; naturalPENDING. Unsupported actionable/WAIT/consensus/verifiedoffer/postkickoff/laterweek cases still failclosed, never forcedPASS oromitted.",
-    "Historical tests nowread exact canonicalGit snapshots instead of demandinglive sourcesremainMondaybytes. All4productiontaskconfigurationfields andcurrent market/decision/execution/scorecard/HotSheet/model/wager/money unchanged. BothoriginalMondayRUN_INCOMPLETE and62currentINCONCLUSIVE preserved; Tuesday2 reconciliation remainsOct13 13CT. Routinev6sections19/20 candidateonly; Productionv5unchanged. Newroot after an untyped appendrequiresindependentqualification, not historicalrewrite."
-  ],
-  "pointers": [
-    {
-      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
-      "blob": "05e5dd2d49ae9592897014515e1690ba3a784fb9",
-      "purpose": "current canonical Monday13:05CT partial DraftKings refresh;5 coherent fallback+3diagnostic conflicts, prior full-slate lineage retained"
-    },
-    {
-      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
-      "blob": "2d1530d038c27db5e3305233cec6add775b8aa0f",
-      "purpose": "current canonical Monday13:05CT decisions;62INCONCLUSIVE, Tuesday deadline retained, no threshold/trip/execution"
-    },
-    {
-      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
-      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
-      "purpose": "current execution surface; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
-      "blob": "6f7650d340bf63f8f93a2b825e35f8b8e41fa80b",
-      "purpose": "current scorecard; independently read and unchanged"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_0708CT.md",
-      "blob": "6d4e94b3646b6277a8b84152b1c5ead911714a9a",
-      "purpose": "HISTORICAL_WEEK7_MORNING_HOT_SHEET: immutable first-observation source"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1305CT.md",
-      "blob": "c027e59eb0f752cd0225d69938f52e924f5c1a68",
-      "purpose": "HISTORICAL_WEEK7_AFTERNOON_HOT_SHEET: immutable13:05 market/movement; original absence classification superseded"
-    },
-    {
-      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
-      "blob": "c87498072194ee07e62ac8c40dfc61f5e3b30ad9",
-      "purpose": "ACTIVE consensus benchmark and Caesars execution separation"
-    },
-    {
-      "path": "evidence/CFB_HOT_SHEET_DETERMINISTIC_KICKOFF_SECTIONING_CONTRACT_2026-09-30.md",
-      "blob": "52661d275915bcf84b03fd3f2adb6f2bad532c0a",
-      "purpose": "active current-output exact-once sectioning and actual-clock control"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R1.md",
-      "blob": "31d72be8927068879c9f5cf867c65eec3b8ff5e0",
-      "purpose": "HISTORICAL_WEEKLY_REVIEW: immutable Week6 learning; Week7 carry-forward/natural-success classification superseded prospectively by R2"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
-      "blob": "ec6fef317b55ee4a6db2a1a758d73cfb886d9965",
-      "purpose": "current durable findings: original51FIRST_FROZEN display corrected; independent CI passed, naturalproducer andoperationaldebts open"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_EARLY_EXPOSURE_AND_LEARNING_CADENCE_CONTROL_v1_237.md",
-      "blob": "63ec14c167dfb4c64fb845ebd862f6aac588e487",
-      "purpose": "active default/event/practical decision cadence authority"
-    },
-    {
-      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
-      "blob": "f90f0d87f5027fe93bf4ca2c22440539904890ef",
-      "purpose": "ACTIVE persistence and full proposed navigation-history pre-write validation"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_PREDICTION_ANCESTRY_AND_EARLY_WEEK_HANDOFF_QA_2026-10-11.md",
-      "blob": "3d3a4caf1676770a7ad316e6375bdb074a329f72",
-      "purpose": "HISTORICAL bounded October6 S0 ancestry audit; original FIRST_FROZEN recovered separately afterward"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ACCEPTED_S0_ANCESTRY_AUDIT_2026-10-11.json",
-      "blob": "bf21c4e684b09907084c63cf0b8b1a994ed1018f",
-      "purpose": "62game exact ancestry coverage and43 immutable start-time differences; not operational acceptance"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_1429CT.md",
-      "blob": "71006586178a1829c51f119fff872b6f981cd865",
-      "purpose": "HISTORICAL_HOT_SHEET: faithful51FIRST_FROZEN values+11exclusions; retained13:05markets, unverifiedplanningclocks, no new decisions"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
-      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
-      "purpose": "acceptedoriginal62target lineage census; distinct from October6REFRESH"
-    },
-    {
-      "path": "evidence/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_DISPLAY_CORRECTION_2026-10-11.md",
-      "blob": "6148d81b51073cc98d1f05319cfd108d710b548c",
-      "purpose": "original51+11 lineage/current-display correction and independent CI proof; naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_ROUTINE_V6_BACK_HALF_CANDIDATE_2026-09-30.md",
-      "blob": "5612bdf57b628af5fca5f59c8bad31607eed6c49",
-      "purpose": "TestRoutinev6 CANDIDATE proceduralcontrol with explicit complete-boundary demonstration; Productionv5 unchanged"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
-      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
-      "purpose": "CURRENT_WEEKLY_REVIEW: manual prospective carry-forward correction; Week6 learning unchanged, naturalproducer pending"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md",
-      "blob": "6cb8b60706b2338a37df85f5ae277983dcf2d5a5",
-      "purpose": "ACTIVE weeklylearning output and complete-boundary/proof-scope producer control"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
-      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
-      "purpose": "LATEST_PERSISTED_HEALTH_AUDIT: natural current-state reconciliation RUN_INCOMPLETE; preserve unresolvedcycles"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_RUN_CLOSURE.md",
-      "blob": "13775259fa2c3be8c36473b5067647e635014abd",
-      "purpose": "naturalHealth independentclosure RUN_INCOMPLETE, not a missing/still-running invocation"
-    },
-    {
-      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
-      "blob": "6254ab28b90d9fa4a815124ea7ffec2850ddfc30",
-      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October6 independentlyacceptedREFRESH source; separatefromoriginalFIRST_FROZEN/currentconsumerchoice"
-    },
-    {
-      "path": "evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-07.md",
-      "blob": "a4fb4c56addf12335a477034673e167afc28ebb4",
-      "purpose": "independentexactOctober6S0REFRESHacceptance; noS2/Champion/pointeradvanceimpliedbyfieldchecker"
-    },
-    {
-      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
-      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
-      "purpose": "CURRENT_MONEY_LEDGER: originaluserinstructionconfirmedNEW+20funding, bookedonce; budgetallocation/time/combinedbalance unassigned/unresolved"
-    },
-    {
-      "path": "evidence/CFB_ENGINE_CONTROLLED_EXPERIMENTAL_CAPITAL_AND_PARLAY_EXPOSURE_v1_238.md",
-      "blob": "3fdaa4ff8618695b77e659dd0d12536b510acda6",
-      "purpose": "ACTIVE capitalcontrol withfunding/executionseparation/idempotence; sandbox20ceiling andriskbehavior unchanged"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_WEEK7_TUESDAY_SOURCE_READINESS_2026-10-12.json",
-      "blob": "7f6d913dc7afd192219db2bdc3be50f66976ae5d",
-      "purpose": "LATEST_BOUNDED_TUESDAY_SOURCE_READINESS: official kickoff2/2; onebookretrievalfallback; consensus/Caesars/practicalcutoffs unverified; nextproducer requalification required"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_0707CT.md",
-      "blob": "6ca663dbf6eb883ededb2155b152aa0941c10a03",
-      "purpose": "HISTORICAL_HOT_SHEET: natural Monday producer; original51+11, DraftKings55/62 fallback, exact section counts, all62INCONCLUSIVE"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261012T120147Z_RUN_STARTED.md",
-      "blob": "1a67d181d97e94af85c05f5776b8f86aef4d88ba",
-      "purpose": "current cycle observability start marker; not completion evidence"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_1305CT.md",
-      "blob": "989b4dbe87fa96a34b3d01d5f638c1df76deb2ca",
-      "purpose": "HISTORICAL_HOT_SHEET: original Monday afternoon publication preserved; readiness sentence corrected prospectively in new current view; original cycle RUN_INCOMPLETE"
-    },
-    {
-      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261012T180232Z_RUN_STARTED.md",
-      "blob": "b6e553182a3010263c089115906372159646e172",
-      "purpose": "current afternoon cycle start marker; not completion evidence"
-    },
-    {
-      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-12_1828CT.md",
-      "blob": "36d7345b2788da32a6db3edd01e04078320673bb",
-      "purpose": "CURRENT_HOT_SHEET: manual Monday presentation correction; same13:05quotes/62INCONCLUSIVE; independently qualified saved-source projection in existing CI38322526285; no natural cycle upgrade"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_MONDAY_PUBLICATION_QUALIFICATION_2026-10-12.md",
-      "blob": "671cbb50ca847a14a2065b0b1ace374dda635f4f",
-      "purpose": "CURRENT_MONDAY_PUBLICATION_QA: independent bounded saved-source display correction/CI demonstration; future source-profile/natural completion debts remain open"
-    },
-    {
-      "path": "evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md",
-      "blob": "fbfc773461587e209951d5a9113f5fb7fa3e2319",
-      "purpose": "ACTIVE_BOUNDED_NEUTRAL_PUBLICATION_ROUTE: source-derived Week7pregame neutral schema; actual natural producer adoption pending; no source/bet/model acceptance"
-    },
-    {
-      "path": "evidence/scheduler_qa/CFB_NEUTRAL_PUBLICATION_SCHEMA_AND_AUTHENTIC_REPLAY_2026-10-12.md",
-      "blob": "bed8a2eccb7ff4c2c762b4bf02aeedc339623b2c",
-      "purpose": "CURRENT_NEUTRAL_SCHEMA_QA:54independenttests/62authenticinputreplay/source-root qualification/producer integration; broader adapters and natural use open"
-    }
-  ]
-}
-```
-
-
-```cfb-frontier-json
-{
-  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
-  "as_of_utc": "2026-10-13T12:19:59Z",
-  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
-  "claims": [
-    "Natural Tuesday07:00CT Market Monitor recovered active authority, persisted/read back RUN_STARTED before research, and adopted the bounded neutral typed source-derived publication route prospectively.",
-    "Fresh CBS Week7 full-slate multi-book display was captured at2026-10-13T12:09:20Z. 58/62 rows passed the neutral source/chronology consistency gate as UNIDENTIFIED_MIXED_BOOK_FALLBACK; WesternKentucky-SamHouston failed internal spread/moneyline direction consistency and three FCS-at-FBS rows had no current quote, so all four fail closed to current UNAVAILABLE with historical latest retained.",
-    "Qualified multi-book consensus remains unavailable62/62 and actual Caesars execution remains unverified62/62. All62 decisions remainINCONCLUSIVE; no acceptable number, execution window, trip, wager, confidence, EV or automatic action was established. Tuesday2 retain governed13:00CT reconciliation and unverified planning cutoffs.",
-    "Original accepted FIRST_FROZEN lineage remains51 predictions+11exclusions with October6 REFRESH separate and no substitution. Exact62 identity/section reconciliation passed2/2/3/3/13/17/22/0; Nebraska retained.",
-    "Canonical market29699c58cb5feb2334ab26c70cf8cbe30180bf63, decisionac1c9db9c13975e48988b9d21b8b2898fa89a9d7 and HotSheet150ced3096204bf95f50e54261bc2d981de5a8c8 persisted/readback. Execution/scorecard/money unchanged; no new settlement. Tuesday candidate workflow is scheduled10:00CT and had not yet reached its scheduled boundary; candidate generation remains nonacceptance."
-  ],
-  "pointers": [
-    {
-      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
-      "blob": "29699c58cb5feb2334ab26c70cf8cbe30180bf63",
-      "purpose": "CURRENT_MARKET_STATE: Tuesday07:00CT typed neutral append;58 current mixed-book fallback,4 unavailable with retained history"
-    },
-    {
-      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER…43216 tokens truncated…: "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
       "blob": "ac1c9db9c13975e48988b9d21b8b2898fa89a9d7",
       "purpose": "CURRENT_DECISION_STATE:62INCONCLUSIVE;Tuesday2 reconcile13:00CT; no threshold/trip/execution"
     },
@@ -9583,6 +7862,215 @@ This is the latest weekly-learning navigation block. For current recovery, its `
       "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261018T115603Z_RUN_CLOSURE.md",
       "blob": "a66e70aa787070c295ac291345397476c4a6946e",
       "purpose": "LATEST_SUNDAY_MONITOR_CLOSURE: Week8 opening-board advance RUN_INCOMPLETE; not upgraded by Weekly QA"
+    }
+  ]
+}
+```
+
+
+## User-directed complete recovery reconciliation — October19 CT
+
+```cfb-frontier-json
+{
+  "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
+  "as_of_utc": "2026-10-20T01:41:28.055637+00:00",
+  "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
+  "claims": [
+    "User-directed Test Routine v6 recovery repair reconciles Sunday uncheckpointed append; historical index bytes and failed CI preserved. Navigation only, not operational acceptance.",
+    "Current weekly review is October18 R1 Week7 closure; October11 R2 remains retained historical carry-forward correction. Week7 scorecard complete51/51 with11 exclusions. Current saved HotSheet57PASS5CONDITIONAL, all windows closed; no Week8 publication.",
+    "Monday readiness39278194016 succeeded;378 future source targets but no predictions or market join. Tuesday15UTC candidate generation and independent acceptance remain pending, not dispatched early.",
+    "Latest Monday Health audit RUN_INCOMPLETE; both Monday Monitor cycles closed incomplete. Saturday21 final-window gap and historical closure debt remain open; four enabled tasks unchanged. No scientific/model/market/decision/execution/cash change."
+  ],
+  "pointers": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "87d735251e328226087daa9aa1519c22c702a762",
+      "purpose": "CURRENT_MARKET_STATE:fresh40pregamegames;over1MiBfetch_fileSHAthenfetch_blob"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "65b87247a18060069402d9814692ab57ce97dcf3",
+      "purpose": "CURRENT_DECISION_STATE:57PASS5CONDITIONAL0INCONCLUSIVE;boundprospectivereconsiderations"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
+      "purpose": "CURRENT_EXECUTION_LEDGER:read unchanged;no Week7 established execution"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "7a6defc4b93ff5c1752890130ff9bdaf50deb2e5",
+      "purpose": "CURRENT_SCORECARD:Friday2 authoritative finals joined;AppState-Coastal exclusion unscored"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-17_1105CT.md",
+      "blob": "9dbec0ff1469fd06132ecd47374bcae25e9b3f5c",
+      "purpose": "CURRENT_HOT_SHEET:fullmulti-marketreviewfivecontrolledBetasingles62exactonce"
+    },
+    {
+      "path": "evidence/operational/CFB_CBS_FULL_BOARD_TABLES_20261017T155337Z.md",
+      "blob": "37c514d52325b3eca2b384451ed8f9ddea8d9d40",
+      "purpose": "CURRENT_COMPLETE_RESPONSE_CAPTURE:freshCBS62game40futurefallback;FinalOpenquarantined"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_SATURDAY_0700_DEADLINE_REVIEW_20261017T120424Z.json",
+      "blob": "9fcdf0e2ca839cbd2f823ade17976f142a4abffa",
+      "purpose": "HISTORICAL_MORNING_DEADLINE_REVIEW:18morningNO BETdispositionspreserved;notcompletedfootballreview"
+    },
+    {
+      "path": "evidence/operational/CFB_BETTING_READINESS_20261017T155337Z.json",
+      "blob": "a4bb0d63c37b6ef49529d61e790daa6bc0586a41",
+      "purpose": "CURRENT_READINESS_DIAGNOSTIC:actual16:07:41Z;5conditional0overdue0elapsed"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_RUN_STARTED.md",
+      "blob": "c5e6d74205f6127182be84d769f8fdb0fb7d9cae",
+      "purpose": "cycle observability start marker;not completion evidence"
+    },
+    {
+      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
+      "blob": "3aebcbdcc535479c29c31f18073cba09f59aab01",
+      "purpose": "CURRENT_MONEY_LEDGER: independently read and unchanged"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
+      "blob": "0dda6d5a92f12ce08512e0509a9ca457870f514b",
+      "purpose": "HISTORICAL_WEEKLY_REVIEW: October11 exact R2 correction remains validated"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json",
+      "blob": "d80e26c398de48e7a386ad9a627fe44f4111ac45",
+      "purpose": "accepted original62 target lineage census;51predictions+11exclusions;REFRESH separate"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md",
+      "blob": "6b1097abd4cb082a1e60e4d1f09573576d804001",
+      "purpose": "HISTORICAL_WEEKLY_REVIEW_SOURCE: exact immutable Health ancestor required by currentR2 carry-forward audit;not latestHealth"
+    },
+    {
+      "path": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
+      "blob": "467e21006cc51fcc46b9577d7f98f301f9e63f84",
+      "purpose": "CURRENT_ACCEPTED_PREDICTION_SOURCE: October13 exactS0 independently accepted lateOct16CT; source pointer only, not operational model substitution"
+    },
+    {
+      "path": "evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md",
+      "blob": "c8daffd209ca1575d057b8d73839fa74998ccce6",
+      "purpose": "ACTIVE_CONSENSUS_AND_VENUE_CONTROL:CaesarsNOTrequiredforrecommendations;sourceandlimitprotectionsunchanged"
+    },
+    {
+      "path": "evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md",
+      "blob": "a21567a789aac18dfe283abb07053fc6bf65dfa5",
+      "purpose": "ACTIVE_PUBLICATION_CONTROL:top10/allgame/allstyle/PASSongoingreview;existingcutoffs;codePRpending"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_TERMINAL_CANDIDATE.md",
+      "blob": "b76179dddf4ff1982dcc3d50175d110d9df5db89",
+      "purpose": "CURRENT_MORNING_TERMINAL_CANDIDATE: independent completion evidence; scope unchanged"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261017T120424Z_RUN_CLOSURE.md",
+      "blob": "9de85515762d611a65a555225a15c244c12ac2fa",
+      "purpose": "CURRENT_MORNING_RUN_CLOSURE: independent completion evidence; scope unchanged"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_HOT_SHEET_RECOVERY_QA_20261017T133946Z_AUDIT.md",
+      "blob": "d4b23ab90ff81ac7427a77c51c404487bf2f2725",
+      "purpose": "LATEST_RECOVERY_CONSUMER_QA: recovery dependency preflight correction; bounded scope; natural next use pending"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "blob": "26d8a6bb2426d4c2d1fbb3ce3c307a5889d20185",
+      "purpose": "CURRENT_DURABLE_ACTION_REGISTER:activefirst4plusTop10;deferred5-19WeeklyQAmanualmaintenance"
+    },
+    {
+      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
+      "blob": "a58839b8551554a4514afad5dbbf8ff34889115e",
+      "purpose": "ACTIVE_PERSISTENCE_PROCEDURE: recovery dependency preflight correction; bounded scope; natural next use pending"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK7_COMPLETE_MULTI_MARKET_REVIEW_20261017T155337Z.json",
+      "blob": "35d11b59ee76d1876060c869efd0950313657fa9",
+      "purpose": "CURRENT_COMPLETE_BETTING_REVIEW:40futuregames120dispositions;4spreads1ML0totalsnoparlay"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_NEBRASKA_RECONSIDERATION_20261017T155337Z.json",
+      "blob": "13c958d61aa34628d1e373ef55adfcc27725ce97",
+      "purpose": "CURRENT_IMMUTABLE_CONDITIONAL_REVIEW:rank1Nebraska;otherfourreviewrefsincurrentfullreviewandcanonicalrows"
+    },
+    {
+      "path": "evidence/operational/CFB_BETTING_PUBLICATION_AUDIT_20261017T155337Z.json",
+      "blob": "6512bdaedb3f13add39e014fea9365f7c8f9ed98",
+      "purpose": "CURRENT_PUBLICATION_AUDIT:fiveconditional62exactonce;notnaturalrunorbettingedgeproof"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_ROUTINE_V6_BACK_HALF_CANDIDATE_2026-09-30.md",
+      "blob": "a3de9737fd6047845dcf0e7888ec46f04e5e9fc1",
+      "purpose": "ACTIVE_TEST_ROUTINE_V6_CANDIDATE:completeuserdecisionnotjustcodeQA;v5productionunchanged"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md",
+      "blob": "e895b51e9e6a21505392f664286a3409fdb1f43f",
+      "purpose": "ACTIVE_WEEKLY_LEARNING_REVIEW_CONTROL:balanced net-objective impact across all CFB layers and QA; cross-week audit still pending"
+    },
+    {
+      "path": "evidence/operational/CFB_ESPN_DRAFTKINGS_BOARD_20261017T155337Z.md",
+      "blob": "9424e4fe5f94c2c5d8dbfca797bf995907ed3b97",
+      "purpose": "CURRENT_IDENTIFIED_ESPN_BOARD_CAPTURE:currentDraftKingspairs;onlypregameobservationsused"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_PRESENTATION_RECONCILIATION_20261017T155337Z_RUN_STARTED.md",
+      "blob": "ec5c6113e13b1e67b7160af76d111d96d7767be6",
+      "purpose": "CURRENT_MANUAL_REFRESH_START:fullmultimarketreconsiderationobservabilitynotcompletion"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_PENNSTATE_RECONSIDERATION_20261017T155337Z.json",
+      "blob": "04ce32fb780bdd211a9dddc8d72a1cca2f534793",
+      "purpose": "CURRENT_RANKED_RECONSIDERATION_REVIEW_2:immutablepriorPASSbinding;notexecution"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_HOUSTON_RECONSIDERATION_20261017T155337Z.json",
+      "blob": "99e2ecdb0cf55118b754cb7b3b921ca53e0e8054",
+      "purpose": "CURRENT_RANKED_RECONSIDERATION_REVIEW_3:immutablepriorPASSbinding;notexecution"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_AIRFORCE_RECONSIDERATION_20261017T155337Z.json",
+      "blob": "97932758aaea964d854575d0771cd346de625c4e",
+      "purpose": "CURRENT_RANKED_RECONSIDERATION_REVIEW_4:immutablepriorPASSbinding;notexecution"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_VIRGINIATECH_RECONSIDERATION_20261017T155337Z.json",
+      "blob": "73b4a52912bc14592c6cf697bf9a7a1ce77d9e20",
+      "purpose": "CURRENT_RANKED_RECONSIDERATION_REVIEW_5:immutablepriorPASSbinding;notexecution"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_HOT_SHEET_STABILITY_QA_20261017T202511Z_AUDIT.md",
+      "blob": "d2d5288b4283ca217b3a8ba03addba5a6025670e",
+      "purpose": "CURRENT_STABILIZATION_QA:589localtests;PR2pendingapproval;taskinstructionsinstalled;deferredbacklogpreserved"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_HOT_SHEET_INTEGRATION_QA_20261017T203033Z_AUDIT.md",
+      "blob": "16744e1288ecd2fc89f877858533ff8c33a395bc",
+      "purpose": "LATEST_INTEGRATION_QA:PR2mergedCIpass;existingconditionalrenewalreplay;SaturdaywindowcoverageOPEN"
+    },
+    {
+      "path": "evidence/scheduler_qa/cfb_conditional_renewal_protocol_replay_20261017.py",
+      "blob": "d8f1d5f55424e4e75bff5f1eb44824bc30e01d20",
+      "purpose": "SYNTHETIC_PROTOCOL_REPLAY:existingconditionalrenewal;notgenuinesourceoractualrecommendation"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-18_R1.md",
+      "blob": "89d646b66ad845ef1f00985ae55ef88cabba92b6",
+      "purpose": "CURRENT_WEEKLY_REVIEW: Week7 closure; not Week8 acceptance"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_ENGINE_HEALTH_20261019T222629Z_AUDIT.md",
+      "blob": "4d75378ddb045beaf66af5540de34f16e0771c71",
+      "purpose": "LATEST_HEALTH_AUDIT: incomplete Monday source/lineage boundary; historical debt retained"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261019T175959Z_RUN_CLOSURE.md",
+      "blob": "9a87f61513a905fd096f487d4b066a9d875fabaa",
+      "purpose": "LATEST_MONITOR_CLOSURE: Monday13CT incomplete; not replayed"
     }
   ]
 }
