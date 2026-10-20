@@ -52,6 +52,14 @@ class SavedRepositoryTests(unittest.TestCase):
             'CFB_MARKET_MONITOR_STATE.md','CFB_DECISION_WAIT_LEDGER.md',
             'CFB_EXECUTION_LEDGER.md','CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md',
             'CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json')]
+        # Historical regression inputs must not depend on the coming week's
+        # mutable canonical bytes; actual current selection is tested separately.
+        for index,name,digest in (
+            (1,'CFB_MARKET_MONITOR_STATE.md','87d735251e328226087daa9aa1519c22c702a762'),
+            (2,'CFB_DECISION_WAIT_LEDGER.md','65b87247a18060069402d9814692ab57ce97dcf3'),
+            (3,'CFB_EXECUTION_LEDGER.md','75caee4052e02ea7d2453d1d37fd3866e13ecc07'),
+            (4,'CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md','7a6defc4b93ff5c1752890130ff9bdaf50deb2e5')):
+            values[index]=historical(base/name,digest)
         with self.assertRaisesRegex(ValueError,'independent canonical-source'):
             saved.audit(*values,'2026-10-20T01:40:30Z')
         result=saved.audit_repository(*values,'2026-10-20T01:40:30Z',root)
