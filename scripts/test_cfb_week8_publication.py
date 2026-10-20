@@ -149,4 +149,25 @@ class Week8Tests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'unqualified conditional lineage'):
             conditional.validate({}, {}, {}, AT, '0'*40)
 
+    def test_future_week8_current_selection_through_existing_recovery_consumer(self):
+        from cfb_recovery_consumer_preflight import audit as preflight
+        from datetime import datetime,timezone
+        index=(ROOT/'evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md').read_text()
+        matches=list(re.finditer(r'^```cfb-frontier-json\n(.*?)^```',index,re.M|re.S))
+        record=json.loads(matches[-1][1]);now=datetime.now(timezone.utc).isoformat()
+        record['as_of_utc']=now;record['claims']=['SYNTHETIC FUTURE SELECTION TEST ONLY; no operational mutation']
+        op='evidence/operational/'
+        values={op+'CFB_MARKET_MONITOR_STATE.md':self.proposals[0],op+'CFB_DECISION_WAIT_LEDGER.md':self.proposals[1]}
+        sheet_path=op+'CFB_WEEK8_HOT_SHEET_2026-10-19_1305CT.md'
+        values[sheet_path]=self.sheet
+        for pointer in record['pointers']:
+            if pointer['purpose'].startswith('CURRENT_HOT_SHEET:'):pointer['purpose']='HISTORICAL_HOT_SHEET: retained Week7 fixture'
+            if pointer['path'] in values:pointer['blob']=gate.blob(values[pointer['path']])
+        record['pointers'].append({'path':sheet_path,'blob':gate.blob(self.sheet),'purpose':'CURRENT_HOT_SHEET: synthetic Week8 selector fixture'})
+        proposal=index+'\n```cfb-frontier-json\n'+json.dumps(record)+'\n```\n'
+        def loader(path):return values[path] if path in values else (ROOT/path).read_text()
+        result=preflight(proposal,loader,now)
+        self.assertEqual(result['sheet_path'],sheet_path)
+        self.assertEqual(result['verdict'],'PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY')
+
 if __name__=='__main__':unittest.main()
