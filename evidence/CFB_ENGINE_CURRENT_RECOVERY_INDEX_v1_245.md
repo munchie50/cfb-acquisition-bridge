@@ -10018,19 +10018,20 @@ This is the latest weekly-learning navigation block. For current recovery, its `
 ```
 
 
-## Week8 producer and consumer profile qualification — October19 CT
+## Week8 producer and consumer profile qualification — validated replacement
 
 ```cfb-frontier-json
 {
   "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
-  "as_of_utc": "2026-10-20T02:01:41.307526+00:00",
+  "as_of_utc": "2026-10-20T02:02:29.149189+00:00",
   "scope": "NAVIGATION_ONLY_NOT_AUTHORITY",
   "claims": [
     "CFB_WEEK8_PROFILE_QA_20261020T014819Z user-directed TestRoutinev6: explicit Week8 source/profile/bootstrap/compiler, independent original-field invariant and shared profile-aware render/readiness/saved audit BUILT/EXECUTED_REPLAY/VERIFIED_CI_AND_READBACK. Full existing GitHub39356325351 at760f2c6390d3e28dd949d76c67404bad09cf2d85 PASS611tests29groups;35new Week8 boundaries. No routine/scientific/Champion promotion.",
     "Authentic original56Week8 targets49predictions7exclusions/147numbers independently reconciled. All four retained Sunday/Monday captures normalize56games112teamrows. Complete first-source/Week7-prefix/full-week history preserved; original exclusion pipe escaped without reason change. Retained source plus synthetic decision replay is not fresh research/current recommendation or past run completion.",
     "Week8 compiler uses separate tags and registered exact original census; unknown week/profile/source/identity/state rejects. Current source must be genuinely fresh and decisions independently earned. Initial source-display kickoff stays RETAINED_UNVERIFIED; no invented kickoff/conditional review. Missing real evidence remains explicit incomplete work, never forcedPASS or downgrade to fit formatter.",
     "All four existing task prompt prefixes preserved and appended with Week8 route/ancestry guidance; exact readback proves every schedule/timezone/timing/enabled/ownership unchanged; fourenabled/canarydisabled. Monitor sole publisher, Evening downstream, Health/QA consumers. Natural producer adoption/current Week8 publication remains pending.",
-    "Current operational market/decision/execution/scorecard/selectedWeek7sheet/acceptedpredictionpointer/money unchanged. Week7 closed57PASS5CONDITIONAL; no new Week8 canonical row/pick/wager. Tuesday REFRESH generation and acceptance separate from original availability. Saturday21final-window gap and historical incomplete-cycle debt remainOPEN;BigNinepaused."
+    "Current operational market/decision/execution/scorecard/selectedWeek7sheet/acceptedpredictionpointer/money unchanged. Week7 closed57PASS5CONDITIONAL; no new Week8 canonical row/pick/wager. Tuesday REFRESH generation and acceptance separate from original availability. Saturday21final-window gap and historical incomplete-cycle debt remainOPEN;BigNinepaused.",
+    "Unaccepted malformed navigation append487320860b4e6c4ccfcfe735c8af62102cd48964/blobf041d0199eb8d77e11de23ba9e57723f7e1bd8e2 contained scripts paths in evidence-only pointers. This replacement rolls back only that unaccepted append against exact prior accepted88947ef6 base; bad bytes/commit/CI preserved as failed evidence. Prior accepted index history retained byte-for-byte. Complete proposal preflight required before write."
   ],
   "pointers": [
     {
@@ -10237,16 +10238,6 @@ This is the latest weekly-learning navigation block. For current recovery, its `
       "path": "evidence/CFB_WEEK8_ORIGINAL_LINEAGE_PUBLICATION_PROFILE_2026-10-20.md",
       "blob": "64562352da0fce99abece09602e4822d6cbc17d8",
       "purpose": "ACTIVE_WEEK8_PUBLICATION_PROFILE:qualified56identity original49plus7 source and proposal route;liveevidencepending"
-    },
-    {
-      "path": "scripts/cfb_week8_publication.py",
-      "blob": "bf468895f60e41d4fb528bf9efd3ce4ea0cea956",
-      "purpose": "WEEK8_COMPILER:proposalsonly;exactsourcebootstrap,history,independentlyearneddecisioninputs"
-    },
-    {
-      "path": "scripts/cfb_week8_frozen_field_invariant.py",
-      "blob": "cb62d347d03ad6815724891b349dfe46896fe4d4",
-      "purpose": "WEEK8_ORIGINAL_FIELD_INVARIANT:independentauthenticatedarchive147fields7exclusions;notpublicationacceptance"
     },
     {
       "path": "evidence/scheduler_qa/CFB_WEEK8_PROFILE_REPLAY_20261020.json",
