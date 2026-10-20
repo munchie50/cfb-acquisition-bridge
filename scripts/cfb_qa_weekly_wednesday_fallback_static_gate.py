@@ -6,7 +6,7 @@ wf = Path(".github/workflows/cfb_weekly_wednesday_fallback.yml").read_text()
 
 required = [
     "WEDNESDAY — bounded fallback",
-    '"event"=="schedule"',
+    'r["event"]=="schedule"',
     "target_date=(now-datetime.timedelta(days=1)).date()",
     't.date()==target_date',
     'r["status"]=="completed" and r["conclusion"]=="success"',
