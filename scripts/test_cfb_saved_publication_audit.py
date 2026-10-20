@@ -43,4 +43,21 @@ class SavedPublicationTests(unittest.TestCase):
             with self.assertRaises(ValueError): saved.audit(*args, '2026-10-17T00:00:00Z')
 
 
+class SavedRepositoryTests(unittest.TestCase):
+    def test_current_scorecard_can_advance_without_rewriting_saved_sheet(self):
+        root=Path('.')
+        base=root/'evidence/operational'
+        values=[(base/name).read_text() for name in (
+            'CFB_WEEK7_HOT_SHEET_2026-10-17_1105CT.md',
+            'CFB_MARKET_MONITOR_STATE.md','CFB_DECISION_WAIT_LEDGER.md',
+            'CFB_EXECUTION_LEDGER.md','CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md',
+            'CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json')]
+        with self.assertRaisesRegex(ValueError,'independent canonical-source'):
+            saved.audit(*values,'2026-10-20T01:40:30Z')
+        result=saved.audit_repository(*values,'2026-10-20T01:40:30Z',root)
+        self.assertEqual(result['current_operational_acceptance'],'NOT_CERTIFIED')
+        self.assertNotEqual(result['saved_canonical_blobs']['CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md'],saved.gate.blob(values[4]))
+        values[0]=values[0].replace('scorecard ', 'scorecard '+ '0'*40 +' BROKEN ')
+        with self.assertRaises(ValueError):saved.audit_repository(*values,'2026-10-20T01:40:30Z',root)
+
 if __name__ == '__main__': unittest.main()
