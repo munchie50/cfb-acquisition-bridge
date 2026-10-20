@@ -102,7 +102,8 @@ def reconsideration(row, previous, as_of):
         raise ValueError('reconsideration cannot reopen expired or extend saved cutoff')
 
 
-def validate(row, market_row, model, as_of):
+def validate(row, market_row, model, as_of, lineage_sha=gate.LINEAGE_SHA):
+    if lineage_sha not in (gate.profile_config('WEEK7')['lineage'],gate.profile_config('WEEK8')['lineage']):raise ValueError('unqualified conditional lineage profile')
     content, committed_at = load_review(row['review_ref'])
     r = json.loads(content, object_pairs_hook=gate.unique)
     gate.keys(r, ['schema', 'game_id', 'state', 'recorded_at_utc', 'original_lineage_blob',
@@ -117,7 +118,7 @@ def validate(row, market_row, model, as_of):
         gate.text(r['reconsideration']['reason'])
         if not re.fullmatch(r'[0-9a-f]{40}', r['reconsideration']['prior_row_blob']):
             raise ValueError('invalid reconsideration prior-row digest')
-    if r['game_id'] != row['game_id'] or r['original_lineage_blob'] != gate.LINEAGE_SHA:
+    if r['game_id'] != row['game_id'] or r['original_lineage_blob'] != lineage_sha:
         raise ValueError('review game/original-model lineage mismatch')
     if model['first_frozen_status'] != 'PREDICTION': raise ValueError('conditional review cannot replace original model exclusion')
     now = gate.clock(as_of)
@@ -169,8 +170,8 @@ def validate(row, market_row, model, as_of):
     return r, benchmark
 
 
-def display(row, market_row, model, as_of):
-    r, benchmark = validate(row, market_row, model, as_of)
+def display(row, market_row, model, as_of, lineage_sha=gate.LINEAGE_SHA):
+    r, benchmark = validate(row, market_row, model, as_of, lineage_sha)
     limit = r['acceptable_number']
     number = '' if limit['line'] is None else f"{limit['direction']} {limit['line']:g}; "
     conditions = f"{r['selection']} {r['market']}; {number}minimum price {limit['minimum_price']:+d}; valid until {r['planning_cutoff_utc']}; VENUE_CONFIRMATION_PENDING; not a placed bet"
