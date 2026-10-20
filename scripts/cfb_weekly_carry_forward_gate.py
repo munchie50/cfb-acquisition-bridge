@@ -7,6 +7,8 @@ LINEAGE_SHA='d80e26c398de48e7a386ad9a627fe44f4111ac45'
 HEALTH_SHA='6b1097abd4cb082a1e60e4d1f09573576d804001'
 CURRENT_SHEET_SHA='71006586178a1829c51f119fff872b6f981cd865'
 R2='evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md'
+WEEK7_REVIEW='evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-18_R1.md'
+WEEK7_REVIEW_SHA='89d646b66ad845ef1f00985ae55ef88cabba92b6'
 
 def blob(s):
     b=s.encode();return hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()
@@ -71,12 +73,18 @@ def bind(index,review,lineage,health,as_of):
     from cfb_recovery_navigation_reader import read
     pointers=read(index,as_of)['frontier']['pointers']
     selected=[p for p in pointers if p['purpose'].startswith('CURRENT_WEEKLY_REVIEW:')]
-    if len(selected)!=1 or selected[0]['path']!=R2 or selected[0]['blob']!=blob(review):
+    # Navigation may advance to this independently recovered weekly closure.
+    # The exact R1->R2 semantic audit above remains historical and unchanged.
+    supported={R2:blob(review), WEEK7_REVIEW:WEEK7_REVIEW_SHA}
+    if len(selected)!=1 or supported.get(selected[0]['path'])!=selected[0]['blob']:
         raise ValueError('missing/ambiguous/stale current weekly review selector')
+    historical=[p for p in pointers if p['path']==R2]
+    if len(historical)!=1 or historical[0]['blob']!=blob(review):
+        raise ValueError('missing/stale historical weekly correction')
     for path,text in [('evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json',lineage),('evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md',health)]:
         matches=[p for p in pointers if p['path']==path]
         if len(matches)!=1 or matches[0]['blob']!=blob(text):raise ValueError('stale weekly source pointer')
-    return {'current_weekly_review_blob':blob(review),'binding_scope':'navigation/source only, not operational acceptance'}
+    return {'current_weekly_review_blob':selected[0]['blob'],'binding_scope':'navigation/source only, not operational acceptance'}
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
