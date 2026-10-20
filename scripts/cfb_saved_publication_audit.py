@@ -11,16 +11,16 @@ import cfb_hot_sheet_readiness as readiness
 from cfb_neutral_publication_legacy_replay import historical
 
 
-def audit(sheet, market, decision, execution, scorecard, lineage, as_of):
+def audit(sheet, market, decision, execution, scorecard, lineage, as_of, profile='WEEK7'):
     boundaries = re.findall(r'^\*\*Publication boundary:\*\* (\S+)$', sheet, re.M)
     if len(boundaries) != 1: raise ValueError('exactly one saved publication boundary required')
     saved_at = boundaries[0]
     if gate.clock(saved_at) > gate.clock(as_of): raise ValueError('future saved publication')
-    gate.bootstrap(market, decision, lineage)
+    gate.bootstrap(market, decision, lineage, profile)
     # Whole-render equality binds cycle, boundary and every canonical digest;
     # changing the header to choose an easier clock cannot qualify the sheet.
-    integrity = gate.audit(sheet, market, decision, execution, scorecard, lineage, saved_at)
-    health = readiness.audit(market, decision, lineage, as_of)
+    integrity = gate.audit(sheet, market, decision, execution, scorecard, lineage, saved_at, profile)
+    health = readiness.audit(market, decision, lineage, as_of, profile)
     exceptions = []
     if health['elapsed_current_quote_game_ids']: exceptions.append('ELAPSED_CURRENT_QUOTES')
     if health['overdue_open_decision_game_ids']: exceptions.append('OVERDUE_OPEN_DECISIONS')
@@ -33,7 +33,7 @@ def audit(sheet, market, decision, execution, scorecard, lineage, as_of):
             'scope': 'CODE_QA_SAVED_VIEW_ONLY_NOT_FRESH_MARKET_OR_RUN_PASS'}
 
 
-def audit_repository(sheet, market, decision, execution, scorecard, lineage, as_of, root):
+def audit_repository(sheet, market, decision, execution, scorecard, lineage, as_of, root, profile='WEEK7'):
     """Recover exact declared saved inputs; evaluate live readiness separately."""
     refs = re.findall(r'^\*\*Canonical inputs:\*\* market ([0-9a-f]{40}); decision ([0-9a-f]{40}); execution ([0-9a-f]{40}); scorecard ([0-9a-f]{40})\.$', sheet, re.M)
     if len(refs) != 1: raise ValueError('unique complete saved canonical binding required')
@@ -45,8 +45,8 @@ def audit_repository(sheet, market, decision, execution, scorecard, lineage, as_
              for text, name, digest in zip(supplied, names, refs[0])]
     if any(gate.blob(text) != digest for text, digest in zip(saved, refs[0])):
         raise ValueError('saved canonical byte identity mismatch')
-    result = audit(sheet, *saved, lineage, as_of)
-    current = readiness.audit(market, decision, lineage, as_of)
+    result = audit(sheet, *saved, lineage, as_of, profile)
+    current = readiness.audit(market, decision, lineage, as_of, profile)
     result['saved_canonical_blobs'] = dict(zip(names, refs[0]))
     result['operational_exceptions'] = ([ 'ELAPSED_CURRENT_QUOTES' ] if current['elapsed_current_quote_game_ids'] else []) + ([ 'OVERDUE_OPEN_DECISIONS' ] if current['overdue_open_decision_game_ids'] else [])
     result['elapsed_current_quote_game_ids'] = current['elapsed_current_quote_game_ids']
@@ -59,11 +59,12 @@ if __name__ == '__main__':
     for key in ('sheet', 'market', 'decision', 'execution', 'scorecard', 'lineage'):
         p.add_argument('--' + key, type=Path, required=True)
     p.add_argument('--as-of', required=True)
+    p.add_argument('--profile', choices=('WEEK7','WEEK8'), default='WEEK7')
     p.add_argument('--recover-saved-inputs', action='store_true')
     p.add_argument('--repository-root', type=Path, default=Path('.'))
     args = p.parse_args()
     values = [getattr(args, key).read_text() for key in
               ('sheet', 'market', 'decision', 'execution', 'scorecard', 'lineage')]
-    result = (audit_repository(*values, args.as_of, args.repository_root) if args.recover_saved_inputs
-              else audit(*values, args.as_of))
+    result = (audit_repository(*values, args.as_of, args.repository_root, args.profile) if args.recover_saved_inputs
+              else audit(*values, args.as_of, args.profile))
     print(json.dumps(result, indent=2))
