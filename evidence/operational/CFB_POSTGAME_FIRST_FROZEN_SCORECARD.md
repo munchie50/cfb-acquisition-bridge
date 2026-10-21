@@ -312,3 +312,20 @@ Scientific effect: descriptive prospective evaluation only. Champion v1.193 unch
 
 No established Week 7 production or $20 sandbox execution was present in the canonical execution ledger at this scoring boundary, so no wager settlement was created. Descriptive outcome scoring does not mutate Champion v1.193, FIRST_FROZEN, accepted REFRESH, Challenger, TIME-HIDDEN, market, decision, or execution state.
 
+
+
+## Week 8 Tuesday FIRST_FROZEN outcomes — authoritative finals joined 2026-10-21
+
+**Cycle:** `CFB_MARKET_MONITOR_20261021T120721Z`  
+**Join rule:** The fresh CBS Week 8 response recovered at `2026-10-21T12:07:21Z` supplied final scores for the three Tuesday identities. Each row below joins only to the accepted September 26 original FIRST_FROZEN lineage recovered in `CFB_WEEK8_ORIGINAL_ANCESTRY_RECOVERY_20261020.json`. No market decision, recommendation, wager, execution, or prediction was reconstructed from an outcome.  
+**Outcome source:** https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-8/
+
+| Game ID | Game | Frozen home margin | Frozen total | Frozen home-win p | Final (away-home) | Actual home margin | Actual total | Margin error | Total error | SU correct |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 401871069 | Missouri State @ Delaware | +11.1 | 55.3 | 0.768 | 38-61 | +23 | 99 | +11.9 | +43.7 | 1 |
+| 401871055 | Middle Tennessee @ Florida International | +3.2 | 47.3 | 0.507 | 26-23 | -3 | 49 | -6.2 | +1.7 | 0 |
+| 401871092 | South Alabama @ Marshall | -4.4 | 50.2 | 0.420 | 13-20 | +7 | 33 | +11.4 | -17.2 | 0 |
+
+**Tuesday modeled summary:** 3/3 matched; unresolved 0; SU direction 1/3 (33.3%); margin MAE 9.83; total MAE 20.87.
+
+No established Week 8 production or $20 sandbox execution was present at this scoring boundary, so no wager settlement was created. Descriptive outcome scoring does not mutate Champion, FIRST_FROZEN, accepted REFRESH, Challenger, TIME-HIDDEN, market, decision, or execution state.
