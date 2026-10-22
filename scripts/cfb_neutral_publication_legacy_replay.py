@@ -13,12 +13,22 @@ CYCLE='CFB_MARKET_MONITOR_20261012T180232Z'
 CBS='https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/'
 DK='https://sportsbook.draftkings.com/leagues/football/ncaaf'
 def historical(path,digest):
-    raw=Path(path).read_text()
+    path=Path(path).resolve()
+    raw=path.read_text()
     if blob(raw)==digest:return raw
     # Match the immutable blob at its canonical Git history path before reading.
-    objects=subprocess.run(['git','rev-list','--objects','--all','--',str(path)],check=True,capture_output=True,text=True).stdout.splitlines()
-    if digest+' '+str(path) not in objects:raise ValueError('historical canonical source ancestry not recovered')
-    result=subprocess.run(['git','cat-file','blob',digest],check=True,capture_output=True).stdout.decode()
+    # Git prints repository-relative object names even for an absolute pathspec.
+    # Qualify both the history query and comparison in that same namespace.
+    try:
+        root=Path(subprocess.run(['git','-C',str(path.parent),'rev-parse','--show-toplevel'],
+                                check=True,capture_output=True,text=True).stdout.strip()).resolve()
+        canonical=path.relative_to(root).as_posix()
+        objects=subprocess.run(['git','-C',str(root),'rev-list','--objects','--all','--',canonical],
+                               check=True,capture_output=True,text=True).stdout.splitlines()
+    except (subprocess.CalledProcessError,ValueError) as exc:
+        raise ValueError('historical canonical source ancestry not recovered') from exc
+    if digest+' '+canonical not in objects:raise ValueError('historical canonical source ancestry not recovered')
+    result=subprocess.run(['git','-C',str(root),'cat-file','blob',digest],check=True,capture_output=True).stdout.decode()
     if blob(result)!=digest:raise ValueError('historical blob mismatch')
     return result
 def cells(l):return [v.strip() for v in l.strip('|').split('|')]
