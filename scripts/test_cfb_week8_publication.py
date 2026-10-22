@@ -149,6 +149,96 @@ class Week8Tests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'unqualified conditional lineage'):
             conditional.validate({}, {}, {}, AT, '0'*40)
 
+    def recovery(self, **kw):
+        """Authentic retained response, explicit simulated clocks/decisions only."""
+        at='2026-10-22T18:30:00Z';by='2026-10-22T18:29:00Z'
+        capture=(ROOT/'evidence/operational/CFB_CBS_WEEK8_CURRENT_RESPONSE_20261022T180321Z.md').read_text()
+        parsed=week.board(capture,self.lineage,by)
+        rows=copy.deepcopy(self.rows)
+        for row in rows:
+            if row['game_id'] in week.RECOVERY_GAPS:
+                row.update(state=week.GAP_STATE,reason='SYNTHETIC QA gap recognition; no earlier pre-event decision exists',
+                           reconciliation_utc=None,planning_cutoff_utc=None)
+        args=dict(market=self.market,decision=self.decision,capture=capture,lineage=self.lineage,
+                  cycle='CFB_PRESENTATION_RECONCILIATION_20261022T182900Z',as_of=at,recovered_by=by,
+                  decision_rows=rows,recovery_authority=week.RECOVERY_AUTHORITY)
+        args.update(kw)
+        return week.compile(**args),args
+
+    def test_recovery_preserves_all56_and_four_honest_gaps(self):
+        proposals,args=self.recovery()
+        parsed=gate.inputs(*proposals,self.lineage,args['as_of'],'WEEK8')
+        self.assertEqual(len(parsed[4]),56)
+        self.assertEqual({gid for gid,r in parsed[4].items() if r['state']==week.GAP_STATE},week.RECOVERY_GAPS)
+        for gid in week.RECOVERY_GAPS:
+            self.assertIsNone(parsed[3][gid]['current'])
+            self.assertEqual(parsed[4][gid]['state_recorded_at_utc'],args['as_of'])
+        self.assertTrue(proposals[0].startswith(self.market));self.assertTrue(proposals[1].startswith(self.decision))
+
+    def test_recovery_renderer_and_readiness_never_call_gap_pass(self):
+        import cfb_hot_sheet_readiness as readiness
+        from cfb_week8_frozen_field_invariant import audit
+        proposals,args=self.recovery()
+        sheet=gate.render(*proposals,'execution','scorecard',self.lineage,args['as_of'],'WEEK8')
+        self.assertEqual(sheet.count('MISSED PRE-EVENT DECISION'),4)
+        self.assertIn('**Primary section:** THURSDAY',sheet)
+        self.assertNotIn('historical PASS',sheet)
+        r=readiness.audit(*proposals,self.lineage,args['as_of'],'WEEK8')
+        self.assertEqual(r['historical_gaps'],4);self.assertEqual(r['preserved_pass'],0)
+        self.assertFalse(week.RECOVERY_GAPS & set(r['review_required_game_ids']))
+        self.assertEqual(len(r['review_required_game_ids']),52)
+        self.assertEqual(audit(sheet,self.lineage,Path(os.environ['CFB_ACCEPTED_FREEZE_ARCHIVE']))['numeric_fields'],147)
+
+    def test_recovery_without_exact_authority_still_rejects(self):
+        for authority in (None,'0'*40):
+            with self.subTest(authority=authority),self.assertRaises(ValueError):self.recovery(recovery_authority=authority)
+
+    def test_recovery_cannot_invent_pass_in_missed_history(self):
+        _,args=self.recovery()
+        row=next(r for r in args['decision_rows'] if r['game_id'] in week.RECOVERY_GAPS)
+        row['state']='PASS'
+        with self.assertRaises(ValueError):week.compile(**args)
+
+    def test_recovery_cannot_add_a_gap_for_future_game(self):
+        _,args=self.recovery()
+        row=next(r for r in args['decision_rows'] if r['game_id'] not in week.RECOVERY_GAPS)
+        row.update(state=week.GAP_STATE,reconciliation_utc=None,planning_cutoff_utc=None)
+        with self.assertRaises(ValueError):week.compile(**args)
+
+    def test_recovery_cannot_claim_limit_or_backdate_gap(self):
+        _,args=self.recovery()
+        for key,value in (('acceptable_number',{}),('planning_cutoff_utc','2026-10-22T18:00:00Z')):
+            changed=copy.deepcopy(args)
+            next(r for r in changed['decision_rows'] if r['game_id'] in week.RECOVERY_GAPS)[key]=value
+            with self.subTest(key=key),self.assertRaises(ValueError):week.compile(**changed)
+        with self.assertRaises(ValueError):self.recovery(as_of='2026-10-22T18:07:00Z',recovered_by='2026-10-22T18:06:00Z',cycle='CFB_PRESENTATION_RECONCILIATION_20261022T180600Z')
+
+    def test_recovery_gap_cannot_be_rewritten_or_reopened(self):
+        proposals,args=self.recovery()
+        args.update(market=proposals[0],decision=proposals[1],as_of='2026-10-22T18:35:00Z',
+                    recovered_by='2026-10-22T18:34:00Z',cycle='CFB_PRESENTATION_RECONCILIATION_20261022T183400Z',recovery_authority=None)
+        second=week.compile(**args)
+        week.bootstrap_check(*second,self.lineage)
+        for key,value in (('reason','rewritten missing history'),('state','PASS')):
+            changed=copy.deepcopy(args)
+            next(r for r in changed['decision_rows'] if r['game_id'] in week.RECOVERY_GAPS)[key]=value
+            with self.subTest(key=key),self.assertRaises(ValueError):week.compile(**changed)
+
+    def test_recovery_cannot_reset_stream_or_expand_after_another_kickoff(self):
+        proposals,args=self.recovery()
+        args.update(market=proposals[0],decision=proposals[1])
+        with self.assertRaisesRegex(ValueError,'initial-only'):week.compile(**args)
+        with self.assertRaises(ValueError):self.recovery(as_of='2026-10-22T23:01:00Z',
+            recovered_by='2026-10-22T23:00:01Z',cycle='CFB_PRESENTATION_RECONCILIATION_20261022T230000Z')
+
+    def test_recovery_declaration_and_intermediate_gap_cannot_disappear(self):
+        proposals,args=self.recovery()
+        with self.assertRaises(ValueError):gate.inputs(proposals[0].replace(week.RECOVERY_AUTHORITY,'0'*40),proposals[1],self.lineage,args['as_of'],'WEEK8')
+        prefix,packet=week.first_packet(proposals[1],week.DECISION_TAG)
+        packet['rows']=[r for r in packet['rows'] if r['game_id'] not in week.RECOVERY_GAPS]
+        changed=prefix+week.packet(packet,week.DECISION_TAG).lstrip('\n')
+        with self.assertRaises(ValueError):gate.inputs(proposals[0],changed,self.lineage,args['as_of'],'WEEK8')
+
     def test_future_week8_current_selection_through_existing_recovery_consumer(self):
         from cfb_recovery_consumer_preflight import audit as preflight
         from datetime import datetime,timezone
