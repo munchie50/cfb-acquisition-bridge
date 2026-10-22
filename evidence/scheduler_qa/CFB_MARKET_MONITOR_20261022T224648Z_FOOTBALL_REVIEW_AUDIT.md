@@ -1,0 +1,39 @@
+# Week8 continuation — football first-pass coverage audit
+
+- cycle_id: CFB_MARKET_MONITOR_20261022T224648Z
+- checkpoint_utc: 2026-10-22T22:59:11Z
+- result: PARTIAL_FOOTBALL_PROGRESS_NOT_PRODUCTION_CATCHUP_COMPLETE
+- method: TestRoutinev6 candidate; ProductionRoutinev5 unchanged
+- parent_review: evidence/operational/CFB_WEEK8_RECOVERY_MULTI_MARKET_REVIEW_20261022T184034Z_R2.json / df5c31a8372e0441c4d50a929f43ff442ac797d6
+- intermediate20game_review: evidence/operational/CFB_WEEK8_RECOVERY_MULTI_MARKET_REVIEW_20261022T224648Z.json / 0d23e5d65d6ea4aa9d6f1a8ca521139a79017e58
+- current45game_review: evidence/operational/CFB_WEEK8_RECOVERY_MULTI_MARKET_REVIEW_20261022T224648Z_R2.json / e83c61b5c7dc6259a5d1031e7e9241277224a60a
+
+## Expected vs actual — earned scope
+
+Expected: continue the33eligible Saturday rows that were numerical-only, without rewriting the original twelve reviews or pretending a complete betting card exists. Actual:20afternoon rows saved/readback first, then13evening/night rows; all45eligible identities now have some partial material review and six distinct standard-market arguments/counterarguments. Syracuse-UNC is explicitly source-thin: verified youth/development evidence is not a complete current two-team matchup. Other cases also retain row-specific current-availability, opponent, weather, price and timing gaps. All45recommendation qualifications remain incomplete;0qualifiedpicks; no defensibleTop10. Alternate spreads/totals/team totals remain explicitly unpriced; no unsupported parlay joint probability or ticket.
+
+The new33rows are exactly the declared20afternoon+13evening identity set. Read-only assertions verify56ordered unique identities; originalmodelstrings; canonicalstates/reasons; kickoffqualifications; prior quotevalues; allpracticalcutofffields unchanged. Original12reviewrows exactly preserved and11gap/exclusionrows exactly preserved. All45partial rows have sixmarketbranches, ranking remains empty and no state change/EV/probability is asserted. Assertions passed on the local proposal. Eight existing recoveryconsumer-preflight boundary tests passed. Prior642test result is reusable historical code proof only; not a new642run this cycle. No production code changed. New complete navigation is validated before mutation and after independent readback; existing selected-publication GitHubCI is obtained separately before terminal claims.
+
+Both intermediate233718character and final261476character full-content independent GitHub readbacks matched their exact proposals and immutable blob identities above. No intermediate research artifact is a second HotSheet baseline. Canonical publication remains18:29:11Z with4HISTORICAL_GAP,9PASS,43INCONCLUSIVE; selectedsheetc34489568e920df6f65fb1005f2cebfa39b2be3b. Parent CBS18:20:28Z and DK18:29:28Z references are not renewed by later research clocks. A separately observed near-window four-side CBS spread excerpt remains only a mixed-book indication, not a complete fresh compiled board, book-updated time or executable offer.
+
+## Useful material findings and qualifications
+
+Illinois Houser broken hand/freshman replacement, MiamiOH two season-ending QB injuries/current third option, UCLA/Iowa recent replacement starts, ISU receiver attrition and several other current QB/front uncertainties oppose automatic frozen-model-gap plays. Buffalo, LaTech, KState and other matchup mechanisms are recorded alongside counterarguments; screens are not ranks. Large frozen/current-direction disagreements are explicitly unresolved rather than interpreted as certain value. NDSU-UNM defensive reputation does not itself create under value at an already low unchanged model/reference total. Tulane's six-turnover prior win is separated from sustainable offensive production. Secondary injury reports are dated/scoped, not silently promoted to final official health.
+
+Source-region controls caught Wisconsin preview17-10 versus direct UCLArecap17-7, an ambiguous239defense metric, a stale TexasState FridayOct24 label, Houston 'with-a-win' milestones and historical personnel. These are quarantined, not used to mutate frozen fields or invent current outcomes. A source headline/searchresult alone was not counted as final availability. Missing current source evidence is explicitly unresolved, not evidence a player is healthy.
+
+## Limits, failures and chronology
+
+Firecrawl credits were previously exhausted; ordinary web search/read fallback used. No access-wall bypass, paid service purchase or credential extraction. ESPN odds robot wall, NIU/GeorgiaState shells, redirected Boise preview and inaccessible Oklahoma PDF/Baylor preview constrained retrieval. Broader search and actual dated source reads recovered usable bounded alternatives; current two-team qualification remains partial. One attempted apply_patch used delete+add on the same local R2 path and was rejected before changes; a proper update succeeded, followed by independent data QA. No code correction or new framework was needed.
+
+This run began near Thursday kickoff and did not acquire enough evidence/real placement timing to reopen the two existing administrativePASS decisions. Retained source clocks and unknown practical cutoff remain explicit. Prior no-bet-for-now is not retrospectively relabeled an analytical no-edge finding. No historical decision, closing price, wager, money movement or result reconstructed. Later manual work never upgrades earlier scheduled incomplete cycles.
+
+Workspace maintenance removed the prior clone; current repository re-cloned from authoritativeGitHubmain. Old original/refresh archives were not reconstructed; no new source/model run made. Actual53pointer preflight passed at recovery. ScheduledHealth220928Zaudit remainsRUN_INCOMPLETE and separate; exact current audit blob3d93b38698d1aa4f3acd204cc3b4d89db6dde6a6 recovered. Its internal index174dcc/profile645623hash claims do not match independently recovered d59eab/4ee81Gitblobs at its named authorityhead. They also do not equal raw-byteSHA1 in the bounded check. Internal authority-binding mismatch is retained UNRECONCILED; do not infer root cause or treat that audit as independently verified pointer authority. Its actual file identity may be indexed without certifying those internal claims. No unrelated Health mutation or natural reliability promotion.
+
+Protected market9a3984a83a6475222e5758543beeaea4df599d19;decision54936676d43466dc03ff4925424c1f7a5a6b7217;execution75caee4052e02ea7d2453d1d37fd3866e13ecc07;money3aebcbdcc535479c29c31f18073cba09f59aab01;acceptedprediction467e21006cc51fcc46b9577d7f98f301f9e63f84;scorecardc9203836e0be102593a8eb7d508f7d8bd4c05bd2 unchanged locally; final remote guard/readbacks are separately required. Models,Champion,REFRESHacceptance,tasks and schedules unchanged.
+
+## Audit / Learn / Reconsider
+
+Benefit:33previous numerical-only games gained bounded first-pass material/all-standard-style coverage, leaving none numerical-only among45eligible identities; source-thin and contradictory facts exposed. Cost:45recommendation qualifications still incomplete, no qualifiedTop10/new canonical source publication, near-window usefulness unproved; source and timing limits persist. Net: positive breadth of football research, not completed production catch-up, stabilized natural delivery or financialgain. Disposition: prioritize specific current two-team gaps and price/line limits through existing controlled-Beta authority; ask user's actual placement window instead of inventing cutoff. No consensus/perfect-confidence/venue-confirmation prerequisite added to recommendation formation. Adjustment trigger: do not substitute review volume, passing formatter/tests or receipt count for timely usable user decisions.
+
+Next:resolve Syracuse-UNC source gap and other explicit row constraints; current paired prices/line limits, actual availability/weather and real placement timing. No new task,gate,model or betting quota.
