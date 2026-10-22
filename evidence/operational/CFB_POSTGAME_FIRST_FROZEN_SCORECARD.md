@@ -329,3 +329,16 @@ No established Week 7 production or $20 sandbox execution was present in the can
 **Tuesday modeled summary:** 3/3 matched; unresolved 0; SU direction 1/3 (33.3%); margin MAE 9.83; total MAE 20.87.
 
 No established Week 8 production or $20 sandbox execution was present at this scoring boundary, so no wager settlement was created. Descriptive outcome scoring does not mutate Champion, FIRST_FROZEN, accepted REFRESH, Challenger, TIME-HIDDEN, market, decision, or execution state.
+
+
+## Week 8 Wednesday FIRST_FROZEN outcome — authoritative final joined 2026-10-22
+
+**Cycle:** `CFB_MARKET_MONITOR_20261022T120427Z`  
+**Join rule:** Sam Houston Athletics' final was joined only to the accepted September 26 original FIRST_FROZEN row recovered in `CFB_WEEK8_ORIGINAL_ANCESTRY_RECOVERY_20261020.json`. No market decision, recommendation, wager, execution, or prediction was reconstructed from the outcome.  
+**Outcome source:** https://gobearkats.com/game-center/15542
+
+| Game ID | Game | Frozen home margin | Frozen total | Frozen home-win p | Final (away-home) | Actual home margin | Actual total | Margin error | Total error | SU correct |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 401871070 | New Mexico State @ Sam Houston | +13.8 | 53.8 | 0.786 | 30-24 | -6 | 54 | -19.8 | +0.2 | 0 |
+
+No established Week 8 production or $20 sandbox execution was present at this scoring boundary, so no wager settlement was created. Descriptive outcome scoring does not mutate Champion, FIRST_FROZEN, accepted REFRESH, Challenger, TIME-HIDDEN, market, decision, or execution state.
