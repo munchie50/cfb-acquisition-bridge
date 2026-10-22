@@ -1,0 +1,25 @@
+# Week8 football review continuation — R2 addendum
+
+- cycle_id: CFB_MARKET_MONITOR_20261022T184034Z
+- observed_review_checkpoint_utc: 2026-10-22T18:54:57Z
+- prior_audit: evidence/scheduler_qa/CFB_MARKET_MONITOR_20261022T184034Z_FOOTBALL_REVIEW_AUDIT.md
+- prior_audit_blob: 0e291a81355c0cc385bf45e7d8246204bbfdd375
+- current_review: evidence/operational/CFB_WEEK8_RECOVERY_MULTI_MARKET_REVIEW_20261022T184034Z_R2.json
+- current_review_blob_independently_read_back: df5c31a8372e0441c4d50a929f43ff442ac797d6
+- result: PARTIAL_RESEARCH_PROGRESS_NOT_PRODUCTION_CATCHUP_COMPLETE
+
+The user repeated the continuation direction while the six-game checkpoint was being verified. Continued within the same actual manual cycle rather than claiming another scheduled run. Added partial material reviews of LSU-Auburn, WVU-TCU, WMU-Toledo, Pitt-Miami, Rice-FAU and TexasTech-Cincinnati. The current review contains all56identities and twelve distinct material/all-standard-market reviews. Ten eligible games moved beyond the182720Z numerical-only screen during this cycle;33Saturdayafternoon/evening eligible games remain numerical-only. All twelve recommendation qualifications remain unfinished. No Top10, qualified bet, probability, EV, acceptable execution number or practical cutoff was invented.
+
+Specific useful findings: Pitt's recent freshman starter/multiple-QB usage means season offense cannot establish Saturday continuity; TCU defensive front/coverage counters WVU's offensive aggregate; Rice QB rushing and FAU's last-game run exposure give a mechanism for further dog research, but Rice offensive collapse and FAU receivers counter it. Frozen Cincinnati favorite versus retained Tech favorite is preserved as a research direction conflict, not used to force a Cincinnati selection. Official current preview/time evidence is captured without promoting canonical kickoff qualification. Historical2024Tech personnel and mismatched/changed homepage link IDs are not used as current matchup evidence. A Toledo chemical incident was separately verified through current news and flagged for official event-status follow-up; no safety clearance, cancellation, health/player impact or scoring adjustment is claimed.
+
+## Verified boundaries
+
+The complete existing local suite passed642tests in42.450seconds with the authenticated original/accepted-refresh archives. Separate read-only data assertions verify all56ordered identities, original model strings, canonical decisions/reasons, kickoff qualifications, old quote values and practical cutoff fields against the parent182720Z review. Exactly twelve rows gained partial material review; other44rows are exactly unchanged. All12 have six distinct standard market branches; derivatives are explicitly unpriced/not endorsed and parlays unqualified. No original exclusions or permanent gaps were changed. R2 full-content GitHub readback matched188596characters before the later clock-length-equivalent replacement and exact current saved content afterward; authoritative blob is the identity above. Code suite PASS is structural support, not certification of football selection quality or source freshness.
+
+Two JS producer attempts failed before writes: unsupported structuredClone and a missing state-field assignment. The successful producer explicitly reloaded the saved complete six-game JSON text, retained those six reviews and independently asserted12reviews before write. Earlier truncated-read failures remain in the prior audit. No code fix, new gate, framework, recurring task or schedule change was made.
+
+Canonical market9a3984a83a6475222e5758543beeaea4df599d19, decision54936676d43466dc03ff4925424c1f7a5a6b7217 and selectedsheetc34489568e920df6f65fb1005f2cebfa39b2be3b remain the18:29:11Z publication. Their quotes are not renewed by this research clock. Execution75caee4052e02ea7d2453d1d37fd3866e13ecc07, money3aebcbdcc535479c29c31f18073cba09f59aab01, acceptedprediction467e21006cc51fcc46b9577d7f98f301f9e63f84 and scorecardc9203836e0be102593a8eb7d508f7d8bd4c05bd2 remain unchanged. Final independent readbacks/navigation preflight and existing GitHub CI, if obtained, are recorded in the terminal/closure receipts rather than preclaimed.
+
+## Audit / Learn / Reconsider
+
+Benefit: twelve near-window cases now separate spread/ML/total mechanisms and counterarguments; ten advanced beyond numerical-only coverage. Cost: no newly qualified recommendation or fresh canonical publication;33materialreviews and12recommendationqualifications incomplete, plus retained historical debt. Net: bounded positive research progress, not complete production recovery or demonstrated financial gain. Disposition: continue20Saturdayafternoon then13evening material reviews; establish actual placement opportunity and reconcile current availability/weather/actual prices through the existing controlled-Beta publication path. No consensus/perfection prerequisite added. Adjustment trigger: technical/receipt-only work fails to deliver timely useful football decisions. ProductionRoutinev5/Champion unchanged; TestRoutinev6 remains candidate. Natural scheduled adoption/final-window reliability are still unproved.
