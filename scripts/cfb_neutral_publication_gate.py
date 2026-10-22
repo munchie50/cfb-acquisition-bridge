@@ -156,9 +156,14 @@ def quote(o):
     return ('away '+fmt(o['away_spread'])+' '+price(o['away_spread_price'])+', ML '+price(o['away_ml'])+'; home '+fmt(o['home_spread'])+' '+price(o['home_spread_price'])+', ML '+price(o['home_ml'])+'; o'+fmt(o['over_total'])+' '+price(o['over_price'])+' / u'+fmt(o['under_total'])+' '+price(o['under_price']))
 def source(o):return o['book']+(' single-book fallback' if o['source_type']=='IDENTIFIED_SINGLE_BOOK_FALLBACK' else ' mixed-book fallback, constituents unidentified')+(' response recovered by ' if o['retrieval_precision']=='RECOVERED_BY' else ' retrieved ')+o['retrieved_at']+' ('+o['retrieval_precision']+' precision) — '+quote(o)+'; offer-update UNKNOWN; execution UNVERIFIED; '+o['source_url']
 
-def state_evidence(row,packet,content,kickoff,now,decision_tag=DECISION_TAG):
+def state_evidence(row,packet,content,kickoff,now,decision_tag=DECISION_TAG,gaps=None):
     recorded=clock(row['state_recorded_at_utc']);proof=row['state_evidence']
     if recorded>clock(packet['as_of_utc']) or recorded>now:raise ValueError('future state evidence')
+    if row['state']=='HISTORICAL_GAP':
+        if gaps is None or row['game_id'] not in gaps['missing_decision_game_ids'] or row['state_recorded_at_utc']!=gaps['as_of_utc']:
+            raise ValueError('unqualified historical gap')
+        if kickoff is None or kickoff>recorded:raise ValueError('gap cannot replace a future decision')
+        return  # Recognition of a missing decision, explicitly not pre-event evidence.
     if proof==PASS_ANCESTOR:
         if blob(content[:PASS_ANCESTOR_CHARS])!=PASS_ANCESTOR:raise ValueError('historical decision ancestor missing/changed')
         if row['state']!='PASS' or HISTORICAL_PASS_TIMES.get(row['game_id'])!=row['state_recorded_at_utc']:raise ValueError('unqualified historical PASS evidence')
@@ -187,6 +192,13 @@ def inputs(market,decision,lineage,as_of,profile='WEEK7'):
     conditional=d['schema']==CONDITIONAL_DECISION_SCHEMA
     if weekly!=(d['schema'] in WEEKLY_DECISION_SCHEMAS):raise ValueError('market/decision schema profile mismatch')
     if (m['cycle_id'],m['as_of_utc'])!=(d['cycle_id'],d['as_of_utc']):raise ValueError('market/decision boundary mismatch')
+    gaps=None
+    if any(r.get('state')=='HISTORICAL_GAP' for r in d['rows']):
+        if profile!='WEEK8' or not weekly:raise ValueError('historical gap requires qualified Week8 recovery')
+        from cfb_week8_publication import bootstrap_check,recovery_context
+        bootstrap_check(market,decision,lineage)
+        gaps=recovery_context(market,decision,lineage)
+        if gaps is None:raise ValueError('historical gap requires recovery declaration')
     if conditional:
         # A later PASS or complete packet cannot conceal an invalid earlier
         # conditional review. Validate each V3 packet at its own paired source
@@ -206,11 +218,11 @@ def inputs(market,decision,lineage,as_of,profile='WEEK7'):
                 keys(row,['game_id','state','reason','reconciliation_utc','planning_cutoff_utc','cutoff_authority','acceptable_number','execution_window','state_recorded_at_utc','state_evidence','review_ref'])
                 source_row=sources[row['game_id']]
                 kick=clock(source_row['kickoff_utc']) if source_row['kickoff_utc'] else None
-                state_evidence(row,packet,decision,kick,clock(packet['as_of_utc']),decision_tag)
+                state_evidence(row,packet,decision,kick,clock(packet['as_of_utc']),decision_tag,gaps)
                 if row['state']=='CONDITIONAL':
                     from cfb_conditional_recommendation_profile import validate
                     validate(row,source_row,c[row['game_id']],packet['as_of_utc'],cfg['lineage'])
-                elif row['state'] not in ('PASS','INCONCLUSIVE') or row['review_ref'] is not None:
+                elif row['state'] not in (('PASS','INCONCLUSIVE','HISTORICAL_GAP') if gaps else ('PASS','INCONCLUSIVE')) or row['review_ref'] is not None:
                     raise ValueError('unsupported conditional history state/review')
                 else:
                     text(row['reason'])
@@ -256,7 +268,9 @@ def inputs(market,decision,lineage,as_of,profile='WEEK7'):
         keys(r,['game_id','state','reason','reconciliation_utc','planning_cutoff_utc','cutoff_authority','acceptable_number','execution_window']+(['state_recorded_at_utc','state_evidence'] if weekly else [])+(['review_ref'] if conditional else []))
         gid=r['game_id']
         if not isinstance(gid,str) or gid not in c or gid in dr:raise ValueError('unknown/duplicate decision identity')
-        if r['state'] not in (('INCONCLUSIVE','PASS','CONDITIONAL') if conditional else ('INCONCLUSIVE','PASS')):raise ValueError('unsupported actionable/WAIT decision; separate qualified profile required')
+        allowed=('INCONCLUSIVE','PASS','CONDITIONAL') if conditional else ('INCONCLUSIVE','PASS')
+        if gaps:allowed+=('HISTORICAL_GAP',)
+        if r['state'] not in allowed:raise ValueError('unsupported actionable/WAIT decision; separate qualified profile required')
         text(r['reason'])
         if r['state']!='CONDITIONAL':
             if r['cutoff_authority']!='UNVERIFIED' or r['acceptable_number'] is not None or r['execution_window'] is not None:raise ValueError('neutral schema cannot certify cutoff/number/execution')
@@ -265,7 +279,7 @@ def inputs(market,decision,lineage,as_of,profile='WEEK7'):
         if r['state']=='INCONCLUSIVE' and (deadline is None or deadline<=now):raise ValueError('missing/overdue INCONCLUSIVE reconciliation; prospective decision required')
         k=clock(mr[gid]['kickoff_utc']) if gid in mr and mr[gid]['kickoff_utc'] is not None else None
         if weekly:
-            state_evidence(r,d,decision,k,now,decision_tag)
+            state_evidence(r,d,decision,k,now,decision_tag,gaps)
         if r['state']=='CONDITIONAL':
             from cfb_conditional_recommendation_profile import validate
             validate(r,mr[gid],c[gid],as_of,cfg['lineage'])
@@ -289,7 +303,7 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
             section=day if day!='SATURDAY' else 'SATURDAY MORNING' if ct.hour<12 else 'SATURDAY AFTERNOON' if ct.hour<17 else 'SATURDAY EVENING/NIGHT'
             display=ct.strftime('%a %b %d %-I:%M %p CT')+(' [RETAINED_UNVERIFIED]' if x['kickoff_status']=='RETAINED_UNVERIFIED' else '')
         elapsed=kick is not None and clock(kick)<=clock(as_of)
-        if elapsed:display+=' [AT/PAST SAVED KICKOFF — historical PASS; no execution]'
+        if elapsed:display+=(' [MISSED PRE-EVENT DECISION — permanent history gap; no execution]' if y['state']=='HISTORICAL_GAP' else ' [AT/PAST SAVED KICKOFF — historical PASS; no execution]')
         roles='CONSENSUS_UNAVAILABLE; Caesars UNVERIFIED; '
         current=roles+(source(x['current']) if x['current'] else 'CURRENT QUOTE UNAVAILABLE'+('; historical retained '+source(x['retained']) if x['retained'] else ''))
         if m['schema']==WEEKLY_MARKET_SCHEMA and x['diagnostic'] is not None:
@@ -313,9 +327,11 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
         lines[2]='**Presentation schema:** CFB_WEEKLY_CONDITIONAL_PUBLICATION_V3'
         lines[5]='**Scope:** canonical conditional display from immutable prospective review; no verified venue offer, automatic bet or full-run acceptance.'
         lines[8]='**Decision summary:** '+str(sum(r['state']=='INCONCLUSIVE' for r in dr.values()))+' INCONCLUSIVE; '+str(sum(r['state']=='PASS' for r in dr.values()))+' PASS; '+str(sum(r['state']=='CONDITIONAL' for r in dr.values()))+' CONDITIONAL; venue confirmation separate; no recorded execution created.'
+    gap_count=sum(r['state']=='HISTORICAL_GAP' for r in dr.values())
+    if gap_count:lines+=['**Permanent coverage gaps:** '+str(gap_count)+' HISTORICAL_GAP; missing pre-event decisions, never PASS or recommendations. Remaining research and natural delivery are not certified by this display.','']
     section_order=SECTIONS
     if m['schema']==WEEKLY_MARKET_SCHEMA:
-        active=[s for s in SECTIONS if any(dr[gid]['state']!='PASS' for _,gid,_ in groups[s])]
+        active=[s for s in SECTIONS if any(dr[gid]['state'] not in ('PASS','HISTORICAL_GAP') for _,gid,_ in groups[s])]
         primary=active[0] if active else 'NONE'
         lines+=['**Primary section:** '+primary+' — '+('earliest open neutral decision section; saved kickoff qualification labels remain applicable' if active else 'no open neutral decisions; all governed games remain visible below'), '']
         section_order=active+[s for s in SECTIONS if s not in active]
