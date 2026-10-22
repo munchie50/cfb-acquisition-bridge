@@ -49,7 +49,7 @@ def review_window(decision, market, as_of):
     bounds = ([gate.clock(cutoff)] if cutoff else [])
     if qualified_kick:
         bounds.append(gate.clock(kick))
-    closed = bool(bounds) and min(bounds) <= now
+    closed = decision['state']=='HISTORICAL_GAP' or (bool(bounds) and min(bounds) <= now)
     issue = ('KICKOFF_REQUIRES_QUALIFICATION' if not qualified_kick else
              'PRACTICAL_CUTOFF_MISSING' if cutoff is None else None)
     disposition = ('PREGAME_WINDOW_CLOSED' if closed else
@@ -83,6 +83,11 @@ def audit(market, decision, lineage, as_of, profile='WEEK7'):
     for gid, model in census.items():
         row = decisions[gid]
         source = markets[gid]
+        if row['state']=='HISTORICAL_GAP':
+            rows.append({'game_id':gid,'state':'HISTORICAL_GAP',
+                         'recommendation_blockers':['PERMANENT_PRE_EVENT_HISTORY_GAP'],
+                         'disposition':'MISSING_HISTORY_NOT_A_PASS_OR_RECOMMENDATION'})
+            continue
         if source['current'] is not None and source['kickoff_utc'] is not None and gate.clock(source['kickoff_utc']) <= now:
             elapsed_current.append(gid)
         if row['state'] == 'INCONCLUSIVE' and gate.clock(row['reconciliation_utc']) <= now:
@@ -134,6 +139,7 @@ def audit(market, decision, lineage, as_of, profile='WEEK7'):
             'lineage_blob': gate.blob(lineage), 'games': len(rows),
             'open_games': sum(r['state'] == 'INCONCLUSIVE' for r in rows),
             'preserved_pass': sum(r['state'] == 'PASS' for r in rows),
+            'historical_gaps': sum(r['state'] == 'HISTORICAL_GAP' for r in rows),
             'conditional_recommendations': sum(r['state'] == 'CONDITIONAL' for r in rows),
             'recommendation_blocker_counts': dict(sorted(counts.items())),
             'caesars_required_for_recommendation': False,
