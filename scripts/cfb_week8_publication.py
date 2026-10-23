@@ -28,8 +28,8 @@ RETAINED=[
  ('20261019T180057Z','d4491d759b0ed0e8954344d2fa77a58682c35da4','2026-10-19T18:00:57Z')]
 
 
-def board(capture,lineage,recovered_by):
-    return normalize(capture,lineage,recovered_by,source_url=WEEK8_URL,profile=PROFILE)
+def board(capture,lineage,recovered_by,*,retained_elapsed_kickoffs=None):
+    return normalize(capture,lineage,recovered_by,source_url=WEEK8_URL,profile=PROFILE,retained_elapsed_kickoffs=retained_elapsed_kickoffs)
 
 
 def source_offer(game,at):
@@ -161,7 +161,6 @@ def compile(market,decision,capture,lineage,cycle,as_of,recovered_by,decision_ro
     """Create full append-only proposals; caller earns every decision/source fact."""
     now=gate.clock(as_of);source_at=gate.clock(recovered_by)
     if not 0<=(now-source_at).total_seconds()<=900:raise ValueError('fresh source must be recovered within fifteen minutes of proposal')
-    parsed=board(capture,lineage,recovered_by)
     prior=None
     if re.search(r'^```'+MARKET_TAG+r'$',market,re.M):
         if recovery_authority is not None:raise ValueError('recovery is initial-only; cannot reset a stream')
@@ -174,6 +173,7 @@ def compile(market,decision,capture,lineage,cycle,as_of,recovered_by,decision_ro
     else:
         if gate.blob(market)!=MARKET_PARENT or gate.blob(decision)!=DECISION_PARENT:
             raise ValueError('unqualified Week7-to-Week8 parent')
+        parsed=board(capture,lineage,recovered_by)
         elapsed=sorted(g['game_id'] for g in parsed['games'] if g['temporal_status']!='FUTURE_AT_CAPTURE')
         if elapsed and recovery_authority!=RECOVERY_AUTHORITY:raise ValueError('initial Week8 bootstrap cannot reconstruct elapsed decisions')
         if recovery_authority and set(elapsed)!=RECOVERY_GAPS:raise ValueError('recovery only covers the four declared missed identities')
@@ -186,6 +186,12 @@ def compile(market,decision,capture,lineage,cycle,as_of,recovered_by,decision_ro
         # packet adds a leading newline; preserve exact prior bytes as prefix.
         root=root.lstrip('\n')
         pm=market+root;pd=decision+root
+    # Compose exact retained identity/time evidence from the authenticated prior
+    # stream, never a source Final field or an invented new kickoff. Initial
+    # bootstrap still has no such authority and keeps the original rejection.
+    elapsed_context={gid:r['kickoff_utc'] for gid,r in rows.items()
+                     if prior is not None and r['kickoff_utc'] is not None and gate.clock(r['kickoff_utc'])<source_at}
+    parsed=board(capture,lineage,recovered_by,retained_elapsed_kickoffs=elapsed_context)
     for game in parsed['games']:
         row=rows[game['game_id']]
         if game['temporal_status']!='FUTURE_AT_CAPTURE':
