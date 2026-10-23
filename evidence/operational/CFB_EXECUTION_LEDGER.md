@@ -154,3 +154,40 @@ Additional actual stake $10.00; prior thirteen wagers/$43.45 plus two = fifteen 
 | CFB_OCT09-02 | Fresno State +7 | $5.00 | -113 | Boise State 38, Fresno State 31 | PUSH | $5.00 | $0.00 | Reuters: https://www.reuters.com/sports/top-25-roundup-south-carolina-hands-no-16-florida-second-straight-loss--flm-2026-10-10/ |
 
 **Settlement arithmetic:** $20.00 stake; $14.55 return; **-$5.45 net P/L**. No redemption/payment status is inferred. The prior “additional $20” ambiguity remains unresolved; no additional debit, capital credit, or budget assignment is booked.
+
+
+## October17 issued tickets — original intake October23 QA
+
+Run: CFB_BALANCED_EFFECTIVENESS_QA_20261023T163207Z. Observed intake recording clock 2026-10-23T16:44:40.998961+00:00. Original evidence: evidence/operational/CFB_OCT17_ORIGINAL_TICKET_INTAKE_2026-10-23.json at Git blob ebddadf7b10d6b2e7a0442aa282185d872500517. Nine distinct issued Caesars Sportsbook / Harrah's Columbus tickets, individually visually inspected and privately deduplicated, establish ACTUAL_REAL_MONEY executions. This corrects absent intake; records were not invented from recommendations or outcomes.
+
+| Execution ID | Issued date/time as printed | Game | Selection / market | Accepted line | American odds | Stake USD | Max payout printed USD | Receipt event time |
+|---|---|---|---|---|---|---|---|---|
+| CFB_OCT17-01 | 2026-10-17 13:26 | North Carolina at Duke | North Carolina / SPREAD | +3 | -110 | $5.00 | $9.55 | 2026-10-17 14:40 |
+| CFB_OCT17-02 | 2026-10-17 13:22 | Penn State at Michigan | Penn State / SPREAD | +6 | -110 | $5.00 | $9.55 | 2026-10-17 14:45 |
+| CFB_OCT17-03 | 2026-10-17 13:31 | Alabama at Tennessee | Tennessee / SPREAD | +7.5 | -110 | $2.50 | $4.75 | 2026-10-17 14:50 |
+| CFB_OCT17-04 | 2026-10-17 13:25 | Kentucky at Oklahoma | Oklahoma / SPREAD | -6.5 | -117 | $2.00 | $3.70 | 2026-10-17 18:45 |
+| CFB_OCT17-05 | 2026-10-17 13:24 | Nebraska at Oregon | Nebraska / SPREAD | +7.5 | -110 | $5.00 | $9.55 | 2026-10-17 18:05 |
+| CFB_OCT17-06 | 2026-10-17 13:23 | Oklahoma State at Houston | Houston / SPREAD | -4 | -112 | $5.00 | $9.45 | 2026-10-17 18:40 |
+| CFB_OCT17-07 | 2026-10-17 13:21 | Georgia Tech at Virginia Tech | Virginia Tech / SPREAD | -8.5 | -112 | $5.00 | $9.45 | 2026-10-17 14:40 |
+| CFB_OCT17-08 | 2026-10-17 13:20 | UNLV at Air Force | Air Force / MONEYLINE | N/A | +102 | $2.00 | $4.05 | 2026-10-17 14:40 |
+| CFB_OCT17-09 | 2026-10-17 13:29 | Missouri at Ole Miss | Ole Miss / SPREAD | -4 | -112 | $2.55 | $4.85 | 2026-10-17 14:45 |
+
+Common qualification: budget UNASSIGNED production/sandbox; receipt timezone UNSPECIFIED; NOT_LIVE_LABELLED does not certify pregame timing. Displayed event times do not replace independent kickoffs or extend cutoffs. No current offer, recommendation delivery/causal adoption, paid return, bank movement or CLV is inferred. All nine printed ticket identities are distinct and are not prior September26/October2/October9 tickets. Image source IDs/SHA256/size and Nebraska display-order qualification are retained in the manifest; raw serials/barcodes/QR/images excluded from repository. New stake $34.05; prior15/$53.45 plus9 =24 actual wagers/$87.50 cumulative historical stake. The money ledger funding reference remains its unchanged historical15-ticket snapshot, not a claim current total is15. No new funding/allocation or changed sandbox ceiling.
+
+### Derived Week7 final-score grades and saved recommendation comparison
+
+Sources: evidence/scheduler_qa/CFB_BALANCED_EFFECTIVENESS_QA_20261023T163207Z_RESULTS.json; immutable scorecard Git blob d210d8c51106ef393a23a4fb69c6fcdb219e3f16 and pre-event review Git blob 35d11b59ee76d1876060c869efd0950313657fa9. Complete individual references/rationales and reproducible arithmetic in evidence/scheduler_qa/CFB_BALANCED_EFFECTIVENESS_QA_20261023T163207Z_AUDIT.md.
+
+| Execution ID | Grade | Result return using printed payout | Result net | Historical recommendation comparison |
+|---|---|---|---|---|
+| CFB_OCT17-01 | WIN | $9.55 | $4.55 | OUTSIDE_FINAL_FIVE_RECOMMENDATIONS |
+| CFB_OCT17-02 | WIN | $9.55 | $4.55 | WITHIN_RECORDED_LIMITS |
+| CFB_OCT17-03 | WIN | $4.75 | $2.25 | OUTSIDE_FINAL_FIVE_RECOMMENDATIONS |
+| CFB_OCT17-04 | LOSS | $0.00 | $-2.00 | OUTSIDE_FINAL_FIVE_RECOMMENDATIONS |
+| CFB_OCT17-05 | WIN | $9.55 | $4.55 | WITHIN_RECORDED_LIMITS |
+| CFB_OCT17-06 | LOSS | $0.00 | $-5.00 | OUTSIDE_RECORDED_PRICE_LIMIT |
+| CFB_OCT17-07 | WIN | $9.45 | $4.45 | OUTSIDE_RECORDED_PRICE_LIMIT |
+| CFB_OCT17-08 | WIN | $4.05 | $2.05 | WITHIN_RECORDED_LIMITS |
+| CFB_OCT17-09 | WIN | $4.85 | $2.30 | OUTSIDE_FINAL_FIVE_RECOMMENDATIONS |
+
+Aggregate7WIN/2LOSS/0PUSH, $34.05 stake, $51.75 result return, +$17.70 result net using printed payouts and ordinary full-game grading. This is not verified book settlement/adjudication/redemption/payment or available cash. Printed cents are not silently replaced by theoretical odds arithmetic. Three within-limit tickets (Nebraska, Penn State, Air Force) graded3–0; VT/Houston prices-112 exceeded preserved-110 floors (1–1); four other tickets were outside final five (3–1). Receipt timezone/pre-execution/causal attribution remain UNVERIFIED. No historical decision is changed to match the actual ticket or its result; original five-card shadow4–1 remains a separate population. This prospective intake supersedes prior no-established-Week7-execution descriptions only from now onward. Historical weekly review bytes and its earlier ledger boundary remain intact.
