@@ -597,3 +597,28 @@ Next smallest useful QA output: revisit these few existing lessons at the next a
 Assessment conclusion: evidence-integrity learning has demonstrated benefits; repeatable operational follow-through and causal scientific/betting improvement remain incompletely established. Expected benefit of follow-up is clearer completion and less repeated repair; cost is bounded existing-evidence review, with net effect UNKNOWN until actual benefit is observed.
 
 No production/QA executable, model, rule, threshold, stake, money transaction, frozen prediction, task prompt, cadence, ownership, acceptance pointer or promotion is changed by this backlog registration. Any proposed implementation requires separate scope/evidence and applicable acceptance/user authorization. Persistence/readback of this action proves registration only.
+
+
+## October23 QA promotion tracking — S2_K1
+
+Action ID: CFB_QA_S2_K1_PROMOTION_TRACKING_20261023
+Status: OPEN / TRACKING REGISTERED; no advancement or promotion enacted.
+Owner: existing CFB Weekly Engine QA / authorized manual QA, within its current review cadence. User authorized this tracking entry to prevent forgotten promotion work while preserving consistency and low overhead. This is the single promotion-tracking entry for S2_K1 in this register; link supporting evidence rather than create a parallel ledger, dashboard or scheduled task.
+
+| Field | Current disposition |
+|---|---|
+| Current stage | Prospective-input acceptance. Historical outcome scoring is accepted as evidence; historical gains are mixed and justify further testing, not promotion. |
+| Blocker | Same-cutoff v4 source-context and target-baseline companions have not earned the required semantic acceptance at the current accepted weekly boundary. |
+| Next proof | Independently audit those companions under existing contracts; verify cutoff, raw-source identities, chronology, frozen mapping and completeness before any S2_K1 consumer execution. |
+| Advancement condition | Persisted/read-back applicable input acceptances permit the next authorized implementation/freeze stage only. Live prospective predictions must be genuinely frozen before their games/outcome evaluation; an expired boundary cannot be backfilled. |
+| Latest disposition | CONTINUE IN QA. October13 S0 acceptance is a completed dependency, not S2 acceptance or production permission. No promotion date or percent complete is established. |
+
+At each existing weekly QA review, explicitly revisit this entry: recover the latest accepted frontier, record a concise delta or justified no-change, and choose ADVANCE TO NEXT AUTHORIZED STAGE / CONTINUE OBSERVING / BLOCKED / PROPOSE PROMOTION / RETIRE as supported. A blocker must name the missing evidence and smallest useful next action. If evidence for the next stage is complete, assess advancement rather than leaving a generic “still in QA” status. Lack of progress, elapsed time or desire to close the item never lowers the evidence standard. Do not add equivalent tests or reporting solely to create activity.
+
+Before evaluating prospective results, verify that comparison and decision criteria are specified prospectively under the existing contracts; any missing advancement/rejection criteria remain an explicit QA design gap, not a threshold invented after results. Preserve the frozen k=1 design and compare exact common eligible games, declared weeks/history-depth slices, margin/total errors and win-probability metrics. Confirm outcome-scoring authority separately. Evidence may support further observation or retirement; no sample size, new threshold, model superiority or automatic promotion is asserted here.
+
+Promotion-readiness review requires adequate independently evaluated prospective evidence, applicable acceptance and explicit user authorization before production use. Ready for the next test, technically verified, scientifically accepted and production-authorized are distinct states. The historically named Challenger B is already the current Beta Production Champion under v1.222/v1.229; this entry concerns the separate S2_K1 candidate and does not reinstate the retired legacy model.
+
+Sources: CFB_QA_SANDBOX_CURRENT_CHECKPOINT_2026-09-28.md (October16 frontier append); CFB_QA_SANDBOX_OUTCOME_SCORING_ACCEPTANCE_2026-09-28.md; CFB_QA_SANDBOX_PROSPECTIVE_S2_K1_CONTINUATION_CONTRACT_2026-09-28.md; CFB_QA_PROSPECTIVE_S2_K1_CONSUMER_SPEC_2026-09-30.md; CFB_ENGINE_PRODUCTION_CHAMPION_NAMING_AUTHORITY_v1_222.md; CFB_ENGINE_BETA_PRODUCTION_MATURITY_CLASSIFICATION_v1_229.md. Resolve later accepted evidence before using this dated status.
+
+Benefit sought: prevent forgotten advancement decisions. Cost: one short update in the existing weekly review. Benefit remains unproved until actual review follow-through; avoid paperwork growth and promotion pressure. No new task, schedule/prompt change, gate, production/model/rule/stake change, acceptance-pointer advance, scientific execution or promotion is authorized by this tracking registration. Saved/read-back registration is not proof of unattended future adoption.
