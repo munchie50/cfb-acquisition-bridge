@@ -342,3 +342,20 @@ No established Week 8 production or $20 sandbox execution was present at this sc
 | 401871070 | New Mexico State @ Sam Houston | +13.8 | 53.8 | 0.786 | 30-24 | -6 | 54 | -19.8 | +0.2 | 0 |
 
 No established Week 8 production or $20 sandbox execution was present at this scoring boundary, so no wager settlement was created. Descriptive outcome scoring does not mutate Champion, FIRST_FROZEN, accepted REFRESH, Challenger, TIME-HIDDEN, market, decision, or execution state.
+
+
+## Week 8 Thursday FIRST_FROZEN outcomes — authoritative finals joined 2026-10-23
+
+**Cycle:** `CFB_MARKET_MONITOR_20261023T115519Z`  
+**Join rule:** Official school final-result pages were joined only to accepted September 26 original FIRST_FROZEN lineage recovered in `CFB_WEEK8_ORIGINAL_ANCESTRY_RECOVERY_20261020.json`. Liberty @ Kennesaw State remained the original `away_prior_pbp_missing` exclusion and was not scored. No market decision, recommendation, wager, execution, or prediction was reconstructed from an outcome.  
+**Outcome sources:** Memphis Athletics, https://gotigersgo.com/game-center/20061 ; Kennesaw State Athletics, https://ksuowls.com/news/2026/10/22/football-owls-fall-to-flames.aspx ; Appalachian State Athletics, https://appstatesports.com/boxscore.aspx?id=9919
+
+| Game ID | Game | Frozen home margin | Frozen total | Frozen home-win p | Final (away-home) | Actual home margin | Actual total | Margin error | Total error | SU correct |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 401862807 | East Carolina @ Memphis | +15.6 | 55.5 | 0.832 | 34-41 | +7 | 75 | -8.6 | +19.5 | 1 |
+| 401869845 | James Madison @ Appalachian State | -3.6 | 52.5 | 0.434 | 31-34 | +3 | 65 | +6.6 | +12.5 | 0 |
+
+**Thursday modeled summary:** 2/2 eligible rows matched; unresolved eligible joins 0; SU direction 1/2 (50.0%); margin MAE 7.60; total MAE 16.00.  
+**Excluded final retained without scoring:** `401871056` Liberty 34, Kennesaw State 6 — original FIRST_FROZEN exclusion `away_prior_pbp_missing`.
+
+No established Week 8 production or $20 sandbox execution was present at this scoring boundary, so no wager settlement was created. Descriptive outcome scoring does not mutate Champion, FIRST_FROZEN, accepted REFRESH, Challenger, TIME-HIDDEN, market, decision, or execution state.
