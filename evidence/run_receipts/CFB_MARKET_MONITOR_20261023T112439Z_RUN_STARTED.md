@@ -1,0 +1,3 @@
+# Manual seven-exception continuation — CFB_MARKET_MONITOR_20261023T112439Z
+
+TestRoutinev6candidate/Productionv5active. Actual clock11:24:39Z follows research/readiness boundary11:22:12Z. Baseline53b2158e5421f4cb66e79141f885229cc9f65a31:56games4historicalgaps42PASS7INCONCLUSIVE3CONDITIONAL,91-pointerpreflightPASS. Expected:finishseven independent current six-market decisions,earnimmutableprospective reviews for any newconditional,retainall3existinglimits/reviews/cutoffs,actualFriday13CTreconcile/19CTplacementcap,andfull56freshsource/compiler/persistence/readback/independentCI. No forcedPASS,thresholdchase,model/schema/task/funds change. Currentofficialreportwrappersremainunreadable;datedsecondaryevidencekeptatitsactualscope. RUN_STARTED notcompletion.
