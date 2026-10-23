@@ -359,3 +359,12 @@ No established Week 8 production or $20 sandbox execution was present at this sc
 **Excluded final retained without scoring:** `401871056` Liberty 34, Kennesaw State 6 — original FIRST_FROZEN exclusion `away_prior_pbp_missing`.
 
 No established Week 8 production or $20 sandbox execution was present at this scoring boundary, so no wager settlement was created. Descriptive outcome scoring does not mutate Champion, FIRST_FROZEN, accepted REFRESH, Challenger, TIME-HIDDEN, market, decision, or execution state.
+
+
+## October23 QA — Week7 summary reconciliation, original rows preserved
+
+Run CFB_BALANCED_EFFECTIVENESS_QA_20261023T163207Z; actual recording clock 2026-10-23T16:44:41.030630+00:00. Independent replay of immutable prior scorecard d210d8c51106ef393a23a4fb69c6fcdb219e3f16 and all51 unique Week7 modeled rows found that the existing SU-correct flags sum32, and an independent comparison of each saved frozen margin sign with its actual margin also gives32. Daily slices2+0+1+1+28=32. Therefore this append prospectively corrects the earlier complete-week summary31/51(60.8%) to32/51(62.7%) for MARGIN-DIRECTION accuracy only. No game row, frozen number, exclusion, final result or historical review is rewritten.
+
+Win-probability threshold classification is a different34/51 diagnostic from rounded displays; it is not margin direction or additional correct games. Existing rounded absolute-error rows yield marginMAE12.843137 and totalMAE13.398039. The latter supports reported13.40; published marginMAE12.89 is not independently reconciled to exact original archive precision in this audit, so it remains OPEN/EXACT_RECOMPUTATION_PENDING rather than silently replaced by a rounded-row aggregate. Home Brier from rounded probabilities is0.224284, consistent with reported0.224.
+
+Reproducible immutable-byte evidence: evidence/scheduler_qa/cfb_balanced_effectiveness_replay_20261023.py and evidence/scheduler_qa/CFB_BALANCED_EFFECTIVENESS_QA_20261023T163207Z_RESULTS.json. The original October18 review remains historical/current weekly learning output with this later explicit metric supplement; no weekly-selector replacement, model/routine/scientific promotion or fresh outcome acquisition.
