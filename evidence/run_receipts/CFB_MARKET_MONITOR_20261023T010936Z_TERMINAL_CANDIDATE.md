@@ -1,0 +1,18 @@
+# CFB Friday continuation — TERMINAL_CANDIDATE
+
+- cycle_id: CFB_MARKET_MONITOR_20261023T010936Z
+- terminal: RUN_INCOMPLETE
+- observed_verification_utc: 2026-10-23T01:14:30Z
+- substantive_result: four eligible Friday cases reconsidered; one AirForce spread EXPERIMENTAL_LEAN, zero qualified recommendations. No Top10/full-slate/catch-up completion.
+- real_user_constraint: Friday October23 19:00 America/Chicago = October24 00:00Z latest placement; no proof of earlier access. Friday18:00CT games need earlier access. Earlier research reconciliation obligations not extended. Saturday39must not be deferred to Saturday defaults after this cap.
+- review: evidence/operational/CFB_WEEK8_FRIDAY_REVIEW_20261023T010936Z.md / 9efc9bacf4516f5ea2df8652bd9bfe4ef9d691d5 / create_commit d6c9ce7605e8675f7a49623b1c679932a7fe6ccc. Full independent main readback exactly matched16281characters; separately pulled local Gitblob matches.
+- navigation: evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md / a830befb1bdf4c4703747bf6f06e6de052fbf84c / commit28be8da3a843104c0081fb0e04420d564b090fe6. Entire old879081character prefix preserved,58bindings independently pass before write and after complete remote readback/pull. Immediate current-SHA guard respected. Unique selected1330CTHotSheet unchanged.
+- local_tests: 8consumer boundary +33conditional review/profile tests PASS before write and repeated after pull; bounded4ID/56parent/actualCTconversion/5protected-surface assertions PASS. These are not completed football/price qualification.
+- independent_existing_CI: run39882764879/job120183791244 at28be8da3a843104c0081fb0e04420d564b090fe6 SUCCESS;44successful steps. Decoded86300-scale log content independently recovered;58currentbindings/selectedpublication/original49predictions+7exclusions/147numericfields validated. No new workflow/dispatch; no claim of a new642test local run.
+- protected_remote_and_local: market9a3984a83a6475222e5758543beeaea4df599d19;decision54936676d43466dc03ff4925424c1f7a5a6b7217;execution75caee4052e02ea7d2453d1d37fd3866e13ecc07;money3aebcbdcc535479c29c31f18073cba09f59aab01;HotSheetc34489568e920df6f65fb1005f2cebfa39b2be3b. Remote acceptedprediction467e21006cc51fcc46b9577d7f98f301f9e63f84 andscorecardc9203836e0be102593a8eb7d508f7d8bd4c05bd2 unchanged.
+
+Expected vs actual: substantive four-case research and real timing composition demonstrated at bounded manual scope. Szarka season-ending/actualMedders role recovered from official opponent report; NCState OL attrition and more expensive favorite juice, UMass backup scenario and UVA secondary depletion explicitly reconsidered. Laramie broad forecast not silently exact stadium wind. Complete view/source bindings passed; no qualified canonical source advance or natural scheduled success inferred.
+
+Open:39Saturdayrevalidations before actual trip cap; exact earlyFriday access/kickoff-minute qualification; supported identified paired benchmark interface/source acquisition and prospective V3 review/limits/cutoffs; zeroqualifiedcard; all original historical gaps/failures and natural scheduler reliability. New DKnetwork observations are primary-operator research, not automatically a source supported by the current conditional validator. No consensus/Caesars/perfect-confidence prerequisite imposed on qualitative judgment. No newcode/gate/task/schedule/model/science/routinepromotion/actualbet/money movement.
+
+TestRoutine benefit/cost/net/disposition/adjustment trigger embedded in review. Closure must independently read this candidate before a separate receipt. RUN_INCOMPLETE remains even after successful persistence and CI. Recoverable own local copies retained in gitstash/checkpoint backup; unrelated files preserved.
