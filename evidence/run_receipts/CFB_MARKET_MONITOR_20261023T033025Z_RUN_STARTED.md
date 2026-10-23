@@ -1,0 +1,3 @@
+# Manual prospective catch-up — CFB_MARKET_MONITOR_20261023T033025Z
+
+Actual continuation uses Test Routine v6 candidate; Production v5 unchanged. Baseline 28ea38a60e9b95c6bacc35ef6eccc36d6711e2b0: 56 games, 4 historical gaps,12 PASS,37 INCONCLUSIVE,3 CONDITIONAL. Expected: earn three independent Saturday dispositions, preserve three conditional limits, refresh the full board, use existing compiler, verify publication/recovery bindings and independent CI, then read back terminal candidate and closure. Source response already acquired through direct CBS HTML and primary team pages; no source result/Open columns used. No execution, money, model or schedule mutation. RUN_STARTED is not completion.
