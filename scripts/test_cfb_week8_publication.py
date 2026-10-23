@@ -9,6 +9,40 @@ from cfb_neutral_publication_legacy_replay import historical
 ROOT=Path(__file__).resolve().parents[1]
 AT='2026-10-19T18:05:00Z';BY='2026-10-19T18:00:57Z';CYCLE='CFB_PRESENTATION_RECONCILIATION_20261019T180400Z'
 
+class SameDayElapsedContextTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.raw=(ROOT/'evidence/operational/CFB_CBS_WEEK8_TEXT_TABLE_CAPTURE_20261023T023243Z.md').read_text()
+        cls.lineage=(ROOT/'evidence/scheduler_qa/CFB_WEEK8_ORIGINAL_ANCESTRY_RECOVERY_20261020.json').read_text()
+    def parse(self,context=None):
+        return week.board(self.raw,self.lineage,'2026-10-23T02:34:29Z',retained_elapsed_kickoffs=context)
+    def test_today_date_only_still_rejects_without_prior_elapsed_identity(self):
+        with self.assertRaises(ValueError):self.parse()
+    def test_known_elapsed_context_does_not_invent_source_kickoff(self):
+        r=self.parse({'401871056':'2026-10-22T23:00:00Z'})
+        self.assertEqual(r['coverage']['matched_games'],56)
+        self.assertEqual(r['coverage']['future_games'],49)
+        row=next(x for x in r['games'] if x['game_id']=='401871056')
+        self.assertIsNone(row['source_kickoff_utc'])
+        self.assertNotEqual(row['temporal_status'],'FUTURE_AT_CAPTURE')
+    def test_other_identity_cannot_resolve_missing_today_time(self):
+        with self.assertRaises(ValueError):self.parse({'401866448':'2026-10-22T23:00:00Z'})
+    def test_future_equal_or_wrong_local_date_context_rejected(self):
+        for stamp in ('2026-10-23T02:34:29Z','2026-10-24T23:00:00Z','2026-10-21T23:00:00Z'):
+            with self.subTest(stamp=stamp),self.assertRaises(ValueError):self.parse({'401871056':stamp})
+    def test_unknown_context_identity_rejected(self):
+        with self.assertRaises(ValueError):self.parse({'UNKNOWN':'2026-10-22T23:00:00Z'})
+    def test_actual_compiler_composes_prior_stream_and_preserves_elapsed_quote(self):
+        m=historical(ROOT/'evidence/operational/CFB_MARKET_MONITOR_STATE.md','8c8e98e6cb56d638da7420d42ca1fa07c7fc6691')
+        d=historical(ROOT/'evidence/operational/CFB_DECISION_WAIT_LEDGER.md','13709bb0eb6e8e9c0ebc115dda22130737b198a1')
+        old=gate.inputs(m,d,self.lineage,'2026-10-23T02:22:21Z','WEEK8')
+        rows=[{k:v for k,v in row.items() if k not in ('state_recorded_at_utc','state_evidence')} for row in old[4].values()]
+        pm,pd=week.compile(m,d,self.raw,self.lineage,'CFB_MARKET_MONITOR_20261023T023243Z','2026-10-23T02:36:00Z','2026-10-23T02:34:29Z',rows)
+        new=gate.inputs(pm,pd,self.lineage,'2026-10-23T02:36:00Z','WEEK8')
+        self.assertTrue(pm.startswith(m));self.assertTrue(pd.startswith(d))
+        self.assertEqual(old[3]['401871056'],new[3]['401871056'])
+        self.assertEqual(new[4]['401866448']['state'],'CONDITIONAL')
+
 class Week8Tests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
