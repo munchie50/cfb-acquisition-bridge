@@ -40,3 +40,7 @@ This contract formalizes the already-demonstrated 2026-09-29 closure/finalizatio
 
 ## Demonstration requirement
 Structural control is active immediately. LEARNED closure requires a future natural scheduled production cycle to use this two-phase pattern successfully. Until then, terminal-receipt semantics are CORRECTED / PROSPECTIVE DEMONSTRATION PENDING.
+
+## October23 Monitor handoff completion clarification
+
+For a Market Monitor that changes current operational surfaces or publishes a sheet, the applicable surfaces include the complete current recovery frontier. Before a RUN_PASS terminal candidate, execute the existing recovery consumer preflight against independent saved current bytes, confirm one current sheet bound to current decisions, and reconcile the existing selected-publication CI result. Include exact index/current-sheet blobs and integration evidence in the candidate. Before closure, verify that boundary remains current or name a concurrent change explicitly. An unfinished or failed required integration is RUN_INCOMPLETE even when individual file readbacks and local rendering passed. A scheduler-reported RUN_PASS and its durable receipt remain historical evidence, not proof of those omitted checks; correction is a separate append-only reconciliation. This clarifies existing dependencies and introduces no new task or scientific authority.
