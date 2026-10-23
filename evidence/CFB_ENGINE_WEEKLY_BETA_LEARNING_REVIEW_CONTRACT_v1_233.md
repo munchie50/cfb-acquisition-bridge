@@ -92,3 +92,10 @@ Preserve the original review, then append the corrected execution/outcome eviden
 Before publishing weekly summary metrics, reconcile the declared modeled denominator and aggregate with the actual eligible unique row contributions. Distinguish margin-sign direction from win-probability classification and rounded diagnostic rows from full-precision accepted outputs; preserve and explicitly correct inconsistent historical summaries rather than copying them forward. This applies the existing expected-versus-actual duty, not a new scoring formula.
 
 Demonstrated bounded source case: CFB_BALANCED_EFFECTIVENESS_QA_20261023T163207Z recovered nine original October17 tickets omitted from the ledger, with visual/source-hash reconciliation and exact immutable pre-event/final comparisons. Natural Weekly QA adoption remains DEMONSTRATION_PENDING. No model, routine, source hierarchy, schedule, allocation or risk-limit change.
+
+
+### October23 exact-source versus derived-row aggregate reconciliation
+
+A disagreement between a summary and saved row sums does not establish which layer is wrong. Before correcting prediction metrics, reconcile the affected row fields and population against the accepted ORIGINAL frozen artifact, preserving home-margin versus fair-spread signs and margin-direction versus win-probability classifiers. Use the accepted source's exact precision for aggregate errors; derived display arithmetic alone cannot overrule it. Preserve historical bad rows/claims and append the source-grounded correction. This applies existing source authority and expected-versus-actual verification; it is not a new betting prerequisite or scoring formula.
+
+Actual demonstration: exact51-row original replay isolated the Georgia Southern/Old Dominion daily sign/flag error and rejected the preliminary32/51 correction; original31/51 and reported MAEs/Brier were corroborated. Initial QA error and its corrected disposition remain visible. Natural weekly/scoring producer compliance remains pending.
