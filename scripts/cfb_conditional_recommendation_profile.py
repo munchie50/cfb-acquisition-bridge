@@ -7,7 +7,7 @@ import json
 import re
 import subprocess
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse
 import cfb_neutral_publication_gate as gate
 from cfb_consensus_reference import identity_key, reference
 
@@ -15,6 +15,7 @@ SCHEMA = 'CFB_WEEKLY_CONDITIONAL_DECISION_V3'
 REVIEW_SCHEMA = 'CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V1'
 RETRIEVAL_REVIEW_SCHEMA = 'CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2'
 RECONSIDERATION_REVIEW_SCHEMA = 'CFB_PROSPECTIVE_RECONSIDERATION_REVIEW_V3'
+AGGREGATE_REVIEW_SCHEMA = 'CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V4'
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -29,6 +30,8 @@ def market_reference(review, as_of):
     # benchmark. This never turns unknown update clocks into current consensus.
     allowed = ['game_id', 'market', 'selection', 'period', 'kickoff_utc',
                'kickoff_source_url', 'collection_start', 'collection_end', 'quotes', 'clock_semantics']
+    aggregate = review['schema'] == AGGREGATE_REVIEW_SCHEMA
+    if aggregate: allowed.append('source_kind')
     gate.keys(packet, allowed)
     if packet['clock_semantics'] not in ('EXACT_RETRIEVAL', 'RESPONSE_RECOVERED_BY'):
         raise ValueError('explicit retrieval-only clock semantics required')
@@ -40,10 +43,28 @@ def market_reference(review, as_of):
     operator = identity_key(q['operator'])
     if operator not in providers or identity_key(q['book']) != operator:
         raise ValueError('unqualified identified benchmark operator')
-    if (urlparse(q['source_url']).hostname not in providers[operator] or
-            urlparse(q['operator_evidence_url']).hostname != providers[operator][0]):
+    if aggregate:
+        source, link = map(urlparse, (q['source_url'], q['operator_evidence_url']))
+        query, linked = parse_qs(source.query, keep_blank_values=True), parse_qs(link.query, keep_blank_values=True)
+        if (packet['source_kind'] != 'DRAFTKINGS_PUBLIC_AGGREGATE_TABLE' or
+                operator != 'draftkings' or source.scheme != 'https' or
+                source.netloc != 'dknetwork.draftkings.com' or
+                source.path != '/draftkings-sportsbook-betting-splits/' or
+                set(query) != {'itm_content', 'tb_edate', 'tb_eg', 'tb_page'} or
+                any(len(v) != 1 for v in query.values()) or
+                query.get('itm_content') != ['NCAA Football'] or
+                query.get('tb_edate') != ['n30days'] or
+                query.get('tb_eg') != ['87637'] or
+                not re.fullmatch(r'[1-9]\d*', query.get('tb_page', [''])[0]) or
+                link.scheme != 'https' or link.netloc != providers[operator][0] or
+                not re.fullmatch(r'/event/(?:[^/]+/)?\d+', link.path) or
+                linked.get('dkinternal_referrer_source') != ['dknetwork'] or
+                len(linked.get('outcomes', [])) != 1 or not linked['outcomes'][0]):
+            raise ValueError('unqualified public aggregate table/source-selection link')
+    elif (urlparse(q['source_url']).hostname not in providers[operator] or
+              urlparse(q['operator_evidence_url']).hostname != providers[operator][0]):
         raise ValueError('identified benchmark source/operator evidence mismatch')
-    base = {k: v for k, v in packet.items() if k != 'clock_semantics'}
+    base = {k: v for k, v in packet.items() if k not in ('clock_semantics', 'source_kind')}
     result = reference(base, as_of)
     if set(result['reasons']) - {'FEWER_THAN_THREE_INDEPENDENT_OPERATORS', 'OFFER_UPDATE_UNKNOWN'}:
         raise ValueError('unqualified retrieval-only source chronology')
@@ -51,6 +72,9 @@ def market_reference(review, as_of):
         raise ValueError('retrieval-only collection window exceeds fifteen minutes')
     result.update(status='IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK',
                   clock_semantics=packet['clock_semantics'], consensus='CONSENSUS_UNAVAILABLE')
+    if aggregate:
+        result.update(source_kind=packet['source_kind'],
+                      jurisdiction_scope='ALL_JURISDICTIONS_NOT_A_VENUE_OFFER')
     return result
 
 
@@ -112,7 +136,7 @@ def validate(row, market_row, model, as_of, lineage_sha=gate.LINEAGE_SHA):
                   'market_reference', 'acceptable_number', 'reconciliation_utc',
                   'planning_cutoff_utc', 'cutoff_basis', 'execution_window'] +
                   (['reconsideration'] if r.get('schema') == RECONSIDERATION_REVIEW_SCHEMA else []))
-    if r['schema'] not in (REVIEW_SCHEMA, RETRIEVAL_REVIEW_SCHEMA, RECONSIDERATION_REVIEW_SCHEMA) or r['state'] != 'CONDITIONAL': raise ValueError('unsupported recommendation review/state')
+    if r['schema'] not in (REVIEW_SCHEMA, RETRIEVAL_REVIEW_SCHEMA, RECONSIDERATION_REVIEW_SCHEMA, AGGREGATE_REVIEW_SCHEMA) or r['state'] != 'CONDITIONAL': raise ValueError('unsupported recommendation review/state')
     if r['schema'] == RECONSIDERATION_REVIEW_SCHEMA:
         gate.keys(r['reconsideration'], ['prior_row_blob', 'reason'])
         gate.text(r['reconsideration']['reason'])
@@ -181,6 +205,8 @@ def display(row, market_row, model, as_of, lineage_sha=gate.LINEAGE_SHA):
                    f"{benchmark['clock_semantics']}; boundary {r['market_reference']['collection_end']}; "
                    "offer-update UNKNOWN unless explicitly supplied; execution UNVERIFIED; "
                    "source truth independently reviewed, not certified by renderer")
+        if 'source_kind' in benchmark:
+            context += '; '+benchmark['source_kind']+'; '+benchmark['jurisdiction_scope']
     else:
         context = f"REVIEW-EVIDENCED non-Caesars reference: {benchmark['operator_count']} operators; points {benchmark['reference_points']}; dispersion {benchmark['points_range']}; boundary {r['market_reference']['collection_end']}; source truth independently reviewed, not certified by renderer"
     context += '; prices at reference line '+str(benchmark['exact_reference_line_price_range'])+'; '+benchmark['price_comparison']
