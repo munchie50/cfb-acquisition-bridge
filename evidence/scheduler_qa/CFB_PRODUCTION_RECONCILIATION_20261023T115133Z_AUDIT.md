@@ -1,0 +1,40 @@
+# Production evidence reconciliation — October23,2026
+
+Run CFB_PRODUCTION_RECONCILIATION_20261023T115133Z. Actual reconciliation clock 2026-10-23T11:52:56Z. Test Routine v6 candidate WAIT-to-SWEEP and expected-versus-actual reconciliation; Production v5 active. Scope: existing Health authority and Evening clock debt; no football source or decision renewal.
+
+## Health authority: exact correction established
+
+The October22 Health audit evidence/scheduler_qa/CFB_ENGINE_HEALTH_20261022T220928Z_AUDIT.md, blob 3d93b38698d1aa4f3acd204cc3b4d89db6dde6a6, declares authority head e76270e862cd8f294878cdde3c5f70bb7269d065. Independent GitHub Contents reads at that exact immutable ref and independent complete local Git object reads agree on BOTH actual bindings below. SHA-1 of raw bytes is also reported to distinguish digest algorithms. This corrects the retained uncertainty about the usable authority mapping; it cannot establish why the writer recorded different values.
+
+| Authority path | Recorded in Health | Actual Git blob at its named head | Result |
+|---|---|---|---|
+| evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md | 174dcc9f9a7ed3420c034329da6b9a30f76537a3 | d59eab10fedc5a96d94f98be0e5f0d1ec7fa740a | INTERNAL_DECLARATION_MISMATCH |
+| evidence/CFB_WEEK8_ORIGINAL_LINEAGE_PUBLICATION_PROFILE_2026-10-20.md | 64562352da0fce99abece09602e4822d6cbc17d8 | 4ee81ba5ea052364ec81109e0bea4877f7312af8 | INTERNAL_DECLARATION_MISMATCH |
+
+Neither recorded value equals raw-byte SHA-1 (40fb8b4d60f8cb48d6e8699a3ea245483602c3a2; 6f69e836dd620a7942be4dbfe7da0819ad99ef20). This is an incorrect internal evidence binding at the named ref. It is not evidence the accepted authority was missing or that the repository read path was denied. The original audit/terminal/closure remain byte-for-byte intact and RUN_INCOMPLETE. The corrected mapping is accepted for this reconciliation only; original claims cannot establish coverage, original readback or accepted pointer authority. Original payload construction/selection mechanism remains UNKNOWN. Current navigation already binds the genuine profile blob and its current index, so no canonical decision or prediction repair is needed.
+
+Disposition: CORRECTED_MAPPING_VERIFIED / HISTORICAL_DECLARATION_ERROR_RETAINED. Preserve the historical deficiency; replace repeated generic hash-unreconciled rediscovery with these exact values and this explicit limitation. Natural Health producer declaration compliance remains DEMONSTRATION_PENDING at today's existing flexible16:30CT invocation.
+
+## Evening clock: historical proof explicitly invalid
+
+Original preflight evidence/operational/CFB_EVENING_AVAILABILITY_20261023T011720Z_PREFLIGHT.md, blob95bb76386b86712c764d178aa32f0bd790921f4c, first saved in bf2afd7f432cfe4262aa733211e7121f81483e83. Independently fetched GitHub commit metadata and local immutable Git commit agree: commit clock 2026-10-22T20:23:10-05:00. Its field actual_as_of_utc is 2026-10-23T01:24:00Z, exactly 50 seconds later. Therefore the original preflight does not prove an observed runtime clock. It remains retained evidence of a claimed future clock. Runtime clock acquisition versus writer/commit-clock disagreement cannot be distinguished from the available trace; no narrower cause is asserted.
+
+The source recovered-by01:22Z and canonical input boundary01:24Z are separate labels. Later actual-clock replay demonstrated the exact final typed market/decision blobs9da9d59e4ca1295ef7f44f730fe0ef75d3ff76e6 and0e480fa11f26e63c9ece1923ea59524aafff5c67, as retained in CFB_MARKET_MONITOR_20261023T011631Z_AUDIT.md. That proves final handoff content at the later boundary, not the original preflight timing. Preserve the Evening author's RUN_PASS receipt/closure as reported; independent clock acceptance remains unverified and the later replay cannot upgrade it. No rewrite or retrospective cycle reconstruction.
+
+Disposition: HISTORICAL_CLOCK_PROOF_INCONSISTENT / FINAL_HANDOFF_CONTENT_SEPARATELY_REPRODUCED. Today's existing19:30CT Evening invocation is the natural next producer demonstration. A full qualifying natural run must use an actually observed preflight/publication/terminal clock and preserve exact outgoing bytes/readbacks. Current5conditionals/47PASS do not depend on accepting the erroneous original observed-clock declaration.
+
+## Producer correction and demonstration
+
+The existing persistence procedure evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md is already explicitly consumed by all four task prompts. A narrow appended clarification requires exact path/ref/Git-blob comparisons for internal authority declarations and runtime acquisition of observed clocks; input/source/recording clocks must retain their meanings. Existing software preflight verifies navigation pointers, not arbitrary internal audit prose. No new gate, task or framework is introduced; prompts and schedules are unchanged.
+
+Trigger: two retained mismatched Health authority claims and future-relative-to-commit Evening timing claim. Expected: compare actual immutable source/ref before accepting declarations; preserve false historical claims and avoid treating later successful content replay as original timing proof. Actual deterministic historical reconciliation rejected both wrong hashes, reproduced both genuine mappings, and exposed the50-second inconsistency. Independent GitHub immutable-ref/commit reads corroborated complete local object identities and times. Corrected procedure proposal retains every prior byte. Demonstration: bounded historical declaration verification DEMONSTRATED; recurring producer compliance DEMONSTRATION_PENDING. This test does not prove why the historical writer chose the bad values or eliminate future recurrence.
+
+## Existing task metadata and current user state
+
+Private task inventory independently shows exactly4enabled production tasks: Monitor07/13CT daily exact, Evening19:30CT Wednesday-Friday flexible, WeeklyQA09CT Saturday-Sunday exact, Health16:30CT daily flexible; all7diagnostic/retired tasks remain disabled. No automation mutation. Health invocation5cd4d5c9-01d0-832b-9aa0-d31c635ba843 startedOct22 22:09:27.915992Z/completed22:13:53.746244Z and reported RUN_INCOMPLETE. Evening invocation3ed55c60-a934-8323-b86a-ba58e5cf4e7f startedOct23 01:17:18.295624Z/completed01:29:54.802753Z and reported RUN_PASS; scheduler completion and reported status do not establish engine acceptance/delivery. Delivery status is UNKNOWN. No new natural Monitor is claimed before today's07CT due time.
+
+Current sheet evidence/operational/CFB_WEEK8_HOT_SHEET_2026-10-23_0632CT.md remains selected;56identities=4HISTORICAL_GAP47PASS0INCONCLUSIVE5CONDITIONAL. Current price/research clocks are not renewed. Auburn+7/-108,WVU+10.5/-105,AirForce-5.5/-105,Buffalo-3/-112,Cincinnati+11.5/-112 limits and all review refs/cutoffs unchanged. Friday13CT reconciliation and19CT latest placement cap retained; actual venue/personnel/weather confirmation still required. First access UNKNOWN. Money/execution/scorecard/model/Champion/BigNine pause unchanged. Historical missed/incomplete cycles,21unserved Week7 windows and4permanent Week8 gaps remain.
+
+Benefit: two repeatedly rediscovered evidence debts now have precise corrected mappings and retained historical dispositions; all existing producers receive the narrow prevention instruction through an already named procedure. Cost: bounded immutable reads and one procedure/navigation append; no repeated football or synthetic operational run. Net audit/recovery clarity improved; natural reliability and financial effect unproved. Keep the clarification; reconsider if it causes duplicate work or delays actual user decisions. Remaining fullcatchup: Top10shortfall/timelydelivery/natural reliability, exact transport prevention and authentic next producer proof. No manufactured extra opportunities or reliability claim.
+
+Complete proposed navigation preflight and post-write readback/CI are required separately before integrated closure. This audit records evidence reconciliation, not its own later persistence proof.
