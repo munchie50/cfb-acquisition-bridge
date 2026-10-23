@@ -4,6 +4,21 @@ import sys,json,hashlib
 from pathlib import Path
 import pandas as pd, numpy as np
 
+def opponent_residuals(no, rawo, bo):
+    """Frozen k=1 residual: zero-history uses its finite baseline and contributes 0."""
+    no, rawo, bo = (np.asarray(v, dtype=float) for v in (no, rawo, bo))
+    if (no.ndim != 1 or rawo.shape != no.shape or bo.shape != no.shape or
+            not np.isfinite(no).all() or (no < 0).any() or (no % 1 != 0).any() or
+            not np.isfinite(bo).all()):
+        raise ValueError("CONTEXT_NONFINITE_OR_INVALID_HISTORY")
+    positive = no > 0
+    if not np.isfinite(rawo[positive]).all():
+        raise ValueError("CONTEXT_NONFINITE_POSITIVE_HISTORY")
+    resid = np.zeros(len(no), dtype=float)
+    resid[positive] = (no[positive] / (no[positive] + 1.0) * rawo[positive] +
+                       1 / (no[positive] + 1.0) * bo[positive]) - bo[positive]
+    return resid
+
 targetsidep, targetledgerp, basep, ctxp, fitdir, outdir = map(Path,sys.argv[1:7])
 cutoff=pd.Timestamp(sys.argv[7]); outdir.mkdir(parents=True,exist_ok=True)
 assert cutoff.tz is not None
@@ -58,9 +73,10 @@ for r in J.itertuples(index=False):
             # Frozen k=1 opponent S1 residual: n_o/(n_o+1)*raw + 1/(n_o+1)*B - B
             no=z.opponent_qualified_prior_games.to_numpy(float)
             rawo=z["raw__"+pair].to_numpy(float); bo=z["baseline__"+pair].to_numpy(float)
-            if not (np.isfinite(no).all() and np.isfinite(rawo).all() and np.isfinite(bo).all()):
+            try:
+                resid=opponent_residuals(no, rawo, bo)
+            except ValueError:
                 badreason="CONTEXT_NONFINITE:"+f;break
-            resid=(no/(no+1.0)*rawo+1/(no+1.0)*bo)-bo
             # Paired opponent residual is added once under the frozen offense<->defense mapping.
             s2=s1+float(resid.mean())
         else:
