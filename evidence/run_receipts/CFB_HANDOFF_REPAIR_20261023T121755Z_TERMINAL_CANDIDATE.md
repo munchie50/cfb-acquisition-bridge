@@ -1,0 +1,15 @@
+# Terminal candidate — CFB_HANDOFF_REPAIR_20261023T121755Z
+
+Classification: RUN_PASS for bounded MANUAL_HANDOFF_REPAIR only. Full production catch-up and recurring natural reliability remain OPEN.
+
+Audit independently read back: evidence/scheduler_qa/CFB_HANDOFF_REPAIR_20261023T121755Z_AUDIT.md blob e3c7c291468d0e55dead9c7bd603eaba42823fe7 at commit5bd07d4764825acb43f2ff44c089d1ef270e41a0. Historical morning115519Z reportedRUN_PASS remains independently RUN_INCOMPLETE for its omitted integration; original candidate/closure unchanged.
+
+Complete recovery index proposal preserved all1231162prior bytes; added31467bytes. Proposal/outgoing complete Git blob05eb3c3b12c8335c0ddbd6ada44454d669f0273e,1262629UTF8bytes/1262393Unicodecharacters,SHA256e4cee5e94ad9d5ca44d12173d22c149e374f92b1fa60acb33690ff06b89d97d5. DeltaSHA2567d842cb858578cd1fcd46477740ebd63d605f5fcf22cd7b856709196cdadbed6. All106ordered12000character-maxchunks parsed and individually hashed at receiving orchestration, then complete outgoing argument hashed independently BEFORE update_file. Exact fresh baselinea4613c9ecb8a624c8452ccf22d34d26358e0e124 was independently fetched immediately before write. update_file accepted commit9db92db69ce899c471183a34e0154217ee8f134b with expected content SHA05eb3c3b12c8335c0ddbd6ada44454d669f0273e. Independent immutable-ref fetch returned matching blob; independent git fetch/pull recovered complete actual saved bytes and cmp matched complete local proposal. No retry or transport truncation occurred.
+
+Complete actual saved consumer preflight PASS101bindings. Exactly one selected current sheet evidence/operational/CFB_WEEK8_HOT_SHEET_2026-10-23_0700CT.md blob2259605a21a257165091b1880010a54e481f8570; current decision0f2d71d4db499539637379d4de8c289a54d95dc2; market4a3cc373207d6cabf4b7b5d81994a072d1590571; scorecardd210d8c51106ef393a23a4fb69c6fcdb219e3f16; execution75caee4052e02ea7d2453d1d37fd3866e13ecc07. Immutable original field check PASS56games49predictions7exclusions147values. Saved whole-view audit PASS exact declared historical scorecard inputs; no elapsed-current-quote/open-deadline exception at actual audit clock. Nine exact-transfer/append regression testsPASS.
+
+Existing selected-publication workflow39955045790 at exact commit9db92db69ce899c471183a34e0154217ee8f134b completedSUCCESS, independently fetched status and job details. Original failed workflow39952701305 remains failure; no rerun fabricated.
+
+Result: current handoff repaired and safe outgoing transfer/manual end-to-end integration DEMONSTRATED. Producer instruction installed through existing procedure/closure contract; future natural compliant completion still DEMONSTRATION_PENDING. No new source/recommendation clock, wager, model, FIRST_FROZEN, task or schedule. Five conditional limits and Friday13CT reconciliation/19CT placementcap unchanged. New direct-board changes discovered after repair are a separate research phase and must be reconciled before current bet guidance; this repair does not certify them.
+
+Candidate readback and separate closure required.
