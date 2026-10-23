@@ -178,6 +178,86 @@ class ConditionalTests(unittest.TestCase):
         self.assertIn('VENUE_CONFIRMATION_PENDING',sheet)
         self.assertNotIn('3 operators',sheet)
 
+    def aggregate_table_review(self):
+        # Hypothetical protocol fixture, never an actual offer or recommendation.
+        self.retrieval_only_review()
+        self.review['schema']='CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V4'
+        ref=self.review['market_reference']
+        ref['source_kind']='DRAFTKINGS_PUBLIC_AGGREGATE_TABLE'
+        ref['quotes'][0].update(
+            source_url='https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?itm_content=NCAA+Football&tb_edate=n30days&tb_eg=87637&tb_page=3',
+            operator_evidence_url='https://sportsbook.draftkings.com/event/12345?dkinternal_referrer_source=dknetwork&outcomes=fixture_away')
+
+    def test_versioned_aggregate_benchmark_renders_its_nonvenue_scope(self):
+        self.aggregate_table_review()
+        with self.mocked():
+            sheet=gate.render(*self.args());gate.audit(sheet,*self.args())
+        self.assertIn('DRAFTKINGS_PUBLIC_AGGREGATE_TABLE',sheet)
+        self.assertIn('ALL_JURISDICTIONS_NOT_A_VENUE_OFFER',sheet)
+        self.assertIn('CONSENSUS_UNAVAILABLE',sheet)
+        self.assertIn('offer-update UNKNOWN',sheet)
+        self.assertIn('VENUE_CONFIRMATION_PENDING',sheet)
+
+    def test_aggregate_host_is_not_silently_added_to_prior_review_versions(self):
+        for version in ('CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2','CFB_PROSPECTIVE_RECONSIDERATION_REVIEW_V3'):
+            self.setUp();self.aggregate_table_review()
+            self.review['schema']=version
+            self.review['market_reference'].pop('source_kind')
+            with self.assertRaisesRegex(ValueError,'source/operator evidence mismatch'):
+                profile.market_reference(self.review,AT)
+
+    def test_aggregate_source_kind_is_required_and_not_a_venue_claim(self):
+        for value in (None,'EXECUTION_CONFIRMED','DRAFTKINGS_LIVE_VENUE'):
+            self.setUp();self.aggregate_table_review()
+            if value is None:self.review['market_reference'].pop('source_kind')
+            else:self.review['market_reference']['source_kind']=value
+            self.reject()
+
+    def test_aggregate_source_does_not_accept_other_pages_or_sports(self):
+        for url in ('https://dknetwork.draftkings.com/other/',
+                    'https://dknetwork.draftkings.com.evil.test/draftkings-sportsbook-betting-splits/?itm_content=NCAA+Football&tb_eg=87637&tb_page=3',
+                    'http://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?itm_content=NCAA+Football&tb_eg=87637&tb_page=3',
+                    'https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?itm_content=NFL&tb_eg=87637&tb_page=3',
+                    'https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?itm_content=NCAA+Football&tb_eg=87637&tb_page=3&tb_page=4'):
+            self.setUp();self.aggregate_table_review()
+            self.review['market_reference']['quotes'][0]['source_url']=url
+            self.reject()
+
+    def test_aggregate_requires_observed_selection_link_not_generic_operator_home(self):
+        for url in ('https://sportsbook.draftkings.com/',
+                    'https://sportsbook.draftkings.com/event/12345',
+                    'https://sportsbook.draftkings.com/event/12345?outcomes=fixture',
+                    'https://example.org/event/12345?dkinternal_referrer_source=dknetwork&outcomes=fixture'):
+            self.setUp();self.aggregate_table_review()
+            self.review['market_reference']['quotes'][0]['operator_evidence_url']=url
+            self.reject()
+
+    def test_aggregate_rejects_duplicate_blank_query_values(self):
+        for field, suffix in (('source_url','&tb_page='),
+                              ('operator_evidence_url','&outcomes='),
+                              ('operator_evidence_url','&dkinternal_referrer_source=')):
+            self.setUp();self.aggregate_table_review()
+            self.review['market_reference']['quotes'][0][field]+=suffix
+            self.reject()
+
+    def test_aggregate_keeps_identity_maturity_and_clock_rejections(self):
+        self.aggregate_table_review();self.review['market_reference']['quotes'][0]['operator']='FanDuel';self.reject()
+        self.setUp();self.aggregate_table_review();self.review['maturity']='PRODUCTION_QUALIFIED';self.reject()
+        self.setUp();self.aggregate_table_review();self.review['market_reference']['quotes'][0]['offer_updated_at']='2026-10-16T00:00:00Z';self.reject()
+        self.setUp();self.aggregate_table_review();self.review['market_reference']['quotes'][0]['selection']='home';self.reject()
+        self.setUp();self.aggregate_table_review();self.review['market_reference']['quotes']*=2;self.reject()
+
+    def test_aggregate_still_requires_material_review_limits_and_future_kickoff(self):
+        self.aggregate_table_review();self.review['material_sources']=[];self.reject()
+        self.setUp();self.aggregate_table_review();self.review['acceptable_number']['minimum_price']=None;self.reject()
+        self.setUp();self.aggregate_table_review();self.source['kickoff_status']='RETAINED_UNVERIFIED';self.reject()
+
+    def test_aggregate_review_cannot_reopen_pass_without_existing_reconsideration(self):
+        prior=self.reconsideration_fixture();self.aggregate_table_review()
+        self.review.pop('reconsideration',None)
+        with self.mocked(),self.assertRaisesRegex(ValueError,'explicit reconsideration review'):
+            profile.reconsideration(self.target,prior,AT)
+
     def test_retrieval_only_profile_cannot_accept_unidentified_or_wrong_source(self):
         for change in ({'operator':'UNIDENTIFIED'},{'book':'Caesars','operator':'Caesars'},
                        {'source_url':'https://example.org/not-the-identified-book'},
