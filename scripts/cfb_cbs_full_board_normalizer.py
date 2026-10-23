@@ -39,7 +39,7 @@ def market(cell,kind):
     if abs(price)<100:raise ValueError('invalid American price')
     return {'availability':'DISPLAYED','line':line,'price':price,'side':side,'opaque_book_icon_id':book}
 
-def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='America/New_York',*,profile='WEEK7'):
+def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='America/New_York',*,profile='WEEK7',retained_elapsed_kickoffs=None):
     observed=at(recovered_by)
     profiles={'WEEK7':(URL,LINEAGE_SHA,62),'WEEK8':(WEEK8_URL,WEEK8_LINEAGE_SHA,56)}
     if profile not in profiles:raise ValueError('unqualified source profile')
@@ -48,6 +48,11 @@ def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='Amer
     if blob(lineage)!=digest:raise ValueError('unqualified original identity baseline')
     census=json.loads(lineage)['rows'];expected={(r['away_team'],r['home_team']):r['game_id'] for r in census}
     if len(expected)!=count:raise ValueError('identity baseline mismatch')
+    retained_elapsed_kickoffs={} if retained_elapsed_kickoffs is None else retained_elapsed_kickoffs
+    if not isinstance(retained_elapsed_kickoffs,dict) or set(retained_elapsed_kickoffs)-set(expected.values()):raise ValueError('unqualified retained elapsed identities')
+    if retained_elapsed_kickoffs and profile!='WEEK8':raise ValueError('unqualified retained elapsed context profile')
+    elapsed={gid:at(stamp) for gid,stamp in retained_elapsed_kickoffs.items()}
+    if any(kick>=observed for kick in elapsed.values()):raise ValueError('retained elapsed context must precede observation')
     aliases={**ALIASES,**({'New Mexico St.':'New Mexico State','Boise St.':'Boise State','Utah St.':'Utah State','Iowa St.':'Iowa State'} if profile=='WEEK8' else {})}
     result=[];pending=None;rows=[];all_team_rows=0
     def finish():
@@ -56,7 +61,14 @@ def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='Amer
         if len(rows)!=2:raise ValueError('partial game: exactly two team offer rows required')
         pair=tuple(x['team'] for x in rows)
         if pair not in expected:raise ValueError('unknown/reversed directed game identity '+str(pair))
-        kick,status=pending
+        kick,status=pending[:2]
+        if status=='SAME_DAY_DATE_ONLY_REQUIRES_RETAINED_CONTEXT':
+            prior=elapsed.get(expected[pair])
+            if prior is None or prior.astimezone(ZoneInfo(source_timezone)).date()!=pending[2]:
+                raise ValueError('unresolved nonpast source kickoff requires separate qualification')
+            # The prior stream proves elapsed identity only. Do not fabricate a
+            # timestamp as if the newly retrieved source had printed one.
+            status='PAST_SOURCE_DATE_ONLY_EXACT_KICKOFF_UNAVAILABLE'
         result.append({'game_id':expected[pair],'away_team':pair[0],'home_team':pair[1],'source_kickoff_utc':kick.isoformat().replace('+00:00','Z') if kick else None,'temporal_status':status,'team_offers':rows})
         pending=None;rows=[]
     for line in markdown.splitlines():
@@ -68,7 +80,10 @@ def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='Amer
             m=re.match(r'^(\w{3}) (\w{3}) (\d{1,2}),\s*(\d{1,2}:\d{2})(am|pm)',plain(c[0]),re.I)
             if not m:
                 date=datetime.strptime('2026 '+plain(c[0]),'%Y %a %b %d').date()
-                if date>=observed.astimezone(ZoneInfo(source_timezone)).date():raise ValueError('unresolved nonpast source kickoff requires separate qualification')
+                today=observed.astimezone(ZoneInfo(source_timezone)).date()
+                if date>today:raise ValueError('unresolved nonpast source kickoff requires separate qualification')
+                if date==today:
+                    pending=(None,'SAME_DAY_DATE_ONLY_REQUIRES_RETAINED_CONTEXT',date);continue
                 pending=(None,'PAST_SOURCE_DATE_ONLY_EXACT_KICKOFF_UNAVAILABLE');continue
             day,month,date,t,half=m.groups();local=datetime.strptime(f'2026 {month} {date} {t}{half}','%Y %b %d %I:%M%p').replace(tzinfo=ZoneInfo(source_timezone))
             if local.strftime('%a')!=day:raise ValueError('source weekday/date conflict')
