@@ -191,3 +191,25 @@ Sources: evidence/scheduler_qa/CFB_BALANCED_EFFECTIVENESS_QA_20261023T163207Z_RE
 | CFB_OCT17-09 | WIN | $4.85 | $2.30 | OUTSIDE_FINAL_FIVE_RECOMMENDATIONS |
 
 Aggregate7WIN/2LOSS/0PUSH, $34.05 stake, $51.75 result return, +$17.70 result net using printed payouts and ordinary full-game grading. This is not verified book settlement/adjudication/redemption/payment or available cash. Printed cents are not silently replaced by theoretical odds arithmetic. Three within-limit tickets (Nebraska, Penn State, Air Force) graded3–0; VT/Houston prices-112 exceeded preserved-110 floors (1–1); four other tickets were outside final five (3–1). Receipt timezone/pre-execution/causal attribution remain UNVERIFIED. No historical decision is changed to match the actual ticket or its result; original five-card shadow4–1 remains a separate population. This prospective intake supersedes prior no-established-Week7-execution descriptions only from now onward. Historical weekly review bytes and its earlier ledger boundary remain intact.
+
+
+## October23 issued tickets — canonical backlog integration
+
+Run: CFB_BACKLOG_20261023T231844Z. Source: evidence/operational/CFB_OCT23_ORIGINAL_TICKET_INTAKE_2026-10-23.json at 98d5f3fe20584e79856906b63d9b81f4d1812a54; private saved intake version 2. Eight distinct actual real-money spread tickets at Caesars Sportsbook / Harrah's Columbus. Historical deduplication: all prior 24 executions have earlier issue dates, no October23 rows exist at this fresh boundary, and the saved intake contains eight distinct private ticket identities. Raw images/serials excluded; original image-byte hash replay not performed here.
+
+| Execution ID | Issued date/time as printed | Game | Selection / market | Accepted line | American odds | Stake USD | Max win / payout printed USD | Receipt event time |
+|---|---|---|---|---|---|---|---|---|
+| CFB_OCT23-01 | 2026-10-23 15:47 | Air Force at Wyoming | Air Force / SPREAD | -5.5 | -110 | $5.00 | $4.55 / $9.55 | 2026-10-23 20:10 |
+| CFB_OCT23-02 | 2026-10-23 15:55 | NC State at Stanford | NC State / SPREAD | -7.5 | -107 | $3.00 | $2.80 / $5.80 | 2026-10-23 21:40 |
+| CFB_OCT23-03 | 2026-10-23 15:48 | LSU at Auburn | Auburn / SPREAD | +7.5 | -110 | $5.00 | $4.55 / $9.55 | 2026-10-24 11:10 |
+| CFB_OCT23-04 | 2026-10-23 15:51 | Texas Tech at Cincinnati | Cincinnati / SPREAD | +11.5 | -106 | $5.00 | $4.70 / $9.70 | 2026-10-24 11:05 |
+| CFB_OCT23-05 | 2026-10-23 15:52 | West Virginia at TCU | West Virginia / SPREAD | +10.5 | -108 | $5.00 | $4.65 / $9.65 | 2026-10-24 11:05 |
+| CFB_OCT23-06 | 2026-10-23 15:54 | Bowling Green at Buffalo | Buffalo / SPREAD | -3 | -115 | $5.00 | $4.35 / $9.35 | 2026-10-24 14:35 |
+| CFB_OCT23-07 | 2026-10-23 15:49 | Michigan State at UCLA | UCLA / SPREAD | -14.5 | -112 | $5.00 | $4.45 / $9.45 | 2026-10-24 14:35 |
+| CFB_OCT23-08 | 2026-10-23 15:56 | Ole Miss at Texas | Texas / SPREAD | -3 | -115 | $3.00 | $2.60 / $5.60 | 2026-10-24 18:40 |
+
+Common fields: ACTUAL_REAL_MONEY; budget UNASSIGNED production/sandbox; receipt timezone UNSPECIFIED. Printed issue precedes printed event for all eight; authoritative kickoff chronology and pregame execution are not independently certified. NOT_LIVE_LABELLED; do not mix with explicit Baylor LIVE_IN_GAME. No outcome, sportsbook settlement, paid return, redemption, causal recommendation attribution or CLV is established. Historical tickets are not current available offers. Preserve all recommendation limits and original decisions; separate comparison remains pending.
+
+Batch: 8 actual tickets / $36.00 stake / $32.65 printed maximum win / $68.65 printed maximum payout conditional on all eight winning. Prior24 / $87.50 plus8 / $36.00 =32 established actual wagers / $123.50 cumulative historical stake. This is an inventory count, not32 settled observations or complete lifetime history. User's recollection of eight last week versus nine distinct October17 tickets remains an unresolved count discrepancy; no existing tickets deleted or merged. No result assigned to the eight new tickets.
+
+The same private record establishes the complete current pot $61.30 = $25.30 voucher funds + these $36.00 open stakes at cost at the user's baseline. That snapshot is posted separately in the money ledger, not another wager debit/deposit/return. Historic funding and result-derived returns are not added again. No model input, market, recommendation, frozen prediction, stake rule, allocation ceiling or schedule changed.
