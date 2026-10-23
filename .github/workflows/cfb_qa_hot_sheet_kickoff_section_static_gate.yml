@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
     paths:
+      - 'scripts/cfb_planned_append_metadata.py'
+      - 'scripts/test_cfb_planned_append_metadata.py'
       - 'scripts/cfb_week8_publication.py'
       - 'scripts/test_cfb_week8_publication.py'
       - 'scripts/cfb_week8_frozen_field_invariant.py'
@@ -119,7 +121,9 @@ jobs:
       - name: Exercise confirmed funding deduplication and transaction-type boundaries
         run: python -m unittest discover -s scripts -p test_cfb_money_ledger_guard.py
       - name: Exercise complete recovery consumer dependency boundaries
-        run: python -m unittest discover -s scripts -p test_cfb_recovery_consumer_preflight.py
+        run: |
+          python -m unittest discover -s scripts -p test_cfb_recovery_consumer_preflight.py
+          python -m unittest discover -s scripts -p test_cfb_planned_append_metadata.py
       - name: Validate complete current recovery consumer bindings
         run: python scripts/cfb_recovery_consumer_preflight.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md
       - name: Validate selected money record and its historical execution snapshot
