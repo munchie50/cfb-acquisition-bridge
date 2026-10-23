@@ -1,0 +1,374 @@
+{
+  "verdict": "PASS_BOUNDED_ORIGINAL_TICKET_AND_HISTORICAL_COMPARISON_REPLAY",
+  "source_blobs": {
+    "evidence/operational/CFB_EXECUTION_LEDGER.md": "75caee4052e02ea7d2453d1d37fd3866e13ecc07",
+    "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md": "d210d8c51106ef393a23a4fb69c6fcdb219e3f16",
+    "evidence/operational/CFB_WEEK7_COMPLETE_MULTI_MARKET_REVIEW_20261017T155337Z.json": "35d11b59ee76d1876060c869efd0950313657fa9"
+  },
+  "rows": [
+    {
+      "execution_id": "CFB_OCT17-01",
+      "game_id": "401858266",
+      "game": "North Carolina @ Duke",
+      "selection": "North Carolina",
+      "market": "SPREAD",
+      "line": 3,
+      "american_odds": -110,
+      "stake_usd": "5.00",
+      "final_away_home": "24-20",
+      "selected_final_margin": 4,
+      "signed_grade_comparison": "7",
+      "final_score_grade": "WIN",
+      "printed_payout_based_result_return_usd": "9.55",
+      "printed_payout_based_result_net_usd": "4.55",
+      "saved_frozen_display_cushion": 0.5,
+      "frozen_display_cushion_scope": "ROUNDED_ORIGINAL_DISPLAY_NOT_EV_OR_RECOMMENDATION",
+      "recommendation_comparison": "OUTSIDE_FINAL_FIVE_RECOMMENDATIONS",
+      "comparison_detail": {
+        "side_state": "PASS",
+        "side_reason": "Dukefootballstrength supportsfavorite, but frozen-2.5 versus-3 offers no usefulmodelpricecushion; no forcedfavorite."
+      },
+      "causal_recommendation_attribution": "UNVERIFIED",
+      "book_settlement_redemption_payment": "UNVERIFIED",
+      "execution_chronology": "UNVERIFIED_RECEIPT_TIMEZONE"
+    },
+    {
+      "execution_id": "CFB_OCT17-02",
+      "game_id": "401858490",
+      "game": "Penn State @ Michigan",
+      "selection": "Penn State",
+      "market": "SPREAD",
+      "line": 6,
+      "american_odds": -110,
+      "stake_usd": "5.00",
+      "final_away_home": "18-21",
+      "selected_final_margin": -3,
+      "signed_grade_comparison": "3",
+      "final_score_grade": "WIN",
+      "printed_payout_based_result_return_usd": "9.55",
+      "printed_payout_based_result_net_usd": "4.55",
+      "saved_frozen_display_cushion": 9.9,
+      "frozen_display_cushion_scope": "ROUNDED_ORIGINAL_DISPLAY_NOT_EV_OR_RECOMMENDATION",
+      "recommendation_comparison": "WITHIN_RECORDED_LIMITS",
+      "comparison_detail": {
+        "review_ref": {
+          "path": "evidence/operational/recommendation_reviews/CFB_PENNSTATE_RECONSIDERATION_20261017T155337Z.json",
+          "commit": "bbace945bfe7ac45c58c31b34e692f9f49f2f7f3",
+          "blob": "04ce32fb780bdd211a9dddc8d72a1cca2f534793"
+        },
+        "limit": {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 6,
+          "minimum_price": -110,
+          "direction": "AT_LEAST"
+        },
+        "line_within_limit": true,
+        "price_within_limit": true
+      },
+      "causal_recommendation_attribution": "UNVERIFIED",
+      "book_settlement_redemption_payment": "UNVERIFIED",
+      "execution_chronology": "UNVERIFIED_RECEIPT_TIMEZONE"
+    },
+    {
+      "execution_id": "CFB_OCT17-03",
+      "game_id": "401856723",
+      "game": "Alabama @ Tennessee",
+      "selection": "Tennessee",
+      "market": "SPREAD",
+      "line": 7.5,
+      "american_odds": -110,
+      "stake_usd": "2.50",
+      "final_away_home": "10-26",
+      "selected_final_margin": 16,
+      "signed_grade_comparison": "23.5",
+      "final_score_grade": "WIN",
+      "printed_payout_based_result_return_usd": "4.75",
+      "printed_payout_based_result_net_usd": "2.25",
+      "saved_frozen_display_cushion": 17.7,
+      "frozen_display_cushion_scope": "ROUNDED_ORIGINAL_DISPLAY_NOT_EV_OR_RECOMMENDATION",
+      "recommendation_comparison": "OUTSIDE_FINAL_FIVE_RECOMMENDATIONS",
+      "comparison_detail": {
+        "side_state": "PASS",
+        "side_reason": "FreshAPpreview identifies TennesseeQBshoulder/replacementuncertainty; preserve no-bet rather than treat18pointrawmodelreversal as reliable."
+      },
+      "causal_recommendation_attribution": "UNVERIFIED",
+      "book_settlement_redemption_payment": "UNVERIFIED",
+      "execution_chronology": "UNVERIFIED_RECEIPT_TIMEZONE"
+    },
+    {
+      "execution_id": "CFB_OCT17-04",
+      "game_id": "401856722",
+      "game": "Kentucky @ Oklahoma",
+      "selection": "Oklahoma",
+      "market": "SPREAD",
+      "line": -6.5,
+      "american_odds": -117,
+      "stake_usd": "2.00",
+      "final_away_home": "21-13",
+      "selected_final_margin": -8,
+      "signed_grade_comparison": "-14.5",
+      "final_score_grade": "LOSS",
+      "printed_payout_based_result_return_usd": "0.00",
+      "printed_payout_based_result_net_usd": "-2.00",
+      "saved_frozen_display_cushion": 3.5,
+      "frozen_display_cushion_scope": "ROUNDED_ORIGINAL_DISPLAY_NOT_EV_OR_RECOMMENDATION",
+      "recommendation_comparison": "OUTSIDE_FINAL_FIVE_RECOMMENDATIONS",
+      "comparison_detail": {
+        "side_state": "PASS",
+        "side_reason": "Oklahoma model preference is tempered by128th-ranked total offense, poor third-down conversion and turnover disadvantage against Kentucky. A3.5point raw gap is insufficient qualitative support here."
+      },
+      "causal_recommendation_attribution": "UNVERIFIED",
+      "book_settlement_redemption_payment": "UNVERIFIED",
+      "execution_chronology": "UNVERIFIED_RECEIPT_TIMEZONE"
+    },
+    {
+      "execution_id": "CFB_OCT17-05",
+      "game_id": "401858492",
+      "game": "Nebraska @ Oregon",
+      "selection": "Nebraska",
+      "market": "SPREAD",
+      "line": 7.5,
+      "american_odds": -110,
+      "stake_usd": "5.00",
+      "final_away_home": "14-17",
+      "selected_final_margin": -3,
+      "signed_grade_comparison": "4.5",
+      "final_score_grade": "WIN",
+      "printed_payout_based_result_return_usd": "9.55",
+      "printed_payout_based_result_net_usd": "4.55",
+      "saved_frozen_display_cushion": 9.3,
+      "frozen_display_cushion_scope": "ROUNDED_ORIGINAL_DISPLAY_NOT_EV_OR_RECOMMENDATION",
+      "recommendation_comparison": "WITHIN_RECORDED_LIMITS",
+      "comparison_detail": {
+        "review_ref": {
+          "path": "evidence/operational/recommendation_reviews/CFB_NEBRASKA_RECONSIDERATION_20261017T155337Z.json",
+          "commit": "6950f453a8330d687d7f5ac8199544cf80d4c9ff",
+          "blob": "13c958d61aa34628d1e373ef55adfcc27725ce97"
+        },
+        "limit": {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 6.5,
+          "minimum_price": -110,
+          "direction": "AT_LEAST"
+        },
+        "line_within_limit": true,
+        "price_within_limit": true
+      },
+      "causal_recommendation_attribution": "UNVERIFIED",
+      "book_settlement_redemption_payment": "UNVERIFIED",
+      "execution_chronology": "UNVERIFIED_RECEIPT_TIMEZONE"
+    },
+    {
+      "execution_id": "CFB_OCT17-06",
+      "game_id": "401856831",
+      "game": "Oklahoma State @ Houston",
+      "selection": "Houston",
+      "market": "SPREAD",
+      "line": -4,
+      "american_odds": -112,
+      "stake_usd": "5.00",
+      "final_away_home": "32-35",
+      "selected_final_margin": 3,
+      "signed_grade_comparison": "-1",
+      "final_score_grade": "LOSS",
+      "printed_payout_based_result_return_usd": "0.00",
+      "printed_payout_based_result_net_usd": "-5.00",
+      "saved_frozen_display_cushion": 4.7,
+      "frozen_display_cushion_scope": "ROUNDED_ORIGINAL_DISPLAY_NOT_EV_OR_RECOMMENDATION",
+      "recommendation_comparison": "OUTSIDE_RECORDED_PRICE_LIMIT",
+      "comparison_detail": {
+        "review_ref": {
+          "path": "evidence/operational/recommendation_reviews/CFB_HOUSTON_RECONSIDERATION_20261017T155337Z.json",
+          "commit": "fd714cd860d1dc76143d6f5da965fd24bd785ef3",
+          "blob": "99e2ecdb0cf55118b754cb7b3b921ca53e0e8054"
+        },
+        "limit": {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -4.5,
+          "minimum_price": -110,
+          "direction": "AT_LEAST"
+        },
+        "line_within_limit": true,
+        "price_within_limit": false
+      },
+      "causal_recommendation_attribution": "UNVERIFIED",
+      "book_settlement_redemption_payment": "UNVERIFIED",
+      "execution_chronology": "UNVERIFIED_RECEIPT_TIMEZONE"
+    },
+    {
+      "execution_id": "CFB_OCT17-07",
+      "game_id": "401858264",
+      "game": "Georgia Tech @ Virginia Tech",
+      "selection": "Virginia Tech",
+      "market": "SPREAD",
+      "line": -8.5,
+      "american_odds": -112,
+      "stake_usd": "5.00",
+      "final_away_home": "24-34",
+      "selected_final_margin": 10,
+      "signed_grade_comparison": "1.5",
+      "final_score_grade": "WIN",
+      "printed_payout_based_result_return_usd": "9.45",
+      "printed_payout_based_result_net_usd": "4.45",
+      "saved_frozen_display_cushion": 6.6,
+      "frozen_display_cushion_scope": "ROUNDED_ORIGINAL_DISPLAY_NOT_EV_OR_RECOMMENDATION",
+      "recommendation_comparison": "OUTSIDE_RECORDED_PRICE_LIMIT",
+      "comparison_detail": {
+        "review_ref": {
+          "path": "evidence/operational/recommendation_reviews/CFB_VIRGINIATECH_RECONSIDERATION_20261017T155337Z.json",
+          "commit": "31f578dbfc8ddfb58239a6d78053b86c748fc87e",
+          "blob": "73b4a52912bc14592c6cf697bf9a7a1ce77d9e20"
+        },
+        "limit": {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -8.5,
+          "minimum_price": -110,
+          "direction": "AT_LEAST"
+        },
+        "line_within_limit": true,
+        "price_within_limit": false
+      },
+      "causal_recommendation_attribution": "UNVERIFIED",
+      "book_settlement_redemption_payment": "UNVERIFIED",
+      "execution_chronology": "UNVERIFIED_RECEIPT_TIMEZONE"
+    },
+    {
+      "execution_id": "CFB_OCT17-08",
+      "game_id": "401864524",
+      "game": "UNLV @ Air Force",
+      "selection": "Air Force",
+      "market": "MONEYLINE",
+      "line": null,
+      "american_odds": 102,
+      "stake_usd": "2.00",
+      "final_away_home": "31-41",
+      "selected_final_margin": 10,
+      "signed_grade_comparison": "10",
+      "final_score_grade": "WIN",
+      "printed_payout_based_result_return_usd": "4.05",
+      "printed_payout_based_result_net_usd": "2.05",
+      "saved_frozen_display_cushion": 17.2,
+      "frozen_display_cushion_scope": "ROUNDED_ORIGINAL_DISPLAY_NOT_EV_OR_RECOMMENDATION",
+      "recommendation_comparison": "WITHIN_RECORDED_LIMITS",
+      "comparison_detail": {
+        "review_ref": {
+          "path": "evidence/operational/recommendation_reviews/CFB_AIRFORCE_RECONSIDERATION_20261017T155337Z.json",
+          "commit": "eac61015698e372f4fc523908214e276775b406c",
+          "blob": "97932758aaea964d854575d0771cd346de625c4e"
+        },
+        "limit": {
+          "market": "MONEYLINE",
+          "selection": "home",
+          "line": null,
+          "minimum_price": -115,
+          "direction": "PRICE_ONLY"
+        },
+        "line_within_limit": true,
+        "price_within_limit": true
+      },
+      "causal_recommendation_attribution": "UNVERIFIED",
+      "book_settlement_redemption_payment": "UNVERIFIED",
+      "execution_chronology": "UNVERIFIED_RECEIPT_TIMEZONE"
+    },
+    {
+      "execution_id": "CFB_OCT17-09",
+      "game_id": "401856721",
+      "game": "Missouri @ Ole Miss",
+      "selection": "Ole Miss",
+      "market": "SPREAD",
+      "line": -4,
+      "american_odds": -112,
+      "stake_usd": "2.55",
+      "final_away_home": "3-31",
+      "selected_final_margin": 28,
+      "signed_grade_comparison": "24",
+      "final_score_grade": "WIN",
+      "printed_payout_based_result_return_usd": "4.85",
+      "printed_payout_based_result_net_usd": "2.30",
+      "saved_frozen_display_cushion": -2.0,
+      "frozen_display_cushion_scope": "ROUNDED_ORIGINAL_DISPLAY_NOT_EV_OR_RECOMMENDATION",
+      "recommendation_comparison": "OUTSIDE_FINAL_FIVE_RECOMMENDATIONS",
+      "comparison_detail": {
+        "side_state": "PASS",
+        "side_reason": "Exactcurrentweekpreview returned NoStoryAvailable; retain evidence-limitedPASS rather than infer Missouri value from2pointmodeldiscrepancy."
+      },
+      "causal_recommendation_attribution": "UNVERIFIED",
+      "book_settlement_redemption_payment": "UNVERIFIED",
+      "execution_chronology": "UNVERIFIED_RECEIPT_TIMEZONE"
+    }
+  ],
+  "totals": {
+    "tickets": 9,
+    "stake_usd": "34.05",
+    "grades": {
+      "WIN": 7,
+      "LOSS": 2,
+      "PUSH": 0
+    },
+    "printed_payout_based_result_return_usd": "51.75",
+    "printed_payout_based_result_net_usd": "17.70"
+  },
+  "week7_metric_reconciliation": {
+    "modeled_games": 51,
+    "unique_games": 51,
+    "sum_of_existing_su_correct_flags": 32,
+    "independent_display_margin_sign_correct": 32,
+    "existing_summary_claim_correct": 31,
+    "existing_summary_claim_inconsistent": true,
+    "corrected_margin_direction_fraction": "32/51",
+    "probability_classifier_correct_from_rounded_display": 34,
+    "probability_scope": "Distinct probability-threshold diagnostic; not margin direction and not added to 32.",
+    "rounded_row_margin_mae": 12.843137254901961,
+    "rounded_row_total_mae": 13.398039215686273,
+    "scope": "Existing 51 immutable displayed rows; no full-precision raw-archive metric recomputation. Published margin MAE12.89 remains unreconciled against rounded-row12.8431; no exact replacement inferred."
+  },
+  "comparison_groups": {
+    "OUTSIDE_FINAL_FIVE_RECOMMENDATIONS": {
+      "tickets": 4,
+      "stake_usd": "12.05",
+      "grades": {
+        "WIN": 3,
+        "LOSS": 1,
+        "PUSH": 0
+      },
+      "printed_payout_based_result_return_usd": "19.15",
+      "printed_payout_based_result_net_usd": "7.10"
+    },
+    "OUTSIDE_RECORDED_PRICE_LIMIT": {
+      "tickets": 2,
+      "stake_usd": "10.00",
+      "grades": {
+        "WIN": 1,
+        "LOSS": 1,
+        "PUSH": 0
+      },
+      "printed_payout_based_result_return_usd": "9.45",
+      "printed_payout_based_result_net_usd": "-0.55"
+    },
+    "WITHIN_RECORDED_LIMITS": {
+      "tickets": 3,
+      "stake_usd": "12.00",
+      "grades": {
+        "WIN": 3,
+        "LOSS": 0,
+        "PUSH": 0
+      },
+      "printed_payout_based_result_return_usd": "23.15",
+      "printed_payout_based_result_net_usd": "11.15"
+    }
+  },
+  "current_engine_financial_effectiveness": "NOT_ESTABLISHED",
+  "scope": "Original intake plus saved-final diagnostics; no causal attribution, paid cash, CLV, refit, model promotion or natural scheduled reliability.",
+  "rejection_demonstrations": [
+    "duplicate_execution",
+    "duplicate_image",
+    "wrong_game",
+    "invented_timezone",
+    "invented_sandbox_allocation",
+    "missing_ticket"
+  ]
+}
