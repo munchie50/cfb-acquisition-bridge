@@ -379,3 +379,24 @@ Authenticated original artifact10897612260, SHA256772b8683365ebf62d35fc3813beb13
 Derived-row correction, Georgia Southern @ Old Dominion /401869950: original frozen home margin+1.171893195494452 (display+1.2),total41.14884060164428,home-win probability0.47575563478041893. Existing final away23/home15 gives home margin-8,total38,exact margin error-9.171893195494452,total error-3.148840601644281,margin-direction flag0. The historical daily row's-1.2 margin/-6.8 error/flag1 is a derived sign/flag error and is superseded by this note; original row/forecast/final remain unmodified. The probability classifier favors the away team and is independently correct, so Thursday margin-direction is0/2 while probability classification is a different measure. Sum corrected daily margin flags2+0+0+1+28=31.
 
 Full exact51-row evidence `evidence/scheduler_qa/CFB_WEEK7_EXACT_METRIC_RECONCILIATION_20261023.json` and read-only replay `evidence/scheduler_qa/cfb_week7_exact_metric_reconciliation_20261023.py`. Changed archive rejected; no REFRESH substitution, output-dependent prediction choice, fresh final acquisition, model/routine/promotion or money mutation. Original source authority outranks the inconsistent derived display and this QA's preliminary mistaken32/51 correction. Exact writer sign-reversal cause UNKNOWN; natural scoring-source fidelity remains demonstration pending.
+
+## Week 8 Friday FIRST_FROZEN outcomes — authoritative finals joined 2026-10-24
+
+**Cycle:** `CFB_MARKET_MONITOR_20261024T120126Z`
+
+**Join rule:** The fresh complete CBS Week 8 response recovered by `2026-10-24T12:04:02Z` supplied final scores for all five Friday identities. Each eligible row below joins only to the accepted September 26 original FIRST_FROZEN lineage recovered in `CFB_WEEK8_ORIGINAL_ANCESTRY_RECOVERY_20261020.json`. Army @ Tulsa remained the original `away_prior_pbp_missing` exclusion and was not scored. No prediction, decision, recommendation, market observation or execution was reconstructed from an outcome.
+
+**Outcome source:** https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-8/
+
+| Game ID | Game | Frozen home margin | Frozen total | Frozen home-win p | Final (away-home) | Actual home margin | Actual total | Margin error | Total error | SU correct |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 401858271 | Duke @ Virginia | +9.3 | 46.8 | 0.745 | 19-16 | -3 | 35 | -12.3 | -11.8 | 0 |
+| 401861965 | Massachusetts @ Connecticut | +3.2 | 52.3 | 0.587 | 16-35 | +19 | 51 | +15.8 | -1.3 | 1 |
+| 401864525 | Air Force @ Wyoming | -8.1 | 46.0 | 0.343 | 14-28 | +14 | 42 | +22.1 | -4.0 | 0 |
+| 401858272 | NC State @ Stanford | -9.0 | 54.3 | 0.271 | 28-31 | +3 | 59 | +12.0 | +4.7 | 0 |
+
+**Friday modeled summary:** `4/4` eligible rows matched; unresolved eligible joins `0`; SU direction `1/4 (25.0%)`; margin MAE `15.55`; total MAE `5.45`.
+
+**Excluded final retained without scoring:** `401862808` Army 38, Tulsa 35 — original FIRST_FROZEN exclusion `away_prior_pbp_missing`.
+
+The separate execution ledger grades two established Friday tickets from the same finals. That downstream wager evidence does not alter Champion v1.193, FIRST_FROZEN, accepted REFRESH, Challenger, TIME-HIDDEN, market or decision state. No outcome-informed reconstruction occurred.
