@@ -1,0 +1,175 @@
+{
+  "candidate_id": "S2_K1",
+  "coefficient_sha256": "bf15ce41180bfb4e250d311df279e98c13b65432756ae07f7a30264cbae0e221",
+  "consumer_git_blob": "a6d82630a1a3dbec627ee105da377c487b7ec63c",
+  "consumer_sha256": "1f03df53389a15f05d8f0b3baf09a4307900ec8a090535d5699b59559423dc6f",
+  "fit_or_optimization_performed": false,
+  "freeze_recorded_at_utc": "2026-10-24T03:21:59.581780+00:00",
+  "frozen_config": {
+    "candidate_id": "S2_K1",
+    "coefficient_sha256": "bf15ce41180bfb4e250d311df279e98c13b65432756ae07f7a30264cbae0e221",
+    "context_sign": "SUBTRACT_MEAN_PAIRED_RESIDUAL",
+    "features": [
+      "points_for_per_game",
+      "points_against_per_game",
+      "offensive_scrimmage_plays_per_game",
+      "defensive_scrimmage_plays_per_game",
+      "offensive_yards_per_play",
+      "defensive_yards_per_play",
+      "rush_play_rate",
+      "pass_play_rate",
+      "rush_yards_per_play",
+      "pass_yards_per_play",
+      "interception_rate",
+      "rest_days",
+      "offensive_explosive_play_rate",
+      "defensive_explosive_play_rate",
+      "offensive_success_rate",
+      "defensive_success_rate_allowed",
+      "average_starting_yards_to_goal"
+    ],
+    "k": 1,
+    "lambdas": {
+      "margin": 0.1,
+      "total": 0.1,
+      "win": 0.01
+    },
+    "mapping": {
+      "defensive_explosive_play_rate": "offensive_explosive_play_rate",
+      "defensive_scrimmage_plays_per_game": "offensive_scrimmage_plays_per_game",
+      "defensive_success_rate_allowed": "offensive_success_rate",
+      "defensive_yards_per_play": "offensive_yards_per_play",
+      "offensive_explosive_play_rate": "defensive_explosive_play_rate",
+      "offensive_scrimmage_plays_per_game": "defensive_scrimmage_plays_per_game",
+      "offensive_success_rate": "defensive_success_rate_allowed",
+      "offensive_yards_per_play": "defensive_yards_per_play",
+      "points_against_per_game": "points_for_per_game",
+      "points_for_per_game": "points_against_per_game"
+    },
+    "scaling_sha256": "68fb5193ccb8828ac8d34dfe820101181c2bde078a04a6d5afd4c08bcf0cab45"
+  },
+  "frozen_config_sha256": "4ca59bfafb8cba3bd60a1a96ed54d9977559d9204f3ad3e9bc3f190568a6525c",
+  "game_exclusion_rows": 0,
+  "hashes": {
+    "s2_k1_game_exclusions.csv": "1f3cd453680b613d1856d0f1eb5619d38cf876b0bda601d50283ed5b9ff92eeb",
+    "s2_k1_predictions.csv": "dbace5796d16023a43a46e493f1d883be94f4bdc3ed668302314a4dda2991a6e",
+    "s2_k1_side_exclusions.csv": "524bfc56118bccedc7d042f3a3a0bdc94974515781d25b5fe056f3495205c7a8"
+  },
+  "input_acceptance_records": {
+    "evidence/CFB_QA_S2_K1_OCT13_INPUT_ACCEPTANCE_2026-10-23.md": "6db7be770a6e033d140398ab142f9114c677815b",
+    "evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-16_OCT13.md": "18073bb6953082c9089e210cca1efe867140dcad"
+  },
+  "input_gate_sha256": "465810caabbef65f947c21f2d12522dae2447c9b770316a7aa0550b35097e2de",
+  "input_sha256": {
+    "baseline": "4047014eccd739c8caaee7691cbdd4b5cea4951572162b57516bf9f4ca353f5f",
+    "chronology": "703dc5cbaaa7287587245e85636b20f78e87fb619c01aaaf188153ad0aff1fd3",
+    "context": "7f69d23a3d62766cef7f3c351a2c8b6ea8a562f6fb8ccc6c9f3d75a16606c629",
+    "excluded": "f772c416b527b6102d4e46817d3e1ffffe966db26ed212e3432ac8a6eb4ac6a0",
+    "predicted": "c16afc4adcf9daeae571107b4901bd90a7086b23ad03dda829adb4f645ffd27f",
+    "side": "e77649e2f3fbd7e50be4c253c05737a652c3fc460087e272635fd27ecaeee356",
+    "target": "3fb31ce0413222e0079f9a85330baea50901e50e69fd90f1c9fcbf654bfe21f9"
+  },
+  "k": 1,
+  "market_joined": false,
+  "prediction_completed_at_utc": "2026-10-24T03:22:00.044035+00:00",
+  "prediction_rows": 44,
+  "projection": {
+    "acceptance_ref": {
+      "blob": "487541ad0936310bab9fd168e36a38d7d7642c5c",
+      "commit": "0e5e1f2341e906beff8327811471da8f4bafe20c",
+      "path": "evidence/qa_s2_projections/CFB_S2_WEEK8_PROJECTION_ACCEPTANCE_20261024T031931Z.json"
+    },
+    "acceptance_sha256": "088ec56f8f8d5ed84e2503471dd235216ee55fef38147c85c5426c4edec6ace9",
+    "confirmation_ref": {
+      "blob": "fa68dd48d71daf1afffce1d7dcf65ab0a5ead705",
+      "commit": "74494a7dcc79ebec8c9e4ea42facda436c025277",
+      "path": "evidence/qa_s2_projections/CFB_S2_WEEK8_TIMING_CONFIRMATION_20261024T031724Z.json"
+    },
+    "freeze_scope": "PROSPECTIVE_STUDY_ONLY_NO_SCORING_OR_PRODUCTION",
+    "implementation": {
+      "scripts/cfb_qa_prospective_s2_k1_consumer_v1_2026_09_30.py": "a6d82630a1a3dbec627ee105da377c487b7ec63c",
+      "scripts/cfb_qa_s2_k1_input_gate.py": "1f880c842aa3b1a35e4b1d5bdb9223e42ae7833c",
+      "scripts/cfb_qa_s2_k1_projection.py": "e3cea29833ef603b0f0255546f58ac83ba042110"
+    },
+    "parent_targets": 440,
+    "projected_input_sha256": {
+      "baseline": "6866154c2b0b01d1b464a5633beb72d9b618174e5e85bc372a0f71dacce67a40",
+      "chronology": "52adfd8f95bc620d758adbd7095d3ee3a5492f74421ec20a1f736088c4eb2187",
+      "context": "5d8b6c960858f3ff8d2a4fafcbe8ce203f2d506f1cf409fc8655f13e8264e24e",
+      "excluded": "c33a515fdedac48ab03210cfd167f27b0d3102aa4f15ae34a4ec56de404c2848",
+      "predicted": "97a6265cfa06104b5548486357c31d35ef285fbd1b9d8d30e8726d9b1a6669b0",
+      "side": "76d33684fb8410514e3f515a2852ab875d8b7a17b4f35286e5128f23d769235e",
+      "target": "9e13226f722e2fa16a714cdfb36a033fe333030713637d1d41b1229eca6be1ee"
+    },
+    "projected_targets": 44,
+    "projection_ref": {
+      "blob": "4a9c94826caa5b5ce072ab2e1c1a8125ede88de9",
+      "commit": "7e0748f3cb5233e87e533b7d73e17133efd839d4",
+      "path": "evidence/qa_s2_projections/CFB_S2_WEEK8_PROJECTED_INPUTS_20261024T030221Z.json"
+    },
+    "projection_sha256": "bccdc0b02b4b20a61f20c0104bbeb8a67a7b85c27eb0c3c03b945b0c7e28dac1",
+    "qualified_kickoffs_utc": {
+      "401856727": "2026-10-24T19:30:00+00:00",
+      "401856728": "2026-10-24T16:00:00+00:00",
+      "401856729": "2026-10-24T23:30:00+00:00",
+      "401856730": "2026-10-24T19:30:00+00:00",
+      "401856731": "2026-10-24T19:30:00+00:00",
+      "401856732": "2026-10-24T23:30:00+00:00",
+      "401856834": "2026-10-24T17:00:00+00:00",
+      "401856835": "2026-10-24T19:30:00+00:00",
+      "401856836": "2026-10-24T23:00:00+00:00",
+      "401856837": "2026-10-25T02:15:00+00:00",
+      "401856838": "2026-10-24T23:30:00+00:00",
+      "401856839": "2026-10-24T19:45:00+00:00",
+      "401856840": "2026-10-24T16:00:00+00:00",
+      "401856841": "2026-10-24T16:00:00+00:00",
+      "401858270": "2026-10-24T16:00:00+00:00",
+      "401858273": "2026-10-24T19:30:00+00:00",
+      "401858274": "2026-10-24T16:00:00+00:00",
+      "401858275": "2026-10-24T23:30:00+00:00",
+      "401858276": "2026-10-24T23:00:00+00:00",
+      "401858495": "2026-10-24T19:00:00+00:00",
+      "401858496": "2026-10-24T16:00:00+00:00",
+      "401858497": "2026-10-24T19:30:00+00:00",
+      "401858498": "2026-10-24T16:00:00+00:00",
+      "401858499": "2026-10-24T19:30:00+00:00",
+      "401858500": "2026-10-24T23:30:00+00:00",
+      "401860905": "2026-10-24T22:30:00+00:00",
+      "401860906": "2026-10-24T23:30:00+00:00",
+      "401860907": "2026-10-24T22:00:00+00:00",
+      "401862809": "2026-10-24T16:00:00+00:00",
+      "401862810": "2026-10-24T19:30:00+00:00",
+      "401862811": "2026-10-25T00:00:00+00:00",
+      "401864526": "2026-10-24T19:30:00+00:00",
+      "401864527": "2026-10-25T02:00:00+00:00",
+      "401864528": "2026-10-24T21:00:00+00:00",
+      "401866446": "2026-10-24T17:00:00+00:00",
+      "401866447": "2026-10-24T19:30:00+00:00",
+      "401866448": "2026-10-24T19:30:00+00:00",
+      "401866449": "2026-10-24T20:00:00+00:00",
+      "401866450": "2026-10-24T16:00:00+00:00",
+      "401866476": "2026-10-24T17:00:00+00:00",
+      "401869935": "2026-10-24T23:00:00+00:00",
+      "401869967": "2026-10-24T21:00:00+00:00",
+      "401871093": "2026-10-24T21:00:00+00:00",
+      "401871094": "2026-10-24T20:00:00+00:00"
+    },
+    "timing_ref": {
+      "blob": "17e4d366d9f78e41ecf2575423381cc517f1021e",
+      "commit": "81cc0031bb32c48cf4a89dc73b889279f7ec5f83",
+      "path": "evidence/qa_s2_projections/CFB_S2_WEEK8_TIMING_INITIAL_20261024T025625Z.json"
+    }
+  },
+  "protected_2025_test_opened": false,
+  "raw_source_sha256": {
+    "pbp": "8620a553c03c377638895e97eefc1aa8278a1176ee6615dcc124d8c3e604e0bc",
+    "schedule": "5335a2776ab6425e304bd6c05aeed7ad408ae351f1c8547a1b54e08f34f92176"
+  },
+  "scaling_sha256": "68fb5193ccb8828ac8d34dfe820101181c2bde078a04a6d5afd4c08bcf0cab45",
+  "side_exclusion_rows": 0,
+  "snapshot_cutoff_utc": "2026-10-13T15:13:13.866672+00:00",
+  "snapshot_type": "REFRESH_SNAPSHOT",
+  "status": "EXECUTED_NOT_ACCEPTED",
+  "target_outcomes_opened": false,
+  "wager_or_execution_joined": false
+}
