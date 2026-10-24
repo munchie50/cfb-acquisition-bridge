@@ -171,6 +171,18 @@ class ExecutionBoundaryTests(unittest.TestCase):
             with patch.object(sys,'argv',argv),patch.object(gate,'load_inputs',return_value=(copy.deepcopy(frames),copy.deepcopy(audit))),self.assertRaisesRegex(SystemExit,'ELAPSED_TARGETS_PROHIBITED'):
                 exec(code,{'__file__':str(source),'datetime':AfterKickoff,'timezone':timezone})
             self.assertFalse(out.exists())
+        import cfb_qa_s2_k1_projection as projection
+        with tempfile.TemporaryDirectory() as d:
+            out=Path(d)/'synthetic_projected_only';ref=Path(d)/'fake_ref.json';ref.write_text('{}')
+            context={'qualified_kickoffs_utc':{'SYNTHETIC':'2026-10-26T18:00:00+00:00'},'projection_sha256':'f'*64,'projected_input_sha256':{k:'a'*64 for k in frames}}
+            argv=['consumer','side','target','baseline','context',str(fit),str(out),CUT,'--execute-prospective','--projection-acceptance-ref',str(ref)]
+            with patch.object(sys,'argv',argv),patch.object(gate,'load_inputs',return_value=(copy.deepcopy(frames),copy.deepcopy(audit))),patch.object(projection,'apply_accepted_projection',return_value=(copy.deepcopy(frames),context)),contextlib.redirect_stdout(io.StringIO()):
+                exec(code,{'__file__':str(source),'datetime':AfterKickoff,'timezone':timezone})
+            row=pd.read_csv(out/'s2_k1_predictions.csv').iloc[0]
+            self.assertEqual(pd.Timestamp(row.start_date),pd.Timestamp(TARGET))
+            self.assertEqual(row.qualified_kickoff_utc,'2026-10-26T18:00:00+00:00')
+            self.assertNotEqual(pd.Timestamp(row.start_date),pd.Timestamp(row.qualified_kickoff_utc))
+            self.assertIn('projection',json.loads((out/'manifest.json').read_text()))
 
 
 if __name__=='__main__':unittest.main()
