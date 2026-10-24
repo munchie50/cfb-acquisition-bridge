@@ -5,11 +5,17 @@ on:
     paths:
       - 'evidence/CFB_QA_PROSPECTIVE_S2_K1_CONSUMER_SPEC_2026-09-30.md'
       - 'scripts/cfb_qa_prospective_s2_k1_consumer_spec_static_gate.py'
+      - 'scripts/cfb_qa_prospective_s2_k1_consumer_v1_2026_09_30.py'
+      - 'scripts/cfb_qa_prospective_s2_k1_consumer_static_gate.py'
+      - 'scripts/cfb_qa_s2_k1_input_gate.py'
+      - 'scripts/test_cfb_qa_s2_k1_input_gate.py'
+      - 'scripts/test_cfb_qa_s2_k1_zero_history.py'
       - '.github/workflows/cfb_qa_prospective_s2_k1_consumer_spec_static_gate.yml'
   workflow_dispatch:
 
 permissions:
   contents: read
+  actions: read
 
 jobs:
   static-gate:
@@ -20,3 +26,23 @@ jobs:
         with:
           python-version: '3.12'
       - run: python scripts/cfb_qa_prospective_s2_k1_consumer_spec_static_gate.py
+      - name: Validate consumer and frozen sign on synthetic inputs only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python -m pip install numpy==2.3.5 pandas==2.2.3
+          gh api repos/${{ github.repository }}/actions/artifacts/10895838069/zip > "$RUNNER_TEMP/frozen_fit.zip"
+          python - "$RUNNER_TEMP" <<'PYCODE'
+          import hashlib,sys,zipfile
+          from pathlib import Path
+          root=Path(sys.argv[1]);raw=(root/'frozen_fit.zip').read_bytes()
+          assert hashlib.sha256(raw).hexdigest()=='3a2cabfcd37e0bcf0cae85efc77eaa6755ffb12734d1e48c4c582ed1de375587'
+          z=zipfile.ZipFile(root/'frozen_fit.zip');out=root/'s2_frozen_fit';out.mkdir()
+          for name,digest in [('selected_coefficients.csv','bf15ce41180bfb4e250d311df279e98c13b65432756ae07f7a30264cbae0e221'),('train_scaling.csv','68fb5193ccb8828ac8d34dfe820101181c2bde078a04a6d5afd4c08bcf0cab45')]:
+              names=[p for p in z.namelist() if p.split('/')[-1]==name];assert len(names)==1
+              content=z.read(names[0]);assert hashlib.sha256(content).hexdigest()==digest
+              (out/name).write_bytes(content)
+          PYCODE
+          python scripts/cfb_qa_prospective_s2_k1_consumer_static_gate.py
+          CFB_S2_FROZEN_FIT="$RUNNER_TEMP/s2_frozen_fit" python -m unittest discover -s scripts -p test_cfb_qa_s2_k1_input_gate.py
+          python -m unittest discover -s scripts -p test_cfb_qa_s2_k1_zero_history.py
