@@ -1,0 +1,45 @@
+{
+  "schema": "CFB_S2_FUTURE_PROJECTION_ACCEPTANCE_V1",
+  "accepted_at_utc": "2026-10-24T03:19:31.987676+00:00",
+  "projection_ref": {
+    "path": "evidence/qa_s2_projections/CFB_S2_WEEK8_PROJECTED_INPUTS_20261024T030221Z.json",
+    "commit": "7e0748f3cb5233e87e533b7d73e17133efd839d4",
+    "blob": "4a9c94826caa5b5ce072ab2e1c1a8125ede88de9"
+  },
+  "timing_ref": {
+    "path": "evidence/qa_s2_projections/CFB_S2_WEEK8_TIMING_INITIAL_20261024T025625Z.json",
+    "commit": "81cc0031bb32c48cf4a89dc73b889279f7ec5f83",
+    "blob": "17e4d366d9f78e41ecf2575423381cc517f1021e"
+  },
+  "confirmation_ref": {
+    "path": "evidence/qa_s2_projections/CFB_S2_WEEK8_TIMING_CONFIRMATION_20261024T031724Z.json",
+    "commit": "74494a7dcc79ebec8c9e4ea42facda436c025277",
+    "blob": "fa68dd48d71daf1afffce1d7dcf65ab0a5ead705"
+  },
+  "implementation": {
+    "scripts/cfb_qa_prospective_s2_k1_consumer_v1_2026_09_30.py": "a6d82630a1a3dbec627ee105da377c487b7ec63c",
+    "scripts/cfb_qa_s2_k1_input_gate.py": "1f880c842aa3b1a35e4b1d5bdb9223e42ae7833c",
+    "scripts/cfb_qa_s2_k1_projection.py": "e3cea29833ef603b0f0255546f58ac83ba042110"
+  },
+  "ci": [
+    {
+      "run_id": 40057443094,
+      "job_id": 120763438773,
+      "head_sha": "27da9cb064bc2419ec053a01ff47601a8559196f",
+      "conclusion": "success",
+      "url": "https://github.com/munchie50/cfb-acquisition-bridge/actions/runs/40057443094"
+    }
+  ],
+  "verification": {
+    "cohort_targets": 56,
+    "original_model_kickoff_preserved": true,
+    "outcomes_opened": false,
+    "parent_targets": 440,
+    "predictions_generated": false,
+    "projected_targets": 44,
+    "s0_eligible_projected": 44,
+    "s0_excluded_projected": 0,
+    "verdict": "PASS_EXACT_PARENT_FUTURE_PROJECTION_ONLY"
+  },
+  "scope": "EXACT_PROJECTION_ACCEPTED_STUDY_ONLY_NOT_PREDICTION_FREEZE"
+}
