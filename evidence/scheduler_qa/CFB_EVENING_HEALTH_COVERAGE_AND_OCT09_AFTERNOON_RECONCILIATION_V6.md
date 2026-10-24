@@ -546,3 +546,22 @@ Guard planned-append metadata (proposal-only values; separate actual readbacks a
   "status": "PROPOSED_ONLY_NOT_WRITE_SUCCESS"
 }
 ```
+
+
+## October24 repair-versus-history reconciliation — user-directed Health correction
+
+Recorded during CFB_HEALTH_DISPOSITION_REPAIR_20261024T234711Z. User direction: “Okay, begin fix.” This supersedes only the interpretation that the Friday closed-conditional compiler defect remains an unimplemented current repair. Original audits, terminal results, all historical gaps and unknown coverage remain intact.
+
+The Health cycle CFB_ENGINE_HEALTH_20261024T215052Z durably ended RUN_INCOMPLETE. Its audit/closure correctly retained Friday Evening's original incomplete cycle and current elapsed-quote findings, but its next action repeated an already completed compiler repair. The assistant's initial diagnosis repeated that stale next action. Recovery ancestry review found:
+
+- The original Friday Evening cycle CFB_EVENING_AVAILABILITY_20261024T012553Z remains RUN_INCOMPLETE; no later repair closes or rewrites it.
+- PR5 merged at b8e6454260c695b7ca7e48ba01901e2361197d96. The bounded repair closure evidence/run_receipts/CFB_EVENING_REPAIR_20261024T022139Z_RUN_CLOSURE.md, blob 5dc3e5747c61896c04d66b1a19b7999505fb332c, independently confirms installation, 212 local checks and existing CI integration. Current compiler blob 5a4e7dc1de1b69126844e17cd2f3a050e04f123e is the repaired implementation.
+- The natural Saturday morning Monitor audit evidence/scheduler_qa/CFB_MARKET_MONITOR_20261024T120126Z_AUDIT.md, blob 5c8c94a549641cbc2a74e16774ab6a06996498cf, explicitly records adoption with genuinely fresh source. Saturday afternoon audit blob 3af866ed25ef34ba58ff323658e3e5fc55e76a83 and closure blob ef149fce94c48859c17ec8dcd88380f3b8d8e9c2 independently bind a second successful natural advance. Existing selected-publication CI40120344718 succeeded at 0bbf1037c68f4a2342655d5971ec607fac574871.
+
+Current remediation status: IMPLEMENTED / MONITOR_NATURAL_ADOPTION_DEMONSTRATED. The five exact earlier conditional rows, original origins, immutable reviews/limits/cutoffs and elapsed quotes remain history. No duplicate compiler edit, new recommendation, changed model or retrospective PASS is justified. Evening-specific future natural use and sustained reliability remain unproved separately; a Monitor demonstration is not an Evening cycle.
+
+For every carried cycle, report its historical outcome separately from current remediation and any remaining producer-specific proof. Resolve the current repair question through latest exact implementation/accepted closure/natural evidence before copying an old next action. Keep unresolved earlier coverage identities and actual current freshness findings. This classification is not automatic RUN_PASS, an advanced coverage watermark or historical reconstruction. Original terminal criteria still govern the new Health invocation.
+
+Existing Health prompt now explicitly consumes this correction. Independent task readback passed 67 preservation assertions: exactly four enabled tasks; every title, schedule, timing mode, timezone and enabled state unchanged; all non-Health prompts unchanged; complete old Health prompt preserved plus the exact suffix. No run was dispatched. Natural Health use of this reporting correction remains pending at its next existing invocation.
+
+Benefit: avoids repeated repair of resolved defects while retaining honest failure history. Cost: one append in the existing reconciliation and one Health prompt suffix, with no new gate, tracker, task or schedule. Current quote age is a separate service finding owned prospectively by the sole Monitor; no source was refreshed or retimed here. Historical closure debt and broader research gaps are not resolved by this correction.
