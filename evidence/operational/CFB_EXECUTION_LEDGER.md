@@ -213,3 +213,18 @@ Common fields: ACTUAL_REAL_MONEY; budget UNASSIGNED production/sandbox; receipt 
 Batch: 8 actual tickets / $36.00 stake / $32.65 printed maximum win / $68.65 printed maximum payout conditional on all eight winning. Prior24 / $87.50 plus8 / $36.00 =32 established actual wagers / $123.50 cumulative historical stake. This is an inventory count, not32 settled observations or complete lifetime history. User's recollection of eight last week versus nine distinct October17 tickets remains an unresolved count discrepancy; no existing tickets deleted or merged. No result assigned to the eight new tickets.
 
 The same private record establishes the complete current pot $61.30 = $25.30 voucher funds + these $36.00 open stakes at cost at the user's baseline. That snapshot is posted separately in the money ledger, not another wager debit/deposit/return. Historic funding and result-derived returns are not added again. No model input, market, recommendation, frozen prediction, stake rule, allocation ceiling or schedule changed.
+
+## Week 8 Friday established-wager final-score grades — October 24
+
+**Cycle:** `CFB_MARKET_MONITOR_20261024T120126Z`
+
+**Result source:** fresh complete CBS Week 8 response recovered by `2026-10-24T12:04:02Z`, retained at `evidence/operational/CFB_CBS_WEEK8_TEXT_TABLE_CAPTURE_20261024T120402Z.md`. The source page displayed final scores of Wyoming 28, Air Force 14 and Stanford 31, NC State 28.
+
+**Scope:** deterministic full-game score grading for the two established October 23 Friday tickets only. This is not sportsbook settlement, adjudication, redemption, cash payment, current offer, CLV or recommendation attribution.
+
+| Execution ID | Selection | Accepted spread / price | Final (selection first) | Signed spread result | Final-score grade | Printed result return | Result net |
+|---|---|---|---|---:|---|---:|---:|
+| CFB_OCT23-01 | Air Force | -5.5 / -110 | Air Force 14, Wyoming 28 | -19.5 | LOSS | $0.00 | -$5.00 |
+| CFB_OCT23-02 | NC State | -7.5 / -107 | NC State 28, Stanford 31 | -10.5 | LOSS | $0.00 | -$3.00 |
+
+Friday batch: `0 WIN / 2 LOSS / 0 PUSH`, `$8.00` graded stake, `$0.00` result return, `-$8.00` result net. Six October 23 Saturday tickets remain ungraded/open at this boundary (`$28.00` stake). The prior `$61.30` opening-pot snapshot is not recomputed here because sportsbook settlement/payment and the user's current voucher/cash balance remain unverified. Production versus `$20` sandbox allocation remains `UNASSIGNED`; no sandbox execution is inferred. Frozen predictions and original recommendation limits remain unchanged.
