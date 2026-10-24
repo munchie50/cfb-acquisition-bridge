@@ -7,6 +7,7 @@ on:
       - 'scripts/test_cfb_planned_append_metadata.py'
       - 'scripts/cfb_week8_publication.py'
       - 'scripts/test_cfb_week8_publication.py'
+      - 'scripts/test_cfb_week8_closed_conditional.py'
       - 'scripts/cfb_week8_frozen_field_invariant.py'
       - 'evidence/scheduler_qa/CFB_WEEK8_ORIGINAL_ANCESTRY_RECOVERY_20261020.json'
       - 'evidence/CFB_WEEK8_ORIGINAL_LINEAGE_PUBLICATION_PROFILE_2026-10-20.md'
@@ -179,6 +180,7 @@ jobs:
           CFB_ACCEPTED_REFRESH_ARCHIVE: ${{ runner.temp }}/cfb_accepted_refresh.zip
         run: |
           python -m unittest discover -s scripts -p test_cfb_week8_publication.py
+          python -m unittest discover -s scripts -p test_cfb_week8_closed_conditional.py
           python -m unittest discover -s scripts -p test_cfb_week7_accepted_s0_ancestry_audit.py
           python -m unittest discover -s scripts -p test_cfb_week7_first_frozen_projection_gate.py
           python -m unittest discover -s scripts -p test_cfb_week7_frozen_field_invariant.py

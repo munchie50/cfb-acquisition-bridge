@@ -210,6 +210,11 @@ def compile(market,decision,capture,lineage,cycle,as_of,recovered_by,decision_ro
         old=prior[4].get(row['game_id']) if prior else None
         if old is not None and old['state']==GAP_STATE:
             row.update(state_recorded_at_utc=old['state_recorded_at_utc'],state_evidence=old['state_evidence'])
+        elif (old is not None and old['state']=='CONDITIONAL' and
+              gate.closed_conditional(old,as_of) and
+              row=={k:v for k,v in old.items() if k not in ('state_recorded_at_utc','state_evidence')}):
+            # Exact closed review retention is history, never a new decision.
+            row.update(state_recorded_at_utc=old['state_recorded_at_utc'],state_evidence=old['state_evidence'])
         elif old is not None and old['state']=='PASS' and row['state']=='PASS':
             row.update(state_recorded_at_utc=old['state_recorded_at_utc'],state_evidence=old['state_evidence'])
         else:row.update(state_recorded_at_utc=as_of,state_evidence=cycle)

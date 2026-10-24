@@ -156,6 +156,40 @@ def quote(o):
     return ('away '+fmt(o['away_spread'])+' '+price(o['away_spread_price'])+', ML '+price(o['away_ml'])+'; home '+fmt(o['home_spread'])+' '+price(o['home_spread_price'])+', ML '+price(o['home_ml'])+'; o'+fmt(o['over_total'])+' '+price(o['over_price'])+' / u'+fmt(o['under_total'])+' '+price(o['under_price']))
 def source(o):return o['book']+(' single-book fallback' if o['source_type']=='IDENTIFIED_SINGLE_BOOK_FALLBACK' else ' mixed-book fallback, constituents unidentified')+(' response recovered by ' if o['retrieval_precision']=='RECOVERED_BY' else ' retrieved ')+o['retrieved_at']+' ('+o['retrieval_precision']+' precision) — '+quote(o)+'; offer-update UNKNOWN; execution UNVERIFIED; '+o['source_url']
 
+def closed_conditional(row,as_of):
+    """An elapsed immutable final cutoff closes betting, not recorded history."""
+    return (row['state']=='CONDITIONAL' and row.get('planning_cutoff_utc') is not None
+            and clock(row['planning_cutoff_utc'])<=clock(as_of))
+
+
+def conditional_boundary(row,packet,market,decision,profile):
+    """Validate retained Week8 history at its genuine originating source boundary.
+
+    Exact origin equality and ordinary validation still apply. No new/changed
+    recommendation, expired renewal or current execution is authorized here.
+    """
+    cfg=profile_config(profile)
+    if profile!='WEEK8' or not closed_conditional(row,packet['as_of_utc']):
+        return packet['as_of_utc'],None
+    if row['state_evidence']==packet['cycle_id']:
+        raise ValueError('closed conditional cannot originate in current cycle')
+    def origin(content,tag):
+        matches=[json.loads(m[1],object_pairs_hook=unique) for m in re.finditer(
+            r'^```'+tag+r'\n(.*?)^```[ \t]*$',content,re.M|re.S)]
+        matches=[p for p in matches if p['cycle_id']==row['state_evidence']]
+        if len(matches)!=1:raise ValueError('retained conditional origin missing/ambiguous')
+        return matches[0]
+    d=origin(decision,cfg['decision_tag']);m=origin(market,cfg['market_tag'])
+    if (d['schema']!=CONDITIONAL_DECISION_SCHEMA or m['schema']!=WEEKLY_MARKET_SCHEMA
+            or d['as_of_utc']!=m['as_of_utc'] or clock(d['as_of_utc'])>=clock(packet['as_of_utc'])):
+        raise ValueError('retained conditional paired origin invalid')
+    originals=[r for r in d['rows'] if r['game_id']==row['game_id']]
+    sources=[r for r in m['rows'] if r['game_id']==row['game_id']]
+    if len(originals)!=1 or originals[0]!=row or len(sources)!=1:
+        raise ValueError('retained conditional differs from exact origin')
+    return d['as_of_utc'],sources[0]
+
+
 def state_evidence(row,packet,content,kickoff,now,decision_tag=DECISION_TAG,gaps=None):
     recorded=clock(row['state_recorded_at_utc']);proof=row['state_evidence']
     if recorded>clock(packet['as_of_utc']) or recorded>now:raise ValueError('future state evidence')
@@ -179,7 +213,9 @@ def state_evidence(row,packet,content,kickoff,now,decision_tag=DECISION_TAG,gaps
         if not cycle_at<=recorded<=clock(origin['as_of_utc']):raise ValueError('backdated typed decision')
         if kickoff is not None and clock(origin['as_of_utc'])>=kickoff:raise ValueError('postkickoff decision reconstruction')
     if kickoff is not None and kickoff<=now:
-        if row['state']!='PASS' or recorded>=kickoff:raise ValueError('elapsed game requires proved prospective PASS')
+        retained=(decision_tag==profile_config('WEEK8')['decision_tag'] and closed_conditional(row,now.isoformat())
+                  and proof!=packet['cycle_id'])
+        if (row['state']!='PASS' and not retained) or recorded>=kickoff:raise ValueError('elapsed game requires proved prospective PASS')
 
 def inputs(market,decision,lineage,as_of,profile='WEEK7'):
     cfg=profile_config(profile);market_tag=cfg['market_tag'];decision_tag=cfg['decision_tag']
@@ -221,7 +257,10 @@ def inputs(market,decision,lineage,as_of,profile='WEEK7'):
                 state_evidence(row,packet,decision,kick,clock(packet['as_of_utc']),decision_tag,gaps)
                 if row['state']=='CONDITIONAL':
                     from cfb_conditional_recommendation_profile import validate
-                    validate(row,source_row,c[row['game_id']],packet['as_of_utc'],cfg['lineage'])
+                    boundary,original_source=conditional_boundary(row,packet,market,decision,profile)
+                    if original_source is not None and any(source_row[k]!=original_source[k] for k in ('kickoff_utc','kickoff_source_url','kickoff_status')):
+                        raise ValueError('retained conditional kickoff binding changed')
+                    validate(row,original_source or source_row,c[row['game_id']],boundary,cfg['lineage'])
                 elif row['state'] not in (('PASS','INCONCLUSIVE','HISTORICAL_GAP') if gaps else ('PASS','INCONCLUSIVE')) or row['review_ref'] is not None:
                     raise ValueError('unsupported conditional history state/review')
                 else:
@@ -282,7 +321,8 @@ def inputs(market,decision,lineage,as_of,profile='WEEK7'):
             state_evidence(r,d,decision,k,now,decision_tag,gaps)
         if r['state']=='CONDITIONAL':
             from cfb_conditional_recommendation_profile import validate
-            validate(r,mr[gid],c[gid],as_of,cfg['lineage'])
+            boundary,original_source=conditional_boundary(r,d,market,decision,profile)
+            validate(r,original_source or mr[gid],c[gid],boundary,cfg['lineage'])
         if deadline and k and deadline>=k:raise ValueError('reconciliation cannot wait until kickoff')
         if r['planning_cutoff_utc'] is not None:
             cut=clock(r['planning_cutoff_utc'])
@@ -303,7 +343,8 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
             section=day if day!='SATURDAY' else 'SATURDAY MORNING' if ct.hour<12 else 'SATURDAY AFTERNOON' if ct.hour<17 else 'SATURDAY EVENING/NIGHT'
             display=ct.strftime('%a %b %d %-I:%M %p CT')+(' [RETAINED_UNVERIFIED]' if x['kickoff_status']=='RETAINED_UNVERIFIED' else '')
         elapsed=kick is not None and clock(kick)<=clock(as_of)
-        if elapsed:display+=(' [MISSED PRE-EVENT DECISION — permanent history gap; no execution]' if y['state']=='HISTORICAL_GAP' else ' [AT/PAST SAVED KICKOFF — historical PASS; no execution]')
+        if elapsed and y['state']=='CONDITIONAL':display+=' [AT/PAST SAVED KICKOFF — retained conditional history; execution tracked separately]'
+        elif elapsed:display+=(' [MISSED PRE-EVENT DECISION — permanent history gap; no execution]' if y['state']=='HISTORICAL_GAP' else ' [AT/PAST SAVED KICKOFF — historical PASS; no execution]')
         roles='CONSENSUS_UNAVAILABLE; Caesars UNVERIFIED; '
         current=roles+(source(x['current']) if x['current'] else 'CURRENT QUOTE UNAVAILABLE'+('; historical retained '+source(x['retained']) if x['retained'] else ''))
         if m['schema']==WEEKLY_MARKET_SCHEMA and x['diagnostic'] is not None:
@@ -316,10 +357,16 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
         row=[display,c[gid]['away_team']+' @ '+c[gid]['home_team'],model_display,current,movement,y['state'],y['reason'],cutoff,'Not established; no executable recommendation']
         if y['state']=='CONDITIONAL':
             from cfb_conditional_recommendation_profile import display as conditional_display
-            row[8],reference_context=conditional_display(y,x,c[gid],as_of,cfg['lineage'])
+            boundary,original_source=conditional_boundary(y,d,market,decision,profile)
+            row[8],reference_context=conditional_display(y,original_source or x,c[gid],boundary,cfg['lineage'])
             row[3]=reference_context+'; Caesars NOT_CHECKED; fallback observation retained separately: '+current[len(roles):]
             row[6]='CONTROLLED BETA CONDITIONAL — '+y['reason']+'; review '+y['review_ref']['blob']
             row[7]=cutoff.replace('CUTOFF_AUTHORITY_UNVERIFIED','CUTOFF_REVIEW_EVIDENCED_NOT_EXECUTION_VERIFIED')
+            if original_source is not None:
+                row[5]='HISTORICAL CONDITIONAL — WINDOW CLOSED'
+                row[6]='RETAINED PRE-EVENT REVIEW ONLY — '+y['reason']+'; original review '+y['review_ref']['blob']
+                row[8]='WINDOW CLOSED; no new wager or chase; original limits retained in history; execution tracked separately'
+                row[3]='HISTORICAL REVIEW REFERENCE at '+boundary+'; '+row[3]
         groups[section].append((kick or '9999',gid,row))
     lines=[f"# CFB Week{cfg['week']} neutral source-derived Hot Sheet",'', '**Presentation schema:** '+('CFB_NEUTRAL_WEEKLY_PUBLICATION_V2' if m['schema']==WEEKLY_MARKET_SCHEMA else 'CFB_NEUTRAL_PUBLICATION_V1'),'**Cycle:** '+m['cycle_id'],'**Publication boundary:** '+m['as_of_utc'],'**Scope:** canonical neutral display only; source/kickoff/execution truth and full-run completion require independent qualification.', f"**Frozen-model boundary:** Original accepted FIRST_FROZEN cutoff 2026-09-26T03:47:37.497112+00:00; {cfg['predictions']} predictions and {cfg['exclusions']} exclusions; no REFRESH substitution.",f'**Canonical inputs:** market {blob(market)}; decision {blob(decision)}; execution {blob(execution)}; scorecard {blob(scorecard)}.', '**Neutral summary:** '+str(sum(r['state']=='INCONCLUSIVE' for r in dr.values()))+' INCONCLUSIVE; '+str(sum(r['state']=='PASS' for r in dr.values()))+' PASS; no actionable recommendation; consensus unavailable; Caesars unverified; practical cutoffs unverified.','']
     if conditional:
@@ -327,11 +374,13 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
         lines[2]='**Presentation schema:** CFB_WEEKLY_CONDITIONAL_PUBLICATION_V3'
         lines[5]='**Scope:** canonical conditional display from immutable prospective review; no verified venue offer, automatic bet or full-run acceptance.'
         lines[8]='**Decision summary:** '+str(sum(r['state']=='INCONCLUSIVE' for r in dr.values()))+' INCONCLUSIVE; '+str(sum(r['state']=='PASS' for r in dr.values()))+' PASS; '+str(sum(r['state']=='CONDITIONAL' for r in dr.values()))+' CONDITIONAL; venue confirmation separate; no recorded execution created.'
+    closed_count=sum(profile=='WEEK8' and closed_conditional(r,as_of) for r in dr.values())
+    if closed_count:lines+=['**Closed conditional history:** '+str(closed_count)+' retained pre-event reviews; windows closed; excluded from current opportunities; actual executions remain separately recorded.','']
     gap_count=sum(r['state']=='HISTORICAL_GAP' for r in dr.values())
     if gap_count:lines+=['**Permanent coverage gaps:** '+str(gap_count)+' HISTORICAL_GAP; missing pre-event decisions, never PASS or recommendations. Remaining research and natural delivery are not certified by this display.','']
     section_order=SECTIONS
     if m['schema']==WEEKLY_MARKET_SCHEMA:
-        active=[s for s in SECTIONS if any(dr[gid]['state'] not in ('PASS','HISTORICAL_GAP') for _,gid,_ in groups[s])]
+        active=[s for s in SECTIONS if any(dr[gid]['state'] not in ('PASS','HISTORICAL_GAP') and not (profile=='WEEK8' and closed_conditional(dr[gid],as_of)) for _,gid,_ in groups[s])]
         primary=active[0] if active else 'NONE'
         lines+=['**Primary section:** '+primary+' — '+('earliest open neutral decision section; saved kickoff qualification labels remain applicable' if active else 'no open neutral decisions; all governed games remain visible below'), '']
         section_order=active+[s for s in SECTIONS if s not in active]
@@ -341,7 +390,7 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
         lines+=['| Kickoff CT | Game | Engine Prediction (Frozen) | Current qualified market / price | Movement from first observation | Decision state | Pending reason / information | Reconciliation deadline / final execution cutoff | Acceptable number / execution window |','|---|---|---|---|---|---|---|---|---|']
         for _,gid,r in sorted(groups[s]):lines+=['| '+' | '.join(r)+' |']
         lines+=['']
-    watchlist='Conditional recommendations are shown in their chronological rows; all original limits apply; venue confirmation pending.' if conditional and any(r['state']=='CONDITIONAL' for r in dr.values()) else 'No actionable neutral-schema recommendations. See chronological rows for pending information.'
+    watchlist='Conditional recommendations are shown in their chronological rows; all original limits apply; venue confirmation pending.' if conditional and any(r['state']=='CONDITIONAL' and not (profile=='WEEK8' and closed_conditional(r,as_of)) for r in dr.values()) else 'No actionable neutral-schema recommendations. See chronological rows for pending information.'
     lines+=['## PRIORITY WATCHLIST','',watchlist,'','## FULL WEEKLY SLATE','',str(cfg['count'])+' governed games; exactly once across chronological sections. Counts: '+json.dumps({s:len(groups[s]) for s in SECTIONS})+'.','']
     return '\n'.join(lines)
 
