@@ -66,6 +66,3 @@ External evidence recovered during this QA:
 - Official Big Ten availability-report doorway: https://bigten.org/fb/availability-reports/ (recovered 2026-10-24; player-level UCLA–Michigan State extraction unavailable in this bounded pass).
 
 QA_RESULT: PASS_PENDING_DURABLE_TERMINAL_SEQUENCE
-8833 8839 evidence/operational/CFB_WEEK8_GAME_DAY_PREKICKOFF_QA_20261024T140313Z.md
-fe751f54cd6352815c069d733663c5d9e39782492b56607fb3092be9dedc4315  evidence/operational/CFB_WEEK8_GAME_DAY_PREKICKOFF_QA_20261024T140313Z.md
-272b3ee0e4eadf3b2ef1995b7cba688f83e87bcb
