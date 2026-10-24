@@ -1,0 +1,66 @@
+{
+  "audit_observed_at_utc": "2026-10-24T03:23:58.632630+00:00",
+  "durable_remote_freeze": "NOT_CERTIFIED_BY_LOCAL_AUDIT",
+  "earliest_qualified_kickoff_utc": "2026-10-24T16:00:00+00:00",
+  "freeze_recorded_at_utc": "2026-10-24T03:21:59.581780+00:00",
+  "game_exclusions": 0,
+  "independent_prediction_fields": 132,
+  "manifest_sha256": "634f562cdf56d8ec0a2809fe66b70d09cef44906f633cd31142fbdcad346c0f7",
+  "max_absolute_prediction_difference": 2.842170943040401e-14,
+  "negative_controls": [
+    {
+      "case": "prediction",
+      "reason": "INDEPENDENT_PREDICTION_MISMATCH",
+      "verdict": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "case": "original_date",
+      "reason": "ORIGINAL_TARGET_FIELDS_RETIMED",
+      "verdict": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "case": "qualified_kickoff",
+      "reason": "ROW_CUTOFF_OR_KICKOFF",
+      "verdict": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "case": "freeze_clock",
+      "reason": "PRE_EVENT_FREEZE_CLOCKS",
+      "verdict": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "case": "omitted_row",
+      "reason": "PREDICTION_ELIGIBILITY_UNION",
+      "verdict": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "case": "s0_control",
+      "reason": "S0_CONTROL_CHANGED",
+      "verdict": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "case": "forbidden_join",
+      "reason": "FREEZE_FORBIDDEN_JOIN",
+      "verdict": "REJECTED_AS_REQUIRED"
+    }
+  ],
+  "outcomes_opened": false,
+  "output_sha256": {
+    "s2_k1_game_exclusions.csv": "1f3cd453680b613d1856d0f1eb5619d38cf876b0bda601d50283ed5b9ff92eeb",
+    "s2_k1_predictions.csv": "dbace5796d16023a43a46e493f1d883be94f4bdc3ed668302314a4dda2991a6e",
+    "s2_k1_side_exclusions.csv": "524bfc56118bccedc7d042f3a3a0bdc94974515781d25b5fe056f3495205c7a8"
+  },
+  "parent_targets": 440,
+  "prediction_completed_at_utc": "2026-10-24T03:22:00.044035+00:00",
+  "prediction_rows": 44,
+  "production_effect": "NONE",
+  "projected_targets": 44,
+  "projection_acceptance_ref": {
+    "blob": "487541ad0936310bab9fd168e36a38d7d7642c5c",
+    "commit": "0e5e1f2341e906beff8327811471da8f4bafe20c",
+    "path": "evidence/qa_s2_projections/CFB_S2_WEEK8_PROJECTION_ACCEPTANCE_20261024T031931Z.json"
+  },
+  "scoring_authorized": false,
+  "side_exclusions": 0,
+  "verdict": "PASS_INDEPENDENT_S2_PRE_EVENT_PREDICTION_BYTES_ONLY"
+}
