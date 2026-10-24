@@ -58,4 +58,14 @@ No canonical market, decision, execution, scorecard, money, model or Hot Sheet m
 
 Next safe action: the sole Market Monitor may use later genuinely qualified source/review evidence prospectively, while preserving all original limits and closed cutoffs. Sunday Weekly QA may score only authoritative finals against genuine pre-event FIRST_FROZEN and established executions; S2 scoring remains separately gated.
 
+External evidence recovered during this QA:
+
+- Current CBS Week8 board: https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-8/ (opened 2026-10-24 approximately 09:05 CT; lines subject to change; unidentified mixed-book fallback).
+- Final LSU–Auburn availability reporting: https://www.andthevalleyshook.com/lsu-tigers-football/54682/fridays-lsu-vs-auburn-injury-report-treydez-green-still-not-listed (published/recovered 2026-10-24).
+- Texas pass-rush availability context: https://www.burntorangenation.com/texas-longhorns-football/106184/texas-longhorns-pass-rush-injuries-colin-simmons (published 2026-10-23; recovered 2026-10-24).
+- Official Big Ten availability-report doorway: https://bigten.org/fb/availability-reports/ (recovered 2026-10-24; player-level UCLA–Michigan State extraction unavailable in this bounded pass).
+
 QA_RESULT: PASS_PENDING_DURABLE_TERMINAL_SEQUENCE
+8833 8839 evidence/operational/CFB_WEEK8_GAME_DAY_PREKICKOFF_QA_20261024T140313Z.md
+fe751f54cd6352815c069d733663c5d9e39782492b56607fb3092be9dedc4315  evidence/operational/CFB_WEEK8_GAME_DAY_PREKICKOFF_QA_20261024T140313Z.md
+272b3ee0e4eadf3b2ef1995b7cba688f83e87bcb
