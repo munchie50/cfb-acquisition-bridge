@@ -100,7 +100,7 @@ def audit(market, decision, lineage, as_of, profile='WEEK7'):
         if row['state'] == 'CONDITIONAL':
             rows.append({'game_id': gid, 'state': 'CONDITIONAL',
                          'recommendation_blockers': [],
-                         'disposition': 'REVIEW_EVIDENCED_CONDITIONAL_NOT_VERIFIED_EXECUTION',
+                         'disposition': ('HISTORICAL_CONDITIONAL_WINDOW_CLOSED' if gate.closed_conditional(row,as_of) else 'REVIEW_EVIDENCED_CONDITIONAL_NOT_VERIFIED_EXECUTION'),
                          'review_ref': row['review_ref'], 'venue_confirmation': 'PENDING'})
             continue
         review = {name: 'UNREVIEWED' for name in REVIEW_FIELDS}
