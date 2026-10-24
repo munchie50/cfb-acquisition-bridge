@@ -1,0 +1,96 @@
+{
+  "schema": "CFB_S2_PROSPECTIVE_FREEZE_ACCEPTANCE_V1",
+  "accepted_at_utc": "2026-10-24T03:31:04.430848+00:00",
+  "status": "PRE_EVENT_PREDICTION_BYTES_FROZEN_STUDY_ONLY",
+  "scope": "44_GAME_S2_K1_FREEZE_ONLY_NO_OUTCOME_SCORING_SCIENTIFIC_PROMOTION_OR_PRODUCTION",
+  "candidate_id": "S2_K1",
+  "k": 1,
+  "parent_snapshot_cutoff_utc": "2026-10-13T15:13:13.866672+00:00",
+  "control": "EXACT_ACCEPTED_OCT13_S0_REFRESH_SAME_44_GAMES_NOT_OPERATIONAL_FIRST_FROZEN_SUBSTITUTION",
+  "projection_acceptance_ref": {
+    "path": "evidence/qa_s2_projections/CFB_S2_WEEK8_PROJECTION_ACCEPTANCE_20261024T031931Z.json",
+    "commit": "0e5e1f2341e906beff8327811471da8f4bafe20c",
+    "blob": "487541ad0936310bab9fd168e36a38d7d7642c5c"
+  },
+  "output_refs": [
+    {
+      "path": "evidence/qa_s2_freezes/CFB_S2_WEEK8_20261024T032159Z/s2_k1_predictions.csv",
+      "commit": "e3bdeeff86e39bf82f702e8684b2be7695f730ae",
+      "blob": "98e199802286c75ef89077361469024c7e22f037",
+      "sha256": "dbace5796d16023a43a46e493f1d883be94f4bdc3ed668302314a4dda2991a6e",
+      "committed_at_utc": "2026-10-24T03:25:40+00:00",
+      "committed_at_source": "2026-10-23T22:25:40-05:00"
+    },
+    {
+      "path": "evidence/qa_s2_freezes/CFB_S2_WEEK8_20261024T032159Z/s2_k1_side_exclusions.csv",
+      "commit": "e548832c2a081df157d3a03b5807ff7d9a44ff7d",
+      "blob": "abe546138ce6167a3ff20c0e5bbc9523f800f1c6",
+      "sha256": "524bfc56118bccedc7d042f3a3a0bdc94974515781d25b5fe056f3495205c7a8",
+      "committed_at_utc": "2026-10-24T03:25:43+00:00",
+      "committed_at_source": "2026-10-23T22:25:43-05:00"
+    },
+    {
+      "path": "evidence/qa_s2_freezes/CFB_S2_WEEK8_20261024T032159Z/s2_k1_game_exclusions.csv",
+      "commit": "d6e77aa78eb457a3f30fdd35a40403f152db4bf2",
+      "blob": "7270d1cb8e6f9604bef1d30e915f611e08fcb3f4",
+      "sha256": "1f3cd453680b613d1856d0f1eb5619d38cf876b0bda601d50283ed5b9ff92eeb",
+      "committed_at_utc": "2026-10-24T03:25:45+00:00",
+      "committed_at_source": "2026-10-23T22:25:45-05:00"
+    },
+    {
+      "path": "evidence/qa_s2_freezes/CFB_S2_WEEK8_20261024T032159Z/manifest.json",
+      "commit": "acb57415bdc03adcdd9169cdbf29255dfe623815",
+      "blob": "9bc29d06fa2cab99590090df6fb1092706c8d7f0",
+      "sha256": "634f562cdf56d8ec0a2809fe66b70d09cef44906f633cd31142fbdcad346c0f7",
+      "committed_at_utc": "2026-10-24T03:25:47+00:00",
+      "committed_at_source": "2026-10-23T22:25:47-05:00"
+    }
+  ],
+  "durable_readback_observed_at_utc": "2026-10-24T03:28:17.691599+00:00",
+  "independent_verification": {
+    "audit_observed_at_utc": "2026-10-24T03:28:16.188301+00:00",
+    "durable_remote_freeze": "NOT_CERTIFIED_BY_LOCAL_AUDIT",
+    "earliest_qualified_kickoff_utc": "2026-10-24T16:00:00+00:00",
+    "freeze_recorded_at_utc": "2026-10-24T03:21:59.581780+00:00",
+    "game_exclusions": 0,
+    "independent_prediction_fields": 132,
+    "manifest_sha256": "634f562cdf56d8ec0a2809fe66b70d09cef44906f633cd31142fbdcad346c0f7",
+    "max_absolute_prediction_difference": 2.842170943040401e-14,
+    "outcomes_opened": false,
+    "output_sha256": {
+      "s2_k1_game_exclusions.csv": "1f3cd453680b613d1856d0f1eb5619d38cf876b0bda601d50283ed5b9ff92eeb",
+      "s2_k1_predictions.csv": "dbace5796d16023a43a46e493f1d883be94f4bdc3ed668302314a4dda2991a6e",
+      "s2_k1_side_exclusions.csv": "524bfc56118bccedc7d042f3a3a0bdc94974515781d25b5fe056f3495205c7a8"
+    },
+    "parent_targets": 440,
+    "prediction_completed_at_utc": "2026-10-24T03:22:00.044035+00:00",
+    "prediction_rows": 44,
+    "production_effect": "NONE",
+    "projected_targets": 44,
+    "projection_acceptance_ref": {
+      "blob": "487541ad0936310bab9fd168e36a38d7d7642c5c",
+      "commit": "0e5e1f2341e906beff8327811471da8f4bafe20c",
+      "path": "evidence/qa_s2_projections/CFB_S2_WEEK8_PROJECTION_ACCEPTANCE_20261024T031931Z.json"
+    },
+    "scoring_authorized": false,
+    "side_exclusions": 0,
+    "verdict": "PASS_INDEPENDENT_S2_PRE_EVENT_PREDICTION_BYTES_ONLY"
+  },
+  "independent_audit_ref": {
+    "path": "evidence/audits/CFB_S2_WEEK8_20261024T032159Z_INDEPENDENT_AUDIT.json",
+    "commit": "281e616a7e373617c4e28909917cb9e0fd11f11d",
+    "blob": "5b2826ddb0fa15f7ee02a7a6f81a119aeee39615"
+  },
+  "independent_auditor_ref": {
+    "path": "evidence/audits/cfb_s2_week8_freeze_audit_2026_10_23.py",
+    "commit": "812da05f71c9a8cb65d799b1c73d3bcb78819df7",
+    "blob": "ae9ffdd640b014c642cbf370cd4be9f0d73aacfd"
+  },
+  "durable_remote_freeze": "ALL_FOUR_OUTPUTS_PERSISTED_AND_INDEPENDENTLY_READ_BACK_BEFORE_EARLIEST_QUALIFIED_KICKOFF",
+  "negative_controls": "SEVEN_CORRUPTED_COPIES_REJECTED_WITH_UPDATED_BYTE_HASHES; ORIGINAL_OUTPUTS_UNCHANGED",
+  "target_outcomes_opened": false,
+  "scoring_authorized": false,
+  "scientific_superiority_accepted": false,
+  "production_effect": "NONE",
+  "champion_effect": "NONE"
+}
