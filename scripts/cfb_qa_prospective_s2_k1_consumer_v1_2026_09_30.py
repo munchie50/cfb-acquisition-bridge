@@ -30,20 +30,26 @@ assert len(MAPPED)==10 and len(S1ONLY)==7
 from cfb_qa_s2_k1_input_gate import load_inputs
 targetsidep, targetledgerp, basep, ctxp, fitdir, outdir = map(Path,sys.argv[1:7])
 cutoff=pd.Timestamp(sys.argv[7])
-if len(sys.argv)!=9 or sys.argv[8] not in ('--readiness-only','--execute-prospective'):
+if len(sys.argv) not in (9,11) or sys.argv[8] not in ('--readiness-only','--execute-prospective') or (len(sys.argv)==11 and sys.argv[9]!='--projection-acceptance-ref'):
     raise SystemExit('EXPLICIT_MODE_REQUIRED_USE_READINESS_ONLY_OR_EXECUTE_PROSPECTIVE')
 assert cutoff.tz is not None
 frames,input_audit=load_inputs(targetsidep,targetledgerp,basep,ctxp,cutoff)
 S,G,B,C=(frames[k] for k in ('side','target','baseline','context'))
+projection_context=None
+if len(sys.argv)==11:
+    from cfb_qa_s2_k1_projection import apply_accepted_projection
+    acceptance_ref=json.loads(Path(sys.argv[10]).read_text())
+    frames,projection_context=apply_accepted_projection(targetledgerp.parent.parent,acceptance_ref,datetime.now(timezone.utc).isoformat())
+    S,G,B,C=(frames[k] for k in ('side','target','baseline','context'))
 s0_eligible=set(frames['predicted'].game_id)
 # Readiness uses the true observed clock; original source cutoff is never retimed.
 freeze_recorded_at_utc=datetime.now(timezone.utc).isoformat()
-future=pd.to_datetime(G.start_date,utc=True)>pd.Timestamp(freeze_recorded_at_utc)
+future=(pd.to_datetime(G.game_id.map(projection_context['qualified_kickoffs_utc']),utc=True) if projection_context else pd.to_datetime(G.start_date,utc=True))>pd.Timestamp(freeze_recorded_at_utc)
 if '--readiness-only' in sys.argv[8:]:
     print(json.dumps({**input_audit,'observed_at_utc':freeze_recorded_at_utc,
         'future_at_saved_kickoff':int(future.sum()),'elapsed_at_saved_kickoff':int((~future).sum()),
         'kickoff_truth':'ACCEPTED_SOURCE_ONLY_NOT_CURRENT_REQUALIFICATION',
-        'freeze_ready':False,'next_proof':'independent future-only projection/freeze qualification; synthetic numerical equivalence is separately tested'},indent=2))
+        'freeze_ready':False,'active_targets':len(G),'active_context_rows':len(C),'projection':projection_context,'next_proof':'independent future-only projection/freeze qualification; synthetic numerical equivalence is separately tested'},indent=2))
     raise SystemExit(0)
 if '--execute-prospective' not in sys.argv[8:]:
     raise SystemExit('EXPLICIT_PROSPECTIVE_EXECUTION_REQUIRED_USE_READINESS_ONLY')
@@ -212,6 +218,13 @@ if len(P):
     P['consumer_git_blob']=hashlib.sha1(b'blob '+str(len(consumer_bytes)).encode()+b'\0'+consumer_bytes).hexdigest()
     P['input_gate_sha256']=input_audit['input_gate_sha256']
     for kind,digest in input_audit['raw_source_sha256'].items():P['raw_'+kind+'_sha256']=digest
+if len(P) and projection_context:
+    P['qualified_kickoff_utc']=P.game_id.map(projection_context['qualified_kickoffs_utc'])
+    P['projection_sha256']=projection_context['projection_sha256']
+    for kind,digest in projection_context['projected_input_sha256'].items():P[kind+'_projected_sha256']=digest
+prediction_completed_at_utc=datetime.now(timezone.utc).isoformat()
+if projection_context:
+    assert all(pd.Timestamp(k)>pd.Timestamp(prediction_completed_at_utc) for k in projection_context['qualified_kickoffs_utc'].values())
 P.to_csv(outdir/"s2_k1_predictions.csv",index=False)
 E.to_csv(outdir/"s2_k1_side_exclusions.csv",index=False)
 GE.to_csv(outdir/"s2_k1_game_exclusions.csv",index=False)
@@ -223,6 +236,7 @@ manifest={
  "coefficient_sha256":"bf15ce41180bfb4e250d311df279e98c13b65432756ae07f7a30264cbae0e221",
  "scaling_sha256":"68fb5193ccb8828ac8d34dfe820101181c2bde078a04a6d5afd4c08bcf0cab45",
  "input_sha256":input_audit["input_sha256"],
+ "projection":projection_context,"prediction_completed_at_utc":prediction_completed_at_utc,
  "input_acceptance_records":input_audit["acceptance_records"],
  "raw_source_sha256":input_audit["raw_source_sha256"],
  "input_gate_sha256":input_audit["input_gate_sha256"],
