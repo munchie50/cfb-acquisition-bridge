@@ -8,6 +8,10 @@ on:
       - 'scripts/cfb_qa_prospective_s2_k1_consumer_v1_2026_09_30.py'
       - 'scripts/cfb_qa_prospective_s2_k1_consumer_static_gate.py'
       - 'scripts/cfb_qa_s2_k1_input_gate.py'
+      - 'scripts/cfb_qa_s2_k1_projection.py'
+      - 'scripts/test_cfb_qa_s2_k1_projection.py'
+      - 'evidence/qa_s2_projections/*.json'
+      - 'evidence/qa_s2_projections/CFB_S2_WEEK8_PROJECTION_PROTOCOL_2026-10-23.md'
       - 'scripts/test_cfb_qa_s2_k1_input_gate.py'
       - 'scripts/test_cfb_qa_s2_k1_zero_history.py'
       - '.github/workflows/cfb_qa_prospective_s2_k1_consumer_spec_static_gate.yml'
@@ -46,3 +50,4 @@ jobs:
           python scripts/cfb_qa_prospective_s2_k1_consumer_static_gate.py
           CFB_S2_FROZEN_FIT="$RUNNER_TEMP/s2_frozen_fit" python -m unittest discover -s scripts -p test_cfb_qa_s2_k1_input_gate.py
           python -m unittest discover -s scripts -p test_cfb_qa_s2_k1_zero_history.py
+          python -m unittest discover -s scripts -p test_cfb_qa_s2_k1_projection.py
