@@ -3,7 +3,13 @@ from pathlib import Path
 p=Path("scripts/cfb_qa_prospective_s2_k1_consumer_v1_2026_09_30.py").read_text()
 required=[
  'MAPPED=set(MAP); S1ONLY=set(FEATURES)-MAPPED',
- 'G=pd.read_csv(targetledgerp,dtype={"game_id":str})',
+ 'frames,input_audit=load_inputs(targetsidep,targetledgerp,basep,ctxp,cutoff)',
+ "S,G,B,C=(frames[k] for k in ('side','target','baseline','context'))",
+ "r.game_id not in s0_eligible",
+ "'--readiness-only'",
+ "'--execute-prospective'",
+ 'ELAPSED_TARGETS_PROHIBITED_REQUIRE_QUALIFIED_FUTURE_ONLY_BOUNDARY',
+ '"input_sha256":input_audit["input_sha256"]',
  'len(MAPPED)==10 and len(S1ONLY)==7',
  'n/(n+1.0)*float(raw)+1/(n+1.0)*float(b)',
  'resid=opponent_residuals(no, rawo, bo)',
@@ -11,7 +17,7 @@ required=[
  'resid = np.zeros(len(no), dtype=float)',
  'np.isfinite(rawo[positive]).all()',
  'resid[positive] = (no[positive] / (no[positive] + 1.0) * rawo[positive] +',
- 's2=s1+float(resid.mean())',
+ 's2=s1-float(resid.mean())',
  'candidate_id":"S2_K1"',
  '"k":1',
  'bf15ce41180bfb4e250d311df279e98c13b65432756ae07f7a30264cbae0e221',
@@ -32,5 +38,5 @@ required=[
 for x in required: assert x in p, f"missing S2_K1 invariant: {x}"
 for forbidden in ("pyreadr","read_parquet","cfb_schedules_2026","pbp_2026","S2_K1_CONSUMER_ROLE_VENUE_INTERFACE_REQUIRED","k={1,2,4,8}"):
     assert forbidden not in p, f"consumer reopened forbidden/raw surface: {forbidden}"
-assert p.count("s2=s1+") == 1
+assert p.count("s2=s1-") == 1
 print("PASS_PROSPECTIVE_S2_K1_CONSUMER_STATIC_GATE")

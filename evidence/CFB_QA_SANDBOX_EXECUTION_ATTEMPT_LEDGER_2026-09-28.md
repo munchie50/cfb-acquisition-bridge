@@ -85,3 +85,8 @@ Earlier historical ledger rows remain unchanged.
 v0 quarantine and v1 unaccepted source remain preserved; no earlier version is silently promoted. Local audit SHA stop caused by added trailing newline in staging was corrected by restoring exact connector bytes and verifying Git blobs; no producer mutation. Initial sandbox data-reader install failed; approved install succeeded. No invariant was relaxed.
 Source-context acceptance details: CFB_QA_S2_K1_SOURCE_CONTEXT_V4_ACCEPTANCE_2026-09-29.md. Immutable original manifests remain EXECUTED_NOT_ACCEPTED; post-run acceptance is separate.
 Global dependency reconsideration: infrastructure closed; current frontier is weekly cadence/preflight before any S2 prediction freeze. No prospective S2 predictions, outcomes, refit, TEST access or production changes.
+
+
+## October23 CT manual consumer-readiness checkpoint
+
+User-authorized bounded backlog work; not a prospective prediction/freeze run. Corrected prospective sign against accepted historical generator40447984a58dbc530cbe942bc1176f0c5bcbe9b2 and added exact accepted-input projections/eligibility/chronology/admission checks.25 synthetic/rejection tests and8740 actual accepted mapped-feature-only checks passed. Full synthetic prediction test used only fake target data and frozen coefficients/scaling; no actual S2 prediction set, scoring, protected2025 data or Champion change. Current checkpoint and evidence/audits/CFB_S2_CONSUMER_READINESS_20261023.json govern details. Next gate: independently qualified future-only projection/freeze. Original440-target live execution remains blocked because elapsed targets cannot be backfilled. Integration CI and separate closure are required before calling the implementation integrated.

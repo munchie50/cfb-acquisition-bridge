@@ -2,6 +2,7 @@
 """Prospective QA-only S2_K1 consumer. Requires accepted same-cutoff inputs; no outcomes."""
 import sys,json,hashlib
 from pathlib import Path
+from datetime import datetime,timezone
 import pandas as pd, numpy as np
 
 def opponent_residuals(no, rawo, bo):
@@ -19,19 +20,36 @@ def opponent_residuals(no, rawo, bo):
                        1 / (no[positive] + 1.0) * bo[positive]) - bo[positive]
     return resid
 
-targetsidep, targetledgerp, basep, ctxp, fitdir, outdir = map(Path,sys.argv[1:7])
-cutoff=pd.Timestamp(sys.argv[7]); outdir.mkdir(parents=True,exist_ok=True)
-assert cutoff.tz is not None
-S=pd.read_csv(targetsidep,dtype={"game_id":str})
-G=pd.read_csv(targetledgerp,dtype={"game_id":str})
-B=pd.read_csv(basep,dtype={"game_id":str})
-C=pd.read_csv(ctxp,dtype={"target_game_id":str,"source_game_id":str})
-
 FEATURES=["points_for_per_game","points_against_per_game","offensive_scrimmage_plays_per_game","defensive_scrimmage_plays_per_game","offensive_yards_per_play","defensive_yards_per_play","rush_play_rate","pass_play_rate","rush_yards_per_play","pass_yards_per_play","interception_rate","rest_days","offensive_explosive_play_rate","defensive_explosive_play_rate","offensive_success_rate","defensive_success_rate_allowed","average_starting_yards_to_goal"]
 MAP={"points_for_per_game":"points_against_per_game","points_against_per_game":"points_for_per_game","offensive_scrimmage_plays_per_game":"defensive_scrimmage_plays_per_game","defensive_scrimmage_plays_per_game":"offensive_scrimmage_plays_per_game","offensive_yards_per_play":"defensive_yards_per_play","defensive_yards_per_play":"offensive_yards_per_play","offensive_explosive_play_rate":"defensive_explosive_play_rate","defensive_explosive_play_rate":"offensive_explosive_play_rate","offensive_success_rate":"defensive_success_rate_allowed","defensive_success_rate_allowed":"offensive_success_rate"}
 MAPPED=set(MAP); S1ONLY=set(FEATURES)-MAPPED
 assert len(MAPPED)==10 and len(S1ONLY)==7
 
+# Only explicit allowlisted projections reach the transform. Same-cutoff input
+# acceptance remains a separately proved prerequisite; this is not acceptance.
+from cfb_qa_s2_k1_input_gate import load_inputs
+targetsidep, targetledgerp, basep, ctxp, fitdir, outdir = map(Path,sys.argv[1:7])
+cutoff=pd.Timestamp(sys.argv[7])
+if len(sys.argv)!=9 or sys.argv[8] not in ('--readiness-only','--execute-prospective'):
+    raise SystemExit('EXPLICIT_MODE_REQUIRED_USE_READINESS_ONLY_OR_EXECUTE_PROSPECTIVE')
+assert cutoff.tz is not None
+frames,input_audit=load_inputs(targetsidep,targetledgerp,basep,ctxp,cutoff)
+S,G,B,C=(frames[k] for k in ('side','target','baseline','context'))
+s0_eligible=set(frames['predicted'].game_id)
+# Readiness uses the true observed clock; original source cutoff is never retimed.
+freeze_recorded_at_utc=datetime.now(timezone.utc).isoformat()
+future=pd.to_datetime(G.start_date,utc=True)>pd.Timestamp(freeze_recorded_at_utc)
+if '--readiness-only' in sys.argv[8:]:
+    print(json.dumps({**input_audit,'observed_at_utc':freeze_recorded_at_utc,
+        'future_at_saved_kickoff':int(future.sum()),'elapsed_at_saved_kickoff':int((~future).sum()),
+        'kickoff_truth':'ACCEPTED_SOURCE_ONLY_NOT_CURRENT_REQUALIFICATION',
+        'freeze_ready':False,'next_proof':'independent future-only projection/freeze qualification; synthetic numerical equivalence is separately tested'},indent=2))
+    raise SystemExit(0)
+if '--execute-prospective' not in sys.argv[8:]:
+    raise SystemExit('EXPLICIT_PROSPECTIVE_EXECUTION_REQUIRED_USE_READINESS_ONLY')
+if not future.all():
+    raise SystemExit('ELAPSED_TARGETS_PROHIBITED_REQUIRE_QUALIFIED_FUTURE_ONLY_BOUNDARY')
+outdir.mkdir(parents=True,exist_ok=False)
 # This consumer accepts only already-accepted boundary files supplied by the caller.
 # It does not open raw schedule/PBP, outcomes, market, decision or execution surfaces.
 for df,label,idcols in ((S,"s0",["game_id","team"]),(B,"baseline",["game_id","team"])):
@@ -53,6 +71,8 @@ assert (pd.to_datetime(J.target_kickoff,utc=True)>cutoff).all()
 rows=[]; exclusions=[]
 for r in J.itertuples(index=False):
     n=int(r.qualified_prior_games)
+    if r.game_id not in s0_eligible:
+        exclusions.append({"game_id":r.game_id,"team":r.team,"reason":"S0_INELIGIBLE"});continue
     if n<=0:
         exclusions.append({"game_id":r.game_id,"team":r.team,"reason":"NO_QUALIFIED_PRIOR_GAMES"});continue
     rec={"game_id":r.game_id,"team":r.team,"target_kickoff":r.target_kickoff,"qualified_prior_games":n}
@@ -77,15 +97,15 @@ for r in J.itertuples(index=False):
                 resid=opponent_residuals(no, rawo, bo)
             except ValueError:
                 badreason="CONTEXT_NONFINITE:"+f;break
-            # Paired opponent residual is added once under the frozen offense<->defense mapping.
-            s2=s1+float(resid.mean())
+            # Frozen historical generator subtracts the paired residual exactly once.
+            s2=s1-float(resid.mean())
         else:
             s2=s1
         rec[f]=s2
     if badreason: exclusions.append({"game_id":r.game_id,"team":r.team,"reason":badreason})
     else: rows.append(rec)
 
-X=pd.DataFrame(rows); E=pd.DataFrame(exclusions)
+X=pd.DataFrame(rows); E=pd.DataFrame(exclusions,columns=["game_id","team","reason"])
 # Both target sides must survive before game-level prediction.
 validgames=set()
 if len(X):
@@ -168,23 +188,47 @@ if len(P):
     assert not P.game_id.duplicated().any()
     assert np.isfinite(P[["pred_margin","pred_total","pred_win"]].to_numpy(float)).all()
     assert P.pred_win.between(0,1).all()
-GE=pd.DataFrame(game_exclusions)
+GE=pd.DataFrame(game_exclusions,columns=["game_id","reason"])
 side_excluded=set(E.game_id.astype(str)) if len(E) else set()
 predicted=set(P.game_id.astype(str)) if len(P) else set()
 game_failed=set(GE.game_id.astype(str)) if len(GE) else set()
 assert predicted.isdisjoint(side_excluded|game_failed)
 assert predicted|side_excluded|game_failed==set(G.game_id.astype(str))
 
+config={"candidate_id":"S2_K1","k":1,"features":FEATURES,"mapping":MAP,
+        "context_sign":"SUBTRACT_MEAN_PAIRED_RESIDUAL","lambdas":coef_expected,
+        "coefficient_sha256":"bf15ce41180bfb4e250d311df279e98c13b65432756ae07f7a30264cbae0e221",
+        "scaling_sha256":"68fb5193ccb8828ac8d34dfe820101181c2bde078a04a6d5afd4c08bcf0cab45"}
+config_sha256=hashlib.sha256(json.dumps(config,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+if len(P):
+    original=frames['predicted'].set_index('game_id')
+    for name in ('pred_margin','pred_total','pred_win'):
+        P['s0_'+name]=P.game_id.map(original[name])
+    for kind,digest in input_audit['input_sha256'].items():P[kind+'_input_sha256']=digest
+    P['freeze_recorded_at_utc']=freeze_recorded_at_utc
+    P['frozen_config_sha256']=config_sha256
+    P['consumer_sha256']=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    consumer_bytes=Path(__file__).read_bytes()
+    P['consumer_git_blob']=hashlib.sha1(b'blob '+str(len(consumer_bytes)).encode()+b'\0'+consumer_bytes).hexdigest()
+    P['input_gate_sha256']=input_audit['input_gate_sha256']
+    for kind,digest in input_audit['raw_source_sha256'].items():P['raw_'+kind+'_sha256']=digest
 P.to_csv(outdir/"s2_k1_predictions.csv",index=False)
 E.to_csv(outdir/"s2_k1_side_exclusions.csv",index=False)
 GE.to_csv(outdir/"s2_k1_game_exclusions.csv",index=False)
 manifest={
  "status":"EXECUTED_NOT_ACCEPTED","candidate_id":"S2_K1","k":1,"snapshot_type":"REFRESH_SNAPSHOT",
- "snapshot_cutoff_utc":cutoff.isoformat(),"prediction_rows":len(P),"side_exclusion_rows":len(E),"game_exclusion_rows":len(GE),
+ "snapshot_cutoff_utc":cutoff.isoformat(),"freeze_recorded_at_utc":freeze_recorded_at_utc,"prediction_rows":len(P),"side_exclusion_rows":len(E),"game_exclusion_rows":len(GE),
  "target_outcomes_opened":False,"market_joined":False,"wager_or_execution_joined":False,
  "protected_2025_test_opened":False,"fit_or_optimization_performed":False,
  "coefficient_sha256":"bf15ce41180bfb4e250d311df279e98c13b65432756ae07f7a30264cbae0e221",
  "scaling_sha256":"68fb5193ccb8828ac8d34dfe820101181c2bde078a04a6d5afd4c08bcf0cab45",
+ "input_sha256":input_audit["input_sha256"],
+ "input_acceptance_records":input_audit["acceptance_records"],
+ "raw_source_sha256":input_audit["raw_source_sha256"],
+ "input_gate_sha256":input_audit["input_gate_sha256"],
+ "frozen_config":config,"frozen_config_sha256":config_sha256,
+ "consumer_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+ "consumer_git_blob":hashlib.sha1(b"blob "+str(len(Path(__file__).read_bytes())).encode()+b"\0"+Path(__file__).read_bytes()).hexdigest(),
  "hashes":{}
 }
 for p in sorted(outdir.iterdir()):
