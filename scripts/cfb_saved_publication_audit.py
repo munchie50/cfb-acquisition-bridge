@@ -59,7 +59,7 @@ if __name__ == '__main__':
     for key in ('sheet', 'market', 'decision', 'execution', 'scorecard', 'lineage'):
         p.add_argument('--' + key, type=Path, required=True)
     p.add_argument('--as-of', required=True)
-    p.add_argument('--profile', choices=('WEEK7','WEEK8'), default='WEEK7')
+    p.add_argument('--profile', choices=('WEEK7','WEEK8','WEEK9'), default='WEEK7')
     p.add_argument('--recover-saved-inputs', action='store_true')
     p.add_argument('--repository-root', type=Path, default=Path('.'))
     args = p.parse_args()
