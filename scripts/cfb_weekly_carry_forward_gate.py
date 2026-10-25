@@ -9,6 +9,8 @@ CURRENT_SHEET_SHA='71006586178a1829c51f119fff872b6f981cd865'
 R2='evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md'
 WEEK7_REVIEW='evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-18_R1.md'
 WEEK7_REVIEW_SHA='89d646b66ad845ef1f00985ae55ef88cabba92b6'
+WEEK8_REVIEW='evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-25_R1.md'
+WEEK8_REVIEW_SHA='009d411d3193cf80357d42cd22edb5653b75d977'
 
 def blob(s):
     b=s.encode();return hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()
@@ -75,12 +77,17 @@ def bind(index,review,lineage,health,as_of):
     selected=[p for p in pointers if p['purpose'].startswith('CURRENT_WEEKLY_REVIEW:')]
     # Navigation may advance to this independently recovered weekly closure.
     # The exact R1->R2 semantic audit above remains historical and unchanged.
-    supported={R2:blob(review), WEEK7_REVIEW:WEEK7_REVIEW_SHA}
+    supported={R2:blob(review), WEEK7_REVIEW:WEEK7_REVIEW_SHA,
+               WEEK8_REVIEW:WEEK8_REVIEW_SHA}
     if len(selected)!=1 or supported.get(selected[0]['path'])!=selected[0]['blob']:
         raise ValueError('missing/ambiguous/stale current weekly review selector')
     historical=[p for p in pointers if p['path']==R2]
     if len(historical)!=1 or historical[0]['blob']!=blob(review):
         raise ValueError('missing/stale historical weekly correction')
+    if selected[0]['path']==WEEK8_REVIEW:
+        predecessor=[p for p in pointers if p['path']==WEEK7_REVIEW]
+        if len(predecessor)!=1 or predecessor[0]['blob']!=WEEK7_REVIEW_SHA:
+            raise ValueError('missing/stale Week7 weekly predecessor')
     for path,text in [('evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json',lineage),('evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md',health)]:
         matches=[p for p in pointers if p['path']==path]
         if len(matches)!=1 or matches[0]['blob']!=blob(text):raise ValueError('stale weekly source pointer')
