@@ -75,7 +75,7 @@ class Week8Tests(unittest.TestCase):
     def test_default_week7_rejects_week8(self):
         with self.assertRaises(ValueError):gate.inputs(*self.proposals,self.lineage,AT)
     def test_unknown_profile_rejected(self):
-        with self.assertRaises(ValueError):gate.profile_config('WEEK9')
+        with self.assertRaises(ValueError):gate.profile_config('WEEK10')
     def test_page_profile_cross_binding_rejected(self):
         with self.assertRaises(ValueError):normalize(self.capture,self.lineage,BY,source_url=WEEK8_URL)
     def test_wrong_lineage_rejected(self):

@@ -36,6 +36,10 @@ def profile_config(profile):
         return {'week':8,'lineage':'337a23b03a10617ff87d9ba8c1c224cd3ebe1d9c','count':56,'predictions':49,'exclusions':7,
                 'market_tag':'cfb-week8-market-v1','decision_tag':'cfb-week8-decision-v1',
                 'start':datetime(2026,10,20,tzinfo=CT),'end':datetime(2026,10,25,tzinfo=CT)}
+    if profile == 'WEEK9':
+        return {'week':9,'lineage':'57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9','count':56,'predictions':45,'exclusions':11,
+                'market_tag':'cfb-week9-market-v1','decision_tag':'cfb-week9-decision-v1',
+                'start':datetime(2026,10,27,tzinfo=CT),'end':datetime(2026,11,1,tzinfo=CT)}
     raise ValueError('unqualified publication profile')
 
 def keys(value,expected):
@@ -353,7 +357,7 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
         cutoff=('Reconcile '+y['reconciliation_utc'] if y['reconciliation_utc'] else 'Reconciliation unavailable')+'; planning cutoff '+(y['planning_cutoff_utc'] or 'UNAVAILABLE')+'; CUTOFF_AUTHORITY_UNVERIFIED'
         if m['schema']==WEEKLY_MARKET_SCHEMA:
             cutoff+='; state recorded '+y['state_recorded_at_utc']+('; source-declared minute precision' if y['state_evidence']==PASS_ANCESTOR else '')+'; evidence '+y['state_evidence']
-        model_display=c[gid]['display'].replace('|','&#124;') if profile=='WEEK8' else c[gid]['display']
+        model_display=c[gid]['display'].replace('|','&#124;') if profile in ('WEEK8','WEEK9') else c[gid]['display']
         row=[display,c[gid]['away_team']+' @ '+c[gid]['home_team'],model_display,current,movement,y['state'],y['reason'],cutoff,'Not established; no executable recommendation']
         if y['state']=='CONDITIONAL':
             from cfb_conditional_recommendation_profile import display as conditional_display
@@ -402,6 +406,9 @@ def audit(sheet,market,decision,execution,scorecard,lineage,as_of,profile='WEEK7
 
 def bootstrap(market,decision,lineage,profile='WEEK7'):
     profile_config(profile)
+    if profile == 'WEEK9':
+        from cfb_week9_publication import bootstrap_check
+        return bootstrap_check(market,decision,lineage)
     if profile == 'WEEK8':
         from cfb_week8_publication import bootstrap_check
         return bootstrap_check(market,decision,lineage)
@@ -429,7 +436,7 @@ def bootstrap(market,decision,lineage,profile='WEEK7'):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     for n in ['market','decision','execution','scorecard','lineage']:p.add_argument('--'+n,required=True,type=Path)
-    p.add_argument('--profile',choices=('WEEK7','WEEK8'),default='WEEK7')
+    p.add_argument('--profile',choices=('WEEK7','WEEK8','WEEK9'),default='WEEK7')
     p.add_argument('--as-of',required=True);p.add_argument('--sheet',type=Path);p.add_argument('--render-output',type=Path)
     a=p.parse_args();values=[getattr(a,n).read_text() for n in ['market','decision','execution','scorecard','lineage']]
     if bool(a.sheet)==bool(a.render_output):p.error('choose exactly one --sheet or --render-output')

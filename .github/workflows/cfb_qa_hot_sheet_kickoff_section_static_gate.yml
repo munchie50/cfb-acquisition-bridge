@@ -6,6 +6,12 @@ on:
       - 'scripts/cfb_planned_append_metadata.py'
       - 'scripts/test_cfb_planned_append_metadata.py'
       - 'scripts/cfb_week8_publication.py'
+      - 'scripts/cfb_week9_publication.py'
+      - 'scripts/test_cfb_week9_publication.py'
+      - 'scripts/cfb_week9_frozen_field_invariant.py'
+      - 'evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json'
+      - 'evidence/CFB_WEEK9_ORIGINAL_LINEAGE_PUBLICATION_PROFILE_2026-10-25.md'
+      - 'evidence/operational/CFB_WEEK9_HOT_SHEET_*.md'
       - 'scripts/test_cfb_week8_publication.py'
       - 'scripts/test_cfb_week8_closed_conditional.py'
       - 'scripts/cfb_week8_frozen_field_invariant.py'
@@ -191,6 +197,7 @@ jobs:
         run: |
           python -m unittest discover -s scripts -p test_cfb_week8_publication.py
           python -m unittest discover -s scripts -p test_cfb_week8_closed_conditional.py
+          python -m unittest discover -s scripts -p test_cfb_week9_publication.py
           python -m unittest discover -s scripts -p test_cfb_week7_accepted_s0_ancestry_audit.py
           python -m unittest discover -s scripts -p test_cfb_week7_first_frozen_projection_gate.py
           python -m unittest discover -s scripts -p test_cfb_week7_frozen_field_invariant.py
@@ -242,6 +249,9 @@ jobs:
             evidence/operational/CFB_WEEK8_HOT_SHEET_*)
               python scripts/cfb_week8_frozen_field_invariant.py --sheet "$cfb_current_sheet" --first "$RUNNER_TEMP/cfb_first_frozen.zip" --lineage evidence/scheduler_qa/CFB_WEEK8_ORIGINAL_ANCESTRY_RECOVERY_20261020.json
               python scripts/cfb_saved_publication_audit.py --profile WEEK8 --recover-saved-inputs --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md --lineage evidence/scheduler_qa/CFB_WEEK8_ORIGINAL_ANCESTRY_RECOVERY_20261020.json --as-of "$(date -u +%Y-%m-%dT%H:%M:%SZ)" ;;
+            evidence/operational/CFB_WEEK9_HOT_SHEET_*)
+              python scripts/cfb_week9_frozen_field_invariant.py --sheet "$cfb_current_sheet" --first "$RUNNER_TEMP/cfb_first_frozen.zip" --lineage evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json
+              python scripts/cfb_saved_publication_audit.py --profile WEEK9 --recover-saved-inputs --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md --lineage evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json --as-of "$(date -u +%Y-%m-%dT%H:%M:%SZ)" ;;
             *) echo "Unsupported current publication requires qualification"; exit 1 ;;
           esac
       - name: Report saved timing exceptions without certifying practical deadlines
