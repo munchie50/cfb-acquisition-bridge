@@ -99,3 +99,20 @@ NEXT: Week5 exact ORIGINAL prediction/final numerical reconciliation, explicitly
 The Weekly QA and Health checkpoint tails were carefully changed from the hardcoded initial Week4 pointer to “follow the latest verified completed-batch/next-boundary append.” Both prompts and every task's schedule/enabled state were independently compared after update; exactly4 enabled tasks remain. Monitor/Evening and all other task prompts are unchanged. Health remains audit-only. The earlier prompt hashes above describe the original installation, not these later resume-tail changes.
 
 Configuration/numerical replay proof is not natural scheduled adoption, predictive improvement, full cross-week baseline completion, profitable edge or challenger promotion. Existing production models, limits, frozen predictions and task cadence remain unchanged.
+
+## Subsequent baseline checkpoint — Week5 numerical batch and Week8 natural extension
+
+Observed in natural Sunday Weekly QA cycle `CFB_WEEKLY_QA_20261025T140321Z`. This append supersedes only the preceding Week5 NEXT boundary at the demonstrated scope.
+
+DONE: accepted original artifact10897612260/SHA-256772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf joined exactly to47 governed Week5 FBS-vs-FBS finals. Exact metrics: direction32/47; marginMAE15.524849155392538; signedmargin-1.3319715197666753; totalMAE14.116057728901243; signedtotal-0.6203795361689259; Brier0.2182959005219492. Reproduction matches the accepted rounded review and leaves exclusions/non-FBS targets outside the governed denominator.
+
+Verified Week5 outputs:
+- evidence/audits/CFB_COMPLETED_WEEK5_BASELINE_20261025.md at Git blob9985121131a8b40085cf504be860197e5b6f4d7a
+- evidence/audits/CFB_COMPLETED_WEEK5_BASELINE_20261025.json at15980c694fa75098104fd22f81d400e704db8d98
+- evidence/audits/cfb_completed_week5_baseline_replay_20261025.py at2d9de08ae37f2be83ff4026e7a578ffe2edc5fff
+
+NATURAL EXTENSION: Week8's49 accepted predictions were joined at original precision to the governed finals: direction29/49; marginMAE11.750492754256612; signedmargin+1.7710434013224963; totalMAE14.025560758280701; signedtotal+2.63962359920701; Brier0.25709837447220446. Seven original exclusions remain exclusions. Week8 review coverage remains38 saved analyticalPASS,5 conditional references,7 exclusions,4 permanent historical gaps and2 partial reviews; this is not40 missed games.
+
+NEXT: Week6 exact ORIGINAL reconciliation, reusing its accepted49/49 scorecard/review. Week7 exact-source correction is already proved and must not be rerun unless a new conflict appears. After Week6 verification, assemble the finite Weeks4–8 baseline with precision/source qualifications rather than restart earlier batches.
+
+Demonstrated benefit: exact-source metric fidelity and natural scheduled consumption of the Week8 evidence taxonomy. Cost: bounded retained-artifact replay; no paid Firecrawl work. Predictive improvement, causal betting edge, Week9 research completion and S2_K1 outcome authority remain unproved. No Champion/model/prediction/decision/market/execution/money/task/schedule mutation.
