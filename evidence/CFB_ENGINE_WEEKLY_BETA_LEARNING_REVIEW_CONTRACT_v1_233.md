@@ -99,3 +99,12 @@ Demonstrated bounded source case: CFB_BALANCED_EFFECTIVENESS_QA_20261023T163207Z
 A disagreement between a summary and saved row sums does not establish which layer is wrong. Before correcting prediction metrics, reconcile the affected row fields and population against the accepted ORIGINAL frozen artifact, preserving home-margin versus fair-spread signs and margin-direction versus win-probability classifiers. Use the accepted source's exact precision for aggregate errors; derived display arithmetic alone cannot overrule it. Preserve historical bad rows/claims and append the source-grounded correction. This applies existing source authority and expected-versus-actual verification; it is not a new betting prerequisite or scoring formula.
 
 Actual demonstration: exact51-row original replay isolated the Georgia Southern/Old Dominion daily sign/flag error and rejected the preliminary32/51 correction; original31/51 and reported MAEs/Brier were corroborated. Initial QA error and its corrected disposition remain visible. Natural weekly/scoring producer compliance remains pending.
+
+
+## QA source-coverage and timing-diagnostic interpretation
+
+When assessing a source-limited no-bet in the existing weekly review, distinguish the particular failed or unavailable page from the availability of all qualified sources. Use retained game-specific attempt/result evidence where it exists; report alternate-source attempts as UNKNOWN when no trace is recovered. A broad material-coverage summary does not override a specific NO_STORY_AVAILABLE result or establish that a material review was completed. Do not acquire postgame information to repair a missing pre-event review.
+
+Distinguish an existing planning_cutoff_utc timestamp from an independently supported cutoff authority and executable window. The current readiness producer can report PRACTICAL_CUTOFF_MISSING when cutoff_authority is UNVERIFIED; this does not itself prove a timestamp was absent or that the safeguard falsely blocked a recommendation. Preserve the original diagnostic and describe its supported meaning.
+
+These interpretations apply to existing review fields and evidence; they add no mandatory acquisition, retry, source vendor, credit expenditure, betting prerequisite, threshold, schedule or approval gate. Keep prior decisions and exclusions intact. A later properly earned prospective reconsideration remains separate evidence, not a retroactive correction of an earlier incomplete review.
