@@ -1,0 +1,9 @@
+# Source-coverage follow-through — terminal candidate
+
+Run: CFB_SOURCE_COVERAGE_PROPOSAL_20261025T013903Z
+Result: RUN_PASS for retained-source trace and draft preparation only.
+Four specific missing-preview cases traced through the exact21-game and40-game reviews. The19-source catalog for the later review supplies several primary/team/conference/weather sources for shortlisted cases, but no game-specific alternate-source attempt/result trace was established for these four missing-preview cases. This bounded search is not proof no alternate existed or was attempted elsewhere. Do not repeat the same search without a new lead or backfill research after outcomes.
+Concrete result: draftPR9 https://github.com/munchie50/cfb-acquisition-bridge/pull/9 at95932f16b15db8c99adeca6df5f3628b28c08124; one file,9 appended lines,0 deletions. Proposed existing weekly-contract clarification distinguishes specific-page failure from full source exhaustion and planning timestamp from verified cutoff authority. No mandatory fetch/retry, new gate, spending, rule or schedule.
+Exact draft contract blob9d4359cd5353b99bdaee8ac667775848e06512d1 independently read back; complete parent preserved. Main contract independently checked unchanged at93377d5a675d4ac74363870ce0defd5915e14dfa. PR directly returneddraft=true,merged=false; this is a proposal, not active production authority. Documentation-only change, no software test applicable. No actual research completion or improved betting accuracy claimed.
+No canonical execution/market/decision/HotSheet/index/model/money/task mutation, no merge or acceptance. Existing qualification and learning actions remain open; draft review/integration is the next concrete disposition, and unknown alternate-source history remains unknown.
+Separate closure follows independent candidate readback.
