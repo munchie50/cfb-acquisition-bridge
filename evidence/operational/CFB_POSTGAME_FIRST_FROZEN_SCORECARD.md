@@ -400,3 +400,63 @@ Full exact51-row evidence `evidence/scheduler_qa/CFB_WEEK7_EXACT_METRIC_RECONCIL
 **Excluded final retained without scoring:** `401862808` Army 38, Tulsa 35 — original FIRST_FROZEN exclusion `away_prior_pbp_missing`.
 
 The separate execution ledger grades two established Friday tickets from the same finals. That downstream wager evidence does not alter Champion v1.193, FIRST_FROZEN, accepted REFRESH, Challenger, TIME-HIDDEN, market or decision state. No outcome-informed reconstruction occurred.
+
+## Week 8 Saturday FIRST_FROZEN outcomes — authoritative finals joined 2026-10-25
+
+**Cycle:** `CFB_MARKET_MONITOR_20261025T120550Z`  
+**Join rule:** The fresh complete CBS Week 8 response recovered by `2026-10-25T12:08:00Z` supplied final scores for all 44 Saturday identities. Each eligible row below joins only to the accepted September 26 original FIRST_FROZEN lineage in `CFB_WEEK8_ORIGINAL_ANCESTRY_RECOVERY_20261020.json`. Five original exclusions remain unscored. No prediction, market decision, recommendation, or execution was reconstructed from an outcome.  
+**Outcome source:** `evidence/operational/CFB_CBS_WEEK8_RESULTS_CAPTURE_20261025T120800Z.md` / Git blob `2aa53f5793bb511373eba9bbbf6e6249d3984836` / https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-8/
+
+| Game ID | Game | Frozen home margin | Frozen total | Frozen home-win p | Final (away-home) | Actual home margin | Actual total | Margin error | Total error | SU correct |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 401856837 | Houston @ Utah | +9.7 | 55.6 | 0.743 | 13-21 | +8 | 34 | -1.7 | -21.6 | 1 |
+| 401864527 | North Dakota State @ New Mexico | +6.5 | 41.5 | 0.660 | 16-21 | +5 | 37 | -1.5 | -4.5 | 1 |
+| 401862811 | UTSA @ Tulane | -1.0 | 50.4 | 0.425 | 42-19 | -23 | 61 | -22.0 | +10.6 | 1 |
+| 401856838 | Iowa State @ Arizona | +5.2 | 48.5 | 0.647 | 3-39 | +36 | 42 | +30.8 | -6.5 | 1 |
+| 401858500 | USC @ Wisconsin | +0.3 | 55.6 | 0.508 | 7-24 | +17 | 31 | +16.7 | -24.6 | 1 |
+| 401860906 | Utah State @ Texas State | +5.9 | 55.8 | 0.624 | 17-20 | +3 | 37 | -2.9 | -18.8 | 1 |
+| 401856732 | Ole Miss @ Texas | +7.9 | 53.1 | 0.677 | 27-34 | +7 | 61 | -0.9 | +7.9 | 1 |
+| 401858275 | Syracuse @ North Carolina | +6.7 | 47.6 | 0.657 | 31-30 | -1 | 61 | -7.7 | +13.4 | 0 |
+| 401856729 | Vanderbilt @ Kentucky | +3.7 | 52.3 | 0.581 | 17-34 | +17 | 51 | +13.3 | -1.3 | 1 |
+| 401856836 | Colorado @ Oklahoma State | +12.5 | 52.9 | 0.769 | 24-57 | +33 | 81 | +20.5 | +28.1 | 1 |
+| 401869935 | Georgia State @ Arkansas State | -3.5 | 57.8 | 0.439 | 32-38 | +6 | 70 | +9.5 | +12.2 | 0 |
+| 401860905 | San Diego State @ Colorado State | +7.6 | 57.1 | 0.691 | 49-56 | +7 | 105 | -0.6 | +47.9 | 1 |
+| 401860907 | Boise State @ Washington State | -0.4 | 47.4 | 0.516 | 31-10 | -21 | 41 | -20.6 | -6.4 | 1 |
+| 401864528 | San José State @ Nevada | +7.8 | 51.6 | 0.683 | 13-28 | +15 | 41 | +7.2 | -10.6 | 1 |
+| 401869967 | Louisiana @ Southern Miss | +1.0 | 55.5 | 0.545 | 31-35 | +4 | 66 | +3.0 | +10.5 | 1 |
+| 401871093 | Old Dominion @ Louisiana Tech | +2.4 | 48.8 | 0.563 | 0-26 | +26 | 26 | +23.6 | -22.8 | 1 |
+| 401871094 | UL Monroe @ Troy | +17.0 | 51.3 | 0.817 | 21-14 | -7 | 35 | -24.0 | -16.3 | 0 |
+| 401866449 | Eastern Michigan @ Ohio | +4.1 | 52.9 | 0.579 | 20-24 | +4 | 44 | -0.1 | -8.9 | 1 |
+| 401856839 | Kansas State @ Arizona State | -9.3 | 53.9 | 0.275 | 17-28 | +11 | 45 | +20.3 | -8.9 | 0 |
+| 401856731 | Tennessee @ South Carolina | +3.8 | 57.6 | 0.602 | 24-27 | +3 | 51 | -0.8 | -6.6 | 1 |
+| 401858499 | Michigan State @ UCLA | +11.2 | 51.5 | 0.751 | 10-28 | +18 | 38 | +6.8 | -13.5 | 1 |
+| 401864526 | Hawai'i @ Northern Illinois | -3.6 | 48.6 | 0.371 | 56-21 | -35 | 77 | -31.4 | +28.4 | 1 |
+| 401856730 | Oklahoma @ Mississippi State | +9.4 | 50.2 | 0.712 | 23-15 | -8 | 38 | -17.4 | -12.2 | 0 |
+| 401858497 | Iowa @ Minnesota | -3.3 | 45.8 | 0.416 | 10-13 | +3 | 23 | +6.3 | -22.8 | 0 |
+| 401856727 | Texas A&M @ Alabama | +8.7 | 51.1 | 0.672 | 20-31 | +11 | 51 | +2.3 | -0.1 | 1 |
+| 401856835 | BYU @ UCF | -1.5 | 57.5 | 0.463 | 31-39 | +8 | 70 | +9.5 | +12.5 | 0 |
+| 401866448 | Bowling Green @ Buffalo | +10.8 | 48.5 | 0.736 | 24-31 | +7 | 55 | -3.8 | +6.5 | 1 |
+| 401866447 | Sacramento State @ Ball State | -7.1 | 49.6 | 0.312 | 17-34 | +17 | 51 | +24.1 | +1.4 | 0 |
+| 401858273 | Boston College @ Georgia Tech | +6.5 | 50.1 | 0.663 | 49-27 | -22 | 76 | -28.5 | +25.9 | 0 |
+| 401858495 | Oregon @ Illinois | +4.5 | 59.1 | 0.660 | 10-21 | +11 | 31 | +6.5 | -28.1 | 1 |
+| 401856834 | Baylor @ Kansas | +0.0 | 48.5 | 0.487 | 24-25 | +1 | 49 | +1.0 | +0.5 | 0 |
+| 401866446 | Akron @ Kent State | -15.1 | 49.5 | 0.157 | 20-35 | +15 | 55 | +30.1 | +5.5 | 0 |
+| 401866476 | Miami (OH) @ Central Michigan | +1.3 | 47.7 | 0.525 | 28-27 | -1 | 55 | -2.3 | +7.3 | 0 |
+| 401858274 | Pittsburgh @ Miami | +15.1 | 53.0 | 0.830 | 23-52 | +29 | 75 | +13.9 | +22.0 | 1 |
+| 401866450 | Western Michigan @ Toledo | +7.9 | 53.9 | 0.691 | 38-45 | +7 | 83 | -0.9 | +29.1 | 1 |
+| 401856840 | Texas Tech @ Cincinnati | +9.4 | 55.3 | 0.719 | 24-37 | +13 | 61 | +3.6 | +5.7 | 1 |
+| 401862809 | Rice @ Florida Atlantic | -0.5 | 49.3 | 0.529 | 49-51 | +2 | 100 | +2.5 | +50.7 | 0 |
+| 401856728 | LSU @ Auburn | -0.9 | 56.2 | 0.484 | 38-17 | -21 | 55 | -20.1 | -1.2 | 1 |
+| 401856841 | West Virginia @ TCU | +6.2 | 53.0 | 0.713 | 24-20 | -4 | 44 | -10.2 | -9.0 | 0 |
+
+**Saturday modeled summary:** `39/39` eligible rows matched; unresolved eligible joins `0`; SU direction `25/39 (64.1%)`; margin MAE `11.51`; total MAE `14.64`.
+
+**Saturday exclusions retained without scoring:**
+- `401858276` Virginia Tech 20, Clemson 16 — original `FIRST_FROZEN EXCLUDED — home_prior_points_missing`.
+- `401862810` North Texas 49, Navy 39 — original `FIRST_FROZEN EXCLUDED — home_prior_points_missing`.
+- `401858496` Indiana 13, Michigan 6 — original `FIRST_FROZEN EXCLUDED — away_prior_points_missing`.
+- `401858498` Rutgers 14, Northwestern 42 — original `FIRST_FROZEN EXCLUDED — away_prior_points_missing|home_prior_points_missing`.
+- `401858270` California 20, SMU 59 — original `FIRST_FROZEN EXCLUDED — away_prior_points_missing`.
+
+**Complete Week 8 modeled summary:** `49/49` predictions matched; `7/7` original exclusions retained; unresolved eligible joins `0`. Frozen predictions remain unchanged. This descriptive scoring append is downstream outcome evidence only. The separate execution ledger grades established tickets; neither result surface mutates Champion, FIRST_FROZEN, accepted REFRESH, Challenger, TIME-HIDDEN, market, or decision state.
+
