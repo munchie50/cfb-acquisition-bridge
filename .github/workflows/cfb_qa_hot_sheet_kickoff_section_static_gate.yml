@@ -92,6 +92,14 @@ on:
       - 'evidence/operational/CFB_WEEK7_HOT_SHEET_*.md'
       - 'evidence/operational/CFB_MARKET_MONITOR_STATE.md'
       - '.github/workflows/cfb_qa_hot_sheet_kickoff_section_static_gate.yml'
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - 'evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md'
+      - 'evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md'
+      - 'evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v*.md'
+      - '.github/workflows/cfb_qa_hot_sheet_kickoff_section_static_gate.yml'
   workflow_dispatch:
 jobs:
   static-gate:
