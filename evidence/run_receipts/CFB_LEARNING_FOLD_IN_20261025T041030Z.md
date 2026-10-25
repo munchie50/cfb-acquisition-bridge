@@ -74,3 +74,28 @@ Prompt hashes are SHA-256 over UTF-8 strings, not Git blob identities. No full t
 Every task was independently read after updates and compared against its expected prompt, original schedule and enabled state. Monitor/Evening and all retired task prompts match their original strings. Final Health wording explicitly limits it to auditing Weekly QA's resume boundary, preventing an ambiguous instruction to execute historical research itself.
 
 Configuration installation and readback are proved at this scope. Baseline completion, scoring validity, improved prediction quality, profitable edge, on-time coverage and unattended follow-through are not claimed. No paid external research or model run occurred.
+
+
+## Subsequent baseline checkpoint — Week4 numerical batch
+
+Observed completion boundary 2026-10-25T04:23:46Z; this append prospectively supersedes the initial Week4 numerical-PENDING/resume instruction above only at the demonstrated scope. Earlier installation facts/hashes remain historical and unchanged.
+
+DONE: original accepted archive recovered and full ZIP/all manifest member hashes verified; fresh CBS Week4 finals joined to all53 governed FBS-vs-FBS original predictions; all reported prior aggregates independently reproduced at exact original precision. Winner direction36/53; marginMAE14.780825682279444; totalMAE11.071212108762104; signedmargin-0.9250484613300394; signedtotal-1.804872122647301; home-winBrier0.21427521592358498. Probability-threshold winner classification37/53 is separately labelled, not substituted for margin direction.
+
+Two historical diagnostic narratives had incorrect prediction directions: Tulsa/Arkansas and SamHouston/TexasTech. Exact original home margins are negative, although their old prose described positive home advantages. Their absolute errors and the published53-game aggregates remain correct. A source-grounded correction is now saved; no forecast/model/old scorecard/review rewritten. Side versus total errors and sparse sample-maturity variation remain diagnostic observations, not betting rules.
+
+Verified sources and results:
+- evidence/audits/CFB_COMPLETED_WEEK4_BASELINE_20261025.md at 3eccfaa7c54ac3bd1566dab1ac9e684974a9f0ac
+- evidence/audits/CFB_COMPLETED_WEEK4_BASELINE_20261025.json at9519abb4325b455f5f63298be1b6674a90192443
+- evidence/audits/cfb_completed_week4_baseline_replay_20261025.py at5c60ceea7157a57bb8ec64acfe544ae9512eec4a
+- evidence/audits/CFB_CBS_WEEK4_FINAL_SCORECARDS_CAPTURE_20261025.html atf46dd4e6d78b11674afd4e5e534413ec448ef0d7
+
+Verification executed: full/reduced-capture replay equality, all53 ordered-pair/date joins, period/final-score equality, unique target/prediction/exclusion accounting, aggregate rounding and six corruption rejections. Full outgoing evidence payload hashes/byte lengths and independent repository readbacks match. No paid Firecrawl research, model execution/refit or new market/decision/wager was created.
+
+Coverage remains explicit:71 final source games;65 original snapshot targets=60predictions+5exclusions;53 governedFBS-vs-FBS plus7 modelednonFBS kept separate. Six Thursday/Friday games predate this snapshot and are outside its targets, not invented excluded predictions or proof of absent earlier opinions. Historical qualified prices/decisions/closes remain incomplete; archived-market QA summaries are not canonical pregame quotes or executable ROI.
+
+NEXT: Week5 exact ORIGINAL prediction/final numerical reconciliation, explicitly retaining known source-calendar conflicts. Reuse the verified Week4 numerical work. Week4 archived-market source replay and unproved causal/financial edge remain separate open evidence items; do not block later numerical batches by trying to invent missing prices.
+
+The Weekly QA and Health checkpoint tails were carefully changed from the hardcoded initial Week4 pointer to “follow the latest verified completed-batch/next-boundary append.” Both prompts and every task's schedule/enabled state were independently compared after update; exactly4 enabled tasks remain. Monitor/Evening and all other task prompts are unchanged. Health remains audit-only. The earlier prompt hashes above describe the original installation, not these later resume-tail changes.
+
+Configuration/numerical replay proof is not natural scheduled adoption, predictive improvement, full cross-week baseline completion, profitable edge or challenger promotion. Existing production models, limits, frozen predictions and task cadence remain unchanged.
