@@ -9,6 +9,8 @@ URL='https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-7/'
 LINEAGE_SHA='d80e26c398de48e7a386ad9a627fe44f4111ac45'
 WEEK8_LINEAGE_SHA='337a23b03a10617ff87d9ba8c1c224cd3ebe1d9c'
 WEEK8_URL=URL.replace('week-7','week-8')
+WEEK9_LINEAGE_SHA='57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9'
+WEEK9_URL=URL.replace('week-7','week-9')
 def blob(s):
     b=s.encode();return hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()
 def at(s):
@@ -41,7 +43,8 @@ def market(cell,kind):
 
 def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='America/New_York',*,profile='WEEK7',retained_elapsed_kickoffs=None):
     observed=at(recovered_by)
-    profiles={'WEEK7':(URL,LINEAGE_SHA,62),'WEEK8':(WEEK8_URL,WEEK8_LINEAGE_SHA,56)}
+    profiles={'WEEK7':(URL,LINEAGE_SHA,62),'WEEK8':(WEEK8_URL,WEEK8_LINEAGE_SHA,56),
+              'WEEK9':(WEEK9_URL,WEEK9_LINEAGE_SHA,56)}
     if profile not in profiles:raise ValueError('unqualified source profile')
     page,digest,count=profiles[profile]
     if source_url!=page or source_timezone!='America/New_York':raise ValueError('unqualified source page/year/timezone')
@@ -53,7 +56,7 @@ def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='Amer
     if retained_elapsed_kickoffs and profile!='WEEK8':raise ValueError('unqualified retained elapsed context profile')
     elapsed={gid:at(stamp) for gid,stamp in retained_elapsed_kickoffs.items()}
     if any(kick>=observed for kick in elapsed.values()):raise ValueError('retained elapsed context must precede observation')
-    aliases={**ALIASES,**({'New Mexico St.':'New Mexico State','Boise St.':'Boise State','Utah St.':'Utah State','Iowa St.':'Iowa State'} if profile=='WEEK8' else {})}
+    aliases={**ALIASES,**({'New Mexico St.':'New Mexico State','Boise St.':'Boise State','Utah St.':'Utah State','Iowa St.':'Iowa State'} if profile in ('WEEK8','WEEK9') else {})}
     result=[];pending=None;rows=[];all_team_rows=0
     def finish():
         nonlocal pending,rows
@@ -107,6 +110,7 @@ def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='Amer
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--markdown',required=True,type=Path);p.add_argument('--lineage',required=True,type=Path);p.add_argument('--recovered-by',required=True);p.add_argument('--output',type=Path)
-    a=p.parse_args();r=normalize(a.markdown.read_text(),a.lineage.read_text(),a.recovered_by)
+    p.add_argument('--profile',choices=('WEEK7','WEEK8','WEEK9'),default='WEEK7')
+    a=p.parse_args();r=normalize(a.markdown.read_text(),a.lineage.read_text(),a.recovered_by,source_url={'WEEK7':URL,'WEEK8':WEEK8_URL,'WEEK9':WEEK9_URL}[a.profile],profile=a.profile)
     if a.output:a.output.write_text(json.dumps(r,indent=2)+'\n')
     print(json.dumps({k:v for k,v in r.items() if k!='games'},indent=2))
