@@ -96,6 +96,8 @@ on:
     branches: [main]
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
+      - 'scripts/cfb_hot_sheet_readiness.py'
+      - 'scripts/test_cfb_hot_sheet_readiness.py'
       - 'evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md'
       - 'evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md'
       - 'evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v*.md'

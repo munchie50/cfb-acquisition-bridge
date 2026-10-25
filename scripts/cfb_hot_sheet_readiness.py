@@ -35,6 +35,54 @@ MARKETS = ('FAVORITE_SPREAD', 'UNDERDOG_SPREAD', 'AWAY_MONEYLINE',
            'ALTERNATE_TOTALS', 'TEAM_TOTALS', 'PARLAY_SUITABILITY')
 
 
+def evaluation_coverage(census, decisions, rows):
+    """Account for every identity without treating PASS as completed research.
+
+    Canonical packets do not encode a full analytical PASS review. Its absence
+    here means not certified, never proof that no review exists elsewhere.
+    Conditional references remain references, not an independent source audit.
+    """
+    by_id = {r['game_id']: r for r in rows}
+    if len(by_id) != len(rows) or set(by_id) != set(census) or set(decisions) != set(census):
+        raise ValueError('coverage requires complete unique census/decision/row identities')
+    groups = {name: [] for name in ('ORIGINAL_EXCLUSION', 'HISTORICAL_GAP',
+                                   'CONDITIONAL_REVIEW_REFERENCE', 'NOT_CERTIFIED')}
+    pending = []
+    for gid, model in census.items():
+        state = decisions[gid]['state']
+        if model['first_frozen_status'] != 'PREDICTION':
+            category = 'ORIGINAL_EXCLUSION'
+        elif state == 'HISTORICAL_GAP':
+            category = 'HISTORICAL_GAP'
+        elif state == 'CONDITIONAL' and decisions[gid].get('review_ref'):
+            category = 'CONDITIONAL_REVIEW_REFERENCE'
+        else:
+            category = 'NOT_CERTIFIED'
+        groups[category].append(gid)
+        by_id[gid]['evaluation_coverage'] = category
+        by_id[gid]['saved_reason'] = decisions[gid]['reason']
+        window = by_id[gid]['review_window']
+        if category == 'NOT_CERTIFIED' and window['review_required']:
+            pending.append({'game_id': gid, 'state': state,
+                            'review_due_by_utc': window['review_due_by_utc'],
+                            'timing_issue': window['timing_issue'],
+                            'next_action': ('QUALIFY_TIMING_BEFORE_REVIEW'
+                                            if window['timing_issue'] else
+                                            'RECOVER_OR_COMPLETE_REVIEW_EVIDENCE')})
+    # Unknown timing is explicit work debt; it cannot silently sort past all
+    # deadlines. Known deadlines use qualified clock ordering, not text offsets.
+    pending.sort(key=lambda r: (r['review_due_by_utc'] is not None,
+                               gate.clock(r['review_due_by_utc']).timestamp()
+                               if r['review_due_by_utc'] else 0, r['game_id']))
+    return {'total_games': len(census),
+            'counts': {k: len(v) for k, v in groups.items()},
+            'game_ids': groups, 'uncertified_open_review_queue': pending,
+            'scope': 'PACKET_EVIDENCE_ACCOUNTING_NOT_FULL_RESEARCH_CERTIFICATION',
+            'not_certified_meaning': 'REVIEW_NOT_PROVED_BY_PACKET; MAY_EXIST_IN_SEPARATE_EVIDENCE',
+            'conditional_reference_meaning': 'REFERENCE_PRESENT; NOT_ALL_MARKETS_OR_FRESHNESS_CERTIFIED',
+            'historical_backfill_authorized': False}
+
+
 def review_window(decision, market, as_of):
     """Keep every state in the review pool until its existing betting cutoff.
 
@@ -128,6 +176,7 @@ def audit(market, decision, lineage, as_of, profile='WEEK7'):
         if row['state'] == 'PASS':
             row['disposition'] = window['disposition']
     review_ids = [r['game_id'] for r in rows if r['review_window']['review_required']]
+    coverage = evaluation_coverage(census, decisions, rows)
     return {'schema': 'CFB_NEUTRAL_READINESS_AUDIT_V1',
             'scope': 'READ_ONLY_DIAGNOSTIC_NOT_DECISION_OR_SOURCE_QUALIFICATION',
             'as_of_utc': as_of, 'canonical_cycle': m['cycle_id'],
@@ -149,6 +198,7 @@ def audit(market, decision, lineage, as_of, profile='WEEK7'):
                                      if r['state'] == 'PASS' and r['review_window']['review_required']],
             'review_schedule': 'EXISTING_CYCLES_PLUS_FINAL_REVIEW_BEFORE_EXISTING_CUTOFF',
             'review_coverage': 'NOT_CERTIFIED_BY_QUEUE_MEMBERSHIP',
+            'evaluation_coverage': coverage,
             'rows': rows}
 
 
