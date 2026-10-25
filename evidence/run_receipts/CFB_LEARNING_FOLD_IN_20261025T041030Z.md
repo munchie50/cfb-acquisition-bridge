@@ -116,3 +116,19 @@ NATURAL EXTENSION: Week8's49 accepted predictions were joined at original precis
 NEXT: Week6 exact ORIGINAL reconciliation, reusing its accepted49/49 scorecard/review. Week7 exact-source correction is already proved and must not be rerun unless a new conflict appears. After Week6 verification, assemble the finite Weeks4–8 baseline with precision/source qualifications rather than restart earlier batches.
 
 Demonstrated benefit: exact-source metric fidelity and natural scheduled consumption of the Week8 evidence taxonomy. Cost: bounded retained-artifact replay; no paid Firecrawl work. Predictive improvement, causal betting edge, Week9 research completion and S2_K1 outcome authority remain unproved. No Champion/model/prediction/decision/market/execution/money/task/schedule mutation.
+
+## Manual QA catch-up — exact Week6 and finite Weeks4–8 baseline complete
+
+Actual record clock: 2026-10-25T16:29:31Z
+
+User instruction: Begin this QA work. Existing action CFB_QA_LEARNING_FOLLOW_THROUGH_20261023 advances to FINITE HISTORICAL NUMERICAL BASELINE COMPLETE. Week6 all49original predictions now match governed finals and all49separate historical weekly-review finals;9original exclusions remain excluded. Exact direction25/49, marginMAE15.130662851492, totalMAE13.538607407241 and Brier0.283963638717. Full-precision signed errors+0.890139292832/−0.895616770436 clarify the prior rounded+0.90/−0.89, preserving old reports.
+
+The completed five published weekly populations contain249unique original predictions:153/249margin direction, marginMAE14.006623340516, totalMAE13.190502012127, Brier0.239225353872. Week7 includes The Citadel at TexasA&M; original weekly populations stay intact, with a separate248-game FBS-only comparison152/248direction,13.955555085269marginMAE,13.168526885670totalMAE and0.240102132386Brier. These are descriptive spent cohorts, not a matched causal or new-holdout experiment. Reused exact Week4/5/7evidence and Week8's accepted join; no restart of earlier batches or new model run.
+
+Evidence: evidence/audits/CFB_COMPLETED_WEEK6_BASELINE_20261025.json; evidence/audits/CFB_COMPLETED_WEEKS4_8_BASELINE_20261025.json; companion Markdown; independent verification JSON; bounded replay helper.747original numeric strings/249identities,50-digit Decimal metric checks and seven corruption rejections passed.
+
+NEXT numerical boundary: extend this completed baseline with the next completed week; do not restart Week6. Existing research-coverage action stays OPEN for prospective timely evidence; Week8 retains38analyticalPASS,5conditionalrefs,7exclusions,4permanentgaps,2partialreviews. Four original task schedules/enabled roles unchanged. Main repair CI40210966291PASS is technical integration only; no later natural Monitor run exists at this observation. Next scheduled Monitor1pm CT/Health4:30pm CT today remain future proof points. No new task or dispatch.
+
+S2_K1 remains44-game frozen study-only; separately bounded outcome-scoring authority remains required by continuation contract8b837e98d17c8964a7454db7f8b23a40e5ab0e21. No S2 output was opened/scored; no promotion or scientific changes. Model/Champion, FIRST_FROZEN/REFRESH, current Week9sheet and all production/accounting surfaces remain unchanged.
+
+Benefit: exact-source baseline completion and clearer population/precision semantics. Cost: bounded retained-artifact computation and ordinary persistence; zero paid acquisition. Net HELPFUL for reporting fidelity; predictive/financial effect UNKNOWN. Full research/operational QA catch-up remains separate from numerical completion.
