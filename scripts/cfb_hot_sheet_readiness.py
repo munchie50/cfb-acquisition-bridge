@@ -207,7 +207,7 @@ if __name__ == '__main__':
     for name in ('market', 'decision', 'lineage'):
         p.add_argument('--' + name, type=Path, required=True)
     p.add_argument('--as-of', required=True)
-    p.add_argument('--profile', choices=('WEEK7','WEEK8'), default='WEEK7')
+    p.add_argument('--profile', choices=('WEEK7','WEEK8','WEEK9'), default='WEEK7')
     args = p.parse_args()
     print(json.dumps(audit(args.market.read_text(), args.decision.read_text(),
                            args.lineage.read_text(), args.as_of, args.profile), indent=2))
