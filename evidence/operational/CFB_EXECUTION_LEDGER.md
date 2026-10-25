@@ -228,3 +228,23 @@ The same private record establishes the complete current pot $61.30 = $25.30 vou
 | CFB_OCT23-02 | NC State | -7.5 / -107 | NC State 28, Stanford 31 | -10.5 | LOSS | $0.00 | -$3.00 |
 
 Friday batch: `0 WIN / 2 LOSS / 0 PUSH`, `$8.00` graded stake, `$0.00` result return, `-$8.00` result net. Six October 23 Saturday tickets remain ungraded/open at this boundary (`$28.00` stake). The prior `$61.30` opening-pot snapshot is not recomputed here because sportsbook settlement/payment and the user's current voucher/cash balance remain unverified. Production versus `$20` sandbox allocation remains `UNASSIGNED`; no sandbox execution is inferred. Frozen predictions and original recommendation limits remain unchanged.
+
+## Week 8 Saturday established-wager final-score grades — October 25
+
+**Cycle:** `CFB_MARKET_MONITOR_20261025T120550Z`
+
+**Result source:** fresh complete CBS Week 8 response at `evidence/operational/CFB_CBS_WEEK8_RESULTS_CAPTURE_20261025T120800Z.md` / Git blob `2aa53f5793bb511373eba9bbbf6e6249d3984836`. Official school result pages independently corroborate the six ticket finals.
+
+**Scope:** deterministic full-game grading for the six established October 23 Saturday tickets. Printed ticket payouts are retained; this is not sportsbook adjudication, redemption, payment, available cash, CLV, or recommendation attribution.
+
+| Execution ID | Selection | Accepted spread / price | Final (selection first) | Grade | Printed result return | Result net |
+|---|---|---|---|---|---:|---:|
+| CFB_OCT23-03 | Auburn | +7.5 / -110 | Auburn 17, LSU 38 | LOSS | $0.00 | -$5.00 |
+| CFB_OCT23-04 | Cincinnati | +11.5 / -106 | Cincinnati 37, Texas Tech 24 | WIN | $9.70 | +$4.70 |
+| CFB_OCT23-05 | West Virginia | +10.5 / -108 | West Virginia 24, TCU 20 | WIN | $9.65 | +$4.65 |
+| CFB_OCT23-06 | Buffalo | -3 / -115 | Buffalo 31, Bowling Green 24 | WIN | $9.35 | +$4.35 |
+| CFB_OCT23-07 | UCLA | -14.5 / -112 | UCLA 28, Michigan State 10 | WIN | $9.45 | +$4.45 |
+| CFB_OCT23-08 | Texas | -3 / -115 | Texas 34, Ole Miss 27 | WIN | $5.60 | +$2.60 |
+
+**Saturday batch:** `5 WIN / 1 LOSS / 0 PUSH`, `$28.00` graded stake, `$43.75` printed result return, `+$15.75` result net. **Complete October 23 Week 8 batch:** `5 WIN / 3 LOSS / 0 PUSH`, `$36.00` stake, `$43.75` printed result return, `+$7.75` result net. All eight are now final-score graded; sportsbook settlement/payment remains unverified. The `$61.30` prior pot snapshot is not recomputed without verified book payment/current voucher balance. Production versus `$20` sandbox remains `UNASSIGNED`; no sandbox execution is inferred. Frozen predictions and original recommendation limits remain unchanged.
+
