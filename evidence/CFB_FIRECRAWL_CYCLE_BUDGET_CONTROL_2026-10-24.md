@@ -1,0 +1,27 @@
+# CFB shared Firecrawl billing-cycle budget
+
+Status: user-authorized spending instructions for existing four recurring tasks and user-directed CFB work; no provider billing setting, new task, changed schedule, model change or source-quality relaxation.
+User request: “Can you adjust it so we use exactly 1,000 in the number of days allowed?”
+Recorded: 2026-10-25T00:21:51Z / October24 America/Chicago.
+
+## Budget and pacing
+
+Target at most1,000 plan credits per actual provider billing cycle across ALL CFB tasks/manual work combined. Exact consumption is not promised: useful research may cost less, external account usage may consume the same balance, variable request costs and delayed accounting may prevent exact enforcement by instructions. Never burn unused credits to reach1,000. No paid top-up, auto-recharge, upgrade, new account or billing mutation is authorized.
+
+At each invocation before any chargeable Firecrawl use, read credit_usage current. Recover actual billingPeriodStart S, billingPeriodEnd E, remainingCredits R and planCredits; do not assume calendar month,30days or a remembered reset date. Budget B=min(1000,planCredits). Extra purchased/bonus credits never increase this CFB ceiling. If R=0, do not issue a paid fetch to rediscover exhaustion; report source unavailable/deferred under existing ownership and qualification rules. Current observed period is Sep27 17:16:35.203Z through Oct27 17:16:35.203Z, plan1000 and remaining0; next period must be read fresh before spending resumes.
+
+For a normal28–31day monthly cycle, N=ceil((E-S)/86400seconds), bucket k=min(N,max(1,floor((actual_now-S)/86400seconds)+1)). Cumulative released cap C=floor(B*k/N). Account-derived usage U=max(0,planCredits-min(R,planCredits)); released remaining A=max(0,min(R,C-U)). No double allowance per task or invocation. Unused released allowance carries within this cycle; it never becomes an independent task pool or provider rollover. If metadata is missing, cycle invalid, current clock outside[S,E), plan differs unexpectedly, added credits mask true cycle consumption, or accounting/concurrent usage cannot be reconciled, do not guess a paid allowance: defer paid requests and identify budget uncertainty.
+
+Before EACH chargeable request, recheck current account usage and the existing run's confirmed/reserved cost so delayed deductions cannot reset that run's allowance. Keep requests serial. Admit only requests whose documented maximum total cost fits A and the remaining1000-cycle cap; account for search result groups, scraping/options and all attached retrievals. Unknown/unbounded price, auto-expanding crawl/agent/provider jobs and concurrent paid acquisition are not authorized by this budget. Avoid cross-invocation overlap; if another CFB paid acquisition is in progress or unsettled costs cannot be bounded, defer the optional paid request. A failed scrape must not trigger repeated exhaustion probes or parameter-changing attempts after an explicit no-credit result. Actual billing evidence, not request count, determines spend.
+
+Examples:30days release33credits on20days and34 on10days;31days release32 on23days and33 on8days. Both total exactly1000 authorized credits, not a mandate to consume them. Arithmetic verified for28/29/30/31day cycles, zero balance, cap reached, overspent-day and unused carry-forward boundaries.
+
+## Preserve useful work
+
+Prioritize complete current CBS board capture and material time-sensitive football evidence for the sole Monitor; then Evening's genuinely new downstream evidence; then WeeklyQA's necessary independent source checks. Health should use repository/task/receipt/credit-account reads and has no routine need for paid external Firecrawl research. Share already retained responses for tasks that only need saved-boundary audit. Batch focused searches where documented costs are bounded. Use ordinary authorized public retrieval where sufficient; browser/plugin fallback and source qualification requirements still apply. Never present reused saved quotes as fresh or omit required research silently to fit budget. If the allowance is insufficient for required fresh evidence, report the exact unserved phase/incomplete result and continue independent no-credit work. Spending controls do not authorize forced PASS, weaker source completeness, invented recommendations or bypassing approvals.
+
+Within existing run receipts, record provider cycle bounds, observed balance/usage, released cap, intended bounded cost, actual confirmed cost/balance change when available and deferred research. These are cost facts, not a new tracker/framework. Existing Health/WeeklyQA inspect pacing and improve unnecessary duplicate research within their own roles. No extra budget-monitor task or schedule. Manual CFB work shares the same allowance; unrelated user/account consumption must be included when observed rather than ignored.
+
+## Adoption boundary
+
+Install the exact instruction in all four existing enabled tasks and independently verify complete prompts plus unchanged ids/titles/schedules/timezones/timing modes/enabled states. This proves configuration, not provider-side enforcement or future compliance. Current balance0 means no source call is authorized until a genuinely renewed balance is observed. Next existing applicable run after renewal demonstrates actual pacing; no special run is dispatched just to test or consume credits.
