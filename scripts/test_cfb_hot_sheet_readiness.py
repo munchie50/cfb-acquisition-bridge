@@ -137,4 +137,61 @@ class ReviewWindowTests(unittest.TestCase):
         self.assertIn('NOT_REOPEN_AUTHORITY', r['scope'])
 
 
+class EvaluationCoverageTests(unittest.TestCase):
+    def setUp(self):
+        self.census = {str(i): {'first_frozen_status': 'PREDICTION'} for i in range(6)}
+        self.census['4']['first_frozen_status'] = 'EXCLUDED'
+        states = ['PASS', 'INCONCLUSIVE', 'CONDITIONAL', 'HISTORICAL_GAP', 'PASS', 'PASS']
+        self.decisions = {str(i): {'state': state, 'reason': 'Saved original reason',
+                                  'review_ref': {'blob': 'saved'} if state == 'CONDITIONAL' else None}
+                          for i, state in enumerate(states)}
+        self.rows = [{'game_id': str(i), 'review_window': {
+                      'review_required': i not in (3, 5),
+                      'review_due_by_utc': '2026-10-17T23:00:00Z' if i != 1 else None,
+                      'timing_issue': 'KICKOFF_REQUIRES_QUALIFICATION' if i == 1 else None}}
+                     for i in range(6)]
+
+    def test_full_identity_accounting_does_not_certify_pass(self):
+        r = readiness.evaluation_coverage(self.census, self.decisions, self.rows)
+        self.assertEqual(sum(r['counts'].values()), 6)
+        self.assertEqual(r['game_ids']['NOT_CERTIFIED'], ['0', '1', '5'])
+        self.assertEqual(r['counts']['CONDITIONAL_REVIEW_REFERENCE'], 1)
+        self.assertEqual(r['counts']['ORIGINAL_EXCLUSION'], 1)
+        self.assertEqual(r['counts']['HISTORICAL_GAP'], 1)
+        self.assertFalse(r['historical_backfill_authorized'])
+
+    def test_pending_queue_preserves_unknown_timing_and_drops_closed_games(self):
+        r = readiness.evaluation_coverage(self.census, self.decisions, self.rows)
+        self.assertEqual([x['game_id'] for x in r['uncertified_open_review_queue']], ['1', '0'])
+        self.assertEqual(self.rows[5]['evaluation_coverage'], 'NOT_CERTIFIED')
+
+    def test_deadlines_are_sorted_as_clocks_not_offset_text(self):
+        self.rows[0]['review_window']['review_due_by_utc'] = '2026-10-17T18:00:00-05:00'
+        self.rows[1]['review_window']['review_due_by_utc'] = '2026-10-17T22:00:00Z'
+        r = readiness.evaluation_coverage(self.census, self.decisions, self.rows)
+        self.assertEqual([x['game_id'] for x in r['uncertified_open_review_queue']], ['1', '0'])
+
+    def test_original_exclusion_cannot_be_promoted_by_a_conditional_label(self):
+        self.decisions['4'].update(state='CONDITIONAL', review_ref={'blob': 'saved'})
+        r = readiness.evaluation_coverage(self.census, self.decisions, self.rows)
+        self.assertIn('4', r['game_ids']['ORIGINAL_EXCLUSION'])
+        self.assertNotIn('4', r['game_ids']['CONDITIONAL_REVIEW_REFERENCE'])
+
+    def test_missing_duplicate_or_mismatched_identities_rejected(self):
+        for kind in ('missing', 'duplicate', 'decision'):
+            rows = copy.deepcopy(self.rows)
+            decisions = copy.deepcopy(self.decisions)
+            if kind == 'missing': rows.pop()
+            elif kind == 'duplicate': rows[-1]['game_id'] = '0'
+            else: decisions.pop('0')
+            with self.assertRaises(ValueError):
+                readiness.evaluation_coverage(self.census, decisions, rows)
+
+    def test_saved_reasons_and_decisions_are_not_rewritten(self):
+        before = copy.deepcopy(self.decisions)
+        readiness.evaluation_coverage(self.census, self.decisions, self.rows)
+        self.assertEqual(before, self.decisions)
+        self.assertEqual(self.rows[0]['saved_reason'], 'Saved original reason')
+
+
 if __name__ == '__main__': unittest.main()
