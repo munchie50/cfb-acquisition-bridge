@@ -718,7 +718,7 @@ Benefit: honest prospective negative evidence and closed unscored-cohort debt; c
 
 ## October25 Health follow-through — current integration and learning disposition
 
-Actual audit clock: 2026-10-25T21:50:00Z
+Actual audit clock: 2026-10-25T21:44:40Z
 
 Existing `CFB_QA_LEARNING_FOLLOW_THROUGH_20261023` remains `NUMERICAL BASELINE COMPLETE / EXTEND NEXT COMPLETED WEEK`. The latest verified completed-batch boundary is Weeks4–8:249 unique ORIGINAL predictions,153/249 margin-direction correct, marginMAE14.006623340516, totalMAE13.190502012127 and Brier0.239225353872. Week9 is not complete and is therefore NOT_YET_DUE for baseline extension. Do not resume from the superseded Week6 pointer or rebuild the completed baseline.
 
