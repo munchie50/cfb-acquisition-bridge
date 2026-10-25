@@ -1,0 +1,2380 @@
+{
+  "schema": "CFB_COMPLETED_WEEK_BASELINE_RECONCILIATION_V1",
+  "week": 4,
+  "archive_sha256": "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf",
+  "cutoff_utc": "2026-09-26T03:47:37.497112+00:00",
+  "fresh_final_html_sha256": "4d7a9374a2fbb4352ce5d25e005d284d470beda29045698565e1e4e20cf65f9f",
+  "population": {
+    "source_games": 71,
+    "original_targets": 65,
+    "original_predictions": 60,
+    "original_exclusions": 5,
+    "governed_fbs_vs_fbs_scored": 53,
+    "modeled_nonfbs_kept_separate": 7
+  },
+  "source_games_outside_original_targets": [
+    {
+      "date": "2026-09-25",
+      "cbs_game_id": "game-50029080",
+      "cbs_abbrev": "NCAAF_20260925_ARMY@TEMPLE",
+      "away_team": "Army",
+      "home_team": "Temple",
+      "away_score": 21,
+      "home_score": 17,
+      "status": "final",
+      "raw_team_names": [
+        "Army",
+        "Temple"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "cbs_game_id": "game-50027882",
+      "cbs_abbrev": "NCAAF_20260925_HOW@RUT",
+      "away_team": "Howard",
+      "home_team": "Rutgers",
+      "away_score": 7,
+      "home_score": 58,
+      "status": "final",
+      "raw_team_names": [
+        "Howard",
+        "Rutgers"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "cbs_game_id": "game-50027832",
+      "cbs_abbrev": "NCAAF_20260925_NAVY@UAB",
+      "away_team": "Navy",
+      "home_team": "UAB",
+      "away_score": 20,
+      "home_score": 24,
+      "status": "final",
+      "raw_team_names": [
+        "Navy",
+        "UAB"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "cbs_game_id": "game-50027858",
+      "cbs_abbrev": "NCAAF_20260925_NWEST@IND",
+      "away_team": "Northwestern",
+      "home_team": "Indiana",
+      "away_score": 23,
+      "home_score": 29,
+      "status": "final",
+      "raw_team_names": [
+        "Northwestern",
+        "Indiana"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "cbs_game_id": "game-50027833",
+      "cbs_abbrev": "NCAAF_20260925_CLEM@CAL",
+      "away_team": "Clemson",
+      "home_team": "California",
+      "away_score": 24,
+      "home_score": 10,
+      "status": "final",
+      "raw_team_names": [
+        "Clemson",
+        "California"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "cbs_game_id": "game-50027831",
+      "cbs_abbrev": "NCAAF_20260924_LIB@CSTCAR",
+      "away_team": "Liberty",
+      "home_team": "Coastal Carolina",
+      "away_score": 34,
+      "home_score": 17,
+      "status": "final",
+      "raw_team_names": [
+        "Liberty",
+        "C. Carolina"
+      ]
+    }
+  ],
+  "metrics": {
+    "n": 53,
+    "margin_direction_correct": 36,
+    "probability_classifier_correct": 37,
+    "margin_mae": 14.780825682279444,
+    "total_mae": 11.071212108762104,
+    "signed_margin_error": -0.9250484613300394,
+    "signed_total_error": -1.804872122647301,
+    "brier": 0.21427521592358498
+  },
+  "all_modeled_diagnostic_metrics_not_governed_population": {
+    "n": 60,
+    "margin_direction_correct": 43,
+    "probability_classifier_correct": 44,
+    "margin_mae": 15.195049904648812,
+    "total_mae": 11.540412633880665,
+    "signed_margin_error": 0.28072096592723766,
+    "signed_total_error": -1.6742393161044948,
+    "brier": 0.1978023632311297
+  },
+  "largest_margin_errors": [
+    {
+      "game_id": "401858462",
+      "away_team": "UCLA",
+      "home_team": "Maryland",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 7.251011947193646,
+      "pred_total": 60.50338095894656,
+      "pred_home_win": 0.6903209114351722,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027866",
+        "cbs_abbrev": "NCAAF_20260926_UCLA@MD",
+        "away_team": "UCLA",
+        "home_team": "Maryland",
+        "away_score": 54,
+        "home_score": 3,
+        "status": "final",
+        "raw_team_names": [
+          "UCLA",
+          "Maryland"
+        ]
+      },
+      "actual_home_margin": -51,
+      "actual_total": 57,
+      "signed_margin_error": -58.251011947193646,
+      "signed_total_error": -3.5033809589465577,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.47654296076468683
+    },
+    {
+      "game_id": "401856697",
+      "away_team": "Tulsa",
+      "home_team": "Arkansas",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -12.635365106336145,
+      "pred_total": 49.127583822092774,
+      "pred_home_win": 0.23957244778672823,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027895",
+        "cbs_abbrev": "NCAAF_20260926_TULSA@ARK",
+        "away_team": "Tulsa",
+        "home_team": "Arkansas",
+        "away_score": 6,
+        "home_score": 34,
+        "status": "final",
+        "raw_team_names": [
+          "Tulsa",
+          "Arkansas"
+        ]
+      },
+      "actual_home_margin": 28,
+      "actual_total": 40,
+      "signed_margin_error": 40.635365106336145,
+      "signed_total_error": -9.127583822092774,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.5782500621650681
+    },
+    {
+      "game_id": "401864512",
+      "away_team": "UNLV",
+      "home_team": "Akron",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 7.851652142822687,
+      "pred_total": 49.58562339898954,
+      "pred_home_win": 0.7245718892035076,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027834",
+        "cbs_abbrev": "NCAAF_20260926_UNLV@AKRON",
+        "away_team": "UNLV",
+        "home_team": "Akron",
+        "away_score": 38,
+        "home_score": 10,
+        "status": "final",
+        "raw_team_names": [
+          "UNLV",
+          "Akron"
+        ]
+      },
+      "actual_home_margin": -28,
+      "actual_total": 48,
+      "signed_margin_error": -35.85165214282269,
+      "signed_total_error": -1.58562339898954,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.5250044226239401
+    },
+    {
+      "game_id": "401856805",
+      "away_team": "Sam Houston",
+      "home_team": "Texas Tech",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -0.5670932723121679,
+      "pred_total": 51.42817626783463,
+      "pred_home_win": 0.5062469839337929,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027919",
+        "cbs_abbrev": "NCAAF_20260926_SAMST@TXTECH",
+        "away_team": "Sam Houston",
+        "home_team": "Texas Tech",
+        "away_score": 14,
+        "home_score": 49,
+        "status": "final",
+        "raw_team_names": [
+          "Sam Houston",
+          "Texas Tech"
+        ]
+      },
+      "actual_home_margin": 35,
+      "actual_total": 63,
+      "signed_margin_error": 35.56709327231217,
+      "signed_total_error": 11.57182373216537,
+      "direction_correct": false,
+      "probability_classifier_correct": true,
+      "brier": 0.2437920408744762
+    },
+    {
+      "game_id": "401860897",
+      "away_team": "Boise State",
+      "home_team": "Western Michigan",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 4.895285005754641,
+      "pred_total": 48.5775641146156,
+      "pred_home_win": 0.6558642664159613,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027891",
+        "cbs_abbrev": "NCAAF_20260926_BOISE@WMICH",
+        "away_team": "Boise State",
+        "home_team": "Western Michigan",
+        "away_score": 32,
+        "home_score": 7,
+        "status": "final",
+        "raw_team_names": [
+          "Boise St.",
+          "W. Michigan"
+        ]
+      },
+      "actual_home_margin": -25,
+      "actual_total": 39,
+      "signed_margin_error": -29.89528500575464,
+      "signed_total_error": -9.577564114615598,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.43015793596134705
+    }
+  ],
+  "largest_total_errors": [
+    {
+      "game_id": "401860896",
+      "away_team": "Colorado State",
+      "home_team": "UTSA",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 5.436275731747618,
+      "pred_total": 58.55476131685227,
+      "pred_home_win": 0.6624134622951341,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027922",
+        "cbs_abbrev": "NCAAF_20260926_COLOST@TXSA",
+        "away_team": "Colorado State",
+        "home_team": "UTSA",
+        "away_score": 45,
+        "home_score": 59,
+        "status": "final",
+        "raw_team_names": [
+          "Colorado St.",
+          "UTSA"
+        ]
+      },
+      "actual_home_margin": 14,
+      "actual_total": 104,
+      "signed_margin_error": 8.563724268252383,
+      "signed_total_error": 45.44523868314773,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.11396467043955885
+    },
+    {
+      "game_id": "401862785",
+      "away_team": "South Florida",
+      "home_team": "Bowling Green",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -24.50052463495844,
+      "pred_total": 51.038730848802565,
+      "pred_home_win": 0.07824424728639065,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027837",
+        "cbs_abbrev": "NCAAF_20260926_SFLA@BGREEN",
+        "away_team": "South Florida",
+        "home_team": "Bowling Green",
+        "away_score": 14,
+        "home_score": 6,
+        "status": "final",
+        "raw_team_names": [
+          "South Florida",
+          "Bowling Green"
+        ]
+      },
+      "actual_home_margin": -8,
+      "actual_total": 20,
+      "signed_margin_error": 16.50052463495844,
+      "signed_total_error": -31.038730848802565,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.00612216223341385
+    },
+    {
+      "game_id": "401869931",
+      "away_team": "Kennesaw State",
+      "home_team": "Arkansas State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 1.7413744827287454,
+      "pred_total": 55.12196922588478,
+      "pred_home_win": 0.5536436253976185,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027896",
+        "cbs_abbrev": "NCAAF_20260926_KENSAW@ARKST",
+        "away_team": "Kennesaw State",
+        "home_team": "Arkansas State",
+        "away_score": 14,
+        "home_score": 17,
+        "status": "final",
+        "raw_team_names": [
+          "Kennesaw St.",
+          "Arkansas St."
+        ]
+      },
+      "actual_home_margin": 3,
+      "actual_total": 31,
+      "signed_margin_error": 1.2586255172712546,
+      "signed_total_error": -24.121969225884783,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.19923401314818154
+    },
+    {
+      "game_id": "401856698",
+      "away_team": "Vanderbilt",
+      "home_team": "Auburn",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 5.655440249901028,
+      "pred_total": 55.558491778871684,
+      "pred_home_win": 0.6253148588464503,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027897",
+        "cbs_abbrev": "NCAAF_20260926_VANDY@AUBURN",
+        "away_team": "Vanderbilt",
+        "home_team": "Auburn",
+        "away_score": 15,
+        "home_score": 21,
+        "status": "final",
+        "raw_team_names": [
+          "Vanderbilt",
+          "Auburn"
+        ]
+      },
+      "actual_home_margin": 6,
+      "actual_total": 36,
+      "signed_margin_error": 0.34455975009897166,
+      "signed_total_error": -19.558491778871684,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.14038895500125545
+    },
+    {
+      "game_id": "401864509",
+      "away_team": "Air Force",
+      "home_team": "Nevada",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -2.0576134852446444,
+      "pred_total": 49.772084265595154,
+      "pred_home_win": 0.49699538020219114,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027936",
+        "cbs_abbrev": "NCAAF_20260926_AF@NEVADA",
+        "away_team": "Air Force",
+        "home_team": "Nevada",
+        "away_score": 36,
+        "home_score": 33,
+        "status": "final/2OT",
+        "raw_team_names": [
+          "Air Force",
+          "Nevada"
+        ]
+      },
+      "actual_home_margin": -3,
+      "actual_total": 69,
+      "signed_margin_error": -0.9423865147553556,
+      "signed_total_error": 19.227915734404846,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.24700440794232054
+    }
+  ],
+  "rows": [
+    {
+      "game_id": "401856704",
+      "away_team": "Texas",
+      "home_team": "Tennessee",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 10.472926151208487,
+      "pred_total": 53.552424587670835,
+      "pred_home_win": 0.7371970742471167,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027885",
+        "cbs_abbrev": "NCAAF_20260926_TEXAS@TENN",
+        "away_team": "Texas",
+        "home_team": "Tennessee",
+        "away_score": 20,
+        "home_score": 17,
+        "status": "final",
+        "raw_team_names": [
+          "Texas",
+          "Tennessee"
+        ]
+      },
+      "actual_home_margin": -3,
+      "actual_total": 37,
+      "signed_margin_error": -13.472926151208487,
+      "signed_total_error": -16.552424587670835,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.5434595262785088
+    },
+    {
+      "game_id": "401856805",
+      "away_team": "Sam Houston",
+      "home_team": "Texas Tech",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -0.5670932723121679,
+      "pred_total": 51.42817626783463,
+      "pred_home_win": 0.5062469839337929,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027919",
+        "cbs_abbrev": "NCAAF_20260926_SAMST@TXTECH",
+        "away_team": "Sam Houston",
+        "home_team": "Texas Tech",
+        "away_score": 14,
+        "home_score": 49,
+        "status": "final",
+        "raw_team_names": [
+          "Sam Houston",
+          "Texas Tech"
+        ]
+      },
+      "actual_home_margin": 35,
+      "actual_total": 63,
+      "signed_margin_error": 35.56709327231217,
+      "signed_total_error": 11.57182373216537,
+      "direction_correct": false,
+      "probability_classifier_correct": true,
+      "brier": 0.2437920408744762
+    },
+    {
+      "game_id": "401856813",
+      "away_team": "Colorado",
+      "home_team": "Baylor",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 13.76986843579302,
+      "pred_total": 51.6831577087811,
+      "pred_home_win": 0.7965121891123244,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027899",
+        "cbs_abbrev": "NCAAF_20260926_COLO@BAYLOR",
+        "away_team": "Colorado",
+        "home_team": "Baylor",
+        "away_score": 13,
+        "home_score": 23,
+        "status": "final",
+        "raw_team_names": [
+          "Colorado",
+          "Baylor"
+        ]
+      },
+      "actual_home_margin": 10,
+      "actual_total": 36,
+      "signed_margin_error": -3.76986843579302,
+      "signed_total_error": -15.683157708781103,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.04140728917985845
+    },
+    {
+      "game_id": "401858242",
+      "away_team": "Virginia Tech",
+      "home_team": "Boston College",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -9.085774723711674,
+      "pred_total": 52.32230295519851,
+      "pred_home_win": 0.2712383635125649,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027836",
+        "cbs_abbrev": "NCAAF_20260926_VATECH@BC",
+        "away_team": "Virginia Tech",
+        "home_team": "Boston College",
+        "away_score": 21,
+        "home_score": 14,
+        "status": "final",
+        "raw_team_names": [
+          "Virginia Tech",
+          "Boston College"
+        ]
+      },
+      "actual_home_margin": -7,
+      "actual_total": 35,
+      "signed_margin_error": 2.0857747237116744,
+      "signed_total_error": -17.32230295519851,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.07357024984097431
+    },
+    {
+      "game_id": "401858243",
+      "away_team": "Wake Forest",
+      "home_team": "Louisville",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 15.006255729293464,
+      "pred_total": 66.17548481230429,
+      "pred_home_win": 0.8204573588093942,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027863",
+        "cbs_abbrev": "NCAAF_20260926_WAKE@LVILLE",
+        "away_team": "Wake Forest",
+        "home_team": "Louisville",
+        "away_score": 30,
+        "home_score": 27,
+        "status": "final",
+        "raw_team_names": [
+          "Wake Forest",
+          "Louisville"
+        ]
+      },
+      "actual_home_margin": -3,
+      "actual_total": 57,
+      "signed_margin_error": -18.006255729293464,
+      "signed_total_error": -9.17548481230429,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.673150277624487
+    },
+    {
+      "game_id": "401858465",
+      "away_team": "Illinois",
+      "home_team": "Ohio State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 13.35140261635014,
+      "pred_total": 59.10123693714681,
+      "pred_home_win": 0.7885597915661311,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027874",
+        "cbs_abbrev": "NCAAF_20260926_ILL@OHIOST",
+        "away_team": "Illinois",
+        "home_team": "Ohio State",
+        "away_score": 19,
+        "home_score": 42,
+        "status": "final",
+        "raw_team_names": [
+          "Illinois",
+          "Ohio State"
+        ]
+      },
+      "actual_home_margin": 23,
+      "actual_total": 61,
+      "signed_margin_error": 9.64859738364986,
+      "signed_total_error": 1.8987630628531917,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.04470696174255793
+    },
+    {
+      "game_id": "401860893",
+      "away_team": "San Diego State",
+      "home_team": "Toledo",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 15.07789344198915,
+      "pred_total": 57.851106570108456,
+      "pred_home_win": 0.818665301644929,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027886",
+        "cbs_abbrev": "NCAAF_20260926_SDGST@TOLEDO",
+        "away_team": "San Diego State",
+        "home_team": "Toledo",
+        "away_score": 16,
+        "home_score": 41,
+        "status": "final",
+        "raw_team_names": [
+          "San Diego St.",
+          "Toledo"
+        ]
+      },
+      "actual_home_margin": 25,
+      "actual_total": 57,
+      "signed_margin_error": 9.92210655801085,
+      "signed_total_error": -0.8511065701084561,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.03288227282752459
+    },
+    {
+      "game_id": "401860896",
+      "away_team": "Colorado State",
+      "home_team": "UTSA",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 5.436275731747618,
+      "pred_total": 58.55476131685227,
+      "pred_home_win": 0.6624134622951341,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027922",
+        "cbs_abbrev": "NCAAF_20260926_COLOST@TXSA",
+        "away_team": "Colorado State",
+        "home_team": "UTSA",
+        "away_score": 45,
+        "home_score": 59,
+        "status": "final",
+        "raw_team_names": [
+          "Colorado St.",
+          "UTSA"
+        ]
+      },
+      "actual_home_margin": 14,
+      "actual_total": 104,
+      "signed_margin_error": 8.563724268252383,
+      "signed_total_error": 45.44523868314773,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.11396467043955885
+    },
+    {
+      "game_id": "401864512",
+      "away_team": "UNLV",
+      "home_team": "Akron",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 7.851652142822687,
+      "pred_total": 49.58562339898954,
+      "pred_home_win": 0.7245718892035076,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027834",
+        "cbs_abbrev": "NCAAF_20260926_UNLV@AKRON",
+        "away_team": "UNLV",
+        "home_team": "Akron",
+        "away_score": 38,
+        "home_score": 10,
+        "status": "final",
+        "raw_team_names": [
+          "UNLV",
+          "Akron"
+        ]
+      },
+      "actual_home_margin": -28,
+      "actual_total": 48,
+      "signed_margin_error": -35.85165214282269,
+      "signed_total_error": -1.58562339898954,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.5250044226239401
+    },
+    {
+      "game_id": "401866425",
+      "away_team": "Ball State",
+      "home_team": "Kent State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -4.017148778136233,
+      "pred_total": 54.6271273433728,
+      "pred_home_win": 0.38315705162947783,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027860",
+        "cbs_abbrev": "NCAAF_20260926_BALLST@KENTST",
+        "away_team": "Ball State",
+        "home_team": "Kent State",
+        "away_score": 13,
+        "home_score": 26,
+        "status": "final",
+        "raw_team_names": [
+          "Ball St.",
+          "Kent St."
+        ]
+      },
+      "actual_home_margin": 13,
+      "actual_total": 39,
+      "signed_margin_error": 17.01714877813623,
+      "signed_total_error": -15.627127343372798,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.38049522295443877
+    },
+    {
+      "game_id": "401864576",
+      "away_team": "South Alabama",
+      "home_team": "Kentucky",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 7.228901803714184,
+      "pred_total": 54.8010254609073,
+      "pred_home_win": 0.7071560356589933,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027861",
+        "cbs_abbrev": "NCAAF_20260926_SALA@UK",
+        "away_team": "South Alabama",
+        "home_team": "Kentucky",
+        "away_score": 21,
+        "home_score": 45,
+        "status": "final",
+        "raw_team_names": [
+          "South Alabama",
+          "Kentucky"
+        ]
+      },
+      "actual_home_margin": 24,
+      "actual_total": 66,
+      "signed_margin_error": 16.771098196285816,
+      "signed_total_error": 11.198974539092703,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.0857575874509568
+    },
+    {
+      "game_id": "401858462",
+      "away_team": "UCLA",
+      "home_team": "Maryland",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 7.251011947193646,
+      "pred_total": 60.50338095894656,
+      "pred_home_win": 0.6903209114351722,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027866",
+        "cbs_abbrev": "NCAAF_20260926_UCLA@MD",
+        "away_team": "UCLA",
+        "home_team": "Maryland",
+        "away_score": 54,
+        "home_score": 3,
+        "status": "final",
+        "raw_team_names": [
+          "UCLA",
+          "Maryland"
+        ]
+      },
+      "actual_home_margin": -51,
+      "actual_total": 57,
+      "signed_margin_error": -58.251011947193646,
+      "signed_total_error": -3.5033809589465577,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.47654296076468683
+    },
+    {
+      "game_id": "401858467",
+      "away_team": "Notre Dame",
+      "home_team": "Purdue",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -11.424438403152433,
+      "pred_total": 56.867653719151896,
+      "pred_home_win": 0.23688694425135148,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027880",
+        "cbs_abbrev": "NCAAF_20260926_ND@PURDUE",
+        "away_team": "Notre Dame",
+        "home_team": "Purdue",
+        "away_score": 49,
+        "home_score": 10,
+        "status": "final",
+        "raw_team_names": [
+          "Notre Dame",
+          "Purdue"
+        ]
+      },
+      "actual_home_margin": -39,
+      "actual_total": 59,
+      "signed_margin_error": -27.575561596847567,
+      "signed_total_error": 2.132346280848104,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.0561154243567429
+    },
+    {
+      "game_id": "401864511",
+      "away_team": "Northern Illinois",
+      "home_team": "Georgia State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 21.494260857388145,
+      "pred_total": 55.58809947388309,
+      "pred_home_win": 0.8868417590454921,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027857",
+        "cbs_abbrev": "NCAAF_20260926_NILL@GAST",
+        "away_team": "Northern Illinois",
+        "home_team": "Georgia State",
+        "away_score": 14,
+        "home_score": 35,
+        "status": "final",
+        "raw_team_names": [
+          "N. Illinois",
+          "Georgia St."
+        ]
+      },
+      "actual_home_margin": 21,
+      "actual_total": 49,
+      "signed_margin_error": -0.49426085738814507,
+      "signed_total_error": -6.588099473883091,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.012804787495918466
+    },
+    {
+      "game_id": "401864510",
+      "away_team": "Hawai'i",
+      "home_team": "Wyoming",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 4.730553092587139,
+      "pred_total": 48.253377566613274,
+      "pred_home_win": 0.5979714342956156,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027933",
+        "cbs_abbrev": "NCAAF_20260926_HAWAII@WYO",
+        "away_team": "Hawai'i",
+        "home_team": "Wyoming",
+        "away_score": 10,
+        "home_score": 27,
+        "status": "final",
+        "raw_team_names": [
+          "Hawaii",
+          "Wyoming"
+        ]
+      },
+      "actual_home_margin": 17,
+      "actual_total": 37,
+      "signed_margin_error": 12.26944690741286,
+      "signed_total_error": -11.253377566613274,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.1616269676423245
+    },
+    {
+      "game_id": "401856699",
+      "away_team": "Ole Miss",
+      "home_team": "Florida",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 13.217650142266296,
+      "pred_total": 64.05397858108459,
+      "pred_home_win": 0.788155330219061,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027851",
+        "cbs_abbrev": "NCAAF_20260926_MISS@FLA",
+        "away_team": "Ole Miss",
+        "home_team": "Florida",
+        "away_score": 28,
+        "home_score": 52,
+        "status": "final",
+        "raw_team_names": [
+          "Ole Miss",
+          "Florida"
+        ]
+      },
+      "actual_home_margin": 24,
+      "actual_total": 80,
+      "signed_margin_error": 10.782349857733704,
+      "signed_total_error": 15.946021418915407,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.044878164114595075
+    },
+    {
+      "game_id": "401856700",
+      "away_team": "Oklahoma",
+      "home_team": "Georgia",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 18.36256514670038,
+      "pred_total": 51.772853423958296,
+      "pred_home_win": 0.8655916027243088,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027855",
+        "cbs_abbrev": "NCAAF_20260926_OKLA@UGA",
+        "away_team": "Oklahoma",
+        "home_team": "Georgia",
+        "away_score": 13,
+        "home_score": 41,
+        "status": "final",
+        "raw_team_names": [
+          "Oklahoma",
+          "Georgia"
+        ]
+      },
+      "actual_home_margin": 28,
+      "actual_total": 54,
+      "signed_margin_error": 9.63743485329962,
+      "signed_total_error": 2.2271465760417044,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.018065617258220035
+    },
+    {
+      "game_id": "401856815",
+      "away_team": "TCU",
+      "home_team": "UCF",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 2.129415204750309,
+      "pred_total": 51.98014453627668,
+      "pred_home_win": 0.5597747241699793,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027887",
+        "cbs_abbrev": "NCAAF_20260926_TCU@UCF",
+        "away_team": "TCU",
+        "home_team": "UCF",
+        "away_score": 13,
+        "home_score": 21,
+        "status": "final",
+        "raw_team_names": [
+          "TCU",
+          "UCF"
+        ]
+      },
+      "actual_home_margin": 8,
+      "actual_total": 34,
+      "signed_margin_error": 5.870584795249691,
+      "signed_total_error": -17.980144536276683,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.1937982934796178
+    },
+    {
+      "game_id": "401856816",
+      "away_team": "Utah",
+      "home_team": "Iowa State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -2.6921682224727714,
+      "pred_total": 48.44493042131173,
+      "pred_home_win": 0.44057827680658873,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027903",
+        "cbs_abbrev": "NCAAF_20260926_UTAH@IOWAST",
+        "away_team": "Utah",
+        "home_team": "Iowa State",
+        "away_score": 31,
+        "home_score": 17,
+        "status": "final",
+        "raw_team_names": [
+          "Utah",
+          "Iowa St."
+        ]
+      },
+      "actual_home_margin": -14,
+      "actual_total": 48,
+      "signed_margin_error": -11.307831777527229,
+      "signed_total_error": -0.44493042131173155,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.19410921799386313
+    },
+    {
+      "game_id": "401858463",
+      "away_team": "Iowa",
+      "home_team": "Michigan",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -2.7420151376631803,
+      "pred_total": 40.096817719893984,
+      "pred_home_win": 0.4414467703109153,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027870",
+        "cbs_abbrev": "NCAAF_20260926_IOWA@MICH",
+        "away_team": "Iowa",
+        "home_team": "Michigan",
+        "away_score": 20,
+        "home_score": 19,
+        "status": "final",
+        "raw_team_names": [
+          "Iowa",
+          "Michigan"
+        ]
+      },
+      "actual_home_margin": -1,
+      "actual_total": 39,
+      "signed_margin_error": 1.7420151376631803,
+      "signed_total_error": -1.0968177198939841,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.19487525101793798
+    },
+    {
+      "game_id": "401860897",
+      "away_team": "Boise State",
+      "home_team": "Western Michigan",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 4.895285005754641,
+      "pred_total": 48.5775641146156,
+      "pred_home_win": 0.6558642664159613,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027891",
+        "cbs_abbrev": "NCAAF_20260926_BOISE@WMICH",
+        "away_team": "Boise State",
+        "home_team": "Western Michigan",
+        "away_score": 32,
+        "home_score": 7,
+        "status": "final",
+        "raw_team_names": [
+          "Boise St.",
+          "W. Michigan"
+        ]
+      },
+      "actual_home_margin": -25,
+      "actual_total": 39,
+      "signed_margin_error": -29.89528500575464,
+      "signed_total_error": -9.577564114615598,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.43015793596134705
+    },
+    {
+      "game_id": "401861970",
+      "away_team": "UConn",
+      "home_team": "Miami (OH)",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -5.904142908403034,
+      "pred_total": 60.8949108736893,
+      "pred_home_win": 0.38477267807138843,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027869",
+        "cbs_abbrev": "NCAAF_20260926_UCONN@MIAOH",
+        "away_team": "UConn",
+        "home_team": "Miami (OH)",
+        "away_score": 21,
+        "home_score": 24,
+        "status": "final",
+        "raw_team_names": [
+          "UConn",
+          "Miami-OH"
+        ]
+      },
+      "actual_home_margin": 3,
+      "actual_total": 45,
+      "signed_margin_error": 8.904142908403035,
+      "signed_total_error": -15.894910873689298,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.3785046576474514
+    },
+    {
+      "game_id": "401864579",
+      "away_team": "New Mexico",
+      "home_team": "New Mexico State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -2.865735622866411,
+      "pred_total": 47.344474843917695,
+      "pred_home_win": 0.430677172427361,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027927",
+        "cbs_abbrev": "NCAAF_20260926_NMEX@NMEXST",
+        "away_team": "New Mexico",
+        "home_team": "New Mexico State",
+        "away_score": 42,
+        "home_score": 18,
+        "status": "final",
+        "raw_team_names": [
+          "New Mexico",
+          "New Mexico St."
+        ]
+      },
+      "actual_home_margin": -24,
+      "actual_total": 60,
+      "signed_margin_error": -21.13426437713359,
+      "signed_total_error": 12.655525156082305,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.18548282685002682
+    },
+    {
+      "game_id": "401856806",
+      "away_team": "Houston",
+      "home_team": "Georgia Southern",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -4.935139971699801,
+      "pred_total": 51.10893554583346,
+      "pred_home_win": 0.36119700281828604,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027856",
+        "cbs_abbrev": "NCAAF_20260926_HOU@GAS",
+        "away_team": "Houston",
+        "home_team": "Georgia Southern",
+        "away_score": 42,
+        "home_score": 28,
+        "status": "final",
+        "raw_team_names": [
+          "Houston",
+          "Ga. Southern"
+        ]
+      },
+      "actual_home_margin": -14,
+      "actual_total": 70,
+      "signed_margin_error": -9.064860028300199,
+      "signed_total_error": 18.89106445416654,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.13046327484491294
+    },
+    {
+      "game_id": "401856698",
+      "away_team": "Vanderbilt",
+      "home_team": "Auburn",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 5.655440249901028,
+      "pred_total": 55.558491778871684,
+      "pred_home_win": 0.6253148588464503,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027897",
+        "cbs_abbrev": "NCAAF_20260926_VANDY@AUBURN",
+        "away_team": "Vanderbilt",
+        "home_team": "Auburn",
+        "away_score": 15,
+        "home_score": 21,
+        "status": "final",
+        "raw_team_names": [
+          "Vanderbilt",
+          "Auburn"
+        ]
+      },
+      "actual_home_margin": 6,
+      "actual_total": 36,
+      "signed_margin_error": 0.34455975009897166,
+      "signed_total_error": -19.558491778871684,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.14038895500125545
+    },
+    {
+      "game_id": "401858464",
+      "away_team": "Nebraska",
+      "home_team": "Michigan State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -10.799963105798703,
+      "pred_total": 49.45706317832333,
+      "pred_home_win": 0.25646702566774,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027871",
+        "cbs_abbrev": "NCAAF_20260926_NEB@MICHST",
+        "away_team": "Nebraska",
+        "home_team": "Michigan State",
+        "away_score": 31,
+        "home_score": 13,
+        "status": "final",
+        "raw_team_names": [
+          "Nebraska",
+          "Michigan St."
+        ]
+      },
+      "actual_home_margin": -18,
+      "actual_total": 44,
+      "signed_margin_error": -7.200036894201297,
+      "signed_total_error": -5.457063178323331,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.06577533525485721
+    },
+    {
+      "game_id": "401858466",
+      "away_team": "Wisconsin",
+      "home_team": "Penn State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 16.3131293958203,
+      "pred_total": 51.96772840035756,
+      "pred_home_win": 0.8209682492480165,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027877",
+        "cbs_abbrev": "NCAAF_20260926_WISC@PSU",
+        "away_team": "Wisconsin",
+        "home_team": "Penn State",
+        "away_score": 24,
+        "home_score": 20,
+        "status": "final",
+        "raw_team_names": [
+          "Wisconsin",
+          "Penn State"
+        ]
+      },
+      "actual_home_margin": -4,
+      "actual_total": 44,
+      "signed_margin_error": -20.3131293958203,
+      "signed_total_error": -7.967728400357558,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.6739888662733533
+    },
+    {
+      "game_id": "401862785",
+      "away_team": "South Florida",
+      "home_team": "Bowling Green",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -24.50052463495844,
+      "pred_total": 51.038730848802565,
+      "pred_home_win": 0.07824424728639065,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027837",
+        "cbs_abbrev": "NCAAF_20260926_SFLA@BGREEN",
+        "away_team": "South Florida",
+        "home_team": "Bowling Green",
+        "away_score": 14,
+        "home_score": 6,
+        "status": "final",
+        "raw_team_names": [
+          "South Florida",
+          "Bowling Green"
+        ]
+      },
+      "actual_home_margin": -8,
+      "actual_total": 20,
+      "signed_margin_error": 16.50052463495844,
+      "signed_total_error": -31.038730848802565,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.00612216223341385
+    },
+    {
+      "game_id": "401858239",
+      "away_team": "Delaware",
+      "home_team": "Virginia",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 9.524840089990748,
+      "pred_total": 52.16010782805526,
+      "pred_home_win": 0.7150086780617363,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027889",
+        "cbs_abbrev": "NCAAF_20260926_DE@UVA",
+        "away_team": "Delaware",
+        "home_team": "Virginia",
+        "away_score": 3,
+        "home_score": 42,
+        "status": "final",
+        "raw_team_names": [
+          "Delaware",
+          "Virginia"
+        ]
+      },
+      "actual_home_margin": 39,
+      "actual_total": 45,
+      "signed_margin_error": 29.475159910009253,
+      "signed_total_error": -7.16010782805526,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.08122005358011906
+    },
+    {
+      "game_id": "401869961",
+      "away_team": "James Madison",
+      "home_team": "Old Dominion",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -12.401797149987166,
+      "pred_total": 47.04564085341532,
+      "pred_home_win": 0.21694035910468448,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027875",
+        "cbs_abbrev": "NCAAF_20260926_JMAD@ODU",
+        "away_team": "James Madison",
+        "home_team": "Old Dominion",
+        "away_score": 46,
+        "home_score": 20,
+        "status": "final",
+        "raw_team_names": [
+          "James Madison",
+          "Old Dominion"
+        ]
+      },
+      "actual_home_margin": -26,
+      "actual_total": 66,
+      "signed_margin_error": -13.598202850012834,
+      "signed_total_error": 18.95435914658468,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.04706311940846946
+    },
+    {
+      "game_id": "401858238",
+      "away_team": "Central Michigan",
+      "home_team": "Miami",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 29.26358900532673,
+      "pred_total": 51.23260578507238,
+      "pred_home_win": 0.9528877381489411,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027868",
+        "cbs_abbrev": "NCAAF_20260926_CMICH@MIAMI",
+        "away_team": "Central Michigan",
+        "home_team": "Miami",
+        "away_score": 3,
+        "home_score": 52,
+        "status": "final",
+        "raw_team_names": [
+          "C. Michigan",
+          "Miami (Fla.)"
+        ]
+      },
+      "actual_home_margin": 49,
+      "actual_total": 55,
+      "signed_margin_error": 19.73641099467327,
+      "signed_total_error": 3.76739421492762,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.0022195652167227376
+    },
+    {
+      "game_id": "401862780",
+      "away_team": "Louisiana",
+      "home_team": "Charlotte",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -6.9553712011317685,
+      "pred_total": 57.19290435064472,
+      "pred_home_win": 0.3349080970052102,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027840",
+        "cbs_abbrev": "NCAAF_20260926_UL@CHARLO",
+        "away_team": "Louisiana",
+        "home_team": "Charlotte",
+        "away_score": 34,
+        "home_score": 7,
+        "status": "final",
+        "raw_team_names": [
+          "Louisiana",
+          "Charlotte"
+        ]
+      },
+      "actual_home_margin": -27,
+      "actual_total": 41,
+      "signed_margin_error": -20.04462879886823,
+      "signed_total_error": -16.192904350644717,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.11216343343965127
+    },
+    {
+      "game_id": "401856696",
+      "away_team": "South Carolina",
+      "home_team": "Alabama",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 1.819954975696803,
+      "pred_total": 57.432055510402925,
+      "pred_home_win": 0.5436118093127592,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027894",
+        "cbs_abbrev": "NCAAF_20260926_SC@BAMA",
+        "away_team": "South Carolina",
+        "home_team": "Alabama",
+        "away_score": 18,
+        "home_score": 49,
+        "status": "final",
+        "raw_team_names": [
+          "South Carolina",
+          "Alabama"
+        ]
+      },
+      "actual_home_margin": 31,
+      "actual_total": 67,
+      "signed_margin_error": 29.180045024303197,
+      "signed_total_error": 9.567944489597075,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.20829018059877327
+    },
+    {
+      "game_id": "401856814",
+      "away_team": "Kansas State",
+      "home_team": "Cincinnati",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -2.9628979099172716,
+      "pred_total": 56.04565595978665,
+      "pred_home_win": 0.4380971152578491,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027841",
+        "cbs_abbrev": "NCAAF_20260926_KSTATE@CINCY",
+        "away_team": "Kansas State",
+        "home_team": "Cincinnati",
+        "away_score": 26,
+        "home_score": 31,
+        "status": "final",
+        "raw_team_names": [
+          "Kansas State",
+          "Cincinnati"
+        ]
+      },
+      "actual_home_margin": 5,
+      "actual_total": 57,
+      "signed_margin_error": 7.962897909917272,
+      "signed_total_error": 0.9543440402133498,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.3157348518815509
+    },
+    {
+      "game_id": "401856881",
+      "away_team": "Oklahoma State",
+      "home_team": "West Virginia",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 5.239441941410113,
+      "pred_total": 55.29927624138787,
+      "pred_home_win": 0.6394709202732142,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027890",
+        "cbs_abbrev": "NCAAF_20260926_OKLAST@WVU",
+        "away_team": "Oklahoma State",
+        "home_team": "West Virginia",
+        "away_score": 41,
+        "home_score": 24,
+        "status": "final",
+        "raw_team_names": [
+          "Oklahoma State",
+          "West Virginia"
+        ]
+      },
+      "actual_home_margin": -17,
+      "actual_total": 65,
+      "signed_margin_error": -22.239441941410114,
+      "signed_total_error": 9.700723758612128,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.40892305787507144
+    },
+    {
+      "game_id": "401862784",
+      "away_team": "Southern Miss",
+      "home_team": "Tulane",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 1.4391764054116591,
+      "pred_total": 54.00985239453229,
+      "pred_home_win": 0.486129981843499,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027920",
+        "cbs_abbrev": "NCAAF_20260926_USM@TULANE",
+        "away_team": "Southern Miss",
+        "home_team": "Tulane",
+        "away_score": 21,
+        "home_score": 24,
+        "status": "final",
+        "raw_team_names": [
+          "So. Miss",
+          "Tulane"
+        ]
+      },
+      "actual_home_margin": 3,
+      "actual_total": 45,
+      "signed_margin_error": 1.5608235945883409,
+      "signed_total_error": -9.009852394532288,
+      "direction_correct": true,
+      "probability_classifier_correct": false,
+      "brier": 0.2640623955601627
+    },
+    {
+      "game_id": "401869931",
+      "away_team": "Kennesaw State",
+      "home_team": "Arkansas State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 1.7413744827287454,
+      "pred_total": 55.12196922588478,
+      "pred_home_win": 0.5536436253976185,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027896",
+        "cbs_abbrev": "NCAAF_20260926_KENSAW@ARKST",
+        "away_team": "Kennesaw State",
+        "home_team": "Arkansas State",
+        "away_score": 14,
+        "home_score": 17,
+        "status": "final",
+        "raw_team_names": [
+          "Kennesaw St.",
+          "Arkansas St."
+        ]
+      },
+      "actual_home_margin": 3,
+      "actual_total": 31,
+      "signed_margin_error": 1.2586255172712546,
+      "signed_total_error": -24.121969225884783,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.19923401314818154
+    },
+    {
+      "game_id": "401871048",
+      "away_team": "Middle Tennessee",
+      "home_team": "Jacksonville State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 4.9144350403658645,
+      "pred_total": 50.54543630241639,
+      "pred_home_win": 0.6129951415732157,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50028977",
+        "cbs_abbrev": "NCAAF_20260926_MTSU@JAXST",
+        "away_team": "Middle Tennessee",
+        "home_team": "Jacksonville State",
+        "away_score": 13,
+        "home_score": 23,
+        "status": "final",
+        "raw_team_names": [
+          "Middle Tenn.",
+          "Jacksonville St."
+        ]
+      },
+      "actual_home_margin": 10,
+      "actual_total": 36,
+      "signed_margin_error": 5.0855649596341355,
+      "signed_total_error": -14.545436302416391,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.14977276044593538
+    },
+    {
+      "game_id": "401856702",
+      "away_team": "Texas A&M",
+      "home_team": "LSU",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 8.393729389780704,
+      "pred_total": 51.93939067421101,
+      "pred_home_win": 0.6545461045732051,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027905",
+        "cbs_abbrev": "NCAAF_20260926_TXAM@LSU",
+        "away_team": "Texas A&M",
+        "home_team": "LSU",
+        "away_score": 6,
+        "home_score": 35,
+        "status": "final",
+        "raw_team_names": [
+          "Texas A&M",
+          "LSU"
+        ]
+      },
+      "actual_home_margin": 29,
+      "actual_total": 41,
+      "signed_margin_error": 20.606270610219298,
+      "signed_total_error": -10.939390674211012,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.11933839386554698
+    },
+    {
+      "game_id": "401856804",
+      "away_team": "Arizona",
+      "home_team": "Washington State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -7.549742380868699,
+      "pred_total": 48.82938520165977,
+      "pred_home_win": 0.3023946537874962,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027942",
+        "cbs_abbrev": "NCAAF_20260926_ARIZ@WASHST",
+        "away_team": "Arizona",
+        "home_team": "Washington State",
+        "away_score": 34,
+        "home_score": 24,
+        "status": "final",
+        "raw_team_names": [
+          "Arizona",
+          "Washington St."
+        ]
+      },
+      "actual_home_margin": -10,
+      "actual_total": 58,
+      "signed_margin_error": -2.4502576191313006,
+      "signed_total_error": 9.170614798340232,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.09144252663925968
+    },
+    {
+      "game_id": "401858469",
+      "away_team": "Oregon",
+      "home_team": "USC",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 3.4723352447424243,
+      "pred_total": 61.442496272931024,
+      "pred_home_win": 0.6081895310642486,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027940",
+        "cbs_abbrev": "NCAAF_20260926_OREG@USC",
+        "away_team": "Oregon",
+        "home_team": "USC",
+        "away_score": 41,
+        "home_score": 27,
+        "status": "final",
+        "raw_team_names": [
+          "Oregon",
+          "USC"
+        ]
+      },
+      "actual_home_margin": -14,
+      "actual_total": 68,
+      "signed_margin_error": -17.472335244742425,
+      "signed_total_error": 6.557503727068976,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.36989450569615057
+    },
+    {
+      "game_id": "401860894",
+      "away_team": "Troy",
+      "home_team": "Utah State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -4.27264767814459,
+      "pred_total": 46.28258586179061,
+      "pred_home_win": 0.3944398572523409,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027931",
+        "cbs_abbrev": "NCAAF_20260926_TROY@UTAHST",
+        "away_team": "Troy",
+        "home_team": "Utah State",
+        "away_score": 10,
+        "home_score": 21,
+        "status": "final",
+        "raw_team_names": [
+          "Troy",
+          "Utah St."
+        ]
+      },
+      "actual_home_margin": 11,
+      "actual_total": 31,
+      "signed_margin_error": 15.27264767814459,
+      "signed_total_error": -15.282585861790608,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.3667030864845653
+    },
+    {
+      "game_id": "401864572",
+      "away_team": "App State",
+      "home_team": "NC State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -0.29938488385706563,
+      "pred_total": 56.18673018886545,
+      "pred_home_win": 0.5033942066097687,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027872",
+        "cbs_abbrev": "NCAAF_20260926_APLST@NCST",
+        "away_team": "App State",
+        "home_team": "NC State",
+        "away_score": 31,
+        "home_score": 41,
+        "status": "final",
+        "raw_team_names": [
+          "App. St.",
+          "NC State"
+        ]
+      },
+      "actual_home_margin": 10,
+      "actual_total": 72,
+      "signed_margin_error": 10.299384883857066,
+      "signed_total_error": 15.813269811134553,
+      "direction_correct": false,
+      "probability_classifier_correct": true,
+      "brier": 0.24661731402874104
+    },
+    {
+      "game_id": "401856703",
+      "away_team": "Missouri",
+      "home_team": "Mississippi State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 11.487226132951234,
+      "pred_total": 57.290839780700836,
+      "pred_home_win": 0.7766773960351819,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027908",
+        "cbs_abbrev": "NCAAF_20260926_MIZZOU@MISSST",
+        "away_team": "Missouri",
+        "home_team": "Mississippi State",
+        "away_score": 24,
+        "home_score": 31,
+        "status": "final",
+        "raw_team_names": [
+          "Missouri",
+          "Miss. State"
+        ]
+      },
+      "actual_home_margin": 7,
+      "actual_total": 55,
+      "signed_margin_error": -4.487226132951234,
+      "signed_total_error": -2.2908397807008356,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.04987298544162697
+    },
+    {
+      "game_id": "401856697",
+      "away_team": "Tulsa",
+      "home_team": "Arkansas",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -12.635365106336145,
+      "pred_total": 49.127583822092774,
+      "pred_home_win": 0.23957244778672823,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027895",
+        "cbs_abbrev": "NCAAF_20260926_TULSA@ARK",
+        "away_team": "Tulsa",
+        "home_team": "Arkansas",
+        "away_score": 6,
+        "home_score": 34,
+        "status": "final",
+        "raw_team_names": [
+          "Tulsa",
+          "Arkansas"
+        ]
+      },
+      "actual_home_margin": 28,
+      "actual_total": 40,
+      "signed_margin_error": 40.635365106336145,
+      "signed_total_error": -9.127583822092774,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.5782500621650681
+    },
+    {
+      "game_id": "401862782",
+      "away_team": "Florida Atlantic",
+      "home_team": "UL Monroe",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -2.834082652116682,
+      "pred_total": 55.95878958728807,
+      "pred_home_win": 0.4412687339691107,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027906",
+        "cbs_abbrev": "NCAAF_20260926_FAU@LAMON",
+        "away_team": "Florida Atlantic",
+        "home_team": "UL Monroe",
+        "away_score": 45,
+        "home_score": 17,
+        "status": "final",
+        "raw_team_names": [
+          "FAU",
+          "UL-Monroe"
+        ]
+      },
+      "actual_home_margin": -28,
+      "actual_total": 62,
+      "signed_margin_error": -25.16591734788332,
+      "signed_total_error": 6.0412104127119335,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.1947180955787018
+    },
+    {
+      "game_id": "401858241",
+      "away_team": "Missouri State",
+      "home_team": "SMU",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 12.561143314815647,
+      "pred_total": 61.78393551030065,
+      "pred_home_win": 0.7929888449429404,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027913",
+        "cbs_abbrev": "NCAAF_20260926_MOST@SMU",
+        "away_team": "Missouri State",
+        "home_team": "SMU",
+        "away_score": 24,
+        "home_score": 34,
+        "status": "final",
+        "raw_team_names": [
+          "Missouri St.",
+          "SMU"
+        ]
+      },
+      "actual_home_margin": 10,
+      "actual_total": 58,
+      "signed_margin_error": -2.561143314815647,
+      "signed_total_error": -3.783935510300651,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.042853618318057965
+    },
+    {
+      "game_id": "401860895",
+      "away_team": "Oregon State",
+      "home_team": "UTEP",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -4.293831513122526,
+      "pred_total": 55.122995286418345,
+      "pred_home_win": 0.37465015661871465,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027930",
+        "cbs_abbrev": "NCAAF_20260926_OREGST@UTEP",
+        "away_team": "Oregon State",
+        "home_team": "UTEP",
+        "away_score": 33,
+        "home_score": 7,
+        "status": "final",
+        "raw_team_names": [
+          "Oregon State",
+          "UTEP"
+        ]
+      },
+      "actual_home_margin": -26,
+      "actual_total": 40,
+      "signed_margin_error": -21.706168486877473,
+      "signed_total_error": -15.122995286418345,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.1403627398544274
+    },
+    {
+      "game_id": "401866429",
+      "away_team": "Massachusetts",
+      "home_team": "Sacramento State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -7.259137577267704,
+      "pred_total": 47.48016384729067,
+      "pred_home_win": 0.313586405687736,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027937",
+        "cbs_abbrev": "NCAAF_20260926_UMASS@SACST",
+        "away_team": "Massachusetts",
+        "home_team": "Sacramento State",
+        "away_score": 35,
+        "home_score": 6,
+        "status": "final",
+        "raw_team_names": [
+          "UMass",
+          "Sacramento St."
+        ]
+      },
+      "actual_home_margin": -29,
+      "actual_total": 41,
+      "signed_margin_error": -21.740862422732295,
+      "signed_total_error": -6.480163847290669,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.09833643383215333
+    },
+    {
+      "game_id": "401860891",
+      "away_team": "Rice",
+      "home_team": "Fresno State",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 7.821605136994662,
+      "pred_total": 46.27061925360677,
+      "pred_home_win": 0.7199031429051947,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027935",
+        "cbs_abbrev": "NCAAF_20260926_RICE@FRESNO",
+        "away_team": "Rice",
+        "home_team": "Fresno State",
+        "away_score": 24,
+        "home_score": 38,
+        "status": "final",
+        "raw_team_names": [
+          "Rice",
+          "Fresno St."
+        ]
+      },
+      "actual_home_margin": 14,
+      "actual_total": 62,
+      "signed_margin_error": 6.178394863005338,
+      "signed_total_error": 15.729380746393232,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.07845424935438776
+    },
+    {
+      "game_id": "401858240",
+      "away_team": "Georgia Tech",
+      "home_team": "Stanford",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -7.299903278021588,
+      "pred_total": 53.8120353464739,
+      "pred_home_win": 0.3014172795633898,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027938",
+        "cbs_abbrev": "NCAAF_20260926_GATECH@STNFRD",
+        "away_team": "Georgia Tech",
+        "home_team": "Stanford",
+        "away_score": 27,
+        "home_score": 34,
+        "status": "final",
+        "raw_team_names": [
+          "Georgia Tech",
+          "Stanford"
+        ]
+      },
+      "actual_home_margin": 7,
+      "actual_total": 61,
+      "signed_margin_error": 14.299903278021588,
+      "signed_total_error": 7.187964653526102,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.48801781729261506
+    },
+    {
+      "game_id": "401864509",
+      "away_team": "Air Force",
+      "home_team": "Nevada",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": -2.0576134852446444,
+      "pred_total": 49.772084265595154,
+      "pred_home_win": 0.49699538020219114,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027936",
+        "cbs_abbrev": "NCAAF_20260926_AF@NEVADA",
+        "away_team": "Air Force",
+        "home_team": "Nevada",
+        "away_score": 36,
+        "home_score": 33,
+        "status": "final/2OT",
+        "raw_team_names": [
+          "Air Force",
+          "Nevada"
+        ]
+      },
+      "actual_home_margin": -3,
+      "actual_total": 69,
+      "signed_margin_error": -0.9423865147553556,
+      "signed_total_error": 19.227915734404846,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.24700440794232054
+    },
+    {
+      "game_id": "401858470",
+      "away_team": "Minnesota",
+      "home_team": "Washington",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_FBS",
+      "pred_home_margin": 4.460149792186821,
+      "pred_total": 50.08151980478551,
+      "pred_home_win": 0.5780532469192932,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027941",
+        "cbs_abbrev": "NCAAF_20260926_MINN@WASH",
+        "away_team": "Minnesota",
+        "home_team": "Washington",
+        "away_score": 27,
+        "home_score": 24,
+        "status": "final",
+        "raw_team_names": [
+          "Minnesota",
+          "Washington"
+        ]
+      },
+      "actual_home_margin": -3,
+      "actual_total": 51,
+      "signed_margin_error": -7.460149792186821,
+      "signed_total_error": 0.9184801952144923,
+      "direction_correct": false,
+      "probability_classifier_correct": false,
+      "brier": 0.3341455562739373
+    }
+  ],
+  "modeled_nonfbs_rows": [
+    {
+      "game_id": "401866427",
+      "away_team": "Lindenwood",
+      "home_team": "Eastern Michigan",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_NONFBS",
+      "pred_home_margin": 14.651682717496513,
+      "pred_total": 53.327246089214185,
+      "pred_home_win": 0.8113280875054386,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027849",
+        "cbs_abbrev": "NCAAF_20260926_LINDEN@EMICH",
+        "away_team": "Lindenwood",
+        "home_team": "Eastern Michigan",
+        "away_score": 3,
+        "home_score": 29,
+        "status": "final",
+        "raw_team_names": [
+          "Lindenwood",
+          "E. Michigan"
+        ]
+      },
+      "actual_home_margin": 26,
+      "actual_total": 32,
+      "signed_margin_error": 11.348317282503487,
+      "signed_total_error": -21.327246089214185,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.03559709056435543
+    },
+    {
+      "game_id": "401866426",
+      "away_team": "Robert Morris",
+      "home_team": "Buffalo",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_NONFBS",
+      "pred_home_margin": 15.644685304704106,
+      "pred_total": 50.89189118723022,
+      "pred_home_win": 0.7819244160077895,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027839",
+        "cbs_abbrev": "NCAAF_20260926_ROB@BUFF",
+        "away_team": "Robert Morris",
+        "home_team": "Buffalo",
+        "away_score": 28,
+        "home_score": 31,
+        "status": "final",
+        "raw_team_names": [
+          "Robert Morris",
+          "Buffalo"
+        ]
+      },
+      "actual_home_margin": 3,
+      "actual_total": 59,
+      "signed_margin_error": -12.644685304704106,
+      "signed_total_error": 8.108108812769778,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.04755696033354365
+    },
+    {
+      "game_id": "401866428",
+      "away_team": "Stonehill",
+      "home_team": "Ohio",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_NONFBS",
+      "pred_home_margin": 12.09214675150962,
+      "pred_total": 49.46474538191729,
+      "pred_home_win": 0.742011812102289,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027873",
+        "cbs_abbrev": "NCAAF_20260926_STONEH@OHIO",
+        "away_team": "Stonehill",
+        "home_team": "Ohio",
+        "away_score": 7,
+        "home_score": 35,
+        "status": "final",
+        "raw_team_names": [
+          "Stonehill",
+          "Ohio"
+        ]
+      },
+      "actual_home_margin": 28,
+      "actual_total": 42,
+      "signed_margin_error": 15.90785324849038,
+      "signed_total_error": -7.4647453819172895,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.06655790509474466
+    },
+    {
+      "game_id": "401868188",
+      "away_team": "Gardner-Webb",
+      "home_team": "Marshall",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_NONFBS",
+      "pred_home_margin": 1.756251380564048,
+      "pred_total": 49.18749203847643,
+      "pred_home_win": 0.5429792466503496,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027865",
+        "cbs_abbrev": "NCAAF_20260926_GRDWB@MRSHL",
+        "away_team": "Gardner-Webb",
+        "home_team": "Marshall",
+        "away_score": 35,
+        "home_score": 36,
+        "status": "final",
+        "raw_team_names": [
+          "Gardner-Webb",
+          "Marshall"
+        ]
+      },
+      "actual_home_margin": 1,
+      "actual_total": 71,
+      "signed_margin_error": -0.7562513805640481,
+      "signed_total_error": 21.812507961523572,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.208867968992282
+    },
+    {
+      "game_id": "401867909",
+      "away_team": "Long Island University",
+      "home_team": "Florida International",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_NONFBS",
+      "pred_home_margin": 34.82326667072773,
+      "pred_total": 49.43133489607412,
+      "pred_home_win": 0.9648206519844166,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027850",
+        "cbs_abbrev": "NCAAF_20260926_LIUPOST@FIU",
+        "away_team": "Long Island University",
+        "home_team": "Florida International",
+        "away_score": 3,
+        "home_score": 20,
+        "status": "final",
+        "raw_team_names": [
+          "LIU",
+          "FIU"
+        ]
+      },
+      "actual_home_margin": 17,
+      "actual_total": 23,
+      "signed_margin_error": -17.823266670727733,
+      "signed_total_error": -26.43133489607412,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.0012375865268015333
+    },
+    {
+      "game_id": "401870745",
+      "away_team": "Mercyhurst",
+      "home_team": "Western Kentucky",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_NONFBS",
+      "pred_home_margin": 9.411431003277592,
+      "pred_total": 56.79913638617616,
+      "pred_home_win": 0.6510136109019842,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027924",
+        "cbs_abbrev": "NCAAF_20260926_MERCYH@WKY",
+        "away_team": "Mercyhurst",
+        "home_team": "Western Kentucky",
+        "away_score": 7,
+        "home_score": 52,
+        "status": "final",
+        "raw_team_names": [
+          "Mercyhurst",
+          "W. Kentucky"
+        ]
+      },
+      "actual_home_margin": 45,
+      "actual_total": 59,
+      "signed_margin_error": 35.58856899672241,
+      "signed_total_error": 2.2008636138238415,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.1217914997756717
+    },
+    {
+      "game_id": "401862783",
+      "away_team": "Houston Christian",
+      "home_team": "North Texas",
+      "date": "2026-09-26",
+      "population_class": "FBS_VS_NONFBS",
+      "pred_home_margin": 14.74970976559404,
+      "pred_total": 58.694290486874344,
+      "pred_home_win": 0.8269498956071428,
+      "cbs_final": {
+        "date": "2026-09-26",
+        "cbs_game_id": "game-50027911",
+        "cbs_abbrev": "NCAAF_20260926_HOUBP@NTEXAS",
+        "away_team": "Houston Christian",
+        "home_team": "North Texas",
+        "away_score": 14,
+        "home_score": 63,
+        "status": "final",
+        "raw_team_names": [
+          "Houston Christian",
+          "North Texas"
+        ]
+      },
+      "actual_home_margin": 49,
+      "actual_total": 77,
+      "signed_margin_error": 34.25029023440596,
+      "signed_total_error": 18.305709513125656,
+      "direction_correct": true,
+      "probability_classifier_correct": true,
+      "brier": 0.029946338630378766
+    }
+  ],
+  "original_exclusions": [
+    {
+      "season": "2026",
+      "game_id": "401858236",
+      "start_date": "2026-09-26T16:00:00+00:00",
+      "home_team": "Pittsburgh",
+      "away_team": "Bucknell",
+      "population_class": "FBS_VS_NONFBS",
+      "venue_state": "HOME",
+      "reasons": "away_opening_no_prior"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858237",
+      "start_date": "2026-09-26T19:00:00+00:00",
+      "home_team": "Florida State",
+      "away_team": "Central Arkansas",
+      "population_class": "FBS_VS_NONFBS",
+      "venue_state": "HOME",
+      "reasons": "away_opening_no_prior"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858244",
+      "start_date": "2026-09-26T19:30:00+00:00",
+      "home_team": "Duke",
+      "away_team": "William & Mary",
+      "population_class": "FBS_VS_NONFBS",
+      "venue_state": "HOME",
+      "reasons": "away_opening_no_prior"
+    },
+    {
+      "season": "2026",
+      "game_id": "401862781",
+      "start_date": "2026-09-26T20:00:00+00:00",
+      "home_team": "East Carolina",
+      "away_team": "North Carolina Central",
+      "population_class": "FBS_VS_NONFBS",
+      "venue_state": "HOME",
+      "reasons": "away_opening_no_prior"
+    },
+    {
+      "season": "2026",
+      "game_id": "401860892",
+      "start_date": "2026-09-26T22:00:00+00:00",
+      "home_team": "Texas State",
+      "away_team": "Incarnate Word",
+      "population_class": "FBS_VS_NONFBS",
+      "venue_state": "HOME",
+      "reasons": "away_opening_no_prior"
+    }
+  ],
+  "eligible_feature_ledger_columns": [
+    "game_id",
+    "side",
+    "team",
+    "target_kickoff",
+    "qualified_prior_games",
+    "eligible",
+    "reason",
+    "points_for_per_game",
+    "points_against_per_game",
+    "offensive_scrimmage_plays_per_game",
+    "defensive_scrimmage_plays_per_game",
+    "offensive_yards_per_play",
+    "defensive_yards_per_play",
+    "rush_play_rate",
+    "pass_play_rate",
+    "rush_yards_per_play",
+    "pass_yards_per_play",
+    "interception_rate",
+    "rest_days",
+    "offensive_explosive_play_rate",
+    "defensive_explosive_play_rate",
+    "offensive_success_rate",
+    "defensive_success_rate_allowed",
+    "average_starting_yards_to_goal"
+  ],
+  "final_source_url": "https://www.cbssports.com/college-football/scoreboard/FBS/2026/regular/4/",
+  "source_file_recovered_by_utc": "2026-10-25T04:16:35.973458+00:00",
+  "replayed_at_utc": "2026-10-25T04:18:21.803080+00:00"
+}
