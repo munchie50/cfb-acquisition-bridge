@@ -1,0 +1,78 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401871058",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-10-26T23:44:04.763Z",
+  "original_lineage_blob": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "MONEYLINE",
+  "selection": "home",
+  "rationale": "CONTROLLED BETA: Middle Tennessee full-game moneyline at -140 or better, conditional on a fresh posted venue price meeting this cap and no materially adverse personnel/weather update. Prefer the home win to a margin requirement: Brown's current rushing production and Gagliano's consecutive 200-yard passing games provide two offensive routes, against a Kennesaw offense just held to six points. Kennesaw's close losses, protection/completion strengths and active linebackers are meaningful upset risks; MTSU's long field goals and takeaways are not assumed to recur. This is a qualitative Beta judgment, not a calibrated probability, EV or placed wager. Canonical Week9 publication remains blocked by other overdue unresolved rows; this immutable review must not be represented as an integrated new Hot Sheet.",
+  "model_review": "Exact original FIRST_FROZEN strings remain pred_margin5.766353300442534,pred_total49.35804560396155,pred_win0.6241309956314895, home Middle Tennessee. The original home direction is context only. No rerun, fitting, probability adjustment, spread-cover probability or numeric EV. Current qualitative choice comes from independently reviewed offense, opponent performance, rest and risks; the frozen margin does not establish a cover.",
+  "material_sources": [
+    {
+      "url": "https://goblueraiders.com/news/2026/10/20/football-brown-jrs-career-night-fuels-blue-raider-win-at-fiu",
+      "retrieved_at": "2026-10-26T23:42:12.901Z",
+      "finding": "Official latest MTSU recap reread: road26-23 over FIU;Brown158rush/18attempts including54-yardTD;Gagliano200passing for a second straight game and late fourth-down completion. Four field goals including two50-plus and three forced turnovers materially helped; do not project their repetition. Source explicitly sets Kennesaw Oct28 6PMCT, independently corroborating23Z. Old opponent record in recap is historical."
+    },
+    {
+      "url": "https://ksuowls.com/news/2026/10/23/football-owls-fall-to-flames.aspx",
+      "retrieved_at": "2026-10-26T23:42:12.901Z",
+      "finding": "New direct official latest Kennesaw recap:6-34 loss to first-placeLiberty;outgained297-402 and possession22:55against37:05. Collins15/26,124yards,twoINT;Varnes9/15,111yards in late relief. That is current offensive fragility, not proof of an injured or replaced starter. Hopson/Anglin/Christopher combined25tackles. MTSU is not assumed equal toLiberty. Header1-6/0-3 and an internal note1-3 conflict; conference-count note excluded."
+    },
+    {
+      "url": "https://ksuowls.com/news/2026/10/25/football-travels-wraps-up-october-on-the-road-at-mtsu.aspx",
+      "retrieved_at": "2026-10-26T23:42:06.647Z",
+      "finding": "Current official matchup preview reread:three of four recent losses by no more than3;top-three CUSA indicators for completion,protection,red-zone offense,turnovers lost and first downs;conference defensive standings and Christopher recent production support a credible Kennesaw upset case. Those season aggregates preclude treating the latest blowout or1-6record as the whole matchup. Eight days sinceMTSUOct20 versus six sinceKSUOct22 is calendar rest context, not a numeric adjustment."
+    },
+    {
+      "url": "https://forecast.weather.gov/MapClick.php?lat=35.85&lon=-86.39",
+      "retrieved_at": "2026-10-26T23:42:31.996Z",
+      "finding": "NWS named Murfreesboro point forecast35.86N86.39W,updatedOct26 13:31CDT,validOct26-Nov1:Wednesday partly sunny77F,south5-10mph;Wednesdaynight mostlyclear47F,calm becomingSSEaround5mph. No material weather veto in this nearby point forecast; not stadium-hour conditions or a future guarantee. Generic location-error text coexists with explicit named forecast; only the named point and validity are used."
+    }
+  ],
+  "uncertainty": "Low-maturity qualitative Beta only. Two narrow MTSU wins depended partly on high-leverage fourth-down, long-kick and takeaway plays; ordinary execution can reverse. Kennesaw season efficiency, close-game resistance and linebacker production oppose the pick, and Liberty quality limits extrapolating its blowout. Collins/Varnes next-game role and final all-player availability remain unconfirmed; no injury or starter change is inferred. Current nearby forecast is not exact kickoff weather. An actually adverse material update requires reassessment, while absence of a future final report alone does not demand perfect certainty. Caesars/local venue availability and Adam's next trip window are unknown. No new trip is requested or authorized; respect the existing one-to-two-trip weekly constraint.",
+  "decision_rule": "Among six main branches, prefer homeMONEYLINE only, at-140orbetter. Paying at most1.40per1potentialprofit is a conservative qualitative no-chase price cap at the independently observed benchmark, justified by the home offense and the opposing close-game risk; it is not an estimated fair price or return-optimized threshold. Do not upgrade an earlier-160header into this price or pay worse than-140. Decline MTSU-2.5/-115 because it adds a margin requirement to a narrow-win thesis; KSU+2.5/-105 has a close-game case but does not overcome home-win preference, and KSU+116 lacks a separately preferred upset case. Over51.5/-110 faces current KSU offensive fragility/possession and field-goal drives; under51.5/-110 faces MTSU rushing explosives and both teams' completion/red-zone paths. Neither total is preferred; raw frozen-total gap is not an automatic trigger. No priced alternate, teamtotal or preferred parlay; no stake or duplicate same-game exposure. Refresh actual venue quote and any material quarterback/line/weather change before execution. If no acceptable price before expiry, no bet; later review must be new prospective evidence.",
+  "source_qualification": "First-party FanDuel MTSU team odds page, exact KSUaway/MTSUhome full-game next-match block, explicitWedOct28,2026 23Z. Complete single response has header and body homeML-140 and away+116; no cross-response or cross-book mixing. Existing V2 identified retrieval-only benchmark, not consensus; underlying book update UNKNOWN. Collection23:38:18.566Z-23:38:20.000Z is actual response recovery window, not bookmaker update. Earlier source-unavailable findings remain historical; the later route succeeded. Durable two-game source record evidence/operational/CFB_WEEK9_IDENTIFIED_FANDUEL_20261026T233818Z.json blobc3b2e8790cbb0d61cf0221578c38caebfa0c8b3c. No local execution quote or profile change.",
+  "market_reference": {
+    "game_id": "401871058",
+    "market": "MONEYLINE",
+    "selection": "home",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-10-28T23:00:00Z",
+    "kickoff_source_url": "https://goblueraiders.com/news/2026/10/20/football-brown-jrs-career-night-fuels-blue-raider-win-at-fiu",
+    "collection_start": "2026-10-26T23:38:18.566Z",
+    "collection_end": "2026-10-26T23:38:20.000Z",
+    "clock_semantics": "RESPONSE_RECOVERED_BY",
+    "quotes": [
+      {
+        "game_id": "401871058",
+        "market": "MONEYLINE",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+        "retrieved_at": "2026-10-26T23:38:20.000Z",
+        "offer_updated_at": null,
+        "line": null,
+        "price": -140
+      }
+    ]
+  },
+  "acceptable_number": {
+    "market": "MONEYLINE",
+    "selection": "home",
+    "line": null,
+    "minimum_price": -140,
+    "direction": "PRICE_ONLY"
+  },
+  "reconciliation_utc": "2026-10-27T17:00:00Z",
+  "planning_cutoff_utc": "2026-10-27T18:00:00Z",
+  "cutoff_basis": "New prospective game's recommendation expires TuesdayOct27 13CT/18Z, ahead of the Tuesday early-game slate and a full day before WednesdayMTSU23Z. This bounds reliance on Monday material and permits an early-slate consolidated review within the existing trip constraint. ReconcileTuesday12CT/17Z; no automatic rollover. This is an engine evidence-validity cutoff, not a claim about Adam's availability or a universal Tuesday rule. The originalMondayOct26 18Z reconciliation was missed and remains missed; it is not extended or relabelled. Unknown actual placement window may shorten usability; no extra trip is implied.",
+  "execution_window": {
+    "start_utc": "2026-10-26T23:44:04.763Z",
+    "end_utc": "2026-10-27T18:00:00Z"
+  }
+}
