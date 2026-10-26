@@ -59,9 +59,11 @@ class Week9ConditionalTests(unittest.TestCase):
             fixtures.Week9Tests.build(decision_rows=self.rows)
 
     def test_cbs_display_cannot_qualify_kickoff(self):
-        self.review['market_reference']['kickoff_source_url'] = __import__('cfb_week9_publication').WEEK9_URL
-        with self.assertRaisesRegex(ValueError, 'display alone'):
-            self.build()
+        for url in (__import__('cfb_week9_publication').WEEK9_URL,
+                    'https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9?view=full'):
+            self.review['market_reference']['kickoff_source_url'] = url
+            with self.subTest(url=url), self.assertRaisesRegex(ValueError, 'display alone'):
+                self.build()
 
     def test_other_game_lineage_or_kickoff_rejected(self):
         original = copy.deepcopy(self.review)
