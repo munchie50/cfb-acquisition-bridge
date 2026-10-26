@@ -53,7 +53,7 @@ def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='Amer
     if len(expected)!=count:raise ValueError('identity baseline mismatch')
     retained_elapsed_kickoffs={} if retained_elapsed_kickoffs is None else retained_elapsed_kickoffs
     if not isinstance(retained_elapsed_kickoffs,dict) or set(retained_elapsed_kickoffs)-set(expected.values()):raise ValueError('unqualified retained elapsed identities')
-    if retained_elapsed_kickoffs and profile!='WEEK8':raise ValueError('unqualified retained elapsed context profile')
+    if retained_elapsed_kickoffs and profile not in ('WEEK8','WEEK9'):raise ValueError('unqualified retained elapsed context profile')
     elapsed={gid:at(stamp) for gid,stamp in retained_elapsed_kickoffs.items()}
     if any(kick>=observed for kick in elapsed.values()):raise ValueError('retained elapsed context must precede observation')
     aliases={**ALIASES,**({'New Mexico St.':'New Mexico State','Boise St.':'Boise State','Utah St.':'Utah State','Iowa St.':'Iowa State'} if profile in ('WEEK8','WEEK9') else {})}

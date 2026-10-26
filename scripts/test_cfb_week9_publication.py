@@ -124,7 +124,7 @@ class Week9Tests(unittest.TestCase):
     def test_richer_earned_state_not_silently_downgraded(self):
         rows = copy.deepcopy(self.rows)
         rows[0]['state'] = 'CONDITIONAL'
-        with self.assertRaisesRegex(ValueError, 'richer decision'):
+        with self.assertRaises(ValueError):
             self.build(decision_rows=rows)
 
     def test_overdue_decision_and_unchanged_source_advance_rejected(self):

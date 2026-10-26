@@ -8,6 +8,7 @@ on:
       - 'scripts/cfb_week8_publication.py'
       - 'scripts/cfb_week9_publication.py'
       - 'scripts/test_cfb_week9_publication.py'
+      - 'scripts/test_cfb_week9_conditional_publication.py'
       - 'scripts/cfb_week9_frozen_field_invariant.py'
       - 'evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json'
       - 'evidence/CFB_WEEK9_ORIGINAL_LINEAGE_PUBLICATION_PROFILE_2026-10-25.md'
@@ -197,7 +198,7 @@ jobs:
         run: |
           python -m unittest discover -s scripts -p test_cfb_week8_publication.py
           python -m unittest discover -s scripts -p test_cfb_week8_closed_conditional.py
-          python -m unittest discover -s scripts -p test_cfb_week9_publication.py
+          python -m unittest discover -s scripts -p 'test_cfb_week9*.py'
           python -m unittest discover -s scripts -p test_cfb_week7_accepted_s0_ancestry_audit.py
           python -m unittest discover -s scripts -p test_cfb_week7_first_frozen_projection_gate.py
           python -m unittest discover -s scripts -p test_cfb_week7_frozen_field_invariant.py
