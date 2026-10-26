@@ -131,19 +131,28 @@ def compile(market, decision, capture, lineage, cycle, as_of, recovered_by, deci
             row.update(kickoff_utc=game['source_kickoff_utc'], kickoff_source_url=WEEK9_URL, kickoff_status='RETAINED_UNVERIFIED')
         apply(row, source_offer(game, recovered_by), as_of)
     decisions = copy.deepcopy(decision_rows)
+    conditional=any(r.get('state') in ('CONDITIONAL','REVIEW_OVERDUE') or 'review_ref' in r for r in decisions) or (prior is not None and prior[1]['schema']==gate.CONDITIONAL_DECISION_SCHEMA)
     for row in decisions:
+        if conditional:row.setdefault('review_ref',None)
         gate.keys(row, ['game_id', 'state', 'reason', 'reconciliation_utc', 'planning_cutoff_utc',
-                        'cutoff_authority', 'acceptable_number', 'execution_window'])
-        if row['state'] not in ('PASS', 'INCONCLUSIVE'):
+                        'cutoff_authority', 'acceptable_number', 'execution_window']+(['review_ref'] if conditional else []))
+        if row['state'] not in ('PASS', 'INCONCLUSIVE','CONDITIONAL','REVIEW_OVERDUE'):
             raise ValueError('Week9 neutral profile cannot downgrade an earned richer decision')
         old = prior[4].get(row['game_id']) if prior else None
-        origin = old if old is not None and old['state'] == row['state'] == 'PASS' else None
+        origin = old if old is not None and ((old['state'] == row['state'] == 'PASS') or (old['state']==row['state']=='CONDITIONAL' and gate.closed_conditional(old,as_of) and row=={k:v for k,v in old.items() if k not in ('state_recorded_at_utc','state_evidence')})) else None
         row.update(state_recorded_at_utc=origin['state_recorded_at_utc'] if origin else as_of,
                    state_evidence=origin['state_evidence'] if origin else cycle)
+        if row['state']=='CONDITIONAL':
+            if row['review_ref'] is None:raise ValueError('richer decision requires an immutable qualified review')
+            from cfb_conditional_recommendation_profile import load_review
+            raw,_=load_review(row['review_ref']);review=json.loads(raw,object_pairs_hook=gate.unique)
+            source=rows[row['game_id']];reference=review['market_reference']
+            if source['kickoff_utc']!=reference['kickoff_utc']:raise ValueError('review/source kickoff conflict')
+            source.update(kickoff_status='QUALIFIED',kickoff_source_url=reference['kickoff_source_url'])
     def obj(schema, rs):
         return {'schema': schema, 'cycle_id': cycle, 'as_of_utc': as_of, 'rows': rs}
     pm += packet(obj(gate.WEEKLY_MARKET_SCHEMA, list(rows.values())), MARKET_TAG).lstrip('\n')
-    pd += packet(obj(gate.WEEKLY_DECISION_SCHEMA, decisions), DECISION_TAG).lstrip('\n')
+    pd += packet(obj(gate.CONDITIONAL_DECISION_SCHEMA if conditional else gate.WEEKLY_DECISION_SCHEMA, decisions), DECISION_TAG).lstrip('\n')
     bootstrap_check(pm, pd, lineage)
     gate.inputs(pm, pd, lineage, as_of, PROFILE)
     return pm, pd
