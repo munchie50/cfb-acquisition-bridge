@@ -1,0 +1,3231 @@
+{
+  "schema": "CFB_NEUTRAL_READINESS_AUDIT_V1",
+  "scope": "READ_ONLY_DIAGNOSTIC_NOT_DECISION_OR_SOURCE_QUALIFICATION",
+  "as_of_utc": "2026-10-26T21:45:00Z",
+  "canonical_cycle": "CFB_MARKET_MONITOR_20261026T120214Z",
+  "canonical_as_of_utc": "2026-10-26T12:07:18Z",
+  "saved_state_validated_at_own_boundary_only": true,
+  "elapsed_current_quote_game_ids": [],
+  "overdue_open_decision_game_ids": [
+    "401871071",
+    "401871072",
+    "401871058",
+    "401871057",
+    "401862812",
+    "401869963",
+    "401862813",
+    "401856844",
+    "401866451",
+    "401856733",
+    "401856735",
+    "401856736",
+    "401856737",
+    "401856842",
+    "401856843",
+    "401856845",
+    "401856846",
+    "401856847",
+    "401856848",
+    "401858277",
+    "401858278",
+    "401858279",
+    "401858280",
+    "401858281",
+    "401858282",
+    "401858283",
+    "401858284",
+    "401858501",
+    "401858502",
+    "401858503",
+    "401858504",
+    "401858505",
+    "401858506",
+    "401858507",
+    "401858508",
+    "401858509",
+    "401860924",
+    "401862814",
+    "401862815",
+    "401862816",
+    "401864529",
+    "401869846",
+    "401869944",
+    "401871095",
+    "401871096",
+    "401871097",
+    "401859185",
+    "401866452",
+    "401861966",
+    "401856734",
+    "401860910",
+    "401864531",
+    "401871059",
+    "401860909",
+    "401860908",
+    "401864530"
+  ],
+  "market_blob": "02df1f08c249bc859760e13de38b0c160f0759a8",
+  "decision_blob": "5df8464b0b2372134939cf81d576e155d641113b",
+  "lineage_blob": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9",
+  "games": 56,
+  "open_games": 56,
+  "preserved_pass": 0,
+  "historical_gaps": 0,
+  "conditional_recommendations": 0,
+  "recommendation_blocker_counts": {
+    "DECISION_RULE_UNREVIEWED": 56,
+    "LINE_PRICE_LIMITS_MISSING": 56,
+    "MARKET_REFERENCE_MISSING": 56,
+    "MATERIAL_REVIEW_UNREVIEWED": 56,
+    "MODEL_REVIEW_MISSING": 11,
+    "MODEL_REVIEW_UNREVIEWED": 45,
+    "PRACTICAL_CUTOFF_MISSING": 56
+  },
+  "caesars_required_for_recommendation": false,
+  "publication_capability": "CONDITIONAL_V3_SUPPORTED_WAIT_ADAPTER_OPEN",
+  "review_required_game_ids": [
+    "401871071",
+    "401871072",
+    "401871058",
+    "401871057",
+    "401862812",
+    "401869963",
+    "401862813",
+    "401856844",
+    "401866451",
+    "401856733",
+    "401856735",
+    "401856736",
+    "401856737",
+    "401856842",
+    "401856843",
+    "401856845",
+    "401856846",
+    "401856847",
+    "401856848",
+    "401858277",
+    "401858278",
+    "401858279",
+    "401858280",
+    "401858281",
+    "401858282",
+    "401858283",
+    "401858284",
+    "401858501",
+    "401858502",
+    "401858503",
+    "401858504",
+    "401858505",
+    "401858506",
+    "401858507",
+    "401858508",
+    "401858509",
+    "401860924",
+    "401862814",
+    "401862815",
+    "401862816",
+    "401864529",
+    "401869846",
+    "401869944",
+    "401871095",
+    "401871096",
+    "401871097",
+    "401859185",
+    "401866452",
+    "401861966",
+    "401856734",
+    "401860910",
+    "401864531",
+    "401871059",
+    "401860909",
+    "401860908",
+    "401864530"
+  ],
+  "pass_for_now_game_ids": [],
+  "review_schedule": "EXISTING_CYCLES_PLUS_FINAL_REVIEW_BEFORE_EXISTING_CUTOFF",
+  "review_coverage": "NOT_CERTIFIED_BY_QUEUE_MEMBERSHIP",
+  "evaluation_coverage": {
+    "total_games": 56,
+    "counts": {
+      "ORIGINAL_EXCLUSION": 11,
+      "HISTORICAL_GAP": 0,
+      "CONDITIONAL_REVIEW_REFERENCE": 0,
+      "NOT_CERTIFIED": 45
+    },
+    "game_ids": {
+      "ORIGINAL_EXCLUSION": [
+        "401858277",
+        "401858280",
+        "401858501",
+        "401858505",
+        "401858507",
+        "401862814",
+        "401862815",
+        "401862816",
+        "401869944",
+        "401859185",
+        "401871059"
+      ],
+      "HISTORICAL_GAP": [],
+      "CONDITIONAL_REVIEW_REFERENCE": [],
+      "NOT_CERTIFIED": [
+        "401871071",
+        "401871072",
+        "401871058",
+        "401871057",
+        "401862812",
+        "401869963",
+        "401862813",
+        "401856844",
+        "401866451",
+        "401856733",
+        "401856735",
+        "401856736",
+        "401856737",
+        "401856842",
+        "401856843",
+        "401856845",
+        "401856846",
+        "401856847",
+        "401856848",
+        "401858278",
+        "401858279",
+        "401858281",
+        "401858282",
+        "401858283",
+        "401858284",
+        "401858502",
+        "401858503",
+        "401858504",
+        "401858506",
+        "401858508",
+        "401858509",
+        "401860924",
+        "401864529",
+        "401869846",
+        "401871095",
+        "401871096",
+        "401871097",
+        "401866452",
+        "401861966",
+        "401856734",
+        "401860910",
+        "401864531",
+        "401860909",
+        "401860908",
+        "401864530"
+      ]
+    },
+    "uncertified_open_review_queue": [
+      {
+        "game_id": "401856733",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401856734",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401856735",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401856736",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401856737",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401856842",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401856843",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401856844",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401856845",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401856846",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401856847",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401856848",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401858278",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401858279",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401858281",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401858282",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401858283",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401858284",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401858502",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401858503",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401858504",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401858506",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401858508",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401858509",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401860908",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401860909",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401860910",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401860924",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401861966",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401862812",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401862813",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401864529",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401864530",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401864531",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401866451",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401866452",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401869846",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401869963",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401871057",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401871058",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401871071",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401871072",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401871095",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401871096",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      },
+      {
+        "game_id": "401871097",
+        "state": "INCONCLUSIVE",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "next_action": "QUALIFY_TIMING_BEFORE_REVIEW"
+      }
+    ],
+    "scope": "PACKET_EVIDENCE_ACCOUNTING_NOT_FULL_RESEARCH_CERTIFICATION",
+    "not_certified_meaning": "REVIEW_NOT_PROVED_BY_PACKET; MAY_EXIST_IN_SEPARATE_EVIDENCE",
+    "conditional_reference_meaning": "REFERENCE_PRESENT; NOT_ALL_MARKETS_OR_FRESHNESS_CERTIFIED",
+    "historical_backfill_authorized": false
+  },
+  "rows": [
+    {
+      "game_id": "401871071",
+      "game": "Delaware @ Western Kentucky",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401871072",
+      "game": "Sam Houston @ Missouri State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401871058",
+      "game": "Kennesaw State @ Middle Tennessee",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401871057",
+      "game": "Jacksonville State @ New Mexico State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401862812",
+      "game": "Florida Atlantic @ North Texas",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401869963",
+      "game": "Troy @ James Madison",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401862813",
+      "game": "Tulane @ Charlotte",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401856844",
+      "game": "Baylor @ UCF",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401866451",
+      "game": "Kent State @ Sacramento State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401856733",
+      "game": "Missouri @ Arkansas",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401856735",
+      "game": "Auburn @ Ole Miss",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401856736",
+      "game": "South Carolina @ Oklahoma",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401856737",
+      "game": "Mississippi State @ Texas",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401856842",
+      "game": "Arizona @ Texas Tech",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401856843",
+      "game": "Arizona State @ BYU",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401856845",
+      "game": "Kansas @ TCU",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401856846",
+      "game": "Kansas State @ Colorado",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401856847",
+      "game": "Oklahoma State @ Iowa State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401856848",
+      "game": "Utah @ Cincinnati",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858277",
+      "game": "California @ NC State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "ORIGINAL_EXCLUSION",
+      "saved_reason": "Original FIRST_FROZEN exclusion retained: away_prior_points_missing. No substitute prediction or recommendation; contextual/market review remains pending. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858278",
+      "game": "SMU @ Syracuse",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858279",
+      "game": "Boston College @ Duke",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858280",
+      "game": "Clemson @ Florida State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "ORIGINAL_EXCLUSION",
+      "saved_reason": "Original FIRST_FROZEN exclusion retained: away_prior_points_missing. No substitute prediction or recommendation; contextual/market review remains pending. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858281",
+      "game": "Georgia Tech @ Pittsburgh",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858282",
+      "game": "Miami @ North Carolina",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858283",
+      "game": "Stanford @ Louisville",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858284",
+      "game": "Virginia @ Wake Forest",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858501",
+      "game": "Minnesota @ Indiana",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "ORIGINAL_EXCLUSION",
+      "saved_reason": "Original FIRST_FROZEN exclusion retained: home_prior_points_missing. No substitute prediction or recommendation; contextual/market review remains pending. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858502",
+      "game": "Wisconsin @ Iowa",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858503",
+      "game": "Illinois @ Maryland",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858504",
+      "game": "Washington @ Nebraska",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858505",
+      "game": "Northwestern @ Oregon",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "ORIGINAL_EXCLUSION",
+      "saved_reason": "Original FIRST_FROZEN exclusion retained: away_prior_points_missing. No substitute prediction or recommendation; contextual/market review remains pending. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858506",
+      "game": "Purdue @ Penn State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858507",
+      "game": "Michigan @ Rutgers",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "ORIGINAL_EXCLUSION",
+      "saved_reason": "Original FIRST_FROZEN exclusion retained: home_prior_points_missing. No substitute prediction or recommendation; contextual/market review remains pending. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858508",
+      "game": "Nevada @ UCLA",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401858509",
+      "game": "Ohio State @ USC",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401860924",
+      "game": "Oregon State @ Fresno State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401862814",
+      "game": "Army @ Memphis",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "ORIGINAL_EXCLUSION",
+      "saved_reason": "Original FIRST_FROZEN exclusion retained: away_prior_pbp_missing. No substitute prediction or recommendation; contextual/market review remains pending. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401862815",
+      "game": "Temple @ East Carolina",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "ORIGINAL_EXCLUSION",
+      "saved_reason": "Original FIRST_FROZEN exclusion retained: away_prior_pbp_missing. No substitute prediction or recommendation; contextual/market review remains pending. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401862816",
+      "game": "UAB @ South Florida",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "ORIGINAL_EXCLUSION",
+      "saved_reason": "Original FIRST_FROZEN exclusion retained: away_prior_points_missing. No substitute prediction or recommendation; contextual/market review remains pending. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401864529",
+      "game": "New Mexico @ San Jos\u00e9 State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401869846",
+      "game": "App State @ Georgia Southern",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. No current displayed offers; acquire usable prices before decision. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401869944",
+      "game": "Coastal Carolina @ Georgia State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "ORIGINAL_EXCLUSION",
+      "saved_reason": "Original FIRST_FROZEN exclusion retained: away_prior_pbp_missing. No substitute prediction or recommendation; contextual/market review remains pending. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401871095",
+      "game": "Southern Miss @ UL Monroe",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. No current displayed offers; acquire usable prices before decision. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401871096",
+      "game": "Marshall @ Old Dominion",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. No current displayed offers; acquire usable prices before decision. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401871097",
+      "game": "Louisiana Tech @ South Alabama",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401859185",
+      "game": "Notre Dame @ Navy",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "ORIGINAL_EXCLUSION",
+      "saved_reason": "Original FIRST_FROZEN exclusion retained: home_prior_points_missing. No substitute prediction or recommendation; contextual/market review remains pending. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401866452",
+      "game": "Bowling Green @ Western Michigan",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. No current displayed offers; acquire usable prices before decision. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401861966",
+      "game": "UConn @ Air Force",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. No current displayed offers; acquire usable prices before decision. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401856734",
+      "game": "Florida @ Georgia",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401860910",
+      "game": "Colorado State @ Utah State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. No current displayed offers; acquire usable prices before decision. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401864531",
+      "game": "UTEP @ North Dakota State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. No current displayed offers; acquire usable prices before decision. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401871059",
+      "game": "Florida International @ Liberty",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "MISSING",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_MISSING",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "ORIGINAL_EXCLUSION",
+      "saved_reason": "Original FIRST_FROZEN exclusion retained: home_prior_pbp_missing. No substitute prediction or recommendation; contextual/market review remains pending. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401860909",
+      "game": "Washington State @ San Diego State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. No current displayed offers; acquire usable prices before decision. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401860908",
+      "game": "Texas State @ Boise State",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    },
+    {
+      "game_id": "401864530",
+      "game": "Northern Illinois @ UNLV",
+      "state": "INCONCLUSIVE",
+      "review": {
+        "model_review": "UNREVIEWED",
+        "market_reference": "MISSING",
+        "material_review": "UNREVIEWED",
+        "line_price_limits": "MISSING",
+        "practical_cutoff": "MISSING",
+        "decision_rule": "UNREVIEWED"
+      },
+      "reconciliation_utc": "2026-10-26T18:00:00Z",
+      "planning_cutoff_utc": null,
+      "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+      "recommendation_review_complete": false,
+      "recommendation_blockers": [
+        "MODEL_REVIEW_UNREVIEWED",
+        "MARKET_REFERENCE_MISSING",
+        "MATERIAL_REVIEW_UNREVIEWED",
+        "LINE_PRICE_LIMITS_MISSING",
+        "PRACTICAL_CUTOFF_MISSING",
+        "DECISION_RULE_UNREVIEWED"
+      ],
+      "venue_confirmation": "PENDING",
+      "scope": "COMPLETENESS_ONLY_NOT_RECOMMENDATION_OR_EXECUTION_AUTHORITY",
+      "review_window": {
+        "review_required": true,
+        "disposition": "REEVALUATE_CURRENT_DECISION",
+        "review_due_by_utc": null,
+        "timing_issue": "KICKOFF_REQUIRES_QUALIFICATION",
+        "markets_to_review": [
+          "FAVORITE_SPREAD",
+          "UNDERDOG_SPREAD",
+          "AWAY_MONEYLINE",
+          "HOME_MONEYLINE",
+          "OVER",
+          "UNDER",
+          "ALTERNATE_SPREADS",
+          "ALTERNATE_TOTALS",
+          "TEAM_TOTALS",
+          "PARLAY_SUITABILITY"
+        ],
+        "scope": "REVIEW_SELECTION_ONLY_NOT_REOPEN_AUTHORITY"
+      },
+      "evaluation_coverage": "NOT_CERTIFIED",
+      "saved_reason": "Opening numerical intake only; original model retained. Material football evidence, both-side/all-market assessment, offered derivatives/parlay suitability, and practical cutoff remain unreviewed; no recommendation earned. No current displayed offers; acquire usable prices before decision. Revalidated at the 2026-10-25 13:05 CT mixed-book numerical refresh: no independently qualified material-football review was added in this cycle, so the existing INCONCLUSIVE state and deadline remain; market movement alone does not earn a wager. Monday 07:07 CT numerical recheck used a fresh complete CBS mixed-book fallback, but shared Firecrawl balance remained zero and the complete independently qualified material/rule/all-market review is still unserved. Keep INCONCLUSIVE prospectively; next trigger is qualified personnel/weather/market review before the existing reconciliation deadline. No price, threshold, wager or PASS is inferred."
+    }
+  ]
+}
