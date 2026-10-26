@@ -1,0 +1,25 @@
+# Manual Week9 Monitor — independent RUN_CLOSURE
+
+Run: CFB_MARKET_MONITOR_20261026T231848Z
+Closure recorded: 2026-10-26T23:55:29.042Z
+Final state: RUN_INCOMPLETE for complete user delivery.
+
+This separate closure follows complete independent exact-content readback of evidence/run_receipts/CFB_MARKET_MONITOR_20261026T231848Z_TERMINAL_CANDIDATE.md @b8cde2b1bf190893e022b89df4f8713ea86b2f4f. Originalaudit @3e3a0db2987ab221189067dd677e1c22dc11af8f and laterqualified-sourceaudit @c8650ee297d2d529977019dc99881e42861a5ab6 retain their actualchronology.
+
+Useful result earned and saved: MiddleTennessee full-game home moneyline-140orbetter, controlledBeta, freshacceptablevenuequote/noadversematerialchange conditions; TuesdayOct27 17Z/noonChicago review and18Z/13Chicago firmexpiry beforeWednesday23Zkickoff. No stake/wager or confirmedexecution. ImmutableV2review evidence/operational/recommendation_reviews/CFB_MIDDLE_TENNESSEE_CONTROLLED_BETA_20261026T234404Z.json @d0a4620f56a84b96931df1dfa8f843324ef58212 exactlysaved/readback and fullyvalidated fromcommittedancestry. The pricecap is a qualitative no-chasebound, not fairprice/EV/probability. Unknown nextuserplacementwindow is explicit; one-to-two-trip weeklyconstraint remains and no trip is requested. Monday18Zmiss is notextended.
+
+Jax/NMState researchedPASS on six identifiedprice branches. Two-game decisionrecord evidence/operational/CFB_WEEK9_QUALIFIED_EARLY_DECISIONS_20261026T234516Z.json @26221f0744055966d40db5b13cd4fba321976881 and readabledecisionnote evidence/operational/CFB_WEEK9_QUALIFIED_EARLY_DECISIONS_20261026T234516Z.md @39c8ee8bf0c964f83aadf5d8e8a033f283dde052 exactlysaved/readback. EarlierDelaware/MTSUexperimentalwinnerforecasts remainunchanged. No preferredparlay/derivative.
+
+Sourcebarrier partlyresolved: first-partyFanDuel teamdirectory/teampages recovered twoexact2026matchups/12quotes in evidence/operational/CFB_WEEK9_IDENTIFIED_FANDUEL_20261026T233818Z.json @c3b2e8790cbb0d61cf0221578c38caebfa0c8b3c under existingV2route, no code/whitelistchange. Twelve benchmarkchecks passed; unknownbookupdates remainunknown, consensus/execution unverified. No longer claim allsupportedpublicsources unavailable.
+
+Further independent work duringrequiredCI: evidence/operational/CFB_WEEK9_THURSDAY_SOURCE_ADDENDUM_20261026T235050Z.json @111f530d357d27705e21851330bd31dc60426b03 addsFAU/UNT andTroy/JMU exactFanDuel12branches, independentprimarykickoff corroboration and latestFAUopponentmaterial/counterevidence; exactlysaved/readback and12additional existingV2referencechecks passed23:52:15Z. These are stillpartialdecisionreviews, no newpick/PASS. This later record follows theindexwrite and is recovered directly throughthisclosure. Do not repeat its sourceacquisition as unperformed.
+
+Recoveryindex @ddeca11cea78e0df52aeade13cf5b5c56c97d850 completelyindependentlyfetched/bytecompared2710067bytes; SHA25679cfdaa31e974c0954fc0396bc8632632b7b63fcd238f5f26e606a5cd9247b54. FreshSHAguard and243pointerconsumerpreflight passedbefore/afterwrite. RequiredexistingCI40422261585/job121919294633 on exactindexcommitc23e8d9e125644eab44cb064e4f080f3ce741c26 SUCCESS with44successfulsteps, decoded89628-characterlogs independentlyinspected. This completes boundedrecovery/navigation/validatorintegration, not all-gameanalyticaldelivery or naturalrecurringreliability.
+
+FullprimaryHotSheet publication remainsunfinished. All56canonicalpriorINCONCLUSIVErows retain missedMonday18Zreconciliations;43otherpredictioncases remainpartial,11originalmodelexclusions preserved. Oneearnedconditional/oneresearchedPASS cannot complete56states. No silentrollover, backdating, forcedPASS, conditionaldowngrade or secondprimarysheet. FreshfullGitrecovery23:52:15Z confirmed unchanged market02df1f08c249bc859760e13de38b0c160f0759a8, decision5df8464b0b2372134939cf81d576e155d641113b, execution1a938f42e9f03e723bd50348f8a78dbd8b7098e9, scorecard1e8e0a9c3cd34c163c32f6782cdfccf30b9e13d8 andsole0707CTsheetca584134caae7b5e03cac9e1ada795a3db8243e2. All135frozenstrings preserved.
+
+Next actualwork: complete remaining43predictioncase decisions using the provenpublicteamroute when exactprices are available, beginningDel/WKU andSam/MissouriState and thenThursdaymaterial/pricecases. Integrate independentlyearnedstates throughsoleMonitor oncewholepacket is supportable, preservingoriginalcap/expiry andmissedhistory. No ordinarycheckpointpermission needed.
+
+No new/changedtask,schedule,cadence,ownership,dispatch, pausedBigNine, money/ticket/stake/model/promotion/source-code state. BackgroundCI hasfinished; no ongoingpoller or new unattendedrestart is created. Naturalrecurringdelivery proof and priorincompletecycles/clockissues remainopen.
+
+RUN_INCOMPLETE
