@@ -138,7 +138,7 @@ def audit(market, decision, lineage, as_of, profile='WEEK7'):
             continue
         if source['current'] is not None and source['kickoff_utc'] is not None and gate.clock(source['kickoff_utc']) <= now:
             elapsed_current.append(gid)
-        if row['state'] == 'INCONCLUSIVE' and gate.clock(row['reconciliation_utc']) <= now:
+        if row['state'] in ('INCONCLUSIVE','REVIEW_OVERDUE') and gate.clock(row['reconciliation_utc']) <= now:
             overdue.append(gid)
         if row['state'] == 'PASS':
             rows.append({'game_id': gid, 'state': 'PASS',
@@ -186,7 +186,7 @@ def audit(market, decision, lineage, as_of, profile='WEEK7'):
             'overdue_open_decision_game_ids': overdue,
             'market_blob': gate.blob(market), 'decision_blob': gate.blob(decision),
             'lineage_blob': gate.blob(lineage), 'games': len(rows),
-            'open_games': sum(r['state'] == 'INCONCLUSIVE' for r in rows),
+            'open_games': sum(r['state'] in ('INCONCLUSIVE','REVIEW_OVERDUE') for r in rows),
             'preserved_pass': sum(r['state'] == 'PASS' for r in rows),
             'historical_gaps': sum(r['state'] == 'HISTORICAL_GAP' for r in rows),
             'conditional_recommendations': sum(r['state'] == 'CONDITIONAL' for r in rows),
