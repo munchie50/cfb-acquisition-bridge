@@ -1,0 +1,96 @@
+{
+  "schema": "CFB_COMPLETE_MULTI_MARKET_REVIEW_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261026T225722Z",
+  "recorded_at_utc": "2026-10-26T23:11:55.213Z",
+  "scope": "SUPPLEMENTAL_EARLY_OPPONENT_RESEARCH_ONLY_NO_DECISION",
+  "parent_review": {
+    "path": "evidence/operational/CFB_WEEK9_POPULATION_RESEARCH_20261026T225722Z.json",
+    "blob": "5ca0e153ce79978ae7c0823a21ba331f2b4ae395"
+  },
+  "counts": {
+    "supplemented_cases": 2,
+    "new_canonical_decisions": 0,
+    "qualified_recommendations": 0
+  },
+  "sources": [
+    {
+      "id": "MTSU_FIU_RECAP",
+      "url": "https://goblueraiders.com/news/2026/10/20/football-brown-jrs-career-night-fuels-blue-raider-win-at-fiu",
+      "response_recovered_by": "2026-10-26T23:11:55.213Z",
+      "qualification": "Official article text read; prior-game performance, not future availability",
+      "finding": "Brown158 rushing yards/18carries; Gagliano key late fourth-down completion; four made field goals, two50-plus; three defensive takeaways."
+    },
+    {
+      "id": "JAX_FIU",
+      "url": "https://jaxstatesports.com/news/2026/10/13/football-cardiac-gamecocks-stay-perfect-in-cusa-with-last-second-heroics",
+      "response_recovered_by": "2026-10-26T23:11:55.213Z",
+      "qualification": "Official article read; latest pre-break result, not game-week injury clearance",
+      "finding": "Jax enters a15-day break after27-24 last-second win; four consecutive victories."
+    },
+    {
+      "id": "JAX_FIU_CENTER",
+      "url": "https://jaxstatesports.com/game-center/8712",
+      "response_recovered_by": "2026-10-26T23:11:55.213Z",
+      "qualification": "Official game-center displayed team statistics read",
+      "finding": "Jax173 rushing/214 passing yards versus FIU124 rushing/280 passing; total387vs404."
+    }
+  ],
+  "games": [
+    {
+      "game_id": "401871058",
+      "game": "Kennesaw State @ Middle Tennessee",
+      "research_status": "PARTIAL_OPPONENT_GAP_REDUCED",
+      "source_ids": [
+        "MTSU_FIU_RECAP"
+      ],
+      "material_findings": [
+        "MTSU rushing production and late passing execution give a concrete counterargument to the Kennesaw close-loss narrative. The three-point win also relied on long field goals and takeaways, so its result does not prove dominant underlying separation."
+      ],
+      "market_dispositions": {
+        "AWAY_SPREAD": "Kennesaw competitive margins remain relevant; MTSU ground success is a counterargument.",
+        "HOME_SPREAD": "MTSU rushing supports the favorite case; reliance on long kicks/takeaways limits extrapolation.",
+        "AWAY_MONEYLINE": "A competitive cover case is not automatically an upset case; no qualified price threshold earned.",
+        "HOME_MONEYLINE": "Win support exists, but no independently qualified current price/value comparison earned.",
+        "OVER": "MTSU explosive rushing and Gagliano completions add scoring paths.",
+        "UNDER": "Long drives and field goals instead of touchdowns support the under countercase; turnovers can shorten fields."
+      },
+      "remaining_gap": "Current quarterback/line availability and Kennesaw run-defense matchup, current benchmark, exact earned limit/rule/cutoff.",
+      "canonical_status": "INCONCLUSIVE_OVERDUE_UNCHANGED",
+      "acceptable_number": "NOT_ESTABLISHED",
+      "practical_cutoff_utc": null
+    },
+    {
+      "game_id": "401871057",
+      "game": "Jacksonville State @ New Mexico State",
+      "research_status": "PARTIAL_OPPONENT_GAP_REDUCED",
+      "source_ids": [
+        "JAX_FIU",
+        "JAX_FIU_CENTER"
+      ],
+      "material_findings": [
+        "Jax's long break is a meaningful rest counterweight to the NM State home/rushing case. The latest win was close and Jax was outgained, so the5-2record is insufficient evidence of easy separation."
+      ],
+      "market_dispositions": {
+        "AWAY_SPREAD": "Jax rest and balanced yardage support its side; narrow prior win limits confidence.",
+        "HOME_SPREAD": "NM State home/run-defense case must withstand a rested opponent; Jax prior yardage deficit supports a countercase.",
+        "AWAY_MONEYLINE": "Rest supports win-direction inquiry, without earning value at an unqualified saved price.",
+        "HOME_MONEYLINE": "Home upset case remains distinct from covering; no qualified price floor earned.",
+        "OVER": "Rested balanced offense could improve execution; prior matchup pace does not establish this week's total.",
+        "UNDER": "NM State run defense may force a different game; Jax close prior result alone does not forecast low scoring."
+      },
+      "remaining_gap": "Current Jax availability after break, protection/rush matchup, exact benchmark/limit/rule/cutoff.",
+      "canonical_status": "INCONCLUSIVE_OVERDUE_UNCHANGED",
+      "acceptable_number": "NOT_ESTABLISHED",
+      "practical_cutoff_utc": null
+    }
+  ],
+  "market_observation": "Retain separate22:14:59UTC CBS snapshot only; no new quote acquired. Current benchmark unavailable.",
+  "parlay_review": {
+    "state": "NO_PREFERRED_PARLAY",
+    "reason": "No qualified singles or joint offer."
+  },
+  "limitations": [
+    "Supplement reduces opponent-information gaps without certifying complete review.",
+    "No source-adapter change, wager, model/promotion or task change."
+  ]
+}
