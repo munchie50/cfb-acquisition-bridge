@@ -1,0 +1,391 @@
+{
+  "schema": "CFB_NAMED_BOOK_OBSERVATION_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261026T231848Z",
+  "recorded_at_utc": "2026-10-26T23:43:05.567Z",
+  "collection_start": "2026-10-26T23:38:18.566Z",
+  "collection_end": "2026-10-26T23:38:20.000Z",
+  "clock_semantics": "RESPONSE_RECOVERED_BY",
+  "scope": "TWO_EXACT_FUTURE_FULL_GAME_IDENTIFIED_FANDUEL_PUBLIC_BENCHMARKS_NOT_EXECUTION_OR_CONSENSUS",
+  "qualification": "Existing October17 qualitative controlled-Beta single identified DraftKings/FanDuel route and unchanged V2 market_reference formatter. Caller independently matched opponents, away/home, explicit October2026 UTC game dates, full-game Spread/Moneyline/Total headings, paired number/price and FanDuel first-party domain. Book update timestamps are absent and remain UNKNOWN. Retrieval recovery is not a bookmaker update, live venue quote or current-freshness certification.",
+  "supersession": "Earlier audit/index correctly described bounded unsuccessful routes before this discovery. This append-only later evidence changes source availability for these two games only; no historical record is rewritten.",
+  "games": [
+    {
+      "game_id": "401871058",
+      "away_team": "Kennesaw State",
+      "home_team": "Middle Tennessee",
+      "source_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+      "web_ref": "turn126view0",
+      "kickoff_utc": "2026-10-28T23:00:00Z",
+      "kickoff_source_url": "https://goblueraiders.com/news/2026/10/20/football-brown-jrs-career-night-fuels-blue-raider-win-at-fiu",
+      "excerpt": "L53: ## Next Game\nL54: \nL55: 【16†Image: Kennesaw State Owls】\nL56: ### 【17†Kennesaw State Owls】\nL57: \nL58: 1-6 (0-3) | 9th in Conference USA\nL59: \nL60: SPREAD\nL61: \nL62: +2.5-105\nL63: \nL64: MONEYLINE+116\nL65: \nL66: TOTAL\nL67: \nL68: O 51.5-110\nL69: \nL70: 【18†Image: At Shield】\nL71: \nL72: @\nL73: \nL74: 【19†Image: Middle Tennessee Blue Raiders】\nL75: \nL76: ### Middle Tennessee Blue Raiders\nL77: \nL78: 4-3 (2-1) | 4th in Conference USA\nL79: \nL80: SPREAD\nL81: \nL82: -2.5-115\nL83: \nL84: MONEYLINE-140\nL85: \nL86: TOTAL\nL87: \nL88: U 51.5-110\nL89: \nL90: WED OCTOBER 28, 2026 | 11:00PM UTC\nL91: \nL92: JOHNNY \"RED\" FLOYD STADIUM | OUTDOOR",
+      "references": [
+        {
+          "game_id": "401871058",
+          "market": "SPREAD",
+          "selection": "away",
+          "period": "PREGAME_FULL_GAME",
+          "kickoff_utc": "2026-10-28T23:00:00Z",
+          "kickoff_source_url": "https://goblueraiders.com/news/2026/10/20/football-brown-jrs-career-night-fuels-blue-raider-win-at-fiu",
+          "collection_start": "2026-10-26T23:38:18.566Z",
+          "collection_end": "2026-10-26T23:38:20.000Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY",
+          "quotes": [
+            {
+              "game_id": "401871058",
+              "market": "SPREAD",
+              "selection": "away",
+              "period": "PREGAME_FULL_GAME",
+              "book": "FanDuel",
+              "operator": "FanDuel",
+              "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+              "source_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+              "retrieved_at": "2026-10-26T23:38:20.000Z",
+              "offer_updated_at": null,
+              "line": 2.5,
+              "price": -105
+            }
+          ]
+        },
+        {
+          "game_id": "401871058",
+          "market": "SPREAD",
+          "selection": "home",
+          "period": "PREGAME_FULL_GAME",
+          "kickoff_utc": "2026-10-28T23:00:00Z",
+          "kickoff_source_url": "https://goblueraiders.com/news/2026/10/20/football-brown-jrs-career-night-fuels-blue-raider-win-at-fiu",
+          "collection_start": "2026-10-26T23:38:18.566Z",
+          "collection_end": "2026-10-26T23:38:20.000Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY",
+          "quotes": [
+            {
+              "game_id": "401871058",
+              "market": "SPREAD",
+              "selection": "home",
+              "period": "PREGAME_FULL_GAME",
+              "book": "FanDuel",
+              "operator": "FanDuel",
+              "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+              "source_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+              "retrieved_at": "2026-10-26T23:38:20.000Z",
+              "offer_updated_at": null,
+              "line": -2.5,
+              "price": -115
+            }
+          ]
+        },
+        {
+          "game_id": "401871058",
+          "market": "MONEYLINE",
+          "selection": "away",
+          "period": "PREGAME_FULL_GAME",
+          "kickoff_utc": "2026-10-28T23:00:00Z",
+          "kickoff_source_url": "https://goblueraiders.com/news/2026/10/20/football-brown-jrs-career-night-fuels-blue-raider-win-at-fiu",
+          "collection_start": "2026-10-26T23:38:18.566Z",
+          "collection_end": "2026-10-26T23:38:20.000Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY",
+          "quotes": [
+            {
+              "game_id": "401871058",
+              "market": "MONEYLINE",
+              "selection": "away",
+              "period": "PREGAME_FULL_GAME",
+              "book": "FanDuel",
+              "operator": "FanDuel",
+              "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+              "source_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+              "retrieved_at": "2026-10-26T23:38:20.000Z",
+              "offer_updated_at": null,
+              "line": null,
+              "price": 116
+            }
+          ]
+        },
+        {
+          "game_id": "401871058",
+          "market": "MONEYLINE",
+          "selection": "home",
+          "period": "PREGAME_FULL_GAME",
+          "kickoff_utc": "2026-10-28T23:00:00Z",
+          "kickoff_source_url": "https://goblueraiders.com/news/2026/10/20/football-brown-jrs-career-night-fuels-blue-raider-win-at-fiu",
+          "collection_start": "2026-10-26T23:38:18.566Z",
+          "collection_end": "2026-10-26T23:38:20.000Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY",
+          "quotes": [
+            {
+              "game_id": "401871058",
+              "market": "MONEYLINE",
+              "selection": "home",
+              "period": "PREGAME_FULL_GAME",
+              "book": "FanDuel",
+              "operator": "FanDuel",
+              "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+              "source_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+              "retrieved_at": "2026-10-26T23:38:20.000Z",
+              "offer_updated_at": null,
+              "line": null,
+              "price": -140
+            }
+          ]
+        },
+        {
+          "game_id": "401871058",
+          "market": "TOTAL",
+          "selection": "over",
+          "period": "PREGAME_FULL_GAME",
+          "kickoff_utc": "2026-10-28T23:00:00Z",
+          "kickoff_source_url": "https://goblueraiders.com/news/2026/10/20/football-brown-jrs-career-night-fuels-blue-raider-win-at-fiu",
+          "collection_start": "2026-10-26T23:38:18.566Z",
+          "collection_end": "2026-10-26T23:38:20.000Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY",
+          "quotes": [
+            {
+              "game_id": "401871058",
+              "market": "TOTAL",
+              "selection": "over",
+              "period": "PREGAME_FULL_GAME",
+              "book": "FanDuel",
+              "operator": "FanDuel",
+              "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+              "source_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+              "retrieved_at": "2026-10-26T23:38:20.000Z",
+              "offer_updated_at": null,
+              "line": 51.5,
+              "price": -110
+            }
+          ]
+        },
+        {
+          "game_id": "401871058",
+          "market": "TOTAL",
+          "selection": "under",
+          "period": "PREGAME_FULL_GAME",
+          "kickoff_utc": "2026-10-28T23:00:00Z",
+          "kickoff_source_url": "https://goblueraiders.com/news/2026/10/20/football-brown-jrs-career-night-fuels-blue-raider-win-at-fiu",
+          "collection_start": "2026-10-26T23:38:18.566Z",
+          "collection_end": "2026-10-26T23:38:20.000Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY",
+          "quotes": [
+            {
+              "game_id": "401871058",
+              "market": "TOTAL",
+              "selection": "under",
+              "period": "PREGAME_FULL_GAME",
+              "book": "FanDuel",
+              "operator": "FanDuel",
+              "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+              "source_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+              "retrieved_at": "2026-10-26T23:38:20.000Z",
+              "offer_updated_at": null,
+              "line": 51.5,
+              "price": -110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_id": "401871057",
+      "away_team": "Jacksonville State",
+      "home_team": "New Mexico State",
+      "source_url": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-state-aggies/odds",
+      "web_ref": "turn126view2",
+      "kickoff_utc": "2026-10-29T00:00:00Z",
+      "kickoff_source_url": "https://nmstatesports.com/news/2026/10/26/football-nm-state-welcomes-jax-state-in-final-weekday-cusa-contest.aspx",
+      "excerpt": "L53: ## Next Game\nL54: \nL55: 【16†Image: Jacksonville State Gamecocks】\nL56: ### 【17†Jacksonville State Gamecocks】\nL57: \nL58: 5-2 (3-0) | 2nd in Conference USA\nL59: \nL60: SPREAD\nL61: \nL62: -3.5-104\nL63: \nL64: MONEYLINE-162\nL65: \nL66: TOTAL\nL67: \nL68: O 49.5-110\nL69: \nL70: 【18†Image: At Shield】\nL71: \nL72: @\nL73: \nL74: 【19†Image: New Mexico State Aggies】\nL75: \nL76: ### New Mexico State Aggies\nL77: \nL78: 3-4 (2-1) | 3rd in Conference USA\nL79: \nL80: SPREAD\nL81: \nL82: +3.5-118\nL83: \nL84: MONEYLINE+134\nL85: \nL86: TOTAL\nL87: \nL88: U 49.5-110\nL89: \nL90: THU OCTOBER 29, 2026 | 12:00AM UTC\nL91: \nL92: AGGIE MEMORIAL STADIUM | OUTDOOR",
+      "references": [
+        {
+          "game_id": "401871057",
+          "market": "SPREAD",
+          "selection": "away",
+          "period": "PREGAME_FULL_GAME",
+          "kickoff_utc": "2026-10-29T00:00:00Z",
+          "kickoff_source_url": "https://nmstatesports.com/news/2026/10/26/football-nm-state-welcomes-jax-state-in-final-weekday-cusa-contest.aspx",
+          "collection_start": "2026-10-26T23:38:18.566Z",
+          "collection_end": "2026-10-26T23:38:20.000Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY",
+          "quotes": [
+            {
+              "game_id": "401871057",
+              "market": "SPREAD",
+              "selection": "away",
+              "period": "PREGAME_FULL_GAME",
+              "book": "FanDuel",
+              "operator": "FanDuel",
+              "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-state-aggies/odds",
+              "source_url": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-state-aggies/odds",
+              "retrieved_at": "2026-10-26T23:38:20.000Z",
+              "offer_updated_at": null,
+              "line": -3.5,
+              "price": -104
+            }
+          ]
+        },
+        {
+          "game_id": "401871057",
+          "market": "SPREAD",
+          "selection": "home",
+          "period": "PREGAME_FULL_GAME",
+          "kickoff_utc": "2026-10-29T00:00:00Z",
+          "kickoff_source_url": "https://nmstatesports.com/news/2026/10/26/football-nm-state-welcomes-jax-state-in-final-weekday-cusa-contest.aspx",
+          "collection_start": "2026-10-26T23:38:18.566Z",
+          "collection_end": "2026-10-26T23:38:20.000Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY",
+          "quotes": [
+            {
+              "game_id": "401871057",
+              "market": "SPREAD",
+              "selection": "home",
+              "period": "PREGAME_FULL_GAME",
+              "book": "FanDuel",
+              "operator": "FanDuel",
+              "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-state-aggies/odds",
+              "source_url": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-state-aggies/odds",
+              "retrieved_at": "2026-10-26T23:38:20.000Z",
+              "offer_updated_at": null,
+              "line": 3.5,
+              "price": -118
+            }
+          ]
+        },
+        {
+          "game_id": "401871057",
+          "market": "MONEYLINE",
+          "selection": "away",
+          "period": "PREGAME_FULL_GAME",
+          "kickoff_utc": "2026-10-29T00:00:00Z",
+          "kickoff_source_url": "https://nmstatesports.com/news/2026/10/26/football-nm-state-welcomes-jax-state-in-final-weekday-cusa-contest.aspx",
+          "collection_start": "2026-10-26T23:38:18.566Z",
+          "collection_end": "2026-10-26T23:38:20.000Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY",
+          "quotes": [
+            {
+              "game_id": "401871057",
+              "market": "MONEYLINE",
+              "selection": "away",
+              "period": "PREGAME_FULL_GAME",
+              "book": "FanDuel",
+              "operator": "FanDuel",
+              "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-state-aggies/odds",
+              "source_url": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-state-aggies/odds",
+              "retrieved_at": "2026-10-26T23:38:20.000Z",
+              "offer_updated_at": null,
+              "line": null,
+              "price": -162
+            }
+          ]
+        },
+        {
+          "game_id": "401871057",
+          "market": "MONEYLINE",
+          "selection": "home",
+          "period": "PREGAME_FULL_GAME",
+          "kickoff_utc": "2026-10-29T00:00:00Z",
+          "kickoff_source_url": "https://nmstatesports.com/news/2026/10/26/football-nm-state-welcomes-jax-state-in-final-weekday-cusa-contest.aspx",
+          "collection_start": "2026-10-26T23:38:18.566Z",
+          "collection_end": "2026-10-26T23:38:20.000Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY",
+          "quotes": [
+            {
+              "game_id": "401871057",
+              "market": "MONEYLINE",
+              "selection": "home",
+              "period": "PREGAME_FULL_GAME",
+              "book": "FanDuel",
+              "operator": "FanDuel",
+              "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-state-aggies/odds",
+              "source_url": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-state-aggies/odds",
+              "retrieved_at": "2026-10-26T23:38:20.000Z",
+              "offer_updated_at": null,
+              "line": null,
+              "price": 134
+            }
+          ]
+        },
+        {
+          "game_id": "401871057",
+          "market": "TOTAL",
+          "selection": "over",
+          "period": "PREGAME_FULL_GAME",
+          "kickoff_utc": "2026-10-29T00:00:00Z",
+          "kickoff_source_url": "https://nmstatesports.com/news/2026/10/26/football-nm-state-welcomes-jax-state-in-final-weekday-cusa-contest.aspx",
+          "collection_start": "2026-10-26T23:38:18.566Z",
+          "collection_end": "2026-10-26T23:38:20.000Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY",
+          "quotes": [
+            {
+              "game_id": "401871057",
+              "market": "TOTAL",
+              "selection": "over",
+              "period": "PREGAME_FULL_GAME",
+              "book": "FanDuel",
+              "operator": "FanDuel",
+              "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-state-aggies/odds",
+              "source_url": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-state-aggies/odds",
+              "retrieved_at": "2026-10-26T23:38:20.000Z",
+              "offer_updated_at": null,
+              "line": 49.5,
+              "price": -110
+            }
+          ]
+        },
+        {
+          "game_id": "401871057",
+          "market": "TOTAL",
+          "selection": "under",
+          "period": "PREGAME_FULL_GAME",
+          "kickoff_utc": "2026-10-29T00:00:00Z",
+          "kickoff_source_url": "https://nmstatesports.com/news/2026/10/26/football-nm-state-welcomes-jax-state-in-final-weekday-cusa-contest.aspx",
+          "collection_start": "2026-10-26T23:38:18.566Z",
+          "collection_end": "2026-10-26T23:38:20.000Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY",
+          "quotes": [
+            {
+              "game_id": "401871057",
+              "market": "TOTAL",
+              "selection": "under",
+              "period": "PREGAME_FULL_GAME",
+              "book": "FanDuel",
+              "operator": "FanDuel",
+              "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-state-aggies/odds",
+              "source_url": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-state-aggies/odds",
+              "retrieved_at": "2026-10-26T23:38:20.000Z",
+              "offer_updated_at": null,
+              "line": 49.5,
+              "price": -110
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "excluded_routes": [
+    {
+      "source": "WKU team odds page turn124view0",
+      "reason": "Exact2026upcoming Delaware matchup but all quotes unavailable; cannot qualify a price."
+    },
+    {
+      "source": "Sam Houston team odds page turn126view1",
+      "reason": "403 Forbidden; no quote recovered, no bypass."
+    },
+    {
+      "source": "Kennesaw team odds page turn126view3",
+      "reason": "Crawled two days ago and no market body delivered. Not used as current price or substituted into MTSU snapshot."
+    },
+    {
+      "source": "MTSU team prior turn124view1",
+      "reason": "Earlier separate -160 header response is not mixed into the complete later -140 header/body snapshot. No continuous market move or offer update time inferred."
+    },
+    {
+      "source": "FanDuel event pages",
+      "reason": "Event shell or failed fetch; team-page source suffices only through existing exact identified-book profile."
+    }
+  ],
+  "preservation": {
+    "canonical_market_changed": false,
+    "canonical_decisions_changed": false,
+    "actual_execution_changed": false,
+    "frozen_models_changed": false,
+    "scheduled_tasks_created": 0,
+    "source_profile_changed": false
+  }
+}
