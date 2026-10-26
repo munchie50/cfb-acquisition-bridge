@@ -1,0 +1,459 @@
+{
+  "schema": "CFB_COMPLETE_MULTI_MARKET_REVIEW_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261026T231848Z",
+  "recorded_at_utc": "2026-10-26T23:26:58.383372+00:00",
+  "scope": "FOUR_EARLY_GAME_QUALITATIVE_REVIEW_AND_TWO_PROSPECTIVE_EXPERIMENTAL_WINNER_LEANS_ONLY_NOT_BET_RECOMMENDATIONS",
+  "authority": "Existing activev1.237maturity ladder; October16/17decoupling controls. No new authority/profile or Champion change.",
+  "counts": {
+    "governed_games": 56,
+    "original_predictions": 45,
+    "original_exclusions": 11,
+    "early_games_reviewed_here": 4,
+    "experimental_winner_leans": 2,
+    "beta_or_production_recommendations": 0,
+    "new_canonical_decisions": 0
+  },
+  "full_population_parent": {
+    "path": "evidence/operational/CFB_WEEK9_POPULATION_RESEARCH_20261026T225722Z.json",
+    "blob": "5ca0e153ce79978ae7c0823a21ba331f2b4ae395"
+  },
+  "opponent_addendum_parent": {
+    "path": "evidence/operational/CFB_WEEK9_EARLY_OPPONENT_ADDENDUM_20261026T225722Z.json",
+    "blob": "47450da81b4e5d8dc0af6e4ba500a8c3bc34bf67"
+  },
+  "all_other_games": "Prior45prediction first-pass record remains valid within its partial scope; no new deeper review of the other41prediction games in this four-game batch. Eleven original exclusions preserved.",
+  "source_revalidation": {
+    "WKU": "Official preview reread this cycle; same matchup/rest/last-game and opponent scoring facts.",
+    "DELAWARE": "Current direct open unavailable. Retain independently saved/read earlier October26official return/QB material; no fresh final availability clearance claimed.",
+    "MTSU": "Official FIU recap reread this cycle; Brown158rushing/Gagliano late execution and long-kick/takeaway counterarguments retained.",
+    "KENNESAW": "Official preview reread this cycle;1-6record, close-loss/offensive and defensive standings retained.",
+    "SAM_HOUSTON_MISSOURI_STATE_NM_STATE_JAX": "Previously saved primary previews and supplemental Jax latest-game/break evidence retained; no final availability clearance."
+  },
+  "market_capture": {
+    "url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+    "response_recovered_by": "2026-10-26T23:20:59.993Z",
+    "source_path": "evidence/operational/CFB_CBS_WEEK9_TEXT_TABLE_CAPTURE_20261026T232059Z.md",
+    "source_blob": "41b2797e0e7afeeffd3abce165d3f43bcf7e1c6c",
+    "coverage": "56tables/112teamrows/336configured cells matched exact census",
+    "qualification": "Saved mixed-book observation, not consensus or an independently qualified direct-book conditional benchmark. Unknown book updates/execution; Final/Open quarantined.",
+    "cross_book_note": "Delaware+1.5andWKU+1can reflect different books disagreeing around pickem. Existing mixed-offer validator accepts this asymmetry; it is not a parser corruption finding. Do not pair the cells into a same-book quote or infer source error."
+  },
+  "source_search_disposition": "Bounded direct-book event searches recovered wrong matchups/older weeks and unrelated games. All were excluded by exact game/date; no current quote was recovered from them. No guessed event URL, old-page retiming, login, bet action, paid Firecrawl call or access bypass.",
+  "games": [
+    {
+      "game_id": "401871071",
+      "game": "Delaware @ Western Kentucky",
+      "original_model": "FIRST_FROZEN: Delaware -24.6 / 51.6 / 0.067 home",
+      "original_numeric_strings": {
+        "pred_margin": "-24.589309998726918",
+        "pred_total": "51.637319487270034",
+        "pred_win": "0.06732082932182616"
+      },
+      "canonical_status": "INCONCLUSIVE_OVERDUE_UNCHANGED",
+      "research_disposition": "EXPERIMENTAL_WINNER_DIRECTION_ONLY",
+      "supporting_case": "The original model favors Delaware. Its restored starting-quarterback production supplies an additional football reason to prefer the visitor direction; WKU recent low-yardage offense does not establish that it can win a passing exchange. The extreme frozen margin is not endorsed or converted into calibrated confidence.",
+      "counterargument": "WKU has home/rest advantages and just held Sam Houston to177yards. Delaware conceded28.4points/game in the retained official reports. Last-game quarterback return is not a final availability guarantee; the opposing result needs schedule context.",
+      "source_ids": [
+        "WKU",
+        "DELAWARE"
+      ],
+      "saved_market_observations": [
+        {
+          "team": "Delaware",
+          "spread": {
+            "availability": "DISPLAYED",
+            "line": 1.5,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "moneyline": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "total": {
+            "availability": "DISPLAYED",
+            "line": 57.5,
+            "price": -110,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          }
+        },
+        {
+          "team": "Western Kentucky",
+          "spread": {
+            "availability": "DISPLAYED",
+            "line": 1.0,
+            "price": -114,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "moneyline": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "total": {
+            "availability": "DISPLAYED",
+            "line": 57.5,
+            "price": -105,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          }
+        }
+      ],
+      "market_observation_clock": "2026-10-26T23:20:59.993Z",
+      "market_qualification": "CBS_REPORTED_MIXED_BOOK_RETRIEVAL_ONLY_NOT_CONSENSUS_OR_CONDITIONAL_BENCHMARK",
+      "market_dispositions": {
+        "AWAY_SPREAD": "Delaware competitive/win direction supports investigating points, but no acceptable spread/juice or cover probability is earned. CBS mixed both-positive spreads cannot be paired as one book.",
+        "HOME_SPREAD": "WKU rest/home defense supplies a real countercase. The observed plus-one home line and separate prices remain reported cross-book observations, not a coherent pair.",
+        "AWAY_MONEYLINE": "Experimental Delaware winner forecast is exposed prospectively. It makes no value claim at saved-108 or any other price.",
+        "HOME_MONEYLINE": "WKU home/rest case could win; no supported home price threshold or opposing recommendation is earned.",
+        "OVER": "Delaware quarterback return and passing/scoring output support an over countercase; defensive touchdowns and opponent quality limit extrapolation.",
+        "UNDER": "Frozen51.6versus saved57.5is only a research gap. WKU defensive control supports under inquiry, but the restored Delaware quarterback argues against a mechanical under."
+      },
+      "experimental_output": {
+        "maturity": "EXPERIMENTAL_LEAN",
+        "subject": "ON_FIELD_GAME_WINNER_INCLUDING_OVERTIME",
+        "selection": "Delaware",
+        "recorded_at_utc": "2026-10-26T23:26:58.383372+00:00",
+        "tracking_state": "PROSPECTIVE_OPEN_UNGRADED",
+        "basis": "The original model favors Delaware. Its restored starting-quarterback production supplies an additional football reason to prefer the visitor direction; WKU recent low-yardage offense does not establish that it can win a passing exchange. The extreme frozen margin is not endorsed or converted into calibrated confidence.",
+        "counterargument": "WKU has home/rest advantages and just held Sam Houston to177yards. Delaware conceded28.4points/game in the retained official reports. Last-game quarterback return is not a final availability guarantee; the opposing result needs schedule context.",
+        "betting_recommendation": false,
+        "price_value_claim": false,
+        "calibrated_confidence": null,
+        "ev": null,
+        "stake": null,
+        "acceptable_number": "NOT_ESTABLISHED",
+        "minimum_price": "NOT_ESTABLISHED",
+        "execution_cutoff_utc": null,
+        "forecast_closes_at_utc": "2026-10-27T23:00:00Z",
+        "forecast_clock_semantics": "GAME_START_ENDS_PREGAME_FORECAST_WINDOW_NOT_A_NEW_EXECUTION_CUTOFF",
+        "review_trigger": "Reassess if Minicucci availability/role, WKU protection or weather materially changes; obtain a supported book and independently earned limits before any betting recommendation.",
+        "tracking_rule": "Retain this exact prospective output; later append the official final winner by exact game_id. Grade direction only, separate from ATS, moneyline profit, model calibration and actual wagers."
+      },
+      "beta_recommendation_status": "NOT_EARNED",
+      "acceptable_number": "NOT_ESTABLISHED",
+      "practical_execution_cutoff_utc": null,
+      "remaining_requirements": [
+        "Supported independently identified current benchmark for any betting recommendation",
+        "Earned number/price threshold, decision rule and practical execution cutoff",
+        "Check for material quarterback/lineup changes; unavailable final injury report is uncertainty, not an automatic perfect-certainty gate"
+      ],
+      "alternate_spreads": "NOT_EVALUATED_NO_SUPPORTED_CURRENT_OFFER",
+      "alternate_totals": "NOT_EVALUATED_NO_SUPPORTED_CURRENT_OFFER",
+      "team_totals": "NOT_EVALUATED_NO_SUPPORTED_CURRENT_OFFER"
+    },
+    {
+      "game_id": "401871072",
+      "game": "Sam Houston @ Missouri State",
+      "original_model": "FIRST_FROZEN: Sam Houston -10.1 / 50.4 / 0.253 home",
+      "original_numeric_strings": {
+        "pred_margin": "-10.06432554167998",
+        "pred_total": "50.42067811462986",
+        "pred_win": "0.25305849065417035"
+      },
+      "canonical_status": "INCONCLUSIVE_OVERDUE_UNCHANGED",
+      "research_disposition": "NO_DIRECTIONAL_OUTPUT_EARNED",
+      "supporting_case": "Sam Houston pass-defense season indicators support a visitor countercase against the frozen-market disagreement.",
+      "counterargument": "Missouri State receiving explosiveness and Sam Houston recent offensive difficulty leave the winner and scoring expression unresolved. Do not manufacture an upset forecast from the raw model gap.",
+      "source_ids": [
+        "SAM_HOUSTON",
+        "MISSOURI_STATE",
+        "NM_STATE"
+      ],
+      "saved_market_observations": [
+        {
+          "team": "Sam Houston",
+          "spread": {
+            "availability": "DISPLAYED",
+            "line": 5.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "moneyline": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 180,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "total": {
+            "availability": "DISPLAYED",
+            "line": 50.5,
+            "price": -112,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          }
+        },
+        {
+          "team": "Missouri State",
+          "spread": {
+            "availability": "DISPLAYED",
+            "line": -5.5,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "moneyline": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -204,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "total": {
+            "availability": "DISPLAYED",
+            "line": 50.5,
+            "price": -105,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          }
+        }
+      ],
+      "market_observation_clock": "2026-10-26T23:20:59.993Z",
+      "market_qualification": "CBS_REPORTED_MIXED_BOOK_RETRIEVAL_ONLY_NOT_CONSENSUS_OR_CONDITIONAL_BENCHMARK",
+      "market_dispositions": {
+        "AWAY_SPREAD": "Sam Houston pass-defense indicators support plus-points inquiry; recent offensive struggles can consume the cushion.",
+        "HOME_SPREAD": "Missouri State home receiving explosives support its side; its own defensive concessions oppose easy separation.",
+        "AWAY_MONEYLINE": "No winner lean or price value earned; plus-points resilience does not establish an upset.",
+        "HOME_MONEYLINE": "Home receiving strength offers a win route; the saved-204 needs a separately qualified valuation.",
+        "OVER": "Receiving explosives and defensive mistakes offer scoring paths.",
+        "UNDER": "Sam Houston weak recent rushing and defensive passing indicators offer an under case; the explosive host receivers remain contrary evidence."
+      },
+      "experimental_output": null,
+      "beta_recommendation_status": "NOT_EARNED",
+      "acceptable_number": "NOT_ESTABLISHED",
+      "practical_execution_cutoff_utc": null,
+      "remaining_requirements": [
+        "Supported independently identified current benchmark for any betting recommendation",
+        "Earned number/price threshold, decision rule and practical execution cutoff",
+        "Check for material quarterback/lineup changes; unavailable final injury report is uncertainty, not an automatic perfect-certainty gate"
+      ],
+      "alternate_spreads": "NOT_EVALUATED_NO_SUPPORTED_CURRENT_OFFER",
+      "alternate_totals": "NOT_EVALUATED_NO_SUPPORTED_CURRENT_OFFER",
+      "team_totals": "NOT_EVALUATED_NO_SUPPORTED_CURRENT_OFFER"
+    },
+    {
+      "game_id": "401871058",
+      "game": "Kennesaw State @ Middle Tennessee",
+      "original_model": "FIRST_FROZEN: Middle Tennessee -5.8 / 49.4 / 0.624 home",
+      "original_numeric_strings": {
+        "pred_margin": "5.766353300442534",
+        "pred_total": "49.35804560396155",
+        "pred_win": "0.6241309956314895"
+      },
+      "canonical_status": "INCONCLUSIVE_OVERDUE_UNCHANGED",
+      "research_disposition": "EXPERIMENTAL_WINNER_DIRECTION_ONLY",
+      "supporting_case": "The frozen home-win direction is reinforced by Middle Tennessee current rushing and late passing execution. That supports a home-winner experiment without requiring a forecast that it covers a spread.",
+      "counterargument": "Kennesaw close losses, protection/completion/red-zone strengths and conference defensive standing make a tight game plausible. MTSU prior win relied partly on long field goals and takeaways, which need not recur.",
+      "source_ids": [
+        "KENNESAW",
+        "MTSU_FIU_RECAP"
+      ],
+      "saved_market_observations": [
+        {
+          "team": "Kennesaw State",
+          "spread": {
+            "availability": "DISPLAYED",
+            "line": 3.0,
+            "price": -118,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "moneyline": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 120,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "total": {
+            "availability": "DISPLAYED",
+            "line": 51.5,
+            "price": -102,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          }
+        },
+        {
+          "team": "Middle Tennessee",
+          "spread": {
+            "availability": "DISPLAYED",
+            "line": -2.5,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "moneyline": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -140,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "total": {
+            "availability": "DISPLAYED",
+            "line": 51.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          }
+        }
+      ],
+      "market_observation_clock": "2026-10-26T23:20:59.993Z",
+      "market_qualification": "CBS_REPORTED_MIXED_BOOK_RETRIEVAL_ONLY_NOT_CONSENSUS_OR_CONDITIONAL_BENCHMARK",
+      "market_dispositions": {
+        "AWAY_SPREAD": "Kennesaw close-game and offensive-efficiency evidence makes its plus-points case distinct from an upset; no accepted number is earned.",
+        "HOME_SPREAD": "MTSU ground and passing execution support its case, but the winner lean does not establish a winning margin above2.5or3.",
+        "AWAY_MONEYLINE": "Kennesaw remains a plausible upset countercase; no qualified odds comparison or positive value claim.",
+        "HOME_MONEYLINE": "Expose experimental Middle Tennessee winner direction only. Saved-140 is not an acceptable-price instruction.",
+        "OVER": "MTSU rushing explosives and both offenses red-zone/completion strengths create over paths.",
+        "UNDER": "Kennesaw defensive standing and field goals replacing touchdowns support the countercase; no calibrated total adjustment."
+      },
+      "experimental_output": {
+        "maturity": "EXPERIMENTAL_LEAN",
+        "subject": "ON_FIELD_GAME_WINNER_INCLUDING_OVERTIME",
+        "selection": "Middle Tennessee",
+        "recorded_at_utc": "2026-10-26T23:26:58.383372+00:00",
+        "tracking_state": "PROSPECTIVE_OPEN_UNGRADED",
+        "basis": "The frozen home-win direction is reinforced by Middle Tennessee current rushing and late passing execution. That supports a home-winner experiment without requiring a forecast that it covers a spread.",
+        "counterargument": "Kennesaw close losses, protection/completion/red-zone strengths and conference defensive standing make a tight game plausible. MTSU prior win relied partly on long field goals and takeaways, which need not recur.",
+        "betting_recommendation": false,
+        "price_value_claim": false,
+        "calibrated_confidence": null,
+        "ev": null,
+        "stake": null,
+        "acceptable_number": "NOT_ESTABLISHED",
+        "minimum_price": "NOT_ESTABLISHED",
+        "execution_cutoff_utc": null,
+        "forecast_closes_at_utc": "2026-10-28T23:00:00Z",
+        "forecast_clock_semantics": "GAME_START_ENDS_PREGAME_FORECAST_WINDOW_NOT_A_NEW_EXECUTION_CUTOFF",
+        "review_trigger": "Reassess if Gagliano/Brown or key line availability changes; check Kennesaw protection/run-defense matchup and current supported prices before betting qualification.",
+        "tracking_rule": "Retain this exact prospective output; later append the official final winner by exact game_id. Grade direction only, separate from ATS, moneyline profit, model calibration and actual wagers."
+      },
+      "beta_recommendation_status": "NOT_EARNED",
+      "acceptable_number": "NOT_ESTABLISHED",
+      "practical_execution_cutoff_utc": null,
+      "remaining_requirements": [
+        "Supported independently identified current benchmark for any betting recommendation",
+        "Earned number/price threshold, decision rule and practical execution cutoff",
+        "Check for material quarterback/lineup changes; unavailable final injury report is uncertainty, not an automatic perfect-certainty gate"
+      ],
+      "alternate_spreads": "NOT_EVALUATED_NO_SUPPORTED_CURRENT_OFFER",
+      "alternate_totals": "NOT_EVALUATED_NO_SUPPORTED_CURRENT_OFFER",
+      "team_totals": "NOT_EVALUATED_NO_SUPPORTED_CURRENT_OFFER"
+    },
+    {
+      "game_id": "401871057",
+      "game": "Jacksonville State @ New Mexico State",
+      "original_model": "FIRST_FROZEN: New Mexico State -3.2 / 53.4 / 0.558 home",
+      "original_numeric_strings": {
+        "pred_margin": "3.224185684204581",
+        "pred_total": "53.368644108314335",
+        "pred_win": "0.557874929363733"
+      },
+      "canonical_status": "INCONCLUSIVE_OVERDUE_UNCHANGED",
+      "research_disposition": "NO_DIRECTIONAL_OUTPUT_EARNED",
+      "supporting_case": "NM State home rushing/run-defense evidence supports investigating the home side against the frozen-market disagreement.",
+      "counterargument": "Jax enters off a15-day break with a dual-threat quarterback and strong protection. That is too material to reduce to the win-loss records or frozen home-favorite sign.",
+      "source_ids": [
+        "NM_STATE",
+        "JAX_FIU",
+        "JAX_FIU_CENTER"
+      ],
+      "saved_market_observations": [
+        {
+          "team": "Jacksonville State",
+          "spread": {
+            "availability": "DISPLAYED",
+            "line": -3.0,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "moneyline": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -154,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "total": {
+            "availability": "DISPLAYED",
+            "line": 49.5,
+            "price": -110,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          }
+        },
+        {
+          "team": "New Mexico State",
+          "spread": {
+            "availability": "DISPLAYED",
+            "line": 3.5,
+            "price": -122,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "moneyline": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 136,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "total": {
+            "availability": "DISPLAYED",
+            "line": 49.5,
+            "price": -108,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          }
+        }
+      ],
+      "market_observation_clock": "2026-10-26T23:20:59.993Z",
+      "market_qualification": "CBS_REPORTED_MIXED_BOOK_RETRIEVAL_ONLY_NOT_CONSENSUS_OR_CONDITIONAL_BENCHMARK",
+      "market_dispositions": {
+        "AWAY_SPREAD": "Jax rest, protection and balanced production support the favorite; recent close win and yardage deficit are counterweights.",
+        "HOME_SPREAD": "NM State ground/run-defense case supports plus-points inquiry; Jax rest/quarterback movement challenge it.",
+        "AWAY_MONEYLINE": "Visitor win route is credible, but no qualified value claim at saved-154.",
+        "HOME_MONEYLINE": "Home upset direction has support, but is not earned strongly enough to expose a winner lean or price floor.",
+        "OVER": "Rested Jax execution and frozen higher total support investigation, not a new scoring projection.",
+        "UNDER": "NM State rush suppression/possession control offers a countercase, with Jax protection and quarterback rushing a risk."
+      },
+      "experimental_output": null,
+      "beta_recommendation_status": "NOT_EARNED",
+      "acceptable_number": "NOT_ESTABLISHED",
+      "practical_execution_cutoff_utc": null,
+      "remaining_requirements": [
+        "Supported independently identified current benchmark for any betting recommendation",
+        "Earned number/price threshold, decision rule and practical execution cutoff",
+        "Check for material quarterback/lineup changes; unavailable final injury report is uncertainty, not an automatic perfect-certainty gate"
+      ],
+      "alternate_spreads": "NOT_EVALUATED_NO_SUPPORTED_CURRENT_OFFER",
+      "alternate_totals": "NOT_EVALUATED_NO_SUPPORTED_CURRENT_OFFER",
+      "team_totals": "NOT_EVALUATED_NO_SUPPORTED_CURRENT_OFFER"
+    }
+  ],
+  "ranking": [],
+  "ranking_status": "UNRANKED_EXPERIMENTAL_DIRECTIONS_NOT_TOP10_OR_BET_VALUE_ORDER",
+  "parlay_review": {
+    "state": "NO_PREFERRED_PARLAY",
+    "reason": "Winner experiments are not qualified betting legs. No joint quote or correlation valuation; do not combine them into an endorsed ticket."
+  },
+  "learning": "Correct a maturity-scope mistake: lack of controlled-Beta price/limit qualification must not automatically suppress an independently supportable experimental on-field direction. Actual prospective outputs are now saved, but they do not cure the missed Monday decisions, earn betting execution or validate the method.",
+  "limitations": [
+    "No new probabilities, EV, stakes, accepted lines/prices, practical execution windows or wagers.",
+    "All56canonical prior decisions remain overdue INCONCLUSIVE; no new full primary HotSheet or deadline extension.",
+    "Experimental forecast expiration at game start is separate from unchanged/unknown practical execution cutoff.",
+    "Grade future direction/outcome separately from wagers and frozen-model calibration; two forecasts do not demonstrate improved predictive skill."
+  ]
+}
