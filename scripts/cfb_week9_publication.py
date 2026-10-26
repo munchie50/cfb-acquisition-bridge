@@ -8,6 +8,7 @@ import copy
 import json
 import re
 from pathlib import Path
+from urllib.parse import urlparse
 import cfb_neutral_publication_gate as gate
 from cfb_cbs_full_board_normalizer import normalize, WEEK9_URL, WEEK9_LINEAGE_SHA
 from cfb_neutral_weekly_reconciliation import board_offer
@@ -155,7 +156,9 @@ def compile(market, decision, capture, lineage, cycle, as_of, recovered_by, deci
             if (review['game_id'] != row['game_id'] or review['original_lineage_blob'] != WEEK9_LINEAGE_SHA
                     or reference['kickoff_utc'] != source['kickoff_utc']):
                 raise ValueError('Week9 review/source kickoff or lineage mismatch')
-            if reference['kickoff_source_url'] == WEEK9_URL:
+            kickoff_source = urlparse(reference['kickoff_source_url'])
+            if (kickoff_source.hostname in ('cbssports.com', 'www.cbssports.com')
+                    and kickoff_source.path.rstrip('/').lower().startswith('/college-football/odds')):
                 raise ValueError('CBS display alone cannot qualify conditional kickoff')
             source.update(kickoff_status='QUALIFIED', kickoff_source_url=reference['kickoff_source_url'])
         origin = old if retained or (old is not None and old['state'] == row['state'] == 'PASS') else None
