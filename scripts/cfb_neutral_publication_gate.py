@@ -167,13 +167,13 @@ def closed_conditional(row,as_of):
 
 
 def conditional_boundary(row,packet,market,decision,profile):
-    """Validate retained Week8 history at its genuine originating source boundary.
+    """Validate retained Week8/Week9 history at its genuine originating source boundary.
 
     Exact origin equality and ordinary validation still apply. No new/changed
     recommendation, expired renewal or current execution is authorized here.
     """
     cfg=profile_config(profile)
-    if profile!='WEEK8' or not closed_conditional(row,packet['as_of_utc']):
+    if profile not in ('WEEK8','WEEK9') or not closed_conditional(row,packet['as_of_utc']):
         return packet['as_of_utc'],None
     if row['state_evidence']==packet['cycle_id']:
         raise ValueError('closed conditional cannot originate in current cycle')
@@ -217,7 +217,7 @@ def state_evidence(row,packet,content,kickoff,now,decision_tag=DECISION_TAG,gaps
         if not cycle_at<=recorded<=clock(origin['as_of_utc']):raise ValueError('backdated typed decision')
         if kickoff is not None and clock(origin['as_of_utc'])>=kickoff:raise ValueError('postkickoff decision reconstruction')
     if kickoff is not None and kickoff<=now:
-        retained=(decision_tag==profile_config('WEEK8')['decision_tag'] and closed_conditional(row,now.isoformat())
+        retained=(decision_tag in (profile_config('WEEK8')['decision_tag'],profile_config('WEEK9')['decision_tag']) and closed_conditional(row,now.isoformat())
                   and proof!=packet['cycle_id'])
         if (row['state']!='PASS' and not retained) or recorded>=kickoff:raise ValueError('elapsed game requires proved prospective PASS')
 
@@ -378,13 +378,13 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
         lines[2]='**Presentation schema:** CFB_WEEKLY_CONDITIONAL_PUBLICATION_V3'
         lines[5]='**Scope:** canonical conditional display from immutable prospective review; no verified venue offer, automatic bet or full-run acceptance.'
         lines[8]='**Decision summary:** '+str(sum(r['state']=='INCONCLUSIVE' for r in dr.values()))+' INCONCLUSIVE; '+str(sum(r['state']=='PASS' for r in dr.values()))+' PASS; '+str(sum(r['state']=='CONDITIONAL' for r in dr.values()))+' CONDITIONAL; venue confirmation separate; no recorded execution created.'
-    closed_count=sum(profile=='WEEK8' and closed_conditional(r,as_of) for r in dr.values())
+    closed_count=sum(profile in ('WEEK8','WEEK9') and closed_conditional(r,as_of) for r in dr.values())
     if closed_count:lines+=['**Closed conditional history:** '+str(closed_count)+' retained pre-event reviews; windows closed; excluded from current opportunities; actual executions remain separately recorded.','']
     gap_count=sum(r['state']=='HISTORICAL_GAP' for r in dr.values())
     if gap_count:lines+=['**Permanent coverage gaps:** '+str(gap_count)+' HISTORICAL_GAP; missing pre-event decisions, never PASS or recommendations. Remaining research and natural delivery are not certified by this display.','']
     section_order=SECTIONS
     if m['schema']==WEEKLY_MARKET_SCHEMA:
-        active=[s for s in SECTIONS if any(dr[gid]['state'] not in ('PASS','HISTORICAL_GAP') and not (profile=='WEEK8' and closed_conditional(dr[gid],as_of)) for _,gid,_ in groups[s])]
+        active=[s for s in SECTIONS if any(dr[gid]['state'] not in ('PASS','HISTORICAL_GAP') and not (profile in ('WEEK8','WEEK9') and closed_conditional(dr[gid],as_of)) for _,gid,_ in groups[s])]
         primary=active[0] if active else 'NONE'
         lines+=['**Primary section:** '+primary+' — '+('earliest open neutral decision section; saved kickoff qualification labels remain applicable' if active else 'no open neutral decisions; all governed games remain visible below'), '']
         section_order=active+[s for s in SECTIONS if s not in active]
@@ -394,7 +394,7 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
         lines+=['| Kickoff CT | Game | Engine Prediction (Frozen) | Current qualified market / price | Movement from first observation | Decision state | Pending reason / information | Reconciliation deadline / final execution cutoff | Acceptable number / execution window |','|---|---|---|---|---|---|---|---|---|']
         for _,gid,r in sorted(groups[s]):lines+=['| '+' | '.join(r)+' |']
         lines+=['']
-    watchlist='Conditional recommendations are shown in their chronological rows; all original limits apply; venue confirmation pending.' if conditional and any(r['state']=='CONDITIONAL' and not (profile=='WEEK8' and closed_conditional(r,as_of)) for r in dr.values()) else 'No actionable neutral-schema recommendations. See chronological rows for pending information.'
+    watchlist='Conditional recommendations are shown in their chronological rows; all original limits apply; venue confirmation pending.' if conditional and any(r['state']=='CONDITIONAL' and not (profile in ('WEEK8','WEEK9') and closed_conditional(r,as_of)) for r in dr.values()) else 'No actionable neutral-schema recommendations. See chronological rows for pending information.'
     lines+=['## PRIORITY WATCHLIST','',watchlist,'','## FULL WEEKLY SLATE','',str(cfg['count'])+' governed games; exactly once across chronological sections. Counts: '+json.dumps({s:len(groups[s]) for s in SECTIONS})+'.','']
     return '\n'.join(lines)
 
