@@ -1,0 +1,328 @@
+{
+  "schema": "CFB_COMPLETE_MULTI_MARKET_REVIEW_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261026T231848Z",
+  "recorded_at_utc": "2026-10-26T23:46:25.281Z",
+  "scope": "LATER_TWO_GAME_NAMED_BOOK_QUALIFIED_DECISION_ADDENDUM_NOT_INTEGRATED_PRIMARY_HOT_SHEET",
+  "market_observation_ref": {
+    "path": "evidence/operational/CFB_WEEK9_IDENTIFIED_FANDUEL_20261026T233818Z.json",
+    "blob": "c3b2e8790cbb0d61cf0221578c38caebfa0c8b3c"
+  },
+  "new_evidence": "Public first-party FanDuel team odds pages supplied two exact future2026matchups,12paired full-game line/price branches. This supersedes the earlier bounded all-source-unavailable assessment for these two games only. No source whitelist/code changes or consensus/execution claim.",
+  "validation": {
+    "as_of_utc": "2026-10-26T23:45:16.184480+00:00",
+    "scope": "EXISTING_SINGLE_BOOK_REFERENCE_AND_IMMUTABLE_REVIEW_CHECKS_ONLY_NOT_CANONICAL_PUBLICATION_OR_SOURCE_TRUTH_CERTIFICATION",
+    "references_passed": 12,
+    "reference_results": [
+      {
+        "game_id": "401871058",
+        "market": "SPREAD",
+        "selection": "away",
+        "status": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+        "reasons": [
+          "FEWER_THAN_THREE_INDEPENDENT_OPERATORS",
+          "OFFER_UPDATE_UNKNOWN"
+        ]
+      },
+      {
+        "game_id": "401871058",
+        "market": "SPREAD",
+        "selection": "home",
+        "status": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+        "reasons": [
+          "FEWER_THAN_THREE_INDEPENDENT_OPERATORS",
+          "OFFER_UPDATE_UNKNOWN"
+        ]
+      },
+      {
+        "game_id": "401871058",
+        "market": "MONEYLINE",
+        "selection": "away",
+        "status": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+        "reasons": [
+          "FEWER_THAN_THREE_INDEPENDENT_OPERATORS",
+          "OFFER_UPDATE_UNKNOWN"
+        ]
+      },
+      {
+        "game_id": "401871058",
+        "market": "MONEYLINE",
+        "selection": "home",
+        "status": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+        "reasons": [
+          "FEWER_THAN_THREE_INDEPENDENT_OPERATORS",
+          "OFFER_UPDATE_UNKNOWN"
+        ]
+      },
+      {
+        "game_id": "401871058",
+        "market": "TOTAL",
+        "selection": "over",
+        "status": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+        "reasons": [
+          "FEWER_THAN_THREE_INDEPENDENT_OPERATORS",
+          "OFFER_UPDATE_UNKNOWN"
+        ]
+      },
+      {
+        "game_id": "401871058",
+        "market": "TOTAL",
+        "selection": "under",
+        "status": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+        "reasons": [
+          "FEWER_THAN_THREE_INDEPENDENT_OPERATORS",
+          "OFFER_UPDATE_UNKNOWN"
+        ]
+      },
+      {
+        "game_id": "401871057",
+        "market": "SPREAD",
+        "selection": "away",
+        "status": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+        "reasons": [
+          "FEWER_THAN_THREE_INDEPENDENT_OPERATORS",
+          "OFFER_UPDATE_UNKNOWN"
+        ]
+      },
+      {
+        "game_id": "401871057",
+        "market": "SPREAD",
+        "selection": "home",
+        "status": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+        "reasons": [
+          "FEWER_THAN_THREE_INDEPENDENT_OPERATORS",
+          "OFFER_UPDATE_UNKNOWN"
+        ]
+      },
+      {
+        "game_id": "401871057",
+        "market": "MONEYLINE",
+        "selection": "away",
+        "status": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+        "reasons": [
+          "FEWER_THAN_THREE_INDEPENDENT_OPERATORS",
+          "OFFER_UPDATE_UNKNOWN"
+        ]
+      },
+      {
+        "game_id": "401871057",
+        "market": "MONEYLINE",
+        "selection": "home",
+        "status": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+        "reasons": [
+          "FEWER_THAN_THREE_INDEPENDENT_OPERATORS",
+          "OFFER_UPDATE_UNKNOWN"
+        ]
+      },
+      {
+        "game_id": "401871057",
+        "market": "TOTAL",
+        "selection": "over",
+        "status": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+        "reasons": [
+          "FEWER_THAN_THREE_INDEPENDENT_OPERATORS",
+          "OFFER_UPDATE_UNKNOWN"
+        ]
+      },
+      {
+        "game_id": "401871057",
+        "market": "TOTAL",
+        "selection": "under",
+        "status": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+        "reasons": [
+          "FEWER_THAN_THREE_INDEPENDENT_OPERATORS",
+          "OFFER_UPDATE_UNKNOWN"
+        ]
+      }
+    ],
+    "review_ref": {
+      "path": "evidence/operational/recommendation_reviews/CFB_MIDDLE_TENNESSEE_CONTROLLED_BETA_20261026T234404Z.json",
+      "commit": "37f0e3edf5b09afdc4f05e14e5a70b6d4fa91ab3",
+      "blob": "d0a4620f56a84b96931df1dfa8f843324ef58212"
+    },
+    "conditional_validation": "PASS_EXISTING_V2_FULL_REVIEW_AND_ANCESTRY_GUARD",
+    "proposal_row": {
+      "game_id": "401871058",
+      "state": "CONDITIONAL",
+      "acceptable_number": {
+        "market": "MONEYLINE",
+        "selection": "home",
+        "line": null,
+        "minimum_price": -140,
+        "direction": "PRICE_ONLY"
+      },
+      "reconciliation_utc": "2026-10-27T17:00:00Z",
+      "planning_cutoff_utc": "2026-10-27T18:00:00Z",
+      "execution_window": {
+        "start_utc": "2026-10-26T23:44:04.763Z",
+        "end_utc": "2026-10-27T18:00:00Z"
+      },
+      "reason": "CONTROLLED BETA: Middle Tennessee full-game moneyline at -140 or better, conditional on a fresh posted venue price meeting this cap and no materially adverse personnel/weather update. Prefer the home win to a margin requirement: Brown's current rushing production and Gagliano's consecutive 200-yard passing games provide two offensive routes, against a Kennesaw offense just held to six points. Kennesaw's close losses, protection/completion strengths and active linebackers are meaningful upset risks; MTSU's long field goals and takeaways are not assumed to recur. This is a qualitative Beta judgment, not a calibrated probability, EV or placed wager. Canonical Week9 publication remains blocked by other overdue unresolved rows; this immutable review must not be represented as an integrated new Hot Sheet.",
+      "cutoff_authority": "REVIEW_EVIDENCED",
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_MIDDLE_TENNESSEE_CONTROLLED_BETA_20261026T234404Z.json",
+        "commit": "37f0e3edf5b09afdc4f05e14e5a70b6d4fa91ab3",
+        "blob": "d0a4620f56a84b96931df1dfa8f843324ef58212"
+      }
+    },
+    "canonical_overdue_inconclusive_count": 56,
+    "canonical_due_ids": [
+      "401871071",
+      "401871072",
+      "401871058",
+      "401871057",
+      "401862812",
+      "401869963",
+      "401862813",
+      "401856844",
+      "401866451",
+      "401856733",
+      "401856735",
+      "401856736",
+      "401856737",
+      "401856842",
+      "401856843",
+      "401856845",
+      "401856846",
+      "401856847",
+      "401856848",
+      "401858277",
+      "401858278",
+      "401858279",
+      "401858280",
+      "401858281",
+      "401858282",
+      "401858283",
+      "401858284",
+      "401858501",
+      "401858502",
+      "401858503",
+      "401858504",
+      "401858505",
+      "401858506",
+      "401858507",
+      "401858508",
+      "401858509",
+      "401860924",
+      "401862814",
+      "401862815",
+      "401862816",
+      "401864529",
+      "401869846",
+      "401869944",
+      "401871095",
+      "401871096",
+      "401871097",
+      "401859185",
+      "401866452",
+      "401861966",
+      "401856734",
+      "401860910",
+      "401864531",
+      "401871059",
+      "401860909",
+      "401860908",
+      "401864530"
+    ],
+    "canonical_mutations": 0,
+    "canonical_packet_boundary": "2026-10-26T12:07:18Z",
+    "full_publication_block": "Other overdue unresolved decisions cannot be silently rolled, backfilled or forced PASS; candidate row alone does not create a complete56-game packet."
+  },
+  "counts": {
+    "governed_games": 56,
+    "original_predictions": 45,
+    "original_exclusions": 11,
+    "decision_level_cases_here": 2,
+    "main_market_branches": 12,
+    "earned_controlled_beta_conditionals": 1,
+    "earned_research_passes": 1,
+    "canonical_decisions_changed": 0,
+    "other_prediction_cases_still_partial": 43
+  },
+  "games": [
+    {
+      "game_id": "401871058",
+      "game": "Kennesaw State at Middle Tennessee",
+      "research_disposition": "CONDITIONAL_EARNED_CANONICAL_INTEGRATION_PENDING",
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_MIDDLE_TENNESSEE_CONTROLLED_BETA_20261026T234404Z.json",
+        "commit": "37f0e3edf5b09afdc4f05e14e5a70b6d4fa91ab3",
+        "blob": "d0a4620f56a84b96931df1dfa8f843324ef58212"
+      },
+      "decision_row": {
+        "game_id": "401871058",
+        "state": "CONDITIONAL",
+        "acceptable_number": {
+          "market": "MONEYLINE",
+          "selection": "home",
+          "line": null,
+          "minimum_price": -140,
+          "direction": "PRICE_ONLY"
+        },
+        "reconciliation_utc": "2026-10-27T17:00:00Z",
+        "planning_cutoff_utc": "2026-10-27T18:00:00Z",
+        "execution_window": {
+          "start_utc": "2026-10-26T23:44:04.763Z",
+          "end_utc": "2026-10-27T18:00:00Z"
+        },
+        "reason": "CONTROLLED BETA: Middle Tennessee full-game moneyline at -140 or better, conditional on a fresh posted venue price meeting this cap and no materially adverse personnel/weather update. Prefer the home win to a margin requirement: Brown's current rushing production and Gagliano's consecutive 200-yard passing games provide two offensive routes, against a Kennesaw offense just held to six points. Kennesaw's close losses, protection/completion strengths and active linebackers are meaningful upset risks; MTSU's long field goals and takeaways are not assumed to recur. This is a qualitative Beta judgment, not a calibrated probability, EV or placed wager. Canonical Week9 publication remains blocked by other overdue unresolved rows; this immutable review must not be represented as an integrated new Hot Sheet.",
+        "cutoff_authority": "REVIEW_EVIDENCED",
+        "review_ref": {
+          "path": "evidence/operational/recommendation_reviews/CFB_MIDDLE_TENNESSEE_CONTROLLED_BETA_20261026T234404Z.json",
+          "commit": "37f0e3edf5b09afdc4f05e14e5a70b6d4fa91ab3",
+          "blob": "d0a4620f56a84b96931df1dfa8f843324ef58212"
+        }
+      },
+      "market_dispositions": {
+        "AWAY_SPREAD": "KSU+2.5/-105: close-game and efficiency case is real; home-win preference is stronger. No ATS recommendation.",
+        "HOME_SPREAD": "MTSU-2.5/-115: offense supports home team but adds margin risk; prefer moneyline within cap rather than infer cover.",
+        "AWAY_MONEYLINE": "KSU+116: protection, close losses and linebackers support upset risk; not the preferred winner at this price.",
+        "HOME_MONEYLINE": "CONDITIONAL MTSU-140orbetter throughTuesdayOct27 18Z/13CT; exact immutable rationale and adverse-update/venue conditions govern.",
+        "OVER": "51.5/-110: home rushing and completion/red-zone support; KSU last-game fragility and field-goal drives oppose. No preferred over.",
+        "UNDER": "51.5/-110: KSU last-game offensive/possession trouble and field goals support; rushing explosives and efficiency oppose. No preferred under."
+      }
+    },
+    {
+      "game_id": "401871057",
+      "game": "Jacksonville State at New Mexico State",
+      "research_disposition": "PASS_INSUFFICIENT_ACTIONABLE_SUPPORT_AFTER_SIX_MARKET_REVIEW_NOT_NEGATIVE_EV_PROOF",
+      "recorded_at_utc": "2026-10-26T23:46:25.281Z",
+      "rationale": "PASS these observed main-market opportunities. NM State's current ground/run-defense case and Jax's long-rest, quarterback mobility and protection pull in opposite directions; neither the original home-favorite sign nor one recent box score resolves which attack controls possessions. The point cushion is attractive context, but paying-118at+3.5 is not independently preferred to no wager on this balance of evidence. No moneyline upset or total thesis has enough separate support to prefer it. This is an actual price-and-football judgment at this boundary, not an automatic source-failure PASS, a claim of negativeEV or a way to erase the earlier missed review.",
+      "material_sources": [
+        {
+          "url": "https://nmstatesports.com/news/2026/10/26/football-nm-state-welcomes-jax-state-in-final-weekday-cusa-contest.aspx",
+          "finding": "Retained official current preview:NMState3-4/2-1,Jax5-2/3-0;Jones178last/111rushyardspergame;host109.1rushallowed and17sacks against Jax allowing1sack/game. IndependentOct28 18MT setsOct29 00Z. Facts retained from prior saved firstpass, not a fresh final availability report."
+        },
+        {
+          "url": "https://jaxstatesports.com/news/2026/10/13/football-cardiac-gamecocks-stay-perfect-in-cusa-with-last-second-heroics",
+          "finding": "Retained official last-game recap/game center:27-24FIU,last-second win;Jax173rush214pass againstFIU404total;Creel214pass95rush. Fifteen-day calendar break follows that game, not guaranteed roster health. Long rest and protection challenge the home-rush thesis."
+        }
+      ],
+      "material_parent": {
+        "path": "evidence/operational/CFB_WEEK9_EARLY_OPPONENT_ADDENDUM_20261026T225722Z.json",
+        "blob": "47450da81b4e5d8dc0af6e4ba500a8c3bc34bf67"
+      },
+      "market_dispositions": {
+        "AWAY_SPREAD": "Jax-3.5/-104: rest, protection and dual-threat QB support; asking to clear more than3 against home ground/run defense is not preferred.",
+        "HOME_SPREAD": "NMState+3.5/-118: covers a three-point loss; home run defense and rushing support it, but Jax mobile QB/protection make this cushion insufficiently preferred at this juice.",
+        "AWAY_MONEYLINE": "Jax-162: credible win route, but substantial favorite premium without a separately earned win-price preference. PASS.",
+        "HOME_MONEYLINE": "NMState+134: plausible home upset and frozen sign alone do not outweigh Jax rest/protection. PASS.",
+        "OVER": "49.5/-110: rested Jax/mobileQB and frozen53.4 support inquiry; NMState rushing/possession and run defense oppose. No preferred over.",
+        "UNDER": "49.5/-110: host rushing/control supports inquiry; protected mobileQB and explosive plays oppose. No preferred under."
+      },
+      "acceptable_number": null,
+      "minimum_price": null,
+      "practical_execution_cutoff_utc": null,
+      "reconsideration": "Eligible for new prospective review before qualified future kickoff if genuinely material personnel, matchup or separately qualified price evidence changes. No automatic renewal, fabricated limit or retroactive decision."
+    }
+  ],
+  "derivatives": {
+    "alternate_spreads": "No supported paired offer recovered; not endorsed.",
+    "alternate_totals": "No supported paired offer recovered; not endorsed.",
+    "team_totals": "No supported paired offer recovered; not endorsed.",
+    "parlay_suitability": "NO_PREFERRED_PARLAY. One earned qualitative single does not create multiple qualified legs or joint-price/correlation evidence; experimental Delaware winner lean is not a bet leg."
+  },
+  "integration": "All56saved canonical rows still reflect the prior12:07:18Zpacket and missedMonday18Zreview. One qualified newconditional and one researchedPASS cannot complete the56-game packet while other overdue unresolved rows remain. Do not downgrade this conditional to fit a neutral compiler, silently roll the other rows, forcePASS, backdate, create a competing primarysheet or weaken the current gate.",
+  "next_useful_work": "Continue remaining43prediction decision-level reviews using the now-proved public team-page route when exact matchup/quotes are available. First priority:Delaware/WKU andSamHouston/MissouriState. WKUpagehasnoquotes,Sam403,sharedDel/MissouriState directorylinkresolvesnull/404;bounded attempts retained. Original11model exclusions remainunchanged. QualifiedMTSUreview must preserve original-140cap andTuesday18Zexpiry on any later integration.",
+  "verification_scope": "Twelve existingV2named-book reference structural checks and complete immutableMTSUreview/lineage/chronology/expiry validation passed. These checks do not independently certify source truth, venue execution, full analytical review of all56games or scheduled reliability.",
+  "preservation": "No canonical/history/model/money/ticket/task/schedule/source-code changes. Existing four-taskcadence and pausedBigNine preserved. This saved continuation does not create an unattended restart."
+}
