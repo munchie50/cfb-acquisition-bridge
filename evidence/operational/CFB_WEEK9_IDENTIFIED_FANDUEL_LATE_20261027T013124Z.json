@@ -1,0 +1,109 @@
+{
+  "schema": "CFB_NAMED_BOOK_OBSERVATION_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261027T013124Z",
+  "recorded_at_utc": "2026-10-27T01:39:29.814Z",
+  "clock_semantics": "RESPONSE_RECOVERED_BY",
+  "collection_start": "2026-10-27T01:37:10.565269+00:00",
+  "collection_end": "2026-10-27T01:39:29.814Z",
+  "qualification": "Two independently matched current first-party full-game next-game blocks. Explicit2026UTC dates; unknown book-update clocks and unverified venue execution. Nebraska lower/upper schedules not used as offer timestamps.",
+  "games": [
+    {
+      "game_id": "401858504",
+      "away_team": "Washington",
+      "home_team": "Nebraska",
+      "kickoff_utc": "2026-11-01T00:00:00Z",
+      "source_url": "https://sportsbook.fanduel.com/teams/college-football/nebraska-cornhuskers/odds",
+      "web_ref": "turn14view0",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 9.5,
+          "price": -105
+        },
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -9.5,
+          "price": -115
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "away",
+          "line": null,
+          "price": 280
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "home",
+          "line": null,
+          "price": -360
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 48.5,
+          "price": -110
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 48.5,
+          "price": -110
+        }
+      ]
+    },
+    {
+      "game_id": "401860924",
+      "away_team": "Oregon State",
+      "home_team": "Fresno State",
+      "kickoff_utc": "2026-11-01T03:00:00Z",
+      "source_url": "https://sportsbook.fanduel.com/teams/college-football/oregon-state-beavers/odds",
+      "web_ref": "turn14view2",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": -6.5,
+          "price": -122
+        },
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 6.5,
+          "price": 100
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "away",
+          "line": null,
+          "price": -260
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "home",
+          "line": null,
+          "price": 210
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 56.5,
+          "price": -110
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 56.5,
+          "price": -110
+        }
+      ]
+    }
+  ],
+  "excluded_routes": [
+    {
+      "source_url": "https://sportsbook.fanduel.com/teams/college-football/northern-illinois-huskies/odds",
+      "result": "ExactUNLVfutureopponent;all main offers unavailable;not a no-bet judgement"
+    }
+  ]
+}
