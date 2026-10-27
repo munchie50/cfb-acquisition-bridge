@@ -1,0 +1,75 @@
+name: CFB one-time catch-up evidence batch
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/cfb_catchup_batch_20261027_once.yml']
+permissions:
+  contents: read
+concurrency:
+  group: cfb-catchup-evidence-20261027
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Collect bounded public evidence for 23 unresolved games
+        shell: python
+        run: |
+          import concurrent.futures, datetime, hashlib, json, pathlib, urllib.request, urllib.parse, time
+          ROOT=pathlib.Path(".")
+          OUT=pathlib.Path("catchup-batch-results"); OUT.mkdir(exist_ok=True)
+          PIN="5ca0e153ce79978ae7c0823a21ba331f2b4ae395"
+          path=ROOT/"evidence/operational/CFB_WEEK9_POPULATION_RESEARCH_20261026T225722Z.json"
+          raw=path.read_bytes()
+          assert hashlib.sha1(b"blob "+str(len(raw)).encode()+b"\0"+raw).hexdigest()==PIN,"research binding changed"
+          r=json.loads(raw)
+          closed=set(["401871072","401869963","401856844","401858504","401860924","401871058","401871057","401862812","401862813","401856846","401856736","401856847","401864529","401860910","401860908","401856845","401856843","401858283","401858284","401871096","401856842","401856848"])
+          games=[g for g in r["games"] if g["original_numeric_strings"] and g["game_id"] not in closed]
+          assert len(r["games"])==56 and len(games)==23
+          sources={s["id"]:s for s in r["sources"]}
+          urls={s["url"] for g in games for sid in g["source_ids"] if (s:=sources.get(sid))}
+          urls.add("https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/")
+          for g in games:
+              for team in g["game"].split(" @ "):
+                  slug=team.lower().replace(" ","-").replace("é","e")
+                  # Do not guess book team slugs; only explicit retained source URLs are fetched.
+          allowed={urllib.parse.urlsplit(u).hostname for u in urls}
+          assert len(urls)<=64
+          started=datetime.datetime.now(datetime.timezone.utc).isoformat()
+          def collect(url):
+              parsed=urllib.parse.urlsplit(url)
+              assert parsed.scheme=="https" and parsed.hostname in allowed and not parsed.username and not parsed.password
+              item={"url":url,"started_at_utc":datetime.datetime.now(datetime.timezone.utc).isoformat()}
+              try:
+                  req=urllib.request.Request(url,headers={"User-Agent":"CFB-Catchup-Evidence/1.0 (public read-only research)"})
+                  with urllib.request.urlopen(req,timeout=20) as response:
+                      data=response.read(2_000_001)
+                      item.update(http_status=response.status,final_url=response.url,content_type=response.headers.get("Content-Type"))
+                  if len(data)>2_000_000: raise ValueError("source exceeds bounded 2MB limit")
+                  key=hashlib.sha256(url.encode()).hexdigest()
+                  (OUT/(key+".source")).write_bytes(data)
+                  item.update(status="FETCHED_UNREVIEWED",bytes=len(data),sha256=hashlib.sha256(data).hexdigest(),artifact=key+".source")
+              except Exception as exc:
+                  item.update(status="UNAVAILABLE_NOT_A_PASS",error=str(exc)[:300])
+              item["response_recovered_by_utc"]=datetime.datetime.now(datetime.timezone.utc).isoformat()
+              return item
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+              fetched=list(pool.map(collect,sorted(urls)))
+          for g in games:
+              g["batch_status"]="SOURCE_COLLECTION_ONLY_REQUIRES_FOOTBALL_REVIEW"
+              g["canonical_mutation"]=False
+          result={"schema":"CFB_ONE_SHOT_CATCHUP_EVIDENCE_BATCH_V1","started_at_utc":started,"completed_at_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),"research_blob":PIN,"governed_games":56,"open_prediction_games":23,"games":games,"sources":fetched,"counts":{"fetched":sum(s["status"]=="FETCHED_UNREVIEWED" for s in fetched),"unavailable":sum(s["status"]!="FETCHED_UNREVIEWED" for s in fetched)},"status":"EVIDENCE_BATCH_COMPLETE_NOT_MONITOR_COMPLETE","limits":["No decisions, model updates, canonical writes, wagers or schedule changes.","Prior source list is a starting point; it is not exhaustive current football evidence.","HTTP success does not qualify matchup, clocks, prices, availability or analytical completeness.","Source failures never become PASS. Evidence needs review and applicable publication gates."]}
+          (OUT/"manifest.json").write_text(json.dumps(result,indent=2)+"\n")
+          summary="One-time catch-up evidence batch: "+str(len(games))+" open games; "+str(result["counts"])+". Football review and canonical publication remain pending."
+          (OUT/"SUMMARY.txt").write_text(summary+"\n")
+          print(summary)
+      - name: Preserve evidence and failure manifest
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-catchup-evidence-20261027
+          path: catchup-batch-results/
+          if-no-files-found: error
+          retention-days: 14
