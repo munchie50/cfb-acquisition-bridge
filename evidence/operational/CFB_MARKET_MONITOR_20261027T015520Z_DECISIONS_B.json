@@ -1,0 +1,843 @@
+{
+  "schema": "CFB_WEEK9_CATCHUP_DECISIONS_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261027T015520Z",
+  "recorded_at_utc": "2026-10-27T02:17:02.969Z",
+  "status": "PARTIAL_DECISIONS_NOT_CANONICAL",
+  "parent_checkpoint": {
+    "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T015520Z_DECISIONS_A.json",
+    "commit": "ca31f83c6726c39df9a23340ef94e0a0d29df464",
+    "blob": "71124969978621f632dcfeea874fcd83bb38a290"
+  },
+  "original_sources": [
+    {
+      "id": "WKU",
+      "url": "https://wkusports.com/news/2026/10/25/football-hilltoppers-welcome-delaware-for-weekday-cusa-matchup",
+      "response_recovered_by": "2026-10-26T22:05:33.717627+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY",
+      "qualification": "Officialprimarytextread;descriptivematerialandscheduleevidenceonly;notexhaustiveinjurycertification"
+    },
+    {
+      "id": "DELAWARE",
+      "url": "https://bluehens.com/news/2026/10/26/football-wraps-weekday-cusa-play-at-wku",
+      "response_recovered_by": "2026-10-26T22:05:33.717627+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY",
+      "qualification": "Officialprimarytextread;descriptivematerialandscheduleevidenceonly;notexhaustiveinjurycertification"
+    },
+    {
+      "id": "SAM_HOUSTON",
+      "url": "https://gobearkats.com/news/2026/10/25/football-game-8-preview-at-missouri-state",
+      "response_recovered_by": "2026-10-26T22:05:33.717627+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY",
+      "qualification": "Officialprimarytextread;descriptivematerialandscheduleevidenceonly;notexhaustiveinjurycertification"
+    },
+    {
+      "id": "MISSOURI_STATE",
+      "url": "https://missouristatebears.com/news/2026/10/23/football-bears-back-home-tuesday-to-host-sam-houston",
+      "response_recovered_by": "2026-10-26T22:05:33.717627+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY",
+      "qualification": "Officialprimarytextread;descriptivematerialandscheduleevidenceonly;notexhaustiveinjurycertification"
+    },
+    {
+      "id": "KENNESAW",
+      "url": "https://ksuowls.com/news/2026/10/25/football-travels-wraps-up-october-on-the-road-at-mtsu.aspx",
+      "response_recovered_by": "2026-10-26T22:05:33.717627+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY",
+      "qualification": "Officialprimarytextread;descriptivematerialandscheduleevidenceonly;notexhaustiveinjurycertification"
+    },
+    {
+      "id": "NM_STATE",
+      "url": "https://nmstatesports.com/news/2026/10/26/football-nm-state-welcomes-jax-state-in-final-weekday-cusa-contest.aspx",
+      "response_recovered_by": "2026-10-26T22:05:33.717627+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY",
+      "qualification": "Officialprimarytextread;descriptivematerialandscheduleevidenceonly;notexhaustiveinjurycertification"
+    },
+    {
+      "id": "UNT",
+      "url": "https://meangreensports.com/news/2026/10/26/football-unt-hosting-fau-on-espn-in-national-spotlight",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; descriptive evidence, not exhaustive availability certification"
+    },
+    {
+      "id": "BAYLOR",
+      "url": "https://baylorbears.com/news/2026/10/25/football-fb-continues-road-swing-at-ucf-on-friday-night",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; descriptive evidence, not exhaustive availability certification"
+    },
+    {
+      "id": "UCF",
+      "url": "https://ucfknights.com/news/2026/10/24/ucf-stuns-no-2-byu-in-overtime-victory-39-31",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "qualification": "Official recap read; overtime score is not regulation scoring pace"
+    },
+    {
+      "id": "WISCONSIN",
+      "url": "https://uwbadgers.com/news/2026/10/24/football-badgers-take-down-no-16-usc-24-7",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; descriptive evidence, not exhaustive availability certification"
+    },
+    {
+      "id": "OLE_MISS",
+      "url": "https://olemisssports.com/news/2026/10/26/football-vs-auburn-first-look",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; descriptive evidence, not exhaustive availability certification"
+    },
+    {
+      "id": "TEXAS_TECH",
+      "url": "https://texastech.com/news/2026/10/26/football-no-13-texas-tech-no-22-arizona-collide-saturday-for-top-25-thriller",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; descriptive evidence, not exhaustive availability certification"
+    },
+    {
+      "id": "KANSAS",
+      "url": "https://kuathletics.com/news/2026/10/26/football-jayhawks-travel-to-tcu-to-take-on-horned-frogs",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; descriptive evidence, not exhaustive availability certification"
+    },
+    {
+      "id": "UTAH",
+      "url": "https://utahutes.com/news/2026/10/26/football-no-6-utah-heads-east-to-face-cincinnati",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; descriptive evidence, not exhaustive availability certification"
+    },
+    {
+      "id": "PITT",
+      "url": "https://pittsburghpanthers.com/news/2026/10/26/football-game-week-pitt-hosts-georgia-tech-on-halloween-night",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; descriptive evidence, not exhaustive availability certification"
+    },
+    {
+      "id": "PITT_COACH",
+      "url": "https://pittsburghpanthers.com/news/2026/10/26/football-narduzzi-notebook-field-position-and-execution-the-focus-as-pitt-turns-to-georgia-tech",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "qualification": "Official coach notebook read; not a full injury report"
+    },
+    {
+      "id": "ILLINOIS",
+      "url": "https://fightingillini.com/news/2026/10/26/football-illinois-travels-east-for-matchup-at-maryland",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; descriptive evidence, not exhaustive availability certification"
+    },
+    {
+      "id": "FRESNO",
+      "url": "https://gobulldogs.com/news/2026/10/26/football-bulldogs-host-oregon-state-on-halloween-night",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; descriptive evidence, not exhaustive availability certification"
+    },
+    {
+      "id": "OREGON_STATE",
+      "url": "https://osubeavers.com/news/2026/10/26/football-oregon-state-returns-from-bye-week-visits-fresno-state-halloween-night",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "qualification": "Official preview text read; descriptive season splits"
+    },
+    {
+      "id": "GEORGIA_SOUTHERN",
+      "url": "https://gseagles.com/news/2026/10/26/football-game-preview-old-rivals-renew-acquaintances-saturday",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; descriptive evidence, not exhaustive availability certification"
+    },
+    {
+      "id": "ODU",
+      "url": "https://odusports.com/news/2026/10/24/football-falls-at-louisiana-tech-26-0",
+      "response_recovered_by": "2026-10-26T22:29:20.946832+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; descriptive evidence, not exhaustive availability certification"
+    },
+    {
+      "id": "NEBRASKA",
+      "url": "https://huskers.com/news/2026/10/26/huskers-return-home-to-host-washington",
+      "response_recovered_by": "2026-10-26T22:32:39.777423+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; partial descriptive research, not full availability clearance"
+    },
+    {
+      "id": "NEBRASKA_INJURIES",
+      "url": "https://huskers.com/news/2026/10/26/rhule-talks-injuries-previews-washington-game",
+      "response_recovered_by": "2026-10-26T22:32:39.777423+00:00",
+      "qualification": "Official coach comments read; projected questionable is not final status"
+    },
+    {
+      "id": "PENN_STATE",
+      "url": "https://gopsusports.com/news/2026/10/26/game-notes-penn-state-vs-purdue-2026",
+      "response_recovered_by": "2026-10-26T22:32:39.777423+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; partial descriptive research, not full availability clearance"
+    },
+    {
+      "id": "AIR_FORCE",
+      "url": "https://goairforcefalcons.com/news/2026/10/26/football-game-8-air-force-vs-uconn",
+      "response_recovered_by": "2026-10-26T22:32:39.777423+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; partial descriptive research, not full availability clearance"
+    },
+    {
+      "id": "GEORGIA",
+      "url": "https://georgiadogs.com/news/2026/10/26/football-georgia-takes-on-florida-in-atlanta-for-the-first-time",
+      "response_recovered_by": "2026-10-26T22:32:39.777423+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; partial descriptive research, not full availability clearance"
+    },
+    {
+      "id": "SAN_DIEGO_STATE",
+      "url": "https://goaztecs.com/news/2026/10/26/aztecs-return-home-to-face-washington-state-for-halloween-clash",
+      "response_recovered_by": "2026-10-26T22:32:39.777423+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official primary article text read; partial descriptive research, not full availability clearance"
+    },
+    {
+      "id": "KANSAS_STATE",
+      "url": "https://www.kstatesports.com/news/2026/10/26/football-k-state-looks-to-bounce-back-at-colorado",
+      "response_recovered_by": "2026-10-26T22:32:39.777423+00:00",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "Official article text returned by search and read; direct open failed. Not a fresh direct-page read or full injury clearance."
+    },
+    {
+      "id": "TROY_ULM",
+      "url": "https://troytrojans.com/news/2026/10/24/football-troy-falls-to-ulm",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "Troy47 passing yards; ULM243 total yards. Both offenses struggled before late ULM scoring."
+    },
+    {
+      "id": "APP_JMU",
+      "url": "https://appstatesports.com/news/2026/10/23/football-londons-ot-kick-caps-dramatic-app-state-win-over-jmu.aspx",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "JMU423 yards but92 rushing on30 attempts; lost34-31 in overtime, with missed field goals and quarterback rotation."
+    },
+    {
+      "id": "TULANE_UTSA",
+      "url": "https://tulanegreenwave.com/news/2026/10/24/football-falls-42-19-to-utsa",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "Tulane lost six turnovers; Johnson threw265 yards and two interceptions; Daniels rushed104 yards."
+    },
+    {
+      "id": "SAC_BALL",
+      "url": "https://hornetsports.com/sports/football/stats/2026/ball-state/boxscore/16623",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_BOX_SCORE_TEXT_READ",
+      "finding": "Sacramento State266 yards,54 rushing and3of12 third downs; allowed417 yards in34-17 loss."
+    },
+    {
+      "id": "KENT_AKRON",
+      "url": "https://kentstatesports.com/sports/football/stats/2026/akron/boxscore/9739",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_BOX_SCORE_TEXT_READ",
+      "finding": "Kent376 yards,294 passing/four passing touchdowns, but allowed422 yards and benefited from165 Akron penalty yards."
+    },
+    {
+      "id": "MIZZOU_REPORTED",
+      "url": "https://sports.yahoo.com/articles/ahmad-hardy-play-week-why-160842816.html",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "SECONDARY_BEAT_SEARCH_TEXT_ONLY_DIRECT_OPEN_UNAVAILABLE",
+      "finding": "Beat report: Hardy returning to practice is not confirmed game availability. Direct open429; search-recovered text only."
+    },
+    {
+      "id": "OU_MSU",
+      "url": "https://soonersports.com/news/2026/10/24/football-sooners-prevail-in-first-ever-meeting-against-mississippi-state",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "Mateer283 yards/two touchdowns; OU184 rushing. MSU Taylor left injured and did not return; Bulldogs3of16 on third/fourth downs. AP recap hosted by OU."
+    },
+    {
+      "id": "TEXAS_OLEMISS",
+      "url": "https://texaslonghorns.com/news/2026/10/24/no-19-18-football-prevails-against-no-7-7-ole-miss-34-27",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "Texas rushing production improved, but Ole Miss recovered from24-3 to tie before Texas prevailed. Three interceptions and a blocked field goal affected the game."
+    },
+    {
+      "id": "ASU_KSTATE",
+      "url": "https://thesundevils.com/news/2026/10/25/return-of-the-mack-cardae-with-four-touchdowns-as-sun-devils-top-kansas-state-28-17",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "ASU used three quarterbacks and its sixth offensive-line combination in seven games. Keene left hurt; Mack159 rushing/four touchdowns."
+    },
+    {
+      "id": "ISU_ARIZONA",
+      "url": "https://d1tacpi2k4cwvj.cloudfront.net/news/2026/10/24/football-cyclones-fall-at-no-25-arizona-39-3",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "ISU221 total yards,52 rushing; Moberly replaced Raynor at halftime. Official Iowa State article served through its CDN."
+    },
+    {
+      "id": "SYR_UNC",
+      "url": "https://cuse.com/news/2026/10/24/football-cardiac-cuse-top-carolina-in-overtime",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "Syracuse Angeli256 passing yards; Miller125 rushing. UNC Edwards271 passing. Syracuse won on an overtime two-point conversion; kicking issues matter."
+    },
+    {
+      "id": "BC_GT",
+      "url": "https://bceagles.com/news/2026/10/24/football-eagles-power-past-georgia-tech",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "BC rushed399 yards with five rushing touchdowns; its49 points included an interception return."
+    },
+    {
+      "id": "DUKE_UVA",
+      "url": "https://goduke.com/news/2026/10/23/football-sheppard-throws-winning-touchdown-defense-shines-in-19-16-win-at-virginia",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "Duke second-half defense allowed three points with four sacks; final touchdown was a halfback pass, not routine passing production."
+    },
+    {
+      "id": "MIAMI_PITT",
+      "url": "https://miamihurricanes.com/news/2026/10/25/fb-2026-canes-rewind-a-look-back-at-the-win-over-pittsburgh",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "Mensah387 passing yards/four touchdowns; Toney194 receiving. Miami forced early three-and-outs; Pitt missing personnel and short fields temper score-based inference."
+    },
+    {
+      "id": "STANFORD_PREVIEW",
+      "url": "https://gostanford.com/news/2026/10/26/cardinal-takes-on-cardinals-in-halloween-matchup",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_SEARCH_TEXT_READ_DIRECT_OPEN_UNAVAILABLE",
+      "finding": "Official search-recovered text reports14straight road losses; Stanford averages34 points in wins versus5.8 in losses, with Ford recent rushing strength. Direct open unavailable."
+    },
+    {
+      "id": "UVA_DUKE",
+      "url": "https://virginiasports.com/news/2026/10/24/late-touchdown-lifts-duke-over-virginia-19-16",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "Virginia missed four defensive starters, allowed327 yards, but scored over16 only once in four games; offensive sacks/finishing harmed drives."
+    },
+    {
+      "id": "UCLA_MSU",
+      "url": "https://uclabruins.com/news/2026/10/25/postgame-notes-ucla-vs-msu-2026",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "UCLA allowed156 total yards and held opponents12of70 on third downs over six games;245 rushing yards against MSU. Source has2.0/2.5 Omosigho sack conflict; exact count not used."
+    },
+    {
+      "id": "NEVADA_SJSU",
+      "url": "https://nevadawolfpack.com/boxscore.aspx?id=14076&path=football",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_BOX_SCORE_TEXT_READ",
+      "finding": "Nevada beat SanJose28-13; SJSU Luke Weaver91 passing yards. Official table/participation, not current starter assurance."
+    },
+    {
+      "id": "USC_WISC",
+      "url": "https://usctrojans.com/news/2026/10/24/usc-trojans-football-game-recap-associated-press-ap-wisconsin-badgers-jayden-maiava-taniela-tupou",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "USC negative net rushing, turnovers and a blocked field goal hurt its loss. USC/AP says minus17 rushing; Wisconsin source says minus18. Preserve conflict, no exact yard correction."
+    },
+    {
+      "id": "UNM_NDSU",
+      "url": "https://golobos.com/news/2026/10/25/brawleys-pick-6-lifts-new-mexico-past-north-dakota-state-21-16",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "UNM allowed251 total/53 rushing yards and gained279 total. A pick-six materially affected21-16 result. Text57/56return-yard conflict not used."
+    },
+    {
+      "id": "USM_LOUISIANA",
+      "url": "https://southernmiss.com/news/2026/10/24/late-touchdown-lifts-football-over-louisiana-35-31-in-homecoming-victory",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "USM286 rushing yards/four rushing touchdowns; a pick-six helped35-31 win. Allowed299 passing yards."
+    },
+    {
+      "id": "ODU_LATECH_CONT",
+      "url": "https://odusports.com/news/2026/10/24/football-falls-at-louisiana-tech-26-0",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "LA Tech held ODU141 yards in shutout; opposing new quarterback/left tackle limit transfer of that defensive result."
+    },
+    {
+      "id": "WMU_TOLEDO",
+      "url": "https://wmubroncos.com/news/2026/10/24/football-wmus-comeback-falls-short-at-toledo.aspx",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "WMU allowed595 yards in45-38 loss; Lowry12of29 with two interceptions. Comeback scoring does not prove sustainable offensive pace."
+    },
+    {
+      "id": "BOISE_WSU",
+      "url": "https://broncosports.com/news/2026/10/24/football-dominant-fourth-quarter-propels-no-21-22-broncos-past-cougars",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "Boise31-10 win was tied entering fourth quarter; three late touchdowns enlarged margin. Madsen149 passing yards/no interception; Riley long rushing scores."
+    },
+    {
+      "id": "TXST_USU",
+      "url": "https://txst.com/news/2026/10/25/football-game-recap-bobcats-defeat-utah-state-20-17-in-front-of-homecoming-crowd.aspx",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_HOSTED_AP_SEARCH_TEXT_READ_DIRECT_OPEN_UNAVAILABLE",
+      "finding": "TexasState250 total yards/one offensive touchdown drive in20-17 win;100-yard kickoff return helped. Official/AP text recovered in search, direct open unavailable."
+    },
+    {
+      "id": "UNLV_AFA",
+      "url": "https://unlvrebels.com/news/2026/10/17/football-falcons-snap-unlvs-three-game-win-streak",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_ARTICLE_TEXT_READ",
+      "finding": "UNLV lost41-31 after allowing21straight fourth-quarter points; minus-two turnover margin. Arnold246 passing/78 rushing; later bye before NIU."
+    },
+    {
+      "id": "NIU_HAWAII",
+      "url": "https://niuhuskies.com/boxscore.aspx?id=25012&path=football",
+      "response_recovered_by": "2026-10-26T23:05:37.952155+00:00",
+      "clock_semantics": "RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_BOX_SCORE_TEXT_READ",
+      "finding": "NIU lost56-21 and is0-7; multiple sustained Hawaii scoring drives expose defensive concerns. Record alone is not a selection."
+    }
+  ],
+  "new_material_sources": [
+    {
+      "id": "LOUISVILLE_SYRACUSE",
+      "url": "https://gocards.com/news/2026/10/18/football-defense-stands-tall-late-as-cards-down-syracuse-34-26",
+      "response_recovered_by": "2026-10-27T02:16:25.410Z",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_PRIMARY_TEXT_READ; not current final injury clearance"
+    },
+    {
+      "id": "WAKE_CAL",
+      "url": "https://godeacs.com/news/2026/10/18/football-no-21-wake-forest-secures-bowl-eligibility-in-41-7-victory-over-cal",
+      "response_recovered_by": "2026-10-27T02:16:25.410Z",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_PRIMARY_TEXT_READ; not current final injury clearance"
+    },
+    {
+      "id": "MARSHALL_SOUTH_ALABAMA",
+      "url": "https://herdzone.com/news/2026/10/21/marshall-football-grinds-past-south-alabama-20-13",
+      "response_recovered_by": "2026-10-27T02:16:25.410Z",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND",
+      "qualification": "OFFICIAL_PRIMARY_TEXT_READ; not current final injury clearance"
+    }
+  ],
+  "new_passes": [
+    {
+      "game_id": "401856843",
+      "game": "Arizona State @ BYU",
+      "state": "PASS",
+      "reviewed_at_utc": "2026-10-27T02:16:25.410Z",
+      "scope": "EARNED_RESEARCH_PASS_AT_RECORDED_BENCHMARK_NOT_YET_CANONICAL",
+      "original_numeric_strings": {
+        "pred_margin": "16.187459572143922",
+        "pred_total": "56.836393987807924",
+        "pred_win": "0.8511204113016558"
+      },
+      "material_findings": "ASU's Keene left hurt; three quarterbacks and sixth line combination in seven games make its four-touchdown rushing performance difficult to transfer. BYU lost in double overtime, which inflated the comparison total.",
+      "source_ids": [
+        "ASU_KSTATE",
+        "UCF"
+      ],
+      "benchmark": {
+        "game_id": "401856843",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/byu-cougars/odds",
+        "web_ref": "turn18view7",
+        "quotes": {
+          "away_spread": [
+            15.5,
+            -110
+          ],
+          "home_spread": [
+            -15.5,
+            -110
+          ],
+          "away_ml": 540,
+          "home_ml": -800,
+          "over": [
+            49.5,
+            -110
+          ],
+          "under": [
+            49.5,
+            -110
+          ]
+        },
+        "kickoff_utc": "2026-10-31T19:30:00Z"
+      },
+      "market_dispositions": [
+        {
+          "branch": "away_spread",
+          "decision": "DECLINE",
+          "reason": "ASU+15.5 benefits from Mack's159-yard/four-TD rushing game, but quarterback and protection disruption can prevent maintaining the cushion."
+        },
+        {
+          "branch": "home_spread",
+          "decision": "DECLINE",
+          "reason": "BYU-15.5 is close to the original16.2margin; neither home field nor ASU injury alone earns a new probability of such separation."
+        },
+        {
+          "branch": "away_moneyline",
+          "decision": "DECLINE",
+          "reason": "ASU+540 needs a much larger passing/protection improvement to win outright; rushing output alone does not earn it."
+        },
+        {
+          "branch": "home_moneyline",
+          "decision": "DECLINE",
+          "reason": "BYU-800 asks for exceptional confidence despite a recent competitive loss and the opponent's rushing ceiling."
+        },
+        {
+          "branch": "over",
+          "decision": "DECLINE",
+          "reason": "Over49.5 has Mack and BYU scoring mechanisms, but ASU's unsettled quarterback/line can end drives; the56.8frozen value is not a refreshed forecast."
+        },
+        {
+          "branch": "under",
+          "decision": "DECLINE",
+          "reason": "Under49.5 benefits from disruption and excluding overtime, but it opposes ASU's demonstrated rushing explosives and BYU's scoring ability."
+        }
+      ],
+      "rationale": "No standard-market selection earned at these recorded prices after specific opposing football cases. Not a source-access PASS; no requirement for a venue quote or perfect information.",
+      "uncertainty": "Recent production is descriptive and unadjusted. No numeric fair price, EV or stake. Exhaustive final availability/stadium-hour weather not certified; prospective material changes require explicit reconsideration."
+    },
+    {
+      "game_id": "401858283",
+      "game": "Stanford @ Louisville",
+      "state": "PASS",
+      "reviewed_at_utc": "2026-10-27T02:16:25.410Z",
+      "scope": "EARNED_RESEARCH_PASS_AT_RECORDED_BENCHMARK_NOT_YET_CANONICAL",
+      "original_numeric_strings": {
+        "pred_margin": "23.45577448110459",
+        "pred_total": "60.240276251627684",
+        "pred_win": "0.9154723210286189"
+      },
+      "material_findings": "Louisville's latest425yards included310passing and an82-yard quarterback rushingTD, but it allowed462yards and needed late defensive stops in34-26win. Brohm described a stagnant second-half offense. Stanford's latest rushing improvement and pronounced road weakness pull in opposite directions; Louisville had a bye.",
+      "source_ids": [
+        "STANFORD_PREVIEW",
+        "LOUISVILLE_SYRACUSE"
+      ],
+      "benchmark": {
+        "game_id": "401858283",
+        "away_team": "Stanford",
+        "home_team": "Louisville",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/louisville-cardinals/odds",
+        "web_ref": "turn20view8",
+        "status": "EXACT_FUTURE_NEXT_GAME_FULL_GAME_IDENTIFIED_RETRIEVAL_ONLY",
+        "date_text": "SAT OCTOBER 31, 2026 | 7:15PM UTC",
+        "quotes": [
+          {
+            "market": "SPREAD",
+            "selection": "away",
+            "line": 21.5,
+            "price": -108
+          },
+          {
+            "market": "SPREAD",
+            "selection": "home",
+            "line": -21.5,
+            "price": -112
+          },
+          {
+            "market": "MONEYLINE",
+            "selection": "away",
+            "line": null,
+            "price": 1100
+          },
+          {
+            "market": "MONEYLINE",
+            "selection": "home",
+            "line": null,
+            "price": -2500
+          },
+          {
+            "market": "TOTAL",
+            "selection": "over",
+            "line": 61.5,
+            "price": -114
+          },
+          {
+            "market": "TOTAL",
+            "selection": "under",
+            "line": 61.5,
+            "price": -106
+          }
+        ],
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "recovered_by_utc": "2026-10-27T02:03:02.055Z",
+        "offer_updated_at": null,
+        "qualification": "Opponents and away/home manually compared to retained exact game identity; explicit2026October31/November1 next-game date, not lower schedules or futures. Parser only transcribes read paired numbers; no numerical matching or operator inference."
+      },
+      "market_dispositions": [
+        {
+          "branch": "away_spread",
+          "decision": "DECLINE",
+          "reason": "Stanford+21.5 has a rushing/competitive path against recent defensive leakage, but poor road production and win/loss splits can erase this cushion."
+        },
+        {
+          "branch": "home_spread",
+          "decision": "DECLINE",
+          "reason": "Louisville-21.5 is only modestly below the23.5frozen margin; the latest defensive concessions and second-half stagnation do not earn that separation."
+        },
+        {
+          "branch": "away_moneyline",
+          "decision": "DECLINE",
+          "reason": "Stanford+1100 requires a road offensive reversal beyond the evidence from one improved home performance."
+        },
+        {
+          "branch": "home_moneyline",
+          "decision": "DECLINE",
+          "reason": "Louisville-2500 offers little reward relative to demonstrated defensive/drive-finishing volatility; no calibrated near-certainty."
+        },
+        {
+          "branch": "over",
+          "decision": "DECLINE",
+          "reason": "Over61.5 has passing explosiveness and Louisville's462yards allowed, but Stanford road offense and a stagnant second-half example challenge sustained scoring."
+        },
+        {
+          "branch": "under",
+          "decision": "DECLINE",
+          "reason": "Under61.5 has Stanford's low output in losses and Louisville defensive pressure, but big plays/short fields can defeat that narrow frozen-total comparison."
+        }
+      ],
+      "rationale": "No standard-market selection earned at these recorded prices after specific opposing football cases. Not a source-access PASS; no requirement for a venue quote or perfect information.",
+      "uncertainty": "Recent production is descriptive and unadjusted. No numeric fair price, EV or stake. Exhaustive final availability/stadium-hour weather not certified; prospective material changes require explicit reconsideration."
+    },
+    {
+      "game_id": "401858284",
+      "game": "Virginia @ Wake Forest",
+      "state": "PASS",
+      "reviewed_at_utc": "2026-10-27T02:16:25.410Z",
+      "scope": "EARNED_RESEARCH_PASS_AT_RECORDED_BENCHMARK_NOT_YET_CANONICAL",
+      "original_numeric_strings": {
+        "pred_margin": "-5.690307368948456",
+        "pred_total": "54.51339880089259",
+        "pred_win": "0.3802425820196452"
+      },
+      "material_findings": "Wake's latest41-7Cal win had Lopez267passing/fourTDs plus51rushing, and a bye followed. Virginia's19-16Duke loss included missing defensive starters, protection problems and weak scoring. Virginia's defensive resistance remains a counterweight; originalVirginia5.7favorite now conflicts strongly with currentWake13.5favorite and is not a current personnel adjustment.",
+      "source_ids": [
+        "UVA_DUKE",
+        "WAKE_CAL"
+      ],
+      "benchmark": {
+        "game_id": "401858284",
+        "away_team": "Virginia",
+        "home_team": "Wake Forest",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/wake-forest-demon-deacons/odds",
+        "web_ref": "turn20view9",
+        "status": "EXACT_FUTURE_NEXT_GAME_FULL_GAME_IDENTIFIED_RETRIEVAL_ONLY",
+        "date_text": "SAT OCTOBER 31, 2026 | 7:45PM UTC",
+        "quotes": [
+          {
+            "market": "SPREAD",
+            "selection": "away",
+            "line": 13.5,
+            "price": 100
+          },
+          {
+            "market": "SPREAD",
+            "selection": "home",
+            "line": -13.5,
+            "price": -122
+          },
+          {
+            "market": "MONEYLINE",
+            "selection": "away",
+            "line": null,
+            "price": 480
+          },
+          {
+            "market": "MONEYLINE",
+            "selection": "home",
+            "line": null,
+            "price": -690
+          },
+          {
+            "market": "TOTAL",
+            "selection": "over",
+            "line": 49.5,
+            "price": -110
+          },
+          {
+            "market": "TOTAL",
+            "selection": "under",
+            "line": 49.5,
+            "price": -110
+          }
+        ],
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "recovered_by_utc": "2026-10-27T02:03:02.055Z",
+        "offer_updated_at": null,
+        "qualification": "Opponents and away/home manually compared to retained exact game identity; explicit2026October31/November1 next-game date, not lower schedules or futures. Parser only transcribes read paired numbers; no numerical matching or operator inference."
+      },
+      "market_dispositions": [
+        {
+          "branch": "away_spread",
+          "decision": "DECLINE",
+          "reason": "Virginia+13.5 gives substantial protection but missing personnel and repeated offensive finishing/protection problems weaken the frozen road-favorite case."
+        },
+        {
+          "branch": "home_spread",
+          "decision": "DECLINE",
+          "reason": "Wake-13.5/-122 demands a large margin and extra juice; its dominantCal result is unadjusted and Virginia just heldDuke to19."
+        },
+        {
+          "branch": "away_moneyline",
+          "decision": "DECLINE",
+          "reason": "Virginia+480 requires converting defensive resistance into enough offensive scoring to win away; recent finishing does not earn it."
+        },
+        {
+          "branch": "home_moneyline",
+          "decision": "DECLINE",
+          "reason": "Wake-690 is expensive despite favorable current matchup evidence; one dominant result does not establish the required win rate."
+        },
+        {
+          "branch": "over",
+          "decision": "DECLINE",
+          "reason": "Over49.5 has Lopez's dual-threat attack and Virginia secondary absences, but Virginia's poor scoring contribution and Wake's defense oppose it."
+        },
+        {
+          "branch": "under",
+          "decision": "DECLINE",
+          "reason": "Under49.5 has Virginia low output and recent defense, but Wake's explosive passing and short fields remain substantial opposing paths."
+        }
+      ],
+      "rationale": "No standard-market selection earned at these recorded prices after specific opposing football cases. Not a source-access PASS; no requirement for a venue quote or perfect information.",
+      "uncertainty": "Recent production is descriptive and unadjusted. No numeric fair price, EV or stake. Exhaustive final availability/stadium-hour weather not certified; prospective material changes require explicit reconsideration."
+    },
+    {
+      "game_id": "401871096",
+      "game": "Marshall @ Old Dominion",
+      "state": "PASS",
+      "reviewed_at_utc": "2026-10-27T02:16:25.410Z",
+      "scope": "EARNED_RESEARCH_PASS_AT_RECORDED_BENCHMARK_NOT_YET_CANONICAL",
+      "original_numeric_strings": {
+        "pred_margin": "10.531260063331388",
+        "pred_total": "45.065189578232356",
+        "pred_win": "0.723554751309223"
+      },
+      "material_findings": "Marshall's20-13SouthAlabama win required a late75-yard rushing drive led by backupWilkins after Turner went to the medical tent. Turner availability is not established. Marshall heldHollins12/33with an interception. ODU's latest141yards/shutout came with first starts at quarterback and left tackle; future stabilization is unproved.",
+      "source_ids": [
+        "ODU",
+        "MARSHALL_SOUTH_ALABAMA"
+      ],
+      "benchmark": {
+        "game_id": "401871096",
+        "away_team": "Marshall",
+        "home_team": "Old Dominion",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/old-dominion-monarchs/odds",
+        "web_ref": "turn22view8",
+        "status": "EXACT_FUTURE_NEXT_GAME_FULL_GAME_IDENTIFIED_RETRIEVAL_ONLY",
+        "date_text": "SAT OCTOBER 31, 2026 | 5:00PM UTC",
+        "quotes": [
+          {
+            "market": "SPREAD",
+            "selection": "away",
+            "line": -3.5,
+            "price": -105
+          },
+          {
+            "market": "SPREAD",
+            "selection": "home",
+            "line": 3.5,
+            "price": -115
+          },
+          {
+            "market": "MONEYLINE",
+            "selection": "away",
+            "line": null,
+            "price": -162
+          },
+          {
+            "market": "MONEYLINE",
+            "selection": "home",
+            "line": null,
+            "price": 134
+          },
+          {
+            "market": "TOTAL",
+            "selection": "over",
+            "line": 47.5,
+            "price": -110
+          },
+          {
+            "market": "TOTAL",
+            "selection": "under",
+            "line": 47.5,
+            "price": -110
+          }
+        ],
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "recovered_by_utc": "2026-10-27T02:03:02.055Z",
+        "offer_updated_at": null,
+        "qualification": "Opponents and away/home manually compared to retained exact game identity; explicit2026October31/November1 next-game date, not lower schedules or futures. Parser only transcribes read paired numbers; no numerical matching or operator inference."
+      },
+      "market_dispositions": [
+        {
+          "branch": "away_spread",
+          "decision": "DECLINE",
+          "reason": "Marshall-3.5 crosses a field goal with an uncertain starting-quarterback condition and a latest offense reliant on late rushing success."
+        },
+        {
+          "branch": "home_spread",
+          "decision": "DECLINE",
+          "reason": "ODU+3.5 gets home points but141yards and disruptive first starts make a rebound insufficiently established."
+        },
+        {
+          "branch": "away_moneyline",
+          "decision": "DECLINE",
+          "reason": "Marshall-162 requires winning despite an uncertain quarterback situation and limited latest scoring; no calibrated winner value."
+        },
+        {
+          "branch": "home_moneyline",
+          "decision": "DECLINE",
+          "reason": "ODU+134 needs an outright offensive rebound, a stronger claim than the already-unearned cover case."
+        },
+        {
+          "branch": "over",
+          "decision": "DECLINE",
+          "reason": "Over47.5 faces ODU's offensive collapse and Marshall defensive success; short fields alone do not earn it."
+        },
+        {
+          "branch": "under",
+          "decision": "DECLINE",
+          "reason": "Under47.5 has clear low-output mechanisms but two unsettled offensive lineups and nonoffensive/short-field scoring can defeat it; no quantified edge at the price."
+        }
+      ],
+      "rationale": "No standard-market selection earned at these recorded prices after specific opposing football cases. Not a source-access PASS; no requirement for a venue quote or perfect information.",
+      "uncertainty": "Recent production is descriptive and unadjusted. No numeric fair price, EV or stake. Exhaustive final availability/stadium-hour weather not certified; prospective material changes require explicit reconsideration."
+    }
+  ],
+  "new_conditional": {
+    "path": "evidence/operational/recommendation_reviews/CFB_CINCINNATI_CONTROLLED_BETA_20261027T015520Z.json",
+    "commit": "2928ff585df588489ad55fb05af7e196a3e5269e",
+    "blob": "f270892ad49f6f3c19e051bb75a4763e5a98a0fb"
+  },
+  "cumulative_counts": {
+    "conditional": 4,
+    "pass": 18,
+    "unfinished_prediction_games": 23,
+    "original_exclusions": 11
+  }
+}
