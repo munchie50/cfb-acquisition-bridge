@@ -1,0 +1,68 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401858279",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-10-27T21:50:25.899Z",
+  "original_lineage_blob": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "away",
+  "rationale": "CONTROLLED BETA: Boston College +7.5 or higher at -115 or better. Boston College's current ground production against a Duke defense that allowed Virginia195rushing yards supports a competitive-game points cushion. Prefer more than a touchdown rather than requiring an upset. Duke's second-half pressure, BC's limited passing and dependence on an unusually strong last rushing game are meaningful losing paths. Observed FanDuel 7.5/-124 DOES NOT meet this limit; no bet at that quote. Qualitative recommendation, not calculated EV, calibrated probability, stake or execution. Full-week canonical integration pending.",
+  "model_review": "Original Duke-favorite roughly9.9points OPPOSES this points thesis at+7.5; it is not suppressed or rerun. Current rushing matchup motivates a lower-maturity qualitative view despite that counterevidence, without a numeric adjustment or cover probability. Original numeric strings and archive remain unchanged; no model rerun/refit. Exact ORIGINAL strings: {\"pred_margin\":\"9.924307992400811\",\"pred_total\":\"45.83234173080565\",\"pred_win\":\"0.7094212158876784\"}",
+  "material_sources": [
+    {
+      "url": "https://bceagles.com/news/2026/10/24/football-eagles-power-past-georgia-tech",
+      "retrieved_at": "2026-10-27T21:50:25.899Z",
+      "finding": "Official latest recap: BC399rushing/five rushingTDs, McKenzie9/17for101passing. Pick-six assisted49points and BC initially trailed10-0. Retained raw next-event identity/date/ISO2026-10-31T16:00:00Z atDuke independently checked;399yards is not projected to repeat."
+    },
+    {
+      "url": "https://goduke.com/news/2026/10/23/football-sheppard-throws-winning-touchdown-defense-shines-in-19-16-win-at-virginia",
+      "retrieved_at": "2026-10-27T21:50:25.899Z",
+      "finding": "Official latest recap/body and table: Duke allowed195Virginia rushing yards and held ball21:13; second-half defense four sacks/threepointsallowed. WinningTD was halfbackpass. Duke's pressure can disruptBC; run-defense matchup remains a plausible points mechanism."
+    }
+  ],
+  "uncertainty": "Low-maturity qualitative Beta; recent results are unadjusted. No exhaustive final availability or stadium-hour weather clearance. Material quarterback/protection/weather changes require reassessment. Actual compliant venue offer is unconfirmed. Public quote misses the cap. User placement window unknown; preserve one-to-two weekly trips, no extra trip implied.",
+  "decision_rule": "Away spread +7.5 or higher, never +7 or lower; minimum price -115. These fixed qualitative bounds limit the fee and preserve the specific margin thesis; not optimized fair-price estimates. DeclineDuke-7.5/+102 because separation is less preferred than a competitive rushing game. DeclineBC+215ML because taking points is better supported than requiring an upset. DeclineDuke-265ML: winner premium not established by a late trick-play victory. Over47.5/-115 has BC rushing/short-field paths but Duke pressure and BC limited passing oppose it; under47.5/-105 has those limitations but faces rushing explosives/nonoffensive scores. Neither total preferred. No supported offered derivative or parlay preferred; no duplicated exposure or stake. No compliant offer by expiry means no bet.",
+  "source_qualification": "First-party FanDuel exact future next-game opponent/date block. One identified operator; unknown book update clock, retrieval recovered-by upper bound only. No consensus or Caesars/executable offer inferred. Observed spread fails the chosen limit. Full six standard-market quotes were read and are recorded in the decision rule.",
+  "market_reference": {
+    "game_id": "401858279",
+    "market": "SPREAD",
+    "selection": "away",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-10-31T16:00:00Z",
+    "kickoff_source_url": "https://bceagles.com/news/2026/10/24/football-eagles-power-past-georgia-tech",
+    "collection_start": "2026-10-27T21:50:25.899Z",
+    "collection_end": "2026-10-27T21:50:25.899Z",
+    "clock_semantics": "RESPONSE_RECOVERED_BY",
+    "quotes": [
+      {
+        "game_id": "401858279",
+        "market": "SPREAD",
+        "selection": "away",
+        "period": "PREGAME_FULL_GAME",
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/duke-blue-devils/odds",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/duke-blue-devils/odds",
+        "retrieved_at": "2026-10-27T21:50:25.899Z",
+        "offer_updated_at": null,
+        "line": 7.5,
+        "price": -124
+      }
+    ]
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "away",
+    "line": 7.5,
+    "minimum_price": -115,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-10-28T17:00:00Z",
+  "planning_cutoff_utc": "2026-10-28T18:00:00Z",
+  "cutoff_basis": "New Tuesday-afternoon evidence for a previously unqualified game expiresWednesdayOct28 13:00CT/18Z; reconcile noonCT/17Z. This short evidence validity is not user availability, a task, an extension of missedMondaycanonicaldeadline, or renewal of any of the four expired reviews. No automatic rollover.",
+  "execution_window": {
+    "start_utc": "2026-10-27T21:50:25.899Z",
+    "end_utc": "2026-10-28T18:00:00Z"
+  }
+}
