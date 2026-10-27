@@ -1,0 +1,73 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401858281",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-10-27T21:50:25.899Z",
+  "original_lineage_blob": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "home",
+  "rationale": "CONTROLLED BETA: Pittsburgh -6.5 or better at -115 or better. Pittsburgh's run prevention and passing output against a Georgia Tech defense that just allowed 399 rushing yards support a home separation path. Prefer limiting the lay to less than a touchdown because Pitt's injuries, quarterback execution and recent short-field concessions create substantial losing paths. Observed FanDuel -7.5/-108 DOES NOT meet this limit; no bet at that quote. Qualitative recommendation, not calculated EV, calibrated probability, stake or execution. Full-week canonical integration pending.",
+  "model_review": "Original Pitt-favorite direction (roughly12.3points) supports investigation, not a current calibrated margin or cover probability. Original numeric strings and archive remain unchanged; no model rerun/refit. Exact ORIGINAL strings: {\"pred_margin\":\"12.302429198272325\",\"pred_total\":\"49.296248982995\",\"pred_win\":\"0.7536399190438945\"}",
+  "material_sources": [
+    {
+      "url": "https://pittsburghpanthers.com/news/2026/10/26/football-game-week-pitt-hosts-georgia-tech-on-halloween-night",
+      "retrieved_at": "2026-10-27T21:50:25.899Z",
+      "finding": "Official current preview: Geriner268passing yards at Miami; Pitt allows65.0rushing yards/game and2.2/carry, descriptive unadjusted. Retained raw response's exact next-game identity and ISO kickoff2026-10-31T23:30:00Z independently checked; source artifact hash retained."
+    },
+    {
+      "url": "https://pittsburghpanthers.com/news/2026/10/26/football-narduzzi-notebook-field-position-and-execution-the-focus-as-pitt-turns-to-georgia-tech",
+      "retrieved_at": "2026-10-27T21:50:25.899Z",
+      "finding": "Narduzzi retainsGeriner, describes execution progress but missed downfield opportunities; both teams have injuries. Miami's34points on short fields complicate reading finalscore as pure defensive efficiency."
+    },
+    {
+      "url": "https://bceagles.com/news/2026/10/24/football-eagles-power-past-georgia-tech",
+      "retrieved_at": "2026-10-27T21:50:25.899Z",
+      "finding": "Opponent's official latest recap: GeorgiaTech allowed399rushing yards/five rushingTDs, while gaining101rushing. One matchup is not an adjusted next-game forecast."
+    }
+  ],
+  "uncertainty": "Low-maturity qualitative Beta; recent results are unadjusted. No exhaustive final availability or stadium-hour weather clearance. Material quarterback/protection/weather changes require reassessment. Actual compliant venue offer is unconfirmed. Public quote misses the cap. User placement window unknown; preserve one-to-two weekly trips, no extra trip implied.",
+  "decision_rule": "Home spread -6.5 or numerically higher (less points laid), never -7 or worse; minimum price -115. These fixed qualitative bounds limit the fee and preserve the specific margin thesis; not optimized fair-price estimates. Decline GeorgiaTech+7.5/-112 because its latest run-defense failure is a worse matchup fit than Pitt at a bounded lay. DeclineTech+230ML: outright upset is less supported than its already-risky cover. DeclinePitt-285ML: winner superiority does not justify the fee. Over53.5/-114 has passing and short-field mechanisms, opposed by Pitt's run defense and execution limitations; under53.5/-106 has defensive support but faces passing explosives and turnover fields. Neither total preferred. No supported offered derivative or parlay preferred; no duplicated exposure or stake. No compliant offer by expiry means no bet.",
+  "source_qualification": "First-party FanDuel exact future next-game opponent/date block. One identified operator; unknown book update clock, retrieval recovered-by upper bound only. No consensus or Caesars/executable offer inferred. Observed spread fails the chosen limit. Full six standard-market quotes were read and are recorded in the decision rule.",
+  "market_reference": {
+    "game_id": "401858281",
+    "market": "SPREAD",
+    "selection": "home",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-10-31T23:30:00Z",
+    "kickoff_source_url": "https://pittsburghpanthers.com/news/2026/10/26/football-game-week-pitt-hosts-georgia-tech-on-halloween-night",
+    "collection_start": "2026-10-27T21:50:25.899Z",
+    "collection_end": "2026-10-27T21:50:25.899Z",
+    "clock_semantics": "RESPONSE_RECOVERED_BY",
+    "quotes": [
+      {
+        "game_id": "401858281",
+        "market": "SPREAD",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/pittsburgh-panthers/odds",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/pittsburgh-panthers/odds",
+        "retrieved_at": "2026-10-27T21:50:25.899Z",
+        "offer_updated_at": null,
+        "line": -7.5,
+        "price": -108
+      }
+    ]
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "home",
+    "line": -6.5,
+    "minimum_price": -115,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-10-28T17:00:00Z",
+  "planning_cutoff_utc": "2026-10-28T18:00:00Z",
+  "cutoff_basis": "New Tuesday-afternoon evidence for a previously unqualified game expiresWednesdayOct28 13:00CT/18Z; reconcile noonCT/17Z. This short evidence validity is not user availability, a task, an extension of missedMondaycanonicaldeadline, or renewal of any of the four expired reviews. No automatic rollover.",
+  "execution_window": {
+    "start_utc": "2026-10-27T21:50:25.899Z",
+    "end_utc": "2026-10-28T18:00:00Z"
+  }
+}
