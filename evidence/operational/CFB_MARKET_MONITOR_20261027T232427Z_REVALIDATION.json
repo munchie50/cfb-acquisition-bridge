@@ -1,0 +1,4393 @@
+{
+  "schema": "CFB_WEEK9_REMAINING_WINDOW_REVALIDATION_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261027T232427Z",
+  "as_of_utc": "2026-10-27T23:29:57.325268Z",
+  "source": {
+    "path": "evidence/operational/CFB_CBS_WEEK9_TEXT_TABLE_CAPTURE_20261027T232504Z.md",
+    "commit": "e8cb7fb4d1e6defb55fdbd0827a5a4987bbc5d2a",
+    "blob": "e759c74863797dde9aa1d371613ffcba561fdeca",
+    "recovered_by": "2026-10-27T23:25:04.662Z"
+  },
+  "source_coverage": {
+    "governed_games": 56,
+    "matched_games": 56,
+    "source_team_rows": 112,
+    "future_games": 55,
+    "future_team_rows": 110,
+    "past_or_started_games": 1,
+    "missing_game_ids": []
+  },
+  "scope": "New complete market/lifecycle refresh plus explicit remaining-window value revalidation; priority primary materials re-read. Prior football sources retain original dates; no exhaustive final availability/weather clearance.",
+  "counts": {
+    "targets": 56,
+    "elapsed_saved_kickoff": 1,
+    "future_at_capture": 55,
+    "changed_price_pass_cases": 13,
+    "unchanged_six_price_pass_cases_reweighed": 25,
+    "active_conditionals_retained": 2,
+    "expired_unpublished_closed": 4,
+    "original_exclusions": 11
+  },
+  "cases": [
+    {
+      "game_id": "401871071",
+      "classification": "ELAPSED_SAVED_KICKOFF_RETAIN_PROSPECTIVE_PASS",
+      "new_decision": false,
+      "reason": "At/past original saved kickoff; no new odds/outcomes used for a late bet. Current pregame quote is cleared."
+    },
+    {
+      "game_id": "401871072",
+      "classification": "CHANGED_PRICE_CASE_RECONSIDERED_PASS",
+      "state": "PASS",
+      "current_value_judgement": "Sam Houston +5.5/-105 loses half a point versus +6 but has lighter juice. Missouri State -5.5/-105 is cheaper than the prior -115, and its -205 moneyline is cheaper than -225. Re-read both official previews: Belin/Myers passing improvement still faces Sam's completion/third-down prevention; Sam's weak rushing still opposes the dog. Missouri State's prior defensive collapse to Delaware is a counterweight to laying points, not an inference from tonight's game. At51.5, passing explosives and stalled/low-rush possessions still oppose choosing either total. All six branches remain declined on their football/price merits; no fresh final-starter/medical claim.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 5.5,
+            "price": -105,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Sam Houston+5.5/-110: pass-defense/points support is outweighed by the unpriced transition in opposing passing efficiency; decline."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -5.5,
+            "price": -105,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "MissouriState-5.5/-108: current Belin/Myers offense supports it, but SamHouston pass prevention and the lay-points requirement oppose; decline."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 188,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "SamHouston+180: away-win thesis too dependent on old model direction given present offensive inconsistency; decline."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -205,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "MissouriState-205: receiving strength does not justify paying this price against capable pass defense; decline."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 51.5,
+            "price": -110,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over50.5/-111: explosive receivers support scoring, opposed by SamHouston pass prevention and weak recent rushing; decline."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 51.5,
+            "price": -108,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under50.5/-105: defense/limited rushing support it, opposed by MissouriState receiving explosives; frozen50.4 offers little separation; decline."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401871058",
+      "classification": "EXPIRED_UNPUBLISHED_NO_REOPEN",
+      "new_decision": false,
+      "reason": "Original practical cutoff already elapsed; later displayed favorable price cannot revive the review."
+    },
+    {
+      "game_id": "401871057",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Jacksonville State -3 gains a half point relative to the prior3.5 lay, but NM State ground/run-defense strength still opposes buying the visitor margin. NM State +3.5 has slightly cheaper juice yet Jax rest, protection and mobile QB remain direct counterevidence. -160/+136 and49.5 totals do not overcome that possession/efficiency conflict. No derivative/parlay preferred.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -3.0,
+            "price": -118,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Jax-3.5/-104: rest, protection and dual-threat QB support; asking to clear more than3 against home ground/run defense is not preferred."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 3.5,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "NMState+3.5/-118: covers a three-point loss; home run defense and rushing support it, but Jax mobile QB/protection make this cushion insufficiently preferred at this juice."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -160,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Jax-162: credible win route, but substantial favorite premium without a separately earned win-price preference. PASS."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 136,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "NMState+134: plausible home upset and frozen sign alone do not outweigh Jax rest/protection. PASS."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 49.5,
+            "price": -108,
+            "side": "o",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "49.5/-110: rested Jax/mobileQB and frozen53.4 support inquiry; NMState rushing/possession and run defense oppose. No preferred over."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 49.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "49.5/-110: host rushing/control supports inquiry; protected mobileQB and explosive plays oppose. No preferred under."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401862812",
+      "classification": "EXPIRED_UNPUBLISHED_NO_REOPEN",
+      "new_decision": false,
+      "reason": "Original practical cutoff already elapsed; later displayed favorable price cannot revive the review."
+    },
+    {
+      "game_id": "401869963",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Troy +21 modestly improves the cushion while JMU still lays20.5; Troy's stalled attack and JMU's uneven finishing remain counterweights. JMU's cheaper -1429 winner price remains steep for this qualitative case. The 49.5 total retains the same possession-versus-explosives tension.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 21.0,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Troy+20.5/-105: defense/long drives protect cushion, but a200yard/47passing latest attack threatens repeated short possessions; decline."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -20.5,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "JMU-20.5/-115: superior offense supports favorite, but recent weak rushing/finishing and large margin requirement offset modest frozen support; decline."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 980,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Troy+980: low price is not enough against JMU's superior production with limited passing path; decline."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -1429,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "JMU-2000: winner preference alone does not justify steep price; decline."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 49.5,
+            "price": -108,
+            "side": "o",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over49.5/-105: JMU passing explosives support it, but Troy scoring/possession issues oppose; decline."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 49.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under49.5/-115: Troy struggles support it, but JMU explosives/short fields can dominate total; modest frozen separation does not earn this price; decline."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401862813",
+      "classification": "CHANGED_PRICE_CASE_RECONSIDERED_PASS",
+      "state": "PASS",
+      "current_value_judgement": "Charlotte +10.5 is now -114 rather than -111, worsening the dog price without removing its permissive-defense countercase. Tulane -10/-395 and46.5total cells are unchanged. Charlotte's prior passing/rushing improvement counters the favorite; Tulane turnovers counter buying its margin and winner. The six-way researched PASS remains applicable; no new medical clearance is inferred.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -10.0,
+            "price": -112,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Laying10.5 asks an erratic Tulane offense to separate; six turnovers undermine that margin case."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 10.5,
+            "price": -114,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Charlotte+10.5 has offensive improvement but its permissive defense leaves a large losing path."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -395,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Tulane-430 demands a high win probability the turnover-prone profile does not establish."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 333,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Charlotte+330 requires sustaining its breakout against a different defense; one close Temple win is insufficient."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 46.5,
+            "price": -110,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over46.5 benefits from Charlotte's defensive leakage, but Tulane's inconsistent conversion/turnovers can kill drives."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 46.5,
+            "price": -108,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under46.5 conflicts with Charlotte's passing/rushing breakout and short-field scoring risk."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401856844",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Baylor's +1.5 loses a point of protection; UCF -1.5 is easier than the earlier2.5 but Baylor pressure and defensive continuity remain substantive resistance. Moneylines +100/-118 do not independently resolve that matchup. Preserve side-specific over47.5/under48.5 rather than inventing one total; offensive improvement and defensive pressure still oppose each other.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 1.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Baylor+2.5/-110: defensive pressure supports points; UCFhome passing and recent finish offset; decline."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -1.5,
+            "price": -105,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "UCF-2.5/-110: Jenkins/home case supports it, but Baylor pressure and modest frozen separation oppose laying points; decline."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 100,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Baylor+106: interim leadership alone does not earn an upset value claim; UCFcompetitiveness opposes; decline."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -118,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "UCF-128: preferable winner direction is insufficient against Baylor pressure/defense; decline."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 47.5,
+            "price": -115,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over48.5/-110: productive passing supports it, but UCF39included15overtimepoints and Baylor scoring defense/pressure counter; decline."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 48.5,
+            "price": -115,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under48.5/-110: defense supports it, but current Jenkins/Freeman paths and transition uncertainty oppose; decline."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401866451",
+      "classification": "CHANGED_PRICE_CASE_RECONSIDERED_PASS",
+      "state": "PASS",
+      "current_value_judgement": "Kent over46.5 is two cents cheaper while Sacramento's +310 is shorter than +320 and under46.5 is slightly dearer. Those prices do not resolve Kent defensive leakage/penalty assistance versus Sacramento rushing/third-down weakness. Side numbers are unchanged. Decline both spreads, both moneylines and both totals with the earlier distinct opposing cases retained.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -9.5,
+            "price": -124,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Kent's passing supports favoritism but laying9.5 at-124 charges for separation despite defensive leakage and penalty assistance."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 10.0,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Sacramento gets10points but weak rushing/third-down efficiency does not establish a sustained response."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -385,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Kent-385 requires confidence beyond a penalty-assisted win against a different opponent."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 310,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Sacramento+320 requires a major offensive reversal to win outright; neither home field nor the frozen direction establishes it."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 46.5,
+            "price": -108,
+            "side": "o",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Kent passing and defensive concessions support over, but Sacramento's stalled drives can prevent contribution."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 46.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Sacramento's offensive limits support under, but Kent's passing touchdowns and short fields are direct counterevidence."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401856733",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Missouri -9.5 is supported by the explicitly dated Roberts rushing/defense case, but Arkansas's balanced438yards and clean Jackson passing counter the lay. Arkansas +10 has that production but pick-six assistance tempers it. -360/+300 and separate48.5over/49.5under remain declined; the Oct10 Missouri recap is not relabeled latest or Hardy clearance.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -9.5,
+            "price": -118,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Missouri-9.5 needs road separation against a balanced, protectedArkansas offense; Roberts' good dated performance does not establish that margin, especially with an extra fee."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 10.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Arkansas+10 gets a substantial buffer, but Missouri's run control/defensive ceiling can remove its main path; theVandy pick-six is not repeatable offensive production."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -360,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Missouri-360 asks a winner premium beyond a dated home defensive success against a different opponent."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 300,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Arkansas+300 needs an outright upset against Roberts and a strong defense; one balanced road win is insufficient."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 48.5,
+            "price": -122,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over48.5/-122 has Arkansas balance and Missouri rushing paths, but possession control and Missouri's stopping ceiling oppose paying that fee."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 49.5,
+            "price": -111,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under49.5 has stopping/control mechanisms but Arkansas251passing/187rushing and defensive-short-field variance oppose a mechanical under; one point of asymmetry is not a consensus."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401856735",
+      "classification": "CHANGED_PRICE_CASE_RECONSIDERED_PASS",
+      "state": "PASS",
+      "current_value_judgement": "Auburn over56.5 now has a lower hurdle than57.5 but costs -114 versus -110. Its seven sacks/12TFLallowed and weak rushing remain direct counterevidence to the over, while Ole Miss passing ceiling opposes the unchanged under57.5. Spreads and moneylines unchanged; the prior protection-versus-explosive-offense cases still decline both sides and both winners.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 13.5,
+            "price": -112,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Auburn+13.5 has Brown's dual-threat and schedule-strength support, but seven sacks and67netrushing expose a practical scoring/protection failure against another strong passing opponent."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -13.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "OleMiss-13 has a concrete passing matchup path, but two-score separation still needs repeatable finishing; Auburn's rushing quarterback and opponent-strength context oppose relying on raw averages."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 400,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Auburn+400 requires protection and defensive improvements sufficient for an outright upset, stronger than the already-risky cover case."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -490,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "OleMiss-490 demands a large winner premium without a calibrated current probability; passing volume alone does not earn it."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 56.5,
+            "price": -114,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over57.5 has Chambliss and Auburn defensive-concession mechanisms, but Auburn protection failure can suppress the required offensive contribution."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 57.5,
+            "price": -108,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under57.5 has Auburn offensive friction but OleMiss passing explosiveness and defensive/short-field scores oppose expecting drives to control the total."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401856736",
+      "classification": "CHANGED_PRICE_CASE_RECONSIDERED_PASS",
+      "state": "PASS",
+      "current_value_judgement": "South Carolina +4.5 loses a point versus +5.5 despite four cents cheaper juice; its +160 is shorter than +165. This weakens the dog expression while Sellers' dual threat continues to oppose Oklahoma's unchanged -4.5/-182. Under44.5 keeps the same number/price, with an opaque source-icon change only. Six declined branches retain their specific offensive/short-field countercases.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 4.5,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "SouthCarolina+4.5 cushions a competitive path, but escapingTennessee does not establish repeatable drive efficiency away."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -4.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Oklahoma-4.5 is beyond the frozen roughlytwo-point margin; its latest defense benefited from an opposingQB injury."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 160,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "SouthCarolina+164 asks its close-game escapes to become an outright away win against a balanced offense."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -182,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Oklahoma-200 charges a substantial premium without a defensible current win probability."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 44.5,
+            "price": -108,
+            "side": "o",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over44.5 has two mobile/productive offenses but late defensive plays and uneven drives make repeatability uncertain."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 44.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under44.5 opposes Sellers' dual-threat production and Oklahoma's balanced yardage; no adequate independent stopping case."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401856737",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Taylor's current official season-ending absence remains incorporated. It weakens the old near-pickem MSU forecast without automatically earning Texas -20. MSU +20.5 still needs offensive production; -1429/+900 outright and50.5 totals do not earn a selection from the injury alone. Texas's short-field/defensive scoring is not assumed to recur.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 20.5,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "MSU gets more than20points but loss ofTaylor materially removes a central offensive mechanism; frozen near-pickem alone cannot earn the dog."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -20.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Texas-20 requires major separation even if MSU is weakened; the qualitative injury adjustment is not a current20-plus-point forecast."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 900,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "MSU+950 requires an outright offensive reversal withoutTaylor against a different defense; unsupported."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -1429,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Texas-1429 charges near-certainty without calibrated current winner evidence; the injury does not justify any price."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 50.5,
+            "price": -112,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over50.5 needs Texas efficiency orMSU contribution; Taylor's loss weakens one source of sustained scoring."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 50.5,
+            "price": -105,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under50.5 has MSU offensive impairment but Texas explosives, defensive scores and short fields can lift scoring withoutMSU sustaining drives."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401856842",
+      "classification": "EXPIRED_UNPUBLISHED_NO_REOPEN",
+      "new_decision": false,
+      "reason": "Original practical cutoff already elapsed; later displayed favorable price cannot revive the review."
+    },
+    {
+      "game_id": "401856843",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "ASU +16.5 improves its cushion and BYU -16 increases the lay, but ASU quarterback injury/line churn still weakens dog scoring. BYU's double-overtime result cannot be used as ordinary pace. -714/+550 and48.5 totals leave those distinct personnel and scoring risks unresolved.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 16.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "ASU+15.5 benefits from Mack's159-yard/four-TD rushing game, but quarterback and protection disruption can prevent maintaining the cushion."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -16.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "BYU-15.5 is close to the original16.2margin; neither home field nor ASU injury alone earns a new probability of such separation."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 550,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "ASU+540 needs a much larger passing/protection improvement to win outright; rushing output alone does not earn it."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -714,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "BYU-800 asks for exceptional confidence despite a recent competitive loss and the opponent's rushing ceiling."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 48.5,
+            "price": -105,
+            "side": "o",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over49.5 has Mack and BYU scoring mechanisms, but ASU's unsettled quarterback/line can end drives; the56.8frozen value is not a refreshed forecast."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 48.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under49.5 benefits from disruption and excluding overtime, but it opposes ASU's demonstrated rushing explosives and BYU's scoring ability."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401856845",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Kansas +6 offers slightly more protection while TCU -5.5 is unchanged with worse juice. Kansas rushing and blocked-field-goal finish oppose mechanically backing the frozen TCU margin. The lower46.5 total makes under less attractive; TCU's372-yard passing and Kansas run success counter that under, while TCU defense tempers over. -210/+190 moneylines remain declined.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 6.0,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Kansas+5.5 has a rushing/competitive path but TCU's passing ceiling and defensive profile can break the cushion."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -5.5,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "TCU-5.5 is below the original roughly10.6-point margin, but the original is not refreshed for current finishing/roster conditions and the latest372passing yards did not produce a win."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 190,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Kansas+164 requires converting a narrow, special-teams-aided last win into an outright road upset."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -210,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "TCU-200 prices a favorite strongly without a calibrated current winner probability; passing volume is not enough."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 46.5,
+            "price": -112,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over49.5 has TCU passing/Kansas rushing routes but drive finishing has been uneven."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 46.5,
+            "price": -102,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under49.5 has close-game and frozen49.2context, but that small numerical difference is not an edge against current passing/rushing ceilings."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401856846",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "The current mixed-book display crosses the old favorite direction: K-State +1 and Colorado +1.5 are separate offers, never synthesized into a consensus. K-State's unsettled quarterback effectiveness still counters the original away margin; Colorado's 598 yards conceded counters taking its points or short outright price. -108/-105 moneylines and47.5 totals do not remove the specific offensive-versus-defensive conflict.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 1.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "K-State-2.5 needs reliable offensive personnel; the frozen large margin does not resolve the current quarterback change."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 1.5,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Colorado+2.5 offers little protection against a defense that conceded598yards; its first-half success alone is insufficient."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "K-State-134 is a shorter price but does not establish value under unresolved starter effectiveness."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -105,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Colorado+112 needs an outright win despite defensive collapse; the first-half lead is not a durable win rate."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 47.5,
+            "price": -108,
+            "side": "o",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over47.5 has Colorado defensive vulnerability, but K-State quarterback uncertainty and its strong pass defense create substantial friction."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 47.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under47.5 has quarterback/run-game reasons but faces Colorado's passing ceiling and turnover/short-field volatility."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401856847",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Oklahoma State -8.5 is easier than9.5, but its defensive concessions and halftime deficit still oppose projecting sustained separation. Iowa State +9 has less cushion and weak rushing/QB transition. Cheaper -330 favorite and +270 dog do not establish a preferred outright price. Separate57.5over/58.5under cells preserve the offensive-upside versus stalled-host tension.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -8.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "OklahomaState-9.5 requires carrying second-half dominance onto the road; Colorado's early scoring shows a margin-risk path."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 9.0,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "IowaState+9.5 gets substantial points but latest offensive dysfunction and quarterback change make a sustained response unearned."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -330,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "OklahomaState-375 is expensive for a team whose last game remained competitive at halftime."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 270,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "IowaState+290 is attractive only if its offense rebounds enough to win; no current evidence earns that jump."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 57.5,
+            "price": -114,
+            "side": "o",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over57.5 relies onIowaState contributing or repeatedOklahomaState explosiveness; the former just stalled badly."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 58.5,
+            "price": -120,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under57.5 hasIowaState offensive weakness but faces410-yard passing upside and game-state/short-field risk."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401856848",
+      "classification": "EXPIRED_UNPUBLISHED_NO_REOPEN",
+      "new_decision": false,
+      "reason": "Original practical cutoff already elapsed; later displayed favorable price cannot revive the review."
+    },
+    {
+      "game_id": "401858277",
+      "classification": "ORIGINAL_EXCLUSION_RETAINED",
+      "new_decision": false
+    },
+    {
+      "game_id": "401858278",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "SMU's six second-half touchdown drives support favorite upside, but transferring that to a full road9.5lay remains unjustified against Angeli/Miller production. Syracuse +10 has the opposite defensive risk. -357/+285 and58.5 totals retain the overtime/finishing caveats; no new value selection.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -9.5,
+            "price": -114,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "SMU's offensive ceiling supports the favorite but laying9.5 away requires repeating dominant finishing beyond one half."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 10.0,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Syracuse gets10points with a balanced offensive path, but its close escapes and kicking/defensive volatility make sustaining the cushion uncertain."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -357,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "SMU-357 asks a large winner premium; a dominant half does not establish that probability."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 285,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Syracuse+285 requires an upset against Jennings' passing ceiling, a stronger case than covering10points."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 58.5,
+            "price": -108,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Both offensive ceilings support over58.5, but first-half stalls, long drives and kicking failures can suppress finishing."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 58.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under58.5 has those finishing limits and a lower frozen total, but both current passing/rushing ceilings oppose a mechanical under."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401858279",
+      "classification": "UNCHANGED_ACTIVE_CONDITIONAL",
+      "new_immutable_review": false,
+      "quote_limit_result": "FAIL_PRICE_CAP",
+      "reason": "Pitt23:25source-7.5/-108 and BC+7.5/-124 still miss original caps. Original review/risk/limits/checkpoint/finalexpiry remain unchanged; no renewal, final medical clearance or execution."
+    },
+    {
+      "game_id": "401858280",
+      "classification": "ORIGINAL_EXCLUSION_RETAINED",
+      "new_decision": false
+    },
+    {
+      "game_id": "401858281",
+      "classification": "UNCHANGED_ACTIVE_CONDITIONAL",
+      "new_immutable_review": false,
+      "quote_limit_result": "FAIL_POINTS_CAP",
+      "reason": "Pitt23:25source-7.5/-108 and BC+7.5/-124 still miss original caps. Original review/risk/limits/checkpoint/finalexpiry remain unchanged; no renewal, final medical clearance or execution."
+    },
+    {
+      "game_id": "401858282",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Miami -14.5 needs separation beyond the old eight-point margin despite Mensah/Toney explosives; UNC +14.5 retains passing upside and defensive risk. -667/+500 and52.5 totals unchanged remain declined after short-field and overtime exclusions.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -14.5,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Miami's passing ceiling supports favoritism, but laying 14.5 exceeds the original roughly eight-point margin; short-field assistance limits extrapolation."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 14.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "UNC gets a large cushion and has passing production, but Miami's explosive efficiency and early defensive stops can break it."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -667,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Miami's expensive winner price is not justified by a passing showcase alone."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 500,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "UNC's passing production does not establish an outright win against Miami's two-way ceiling."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 52.5,
+            "price": -110,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Both passing attacks support points, but Miami's drive suppression and the removal of overtime points from the comparison temper the over."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 52.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "A total near the original forecast does not establish an under edge against current explosive receivers and short fields."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401858283",
+      "classification": "CHANGED_PRICE_CASE_RECONSIDERED_PASS",
+      "state": "PASS",
+      "current_value_judgement": "Stanford's +1150 is larger than +1100 but does not solve its pronounced road weakness. Louisville's under60.5 is two cents cheaper; recent passing/long-run ceiling still counters under, while stalled second-half offense counters over. Spreads and favorite moneyline unchanged. No branch is promoted from a small odds change.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 22.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Stanford+21.5 has a rushing/competitive path against recent defensive leakage, but poor road production and win/loss splits can erase this cushion."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -22.5,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Louisville-21.5 is only modestly below the23.5frozen margin; the latest defensive concessions and second-half stagnation do not earn that separation."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 1150,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Stanford+1100 requires a road offensive reversal beyond the evidence from one improved home performance."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -1818,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Louisville-2500 offers little reward relative to demonstrated defensive/drive-finishing volatility; no calibrated near-certainty."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 60.5,
+            "price": -108,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over61.5 has passing explosiveness and Louisville's462yards allowed, but Stanford road offense and a stagnant second-half example challenge sustained scoring."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 60.5,
+            "price": -108,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under61.5 has Stanford's low output in losses and Louisville defensive pressure, but big plays/short fields can defeat that narrow frozen-total comparison."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401858284",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Wake -12 is easier than the prior13.5 lay, but Virginia defensive resistance still counters extrapolating one267-yard/four-TD passing game. Virginia +12.5 loses protection and has offensive-line/scoring problems. Cheaper -500/+400 prices do not establish a preferred winner. Both49.5 totals remain exposed to Wake scoring ceiling versus host defensive control.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 12.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Virginia+13.5 gives substantial protection but missing personnel and repeated offensive finishing/protection problems weaken the frozen road-favorite case."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -12.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Wake-13.5/-122 demands a large margin and extra juice; its dominantCal result is unadjusted and Virginia just heldDuke to19."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 400,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Virginia+480 requires converting defensive resistance into enough offensive scoring to win away; recent finishing does not earn it."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -500,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Wake-690 is expensive despite favorable current matchup evidence; one dominant result does not establish the required win rate."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 49.5,
+            "price": -106,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over49.5 has Lopez's dual-threat attack and Virginia secondary absences, but Virginia's poor scoring contribution and Wake's defense oppose it."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 49.5,
+            "price": -111,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under49.5 has Virginia low output and recent defense, but Wake's explosive passing and short fields remain substantial opposing paths."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401858501",
+      "classification": "ORIGINAL_EXCLUSION_RETAINED",
+      "new_decision": false
+    },
+    {
+      "game_id": "401858502",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Wisconsin +3.5 gets protection but Iowa run suppression/protection counters its USC breakout. Iowa -3.5 at+100 improves price but its quarterback split and limited passing ceiling still resist a strong margin thesis. -160/+142 and36.5 totals keep two credible defenses against turnover/short-field scoring; frozen17-point margin is not refreshed.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 3.5,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Wisconsin+3.5 protects a close path but Iowa's run defense and protection profile are a materially different matchup from USC's collapse."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -3.5,
+            "price": 100,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Iowa-3.5 crosses a field goal against an improving defense with a split quarterback situation; frozen17does not establish current separation."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 142,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Wisconsin+142 requires an outright road advantage rather than merely competitiveness, without enough matchup-adjusted support."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -160,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Iowa-160 asks a winner premium despite uncertain offensive continuity and a pressure-capable opponent."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 36.5,
+            "price": -110,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over36.5 has a low hurdle and short-field paths, but both defenses have credible current stopping mechanisms."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 36.5,
+            "price": -108,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under36.5 has those mechanisms, but the low starting threshold and explosive/turnover fields leave limited cushion; original47.4also supplies opposing context."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401858503",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Illinois -2.5 benefits from recent defense/rushing, but Houser's broken hand and replacement offense remain material. Maryland +2.5 has receiving/ball-security strengths and interim transition risk. The -122/+114 moneylines and54.5 totals do not independently resolve those strengths; no coaching-bounce adjustment invented.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -2.5,
+            "price": -106,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Illinois-2.5 has defense/rushing support, butClayton's limited current experience andMaryland ball security/receiving oppose a reliable road margin."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 2.5,
+            "price": -105,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Maryland+2.5 gets little protection againstIllinois' run game/defense; coaching change and a home setting are not a positive point adjustment."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -122,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Illinois-122 is modest but still needs offensive continuity not established by one defensive success."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 114,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Maryland+114 needs a winner advantage over a strong recent defense, not merely a fresh coaching narrative."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 54.5,
+            "price": -110,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over54.5 has Durr/Laughery explosive mechanisms, butClayton transition andIllinois defensive strength can reduce sustained scoring."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 54.5,
+            "price": -105,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under54.5 has those limits butMaryland ball security/receiving andIllinois rushing explosives oppose assuming drives will repeatedly stall."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401858504",
+      "classification": "CHANGED_PRICE_CASE_RECONSIDERED_PASS",
+      "state": "PASS",
+      "current_value_judgement": "Washington +8 adds half a point but costs -111 rather than -106; Nebraska -7.5 is one cent dearer. Under50.5 gets a higher hurdle than49.5 at a worse -114 price. Nebraska home/third-down defense supports its case, but backfield limitations and Washington vertical/extended-play offense remain real margin and total counterweights. Moneylines and over49.5 unchanged. All six branches remain declined after assessing the actual tradeoffs, not by copying a static PASS list.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 8.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Washington+9.5/-105: vertical/mobile offense supports keeping close; Nebraska third-down prevention/home counters; decline."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -7.5,
+            "price": -112,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Nebraska-9.5/-115: frozen/context support, but backfield issues and extended-play defense demand weaken margin thesis; decline."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 255,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Washington+280: upset mechanism exists but Nebraska defensive/home support prevents preferred upset; decline."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -310,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Nebraska-360: likely-winner context does not justify price given backfield and opposing pass risks; decline."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 49.5,
+            "price": -110,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over48.5/-110: Washington explosives support scoring; Nebraska defense/backfield limitations oppose; decline."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 50.5,
+            "price": -114,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under48.5/-110: Nebraska defense supports it; Washington vertical/extended-play threats and slightlyhigher frozen total oppose; decline."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401858505",
+      "classification": "ORIGINAL_EXCLUSION_RETAINED",
+      "new_decision": false
+    },
+    {
+      "game_id": "401858506",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Purdue +7.5 is supported by Browne's passing but its488yards/15explosives allowed despite five forced turnovers limits the dog. Penn State -7.5 needs efficient separation against a rested opponent. -303/+255 and54.5 totals leave explosive offense versus turnover-conversion uncertainty unresolved.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 7.5,
+            "price": -105,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Purdue+7.5 gets a touchdown cushion and has prior conference wins, butPennState pressure/receiving weapons can create separation."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -7.5,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "PennState-7.5 needs more than a touchdown against a rested opponent with demonstrated scoring; the older20.6projection is not automatic value."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 255,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Purdue+255 requires an outright upset, not just repeating scoring from a home loss."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -303,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "PennState-303 asks a substantial premium without a current calibrated winner estimate; named playmakers alone do not earn it."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 54.5,
+            "price": -114,
+            "side": "o",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over54.5 has Purdue scoring andPennState receiving/short-field paths, but coverage and negative plays oppose dependable contribution."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 54.5,
+            "price": -105,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under54.5 has pressure/coverage mechanisms but both demonstrated scoring ceilings prevent treating sacks as automatic low output."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401858507",
+      "classification": "ORIGINAL_EXCLUSION_RETAINED",
+      "new_decision": false
+    },
+    {
+      "game_id": "401858508",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "UCLA -22.5 requires far more separation than the frozen11.5margin, despite strong run/third-down defense. Nevada +22.5 has a cushion but its San Jose defensive result does not transfer cleanly to UCLA. -1786/+1400 and44.5 totals remain declined after that different-opponent countercase.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 22.5,
+            "price": -106,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Nevada+22.5 gives a large cushion but its previous win against a weak passing attack does not establish sustaining drives againstUCLA's current defense."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -22.5,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "UCLA-22.5 requires roughlydouble the frozen margin; defensive strength and one245-yard rushing result do not prove that separation."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 1400,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Nevada+1400 needs a major offensive and defensive reversal at a higher matchup level, unsupported by aSanJose win."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -1786,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "UCLA-1786 asks near-certainty and offers little reward for upset variance; no calibrated support."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 44.5,
+            "price": -105,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over44.5 has UCLA rushing/short-field mechanisms but Nevada's scoring contribution against strong third-down defense is uncertain."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 44.5,
+            "price": -114,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under44.5 has defensive support but UCLA rushing explosives and defensive-created scores can push points without longNevada drives."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401858509",
+      "classification": "CHANGED_PRICE_CASE_RECONSIDERED_PASS",
+      "state": "PASS",
+      "current_value_judgement": "Ohio State -6.5 is one cent cheaper at -114; Sayin's established absence and the Fahey/St.Clair transition still counter the favorite. USC's run/protection failures oppose its unchanged +6.5/+205. Separate over51.5/under52.5 remain unchanged. No new selection from a one-cent improvement; no final starter or diagnosis inferred.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -6.5,
+            "price": -114,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "OhioState-6.5 has a clear pressure/matchup path but relying on its usual quarterback effectiveness after the injury is unearned."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 6.5,
+            "price": 100,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "USC+6.5 gives less than a touchdown against a strong defense; recent protection/run failure is a material losing path."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -245,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "OhioState-244 requires a confident current offensive/winner assessment not established by a bye alone."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 205,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "USC+202 needs a substantial offensive rebound to win outright; home return is insufficient."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 51.5,
+            "price": -112,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over51.5 has receiving talent/short fields but current quarterback effectiveness andUSC protection can suppress drives."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 52.5,
+            "price": -115,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under51.5 has those limits but explosive receivers and defensive-created fields oppose assuming another low-scoringUSC performance."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401860924",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Oregon State -5.5 is a smaller lay, but Fresno home defense and ball security still oppose buying the visitor margin. Fresno +6/-111 is less favorable than its earlier +6.5/even offer. At -205/+185 neither winner price clearly earns preference. The 57.5 total is higher, but Atkinson explosives counter the lower frozen total and improved defenses.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -5.5,
+            "price": -112,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "OregonState-6.5/-122: current explosive passing/protection supports it; Fresno home/ballsecurity/defense and price oppose; decline."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 6.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Fresno+6.5/+100: points/frozenhome direction support; Atkinson's current explosive production and OSUrest counter; decline."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -205,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "OregonState-260: real offensive strength does not earn this price against Fresno defense; decline."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 185,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Fresno+210: home upset/lowgiveaways are plausible; OSUpassing/protection make no preferred upset; decline."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 57.5,
+            "price": -110,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over56.5/-110: OSUexplosives support it; improved defenses and low giveaways oppose; decline."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 57.5,
+            "price": -105,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under56.5/-110: defensive/ballsecurity support; OSUexplosive production opposes modest lower frozen context; decline."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401862814",
+      "classification": "ORIGINAL_EXCLUSION_RETAINED",
+      "new_decision": false
+    },
+    {
+      "game_id": "401862815",
+      "classification": "ORIGINAL_EXCLUSION_RETAINED",
+      "new_decision": false
+    },
+    {
+      "game_id": "401862816",
+      "classification": "ORIGINAL_EXCLUSION_RETAINED",
+      "new_decision": false
+    },
+    {
+      "game_id": "401864529",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "New Mexico still lays14.5 at a worse price; its low-output win and pick-six assistance do not earn that separation. San Jose +15 adds protection but its91-yard passing game remains direct counterevidence. -667/+530 are not chosen from the final score. Separate over41.5/under42.5 offers retain run suppression versus short-field risks.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -14.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "NewMexico-14.5 nearly doubles the original roughlyseven-point projection; modest279-yard offense and a defensiveTD do not earn that separation."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 15.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "SanJose+14.5 gets a large cushion but91passing yards and weak scoring do not establish a credible sustained cover path."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -667,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "NewMexico-690 asks for near-certainty unsupported by its modest offense and close previous result."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 530,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "SanJose+480 requires an offensive reversal sufficient to beat a run-stopping defense; unsupported."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 41.5,
+            "price": -112,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over40.5 has a low hurdle but neither recent offense established dependable drive production."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 42.5,
+            "price": -115,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under40.5 competes with defensive/short-field scoring and a low starting total; one pick-six-assisted result is not a stable under rate."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401869846",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "App +5.5 offers protection after Singleton's productive return, but Georgia Southern pressure/run-TD prevention opposes transferring the overtime win. Georgia Southern -5 needs margin despite App passing success. -205/+176 and56.5 totals retain that defense-versus-passing tension and exclude overtime from regulation pace.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 5.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "App+5.5 has a passing competitiveness path, but only81rushing last game andSouthern pressure make sustained balance against this opponent unearned."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -5.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Southern-5 has pressure/run-defense support butSingleton's271-yard/twoTD response againstJMU opposes reliable separation."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 176,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "App+176 requires an outright road win against a pressure-capable defense, stronger than merely competing through the air."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -205,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Southern-205 asks a premium beyond sacks and home setting; App's demonstrated passing response is meaningful counterevidence."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 56.5,
+            "price": -108,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over56.5 has App passing and short-field routes, but limited rushing/pressure can suppress sustained offense; overtime points are excluded from pace inference."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 56.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under56.5 has those stopping paths, but App's passing touchdown ceiling and turnover fields oppose expecting repeated stalled drives."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401869944",
+      "classification": "ORIGINAL_EXCLUSION_RETAINED",
+      "new_decision": false
+    },
+    {
+      "game_id": "401871095",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Southern Miss -3.5 has a rushing route, but299passingyards allowed and pick-six assistance oppose assuming ordinary separation. ULM +3.5 still has low total offense despite its win. -162/+142 and separate55.5over/56.5under cells do not resolve rushing efficiency versus scoring contribution; raw149passing figure remains preserved.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -3.5,
+            "price": -105,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "USM-3.5 needs separation beyond a field goal despite passing-defense leakage and a pick-six-assisted last win."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 3.5,
+            "price": -112,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "ULM+3.5 gets cushion but its243-yard offense and late/nonoffensive scoring do not establish a sustained response toUSM's run game."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -162,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "USM-162 asks a premium without showing that rushing success will transfer against a different front while its defense holds up."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 142,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "ULM+142 requires an outright reversal beyond late scores in a low-output game."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 55.5,
+            "price": -112,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over55.5 hasUSM passing concessions and short-field mechanisms, butULM's limited sustained production can prevent contribution."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 56.5,
+            "price": -111,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under56.5 hasULM low output/run emphasis butUSM rushing explosives and nonoffensive scoring are direct opposing routes."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401871096",
+      "classification": "CHANGED_PRICE_CASE_RECONSIDERED_PASS",
+      "state": "PASS",
+      "current_value_judgement": "Marshall -2.5 is four cents cheaper and the -134 moneyline is shorter than -141. The quarterback medical-tent event and Old Dominion's new QB/left-tackle context still oppose treating that modest improvement as a preferred favorite. ODU's run-defense opposition and offensive disruption oppose its points/winner case.45.5totals unchanged; possession and mobile-QB/short-field routes remain in tension. Retain all six declined branches without final availability assurance.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -2.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Marshall-3.5 crosses a field goal with an uncertain starting-quarterback condition and a latest offense reliant on late rushing success."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 2.5,
+            "price": 100,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "ODU+3.5 gets home points but141yards and disruptive first starts make a rebound insufficiently established."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -134,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Marshall-162 requires winning despite an uncertain quarterback situation and limited latest scoring; no calibrated winner value."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 120,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "ODU+134 needs an outright offensive rebound, a stronger claim than the already-unearned cover case."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 45.5,
+            "price": -104,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over47.5 faces ODU's offensive collapse and Marshall defensive success; short fields alone do not earn it."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 45.5,
+            "price": -115,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under47.5 has clear low-output mechanisms but two unsettled offensive lineups and nonoffensive/short-field scoring can defeat it; no quantified edge at the price."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401871097",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Louisiana Tech -5.5 remains a road-margin demand against a different offense than disrupted ODU; South Alabama +5.5 still faces recent passing inefficiency. -205/+180 unchanged do not establish a new win-price preference.58.5 is higher than the previous57.5, helping an under case, but earlier South Alabama ceiling and short-field risk still oppose choosing it.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -5.5,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Louisiana Tech's control of a disrupted ODU lineup does not establish a road margin over a different offense."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 5.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "South Alabama gets a cushion but its latest passing inefficiency and Louisiana Tech's early-drive production threaten it."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -205,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Louisiana Tech's favorite price asks more than a defensive shutout against a newly configured opponent can establish."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 180,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "South Alabama's home setting does not establish enough offensive reliability for an outright upset."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 58.5,
+            "price": -108,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Early Louisiana Tech drives and South Alabama's prior ceiling support scoring, but latest passing inefficiency can suppress its contribution."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 58.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Recent low output supports an under path, but the earlier South Alabama ceiling and short fields oppose assuming a repeat of the Marshall result."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401859185",
+      "classification": "ORIGINAL_EXCLUSION_RETAINED",
+      "new_decision": false
+    },
+    {
+      "game_id": "401866452",
+      "classification": "CHANGED_PRICE_CASE_RECONSIDERED_PASS",
+      "state": "PASS",
+      "current_value_judgement": "WMU -13 is half a point easier than -13.5 but at -111 instead of -105; the points improvement does not remove595yards conceded and interception risk. Bowling Green +13.5 and its recent passing improvement remain opposed by short-field assistance. Under44.5 is one cent cheaper; both totals still balance defensive leakage against finishing. All six branches remain declined.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 13.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "BGSU+13.5 has passing competitiveness against a leaky defense, but its own rushing inefficiency/defensive concessions can erase the cushion."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -13.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "WMU-13.5 needs separation despite595yardsconceded and inefficient/intercepted passing; the large original projection alone is insufficient."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 430,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "BGSU+430 requires a stronger outright road reversal than the competitiveness shown in aBuffalo loss."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -526,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "WMU-526 is expensive given its latest defensive and turnover vulnerabilities; home field does not eliminate them."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 44.5,
+            "price": -108,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over44.5 has passing/defensive-leakage mechanisms, but inconsistent passing completion and stalled rushing can end drives."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 44.5,
+            "price": -111,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under44.5 has inefficiency support but both passing touchdown ceilings andWMU's595yardsallowed oppose automatically expecting few points."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401861966",
+      "classification": "CHANGED_PRICE_CASE_RECONSIDERED_PASS",
+      "state": "PASS",
+      "current_value_judgement": "Air Force -2.5 is now -108 versus -105, worsening the lay price; its -133 moneyline is unchanged. Fumbles, Medders injury and UConn rushing remain opposing mechanisms. UConn +2.5/+124 and53.5totals unchanged, preserving the small-cushion and possession-versus-explosives countercases. No new preferred branch.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 2.5,
+            "price": 100,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "UConn's recent rushing improvement supports competitiveness, but traveling to a different run-heavy matchup gives only a small points cushion."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -2.5,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Air Force's home and ground-game strengths face recent fumbles, an injured quarterback and a productive opposing ground attack; laying points is not earned."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 124,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "UConn's recent win does not establish an outright road advantage against this different possession matchup."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -133,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Air Force's favorite price is not justified by home record alone when its latest drives ended in turnovers."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 53.5,
+            "price": -108,
+            "side": "o",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Run explosives support scoring, but long possessions and the uncertain effectiveness of Air Force's quarterback oppose a reliable over."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 53.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Possession control supports fewer points, but both running attacks and turnover-created fields can defeat the under."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401856734",
+      "classification": "CHANGED_PRICE_CASE_RECONSIDERED_PASS",
+      "state": "PASS",
+      "current_value_judgement": "Florida's +360 is slightly larger than +350; Georgia's -455 is slightly dearer than -450. Neutral-site setting and the existing Florida QB/Georgia front countercases still matter more than those changes. Spreads and55.5totals unchanged. Retain independent six-branch PASS; neither a second upset nor heavy-favorite price is established by these descriptive facts.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 11.5,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Florida gets substantial points but its quarterback health/competition and inconsistent passing limit carrying the Texas upset into this matchup."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -11.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Georgia's two-way strength supports a favorite role, but a double-digit margin needs more than unadjusted averages against a recovering offense."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 360,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Florida's upside requires a second outright upset against a different defense; the Texas result alone is insufficient."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -455,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Georgia's expensive price is not earned simply by rankings, averages or historical rivalry wins."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 55.5,
+            "price": -111,
+            "side": "o",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Georgia scoring and Florida's potential rebound support points, but quarterback uncertainty and Georgia's front can stall Florida drives."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 55.5,
+            "price": -106,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Defensive strength supports lower scoring, but Georgia's offensive ceiling and Florida's rushing response oppose automatically selecting under."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401860910",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Colorado State +6.5 improves the earlier3.5 cushion substantially, but repeated defensive leakage means points alone do not earn the dog. Utah State -6.5 is harder after only285yards/17points last game. -220/+200 and63.5 totals do not outweigh CSU explosive scoring versus Utah State offensive friction; no automatic model-disagreement bet.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 6.5,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "ColoradoState+3.5 has an offensive path but severe defensive leakage can erase the points cushion."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -6.5,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "UtahState-3.5 requires offensive separation beyond its latest17-point/285-yard showing."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 200,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "ColoradoState+146 needs a sustained stop-making improvement to convert offensive output into a road win."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -220,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "UtahState-176 is a favorite price without a reliable current offensive superiority estimate."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 63.5,
+            "price": -108,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over64.5 followsColoradoState volatility but UtahState's latest offense may not supply enough possessions/finishes."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 63.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under64.5 has low recentUtahState output and lower frozen context, butColoradoState has repeatedly enabled explosive scoring; the gap alone is not an edge."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401864531",
+      "classification": "CHANGED_PRICE_CASE_RECONSIDERED_PASS",
+      "state": "PASS",
+      "current_value_judgement": "UTEP +24.5 is three cents cheaper; NDSU -24 now requires half a point more separation at four cents cheaper. UTEP protection/QB disruption and NDSU's own53-yard rushing result remain opposing side cases. Both moneylines and42.5totals unchanged. No value selection is earned from the cheaper dog or favorite juice alone.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 24.5,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "UTEP+24.5 offers a large cushion but11sacks and quarterback disruption make sustaining enough drives unearned."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -24.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "NDSU-23.5 needs large separation with a ground game that just managed53yards; UTEP's weakness does not establish any margin."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 1400,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "UTEP+1400 needs an unsupported major protection/scoring reversal on the road."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -2381,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "NDSU-2381 prices near-certainty despite recent offensive limits and turnover/defensive-score variance."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 42.5,
+            "price": -110,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over42.5 has NDSU short-field/scoring chances butUTEP's latest protection failure andNDSU rushing stall can suppress drive output."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 42.5,
+            "price": -108,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under42.5 has those limits but sacks/turnovers can create immediate scoring fields and a large-favorite blowout can breach a low total."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401871059",
+      "classification": "ORIGINAL_EXCLUSION_RETAINED",
+      "new_decision": false
+    },
+    {
+      "game_id": "401860909",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "WSU +2.5/+120 improves only a small outright price; SDSU -2.5/-138 still rests on one productive but interception-prone Saunders debut and56points conceded.48.5 totals balance passing/defensive leakage against fatigue and turnovers. No change to the researched value judgement.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 2.5,
+            "price": -102,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "WSU gets little margin protection against Saunders' passing ceiling; Boise's late surge is not a clean strength estimate."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -2.5,
+            "price": -114,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "SDSU's passing improvement supports winning, but its 56 points conceded and debut interceptions limit confidence in separation."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 120,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "WSU's competitiveness for three quarters against Boise does not establish an outright road winner edge."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -138,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "SDSU's modest favorite price still needs more than one high-yardage debut against a different opponent."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 48.5,
+            "price": -104,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Passing output and defensive leakage support points, but one shootout, repeated-week fatigue and turnovers make that output difficult to transfer."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 48.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "The original lower total is corroborative only; Saunders' explosives and defensive concessions are direct counterevidence to a mechanical under."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401860908",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "Boise -11 slightly reduces the earlier lay; its late three-touchdown separation after a tied third quarter still limits margin extrapolation. Texas State +11.5 retains a cushion but its latest250-yard attack and return touchdown weaken ordinary drive scoring. -441/+365 and separate63.5over/64.5under cells leave offensive volatility and rush suppression in opposition.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 11.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "TexasState+11.5 is tempting after a win but its latest offense was modest and a returnTD is not dependable protection."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -11.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Boise-11.5 is close to the original11.2-point margin and requires a late scoring surge to repeat against a different opponent."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 365,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "TexasState+365 requires overcoming Boise's run defense with an offense whose recent win leaned on a returnTD."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -441,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Boise-490 carries a large winner premium without an independently calibrated probability."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 63.5,
+            "price": -114,
+            "side": "o",
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Over63.5 needs sustained offense beyondTexasState's latest250yards and Boise's first-three-quarter stalemate."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 64.5,
+            "price": -115,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Under63.5 has recent low production support butTexasState's716-yard ceiling and Boise's explosive rushing scores remain material counterevidence."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    },
+    {
+      "game_id": "401864530",
+      "classification": "UNCHANGED_SIX_MARKET_PRICES_PRIOR_SPECIFIC_CASE_REWEIGHED",
+      "state": "PASS",
+      "current_value_judgement": "NIU +24.5 remains threatened by sustained-drive defensive failures and extra juice; UNLV -23.5 still requires far more than the original nine-point margin after late defensive collapse. -2222/+1300 and53.5over/54.5under remain declined for the previously reviewed distinct scoring and finishing risks.",
+      "prior_complete_review": {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+        "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee"
+      },
+      "material_scope": "Retained specific matchup/personnel findings reweighed against exact current prices; original source dates retained. This is not a new exhaustive medical/weather investigation.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 24.5,
+            "price": -118,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "NIU gets a large cushion but its sustained-drive defensive failures and extra juice weaken the cover case."
+        },
+        {
+          "branch": "home_spread",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": -23.5,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "UNLV needs far more separation than the original roughly nine-point margin; recent defensive collapse and turnover risk oppose laying nearly 24."
+        },
+        {
+          "branch": "away_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 1300,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "NIU needs an unsupported outright reversal against a rested dual-threat offense."
+        },
+        {
+          "branch": "home_moneyline",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -2222,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "UNLV's expensive moneyline demands confidence not established by its recent inability to finish a lead."
+        },
+        {
+          "branch": "over",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 53.5,
+            "price": -112,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "Both defenses have conceded scoring, but NIU's scoring contribution and UNLV's turnovers are unreliable."
+        },
+        {
+          "branch": "under",
+          "current_offer": {
+            "availability": "DISPLAYED",
+            "line": 54.5,
+            "price": -115,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          },
+          "decision": "DECLINE",
+          "prior_opposing_case": "The high hurdle helps an under case, but defensive leakage and Arnold's dual-threat explosives are substantial opposing mechanisms."
+        }
+      ],
+      "derivatives_and_parlays": "No newly supported offered alternate/team-total/parlay preferred; no fabricated prices, dependence, EV or stake."
+    }
+  ],
+  "market_changes": [
+    {
+      "game_id": "401871071",
+      "game": "Delaware @ Western Kentucky",
+      "temporal_status": "STARTED_OR_PAST_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 2.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 3.5,
+            "price": -120,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          }
+        },
+        {
+          "side": "away",
+          "market": "moneyline",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 110,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 137,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          }
+        },
+        {
+          "side": "home",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": -1.5,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": -2.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          }
+        },
+        {
+          "side": "home",
+          "market": "moneyline",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -122,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -134,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          }
+        },
+        {
+          "side": "home",
+          "market": "total",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 55.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 56.5,
+            "price": -111,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401871072",
+      "game": "Sam Houston @ Missouri State",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 6.0,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 5.5,
+            "price": -105,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          }
+        },
+        {
+          "side": "home",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": -5.5,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": -5.5,
+            "price": -105,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          }
+        },
+        {
+          "side": "home",
+          "market": "moneyline",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -225,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -205,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          }
+        },
+        {
+          "side": "home",
+          "market": "total",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 51.5,
+            "price": -105,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 51.5,
+            "price": -108,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401871058",
+      "game": "Kennesaw State @ Middle Tennessee",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "home",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": -2.5,
+            "price": -114,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": -2.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          }
+        },
+        {
+          "side": "home",
+          "market": "moneyline",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -138,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -137,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401862813",
+      "game": "Tulane @ Charlotte",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "home",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 10.5,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 10.5,
+            "price": -114,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401866451",
+      "game": "Kent State @ Sacramento State",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "total",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 46.5,
+            "price": -110,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 46.5,
+            "price": -108,
+            "side": "o",
+            "opaque_book_icon_id": "34"
+          }
+        },
+        {
+          "side": "home",
+          "market": "moneyline",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 320,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 310,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          }
+        },
+        {
+          "side": "home",
+          "market": "total",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 46.5,
+            "price": -108,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 46.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401856842",
+      "game": "Arizona @ Texas Tech",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 3.5,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 3.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          }
+        },
+        {
+          "side": "home",
+          "market": "moneyline",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -160,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -166,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401866452",
+      "game": "Bowling Green @ Western Michigan",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "home",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": -13.5,
+            "price": -105,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": -13.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          }
+        },
+        {
+          "side": "home",
+          "market": "total",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 44.5,
+            "price": -112,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 44.5,
+            "price": -111,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401856735",
+      "game": "Auburn @ Ole Miss",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "total",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 57.5,
+            "price": -110,
+            "side": "o",
+            "opaque_book_icon_id": "30"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 56.5,
+            "price": -114,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401871096",
+      "game": "Marshall @ Old Dominion",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": -2.5,
+            "price": -114,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": -2.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          }
+        },
+        {
+          "side": "away",
+          "market": "moneyline",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -141,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -134,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401861966",
+      "game": "UConn @ Air Force",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "home",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": -2.5,
+            "price": -105,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": -2.5,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401858283",
+      "game": "Stanford @ Louisville",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "moneyline",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 1100,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 1150,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          }
+        },
+        {
+          "side": "home",
+          "market": "total",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 60.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "30"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 60.5,
+            "price": -108,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401858505",
+      "game": "Northwestern @ Oregon",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 3.5,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 3.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          }
+        },
+        {
+          "side": "away",
+          "market": "total",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 47.5,
+            "price": -108,
+            "side": "o",
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 46.5,
+            "price": -110,
+            "side": "o",
+            "opaque_book_icon_id": "35"
+          }
+        },
+        {
+          "side": "home",
+          "market": "total",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 47.5,
+            "price": -110,
+            "side": "u",
+            "opaque_book_icon_id": "35"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 47.5,
+            "price": -114,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401858501",
+      "game": "Minnesota @ Indiana",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 20.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 20.5,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          }
+        },
+        {
+          "side": "home",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": -20.5,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": -20.5,
+            "price": -110,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401864531",
+      "game": "UTEP @ North Dakota State",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 24.5,
+            "price": -118,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 24.5,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          }
+        },
+        {
+          "side": "home",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": -23.5,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": -24.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401871059",
+      "game": "Florida International @ Liberty",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "home",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": -13.5,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": -13.5,
+            "price": -118,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          }
+        },
+        {
+          "side": "home",
+          "market": "moneyline",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -556,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -588,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401856734",
+      "game": "Florida @ Georgia",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "moneyline",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 350,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 360,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          }
+        },
+        {
+          "side": "home",
+          "market": "moneyline",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -450,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -455,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401856848",
+      "game": "Utah @ Cincinnati",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "moneyline",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -244,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": -256,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          }
+        },
+        {
+          "side": "home",
+          "market": "moneyline",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 210,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 215,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401856736",
+      "game": "South Carolina @ Oklahoma",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 5.5,
+            "price": -112,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 4.5,
+            "price": -108,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          }
+        },
+        {
+          "side": "away",
+          "market": "moneyline",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 165,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": null,
+            "price": 160,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401858509",
+      "game": "Ohio State @ USC",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": -6.5,
+            "price": -115,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": -6.5,
+            "price": -114,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          }
+        }
+      ]
+    },
+    {
+      "game_id": "401858504",
+      "game": "Washington @ Nebraska",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "changes": [
+        {
+          "side": "away",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 7.5,
+            "price": -106,
+            "side": null,
+            "opaque_book_icon_id": "35"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 8.0,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          }
+        },
+        {
+          "side": "home",
+          "market": "spread",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": -7.5,
+            "price": -111,
+            "side": null,
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": -7.5,
+            "price": -112,
+            "side": null,
+            "opaque_book_icon_id": "30"
+          }
+        },
+        {
+          "side": "home",
+          "market": "total",
+          "old": {
+            "availability": "DISPLAYED",
+            "line": 49.5,
+            "price": -108,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          },
+          "new": {
+            "availability": "DISPLAYED",
+            "line": 50.5,
+            "price": -114,
+            "side": "u",
+            "opaque_book_icon_id": "34"
+          }
+        }
+      ]
+    }
+  ],
+  "priority_material_revalidation": [
+    {
+      "url": "https://missouristatebears.com/news/2026/10/23/football-bears-back-home-tuesday-to-host-sam-houston",
+      "recovered_by_utc": "2026-10-27T23:29:57.325268Z",
+      "finding": "Belin and Myers receiving/passing evidence still supports home offense; official page retains7:00/7:05CT discrepancy. Not a new final starter report."
+    },
+    {
+      "url": "https://gobearkats.com/news/2026/10/25/football-game-8-preview-at-missouri-state",
+      "recovered_by_utc": "2026-10-27T23:29:57.325268Z",
+      "finding": "Re-read pass/third-down prevention, Locke explosive touchdowns and weak freshman rushing. Supports both sides of the prior value case rather than assuming one offense dominates."
+    },
+    {
+      "url": "https://pittsburghpanthers.com/news/2026/10/27/football-talkin-pitt-together-moving-forward",
+      "recovered_by_utc": "2026-10-27T23:29:57.325268Z",
+      "finding": "Players discuss tackling/assignment discipline against dual-threat GT offense and offensive-line penalties. These are ordinary execution risks, not evidence of restored health or guaranteed rebound."
+    },
+    {
+      "url": "https://pittsburghpanthers.com/news/2026/10/26/football-narduzzi-notebook-field-position-and-execution-the-focus-as-pitt-turns-to-georgia-tech",
+      "recovered_by_utc": "2026-10-27T23:29:57.325268Z",
+      "finding": "Geriner remains the quarterback; missed downfield opportunities and short fields remain counterevidence. Heintschel season absence is established historical context, not a new adverse change."
+    },
+    {
+      "url": "https://bceagles.com/news/2026/10/27/football-week-9-media-bc-at-duke",
+      "recovered_by_utc": "2026-10-27T23:29:57.325268Z",
+      "finding": "Current official notes support McKenzie/MacCormack rushing route and182.1passyardsallowed. Prior399-yard game is exceptional, not a repeat forecast. Video availability is not a medical clearance; no unverified secondary injury diagnosis is adopted."
+    }
+  ],
+  "sam_houston_six_branch_value_decision": "Retained researched PASS after independently re-reading both official previews and assessing current+5.5/-105 versus home-5.5/-105 and+188/-205.51.5over/under also declined. No venue/source failure caused PASS.",
+  "verification": {
+    "saved_view": {
+      "verdict": "PASS_SAVED_PUBLICATION_INTEGRITY_ONLY",
+      "publication_boundary_utc": "2026-10-27T23:29:57.325268Z",
+      "audit_as_of_utc": "2026-10-27T23:29:57.325268Z",
+      "integrity": {
+        "verdict": "PASS_CONDITIONAL_CANONICAL_PRESENTATION_ONLY",
+        "games": 56,
+        "sheet_blob": "dce62cd51555d35d96678f561e2b630c6fbcb976",
+        "scope": "typed canonical display only; no source truth/betting/natural-run acceptance"
+      },
+      "operational_exceptions": [],
+      "elapsed_current_quote_game_ids": [],
+      "overdue_open_decision_game_ids": [],
+      "current_operational_acceptance": "NOT_CERTIFIED",
+      "scope": "CODE_QA_SAVED_VIEW_ONLY_NOT_FRESH_MARKET_OR_RUN_PASS"
+    },
+    "original_invariant": {
+      "verdict": "PASS_WEEK9_ORIGINAL_FROZEN_FIELDS_ONLY",
+      "games": 56,
+      "predictions": 45,
+      "exclusions": 11,
+      "numeric_fields": 135,
+      "scope": "original fields only, not market/review/publication/betting acceptance"
+    },
+    "immutable_expired_and_elapsed_pass_rows_preserved": true,
+    "binding_method": "Exact prior remote immutable review bytes/real commit times, current repository tree blob equality and prior genuine full-checkout CI. Local load_review alone replaced in memory for missing checkout objects; new selected-publication CI still required."
+  },
+  "new_wager_or_execution": false,
+  "source_credits_used": 0,
+  "code_or_model_or_tasks_changed": false
+}
