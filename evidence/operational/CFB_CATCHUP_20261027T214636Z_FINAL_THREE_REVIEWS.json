@@ -1,0 +1,270 @@
+{
+  "schema": "CFB_CATCHUP_FINAL_THREE_RESEARCH_REVIEWS_V1",
+  "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+  "recorded_at_utc": "2026-10-27T21:59:32.989Z",
+  "parent_checkpoint": {
+    "path": "evidence/operational/CFB_CATCHUP_20261027T214636Z_DECISIONS_PROGRESS.json",
+    "commit": "ef3078971237bba01469a2a244e1c876e34089c5",
+    "blob": "17b3fb55d66228f0a5a25d03b676622fd1e6b4a5"
+  },
+  "new_material_sources": [
+    {
+      "url": "https://arkansasrazorbacks.com/stats/football/2026/07VU.pdf",
+      "finding": "Official Oct17dated gamebook; page1 individualstatstable visually inspected with page0date/scoring and page2team totals. No future result used.",
+      "response_recovered_by_utc": "2026-10-27T21:59:32.989Z",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND"
+    },
+    {
+      "url": "https://mutigers.com/news/2026/10/10/no-14-football-smothers-texas-aandm-27-6",
+      "finding": "Explicitly datedOct10offense/defense read; not asserted latest or current medical status.",
+      "response_recovered_by_utc": "2026-10-27T21:59:32.989Z",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND"
+    },
+    {
+      "url": "https://auburntigers.com/news/2026/10/24/auburns-falls-at-home-38-17-to-no-18-lsu",
+      "finding": "Latest official body read including protection failures and latebackup score; backup appearance not an injury diagnosis.",
+      "response_recovered_by_utc": "2026-10-27T21:59:32.989Z",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND"
+    },
+    {
+      "url": "https://olemisssports.com/news/2026/10/26/football-vs-auburn-first-look",
+      "finding": "Current official matchup/personnel preview read; unadjusted season context.",
+      "response_recovered_by_utc": "2026-10-27T21:59:32.989Z",
+      "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND"
+    }
+  ],
+  "new_pass_reviews": [
+    {
+      "game_id": "401871071",
+      "game": "Delaware @ Western Kentucky",
+      "state": "PASS",
+      "scope": "INDEPENDENT_SIX_BRANCH_RESEARCH_DECISION_NOT_YET_CANONICAL",
+      "recorded_at_utc": "2026-10-27T21:59:32.989Z",
+      "original_numeric_strings": {
+        "pred_margin": "-24.589309998726918",
+        "pred_total": "51.637319487270034",
+        "pred_win": "0.06732082932182616"
+      },
+      "retained_source_ids": [
+        "WKU",
+        "DELAWARE"
+      ],
+      "material_findings": "Re-read officialDelaware/WKU current previews: Minicucci's return produced225passing/fiveTDs;232teamrushing was more than double prior season high112. Delaware's passing/pressure strengths coexist with396.4yards and28.4points allowed/game, unadjusted. WKU's bye/home strength and177yardsallowedlastgame oppose extending one rebound; its own276yards/16points also limit a favorite case. Earlier experimentalDelawarewinnerlean remains historical; this later researchedPASS is a prospective value judgement, not a rewrite or a source-failure fallback.",
+      "market_reference": {
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "response_recovered_by_utc": "2026-10-27T21:57:11.714Z",
+        "qualification": "PUBLIC_TEXT_FIELD_LEVEL_MIXED_BOOK_FALLBACK_ONLY; book UNKNOWN, not consensus or venue; Final/Open excluded; asymmetric offers preserved"
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "observed_offer": [
+            2,
+            -111
+          ],
+          "decision": "DECLINE",
+          "reason": "Delaware+2 has a rebounding passer/run-game path, but the cushion is small against its season defensive concessions and a rested opponent; the prior24.6-point frozen opinion is not a current adjusted margin."
+        },
+        {
+          "branch": "home_spread",
+          "observed_offer": [
+            -1.5,
+            -112
+          ],
+          "decision": "DECLINE",
+          "reason": "WKU-1.5 needs only a small margin, but276yards/16points in its latest win do not establish enough offense againstDelaware's pressure and returned quarterback."
+        },
+        {
+          "branch": "away_moneyline",
+          "observed_offer": 110,
+          "decision": "DECLINE",
+          "reason": "Delaware+110 is more attractive than earlier retainednegativeML, but the one-game offensive reversal and poor defense do not establish a sufficiently reliable road winner edge."
+        },
+        {
+          "branch": "home_moneyline",
+          "observed_offer": -125,
+          "decision": "DECLINE",
+          "reason": "WKU-125 is a modest fee, but rest/home record alone does not establish winner value against Minicucci's passing ceiling."
+        },
+        {
+          "branch": "over",
+          "observed_offer": [
+            55.5,
+            -105
+          ],
+          "decision": "DECLINE",
+          "reason": "Over55.5 has Delaware passing and defensive-leakage paths, but WKU's modest recent offense/defensive improvement and uncertain transfer of232rushing oppose reliable scoring."
+        },
+        {
+          "branch": "under",
+          "observed_offer": [
+            55.5,
+            -110
+          ],
+          "decision": "DECLINE",
+          "reason": "Under55.5 has WKU last-game suppression support, but Delaware's returned passer and demonstrated rushing/short-field ceiling oppose assuming another16-3type game."
+        }
+      ],
+      "rationale": "No standard-market value selection earned after these opposing football cases. Not an access-failure PASS, forced quota or downgrade of an earned recommendation. No optimized price, EV, probability or stake claimed.",
+      "derivatives_and_parlays": "No supported offered derivative or parlay preferred; no invented prices or correlations.",
+      "uncertainty": "Descriptive unadjusted data; exhaustive medical/weather clearance not certified. Future material changes can justify prospective reconsideration before the existing practical cutoff; no limit chasing or deadline extension."
+    },
+    {
+      "game_id": "401856733",
+      "game": "Missouri @ Arkansas",
+      "state": "PASS",
+      "scope": "INDEPENDENT_SIX_BRANCH_RESEARCH_DECISION_NOT_YET_CANONICAL",
+      "recorded_at_utc": "2026-10-27T21:59:32.989Z",
+      "original_numeric_strings": {
+        "pred_margin": "-13.144660542665587",
+        "pred_total": "48.4571487693492",
+        "pred_win": "0.22032417143604363"
+      },
+      "retained_source_ids": [
+        "MIZZOU_REPORTED"
+      ],
+      "material_findings": "New officialArkansas Oct17Vanderbilt gamebook, visually checked:438yards (251passing/187rushing), Jackson21/31withzeroINT/sacks, three rushingTDs and a pick-six assisted31-21win. Missouri's explicitly datedOct10officialA&M recap showsRoberts222rushing, defense216yardsallowed andSimmons147passing/14of28. Do not substitute Hardy's old roster totals for current work or call thatOct10game the latest; his reported practice flag is not clearance.",
+      "market_reference": {
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "response_recovered_by_utc": "2026-10-27T21:49:25.286Z",
+        "qualification": "PUBLIC_TEXT_FIELD_LEVEL_MIXED_BOOK_FALLBACK_ONLY; book UNKNOWN, not consensus or venue; Final/Open excluded; asymmetric offers preserved"
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "observed_offer": [
+            -9.5,
+            -118
+          ],
+          "decision": "DECLINE",
+          "reason": "Missouri-9.5 needs road separation against a balanced, protectedArkansas offense; Roberts' good dated performance does not establish that margin, especially with an extra fee."
+        },
+        {
+          "branch": "home_spread",
+          "observed_offer": [
+            10,
+            -111
+          ],
+          "decision": "DECLINE",
+          "reason": "Arkansas+10 gets a substantial buffer, but Missouri's run control/defensive ceiling can remove its main path; theVandy pick-six is not repeatable offensive production."
+        },
+        {
+          "branch": "away_moneyline",
+          "observed_offer": -360,
+          "decision": "DECLINE",
+          "reason": "Missouri-360 asks a winner premium beyond a dated home defensive success against a different opponent."
+        },
+        {
+          "branch": "home_moneyline",
+          "observed_offer": 300,
+          "decision": "DECLINE",
+          "reason": "Arkansas+300 needs an outright upset against Roberts and a strong defense; one balanced road win is insufficient."
+        },
+        {
+          "branch": "over",
+          "observed_offer": [
+            48.5,
+            -122
+          ],
+          "decision": "DECLINE",
+          "reason": "Over48.5/-122 has Arkansas balance and Missouri rushing paths, but possession control and Missouri's stopping ceiling oppose paying that fee."
+        },
+        {
+          "branch": "under",
+          "observed_offer": [
+            49.5,
+            -111
+          ],
+          "decision": "DECLINE",
+          "reason": "Under49.5 has stopping/control mechanisms but Arkansas251passing/187rushing and defensive-short-field variance oppose a mechanical under; one point of asymmetry is not a consensus."
+        }
+      ],
+      "rationale": "No standard-market value selection earned after these opposing football cases. Not an access-failure PASS, forced quota or downgrade of an earned recommendation. No optimized price, EV, probability or stake claimed.",
+      "derivatives_and_parlays": "No supported offered derivative or parlay preferred; no invented prices or correlations.",
+      "uncertainty": "Descriptive unadjusted data; exhaustive medical/weather clearance not certified. Future material changes can justify prospective reconsideration before the existing practical cutoff; no limit chasing or deadline extension."
+    },
+    {
+      "game_id": "401856735",
+      "game": "Auburn @ Ole Miss",
+      "state": "PASS",
+      "scope": "INDEPENDENT_SIX_BRANCH_RESEARCH_DECISION_NOT_YET_CANONICAL",
+      "recorded_at_utc": "2026-10-27T21:59:32.989Z",
+      "original_numeric_strings": {
+        "pred_margin": "4.319371690827976",
+        "pred_total": "59.13033031639755",
+        "pred_win": "0.6322317619339572"
+      },
+      "retained_source_ids": [
+        "OLE_MISS"
+      ],
+      "material_findings": "OfficialAuburn LSU recap: seven sacks/12TFLallowed,67netrushing, Brown160passing; trailed31-10at halftime and late backupTD aided17points. No injury reason forTi'a appearance inferred. Current officialOleMiss preview confirmsChambliss1926seasonpassing/16TD and Brown's480rushing/sixscores. Strong opposition tempers Auburn aggregates, but current protection and explosive-pass concessions are concrete risks to the points thesis.",
+      "market_reference": {
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "response_recovered_by_utc": "2026-10-27T21:56:43.221Z",
+        "qualification": "PUBLIC_TEXT_FIELD_LEVEL_MIXED_BOOK_FALLBACK_ONLY; book UNKNOWN, not consensus or venue; Final/Open excluded; asymmetric offers preserved"
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "observed_offer": [
+            13.5,
+            -112
+          ],
+          "decision": "DECLINE",
+          "reason": "Auburn+13.5 has Brown's dual-threat and schedule-strength support, but seven sacks and67netrushing expose a practical scoring/protection failure against another strong passing opponent."
+        },
+        {
+          "branch": "home_spread",
+          "observed_offer": [
+            -13,
+            -111
+          ],
+          "decision": "DECLINE",
+          "reason": "OleMiss-13 has a concrete passing matchup path, but two-score separation still needs repeatable finishing; Auburn's rushing quarterback and opponent-strength context oppose relying on raw averages."
+        },
+        {
+          "branch": "away_moneyline",
+          "observed_offer": 400,
+          "decision": "DECLINE",
+          "reason": "Auburn+400 requires protection and defensive improvements sufficient for an outright upset, stronger than the already-risky cover case."
+        },
+        {
+          "branch": "home_moneyline",
+          "observed_offer": -490,
+          "decision": "DECLINE",
+          "reason": "OleMiss-490 demands a large winner premium without a calibrated current probability; passing volume alone does not earn it."
+        },
+        {
+          "branch": "over",
+          "observed_offer": [
+            57.5,
+            -110
+          ],
+          "decision": "DECLINE",
+          "reason": "Over57.5 has Chambliss and Auburn defensive-concession mechanisms, but Auburn protection failure can suppress the required offensive contribution."
+        },
+        {
+          "branch": "under",
+          "observed_offer": [
+            57.5,
+            -108
+          ],
+          "decision": "DECLINE",
+          "reason": "Under57.5 has Auburn offensive friction but OleMiss passing explosiveness and defensive/short-field scores oppose expecting drives to control the total."
+        }
+      ],
+      "rationale": "No standard-market value selection earned after these opposing football cases. Not an access-failure PASS, forced quota or downgrade of an earned recommendation. No optimized price, EV, probability or stake claimed.",
+      "derivatives_and_parlays": "No supported offered derivative or parlay preferred; no invented prices or correlations.",
+      "uncertainty": "Descriptive unadjusted data; exhaustive medical/weather clearance not certified. Future material changes can justify prospective reconsideration before the existing practical cutoff; no limit chasing or deadline extension."
+    }
+  ],
+  "cumulative_research_counts": {
+    "pass": 39,
+    "active_conditionals": 2,
+    "expired_noncanonical_conditionals": 4,
+    "unfinished_prediction_games": 0,
+    "original_exclusions": 11
+  },
+  "review_scope": "All45original-prediction games now have recorded research disposition, counting four expired prior reviews separately. Original11exclusions preserved. This is research completion, not live quote/canonical/publisher acceptance.",
+  "publication_status": "INCOMPLETE: four expired reviews never entered canonical history; existingWeek9closed-conditional retention requires original paired canonical boundary. No invented prior state, forcedPASS for thosefour or expiryrenewal."
+}
