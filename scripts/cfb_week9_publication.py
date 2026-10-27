@@ -140,11 +140,13 @@ def compile(market, decision, capture, lineage, cycle, as_of, recovered_by, deci
             row.setdefault('review_ref', None)
         gate.keys(row, ['game_id', 'state', 'reason', 'reconciliation_utc', 'planning_cutoff_utc',
                         'cutoff_authority', 'acceptable_number', 'execution_window'] + (['review_ref'] if conditional else []))
-        if row['state'] not in ('PASS', 'INCONCLUSIVE', 'CONDITIONAL'):
+        if row['state'] not in ('PASS', 'INCONCLUSIVE', 'CONDITIONAL', gate.EXPIRED_UNPUBLISHED):
             raise ValueError('Week9 cannot downgrade an earned unsupported richer decision')
         old = prior[4].get(row['game_id']) if prior else None
         retained = (old is not None and gate.closed_conditional(old, as_of)
                     and row == {k: v for k, v in old.items() if k not in ('state_recorded_at_utc', 'state_evidence')})
+        retained_expired = (old is not None and old['state']==gate.EXPIRED_UNPUBLISHED
+                            and row == {k:v for k,v in old.items() if k not in ('state_recorded_at_utc','state_evidence')})
         if row['state'] == 'CONDITIONAL' and not retained:
             # Independent qualification lives in the immutable review, never
             # in CBS display timing. Full shared validation still runs below.
@@ -161,7 +163,7 @@ def compile(market, decision, capture, lineage, cycle, as_of, recovered_by, deci
                     and kickoff_source.path.rstrip('/').lower().startswith('/college-football/odds')):
                 raise ValueError('CBS display alone cannot qualify conditional kickoff')
             source.update(kickoff_status='QUALIFIED', kickoff_source_url=reference['kickoff_source_url'])
-        origin = old if retained or (old is not None and old['state'] == row['state'] == 'PASS') else None
+        origin = old if retained or retained_expired or (old is not None and old['state'] == row['state'] == 'PASS') else None
         row.update(state_recorded_at_utc=origin['state_recorded_at_utc'] if origin else as_of,
                    state_evidence=origin['state_evidence'] if origin else cycle)
     def obj(schema, rs):
