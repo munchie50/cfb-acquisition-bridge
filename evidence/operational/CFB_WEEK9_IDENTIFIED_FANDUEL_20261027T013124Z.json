@@ -1,0 +1,222 @@
+{
+  "schema": "CFB_NAMED_BOOK_OBSERVATION_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261027T013124Z",
+  "recorded_at_utc": "2026-10-27T01:35:45.086Z",
+  "collection_start": "2026-10-27T01:31:24Z",
+  "collection_end": "2026-10-27T01:35:45.086Z",
+  "clock_semantics": "RESPONSE_RECOVERED_BY",
+  "scope": "FOUR_EXACT_FUTURE_FULL_GAME_FANDUEL_RETRIEVAL_ONLY_NOT_VENUE_OR_CONSENSUS",
+  "qualification": "Exact opponents/away-home, full-game Spread/Moneyline/Total and explicit 2026 next-game dates read from first-party FanDuel team pages. Book update time unknown; recovery upper bound does not date bookmaker updates or certify executability. JMU lower schedule heading says 2025 and is quarantined; the explicit next-game October29,2026 block independently matches official current JMU/Troy schedule. UCF header record conflicts with Baylor current record; record not used as a model or price identity. Prices recorded from exact next-game block, not championships or unrelated schedule rows.",
+  "games": [
+    {
+      "game_id": "401862812",
+      "away_team": "Florida Atlantic",
+      "home_team": "North Texas",
+      "source_url": "https://sportsbook.fanduel.com/teams/college-football/north-texas-mean-green/odds",
+      "kickoff_utc": "2026-10-29T23:30:00Z",
+      "web_ref": "turn3view2",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 13.5,
+          "price": -112
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "away",
+          "line": null,
+          "price": 390
+        },
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -13.5,
+          "price": -108
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "home",
+          "line": null,
+          "price": -530
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 76.5,
+          "price": -115
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 76.5,
+          "price": -105
+        }
+      ]
+    },
+    {
+      "game_id": "401869963",
+      "away_team": "Troy",
+      "home_team": "James Madison",
+      "source_url": "https://sportsbook.fanduel.com/teams/college-football/james-madison-dukes/odds",
+      "kickoff_utc": "2026-10-29T23:30:00Z",
+      "web_ref": "turn3view3",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 20.5,
+          "price": -105
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "away",
+          "line": null,
+          "price": 980
+        },
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -20.5,
+          "price": -115
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "home",
+          "line": null,
+          "price": -2000
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 49.5,
+          "price": -105
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 49.5,
+          "price": -115
+        }
+      ]
+    },
+    {
+      "game_id": "401856844",
+      "away_team": "Baylor",
+      "home_team": "UCF",
+      "source_url": "https://sportsbook.fanduel.com/teams/college-football/ucf-knights/odds",
+      "kickoff_utc": "2026-10-30T23:30:00Z",
+      "web_ref": "turn6view4",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 2.5,
+          "price": -110
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "away",
+          "line": null,
+          "price": 106
+        },
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -2.5,
+          "price": -110
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "home",
+          "line": null,
+          "price": -128
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 48.5,
+          "price": -110
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 48.5,
+          "price": -110
+        }
+      ]
+    },
+    {
+      "game_id": "401862813",
+      "away_team": "Tulane",
+      "home_team": "Charlotte",
+      "source_url": "https://sportsbook.fanduel.com/teams/college-football/tulane-green-wave/odds",
+      "kickoff_utc": "2026-10-30T23:00:00Z",
+      "web_ref": "turn7view1",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": -10.5,
+          "price": -105
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "away",
+          "line": null,
+          "price": -430
+        },
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 10.5,
+          "price": -115
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "home",
+          "line": null,
+          "price": 330
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 46.5,
+          "price": -114
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 46.5,
+          "price": -106
+        }
+      ]
+    }
+  ],
+  "excluded_routes": [
+    {
+      "source": "WKU FanDuel team page",
+      "result": "Exact next game; all six offers unavailable."
+    },
+    {
+      "source": "Missouri State and Delaware FanDuel team pages",
+      "result": "Tool inaccessible; no quotes."
+    },
+    {
+      "source": "Sam Houston FanDuel team page",
+      "result": "404; no quotes."
+    },
+    {
+      "source": "Charlotte FanDuel team page",
+      "result": "October17 Temple stale next-game block; reject for Tulane."
+    },
+    {
+      "source": "Kent State FanDuel team page",
+      "result": "October24 Akron stale block; reject for Sacramento."
+    },
+    {
+      "source": "ESPN Delaware game page",
+      "result": "Verification wall; no bypass."
+    }
+  ]
+}
