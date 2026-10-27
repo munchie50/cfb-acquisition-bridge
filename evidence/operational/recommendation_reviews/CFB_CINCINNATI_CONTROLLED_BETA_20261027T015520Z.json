@@ -1,0 +1,73 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401856848",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-10-27T02:15:33.971Z",
+  "original_lineage_blob": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "home",
+  "rationale": "CONTROLLED BETA: Cincinnati +6.5 or higher at -115 or better versus Utah, subject to actual offer and material-news recheck. Prefer a competitive home-game points cushion to requiring an upset. Balanced rushing/passing against TexasTech supports this mechanism; unchanged original projects a smaller Utah margin. Utah's run prevention and Dampier's dual-threat offense are substantial losing paths. Qualitative Beta, not calculated EV, calibrated cover probability or stake. Full-week canonical integration pending.",
+  "model_review": "Unchanged original FIRST_FROZEN exact strings: {\"pred_margin\":\"-2.677975269910328\",\"pred_total\":\"54.355401443385716\",\"pred_win\":\"0.44842329150992816\"}. RoughlyUtah2.7direction supports examining+6.5, not mechanical edge conversion. No rerun/refit/calibrated cover probability. Original archive hash independently verified and existing135-field invariant passed.",
+  "material_sources": [
+    {
+      "url": "https://gobearcats.com/news/2026/10/26/cincinnati-hosts-no-6-utah-on-halloween",
+      "retrieved_at": "2026-10-27T02:15:33.971Z",
+      "finding": "Current official preview: Cincinnati rushed252yards againstTexasTech; Tabb173on16carries, FrenchfourpassingTDs, defensefoursacks/threeturnovers. Season455.3totalyards/game and234.6rushing are unadjusted context. French's first interception ended175attempts withoutone. One upset/takeaways not assumed repeatable. Conflicting5-0versus4-0home summaries excluded."
+    },
+    {
+      "url": "https://utahutes.com/news/2026/10/26/football-no-6-utah-heads-east-to-face-cincinnati",
+      "retrieved_at": "2026-10-27T02:15:33.971Z",
+      "finding": "Official current opponent preview: Utah478.4yards/37.4points pergame,88.3rushyards/14.6points allowed, unadjusted. Dampier150rushing lastweek,68.7percentcompletion/15passingTD season. Run prevention can neutralizeCincinnati's foundation; rushing production can control possessions."
+    },
+    {
+      "url": "https://gobearcats.com/news/2026/10/19/cincinnati-footballs-week-9-matchup-vs-utah-set-for-345-pm-et-kickoff",
+      "retrieved_at": "2026-10-27T02:15:33.971Z",
+      "finding": "ExplicitSaturdayOct31 15:45ETatNippert is19:45Z beforeDSTchange; currentUtah13:45MTagrees. No future result used."
+    }
+  ],
+  "uncertainty": "Low-maturity qualitative Beta. Utah's run defense can remove Cincinnati's key mechanism; Dampier/Parker create explosive risk. Takeaway-heavy latest win/season output are unadjusted. No exhaustive final injury clearance or stadium-hour weather; two NWS point routes inaccessible, so no weather finding asserted. Material quarterback/protection/weather changes require reassessment. PublicFanDuel is not executableCaesars. Preserve one-to-two weeklytrips; no extra trip or assumed availability.",
+  "decision_rule": "HomeSPREAD+6.5orhigher at minimumprice-115; decline+6orlower orworsejuice. IdentifiedFanDuel+6.5/-110meets numericalcap, but no compliantvenueoffer established. Fixed qualitativebound preserves nearlyaTDofcushion andlimitsfee, not optimizedfairvalue. DeclineUtah-6.5/-110because separation is less preferred thancompetitivehomecase. DeclineCincinnati+198MLbecause covering is more defensible thanupset; declineUtah-245MLbecause superiority alone doesnotearnfee. Over56.5/-114hastwoefficientoffenses butstrongUtahrunprevention/possessionopposesit. Under56.5/-106hasdefensesupport butbalancedoffenses/turnoverfieldsopposeit. Neither total, alternate, teamtotal norparlay preferred; no duplicateexposure/stake. No compliantoffer byexpiry meansnobet.",
+  "source_qualification": "First-partyFanDuel exactUtahaway/Cincinnatihome nextgameOct31 19:45Z: Utah-6.5/-110ML-245; Cincinnati+6.5/-110ML+198;over56.5/-114under56.5/-106. Staleheaderrecordexcluded. Earlier sameoperator57.5/differentMLpreserved, notconsensusorbookupdatechronology. Response recovered-byupperboundonly; underlyingupdateunknown; noCaesars fabricated.",
+  "market_reference": {
+    "game_id": "401856848",
+    "market": "SPREAD",
+    "selection": "home",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-10-31T19:45:00Z",
+    "kickoff_source_url": "https://gobearcats.com/news/2026/10/19/cincinnati-footballs-week-9-matchup-vs-utah-set-for-345-pm-et-kickoff",
+    "collection_start": "2026-10-27T02:15:33.971Z",
+    "collection_end": "2026-10-27T02:15:33.971Z",
+    "clock_semantics": "RESPONSE_RECOVERED_BY",
+    "quotes": [
+      {
+        "game_id": "401856848",
+        "market": "SPREAD",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/cincinnati-bearcats/odds",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/cincinnati-bearcats/odds",
+        "retrieved_at": "2026-10-27T02:15:33.971Z",
+        "offer_updated_at": null,
+        "line": 6.5,
+        "price": -110
+      }
+    ]
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "home",
+    "line": 6.5,
+    "minimum_price": -115,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-10-27T17:00:00Z",
+  "planning_cutoff_utc": "2026-10-27T18:00:00Z",
+  "cutoff_basis": "ProspectiveMondayevening evidence expiresTuesdayOct27 13:00CT/18Z;reconcilenoonCT/17Z. Shortevidencewindow aheadSaturday alignsportfolio review, not usertrip or extensionofmissedMondaycanonicaldeadline. No automaticrollover.",
+  "execution_window": {
+    "start_utc": "2026-10-27T02:15:33.971Z",
+    "end_utc": "2026-10-27T18:00:00Z"
+  }
+}
