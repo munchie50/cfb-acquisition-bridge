@@ -1,0 +1,57 @@
+{
+  "schema": "CFB_MARKET_MONITOR_BOUNDED_READINESS_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261027T115654Z",
+  "as_of_utc": "2026-10-27T11:59:32.165Z",
+  "runtime": "PYTHON_3_12_14_AVAILABLE",
+  "source": {
+    "path": "evidence/operational/CFB_CBS_WEEK9_CURRENT_RESPONSE_20261027T115932Z.md",
+    "commit": "d1f1dfcd16fe749d18813ccc32abd0f4b45842c6",
+    "blob": "e8d92b9f8389ca4e5299fcd652e5a37ad7b90a07",
+    "games": 56,
+    "team_rows": 112,
+    "missing_game_ids": [],
+    "duplicates": 0,
+    "qualification": "FIELD_LEVEL_MIXED_BOOK_FALLBACK_ONLY",
+    "consensus": "CONSENSUS_UNAVAILABLE",
+    "caesars": "UNVERIFIED",
+    "executability": "UNVERIFIED"
+  },
+  "section_counts": {
+    "TUESDAY": 2,
+    "WEDNESDAY": 2,
+    "THURSDAY": 2,
+    "FRIDAY": 3,
+    "SATURDAY_MORNING": 11,
+    "SATURDAY_AFTERNOON": 22,
+    "SATURDAY_EVENING_NIGHT": 14,
+    "UNRESOLVED_KICKOFF": 0,
+    "sum": 56
+  },
+  "saved_partial_decisions": {
+    "conditional": 4,
+    "pass": 18,
+    "unfinished_prediction_games": 23,
+    "original_exclusions": 11,
+    "canonical": false
+  },
+  "canonical_readback": {
+    "market_blob": "02df1f08c249bc859760e13de38b0c160f0759a8",
+    "decision_blob": "5df8464b0b2372134939cf81d576e155d641113b",
+    "execution_blob": "1a938f42e9f03e723bd50348f8a78dbd8b7098e9",
+    "scorecard_blob": "1e8e0a9c3cd34c163c32f6782cdfccf30b9e13d8",
+    "selected_sheet_path": "evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-26_0707CT.md",
+    "selected_sheet_blob": "ca584134caae7b5e03cac9e1ada795a3db8243e2"
+  },
+  "conditional_status": [
+    {"game_id":"401862812","selection":"FAU +13.5","minimum_price":-115,"fresh_book":"FanDuel","fresh_line":13.5,"fresh_price":-104,"status":"NUMERIC_LIMIT_MET_CONDITIONAL_VENUE_UNVERIFIED"},
+    {"game_id":"401856848","selection":"Cincinnati +6.5","minimum_price":-115,"fresh_book":"DraftKings","fresh_line":6.5,"fresh_price":-105,"status":"NUMERIC_LIMIT_MET_CONDITIONAL_VENUE_UNVERIFIED"},
+    {"game_id":"401871058","selection":"Middle Tennessee moneyline","minimum_price":-140,"fresh_book":"DraftKings","fresh_line":null,"fresh_price":-142,"status":"PRICE_LIMIT_NOT_MET_NO_CHASE"},
+    {"game_id":"401856842","selection":"Arizona +4.5","minimum_price":-115,"fresh_book":"FanDuel","fresh_line":3.5,"fresh_price":-110,"status":"LINE_LIMIT_NOT_MET_NO_CHASE"}
+  ],
+  "reconciliation_utc": "2026-10-27T17:00:00Z",
+  "planning_cutoff_utc": "2026-10-27T18:00:00Z",
+  "tuesday_candidate": "NOT_YET_DUE_AT_2026-10-27T15:00:00Z",
+  "settlement": "NO_NEW_ESTABLISHED_WEEK9_EXECUTION_OR_FINAL",
+  "publication": "BLOCKED_INCOMPLETE_DECISION_PACKET",
+  "result": "RUN_INCOMPLETE"
+}
