@@ -1,0 +1,73 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401856842",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-10-27T02:06:36.631Z",
+  "original_lineage_blob": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "away",
+  "rationale": "CONTROLLED BETA: Arizona +4.5 or more at -115 or better against Texas Tech, contingent on the actual offered price and material-news recheck. Prefer the points to an outright upset: Arizona's current passing efficiency and run prevention support a competitive-game path, while the frozen slight away direction is corroborative context only. Tech's strong home performance and dangerous takeaway defense are meaningful losing paths. The observed FanDuel +4.5/-120 DOES NOT meet this price cap; no bet at -120. This is a qualitative price-conditional recommendation, not calculated EV, a calibrated cover probability or a stake. Canonical full-week integration remains pending.",
+  "model_review": "Unchanged original FIRST_FROZEN: {\"pred_margin\":\"-0.781300536738725\",\"pred_total\":\"51.61285943147785\",\"pred_win\":\"0.4906285969365313\"}. Exact original archive SHA256772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf was recovered and existing135-field display invariant executed in this run. Original slight away-favorite direction supports investigating the points; no spread probability or automatic model-to-price value conversion. No model rerun/refit/adjustment.",
+  "material_sources": [
+    {
+      "url": "https://arizonawildcats.com/news/2026/10/24/football-noah-fifita-throws-for-308-yards-and-2-tds-no-25-arizona-dominates-iowa-state-39-3",
+      "retrieved_at": "2026-10-27T02:06:36.631Z",
+      "finding": "Official hosted/AP latest recap read: Fifita27/34 for308yards/twoTD; Mizell eight catches/134yards. Arizona held IowaState to221yards/52rushing and stopped its ground attack. Opposing quarterback change and a home setting limit transfer to TexasTech;39-3is not a projected next margin or proof all players will be available."
+    },
+    {
+      "url": "https://texastech.com/news/2026/10/26/football-no-13-texas-tech-no-22-arizona-collide-saturday-for-top-25-thriller",
+      "retrieved_at": "2026-10-27T02:06:36.631Z",
+      "finding": "Official current Tech preview: both teams6-1; Tech comes off first loss, returns to a twelve-game home winning streak and has five defensive touchdowns in four games. Those returns are a real pressure/turnover risk, not assumed repeatable points. Independent explicitSaturdayOct31 11:00CDT kickoff matches16Z; historical2024series paragraphs excluded from current personnel inference."
+    },
+    {
+      "url": "https://forecast.weather.gov/MapClick.php?lat=33.58&lon=-101.85",
+      "retrieved_at": "2026-10-27T02:06:36.631Z",
+      "finding": "Explicit named NWSLubbockpoint33.57N101.86W updatedOct26 20:30CDT, validOct26-Nov2. Saturday20percent showers before13:00, partly sunny/high74F. Day-level forecast supplies no established weather veto; exact stadium-hour wind/conditions remain unconfirmed. Genericlocation-error chrome not used; named validpoint used."
+    }
+  ],
+  "uncertainty": "Low-maturity qualitative Beta. IowaState's offensive dysfunction and home game context limit extrapolating Arizona's latest defensive result. Tech home strength and turnover creation can defeat the points thesis. No final exhaustive injury clearance or exact stadium-hour weather; materially adverse quarterback/protection/weather news requires reassessment without demanding perfect certainty. This public -120 quote misses the -115 cap, and no executable compliant local quote is established. User's placement window is unknown; preserve one-to-two weekly trips and do not request an extra trip.",
+  "decision_rule": "AwaySPREAD +4.5orhigher, minimumprice-115 only; decline+4orlower and prices worse than-115. The fixed qualitative cap preserves a competitive-game thesis with more than a field goal of cushion while limiting the fee; it is not an optimized fair-price estimate. The observed+4.5/-120fails the cap. DeclineTech-4.5/-102 because earning separation is less preferred than Arizona keeping it close. DeclineArizona+146 because covering is more defensible than requiring an upset; declineTech-176 because winner direction alone does not establish value. Over54.5/-115has passing/turnover-scoring mechanisms but faces Arizona run prevention and repeatability limits; under54.5/-105has defensive/lowerfrozen context but faces explosive passing and short fields. Neither total preferred. No priced alternate, team total or parlay preferred; no duplicate exposure/stake. If no compliant offer by expiry, no bet. Any subsequent reconsideration must be prospective and preserve established limits/cutoff protections.",
+  "source_qualification": "First-party FanDuel exact Arizonaaway/Techhome next-game block at2026Oct31 16Z. Arizona+4.5/-120 andML+146;Tech-4.5/-102,ML-176;over54.5/-115/under54.5/-105. Arizona mirror independently agrees with earlierTech response; this is one operator, not two independent books. Unknown book-update clock; response-recovered-by upperbound only, not current venue or consensus. Earlier named-book observation record evidence/operational/CFB_MARKET_MONITOR_20261027T015520Z_IDENTIFIED_BENCHMARKS.json preserved unchanged. No quote is asserted compliant with chosen cap.",
+  "market_reference": {
+    "game_id": "401856842",
+    "market": "SPREAD",
+    "selection": "away",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-10-31T16:00:00Z",
+    "kickoff_source_url": "https://texastech.com/news/2026/10/26/football-no-13-texas-tech-no-22-arizona-collide-saturday-for-top-25-thriller",
+    "collection_start": "2026-10-27T02:03:02.055Z",
+    "collection_end": "2026-10-27T02:06:36.631Z",
+    "clock_semantics": "RESPONSE_RECOVERED_BY",
+    "quotes": [
+      {
+        "game_id": "401856842",
+        "market": "SPREAD",
+        "selection": "away",
+        "period": "PREGAME_FULL_GAME",
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/arizona-wildcats/odds",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/arizona-wildcats/odds",
+        "retrieved_at": "2026-10-27T02:06:36.631Z",
+        "offer_updated_at": null,
+        "line": 4.5,
+        "price": -120
+      }
+    ]
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "away",
+    "line": 4.5,
+    "minimum_price": -115,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-10-27T17:00:00Z",
+  "planning_cutoff_utc": "2026-10-27T18:00:00Z",
+  "cutoff_basis": "New prospective Monday-evening evidence expiresTuesdayOct27 13:00CT/18Z; reconcileTuesday12:00CT/17Z alongside the saved early portfolio cases. This bounds present evidence ahead of Saturday, not user availability, a new task, or extension of missedMonday18Zcanonicalreview. No automatic rollover; no extra casino trip implied.",
+  "execution_window": {
+    "start_utc": "2026-10-27T02:06:36.631Z",
+    "end_utc": "2026-10-27T18:00:00Z"
+  }
+}
