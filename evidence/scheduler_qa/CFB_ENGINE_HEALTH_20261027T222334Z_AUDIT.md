@@ -107,3 +107,12 @@ Blocker: the current manual producer cycle lacks recovery-index/current-selector
 Next safe action: allow the existing producer invocation to finish its serialized recovery-index handoff, run recovery-consumer preflight and selected-publication CI, and persist/read back its own terminal candidate and closure. Health must not replay, reconstruct, or dispatch that run. Future scheduled cycles proceed prospectively under the unchanged four-task topology.
 
 RUN_INCOMPLETE
+
+
+## Post-boundary concurrent producer correction — 2026-10-27T22:27:44.990Z
+
+During the serialized Health write, the in-flight producer committed current selection at `0a20ffdc28278ed4ab6c5f2988f85ecf53faa3c6` (2026-10-27T22:26:51Z). The complete Week 9 Hot Sheet is therefore now selected by the recovery frontier after a 251-pointer recovery preflight. This supersedes only the earlier audit sentence that selector reconciliation was still absent.
+
+Selected-publication workflow run `40594891746` was still `IN_PROGRESS` at the correction boundary, and the producer cycle still lacked its terminal candidate and separate RUN_CLOSURE. The Health result remains `RUN_INCOMPLETE`. Current service improvement is real, but producer terminal completion and passing selected-publication CI remain unproved at this boundary. Historical scheduled-cycle results and carried closure debt are unchanged.
+
+RUN_INCOMPLETE
