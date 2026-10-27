@@ -1,0 +1,302 @@
+{
+  "schema": "CFB_WEEK9_CATCHUP_DECISION_RESEARCH_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261027T013124Z",
+  "recorded_at_utc": "2026-10-27T01:40:15.487Z",
+  "scope": "SAVED_PROSPECTIVE_RESEARCH_NOT_PRIMARY_HOT_SHEET_OR_CANONICAL_PACKET",
+  "parents": [
+    {
+      "path": "evidence/operational/CFB_WEEK9_POPULATION_RESEARCH_20261026T225722Z.json",
+      "blob": "5ca0e153ce79978ae7c0823a21ba331f2b4ae395"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK9_QUALIFIED_EARLY_DECISIONS_20261026T234516Z.json",
+      "blob": "26221f0744055966d40db5b13cd4fba321976881"
+    }
+  ],
+  "counts": {
+    "weekly_population": 56,
+    "original_predictions": 45,
+    "original_exclusions": 11,
+    "combined_saved_conditional_reviews": 2,
+    "combined_saved_researched_passes": 6,
+    "prediction_games_still_incomplete": 37,
+    "new_complete_six_branch_reviews": 6
+  },
+  "conditional_row": {
+    "game_id": "401862812",
+    "state": "CONDITIONAL",
+    "state_recorded_at_utc": "2026-10-27T01:37:10.565269+00:00",
+    "reason": "CONTROLLED BETA: Florida Atlantic +13.5 or more, price -115 or better, against North Texas. FAU's established passing targets and multiple scoring routes support staying within two touchdowns, with current UNT defensive concessions providing a concrete competitive/backdoor path. Prefer the points to predicting an outright upset. UNT's explosive passing/rushing and FAU's poor defensive results are serious runaway risks, so this is a low-maturity qualitative choice with a fixed no-chase cap, not a calculated fair line, probability, EV or stake. Require a fresh actual venue quote meeting both limits and reassess materially adverse personnel/line/weather news. Full canonical Week9 integration remains pending.",
+    "cutoff_authority": "REVIEW_EVIDENCED",
+    "review_ref": {
+      "path": "evidence/operational/recommendation_reviews/CFB_FLORIDA_ATLANTIC_CONTROLLED_BETA_20261027T013124Z.json",
+      "commit": "6a3cda95cfb0ba40edfc7179172bdeda198d0bb5",
+      "blob": "9547eb01aad7d2272679de20c61c9c79c2b0f7c7"
+    },
+    "acceptable_number": {
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 13.5,
+      "minimum_price": -115,
+      "direction": "AT_LEAST"
+    },
+    "reconciliation_utc": "2026-10-27T17:00:00Z",
+    "planning_cutoff_utc": "2026-10-27T18:00:00Z",
+    "execution_window": {
+      "start_utc": "2026-10-27T01:36:35.614Z",
+      "end_utc": "2026-10-27T18:00:00Z"
+    }
+  },
+  "new_passes": [
+    {
+      "game_id": "401871072",
+      "game": "Sam Houston @ Missouri State",
+      "research_disposition": "PASS_RESEARCHED_PROSPECTIVE_NOT_CANONICALLY_INTEGRATED",
+      "recorded_at_utc": "2026-10-27T01:39:29.814Z",
+      "rationale": "Sam Houston's points/pass defense and the frozen away direction oppose paying for Missouri State; Belin's recent efficient passing to Myers opposes treating the old model's large away margin as a current advantage. No side or total has a sufficiently preferred actionable case. This is a researched no-bet choice at the observed main-market numbers; market access failure is not the reason.",
+      "original_numeric_strings": {
+        "pred_margin": "-10.06432554167998",
+        "pred_total": "50.42067811462986",
+        "pred_win": "0.25305849065417035"
+      },
+      "market_dispositions": {
+        "AWAY_SPREAD": "Sam Houston+5.5/-110: pass-defense/points support is outweighed by the unpriced transition in opposing passing efficiency; decline.",
+        "HOME_SPREAD": "MissouriState-5.5/-108: current Belin/Myers offense supports it, but SamHouston pass prevention and the lay-points requirement oppose; decline.",
+        "AWAY_MONEYLINE": "SamHouston+180: away-win thesis too dependent on old model direction given present offensive inconsistency; decline.",
+        "HOME_MONEYLINE": "MissouriState-205: receiving strength does not justify paying this price against capable pass defense; decline.",
+        "OVER": "Over50.5/-111: explosive receivers support scoring, opposed by SamHouston pass prevention and weak recent rushing; decline.",
+        "UNDER": "Under50.5/-105: defense/limited rushing support it, opposed by MissouriState receiving explosives; frozen50.4 offers little separation; decline."
+      },
+      "material_sources": [
+        {
+          "url": "https://gobearkats.com/news/2026/10/25/football-game-8-preview-at-missouri-state",
+          "retrieved_at": "2026-10-27T01:39:29.814Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND"
+        },
+        {
+          "url": "https://missouristatebears.com/news/2026/10/23/football-bears-back-home-tuesday-to-host-sam-houston",
+          "retrieved_at": "2026-10-27T01:39:29.814Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND"
+        }
+      ],
+      "material_assessment": "SamHouston official preview adds third-down prevention and114yards/29carries across its freshman's last three games. MissouriState preview identifies Belin's two starts,54/74 for637yards/fourTD, and Myers explosive receiving. Descriptive schedule-mix statistics, not adjusted new forecasts.7:00/7:05CT minute conflict remains; use neither to extend a cutoff.",
+      "acceptable_number": null,
+      "practical_execution_cutoff_utc": null,
+      "reconsideration": "A genuinely changed material/price case may earn a new prospective review. No backdated reconciliation, expiry extension, claim of negative EV or placed wager."
+    },
+    {
+      "game_id": "401869963",
+      "game": "Troy @ James Madison",
+      "research_disposition": "PASS_RESEARCHED_PROSPECTIVE_NOT_CANONICALLY_INTEGRATED",
+      "recorded_at_utc": "2026-10-27T01:39:29.814Z",
+      "rationale": "JMU remains the more plausible winner, but the small frozen margin-versus-market difference does not earn laying20.5 at-115. Troy's stalled attack makes both an upset and backing the points unattractive; its defense and possession-heavy drives resist an easy blowout. Neither total is preferred after weighing those mechanisms.",
+      "original_numeric_strings": {
+        "pred_margin": "22.59239737183265",
+        "pred_total": "48.29148250510016",
+        "pred_win": "0.9130829522301803"
+      },
+      "market_dispositions": {
+        "AWAY_SPREAD": "Troy+20.5/-105: defense/long drives protect cushion, but a200yard/47passing latest attack threatens repeated short possessions; decline.",
+        "HOME_SPREAD": "JMU-20.5/-115: superior offense supports favorite, but recent weak rushing/finishing and large margin requirement offset modest frozen support; decline.",
+        "AWAY_MONEYLINE": "Troy+980: low price is not enough against JMU's superior production with limited passing path; decline.",
+        "HOME_MONEYLINE": "JMU-2000: winner preference alone does not justify steep price; decline.",
+        "OVER": "Over49.5/-105: JMU passing explosives support it, but Troy scoring/possession issues oppose; decline.",
+        "UNDER": "Under49.5/-115: Troy struggles support it, but JMU explosives/short fields can dominate total; modest frozen separation does not earn this price; decline."
+      },
+      "material_sources": [
+        {
+          "url": "https://troytrojans.com/news/2026/10/24/football-troy-falls-to-ulm",
+          "retrieved_at": "2026-10-27T01:39:29.814Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND"
+        },
+        {
+          "url": "https://jmusports.com/news/2026/10/23/football-dukes-fall-to-app-state-in-overtime",
+          "retrieved_at": "2026-10-27T01:39:29.814Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND"
+        }
+      ],
+      "material_assessment": "Troy used Kilcrease and Crowder; long opening possession and later stalls, not a clean47yard starter forecast. ULM's last score was a fumbled lateral returned in endzone, not an ordinary offensive touchdown. JMU used Coleman/Evans, gained423yards but92rushing and lost in overtime. No final starter/injury status inferred.",
+      "acceptable_number": null,
+      "practical_execution_cutoff_utc": null,
+      "reconsideration": "A genuinely changed material/price case may earn a new prospective review. No backdated reconciliation, expiry extension, claim of negative EV or placed wager."
+    },
+    {
+      "game_id": "401856844",
+      "game": "Baylor @ UCF",
+      "research_disposition": "PASS_RESEARCHED_PROSPECTIVE_NOT_CANONICALLY_INTEGRATED",
+      "recorded_at_utc": "2026-10-27T01:39:29.814Z",
+      "rationale": "Baylor's current pressure/defensive continuity under its former coordinator oppose a UCF favorite despite Jenkins' credible improvement. UCF's response against BYU opposes backing Baylor outright or treating a coaching dismissal as automatic decline. Neither small side, moneyline nor48.5 total has a sufficiently preferred case; researched PASS.",
+      "original_numeric_strings": {
+        "pred_margin": "4.539985769818523",
+        "pred_total": "51.51071646091736",
+        "pred_win": "0.6122139916103446"
+      },
+      "market_dispositions": {
+        "AWAY_SPREAD": "Baylor+2.5/-110: defensive pressure supports points; UCFhome passing and recent finish offset; decline.",
+        "HOME_SPREAD": "UCF-2.5/-110: Jenkins/home case supports it, but Baylor pressure and modest frozen separation oppose laying points; decline.",
+        "AWAY_MONEYLINE": "Baylor+106: interim leadership alone does not earn an upset value claim; UCFcompetitiveness opposes; decline.",
+        "HOME_MONEYLINE": "UCF-128: preferable winner direction is insufficient against Baylor pressure/defense; decline.",
+        "OVER": "Over48.5/-110: productive passing supports it, but UCF39included15overtimepoints and Baylor scoring defense/pressure counter; decline.",
+        "UNDER": "Under48.5/-110: defense supports it, but current Jenkins/Freeman paths and transition uncertainty oppose; decline."
+      },
+      "material_sources": [
+        {
+          "url": "https://baylorbears.com/news/2026/10/25/football-fb-continues-road-swing-at-ucf-on-friday-night",
+          "retrieved_at": "2026-10-27T01:39:29.814Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND"
+        },
+        {
+          "url": "https://ucfknights.com/news/2026/10/24/ucf-stuns-no-2-byu-in-overtime-victory-39-31",
+          "retrieved_at": "2026-10-27T01:39:29.814Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND"
+        }
+      ],
+      "material_assessment": "Klanderman was already coordinator; dismissal does not erase defense or prove a motivational uplift. Current Baylor recap describes Lagway, while Robertson references belong to2025historical section and are quarantined from current starter inference. Jenkins293passing/fourTD/no turnovers came in double overtime. Earlier kickoff discrepancy remains preserved; this PASS creates no cutoff.",
+      "acceptable_number": null,
+      "practical_execution_cutoff_utc": null,
+      "reconsideration": "A genuinely changed material/price case may earn a new prospective review. No backdated reconciliation, expiry extension, claim of negative EV or placed wager."
+    },
+    {
+      "game_id": "401858504",
+      "game": "Washington @ Nebraska",
+      "research_disposition": "PASS_RESEARCHED_PROSPECTIVE_NOT_CANONICALLY_INTEGRATED",
+      "recorded_at_utc": "2026-10-27T01:39:29.814Z",
+      "rationale": "Nebraska's home/third-down defense and frozen direction support the favorite; Washington's vertical/extended-play offense and Nebraska running-back limitations oppose buying a near-double-digit margin. Neither winner price nor48.5 total is sufficiently preferred. This is a substantive no-bet judgement with ordinary personnel uncertainty, not a demand for complete future certainty.",
+      "original_numeric_strings": {
+        "pred_margin": "12.685528847014263",
+        "pred_total": "50.616231734845755",
+        "pred_win": "0.7722918506128544"
+      },
+      "market_dispositions": {
+        "AWAY_SPREAD": "Washington+9.5/-105: vertical/mobile offense supports keeping close; Nebraska third-down prevention/home counters; decline.",
+        "HOME_SPREAD": "Nebraska-9.5/-115: frozen/context support, but backfield issues and extended-play defense demand weaken margin thesis; decline.",
+        "AWAY_MONEYLINE": "Washington+280: upset mechanism exists but Nebraska defensive/home support prevents preferred upset; decline.",
+        "HOME_MONEYLINE": "Nebraska-360: likely-winner context does not justify price given backfield and opposing pass risks; decline.",
+        "OVER": "Over48.5/-110: Washington explosives support scoring; Nebraska defense/backfield limitations oppose; decline.",
+        "UNDER": "Under48.5/-110: Nebraska defense supports it; Washington vertical/extended-play threats and slightlyhigher frozen total oppose; decline."
+      },
+      "material_sources": [
+        {
+          "url": "https://huskers.com/news/2026/10/26/rhule-talks-injuries-previews-washington-game",
+          "retrieved_at": "2026-10-27T01:39:29.814Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND"
+        },
+        {
+          "url": "https://huskers.com/news/2026/10/26/huskers-return-home-to-host-washington",
+          "retrieved_at": "2026-10-27T01:39:29.814Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND"
+        }
+      ],
+      "material_assessment": "Rhule identifies Nelson ankle and multiple backfield injuries, not final absences. Both Washington quarterbacks can extend plays; his statement that starter may not be known until first snap does not authorize deferring the user's decision until kickoff. Both teams had byes per retained official preview; no one-sided rest benefit.",
+      "acceptable_number": null,
+      "practical_execution_cutoff_utc": null,
+      "reconsideration": "A genuinely changed material/price case may earn a new prospective review. No backdated reconciliation, expiry extension, claim of negative EV or placed wager."
+    },
+    {
+      "game_id": "401860924",
+      "game": "Oregon State @ Fresno State",
+      "research_disposition": "PASS_RESEARCHED_PROSPECTIVE_NOT_CANONICALLY_INTEGRATED",
+      "recorded_at_utc": "2026-10-27T01:39:29.814Z",
+      "rationale": "Fresno's home/ball-security/defense and frozen home direction oppose an expensive OregonState favorite; current Atkinson explosives, protection and improved defense oppose mechanically taking a large model disagreement. With credible paths on both sides and neither total preferred, PASS at these reviewed prices.",
+      "original_numeric_strings": {
+        "pred_margin": "4.265824312937047",
+        "pred_total": "53.27358185300018",
+        "pred_win": "0.5758261080522452"
+      },
+      "market_dispositions": {
+        "AWAY_SPREAD": "OregonState-6.5/-122: current explosive passing/protection supports it; Fresno home/ballsecurity/defense and price oppose; decline.",
+        "HOME_SPREAD": "Fresno+6.5/+100: points/frozenhome direction support; Atkinson's current explosive production and OSUrest counter; decline.",
+        "AWAY_MONEYLINE": "OregonState-260: real offensive strength does not earn this price against Fresno defense; decline.",
+        "HOME_MONEYLINE": "Fresno+210: home upset/lowgiveaways are plausible; OSUpassing/protection make no preferred upset; decline.",
+        "OVER": "Over56.5/-110: OSUexplosives support it; improved defenses and low giveaways oppose; decline.",
+        "UNDER": "Under56.5/-110: defensive/ballsecurity support; OSUexplosive production opposes modest lower frozen context; decline."
+      },
+      "material_sources": [
+        {
+          "url": "https://gobulldogs.com/news/2026/10/26/football-bulldogs-host-oregon-state-on-halloween-night",
+          "retrieved_at": "2026-10-27T01:39:29.814Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND"
+        },
+        {
+          "url": "https://osubeavers.com/news/2026/10/26/football-oregon-state-returns-from-bye-week-visits-fresno-state-halloween-night",
+          "retrieved_at": "2026-10-27T01:39:29.814Z",
+          "clock_semantics": "RESPONSE_RECOVERED_BY_UPPER_BOUND"
+        }
+      ],
+      "material_assessment": "Fresno one interception in201attempts and four giveaways support ball security; do not assume indefinite turnover luck. Atkinson24TD/twoINT, OSUprotection and last-five defensive improvement support visitor; opponent mix and recent-rest context prevent automatic numeric extrapolation. The2025Fresnowin is not a clean yardage advantage.",
+      "acceptable_number": null,
+      "practical_execution_cutoff_utc": null,
+      "reconsideration": "A genuinely changed material/price case may earn a new prospective review. No backdated reconciliation, expiry extension, claim of negative EV or placed wager."
+    }
+  ],
+  "retained_early_decisions": [
+    {
+      "game_id": "401871058",
+      "disposition": "CONDITIONAL_EARNED_CANONICAL_INTEGRATION_PENDING",
+      "original_parent": "evidence/operational/CFB_WEEK9_QUALIFIED_EARLY_DECISIONS_20261026T234516Z.json"
+    },
+    {
+      "game_id": "401871057",
+      "disposition": "PASS_INSUFFICIENT_ACTIONABLE_SUPPORT_AFTER_SIX_MARKET_REVIEW_NOT_NEGATIVE_EV_PROOF",
+      "original_parent": "evidence/operational/CFB_WEEK9_QUALIFIED_EARLY_DECISIONS_20261026T234516Z.json"
+    }
+  ],
+  "source_records": [
+    "evidence/operational/CFB_WEEK9_IDENTIFIED_FANDUEL_20261027T013124Z.json",
+    "evidence/operational/CFB_WEEK9_IDENTIFIED_FANDUEL_LATE_20261027T013124Z.json"
+  ],
+  "validation": {
+    "as_of_utc": "2026-10-27T01:37:10.565269+00:00",
+    "validation": "PASS_UNCHANGED_V2_SEMANTICS_WITH_REMOTE_IMMUTABLE_LOADER",
+    "reference_checks": 24,
+    "conditional_row": {
+      "game_id": "401862812",
+      "state": "CONDITIONAL",
+      "state_recorded_at_utc": "2026-10-27T01:37:10.565269+00:00",
+      "reason": "CONTROLLED BETA: Florida Atlantic +13.5 or more, price -115 or better, against North Texas. FAU's established passing targets and multiple scoring routes support staying within two touchdowns, with current UNT defensive concessions providing a concrete competitive/backdoor path. Prefer the points to predicting an outright upset. UNT's explosive passing/rushing and FAU's poor defensive results are serious runaway risks, so this is a low-maturity qualitative choice with a fixed no-chase cap, not a calculated fair line, probability, EV or stake. Require a fresh actual venue quote meeting both limits and reassess materially adverse personnel/line/weather news. Full canonical Week9 integration remains pending.",
+      "cutoff_authority": "REVIEW_EVIDENCED",
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_FLORIDA_ATLANTIC_CONTROLLED_BETA_20261027T013124Z.json",
+        "commit": "6a3cda95cfb0ba40edfc7179172bdeda198d0bb5",
+        "blob": "9547eb01aad7d2272679de20c61c9c79c2b0f7c7"
+      },
+      "acceptable_number": {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 13.5,
+        "minimum_price": -115,
+        "direction": "AT_LEAST"
+      },
+      "reconciliation_utc": "2026-10-27T17:00:00Z",
+      "planning_cutoff_utc": "2026-10-27T18:00:00Z",
+      "execution_window": {
+        "start_utc": "2026-10-27T01:36:35.614Z",
+        "end_utc": "2026-10-27T18:00:00Z"
+      }
+    },
+    "review_blob": "9547eb01aad7d2272679de20c61c9c79c2b0f7c7",
+    "review_commit": "6a3cda95cfb0ba40edfc7179172bdeda198d0bb5",
+    "limitations": [
+      "Remote immutable Contents/commit/compare loader replaces local git loader only in read-only harness; no fabricated local ancestry",
+      "First-frozen numeric strings recovered from accepted saved research; authenticated original-archive invariant and full56 compiler not executed",
+      "Not canonical publication, source truth certification, consensus, venue readiness, integration or scheduled reliability"
+    ]
+  },
+  "unfinished_research": [
+    {
+      "game_id": "401871071",
+      "game": "Delaware @ Western Kentucky",
+      "status": "DIRECTIONAL_RESEARCH_ONLY_NOT_RECOMMENDATION",
+      "finding": "Re-read both official previews: Minicucci return and balanced last-game production support a Delaware win inquiry; WKUrest/home defense and Delaware defensive concession oppose. The large frozen away margin is not calibrated current confidence. First-party WKUpage has no prices; other exact team routes inaccessible and ESPNverificationwall blocked. No identified conditional benchmark or acceptable limit established. Do not call missing-source PASS or invent price/expiry."
+    },
+    {
+      "game_id": "401862813",
+      "game": "Tulane @ Charlotte",
+      "status": "PARTIAL_MATERIAL_REVIEW",
+      "finding": "ExactFanDuelTulaneaway/Charlottehome main quotes recovered; Charlotteown page points to staleTempleOct17and was excluded. Charlottecurrent opponent-side material remains missing; no automaticPASS."
+    }
+  ],
+  "canonical_status": "All56prior canonical reconciliations remain overdue unchanged. This newFAUconditional/5PASS research does not cure missedMonday18Zreview and cannot replace complete56 current packet. Originallimits/models/exclusions and sole saved primarysheet preserved.",
+  "next": "Finish37 prediction-game reviews, retain11originalexclusions, recheck changes/freshCBSsource within15min of actual fullproposal, run existingWeek9compiler/renderer/original135fieldinvariant and recoverypreflight/integration; publish sole primaryHotSheet and close two-phase. Before either conditional execution, verify actual venue terms/news and user placement feasibility. No automatic expiry renewal.",
+  "unchanged": "No model/science/source-code/schedule/wager/money/BigNine mutation."
+}
