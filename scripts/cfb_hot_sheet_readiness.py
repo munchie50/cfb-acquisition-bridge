@@ -46,7 +46,7 @@ def evaluation_coverage(census, decisions, rows):
     if len(by_id) != len(rows) or set(by_id) != set(census) or set(decisions) != set(census):
         raise ValueError('coverage requires complete unique census/decision/row identities')
     groups = {name: [] for name in ('ORIGINAL_EXCLUSION', 'HISTORICAL_GAP',
-                                   'CONDITIONAL_REVIEW_REFERENCE', 'NOT_CERTIFIED')}
+                                   'CONDITIONAL_REVIEW_REFERENCE', 'EXPIRED_UNPUBLISHED_REVIEW', 'NOT_CERTIFIED')}
     pending = []
     for gid, model in census.items():
         state = decisions[gid]['state']
@@ -56,6 +56,8 @@ def evaluation_coverage(census, decisions, rows):
             category = 'HISTORICAL_GAP'
         elif state == 'CONDITIONAL' and decisions[gid].get('review_ref'):
             category = 'CONDITIONAL_REVIEW_REFERENCE'
+        elif state == gate.EXPIRED_UNPUBLISHED:
+            category = 'EXPIRED_UNPUBLISHED_REVIEW'
         else:
             category = 'NOT_CERTIFIED'
         groups[category].append(gid)
@@ -97,7 +99,7 @@ def review_window(decision, market, as_of):
     bounds = ([gate.clock(cutoff)] if cutoff else [])
     if qualified_kick:
         bounds.append(gate.clock(kick))
-    closed = decision['state']=='HISTORICAL_GAP' or (bool(bounds) and min(bounds) <= now)
+    closed = decision['state'] in ('HISTORICAL_GAP',gate.EXPIRED_UNPUBLISHED) or (bool(bounds) and min(bounds) <= now)
     issue = ('KICKOFF_REQUIRES_QUALIFICATION' if not qualified_kick else
              'PRACTICAL_CUTOFF_MISSING' if cutoff is None else None)
     disposition = ('PREGAME_WINDOW_CLOSED' if closed else
@@ -131,6 +133,12 @@ def audit(market, decision, lineage, as_of, profile='WEEK7'):
     for gid, model in census.items():
         row = decisions[gid]
         source = markets[gid]
+        if row['state']==gate.EXPIRED_UNPUBLISHED:
+            rows.append({'game_id':gid,'state':gate.EXPIRED_UNPUBLISHED,
+                         'recommendation_blockers':['MISSED_CANONICAL_PUBLICATION'],
+                         'disposition':'EXPIRED_BEFORE_PUBLICATION_HISTORY_ONLY',
+                         'review_ref':row['review_ref'],'recommendation_active':False,'execution_created':False})
+            continue
         if row['state']=='HISTORICAL_GAP':
             rows.append({'game_id':gid,'state':'HISTORICAL_GAP',
                          'recommendation_blockers':['PERMANENT_PRE_EVENT_HISTORY_GAP'],
@@ -189,6 +197,7 @@ def audit(market, decision, lineage, as_of, profile='WEEK7'):
             'open_games': sum(r['state'] == 'INCONCLUSIVE' for r in rows),
             'preserved_pass': sum(r['state'] == 'PASS' for r in rows),
             'historical_gaps': sum(r['state'] == 'HISTORICAL_GAP' for r in rows),
+            'expired_unpublished_reviews': sum(r['state'] == gate.EXPIRED_UNPUBLISHED for r in rows),
             'conditional_recommendations': sum(r['state'] == 'CONDITIONAL' for r in rows),
             'recommendation_blocker_counts': dict(sorted(counts.items())),
             'caesars_required_for_recommendation': False,
