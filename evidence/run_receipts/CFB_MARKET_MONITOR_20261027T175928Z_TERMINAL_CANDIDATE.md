@@ -1,7 +1,7 @@
 # CFB Market Monitor terminal candidate
 
 - Cycle: `CFB_MARKET_MONITOR_20261027T175928Z`
-- Terminal candidate time: 2026-10-27T18:08:00Z
+- Terminal candidate time: 2026-10-27T18:05:30Z
 - Authority index: `evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md`
 - Authority index blob: `ddeca11cea78e0df52aeade13cf5b5c56c97d850`
 - Selected sheet: `evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-26_0707CT.md`
