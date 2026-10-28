@@ -88285,17 +88285,3 @@ No acceptable number or price was earned, no wager or trip was authorized, and n
   ]
 }
 ```
-
-
-## 2026-10-28 07:00 CT — Week 9 full-board refresh (cycle CFB_MARKET_MONITOR_20261028T120024Z)
-
-- Fresh complete source capture: `evidence/operational/CFB_CBS_WEEK9_TEXT_TABLE_CAPTURE_20261028T120000Z.md`; blob `b55854c08e51602c2e36b92f405f83394cccc0b8`; response recovered by `2026-10-28T12:04:37.444Z`.
-- Coverage: 56 governed games / 112 team rows. Source is a CBS Sports multi-book display with unidentified constituents; it is a mixed-book fallback, not a qualified consensus. `CONSENSUS_UNAVAILABLE`; `CAESARS_UNVERIFIED`; execution `UNVERIFIED`.
-- Earliest observations remain immutable. This refresh appends later observations; it does not overwrite or hindsight-backfill them.
-- Active conditional limit check:
-  - Pittsburgh: current fallback `-7.5 -108`; original acceptable limit `-6.5 or better at -115 or better`; line cap fails.
-  - Boston College: current fallback `+7.5 -124`; original acceptable limit `+7.5 or better at -115 or better`; price cap fails.
-- Nebraska: Washington `+7.5 -106`, Nebraska `-7.5 -108`, Nebraska ML `-310`, total `49.5`; descriptive disagreement from FIRST_FROZEN is not calibrated EV and does not change the independent PASS.
-- Material movement sweep completed across all 56 identities. Examples include Kennesaw `+2.5→+3`, Florida State `-5.5→-6`, Iowa State `+9→+9.5`, Washington `+8→+7.5`, and Kansas State crossing `+1→-1`. All sides, both moneylines and totals were rechecked; no new supported actionable or conditional state was earned. Alternates/team totals and a priced joint parlay were unavailable in the retained source, so no derivative or parlay price was invented.
-- Shared Firecrawl cycle facts at the decision boundary: provider remaining credits `1000`, plan credits `1000`, cycle `2026-10-27T17:16:35.203Z/2026-11-27T17:16:35.203Z`, day bucket `1/31`, released cap `32`, observed current-cycle consumption `0`. No chargeable Firecrawl request was made because a known upper request cost was unavailable; the permitted direct CBS browser fallback supplied the complete capture.
-- Availability/material boundary: applicable official ACC Wednesday reports had not yet posted by this review. Next review trigger remains the original noon CT reconciliation; hard cutoff remains 1:00 PM CT. No quote was retimed and no frozen prediction was changed.
