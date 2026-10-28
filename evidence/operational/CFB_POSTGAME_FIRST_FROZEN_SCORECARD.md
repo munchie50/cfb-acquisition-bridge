@@ -460,3 +460,19 @@ The separate execution ledger grades two established Friday tickets from the sam
 
 **Complete Week 8 modeled summary:** `49/49` predictions matched; `7/7` original exclusions retained; unresolved eligible joins `0`. Frozen predictions remain unchanged. This descriptive scoring append is downstream outcome evidence only. The separate execution ledger grades established tickets; neither result surface mutates Champion, FIRST_FROZEN, accepted REFRESH, Challenger, TIME-HIDDEN, market, or decision state.
 
+
+
+## Week 9 Tuesday FIRST_FROZEN outcomes — authoritative finals joined 2026-10-28
+
+**Cycle:** `CFB_MARKET_MONITOR_20261028T175841Z`  
+**Join rule:** Official athletics final reports were joined only to the accepted September 26 Week 9 FIRST_FROZEN lineage in `CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json`. No prediction, market decision, recommendation or execution was reconstructed from an outcome.  
+**Outcome evidence:** `evidence/operational/CFB_WEEK9_TUESDAY_RESULTS_CAPTURE_20261028T180300Z.md` / Git blob `1f6d0ca4bab568db83582f272de2905b910b43cb`.
+
+| Game ID | Game | Frozen home margin | Frozen total | Frozen home-win p | Final (away-home) | Actual home margin | Actual total | Margin error | Total error | SU correct |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 401871071 | Delaware @ Western Kentucky | -24.6 | 51.6 | 0.067 | 35-21 | -14 | 56 | +10.6 | +4.4 | 1 |
+| 401871072 | Sam Houston @ Missouri State | -10.1 | 50.4 | 0.253 | 3-24 | +21 | 27 | +31.1 | -23.4 | 0 |
+
+**Tuesday modeled summary:** `2/2` eligible rows matched; unresolved eligible joins `0`; SU direction `1/2 (50.0%)`; margin MAE `20.83`; total MAE `13.89`.
+
+No Week 9 established wager existed for either game, so the execution ledger has no settlement entry. This descriptive scoring append is downstream outcome evidence only and does not alter Champion, FIRST_FROZEN, accepted REFRESH, Challenger, TIME-HIDDEN, market or decision state.
