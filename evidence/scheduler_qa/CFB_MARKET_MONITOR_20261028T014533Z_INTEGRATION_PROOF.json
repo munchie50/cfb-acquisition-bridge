@@ -1,0 +1,384 @@
+{
+  "schema": "CFB_MANUAL_MONITOR_REFRESH_INTEGRATION_PROOF_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261028T014533Z",
+  "recorded_at_utc": "2026-10-28T01:59:40.956Z",
+  "result": "PASS_COMPLETE_SAVED_MANUAL_REFRESH_INTEGRATION",
+  "scope": "Manual source/lifecycle and37remainingPASS value revalidation;not scheduled reliability,authoritative postgame scoring or wagering quality",
+  "source": {
+    "path": "evidence/operational/CFB_CBS_WEEK9_TEXT_TABLE_CAPTURE_20261028T014639Z.md",
+    "blob": "8e72ad1cef9dbf84a8635291ffa0ffa7799b1a2a",
+    "commit": "af6fc6358b45d841dba343d414b21629c07d8671",
+    "recovered_by": "2026-10-28T01:46:39.832Z"
+  },
+  "publication_boundary_utc": "2026-10-28T01:50:37.587942Z",
+  "saved_surfaces": {
+    "review": {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_20261028T014533Z_REVALIDATION.json",
+      "blob": "17f72625018149af0d703ab2222c492fabde9c8a",
+      "commit": "4b381da7b60f46c5c609f4eef372f1b209b44862"
+    },
+    "readiness": {
+      "path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_20261028T014533Z_READINESS.json",
+      "blob": "e79614051c0da8b29f27d9dff0933adb379358d7",
+      "commit": "dc71eb89f15a31c5907f2b83b796b5f42935dd54"
+    },
+    "planned": {
+      "path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_20261028T014533Z_PLANNED_APPENDS.json",
+      "blob": "daf9e908f98b0ad7f0810dbdfa57fb4bbc2a8bc0",
+      "commit": "d15c68b6e2c07ad131a455fe8126144ae5fbda56"
+    },
+    "market": {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "2110b9167e823b3169335ffd12e6780b4067f1de",
+      "commit": "0fb2b78cc03881763128b1070f3f13de421d2f31"
+    },
+    "decision": {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "8b43d28b71a0e70b12a4cbda3d14e886f13fa110",
+      "commit": "326ba66ee8be9ddf4ab6c240cc4588aa251f65ad"
+    },
+    "sheet": {
+      "path": "evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-27_2050CT.md",
+      "blob": "a11e571c9f2eab663b68cc4e0d25283a7da33092",
+      "commit": "b7ecb28fe3e08dfca91025248d21a13552a76b01"
+    },
+    "audit": {
+      "path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_20261028T014533Z_AUDIT.md",
+      "blob": "1d4f34fe4ddde065f92746a2fb3a56aa62cb9f71",
+      "commit": "7ddeaac520c4090591370c13771df8ac10246a32"
+    },
+    "preflight": {
+      "path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_20261028T014533Z_SAVED_RECOVERY_PREFLIGHT.json",
+      "blob": "0577b557b6d6e5f7f2bee8d05b50b67c4e80d2b2",
+      "commit": "550f2ed227f345d2cb47be9ee5d86b43b9c21965"
+    }
+  },
+  "selected_index": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md",
+    "commit": "2c46c9949567fa938f16b5766c7c7fdadedb7466",
+    "blob": "356b5920ab9cba100baa5669588995161585e48b"
+  },
+  "selected_ci": {
+    "id": 40617762895,
+    "head": "2c46c9949567fa938f16b5766c7c7fdadedb7466",
+    "status": "completed",
+    "conclusion": "success",
+    "job_id": 122584160757,
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2
+      },
+      {
+        "name": "Run actions/setup-python@v5",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3
+      },
+      {
+        "name": "Exercise complete CBS table capture and incomplete-response rejection",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4
+      },
+      {
+        "name": "Exercise recommendation versus venue readiness separation",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5
+      },
+      {
+        "name": "Exercise descriptive consensus source and price boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6
+      },
+      {
+        "name": "Exercise saved-view clock separation without weakening live gate",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7
+      },
+      {
+        "name": "Exercise conditional review evidence and unchanged neutral boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8
+      },
+      {
+        "name": "Normalize retained real full-board capture without operational mutation",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9
+      },
+      {
+        "name": "Exercise confirmed funding deduplication and transaction-type boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10
+      },
+      {
+        "name": "Exercise complete recovery consumer dependency boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 11
+      },
+      {
+        "name": "Validate complete current recovery consumer bindings",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 12
+      },
+      {
+        "name": "Validate selected money record and its historical execution snapshot",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 13
+      },
+      {
+        "name": "Exercise weekly carry-forward ancestry and historical-preservation boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 14
+      },
+      {
+        "name": "Validate selected weekly learning correction and exact source bindings",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 15
+      },
+      {
+        "name": "Validate original research candidate",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16
+      },
+      {
+        "name": "Exercise production presentation rejection boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 17
+      },
+      {
+        "name": "Exercise append-only decision naming coverage boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 18
+      },
+      {
+        "name": "Exercise declared canonical market-total display boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 19
+      },
+      {
+        "name": "Exercise qualified Saturday market-total boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 20
+      },
+      {
+        "name": "Exercise qualified afternoon fresh and retained total boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 21
+      },
+      {
+        "name": "Exercise explicit recovery navigation boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 22
+      },
+      {
+        "name": "Exercise full-review scope and explicit trip-clock boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 23
+      },
+      {
+        "name": "Validate retained full Saturday dinner review coverage",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 24
+      },
+      {
+        "name": "Exercise current decision and conditional cutoff display boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 25
+      },
+      {
+        "name": "Exercise explicit current-publication source binding boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 26
+      },
+      {
+        "name": "Validate explicitly selected current Hot Sheet against canonical decision state",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 27
+      },
+      {
+        "name": "Recover authenticated accepted FIRST_FROZEN archive",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 28
+      },
+      {
+        "name": "Recover separate accepted October6 REFRESH ancestry archive",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 29
+      },
+      {
+        "name": "Exercise original Week7 lineage and no-substitution boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 30
+      },
+      {
+        "name": "Validate separate historical accepted October6 refresh field interface",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 31
+      },
+      {
+        "name": "Exercise execution-aware current decision rejection boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 32
+      },
+      {
+        "name": "Exercise typed neutral publication chronology and decision boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 33
+      },
+      {
+        "name": "Exercise full-week source reconciliation and historical PASS boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 34
+      },
+      {
+        "name": "Replay authentic Monday legacy inputs through the neutral schema without operational writes",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 35
+      },
+      {
+        "name": "Exercise bounded Monday source-profile and publication rejection boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 36
+      },
+      {
+        "name": "Validate current execution-aware decision and ticket projection",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 37
+      },
+      {
+        "name": "Report saved timing exceptions without certifying practical deadlines",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 38
+      },
+      {
+        "name": "Validate retained historical dinner decision Hot Sheet projection",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 39
+      },
+      {
+        "name": "Exercise frozen display rejection boundaries",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 40
+      },
+      {
+        "name": "Validate retained and newly changed Week 6 production sheets",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 41
+      },
+      {
+        "name": "Post Run actions/setup-python@v5",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 81
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 82
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 83
+      }
+    ]
+  },
+  "saved_frontier": {
+    "head": "550f2ed227f345d2cb47be9ee5d86b43b9c21965",
+    "pointers": 272,
+    "mismatches": [],
+    "prewrite_and_saved_readback_preflight": "PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY"
+  },
+  "protected_code_workflow_execution_scorecard_profile_changes": 0,
+  "original_frozen_fields": "56identities45predictions11exclusions135numericstrings and all first observations preserved",
+  "decision_counts": {
+    "prediction_pass": 39,
+    "including_elapsed_prospective_historical": 2,
+    "changed_price_future_pass_reweighed": 8,
+    "unchanged_six_price_future_pass_reweighed": 29,
+    "active_conditional": 2,
+    "expired_unpublished_closed": 4,
+    "original_exclusions": 11
+  },
+  "future_source_games": 54,
+  "elapsed_current_pregame_quotes": 0,
+  "overdue_open_decisions": 0,
+  "tasks": [
+    {
+      "id": "6ab4297470448191b96d8542283c1808",
+      "title": "CFB Weekly Engine QA",
+      "is_enabled": true,
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260927T090000\nRRULE:FREQ=WEEKLY;BYDAY=SA,SU;BYHOUR=9;BYMINUTE=0;BYSECOND=0\nEND:VEVENT"
+    },
+    {
+      "id": "6ab4296b60608191a7ebb238d4fa70bd",
+      "title": "CFB Engine Health",
+      "is_enabled": true,
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260927T163000\nRRULE:FREQ=DAILY;BYHOUR=16;BYMINUTE=30;BYSECOND=0\nEND:VEVENT"
+    },
+    {
+      "id": "6ab4296f9fec8191a8d35056b70d17cb",
+      "title": "CFB Evening Availability",
+      "is_enabled": true,
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260923T193000\nRRULE:FREQ=WEEKLY;BYDAY=WE,TH,FR;BYHOUR=19;BYMINUTE=30;BYSECOND=0\nEND:VEVENT"
+    },
+    {
+      "id": "6ab42966c2e081919f956c941e6e0fff",
+      "title": "CFB Market Monitor",
+      "is_enabled": true,
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260930T070000\nRRULE:FREQ=WEEKLY;BYDAY=SU,MO,TU,WE,TH,FR,SA;BYHOUR=7,13;BYMINUTE=0;BYSECOND=0\nEND:VEVENT"
+    }
+  ],
+  "task_mutations": 0,
+  "limits": "Pitt-6.5orbetter/-115orbetter;BC+7.5orhigher/-115orbetter;bothobservedoffersfail",
+  "deadlines": "Oct28noonCT17Zreconcile;13CT18Zfinalexpiry;unchanged",
+  "outstanding": "Natural recurring timeliness/Evening adoption;unserved noon interval;no exhaustive new medical/weather/venue clearance. Source-visible result cells not independently qualified outcomes. Earlier incomplete scheduled cycles preserved."
+}
