@@ -1,11 +1,13 @@
-# CFB Week9 source-derived conditional Hot Sheet
+# CFB Week9 source-derived conditional Hot Sheet — UNSELECTED CANDIDATE
+
+**Fail-closed status:** UNSELECTED CANDIDATE. The fresh full-board view and exactly-once assertions passed, but the required compiler could not recover immutable review commits in a supported local repository ancestry. This file is diagnostic evidence only; it did not replace the previously selected governed Hot Sheet.
 
 **Presentation schema:** CFB_WEEKLY_CONDITIONAL_PUBLICATION_V3
 **Cycle:** CFB_MARKET_MONITOR_20261028T120024Z
 **Publication boundary:** 2026-10-28T12:04:37.444Z
 **Scope:** canonical conditional display from immutable prospective review; no verified venue offer, automatic bet or full-run acceptance.
 **Frozen-model boundary:** Original accepted FIRST_FROZEN cutoff 2026-09-26T03:47:37.497112+00:00; 45 predictions and 11 exclusions; no REFRESH substitution.
-**Canonical inputs:** market d8656da84b2b4bf00603dbc770a745eda8573469; decision 5d9b6d8ecc383a3edd3431fb26e3fb9b660438e9; execution 1a938f42e9f03e723bd50348f8a78dbd8b7098e9; scorecard 1e8e0a9c3cd34c163c32f6782cdfccf30b9e13d8.
+**Canonical inputs retained (not advanced):** market 2110b9167e823b3169335ffd12e6780b4067f1de; decision 8b43d28b71a0e70b12a4cbda3d14e886f13fa110; execution 1a938f42e9f03e723bd50348f8a78dbd8b7098e9; scorecard 1e8e0a9c3cd34c163c32f6782cdfccf30b9e13d8.
 **Decision summary:** 0 INCONCLUSIVE; 50 PASS; 2 CONDITIONAL; venue confirmation separate; no recorded execution created.
 
 **Expired before publication:** 4 immutable reviews; missed publication preserved; no originating canonical recommendation, active opportunity or execution.
