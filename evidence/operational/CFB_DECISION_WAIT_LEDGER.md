@@ -24360,14 +24360,3 @@ All remaining 60 governed games retain their recorded reconciliation deadlines a
   ]
 }
 ```
-
-
-## 2026-10-28 07:00 CT — prospective full-slate revalidation (cycle CFB_MARKET_MONITOR_20261028T120024Z)
-
-- Decision census remains: 39 prediction-game `PASS`, 2 active `CONDITIONAL`, 4 `EXPIRED_UNPUBLISHED_REVIEW` history-only records, 11 original-model exclusions carried as no-action rows; 0 `INCONCLUSIVE`; 0 established executions.
-- Pittsburgh at Georgia Tech remains `CONDITIONAL`: Pittsburgh `-6.5 or better at -115 or better`. Fresh mixed-book fallback `-7.5 -108` fails the line cap. Reconcile `2026-10-28T17:00:00Z`; hard final cutoff `2026-10-28T18:00:00Z`. Await the applicable official ACC availability report and a compliant independently qualified offer; do not chase.
-- Boston College at Duke remains `CONDITIONAL`: Boston College `+7.5 or better at -115 or better`. Fresh mixed-book fallback `+7.5 -124` fails the price cap. Reconcile `2026-10-28T17:00:00Z`; hard final cutoff `2026-10-28T18:00:00Z`. Await the applicable official ACC availability report and a compliant independently qualified offer; do not chase.
-- The 07:00 CT sweep rechecked all remaining games across both spread sides, both moneylines and over/under after current price movement. Prior reasons remain applicable after material-change review; no changed quote alone earned a new prospective recommendation. No review was silently reopened and no original number, price or cutoff was loosened.
-- Alternates and team totals were unavailable/not evaluated from the retained complete source. No qualified joint parlay price was available; `NO_PREFERRED_PARLAY`. No probability, EV, stake, payout or execution was invented.
-- Caesars venue confirmation remains separate and `UNVERIFIED`; its absence did not block the two supported conditionals. The saved mixed-book board remains `CONSENSUS_UNAVAILABLE`.
-- Status: `NO_MATERIAL_DECISION_CHANGE`. Next safe action: at the noon CT checkpoint, evaluate newly posted material availability and current qualified offers, then preserve each conditional or prospectively resolve it no later than the 1:00 PM CT cutoff.
