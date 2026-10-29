@@ -1,0 +1,51 @@
+name: CFB decision quality repair diagnostic
+on:
+  push:
+    branches: [repair/decision-quality-20261029]
+    paths:
+      - '.github/workflows/cfb_decision_quality_repair_20261029_once.yml'
+      - 'scripts/cfb_decision_quality_repair_audit.py'
+      - 'scripts/test_cfb_decision_quality_repair_audit.py'
+      - 'scripts/cfb_week9_publication.py'
+      - 'scripts/test_cfb_week9_pass_provenance.py'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: cfb-decision-quality-repair-20261029
+  cancel-in-progress: false
+jobs:
+  retained-evidence-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Replay authentic failures and rejection controls
+        run: python -m unittest discover -s scripts -p test_cfb_decision_quality_repair_audit.py -v
+      - name: Recover accepted original FIRST_FROZEN archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/${{ github.repository }}/actions/artifacts/10897612260/zip > "$RUNNER_TEMP/cfb_first_frozen.zip"
+          echo "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf  $RUNNER_TEMP/cfb_first_frozen.zip" | sha256sum -c -
+      - name: Verify Week9 publication and historical decision protection
+        env:
+          CFB_ACCEPTED_FREEZE_ARCHIVE: ${{ runner.temp }}/cfb_first_frozen.zip
+        run: python -m unittest discover -s scripts -p 'test_cfb_week9_*.py' -v
+      - name: Save bounded diagnostic checkpoint
+        if: always()
+        run: >-
+          python scripts/cfb_decision_quality_repair_audit.py
+          --prior evidence/operational/CFB_MARKET_MONITOR_20261029T115755Z_REVALIDATION.json
+          --current evidence/operational/CFB_MARKET_MONITOR_20261029T180541Z_REVALIDATION.json
+          --output repair-results/decision-quality-checkpoint.json
+      - name: Preserve checkpoint
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-decision-quality-repair-20261029
+          path: repair-results/
+          if-no-files-found: error
+          retention-days: 30
