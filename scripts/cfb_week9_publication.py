@@ -163,6 +163,14 @@ def compile(market, decision, capture, lineage, cycle, as_of, recovered_by, deci
                     and kickoff_source.path.rstrip('/').lower().startswith('/college-football/odds')):
                 raise ValueError('CBS display alone cannot qualify conditional kickoff')
             source.update(kickoff_status='QUALIFIED', kickoff_source_url=reference['kickoff_source_url'])
+        if old is not None and old['state'] == row['state'] == 'PASS':
+            kickoff = rows[row['game_id']]['kickoff_utc']
+            if (kickoff is not None and gate.clock(kickoff) <= now
+                    and row != {k: v for k, v in old.items()
+                                if k not in ('state_recorded_at_utc', 'state_evidence')}):
+                raise ValueError('elapsed PASS must retain exact pre-event decision; no retrospective reason rewrite')
+        # PASS evidence identifies the original state, not the latest review.
+        # Future reassessment remains in this packet's reason/current boundary.
         origin = old if retained or retained_expired or (old is not None and old['state'] == row['state'] == 'PASS') else None
         row.update(state_recorded_at_utc=origin['state_recorded_at_utc'] if origin else as_of,
                    state_evidence=origin['state_evidence'] if origin else cycle)
