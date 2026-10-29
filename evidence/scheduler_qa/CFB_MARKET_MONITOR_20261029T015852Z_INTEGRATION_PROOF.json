@@ -1,0 +1,76 @@
+{
+  "cycle_id": "CFB_MARKET_MONITOR_20261029T015852Z",
+  "recorded_at": "2026-10-29T02:16:51.975Z",
+  "scope": "USER_DIRECTED_MANUAL_PRODUCTION_ONLY_NOT_SCHEDULED_RELIABILITY",
+  "result": "PASS",
+  "index": {
+    "commit": "ac04d90b565bd54c591d54c1f056c87004631fb4",
+    "blob": "545975a0199d715d667ae45d52a611ef1accd56d",
+    "saved_preflight_blob": "059d4f11569d9065b5fc15080c61d5e027d7d823",
+    "verified_pointers": 280
+  },
+  "sheet": {
+    "path": "evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-28_2107CT.md",
+    "blob": "22c3e51ea12dbb6ee095120ac95717ce7e8ea75a"
+  },
+  "ci": {
+    "run": 40805015194,
+    "job": 123221758334,
+    "conclusion": "success",
+    "completed_steps": 45,
+    "failed_steps": 0
+  },
+  "source": {
+    "path": "evidence/operational/CFB_CBS_WEEK9_TEXT_TABLE_CAPTURE_20261029T015852Z.md",
+    "blob": "5d46c7d769e6e570f8d4d342411447c9976fadff",
+    "recovered_by": "2026-10-29T02:02:21.850Z",
+    "provider": "Firecrawl",
+    "scrape_id": "01a18564-c3c8-74f6-90d3-5843db02abd8",
+    "games": 56,
+    "team_rows": 112,
+    "future_games": 52,
+    "elapsed_games": 4
+  },
+  "review": {
+    "path": "evidence/operational/CFB_MARKET_MONITOR_20261029T015852Z_REVALIDATION.json",
+    "blob": "378c7a40145e5165e98b107cdc026e7b8c530384",
+    "future_prediction_pass_reweighed": 36,
+    "active_recommendations": 0,
+    "expired_conditionals": 2,
+    "expired_unpublished": 4,
+    "original_exclusions": 11,
+    "scope": "Price/retained-football reweigh with bounded JMU/Nebraska new primary reads; not exhaustive fresh medical/weather clearance"
+  },
+  "saved_view_audit": {
+    "observed_at": "2026-10-29T02:13:54.097696+00:00",
+    "operational_exceptions": []
+  },
+  "budget": {
+    "remainingCredits": 996,
+    "planCredits": 1000,
+    "billingPeriodStart": "2026-10-27T17:16:35.203Z",
+    "billingPeriodEnd": "2026-11-27T17:16:35.203Z"
+  },
+  "enabled_tasks": [
+    {
+      "id": "6ab4296f9fec8191a8d35056b70d17cb",
+      "title": "CFB Evening Availability",
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260923T193000\nRRULE:FREQ=WEEKLY;BYDAY=WE,TH,FR;BYHOUR=19;BYMINUTE=30;BYSECOND=0\nEND:VEVENT"
+    },
+    {
+      "id": "6ab42966c2e081919f956c941e6e0fff",
+      "title": "CFB Market Monitor",
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260930T070000\nRRULE:FREQ=WEEKLY;BYDAY=SU,MO,TU,WE,TH,FR,SA;BYHOUR=7,13;BYMINUTE=0;BYSECOND=0\nEND:VEVENT"
+    },
+    {
+      "id": "6ab4297470448191b96d8542283c1808",
+      "title": "CFB Weekly Engine QA",
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260927T090000\nRRULE:FREQ=WEEKLY;BYDAY=SA,SU;BYHOUR=9;BYMINUTE=0;BYSECOND=0\nEND:VEVENT"
+    },
+    {
+      "id": "6ab4296b60608191a7ebb238d4fa70bd",
+      "title": "CFB Engine Health",
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260927T163000\nRRULE:FREQ=DAILY;BYHOUR=16;BYMINUTE=30;BYSECOND=0\nEND:VEVENT"
+    }
+  ]
+}
