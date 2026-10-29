@@ -1,0 +1,3625 @@
+{
+  "schema": "CFB_BOUNDED_DECISION_QUALITY_AND_MISSED_WINDOWS_QA_V1",
+  "recorded_at": "2026-10-29T03:05:04.886533+00:00",
+  "authority_commit": "57dced4a486d2eef2237ab9610dca075f09881ed",
+  "scope": "OUTCOME_BLIND_SAVED_WEEK9_EVIDENCE; not new recommendations/current quote verification/causal-profit evaluation",
+  "source_boundary": "2026-10-29T02:07:53.637468Z",
+  "counts": {
+    "all_games": 56,
+    "future_prediction_PASS_cases": 36,
+    "checked_price_branches": 216,
+    "elapsed_prediction_PASS_history": 3,
+    "original_exclusions": 11,
+    "immutable_review_cases": 6,
+    "expired_unpublished": 4,
+    "initial_compliant_identified_benchmarks_among_six": 3,
+    "proven_missed_profitable_or_executable_bets": 0
+  },
+  "source_refs": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_20261029T015852Z_REVALIDATION.json",
+      "blob": "378c7a40145e5165e98b107cdc026e7b8c530384",
+      "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+    },
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_20261028T014533Z_REVALIDATION.json",
+      "blob": "17f72625018149af0d703ab2222c492fabde9c8a",
+      "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+    },
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T220849Z_COMPLETE_REVALIDATION.json",
+      "blob": "040960072e24f369376eb6c49d5b6c01cb3f57ee",
+      "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json",
+      "blob": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9",
+      "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+    },
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "8d1601c1eda300ab48f30631f44c09a9ac7a3328",
+      "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "570f827fe2f1504273467dbfca000c2f3018a1fa",
+      "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261027T115654Z_TERMINAL_CANDIDATE.md",
+      "blob": "ac0c44b0ad21e3fc963a9a16194c1452a6c166fa",
+      "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261027T175928Z_RUN_CLOSURE.md",
+      "blob": "584b28e53867c8f2bb611239b790df6727f94b45",
+      "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261028T120024Z_DIAGNOSTIC.md",
+      "blob": "9671ee8ad294d55307d2c4f4a38fac62f5ff622a",
+      "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261028T175841Z_DIAGNOSTIC.md",
+      "blob": "ade02e2e1bfcd4d81167e0c74d7a460c0fcdb956",
+      "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+    },
+    {
+      "path": "evidence/audits/CFB_RESEARCH_WINDOW_FOLLOWUP_20261025.md",
+      "blob": "0ada02063a180fd8d56a5df825a63a53b57f1bd3",
+      "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+    }
+  ],
+  "research_checkpoint_hash_checks": [
+    {
+      "key": "earlyDecision0",
+      "path": "evidence/operational/CFB_WEEK9_CATCHUP_DECISIONS_20261027T013124Z.json",
+      "blob": "fa8066f5336a2c3d93cceff6382b030551ae3556",
+      "readback_commit": "f3beea929f2e25a7fd3c57748caef7eaaccf75d9",
+      "full_blob_match": true
+    },
+    {
+      "key": "earlyDecision1",
+      "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T015520Z_DECISIONS_A.json",
+      "blob": "71124969978621f632dcfeea874fcd83bb38a290",
+      "readback_commit": "f3beea929f2e25a7fd3c57748caef7eaaccf75d9",
+      "full_blob_match": true
+    },
+    {
+      "key": "earlyDecision2",
+      "path": "evidence/operational/CFB_MARKET_MONITOR_20261027T015520Z_DECISIONS_B.json",
+      "blob": "a691939ce88c94497762a565ba1650c67b0c1649",
+      "readback_commit": "f3beea929f2e25a7fd3c57748caef7eaaccf75d9",
+      "full_blob_match": true
+    },
+    {
+      "key": "progress",
+      "path": "evidence/operational/CFB_CATCHUP_20261027T214636Z_DECISIONS_PROGRESS.json",
+      "blob": "17b3fb55d66228f0a5a25d03b676622fd1e6b4a5",
+      "commit": "ef3078971237bba01469a2a244e1c876e34089c5",
+      "full_blob_match": true
+    },
+    {
+      "key": "finalthree",
+      "path": "evidence/operational/CFB_CATCHUP_20261027T214636Z_FINAL_THREE_REVIEWS.json",
+      "blob": "6fe7abd33b89bd1b0051aeeb536cdcd58a8d63ce",
+      "commit": "4de3f2003e5d5070d6c56fed5874aa814735fb60",
+      "full_blob_match": true
+    }
+  ],
+  "case_assessments": [
+    {
+      "game_id": "401871058",
+      "away_team": "Kennesaw State",
+      "home_team": "Middle Tennessee",
+      "saved_state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "temporal_status": "STARTED_OR_PAST_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "ELAPSED_OR_EXPIRED_HISTORY_NOT_CURRENT_CHOICE"
+    },
+    {
+      "game_id": "401871057",
+      "away_team": "Jacksonville State",
+      "home_team": "New Mexico State",
+      "saved_state": "PASS",
+      "temporal_status": "STARTED_OR_PAST_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "ELAPSED_OR_EXPIRED_HISTORY_NOT_CURRENT_CHOICE"
+    },
+    {
+      "game_id": "401869963",
+      "away_team": "Troy",
+      "home_team": "James Madison",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "JMU now lays18.5 at-105 rather than20.5/-115, a meaningful improvement. The newly read official preview supports its home offense, run suppression and return game; Troy's stalled attack argues against its+19.5 or+800winner. Still, JMU needed a late tying score, used two quarterbacks and only92rushing yards in an overtime loss. A three-score margin is not earned from home streaks or last year's title game. Over49.5 faces Troy drive failure; under50.5 faces JMU explosives/returns. Retain six-branch PASS rather than translating strong descriptive totals into a cover probability.",
+      "retained_material": "Troy used Kilcrease and Crowder; long opening possession and later stalls, not a clean47yard starter forecast. ULM's last score was a fumbled lateral returned in endzone, not an ordinary offensive touchdown. JMU used Coleman/Evans, gained423yards but92rushing and lost in overtime. No final starter/injury status inferred.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 19.5,
+        "away_spread_price": -110,
+        "home_spread": -18.5,
+        "home_spread_price": -105,
+        "away_ml": 800,
+        "home_ml": -1053,
+        "over_total": 49.5,
+        "over_price": -110,
+        "under_total": 50.5,
+        "under_price": -115
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision0",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T013124Z",
+        "recorded_at_utc": "2026-10-27T01:40:15.487Z"
+      },
+      "next_analytical_question": "At the improved JMU -18.5 price, does a sustained rushing/finishing advantage outweigh the recent late comeback and two-QB uncertainty? Home streaks alone cannot answer this.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "22.59239737183265",
+        "pred_total": "48.29148250510016",
+        "pred_win": "0.9130829522301803"
+      }
+    },
+    {
+      "game_id": "401862812",
+      "away_team": "Florida Atlantic",
+      "home_team": "North Texas",
+      "saved_state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "ELAPSED_OR_EXPIRED_HISTORY_NOT_CURRENT_CHOICE"
+    },
+    {
+      "game_id": "401862813",
+      "away_team": "Tulane",
+      "home_team": "Charlotte",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Tulane-8.5/-110 is cheaper in points and juice than-10/-112, and-350 is cheaper than-395. Charlotte loses cushion to+9.5 and its upset payout falls to+285. Those changes improve Tulane's price case, but the retained six-turnover result and Charlotte's449-yard offense still oppose paying for road separation. Charlotte's455yards conceded opposes backing the dog. Over46.5/-118 versus under47.5/-111 preserves separate scoring thresholds; both recent offensive upside and turnover risk remain. No preferred side, winner or total.",
+      "retained_material": "Tulane's six-turnover loss and Charlotte's latest 449-yard win point in opposite directions; Charlotte also allowed455yards. Conference scoring averages are unadjusted context, not opponent-adjusted strength.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -8.5,
+        "away_spread_price": -110,
+        "home_spread": 9.5,
+        "home_spread_price": -108,
+        "away_ml": -350,
+        "home_ml": 285,
+        "over_total": 46.5,
+        "over_price": -118,
+        "under_total": 47.5,
+        "under_price": -111
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision1",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T015520Z",
+        "recorded_at_utc": "2026-10-27T02:13:44.782Z"
+      },
+      "next_analytical_question": "Separate a six-turnover outlier from repeatable Tulane offensive weakness; compare Charlotte offensive production and defensive leakage against the cheaper Tulane price.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "-1.9022945223044858",
+        "pred_total": "51.020922254558755",
+        "pred_win": "0.46730125958103885"
+      }
+    },
+    {
+      "game_id": "401856844",
+      "away_team": "Baylor",
+      "home_team": "UCF",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Both teams display+1.5 at different book cells, while Baylor-105/UCF-102 moneylines are near even. These are inconsistent mixed-book snapshots, not a synthetic middle or executable arbitrage. Baylor's pressure/defensive continuity remains opposed by its coaching transition and UCF passing improvement. Losing cheap Baylor juice to-118 does not improve its points case. Side-specific47.5over/48.5under retain defensive resistance versus offensive upside; six branches remain declined.",
+      "retained_material": "Klanderman was already coordinator; dismissal does not erase defense or prove a motivational uplift. Current Baylor recap describes Lagway, while Robertson references belong to2025historical section and are quarantined from current starter inference. Jenkins293passing/fourTD/no turnovers came in double overtime. Earlier kickoff discrepancy remains preserved; this PASS creates no cutoff.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 1.5,
+        "away_spread_price": -118,
+        "home_spread": 1.5,
+        "home_spread_price": -110,
+        "away_ml": -105,
+        "home_ml": -102,
+        "over_total": 47.5,
+        "over_price": -115,
+        "under_total": 48.5,
+        "under_price": -115
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision0",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T013124Z",
+        "recorded_at_utc": "2026-10-27T01:40:15.487Z"
+      },
+      "next_analytical_question": "Establish what the Baylor coaching change actually alters in personnel/play calling. Keep the separate near-pickem book cells separate; neither motivation nor a synthetic middle settles the choice.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "4.539985769818523",
+        "pred_total": "51.51071646091736",
+        "pred_win": "0.6122139916103446"
+      }
+    },
+    {
+      "game_id": "401866451",
+      "away_team": "Kent State",
+      "home_team": "Sacramento State",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Kent's lay falls from9.5/-124 to8.5/-104 and moneyline to-310, genuinely improving favorite cost. Sacramento's cushion and upside payout shrink to+9.5/+275. Kent's422yards conceded and penalty-assisted latest win still limit a road-separation thesis; Sacramento's54rushing and third-down failures oppose the dog.46.5 total balances defensive leakage against Sacramento stalled possessions. No winner, side or total preferred.",
+      "retained_material": "Official retained boxes: Kent's294passing yards/fourpassingTDs beatAkron, but Kent allowed422yards and benefited from Akron's165penaltyyards. Sacramento gained266yards/54rushing and was3/12on third down againstBallState. The frozen strongSacramento margin conflicts with current line direction; no roster-adjusted forecast is inferred.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -8.5,
+        "away_spread_price": -104,
+        "home_spread": 9.5,
+        "home_spread_price": -110,
+        "away_ml": -310,
+        "home_ml": 275,
+        "over_total": 46.5,
+        "over_price": -108,
+        "under_total": 46.5,
+        "under_price": -110
+      },
+      "prior_research_binding": {
+        "checkpoint": "progress",
+        "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+        "recorded_at_utc": "2026-10-27T21:54:35.994Z"
+      },
+      "next_analytical_question": "Resolve the very large original Sacramento-favorite/current Kent-favorite disagreement using the retained source identities and current team context; a single penalty-assisted Kent win cannot settle it.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "19.37754914129643",
+        "pred_total": "49.08228467598643",
+        "pred_win": "0.8695363256687552"
+      }
+    },
+    {
+      "game_id": "401866452",
+      "away_team": "Bowling Green",
+      "home_team": "Western Michigan",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "WMU-12.5/-110 is easier than-13/-111, yet its595yards conceded and two interceptions remain substantial opposition to a two-score cover. BGSU+13.5 now costs-112 without more protection, and its recent production had short-field help. Winner prices and44.5total unchanged; passing upside versus defensive/finishing volatility still leaves six independent PASS branches.",
+      "retained_material": "New officialBGSU Buffalo recap:Kastantin19/27for217yards/threeTDs,14carries34yards; a strip-sack supplied a short field. WMU officialToledo recap:595yardsallowed, Lowry12/29for207twoTD/twoINT; comeback fell45-38. The original24.8WMU margin is not current evidence that a two-score lay is cheap.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 13.5,
+        "away_spread_price": -112,
+        "home_spread": -12.5,
+        "home_spread_price": -110,
+        "away_ml": 430,
+        "home_ml": -526,
+        "over_total": 44.5,
+        "over_price": -108,
+        "under_total": 44.5,
+        "under_price": -111
+      },
+      "prior_research_binding": {
+        "checkpoint": "progress",
+        "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+        "recorded_at_utc": "2026-10-27T21:54:35.994Z"
+      },
+      "next_analytical_question": "Explain how WMU defensive leakage and QB errors change confidence in the large original margin, then compare that risk with the improved current favorite price.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "24.79105402559233",
+        "pred_total": "45.24073756922628",
+        "pred_win": "0.9257804353494328"
+      }
+    },
+    {
+      "game_id": "401862816",
+      "away_team": "UAB",
+      "home_team": "South Florida",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "EXCLUDED",
+      "assessment": "ORIGINAL_EXCLUSION_NOT_FOOTBALL_PASS"
+    },
+    {
+      "game_id": "401856842",
+      "away_team": "Arizona",
+      "home_team": "Texas Tech",
+      "saved_state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "ELAPSED_OR_EXPIRED_HISTORY_NOT_CURRENT_CHOICE"
+    },
+    {
+      "game_id": "401858502",
+      "away_team": "Wisconsin",
+      "home_team": "Iowa",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Iowa-3/-118 gains the key push at3 versus-3.5/+100 but charges18cents rather than returning even money. Wisconsin+3.5 now costs-118. Iowa run suppression supports the favorite; its split quarterbacks and passing ceiling oppose buying margin. Wisconsin's pressure and efficient latest passing oppose that lay but face Iowa's defensive resistance.36.5totals and-160/+142winners remain declined; no refreshed17point model margin is assumed.",
+      "retained_material": "Wisconsin's officialUSC recap shows pressure/run suppression andJoseph12/14passing. New currentIowa officialnotes confirmBrown/Hecklinski splitMinnesota reps, latest opponent held209yards, six sacks allowed season and82.9rushyards allowed/game. Those unadjusted defensive strengths oppose simply transferringWisconsin'sUSC result; the frozenIowa17point margin is not refreshed for the QB situation.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 3.5,
+        "away_spread_price": -118,
+        "home_spread": -3.0,
+        "home_spread_price": -118,
+        "away_ml": 142,
+        "home_ml": -160,
+        "over_total": 36.5,
+        "over_price": -110,
+        "under_total": 36.5,
+        "under_price": -108
+      },
+      "prior_research_binding": {
+        "checkpoint": "progress",
+        "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+        "recorded_at_utc": "2026-10-27T21:54:35.994Z"
+      },
+      "next_analytical_question": "Reassess Iowa QB usage and Wisconsin pressure against the key-number/juice tradeoff; neither an old 17-point margin nor a generic low total settles the current choice.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "16.953003336948186",
+        "pred_total": "47.43327995301615",
+        "pred_win": "0.8105510430012315"
+      }
+    },
+    {
+      "game_id": "401858278",
+      "away_team": "SMU",
+      "home_team": "Syracuse",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Syracuse+10.5 adds a half point at-115, while SMU-9.5 gets dearer at-122 and-380winner. The dog also pays+310 rather than+285. Angeli/Miller's retained output supports a competitive route, but SMU's six consecutive second-halfTDdrives oppose backing Syracuse defense. Lower57.5over makes scoring easier but costs-115; under58.5/-112 faces those passing/finishing paths. No six-market selection is earned.",
+      "retained_material": "Current officialSMU recap showsJennings threepassingTDs and six straight second-half touchdown drives againstCal after trailing at halftime. Syracuse's retained officialUNC recap hasAngeli256passing/Miller125rushing and an overtime win after missedPAT. Strong second-half output is not an assumed full-game road margin; overtime is excluded from regulation pace inference.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -9.5,
+        "away_spread_price": -122,
+        "home_spread": 10.5,
+        "home_spread_price": -115,
+        "away_ml": -380,
+        "home_ml": 310,
+        "over_total": 57.5,
+        "over_price": -115,
+        "under_total": 58.5,
+        "under_price": -112
+      },
+      "prior_research_binding": {
+        "checkpoint": "progress",
+        "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+        "recorded_at_utc": "2026-10-27T21:54:35.994Z"
+      },
+      "next_analytical_question": "Compare Syracuse passing/rushing competitiveness with SMU finishing, treating the separately offered +10.5 and -9.5 honestly. Determine which side has the stronger ordinary-game mechanism.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "0.7535424806658062",
+        "pred_total": "55.796843174858715",
+        "pred_win": "0.48963770327433453"
+      }
+    },
+    {
+      "game_id": "401859185",
+      "away_team": "Notre Dame",
+      "home_team": "Navy",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "EXCLUDED",
+      "assessment": "ORIGINAL_EXCLUSION_NOT_FOOTBALL_PASS"
+    },
+    {
+      "game_id": "401858277",
+      "away_team": "California",
+      "home_team": "NC State",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "EXCLUDED",
+      "assessment": "ORIGINAL_EXCLUSION_NOT_FOOTBALL_PASS"
+    },
+    {
+      "game_id": "401858503",
+      "away_team": "Illinois",
+      "home_team": "Maryland",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Illinois-2.5 gets dearer at-110 and-128winner, while Maryland+2.5/+114 is unchanged. Houser's broken hand and replacement offense remain concrete resistance to the Illinois margin despite recent defensive/rushing success. Maryland's receiving/ball-security strengths coexist with interim transition risk.54.5over modestly cheaper still faces protection and coaching uncertainty; under faces explosive receiving and short fields. No side, winner or total preferred.",
+      "retained_material": "Illinois officialpreview confirmsHouser's broken hand andClayton replacement, recent defense holdingOregon10, Laughery123rushing. NewMaryland preview confirmsinterimAbdul-Rahim debut; five turnover-free games, Durr's repeated100-yard receiving outings and Washington's low career sack total describe an offense not automatically overwhelmed byIllinois pressure. No coaching-bounce adjustment invented.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -2.5,
+        "away_spread_price": -110,
+        "home_spread": 2.5,
+        "home_spread_price": -105,
+        "away_ml": -128,
+        "home_ml": 114,
+        "over_total": 54.5,
+        "over_price": -108,
+        "under_total": 54.5,
+        "under_price": -105
+      },
+      "prior_research_binding": {
+        "checkpoint": "progress",
+        "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+        "recorded_at_utc": "2026-10-27T21:54:35.994Z"
+      },
+      "next_analytical_question": "Verify the current implications of Houser replacement and Maryland coaching transition; distinguish known personnel change from an assumed coaching bounce.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "6.678168905095836",
+        "pred_total": "57.3814294930684",
+        "pred_win": "0.6251673219208373"
+      }
+    },
+    {
+      "game_id": "401858279",
+      "away_team": "Boston College",
+      "home_team": "Duke",
+      "saved_state": "CONDITIONAL",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "ELAPSED_OR_EXPIRED_HISTORY_NOT_CURRENT_CHOICE"
+    },
+    {
+      "game_id": "401858507",
+      "away_team": "Michigan",
+      "home_team": "Rutgers",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "EXCLUDED",
+      "assessment": "ORIGINAL_EXCLUSION_NOT_FOOTBALL_PASS"
+    },
+    {
+      "game_id": "401856735",
+      "away_team": "Auburn",
+      "home_team": "Ole Miss",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "All six current offers are unchanged. Auburn's protection/run failures remain opposed by OleMiss explosive passing; those mechanisms still resist dog points and favorite margin respectively. Over56.5 faces stalled Auburn drives; under57.5 faces Chambliss/Brown explosive output. The winner premiums do not independently justify an upset or a heavy favorite. Earlier PASS rationale remains applicable after checking the complete new board.",
+      "retained_material": "OfficialAuburn LSU recap: seven sacks/12TFLallowed,67netrushing, Brown160passing; trailed31-10at halftime and late backupTD aided17points. No injury reason forTi'a appearance inferred. Current officialOleMiss preview confirmsChambliss1926seasonpassing/16TD and Brown's480rushing/sixscores. Strong opposition tempers Auburn aggregates, but current protection and explosive-pass concessions are concrete risks to the points thesis.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 13.5,
+        "away_spread_price": -112,
+        "home_spread": -13.0,
+        "home_spread_price": -111,
+        "away_ml": 400,
+        "home_ml": -490,
+        "over_total": 56.5,
+        "over_price": -114,
+        "under_total": 57.5,
+        "under_price": -108
+      },
+      "prior_research_binding": {
+        "checkpoint": "finalthree",
+        "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+        "recorded_at_utc": "2026-10-27T21:59:32.989Z"
+      },
+      "next_analytical_question": "Determine whether Ole Miss pressure/explosives or Auburn protection/run failure creates the stronger repeatable mismatch; ordinary game risk is not itself a veto.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "4.319371690827976",
+        "pred_total": "59.13033031639755",
+        "pred_win": "0.6322317619339572"
+      }
+    },
+    {
+      "game_id": "401871096",
+      "away_team": "Marshall",
+      "home_team": "Old Dominion",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "ODU now gets+3/-111 instead of+2.5/+100, gaining a push at3 but losing the favorable payout. Marshall-2.5 is dearer at-122; winner prices-142/+128also do not solve Turner medical-tent uncertainty versus ODU's newQB/lefttackle disruption. Total falls45.5to43.5; under protection is reduced, while the over still faces inefficient/disrupted drives. No branch is selected; no final player-status claim.",
+      "retained_material": "Marshall's20-13SouthAlabama win required a late75-yard rushing drive led by backupWilkins after Turner went to the medical tent. Turner availability is not established. Marshall heldHollins12/33with an interception. ODU's latest141yards/shutout came with first starts at quarterback and left tackle; future stabilization is unproved.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -2.5,
+        "away_spread_price": -122,
+        "home_spread": 3.0,
+        "home_spread_price": -111,
+        "away_ml": -142,
+        "home_ml": 128,
+        "over_total": 43.5,
+        "over_price": -111,
+        "under_total": 43.5,
+        "under_price": -105
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision2",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T015520Z",
+        "recorded_at_utc": "2026-10-27T02:17:02.969Z"
+      },
+      "next_analytical_question": "Reassess Turner status and ODU QB/left-tackle continuity. These are specific information needs, not a requirement for perfect all-player certainty.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "10.531260063331388",
+        "pred_total": "45.065189578232356",
+        "pred_win": "0.723554751309223"
+      }
+    },
+    {
+      "game_id": "401869944",
+      "away_team": "Coastal Carolina",
+      "home_team": "Georgia State",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "EXCLUDED",
+      "assessment": "ORIGINAL_EXCLUSION_NOT_FOOTBALL_PASS"
+    },
+    {
+      "game_id": "401856846",
+      "away_team": "Kansas State",
+      "home_team": "Colorado",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Both teams show+1.5 from separate mixed-book cells, not a paired executable line. KState's-118 and Colorado's-122juice make both points offers expensive; nearly even winner prices do not resolve Johnson/Knuth health flags versus Colorado turnovers and defensive concessions.47.5over is cheaper at-105 but still faces quarterback/drive friction; under-112faces Colorado explosive stretches. Retain researched PASS across all six.",
+      "retained_material": "Current K-State coach transcript identifies AveryJohnson as day-to-day and JacobKnuth with an ankle tweak after his first career start. Colorado's57-24loss included a24-23halftime lead and222first-half passing yards; second-half turnovers and598yards allowed limit the dog case. No starter/healthy status assumed.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 1.5,
+        "away_spread_price": -118,
+        "home_spread": 1.5,
+        "home_spread_price": -122,
+        "away_ml": -102,
+        "home_ml": -110,
+        "over_total": 47.5,
+        "over_price": -105,
+        "under_total": 47.5,
+        "under_price": -112
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision1",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T015520Z",
+        "recorded_at_utc": "2026-10-27T02:13:44.782Z"
+      },
+      "next_analytical_question": "Reassess Johnson/Knuth availability and Colorado second-half turnover causes; keep same-sign mixed-book spreads from becoming an invented paired market.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "-14.59982171248134",
+        "pred_total": "51.15289598048278",
+        "pred_win": "0.164036895339676"
+      }
+    },
+    {
+      "game_id": "401871097",
+      "away_team": "Louisiana Tech",
+      "home_team": "South Alabama",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "LouisianaTech-5.5/-108 is unchanged, while-210winner is slightly dearer; SouthAlabama+5.5juice improves to-108. Tech's early scoring/run-defense against disrupted ODU supports the visitor but is not transferable unchanged to a different offense. Hollins12/33and interception oppose the dog.58.5over-105andunder-112have different costs but retain explosive/short-field routes versus passing inefficiency. No preferred main market.",
+      "retained_material": "ODU's official recap confirms Louisiana Tech opened with 75- and 66-yard touchdown drives and held ODU to 141 yards. ODU's first quarterback/left-tackle starts limit transfer. The retained Marshall-South Alabama official recap shows Hollins 12/33 with an interception in a 20-13 loss; that road result does not erase South Alabama's earlier scoring ceiling.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -5.5,
+        "away_spread_price": -108,
+        "home_spread": 5.5,
+        "home_spread_price": -108,
+        "away_ml": -210,
+        "home_ml": 180,
+        "over_total": 58.5,
+        "over_price": -105,
+        "under_total": 58.5,
+        "under_price": -112
+      },
+      "prior_research_binding": {
+        "path": "evidence/operational/CFB_CATCHUP_20261027T214022Z_RESEARCH_RECONCILIATION.json",
+        "commit": "9d66f870fb6345f1952fca2268bfb2175c3dbd49"
+      },
+      "next_analytical_question": "Test transfer of Louisiana Tech production against disrupted ODU to South Alabama; distinguish Hollins recent inefficiency from a season-long inability to score.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "5.700510476284662",
+        "pred_total": "51.61800449703313",
+        "pred_win": "0.6363063614314357"
+      }
+    },
+    {
+      "game_id": "401861966",
+      "away_team": "UConn",
+      "home_team": "Air Force",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "UConn+1.5/-115 and-105winner remain opposed by AirForce's home possession/run structure; AirForce+1/-114and-108winner remain opposed by Medders' retained injury and fumble risk. The two sides are not one executable spread.51.5over gets two cents cheaper, insufficient to overcome long-drive scoring friction; under faces rushing success/shortfields. Earlier explicit current-vs2025source distinction retained; no six-market change earned.",
+      "retained_material": "Air Force's current preview reports 304 rushing yards but three lost fumbles in its 28-14 Wyoming loss; Medders left injured after 115 rushing yards. This is a current injury flag, unlike the explicitly historical Szarka injury in the 2025 series paragraph. UConn's rebuilt roster and latest running success limit using last year's series result. No diagnosis or starter assurance inferred.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 1.5,
+        "away_spread_price": -115,
+        "home_spread": 1.0,
+        "home_spread_price": -114,
+        "away_ml": -105,
+        "home_ml": -108,
+        "over_total": 51.5,
+        "over_price": -110,
+        "under_total": 51.5,
+        "under_price": -105
+      },
+      "prior_research_binding": {
+        "path": "evidence/operational/CFB_CATCHUP_20261027T214022Z_RESEARCH_RECONCILIATION.json",
+        "commit": "9d66f870fb6345f1952fca2268bfb2175c3dbd49"
+      },
+      "next_analytical_question": "Reassess Medders injury implications and both teams possession/run mechanisms; retain the explicit separation from historical 2025 injury text.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "4.495233795120177",
+        "pred_total": "50.64650245925968",
+        "pred_win": "0.654638460129586"
+      }
+    },
+    {
+      "game_id": "401862815",
+      "away_team": "Temple",
+      "home_team": "East Carolina",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "EXCLUDED",
+      "assessment": "ORIGINAL_EXCLUSION_NOT_FOOTBALL_PASS"
+    },
+    {
+      "game_id": "401858283",
+      "away_team": "Stanford",
+      "home_team": "Louisville",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Stanford+22.5and+1150gain no new cushion; road weakness still opposes the dog. Louisville-22.5/-108and-1818remain substantial margin/winner demands despite passing/long-run upside. Over drops60.5to59.5at-110, improving threshold but facing stagnant second-half drives; under60.5is dearer-112and faces explosive scores. Retain all six declined branches.",
+      "retained_material": "Louisville's latest425yards included310passing and an82-yard quarterback rushingTD, but it allowed462yards and needed late defensive stops in34-26win. Brohm described a stagnant second-half offense. Stanford's latest rushing improvement and pronounced road weakness pull in opposite directions; Louisville had a bye.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 22.5,
+        "away_spread_price": -110,
+        "home_spread": -22.5,
+        "home_spread_price": -108,
+        "away_ml": 1150,
+        "home_ml": -1818,
+        "over_total": 59.5,
+        "over_price": -110,
+        "under_total": 60.5,
+        "under_price": -112
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision2",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T015520Z",
+        "recorded_at_utc": "2026-10-27T02:17:02.969Z"
+      },
+      "next_analytical_question": "Distinguish Louisville explosive plays from sustainable drive success and evaluate Stanford road offense against the large lay, without extrapolating one long run.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "23.45577448110459",
+        "pred_total": "60.240276251627684",
+        "pred_win": "0.9154723210286189"
+      }
+    },
+    {
+      "game_id": "401864531",
+      "away_team": "UTEP",
+      "home_team": "North Dakota State",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "UTEP+24.5andNDSU-24spreads unchanged. Dog payout rises+1400to+1450but its11sacks/14TFLallowedandQBdisruption remain severe resistance; NDSU's53rushing yards opposes the favorite lay and more expensive-2500winner.42.5totals still balance suppressed drives against pressure/short-field scores. No price improvement resolves those distinct opposing cases.",
+      "retained_material": "New officialUTEP SanJose recap:Colson6/6for87before knockedout, Moore19/28for195inrelief;11sacks/14TFLallowed, only11points. Retained officialUNM recap showsNDSU53rushing and a close21-16loss materially affected bypick-six. Original20.3home margin is not refreshed for either protection or offensive mismatch.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 24.5,
+        "away_spread_price": -115,
+        "home_spread": -24.0,
+        "home_spread_price": -111,
+        "away_ml": 1450,
+        "home_ml": -2500,
+        "over_total": 42.5,
+        "over_price": -110,
+        "under_total": 42.5,
+        "under_price": -108
+      },
+      "prior_research_binding": {
+        "checkpoint": "progress",
+        "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+        "recorded_at_utc": "2026-10-27T21:54:35.994Z"
+      },
+      "next_analytical_question": "Reassess UTEP QB/protection and NDSU offensive limitations; an injury label or eleven sacks does not quantify how much of the current large spread is already priced.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "20.311538771491833",
+        "pred_total": "49.203682238756244",
+        "pred_win": "0.8746584883715226"
+      }
+    },
+    {
+      "game_id": "401858505",
+      "away_team": "Northwestern",
+      "home_team": "Oregon",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "EXCLUDED",
+      "assessment": "ORIGINAL_EXCLUSION_NOT_FOOTBALL_PASS"
+    },
+    {
+      "game_id": "401860910",
+      "away_team": "Colorado State",
+      "home_team": "Utah State",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "CSU+6.5andUtahState-6.5unchanged;UtahStatewinner dearer-230. CSU's repeat high-yardage defensive leakage argues against dog/under, while UtahState's285yardsand17points argues against favorite/over. Cheaper63.5over-105anddearerunder-111do not settle that conflict. No preferred side, winner or total.",
+      "retained_material": "ColoradoState's56-49SanDiegoState game produced1114combinedyards and showed major defensive volatility; its preceding66-27TexasState loss also argues against a simple under. UtahState just gained285yards/73rushing and scored17againstTexasState. Frozen home-margin direction and total differ sharply from current prices without current calibration.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 6.5,
+        "away_spread_price": -108,
+        "home_spread": -6.5,
+        "home_spread_price": -108,
+        "away_ml": 200,
+        "home_ml": -230,
+        "over_total": 63.5,
+        "over_price": -105,
+        "under_total": 63.5,
+        "under_price": -111
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision1",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T015520Z",
+        "recorded_at_utc": "2026-10-27T02:13:44.782Z"
+      },
+      "next_analytical_question": "Determine whether CSU defensive leakage or Utah State stalled offense should dominate the high-total case; do not merely cancel two descriptive recaps.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "-4.686728804289869",
+        "pred_total": "51.6112210095398",
+        "pred_win": "0.37601709369661257"
+      }
+    },
+    {
+      "game_id": "401856843",
+      "away_team": "Arizona State",
+      "home_team": "BYU",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "BYU now lays16.5/-108instead of16/-111and itswinner is dearer-752;ASU+16.5unchangedbutupsetpayout+570is larger. ASU quarterback injury and line churn oppose its points/winner case, while BYU double-overtime scoring and increased lay limit favorite/over extrapolation.48.5under faces rushing/explosive routes. Six researched PASS branches retained without diagnosis or final starter assertion.",
+      "retained_material": "ASU's Keene left hurt; three quarterbacks and sixth line combination in seven games make its four-touchdown rushing performance difficult to transfer. BYU lost in double overtime, which inflated the comparison total.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 16.5,
+        "away_spread_price": -110,
+        "home_spread": -16.5,
+        "home_spread_price": -108,
+        "away_ml": 570,
+        "home_ml": -752,
+        "over_total": 48.5,
+        "over_price": -105,
+        "under_total": 48.5,
+        "under_price": -110
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision2",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T015520Z",
+        "recorded_at_utc": "2026-10-27T02:17:02.969Z"
+      },
+      "next_analytical_question": "Resolve ASU current QB/line implications and remove double-overtime inflation from BYU scoring context before comparing side and total preferences.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "16.187459572143922",
+        "pred_total": "56.836393987807924",
+        "pred_win": "0.8511204113016558"
+      }
+    },
+    {
+      "game_id": "401856845",
+      "away_team": "Kansas",
+      "home_team": "TCU",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Kansas+6andTCU-5.5remain unchanged; TCUunder46.5costs-105ratherthan-102. Kansas rushing and blocked-field-goal finish oppose buying the frozen TCU margin; TCU372passing yards opposes the dog and under, while defensive resistance opposes over. Unchanged-210/+190winnerprices add no independent preference. Six branches remain declined.",
+      "retained_material": "TCU's latest20-24loss still includedCraig33/47for372passing yards. Kansas won25-24overBaylor withEdwards156rushing and a blockedfieldgoal. TCU's descriptive defensive strength and frozen margin favor investigation, but neither that unadjusted context nor two close finishes gives a trustworthy current cover/win probability.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 6.0,
+        "away_spread_price": -108,
+        "home_spread": -5.5,
+        "home_spread_price": -115,
+        "away_ml": 190,
+        "home_ml": -210,
+        "over_total": 46.5,
+        "over_price": -112,
+        "under_total": 46.5,
+        "under_price": -105
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision1",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T015520Z",
+        "recorded_at_utc": "2026-10-27T02:13:44.782Z"
+      },
+      "next_analytical_question": "Weigh Kansas rushing against TCU passing/defensive context; blocked-kick and close-finish anecdotes do not explain a durable price preference by themselves.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "10.61882799787693",
+        "pred_total": "49.21956516527414",
+        "pred_win": "0.7411277196150335"
+      }
+    },
+    {
+      "game_id": "401858501",
+      "away_team": "Minnesota",
+      "home_team": "Indiana",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "EXCLUDED",
+      "assessment": "ORIGINAL_EXCLUSION_NOT_FOOTBALL_PASS"
+    },
+    {
+      "game_id": "401871095",
+      "away_team": "Southern Miss",
+      "home_team": "UL Monroe",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Over rises55.5to56.5whilejuiceimproves-112to-108;under56.5isonecentcheaper. USM286rushing/fourrushTDsupside and299passingyardsconceded counter under, while ULM243totalyards and nonoffensive scoring temper over. Spreads/winnersunchanged; neither USMseparationnorULMupsetis earned from the retained pick-six/lateral-return assisted outcomes. Preserve raw149passing discrepancy.",
+      "retained_material": "OfficialUSM recap:286rushing/fourrushTDs,299passingyardsallowed and a pick-six assisted35-31win. OfficialTroy-ULM recap/table:ULM243yards; late offensive scores plus a defensive return changed a low-output game. ULM table149passing conflicts with an earlier manual119claim;149inrawtable retained as observed, prior finding not silently rewritten.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -3.5,
+        "away_spread_price": -105,
+        "home_spread": 3.5,
+        "home_spread_price": -112,
+        "away_ml": -162,
+        "home_ml": 142,
+        "over_total": 56.5,
+        "over_price": -108,
+        "under_total": 56.5,
+        "under_price": -110
+      },
+      "prior_research_binding": {
+        "checkpoint": "progress",
+        "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+        "recorded_at_utc": "2026-10-27T21:54:35.994Z"
+      },
+      "next_analytical_question": "Separate offensive scoring from pick-six/lateral-return assistance and preserve the raw ULM 149-passing observation rather than the earlier 119 claim.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "-8.106471857997493",
+        "pred_total": "56.809115329531835",
+        "pred_win": "0.3136982404826161"
+      }
+    },
+    {
+      "game_id": "401871059",
+      "away_team": "Florida International",
+      "home_team": "Liberty",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "EXCLUDED",
+      "assessment": "ORIGINAL_EXCLUSION_NOT_FOOTBALL_PASS"
+    },
+    {
+      "game_id": "401856734",
+      "away_team": "Florida",
+      "home_team": "Georgia",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Florida+12gains halfpointversus+11.5butitswinnerpayoutfalls+360to+350;Georgia-11.5unchangedand-450slightlycheaper. Florida'sQB/healthquestions andGeorgiafront oppose dog/over; Florida'srunning/upset route and neutral-site setting oppose automaticfavorite.54.5total is a point lower, helping over threshold but reducing under protection; neither resolves those mechanisms. Retain independent side/winner/totalPASS.",
+      "retained_material": "Retained current Florida official preview identifies Jones and Philo taking reps, Philo recovering from a shoulder injury and Jones nursing bumps from his first start; no starter was promised. Jones' Texas win had 155 passing yards, while Baugh had 91 rushing. Georgia's current preview reports offensive-line continuity and strong two-way aggregates. This is neutral-site Atlanta, not Georgia's campus.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 12.0,
+        "away_spread_price": -108,
+        "home_spread": -11.5,
+        "home_spread_price": -110,
+        "away_ml": 350,
+        "home_ml": -450,
+        "over_total": 54.5,
+        "over_price": -115,
+        "under_total": 54.5,
+        "under_price": -102
+      },
+      "prior_research_binding": {
+        "path": "evidence/operational/CFB_CATCHUP_20261027T214022Z_RESEARCH_RECONCILIATION.json",
+        "commit": "9d66f870fb6345f1952fca2268bfb2175c3dbd49"
+      },
+      "next_analytical_question": "Reassess Florida QB reps/shoulder context and Georgia front at the neutral site; missing final assurance alone cannot rule out a supported qualitative view.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "13.358480139729341",
+        "pred_total": "65.99623168757266",
+        "pred_win": "0.7885560177914632"
+      }
+    },
+    {
+      "game_id": "401856848",
+      "away_team": "Utah",
+      "home_team": "Cincinnati",
+      "saved_state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "ELAPSED_OR_EXPIRED_HISTORY_NOT_CURRENT_CHOICE"
+    },
+    {
+      "game_id": "401858284",
+      "away_team": "Virginia",
+      "home_team": "Wake Forest",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Virginia+12.5andWake-12.5unchanged;Wakewinnerdearer-521. Wake'sLopezpassing/restsupports host scoring, but Virginia'sdefensiveresistanceopposepayingforseparation;Virginia protection/finishingproblems oppose dog/+400winner.49.5over-106andunder-111remainopposedbyexplosives/shortfieldsversusdefensivecontrol. No branch promoted.",
+      "retained_material": "Wake's latest41-7Cal win had Lopez267passing/fourTDs plus51rushing, and a bye followed. Virginia's19-16Duke loss included missing defensive starters, protection problems and weak scoring. Virginia's defensive resistance remains a counterweight; originalVirginia5.7favorite now conflicts strongly with currentWake13.5favorite and is not a current personnel adjustment.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 12.5,
+        "away_spread_price": -110,
+        "home_spread": -12.5,
+        "home_spread_price": -108,
+        "away_ml": 400,
+        "home_ml": -521,
+        "over_total": 49.5,
+        "over_price": -106,
+        "under_total": 49.5,
+        "under_price": -111
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision2",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T015520Z",
+        "recorded_at_utc": "2026-10-27T02:17:02.969Z"
+      },
+      "next_analytical_question": "Explain the original Virginia-favorite/current Wake-favorite reversal with matchup/personnel context; compare current 12.5 points rather than stale 13.5 prose.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "-5.690307368948456",
+        "pred_total": "54.51339880089259",
+        "pred_win": "0.3802425820196452"
+      }
+    },
+    {
+      "game_id": "401864529",
+      "away_team": "New Mexico",
+      "home_team": "San José State",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "NewMexico-14.5andSanJose+15unchanged;dogwinnerpayoutdrops+530to+500. UNMrun suppression supports favorite/under, but its279yards and pick-six-assisted latest win oppose a two-touchdown lay and favoritepremium. SanJose91passingyards opposes dog/over. Side-specific41.5over/42.5under retained; no main-market preference.",
+      "retained_material": "NewMexico allowed251yards/53rushing and gained279in21-16win materially helped by a pick-six. SanJose's last official box shows91passing yards byLukeWeaver in28-13loss; participation does not certify a current starter.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -14.5,
+        "away_spread_price": -110,
+        "home_spread": 15.0,
+        "home_spread_price": -111,
+        "away_ml": -667,
+        "home_ml": 500,
+        "over_total": 41.5,
+        "over_price": -112,
+        "under_total": 42.5,
+        "under_price": -115
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision1",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T015520Z",
+        "recorded_at_utc": "2026-10-27T02:13:44.782Z"
+      },
+      "next_analytical_question": "Distinguish UNM run suppression from pick-six-assisted separation and San Jose passing weakness; identify whether price already compensates for offensive limitations.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "-7.33449986256627",
+        "pred_total": "44.55662918107981",
+        "pred_win": "0.31769446869000484"
+      }
+    },
+    {
+      "game_id": "401856736",
+      "away_team": "South Carolina",
+      "home_team": "Oklahoma",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "SouthCarolina loses a point to+4.5butgets-105ratherthan-112;its+164winnerandOklahoma-4.5/-110,-182remain unchanged. Sellers dual-threat route supportsdog/over, but reliance on late stops/strip-sack field position opposes simply buying visitor; Oklahoma's disrupted-opponent performance limits favorite extrapolation.44.5over slightlycheaper-105doesnotsettleunevendrivesversusupside. Retain sixPASSbranches.",
+      "retained_material": "SouthCarolina's Sellers produced210passing/96rushing in a27-24win requiring a late fourth-down stop, strip sack and48-yard field goal. Oklahoma produced283passing/184rushing againstMSU; opposingTaylor's injury limits extrapolating the defensive result.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 4.5,
+        "away_spread_price": -105,
+        "home_spread": -4.5,
+        "home_spread_price": -110,
+        "away_ml": 164,
+        "home_ml": -182,
+        "over_total": 44.5,
+        "over_price": -105,
+        "under_total": 44.5,
+        "under_price": -110
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision1",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T015520Z",
+        "recorded_at_utc": "2026-10-27T02:13:44.782Z"
+      },
+      "next_analytical_question": "Compare Sellers dual-threat path with Oklahoma opposition-adjusted performance; late stops and field position are risks, not automatic reasons to reject a dog.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "1.9976207150226601",
+        "pred_total": "46.03759623778151",
+        "pred_win": "0.544129647344929"
+      }
+    },
+    {
+      "game_id": "401858508",
+      "away_team": "Nevada",
+      "home_team": "UCLA",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Nevada+22.5is two centsdearer;UCLA-22.5threecentscheaperandwinnerdearer-1818. UCLAdefense/rushing supports host but not an automatic margin twice original11.5;Nevada'spriorrun/passsuppressionwasagainstSanJose.44.5overonecentcheaperstillfaceslowdriveoutput,underfaceshostexplosives/shortfields. No side/winner/totalpreferred.",
+      "retained_material": "Retained officialUCLA notes:156yards allowed vsMSU,245rushing, opponents12/70third downs acrosssixgames. Nevada's officialSanJose box records28-13win and only91opposingpassing yards, descriptive against a different offense. UCLA is a much different matchup; the original11.5home margin conflicts with laying22.5now, without a refreshed forecast.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 22.5,
+        "away_spread_price": -108,
+        "home_spread": -22.5,
+        "home_spread_price": -108,
+        "away_ml": 1400,
+        "home_ml": -1818,
+        "over_total": 44.5,
+        "over_price": -104,
+        "under_total": 44.5,
+        "under_price": -114
+      },
+      "prior_research_binding": {
+        "checkpoint": "progress",
+        "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+        "recorded_at_utc": "2026-10-27T21:54:35.994Z"
+      },
+      "next_analytical_question": "Explain the large original/current UCLA-margin difference using opponent context and sustainable defense rather than treating either number as current truth.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "11.487055478910321",
+        "pred_total": "56.11092212907221",
+        "pred_win": "0.7592982366080254"
+      }
+    },
+    {
+      "game_id": "401858506",
+      "away_team": "Purdue",
+      "home_team": "Penn State",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Purdue's+9/-111improves+7.5/-105substantiallyand+270winneris larger, whilePennState-7.5nowcosts-115and-319winner. PurdueBrownepassing/restsupports points, but488yards/15explosivesalloweddespitefiveforcedturnoversremains substantivecounterevidence. PennStateexplosive/pressurecasefacesrestedvisitorandmargin demand.54.5overcheaper-108andunder-105retainproductionversusturnoverconversiontension; no new preferred branch.",
+      "retained_material": "OfficialPurdue schedule/currentcoach page confirms bye beforePennState and its latest26-38Washington loss following41-13Minnesota and24-17Illinois wins. PennState currentnotes describeSowell receiving explosives, Collins coverage andRojas pressure. Historical series wins are excluded from edge inference; the original20.6margin is not a current personnel-adjusted number. New official latestrecap: Purdue forcedfive Washington turnovers yet allowed488yards/15plays of15-plusyards; Browne21/41for273yards. This tempers inferring defensive quality from the takeaways.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 9.0,
+        "away_spread_price": -111,
+        "home_spread": -7.5,
+        "home_spread_price": -115,
+        "away_ml": 270,
+        "home_ml": -319,
+        "over_total": 54.5,
+        "over_price": -108,
+        "under_total": 54.5,
+        "under_price": -105
+      },
+      "prior_research_binding": {
+        "checkpoint": "progress",
+        "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+        "recorded_at_utc": "2026-10-27T21:54:35.994Z"
+      },
+      "next_analytical_question": "Compare Purdue rest/passing and defensive explosives allowed with Penn State pressure/receiving; distinguish five takeaways from repeatable defensive quality.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "20.645638272387664",
+        "pred_total": "57.41110459420837",
+        "pred_win": "0.8787915153960462"
+      }
+    },
+    {
+      "game_id": "401869846",
+      "away_team": "App State",
+      "home_team": "Georgia Southern",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "All six currentoffersunchanged. Singleton'sproductive return supportsApppoints/over,butGeorgiaSouthernpressureandrunTDpreventioncounterthattransfer. GeorgiaSouthern-5needsmarginagainstApppassingupside;56.5underfacesbothpassing/shortfieldroutes. Winnerprices-205/+176notindependentlypreferred. Retain sixPASSbrancheswithoutassumingfinalclearanceorusingovertimeasregulationpace.",
+      "retained_material": "Current official search-recovered App recap/notes: Singleton26/40for271yards/twoTD/noINT, Hasselbeck14passingyards/oneTD; App366total/81rushing againstJMU. Singleton had missed the prior Coastal second half due to injury; no current-week clearance inferred. GeorgiaSouthern currentpreview19sacks/three rushTDsallowed. Overtime and a missedJMUfieldgoal are not regulation pace.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 5.5,
+        "away_spread_price": -110,
+        "home_spread": -5.0,
+        "home_spread_price": -111,
+        "away_ml": 176,
+        "home_ml": -205,
+        "over_total": 56.5,
+        "over_price": -108,
+        "under_total": 56.5,
+        "under_price": -110
+      },
+      "prior_research_binding": {
+        "checkpoint": "progress",
+        "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+        "recorded_at_utc": "2026-10-27T21:54:35.994Z"
+      },
+      "next_analytical_question": "Reassess Singleton current role and Georgia Southern pressure/run-TD prevention; remove overtime from pace reasoning and avoid treating past participation as final clearance.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "-1.2164781787103556",
+        "pred_total": "47.735706328738324",
+        "pred_win": "0.43239638661503443"
+      }
+    },
+    {
+      "game_id": "401858280",
+      "away_team": "Clemson",
+      "home_team": "Florida State",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "EXCLUDED",
+      "assessment": "ORIGINAL_EXCLUSION_NOT_FOOTBALL_PASS"
+    },
+    {
+      "game_id": "401856847",
+      "away_team": "Oklahoma State",
+      "home_team": "Iowa State",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "IowaState+9.5addsahalfpointbutjuiceworsens-108to-112;OklahomaState-8.5also getsdearer-112anddogpayout+280is larger. OSU598yards/410passing supportsfavorite/overbutitsdefensiveconcessionsandhalftimedeficitcountermargin. ISU221yards/52rushingandQBtransitioncounterdog/over;underfacesvisitorceiling.57.5over/58.5underpreservedseparately;no six-marketselection.",
+      "retained_material": "OklahomaState's598yards/410passing againstColorado were impressive but it trailed24-23at half. IowaState managed221yards/52rushing againstArizona and changed fromRaynor toMoberly at halftime; no injury diagnosis inferred.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -8.5,
+        "away_spread_price": -112,
+        "home_spread": 9.5,
+        "home_spread_price": -112,
+        "away_ml": -330,
+        "home_ml": 280,
+        "over_total": 57.5,
+        "over_price": -114,
+        "under_total": 58.5,
+        "under_price": -120
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision1",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T015520Z",
+        "recorded_at_utc": "2026-10-27T02:13:44.782Z"
+      },
+      "next_analytical_question": "Reassess Iowa State QB transition and Oklahoma State offensive ceiling versus defensive concessions; separate halftime narrative from repeatable full-game mechanisms.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "5.838154696866955",
+        "pred_total": "47.053876102043105",
+        "pred_win": "0.6442862899563238"
+      }
+    },
+    {
+      "game_id": "401860909",
+      "away_team": "Washington State",
+      "home_team": "San Diego State",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "WSU+2.5juiceworsens-102to-105whilewinnerpayoutimproves+120;SDSU-135to-138isdearer. WSUcompetitivenessbeforeBoise'slate surge supportsdogbutSaunders369passingopposeit;his two interceptions and56concededopposehost.48.5overdearer-108facesfatigue/turnovers;underfacespassing/leakage. No preferredbranch,derivativeorparlay.",
+      "retained_material": "SDSU's current preview confirms Saunders' first college start produced 369 passing yards, two touchdowns and two interceptions in a 56-49 loss. Both teams are playing their ninth consecutive week. WSU's retained official Boise opponent recap documents a game tied entering the fourth before three late Boise touchdowns; the final margin overstates early separation.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 2.5,
+        "away_spread_price": -105,
+        "home_spread": -2.5,
+        "home_spread_price": -114,
+        "away_ml": 120,
+        "home_ml": -138,
+        "over_total": 48.5,
+        "over_price": -108,
+        "under_total": 48.5,
+        "under_price": -110
+      },
+      "prior_research_binding": {
+        "path": "evidence/operational/CFB_CATCHUP_20261027T214022Z_RESEARCH_RECONCILIATION.json",
+        "commit": "9d66f870fb6345f1952fca2268bfb2175c3dbd49"
+      },
+      "next_analytical_question": "Assess Saunders first-start passing and interceptions against WSU competitiveness and shared ninth-straight-week fatigue; do not give a one-sided rest adjustment.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "2.8553657293259267",
+        "pred_total": "45.05500712113508",
+        "pred_win": "0.5698491698751513"
+      }
+    },
+    {
+      "game_id": "401858282",
+      "away_team": "Miami",
+      "home_team": "North Carolina",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Miami-14isahalfpointeasierthan14.5andwinnercheaper-581;UNC+14.5isdearer-124andpayoutsmaller+455. Mensah/Toneyexplosives supportfavorite/over,butUNCpassingupsideandMiami'sshortfield/opponentcontextstillcounterbuyingtwotouchdowns.52.5over-108versusunder-110retaincompetingpassinganddrivecontrolpaths. No automaticselectionfromfavoritecostimprovement.",
+      "retained_material": "The batch's official Miami recap confirms Mensah's 387 passing yards/four touchdowns and Toney's 194 receiving yards against Pitt; short fields and opposing personnel matter. Syracuse's official latest UNC recap records Edwards' 271 passing yards in an overtime loss. Neither final score is treated as regulation pace or an adjusted margin forecast.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -14.0,
+        "away_spread_price": -108,
+        "home_spread": 14.5,
+        "home_spread_price": -124,
+        "away_ml": -581,
+        "home_ml": 455,
+        "over_total": 52.5,
+        "over_price": -108,
+        "under_total": 52.5,
+        "under_price": -110
+      },
+      "prior_research_binding": {
+        "path": "evidence/operational/CFB_CATCHUP_20261027T214022Z_RESEARCH_RECONCILIATION.json",
+        "commit": "9d66f870fb6345f1952fca2268bfb2175c3dbd49"
+      },
+      "next_analytical_question": "Distinguish Miami passing strength from short-field/opposing-personnel effects and compare UNC passing path at the improved favorite line.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "-8.03641328815152",
+        "pred_total": "52.125932852800545",
+        "pred_win": "0.31101386981043655"
+      }
+    },
+    {
+      "game_id": "401858281",
+      "away_team": "Georgia Tech",
+      "home_team": "Pittsburgh",
+      "saved_state": "CONDITIONAL",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "ELAPSED_OR_EXPIRED_HISTORY_NOT_CURRENT_CHOICE"
+    },
+    {
+      "game_id": "401856737",
+      "away_team": "Mississippi State",
+      "home_team": "Texas",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Texaswinnerdearer-1429andMSUpayout+900larger,butTaylor'sestablishedseasonendingabsencecontinuesmateriallytoopposeMSUscoringandtheoldnear-pickemmodel. Texas-20needsmorethanmerelywinning;MSU+20.5needsenoughoffense.50.5overonecentcheaperstillfacesimpairedvisitorattack;underfaceshostexplosives/shortfieldpoints. No side,winnerortotalpreferred.",
+      "retained_material": "NEW officialMississippiState Oct27statement confirmsTaylor out for rest of2026 with a foot injury requiring surgery. The original near-pickem frozen projection cannot be treated as current offense with him available. Texas's retained official34-27OleMiss win had rushing/explosive and defensive/special-teams mechanisms, not a pure drive-efficiency forecast.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 20.5,
+        "away_spread_price": -108,
+        "home_spread": -20.0,
+        "home_spread_price": -111,
+        "away_ml": 900,
+        "home_ml": -1429,
+        "over_total": 50.5,
+        "over_price": -111,
+        "under_total": 50.5,
+        "under_price": -105
+      },
+      "prior_research_binding": {
+        "checkpoint": "progress",
+        "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+        "recorded_at_utc": "2026-10-27T21:54:35.994Z"
+      },
+      "next_analytical_question": "Account for the retained official season-ending Taylor absence without changing the frozen forecast; test Texas separation/total implications separately from winner superiority.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "-0.17926022771447103",
+        "pred_total": "55.79392191281385",
+        "pred_win": "0.5258970500003277"
+      }
+    },
+    {
+      "game_id": "401858509",
+      "away_team": "Ohio State",
+      "home_team": "USC",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "OhioStatewinneronecentcheaper-244andUSCsmaller+202do not resolveSayinabsence/backuptransitionversusUSCrun/protectionfailures. Both6.5spreadsunchanged. Underdrops52.5to51.5whilejuiceimproves-115to-108;thelostpointopposesunder,over51.5cheaper-110stillfacesquarterback/drivefriction. Retainall sixPASSbrancheswithoutfinalstarterassurance.",
+      "retained_material": "New OhioState officialIndiana recap:313totalyards, Sayin235passing/15of29 before leaving injured; Fahey finished. A bye followed, but no current medical clearance is inferred. RetainedUSC officialWisconsin loss shows run/protection failure; exact-17vs-18rushing discrepancy remains quarantined, not resolved by choosing one number.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -6.5,
+        "away_spread_price": -114,
+        "home_spread": 6.5,
+        "home_spread_price": 100,
+        "away_ml": -244,
+        "home_ml": 202,
+        "over_total": 51.5,
+        "over_price": -110,
+        "under_total": 51.5,
+        "under_price": -108
+      },
+      "prior_research_binding": {
+        "checkpoint": "progress",
+        "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+        "recorded_at_utc": "2026-10-27T21:54:35.994Z"
+      },
+      "next_analytical_question": "Retain the upstream official USC-preview search finding that Sayin was out indefinitely; reassess its current applicability and backup offense without inventing a final starter.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "-3.5107340607820996",
+        "pred_total": "58.13872602489042",
+        "pred_win": "0.4104226295196134"
+      }
+    },
+    {
+      "game_id": "401856733",
+      "away_team": "Missouri",
+      "home_team": "Arkansas",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Allsixoffersunchanged. Missouri'sexplicitlydatedRobertsrun/defensecasefacesArkansas438balancedyardsandcleanJacksonpassing;Arkansaspoints/upsetcasefacesMissourirunsuppressionandpick-six-assistedlastscore.48.5over/49.5underremainseparate;noautomaticrenamingOct10aslatestorHardypracticeflagasclearance. No side,winner,totalpreferred.",
+      "retained_material": "New officialArkansas Oct17Vanderbilt gamebook, visually checked:438yards (251passing/187rushing), Jackson21/31withzeroINT/sacks, three rushingTDs and a pick-six assisted31-21win. Missouri's explicitly datedOct10officialA&M recap showsRoberts222rushing, defense216yardsallowed andSimmons147passing/14of28. Do not substitute Hardy's old roster totals for current work or call thatOct10game the latest; his reported practice flag is not clearance.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -9.5,
+        "away_spread_price": -118,
+        "home_spread": 10.0,
+        "home_spread_price": -111,
+        "away_ml": -360,
+        "home_ml": 300,
+        "over_total": 48.5,
+        "over_price": -122,
+        "under_total": 49.5,
+        "under_price": -111
+      },
+      "prior_research_binding": {
+        "checkpoint": "finalthree",
+        "cycle_id": "CFB_CATCHUP_20261027T214636Z",
+        "recorded_at_utc": "2026-10-27T21:59:32.989Z"
+      },
+      "next_analytical_question": "Keep Missouri Oct10 evidence explicitly dated; compare with the newer Arkansas balanced-offense gamebook and reassess current personnel rather than calling old evidence latest.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "-13.144660542665587",
+        "pred_total": "48.4571487693492",
+        "pred_win": "0.22032417143604363"
+      }
+    },
+    {
+      "game_id": "401862814",
+      "away_team": "Army",
+      "home_team": "Memphis",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "EXCLUDED",
+      "assessment": "ORIGINAL_EXCLUSION_NOT_FOOTBALL_PASS"
+    },
+    {
+      "game_id": "401858504",
+      "away_team": "Washington",
+      "home_team": "Nebraska",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "Washingtonlosesahalfpointto+7.5butjuiceimproves-106;Nebraska-7.5isfourcentscheaper-108andwinner-303cheaper. OfficialRhulecommentsre-read:multiplebackfieldinjuries,Connexpectedreportquestion,byehelpfulbutnotclearance;Washingtonvertical/extended-playthreatpersistswithbothQBs. Hostdefensesupportopposesdog,butvisitorpassingandhostbackfieldriskopposefavorite.49.5underdearer-108facesexplosives,overfacesdefensivecontrol. No six-marketselectionorassumedcampusstarter.",
+      "retained_material": "Rhule identifies Nelson ankle and multiple backfield injuries, not final absences. Both Washington quarterbacks can extend plays; his statement that starter may not be known until first snap does not authorize deferring the user's decision until kickoff. Both teams had byes per retained official preview; no one-sided rest benefit.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 7.5,
+        "away_spread_price": -106,
+        "home_spread": -7.5,
+        "home_spread_price": -108,
+        "away_ml": 255,
+        "home_ml": -303,
+        "over_total": 49.5,
+        "over_price": -110,
+        "under_total": 49.5,
+        "under_price": -108
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision0",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T013124Z",
+        "recorded_at_utc": "2026-10-27T01:40:15.487Z"
+      },
+      "next_analytical_question": "Weigh Nebraska backfield injuries and Washington vertical/extended-play paths under both QB scenarios; a starter possibly unknown until first snap is not a usable decision deadline.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "12.685528847014263",
+        "pred_total": "50.616231734845755",
+        "pred_win": "0.7722918506128544"
+      }
+    },
+    {
+      "game_id": "401860908",
+      "away_team": "Texas State",
+      "home_team": "Boise State",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "TexasState+11loseshalfpointandpayoutfallsto+340;Boise-10.5easierbutjuiceworsens-115. Boise'slate threeTDsurgeand53rushyardsallowedcounterdog,whiletiedthirdquarterandTexasStateexplosiveupper-tailhistorycounterlay. Underfalls64.5to63.5withcheaper-105,losingpointprotection;over63.5faceslatest250yardTexasStateattackandreturnTDassistance. No preferredbranch.",
+      "retained_material": "TexasState's20-17UtahState win had250total/83rushing/167passing yards and a100-yard returnTD; the prior716-yard game is a volatile upper tail. Boise's31-10win overWSU was tied10-10entering the fourth before threeTDs; it heldWSU to53rush yards.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 11.0,
+        "away_spread_price": -111,
+        "home_spread": -10.5,
+        "home_spread_price": -115,
+        "away_ml": 340,
+        "home_ml": -435,
+        "over_total": 63.5,
+        "over_price": -114,
+        "under_total": 63.5,
+        "under_price": -105
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision1",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T015520Z",
+        "recorded_at_utc": "2026-10-27T02:13:44.782Z"
+      },
+      "next_analytical_question": "Separate Boise late surge from all-game dominance and Texas State return-TD assistance from sustainable scoring; compare the lower total and changed juice independently.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "11.186323722125593",
+        "pred_total": "62.02851607637056",
+        "pred_win": "0.7837304599759275"
+      }
+    },
+    {
+      "game_id": "401864530",
+      "away_team": "Northern Illinois",
+      "home_team": "UNLV",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "NIU+24.5juiceimproves-118to-115;UNLVlayrises23.5to24whilejuiceimproves-115to-111. NIU'ssustained-drivedefensivefailuresopposepoints,UNLV'slatecollapseandturnoversopposemargin/winnerpremium.Overrises53.5to54.5withcheaper-105andunder54.5slightlycheaper-114;offensiveupsidemeetsfinishing/turnoverrisk. SixbranchesremainPASS.",
+      "retained_material": "UNLV's official recap confirms Arnold's 246 passing and 78 rushing yards, but 21 straight fourth-quarter points allowed and two turnovers overturned its lead at Air Force. Its bye helps rest, not an automatic scoring adjustment. NIU's retained official Hawaii box shows a 56-21 loss with repeated sustained scoring drives; record alone is not a bet.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 24.5,
+        "away_spread_price": -115,
+        "home_spread": -24.0,
+        "home_spread_price": -111,
+        "away_ml": 1300,
+        "home_ml": -2222,
+        "over_total": 54.5,
+        "over_price": -105,
+        "under_total": 54.5,
+        "under_price": -114
+      },
+      "prior_research_binding": {
+        "path": "evidence/operational/CFB_CATCHUP_20261027T214022Z_RESEARCH_RECONCILIATION.json",
+        "commit": "9d66f870fb6345f1952fca2268bfb2175c3dbd49"
+      },
+      "next_analytical_question": "Distinguish NIU sustained-drive concessions from UNLV late collapse/turnovers; evaluate large-margin and total cases independently rather than treating a bye as a scoring adjustment.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "9.181695514674217",
+        "pred_total": "46.29422281350146",
+        "pred_win": "0.6522629731082384"
+      }
+    },
+    {
+      "game_id": "401860924",
+      "away_team": "Oregon State",
+      "home_team": "Fresno State",
+      "saved_state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "original_status": "PREDICTION",
+      "assessment": "SUBSTANTIVE_BOUNDED_PASS_NOT_PROOF_OF_NO_VALUE",
+      "strengths": [
+        "six distinct priced main-market branches",
+        "game-specific retained football evidence and opposing risks",
+        "current price/movement reweigh",
+        "derivative/parlay unavailability disclosed"
+      ],
+      "reason": "OregonState-5.5/-111andFresno+5.5/-106unchanged;visitorwinnerdearer-210versus-205. Atkinsonpassing/protectionandrecentdefensiveimprovementsupportvisitorbutFresnohomedefense/ballsecurityopposemargin.57.5overfacesimproveddefenses;underfacesexplosivepassingandlowgiveaways. A five-centwinnerchangeaddsnoindependentvaluecase. Retainall sixPASSbranches.",
+      "retained_material": "Fresno one interception in201attempts and four giveaways support ball security; do not assume indefinite turnover luck. Atkinson24TD/twoINT, OSUprotection and last-five defensive improvement support visitor; opponent mix and recent-rest context prevent automatic numeric extrapolation. The2025Fresnowin is not a clean yardage advantage.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-29T02:02:21.850Z",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -5.5,
+        "away_spread_price": -111,
+        "home_spread": 5.5,
+        "home_spread_price": -106,
+        "away_ml": -210,
+        "home_ml": 185,
+        "over_total": 57.5,
+        "over_price": -110,
+        "under_total": 57.5,
+        "under_price": -105
+      },
+      "prior_research_binding": {
+        "checkpoint": "earlyDecision0",
+        "cycle_id": "CFB_MARKET_MONITOR_20261027T013124Z",
+        "recorded_at_utc": "2026-10-27T01:40:15.487Z"
+      },
+      "next_analytical_question": "Test Oregon State passing/protection against Fresno home defense/ball security with opponent context; a five-cent ML change does not settle the underlying comparison.",
+      "limitation": "No claim of exhaustive newly recovered player/weather data or calibrated edge; ordinary risks must be weighed, not used as automatic vetoes.",
+      "original_numeric_strings": {
+        "pred_margin": "4.265824312937047",
+        "pred_total": "53.27358185300018",
+        "pred_win": "0.5758261080522452"
+      }
+    },
+    {
+      "game_id": "401871072",
+      "away_team": "Sam Houston",
+      "home_team": "Missouri State",
+      "saved_state": "PASS",
+      "temporal_status": "PAST_SOURCE_DATE_ONLY_EXACT_KICKOFF_UNAVAILABLE",
+      "original_status": "PREDICTION",
+      "assessment": "ELAPSED_OR_EXPIRED_HISTORY_NOT_CURRENT_CHOICE"
+    },
+    {
+      "game_id": "401871071",
+      "away_team": "Delaware",
+      "home_team": "Western Kentucky",
+      "saved_state": "PASS",
+      "temporal_status": "PAST_SOURCE_DATE_ONLY_EXACT_KICKOFF_UNAVAILABLE",
+      "original_status": "PREDICTION",
+      "assessment": "ELAPSED_OR_EXPIRED_HISTORY_NOT_CURRENT_CHOICE"
+    }
+  ],
+  "price_branch_checks": [
+    {
+      "game_id": "401869963",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401869963",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401869963",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401869963",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401869963",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401869963",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401862813",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401862813",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401862813",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401862813",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401862813",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401862813",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856844",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856844",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856844",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856844",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856844",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856844",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401866451",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401866451",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401866451",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401866451",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401866451",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401866451",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401866452",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401866452",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401866452",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401866452",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401866452",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401866452",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858502",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858502",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858502",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858502",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858502",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858502",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858278",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858278",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858278",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858278",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858278",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858278",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858503",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858503",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858503",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858503",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858503",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858503",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856735",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856735",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856735",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856735",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856735",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856735",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871096",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871096",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871096",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871096",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871096",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871096",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856846",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856846",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856846",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856846",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856846",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856846",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871097",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871097",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871097",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871097",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871097",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871097",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401861966",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401861966",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401861966",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401861966",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401861966",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401861966",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858283",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858283",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858283",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858283",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858283",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858283",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864531",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864531",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864531",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864531",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864531",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864531",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860910",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860910",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860910",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860910",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860910",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860910",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856843",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856843",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856843",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856843",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856843",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856843",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856845",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856845",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856845",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856845",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856845",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856845",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871095",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871095",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871095",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871095",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871095",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401871095",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856734",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856734",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856734",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856734",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856734",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856734",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858284",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858284",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858284",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858284",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858284",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858284",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864529",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864529",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864529",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864529",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864529",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864529",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856736",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856736",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856736",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856736",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856736",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856736",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858508",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858508",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858508",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858508",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858508",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858508",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858506",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858506",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858506",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858506",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858506",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858506",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401869846",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401869846",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401869846",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401869846",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401869846",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401869846",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856847",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856847",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856847",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856847",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856847",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856847",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860909",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860909",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860909",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860909",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860909",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860909",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858282",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858282",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858282",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858282",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858282",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858282",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856737",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856737",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856737",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856737",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856737",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856737",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858509",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858509",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858509",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858509",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858509",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858509",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856733",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856733",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856733",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856733",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856733",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401856733",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858504",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858504",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858504",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858504",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858504",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401858504",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860908",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860908",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860908",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860908",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860908",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860908",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864530",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864530",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864530",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864530",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864530",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401864530",
+      "branch": "under_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860924",
+      "branch": "away_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860924",
+      "branch": "home_spread",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860924",
+      "branch": "away_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860924",
+      "branch": "home_ml",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860924",
+      "branch": "over_total",
+      "offer_match": true
+    },
+    {
+      "game_id": "401860924",
+      "branch": "under_total",
+      "offer_match": true
+    }
+  ],
+  "review_window_cases": [
+    {
+      "game_id": "401856842",
+      "game": "Arizona at Texas Tech",
+      "review": {
+        "path": "evidence/operational/recommendation_reviews/CFB_ARIZONA_PRICE_CONDITIONAL_20261027T015520Z.json",
+        "blob": "e096376b2343667fc28b36c1f643b30ea1f854f9",
+        "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+      },
+      "first_saved_commit": "a0ecea22136f4945e046be2043f6dad7c7dee930",
+      "first_saved_commit_clock": "2026-10-26T21:06:37-05:00",
+      "recorded_at": "2026-10-27T02:06:36.631Z",
+      "reconcile": "2026-10-27T17:00:00Z",
+      "expiry": "2026-10-27T18:00:00Z",
+      "kickoff": "2026-10-31T16:00:00Z",
+      "acceptable_number": {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 4.5,
+        "minimum_price": -115,
+        "direction": "AT_LEAST"
+      },
+      "initial_identified_quote": {
+        "game_id": "401856842",
+        "market": "SPREAD",
+        "selection": "away",
+        "period": "PREGAME_FULL_GAME",
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/arizona-wildcats/odds",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/arizona-wildcats/odds",
+        "retrieved_at": "2026-10-27T02:06:36.631Z",
+        "offer_updated_at": null,
+        "line": 4.5,
+        "price": -120
+      },
+      "initial_quote_meets": false,
+      "post_review_pre_expiry_canonical_observations": [],
+      "pre_review_observations_NOT_actionable_recommendations": [
+        {
+          "packet_as_of": "2026-10-25T16:06:27.479Z",
+          "retrieved_at": "2026-10-25T16:05:12.792Z",
+          "line": 4.5,
+          "price": -115,
+          "meets_numeric_limits": true,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-25T18:08:00Z",
+          "retrieved_at": "2026-10-25T18:05:00Z",
+          "line": 4.5,
+          "price": -115,
+          "meets_numeric_limits": true,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-26T12:07:18Z",
+          "retrieved_at": "2026-10-26T12:03:52Z",
+          "line": 4.5,
+          "price": -120,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        }
+      ],
+      "first_canonical_state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "first_canonical_at": "2026-10-27T22:21:24.237965Z",
+      "declared_window_hours": 15.889824722222222,
+      "expiry_to_kickoff_hours": 94.0,
+      "qa_conclusion": "PRICE_OR_LINE_FAILED_AT_ORIGIN_NO_PROVEN_COMPLIANT_LIVE_REVIEW_WINDOW",
+      "actual_execution": "NONE_ESTABLISHED",
+      "economic_loss": "UNKNOWN"
+    },
+    {
+      "game_id": "401858279",
+      "game": "Boston College at Duke",
+      "review": {
+        "path": "evidence/operational/recommendation_reviews/CFB_BOSTON_COLLEGE_CONTROLLED_BETA_20261027T214636Z.json",
+        "blob": "470a83cc91a51f913680f968765fd2633a71cf8c",
+        "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+      },
+      "first_saved_commit": "b9d76af90a9de25585f5cad6605e37f440c6c9a9",
+      "first_saved_commit_clock": "2026-10-27T16:50:44-05:00",
+      "recorded_at": "2026-10-27T21:50:25.899Z",
+      "reconcile": "2026-10-28T17:00:00Z",
+      "expiry": "2026-10-28T18:00:00Z",
+      "kickoff": "2026-10-31T16:00:00Z",
+      "acceptable_number": {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 7.5,
+        "minimum_price": -115,
+        "direction": "AT_LEAST"
+      },
+      "initial_identified_quote": {
+        "game_id": "401858279",
+        "market": "SPREAD",
+        "selection": "away",
+        "period": "PREGAME_FULL_GAME",
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/duke-blue-devils/odds",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/duke-blue-devils/odds",
+        "retrieved_at": "2026-10-27T21:50:25.899Z",
+        "offer_updated_at": null,
+        "line": 7.5,
+        "price": -124
+      },
+      "initial_quote_meets": false,
+      "post_review_pre_expiry_canonical_observations": [
+        {
+          "packet_as_of": "2026-10-27T22:21:24.237965Z",
+          "retrieved_at": "2026-10-27T22:11:16.471Z",
+          "line": 7.5,
+          "price": -124,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-27T23:29:57.325268Z",
+          "retrieved_at": "2026-10-27T23:25:04.662Z",
+          "line": 7.5,
+          "price": -124,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-28T01:50:37.587942Z",
+          "retrieved_at": "2026-10-28T01:46:39.832Z",
+          "line": 7.5,
+          "price": -124,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        }
+      ],
+      "pre_review_observations_NOT_actionable_recommendations": [
+        {
+          "packet_as_of": "2026-10-25T16:06:27.479Z",
+          "retrieved_at": "2026-10-25T16:05:12.792Z",
+          "line": 7.5,
+          "price": -112,
+          "meets_numeric_limits": true,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-25T18:08:00Z",
+          "retrieved_at": "2026-10-25T18:05:00Z",
+          "line": 7.5,
+          "price": -124,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-26T12:07:18Z",
+          "retrieved_at": "2026-10-26T12:03:52Z",
+          "line": 7.5,
+          "price": -114,
+          "meets_numeric_limits": true,
+          "execution": "UNVERIFIED"
+        }
+      ],
+      "first_canonical_state": "CONDITIONAL",
+      "first_canonical_at": "2026-10-27T22:21:24.237965Z",
+      "declared_window_hours": 20.1594725,
+      "expiry_to_kickoff_hours": 70.0,
+      "qa_conclusion": "PRICE_OR_LINE_FAILED_AT_ORIGIN_NO_PROVEN_COMPLIANT_LIVE_REVIEW_WINDOW",
+      "actual_execution": "NONE_ESTABLISHED",
+      "economic_loss": "UNKNOWN"
+    },
+    {
+      "game_id": "401856848",
+      "game": "Utah at Cincinnati",
+      "review": {
+        "path": "evidence/operational/recommendation_reviews/CFB_CINCINNATI_CONTROLLED_BETA_20261027T015520Z.json",
+        "blob": "f270892ad49f6f3c19e051bb75a4763e5a98a0fb",
+        "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+      },
+      "first_saved_commit": "2928ff585df588489ad55fb05af7e196a3e5269e",
+      "first_saved_commit_clock": "2026-10-26T21:15:34-05:00",
+      "recorded_at": "2026-10-27T02:15:33.971Z",
+      "reconcile": "2026-10-27T17:00:00Z",
+      "expiry": "2026-10-27T18:00:00Z",
+      "kickoff": "2026-10-31T19:45:00Z",
+      "acceptable_number": {
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 6.5,
+        "minimum_price": -115,
+        "direction": "AT_LEAST"
+      },
+      "initial_identified_quote": {
+        "game_id": "401856848",
+        "market": "SPREAD",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/cincinnati-bearcats/odds",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/cincinnati-bearcats/odds",
+        "retrieved_at": "2026-10-27T02:15:33.971Z",
+        "offer_updated_at": null,
+        "line": 6.5,
+        "price": -110
+      },
+      "initial_quote_meets": true,
+      "post_review_pre_expiry_canonical_observations": [],
+      "pre_review_observations_NOT_actionable_recommendations": [
+        {
+          "packet_as_of": "2026-10-25T16:06:27.479Z",
+          "retrieved_at": "2026-10-25T16:05:12.792Z",
+          "line": 7.5,
+          "price": -114,
+          "meets_numeric_limits": true,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-25T18:08:00Z",
+          "retrieved_at": "2026-10-25T18:05:00Z",
+          "line": 7.0,
+          "price": -115,
+          "meets_numeric_limits": true,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-26T12:07:18Z",
+          "retrieved_at": "2026-10-26T12:03:52Z",
+          "line": 6.5,
+          "price": -105,
+          "meets_numeric_limits": true,
+          "execution": "UNVERIFIED"
+        }
+      ],
+      "first_canonical_state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "first_canonical_at": "2026-10-27T22:21:24.237965Z",
+      "declared_window_hours": 15.740563611111112,
+      "expiry_to_kickoff_hours": 97.75,
+      "qa_conclusion": "MISSED_CANONICAL_DELIVERY_WITH_COMPLIANT_PUBLIC_BENCHMARK_NOT_PROVEN_EXECUTABLE_OR_PROFITABLE",
+      "actual_execution": "NONE_ESTABLISHED",
+      "economic_loss": "UNKNOWN"
+    },
+    {
+      "game_id": "401862812",
+      "game": "Florida Atlantic at North Texas",
+      "review": {
+        "path": "evidence/operational/recommendation_reviews/CFB_FLORIDA_ATLANTIC_CONTROLLED_BETA_20261027T013124Z.json",
+        "blob": "9547eb01aad7d2272679de20c61c9c79c2b0f7c7",
+        "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+      },
+      "first_saved_commit": "6a3cda95cfb0ba40edfc7179172bdeda198d0bb5",
+      "first_saved_commit_clock": "2026-10-26T20:36:36-05:00",
+      "recorded_at": "2026-10-27T01:36:35.614Z",
+      "reconcile": "2026-10-27T17:00:00Z",
+      "expiry": "2026-10-27T18:00:00Z",
+      "kickoff": "2026-10-29T23:30:00Z",
+      "acceptable_number": {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 13.5,
+        "minimum_price": -115,
+        "direction": "AT_LEAST"
+      },
+      "initial_identified_quote": {
+        "game_id": "401862812",
+        "market": "SPREAD",
+        "selection": "away",
+        "period": "PREGAME_FULL_GAME",
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/north-texas-mean-green/odds",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/north-texas-mean-green/odds",
+        "retrieved_at": "2026-10-27T01:35:45.086Z",
+        "offer_updated_at": null,
+        "line": 13.5,
+        "price": -112
+      },
+      "initial_quote_meets": true,
+      "post_review_pre_expiry_canonical_observations": [],
+      "pre_review_observations_NOT_actionable_recommendations": [
+        {
+          "packet_as_of": "2026-10-25T16:06:27.479Z",
+          "retrieved_at": "2026-10-25T16:05:12.792Z",
+          "line": 12.0,
+          "price": -111,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-25T18:08:00Z",
+          "retrieved_at": "2026-10-25T18:05:00Z",
+          "line": 12.0,
+          "price": -111,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-26T12:07:18Z",
+          "retrieved_at": "2026-10-26T12:03:52Z",
+          "line": 13.5,
+          "price": -110,
+          "meets_numeric_limits": true,
+          "execution": "UNVERIFIED"
+        }
+      ],
+      "first_canonical_state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "first_canonical_at": "2026-10-27T22:21:24.237965Z",
+      "declared_window_hours": 16.390107222222223,
+      "expiry_to_kickoff_hours": 53.5,
+      "qa_conclusion": "MISSED_CANONICAL_DELIVERY_WITH_COMPLIANT_PUBLIC_BENCHMARK_NOT_PROVEN_EXECUTABLE_OR_PROFITABLE",
+      "actual_execution": "NONE_ESTABLISHED",
+      "economic_loss": "UNKNOWN"
+    },
+    {
+      "game_id": "401871058",
+      "game": "Kennesaw State at Middle Tennessee",
+      "review": {
+        "path": "evidence/operational/recommendation_reviews/CFB_MIDDLE_TENNESSEE_CONTROLLED_BETA_20261026T234404Z.json",
+        "blob": "d0a4620f56a84b96931df1dfa8f843324ef58212",
+        "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+      },
+      "first_saved_commit": "37f0e3edf5b09afdc4f05e14e5a70b6d4fa91ab3",
+      "first_saved_commit_clock": "2026-10-26T18:44:05-05:00",
+      "recorded_at": "2026-10-26T23:44:04.763Z",
+      "reconcile": "2026-10-27T17:00:00Z",
+      "expiry": "2026-10-27T18:00:00Z",
+      "kickoff": "2026-10-28T23:00:00Z",
+      "acceptable_number": {
+        "market": "MONEYLINE",
+        "selection": "home",
+        "line": null,
+        "minimum_price": -140,
+        "direction": "PRICE_ONLY"
+      },
+      "initial_identified_quote": {
+        "game_id": "401871058",
+        "market": "MONEYLINE",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/middle-tennessee-blue-raiders/odds",
+        "retrieved_at": "2026-10-26T23:38:20.000Z",
+        "offer_updated_at": null,
+        "line": null,
+        "price": -140
+      },
+      "initial_quote_meets": true,
+      "post_review_pre_expiry_canonical_observations": [],
+      "pre_review_observations_NOT_actionable_recommendations": [
+        {
+          "packet_as_of": "2026-10-25T16:06:27.479Z",
+          "retrieved_at": "2026-10-25T16:05:12.792Z",
+          "line": null,
+          "price": -135,
+          "meets_numeric_limits": true,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-25T18:08:00Z",
+          "retrieved_at": "2026-10-25T18:05:00Z",
+          "line": null,
+          "price": -154,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-26T12:07:18Z",
+          "retrieved_at": "2026-10-26T12:03:52Z",
+          "line": null,
+          "price": -155,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        }
+      ],
+      "first_canonical_state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "first_canonical_at": "2026-10-27T22:21:24.237965Z",
+      "declared_window_hours": 18.26534361111111,
+      "expiry_to_kickoff_hours": 29.0,
+      "qa_conclusion": "MISSED_CANONICAL_DELIVERY_WITH_COMPLIANT_PUBLIC_BENCHMARK_NOT_PROVEN_EXECUTABLE_OR_PROFITABLE",
+      "actual_execution": "NONE_ESTABLISHED",
+      "economic_loss": "UNKNOWN"
+    },
+    {
+      "game_id": "401858281",
+      "game": "Georgia Tech at Pittsburgh",
+      "review": {
+        "path": "evidence/operational/recommendation_reviews/CFB_PITTSBURGH_CONTROLLED_BETA_20261027T214636Z.json",
+        "blob": "d8d9db2bfda198665fc42e76c0ab4fe75ab41bff",
+        "ref": "57dced4a486d2eef2237ab9610dca075f09881ed"
+      },
+      "first_saved_commit": "2fc90d9cef54610994a4e77b951fc92e8dbbabca",
+      "first_saved_commit_clock": "2026-10-27T16:50:43-05:00",
+      "recorded_at": "2026-10-27T21:50:25.899Z",
+      "reconcile": "2026-10-28T17:00:00Z",
+      "expiry": "2026-10-28T18:00:00Z",
+      "kickoff": "2026-10-31T23:30:00Z",
+      "acceptable_number": {
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -6.5,
+        "minimum_price": -115,
+        "direction": "AT_LEAST"
+      },
+      "initial_identified_quote": {
+        "game_id": "401858281",
+        "market": "SPREAD",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/pittsburgh-panthers/odds",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/pittsburgh-panthers/odds",
+        "retrieved_at": "2026-10-27T21:50:25.899Z",
+        "offer_updated_at": null,
+        "line": -7.5,
+        "price": -108
+      },
+      "initial_quote_meets": false,
+      "post_review_pre_expiry_canonical_observations": [
+        {
+          "packet_as_of": "2026-10-27T22:21:24.237965Z",
+          "retrieved_at": "2026-10-27T22:11:16.471Z",
+          "line": -7.5,
+          "price": -108,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-27T23:29:57.325268Z",
+          "retrieved_at": "2026-10-27T23:25:04.662Z",
+          "line": -7.5,
+          "price": -108,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-28T01:50:37.587942Z",
+          "retrieved_at": "2026-10-28T01:46:39.832Z",
+          "line": -7.5,
+          "price": -108,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        }
+      ],
+      "pre_review_observations_NOT_actionable_recommendations": [
+        {
+          "packet_as_of": "2026-10-25T16:06:27.479Z",
+          "retrieved_at": "2026-10-25T16:05:12.792Z",
+          "line": -7.0,
+          "price": -111,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-25T18:08:00Z",
+          "retrieved_at": "2026-10-25T18:05:00Z",
+          "line": -6.5,
+          "price": -120,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        },
+        {
+          "packet_as_of": "2026-10-26T12:07:18Z",
+          "retrieved_at": "2026-10-26T12:03:52Z",
+          "line": -7.5,
+          "price": -108,
+          "meets_numeric_limits": false,
+          "execution": "UNVERIFIED"
+        }
+      ],
+      "first_canonical_state": "CONDITIONAL",
+      "first_canonical_at": "2026-10-27T22:21:24.237965Z",
+      "declared_window_hours": 20.1594725,
+      "expiry_to_kickoff_hours": 77.5,
+      "qa_conclusion": "PRICE_OR_LINE_FAILED_AT_ORIGIN_NO_PROVEN_COMPLIANT_LIVE_REVIEW_WINDOW",
+      "actual_execution": "NONE_ESTABLISHED",
+      "economic_loss": "UNKNOWN"
+    }
+  ],
+  "findings": [
+    "36 game-specific bounded reweighs are real analytical work; a PASS is not proof of negative value or exhaustive current research.",
+    "Three in-limit identified benchmark cases expired without canonical integration; price risk and incomplete full-slate publication are different causes.",
+    "Arizona and BC favorable older prices predate their actual reviews: never apply later thresholds/rationale retroactively.",
+    "BC +7.5/-114 recovered 2026-10-28T18:00:09.255Z is post-cutoff evidence, not proof of a pre-cutoff offer.",
+    "A 13CT invocation cannot be relied upon to acquire/research/publish before a 13CT expiry; use earlier applicable existing cycles, preserve cadence and cutoffs.",
+    "No observed local execution/placement window or outcomes support an economic-loss or filter-profit claim."
+  ],
+  "boundaries": [
+    "Existing states, no-chase limits, deadlines, immutable predictions, money and schedules unchanged.",
+    "Current provider balance not read and no chargeable acquisition made; this study uses saved facts only.",
+    "No synthetic replay, new calibration, threshold change or automatic promotion."
+  ]
+}
