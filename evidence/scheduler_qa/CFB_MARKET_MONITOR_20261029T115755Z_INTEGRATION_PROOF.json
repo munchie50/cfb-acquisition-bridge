@@ -1,0 +1,61 @@
+{
+  "cycle_id": "CFB_MARKET_MONITOR_20261029T115755Z",
+  "recorded_at": "2026-10-29T12:22:15Z",
+  "scope": "NATURAL_SCHEDULED_PRODUCTION_CYCLE",
+  "result": "PASS",
+  "runtime": {
+    "observed_main": "8df9058a8586424ba96105cb08a2c457ae2fdf30",
+    "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "verdict": "SUPPORTED_GIT_RUNTIME_VERIFIED"
+  },
+  "index": {
+    "commit": "f6feb96632f0e10bf3911ac20246d307bd99f0de",
+    "blob": "d73040c7c308340277e7ff0c4fa178812c093e1f",
+    "verified_pointers": 296,
+    "preflight_path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_20261029T115755Z_RECOVERY_PREFLIGHT.json"
+  },
+  "sheet": {
+    "path": "evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-29_0703CT.md",
+    "blob": "c362840dbb2bc39c96b7e59b4822b0e1adf8f71f"
+  },
+  "canonical": {
+    "market": "9325a6a49ecdf6170dba8ca0b7b683f318eb02ea",
+    "decision": "03591248aabf5635a3517246efc9af1312cacadd",
+    "execution": "1a938f42e9f03e723bd50348f8a78dbd8b7098e9",
+    "scorecard": "fd6529a4ab27ac12d74ace4441005535c605cadb"
+  },
+  "ci": {
+    "run": 40871797873,
+    "job": 123440431050,
+    "head_sha": "f6feb96632f0e10bf3911ac20246d307bd99f0de",
+    "conclusion": "success",
+    "completed_at": "2026-10-29T12:21:58Z",
+    "completed_steps": 45,
+    "failed_steps": 0
+  },
+  "source": {
+    "path": "evidence/operational/CFB_CBS_WEEK9_TEXT_TABLE_CAPTURE_20261029T115755Z.md",
+    "blob": "996f7511190d6bcd6fb35be8e4c9523bc4fd76d3",
+    "recovered_by": "2026-10-29T12:00:32.078Z",
+    "provider": "Firecrawl",
+    "scrape_id": "01a18787-a44a-71e4-a68c-d3b773319a2a",
+    "games": 56,
+    "team_rows": 112,
+    "future_games": 52,
+    "elapsed_games": 4
+  },
+  "review": {
+    "future_prediction_pass_reweighed": 36,
+    "active_recommendations": 0,
+    "expired_conditionals": 2,
+    "expired_unpublished": 4,
+    "original_exclusions": 11
+  },
+  "budget": {
+    "remainingCredits": 995,
+    "planCredits": 1000,
+    "billingPeriodStart": "2026-10-27T17:16:35.203Z",
+    "billingPeriodEnd": "2026-11-27T17:16:35.203Z",
+    "run_cost": 1
+  }
+}
