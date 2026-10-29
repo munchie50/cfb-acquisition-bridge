@@ -1,0 +1,38 @@
+{
+  "schema": "CFB_MARKET_MONITOR_INTEGRATION_PROOF_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261029T180541Z",
+  "as_of_utc": "2026-10-29T18:20:45Z",
+  "recovery_index": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md",
+    "blob": "484137a2345e8f5159620d5cacc3a89948595e7c",
+    "commit": "11cf33bb9bf7286ff411f518ba142c48e7bb3b22",
+    "readback": "PASS"
+  },
+  "selected_hot_sheet": {
+    "path": "evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-29_1308CT.md",
+    "blob": "6cb08167225b27ccf1325210081319cb45bfb6b0",
+    "readback": "PASS"
+  },
+  "saved_consumer_preflight": {
+    "verdict": "PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY",
+    "verified_pointers": 303,
+    "index_blob": "484137a2345e8f5159620d5cacc3a89948595e7c",
+    "sheet_path": "evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-29_1308CT.md"
+  },
+  "selected_publication_ci": {
+    "workflow": "CFB QA Hot Sheet Kickoff Section Static Gate",
+    "run_id": 40929411907,
+    "run_number": 433,
+    "event": "push",
+    "head_sha": "11cf33bb9bf7286ff411f518ba142c48e7bb3b22",
+    "status": "completed",
+    "conclusion": "success",
+    "job_id": 123643542964,
+    "job_name": "static-gate",
+    "job_conclusion": "success",
+    "step_count": 45,
+    "failed_steps": 0,
+    "completed_at_utc": "2026-10-29T18:20:45Z"
+  },
+  "status": "INTEGRATION_PASS"
+}
