@@ -1,0 +1,59 @@
+{
+  "cycle_id": "CFB_MARKET_MONITOR_20261029T222851Z",
+  "recorded_utc": "2026-10-29T23:04:21Z",
+  "result": "MANUAL_PUBLICATION_INTEGRATION_VERIFIED_NOT_NATURAL_SCHEDULE_PROOF",
+  "selected_index_blob": "2e56ec96fbc42aa62d67d9ef39d6692ba016ce30",
+  "selected_sheet": "evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-29_1741CT.md",
+  "selected_sheet_blob": "026f7298f7f80a546bbb509765c95333948304f0",
+  "market_blob": "c6d552a407dafbd2a11c3ac9a1502d459c82c320",
+  "decision_blob": "f96ac4add18c2e28a823cefb3a2c5e9670c21064",
+  "execution_blob": "1a938f42e9f03e723bd50348f8a78dbd8b7098e9",
+  "scorecard_blob": "fd6529a4ab27ac12d74ace4441005535c605cadb",
+  "ci": {
+    "run_id": 40969391988,
+    "head": "35f8dbc59b86c71b938901afdf46807a912069b5",
+    "job_id": 123782022832,
+    "completed_steps": 45,
+    "failed_steps": 0,
+    "conclusion": "success",
+    "skipped_steps": 0,
+    "decoded_logs_independently_read": true
+  },
+  "prior_failed_integration": {
+    "run_id": 40968196985,
+    "cause": "New regression fixture read live canonical ledgers at a fixed historical replay clock. New publication correctly tripped unchanged future-clock protection.",
+    "correction": "Pin exact authentic historical market60405482a311c8649fe9f798c4c47fddce193ac0 and decision7575796f0681720d4efff2f880d229576a28e1a9 using existing historical loader. No validator or source clock relaxed.",
+    "fixed_test_blob": "c9a07364e35905bbb4b33d07cf79381f5429d53e",
+    "workflow_blob": "9619fadeb1e0884ab467eb152fa2afc5266df83b"
+  },
+  "original_archive": {
+    "sha256": "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf",
+    "games": 56,
+    "predictions": 45,
+    "exclusions": 11,
+    "numeric_fields": 135,
+    "unchanged": true
+  },
+  "recovery_pointers": 308,
+  "publication_boundary": "2026-10-29T22:41:03.230751+00:00",
+  "decision_scope": {
+    "future_prediction_cases_reassessed": 36,
+    "pass": 34,
+    "new_prospective_conditional": 2,
+    "original_exclusions": 11,
+    "elapsed_prediction_pass": 3,
+    "prior_closed_conditional": 2,
+    "expired_unpublished": 4
+  },
+  "current_status_at": "2026-10-29T23:03:59.524411+00:00",
+  "current_new_cases": {
+    "JMU_under": "HISTORICAL_CONDITIONAL_WINDOW_CLOSED at23:00Z;5:50CT recheck not performed; no renewed review or execution inferred.",
+    "UCF_points": "OPEN_CONDITIONAL: +2.5orhigher at-115orbetter; actual venue confirmation pending; Oct30 noonCT recheck/13CT expiry."
+  },
+  "limitations": [
+    "Manual price-specific comparative judgments, not calibrated EV or proof every PASS has negative value.",
+    "JMU decision was saved/published before its original recheck/expiry; current expiry is preserved, not extended for CI.",
+    "No actual user placement ability or wager/financial result is established.",
+    "New producer instructions and merged history guard require next natural scheduled adoption proof."
+  ]
+}
