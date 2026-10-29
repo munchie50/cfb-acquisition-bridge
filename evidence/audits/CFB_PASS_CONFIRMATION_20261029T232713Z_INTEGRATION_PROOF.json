@@ -1,0 +1,54 @@
+{
+  "schema": "CFB_BOUNDED_QA_INTEGRATION_PROOF_V1",
+  "cycle_id": "CFB_PASS_CONFIRMATION_20261029T232713Z",
+  "recorded_at_utc": "2026-10-29T23:45:05Z",
+  "result": "PASS_BOUNDED_SAVED_EVIDENCE_AUDIT_INTEGRATION_ONLY",
+  "semantic_result": {
+    "cases": 34,
+    "source_canonical_main_market_checks": 204,
+    "supported_bounded_qualitative_pass": 27,
+    "confirmation_pending": 7,
+    "not_negative_EV_proof": true
+  },
+  "audit": {
+    "path": "evidence/audits/CFB_PASS_CONFIRMATION_20261029T232713Z.md",
+    "blob": "e4146a9045a6d3f7f78c8998b316d58b6020b94a",
+    "commit": "a2323f470fc3b1d7b8cac122189e1b2987e05efe"
+  },
+  "machine": {
+    "path": "evidence/audits/CFB_PASS_CONFIRMATION_20261029T232713Z.json",
+    "blob": "bdb0577729fcec6ecd5b6f129227efd53db30fef",
+    "commit": "bcef34a1525ab8ee6f969137bd900473cd495593"
+  },
+  "register": {
+    "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+    "blob": "54a79c84020dfe61d381f228caf935ae0fbebc47",
+    "commit": "e6bab64ca149ada0daba2549ffcdc8d02edba118"
+  },
+  "index": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md",
+    "blob": "7eb4671fdc25a37932d0b0ffd1bf69ab6de236e1",
+    "commit": "cfd380db248c98b148ad98627039d90e8fb2ba85"
+  },
+  "preflight": {
+    "proposed_before_mutation": "PASS",
+    "independent_saved": "PASS",
+    "verified_pointers": 318
+  },
+  "ci": {
+    "run_id": 40974287791,
+    "job_id": 123798371258,
+    "head_sha": "cfd380db248c98b148ad98627039d90e8fb2ba85",
+    "conclusion": "success",
+    "completed_steps": 45,
+    "failed": 0,
+    "skipped": 0,
+    "decoded_logs_independently_read": true,
+    "log_git_blob": "635dd2fa28d72ef224c6864363fc07ae4f0f68e6",
+    "original_frozen_numeric_fields": 135
+  },
+  "fresh_main_checked": "cfd380db248c98b148ad98627039d90e8fb2ba85",
+  "boundary": "Saved source recovered 2026-10-29T22:29:43.698961147Z; assessment packet 2026-10-29T22:41:03.230751+00:00; NOT refreshed by QA",
+  "next_proof": "Next existing natural Monitor must consume seven exact follow-ups with fresh actual prices/evidence and demonstrate timely current comparative decisions. Not proved by this manual audit or CI.",
+  "changes": "Audit/machine evidence, existing register/navigation and receipts only; no price, primary sheet, betting state, forecasts, model, schedule, task, execution, money or paid acquisition change."
+}
