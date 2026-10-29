@@ -26805,3 +26805,844 @@ All remaining 60 governed games retain their recorded reconciliation deadlines a
   ]
 }
 ```
+```cfb-week9-decision-v1
+{
+  "schema": "CFB_WEEKLY_CONDITIONAL_DECISION_V3",
+  "cycle_id": "CFB_MARKET_MONITOR_20261029T222851Z",
+  "as_of_utc": "2026-10-29T22:41:03.230751+00:00",
+  "rows": [
+    {
+      "game_id": "401871071",
+      "state": "PASS",
+      "reason": "Delaware now receives +2.5 versus the earlier small-favorite context, but Minicucci's rebound and one232-yard rushing game still face WKU home/bye defense. WKU -1.5/-122 is inexpensive but its276yards/16points weakens the host case. Delaware +110 does not overcome its defensive concessions. At55.5, rebound offense and opposing defensive control still leave both totals declined; old experimental lean is not revived.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401871072",
+      "state": "PASS",
+      "reason": "Sam Houston +5.5/-105 loses half a point versus +6 but has lighter juice. Missouri State -5.5/-105 is cheaper than the prior -115, and its -205 moneyline is cheaper than -225. Re-read both official previews: Belin/Myers passing improvement still faces Sam's completion/third-down prevention; Sam's weak rushing still opposes the dog. Missouri State's prior defensive collapse to Delaware is a counterweight to laying points, not an inference from tonight's game. At51.5, passing explosives and stalled/low-rush possessions still oppose choosing either total. All six branches remain declined on their football/price merits; no fresh final-starter/medical claim.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401871058",
+      "state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "reason": "CONTROLLED BETA: Middle Tennessee full-game moneyline at -140 or better, conditional on a fresh posted venue price meeting this cap and no materially adverse personnel/weather update. Prefer the home win to a margin requirement: Brown's current rushing production and Gagliano's consecutive 200-yard passing games provide two offensive routes, against a Kennesaw offense just held to six points. Kennesaw's close losses, protection/completion strengths and active linebackers are meaningful upset risks; MTSU's long field goals and takeaways are not assumed to recur. This is a qualitative Beta judgment, not a calibrated probability, EV or placed wager. Canonical Week9 publication remains blocked by other overdue unresolved rows; this immutable review must not be represented as an integrated new Hot Sheet.",
+      "reconciliation_utc": "2026-10-27T17:00:00Z",
+      "planning_cutoff_utc": "2026-10-27T18:00:00Z",
+      "cutoff_authority": "REVIEW_EVIDENCED",
+      "acceptable_number": {
+        "market": "MONEYLINE",
+        "selection": "home",
+        "line": null,
+        "minimum_price": -140,
+        "direction": "PRICE_ONLY"
+      },
+      "execution_window": {
+        "start_utc": "2026-10-26T23:44:04.763Z",
+        "end_utc": "2026-10-27T18:00:00Z"
+      },
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_MIDDLE_TENNESSEE_CONTROLLED_BETA_20261026T234404Z.json",
+        "commit": "37f0e3edf5b09afdc4f05e14e5a70b6d4fa91ab3",
+        "blob": "d0a4620f56a84b96931df1dfa8f843324ef58212"
+      },
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401871057",
+      "state": "PASS",
+      "reason": "Jacksonville State -3 gains a half point relative to the prior3.5 lay, but NM State ground/run-defense strength still opposes buying the visitor margin. NM State +3.5 has slightly cheaper juice yet Jax rest, protection and mobile QB remain direct counterevidence. -160/+136 and49.5 totals do not overcome that possession/efficiency conflict. No derivative/parlay preferred.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401862812",
+      "state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "reason": "CONTROLLED BETA: Florida Atlantic +13.5 or more, price -115 or better, against North Texas. FAU's established passing targets and multiple scoring routes support staying within two touchdowns, with current UNT defensive concessions providing a concrete competitive/backdoor path. Prefer the points to predicting an outright upset. UNT's explosive passing/rushing and FAU's poor defensive results are serious runaway risks, so this is a low-maturity qualitative choice with a fixed no-chase cap, not a calculated fair line, probability, EV or stake. Require a fresh actual venue quote meeting both limits and reassess materially adverse personnel/line/weather news. Full canonical Week9 integration remains pending.",
+      "reconciliation_utc": "2026-10-27T17:00:00Z",
+      "planning_cutoff_utc": "2026-10-27T18:00:00Z",
+      "cutoff_authority": "REVIEW_EVIDENCED",
+      "acceptable_number": {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 13.5,
+        "minimum_price": -115,
+        "direction": "AT_LEAST"
+      },
+      "execution_window": {
+        "start_utc": "2026-10-27T01:36:35.614Z",
+        "end_utc": "2026-10-27T18:00:00Z"
+      },
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_FLORIDA_ATLANTIC_CONTROLLED_BETA_20261027T013124Z.json",
+        "commit": "6a3cda95cfb0ba40edfc7179172bdeda198d0bb5",
+        "blob": "9547eb01aad7d2272679de20c61c9c79c2b0f7c7"
+      },
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401869963",
+      "state": "CONDITIONAL",
+      "reason": "CONTROLLED BETA: Troy at James Madison full-game UNDER 50.5 or higher, price -115 or better. The newly read Troy preview reports JMU leading rusher George Pettaway out and Crowder leaving a second consecutive game injured. Troy's low road scoring and passing limitations against JMU's run prevention favor fewer sustained scoring drives; Troy's pass rush and red-zone resistance provide a second route to limiting JMU. Prefer the total to laying 18.5 or buying the Troy upset. JMU's explosive passing, return game and short-field scoring can still beat the under. Identified FanDuel 50.5/-105 meets these discretionary limits; actual venue offer and material-news recheck remain pending. Qualitative judgment, not calibrated probability, EV, stake or an execution.",
+      "reconciliation_utc": "2026-10-29T22:50:00Z",
+      "planning_cutoff_utc": "2026-10-29T23:00:00Z",
+      "cutoff_authority": "REVIEW_EVIDENCED",
+      "acceptable_number": {
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 50.5,
+        "minimum_price": -115,
+        "direction": "AT_LEAST"
+      },
+      "execution_window": {
+        "start_utc": "2026-10-29T22:34:46Z",
+        "end_utc": "2026-10-29T23:00:00Z"
+      },
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_JMU_TROY_UNDER_RECONSIDERATION_20261029T223446Z.json",
+        "commit": "2db2e279e43d7923a817cbcacbc9c9681b90acda",
+        "blob": "041181e1d9ab71e73a470438242224995df13c8c"
+      },
+      "state_recorded_at_utc": "2026-10-29T22:41:03.230751+00:00",
+      "state_evidence": "CFB_MARKET_MONITOR_20261029T222851Z"
+    },
+    {
+      "game_id": "401862813",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away-8.5/-108, home+9.5/-110; ML-345/+280; over47.5/-105, under47.5/-110. Tulane's cheaper road lay is the strongest candidate, but even removing the six-turnover outlier does not establish two-score separation from Charlotte's improved passing/rushing. Charlotte's weak defense makes its own points and outright upset less attractive than merely fading Tulane. The winner premium buys no demonstrated margin advantage. For the total, do not extrapolate either the turnover-inflated UTSA score or Tulane's defensive touchdown into ordinary drives; neither scoring direction is selected at this actual threshold.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401856844",
+      "state": "CONDITIONAL",
+      "reason": "CONTROLLED BETA: UCF +2.5 or higher at -115 or better versus Baylor. Fresh official previews show a repeatable home run-defense mechanism, allowing118rushyards/game and few explosive runs, and an established Jenkins-led passing/rushing combination. Taking points is preferable to requiring a repeat upset or using the double-overtime BYU score as regulation scoring power. Baylor retains an excellent pressure/defense unit under its own defensive coordinator as interim head coach; that is the principal losing path, not an assumed coaching collapse. The actual market now gives UCF points rather than requiring it to cover as a favorite. Identified FanDuel +2.5/-110 meets this limit. Qualitative Beta, not calibrated EV/probability, a stake or execution.",
+      "reconciliation_utc": "2026-10-30T17:00:00Z",
+      "planning_cutoff_utc": "2026-10-30T18:00:00Z",
+      "cutoff_authority": "REVIEW_EVIDENCED",
+      "acceptable_number": {
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 2.5,
+        "minimum_price": -115,
+        "direction": "AT_LEAST"
+      },
+      "execution_window": {
+        "start_utc": "2026-10-29T22:37:06Z",
+        "end_utc": "2026-10-30T18:00:00Z"
+      },
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_UCF_POINTS_RECONSIDERATION_20261029T223706Z.json",
+        "commit": "86473485fbf1db5d97673d54f923a184b3228ef8",
+        "blob": "0c436f203c0e59a415d305ffa750155e73c96d5b"
+      },
+      "state_recorded_at_utc": "2026-10-29T22:41:03.230751+00:00",
+      "state_evidence": "CFB_MARKET_MONITOR_20261029T222851Z"
+    },
+    {
+      "game_id": "401866451",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away-7.5/-112, home+8/-108; ML-305/+260; over46.5/-108, under46.5/-110. Kent passing is the strongest ordinary-game mechanism, but its defensive yardage concessions mean a road win is more defensible than a margin exceeding a touchdown; the moneyline still charges a substantial premium for that weaker claim. Sacramento's added points do not repair its 54-yard rushing/3-of-12 third-down outing, so it is not selected merely because the frozen model disagrees. Kent's penalty-assisted last score is insufficient to prefer over, while its passing explosiveness makes under unattractive at this comparatively low total.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401856733",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away-9.5/-114, home+10/-111; ML-350/+300; over49.5/-108, under49.5/-110. Arkansas's balanced438yard attack is the strongest dog case, but pick-six assistance means its recent score overstates ordinary drive finishing. Missouri's rushing/defense support comes partly from explicitly datedOct10evidence and is insufficient to demand9.5points now or pay a heavy winner premium. Arkansas's upset needs more than the supported competitive path. Under49.5 is the stronger scoring inquiry, but current Arkansas passing/rushing competence outweighs extrapolating old Missouri suppression; over is not established from the defensive touchdown. No Hardy clearance assumed.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401856735",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+12.5/-108, home-12/-111; ML+380/-481; over57.5/-108, under57.5/-108. Ole Miss pressure and passing are the strongest side mechanism against Auburn's protection/rushing failures. The sizeable lay already prices in separation, and Auburn's string of ranked opponents makes raw recent offensive weakness too pessimistic to justify that margin here. Auburn's points and large upset payout still require successful protection against that pressure. For the total, Ole Miss can score without Auburn sustaining ordinary drives; that asymmetry weakens over, while host explosives/short fields make under no preferred purchase at57.5.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401856736",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+4.5/-105, home-4.5/-110; ML+164/-192; over44.5/-105, under44.5/-110. South Carolina's Sellers dual-threat route is the strongest dog case, but the actual4.5cushion has lost the earlier5.5protection. Oklahoma's rushing improvement against a disrupted MSU opponent does not independently establish a home-margin buy, while South Carolina's late stops/strip sack do not prove ordinary defensive control. Neither winner price resolves that opponent-context limitation. At44.5 under is plausible on uneven drives, but mobile-QB explosives and favorable fields make the threshold less attractive than a clean defensive recap suggests; over lacks a sustained two-offense case.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401856737",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+20.5/-114, home-20/-108; ML+890/-1250; over50.5/-111, under50.5/-105. Taylor's retained official season-ending absence makes Texas the stronger likely winner, but the actual twenty-point lay demands sustained separation, not merely exploiting an unavailable quarterback. MSU's20.5cushion still needs ordinary scoring without that player; the large dog payout does not establish it. Texas's-1250winner premium remains a poor way to express a qualitative likely-win case. Under50.5 is the strongest total inquiry from the impaired dog, but host explosives and defensive/short-field scores can cover much of the total alone; neither scoring branch is selected.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401856842",
+      "state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "reason": "CONTROLLED BETA: Arizona +4.5 or more at -115 or better against Texas Tech, contingent on the actual offered price and material-news recheck. Prefer the points to an outright upset: Arizona's current passing efficiency and run prevention support a competitive-game path, while the frozen slight away direction is corroborative context only. Tech's strong home performance and dangerous takeaway defense are meaningful losing paths. The observed FanDuel +4.5/-120 DOES NOT meet this price cap; no bet at -120. This is a qualitative price-conditional recommendation, not calculated EV, a calibrated cover probability or a stake. Canonical full-week integration remains pending.",
+      "reconciliation_utc": "2026-10-27T17:00:00Z",
+      "planning_cutoff_utc": "2026-10-27T18:00:00Z",
+      "cutoff_authority": "REVIEW_EVIDENCED",
+      "acceptable_number": {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 4.5,
+        "minimum_price": -115,
+        "direction": "AT_LEAST"
+      },
+      "execution_window": {
+        "start_utc": "2026-10-27T02:06:36.631Z",
+        "end_utc": "2026-10-27T18:00:00Z"
+      },
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_ARIZONA_PRICE_CONDITIONAL_20261027T015520Z.json",
+        "commit": "a0ecea22136f4945e046be2043f6dad7c7dee930",
+        "blob": "e096376b2343667fc28b36c1f643b30ea1f854f9"
+      },
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401856843",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+16.5/-110, home-16.5/-108; ML+570/-752; over48.5/-105, under48.5/-110. ASU's rushing gives the strongest dog path, yet its injured-quarterback and repeated offensive-line combinations directly threaten drive continuity even with16.5points. BYU must separate by more than two touchdowns, which its overtime loss and ASU ground route do not establish. The favorite winner premium is steep and the dog payout still needs functional offense. Under48.5 is the stronger totals inquiry from ASU limitations, but BYU scoring/short fields can carry much of it; the overtime headline does not supply an over thesis.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401856845",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+6/-108, home-5.5/-112; ML+190/-210; over45.5/-110, under45.5/-108. Kansas rushing is the strongest dog mechanism against a TCU favorite whose frozen margin is not refreshed, but TCU's retained13.9points/264.3yards allowed case is a stronger constraint on that ground success than the blocked-field-goal Kansas win suggests. That keeps both points and the upset from selection; it also prevents mechanically choosing TCU's lay or winner premium against an established running threat. At the lower45.5 total, under has lost useful protection while TCU passing and Kansas rushing remain plausible scoring routes. Neither total is chosen.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401856846",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+2/-111, home-1.5/-108; ML+105/-125; over46.5/-110, under46.5/-105. K-State's rushing/pass-defense mechanism makes its points the strongest side at the actual board, which now shows Colorado favored rather than the older same-sign cells. Its Johnson/Knuth injury/role question directly affects that mechanism; the small cushion does not independently offset it. Colorado's turnover and defensive issues prevent buying its short favorite price instead. At46.5 both over and under depend materially on the same offensive scenario; no blanket healthy-starter assumption or outcome-derived adjustment supplies a selection.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401856847",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away-9.5/-111, home+9.5/-108; ML-345/+280; over57.5/-114, under58.5/-120. Oklahoma State passing against Iowa State's QB/rushing disruption is the strongest side case, but the visitor's defensive concessions undermine demanding9.5points of separation. Iowa State's cushion requires an ordinary offensive floor its recent transition has not supplied, and its upset payout does not repair that. Paying for the favorite winner is not preferred from one second-half comeback. The separate57.5over and58.5under are not one synthetic price: host offensive limitations oppose over, while visitor explosives/defensive leakage oppose under at the expensive-120cost.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401856848",
+      "state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "reason": "CONTROLLED BETA: Cincinnati +6.5 or higher at -115 or better versus Utah, subject to actual offer and material-news recheck. Prefer a competitive home-game points cushion to requiring an upset. Balanced rushing/passing against TexasTech supports this mechanism; unchanged original projects a smaller Utah margin. Utah's run prevention and Dampier's dual-threat offense are substantial losing paths. Qualitative Beta, not calculated EV, calibrated cover probability or stake. Full-week canonical integration pending.",
+      "reconciliation_utc": "2026-10-27T17:00:00Z",
+      "planning_cutoff_utc": "2026-10-27T18:00:00Z",
+      "cutoff_authority": "REVIEW_EVIDENCED",
+      "acceptable_number": {
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 6.5,
+        "minimum_price": -115,
+        "direction": "AT_LEAST"
+      },
+      "execution_window": {
+        "start_utc": "2026-10-27T02:15:33.971Z",
+        "end_utc": "2026-10-27T18:00:00Z"
+      },
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_CINCINNATI_CONTROLLED_BETA_20261027T015520Z.json",
+        "commit": "2928ff585df588489ad55fb05af7e196a3e5269e",
+        "blob": "f270892ad49f6f3c19e051bb75a4763e5a98a0fb"
+      },
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858277",
+      "state": "PASS",
+      "reason": "ORIGINAL_MODEL_EXCLUSION preserved; no model-backed recommendation or invented prediction. No action within this original-lineage review.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858278",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away-9.5/-122, home+10.5/-111; ML-380/+310; over57.5/-111, under58.5/-112. Syracuse points are the strongest counter to buying SMU's second-half scoring burst as a repeatable road margin. However the same Syracuse defensive leakage leaves a double-digit cushion less compelling than its offensive production alone suggests; the outright upset requires more than that competitive path. SMU's moneyline premium does not resolve drive consistency. The high total already asks for sustained scoring; recent finishing and special-teams distortion prevent selecting either over or under from the final scores.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858279",
+      "state": "CONDITIONAL",
+      "reason": "CONTROLLED BETA: Boston College +7.5 or higher at -115 or better. Boston College's current ground production against a Duke defense that allowed Virginia195rushing yards supports a competitive-game points cushion. Prefer more than a touchdown rather than requiring an upset. Duke's second-half pressure, BC's limited passing and dependence on an unusually strong last rushing game are meaningful losing paths. Observed FanDuel 7.5/-124 DOES NOT meet this limit; no bet at that quote. Qualitative recommendation, not calculated EV, calibrated probability, stake or execution. Full-week canonical integration pending.",
+      "cutoff_authority": "REVIEW_EVIDENCED",
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_BOSTON_COLLEGE_CONTROLLED_BETA_20261027T214636Z.json",
+        "commit": "b9d76af90a9de25585f5cad6605e37f440c6c9a9",
+        "blob": "470a83cc91a51f913680f968765fd2633a71cf8c"
+      },
+      "acceptable_number": {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 7.5,
+        "minimum_price": -115,
+        "direction": "AT_LEAST"
+      },
+      "reconciliation_utc": "2026-10-28T17:00:00Z",
+      "planning_cutoff_utc": "2026-10-28T18:00:00Z",
+      "execution_window": {
+        "start_utc": "2026-10-27T21:50:25.899Z",
+        "end_utc": "2026-10-28T18:00:00Z"
+      },
+      "state_recorded_at_utc": "2026-10-28T01:50:37.587942Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261028T014533Z"
+    },
+    {
+      "game_id": "401858280",
+      "state": "PASS",
+      "reason": "ORIGINAL_MODEL_EXCLUSION preserved; no model-backed recommendation or invented prediction. No action within this original-lineage review.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858281",
+      "state": "CONDITIONAL",
+      "reason": "CONTROLLED BETA: Pittsburgh -6.5 or better at -115 or better. Pittsburgh's run prevention and passing output against a Georgia Tech defense that just allowed 399 rushing yards support a home separation path. Prefer limiting the lay to less than a touchdown because Pitt's injuries, quarterback execution and recent short-field concessions create substantial losing paths. Observed FanDuel -7.5/-108 DOES NOT meet this limit; no bet at that quote. Qualitative recommendation, not calculated EV, calibrated probability, stake or execution. Full-week canonical integration pending.",
+      "cutoff_authority": "REVIEW_EVIDENCED",
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_PITTSBURGH_CONTROLLED_BETA_20261027T214636Z.json",
+        "commit": "2fc90d9cef54610994a4e77b951fc92e8dbbabca",
+        "blob": "d8d9db2bfda198665fc42e76c0ab4fe75ab41bff"
+      },
+      "acceptable_number": {
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -6.5,
+        "minimum_price": -115,
+        "direction": "AT_LEAST"
+      },
+      "reconciliation_utc": "2026-10-28T17:00:00Z",
+      "planning_cutoff_utc": "2026-10-28T18:00:00Z",
+      "execution_window": {
+        "start_utc": "2026-10-27T21:50:25.899Z",
+        "end_utc": "2026-10-28T18:00:00Z"
+      },
+      "state_recorded_at_utc": "2026-10-28T01:50:37.587942Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261028T014533Z"
+    },
+    {
+      "game_id": "401858282",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away-14/-114, home+14.5/-115; ML-625/+480; over52.5/-110, under52.5/-108. Miami passing is the strongest football mechanism, but laying two touchdowns on the road already demands separation beyond the original eight-point opinion; retained short-field effects do not prove that margin. UNC's passing ceiling makes the dog plausible while its defensive leakage prevents choosing it or its upset. Miami's heavy winner premium is separately unattractive. At52.5 Miami's explosive offense and UNC contribution can support over, but overtime/field-position distortion leaves no repeatable two-offense scoring baseline; under is not justified just by excluding those points.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858283",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+22.5/-108, home-22.5/-110; ML+1100/-1818; over59.5/-114, under60.5/-110. Stanford's running provides the strongest dog path, but its pronounced road offensive weakness means the large cushion is not automatically protection against Louisville explosives. Louisville's recent stalled second-half drives likewise do not justify paying for more than three touchdowns of separation or an enormous winner premium. The high under threshold is the more interesting total branch, but passing/long-run scoring can reach it without stable long drives. No side, winner or total is selected from this opponent-mix-limited comparison.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858284",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+12.5/-108, home-12.5/-110; ML+400/-500; over49.5/-105, under49.5/-112. Virginia points are the strongest candidate on retained defensive resistance, but poor protection/finishing makes covering12.5 depend too heavily on keeping Wake out of explosive/short-field scores. Wake's Lopez/rest case supports a win more than a large lay, while its winner price charges heavily for that. The dog upset lacks the ordinary offensive mechanism. Under49.5 is the stronger totals inquiry, but Virginia protection can create favorable Wake fields; over likewise requires sustained scoring not established by the retained explosive outing. No preferred branch.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858501",
+      "state": "PASS",
+      "reason": "ORIGINAL_MODEL_EXCLUSION preserved; no model-backed recommendation or invented prediction. No action within this original-lineage review.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858502",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+3.5/-118, home-3/-118; ML+142/-160; over36.5/-110, under36.5/-108. Iowa laying a field goal is the strongest side after Wisconsin's breakout, because Iowa's run prevention and protection are more transferable than Wisconsin's single opponent collapse. The -118 cost at the key number reduces that appeal, while Iowa's limited passing/QB split gives no strong basis to buy extra margin. Wisconsin's points also cost -118; its upset payout requires overcoming the host defense. At36.5 there is little room for defensive dominance to compensate for short fields and a few successful drives, so neither total is selected.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858503",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away-2.5/-110, home+2.5/-105; ML-128/+114; over54.5/-108, under54.5/-102. Maryland receiving/ball security and a small home cushion are the strongest alternative to backing Illinois's replacement quarterback on the road. Illinois's run/defense case is nonetheless more repeatable than an assumed Maryland interim-coach bounce, preventing a home pick from that narrative alone. Neither near-pickem moneyline compensates for an unestablished offensive preference. The total requires a judgment on drive efficiency rather than assuming coaching change increases or decreases pace; retained evidence does not supply a directional scoring advantage.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858504",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+7.5/-105, home-7.5/-108; ML+250/-310; over49.5/-110, under50.5/-115. Nebraska's third-down defense and backfield injuries make the under the strongest branch; Washington's280-plus passing/extended-play route, under either plausible QB, directly threatens that low-scoring mechanism. The51point boundary is not invented: actual under50.5costs-115 while over49.5is separate. The added under point is useful but does not establish Washington containment from national third-down rank alone. Nebraska-7.5also requires margin despite its own backfield limits; Washington+7.5needs scoring against that defense. Neither winner price is preferred from close prior losses or bye rest.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858505",
+      "state": "PASS",
+      "reason": "ORIGINAL_MODEL_EXCLUSION preserved; no model-backed recommendation or invented prediction. No action within this original-lineage review.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858506",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+9.5/-105, home-9.5/-111; ML+280/-345; over54.5/-114, under54.5/-105. Purdue's9.5point cushion is the strongest side inquiry after gaining protection, but its488yards/15explosives conceded despite five takeaways makes turnover-independent containment weak. Penn State pressure/receiving support the favorite, but the larger lay and opponent rest demand more separation than the retained evidence earns. The winner premium is not preferred and Purdue's upset requires repeated defensive escapes. Under54.5 is the strongest totals countercase, but explosive concessions dominate that confidence; over still depends on converting those drives rather than repeating five takeaway opportunities.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858507",
+      "state": "PASS",
+      "reason": "ORIGINAL_MODEL_EXCLUSION preserved; no model-backed recommendation or invented prediction. No action within this original-lineage review.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858508",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+22.5/-108, home-22.5/-108; ML+1400/-1818; over44.5/-102, under44.5/-115. UCLA defense and drive suppression are the strongest side case; the actual22.5lay already requires far more than the original11.5margin, with no current adjusted-margin evidence to replace it. Nevada's cushion is not selected from its San Jose win because that defensive result does not transfer well. The huge favorite moneyline and remote dog upset are declined independently. Under44.5 is the strongest totals inquiry, but its-115 cost and potential host short-field scoring reduce the purchase appeal; Nevada offensive limitations also prevent preferring over.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401858509",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away-6.5/-115, home+7/-115; ML-244/+205; over51.5/-108, under51.5/-108. USC's added seven-point cushion is the strongest current alternative to backing Ohio State's replacement passing setup. But USC's retained rushing/protection failures prevent trusting its own scoring floor against the visitor. The official upstream Sayin-out-indefinitely finding is retained, not promoted to final game-day starter certainty; it limits Ohio State's margin and winner-premium thesis. At51.5 under is the stronger totals inquiry, but both backup execution and short-field/vertical scoring create a wide ordinary-game range that the saved evidence cannot narrow into a preferred price. No new starter is invented.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401860924",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away-5.5/-115, home+6/-110; ML-215/+185; over58.5/-105, under58.5/-110. Oregon State passing/protection is the strongest side, but its5.5lay at-115must beat a Fresno home defense allowing20.9points/game with strong ball security. Fresno's six-point cushion is more attractive than the prior5.5, yet the visitor's24TD/2INTpassing gives a direct reason not to buy the dog or its upset. Neither winner price is preferred. Under58.5is the strongest totals inquiry on both recent defenses; however OSU efficient passing and Fresno long-rush concessions can score without turnovers. The higher total warrants reassessment but is not selected from unadjusted points-allowed averages alone.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401862814",
+      "state": "PASS",
+      "reason": "ORIGINAL_MODEL_EXCLUSION preserved; no model-backed recommendation or invented prediction. No action within this original-lineage review.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401862815",
+      "state": "PASS",
+      "reason": "ORIGINAL_MODEL_EXCLUSION preserved; no model-backed recommendation or invented prediction. No action within this original-lineage review.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401862816",
+      "state": "PASS",
+      "reason": "ORIGINAL_MODEL_EXCLUSION preserved; no model-backed recommendation or invented prediction. No action within this original-lineage review.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401864529",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away-14.5/-108, home+14.5/-110; ML-649/+520; over42.5/-108, under42.5/-108. New Mexico defense is the strongest matchup mechanism, but its low-output/pick-six-assisted win does not establish more than two touchdowns of ordinary road margin. San Jose's91passing-yard outing prevents buying its cushion or payout merely because UNM's margin looks large. The favorite moneyline still demands very high certainty from limited ordinary offense. Under42.5 benefits from both offensive limitations, but already-low threshold and defensive-score/short-field routes make that advantage insufficient for a selected total; over lacks drive support.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401869846",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+5.5/-108, home-5.5/-108; ML+180/-213; over56.5/-110, under56.5/-105. App State passing with Singleton is the strongest dog mechanism, but Georgia Southern's improved pressure and rushing-TD prevention directly threaten it while Singleton's retained hobbled role is not assumed resolved. Southern's5.5lay asks for separation beyond an ordinary home win against that passing ceiling. Moneylines do not remove these competing matchups. The56.5total is assessed excluding overtime from App's last score; pressure can stall drives while passing can produce explosive scores, leaving neither a preferred total at the current threshold.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401869944",
+      "state": "PASS",
+      "reason": "ORIGINAL_MODEL_EXCLUSION preserved; no model-backed recommendation or invented prediction. No action within this original-lineage review.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401871095",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away-3.5/-108, home+3.5/-111; ML-162/+145; over56.5/-114, under57.5/-112. Southern Miss rushing is the strongest ordinary scoring mechanism, but buying separation beyond a field goal also requires containing the passing yardage it recently conceded. ULM's weak ordinary offense means its late/defensive scores do not justify the points or outright upset. The Southern Miss winner premium is not supported by simply stripping those unusual scores from the opponent. Separate over56.5 and under57.5 are assessed honestly: rushing supports long drives, but defensive/return-score distortion prevents a reliable totals preference.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401871096",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away-2.5/-122, home+3/-112; ML-142/+128; over43.5/-112, under43.5/-105. Marshall's opponent is an ODU offense coming off141yards with a new quarterback and left tackle, so the visitor is the strongest side candidate. However the quarterback medical-tent event in retained Marshall evidence leaves a specific offensive-continuity risk, not final-health perfection, at the expensive -122 lay. ODU's new three-point cushion does not establish a scoring floor. Neither winner price resolves that uncertainty. The now lower43.5 total has absorbed much of the offensive concern; no remaining under preference is earned, and over lacks ordinary-drive support.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401871097",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away-5.5/-108, home+5.5/-110; ML-210/+180; over58.5/-108, under58.5/-110. Louisiana Tech's defense is the strongest side mechanism, but suppressing a disrupted ODU attack is insufficient to demand nearly a touchdown on a different road matchup. South Alabama's recent passing inefficiency makes its points/upset case weaker than merely questioning Tech's margin. The favorite moneyline is still a premium for evidence with that opponent-transfer limitation. A high58.5 total makes under the stronger totals inquiry, but South Alabama's earlier scoring ceiling and field-position risk prevent treating its latest poor outing as a stable scoring baseline.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401859185",
+      "state": "PASS",
+      "reason": "ORIGINAL_MODEL_EXCLUSION preserved; no model-backed recommendation or invented prediction. No action within this original-lineage review.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401866452",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+13.5/-112, home-13/-111; ML+430/-500; over44.5/-108, under44.5/-111. Bowling Green's cushion is more plausible than Western Michigan producing sustained two-touchdown separation after595yards conceded and interceptions. But BG's recent passing production depended partly on favorable fields, leaving no sufficiently strong offensive floor to buy the dog or its upset. WMU's winner premium is not a substitute for the weak cover case. Defensive leakage favors scoring but finishing uncertainty matters at44.5; neither final-score extrapolation earns the over or under.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401861966",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+1.5/-120, home+1/-111; ML-105/-108; over51.5/-110, under51.5/-108. UConn's rushing against an Air Force offense with Medders injury/fumble issues is the strongest football case. The actual split-book cells give UConn only1.5points at-120 while Air Force separately gets1; they are not a paired middle or consensus. Reduced protection and expensive juice weaken the visitor purchase. Air Force's possession structure is insufficient to buy its winner or small cushion while that quarterback route is impaired. At51.5 long possessions support under, but the reduced threshold and rushing efficiency mean no standalone total preference.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401856734",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+12.5/-110, home-12/-111; ML+390/-476; over56.5/-110, under56.5/-108. Georgia's stable front and run defense are the strongest side mechanism, but Florida QB rushing/shoulder scenarios at a neutral site make a twelve-point lay more demanding than a likely-win claim. Florida's points and upset price need sustained offense against that front, not merely prior running-QB stress. Georgia's expensive winner is declined separately. At56.5 Georgia offensive scoring and uncertain Florida contribution pull in opposite directions; the under is not bought solely from a shoulder concern and the over is not bought from Georgia season scoring.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401860910",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+6.5/-102, home-6.5/-110; ML+200/-225; over62.5/-114, under63.5/-112. CSU's larger cushion is the strongest side candidate, but565opponent yards in its latest shootout make a defensive stop-based cover case weak. Utah State's17point/285yard outing is inadequate evidence to lay6.5 in response. The respective moneylines do not transform those margins into a win-price preference. Under63.5 has a better numerical hurdle than the separate over62.5, but CSU's repeatable explosive/defensive-leakage route dominates confidence in a low-scoring assumption; the under is declined, and USU offensive friction also prevents an over selection.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401864531",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+24.5/-115, home-24/-111; ML+1450/-2500; over42.5/-110, under42.5/-108. NDSU defensive pressure is the strongest side mechanism against UTEP protection/QB disruption. It does not by itself establish four-touchdown separation after NDSU's own53yard rushing result; paying the huge winner premium is also unattractive. UTEP's cushion and upset require drive survival that retained protection evidence does not support. Under42.5 is the stronger scoring inquiry, but the low threshold plus sacks/turnover short fields creates too much scoring concentration for a preferred purchase. No over inference from pressure alone.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401871059",
+      "state": "PASS",
+      "reason": "ORIGINAL_MODEL_EXCLUSION preserved; no model-backed recommendation or invented prediction. No action within this original-lineage review.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401860909",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+2.5/-105, home-2.5/-111; ML+114/-132; over48.5/-108, under49.5/-115. SDSU's new Saunders passing production is the strongest home mechanism, but two first-start interceptions and56points conceded weaken buying even a short lay. WSU's competitive first three quarters versus Boise make its points plausible, but do not establish an outright win or enough protection at only2.5. Both sides share the ninth-straight-week fatigue context. Under49.5 is the stronger total inquiry, yet its-115cost and both teams' explosive/leakage routes outweigh a generic fatigue assumption; over48.5still needs drive consistency beyond the raw shootout.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401860908",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+11/-111, home-10.5/-115; ML+350/-426; over63.5/-111, under63.5/-105. Boise's rush suppression is the strongest football mechanism, but its late surge after a tied third quarter does not support paying for10.5points of ordinary separation. Texas State's return touchdown and250yard attack weaken both the points and upset routes. Boise's winner premium remains expensive for a late-finishing argument. Under63.5is the strongest total inquiry after removing special-teams assistance, but Boise's passing/scoring ceiling and opponent volatility are substantial at the lower threshold; over is not selected from the late surge alone.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    },
+    {
+      "game_id": "401864530",
+      "state": "PASS",
+      "reason": "Current side-specific CBS fallback: away+24.5/-115, home-24/-111; ML+1300/-2222; over54.5/-105, under54.5/-111. UNLV's dual-threat offense versus NIU sustained-drive concessions is the strongest mechanism, but a24point lay requires keeping a margin after UNLV's own late defensive collapse. NIU's cushion and upset need an offensive response not supplied by merely fading UNLV's finish; the huge favorite winner premium is also declined. Over54.5is the stronger totals inquiry from the two defenses, but the higher hurdle and NIU drive uncertainty prevent treating opponent sustained drives as two-way scoring. Under is not supported by a generic bye adjustment.",
+      "reconciliation_utc": null,
+      "planning_cutoff_utc": null,
+      "cutoff_authority": "UNVERIFIED",
+      "acceptable_number": null,
+      "execution_window": null,
+      "review_ref": null,
+      "state_recorded_at_utc": "2026-10-27T22:21:24.237965Z",
+      "state_evidence": "CFB_MARKET_MONITOR_20261027T220849Z"
+    }
+  ]
+}
+```
