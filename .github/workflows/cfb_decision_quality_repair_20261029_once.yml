@@ -19,11 +19,14 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Replay authentic failures and rejection controls
         run: python -m unittest discover -s scripts -p test_cfb_decision_quality_repair_audit.py -v
       - name: Verify Week9 publication and historical decision protection
         run: python -m unittest discover -s scripts -p 'test_cfb_week9_*.py' -v
       - name: Save bounded diagnostic checkpoint
+        if: always()
         run: >-
           python scripts/cfb_decision_quality_repair_audit.py
           --prior evidence/operational/CFB_MARKET_MONITOR_20261029T115755Z_REVALIDATION.json
