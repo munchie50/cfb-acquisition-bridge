@@ -38,7 +38,7 @@ class PassProvenanceTests(unittest.TestCase):
         self.assertEqual(new[gid]['state_evidence'], self.old[gid]['state_evidence'])
         self.assertEqual(new[gid]['state_recorded_at_utc'], self.old[gid]['state_recorded_at_utc'])
         self.assertEqual(new[gid]['reason'], 'SYNTHETIC QA ONLY changed prospective PASS assessment')
-        packet = gate.selected_block(d, week.DECISION_TAG, gate.CONDITIONAL_DECISION_SCHEMA, gate.clock(AT))
+        packet = gate.selected_block(d, week.DECISION_TAG, gate.WEEKLY_DECISION_SCHEMAS, gate.clock(AT))
         self.assertEqual(packet['cycle_id'], CYCLE)
         self.assertTrue(m.startswith(self.market))
         self.assertTrue(d.startswith(self.decision))
