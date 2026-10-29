@@ -5,6 +5,7 @@ from pathlib import Path
 import unittest
 import cfb_week9_publication as week
 import cfb_neutral_publication_gate as gate
+from cfb_neutral_publication_legacy_replay import historical
 
 ROOT = Path(__file__).resolve().parents[1]
 AT = '2026-10-29T18:09:30Z'
@@ -14,8 +15,12 @@ CYCLE = 'CFB_MARKET_MONITOR_20261029T180930Z'
 class PassProvenanceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.market = (ROOT / 'evidence/operational/CFB_MARKET_MONITOR_STATE.md').read_text()
-        cls.decision = (ROOT / 'evidence/operational/CFB_DECISION_WAIT_LEDGER.md').read_text()
+        # Fixed replay clocks require fixed authentic inputs. Later production
+        # appends must not turn a retained replay into a future-clock failure.
+        cls.market = historical(ROOT / 'evidence/operational/CFB_MARKET_MONITOR_STATE.md',
+                                '60405482a311c8649fe9f798c4c47fddce193ac0')
+        cls.decision = historical(ROOT / 'evidence/operational/CFB_DECISION_WAIT_LEDGER.md',
+                                  '7575796f0681720d4efff2f880d229576a28e1a9')
         cls.capture = (ROOT / 'evidence/operational/CFB_CBS_WEEK9_TEXT_TABLE_CAPTURE_20261029T180541Z.md').read_text()
         cls.lineage = (ROOT / 'evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json').read_text()
         cls.old = gate.inputs(cls.market, cls.decision, cls.lineage, AT, 'WEEK9')[4]
