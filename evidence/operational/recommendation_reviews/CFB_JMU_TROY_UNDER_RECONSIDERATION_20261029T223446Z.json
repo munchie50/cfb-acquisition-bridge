@@ -1,0 +1,72 @@
+{
+  "schema": "CFB_PROSPECTIVE_RECONSIDERATION_REVIEW_V3",
+  "game_id": "401869963",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-10-29T22:34:46Z",
+  "original_lineage_blob": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "TOTAL",
+  "selection": "under",
+  "rationale": "CONTROLLED BETA: Troy at James Madison full-game UNDER 50.5 or higher, price -115 or better. The newly read Troy preview reports JMU leading rusher George Pettaway out and Crowder leaving a second consecutive game injured. Troy's low road scoring and passing limitations against JMU's run prevention favor fewer sustained scoring drives; Troy's pass rush and red-zone resistance provide a second route to limiting JMU. Prefer the total to laying 18.5 or buying the Troy upset. JMU's explosive passing, return game and short-field scoring can still beat the under. Identified FanDuel 50.5/-105 meets these discretionary limits; actual venue offer and material-news recheck remain pending. Qualitative judgment, not calibrated probability, EV, stake or an execution.",
+  "model_review": "Original FIRST_FROZEN JMU -22.6, total48.3, home win0.913 retained unchanged. Old total is corroborative context only; no current fair total, probability or injury-adjusted model number is inferred.",
+  "material_sources": [
+    {
+      "url": "https://jmusports.com/news/2026/10/27/football-jmu-takes-on-troy-in-sun-belt-championship-rematch",
+      "retrieved_at": "2026-10-29T22:34:46Z",
+      "finding": "Response recovered before this upper bound; official Oct27 preview: JMU allowed81 rushing yards on31 attempts last game, uses Coleman/Evans, and has strong passing/returns and home scoring. Overtime final is not regulation pace. Kickoff explicitly7:30PMET. No final all-player clearance."
+    },
+    {
+      "url": "https://troytrojans.com/news/2026/10/28/football-troy-travels-to-jmu-for-sbc-championship-game-rematch",
+      "retrieved_at": "2026-10-29T22:30:45Z",
+      "finding": "Official Oct28 preview reports Pettaway out after App State injury, Crowder leaving a second game with upper-body injury, Troy11points/game on road, defense27roadpoints allowed and red-zone resistance. This is attributed official opponent reporting, not an independently obtained medical diagnosis; no final Troy starter inferred."
+    }
+  ],
+  "uncertainty": "JMU passing explosives, early touchdowns, elite return production and turnover-created short fields can lift scoring even with reduced rushing personnel. Troy's rush attack may sustain unexpected drives. Rusher absence is reported in Troy's official preview rather than a full game-day availability list. Underlying offer-update unknown; no local venue quote or user placement window confirmed. Recheck adverse personnel/price news; do not chase a lower total or worse price.",
+  "decision_rule": "Existing qualitative controlled-Beta prospective PASS reconsideration: actual football mechanism and current identified quote support a bounded preference after comparing both spreads, both moneylines and both totals. Missing Caesars does not veto it. No wager quota or numerical edge claim.",
+  "source_qualification": "Identified public FanDuel team page gives Troy/JMU full-game row and explicit Oct29 23:30UTC game identity: over50.5/-115, under50.5/-105, Troy+18.5/-110, JMU-18.5/-110, ML+760/-1200. Schedule heading has a stale2025 label; dated next-game row and official2026 previews bind identity. Event betslip was location-gated and not bypassed; public page is a retrieval-only benchmark, not consensus, updated-time proof or venue execution.",
+  "market_reference": {
+    "game_id": "401869963",
+    "market": "TOTAL",
+    "selection": "under",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-10-29T23:30:00Z",
+    "kickoff_source_url": "https://troytrojans.com/news/2026/10/28/football-troy-travels-to-jmu-for-sbc-championship-game-rematch",
+    "collection_start": "2026-10-29T22:31:01Z",
+    "collection_end": "2026-10-29T22:31:35Z",
+    "clock_semantics": "RESPONSE_RECOVERED_BY",
+    "quotes": [
+      {
+        "game_id": "401869963",
+        "market": "TOTAL",
+        "selection": "under",
+        "period": "PREGAME_FULL_GAME",
+        "book": "FanDuel",
+        "operator": "FanDuel",
+        "operator_evidence_url": "https://sportsbook.fanduel.com/teams/college-football/james-madison-dukes/odds",
+        "source_url": "https://sportsbook.fanduel.com/teams/college-football/james-madison-dukes/odds",
+        "retrieved_at": "2026-10-29T22:31:35Z",
+        "offer_updated_at": null,
+        "line": 50.5,
+        "price": -105
+      }
+    ]
+  },
+  "acceptable_number": {
+    "market": "TOTAL",
+    "selection": "under",
+    "line": 50.5,
+    "minimum_price": -115,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-10-29T22:50:00Z",
+  "planning_cutoff_utc": "2026-10-29T23:00:00Z",
+  "cutoff_basis": "New manual prospective review validity ends at18:00CT because its new personnel/identified-price assessment requires a further check then and no other existing Monitor is due before the game. This is an explicitly limited analyst review window, not a universal kickoff-minus rule, an extension of a prior cutoff, a claim of user casino availability or a requirement to make an extra trip. Earlier PASS had no established price limit or planning cutoff. If timely full publication cannot finish, preserve the miss rather than retime or automatically renew this review.",
+  "execution_window": {
+    "start_utc": "2026-10-29T22:34:46Z",
+    "end_utc": "2026-10-29T23:00:00Z"
+  },
+  "reconsideration": {
+    "prior_row_blob": "37ea7b74fd47801212abcefb54f4e5a30cfb96ab",
+    "reason": "Earlier PASS reasoning referenced49.5 and old side/ML prices. Fresh official Troy preview adds explicit leading-rusher absence and current QB injury context, while newly acquired identified50.5/-105 total supplies a prospective under preference. Preserve earlier PASS and all original frozen fields; no historical missed review is revived."
+  }
+}
