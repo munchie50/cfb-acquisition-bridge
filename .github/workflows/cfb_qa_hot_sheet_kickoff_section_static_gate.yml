@@ -6,6 +6,7 @@ on:
       - 'scripts/cfb_planned_append_metadata.py'
       - 'scripts/test_cfb_planned_append_metadata.py'
       - 'scripts/cfb_week8_publication.py'
+      - 'scripts/cfb_runtime_checkout.py'
       - 'scripts/cfb_week9_publication.py'
       - 'scripts/test_cfb_week9_publication.py'
       - 'scripts/test_cfb_week9_conditional_publication.py'
@@ -181,6 +182,8 @@ jobs:
         run: |
           python scripts/cfb_hot_sheet_current_decision_binding_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md --current-ledger evidence/operational/CFB_DECISION_WAIT_LEDGER.md > "$RUNNER_TEMP/cfb_current_sheet_binding.json"
           cat "$RUNNER_TEMP/cfb_current_sheet_binding.json"
+      - name: Verify clean pinned runtime and immutable review ancestry
+        run: python scripts/cfb_runtime_checkout.py --destination "$RUNNER_TEMP/cfb_runtime_check" --expected-head "${{ github.sha }}"
       - name: Recover authenticated accepted FIRST_FROZEN archive
         env:
           GH_TOKEN: ${{ github.token }}
