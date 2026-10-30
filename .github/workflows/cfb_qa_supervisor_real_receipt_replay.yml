@@ -1,0 +1,20 @@
+name: CFB QA Supervisor Real Receipt Replay
+on:
+  push:
+    branches: [qa/monitor-no-update-investigation-20261030]
+    paths:
+      - 'evidence/scheduler_qa/CFB_SUPERVISOR_REAL_RECEIPT_SAMPLE_20261030.json'
+      - '.github/workflows/cfb_qa_supervisor_real_receipt_replay.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Classify persisted real run receipt without network or mutations
+        run: |
+          python3 scripts/cfb_supervisor_readonly_qa.py evidence/scheduler_qa/CFB_SUPERVISOR_REAL_RECEIPT_SAMPLE_20261030.json --now 2026-10-30T16:30:00Z | tee result.jsonl
+          grep -q '"classification": "RUN_FAILURE"' result.jsonl
