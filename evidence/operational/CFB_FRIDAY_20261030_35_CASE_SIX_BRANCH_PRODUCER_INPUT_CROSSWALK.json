@@ -1,0 +1,3963 @@
+{
+  "schema": "CFB_FRIDAY_20261030_PRODUCER_INPUT_35_CASE_SIX_BRANCH_DELTA_V1",
+  "status": "SOURCE_TO_PRIOR_DECISION_CROSSWALK_ONLY_NOT_NEW_QUALIFIED_PRODUCER_DECISIONS",
+  "created_utc": "2026-10-30T21:35:17.546Z",
+  "authority": {
+    "source_path": "evidence/operational/CFB_FRIDAY_20261030_CBS_FULL_56_GAME_RESEARCH_CAPTURE.json",
+    "source_blob": "73c20f2f477c9808e8c4f5c0e87a12fbf7149062",
+    "source_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+    "prior_path": "evidence/operational/CFB_MARKET_MONITOR_20261030T010121Z_REVALIDATION.json",
+    "prior_blob": "729121affc87955276511c1dc4187f5664f08d6b",
+    "prior_decision_boundary_utc": "2026-10-30T01:08:20.301277+00:00",
+    "canonical_market_blob": "69caf5b1184eedccc90be7562e4a3bd7cb8b7375",
+    "canonical_decision_blob": "bb5a9cc83b6a1425dc2972ca84b33aa2bbbf8fa9"
+  },
+  "coverage": {
+    "source_games": 56,
+    "eligible_future_prior_reassessments": 35,
+    "branches": 210,
+    "prior_categories": {
+      "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT": 32,
+      "RETAINED_UNEXPIRED_CONDITIONAL_REASSESSED": 1,
+      "NEW_PROSPECTIVE_PASS_RECONSIDERATION": 2
+    },
+    "games_with_material_numeric_drift": 16
+  },
+  "caveats": [
+    "All new source prices are CBS mixed-book unidentified fallback, not qualified consensus or user venue.",
+    "Prior reasoning is carried solely for context; no claim of fresh football/material news clearance for 35 games.",
+    "Observed line and price differences do not establish edge, value, PASS or BET. No branch has a new producer decision.",
+    "Source capture date is retrieval time, not bookmaker offer-update time; source kickoff display timezone unverified.",
+    "The Friday 13:00 scheduled NO_UPDATE remains failed; this document is not canonical market/decision/Hot Sheet or RUN_PASS."
+  ],
+  "cases": [
+    {
+      "game_id": "401862813",
+      "game": "Tulane @ Charlotte",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Fri Oct 30, 7:00pm    Fri 7:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away-8.5/-108; home+9.5/-110; ML-345/+280; over47.5/-105; under47.5/-110. Tulane's reduced road lay is the strongest side inquiry, but Charlotte's passing/rushing improvement challenges separation even after excluding the six-turnover outlier. Charlotte's defensive concessions also oppose simply reversing to its points or outright upset. Neither winner premium is preferred from those opposing mechanisms. The total weighs Charlotte leakage against Tulane drive consistency; defensive/turnover scores are not ordinary pace.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": -8.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -8,
+            "price": -111
+          },
+          "line_delta": 0.5,
+          "price_delta": -3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 9.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 8.5,
+            "price": -110
+          },
+          "line_delta": -1,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -345,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -345
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 280,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 275
+          },
+          "line_delta": null,
+          "price_delta": -5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 47.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 46.5,
+            "price": -114
+          },
+          "line_delta": -1,
+          "price_delta": -9,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 47.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 47.5,
+            "price": -115
+          },
+          "line_delta": 0,
+          "price_delta": -5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401856844",
+      "game": "Baylor @ UCF",
+      "previous_classification": "RETAINED_UNEXPIRED_CONDITIONAL_REASSESSED",
+      "prior_decision_state": "CONDITIONAL",
+      "source_display_kickoff_unverified": "Fri Oct 30, 7:30pm    Fri 7:30pm",
+      "prior_reason_retained_not_fresh": "UCF original home-points review remains inside its Oct30 17Zrecheck/18Zexpiry at this actual clock. Current fallback points/price are observed independently; original issued+2.5/-115limits and immutable rationale unchanged. Retained official run-prevention/Jenkins case versus Baylor pressure remains applicable; no new contrary personnel fact established. No claim of a newly identified quote, final clearance or venue execution. Recheck remains due at original noonCT, not already expired.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": -1.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -1.5,
+            "price": -112
+          },
+          "line_delta": 0,
+          "price_delta": -4,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 2.5,
+            "price": -104,
+            "disposition": "RETAINED_CONDITIONAL_SELECTED"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 2.5,
+            "price": -106
+          },
+          "line_delta": 0,
+          "price_delta": -2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -118,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -125
+          },
+          "line_delta": null,
+          "price_delta": -7,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 112,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 110
+          },
+          "line_delta": null,
+          "price_delta": -2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 47.5,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 48.5,
+            "price": -115
+          },
+          "line_delta": 1,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 48.5,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 49.5,
+            "price": -112
+          },
+          "line_delta": 1,
+          "price_delta": 3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": "UCF original +2.5/-115 expired 2026-10-30T18:00:00Z"
+    },
+    {
+      "game_id": "401866451",
+      "game": "Kent State @ Sacramento State",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Fri Oct 30, 10:30pm    Fri 10:30pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away-7.5/-112; home+8/-108; ML-305/+260; over46.5/-108; under46.5/-110. Kent passing is the strongest matchup mechanism, but defensive concessions and penalty-assisted prior production weaken paying for more than a touchdown of road separation. Sacramento's weak rushing/third downs oppose its cushion and outright winner. Kent's moneyline costs substantially for a weaker likely-win claim; it is not selected. Passing explosives challenge under while Sacramento drive friction challenges over at the actual low total.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": -7.5,
+            "price": -112,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -7,
+            "price": -115
+          },
+          "line_delta": 0.5,
+          "price_delta": -3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 8,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 7.5,
+            "price": -118
+          },
+          "line_delta": -0.5,
+          "price_delta": -10,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -305,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -265
+          },
+          "line_delta": null,
+          "price_delta": 40,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 260,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 230
+          },
+          "line_delta": null,
+          "price_delta": -30,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 46.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 46.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": -2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 46.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 46.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401858278",
+      "game": "SMU @ Syracuse",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 12:00pm    Sat 12:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away-9.5/-122; home+10.5/-112; ML-380/+310; over57.5/-111; under58.5/-112. Syracuse's large cushion is the strongest counter to transferring SMU's second-half scoring burst into a full-game road cover. Syracuse defensive leakage nonetheless gives a concrete reason to decline the dog as well; neither expensive favorite winner nor dog upset is preferred. At the high side-specific totals, SMU finishing variability and Syracuse regulation/overtime distinction oppose a sustained-scoring inference, while receiving explosives oppose a confident under.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": -9.5,
+            "price": -122,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -9.5,
+            "price": -122
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 10.5,
+            "price": -112,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 10.5,
+            "price": -111
+          },
+          "line_delta": 0,
+          "price_delta": 1,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -380,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -375
+          },
+          "line_delta": null,
+          "price_delta": 5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 310,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 300
+          },
+          "line_delta": null,
+          "price_delta": -10,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 57.5,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 58.5,
+            "price": -105
+          },
+          "line_delta": 1,
+          "price_delta": 6,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 58.5,
+            "price": -112,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 58.5,
+            "price": -112
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401858502",
+      "game": "Wisconsin @ Iowa",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 12:00pm    Sat 12:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+2.5/-102; home-1.5/-115; ML+110/-126; over36.5/-108; under36.5/-110. Iowa's shorter lay improves the favorite purchase materially after moving below a field goal, but known limited passing/split reps still restrict a separation claim after Wisconsin's pressure/run-defense breakout. Wisconsin's lost field-goal protection offsets its attractive recent performance; neither winner quote establishes a preferred winner after weighing Iowa defense against offensive limits. The very low total already requires suppression, while short fields/few successful drives challenge under. This is a substantive reconsideration of the changed key-number position, not the old field-goal/-118 rationale.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 2.5,
+            "price": -102,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 2.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": -3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -1.5,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -1.5,
+            "price": -128
+          },
+          "line_delta": 0,
+          "price_delta": -13,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 114
+          },
+          "line_delta": null,
+          "price_delta": 4,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -126,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -133
+          },
+          "line_delta": null,
+          "price_delta": -7,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 36.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 36.5,
+            "price": -108
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 36.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 36.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401866452",
+      "game": "Bowling Green @ Western Michigan",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 12:00pm    Sat 12:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+13.5/-112; home-13/-111; ML+430/-500; over44.5/-108; under44.5/-111. Bowling Green points remain the strongest side alternative to buying two-touchdown WMU separation after major defensive concessions. BG's short-field-assisted passing leaves a weak ordinary offensive floor, so neither dog points nor its upset is selected; WMU's winner premium also lacks a strong purchase case. Defensive leakage favors over, but finishing dependence limits that thesis, while demonstrated passing challenges under. Both total directions are declined at the actual pair.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 13.5,
+            "price": -112,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 14,
+            "price": -111
+          },
+          "line_delta": 0.5,
+          "price_delta": 1,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -13,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -13.5,
+            "price": -122
+          },
+          "line_delta": -0.5,
+          "price_delta": -11,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 430,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 490
+          },
+          "line_delta": null,
+          "price_delta": 60,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -500,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -599
+          },
+          "line_delta": null,
+          "price_delta": -99,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 44.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 44.5,
+            "price": -108
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 44.5,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 44.5,
+            "price": -111
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401858503",
+      "game": "Illinois @ Maryland",
+      "previous_classification": "NEW_PROSPECTIVE_PASS_RECONSIDERATION",
+      "prior_decision_state": "CONDITIONAL",
+      "source_display_kickoff_unverified": "Sat Oct 31, 12:00pm    Sat 12:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away-2.5/-110; home+2.5/-105; ML-126/+114; over52.5/-112; under54.5/-105. CONTROLLED BETA: Maryland +2.5 or higher at -125 or better versus Illinois. Maryland's protected passing/receiving and ball security offer a repeatable home scoring route against an Illinois offense that punted eight times in its latest win with the freshman setup. Illinois run production and strong coverage are substantive losing paths, but they do not establish road separation or erase the value of taking points. Prefer the cushion over requiring an outright upset. FanDuel +2.5/-110 meets the new limit. This is qualitative Beta, not a calibrated probability/EV or a bet execution.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": -2.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -2.5,
+            "price": -115
+          },
+          "line_delta": 0,
+          "price_delta": -5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 2.5,
+            "price": -105,
+            "disposition": "CONDITIONAL_SELECTED"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 2.5,
+            "price": -102
+          },
+          "line_delta": 0,
+          "price_delta": 3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -126,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -133
+          },
+          "line_delta": null,
+          "price_delta": -7,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 114,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 114
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 52.5,
+            "price": -112,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 53.5,
+            "price": -110
+          },
+          "line_delta": 1,
+          "price_delta": 2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 54.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 54.5,
+            "price": -115
+          },
+          "line_delta": 0,
+          "price_delta": -10,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": "Maryland +2.5/-125 or better expires 2026-10-31T14:00:00Z"
+    },
+    {
+      "game_id": "401856735",
+      "game": "Auburn @ Ole Miss",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 12:45pm    Sat 12:45pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+12.5/-112; home-10.5/-115; ML+380/-410; over57.5/-108; under57.5/-105. Ole Miss's smaller lay improves its pressure/passing case against Auburn protection failure. Auburn's strong recent opponent mix and the distinction between likely winner and separation still outweigh buying that margin; its own points/upset require protection against the same pressure. The cheaper Ole Miss winner is reweighed independently but remains an expensive way to express that bounded preference. Scoring asymmetry weakens over, while host explosives/short fields challenge under.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 12.5,
+            "price": -112,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 11.5,
+            "price": -110
+          },
+          "line_delta": -1,
+          "price_delta": 2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -10.5,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -10.5,
+            "price": -118
+          },
+          "line_delta": 0,
+          "price_delta": -3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 380,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 360
+          },
+          "line_delta": null,
+          "price_delta": -20,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -410,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -450
+          },
+          "line_delta": null,
+          "price_delta": -40,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 57.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 57.5,
+            "price": -108
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 57.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 57.5,
+            "price": -108
+          },
+          "line_delta": 0,
+          "price_delta": -3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401871096",
+      "game": "Marshall @ Old Dominion",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 1:00pm    Sat 1:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away-2.5/-122; home+3/-115; ML-142/+122; over44.5/-115; under45.5/-106. Turner provides a short passing/rushing route and Wilkins demonstrated a ground route; either setup can compete, but ODU pressure challenges efficient separation at the expensive Marshall lay. ODU's field-goal cushion costs juice and still needs ordinary output against Marshall third-down prevention. Marshall's winner direction is stronger than ODU's upset, but neither winner price is selected. The higher CBS under inquiry improves scoring protection; weak ordinary drives support it, but the identified-book lower threshold and unqualified mixed-book higher field are not interchangeable. No final Turner clearance requirement is imposed.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": -2.5,
+            "price": -122,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -2.5,
+            "price": -120
+          },
+          "line_delta": 0,
+          "price_delta": 2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 3,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 3,
+            "price": -115
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -142,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -142
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 122,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 120
+          },
+          "line_delta": null,
+          "price_delta": -2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 44.5,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 45.5,
+            "price": -108
+          },
+          "line_delta": 1,
+          "price_delta": 7,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 45.5,
+            "price": -106,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 45.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 1,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401856846",
+      "game": "Kansas State @ Colorado",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 2:00pm    Sat 2:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+2/-111; home-1.5/-108; ML+105/-125; over46.5/-110; under46.5/-105. Reported Johnson OUT/Knuth DOUBTFUL means the earlier Johnson-led cover case is not current. Barnett offers a known rushing role with little recent passing; Duff offers even less college passing evidence. Under either plausible setup, taking only a small KState cushion or its near-even moneyline lacks an established sustained scoring advantage; this is an explicit alternative-offense comparison, not a demand for first-snap certainty. Colorado's passing supports the short home favorite/winner, but its major defensive concessions allow that ground route and prevent a preferred purchase. Colorado explosives/short fields oppose under; KState contribution limits oppose over. Neither total is selected.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 2,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 2.5,
+            "price": -110
+          },
+          "line_delta": 0.5,
+          "price_delta": 1,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -1.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -1.5,
+            "price": -115
+          },
+          "line_delta": 0,
+          "price_delta": -7,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 115
+          },
+          "line_delta": null,
+          "price_delta": 10,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -125,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -132
+          },
+          "line_delta": null,
+          "price_delta": -7,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 46.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 46.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 46.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 46.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401871097",
+      "game": "Louisiana Tech @ South Alabama",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 3:00pm    Sat 3:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away-5.5/-110; home+5.5/-108; ML-210/+185; over58.5/-108; under58.5/-110. Tech suppression is the strongest side mechanism, but the disrupted ODU opponent limits demanding nearly a touchdown in this road matchup. South Alabama passing inefficiency independently opposes points/upset, while the Tech winner premium buys an opponent-transfer assumption rather than a stronger researched margin. The high total makes under the stronger inquiry, but South Alabama's earlier scoring ceiling and field-position routes counter treating the latest poor attack as a stable baseline. Over lacks an ordinary two-offense case.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": -5.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -6,
+            "price": -111
+          },
+          "line_delta": -0.5,
+          "price_delta": -1,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 5.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 6.5,
+            "price": -115
+          },
+          "line_delta": 1,
+          "price_delta": -7,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -210,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -220
+          },
+          "line_delta": null,
+          "price_delta": -10,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 185,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 187
+          },
+          "line_delta": null,
+          "price_delta": 2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 58.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 58.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 58.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 58.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401861966",
+      "game": "UConn @ Air Force",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 3:00pm    Sat 3:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+1.5/-120; home+1/-114; ML-105/-108; over51.5/-110; under51.5/-108. UConn rushing is the strongest side inquiry, but its small cushion/expensive juice and a different possession matchup reduce the purchase appeal even without assuming Medders remains unavailable. Air Force rushing supports competitiveness, while actual fumbles/current injury history and UConn ground production oppose buying its winner or small points. The separately displayed same-sign spreads are not a paired middle. Long possessions support under, opposed by efficient rushing/short fields at the lower total; over needs more sustained two-offense output.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 1.5,
+            "price": -120,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -1,
+            "price": -108
+          },
+          "line_delta": -2.5,
+          "price_delta": 12,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 1,
+            "price": -114,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 1.5,
+            "price": -114
+          },
+          "line_delta": 0.5,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -110
+          },
+          "line_delta": null,
+          "price_delta": -5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -106
+          },
+          "line_delta": null,
+          "price_delta": 2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 51.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 51.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 51.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 51.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_spread"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401858283",
+      "game": "Stanford @ Louisville",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 3:15pm    Sat 3:15pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+22.5/-110; home-22.5/-110; ML+1100/-1818; over59.5/-114; under60.5/-110. Stanford rushing is the strongest dog mechanism, but road offensive weakness challenges its ability to use the large cushion. Louisville's stalled second-half drives also oppose laying more than three touchdowns or paying its huge winner premium; Stanford upset requires much more than its supported run route. The higher under threshold deserves inquiry, but passing/long-run explosives can score without long sustained drives. The over also lacks a dependable two-offense case; no score projection is manufactured from opponent-mix statistics.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 22.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 22.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -22.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -22.5,
+            "price": -108
+          },
+          "line_delta": 0,
+          "price_delta": 2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 1100,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 1100
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -1818,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -1818
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 59.5,
+            "price": -114,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 60.5,
+            "price": -108
+          },
+          "line_delta": 1,
+          "price_delta": 6,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 60.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 60.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401871095",
+      "game": "Southern Miss @ UL Monroe",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 3:30pm    Sat 3:30pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away-3.5/-108; home+3.5/-111; ML-160/+145; over55.5/-110; under55.5/-106. Southern Miss rushing supports the visitor, but passing yards conceded challenge separation beyond a field goal. ULM's ordinary offensive weakness makes both its points and upset less attractive than simply doubting the favorite; Southern Miss winner cost remains unearned from removing unusual opponent scores. The lower totals require fresh consideration rather than reusing the previous split higher thresholds: rushing supports scoring, but return/defensive assistance and weak ULM drives limit over, while defensive leakage challenges under.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": -3.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -3.5,
+            "price": -102
+          },
+          "line_delta": 0,
+          "price_delta": 6,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 3.5,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 3.5,
+            "price": -112
+          },
+          "line_delta": 0,
+          "price_delta": -1,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -160,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -160
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 145,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 140
+          },
+          "line_delta": null,
+          "price_delta": -5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 55.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 54.5,
+            "price": -114
+          },
+          "line_delta": -1,
+          "price_delta": -4,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 55.5,
+            "price": -106,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 55.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": -4,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401860910",
+      "game": "Colorado State @ Utah State",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 3:30pm    Sat 3:30pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+6.5/-102; home-6.5/-110; ML+200/-225; over63.5/-105; under63.5/-112. CSU's cushion is the strongest side alternative, but major concessions across two high-output games defeat a reliable defensive-stop cover thesis. USU's weak latest ordinary output independently opposes laying the points; neither winner price repairs those opposing offensive/defensive issues. Under at the higher separate threshold is challenged by CSU repeated explosives/leakage, while USU drive friction opposes over at its own number. The two offers are not one synthetic total.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 6.5,
+            "price": -102,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 7.5,
+            "price": -111
+          },
+          "line_delta": 1,
+          "price_delta": -9,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -6.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -6.5,
+            "price": -138
+          },
+          "line_delta": 0,
+          "price_delta": -28,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 200,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 235
+          },
+          "line_delta": null,
+          "price_delta": 35,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -225,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -265
+          },
+          "line_delta": null,
+          "price_delta": -40,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 63.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 61.5,
+            "price": -115
+          },
+          "line_delta": -2,
+          "price_delta": -10,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 63.5,
+            "price": -112,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 62.5,
+            "price": -115
+          },
+          "line_delta": -1,
+          "price_delta": -3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "home_spread",
+        "away_ml",
+        "home_ml",
+        "over_total"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401856843",
+      "game": "Arizona State @ BYU",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 3:30pm    Sat 3:30pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+16.5/-110; home-16.5/-108; ML+570/-752; over48.5/-105; under48.5/-110. Mack/Harris offer a real ASU scoring route under returning Keene and support for a replacement; they are not discarded because the lineup is unsettled. However the road dog and its large upset payout still require repeatable passing/containment beyond that recent ground success. BYU must separate by more than two touchdowns and its expensive winner buys little protection against those same ASU explosives. Under faces Mack/Harris and BYU scoring even if a backup starts; over faces drive/line inconsistency even if Keene returns. Both scenarios are compared without requiring final clearance.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 16.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 16.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -16.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -16.5,
+            "price": -108
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 570,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 570
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -752,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -752
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 48.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 48.5,
+            "price": -102
+          },
+          "line_delta": 0,
+          "price_delta": 3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 48.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 48.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401856845",
+      "game": "Kansas @ TCU",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 3:30pm    Sat 3:30pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+6/-108; home-5.5/-112; ML+190/-210; over45.5/-110; under45.5/-108. Kansas rushing is the strongest dog mechanism, but TCU's retained defensive resistance challenges transferring a blocked-field-goal-assisted win into a cover/upset claim. TCU passing supports favorite/winner investigation, but Kansas's established ground route opposes mechanically buying the home lay or premium. At the low total, under has less scoring protection; TCU passing and Kansas rushing counter it, while defensive resistance tempers over. Neither close finish is converted into a probability.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 6,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 6.5,
+            "price": -108
+          },
+          "line_delta": 0.5,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -5.5,
+            "price": -112,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -6.5,
+            "price": -106
+          },
+          "line_delta": -1,
+          "price_delta": 6,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 190,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 195
+          },
+          "line_delta": null,
+          "price_delta": 5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -210,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -220
+          },
+          "line_delta": null,
+          "price_delta": -10,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 45.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 45.5,
+            "price": -104
+          },
+          "line_delta": 0,
+          "price_delta": 6,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 45.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 45.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": -2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401864531",
+      "game": "UTEP @ North Dakota State",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 3:30pm    Sat 3:30pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+24.5/-108; home-24.5/-108; ML+1450/-2500; over42.5/-111; under43.5/-114. NDSU pressure against UTEP protection is the strongest side case, but NDSU's own poor recent rushing limits a four-touchdown lay and its huge winner premium. UTEP points/upset need drive survival against pressure even under a returning passer, not merely a large cushion. The added under point improves protection compared with the earlier lower offer, but concentrated short-field/nonoffensive scoring remains a concrete opposing mechanism at this low total. Over lacks ordinary drive support.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 24.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 24.5,
+            "price": -112
+          },
+          "line_delta": 0,
+          "price_delta": -4,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -24.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -24,
+            "price": -111
+          },
+          "line_delta": 0.5,
+          "price_delta": -3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 1450,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 1400
+          },
+          "line_delta": null,
+          "price_delta": -50,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -2500,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -2500
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 42.5,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 42.5,
+            "price": -111
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 43.5,
+            "price": -114,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 43.5,
+            "price": -114
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401856734",
+      "game": "Florida @ Georgia",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 3:30pm    Sat 3:30pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+12.5/-110; home-12/-111; ML+390/-476; over56.5/-110; under56.5/-108. Jones's short passing/rushing route and a returning Philo passing route both offer Florida competitiveness, but neither transfers the Texas upset automatically to a large Georgia-front challenge. Georgia efficiency supports likely winner, while Florida pressure and neutral setting oppose paying for the large margin or expensive winner. Florida outright requires more sustained offense than covering. Over needs Florida contribution under either scenario; under faces Georgia efficiency and a plausible Florida response. No selection is made by shoulder status alone.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 12.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 12,
+            "price": -111
+          },
+          "line_delta": -0.5,
+          "price_delta": -1,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -12,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -11.5,
+            "price": -110
+          },
+          "line_delta": 0.5,
+          "price_delta": 1,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 390,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 350
+          },
+          "line_delta": null,
+          "price_delta": -40,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -476,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -435
+          },
+          "line_delta": null,
+          "price_delta": 41,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 56.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 56.5,
+            "price": -108
+          },
+          "line_delta": 0,
+          "price_delta": 2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 56.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 56.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": -2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401858284",
+      "game": "Virginia @ Wake Forest",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 3:45pm    Sat 3:45pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+12.5/-108; home-12.5/-110; ML+400/-500; over48.5/-115; under49.5/-114. Virginia's points are the strongest inquiry on retained resistance, but protection/finishing failures challenge carrying the cushion against Wake passing and short fields. Wake's rest/passing support winner more than a large cover; its heavy moneyline cost and Virginia's weak upset path are declined separately. The lower over threshold is more accessible than the separate under, but ordinary Virginia contribution remains weak; under faces Wake explosives/favorable fields. Neither total is inferred from a single blowout.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 12.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 12.5,
+            "price": -108
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -12.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -12.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 400,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 400
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -500,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -490
+          },
+          "line_delta": null,
+          "price_delta": 10,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 48.5,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 47.5,
+            "price": -118
+          },
+          "line_delta": -1,
+          "price_delta": -3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 49.5,
+            "price": -114,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 48.5,
+            "price": -114
+          },
+          "line_delta": -1,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401864529",
+      "game": "New Mexico @ San José State",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 4:00pm    Sat 4:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away-14.5/-108; home+14.5/-110; ML-649/+520; over42.5/-108; under42.5/-108. UNM defense is the strongest mechanism, but its low ordinary offensive output does not justify a two-touchdown road lay or heavy winner premium. SJSU passing weakness independently opposes buying its points/upset. The low total reflects limited drives, while pick-six/short-field routes challenge under; over lacks sustained offense. Neither final-score assistance nor an unrefreshed original model supplies a current adjusted margin.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": -14.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -14.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": -2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 14.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 14.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -649,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -649
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 520,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 550
+          },
+          "line_delta": null,
+          "price_delta": 30,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 42.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 42.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": -2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 42.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 42.5,
+            "price": -108
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401858508",
+      "game": "Nevada @ UCLA",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 4:15pm    Sat 4:15pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+22.5/-108; home-22.5/-110; ML+1400/-2000; over43.5/-118; under44.5/-118. UCLA drive suppression is the strongest side mechanism, but the very large lay demands much more than the frozen opinion; Nevada's opponent-specific win does not earn its points/upset either. The higher favorite winner premium is weighed and declined independently. The lower over offer is a separate price from under: Nevada limitations oppose over, while UCLA short fields and the cost of under weaken the low-scoring purchase. No unavailable alternate/team-total offer is guessed.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 22.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 22.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": -2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -22.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -22.5,
+            "price": -108
+          },
+          "line_delta": 0,
+          "price_delta": 2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 1400,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 1400
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -2000,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -1786
+          },
+          "line_delta": null,
+          "price_delta": 214,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 43.5,
+            "price": -118,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 43.5,
+            "price": -106
+          },
+          "line_delta": 0,
+          "price_delta": 12,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 44.5,
+            "price": -118,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 43.5,
+            "price": -105
+          },
+          "line_delta": -1,
+          "price_delta": 13,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401858506",
+      "game": "Purdue @ Penn State",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 4:15pm    Sat 4:15pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+11.5/-115; home-10/-114; ML+330/-400; over54.5/-114; under54.5/-105. Purdue's materially larger cushion improves its dog inquiry, but its major explosive concessions despite five takeaways challenge a turnover-independent cover or upset. Penn State receiving/pressure support favoritism, while the new lay and opponent rest still require substantial separation; its higher winner premium is not preferred. At the total, defensive explosives oppose under, but over requires converting drives rather than repeating exceptional turnover opportunities. More points are acknowledged without automatically turning them into value.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 11.5,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 11.5,
+            "price": -115
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -10,
+            "price": -114,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -10,
+            "price": -114
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 330,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 330
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -400,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -385
+          },
+          "line_delta": null,
+          "price_delta": 15,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 54.5,
+            "price": -114,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 54.5,
+            "price": -111
+          },
+          "line_delta": 0,
+          "price_delta": 3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 54.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 54.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401856736",
+      "game": "South Carolina @ Oklahoma",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 4:15pm    Sat 4:15pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+3.5/-114; home-2.5/-128; ML+142/-160; over44.5/-105; under44.5/-110. Oklahoma's shorter lay improves the home purchase, but its strong prior offense faced a disrupted opponent and is not automatically a current margin forecast. Sellers mobility supports South Carolina, while its lost cushion and reliance on late stops/strip sack temper points/upset. Neither near-pickem winner price earns an independent preference from those mechanisms. Mobile explosives/favorable fields challenge under, and uneven sustained drives challenge over; the lower spread does not decide the total.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 3.5,
+            "price": -114,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 3.5,
+            "price": -114
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -2.5,
+            "price": -128,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -2.5,
+            "price": -128
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 142,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 142
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -160,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -156
+          },
+          "line_delta": null,
+          "price_delta": 4,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 44.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 44.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 44.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 44.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401869846",
+      "game": "App State @ Georgia Southern",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 6:30pm    Sat 6:30pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+5.5/-108; home-5.5/-108; ML+180/-213; over56.5/-110; under56.5/-105. App's productive Singleton passing setup supplies a dog path even without inventing current clearance; Southern pressure/run-TD prevention is direct counterevidence under that setup. Southern's lay asks for separation beyond home winner strength, so neither spread is selected; the winner quotes are also not preferred from those opposing mechanisms. Excluding overtime is necessary but does not decide scoring: pressure stalls drives while passing can create explosives. Neither total direction dominates at the actual threshold.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 5.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 6,
+            "price": -111
+          },
+          "line_delta": 0.5,
+          "price_delta": -3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -5.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -5.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": -2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 180,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 180
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -213,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -205
+          },
+          "line_delta": null,
+          "price_delta": 8,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 56.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 56.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 56.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 57.5,
+            "price": -114
+          },
+          "line_delta": 1,
+          "price_delta": -9,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401856847",
+      "game": "Oklahoma State @ Iowa State",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 7:00pm    Sat 7:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away-9.5/-111; home+9.5/-108; ML-345/+280; over57.5/-114; under58.5/-120. Oklahoma State passing supports visitor favoritism, but defensive concessions challenge laying this margin. Iowa State's cushion and upset need an ordinary offensive floor after its quarterback change, rather than simply fading a visitor comeback. The favorite winner premium does not remove that defensive risk. Host offensive limits oppose over; visitor explosives/leakage oppose the separate higher under, whose juice is weighed as cost rather than an automatic veto. No selection survives that combined comparison.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": -9.5,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -9.5,
+            "price": -111
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 9.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 9.5,
+            "price": -108
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -345,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -345
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 280,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 285
+          },
+          "line_delta": null,
+          "price_delta": 5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 57.5,
+            "price": -114,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 57.5,
+            "price": -114
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 58.5,
+            "price": -120,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 58.5,
+            "price": -120
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401860909",
+      "game": "Washington State @ San Diego State",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 7:00pm    Sat 7:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+2.5/-105; home-2.5/-111; ML+114/-132; over48.5/-110; under49.5/-115. SDSU's Saunders passing is the strongest home mechanism, but interceptions/large concessions in his first start challenge the short lay or winner premium. WSU early competitiveness against Boise supports points, but the small cushion and uncertain drive consistency oppose a preferred dog/upset. Both share consecutive-week fatigue. The higher separate under faces explosive/leakage routes, while over still needs sustained scoring beyond a raw shootout. Fatigue is not a generic under adjustment.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 2.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 2.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -2.5,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -2.5,
+            "price": -114
+          },
+          "line_delta": 0,
+          "price_delta": -3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 114,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 120
+          },
+          "line_delta": null,
+          "price_delta": 6,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -132,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -137
+          },
+          "line_delta": null,
+          "price_delta": -5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 48.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 48.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 49.5,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 48.5,
+            "price": -110
+          },
+          "line_delta": -1,
+          "price_delta": 5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401858282",
+      "game": "Miami @ North Carolina",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 7:30pm    Sat 7:30pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away-14/-114; home+14.5/-115; ML-625/+480; over52.5/-110; under52.5/-108. Miami passing is the strongest side mechanism, but the road lay demands greater separation than the unchanged frozen opinion; UNC's receiving ceiling challenges margin while its defensive leakage prevents a preferred dog/upset. Miami winner cost is independently unattractive. The total weighs two passing paths against finishing/field-position/overtime distortion; under is not justified just by subtracting unusual scores and over is not justified just by those final totals.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": -14,
+            "price": -114,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -14,
+            "price": -108
+          },
+          "line_delta": 0,
+          "price_delta": 6,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 14.5,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 14.5,
+            "price": -118
+          },
+          "line_delta": 0,
+          "price_delta": -3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -625,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -588
+          },
+          "line_delta": null,
+          "price_delta": 37,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 480,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 455
+          },
+          "line_delta": null,
+          "price_delta": -25,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 52.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 52.5,
+            "price": -115
+          },
+          "line_delta": 0,
+          "price_delta": -5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 52.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 53.5,
+            "price": -111
+          },
+          "line_delta": 1,
+          "price_delta": -3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401856737",
+      "game": "Mississippi State @ Texas",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 7:30pm    Sat 7:30pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+20.5/-114; home-20/-108; ML+890/-1250; over50.5/-111; under50.5/-105. Taylor's sourced season-ending absence is a real change, not a pending clearance question. It supports Texas winner direction but does not automatically earn a twenty-point lay or a very expensive winner; MSU points/upset still need ordinary scoring without him. Under is the strongest scoring inquiry on the dog limitation, yet host explosives and defensive/short-field scores can supply much of the total. Over still needs more than assuming all pressure produces points. Neither total is selected.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 20.5,
+            "price": -114,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 20.5,
+            "price": -114
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -20,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -20,
+            "price": -111
+          },
+          "line_delta": 0,
+          "price_delta": -3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 890,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 900
+          },
+          "line_delta": null,
+          "price_delta": 10,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -1250,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -1429
+          },
+          "line_delta": null,
+          "price_delta": -179,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 50.5,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 50.5,
+            "price": -112
+          },
+          "line_delta": 0,
+          "price_delta": -1,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 50.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 50.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401858509",
+      "game": "Ohio State @ USC",
+      "previous_classification": "NEW_PROSPECTIVE_PASS_RECONSIDERATION",
+      "prior_decision_state": "CONDITIONAL",
+      "source_display_kickoff_unverified": "Sat Oct 31, 7:30pm    Sat 7:30pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away-6.5/-115; home+7/-115; ML-244/+205; over51.5/-108; under51.5/-108. CONTROLLED BETA: Ohio State at USC full-game under51.5 or higher at -120 or better. Either Fahey or St.Clair replaces established Sayin passing continuity, while Ohio State's limited recent rushing and strong defense against USC's retained protection/rushing difficulties support fewer sustained scoring drives. This mechanism applies to either plausible backup and does not wait for final starter certainty. Explosive receivers and turnover-created short fields are the principal losing paths; they justify a tighter price allowance, not automatic rejection. FanDuel under51.5/-112 meets the new limit. Qualitative Beta, no calibrated EV/probability or execution.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": -6.5,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -6.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": 5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 7,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 6.5,
+            "price": -105
+          },
+          "line_delta": -0.5,
+          "price_delta": 10,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -244,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -220
+          },
+          "line_delta": null,
+          "price_delta": 24,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 205,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 200
+          },
+          "line_delta": null,
+          "price_delta": -5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 51.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 51.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 51.5,
+            "price": -108,
+            "disposition": "CONDITIONAL_SELECTED"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 51.5,
+            "price": -112
+          },
+          "line_delta": 0,
+          "price_delta": -4,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": "OSU-USC under 51.5/-120 or better expires 2026-10-31T20:00:00Z"
+    },
+    {
+      "game_id": "401856733",
+      "game": "Missouri @ Arkansas",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 7:45pm    Sat 7:45pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away-9.5/-114; home+10/-111; ML-350/+300; over47.5/-110; under48.5/-105. The missed Oct17 Missouri loss is now incorporated: substantial Simmons passing movement with failed red-zone finishing, not a repeatable three-point baseline. Roberts remains a productive running route; credible current reporting supports Hardy returning, with limited-role and fuller-role scenarios both considered rather than requiring a guaranteed workload. Arkansas balance supports its cushion, but either Missouri ground setup plus passing movement directly challenges buying the dog; the Missouri lay/winner still require finishing and road separation not proved by old Oct10 suppression. Arkansas outright is the stronger claim and declined. The lowered separate totals weigh both offenses' movement against finishing/possession control; neither stale Missouri defense nor the blowout score decide",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": -9.5,
+            "price": -114,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -10,
+            "price": -112
+          },
+          "line_delta": -0.5,
+          "price_delta": 2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 10,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 10.5,
+            "price": -114
+          },
+          "line_delta": 0.5,
+          "price_delta": -3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -350,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -380
+          },
+          "line_delta": null,
+          "price_delta": -30,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 300,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 310
+          },
+          "line_delta": null,
+          "price_delta": 10,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 47.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 48.5,
+            "price": -105
+          },
+          "line_delta": 1,
+          "price_delta": 5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 48.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 48.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": -5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401858504",
+      "game": "Washington @ Nebraska",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 8:00pm    Sat 8:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+7.5/-105; home-7.5/-108; ML+255/-298; over49.5/-110; under50.5/-115. Nebraska defense/backfield limitations make under the strongest inquiry, but Washington vertical/extended-play threats under either plausible passer directly challenge containment. The separate higher under threshold improves protection while its actual cost matters; no first-snap QB certainty is required. Nebraska margin still needs offense despite backfield limits, and Washington points need scoring against that defense. The cheaper Nebraska winner and dog payout are reweighed but not preferred from close prior losses or shared bye rest. Over needs reliable two-offense production beyond explosives alone.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 7.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 7.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": -5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -7.5,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -7.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 255,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 250
+          },
+          "line_delta": null,
+          "price_delta": -5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -298,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -294
+          },
+          "line_delta": null,
+          "price_delta": 4,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 49.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 49.5,
+            "price": -114
+          },
+          "line_delta": 0,
+          "price_delta": -4,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 50.5,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 50.5,
+            "price": -112
+          },
+          "line_delta": 0,
+          "price_delta": 3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401860908",
+      "game": "Texas State @ Boise State",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 10:00pm    Sat 10:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+11/-111; home-10.5/-115; ML+350/-426; over63.5/-111; under63.5/-105. Boise rushing suppression is the strongest mechanism, but a late surge after a tie through three quarters does not justify assuming this cover margin. Texas State return-assisted/low-output win challenges both its points and upset, while Boise winner cost remains expensive for the late-finishing argument. Under is supported by removing special-teams assistance but opposed by Boise passing/scoring ceiling and opponent volatility; over cannot simply extrapolate the late surge. Both total directions are compared independently.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 11,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 10.5,
+            "price": -105
+          },
+          "line_delta": -0.5,
+          "price_delta": 6,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -10.5,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -10.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": 5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 350,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 340
+          },
+          "line_delta": null,
+          "price_delta": -10,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -426,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -441
+          },
+          "line_delta": null,
+          "price_delta": -15,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 63.5,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 63.5,
+            "price": -108
+          },
+          "line_delta": 0,
+          "price_delta": 3,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 63.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 63.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401864530",
+      "game": "Northern Illinois @ UNLV",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 10:30pm    Sat 10:30pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away+24.5/-115; home-24/-111; ML+1300/-2222; over54.5/-105; under54.5/-111. UNLV dual-threat production supports favorite status, but holding this large margin conflicts with its own late defensive collapse. NIU points/upset need an offensive response, not merely fading that collapse, while the huge UNLV winner premium is unattractive. Over is the stronger inquiry from defensive concessions but still needs NIU drive contribution at the higher hurdle; under is not supported by a generic bye assumption. No parlay is preferred over independent singles.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": 24.5,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 22.5,
+            "price": -115
+          },
+          "line_delta": -2,
+          "price_delta": 0,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": -24,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -22,
+            "price": -108
+          },
+          "line_delta": 2,
+          "price_delta": 3,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 1300,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 1100
+          },
+          "line_delta": null,
+          "price_delta": -200,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -2222,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -1786
+          },
+          "line_delta": null,
+          "price_delta": 436,
+          "material_numeric_drift": true,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 54.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 54.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 54.5,
+            "price": -111,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 54.5,
+            "price": -111
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_spread",
+        "home_spread",
+        "away_ml",
+        "home_ml"
+      ],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    },
+    {
+      "game_id": "401860924",
+      "game": "Oregon State @ Fresno State",
+      "previous_classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "prior_decision_state": "PASS",
+      "source_display_kickoff_unverified": "Sat Oct 31, 11:00pm    Sat 11:00pm",
+      "prior_reason_retained_not_fresh": "Actual CBS fallback: away-5.5/-115; home+6/-108; ML-220/+185; over58.5/-105; under58.5/-110. Oregon State passing/protection is the strongest visitor mechanism, but the actual lay/juice must overcome Fresno home defense and ball security. Fresno's larger cushion is weighed against OSU efficient explosive passing rather than selected from the original frozen home direction; neither winner quote is preferred. Under is the strongest scoring inquiry on both defenses, but passing efficiency and long-run concessions oppose relying on raw points-allowed averages. Over also lacks a stable two-offense baseline after accounting for opponent mix.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "prior_saved_retrieval": {
+            "line": -5.5,
+            "price": -115,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": -5.5,
+            "price": -115
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_spread",
+          "prior_saved_retrieval": {
+            "line": 6,
+            "price": -108,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 6,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": -2,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "away_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": -220,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": -220
+          },
+          "line_delta": null,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_saved_retrieval": {
+            "line": null,
+            "price": 185,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": null,
+            "price": 190
+          },
+          "line_delta": null,
+          "price_delta": 5,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "over_total",
+          "prior_saved_retrieval": {
+            "line": 58.5,
+            "price": -105,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 58.5,
+            "price": -105
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        },
+        {
+          "branch": "under_total",
+          "prior_saved_retrieval": {
+            "line": 58.5,
+            "price": -110,
+            "disposition": "REVIEWED_NO_SELECTION"
+          },
+          "friday_mixed_book_retrieval": {
+            "line": 58.5,
+            "price": -110
+          },
+          "line_delta": 0,
+          "price_delta": 0,
+          "material_numeric_drift": false,
+          "decision": "UNREVIEWED_NEW_SOURCE_NOT_PRODUCER_DECISION"
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "news_final_clearance": "UNVERIFIED",
+      "identified_venue_offer": "UNVERIFIED",
+      "current_new_decision": "NOT_ISSUED",
+      "deadline_exception": null
+    }
+  ]
+}
