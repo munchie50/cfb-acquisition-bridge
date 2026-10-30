@@ -353,9 +353,35 @@
   "findings": [
     "Identical9patterns/216tests/0skips, exactsamecommit andprotectedinputdigest, allchecks passed.",
     "Paralleltestspan222.245506s exceeded serial187.498085619s by34.747420381s. Sumparalleltestexecution390.419263823s vs187.498085619s serial, before setup/artifact overhead.",
-    "Week8parallel222.243814s and week9parallel162.410456s dominate. Correspondingserialpatterns sum104.874s and78.889s. Everyparallelgroup ran slower; causalreason not established from onepaired measurement.",
+    "Week8 and week9 dominate. Exact per-group and corresponding serial-pattern totals are recomputed from independently verified group_results in group_timing_detail; runner performance differences remain unexplained.",
     "RunnerCPU/hardware/cachecomparability was not instrumented; cannot attributeall slowdown to orchestration or treat it as a universal result about parallelism.",
     "The production45stepworkflow and canonical/model/taskstate remain unchanged."
   ],
-  "next": "Profile one representative expensive closed-conditional test and immutable input loading before another optimization. Do not repeat fullbenchmark without a specific proposed change and benefit hypothesis."
+  "next": "Profile one representative expensive closed-conditional test and immutable input loading before another optimization. Do not repeat fullbenchmark without a specific proposed change and benefit hypothesis.",
+  "group_timing_detail": [
+    {
+      "group": "presentation",
+      "parallel_elapsed_seconds": 1.167164561000007,
+      "corresponding_serial_pattern_seconds": 0.6247705200000269
+    },
+    {
+      "group": "week9",
+      "parallel_elapsed_seconds": 162.410146775,
+      "corresponding_serial_pattern_seconds": 78.88939789100002
+    },
+    {
+      "group": "week8",
+      "parallel_elapsed_seconds": 222.24366674299998,
+      "corresponding_serial_pattern_seconds": 104.87512084800001
+    },
+    {
+      "group": "frozen",
+      "parallel_elapsed_seconds": 4.598285743999995,
+      "corresponding_serial_pattern_seconds": 3.108599033999951
+    }
+  ],
+  "superseded_prose_precision_correction": {
+    "superseded_unverified_decimal_prose": "Week8parallel222.243814s and week9parallel162.410456s dominate. Correspondingserialpatterns sum104.874s and78.889s. Everyparallelgroup ran slower; causalreason not established from onepaired measurement.",
+    "correction": "The initial detailed-decimal sentence was not bound to exact group values. It is superseded by computed group_timing_detail; original comparison/group_results were already exact and unchanged."
+  }
 }
