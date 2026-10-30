@@ -1,8 +1,10 @@
 """Authentic saved populations with deliberately broken binding/coverage inputs."""
 import copy
+from functools import lru_cache
 import json
 from pathlib import Path
 import re
+import subprocess
 import unittest
 import cfb_cloud_source_manifest as adapter
 from cfb_cloud_source_prepare import digest
@@ -17,14 +19,22 @@ AT = '2026-10-30T02:30:00Z'  # Synthetic validation clock, not an operational ob
 COMMIT = '8df63ed20c2cc53f41ec93815c6a2895bac06892'
 
 
+@lru_cache(maxsize=32)
+def fixture(path):
+    # This is an immutable historical Week9 fixture. The live CLI separately
+    # requires fresh connector-observed main; do not advance synthetic clocks
+    # whenever navigation-only metadata is appended to production main.
+    return subprocess.check_output(['git','-C',str(ROOT),'show',COMMIT+':'+path],text=True)
+
+
 class ManifestTests(unittest.TestCase):
     def setUp(self):
-        self.index = (ROOT/INDEX).read_text()
+        self.index = fixture(INDEX)
         self.overrides = {}
         self.extra = json.loads((ROOT/'evidence/scheduler_qa/CFB_CLOUD_SOURCE_ASSOCIATIONS_20261030.json').read_text())
 
     def load(self, path):
-        return self.overrides.get(path, (ROOT/path).read_text())
+        return self.overrides[path] if path in self.overrides else fixture(path)
 
     def change_frontier(self, change):
         matches = list(re.finditer(r'```cfb-frontier-json\n(.*?)\n```', self.index, re.S))
