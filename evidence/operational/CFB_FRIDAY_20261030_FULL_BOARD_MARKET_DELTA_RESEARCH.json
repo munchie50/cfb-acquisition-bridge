@@ -1,0 +1,1864 @@
+{
+  "schema": "CFB_FRIDAY_20261030_FULL_BOARD_MARKET_DELTA_RESEARCH_V1",
+  "status": "RESEARCH_ONLY_NO_CANONICAL_DECISION_CHANGE",
+  "recorded_utc": "2026-10-30T21:23:33.680Z",
+  "board_capture_path": "evidence/operational/CFB_FRIDAY_20261030_CBS_FULL_56_GAME_RESEARCH_CAPTURE.json",
+  "board_capture_blob": "73c20f2f477c9808e8c4f5c0e87a12fbf7149062",
+  "prior_revalidation_path": "evidence/operational/CFB_MARKET_MONITOR_20261030T010121Z_REVALIDATION.json",
+  "prior_revalidation_blob": "729121affc87955276511c1dc4187f5664f08d6b",
+  "summary": {
+    "games": 56,
+    "with_prior_quote": 50,
+    "with_changed_fields": 50,
+    "previous_future": 50,
+    "previous_future_with_changes": 50,
+    "previous_future_prediction": 48
+  },
+  "semantics": [
+    "Field deltas compare two CBS mixed-book retrieval-only display snapshots; they are NOT identified venue odds, verified offer-update times, model changes, probabilities or decisions.",
+    "Previous source had 56 identities/50 future/6 started at its earlier timestamp; these labels are historical and must not be treated as current game status.",
+    "A changed field is a research trigger, not proof of value; no old conditional revived, no PASS changed automatically.",
+    "Review current personnel/material news and original cutoffs before any prospective decision; no full-slate fresh producer RUN_PASS."
+  ],
+  "cases": [
+    {
+      "game_id": "401862813",
+      "game": "Tulane @ Charlotte",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 7,
+      "changes": {
+        "away_spread": {
+          "previous": -8.5,
+          "observed": -8,
+          "delta": 0.5
+        },
+        "home_spread": {
+          "previous": 9.5,
+          "observed": 8.5,
+          "delta": -1
+        },
+        "home_ml": {
+          "previous": 280,
+          "observed": 275,
+          "delta": -5
+        },
+        "over_total": {
+          "previous": 47.5,
+          "observed": 46.5,
+          "delta": -1
+        },
+        "away_spread_price": {
+          "previous": -108,
+          "observed": -111,
+          "delta": -3
+        },
+        "over_price": {
+          "previous": -105,
+          "observed": -114,
+          "delta": -9
+        },
+        "under_price": {
+          "previous": -110,
+          "observed": -115,
+          "delta": -5
+        }
+      }
+    },
+    {
+      "game_id": "401856844",
+      "game": "Baylor @ UCF",
+      "prior_state": "CONDITIONAL",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 7,
+      "changes": {
+        "away_ml": {
+          "previous": -118,
+          "observed": -125,
+          "delta": -7
+        },
+        "home_ml": {
+          "previous": 112,
+          "observed": 110,
+          "delta": -2
+        },
+        "over_total": {
+          "previous": 47.5,
+          "observed": 48.5,
+          "delta": 1
+        },
+        "under_total": {
+          "previous": 48.5,
+          "observed": 49.5,
+          "delta": 1
+        },
+        "away_spread_price": {
+          "previous": -108,
+          "observed": -112,
+          "delta": -4
+        },
+        "home_spread_price": {
+          "previous": -104,
+          "observed": -106,
+          "delta": -2
+        },
+        "under_price": {
+          "previous": -115,
+          "observed": -112,
+          "delta": 3
+        }
+      }
+    },
+    {
+      "game_id": "401866451",
+      "game": "Kent State @ Sacramento State",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 8,
+      "changes": {
+        "away_spread": {
+          "previous": -7.5,
+          "observed": -7,
+          "delta": 0.5
+        },
+        "home_spread": {
+          "previous": 8,
+          "observed": 7.5,
+          "delta": -0.5
+        },
+        "away_ml": {
+          "previous": -305,
+          "observed": -265,
+          "delta": 40
+        },
+        "home_ml": {
+          "previous": 260,
+          "observed": 230,
+          "delta": -30
+        },
+        "away_spread_price": {
+          "previous": -112,
+          "observed": -115,
+          "delta": -3
+        },
+        "home_spread_price": {
+          "previous": -108,
+          "observed": -118,
+          "delta": -10
+        },
+        "over_price": {
+          "previous": -108,
+          "observed": -110,
+          "delta": -2
+        },
+        "under_price": {
+          "previous": -110,
+          "observed": -105,
+          "delta": 5
+        }
+      }
+    },
+    {
+      "game_id": "401858278",
+      "game": "SMU @ Syracuse",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 5,
+      "changes": {
+        "away_ml": {
+          "previous": -380,
+          "observed": -375,
+          "delta": 5
+        },
+        "home_ml": {
+          "previous": 310,
+          "observed": 300,
+          "delta": -10
+        },
+        "over_total": {
+          "previous": 57.5,
+          "observed": 58.5,
+          "delta": 1
+        },
+        "home_spread_price": {
+          "previous": -112,
+          "observed": -111,
+          "delta": 1
+        },
+        "over_price": {
+          "previous": -111,
+          "observed": -105,
+          "delta": 6
+        }
+      }
+    },
+    {
+      "game_id": "401858277",
+      "game": "California @ NC State",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 7,
+      "changes": {
+        "away_spread": {
+          "previous": 7.5,
+          "observed": 8.5,
+          "delta": 1
+        },
+        "home_spread": {
+          "previous": -7,
+          "observed": -7.5,
+          "delta": -0.5
+        },
+        "away_ml": {
+          "previous": 220,
+          "observed": 245,
+          "delta": 25
+        },
+        "home_ml": {
+          "previous": -265,
+          "observed": -298,
+          "delta": -33
+        },
+        "away_spread_price": {
+          "previous": -108,
+          "observed": -111,
+          "delta": -3
+        },
+        "home_spread_price": {
+          "previous": -112,
+          "observed": -118,
+          "delta": -6
+        },
+        "over_price": {
+          "previous": -108,
+          "observed": -110,
+          "delta": -2
+        }
+      }
+    },
+    {
+      "game_id": "401856842",
+      "game": "Arizona @ Texas Tech",
+      "prior_state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 7,
+      "changes": {
+        "away_spread": {
+          "previous": 3.5,
+          "observed": 4,
+          "delta": 0.5
+        },
+        "away_ml": {
+          "previous": 145,
+          "observed": 150,
+          "delta": 5
+        },
+        "home_ml": {
+          "previous": -166,
+          "observed": -172,
+          "delta": -6
+        },
+        "away_spread_price": {
+          "previous": -110,
+          "observed": -111,
+          "delta": -1
+        },
+        "home_spread_price": {
+          "previous": -108,
+          "observed": -112,
+          "delta": -4
+        },
+        "over_price": {
+          "previous": -110,
+          "observed": -105,
+          "delta": 5
+        },
+        "under_price": {
+          "previous": -108,
+          "observed": -110,
+          "delta": -2
+        }
+      }
+    },
+    {
+      "game_id": "401858502",
+      "game": "Wisconsin @ Iowa",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 4,
+      "changes": {
+        "away_ml": {
+          "previous": 110,
+          "observed": 114,
+          "delta": 4
+        },
+        "home_ml": {
+          "previous": -126,
+          "observed": -133,
+          "delta": -7
+        },
+        "away_spread_price": {
+          "previous": -102,
+          "observed": -105,
+          "delta": -3
+        },
+        "home_spread_price": {
+          "previous": -115,
+          "observed": -128,
+          "delta": -13
+        }
+      }
+    },
+    {
+      "game_id": "401866452",
+      "game": "Bowling Green @ Western Michigan",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 6,
+      "changes": {
+        "away_spread": {
+          "previous": 13.5,
+          "observed": 14,
+          "delta": 0.5
+        },
+        "home_spread": {
+          "previous": -13,
+          "observed": -13.5,
+          "delta": -0.5
+        },
+        "away_ml": {
+          "previous": 430,
+          "observed": 490,
+          "delta": 60
+        },
+        "home_ml": {
+          "previous": -500,
+          "observed": -599,
+          "delta": -99
+        },
+        "away_spread_price": {
+          "previous": -112,
+          "observed": -111,
+          "delta": 1
+        },
+        "home_spread_price": {
+          "previous": -111,
+          "observed": -122,
+          "delta": -11
+        }
+      }
+    },
+    {
+      "game_id": "401862816",
+      "game": "UAB @ South Florida",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 3,
+      "changes": {
+        "home_ml": {
+          "previous": -305,
+          "observed": -300,
+          "delta": 5
+        },
+        "over_price": {
+          "previous": -114,
+          "observed": -112,
+          "delta": 2
+        },
+        "under_price": {
+          "previous": -112,
+          "observed": -114,
+          "delta": -2
+        }
+      }
+    },
+    {
+      "game_id": "401859185",
+      "game": "Notre Dame @ Navy",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 2,
+      "changes": {
+        "home_spread_price": {
+          "previous": -110,
+          "observed": -105,
+          "delta": 5
+        },
+        "over_price": {
+          "previous": -111,
+          "observed": -108,
+          "delta": 3
+        }
+      }
+    },
+    {
+      "game_id": "401858279",
+      "game": "Boston College @ Duke",
+      "prior_state": "CONDITIONAL",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 6,
+      "changes": {
+        "away_ml": {
+          "previous": 235,
+          "observed": 225,
+          "delta": -10
+        },
+        "home_ml": {
+          "previous": -278,
+          "observed": -265,
+          "delta": 13
+        },
+        "away_spread_price": {
+          "previous": -114,
+          "observed": -128,
+          "delta": -14
+        },
+        "home_spread_price": {
+          "previous": -110,
+          "observed": -112,
+          "delta": -2
+        },
+        "over_price": {
+          "previous": -105,
+          "observed": -108,
+          "delta": -3
+        },
+        "under_price": {
+          "previous": -114,
+          "observed": -108,
+          "delta": 6
+        }
+      }
+    },
+    {
+      "game_id": "401858503",
+      "game": "Illinois @ Maryland",
+      "prior_state": "CONDITIONAL",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 6,
+      "changes": {
+        "away_ml": {
+          "previous": -126,
+          "observed": -133,
+          "delta": -7
+        },
+        "over_total": {
+          "previous": 52.5,
+          "observed": 53.5,
+          "delta": 1
+        },
+        "away_spread_price": {
+          "previous": -110,
+          "observed": -115,
+          "delta": -5
+        },
+        "home_spread_price": {
+          "previous": -105,
+          "observed": -102,
+          "delta": 3
+        },
+        "over_price": {
+          "previous": -112,
+          "observed": -110,
+          "delta": 2
+        },
+        "under_price": {
+          "previous": -105,
+          "observed": -115,
+          "delta": -10
+        }
+      }
+    },
+    {
+      "game_id": "401858507",
+      "game": "Michigan @ Rutgers",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 4,
+      "changes": {
+        "away_spread": {
+          "previous": -14.5,
+          "observed": -16.5,
+          "delta": -2
+        },
+        "home_spread": {
+          "previous": 15.5,
+          "observed": 16.5,
+          "delta": 1
+        },
+        "home_ml": {
+          "previous": 570,
+          "observed": 590,
+          "delta": 20
+        },
+        "away_spread_price": {
+          "previous": -115,
+          "observed": -108,
+          "delta": 7
+        }
+      }
+    },
+    {
+      "game_id": "401856735",
+      "game": "Auburn @ Ole Miss",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 6,
+      "changes": {
+        "away_spread": {
+          "previous": 12.5,
+          "observed": 11.5,
+          "delta": -1
+        },
+        "away_ml": {
+          "previous": 380,
+          "observed": 360,
+          "delta": -20
+        },
+        "home_ml": {
+          "previous": -410,
+          "observed": -450,
+          "delta": -40
+        },
+        "away_spread_price": {
+          "previous": -112,
+          "observed": -110,
+          "delta": 2
+        },
+        "home_spread_price": {
+          "previous": -115,
+          "observed": -118,
+          "delta": -3
+        },
+        "under_price": {
+          "previous": -105,
+          "observed": -108,
+          "delta": -3
+        }
+      }
+    },
+    {
+      "game_id": "401871096",
+      "game": "Marshall @ Old Dominion",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 5,
+      "changes": {
+        "home_ml": {
+          "previous": 122,
+          "observed": 120,
+          "delta": -2
+        },
+        "over_total": {
+          "previous": 44.5,
+          "observed": 45.5,
+          "delta": 1
+        },
+        "away_spread_price": {
+          "previous": -122,
+          "observed": -120,
+          "delta": 2
+        },
+        "over_price": {
+          "previous": -115,
+          "observed": -108,
+          "delta": 7
+        },
+        "under_price": {
+          "previous": -106,
+          "observed": -105,
+          "delta": 1
+        }
+      }
+    },
+    {
+      "game_id": "401869944",
+      "game": "Coastal Carolina @ Georgia State",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 8,
+      "changes": {
+        "away_spread": {
+          "previous": 5.5,
+          "observed": 4.5,
+          "delta": -1
+        },
+        "home_spread": {
+          "previous": -5,
+          "observed": -4,
+          "delta": 1
+        },
+        "away_ml": {
+          "previous": 172,
+          "observed": 154,
+          "delta": -18
+        },
+        "home_ml": {
+          "previous": -200,
+          "observed": -182,
+          "delta": 18
+        },
+        "under_total": {
+          "previous": 55.5,
+          "observed": 56.5,
+          "delta": 1
+        },
+        "away_spread_price": {
+          "previous": -112,
+          "observed": -110,
+          "delta": 2
+        },
+        "home_spread_price": {
+          "previous": -108,
+          "observed": -111,
+          "delta": -3
+        },
+        "under_price": {
+          "previous": -105,
+          "observed": -111,
+          "delta": -6
+        }
+      }
+    },
+    {
+      "game_id": "401856846",
+      "game": "Kansas State @ Colorado",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 5,
+      "changes": {
+        "away_spread": {
+          "previous": 2,
+          "observed": 2.5,
+          "delta": 0.5
+        },
+        "away_ml": {
+          "previous": 105,
+          "observed": 115,
+          "delta": 10
+        },
+        "home_ml": {
+          "previous": -125,
+          "observed": -132,
+          "delta": -7
+        },
+        "away_spread_price": {
+          "previous": -111,
+          "observed": -110,
+          "delta": 1
+        },
+        "home_spread_price": {
+          "previous": -108,
+          "observed": -115,
+          "delta": -7
+        }
+      }
+    },
+    {
+      "game_id": "401862815",
+      "game": "Temple @ East Carolina",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 9,
+      "changes": {
+        "away_spread": {
+          "previous": 5.5,
+          "observed": 4.5,
+          "delta": -1
+        },
+        "away_ml": {
+          "previous": 170,
+          "observed": 164,
+          "delta": -6
+        },
+        "home_ml": {
+          "previous": -204,
+          "observed": -188,
+          "delta": 16
+        },
+        "over_total": {
+          "previous": 49.5,
+          "observed": 50.5,
+          "delta": 1
+        },
+        "under_total": {
+          "previous": 49.5,
+          "observed": 50.5,
+          "delta": 1
+        },
+        "away_spread_price": {
+          "previous": -112,
+          "observed": -110,
+          "delta": 2
+        },
+        "home_spread_price": {
+          "previous": -115,
+          "observed": -105,
+          "delta": 10
+        },
+        "over_price": {
+          "previous": -111,
+          "observed": -108,
+          "delta": 3
+        },
+        "under_price": {
+          "previous": -105,
+          "observed": -108,
+          "delta": -3
+        }
+      }
+    },
+    {
+      "game_id": "401861966",
+      "game": "UConn @ Air Force",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 6,
+      "changes": {
+        "away_spread": {
+          "previous": 1.5,
+          "observed": -1,
+          "delta": -2.5
+        },
+        "home_spread": {
+          "previous": 1,
+          "observed": 1.5,
+          "delta": 0.5
+        },
+        "away_ml": {
+          "previous": -105,
+          "observed": -110,
+          "delta": -5
+        },
+        "home_ml": {
+          "previous": -108,
+          "observed": -106,
+          "delta": 2
+        },
+        "away_spread_price": {
+          "previous": -120,
+          "observed": -108,
+          "delta": 12
+        },
+        "under_price": {
+          "previous": -108,
+          "observed": -105,
+          "delta": 3
+        }
+      }
+    },
+    {
+      "game_id": "401871097",
+      "game": "Louisiana Tech @ South Alabama",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 7,
+      "changes": {
+        "away_spread": {
+          "previous": -5.5,
+          "observed": -6,
+          "delta": -0.5
+        },
+        "home_spread": {
+          "previous": 5.5,
+          "observed": 6.5,
+          "delta": 1
+        },
+        "away_ml": {
+          "previous": -210,
+          "observed": -220,
+          "delta": -10
+        },
+        "home_ml": {
+          "previous": 185,
+          "observed": 187,
+          "delta": 2
+        },
+        "away_spread_price": {
+          "previous": -110,
+          "observed": -111,
+          "delta": -1
+        },
+        "home_spread_price": {
+          "previous": -108,
+          "observed": -115,
+          "delta": -7
+        },
+        "over_price": {
+          "previous": -108,
+          "observed": -105,
+          "delta": 3
+        }
+      }
+    },
+    {
+      "game_id": "401858283",
+      "game": "Stanford @ Louisville",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 3,
+      "changes": {
+        "over_total": {
+          "previous": 59.5,
+          "observed": 60.5,
+          "delta": 1
+        },
+        "home_spread_price": {
+          "previous": -110,
+          "observed": -108,
+          "delta": 2
+        },
+        "over_price": {
+          "previous": -114,
+          "observed": -108,
+          "delta": 6
+        }
+      }
+    },
+    {
+      "game_id": "401871059",
+      "game": "Florida International @ Liberty",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 3,
+      "changes": {
+        "away_ml": {
+          "previous": 450,
+          "observed": 460,
+          "delta": 10
+        },
+        "home_ml": {
+          "previous": -581,
+          "observed": -575,
+          "delta": 6
+        },
+        "away_spread_price": {
+          "previous": -110,
+          "observed": -111,
+          "delta": -1
+        }
+      }
+    },
+    {
+      "game_id": "401856845",
+      "game": "Kansas @ TCU",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 7,
+      "changes": {
+        "away_spread": {
+          "previous": 6,
+          "observed": 6.5,
+          "delta": 0.5
+        },
+        "home_spread": {
+          "previous": -5.5,
+          "observed": -6.5,
+          "delta": -1
+        },
+        "away_ml": {
+          "previous": 190,
+          "observed": 195,
+          "delta": 5
+        },
+        "home_ml": {
+          "previous": -210,
+          "observed": -220,
+          "delta": -10
+        },
+        "home_spread_price": {
+          "previous": -112,
+          "observed": -106,
+          "delta": 6
+        },
+        "over_price": {
+          "previous": -110,
+          "observed": -104,
+          "delta": 6
+        },
+        "under_price": {
+          "previous": -108,
+          "observed": -110,
+          "delta": -2
+        }
+      }
+    },
+    {
+      "game_id": "401856843",
+      "game": "Arizona State @ BYU",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 1,
+      "changes": {
+        "over_price": {
+          "previous": -105,
+          "observed": -102,
+          "delta": 3
+        }
+      }
+    },
+    {
+      "game_id": "401860910",
+      "game": "Colorado State @ Utah State",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 9,
+      "changes": {
+        "away_spread": {
+          "previous": 6.5,
+          "observed": 7.5,
+          "delta": 1
+        },
+        "away_ml": {
+          "previous": 200,
+          "observed": 235,
+          "delta": 35
+        },
+        "home_ml": {
+          "previous": -225,
+          "observed": -265,
+          "delta": -40
+        },
+        "over_total": {
+          "previous": 63.5,
+          "observed": 61.5,
+          "delta": -2
+        },
+        "under_total": {
+          "previous": 63.5,
+          "observed": 62.5,
+          "delta": -1
+        },
+        "away_spread_price": {
+          "previous": -102,
+          "observed": -111,
+          "delta": -9
+        },
+        "home_spread_price": {
+          "previous": -110,
+          "observed": -138,
+          "delta": -28
+        },
+        "over_price": {
+          "previous": -105,
+          "observed": -115,
+          "delta": -10
+        },
+        "under_price": {
+          "previous": -112,
+          "observed": -115,
+          "delta": -3
+        }
+      }
+    },
+    {
+      "game_id": "401864531",
+      "game": "UTEP @ North Dakota State",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 4,
+      "changes": {
+        "home_spread": {
+          "previous": -24.5,
+          "observed": -24,
+          "delta": 0.5
+        },
+        "away_ml": {
+          "previous": 1450,
+          "observed": 1400,
+          "delta": -50
+        },
+        "away_spread_price": {
+          "previous": -108,
+          "observed": -112,
+          "delta": -4
+        },
+        "home_spread_price": {
+          "previous": -108,
+          "observed": -111,
+          "delta": -3
+        }
+      }
+    },
+    {
+      "game_id": "401858505",
+      "game": "Northwestern @ Oregon",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 3,
+      "changes": {
+        "away_ml": {
+          "previous": 140,
+          "observed": 145,
+          "delta": 5
+        },
+        "home_ml": {
+          "previous": -160,
+          "observed": -170,
+          "delta": -10
+        },
+        "away_spread_price": {
+          "previous": -110,
+          "observed": -108,
+          "delta": 2
+        }
+      }
+    },
+    {
+      "game_id": "401871095",
+      "game": "Southern Miss @ UL Monroe",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 6,
+      "changes": {
+        "home_ml": {
+          "previous": 145,
+          "observed": 140,
+          "delta": -5
+        },
+        "over_total": {
+          "previous": 55.5,
+          "observed": 54.5,
+          "delta": -1
+        },
+        "away_spread_price": {
+          "previous": -108,
+          "observed": -102,
+          "delta": 6
+        },
+        "home_spread_price": {
+          "previous": -111,
+          "observed": -112,
+          "delta": -1
+        },
+        "over_price": {
+          "previous": -110,
+          "observed": -114,
+          "delta": -4
+        },
+        "under_price": {
+          "previous": -106,
+          "observed": -110,
+          "delta": -4
+        }
+      }
+    },
+    {
+      "game_id": "401858501",
+      "game": "Minnesota @ Indiana",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 2,
+      "changes": {
+        "over_price": {
+          "previous": -114,
+          "observed": -118,
+          "delta": -4
+        },
+        "under_price": {
+          "previous": -118,
+          "observed": -120,
+          "delta": -2
+        }
+      }
+    },
+    {
+      "game_id": "401856734",
+      "game": "Florida @ Georgia",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 8,
+      "changes": {
+        "away_spread": {
+          "previous": 12.5,
+          "observed": 12,
+          "delta": -0.5
+        },
+        "home_spread": {
+          "previous": -12,
+          "observed": -11.5,
+          "delta": 0.5
+        },
+        "away_ml": {
+          "previous": 390,
+          "observed": 350,
+          "delta": -40
+        },
+        "home_ml": {
+          "previous": -476,
+          "observed": -435,
+          "delta": 41
+        },
+        "away_spread_price": {
+          "previous": -110,
+          "observed": -111,
+          "delta": -1
+        },
+        "home_spread_price": {
+          "previous": -111,
+          "observed": -110,
+          "delta": 1
+        },
+        "over_price": {
+          "previous": -110,
+          "observed": -108,
+          "delta": 2
+        },
+        "under_price": {
+          "previous": -108,
+          "observed": -110,
+          "delta": -2
+        }
+      }
+    },
+    {
+      "game_id": "401858284",
+      "game": "Virginia @ Wake Forest",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 4,
+      "changes": {
+        "home_ml": {
+          "previous": -500,
+          "observed": -490,
+          "delta": 10
+        },
+        "over_total": {
+          "previous": 48.5,
+          "observed": 47.5,
+          "delta": -1
+        },
+        "under_total": {
+          "previous": 49.5,
+          "observed": 48.5,
+          "delta": -1
+        },
+        "over_price": {
+          "previous": -115,
+          "observed": -118,
+          "delta": -3
+        }
+      }
+    },
+    {
+      "game_id": "401856848",
+      "game": "Utah @ Cincinnati",
+      "prior_state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 2,
+      "changes": {
+        "home_ml": {
+          "previous": 235,
+          "observed": 225,
+          "delta": -10
+        },
+        "home_spread_price": {
+          "previous": -112,
+          "observed": -115,
+          "delta": -3
+        }
+      }
+    },
+    {
+      "game_id": "401864529",
+      "game": "New Mexico @ San José State",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 4,
+      "changes": {
+        "home_ml": {
+          "previous": 520,
+          "observed": 550,
+          "delta": 30
+        },
+        "away_spread_price": {
+          "previous": -108,
+          "observed": -110,
+          "delta": -2
+        },
+        "home_spread_price": {
+          "previous": -110,
+          "observed": -105,
+          "delta": 5
+        },
+        "over_price": {
+          "previous": -108,
+          "observed": -110,
+          "delta": -2
+        }
+      }
+    },
+    {
+      "game_id": "401858506",
+      "game": "Purdue @ Penn State",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 2,
+      "changes": {
+        "home_ml": {
+          "previous": -400,
+          "observed": -385,
+          "delta": 15
+        },
+        "over_price": {
+          "previous": -114,
+          "observed": -111,
+          "delta": 3
+        }
+      }
+    },
+    {
+      "game_id": "401856736",
+      "game": "South Carolina @ Oklahoma",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 1,
+      "changes": {
+        "home_ml": {
+          "previous": -160,
+          "observed": -156,
+          "delta": 4
+        }
+      }
+    },
+    {
+      "game_id": "401858508",
+      "game": "Nevada @ UCLA",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 6,
+      "changes": {
+        "home_ml": {
+          "previous": -2000,
+          "observed": -1786,
+          "delta": 214
+        },
+        "under_total": {
+          "previous": 44.5,
+          "observed": 43.5,
+          "delta": -1
+        },
+        "away_spread_price": {
+          "previous": -108,
+          "observed": -110,
+          "delta": -2
+        },
+        "home_spread_price": {
+          "previous": -110,
+          "observed": -108,
+          "delta": 2
+        },
+        "over_price": {
+          "previous": -118,
+          "observed": -106,
+          "delta": 12
+        },
+        "under_price": {
+          "previous": -118,
+          "observed": -105,
+          "delta": 13
+        }
+      }
+    },
+    {
+      "game_id": "401869846",
+      "game": "App State @ Georgia Southern",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 6,
+      "changes": {
+        "away_spread": {
+          "previous": 5.5,
+          "observed": 6,
+          "delta": 0.5
+        },
+        "home_ml": {
+          "previous": -213,
+          "observed": -205,
+          "delta": 8
+        },
+        "under_total": {
+          "previous": 56.5,
+          "observed": 57.5,
+          "delta": 1
+        },
+        "away_spread_price": {
+          "previous": -108,
+          "observed": -111,
+          "delta": -3
+        },
+        "home_spread_price": {
+          "previous": -108,
+          "observed": -110,
+          "delta": -2
+        },
+        "under_price": {
+          "previous": -105,
+          "observed": -114,
+          "delta": -9
+        }
+      }
+    },
+    {
+      "game_id": "401860909",
+      "game": "Washington State @ San Diego State",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 6,
+      "changes": {
+        "away_ml": {
+          "previous": 114,
+          "observed": 120,
+          "delta": 6
+        },
+        "home_ml": {
+          "previous": -132,
+          "observed": -137,
+          "delta": -5
+        },
+        "under_total": {
+          "previous": 49.5,
+          "observed": 48.5,
+          "delta": -1
+        },
+        "home_spread_price": {
+          "previous": -111,
+          "observed": -114,
+          "delta": -3
+        },
+        "over_price": {
+          "previous": -110,
+          "observed": -105,
+          "delta": 5
+        },
+        "under_price": {
+          "previous": -115,
+          "observed": -110,
+          "delta": 5
+        }
+      }
+    },
+    {
+      "game_id": "401856847",
+      "game": "Oklahoma State @ Iowa State",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 1,
+      "changes": {
+        "home_ml": {
+          "previous": 280,
+          "observed": 285,
+          "delta": 5
+        }
+      }
+    },
+    {
+      "game_id": "401858280",
+      "game": "Clemson @ Florida State",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 3,
+      "changes": {
+        "under_total": {
+          "previous": 50.5,
+          "observed": 49.5,
+          "delta": -1
+        },
+        "over_price": {
+          "previous": -115,
+          "observed": -111,
+          "delta": 4
+        },
+        "under_price": {
+          "previous": -112,
+          "observed": -102,
+          "delta": 10
+        }
+      }
+    },
+    {
+      "game_id": "401858281",
+      "game": "Georgia Tech @ Pittsburgh",
+      "prior_state": "CONDITIONAL",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 5,
+      "changes": {
+        "away_spread": {
+          "previous": 7.5,
+          "observed": 8.5,
+          "delta": 1
+        },
+        "away_ml": {
+          "previous": 250,
+          "observed": 245,
+          "delta": -5
+        },
+        "away_spread_price": {
+          "previous": -108,
+          "observed": -112,
+          "delta": -4
+        },
+        "home_spread_price": {
+          "previous": -108,
+          "observed": -110,
+          "delta": -2
+        },
+        "over_price": {
+          "previous": -110,
+          "observed": -114,
+          "delta": -4
+        }
+      }
+    },
+    {
+      "game_id": "401858282",
+      "game": "Miami @ North Carolina",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 7,
+      "changes": {
+        "away_ml": {
+          "previous": -625,
+          "observed": -588,
+          "delta": 37
+        },
+        "home_ml": {
+          "previous": 480,
+          "observed": 455,
+          "delta": -25
+        },
+        "under_total": {
+          "previous": 52.5,
+          "observed": 53.5,
+          "delta": 1
+        },
+        "away_spread_price": {
+          "previous": -114,
+          "observed": -108,
+          "delta": 6
+        },
+        "home_spread_price": {
+          "previous": -115,
+          "observed": -118,
+          "delta": -3
+        },
+        "over_price": {
+          "previous": -110,
+          "observed": -115,
+          "delta": -5
+        },
+        "under_price": {
+          "previous": -108,
+          "observed": -111,
+          "delta": -3
+        }
+      }
+    },
+    {
+      "game_id": "401856737",
+      "game": "Mississippi State @ Texas",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 4,
+      "changes": {
+        "away_ml": {
+          "previous": 890,
+          "observed": 900,
+          "delta": 10
+        },
+        "home_ml": {
+          "previous": -1250,
+          "observed": -1429,
+          "delta": -179
+        },
+        "home_spread_price": {
+          "previous": -108,
+          "observed": -111,
+          "delta": -3
+        },
+        "over_price": {
+          "previous": -111,
+          "observed": -112,
+          "delta": -1
+        }
+      }
+    },
+    {
+      "game_id": "401858509",
+      "game": "Ohio State @ USC",
+      "prior_state": "CONDITIONAL",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 7,
+      "changes": {
+        "home_spread": {
+          "previous": 7,
+          "observed": 6.5,
+          "delta": -0.5
+        },
+        "away_ml": {
+          "previous": -244,
+          "observed": -220,
+          "delta": 24
+        },
+        "home_ml": {
+          "previous": 205,
+          "observed": 200,
+          "delta": -5
+        },
+        "away_spread_price": {
+          "previous": -115,
+          "observed": -110,
+          "delta": 5
+        },
+        "home_spread_price": {
+          "previous": -115,
+          "observed": -105,
+          "delta": 10
+        },
+        "over_price": {
+          "previous": -108,
+          "observed": -105,
+          "delta": 3
+        },
+        "under_price": {
+          "previous": -108,
+          "observed": -112,
+          "delta": -4
+        }
+      }
+    },
+    {
+      "game_id": "401856733",
+      "game": "Missouri @ Arkansas",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 9,
+      "changes": {
+        "away_spread": {
+          "previous": -9.5,
+          "observed": -10,
+          "delta": -0.5
+        },
+        "home_spread": {
+          "previous": 10,
+          "observed": 10.5,
+          "delta": 0.5
+        },
+        "away_ml": {
+          "previous": -350,
+          "observed": -380,
+          "delta": -30
+        },
+        "home_ml": {
+          "previous": 300,
+          "observed": 310,
+          "delta": 10
+        },
+        "over_total": {
+          "previous": 47.5,
+          "observed": 48.5,
+          "delta": 1
+        },
+        "away_spread_price": {
+          "previous": -114,
+          "observed": -112,
+          "delta": 2
+        },
+        "home_spread_price": {
+          "previous": -111,
+          "observed": -114,
+          "delta": -3
+        },
+        "over_price": {
+          "previous": -110,
+          "observed": -105,
+          "delta": 5
+        },
+        "under_price": {
+          "previous": -105,
+          "observed": -110,
+          "delta": -5
+        }
+      }
+    },
+    {
+      "game_id": "401858504",
+      "game": "Washington @ Nebraska",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 6,
+      "changes": {
+        "away_ml": {
+          "previous": 255,
+          "observed": 250,
+          "delta": -5
+        },
+        "home_ml": {
+          "previous": -298,
+          "observed": -294,
+          "delta": 4
+        },
+        "away_spread_price": {
+          "previous": -105,
+          "observed": -110,
+          "delta": -5
+        },
+        "home_spread_price": {
+          "previous": -108,
+          "observed": -105,
+          "delta": 3
+        },
+        "over_price": {
+          "previous": -110,
+          "observed": -114,
+          "delta": -4
+        },
+        "under_price": {
+          "previous": -115,
+          "observed": -112,
+          "delta": 3
+        }
+      }
+    },
+    {
+      "game_id": "401862814",
+      "game": "Army @ Memphis",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 7,
+      "changes": {
+        "away_spread": {
+          "previous": 6.5,
+          "observed": 6,
+          "delta": -0.5
+        },
+        "away_ml": {
+          "previous": 190,
+          "observed": 184,
+          "delta": -6
+        },
+        "home_ml": {
+          "previous": -218,
+          "observed": -217,
+          "delta": 1
+        },
+        "under_total": {
+          "previous": 60.5,
+          "observed": 59.5,
+          "delta": -1
+        },
+        "away_spread_price": {
+          "previous": -111,
+          "observed": -108,
+          "delta": 3
+        },
+        "over_price": {
+          "previous": -115,
+          "observed": -111,
+          "delta": 4
+        },
+        "under_price": {
+          "previous": -111,
+          "observed": -105,
+          "delta": 6
+        }
+      }
+    },
+    {
+      "game_id": "401860908",
+      "game": "Texas State @ Boise State",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 6,
+      "changes": {
+        "away_spread": {
+          "previous": 11,
+          "observed": 10.5,
+          "delta": -0.5
+        },
+        "away_ml": {
+          "previous": 350,
+          "observed": 340,
+          "delta": -10
+        },
+        "home_ml": {
+          "previous": -426,
+          "observed": -441,
+          "delta": -15
+        },
+        "away_spread_price": {
+          "previous": -111,
+          "observed": -105,
+          "delta": 6
+        },
+        "home_spread_price": {
+          "previous": -115,
+          "observed": -110,
+          "delta": 5
+        },
+        "over_price": {
+          "previous": -111,
+          "observed": -108,
+          "delta": 3
+        }
+      }
+    },
+    {
+      "game_id": "401864530",
+      "game": "Northern Illinois @ UNLV",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 5,
+      "changes": {
+        "away_spread": {
+          "previous": 24.5,
+          "observed": 22.5,
+          "delta": -2
+        },
+        "home_spread": {
+          "previous": -24,
+          "observed": -22,
+          "delta": 2
+        },
+        "away_ml": {
+          "previous": 1300,
+          "observed": 1100,
+          "delta": -200
+        },
+        "home_ml": {
+          "previous": -2222,
+          "observed": -1786,
+          "delta": 436
+        },
+        "home_spread_price": {
+          "previous": -111,
+          "observed": -108,
+          "delta": 3
+        }
+      }
+    },
+    {
+      "game_id": "401860924",
+      "game": "Oregon State @ Fresno State",
+      "prior_state": "PASS",
+      "prior_temporal_status": "FUTURE_AT_CAPTURE",
+      "prior_quote_available": true,
+      "changed_field_count": 2,
+      "changes": {
+        "home_ml": {
+          "previous": 185,
+          "observed": 190,
+          "delta": 5
+        },
+        "home_spread_price": {
+          "previous": -108,
+          "observed": -110,
+          "delta": -2
+        }
+      }
+    },
+    {
+      "game_id": "401862812",
+      "game": "Florida Atlantic @ North Texas",
+      "prior_state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "prior_temporal_status": "STARTED_OR_PAST_AT_CAPTURE",
+      "prior_quote_available": false,
+      "changed_field_count": 0,
+      "changes": {}
+    },
+    {
+      "game_id": "401869963",
+      "game": "Troy @ James Madison",
+      "prior_state": "CONDITIONAL",
+      "prior_temporal_status": "STARTED_OR_PAST_AT_CAPTURE",
+      "prior_quote_available": false,
+      "changed_field_count": 0,
+      "changes": {}
+    },
+    {
+      "game_id": "401871057",
+      "game": "Jacksonville State @ New Mexico State",
+      "prior_state": "PASS",
+      "prior_temporal_status": "PAST_SOURCE_DATE_ONLY_EXACT_KICKOFF_UNAVAILABLE",
+      "prior_quote_available": false,
+      "changed_field_count": 0,
+      "changes": {}
+    },
+    {
+      "game_id": "401871058",
+      "game": "Kennesaw State @ Middle Tennessee",
+      "prior_state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "prior_temporal_status": "PAST_SOURCE_DATE_ONLY_EXACT_KICKOFF_UNAVAILABLE",
+      "prior_quote_available": false,
+      "changed_field_count": 0,
+      "changes": {}
+    },
+    {
+      "game_id": "401871072",
+      "game": "Sam Houston @ Missouri State",
+      "prior_state": "PASS",
+      "prior_temporal_status": "PAST_SOURCE_DATE_ONLY_EXACT_KICKOFF_UNAVAILABLE",
+      "prior_quote_available": false,
+      "changed_field_count": 0,
+      "changes": {}
+    },
+    {
+      "game_id": "401871071",
+      "game": "Delaware @ Western Kentucky",
+      "prior_state": "PASS",
+      "prior_temporal_status": "PAST_SOURCE_DATE_ONLY_EXACT_KICKOFF_UNAVAILABLE",
+      "prior_quote_available": false,
+      "changed_field_count": 0,
+      "changes": {}
+    }
+  ]
+}
