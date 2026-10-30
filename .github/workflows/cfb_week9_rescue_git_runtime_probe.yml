@@ -68,6 +68,13 @@ jobs:
           print('FRESH_PUBLIC_BOARD_IDENTITY_COVERAGE_PASS',c)
           print('RESEARCH_ONLY_NO_NEW_CHAMPION_DECISIONS')
           PY
+      - name: Preserve normalized live public board as replayable research artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-week9-20261030-2343z-public-board-normalized
+          path: ${{ runner.temp }}/cfb-late-cbs-normalized.json
+          retention-days: 14
+          if-no-files-found: error
       - name: Boundary statement
         if: always()
         run: |
