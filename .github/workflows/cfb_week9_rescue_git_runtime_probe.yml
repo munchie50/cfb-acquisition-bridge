@@ -75,6 +75,12 @@ jobs:
           path: ${{ runner.temp }}/cfb-late-cbs-normalized.json
           retention-days: 14
           if-no-files-found: error
+      - name: Verify authentic Week9 producer compiler and publication rejection controls
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s scripts -p 'test_cfb_week9_*.py' -v
+          echo "WEEK9_PRODUCER_CONTRACT_TESTS_COMPLETE_NO_PUBLICATION"
       - name: Boundary statement
         if: always()
         run: |
