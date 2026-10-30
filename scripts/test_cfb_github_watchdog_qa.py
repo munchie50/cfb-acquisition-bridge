@@ -19,6 +19,13 @@ class WatchdogTests(unittest.TestCase):
     def test_not_terminal(self):
         r=receipt();r["status"]="in_progress"
         self.assertEqual(assess([r],NOW)[0]["status"],"RUN_NOT_TERMINAL")
+    def test_dedup_key_stable_and_failure_actionable(self):
+        r=receipt();r["id"]=123;r["conclusion"]="failure"
+        first=assess([r],NOW)[0]
+        second=assess([r],NOW)[0]
+        self.assertEqual(first["incident_key"],second["incident_key"])
+        self.assertTrue(first["action_required"])
+        self.assertFalse(assess([receipt()],NOW)[0]["action_required"])
     def test_manual_not_schedule(self):
         r=receipt();r["event"]="workflow_dispatch"
         self.assertEqual(assess([r],NOW)[0]["status"],"NO_SCHEDULED_RECEIPT")
