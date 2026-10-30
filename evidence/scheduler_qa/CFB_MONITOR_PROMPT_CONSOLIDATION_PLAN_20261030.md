@@ -1,0 +1,6 @@
+# QA-only Monitor prompt consolidation plan — 2026-10-30
+Status: PROPOSED, NOT INSTALLED, NOT VALIDATED.
+
+Current task has 17 nonempty instruction sections. Safest first candidate: retain all sections in exact order except the penultimate FRIDAY PRE-TRIP TIMING — USER CORRECTION OCT29CT section, which explicitly requires decisions BY 13:00 CT and is superseded by the final SUPERSEDING USER TIMING CORRECTION — AFTER FRIDAY13CTRUN section. Keep the final correction verbatim. This is a one-section deletion only, not a broad rewrite; all other authority, execution, QA, cost, publication, and task constraints remain untouched.
+
+Before deployment: independently capture and hash full live prompt and task metadata; build candidate offline, compare every retained section byte-for-byte, verify 17-to-16 sections and exact preservation of AFTER 13:00 rule. Check newer accepted authority. Do not modify task until after protected natural 13:00 run and evidence-based approval. A smaller prompt does not prove root cause; obtain discriminating scheduler startup evidence and natural end-to-end acceptance. No fifth task, schedule, timing mode, model, money, canonical state, or cloud merge changes.
