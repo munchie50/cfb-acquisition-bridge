@@ -1,0 +1,56 @@
+name: CFB Week9 Production Rescue - Git Runtime Evidence
+on:
+  push:
+    branches: [rescue/week9-git-runtime-20261030]
+    paths:
+      - '.github/workflows/cfb_week9_rescue_git_runtime_probe.yml'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  production-runtime-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Checkout isolated rescue branch without modifying production
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify pinned main ancestor and accepted canonical objects
+        shell: bash
+        run: |
+          set -euo pipefail
+          PIN=ab98e454f19c059618491dfe1881b31890756c2b
+          git cat-file -e "${PIN}^{commit}"
+          git merge-base --is-ancestor "$PIN" HEAD
+          test "$(git rev-parse --is-shallow-repository)" = false
+          test "$(git hash-object evidence/operational/CFB_MARKET_MONITOR_STATE.md)" = 69caf5b1184eedccc90be7562e4a3bd7cb8b7375
+          test "$(git hash-object evidence/operational/CFB_DECISION_WAIT_LEDGER.md)" = bb5a9cc83b6a1425dc2972ca84b33aa2bbbf8fa9
+          test "$(git hash-object evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md)" = 379eff0dfd4b7184633d0962e0a37b615384573e
+          test "$(git hash-object evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-29_2008CT.md)" = f05173046e51ab9634d47b1be5fe90c2a5026c96
+          echo "PINNED_FULL_HISTORY_AND_CANONICAL_BLOBS_PASS"
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Execute governed independent Git runtime and immutable ancestry check
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/cfb_runtime_checkout.py --destination "$RUNNER_TEMP/cfb-full-clone" --expected-head ab98e454f19c059618491dfe1881b31890756c2b > "$RUNNER_TEMP/runtime_result.json"
+          python - "$RUNNER_TEMP/runtime_result.json" <<'PY'
+          import json,sys
+          x=json.load(open(sys.argv[1]))
+          assert x['status']=='SUPPORTED_GIT_RUNTIME_VERIFIED'
+          print('SUPPORTED_GIT_RUNTIME_VERIFIED',x['head'],'immutable_reviews',len(x['immutable_reviews']))
+          PY
+      - name: Execute existing production recovery consumer preflight
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/cfb_recovery_consumer_preflight.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md
+      - name: Boundary statement
+        if: always()
+        run: |
+          echo "READ_ONLY_PRODUCTION_EXECUTION_SUBSTRATE_DIAGNOSTIC"
+          echo "No new market quote, Champion decision, bet, canonical mutation, publication or RUN_PASS."
