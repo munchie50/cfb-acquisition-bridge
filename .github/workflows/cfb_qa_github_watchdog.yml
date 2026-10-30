@@ -1,0 +1,18 @@
+name: CFB QA GitHub Watchdog
+on:
+  push:
+    branches: [qa/monitor-no-update-investigation-20261030]
+    paths:
+      - 'scripts/cfb_github_watchdog_qa.py'
+      - 'scripts/test_cfb_github_watchdog_qa.py'
+      - '.github/workflows/cfb_qa_github_watchdog.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -m unittest discover -s scripts -p 'test_cfb_github_watchdog_qa.py' -v
