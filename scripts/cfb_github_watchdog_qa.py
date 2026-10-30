@@ -3,6 +3,7 @@
 import argparse
 import datetime as dt
 import json
+import hashlib
 import urllib.request
 
 BASE="https://api.github.com/repos/munchie50/cfb-acquisition-bridge"
@@ -25,7 +26,9 @@ def assess(runs, now):
             elif r.get("status")!="completed": status="RUN_NOT_TERMINAL"
             elif r.get("conclusion")!="success": status="WORKFLOW_FAILURE"
             else: status="GITHUB_WORKFLOW_PASS_ONLY"
-        result.append({"path":path,"status":status,"source":"github_actions","coverage":"github_only"})
+        receipt_id=str(matches[0].get("id","none")) if matches else "none"
+        incident_key=hashlib.sha256((path+"|"+receipt_id+"|"+status).encode()).hexdigest()[:20]
+        result.append({"path":path,"status":status,"source":"github_actions","coverage":"github_only","receipt_id":receipt_id,"incident_key":incident_key,"action_required":status!="GITHUB_WORKFLOW_PASS_ONLY"})
     return result
 def main():
     p=argparse.ArgumentParser()
