@@ -11,9 +11,9 @@ concurrency:
   group: cfb-cloud-interrupted-worker-recovery-qa
   cancel-in-progress: false
 env:
-  CFB_PHASE: CAPTURE
-  CFB_CAPTURE_RUN: ''
-  CFB_CAPTURE_COMMIT: ''
+  CFB_PHASE: RESTORE
+  CFB_CAPTURE_RUN: '40989123458'
+  CFB_CAPTURE_COMMIT: '398541d00e8f919994e3f97b00dc76ee4654a0b6'
 jobs:
   interrupted-worker-recovery-qa:
     runs-on: ubuntu-latest
