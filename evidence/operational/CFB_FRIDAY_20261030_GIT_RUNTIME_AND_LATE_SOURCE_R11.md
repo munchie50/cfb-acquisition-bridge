@@ -26,3 +26,6 @@ Boundary: Friday 2026-10-30, approximately 23:44Z (18:44 CT). Governing producti
 4. Only with validated inputs and real decisions: serial canonical market -> decision -> Hot Sheet -> audit -> recovery index, selected CI, independent readback and separate terminal closure. Preserve current canonical files unchanged until gates pass.
 
 **v5.1-C closure:** runtime-substrate correction = DEMONSTRATED and INDEPENDENTLY_RECONCILED for Git runner capability; overall Friday producer = RUN_INCOMPLETE, NOT CLOSED. Natural next trigger: supported producer invocation with qualified fresh decision inputs and actual venue/news checks. No bet, money, model, schedule, or canonical Hot Sheet mutation.
+
+## Replayable normalization artifact
+Third independent isolated GitHub Actions run `41146259326` completed SUCCESS, including exact original Git runtime checks, 333-pointer recovery preflight, live 56/56 source normalization, and `actions/upload-artifact`. Artifact ID `13020672469`, name `cfb-week9-20261030-2343z-public-board-normalized`, expires 2026-11-13T23:44:50Z, digest `sha256:b76184043347a6a3a641c5ac578592ea813db2fe679cf1a5ebfdd54eb605e7f5`. This is a research replay artifact, not a canonical market/decision or accepted publication.
