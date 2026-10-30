@@ -1,0 +1,67 @@
+{
+  "schema": "CFB_ORIGIN_INDEX_OPERATIONAL_INTEGRATION_V1",
+  "observed_preparation_utc": "2026-10-30T03:16:40Z",
+  "status": "INSTALLED_MAIN_CODE_AND_CI_VERIFIED_NATURAL_MONITOR_ADOPTION_PENDING",
+  "pull_request": 17,
+  "merge_commit": "ad3ea660b4b426f04f28c8b74fe2c9115607d51c",
+  "gate_blob": "88cd89d83161f1d7fe4ed3533f9f42487c909fef",
+  "new_tests_blob": "6f79ba02c79380c542585f4693663e6db36e2596",
+  "workflow_blob": "826890ca6d902857e22b684092844ceaec56b136",
+  "same_runner_qa": {
+    "run_id": 40994113067,
+    "job_id": 123863121001,
+    "artifact_id": 12950867028,
+    "artifact_sha256": "88c48217d25e72da94959302b4ad4848cf21bbcfc313c40991b0cc5e4c456912",
+    "tests_each": 216,
+    "skipped_each": 0,
+    "new_boundary_tests": 7,
+    "original_seconds": 298.850481688,
+    "candidate_seconds": 59.520824774999994,
+    "stage_seconds_saved": 239.329656913,
+    "preserved_baseline_tracked_files": 1615,
+    "raw_logs_independently_verified": 18,
+    "saved_hot_sheet_audits_identical": true,
+    "qa_evidence_ref": {
+      "branch": "qa/cloud-source-preparation-20261030",
+      "path": "evidence/scheduler_qa/CFB_ORIGIN_INDEX_CLOUD_RESULTS_20261030.json",
+      "blob": "27a5cc7de9664e914503a4fa4424563e8e65e832"
+    }
+  },
+  "premerge_ci": {
+    "run_id": 40995372823,
+    "job_id": 123867141512,
+    "head": "0a2af71bf100bc68c7c48823c805538a3464464f",
+    "steps": 45,
+    "failed": 0,
+    "skipped": 0,
+    "decoded_logs_read": true
+  },
+  "accepted_main_ci": {
+    "run_id": 40995653022,
+    "job_id": 123868035070,
+    "head": "ad3ea660b4b426f04f28c8b74fe2c9115607d51c",
+    "steps": 45,
+    "failed": 0,
+    "skipped": 0,
+    "decoded_logs_read": true,
+    "pinned_runtime_head_verified": true,
+    "recovery_pointers_verified": 332,
+    "week9_original_numeric_fields_verified": 135
+  },
+  "independent_main_readbacks": {
+    "market": "69caf5b1184eedccc90be7562e4a3bd7cb8b7375",
+    "decision": "bb5a9cc83b6a1425dc2972ca84b33aa2bbbf8fa9",
+    "execution": "1a938f42e9f03e723bd50348f8a78dbd8b7098e9",
+    "scorecard": "fd6529a4ab27ac12d74ace4441005535c605cadb",
+    "index_before_governance_record": "c82beea44dcd7300728a965a6cfe423467701ced"
+  },
+  "behavior": "Bounded4-entry exact-content/tag/header-mode parsing index; immutable text/tokens only. Matching packets decoded fresh; all validation still runs.",
+  "limits": [
+    "Observed timing applies to regression stage in one paired same-runner measurement, not guaranteed whole-Monitor savings.",
+    "No cached validation acceptance, clock, expiry, source truth, ancestry or betting decision.",
+    "No model/Champion/routine/scientific promotion, canonical prices/decisions/executions/money or task/cadence changes.",
+    "Source-preparation experiments/recovery pipeline remain separate QA in PR16; no production artifact consumption hook installed.",
+    "Next existing natural Monitor must demonstrate actual new-main bootstrap and timely full workflow/closure; CI does not prove unattended reliability.",
+    "Rollback, if required: a new revert of mergead3ea660b4b426f04f28c8b74fe2c9115607d51c restores the prior3files without resetting canonical history."
+  ]
+}
