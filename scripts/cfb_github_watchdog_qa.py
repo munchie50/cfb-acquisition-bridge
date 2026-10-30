@@ -36,9 +36,13 @@ def main():
     if args.fixture:
         runs=json.load(open(args.fixture))
     else:
-        req=urllib.request.Request(BASE+"/actions/runs?per_page=100",headers={"Accept":"application/vnd.github+json","User-Agent":"cfb-readonly-watchdog"})
-        with urllib.request.urlopen(req,timeout=15) as resp:
-            runs=json.load(resp)["workflow_runs"]
+        runs=[]
+        for path in TARGETS:
+            workflow=path.rsplit("/",1)[-1]
+            url=BASE+"/actions/workflows/"+workflow+"/runs?per_page=20&branch=main&event=schedule"
+            req=urllib.request.Request(url,headers={"Accept":"application/vnd.github+json","User-Agent":"cfb-readonly-watchdog"})
+            with urllib.request.urlopen(req,timeout=15) as resp:
+                runs.extend(json.load(resp)["workflow_runs"])
     for item in assess(runs,now):
         print(json.dumps(item,sort_keys=True))
 if __name__=="__main__":
