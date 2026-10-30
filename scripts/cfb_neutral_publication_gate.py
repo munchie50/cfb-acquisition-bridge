@@ -1,5 +1,6 @@
 """Source-derived Week7 neutral presentation schema; no source or betting acceptance."""
 import argparse, json, math, re
+from functools import lru_cache
 from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -169,6 +170,38 @@ def closed_conditional(row,as_of):
             and clock(row['planning_cutoff_utc'])<=clock(as_of))
 
 
+@lru_cache(maxsize=4)
+def _origin_packet_index(content,tag,strict_header):
+    """Index exact immutable text only; never cache a validation result or dict.
+
+    Changed bytes/tag/header mode get a different key. Returned records contain
+    immutable JSON tokens and raw JSON text; matching packets are decoded fresh
+    below, so callers cannot poison later lookups by mutating a returned row.
+    """
+    header=r'\n' if strict_header else r'[ \t]*\n'
+    records=[]
+    for match in re.finditer(r'^```'+tag+header+r'(.*?)^```[ \t]*$',content,re.M|re.S):
+        body=match.group(1)
+        packet=json.loads(body,object_pairs_hook=unique)
+        if not isinstance(packet,dict):raise TypeError('history packet must be an object')
+        records.append((json.dumps(packet.get('cycle_id'),sort_keys=True),
+                        json.dumps(packet.get('schema'),sort_keys=True),
+                        'cycle_id' not in packet,'schema' not in packet,body))
+    return tuple(records)
+
+
+def _matching_origin_packets(content,tag,cycle_id,schemas=None,strict_header=False):
+    records=_origin_packet_index(content,tag,strict_header)
+    # Preserve the old short-circuit field access/rejection behavior. In the
+    # state route every schema was read, but cycle IDs only for allowed schemas.
+    allowed=None if schemas is None else {json.dumps(s,sort_keys=True) for s in schemas}
+    if allowed is not None and any(r[3] for r in records):raise KeyError('schema')
+    selected=[r for r in records if allowed is None or r[1] in allowed]
+    if any(r[2] for r in selected):raise KeyError('cycle_id')
+    token=json.dumps(cycle_id,sort_keys=True)
+    return [json.loads(r[4],object_pairs_hook=unique) for r in selected if r[0]==token]
+
+
 def conditional_boundary(row,packet,market,decision,profile):
     """Validate retained Week8/Week9 history at its genuine originating source boundary.
 
@@ -181,9 +214,7 @@ def conditional_boundary(row,packet,market,decision,profile):
     if row['state_evidence']==packet['cycle_id']:
         raise ValueError('closed conditional cannot originate in current cycle')
     def origin(content,tag):
-        matches=[json.loads(m[1],object_pairs_hook=unique) for m in re.finditer(
-            r'^```'+tag+r'\n(.*?)^```[ \t]*$',content,re.M|re.S)]
-        matches=[p for p in matches if p['cycle_id']==row['state_evidence']]
+        matches=_matching_origin_packets(content,tag,row['state_evidence'],strict_header=True)
         if len(matches)!=1:raise ValueError('retained conditional origin missing/ambiguous')
         return matches[0]
     d=origin(decision,cfg['decision_tag']);m=origin(market,cfg['market_tag'])
@@ -209,8 +240,7 @@ def state_evidence(row,packet,content,kickoff,now,decision_tag=DECISION_TAG,gaps
         if blob(content[:PASS_ANCESTOR_CHARS])!=PASS_ANCESTOR:raise ValueError('historical decision ancestor missing/changed')
         if row['state']!='PASS' or HISTORICAL_PASS_TIMES.get(row['game_id'])!=row['state_recorded_at_utc']:raise ValueError('unqualified historical PASS evidence')
     else:
-        origins=[json.loads(m.group(1),object_pairs_hook=unique) for m in re.finditer(r'^```'+decision_tag+r'[ \t]*\n(.*?)^```[ \t]*$',content,re.M|re.S)]
-        origins=[p for p in origins if p['schema'] in WEEKLY_DECISION_SCHEMAS and p['cycle_id']==proof]
+        origins=_matching_origin_packets(content,decision_tag,proof,WEEKLY_DECISION_SCHEMAS)
         if len(origins)!=1:raise ValueError('state evidence origin missing/ambiguous')
         origin=origins[0];matches=[r for r in origin['rows'] if r['game_id']==row['game_id']]
         if len(matches)!=1 or any(matches[0][k]!=row[k] for k in ('state','state_recorded_at_utc','state_evidence')):raise ValueError('state evidence origin mismatch')
