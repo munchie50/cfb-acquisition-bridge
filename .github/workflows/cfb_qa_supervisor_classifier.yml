@@ -1,0 +1,19 @@
+name: CFB QA Supervisor Read-only Classifier
+on:
+  push:
+    branches: [qa/monitor-no-update-investigation-20261030]
+    paths:
+      - 'scripts/cfb_supervisor_readonly_qa.py'
+      - 'scripts/test_cfb_supervisor_readonly_qa.py'
+      - '.github/workflows/cfb_qa_supervisor_classifier.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run five no-network fixture tests
+        run: python3 -m unittest discover -s scripts -p 'test_cfb_supervisor_readonly_qa.py' -v
