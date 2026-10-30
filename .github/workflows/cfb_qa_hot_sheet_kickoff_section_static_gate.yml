@@ -60,6 +60,7 @@ on:
       - 'scripts/test_cfb_cbs_full_board_normalizer.py'
       - 'evidence/scheduler_qa/CFB_CBS_FULL_BOARD_TABLES_20261014T225920Z.md'
       - 'scripts/cfb_neutral_publication_gate.py'
+      - 'scripts/test_cfb_origin_text_index.py'
       - 'scripts/cfb_hot_sheet_readiness.py'
       - 'scripts/cfb_conditional_recommendation_profile.py'
       - 'scripts/test_cfb_conditional_recommendation_profile.py'
@@ -107,6 +108,8 @@ on:
     branches: [main]
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
+      - 'scripts/cfb_neutral_publication_gate.py'
+      - 'scripts/test_cfb_origin_text_index.py'
       - 'scripts/cfb_hot_sheet_readiness.py'
       - 'scripts/test_cfb_hot_sheet_readiness.py'
       - 'evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md'
@@ -184,7 +187,9 @@ jobs:
           python scripts/cfb_hot_sheet_current_decision_binding_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md --current-ledger evidence/operational/CFB_DECISION_WAIT_LEDGER.md > "$RUNNER_TEMP/cfb_current_sheet_binding.json"
           cat "$RUNNER_TEMP/cfb_current_sheet_binding.json"
       - name: Verify clean pinned runtime and immutable review ancestry
-        run: python scripts/cfb_runtime_checkout.py --destination "$RUNNER_TEMP/cfb_runtime_check" --expected-head "${{ github.sha }}"
+        # PR bootstrap checks accepted base; remaining checks use candidate workspace.
+        # Main pushes still pin their own accepted main revision.
+        run: python scripts/cfb_runtime_checkout.py --destination "$RUNNER_TEMP/cfb_runtime_check" --expected-head "${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.sha }}"
       - name: Recover authenticated accepted FIRST_FROZEN archive
         env:
           GH_TOKEN: ${{ github.token }}
@@ -219,7 +224,9 @@ jobs:
       - name: Exercise execution-aware current decision rejection boundaries
         run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_execution_aware_decision_gate.py
       - name: Exercise typed neutral publication chronology and decision boundaries
-        run: python -m unittest discover -s scripts -p 'test_cfb_neutral_publication*.py'
+        run: |
+          python -m unittest discover -s scripts -p 'test_cfb_neutral_publication*.py'
+          python -m unittest discover -s scripts -p test_cfb_origin_text_index.py
       - name: Exercise full-week source reconciliation and historical PASS boundaries
         run: python -m unittest discover -s scripts -p test_cfb_neutral_weekly_reconciliation.py
       - name: Replay authentic Monday legacy inputs through the neutral schema without operational writes
