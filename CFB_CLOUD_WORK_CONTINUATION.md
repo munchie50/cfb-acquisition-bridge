@@ -16,3 +16,12 @@ Observed source-stage sample3.589348sserial/0.354945sparallel;about3.23secondssa
 NEXT: recover the draftbranchcheckpoint and exactcloudresults before anynewwork. Add controlledcross-runartifactrestore and genuinelyinterruptedcloudrestartproof; then current-authoritymanifestadapter/source-rolecoverage and shadowcomparison. Complete representative timing/cost comparisons before productionreliance. Preserve existingworkingpath. No new ChatGPTscheduledtask or modelpromotion. Do not rerun successful oldnumericalstudies or thissmallbenchmark merely for anothergreenjob.
 
 For a new chat, 'Continue cloud preparation work' means start here, recover the branch's latest accepted checkpoint/PR, inspect currentmain authority for conflicts, and resume the exact next unfinished step. Never rely only on chatmemory or this historical status if latercommits supersede it.
+
+
+## Current continuation supersession — 2026-10-30T02:04:22Z
+
+Cross-runworkerrecovery is now VERIFIED in isolatedQA. Read latestbranchcheckpoint evidence/scheduler_qa/CFB_CLOUD_PREPARATION_CONTINUATION_20261030.md blob924b37a99b6b95225b4760b28c6d5e940afd355d at commitd1750f5f0b4777d795145fb81347da33fac51635. It supersedes the older NEXTinterruptedrecoveryinstructions above. DraftPR16 remainsdraft/unmerged.
+
+ActualcontrolledworkerSIGTERMafter1savedsource; separateActionsrun restoredthatartifact and fetchedonly3unfinishedsources,0failures. Originalcompletedresponsehash/clock preserved. Runs40989123458 and40989183168; exactresults evidence/scheduler_qa/CFB_CLOUD_CROSS_RUN_RECOVERY_RESULTS_20261030.json blob0ea3aa14e7f04b726ba48c9d1085c2734410a864 onworkbranch. BothartifactZIPs and5rawfiles independentlyverified. Initialtestfixturefailure40988964945 preserved and correctedwithoutweakeningworkerchecks. This is workerprocessrecovery whileouterjobuploadsartifact; wholejob/VM-lossrecovery isNOTproved.
+
+NEXT: current-authoritymanifestadapter and separatefullslatemarket/footballsource-rolecoverage checks, then representativeshadowruntime/coverage/costcomparison. Genericproductionrestartintegration and faster45stepvalidation remainunfinished. Do not repeatcompletedcloudrecoveryprobe; its deliberatelypinnedhistoricalcapture expires underTTL. No productionrollout, newChatGPTtask/cadence, changedFridaytiming, model/canonicaldecision/moneychange or paidacquisition. WholeMonitor time savings remain unmeasured.
