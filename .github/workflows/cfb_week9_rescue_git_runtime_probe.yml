@@ -49,6 +49,25 @@ jobs:
         run: |
           set -euo pipefail
           python scripts/cfb_recovery_consumer_preflight.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md
+      - name: Normalize live Friday public CBS source against 56 authentic Week9 identities
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin main
+          git show origin/main:evidence/operational/CFB_FRIDAY_20261030_LATE_CBS_PUBLIC_BOARD_CAPTURE.md > "$RUNNER_TEMP/cfb-late-cbs.md"
+          python scripts/cfb_cbs_full_board_normalizer.py \
+            --markdown "$RUNNER_TEMP/cfb-late-cbs.md" \
+            --lineage evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json \
+            --recovered-by 2026-10-30T23:43:31.761Z \
+            --profile WEEK9 --output "$RUNNER_TEMP/cfb-late-cbs-normalized.json"
+          python - "$RUNNER_TEMP/cfb-late-cbs-normalized.json" <<'PY'
+          import json,sys
+          d=json.load(open(sys.argv[1]))
+          c=d['coverage']
+          assert c['governed_games']==56 and c['matched_games']==56 and not c['missing_game_ids']
+          print('FRESH_PUBLIC_BOARD_IDENTITY_COVERAGE_PASS',c)
+          print('RESEARCH_ONLY_NO_NEW_CHAMPION_DECISIONS')
+          PY
       - name: Boundary statement
         if: always()
         run: |
