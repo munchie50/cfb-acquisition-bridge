@@ -1,0 +1,3529 @@
+{
+  "schema": "CFB_WEEK9_REMAINING_WINDOW_REVALIDATION_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261030T010121Z",
+  "as_of_utc": "2026-10-30T01:08:20.301277+00:00",
+  "source": {
+    "path": "evidence/operational/CFB_MARKET_MONITOR_20261030T010121Z_CBS_TABLES.md",
+    "blob": "60bb9ed117fe36004585ba01079f24f345cb6ddf",
+    "recovered_by": "2026-10-30T01:08:20.140876+00:00",
+    "acquisition": "ordinary public HTTPS complete HTML -> all56tables; relative URLs resolved, adjacent ML/Moneyline header formatting normalized; Final/Open quarantined",
+    "raw_html_sha256": "3c06738d5538263461de54a6f1875533ee56d3c2918d5712053fc3797d8f103e",
+    "raw_html_bytes": 2576957
+  },
+  "source_coverage": {
+    "governed_games": 56,
+    "matched_games": 56,
+    "source_team_rows": 112,
+    "future_games": 50,
+    "future_team_rows": 100,
+    "past_or_started_games": 6,
+    "missing_game_ids": []
+  },
+  "scope": "All35eligible future prediction decisions:34PASS reconsidered plus1existing unexpired conditional; preserved11exclusions,3elapsedPASS,3closedconditional,4expiredunpublished.32bounded currentPASS,2newconditional and1retainedconditional. Not exhaustive fresh all-player/stadium-hour research.",
+  "counts": {
+    "targets": 56,
+    "future_prediction_cases_reassessed": 35,
+    "future_pass": 32,
+    "new_prospective_conditionals": 2,
+    "retained_unexpired_conditional": 1,
+    "original_exclusions": 11,
+    "elapsed_prediction_pass": 3,
+    "historical_closed_conditionals": 3,
+    "expired_unpublished": 4
+  },
+  "cases": [
+    {
+      "game_id": "401869963",
+      "away_team": "Troy",
+      "home_team": "James Madison",
+      "state": "CONDITIONAL",
+      "temporal_status": "STARTED_OR_PAST_AT_CAPTURE",
+      "new_decision": true,
+      "classification": "ELAPSED_HISTORY_PRESERVED_NO_NEW_DECISION",
+      "current_offer": null,
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_JMU_TROY_UNDER_RECONSIDERATION_20261029T223446Z.json",
+        "commit": "2db2e279e43d7923a817cbcacbc9c9681b90acda",
+        "blob": "041181e1d9ab71e73a470438242224995df13c8c"
+      },
+      "retained_branch_note": "Any inherited branch observations are historical only, not live current offers; canonical current is unavailable.",
+      "retained_history_branches": [
+        {
+          "branch": "away_spread",
+          "line": 19.5,
+          "price": -110,
+          "disposition": "INDEPENDENTLY_RECONSIDERED_PASS"
+        },
+        {
+          "branch": "home_spread",
+          "line": -18.5,
+          "price": -110,
+          "disposition": "INDEPENDENTLY_RECONSIDERED_PASS"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 775,
+          "disposition": "INDEPENDENTLY_RECONSIDERED_PASS"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -1111,
+          "disposition": "INDEPENDENTLY_RECONSIDERED_PASS"
+        },
+        {
+          "branch": "over_total",
+          "line": 50.5,
+          "price": -115,
+          "disposition": "INDEPENDENTLY_RECONSIDERED_PASS"
+        },
+        {
+          "branch": "under_total",
+          "line": 51.5,
+          "price": -110,
+          "disposition": "INDEPENDENTLY_RECONSIDERED_CONDITIONAL_SELECTED"
+        }
+      ],
+      "retained_history_current_value_judgement": "Current side-specific CBS fallback: away+19.5/-110, home-18.5/-110; ML+775/-1111; over50.5/-115, under51.5/-110. CONTROLLED BETA: Troy at James Madison full-game UNDER 50.5 or higher, price -115 or better. The newly read Troy preview reports JMU leading rusher George Pettaway out and Crowder leaving a second consecutive game injured. Troy's low road scoring and passing limitations against JMU's run prevention favor fewer sustained scoring drives; Troy's pass rush and red-zone resistance provide a second route to limiting JMU. Prefer the total to laying 18.5 or buying the Troy upset. JMU's explosive passing, return game and short-field scoring can still beat the under. Identified FanDuel 50.5/-105 meets these discretionary limits; actual venue offer and material-news recheck remain pending. Qualitative judgment, not calibrated probability, EV, stake or an execution.",
+      "retained_history_continuing_justification": "Actual six-market prices reconsidered against retained dated game-specific primary-source research; no exhaustive new medical/weather clearance claimed. JMU and Baylor/UCF have newly read official previews. Supporting and opposing mechanisms compared rather than an unchanged-price text carry. PASS is no supported selection in this bounded review, not proof every branch has negative EV.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401862812",
+      "away_team": "Florida Atlantic",
+      "home_team": "North Texas",
+      "state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "temporal_status": "STARTED_OR_PAST_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "ELAPSED_HISTORY_PRESERVED_NO_NEW_DECISION",
+      "reason": "Immutable review window remains closed. Fresh display is chronology only; no cutoff extension, chase or retrospective publication.",
+      "current_offer": null,
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_branch_note": "Any inherited branch observations are historical only, not live current offers; canonical current is unavailable.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401862813",
+      "away_team": "Tulane",
+      "home_team": "Charlotte",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away-8.5/-108; home+9.5/-110; ML-345/+280; over47.5/-105; under47.5/-110. Tulane's reduced road lay is the strongest side inquiry, but Charlotte's passing/rushing improvement challenges separation even after excluding the six-turnover outlier. Charlotte's defensive concessions also oppose simply reversing to its points or outright upset. Neither winner premium is preferred from those opposing mechanisms. The total weighs Charlotte leakage against Tulane drive consistency; defensive/turnover scores are not ordinary pace.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": -8.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 9.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -345,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 280,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 47.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 47.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -8.5,
+        "away_spread_price": -108,
+        "home_spread": 9.5,
+        "home_spread_price": -110,
+        "away_ml": -345,
+        "home_ml": 280,
+        "over_total": 47.5,
+        "over_price": -105,
+        "under_total": 47.5,
+        "under_price": -110
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401856844",
+      "away_team": "Baylor",
+      "home_team": "UCF",
+      "state": "CONDITIONAL",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": true,
+      "classification": "RETAINED_UNEXPIRED_CONDITIONAL_REASSESSED",
+      "current_value_judgement": "UCF original home-points review remains inside its Oct30 17Zrecheck/18Zexpiry at this actual clock. Current fallback points/price are observed independently; original issued+2.5/-115limits and immutable rationale unchanged. Retained official run-prevention/Jenkins case versus Baylor pressure remains applicable; no new contrary personnel fact established. No claim of a newly identified quote, final clearance or venue execution. Recheck remains due at original noonCT, not already expired.",
+      "continuing_justification": "Actual six-market prices reconsidered against retained dated game-specific primary-source research; no exhaustive new medical/weather clearance claimed. JMU and Baylor/UCF have newly read official previews. Supporting and opposing mechanisms compared rather than an unchanged-price text carry. PASS is no supported selection in this bounded review, not proof every branch has negative EV.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": -1.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 2.5,
+          "price": -104,
+          "disposition": "RETAINED_CONDITIONAL_SELECTED"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -118,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 112,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 47.5,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 48.5,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -1.5,
+        "away_spread_price": -108,
+        "home_spread": 2.5,
+        "home_spread_price": -104,
+        "away_ml": -118,
+        "home_ml": 112,
+        "over_total": 47.5,
+        "over_price": -115,
+        "under_total": 48.5,
+        "under_price": -115
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_UCF_POINTS_RECONSIDERATION_20261029T223706Z.json",
+        "commit": "86473485fbf1db5d97673d54f923a184b3228ef8",
+        "blob": "0c436f203c0e59a415d305ffa750155e73c96d5b"
+      },
+      "other_main_market_judgement": "Baylor lay/winner requires overcoming UCF run prevention/home passing; UCF outright loses point protection. Neither total is preferred after separating overtime/short fields from ordinary drives. Main preference remains originalUCFpoints under unchanged limits, recheck/expiry still future."
+    },
+    {
+      "game_id": "401866451",
+      "away_team": "Kent State",
+      "home_team": "Sacramento State",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away-7.5/-112; home+8/-108; ML-305/+260; over46.5/-108; under46.5/-110. Kent passing is the strongest matchup mechanism, but defensive concessions and penalty-assisted prior production weaken paying for more than a touchdown of road separation. Sacramento's weak rushing/third downs oppose its cushion and outright winner. Kent's moneyline costs substantially for a weaker likely-win claim; it is not selected. Passing explosives challenge under while Sacramento drive friction challenges over at the actual low total.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": -7.5,
+          "price": -112,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 8.0,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -305,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 260,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 46.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 46.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -7.5,
+        "away_spread_price": -112,
+        "home_spread": 8.0,
+        "home_spread_price": -108,
+        "away_ml": -305,
+        "home_ml": 260,
+        "over_total": 46.5,
+        "over_price": -108,
+        "under_total": 46.5,
+        "under_price": -110
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401858278",
+      "away_team": "SMU",
+      "home_team": "Syracuse",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away-9.5/-122; home+10.5/-112; ML-380/+310; over57.5/-111; under58.5/-112. Syracuse's large cushion is the strongest counter to transferring SMU's second-half scoring burst into a full-game road cover. Syracuse defensive leakage nonetheless gives a concrete reason to decline the dog as well; neither expensive favorite winner nor dog upset is preferred. At the high side-specific totals, SMU finishing variability and Syracuse regulation/overtime distinction oppose a sustained-scoring inference, while receiving explosives oppose a confident under.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": -9.5,
+          "price": -122,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 10.5,
+          "price": -112,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -380,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 310,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 57.5,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 58.5,
+          "price": -112,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -9.5,
+        "away_spread_price": -122,
+        "home_spread": 10.5,
+        "home_spread_price": -112,
+        "away_ml": -380,
+        "home_ml": 310,
+        "over_total": 57.5,
+        "over_price": -111,
+        "under_total": 58.5,
+        "under_price": -112
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "home_spread_price": {
+          "prior": -111,
+          "current": -112
+        }
+      }
+    },
+    {
+      "game_id": "401859185",
+      "away_team": "Notre Dame",
+      "home_team": "Navy",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "ORIGINAL_EXCLUSION_NO_RECOMMENDATION",
+      "reason": "Original model exclusion preserved. Current market visibility does not create a frozen prediction, edge, recommendation or execution authority.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -30.5,
+        "away_spread_price": -108,
+        "home_spread": 30.5,
+        "home_spread_price": -110,
+        "away_ml": -6667,
+        "home_ml": 3500,
+        "over_total": 56.5,
+        "over_price": -111,
+        "under_total": 57.5,
+        "under_price": -118
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401856842",
+      "away_team": "Arizona",
+      "home_team": "Texas Tech",
+      "state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "EXPIRED_UNPUBLISHED_NO_REOPEN",
+      "reason": "Immutable review window remains closed. Fresh display is chronology only; no cutoff extension, chase or retrospective publication.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 3.5,
+        "away_spread_price": -110,
+        "home_spread": -3.5,
+        "home_spread_price": -108,
+        "away_ml": 145,
+        "home_ml": -166,
+        "over_total": 54.5,
+        "over_price": -110,
+        "under_total": 54.5,
+        "under_price": -108
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401858502",
+      "away_team": "Wisconsin",
+      "home_team": "Iowa",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+2.5/-102; home-1.5/-115; ML+110/-126; over36.5/-108; under36.5/-110. Iowa's shorter lay improves the favorite purchase materially after moving below a field goal, but known limited passing/split reps still restrict a separation claim after Wisconsin's pressure/run-defense breakout. Wisconsin's lost field-goal protection offsets its attractive recent performance; neither winner quote establishes a preferred winner after weighing Iowa defense against offensive limits. The very low total already requires suppression, while short fields/few successful drives challenge under. This is a substantive reconsideration of the changed key-number position, not the old field-goal/-118 rationale.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 2.5,
+          "price": -102,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -1.5,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -126,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 36.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 36.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 2.5,
+        "away_spread_price": -102,
+        "home_spread": -1.5,
+        "home_spread_price": -115,
+        "away_ml": 110,
+        "home_ml": -126,
+        "over_total": 36.5,
+        "over_price": -108,
+        "under_total": 36.5,
+        "under_price": -110
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "away_spread": {
+          "prior": 3.5,
+          "current": 2.5
+        },
+        "away_spread_price": {
+          "prior": -118,
+          "current": -102
+        },
+        "home_spread": {
+          "prior": -3.0,
+          "current": -1.5
+        },
+        "home_spread_price": {
+          "prior": -118,
+          "current": -115
+        },
+        "away_ml": {
+          "prior": 142,
+          "current": 110
+        },
+        "home_ml": {
+          "prior": -160,
+          "current": -126
+        },
+        "over_price": {
+          "prior": -110,
+          "current": -108
+        },
+        "under_price": {
+          "prior": -108,
+          "current": -110
+        }
+      }
+    },
+    {
+      "game_id": "401866452",
+      "away_team": "Bowling Green",
+      "home_team": "Western Michigan",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+13.5/-112; home-13/-111; ML+430/-500; over44.5/-108; under44.5/-111. Bowling Green points remain the strongest side alternative to buying two-touchdown WMU separation after major defensive concessions. BG's short-field-assisted passing leaves a weak ordinary offensive floor, so neither dog points nor its upset is selected; WMU's winner premium also lacks a strong purchase case. Defensive leakage favors over, but finishing dependence limits that thesis, while demonstrated passing challenges under. Both total directions are declined at the actual pair.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 13.5,
+          "price": -112,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -13.0,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 430,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -500,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 44.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 44.5,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 13.5,
+        "away_spread_price": -112,
+        "home_spread": -13.0,
+        "home_spread_price": -111,
+        "away_ml": 430,
+        "home_ml": -500,
+        "over_total": 44.5,
+        "over_price": -108,
+        "under_total": 44.5,
+        "under_price": -111
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401862816",
+      "away_team": "UAB",
+      "home_team": "South Florida",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "ORIGINAL_EXCLUSION_NO_RECOMMENDATION",
+      "reason": "Original model exclusion preserved. Current market visibility does not create a frozen prediction, edge, recommendation or execution authority.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 7.5,
+        "away_spread_price": -108,
+        "home_spread": -7.5,
+        "home_spread_price": -108,
+        "away_ml": 250,
+        "home_ml": -305,
+        "over_total": 41.5,
+        "over_price": -114,
+        "under_total": 42.5,
+        "under_price": -112
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401858503",
+      "away_team": "Illinois",
+      "home_team": "Maryland",
+      "state": "CONDITIONAL",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": true,
+      "classification": "NEW_PROSPECTIVE_PASS_RECONSIDERATION",
+      "current_value_judgement": "Actual CBS fallback: away-2.5/-110; home+2.5/-105; ML-126/+114; over52.5/-112; under54.5/-105. CONTROLLED BETA: Maryland +2.5 or higher at -125 or better versus Illinois. Maryland's protected passing/receiving and ball security offer a repeatable home scoring route against an Illinois offense that punted eight times in its latest win with the freshman setup. Illinois run production and strong coverage are substantive losing paths, but they do not establish road separation or erase the value of taking points. Prefer the cushion over requiring an outright upset. FanDuel +2.5/-110 meets the new limit. This is qualitative Beta, not a calibrated probability/EV or a bet execution.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": -2.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 2.5,
+          "price": -105,
+          "disposition": "CONDITIONAL_SELECTED"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -126,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 114,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 52.5,
+          "price": -112,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 54.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -2.5,
+        "away_spread_price": -110,
+        "home_spread": 2.5,
+        "home_spread_price": -105,
+        "away_ml": -126,
+        "home_ml": 114,
+        "over_total": 52.5,
+        "over_price": -112,
+        "under_total": 54.5,
+        "under_price": -105
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_MARYLAND_POINTS_RECONSIDERATION_20261030T010359Z.json",
+        "blob": "7864632f15634cb997819bc4c54dc0194fd2cbf9",
+        "commit": "3d07bd6f29fab6d960a57680518a2385df38ab9d"
+      },
+      "changed_main_market_fields": {
+        "away_ml": {
+          "prior": -128,
+          "current": -126
+        },
+        "over_total": {
+          "prior": 54.5,
+          "current": 52.5
+        },
+        "over_price": {
+          "prior": -108,
+          "current": -112
+        },
+        "under_price": {
+          "prior": -102,
+          "current": -105
+        }
+      }
+    },
+    {
+      "game_id": "401858277",
+      "away_team": "California",
+      "home_team": "NC State",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "ORIGINAL_EXCLUSION_NO_RECOMMENDATION",
+      "reason": "Original model exclusion preserved. Current market visibility does not create a frozen prediction, edge, recommendation or execution authority.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 7.5,
+        "away_spread_price": -108,
+        "home_spread": -7.0,
+        "home_spread_price": -112,
+        "away_ml": 220,
+        "home_ml": -265,
+        "over_total": 56.5,
+        "over_price": -108,
+        "under_total": 56.5,
+        "under_price": -108
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401858279",
+      "away_team": "Boston College",
+      "home_team": "Duke",
+      "state": "CONDITIONAL",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "EXPIRED_CONDITIONAL_HISTORY_ONLY",
+      "reason": "Original conditional review and fixed limit remain preserved after cutoff. Fresh display cannot revive it; a genuinely new prospective review would be required.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 7.5,
+        "away_spread_price": -114,
+        "home_spread": -7.0,
+        "home_spread_price": -110,
+        "away_ml": 235,
+        "home_ml": -278,
+        "over_total": 48.5,
+        "over_price": -105,
+        "under_total": 48.5,
+        "under_price": -114
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401858507",
+      "away_team": "Michigan",
+      "home_team": "Rutgers",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "ORIGINAL_EXCLUSION_NO_RECOMMENDATION",
+      "reason": "Original model exclusion preserved. Current market visibility does not create a frozen prediction, edge, recommendation or execution authority.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -14.5,
+        "away_spread_price": -115,
+        "home_spread": 15.5,
+        "home_spread_price": -110,
+        "away_ml": -699,
+        "home_ml": 570,
+        "over_total": 44.5,
+        "over_price": -122,
+        "under_total": 45.5,
+        "under_price": -115
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401856735",
+      "away_team": "Auburn",
+      "home_team": "Ole Miss",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+12.5/-112; home-10.5/-115; ML+380/-410; over57.5/-108; under57.5/-105. Ole Miss's smaller lay improves its pressure/passing case against Auburn protection failure. Auburn's strong recent opponent mix and the distinction between likely winner and separation still outweigh buying that margin; its own points/upset require protection against the same pressure. The cheaper Ole Miss winner is reweighed independently but remains an expensive way to express that bounded preference. Scoring asymmetry weakens over, while host explosives/short fields challenge under.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 12.5,
+          "price": -112,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -10.5,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 380,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -410,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 57.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 57.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 12.5,
+        "away_spread_price": -112,
+        "home_spread": -10.5,
+        "home_spread_price": -115,
+        "away_ml": 380,
+        "home_ml": -410,
+        "over_total": 57.5,
+        "over_price": -108,
+        "under_total": 57.5,
+        "under_price": -105
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "away_spread_price": {
+          "prior": -108,
+          "current": -112
+        },
+        "home_spread": {
+          "prior": -12.0,
+          "current": -10.5
+        },
+        "home_spread_price": {
+          "prior": -111,
+          "current": -115
+        },
+        "home_ml": {
+          "prior": -481,
+          "current": -410
+        },
+        "under_price": {
+          "prior": -108,
+          "current": -105
+        }
+      }
+    },
+    {
+      "game_id": "401871096",
+      "away_team": "Marshall",
+      "home_team": "Old Dominion",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away-2.5/-122; home+3/-115; ML-142/+122; over44.5/-115; under45.5/-106. Turner provides a short passing/rushing route and Wilkins demonstrated a ground route; either setup can compete, but ODU pressure challenges efficient separation at the expensive Marshall lay. ODU's field-goal cushion costs juice and still needs ordinary output against Marshall third-down prevention. Marshall's winner direction is stronger than ODU's upset, but neither winner price is selected. The higher CBS under inquiry improves scoring protection; weak ordinary drives support it, but the identified-book lower threshold and unqualified mixed-book higher field are not interchangeable. No final Turner clearance requirement is imposed.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": -2.5,
+          "price": -122,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 3.0,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -142,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 122,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 44.5,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 45.5,
+          "price": -106,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -2.5,
+        "away_spread_price": -122,
+        "home_spread": 3.0,
+        "home_spread_price": -115,
+        "away_ml": -142,
+        "home_ml": 122,
+        "over_total": 44.5,
+        "over_price": -115,
+        "under_total": 45.5,
+        "under_price": -106
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "home_spread_price": {
+          "prior": -112,
+          "current": -115
+        },
+        "home_ml": {
+          "prior": 128,
+          "current": 122
+        },
+        "over_total": {
+          "prior": 43.5,
+          "current": 44.5
+        },
+        "over_price": {
+          "prior": -112,
+          "current": -115
+        },
+        "under_total": {
+          "prior": 43.5,
+          "current": 45.5
+        },
+        "under_price": {
+          "prior": -105,
+          "current": -106
+        }
+      }
+    },
+    {
+      "game_id": "401869944",
+      "away_team": "Coastal Carolina",
+      "home_team": "Georgia State",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "ORIGINAL_EXCLUSION_NO_RECOMMENDATION",
+      "reason": "Original model exclusion preserved. Current market visibility does not create a frozen prediction, edge, recommendation or execution authority.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 5.5,
+        "away_spread_price": -112,
+        "home_spread": -5.0,
+        "home_spread_price": -108,
+        "away_ml": 172,
+        "home_ml": -200,
+        "over_total": 55.5,
+        "over_price": -112,
+        "under_total": 55.5,
+        "under_price": -105
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401856846",
+      "away_team": "Kansas State",
+      "home_team": "Colorado",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+2/-111; home-1.5/-108; ML+105/-125; over46.5/-110; under46.5/-105. Reported Johnson OUT/Knuth DOUBTFUL means the earlier Johnson-led cover case is not current. Barnett offers a known rushing role with little recent passing; Duff offers even less college passing evidence. Under either plausible setup, taking only a small KState cushion or its near-even moneyline lacks an established sustained scoring advantage; this is an explicit alternative-offense comparison, not a demand for first-snap certainty. Colorado's passing supports the short home favorite/winner, but its major defensive concessions allow that ground route and prevent a preferred purchase. Colorado explosives/short fields oppose under; KState contribution limits oppose over. Neither total is selected.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 2.0,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -1.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -125,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 46.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 46.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 2.0,
+        "away_spread_price": -111,
+        "home_spread": -1.5,
+        "home_spread_price": -108,
+        "away_ml": 105,
+        "home_ml": -125,
+        "over_total": 46.5,
+        "over_price": -110,
+        "under_total": 46.5,
+        "under_price": -105
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401862815",
+      "away_team": "Temple",
+      "home_team": "East Carolina",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "ORIGINAL_EXCLUSION_NO_RECOMMENDATION",
+      "reason": "Original model exclusion preserved. Current market visibility does not create a frozen prediction, edge, recommendation or execution authority.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 5.5,
+        "away_spread_price": -112,
+        "home_spread": -4.5,
+        "home_spread_price": -115,
+        "away_ml": 170,
+        "home_ml": -204,
+        "over_total": 49.5,
+        "over_price": -111,
+        "under_total": 49.5,
+        "under_price": -105
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401871097",
+      "away_team": "Louisiana Tech",
+      "home_team": "South Alabama",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away-5.5/-110; home+5.5/-108; ML-210/+185; over58.5/-108; under58.5/-110. Tech suppression is the strongest side mechanism, but the disrupted ODU opponent limits demanding nearly a touchdown in this road matchup. South Alabama passing inefficiency independently opposes points/upset, while the Tech winner premium buys an opponent-transfer assumption rather than a stronger researched margin. The high total makes under the stronger inquiry, but South Alabama's earlier scoring ceiling and field-position routes counter treating the latest poor attack as a stable baseline. Over lacks an ordinary two-offense case.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": -5.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 5.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -210,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 185,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 58.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 58.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -5.5,
+        "away_spread_price": -110,
+        "home_spread": 5.5,
+        "home_spread_price": -108,
+        "away_ml": -210,
+        "home_ml": 185,
+        "over_total": 58.5,
+        "over_price": -108,
+        "under_total": 58.5,
+        "under_price": -110
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "away_spread_price": {
+          "prior": -108,
+          "current": -110
+        },
+        "home_spread_price": {
+          "prior": -110,
+          "current": -108
+        },
+        "home_ml": {
+          "prior": 180,
+          "current": 185
+        }
+      }
+    },
+    {
+      "game_id": "401861966",
+      "away_team": "UConn",
+      "home_team": "Air Force",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+1.5/-120; home+1/-114; ML-105/-108; over51.5/-110; under51.5/-108. UConn rushing is the strongest side inquiry, but its small cushion/expensive juice and a different possession matchup reduce the purchase appeal even without assuming Medders remains unavailable. Air Force rushing supports competitiveness, while actual fumbles/current injury history and UConn ground production oppose buying its winner or small points. The separately displayed same-sign spreads are not a paired middle. Long possessions support under, opposed by efficient rushing/short fields at the lower total; over needs more sustained two-offense output.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 1.5,
+          "price": -120,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 1.0,
+          "price": -114,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 51.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 51.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 1.5,
+        "away_spread_price": -120,
+        "home_spread": 1.0,
+        "home_spread_price": -114,
+        "away_ml": -105,
+        "home_ml": -108,
+        "over_total": 51.5,
+        "over_price": -110,
+        "under_total": 51.5,
+        "under_price": -108
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "home_spread_price": {
+          "prior": -111,
+          "current": -114
+        }
+      }
+    },
+    {
+      "game_id": "401858283",
+      "away_team": "Stanford",
+      "home_team": "Louisville",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+22.5/-110; home-22.5/-110; ML+1100/-1818; over59.5/-114; under60.5/-110. Stanford rushing is the strongest dog mechanism, but road offensive weakness challenges its ability to use the large cushion. Louisville's stalled second-half drives also oppose laying more than three touchdowns or paying its huge winner premium; Stanford upset requires much more than its supported run route. The higher under threshold deserves inquiry, but passing/long-run explosives can score without long sustained drives. The over also lacks a dependable two-offense case; no score projection is manufactured from opponent-mix statistics.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 22.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -22.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 1100,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -1818,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 59.5,
+          "price": -114,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 60.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 22.5,
+        "away_spread_price": -110,
+        "home_spread": -22.5,
+        "home_spread_price": -110,
+        "away_ml": 1100,
+        "home_ml": -1818,
+        "over_total": 59.5,
+        "over_price": -114,
+        "under_total": 60.5,
+        "under_price": -110
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "away_spread_price": {
+          "prior": -108,
+          "current": -110
+        }
+      }
+    },
+    {
+      "game_id": "401871095",
+      "away_team": "Southern Miss",
+      "home_team": "UL Monroe",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away-3.5/-108; home+3.5/-111; ML-160/+145; over55.5/-110; under55.5/-106. Southern Miss rushing supports the visitor, but passing yards conceded challenge separation beyond a field goal. ULM's ordinary offensive weakness makes both its points and upset less attractive than simply doubting the favorite; Southern Miss winner cost remains unearned from removing unusual opponent scores. The lower totals require fresh consideration rather than reusing the previous split higher thresholds: rushing supports scoring, but return/defensive assistance and weak ULM drives limit over, while defensive leakage challenges under.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": -3.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 3.5,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -160,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 145,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 55.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 55.5,
+          "price": -106,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -3.5,
+        "away_spread_price": -108,
+        "home_spread": 3.5,
+        "home_spread_price": -111,
+        "away_ml": -160,
+        "home_ml": 145,
+        "over_total": 55.5,
+        "over_price": -110,
+        "under_total": 55.5,
+        "under_price": -106
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "away_ml": {
+          "prior": -162,
+          "current": -160
+        },
+        "over_total": {
+          "prior": 56.5,
+          "current": 55.5
+        },
+        "over_price": {
+          "prior": -114,
+          "current": -110
+        },
+        "under_total": {
+          "prior": 57.5,
+          "current": 55.5
+        },
+        "under_price": {
+          "prior": -112,
+          "current": -106
+        }
+      }
+    },
+    {
+      "game_id": "401860910",
+      "away_team": "Colorado State",
+      "home_team": "Utah State",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+6.5/-102; home-6.5/-110; ML+200/-225; over63.5/-105; under63.5/-112. CSU's cushion is the strongest side alternative, but major concessions across two high-output games defeat a reliable defensive-stop cover thesis. USU's weak latest ordinary output independently opposes laying the points; neither winner price repairs those opposing offensive/defensive issues. Under at the higher separate threshold is challenged by CSU repeated explosives/leakage, while USU drive friction opposes over at its own number. The two offers are not one synthetic total.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 6.5,
+          "price": -102,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -6.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 200,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -225,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 63.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 63.5,
+          "price": -112,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 6.5,
+        "away_spread_price": -102,
+        "home_spread": -6.5,
+        "home_spread_price": -110,
+        "away_ml": 200,
+        "home_ml": -225,
+        "over_total": 63.5,
+        "over_price": -105,
+        "under_total": 63.5,
+        "under_price": -112
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "over_total": {
+          "prior": 62.5,
+          "current": 63.5
+        },
+        "over_price": {
+          "prior": -114,
+          "current": -105
+        }
+      }
+    },
+    {
+      "game_id": "401858505",
+      "away_team": "Northwestern",
+      "home_team": "Oregon",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "ORIGINAL_EXCLUSION_NO_RECOMMENDATION",
+      "reason": "Original model exclusion preserved. Current market visibility does not create a frozen prediction, edge, recommendation or execution authority.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 3.5,
+        "away_spread_price": -110,
+        "home_spread": -3.5,
+        "home_spread_price": -110,
+        "away_ml": 140,
+        "home_ml": -160,
+        "over_total": 47.5,
+        "over_price": -106,
+        "under_total": 47.5,
+        "under_price": -111
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401856843",
+      "away_team": "Arizona State",
+      "home_team": "BYU",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+16.5/-110; home-16.5/-108; ML+570/-752; over48.5/-105; under48.5/-110. Mack/Harris offer a real ASU scoring route under returning Keene and support for a replacement; they are not discarded because the lineup is unsettled. However the road dog and its large upset payout still require repeatable passing/containment beyond that recent ground success. BYU must separate by more than two touchdowns and its expensive winner buys little protection against those same ASU explosives. Under faces Mack/Harris and BYU scoring even if a backup starts; over faces drive/line inconsistency even if Keene returns. Both scenarios are compared without requiring final clearance.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 16.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -16.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 570,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -752,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 48.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 48.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 16.5,
+        "away_spread_price": -110,
+        "home_spread": -16.5,
+        "home_spread_price": -108,
+        "away_ml": 570,
+        "home_ml": -752,
+        "over_total": 48.5,
+        "over_price": -105,
+        "under_total": 48.5,
+        "under_price": -110
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401856845",
+      "away_team": "Kansas",
+      "home_team": "TCU",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+6/-108; home-5.5/-112; ML+190/-210; over45.5/-110; under45.5/-108. Kansas rushing is the strongest dog mechanism, but TCU's retained defensive resistance challenges transferring a blocked-field-goal-assisted win into a cover/upset claim. TCU passing supports favorite/winner investigation, but Kansas's established ground route opposes mechanically buying the home lay or premium. At the low total, under has less scoring protection; TCU passing and Kansas rushing counter it, while defensive resistance tempers over. Neither close finish is converted into a probability.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 6.0,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -5.5,
+          "price": -112,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 190,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -210,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 45.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 45.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 6.0,
+        "away_spread_price": -108,
+        "home_spread": -5.5,
+        "home_spread_price": -112,
+        "away_ml": 190,
+        "home_ml": -210,
+        "over_total": 45.5,
+        "over_price": -110,
+        "under_total": 45.5,
+        "under_price": -108
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401864531",
+      "away_team": "UTEP",
+      "home_team": "North Dakota State",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+24.5/-108; home-24.5/-108; ML+1450/-2500; over42.5/-111; under43.5/-114. NDSU pressure against UTEP protection is the strongest side case, but NDSU's own poor recent rushing limits a four-touchdown lay and its huge winner premium. UTEP points/upset need drive survival against pressure even under a returning passer, not merely a large cushion. The added under point improves protection compared with the earlier lower offer, but concentrated short-field/nonoffensive scoring remains a concrete opposing mechanism at this low total. Over lacks ordinary drive support.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 24.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -24.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 1450,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -2500,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 42.5,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 43.5,
+          "price": -114,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 24.5,
+        "away_spread_price": -108,
+        "home_spread": -24.5,
+        "home_spread_price": -108,
+        "away_ml": 1450,
+        "home_ml": -2500,
+        "over_total": 42.5,
+        "over_price": -111,
+        "under_total": 43.5,
+        "under_price": -114
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "away_spread_price": {
+          "prior": -115,
+          "current": -108
+        },
+        "home_spread": {
+          "prior": -24.0,
+          "current": -24.5
+        },
+        "home_spread_price": {
+          "prior": -111,
+          "current": -108
+        },
+        "over_price": {
+          "prior": -110,
+          "current": -111
+        },
+        "under_total": {
+          "prior": 42.5,
+          "current": 43.5
+        },
+        "under_price": {
+          "prior": -108,
+          "current": -114
+        }
+      }
+    },
+    {
+      "game_id": "401858501",
+      "away_team": "Minnesota",
+      "home_team": "Indiana",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "ORIGINAL_EXCLUSION_NO_RECOMMENDATION",
+      "reason": "Original model exclusion preserved. Current market visibility does not create a frozen prediction, edge, recommendation or execution authority.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 20.5,
+        "away_spread_price": -108,
+        "home_spread": -20.5,
+        "home_spread_price": -110,
+        "away_ml": 1100,
+        "home_ml": -1429,
+        "over_total": 40.5,
+        "over_price": -114,
+        "under_total": 41.5,
+        "under_price": -118
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401871059",
+      "away_team": "Florida International",
+      "home_team": "Liberty",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "ORIGINAL_EXCLUSION_NO_RECOMMENDATION",
+      "reason": "Original model exclusion preserved. Current market visibility does not create a frozen prediction, edge, recommendation or execution authority.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 14.0,
+        "away_spread_price": -110,
+        "home_spread": -13.5,
+        "home_spread_price": -115,
+        "away_ml": 450,
+        "home_ml": -581,
+        "over_total": 45.5,
+        "over_price": -102,
+        "under_total": 45.5,
+        "under_price": -114
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401856734",
+      "away_team": "Florida",
+      "home_team": "Georgia",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+12.5/-110; home-12/-111; ML+390/-476; over56.5/-110; under56.5/-108. Jones's short passing/rushing route and a returning Philo passing route both offer Florida competitiveness, but neither transfers the Texas upset automatically to a large Georgia-front challenge. Georgia efficiency supports likely winner, while Florida pressure and neutral setting oppose paying for the large margin or expensive winner. Florida outright requires more sustained offense than covering. Over needs Florida contribution under either scenario; under faces Georgia efficiency and a plausible Florida response. No selection is made by shoulder status alone.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 12.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -12.0,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 390,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -476,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 56.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 56.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 12.5,
+        "away_spread_price": -110,
+        "home_spread": -12.0,
+        "home_spread_price": -111,
+        "away_ml": 390,
+        "home_ml": -476,
+        "over_total": 56.5,
+        "over_price": -110,
+        "under_total": 56.5,
+        "under_price": -108
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401858284",
+      "away_team": "Virginia",
+      "home_team": "Wake Forest",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+12.5/-108; home-12.5/-110; ML+400/-500; over48.5/-115; under49.5/-114. Virginia's points are the strongest inquiry on retained resistance, but protection/finishing failures challenge carrying the cushion against Wake passing and short fields. Wake's rest/passing support winner more than a large cover; its heavy moneyline cost and Virginia's weak upset path are declined separately. The lower over threshold is more accessible than the separate under, but ordinary Virginia contribution remains weak; under faces Wake explosives/favorable fields. Neither total is inferred from a single blowout.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 12.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -12.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 400,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -500,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 48.5,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 49.5,
+          "price": -114,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 12.5,
+        "away_spread_price": -108,
+        "home_spread": -12.5,
+        "home_spread_price": -110,
+        "away_ml": 400,
+        "home_ml": -500,
+        "over_total": 48.5,
+        "over_price": -115,
+        "under_total": 49.5,
+        "under_price": -114
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "over_total": {
+          "prior": 49.5,
+          "current": 48.5
+        },
+        "over_price": {
+          "prior": -105,
+          "current": -115
+        },
+        "under_price": {
+          "prior": -112,
+          "current": -114
+        }
+      }
+    },
+    {
+      "game_id": "401856848",
+      "away_team": "Utah",
+      "home_team": "Cincinnati",
+      "state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "EXPIRED_UNPUBLISHED_NO_REOPEN",
+      "reason": "Immutable review window remains closed. Fresh display is chronology only; no cutoff extension, chase or retrospective publication.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -7.0,
+        "away_spread_price": -112,
+        "home_spread": 7.5,
+        "home_spread_price": -112,
+        "away_ml": -270,
+        "home_ml": 235,
+        "over_total": 56.5,
+        "over_price": -105,
+        "under_total": 56.5,
+        "under_price": -110
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401864529",
+      "away_team": "New Mexico",
+      "home_team": "San Jos\u00e9 State",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away-14.5/-108; home+14.5/-110; ML-649/+520; over42.5/-108; under42.5/-108. UNM defense is the strongest mechanism, but its low ordinary offensive output does not justify a two-touchdown road lay or heavy winner premium. SJSU passing weakness independently opposes buying its points/upset. The low total reflects limited drives, while pick-six/short-field routes challenge under; over lacks sustained offense. Neither final-score assistance nor an unrefreshed original model supplies a current adjusted margin.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": -14.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 14.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -649,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 520,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 42.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 42.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -14.5,
+        "away_spread_price": -108,
+        "home_spread": 14.5,
+        "home_spread_price": -110,
+        "away_ml": -649,
+        "home_ml": 520,
+        "over_total": 42.5,
+        "over_price": -108,
+        "under_total": 42.5,
+        "under_price": -108
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401858508",
+      "away_team": "Nevada",
+      "home_team": "UCLA",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+22.5/-108; home-22.5/-110; ML+1400/-2000; over43.5/-118; under44.5/-118. UCLA drive suppression is the strongest side mechanism, but the very large lay demands much more than the frozen opinion; Nevada's opponent-specific win does not earn its points/upset either. The higher favorite winner premium is weighed and declined independently. The lower over offer is a separate price from under: Nevada limitations oppose over, while UCLA short fields and the cost of under weaken the low-scoring purchase. No unavailable alternate/team-total offer is guessed.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 22.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -22.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 1400,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -2000,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 43.5,
+          "price": -118,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 44.5,
+          "price": -118,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 22.5,
+        "away_spread_price": -108,
+        "home_spread": -22.5,
+        "home_spread_price": -110,
+        "away_ml": 1400,
+        "home_ml": -2000,
+        "over_total": 43.5,
+        "over_price": -118,
+        "under_total": 44.5,
+        "under_price": -118
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "home_spread_price": {
+          "prior": -108,
+          "current": -110
+        },
+        "home_ml": {
+          "prior": -1818,
+          "current": -2000
+        },
+        "over_total": {
+          "prior": 44.5,
+          "current": 43.5
+        },
+        "over_price": {
+          "prior": -102,
+          "current": -118
+        },
+        "under_price": {
+          "prior": -115,
+          "current": -118
+        }
+      }
+    },
+    {
+      "game_id": "401858506",
+      "away_team": "Purdue",
+      "home_team": "Penn State",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+11.5/-115; home-10/-114; ML+330/-400; over54.5/-114; under54.5/-105. Purdue's materially larger cushion improves its dog inquiry, but its major explosive concessions despite five takeaways challenge a turnover-independent cover or upset. Penn State receiving/pressure support favoritism, while the new lay and opponent rest still require substantial separation; its higher winner premium is not preferred. At the total, defensive explosives oppose under, but over requires converting drives rather than repeating exceptional turnover opportunities. More points are acknowledged without automatically turning them into value.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 11.5,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -10.0,
+          "price": -114,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 330,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -400,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 54.5,
+          "price": -114,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 54.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 11.5,
+        "away_spread_price": -115,
+        "home_spread": -10.0,
+        "home_spread_price": -114,
+        "away_ml": 330,
+        "home_ml": -400,
+        "over_total": 54.5,
+        "over_price": -114,
+        "under_total": 54.5,
+        "under_price": -105
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "away_spread": {
+          "prior": 9.5,
+          "current": 11.5
+        },
+        "away_spread_price": {
+          "prior": -105,
+          "current": -115
+        },
+        "home_spread": {
+          "prior": -9.5,
+          "current": -10.0
+        },
+        "home_spread_price": {
+          "prior": -111,
+          "current": -114
+        },
+        "away_ml": {
+          "prior": 280,
+          "current": 330
+        },
+        "home_ml": {
+          "prior": -345,
+          "current": -400
+        }
+      }
+    },
+    {
+      "game_id": "401856736",
+      "away_team": "South Carolina",
+      "home_team": "Oklahoma",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+3.5/-114; home-2.5/-128; ML+142/-160; over44.5/-105; under44.5/-110. Oklahoma's shorter lay improves the home purchase, but its strong prior offense faced a disrupted opponent and is not automatically a current margin forecast. Sellers mobility supports South Carolina, while its lost cushion and reliance on late stops/strip sack temper points/upset. Neither near-pickem winner price earns an independent preference from those mechanisms. Mobile explosives/favorable fields challenge under, and uneven sustained drives challenge over; the lower spread does not decide the total.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 3.5,
+          "price": -114,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -2.5,
+          "price": -128,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 142,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -160,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 44.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 44.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 3.5,
+        "away_spread_price": -114,
+        "home_spread": -2.5,
+        "home_spread_price": -128,
+        "away_ml": 142,
+        "home_ml": -160,
+        "over_total": 44.5,
+        "over_price": -105,
+        "under_total": 44.5,
+        "under_price": -110
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "away_spread": {
+          "prior": 4.5,
+          "current": 3.5
+        },
+        "away_spread_price": {
+          "prior": -105,
+          "current": -114
+        },
+        "home_spread": {
+          "prior": -4.5,
+          "current": -2.5
+        },
+        "home_spread_price": {
+          "prior": -110,
+          "current": -128
+        },
+        "away_ml": {
+          "prior": 164,
+          "current": 142
+        },
+        "home_ml": {
+          "prior": -192,
+          "current": -160
+        }
+      }
+    },
+    {
+      "game_id": "401869846",
+      "away_team": "App State",
+      "home_team": "Georgia Southern",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+5.5/-108; home-5.5/-108; ML+180/-213; over56.5/-110; under56.5/-105. App's productive Singleton passing setup supplies a dog path even without inventing current clearance; Southern pressure/run-TD prevention is direct counterevidence under that setup. Southern's lay asks for separation beyond home winner strength, so neither spread is selected; the winner quotes are also not preferred from those opposing mechanisms. Excluding overtime is necessary but does not decide scoring: pressure stalls drives while passing can create explosives. Neither total direction dominates at the actual threshold.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 5.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -5.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 180,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -213,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 56.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 56.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 5.5,
+        "away_spread_price": -108,
+        "home_spread": -5.5,
+        "home_spread_price": -108,
+        "away_ml": 180,
+        "home_ml": -213,
+        "over_total": 56.5,
+        "over_price": -110,
+        "under_total": 56.5,
+        "under_price": -105
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401858280",
+      "away_team": "Clemson",
+      "home_team": "Florida State",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "ORIGINAL_EXCLUSION_NO_RECOMMENDATION",
+      "reason": "Original model exclusion preserved. Current market visibility does not create a frozen prediction, edge, recommendation or execution authority.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 6.0,
+        "away_spread_price": -108,
+        "home_spread": -5.5,
+        "home_spread_price": -115,
+        "away_ml": 180,
+        "home_ml": -215,
+        "over_total": 49.5,
+        "over_price": -115,
+        "under_total": 50.5,
+        "under_price": -112
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401856847",
+      "away_team": "Oklahoma State",
+      "home_team": "Iowa State",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away-9.5/-111; home+9.5/-108; ML-345/+280; over57.5/-114; under58.5/-120. Oklahoma State passing supports visitor favoritism, but defensive concessions challenge laying this margin. Iowa State's cushion and upset need an ordinary offensive floor after its quarterback change, rather than simply fading a visitor comeback. The favorite winner premium does not remove that defensive risk. Host offensive limits oppose over; visitor explosives/leakage oppose the separate higher under, whose juice is weighed as cost rather than an automatic veto. No selection survives that combined comparison.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": -9.5,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 9.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -345,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 280,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 57.5,
+          "price": -114,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 58.5,
+          "price": -120,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -9.5,
+        "away_spread_price": -111,
+        "home_spread": 9.5,
+        "home_spread_price": -108,
+        "away_ml": -345,
+        "home_ml": 280,
+        "over_total": 57.5,
+        "over_price": -114,
+        "under_total": 58.5,
+        "under_price": -120
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401860909",
+      "away_team": "Washington State",
+      "home_team": "San Diego State",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+2.5/-105; home-2.5/-111; ML+114/-132; over48.5/-110; under49.5/-115. SDSU's Saunders passing is the strongest home mechanism, but interceptions/large concessions in his first start challenge the short lay or winner premium. WSU early competitiveness against Boise supports points, but the small cushion and uncertain drive consistency oppose a preferred dog/upset. Both share consecutive-week fatigue. The higher separate under faces explosive/leakage routes, while over still needs sustained scoring beyond a raw shootout. Fatigue is not a generic under adjustment.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 2.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -2.5,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 114,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -132,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 48.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 49.5,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 2.5,
+        "away_spread_price": -105,
+        "home_spread": -2.5,
+        "home_spread_price": -111,
+        "away_ml": 114,
+        "home_ml": -132,
+        "over_total": 48.5,
+        "over_price": -110,
+        "under_total": 49.5,
+        "under_price": -115
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "over_price": {
+          "prior": -108,
+          "current": -110
+        }
+      }
+    },
+    {
+      "game_id": "401858282",
+      "away_team": "Miami",
+      "home_team": "North Carolina",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away-14/-114; home+14.5/-115; ML-625/+480; over52.5/-110; under52.5/-108. Miami passing is the strongest side mechanism, but the road lay demands greater separation than the unchanged frozen opinion; UNC's receiving ceiling challenges margin while its defensive leakage prevents a preferred dog/upset. Miami winner cost is independently unattractive. The total weighs two passing paths against finishing/field-position/overtime distortion; under is not justified just by subtracting unusual scores and over is not justified just by those final totals.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": -14.0,
+          "price": -114,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 14.5,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -625,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 480,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 52.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 52.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -14.0,
+        "away_spread_price": -114,
+        "home_spread": 14.5,
+        "home_spread_price": -115,
+        "away_ml": -625,
+        "home_ml": 480,
+        "over_total": 52.5,
+        "over_price": -110,
+        "under_total": 52.5,
+        "under_price": -108
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401858281",
+      "away_team": "Georgia Tech",
+      "home_team": "Pittsburgh",
+      "state": "CONDITIONAL",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "EXPIRED_CONDITIONAL_HISTORY_ONLY",
+      "reason": "Original conditional review and fixed limit remain preserved after cutoff. Fresh display cannot revive it; a genuinely new prospective review would be required.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 7.5,
+        "away_spread_price": -108,
+        "home_spread": -7.5,
+        "home_spread_price": -108,
+        "away_ml": 250,
+        "home_ml": -295,
+        "over_total": 54.5,
+        "over_price": -110,
+        "under_total": 54.5,
+        "under_price": -105
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401856737",
+      "away_team": "Mississippi State",
+      "home_team": "Texas",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+20.5/-114; home-20/-108; ML+890/-1250; over50.5/-111; under50.5/-105. Taylor's sourced season-ending absence is a real change, not a pending clearance question. It supports Texas winner direction but does not automatically earn a twenty-point lay or a very expensive winner; MSU points/upset still need ordinary scoring without him. Under is the strongest scoring inquiry on the dog limitation, yet host explosives and defensive/short-field scores can supply much of the total. Over still needs more than assuming all pressure produces points. Neither total is selected.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 20.5,
+          "price": -114,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -20.0,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 890,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -1250,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 50.5,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 50.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 20.5,
+        "away_spread_price": -114,
+        "home_spread": -20.0,
+        "home_spread_price": -108,
+        "away_ml": 890,
+        "home_ml": -1250,
+        "over_total": 50.5,
+        "over_price": -111,
+        "under_total": 50.5,
+        "under_price": -105
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401858509",
+      "away_team": "Ohio State",
+      "home_team": "USC",
+      "state": "CONDITIONAL",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": true,
+      "classification": "NEW_PROSPECTIVE_PASS_RECONSIDERATION",
+      "current_value_judgement": "Actual CBS fallback: away-6.5/-115; home+7/-115; ML-244/+205; over51.5/-108; under51.5/-108. CONTROLLED BETA: Ohio State at USC full-game under51.5 or higher at -120 or better. Either Fahey or St.Clair replaces established Sayin passing continuity, while Ohio State's limited recent rushing and strong defense against USC's retained protection/rushing difficulties support fewer sustained scoring drives. This mechanism applies to either plausible backup and does not wait for final starter certainty. Explosive receivers and turnover-created short fields are the principal losing paths; they justify a tighter price allowance, not automatic rejection. FanDuel under51.5/-112 meets the new limit. Qualitative Beta, no calibrated EV/probability or execution.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": -6.5,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 7.0,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -244,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 205,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 51.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 51.5,
+          "price": -108,
+          "disposition": "CONDITIONAL_SELECTED"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -6.5,
+        "away_spread_price": -115,
+        "home_spread": 7.0,
+        "home_spread_price": -115,
+        "away_ml": -244,
+        "home_ml": 205,
+        "over_total": 51.5,
+        "over_price": -108,
+        "under_total": 51.5,
+        "under_price": -108
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_OHIO_STATE_USC_UNDER_RECONSIDERATION_20261030T010401Z.json",
+        "blob": "f93bc42dad561f914456ceff488ddd24d90ca580",
+        "commit": "5c146e041187b1afab695ac0efe44114ac75465c"
+      },
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401856733",
+      "away_team": "Missouri",
+      "home_team": "Arkansas",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away-9.5/-114; home+10/-111; ML-350/+300; over47.5/-110; under48.5/-105. The missed Oct17 Missouri loss is now incorporated: substantial Simmons passing movement with failed red-zone finishing, not a repeatable three-point baseline. Roberts remains a productive running route; credible current reporting supports Hardy returning, with limited-role and fuller-role scenarios both considered rather than requiring a guaranteed workload. Arkansas balance supports its cushion, but either Missouri ground setup plus passing movement directly challenges buying the dog; the Missouri lay/winner still require finishing and road separation not proved by old Oct10 suppression. Arkansas outright is the stronger claim and declined. The lowered separate totals weigh both offenses' movement against finishing/possession control; neither stale Missouri defense nor the blowout score decides under.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": -9.5,
+          "price": -114,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 10.0,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -350,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 300,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 47.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 48.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -9.5,
+        "away_spread_price": -114,
+        "home_spread": 10.0,
+        "home_spread_price": -111,
+        "away_ml": -350,
+        "home_ml": 300,
+        "over_total": 47.5,
+        "over_price": -110,
+        "under_total": 48.5,
+        "under_price": -105
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "over_total": {
+          "prior": 49.5,
+          "current": 47.5
+        },
+        "over_price": {
+          "prior": -108,
+          "current": -110
+        },
+        "under_total": {
+          "prior": 49.5,
+          "current": 48.5
+        },
+        "under_price": {
+          "prior": -110,
+          "current": -105
+        }
+      }
+    },
+    {
+      "game_id": "401858504",
+      "away_team": "Washington",
+      "home_team": "Nebraska",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+7.5/-105; home-7.5/-108; ML+255/-298; over49.5/-110; under50.5/-115. Nebraska defense/backfield limitations make under the strongest inquiry, but Washington vertical/extended-play threats under either plausible passer directly challenge containment. The separate higher under threshold improves protection while its actual cost matters; no first-snap QB certainty is required. Nebraska margin still needs offense despite backfield limits, and Washington points need scoring against that defense. The cheaper Nebraska winner and dog payout are reweighed but not preferred from close prior losses or shared bye rest. Over needs reliable two-offense production beyond explosives alone.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 7.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -7.5,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 255,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -298,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 49.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 50.5,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 7.5,
+        "away_spread_price": -105,
+        "home_spread": -7.5,
+        "home_spread_price": -108,
+        "away_ml": 255,
+        "home_ml": -298,
+        "over_total": 49.5,
+        "over_price": -110,
+        "under_total": 50.5,
+        "under_price": -115
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "away_ml": {
+          "prior": 250,
+          "current": 255
+        },
+        "home_ml": {
+          "prior": -310,
+          "current": -298
+        }
+      }
+    },
+    {
+      "game_id": "401862814",
+      "away_team": "Army",
+      "home_team": "Memphis",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "ORIGINAL_EXCLUSION_NO_RECOMMENDATION",
+      "reason": "Original model exclusion preserved. Current market visibility does not create a frozen prediction, edge, recommendation or execution authority.",
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 6.5,
+        "away_spread_price": -111,
+        "home_spread": -5.5,
+        "home_spread_price": -120,
+        "away_ml": 190,
+        "home_ml": -218,
+        "over_total": 59.5,
+        "over_price": -115,
+        "under_total": 60.5,
+        "under_price": -111
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401860908",
+      "away_team": "Texas State",
+      "home_team": "Boise State",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+11/-111; home-10.5/-115; ML+350/-426; over63.5/-111; under63.5/-105. Boise rushing suppression is the strongest mechanism, but a late surge after a tie through three quarters does not justify assuming this cover margin. Texas State return-assisted/low-output win challenges both its points and upset, while Boise winner cost remains expensive for the late-finishing argument. Under is supported by removing special-teams assistance but opposed by Boise passing/scoring ceiling and opponent volatility; over cannot simply extrapolate the late surge. Both total directions are compared independently.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 11.0,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -10.5,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 350,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -426,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 63.5,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 63.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 11.0,
+        "away_spread_price": -111,
+        "home_spread": -10.5,
+        "home_spread_price": -115,
+        "away_ml": 350,
+        "home_ml": -426,
+        "over_total": 63.5,
+        "over_price": -111,
+        "under_total": 63.5,
+        "under_price": -105
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401864530",
+      "away_team": "Northern Illinois",
+      "home_team": "UNLV",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away+24.5/-115; home-24/-111; ML+1300/-2222; over54.5/-105; under54.5/-111. UNLV dual-threat production supports favorite status, but holding this large margin conflicts with its own late defensive collapse. NIU points/upset need an offensive response, not merely fading that collapse, while the huge UNLV winner premium is unattractive. Over is the stronger inquiry from defensive concessions but still needs NIU drive contribution at the higher hurdle; under is not supported by a generic bye assumption. No parlay is preferred over independent singles.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": 24.5,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": -24.0,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 1300,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -2222,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 54.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 54.5,
+          "price": -111,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": 24.5,
+        "away_spread_price": -115,
+        "home_spread": -24.0,
+        "home_spread_price": -111,
+        "away_ml": 1300,
+        "home_ml": -2222,
+        "over_total": 54.5,
+        "over_price": -105,
+        "under_total": 54.5,
+        "under_price": -111
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {}
+    },
+    {
+      "game_id": "401860924",
+      "away_team": "Oregon State",
+      "home_team": "Fresno State",
+      "state": "PASS",
+      "temporal_status": "FUTURE_AT_CAPTURE",
+      "new_decision": false,
+      "classification": "CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT",
+      "current_value_judgement": "Actual CBS fallback: away-5.5/-115; home+6/-108; ML-220/+185; over58.5/-105; under58.5/-110. Oregon State passing/protection is the strongest visitor mechanism, but the actual lay/juice must overcome Fresno home defense and ball security. Fresno's larger cushion is weighed against OSU efficient explosive passing rather than selected from the original frozen home direction; neither winner quote is preferred. Under is the strongest scoring inquiry on both defenses, but passing efficiency and long-run concessions oppose relying on raw points-allowed averages. Over also lacks a stable two-offense baseline after accounting for opponent mix.",
+      "continuing_justification": "Current actual-price comparative review using retained dated primary research/source ancestry, completed seven-case follow-up and newly reacquired Maryland/Illinois/USC material. No exhaustive new medical/weather clearance, calibrated EV or negative-EV proof. Original state provenance retained; current assessment bound to this packet.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "line": -5.5,
+          "price": -115,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "line": 6.0,
+          "price": -108,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -220,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 185,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "line": 58.5,
+          "price": -105,
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "line": 58.5,
+          "price": -110,
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "current_offer": {
+        "book": "CBS Sports multi-book display",
+        "source_type": "UNIDENTIFIED_MIXED_BOOK_FALLBACK",
+        "source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+        "event_id": "EVENT_ID_UNAVAILABLE",
+        "retrieved_at": "2026-10-30T01:08:20.140876+00:00",
+        "retrieval_precision": "RECOVERED_BY",
+        "offer_updated_at": null,
+        "execution": "UNVERIFIED",
+        "away_spread": -5.5,
+        "away_spread_price": -115,
+        "home_spread": 6.0,
+        "home_spread_price": -108,
+        "away_ml": -220,
+        "home_ml": 185,
+        "over_total": 58.5,
+        "over_price": -105,
+        "under_total": 58.5,
+        "under_price": -110
+      },
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "changed_main_market_fields": {
+        "home_spread_price": {
+          "prior": -110,
+          "current": -108
+        },
+        "away_ml": {
+          "prior": -215,
+          "current": -220
+        }
+      }
+    },
+    {
+      "game_id": "401871057",
+      "away_team": "Jacksonville State",
+      "home_team": "New Mexico State",
+      "state": "PASS",
+      "temporal_status": "PAST_SOURCE_DATE_ONLY_EXACT_KICKOFF_UNAVAILABLE",
+      "new_decision": false,
+      "classification": "ELAPSED_HISTORY_PRESERVED_NO_NEW_DECISION",
+      "reason": "Retain the exact originating decision and clear the current pregame quote. Source Final/Open cells remain quarantined and are not authoritative outcomes.",
+      "current_offer": null,
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_branch_note": "Any inherited branch observations are historical only, not live current offers; canonical current is unavailable.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401871058",
+      "away_team": "Kennesaw State",
+      "home_team": "Middle Tennessee",
+      "state": "EXPIRED_UNPUBLISHED_REVIEW",
+      "temporal_status": "PAST_SOURCE_DATE_ONLY_EXACT_KICKOFF_UNAVAILABLE",
+      "new_decision": false,
+      "classification": "ELAPSED_HISTORY_PRESERVED_NO_NEW_DECISION",
+      "reason": "Retain the exact originating decision and clear the current pregame quote. Source Final/Open cells remain quarantined and are not authoritative outcomes.",
+      "current_offer": null,
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_branch_note": "Any inherited branch observations are historical only, not live current offers; canonical current is unavailable.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401871072",
+      "away_team": "Sam Houston",
+      "home_team": "Missouri State",
+      "state": "PASS",
+      "temporal_status": "PAST_SOURCE_DATE_ONLY_EXACT_KICKOFF_UNAVAILABLE",
+      "new_decision": false,
+      "classification": "ELAPSED_HISTORY_PRESERVED_NO_NEW_DECISION",
+      "reason": "Retain the exact originating decision and clear the current pregame quote. Source Final/Open cells remain quarantined and are not authoritative outcomes.",
+      "current_offer": null,
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_branch_note": "Any inherited branch observations are historical only, not live current offers; canonical current is unavailable.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    },
+    {
+      "game_id": "401871071",
+      "away_team": "Delaware",
+      "home_team": "Western Kentucky",
+      "state": "PASS",
+      "temporal_status": "PAST_SOURCE_DATE_ONLY_EXACT_KICKOFF_UNAVAILABLE",
+      "new_decision": false,
+      "classification": "ELAPSED_HISTORY_PRESERVED_NO_NEW_DECISION",
+      "reason": "Retain the exact originating decision and clear the current pregame quote. Source Final/Open cells remain quarantined and are not authoritative outcomes.",
+      "current_offer": null,
+      "derivatives": "No qualified offered alternate spread/total or team-total collection recovered. Unavailable/not evaluated; no guessed lines or player props and no all-product exhaustion claim.",
+      "parlay": "No preferred parlay over the independently supported singles; no qualified joint quote or invented correlation/probability/EV/stake. Portfolio trips/access remain unverified.",
+      "retained_branch_note": "Any inherited branch observations are historical only, not live current offers; canonical current is unavailable.",
+      "retained_history_note": "Inherited original/closed/expired/elapsed history, NOT a new current-price no-value assessment. Current offer, if present, is source observation only."
+    }
+  ],
+  "new_material_sources": [
+    {
+      "url": "https://www.wibw.com/2026/10/29/k-state-quarterback-avery-johnson-ruled-out-again-backup-jacob-knuth-doubtful/",
+      "recovered_by_utc": "2026-10-30T01:02:38Z",
+      "qualification": "CURRENT_REPORTING_NOT_DIRECT_CONFERENCE_FILE",
+      "finding": "Johnson out, Knuth doubtful; Barnett running role/limited passing and Duff lack of college appearance explicitly compared. No current clearance invented."
+    },
+    {
+      "url": "https://www.rotowire.com/cfootball/headlines/blake-barnett-news-ready-to-rock-versus-colorado-237403",
+      "recovered_by_utc": "2026-10-30T01:02:38Z",
+      "qualification": "SECONDARY_REPORT_OF_BIG12_AVAILABILITY",
+      "finding": "Barnett available per report, distinct from old day-to-day Johnson/Knuth-only scenario."
+    },
+    {
+      "url": "https://www.cbssports.com/college-football/news/ahmad-hardy-missouri-debut-2026-injury-gunshot-wound-arkansas/",
+      "recovered_by_utc": "2026-10-30T01:02:38Z",
+      "qualification": "CURRENT_REPORTING_NOT_DIRECT_SEC_FILE",
+      "finding": "Current reporting supports Hardy returning; workload remains unverified."
+    },
+    {
+      "url": "https://mutigers.com/news/2026/10/17/no-13-football-stumbles-at-no-9-ole-miss",
+      "recovered_by_utc": "2026-10-30T01:02:38Z",
+      "qualification": "OFFICIAL_PRIMARY_RECAP_READ",
+      "finding": "Missed intervening31-3loss included339passing yards/failed finishing before a bye; do not use Oct10as latest."
+    }
+  ]
+}
