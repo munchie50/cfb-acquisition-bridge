@@ -11,7 +11,7 @@ import re
 import subprocess
 from urllib.parse import urlsplit
 from cfb_cloud_source_prepare import SCHEMA, atomic_json, digest, url_host, validate
-from cfb_recovery_navigation_reader import read
+from cfb_recovery_navigation_reader import read, unique
 
 ACTIVE = {'CURRENT_PRICE_COMPARATIVE_PASS_REASSESSMENT',
           'NEW_PROSPECTIVE_PASS_RECONSIDERATION', 'RETAINED_UNEXPIRED_CONDITIONAL_REASSESSED'}
@@ -32,7 +32,7 @@ def identities(rows):
 
 
 def build(index, expected_index, authority_commit, loader, paths, market_url, as_of,
-          extra=None, expected_extra=None):
+          extra=None, expected_extra=None, approved_association_commits=()):
     if not re.fullmatch('[0-9a-f]{40}', authority_commit) or blob(index) != expected_index:
         raise ValueError('exact authority commit and index blob required')
     frontier = read(index, as_of)['frontier']
@@ -47,7 +47,7 @@ def build(index, expected_index, authority_commit, loader, paths, market_url, as
         if sha != pointers[path]['blob'] or (expected and sha != expected):
             raise ValueError('stale input or review binding: '+path)
         bindings[path] = sha
-        return json.loads(raw)
+        return json.loads(raw, object_pairs_hook=unique)
 
     lineage, research, review = [bound(paths[k]) for k in ('lineage', 'research', 'revalidation')]
     if not pointers[paths['revalidation']]['purpose'].startswith('CURRENT_COMPLETE_'):
@@ -141,9 +141,10 @@ def build(index, expected_index, authority_commit, loader, paths, market_url, as
     if extra is not None:
         if digest(extra) != expected_extra:
             raise ValueError('supplemental association SHA-256 mismatch')
-        supplement = json.loads(extra)
+        supplement = json.loads(extra, object_pairs_hook=unique)
         if (supplement['schema'] != 'CFB_QA_EXPLICIT_SOURCE_ASSOCIATIONS_V1'
-                or supplement['authority_commit'] != authority_commit
+                or (supplement['authority_commit'] != authority_commit
+                    and supplement['authority_commit'] not in approved_association_commits)
                 or supplement['revalidation_blob'] != bindings[paths['revalidation']]):
             raise ValueError('supplemental association authority mismatch')
         for item in supplement['links']:
@@ -155,7 +156,11 @@ def build(index, expected_index, authority_commit, loader, paths, market_url, as
             links[item['url']] = item['game_ids']
     unassigned = []
     for url, item in additions.items():
-        if url in links:
+        if 'game_ids' in item:
+            games = item['game_ids']
+            if not games or len(games)!=len(set(games)) or not set(games)<=selected:
+                raise ValueError('explicit material association outside eligible saved population')
+        elif url in links:
             games = links[url]
         elif url in planned and planned[url]['kind'] == 'football_material':
             games = planned[url]['game_ids']
@@ -188,6 +193,47 @@ def build(index, expected_index, authority_commit, loader, paths, market_url, as
     return plan, report
 
 
+def snapshot_plan(root, authority_commit, index_path, expected_index, paths, market_url,
+                  as_of, extra=None, expected_extra=None, require_current_head=True):
+    """Resolve accepted snapshot and unchanged live frontier before any fetch.
+
+    A request worker may use an accepted ancestor snapshot only while the exact
+    current frontier and every consumer binding remain unchanged. A producer
+    creating a new request must still name the freshly observed main head.
+    """
+    if not re.fullmatch('[0-9a-f]{40}', authority_commit):raise ValueError('exact main commit required')
+    def git(*args):
+        return subprocess.check_output(['git','-C',str(root),*args],stderr=subprocess.PIPE).decode()
+    current=git('rev-parse','refs/remotes/origin/main').strip()
+    if require_current_head and current!=authority_commit:
+        raise ValueError('fresh connector-observed main must match fetched origin/main')
+    git('merge-base','--is-ancestor',authority_commit,current)
+    def loader(commit):
+        def load(path):
+            if not re.fullmatch(r'evidence/[A-Za-z0-9_./-]+',path) or '..' in Path(path).parts:
+                raise ValueError('unsupported authority path')
+            return git('show',commit+':'+path)
+        return load
+    live,anchor=loader(current),loader(authority_commit)
+    index=live(index_path)
+    if blob(index)!=expected_index or anchor(index_path)!=index:
+        raise ValueError('request frontier changed; prepare a new current source plan')
+    from cfb_recovery_consumer_preflight import audit
+    audit(index,live,as_of)  # Full consumer closure, not selected-source hashes only.
+    approved=[]
+    if extra is not None:
+        if digest(extra)!=expected_extra:raise ValueError('supplemental association SHA-256 mismatch')
+        supplement=json.loads(extra,object_pairs_hook=unique)
+        parent=supplement['authority_commit']
+        if not re.fullmatch('[0-9a-f]{40}',parent):raise ValueError('exact association provenance required')
+        git('merge-base','--is-ancestor',parent,authority_commit)
+        if blob(loader(parent)(paths['revalidation']))!=supplement['revalidation_blob']:
+            raise ValueError('association parent does not contain its declared review')
+        approved.append(parent)
+    return build(index,expected_index,authority_commit,anchor,paths,market_url,as_of,
+                 extra,expected_extra,approved)
+
+
 if __name__ == '__main__':
     from datetime import datetime, timezone
     p = argparse.ArgumentParser(description=__doc__)
@@ -201,16 +247,7 @@ if __name__ == '__main__':
     p.add_argument('--expected-extra-sha256')
     p.add_argument('--output', type=Path, required=True)
     a = p.parse_args()
-    if not re.fullmatch('[0-9a-f]{40}', a.authority_commit): p.error('exact commit required')
-    def git(*args):
-        return subprocess.check_output(['git', '-C', str(a.root), *args], stderr=subprocess.PIPE).decode()
-    if git('rev-parse', 'refs/remotes/origin/main').strip() != a.authority_commit:
-        raise ValueError('fresh connector-observed main must match fetched origin/main')
-    def load(path):
-        if not re.fullmatch(r'evidence/[A-Za-z0-9_./-]+', path) or '..' in Path(path).parts:
-            raise ValueError('unsupported authority path')
-        return git('show', a.authority_commit+':'+path)
-    plan, report = build(load(a.index), a.expected_index_blob, a.authority_commit, load,
+    plan, report = snapshot_plan(a.root, a.authority_commit, a.index, a.expected_index_blob,
         {k:getattr(a, k) for k in ('lineage', 'research', 'revalidation')}, a.market_url,
         datetime.now(timezone.utc).isoformat(),
         a.extra_links.read_bytes() if a.extra_links else None, a.expected_extra_sha256)
