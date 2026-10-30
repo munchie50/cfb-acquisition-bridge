@@ -118,5 +118,25 @@ class ManifestTests(unittest.TestCase):
         self.change_frontier(lambda f: [q.update(blob='0'*40) for q in f['pointers'] if q['path']==p])
         with self.assertRaisesRegex(ValueError, 'market capture exact'): self.build()
 
+    def test_only_verified_ancestor_associations_survive_metadata_only_main_changes(self):
+        extra=json.dumps(self.extra).encode()
+        args=(self.index,adapter.blob(self.index),'b'*40,self.load,PATHS,URL,AT,extra,digest(extra))
+        with self.assertRaisesRegex(ValueError,'authority mismatch'):adapter.build(*args)
+        _,report=adapter.build(*args,approved_association_commits=[COMMIT])
+        self.assertEqual(report['status'],'READY_FOR_UNREVIEWED_COLLECTION_ONLY')
+        changed=copy.deepcopy(self.extra);changed['revalidation_blob']='0'*40
+        raw=json.dumps(changed).encode()
+        with self.assertRaisesRegex(ValueError,'authority mismatch'):
+            adapter.build(*args[:7],raw,digest(raw),approved_association_commits=[COMMIT])
+
+    def test_explicit_new_material_game_ids_remove_need_for_sidecar(self):
+        links={x['url']:x['game_ids'] for x in self.extra['links']}
+        self.replace_input('revalidation',lambda r:[s.update(game_ids=links[s['url']]) for s in r['new_material_sources']])
+        _,report=self.build(supplement=False)
+        self.assertEqual(report['new_material_urls_without_explicit_game_links'],[])
+        self.assertEqual(report['status'],'READY_FOR_UNREVIEWED_COLLECTION_ONLY')
+        self.replace_input('revalidation',lambda r:r['new_material_sources'][0].update(game_ids=['unknown']))
+        with self.assertRaisesRegex(ValueError,'outside eligible'):self.build(supplement=False)
+
 
 if __name__ == '__main__': unittest.main()
