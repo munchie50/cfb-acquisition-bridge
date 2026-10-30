@@ -1,0 +1,26 @@
+name: CFB QA GitHub Watchdog Live Read-only Probe
+on:
+  push:
+    branches: [qa/monitor-no-update-investigation-20261030]
+    paths:
+      - 'scripts/cfb_github_watchdog_qa.py'
+      - '.github/workflows/cfb_qa_github_watchdog_live_probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  live-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read public GitHub scheduled run receipts only
+        run: |
+          python3 scripts/cfb_github_watchdog_qa.py | tee /tmp/watchdog.jsonl
+          test "$(wc -l < /tmp/watchdog.jsonl)" -eq 3
+          python3 - <<'PY'
+          import json
+          rows=[json.loads(x) for x in open('/tmp/watchdog.jsonl')]
+          assert all(x['coverage']=='github_only' for x in rows)
+          print('WATCHDOG_LIVE_READONLY_PROBE_COMPLETED',len(rows))
+          PY
