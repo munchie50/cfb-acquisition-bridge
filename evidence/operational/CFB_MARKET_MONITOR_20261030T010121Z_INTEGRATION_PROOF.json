@@ -1,0 +1,80 @@
+{
+  "schema": "CFB_MANUAL_MONITOR_INTEGRATION_PROOF_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261030T010121Z",
+  "recorded_at_utc": "2026-10-30T01:26:30Z",
+  "result": "PASS_COMPLETE_MANUAL_COMPARATIVE_PUBLICATION_ONLY",
+  "source": {
+    "path": "evidence/operational/CFB_MARKET_MONITOR_20261030T010121Z_CBS_TABLES.md",
+    "blob": "60bb9ed117fe36004585ba01079f24f345cb6ddf",
+    "recovered_by": "2026-10-30T01:08:20.140876+00:00"
+  },
+  "decision_boundary": "2026-10-30T01:08:20.301277+00:00",
+  "counts": {
+    "targets": 56,
+    "future_prediction_cases_reassessed": 35,
+    "future_pass": 32,
+    "new_prospective_conditionals": 2,
+    "retained_unexpired_conditional": 1,
+    "original_exclusions": 11,
+    "elapsed_prediction_pass": 3,
+    "historical_closed_conditionals": 3,
+    "expired_unpublished": 4
+  },
+  "current_branch_values_verified": 210,
+  "pass_reason_bindings_verified": 32,
+  "source_research_scope": "Retained dated primary/source ancestry plus targeted current reacquisition/scenario comparisons; not exhaustive all-player/stadium-hour weather clearance or negative-EV proof.",
+  "canonical": {
+    "market": "69caf5b1184eedccc90be7562e4a3bd7cb8b7375",
+    "decision": "bb5a9cc83b6a1425dc2972ca84b33aa2bbbf8fa9",
+    "execution": "1a938f42e9f03e723bd50348f8a78dbd8b7098e9",
+    "scorecard": "fd6529a4ab27ac12d74ace4441005535c605cadb"
+  },
+  "sheet": {
+    "path": "evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-29_2008CT.md",
+    "blob": "f05173046e51ab9634d47b1be5fe90c2a5026c96"
+  },
+  "companion": {
+    "path": "evidence/operational/CFB_MARKET_MONITOR_20261030T010121Z_OPPORTUNITIES.md",
+    "blob": "1b2e1939f13cdd3bb4084521c4e16e7e16693ee5"
+  },
+  "audit": {
+    "path": "evidence/audits/CFB_MARKET_MONITOR_20261030T010121Z_AUDIT.md",
+    "blob": "74e68679e37a36e0a0d9becb084db384cf32c97f",
+    "commit": "daba00b8590add83e8ba4df45c49168af2c70c7f"
+  },
+  "register": {
+    "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+    "blob": "d107392078e89f3fdc86093a59db10d55a9a2cd8"
+  },
+  "index": {
+    "blob": "c82beea44dcd7300728a965a6cfe423467701ced",
+    "commit": "6893425743fe7782bd2127966bc5d951ff0a715d",
+    "actual_saved_preflight": "PASS",
+    "verified_pointers": 332,
+    "concurrency_reconciliation": "Our validated336pointerproposal was NOT written: freshSHAguard observed competing accepted332pointerfrontier. Exact current readback/actualsavedpreflight reuse it; no overwrite or retroactive claim of our proposal being written.",
+    "unwritten_336_pointer_proposal_preflight": "PASS; write not issued after competing332frontier detected; not claimed as the accepted write"
+  },
+  "ci": {
+    "run_id": 40984913475,
+    "job_id": 123833566068,
+    "head_sha": "6893425743fe7782bd2127966bc5d951ff0a715d",
+    "conclusion": "success",
+    "completed_steps": 45,
+    "failed": 0,
+    "skipped": 0,
+    "decoded_log_blob": "5ba9e3114099ce4660397c546ec22728750866a1",
+    "decoded_logs_independently_read": true,
+    "original_frozen_numeric_fields": 135
+  },
+  "independent_saved_view": {
+    "verdict": "PASS_SAVED_PUBLICATION_INTEGRITY_ONLY",
+    "audit_clock": "2026-10-30T01:20:43.447362+00:00",
+    "operational_exceptions": [],
+    "elapsed_current_quote_game_ids": [],
+    "overdue_open_decision_game_ids": [],
+    "not_a_fresh_quote_or_execution_certificate": true
+  },
+  "fresh_main_readback": "6893425743fe7782bd2127966bc5d951ff0a715d",
+  "remaining": "Next natural Monitor must demonstrate substantive price/maturity reasoning, correct dates and useful timely delivery/rechecks; current operator update/venue/execution and predictive/financial benefit unproved. Quotes age; CI does not refresh them.",
+  "boundaries": "3active conditional choices and32futureboundedPASS; preserve11exclusions/3elapsedPASS/3closedconditional/4expired-unpublished. Old issuedlimits/cutoffs exact;2newreviewlimits independent. No paidFirecrawl, newtask/cadence, model/frozen/Champion, wager/money change."
+}
