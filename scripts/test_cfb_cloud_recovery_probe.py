@@ -1,5 +1,6 @@
 """Actual process termination over synthetic responses; no external requests."""
 import json
+import os
 from pathlib import Path
 import tempfile
 import unittest
@@ -26,7 +27,8 @@ class RecoveryTests(unittest.TestCase):
     def capture(self):
         return probe.capture(self.raw, self.sha, self.out, fetch=self.fetch, clock=lambda: self.now)
 
-    def restore(self, commit='LOCAL_TEST'):
+    def restore(self, commit=None):
+        commit = commit or os.environ.get('GITHUB_SHA', 'LOCAL_TEST')
         return probe.restore(self.raw, self.sha, self.out, commit,
                              fetch=self.fetch, clock=lambda: self.now)
 
