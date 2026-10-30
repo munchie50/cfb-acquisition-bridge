@@ -1,0 +1,37 @@
+name: CFB Requested Source Preparation QA
+on:
+  push:
+    branches: [qa/cloud-source-preparation-20261030]
+    paths: ['evidence/source_preparation_qa_requests/*.json']
+permissions:
+  contents: read
+concurrency:
+  group: cfb-source-preparation-qa-requests
+  cancel-in-progress: false
+jobs:
+  requested-source-preparation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check request and consumer identity, freshness and authority failures
+        run: python -m unittest discover -s scripts -p test_cfb_source_preparation_request.py -v
+      - name: Regenerate approved request plan and collect unreviewed source responses
+        env:
+          CFB_BEFORE: ${{ github.event.before }}
+          CFB_AFTER: ${{ github.sha }}
+        run: python scripts/cfb_source_preparation_request.py --before "$CFB_BEFORE" --after "$CFB_AFTER" --output source-prep-output
+      - name: Preserve request, clocks, partial failures and complete raw responses
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-source-preparation-request-${{ github.run_id }}-${{ github.run_attempt }}
+          path: source-prep-output/
+          if-no-files-found: error
+          retention-days: 30
