@@ -1,0 +1,61 @@
+{
+  "schema": "CFB_NUMBER_PRICE_MAINTENANCE_PROOF_V1",
+  "cycle_id": "CFB_NUMBER_PRICE_REVIEW_20261030T004657Z",
+  "recorded_at_utc": "2026-10-30T01:00:12Z",
+  "scope": "Prospective instruction/QA maintenance only; live four-case/full-slate work remains pending",
+  "contract": {
+    "path": "evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md",
+    "blob": "62d9ce5d8b1c3015410c6518025277a3e0321278",
+    "commit": "6df13a1c70725d8f6392074fd85e05522c38bff0"
+  },
+  "register": {
+    "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+    "blob": "d08d941798b18e929ae1445cc4cfbd7f01663382",
+    "commit": "7077111dcd46414c7c69bd365af0ac854d640cf8"
+  },
+  "audit": {
+    "path": "evidence/audits/CFB_NUMBER_PRICE_REVIEW_20261030T004657Z_AUDIT.md",
+    "blob": "4497b78eeb3da723a88a042bbd45743a334b1eb8",
+    "commit": "de0b30b119853d27272220f67c1ce9394f450206"
+  },
+  "clock_correction": {
+    "path": "evidence/audits/CFB_NUMBER_PRICE_REVIEW_20261030T004657Z_CLOCK_CORRECTION.md",
+    "blob": "4e966927c6c719e3f4f3047dcb23f4607f15b453",
+    "commit": "d5a25b4cdbff357943d25fb438a7bb3c58fc59a7"
+  },
+  "index": {
+    "blob": "28afb61a566ae782ce896c24ed77633ac06c1f9d",
+    "commit": "8b635770860b0ec0ec559c9deafd2a558fc2b8e3",
+    "proposed_preflight": "PASS",
+    "independently_saved_preflight": "PASS",
+    "pointers": 324
+  },
+  "task": {
+    "id": "6ab42966c2e081919f956c941e6e0fff",
+    "prompt_appends": 2,
+    "independent_exact_readbacks": true,
+    "identity_schedule_timezone_timing_enabled_unchanged": true,
+    "other_tasks_not_mutated": true,
+    "natural_adoption": "PENDING"
+  },
+  "synthetic_minimum_price_compatibility": [
+    -110,
+    -115,
+    -120,
+    -130,
+    -150
+  ],
+  "ci": {
+    "run_id": 40982164671,
+    "job_id": 123824561403,
+    "head_sha": "8b635770860b0ec0ec559c9deafd2a558fc2b8e3",
+    "conclusion": "success",
+    "completed_steps": 45,
+    "failed": 0,
+    "skipped": 0,
+    "decoded_log_blob": "1c0f1073de05dbc4cd524a1446f67ee485a946ae",
+    "original_frozen_numeric_fields": 135
+  },
+  "important_correction": "Evening00:55Z misclassified UCF Oct30 18Z cutoff as past; unchanged per-case readiness at00:57:04Z correctly shows conditional window open. Aggregate open_games=0 is not all-window expiry proof. Original Evening failure preserved.",
+  "no_change": "No existing issued caps/cutoffs, software, forecasts/model, canonical market/decision/sheet, tasks/cadence, money, wager or fresh price changed by maintenance"
+}
