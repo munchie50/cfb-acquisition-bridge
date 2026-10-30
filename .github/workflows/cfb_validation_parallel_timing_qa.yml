@@ -1,0 +1,126 @@
+name: CFB Unchanged Validation Parallel Timing QA
+on:
+  push:
+    branches: [qa/cloud-source-preparation-20261030]
+    paths: ['.github/workflows/cfb_validation_parallel_timing_qa.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: cfb-validation-parallel-timing-qa
+  cancel-in-progress: false
+env:
+  CFB_ACCEPTED_FREEZE_ARCHIVE: ${{ github.workspace }}/validation-archives/cfb_first_frozen.zip
+  CFB_ACCEPTED_REFRESH_ARCHIVE: ${{ github.workspace }}/validation-archives/cfb_accepted_refresh.zip
+jobs:
+  archives:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify original inventory and comparison rejection controls
+        run: python -m unittest discover -s scripts -p test_cfb_validation_timing_qa.py -v
+      - name: Fetch each immutable archive once and verify original accepted digests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir validation-archives
+          gh api repos/$GITHUB_REPOSITORY/actions/artifacts/10897612260/zip > validation-archives/cfb_first_frozen.zip
+          gh api repos/$GITHUB_REPOSITORY/actions/artifacts/11423386216/zip > validation-archives/cfb_accepted_refresh.zip
+          echo '772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf  validation-archives/cfb_first_frozen.zip' | sha256sum -c -
+          echo '674501a82f6eb207b58b30c483910304c881b3ce29ba2506258152455cb6047b  validation-archives/cfb_accepted_refresh.zip' | sha256sum -c -
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-validation-immutable-archives
+          path: validation-archives/
+          retention-days: 7
+  serial:
+    needs: archives
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: cfb-validation-immutable-archives
+          path: validation-archives
+      - name: Reverify exact archives on serial runner
+        run: |
+          echo '772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf  validation-archives/cfb_first_frozen.zip' | sha256sum -c -
+          echo '674501a82f6eb207b58b30c483910304c881b3ce29ba2506258152455cb6047b  validation-archives/cfb_accepted_refresh.zip' | sha256sum -c -
+      - name: Measure original serial regression stage
+        run: python scripts/cfb_validation_timing_qa.py measure --group serial --output timing
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-validation-timing-serial
+          path: timing/
+          if-no-files-found: error
+          retention-days: 30
+  parallel:
+    needs: archives
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        group: [week8, week9, frozen, presentation]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: cfb-validation-immutable-archives
+          path: validation-archives
+      - name: Reverify exact archives on each parallel runner
+        run: |
+          echo '772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf  validation-archives/cfb_first_frozen.zip' | sha256sum -c -
+          echo '674501a82f6eb207b58b30c483910304c881b3ce29ba2506258152455cb6047b  validation-archives/cfb_accepted_refresh.zip' | sha256sum -c -
+      - name: Measure independent regression group
+        env:
+          CFB_QA_GROUP: ${{ matrix.group }}
+        run: python scripts/cfb_validation_timing_qa.py measure --group "$CFB_QA_GROUP" --output timing
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-validation-timing-${{ matrix.group }}
+          path: timing/
+          if-no-files-found: error
+          retention-days: 30
+  comparison:
+    needs: [serial, parallel]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: cfb-validation-timing-*
+          path: timing-results
+      - name: Require identical commit, protected inputs, inventory and test counts
+        run: python scripts/cfb_validation_timing_qa.py compare --results timing-results --output comparison
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-validation-timing-comparison
+          path: comparison/
+          if-no-files-found: error
+          retention-days: 30

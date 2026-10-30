@@ -1,0 +1,36 @@
+name: CFB Cloud Source Preparation QA
+on:
+  push:
+    branches: [qa/cloud-source-preparation-20261030]
+    paths: ['.github/workflows/cfb_cloud_source_preparation_qa.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: cfb-cloud-source-preparation-qa
+  cancel-in-progress: false
+jobs:
+  source-preparation-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test interrupted, corrupt, stale, failed and conflicting checkpoints
+        run: python -m unittest discover -s scripts -p test_cfb_cloud_source_prepare.py -v
+      - name: Compare serial, four-worker and resumed collection on explicit retained URLs
+        run: >-
+          python scripts/cfb_cloud_source_benchmark.py
+          --input evidence/scheduler_qa/CFB_CLOUD_SOURCE_QA_INPUT_20261030.json
+          --expected-sha256 f96b129bfafd019607c54d48614aabc6dcd0feaa1d17d4736f0ea78fc2fefd73
+          --output source-preparation-qa
+      - name: Preserve complete responses, failures, clocks and timing comparison
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-cloud-source-preparation-qa
+          path: source-preparation-qa/
+          if-no-files-found: error
+          retention-days: 30
