@@ -52,3 +52,16 @@ The second command makes live requests. Use a recovered directory instead of /tm
 ## Continuation reporting
 
 Always state BUILT / EXECUTED / VERIFIED separately. Update this checkpoint on this branch after real new evidence, preserve historical failures and link exact results. Keep a short root-level main continuation pointer/draftPR so a fresh chat can find the branch without rebuilding from memory. No new tracking framework is needed. A user asking whether the work is worthwhile has not cancelled the authorized QA work; answer briefly and continue useful independent work.
+
+
+## Superseding verified milestone — 2026-10-30T01:53:56Z
+
+State: BUILT / EXECUTED IN GITHUB CLOUD / BOUNDED READBACK VERIFIED. Still QA, not production/shadow-ready. DraftPR16: https://github.com/munchie50/cfb-acquisition-bridge/pull/16.
+
+Run40988321126/job123844437594 at commitd15d6ab98ecdcc8edf74ca2ddbd46d6929bd0dd2 completed9exposedsteps successfully.13boundarytests passed in cloud. Decoded logs independently read. Artifact12948370503 ZIP SHA256055a35b825f1b401be06bc00533d7c04f801d70d880972682ef02144f8e40281 downloaded independently and verified; all4parallel raw-response hashes/sizes matched. Source manifests preserve actual clocks, URLs, HTTPstatuses and bytes. Durable result: evidence/scheduler_qa/CFB_CLOUD_PREPARATION_QA_RESULTS_20261030.json blob7cb887ccc90398fc1599d4c60ce12cbf96d26069.
+
+Observed collector times: serial3.589348s, parallel0.354945s, same-runresume0.005753s;4/4sources fetched in both initialpasses,0failures. Downloaded artifact then resumed in a separate local process at01:52:50.053402Z:0newfetches/4reused/0failures,0.005574s. Original acquisition clocks retained. This is real cloud-to-local artifact recovery, NOT an interruptedcloudinvocation or automatically restored secondActionsrun. The rawresponses are unreviewedQAevidence; no model/canonicaldecisioningestion.
+
+Interpretation: source-stage sample saves about3.23seconds versus that serialsample. One sequentialserialthenparallelmeasurement is confounded by endpointwarming/networkvariability; the observed10.112ratio is NOT a causalparallelismestimate or fullMonitorforecast. No demonstrated minutes saved in wholeproduction. Current measured benefit is correct checkpointreuse and bounded collector efficiency. Largerrepresentativeshadowtiming and analyticalcost remain to be measured. No productionpromotion, schedulechange or accelerated45stepvalidation implemented.
+
+NEXT EXACT STEP: wire controlled artifactrestore into a second isolatedActionsrun and demonstrate a genuine interruptedcloudcheckpoint restart. Then build current-authority manifestadapter/fullsource-role coverage, shadowcompare usefulness and repeated sourcecost, before any productionproposal. Fastervalidation remains separate unfinishedphase. Do NOT rerun this completedfourURLbenchmark merely to manufacture moregreenproof. Recover these exact existingresults first; checkpoint/sourceage gates must still run on later reuse.
