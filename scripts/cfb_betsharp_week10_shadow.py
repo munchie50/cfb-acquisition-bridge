@@ -22,6 +22,18 @@ def discover(markdown, unpriced_queue, day="2026-11-07"):
             if source_slug == day+"-"+away+"-at-"+home:
                 candidates.append({"game_id": row["game_id"], "source_slug": source_slug,
                                    "strict_full_name_match": True, "identity_verified": False})
+    # BetSharp adds mascots to school names; prefix pairs are discovery only.
+    mascot_candidates = []
+    for source_slug in sorted(slugs):
+        matches = []
+        for (away, home), row in by_pair.items():
+            if (source_slug.startswith(day+"-"+away+"-")
+                    and "-at-"+home+"-" in source_slug):
+                matches.append(row)
+        if len(matches) == 1:
+            mascot_candidates.append({"game_id": matches[0]["game_id"],
+                                      "source_slug": source_slug,
+                                      "identity_verified": False})
     targets = []
     for row in unpriced_queue:
         # Discovery evidence is not an identity join; requires separate canonical validation.
@@ -30,6 +42,8 @@ def discover(markdown, unpriced_queue, day="2026-11-07"):
     return {"status": "SHADOW_DISCOVERY_ONLY", "day": day,
             "discovered_source_game_urls": sorted("https://betsharp.com/ncaaf/game/"+x for x in slugs),
             "source_urls_count": len(slugs), "unpriced_targets": targets,
+            "mascot_prefix_candidates": mascot_candidates,
+            "mascot_prefix_candidate_count": len(mascot_candidates),
             "strict_name_candidates": candidates, "strict_name_candidate_count": len(candidates),
             "source_game_urls_exceed_canonical_slate": len(slugs) > 63,
             "unverified_cross_league_rows_possible": True,
