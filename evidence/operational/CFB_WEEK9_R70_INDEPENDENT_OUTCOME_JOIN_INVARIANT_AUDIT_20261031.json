@@ -1,0 +1,22 @@
+{
+  "schema": "CFB_WEEK9_R70_INDEPENDENT_OUTCOME_JOIN_INVARIANT_AUDIT",
+  "source": "evidence/operational/CFB_WEEK9_R69_INCREMENTAL_FROZEN_OUTCOME_RECONCILIATION_20261031.json",
+  "source_blob": "e0f1bda9fc16ef0440db8b5746928ed4c258c350",
+  "counts": {
+    "total": 56,
+    "modeled": 45,
+    "excluded": 11,
+    "final": 26,
+    "pending": 30
+  },
+  "checks": {
+    "unique_game_ids": true,
+    "cohort_partition": true,
+    "results_partition": true,
+    "score_arithmetic": true,
+    "frozen_status_numeric_integrity": true
+  },
+  "issues": [],
+  "scope": "Structural consistency audit only; independent official-score verification not performed here",
+  "production_complete": false
+}
