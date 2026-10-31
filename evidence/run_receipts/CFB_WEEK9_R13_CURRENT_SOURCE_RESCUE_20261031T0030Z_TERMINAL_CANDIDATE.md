@@ -1,0 +1,13 @@
+# Week9 Friday R13 current-source rescue — terminal candidate
+Status: RUN_INCOMPLETE, NOT RUN_PASS. Approximately 2026-10-31T00:30Z / Friday Oct30 19:30 CT.
+Authority: Production Routine v5.0 + v5.1-A/C; original FIRST_FROZEN immutable. Main recovery index v1.245 remains `379eff0dfd4b7184633d0962e0a37b615384573e`; accepted Thursday Hot Sheet remains `f05173046e51ab9634d47b1be5fe90c2a5026c96`.
+
+Actual newly executed current-source work: CBS Week9 fresh Firecrawl scrape `01a18f5b-2ac3-76ea-af1f-285a45688ce8`, capture `evidence/operational/CFB_WEEK9_CBS_CURRENT_SOURCE_CAPTURE_R13.md` on rescue branch. Authentic current-source normalizer GitHub Actions run `41150467985` succeeded; independently read job logs and artifact metadata. Source 56/56, 112 team rows, 48 future, 8 elapsed. 35/35 current-source CBS kickoff instants match independent ESPN IDs; original FIRST_FROZEN start differs for 24, preserving immutable cohort data. 35 historical six-branch review rationales found; 3 separate immutable review references verified; 32 historical PASS reviews have no standalone review file. 210 current source branch slots, 66 raw changed since prior Friday CBS (54 among future games), zero new Champion decisions. Run artifact `13022681766` SHA256 `67b32bb53d445b3a287421215b7ee5dc8d51522d7f60523165e37725c5f290fb`.
+
+Main case ledger `evidence/operational/CFB_WEEK9_35_CASE_REVIEW_ANCESTRY_KICKOFF_R13.json`, blob `a02f025b9eb9c3eaca8c33a858c658fe9b46321d`, and checkpoint `evidence/operational/CFB_WEEK9_FRIDAY_R13_CURRENT_SOURCE_AND_35_CASE_REVIEW_PROGRESS.md`, blob `85cfb6ef5d7aee43707d408af1c6df6e0cdd00d4`, independently fetched/read back.
+
+Maryland +2.5/-102 public FanDuel meets old +2.5/-125 numerical condition; expires Sat Oct31 09:00 CT. Ohio State/USC under51.5/-115 public FanDuel meets old under51.5/-120 numerical condition; expires Sat15:00 CT. Both are **NOT APPROVED**: user-venue executable offer and limit, final material clearance and current producer acceptance missing. Ohio State frozen total58.1 contradicts under direction by6.6; qualitative review had acknowledged conflict but no calibrated under edge exists. Known QB changes were already reviewed, not invented new vetoes.
+
+Unresolved gates: 35 fresh packet certifications/current six-branch Champion decisions, official material personnel and venue/limit qualification, 56 genuine current decision rows, guarded serial publication, selected publication CI, current Hot Sheet and independent production closure. Scheduler NO_UPDATE remains separate. No wager/parlay, no model mutation, no canonical market/decision/Hot Sheet/index write, no standing task change. Do not claim production RUN_PASS.
+
+RUN_INCOMPLETE
