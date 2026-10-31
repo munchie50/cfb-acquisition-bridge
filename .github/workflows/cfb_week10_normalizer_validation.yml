@@ -11,6 +11,8 @@ on:
       - '.github/workflows/cfb_week10_normalizer_validation.yml'
       - 'scripts/cfb_week10_fallback_branch_inventory.py'
       - 'scripts/test_cfb_week10_fallback_branch_inventory.py'
+      - 'scripts/cfb_covers_matchup_shadow.py'
+      - 'scripts/test_cfb_covers_matchup_shadow.py'
 jobs:
   bounded-week10-regression:
     runs-on: ubuntu-latest
@@ -26,6 +28,8 @@ jobs:
         run: python -m unittest discover -s scripts -p 'test_cfb_week10_full_board_normalizer.py' -v
       - name: Verify explicit missing-game acquisition frontier
         run: python -m unittest discover -s scripts -p 'test_cfb_week10_fallback_branch_inventory.py' -v
+      - name: Test alternate Covers source qualification boundary
+        run: python -m unittest discover -s scripts -p 'test_cfb_covers_matchup_shadow.py' -v
       - name: Execute six-branch shadow inventory
         run: python scripts/cfb_week10_fallback_branch_inventory.py > week10_fallback_inventory.json
       - name: Validate current capture provenance
