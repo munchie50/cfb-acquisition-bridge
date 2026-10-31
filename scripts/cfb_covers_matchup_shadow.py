@@ -3,11 +3,15 @@ import json
 import re
 import sys
 
+# Explicit source naming equivalence, not general fuzzy matching.
+COVERS_TEAM_ALIASES = {"Mississippi": "Ole Miss", "Miami (FL)": "Miami"}
+
 def match_canonical_pair(result, baseline):
     """Exact, unique team-pair match; no fuzzy joins or inferred kickoff."""
     teams = result["matchup"].removeprefix("# ").split(" vs ")
     if len(teams) != 2:
         return {"status": "IDENTITY_UNRESOLVED", "game_id": None}
+    teams = [COVERS_TEAM_ALIASES.get(team, team) for team in teams]
     rows = [row for row in baseline["rows"]
             if row["away_team"] == teams[0] and row["home_team"] == teams[1]]
     if len(rows) != 1:
