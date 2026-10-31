@@ -39,11 +39,15 @@ def discover(markdown, unpriced_queue, day="2026-11-07"):
         # Discovery evidence is not an identity join; requires separate canonical validation.
         targets.append({"game_id": row["game_id"], "away_team": row["away_team"],
                         "home_team": row["home_team"], "identity_verified": False})
+    candidate_ids = {r["game_id"] for r in mascot_candidates}
+    unmatched = [r["game_id"] for r in unpriced_queue if r["game_id"] not in candidate_ids]
     return {"status": "SHADOW_DISCOVERY_ONLY", "day": day,
             "discovered_source_game_urls": sorted("https://betsharp.com/ncaaf/game/"+x for x in slugs),
             "source_urls_count": len(slugs), "unpriced_targets": targets,
             "mascot_prefix_candidates": mascot_candidates,
             "mascot_prefix_candidate_count": len(mascot_candidates),
+            "unmatched_unpriced_game_ids": unmatched,
+            "unmatched_unpriced_games_count": len(unmatched),
             "strict_name_candidates": candidates, "strict_name_candidate_count": len(candidates),
             "source_game_urls_exceed_canonical_slate": len(slugs) > 63,
             "unverified_cross_league_rows_possible": True,
