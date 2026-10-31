@@ -1,0 +1,27 @@
+{
+  "schema": "CFB_WEEK9_R73_FROZEN_MARGIN_PROBABILITY_DIRECTION_QA",
+  "source": "evidence/operational/CFB_WEEK9_R69_INCREMENTAL_FROZEN_OUTCOME_RECONCILIATION_20261031.json",
+  "source_blob": "e0f1bda9fc16ef0440db8b5746928ed4c258c350",
+  "modeled_predictions_checked": 45,
+  "discordant_direction_count": 2,
+  "discordant_cases": [
+    {
+      "game_id": "401856737",
+      "game": "Mississippi State @ Texas",
+      "predicted_home_margin": "-0.17926022771447103",
+      "predicted_home_win_probability": "0.5258970500003277",
+      "outcome_status": "PENDING"
+    },
+    {
+      "game_id": "401858278",
+      "game": "SMU @ Syracuse",
+      "predicted_home_margin": "0.7535424806658062",
+      "predicted_home_win_probability": "0.48963770327433453",
+      "outcome_status": "FINAL_ESPN"
+    }
+  ],
+  "interpretation": "A predicted mean home margin and probability of home win need not agree in sign under skewed predictive distributions; discrepancy is a review trigger, not a proven bug.",
+  "follow_up": "Verify field semantics and transformation provenance from accepted Champion contract; do not rewrite original frozen values or substitute one prediction for another.",
+  "production_complete": false,
+  "model_modified": false
+}
