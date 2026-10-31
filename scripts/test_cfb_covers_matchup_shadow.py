@@ -1,5 +1,5 @@
 import unittest
-from cfb_covers_matchup_shadow import inspect, match_canonical_pair, discover_dated_matchups
+from cfb_covers_matchup_shadow import inspect, match_canonical_pair, discover_dated_matchups, reconcile_shadow_moneylines
 
 URL = "https://www.covers.com/sport/football/ncaaf/matchup/378696/odds"
 CLOCK = "2026-10-31T19:00:00Z"
@@ -52,6 +52,20 @@ sidebar /matchup/222
             {"matchup": "# Miami (FL) vs Notre Dame"}, baseline)["game_id"], "401858291")
         self.assertIsNone(match_canonical_pair(
             {"matchup": "# Georgia vs Mississippi State"}, baseline)["game_id"])
+
+    def test_reconciliation_only_counts_missing_cbs_moneylines(self):
+        result = inspect(SAMPLE, URL, CLOCK)
+        match = {"status": "SHADOW_IDENTITY_MATCH_ONLY", "game_id": "401856743"}
+        row = {"game_id": "401856743", "branches": {
+            "away_ml": {"availability": "DISPLAYED"},
+            "home_ml": {"availability": "MISSING"}}}
+        reconciled = reconcile_shadow_moneylines(result, match, {"rows": [row]})
+        self.assertEqual(reconciled["candidate_branch_names"], ["home_ml"])
+        self.assertEqual(reconciled["new_candidate_branches"], 1)
+        self.assertFalse(reconciled["decision_authorized"])
+        self.assertEqual(reconcile_shadow_moneylines(
+            result, {"status": "UNRESOLVED", "game_id": None},
+            {"rows": [row]})["new_candidate_branches"], 0)
 
     def test_fail_closed_identity_and_clock(self):
         with self.assertRaises(ValueError):
