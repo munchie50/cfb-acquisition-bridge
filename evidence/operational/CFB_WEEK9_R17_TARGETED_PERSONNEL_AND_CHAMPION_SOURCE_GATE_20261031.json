@@ -1,0 +1,71 @@
+{
+  "schema": "CFB_WEEK9_R17_BOUNDED_DECISION_GATE_DELTA",
+  "status": "RUN_INCOMPLETE_ZERO_NEW_BETS",
+  "authority": {
+    "main_sha_at_start": "37285b1c0992e2e9dc8afef28f05aab5bcd00152",
+    "recovery_index_v1_245_blob": "379eff0dfd4b7184633d0962e0a37b615384573e",
+    "r14_35_case_ledger_blob": "757811e4a6a5028e2d274edaf417706f79cac46a",
+    "r15_blob": "3c12d537cd57b1894626cf9b6af48b8c66007440",
+    "r16_blob": "12db1c202b3b1971224d72d1a535ed5bd1862868",
+    "accepted_thursday_hot_sheet_blob": "f05173046e51ab9634d47b1be5fe90c2a5026c96",
+    "accepted_prediction_source_pointer_blob": "467e21006cc51fcc46b9577d7f98f301f9e63f84",
+    "routine": "production v5.0 + accepted v5.1 A/C + controls v1.132/v1.133"
+  },
+  "new_diagnostic": {
+    "accepted_prediction_source_pointer": "evidence/operational/CFB_ACCEPTED_PREDICTION_SOURCE_STATE.json",
+    "accepted_prediction_cutoff_utc": "2026-10-13T15:13:13.866672+00:00",
+    "finding": "The latest persisted accepted S0 prediction-source pointer found on main remains the October 13 boundary. This is not proof that no later candidate exists; candidate workflow success does not confer accepted operational current Champion six-market decisions. No authentic 56 current decision-row packet was found/verified during this bounded read. scripts/cfb_week9_publication.py requires caller-supplied 56 decision rows and a fresh <=900s source; it is not a model decision generator.",
+    "original_56_game_normalization": "R13 VERIFIED_PREVIOUSLY_NO_RERUN",
+    "prior_35_case_six_branch_ancestry": "R14 VERIFIED_PREVIOUSLY_NO_RERUN",
+    "rescue_branch": "rescue/week9-git-runtime-20261030 exists, compare to main diverged 22 ahead/22 behind; no unsafe merge or publication"
+  },
+  "cases": [
+    {
+      "game_id": "401858503",
+      "game": "Illinois @ Maryland",
+      "deadline_utc": "2026-10-31T14:00:00Z",
+      "status": "NOT_APPROVED",
+      "new_evidence": "Same latest Thursday Big Ten availability update as R16: Maryland WR Sean Williams and OL Trevor Szymanski doubtful; WR Ryan Manning questionable; RB DJ Samuels and Harry Dalton III out. Illinois QB Houser doubtful and already considered in original review. Oct30 contemporaneous report says Illinois again without Houser but does not substitute for direct official final availability.",
+      "source_urls": [
+        "https://kickoffstatus.com/games/2026-10-31-illinois-at-maryland/",
+        "https://www.thetelegraph.com/sports/article/illinois-maryland-interim-coach-22502618.php"
+      ],
+      "qualitative_reconciliation": "Original Maryland rationale depends on protected passing/receiving and ball security; WR/OL downgrades materially challenge that mechanism. Do not automatically veto for already-known Illinois QB. No quantified adjustment or current six-market Champion row.",
+      "remaining": "No certified official final material personnel packet; no authentic current Champion six-market row; no user-venue executable offer and stake limit; no qualified current price timestamp. Prior public +2.5 prices are retrieval-only and not executable."
+    },
+    {
+      "game_id": "401858509",
+      "game": "Ohio State @ USC",
+      "deadline_utc": "2026-10-31T20:00:00Z",
+      "status": "NOT_APPROVED",
+      "new_evidence": "Secondary transcription of Big Ten Thursday 17:00 PT update shows Ohio State WR Brock Boyd questionable->out, S Deshawn Stewart available->out, LB Eli Lee questionable->out, CB Amare Miller questionable->available, Brandon Inniss WR remains questionable. Sayin out; Fahey/St Clair both considered in original review, starter not independently confirmed.",
+      "source_urls": [
+        "https://kickoffstatus.com/games/2026-10-31-ohio-state-at-usc/",
+        "https://www.aol.com/articles/expect-ohio-states-offensive-line-090840000.html"
+      ],
+      "qualitative_reconciliation": "Receiver losses can reduce Ohio State offensive scoring, but defensive losses can increase USC scoring. Conflicting mechanisms cannot erase frozen Champion total 58.1 versus under 51.5 (6.6 point opposition). No calibrated model under edge.",
+      "remaining": "No current Champion six-market decision and calibrated reconciliation; no certified final personnel packet; no authenticated executable venue quote/limit. Public under price alone cannot approve."
+    },
+    {
+      "game_id": "401861966",
+      "game": "UConn @ Air Force",
+      "status": "NOT_APPROVED",
+      "new_evidence": "Previously documented coach-confirmed Medders OUT; depth chart Johnson/Fisher IV unresolved; Alec Falk out. No newly verified starter selection in this run.",
+      "source_urls": [
+        "https://gazette.com/2026/10/26/next-next-man-up-depth-chart-shows-air-force-again-will-have-new-qb/"
+      ],
+      "remaining": "Material away-spread movement, QB replacement impact, authentic current Champion six-market decision, qualified current market/venue evidence."
+    }
+  ],
+  "other_32_cases": "R14/R15 32 cases retained by immutable reference; none promoted to current certified review. Sixteen material drift games remain unresolved as previously recorded.",
+  "production": {
+    "new_current_champion_rows": 0,
+    "new_packet_certifications": 0,
+    "new_bets_approved": 0,
+    "publication": "NOT_ATTEMPTED_GATES_UNMET",
+    "canonical_writes": "NONE",
+    "hot_sheet": "PREVIOUS_ACCEPTED_THURSDAY_SHEET_UNCHANGED",
+    "four_standing_tasks": "NO_CHANGES"
+  },
+  "next_trigger": "Genuine accepted current Champion 56-row six-market decision packet, independently qualified material personnel/news review, and authenticated executable venue quote/limit before original Saturday cutoffs. Expire unapproved conditionals at deadlines, no extension."
+}
