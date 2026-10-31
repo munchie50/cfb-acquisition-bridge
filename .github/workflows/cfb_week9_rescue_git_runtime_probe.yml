@@ -96,6 +96,31 @@ jobs:
           set -euo pipefail
           python -m unittest discover -s scripts -p 'test_cfb_week9_*.py' -v
           echo "WEEK9_PRODUCER_CONTRACT_TESTS_COMPLETE_NO_PUBLICATION"
+      - name: Execute authentic Week9 canonical readiness and full-coverage audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/cfb_hot_sheet_readiness.py \
+            --market evidence/operational/CFB_MARKET_MONITOR_STATE.md \
+            --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md \
+            --lineage evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json \
+            --profile WEEK9 --as-of 2026-10-30T23:58:00Z > "$RUNNER_TEMP/week9-readiness.json"
+          python - "$RUNNER_TEMP/week9-readiness.json" <<'PY'
+          import json,sys
+          x=json.load(open(sys.argv[1]))
+          assert x['games']==56
+          assert sum(x['evaluation_coverage']['counts'].values())==56
+          print('WEEK9_CANONICAL_56_GAME_COVERAGE',x['evaluation_coverage']['counts'])
+          print('OPEN_REVIEW_QUEUE',len(x['evaluation_coverage']['uncertified_open_review_queue']))
+          print('READINESS_AUDIT_ONLY_NO_NEW_WAGERS')
+          PY
+      - name: Upload Week9 canonical readiness audit artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-week9-canonical-readiness-20261030
+          path: ${{ runner.temp }}/week9-readiness.json
+          retention-days: 14
+          if-no-files-found: error
       - name: Boundary statement
         if: always()
         run: |
