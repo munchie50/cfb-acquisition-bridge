@@ -22,6 +22,8 @@ def report(board):
                      "cbs_missing_moneyline_branches": missing,
                      "unqualified_candidate_count": len(missing)})
     return {"status": "SHADOW_CANDIDATE_GAP_REPORT_ONLY",
+            "acquisition_priority": "UNPRICED_GAMES_FIRST",
+            "source_incremental_yield": "ZERO" if not any(r["unqualified_candidate_count"] for r in rows) else "CANDIDATES_ONLY",
             "observed_pair_games": len(rows),
             "candidate_missing_branches": sum(r["unqualified_candidate_count"] for r in rows),
             "prices_freshness_verified": False, "decision_authorized": False, "rows": rows}
