@@ -19,6 +19,23 @@ def match_canonical_pair(result, baseline):
     return {"status": "SHADOW_IDENTITY_MATCH_ONLY", "game_id": rows[0]["game_id"],
             "kickoff_independently_verified": False, "decision_authorized": False}
 
+def reconcile_shadow_moneylines(result, canonical_match, inventory):
+    """Count candidate branches only where CBS lacks them; never overwrite CBS."""
+    game_id = canonical_match.get("game_id")
+    rows = [row for row in inventory["rows"] if row["game_id"] == game_id]
+    if canonical_match.get("status") != "SHADOW_IDENTITY_MATCH_ONLY" or len(rows) != 1:
+        return {"status": "UNRESOLVED", "new_candidate_branches": 0,
+                "decision_authorized": False}
+    offers = result["displayed_moneyline_rows"]
+    if len(offers) != 2:
+        return {"status": "INCOMPLETE_PAIR", "game_id": game_id,
+                "new_candidate_branches": 0, "decision_authorized": False}
+    missing = [name for name in ("away_ml", "home_ml")
+               if rows[0]["branches"][name]["availability"] != "DISPLAYED"]
+    return {"status": "UNQUALIFIED_CANDIDATE_ONLY", "game_id": game_id,
+            "new_candidate_branches": len(missing), "candidate_branch_names": missing,
+            "independent_price_clock": None, "decision_authorized": False}
+
 def discover_dated_matchups(markdown):
     """Discover only dated Nov 6/7 rows, not sidebar or unrelated weeks."""
     found = {}
