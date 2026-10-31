@@ -53,3 +53,6 @@ Existing Market Monitor task prompt updated in place: RUN_STARTED write plus ind
 
 ## Immediate post-correction execution test — 2026-10-31
 User-authorized existing Market Monitor run_now accepted; saved schedule unchanged. Independently peeked new invocation ID 54270fbd-db54-8327-9855-4690c33f4f1f, scheduled 2026-10-31T16:31:05.649109Z, started 16:31:22.198604Z, completed 16:31:23.066320Z, recorded NO_UPDATE, chat_ref null. Early-start prompt change did not yield a completed execution. This is negative demonstration evidence, not successful repair or proof of specific platform cause. Stop speculative prompt mutations; seek control-plane diagnostic, preserve canonical publication. No fifth task.
+
+## Container runtime probe, 2026-10-31
+A real git ls-remote to the connected repository URL failed in this container with DNS error: Could not resolve host: github.com. This is a container network limitation only, not proof of scheduler root cause. No pinned checkout or producer execution passed. The earlier immediate Market Monitor invocation 54270fbd-db54-8327-9855-4690c33f4f1f ended NO_UPDATE with null chat_ref. Preserve four tasks and fail closed.
