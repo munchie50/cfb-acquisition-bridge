@@ -130,7 +130,7 @@ jobs:
           from pathlib import Path
           saved=json.loads(Path('evidence/operational/CFB_WEEK9_33_CASE_MARKET_MOVEMENT_SCREENING_RESCUE.json').read_text())
           raw=Path(saved['source_path']).read_bytes()
-          digest=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\\0'+raw).hexdigest()
+          digest=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()
           assert digest==saved['source_blob_sha'], 'source blob changed'
           source=json.loads(raw)
           cases={c['game_id']:c for c in source['cases']}
