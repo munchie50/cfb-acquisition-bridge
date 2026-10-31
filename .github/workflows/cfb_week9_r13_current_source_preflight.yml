@@ -47,6 +47,7 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
+          from datetime import datetime,timezone
           board=json.loads(Path('week9-normalized-r13.json').read_text())
           prior=json.loads(Path('week9-35-ancestry-r13.json').read_text())
           coverage=board['coverage']
@@ -55,6 +56,9 @@ jobs:
           assert len(prior['cases'])==35
           byid={g['game_id']:g for g in board['games']}
           assert len(byid)==56
+          def as_utc(value):
+              if not value:return None
+              return datetime.fromisoformat(value.replace('Z','+00:00')).astimezone(timezone.utc)
           rows=[]
           for case in prior['cases']:
               game=byid[case['game_id']]
@@ -63,11 +67,12 @@ jobs:
               assert all(set(('spread','moneyline','total')).issubset(o) for o in offers)
               source_kickoff=game['source_kickoff_utc']
               independent=case['independent_espn_kickoff_utc']
+              agreement=(as_utc(source_kickoff)==as_utc(independent)) if source_kickoff else None
               rows.append({
                   'game_id':case['game_id'],'game':case['game'],
                   'source_kickoff_utc':source_kickoff,
                   'independent_espn_kickoff_utc':independent,
-                  'source_vs_espn_kickoff_agrees':source_kickoff==independent,
+                  'source_vs_espn_kickoff_agrees':agreement,
                   'source_temporal_status':game['temporal_status'],
                   'six_market_source_offers':offers,
                   'historical_review_ref':case['prior_immutable_review_ref'],
@@ -84,7 +89,9 @@ jobs:
           Path('week9-current-source-r13.json').write_text(json.dumps(result,indent=2)+'\n')
           print('R13_AUTHENTIC_CURRENT_SOURCE_56_GAME_COVERAGE',coverage)
           print('R13_35_CASE_SIX_BRANCH_SOURCE_SCREEN',len(rows))
-          print('R13_INDEPENDENT_KICKOFF_AGREEMENT',sum(r['source_vs_espn_kickoff_agrees'] for r in rows))
+          print('R13_INDEPENDENT_KICKOFF_AGREEMENT',sum(r['source_vs_espn_kickoff_agrees'] is True for r in rows))
+          print('R13_KICKOFF_MISMATCHES',[(r['game_id'],r['source_kickoff_utc'],r['independent_espn_kickoff_utc']) for r in rows if r['source_vs_espn_kickoff_agrees'] is False])
+          print('R13_KICKOFF_UNRESOLVED',sum(r['source_vs_espn_kickoff_agrees'] is None for r in rows))
           print('NO_NEW_CHAMPION_DECISIONS_NO_BET_APPROVED')
           PY
       - name: Preserve independent current-source and 35-case screen artifacts
