@@ -43,6 +43,12 @@ jobs:
           set -euo pipefail
           HEAD_SHA="$(git rev-parse HEAD)"
           python scripts/cfb_runtime_checkout.py --destination "$RUNNER_TEMP/cfb-pinned-verified" --expected-head "$HEAD_SHA"
+      - name: Run isolated prospective Week10 source preflight regression
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd qa
+          python -m unittest -v test_cfb_week10_source_preflight_readonly.py
       - name: Run isolated failure classifier regression
         shell: bash
         run: |
