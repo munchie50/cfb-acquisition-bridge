@@ -1,0 +1,24 @@
+name: CFB Week10 bounded normalizer validation
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/cfb_cbs_full_board_normalizer.py'
+      - 'scripts/test_cfb_week10_full_board_normalizer.py'
+      - 'evidence/operational/CFB_WEEK10_CANDIDATE_CANONICAL_IDENTITY_BASELINE_20261031.json'
+      - 'evidence/operational/CFB_CBS_WEEK10_LIVE_MARKDOWN_CAPTURE_20261031.md'
+      - '.github/workflows/cfb_week10_normalizer_validation.yml'
+jobs:
+  bounded-week10-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run Week10 actual normalizer regression
+        run: python -m unittest discover -s scripts -p 'test_cfb_week10_full_board_normalizer.py' -v
