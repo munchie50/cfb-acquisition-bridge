@@ -11,11 +11,15 @@ class TestBetSharpMarket(unittest.TestCase):
                                     ("total","over","-"),("total","under","-")):
             rows.append(f"| [History](https://betsharp.com/history?m={market}&s={side}) | {value} | {value} |")
         page = header + "\n".join(rows)
-        result = inspect(page, "https://betsharp.com/test")
+        result = inspect(page, "https://betsharp.com/ncaaf/game/2026-11-07-clemson-tigers-at-syracuse-orange")
         self.assertEqual(sum(x["availability"] == "DISPLAYED_SHADOW" for x in result["branches"].values()),2)
         self.assertIsNone(result["branches"]["away_spread"]["price"])
         self.assertFalse(result["decision_authorized"])
         self.assertTrue(result["date_of_update_unverified"])
+
+    def test_unapproved_url_fails(self):
+        with self.assertRaises(ValueError):
+            inspect("# Example odds", "https://example.org/ncaaf/game/2026-11-07-test")
 
     def test_missing_update_fails(self):
         with self.assertRaises(ValueError):
