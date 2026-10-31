@@ -1,4 +1,4 @@
-"""Reconcile four observed Covers moneyline-pair identities with CBS gaps.
+"""Reconcile observed Covers moneyline-pair identities with CBS gaps.
 Observations are discovery evidence only; no stored current prices or offer clock.
 """
 import json
@@ -9,6 +9,10 @@ OBSERVED_PAIR_IDS = {
     "401856740": "Alabama vs LSU",
     "401856745": "Kentucky vs Tennessee",
     "401856741": "Georgia vs Ole Miss",
+    "401866453": "Ohio vs Akron",
+    "401866454": "Buffalo vs Miami (OH)",
+    "401866455": "Ball State vs Massachusetts",
+    "401866456": "Central Michigan vs Eastern Michigan",
 }
 
 def report(board):
