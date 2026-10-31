@@ -12,6 +12,7 @@ class Evidence:
     source_complete: bool = False
     publication_present: bool = False
     independent_publication_verified: bool = False
+    terminal_closure_verified: bool = False
 
 def classify(e: Evidence) -> str:
     """Conservative classification. A green workflow is not acceptance evidence."""
@@ -26,5 +27,7 @@ def classify(e: Evidence) -> str:
     if not e.canonical_write_accepted:
         return "START_ONLY"
     if not e.publication_present or not e.independent_publication_verified:
+        return "PUBLISHED_UNVERIFIED"
+    if not e.terminal_closure_verified:
         return "PUBLISHED_UNVERIFIED"
     return "RUN_PASS"
