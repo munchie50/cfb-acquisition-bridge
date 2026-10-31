@@ -3,6 +3,18 @@ import json
 import re
 import sys
 
+def match_canonical_pair(result, baseline):
+    """Exact, unique team-pair match; no fuzzy joins or inferred kickoff."""
+    teams = result["matchup"].removeprefix("# ").split(" vs ")
+    if len(teams) != 2:
+        return {"status": "IDENTITY_UNRESOLVED", "game_id": None}
+    rows = [row for row in baseline["rows"]
+            if row["away_team"] == teams[0] and row["home_team"] == teams[1]]
+    if len(rows) != 1:
+        return {"status": "IDENTITY_UNRESOLVED", "game_id": None}
+    return {"status": "SHADOW_IDENTITY_MATCH_ONLY", "game_id": rows[0]["game_id"],
+            "kickoff_independently_verified": False, "decision_authorized": False}
+
 def inspect(markdown, source_url, observed_at_utc):
     if not re.fullmatch(r"https://www\.covers\.com/sport/football/ncaaf/matchup/\d+/odds", source_url):
         raise ValueError("unsupported matchup source")
