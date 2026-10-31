@@ -1,0 +1,128 @@
+{
+  "schema": "CFB_WEEK10_R83_EARLY_WEEK_KICKOFF_VERIFICATION",
+  "previous_audit_blob": "b231549a488fb5511d50fbf57b384a9ebf257052",
+  "identity_join_blob": "4618ed4052381613095f9486f729c6ebc14821a8",
+  "source_captures": [
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261103&limit=400&groups=80",
+      "scrape_id": "01a19454-3e20-77df-8e2c-cb0c9e0b271a"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261104&limit=400&groups=80",
+      "scrape_id": "01a19454-3ece-72e1-9609-3e7438e91ecd"
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261105&limit=400&groups=80",
+      "scrape_id": "01a19454-3db8-7039-a66f-854ea64644f8"
+    }
+  ],
+  "newly_verified": [
+    {
+      "game_id": "401866453",
+      "cbs_display": "Tue Nov 3, 7:00pm",
+      "espn_utc": "2026-11-04T00:00Z"
+    },
+    {
+      "game_id": "401866454",
+      "cbs_display": "Tue Nov 3, 8:00pm",
+      "espn_utc": "2026-11-04T01:00Z"
+    },
+    {
+      "game_id": "401866455",
+      "cbs_display": "Wed Nov 4, 7:00pm",
+      "espn_utc": "2026-11-05T00:00Z"
+    },
+    {
+      "game_id": "401866457",
+      "cbs_display": "Wed Nov 4, 7:00pm",
+      "espn_utc": "2026-11-05T00:00Z"
+    },
+    {
+      "game_id": "401866456",
+      "cbs_display": "Wed Nov 4, 7:30pm",
+      "espn_utc": "2026-11-05T00:30Z"
+    },
+    {
+      "game_id": "401862817",
+      "cbs_display": "Thu Nov 5, 7:30pm",
+      "espn_utc": "2026-11-06T00:30Z"
+    },
+    {
+      "game_id": "401869964",
+      "cbs_display": "Thu Nov 5, 8:00pm",
+      "espn_utc": "2026-11-06T01:00Z"
+    }
+  ],
+  "counts": {
+    "previously_matching": 46,
+    "newly_matching": 7,
+    "total_matching": 53,
+    "remaining_disagreements": 10,
+    "unmatched": 0,
+    "cohort": 63
+  },
+  "remaining_disagreements": [
+    {
+      "game_id": "401858511",
+      "cbs_display": "Sat Nov 7, 12:00pm",
+      "espn_utc": "2026-11-07T05:00Z",
+      "expected_utc_from_cbs": "2026-11-07T17:00Z"
+    },
+    {
+      "game_id": "401856853",
+      "cbs_display": "Sat Nov 7, 1:00pm",
+      "espn_utc": "2026-11-07T05:00Z",
+      "expected_utc_from_cbs": "2026-11-07T18:00Z"
+    },
+    {
+      "game_id": "401856851",
+      "cbs_display": "Sat Nov 7, 1:00pm",
+      "espn_utc": "2026-11-07T05:00Z",
+      "expected_utc_from_cbs": "2026-11-07T18:00Z"
+    },
+    {
+      "game_id": "401856850",
+      "cbs_display": "Sat Nov 7, 1:00pm",
+      "espn_utc": "2026-11-07T05:00Z",
+      "expected_utc_from_cbs": "2026-11-07T18:00Z"
+    },
+    {
+      "game_id": "401856854",
+      "cbs_display": "Sat Nov 7, 1:00pm",
+      "espn_utc": "2026-11-07T05:00Z",
+      "expected_utc_from_cbs": "2026-11-07T18:00Z"
+    },
+    {
+      "game_id": "401858512",
+      "cbs_display": "Sat Nov 7, 1:00pm",
+      "espn_utc": "2026-11-07T05:00Z",
+      "expected_utc_from_cbs": "2026-11-07T18:00Z"
+    },
+    {
+      "game_id": "401858513",
+      "cbs_display": "Sat Nov 7, 1:00pm",
+      "espn_utc": "2026-11-07T05:00Z",
+      "expected_utc_from_cbs": "2026-11-07T18:00Z"
+    },
+    {
+      "game_id": "401856856",
+      "cbs_display": "Sat Nov 7, 1:00pm",
+      "espn_utc": "2026-11-07T05:00Z",
+      "expected_utc_from_cbs": "2026-11-07T18:00Z"
+    },
+    {
+      "game_id": "401858517",
+      "cbs_display": "Sat Nov 7, 1:00pm",
+      "espn_utc": "2026-11-07T17:30Z",
+      "expected_utc_from_cbs": "2026-11-07T18:00Z"
+    },
+    {
+      "game_id": "401858516",
+      "cbs_display": "Sat Nov 7, 3:00pm",
+      "espn_utc": "2026-11-07T05:00Z",
+      "expected_utc_from_cbs": "2026-11-07T20:00Z"
+    }
+  ],
+  "full_kickoff_verification": false,
+  "publication_authorized": false
+}
