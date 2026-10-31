@@ -10,6 +10,8 @@ class TestBetSharpShadow(unittest.TestCase):
                                   "home_team": "Syracuse"}])
         self.assertEqual(result["source_urls_count"], 1)
         self.assertEqual(result["strict_name_candidate_count"], 0)
+        self.assertEqual(result["mascot_prefix_candidate_count"], 1)
+        self.assertFalse(result["mascot_prefix_candidates"][0]["identity_verified"])
         self.assertFalse(result["canonical_join_authorized"])
         self.assertFalse(result["prices_qualified"])
         self.assertFalse(result["decision_authorized"])
