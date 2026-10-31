@@ -1,0 +1,546 @@
+{
+  "schema": "CFB_WEEK9_R15_BOUNDED_CASE_LEVEL_EVIDENCE_DELTA",
+  "status": "PARTIAL_PRODUCTION_REVIEW_NOT_CURRENT_HOT_SHEET_ACCEPTANCE",
+  "run_boundary": "Friday 2026-10-30 evening CT; research retrieval is not bookmaker offer-update time",
+  "authority": {
+    "main_fresh_read": "9c6d5595b3e753748b85c976de577634c4d70083",
+    "rescue_branch": "4c91c24cef42e6961423db1cdfd715cdc7621ee9",
+    "r14_ledger_path": "evidence/operational/CFB_WEEK9_R14_CASE_LEVEL_DECISION_FRONTIER_20261031.json",
+    "r14_ledger_blob": "757811e4a6a5028e2d274edaf417706f79cac46a",
+    "r14_closure": "evidence/run_receipts/CFB_WEEK9_R14_CASE_DECISION_FRONTIER_20261031_RUN_CLOSURE.md",
+    "canonical_sheet_blob": "f05173046e51ab9634d47b1be5fe90c2a5026c96",
+    "routine": "Production v5.0 plus accepted v5.1 A/C and controls v1.132/v1.133"
+  },
+  "no_replays": "56-game CBS normalization and 35 historical reviews reused; no source replay or synthetic producer execution",
+  "sources": [
+    {
+      "game": "Illinois @ Maryland",
+      "type": "direct_public_book_not_executable",
+      "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/illinois-%40-maryland-36236576",
+      "scrape_id": "01a18f6e-607c-74a7-b19b-5d1b1d4b7875",
+      "public_quote": "Maryland +2.5/-102",
+      "offer_updated_at": null,
+      "user_venue_limit": "UNVERIFIED"
+    },
+    {
+      "game": "Illinois @ Maryland",
+      "type": "official_prior_qb_context",
+      "url": "https://fightingillini.com/news/2026/10/26/football-illinois-travels-east-for-matchup-at-maryland",
+      "fact": "Houser hand injury and Clayton replacement already in original conditional review"
+    },
+    {
+      "game": "Illinois @ Maryland",
+      "type": "published_Friday_preview",
+      "url": "https://www.wandtv.com/2026/10/30/illinois-seeks-third-straight-win-halloween-clash-struggling-maryland/",
+      "fact": "Clayton first start against Oregon; no novel QB change established"
+    },
+    {
+      "game": "Illinois @ Maryland",
+      "type": "secondary_availability_report",
+      "url": "https://www.rotowire.com/betting/college-football/game/maryland-vs-illinois-odds-2026-10-31-2970326",
+      "fact": "Jayshon Platt reported OUT; Houser doubtful; underlying final game-day report not verified"
+    },
+    {
+      "game": "Ohio State @ USC",
+      "type": "direct_public_book_not_executable",
+      "url": "https://sportsbook.fanduel.com/teams/college-football/ohio-state-buckeyes/odds",
+      "scrape_id": "01a18f6e-60ad-74cd-89b7-d1bbd7ce6b6d",
+      "public_quote": "Under 51.5/-115",
+      "offer_updated_at": null,
+      "user_venue_limit": "UNVERIFIED"
+    },
+    {
+      "game": "Ohio State @ USC",
+      "type": "published_availability_detail",
+      "url": "https://www.elevenwarriors.com/ohio-state-football/2026/10/164906/ohio-state-injury-report-jay-timmons-brandon-inniss-kenyatta-jackson-jr-austin-siereveld-usc",
+      "fact": "Sayin and Ja'Kobi Jackson OUT; Inniss, Boyd, Timmons questionable; Siereveld and Kenyatta Jackson cleared"
+    },
+    {
+      "game": "UConn @ Air Force",
+      "type": "coach_statement_reported",
+      "url": "https://gazette.com/2026/10/27/air-force-confirms-qb-change-looming-after-injury-freshman-in-the-mix/",
+      "fact": "Coach Calhoun stated Medders OUT Saturday; Johnson/Fisher competition"
+    },
+    {
+      "game": "UConn @ Air Force",
+      "type": "team_depth_chart_reported",
+      "url": "https://gazette.com/2026/10/26/next-next-man-up-depth-chart-shows-air-force-again-will-have-new-qb/",
+      "fact": "Medders absent from issued depth chart; Alec Falk absent"
+    },
+    {
+      "game": "crosscut",
+      "type": "official_conference_reporting_policy",
+      "url": "https://bigten.org/news/2026/8/28/big-ten-announces-changes-to-football-availability-reporting-process.aspx",
+      "fact": "Friday report due 19:00 CT; final gameday report due 2h before kickoff; Maryland 09:00 CT cutoff coincides with final report due"
+    }
+  ],
+  "counts": {
+    "r14_cases_reconciled": 35,
+    "six_branches_per_case": 6,
+    "r14_material_numeric_drift_cases": 16,
+    "new_targeted_personnel_review_cases": 3,
+    "current_packet_certified": 0,
+    "genuine_new_champion_rows": 0,
+    "approved_bets": 0
+  },
+  "cases": [
+    {
+      "game_id": "401862813",
+      "game": "Tulane @ Charlotte",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401856844",
+      "game": "Baylor @ UCF",
+      "prior_state": "CONDITIONAL",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401866451",
+      "game": "Kent State @ Sacramento State",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401858278",
+      "game": "SMU @ Syracuse",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401858502",
+      "game": "Wisconsin @ Iowa",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401866452",
+      "game": "Bowling Green @ Western Michigan",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401858503",
+      "game": "Illinois @ Maryland",
+      "prior_state": "CONDITIONAL",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Current Champion six-market row and complete material-news packet missing; public +2.5/-102 not authenticated executable venue/limit; no final pre-cutoff player clearance. Original Sat09:00 CT deadline unchanged.",
+      "new_recovered_evidence": [
+        "Friday 2026-10-30 published preview confirms Clayton II started against Oregon; Houser absence already included in original conditional review; not a new veto.",
+        "Additional Illinois WR Jayshon Platt OUT per availability reporting; not evaluated as a numerical edge.",
+        "Direct fresh public FanDuel event page +2.5/-102; no bookmaker update timestamp or authenticated user-venue stake limit.",
+        "Big Ten final gameday availability submission due 2h before kickoff, coinciding with original 09:00 CT cutoff; no earlier final report certified."
+      ],
+      "original_cutoff_utc": "2026-10-31T14:00:00Z",
+      "condition": "Maryland +2.5 or better at -125 or better; NOT APPROVED"
+    },
+    {
+      "game_id": "401856735",
+      "game": "Auburn @ Ole Miss",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401871096",
+      "game": "Marshall @ Old Dominion",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401856846",
+      "game": "Kansas State @ Colorado",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401871097",
+      "game": "Louisiana Tech @ South Alabama",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401861966",
+      "game": "UConn @ Air Force",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "away_spread"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Medders absence confirmed by independent coach-report source, but starter and line impact unquantified; no fresh six-branch Champion decision, qualified book/venue quote or current review certification.",
+      "new_recovered_evidence": [
+        "Air Force coach Troy Calhoun confirmed QB Evan Medders OUT with turf toe in Oct27 media availability (reported by Colorado Springs Gazette); independent of Oct30 CT Insider.",
+        "Air Force depth chart issued Oct26 omitted Medders; Josh Johnson or Howard Fisher IV alternatives, final starter unconfirmed.",
+        "Air Force guard Alec Falk also absent from Oct26 depth chart; material offensive-line review required."
+      ]
+    },
+    {
+      "game_id": "401858283",
+      "game": "Stanford @ Louisville",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401871095",
+      "game": "Southern Miss @ UL Monroe",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401860910",
+      "game": "Colorado State @ Utah State",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "home_spread",
+        "away_ml",
+        "home_ml",
+        "over_total"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401856843",
+      "game": "Arizona State @ BYU",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401856845",
+      "game": "Kansas @ TCU",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401864531",
+      "game": "UTEP @ North Dakota State",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "away_ml"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401856734",
+      "game": "Florida @ Georgia",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401858284",
+      "game": "Virginia @ Wake Forest",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401864529",
+      "game": "New Mexico @ San José State",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "home_ml"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401858508",
+      "game": "Nevada @ UCLA",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "home_ml"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401858506",
+      "game": "Purdue @ Penn State",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "home_ml"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401856736",
+      "game": "South Carolina @ Oklahoma",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401869846",
+      "game": "App State @ Georgia Southern",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401856847",
+      "game": "Oklahoma State @ Iowa State",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401860909",
+      "game": "Washington State @ San Diego State",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401858282",
+      "game": "Miami @ North Carolina",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401856737",
+      "game": "Mississippi State @ Texas",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "home_ml"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401858509",
+      "game": "Ohio State @ USC",
+      "prior_state": "CONDITIONAL",
+      "material_drift_branches": [
+        "away_ml"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Frozen total 58.1 contradicts proposed U51.5, without valid model reconciliation; current Champion six-market row and authenticated executable venue/limit absent; final personnel not certified.",
+      "new_recovered_evidence": [
+        "Direct fresh public FanDuel team page U51.5/-115; no bookmaker update timestamp or user-venue limit.",
+        "Published Wednesday availability: Sayin and RB Ja'Kobi Jackson OUT; WR Brandon Inniss and Brock Boyd, CB Jay Timmons questionable; OL Austin Siereveld and DE Kenyatta Jackson Jr. cleared. Status as reported, not confirmed gameday.",
+        "Prior review explicitly contemplated Fahey or St. Clair, so uncertainty alone is not a new veto.",
+        "Frozen Champion total 58.1 is 6.6 ABOVE 51.5; no calibrated reconciliation or current Champion under edge."
+      ],
+      "original_cutoff_utc": "2026-10-31T20:00:00Z",
+      "condition": "Under 51.5 at -120 or better; NOT APPROVED"
+    },
+    {
+      "game_id": "401856733",
+      "game": "Missouri @ Arkansas",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "away_ml"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401858504",
+      "game": "Washington @ Nebraska",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401860908",
+      "game": "Texas State @ Boise State",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "home_ml"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401864530",
+      "game": "Northern Illinois @ UNLV",
+      "prior_state": "PASS",
+      "material_drift_branches": [
+        "away_spread",
+        "home_spread",
+        "away_ml",
+        "home_ml"
+      ],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    },
+    {
+      "game_id": "401860924",
+      "game": "Oregon State @ Fresno State",
+      "prior_state": "PASS",
+      "material_drift_branches": [],
+      "review_branches_reused_by_reference": 6,
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_six_market_decision": "NOT_ISSUED",
+      "approved_bet": false,
+      "blocker": "Genuine current six-market Champion row, qualified live review/market and venue executability missing."
+    }
+  ],
+  "publication": {
+    "status": "NOT_ATTEMPTED_FAIL_CLOSED",
+    "reason": "Current 56 genuine Champion decision rows, fresh eligible source and packet certifications absent; producer is proposal-only and cannot infer decisions. No guarded canonical writes, CI acceptance or Hot Sheet promotion.",
+    "accepted_hot_sheet": "evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-29_2008CT.md",
+    "accepted_hot_sheet_blob": "f05173046e51ab9634d47b1be5fe90c2a5026c96",
+    "first_frozen_unchanged": true,
+    "standing_tasks_unchanged": true
+  },
+  "next_natural_trigger": "Authentic current Champion decision producer/output plus case-level material clearance and executable venue quote/limit, before original deadlines; otherwise mark expired without retroactive approvals."
+}
