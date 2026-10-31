@@ -35,6 +35,9 @@ jobs:
         run: python scripts/cfb_week10_fallback_branch_inventory.py > week10_fallback_inventory.json
       - name: Reconcile observed Covers moneyline pair identities against CBS gaps
         run: python scripts/cfb_week10_covers_gap_report.py > week10_covers_gap_report.json
+      - name: Assert unpriced game acquisition priority
+        run: |
+          python -c 'import json; r=json.load(open("week10_covers_gap_report.json")); assert r["source_incremental_yield"]=="ZERO"; assert r["unpriced_games_count"]==46; assert len(r["unpriced_games_priority_queue"])==46; assert not r["decision_authorized"]'
       - name: Validate current capture provenance
         run: |
           python -c 'import json; b=json.load(open("week10_fallback_inventory.json")); assert b["recovery_bound_not_exact_fetch"] is True; assert b["executability"]=="UNVERIFIED"; assert b["consensus"]=="UNAVAILABLE"; print("SHADOW_ONLY: historical capture cannot authorize current wagers")'
