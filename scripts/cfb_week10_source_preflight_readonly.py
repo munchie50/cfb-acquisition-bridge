@@ -25,7 +25,7 @@ def check(capture, source_url, recovered_by, as_of):
     if "week-9/" in capture.lower():
         raise ValueError("Week9 capture contamination")
     data = capture.encode("utf-8")
-    digest = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\0" + data).hexdigest()
+    digest = hashlib.sha1(b"blob " + str(len(data)).encode() + bytes([0]) + data).hexdigest()
     return {"status": "WEEK10_SOURCE_PREFLIGHT_ONLY", "source_url": source_url,
             "capture_git_blob": digest, "capture_bytes": len(data),
             "recovered_by_utc": recovered.astimezone(timezone.utc).isoformat(),
