@@ -24,6 +24,14 @@ class TestBetSharpShadow(unittest.TestCase):
         self.assertFalse(result["strict_name_candidates"][0]["identity_verified"])
         self.assertFalse(result["canonical_join_authorized"])
 
+    def test_prefix_collision_does_not_authorize(self):
+        page = "https://betsharp.com/ncaaf/game/2026-11-07-miami-hurricanes-at-notre-dame-fighting-irish"
+        queue = [{"game_id": "A", "away_team": "Miami", "home_team": "Notre Dame"},
+                 {"game_id": "B", "away_team": "Miami Hurricanes", "home_team": "Notre Dame"}]
+        result = discover(page, queue)
+        self.assertEqual(result["mascot_prefix_candidate_count"], 0)
+        self.assertFalse(result["decision_authorized"])
+
     def test_day_scope(self):
         with self.assertRaises(ValueError):
             discover("", [], "2026-11-08")
