@@ -1,0 +1,35 @@
+{
+  "schema": "CFB_WEEK9_R81_EXECUTION_AND_MONEY_LEDGER_FRESH_READBACK",
+  "sources": [
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "1a938f42e9f03e723bd50348f8a78dbd8b7098e9"
+    },
+    {
+      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
+      "blob": "fc24ea6274160eebfef2ba22fe060deabfe81f9f"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK9_R79_FROZEN_COHORT_INCREMENTAL_OUTCOME_JOIN_20261031.json",
+      "blob": "a9d7a50efad4d11364fb7893218055ee7e42b6e6"
+    }
+  ],
+  "checks": {
+    "week9_ticket_rows_present": false,
+    "oct23_batch_present": true,
+    "oct23_eight_final_score_graded": true,
+    "money_baseline_present": true,
+    "funding_20_once": true,
+    "cohort_final_count": true
+  },
+  "week9_wagers": "NONE_IDENTIFIED_IN_CURRENT_AUTHORITATIVE_LEDGER_NOT_PROOF_OF_NONE",
+  "last_execution_batch": "2026-10-23 eight actual tickets",
+  "last_user_confirmed_pot": "2026-10-23 $61.30 snapshot NOT current cash balance",
+  "week9_outcomes": {
+    "final": 41,
+    "pending": 15
+  },
+  "limitations": "No newly supplied Week9 ticket evidence; do not infer zero real wagers, settlements, payouts, balances or betting ROI",
+  "ledgers_modified": false,
+  "production_complete": false
+}
