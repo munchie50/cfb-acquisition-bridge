@@ -37,10 +37,10 @@ def reconcile_shadow_moneylines(result, canonical_match, inventory):
             "independent_price_clock": None, "decision_authorized": False}
 
 def discover_dated_matchups(markdown):
-    """Discover only dated Nov 6/7 rows, not sidebar or unrelated weeks."""
+    """Discover Week10 Nov 3/4/6/7 rows, not sidebar or unrelated weeks."""
     found = {}
     for line in markdown.splitlines():
-        if not re.match(r"^\| Nov [67],", line):
+        if not re.match(r"^\| Nov (?:3|4|6|7),", line):
             continue
         match = re.search(r"/matchup/(\d+)", line)
         if match:
