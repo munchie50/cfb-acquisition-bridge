@@ -1,0 +1,45 @@
+{
+  "schema": "CFB_WEEK9_R74_MARGIN_WIN_PROBABILITY_CONTRACT_RESOLUTION",
+  "authority": [
+    {
+      "path": "evidence/CFB_ENGINE_PRODUCTION_CHAMPION_NAMING_AUTHORITY_v1_222.md",
+      "blob": "f1f8e0dc3c3507864fe8ad8c05430060796d5e49"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_PHASE4_CHALLENGER_B_MODELING_INHERITANCE_CONTRACT_v1_178.md",
+      "blob": "6fb16462ada940d7aa21230530399c000e09d21b"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK9_R73_FROZEN_MARGIN_PROBABILITY_DIRECTION_QA_20261031.json",
+      "blob": "9fc10f5780995e05c2e4ced37fcd949dfcb57afe"
+    }
+  ],
+  "finding": "EXPECTED_POSSIBLE_MODEL_OUTPUT_NOT_TRANSFORMATION_FAILURE",
+  "reason": "Frozen production Champion inherits independently fit Gaussian ridge regression for home scoring margin and ridge logistic regression for home-win probability. The raw logistic probability is not derived by thresholding or transforming the margin estimate. Therefore sign disagreement is permitted and does not itself indicate corruption.",
+  "discordant_cases": [
+    {
+      "game_id": "401856737",
+      "game": "Mississippi State @ Texas",
+      "predicted_home_margin": "-0.17926022771447103",
+      "predicted_home_win_probability": "0.5258970500003277",
+      "outcome_status": "PENDING"
+    },
+    {
+      "game_id": "401858278",
+      "game": "SMU @ Syracuse",
+      "predicted_home_margin": "0.7535424806658062",
+      "predicted_home_win_probability": "0.48963770327433453",
+      "outcome_status": "FINAL_ESPN"
+    }
+  ],
+  "checks": {
+    "model_family_contract_confirmed": true,
+    "raw_probability_contract_confirmed": true,
+    "field_semantics_distinct": true,
+    "source_frozen_values_unchanged": true,
+    "independent_prediction_csv_row_provenance_reverified": false
+  },
+  "follow_up": "Only investigate individual row transformation if direct accepted prediction CSV versus frozen original lineage differs; no discrepancy established by direction test alone.",
+  "production_complete": false,
+  "model_modified": false
+}
