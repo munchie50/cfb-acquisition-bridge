@@ -12,6 +12,7 @@ on:
       - 'scripts/cfb_week10_fallback_branch_inventory.py'
       - 'scripts/test_cfb_week10_fallback_branch_inventory.py'
       - 'scripts/cfb_covers_matchup_shadow.py'
+      - 'scripts/cfb_week10_covers_gap_report.py'
       - 'scripts/test_cfb_covers_matchup_shadow.py'
 jobs:
   bounded-week10-regression:
@@ -32,6 +33,8 @@ jobs:
         run: python -m unittest discover -s scripts -p 'test_cfb_covers_matchup_shadow.py' -v
       - name: Execute six-branch shadow inventory
         run: python scripts/cfb_week10_fallback_branch_inventory.py > week10_fallback_inventory.json
+      - name: Reconcile observed Covers moneyline pair identities against CBS gaps
+        run: python scripts/cfb_week10_covers_gap_report.py > week10_covers_gap_report.json
       - name: Validate current capture provenance
         run: |
           python -c 'import json; b=json.load(open("week10_fallback_inventory.json")); assert b["recovery_bound_not_exact_fetch"] is True; assert b["executability"]=="UNVERIFIED"; assert b["consensus"]=="UNAVAILABLE"; print("SHADOW_ONLY: historical capture cannot authorize current wagers")'
@@ -44,4 +47,5 @@ jobs:
           path: |
             week10_fallback_inventory.json
             week10_acquisition_queue.json
+            week10_covers_gap_report.json
           retention-days: 14
