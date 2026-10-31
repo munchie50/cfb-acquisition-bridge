@@ -7,7 +7,7 @@ from cfb_betsharp_week10_market_shadow import inspect
 SNAPSHOT = Path("evidence/operational/CFB_BETSHARP_WEEK10_FIVE_GAME_MARKET_SHADOW_20261031.md")
 
 def reconcile(text):
-    parts = re.split(r"^SOURCE_URL (https://betsharp\\.com/ncaaf/game/[^\\s]+)\\s*$", text, flags=re.M)
+    parts = re.split(r"^SOURCE_URL (https://betsharp\.com/ncaaf/game/[^\s]+)\s*$", text, flags=re.M)
     if len(parts) != 11:
         raise ValueError("expected exactly five source page snapshots")
     observations = []
