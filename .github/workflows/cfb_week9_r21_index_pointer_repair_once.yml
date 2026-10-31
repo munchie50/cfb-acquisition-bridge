@@ -70,7 +70,8 @@ jobs:
                             'corrected_path':expected[0],'preflight':result['verdict']}))
           PY
           python scripts/cfb_recovery_consumer_preflight.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md
-          test "$(git status --porcelain | wc -l)" -eq 1
+          test "$(git diff --name-only | wc -l)" -eq 1
+          test -z "$(git diff --cached --name-only)"
           git diff --name-only | grep -Fx 'evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md'
       - name: Guarded serial commit and push to main
         shell: bash
