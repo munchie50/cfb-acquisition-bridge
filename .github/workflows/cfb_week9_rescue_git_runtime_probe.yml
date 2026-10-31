@@ -147,6 +147,40 @@ jobs:
           assert counts['new_wagers_approved']==0
           print('WEEK9_33_CASE_SCREENING_INDEPENDENT_READBACK_PASS')
           PY
+      - name: Build kickoff source-evidence reconciliation for 33 open screening cases
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - "$RUNNER_TEMP/cfb-late-cbs-normalized.json" <<'PY'
+          import json,sys
+          from pathlib import Path
+          board=json.loads(Path(sys.argv[1]).read_text())
+          screen=json.loads(Path('evidence/operational/CFB_WEEK9_33_CASE_MARKET_MOVEMENT_SCREENING_RESCUE.json').read_text())
+          byid={g['game_id']:g for g in board['games']}
+          rows=[]
+          for case in screen['cases']:
+              g=byid[case['game_id']]
+              rows.append({'game_id':case['game_id'],'game':case['game'],
+                'source_display_kickoff_utc':g['source_kickoff_utc'],
+                'source_temporal_status':g['temporal_status'],
+                'canonical_kickoff_qualification':'NOT_ESTABLISHED_BY_PUBLIC_BOARD',
+                'next_action':'INDEPENDENT_KICKOFF_QUALIFICATION_BEFORE_DECISION'})
+          assert len(rows)==33 and len({x['game_id'] for x in rows})==33
+          result={'schema':'CFB_WEEK9_KICKOFF_SOURCE_EVIDENCE_QUEUE_V1',
+            'source_capture':'2026-10-30T23:43:31.761Z',
+            'source_scope':'CBS_DISPLAY_ONLY_NOT_INDEPENDENT_KICKOFF_AUTHORITY',
+            'rows':rows,'new_decisions':0,'canonical_mutations':0}
+          out=Path('week9-kickoff-source-queue.json')
+          out.write_text(json.dumps(result,indent=2)+'\\n')
+          print('KICKOFF_SOURCE_QUEUE',len(rows),'DISPLAY_TIMES',sum(x['source_display_kickoff_utc'] is not None for x in rows))
+          PY
+      - name: Preserve Week9 kickoff evidence reconciliation artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-week9-33-case-kickoff-source-queue
+          path: week9-kickoff-source-queue.json
+          retention-days: 14
+          if-no-files-found: error
       - name: Boundary statement
         if: always()
         run: |
