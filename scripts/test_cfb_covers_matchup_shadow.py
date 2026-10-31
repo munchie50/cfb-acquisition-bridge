@@ -67,6 +67,18 @@ sidebar /matchup/222
             result, {"status": "UNRESOLVED", "game_id": None},
             {"rows": [row]})["new_candidate_branches"], 0)
 
+    def test_repeated_same_side_does_not_qualify_as_pair(self):
+        result = inspect(SAMPLE, URL, CLOCK)
+        result["displayed_moneyline_rows"] = [
+            {"displayed_moneyline": -172}, {"displayed_moneyline": -172}]
+        match = {"status": "SHADOW_IDENTITY_MATCH_ONLY", "game_id": "401856743"}
+        row = {"game_id": "401856743", "branches": {
+            "away_ml": {"availability": "MISSING"},
+            "home_ml": {"availability": "MISSING"}}}
+        reconciled = reconcile_shadow_moneylines(result, match, {"rows": [row]})
+        self.assertEqual(reconciled["status"], "INCOMPLETE_PAIR")
+        self.assertEqual(reconciled["new_candidate_branches"], 0)
+
     def test_fail_closed_identity_and_clock(self):
         with self.assertRaises(ValueError):
             inspect(SAMPLE, "https://example.com/odds", CLOCK)
