@@ -21,9 +21,16 @@ def report(board):
         rows.append({"game_id": game_id, "matchup": name,
                      "cbs_missing_moneyline_branches": missing,
                      "unqualified_candidate_count": len(missing)})
+    unpriced = [row for row in board["rows"] if all(
+        field["availability"] != "DISPLAYED" for field in row["branches"].values())]
     return {"status": "SHADOW_CANDIDATE_GAP_REPORT_ONLY",
             "acquisition_priority": "UNPRICED_GAMES_FIRST",
             "source_incremental_yield": "ZERO" if not any(r["unqualified_candidate_count"] for r in rows) else "CANDIDATES_ONLY",
+            "unpriced_games_priority_queue": [{"game_id": r["game_id"],
+                                               "away_team": r["away_team"],
+                                               "home_team": r["home_team"]}
+                                              for r in unpriced],
+            "unpriced_games_count": len(unpriced),
             "observed_pair_games": len(rows),
             "candidate_missing_branches": sum(r["unqualified_candidate_count"] for r in rows),
             "prices_freshness_verified": False, "decision_authorized": False, "rows": rows}
