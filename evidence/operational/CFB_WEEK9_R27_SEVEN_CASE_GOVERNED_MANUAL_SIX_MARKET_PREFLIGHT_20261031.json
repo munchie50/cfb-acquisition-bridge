@@ -1,0 +1,817 @@
+{
+  "schema": "CFB_WEEK9_R27_GOVERNED_MANUAL_SIX_MARKET_PREFLIGHT_NOT_PRODUCTION_DECISIONS",
+  "recorded_by_utc": "2026-10-31T03:19:21.093Z",
+  "clock_semantics": "ANALYST_RECORDING_ONLY; no operator update or sportsbook execution clock",
+  "parent_r26_blob": "452f5ea9d3453345f4e15d8499abc8111ca57f03",
+  "case_count": 7,
+  "branch_preflights": 42,
+  "genuinely_certified_decision_rows": 0,
+  "qualified_packet_certifications": 0,
+  "approved_bets": 0,
+  "guards": [
+    "No new model, odds-derived EV or price limit introduced.",
+    "Branch preflight is NOT a qualified Champion six-market decision.",
+    "Prior CONDITIONAL rows are NOT approved; original cutoffs fixed.",
+    "No user venue stake limit/offer authentication, no full current personnel certification.",
+    "Do not publish canonical Hot Sheet."
+  ],
+  "cases": [
+    {
+      "game_id": "401856735",
+      "game": "Auburn @ Ole Miss",
+      "kickoff_utc": "2026-10-31T16:45:00.000Z",
+      "original_cutoff_utc": null,
+      "original_first_frozen": {
+        "pred_margin": "4.319371690827976",
+        "pred_total": "59.13033031639755",
+        "pred_win": "0.6322317619339572"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "8.739353135632816",
+        "pred_total": "58.18939371968697",
+        "pred_win": "0.7191245758018957",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "model_conflict_or_movement": "Ole Miss home margin FIRST_FROZEN +4.319 vs Oct27 +8.739; public FanDuel live team page shows no spread, ML or total.",
+      "material_personnel_review": "Secondary Oct30 SEC report summary: Ole Miss RB Kewan Lacy out, OL Terez Davis questionable; Auburn WR Koger questionable. Final official SEC roster not independently parsed.",
+      "personnel_sources": [
+        {
+          "source": "https://www.secsports.com/fbreports",
+          "type": "OFFICIAL_REPORT_INDEX",
+          "finding": "SEC report index identified; exact final official game statuses not independently parsed."
+        },
+        {
+          "source": "https://www.hottytoddy.com/2026/10/30/464711ole-miss-auburn-thursday-injury-report-no-changes/",
+          "type": "SECONDARY_PERSONNEL",
+          "finding": "Ole Miss RB Kewan Lacy out, OL Terez Davis questionable, Sanders/Howes probable; Auburn WR Koger questionable. Public FanDuel page displays all six markets unavailable."
+        }
+      ],
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/auburn-tigers/odds",
+        "scrape_id": "01a18ff4-61b7-775d-96d8-6e46a810f4af",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": null
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "displayed_quote": null,
+          "qualitative_reconciliation": "No current FanDuel displayed spread; operator editorial odds cannot substitute.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "displayed_quote": null,
+          "qualitative_reconciliation": "No current FanDuel displayed spread; operator editorial odds cannot substitute.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "displayed_quote": null,
+          "qualitative_reconciliation": "No current FanDuel displayed moneyline; no executable offer.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "displayed_quote": null,
+          "qualitative_reconciliation": "No current FanDuel displayed moneyline; no executable offer.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "displayed_quote": null,
+          "qualitative_reconciliation": "No current FanDuel displayed total; secondary editorial totals differ and are not executable.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "displayed_quote": null,
+          "qualitative_reconciliation": "No current FanDuel displayed total; personnel and venue unqualified.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "bet_approval": "NONE",
+      "next_action": "Qualified material news and calibrated six-market comparative decision plus authenticated user venue quote/limit before original cutoff; otherwise expire."
+    },
+    {
+      "game_id": "401858278",
+      "game": "SMU @ Syracuse",
+      "kickoff_utc": "2026-10-31T16:00:00.000Z",
+      "original_cutoff_utc": null,
+      "original_first_frozen": {
+        "pred_margin": "0.7535424806658062",
+        "pred_total": "55.796843174858715",
+        "pred_win": "0.48963770327433453"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "-4.273699421598012",
+        "pred_total": "57.49488376420339",
+        "pred_win": "0.37741871477853456",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "model_conflict_or_movement": "SMU @ Syracuse home margin FIRST_FROZEN +0.754 versus Oct27 -4.274 (direction reversal); public SMU -8.5.",
+      "material_personnel_review": "ACC official preview: Syracuse QB Steve Angeli returned after injuries; SMU Jennings passing efficiency and third-down defense material. Full final personnel clearance absent.",
+      "personnel_sources": [
+        {
+          "source": "https://theacc.com/news/2026/10/29/football-week-9-saturday-preview-eight-acc-conference-games-on-tap.aspx",
+          "type": "OFFICIAL_CONFERENCE_PREVIEW",
+          "finding": "SMU QB Jennings 2062 yards and 19 TD; Syracuse QB Steve Angeli returned after injury; Syracuse receiving production and SMU third-down defense both material. No full final medical clearance."
+        }
+      ],
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/smu-mustangs/odds",
+        "scrape_id": "01a18ff4-61f0-729d-897a-6e8d70677bd7",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": -8.5,
+            "american_price": -114
+          },
+          "home_spread": {
+            "line": 8.5,
+            "american_price": -106
+          },
+          "away_ml": {
+            "american_price": -345
+          },
+          "home_ml": {
+            "american_price": 275
+          },
+          "over_total": {
+            "line": 58.5,
+            "american_price": -108
+          },
+          "under_total": {
+            "line": 58.5,
+            "american_price": -112
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "displayed_quote": {
+            "line": -8.5,
+            "american_price": -114
+          },
+          "qualitative_reconciliation": "SMU -8.5 vs refreshed away lean ~4.27 raw points, not a qualified cover probability.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "displayed_quote": {
+            "line": 8.5,
+            "american_price": -106
+          },
+          "qualitative_reconciliation": "Syracuse +8.5 numerically differs from raw margin but QB return and model reversal not fully reconciled.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "displayed_quote": {
+            "american_price": -345
+          },
+          "qualitative_reconciliation": "SMU -345 lacks certified current win probability and venue.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "displayed_quote": {
+            "american_price": 275
+          },
+          "qualitative_reconciliation": "Syracuse +275 not justified without personnel/price calibration.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "displayed_quote": {
+            "line": 58.5,
+            "american_price": -108
+          },
+          "qualitative_reconciliation": "58.5 near refreshed 57.495 but no calibrated over rationale.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "displayed_quote": {
+            "line": 58.5,
+            "american_price": -112
+          },
+          "qualitative_reconciliation": "58.5 near refreshed 57.495 but no calibrated under rationale.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "bet_approval": "NONE",
+      "next_action": "Qualified material news and calibrated six-market comparative decision plus authenticated user venue quote/limit before original cutoff; otherwise expire."
+    },
+    {
+      "game_id": "401858502",
+      "game": "Wisconsin @ Iowa",
+      "kickoff_utc": "2026-10-31T16:00:00.000Z",
+      "original_cutoff_utc": null,
+      "original_first_frozen": {
+        "pred_margin": "16.953003336948186",
+        "pred_total": "47.43327995301615",
+        "pred_win": "0.8105510430012315"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "7.08391260176766",
+        "pred_total": "46.74486988169926",
+        "pred_win": "0.6514674433645037",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "model_conflict_or_movement": "Iowa home margin FIRST_FROZEN +16.953 versus Oct27 +7.084; public Iowa -1.5. Both raw model totals around 47 vs public 36.5, but no automatic edge.",
+      "material_personnel_review": "Official Iowa Moulton, Brown and Wilson out; Doll doubtful. Wisconsin Bates out and Nelson doubtful; material personnel review not yet qualified.",
+      "personnel_sources": [
+        {
+          "source": "https://app.hdintelligence.com/?conf=B10&source=B10&sport=Football&type=archive",
+          "type": "OFFICIAL_AVAILABILITY",
+          "finding": "Iowa Moulton, Tyler Brown and Trent Wilson out, Doll doubtful; Wisconsin Bates out, Nelson doubtful, Burks probable. Material role review incomplete."
+        }
+      ],
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/wisconsin-badgers/odds",
+        "scrape_id": "01a18ff4-61e1-70fd-bef0-717870b5bd84",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 1.5,
+            "american_price": -104
+          },
+          "home_spread": {
+            "line": -1.5,
+            "american_price": -118
+          },
+          "away_ml": {
+            "american_price": 106
+          },
+          "home_ml": {
+            "american_price": -128
+          },
+          "over_total": {
+            "line": 36.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 36.5,
+            "american_price": -110
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "displayed_quote": {
+            "line": 1.5,
+            "american_price": -104
+          },
+          "qualitative_reconciliation": "Wisconsin +1.5 not justified from uncalibrated margin and material Iowa personnel absences.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "displayed_quote": {
+            "line": -1.5,
+            "american_price": -118
+          },
+          "qualitative_reconciliation": "Iowa -1.5 appears different from raw margin but player availability, calibration and venue remain open.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "displayed_quote": {
+            "american_price": 106
+          },
+          "qualitative_reconciliation": "Wisconsin +106 no qualified price model.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "displayed_quote": {
+            "american_price": -128
+          },
+          "qualitative_reconciliation": "Iowa -128 no qualified price model.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "displayed_quote": {
+            "line": 36.5,
+            "american_price": -110
+          },
+          "qualitative_reconciliation": "Raw totals >36.5 are numerical research, not a calibrated over or guaranteed bet.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "displayed_quote": {
+            "line": 36.5,
+            "american_price": -110
+          },
+          "qualitative_reconciliation": "Raw totals >36.5 oppose simple under thesis; no qualified current under rationale.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "bet_approval": "NONE",
+      "next_action": "Qualified material news and calibrated six-market comparative decision plus authenticated user venue quote/limit before original cutoff; otherwise expire."
+    },
+    {
+      "game_id": "401858503",
+      "game": "Illinois @ Maryland",
+      "kickoff_utc": "2026-10-31T16:00:00.000Z",
+      "original_cutoff_utc": "2026-10-31T14:00:00Z",
+      "original_first_frozen": {
+        "pred_margin": "6.678168905095836",
+        "pred_total": "57.3814294930684",
+        "pred_win": "0.6251673219208373"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "-3.245981838909556",
+        "pred_total": "57.32234935328297",
+        "pred_win": "0.3999772307783966",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "model_conflict_or_movement": "FIRST_FROZEN home +6.678 versus accepted Oct27 home -3.246; 9.924-point reversal. Original Illinois Houser injury was already considered, not a new veto.",
+      "material_personnel_review": "Official Maryland WR Sean Williams and OL Trevor Szymanski doubtful; Illinois WR Jayshon Platt out and Houser doubtful. Final gameday report not published.",
+      "personnel_sources": [
+        {
+          "source": "https://app.hdintelligence.com/?conf=B10&source=B10&sport=Football&type=archive",
+          "type": "OFFICIAL_AVAILABILITY",
+          "finding": "Maryland Sean Williams and Trevor Szymanski downgraded to doubtful; Illinois Jayshon Platt out, Houser doubtful. Houser/Clayton context was already in original review; final gameday status not published."
+        },
+        {
+          "source": "https://fightingillini.com/news/2026/10/26/football-illinois-travels-east-for-matchup-at-maryland",
+          "type": "OFFICIAL_PREVIEW",
+          "finding": "Illinois Houser broken hand and Michael Clayton II replacement already established; not a new rejection."
+        }
+      ],
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/illinois-fighting-illini/odds",
+        "scrape_id": "01a18ff4-2fd6-71ab-8814-69e16fecdce1",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": -2.5,
+            "american_price": -120
+          },
+          "home_spread": {
+            "line": 2.5,
+            "american_price": -102
+          },
+          "away_ml": {
+            "american_price": -137
+          },
+          "home_ml": {
+            "american_price": 114
+          },
+          "over_total": {
+            "line": 53.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 53.5,
+            "american_price": -110
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "displayed_quote": {
+            "line": -2.5,
+            "american_price": -120
+          },
+          "qualitative_reconciliation": "Refreshed Illinois directional advantage conflicts with original Maryland advantage; no calibrated cover estimate.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "displayed_quote": {
+            "line": 2.5,
+            "american_price": -102
+          },
+          "qualitative_reconciliation": "Public Maryland +2.5/-102 meets original numerical condition but reversal and Maryland WR/OL downgrades invalidate automatic approval.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "displayed_quote": {
+            "american_price": -137
+          },
+          "qualitative_reconciliation": "Illinois ML is not justified by a qualified probability or verified user venue.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "displayed_quote": {
+            "american_price": 114
+          },
+          "qualitative_reconciliation": "Maryland ML conflicts with accepted refresh directional model and lacks qualified price/venue.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "displayed_quote": {
+            "line": 53.5,
+            "american_price": -110
+          },
+          "qualitative_reconciliation": "Both raw Champion totals above displayed 53.5, but injuries, pace and calibration not resolved; not an over recommendation.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "displayed_quote": {
+            "line": 53.5,
+            "american_price": -110
+          },
+          "qualitative_reconciliation": "Both raw totals above 53.5; no independently qualified under case or venue quote.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "bet_approval": "NONE",
+      "next_action": "Qualified material news and calibrated six-market comparative decision plus authenticated user venue quote/limit before original cutoff; otherwise expire."
+    },
+    {
+      "game_id": "401858509",
+      "game": "Ohio State @ USC",
+      "kickoff_utc": "2026-10-31T23:30:00.000Z",
+      "original_cutoff_utc": "2026-10-31T20:00:00Z",
+      "original_first_frozen": {
+        "pred_margin": "-3.5107340607820996",
+        "pred_total": "58.13872602489042",
+        "pred_win": "0.4104226295196134"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "-2.986887063908412",
+        "pred_total": "56.4166325792932",
+        "pred_win": "0.432166814915077",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "model_conflict_or_movement": "FIRST_FROZEN total 58.139 and Oct27 S0 total 56.417 both exceed public 51.5; under 51.5 conflicts with both.",
+      "material_personnel_review": "Official Ohio State Sayin out; Boyd, Eli Lee, Deshawn Stewart out; USC Terrell Anderson out and multiple OL/defensive absences. Final report unavailable.",
+      "personnel_sources": [
+        {
+          "source": "https://app.hdintelligence.com/?conf=B10&source=B10&sport=Football&type=archive",
+          "type": "OFFICIAL_AVAILABILITY",
+          "finding": "Ohio State Sayin out, Boyd/Lee/Stewart out, Miller available; USC Anderson out and other defensive/OL absences. Final gameday status not published."
+        }
+      ],
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/ohio-state-buckeyes/odds",
+        "scrape_id": "01a18ff4-302b-7492-885d-265ac416df53",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": -6.5,
+            "american_price": -110
+          },
+          "home_spread": {
+            "line": 6.5,
+            "american_price": -110
+          },
+          "away_ml": {
+            "american_price": -220
+          },
+          "home_ml": {
+            "american_price": 184
+          },
+          "over_total": {
+            "line": 51.5,
+            "american_price": -105
+          },
+          "under_total": {
+            "line": 51.5,
+            "american_price": -115
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "displayed_quote": {
+            "line": -6.5,
+            "american_price": -110
+          },
+          "qualitative_reconciliation": "Ohio State favored in both snapshots but market -6.5 differs from raw margins; no qualified cover probability.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "displayed_quote": {
+            "line": 6.5,
+            "american_price": -110
+          },
+          "qualitative_reconciliation": "USC +6.5 not justified without qualified opponent and personnel adjustment.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "displayed_quote": {
+            "american_price": -220
+          },
+          "qualitative_reconciliation": "Ohio State -220 cannot be assessed against uncalibrated current win probability.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "displayed_quote": {
+            "american_price": 184
+          },
+          "qualitative_reconciliation": "USC +184 likewise lacks certified price and personnel reconciliation.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "displayed_quote": {
+            "line": 51.5,
+            "american_price": -105
+          },
+          "qualitative_reconciliation": "Raw totals above 51.5 are research only; not a calibrated over edge.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "displayed_quote": {
+            "line": 51.5,
+            "american_price": -115
+          },
+          "qualitative_reconciliation": "Original Under 51.5 conditional explicitly opposed by both accepted Champion totals; no calibrated adjustment supporting it.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "bet_approval": "NONE",
+      "next_action": "Qualified material news and calibrated six-market comparative decision plus authenticated user venue quote/limit before original cutoff; otherwise expire."
+    },
+    {
+      "game_id": "401861966",
+      "game": "UConn @ Air Force",
+      "kickoff_utc": "2026-10-31T19:00:00.000Z",
+      "original_cutoff_utc": null,
+      "original_first_frozen": {
+        "pred_margin": "4.495233795120177",
+        "pred_total": "50.64650245925968",
+        "pred_win": "0.654638460129586"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "2.1071318144243523",
+        "pred_total": "52.27585991211651",
+        "pred_win": "0.605109129378246",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "model_conflict_or_movement": "FIRST_FROZEN Air Force home margin +4.495 versus Oct27 +2.107; public UConn -1.5. Numeric directional comparison is not a bet.",
+      "material_personnel_review": "Air Force Evan Medders out; Josh Johnson or Howard Fisher IV replacement unconfirmed, guard Alec Falk unavailable; material offensive role unresolved.",
+      "personnel_sources": [
+        {
+          "source": "https://gazette.com/2026/10/26/next-next-man-up-depth-chart-shows-air-force-again-will-have-new-qb/",
+          "type": "PUBLISHED_DEPTH_CHART",
+          "finding": "Evan Medders removed from depth chart; Josh Johnson and Howard Fisher IV potential replacements; guard Alec Falk unavailable. Starter unconfirmed and model adjustment not authorized."
+        }
+      ],
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/air-force-falcons/odds",
+        "scrape_id": "01a18ff4-61f0-712a-936c-8c8ab6f70a4d",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": -1.5,
+            "american_price": -106
+          },
+          "home_spread": {
+            "line": 1.5,
+            "american_price": -114
+          },
+          "away_ml": {
+            "american_price": -113
+          },
+          "home_ml": {
+            "american_price": -106
+          },
+          "over_total": {
+            "line": 51.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 51.5,
+            "american_price": -110
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "displayed_quote": {
+            "line": -1.5,
+            "american_price": -106
+          },
+          "qualitative_reconciliation": "UConn -1.5 public favorite vs raw Air Force model lean; no quarterback-adjusted cover probability.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "displayed_quote": {
+            "line": 1.5,
+            "american_price": -114
+          },
+          "qualitative_reconciliation": "Air Force +1.5 looks numerically different from raw model but replacement quarterback prevents qualification.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "displayed_quote": {
+            "american_price": -113
+          },
+          "qualitative_reconciliation": "UConn -113 cannot be qualified with unknown Air Force QB effect.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "displayed_quote": {
+            "american_price": -106
+          },
+          "qualitative_reconciliation": "Air Force -106 cannot be qualified with unknown QB and no venue offer.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "displayed_quote": {
+            "line": 51.5,
+            "american_price": -110
+          },
+          "qualitative_reconciliation": "Total 51.5 vs raw 50.647/52.276 straddles; not calibrated and quarterback impact unknown.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "displayed_quote": {
+            "line": 51.5,
+            "american_price": -110
+          },
+          "qualitative_reconciliation": "Total 51.5 straddles raw projections; no justified under advantage.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "bet_approval": "NONE",
+      "next_action": "Qualified material news and calibrated six-market comparative decision plus authenticated user venue quote/limit before original cutoff; otherwise expire."
+    },
+    {
+      "game_id": "401866452",
+      "game": "Bowling Green @ Western Michigan",
+      "kickoff_utc": "2026-10-31T16:00:00.000Z",
+      "original_cutoff_utc": null,
+      "original_first_frozen": {
+        "pred_margin": "24.79105402559233",
+        "pred_total": "45.24073756922628",
+        "pred_win": "0.9257804353494328"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "11.894442630270191",
+        "pred_total": "48.05284041587808",
+        "pred_win": "0.7644289577992259",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "model_conflict_or_movement": "Western Michigan home margin FIRST_FROZEN +24.791 versus Oct27 +11.894; public Western Michigan -13.5, 12.897-point projection change.",
+      "material_personnel_review": "Official Western Michigan game preview exists; exhaustive current personnel report not certified. Saved material moneyline drift remains.",
+      "personnel_sources": [
+        {
+          "source": "https://wmubroncos.com/news/2026/10/30/football-hosts-bowling-green-for-halloween-showdown.aspx",
+          "type": "OFFICIAL_PREVIEW",
+          "finding": "October30 home-game preview exists; current exhaustive personnel status not established."
+        }
+      ],
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/bowling-green-falcons/odds",
+        "scrape_id": "01a18ff4-61f1-751a-ba5f-f6b2bd1a56a7",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 13.5,
+            "american_price": 100
+          },
+          "home_spread": {
+            "line": -13.5,
+            "american_price": -122
+          },
+          "away_ml": {
+            "american_price": 500
+          },
+          "home_ml": {
+            "american_price": -690
+          },
+          "over_total": {
+            "line": 44.5,
+            "american_price": -115
+          },
+          "under_total": {
+            "line": 44.5,
+            "american_price": -105
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "displayed_quote": {
+            "line": 13.5,
+            "american_price": 100
+          },
+          "qualitative_reconciliation": "Bowling Green +13.5 near refreshed raw home margin but not calibrated.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "displayed_quote": {
+            "line": -13.5,
+            "american_price": -122
+          },
+          "qualitative_reconciliation": "Western Michigan -13.5 above refreshed raw home margin; no certified cover probability.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "displayed_quote": {
+            "american_price": 500
+          },
+          "qualitative_reconciliation": "Bowling Green +500 historical market drift and unqualified price model.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "displayed_quote": {
+            "american_price": -690
+          },
+          "qualitative_reconciliation": "Western Michigan -690 historical market drift and unqualified price model.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "displayed_quote": {
+            "line": 44.5,
+            "american_price": -115
+          },
+          "qualitative_reconciliation": "44.5 vs raw totals 45.241/48.053 is not a calibrated over edge.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "displayed_quote": {
+            "line": 44.5,
+            "american_price": -105
+          },
+          "qualitative_reconciliation": "44.5 vs raw totals does not establish under advantage.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "bet_approval": "NONE",
+      "next_action": "Qualified material news and calibrated six-market comparative decision plus authenticated user venue quote/limit before original cutoff; otherwise expire."
+    }
+  ]
+}
