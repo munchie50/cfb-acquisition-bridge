@@ -1,0 +1,82 @@
+{
+  "schema": "CFB_WEEK9_R72_FROZEN_WIN_PROBABILITY_CONFIDENCE_AUDIT",
+  "source_path": "evidence/operational/CFB_WEEK9_R69_INCREMENTAL_FROZEN_OUTCOME_RECONCILIATION_20261031.json",
+  "source_blob": "e0f1bda9fc16ef0440db8b5746928ed4c258c350",
+  "status": "EXPLORATORY_DIAGNOSTIC_ONLY_NOT_CALIBRATION_ACCEPTANCE",
+  "n": 20,
+  "bins": [
+    {
+      "bin": "0.50–0.59",
+      "n": 4,
+      "correct": 1,
+      "accuracy": 0.25
+    },
+    {
+      "bin": "0.60–0.69",
+      "n": 7,
+      "correct": 3,
+      "accuracy": 0.42857142857142855
+    },
+    {
+      "bin": "0.70–0.79",
+      "n": 3,
+      "correct": 1,
+      "accuracy": 0.3333333333333333
+    },
+    {
+      "bin": "0.80–1.00",
+      "n": 6,
+      "correct": 4,
+      "accuracy": 0.6666666666666666
+    }
+  ],
+  "high_confidence_examples": [
+    {
+      "game_id": "401871071",
+      "prob": 0.06732082932182616,
+      "outcome": 0,
+      "confidence": 0.9326791706781739,
+      "correct": 1,
+      "brier": 0.004532094060578449
+    },
+    {
+      "game_id": "401866452",
+      "prob": 0.9257804353494328,
+      "outcome": 1,
+      "confidence": 0.9257804353494328,
+      "correct": 1,
+      "brier": 0.0055085437769197285
+    },
+    {
+      "game_id": "401869963",
+      "prob": 0.9130829522301803,
+      "outcome": 0,
+      "confidence": 0.9130829522301803,
+      "correct": 0,
+      "brier": 0.8337204776533818
+    },
+    {
+      "game_id": "401866451",
+      "prob": 0.8695363256687552,
+      "outcome": 1,
+      "confidence": 0.8695363256687552,
+      "correct": 1,
+      "brier": 0.017020770320009114
+    },
+    {
+      "game_id": "401856846",
+      "prob": 0.164036895339676,
+      "outcome": 1,
+      "confidence": 0.835963104660324,
+      "correct": 0,
+      "brier": 0.6988343123533278
+    }
+  ],
+  "limitations": [
+    "20 final modeled games only; 30 original games still pending",
+    "Confidence bins are small and not independently calibrated",
+    "No wagering edge, ROI or ATS inference",
+    "No Champion promotion or tuning"
+  ],
+  "production_complete": false
+}
