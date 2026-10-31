@@ -59,3 +59,6 @@ A real git ls-remote to the connected repository URL failed in this container wi
 
 ## Cloud runner boundary review, 2026-10-31
 Inspected .github/workflows/cfb_catchup_batch_20261027_once.yml. It uses GitHub-hosted ubuntu-latest Python, but its trigger is only a push changing that workflow path; pinned historical Week9 research, 23 open games, and read-only artifact upload. It explicitly does not author decisions, mutate canonical records, or complete Market Monitor. Do not repurpose as live producer or assert cloud execution passed. A separate governed runtime-backed producer design would require fresh-source, review, validator and acceptance controls; scheduler issue remains distinct.
+
+## Hosted runtime smoke gate — 2026-10-31
+Added .github/workflows/cfb_producer_runtime_smoke_manual.yml in commit 5060873fdcdce4c2e8ba672004b1c912498668da; independent readback verified SHA f3b1a5fd9008d9afafe86ce0b9c2d0d3b2521e9b. Manual workflow_dispatch only, contents:read, syntax-check governed scripts and run isolated classifier tests; no source collection, canonical writes, decisions, or schedule. All referenced scripts/test file were separately fetched and found. GitHub connector exposes run/job inspection but no dispatch action: EXECUTED and hosted runtime VERIFIED are pending. Do not claim runner pass from configuration readback.
