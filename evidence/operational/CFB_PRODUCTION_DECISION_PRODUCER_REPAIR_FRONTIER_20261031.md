@@ -56,3 +56,6 @@ User-authorized existing Market Monitor run_now accepted; saved schedule unchang
 
 ## Container runtime probe, 2026-10-31
 A real git ls-remote to the connected repository URL failed in this container with DNS error: Could not resolve host: github.com. This is a container network limitation only, not proof of scheduler root cause. No pinned checkout or producer execution passed. The earlier immediate Market Monitor invocation 54270fbd-db54-8327-9855-4690c33f4f1f ended NO_UPDATE with null chat_ref. Preserve four tasks and fail closed.
+
+## Cloud runner boundary review, 2026-10-31
+Inspected .github/workflows/cfb_catchup_batch_20261027_once.yml. It uses GitHub-hosted ubuntu-latest Python, but its trigger is only a push changing that workflow path; pinned historical Week9 research, 23 open games, and read-only artifact upload. It explicitly does not author decisions, mutate canonical records, or complete Market Monitor. Do not repurpose as live producer or assert cloud execution passed. A separate governed runtime-backed producer design would require fresh-source, review, validator and acceptance controls; scheduler issue remains distinct.
