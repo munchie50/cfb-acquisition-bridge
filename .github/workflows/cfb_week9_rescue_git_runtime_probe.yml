@@ -182,6 +182,48 @@ jobs:
           path: week9-kickoff-source-queue.json
           retention-days: 14
           if-no-files-found: error
+      - name: Execute authentic Week9 compiler replay with preserved decisions (historical dry-run only)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - "$RUNNER_TEMP/week9-producer-replay.json" <<'PY'
+          import json,sys
+          from pathlib import Path
+          sys.path.insert(0,'scripts')
+          import cfb_neutral_publication_gate as gate
+          from cfb_week9_publication import compile
+          market=Path('evidence/operational/CFB_MARKET_MONITOR_STATE.md').read_text()
+          decision=Path('evidence/operational/CFB_DECISION_WAIT_LEDGER.md').read_text()
+          lineage=Path('evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json').read_text()
+          capture=Path('evidence/operational/CFB_WEEK9_LIVE_CBS_CAPTURE_20261030_RESCUE.md').read_text()
+          at='2026-10-30T23:59:00Z'
+          recovered='2026-10-30T23:58:00Z'
+          result={'schema':'CFB_WEEK9_AUTHENTIC_COMPILER_HISTORICAL_DRY_RUN_V1',
+            'mode':'READ_ONLY_HISTORICAL_REPLAY_NOT_CURRENT_PRODUCTION_DECISION',
+            'recovered_by_utc':recovered,'as_of_utc':at,'new_champion_reviews':0,
+            'venue_qualified':False,'new_wagers_approved':0,'canonical_mutations':0}
+          try:
+              selected=gate.selected_block(market,gate.profile_config('WEEK9')['market_tag'],
+                  (gate.MARKET_SCHEMA,gate.WEEKLY_MARKET_SCHEMA),gate.clock(at))
+              _,_,_,_,saved=gate.inputs(market,decision,lineage,selected['as_of_utc'],'WEEK9')
+              rows=[{k:v for k,v in x.items() if k not in ('state_recorded_at_utc','state_evidence')} for x in saved.values()]
+              assert len(rows)==56 and len({x['game_id'] for x in rows})==56
+              pm,pd=compile(market,decision,capture,lineage,'CFB_WEEK9_RESCUE_DRY_RUN_ONLY',at,recovered,rows)
+              result.update(status='VALIDATED_PROPOSALS_HISTORICAL_REPLAY_ONLY',
+                  market_blob=gate.blob(pm),decision_blob=gate.blob(pd),games=56,
+                  note='Compiler executed on preserved decisions; not a new Champion six-branch review, current quote, or publication.')
+          except Exception as exc:
+              result.update(status='DRY_RUN_REJECTED',error_type=type(exc).__name__,error=str(exc))
+          Path(sys.argv[1]).write_text(json.dumps(result,indent=2)+'\n')
+          print(json.dumps(result))
+          PY
+      - name: Preserve authentic compiler replay result
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-week9-authentic-compiler-historical-replay
+          path: ${{ runner.temp }}/week9-producer-replay.json
+          retention-days: 14
+          if-no-files-found: error
       - name: Boundary statement
         if: always()
         run: |
