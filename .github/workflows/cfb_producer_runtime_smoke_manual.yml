@@ -37,6 +37,12 @@ jobs:
                             "files_checked":required,
                             "scope":"No source collection, decision authoring, publication, or scheduler acceptance"}))
           PY
+      - name: Validate genuine pinned ancestry and immutable review references
+        shell: bash
+        run: |
+          set -euo pipefail
+          HEAD_SHA="$(git rev-parse HEAD)"
+          python scripts/cfb_runtime_checkout.py --destination "$RUNNER_TEMP/cfb-pinned-verified" --expected-head "$HEAD_SHA"
       - name: Run isolated failure classifier regression
         shell: bash
         run: |
