@@ -4,7 +4,7 @@ import re
 import sys
 
 # Explicit source naming equivalence, not general fuzzy matching.
-COVERS_TEAM_ALIASES = {"Mississippi": "Ole Miss", "Miami (FL)": "Miami"}
+COVERS_TEAM_ALIASES = {"Mississippi": "Ole Miss", "Miami (FL)": "Miami", "UMass": "Massachusetts"}
 
 def match_canonical_pair(result, baseline):
     """Exact, unique team-pair match; no fuzzy joins or inferred kickoff."""
