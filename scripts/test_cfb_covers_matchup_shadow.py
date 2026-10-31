@@ -1,5 +1,5 @@
 import unittest
-from cfb_covers_matchup_shadow import inspect, match_canonical_pair
+from cfb_covers_matchup_shadow import inspect, match_canonical_pair, discover_dated_matchups
 
 URL = "https://www.covers.com/sport/football/ncaaf/matchup/378696/odds"
 CLOCK = "2026-10-31T19:00:00Z"
@@ -31,6 +31,16 @@ class CoversShadowTest(unittest.TestCase):
         self.assertFalse(matched["kickoff_independently_verified"])
         self.assertIsNone(match_canonical_pair(result, {"rows": []})["game_id"])
         self.assertIsNone(match_canonical_pair(result, {"rows": baseline["rows"] * 2})["game_id"])
+
+    def test_date_scoped_discovery_excludes_sidebars(self):
+        page = """| Oct 31, 12:00<br>/matchup/111 |
+| Nov 7, 12:00<br>/matchup/378696 |
+| Nov 7, 12:00<br>/matchup/378696 |
+| Nov 6, 19:00<br>/matchup/378718 |
+sidebar /matchup/222
+"""
+        self.assertEqual([x["matchup_id"] for x in discover_dated_matchups(page)],
+                         ["378696", "378718"])
 
     def test_fail_closed_identity_and_clock(self):
         with self.assertRaises(ValueError):
