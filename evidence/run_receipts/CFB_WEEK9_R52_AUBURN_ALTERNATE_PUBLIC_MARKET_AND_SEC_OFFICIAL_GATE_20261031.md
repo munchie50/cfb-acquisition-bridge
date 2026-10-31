@@ -41,3 +41,7 @@
 **Global carry-forward:** R51 35/35 case statuses, 3 expired, 16 saved drift, 9 sign reversals unchanged; Maryland +2.5 NOT APPROVED original 14:00Z cutoff; Ohio State-USC Under51.5 NOT APPROVED original 20:00Z cutoff; Air Force Johnson/Fisher OR starter unresolved. Four standing tasks and temporary rescue remain unchanged. **Next entry:** earliest unexpired Maryland original deadline, then 16:00Z early games and Air Force, Ohio State-USC by 20:00Z. If useful Week9 windows expire without qualified decisions, recommend disabling only temporary rescue. **RUN_INCOMPLETE.**
 
 **Independent post-write readback required before VERIFIED claim.**
+
+## Execution effort accounting
+- Approximate bounded-session wall-clock from automation start **2026-10-31T08:51:33Z** through R52 evidence receipt preparation **2026-10-31T08:54:22Z**: **~2 minutes 49 seconds**. Includes R51 9-case market/personnel preflight, independent R51 readback, alternate Auburn two-source research, official SEC source verification, and R52 write. Readback and protected-file checks completed afterward. This is an execution-effort estimate, **not** a sportsbook offer/source publication clock.
+- Exact per-action duration not instrumented; no invented timing or model-run duration. Independent-work sweep after R52: other early cases had already been refreshed in R51, remaining game-day official reports not yet issued, venue execution unavailable. Preserve next entry at original cutoffs.
