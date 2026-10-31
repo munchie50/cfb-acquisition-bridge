@@ -42,6 +42,17 @@ sidebar /matchup/222
         self.assertEqual([x["matchup_id"] for x in discover_dated_matchups(page)],
                          ["378696", "378718"])
 
+    def test_explicit_aliases_not_fuzzy_matching(self):
+        baseline = {"rows": [
+            {"game_id": "401856741", "away_team": "Georgia", "home_team": "Ole Miss"},
+            {"game_id": "401858291", "away_team": "Miami", "home_team": "Notre Dame"}]}
+        self.assertEqual(match_canonical_pair(
+            {"matchup": "# Georgia vs Mississippi"}, baseline)["game_id"], "401856741")
+        self.assertEqual(match_canonical_pair(
+            {"matchup": "# Miami (FL) vs Notre Dame"}, baseline)["game_id"], "401858291")
+        self.assertIsNone(match_canonical_pair(
+            {"matchup": "# Georgia vs Mississippi State"}, baseline)["game_id"])
+
     def test_fail_closed_identity_and_clock(self):
         with self.assertRaises(ValueError):
             inspect(SAMPLE, "https://example.com/odds", CLOCK)
