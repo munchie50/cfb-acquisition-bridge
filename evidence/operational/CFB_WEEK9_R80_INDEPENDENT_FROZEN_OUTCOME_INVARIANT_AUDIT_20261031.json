@@ -1,0 +1,28 @@
+{
+  "schema": "CFB_WEEK9_R80_INDEPENDENT_FROZEN_OUTCOME_INVARIANT_AUDIT",
+  "source_path": "evidence/operational/CFB_WEEK9_R79_FROZEN_COHORT_INCREMENTAL_OUTCOME_JOIN_20261031.json",
+  "source_blob": "a9d7a50efad4d11364fb7893218055ee7e42b6e6",
+  "original_path": "evidence/operational/CFB_WEEK9_R69_INCREMENTAL_FROZEN_OUTCOME_RECONCILIATION_20261031.json",
+  "original_blob": "e0f1bda9fc16ef0440db8b5746928ed4c258c350",
+  "checks": {
+    "unique_game_ids": true,
+    "immutable_original_frozen_fields": true,
+    "previously_final_rows_unchanged": true,
+    "new_final_delta_exact": true,
+    "score_arithmetic": true,
+    "cohort_45_plus_11": true
+  },
+  "counts": {
+    "total": 56,
+    "modeled": 45,
+    "excluded": 11,
+    "final": 41,
+    "pending": 15,
+    "modeled_finals": 32,
+    "excluded_finals": 9
+  },
+  "issues": [],
+  "scope": "Independent source-to-source structural readback only; ESPN scores not independently verified against official athletics reports",
+  "accepted_structural_audit": true,
+  "production_complete": false
+}
