@@ -17,6 +17,16 @@ class TestBetSharpMarket(unittest.TestCase):
         self.assertFalse(result["decision_authorized"])
         self.assertTrue(result["date_of_update_unverified"])
 
+    def test_unknown_price_format_fails_closed(self):
+        page = "# Example odds\\n## Game lines\\nUpdated 4:51 PM ET\\n"
+        page += "\\n".join(f"| [History](https://betsharp.com/history?m={m}&s={side}) | {price} | {price} |"
+                          for m, side, price in (("ml","away","EVEN<br>Kalshi"),
+                                                 ("ml","home","+100<br>Kalshi"),
+                                                 ("spread","away","-"),("spread","home","-"),
+                                                 ("total","over","-"),("total","under","-")))
+        with self.assertRaises(ValueError):
+            inspect(page, "https://betsharp.com/ncaaf/game/2026-11-07-clemson-tigers-at-syracuse-orange")
+
     def test_unapproved_url_fails(self):
         with self.assertRaises(ValueError):
             inspect("# Example odds", "https://example.org/ncaaf/game/2026-11-07-test")
