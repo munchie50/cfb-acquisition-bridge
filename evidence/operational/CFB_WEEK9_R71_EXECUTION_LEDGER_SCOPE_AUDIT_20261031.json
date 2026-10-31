@@ -1,0 +1,28 @@
+{
+  "schema": "CFB_WEEK9_R71_EXECUTION_LEDGER_SCOPE_AUDIT",
+  "sources": [
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "1a938f42e9f03e723bd50348f8a78dbd8b7098e9"
+    },
+    {
+      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
+      "blob": "fc24ea6274160eebfef2ba22fe060deabfe81f9f"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK9_R69_INCREMENTAL_FROZEN_OUTCOME_RECONCILIATION_20261031.json",
+      "blob": "e0f1bda9fc16ef0440db8b5746928ed4c258c350"
+    }
+  ],
+  "execution_ledger_latest_recorded_batch": "2026-10-23 eight actual tickets; all Week8 final-score graded",
+  "week9_new_approved_bets_in_r60": 0,
+  "week9_actual_wagers_from_current_authoritative_execution_ledger": "NONE_IDENTIFIED_IN_CURRENT_LEDGER",
+  "week9_user_placed_zero_bets": "NOT_PROVEN",
+  "week9_bet_result_grade": "NOT_AUTHORIZED_WITHOUT_EXECUTION_EVIDENCE",
+  "money_ledger_latest_user_confirmed_complete_pot_baseline": "2026-10-23 $61.30; not current verified cash balance",
+  "week9_finals": 26,
+  "week9_pending": 30,
+  "scope": "Read-only authoritative ledger inspection; absence of records is not proof of no real-world execution",
+  "no_mutations_to_ledgers": true,
+  "production_complete": false
+}
