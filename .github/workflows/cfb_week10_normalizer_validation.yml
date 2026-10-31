@@ -18,6 +18,8 @@ on:
       - 'scripts/test_cfb_betsharp_week10_shadow.py'
       - 'scripts/cfb_betsharp_week10_market_shadow.py'
       - 'scripts/test_cfb_betsharp_week10_market_shadow.py'
+      - 'scripts/cfb_betsharp_week10_five_game_reconcile.py'
+      - 'evidence/operational/CFB_BETSHARP_WEEK10_FIVE_GAME_MARKET_SHADOW_20261031.md'
       - 'scripts/test_cfb_covers_matchup_shadow.py'
 jobs:
   bounded-week10-regression:
@@ -36,6 +38,8 @@ jobs:
         run: python -m unittest discover -s scripts -p 'test_cfb_week10_fallback_branch_inventory.py' -v
       - name: Test alternate Covers source qualification boundary
         run: python -m unittest discover -s scripts -p 'test_cfb_covers_matchup_shadow.py' -v
+      - name: Reconcile five captured BetSharp market tables
+        run: python scripts/cfb_betsharp_week10_five_game_reconcile.py > week10_betsharp_five_game_market_shadow.json
       - name: Test BetSharp market side extraction boundary
         run: python -m unittest discover -s scripts -p 'test_cfb_betsharp_week10_market_shadow.py' -v
       - name: Execute six-branch shadow inventory
@@ -78,4 +82,5 @@ jobs:
             week10_acquisition_queue.json
             week10_covers_gap_report.json
             week10_betsharp_shadow_candidates.json
+            week10_betsharp_five_game_market_shadow.json
           retention-days: 14
