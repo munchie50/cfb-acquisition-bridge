@@ -10,11 +10,15 @@ class ClassifierFixtures(unittest.TestCase):
             "WRITE_REJECTED": Evidence(producer_started=True, canonical_write_attempted=True),
             "PARTIAL_SOURCE": Evidence(producer_started=True, canonical_write_attempted=True, canonical_write_accepted=True),
             "PUBLISHED_UNVERIFIED": Evidence(producer_started=True, canonical_write_attempted=True, canonical_write_accepted=True, source_complete=True, publication_present=True),
-            "RUN_PASS": Evidence(producer_started=True, canonical_write_attempted=True, canonical_write_accepted=True, source_complete=True, publication_present=True, independent_publication_verified=True),
+            "RUN_PASS": Evidence(producer_started=True, canonical_write_attempted=True, canonical_write_accepted=True, source_complete=True, publication_present=True, independent_publication_verified=True, terminal_closure_verified=True),
         }
         for expected, evidence in cases.items():
             with self.subTest(expected=expected):
                 self.assertEqual(classify(evidence), expected)
+
+    def test_verified_publication_without_closure_is_not_pass(self):
+        e = Evidence(producer_started=True, canonical_write_accepted=True, source_complete=True, publication_present=True, independent_publication_verified=True)
+        self.assertEqual(classify(e), "PUBLISHED_UNVERIFIED")
 
     def test_no_false_success(self):
         e = Evidence(producer_started=True, canonical_write_accepted=True, source_complete=True, publication_present=True)
