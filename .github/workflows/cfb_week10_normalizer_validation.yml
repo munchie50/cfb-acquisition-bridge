@@ -28,8 +28,13 @@ jobs:
         run: python -m unittest discover -s scripts -p 'test_cfb_week10_fallback_branch_inventory.py' -v
       - name: Execute six-branch shadow inventory
         run: python scripts/cfb_week10_fallback_branch_inventory.py > week10_fallback_inventory.json
+      - name: Export bounded acquisition queue
+        run: |
+          python -c 'import json; b=json.load(open("week10_fallback_inventory.json")); assert not b["decision_authorized"]; q=b["acquisition_queue"]; assert len(q)==46; assert sum(len(x["missing_branches"]) for x in q)==276; json.dump({"status":"ACQUISITION_TARGETS_ONLY","source":b["source"],"decision_authorized":False,"games":len(q),"missing_branches":276,"targets":q},open("week10_acquisition_queue.json","w"),indent=2)'
       - uses: actions/upload-artifact@v4
         with:
           name: week10-fallback-branch-inventory
-          path: week10_fallback_inventory.json
+          path: |
+            week10_fallback_inventory.json
+            week10_acquisition_queue.json
           retention-days: 14
