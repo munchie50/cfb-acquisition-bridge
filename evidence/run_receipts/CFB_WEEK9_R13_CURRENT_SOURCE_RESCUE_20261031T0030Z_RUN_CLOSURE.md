@@ -1,0 +1,13 @@
+# Week9 R13 independent production rescue closure
+
+Status: **RUN_INCOMPLETE**, no current Hot Sheet RUN_PASS, no bet approved.
+
+Independently re-fetched terminal candidate `evidence/run_receipts/CFB_WEEK9_R13_CURRENT_SOURCE_RESCUE_20261031T0030Z_TERMINAL_CANDIDATE.md`, blob `de06bf32a848be84d8133210eac6c4a1ace41a6b`, and verified its RUN_INCOMPLETE and NOT APPROVED boundaries. Re-fetched GitHub Actions authentic current-source normalizer run `41150467985`: status `completed`, conclusion `success`, exact rescue commit `4c91c24cef42e6961423db1cdfd715cdc7621ee9`; prior independent job logs confirmed 56/56 game IDs, 112 team rows, 35/35 CBS-vs-ESPN UTC kickoff agreement, 210 source branch slots, 66 raw changes and zero new Champion decisions. Re-fetched artifact `13022681766`, digest `sha256:67b32bb53d445b3a287421215b7ee5dc8d51522d7f60523165e37725c5f290fb`, name `cfb-week9-r13-current-source-35-case-screen`. Green source normalization is NOT current producer acceptance.
+
+Main R13 case ledger blob `a02f025b9eb9c3eaca8c33a858c658fe9b46321d` (35 historical review cases, 3 immutable conditional refs, 32 accepted PASS rationales without separate packet refs, 24 original cohort-start/current-kickoff discrepancies) and R13 checkpoint blob `85cfb6ef5d7aee43707d408af1c6df6e0cdd00d4` were independently read back. Original frozen Champion, FIRST_FROZEN, v1.245 index, Thursday accepted Hot Sheet and four standing tasks unchanged.
+
+**No current packet-level certifications or Champion six-branch decisions created.** Maryland +2.5/-102 and Ohio State/USC under51.5/-115 are only public book displays, NOT user-venue executable quotes/limits or approved bets. Maryland original deadline Sat Oct31 09:00 CT, OSU/USC Sat15:00 CT. OSU frozen Champion total58.1 opposes under51.5 by6.6; no quantitative under edge. Existing QB issues already considered, with final personnel materiality unverified.
+
+v5.1-C closure levels: Git-enabled substrate, authentic current-source normalizer, independent kickoff crosscheck, historical six-branch review ancestry and source-only 210-branch screen = DEMONSTRATED + INDEPENDENTLY_RECONCILED. Current live Champion decisions, executable venue, guarded publication, natural ChatGPT scheduler and accepted current Hot Sheet = OPEN. Remaining natural trigger: final official news, identified user-venue executable offers/limits, 35 genuine current packet decisions, guarded serial market -> decision -> Hot Sheet -> audit -> index, selected CI and independent readback. If deadlines pass without these, mark EXPIRED/NOT APPROVED without retrospective bets.
+
+RUN_INCOMPLETE
