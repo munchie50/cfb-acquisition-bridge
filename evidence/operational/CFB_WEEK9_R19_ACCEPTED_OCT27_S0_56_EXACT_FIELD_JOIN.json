@@ -1,0 +1,1875 @@
+{
+  "schema": "CFB_WEEK9_R19_EXACT_ACCEPTED_S0_FIELD_JOIN_AND_UNFINISHED_DECISION_GATES",
+  "status": "SOURCE_FIELD_JOIN_ONLY_NOT_SIX_MARKET_DECISIONS_OR_BETTING_ACCEPTANCE",
+  "source": {
+    "candidate_workflow_run_id": 40532875540,
+    "candidate_artifact_id": 12746278820,
+    "candidate_zip_sha256": "29adfe868698d7368627d75ed42f3f2aead825266f3363e697677750b3d1975f",
+    "cutoff_utc": "2026-10-27T15:38:14.731739+00:00",
+    "archive_integrity": "RECHECKED_EXACT_ZIP_SHA256_AND_ALL_17_MANIFEST_FILE_SHA256_WITH_PYTHON;_320_PREDICTIONS_2_EXCLUSIONS_322_TARGETS",
+    "prediction_csv_path": "s0/challenger_b_2026_refresh_fair_predictions_v1_246.csv",
+    "prediction_values": "ORIGINAL_CSV_DECIMAL_STRINGS_UNROUNDED",
+    "accepted_pointer_blob": "42c6fed3dee79be8693d6750122ae08beeb24e3a"
+  },
+  "authority": {
+    "original_week9_lineage_path": "evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json",
+    "original_week9_lineage_blob": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9",
+    "r18_frontier_path": "evidence/operational/CFB_WEEK9_R18_ACCEPTED_S0_DECISION_FRONTIER.json",
+    "r18_frontier_blob": "e7b27557a36aacaa24e209c798ed696e43cbd59a",
+    "prior_35_case_six_branch_crosswalk_blob": "a6501c06e71e028b8cdbc84318d29902cff0a508",
+    "canonical_hot_sheet_blob": "f05173046e51ab9634d47b1be5fe90c2a5026c96"
+  },
+  "counts": {
+    "week9_exact_oct27_prediction_fields": 56,
+    "original_first_frozen_predictions": 45,
+    "original_first_frozen_exclusions": 11,
+    "outstanding_35_joined": 35,
+    "material_market_drift_cases": 16,
+    "original_vs_oct27_home_margin_sign_reversals": 9,
+    "original_vs_oct27_margin_shift_ge_7_points": 14,
+    "new_six_market_decisions": 0,
+    "new_review_certifications": 0,
+    "new_bet_approvals": 0
+  },
+  "priority_model_divergence": [
+    {
+      "game_id": "401866451",
+      "game": "Kent State @ Sacramento State",
+      "original_margin": "19.37754914129643",
+      "oct27_margin": "4.763370771336515",
+      "margin_delta": -14.614178369959916,
+      "market_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ]
+    },
+    {
+      "game_id": "401858284",
+      "game": "Virginia @ Wake Forest",
+      "original_margin": "-5.690307368948456",
+      "oct27_margin": "8.37703072936002",
+      "margin_delta": 14.067338098308475,
+      "market_drift_branches": []
+    },
+    {
+      "game_id": "401866452",
+      "game": "Bowling Green @ Western Michigan",
+      "original_margin": "24.79105402559233",
+      "oct27_margin": "11.894442630270191",
+      "margin_delta": -12.89661139532214,
+      "market_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ]
+    },
+    {
+      "game_id": "401858506",
+      "game": "Purdue @ Penn State",
+      "original_margin": "20.645638272387664",
+      "oct27_margin": "8.797164887714155",
+      "margin_delta": -11.84847338467351,
+      "market_drift_branches": [
+        "home_ml"
+      ]
+    },
+    {
+      "game_id": "401856847",
+      "game": "Oklahoma State @ Iowa State",
+      "original_margin": "5.838154696866955",
+      "oct27_margin": "-5.5520258683198564",
+      "margin_delta": -11.39018056518681,
+      "market_drift_branches": []
+    },
+    {
+      "game_id": "401860910",
+      "game": "Colorado State @ Utah State",
+      "original_margin": "-4.686728804289869",
+      "oct27_margin": "6.390104389224711",
+      "margin_delta": 11.076833193514581,
+      "market_drift_branches": [
+        "home_spread",
+        "away_ml",
+        "home_ml",
+        "over_total"
+      ]
+    },
+    {
+      "game_id": "401871097",
+      "game": "Louisiana Tech @ South Alabama",
+      "original_margin": "5.700510476284662",
+      "oct27_margin": "-4.363049286098879",
+      "margin_delta": -10.06355976238354,
+      "market_drift_branches": []
+    },
+    {
+      "game_id": "401858503",
+      "game": "Illinois @ Maryland",
+      "original_margin": "6.678168905095836",
+      "oct27_margin": "-3.245981838909556",
+      "margin_delta": -9.924150744005392,
+      "market_drift_branches": []
+    },
+    {
+      "game_id": "401858502",
+      "game": "Wisconsin @ Iowa",
+      "original_margin": "16.953003336948186",
+      "oct27_margin": "7.08391260176766",
+      "margin_delta": -9.869090735180524,
+      "market_drift_branches": []
+    },
+    {
+      "game_id": "401871096",
+      "game": "Marshall @ Old Dominion",
+      "original_margin": "10.531260063331388",
+      "oct27_margin": "1.2267294500893389",
+      "margin_delta": -9.304530613242049,
+      "market_drift_branches": []
+    },
+    {
+      "game_id": "401856733",
+      "game": "Missouri @ Arkansas",
+      "original_margin": "-13.144660542665587",
+      "oct27_margin": "-4.1378740611616776",
+      "margin_delta": 9.006786481503909,
+      "market_drift_branches": [
+        "away_ml"
+      ]
+    },
+    {
+      "game_id": "401856737",
+      "game": "Mississippi State @ Texas",
+      "original_margin": "-0.17926022771447103",
+      "oct27_margin": "8.674132866565335",
+      "margin_delta": 8.853393094279806,
+      "market_drift_branches": [
+        "home_ml"
+      ]
+    },
+    {
+      "game_id": "401860924",
+      "game": "Oregon State @ Fresno State",
+      "original_margin": "4.265824312937047",
+      "oct27_margin": "-4.5544327816218715",
+      "margin_delta": -8.820257094558919,
+      "market_drift_branches": []
+    },
+    {
+      "game_id": "401856846",
+      "game": "Kansas State @ Colorado",
+      "original_margin": "-14.59982171248134",
+      "oct27_margin": "-5.877868423347203",
+      "margin_delta": 8.721953289134138,
+      "market_drift_branches": []
+    }
+  ],
+  "critical_cases": {
+    "maryland": {
+      "game_id": "401858503",
+      "deadline_ct": "2026-10-31 09:00",
+      "status": "NOT_APPROVED",
+      "reason": "Original QB already reviewed; 9.924-point frozen-to-Oct27 margin reversal; current six-market decision and venue offer not verified."
+    },
+    "ohio_state_usc": {
+      "game_id": "401858509",
+      "deadline_ct": "2026-10-31 15:00",
+      "status": "NOT_APPROVED",
+      "reason": "FIRST_FROZEN 58.138726 and Oct27 S0 56.416633 both above proposed under 51.5; no qualified under edge or venue offer."
+    },
+    "air_force": {
+      "game_id": "401861966",
+      "status": "NO_NEW_BET_APPROVAL",
+      "reason": "Medders out; replacement/market review not qualified; historical material drift in away spread."
+    }
+  },
+  "limitations": [
+    "Exact accepted S0 model fields are NOT six-market bet selections, calibrated cover probabilities, EV or executable quotes.",
+    "FIRST_FROZEN values/exclusions are retained unchanged; Oct27 S0 never substitutes for original frozen values.",
+    "R18 source acceptance and R19 field join do not certify 35 case-level current material-news reviews.",
+    "Prior Friday CBS mixed-book quotes have no qualified venue/offer-update timestamp and cannot authorize wagers.",
+    "No canonical market/decision/Hot Sheet/audit/index write; no producer RUN_PASS."
+  ],
+  "next_entry": "Use exact 56 S0 source fields with existing review/market contract to build genuine six-market case decisions, prioritizing original Maryland and Ohio State deadlines, then 16 drift games. Fresh qualified book/news and authenticated venue offers required; no retroactive publication.",
+  "rows": [
+    {
+      "game_id": "401871071",
+      "away_team": "Delaware",
+      "home_team": "Western Kentucky",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-1.195342673917739",
+        "pred_total": "53.330449184970625",
+        "pred_win": "0.4317248366774294",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401871072",
+      "away_team": "Sam Houston",
+      "home_team": "Missouri State",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "0.4819573353598147",
+        "pred_total": "53.167475195146416",
+        "pred_win": "0.48421155806191735",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401871058",
+      "away_team": "Kennesaw State",
+      "home_team": "Middle Tennessee",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "0.5062686650055614",
+        "pred_total": "51.81049449082644",
+        "pred_win": "0.48760664000181336",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401871057",
+      "away_team": "Jacksonville State",
+      "home_team": "New Mexico State",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "2.2396204927621453",
+        "pred_total": "53.81544805205828",
+        "pred_win": "0.5275574044411967",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401862812",
+      "away_team": "Florida Atlantic",
+      "home_team": "North Texas",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "9.921248289311302",
+        "pred_total": "65.73957636618896",
+        "pred_win": "0.720335114831453",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401869963",
+      "away_team": "Troy",
+      "home_team": "James Madison",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "15.15797022076323",
+        "pred_total": "54.26134114913253",
+        "pred_win": "0.8295167985440941",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401862813",
+      "away_team": "Tulane",
+      "home_team": "Charlotte",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-3.405786141797019",
+        "pred_total": "52.49612727388016",
+        "pred_win": "0.4260454272208213",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-1.9022945223044858",
+        "pred_total": "51.020922254558755",
+        "pred_win": "0.46730125958103885"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -1.5034916194925332,
+        "total_points": 1.4752050193214075,
+        "home_win_probability": -0.04125583236021757,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401856844",
+      "away_team": "Baylor",
+      "home_team": "UCF",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "1.9220767969592565",
+        "pred_total": "52.44157323929145",
+        "pred_win": "0.5590460894703979",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "CONDITIONAL",
+      "original_first_frozen_numeric": {
+        "pred_margin": "4.539985769818523",
+        "pred_total": "51.51071646091736",
+        "pred_win": "0.6122139916103446"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -2.617908972859267,
+        "total_points": 0.9308567783740926,
+        "home_win_probability": -0.05316790213994671,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401866451",
+      "away_team": "Kent State",
+      "home_team": "Sacramento State",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "4.763370771336515",
+        "pred_total": "47.395252906873075",
+        "pred_win": "0.6026416219445073",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "19.37754914129643",
+        "pred_total": "49.08228467598643",
+        "pred_win": "0.8695363256687552"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -14.614178369959916,
+        "total_points": -1.6870317691133536,
+        "home_win_probability": -0.26689470372424784,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401856733",
+      "away_team": "Missouri",
+      "home_team": "Arkansas",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-4.1378740611616776",
+        "pred_total": "50.096808098651024",
+        "pred_win": "0.4180785190821065",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-13.144660542665587",
+        "pred_total": "48.4571487693492",
+        "pred_win": "0.22032417143604363"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": 9.006786481503909,
+        "total_points": 1.6396593293018213,
+        "home_win_probability": 0.1977543476460629,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "away_ml"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401856735",
+      "away_team": "Auburn",
+      "home_team": "Ole Miss",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "8.739353135632816",
+        "pred_total": "58.18939371968697",
+        "pred_win": "0.7191245758018957",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "4.319371690827976",
+        "pred_total": "59.13033031639755",
+        "pred_win": "0.6322317619339572"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": 4.419981444804841,
+        "total_points": -0.9409365967105785,
+        "home_win_probability": 0.08689281386793846,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401856736",
+      "away_team": "South Carolina",
+      "home_team": "Oklahoma",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "3.321708993863602",
+        "pred_total": "50.989892719716636",
+        "pred_win": "0.5785863014271945",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "1.9976207150226601",
+        "pred_total": "46.03759623778151",
+        "pred_win": "0.544129647344929"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": 1.324088278840942,
+        "total_points": 4.952296481935129,
+        "home_win_probability": 0.0344566540822655,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401856737",
+      "away_team": "Mississippi State",
+      "home_team": "Texas",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "8.674132866565335",
+        "pred_total": "54.28198844121715",
+        "pred_win": "0.7120091538822936",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-0.17926022771447103",
+        "pred_total": "55.79392191281385",
+        "pred_win": "0.5258970500003277"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": 8.853393094279806,
+        "total_points": -1.5119334715966986,
+        "home_win_probability": 0.18611210388196586,
+        "home_margin_sign_reversed": true
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401856842",
+      "away_team": "Arizona",
+      "home_team": "Texas Tech",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-1.1693764729288538",
+        "pred_total": "56.12790530025661",
+        "pred_win": "0.4955651820054724",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401856843",
+      "away_team": "Arizona State",
+      "home_team": "BYU",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "12.431011827312512",
+        "pred_total": "56.02486838164585",
+        "pred_win": "0.7786690458545835",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "16.187459572143922",
+        "pred_total": "56.836393987807924",
+        "pred_win": "0.8511204113016558"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -3.7564477448314104,
+        "total_points": -0.8115256061620713,
+        "home_win_probability": -0.07245136544707231,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401856845",
+      "away_team": "Kansas",
+      "home_team": "TCU",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "5.940050933162191",
+        "pred_total": "51.50278894490568",
+        "pred_win": "0.6529213994890753",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "10.61882799787693",
+        "pred_total": "49.21956516527414",
+        "pred_win": "0.7411277196150335"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -4.6787770647147395,
+        "total_points": 2.283223779631541,
+        "home_win_probability": -0.08820632012595819,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401856846",
+      "away_team": "Kansas State",
+      "home_team": "Colorado",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-5.877868423347203",
+        "pred_total": "53.747664746352264",
+        "pred_win": "0.33965104402297364",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-14.59982171248134",
+        "pred_total": "51.15289598048278",
+        "pred_win": "0.164036895339676"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": 8.721953289134138,
+        "total_points": 2.594768765869482,
+        "home_win_probability": 0.17561414868329764,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401856847",
+      "away_team": "Oklahoma State",
+      "home_team": "Iowa State",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-5.5520258683198564",
+        "pred_total": "56.845579731060255",
+        "pred_win": "0.37144298022129524",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "5.838154696866955",
+        "pred_total": "47.053876102043105",
+        "pred_win": "0.6442862899563238"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -11.39018056518681,
+        "total_points": 9.79170362901715,
+        "home_win_probability": -0.2728433097350285,
+        "home_margin_sign_reversed": true
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401856848",
+      "away_team": "Utah",
+      "home_team": "Cincinnati",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-2.636618330235004",
+        "pred_total": "57.58000197780675",
+        "pred_win": "0.44698580950499606",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401858277",
+      "away_team": "California",
+      "home_team": "NC State",
+      "original_first_frozen_status": "EXCLUDED",
+      "oct27_accepted_s0": {
+        "pred_margin": "8.883056871564158",
+        "pred_total": "54.161802152632376",
+        "pred_win": "0.6978054167982037",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401858278",
+      "away_team": "SMU",
+      "home_team": "Syracuse",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-4.273699421598012",
+        "pred_total": "57.49488376420339",
+        "pred_win": "0.37741871477853456",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "0.7535424806658062",
+        "pred_total": "55.796843174858715",
+        "pred_win": "0.48963770327433453"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -5.027241902263818,
+        "total_points": 1.6980405893446715,
+        "home_win_probability": -0.11221898849579998,
+        "home_margin_sign_reversed": true
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401858279",
+      "away_team": "Boston College",
+      "home_team": "Duke",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "9.149017695319321",
+        "pred_total": "51.20784645517105",
+        "pred_win": "0.7057428134116849",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401858280",
+      "away_team": "Clemson",
+      "home_team": "Florida State",
+      "original_first_frozen_status": "EXCLUDED",
+      "oct27_accepted_s0": {
+        "pred_margin": "3.629158371223178",
+        "pred_total": "52.91191244529093",
+        "pred_win": "0.5924113727637595",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401858281",
+      "away_team": "Georgia Tech",
+      "home_team": "Pittsburgh",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "10.658880792656786",
+        "pred_total": "56.12870922283401",
+        "pred_win": "0.734919324002877",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401858282",
+      "away_team": "Miami",
+      "home_team": "North Carolina",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-8.232992066293209",
+        "pred_total": "55.643944126978695",
+        "pred_win": "0.334763448942087",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-8.03641328815152",
+        "pred_total": "52.125932852800545",
+        "pred_win": "0.31101386981043655"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -0.19657877814168856,
+        "total_points": 3.51801127417815,
+        "home_win_probability": 0.023749579131650433,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401858283",
+      "away_team": "Stanford",
+      "home_team": "Louisville",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "17.20244073100399",
+        "pred_total": "61.090730636129265",
+        "pred_win": "0.8471432446354636",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "23.45577448110459",
+        "pred_total": "60.240276251627684",
+        "pred_win": "0.9154723210286189"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -6.253333750100602,
+        "total_points": 0.8504543845015817,
+        "home_win_probability": -0.06832907639315522,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401858284",
+      "away_team": "Virginia",
+      "home_team": "Wake Forest",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "8.37703072936002",
+        "pred_total": "51.842725170380234",
+        "pred_win": "0.7181752848375582",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-5.690307368948456",
+        "pred_total": "54.51339880089259",
+        "pred_win": "0.3802425820196452"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": 14.067338098308475,
+        "total_points": -2.670673630512354,
+        "home_win_probability": 0.337932702817913,
+        "home_margin_sign_reversed": true
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401858501",
+      "away_team": "Minnesota",
+      "home_team": "Indiana",
+      "original_first_frozen_status": "EXCLUDED",
+      "oct27_accepted_s0": {
+        "pred_margin": "14.716194409179673",
+        "pred_total": "47.55743058342075",
+        "pred_win": "0.7873686623596002",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401858502",
+      "away_team": "Wisconsin",
+      "home_team": "Iowa",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "7.08391260176766",
+        "pred_total": "46.74486988169926",
+        "pred_win": "0.6514674433645037",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "16.953003336948186",
+        "pred_total": "47.43327995301615",
+        "pred_win": "0.8105510430012315"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -9.869090735180524,
+        "total_points": -0.6884100713168877,
+        "home_win_probability": -0.1590835996367278,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401858503",
+      "away_team": "Illinois",
+      "home_team": "Maryland",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-3.245981838909556",
+        "pred_total": "57.32234935328297",
+        "pred_win": "0.3999772307783966",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "CONDITIONAL",
+      "original_first_frozen_numeric": {
+        "pred_margin": "6.678168905095836",
+        "pred_total": "57.3814294930684",
+        "pred_win": "0.6251673219208373"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -9.924150744005392,
+        "total_points": -0.05908013978542925,
+        "home_win_probability": -0.22519009114244076,
+        "home_margin_sign_reversed": true
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401858504",
+      "away_team": "Washington",
+      "home_team": "Nebraska",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "10.542524989314849",
+        "pred_total": "52.010453751818766",
+        "pred_win": "0.7193555018811835",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "12.685528847014263",
+        "pred_total": "50.616231734845755",
+        "pred_win": "0.7722918506128544"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -2.143003857699414,
+        "total_points": 1.3942220169730106,
+        "home_win_probability": -0.05293634873167097,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401858505",
+      "away_team": "Northwestern",
+      "home_team": "Oregon",
+      "original_first_frozen_status": "EXCLUDED",
+      "oct27_accepted_s0": {
+        "pred_margin": "-0.2978435354688447",
+        "pred_total": "55.35042403664518",
+        "pred_win": "0.504532723674852",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401858506",
+      "away_team": "Purdue",
+      "home_team": "Penn State",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "8.797164887714155",
+        "pred_total": "53.51630774539686",
+        "pred_win": "0.7033670866008813",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "20.645638272387664",
+        "pred_total": "57.41110459420837",
+        "pred_win": "0.8787915153960462"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -11.84847338467351,
+        "total_points": -3.8947968488115094,
+        "home_win_probability": -0.17542442879516484,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401858507",
+      "away_team": "Michigan",
+      "home_team": "Rutgers",
+      "original_first_frozen_status": "EXCLUDED",
+      "oct27_accepted_s0": {
+        "pred_margin": "-2.531199704271153",
+        "pred_total": "49.44391017753357",
+        "pred_win": "0.44322557559329673",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401858508",
+      "away_team": "Nevada",
+      "home_team": "UCLA",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "11.485564691037613",
+        "pred_total": "50.69648718780867",
+        "pred_win": "0.7540019011149105",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "11.487055478910321",
+        "pred_total": "56.11092212907221",
+        "pred_win": "0.7592982366080254"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -0.0014907878727079549,
+        "total_points": -5.414434941263536,
+        "home_win_probability": -0.005296335493114923,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401858509",
+      "away_team": "Ohio State",
+      "home_team": "USC",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-2.986887063908412",
+        "pred_total": "56.4166325792932",
+        "pred_win": "0.432166814915077",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "CONDITIONAL",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-3.5107340607820996",
+        "pred_total": "58.13872602489042",
+        "pred_win": "0.4104226295196134"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": 0.5238469968736874,
+        "total_points": -1.722093445597217,
+        "home_win_probability": 0.021744185395463633,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "away_ml"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401860924",
+      "away_team": "Oregon State",
+      "home_team": "Fresno State",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-4.5544327816218715",
+        "pred_total": "57.83026815545935",
+        "pred_win": "0.3847223440698264",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "4.265824312937047",
+        "pred_total": "53.27358185300018",
+        "pred_win": "0.5758261080522452"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -8.820257094558919,
+        "total_points": 4.55668630245917,
+        "home_win_probability": -0.1911037639824188,
+        "home_margin_sign_reversed": true
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401862814",
+      "away_team": "Army",
+      "home_team": "Memphis",
+      "original_first_frozen_status": "EXCLUDED",
+      "oct27_accepted_s0": {
+        "pred_margin": "4.7392025573385",
+        "pred_total": "57.493860865542544",
+        "pred_win": "0.6717369944200061",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401862815",
+      "away_team": "Temple",
+      "home_team": "East Carolina",
+      "original_first_frozen_status": "EXCLUDED",
+      "oct27_accepted_s0": {
+        "pred_margin": "4.854530900419646",
+        "pred_total": "53.13632654839247",
+        "pred_win": "0.6280125414817402",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401862816",
+      "away_team": "UAB",
+      "home_team": "South Florida",
+      "original_first_frozen_status": "EXCLUDED",
+      "oct27_accepted_s0": {
+        "pred_margin": "11.410941976027313",
+        "pred_total": "47.785336190025326",
+        "pred_win": "0.7646600701457484",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401864529",
+      "away_team": "New Mexico",
+      "home_team": "San José State",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-5.088111188203838",
+        "pred_total": "46.84389099544602",
+        "pred_win": "0.3933558457973612",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-7.33449986256627",
+        "pred_total": "44.55662918107981",
+        "pred_win": "0.31769446869000484"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": 2.246388674362432,
+        "total_points": 2.287261814366204,
+        "home_win_probability": 0.07566137710735638,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401869846",
+      "away_team": "App State",
+      "home_team": "Georgia Southern",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "1.918758277056822",
+        "pred_total": "52.3548187150214",
+        "pred_win": "0.537056995277176",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-1.2164781787103556",
+        "pred_total": "47.735706328738324",
+        "pred_win": "0.43239638661503443"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": 3.1352364557671777,
+        "total_points": 4.619112386283078,
+        "home_win_probability": 0.10466060866214155,
+        "home_margin_sign_reversed": true
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401869944",
+      "away_team": "Coastal Carolina",
+      "home_team": "Georgia State",
+      "original_first_frozen_status": "EXCLUDED",
+      "oct27_accepted_s0": {
+        "pred_margin": "11.401998702274387",
+        "pred_total": "57.28244912403266",
+        "pred_win": "0.7671917854994494",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401871095",
+      "away_team": "Southern Miss",
+      "home_team": "UL Monroe",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-2.769641406985689",
+        "pred_total": "57.31972767571251",
+        "pred_win": "0.43788525661624317",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-8.106471857997493",
+        "pred_total": "56.809115329531835",
+        "pred_win": "0.3136982404826161"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": 5.336830451011803,
+        "total_points": 0.5106123461806718,
+        "home_win_probability": 0.12418701613362709,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401871096",
+      "away_team": "Marshall",
+      "home_team": "Old Dominion",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "1.2267294500893389",
+        "pred_total": "48.24544253176575",
+        "pred_win": "0.5117178364649301",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "10.531260063331388",
+        "pred_total": "45.065189578232356",
+        "pred_win": "0.723554751309223"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -9.304530613242049,
+        "total_points": 3.1802529535333903,
+        "home_win_probability": -0.2118369148442929,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401871097",
+      "away_team": "Louisiana Tech",
+      "home_team": "South Alabama",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "-4.363049286098879",
+        "pred_total": "54.108914400824126",
+        "pred_win": "0.4034571246827743",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "5.700510476284662",
+        "pred_total": "51.61800449703313",
+        "pred_win": "0.6363063614314357"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -10.06355976238354,
+        "total_points": 2.4909099037909996,
+        "home_win_probability": -0.23284923674866143,
+        "home_margin_sign_reversed": true
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401859185",
+      "away_team": "Notre Dame",
+      "home_team": "Navy",
+      "original_first_frozen_status": "EXCLUDED",
+      "oct27_accepted_s0": {
+        "pred_margin": "-6.629243549406549",
+        "pred_total": "52.76624414397042",
+        "pred_win": "0.2872548891141223",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401866452",
+      "away_team": "Bowling Green",
+      "home_team": "Western Michigan",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "11.894442630270191",
+        "pred_total": "48.05284041587808",
+        "pred_win": "0.7644289577992259",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "24.79105402559233",
+        "pred_total": "45.24073756922628",
+        "pred_win": "0.9257804353494328"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -12.89661139532214,
+        "total_points": 2.812102846651797,
+        "home_win_probability": -0.16135147755020685,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401861966",
+      "away_team": "UConn",
+      "home_team": "Air Force",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "2.1071318144243523",
+        "pred_total": "52.27585991211651",
+        "pred_win": "0.605109129378246",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "4.495233795120177",
+        "pred_total": "50.64650245925968",
+        "pred_win": "0.654638460129586"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -2.3881019806958244,
+        "total_points": 1.62935745285683,
+        "home_win_probability": -0.04952933075134003,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "away_spread"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401856734",
+      "away_team": "Florida",
+      "home_team": "Georgia",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "14.117361753702673",
+        "pred_total": "60.53433109693552",
+        "pred_win": "0.7907918366995139",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "13.358480139729341",
+        "pred_total": "65.99623168757266",
+        "pred_win": "0.7885560177914632"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": 0.7588816139733314,
+        "total_points": -5.461900590637143,
+        "home_win_probability": 0.0022358189080506907,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401860910",
+      "away_team": "Colorado State",
+      "home_team": "Utah State",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "6.390104389224711",
+        "pred_total": "59.52007203244311",
+        "pred_win": "0.6444311818368339",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-4.686728804289869",
+        "pred_total": "51.6112210095398",
+        "pred_win": "0.37601709369661257"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": 11.076833193514581,
+        "total_points": 7.908851022903313,
+        "home_win_probability": 0.26841408814022133,
+        "home_margin_sign_reversed": true
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "home_spread",
+        "away_ml",
+        "home_ml",
+        "over_total"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401864531",
+      "away_team": "UTEP",
+      "home_team": "North Dakota State",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "23.044715099973338",
+        "pred_total": "48.2943333577443",
+        "pred_win": "0.9088713617680234",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "20.311538771491833",
+        "pred_total": "49.203682238756244",
+        "pred_win": "0.8746584883715226"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": 2.7331763284815054,
+        "total_points": -0.9093488810119439,
+        "home_win_probability": 0.03421287339650081,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "away_ml"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401871059",
+      "away_team": "Florida International",
+      "home_team": "Liberty",
+      "original_first_frozen_status": "EXCLUDED",
+      "oct27_accepted_s0": {
+        "pred_margin": "11.32732156963739",
+        "pred_total": "45.366938159808285",
+        "pred_win": "0.7432636068777688",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      }
+    },
+    {
+      "game_id": "401860909",
+      "away_team": "Washington State",
+      "home_team": "San Diego State",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "2.6329129158187192",
+        "pred_total": "52.30450866861949",
+        "pred_win": "0.552626712700373",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "2.8553657293259267",
+        "pred_total": "45.05500712113508",
+        "pred_win": "0.5698491698751513"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -0.22245281350720747,
+        "total_points": 7.249501547484414,
+        "home_win_probability": -0.017222457174778327,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401860908",
+      "away_team": "Texas State",
+      "home_team": "Boise State",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "6.580805352455416",
+        "pred_total": "59.68249125102358",
+        "pred_win": "0.6806050223468065",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "11.186323722125593",
+        "pred_total": "62.02851607637056",
+        "pred_win": "0.7837304599759275"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": -4.605518369670177,
+        "total_points": -2.34602482534698,
+        "home_win_probability": -0.10312543762912096,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    },
+    {
+      "game_id": "401864530",
+      "away_team": "Northern Illinois",
+      "home_team": "UNLV",
+      "original_first_frozen_status": "PREDICTION",
+      "oct27_accepted_s0": {
+        "pred_margin": "13.133321942184269",
+        "pred_total": "51.98618289825271",
+        "pred_win": "0.7571328629818298",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "r18_case_prior_state": "PASS",
+      "original_first_frozen_numeric": {
+        "pred_margin": "9.181695514674217",
+        "pred_total": "46.29422281350146",
+        "pred_win": "0.6522629731082384"
+      },
+      "delta_from_original_first_frozen": {
+        "home_margin_points": 3.9516264275100514,
+        "total_points": 5.691960084751244,
+        "home_win_probability": 0.10486988987359136,
+        "home_margin_sign_reversed": false
+      },
+      "material_mixed_book_numeric_drift_branches": [
+        "away_spread",
+        "home_spread",
+        "away_ml",
+        "home_ml"
+      ],
+      "six_branch_review_status": {
+        "away_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_spread": "NO_CURRENT_QUALIFIED_DECISION",
+        "away_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "home_ml": "NO_CURRENT_QUALIFIED_DECISION",
+        "over_total": "NO_CURRENT_QUALIFIED_DECISION",
+        "under_total": "NO_CURRENT_QUALIFIED_DECISION"
+      },
+      "case_blockers": [
+        "NO_AUTHENTIC_CURRENT_SIX_BRANCH_CHAMPION_DECISION",
+        "NO_QUALIFIED_CURRENT_REVIEW_PACKET",
+        "NO_AUTHENTICATED_EXECUTABLE_VENUE_QUOTE_LIMIT"
+      ]
+    }
+  ]
+}
