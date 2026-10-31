@@ -1,0 +1,776 @@
+{
+  "schema": "CFB_WEEK9_R18_ACCEPTED_S0_TO_UNFINISHED_SIX_MARKET_DECISION_FRONTIER",
+  "status": "RUN_INCOMPLETE_ZERO_BETS",
+  "source_boundary": {
+    "candidate_cutoff": "2026-10-27T15:38:14.731739+00:00",
+    "candidate_artifact_id": 12746278820,
+    "zip_sha256": "29adfe868698d7368627d75ed42f3f2aead825266f3363e697677750b3d1975f",
+    "independent_acceptance_record": "evidence/CFB_QA_WEEKLY_REFRESH_ACCEPTANCE_2026-10-31_OCT27.md",
+    "accepted_pointer_blob": "42c6fed3dee79be8693d6750122ae08beeb24e3a",
+    "full_original_week9_identity_coverage": "56/56 OCT27 S0 PREDICTIONS, ZERO EXCLUSIONS, NOT 56 CURRENT SIX-MARKET DECISIONS",
+    "R14_35_case_identity_coverage": "35/35 OCT27 S0 PREDICTIONS, ZERO EXCLUSIONS"
+  },
+  "authority": {
+    "R14_case_blob": "757811e4a6a5028e2d274edaf417706f79cac46a",
+    "original_first_frozen_blob": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9",
+    "prior_hot_sheet_blob": "f05173046e51ab9634d47b1be5fe90c2a5026c96",
+    "production_routine": "v5 + accepted v5.1 A/C, controls v1.132/v1.133"
+  },
+  "counts": {
+    "cases": 35,
+    "material_numeric_drift_games": 16,
+    "source_ancestry_now_independently_accepted": 35,
+    "qualified_current_six_market_decisions": 0,
+    "qualified_review_packets": 0,
+    "approved_bets": 0
+  },
+  "important_deltas": [
+    {
+      "game_id": "401858503",
+      "game": "Illinois @ Maryland",
+      "first_frozen_home_margin": 6.678168905095836,
+      "accepted_oct27_s0_home_margin": -3.245981838909556,
+      "delta_home_margin": -9.924150744005392,
+      "meaning": "Material model-boundary divergence, NOT approval/rejection based on an operational six-market decision. Previously reviewed Illinois QB not a new veto."
+    },
+    {
+      "game_id": "401858509",
+      "game": "Ohio State @ USC",
+      "first_frozen_total": 58.13872602489042,
+      "accepted_oct27_s0_total": 56.4166325792932,
+      "under_line": 51.5,
+      "meaning": "Both immutable original and independently accepted Oct27 S0 totals oppose Under 51.5; candidate does not supply betting approval."
+    },
+    {
+      "game_id": "401861966",
+      "game": "UConn @ Air Force",
+      "first_frozen_home_margin": 4.495233795120177,
+      "accepted_oct27_s0_home_margin": 2.1071318144243523,
+      "meaning": "Medders OUT and market drift still need material QB replacement and current six-market review."
+    }
+  ],
+  "cases": [
+    {
+      "game_id": "401862813",
+      "game": "Tulane @ Charlotte",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-1.9022945223044858",
+        "pred_total": "51.020922254558755",
+        "pred_win": "0.46730125958103885"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401856844",
+      "game": "Baylor @ UCF",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "4.539985769818523",
+        "pred_total": "51.51071646091736",
+        "pred_win": "0.6122139916103446"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "CONDITIONAL",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401866451",
+      "game": "Kent State @ Sacramento State",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "19.37754914129643",
+        "pred_total": "49.08228467598643",
+        "pred_win": "0.8695363256687552"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401858278",
+      "game": "SMU @ Syracuse",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "0.7535424806658062",
+        "pred_total": "55.796843174858715",
+        "pred_win": "0.48963770327433453"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401858502",
+      "game": "Wisconsin @ Iowa",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "16.953003336948186",
+        "pred_total": "47.43327995301615",
+        "pred_win": "0.8105510430012315"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401866452",
+      "game": "Bowling Green @ Western Michigan",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "24.79105402559233",
+        "pred_total": "45.24073756922628",
+        "pred_win": "0.9257804353494328"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401858503",
+      "game": "Illinois @ Maryland",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "6.678168905095836",
+        "pred_total": "57.3814294930684",
+        "pred_win": "0.6251673219208373"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": {
+        "pred_margin": -3.245981838909556,
+        "pred_total": 57.32234935328297,
+        "pred_win": 0.3999772307783966
+      },
+      "prior_decision_state": "CONDITIONAL",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Before Sat 09CT: reconcile 9.924-point home-margin reversal between FIRST_FROZEN +6.678 and accepted Oct27 S0 -3.246 with official material personnel and actual executable venue evidence; no automatic Maryland approval"
+    },
+    {
+      "game_id": "401856735",
+      "game": "Auburn @ Ole Miss",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "4.319371690827976",
+        "pred_total": "59.13033031639755",
+        "pred_win": "0.6322317619339572"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401871096",
+      "game": "Marshall @ Old Dominion",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "10.531260063331388",
+        "pred_total": "45.065189578232356",
+        "pred_win": "0.723554751309223"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401856846",
+      "game": "Kansas State @ Colorado",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-14.59982171248134",
+        "pred_total": "51.15289598048278",
+        "pred_win": "0.164036895339676"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401871097",
+      "game": "Louisiana Tech @ South Alabama",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "5.700510476284662",
+        "pred_total": "51.61800449703313",
+        "pred_win": "0.6363063614314357"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401861966",
+      "game": "UConn @ Air Force",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "4.495233795120177",
+        "pred_total": "50.64650245925968",
+        "pred_win": "0.654638460129586"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": {
+        "pred_margin": 2.1071318144243523,
+        "pred_total": 52.27585991211651,
+        "pred_win": 0.605109129378246
+      },
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "away_spread"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Reconcile confirmed Medders OUT and replacement uncertainty with refreshed S0 and market drift; no automatic bet"
+    },
+    {
+      "game_id": "401858283",
+      "game": "Stanford @ Louisville",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "23.45577448110459",
+        "pred_total": "60.240276251627684",
+        "pred_win": "0.9154723210286189"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401871095",
+      "game": "Southern Miss @ UL Monroe",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-8.106471857997493",
+        "pred_total": "56.809115329531835",
+        "pred_win": "0.3136982404826161"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401860910",
+      "game": "Colorado State @ Utah State",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-4.686728804289869",
+        "pred_total": "51.6112210095398",
+        "pred_win": "0.37601709369661257"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "home_spread",
+        "away_ml",
+        "home_ml",
+        "over_total"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401856843",
+      "game": "Arizona State @ BYU",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "16.187459572143922",
+        "pred_total": "56.836393987807924",
+        "pred_win": "0.8511204113016558"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401856845",
+      "game": "Kansas @ TCU",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "10.61882799787693",
+        "pred_total": "49.21956516527414",
+        "pred_win": "0.7411277196150335"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401864531",
+      "game": "UTEP @ North Dakota State",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "20.311538771491833",
+        "pred_total": "49.203682238756244",
+        "pred_win": "0.8746584883715226"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "away_ml"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401856734",
+      "game": "Florida @ Georgia",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "13.358480139729341",
+        "pred_total": "65.99623168757266",
+        "pred_win": "0.7885560177914632"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401858284",
+      "game": "Virginia @ Wake Forest",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-5.690307368948456",
+        "pred_total": "54.51339880089259",
+        "pred_win": "0.3802425820196452"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401864529",
+      "game": "New Mexico @ San José State",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-7.33449986256627",
+        "pred_total": "44.55662918107981",
+        "pred_win": "0.31769446869000484"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401858508",
+      "game": "Nevada @ UCLA",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "11.487055478910321",
+        "pred_total": "56.11092212907221",
+        "pred_win": "0.7592982366080254"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401858506",
+      "game": "Purdue @ Penn State",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "20.645638272387664",
+        "pred_total": "57.41110459420837",
+        "pred_win": "0.8787915153960462"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401856736",
+      "game": "South Carolina @ Oklahoma",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "1.9976207150226601",
+        "pred_total": "46.03759623778151",
+        "pred_win": "0.544129647344929"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401869846",
+      "game": "App State @ Georgia Southern",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-1.2164781787103556",
+        "pred_total": "47.735706328738324",
+        "pred_win": "0.43239638661503443"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401856847",
+      "game": "Oklahoma State @ Iowa State",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "5.838154696866955",
+        "pred_total": "47.053876102043105",
+        "pred_win": "0.6442862899563238"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401860909",
+      "game": "Washington State @ San Diego State",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "2.8553657293259267",
+        "pred_total": "45.05500712113508",
+        "pred_win": "0.5698491698751513"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401858282",
+      "game": "Miami @ North Carolina",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-8.03641328815152",
+        "pred_total": "52.125932852800545",
+        "pred_win": "0.31101386981043655"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401856737",
+      "game": "Mississippi State @ Texas",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-0.17926022771447103",
+        "pred_total": "55.79392191281385",
+        "pred_win": "0.5258970500003277"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401858509",
+      "game": "Ohio State @ USC",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-3.5107340607820996",
+        "pred_total": "58.13872602489042",
+        "pred_win": "0.4104226295196134"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": {
+        "pred_margin": -2.986887063908412,
+        "pred_total": 56.4166325792932,
+        "pred_win": 0.432166814915077
+      },
+      "prior_decision_state": "CONDITIONAL",
+      "material_numeric_drift_branches": [
+        "away_ml"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Before Sat 15CT: frozen total 58.139 and accepted Oct27 S0 total 56.417 both exceed Under 51.5; no under approval without valid calibrated current six-market model review and executable venue"
+    },
+    {
+      "game_id": "401856733",
+      "game": "Missouri @ Arkansas",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "-13.144660542665587",
+        "pred_total": "48.4571487693492",
+        "pred_win": "0.22032417143604363"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "away_ml"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401858504",
+      "game": "Washington @ Nebraska",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "12.685528847014263",
+        "pred_total": "50.616231734845755",
+        "pred_win": "0.7722918506128544"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401860908",
+      "game": "Texas State @ Boise State",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "11.186323722125593",
+        "pred_total": "62.02851607637056",
+        "pred_win": "0.7837304599759275"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401864530",
+      "game": "Northern Illinois @ UNLV",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "9.181695514674217",
+        "pred_total": "46.29422281350146",
+        "pred_win": "0.6522629731082384"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [
+        "away_spread",
+        "home_spread",
+        "away_ml",
+        "home_ml"
+      ],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    },
+    {
+      "game_id": "401860924",
+      "game": "Oregon State @ Fresno State",
+      "original_first_frozen_status": "PREDICTION",
+      "original_first_frozen_numeric": {
+        "pred_margin": "4.265824312937047",
+        "pred_total": "53.27358185300018",
+        "pred_win": "0.5758261080522452"
+      },
+      "oct27_accepted_s0_prediction_present": true,
+      "oct27_s0_selected_exact_values": null,
+      "prior_decision_state": "PASS",
+      "material_numeric_drift_branches": [],
+      "current_six_market_champion_decision": "NOT_PRODUCED",
+      "current_qualified_review_packet": "NOT_CERTIFIED",
+      "executable_venue_quote_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "next_action": "Obtain qualified current market and material news; complete authentic six-market review packet, no retroactive decision"
+    }
+  ],
+  "publication": "NOT_ATTEMPTED_AUTHENTIC_56_CURRENT_DECISION_ROWS_AND_SOURCE_FRESHNESS_ABSENT",
+  "next_entry": "Recover/qualify existing S0-to-operational decision adapter and current market evidence; perform 35 case-level six-branch evaluations before original cutoffs; do not regenerate S0 or replay CBS normalization."
+}
