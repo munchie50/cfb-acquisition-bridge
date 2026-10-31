@@ -37,10 +37,10 @@ class CoversShadowTest(unittest.TestCase):
 | Nov 7, 12:00<br>/matchup/378696 |
 | Nov 7, 12:00<br>/matchup/378696 |
 | Nov 6, 19:00<br>/matchup/378718 |
-sidebar /matchup/222
+| Nov 3, 19:00<br>/matchup/378801 |\n| Nov 4, 19:00<br>/matchup/378802 |\nsidebar /matchup/222
 """
         self.assertEqual([x["matchup_id"] for x in discover_dated_matchups(page)],
-                         ["378696", "378718"])
+                         ["378696", "378718", "378801", "378802"])
 
     def test_explicit_aliases_not_fuzzy_matching(self):
         baseline = {"rows": [
