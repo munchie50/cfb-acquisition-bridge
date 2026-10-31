@@ -1,0 +1,341 @@
+{
+  "schema": "CFB_WEEK9_R31_EARLY_SATURDAY_MANUAL_SIX_MARKET_PREFLIGHT",
+  "recorded_by_utc": "2026-10-31T03:21:02.900Z",
+  "parent_r26_blob": "452f5ea9d3453345f4e15d8499abc8111ca57f03",
+  "cases": [
+    {
+      "game_id": "401858283",
+      "game": "Stanford @ Louisville",
+      "kickoff_utc": "2026-10-31T19:15:00.000Z",
+      "first_frozen": {
+        "pred_margin": "23.45577448110459",
+        "pred_total": "60.240276251627684",
+        "pred_win": "0.9154723210286189"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "17.20244073100399",
+        "pred_total": "61.090730636129265",
+        "pred_win": "0.8471432446354636",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "model_reconciliation": "Louisville home margin FIRST_FROZEN +23.456 vs Oct27 +17.202; public Louisville -22.5, total 60.5 vs raw 60.240/61.091.",
+      "material_personnel_preflight": "Official Oct30 Louisville preview and ACC Week9 preview: QB Lincoln Kienholz 10 rushing touchdowns, high explosive-play rate; Stanford QB Davis Warren and RB Micah Ford productive. Final player clearance not certified.",
+      "official_source": "https://gocards.com/news/2026/10/30/football-cardinals-return-from-bye-to-take-on-stanford",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/stanford-cardinal/odds",
+        "scrape_id": "01a18ff4-f596-7593-a561-9b7d6236c5fd",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 22.5,
+            "american_price": -110
+          },
+          "home_spread": {
+            "line": -22.5,
+            "american_price": -110
+          },
+          "away_ml": {
+            "american_price": 1000
+          },
+          "home_ml": {
+            "american_price": -2000
+          },
+          "over_total": {
+            "line": 60.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 60.5,
+            "american_price": -110
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": 22.5,
+            "american_price": -110
+          },
+          "manual_reason": "Stanford +22.5 cannot be selected from raw refreshed Louisville +17.202 alone; personnel and venue unresolved.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": -22.5,
+            "american_price": -110
+          },
+          "manual_reason": "Louisville -22.5 closer to frozen raw margin +23.456 but refresh +17.202, no calibrated cover estimate.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": 1000
+          },
+          "manual_reason": "Stanford +1000 not a qualified price/value edge.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": -2000
+          },
+          "manual_reason": "Louisville -2000 not a qualified price/value edge.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 60.5,
+            "american_price": -110
+          },
+          "manual_reason": "60.5 lies between raw 60.240 and 61.091, no calibrated over.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 60.5,
+            "american_price": -110
+          },
+          "manual_reason": "60.5 straddles raw totals, no calibrated under.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "qualified_packet": false,
+      "authenticated_venue_limit": false,
+      "approved": false
+    },
+    {
+      "game_id": "401871096",
+      "game": "Marshall @ Old Dominion",
+      "kickoff_utc": "2026-10-31T17:00:00.000Z",
+      "first_frozen": {
+        "pred_margin": "10.531260063331388",
+        "pred_total": "45.065189578232356",
+        "pred_win": "0.723554751309223"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "1.2267294500893389",
+        "pred_total": "48.24544253176575",
+        "pred_win": "0.5117178364649301",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "model_reconciliation": "Old Dominion home margin FIRST_FROZEN +10.531 shrinks to Oct27 +1.227; public Marshall -2.5. Original-to-refresh home margin changes -9.305 points.",
+      "material_personnel_preflight": "ODU official Oct27 preview reports QB Jaxon Potter made first season start vs LA Tech and threw for 154 yards; current starting designation and injury clearance not independently confirmed.",
+      "official_source": "https://odusports.com/news/2026/10/27/game-preview-old-dominion-vs-marshall",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/marshall-thundering-herd/odds",
+        "scrape_id": "01a18ff4-f5cb-7490-8102-524850b2d089",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": -2.5,
+            "american_price": -120
+          },
+          "home_spread": {
+            "line": 2.5,
+            "american_price": -102
+          },
+          "away_ml": {
+            "american_price": -142
+          },
+          "home_ml": {
+            "american_price": 120
+          },
+          "over_total": {
+            "line": 45.5,
+            "american_price": -115
+          },
+          "under_total": {
+            "line": 45.5,
+            "american_price": -105
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": -2.5,
+            "american_price": -120
+          },
+          "manual_reason": "Marshall -2.5 cannot be selected while raw model still favors ODU and QB role unqualified.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": 2.5,
+            "american_price": -102
+          },
+          "manual_reason": "ODU +2.5 is numerically attractive relative to raw home +1.227 but not calibrated or venue-verified.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": -142
+          },
+          "manual_reason": "Marshall -142 not justified by qualified win probability.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": 120
+          },
+          "manual_reason": "ODU +120 no qualified calibrated edge or venue.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 45.5,
+            "american_price": -115
+          },
+          "manual_reason": "45.5 vs raw totals 45.065/48.245 straddles; not an over recommendation.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 45.5,
+            "american_price": -105
+          },
+          "manual_reason": "45.5 straddles raw totals; no under recommendation.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "qualified_packet": false,
+      "authenticated_venue_limit": false,
+      "approved": false
+    },
+    {
+      "game_id": "401871097",
+      "game": "Louisiana Tech @ South Alabama",
+      "kickoff_utc": "2026-10-31T19:00:00.000Z",
+      "first_frozen": {
+        "pred_margin": "5.700510476284662",
+        "pred_total": "51.61800449703313",
+        "pred_win": "0.6363063614314357"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "-4.363049286098879",
+        "pred_total": "54.108914400824126",
+        "pred_win": "0.4034571246827743",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "model_reconciliation": "South Alabama home margin FIRST_FROZEN +5.701 reverses to Oct27 -4.363; 10.064-point sign reversal, while public LA Tech -6.5.",
+      "material_personnel_preflight": "LA Tech official Oct29 preview reports consecutive shutouts and tight end Eli Finley production; full opponent player availability not qualified.",
+      "official_source": "https://latechsports.com/news/2026/10/29/football-preview-la-tech-at-south-alabama",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/louisiana-tech-bulldogs/odds",
+        "scrape_id": "01a18ff4-f54a-74db-b851-1c82285e68d9",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": -6.5,
+            "american_price": -105
+          },
+          "home_spread": {
+            "line": 6.5,
+            "american_price": -115
+          },
+          "away_ml": {
+            "american_price": -220
+          },
+          "home_ml": {
+            "american_price": 184
+          },
+          "over_total": {
+            "line": 58.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 58.5,
+            "american_price": -110
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": -6.5,
+            "american_price": -105
+          },
+          "manual_reason": "LA Tech -6.5 vs raw refreshed away margin 4.363, model reversal and missing material player clearance prevent approval.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": 6.5,
+            "american_price": -115
+          },
+          "manual_reason": "South Alabama +6.5 vs raw refreshed home -4.363 not a qualified cover probability.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": -220
+          },
+          "manual_reason": "LA Tech -220 lacks certified model/price comparison.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": 184
+          },
+          "manual_reason": "South Alabama +184 lacks certified model/price comparison.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 58.5,
+            "american_price": -110
+          },
+          "manual_reason": "58.5 vs raw totals 51.618/54.109 not a calibrated over.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 58.5,
+            "american_price": -110
+          },
+          "manual_reason": "58.5 above raw totals but cannot infer under advantage from numeric comparison.",
+          "status": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "qualified_packet": false,
+      "authenticated_venue_limit": false,
+      "approved": false
+    }
+  ],
+  "counts": {
+    "cases": 3,
+    "branches": 18,
+    "certified_current_decisions": 0,
+    "approved_bets": 0
+  },
+  "next": "Qualified full personnel and authentic venue offer before original cutoffs; no numeric-derived selection."
+}
