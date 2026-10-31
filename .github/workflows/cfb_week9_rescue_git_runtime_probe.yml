@@ -121,6 +121,32 @@ jobs:
           path: ${{ runner.temp }}/week9-readiness.json
           retention-days: 14
           if-no-files-found: error
+      - name: Verify persisted 33-case screening against original source
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,hashlib,subprocess
+          from pathlib import Path
+          saved=json.loads(Path('evidence/operational/CFB_WEEK9_33_CASE_MARKET_MOVEMENT_SCREENING_RESCUE.json').read_text())
+          raw=Path(saved['source_path']).read_bytes()
+          digest=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\\0'+raw).hexdigest()
+          assert digest==saved['source_blob_sha'], 'source blob changed'
+          source=json.loads(raw)
+          cases={c['game_id']:c for c in source['cases']}
+          assert len(cases)==35 and len(saved['cases'])==33
+          assert len({c['game_id'] for c in saved['cases']})==33
+          assert set(cases)-{c['game_id'] for c in saved['cases']}=={'401862813','401856844'}
+          for row in saved['cases']:
+              original=cases[row['game_id']]
+              assert row['material_drift_branches']==original['material_numeric_drift_branches']
+              assert row['changed_branches']==[b['branch'] for b in original['branches'] if b['line_delta']!=0 or b['price_delta']!=0]
+              assert row['disposition']=='REVIEW_REQUIRED_NO_NEW_DECISION'
+          counts=saved['counts']
+          assert counts['screened_cases']==33 and counts['material_drift_cases']==16 and counts['nonmaterial_drift_cases']==17
+          assert counts['new_wagers_approved']==0
+          print('WEEK9_33_CASE_SCREENING_INDEPENDENT_READBACK_PASS')
+          PY
       - name: Boundary statement
         if: always()
         run: |
