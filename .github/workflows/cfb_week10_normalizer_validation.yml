@@ -48,6 +48,20 @@ jobs:
       - name: Export bounded acquisition queue
         run: |
           python -c 'import json; b=json.load(open("week10_fallback_inventory.json")); assert not b["decision_authorized"]; q=b["acquisition_queue"]; assert len(q)==46; assert sum(len(x["missing_branches"]) for x in q)==276; json.dump({"status":"ACQUISITION_TARGETS_ONLY","source":b["source"],"decision_authorized":False,"games":len(q),"missing_branches":276,"targets":q},open("week10_acquisition_queue.json","w"),indent=2)'
+      - name: Export bounded BetSharp candidate intersection
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          import sys
+          sys.path.insert(0, "scripts")
+          from cfb_betsharp_week10_shadow import discover
+          queue = json.load(open("week10_acquisition_queue.json"))["targets"]
+          result = discover("", queue)
+          assert result["unmatched_unpriced_games_count"] == 46
+          assert result["decision_authorized"] is False
+          json.dump(result, open("week10_betsharp_shadow_candidates.json", "w"), indent=2)
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: week10-fallback-branch-inventory
@@ -55,4 +69,5 @@ jobs:
             week10_fallback_inventory.json
             week10_acquisition_queue.json
             week10_covers_gap_report.json
+            week10_betsharp_shadow_candidates.json
           retention-days: 14
