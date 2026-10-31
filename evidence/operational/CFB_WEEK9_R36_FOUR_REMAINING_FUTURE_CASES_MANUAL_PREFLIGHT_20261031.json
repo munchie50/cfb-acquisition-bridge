@@ -1,0 +1,536 @@
+{
+  "schema": "CFB_WEEK9_R36_FOUR_REMAINING_FUTURE_CASES_MANUAL_SIX_MARKET_PREFLIGHT",
+  "status": "RUN_INCOMPLETE_NO_APPROVAL",
+  "recorded_by_utc": "2026-10-31T03:58:34.761Z",
+  "clock_semantics": "PUBLIC_PAGE_RETRIEVED_BY_UTC_NOT_OPERATOR_UPDATE_OR_USER_VENUE_TIME",
+  "parent_r26_blob": "452f5ea9d3453345f4e15d8499abc8111ca57f03",
+  "previous_r35_blob": "c4e659ada4cf100242d4f16ca99afabaf015090f",
+  "new_cases": 4,
+  "new_branch_preflights": 24,
+  "cumulative_distinct_future_preflight_cases": 32,
+  "cumulative_branch_preflights": 192,
+  "expired_or_started_cases_to_close": 3,
+  "new_certified_decisions": 0,
+  "new_qualified_packets": 0,
+  "new_bet_approvals": 0,
+  "guards": [
+    "Maryland +2.5 NOT APPROVED, original 14:00Z cutoff",
+    "Ohio State-USC Under 51.5 NOT APPROVED, original 20:00Z cutoff",
+    "No raw model arithmetic or historical market branch is current certified decision",
+    "No venue-specific executable quote or limit",
+    "No canonical market/decision/Hot Sheet/index publication"
+  ],
+  "cases": [
+    {
+      "game_id": "401860909",
+      "game": "Washington State @ San Diego State",
+      "kickoff_utc": "2026-10-31T23:00:00.000Z",
+      "first_frozen": {
+        "pred_margin": "2.8553657293259267",
+        "pred_total": "45.05500712113508",
+        "pred_win": "0.5698491698751513"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "2.6329129158187192",
+        "pred_total": "52.30450866861949",
+        "pred_win": "0.552626712700373",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_flags": [],
+      "material_saved_drift_branches": [],
+      "material_personnel_review": "Washington State official Oct27 preview confirms Owen Eshelman made first career start at Oregon State and is in early-career QB transition; Oct30 reporting says he is entering third start. San Diego State season-leader Jayden Denegal appears in ESPN preview, but final player availability not certified. Frozen SDSU home margin +2.855, refreshed +2.633 vs public SDSU -2.5; frozen total 45.055, refreshed 52.305 vs public 48.5.",
+      "personnel_sources": [
+        {
+          "url": "https://wsucougars.com/news/2026/10/27/cougars-head-to-san-diego-state-for-halloween-matchup",
+          "kind": "OFFICIAL_TEAM_PREVIEW"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/wsus-keys-victory-against-san-020700618.html",
+          "kind": "PUBLISHED_OCT30_PREVIEW_NOT_FINAL_AVAILABILITY"
+        }
+      ],
+      "official_final_availability": "NOT_VERIFIED",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/washington-state-cougars/odds",
+        "scrape_id": "01a1901b-b108-761e-9836-c13c114e5759",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:58:18.482Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 2.5,
+            "american_price": -106
+          },
+          "home_spread": {
+            "line": -2.5,
+            "american_price": -114
+          },
+          "away_ml": {
+            "american_price": 112
+          },
+          "home_ml": {
+            "american_price": -134
+          },
+          "over_total": {
+            "line": 48.5,
+            "american_price": -105
+          },
+          "under_total": {
+            "line": 48.5,
+            "american_price": -115
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": 2.5,
+            "american_price": -106
+          },
+          "manual_reason": "WSU +2.5 close to raw SDSU +2.633 but first-year QB adaptation and personnel unqualified.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": -2.5,
+            "american_price": -114
+          },
+          "manual_reason": "SDSU -2.5 close to both raw margins but no calibrated cover advantage.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": 112
+          },
+          "manual_reason": "WSU +112 needs authentic fair win probability and user venue quote.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": -134
+          },
+          "manual_reason": "SDSU -134 is not a qualified value edge from raw model scalar.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 48.5,
+            "american_price": -105
+          },
+          "manual_reason": "Over 48.5 lies between raw 45.055 and 52.305; no reliable model-consistent total edge.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 48.5,
+            "american_price": -115
+          },
+          "manual_reason": "Under 48.5 also straddles original and refreshed projections, not certified.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Qualify personnel-adjusted current Champion six-market decision and executable venue quote/limit before original cutoff; otherwise PASS/EXPIRE."
+    },
+    {
+      "game_id": "401860908",
+      "game": "Texas State @ Boise State",
+      "kickoff_utc": "2026-11-01T02:00:00.000Z",
+      "first_frozen": {
+        "pred_margin": "11.186323722125593",
+        "pred_total": "62.02851607637056",
+        "pred_win": "0.7837304599759275"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "6.580805352455416",
+        "pred_total": "59.68249125102358",
+        "pred_win": "0.6806050223468065",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "material_saved_drift_branches": [
+        "home_ml"
+      ],
+      "material_personnel_review": "Boise State official roster identifies QB Maddux Madsen, Texas State preview identifies QB Brad Jackson; no final game-day player clearance or injury impact certification. Frozen Boise home margin +11.186, Oct27 +6.581, public Boise -10.5; totals 62.029/59.682 vs public 63.5. Saved home ML drift flag is historical mixed-source, not temporal same-book proof.",
+      "personnel_sources": [
+        {
+          "url": "https://broncosports.com/sports/football/roster/maddux-madsen/14321",
+          "kind": "OFFICIAL_ROSTER_NOT_FINAL_INJURY_REPORT"
+        },
+        {
+          "url": "https://www.espn.com/college-football/game/_/gameId/401860908/texas-st-boise-st",
+          "kind": "PUBLIC_PREGAME_STATS"
+        }
+      ],
+      "official_final_availability": "NOT_VERIFIED",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/texas-state-bobcats/odds",
+        "scrape_id": "01a1901b-b0cd-77ac-a463-9f9d8e29b4bf",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:58:18.482Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 10.5,
+            "american_price": -105
+          },
+          "home_spread": {
+            "line": -10.5,
+            "american_price": -115
+          },
+          "away_ml": {
+            "american_price": 340
+          },
+          "home_ml": {
+            "american_price": -450
+          },
+          "over_total": {
+            "line": 63.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 63.5,
+            "american_price": -110
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": 10.5,
+            "american_price": -105
+          },
+          "manual_reason": "Texas State +10.5 exceeds refreshed Boise +6.581 but no qualified cover probability.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": -10.5,
+            "american_price": -115
+          },
+          "manual_reason": "Boise -10.5 near frozen +11.186 yet well above refreshed +6.581; no certified edge.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": 340
+          },
+          "manual_reason": "Texas State +340 needs calibrated upset probability and personnel review.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": -450
+          },
+          "manual_reason": "Boise -450 cannot be called value from raw model win scalar or saved drift.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 63.5,
+            "american_price": -110
+          },
+          "manual_reason": "Over 63.5 exceeds both raw totals, no calibrated over advantage.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 63.5,
+            "american_price": -110
+          },
+          "manual_reason": "Under 63.5 superficially exceeds both raw totals but no approved total distribution.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Qualify personnel-adjusted current Champion six-market decision and executable venue quote/limit before original cutoff; otherwise PASS/EXPIRE."
+    },
+    {
+      "game_id": "401864530",
+      "game": "Northern Illinois @ UNLV",
+      "kickoff_utc": "2026-11-01T02:30:00.000Z",
+      "first_frozen": {
+        "pred_margin": "9.181695514674217",
+        "pred_total": "46.29422281350146",
+        "pred_win": "0.6522629731082384"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "13.133321942184269",
+        "pred_total": "51.98618289825271",
+        "pred_win": "0.7571328629818298",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "material_saved_drift_branches": [
+        "away_spread",
+        "home_spread",
+        "away_ml",
+        "home_ml"
+      ],
+      "material_personnel_review": "UNLV QB Jackson Arnold and NIU QB Taron Dickens appear in public ESPN season-leader data; final injury/availability not independently certified. Frozen UNLV home margin +9.182 and Oct27 +13.133 vs public UNLV -22.5; raw totals 46.294/51.986 vs public 54.5. Four saved spread/ML drift branches remain not same-book temporal proof.",
+      "personnel_sources": [
+        {
+          "url": "https://www.espn.com/college-football/game/_/gameId/401864530/n-illinois-unlv",
+          "kind": "PUBLIC_PREGAME_STATS_NOT_INJURY_CERTIFICATION"
+        }
+      ],
+      "official_final_availability": "NOT_VERIFIED",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/northern-illinois-huskies/odds",
+        "scrape_id": "01a1901b-b0e2-72ca-97e7-6043a2f787c7",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:58:18.482Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 22.5,
+            "american_price": -122
+          },
+          "home_spread": {
+            "line": -22.5,
+            "american_price": 100
+          },
+          "away_ml": {
+            "american_price": 1060
+          },
+          "home_ml": {
+            "american_price": -2000
+          },
+          "over_total": {
+            "line": 54.5,
+            "american_price": -105
+          },
+          "under_total": {
+            "line": 54.5,
+            "american_price": -115
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": 22.5,
+            "american_price": -122
+          },
+          "manual_reason": "NIU +22.5 exceeds both raw UNLV margins but no personnel-adjusted cover probability.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": -22.5,
+            "american_price": 100
+          },
+          "manual_reason": "UNLV -22.5 much larger than raw 9.182/13.133; no calibrated cover edge.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": 1060
+          },
+          "manual_reason": "NIU +1060 requires qualified upset probability and verified execution offer.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": -2000
+          },
+          "manual_reason": "UNLV -2000 not a certified value edge, user venue/limit unknown.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 54.5,
+            "american_price": -105
+          },
+          "manual_reason": "Over 54.5 above both raw totals; no calibrated over edge.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 54.5,
+            "american_price": -115
+          },
+          "manual_reason": "Under 54.5 cannot be approved from raw lower totals without injury and price calibration.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Qualify personnel-adjusted current Champion six-market decision and executable venue quote/limit before original cutoff; otherwise PASS/EXPIRE."
+    },
+    {
+      "game_id": "401860924",
+      "game": "Oregon State @ Fresno State",
+      "kickoff_utc": "2026-11-01T03:00:00.000Z",
+      "first_frozen": {
+        "pred_margin": "4.265824312937047",
+        "pred_total": "53.27358185300018",
+        "pred_win": "0.5758261080522452"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "-4.5544327816218715",
+        "pred_total": "57.83026815545935",
+        "pred_win": "0.3847223440698264",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_flags": [
+        "S0_FIRST_FROZEN_MARGIN_SIGN_REVERSAL"
+      ],
+      "material_saved_drift_branches": [],
+      "material_personnel_review": "Oregon State official Oct26 preview documents QB Braden Atkinson high-volume passing (24 season TD, 7 consecutive 300-yard games); Fresno State official game center lists QB Jayden Mandal. Frozen Fresno home margin +4.266 reverses to Oct27 -4.554 (Oregon State advantage); public Oregon State -5.5. Frozen total 53.274 vs refreshed 57.830, public 58.5. No final availability certification.",
+      "personnel_sources": [
+        {
+          "url": "https://osubeavers.com/news/2026/10/26/football-oregon-state-returns-from-bye-week-visits-fresno-state-halloween-night",
+          "kind": "OFFICIAL_TEAM_PREVIEW"
+        },
+        {
+          "url": "https://gobulldogs.com/game-center/19136",
+          "kind": "OFFICIAL_TEAM_GAME_CENTER_NOT_INJURY_REPORT"
+        }
+      ],
+      "official_final_availability": "NOT_VERIFIED",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/oregon-state-beavers/odds",
+        "scrape_id": "01a1901b-b11c-7738-b5e6-18d2a12709ef",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:58:18.482Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": -5.5,
+            "american_price": -115
+          },
+          "home_spread": {
+            "line": 5.5,
+            "american_price": -105
+          },
+          "away_ml": {
+            "american_price": -220
+          },
+          "home_ml": {
+            "american_price": 184
+          },
+          "over_total": {
+            "line": 58.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 58.5,
+            "american_price": -110
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": -5.5,
+            "american_price": -115
+          },
+          "manual_reason": "Oregon State -5.5 aligns with refreshed advantage 4.554 but contradicts frozen Fresno +4.266; no calibrated cover edge.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": 5.5,
+            "american_price": -105
+          },
+          "manual_reason": "Fresno +5.5 cannot be selected from frozen home advantage without reconciling Oct27 reversal.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": -220
+          },
+          "manual_reason": "Oregon State -220 requires calibrated current win probability after model sign reversal.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": 184
+          },
+          "manual_reason": "Fresno +184 not qualified from original frozen advantage alone.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 58.5,
+            "american_price": -110
+          },
+          "manual_reason": "Over 58.5 slightly above refreshed total 57.830 but substantially above frozen 53.274; no qualified over.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 58.5,
+            "american_price": -110
+          },
+          "manual_reason": "Under 58.5 not certified from raw projection alone; final offensive availability missing.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Qualify personnel-adjusted current Champion six-market decision and executable venue quote/limit before original cutoff; otherwise PASS/EXPIRE."
+    }
+  ],
+  "attempt_ledger": [
+    {
+      "action": "Four remaining future game public six-market pages rechecked",
+      "outcome": "24 explicit no-approval branch preflights and material QB/model context",
+      "blocker": "No qualified personnel impact, no operator-update clock or executable venue",
+      "next": "Reconcile 3 already-started games without hindsight"
+    },
+    {
+      "action": "Guarded canonical publication",
+      "outcome": "NOT_ATTEMPTED",
+      "blocker": "56 genuine current decisions and 35 certified packets absent",
+      "next": "Only on full contract satisfaction"
+    }
+  ]
+}
