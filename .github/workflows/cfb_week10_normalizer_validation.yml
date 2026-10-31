@@ -13,6 +13,7 @@ on:
       - 'scripts/test_cfb_week10_fallback_branch_inventory.py'
       - 'scripts/cfb_covers_matchup_shadow.py'
       - 'scripts/cfb_week10_covers_gap_report.py'
+      - 'evidence/operational/CFB_BETSHARP_WEEK10_NOV7_DISCOVERY_URLS_20261031.txt'
       - 'scripts/cfb_betsharp_week10_shadow.py'
       - 'scripts/test_cfb_betsharp_week10_shadow.py'
       - 'scripts/test_cfb_covers_matchup_shadow.py'
@@ -57,8 +58,10 @@ jobs:
           sys.path.insert(0, "scripts")
           from cfb_betsharp_week10_shadow import discover
           queue = json.load(open("week10_acquisition_queue.json"))["targets"]
-          result = discover("", queue)
-          assert result["unmatched_unpriced_games_count"] == 46
+          result = discover(open("evidence/operational/CFB_BETSHARP_WEEK10_NOV7_DISCOVERY_URLS_20261031.txt").read(), queue)
+          assert result["source_urls_count"] == 111
+          assert result["mascot_prefix_candidate_count"] > 0
+          assert result["unmatched_unpriced_games_count"] < 46
           assert result["decision_authorized"] is False
           json.dump(result, open("week10_betsharp_shadow_candidates.json", "w"), indent=2)
           PY
