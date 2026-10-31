@@ -1,0 +1,108 @@
+{
+  "schema": "CFB_WEEK9_R16_SELECTIVE_CASE_EVIDENCE_DELTA",
+  "status": "RUN_INCOMPLETE_NO_NEW_BETS",
+  "authority": {
+    "main_at_fresh_read": "12b72f42e538e68514ffb0fd8449c0983fc9ba97",
+    "r14_ledger_blob": "757811e4a6a5028e2d274edaf417706f79cac46a",
+    "r15_ledger_blob": "3c12d537cd57b1894626cf9b6af48b8c66007440",
+    "accepted_thursday_sheet_blob": "f05173046e51ab9634d47b1be5fe90c2a5026c96",
+    "frozen_lineage_blob": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9",
+    "routine": "v5.0 + accepted v5.1 A/C + v1.132/v1.133"
+  },
+  "source_clock_note": "Live retrieval occurred during Fri Oct30 2026 evening CT automation run. Public page crawl time is not bookmaker offer-update time; only explicit publisher timestamps recorded. Official Big Ten iframe not independently parsed; secondary report cannot be promoted to official direct clearance.",
+  "cases": [
+    {
+      "game_id": "401858503",
+      "game": "Illinois @ Maryland",
+      "deadline_utc": "2026-10-31T14:00:00Z",
+      "decision": "NOT_APPROVED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "champion_current_six_market_row": "NOT_AVAILABLE",
+      "new_evidence": [
+        {
+          "url": "https://kickoffstatus.com/games/2026-10-31-illinois-at-maryland/",
+          "kind": "secondary_transcription_of_official_Big_Ten_Thursday_report",
+          "source_report_posted": "2026-10-29 17:00 PT",
+          "site_refresh_displayed": "2026-10-30 15:45 PT",
+          "findings": "Maryland WR Sean Williams questionable->doubtful; OL Trevor Szymanski questionable->doubtful; RB DJ Samuels and Harry Dalton III out (unchanged initial->update); WR Josiah Teasley out, WR Ryan Manning questionable; Illinois WR Jayshon Platt doubtful->out; QB Houser doubtful unchanged. This is material personnel review debt against Maryland passing/protection rationale, not an automatic veto or quantitative adjustment."
+        },
+        {
+          "url": "https://www.betus.com.pa/sportsbook/college-football/illinois-vs-maryland/",
+          "kind": "independent_public_book_page_not_executable",
+          "observed": "Maryland +2.5/-105 public page, event Sat Oct31 noon ET; no verified offer-update clock, user venue, stake limit or acceptance"
+        }
+      ],
+      "blockers": [
+        "Maryland WR/OL/RB statuses require qualitative materiality reconciliation against original passing/protection rationale; not certified from secondary transcription alone",
+        "No authentic current Champion six-market decision row",
+        "No authenticated user-venue executable offer/limit or book offer-update clock",
+        "Final game-day report not yet available/verified; deadline cannot be extended"
+      ],
+      "prior_review_blob": "7864632f15634cb997819bc4c54dc0194fd2cbf9",
+      "frozen_reference": "home -6.7 / total 57.4 / home win 0.625 (NOT cover probability)"
+    },
+    {
+      "game_id": "401858509",
+      "game": "Ohio State @ USC",
+      "deadline_utc": "2026-10-31T20:00:00Z",
+      "decision": "NOT_APPROVED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "champion_current_six_market_row": "NOT_AVAILABLE",
+      "new_evidence": [
+        {
+          "url": "https://www.rotowire.com/betting/college-football/game/usc-vs-ohio-state-odds-2026-10-31-2970404",
+          "kind": "secondary_reported_Oct30_QB_trend_not_confirmed_starter",
+          "findings": "Oct30 RotoWire news says Luke Fahey trending toward starting, Tavien St. Clair not favorite, citing On3; coach has not confirmed starter. Original conditional review explicitly covers either candidate."
+        },
+        {
+          "url": "https://www.rotowire.com/betting/college-football/game/usc-vs-ohio-state-odds-2026-10-31-2970404",
+          "kind": "independent_public_aggregated_book_not_executable",
+          "observed": "Betr total 51.5, under -110; no user venue stake limit, offer-update clock or executable quote verified"
+        }
+      ],
+      "blockers": [
+        "Frozen Champion total 58.1 exceeds under 51.5 by 6.6; no valid calibrated under reconciliation or fair probability",
+        "No genuine current Champion six-market decision row",
+        "No authenticated executable user-venue quote/limit",
+        "Final personnel clearance not verified"
+      ],
+      "prior_review_blob": "f93bc42dad561f914456ceff488ddd24d90ca580"
+    },
+    {
+      "game_id": "401864525",
+      "game": "UConn @ Air Force",
+      "decision": "NOT_APPROVED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "champion_current_six_market_row": "NOT_AVAILABLE",
+      "new_evidence": [
+        {
+          "url": "https://gazette.com/2026/10/27/air-force-confirms-qb-change-looming-after-injury-freshman-in-the-mix/",
+          "kind": "independent_reconfirmation_no_new_starter",
+          "findings": "Coach Calhoun confirmed Medders out with turf toe, Johnson/Fisher competition. No verified starter. Already in R14/R15; do not treat as new fact."
+        }
+      ],
+      "blockers": [
+        "Known Medders OUT materially changes historical option-continuity assumptions; must review six branches using genuine Champion current output",
+        "Johnson versus Fisher starter not verified",
+        "Qualified current book/venue/limit and final material review absent"
+      ]
+    }
+  ],
+  "remaining_32_cases": "R14 35-case six-branch frontier and R15 per-case delta unchanged by reference; no new certifications for these 32; 16 R14 material market-drift games still require authentic current decision re-evaluation.",
+  "counts": {
+    "r14_case_total": 35,
+    "r14_material_drift": 16,
+    "r14_historical_six_branches": 210,
+    "new_current_champion_rows": 0,
+    "new_certified_packets": 0,
+    "new_approved_bets": 0
+  },
+  "publication": {
+    "status": "NOT_ATTEMPTED_MISSING_AUTHENTIC_56_CURRENT_DECISIONS",
+    "accepted_hot_sheet": "THURSDAY_2026_10_29_2008CT_UNCHANGED_STALE_FOR_CURRENT_EXECUTION",
+    "serial_writes": false,
+    "selected_ci": false,
+    "independent_producer_acceptance": false
+  },
+  "next_trigger": "Genuine current Champion decision rows plus qualified material personnel packet and authenticated executable venue offer before original 09:00 CT Maryland / 15:00 CT OSU-USC cutoffs; otherwise expire without approval."
+}
