@@ -208,7 +208,7 @@ jobs:
               _,_,_,_,saved=gate.inputs(market,decision,lineage,selected['as_of_utc'],'WEEK9')
               rows=[{k:v for k,v in x.items() if k not in ('state_recorded_at_utc','state_evidence')} for x in saved.values()]
               assert len(rows)==56 and len({x['game_id'] for x in rows})==56
-              pm,pd=compile(market,decision,capture,lineage,'CFB_WEEK9_RESCUE_DRY_RUN_ONLY',at,recovered,rows)
+              pm,pd=compile(market,decision,capture,lineage,'CFB_MARKET_MONITOR_20261030T235800Z',at,recovered,rows)
               result.update(status='VALIDATED_PROPOSALS_HISTORICAL_REPLAY_ONLY',
                   market_blob=gate.blob(pm),decision_blob=gate.blob(pd),games=56,
                   note='Compiler executed on preserved decisions; not a new Champion six-branch review, current quote, or publication.')
