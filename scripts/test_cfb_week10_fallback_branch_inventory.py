@@ -16,6 +16,15 @@ class Week10InventoryCoverageTest(unittest.TestCase):
         self.assertEqual(b["displayed_branches"], 102)
         self.assertEqual(set(b["displayed_by_branch"]), set(BRANCHES))
 
+    def test_acquisition_queue_tracks_every_missing_branch(self):
+        b = self.board
+        queue = b["acquisition_queue"]
+        self.assertEqual(len(queue), 46)
+        self.assertEqual({x["game_id"] for x in queue}, set(b["unpriced_game_ids"]))
+        self.assertEqual(sum(len(x["missing_branches"]) for x in queue), 276)
+        self.assertTrue(all(set(x["missing_branches"]) == set(BRANCHES)
+                            for x in queue))
+
     def test_missing_games_are_explicit_and_not_passes(self):
         b = self.board
         self.assertEqual(b["unpriced_games"], 46)
