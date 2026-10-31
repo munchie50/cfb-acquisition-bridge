@@ -30,7 +30,9 @@ def discover(markdown, unpriced_queue, day="2026-11-07"):
     return {"status": "SHADOW_DISCOVERY_ONLY", "day": day,
             "discovered_source_game_urls": sorted("https://betsharp.com/ncaaf/game/"+x for x in slugs),
             "source_urls_count": len(slugs), "unpriced_targets": targets,
-            "strict_name_candidates": candidates, "strict_name_candidate_count": len(candidates),\n            "source_game_urls_exceed_canonical_slate": len(slugs) > 63,\n            "unverified_cross_league_rows_possible": True,
+            "strict_name_candidates": candidates, "strict_name_candidate_count": len(candidates),
+            "source_game_urls_exceed_canonical_slate": len(slugs) > 63,
+            "unverified_cross_league_rows_possible": True,
             "canonical_join_authorized": False, "prices_qualified": False,
             "decision_authorized": False}
 
