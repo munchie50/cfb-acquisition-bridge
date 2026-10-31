@@ -27,7 +27,7 @@ def reconcile_shadow_moneylines(result, canonical_match, inventory):
         return {"status": "UNRESOLVED", "new_candidate_branches": 0,
                 "decision_authorized": False}
     offers = result["displayed_moneyline_rows"]
-    if len(offers) != 2:
+    if len(offers) != 2 or len({offer["displayed_moneyline"] for offer in offers}) != 2:
         return {"status": "INCOMPLETE_PAIR", "game_id": game_id,
                 "new_candidate_branches": 0, "decision_authorized": False}
     missing = [name for name in ("away_ml", "home_ml")
