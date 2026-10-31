@@ -20,7 +20,7 @@ def reconcile(text, expected_games=5):
                  for k in observations[0]["branches"]}
     return {"status": "FROZEN_SHADOW_SOURCE_RECONCILIATION", "games":len(observations),
             "displayed_branch_counts": available, "displayed_total": sum(available.values()),
-            "missing_total": 30-sum(available.values()), "canonical_identity_verified": False,
+            "missing_total": expected_games * 6 - sum(available.values()), "canonical_identity_verified": False,
             "source_price_executable": False, "decision_authorized": False,
             "observations": observations}
 
