@@ -1,0 +1,1018 @@
+{
+  "schema": "CFB_WEEK9_R35_FIVE_ADDITIONAL_GOVERNED_MANUAL_SIX_MARKET_PREFLIGHT",
+  "status": "RUN_INCOMPLETE_NO_APPROVAL",
+  "recorded_by_utc": "2026-10-31T03:57:58.517Z",
+  "clock_semantics": "SCRAPE_RETRIEVAL_UPPER_BOUND_NOT_OPERATOR_UPDATE_CLOCK",
+  "parent_r26_blob": "452f5ea9d3453345f4e15d8499abc8111ca57f03",
+  "previous_r34_blob": "4dcc86667a86a3ae2bc977b2c7d2a49300fd14d1",
+  "new_cases": 5,
+  "new_branch_preflights": 30,
+  "cumulative_distinct_preflight_cases": 28,
+  "cumulative_branch_preflights": 168,
+  "official_SEC_rows": 33,
+  "new_certified_decisions": 0,
+  "new_qualified_packets": 0,
+  "new_bet_approvals": 0,
+  "guards": [
+    "Maryland and Ohio State-USC remain NOT APPROVED with original 14:00Z and 20:00Z deadlines",
+    "Do not infer operator temporal movement from different public scrape values",
+    "No raw Champion numeric comparison or preflight equals calibrated betting approval",
+    "No user venue executable quote/limit",
+    "No guarded canonical publication until 56 genuinely qualified rows and all contract gates"
+  ],
+  "cases": [
+    {
+      "game_id": "401864529",
+      "game": "New Mexico @ San José State",
+      "kickoff_utc": "2026-10-31T20:00:00.000Z",
+      "first_frozen": {
+        "pred_margin": "-7.33449986256627",
+        "pred_total": "44.55662918107981",
+        "pred_win": "0.31769446869000484"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "-5.088111188203838",
+        "pred_total": "46.84389099544602",
+        "pred_win": "0.3933558457973612",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "material_saved_drift_branches": [
+        "home_ml"
+      ],
+      "official_availability": null,
+      "other_personnel_sources": [
+        {
+          "url": "https://www.espn.com/college-football/game/_/gameId/401864529/new-mexico-san-jose-st",
+          "kind": "PUBLIC_PREGAME_STATS_NOT_INJURY_CLEARANCE"
+        }
+      ],
+      "material_personnel_review": "New Mexico QB Toa Fa'avae and San Jose State QB Luke Weaver identified in ESPN pregame season-leader records, but no authoritative game-day medical status recovered. Frozen home margin -7.334 and Oct27 -5.088 both favor New Mexico, while public New Mexico -14.5 is much larger. Saved home moneyline flagged material drift.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-lobos/odds",
+        "scrape_id": "01a1901a-f384-77cc-bdf4-6fdf5acb4fdc",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:57:30.400Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": -14.5,
+            "american_price": -110
+          },
+          "home_spread": {
+            "line": 14.5,
+            "american_price": -110
+          },
+          "away_ml": {
+            "american_price": -780
+          },
+          "home_ml": {
+            "american_price": 550
+          },
+          "over_total": {
+            "line": 42.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 42.5,
+            "american_price": -110
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": -14.5,
+            "american_price": -110
+          },
+          "manual_reason": "New Mexico -14.5 much greater than raw projected 7.334/5.088 advantage; no qualified cover edge.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": 14.5,
+            "american_price": -110
+          },
+          "manual_reason": "San Jose State +14.5 cannot be chosen from numeric discrepancy without material player clearance and calibrated model.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": -780
+          },
+          "manual_reason": "New Mexico -780 requires qualified win probability and operator venue quote.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": 550
+          },
+          "manual_reason": "San Jose State +550 is not value merely because raw model is less one-sided than market.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 42.5,
+            "american_price": -110
+          },
+          "manual_reason": "Over 42.5 below raw totals 44.557/46.844, but no certified offensive availability or total distribution.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 42.5,
+            "american_price": -110
+          },
+          "manual_reason": "Under 42.5 lacks calibrated probability and verified execution venue.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Qualify calibrated personnel-adjusted six-market decision and venue quote/limit before original cutoff; otherwise PASS/EXPIRE."
+    },
+    {
+      "game_id": "401858508",
+      "game": "Nevada @ UCLA",
+      "kickoff_utc": "2026-10-31T20:15:00.000Z",
+      "first_frozen": {
+        "pred_margin": "11.487055478910321",
+        "pred_total": "56.11092212907221",
+        "pred_win": "0.7592982366080254"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "11.485564691037613",
+        "pred_total": "50.69648718780867",
+        "pred_win": "0.7540019011149105",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "material_saved_drift_branches": [
+        "home_ml"
+      ],
+      "official_availability": null,
+      "other_personnel_sources": [
+        {
+          "url": "https://www.espn.com/college-football/preview/_/gameId/401858508",
+          "scrape_id": "01a1901a-d59c-74c9-a1ef-977d87beea4d",
+          "kind": "PUBLISHED_PREGAME_PERSONNEL_NOT_OFFICIAL_FINAL_REPORT"
+        }
+      ],
+      "material_personnel_review": "ESPN pregame reports Nevada starter Carter Jones OUT for second straight week (arm/elbow), UCLA Nico Iamaleava OUT season (knee), UCLA Ty Dieffenbach expected third straight start. Both starting-QB absences materially alter total/spread assumptions. Frozen UCLA home margin +11.487 and Oct27 +11.486 vs public UCLA -22.5, totals 56.111/50.696 vs public 43.5.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/nevada-wolf-pack/odds",
+        "scrape_id": "01a1901a-f396-7639-ac0d-af580b754901",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:57:30.400Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 22.5,
+            "american_price": -110
+          },
+          "home_spread": {
+            "line": -22.5,
+            "american_price": -110
+          },
+          "away_ml": {
+            "american_price": 1280
+          },
+          "home_ml": {
+            "american_price": -3500
+          },
+          "over_total": {
+            "line": 43.5,
+            "american_price": -115
+          },
+          "under_total": {
+            "line": 43.5,
+            "american_price": -105
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": 22.5,
+            "american_price": -110
+          },
+          "manual_reason": "Nevada +22.5 versus raw UCLA +11.486 cannot be selected without Nevada replacement QB calibration.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": -22.5,
+            "american_price": -110
+          },
+          "manual_reason": "UCLA -22.5 exceeds both raw margins by ~11 points, and UCLA backup QB is starting; no cover edge certified.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": 1280
+          },
+          "manual_reason": "Nevada +1280 requires calibrated upset probability with Nevada starter OUT.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": -3500
+          },
+          "manual_reason": "UCLA -3500 has no qualified value and venue limits unknown.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 43.5,
+            "american_price": -115
+          },
+          "manual_reason": "Over 43.5 below both raw totals, but both QB replacements and scoring uncertainty preclude simple selection.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 43.5,
+            "american_price": -105
+          },
+          "manual_reason": "Under 43.5 cannot be certified from QB injuries alone because raw totals still exceed the line.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Qualify calibrated personnel-adjusted six-market decision and venue quote/limit before original cutoff; otherwise PASS/EXPIRE."
+    },
+    {
+      "game_id": "401856736",
+      "game": "South Carolina @ Oklahoma",
+      "kickoff_utc": "2026-10-31T20:15:00.000Z",
+      "first_frozen": {
+        "pred_margin": "1.9976207150226601",
+        "pred_total": "46.03759623778151",
+        "pred_win": "0.544129647344929"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "3.321708993863602",
+        "pred_total": "50.989892719716636",
+        "pred_win": "0.5785863014271945",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_flags": [],
+      "material_saved_drift_branches": [],
+      "official_availability": {
+        "source": "https://app.hdintelligence.com/?conf=SEC&source=SEC&sport=Football&type=archive",
+        "scrape_id": "01a1901b-5a6e-74ab-b786-72ec97c801ce",
+        "rows": [
+          {
+            "team": "South Carolina",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Oklahoma",
+            "number": "#12",
+            "player": "Quay'sheed Scott",
+            "initial_status": "Doubtful",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "South Carolina",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Oklahoma",
+            "number": "#17",
+            "player": "Jayden Sellers",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "South Carolina",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Oklahoma",
+            "number": "#22",
+            "player": "Jawarn Howell",
+            "initial_status": "Doubtful",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "South Carolina",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Oklahoma",
+            "number": "#41",
+            "player": "Kobby Sakyi-Prah",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "South Carolina",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Oklahoma",
+            "number": "#74",
+            "player": "Josiah Thompson",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "South Carolina",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Oklahoma",
+            "number": "#75",
+            "player": "Dayne Arnett",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "South Carolina",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Oklahoma",
+            "number": "#78",
+            "player": "Seth Smith",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#7",
+            "player": "Taylor Heim",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#9",
+            "player": "Dakoda Fields",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#11",
+            "player": "Trell Harris",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#14",
+            "player": "Elijah Thomas",
+            "initial_status": "Doubtful",
+            "update1_status": "Doubtful",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#18",
+            "player": "Cole Sullivan",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#21",
+            "player": "Xavier Robinson",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#22",
+            "player": "Peyton Bowen",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#22",
+            "player": "Trynae Washington",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#23",
+            "player": "Eli Bowen",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#24",
+            "player": "Jacobe Johnson",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#55",
+            "player": "Eddy Pierre-Louis",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#69",
+            "player": "Jake Maikkula",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#70",
+            "player": "Ryan Fodje",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#72",
+            "player": "Fred Hinton",
+            "initial_status": "Questionable",
+            "update1_status": "Doubtful",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. South Carolina",
+            "number": "#77",
+            "player": "Heath Ozaeta",
+            "initial_status": "Probable",
+            "update1_status": "Available",
+            "update2_status": "-",
+            "game_day_status": "-"
+          }
+        ],
+        "game_day_not_yet_published": true,
+        "retrieved_no_later_than_utc": "2026-10-31T03:57:58.517Z"
+      },
+      "other_personnel_sources": [],
+      "material_personnel_review": "Official SEC South Carolina Quay'sheed Scott and Jawarn Howell downgraded OUT, OL Josiah Thompson and Dayne Arnett OUT; Oklahoma DB Peyton/Eli Bowen QUESTIONABLE and OL Fred Hinton DOUBTFUL, Heath Ozaeta AVAILABLE. Frozen Oklahoma home margin +1.998, Oct27 +3.322, public Oklahoma -2.5; totals 46.038/50.990 vs public 44.5. Public same-site ML display now +132/-160 vs earlier +130/-156; no operator update timestamp.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/south-carolina-gamecocks/odds",
+        "scrape_id": "01a1901a-f3e4-72db-b833-ce20062d735d",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:57:30.400Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 2.5,
+            "american_price": 104
+          },
+          "home_spread": {
+            "line": -2.5,
+            "american_price": -128
+          },
+          "away_ml": {
+            "american_price": 132
+          },
+          "home_ml": {
+            "american_price": -160
+          },
+          "over_total": {
+            "line": 44.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 44.5,
+            "american_price": -110
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": 2.5,
+            "american_price": 104
+          },
+          "manual_reason": "South Carolina +2.5 near raw Oklahoma +1.998/+3.322 but multiple offensive-line losses require adjusted cover assessment.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": -2.5,
+            "american_price": -128
+          },
+          "manual_reason": "Oklahoma -2.5 not certifiable from raw margin with key Oklahoma DB/OL uncertainties.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": 132
+          },
+          "manual_reason": "South Carolina +132 public display differs from earlier +130; not proven operator move, no qualified fair ML.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": -160
+          },
+          "manual_reason": "Oklahoma -160 public display differs from earlier -156; no qualified fair price or venue limit.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 44.5,
+            "american_price": -110
+          },
+          "manual_reason": "Over 44.5 below raw totals but line/secondary injuries require calibrated distribution.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 44.5,
+            "american_price": -110
+          },
+          "manual_reason": "Under 44.5 not qualified from personnel alone, both raw totals exceed.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Qualify calibrated personnel-adjusted six-market decision and venue quote/limit before original cutoff; otherwise PASS/EXPIRE."
+    },
+    {
+      "game_id": "401869846",
+      "game": "App State @ Georgia Southern",
+      "kickoff_utc": "2026-10-31T22:30:00.000Z",
+      "first_frozen": {
+        "pred_margin": "-1.2164781787103556",
+        "pred_total": "47.735706328738324",
+        "pred_win": "0.43239638661503443"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "1.918758277056822",
+        "pred_total": "52.3548187150214",
+        "pred_win": "0.537056995277176",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_flags": [
+        "S0_FIRST_FROZEN_MARGIN_SIGN_REVERSAL"
+      ],
+      "material_saved_drift_branches": [],
+      "official_availability": null,
+      "other_personnel_sources": [
+        {
+          "url": "https://appstatesports.com/news/2026/10/29/league-race-intensifies-as-football-faces-southern-on-halloween-night.aspx",
+          "scrape_id": "01a1901a-d56b-713b-962f-89751136ea98",
+          "kind": "OFFICIAL_TEAM_PREVIEW_WITH_REPORTED_INITIAL_AVAILABILITY"
+        }
+      ],
+      "material_personnel_review": "Official App State Oct29 preview says Georgia Southern QB Max Johnson PROBABLE after leaving ODU game; Turner Helton and Weston Bryan also used; App State QB Malachi Singleton started after prior injury, LT Devon Manuel OUT for season. Frozen Georgia Southern home margin -1.216 flips to Oct27 +1.919, public Georgia Southern -5.5. Totals 47.736/52.355 vs public 56.5.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/appalachian-state-mountaineers/odds",
+        "scrape_id": "01a1901a-f205-7458-aaf5-fc42cccd90ab",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:57:30.400Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 5.5,
+            "american_price": -110
+          },
+          "home_spread": {
+            "line": -5.5,
+            "american_price": -110
+          },
+          "away_ml": {
+            "american_price": 168
+          },
+          "home_ml": {
+            "american_price": -205
+          },
+          "over_total": {
+            "line": 56.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 56.5,
+            "american_price": -110
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": 5.5,
+            "american_price": -110
+          },
+          "manual_reason": "App State +5.5 cannot be selected solely because refreshed margin favors Georgia Southern by only 1.919; QBs/OL material.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": -5.5,
+            "american_price": -110
+          },
+          "manual_reason": "Georgia Southern -5.5 larger than both raw margins, no calibrated cover edge.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": 168
+          },
+          "manual_reason": "App State +168 requires qualified adjusted win probability after model margin sign reversal.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": -205
+          },
+          "manual_reason": "Georgia Southern -205 not certified from raw projected win scalar with Max Johnson probable only.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 56.5,
+            "american_price": -110
+          },
+          "manual_reason": "Over 56.5 above both raw totals, no calibrated over edge.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 56.5,
+            "american_price": -110
+          },
+          "manual_reason": "Under 56.5 cannot be selected solely from raw lower totals while QB statuses unsettled.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Qualify calibrated personnel-adjusted six-market decision and venue quote/limit before original cutoff; otherwise PASS/EXPIRE."
+    },
+    {
+      "game_id": "401856733",
+      "game": "Missouri @ Arkansas",
+      "kickoff_utc": "2026-10-31T23:45:00.000Z",
+      "first_frozen": {
+        "pred_margin": "-13.144660542665587",
+        "pred_total": "48.4571487693492",
+        "pred_win": "0.22032417143604363"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "-4.1378740611616776",
+        "pred_total": "50.096808098651024",
+        "pred_win": "0.4180785190821065",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "material_saved_drift_branches": [
+        "away_ml"
+      ],
+      "official_availability": {
+        "source": "https://app.hdintelligence.com/?conf=SEC&source=SEC&sport=Football&type=archive",
+        "scrape_id": "01a1901b-5a6e-74ab-b786-72ec97c801ce",
+        "rows": [
+          {
+            "team": "Missouri",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Arkansas",
+            "number": "#21",
+            "player": "Malae Fonoti",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Missouri",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Arkansas",
+            "number": "#54",
+            "player": "Josh Atkins",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Missouri",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Arkansas",
+            "number": "#88",
+            "player": "Gavin Hoffman",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arkansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Missouri",
+            "number": "#0",
+            "player": "Braylen Russell",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arkansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Missouri",
+            "number": "#3",
+            "player": "Braydon Lee",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arkansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Missouri",
+            "number": "#6",
+            "player": "Chris Marshall",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arkansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Missouri",
+            "number": "#47",
+            "player": "Maddox Lassiter",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arkansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Missouri",
+            "number": "#52",
+            "player": "Caden Kitler",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arkansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Missouri",
+            "number": "#83",
+            "player": "Jaden Platt",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arkansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Missouri",
+            "number": "#89",
+            "player": "Gavin Garretson",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arkansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Missouri",
+            "number": "#90",
+            "player": "Caleb Bell",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          }
+        ],
+        "game_day_not_yet_published": true,
+        "retrieved_no_later_than_utc": "2026-10-31T03:57:58.517Z"
+      },
+      "other_personnel_sources": [],
+      "material_personnel_review": "Official SEC Missouri Malae Fonoti, Josh Atkins, Gavin Hoffman OUT; Arkansas Braylen Russell PROBABLE, Chris Marshall QUESTIONABLE, Jaden Platt PROBABLE. Frozen Arkansas home margin -13.145 (Missouri advantage) narrows to Oct27 -4.138 vs public Missouri -10.5; total 48.457/50.097 vs public 48.5; away moneyline saved drift flagged.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/missouri-tigers/odds",
+        "scrape_id": "01a1901a-f421-72aa-a887-856cfde51efd",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:57:30.400Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": -10.5,
+            "american_price": -105
+          },
+          "home_spread": {
+            "line": 10.5,
+            "american_price": -115
+          },
+          "away_ml": {
+            "american_price": -385
+          },
+          "home_ml": {
+            "american_price": 310
+          },
+          "over_total": {
+            "line": 48.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 48.5,
+            "american_price": -110
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": -10.5,
+            "american_price": -105
+          },
+          "manual_reason": "Missouri -10.5 closer to frozen 13.145 advantage than refreshed 4.138, no calibrated cover edge.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": 10.5,
+            "american_price": -115
+          },
+          "manual_reason": "Arkansas +10.5 exceeds raw refreshed Missouri advantage but offensive availability not fully certified.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": -385
+          },
+          "manual_reason": "Missouri -385 cannot be approved from frozen model win scalar after material margin change.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": 310
+          },
+          "manual_reason": "Arkansas +310 lacks qualified adjusted fair win probability and venue proof.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 48.5,
+            "american_price": -110
+          },
+          "manual_reason": "Over 48.5 straddles frozen 48.457 and refreshed 50.097, no reliable edge.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 48.5,
+            "american_price": -110
+          },
+          "manual_reason": "Under 48.5 also straddles snapshots and requires calibrated total distribution.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Qualify calibrated personnel-adjusted six-market decision and venue quote/limit before original cutoff; otherwise PASS/EXPIRE."
+    }
+  ],
+  "attempt_ledger": [
+    {
+      "action": "Official SEC material roster and 5 fresh public six-market pages",
+      "outcome": "Five distinct cases and 30 branch preflights; SEC statuses plus independent QB reports",
+      "blocker": "Final game-day status and calibrated player impact not certified",
+      "next": "Recheck if source updates before original cutoff"
+    },
+    {
+      "action": "South Carolina Oklahoma public same-site ML display comparison",
+      "outcome": "Earlier +130/-156 versus latest +132/-160; retrieval observations only",
+      "blocker": "No operator update timestamp; cannot certify temporal move",
+      "next": "Preserve raw observation without value inference"
+    },
+    {
+      "action": "Canonical publication",
+      "outcome": "NOT_ATTEMPTED",
+      "blocker": "56 authentic current decision rows and venue/review gates missing",
+      "next": "Advance remaining unreviewed cases"
+    }
+  ]
+}
