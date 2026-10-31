@@ -12,13 +12,15 @@ def inspect(markdown, source_url, observed_at_utc):
     if not title:
         raise ValueError("missing matchup identity")
     rows = []
+    seen = set()
     for line in markdown.splitlines():
         if not line.startswith("| ") or "sportsbooks/" not in line:
             continue
         if "fanduel_icon.svg" not in line:
             continue
         match = re.search(r"\|\s*([+-]\d{2,5})!\[FanDuel", line)
-        if match:
+        if match and int(match.group(1)) not in seen:
+            seen.add(int(match.group(1)))
             rows.append({"displayed_moneyline": int(match.group(1)),
                          "book_display": "FanDuel", "source_row": line[:160]})
     return {"status": "UNQUALIFIED_SHADOW_SOURCE_ONLY", "matchup": title.group(1),
