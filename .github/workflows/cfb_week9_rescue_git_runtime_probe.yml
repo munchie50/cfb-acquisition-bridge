@@ -171,7 +171,8 @@ jobs:
             'source_scope':'CBS_DISPLAY_ONLY_NOT_INDEPENDENT_KICKOFF_AUTHORITY',
             'rows':rows,'new_decisions':0,'canonical_mutations':0}
           out=Path('week9-kickoff-source-queue.json')
-          out.write_text(json.dumps(result,indent=2)+'\\n')
+          out.write_text(json.dumps(result,indent=2)+'\n')
+          assert json.loads(out.read_text())==result, 'serialized kickoff artifact is not valid JSON'
           print('KICKOFF_SOURCE_QUEUE',len(rows),'DISPLAY_TIMES',sum(x['source_display_kickoff_utc'] is not None for x in rows))
           PY
       - name: Preserve Week9 kickoff evidence reconciliation artifact
