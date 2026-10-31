@@ -1,0 +1,52 @@
+{
+  "schema": "CFB_WEEK9_OCT27_INDEPENDENT_S0_ACCEPTANCE_R18",
+  "status": "PASS_WEEKLY_REFRESH_ACCEPTANCE",
+  "authority": {
+    "repo_main_at_initial_read": "328603ac62d937e42ac6de852b92dc3aa6d13500",
+    "natural_tuesday_run_id": 40532875540,
+    "natural_job_id": 122290155517,
+    "artifact_id": 12746278820,
+    "artifact_name": "cfb-weekly-tuesday-candidate-boundary",
+    "zip_sha256": "29adfe868698d7368627d75ed42f3f2aead825266f3363e697677750b3d1975f",
+    "frozen_fit_artifact_id": 10895838069,
+    "frozen_fit_zip_sha256": "3a2cabfcd37e0bcf0cae85efc77eaa6755ffb12734d1e48c4c582ed1de375587",
+    "auditor_path": "scripts/cfb_qa_weekly_refresh_acceptance.py",
+    "auditor_git_blob": "fec94be67c2390a651e43e630440dd0020ca7aa6",
+    "previous_accepted_source_blob": "467e21006cc51fcc46b9577d7f98f301f9e63f84",
+    "previous_accepted_cutoff": "2026-10-13T15:13:13.866672+00:00"
+  },
+  "audit": {
+    "status": "PASS_WEEKLY_REFRESH_ACCEPTANCE",
+    "snapshot_type": "REFRESH_SNAPSHOT",
+    "cutoff_utc": "2026-10-27T15:38:14.731739+00:00",
+    "target_games": 322,
+    "eligible_predictions": 320,
+    "excluded_games": 2,
+    "team_side_ledger_rows": 644,
+    "chronology_rows": 642,
+    "strict_chronology": true,
+    "predictions_independently_recomputed": true,
+    "artifact_hashes_reproduced": true,
+    "package_manifest_files_hash_verified": 17,
+    "package_manifest_hash_mismatches": 0,
+    "schedule_sha256": "67dddc3f9f73111aa1fd1ce73354b9ef34e0a406bdcdbaa956fe0c098090056c",
+    "pbp_sha256": "40457e9ab040d91410f5948063484ad75d38052993e934f25f457bdfe5f3af9d",
+    "target_outcomes_opened": false,
+    "market_joined": false,
+    "fit_or_optimization_performed": false
+  },
+  "week9_35_coverage": {
+    "historical_R14_cases": 35,
+    "candidate_prediction_rows": 35,
+    "candidate_exclusions": 0,
+    "missing": 0,
+    "source": "Oct27 candidate game_id exact identity join to R14 35 case ledger; prospective S0 predictions are NOT current six-market decisions"
+  },
+  "limitations": [
+    "Independent S0 acceptance does not approve any wager, current six-market decision, packet certification, venue quote or market publication.",
+    "Archive kickoff timestamps are not independent actual kickoff authority.",
+    "No Challenger promotion, refit, coefficient or scaling changes.",
+    "Accepted source-state pointer must not advance until this evidence and the independent acceptance record are independently read back.",
+    "No claim that the October 27 candidate was accepted on October 27."
+  ]
+}
