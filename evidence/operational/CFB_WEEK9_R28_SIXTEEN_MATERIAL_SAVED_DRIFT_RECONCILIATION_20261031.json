@@ -1,0 +1,567 @@
+{
+  "schema": "CFB_WEEK9_R28_SAVED_MIXED_BOOK_VS_CURRENT_FANDUEL_NUMERIC_RECONCILIATION",
+  "status": "RUN_INCOMPLETE_NOT_CERTIFIED",
+  "recorded_by_utc": "2026-10-31T03:19:39.052Z",
+  "r19_blob": "c6b8895e8ceeeb68f396219801a323502421ffa6",
+  "r26_blob": "452f5ea9d3453345f4e15d8499abc8111ca57f03",
+  "counts": {
+    "material_saved_drift_cases": 16,
+    "flagged_branches": 27,
+    "public_numeric_differences": 18,
+    "public_numeric_matches": 4,
+    "unavailable_public_branch_comparisons": 5,
+    "certified_temporal_market_moves": 0,
+    "approved_bets": 0
+  },
+  "governance": "Cross-book numeric differences are NOT proven time moves, qualified current market offers, price/EV edges, or betting approvals. Never replace frozen Champion, never backfill expired cases.",
+  "cases": [
+    {
+      "game_id": "401866451",
+      "game": "Kent State @ Sacramento State",
+      "kickoff_utc": "2026-10-31T02:30:00.000Z",
+      "expired": true,
+      "saved_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "away_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": -265,
+          "public_fanduel_retrieved_no_later_than_utc": null,
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": null,
+          "number_or_price_differs": null,
+          "comparability": "NO_CURRENT_PUBLIC_FANDUEL_DISPLAY"
+        },
+        {
+          "branch": "home_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": 230,
+          "public_fanduel_retrieved_no_later_than_utc": null,
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": null,
+          "number_or_price_differs": null,
+          "comparability": "NO_CURRENT_PUBLIC_FANDUEL_DISPLAY"
+        }
+      ],
+      "public_source": null,
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401866452",
+      "game": "Bowling Green @ Western Michigan",
+      "kickoff_utc": "2026-10-31T16:00:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "away_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": 490,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": 500,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        },
+        {
+          "branch": "home_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": -599,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": -690,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/bowling-green-falcons/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401856735",
+      "game": "Auburn @ Ole Miss",
+      "kickoff_utc": "2026-10-31T16:45:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "away_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": 360,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": null,
+          "number_or_price_differs": null,
+          "comparability": "NO_CURRENT_PUBLIC_FANDUEL_DISPLAY"
+        },
+        {
+          "branch": "home_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": -450,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": null,
+          "number_or_price_differs": null,
+          "comparability": "NO_CURRENT_PUBLIC_FANDUEL_DISPLAY"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/auburn-tigers/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401861966",
+      "game": "UConn @ Air Force",
+      "kickoff_utc": "2026-10-31T19:00:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "away_spread"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "away_spread",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": -1,
+          "prior_american_price": -108,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+          "public_fanduel_line": -1.5,
+          "public_fanduel_american_price": -106,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/air-force-falcons/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401860910",
+      "game": "Colorado State @ Utah State",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "home_spread",
+        "away_ml",
+        "home_ml",
+        "over_total"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "home_spread",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": -6.5,
+          "prior_american_price": -138,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+          "public_fanduel_line": -7.5,
+          "public_fanduel_american_price": -105,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        },
+        {
+          "branch": "away_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": 235,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": 235,
+          "number_or_price_differs": false,
+          "comparability": "NUMERIC_MATCH_CROSS_SOURCE_NOT_TEMPORAL_VERIFICATION"
+        },
+        {
+          "branch": "home_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": -265,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": -295,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        },
+        {
+          "branch": "over_total",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": 61.5,
+          "prior_american_price": -115,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+          "public_fanduel_line": 61.5,
+          "public_fanduel_american_price": -115,
+          "number_or_price_differs": false,
+          "comparability": "NUMERIC_MATCH_CROSS_SOURCE_NOT_TEMPORAL_VERIFICATION"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/colorado-state-rams/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401864531",
+      "game": "UTEP @ North Dakota State",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "away_ml"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "away_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": 1400,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": null,
+          "number_or_price_differs": null,
+          "comparability": "NO_CURRENT_PUBLIC_FANDUEL_DISPLAY"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/utep-miners/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401856734",
+      "game": "Florida @ Georgia",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "away_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": 350,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": 340,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        },
+        {
+          "branch": "home_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": -435,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": -450,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/florida-gators/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401864529",
+      "game": "New Mexico @ San José State",
+      "kickoff_utc": "2026-10-31T20:00:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "home_ml"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "home_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": 550,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": 550,
+          "number_or_price_differs": false,
+          "comparability": "NUMERIC_MATCH_CROSS_SOURCE_NOT_TEMPORAL_VERIFICATION"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/new-mexico-lobos/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401858508",
+      "game": "Nevada @ UCLA",
+      "kickoff_utc": "2026-10-31T20:15:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "home_ml"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "home_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": -1786,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": -3500,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/nevada-wolf-pack/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401858506",
+      "game": "Purdue @ Penn State",
+      "kickoff_utc": "2026-10-31T20:15:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "home_ml"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "home_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": -385,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": -450,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/purdue-boilermakers/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401858282",
+      "game": "Miami @ North Carolina",
+      "kickoff_utc": "2026-10-31T23:30:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "away_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": -588,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": -600,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        },
+        {
+          "branch": "home_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": 455,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": 450,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/north-carolina-tar-heels/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401856737",
+      "game": "Mississippi State @ Texas",
+      "kickoff_utc": "2026-10-31T23:30:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "home_ml"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "home_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": -1429,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": -1450,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/mississippi-state-bulldogs/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401858509",
+      "game": "Ohio State @ USC",
+      "kickoff_utc": "2026-10-31T23:30:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "away_ml"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "away_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": -220,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:16:55.476Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": -220,
+          "number_or_price_differs": false,
+          "comparability": "NUMERIC_MATCH_CROSS_SOURCE_NOT_TEMPORAL_VERIFICATION"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/ohio-state-buckeyes/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401856733",
+      "game": "Missouri @ Arkansas",
+      "kickoff_utc": "2026-10-31T23:45:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "away_ml"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "away_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": -380,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": -385,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/missouri-tigers/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401860908",
+      "game": "Texas State @ Boise State",
+      "kickoff_utc": "2026-11-01T02:00:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "home_ml"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "home_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": -441,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": -450,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/texas-state-bobcats/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    },
+    {
+      "game_id": "401864530",
+      "game": "Northern Illinois @ UNLV",
+      "kickoff_utc": "2026-11-01T02:30:00.000Z",
+      "expired": false,
+      "saved_drift_branches": [
+        "away_spread",
+        "home_spread",
+        "away_ml",
+        "home_ml"
+      ],
+      "branch_comparisons": [
+        {
+          "branch": "away_spread",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": 22.5,
+          "prior_american_price": -115,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": 22.5,
+          "public_fanduel_american_price": -122,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        },
+        {
+          "branch": "home_spread",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": -22,
+          "prior_american_price": -108,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": -22.5,
+          "public_fanduel_american_price": 100,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        },
+        {
+          "branch": "away_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": 1100,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": 1060,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        },
+        {
+          "branch": "home_ml",
+          "prior_mixed_book_retrieved_by_utc": "2026-10-30T21:22:29.510Z",
+          "prior_public_line": null,
+          "prior_american_price": -1786,
+          "public_fanduel_retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+          "public_fanduel_line": null,
+          "public_fanduel_american_price": -2000,
+          "number_or_price_differs": true,
+          "comparability": "CROSS_SOURCE_DIFFERENCE_NOT_SAME_BOOK_TEMPORAL_MOVEMENT"
+        }
+      ],
+      "public_source": "https://sportsbook.fanduel.com/teams/college-football/northern-illinois-huskies/odds",
+      "source_clock_semantics": "Friday CBS mixed-book and Saturday FanDuel retrieval clocks are not operator price-update clocks",
+      "status": "RECONCILED_NUMERICALLY_NOT_CERTIFIED",
+      "next_action": "Obtain same-operator timestamped offer and qualified material review before original cutoff, else close no wager."
+    }
+  ]
+}
