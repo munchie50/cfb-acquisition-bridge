@@ -59,7 +59,7 @@ def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='Amer
     if retained_elapsed_kickoffs and profile not in ('WEEK8','WEEK9','WEEK10'):raise ValueError('unqualified retained elapsed context profile')
     elapsed={gid:at(stamp) for gid,stamp in retained_elapsed_kickoffs.items()}
     if any(kick>=observed for kick in elapsed.values()):raise ValueError('retained elapsed context must precede observation')
-    aliases={**ALIASES,**({'Iowa St.':'Iowa State','Utah St.':'Utah State'} if profile=='WEEK10' else {}),**({'New Mexico St.':'New Mexico State','Boise St.':'Boise State','Utah St.':'Utah State','Iowa St.':'Iowa State'} if profile in ('WEEK8','WEEK9','WEEK10') else {})}
+    aliases={**ALIASES,**({'Iowa St.':'Iowa State','Utah St.':'Utah State','Hawaii':'Hawaii'} if profile=='WEEK10' else {}),**({'New Mexico St.':'New Mexico State','Boise St.':'Boise State','Utah St.':'Utah State','Iowa St.':'Iowa State'} if profile in ('WEEK8','WEEK9','WEEK10') else {})}
     result=[];pending=None;rows=[];all_team_rows=0
     def finish():
         nonlocal pending,rows
