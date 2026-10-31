@@ -9,7 +9,7 @@ from cfb_cbs_full_board_normalizer import cells, plain
 
 URL = "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-10/"
 HEADER = re.compile(r"^\\| (Tue|Wed|Thu|Fri|Sat|Sun|Mon) [A-Z][a-z]{2} \\d{1,2}(?:,|\\s)")
-TEAM = re.compile(r"(?<!!)\\[([^\\]]+)\\]\\(https://www\\.cbssports\\.com/college-football/teams/[^)]+\\)")
+TEAM = re.compile(r"(?<!!)\[([^\]]+)\]\(https://www\.cbssports\.com/college-football/teams/[^)]+\)")
 
 
 def census(markdown, *, source_url=URL):
