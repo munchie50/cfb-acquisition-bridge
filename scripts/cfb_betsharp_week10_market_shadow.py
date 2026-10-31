@@ -6,6 +6,8 @@ import sys
 BRANCHES = ("away_ml", "home_ml", "away_spread", "home_spread", "over_total", "under_total")
 
 def inspect(markdown, source_url):
+    if not re.fullmatch(r"https://betsharp\\.com/ncaaf/game/2026-11-(?:03|04|06|07)-[a-z0-9-]+", source_url):
+        raise ValueError("unapproved or non-week10 source URL")
     heading = re.search(r"^# (.+?) odds\s*$", markdown, re.M)
     update = re.search(r"^Updated (\d{1,2}:\d{2} [AP]M ET)\s*$", markdown, re.M)
     section = markdown.split("## Game lines", 1)
