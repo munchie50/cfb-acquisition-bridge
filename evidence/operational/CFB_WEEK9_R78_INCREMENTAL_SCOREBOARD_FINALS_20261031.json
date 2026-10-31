@@ -1,0 +1,222 @@
+{
+  "schema": "CFB_WEEK9_R78_INCREMENTAL_SCOREBOARD_FINALS",
+  "status": "SOURCE_OBSERVATION_NOT_OFFICIAL_INDEPENDENTLY_VERIFIED",
+  "previous_path": "evidence/operational/CFB_WEEK9_R69_INCREMENTAL_FROZEN_OUTCOME_RECONCILIATION_20261031.json",
+  "previous_blob": "e0f1bda9fc16ef0440db8b5746928ed4c258c350",
+  "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261031&limit=400&groups=80",
+  "source_scrape_id": "01a19449-8762-77d0-b576-0afa1499ff63",
+  "source_http_status": 200,
+  "source_content_type": "application/json;charset=UTF-8",
+  "source_clock_utc": "NOT_PROVIDED_BY_TOOL",
+  "join": "EXACT_ESPN_GAME_ID_AND_HOME_AWAY_ORIENTATION",
+  "counts": {
+    "previous_final": 26,
+    "newly_final": 15,
+    "observed_final": 41,
+    "pending": 15,
+    "cohort_total": 56
+  },
+  "new_finals": [
+    {
+      "game_id": "401856843",
+      "away": "Arizona State",
+      "home": "BYU",
+      "away_score": 20,
+      "home_score": 27,
+      "status": "FINAL_ESPN",
+      "original_status": "PREDICTION"
+    },
+    {
+      "game_id": "401856845",
+      "away": "Kansas",
+      "home": "TCU",
+      "away_score": 16,
+      "home_score": 22,
+      "status": "FINAL_ESPN",
+      "original_status": "PREDICTION"
+    },
+    {
+      "game_id": "401856848",
+      "away": "Utah",
+      "home": "Cincinnati",
+      "away_score": 49,
+      "home_score": 25,
+      "status": "FINAL_ESPN",
+      "original_status": "PREDICTION"
+    },
+    {
+      "game_id": "401858283",
+      "away": "Stanford",
+      "home": "Louisville",
+      "away_score": 24,
+      "home_score": 52,
+      "status": "FINAL_ESPN",
+      "original_status": "PREDICTION"
+    },
+    {
+      "game_id": "401858284",
+      "away": "Virginia",
+      "home": "Wake Forest",
+      "away_score": 7,
+      "home_score": 51,
+      "status": "FINAL_ESPN",
+      "original_status": "PREDICTION"
+    },
+    {
+      "game_id": "401858501",
+      "away": "Minnesota",
+      "home": "Indiana",
+      "away_score": 16,
+      "home_score": 23,
+      "status": "FINAL_ESPN",
+      "original_status": "EXCLUDED"
+    },
+    {
+      "game_id": "401858505",
+      "away": "Northwestern",
+      "home": "Oregon",
+      "away_score": 26,
+      "home_score": 34,
+      "status": "FINAL_ESPN",
+      "original_status": "EXCLUDED"
+    },
+    {
+      "game_id": "401858506",
+      "away": "Purdue",
+      "home": "Penn State",
+      "away_score": 17,
+      "home_score": 31,
+      "status": "FINAL_ESPN",
+      "original_status": "PREDICTION"
+    },
+    {
+      "game_id": "401858508",
+      "away": "Nevada",
+      "home": "UCLA",
+      "away_score": 0,
+      "home_score": 27,
+      "status": "FINAL_ESPN",
+      "original_status": "PREDICTION"
+    },
+    {
+      "game_id": "401864529",
+      "away": "New Mexico",
+      "home": "San José State",
+      "away_score": 21,
+      "home_score": 16,
+      "status": "FINAL_ESPN",
+      "original_status": "PREDICTION"
+    },
+    {
+      "game_id": "401871095",
+      "away": "Southern Miss",
+      "home": "UL Monroe",
+      "away_score": 35,
+      "home_score": 21,
+      "status": "FINAL_ESPN",
+      "original_status": "PREDICTION"
+    },
+    {
+      "game_id": "401856734",
+      "away": "Florida",
+      "home": "Georgia",
+      "away_score": 8,
+      "home_score": 27,
+      "status": "FINAL_ESPN",
+      "original_status": "PREDICTION"
+    },
+    {
+      "game_id": "401860910",
+      "away": "Colorado State",
+      "home": "Utah State",
+      "away_score": 14,
+      "home_score": 31,
+      "status": "FINAL_ESPN",
+      "original_status": "PREDICTION"
+    },
+    {
+      "game_id": "401864531",
+      "away": "UTEP",
+      "home": "North Dakota State",
+      "away_score": 7,
+      "home_score": 31,
+      "status": "FINAL_ESPN",
+      "original_status": "PREDICTION"
+    },
+    {
+      "game_id": "401871059",
+      "away": "Florida International",
+      "home": "Liberty",
+      "away_score": 10,
+      "home_score": 49,
+      "status": "FINAL_ESPN",
+      "original_status": "EXCLUDED"
+    }
+  ],
+  "pending": [
+    {
+      "game_id": "401856733",
+      "status": "STATUS_SCHEDULED"
+    },
+    {
+      "game_id": "401856736",
+      "status": "STATUS_IN_PROGRESS"
+    },
+    {
+      "game_id": "401856737",
+      "status": "STATUS_SCHEDULED"
+    },
+    {
+      "game_id": "401856847",
+      "status": "STATUS_IN_PROGRESS"
+    },
+    {
+      "game_id": "401858280",
+      "status": "STATUS_IN_PROGRESS"
+    },
+    {
+      "game_id": "401858281",
+      "status": "STATUS_SCHEDULED"
+    },
+    {
+      "game_id": "401858282",
+      "status": "STATUS_SCHEDULED"
+    },
+    {
+      "game_id": "401858504",
+      "status": "STATUS_SCHEDULED"
+    },
+    {
+      "game_id": "401858509",
+      "status": "STATUS_SCHEDULED"
+    },
+    {
+      "game_id": "401860924",
+      "status": "STATUS_SCHEDULED"
+    },
+    {
+      "game_id": "401862814",
+      "status": "STATUS_SCHEDULED"
+    },
+    {
+      "game_id": "401869846",
+      "status": "STATUS_IN_PROGRESS"
+    },
+    {
+      "game_id": "401860909",
+      "status": "STATUS_IN_PROGRESS"
+    },
+    {
+      "game_id": "401860908",
+      "status": "STATUS_SCHEDULED"
+    },
+    {
+      "game_id": "401864530",
+      "status": "STATUS_SCHEDULED"
+    }
+  ],
+  "independent_official_verification": false,
+  "model_changed": false,
+  "betting_authorized": false,
+  "production_complete": false
+}
