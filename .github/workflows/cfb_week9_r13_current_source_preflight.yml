@@ -1,0 +1,103 @@
+name: CFB Week9 R13 Current-Source Authentic Normalizer Preflight
+on:
+  push:
+    branches: [rescue/week9-git-runtime-20261030]
+    paths:
+      - '.github/workflows/cfb_week9_r13_current_source_preflight.yml'
+permissions:
+  contents: read
+jobs:
+  r13-current-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout full-history isolated rescue branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Pin accepted original lineage and canonical state
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git hash-object evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json)" = 57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9
+          test "$(git hash-object evidence/operational/CFB_MARKET_MONITOR_STATE.md)" = 69caf5b1184eedccc90be7562e4a3bd7cb8b7375
+          test "$(git hash-object evidence/operational/CFB_DECISION_WAIT_LEDGER.md)" = bb5a9cc83b6a1425dc2972ca84b33aa2bbbf8fa9
+          test "$(git hash-object evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-29_2008CT.md)" = f05173046e51ab9634d47b1be5fe90c2a5026c96
+          echo ACCEPTED_IMMUTABLE_AND_CANONICAL_PIN_PASS
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run authentic current-source CBS Week9 normalizer
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/cfb_cbs_full_board_normalizer.py \
+            --markdown evidence/operational/CFB_WEEK9_CBS_CURRENT_SOURCE_CAPTURE_R13.md \
+            --lineage evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json \
+            --recovered-by 2026-10-31T00:28:04.032Z \
+            --profile WEEK9 \
+            --output week9-normalized-r13.json
+      - name: Reconcile all 35 current-source game rows against independent ESPN kickoff and historical reviews
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin main
+          git show origin/main:evidence/operational/CFB_WEEK9_35_CASE_REVIEW_ANCESTRY_KICKOFF_R13.json > week9-35-ancestry-r13.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          board=json.loads(Path('week9-normalized-r13.json').read_text())
+          prior=json.loads(Path('week9-35-ancestry-r13.json').read_text())
+          coverage=board['coverage']
+          assert coverage['governed_games']==56 and coverage['matched_games']==56 and coverage['source_team_rows']==112
+          assert not coverage['missing_game_ids']
+          assert len(prior['cases'])==35
+          byid={g['game_id']:g for g in board['games']}
+          assert len(byid)==56
+          rows=[]
+          for case in prior['cases']:
+              game=byid[case['game_id']]
+              offers=game['team_offers']
+              assert len(offers)==2
+              assert all(set(('spread','moneyline','total')).issubset(o) for o in offers)
+              source_kickoff=game['source_kickoff_utc']
+              independent=case['independent_espn_kickoff_utc']
+              rows.append({
+                  'game_id':case['game_id'],'game':case['game'],
+                  'source_kickoff_utc':source_kickoff,
+                  'independent_espn_kickoff_utc':independent,
+                  'source_vs_espn_kickoff_agrees':source_kickoff==independent,
+                  'source_temporal_status':game['temporal_status'],
+                  'six_market_source_offers':offers,
+                  'historical_review_ref':case['prior_immutable_review_ref'],
+                  'current_champion_decision':'NOT_ISSUED',
+                  'current_packet_certification':'NOT_CERTIFIED',
+                  'venue_offer_limit':'UNVERIFIED',
+              })
+          assert len(rows)==35
+          result={'schema':'CFB_WEEK9_R13_AUTHENTIC_CURRENT_SOURCE_SCREEN',
+              'source_recovered_by_utc':'2026-10-31T00:28:04.032Z',
+              'source_capture':'evidence/operational/CFB_WEEK9_CBS_CURRENT_SOURCE_CAPTURE_R13.md',
+              'coverage':coverage,'cases':rows,'approved_bets':0,'canonical_writes':0,
+              'disclaimer':'Read-only authentic current-source normalizer; no new frozen Champion review, official kickoff certification, executable sportsbook offer, or Hot Sheet publication.'}
+          Path('week9-current-source-r13.json').write_text(json.dumps(result,indent=2)+'\n')
+          print('R13_AUTHENTIC_CURRENT_SOURCE_56_GAME_COVERAGE',coverage)
+          print('R13_35_CASE_SIX_BRANCH_SOURCE_SCREEN',len(rows))
+          print('R13_INDEPENDENT_KICKOFF_AGREEMENT',sum(r['source_vs_espn_kickoff_agrees'] for r in rows))
+          print('NO_NEW_CHAMPION_DECISIONS_NO_BET_APPROVED')
+          PY
+      - name: Preserve independent current-source and 35-case screen artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-week9-r13-current-source-35-case-screen
+          path: |
+            week9-normalized-r13.json
+            week9-current-source-r13.json
+          retention-days: 14
+          if-no-files-found: error
+      - name: Explicit fail-closed boundary
+        if: always()
+        run: |
+          echo "Current-source NORMALIZER and 35-case source screening only."
+          echo "No current Champion decisions, executable venue, guarded canonical publication or RUN_PASS."
