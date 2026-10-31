@@ -1,0 +1,2710 @@
+{
+  "schema": "CFB_WEEK9_R20_CASE_SPECIFIC_CURRENT_DECISION_FEASIBILITY_FRONTIER",
+  "status": "RUN_INCOMPLETE_NO_NEW_CURRENT_HOT_SHEET_NO_NEW_BET_APPROVAL",
+  "review_boundary_utc": "2026-10-31T02:35:40Z",
+  "authority": {
+    "main_before_write": "aaebc6ecfd89854c93f05a0093d30bee5b8234f1",
+    "rescue_branch": "4c91c24cef42e6961423db1cdfd715cdc7621ee9",
+    "r13_blob": "a02f025b9eb9c3eaca8c33a858c658fe9b46321d",
+    "r14_blob": "757811e4a6a5028e2d274edaf417706f79cac46a",
+    "r19_blob": "c6b8895e8ceeeb68f396219801a323502421ffa6",
+    "accepted_prediction_pointer_blob": "42c6fed3dee79be8693d6750122ae08beeb24e3a",
+    "canonical_market_blob": "69caf5b1184eedccc90be7562e4a3bd7cb8b7375",
+    "canonical_decision_blob": "bb5a9cc83b6a1425dc2972ca84b33aa2bbbf8fa9",
+    "canonical_hot_sheet_blob": "f05173046e51ab9634d47b1be5fe90c2a5026c96",
+    "canonical_index_blob": "379eff0dfd4b7184633d0962e0a37b615384573e"
+  },
+  "counts": {
+    "cases": 35,
+    "pre_event_at_boundary": 32,
+    "elapsed_at_boundary": 3,
+    "original_conditional_cutoff_expired": 1,
+    "prior_immutable_review_refs": 3,
+    "material_saved_market_drift": 16,
+    "s0_margin_sign_reversals": 9,
+    "uncertified_current_packets": 35,
+    "new_champion_six_market_decisions": 0,
+    "new_approvals": 0
+  },
+  "root_cause": {
+    "last_good": "ACCEPTED_OCT27_S0_PREDICTION_SOURCE_56_OF_56_EXACT_FIELDS_AND_35_HISTORICAL_SIX_BRANCH_REVIEWS",
+    "first_bad": "NO_AUTHORIZED_CURRENT_WEEK9_SIX_MARKET_OPERATIONAL_SELECTOR_OR_56_GENUINE_DECISION_ROWS",
+    "producer_contract": "scripts/cfb_week9_publication.py::compile takes external decision_rows and fresh capture recovered within 900 seconds; never generates Champion decisions",
+    "nonoperational_adapters": [
+      "scripts/cfb_week7_accepted_s0_ancestry_audit.py Week7 October13-17 coverage only",
+      "scripts/cfb_conditional_recommendation_profile.py conditional display validator, not selection",
+      "scripts/cfb_qa_prepare_accepted_source_pointer.py pointer preparer, not six-market selector"
+    ],
+    "smallest_permissible_next_action": "Recover an existing authorized six-market selection consumer/contract if present outside known scripts; otherwise obtain governance-qualified prospective 56 game decisions and 35 packets; do not invent mapping from S0 fields or auto-PASS. Source freshness and venue execution are separate downstream gates.",
+    "root_cause_type": "MISSING_OPERATIONAL_AUTHORITY_OR_CONSUMER_AND_UNQUALIFIED_EXTERNAL_VENUE_EVIDENCE_NOT_A_SOURCE_NORMALIZER_FAILURE",
+    "index_integration_debt": "Current recovery index v1.245 contains no R18/R19 pointers; do not mutate canonical index outside guarded publication."
+  },
+  "priority_cases": {
+    "maryland": {
+      "id": "401858503",
+      "decision": "NOT_APPROVED",
+      "deadline_utc": "2026-10-31T14:00:00Z",
+      "prior_review": "evidence/operational/recommendation_reviews/CFB_MARYLAND_POINTS_RECONSIDERATION_20261030T010359Z.json",
+      "prior_review_considered_illinois_qb": true,
+      "first_frozen_home_margin": "+6.678168905095836",
+      "oct27_s0_home_margin": "-3.245981838909556",
+      "threshold": "Maryland +2.5 at -125 or better",
+      "venue_executable": false
+    },
+    "ohio_state_usc": {
+      "id": "401858509",
+      "decision": "NOT_APPROVED",
+      "deadline_utc": "2026-10-31T20:00:00Z",
+      "prior_review": "evidence/operational/recommendation_reviews/CFB_OHIO_STATE_USC_UNDER_RECONSIDERATION_20261030T010401Z.json",
+      "first_frozen_total": "58.13872602489042",
+      "oct27_s0_total": "56.4166325792932",
+      "threshold": "Under 51.5 at -120 or better",
+      "directional_conflict": "Both original and accepted refresh exceed proposed Under 51.5; no calibrated under edge",
+      "venue_executable": false
+    },
+    "air_force": {
+      "id": "401861966",
+      "decision": "NO_NEW_WAGER",
+      "news": "Evan Medders OUT; Josh Johnson / Howard Fisher IV possible; final starter and model impact unqualified"
+    }
+  },
+  "source_constraints": {
+    "saved_friday_cbs": "Mixed-book retrieval-only observations; not executable; no current offer-update clock",
+    "original_56_game_normalization": "ALREADY_VERIFIED_NOT_REPEATED",
+    "historical_35_review_recovery": "ALREADY_VERIFIED_NOT_REPEATED",
+    "official_kickoffs": "R13 ESPN/CBS 35/35 reconciled; original FIRST_FROZEN timestamps retained",
+    "fresh_15min_source": "NOT_AVAILABLE_IN_THIS_DECISION_SESSION"
+  },
+  "attempt_ledger": [
+    {
+      "action": "Read main/rescue and R14/R19/canonical state",
+      "result": "VERIFIED_BLOBS_AND_BRANCH_DIVERGENCE",
+      "next": "Use accepted Oct27 S0 fields only as numeric reference"
+    },
+    {
+      "action": "Trace current Week9 producer and available adapters",
+      "result": "CONSUMER_MISSING_OR_UNQUALIFIED; compile requires external 56 decision rows",
+      "next": "Recover authorized decision consumer; no code/model change without authority"
+    },
+    {
+      "action": "Join 35 case kickoff, historical rationale, six branches, model movement and current cutoff",
+      "result": "35_OF_35_CASE_LEVEL_GATE_CLASSIFICATION; 32 pre-event, 3 elapsed at recorded boundary",
+      "next": "Prioritize Maryland, OSU, 16 drift, Air Force, model flips"
+    },
+    {
+      "action": "Verify Friday terminal and closure and independent branch ancestry",
+      "result": "FRIDAY_RUN_INCOMPLETE; no hidden producer in rescue branch inventory",
+      "next": "No false RUN_PASS or redundant replay"
+    },
+    {
+      "action": "Recheck official/independent late news",
+      "result": "No certified new final starter or executable venue offer; reported Fahey expected, Medders OUT",
+      "next": "Official final game-day personnel and authenticated venue quote only if before cutoff"
+    },
+    {
+      "action": "Guarded publication preflight",
+      "result": "BLOCKED_BEFORE_WRITE: 0/56 new genuine decisions, 0/35 certified packets, no 15min fresh source",
+      "next": "Do not write market/decision/sheet/audit/index or claim CI"
+    }
+  ],
+  "cases": [
+    {
+      "game_id": "401862813",
+      "game": "Tulane @ Charlotte",
+      "kickoff_utc": "2026-10-30T23:00:00.000Z",
+      "pre_event_at_review_boundary": false,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P4_ELAPSED_NO_RETROACTIVE",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "-3.405786141797019",
+        "pred_total": "52.49612727388016",
+        "pred_win": "0.4260454272208213",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "-1.9022945223044858",
+        "pred_total": "51.020922254558755",
+        "pred_win": "0.46730125958103885"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "PRE_EVENT_WINDOW_CLOSED_NO_RETROACTIVE_DECISION",
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401856844",
+      "game": "Baylor @ UCF",
+      "kickoff_utc": "2026-10-30T23:30:00.000Z",
+      "pre_event_at_review_boundary": false,
+      "original_conditional_cutoff_utc": "2026-10-30T18:00:00Z",
+      "original_cutoff_expired": true,
+      "priority": "P4_ELAPSED_NO_RETROACTIVE",
+      "prior_state": "CONDITIONAL",
+      "prior_immutable_review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_UCF_POINTS_RECONSIDERATION_20261029T223706Z.json",
+        "commit": "86473485fbf1db5d97673d54f923a184b3228ef8",
+        "blob": "0c436f203c0e59a415d305ffa750155e73c96d5b"
+      },
+      "prior_review_class": "IMMUTABLE_REVIEW_REF_BLOB_VERIFIED",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "1.9220767969592565",
+        "pred_total": "52.44157323929145",
+        "pred_win": "0.5590460894703979",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "4.539985769818523",
+        "pred_total": "51.51071646091736",
+        "pred_win": "0.6122139916103446"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "RETAINED_CONDITIONAL_SELECTED"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "PRE_EVENT_WINDOW_CLOSED_NO_RETROACTIVE_DECISION",
+        "ORIGINAL_CONDITIONAL_CUTOFF_EXPIRED_NO_EXTENSION",
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401866451",
+      "game": "Kent State @ Sacramento State",
+      "kickoff_utc": "2026-10-31T02:30:00.000Z",
+      "pre_event_at_review_boundary": false,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P4_ELAPSED_NO_RETROACTIVE",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "4.763370771336515",
+        "pred_total": "47.395252906873075",
+        "pred_win": "0.6026416219445073",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "19.37754914129643",
+        "pred_total": "49.08228467598643",
+        "pred_win": "0.8695363256687552"
+      },
+      "material_saved_source_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "PRE_EVENT_WINDOW_CLOSED_NO_RETROACTIVE_DECISION",
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401858278",
+      "game": "SMU @ Syracuse",
+      "kickoff_utc": "2026-10-31T16:00:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P2_MODEL_SIGN_REVERSAL",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "-4.273699421598012",
+        "pred_total": "57.49488376420339",
+        "pred_win": "0.37741871477853456",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "0.7535424806658062",
+        "pred_total": "55.796843174858715",
+        "pred_win": "0.48963770327433453"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [
+        "S0_FIRST_FROZEN_MARGIN_SIGN_REVERSAL"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401858502",
+      "game": "Wisconsin @ Iowa",
+      "kickoff_utc": "2026-10-31T16:00:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P3_REMAINING_PROSPECTIVE",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "7.08391260176766",
+        "pred_total": "46.74486988169926",
+        "pred_win": "0.6514674433645037",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "16.953003336948186",
+        "pred_total": "47.43327995301615",
+        "pred_win": "0.8105510430012315"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401866452",
+      "game": "Bowling Green @ Western Michigan",
+      "kickoff_utc": "2026-10-31T16:00:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P1_MATERIAL_MARKET_DRIFT",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "11.894442630270191",
+        "pred_total": "48.05284041587808",
+        "pred_win": "0.7644289577992259",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "24.79105402559233",
+        "pred_total": "45.24073756922628",
+        "pred_win": "0.9257804353494328"
+      },
+      "material_saved_source_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401858503",
+      "game": "Illinois @ Maryland",
+      "kickoff_utc": "2026-10-31T16:00:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": "2026-10-31T14:00:00Z",
+      "original_cutoff_expired": false,
+      "priority": "P0_ORIGINAL_09CT_CUTOFF",
+      "prior_state": "CONDITIONAL",
+      "prior_immutable_review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_MARYLAND_POINTS_RECONSIDERATION_20261030T010359Z.json",
+        "blob": "7864632f15634cb997819bc4c54dc0194fd2cbf9",
+        "commit": "3d07bd6f29fab6d960a57680518a2385df38ab9d"
+      },
+      "prior_review_class": "IMMUTABLE_REVIEW_REF_BLOB_VERIFIED",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "-3.245981838909556",
+        "pred_total": "57.32234935328297",
+        "pred_win": "0.3999772307783966",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "6.678168905095836",
+        "pred_total": "57.3814294930684",
+        "pred_win": "0.6251673219208373"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [
+        "S0_FIRST_FROZEN_MARGIN_SIGN_REVERSAL",
+        "MARYLAND_WR_OL_DOWNGRADES_AND_S0_SIGN_REVERSAL"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "CONDITIONAL_SELECTED"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION",
+        "ORIGINAL_TO_REFRESH_MARGIN_REVERSAL_REQUIRES_PROSPECTIVE_RECONCILIATION"
+      ]
+    },
+    {
+      "game_id": "401856735",
+      "game": "Auburn @ Ole Miss",
+      "kickoff_utc": "2026-10-31T16:45:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P1_MATERIAL_MARKET_DRIFT",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "8.739353135632816",
+        "pred_total": "58.18939371968697",
+        "pred_win": "0.7191245758018957",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "4.319371690827976",
+        "pred_total": "59.13033031639755",
+        "pred_win": "0.6322317619339572"
+      },
+      "material_saved_source_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401871096",
+      "game": "Marshall @ Old Dominion",
+      "kickoff_utc": "2026-10-31T17:00:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P3_REMAINING_PROSPECTIVE",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "1.2267294500893389",
+        "pred_total": "48.24544253176575",
+        "pred_win": "0.5117178364649301",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "10.531260063331388",
+        "pred_total": "45.065189578232356",
+        "pred_win": "0.723554751309223"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401856846",
+      "game": "Kansas State @ Colorado",
+      "kickoff_utc": "2026-10-31T18:00:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P3_REMAINING_PROSPECTIVE",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "-5.877868423347203",
+        "pred_total": "53.747664746352264",
+        "pred_win": "0.33965104402297364",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "-14.59982171248134",
+        "pred_total": "51.15289598048278",
+        "pred_win": "0.164036895339676"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401871097",
+      "game": "Louisiana Tech @ South Alabama",
+      "kickoff_utc": "2026-10-31T19:00:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P2_MODEL_SIGN_REVERSAL",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "-4.363049286098879",
+        "pred_total": "54.108914400824126",
+        "pred_win": "0.4034571246827743",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "5.700510476284662",
+        "pred_total": "51.61800449703313",
+        "pred_win": "0.6363063614314357"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [
+        "S0_FIRST_FROZEN_MARGIN_SIGN_REVERSAL"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401861966",
+      "game": "UConn @ Air Force",
+      "kickoff_utc": "2026-10-31T19:00:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P1_MATERIAL_QB",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "2.1071318144243523",
+        "pred_total": "52.27585991211651",
+        "pred_win": "0.605109129378246",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "4.495233795120177",
+        "pred_total": "50.64650245925968",
+        "pred_win": "0.654638460129586"
+      },
+      "material_saved_source_drift_branches": [
+        "away_spread"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT",
+        "AIR_FORCE_QB_MEDDERS_OUT_REPLACEMENT_UNCONFIRMED"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION",
+        "FINAL_STARTER_MATERIALITY_UNRESOLVED"
+      ]
+    },
+    {
+      "game_id": "401858283",
+      "game": "Stanford @ Louisville",
+      "kickoff_utc": "2026-10-31T19:15:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P3_REMAINING_PROSPECTIVE",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "17.20244073100399",
+        "pred_total": "61.090730636129265",
+        "pred_win": "0.8471432446354636",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "23.45577448110459",
+        "pred_total": "60.240276251627684",
+        "pred_win": "0.9154723210286189"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401871095",
+      "game": "Southern Miss @ UL Monroe",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P3_REMAINING_PROSPECTIVE",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "-2.769641406985689",
+        "pred_total": "57.31972767571251",
+        "pred_win": "0.43788525661624317",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "-8.106471857997493",
+        "pred_total": "56.809115329531835",
+        "pred_win": "0.3136982404826161"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401860910",
+      "game": "Colorado State @ Utah State",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P1_MATERIAL_MARKET_DRIFT",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "6.390104389224711",
+        "pred_total": "59.52007203244311",
+        "pred_win": "0.6444311818368339",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "-4.686728804289869",
+        "pred_total": "51.6112210095398",
+        "pred_win": "0.37601709369661257"
+      },
+      "material_saved_source_drift_branches": [
+        "home_spread",
+        "away_ml",
+        "home_ml",
+        "over_total"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT",
+        "S0_FIRST_FROZEN_MARGIN_SIGN_REVERSAL"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401856843",
+      "game": "Arizona State @ BYU",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P3_REMAINING_PROSPECTIVE",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "12.431011827312512",
+        "pred_total": "56.02486838164585",
+        "pred_win": "0.7786690458545835",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "16.187459572143922",
+        "pred_total": "56.836393987807924",
+        "pred_win": "0.8511204113016558"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401856845",
+      "game": "Kansas @ TCU",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P3_REMAINING_PROSPECTIVE",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "5.940050933162191",
+        "pred_total": "51.50278894490568",
+        "pred_win": "0.6529213994890753",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "10.61882799787693",
+        "pred_total": "49.21956516527414",
+        "pred_win": "0.7411277196150335"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401864531",
+      "game": "UTEP @ North Dakota State",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P1_MATERIAL_MARKET_DRIFT",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "23.044715099973338",
+        "pred_total": "48.2943333577443",
+        "pred_win": "0.9088713617680234",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "20.311538771491833",
+        "pred_total": "49.203682238756244",
+        "pred_win": "0.8746584883715226"
+      },
+      "material_saved_source_drift_branches": [
+        "away_ml"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401856734",
+      "game": "Florida @ Georgia",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P1_MATERIAL_MARKET_DRIFT",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "14.117361753702673",
+        "pred_total": "60.53433109693552",
+        "pred_win": "0.7907918366995139",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "13.358480139729341",
+        "pred_total": "65.99623168757266",
+        "pred_win": "0.7885560177914632"
+      },
+      "material_saved_source_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401858284",
+      "game": "Virginia @ Wake Forest",
+      "kickoff_utc": "2026-10-31T19:45:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P2_MODEL_SIGN_REVERSAL",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "8.37703072936002",
+        "pred_total": "51.842725170380234",
+        "pred_win": "0.7181752848375582",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "-5.690307368948456",
+        "pred_total": "54.51339880089259",
+        "pred_win": "0.3802425820196452"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [
+        "S0_FIRST_FROZEN_MARGIN_SIGN_REVERSAL"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401864529",
+      "game": "New Mexico @ San José State",
+      "kickoff_utc": "2026-10-31T20:00:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P1_MATERIAL_MARKET_DRIFT",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "-5.088111188203838",
+        "pred_total": "46.84389099544602",
+        "pred_win": "0.3933558457973612",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "-7.33449986256627",
+        "pred_total": "44.55662918107981",
+        "pred_win": "0.31769446869000484"
+      },
+      "material_saved_source_drift_branches": [
+        "home_ml"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401858508",
+      "game": "Nevada @ UCLA",
+      "kickoff_utc": "2026-10-31T20:15:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P1_MATERIAL_MARKET_DRIFT",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "11.485564691037613",
+        "pred_total": "50.69648718780867",
+        "pred_win": "0.7540019011149105",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "11.487055478910321",
+        "pred_total": "56.11092212907221",
+        "pred_win": "0.7592982366080254"
+      },
+      "material_saved_source_drift_branches": [
+        "home_ml"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401858506",
+      "game": "Purdue @ Penn State",
+      "kickoff_utc": "2026-10-31T20:15:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P1_MATERIAL_MARKET_DRIFT",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "8.797164887714155",
+        "pred_total": "53.51630774539686",
+        "pred_win": "0.7033670866008813",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "20.645638272387664",
+        "pred_total": "57.41110459420837",
+        "pred_win": "0.8787915153960462"
+      },
+      "material_saved_source_drift_branches": [
+        "home_ml"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401856736",
+      "game": "South Carolina @ Oklahoma",
+      "kickoff_utc": "2026-10-31T20:15:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P3_REMAINING_PROSPECTIVE",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "3.321708993863602",
+        "pred_total": "50.989892719716636",
+        "pred_win": "0.5785863014271945",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "1.9976207150226601",
+        "pred_total": "46.03759623778151",
+        "pred_win": "0.544129647344929"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401869846",
+      "game": "App State @ Georgia Southern",
+      "kickoff_utc": "2026-10-31T22:30:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P2_MODEL_SIGN_REVERSAL",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "1.918758277056822",
+        "pred_total": "52.3548187150214",
+        "pred_win": "0.537056995277176",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "-1.2164781787103556",
+        "pred_total": "47.735706328738324",
+        "pred_win": "0.43239638661503443"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [
+        "S0_FIRST_FROZEN_MARGIN_SIGN_REVERSAL"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401856847",
+      "game": "Oklahoma State @ Iowa State",
+      "kickoff_utc": "2026-10-31T23:00:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P2_MODEL_SIGN_REVERSAL",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "-5.5520258683198564",
+        "pred_total": "56.845579731060255",
+        "pred_win": "0.37144298022129524",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "5.838154696866955",
+        "pred_total": "47.053876102043105",
+        "pred_win": "0.6442862899563238"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [
+        "S0_FIRST_FROZEN_MARGIN_SIGN_REVERSAL"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401860909",
+      "game": "Washington State @ San Diego State",
+      "kickoff_utc": "2026-10-31T23:00:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P3_REMAINING_PROSPECTIVE",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "2.6329129158187192",
+        "pred_total": "52.30450866861949",
+        "pred_win": "0.552626712700373",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "2.8553657293259267",
+        "pred_total": "45.05500712113508",
+        "pred_win": "0.5698491698751513"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401858282",
+      "game": "Miami @ North Carolina",
+      "kickoff_utc": "2026-10-31T23:30:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P1_MATERIAL_MARKET_DRIFT",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "-8.232992066293209",
+        "pred_total": "55.643944126978695",
+        "pred_win": "0.334763448942087",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "-8.03641328815152",
+        "pred_total": "52.125932852800545",
+        "pred_win": "0.31101386981043655"
+      },
+      "material_saved_source_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401856737",
+      "game": "Mississippi State @ Texas",
+      "kickoff_utc": "2026-10-31T23:30:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P1_MATERIAL_MARKET_DRIFT",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "8.674132866565335",
+        "pred_total": "54.28198844121715",
+        "pred_win": "0.7120091538822936",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "-0.17926022771447103",
+        "pred_total": "55.79392191281385",
+        "pred_win": "0.5258970500003277"
+      },
+      "material_saved_source_drift_branches": [
+        "home_ml"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT",
+        "S0_FIRST_FROZEN_MARGIN_SIGN_REVERSAL"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401858509",
+      "game": "Ohio State @ USC",
+      "kickoff_utc": "2026-10-31T23:30:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": "2026-10-31T20:00:00Z",
+      "original_cutoff_expired": false,
+      "priority": "P0_ORIGINAL_15CT_CUTOFF",
+      "prior_state": "CONDITIONAL",
+      "prior_immutable_review_ref": {
+        "path": "evidence/operational/recommendation_reviews/CFB_OHIO_STATE_USC_UNDER_RECONSIDERATION_20261030T010401Z.json",
+        "blob": "f93bc42dad561f914456ceff488ddd24d90ca580",
+        "commit": "5c146e041187b1afab695ac0efe44114ac75465c"
+      },
+      "prior_review_class": "IMMUTABLE_REVIEW_REF_BLOB_VERIFIED",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "-2.986887063908412",
+        "pred_total": "56.4166325792932",
+        "pred_win": "0.432166814915077",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "-3.5107340607820996",
+        "pred_total": "58.13872602489042",
+        "pred_win": "0.4104226295196134"
+      },
+      "material_saved_source_drift_branches": [
+        "away_ml"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT",
+        "UNDER_51_5_OPPOSED_BY_FIRST_FROZEN_58_1387_AND_S0_56_4166"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "CONDITIONAL_SELECTED"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION",
+        "MODEL_DIRECTIONAL_CONTRADICTION_UNRESOLVED"
+      ]
+    },
+    {
+      "game_id": "401856733",
+      "game": "Missouri @ Arkansas",
+      "kickoff_utc": "2026-10-31T23:45:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P1_MATERIAL_MARKET_DRIFT",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "-4.1378740611616776",
+        "pred_total": "50.096808098651024",
+        "pred_win": "0.4180785190821065",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "-13.144660542665587",
+        "pred_total": "48.4571487693492",
+        "pred_win": "0.22032417143604363"
+      },
+      "material_saved_source_drift_branches": [
+        "away_ml"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401858504",
+      "game": "Washington @ Nebraska",
+      "kickoff_utc": "2026-11-01T00:00:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P3_REMAINING_PROSPECTIVE",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "10.542524989314849",
+        "pred_total": "52.010453751818766",
+        "pred_win": "0.7193555018811835",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "12.685528847014263",
+        "pred_total": "50.616231734845755",
+        "pred_win": "0.7722918506128544"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401860908",
+      "game": "Texas State @ Boise State",
+      "kickoff_utc": "2026-11-01T02:00:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P1_MATERIAL_MARKET_DRIFT",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "6.580805352455416",
+        "pred_total": "59.68249125102358",
+        "pred_win": "0.6806050223468065",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "11.186323722125593",
+        "pred_total": "62.02851607637056",
+        "pred_win": "0.7837304599759275"
+      },
+      "material_saved_source_drift_branches": [
+        "home_ml"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401864530",
+      "game": "Northern Illinois @ UNLV",
+      "kickoff_utc": "2026-11-01T02:30:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P1_MATERIAL_MARKET_DRIFT",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "13.133321942184269",
+        "pred_total": "51.98618289825271",
+        "pred_win": "0.7571328629818298",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "9.181695514674217",
+        "pred_total": "46.29422281350146",
+        "pred_win": "0.6522629731082384"
+      },
+      "material_saved_source_drift_branches": [
+        "away_spread",
+        "home_spread",
+        "away_ml",
+        "home_ml"
+      ],
+      "material_review_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    },
+    {
+      "game_id": "401860924",
+      "game": "Oregon State @ Fresno State",
+      "kickoff_utc": "2026-11-01T03:00:00.000Z",
+      "pre_event_at_review_boundary": true,
+      "original_conditional_cutoff_utc": null,
+      "original_cutoff_expired": false,
+      "priority": "P2_MODEL_SIGN_REVERSAL",
+      "prior_state": "PASS",
+      "prior_immutable_review_ref": null,
+      "prior_review_class": "PRIOR_REVALIDATION_REASON_ONLY_NO_STANDALONE_REVIEW_REF",
+      "original_first_frozen_status": "PREDICTION",
+      "accepted_oct27_s0_exact": {
+        "pred_margin": "-4.5544327816218715",
+        "pred_total": "57.83026815545935",
+        "pred_win": "0.3847223440698264",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "first_frozen_exact": {
+        "pred_margin": "4.265824312937047",
+        "pred_total": "53.27358185300018",
+        "pred_win": "0.5758261080522452"
+      },
+      "material_saved_source_drift_branches": [],
+      "material_review_flags": [
+        "S0_FIRST_FROZEN_MARGIN_SIGN_REVERSAL"
+      ],
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "branch_current_certification": {
+        "away_spread": "NOT_CERTIFIED",
+        "home_spread": "NOT_CERTIFIED",
+        "away_ml": "NOT_CERTIFIED",
+        "home_ml": "NOT_CERTIFIED",
+        "over_total": "NOT_CERTIFIED",
+        "under_total": "NOT_CERTIFIED"
+      },
+      "current_champion_decision": "NOT_ISSUED",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "executable_venue_offer_limit": "NOT_VERIFIED",
+      "wager_approval": "NONE",
+      "case_blockers": [
+        "NO_QUALIFIED_CURRENT_CHAMPION_SIX_MARKET_SELECTOR_OR_56_DECISION_ROWS",
+        "NO_CURRENT_PACKET_CERTIFICATION_MATERIAL_NEWS_AND_MARKET",
+        "NO_AUTHENTICATED_USER_VENUE_OFFER_UPDATE_TIME_AND_STAKE_LIMIT",
+        "NO_FRESH_SOURCE_WITHIN_15_MINUTES_FOR_GUARDED_PUBLICATION"
+      ]
+    }
+  ]
+}
