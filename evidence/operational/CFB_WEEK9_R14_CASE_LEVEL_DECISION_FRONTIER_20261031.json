@@ -1,0 +1,2837 @@
+{
+  "schema": "CFB_WEEK9_R14_CASE_LEVEL_DECISION_FRONTIER",
+  "boundary": "Friday 2026-10-30 evening after accepted R13; source evidence dates as cited, not new book update time",
+  "authority": {
+    "main_at_fresh_read": "13b70d3f40c0c3e9d2a013e0276a4576099570b4",
+    "r13_case_ledger_blob": "a02f025b9eb9c3eaca8c33a858c658fe9b46321d",
+    "r13_closure": "evidence/run_receipts/CFB_WEEK9_R13_CURRENT_SOURCE_RESCUE_20261031T0030Z_RUN_CLOSURE.md",
+    "routine": "v5.0 plus accepted v5.1-A/C; core controls v1.132/v1.133",
+    "first_frozen": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9",
+    "canonical_hot_sheet": "evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-29_2008CT.md",
+    "canonical_hot_sheet_blob": "f05173046e51ab9634d47b1be5fe90c2a5026c96"
+  },
+  "method": "R13 current-source normalization and 35-case historical six-branch review ancestry reused without CBS replay; current targeted independent public sportsbook and published personnel evidence crosschecked against original reviews. The authentic Week9 compiler requires caller-supplied 56 genuine decision_rows and source recovered within 15 min; it does not generate Champion decisions.",
+  "counts": {
+    "total": 35,
+    "already_started_or_elapsed": 2,
+    "conditional_not_approved": 2,
+    "prior_pass_history_current_packet_uncertified": 31,
+    "material_numeric_drift_games": 16,
+    "live_packet_certified": 0,
+    "new_champion_decisions": 0,
+    "approved_bets": 0
+  },
+  "new_targeted_evidence": [
+    {
+      "type": "PUBLIC_BOOK_DISPLAY_NOT_EXECUTABLE",
+      "game": "Illinois @ Maryland",
+      "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/illinois-%40-maryland-36236576",
+      "scrape_id": "01a18f67-5b34-744c-8034-0084716371fb",
+      "observed": "Maryland +2.5/-102; game Sat Oct31 12:00 ET",
+      "offer_updated_at": null,
+      "user_venue_limit": "NOT_VERIFIED"
+    },
+    {
+      "type": "PUBLIC_BOOK_DISPLAY_NOT_EXECUTABLE",
+      "game": "Ohio State @ USC",
+      "url": "https://sportsbook.fanduel.com/teams/college-football/ohio-state-buckeyes/odds",
+      "scrape_id": "01a18f67-5acf-75dc-b870-6dd08ad8c7e0",
+      "observed": "Under 51.5/-115; game Sat Oct31 23:30 UTC",
+      "offer_updated_at": null,
+      "user_venue_limit": "NOT_VERIFIED"
+    },
+    {
+      "type": "OFFICIAL_PRIOR_QB_STATUS_RECHECK",
+      "game": "Illinois @ Maryland",
+      "url": "https://fightingillini.com/news/2026/10/26/football-illinois-travels-east-for-matchup-at-maryland",
+      "scrape_id": "01a18f67-5b39-731a-81da-cf0e2f533d4e",
+      "observed": "Houser broken hand and Clayton relief/starting role; previously incorporated in original review; not a new veto."
+    },
+    {
+      "type": "SECONDARY_PUBLISHED_INJURY_REPORT",
+      "game": "Illinois @ Maryland",
+      "url": "https://sports.yahoo.com/articles/illinois-injury-report-leaves-door-160035110.html",
+      "scrape_id": "01a18f67-8a5c-73a7-9e38-e11cd027cdf4",
+      "published": "2026-10-29",
+      "observed": "Houser doubtful; Clayton expected to start; does not establish new Friday change."
+    },
+    {
+      "type": "SECONDARY_PUBLISHED_INJURY_REPORT",
+      "game": "Ohio State @ USC",
+      "url": "https://sports.yahoo.com/articles/injury-report-saturdays-game-spells-160035600.html",
+      "scrape_id": "01a18f67-8a84-706c-9284-536caffbf614",
+      "published": "2026-10-30 16:00 UTC",
+      "observed": "Sayin out, Fahey/St. Clair starter still unspecified; Inniss and Timmons questionable, pregame decisions; existing prior review already acknowledged QB alternatives."
+    }
+  ],
+  "publication_gate": {
+    "producer_contract": "scripts/cfb_week9_publication.py: compile(market,decision,capture,lineage,cycle,as_of,recovered_by,decision_rows) requires 56 caller-supplied genuine decisions and source within 900 seconds",
+    "status": "NOT_RUN_CURRENT_PRODUCTION",
+    "precise_blockers": [
+      "35/35 new current packet-level certifications not earned",
+      "56 genuine current Champion six-branch decision rows not supplied",
+      "Current qualified identified book offer-update/freshness and user venue executability absent",
+      "Final material personnel clearance absent",
+      "OSU/USC frozen 58.1 versus under 51.5 not reconciled by calibrated model",
+      "Guarded market->decision->Hot Sheet->audit->index serial writes and selected CI cannot be accepted before upstream gates"
+    ],
+    "accepted_current_hot_sheet": "UNCHANGED_THURSDAY_ACCEPTED_STALE_FOR_FRIDAY_EXECUTION",
+    "no_fabricated_run_pass": true
+  },
+  "original_deadlines_utc": {
+    "maryland": "2026-10-31T14:00:00Z",
+    "ohio_state_usc": "2026-10-31T20:00:00Z"
+  },
+  "cases": [
+    {
+      "game_id": "401862813",
+      "game": "Tulane @ Charlotte",
+      "kickoff_utc_independent": "2026-10-30T23:00:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -8,
+          "price": -111,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": 8.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -345,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 275,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 46.5,
+          "price": -114,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 47.5,
+          "price": -115,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "ELAPSED_OR_IN_PROGRESS_NO_RETROACTIVE_DECISION",
+      "case_reason": "Game already started at R13; no retrospective review or wager.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401856844",
+      "game": "Baylor @ UCF",
+      "kickoff_utc_independent": "2026-10-30T23:30:00.000Z",
+      "prior_state": "CONDITIONAL",
+      "prior_review_provenance": {
+        "path": "evidence/operational/recommendation_reviews/CFB_UCF_POINTS_RECONSIDERATION_20261029T223706Z.json",
+        "commit": "86473485fbf1db5d97673d54f923a184b3228ef8",
+        "blob": "0c436f203c0e59a415d305ffa750155e73c96d5b"
+      },
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "RETAINED_CONDITIONAL_SELECTED"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -1.5,
+          "price": -112,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": 2.5,
+          "price": -106,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -125,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 110,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 48.5,
+          "price": -115,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 49.5,
+          "price": -112,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "ELAPSED_OR_IN_PROGRESS_NO_RETROACTIVE_DECISION",
+      "case_reason": "Original UCF conditional expired Friday 13:00 CT and game already started at R13; no extension or new bet.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401866451",
+      "game": "Kent State @ Sacramento State",
+      "kickoff_utc_independent": "2026-10-31T02:30:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -7,
+          "price": -115,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": 7.5,
+          "price": -118,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -265,
+          "drift": true
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 230,
+          "drift": true
+        },
+        {
+          "branch": "over_total",
+          "line": 46.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 46.5,
+          "price": -105,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in away_ml, home_ml. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401858278",
+      "game": "SMU @ Syracuse",
+      "kickoff_utc_independent": "2026-10-31T16:00:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -9.5,
+          "price": -122,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": 10.5,
+          "price": -111,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -375,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 300,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 58.5,
+          "price": -105,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 58.5,
+          "price": -112,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401858502",
+      "game": "Wisconsin @ Iowa",
+      "kickoff_utc_independent": "2026-10-31T16:00:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 2.5,
+          "price": -105,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -1.5,
+          "price": -128,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 114,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -133,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 36.5,
+          "price": -108,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 36.5,
+          "price": -110,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401866452",
+      "game": "Bowling Green @ Western Michigan",
+      "kickoff_utc_independent": "2026-10-31T16:00:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 14,
+          "price": -111,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -13.5,
+          "price": -122,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 490,
+          "drift": true
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -599,
+          "drift": true
+        },
+        {
+          "branch": "over_total",
+          "line": 44.5,
+          "price": -108,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 44.5,
+          "price": -111,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in away_ml, home_ml. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401858503",
+      "game": "Illinois @ Maryland",
+      "kickoff_utc_independent": "2026-10-31T16:00:00.000Z",
+      "prior_state": "CONDITIONAL",
+      "prior_review_provenance": {
+        "path": "evidence/operational/recommendation_reviews/CFB_MARYLAND_POINTS_RECONSIDERATION_20261030T010359Z.json",
+        "blob": "7864632f15634cb997819bc4c54dc0194fd2cbf9",
+        "commit": "3d07bd6f29fab6d960a57680518a2385df38ab9d"
+      },
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "CONDITIONAL_SELECTED"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -2.5,
+          "price": -115,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": 2.5,
+          "price": -102,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -133,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 114,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 53.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 54.5,
+          "price": -115,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "CONDITIONAL_NOT_APPROVED_UNTIL_ORIGINAL_SAT_0900_CT",
+      "case_reason": "Original qualitative review explicitly includes Houser injury/Clayton starter and interim coaching. Friday public FanDuel event page displays Maryland +2.5/-102, numerically inside +2.5/-125 condition, but no authenticated user-venue offer/limit or final personnel clearance. Frozen home-win 0.625 is not cover probability. No newly issued current six-branch Champion decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401856735",
+      "game": "Auburn @ Ole Miss",
+      "kickoff_utc_independent": "2026-10-31T16:45:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 11.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -10.5,
+          "price": -118,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 360,
+          "drift": true
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -450,
+          "drift": true
+        },
+        {
+          "branch": "over_total",
+          "line": 57.5,
+          "price": -108,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 57.5,
+          "price": -108,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in away_ml, home_ml. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401871096",
+      "game": "Marshall @ Old Dominion",
+      "kickoff_utc_independent": "2026-10-31T17:00:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -2.5,
+          "price": -120,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": 3,
+          "price": -115,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -142,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 120,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 45.5,
+          "price": -108,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 45.5,
+          "price": -105,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401856846",
+      "game": "Kansas State @ Colorado",
+      "kickoff_utc_independent": "2026-10-31T18:00:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 2.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -1.5,
+          "price": -115,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 115,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -132,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 46.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 46.5,
+          "price": -105,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401871097",
+      "game": "Louisiana Tech @ South Alabama",
+      "kickoff_utc_independent": "2026-10-31T19:00:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -6,
+          "price": -111,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": 6.5,
+          "price": -115,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -220,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 187,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 58.5,
+          "price": -105,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 58.5,
+          "price": -110,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401861966",
+      "game": "UConn @ Air Force",
+      "kickoff_utc_independent": "2026-10-31T19:00:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -1,
+          "price": -108,
+          "drift": true
+        },
+        {
+          "branch": "home_spread",
+          "line": 1.5,
+          "price": -114,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -106,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 51.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 51.5,
+          "price": -105,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_spread"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in away_spread. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401858283",
+      "game": "Stanford @ Louisville",
+      "kickoff_utc_independent": "2026-10-31T19:15:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 22.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -22.5,
+          "price": -108,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 1100,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -1818,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 60.5,
+          "price": -108,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 60.5,
+          "price": -110,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401871095",
+      "game": "Southern Miss @ UL Monroe",
+      "kickoff_utc_independent": "2026-10-31T19:30:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -3.5,
+          "price": -102,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": 3.5,
+          "price": -112,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -160,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 140,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 54.5,
+          "price": -114,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 55.5,
+          "price": -110,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401860910",
+      "game": "Colorado State @ Utah State",
+      "kickoff_utc_independent": "2026-10-31T19:30:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 7.5,
+          "price": -111,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -6.5,
+          "price": -138,
+          "drift": true
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 235,
+          "drift": true
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -265,
+          "drift": true
+        },
+        {
+          "branch": "over_total",
+          "line": 61.5,
+          "price": -115,
+          "drift": true
+        },
+        {
+          "branch": "under_total",
+          "line": 62.5,
+          "price": -115,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "home_spread",
+        "away_ml",
+        "home_ml",
+        "over_total"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in home_spread, away_ml, home_ml, over_total. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401856843",
+      "game": "Arizona State @ BYU",
+      "kickoff_utc_independent": "2026-10-31T19:30:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 16.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -16.5,
+          "price": -108,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 570,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -752,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 48.5,
+          "price": -102,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 48.5,
+          "price": -110,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401856845",
+      "game": "Kansas @ TCU",
+      "kickoff_utc_independent": "2026-10-31T19:30:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 6.5,
+          "price": -108,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -6.5,
+          "price": -106,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 195,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -220,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 45.5,
+          "price": -104,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 45.5,
+          "price": -110,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401864531",
+      "game": "UTEP @ North Dakota State",
+      "kickoff_utc_independent": "2026-10-31T19:30:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 24.5,
+          "price": -112,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -24,
+          "price": -111,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 1400,
+          "drift": true
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -2500,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 42.5,
+          "price": -111,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 43.5,
+          "price": -114,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in away_ml. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401856734",
+      "game": "Florida @ Georgia",
+      "kickoff_utc_independent": "2026-10-31T19:30:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 12,
+          "price": -111,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -11.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 350,
+          "drift": true
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -435,
+          "drift": true
+        },
+        {
+          "branch": "over_total",
+          "line": 56.5,
+          "price": -108,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 56.5,
+          "price": -110,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in away_ml, home_ml. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401858284",
+      "game": "Virginia @ Wake Forest",
+      "kickoff_utc_independent": "2026-10-31T19:45:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 12.5,
+          "price": -108,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -12.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 400,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -490,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 47.5,
+          "price": -118,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 48.5,
+          "price": -114,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401864529",
+      "game": "New Mexico @ San José State",
+      "kickoff_utc_independent": "2026-10-31T20:00:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -14.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": 14.5,
+          "price": -105,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -649,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 550,
+          "drift": true
+        },
+        {
+          "branch": "over_total",
+          "line": 42.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 42.5,
+          "price": -108,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in home_ml. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401858508",
+      "game": "Nevada @ UCLA",
+      "kickoff_utc_independent": "2026-10-31T20:15:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 22.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -22.5,
+          "price": -108,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 1400,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -1786,
+          "drift": true
+        },
+        {
+          "branch": "over_total",
+          "line": 43.5,
+          "price": -106,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 43.5,
+          "price": -105,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in home_ml. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401858506",
+      "game": "Purdue @ Penn State",
+      "kickoff_utc_independent": "2026-10-31T20:15:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 11.5,
+          "price": -115,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -10,
+          "price": -114,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 330,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -385,
+          "drift": true
+        },
+        {
+          "branch": "over_total",
+          "line": 54.5,
+          "price": -111,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 54.5,
+          "price": -105,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in home_ml. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401856736",
+      "game": "South Carolina @ Oklahoma",
+      "kickoff_utc_independent": "2026-10-31T20:15:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 3.5,
+          "price": -114,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -2.5,
+          "price": -128,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 142,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -156,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 44.5,
+          "price": -105,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 44.5,
+          "price": -110,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401869846",
+      "game": "App State @ Georgia Southern",
+      "kickoff_utc_independent": "2026-10-31T22:30:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 6,
+          "price": -111,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -5.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 180,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -205,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 56.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 57.5,
+          "price": -114,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401856847",
+      "game": "Oklahoma State @ Iowa State",
+      "kickoff_utc_independent": "2026-10-31T23:00:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -9.5,
+          "price": -111,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": 9.5,
+          "price": -108,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -345,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 285,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 57.5,
+          "price": -114,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 58.5,
+          "price": -120,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401860909",
+      "game": "Washington State @ San Diego State",
+      "kickoff_utc_independent": "2026-10-31T23:00:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 2.5,
+          "price": -105,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -2.5,
+          "price": -114,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 120,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -137,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 48.5,
+          "price": -105,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 48.5,
+          "price": -110,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401858282",
+      "game": "Miami @ North Carolina",
+      "kickoff_utc_independent": "2026-10-31T23:30:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -14,
+          "price": -108,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": 14.5,
+          "price": -118,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -588,
+          "drift": true
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 455,
+          "drift": true
+        },
+        {
+          "branch": "over_total",
+          "line": 52.5,
+          "price": -115,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 53.5,
+          "price": -111,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in away_ml, home_ml. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401856737",
+      "game": "Mississippi State @ Texas",
+      "kickoff_utc_independent": "2026-10-31T23:30:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 20.5,
+          "price": -114,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -20,
+          "price": -111,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 900,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -1429,
+          "drift": true
+        },
+        {
+          "branch": "over_total",
+          "line": 50.5,
+          "price": -112,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 50.5,
+          "price": -105,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in home_ml. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401858509",
+      "game": "Ohio State @ USC",
+      "kickoff_utc_independent": "2026-10-31T23:30:00.000Z",
+      "prior_state": "CONDITIONAL",
+      "prior_review_provenance": {
+        "path": "evidence/operational/recommendation_reviews/CFB_OHIO_STATE_USC_UNDER_RECONSIDERATION_20261030T010401Z.json",
+        "blob": "f93bc42dad561f914456ceff488ddd24d90ca580",
+        "commit": "5c146e041187b1afab695ac0efe44114ac75465c"
+      },
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "CONDITIONAL_SELECTED"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -6.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": 6.5,
+          "price": -105,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -220,
+          "drift": true
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 200,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 51.5,
+          "price": -105,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 51.5,
+          "price": -112,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml"
+      ],
+      "production_classification": "CONDITIONAL_NOT_APPROVED_UNTIL_ORIGINAL_SAT_1500_CT",
+      "case_reason": "Original review already includes Sayin out and either Fahey or St. Clair. Friday public FanDuel team page shows under 51.5/-115, numerically inside 51.5/-120 condition; frozen Champion total 58.1 OPPOSES under by 6.6. No calibrated reconciliation/fair probability/current Champion under decision; no user-venue executable offer/limit or final personnel clearance.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401856733",
+      "game": "Missouri @ Arkansas",
+      "kickoff_utc_independent": "2026-10-31T23:45:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -10,
+          "price": -112,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": 10.5,
+          "price": -114,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -380,
+          "drift": true
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 310,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 48.5,
+          "price": -105,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 48.5,
+          "price": -110,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_ml"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in away_ml. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401858504",
+      "game": "Washington @ Nebraska",
+      "kickoff_utc_independent": "2026-11-01T00:00:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 7.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -7.5,
+          "price": -105,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 250,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -294,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 49.5,
+          "price": -114,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 50.5,
+          "price": -112,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401860908",
+      "game": "Texas State @ Boise State",
+      "kickoff_utc_independent": "2026-11-01T02:00:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 10.5,
+          "price": -105,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": -10.5,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 340,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -441,
+          "drift": true
+        },
+        {
+          "branch": "over_total",
+          "line": 63.5,
+          "price": -108,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 63.5,
+          "price": -105,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "home_ml"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in home_ml. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401864530",
+      "game": "Northern Illinois @ UNLV",
+      "kickoff_utc_independent": "2026-11-01T02:30:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": 22.5,
+          "price": -115,
+          "drift": true
+        },
+        {
+          "branch": "home_spread",
+          "line": -22,
+          "price": -108,
+          "drift": true
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": 1100,
+          "drift": true
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": -1786,
+          "drift": true
+        },
+        {
+          "branch": "over_total",
+          "line": 54.5,
+          "price": -105,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 54.5,
+          "price": -111,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [
+        "away_spread",
+        "home_spread",
+        "away_ml",
+        "home_ml"
+      ],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "Material raw mixed-book movement in away_spread, home_spread, away_ml, home_ml. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    },
+    {
+      "game_id": "401860924",
+      "game": "Oregon State @ Fresno State",
+      "kickoff_utc_independent": "2026-11-01T03:00:00.000Z",
+      "prior_state": "PASS",
+      "prior_review_provenance": "R13_PRIOR_REVALIDATION_ONLY",
+      "prior_six_branch_dispositions": [
+        {
+          "branch": "away_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_spread",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "away_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "home_ml",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "over_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        },
+        {
+          "branch": "under_total",
+          "disposition": "REVIEWED_NO_SELECTION"
+        }
+      ],
+      "source_six_branch_quotes": [
+        {
+          "branch": "away_spread",
+          "line": -5.5,
+          "price": -115,
+          "drift": false
+        },
+        {
+          "branch": "home_spread",
+          "line": 6,
+          "price": -110,
+          "drift": false
+        },
+        {
+          "branch": "away_ml",
+          "line": null,
+          "price": -220,
+          "drift": false
+        },
+        {
+          "branch": "home_ml",
+          "line": null,
+          "price": 190,
+          "drift": false
+        },
+        {
+          "branch": "over_total",
+          "line": 58.5,
+          "price": -105,
+          "drift": false
+        },
+        {
+          "branch": "under_total",
+          "line": 58.5,
+          "price": -110,
+          "drift": false
+        }
+      ],
+      "material_numeric_drift_branches": [],
+      "production_classification": "RETAIN_PRIOR_PASS_HISTORY_CURRENT_PACKET_NOT_CERTIFIED",
+      "case_reason": "No R13 material numeric drift flagged, but source equivalence alone is insufficient. Historical six-branch PASS rationale recovered, not a newly qualified current Champion review. Missing final material personnel news, identified offer update/executable venue, and current producer decision.",
+      "current_packet_certification": "NOT_CERTIFIED",
+      "new_champion_decision": "NOT_ISSUED",
+      "new_bet_approved": false
+    }
+  ]
+}
