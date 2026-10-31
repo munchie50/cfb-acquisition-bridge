@@ -62,3 +62,6 @@ Inspected .github/workflows/cfb_catchup_batch_20261027_once.yml. It uses GitHub-
 
 ## Hosted runtime smoke gate — 2026-10-31
 Added .github/workflows/cfb_producer_runtime_smoke_manual.yml in commit 5060873fdcdce4c2e8ba672004b1c912498668da; independent readback verified SHA f3b1a5fd9008d9afafe86ce0b9c2d0d3b2521e9b. Manual workflow_dispatch only, contents:read, syntax-check governed scripts and run isolated classifier tests; no source collection, canonical writes, decisions, or schedule. All referenced scripts/test file were separately fetched and found. GitHub connector exposes run/job inspection but no dispatch action: EXECUTED and hosted runtime VERIFIED are pending. Do not claim runner pass from configuration readback.
+
+## Hosted runtime smoke observed successful — 2026-10-31
+User supplied GitHub Actions screenshot showing manually triggered cfb_producer_runtime_smoke_manual.yml run #1, branch main, displayed commit 13a05c5, status Success, duration 9 seconds, one Node.js 20 deprecation warning and one ubuntu-latest migration notice. This is screenshot-level execution evidence for the read-only hosted smoke, not independently retrieved job logs, and not proof of production scheduler/decision producer acceptance. Next: obtain exact workflow run ID and inspect job steps/logs; retain production boundaries.
