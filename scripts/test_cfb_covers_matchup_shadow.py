@@ -16,6 +16,11 @@ class CoversShadowTest(unittest.TestCase):
         self.assertFalse(r["executable_offer_verified"])
         self.assertIsNone(r["independent_price_clock"])
 
+    def test_repeated_summary_rows_are_not_new_offers(self):
+        result = inspect(SAMPLE + SAMPLE, URL, CLOCK)
+        self.assertEqual(len(result["displayed_moneyline_rows"]), 2)
+        self.assertEqual([x["displayed_moneyline"] for x in result["displayed_moneyline_rows"]], [-172, 142])
+
     def test_fail_closed_identity_and_clock(self):
         with self.assertRaises(ValueError):
             inspect(SAMPLE, "https://example.com/odds", CLOCK)
