@@ -68,6 +68,25 @@ jobs:
               source_kickoff=game['source_kickoff_utc']
               independent=case['independent_espn_kickoff_utc']
               agreement=(as_utc(source_kickoff)==as_utc(independent)) if source_kickoff else None
+              total_by_side={o['total']['side']:o['total'] for o in offers if o['total']['side'] in ('o','u')}
+              current={'away_spread':offers[0]['spread'],'home_spread':offers[1]['spread'],
+                  'away_ml':offers[0]['moneyline'],'home_ml':offers[1]['moneyline'],
+                  'over_total':total_by_side.get('o'),'under_total':total_by_side.get('u')}
+              old={b['branch']:b for b in case['friday_cbs_branch_quotes']}
+              assert len(old)==6 and len(current)==6
+              branch_screen=[]
+              for name,quote in current.items():
+                  old_quote=old[name]
+                  line=quote['line'] if quote else None
+                  price=quote['price'] if quote else None
+                  before_line=old_quote['line']
+                  before_price=old_quote['price']
+                  branch_screen.append({'branch':name,'current':quote,
+                      'prior_cbs_line':before_line,'prior_cbs_price':before_price,
+                      'raw_line_delta':(line-before_line) if isinstance(line,(int,float)) and isinstance(before_line,(int,float)) else None,
+                      'raw_price_delta':(price-before_price) if isinstance(price,(int,float)) and isinstance(before_price,(int,float)) else None,
+                      'changed_since_prior_cbs':line!=before_line or price!=before_price,
+                      'new_producer_decision':'NOT_ISSUED'})
               rows.append({
                   'game_id':case['game_id'],'game':case['game'],
                   'source_kickoff_utc':source_kickoff,
@@ -75,12 +94,13 @@ jobs:
                   'source_vs_espn_kickoff_agrees':agreement,
                   'source_temporal_status':game['temporal_status'],
                   'six_market_source_offers':offers,
+                  'current_six_branch_numeric_screen':branch_screen,
                   'historical_review_ref':case['prior_immutable_review_ref'],
                   'current_champion_decision':'NOT_ISSUED',
                   'current_packet_certification':'NOT_CERTIFIED',
                   'venue_offer_limit':'UNVERIFIED',
               })
-          assert len(rows)==35
+          assert len(rows)==35 and sum(len(r['current_six_branch_numeric_screen']) for r in rows)==210
           result={'schema':'CFB_WEEK9_R13_AUTHENTIC_CURRENT_SOURCE_SCREEN',
               'source_recovered_by_utc':'2026-10-31T00:28:04.032Z',
               'source_capture':'evidence/operational/CFB_WEEK9_CBS_CURRENT_SOURCE_CAPTURE_R13.md',
@@ -89,6 +109,7 @@ jobs:
           Path('week9-current-source-r13.json').write_text(json.dumps(result,indent=2)+'\n')
           print('R13_AUTHENTIC_CURRENT_SOURCE_56_GAME_COVERAGE',coverage)
           print('R13_35_CASE_SIX_BRANCH_SOURCE_SCREEN',len(rows))
+          print('R13_FRESH_SOURCE_CHANGED_BRANCHES',sum(b['changed_since_prior_cbs'] for r in rows for b in r['current_six_branch_numeric_screen']))
           print('R13_INDEPENDENT_KICKOFF_AGREEMENT',sum(r['source_vs_espn_kickoff_agrees'] is True for r in rows))
           print('R13_KICKOFF_MISMATCHES',[(r['game_id'],r['source_kickoff_utc'],r['independent_espn_kickoff_utc']) for r in rows if r['source_vs_espn_kickoff_agrees'] is False])
           print('R13_KICKOFF_UNRESOLVED',sum(r['source_vs_espn_kickoff_agrees'] is None for r in rows))
