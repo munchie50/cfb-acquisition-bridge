@@ -1,0 +1,364 @@
+{
+  "schema": "CFB_WEEK9_R30_LATE_CASE_MATERIAL_PERSONNEL_AND_SIX_MARKET_PREFLIGHT",
+  "recorded_by_utc": "2026-10-31T03:20:45.078Z",
+  "parent_r26_blob": "452f5ea9d3453345f4e15d8499abc8111ca57f03",
+  "case_count": 3,
+  "branch_preflights": 18,
+  "qualified_decisions": 0,
+  "approved_bets": 0,
+  "material_high_priority": "Mississippi State QB Kamario Taylor season-ending injury, replacement not finalized; Virginia-Wake first-to-refresh sign reversal",
+  "cases": [
+    {
+      "game_id": "401856737",
+      "game": "Mississippi State @ Texas",
+      "kickoff_utc": "2026-10-31T23:30:00.000Z",
+      "first_frozen": {
+        "pred_margin": "-0.17926022771447103",
+        "pred_total": "55.79392191281385",
+        "pred_win": "0.5258970500003277"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "8.674132866565335",
+        "pred_total": "54.28198844121715",
+        "pred_win": "0.7120091538822936",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/mississippi-state-bulldogs/odds",
+        "scrape_id": "01a18ff6-41ca-732e-8bf2-d640bbd18814",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 20.5,
+            "american_price": -114
+          },
+          "home_spread": {
+            "line": -20.5,
+            "american_price": -106
+          },
+          "away_ml": {
+            "american_price": 890
+          },
+          "home_ml": {
+            "american_price": -1450
+          },
+          "over_total": {
+            "line": 50.5,
+            "american_price": -112
+          },
+          "under_total": {
+            "line": 50.5,
+            "american_price": -108
+          }
+        }
+      },
+      "source_reports": [
+        {
+          "url": "https://www.reuters.com/sports/report-mississippi-state-qb-kamario-taylor-out-season--flm-2026-10-27/",
+          "published": "2026-10-27",
+          "finding": "Mississippi State QB Kamario Taylor season-ending toe surgery, 1460 yards and 17 TD in six games."
+        },
+        {
+          "url": "https://www.si.com/college/mississippistate/football/mississippi-state-depth-chart-raises-major-questions-at-qb-ahead-of-texas-showdown-01m61shhemhy",
+          "published": "2026-10-28",
+          "finding": "Billy Puckett or AJ Swann on depth chart; starter not declared before game."
+        },
+        {
+          "url": "https://spectrumlocalnews.com/tx/south-texas-el-paso/news/2026/10/30/manning-and-no--11-texas-want-to-keep-momentum-going-against-a-mississippi-state-team-missing-taylor",
+          "published": "2026-10-30",
+          "finding": "Associated Press confirms Mississippi State without Taylor at Texas."
+        }
+      ],
+      "material_review": "High-impact QB loss and unconfirmed replacement may postdate accepted Oct27 prediction cutoff; cannot assume already modeled. Texas player changes also require qualified review.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "quote": {
+            "line": 20.5,
+            "american_price": -114
+          },
+          "reason": "Mississippi State +20.5 cannot be selected merely because model raw Texas margin +8.674; QB loss not adjusted.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "quote": {
+            "line": -20.5,
+            "american_price": -106
+          },
+          "reason": "Texas -20.5 not justified without model personnel reconciliation and calibrated cover probability.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "quote": {
+            "american_price": 890
+          },
+          "reason": "Mississippi State +890 cannot be qualified while quarterback replacement and probability calibration unresolved.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "quote": {
+            "american_price": -1450
+          },
+          "reason": "Texas -1450 not a value conclusion from raw win probability.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "quote": {
+            "line": 50.5,
+            "american_price": -112
+          },
+          "reason": "Public 50.5 vs frozen 55.794 and refresh 54.282 is numerical only; QB injury material to scoring.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "quote": {
+            "line": 50.5,
+            "american_price": -108
+          },
+          "reason": "Under 50.5 not justified without material QB and total-model review.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "current_certification": "NOT_CERTIFIED",
+      "approved_bet": false,
+      "venue_quote_limit": "NOT_VERIFIED"
+    },
+    {
+      "game_id": "401858282",
+      "game": "Miami @ North Carolina",
+      "kickoff_utc": "2026-10-31T23:30:00.000Z",
+      "first_frozen": {
+        "pred_margin": "-8.03641328815152",
+        "pred_total": "52.125932852800545",
+        "pred_win": "0.31101386981043655"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "-8.232992066293209",
+        "pred_total": "55.643944126978695",
+        "pred_win": "0.334763448942087",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/north-carolina-tar-heels/odds",
+        "scrape_id": "01a18ff6-629d-72a8-8c14-2ef078045dc2",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": -14.5,
+            "american_price": 100
+          },
+          "home_spread": {
+            "line": 14.5,
+            "american_price": -122
+          },
+          "away_ml": {
+            "american_price": -600
+          },
+          "home_ml": {
+            "american_price": 450
+          },
+          "over_total": {
+            "line": 53.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 53.5,
+            "american_price": -110
+          }
+        }
+      },
+      "source_reports": [
+        {
+          "url": "https://theacc.com/news/2026/10/29/football-week-9-saturday-preview-eight-acc-conference-games-on-tap.aspx",
+          "published": "2026-10-30",
+          "finding": "Miami QB Darian Mensah 2151 yards/22 TD, WR Malachi Toney 952 yards/11 TD; UNC QB Billy Edwards Jr. 1531 yards/11 TD and defense 20.9 points allowed."
+        }
+      ],
+      "material_review": "Official ACC matchup preview supplies offensive/defensive performance context, not final injury clearance; saved market drift flag remains.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "quote": {
+            "line": -14.5,
+            "american_price": 100
+          },
+          "reason": "Miami -14.5 compared to raw away margin ~8.23 is not a calibrated cover probability.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "quote": {
+            "line": 14.5,
+            "american_price": -122
+          },
+          "reason": "UNC +14.5 not approved from numerical model difference alone; player/venue checks incomplete.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "quote": {
+            "american_price": -600
+          },
+          "reason": "Miami -600 not evaluated by a qualified win probability/price process.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "quote": {
+            "american_price": 450
+          },
+          "reason": "UNC +450 not a bet based on raw model win probability.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "quote": {
+            "line": 53.5,
+            "american_price": -110
+          },
+          "reason": "53.5 vs raw totals 52.126 and 55.644 straddles; no calibrated over.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "quote": {
+            "line": 53.5,
+            "american_price": -110
+          },
+          "reason": "53.5 straddles model snapshots; no calibrated under.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "current_certification": "NOT_CERTIFIED",
+      "approved_bet": false,
+      "venue_quote_limit": "NOT_VERIFIED"
+    },
+    {
+      "game_id": "401858284",
+      "game": "Virginia @ Wake Forest",
+      "kickoff_utc": "2026-10-31T19:45:00.000Z",
+      "first_frozen": {
+        "pred_margin": "-5.690307368948456",
+        "pred_total": "54.51339880089259",
+        "pred_win": "0.3802425820196452"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "8.37703072936002",
+        "pred_total": "51.842725170380234",
+        "pred_win": "0.7181752848375582",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/virginia-cavaliers/odds",
+        "scrape_id": "01a18ff5-f735-76bb-9236-4250834fb29a",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 12.5,
+            "american_price": -110
+          },
+          "home_spread": {
+            "line": -12.5,
+            "american_price": -110
+          },
+          "away_ml": {
+            "american_price": 375
+          },
+          "home_ml": {
+            "american_price": -490
+          },
+          "over_total": {
+            "line": 48.5,
+            "american_price": -106
+          },
+          "under_total": {
+            "line": 48.5,
+            "american_price": -114
+          }
+        }
+      },
+      "source_reports": [
+        {
+          "url": "https://theacc.com/news/2026/10/29/football-week-9-saturday-preview-eight-acc-conference-games-on-tap.aspx",
+          "published": "2026-10-30",
+          "finding": "Virginia QB Beau Pribula 1369 yards/13 TD, Wake QB Gio Lopez 1947 yards/17 TD; Wake four-game winning streak, Virginia defense 19.6 points allowed."
+        }
+      ],
+      "material_review": "Official conference preview supplies quarterback and defensive context but not final medical availability. First frozen Wake home margin -5.690 reverses to +8.377 in Oct27, a 14.067-point change.",
+      "branches": [
+        {
+          "branch": "away_spread",
+          "quote": {
+            "line": 12.5,
+            "american_price": -110
+          },
+          "reason": "Virginia +12.5 cannot be selected on conflicting original/refreshed directional predictions.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "quote": {
+            "line": -12.5,
+            "american_price": -110
+          },
+          "reason": "Wake -12.5 exceeds refreshed raw home margin +8.377; no calibrated cover estimate.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "quote": {
+            "american_price": 375
+          },
+          "reason": "Virginia +375 lacks qualified probability and venue.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "quote": {
+            "american_price": -490
+          },
+          "reason": "Wake -490 cannot be priced from raw refreshed 0.718 home-win probability alone.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "quote": {
+            "line": 48.5,
+            "american_price": -106
+          },
+          "reason": "Public 48.5 vs raw 54.513/51.843, not calibrated.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "quote": {
+            "line": 48.5,
+            "american_price": -114
+          },
+          "reason": "No under thesis earned from conflicting model totals and incomplete material availability.",
+          "disposition": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "current_certification": "NOT_CERTIFIED",
+      "approved_bet": false,
+      "venue_quote_limit": "NOT_VERIFIED"
+    }
+  ]
+}
