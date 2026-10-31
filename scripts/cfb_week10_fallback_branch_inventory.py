@@ -38,12 +38,20 @@ def inventory():
     if sum(counts.values()) + sum(
         b["availability"] != "DISPLAYED" for r in rows for b in r["branches"].values()) != 378:
         raise ValueError("six-branch coverage reconciliation failed")
+    acquisition_queue = [
+        {"game_id": row["game_id"], "away_team": row["away_team"],
+         "home_team": row["home_team"],
+         "missing_branches": [name for name in BRANCHES
+                              if row["branches"][name]["availability"] != "DISPLAYED"]}
+        for row in rows if any(row["branches"][name]["availability"] != "DISPLAYED"
+                               for name in BRANCHES)
+    ]
     return {"status": "SHADOW_FALLBACK_BRANCH_INVENTORY_ONLY", "source": WEEK10_URL,
             "capture_recovery_upper_bound_utc": RECOVERED_BY_UPPER_BOUND,
             "recovery_bound_not_exact_fetch": True, "games": 63, "possible_branches": 378,
             "displayed_by_branch": counts, "unpriced_game_ids": missing,
             "partially_priced_game_ids": partial, "unpriced_games": len(missing),
-            "displayed_branches": sum(counts.values()),
+            "displayed_branches": sum(counts.values()), "acquisition_queue": acquisition_queue,
             "source_coverage_complete": len(missing) == 0 and not partial,
             "consensus": "UNAVAILABLE",
             "executability": "UNVERIFIED", "decision_authorized": False, "rows": rows}
