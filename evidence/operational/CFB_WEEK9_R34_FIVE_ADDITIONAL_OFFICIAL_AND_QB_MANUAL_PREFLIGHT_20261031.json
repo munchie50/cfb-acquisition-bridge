@@ -1,0 +1,1243 @@
+{
+  "schema": "CFB_WEEK9_R34_FIVE_ADDITIONAL_MANUAL_SIX_MARKET_PREFLIGHT",
+  "status": "RUN_INCOMPLETE_NO_APPROVAL",
+  "recorded_by_utc": "2026-10-31T03:56:44.579Z",
+  "clock_semantics": "SESSION_RETRIEVAL_UPPER_BOUND_ONLY_NOT_OPERATOR_QUOTE_UPDATE_TIME",
+  "parent_r26_blob": "452f5ea9d3453345f4e15d8499abc8111ca57f03",
+  "previous_r33_blob": "0e759f811ac493e4c6190578ed3d171a7e7724e3",
+  "new_cases": 5,
+  "new_branch_preflights": 30,
+  "cumulative_distinct_preflight_cases": 23,
+  "cumulative_branch_preflights": 138,
+  "new_certified_decisions": 0,
+  "new_qualified_packets": 0,
+  "new_approvals": 0,
+  "official_player_rows": 60,
+  "guards": [
+    "Maryland +2.5 NOT APPROVED; original 14:00Z cutoff",
+    "Ohio State-USC Under 51.5 NOT APPROVED; original 20:00Z cutoff",
+    "No raw model numeric difference can approve a bet",
+    "No venue-specific executable quote/limit or operator-update clock",
+    "No current 56-row certified publication; canonical production files unchanged by this evidence-only write"
+  ],
+  "cases": [
+    {
+      "game_id": "401871095",
+      "game": "Southern Miss @ UL Monroe",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "first_frozen": {
+        "pred_margin": "-8.106471857997493",
+        "pred_total": "56.809115329531835",
+        "pred_win": "0.3136982404826161"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "-2.769641406985689",
+        "pred_total": "57.31972767571251",
+        "pred_win": "0.43788525661624317",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_saved_drift_branches": [],
+      "material_flags": [],
+      "official_availability": {
+        "source": null,
+        "rows": [],
+        "game_day_not_yet_published": null
+      },
+      "other_personnel_sources": [
+        {
+          "url": "https://www.si.com/college/southernmiss/southern-miss-injury-report-3-golden-eagles-upgraded-to-probable-vs-ulm",
+          "scrape_id": "01a19019-4658-736b-816a-2d2e38069b53",
+          "kind": "SECONDARY_REPORT_OF_SUN_BELT_AVAILABILITY"
+        }
+      ],
+      "material_personnel_review": "Southern Miss QB Ethan Hampton, WR Grant Page, LB Avery Sledge reported upgraded to PROBABLE; reporter expects Landry Lyddy to continue starting, but no official game-day starter certified. Public FanDuel all six prices unavailable; BetMGM October30 editorial quotes not executable. Frozen ULM home margin -8.106 vs Oct27 -2.770, total 56.809/57.320.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/southern-miss-golden-eagles/odds",
+        "scrape_id": "01a18ff6-007d-7149-8f1c-aaa2577b44e5",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": null
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": null,
+          "manual_reason": "No public FanDuel away spread; editorial Southern Miss -4 cannot establish executable price or calibrated cover.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": null,
+          "manual_reason": "No public FanDuel ULM spread; QB Hampton possible emergency backup alters depth context.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": null,
+          "manual_reason": "No current executable Southern Miss moneyline, editorial -165 cannot substitute.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": null,
+          "manual_reason": "No current executable ULM moneyline, editorial +140 cannot substitute.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": null,
+          "manual_reason": "No public FanDuel total; secondary editorial 56.5 cannot be qualified without QB personnel calibration.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": null,
+          "manual_reason": "No public FanDuel under total; no live operator update clock, user venue or limit.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Qualify current six-market Champion reasoning, official player impact and user venue quote/limit before original cutoff; otherwise PASS/EXPIRE."
+    },
+    {
+      "game_id": "401864531",
+      "game": "UTEP @ North Dakota State",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "first_frozen": {
+        "pred_margin": "20.311538771491833",
+        "pred_total": "49.203682238756244",
+        "pred_win": "0.8746584883715226"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "23.044715099973338",
+        "pred_total": "48.2943333577443",
+        "pred_win": "0.9088713617680234",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_saved_drift_branches": [
+        "away_ml"
+      ],
+      "material_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "official_availability": {
+        "source": null,
+        "rows": [],
+        "game_day_not_yet_published": null
+      },
+      "other_personnel_sources": [
+        {
+          "url": "https://the-scarlet-standard.com/2026/10/30/two-injuries-five-picks-and-a-quarterback-north-dakota-state-still-needs/",
+          "scrape_id": "01a19019-4606-73e7-9700-7f37c06c41b6",
+          "kind": "SECONDARY_COACH_REPORT"
+        }
+      ],
+      "material_personnel_review": "NDSU QB Nathan Hayes suffered ankle injury and previously toe injury; coach called him QUESTIONABLE Tuesday, but October30 reporting says he was not on Thursday initial Mountain West report. Absence from report is not proof of full clearance; alternative Preston Brown played in relief. FanDuel six-market event quote blank. Frozen NDSU home margin +20.312 vs Oct27 +23.045, while mixed-book UTEP +24.5 lacks executable coherence.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/utep-miners/odds",
+        "scrape_id": "01a18ff5-f735-718e-a309-91dc46961c16",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:18:08.374Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": null
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": null,
+          "manual_reason": "No FanDuel UTEP spread; mixed-book +24.5 is not an executable same-operator offer.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": null,
+          "manual_reason": "No FanDuel NDSU spread; QB Hayes ankle/toe status and replacement unresolved.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": null,
+          "manual_reason": "No public FanDuel UTEP moneyline, cross-book aggregator cannot substitute.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": null,
+          "manual_reason": "No public FanDuel NDSU moneyline, QB medical clearance and price unknown.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": null,
+          "manual_reason": "No FanDuel over total, aggregator total around 43 cannot be promoted.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": null,
+          "manual_reason": "No FanDuel under total, no operator quote timestamp or venue limit.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Qualify current six-market Champion reasoning, official player impact and user venue quote/limit before original cutoff; otherwise PASS/EXPIRE."
+    },
+    {
+      "game_id": "401858506",
+      "game": "Purdue @ Penn State",
+      "kickoff_utc": "2026-10-31T20:15:00.000Z",
+      "first_frozen": {
+        "pred_margin": "20.645638272387664",
+        "pred_total": "57.41110459420837",
+        "pred_win": "0.8787915153960462"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "8.797164887714155",
+        "pred_total": "53.51630774539686",
+        "pred_win": "0.7033670866008813",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_saved_drift_branches": [
+        "home_ml"
+      ],
+      "material_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "official_availability": {
+        "source": "https://app.hdintelligence.com/?conf=B10&source=B10&sport=Football&type=archive",
+        "scrape_id": "01a1901a-33c6-757d-99fc-f76d8f849f5d",
+        "retrieved_no_later_than_utc": "2026-10-31T03:56:44.579Z",
+        "rows": [
+          {
+            "team": "Purdue",
+            "date": "10/31/26",
+            "opponent": "at Penn State",
+            "number": "#2",
+            "player": "Jaden Mangham",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Purdue",
+            "date": "10/31/26",
+            "opponent": "at Penn State",
+            "number": "#8",
+            "player": "De'Nylon Morrissette",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Purdue",
+            "date": "10/31/26",
+            "opponent": "at Penn State",
+            "number": "#16",
+            "player": "Kylan Fox",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Purdue",
+            "date": "10/31/26",
+            "opponent": "at Penn State",
+            "number": "#24",
+            "player": "Raderrion Daniels",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#0",
+            "player": "Chase Sowell",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#4",
+            "player": "Jeremiah Cooper",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#6",
+            "player": "Koby Howard",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#15",
+            "player": "Joshua Johnson",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#18",
+            "player": "Max Granville",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#19",
+            "player": "Yvan Kemajou",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#25",
+            "player": "Alex Tatsch",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#27",
+            "player": "Omarion Davis",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#30",
+            "player": "Christian Askew",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#33",
+            "player": "Alexander McPherson",
+            "initial_status": "Questionable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#35",
+            "player": "Tyler Armstead",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#42",
+            "player": "Mason Robinson",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#56",
+            "player": "Alijah Carnell",
+            "initial_status": "Doubtful",
+            "update1_status": "Doubtful",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#66",
+            "player": "Will Tompkins",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#80",
+            "player": "Cooper Alexander",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#83",
+            "player": "Brian Kortovich",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#90",
+            "player": "Liam Andrews",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#91",
+            "player": "Armstrong Nnodim",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Penn State",
+            "date": "10/31/26",
+            "opponent": "vs. Purdue",
+            "number": "#95",
+            "player": "Cristiano Rosa",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          }
+        ],
+        "game_day_not_yet_published": true
+      },
+      "other_personnel_sources": [],
+      "material_personnel_review": "Official Penn State WR Chase Sowell and Koby Howard QUESTIONABLE, OL Alijah Carnell DOUBTFUL; Purdue Jaden Mangham and De'Nylon Morrissette QUESTIONABLE. Frozen PSU home margin +20.646 drops to Oct27 +8.797 vs public PSU -10.5, total 57.411/53.516 vs public 54.5. Final game-day statuses blank.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/purdue-boilermakers/odds",
+        "scrape_id": "01a19019-cee2-71bb-95ab-51677119a491",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:56:15.302Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 10.5,
+            "american_price": -102
+          },
+          "home_spread": {
+            "line": -10.5,
+            "american_price": -120
+          },
+          "away_ml": {
+            "american_price": 350
+          },
+          "home_ml": {
+            "american_price": -450
+          },
+          "over_total": {
+            "line": 54.5,
+            "american_price": -115
+          },
+          "under_total": {
+            "line": 54.5,
+            "american_price": -105
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": 10.5,
+            "american_price": -102
+          },
+          "manual_reason": "Purdue +10.5 exceeds raw refreshed PSU margin +8.797 but is not a qualified cover edge with uncertain personnel.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": -10.5,
+            "american_price": -120
+          },
+          "manual_reason": "PSU -10.5 aligns much closer to refreshed than frozen +20.646; no calibrated cover probability.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": 350
+          },
+          "manual_reason": "Purdue +350 requires calibrated upset probability and material receiver/defense adjustments.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": -450
+          },
+          "manual_reason": "PSU -450 lacks qualified fair moneyline and user-venue proof.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 54.5,
+            "american_price": -115
+          },
+          "manual_reason": "Over 54.5 between frozen 57.411 and refreshed 53.516; no qualified total distribution.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 54.5,
+            "american_price": -105
+          },
+          "manual_reason": "Under 54.5 also conflicts across snapshots; no calibrated under probability.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Qualify current six-market Champion reasoning, official player impact and user venue quote/limit before original cutoff; otherwise PASS/EXPIRE."
+    },
+    {
+      "game_id": "401856847",
+      "game": "Oklahoma State @ Iowa State",
+      "kickoff_utc": "2026-10-31T23:00:00.000Z",
+      "first_frozen": {
+        "pred_margin": "5.838154696866955",
+        "pred_total": "47.053876102043105",
+        "pred_win": "0.6442862899563238"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "-5.5520258683198564",
+        "pred_total": "56.845579731060255",
+        "pred_win": "0.37144298022129524",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_saved_drift_branches": [],
+      "material_flags": [
+        "S0_FIRST_FROZEN_MARGIN_SIGN_REVERSAL"
+      ],
+      "official_availability": {
+        "source": "https://app.hdintelligence.com/?conf=B12&source=B12&sport=Football&type=archive",
+        "scrape_id": "01a1901a-33b4-75b4-8ab6-fab89cc2c366",
+        "retrieved_no_later_than_utc": "2026-10-31T03:56:44.579Z",
+        "rows": [
+          {
+            "team": "Oklahoma State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Iowa State",
+            "number": "#0",
+            "player": "Malik Charles",
+            "initial_status": "Probable",
+            "update1_status": "Available",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Iowa State",
+            "number": "#7",
+            "player": "Quinton Hammonds",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Iowa State",
+            "number": "#19",
+            "player": "Dayvon Standard",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Iowa State",
+            "number": "#44",
+            "player": "Carson Kolb",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Oklahoma State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Iowa State",
+            "number": "#88",
+            "player": "Landon Dean",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Iowa State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Oklahoma State",
+            "number": "#5",
+            "player": "Connor Moberly",
+            "initial_status": "Questionable",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Iowa State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Oklahoma State",
+            "number": "#5",
+            "player": "Beni Ngoyi",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Iowa State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Oklahoma State",
+            "number": "#44",
+            "player": "Trey Verdon",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Iowa State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Oklahoma State",
+            "number": "#92",
+            "player": "Caden Crawford",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Iowa State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Oklahoma State",
+            "number": "#95",
+            "player": "Ka'Mori Moore",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Iowa State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Oklahoma State",
+            "number": "#99",
+            "player": "Bryson Lamb",
+            "initial_status": "Questionable",
+            "update1_status": "Doubtful",
+            "update2_status": "-",
+            "game_day_status": "-"
+          }
+        ],
+        "game_day_not_yet_published": true
+      },
+      "other_personnel_sources": [],
+      "material_personnel_review": "Iowa State QB Connor Moberly OUT, but Oct27 coach named Jaylen Raynor as starter; do not misclassify Moberly absence as starter loss. Iowa State Bryson Lamb DOUBTFUL and Beni Ngoyi OUT; OSU Quinton Hammonds QUESTIONABLE. Frozen Iowa State home margin +5.838 reverses to Oct27 -5.552; public OSU -9.5, total 58.5 vs raw 47.054/56.846.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/oklahoma-state-cowboys/odds",
+        "scrape_id": "01a19019-d039-76dc-ba8d-f59a6f979ee3",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:56:15.302Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": -9.5,
+            "american_price": -112
+          },
+          "home_spread": {
+            "line": 9.5,
+            "american_price": -108
+          },
+          "away_ml": {
+            "american_price": -345
+          },
+          "home_ml": {
+            "american_price": 275
+          },
+          "over_total": {
+            "line": 58.5,
+            "american_price": -102
+          },
+          "under_total": {
+            "line": 58.5,
+            "american_price": -120
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": -9.5,
+            "american_price": -112
+          },
+          "manual_reason": "OSU -9.5 exceeds raw refreshed OSU advantage 5.552 and reverses frozen ISU advantage; cannot certify spread.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": 9.5,
+            "american_price": -108
+          },
+          "manual_reason": "Iowa State +9.5 is not selected solely from model sign reversal; actual starting QB Raynor must be accounted for.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": -345
+          },
+          "manual_reason": "OSU -345 requires calibrated win probability after model sign reversal and injury adjustments.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": 275
+          },
+          "manual_reason": "ISU +275 cannot be called value without current QB/defense adjusted fair probability.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 58.5,
+            "american_price": -102
+          },
+          "manual_reason": "Over 58.5 above both raw totals 47.054 and 56.846, no qualified over advantage.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 58.5,
+            "american_price": -120
+          },
+          "manual_reason": "Under 58.5 cannot be approved from raw totals alone, with model total changed 9.792 points.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Qualify current six-market Champion reasoning, official player impact and user venue quote/limit before original cutoff; otherwise PASS/EXPIRE."
+    },
+    {
+      "game_id": "401858504",
+      "game": "Washington @ Nebraska",
+      "kickoff_utc": "2026-11-01T00:00:00.000Z",
+      "first_frozen": {
+        "pred_margin": "12.685528847014263",
+        "pred_total": "50.616231734845755",
+        "pred_win": "0.7722918506128544"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "10.542524989314849",
+        "pred_total": "52.010453751818766",
+        "pred_win": "0.7193555018811835",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_saved_drift_branches": [],
+      "material_flags": [],
+      "official_availability": {
+        "source": "https://app.hdintelligence.com/?conf=B10&source=B10&sport=Football&type=archive",
+        "scrape_id": "01a1901a-33c6-757d-99fc-f76d8f849f5d",
+        "retrieved_no_later_than_utc": "2026-10-31T03:56:44.579Z",
+        "rows": [
+          {
+            "team": "Washington",
+            "date": "10/31/26",
+            "opponent": "at Nebraska",
+            "number": "#1",
+            "player": "Demond Williams Jr.",
+            "initial_status": "Questionable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Washington",
+            "date": "10/31/26",
+            "opponent": "at Nebraska",
+            "number": "#4",
+            "player": "Jordan Washington",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Washington",
+            "date": "10/31/26",
+            "opponent": "at Nebraska",
+            "number": "#5",
+            "player": "Christian Moss",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Washington",
+            "date": "10/31/26",
+            "opponent": "at Nebraska",
+            "number": "#9",
+            "player": "Jacob Manu",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Washington",
+            "date": "10/31/26",
+            "opponent": "at Nebraska",
+            "number": "#10",
+            "player": "Xe'ree Alexander",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Washington",
+            "date": "10/31/26",
+            "opponent": "at Nebraska",
+            "number": "#11",
+            "player": "Ramzak Fruean",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Washington",
+            "date": "10/31/26",
+            "opponent": "at Nebraska",
+            "number": "#17",
+            "player": "Jayden Limar",
+            "initial_status": "Questionable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Washington",
+            "date": "10/31/26",
+            "opponent": "at Nebraska",
+            "number": "#21",
+            "player": "Quaid Carr",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Washington",
+            "date": "10/31/26",
+            "opponent": "at Nebraska",
+            "number": "#22",
+            "player": "Trey Cooley",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Washington",
+            "date": "10/31/26",
+            "opponent": "at Nebraska",
+            "number": "#30",
+            "player": "Ansu Sanoe",
+            "initial_status": "Doubtful",
+            "update1_status": "Doubtful",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Washington",
+            "date": "10/31/26",
+            "opponent": "at Nebraska",
+            "number": "#66",
+            "player": "Landen Hatchett",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Washington",
+            "date": "10/31/26",
+            "opponent": "at Nebraska",
+            "number": "#70",
+            "player": "Justin Hylkema",
+            "initial_status": "Doubtful",
+            "update1_status": "Doubtful",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Washington",
+            "date": "10/31/26",
+            "opponent": "at Nebraska",
+            "number": "#78",
+            "player": "Jake Flores",
+            "initial_status": "Doubtful",
+            "update1_status": "Doubtful",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Washington",
+            "date": "10/31/26",
+            "opponent": "at Nebraska",
+            "number": "",
+            "player": "CJ Christian",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Nebraska",
+            "date": "10/31/26",
+            "opponent": "vs. Washington",
+            "number": "#4",
+            "player": "Jamir Conn",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Nebraska",
+            "date": "10/31/26",
+            "opponent": "vs. Washington",
+            "number": "#5",
+            "player": "Anthony Jones Jr.",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Nebraska",
+            "date": "10/31/26",
+            "opponent": "vs. Washington",
+            "number": "#10",
+            "player": "Vincent Shavers Jr.",
+            "initial_status": "Available",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Nebraska",
+            "date": "10/31/26",
+            "opponent": "vs. Washington",
+            "number": "#17",
+            "player": "Larry Miles",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Nebraska",
+            "date": "10/31/26",
+            "opponent": "vs. Washington",
+            "number": "#19",
+            "player": "Kahmir Prescott",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Nebraska",
+            "date": "10/31/26",
+            "opponent": "vs. Washington",
+            "number": "#22",
+            "player": "Isaiah Mozee",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Nebraska",
+            "date": "10/31/26",
+            "opponent": "vs. Washington",
+            "number": "#30",
+            "player": "Vincent Genatone",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Nebraska",
+            "date": "10/31/26",
+            "opponent": "vs. Washington",
+            "number": "#44",
+            "player": "Riley Van Poppel",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Nebraska",
+            "date": "10/31/26",
+            "opponent": "vs. Washington",
+            "number": "#52",
+            "player": "Jase Reynolds",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Nebraska",
+            "date": "10/31/26",
+            "opponent": "vs. Washington",
+            "number": "#54",
+            "player": "Jacob Bower",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Nebraska",
+            "date": "10/31/26",
+            "opponent": "vs. Washington",
+            "number": "#77",
+            "player": "Gunnar Gottula",
+            "initial_status": "Available",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Nebraska",
+            "date": "10/31/26",
+            "opponent": "vs. Washington",
+            "number": "#95",
+            "player": "Gabe Moore",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          }
+        ],
+        "game_day_not_yet_published": true
+      },
+      "other_personnel_sources": [],
+      "material_personnel_review": "Washington QB Demond Williams Jr. upgraded to PROBABLE but reports indicate coach has not publicly named him over Elijah Brown; status does not confirm starter. Washington OL Landen Hatchett OUT, Nebraska OL Gunnar Gottula downgraded OUT, WR Vincent Shavers Jr. QUESTIONABLE. Frozen Nebraska home margin +12.686, Oct27 +10.543 vs public Nebraska -7.5; totals 50.616/52.010 vs public 50.5.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/washington-huskies/odds",
+        "scrape_id": "01a19019-ced8-7706-993d-28c9ef4e4b26",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:56:15.302Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 7.5,
+            "american_price": -110
+          },
+          "home_spread": {
+            "line": -7.5,
+            "american_price": -110
+          },
+          "away_ml": {
+            "american_price": 250
+          },
+          "home_ml": {
+            "american_price": -310
+          },
+          "over_total": {
+            "line": 50.5,
+            "american_price": -108
+          },
+          "under_total": {
+            "line": 50.5,
+            "american_price": -112
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": 7.5,
+            "american_price": -110
+          },
+          "manual_reason": "Washington +7.5 smaller than raw Nebraska +10.543/+12.686; QB starter uncertainty makes spread unqualified.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": -7.5,
+            "american_price": -110
+          },
+          "manual_reason": "Nebraska -7.5 cannot be selected from raw margin with offensive line/receiver and opposing QB uncertainties.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": 250
+          },
+          "manual_reason": "Washington +250 requires calibrated starter-specific win probability.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": -310
+          },
+          "manual_reason": "Nebraska -310 is not a qualified value edge from unadjusted home win scalar.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 50.5,
+            "american_price": -108
+          },
+          "manual_reason": "Over 50.5 near both raw totals but no calibrated distribution or QB starter clarity.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 50.5,
+            "american_price": -112
+          },
+          "manual_reason": "Under 50.5 also cannot be certified from near-equal raw totals without player-impact review.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Qualify current six-market Champion reasoning, official player impact and user venue quote/limit before original cutoff; otherwise PASS/EXPIRE."
+    }
+  ],
+  "attempt_ledger": [
+    {
+      "action": "Independent official BigTen/Big12 availability and secondary Sun Belt/MW material QB news",
+      "outcome": "Personnel rows and precise source identities recorded for 5 new games",
+      "blocker": "No game-day final, no calibrated player impact",
+      "next": "Qualify official impact before original practical cutoffs"
+    },
+    {
+      "action": "Governed six-market manual preflight for five additional distinct games",
+      "outcome": "30 NOT_CERTIFIED_NO_APPROVAL branches",
+      "blocker": "No authentic calibrated six-market decisions or executable venue proof",
+      "next": "Advance remaining unreviewed games in kickoff order"
+    },
+    {
+      "action": "Canonical publication",
+      "outcome": "NOT_ATTEMPTED",
+      "blocker": "All 56 genuine decision rows and contract gates not met",
+      "next": "Publish only on verified full acceptance"
+    }
+  ]
+}
