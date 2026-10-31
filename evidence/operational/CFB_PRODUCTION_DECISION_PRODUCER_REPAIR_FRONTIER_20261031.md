@@ -47,3 +47,6 @@ Freshly fetched QA source qa/cfb_run_failure_classifier_readonly.py, blob d3dbba
 
 ## Canonical large-file read recovery — 2026-10-31
 GitHub fetch_file returned empty content with valid SHAs for large canonical market and decision ledgers. Independent fetch_blob by those exact SHAs returned nonempty original headers and 3,836,615 / 1,900,825 characters respectively. Classify as retrieval-method limitation, NOT missing or corrupt canonical data. For large canonical files, fetch blob by verified SHA and compare original append-only header before any write. Neither file modified. Scheduler NO_UPDATE and current decision authoring remain separately open.
+
+## Market Monitor early-start witness change — 2026-10-31
+Existing Market Monitor task prompt updated in place: RUN_STARTED write plus independent readback now occurs immediately after connected GitHub main access, before lengthy authority recovery; no schedule, publication gate, model or other task changed. Independent task peek confirmed saved prompt and original 07:00/13:00 America/Chicago schedule. Acceptance state CORRECTED/PERSISTED/READ_BACK only; latest observed invocation remains Oct31 15:48Z NO_UPDATE with null chat_ref, predating change. Next natural invocation must be reconciled against actual marker, run ID, closure. Do not infer scheduler repair from prompt persistence.
