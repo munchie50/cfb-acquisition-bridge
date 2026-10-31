@@ -11,6 +11,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   repair-only:
+    if: false # completed once at main 76839a44; never rerun the mutation
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -95,3 +96,20 @@ jobs:
           git hash-object evidence/operational/CFB_MARKET_MONITOR_STATE.md
           git hash-object evidence/operational/CFB_DECISION_WAIT_LEDGER.md
           git hash-object evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-29_2008CT.md
+  dispatch-selected-existing-ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - name: Guard corrected main before requesting existing static CI
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(gh api repos/${{ github.repository }}/git/refs/heads/main --jq .object.sha)" = "76839a44d4da9630d761378f6759e51b75be5953"
+          test "$(gh api repos/${{ github.repository }}/git/trees/main --jq '.tree[] | select(.path=="evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md") | .sha')" = "57327859afb17ca42451189d3661f4c16fae4f90"
+          gh api -X POST repos/${{ github.repository }}/actions/workflows/cfb_qa_hot_sheet_kickoff_section_static_gate.yml/dispatches -f ref=main
+          echo "EXISTING_STATIC_CI_DISPATCH_REQUESTED_NOT_YET_ACCEPTED"
