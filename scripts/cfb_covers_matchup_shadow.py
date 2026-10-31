@@ -15,6 +15,21 @@ def match_canonical_pair(result, baseline):
     return {"status": "SHADOW_IDENTITY_MATCH_ONLY", "game_id": rows[0]["game_id"],
             "kickoff_independently_verified": False, "decision_authorized": False}
 
+def discover_dated_matchups(markdown):
+    """Discover only dated Nov 6/7 rows, not sidebar or unrelated weeks."""
+    found = {}
+    for line in markdown.splitlines():
+        if not re.match(r"^\\| Nov [67],", line):
+            continue
+        match = re.search(r"/matchup/(\\d+)", line)
+        if match:
+            found[match.group(1)] = {
+                "matchup_id": match.group(1),
+                "odds_url": "https://www.covers.com/sport/football/ncaaf/matchup/"
+                            + match.group(1) + "/odds",
+                "status": "DISCOVERED_UNQUALIFIED"}
+    return list(found.values())
+
 def inspect(markdown, source_url, observed_at_utc):
     if not re.fullmatch(r"https://www\.covers\.com/sport/football/ncaaf/matchup/\d+/odds", source_url):
         raise ValueError("unsupported matchup source")
