@@ -1,0 +1,1361 @@
+{
+  "schema": "CFB_WEEK9_R33_FIVE_ADDITIONAL_GOVERNED_MANUAL_SIX_MARKET_PREFLIGHT",
+  "status": "RUN_INCOMPLETE_NO_APPROVAL",
+  "recorded_by_utc": "2026-10-31T03:55:11.499Z",
+  "clock_semantics": "SESSION_READBACK_BY_UTC_NOT_OPERATOR_PRICE_UPDATE_OR_GAME_DAY_PUBLICATION_CLOCK",
+  "parent_r26_blob": "452f5ea9d3453345f4e15d8499abc8111ca57f03",
+  "previous_r27_cases": 7,
+  "previous_r30_cases": 3,
+  "previous_r31_cases": 3,
+  "new_cases": 5,
+  "new_branch_preflights": 30,
+  "cumulative_distinct_preflight_cases": 18,
+  "cumulative_preflight_branches": 108,
+  "new_certified_rows": 0,
+  "new_qualified_packets": 0,
+  "new_bet_approvals": 0,
+  "official_sources": [
+    {
+      "url": "https://app.hdintelligence.com/?conf=B12&source=B12&sport=Football&type=archive",
+      "scrape_id": "01a19018-cde2-7229-8b9c-759e47704d30"
+    },
+    {
+      "url": "https://app.hdintelligence.com/?conf=SEC&source=SEC&sport=Football&type=archive",
+      "scrape_id": "01a19018-cdfc-747a-b372-875438326435"
+    }
+  ],
+  "critical_gates": [
+    "Maryland NOT APPROVED original 2026-10-31T14:00Z cutoff",
+    "Ohio State-USC Under 51.5 NOT APPROVED original 2026-10-31T20:00Z cutoff",
+    "No new executable venue quote/limit or operator update timestamp",
+    "No raw numerical model comparison constitutes a certified betting decision",
+    "No canonical market/decision/Hot Sheet/index publication"
+  ],
+  "cases": [
+    {
+      "game_id": "401856846",
+      "game": "Kansas State @ Colorado",
+      "kickoff_utc": "2026-10-31T18:00:00.000Z",
+      "first_frozen": {
+        "pred_margin": "-14.59982171248134",
+        "pred_total": "51.15289598048278",
+        "pred_win": "0.164036895339676"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "-5.877868423347203",
+        "pred_total": "53.747664746352264",
+        "pred_win": "0.33965104402297364",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_saved_drift_branches": [],
+      "material_flags": [],
+      "official_availability": {
+        "source": "https://app.hdintelligence.com/?conf=B12&source=B12&sport=Football&type=archive",
+        "scrape_id": "01a19018-cde2-7229-8b9c-759e47704d30",
+        "source_kind": "OFFICIAL_CONFERENCE_EMBEDDED_REPORT",
+        "retrieved_no_later_than_utc": "2026-10-31T03:55:11.499Z",
+        "rows": [
+          {
+            "team": "Kansas State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Colorado",
+            "number": "#2",
+            "player": "Avery Johnson",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Kansas State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at Colorado",
+            "number": "#7",
+            "player": "Jacob Knuth",
+            "initial_status": "Doubtful",
+            "update1_status": "Doubtful",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Colorado",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas State",
+            "number": "#6",
+            "player": "Quentin Gibson",
+            "initial_status": "Out",
+            "update1_status": "Exempt",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Colorado",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas State",
+            "number": "#7",
+            "player": "Kam Perry",
+            "initial_status": "Probable",
+            "update1_status": "Available",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Colorado",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas State",
+            "number": "#10",
+            "player": "Julian Lewis",
+            "initial_status": "Doubtful",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Colorado",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas State",
+            "number": "#18",
+            "player": "Danny Scudero",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Colorado",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas State",
+            "number": "#20",
+            "player": "Cree Thomas",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Colorado",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas State",
+            "number": "#26",
+            "player": "Braylon Edwards",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Colorado",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas State",
+            "number": "#29",
+            "player": "Micah Welch",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Colorado",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas State",
+            "number": "#45",
+            "player": "Vili Taufatofua",
+            "initial_status": "Doubtful",
+            "update1_status": "Doubtful",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Colorado",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas State",
+            "number": "#92",
+            "player": "Sam Gadie",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Colorado",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas State",
+            "number": "#99",
+            "player": "Dylan Manuel",
+            "initial_status": "Questionable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          }
+        ],
+        "game_day_not_yet_published": true
+      },
+      "personnel_analysis": "Both teams list quarterback absences: Kansas State starter Avery Johnson OUT and backup Jacob Knuth DOUBTFUL; Colorado Julian Lewis OUT (reported as former starter, not assumed current QB). Kansas State current replacement not confirmed. Frozen K-State advantage shrinks from 14.600 to 5.878 points, while public Colorado -2.5 points the opposite direction. Neither sign disagreement nor raw margin establishes an edge.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/kansas-state-wildcats/odds",
+        "scrape_id": "01a19018-19b5-748b-84d1-dbb88f57a077",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:54:23.861Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 2.5,
+            "american_price": -104
+          },
+          "home_spread": {
+            "line": -2.5,
+            "american_price": -118
+          },
+          "away_ml": {
+            "american_price": 122
+          },
+          "home_ml": {
+            "american_price": -146
+          },
+          "over_total": {
+            "line": 46.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 46.5,
+            "american_price": -110
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": 2.5,
+            "american_price": -104
+          },
+          "manual_reason": "K-State +2.5 numerically contrasts with raw refreshed K-State advantage, but both Kansas State quarterbacks flagged and starter unconfirmed.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": -2.5,
+            "american_price": -118
+          },
+          "manual_reason": "Colorado -2.5 numerically opposes both raw Champion margins; Colorado QB availability and calibration unresolved.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": 122
+          },
+          "manual_reason": "K-State +122 cannot be called value without current calibrated win probability accounting for quarterback replacement.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": -146
+          },
+          "manual_reason": "Colorado -146 cannot be approved merely because public book favors Colorado; model/news conflict unresolved.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 46.5,
+            "american_price": -110
+          },
+          "manual_reason": "Over 46.5 below frozen 51.153 and refreshed 53.748 but unmodeled QB absences materially affect total.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 46.5,
+            "american_price": -110
+          },
+          "manual_reason": "Under 46.5 also cannot be ruled in or out without a qualified QB-adjusted total and executable venue.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Obtain qualified current calibrated Champion six-market decision and complete official material impact/venue verification before original practical cutoff; otherwise PASS/EXPIRE without hindsight."
+    },
+    {
+      "game_id": "401856843",
+      "game": "Arizona State @ BYU",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "first_frozen": {
+        "pred_margin": "16.187459572143922",
+        "pred_total": "56.836393987807924",
+        "pred_win": "0.8511204113016558"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "12.431011827312512",
+        "pred_total": "56.02486838164585",
+        "pred_win": "0.7786690458545835",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_saved_drift_branches": [],
+      "material_flags": [],
+      "official_availability": {
+        "source": "https://app.hdintelligence.com/?conf=B12&source=B12&sport=Football&type=archive",
+        "scrape_id": "01a19018-cde2-7229-8b9c-759e47704d30",
+        "source_kind": "OFFICIAL_CONFERENCE_EMBEDDED_REPORT",
+        "retrieved_no_later_than_utc": "2026-10-31T03:55:11.499Z",
+        "rows": [
+          {
+            "team": "Arizona State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at BYU",
+            "number": "#2",
+            "player": "Lyrik Rawls",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arizona State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at BYU",
+            "number": "#3",
+            "player": "Albert Smith III",
+            "initial_status": "Available",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arizona State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at BYU",
+            "number": "#12",
+            "player": "Mikey Keene",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arizona State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at BYU",
+            "number": "#20",
+            "player": "Maurice Williams",
+            "initial_status": "Probable",
+            "update1_status": "Available",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arizona State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at BYU",
+            "number": "#50",
+            "player": "Marques Uini",
+            "initial_status": "Probable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arizona State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at BYU",
+            "number": "#57",
+            "player": "Filiva'a Lokotui",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arizona State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at BYU",
+            "number": "#58",
+            "player": "Tana Alo-Tupuola",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arizona State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at BYU",
+            "number": "#64",
+            "player": "Wade Helton",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arizona State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at BYU",
+            "number": "#78",
+            "player": "Luke Baklenko",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arizona State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at BYU",
+            "number": "#79",
+            "player": "Xander Ruggeroli",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Arizona State",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at BYU",
+            "number": "#89",
+            "player": "Harry Hassmann",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "BYU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Arizona State",
+            "number": "#0",
+            "player": "Evan Johnson",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "BYU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Arizona State",
+            "number": "#4",
+            "player": "LJ Martin",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "BYU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Arizona State",
+            "number": "#12",
+            "player": "Preston Rex",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "BYU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Arizona State",
+            "number": "#64",
+            "player": "Kyle Sfarcioc",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "BYU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Arizona State",
+            "number": "#74",
+            "player": "Trevin Ostler",
+            "initial_status": "Out",
+            "update1_status": "Exempt",
+            "update2_status": "-",
+            "game_day_status": "-"
+          }
+        ],
+        "game_day_not_yet_published": true
+      },
+      "personnel_analysis": "Arizona State QB Mikey Keene QUESTIONABLE (coach says Jake Fette starts if Keene unavailable), BYU RB LJ Martin OUT. ASU OL Uini and Helton QUESTIONABLE. Frozen BYU home margin +16.187, Oct27 +12.431, public BYU -16.5; QB/RB statuses require material calibrated review.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/arizona-state-sun-devils/odds",
+        "scrape_id": "01a19018-19ad-77f4-bf0c-3981f9899573",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:54:23.861Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 16.5,
+            "american_price": -110
+          },
+          "home_spread": {
+            "line": -16.5,
+            "american_price": -110
+          },
+          "away_ml": {
+            "american_price": 570
+          },
+          "home_ml": {
+            "american_price": -800
+          },
+          "over_total": {
+            "line": 48.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 48.5,
+            "american_price": -110
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": 16.5,
+            "american_price": -110
+          },
+          "manual_reason": "ASU +16.5 superficially exceeds refreshed BYU home margin 12.431, but ASU QB uncertainty and BYU RB loss make simple spread arithmetic insufficient.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": -16.5,
+            "american_price": -110
+          },
+          "manual_reason": "BYU -16.5 aligns closer to frozen +16.187 than refreshed +12.431, but neither is a calibrated cover probability.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": 570
+          },
+          "manual_reason": "ASU +570 requires qualified upset probability and QB status, not raw model win probability alone.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": -800
+          },
+          "manual_reason": "BYU -800 is prohibitive price without calibrated fair odds and verified venue limit.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 48.5,
+            "american_price": -110
+          },
+          "manual_reason": "Over 48.5 below raw totals 56.836 and 56.025, but BYU RB OUT and ASU QB questionable materially change scoring distribution.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 48.5,
+            "american_price": -110
+          },
+          "manual_reason": "Under 48.5 likewise not certifiable without current personnel-adjusted total and price calibration.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Obtain qualified current calibrated Champion six-market decision and complete official material impact/venue verification before original practical cutoff; otherwise PASS/EXPIRE without hindsight."
+    },
+    {
+      "game_id": "401856845",
+      "game": "Kansas @ TCU",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "first_frozen": {
+        "pred_margin": "10.61882799787693",
+        "pred_total": "49.21956516527414",
+        "pred_win": "0.7411277196150335"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "5.940050933162191",
+        "pred_total": "51.50278894490568",
+        "pred_win": "0.6529213994890753",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_saved_drift_branches": [],
+      "material_flags": [],
+      "official_availability": {
+        "source": "https://app.hdintelligence.com/?conf=B12&source=B12&sport=Football&type=archive",
+        "scrape_id": "01a19018-cde2-7229-8b9c-759e47704d30",
+        "source_kind": "OFFICIAL_CONFERENCE_EMBEDDED_REPORT",
+        "retrieved_no_later_than_utc": "2026-10-31T03:55:11.499Z",
+        "rows": [
+          {
+            "team": "Kansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at TCU",
+            "number": "#2",
+            "player": "Syeed Gibbs",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Kansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at TCU",
+            "number": "#4",
+            "player": "Jalen Dupree",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Kansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at TCU",
+            "number": "#8",
+            "player": "Isaiah Marshall",
+            "initial_status": "Probable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Kansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at TCU",
+            "number": "#10",
+            "player": "Elijah Cannon",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Kansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at TCU",
+            "number": "#12",
+            "player": "Jaden Harris",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Kansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at TCU",
+            "number": "#23",
+            "player": "Mason Ellis",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Kansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at TCU",
+            "number": "#35",
+            "player": "Jack Utz",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Kansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at TCU",
+            "number": "#51",
+            "player": "Kasen Carpenter",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Kansas",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "at TCU",
+            "number": "#80",
+            "player": "Griffin Baker",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "TCU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas",
+            "number": "#7",
+            "player": "Julius Simms",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "TCU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas",
+            "number": "#13",
+            "player": "Ryan Yaites",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "TCU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas",
+            "number": "#15",
+            "player": "Terry Shelton",
+            "initial_status": "Available",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "TCU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas",
+            "number": "#17",
+            "player": "Devondre McGee",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "TCU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas",
+            "number": "#22",
+            "player": "Fletcher Fierro",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "TCU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas",
+            "number": "#24",
+            "player": "Joe Pitchford",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "TCU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas",
+            "number": "#26",
+            "player": "Jeremy Payne",
+            "initial_status": "Doubtful",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "TCU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas",
+            "number": "#27",
+            "player": "Michael Teason Jr.",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "TCU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas",
+            "number": "#27",
+            "player": "Landon Walker",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "TCU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas",
+            "number": "#60",
+            "player": "Cade Bennett",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "TCU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas",
+            "number": "#81",
+            "player": "Kari Ashley",
+            "initial_status": "Questionable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "TCU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas",
+            "number": "#83",
+            "player": "Keagan Cunningham",
+            "initial_status": "Available",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "TCU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas",
+            "number": "#84",
+            "player": "Cooper Reid",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "TCU",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Kansas",
+            "number": "#99",
+            "player": "Brody Whatley",
+            "initial_status": "Available",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          }
+        ],
+        "game_day_not_yet_published": true
+      },
+      "personnel_analysis": "Official TCU WR Terry Shelton OUT, RB Jeremy Payne OUT, TE Keagan Cunningham OUT, while Kansas QB Isaiah Marshall QUESTIONABLE and other offensive availability unsettled. Frozen TCU home margin +10.618, Oct27 +5.940, public TCU -6.5; near raw refreshed number is not certification.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/kansas-jayhawks/odds",
+        "scrape_id": "01a19018-19ad-7618-b02a-cc580a806df4",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:54:23.861Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 6.5,
+            "american_price": -114
+          },
+          "home_spread": {
+            "line": -6.5,
+            "american_price": -106
+          },
+          "away_ml": {
+            "american_price": 184
+          },
+          "home_ml": {
+            "american_price": -220
+          },
+          "over_total": {
+            "line": 45.5,
+            "american_price": -104
+          },
+          "under_total": {
+            "line": 45.5,
+            "american_price": -118
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": 6.5,
+            "american_price": -114
+          },
+          "manual_reason": "Kansas +6.5 near raw refreshed TCU margin +5.940 but Kansas quarterback questionable; no calibrated cover edge.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": -6.5,
+            "american_price": -106
+          },
+          "manual_reason": "TCU -6.5 cannot be selected from frozen +10.618 with key TCU RB/WR out and refreshed +5.940.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": 184
+          },
+          "manual_reason": "Kansas +184 needs a qualified personnel-adjusted win probability and verified price, not just model win scalar.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": -220
+          },
+          "manual_reason": "TCU -220 lacks calibrated fair ML after TCU offensive absences.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 45.5,
+            "american_price": -104
+          },
+          "manual_reason": "Over 45.5 is below raw 49.220/51.503 but multiple offensive absences may suppress scoring; no qualified total.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 45.5,
+            "american_price": -118
+          },
+          "manual_reason": "Under 45.5 cannot be certified without scoring distribution and player-impact review.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Obtain qualified current calibrated Champion six-market decision and complete official material impact/venue verification before original practical cutoff; otherwise PASS/EXPIRE without hindsight."
+    },
+    {
+      "game_id": "401856734",
+      "game": "Florida @ Georgia",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "first_frozen": {
+        "pred_margin": "13.358480139729341",
+        "pred_total": "65.99623168757266",
+        "pred_win": "0.7885560177914632"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "14.117361753702673",
+        "pred_total": "60.53433109693552",
+        "pred_win": "0.7907918366995139",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_saved_drift_branches": [
+        "away_ml",
+        "home_ml"
+      ],
+      "material_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT"
+      ],
+      "official_availability": {
+        "source": "https://app.hdintelligence.com/?conf=SEC&source=SEC&sport=Football&type=archive",
+        "scrape_id": "01a19018-cdfc-747a-b372-875438326435",
+        "source_kind": "OFFICIAL_CONFERENCE_EMBEDDED_REPORT",
+        "retrieved_no_later_than_utc": "2026-10-31T03:55:11.499Z",
+        "rows": [
+          {
+            "team": "Florida",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Georgia",
+            "number": "#1",
+            "player": "Vernell Brown III",
+            "initial_status": "Probable",
+            "update1_status": "Probable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Florida",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Georgia",
+            "number": "#3",
+            "player": "Bailey Stockton",
+            "initial_status": "Doubtful",
+            "update1_status": "Doubtful",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Florida",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Georgia",
+            "number": "#9",
+            "player": "Tramell Jones Jr.",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Florida",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Georgia",
+            "number": "#12",
+            "player": "Aaron Philo",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Florida",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Georgia",
+            "number": "#20",
+            "player": "Duke Clark",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Florida",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Georgia",
+            "number": "#29",
+            "player": "Jaden Robinson",
+            "initial_status": "Doubtful",
+            "update1_status": "Doubtful",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Georgia",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Florida",
+            "number": "#2",
+            "player": "Thomas Blackshear",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Georgia",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Florida",
+            "number": "#4",
+            "player": "KJ Bolden",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Georgia",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Florida",
+            "number": "#5",
+            "player": "Chauncey Bowens",
+            "initial_status": "Questionable",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Georgia",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Florida",
+            "number": "#6",
+            "player": "Isiah Canion",
+            "initial_status": "Questionable",
+            "update1_status": "Questionable",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Georgia",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Florida",
+            "number": "#17",
+            "player": "Amaris Williams",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          },
+          {
+            "team": "Georgia",
+            "date": "Sat, Oct 31, 2026",
+            "opponent": "vs. Florida",
+            "number": "#23",
+            "player": "Tyriq Green",
+            "initial_status": "Out",
+            "update1_status": "Out",
+            "update2_status": "-",
+            "game_day_status": "-"
+          }
+        ],
+        "game_day_not_yet_published": true
+      },
+      "personnel_analysis": "Official Florida QB Tramell Jones Jr. QUESTIONABLE and QB Aaron Philo QUESTIONABLE; Georgia DB KJ Bolden QUESTIONABLE and RB Chauncey Bowens OUT (downgraded). Frozen Georgia margin +13.358, Oct27 +14.117 vs public Georgia -11.5; raw totals 65.996/60.534 vs public 56.5. No personnel-calibrated decision.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/florida-gators/odds",
+        "scrape_id": "01a19018-19b3-76f2-bd43-bb07125e3be1",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:54:23.861Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 11.5,
+            "american_price": -110
+          },
+          "home_spread": {
+            "line": -11.5,
+            "american_price": -110
+          },
+          "away_ml": {
+            "american_price": 340
+          },
+          "home_ml": {
+            "american_price": -450
+          },
+          "over_total": {
+            "line": 56.5,
+            "american_price": -110
+          },
+          "under_total": {
+            "line": 56.5,
+            "american_price": -110
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": 11.5,
+            "american_price": -110
+          },
+          "manual_reason": "Florida +11.5 contrasts with raw Georgia +13.358/+14.117; Florida QB questions and Georgia absences make unadjusted comparison insufficient.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": -11.5,
+            "american_price": -110
+          },
+          "manual_reason": "Georgia -11.5 cannot be approved solely from raw home-margin projections without Florida QB and Georgia personnel calibration.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": 340
+          },
+          "manual_reason": "Florida +340 needs authentic updated win probability, not raw model scalar.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": -450
+          },
+          "manual_reason": "Georgia -450 has no qualified edge without fair ML and venue execution proof.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 56.5,
+            "american_price": -110
+          },
+          "manual_reason": "Over 56.5 below raw 65.996/60.534, but quarterback uncertainty and Georgia absences need current impact assessment.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 56.5,
+            "american_price": -110
+          },
+          "manual_reason": "Under 56.5 not established because both raw Champion totals exceed 56.5 and no calibrated contrary evidence.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Obtain qualified current calibrated Champion six-market decision and complete official material impact/venue verification before original practical cutoff; otherwise PASS/EXPIRE without hindsight."
+    },
+    {
+      "game_id": "401860910",
+      "game": "Colorado State @ Utah State",
+      "kickoff_utc": "2026-10-31T19:30:00.000Z",
+      "first_frozen": {
+        "pred_margin": "-4.686728804289869",
+        "pred_total": "51.6112210095398",
+        "pred_win": "0.37601709369661257"
+      },
+      "accepted_oct27_s0": {
+        "pred_margin": "6.390104389224711",
+        "pred_total": "59.52007203244311",
+        "pred_win": "0.6444311818368339",
+        "snapshot_type": "REFRESH_SNAPSHOT",
+        "cutoff_utc": "2026-10-27T15:38:14.731739+00:00"
+      },
+      "material_saved_drift_branches": [
+        "home_spread",
+        "away_ml",
+        "home_ml",
+        "over_total"
+      ],
+      "material_flags": [
+        "MATERIAL_SAVED_MARKET_DRIFT",
+        "S0_FIRST_FROZEN_MARGIN_SIGN_REVERSAL"
+      ],
+      "official_availability": {
+        "source": null,
+        "scrape_id": null,
+        "source_kind": "NO_OFFICIAL_CONFERENCE_TABLE_RECOVERED",
+        "retrieved_no_later_than_utc": "2026-10-31T03:55:11.499Z",
+        "rows": [],
+        "game_day_not_yet_published": null
+      },
+      "personnel_analysis": "Published Oct30 preview identifies CSU QB Hauss Hejny returning after hamstring absence, WR RJ Vick expected probable, Utah State QB Grady Brosterhous; official conference availability not recovered. Frozen Utah State home margin -4.687 reverses to refreshed +6.390, public Utah State -7.5; raw total rises 51.611 to 59.520 vs public 61.5.",
+      "public_market": {
+        "url": "https://sportsbook.fanduel.com/teams/college-football/colorado-state-rams/odds",
+        "scrape_id": "01a19018-1d17-777d-ac35-f88ad825830b",
+        "source_kind": "FANDUEL_PUBLIC_TEAM_PAGE_NOT_EXECUTABLE",
+        "retrieved_no_later_than_utc": "2026-10-31T03:54:23.861Z",
+        "operator_offer_updated_at": null,
+        "executable_venue_limit": null,
+        "quotes": {
+          "away_spread": {
+            "line": 7.5,
+            "american_price": -115
+          },
+          "home_spread": {
+            "line": -7.5,
+            "american_price": -105
+          },
+          "away_ml": {
+            "american_price": 235
+          },
+          "home_ml": {
+            "american_price": -295
+          },
+          "over_total": {
+            "line": 61.5,
+            "american_price": -115
+          },
+          "under_total": {
+            "line": 61.5,
+            "american_price": -105
+          }
+        }
+      },
+      "branches": [
+        {
+          "branch": "away_spread",
+          "public_quote": {
+            "line": 7.5,
+            "american_price": -115
+          },
+          "manual_reason": "CSU +7.5 versus refreshed Utah State +6.390 does not establish cover probability after CSU QB return and wide receiver news.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_spread",
+          "public_quote": {
+            "line": -7.5,
+            "american_price": -105
+          },
+          "manual_reason": "Utah State -7.5 contrasts with original CSU-favored frozen snapshot and near refreshed +6.390; personnel calibration incomplete.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "away_ml",
+          "public_quote": {
+            "american_price": 235
+          },
+          "manual_reason": "CSU +235 needs qualified adjusted win probability after material QB return.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "home_ml",
+          "public_quote": {
+            "american_price": -295
+          },
+          "manual_reason": "Utah State -295 cannot be approved from raw model win probability or current public odds alone.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "over_total",
+          "public_quote": {
+            "line": 61.5,
+            "american_price": -115
+          },
+          "manual_reason": "Over 61.5 exceeds raw frozen 51.611 and refreshed 59.520; no calibrated over edge.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        },
+        {
+          "branch": "under_total",
+          "public_quote": {
+            "line": 61.5,
+            "american_price": -105
+          },
+          "manual_reason": "Under 61.5 superficially exceeds refreshed total but QB return and volatility preclude raw numerical selection.",
+          "decision": "NOT_CERTIFIED_NO_APPROVAL"
+        }
+      ],
+      "packet_certification": "NOT_CERTIFIED",
+      "authentic_qualified_decision_row": "NOT_ISSUED",
+      "execution_venue_quote_limit": "NOT_VERIFIED",
+      "approved_bet": false,
+      "next_action": "Obtain qualified current calibrated Champion six-market decision and complete official material impact/venue verification before original practical cutoff; otherwise PASS/EXPIRE without hindsight."
+    }
+  ],
+  "attempt_ledger": [
+    {
+      "action": "Fresh-read R26 and independently re-scrape official Big12 and SEC player availability",
+      "outcome": "PASS; 63 exact player rows across 4 games plus CSU/Utah State personnel source carried from R26",
+      "blocker": "Game-day fields blank; team player impact not calibrated",
+      "next": "Recheck near practical cutoff and complete model-impact review"
+    },
+    {
+      "action": "Complete 5 distinct new cases, six manual branches each",
+      "outcome": "30 evidence-backed NOT_CERTIFIED_NO_APPROVAL preflights",
+      "blocker": "No authentic calibrated current decision rows, no venue offers/limits",
+      "next": "Advance next unreviewed cases and continue before cutoff"
+    },
+    {
+      "action": "Guarded publication",
+      "outcome": "NOT_ATTEMPTED",
+      "blocker": "56 genuine current rows and all contract gates not met",
+      "next": "Only after all required gates pass"
+    }
+  ]
+}
