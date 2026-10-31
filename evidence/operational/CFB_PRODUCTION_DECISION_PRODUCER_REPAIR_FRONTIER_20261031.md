@@ -1,0 +1,19 @@
+# CFB production decision-producer repair frontier — 2026-10-31
+Status: DIAGNOSED / REPAIR OPEN; NOT DEMONSTRATED, NOT CLOSED. Scope: production reliability only. No Champion, line, price, bet, task or scheduler changes.
+
+## Verified last-good to first-bad
+- Last-good: evidence/run_receipts/CFB_MARKET_MONITOR_20261030T010121Z_RUN_CLOSURE.md documents USER_DIRECTED_MANUAL_MONITOR_CONTINUATION, authentic authored comparative 56-row review, 35 future cases / 210 branches, 32 PASS, two new CONDITIONAL and one retained CONDITIONAL, guarded publication and independent readback, selected 45-step CI.
+- First-bad: evidence/run_receipts/CFB_WEEK9_R24_MANUAL_PRODUCER_DEPENDENCY_AND_35_CASE_GATE_20261031_RUN_CLOSURE.md identifies missing genuinely current independently authored 56 decision rows and 35 prospective packet certifications. R60 closes ten-case review with zero qualified bets, 54 BLOCKED, six CLOSED_EXPIRED; this is not a producer-path repair.
+- scripts/cfb_week9_publication.py compile(..., decision_rows) consumes caller-authored decisions; it does not generate calibrated market probabilities or new manual decisions. Therefore missing automated selector is NOT a demonstrated compiler defect. Do not fabricate one or weaken publication gates.
+
+## Smallest repair sequence / acceptance criteria
+1. Trace the natural Market Monitor task prompt and scheduled execution through source acquisition -> authoritative Champion input -> current six-market manual review -> authored decision_rows -> 35 packet certifications -> guarded publication. Identify the exact first missing producer output with immutable evidence; distinguish scheduler launch from work completed.
+2. Recover and reuse the last-good governed manual producer recipe. Specify who/what authors decision_rows on a scheduled invocation; if scheduled environment cannot perform this manual authoring, classify as architectural orchestration gap, not a market-source failure. Do not represent an instruction to 'review' as proof of actual decisions.
+3. For a non-expired controlled case, run a bounded natural-producer demonstration with authenticated current inputs. Record genuine six-branch decisions or precise evidence-constrained WAIT. Do not retroactively approve elapsed cases or treat BLOCKED as PASS.
+4. Only after the case producer succeeds, demonstrate integration for a complete authorized 56-row current packet and 35/35 case certifications; fresh CBS source <=900 seconds at compile boundary, selected CI, independent GitHub readback. No partial canonical Hot Sheet publication.
+5. Acceptance stages per Routine v5.1-C: CORRECTED -> PERSISTED -> READ_BACK -> DEMONSTRATED -> INDEPENDENTLY_RECONCILED -> CLOSED. A receipt or readback alone is not proof of repair. Track exact missing stage and natural trigger in existing Health/QA; do not create a fifth task.
+
+## Current blockers and next entry point
+- Root-cause candidate: missing current manual decision authoring during natural scheduled execution; verify exact task prompt/execution and first absent artifact before mutating.
+- Secondary independent constraints: material-player certifications, calibrated price-specific probability/edge and executable venue offer/update time/limit. Do not conflate with scheduler or compiler defects.
+- Next action: inspect existing Market Monitor schedule/prompt and recent natural execution records, then implement the smallest proven producer/orchestration correction; test and independently reconcile. Protect four standing tasks and existing production governance.
