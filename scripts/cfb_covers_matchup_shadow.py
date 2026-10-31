@@ -19,9 +19,9 @@ def discover_dated_matchups(markdown):
     """Discover only dated Nov 6/7 rows, not sidebar or unrelated weeks."""
     found = {}
     for line in markdown.splitlines():
-        if not re.match(r"^\\| Nov [67],", line):
+        if not re.match(r"^\| Nov [67],", line):
             continue
-        match = re.search(r"/matchup/(\\d+)", line)
+        match = re.search(r"/matchup/(\d+)", line)
         if match:
             found[match.group(1)] = {
                 "matchup_id": match.group(1),
