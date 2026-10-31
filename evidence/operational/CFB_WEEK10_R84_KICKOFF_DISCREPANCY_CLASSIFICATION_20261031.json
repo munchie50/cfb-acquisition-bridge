@@ -1,0 +1,54 @@
+{
+  "schema": "CFB_WEEK10_R84_KICKOFF_DISCREPANCY_CLASSIFICATION",
+  "prior_audit_blob": "4d3043d5e71f6d420a942714478157d9c7aba5db",
+  "counts": {
+    "previously_matching": 46,
+    "newly_matching": 7,
+    "total_matching": 53,
+    "remaining_disagreements": 10,
+    "unmatched": 0,
+    "cohort": 63
+  },
+  "game_specific_evidence": [
+    {
+      "game_id": "401858511",
+      "teams": [
+        "Michigan Wolverines",
+        "Michigan State Spartans"
+      ],
+      "espn_date": "2026-11-07T05:00Z",
+      "espn_status_detail": "11/7 - TBD",
+      "scrape_id": "01a19455-175b-72d1-8ff8-de5922de3048"
+    },
+    {
+      "game_id": "401858517",
+      "teams": [
+        "Wisconsin Badgers",
+        "Rutgers Scarlet Knights"
+      ],
+      "espn_date": "2026-11-07T17:30Z",
+      "espn_status_detail": "Sat, November 7th at 12:30 PM EST",
+      "scrape_id": "01a19455-16af-7176-b2e9-7954501c7614"
+    }
+  ],
+  "classification": {
+    "unconfirmed_05_00_utc_placeholders": [
+      "401858511",
+      "401856853",
+      "401856851",
+      "401856850",
+      "401856854",
+      "401858512",
+      "401858513",
+      "401856856",
+      "401858516"
+    ],
+    "confirmed_source_disagreement_30_minutes": [
+      "401858517"
+    ]
+  },
+  "interpretation": "Game-specific ESPN header for Michigan State at Michigan explicitly says TBD at 05:00Z; other 05:00Z records remain suspect pending per-game confirmation. Rutgers at Wisconsin ESPN 12:30pm EST versus CBS 1:00pm display requires authoritative resolution; no auto override.",
+  "kickoff_verification_complete": false,
+  "market_coverage_changed": false,
+  "publication_authorized": false
+}
