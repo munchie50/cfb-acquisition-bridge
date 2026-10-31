@@ -16,6 +16,8 @@ def inspect(markdown, source_url):
     table = section[1].split("\n\nMargin:", 1)[0]
     rows = re.findall(r"^\| (.+?) \| (.+?) \| (.+?) \|$", table, re.M)
     observations = {}
+    if not rows:
+        raise ValueError("no game lines table rows")
     for market, best, book in rows:
         link = re.search(r"history\?m=(ml|spread|total)&s=(away|home|over|under)", market)
         if not link:
