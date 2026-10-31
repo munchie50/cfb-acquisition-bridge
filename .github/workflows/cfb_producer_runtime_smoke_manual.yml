@@ -1,0 +1,45 @@
+name: CFB producer runtime smoke (read-only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: cfb-producer-runtime-smoke
+  cancel-in-progress: false
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate Python runtime and governed files
+        shell: bash
+        run: |
+          set -euo pipefail
+          python --version
+          python - <<'PY'
+          from pathlib import Path
+          import ast, json, subprocess
+          required = [
+            "scripts/cfb_runtime_checkout.py",
+            "scripts/cfb_week9_publication.py",
+            "scripts/cfb_neutral_publication_gate.py",
+            "scripts/cfb_hot_sheet_readiness.py",
+            "scripts/cfb_recovery_consumer_preflight.py",
+            "qa/cfb_run_failure_classifier_readonly.py",
+          ]
+          for name in required:
+              ast.parse(Path(name).read_text(), filename=name)
+          head = subprocess.check_output(["git","rev-parse","HEAD"], text=True).strip()
+          print(json.dumps({"status":"RUNTIME_SYNTAX_SMOKE_ONLY","head":head,
+                            "files_checked":required,
+                            "scope":"No source collection, decision authoring, publication, or scheduler acceptance"}))
+          PY
+      - name: Run isolated failure classifier regression
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd qa
+          python -m unittest -v test_cfb_run_failure_classifier_readonly.py
