@@ -7,7 +7,7 @@ def discover(markdown, unpriced_queue, day="2026-11-07"):
     if day not in ("2026-11-03", "2026-11-04", "2026-11-06", "2026-11-07"):
         raise ValueError("unsupported Week10 day")
     slugs = set(re.findall(r"https://betsharp\.com/ncaaf/game/("+re.escape(day)+r"-[a-z0-9-]+)", markdown))
-    if len(slugs) != len(set(slugs)):\n        raise ValueError("duplicate discovery identity")\n    targets = []
+    targets = []
     for row in unpriced_queue:
         # Discovery evidence is not an identity join; requires separate canonical validation.
         targets.append({"game_id": row["game_id"], "away_team": row["away_team"],
