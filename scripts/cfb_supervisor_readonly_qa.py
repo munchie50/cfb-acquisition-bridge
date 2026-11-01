@@ -10,7 +10,12 @@ def classify(record, now, start_grace=300, finish_grace=900):
     start=record.get("started_at")
     end=record.get("completed_at")
     status=(record.get("recorded_status") or "").lower()
-    artifact=record.get("producer_artifact_verified",False)
+    run_id=record.get("id")
+    linked=(bool(run_id) and record.get("authority_read_verified") is True
+            and record.get("startup_run_id")==run_id
+            and record.get("closure_run_id")==run_id
+            and record.get("readback_run_id")==run_id
+            and record.get("qualified_publication") is True)
     if not start:
         return "MISSING_START" if now >= due+dt.timedelta(seconds=start_grace) else "PENDING"
     began=dt.datetime.fromisoformat(start.replace("Z","+00:00"))
@@ -20,7 +25,7 @@ def classify(record, now, start_grace=300, finish_grace=900):
         return "RUN_FAILURE"
     if status not in ("completed","success","passed"):
         return "UNKNOWN_STATUS"
-    return "VERIFIED_PASS" if artifact else "PRODUCER_UNVERIFIED"
+    return "VERIFIED_PASS" if linked else "PRODUCER_UNVERIFIED"
 
 def main():
     p=argparse.ArgumentParser()
