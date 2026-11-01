@@ -13,6 +13,19 @@ class ClassifierTests(unittest.TestCase):
     def test_completed_without_producer(self):
         self.assertEqual(classify(dict(BASE,started_at="2026-10-30T15:15:44Z",completed_at="2026-10-30T15:20:00Z",recorded_status="completed"),NOW),"PRODUCER_UNVERIFIED")
     def test_verified_pass(self):
-        self.assertEqual(classify(dict(BASE,started_at="2026-10-30T15:15:44Z",completed_at="2026-10-30T15:20:00Z",recorded_status="completed",producer_artifact_verified=True),NOW),"VERIFIED_PASS")
+        self.assertEqual(classify(dict(BASE,started_at="2026-10-30T15:15:44Z",completed_at="2026-10-30T15:20:00Z",recorded_status="completed",authority_read_verified=True,startup_run_id="test",closure_run_id="test",readback_run_id="test",qualified_publication=True),NOW),"VERIFIED_PASS")
+    def test_legacy_boolean_cannot_pass(self):
+        r=dict(BASE,started_at="2026-10-30T15:15:44Z",completed_at="2026-10-30T15:20:00Z",recorded_status="completed",producer_artifact_verified=True)
+        self.assertEqual(classify(r,NOW),"PRODUCER_UNVERIFIED")
+    def test_cross_run_receipts_cannot_pass(self):
+        good=dict(BASE,started_at="2026-10-30T15:15:44Z",completed_at="2026-10-30T15:20:00Z",recorded_status="completed",authority_read_verified=True,startup_run_id="test",closure_run_id="test",readback_run_id="test",qualified_publication=True)
+        for field in ("startup_run_id","closure_run_id","readback_run_id"):
+            self.assertEqual(classify(dict(good,**{field:"other-run"}),NOW),"PRODUCER_UNVERIFIED")
+        for field in ("authority_read_verified","qualified_publication"):
+            self.assertEqual(classify(dict(good,**{field:False}),NOW),"PRODUCER_UNVERIFIED")
+    def test_failure_overrides_complete_receipts(self):
+        good=dict(BASE,started_at="2026-10-30T15:15:44Z",completed_at="2026-10-30T15:20:00Z",authority_read_verified=True,startup_run_id="test",closure_run_id="test",readback_run_id="test",qualified_publication=True)
+        for status in ("failed","no_update","cancelled"):
+            self.assertEqual(classify(dict(good,recorded_status=status),NOW),"RUN_FAILURE")
 if __name__=="__main__":
     unittest.main()
