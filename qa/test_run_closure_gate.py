@@ -107,6 +107,16 @@ class ClosureGateTests(unittest.TestCase):
         self.assertEqual(classify_legacy_closure(closure, independently_verified_blobs={
             "CFB_MARKET_MONITOR_STATE.md": "0" * 40}), "ACCEPTANCE_PENDING")
 
+    def test_legacy_requires_all_declared_artifacts(self):
+        closure = ("TERMINAL_STATE: RUN_PASS\n"
+                   "Independent post-write readback completed after all run artifacts were persisted.\n"
+                   "- A.md blob " + "a" * 40 + " — PASS\n"
+                   "- B.md blob " + "b" * 40 + " — PASS")
+        self.assertEqual(classify_legacy_closure(closure, independently_verified_blobs={
+            "A.md": "a" * 40}), "ACCEPTANCE_PENDING")
+        self.assertEqual(classify_legacy_closure(closure, independently_verified_blobs={
+            "A.md": "a" * 40, "B.md": "0" * 40}), "ACCEPTANCE_PENDING")
+
     def test_prose_mention_of_run_pass_rejected(self):
         self.assertEqual(classify_receipt("Historical RUN_PASS claim was invalid", run_id="x"),
                          "NOT_CLAIMED_PASS")
