@@ -1,8 +1,31 @@
 """Fail-closed gate for R91 displayed odds; no betting decisions are emitted."""
 import json
 import sys
+from datetime import datetime, timezone
 
 BRANCHES = ("away_spread", "home_spread", "away_ml", "home_ml", "over_total", "under_total")
+
+
+def _verified_offer(proof):
+    """Require independently attested quote evidence; never trust display timestamps."""
+    if not isinstance(proof, dict):
+        return False
+    if proof.get("verification_status") != "INDEPENDENTLY_VERIFIED":
+        return False
+    if not proof.get("evidence_url") or not proof.get("evidence_sha256"):
+        return False
+    sha = proof["evidence_sha256"]
+    if not isinstance(sha, str) or len(sha) != 64 or any(ch not in "0123456789abcdef" for ch in sha):
+        return False
+    try:
+        clock = datetime.fromisoformat(proof["offer_updated_at_utc"].replace("Z", "+00:00"))
+        if clock.tzinfo is None or clock.utcoffset().total_seconds() != 0:
+            return False
+        if clock > datetime.now(timezone.utc):
+            return False
+    except (KeyError, TypeError, ValueError, AttributeError):
+        return False
+    return True
 
 
 def qualify(inventory, quote_evidence=None):
@@ -31,6 +54,7 @@ def qualify(inventory, quote_evidence=None):
                      and all(proof.get(k) is not None for k in required)
                      and bool(proof.get("operator")) and bool(proof.get("venue"))
                      and proof.get("venue_executable") is True
+                     and _verified_offer(proof)
                      and proof.get("price") == display.get("price")
                      and (branch.endswith("_ml") or proof.get("line") == display.get("line")))
             result.append({"game_id": gid, "branch": branch,
