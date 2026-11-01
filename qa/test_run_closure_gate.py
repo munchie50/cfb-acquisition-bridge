@@ -69,9 +69,9 @@ class ClosureGateTests(unittest.TestCase):
                          closure_text=self.good, verified_artifacts=self.artifacts), "ACCEPTANCE_PENDING")
 
     def test_real_legacy_closure_requires_separate_compatibility_adapter(self):
-        legacy = ("# CFB Run Closure — 2026-09-29 20:20 CT — MANUAL MARKET MONITOR RESET\\n"
-                  "TERMINAL_STATE: RUN_PASS\\n"
-                  "Independent post-write readback completed after all run artifacts were persisted.\\n"
+        legacy = ("# CFB Run Closure — 2026-09-29 20:20 CT — MANUAL MARKET MONITOR RESET\n"
+                  "TERMINAL_STATE: RUN_PASS\n"
+                  "Independent post-write readback completed after all run artifacts were persisted.\n"
                   "Readback proof: CFB_MARKET_MONITOR_STATE.md blob f0e56a83cf394e0dd9209961b457eb3eeea2647e — PASS")
         # A genuine older closure must not be silently misclassified as conforming
         # to the newer run_id schema. Historical compatibility needs explicit
