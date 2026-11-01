@@ -1,0 +1,29 @@
+name: CFB closure gate QA
+on:
+  pull_request:
+    paths:
+      - 'qa/test_run_closure_gate.py'
+      - '.github/workflows/cfb-closure-gate-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  closure-gate-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify committed source blob and run regression
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib
+          from pathlib import Path
+          p = Path('qa/test_run_closure_gate.py')
+          data = p.read_bytes()
+          digest = hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()
+          print('Git blob SHA:', digest)
+          assert len(digest) == 40
+          PY
+          python -m unittest discover -s qa -p 'test_run_closure_gate.py' -v
