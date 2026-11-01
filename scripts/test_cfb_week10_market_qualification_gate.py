@@ -21,7 +21,7 @@ class MarketGateTest(unittest.TestCase):
     def test_exact_offer_qualifies_market_only(self):
         gid = str(401800000)
         quote = {gid: {"away_spread": {"operator": "Book A", "offer_updated_at_utc": "2026-11-02T15:00:00Z",
-                                         "venue": "Verified sportsbook", "venue_executable": True, "line": 7.5, "price": -110}}}
+                                         "venue": "Verified sportsbook", "venue_executable": True, "line": 7.5, "price": -110,\n                                         "verification_status": "INDEPENDENTLY_VERIFIED",\n                                         "evidence_url": "https://example.org/verified-quote", "evidence_sha256": "a" * 64}}}
         result = qualify(inventory(), quote)
         self.assertEqual(result["counts"], {"branches": 378, "qualified": 1, "wait": 377})
         self.assertFalse(result["rows"][0]["decision_authorized"])
@@ -41,6 +41,27 @@ class MarketGateTest(unittest.TestCase):
         proof = {"operator": "Book A", "offer_updated_at_utc": "2026-11-02T15:00:00Z",
                  "venue": "Verified sportsbook", "venue_executable": True, "line": 7.5, "price": -110}
         self.assertEqual(qualify(source, {str(401800000): {"away_spread": proof}})["counts"]["qualified"], 0)
+
+    def test_unverified_clock_or_evidence_rejected(self):
+        gid = str(401800000)
+        proof = {"operator": "Book A", "offer_updated_at_utc": "not-a-date",
+                 "venue": "Verified sportsbook", "venue_executable": True,
+                 "line": 7.5, "price": -110, "verification_status": "INDEPENDENTLY_VERIFIED",
+                 "evidence_url": "https://example.org/quote", "evidence_sha256": "a" * 64}
+        for bad in ("not-a-date", "2026-11-02T15:00:00", "2099-11-02T15:00:00Z"):
+            proof["offer_updated_at_utc"] = bad
+            self.assertEqual(qualify(inventory(), {gid: {"away_spread": proof}})["counts"]["qualified"], 0)
+        proof["offer_updated_at_utc"] = "2026-11-01T15:00:00Z"
+        del proof["evidence_sha256"]
+        self.assertEqual(qualify(inventory(), {gid: {"away_spread": proof}})["counts"]["qualified"], 0)
+
+    def test_unauthenticated_venue_flag_rejected(self):
+        gid = str(401800000)
+        proof = {"operator": "Book A", "offer_updated_at_utc": "2026-11-01T15:00:00Z",
+                 "venue": "Verified sportsbook", "venue_executable": True,
+                 "line": 7.5, "price": -110, "evidence_url": "https://example.org/quote",
+                 "evidence_sha256": "a" * 64}
+        self.assertEqual(qualify(inventory(), {gid: {"away_spread": proof}})["counts"]["qualified"], 0)
 
     def test_duplicate_games_rejected(self):
         source = inventory()
