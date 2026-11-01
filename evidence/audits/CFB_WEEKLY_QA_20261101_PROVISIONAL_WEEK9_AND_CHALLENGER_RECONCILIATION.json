@@ -1,0 +1,77 @@
+{
+  "schema": "CFB_WEEKLY_QA_20261101_PROVISIONAL_WEEK9_AND_CHALLENGER_RECONCILIATION",
+  "status": "VERIFIED_SAVED_SOURCE_ARITHMETIC_ONLY_NOT_FULL_WEEK9_ACCEPTANCE",
+  "recorded_utc": "2026-11-01T16:47:41.861Z",
+  "mode": "SUNDAY_REBUILT_WEEKLY_QA",
+  "sources": {
+    "week9_outcome_join": {
+      "path": "evidence/operational/CFB_WEEK9_R79_FROZEN_COHORT_INCREMENTAL_OUTCOME_JOIN_20261031.json",
+      "blob": "a9d7a50efad4d11364fb7893218055ee7e42b6e6"
+    },
+    "week9_structural_audit": {
+      "path": "evidence/operational/CFB_WEEK9_R80_INDEPENDENT_FROZEN_OUTCOME_INVARIANT_AUDIT_20261031.json",
+      "blob": "d4f00c081e2594d7bde8d06aec8ea9d6cc13e338"
+    },
+    "week8_s2_comparison": {
+      "path": "evidence/audits/CFB_S2_WEEK8_OUTCOME_COMPARISON_20261025.json",
+      "blob": "9c09ad0d82121c1b64db34c7ba2459e36445ba66"
+    },
+    "action_register": {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "blob": "d9617923584fa9a480feb364c903ba83a1f1297f"
+    }
+  },
+  "week9": {
+    "original_total": 56,
+    "original_modeled": 45,
+    "original_excluded": 11,
+    "source_observed_final": 41,
+    "source_pending": 15,
+    "modeled_final": 32,
+    "excluded_final": 9,
+    "provisional_metrics": {
+      "direction_correct": 20,
+      "direction_denominator": 32,
+      "margin_mae": 15.141795518584827,
+      "total_mae": 12.139625895642752,
+      "home_win_brier": 0.22433595864742642
+    },
+    "source_classes": {
+      "official_tuesday": 2,
+      "espn_final": 18,
+      "espn_r78_unverified": 12
+    },
+    "independent_official_full_cohort_verified": false,
+    "canonical_scorecard_complete": false,
+    "week9_user_execution_reconciled": false
+  },
+  "week8_challenger": {
+    "matched_games": 44,
+    "all_depth_5_plus": true,
+    "S0": {
+      "margin_mae": 10.682253192924511,
+      "total_mae": 15.393091392441118,
+      "brier": 0.20043932588625,
+      "direction_correct": 30
+    },
+    "S2_K1": {
+      "margin_mae": 11.628763537395024,
+      "total_mae": 15.760982186014074,
+      "brier": 0.2224376932119526,
+      "direction_correct": 29
+    },
+    "disposition": "MORE_EVIDENCE_CONTINUE_IN_QA_NO_PROMOTION"
+  },
+  "completed_historical_baseline": {
+    "weeks": "4-8",
+    "n": 249,
+    "direction_correct": 153,
+    "margin_mae": 14.006623340516,
+    "total_mae": 13.190502012127,
+    "brier": 0.239225353872
+  },
+  "weekly_qa_status": "RUN_INCOMPLETE",
+  "champion_mutated": false,
+  "market_or_hot_sheet_mutated": false,
+  "execution_or_money_mutated": false
+}
