@@ -248,3 +248,21 @@ Friday batch: `0 WIN / 2 LOSS / 0 PUSH`, `$8.00` graded stake, `$0.00` result re
 
 **Saturday batch:** `5 WIN / 1 LOSS / 0 PUSH`, `$28.00` graded stake, `$43.75` printed result return, `+$15.75` result net. **Complete October 23 Week 8 batch:** `5 WIN / 3 LOSS / 0 PUSH`, `$36.00` stake, `$43.75` printed result return, `+$7.75` result net. All eight are now final-score graded; sportsbook settlement/payment remains unverified. The `$61.30` prior pot snapshot is not recomputed without verified book payment/current voucher balance. Production versus `$20` sandbox remains `UNASSIGNED`; no sandbox execution is inferred. Frozen predictions and original recommendation limits remain unchanged.
 
+
+
+## Week 9 October 31 actual user-confirmed ticket intake and independent final-score grades — November 1
+
+**Run:** CFB_WEEKLY_QA_MANUAL_20261101T174443981Z. **Evidence:** `evidence/operational/CFB_WEEK9_OCT31_EIGHT_TICKET_SCORE_GRADE_20261101.json` / blob `1e197e6c8f88b26e2ce4ea4895802d3a1c141e93`, independently read back; existing canonical `CFB_MONEY_LEDGER.md` October31 user-confirmed photograph-derived ticket inventory and $69.05 holdings snapshot. Eight tickets are **ACTUAL REAL MONEY** by user confirmation; original ticket image IDs/barcodes and precise printed execution clocks are not available in this QA runtime. No historical timestamps, wager attribution, or sandbox allocation invented. Ticket issue date is October31, 2026; production/sandbox = UNASSIGNED. All final-score grades are supported by independently verified official athletics results, **not sportsbook settlement, redemption, paid return or cash movement**.
+
+| Execution ID | Game ID | Selection / market | Accepted number | Odds | Stake | Official final (away-home) | Score grade | Book settlement |
+|---|---|---|---:|---:|---:|---|---|---|
+| CFB_OCT31-01 | 401858509 | OVER | 51 | -110 | $3.00 | 18-30 | LOSS | UNVERIFIED |
+| CFB_OCT31-02 | 401858503 | MARYLAND_SPREAD | 2.5 | -105 | $3.00 | 20-17 | LOSS | UNVERIFIED |
+| CFB_OCT31-03 | 401856734 | OVER | 56.5 | -105 | $3.00 | 8-27 | LOSS | UNVERIFIED |
+| CFB_OCT31-04 | 401858506 | PENN_STATE_SPREAD | -10.5 | -109 | $5.00 | 17-31 | WIN | UNVERIFIED |
+| CFB_OCT31-05 | 401858502 | IOWA_SPREAD | -2.5 | -110 | $5.00 | 0-30 | WIN | UNVERIFIED |
+| CFB_OCT31-06 | 401856733 | MISSOURI_SPREAD | -10 | -108 | $5.00 | 34-10 | WIN | UNVERIFIED |
+| CFB_OCT31-07 | 401861966 | AIR_FORCE_MONEYLINE | ML | -108 | $3.00 | 26-35 | WIN | UNVERIFIED |
+| CFB_OCT31-08 | 401856847 | IOWA_STATE_SPREAD | 9.5 | -105 | $3.00 | 49-51 | WIN | UNVERIFIED |
+
+**Batch:** 8 distinct confirmed actual tickets; 5 score-graded WIN, 3 LOSS, 0 PUSH; $30.00 stake. Hypothetical odds-derived full-game return $40.40 and net $10.40 **only if settled at listed odds without adjustments**; not a printed sportsbook payout, confirmed settlement, profit booking, or voucher change. Earlier 32 established tickets/$123.50 cumulative stake + these eight/$30.00 = **40 recorded distinct actual tickets / $153.50 cumulative historical stakes** at this inventory boundary; historical totals are not a current cash balance or complete lifetime record beyond established evidence. The canonical money ledger already contains the October31 user-confirmed snapshot **$25.30 + $13.75 vouchers + $30.00 open tickets = $69.05 holdings at cost**, not another deposit/withdrawal and not recalculated from the final-score grades. Original image identifiers, exact issue clocks, sportsbook settlement, cash collection, production versus $20 sandbox, and any unrecorded intervening movements remain UNVERIFIED. Do not rebook the $20 funding or infer a $25.30 withdrawal. Frozen model predictions, pregame recommendations, market/decision state and bankroll allocation unchanged.
