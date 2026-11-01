@@ -1,6 +1,6 @@
 # CFB supervisor QA regression reconciliation — 2026-10-31
 
-Status: QA EXACT-SOURCE REPRODUCED / INDEPENDENT GITHUB READBACK PENDING; NOT PRODUCTION RECOVERY
+Status: QA EXACT-SOURCE TESTED AND READ BACK / NOT PRODUCTION RECOVERY
 Branch: qa/monitor-no-update-investigation-20261030
 
 ## Exact source under test
