@@ -15,5 +15,8 @@ jobs:
     timeout-minutes: 3
     steps:
       - uses: actions/checkout@v4
-      - name: Run five no-network fixture tests
-        run: python3 -m unittest discover -s scripts -p 'test_cfb_supervisor_readonly_qa.py' -v
+      - name: Verify source, compile and run nine no-network fixture tests
+        run: |
+          git hash-object scripts/cfb_supervisor_readonly_qa.py scripts/test_cfb_supervisor_readonly_qa.py
+          python3 -m py_compile scripts/cfb_supervisor_readonly_qa.py scripts/test_cfb_supervisor_readonly_qa.py
+          python3 -m unittest discover -s scripts -p 'test_cfb_supervisor_readonly_qa.py' -v
