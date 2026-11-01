@@ -476,3 +476,30 @@ The separate execution ledger grades two established Friday tickets from the sam
 **Tuesday modeled summary:** `2/2` eligible rows matched; unresolved eligible joins `0`; SU direction `1/2 (50.0%)`; margin MAE `20.83`; total MAE `13.89`.
 
 No Week 9 established wager existed for either game, so the execution ledger has no settlement entry. This descriptive scoring append is downstream outcome evidence only and does not alter Champion, FIRST_FROZEN, accepted REFRESH, Challenger, TIME-HIDDEN, market or decision state.
+
+
+## Week 9 remaining 15 official final results — independent Sunday verification 2026-11-01
+
+**Run:** CFB_WEEKLY_QA_MANUAL_20261101T174443981Z. **Source evidence:** `evidence/operational/CFB_WEEK9_OFFICIAL_PENDING15_FINALS_VERIFICATION_20261101.json` / Git blob `f59aa77a585853cbf4e2a6a2e8e1721c9da75c70`. Exact game-ID, home/away, original cutoff, original prediction strings and exclusion checks passed against accepted original artifact 10897612260 / `CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json`. The 15 were PENDING in October31 R79; each final is independently supported by a dated official athletics postgame report or official team score page, not inferred from ESPN. Retrieval/verification on 2026-11-01; exact per-source fetch clock not supplied. This appends only outcomes, never changes frozen predictions or earlier Tuesday rows.
+
+| Game ID | Game (away @ home) | Frozen home margin | Frozen total | Frozen home p | Final away-home | Actual home margin | Actual total | Margin error | Total error | SU correct | Official source |
+|---|---|---:|---:|---:|---|---:|---:|---:|---:|---:|---|
+| 401856733 | Missouri @ Arkansas | -13.1447 | 48.4571 | 0.2203 | 34-10 | -24 | 44 | -10.8553 | -4.4571 | 1 | [official](https://arkansasrazorbacks.com/hogs-fall-to-tigers-in-battle-line-rivalry/) |
+| 401856736 | South Carolina @ Oklahoma | 1.9976 | 46.0376 | 0.5441 | 42-25 | -17 | 67 | -18.9976 | 20.9624 | 0 | [official](https://soonersports.com/news/2026/10/31/football-sooners-fall-to-south-carolina) |
+| 401856737 | Mississippi State @ Texas | -0.1793 | 55.7939 | 0.5259 | 3-31 | 28 | 34 | 28.1793 | -21.7939 | 0 | [official](https://texaslonghorns.com/news/2026/10/31/no-11-11-football-downs-mississippi-state-31-3) |
+| 401856847 | Oklahoma State @ Iowa State | 5.8382 | 47.0539 | 0.6443 | 49-51 | 2 | 100 | -3.8382 | 52.9461 | 1 | [official](https://cyclones.com/sports/football/stats/2026/-24-oklahoma-state/boxscore/18599) |
+| 401858280 | Clemson @ Florida State | EXCLUDED | EXCLUDED | EXCLUDED | 36-24 | -12 | 60 | EXCLUDED | EXCLUDED | EXCLUDED | [official](https://seminoles.com/news/2026/10/31/football-seminoles-fall-to-clemson) |
+| 401858281 | Georgia Tech @ Pittsburgh | 12.3024 | 49.2962 | 0.7536 | 11-34 | 23 | 45 | 10.6976 | -4.2962 | 1 | [official](https://ramblinwreck.com/news/2026/11/1/fb-recap-pitt-26) |
+| 401858282 | Miami @ North Carolina | -8.0364 | 52.1259 | 0.3110 | 38-35 | -3 | 73 | 5.0364 | 20.8741 | 1 | [official](https://goheels.com/news/2026/10/31/football-fb-recap-vs-miami) |
+| 401858504 | Washington @ Nebraska | 12.6855 | 50.6162 | 0.7723 | 17-10 | -7 | 27 | -19.6855 | -23.6162 | 0 | [official](https://huskers.com/sports/football) |
+| 401858509 | Ohio State @ USC | -3.5107 | 58.1387 | 0.4104 | 18-30 | 12 | 48 | 15.5107 | -10.1387 | 0 | [official](https://usctrojans.com/news/2026/10/31/usc-trojans-football-game-recap-associated-press-ap-ohio-state-buckeyes-lincoln-riley-trent-mosley-mark-bowman) |
+| 401860924 | Oregon State @ Fresno State | 4.2658 | 53.2736 | 0.5758 | 22-38 | 16 | 60 | 11.7342 | 6.7264 | 1 | [official](https://gobulldogs.com/news/2026/10/31/football-bulldogs-spook-beavers-in-halloween-night-win) |
+| 401862814 | Army @ Memphis | EXCLUDED | EXCLUDED | EXCLUDED | 22-49 | 27 | 71 | EXCLUDED | EXCLUDED | EXCLUDED | [official](https://gotigersgo.com/news/2026/10/31/football-tigers-offensive-dominates-in-49-22-win-over-army) |
+| 401869846 | App State @ Georgia Southern | -1.2165 | 47.7357 | 0.4324 | 3-19 | 16 | 22 | 17.2165 | -25.7357 | 0 | [official](https://gseagles.com/news/2026/10/31/football-eagles-run-streak-against-app-to-four-in-19-3-win) |
+| 401860909 | Washington State @ San Diego State | 2.8554 | 45.0550 | 0.5698 | 20-26 | 6 | 46 | 3.1446 | 0.9450 | 1 | [official](https://goaztecs.com/news/2026/10/31/aztecs-hold-off-washington-state-for-halloween-victory) |
+| 401860908 | Texas State @ Boise State | 11.1863 | 62.0285 | 0.7837 | 45-46 | 1 | 91 | -10.1863 | 28.9715 | 1 | [official](https://broncosports.com/news/2026/11/1/football-no-20-22-broncos-prevail-in-after-dark-thriller) |
+| 401864530 | Northern Illinois @ UNLV | 9.1817 | 46.2942 | 0.6523 | 24-31 | 7 | 55 | -2.1817 | 8.7058 | 1 | [official](https://unlvrebels.com/news/2026/11/1/rebel-football-scares-up-halloween-win-over-niu) |
+
+**New official modeled rows:** 13/15; 2 original exclusions preserved. New subset SU direction 8/13, margin MAE 12.097225, total MAE 17.705327, home-win Brier 0.204016. These are subset diagnostics, not complete 45-game accepted metrics.
+
+**Official verification frontier:** 2 pre-existing official Tuesday rows + 15 new independently verified official rows = **17/56 officially qualified final scores** (15 modeled, 2 excluded). October31 R79 additionally contained 39 source-observed ESPN finals **not yet independently official-verified**; do not mislabel those as official, absent or pending live games. All 56 original identities have either an official result or a saved ESPN source-observed result after this capture, but **39 still require official independent corroboration and canonical append** before Week9 complete official acceptance. No user wager settlement, money movement, Champion promotion, current market decision or Hot Sheet is inferred.
