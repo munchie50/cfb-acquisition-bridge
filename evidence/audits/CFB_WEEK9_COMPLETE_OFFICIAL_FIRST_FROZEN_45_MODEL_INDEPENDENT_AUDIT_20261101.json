@@ -1,0 +1,106 @@
+{
+  "schema": "CFB_WEEK9_COMPLETE_OFFICIAL_ORIGINAL_COHORT_INDEPENDENT_NUMERICAL_AUDIT_V1",
+  "recorded_utc": "2026-11-01T17:48:40.474Z",
+  "run": "CFB_WEEKLY_QA_MANUAL_20261101T174443981Z",
+  "status": "INDEPENDENT_ORIGINAL_56_ID_OUTCOME_JOIN_AND_NUMERICAL_RECOMPUTATION_PASS",
+  "sources": [
+    {
+      "path": "evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json",
+      "sha": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK9_R79_FROZEN_COHORT_INCREMENTAL_OUTCOME_JOIN_20261031.json",
+      "sha": "a9d7a50efad4d11364fb7893218055ee7e42b6e6"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK9_OFFICIAL_PENDING15_FINALS_VERIFICATION_20261101.json",
+      "sha": "f59aa77a585853cbf4e2a6a2e8e1721c9da75c70"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK9_OFFICIAL_39_ESPN_FINALS_VERIFICATION_20261101.json",
+      "sha": "4aa121e3e475a3c6ef5bbb90ac1aea3090c3e1e3"
+    }
+  ],
+  "checks": {
+    "all_original_56_ids_unique": true,
+    "all_56_official_results_present": true,
+    "model_exclusion_partition": true,
+    "original_numeric_strings_used": true,
+    "original_prediction_bytes_not_mutated": true,
+    "exact_45_modeled_metrics_recomputed": true
+  },
+  "week9": {
+    "targets": 56,
+    "modeled": 45,
+    "excluded": 11,
+    "correct": 28,
+    "accuracy": 0.6222222222222222,
+    "margin_mae": 14.262253023612791,
+    "total_mae": 13.74749509683485,
+    "brier": 0.21846569064633645
+  },
+  "baseline_weeks4_8": {
+    "n": 249,
+    "correct": 153,
+    "mae": 14.006623340516,
+    "total_mae": 13.190502012127,
+    "brier": 0.239225353872
+  },
+  "pooled_weeks4_9": {
+    "n": 294,
+    "correct": 181,
+    "accuracy": 0.6156462585034014,
+    "margin_mae": 14.045750332826733,
+    "total_mae": 13.275756055704733,
+    "brier": 0.23604785439868411
+  },
+  "top_five_absolute_margin_errors": [
+    {
+      "game_id": "401858284",
+      "game": "Virginia @ Wake Forest",
+      "pred_margin": -5.690307368948456,
+      "actual_margin": 44,
+      "abs_margin_error": 49.69030736894845,
+      "abs_total_error": 3.4866011991074117,
+      "correct": false
+    },
+    {
+      "game_id": "401856844",
+      "game": "Baylor @ UCF",
+      "pred_margin": 4.539985769818523,
+      "actual_margin": -32,
+      "abs_margin_error": 36.53998576981852,
+      "abs_total_error": 1.510716460917358,
+      "correct": false
+    },
+    {
+      "game_id": "401858279",
+      "game": "Boston College @ Duke",
+      "pred_margin": 9.924307992400811,
+      "actual_margin": 45,
+      "abs_margin_error": 35.07569200759919,
+      "abs_total_error": 3.167658269194348,
+      "correct": true
+    },
+    {
+      "game_id": "401871072",
+      "game": "Sam Houston @ Missouri State",
+      "pred_margin": -10.06432554167998,
+      "actual_margin": 21,
+      "abs_margin_error": 31.064325541679978,
+      "abs_total_error": 23.420678114629858,
+      "correct": false
+    },
+    {
+      "game_id": "401856737",
+      "game": "Mississippi State @ Texas",
+      "pred_margin": -0.17926022771447103,
+      "actual_margin": 28,
+      "abs_margin_error": 28.179260227714472,
+      "abs_total_error": 21.79392191281385,
+      "correct": false
+    }
+  ],
+  "interpretation": "Week9 complete observed results, not proof of improved predictive edge; baseline cohorts differ; no model or wagering policy promotion; no ticket return/cash inferred",
+  "champion_mutated": false
+}
