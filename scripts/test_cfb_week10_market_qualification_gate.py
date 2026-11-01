@@ -20,7 +20,7 @@ class MarketGateTest(unittest.TestCase):
 
     def test_exact_offer_qualifies_market_only(self):
         gid = str(401800000)
-        quote = {gid: {"away_spread": {"operator": "Book A", "offer_updated_at_utc": "2026-11-02T15:00:00Z",
+        quote = {gid: {"away_spread": {"operator": "Book A", "offer_updated_at_utc": "2026-10-31T15:00:00Z",
                                          "venue": "Verified sportsbook", "venue_executable": True, "line": 7.5, "price": -110,
                                          "verification_status": "INDEPENDENTLY_VERIFIED",
                                          "evidence_url": "https://example.org/verified-quote", "evidence_sha256": "a" * 64}}}
