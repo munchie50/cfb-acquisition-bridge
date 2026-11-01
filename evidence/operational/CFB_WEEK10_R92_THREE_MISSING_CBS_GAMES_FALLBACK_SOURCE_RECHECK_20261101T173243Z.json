@@ -1,0 +1,73 @@
+{
+  "schema": "CFB_WEEK10_R92_THREE_MISSING_CBS_GAMES_FALLBACK_SOURCE_RECHECK",
+  "recorded_utc": "2026-11-01T17:33:08.800Z",
+  "scope": "SOURCE_OBSERVATION_ONLY_NOT_PRODUCTION_DECISION",
+  "parent_r91_blob": "abe0afe3f7e435875645d029faa57b7cdc7ddec0",
+  "source_retrieval_utc_range": [
+    "2026-11-01T17:32:43.917Z",
+    "2026-11-01T17:32:46.631Z"
+  ],
+  "rows": [
+    {
+      "game_id": "401856850",
+      "matchup": "UCF @ Kansas",
+      "source": "https://betsharp.com/ncaaf/game/2026-11-07-ucf-knights-at-kansas-jayhawks",
+      "source_type": "BOOK_ATTRIBUTED_DISPLAY_RETRIEVAL_ONLY",
+      "source_display_update_clock": "12:31 PM ET (date not independently attested)",
+      "source_display_kickoff": "Sat Nov 7 3:45 PM ET",
+      "source_six_branches_displayed": true,
+      "source_named_operators": [
+        "DraftKings",
+        "FanDuel",
+        "Kalshi"
+      ],
+      "source_observed_example": "UCF +2.5 +106 FanDuel; Kansas -2.5 -110 DraftKings; full table includes both moneylines and both totals",
+      "book_update_timestamp_verified": false,
+      "venue_execution_verified": false,
+      "champion_comparison_verified": false,
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858517",
+      "matchup": "Rutgers @ Wisconsin",
+      "source": "https://www.actionnetwork.com/ncaaf-game/rutgers-wisconsin-score-odds-november-7-2026/289842",
+      "source_type": "UNATTRIBUTED_DISPLAYED_FALLBACK",
+      "source_display_kickoff": "Sat Nov 7 4:15 PM (site timezone not independently certified)",
+      "source_six_branches_displayed": true,
+      "source_observed_example": "Rutgers +16 -111, over 46 -111, ML +547; Wisconsin -16 -109, under 46 -109, ML -784",
+      "book_operator_identified": false,
+      "book_update_timestamp_verified": false,
+      "venue_execution_verified": false,
+      "champion_comparison_verified": false,
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401864534",
+      "matchup": "N. Illinois @ San Jose St.",
+      "source": "https://www.actionnetwork.com/ncaaf-game/northern-illinois-san-jose-state-score-odds-november-7-2026/289879",
+      "source_type": "SOURCE_UNAVAILABLE",
+      "source_display_kickoff": "Sat Nov 7 4:00 PM (site timezone not independently certified)",
+      "source_six_branches_displayed": false,
+      "source_observed_example": "Both teams N/A for spread, total and moneyline",
+      "book_update_timestamp_verified": false,
+      "venue_execution_verified": false,
+      "champion_comparison_verified": false,
+      "decision_authorized": false
+    }
+  ],
+  "qualification": {
+    "source_retrieval_not_book_update": true,
+    "source_clocks_not_book_clocks": true,
+    "source_display_not_venue_offer": true,
+    "none_promoted_to_canonical_market": true,
+    "decision_rows_not_authored": true,
+    "publication_authorized": false
+  },
+  "counts": {
+    "r91_cbs_displayed": 60,
+    "r91_cbs_unavailable": 3,
+    "other_source_displayed_in_missing": 2,
+    "remaining_source_unavailable": 1,
+    "full_slate": 63
+  }
+}
