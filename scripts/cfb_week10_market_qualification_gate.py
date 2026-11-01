@@ -68,6 +68,8 @@ def qualify(inventory, quote_evidence=None):
 if __name__ == "__main__":
     with open(sys.argv[1], encoding="utf-8") as f:
         inventory = json.load(f)
-    with open(sys.argv[2], encoding="utf-8") as f:
-        quotes = json.load(f)
+    quotes = {}
+    if len(sys.argv) > 2:
+        with open(sys.argv[2], encoding="utf-8") as f:
+            quotes = json.load(f)
     print(json.dumps(qualify(inventory, quotes), indent=2))
