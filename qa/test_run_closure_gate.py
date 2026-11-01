@@ -1,40 +1,65 @@
-"""Regression checks for CFB terminal closure evidence. QA only; no production mutation."""
-from pathlib import Path
+"""QA-only evidence gate. Caller must supply independently verified artifacts."""
 import re
 import unittest
 
-ROOT = Path(__file__).resolve().parents[1]
-RECEIPTS = ROOT / "evidence" / "run_receipts"
-
-def classify_receipt(text: str, *, closure_text: str | None = None, surfaces_read_back: bool = False) -> str:
-    """Conservative evidence gate: never infer PASS from a receipt's own claim."""
-    if not re.search(r"\bRUN_PASS\b", text):
+def classify_receipt(receipt: str, *, run_id: str, closure_text: str | None = None,
+                     verified_artifacts: dict | None = None) -> str:
+    """Fail closed: text alone never proves persistence or production acceptance."""
+    if not re.search(r"\bRUN_PASS\b", receipt):
         return "NOT_CLAIMED_PASS"
-    if not surfaces_read_back:
+    if not run_id or not closure_text or not verified_artifacts:
         return "ACCEPTANCE_PENDING"
-    if closure_text is None:
+    if not re.search(r"\bRUN_CLOSURE\b", closure_text) or not re.search(r"\bRUN_PASS\b", closure_text):
         return "ACCEPTANCE_PENDING"
-    required = ("RUN_CLOSURE", "RUN_PASS", "readback")
-    if not all(token.lower() in closure_text.lower() for token in required):
+    # Require exact, separately labeled identity, not substring occurrence.
+    match = re.search(r"(?im)^run_id:\s*(\S+)\s*$", closure_text)
+    if not match or match.group(1) != run_id:
         return "ACCEPTANCE_PENDING"
-    return "PASS_EVIDENCE_PRESENT"
+    # A closure mentioning an unresolved proof is never acceptance.
+    if re.search(r"(?i)\b(?:pending|unverified|not read back|not verified|missing|failed)\b", closure_text):
+        return "ACCEPTANCE_PENDING"
+    # Evidence must come from caller's independent fetch/readback, not receipt assertions.
+    if not all(verified_artifacts.get(k) is True for k in ("canonical", "terminal_candidate", "closure")):
+        return "ACCEPTANCE_PENDING"
+    if not re.search(r"(?i)\bindependent(?:ly)?\s+read\s*back\b", closure_text):
+        return "ACCEPTANCE_PENDING"
+    return "EVIDENCE_GATE_PASSED_NOT_PRODUCTION_ACCEPTED"
 
 class ClosureGateTests(unittest.TestCase):
-    def test_historical_false_pass_is_not_accepted(self):
-        receipt = "RUN_PASS; Sunday Early Board pending; terminal receipt readback pending"
-        self.assertEqual(classify_receipt(receipt), "ACCEPTANCE_PENDING")
+    def setUp(self):
+        self.good = "RUN_CLOSURE\nrun_id: 20261031T120000Z\nRUN_PASS\nindependently read back"
+        self.artifacts = {"canonical": True, "terminal_candidate": True, "closure": True}
 
-    def test_startup_marker_is_not_completion(self):
-        self.assertEqual(classify_receipt("RUN_STARTED"), "NOT_CLAIMED_PASS")
+    def check(self, closure, artifacts=None, run_id="20261031T120000Z"):
+        return classify_receipt("RUN_PASS", run_id=run_id, closure_text=closure,
+                                verified_artifacts=self.artifacts if artifacts is None else artifacts)
 
-    def test_pass_claim_without_independent_closure_is_not_accepted(self):
-        self.assertEqual(classify_receipt("RUN_PASS", surfaces_read_back=True), "ACCEPTANCE_PENDING")
+    def test_historical_false_pass(self):
+        self.assertEqual(classify_receipt("RUN_PASS; Sunday Early Board pending; terminal receipt readback pending",
+                                          run_id="old"), "ACCEPTANCE_PENDING")
 
-    def test_incomplete_closure_is_not_accepted(self):
-        self.assertEqual(classify_receipt("RUN_PASS", closure_text="RUN_CLOSURE RUN_PASS", surfaces_read_back=True), "ACCEPTANCE_PENDING")
+    def test_start_only(self):
+        self.assertEqual(classify_receipt("RUN_STARTED", run_id="x"), "NOT_CLAIMED_PASS")
 
-    def test_minimal_positive_fixture(self):
-        self.assertEqual(classify_receipt("RUN_PASS", closure_text="RUN_CLOSURE RUN_PASS independent readback", surfaces_read_back=True), "PASS_EVIDENCE_PRESENT")
+    def test_no_closure(self):
+        self.assertEqual(self.check(None), "ACCEPTANCE_PENDING")
+
+    def test_pending_readback(self):
+        self.assertEqual(self.check(self.good + "\nterminal receipt readback pending"), "ACCEPTANCE_PENDING")
+
+    def test_wrong_run(self):
+        self.assertEqual(self.check(self.good, run_id="different"), "ACCEPTANCE_PENDING")
+
+    def test_missing_artifact(self):
+        a = dict(self.artifacts); a["terminal_candidate"] = False
+        self.assertEqual(self.check(self.good, artifacts=a), "ACCEPTANCE_PENDING")
+
+    def test_no_independent_readback(self):
+        self.assertEqual(self.check(self.good.replace("independently read back", "readback claimed")),
+                         "ACCEPTANCE_PENDING")
+
+    def test_positive_still_requires_production_reconciliation(self):
+        self.assertEqual(self.check(self.good), "EVIDENCE_GATE_PASSED_NOT_PRODUCTION_ACCEPTED")
 
 if __name__ == "__main__":
     unittest.main()
