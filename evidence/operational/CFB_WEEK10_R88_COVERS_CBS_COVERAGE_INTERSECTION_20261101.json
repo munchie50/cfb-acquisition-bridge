@@ -1,0 +1,175 @@
+{
+  "schema": "CFB_WEEK10_R88_COVERS_CBS_COVERAGE_INTERSECTION",
+  "recorded_utc": "2026-11-01T16:27:16.206Z",
+  "status": "SOURCE_IDENTITY_COVERAGE_ONLY",
+  "source_cbs_blob": "12d7f46a0c0e1656129320bdbd234647ab83bb55",
+  "source_espn_join_blob": "4618ed4052381613095f9486f729c6ebc14821a8",
+  "source_covers_r87_blob": "e54f7078d785f204cad09ecb53b49581f1e09cdf",
+  "method": "Parse all 63 CBS directed team pairs from source tables, uniquely exact-join each pair to ESPN/CBS 63-game directed identity table; join Covers R87 by canonical game ID. Price display determined by CBS table book Remove marker. No positional game joins.",
+  "counts": {
+    "total": 63,
+    "cbs_displayed": 17,
+    "cbs_unavailable": 46,
+    "covers_matched": 15,
+    "covers_on_cbs_unavailable": 1,
+    "covers_on_cbs_displayed": 14
+  },
+  "covers_rows": [
+    {
+      "canonical_game_id": "401866453",
+      "covers_matchup_id": "378682",
+      "cbs_price_display": "DISPLAYED_HISTORICAL_UNQUALIFIED",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    },
+    {
+      "canonical_game_id": "401866454",
+      "covers_matchup_id": "378681",
+      "cbs_price_display": "DISPLAYED_HISTORICAL_UNQUALIFIED",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    },
+    {
+      "canonical_game_id": "401866455",
+      "covers_matchup_id": "378683",
+      "cbs_price_display": "DISPLAYED_HISTORICAL_UNQUALIFIED",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    },
+    {
+      "canonical_game_id": "401866457",
+      "covers_matchup_id": "378684",
+      "cbs_price_display": "UNAVAILABLE",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    },
+    {
+      "canonical_game_id": "401866456",
+      "covers_matchup_id": "378685",
+      "cbs_price_display": "DISPLAYED_HISTORICAL_UNQUALIFIED",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    },
+    {
+      "canonical_game_id": "401858288",
+      "covers_matchup_id": "378718",
+      "cbs_price_display": "DISPLAYED_HISTORICAL_UNQUALIFIED",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    },
+    {
+      "canonical_game_id": "401856743",
+      "covers_matchup_id": "378696",
+      "cbs_price_display": "DISPLAYED_HISTORICAL_UNQUALIFIED",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    },
+    {
+      "canonical_game_id": "401856849",
+      "covers_matchup_id": "378779",
+      "cbs_price_display": "DISPLAYED_HISTORICAL_UNQUALIFIED",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    },
+    {
+      "canonical_game_id": "401858514",
+      "covers_matchup_id": "378750",
+      "cbs_price_display": "DISPLAYED_HISTORICAL_UNQUALIFIED",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    },
+    {
+      "canonical_game_id": "401856740",
+      "covers_matchup_id": "378771",
+      "cbs_price_display": "DISPLAYED_HISTORICAL_UNQUALIFIED",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    },
+    {
+      "canonical_game_id": "401856745",
+      "covers_matchup_id": "378711",
+      "cbs_price_display": "DISPLAYED_HISTORICAL_UNQUALIFIED",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    },
+    {
+      "canonical_game_id": "401856741",
+      "covers_matchup_id": "378730",
+      "cbs_price_display": "DISPLAYED_HISTORICAL_UNQUALIFIED",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    },
+    {
+      "canonical_game_id": "401858291",
+      "covers_matchup_id": "378764",
+      "cbs_price_display": "DISPLAYED_HISTORICAL_UNQUALIFIED",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    },
+    {
+      "canonical_game_id": "401862823",
+      "covers_matchup_id": "378776",
+      "cbs_price_display": "DISPLAYED_HISTORICAL_UNQUALIFIED",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    },
+    {
+      "canonical_game_id": "401856739",
+      "covers_matchup_id": "378786",
+      "cbs_price_display": "DISPLAYED_HISTORICAL_UNQUALIFIED",
+      "covers_price_qualification": "PENDING",
+      "decision_authorized": false
+    }
+  ],
+  "cbs_unavailable_game_ids": [
+    "401866457",
+    "401862817",
+    "401869964",
+    "401862818",
+    "401858510",
+    "401864533",
+    "401856855",
+    "401862822",
+    "401858285",
+    "401858292",
+    "401858289",
+    "401858286",
+    "401858515",
+    "401856738",
+    "401869945",
+    "401856853",
+    "401856851",
+    "401856850",
+    "401856854",
+    "401856856",
+    "401858517",
+    "401869927",
+    "401856744",
+    "401869936",
+    "401858516",
+    "401871073",
+    "401869951",
+    "401862820",
+    "401858290",
+    "401862819",
+    "401871076",
+    "401862821",
+    "401871098",
+    "401864534",
+    "401871074",
+    "401856742",
+    "401869968",
+    "401860911",
+    "401871075",
+    "401858287",
+    "401856852",
+    "401870795",
+    "401864532",
+    "401860913",
+    "401860912",
+    "401864535"
+  ],
+  "source_market_price_qualification": "PENDING",
+  "decision_authorized": false,
+  "publication_authorized": false
+}
