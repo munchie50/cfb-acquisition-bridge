@@ -21,3 +21,7 @@ jobs:
         run: python -m py_compile scripts/cfb_week10_market_qualification_gate.py scripts/test_cfb_week10_market_qualification_gate.py
       - name: Run exact checked-out regression suite
         run: cd scripts && python -m unittest -v test_cfb_week10_market_qualification_gate
+      - name: Exercise real R91 inventory with no quote evidence (fail closed)
+        run: |
+          python scripts/cfb_week10_market_qualification_gate.py evidence/operational/CFB_WEEK10_R91_CBS_DIRECTED_SIX_BRANCH_SOURCE_INVENTORY_20261101T173123853Z.json > /tmp/cfb_week10_market_gate_result.json
+          python -c 'import json; x=json.load(open("/tmp/cfb_week10_market_gate_result.json")); assert x["counts"] == {"branches": 378, "qualified": 0, "wait": 378}; assert not any(r["decision_authorized"] for r in x["rows"]); print("R91 real inventory: 378 WAIT, zero authorized")'
