@@ -21,7 +21,7 @@ def classify(e: Evidence) -> str:
         return "PRODUCER_INCOMPLETE"
     if e.readback_run_id != e.invocation_id:
         return "ACCEPTANCE_UNVERIFIED"
-    if e.scheduler_status == "no_update":
+    if e.scheduler_status != "completed":
         return "SCHEDULER_PRODUCER_CONFLICT"
     return "RUN_PASS_ELIGIBLE"
 
@@ -39,6 +39,9 @@ def self_test() -> None:
         ({"readback_run_id": None}, "ACCEPTANCE_UNVERIFIED"),
         ({"readback_run_id": "run2"}, "ACCEPTANCE_UNVERIFIED"),
         ({"scheduler_status": "no_update", "chat_ref": None}, "SCHEDULER_PRODUCER_CONFLICT"),
+        ({"scheduler_status": "failed"}, "SCHEDULER_PRODUCER_CONFLICT"),
+        ({"scheduler_status": "in_progress"}, "SCHEDULER_PRODUCER_CONFLICT"),
+        ({"scheduler_status": "unknown"}, "SCHEDULER_PRODUCER_CONFLICT"),
         ({}, "RUN_PASS_ELIGIBLE"),
     ]
     for changes, expected in cases:
@@ -46,4 +49,4 @@ def self_test() -> None:
 
 if __name__ == "__main__":
     self_test()
-    print("10 linked-run QA fixtures PASS")
+    print("13 linked-run QA fixtures PASS")
