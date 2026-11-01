@@ -1,0 +1,123 @@
+{
+  "schema": "CFB_WEEK9_OCT31_INDEPENDENT_TICKET_RECONCILIATION_V1",
+  "status": "SCORE_GRADE_VERIFIED_BOOK_SETTLEMENT_UNVERIFIED",
+  "sources": {
+    "canonical_outcomes": {
+      "path": "evidence/operational/CFB_WEEK9_CANONICAL_56_OFFICIAL_OUTCOME_RECONCILIATION_20261101.json",
+      "blob": "296b18dd97c1bb0c2d68281fe24506bf27fe7dbc"
+    },
+    "ticket_intake": {
+      "path": "evidence/operational/CFB_WEEK9_OCT31_EIGHT_TICKET_SCORE_GRADE_20261101.json",
+      "blob": "1e197e6c8f88b26e2ce4ea4895802d3a1c141e93"
+    }
+  },
+  "checks": {
+    "eight_unique_tickets": true,
+    "official_scores_all_match": true,
+    "grades_all_match": true
+  },
+  "counts": {
+    "tickets": 8,
+    "wins": 5,
+    "losses": 3,
+    "pushes": 0
+  },
+  "amounts": {
+    "stake_usd": 30,
+    "estimated_return_per_ticket_cent_round_usd": 40.41,
+    "estimated_net_per_ticket_cent_round_usd": 10.41,
+    "previous_ledger_estimated_return_usd": 40.4,
+    "rounding_variance_usd": 0.01
+  },
+  "financial_policy": "This is independent mathematical recomputation only. Sportsbook-printed payout, cash redemption, and current holdings unverified; no money ledger posting or mutation.",
+  "rows": [
+    {
+      "execution_id": "CFB_OCT31-01",
+      "game_id": "401858509",
+      "grade": "LOSS",
+      "stake_usd": 3,
+      "odds": -110,
+      "expected_return_raw_usd": 0,
+      "expected_return_per_ticket_cent_round_usd": 0,
+      "official_scores_match": true,
+      "original_grade_match": true
+    },
+    {
+      "execution_id": "CFB_OCT31-02",
+      "game_id": "401858503",
+      "grade": "LOSS",
+      "stake_usd": 3,
+      "odds": -105,
+      "expected_return_raw_usd": 0,
+      "expected_return_per_ticket_cent_round_usd": 0,
+      "official_scores_match": true,
+      "original_grade_match": true
+    },
+    {
+      "execution_id": "CFB_OCT31-03",
+      "game_id": "401856734",
+      "grade": "LOSS",
+      "stake_usd": 3,
+      "odds": -105,
+      "expected_return_raw_usd": 0,
+      "expected_return_per_ticket_cent_round_usd": 0,
+      "official_scores_match": true,
+      "original_grade_match": true
+    },
+    {
+      "execution_id": "CFB_OCT31-04",
+      "game_id": "401858506",
+      "grade": "WIN",
+      "stake_usd": 5,
+      "odds": -109,
+      "expected_return_raw_usd": 9.587155963302752,
+      "expected_return_per_ticket_cent_round_usd": 9.59,
+      "official_scores_match": true,
+      "original_grade_match": true
+    },
+    {
+      "execution_id": "CFB_OCT31-05",
+      "game_id": "401858502",
+      "grade": "WIN",
+      "stake_usd": 5,
+      "odds": -110,
+      "expected_return_raw_usd": 9.545454545454547,
+      "expected_return_per_ticket_cent_round_usd": 9.55,
+      "official_scores_match": true,
+      "original_grade_match": true
+    },
+    {
+      "execution_id": "CFB_OCT31-06",
+      "game_id": "401856733",
+      "grade": "WIN",
+      "stake_usd": 5,
+      "odds": -108,
+      "expected_return_raw_usd": 9.62962962962963,
+      "expected_return_per_ticket_cent_round_usd": 9.63,
+      "official_scores_match": true,
+      "original_grade_match": true
+    },
+    {
+      "execution_id": "CFB_OCT31-07",
+      "game_id": "401861966",
+      "grade": "WIN",
+      "stake_usd": 3,
+      "odds": -108,
+      "expected_return_raw_usd": 5.777777777777779,
+      "expected_return_per_ticket_cent_round_usd": 5.78,
+      "official_scores_match": true,
+      "original_grade_match": true
+    },
+    {
+      "execution_id": "CFB_OCT31-08",
+      "game_id": "401856847",
+      "grade": "WIN",
+      "stake_usd": 3,
+      "odds": -105,
+      "expected_return_raw_usd": 5.857142857142857,
+      "expected_return_per_ticket_cent_round_usd": 5.86,
+      "official_scores_match": true,
+      "original_grade_match": true
+    }
+  ]
+}
