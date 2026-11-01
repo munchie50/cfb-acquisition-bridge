@@ -1,4 +1,4 @@
-"""Read-only CFB producer receipt classifier. QA only; no external calls."""
+"""Read-only producer acceptance classifier; QA branch only."""
 from dataclasses import dataclass
 
 @dataclass(frozen=True)
@@ -6,35 +6,44 @@ class Evidence:
     authority_read: bool
     scheduler_status: str
     chat_ref: str | None
-    producer_started: bool
-    producer_closed: bool
-    independent_readback: bool
+    invocation_id: str
+    startup_run_id: str | None
+    closure_run_id: str | None
+    readback_run_id: str | None
+    qualified_publication: bool
 
 def classify(e: Evidence) -> str:
     if not e.authority_read:
         return "STARTUP_UNVERIFIED"
-    if not e.producer_started:
+    if not e.invocation_id or e.startup_run_id != e.invocation_id:
         return "DISPATCH_OR_HANDOFF_UNVERIFIED"
-    if not e.producer_closed:
+    if e.closure_run_id != e.invocation_id or not e.qualified_publication:
         return "PRODUCER_INCOMPLETE"
-    if not e.independent_readback:
+    if e.readback_run_id != e.invocation_id:
         return "ACCEPTANCE_UNVERIFIED"
     if e.scheduler_status == "no_update":
         return "SCHEDULER_PRODUCER_CONFLICT"
     return "RUN_PASS_ELIGIBLE"
 
 def self_test() -> None:
+    good = dict(authority_read=True, scheduler_status="completed", chat_ref="chat",
+                invocation_id="run1", startup_run_id="run1", closure_run_id="run1",
+                readback_run_id="run1", qualified_publication=True)
     cases = [
-        (Evidence(False, "no_update", None, False, False, False), "STARTUP_UNVERIFIED"),
-        (Evidence(True, "no_update", None, False, False, False), "DISPATCH_OR_HANDOFF_UNVERIFIED"),
-        (Evidence(True, "completed", "chat", True, False, False), "PRODUCER_INCOMPLETE"),
-        (Evidence(True, "completed", "chat", True, True, False), "ACCEPTANCE_UNVERIFIED"),
-        (Evidence(True, "completed", "chat", True, True, True), "RUN_PASS_ELIGIBLE"),
-        (Evidence(True, "no_update", None, True, True, True), "SCHEDULER_PRODUCER_CONFLICT"),
+        ({"authority_read": False}, "STARTUP_UNVERIFIED"),
+        ({"startup_run_id": None, "scheduler_status": "no_update", "chat_ref": None}, "DISPATCH_OR_HANDOFF_UNVERIFIED"),
+        ({"startup_run_id": "run2"}, "DISPATCH_OR_HANDOFF_UNVERIFIED"),
+        ({"closure_run_id": None}, "PRODUCER_INCOMPLETE"),
+        ({"closure_run_id": "run2"}, "PRODUCER_INCOMPLETE"),
+        ({"qualified_publication": False}, "PRODUCER_INCOMPLETE"),
+        ({"readback_run_id": None}, "ACCEPTANCE_UNVERIFIED"),
+        ({"readback_run_id": "run2"}, "ACCEPTANCE_UNVERIFIED"),
+        ({"scheduler_status": "no_update", "chat_ref": None}, "SCHEDULER_PRODUCER_CONFLICT"),
+        ({}, "RUN_PASS_ELIGIBLE"),
     ]
-    for e, expected in cases:
-        assert classify(e) == expected, (e, expected)
+    for changes, expected in cases:
+        assert classify(Evidence(**(good | changes))) == expected, (changes, expected)
 
 if __name__ == "__main__":
     self_test()
-    print("6 QA receipt-classification fixtures PASS")
+    print("10 linked-run QA fixtures PASS")
