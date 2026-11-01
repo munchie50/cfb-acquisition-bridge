@@ -98,8 +98,8 @@ class ClosureGateTests(unittest.TestCase):
                          "ACCEPTANCE_PENDING")
 
     def test_legacy_blob_proof_binding(self):
-        closure = ("TERMINAL_STATE: RUN_PASS\\n"
-                   "Independent post-write readback completed after all run artifacts were persisted.\\n"
+        closure = ("TERMINAL_STATE: RUN_PASS\n"
+                   "Independent post-write readback completed after all run artifacts were persisted.\n"
                    "- CFB_MARKET_MONITOR_STATE.md blob f0e56a83cf394e0dd9209961b457eb3eeea2647e — PASS")
         verified = {"CFB_MARKET_MONITOR_STATE.md": "f0e56a83cf394e0dd9209961b457eb3eeea2647e"}
         self.assertEqual(classify_legacy_closure(closure, independently_verified_blobs=verified),
