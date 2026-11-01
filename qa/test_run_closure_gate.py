@@ -1,6 +1,8 @@
 """QA-only evidence gate. Caller must supply independently verified artifacts."""
 import re
 import unittest
+from dataclasses import replace
+from cfb_run_failure_classifier_readonly import Evidence, classify
 
 def classify_receipt(receipt: str, *, run_id: str, closure_text: str | None = None,
                      verified_artifacts: dict | None = None) -> str:
@@ -116,6 +118,21 @@ class ClosureGateTests(unittest.TestCase):
             "A.md": "a" * 40}), "ACCEPTANCE_PENDING")
         self.assertEqual(classify_legacy_closure(closure, independently_verified_blobs={
             "A.md": "a" * 40, "B.md": "0" * 40}), "ACCEPTANCE_PENDING")
+
+    def test_classifier_integration_requires_gate_and_operational_evidence(self):
+        baseline = Evidence(producer_started=True, canonical_write_attempted=True,
+                            canonical_write_accepted=True, source_complete=True,
+                            publication_present=True, independent_publication_verified=True)
+        self.assertEqual(classify(baseline), "PUBLISHED_UNVERIFIED")
+        gated = self.check(self.good) == "EVIDENCE_GATE_PASSED_NOT_PRODUCTION_ACCEPTED"
+        self.assertTrue(gated)
+        self.assertEqual(classify(replace(baseline, terminal_closure_verified=gated)), "RUN_PASS")
+        self.assertEqual(classify(replace(baseline, source_complete=False,
+                                          terminal_closure_verified=gated)), "PARTIAL_SOURCE")
+        self.assertEqual(classify(replace(baseline, independent_publication_verified=False,
+                                          terminal_closure_verified=gated)), "PUBLISHED_UNVERIFIED")
+        self.assertEqual(classify(replace(baseline, terminal_closure_verified=False)),
+                         "PUBLISHED_UNVERIFIED")
 
     def test_prose_mention_of_run_pass_rejected(self):
         self.assertEqual(classify_receipt("Historical RUN_PASS claim was invalid", run_id="x"),
