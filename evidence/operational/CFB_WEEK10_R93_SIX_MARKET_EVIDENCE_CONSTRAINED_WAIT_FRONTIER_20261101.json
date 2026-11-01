@@ -1,0 +1,3059 @@
+{
+  "schema": "CFB_WEEK10_R93_SIX_MARKET_EVIDENCE_CONSTRAINED_WAIT_FRONTIER",
+  "recorded_utc": "2026-11-01T17:33:22.528Z",
+  "status": "PREPRODUCTION_EVIDENCE_ONLY_NOT_CANONICAL_DECISION_ROWS",
+  "parents": {
+    "r91_blob": "abe0afe3f7e435875645d029faa57b7cdc7ddec0",
+    "r92_blob": "be612db7f4ac9c39c61ab8b06c75b388d529c640",
+    "accepted_index_blob": "57327859afb17ca42451189d3661f4c16fae4f90",
+    "canonical_market_blob": "69caf5b1184eedccc90be7562e4a3bd7cb8b7375",
+    "canonical_decision_blob": "bb5a9cc83b6a1425dc2972ca84b33aa2bbbf8fa9"
+  },
+  "counts": {
+    "games": 63,
+    "branches": 378,
+    "wait": 378,
+    "certified": 0,
+    "source_display_day_counts": {
+      "Tue": 2,
+      "Wed": 3,
+      "Thu": 2,
+      "Fri": 5,
+      "Sat": 51
+    }
+  },
+  "limitations": [
+    "No accepted Week10 Champion/FIRST_FROZEN field join independently verified; historical Week9 values cannot substitute.",
+    "CBS source captures are retrieval-only mixed/unknown book icons without offer-update times or executable venue.",
+    "Fallback source observations are not certified venue offers; NIU/SJSU remains unpriced.",
+    "Current football material/news and authentic manual qualitative decisions not reviewed for 63 games.",
+    "These WAIT entries are an evidence gap register, not caller-authored decision_rows or a canonical WAIT ledger update.",
+    "No automatic cutoff, PASS, BET NOW, EV, or recommendation inferred. Publication prohibited."
+  ],
+  "rows": [
+    {
+      "game_id": "401866453",
+      "away_team": "Ohio",
+      "home_team": "Akron",
+      "source_display_kickoff": "Tue Nov 3, 7:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401866454",
+      "away_team": "Buffalo",
+      "home_team": "Miami-OH",
+      "source_display_kickoff": "Tue Nov 3, 8:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401866455",
+      "away_team": "Ball St.",
+      "home_team": "UMass",
+      "source_display_kickoff": "Wed Nov 4, 7:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401866457",
+      "away_team": "Toledo",
+      "home_team": "Sacramento St.",
+      "source_display_kickoff": "Wed Nov 4, 7:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401866456",
+      "away_team": "C. Michigan",
+      "home_team": "E. Michigan",
+      "source_display_kickoff": "Wed Nov 4, 7:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401862817",
+      "away_team": "UTSA",
+      "home_team": "FAU",
+      "source_display_kickoff": "Thu Nov 5, 7:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401869964",
+      "away_team": "James Madison",
+      "home_team": "So. Miss",
+      "source_display_kickoff": "Thu Nov 5, 8:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858288",
+      "away_team": "Virginia Tech",
+      "home_team": "SMU",
+      "source_display_kickoff": "Fri Nov 6, 7:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401862818",
+      "away_team": "South Florida",
+      "home_team": "East Carolina",
+      "source_display_kickoff": "Fri Nov 6, 7:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858510",
+      "away_team": "Nebraska",
+      "home_team": "Illinois",
+      "source_display_kickoff": "Fri Nov 6, 8:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401864533",
+      "away_team": "New Mexico",
+      "home_team": "Nevada",
+      "source_display_kickoff": "Fri Nov 6, 9:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856855",
+      "away_team": "TCU",
+      "home_team": "Arizona",
+      "source_display_kickoff": "Fri Nov 6, 10:15pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856743",
+      "away_team": "Texas",
+      "home_team": "Missouri",
+      "source_display_kickoff": "Sat Nov 7, 12:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856849",
+      "away_team": "BYU",
+      "home_team": "Utah",
+      "source_display_kickoff": "Sat Nov 7, 12:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401862822",
+      "away_team": "Tulsa",
+      "home_team": "Tulane",
+      "source_display_kickoff": "Sat Nov 7, 12:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858512",
+      "away_team": "UCLA",
+      "home_team": "Minnesota",
+      "source_display_kickoff": "Sat Nov 7, 12:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858289",
+      "away_team": "Florida State",
+      "home_team": "Boston College",
+      "source_display_kickoff": "Sat Nov 7, 12:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858285",
+      "away_team": "Clemson",
+      "home_team": "Syracuse",
+      "source_display_kickoff": "Sat Nov 7, 12:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858292",
+      "away_team": "North Carolina",
+      "home_team": "UConn",
+      "source_display_kickoff": "Sat Nov 7, 12:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856853",
+      "away_team": "Iowa St.",
+      "home_team": "Baylor",
+      "source_display_kickoff": "Sat Nov 7, 12:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858286",
+      "away_team": "Duke",
+      "home_team": "NC State",
+      "source_display_kickoff": "Sat Nov 7, 12:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858515",
+      "away_team": "Maryland",
+      "home_team": "Purdue",
+      "source_display_kickoff": "Sat Nov 7, 12:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856738",
+      "away_team": "Arkansas",
+      "home_team": "Auburn",
+      "source_display_kickoff": "Sat Nov 7, 12:45pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856854",
+      "away_team": "Oklahoma State",
+      "home_team": "Kansas State",
+      "source_display_kickoff": "Sat Nov 7, 1:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401869945",
+      "away_team": "Old Dominion",
+      "home_team": "C. Carolina",
+      "source_display_kickoff": "Sat Nov 7, 1:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401869927",
+      "away_team": "Georgia St.",
+      "home_team": "App. St.",
+      "source_display_kickoff": "Sat Nov 7, 2:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856744",
+      "away_team": "Texas A&M",
+      "home_team": "South Carolina",
+      "source_display_kickoff": "Sat Nov 7, 3:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401869936",
+      "away_team": "UL-Monroe",
+      "home_team": "Arkansas St.",
+      "source_display_kickoff": "Sat Nov 7, 3:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401871073",
+      "away_team": "Delaware",
+      "home_team": "Kennesaw St.",
+      "source_display_kickoff": "Sat Nov 7, 3:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856740",
+      "away_team": "Alabama",
+      "home_team": "LSU",
+      "source_display_kickoff": "Sat Nov 7, 3:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858516",
+      "away_team": "Penn State",
+      "home_team": "Washington",
+      "source_display_kickoff": "Sat Nov 7, 3:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401871076",
+      "away_team": "W. Kentucky",
+      "home_team": "Middle Tenn.",
+      "source_display_kickoff": "Sat Nov 7, 3:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401862819",
+      "away_team": "Charlotte",
+      "home_team": "UAB",
+      "source_display_kickoff": "Sat Nov 7, 3:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858514",
+      "away_team": "Oregon",
+      "home_team": "Ohio State",
+      "source_display_kickoff": "Sat Nov 7, 3:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856851",
+      "away_team": "Cincinnati",
+      "home_team": "Houston",
+      "source_display_kickoff": "Sat Nov 7, 3:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858290",
+      "away_team": "Merrimack",
+      "home_team": "Wake Forest",
+      "source_display_kickoff": "Sat Nov 7, 3:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401862820",
+      "away_team": "Temple",
+      "home_team": "Navy",
+      "source_display_kickoff": "Sat Nov 7, 3:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401869951",
+      "away_team": "Marshall",
+      "home_team": "Ga. Southern",
+      "source_display_kickoff": "Sat Nov 7, 3:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856850",
+      "away_team": "UCF",
+      "home_team": "Kansas",
+      "source_display_kickoff": "Sat Nov 7, 3:45pm",
+      "source_status": "BOOK_ATTRIBUTED_RETRIEVAL_ONLY",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401862821",
+      "away_team": "Rice",
+      "home_team": "North Texas",
+      "source_display_kickoff": "Sat Nov 7, 4:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401871098",
+      "away_team": "Louisiana Tech",
+      "home_team": "Troy",
+      "source_display_kickoff": "Sat Nov 7, 4:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401864534",
+      "away_team": "N. Illinois",
+      "home_team": "San Jose St.",
+      "source_display_kickoff": "Sat Nov 7, 4:00pm",
+      "source_status": "NO_SOURCE_PRICES",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401871074",
+      "away_team": "Missouri St.",
+      "home_team": "FIU",
+      "source_display_kickoff": "Sat Nov 7, 4:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856742",
+      "away_team": "Vanderbilt",
+      "home_team": "Miss. State",
+      "source_display_kickoff": "Sat Nov 7, 4:15pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858517",
+      "away_team": "Rutgers",
+      "home_team": "Wisconsin",
+      "source_display_kickoff": "Sat Nov 7, 4:15pm",
+      "source_status": "UNATTRIBUTED_FALLBACK_DISPLAY",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "UNAVAILABLE",
+          "reason": "CBS_BRANCH_UNAVAILABLE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401869968",
+      "away_team": "South Alabama",
+      "home_team": "Louisiana",
+      "source_display_kickoff": "Sat Nov 7, 5:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401860911",
+      "away_team": "Boise St.",
+      "home_team": "Colorado St.",
+      "source_display_kickoff": "Sat Nov 7, 6:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856745",
+      "away_team": "Kentucky",
+      "home_team": "Tennessee",
+      "source_display_kickoff": "Sat Nov 7, 6:15pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401871075",
+      "away_team": "Sam Houston",
+      "home_team": "Jacksonville St.",
+      "source_display_kickoff": "Sat Nov 7, 7:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401862823",
+      "away_team": "Air Force",
+      "home_team": "Army",
+      "source_display_kickoff": "Sat Nov 7, 7:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858287",
+      "away_team": "Louisville",
+      "home_team": "Georgia Tech",
+      "source_display_kickoff": "Sat Nov 7, 7:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858511",
+      "away_team": "Michigan St.",
+      "home_team": "Michigan",
+      "source_display_kickoff": "Sat Nov 7, 7:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858291",
+      "away_team": "Miami (Fla.)",
+      "home_team": "Notre Dame",
+      "source_display_kickoff": "Sat Nov 7, 7:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401858513",
+      "away_team": "Iowa",
+      "home_team": "Northwestern",
+      "source_display_kickoff": "Sat Nov 7, 7:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856741",
+      "away_team": "Georgia",
+      "home_team": "Ole Miss",
+      "source_display_kickoff": "Sat Nov 7, 7:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856852",
+      "away_team": "Colorado",
+      "home_team": "Arizona St.",
+      "source_display_kickoff": "Sat Nov 7, 7:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856739",
+      "away_team": "Oklahoma",
+      "home_team": "Florida",
+      "source_display_kickoff": "Sat Nov 7, 7:45pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401870795",
+      "away_team": "Liberty",
+      "home_team": "New Mexico St.",
+      "source_display_kickoff": "Sat Nov 7, 8:00pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401856856",
+      "away_team": "West Virginia",
+      "home_team": "Texas Tech",
+      "source_display_kickoff": "Sat Nov 7, 9:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401864532",
+      "away_team": "Hawaii",
+      "home_team": "UTEP",
+      "source_display_kickoff": "Sat Nov 7, 9:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401860913",
+      "away_team": "Fresno St.",
+      "home_team": "Utah St.",
+      "source_display_kickoff": "Sat Nov 7, 9:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401860912",
+      "away_team": "Texas St.",
+      "home_team": "Oregon State",
+      "source_display_kickoff": "Sat Nov 7, 10:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    },
+    {
+      "game_id": "401864535",
+      "away_team": "Wyoming",
+      "home_team": "UNLV",
+      "source_display_kickoff": "Sat Nov 7, 10:30pm",
+      "source_status": "CBS_DISPLAYED_UNQUALIFIED",
+      "model_status": "NO_VERIFIED_ACCEPTED_WEEK10_FIRST_FROZEN_GAME_JOIN",
+      "football_material_status": "NOT_REVIEWED_FOR_CURRENT_CYCLE",
+      "six_market_disposition": {
+        "away_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_spread": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "away_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "home_ml": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "over_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        },
+        "under_total": {
+          "disposition": "WAIT",
+          "certification": "NOT_CERTIFIED",
+          "cbs_source_status": "DISPLAYED_UNQUALIFIED",
+          "reason": "CBS_DISPLAY_NOT_BOOK_CLOCK_OR_EXECUTABLE_VENUE; MODEL_AND_MATERIAL_EVIDENCE_UNVERIFIED"
+        }
+      },
+      "decision_authorized": false
+    }
+  ]
+}
