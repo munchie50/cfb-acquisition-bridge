@@ -1,0 +1,97 @@
+{
+  "schema": "CFB_WEEK10_TUESDAY_P0_MARKET_MATERIAL_SOURCE_TRIANGULATION",
+  "status": "MULTISOURCE_DISPLAY_CROSSCHECK_ONLY_NOT_EXECUTABLE_NOT_DECISION",
+  "parents": {
+    "prior_tuesday": "9348d7da13108485ec0b30ebaeec9e6ed6e741ec",
+    "canonical_r91": "abe0afe3f7e435875645d029faa57b7cdc7ddec0",
+    "accepted_prediction_state": "42c6fed3dee79be8693d6750122ae08beeb24e3a"
+  },
+  "games": [
+    {
+      "game_id": "401866453",
+      "matchup": "Ohio @ Akron",
+      "kickoff_cst": "2026-11-03T18:00:00-06:00",
+      "market_observations": [
+        {
+          "url": "https://cleatz.com/college-football/lines/",
+          "type": "AGGREGATOR_BOOK_NAMED_DISPLAY",
+          "examples": [
+            "DraftKings Ohio -12.5 -110 / Akron +12.5 -110; total 49.5 -110; Ohio ML -470 / Akron +360",
+            "FanDuel Ohio -12.5 -110 / Akron +12.5 -110; total 48.5 over -115 under -105; Ohio ML -490 / Akron +375"
+          ],
+          "book_update_time_verified": false,
+          "venue_executable_verified": false
+        },
+        {
+          "url": "https://betwatch.io/odds/college-football/ohio-bobcats-vs-akron-zips-2026-11-03",
+          "type": "MULTISOURCE_AGGREGATOR",
+          "source_page_update": "2026-10-31 17:42 ET",
+          "examples": [
+            "Aggregate Ohio -12.5; total 48.5; sportsbook comparisons displayed"
+          ],
+          "book_update_time_verified": false,
+          "venue_executable_verified": false
+        }
+      ],
+      "material": [
+        {
+          "url": "https://kickoffstatus.com/games/2026-11-03-ohio-at-akron/",
+          "status": "NO_OFFICIAL_MAC_CURRENT_GAME_REPORT_AS_OF_2026_10_31_PAGE_REFRESH",
+          "previous_game_absences_not_current": true
+        },
+        {
+          "url": "https://www.covers.com/sport/football/ncaaf/matchup/378682",
+          "status": "THIRD_PARTY_INJURY_ENTRIES_WITH_PRIOR_OPPONENT_REFERENCES_NOT_CURRENT_GAME_CONFIRMATION"
+        }
+      ]
+    },
+    {
+      "game_id": "401866454",
+      "matchup": "Buffalo @ Miami (OH)",
+      "kickoff_cst": "2026-11-03T19:00:00-06:00",
+      "market_observations": [
+        {
+          "url": "https://www.covers.com/sport/football/ncaaf/matchup/378681/odds",
+          "type": "MULTI_OPERATOR_DISPLAY_WITH_PREDICTION_MARKET_MIX",
+          "examples": [
+            "Buffalo +6.5 displayed; Miami -6.5 displayed; total 43.5 and 45.5 displayed from differing operators"
+          ],
+          "book_update_time_verified": false,
+          "venue_executable_verified": false
+        },
+        {
+          "url": "https://www.sportscapping.com/college-football-odds.html",
+          "type": "NAMED_BOOK_COMPARISON_DISPLAY",
+          "examples": [
+            "Buffalo/Miami-OH spread around Miami -6 to -7; total 44.5 displayed"
+          ],
+          "book_update_time_verified": false,
+          "venue_executable_verified": false
+        }
+      ],
+      "material": [
+        {
+          "url": "https://kickoffstatus.com/games/2026-11-03-buffalo-at-miami-oh/",
+          "status": "NO_OFFICIAL_MAC_CURRENT_GAME_REPORT_AS_OF_2026_10_31_PAGE_REFRESH",
+          "previous_game_absences_not_current": true
+        },
+        {
+          "url": "https://www.covers.com/sport/football/ncaaf/matchup/378681",
+          "status": "THIRD_PARTY_INJURY_ENTRIES_INCLUDE_OLD_OPPONENT_REFERENCES_AND_SEASON_LONG_DESCRIPTIONS; NOT_OFFICIAL_CURRENT_REPORT"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    "Independent public sources corroborate approximate displayed spread and total ranges; cross-site values vary by source and market type, so do not overwrite frozen initial-line evidence or treat them as a single simultaneous consensus.",
+    "Aggregator timestamps and crawl freshness do not establish individual bookmaker offer update clocks.",
+    "Prediction-market contract prices are not interchangeable with sportsbook American-odds execution offers.",
+    "Official current-game MAC availability report was not present on pages refreshed Oct31; do not reuse Oct24 OUT lists as Nov3 statuses.",
+    "Tuesday freeze acceptance and current Champion-vs-market comparisons still pending. No recommendation or PASS inferred."
+  ],
+  "next_producer_actions": [
+    "At next qualified market pass, retain per-operator quote timestamp, line, price, side, source retrieval time and venue executable evidence; reject mixed-time synthetic consensus.",
+    "On game day, read official MAC availability directly and retain report publication time; material review must distinguish unknown vs out.",
+    "After independently accepted Week10 freeze, perform six-branch decisions before 18:00 and 19:00 CST kickoffs; respect user's earlier betting cutoff."
+  ]
+}
