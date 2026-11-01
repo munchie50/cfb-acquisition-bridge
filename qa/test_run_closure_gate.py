@@ -5,9 +5,12 @@ import unittest
 def classify_receipt(receipt: str, *, run_id: str, closure_text: str | None = None,
                      verified_artifacts: dict | None = None) -> str:
     """Fail closed: text alone never proves persistence or production acceptance."""
-    if not re.search(r"\bRUN_PASS\b", receipt):
+    if not re.search(r"(?m)^RUN_PASS(?:\\s|$)", receipt):
         return "NOT_CLAIMED_PASS"
     if not run_id or not closure_text or not verified_artifacts:
+        return "ACCEPTANCE_PENDING"
+    receipt_identity = re.search(r"(?im)^run_id:\\s*(\\S+)\\s*$", receipt)
+    if not receipt_identity or receipt_identity.group(1) != run_id:
         return "ACCEPTANCE_PENDING"
     if not re.search(r"\bRUN_CLOSURE\b", closure_text) or not re.search(r"\bRUN_PASS\b", closure_text):
         return "ACCEPTANCE_PENDING"
@@ -31,7 +34,7 @@ class ClosureGateTests(unittest.TestCase):
         self.artifacts = {"canonical": True, "terminal_candidate": True, "closure": True}
 
     def check(self, closure, artifacts=None, run_id="20261031T120000Z"):
-        return classify_receipt("RUN_PASS", run_id=run_id, closure_text=closure,
+        return classify_receipt("RUN_PASS\\nrun_id: " + run_id, run_id=run_id, closure_text=closure,
                                 verified_artifacts=self.artifacts if artifacts is None else artifacts)
 
     def test_historical_false_pass(self):
@@ -60,6 +63,14 @@ class ClosureGateTests(unittest.TestCase):
 
     def test_positive_still_requires_production_reconciliation(self):
         self.assertEqual(self.check(self.good), "EVIDENCE_GATE_PASSED_NOT_PRODUCTION_ACCEPTED")
+
+    def test_unrelated_receipt_rejected(self):
+        self.assertEqual(classify_receipt("RUN_PASS\\nrun_id: unrelated", run_id="20261031T120000Z",
+                         closure_text=self.good, verified_artifacts=self.artifacts), "ACCEPTANCE_PENDING")
+
+    def test_prose_mention_of_run_pass_rejected(self):
+        self.assertEqual(classify_receipt("Historical RUN_PASS claim was invalid", run_id="x"),
+                         "NOT_CLAIMED_PASS")
 
 if __name__ == "__main__":
     unittest.main()
