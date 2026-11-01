@@ -28,6 +28,23 @@ def classify_receipt(receipt: str, *, run_id: str, closure_text: str | None = No
         return "ACCEPTANCE_PENDING"
     return "EVIDENCE_GATE_PASSED_NOT_PRODUCTION_ACCEPTED"
 
+def classify_legacy_closure(closure_text: str, *, independently_verified_blobs: dict[str, str]) -> str:
+    """Historical compatibility check; only independently fetched exact blobs count."""
+    if not re.search(r"(?m)^TERMINAL_STATE:\\s*RUN_PASS\\s*$", closure_text):
+        return "ACCEPTANCE_PENDING"
+    if re.search(r"(?i)\\b(?:pending|unverified|missing|failed)\\b", closure_text):
+        return "ACCEPTANCE_PENDING"
+    if "Independent post-write readback completed" not in closure_text:
+        return "ACCEPTANCE_PENDING"
+    proofs = re.findall(r"(?m)^-\\s+(\\S+)\\s+blob\\s+([0-9a-f]{40})\\s+[—-]\\s+PASS\\s*$", closure_text)
+    if not proofs or len(proofs) != len(set(name for name, _ in proofs)):
+        return "ACCEPTANCE_PENDING"
+    if set(independently_verified_blobs) != {name for name, _ in proofs}:
+        return "ACCEPTANCE_PENDING"
+    if not all(independently_verified_blobs.get(name) == digest for name, digest in proofs):
+        return "ACCEPTANCE_PENDING"
+    return "HISTORICAL_EVIDENCE_MATCH_NOT_PRODUCTION_ACCEPTED"
+
 class ClosureGateTests(unittest.TestCase):
     def setUp(self):
         self.good = "RUN_CLOSURE\nrun_id: 20261031T120000Z\nRUN_PASS\nindependently read back"
@@ -79,6 +96,16 @@ class ClosureGateTests(unittest.TestCase):
         self.assertEqual(classify_receipt("RUN_PASS", run_id="2026-09-29",
                          closure_text=legacy, verified_artifacts=self.artifacts),
                          "ACCEPTANCE_PENDING")
+
+    def test_legacy_blob_proof_binding(self):
+        closure = ("TERMINAL_STATE: RUN_PASS\\n"
+                   "Independent post-write readback completed after all run artifacts were persisted.\\n"
+                   "- CFB_MARKET_MONITOR_STATE.md blob f0e56a83cf394e0dd9209961b457eb3eeea2647e — PASS")
+        verified = {"CFB_MARKET_MONITOR_STATE.md": "f0e56a83cf394e0dd9209961b457eb3eeea2647e"}
+        self.assertEqual(classify_legacy_closure(closure, independently_verified_blobs=verified),
+                         "HISTORICAL_EVIDENCE_MATCH_NOT_PRODUCTION_ACCEPTED")
+        self.assertEqual(classify_legacy_closure(closure, independently_verified_blobs={
+            "CFB_MARKET_MONITOR_STATE.md": "0" * 40}), "ACCEPTANCE_PENDING")
 
     def test_prose_mention_of_run_pass_rejected(self):
         self.assertEqual(classify_receipt("Historical RUN_PASS claim was invalid", run_id="x"),
