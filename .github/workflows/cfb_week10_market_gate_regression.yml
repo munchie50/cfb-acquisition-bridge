@@ -1,0 +1,23 @@
+name: CFB Week10 Market Gate Regression
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/cfb_week10_market_qualification_gate.py
+      - scripts/test_cfb_week10_market_qualification_gate.py
+      - .github/workflows/cfb_week10_market_gate_regression.yml
+  workflow_dispatch:
+jobs:
+  gate-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify Python source compiles
+        run: python -m py_compile scripts/cfb_week10_market_qualification_gate.py scripts/test_cfb_week10_market_qualification_gate.py
+      - name: Run exact checked-out regression suite
+        run: cd scripts && python -m unittest -v test_cfb_week10_market_qualification_gate
