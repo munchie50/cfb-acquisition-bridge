@@ -1,10 +1,8 @@
 name: CFB Weekly Monday Source Readiness
 
 on:
-  schedule:
-    # 15:00 UTC = 10:00 CT while CDT is active. Governance uses America/Chicago;
-    # actual immutable cutoff is recorded by the preflight, so DST does not alter chronology.
-    - cron: '0 15 * * 1'
+  # Superseded by cfb_monday_source_readiness_replacement_qa.yml after verified QA run 41475977584.
+  # Preserve manual rollback; recurring schedule intentionally retired.
   workflow_dispatch:
 
 permissions:
