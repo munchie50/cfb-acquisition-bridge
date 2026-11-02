@@ -1,9 +1,9 @@
 name: CFB Monday Source Readiness Replacement QA
 
 on:
-  push:
-    paths:
-      - '.github/workflows/cfb_monday_source_readiness_replacement_qa.yml'
+  schedule:
+    # Monday 15:17 UTC; 09:17 CST / 10:17 CDT. Offset reduces top-of-hour contention.
+    - cron: '17 15 * * 1'
   workflow_dispatch:
 
 permissions:
