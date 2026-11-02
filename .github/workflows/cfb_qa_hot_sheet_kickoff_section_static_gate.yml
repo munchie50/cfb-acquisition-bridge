@@ -150,7 +150,7 @@ jobs:
           python -m unittest discover -s scripts -p test_cfb_recovery_consumer_preflight.py
           python -m unittest discover -s scripts -p test_cfb_planned_append_metadata.py
       - name: Validate complete current recovery consumer bindings
-        run: python scripts/cfb_recovery_consumer_preflight.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md
+        run: python scripts/cfb_recovery_consumer_preflight.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_249.md
       - name: Validate selected money record and its historical execution snapshot
         run: |
           PYTHONPATH=scripts python -c 'import sys; from test_cfb_week7_opening_display_gate import snapshot; sys.stdout.write(snapshot("evidence/operational/CFB_EXECUTION_LEDGER.md","75caee4052e02ea7d2453d1d37fd3866e13ecc07"))' > "$RUNNER_TEMP/cfb_funding_execution_snapshot.md"
