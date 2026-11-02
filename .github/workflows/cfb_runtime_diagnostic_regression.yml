@@ -1,0 +1,28 @@
+name: CFB Runtime Diagnostic Regression
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'qa/cfb_runtime_failure_trace_readonly.py'
+      - 'qa/test_cfb_runtime_failure_trace_readonly.py'
+      - '.github/workflows/cfb_runtime_diagnostic_regression.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnostic-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Run read-only failure-classifier regression
+        run: |
+          set -euo pipefail
+          cd qa
+          python -m unittest -v test_cfb_runtime_failure_trace_readonly.py
+      - name: Replay observed DNS checkout failure
+        run: |
+          set -euo pipefail
+          python qa/cfb_runtime_failure_trace_readonly.py --stage checkout --outcome BLOCKED --error 'fatal: Could not resolve host: github.com' --correlation-id CFB-DNS-REPLAY | python -c 'import json,sys; x=json.load(sys.stdin); assert x["failure_category"]=="DNS_RESOLUTION"; assert x["scope"]=="DIAGNOSTIC_ONLY_NO_PRODUCTION_ACCEPTANCE"; print("DNS_REPLAY_PASS")'
