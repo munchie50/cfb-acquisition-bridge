@@ -148,6 +148,39 @@ jobs:
           (root/"CFB_WEEKLY_CANDIDATE_BOUNDARY_MANIFEST.json").write_text(json.dumps(m,indent=2,sort_keys=True)+"\n")
           print("CFB_WEEKLY_TUESDAY_CANDIDATE_BOUNDARY_READY_NOT_ACCEPTED",pre["cutoff_utc"],len(files))
           PY
+      - name: Retain read-only stage diagnostics
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          SOURCE_GATE: ${{ steps.source_gate.outputs.candidate_needed }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: |
+          mkdir -p runtime-diagnostics
+          python - <<'PY'
+          import json, os
+          from datetime import datetime, timezone
+          from pathlib import Path
+          data={
+            "schema":"CFB_WEEKLY_CANDIDATE_RUNTIME_DIAGNOSTIC_V1",
+            "observed_utc":datetime.now(timezone.utc).isoformat(),
+            "github_run_id":os.environ["RUN_ID"],
+            "github_run_attempt":os.environ["RUN_ATTEMPT"],
+            "job_status":os.environ["JOB_STATUS"],
+            "candidate_needed":os.environ.get("SOURCE_GATE") or "UNKNOWN",
+            "scope":"DIAGNOSTIC_ONLY_NOT_SCIENTIFIC_ACCEPTANCE",
+            "next_action":"Inspect named failed job step and logs; do not infer failure category without evidence" if os.environ["JOB_STATUS"]!="success" else "Independently reconcile candidate artifact if produced",
+          }
+          Path("runtime-diagnostics/trace.json").write_text(json.dumps(data,indent=2,sort_keys=True)+"\\n")
+          PY
+      - name: Upload diagnostic trace even when producer fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-weekly-tuesday-runtime-diagnostic
+          path: runtime-diagnostics/
+          if-no-files-found: warn
+          retention-days: 30
       - uses: actions/upload-artifact@v4
         if: steps.source_gate.outputs.candidate_needed == 'true'
         with:
