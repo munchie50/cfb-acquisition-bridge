@@ -171,7 +171,7 @@ jobs:
             "scope":"DIAGNOSTIC_ONLY_NOT_SCIENTIFIC_ACCEPTANCE",
             "next_action":"Inspect named failed job step and logs; do not infer failure category without evidence" if os.environ["JOB_STATUS"]!="success" else "Independently reconcile candidate artifact if produced",
           }
-          Path("runtime-diagnostics/trace.json").write_text(json.dumps(data,indent=2,sort_keys=True)+"\\n")
+          Path("runtime-diagnostics/trace.json").write_text(json.dumps(data,indent=2,sort_keys=True)+"\n")
           PY
       - name: Upload diagnostic trace even when producer fails
         if: always()
