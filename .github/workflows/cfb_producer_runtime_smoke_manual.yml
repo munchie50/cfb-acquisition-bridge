@@ -58,6 +58,16 @@ jobs:
           set -euo pipefail
           cd qa
           python -m unittest -v test_cfb_week10_source_preflight_readonly.py
+      - name: Execute Monday recovery production-gate regressions (no publication)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest -v \
+            scripts.test_cfb_week9_publication \
+            scripts.test_cfb_neutral_publication_gate \
+            scripts.test_cfb_recovery_consumer_preflight \
+            scripts.test_cfb_week10_market_qualification_gate \
+            scripts.test_cfb_week10_fallback_branch_inventory
       - name: Run isolated failure classifier regression
         shell: bash
         run: |
