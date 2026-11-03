@@ -18,3 +18,6 @@
 Use existing scheduled Market Monitor and Evening Availability tasks; no fifth task. On next execution, fresh-read this handoff, accepted source pointer and canonical decision ledger; fetch official MAC report at/after published window and operator-attested offers. Resolve WAIT where evidence supports, do not auto-upgrade. Run canonical publication gates before changing CURRENT_HOT_SHEET. Do not call original Monday scheduled receipt PASS: CFBMM-SCHED5-20261102T190247151Z remains RUN_INCOMPLETE due DNS checkout.
 
 Status: MANUAL_RECOVERY_PARTIAL_COMPLETE / EVIDENCE_GATED_REMAINDER. This is not a completed Monday production closeout.
+
+## Subsequent official-source readback
+A fresh official MAC availability-page retrieval on Monday evening Nov 2 again showed REPORT PENDING for both Nov 3 games. Published expected report times remain Tuesday 5PM and 6PM Central. No player-specific clearance was available. Do not interpret pending reports as healthy rosters. No new operator-attested executable quote bundle was obtained in that check; market and publication gates remain blocked.
