@@ -21,3 +21,9 @@ Status: MANUAL_RECOVERY_PARTIAL_COMPLETE / EVIDENCE_GATED_REMAINDER. This is not
 
 ## Subsequent official-source readback
 A fresh official MAC availability-page retrieval on Monday evening Nov 2 again showed REPORT PENDING for both Nov 3 games. Published expected report times remain Tuesday 5PM and 6PM Central. No player-specific clearance was available. Do not interpret pending reports as healthy rosters. No new operator-attested executable quote bundle was obtained in that check; market and publication gates remain blocked.
+
+## Tuesday operational dependency clarification (2026-11-03T01:26:30.991Z independent read)
+- The official MAC availability page was freshly retrieved at 2026-11-03T01:26:30.991Z; it still displayed REPORT PENDING for the Nov3 Ohio/Akron and Buffalo/Miami (OH) game report windows. The listed 6PM/7PM Eastern release times correspond to 5PM/6PM Central. This is pre-release WAIT, not confirmed player availability or absence.
+- Existing Market Monitor is scheduled at 7AM and 1PM Central daily. Existing Evening Availability is Wednesday/Thursday/Friday at 7:30PM Central, not Tuesday. Consequently neither established late-evening availability task nor a post-release Tuesday Market Monitor run is scheduled to consume the official reports before Tuesday kickoff. This is a prospective Tuesday coverage gap; no scheduler mutation was authorized by this handoff.
+- Tuesday operator instruction: before the established practical betting cutoff, obtain genuine book/venue-executable quote evidence and independent official material evidence; if those sources are unavailable at decision time, preserve explicit WAIT/NO ACTION rather than post-kickoff retroactive recommendations. Existing four-task constraint and no-fifth-task rule remain in force.
+- Qualification, canonical decision producer and publication remain NOT_RUN in this checkpoint. Do not claim source readback alone closes Monday production.
