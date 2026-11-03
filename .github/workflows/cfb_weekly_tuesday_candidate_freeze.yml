@@ -1,6 +1,9 @@
 name: CFB Weekly Tuesday Candidate Freeze
 
 on:
+  push:
+    paths:
+      - '.github/workflows/cfb_weekly_tuesday_candidate_freeze.yml'
   schedule:
     # 15:00 UTC = 10:00 CT while CDT is active. Actual cutoff is captured in UTC.
     - cron: '0 15 * * 2'
