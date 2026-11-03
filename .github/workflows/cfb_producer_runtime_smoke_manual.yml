@@ -1,5 +1,8 @@
 name: CFB producer runtime smoke (read-only)
 on:
+  push:
+    paths:
+      - '.github/workflows/cfb_producer_runtime_smoke_manual.yml'
   workflow_dispatch:
 permissions:
   contents: read
