@@ -62,7 +62,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python -m unittest -v \
+          PYTHONPATH=scripts python -m unittest -v \
             scripts.test_cfb_week9_publication \
             scripts.test_cfb_neutral_publication_gate \
             scripts.test_cfb_recovery_consumer_preflight \
