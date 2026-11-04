@@ -3,6 +3,13 @@ on:
   push:
     branches: [main]
     paths:
+      - 'scripts/cfb_week10_publication.py'
+      - 'scripts/test_cfb_week10_publication.py'
+      - 'scripts/cfb_week10_original_ancestry_recovery.py'
+      - 'scripts/cfb_week10_frozen_field_invariant.py'
+      - 'evidence/scheduler_qa/CFB_WEEK10_ORIGINAL_ANCESTRY_RECOVERY_20261104.json'
+      - 'evidence/CFB_WEEK10_ORIGINAL_LINEAGE_PUBLICATION_PROFILE_2026-11-04.md'
+      - 'evidence/operational/CFB_WEEK10_HOT_SHEET_*.md'
       - 'scripts/cfb_planned_append_metadata.py'
       - 'scripts/test_cfb_planned_append_metadata.py'
       - 'scripts/cfb_week8_publication.py'
@@ -108,6 +115,13 @@ on:
     branches: [main]
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
+      - 'scripts/cfb_week10_publication.py'
+      - 'scripts/test_cfb_week10_publication.py'
+      - 'scripts/cfb_week10_original_ancestry_recovery.py'
+      - 'scripts/cfb_week10_frozen_field_invariant.py'
+      - 'evidence/scheduler_qa/CFB_WEEK10_ORIGINAL_ANCESTRY_RECOVERY_20261104.json'
+      - 'evidence/CFB_WEEK10_ORIGINAL_LINEAGE_PUBLICATION_PROFILE_2026-11-04.md'
+      - 'evidence/operational/CFB_WEEK10_HOT_SHEET_*.md'
       - 'scripts/cfb_neutral_publication_gate.py'
       - 'scripts/test_cfb_origin_text_index.py'
       - 'scripts/cfb_hot_sheet_readiness.py'
@@ -210,6 +224,7 @@ jobs:
           python -m unittest discover -s scripts -p test_cfb_week8_publication.py
           python -m unittest discover -s scripts -p test_cfb_week8_closed_conditional.py
           python -m unittest discover -s scripts -p 'test_cfb_week9*.py'
+          python -m unittest discover -s scripts -p test_cfb_week10_publication.py
           python -m unittest discover -s scripts -p test_cfb_week7_accepted_s0_ancestry_audit.py
           python -m unittest discover -s scripts -p test_cfb_week7_first_frozen_projection_gate.py
           python -m unittest discover -s scripts -p test_cfb_week7_frozen_field_invariant.py
@@ -266,6 +281,9 @@ jobs:
             evidence/operational/CFB_WEEK9_HOT_SHEET_*)
               python scripts/cfb_week9_frozen_field_invariant.py --sheet "$cfb_current_sheet" --first "$RUNNER_TEMP/cfb_first_frozen.zip" --lineage evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json
               python scripts/cfb_saved_publication_audit.py --profile WEEK9 --recover-saved-inputs --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md --lineage evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json --as-of "$(date -u +%Y-%m-%dT%H:%M:%SZ)" ;;
+            evidence/operational/CFB_WEEK10_HOT_SHEET_*)
+              python scripts/cfb_week10_frozen_field_invariant.py --sheet "$cfb_current_sheet" --first "$RUNNER_TEMP/cfb_first_frozen.zip" --lineage evidence/scheduler_qa/CFB_WEEK10_ORIGINAL_ANCESTRY_RECOVERY_20261104.json
+              python scripts/cfb_saved_publication_audit.py --profile WEEK10 --recover-saved-inputs --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md --lineage evidence/scheduler_qa/CFB_WEEK10_ORIGINAL_ANCESTRY_RECOVERY_20261104.json --as-of "$(date -u +%Y-%m-%dT%H:%M:%SZ)" ;;
             *) echo "Unsupported current publication requires qualification"; exit 1 ;;
           esac
       - name: Report saved timing exceptions without certifying practical deadlines

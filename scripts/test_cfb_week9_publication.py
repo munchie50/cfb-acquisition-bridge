@@ -97,7 +97,7 @@ class Week9Tests(unittest.TestCase):
         with self.assertRaises(ValueError):
             normalize(self.capture, self.lineage, BY, source_url=WEEK9_URL.replace('week-9', 'week-8'), profile='WEEK9')
         with self.assertRaises(ValueError):
-            gate.profile_config('WEEK10')
+            gate.profile_config('WEEK11')
 
     def test_stale_or_future_source_rejected(self):
         for at in ('2026-10-25T16:10:00Z', '2026-10-25T15:40:00Z'):

@@ -42,6 +42,10 @@ def profile_config(profile):
         return {'week':9,'lineage':'57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9','count':56,'predictions':45,'exclusions':11,
                 'market_tag':'cfb-week9-market-v1','decision_tag':'cfb-week9-decision-v1',
                 'start':datetime(2026,10,27,tzinfo=CT),'end':datetime(2026,11,1,tzinfo=CT)}
+    if profile == 'WEEK10':
+        return {'week':10,'lineage':'47736c0fd9ff49545db7e46b508805658a1c7a92','count':63,'predictions':55,'exclusions':8,
+                'market_tag':'cfb-week10-market-v1','decision_tag':'cfb-week10-decision-v1',
+                'start':datetime(2026,11,3,tzinfo=CT),'end':datetime(2026,11,8,tzinfo=CT)}
     raise ValueError('unqualified publication profile')
 
 def keys(value,expected):
@@ -209,7 +213,7 @@ def conditional_boundary(row,packet,market,decision,profile):
     recommendation, expired renewal or current execution is authorized here.
     """
     cfg=profile_config(profile)
-    if profile not in ('WEEK8','WEEK9') or not closed_conditional(row,packet['as_of_utc']):
+    if profile not in ('WEEK8','WEEK9','WEEK10') or not closed_conditional(row,packet['as_of_utc']):
         return packet['as_of_utc'],None
     if row['state_evidence']==packet['cycle_id']:
         raise ValueError('closed conditional cannot originate in current cycle')
@@ -250,7 +254,7 @@ def state_evidence(row,packet,content,kickoff,now,decision_tag=DECISION_TAG,gaps
         if not cycle_at<=recorded<=clock(origin['as_of_utc']):raise ValueError('backdated typed decision')
         if kickoff is not None and clock(origin['as_of_utc'])>=kickoff:raise ValueError('postkickoff decision reconstruction')
     if kickoff is not None and kickoff<=now:
-        retained=(decision_tag in (profile_config('WEEK8')['decision_tag'],profile_config('WEEK9')['decision_tag']) and (closed_conditional(row,now.isoformat()) or (decision_tag==profile_config('WEEK9')['decision_tag'] and row['state']==EXPIRED_UNPUBLISHED))
+        retained=(decision_tag in (profile_config('WEEK8')['decision_tag'],profile_config('WEEK9')['decision_tag'],profile_config('WEEK10')['decision_tag']) and (closed_conditional(row,now.isoformat()) or (decision_tag==profile_config('WEEK9')['decision_tag'] and row['state']==EXPIRED_UNPUBLISHED))
                   and proof!=packet['cycle_id'])
         if (row['state']!='PASS' and not retained) or recorded>=kickoff:raise ValueError('elapsed game requires proved prospective PASS')
 
@@ -267,8 +271,11 @@ def inputs(market,decision,lineage,as_of,profile='WEEK7'):
     if (m['cycle_id'],m['as_of_utc'])!=(d['cycle_id'],d['as_of_utc']):raise ValueError('market/decision boundary mismatch')
     gaps=None
     if any(r.get('state')=='HISTORICAL_GAP' for r in d['rows']):
-        if profile!='WEEK8' or not weekly:raise ValueError('historical gap requires qualified Week8 recovery')
-        from cfb_week8_publication import bootstrap_check,recovery_context
+        if profile not in ('WEEK8','WEEK10') or not weekly:raise ValueError('historical gap requires qualified recovery profile')
+        if profile=='WEEK10':
+            from cfb_week10_publication import bootstrap_check,recovery_context
+        else:
+            from cfb_week8_publication import bootstrap_check,recovery_context
         bootstrap_check(market,decision,lineage)
         gaps=recovery_context(market,decision,lineage)
         if gaps is None:raise ValueError('historical gap requires recovery declaration')
@@ -398,7 +405,7 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
         cutoff=('Reconcile '+y['reconciliation_utc'] if y['reconciliation_utc'] else 'Reconciliation unavailable')+'; planning cutoff '+(y['planning_cutoff_utc'] or 'UNAVAILABLE')+'; CUTOFF_AUTHORITY_UNVERIFIED'
         if m['schema']==WEEKLY_MARKET_SCHEMA:
             cutoff+='; state recorded '+y['state_recorded_at_utc']+('; source-declared minute precision' if y['state_evidence']==PASS_ANCESTOR else '')+'; evidence '+y['state_evidence']
-        model_display=c[gid]['display'].replace('|','&#124;') if profile in ('WEEK8','WEEK9') else c[gid]['display']
+        model_display=c[gid]['display'].replace('|','&#124;') if profile in ('WEEK8','WEEK9','WEEK10') else c[gid]['display']
         row=[display,c[gid]['away_team']+' @ '+c[gid]['home_team'],model_display,current,movement,y['state'],y['reason'],cutoff,'Not established; no executable recommendation']
         if y['state']=='CONDITIONAL':
             from cfb_conditional_recommendation_profile import display as conditional_display
@@ -424,7 +431,7 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
         lines[2]='**Presentation schema:** CFB_WEEKLY_CONDITIONAL_PUBLICATION_V3'
         lines[5]='**Scope:** canonical conditional display from immutable prospective review; no verified venue offer, automatic bet or full-run acceptance.'
         lines[8]='**Decision summary:** '+str(sum(r['state']=='INCONCLUSIVE' for r in dr.values()))+' INCONCLUSIVE; '+str(sum(r['state']=='PASS' for r in dr.values()))+' PASS; '+str(sum(r['state']=='CONDITIONAL' for r in dr.values()))+' CONDITIONAL; venue confirmation separate; no recorded execution created.'
-    closed_count=sum(profile in ('WEEK8','WEEK9') and closed_conditional(r,as_of) for r in dr.values())
+    closed_count=sum(profile in ('WEEK8','WEEK9','WEEK10') and closed_conditional(r,as_of) for r in dr.values())
     if closed_count:lines+=['**Closed conditional history:** '+str(closed_count)+' retained pre-event reviews; windows closed; excluded from current opportunities; actual executions remain separately recorded.','']
     unpublished_count=sum(r['state']==EXPIRED_UNPUBLISHED for r in dr.values())
     if unpublished_count:lines+=['**Expired before publication:** '+str(unpublished_count)+' immutable reviews; missed publication preserved; no originating canonical recommendation, active opportunity or execution.','']
@@ -435,7 +442,7 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
     if gap_count:lines+=['**Permanent coverage gaps:** '+str(gap_count)+' HISTORICAL_GAP; missing pre-event decisions, never PASS or recommendations. Remaining research and natural delivery are not certified by this display.','']
     section_order=SECTIONS
     if m['schema']==WEEKLY_MARKET_SCHEMA:
-        active=[s for s in SECTIONS if any(dr[gid]['state'] not in ('PASS','HISTORICAL_GAP',EXPIRED_UNPUBLISHED) and not (profile in ('WEEK8','WEEK9') and closed_conditional(dr[gid],as_of)) for _,gid,_ in groups[s])]
+        active=[s for s in SECTIONS if any(dr[gid]['state'] not in ('PASS','HISTORICAL_GAP',EXPIRED_UNPUBLISHED) and not (profile in ('WEEK8','WEEK9','WEEK10') and closed_conditional(dr[gid],as_of)) for _,gid,_ in groups[s])]
         primary=active[0] if active else 'NONE'
         lines+=['**Primary section:** '+primary+' — '+('earliest open neutral decision section; saved kickoff qualification labels remain applicable' if active else 'no open neutral decisions; all governed games remain visible below'), '']
         section_order=active+[s for s in SECTIONS if s not in active]
@@ -445,7 +452,7 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
         lines+=['| Kickoff CT | Game | Engine Prediction (Frozen) | Current qualified market / price | Movement from first observation | Decision state | Pending reason / information | Reconciliation deadline / final execution cutoff | Acceptable number / execution window |','|---|---|---|---|---|---|---|---|---|']
         for _,gid,r in sorted(groups[s]):lines+=['| '+' | '.join(r)+' |']
         lines+=['']
-    watchlist='Conditional recommendations are shown in their chronological rows; all original limits apply; venue confirmation pending.' if conditional and any(r['state']=='CONDITIONAL' and not (profile in ('WEEK8','WEEK9') and closed_conditional(r,as_of)) for r in dr.values()) else 'No actionable neutral-schema recommendations. See chronological rows for pending information.'
+    watchlist='Conditional recommendations are shown in their chronological rows; all original limits apply; venue confirmation pending.' if conditional and any(r['state']=='CONDITIONAL' and not (profile in ('WEEK8','WEEK9','WEEK10') and closed_conditional(r,as_of)) for r in dr.values()) else 'No actionable neutral-schema recommendations. See chronological rows for pending information.'
     lines+=['## PRIORITY WATCHLIST','',watchlist,'','## FULL WEEKLY SLATE','',str(cfg['count'])+' governed games; exactly once across chronological sections. Counts: '+json.dumps({s:len(groups[s]) for s in SECTIONS})+'.','']
     return '\n'.join(lines)
 
@@ -457,6 +464,9 @@ def audit(sheet,market,decision,execution,scorecard,lineage,as_of,profile='WEEK7
 
 def bootstrap(market,decision,lineage,profile='WEEK7'):
     profile_config(profile)
+    if profile == 'WEEK10':
+        from cfb_week10_publication import bootstrap_check
+        return bootstrap_check(market,decision,lineage)
     if profile == 'WEEK9':
         from cfb_week9_publication import bootstrap_check
         return bootstrap_check(market,decision,lineage)
@@ -487,7 +497,7 @@ def bootstrap(market,decision,lineage,profile='WEEK7'):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     for n in ['market','decision','execution','scorecard','lineage']:p.add_argument('--'+n,required=True,type=Path)
-    p.add_argument('--profile',choices=('WEEK7','WEEK8','WEEK9'),default='WEEK7')
+    p.add_argument('--profile',choices=('WEEK7','WEEK8','WEEK9','WEEK10'),default='WEEK7')
     p.add_argument('--as-of',required=True);p.add_argument('--sheet',type=Path);p.add_argument('--render-output',type=Path)
     a=p.parse_args();values=[getattr(a,n).read_text() for n in ['market','decision','execution','scorecard','lineage']]
     if bool(a.sheet)==bool(a.render_output):p.error('choose exactly one --sheet or --render-output')
