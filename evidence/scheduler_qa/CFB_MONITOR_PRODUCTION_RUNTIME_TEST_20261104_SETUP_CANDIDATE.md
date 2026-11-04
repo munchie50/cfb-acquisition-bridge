@@ -1,0 +1,8 @@
+# Production repair / scheduled test setup candidate
+Observed UTC 2026-11-04T19:31:16Z.
+Authorization: user explicitly approved production fix and temporary fifth scheduled task slot on November4. This exception authorizes one diagnostic, not fifth recurring production task.
+Primary6ae766e788d881919726d0eeb44450dd runtime capability trace installed after startup instructions; full old155? originalprompt14514characters preserved plus1065character diagnostic block. Exact updated15579characters independently read back. All existing schedules/titles/enabledstates/otherprompts unchanged.
+Protocol evidence/scheduler_qa/CFB_MONITOR_PRODUCTION_RUNTIME_TEST_20261104.md @ c7c568fcdb6b4c789cc9791f482e31339a046b47 independently read back.
+Test 6aeb87dd781481919f9f190e69cb5422, titleCFB Monitor Production Test, schedule "BEGIN:VEVENT\nDTSTART:20261104T193237Z\nEND:VEVENT", timezoneAmerica/Chicago, exact one-time, noRRULE. Exact prompt readback passed. Five enabled total = four recurringproduction + one temporaryshadowtest. Liveownership remains soleMonitor; no canonical/model/wager/moneychanges.
+Scope: natural scheduled runtime/tool availability, primarysource, unchanged producer scratchproposals and originalinvariant; diagnostic evidence only. Actualexecution outcome PENDING; environment_selection inherited/environmentsnull do not establish actualruntime. No run_now/inline substitute. No newworkflow/infrastructure, credentials or paidservice.
+Configuration component VERIFIED; production operational result remains RUN_INCOMPLETE until actual path/natural proof. Persist separate setupclosure only after independent candidate readback. Testnormalone-offexpiry restores fifthslot; no recurringproductionmutation.
