@@ -1,0 +1,73 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401862817",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-04T19:18:19Z",
+  "original_lineage_blob": "47736c0fd9ff49545db7e46b508805658a1c7a92",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "home",
+  "rationale": "FAU +7 at -112 is a controlled-Beta preference for the home touchdown cushion and credible passing/backdoor route. Strong current Veltkamp/Messer/Valsin production supports competitiveness. UTSA defense, run control and five extra rest days are substantial ordinary risks; no outright upset or calibrated edge is asserted.",
+  "model_review": "Original FIRST_FROZEN UTSA -5.1957/total54.3155 stays immutable and is not treated as a literal present fair price. Separately accepted Nov3 REFRESH FAU+0.474 margin/total61.823 supports competitiveness, not a guaranteed cover or independent calibrated probability. FAU offense5.725ypp and defense7.249 vsUTSA6.191/5.980 show clear defensive risk. Current conference production and rest are checked independently; historical low total alone is not an under.",
+  "material_sources": [
+    {
+      "url": "https://fausports.com/news/2026/11/2/football-game-notes-9",
+      "retrieved_at": "2026-11-04T19:18:19Z",
+      "finding": "Independently reopened by this recovered-by clock; source publishedNov2. Current Veltkamp/Messer/Valsin passing roles and Thursday19:30ETkickoff corroborate home scoring/competitiveness; no final personnel clearance."
+    },
+    {
+      "url": "https://theamerican.org/stats.aspx?path=football&year=2026",
+      "retrieved_at": "2026-11-04T19:18:19Z",
+      "finding": "Current conference statistics independently reopened: FAU37.8PPG/35.8allowed versusUTSA33.5/26.0; FAU higher play volume supports scoring/backdoor but defensive weakness is a concrete countercase."
+    },
+    {
+      "url": "https://fausports.com/news/2026/10/30/football-owls-fall-despite-record-nights-from-messer-veltkamp",
+      "retrieved_at": "2026-11-04T19:18:19Z",
+      "finding": "Recent452passing yards/fiveTD and strong receiving support a competitive passing route, but48points conceded underscores defense risk; do not assume record production repeats."
+    }
+  ],
+  "uncertainty": "Controlled Beta, not calibrated EV. FAU defensive weakness and UTSA12vs7rest/run strength can produce a two-score loss. Current school preview still profiles Veltkamp with Messer/Valsin; no full game-day roster clearance or weather clearance claimed. Adverse QB/receiver/line news requires reconsideration. Venue confirmation pending.",
+  "decision_rule": "Only FAU+7 or better at -112 or better for this newly earned qualitative review; +7 protects a seven-point loss and must not be downgraded to+6.5. -112 is the observed price and this review's outer price limit, not an optimized EV threshold or automatic universal ceiling. No stake, parlay or execution inferred.",
+  "source_qualification": "Actual primary ESPN summary event401862817 identifies DraftKings100, homeFAU2226 awayUTSA2636 and home-spread+7/-112; selection-specific linked event34913358/outcome0HC86962987P700_1. Response100953bytes SHA25698a453d531902e8d00a4dce260d5adc4c55ea7060874e1095d8e7c23f03a02ee. Exact side and paired quote corroborated. Retrieval-only unknown update, not consensus or venue execution.",
+  "market_reference": {
+    "game_id": "401862817",
+    "market": "SPREAD",
+    "selection": "home",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-06T00:30:00Z",
+    "kickoff_source_url": "https://fausports.com/news/2026/11/2/football-game-notes-9",
+    "collection_start": "2026-11-04T19:14:56.244157+00:00",
+    "collection_end": "2026-11-04T19:15:01.869189+00:00",
+    "quotes": [
+      {
+        "game_id": "401862817",
+        "market": "SPREAD",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913358?outcomes=0HC86962987P700_1",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862817",
+        "retrieved_at": "2026-11-04T19:15:01.869189+00:00",
+        "offer_updated_at": null,
+        "line": 7,
+        "price": -112
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "home",
+    "line": 7,
+    "minimum_price": -112,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-05T19:00:00Z",
+  "planning_cutoff_utc": "2026-11-05T19:00:00Z",
+  "cutoff_basis": "New review expires at next13:00CT Thursday scheduled review target before18:30CTkickoff. This is a conservative review-validity boundary, not an invented user trip or venue deadline; no execution authorization. Any later review requires genuine new material/price reconciliation.",
+  "execution_window": {
+    "start_utc": "2026-11-04T19:18:19Z",
+    "end_utc": "2026-11-05T19:00:00Z"
+  }
+}
