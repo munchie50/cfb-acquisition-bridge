@@ -52,6 +52,22 @@ class Week10Tests(unittest.TestCase):
         values.update(changes)
         return cls.build(**values)
 
+    def test_all_dated_retained_sources_supply_earliest_observations(self):
+        rows = week.first_rows(self.lineage)
+        by_clock = {}
+        for row in rows.values():
+            if row['first'] is not None:
+                stamp = row['first']['retrieved_at']
+                by_clock[stamp] = by_clock.get(stamp, 0) + 1
+        self.assertEqual(sum(by_clock.values()), 60)
+        self.assertEqual(by_clock[week.FIRST_SOURCE['recovered_by']], 17)
+        self.assertEqual(by_clock[week.RETAINED_SOURCES[-1]['recovered_by']], 43)
+        changed = copy.deepcopy(week.RETAINED_SOURCES)
+        changed[-1]['blob'] = '0' * 40
+        from unittest.mock import patch
+        with patch.object(week, 'RETAINED_SOURCES', changed), self.assertRaises(ValueError):
+            week.first_rows(self.lineage)
+
     def test_exact_original_identity_and_whole_render(self):
         result = gate.audit(self.sheet, self.pm, self.pd, 'execution fixture', 'scorecard fixture', self.lineage, AT, 'WEEK10')
         self.assertIn('PASS', result['verdict'])

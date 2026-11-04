@@ -30,6 +30,12 @@ FIRST_SOURCE = {
 }
 
 
+RETAINED_SOURCES = [FIRST_SOURCE, {
+    'path': 'evidence/operational/CFB_WEEK10_R90_CBS_FRESH_SOURCE_CAPTURE_20261101T173123853Z.md',
+    'blob': '1b9605ef579aad8e55e2a7f116f7b817f2bb988a',
+    'recovered_by': '2026-11-01T17:31:25.116Z',
+}]
+
 WEEK10_LINEAGE_SHA = '47736c0fd9ff49545db7e46b508805658a1c7a92'
 RECOVERY_AUTHORITY = 'db05e58bb7c76a16837f3a2ad50804e1936951f0'
 RECOVERY_PATH = 'evidence/CFB_WEEK10_ORIGINAL_LINEAGE_PUBLICATION_PROFILE_2026-11-04.md'
@@ -63,20 +69,25 @@ def source_offer(game, at):
 
 
 def first_rows(lineage):
-    raw = (ROOT / FIRST_SOURCE['path']).read_text()
-    if gate.blob(raw) != FIRST_SOURCE['blob']:
-        raise ValueError('Week10 first source bytes changed')
-    parsed = board(raw, lineage, FIRST_SOURCE['recovered_by'])
-    if parsed['coverage']['future_games'] != 63:
-        raise ValueError('Week10 first source cannot reconstruct elapsed observations')
-    rows = {}
-    for game in parsed['games']:
-        row = {'game_id': game['game_id'], 'kickoff_utc': game['source_kickoff_utc'],
-               'kickoff_source_url': WEEK10_URL, 'kickoff_status': 'RETAINED_UNVERIFIED',
-               'first': None, 'current': None, 'current_availability': 'UNAVAILABLE',
-               'retained': None, 'diagnostic': None}
-        apply(row, source_offer(game, FIRST_SOURCE['recovered_by']), FIRST_SOURCE['recovered_by'])
-        rows[game['game_id']] = row
+    rows = None
+    for ref in RETAINED_SOURCES:
+        raw = (ROOT / ref['path']).read_text()
+        if gate.blob(raw) != ref['blob']:
+            raise ValueError('Week10 retained source bytes changed')
+        parsed = board(raw, lineage, ref['recovered_by'])
+        if parsed['coverage']['future_games'] != 63:
+            raise ValueError('Week10 retained source cannot reconstruct elapsed observations')
+        if rows is None:
+            rows = {game['game_id']: {
+                'game_id': game['game_id'], 'kickoff_utc': game['source_kickoff_utc'],
+                'kickoff_source_url': WEEK10_URL, 'kickoff_status': 'RETAINED_UNVERIFIED',
+                'first': None, 'current': None, 'current_availability': 'UNAVAILABLE',
+                'retained': None, 'diagnostic': None,
+            } for game in parsed['games']}
+        for game in parsed['games']:
+            row = rows[game['game_id']]
+            row['kickoff_utc'] = game['source_kickoff_utc']
+            apply(row, source_offer(game, ref['recovered_by']), ref['recovered_by'])
     return rows
 
 
@@ -145,7 +156,7 @@ def bootstrap_check(market, decision, lineage):
             raise ValueError('Week10 prior-week parent bytes changed')
         declaration = json.loads(root[1], object_pairs_hook=gate.unique)
         expected_declaration = {'profile': PROFILE, 'original_lineage_blob': WEEK10_LINEAGE_SHA,
-                                'first_source': FIRST_SOURCE, 'source_identity_blob': SOURCE_IDENTITY_SHA,
+                                'first_source': FIRST_SOURCE, 'retained_sources': RETAINED_SOURCES, 'source_identity_blob': SOURCE_IDENTITY_SHA,
                                 'recovery': declaration.get('recovery')}
         if declaration != expected_declaration:
             raise ValueError('Week10 source root mismatch')
@@ -154,7 +165,7 @@ def bootstrap_check(market, decision, lineage):
         if not blocks or re.sub(r'^```' + tag + r'\n.*?^```[ \t]*$', '', tail, flags=re.M | re.S).strip():
             raise ValueError('missing or untyped Week10 stream')
         obj = json.loads(blocks[0][1], object_pairs_hook=gate.unique)
-        if gate.clock(obj['as_of_utc']) < gate.clock(FIRST_SOURCE['recovered_by']):
+        if gate.clock(obj['as_of_utc']) < gate.clock(RETAINED_SOURCES[-1]['recovered_by']):
             raise ValueError('Week10 initialization before source')
         if len(obj['rows']) != 63 or {r['game_id'] for r in obj['rows']} != set(expected):
             raise ValueError('Week10 initial identity union mismatch')
@@ -165,7 +176,7 @@ def bootstrap_check(market, decision, lineage):
         earliest = expected[row['game_id']]['first']
         if earliest is not None and row.get('first') != earliest:
             raise ValueError('Week10 earliest observation changed or lost')
-        if earliest is None and row.get('first') is not None and gate.clock(row['first']['retrieved_at']) <= gate.clock(FIRST_SOURCE['recovered_by']):
+        if earliest is None and row.get('first') is not None and gate.clock(row['first']['retrieved_at']) <= gate.clock(RETAINED_SOURCES[-1]['recovered_by']):
             raise ValueError('Week10 unknown first cannot be backfilled')
     recovery_context(market, decision, lineage)
     return 'PASS_WEEK10_ORIGINAL_AND_FIRST_SOURCE_BOOTSTRAP_ONLY'
@@ -189,10 +200,10 @@ def compile(market, decision, capture, lineage, cycle, as_of, recovered_by, deci
         if gate.blob(market) != MARKET_PARENT or gate.blob(decision) != DECISION_PARENT:
             raise ValueError('unqualified Week9-to-Week10 parent')
         rows = first_rows(lineage)
-        if source_at < gate.clock(FIRST_SOURCE['recovered_by']):
+        if source_at < gate.clock(RETAINED_SOURCES[-1]['recovered_by']):
             raise ValueError('Week10 source precedes retained first source')
         root = packet({'profile': PROFILE, 'original_lineage_blob': WEEK10_LINEAGE_SHA,
-                       'first_source': FIRST_SOURCE, 'source_identity_blob': SOURCE_IDENTITY_SHA,
+                       'first_source': FIRST_SOURCE, 'retained_sources': RETAINED_SOURCES, 'source_identity_blob': SOURCE_IDENTITY_SHA,
                        'recovery': {'authority_blob': RECOVERY_AUTHORITY, 'as_of_utc': as_of,
                                     'missing_decision_game_ids': sorted(RECOVERY_GAPS)}}, SOURCE_TAG).lstrip('\n')
         pm, pd = market + root, decision + root
