@@ -1,0 +1,342 @@
+{
+  "schema": "CFB_SCHEDULED_SHADOW_DIAGNOSTIC_V1",
+  "correlation_id": "cfb-shadow-20261104T193718Z-xku7juki7pm",
+  "trigger": "SCHEDULED_ONE_TIME_TEST",
+  "invocation_id": "49c3d929-b38c-832f-bbac-1a354ab07f17",
+  "invocation_id_basis": "observed peek record; startup proved separately by active clock/write/readback",
+  "observed_at_utc": "2026-11-04T19:43:47Z",
+  "status": "TEST_INCOMPLETE",
+  "first_unproved_boundary": "Clean single-attempt exact-byte runtime bootstrap. Initial transported helper had one extra trailing newline and was executed; detected by independent byte/blob comparison. Exact helper then executed once into a second new scratch directory successfully. This does not satisfy the requested overall one-bootstrap protocol.",
+  "next_safe_action": "At the next existing natural primary Monitor invocation, recover exact helper bytes without patch-added newline; verify blob b13930cb714eb87c8dce6136ffab6fbceeb44898 BEFORE its single execution. No new test/task or run_now.",
+  "started": {
+    "path": "evidence/scheduler_qa/cfb-shadow-20261104T193718Z-xku7juki7pm_STARTED.json",
+    "blob": "99d79f784b60d27882420f85841277c764455a32",
+    "exact_readback": true
+  },
+  "authority": {
+    "main_commit": "ad1b44d9a16083fbf81c9439ce235efa2ee100db",
+    "index_path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_253.md",
+    "index_blob": "7540eb5ed31d453ee664c457ea30826d4ecd92cf",
+    "pointer_count": 354,
+    "pointer_readback_mismatches": 0,
+    "all_canonical_pointers_unchanged_at": "2026-11-04T19:43:30Z",
+    "current_pointers": [
+      {
+        "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+        "blob": "9a2391743e3b72840437e6b066f3225054cd7203",
+        "purpose": "CURRENT_MARKET_STATE:Week10actualmanual19:19packet;63IDs61future2elapsed;source19:15retrievalnotbookupdate"
+      },
+      {
+        "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+        "blob": "b0cd4391b01956aa7232980f53ac1a909da9e4e1",
+        "purpose": "CURRENT_DECISION_STATE:2conditional9PASS50pending2historicalgaps;actualpartialreview"
+      },
+      {
+        "path": "evidence/operational/CFB_MONEY_LEDGER.md",
+        "blob": "120a8078db0cf4688a3d70197611e230cd7d7d84",
+        "purpose": "CURRENT_MONEY_LEDGER:Oct31 $69.05 user-confirmed pre-settlement snapshot; no inferred payout or transaction"
+      },
+      {
+        "path": "evidence/operational/CFB_WEEK10_HOT_SHEET_2026-11-04_1319CT.md",
+        "blob": "f1426cac77367b0f2c17cf6d3a40b0436dc11f14",
+        "purpose": "CURRENT_HOT_SHEET:soleWeek10actual13:19CT2conditionalUMass/FAU;9PASS50pending2gaps"
+      },
+      {
+        "path": "evidence/operational/CFB_CBS_WEEK10_TABLE_CAPTURE_20261104T191505Z.md",
+        "blob": "83402679f4d22677dc1aa64aa12eedcf50ed7068",
+        "purpose": "CURRENT_SOURCE_RESPONSE:actual19:15Z63CBS tables126rows;FinalOpenquarantined"
+      },
+      {
+        "path": "evidence/operational/CFB_WEEK10_FIVE_GAME_DRAFTKINGS_BENCHMARK_20261104T191502Z.json",
+        "blob": "72255f5e5fe06819c7a36b302d7e25374ff8c4e8",
+        "purpose": "CURRENT_IDENTIFIED_BENCHMARK:5primaryDraftKingsresponses30pairedbranches19:15Z;updateUNKNOWNvenueunverified"
+      }
+    ],
+    "routine": "v5.0 + v5.1 A/C + v5.2 D/E/F read; persistence and two-phase closure read"
+  },
+  "primary_prompt_checks": {
+    "exact_source_profile_installed": true,
+    "decision_vs_venue_separation_installed": true,
+    "runtime_capability_trace_installed": true,
+    "mutation": false
+  },
+  "isolation": {
+    "primary_prompt_unchanged": true,
+    "primary_schedule_unchanged": true,
+    "enabled_production": [
+      "6ae766e788d881919726d0eeb44450dd",
+      "6ae76df2ece4819197f91fb10076dea7",
+      "6ae76c7a6d38819190b5cae3bdd6cc53",
+      "6ae76df60e0c819182e2cfab1b83846a"
+    ]
+  },
+  "actual_components": {
+    "runtime": {
+      "status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+      "head": "ad1b44d9a16083fbf81c9439ce235efa2ee100db",
+      "python": "3.12.14",
+      "immutable_review_count": 35,
+      "record_sha256": "42790113d7d2baa1431d8caccc77d753fb12319f64cc08d8eddbaf0a4f5adc5d",
+      "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "full_history": true
+    },
+    "acquisition": {
+      "401862817": {
+        "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862817",
+        "start": "2026-11-04T19:39:54.813238+00:00",
+        "recovered_by": "2026-11-04T19:39:58.397307+00:00",
+        "http_status": 200,
+        "bytes": 100953,
+        "sha256": "83df257cf7bbe32f7df9e36979ee5585e801e16b798b0c1546a5c47307570e51",
+        "headers": {
+          "content-type": "application/json;charset=UTF-8",
+          "date": "Wed, 04 Nov 2026 19:39:58 GMT"
+        }
+      },
+      "401866455": {
+        "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866455",
+        "start": "2026-11-04T19:39:49.702238+00:00",
+        "recovered_by": "2026-11-04T19:39:54.807296+00:00",
+        "http_status": 200,
+        "bytes": 100393,
+        "sha256": "b2323a1d47560d8fe236062d462abaa2b59df0b35bace585fdd0e035dfc676bf",
+        "headers": {
+          "content-type": "application/json;charset=UTF-8",
+          "date": "Wed, 04 Nov 2026 19:39:54 GMT"
+        }
+      },
+      "cbs": {
+        "url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-10/",
+        "start": "2026-11-04T19:39:58.399419+00:00",
+        "recovered_by": "2026-11-04T19:40:02.069645+00:00",
+        "http_status": 200,
+        "bytes": 2826468,
+        "sha256": "3bcc3ae334965122aee946e5de57a3b401cc72ffa08934f37e46c4bea9f702af",
+        "headers": {
+          "content-type": "text/html; charset=UTF-8",
+          "etag": "W/\"4e00c6e87adc9bb306a745594b75579e\"",
+          "date": "Wed, 04 Nov 2026 19:40:01 GMT"
+        },
+        "table_count": 63,
+        "capture_format": "DOM table text and original links; Final/Open quarantined"
+      }
+    },
+    "material": [
+      {
+        "url": "https://ballstatesports.com/news/2026/11/2/football-ball-state-visits-umass-to-begin-midweek-maction-schedule-in-november",
+        "http_status": 200,
+        "recovered_by": "2026-11-04T19:40:41.749773+00:00",
+        "sha256": "3c7c9c82b070661ee040df01e93c8ca28d372981ac6867f55c8a028c6c48c604",
+        "bytes": 875106
+      },
+      {
+        "url": "https://umassathletics.com/news/2026/10/30/football-begins-maction-on-wednesday-against-ball-state",
+        "http_status": 200,
+        "recovered_by": "2026-11-04T19:40:42.401397+00:00",
+        "sha256": "f3d1fab927739b827f415be49eece888bee9560fee9bddb5e3365b1d1a7751e0",
+        "bytes": 504023
+      },
+      {
+        "url": "https://fausports.com/news/2026/11/2/football-game-notes-9",
+        "http_status": 200,
+        "recovered_by": "2026-11-04T19:40:42.569435+00:00",
+        "sha256": "3c6304347a2af3838e8f2852e6b2b510dd31f5449d1812930f05b03848451d69",
+        "bytes": 527157
+      },
+      {
+        "url": "https://theamerican.org/stats.aspx?path=football&year=2026",
+        "error_type": "HTTPError",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://fausports.com/news/2026/10/30/football-owls-fall-despite-record-nights-from-messer-veltkamp",
+        "http_status": 200,
+        "recovered_by": "2026-11-04T19:40:42.581477+00:00",
+        "sha256": "e72f9c2ce57dbef017f1a3be9559bc622043363a93570af7246c94a209c7767f",
+        "bytes": 655380
+      }
+    ],
+    "compiler": {
+      "as_of": "2026-11-04T19:42:57.423354+00:00",
+      "source_recovered_by": "2026-11-04T19:40:02.069645+00:00",
+      "revalidation": [
+        {
+          "game_id": "401866455",
+          "provider_id": "100",
+          "provider": "DraftKings",
+          "teams": {
+            "home": "113",
+            "away": "2050"
+          },
+          "status": "pre",
+          "line": -2.5,
+          "price": -115,
+          "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913151?outcomes=0HC86962570N250_1",
+          "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866455",
+          "raw_sha256": "b2323a1d47560d8fe236062d462abaa2b59df0b35bace585fdd0e035dfc676bf",
+          "raw_bytes": 100393,
+          "recovered_by": "2026-11-04T19:39:54.807296+00:00",
+          "offer_updated_at": null,
+          "original_review": {
+            "path": "evidence/operational/recommendation_reviews/CFB_UMASS_POINTS_RECHECK_20261104T191608Z.json",
+            "commit": "735d2c9c7733bbf812165a8885ff319b2d8e0de9",
+            "blob": "14329717deeff1629d7b90f321a27cda4f1753ca"
+          },
+          "original_limit_and_expiry_unchanged": true,
+          "material_judgment": "Current official school previews and recap checked: supporting passing/defensive themes and ordinary countercases remain; no newly established adverse change found. No final personnel clearance. FAU conference stats endpoint404; prior accepted statistics retained as dated context, not refreshed."
+        },
+        {
+          "game_id": "401862817",
+          "provider_id": "100",
+          "provider": "DraftKings",
+          "teams": {
+            "home": "2226",
+            "away": "2636"
+          },
+          "status": "pre",
+          "line": 7,
+          "price": -112,
+          "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913358?outcomes=0HC86962987P700_1",
+          "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862817",
+          "raw_sha256": "83df257cf7bbe32f7df9e36979ee5585e801e16b798b0c1546a5c47307570e51",
+          "raw_bytes": 100953,
+          "recovered_by": "2026-11-04T19:39:58.397307+00:00",
+          "offer_updated_at": null,
+          "original_review": {
+            "path": "evidence/operational/recommendation_reviews/CFB_FAU_POINTS_CONDITIONAL_20261104T191819Z.json",
+            "commit": "79cc64ff6ae13859cdaa5422df5e4d25f22aea79",
+            "blob": "1fe244d4fd1a54309caef592f2e295763f3df136"
+          },
+          "original_limit_and_expiry_unchanged": true,
+          "material_judgment": "Current official school previews and recap checked: supporting passing/defensive themes and ordinary countercases remain; no newly established adverse change found. No final personnel clearance. FAU conference stats endpoint404; prior accepted statistics retained as dated context, not refreshed."
+        }
+      ],
+      "scope": "SCRATCH_SHADOW_ONLY; not live publication or full-slate research",
+      "compiler": "PASS",
+      "render_audit": {
+        "verdict": "PASS_CONDITIONAL_CANONICAL_PRESENTATION_ONLY",
+        "games": 63,
+        "sheet_blob": "267a07563a8b790b61163d2533e508381c06da31",
+        "scope": "typed canonical display only; no source truth/betting/natural-run acceptance"
+      },
+      "archive_invariant": {
+        "verdict": "PASS_WEEK10_ORIGINAL_FROZEN_FIELDS_ONLY",
+        "games": 63,
+        "predictions": 55,
+        "exclusions": 8,
+        "numeric_fields": 165,
+        "scope": "original fields only, not market/review/publication/betting acceptance"
+      },
+      "all_prior_market_bytes_preserved": true,
+      "all_prior_decision_bytes_preserved": true,
+      "hashes": {
+        "decision_rows.json": {
+          "git_blob": "976e6288024e43cea5fecb94ecfe12560b81e83b",
+          "sha256": "c732c269353c2e587975ffa6321bdeac9722e2281f949917bb70ae26e74c51b1",
+          "bytes": 30283
+        },
+        "market.md": {
+          "git_blob": "8bd7e934e600fdafe6dce4594aeab8e5e96e5623",
+          "sha256": "c24983e1eef04a768856db0a9b774560ef722b6a90ccb6d9d792ca1402158e6d",
+          "bytes": 4176831
+        },
+        "decision.md": {
+          "git_blob": "65607d6ac859b935b454fa3b57638a4f1207bdaf",
+          "sha256": "db19f7fbbf77812f50466ee7dd845a3f50184200ebbd12bc1930991e8f93b5a5",
+          "bytes": 2021901
+        },
+        "sheet.md": {
+          "git_blob": "267a07563a8b790b61163d2533e508381c06da31",
+          "sha256": "0f56ab6de8656d1be5794edb08a39ceb7ffaefeb590398da49bbb2c6a484f17c",
+          "bytes": 109931
+        }
+      }
+    },
+    "independent": {
+      "independent_readback_at": "2026-11-04T19:43:30.796097+00:00",
+      "render": {
+        "verdict": "PASS_CONDITIONAL_CANONICAL_PRESENTATION_ONLY",
+        "games": 63,
+        "sheet_blob": "267a07563a8b790b61163d2533e508381c06da31",
+        "scope": "typed canonical display only; no source truth/betting/natural-run acceptance"
+      },
+      "archive": {
+        "verdict": "PASS_WEEK10_ORIGINAL_FROZEN_FIELDS_ONLY",
+        "games": 63,
+        "predictions": 55,
+        "exclusions": 8,
+        "numeric_fields": 165,
+        "scope": "original fields only, not market/review/publication/betting acceptance"
+      },
+      "prior_market_preserved": true,
+      "prior_decision_preserved": true
+    },
+    "failed_compile_attempts": [
+      {
+        "file": "attempt1_unsupported_cycle.json",
+        "as_of": "2026-11-04T19:42:14.530650+00:00",
+        "error": "unsupported cycle identity"
+      },
+      {
+        "file": "attempt2_cycle_clock.json",
+        "as_of": "2026-11-04T19:42:28.757825+00:00",
+        "error": "cycle start after source boundary"
+      },
+      {
+        "file": "attempt3_closed_pass_reopen.json",
+        "as_of": "2026-11-04T19:42:45.206754+00:00",
+        "error": "closed PASS reopened without qualified conditional reconsideration"
+      }
+    ]
+  },
+  "retained_failures": [
+    {
+      "stage": "initial correlation generation",
+      "error": "ReferenceError: crypto is not defined",
+      "action": "Actual clock retained; unique correlation obtained with timestamp/random suffix."
+    },
+    {
+      "stage": "initial helper byte transport",
+      "expected_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "actual_blob": "7e2b486d4145dab718a9465920e406197ef9222b",
+      "difference": "one appended newline",
+      "operation": "python cfb_runtime_checkout.py --destination /workspace/scratch/13df5b80aaf6/shadow_checkout --expected-head ad1b44d9a16083fbf81c9439ce235efa2ee100db",
+      "outcome": "Returned SUPPORTED_GIT_RUNTIME_VERIFIED but byte-identical transport not proved; exact bytes restored from authenticated real checkout and rerun to shadow_exact."
+    },
+    {
+      "stage": "acquisition dependency",
+      "error": "ModuleNotFoundError: No module named 'bs4'",
+      "attempts": 2,
+      "operations": [
+        "python acquire.py",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 acquire.py"
+      ],
+      "action": "No source operation ran before import failure; used already installed lxml for ordinary HTML parsing, no package/paid upgrade."
+    },
+    {
+      "stage": "scratch capture extraction",
+      "errors": [
+        "ValueError: max() iterable argument is empty (footer links row)",
+        "TypeError: '>' not supported between instances of datetime.datetime and str (caller timestamp type)",
+        "ValueError: unknown/reversed directed game identity ('BYU', 'UTAH') (duplicate source labels tie)"
+      ],
+      "action": "Skipped non-team footer rows; supplied datetime expected by unchanged selector; longest nonempty label with last-label tie matches printed team identity. Existing unchanged normalizer then validated exact63/126 coverage."
+    }
+  ],
+  "interpretation": {
+    "scheduled_worker_runtime": "DEMONSTRATED",
+    "primary_source": "DEMONSTRATED exact current pregame summaries, not executable venue",
+    "compiler_execution": "EXECUTED_PASS_AFTER_CALLER_CORRECTIONS",
+    "render_execution": "EXECUTED_PASS_INDEPENDENTLY_RECONCILED",
+    "numeric_archive_invariant": "PASS63/55/8/165",
+    "full_slate_football_research": "NOT_COMPLETED; 50 rows remain honestly inconclusive in shadow proposal, original9PASS retained without new PASS claims",
+    "fresh_stats_limitation": "American conference stats URL404; no fresh statistics claim; school notes/recap and current prices checked. Existing accepted immutable review unchanged and still valid.",
+    "sustained_reliability": "UNPROVED",
+    "live_publication": "NONE",
+    "canonical_writes": "NONE",
+    "workflow_changes": "NONE",
+    "broad_CI_rerun": "NONE",
+    "recurring_task_mutations": "NONE",
+    "one_off_lifecycle": "normal auto-expiry; no lifecycle mutation"
+  }
+}
