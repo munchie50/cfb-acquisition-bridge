@@ -1,0 +1,74 @@
+{
+  "run": "CFB_MARKET_MONITOR_20261104T182720Z",
+  "observed_utc": "2026-11-04T18:53:54Z",
+  "scope": "ACTUAL_PARTIAL_CURRENT_SHEET_INTEGRATION_NOT_FULL_ANALYTICAL_RUN_PASS",
+  "current_sheet": {
+    "path": "evidence/operational/CFB_WEEK10_HOT_SHEET_2026-11-04_1239CT.md",
+    "blob": "1ce7f3231ad172ec7a628bf2f4da97cd50824de7",
+    "publication_boundary_utc": "2026-11-04T18:39:07.611734+00:00"
+  },
+  "market_blob": "7edd16cb45a189ad177c2a8d80f26f38f396a0c8",
+  "decision_blob": "601a952f74fb48966ae04a9661e90ce3cd5ac33b",
+  "index": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_252.md",
+    "blob": "a5995cccca420ccde82e37dbc0a6a7e6d4623ed7",
+    "saved_readback_preflight": "PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY",
+    "verified_pointers": 347
+  },
+  "ci": {
+    "run_id": 41890845741,
+    "job_id": 126787511942,
+    "head": "dd30306b7a20c6f1563aeec0a080d89579761a20",
+    "status": "COMPLETED_SUCCESS",
+    "steps": 45,
+    "non_success_steps": 0
+  },
+  "frozen": {
+    "verdict": "PASS_WEEK10_ORIGINAL_FROZEN_FIELDS_ONLY",
+    "games": 63,
+    "predictions": 55,
+    "exclusions": 8,
+    "numeric_fields": 165
+  },
+  "saved_view": {
+    "verdict": "PASS_SAVED_PUBLICATION_INTEGRITY_ONLY",
+    "audit_boundary": "2026-11-04T18:47:10Z",
+    "elapsed_current_quotes": 0,
+    "overdue_decisions": 0,
+    "current_operational_acceptance": "NOT_CERTIFIED"
+  },
+  "independent_reconciliation": "Real raw provider/event/team/selection mapping, observed -115 vs hypothetical -125, immutable review and original fields independently verified by read-only runner; not source truth solely from tests.",
+  "followthrough": {
+    "game_id": "401866455",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866455",
+    "collection_start": "2026-11-04T18:50:49.655075+00:00",
+    "response_recovered_by": "2026-11-04T18:50:55.695385+00:00",
+    "raw_sha256": "3ac098d7fd3548fd01dcb6908ac6de171cdadb5b131119ea4693d54054eae4ed",
+    "provider": "DraftKings",
+    "home_spread": -2.5,
+    "home_spread_price": -115,
+    "home_ml": -142,
+    "quote_update": "UNKNOWN",
+    "venue_executable": false,
+    "canonical_packet_retimed": false
+  },
+  "counts": {
+    "conditional": 1,
+    "pass": 9,
+    "original_policy_exclusion_pass": 8,
+    "analytical_game_pass": 1,
+    "inconclusive": 51,
+    "historical_gap": 2
+  },
+  "next_research": {
+    "path": "evidence/operational/CFB_WEEK10_THURSDAY_RESEARCH_CONTINUATION_20261104.json",
+    "blob": "c0f550df89babc8b7bbc2c3164766c5e9b7485d5"
+  },
+  "unresolved": "Full remaining analytical coverage, final game-day/QB material, timely report consumption and natural full scheduled reliability. No wager/model/task change.",
+  "intermediate_failures_preserved": [
+    41889701944,
+    41889748103,
+    41890012687,
+    41890838777
+  ]
+}
