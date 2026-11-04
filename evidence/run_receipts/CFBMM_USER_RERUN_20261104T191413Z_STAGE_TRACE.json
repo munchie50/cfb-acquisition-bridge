@@ -1,0 +1,114 @@
+{
+  "schema": "CFB_CORRECTED_MONITOR_STAGE_TRACE",
+  "classifier_execution": "NOT_RUN_FOR_THIS_AGGREGATE_TRACE; prior triage classifier actually executed separately",
+  "stages": [
+    {
+      "timestamp_utc": "2026-11-04T19:24:26Z",
+      "timestamp_semantics": "DIAGNOSTIC_RECONCILIATION_BOUNDARY_NOT_EXACT_ORIGINAL_STAGE_START",
+      "correlation_id": "CFBMM_USER_RERUN_20261104T191413Z",
+      "stage": "RUN_STARTED_READBACK",
+      "outcome": "PASS",
+      "failure_category": "NONE",
+      "sanitized_error_excerpt": "no_error",
+      "fallback_attempted": false,
+      "fallback_result": "not_needed",
+      "required_for_this_invocation": true
+    },
+    {
+      "timestamp_utc": "2026-11-04T19:24:26Z",
+      "timestamp_semantics": "DIAGNOSTIC_RECONCILIATION_BOUNDARY_NOT_EXACT_ORIGINAL_STAGE_START",
+      "correlation_id": "CFBMM_USER_RERUN_20261104T191413Z",
+      "stage": "TASK_CORRECTION_READBACK",
+      "outcome": "PASS",
+      "failure_category": "NONE",
+      "sanitized_error_excerpt": "no_error",
+      "fallback_attempted": false,
+      "fallback_result": "exact prompt/topology",
+      "required_for_this_invocation": true
+    },
+    {
+      "timestamp_utc": "2026-11-04T19:24:26Z",
+      "timestamp_semantics": "DIAGNOSTIC_RECONCILIATION_BOUNDARY_NOT_EXACT_ORIGINAL_STAGE_START",
+      "correlation_id": "CFBMM_USER_RERUN_20261104T191413Z",
+      "stage": "GIT_RUNTIME_AND_REVIEW_ANCESTRY",
+      "outcome": "PASS",
+      "failure_category": "NONE",
+      "sanitized_error_excerpt": "no_error",
+      "fallback_attempted": false,
+      "fallback_result": "real clone",
+      "required_for_this_invocation": true
+    },
+    {
+      "timestamp_utc": "2026-11-04T19:24:26Z",
+      "timestamp_semantics": "DIAGNOSTIC_RECONCILIATION_BOUNDARY_NOT_EXACT_ORIGINAL_STAGE_START",
+      "correlation_id": "CFBMM_USER_RERUN_20261104T191413Z",
+      "stage": "AUTHORITY_AND_RECOVERY_PREFLIGHT",
+      "outcome": "PASS",
+      "failure_category": "NONE",
+      "sanitized_error_excerpt": "no_error",
+      "fallback_attempted": false,
+      "fallback_result": "354 bindings on independent saved checkout",
+      "required_for_this_invocation": true
+    },
+    {
+      "timestamp_utc": "2026-11-04T19:24:26Z",
+      "timestamp_semantics": "DIAGNOSTIC_RECONCILIATION_BOUNDARY_NOT_EXACT_ORIGINAL_STAGE_START",
+      "correlation_id": "CFBMM_USER_RERUN_20261104T191413Z",
+      "stage": "PRIMARY_SOURCE_AND_CURRENT_REVIEW",
+      "outcome": "PASS",
+      "failure_category": "NONE",
+      "sanitized_error_excerpt": "no_error",
+      "fallback_attempted": false,
+      "fallback_result": "5responses,30branches,UMass/FAU",
+      "required_for_this_invocation": true
+    },
+    {
+      "timestamp_utc": "2026-11-04T19:24:26Z",
+      "timestamp_semantics": "DIAGNOSTIC_RECONCILIATION_BOUNDARY_NOT_EXACT_ORIGINAL_STAGE_START",
+      "correlation_id": "CFBMM_USER_RERUN_20261104T191413Z",
+      "stage": "EXECUTABLE_VENUE",
+      "outcome": "BLOCKED",
+      "failure_category": "MISSING_INPUT",
+      "sanitized_error_excerpt": "Offer update unknown and executable venue unverified",
+      "fallback_attempted": true,
+      "fallback_result": "kept separate from supported conditional analysis",
+      "required_for_this_invocation": false
+    },
+    {
+      "timestamp_utc": "2026-11-04T19:24:26Z",
+      "timestamp_semantics": "DIAGNOSTIC_RECONCILIATION_BOUNDARY_NOT_EXACT_ORIGINAL_STAGE_START",
+      "correlation_id": "CFBMM_USER_RERUN_20261104T191413Z",
+      "stage": "CANONICAL_PUBLICATION",
+      "outcome": "PASS",
+      "failure_category": "NONE",
+      "sanitized_error_excerpt": "no_error",
+      "fallback_attempted": false,
+      "fallback_result": "complete bytes/current main independently read back",
+      "required_for_this_invocation": true
+    },
+    {
+      "timestamp_utc": "2026-11-04T19:24:26Z",
+      "timestamp_semantics": "DIAGNOSTIC_RECONCILIATION_BOUNDARY_NOT_EXACT_ORIGINAL_STAGE_START",
+      "correlation_id": "CFBMM_USER_RERUN_20261104T191413Z",
+      "stage": "FULL_SLATE_ANALYSIS",
+      "outcome": "BLOCKED",
+      "failure_category": "MISSING_INPUT",
+      "sanitized_error_excerpt": "50 INCONCLUSIVE; remaining48othergames not fully evaluated",
+      "fallback_attempted": false,
+      "fallback_result": "resume exact pending frontier",
+      "required_for_this_invocation": true
+    },
+    {
+      "timestamp_utc": "2026-11-04T19:24:26Z",
+      "timestamp_semantics": "DIAGNOSTIC_RECONCILIATION_BOUNDARY_NOT_EXACT_ORIGINAL_STAGE_START",
+      "correlation_id": "CFBMM_USER_RERUN_20261104T191413Z",
+      "stage": "SELECTED_PUBLICATION_CI",
+      "outcome": "PENDING",
+      "failure_category": "NONE",
+      "sanitized_error_excerpt": "not a failure; observed pending",
+      "fallback_attempted": false,
+      "fallback_result": "existing workflow",
+      "required_for_this_invocation": true
+    }
+  ]
+}
