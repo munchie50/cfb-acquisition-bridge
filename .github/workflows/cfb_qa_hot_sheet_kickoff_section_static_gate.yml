@@ -150,16 +150,16 @@ jobs:
           python -m unittest discover -s scripts -p test_cfb_recovery_consumer_preflight.py
           python -m unittest discover -s scripts -p test_cfb_planned_append_metadata.py
       - name: Validate complete current recovery consumer bindings
-        run: python scripts/cfb_recovery_consumer_preflight.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_249.md
+        run: python scripts/cfb_recovery_consumer_preflight.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_250.md
       - name: Validate selected money record and its historical execution snapshot
         run: |
           PYTHONPATH=scripts python -c 'import sys; from test_cfb_week7_opening_display_gate import snapshot; sys.stdout.write(snapshot("evidence/operational/CFB_EXECUTION_LEDGER.md","75caee4052e02ea7d2453d1d37fd3866e13ecc07"))' > "$RUNNER_TEMP/cfb_funding_execution_snapshot.md"
-          python scripts/cfb_money_ledger_guard.py --money evidence/operational/CFB_MONEY_LEDGER.md --execution "$RUNNER_TEMP/cfb_funding_execution_snapshot.md" --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_249.md
+          python scripts/cfb_money_ledger_guard.py --money evidence/operational/CFB_MONEY_LEDGER.md --execution "$RUNNER_TEMP/cfb_funding_execution_snapshot.md" --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_250.md
       - name: Exercise weekly carry-forward ancestry and historical-preservation boundaries
         run: python -m unittest discover -s scripts -p test_cfb_weekly_carry_forward_gate.py
       - name: Validate selected weekly learning correction and exact source bindings
         run: |
-          python scripts/cfb_weekly_carry_forward_gate.py --review evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md --original evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R1.md --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json --health evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_249.md
+          python scripts/cfb_weekly_carry_forward_gate.py --review evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md --original evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R1.md --lineage evidence/operational/CFB_WEEK7_ORIGINAL_FIRST_FROZEN_LINEAGE_2026-10-11.json --health evidence/scheduler_qa/CFB_DUAL_ENGINE_HEALTH_20261011T215456Z_AUDIT.md --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_250.md
       - name: Validate original research candidate
         run: python scripts/cfb_hot_sheet_kickoff_section_static_gate.py
       - name: Exercise production presentation rejection boundaries
@@ -184,7 +184,7 @@ jobs:
         run: python -m unittest discover -s scripts -p test_cfb_hot_sheet_current_decision_binding_gate.py
       - name: Validate explicitly selected current Hot Sheet against canonical decision state
         run: |
-          python scripts/cfb_hot_sheet_current_decision_binding_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_249.md --current-ledger evidence/operational/CFB_DECISION_WAIT_LEDGER.md > "$RUNNER_TEMP/cfb_current_sheet_binding.json"
+          python scripts/cfb_hot_sheet_current_decision_binding_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_250.md --current-ledger evidence/operational/CFB_DECISION_WAIT_LEDGER.md > "$RUNNER_TEMP/cfb_current_sheet_binding.json"
           cat "$RUNNER_TEMP/cfb_current_sheet_binding.json"
       - name: Verify clean pinned runtime and immutable review ancestry
         # PR bootstrap checks accepted base; remaining checks use candidate workspace.
@@ -241,7 +241,7 @@ jobs:
           fi
           case "$cfb_current_sheet" in
             evidence/operational/CFB_WEEK6_HOT_SHEET_*)
-              python scripts/cfb_hot_sheet_execution_aware_decision_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_249.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --baseline evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md ;;
+              python scripts/cfb_hot_sheet_execution_aware_decision_gate.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_250.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --baseline evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-09_1538CT.md ;;
             evidence/operational/CFB_WEEK7_HOT_SHEET_2026-10-11_0708CT.md)
               python -m unittest discover -s scripts -p test_cfb_week7_opening_display_gate.py
               python scripts/cfb_week7_opening_display_gate.py --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md ;;
