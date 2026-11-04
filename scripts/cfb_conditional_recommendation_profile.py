@@ -61,9 +61,23 @@ def market_reference(review, as_of):
                 linked.get('dkinternal_referrer_source') != ['dknetwork'] or
                 len(linked.get('outcomes', [])) != 1 or not linked['outcomes'][0]):
             raise ValueError('unqualified public aggregate table/source-selection link')
-    elif (urlparse(q['source_url']).hostname not in providers[operator] or
-              urlparse(q['operator_evidence_url']).hostname != providers[operator][0]):
-        raise ValueError('identified benchmark source/operator evidence mismatch')
+    else:
+        source, link = map(urlparse, (q['source_url'], q['operator_evidence_url']))
+        if source.hostname == 'site.api.espn.com':
+            query = parse_qs(source.query, keep_blank_values=True)
+            linked = parse_qs(link.query, keep_blank_values=True)
+            if (operator != 'draftkings' or source.scheme != 'https' or
+                    source.netloc != 'site.api.espn.com' or
+                    source.path != '/apis/site/v2/sports/football/college-football/summary' or
+                    set(query) != {'event'} or query['event'] != [str(packet['game_id'])] or
+                    source.fragment or q.get('offer_updated_at') is not None or
+                    link.scheme != 'https' or link.netloc != providers[operator][0] or
+                    not re.fullmatch(r'/event/(?:[^/]+/)?\d+', link.path) or
+                    len(linked.get('outcomes', [])) != 1 or not linked['outcomes'][0]):
+                raise ValueError('unqualified primary ESPN summary benchmark/source-selection link')
+        elif (source.hostname not in providers[operator] or
+              link.hostname != providers[operator][0]):
+            raise ValueError('identified benchmark source/operator evidence mismatch')
     base = {k: v for k, v in packet.items() if k not in ('clock_semantics', 'source_kind')}
     result = reference(base, as_of)
     if set(result['reasons']) - {'FEWER_THAN_THREE_INDEPENDENT_OPERATORS', 'OFFER_UPDATE_UNKNOWN'}:
@@ -127,7 +141,7 @@ def reconsideration(row, previous, as_of):
 
 
 def validate(row, market_row, model, as_of, lineage_sha=gate.LINEAGE_SHA):
-    if lineage_sha not in tuple(gate.profile_config(p)['lineage'] for p in ('WEEK7','WEEK8','WEEK9')):raise ValueError('unqualified conditional lineage profile')
+    if lineage_sha not in tuple(gate.profile_config(p)['lineage'] for p in ('WEEK7','WEEK8','WEEK9','WEEK10')):raise ValueError('unqualified conditional lineage profile')
     content, committed_at = load_review(row['review_ref'])
     r = json.loads(content, object_pairs_hook=gate.unique)
     gate.keys(r, ['schema', 'game_id', 'state', 'recorded_at_utc', 'original_lineage_blob',
