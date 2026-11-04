@@ -276,7 +276,7 @@ class Week8Tests(unittest.TestCase):
     def test_future_week8_current_selection_through_existing_recovery_consumer(self):
         from cfb_recovery_consumer_preflight import audit as preflight
         from datetime import datetime,timezone
-        index=(ROOT/'evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_249.md').read_text()
+        index=(ROOT/'evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_250.md').read_text()
         matches=list(re.finditer(r'^```cfb-frontier-json\n(.*?)^```',index,re.M|re.S))
         record=json.loads(matches[-1][1]);now=datetime.now(timezone.utc).isoformat()
         record['as_of_utc']=now;record['claims']=['SYNTHETIC FUTURE SELECTION TEST ONLY; no operational mutation']
