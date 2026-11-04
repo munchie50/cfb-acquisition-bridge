@@ -1,0 +1,222 @@
+{
+  "schema": "CFB_WEEK10_WEDNESDAY_SIX_MARKET_REVIEW",
+  "observed_utc": "2026-11-04T18:43:15.929396+00:00",
+  "scope": "ACTUAL_COMPARATIVE_REVIEW_THREE_GAMES_ONLY_NOT_FULL_SLATE",
+  "benchmark_path": "evidence/operational/CFB_WEEK10_WEDNESDAY_DRAFTKINGS_BENCHMARK_20261104T182915Z.json",
+  "benchmark_blob": "bf66f832cd155a057cf97d1fff5e89c2e8c9d37e",
+  "original_vs_refresh": "Original55predictions8exclusions stay immutable. Accepted Nov3 REFRESH values provide separately labelled context, not replacement, refit or calibrated spread probabilities.",
+  "games": [
+    {
+      "game_id": "401866455",
+      "away_team": "Ball State Cardinals",
+      "home_team": "Massachusetts Minutemen",
+      "branches": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "observed_line": -2.5,
+          "observed_price": -115,
+          "observed_at": "2026-11-04T18:29:14.985660+00:00",
+          "decision": "CONDITIONAL",
+          "reason": "UMass defensive efficiency versus weak Ball defense plus same-direction accepted weekly context support home -2.5. Ball recent offense and UMass scoring slump reduce confidence. Observed-115, case-specific outer price-125; no move to-3."
+        },
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "observed_line": 2.5,
+          "observed_price": -105,
+          "observed_at": "2026-11-04T18:29:14.985660+00:00",
+          "decision": "PASS",
+          "reason": "Ball offensive improvement is credible but+2.5 supplies limited cushion against the home-side efficiency case."
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "home",
+          "observed_line": null,
+          "observed_price": -142,
+          "observed_at": "2026-11-04T18:29:14.985660+00:00",
+          "decision": "PASS_ALTERNATIVE",
+          "reason": "Home win is supported directionally; prefer the assessed-2.5 spread pair rather than add a second correlated position at-142."
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "away",
+          "observed_line": null,
+          "observed_price": 120,
+          "observed_at": "2026-11-04T18:29:14.985660+00:00",
+          "decision": "PASS",
+          "reason": "Luster-led improvement supplies an upset path but the defensive case is insufficient to justify+120 as a separate selection."
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "observed_line": 49.5,
+          "observed_price": -105,
+          "observed_at": "2026-11-04T18:29:14.985660+00:00",
+          "decision": "PASS",
+          "reason": "Ball improvement and weak defense support scoring; UMass recent19/18/16 scoring and moderate pace counter a total49.5over."
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "observed_line": 49.5,
+          "observed_price": -115,
+          "observed_at": "2026-11-04T18:29:14.985660+00:00",
+          "decision": "PASS",
+          "reason": "UMass slump supportsunder49.5, but Ball offensive trend and weak defense oppose it; no earned under edge."
+        }
+      ],
+      "primary_material_sources": [
+        "https://ballstatesports.com/news/2026/11/2/football-ball-state-visits-umass-to-begin-midweek-maction-schedule-in-november",
+        "https://umassathletics.com/news/2026/10/30/football-begins-maction-on-wednesday-against-ball-state"
+      ],
+      "final_game_day_designations": "NOT_VERIFIED",
+      "derivatives": "No authentic offered alternate/team-total/player-prop prices acquired; unavailable for price-specific evaluation.",
+      "parlays": "No authentic joint price; no preferred parlay. Side/ML duplication and uncertain scoring dependence do not justify an extra position."
+    },
+    {
+      "game_id": "401866457",
+      "away_team": "Toledo Rockets",
+      "home_team": "Sacramento State Hornets",
+      "branches": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "observed_line": -25.5,
+          "observed_price": -105,
+          "observed_at": "2026-11-04T18:29:15.018009+00:00",
+          "decision": "PASS",
+          "reason": "Toledo quality/rest advantage supports favorite, but-25.5 requires a four-score outcome; weekly margin7.13disagrees strongly. No justified cover selection."
+        },
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "observed_line": 25.5,
+          "observed_price": -115,
+          "observed_at": "2026-11-04T18:29:15.018009+00:00",
+          "decision": "PASS",
+          "reason": "Sacramento+25.5has a large cushion and model disagreement, but severe quality/rest concerns mean cushion alone is not sufficient."
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "away",
+          "observed_line": null,
+          "observed_price": -3200,
+          "observed_at": "2026-11-04T18:29:15.018009+00:00",
+          "decision": "PASS",
+          "reason": "Likely-winner judgement does not justify-3200 without an independently supported upset-risk valuation."
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "home",
+          "observed_line": null,
+          "observed_price": 1400,
+          "observed_at": "2026-11-04T18:29:15.018009+00:00",
+          "decision": "PASS",
+          "reason": "No validated upset probability or football support sufficient to justify+1400."
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "observed_line": 52.5,
+          "observed_price": -112,
+          "observed_at": "2026-11-04T18:29:15.018009+00:00",
+          "decision": "PASS",
+          "reason": "Toledo can score heavily, but Sacramento may contribute too little; accepted weekly total52.38is essentially at52.5."
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "observed_line": 52.5,
+          "observed_price": -108,
+          "observed_at": "2026-11-04T18:29:15.018009+00:00",
+          "decision": "PASS",
+          "reason": "Sacramento offense/rest support suppression, while Toledo scoring and short fields counter it. No sound separation from52.5."
+        }
+      ],
+      "primary_material_sources": [
+        "https://utrockets.com/news/2026/11/2/football-rockets-travel-west-to-california-for-midweek-maction-against-sacramento-state",
+        "https://hornetsports.com/news/2026/11/2/football-football-plays-final-home-game-on-wednesday-against-toledo.aspx"
+      ],
+      "final_game_day_designations": "NOT_VERIFIED",
+      "derivatives": "No authentic offered alternate/team-total/player-prop prices acquired; unavailable for price-specific evaluation.",
+      "parlays": "No authentic joint price; no preferred parlay. Side/ML duplication and uncertain scoring dependence do not justify an extra position."
+    },
+    {
+      "game_id": "401866456",
+      "away_team": "Central Michigan Chippewas",
+      "home_team": "Eastern Michigan Eagles",
+      "branches": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "observed_line": 1.5,
+          "observed_price": -115,
+          "observed_at": "2026-11-04T18:29:15.021931+00:00",
+          "decision": "PASS",
+          "reason": "Glasser passing matchup and competitive prior performance support CMU+1.5, but accepted weekly EMU3.63and unresolved EMUQB comparison prevent selection."
+        },
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "observed_line": -1.5,
+          "observed_price": -105,
+          "observed_at": "2026-11-04T18:29:15.021931+00:00",
+          "decision": "PASS",
+          "reason": "Weekly context supports EMU-1.5, but changed CMU passing offense and neutral venue weaken the narrow-favorite case."
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "away",
+          "observed_line": null,
+          "observed_price": -102,
+          "observed_at": "2026-11-04T18:29:15.021931+00:00",
+          "decision": "PASS",
+          "reason": "At-102there is little upset premium; QB comparison remains unresolved."
+        },
+        {
+          "market": "MONEYLINE",
+          "selection": "home",
+          "observed_line": null,
+          "observed_price": -118,
+          "observed_at": "2026-11-04T18:29:15.021931+00:00",
+          "decision": "PASS",
+          "reason": "At-118, slight weekly favorite status is insufficient with current QB-role assumptions unresolved."
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "observed_line": 44.5,
+          "observed_price": -112,
+          "observed_at": "2026-11-04T18:29:15.021931+00:00",
+          "decision": "UNFINISHED_CANDIDATE",
+          "reason": "Over44.5observed-112: accepted weekly47.60, indoorFordField and Glasser/pass-defense matchup support consideration. EMU own McCaughey reporting conflicts with opposing-previewKim assumption; no completed selection/buy range yet."
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "observed_line": 44.5,
+          "observed_price": -108,
+          "observed_at": "2026-11-04T18:29:15.021931+00:00",
+          "decision": "PASS",
+          "reason": "Low scoring and McCaughey-led prior-game production supportunder44.5, but changed CMU passing profile prevents selection."
+        }
+      ],
+      "primary_material_sources": [
+        "https://cmuchippewas.com/news/2026/11/2/football-preview-chippewas-need-a-win-in-motor-city-maction-with-eastern",
+        "https://emueagles.com/news/2026/10/30/football-emu-is-motor-city-maction-ready-for-nov-4",
+        "https://emueagles.com/news/2026/10/24/football-drops-competitive-contest-at-ohio-24-20"
+      ],
+      "final_game_day_designations": "NOT_VERIFIED",
+      "derivatives": "No authentic offered alternate/team-total/player-prop prices acquired; unavailable for price-specific evaluation.",
+      "parlays": "No authentic joint price; no preferred parlay. Side/ML duplication and uncertain scoring dependence do not justify an extra position."
+    }
+  ],
+  "counts": {
+    "games_reviewed": 3,
+    "branches_reviewed": 18,
+    "conditional_selections": 1,
+    "unfinished_candidates": 1,
+    "other_future_game_reviews_not_completed": 50
+  }
+}
