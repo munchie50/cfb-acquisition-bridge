@@ -1,0 +1,90 @@
+{
+  "run": "CFBMM_USER_RERUN_20261104T191413Z",
+  "start_utc": "2026-11-04T19:14:13Z",
+  "observed_utc": "2026-11-04T19:26:07Z",
+  "trigger": "USER_REQUESTED_INLINE_AUTOMATION_RERUN",
+  "overall_result": "RUN_INCOMPLETE",
+  "component_result": "CORRECTED_PATH_AND_PARTIAL_DELIVERY_VERIFIED",
+  "current_boundary": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "sha": "9a2391743e3b72840437e6b066f3225054cd7203"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "sha": "b0cd4391b01956aa7232980f53ac1a909da9e4e1"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_HOT_SHEET_2026-11-04_1319CT.md",
+      "sha": "f1426cac77367b0f2c17cf6d3a40b0436dc11f14"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_253.md",
+      "sha": "7540eb5ed31d453ee664c457ea30826d4ecd92cf"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "sha": "1fd7e6c2d131d687dd44e53843139a8b23ae00fc"
+    }
+  ],
+  "packet": "CFB_MARKET_MONITOR_20261104T191904Z",
+  "canonical_as_of": "2026-11-04T19:19:04.858960+00:00",
+  "source_recovered_by": "2026-11-04T19:15:05.121408+00:00",
+  "task_correction": {
+    "exact_prompt_readback": true,
+    "all_original_prompt_bytes_preserved": true,
+    "four_enabled_tasks": true,
+    "schedules_and_ownership_unchanged": true,
+    "natural_scheduled_demonstration": "PENDING"
+  },
+  "preflight": {
+    "verdict": "PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY",
+    "pointers": 354,
+    "saved_readback": true
+  },
+  "saved_publication": {
+    "verdict": "PASS_CONDITIONAL_CANONICAL_PRESENTATION_ONLY",
+    "games": 63,
+    "audit_utc": "2026-11-04T19:23:49.091958+00:00"
+  },
+  "frozen": {
+    "verdict": "PASS_WEEK10_ORIGINAL_FROZEN_FIELDS_ONLY",
+    "games": 63,
+    "predictions": 55,
+    "exclusions": 8,
+    "numeric_fields": 165,
+    "scope": "original fields only, not market/review/publication/betting acceptance"
+  },
+  "ci": {
+    "run_id": 41896412050,
+    "job_id": 126807001612,
+    "head": "69f45a6013f6014ae73af9136fb767c923fa727e",
+    "status": "COMPLETED_SUCCESS",
+    "steps": 45,
+    "non_success": 0
+  },
+  "readiness": {
+    "actual_audit": "2026-11-04T19:24:04.933427+00:00",
+    "elapsed_current_quotes": 0,
+    "overdue_open_decisions": 0,
+    "scope": "saved publication at own boundary; not venue freshness/fullreviewcertification"
+  },
+  "counts": {
+    "CONDITIONAL": 2,
+    "PASS": 9,
+    "INCONCLUSIVE": 50,
+    "HISTORICAL_GAP": 2
+  },
+  "independent_reconciliation": "Actual raw provider/game/teams/prices/operator outcome mappings, immutable review ancestry, limits/expiry and original165 fields reconciled by read-only runner.",
+  "audit": {
+    "path": "evidence/audits/CFBMM_USER_RERUN_20261104T191413Z_AUDIT.md",
+    "sha": "2f934c1f785f0236d8b984180e9c0a9acec0db2a"
+  },
+  "trace": {
+    "path": "evidence/run_receipts/CFBMM_USER_RERUN_20261104T191413Z_STAGE_TRACE.json",
+    "sha": "6ef8e8dbfd83db1229eb56cc80258dea23614eb6",
+    "ci_pending_note": "superseded by final completed CI result in this proof"
+  },
+  "unresolved": "50INCONCLUSIVE, remaining48othergames not completely researched; CMU/EMU QB and JMU/USMcandidate unfinished; natural automatic adoption proof open; venueexecution unverified;2historicalTuesdaygaps retained.",
+  "scientific_champion_wager_money_effect": "NONE"
+}
