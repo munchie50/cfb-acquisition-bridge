@@ -1,0 +1,68 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401866455",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-04T18:37:04.916379+00:00",
+  "original_lineage_blob": "47736c0fd9ff49545db7e46b508805658a1c7a92",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "home",
+  "rationale": "UMass -2.5 is a qualitative Beta preference: stronger season defensive efficiency against a vulnerable Ball State defense supports the home side, while retaining -2.5 protects a three-point win. Ball State recent offensive improvement and UMass scoring slump materially reduce confidence. Observed DraftKings benchmark -2.5/-115; newly judged outer price limit -125, with no move to -3 and no claimed calibrated EV.",
+  "model_review": "Original FIRST_FROZEN UMass -26.1 / total51.0 remains immutable but is not taken literally as a current football estimate. Separately accepted Nov3 REFRESH UMass -13.048 / total51.752 corroborates home direction without replacing original fields. Accepted source inputs show home defensive yards/play5.098 vs Ball6.607, and offense5.880 vs5.520; these are season aggregates, not independently opponent-adjusted or calibrated cover probabilities.",
+  "material_sources": [
+    {
+      "url": "https://ballstatesports.com/news/2026/11/2/football-ball-state-visits-umass-to-begin-midweek-maction-schedule-in-november",
+      "retrieved_at": "2026-11-04T18:33:00Z",
+      "finding": "Response recovered by18:33Z minute upper bound, not exact-second retrieval. Official Ball State preview reports four straight360-plus-yard games,395.5yards average over those games and recent Luster production. This is a concrete countercase to the home selection, not a cleared game-day roster."
+    },
+    {
+      "url": "https://umassathletics.com/news/2026/10/30/football-begins-maction-on-wednesday-against-ball-state",
+      "retrieved_at": "2026-11-04T18:33:00Z",
+      "finding": "Response recovered by18:33Z minute upper bound, not exact-second retrieval. Official UMass preview confirms game identity/time and recent scoring19,18,16 across three losses. Current offense form weakens reliance on the season aggregate. No final game-day personnel clearance inferred."
+    }
+  ],
+  "uncertainty": "CONTROLLED BETA, not calibrated fair-price proof. Ball State is improving and UMass has struggled recently. Final game-day designations are not yet verified; adverse QB or offensive-line news requires reconsideration before acting. Venue confirmation pending.",
+  "decision_rule": "Prefer UMass only at -2.5 or better and American odds -125 or better under this review. Observed offer was -115; -125 is a hypothetical maximum acceptable price, not an invented live quote. Paying -125 requires55.56percent break-even vs53.49percent at-115; the2.07percentage-point premium is a pricing requirement, not measured edge. Do not cross -3, chase worse juice, manufacture a stake or infer execution.",
+  "source_qualification": "Actual public ESPN summary response identifies DraftKings provider100, exact401866455 homeMassachusetts113/awayBallState2050 and the home-spread selection-specific linked DraftKings event34913151 outcome. Raw response SHA256326972d4ae8cd1d2d3779c5a0d66ff8a4868a9e6fdc65f229a5eecda26366001; retained proof evidence/operational/CFB_WEEK10_WEDNESDAY_DRAFTKINGS_BENCHMARK_20261104T182915Z.json. Retrieval-only, updateUNKNOWN, not multi-book consensus or executable venue offer.",
+  "market_reference": {
+    "game_id": "401866455",
+    "market": "SPREAD",
+    "selection": "home",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-05T00:00:00Z",
+    "kickoff_source_url": "https://umassathletics.com/news/2026/10/30/football-begins-maction-on-wednesday-against-ball-state",
+    "collection_start": "2026-11-04T18:29:08.444592+00:00",
+    "collection_end": "2026-11-04T18:29:14.985660+00:00",
+    "quotes": [
+      {
+        "game_id": "401866455",
+        "market": "SPREAD",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913151?outcomes=0HC86962570N250_1",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866455",
+        "retrieved_at": "2026-11-04T18:29:14.985660+00:00",
+        "offer_updated_at": null,
+        "line": -2.5,
+        "price": -115
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "home",
+    "line": -2.5,
+    "minimum_price": -125,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-04T19:00:00Z",
+  "planning_cutoff_utc": "2026-11-04T23:00:00Z",
+  "cutoff_basis": "New review validity ends at17:00CT, the expected official game-day material-release boundary in the retained MAC timing evidence, rather than assuming stale personnel context remains valid through kickoff. This is a source-informed checkpoint expiry, not a fabricated venue or user-trip deadline. Recheck at next scheduled13:00CT Monitor target; no guarantee of unattended completion. This review cannot be used after23:00Z.",
+  "execution_window": {
+    "start_utc": "2026-11-04T18:37:04.916379+00:00",
+    "end_utc": "2026-11-04T23:00:00Z"
+  }
+}
