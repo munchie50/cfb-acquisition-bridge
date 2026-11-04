@@ -1,0 +1,5 @@
+# Production runtime repair / test setup closure
+Observed UTC 2026-11-04T19:31:37Z. Configuration work completed; test execution PENDING.
+Issued only after independent exact candidate readback evidence/scheduler_qa/CFB_MONITOR_PRODUCTION_RUNTIME_TEST_20261104_SETUP_CANDIDATE.md @ fd01857363873a2e2cdc410c993f62ea2ee42263. Protocol evidence/scheduler_qa/CFB_MONITOR_PRODUCTION_RUNTIME_TEST_20261104.md @ c7c568fcdb6b4c789cc9791f482e31339a046b47.
+Primary production prompt corrected and exactly verified; previous prompt bytes retained and four production schedules/ownership unchanged. New one-time shadow test 6aeb87dd781481919f9f190e69cb5422 exact schedule2026-11-04T19:32:37Z (13:32:37CST), noRRULE; fiveenabled=4production+1temporarydiagnostic. No sixthtask/recurringfifth, liveoutput/model/wager/moneychange, inline rerun or falsebackground claim.
+Setup component VERIFIED. Overall production RUN_INCOMPLETE / NATURAL_TEST_PENDING. Testmustrecordactualruntime/tools/source/producerfirstunprovedboundary and independent two-phaseclosure; result not inferred from this configurationproof. One-offautoexpiry restores diagnostic slot.
