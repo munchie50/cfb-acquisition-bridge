@@ -279,6 +279,7 @@ class Week8Tests(unittest.TestCase):
         index=(ROOT/'evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_250.md').read_text()
         matches=list(re.finditer(r'^```cfb-frontier-json\n(.*?)^```',index,re.M|re.S))
         record=json.loads(matches[-1][1]);now=datetime.now(timezone.utc).isoformat()
+        fixture_blobs={p['path']:p['blob'] for p in record['pointers']}
         record['as_of_utc']=now;record['claims']=['SYNTHETIC FUTURE SELECTION TEST ONLY; no operational mutation']
         op='evidence/operational/'
         values={op+'CFB_MARKET_MONITOR_STATE.md':self.proposals[0],op+'CFB_DECISION_WAIT_LEDGER.md':self.proposals[1]}
@@ -289,7 +290,13 @@ class Week8Tests(unittest.TestCase):
             if pointer['path'] in values:pointer['blob']=gate.blob(values[pointer['path']])
         record['pointers'].append({'path':sheet_path,'blob':gate.blob(self.sheet),'purpose':'CURRENT_HOT_SHEET: synthetic Week8 selector fixture'})
         proposal=index+'\n```cfb-frontier-json\n'+json.dumps(record)+'\n```\n'
-        def loader(path):return values[path] if path in values else (ROOT/path).read_text()
+        def loader(path):
+            if path in values:return values[path]
+            current=(ROOT/path).read_text()
+            expected=fixture_blobs[path]
+            return current if gate.blob(current)==expected else historical(ROOT/path,expected)
+        register='evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md'
+        self.assertEqual(gate.blob(loader(register)),fixture_blobs[register])
         result=preflight(proposal,loader,now)
         self.assertEqual(result['sheet_path'],sheet_path)
         self.assertEqual(result['verdict'],'PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY')
