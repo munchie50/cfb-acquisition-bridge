@@ -31,3 +31,6 @@ Current smallest corrective action is to resume the already authorized authoring
 At an unresolved CMU/EMU material WAIT, continue independent Thursday/weekend evaluations; perfect certainty is not a universal gate and missing research is not PASS.
 Correction stage: SOURCE_PATH_MANUALLY_DEMONSTRATED / NATURAL_PRODUCER_CORRECTION_OPEN. Natural proof trigger: next applicable existing Monitor invocation using primary-source/current authoring/publication path. Do not manufacture an extra scheduled run or label audit/readback a full repair.
 No canonical market, decisions, Hot Sheet, current index, task configuration, scientific model, wager, money or Big Nine change. Historical AUTO9 remains RUN_INCOMPLETE.
+
+## Exact review-clock clarification after direct immutable-review readback
+Review c76235876bc2b79bd08f474bee1c1ea4b294cec1 explicitly sets reconciliation_utc=19:00Z and planning_cutoff_utc=23:00Z. The earlier phrase "expired19Z review checkpoint" above is imprecise and superseded: 19Z is the due recheck, not the final expiry. The recheck is overdue/uncompleted by this diagnostic source-only acquisition;23Z remains the explicit review expiry. A fresh source response alone does not establish completed material revalidation. No automatic expiry at19Z is asserted.
