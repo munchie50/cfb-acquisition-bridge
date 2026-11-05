@@ -236,6 +236,13 @@ def state_evidence(row,packet,content,kickoff,now,decision_tag=DECISION_TAG,gaps
     recorded=clock(row['state_recorded_at_utc']);proof=row['state_evidence']
     if recorded>clock(packet['as_of_utc']) or recorded>now:raise ValueError('future state evidence')
     if row['state']=='HISTORICAL_GAP':
+        recognized = (gaps or {}).get('recognized_gaps', {}).get(row['game_id'])
+        if recognized is not None:
+            if (row['state_recorded_at_utc'] != recognized['as_of_utc']
+                    or proof != recognized['state_evidence']
+                    or kickoff is None or kickoff > recorded):
+                raise ValueError('unqualified missed-review recognition')
+            return  # Exact separate disposition validated by the Week10 profile.
         if gaps is None or row['game_id'] not in gaps['missing_decision_game_ids'] or row['state_recorded_at_utc']!=gaps['as_of_utc']:
             raise ValueError('unqualified historical gap')
         if kickoff is None or kickoff>recorded:raise ValueError('gap cannot replace a future decision')
