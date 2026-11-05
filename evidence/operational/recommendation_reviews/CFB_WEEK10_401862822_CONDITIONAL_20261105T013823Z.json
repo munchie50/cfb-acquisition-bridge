@@ -1,0 +1,63 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401862822",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-05T01:38:23.555034+00:00",
+  "original_lineage_blob": "47736c0fd9ff49545db7e46b508805658a1c7a92",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "TOTAL",
+  "selection": "over",
+  "rationale": "Tulsa\u2013Tulane over 49.5 at -112 is a controlled-Beta preference for two currently functional quarterbacks and complementary passing/rushing routes against demonstrated defensive concessions. Fifty points are required. Prior overtime and kick-return points are excluded from the scoring case; run-heavy possessions, preparation and field goals can still keep this under.",
+  "model_review": "Exact original FIRST_FROZEN remains immutable and separate from accepted November3 REFRESH. Original context {\"game_id\": \"401862822\", \"away_team\": \"Tulsa\", \"home_team\": \"Tulane\", \"first_frozen_start\": \"2026-11-07 05:00:00+00:00\", \"first_frozen_status\": \"PREDICTION\", \"original_numeric_strings\": {\"pred_margin\": \"-7.453381995487822\", \"pred_total\": \"45.36973741035307\", \"pred_win\": \"0.3078800631681831\"}, \"display\": \"FIRST_FROZEN: Tulsa -7.5 / 45.4 / 0.308 home\", \"first_frozen_exclusion\": null, \"current_qualified_kickoff_utc\": null}; separate REFRESH {\"game_id\": \"401862822\", \"inventory_away\": \"Tulsa\", \"inventory_home\": \"Tulane\", \"away_team\": \"Tulsa\", \"home_team\": \"Tulane\", \"target_kickoff_utc\": \"2026-11-07 17:00:00+00:00\", \"independent_live_kickoff_verified\": false, \"source_status\": \"ACCEPTED_REFRESH_ROW\", \"snapshot_type\": \"REFRESH_SNAPSHOT\", \"snapshot_cutoff_utc\": \"2026-11-03T00:17:26.895461+00:00\", \"pred_margin\": \"1.6566529471681464\", \"pred_total\": \"53.96359998162205\", \"pred_win\": \"0.5269876614620848\", \"exclusion\": null, \"window_at_audit\": \"FUTURE\"}. Neither is a literal present fair line or calibrated probability; current football/number/price and opposing mechanisms govern this qualitative review.",
+  "material_sources": [
+    {
+      "url": "https://tulsahurricane.com/sports/football",
+      "retrieved_at": "2026-11-05T01:19:49.691172+00:00",
+      "finding": "Authentic current primary material independently reconciled by parent and second reviewer. [\"Official currentrole/form: TulsaBaylorHayes23/34,262yards2TDagainstArmy; Calloway/Rossmultiple receivingroutes. TulaneTraceJohnson28/36,284yards1TD1INT/no sacks versusCharlotte, JohnnieDaniels99rushyards. No oldPratt/MensahTulaneQB assumptions.\", \"Tulsa scored35andallowed38againstArmy; Tulane38-31CharlotteincludedOT and95yardkickreturn. Those extra-phasepoints are explicitlynotprojectedrepeat. Sustainablepassing/rushingproduction and defensiveconcessions onbothsides provide overmechanism beyond scorecopying.\", \"Tulsa lastplayedFridayOct23 vsTulaneFridayOct30, soTulsaextraweekrest is real and affects sidecomparison. NWS72F,dry,10mphNE near11CT; modestwind not standaloneunder.\"] Raw identity db89dbb7f432a559a8d3506da04f2f5c97ec21184364f82ae0b424a4878d14f1; no final game-day clearance inferred."
+    }
+  ],
+  "uncertainty": "Controlled Beta, not calibrated EV or a measured cover/total probability. Armyoption-specificrushproductionmaynottranslate; TulaneCharlottegamewasinflatedbyOT/kickreturn, andTulsaextraweekrestcouldimprovedefense. Bothteamscanleanrun/settleforFGsandfinishbelow50. Formal current-game personnel is not fully cleared; adverse QB/line/defense news requires reconsideration. Source update time unknown, venue/execution unverified.",
+  "decision_rule": "Only TOTAL over AT_MOST 49.5 at -112 or better. This is the newly earned case-specific outer pair, not a universal juice ceiling or an EV-optimized price. Preserve actual number/push/hook protections; no worse number, stake, derivative, parlay or execution is implied.",
+  "source_qualification": "Parent acquired and independently authenticated exact primary ESPN event401862822, pregame status, home/away team IDs {\"home\": {\"id\": \"2655\", \"location\": \"Tulane\", \"display\": \"Tulane Green Wave\"}, \"away\": {\"id\": \"202\", \"location\": \"Tulsa\", \"display\": \"Tulsa Golden Hurricane\"}}, DraftKings100, selected paired line/price and selection-specific operator URL https://sportsbook.draftkings.com/event/34913603?outcomes=0OU86963467O4950_1. Raw98118bytes SHA2560b6e239af82fc41ce5913da6fb240522e41c044c0d200516fd7ab816911e735a. Unknown offer_updated_at staysnull, retrieval-only benchmark not consensus or executable venue.",
+  "market_reference": {
+    "game_id": "401862822",
+    "market": "TOTAL",
+    "selection": "over",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-07T17:00:00Z",
+    "kickoff_source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862822",
+    "collection_start": "2026-11-05T01:27:58.486751+00:00",
+    "collection_end": "2026-11-05T01:28:03.378810+00:00",
+    "quotes": [
+      {
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 49.5,
+        "price": -112,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913603?outcomes=0OU86963467O4950_1",
+        "game_id": "401862822",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862822",
+        "retrieved_at": "2026-11-05T01:28:03.378810+00:00",
+        "offer_updated_at": null
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "TOTAL",
+    "selection": "over",
+    "line": 49.5,
+    "minimum_price": -112,
+    "direction": "AT_MOST"
+  },
+  "reconciliation_utc": "2026-11-06T19:00:00Z",
+  "planning_cutoff_utc": "2026-11-06T19:00:00Z",
+  "cutoff_basis": "New review expires at unchanged original FridayNovember6_13CTreconciliation boundary, before saved Saturday kickoff. A conservative review-validity boundary, not an invented user placement deadline. Genuine subsequent review required; no automatic extension.",
+  "execution_window": {
+    "start_utc": "2026-11-05T01:38:23.555034+00:00",
+    "end_utc": "2026-11-06T19:00:00Z"
+  }
+}
