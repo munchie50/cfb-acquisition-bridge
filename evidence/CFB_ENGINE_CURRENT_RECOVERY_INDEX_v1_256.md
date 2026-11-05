@@ -1,6 +1,6 @@
 # CFB Engine — Current Recovery Index v1.256
 
-Status: navigation-only successor to v1.255. Reconciles persisted Saturday catch-up; full-slate completion and recurring reliability remain OPEN. Prior history retained.
+Status: CURRENT RECOVERY DOORWAY — navigation-only successor to v1.255. Reconciles persisted Saturday catch-up; full-slate completion and recurring reliability remain OPEN. Prior history retained.
 
 ```cfb-frontier-json
 {
