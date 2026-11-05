@@ -1,0 +1,18 @@
+{
+  "schema": "CFB_PRODUCTION_TASK_CHANGE_CLOSURE_V1",
+  "observed_utc": "2026-11-05T02:30:22.080Z",
+  "task_id": "6ae766e788d881919726d0eeb44450dd",
+  "final_change_state": "CONFIGURATION_APPLIED_AND_INDEPENDENTLY_VERIFIED",
+  "issued_only_after_exact_independent_candidate_readback": true,
+  "candidate": {
+    "path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_PRODUCTION_EXECUTION_ADOPTION_20261105_TERMINAL_CANDIDATE.json",
+    "blob": "aafe42003014d14dbfc194ec63aab3e6acff5e05"
+  },
+  "adoption_record": {
+    "path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_PRODUCTION_EXECUTION_ADOPTION_20261105.json",
+    "blob": "41a76b49fb1d712c1482fe47c6095793853a133b"
+  },
+  "verification": "Actual task exact prompt matches validated amendment; all original prompt bytes retained; exact07/13CTschedule/enabledstateunchanged;fourenabledproductiontasks;all19othertaskdefinitionsunchanged;testdisabled;rollbackbaselinepreserved.",
+  "scope": "Production Monitor execution/caller instructions only. No task creation, extra run, schedule mutation, fresh market work, current decisions/publication, model, money or wager change.",
+  "remaining": "Natural current-production source/authoring/compiler/publication/integration/closure demonstration pending at next existing nominal ThursdayNov5_07CT. No claim that dispatch internals or sustained reliability are fixed."
+}
