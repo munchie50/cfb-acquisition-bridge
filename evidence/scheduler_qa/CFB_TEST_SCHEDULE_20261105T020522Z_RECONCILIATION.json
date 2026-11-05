@@ -1,0 +1,46 @@
+{
+  "schema": "CFB_TEST_SCHEDULE_RECONCILIATION_V1",
+  "observed_utc": "2026-11-05T02:08:24.445Z",
+  "correlation_id": "CFB_TEST_SCHEDULE_20261105T020522Z",
+  "task_id": "6aeb87dd781481919f9f190e69cb5422",
+  "prior_run_id": "26bd530f-cbd4-8320-abf1-d5e3f9e0faf5",
+  "new_run_id": "0fddd1fb-3bfc-832d-8acb-4e6d6c506e32",
+  "setup": {
+    "path": "evidence/scheduler_qa/CFB_TEST_SCHEDULE_20261105T020522Z_SETUP.json",
+    "blob": "eabfbe4febf5b5a49038bba850bb43ca3169cd09"
+  },
+  "startup": {
+    "path": "evidence/scheduler_qa/CFB_TEST_SCHEDULE_20261105T020522Z_STARTED.json",
+    "blob": "3e7d0e3f5f0281cbbc4be5d04850855bf3a59d9b",
+    "independent_exact_readback": true,
+    "immutable_first_saved_commit": "affcd267fdd2e83552c838d1a217a72208cab260",
+    "immutable_first_commit_utc": "2026-11-05T02:07:12Z"
+  },
+  "expected": {
+    "accepted_schedule_utc": "2026-11-05T02:08:22Z",
+    "no_rrule": true,
+    "first_real_worker_action_not_before_schedule": true
+  },
+  "actual": {
+    "recorded_start_utc": "2026-11-05T02:06:35.615480Z",
+    "first_runtime_clock_utc": "2026-11-05T02:06:50Z",
+    "worker_delta_seconds": -92,
+    "metadata_delta_seconds": -106.38452,
+    "first_persisted_start_seconds_before_schedule": 70
+  },
+  "hypotheses": {
+    "never_dispatched": "REJECTED",
+    "old_result_misattribution": "DETECTED_AND_PREVENTED: old latest_result run ID differs",
+    "source_or_compiler_failure_causes_timing": "REJECTED: no source acquisition or compiler used",
+    "timezone_wrong": "REJECTED_FOR_THIS_TEST: acceptedUTC/SETUP/task/scheduled_forallmatch",
+    "metadata_only_error": "REJECTED_FOR_THIS_TEST: authentic runtime clock and immutable pre-schedule Git commit confirm real early work",
+    "schedule_changed_after_dispatch": "REJECTED_FOR_THIS_TEST: parent SETUP and worker task readback match with no intervening task mutation",
+    "internal_scheduler_cause": "OPEN: no scheduler dispatch internals/control available from enabled connector"
+  },
+  "correction_stage": "Existing expired test rearmed once and exact schedule/prompt/topology readback proved; internal timing discrepancy REPRODUCED, NOT_FIXED.",
+  "benefit": "Isolates schedule timing from runtime/compiler/research and demonstrates true early work independently; avoids another speculative engine patch.",
+  "cost": "One short naturally scheduled evidence-only fifth-slot diagnostic; no paid acquisition/clone/compiler/CI.",
+  "producer_repair_limit": "Exposed automation API supports task definitions and recorded results, not internal dispatch timing. No unsupported backdating, compensating schedule offsets, indefinite retry, forced waits or new scheduler introduced.",
+  "next_safe_action": "Reconcile worker result/candidate/closure and normal expiry; retain exact platform timing reproduction for scheduler-level correction. Preserve four recurring production schedules and old engine test failures.",
+  "scope": "No source/model/publication/production/task topology promotion; startup proof alone does not establish completed diagnostic."
+}
