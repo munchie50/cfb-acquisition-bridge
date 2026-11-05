@@ -3,10 +3,10 @@
   "observed_utc": "2026-11-05T02:17:22.450Z",
   "task_id": "6aeb87dd781481919f9f190e69cb5422",
   "enabled": true,
-  "schedule": "BEGIN:VEVENT\nDTSTART:20261105T031647Z\nEND:VEVENT",
+  "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20261104T202000\nEND:VEVENT",
   "timezone": "America/Chicago",
-  "local_time": "Wednesday November4 21:16:47 America/Chicago",
-  "schedule_reason": "One-time natural completion validation in next hourly window; no high-frequency recurrence.",
+  "local_time": "Wednesday November4 20:20:00 America/Chicago",
+  "schedule_reason": "Explicit user requested8:16or8:20CT;8:16passedatobserved8:18:21CT, so existing single future one-time test moved to8:20CT. Hourly recurrence limit is not treated as a mandatory delay for this one-off reschedule.",
   "exact_task_prompt_readback": true,
   "four_production_prompts_schedules_enabled_exactly_unchanged": true,
   "enabled_total": 5,
@@ -33,5 +33,7 @@
     "scope": "No live recommendation, source/model gate relaxation, production schedule change or reliability guarantee."
   },
   "history": "Prior timing defect and TEST_INCOMPLETE history preserved; their timing-only acceptance criterion is prospectively superseded by explicit current user instruction.",
-  "next": "Observe next existing one-time scheduled test result and independent closure; use exact failing stage if any. No more timing-only tests or equivalent retries without new evidence."
+  "next": "Observe next existing one-time scheduled test result and independent closure; use exact failing stage if any. No more timing-only tests or equivalent retries without new evidence.",
+  "rescheduled_observed_utc": "2026-11-05T02:18:41.375Z",
+  "supersedes_schedule": "BEGIN:VEVENT\nDTSTART:20261105T031647Z\nEND:VEVENT"
 }
