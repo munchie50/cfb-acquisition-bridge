@@ -1,0 +1,28 @@
+{
+  "schema": "CFB_TEST_SCHEDULE_STARTED_V1",
+  "correlation_id": "CFB_TEST_SCHEDULE_20261105T020522Z",
+  "trigger": "NATURAL_ONE_TIME_SCHEDULED",
+  "first_actual_utc": "2026-11-05T02:06:50Z",
+  "clock_source": "clock__curr_time actual tool response; first tool operation before recovery; second precision",
+  "task_id": "6aeb87dd781481919f9f190e69cb5422",
+  "own_run_id": "0fddd1fb-3bfc-832d-8acb-4e6d6c506e32",
+  "requested_scheduled_utc": "2026-11-05T02:08:22Z",
+  "requested_time_source": "Independent accepted SETUP; original request raw clock unavailable",
+  "accepted_scheduled_utc": "2026-11-05T02:08:22Z",
+  "accepted_schedule_source": {
+    "path": "evidence/scheduler_qa/CFB_TEST_SCHEDULE_20261105T020522Z_SETUP.json",
+    "blob": "eabfbe4febf5b5a49038bba850bb43ca3169cd09"
+  },
+  "recorded_scheduled_for_utc": "2026-11-05T02:08:22Z",
+  "recorded_worker_started_at": "2026-11-05T02:06:35.615480Z",
+  "recorded_worker_start_source": "automations.peek metadata; not independent actual-clock startup proof",
+  "current_schedule": "BEGIN:VEVENT\nDTSTART:20261105T020822Z\nEND:VEVENT",
+  "timezone": "America/Chicago",
+  "latest_result_run_id": "26bd530f-cbd4-8320-abf1-d5e3f9e0faf5",
+  "latest_result_belongs_to_current_run": false,
+  "first_actual_minus_accepted_seconds": -92,
+  "recorded_start_minus_scheduled_seconds": -106.385,
+  "classification": "EARLY_START_TIMING_DISCREPANCY",
+  "setup_race": false,
+  "scope": "Scheduler timing/persistence only; no delay until scheduled time, no external source/runtime/compiler/task mutation"
+}
