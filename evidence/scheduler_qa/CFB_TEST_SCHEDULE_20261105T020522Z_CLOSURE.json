@@ -1,0 +1,34 @@
+{
+  "schema": "CFB_TEST_SCHEDULE_CLOSURE_V1",
+  "correlation_id": "CFB_TEST_SCHEDULE_20261105T020522Z",
+  "trigger": "NATURAL_ONE_TIME_SCHEDULED",
+  "task_id": "6aeb87dd781481919f9f190e69cb5422",
+  "own_run_id": "0fddd1fb-3bfc-832d-8acb-4e6d6c506e32",
+  "closure_observed_at_utc": "2026-11-05T02:08:29Z",
+  "final_verdict": "TEST_INCOMPLETE",
+  "classification": "EARLY_START_TIMING_DISCREPANCY",
+  "issued_only_after_independent_exact_candidate_readback": true,
+  "candidate": {
+    "path": "evidence/scheduler_qa/CFB_TEST_SCHEDULE_20261105T020522Z_TERMINAL_CANDIDATE.json",
+    "blob": "b35a1393c2b011d3284f9a5004e32a9206c79930"
+  },
+  "result": {
+    "path": "evidence/scheduler_qa/CFB_TEST_SCHEDULE_20261105T020522Z_RESULT.json",
+    "blob": "b461e14b883cf5566cd86a2a23e3516b7f9ef316",
+    "independent_exact_readback": true
+  },
+  "first_actual_utc": "2026-11-05T02:06:50Z",
+  "clock_source": "clock__curr_time first-operation authentic worker observation",
+  "accepted_scheduled_for_utc": "2026-11-05T02:08:22Z",
+  "recorded_started_at": "2026-11-05T02:06:35.615480Z",
+  "first_actual_delta_seconds": -92,
+  "recorded_start_delta_seconds": -106.38452,
+  "production_topology": "All four production IDs exact prompt/schedule/enabled match saved baseline; no task mutations",
+  "stage_disposition": "Startup/result/candidate persistence and independent readback passed. Timing acceptance failed. Closure creation time is not a replacement startup clock.",
+  "unresolved": "Scheduler internal early-start cause remains OPEN; no platform repair, sustained reliability or full engine acceptance claimed.",
+  "prior_history": "Prior TEST_INCOMPLETE unchanged; original prompt preserved in baseline",
+  "lifecycle": "No self-reschedule/restore/newtask/run_now; normal one-time expiry",
+  "scientific_effect": "NONE",
+  "champion_effect": "NONE",
+  "delivery": "UNKNOWN"
+}
