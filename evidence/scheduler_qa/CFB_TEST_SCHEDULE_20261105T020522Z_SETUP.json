@@ -1,0 +1,29 @@
+{
+  "schema": "CFB_TEST_SCHEDULE_SETUP_V1",
+  "correlation_id": "CFB_TEST_SCHEDULE_20261105T020522Z",
+  "observed_utc": "2026-11-05T02:05:38.820Z",
+  "task_id": "6aeb87dd781481919f9f190e69cb5422",
+  "accepted_schedule": "BEGIN:VEVENT\nDTSTART:20261105T020822Z\nEND:VEVENT",
+  "accepted_scheduled_for_utc": "2026-11-05T02:08:22Z",
+  "display_time": "Wednesday November4 20:08:22 America/Chicago",
+  "timezone": "America/Chicago",
+  "timing_mode": "exact_schedule",
+  "enabled_readback": true,
+  "exact_prompt_readback": true,
+  "recurrence": "NONE",
+  "baseline": {
+    "path": "evidence/scheduler_qa/CFB_TEST_SCHEDULE_20261105_BASELINE.json",
+    "blob": "53718f1646322abb77b4d7d7c101473690ac5a77"
+  },
+  "production_ids": [
+    "6ae766e788d881919726d0eeb44450dd",
+    "6ae76df2ece4819197f91fb10076dea7",
+    "6ae76c7a6d38819190b5cae3bdd6cc53",
+    "6ae76df60e0c819182e2cfab1b83846a"
+  ],
+  "all_four_production_prompt_schedule_enabled_fields_exactly_unchanged": true,
+  "enabled_total": 5,
+  "scope": "One temporary fifth-slot timing diagnostic. No run_now, sixth task, production mutation or full runtime/compiler acceptance. Restored single future one-time schedule; internal early-start cause remains OPEN pending authentic scheduled worker proof.",
+  "expected_output_prefix": "evidence/scheduler_qa/CFB_TEST_SCHEDULE_20261105T020522Z",
+  "next_action": "Independently reconcile new run ID, accepted schedule, actual worker and scheduler clocks, result/candidate/closure and normal one-time expiry. Old run/result never attributed to new invocation."
+}
