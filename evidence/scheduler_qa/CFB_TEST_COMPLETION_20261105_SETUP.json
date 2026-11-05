@@ -1,0 +1,37 @@
+{
+  "schema": "CFB_TEST_COMPLETION_SETUP_V1",
+  "observed_utc": "2026-11-05T02:17:22.450Z",
+  "task_id": "6aeb87dd781481919f9f190e69cb5422",
+  "enabled": true,
+  "schedule": "BEGIN:VEVENT\nDTSTART:20261105T031647Z\nEND:VEVENT",
+  "timezone": "America/Chicago",
+  "local_time": "Wednesday November4 21:16:47 America/Chicago",
+  "schedule_reason": "One-time natural completion validation in next hourly window; no high-frequency recurrence.",
+  "exact_task_prompt_readback": true,
+  "four_production_prompts_schedules_enabled_exactly_unchanged": true,
+  "enabled_total": 5,
+  "contract": {
+    "path": "evidence/scheduler_qa/CFB_TEST_COMPLETION_20261105_CONTRACT.md",
+    "blob": "328a7558789788ca05e04d98dc7d6e2de6489924"
+  },
+  "manual_proof": {
+    "path": "evidence/scheduler_qa/CFB_TEST_COMPLETION_20261105_MANUAL_RESULT.json",
+    "blob": "e549cdff5ee2b2e937aa27f38296c0248a658e0e",
+    "status": "PASS_RETAINED_MONITOR_EXECUTION_ONLY"
+  },
+  "negative_archive_probe": {
+    "status": "EXPECTED_REJECTION",
+    "compiler_render": "PASS",
+    "archive": "REJECTED_ARCHIVE_IDENTITY_MISMATCH",
+    "terminal_result_written": true
+  },
+  "correction": {
+    "root_cause": "Test caller mixed schedule precision, fresh analytical decision readiness, and technical execution into a single acceptance condition; valid expiry/price changes could prevent compiler/render coverage. Earlier timing-only detour did not serve user's stated objective.",
+    "change": "Minor timing variance is nonblocking unless demonstrated input/deadline/usefulness harm; exact retained production compiler fixture executes independently from live-source probe; all feasible independent stages run through durable closure.",
+    "verified": "Actual unchanged compiler and full render exact equality;63identities55predictions8exclusions165originalnumericfields;corruptedarchivecorrectlyrejected;code/contract/manualproof/taskpromptindependentlyreadback.",
+    "stage": "CORRECTED/PERSISTED/READ_BACK/MANUALLY_DEMONSTRATED; natural scheduled completion validation pending.",
+    "scope": "No live recommendation, source/model gate relaxation, production schedule change or reliability guarantee."
+  },
+  "history": "Prior timing defect and TEST_INCOMPLETE history preserved; their timing-only acceptance criterion is prospectively superseded by explicit current user instruction.",
+  "next": "Observe next existing one-time scheduled test result and independent closure; use exact failing stage if any. No more timing-only tests or equivalent retries without new evidence."
+}
