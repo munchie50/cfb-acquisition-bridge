@@ -1,0 +1,68 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401856740",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-05T01:38:23.555719+00:00",
+  "original_lineage_blob": "47736c0fd9ff49545db7e46b508805658a1c7a92",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "home",
+  "rationale": "LSU -6 at -110 is a controlled-Beta preference for balanced home offense, strong defense and edge pressure to produce a seven-point win, retaining a push at six. Alabama talent and bye-week adjustments, plus Leavitt interceptions, can erase that margin. Both teams had byes; no rest advantage is claimed.",
+  "model_review": "Exact original FIRST_FROZEN remains immutable and separate from accepted November3 REFRESH. Original context {\"pred_margin\": \"3.5090584473900757\", \"pred_total\": \"54.06402401878285\", \"pred_win\": \"0.5694578967572295\"}; separate REFRESH {\"game_id\": \"401856740\", \"inventory_away\": \"Alabama\", \"inventory_home\": \"LSU\", \"away_team\": \"Alabama\", \"home_team\": \"LSU\", \"target_kickoff_utc\": \"2026-11-07 20:30:00+00:00\", \"independent_live_kickoff_verified\": false, \"source_status\": \"ACCEPTED_REFRESH_ROW\", \"snapshot_type\": \"REFRESH_SNAPSHOT\", \"snapshot_cutoff_utc\": \"2026-11-03T00:17:26.895461+00:00\", \"pred_margin\": \"9.789364222685926\", \"pred_total\": \"55.638871599174216\", \"pred_win\": \"0.7270634936727789\", \"exclusion\": null, \"window_at_audit\": \"FUTURE\"}. Neither is a literal present fair line or calibrated probability; current football/number/price and opposing mechanisms govern this qualitative review.",
+  "material_sources": [
+    {
+      "url": "https://storage.googleapis.com/lsusports-net-prod/2026/11/04/E6hOvKQVHBhZ46uuCYROGSv4J6NoZGUhSTFUlzpr.pdf",
+      "retrieved_at": "2026-11-05T01:20:35.487833+00:00",
+      "finding": "Authentic current primary material independently reconciled by parent and second reviewer. [] Raw identity e9e7a5920f36476d3562049d6eb1157a591766f5f50d13a344b27dcbb7294062; no final game-day clearance inferred."
+    },
+    {
+      "url": "https://storage.googleapis.com/lsusports-net-prod/2026/11/02/iDy4JZWTMkZjoVW5iwtkxMSa2ZqmBlX0IbSzgial.pdf",
+      "retrieved_at": "2026-11-05T01:20:35.485423+00:00",
+      "finding": "Authentic current primary material independently reconciled by parent and second reviewer. [] Raw identity 8e711165f32ce23c8489b8780a6ab68a5cf2e5c7a2bca352e017157adbf39b5e; no final game-day clearance inferred."
+    }
+  ],
+  "uncertainty": "Controlled Beta, not calibrated EV or a measured cover/total probability. Balancedhomeoffenseplusstrongscoring/totaldefense andedgepressure supportaone-score-plusmargin against Bama attack recentlyconstrainedbystrongSECdefenses. Lay6preservespushat6andcashat7. Strongcounter:Bamatalent/adjustmentsafterbye andLeavitt8INTcaneraseadvantage; statsincludeunequalopponents, no calibratedcoveredgeclaimed. Formal current-game personnel is not fully cleared; adverse QB/line/defense news requires reconsideration. Source update time unknown, venue/execution unverified.",
+  "decision_rule": "Only SPREAD home AT_LEAST -6.0 at -110 or better. This is the newly earned case-specific outer pair, not a universal juice ceiling or an EV-optimized price. Preserve actual number/push/hook protections; no worse number, stake, derivative, parlay or execution is implied.",
+  "source_qualification": "Parent acquired and independently authenticated exact primary ESPN event401856740, pregame status, home/away team IDs {\"home\": {\"id\": \"99\", \"location\": \"LSU\", \"display\": \"LSU Tigers\"}, \"away\": {\"id\": \"333\", \"location\": \"Alabama\", \"display\": \"Alabama Crimson Tide\"}}, DraftKings100, selected paired line/price and selection-specific operator URL https://sportsbook.draftkings.com/event/34226128?outcomes=0HC84998504N600_1. Raw124787bytes SHA25666135d59f69d7a13b11ea1e08939593f6bdc3c06b065d3ca43ddc17328698dae. Unknown offer_updated_at staysnull, retrieval-only benchmark not consensus or executable venue.",
+  "market_reference": {
+    "game_id": "401856740",
+    "market": "SPREAD",
+    "selection": "home",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-07T20:30:00Z",
+    "kickoff_source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856740",
+    "collection_start": "2026-11-05T01:28:06.845393+00:00",
+    "collection_end": "2026-11-05T01:28:11.110836+00:00",
+    "quotes": [
+      {
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -6.0,
+        "price": -110,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34226128?outcomes=0HC84998504N600_1",
+        "game_id": "401856740",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856740",
+        "retrieved_at": "2026-11-05T01:28:11.110836+00:00",
+        "offer_updated_at": null
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "home",
+    "line": -6.0,
+    "minimum_price": -110,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-06T19:00:00Z",
+  "planning_cutoff_utc": "2026-11-06T19:00:00Z",
+  "cutoff_basis": "New review expires at unchanged original FridayNovember6_13CTreconciliation boundary, before saved Saturday kickoff. A conservative review-validity boundary, not an invented user placement deadline. Genuine subsequent review required; no automatic extension.",
+  "execution_window": {
+    "start_utc": "2026-11-05T01:38:23.555719+00:00",
+    "end_utc": "2026-11-06T19:00:00Z"
+  }
+}
