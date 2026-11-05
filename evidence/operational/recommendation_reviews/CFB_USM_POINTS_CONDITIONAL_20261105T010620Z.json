@@ -1,0 +1,73 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401869964",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-05T01:06:20.115696+00:00",
+  "original_lineage_blob": "47736c0fd9ff49545db7e46b508805658a1c7a92",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "home",
+  "rationale": "Southern Miss +14.5 at -112 is a controlled-Beta preference for a home cushion beyond two touchdowns, supported by an improving run game and defense. The stronger JMU roster, front and return game plus two extra rest days can still produce a 15-point win; USM passing/protection weaknesses make this a spread preference rather than an upset bet. Current primary personnel evidence resolves the stale Grant Page OUT claim without assuming full roster clearance.",
+  "model_review": "Original FIRST_FROZEN JMU -14.4041/total52.9866 is immutable and not a literal current fair price. Separate accepted November3 REFRESH JMU -6.4621/total58.3450 supports a competitiveness countercheck, not calibrated cover probability. Primary matchup evidence, home run-led resistance and the number beyond14 earn this qualitative choice. JMU offense39.1PPG/defense18.9 and return strength are concrete opposing mechanisms; recent turnovers are not assumed to repeat.",
+  "material_sources": [
+    {
+      "url": "https://jmusports.com/news/2026/11/3/football-third-straight-thursday-game-takes-jmu-to-southern-miss",
+      "retrieved_at": "2026-11-05T01:06:20.115696+00:00",
+      "finding": "Parent independently reopened official November3 preview by this recovered-by clock: November5 19CTkickoff and JMU quality/production/rest context. Latest turnover losses did not erase underlying offensive production."
+    },
+    {
+      "url": "https://southernmiss.com/news/2026/11/2/football-blake-anderson-weekly-news-conference-the-jmu-game",
+      "retrieved_at": "2026-11-05T01:06:20.115696+00:00",
+      "finding": "Parent independently reopened primary coach transcript. Lyddy is current QB under discussion, with balance/protection/forced-throw problems; run game and defense have improved. Page already returned with brace/discomfort. Rogers/Nunnery expected back, not full-game clearance."
+    },
+    {
+      "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/jmusports.com/documents/2026/11/3/2026_JMU_Football_Game_Notes_-_Southern_Miss.pdf?timestamp=20261103011156",
+      "retrieved_at": "2026-11-05T00:59:20.120728+00:00",
+      "finding": "Independent runner acquired authentic official notes SHA256091f233a28ddc5ed13ae3ac26f42438d4515619f97d144d2cc646efda2e047e8. Coleman latest QB starter, Cromwell latest RB starter135yards; Pettaway current formal status unverified. Productive replacement prevents treating Pettaway uncertainty alone as dog support."
+    }
+  ],
+  "uncertainty": "Controlled Beta, not calibrated EV. JMU superior front, offense, returns and rest can expose USM passing/protection and win by15+. Official current-game SunBelt availability remains UNVERIFIED; no Pettaway OUT or full personnel clearance asserted. Page returned with discomfort; expected OL returns may be limited. Reassess materially adverse QB/line/defense news. Venue confirmation pending; update clock unknown.",
+  "decision_rule": "Only Southern Miss +14.5 or better at -112 or better. Preserve the half-point beyond14; +14 is not accepted. The observed -112 cost requires52.83percent on resolved nonpush outcomes, which is price arithmetic, not an estimated cover probability. No stake, ML or parlay follows automatically.",
+  "source_qualification": "Parent independently retrieved primary ESPN summary exact event401869964/pre-game, providerDraftKings100, USMhome2572/JMUaway256; pairedhome+14.5/-112 and selection-specific event34913359/outcome0HC86962988P1450_1. Raw99087bytes SHA2561eb4cb1fe8dd585c0c248b078e89dfa39696e80e32c856a19523821ba2d101c1. Unknown offer update stays null; not consensus or an executable venue quote.",
+  "market_reference": {
+    "game_id": "401869964",
+    "market": "SPREAD",
+    "selection": "home",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-06T01:00:00Z",
+    "kickoff_source_url": "https://jmusports.com/news/2026/11/3/football-third-straight-thursday-game-takes-jmu-to-southern-miss",
+    "collection_start": "2026-11-05T01:05:08.211525+00:00",
+    "collection_end": "2026-11-05T01:05:12.143073+00:00",
+    "quotes": [
+      {
+        "game_id": "401869964",
+        "market": "SPREAD",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913359?outcomes=0HC86962988P1450_1",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869964",
+        "retrieved_at": "2026-11-05T01:05:12.143073+00:00",
+        "offer_updated_at": null,
+        "line": 14.5,
+        "price": -112
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "home",
+    "line": 14.5,
+    "minimum_price": -112,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-05T19:00:00Z",
+  "planning_cutoff_utc": "2026-11-05T19:00:00Z",
+  "cutoff_basis": "New controlled-Beta review expires at next Thursday13CTMonitor review target, ahead of19CTkickoff. Conservative review validity, not invented user placement or venue deadline; no automatic extension. A later decision requires new genuine review.",
+  "execution_window": {
+    "start_utc": "2026-11-05T01:06:20.115696+00:00",
+    "end_utc": "2026-11-05T19:00:00Z"
+  }
+}
