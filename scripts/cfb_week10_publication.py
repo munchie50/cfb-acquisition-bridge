@@ -137,8 +137,13 @@ def recovery_context(market,decision,lineage):
                 expected=initial[row['game_id']]
                 if {k:v for k,v in row.items() if k!='review_ref' or v is not None}!={k:v for k,v in expected.items() if k!='review_ref' or v is not None}:
                     raise ValueError('historical gap is immutable')
-            elif row.get('state')=='HISTORICAL_GAP':raise ValueError('new gaps require separate disposition; no late conversion')
-    return a
+            elif row.get('state')=='HISTORICAL_GAP':
+                from cfb_week10_missed_review import GAME
+                if row['game_id'] != GAME:
+                    raise ValueError('new gaps require separate disposition; no late conversion')
+    from cfb_week10_missed_review import context
+    recognized = context(decision, market, DECISION_TAG, MARKET_TAG)
+    return dict(a, recognized_gaps=recognized) if recognized else a
 
 
 
