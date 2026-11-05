@@ -1,0 +1,68 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401869927",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-05T01:38:23.555364+00:00",
+  "original_lineage_blob": "47736c0fd9ff49545db7e46b508805658a1c7a92",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "away",
+  "rationale": "Georgia State +6 at -112 is a controlled-Beta preference for balanced efficient offense, protection and sack production against a disrupted App State front. The fresh six gives push protection on a six-point loss. Singleton has played and can lead an App home rebound; only the left-tackle season-ending absence is established, with other current line statuses unverified.",
+  "model_review": "Exact original FIRST_FROZEN remains immutable and separate from accepted November3 REFRESH. Original context {\"pred_margin\": \"7.049278887884242\", \"pred_total\": \"56.118010249830874\", \"pred_win\": \"0.6756862377995193\"}; separate REFRESH {\"game_id\": \"401869927\", \"inventory_away\": \"Georgia St.\", \"inventory_home\": \"App. St.\", \"away_team\": \"Georgia State\", \"home_team\": \"App State\", \"target_kickoff_utc\": \"2026-11-07 19:30:00+00:00\", \"independent_live_kickoff_verified\": false, \"source_status\": \"ACCEPTED_REFRESH_ROW\", \"snapshot_type\": \"REFRESH_SNAPSHOT\", \"snapshot_cutoff_utc\": \"2026-11-03T00:17:26.895461+00:00\", \"pred_margin\": \"3.190847687981535\", \"pred_total\": \"55.63179225243594\", \"pred_win\": \"0.5896959906230835\", \"exclusion\": null, \"window_at_audit\": \"FUTURE\"}. Neither is a literal present fair line or calibrated probability; current football/number/price and opposing mechanisms govern this qualitative review.",
+  "material_sources": [
+    {
+      "url": "https://georgiastatesports.com/news/2026/11/1/football-panthers-head-to-high-country-to-face-mountaineers.aspx",
+      "retrieved_at": "2026-11-05T01:38:23.555364+00:00",
+      "finding": "Parent independently reopened actual primary web text before this review: current balanced production/protection and sack rate support competitiveness. Direct HTTP returned404; this is separately obtained primary web text, not successful raw HTTP. No final availability inferred."
+    },
+    {
+      "url": "https://appstatesports.com/news/2026/11/1/football-mountaineers-fall-to-eagles-in-first-place-showdown.aspx",
+      "retrieved_at": "2026-11-05T01:38:23.555364+00:00",
+      "finding": "Parent independently reopened actual primary recap before this review: Singleton played; LT Manuel season-ending status and earlier line disruption support the matchup. RT/center November7 absence is not assumed. Earlier failed raw HTTP preserved."
+    }
+  ],
+  "uncertainty": "Controlled Beta, not calibrated EV or a measured cover/total probability. Panthers balanced efficient run offense/protection can sustain possessions while sack production challenges App depleted protection. A5.5point cushion gives a competitive visitor room without needing outright upset. Strongest countercase App home rebound and Singleton passing threats; last3pointgame is not projected to repeat. RT/center returns may reduce matchup advantage and require fresh review. Formal current-game personnel is not fully cleared; adverse QB/line/defense news requires reconsideration. Source update time unknown, venue/execution unverified.",
+  "decision_rule": "Only SPREAD away AT_LEAST 6.0 at -112 or better. This is the newly earned case-specific outer pair, not a universal juice ceiling or an EV-optimized price. Preserve actual number/push/hook protections; no worse number, stake, derivative, parlay or execution is implied.",
+  "source_qualification": "Parent acquired and independently authenticated exact primary ESPN event401869927, pregame status, home/away team IDs {\"home\": {\"id\": \"2026\", \"location\": \"App State\", \"display\": \"App State Mountaineers\"}, \"away\": {\"id\": \"2247\", \"location\": \"Georgia State\", \"display\": \"Georgia State Panthers\"}}, DraftKings100, selected paired line/price and selection-specific operator URL https://sportsbook.draftkings.com/event/34913392?outcomes=0HC86963058P600_3. Raw99540bytes SHA25689fb5378e7484a433ad801c67b0cde72ec7c692664416c657ea629e30b0b5e97. Unknown offer_updated_at staysnull, retrieval-only benchmark not consensus or executable venue.",
+  "market_reference": {
+    "game_id": "401869927",
+    "market": "SPREAD",
+    "selection": "away",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-07T19:30:00Z",
+    "kickoff_source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869927",
+    "collection_start": "2026-11-05T01:28:03.376974+00:00",
+    "collection_end": "2026-11-05T01:28:06.783104+00:00",
+    "quotes": [
+      {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 6.0,
+        "price": -112,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913392?outcomes=0HC86963058P600_3",
+        "game_id": "401869927",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869927",
+        "retrieved_at": "2026-11-05T01:28:06.783104+00:00",
+        "offer_updated_at": null
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "away",
+    "line": 6.0,
+    "minimum_price": -112,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-06T19:00:00Z",
+  "planning_cutoff_utc": "2026-11-06T19:00:00Z",
+  "cutoff_basis": "New review expires at unchanged original FridayNovember6_13CTreconciliation boundary, before saved Saturday kickoff. A conservative review-validity boundary, not an invented user placement deadline. Genuine subsequent review required; no automatic extension.",
+  "execution_window": {
+    "start_utc": "2026-11-05T01:38:23.555364+00:00",
+    "end_utc": "2026-11-06T19:00:00Z"
+  }
+}
