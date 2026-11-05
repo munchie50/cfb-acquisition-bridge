@@ -1,0 +1,63 @@
+{
+  "schema": "CFB_PARTIAL_PRODUCTION_INTEGRATION_PROOF_V1",
+  "run": "CFB_MARKET_MONITOR_20261105T012111Z",
+  "observed_integration_utc": "2026-11-05T02:00:17.121Z",
+  "status": "PARTIAL_DELIVERY_VERIFIED_NOT_FULL_RUN_PASS",
+  "current_index": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_256.md",
+    "blob": "301bafaccff400231e3d5f3004c6cb7ab8653632",
+    "verified_pointers": 386,
+    "prewrite": "PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY",
+    "independent_saved_bytes": "PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY"
+  },
+  "canonical": {
+    "market": "87c455f1451b26587ac30489562285c0cfe0c9f5",
+    "decision": "822bccb7370a5dfbe22c1994bdf525457d17066e",
+    "sheet": "10d642137570317017934b8b1b85f8c0345f1f61",
+    "sheet_path": "evidence/operational/CFB_WEEK10_HOT_SHEET_2026-11-04_1948CT.md",
+    "all_prior_market_and_decision_bytes_preserved": true
+  },
+  "selected_ci": {
+    "run_id": 41951965338,
+    "job_id": 126997768386,
+    "head": "c61228029a186996ca9c5e48733f8a278e64a3e3",
+    "conclusion": "success"
+  },
+  "retained_archive_verification": {
+    "files": 55,
+    "zip_bytes": 988479,
+    "sha256": "20556b6fb38d0e82cdc347a8d2fcef5338aa8b62f2613648bf64947c66f1e355",
+    "result": "ALL_MANIFEST_FILE_HASHES_AND_BYTES_MATCH"
+  },
+  "research": {
+    "saturday_games": 43,
+    "branches": 258,
+    "new_conditions": 13,
+    "nonselections": 19,
+    "saturday_partial": 11,
+    "earlier_friday_partial": 3,
+    "remaining_total": 14
+  },
+  "counts": {
+    "PASS": 29,
+    "CONDITIONAL_RECORDS": 17,
+    "CLOSED_CONDITIONALS": 1,
+    "INCONCLUSIVE": 14,
+    "HISTORICAL_GAP": 3
+  },
+  "queue": {
+    "path": "evidence/audits/CFB_MARKET_MONITOR_20261105T012111Z_REMAINING_QUEUE.json",
+    "blob": "8c37da00a2dcb3233a0c73e3cf43b4c8981aca3f"
+  },
+  "audit": {
+    "path": "evidence/audits/CFB_MARKET_MONITOR_20261105T012111Z_INTEGRATION_RECONCILIATION.md",
+    "blob": "5fed1c14568120bc68eb5a02dcf63d24ce4099bb"
+  },
+  "open": [
+    "14 exact remaining research cases",
+    "Existing condition/price rechecks by governed deadlines",
+    "Current executable venue confirmation and unknown book-update clocks",
+    "Natural recurring full production reliability"
+  ],
+  "scientific_model_task_wager_money_effect": "NONE"
+}
