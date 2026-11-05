@@ -1,0 +1,63 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401858512",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-05T01:38:23.554417+00:00",
+  "original_lineage_blob": "47736c0fd9ff49545db7e46b508805658a1c7a92",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "home",
+  "rationale": "Minnesota +5.5 at -110 is a controlled-Beta preference for recent defensive competitiveness and home resistance to keep a run-led UCLA game within five. Dieffenbach has won all three starts, so this is not an automatic backup-quarterback discount. UCLA rushing, defense and second-half strength can still create a six-point-or-larger win.",
+  "model_review": "Exact original FIRST_FROZEN remains immutable and separate from accepted November3 REFRESH. Original context {\"game_id\": \"401858512\", \"away_team\": \"UCLA\", \"home_team\": \"Minnesota\", \"first_frozen_start\": \"2026-11-07 05:00:00+00:00\", \"first_frozen_status\": \"PREDICTION\", \"original_numeric_strings\": {\"pred_margin\": \"2.747681980467277\", \"pred_total\": \"55.15854610269629\", \"pred_win\": \"0.5840991961017751\"}, \"display\": \"FIRST_FROZEN: Minnesota -2.7 / 55.2 / 0.584 home\", \"first_frozen_exclusion\": null, \"current_qualified_kickoff_utc\": null}; separate REFRESH {\"game_id\": \"401858512\", \"inventory_away\": \"UCLA\", \"inventory_home\": \"Minnesota\", \"away_team\": \"UCLA\", \"home_team\": \"Minnesota\", \"target_kickoff_utc\": \"2026-11-07 17:00:00+00:00\", \"independent_live_kickoff_verified\": false, \"source_status\": \"ACCEPTED_REFRESH_ROW\", \"snapshot_type\": \"REFRESH_SNAPSHOT\", \"snapshot_cutoff_utc\": \"2026-11-03T00:17:26.895461+00:00\", \"pred_margin\": \"-5.08252919538295\", \"pred_total\": \"46.40079661854449\", \"pred_win\": \"0.3743674716879705\", \"exclusion\": null, \"window_at_audit\": \"FUTURE\"}. Neither is a literal present fair line or calibrated probability; current football/number/price and opposing mechanisms govern this qualitative review.",
+  "material_sources": [
+    {
+      "url": "https://gophersports.com/news/2026/11/4/football-game-9-preview-minnesota-vs-ucla",
+      "retrieved_at": "2026-11-05T01:19:34.475197+00:00",
+      "finding": "Authentic current primary material independently reconciled by parent and second reviewer. [\"Both official currentgame notes resolve UCLAQBrole: Nico Iamaleava injured versusOregon/outindefinitely perMinnesotapreview; TyDieffenbach startedlast3,59/100683yards3TD1INT. UCLAownnotes confirm3-0asstarter and178passyards/TD in27-0Nevadawin. Do not call Nico the expectedstarter from seasonleadingstats.\", \"Minnesota currentQBDrakeLindsey; recent13-10Iowawin/16-23IndianaOTloss support competitive home-defense route. UCLA WayneKnight680yards12rushTD and strong run defense/second-half performance make a live favorite; UCLAlefttackle rotation reflects injuredJordanDavis, not fullOLclearance.\", \"NWS43F,dry,5mphSW near11CT: earlyWestCoastkickoff/cold is context, not standaloneedge; no severeweatherunder.\"] Raw identity eb0a1f6b6ec5fa8323a751c685edb5823e9c6ae37eb808093174a13fb18553d2; no final game-day clearance inferred."
+    }
+  ],
+  "uncertainty": "Controlled Beta, not calibrated EV or a measured cover/total probability. UCLA dominant run game/defense and second-half edge can grind Minnesota down and win by6+; Minnesotafaces third straight rankedopponent andLindseydidnotproducehighpassingyardageatIndiana. No automatic WestCoastbodyclock edge. Formal current-game personnel is not fully cleared; adverse QB/line/defense news requires reconsideration. Source update time unknown, venue/execution unverified.",
+  "decision_rule": "Only SPREAD home AT_LEAST 5.5 at -110 or better. This is the newly earned case-specific outer pair, not a universal juice ceiling or an EV-optimized price. Preserve actual number/push/hook protections; no worse number, stake, derivative, parlay or execution is implied.",
+  "source_qualification": "Parent acquired and independently authenticated exact primary ESPN event401858512, pregame status, home/away team IDs {\"home\": {\"id\": \"135\", \"location\": \"Minnesota\", \"display\": \"Minnesota Golden Gophers\"}, \"away\": {\"id\": \"26\", \"location\": \"UCLA\", \"display\": \"UCLA Bruins\"}}, DraftKings100, selected paired line/price and selection-specific operator URL https://sportsbook.draftkings.com/event/34913431?outcomes=0HC86963153P550_1. Raw101560bytes SHA256e51d27dd875adbae9506c310720cac3aab562a745e0c5daf8843a8bfeb8c64fa. Unknown offer_updated_at staysnull, retrieval-only benchmark not consensus or executable venue.",
+  "market_reference": {
+    "game_id": "401858512",
+    "market": "SPREAD",
+    "selection": "home",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-07T17:00:00Z",
+    "kickoff_source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858512",
+    "collection_start": "2026-11-05T01:27:58.484677+00:00",
+    "collection_end": "2026-11-05T01:28:03.364749+00:00",
+    "quotes": [
+      {
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 5.5,
+        "price": -110,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913431?outcomes=0HC86963153P550_1",
+        "game_id": "401858512",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858512",
+        "retrieved_at": "2026-11-05T01:28:03.364749+00:00",
+        "offer_updated_at": null
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "home",
+    "line": 5.5,
+    "minimum_price": -110,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-06T19:00:00Z",
+  "planning_cutoff_utc": "2026-11-06T19:00:00Z",
+  "cutoff_basis": "New review expires at unchanged original FridayNovember6_13CTreconciliation boundary, before saved Saturday kickoff. A conservative review-validity boundary, not an invented user placement deadline. Genuine subsequent review required; no automatic extension.",
+  "execution_window": {
+    "start_utc": "2026-11-05T01:38:23.554417+00:00",
+    "end_utc": "2026-11-06T19:00:00Z"
+  }
+}
