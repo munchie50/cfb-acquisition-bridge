@@ -1,0 +1,69 @@
+{
+  "schema": "CFB_TEST_SCHEDULE_TERMINAL_CANDIDATE_V1",
+  "correlation_id": "CFB_TEST_SCHEDULE_20261105T020522Z",
+  "trigger": "NATURAL_ONE_TIME_SCHEDULED",
+  "task_id": "6aeb87dd781481919f9f190e69cb5422",
+  "own_run_id": "0fddd1fb-3bfc-832d-8acb-4e6d6c506e32",
+  "recorded_at_utc": "2026-11-05T02:08:06Z",
+  "terminal_candidate": "TEST_INCOMPLETE",
+  "discrepancy": "EARLY_START_TIMING_DISCREPANCY",
+  "first_actual_utc": "2026-11-05T02:06:50Z",
+  "accepted_scheduled_for_utc": "2026-11-05T02:08:22Z",
+  "recorded_started_at": "2026-11-05T02:06:35.615480Z",
+  "actual_delta_seconds": -92,
+  "recorded_delta_seconds": -106.38452,
+  "startup": {
+    "path": "evidence/scheduler_qa/CFB_TEST_SCHEDULE_20261105T020522Z_STARTED.json",
+    "blob": "3e7d0e3f5f0281cbbc4be5d04850855bf3a59d9b",
+    "independent_exact_readback": true
+  },
+  "result": {
+    "path": "evidence/scheduler_qa/CFB_TEST_SCHEDULE_20261105T020522Z_RESULT.json",
+    "blob": "b461e14b883cf5566cd86a2a23e3516b7f9ef316",
+    "independent_exact_readback": true
+  },
+  "production_checks": [
+    {
+      "id": "6ae766e788d881919726d0eeb44450dd",
+      "found": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true,
+      "expected_enabled": true,
+      "actual_enabled": true
+    },
+    {
+      "id": "6ae76df2ece4819197f91fb10076dea7",
+      "found": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true,
+      "expected_enabled": true,
+      "actual_enabled": true
+    },
+    {
+      "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+      "found": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true,
+      "expected_enabled": true,
+      "actual_enabled": true
+    },
+    {
+      "id": "6ae76df60e0c819182e2cfab1b83846a",
+      "found": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true,
+      "expected_enabled": true,
+      "actual_enabled": true
+    }
+  ],
+  "timing_fields": "Saved SETUP/current schedule/recorded scheduled_for agree; worker clock and metadata both earlier. No internal root cause or repair proved.",
+  "scope": "Timing/persistence only; no task mutation. Prior TEST_INCOMPLETE retained. No wait until chosen time or replacement of first clock.",
+  "scientific_effect": "NONE",
+  "champion_effect": "NONE",
+  "delivery": "UNKNOWN",
+  "closure_requirement": "This candidate does not certify itself; issue separate closure only after independent exact candidate readback."
+}
