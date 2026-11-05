@@ -1,0 +1,68 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401856853",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-05T01:38:23.552996+00:00",
+  "original_lineage_blob": "47736c0fd9ff49545db7e46b508805658a1c7a92",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "home",
+  "rationale": "Baylor -10 at -108 is a controlled-Beta preference for pressure and rush defense against Iowa State, plus a Lagway/Freeman scoring route against a vulnerable defense. Ten retains push protection. Flora and Raynor can create explosives, and Lagway completion volatility and the interim transition remain substantial risks.",
+  "model_review": "Exact original FIRST_FROZEN remains immutable and separate from accepted November3 REFRESH. Original context {\"game_id\": \"401856853\", \"away_team\": \"Iowa State\", \"home_team\": \"Baylor\", \"first_frozen_start\": \"2026-11-07 05:00:00+00:00\", \"first_frozen_status\": \"PREDICTION\", \"original_numeric_strings\": {\"pred_margin\": \"4.822221860731134\", \"pred_total\": \"46.37501164360453\", \"pred_win\": \"0.610435274455332\"}, \"display\": \"FIRST_FROZEN: Baylor -4.8 / 46.4 / 0.610 home\", \"first_frozen_exclusion\": null, \"current_qualified_kickoff_utc\": null}; separate REFRESH {\"game_id\": \"401856853\", \"inventory_away\": \"Iowa St.\", \"inventory_home\": \"Baylor\", \"away_team\": \"Iowa State\", \"home_team\": \"Baylor\", \"target_kickoff_utc\": \"2026-11-07 17:00:00+00:00\", \"independent_live_kickoff_verified\": false, \"source_status\": \"ACCEPTED_REFRESH_ROW\", \"snapshot_type\": \"REFRESH_SNAPSHOT\", \"snapshot_cutoff_utc\": \"2026-11-03T00:17:26.895461+00:00\", \"pred_margin\": \"11.631206172555267\", \"pred_total\": \"54.23968763222715\", \"pred_win\": \"0.7554923368954322\", \"exclusion\": null, \"window_at_audit\": \"FUTURE\"}. Neither is a literal present fair line or calibrated probability; current football/number/price and opposing mechanisms govern this qualitative review.",
+  "material_sources": [
+    {
+      "url": "https://cyclones.com/news/2026/11/3/football-primer-iowa-state-at-baylor",
+      "retrieved_at": "2026-11-05T01:19:32.675607+00:00",
+      "finding": "Authentic current primary material independently reconciled by parent and second reviewer. [\"Both current school previews confirm Baylor interim Joe Klanderman after ArandaOct25departure, DJ Lagway current QB, Gavin Freeman receiving route and strong front (second sacks/thirdTFL perpreview). Iowa State current QB Jaylen Raynor and runner Aiden Flora replace stale Campbell/Becht assumptions.\", \"Baylor15.3PPGallowed and seven opponents20orless, plus Lagway319yards/4TD in41-9 UCFwin, support a defensive/short-field favorite route. ISU51-49OklahomaStatewin shows real Raynor/Flora scoring upside but does not imply its defense will hold Baylor.\", \"NWS64F,10mphNNE,mostlycloudy near11CT; modest wind is not a standalone total selection.\"] Raw identity c52fb8c58732b1ec32eb873bcd441d4d6d9563bf110e3783890b9b387e40184c; no final game-day clearance inferred."
+    },
+    {
+      "url": "https://baylorbears.com/news/2026/11/1/football-baylor-hosts-iowa-state-in-nations-longest-running-homecoming",
+      "retrieved_at": "2026-11-05T01:19:33.551426+00:00",
+      "finding": "Authentic current primary material independently reconciled by parent and second reviewer. [\"Both current school previews confirm Baylor interim Joe Klanderman after ArandaOct25departure, DJ Lagway current QB, Gavin Freeman receiving route and strong front (second sacks/thirdTFL perpreview). Iowa State current QB Jaylen Raynor and runner Aiden Flora replace stale Campbell/Becht assumptions.\", \"Baylor15.3PPGallowed and seven opponents20orless, plus Lagway319yards/4TD in41-9 UCFwin, support a defensive/short-field favorite route. ISU51-49OklahomaStatewin shows real Raynor/Flora scoring upside but does not imply its defense will hold Baylor.\", \"NWS64F,10mphNNE,mostlycloudy near11CT; modest wind is not a standalone total selection.\"] Raw identity ccee6247b7f0f55b8f5cb02ae4e2a7ebee0a5dd9a24179fc0abf91c88e5f8766; no final game-day clearance inferred."
+    }
+  ],
+  "uncertainty": "Controlled Beta, not calibrated EV or a measured cover/total probability. Flora explosive runs and Raynor mobility can neutralize pressure and keep a double-digit dog live; Lagway53%seasoncompletion and transition regime still create offensive volatility. No projection of automatic interim-coach improvement. Formal current-game personnel is not fully cleared; adverse QB/line/defense news requires reconsideration. Source update time unknown, venue/execution unverified.",
+  "decision_rule": "Only SPREAD home AT_LEAST -10.0 at -108 or better. This is the newly earned case-specific outer pair, not a universal juice ceiling or an EV-optimized price. Preserve actual number/push/hook protections; no worse number, stake, derivative, parlay or execution is implied.",
+  "source_qualification": "Parent acquired and independently authenticated exact primary ESPN event401856853, pregame status, home/away team IDs {\"home\": {\"id\": \"239\", \"location\": \"Baylor\", \"display\": \"Baylor Bears\"}, \"away\": {\"id\": \"66\", \"location\": \"Iowa State\", \"display\": \"Iowa State Cyclones\"}}, DraftKings100, selected paired line/price and selection-specific operator URL https://sportsbook.draftkings.com/event/34913513?outcomes=0HC86963279N1000_1. Raw98953bytes SHA256a392f6e81c947f30694c16c447a2e6c1ad21c4b2a8efe1501de98e0e6a7f1bbe. Unknown offer_updated_at staysnull, retrieval-only benchmark not consensus or executable venue.",
+  "market_reference": {
+    "game_id": "401856853",
+    "market": "SPREAD",
+    "selection": "home",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-07T17:00:00Z",
+    "kickoff_source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856853",
+    "collection_start": "2026-11-05T01:27:58.482671+00:00",
+    "collection_end": "2026-11-05T01:28:03.367136+00:00",
+    "quotes": [
+      {
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -10.0,
+        "price": -108,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913513?outcomes=0HC86963279N1000_1",
+        "game_id": "401856853",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856853",
+        "retrieved_at": "2026-11-05T01:28:03.367136+00:00",
+        "offer_updated_at": null
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "home",
+    "line": -10.0,
+    "minimum_price": -108,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-06T19:00:00Z",
+  "planning_cutoff_utc": "2026-11-06T19:00:00Z",
+  "cutoff_basis": "New review expires at unchanged original FridayNovember6_13CTreconciliation boundary, before saved Saturday kickoff. A conservative review-validity boundary, not an invented user placement deadline. Genuine subsequent review required; no automatic extension.",
+  "execution_window": {
+    "start_utc": "2026-11-05T01:38:23.552996+00:00",
+    "end_utc": "2026-11-06T19:00:00Z"
+  }
+}
