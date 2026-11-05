@@ -1,0 +1,76 @@
+{
+  "schema": "CFB_PARTIAL_PRODUCTION_INTEGRATION_PROOF_V1",
+  "run": "CFB_MARKET_MONITOR_20261105T005623Z",
+  "packet_as_of_utc": "2026-11-05T01:10:06.740825+00:00",
+  "observed_integration_utc": "2026-11-05T01:20:20.708Z",
+  "status": "PARTIAL_DELIVERY_VERIFIED_NOT_FULL_RUN_PASS",
+  "current_index": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_255.md",
+    "blob": "ae572e3342bf27a846ee278d81cd4a8d25091e40",
+    "pointer_count": 367,
+    "prewrite": "PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY",
+    "independent_saved_bytes": "PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY"
+  },
+  "canonical": {
+    "market": {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "blob": "841ec2f36afea32f290ca4d383e2a9b78e33d4b0",
+      "bytes": 4176895,
+      "all_prior_bytes_preserved": true,
+      "full_readback": true
+    },
+    "decision": {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "blob": "0c389170f46c3bb373e6961a4f55416476f760e5",
+      "bytes": 2031490,
+      "all_prior_bytes_preserved": true,
+      "full_readback": true
+    },
+    "sheet": {
+      "path": "evidence/operational/CFB_WEEK10_HOT_SHEET_2026-11-04_1910CT.md",
+      "blob": "68c1e35f1c9b62a59c80599cc2ea7b6fd19f45c7",
+      "bytes": 119560,
+      "full_readback": true
+    },
+    "companion": {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_20261105T005623Z_OPPORTUNITIES.md",
+      "blob": "82e4c7ec09ae4fb0f6b64111df0d8248f7d3d5a2",
+      "full_readback": true
+    }
+  },
+  "independent_review": "real raw event/team/provider/side-price/operator-link plus immutable review/chronology and complete renderer verified; wrong initial microsecond audit argument rejected, corrected to actual header without proposal change",
+  "selected_ci": {
+    "run_id": 41947468843,
+    "job_id": 126983125453,
+    "head": "d2008c8b02acb193851804036effe9f15e197e8c",
+    "status": "completed",
+    "conclusion": "success",
+    "current_sheet": "evidence/operational/CFB_WEEK10_HOT_SHEET_2026-11-04_1910CT.md",
+    "accepted_archive_invariant": "PASS_WEEK10_ORIGINAL_FROZEN_FIELDS_ONLY",
+    "original_games": 63,
+    "original_predictions": 55,
+    "original_exclusions": 8,
+    "original_numeric_fields": 165
+  },
+  "counts": {
+    "INCONCLUSIVE": 46,
+    "PASS": 10,
+    "CONDITIONAL_RECORDS": 4,
+    "CLOSED_CONDITIONALS": 1,
+    "HISTORICAL_GAP": 3
+  },
+  "current_case_limits": {
+    "USM": "+14.5/-112 or better; Nov5_19Z review expiry",
+    "Illinois": "+4.5/-108 or better; Nov5_19Z review expiry",
+    "FAU": "original+7/-112 cap unchanged; current+7/-115 FAIL_PRICE; no qualifying current observed offer",
+    "UMass": "closed immutable history; originalNov4_23Z cutoff"
+  },
+  "open": [
+    "43 other modeled future Saturday cases awaiting actual research at this packet boundary",
+    "3 named USF/Nevada/TCU role-sensitive cases",
+    "natural recurring full production reliability",
+    "current executable venue confirmation and unknown book-update clocks"
+  ],
+  "scientific_model_wager_money_effect": "NONE",
+  "scope": "Accepted bounded actual manual partial delivery; no full-slate or recurring RUN_PASS"
+}
