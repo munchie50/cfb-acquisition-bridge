@@ -1,0 +1,120 @@
+{
+  "schema": "CFB_TEST_SCHEDULE_RESULT_V1",
+  "correlation_id": "CFB_TEST_SCHEDULE_20261105T020522Z",
+  "trigger": "NATURAL_ONE_TIME_SCHEDULED",
+  "result_observed_at_utc": "2026-11-05T02:07:29Z",
+  "verdict": "TEST_INCOMPLETE",
+  "classification": "EARLY_START_TIMING_DISCREPANCY",
+  "first_actual_utc": "2026-11-05T02:06:50Z",
+  "first_actual_clock_source": "clock__curr_time; first tool operation before recovery; second precision",
+  "accepted_scheduled_for_utc": "2026-11-05T02:08:22Z",
+  "recorded_scheduled_for_utc": "2026-11-05T02:08:22Z",
+  "recorded_worker_started_at": "2026-11-05T02:06:35.615480Z",
+  "first_actual_minus_accepted_schedule_seconds": -92,
+  "recorded_start_minus_recorded_schedule_seconds": -106.385,
+  "actual_observation_scope": "Worker activity was genuinely observed before scheduled time; this is not inferred solely from metadata and is not the exact process start clock. No wait/delay substituted.",
+  "run_association": {
+    "task_id": "6aeb87dd781481919f9f190e69cb5422",
+    "own_run_id": "0fddd1fb-3bfc-832d-8acb-4e6d6c506e32",
+    "recorded_status_at_peek": "in_progress",
+    "latest_result_run_id": "26bd530f-cbd4-8320-abf1-d5e3f9e0faf5",
+    "latest_result_is_current": false,
+    "prior_result_not_attributed": true,
+    "delivery_status": "unknown"
+  },
+  "setup": {
+    "path": "evidence/scheduler_qa/CFB_TEST_SCHEDULE_20261105T020522Z_SETUP.json",
+    "blob": "eabfbe4febf5b5a49038bba850bb43ca3169cd09",
+    "independent_accepted_schedule_source": true,
+    "setup_race": false,
+    "original_requested_raw_utc": "UNVERIFIED; setup records accepted scheduled_for and external authorization, not independent original raw requested clock"
+  },
+  "baseline": {
+    "path": "evidence/scheduler_qa/CFB_TEST_SCHEDULE_20261105_BASELINE.json",
+    "blob": "53718f1646322abb77b4d7d7c101473690ac5a77",
+    "exact_expected_blob": true
+  },
+  "startup": {
+    "path": "evidence/scheduler_qa/CFB_TEST_SCHEDULE_20261105T020522Z_STARTED.json",
+    "blob": "3e7d0e3f5f0281cbbc4be5d04850855bf3a59d9b",
+    "create": "PASS",
+    "independent_exact_content_readback": "PASS"
+  },
+  "schedule_checks": {
+    "schedule_exactly_matches_setup": true,
+    "one_dtstart": true,
+    "no_rrule": true,
+    "timezone_america_chicago": true,
+    "display_time_matches": "2026-11-04 20:08:22 America/Chicago",
+    "recorded_scheduled_for_matches_accepted": true
+  },
+  "production_checks": [
+    {
+      "id": "6ae766e788d881919726d0eeb44450dd",
+      "found": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true,
+      "expected_enabled": true,
+      "actual_enabled": true
+    },
+    {
+      "id": "6ae76df2ece4819197f91fb10076dea7",
+      "found": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true,
+      "expected_enabled": true,
+      "actual_enabled": true
+    },
+    {
+      "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+      "found": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true,
+      "expected_enabled": true,
+      "actual_enabled": true
+    },
+    {
+      "id": "6ae76df60e0c819182e2cfab1b83846a",
+      "found": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true,
+      "expected_enabled": true,
+      "actual_enabled": true
+    }
+  ],
+  "topology": {
+    "four_baseline_production_enabled": true,
+    "enabled_total_observed": 5,
+    "only_additional_enabled_task": "6aeb87dd781481919f9f190e69cb5422",
+    "all_four_exact_prompt_schedule_enabled_match": true
+  },
+  "stages": {
+    "actual_clock": "VERIFIED_EARLY",
+    "own_run_identity": "OBSERVED",
+    "accepted_schedule": "VERIFIED",
+    "startup_persistence_readback": "PASS",
+    "production_baseline_comparison": "PASS",
+    "result": "This content is proposed result; subsequent independent readback is separately certified by candidate/closure",
+    "timing_acceptance": "NOT_PASSED"
+  },
+  "hypotheses": {
+    "worker_genuinely_active_early": "CONFIRMED_BY_FIRST_ACTUAL_CLOCK",
+    "sole_metadata_artifact_explanation": "INSUFFICIENT: authentic worker clock is early too",
+    "configuration_timezone_mismatch": "NOT_OBSERVED; exact UTC schedule/setup/recorded scheduled_for agree",
+    "scheduler_internal_cause": "OPEN_NOT_EXPOSED",
+    "repair_from_prompt_change": "NOT_DEMONSTRATED"
+  },
+  "unproved_boundary": "Worker timing remains earlier than independently accepted schedule; do not claim scheduler repair or TIMING_OBSERVED_PASS.",
+  "scope": "Scheduler timing and receipt persistence only; no football/market acquisition, clone, shell/compiler/CI, authority/canonical/HotSheet/recovery writes or task mutation.",
+  "history": "Prior TEST_INCOMPLETE records retained unchanged. Original full test prompt preserved in baseline, not restored by this invocation.",
+  "closure_protocol": "Separate candidate, independent exact candidate readback, then separate closure required.",
+  "future_action": "No self-reschedule or follow-up creation. Preserve platform timing discrepancy for user-directed investigation; normal one-off expiry permitted.",
+  "scientific_effect": "NONE",
+  "champion_effect": "NONE",
+  "sustained_reliability": "UNPROVED",
+  "output_delivery": "UNKNOWN"
+}
