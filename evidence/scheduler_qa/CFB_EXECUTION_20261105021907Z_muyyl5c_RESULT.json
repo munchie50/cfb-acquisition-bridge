@@ -1,0 +1,309 @@
+{
+  "schema": "CFB_COMPLETE_SHADOW_EXECUTION_RESULT_V1",
+  "correlation_id": "CFB_EXECUTION_20261105021907Z_muyyl5c",
+  "invocation_id": "d47599d6-04b8-8327-8149-31f5c1e166d1",
+  "trigger": "NATURAL_ONE_TIME_SCHEDULED",
+  "recorded_at_utc": "2026-11-05T02:21:39Z",
+  "workload_verdict": "TEST_PASS_EXECUTION",
+  "terminal_certification": "Separate candidate/readback/closure follows; this file alone is not self-certified closure",
+  "first_unproved_boundary": null,
+  "authority": {
+    "main_commit": "6103d2975bef1172a28b04f86c21ab1d6bf42023",
+    "contract": {
+      "path": "evidence/scheduler_qa/CFB_TEST_COMPLETION_20261105_CONTRACT.md",
+      "blob": "328a7558789788ca05e04d98dc7d6e2de6489924"
+    },
+    "recovery": {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_256.md",
+      "blob": "301bafaccff400231e3d5f3004c6cb7ab8653632",
+      "pointer_count": 386,
+      "pointer_mismatches": []
+    },
+    "qualified_smoke": {
+      "path": "qa/cfb_monitor_execution_smoke.py",
+      "blob": "ab20715df76074e3f5c28486b49278bed3fdec0b",
+      "size": 5150,
+      "exact_real_checkout_verified": true
+    },
+    "routine": "v5.0+acceptedv5.1A/C+v5.2D/E/F read; persistence exact-byte transport and two-phase closure applied"
+  },
+  "started": {
+    "path": "evidence/scheduler_qa/CFB_EXECUTION_20261105021907Z_muyyl5c_STARTED.json",
+    "blob": "f0b08387a0e21389852b28504d1e1fecde933582",
+    "independent_exact_readback": true
+  },
+  "timing": {
+    "first_actual_utc": "2026-11-05T02:19:07Z",
+    "source": "clock__curr_time first tool operation",
+    "accepted_scheduled_for": "2026-11-05T02:20:00Z",
+    "current_accepted_schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20261104T202000\nEND:VEVENT",
+    "recorded_started_at": "2026-11-05T02:18:52.778809Z",
+    "first_actual_minus_scheduled_seconds": -53,
+    "recorded_start_minus_scheduled_seconds": -67.222,
+    "classification": "EARLY_START_DIAGNOSTIC_NONBLOCKING",
+    "material_impact": "NONE_DEMONSTRATED: authentic retained fixture/artifact available; historical clocks not retimed; live chosen event remains pregame. No missing input/cutoff/usefulness loss.",
+    "platform_cause": "UNRESOLVED; not repaired by prompt or test success",
+    "latest_result_run_id": "0fddd1fb-3bfc-832d-8acb-4e6d6c506e32",
+    "latest_result_is_current": false,
+    "delivery": "UNKNOWN"
+  },
+  "stages": [
+    {
+      "stage": "RUNTIME",
+      "outcome": "PASS",
+      "helper_preexecution_bytes": 3780,
+      "helper_preexecution_git_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "actual_command": "python3 cfb_runtime_checkout.py --destination /workspace/scratch/13df5b80aaf6/complete_20261105T021907Z/checkout --expected-head 6103d2975bef1172a28b04f86c21ab1d6bf42023 > runtime.json",
+      "exit_code": 0,
+      "execution_count": 1,
+      "evidence": {
+        "status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+        "head": "6103d2975bef1172a28b04f86c21ab1d6bf42023",
+        "python": "3.12.14",
+        "immutable_reviews": 50,
+        "result_sha256": "8b33600fe04d9be9c503e2c1b300e32cd4d94956e0c3556e4c6a05eef158e416",
+        "full_history": true,
+        "helper_exact": true,
+        "execution_count": 1
+      }
+    },
+    {
+      "stage": "ACCEPTED_ARCHIVE",
+      "outcome": "PASS",
+      "download_tool": "mcp__codex_apps__github_download_workflow_artifact",
+      "transfer": "Returned download_url bytes transferred by Python urllib.request once into new scratch original.zip; SHA256 verified before compiler",
+      "evidence": {
+        "artifact_id": 10897612260,
+        "bytes": 221504,
+        "sha256": "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf",
+        "downloaded_this_invocation": true
+      }
+    },
+    {
+      "stage": "RETAINED_COMPILER_RENDER_ARCHIVE",
+      "outcome": "PASS",
+      "actual_command": "python3 qa/cfb_monitor_execution_smoke.py --first /workspace/scratch/13df5b80aaf6/complete_20261105T021907Z/original.zip --output-dir /workspace/scratch/13df5b80aaf6/complete_20261105T021907Z/smoke_output",
+      "working_directory": "/workspace/scratch/13df5b80aaf6/complete_20261105T021907Z/checkout",
+      "exit_code": 0,
+      "execution_count": 1,
+      "complete_result_json": {
+        "schema": "CFB_MONITOR_EXECUTION_SMOKE_V1",
+        "observed_start_utc": "2026-11-05T02:20:35.202653+00:00",
+        "head": "6103d2975bef1172a28b04f86c21ab1d6bf42023",
+        "fixture": {
+          "cycle": "CFB_MARKET_MONITOR_20261105T012111Z",
+          "publication_utc": "2026-11-05T01:48:11.126910+00:00",
+          "source_utc": "2026-11-05T01:40:33.495311+00:00",
+          "prior_market": "841ec2f36afea32f290ca4d383e2a9b78e33d4b0",
+          "prior_decision": "0c389170f46c3bb373e6961a4f55416476f760e5",
+          "market": "87c455f1451b26587ac30489562285c0cfe0c9f5",
+          "decision": "822bccb7370a5dfbe22c1994bdf525457d17066e",
+          "sheet": "10d642137570317017934b8b1b85f8c0345f1f61",
+          "execution": "f6c3147100e21a4ea97dff8423fd70f06c45123c",
+          "scorecard": "65d212f05e56ab7bd89244c9f4bccff4763c0077",
+          "capture_path": "evidence/operational/CFB_CBS_WEEK10_TABLE_CAPTURE_20261105T014033Z.md",
+          "capture_blob": "48484afff21eda509a80bf26bd90b6c7c68df54f",
+          "lineage_path": "evidence/scheduler_qa/CFB_WEEK10_ORIGINAL_ANCESTRY_RECOVERY_20261104.json",
+          "lineage_blob": "47736c0fd9ff49545db7e46b508805658a1c7a92"
+        },
+        "stages": [
+          {
+            "stage": "AUTHENTIC_INPUTS",
+            "outcome": "PASS",
+            "games": 63
+          },
+          {
+            "stage": "REAL_COMPILER",
+            "outcome": "PASS",
+            "exact_saved_bytes": true
+          },
+          {
+            "stage": "REAL_RENDER",
+            "outcome": "PASS",
+            "exact_saved_bytes": true
+          },
+          {
+            "stage": "ORIGINAL_ARCHIVE_INVARIANT",
+            "outcome": "PASS",
+            "evidence": {
+              "verdict": "PASS_WEEK10_ORIGINAL_FROZEN_FIELDS_ONLY",
+              "games": 63,
+              "predictions": 55,
+              "exclusions": 8,
+              "numeric_fields": 165,
+              "scope": "original fields only, not market/review/publication/betting acceptance"
+            }
+          }
+        ],
+        "status": "PASS_RETAINED_MONITOR_EXECUTION_ONLY",
+        "scope": "Authentic retained compiler/render/frozen-field execution only; no fresh quote, live decision, production acceptance or recurring reliability.",
+        "observed_end_utc": "2026-11-05T02:20:38.833797+00:00"
+      },
+      "independently_read_output_hashes": {
+        "market.md": {
+          "git_blob": "87c455f1451b26587ac30489562285c0cfe0c9f5",
+          "sha256": "5227d83aae713dd787301dc290e47a5741417c9fdaf9cd7a26f0564ee1d717c7",
+          "bytes": 4289932,
+          "exact_saved_output_match": true
+        },
+        "decision.md": {
+          "git_blob": "822bccb7370a5dfbe22c1994bdf525457d17066e",
+          "sha256": "5014a0cb0ee3bc625752fa12dbd1682f6957ff7958f6f5f0d95b7bdb584f78a1",
+          "bytes": 2170777,
+          "exact_saved_output_match": true
+        },
+        "sheet.md": {
+          "git_blob": "10d642137570317017934b8b1b85f8c0345f1f61",
+          "sha256": "ea58ddd74b330887777ed38e9bd9219636bc488a0b7f755eb26565be7666a9b2",
+          "bytes": 213053,
+          "exact_saved_output_match": true
+        }
+      },
+      "interpretation": "Authentic saved parent/source/decision bytes at ORIGINAL historical clocks; not fresh production or current recommendations."
+    },
+    {
+      "stage": "LIVE_SOURCE_ACCESS",
+      "outcome": "PASS",
+      "actual_command": "python3 live_source.py",
+      "exit_code": 0,
+      "evidence": {
+        "stage": "LIVE_SOURCE_ACCESS",
+        "started_at": "2026-11-05T02:21:06.753448+00:00",
+        "canonical_market_blob": "87c455f1451b26587ac30489562285c0cfe0c9f5",
+        "canonical_boundary": "2026-11-05T01:48:11.126910+00:00",
+        "status": "PASS_CONFORMING_PRIMARY_SOURCE_ACCESS",
+        "raw_offer_update_time": null,
+        "scope": "Conforming source access only; no football judgment, recommendation or live publication.",
+        "game_id": "401862817",
+        "canonical_kickoff": "2026-11-06T00:30:00Z",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862817",
+        "http_status": 200,
+        "recovered_by": "2026-11-05T02:21:11.322998+00:00",
+        "raw_bytes": 97854,
+        "raw_sha256": "4ecaef38aa7dea6fe99ae8779bad4d1eed771990e1f3ec23c5898cea8f76dd3a",
+        "teams": {
+          "home": {
+            "id": "2226",
+            "displayName": "Florida Atlantic Owls"
+          },
+          "away": {
+            "id": "2636",
+            "displayName": "UTSA Roadrunners"
+          }
+        },
+        "original_directed_identity": {
+          "away": "UTSA",
+          "home": "Florida Atlantic"
+        },
+        "source_kickoff": "2026-11-06T00:30Z",
+        "provider_id": "100",
+        "provider": "DraftKings",
+        "paired_quotes": [
+          {
+            "side": "home",
+            "team_id": "2226",
+            "line": 7,
+            "price": -115,
+            "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913358?outcomes=0HC86962987P700_1",
+            "outcome": "0HC86962987P700_1",
+            "offer_updated_at": null
+          },
+          {
+            "side": "away",
+            "team_id": "2636",
+            "line": -7,
+            "price": -105,
+            "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913358?outcomes=0HC86962987N700_3",
+            "outcome": "0HC86962987N700_3",
+            "offer_updated_at": null
+          }
+        ],
+        "market_outcome": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+        "consensus": "CONSENSUS_UNAVAILABLE",
+        "execution": "UNVERIFIED",
+        "original_price_limit_note": "Observed price compared separately; this test does not renew/relax originalFAU+7/-112limit or certify current recommendation.",
+        "completed_at": "2026-11-05T02:21:11.325500+00:00"
+      },
+      "offer_qualification": "FAU+7/-115 is outside preserved-112originallimit; no qualifying current offer/recommendation claimed. Source-access success independently satisfies this execution test."
+    },
+    {
+      "stage": "ISOLATION",
+      "outcome": "PASS",
+      "production_baseline_initial": [
+        {
+          "id": "6ae766e788d881919726d0eeb44450dd",
+          "prompt_exact": true,
+          "schedule_exact": true,
+          "enabled_exact": true
+        },
+        {
+          "id": "6ae76df2ece4819197f91fb10076dea7",
+          "prompt_exact": true,
+          "schedule_exact": true,
+          "enabled_exact": true
+        },
+        {
+          "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+          "prompt_exact": true,
+          "schedule_exact": true,
+          "enabled_exact": true
+        },
+        {
+          "id": "6ae76df60e0c819182e2cfab1b83846a",
+          "prompt_exact": true,
+          "schedule_exact": true,
+          "enabled_exact": true
+        }
+      ],
+      "production_baseline_final": [
+        {
+          "id": "6ae766e788d881919726d0eeb44450dd",
+          "prompt_exact": true,
+          "schedule_exact": true,
+          "enabled_exact": true
+        },
+        {
+          "id": "6ae76df2ece4819197f91fb10076dea7",
+          "prompt_exact": true,
+          "schedule_exact": true,
+          "enabled_exact": true
+        },
+        {
+          "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+          "prompt_exact": true,
+          "schedule_exact": true,
+          "enabled_exact": true
+        },
+        {
+          "id": "6ae76df60e0c819182e2cfab1b83846a",
+          "prompt_exact": true,
+          "schedule_exact": true,
+          "enabled_exact": true
+        }
+      ],
+      "canonical_pointer_changes": [],
+      "end_main": "6103d2975bef1172a28b04f86c21ab1d6bf42023",
+      "tracked_checkout_changes": ""
+    },
+    {
+      "stage": "PERSISTENCE",
+      "outcome": "STARTED_SAVED_READ_BACK; RESULT_IN_FLIGHT",
+      "required_next": "Exact independent result readback; candidate saved/readback; separate closure saved/readback."
+    }
+  ],
+  "failed_stage_attempts": [],
+  "scope": {
+    "canonical_writes": "NONE",
+    "new_live_recommendations": "NONE",
+    "scientific_model_champion_effect": "NONE",
+    "wager_money_effect": "NONE",
+    "task_changes": "NONE",
+    "workflow_infrastructure_changes": "NONE",
+    "broad_CI_rerun": "NONE",
+    "new_schedule_or_repeat": "NONE",
+    "full_slate_current_research": "NOT_CERTIFIED",
+    "recurring_reliability": "NOT_CERTIFIED",
+    "prior_test_history": "Retained unchanged; earlier TEST_INCOMPLETE results not upgraded",
+    "one_off_lifecycle": "Normal auto-expiry; no self-reschedule"
+  }
+}
