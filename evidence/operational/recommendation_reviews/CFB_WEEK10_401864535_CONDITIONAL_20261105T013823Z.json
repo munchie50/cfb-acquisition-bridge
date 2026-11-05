@@ -1,0 +1,68 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401864535",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-05T01:38:23.559751+00:00",
+  "original_lineage_blob": "47736c0fd9ff49545db7e46b508805658a1c7a92",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "away",
+  "rationale": "Wyoming +6 at -112 is a controlled-Beta preference for Hughes rushing against UNLV run-defense leakage, extra preparation and a disruptive front. Six retains push protection. UNLV home finishing, Arnold/Thomas and Wyoming prior overtime dependence can still defeat the spread; a points case is not an outright upset prediction.",
+  "model_review": "Exact original FIRST_FROZEN remains immutable and separate from accepted November3 REFRESH. Original context {\"pred_margin\": \"1.7513344391580845\", \"pred_total\": \"44.50318770762418\", \"pred_win\": \"0.48136806672512733\"}; separate REFRESH {\"game_id\": \"401864535\", \"inventory_away\": \"Wyoming\", \"inventory_home\": \"UNLV\", \"away_team\": \"Wyoming\", \"home_team\": \"UNLV\", \"target_kickoff_utc\": \"2026-11-08 03:30:00+00:00\", \"independent_live_kickoff_verified\": false, \"source_status\": \"ACCEPTED_REFRESH_ROW\", \"snapshot_type\": \"REFRESH_SNAPSHOT\", \"snapshot_cutoff_utc\": \"2026-11-03T00:17:26.895461+00:00\", \"pred_margin\": \"4.272996602803708\", \"pred_total\": \"50.94676040991559\", \"pred_win\": \"0.5917247626318053\", \"exclusion\": null, \"window_at_audit\": \"FUTURE\"}. Neither is a literal present fair line or calibrated probability; current football/number/price and opposing mechanisms govern this qualitative review.",
+  "material_sources": [
+    {
+      "url": "https://gowyo.com/news/2026/11/2/football-cowboys-set-for-mountain-west-clash-in-vegas-with-unlv",
+      "retrieved_at": "2026-11-05T01:21:24.735316+00:00",
+      "finding": "Authentic current primary material independently reconciled by parent and second reviewer. [] Raw identity d4d4b1d8ee9befd312cf213b29a24bf54a0e6c3c4c971e676b26af811bcdcc51; no final game-day clearance inferred."
+    },
+    {
+      "url": "https://unlvrebels.com/news/2026/11/2/football-game-9-rebels-host-cowboys-saturday-night-in-key-mw-battle",
+      "retrieved_at": "2026-11-05T01:21:28.451205+00:00",
+      "finding": "Authentic current primary material independently reconciled by parent and second reviewer. [] Raw identity b52a2945c4598f055ebadb1df2c52295494657073e6c2fd313080044c84c3e23; no final game-day clearance inferred."
+    }
+  ],
+  "uncertainty": "Controlled Beta, not calibrated EV or a measured cover/total probability. UNLV is 8-2 at home under Mullen; Arnold and Thomas supply a strong dual-threat rushing attack, and Wyoming previously needed overtime at San Jose State. A late UNLV touchdown can beat this spread. Formal current-game personnel is not fully cleared; adverse QB/line/defense news requires reconsideration. Source update time unknown, venue/execution unverified.",
+  "decision_rule": "Only SPREAD away AT_LEAST 6.0 at -112 or better. This is the newly earned case-specific outer pair, not a universal juice ceiling or an EV-optimized price. Preserve actual number/push/hook protections; no worse number, stake, derivative, parlay or execution is implied.",
+  "source_qualification": "Parent acquired and independently authenticated exact primary ESPN event401864535, pregame status, home/away team IDs {\"home\": {\"id\": \"2439\", \"location\": \"UNLV\", \"display\": \"UNLV Rebels\"}, \"away\": {\"id\": \"2751\", \"location\": \"Wyoming\", \"display\": \"Wyoming Cowboys\"}}, DraftKings100, selected paired line/price and selection-specific operator URL https://sportsbook.draftkings.com/event/34913639?outcomes=0HC86963547P600_3. Raw94141bytes SHA2560ea04978f6f52a7b37c977733f83496ff5553be55ffaff5a400c9abd97ceb4f2. Unknown offer_updated_at staysnull, retrieval-only benchmark not consensus or executable venue.",
+  "market_reference": {
+    "game_id": "401864535",
+    "market": "SPREAD",
+    "selection": "away",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-08T03:30:00Z",
+    "kickoff_source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864535",
+    "collection_start": "2026-11-05T01:28:21.101428+00:00",
+    "collection_end": "2026-11-05T01:28:25.219070+00:00",
+    "quotes": [
+      {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 6.0,
+        "price": -112,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913639?outcomes=0HC86963547P600_3",
+        "game_id": "401864535",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864535",
+        "retrieved_at": "2026-11-05T01:28:25.219070+00:00",
+        "offer_updated_at": null
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "away",
+    "line": 6.0,
+    "minimum_price": -112,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-06T19:00:00Z",
+  "planning_cutoff_utc": "2026-11-06T19:00:00Z",
+  "cutoff_basis": "New review expires at unchanged original FridayNovember6_13CTreconciliation boundary, before saved Saturday kickoff. A conservative review-validity boundary, not an invented user placement deadline. Genuine subsequent review required; no automatic extension.",
+  "execution_window": {
+    "start_utc": "2026-11-05T01:38:23.559751+00:00",
+    "end_utc": "2026-11-06T19:00:00Z"
+  }
+}
