@@ -1,0 +1,68 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401856851",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-05T01:38:23.555957+00:00",
+  "original_lineage_blob": "47736c0fd9ff49545db7e46b508805658a1c7a92",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "away",
+  "rationale": "Cincinnati +10.5 at -108 is a controlled-Beta preference for productive rushing, functional French passing and red-zone finishing to sustain a competitive or late-cover route. Ten points can be lost while still covering. Houston rest, run defense, Weigman and sustained drives can instead produce a two-touchdown win; no defensive touchdown is projected to repeat.",
+  "model_review": "Exact original FIRST_FROZEN remains immutable and separate from accepted November3 REFRESH. Original context {\"pred_margin\": \"7.466094858371314\", \"pred_total\": \"57.33789708596704\", \"pred_win\": \"0.6907526229114599\"}; separate REFRESH {\"game_id\": \"401856851\", \"inventory_away\": \"Cincinnati\", \"inventory_home\": \"Houston\", \"away_team\": \"Cincinnati\", \"home_team\": \"Houston\", \"target_kickoff_utc\": \"2026-11-07 20:30:00+00:00\", \"independent_live_kickoff_verified\": false, \"source_status\": \"ACCEPTED_REFRESH_ROW\", \"snapshot_type\": \"REFRESH_SNAPSHOT\", \"snapshot_cutoff_utc\": \"2026-11-03T00:17:26.895461+00:00\", \"pred_margin\": \"7.62640664988836\", \"pred_total\": \"60.233803856563696\", \"pred_win\": \"0.7121615415915373\", \"exclusion\": null, \"window_at_audit\": \"FUTURE\"}. Neither is a literal present fair line or calibrated probability; current football/number/price and opposing mechanisms govern this qualitative review.",
+  "material_sources": [
+    {
+      "url": "https://gobearcats.com/news/2026/11/2/cincinnati-visits-no-17-houston-this-weekend",
+      "retrieved_at": "2026-11-05T01:19:28.747269+00:00",
+      "finding": "Authentic current primary material independently reconciled by parent and second reviewer. [] Raw identity 18d2b5f906ef6efe9052e9441bbe5fdc66806bfcf0b7c70afcfee89a4aafaeef; no final game-day clearance inferred."
+    },
+    {
+      "url": "https://uhcougars.com/news/2026/11/3/football-preview-17-houston-hosts-cincinnati-for-homecoming",
+      "retrieved_at": "2026-11-05T01:19:28.967534+00:00",
+      "finding": "Authentic current primary material independently reconciled by parent and second reviewer. [] Raw identity 6c33bd8341fc3264ed2973611b3cae7343ac32f91f3e98f5b3ac85baf9c02a2d; no final game-day clearance inferred."
+    }
+  ],
+  "uncertainty": "Controlled Beta, not calibrated EV or a measured cover/total probability. UCproductiveexplosiverunandredzonefinishwithFrenchfunctionalpassingprovidecrediblecompetitive/backdoorroute receivingmorethan10points. StrongcounterHoustoneffective100.5rushD,Weigman,third-downsustaineddrivesandbye coulddenyTabbandbuild2TDmargin. Thisisfootball/numberjudgment,notjustmodel7.6vsline10.5. Formal current-game personnel is not fully cleared; adverse QB/line/defense news requires reconsideration. Source update time unknown, venue/execution unverified.",
+  "decision_rule": "Only SPREAD away AT_LEAST 10.5 at -108 or better. This is the newly earned case-specific outer pair, not a universal juice ceiling or an EV-optimized price. Preserve actual number/push/hook protections; no worse number, stake, derivative, parlay or execution is implied.",
+  "source_qualification": "Parent acquired and independently authenticated exact primary ESPN event401856851, pregame status, home/away team IDs {\"home\": {\"id\": \"248\", \"location\": \"Houston\", \"display\": \"Houston Cougars\"}, \"away\": {\"id\": \"2132\", \"location\": \"Cincinnati\", \"display\": \"Cincinnati Bearcats\"}}, DraftKings100, selected paired line/price and selection-specific operator URL https://sportsbook.draftkings.com/event/34913455?outcomes=0HC86963191P1050_3. Raw99098bytes SHA256a625c25720b24891136ba5a00c9545125fc0e7d3a32e013300a980bd0a0f6ac7. Unknown offer_updated_at staysnull, retrieval-only benchmark not consensus or executable venue.",
+  "market_reference": {
+    "game_id": "401856851",
+    "market": "SPREAD",
+    "selection": "away",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-07T20:30:00Z",
+    "kickoff_source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856851",
+    "collection_start": "2026-11-05T01:28:06.869994+00:00",
+    "collection_end": "2026-11-05T01:28:11.158856+00:00",
+    "quotes": [
+      {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 10.5,
+        "price": -108,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913455?outcomes=0HC86963191P1050_3",
+        "game_id": "401856851",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856851",
+        "retrieved_at": "2026-11-05T01:28:11.158856+00:00",
+        "offer_updated_at": null
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "away",
+    "line": 10.5,
+    "minimum_price": -108,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-06T19:00:00Z",
+  "planning_cutoff_utc": "2026-11-06T19:00:00Z",
+  "cutoff_basis": "New review expires at unchanged original FridayNovember6_13CTreconciliation boundary, before saved Saturday kickoff. A conservative review-validity boundary, not an invented user placement deadline. Genuine subsequent review required; no automatic extension.",
+  "execution_window": {
+    "start_utc": "2026-11-05T01:38:23.555957+00:00",
+    "end_utc": "2026-11-06T19:00:00Z"
+  }
+}
