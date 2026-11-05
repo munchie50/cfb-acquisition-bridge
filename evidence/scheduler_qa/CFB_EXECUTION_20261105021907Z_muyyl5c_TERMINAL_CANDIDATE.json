@@ -1,0 +1,56 @@
+{
+  "schema": "CFB_COMPLETE_SHADOW_EXECUTION_TERMINAL_CANDIDATE_V1",
+  "correlation_id": "CFB_EXECUTION_20261105021907Z_muyyl5c",
+  "invocation_id": "d47599d6-04b8-8327-8149-31f5c1e166d1",
+  "recorded_at_utc": "2026-11-05T02:22:22Z",
+  "terminal_candidate": "TEST_PASS_EXECUTION",
+  "result": {
+    "path": "evidence/scheduler_qa/CFB_EXECUTION_20261105021907Z_muyyl5c_RESULT.json",
+    "blob": "1fadeb600e2c13604cf5bde6336415b11c9c2a6f",
+    "independent_exact_readback": true
+  },
+  "startup": {
+    "path": "evidence/scheduler_qa/CFB_EXECUTION_20261105021907Z_muyyl5c_STARTED.json",
+    "blob": "f0b08387a0e21389852b28504d1e1fecde933582",
+    "independent_exact_readback": true
+  },
+  "stage_summary": {
+    "real_runtime": "PASS_SINGLE_EXACT_BYTE_BOOTSTRAP_FULLGIT50REVIEWS",
+    "archive_download": "PASS_REQUIRED_SHA256",
+    "compiler": "PASS_ACTUAL_EXIT0_EXACT_RETAINED_OUTPUT",
+    "render": "PASS_ACTUAL_EXACT_RETAINED_OUTPUT",
+    "archive_invariant": "PASS63GAMES55PREDICTIONS8EXCLUSIONS165FIELDS",
+    "live_source": "PASS_CONFORMING_PREGAME_ESPN_EVENT401862817_DRAFTKINGS100",
+    "current_offer": "FAU+7/-115NOTWITHIN-112LIMIT; no recommendation",
+    "timing": "Early53seconds actual observation; nonblocking, no material effect demonstrated",
+    "four_production_tasks": "Exact prompt/schedule/enabled fields unchanged",
+    "canonical_writes": "NONE"
+  },
+  "independently_checked_output_hashes": {
+    "market.md": {
+      "git_blob": "87c455f1451b26587ac30489562285c0cfe0c9f5",
+      "sha256": "5227d83aae713dd787301dc290e47a5741417c9fdaf9cd7a26f0564ee1d717c7",
+      "bytes": 4289932,
+      "exact_saved_output_match": true
+    },
+    "decision.md": {
+      "git_blob": "822bccb7370a5dfbe22c1994bdf525457d17066e",
+      "sha256": "5014a0cb0ee3bc625752fa12dbd1682f6957ff7958f6f5f0d95b7bdb584f78a1",
+      "bytes": 2170777,
+      "exact_saved_output_match": true
+    },
+    "sheet.md": {
+      "git_blob": "10d642137570317017934b8b1b85f8c0345f1f61",
+      "sha256": "ea58ddd74b330887777ed38e9bd9219636bc488a0b7f755eb26565be7666a9b2",
+      "bytes": 213053,
+      "exact_saved_output_match": true
+    }
+  },
+  "first_unproved_boundary": null,
+  "limits": "Bounded execution test only. Historical fixture clocks unchanged. No fresh full-slate analysis, current wager recommendation or recurring reliability certification. Prior incomplete tests retain original status.",
+  "scientific_effect": "NONE",
+  "champion_effect": "NONE",
+  "task_mutations": "NONE",
+  "closure_requirement": "Issue separate closure only after independent exact candidate readback; candidate does not prove its own persistence.",
+  "delivery": "UNKNOWN"
+}
