@@ -1,0 +1,26 @@
+{
+  "schema": "CFB_PRODUCTION_TASK_CHANGE_TERMINAL_CANDIDATE_V1",
+  "observed_utc": "2026-11-05T02:30:07.657Z",
+  "target_id": "6ae766e788d881919726d0eeb44450dd",
+  "change_result": "CONFIGURATION_APPLIED_AND_INDEPENDENTLY_VERIFIED",
+  "production_workload_result": "NOT_RUN_BY_THIS_CONFIGURATION_CHANGE",
+  "record": {
+    "path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_PRODUCTION_EXECUTION_ADOPTION_20261105.json",
+    "blob": "41a76b49fb1d712c1482fe47c6095793853a133b",
+    "exact_independent_readback": true
+  },
+  "expected_vs_actual": {
+    "prompt": "EXACT_PROPOSED_MATCH",
+    "original_prompt": "RETAINED_EXACT_WITH_ONE_ADDITIVE_AMENDMENT",
+    "schedule": "UNCHANGED_DAILY07_AND13_AMERICA_CHICAGO",
+    "enabled": "UNCHANGED_TRUE",
+    "production_count": 4,
+    "other_task_definitions": "ALL19UNCHANGED",
+    "test": "DISABLED"
+  },
+  "integration": "No current canonical, HotSheet, source/model, ownership or schedule mutation; current recovery navigation remains valid and natural reliability OPEN. No replay accepted as fresh live publication.",
+  "proof_boundary": "Scheduled shadow proved actual runtime/retained compiler/render/archive and live source. Installed instructions are not yet proof of current live production review/publication.",
+  "next": "Next existing nominal production Monitor ThursdayNov5_07CT verifies full live path; no extra task/run scheduled.",
+  "closure": "Separate configuration-change closure only after independent candidate readback.",
+  "scientific_model_money_wager_effect": "NONE"
+}
