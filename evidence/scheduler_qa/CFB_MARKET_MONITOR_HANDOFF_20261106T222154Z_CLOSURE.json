@@ -1,0 +1,19 @@
+{
+  "state": "INSTALLED_READ_BACK_MANUAL_DEMONSTRATION_SCHEDULED_PROOF_PENDING",
+  "candidate": {
+    "path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_HANDOFF_20261106T222154Z_CANDIDATE.json",
+    "blob": "281573f0874a4272e2148b7c406f82c184da7a5c"
+  },
+  "verified_at_utc": "2026-11-06T22:22:25.736Z",
+  "task_id": "6ae766e788d881919726d0eeb44450dd",
+  "checks": {
+    "exact_prompt": true,
+    "rollback_exact": true,
+    "target_metadata_unchanged": true,
+    "other_cfb_tasks_unchanged": true,
+    "enabled_cfb_tasks": 4
+  },
+  "benefit": "Give the scheduled producer the exact connector-to-shell handoff that worked in the manual runtime. Preserve one helper invocation, exact byte and hash gates, and stage-specific failure evidence.",
+  "cost": "One targeted prompt insertion and one manual runtime demonstration. No added recurrence, task, model or publication change.",
+  "next_existing_proof": "Saturday November 7 at 07:00 America/Chicago. Verify binary write/hash, pinned checkout, completion of the current production cycle and terminal closure separately."
+}
