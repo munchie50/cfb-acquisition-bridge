@@ -1,0 +1,528 @@
+{
+  "cycle": "CFB_MARKET_MONITOR_20261106T214137Z",
+  "reviewed_at_utc": "2026-11-06T21:44:32.291237+00:00",
+  "scope": "Eight overdue Saturday reconciliation decisions at actual pre-kickoff time. Friday 13 CT checkpoint missed. Existing final cutoffs and history preserved. Public DraftKings offers, venue unverified.",
+  "cases": [
+    {
+      "game_id": "401856739",
+      "teams": {
+        "home": "Florida Gators",
+        "away": "Oklahoma Sooners"
+      },
+      "kickoff_utc": "2026-11-08T00:45Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856739",
+      "source_recovered_by": "2026-11-06T21:42:08.091657+00:00",
+      "source_sha256": "24be8e672f12689e44e82c32e58b59feb944733bc3b31fc911ac916a8469a231",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "missed_reconciliation_utc": "2026-11-06T19:00:00Z",
+      "state": "PASS",
+      "material": "Thursday official report has Bentley and Mateer available for Oklahoma, and Jones and Philo available for Florida, with Brown doubtful. Team previews support OU's defensive pressure and show Mateer's production and turnovers. Neither card proves the chosen starter or play-calling.",
+      "sources": [
+        "https://floridagators.com/news/2026/11/6/football-florida-oklahoma-what-you-need-to-know",
+        "https://soonersports.com/news/2026/11/5/football-game-primer-ou-at-florida",
+        "https://www.secsports.com/fbreports"
+      ],
+      "branches": [
+        {
+          "market": "Away spread",
+          "line": 6.0,
+          "price": -112.0,
+          "decision": "PASS",
+          "reason": "Oklahoma +6 has a defensive pressure and field-position route, but at -112 it loses on seven and its own offensive continuity is uncertain under either quarterback scenario."
+        },
+        {
+          "market": "Home spread",
+          "line": -6.0,
+          "price": -108.0,
+          "decision": "PASS",
+          "reason": "Florida -6 has home and frozen-model support plus a push at six, but both Florida quarterback paths face Oklahoma pressure and lack a dependable margin case."
+        },
+        {
+          "market": "Away ML",
+          "line": null,
+          "price": 190,
+          "decision": "PASS",
+          "reason": "Oklahoma's defense can create an upset through turnovers, but its uncertain offensive finishing is a larger problem for an outright play than a spread."
+        },
+        {
+          "market": "Home ML",
+          "line": null,
+          "price": -230,
+          "decision": "PASS",
+          "reason": "Florida's home win case is stronger than its cover case, but -230 offers too little protection against Oklahoma's defensive pressure and a close finish."
+        },
+        {
+          "market": "Over",
+          "line": 45.5,
+          "price": -105.0,
+          "decision": "PASS",
+          "reason": "Quarterback mobility and short fields can lift the total. Neither offense shows enough repeatable finishing against these defenses to support an over."
+        },
+        {
+          "market": "Under",
+          "line": 45.5,
+          "price": -115.0,
+          "decision": "PASS",
+          "reason": "The fronts and uncertain quarterback roles support under, but -115 at 45.5 is expensive against short-field and explosive scramble risk."
+        }
+      ],
+      "derivatives_and_parlays": "No independently qualified derivative or combination selected."
+    },
+    {
+      "game_id": "401856745",
+      "teams": {
+        "home": "Tennessee Volunteers",
+        "away": "Kentucky Wildcats"
+      },
+      "kickoff_utc": "2026-11-07T23:15Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856745",
+      "source_recovered_by": "2026-11-06T21:42:08.003148+00:00",
+      "source_sha256": "8b2c88a21007885af3aeea10204e55dbf3bb22d36c47bc2a1f40705454825dbd",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "missed_reconciliation_utc": "2026-11-06T19:00:00Z",
+      "state": "PASS",
+      "material": "Thursday SEC card established Staub, Brandon and MacIntyre available without naming a starter. Tennessee's Friday preview verifies Minchey's efficiency and Kentucky's takeaway production. Evaluate both Tennessee stability and rotation risk.",
+      "sources": [
+        "https://utsports.com/news/2026/11/6/football-fb-preview-13-vols-kick-off-november-slate-with-ranked-matchup-against-border-rival-6-kentucky",
+        "https://www.secsports.com/fbreports"
+      ],
+      "branches": [
+        {
+          "market": "Away spread",
+          "line": 5.5,
+          "price": -110.0,
+          "decision": "PASS",
+          "reason": "Kentucky's ball security and defense can keep this close, but +5.5 gives up the six-point loss while Tennessee can finish two scoring drives ahead at home."
+        },
+        {
+          "market": "Home spread",
+          "line": -5.5,
+          "price": -110.0,
+          "decision": "PASS",
+          "reason": "Tennessee -5.5 has a strong original-model signal and home trench case, but a six-point margin still needs offensive continuity against an efficient Kentucky QB and a takeaway defense. A rotation scenario makes the case materially weaker."
+        },
+        {
+          "market": "Away ML",
+          "line": null,
+          "price": 170,
+          "decision": "PASS",
+          "reason": "Minchey and Kentucky's defense create an upset route, but +170 offers less compensation than the earlier board and removes spread protection."
+        },
+        {
+          "market": "Home ML",
+          "line": null,
+          "price": -205,
+          "decision": "PASS",
+          "reason": "Tennessee's home win path is stronger than its cover path, but -205 is too costly across both continuity and rotation scenarios against Kentucky's ball security."
+        },
+        {
+          "market": "Over",
+          "line": 49.5,
+          "price": -108.0,
+          "decision": "PASS",
+          "reason": "Kentucky efficiency and Tennessee's explosive ceiling could clear 49.5. If Tennessee's role changes slow the offense, Kentucky can also control the clock, cutting the over case."
+        },
+        {
+          "market": "Under",
+          "line": 49.5,
+          "price": -112.0,
+          "decision": "PASS",
+          "reason": "Rotation and Kentucky's defense support under, but Minchey efficiency and defensive short fields present a credible route past 49.5 at the offered -112."
+        }
+      ],
+      "derivatives_and_parlays": "No independently qualified derivative or combination selected."
+    },
+    {
+      "game_id": "401858290",
+      "teams": {
+        "home": "Wake Forest Demon Deacons",
+        "away": "Merrimack Warriors"
+      },
+      "kickoff_utc": "2026-11-07T20:30Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858290",
+      "source_recovered_by": "2026-11-06T21:42:13.495130+00:00",
+      "source_sha256": "516f2a49ead0ea9be0869ef2cb23d6917d4474078b8821932e8c843541d33afc",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "missed_reconciliation_utc": "2026-11-06T19:00:00Z",
+      "state": "PASS",
+      "material": "Wake's large efficiency and roster advantage is clear. Neither current starter workload nor the late-game substitution plan is established. Both moneylines are unavailable in the observed offer.",
+      "sources": [
+        "https://merrimackathletics.com/news/2026/11/5/merrimack-football-travels-to-no-14-wake-forest-for-historic-clash.aspx",
+        "https://godeacs.com/sports/2025/6/26/2025-football-media-center"
+      ],
+      "branches": [
+        {
+          "market": "Away spread",
+          "line": 47.5,
+          "price": -110.0,
+          "decision": "PASS",
+          "reason": "Merrimack's large cushion and possible late substitutions create a cover route, but its scoring floor against Wake's run defense is too low to rely on that cushion."
+        },
+        {
+          "market": "Home spread",
+          "line": -47.5,
+          "price": -110.0,
+          "decision": "PASS",
+          "reason": "Wake can dominate, but laying nearly seven touchdowns depends on starter usage and continued scoring well into a likely decided game."
+        },
+        {
+          "market": "Away ML",
+          "line": null,
+          "price": null,
+          "decision": "UNAVAILABLE",
+          "reason": "No paired away moneyline was offered. A cover case would not support an outright upset anyway."
+        },
+        {
+          "market": "Home ML",
+          "line": null,
+          "price": null,
+          "decision": "UNAVAILABLE",
+          "reason": "No paired home moneyline was offered. Expected dominance cannot substitute for a quoted price."
+        },
+        {
+          "market": "Over",
+          "line": 59.5,
+          "price": -112.0,
+          "decision": "PASS",
+          "reason": "Wake can carry much of the total, but the over needs continued scoring or a credible Merrimack contribution, neither of which is established."
+        },
+        {
+          "market": "Under",
+          "line": 59.5,
+          "price": -108.0,
+          "decision": "PASS",
+          "reason": "Merrimack's scoring floor favors under, but short fields or Wake scoring into garbage time can erase it. The uncertain workload affects both directions."
+        }
+      ],
+      "derivatives_and_parlays": "No independently qualified derivative or combination selected."
+    },
+    {
+      "game_id": "401858511",
+      "teams": {
+        "home": "Michigan Wolverines",
+        "away": "Michigan State Spartans"
+      },
+      "kickoff_utc": "2026-11-08T00:30Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858511",
+      "source_recovered_by": "2026-11-06T21:42:14.066118+00:00",
+      "source_sha256": "e7dd1a1d564ecc15d51e8b4a3c40613906fe65596e45a3632ac357c36395a862",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "missed_reconciliation_utc": "2026-11-06T19:00:00Z",
+      "state": "PASS",
+      "material": "The MSU preview verifies Coffman's prior start after Milivojevic's injury. The availability report cited by RotoWire lists Milivojevic questionable and Fancher out. Treat Coffman and Milivojevic as scenarios rather than assume a starter or Patterson workload.",
+      "sources": [
+        "https://msuspartans.com/news/2026/11/3/football-spartans-wolverines-battle-for-paul-bunyan-trophy-saturday-night",
+        "https://www.rotowire.com/cfootball/headlines/alessio-milivojevic-injury-listed-as-questionable-versus-michigan-238386"
+      ],
+      "branches": [
+        {
+          "market": "Away spread",
+          "line": 14.5,
+          "price": -115.0,
+          "decision": "PASS",
+          "reason": "MSU +14.5 covers a two-touchdown loss and the original model supports a closer game. At -115 the Coffman/limited offense scenario leaves too much risk of three-score separation."
+        },
+        {
+          "market": "Home spread",
+          "line": -14.5,
+          "price": -105.0,
+          "decision": "PASS",
+          "reason": "Michigan can separate through defense and rushing, but -14.5 needs more than two touchdowns in a low-total rivalry and an effective Milivojevic would strengthen the countercase."
+        },
+        {
+          "market": "Away ML",
+          "line": null,
+          "price": 455,
+          "decision": "PASS",
+          "reason": "An MSU cover via low possessions does not translate well to an outright upset, especially under the freshman-QB scenario."
+        },
+        {
+          "market": "Home ML",
+          "line": null,
+          "price": -625,
+          "decision": "PASS",
+          "reason": "Michigan has the stronger win path, but -625 gives little room for rivalry turnovers and a low-possession upset."
+        },
+        {
+          "market": "Over",
+          "line": 39.5,
+          "price": -112.0,
+          "decision": "PASS",
+          "reason": "Short fields and Michigan scoring carry an over case, but limited MSU offense can leave the favorite doing nearly all the scoring."
+        },
+        {
+          "market": "Under",
+          "line": 39.5,
+          "price": -108.0,
+          "decision": "PASS",
+          "reason": "A slow rivalry and MSU offensive limitations support under, but 39.5 already reflects a low score and turnovers can turn into easy points."
+        }
+      ],
+      "derivatives_and_parlays": "No independently qualified derivative or combination selected."
+    },
+    {
+      "game_id": "401858516",
+      "teams": {
+        "home": "Washington Huskies",
+        "away": "Penn State Nittany Lions"
+      },
+      "kickoff_utc": "2026-11-07T20:30Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858516",
+      "source_recovered_by": "2026-11-06T21:42:14.137891+00:00",
+      "source_sha256": "da86ae4b0eb3188f6d2a80f7372ec50b13d032091b48494e1e261694859468e0",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "missed_reconciliation_utc": "2026-11-06T19:00:00Z",
+      "state": "PASS",
+      "material": "Penn State's pass and third-down defense are real support. Washington used Brown and Williams in the prior game and the fourth-quarter Williams drive mattered. Earlier lineup uncertainty remains, so assess both the mobile Williams case and the less explosive alternate.",
+      "sources": [
+        "https://gopsusports.com/news/2026/11/2/game-notes-penn-state-vs-washington-2026",
+        "https://gohuskies.com/news/2026/11/2/football-huskies-to-welcome-penn-state-for-first-time-in-105-years"
+      ],
+      "branches": [
+        {
+          "market": "Away spread",
+          "line": 2.5,
+          "price": -110.0,
+          "decision": "PASS",
+          "reason": "Penn State has a defensive and frozen-model case, but +2.5 loses on a field goal, and a Williams-led Washington attack can change the third-down matchup."
+        },
+        {
+          "market": "Home spread",
+          "line": -2.5,
+          "price": -110.0,
+          "decision": "PASS",
+          "reason": "Washington's home field and quarterback mobility can produce a field-goal win, but Penn State's pass defense can take away the margin in either quarterback scenario."
+        },
+        {
+          "market": "Away ML",
+          "line": null,
+          "price": 114,
+          "decision": "PASS",
+          "reason": "The Penn State upset case is live, but modest plus money provides little cushion for the road scoring burden and Washington's home comeback capability."
+        },
+        {
+          "market": "Home ML",
+          "line": null,
+          "price": -135,
+          "decision": "PASS",
+          "reason": "Washington can win without covering, but the price still asks for more conviction in its offensive continuity than either quarterback scenario supports."
+        },
+        {
+          "market": "Over",
+          "line": 44.5,
+          "price": -102.0,
+          "decision": "PASS",
+          "reason": "Williams gives the over an explosive-play route, but Penn State's third-down defense and Washington's uneven prior offensive output make this a thin over."
+        },
+        {
+          "market": "Under",
+          "line": 44.5,
+          "price": -118.0,
+          "decision": "PASS",
+          "reason": "Penn State's defense and the alternate QB script support under, but -118 is expensive against Williams' explosive upside and a close-game late scoring script."
+        }
+      ],
+      "derivatives_and_parlays": "No independently qualified derivative or combination selected."
+    },
+    {
+      "game_id": "401862821",
+      "teams": {
+        "home": "North Texas Mean Green",
+        "away": "Rice Owls"
+      },
+      "kickoff_utc": "2026-11-07T21:00Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862821",
+      "source_recovered_by": "2026-11-06T21:42:16.095048+00:00",
+      "source_sha256": "718e45d4a713f9241a8209f6c8988b76c5834715ec2cd88a33e19e2f37d068c9",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "missed_reconciliation_utc": "2026-11-06T19:00:00Z",
+      "state": "PASS",
+      "material": "Ochoa's first start showed a real option and explosive-run route. Do not extrapolate that outlier or assume today's quarterback split. North Texas has the fast passing attack and has prepared for an option offense recently.",
+      "sources": [
+        "https://meangreensports.com/news/2026/11/3/football-mean-green-welcoming-rice-for-homecoming-game",
+        "https://www.houstonchronicle.com/sports/college/article/rice-north-texas-football-watch-22509307.php"
+      ],
+      "branches": [
+        {
+          "market": "Away spread",
+          "line": 16.5,
+          "price": -110.0,
+          "decision": "PASS",
+          "reason": "Rice +16.5 has the strongest disagreement with the frozen model and option drives can shorten the game. A repeat of the prior explosive output is a weak premise against a prepared defense, while Rice's defense leaves a credible three-score defeat."
+        },
+        {
+          "market": "Home spread",
+          "line": -16.5,
+          "price": -110.0,
+          "decision": "PASS",
+          "reason": "North Texas can score quickly against a porous defense, but laying 16.5 against a possession-shortening option requires sustained margin. The frozen context also gives no support for laying this number."
+        },
+        {
+          "market": "Away ML",
+          "line": null,
+          "price": 550,
+          "decision": "PASS",
+          "reason": "Rice's realistic cover route is clock control and keeping it close. It needs defensive stops as well as sustained option execution to win outright at this price."
+        },
+        {
+          "market": "Home ML",
+          "line": null,
+          "price": -800,
+          "decision": "PASS",
+          "reason": "North Texas has a better outright path, but the very short moneyline gives little room for option variance and turnovers."
+        },
+        {
+          "market": "Over",
+          "line": 64.5,
+          "price": -112.0,
+          "decision": "PASS",
+          "reason": "The North Texas passing ceiling and option explosives support an over case. At 64.5 and -112, either a slower Rice script or a drop from its prior outlier is enough to hurt it."
+        },
+        {
+          "market": "Under",
+          "line": 64.5,
+          "price": -108.0,
+          "decision": "PASS",
+          "reason": "Rice's clock usage supports under, but North Texas can accumulate points quickly and long Rice runs can eliminate the expected pace benefit."
+        }
+      ],
+      "derivatives_and_parlays": "No independently qualified derivative or combination selected."
+    },
+    {
+      "game_id": "401864534",
+      "teams": {
+        "home": "San José State Spartans",
+        "away": "Northern Illinois Huskies"
+      },
+      "kickoff_utc": "2026-11-07T21:00Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864534",
+      "source_recovered_by": "2026-11-06T21:42:16.283204+00:00",
+      "source_sha256": "455b99a3b449eef05d6494091da3a81cc7c36cb0aa4577a25d4c11b3026fec50",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "missed_reconciliation_utc": "2026-11-06T19:00:00Z",
+      "state": "PASS",
+      "material": "The NIU UNLV performance under Dickens showed competitive rushing and possession. San José State's pass rush and Weaver-to-Clark production are the counterweight. No unverified new rotation or injury assumption is needed to decline the prices.",
+      "sources": [
+        "https://niuhuskies.com/news/2026/11/4/football-huskies-set-sights-on-san-jos-state.aspx",
+        "https://sjsuspartans.com/news/2026/11/2/spartans-host-niu-saturday-presented-by-webcor"
+      ],
+      "branches": [
+        {
+          "market": "Away spread",
+          "line": 11.5,
+          "price": -115.0,
+          "decision": "PASS",
+          "reason": "NIU's possession and rush output create a late cover route, but -115 and the risk of sacks and short fields make 11.5 unattractive."
+        },
+        {
+          "market": "Home spread",
+          "line": -11.5,
+          "price": -105.0,
+          "decision": "PASS",
+          "reason": "SJSU's pass rush and passing explosives can create a two-score margin, but a repeat of NIU's long drives can keep the favorite inside the number."
+        },
+        {
+          "market": "Away ML",
+          "line": null,
+          "price": 320,
+          "decision": "PASS",
+          "reason": "NIU was competitive against UNLV, but keeping possession does not establish an outright win path against this pass rush."
+        },
+        {
+          "market": "Home ML",
+          "line": null,
+          "price": -410,
+          "decision": "PASS",
+          "reason": "SJSU is the likelier winner in the frozen context and matchup, but -410 prices away the cushion for an NIU possession or turnover upset."
+        },
+        {
+          "market": "Over",
+          "line": 52.5,
+          "price": -105.0,
+          "decision": "PASS",
+          "reason": "Weaver and Clark can drive scoring, but if NIU succeeds on the ground the pace works against needing 53."
+        },
+        {
+          "market": "Under",
+          "line": 52.5,
+          "price": -115.0,
+          "decision": "PASS",
+          "reason": "NIU's preferred pace and SJSU pressure support a low-scoring case, but pressure-created short fields and SJSU explosives undermine under 52.5 at -115."
+        }
+      ],
+      "derivatives_and_parlays": "No independently qualified derivative or combination selected."
+    },
+    {
+      "game_id": "401871098",
+      "teams": {
+        "home": "Troy Trojans",
+        "away": "Louisiana Tech Bulldogs"
+      },
+      "kickoff_utc": "2026-11-07T21:00Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871098",
+      "source_recovered_by": "2026-11-06T21:42:21.339244+00:00",
+      "source_sha256": "7ffeb61f79ecec5cba64f8024b65dca1548aa3372d41669747083a6ebb4a8c7f",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "missed_reconciliation_utc": "2026-11-06T19:00:00Z",
+      "state": "PASS",
+      "material": "Troy's primary preview identifies Blake Baker's passing efficiency and both teams' pass rush. Kilcrease supplied a credible prior start for Troy; the Crowder/Kilcrease role can change the upside. Do not forecast a repeat of the prior takeaway spike.",
+      "sources": [
+        "https://troytrojans.com/news/2026/11/5/troy-hosts-louisiana-tech-for-homecoming",
+        "https://latechsports.com/news/2026/11/5/football-preview-la-tech-at-troy"
+      ],
+      "branches": [
+        {
+          "market": "Away spread",
+          "line": -5.5,
+          "price": -112.0,
+          "decision": "PASS",
+          "reason": "LA Tech's streak, Baker and the pass rush support the favorite, but -5.5 requires margin in a road matchup with pressure on both sides and a contrary frozen model."
+        },
+        {
+          "market": "Home spread",
+          "line": 5.5,
+          "price": -108.0,
+          "decision": "PASS",
+          "reason": "Troy +5.5 has home and frozen-model support. Its latest win benefited from unusual takeaways, and the offensive role uncertainty gives Baker a credible route to outscore Troy by six or more."
+        },
+        {
+          "market": "Away ML",
+          "line": null,
+          "price": -205,
+          "decision": "PASS",
+          "reason": "LA Tech can win by less than a touchdown, but -205 asks for a stronger road-win preference than the matchup and model disagreement warrant."
+        },
+        {
+          "market": "Home ML",
+          "line": null,
+          "price": 170,
+          "decision": "PASS",
+          "reason": "Troy can win if pressure and rushing drive field position, but the outright price does not remove the Baker-versus-Troy offensive consistency gap."
+        },
+        {
+          "market": "Over",
+          "line": 47.5,
+          "price": -108.0,
+          "decision": "PASS",
+          "reason": "Baker and either mobile Troy QB scenario can clear 47.5 if drives finish. Competing pass rush and protection risks weigh against it."
+        },
+        {
+          "market": "Under",
+          "line": 47.5,
+          "price": -112.0,
+          "decision": "PASS",
+          "reason": "Both pass rushes support under, but efficient Baker passing and the chance of short fields weaken under at -112."
+        }
+      ],
+      "derivatives_and_parlays": "No independently qualified derivative or combination selected."
+    }
+  ]
+}
