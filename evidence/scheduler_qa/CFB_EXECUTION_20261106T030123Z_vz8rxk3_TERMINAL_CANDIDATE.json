@@ -1,0 +1,53 @@
+{
+  "schema": "CFB_COMPLETE_SHADOW_EXECUTION_TERMINAL_CANDIDATE_V1",
+  "correlation_id": "CFB_EXECUTION_20261106T030123Z_vz8rxk3",
+  "invocation_id": "44088861-988c-8325-aaef-7ba861e523ca",
+  "observed_utc": "2026-11-06T03:05:26Z",
+  "terminal_candidate": "TEST_PASS_EXECUTION",
+  "result": {
+    "path": "evidence/scheduler_qa/CFB_EXECUTION_20261106T030123Z_vz8rxk3_RESULT.json",
+    "blob": "592477708e84679dad5272cff9a9f84af1ead357",
+    "commit": "cb51f4e96cd5d02480d7a39170a42a234bf65f26",
+    "independent_exact_readback": true
+  },
+  "stages": {
+    "helper_transport": "PASS exact 3780 bytes/blob before execution",
+    "runtime": "PASS single normal Git bootstrap, fresh authenticated head, 50 reviews",
+    "artifact": "PASS fresh connector download and required SHA256",
+    "retained_compile_render": "PASS exit 0 and exact saved market/decision/sheet",
+    "original_invariants": "PASS 63 games / 55 predictions / 8 exclusions / 165 fields",
+    "separate_pregame_source": "PASS ESPN/DraftKings directed teams and selection pairs; retrieval-only",
+    "topology": [
+      {
+        "id": "6ae766e788d881919726d0eeb44450dd",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76df2ece4819197f91fb10076dea7",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76df60e0c819182e2cfab1b83846a",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      }
+    ],
+    "timing": "Nonblocking; no material impact"
+  },
+  "comparison": "Prior Monitor failed at raw helper transport DNS; Evening failed at Git DNS. Neither blocker reproduced. Earlier production failures retained; no recurring repair claim.",
+  "canonical_writes": "NONE",
+  "task_mutations": "NONE",
+  "first_unproved_boundary": null,
+  "closure_requirement": "Separate closure only after independent exact candidate readback"
+}
