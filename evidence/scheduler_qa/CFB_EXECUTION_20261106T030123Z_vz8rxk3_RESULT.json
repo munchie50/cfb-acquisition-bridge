@@ -1,0 +1,332 @@
+{
+  "schema": "CFB_COMPLETE_SHADOW_EXECUTION_RESULT_V1",
+  "correlation_id": "CFB_EXECUTION_20261106T030123Z_vz8rxk3",
+  "invocation_id": "44088861-988c-8325-aaef-7ba861e523ca",
+  "trigger": "NATURAL_ONE_TIME_SCHEDULED",
+  "recorded_at_utc": "2026-11-06T03:05:15Z",
+  "workload_verdict": "TEST_PASS_EXECUTION",
+  "first_unproved_boundary": null,
+  "startup": {
+    "path": "evidence/scheduler_qa/CFB_EXECUTION_20261106T030123Z_vz8rxk3_STARTED.json",
+    "blob": "777f0491583185615245b46d18ef13f5f3b8278b",
+    "independent_exact_readback": true
+  },
+  "timing": {
+    "actual_first_utc": "2026-11-06T03:01:23Z",
+    "accepted_scheduled_for": "2026-11-06T03:00:49Z",
+    "recorded_started_at": "2026-11-06T03:00:51.880124Z",
+    "first_clock_delta_seconds": 34,
+    "recorded_start_delta_seconds": 2.88,
+    "prior_result_id": "d47599d6-04b8-8327-8149-31f5c1e166d1",
+    "prior_result_is_this_invocation": false,
+    "material_impact": "NONE_DEMONSTRATED: artifact and retained fixture available; separate event pregame; no missed required cutoff or output usefulness loss.",
+    "delivery_status": "unknown"
+  },
+  "authority": {
+    "pinned_main": "6f8fd68e0eb7d535666f87c3181fcc4c1a0f350a",
+    "files": {
+      "helper": {
+        "path": "scripts/cfb_runtime_checkout.py",
+        "blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898"
+      },
+      "smoke": {
+        "path": "qa/cfb_monitor_execution_smoke.py",
+        "blob": "ab20715df76074e3f5c28486b49278bed3fdec0b"
+      },
+      "index": {
+        "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_256.md",
+        "blob": "301bafaccff400231e3d5f3004c6cb7ab8653632"
+      },
+      "contract": {
+        "path": "evidence/scheduler_qa/CFB_TEST_COMPLETION_20261105_CONTRACT.md",
+        "blob": "328a7558789788ca05e04d98dc7d6e2de6489924"
+      },
+      "adoption": {
+        "path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_PRODUCTION_EXECUTION_ADOPTION_20261105.json",
+        "blob": "41a76b49fb1d712c1482fe47c6095793853a133b"
+      },
+      "evening": {
+        "path": "evidence/run_receipts/CFB_EVENING_AVAILABILITY_20261106T013242Z_RUN_CLOSURE.md",
+        "blob": "5ccae6d9f6c8d9c0e17daba8bfe07e90df107543"
+      },
+      "prior": {
+        "path": "evidence/scheduler_qa/CFB_EXECUTION_20261105021907Z_muyyl5c_RESULT.json",
+        "blob": "1fadeb600e2c13604cf5bde6336415b11c9c2a6f"
+      },
+      "persistence": {
+        "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
+        "blob": "78e3f2e12cbcf8213f87c28a580f39c0aabff8e0"
+      },
+      "routine": {
+        "path": "evidence/CFB_ENGINE_ROUTINE_V5_PRODUCTION_PROMOTION_v1_103.md",
+        "blob": "0a1e87375e83d46662943f061ec8a11463b64c17"
+      },
+      "a": {
+        "path": "evidence/CFB_ROUTINE_V5_1_SELECTIVE_PRODUCTION_AMENDMENT_20261030.md",
+        "blob": "066174f7333d2925d6605b2cbdd0a38b1ec3eb17"
+      },
+      "b": {
+        "path": "evidence/CFB_ROUTINE_V5_2_SELECTIVE_DIAGNOSTIC_AMENDMENT_20261031.md",
+        "blob": "92dfd2fd569601e6f42504022c6a7b8935f19e7b"
+      },
+      "closure": {
+        "path": "evidence/CFB_TERMINAL_RUN_RECEIPT_CLOSURE_CONTRACT_2026-10-05.md",
+        "blob": "501cda05d80229402a485493f10b1a4bbb76d3b8"
+      },
+      "profile": {
+        "path": "evidence/CFB_WEEK10_ESPN_PRIMARY_SUMMARY_BENCHMARK_PROFILE_2026-11-04.md",
+        "blob": "4b01f886b689c61dbe75b087bde53eee03b5cf3b"
+      }
+    },
+    "recovery_pointer_count": 386,
+    "recovery_mismatches": []
+  },
+  "runtime": {
+    "helper_bytes": 3780,
+    "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "exact_bytes_verified_before_execution": true,
+    "normal_checkout_executions": 1,
+    "command": "GIT_TRACE2_EVENT=/workspace/scratch/13df5b80aaf6/complete_20261106T030123Z/git-trace.jsonl python3 cfb_runtime_checkout.py --destination /workspace/scratch/13df5b80aaf6/complete_20261106T030123Z/checkout --expected-head 6f8fd68e0eb7d535666f87c3181fcc4c1a0f350a > runtime.json",
+    "exit_code": 0,
+    "git_network_or_resolver_changes": false,
+    "actual": {
+      "status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+      "repository": "https://github.com/munchie50/cfb-acquisition-bridge.git",
+      "head": "6f8fd68e0eb7d535666f87c3181fcc4c1a0f350a",
+      "worktree": "/workspace/scratch/13df5b80aaf6/complete_20261106T030123Z/checkout",
+      "python": "3.12.14",
+      "scope": "runtime and ancestry only; no research, publication or run acceptance",
+      "review_count": 50,
+      "sha256": "2b6aac579509099580eb096359809b71bdbd736caadc641a6477ed423541328a",
+      "full_history": true
+    }
+  },
+  "comparison": {
+    "evening": {
+      "path": "evidence/run_receipts/CFB_EVENING_AVAILABILITY_20261106T013242Z_RUN_CLOSURE.md",
+      "blob": "5ccae6d9f6c8d9c0e17daba8bfe07e90df107543",
+      "status": "RUN_INCOMPLETE / COMPUTATION_RUNTIME_UNAVAILABLE",
+      "first_affected_stage": "Git HTTPS hostname resolution to github.com; pinned checkout unavailable"
+    },
+    "monitor": {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_AUTO11-20261105T185747724Z_RUN_CLOSURE.md",
+      "blob": "0bf2001fc22dd1352439942a6ff002026f16aa6f",
+      "status": "RUN_INCOMPLETE",
+      "first_affected_stage": "Raw helper transport via raw.githubusercontent.com DNS; helper never executed"
+    },
+    "previous_shadow": {
+      "path": "evidence/scheduler_qa/CFB_EXECUTION_20261105021907Z_muyyl5c_RESULT.json",
+      "blob": "1fadeb600e2c13604cf5bde6336415b11c9c2a6f",
+      "status": "TEST_PASS_EXECUTION",
+      "normal_runtime": "PASS"
+    },
+    "this_shadow": "Authenticated connector helper read passed; single normal Git checkout and authenticated-head pin passed. Neither earlier DNS blocker reproduced in this worker. No conclusion that another worker or recurring production DNS is repaired."
+  },
+  "archive": {
+    "artifact_id": 10897612260,
+    "connected_download_and_transfer_this_run": true,
+    "bytes": 221504,
+    "sha256": "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf"
+  },
+  "retained_compiler_render": {
+    "command": "python3 qa/cfb_monitor_execution_smoke.py --first /workspace/scratch/13df5b80aaf6/complete_20261106T030123Z/original.zip --output-dir /workspace/scratch/13df5b80aaf6/complete_20261106T030123Z/smoke_output",
+    "working_directory": "/workspace/scratch/13df5b80aaf6/complete_20261106T030123Z/checkout",
+    "exit_code": 0,
+    "complete_result_json": {
+      "schema": "CFB_MONITOR_EXECUTION_SMOKE_V1",
+      "observed_start_utc": "2026-11-06T03:03:21.100044+00:00",
+      "head": "6f8fd68e0eb7d535666f87c3181fcc4c1a0f350a",
+      "fixture": {
+        "cycle": "CFB_MARKET_MONITOR_20261105T012111Z",
+        "publication_utc": "2026-11-05T01:48:11.126910+00:00",
+        "source_utc": "2026-11-05T01:40:33.495311+00:00",
+        "prior_market": "841ec2f36afea32f290ca4d383e2a9b78e33d4b0",
+        "prior_decision": "0c389170f46c3bb373e6961a4f55416476f760e5",
+        "market": "87c455f1451b26587ac30489562285c0cfe0c9f5",
+        "decision": "822bccb7370a5dfbe22c1994bdf525457d17066e",
+        "sheet": "10d642137570317017934b8b1b85f8c0345f1f61",
+        "execution": "f6c3147100e21a4ea97dff8423fd70f06c45123c",
+        "scorecard": "65d212f05e56ab7bd89244c9f4bccff4763c0077",
+        "capture_path": "evidence/operational/CFB_CBS_WEEK10_TABLE_CAPTURE_20261105T014033Z.md",
+        "capture_blob": "48484afff21eda509a80bf26bd90b6c7c68df54f",
+        "lineage_path": "evidence/scheduler_qa/CFB_WEEK10_ORIGINAL_ANCESTRY_RECOVERY_20261104.json",
+        "lineage_blob": "47736c0fd9ff49545db7e46b508805658a1c7a92"
+      },
+      "stages": [
+        {
+          "stage": "AUTHENTIC_INPUTS",
+          "outcome": "PASS",
+          "games": 63
+        },
+        {
+          "stage": "REAL_COMPILER",
+          "outcome": "PASS",
+          "exact_saved_bytes": true
+        },
+        {
+          "stage": "REAL_RENDER",
+          "outcome": "PASS",
+          "exact_saved_bytes": true
+        },
+        {
+          "stage": "ORIGINAL_ARCHIVE_INVARIANT",
+          "outcome": "PASS",
+          "evidence": {
+            "verdict": "PASS_WEEK10_ORIGINAL_FROZEN_FIELDS_ONLY",
+            "games": 63,
+            "predictions": 55,
+            "exclusions": 8,
+            "numeric_fields": 165,
+            "scope": "original fields only, not market/review/publication/betting acceptance"
+          }
+        }
+      ],
+      "status": "PASS_RETAINED_MONITOR_EXECUTION_ONLY",
+      "scope": "Authentic retained compiler/render/frozen-field execution only; no fresh quote, live decision, production acceptance or recurring reliability.",
+      "observed_end_utc": "2026-11-06T03:03:24.812092+00:00"
+    },
+    "result_sha256": "df5c5a53d20230d305b43a3018b9fc01a477acd1c175a1f008c40547e4142aa8",
+    "independent_exact_output_hashes": {
+      "market.md": {
+        "git_blob": "87c455f1451b26587ac30489562285c0cfe0c9f5",
+        "sha256": "5227d83aae713dd787301dc290e47a5741417c9fdaf9cd7a26f0564ee1d717c7",
+        "bytes": 4289932
+      },
+      "decision.md": {
+        "git_blob": "822bccb7370a5dfbe22c1994bdf525457d17066e",
+        "sha256": "5014a0cb0ee3bc625752fa12dbd1682f6957ff7958f6f5f0d95b7bdb584f78a1",
+        "bytes": 2170777
+      },
+      "sheet.md": {
+        "git_blob": "10d642137570317017934b8b1b85f8c0345f1f61",
+        "sha256": "ea58ddd74b330887777ed38e9bd9219636bc488a0b7f755eb26565be7666a9b2",
+        "bytes": 213053
+      }
+    }
+  },
+  "live_source": {
+    "command": "python3 live_source.py",
+    "exit_code": 0,
+    "evidence": {
+      "game_id": "401858510",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858510",
+      "started_at": "2026-11-06T03:04:02.355616+00:00",
+      "canonical_market_blob": "87c455f1451b26587ac30489562285c0cfe0c9f5",
+      "canonical_boundary": "2026-11-05T01:48:11.126910+00:00",
+      "canonical_kickoff": "2026-11-07T01:00:00Z",
+      "expected_teams": {
+        "away": "Nebraska",
+        "home": "Illinois"
+      },
+      "offer_updated_at": null,
+      "scope": "Retrieval-only shadow; no current football judgment, recommendation or execution.",
+      "recovered_by": "2026-11-06T03:04:09.006018+00:00",
+      "http_status": 200,
+      "raw_bytes": 103455,
+      "raw_sha256": "fd3e01e9c20f6b8ae36677f84755a768754dfbb7c495c4d5b3c3ea231531fda6",
+      "teams": {
+        "home": {
+          "id": "356",
+          "name": "Illinois"
+        },
+        "away": {
+          "id": "158",
+          "name": "Nebraska"
+        }
+      },
+      "source_kickoff": "2026-11-07T01:00Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "status": "PASS_CONFORMING_PRIMARY_SOURCE_ACCESS",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "team_id": "356",
+          "number": 4.5,
+          "price": -108,
+          "operator_selection_url": "https://sportsbook.draftkings.com/event/34913367?outcomes=0HC86962999P450_1",
+          "outcome": "0HC86962999P450_1",
+          "offer_updated_at": null
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "team_id": "158",
+          "number": -4.5,
+          "price": -112,
+          "operator_selection_url": "https://sportsbook.draftkings.com/event/34913367?outcomes=0HC86962999N450_3",
+          "outcome": "0HC86962999N450_3",
+          "offer_updated_at": null
+        }
+      ],
+      "market_outcome": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+      "consensus": "CONSENSUS_UNAVAILABLE",
+      "venue_execution": "UNVERIFIED",
+      "completed_at": "2026-11-06T03:04:09.007675+00:00"
+    },
+    "offer_qualification": "Retrieval-only paired side quotes; actual operator update unknown, no independently executable offer or new recommendation."
+  },
+  "isolation": {
+    "initial_checks": [
+      {
+        "id": "6ae766e788d881919726d0eeb44450dd",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76df2ece4819197f91fb10076dea7",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76df60e0c819182e2cfab1b83846a",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      }
+    ],
+    "final_checks": [
+      {
+        "id": "6ae766e788d881919726d0eeb44450dd",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76df2ece4819197f91fb10076dea7",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76df60e0c819182e2cfab1b83846a",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      }
+    ],
+    "canonical_pointer_changes": [],
+    "tracked_checkout_changes": "",
+    "task_mutations": "NONE",
+    "canonical_mutations": "NONE",
+    "scientific_champion_wager_money_effect": "NONE",
+    "one_off_lifecycle": "Normal expiry; no self-reschedule"
+  },
+  "limits": "Bounded historical fixture execution plus separate live source access. No fresh analytical slate, production acceptance, DNS platform fix, or recurring reliability certification. Earlier classifications preserved.",
+  "closure": "Separate candidate/readback/closure required."
+}
