@@ -1,0 +1,2214 @@
+{
+  "cycle_id": "CFB_MARKET_MONITOR_20261106T032056Z",
+  "reviewed_at": "2026-11-06T03:24:45.001239+00:00",
+  "priority_cases": {
+    "401856739": {
+      "matchup": [
+        "Oklahoma",
+        "Florida"
+      ],
+      "kickoff": "2026-11-08T00:45Z",
+      "team_ids": {
+        "home": "57",
+        "away": "201"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856739",
+      "raw_sha256": "a715be135ea6a3ba2283db3f104c3e612d7963702deb560c992302300df09d0e",
+      "recovered_by": "2026-11-06T03:21:36Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -6.5,
+          "price": -105,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913630?outcomes=0HC86963519N650_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 6.5,
+          "price": -115,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913630?outcomes=0HC86963519P650_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -238,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913630?outcomes=0ML86963519_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 195,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913630?outcomes=0ML86963519_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 45.5,
+          "price": -105,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913630?outcomes=0OU86963519O4550_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 45.5,
+          "price": -115,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913630?outcomes=0OU86963519U4550_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "decision_change": "NONE; retained role-sensitive decision with new price observation"
+    },
+    "401856740": {
+      "matchup": [
+        "Alabama",
+        "LSU"
+      ],
+      "kickoff": "2026-11-07T20:30Z",
+      "team_ids": {
+        "home": "99",
+        "away": "333"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856740",
+      "raw_sha256": "14abce54bd468e680629adad291a5a0f1928dc62b0089e5007247eb61b04a93a",
+      "recovered_by": "2026-11-06T03:21:40Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -6.0,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226128?outcomes=0HC84998504N600_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 6.0,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226128?outcomes=0HC84998504P600_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -238,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226128?outcomes=0ML84998504_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 195,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226128?outcomes=0ML84998504_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 52.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226128?outcomes=0OU84998504O5250_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 52.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226128?outcomes=0OU84998504U5250_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "condition_check": {
+        "original_limit": {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -6.0,
+          "minimum_price": -110,
+          "direction": "AT_LEAST"
+        },
+        "window": {
+          "start_utc": "2026-11-05T01:38:23.555719+00:00",
+          "end_utc": "2026-11-06T19:00:00Z"
+        },
+        "benchmark_pair": {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -6.0,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226128?outcomes=0HC84998504N600_1"
+        },
+        "number_price_match": false,
+        "classification": "IDENTIFIED_RETRIEVAL_ONLY",
+        "decision_change": "NONE"
+      }
+    },
+    "401856745": {
+      "matchup": [
+        "Kentucky",
+        "Tennessee"
+      ],
+      "kickoff": "2026-11-07T23:15Z",
+      "team_ids": {
+        "home": "2633",
+        "away": "96"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856745",
+      "raw_sha256": "2b91532e7c6a477efb5ca0fd6bd9c754c12b39fe764c08952c8a105da55f3474",
+      "recovered_by": "2026-11-06T03:21:36Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -6.5,
+          "price": -115,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913581?outcomes=0HC86963409N650_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 6.5,
+          "price": -105,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913581?outcomes=0HC86963409P650_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -238,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913581?outcomes=0ML86963409_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 195,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913581?outcomes=0ML86963409_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 49.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913581?outcomes=0OU86963409O4950_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 49.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913581?outcomes=0OU86963409U4950_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "decision_change": "NONE; retained role-sensitive decision with new price observation"
+    },
+    "401856849": {
+      "matchup": [
+        "BYU",
+        "Utah"
+      ],
+      "kickoff": "2026-11-07T17:00Z",
+      "team_ids": {
+        "home": "254",
+        "away": "252"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856849",
+      "raw_sha256": "94c820d845c16224d8fcd737bc2d3e4cc8c35fca55f29efb5455e2dc017cbd4b",
+      "recovered_by": "2026-11-06T03:21:47Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -4.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226130?outcomes=0HC84998506N450_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 4.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226130?outcomes=0HC84998506P450_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -192,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226130?outcomes=0ML84998506_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 160,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226130?outcomes=0ML84998506_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 48.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226130?outcomes=0OU84998506O4850_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 48.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226130?outcomes=0OU84998506U4850_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "condition_check": {
+        "original_limit": {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -5.5,
+          "minimum_price": -105,
+          "direction": "AT_LEAST"
+        },
+        "window": {
+          "start_utc": "2026-11-05T01:38:23.551739+00:00",
+          "end_utc": "2026-11-06T19:00:00Z"
+        },
+        "benchmark_pair": {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -4.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226130?outcomes=0HC84998506N450_1"
+        },
+        "number_price_match": false,
+        "classification": "IDENTIFIED_RETRIEVAL_ONLY",
+        "decision_change": "NONE"
+      }
+    },
+    "401856850": {
+      "matchup": [
+        "UCF",
+        "Kansas"
+      ],
+      "kickoff": "2026-11-07T20:45Z",
+      "team_ids": {
+        "home": "2305",
+        "away": "2116"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856850",
+      "raw_sha256": "81ba60777c2c2309ca1d9a73af04ca03897082e16e3e5717602052690b8cdeda",
+      "recovered_by": "2026-11-06T03:21:36Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -3.0,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913511?outcomes=0HC86963277N300_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 3.0,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913511?outcomes=0HC86963277P300_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -155,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913511?outcomes=0ML86963277_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 130,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913511?outcomes=0ML86963277_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 47.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913511?outcomes=0OU86963277O4750_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 47.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913511?outcomes=0OU86963277U4750_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "decision_change": "NONE; retained role-sensitive decision with new price observation"
+    },
+    "401856851": {
+      "matchup": [
+        "Cincinnati",
+        "Houston"
+      ],
+      "kickoff": "2026-11-07T20:30Z",
+      "team_ids": {
+        "home": "248",
+        "away": "2132"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856851",
+      "raw_sha256": "63c02640dc49d1b693f9939585a84a2ded671d0fa00288805d39e60cc03befe0",
+      "recovered_by": "2026-11-06T03:21:47Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -10.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913455?outcomes=0HC86963191N1050_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 10.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913455?outcomes=0HC86963191P1050_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -425,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913455?outcomes=0ML86963191_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 330,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913455?outcomes=0ML86963191_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 62.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913455?outcomes=0OU86963191O6250_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 62.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913455?outcomes=0OU86963191U6250_3"
+        }
+      ],
+      "material": "Houston preview confirms Weigman's dual threat and defense with 12 takeaways, a credible counter to the existing Cincinnati cover case. It does not independently settle current Cincinnati personnel. Existing condition kept with original cutoff.",
+      "material_sources": [
+        "https://dtnbgpzadn69x.cloudfront.net/news/2026/11/3/football-preview-17-houston-hosts-cincinnati-for-homecoming"
+      ],
+      "condition_check": {
+        "original_limit": {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 10.5,
+          "minimum_price": -108,
+          "direction": "AT_LEAST"
+        },
+        "window": {
+          "start_utc": "2026-11-05T01:38:23.555957+00:00",
+          "end_utc": "2026-11-06T19:00:00Z"
+        },
+        "benchmark_pair": {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 10.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913455?outcomes=0HC86963191P1050_3"
+        },
+        "number_price_match": true,
+        "classification": "IDENTIFIED_RETRIEVAL_ONLY",
+        "decision_change": "NONE"
+      }
+    },
+    "401856852": {
+      "matchup": [
+        "Colorado",
+        "Arizona State"
+      ],
+      "kickoff": "2026-11-08T00:30Z",
+      "team_ids": {
+        "home": "9",
+        "away": "38"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856852",
+      "raw_sha256": "efabb65c5c88e17e03512926b8b4c688edb4f0838f8dcdc277ced98db7876146",
+      "recovered_by": "2026-11-06T03:21:47Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -3.5,
+          "price": -105,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913609?outcomes=0HC86963473N350_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 3.5,
+          "price": -115,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913609?outcomes=0HC86963473P350_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -162,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913609?outcomes=0ML86963473_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 136,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913609?outcomes=0ML86963473_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 48.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913609?outcomes=0OU86963473O4850_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 48.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913609?outcomes=0OU86963473U4850_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "condition_check": {
+        "original_limit": {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -3.0,
+          "minimum_price": -118,
+          "direction": "AT_LEAST"
+        },
+        "window": {
+          "start_utc": "2026-11-05T01:38:23.559456+00:00",
+          "end_utc": "2026-11-06T19:00:00Z"
+        },
+        "benchmark_pair": {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -3.5,
+          "price": -105,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913609?outcomes=0HC86963473N350_1"
+        },
+        "number_price_match": false,
+        "classification": "IDENTIFIED_RETRIEVAL_ONLY",
+        "decision_change": "NONE"
+      }
+    },
+    "401856853": {
+      "matchup": [
+        "Iowa State",
+        "Baylor"
+      ],
+      "kickoff": "2026-11-07T17:00Z",
+      "team_ids": {
+        "home": "239",
+        "away": "66"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856853",
+      "raw_sha256": "052b29f9e67ab17f680807adf1e2554beaa72bcc9336fd2a8b4464f972417c8d",
+      "recovered_by": "2026-11-06T03:21:47Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -10.0,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913513?outcomes=0HC86963279N1000_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 10.0,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913513?outcomes=0HC86963279P1000_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -375,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913513?outcomes=0ML86963279_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 295,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913513?outcomes=0ML86963279_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 51.5,
+          "price": -102,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913513?outcomes=0OU86963279O5150_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 51.5,
+          "price": -118,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913513?outcomes=0OU86963279U5150_3"
+        }
+      ],
+      "material": "Primary game center confirms game identity and kickoff. It does not independently settle current Baylor/Iowa State role updates; the same benchmark pair is only a numeric match.",
+      "material_sources": [
+        "https://baylorbears.com/game-center/29752",
+        "https://baylorbears.com/news/2026/11/1/football-baylor-iowa-state-kickoff-time-on-homecoming-set"
+      ],
+      "condition_check": {
+        "original_limit": {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -10.0,
+          "minimum_price": -108,
+          "direction": "AT_LEAST"
+        },
+        "window": {
+          "start_utc": "2026-11-05T01:38:23.552996+00:00",
+          "end_utc": "2026-11-06T19:00:00Z"
+        },
+        "benchmark_pair": {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -10.0,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913513?outcomes=0HC86963279N1000_1"
+        },
+        "number_price_match": true,
+        "classification": "IDENTIFIED_RETRIEVAL_ONLY",
+        "decision_change": "NONE"
+      }
+    },
+    "401856854": {
+      "matchup": [
+        "Oklahoma State",
+        "Kansas State"
+      ],
+      "kickoff": "2026-11-07T18:00Z",
+      "team_ids": {
+        "home": "2306",
+        "away": "197"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856854",
+      "raw_sha256": "c1528c23b716f4b81feadfcd04abfd69c99988cde1a976f04d7a6e6ad7cd539f",
+      "recovered_by": "2026-11-06T03:21:36Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": 6.0,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913480?outcomes=0HC86963230P600_1",
+          "disposition": "PASS",
+          "reason": "K-State's official notes show 205.5 rushing yards per game and Barnett's late drive at Colorado. Klein confirmed Barnett is the fallback if Johnson is out. That supports a competitive path across both scenarios, but +6 gives up a touchdown cushion and Oklahoma State's passing ceiling makes it insufficient."
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": -6.0,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913480?outcomes=0HC86963230N600_3",
+          "disposition": "PASS",
+          "reason": "Oklahoma State can stretch the game through Mestemaker. K-State's run efficiency can control possessions and either Johnson's mobility or Barnett's functional fallback creates margin resistance. Neither scenario earns laying six."
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 185,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913480?outcomes=0ML86963230_1",
+          "disposition": "PASS",
+          "reason": "K-State home field and rushing make the upset possible, but recent QB churn and Oklahoma State's passing strength do not justify the outright +185."
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -225,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913480?outcomes=0ML86963230_3",
+          "disposition": "PASS",
+          "reason": "The Cowboys' passing is the clearer win route, but -225 does not compensate for a home team able to stay on schedule and shorten the game."
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 62.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913480?outcomes=0OU86963230O6250_1",
+          "disposition": "PASS",
+          "reason": "Mestemaker creates big-play upside, but 62.5 asks both offenses to finish, and K-State can lean on the run under either QB scenario."
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 62.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913480?outcomes=0OU86963230U6250_3",
+          "disposition": "PASS",
+          "reason": "K-State rushing and its pass defense support a slower case, but Oklahoma State's explosive passing and possible K-State short fields leave the under at 62.5 unearned."
+        }
+      ],
+      "material": null,
+      "material_sources": [
+        "https://www.kstatesports.com/news/2026/11/2/football-k-state-previews-home-game-against-oklahoma-state-at-weekly-press-conference",
+        "https://www.kstatesports.com/news/2026/11/2/football-cats-welcome-cowboys-to-manhattan"
+      ]
+    },
+    "401856855": {
+      "matchup": [
+        "TCU",
+        "Arizona"
+      ],
+      "kickoff": "2026-11-07T03:15Z",
+      "team_ids": {
+        "home": "12",
+        "away": "2628"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856855",
+      "raw_sha256": "09356e5155771fd8523a6bc350c90d9b4141f9ef419dfce450a08d6f38489aa6",
+      "recovered_by": "2026-11-06T03:21:36Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -7.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913380?outcomes=0HC86963030N750_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 7.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913380?outcomes=0HC86963030P750_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -298,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913380?outcomes=0ML86963030_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 240,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913380?outcomes=0ML86963030_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 46.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913380?outcomes=0OU86963030O4650_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 46.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913380?outcomes=0OU86963030U4650_3"
+        }
+      ],
+      "material": "Current TCU preview verifies kickoff and defensive mechanism. The earlier league card leaves Payne and Camacho questionable, Powers probable and Denman and Bennett out. Thursday refreshed league card was not independently recovered from its dynamic page; primary school preview does not clear these roles. Prior spread concern holds at +7.5/-112. Preserve the other five prior branch decisions.",
+      "material_sources": [
+        "https://gofrogs.com/news/2026/11/5/football-tcu-set-to-face-arizona-in-friday-primetime-matchup",
+        "https://app.hdintelligence.com/?conf=B12&source=B12&sport=Football&type=report"
+      ],
+      "decision_change": "NONE; retained role-sensitive decision with new price observation"
+    },
+    "401858290": {
+      "matchup": [
+        "Merrimack",
+        "Wake Forest"
+      ],
+      "kickoff": "2026-11-07T20:30Z",
+      "team_ids": {
+        "home": "154",
+        "away": "2771"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858290",
+      "raw_sha256": "c56ea4a439e1e7a21fdb0c5a5eacea413ca1c66d5fb228bcbba1383df73759fc",
+      "recovered_by": "2026-11-06T03:21:36Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -47.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34964393?outcomes=0HC87099415N4750_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 47.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34964393?outcomes=0HC87099415P4750_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "OFF",
+          "line": null,
+          "price": null,
+          "operator_url": null
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "OFF",
+          "line": null,
+          "price": null,
+          "operator_url": null
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 58.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34964393?outcomes=0OU87099415O5850_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 58.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34964393?outcomes=0OU87099415U5850_3"
+        }
+      ],
+      "material": "Wake's primary Virginia recap shows Lopez played and generated 293 total yards, but does not settle his current snap plan or Merrimack's role; both moneylines were explicitly OFF. Total moved from 59.5 to 58.5. Wake's production favors an over case while late backup possessions and Merrimack's scoring floor oppose it. Preserve incomplete review.",
+      "material_sources": [
+        "https://godeacs.com/news/2026/11/1/football-no-14-wake-forest-earns-fifth-straight-victory-routs-virginia-51-7",
+        "https://godeacs.com/sports/2025/6/26/2025-football-media-center"
+      ],
+      "decision_change": "NONE; retained role-sensitive decision with new price observation"
+    },
+    "401858511": {
+      "matchup": [
+        "Michigan State",
+        "Michigan"
+      ],
+      "kickoff": "2026-11-08T00:30Z",
+      "team_ids": {
+        "home": "130",
+        "away": "127"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858511",
+      "raw_sha256": "5c71309a0fb1205bed04596370710837c0d84a7575633f568ebe73a668b9ab01",
+      "recovered_by": "2026-11-06T03:21:40Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -13.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226131?outcomes=0HC84998507N1350_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 13.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226131?outcomes=0HC84998507P1350_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -550,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226131?outcomes=0ML84998507_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 410,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226131?outcomes=0ML84998507_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 39.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226131?outcomes=0OU84998507O3950_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 39.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34226131?outcomes=0OU84998507U3950_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "decision_change": "NONE; retained role-sensitive decision with new price observation"
+    },
+    "401858512": {
+      "matchup": [
+        "UCLA",
+        "Minnesota"
+      ],
+      "kickoff": "2026-11-07T17:00Z",
+      "team_ids": {
+        "home": "135",
+        "away": "26"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858512",
+      "raw_sha256": "5f837d611827aab3e19008fc672fa46e3a248b44dbeb605b069799487d7ca37e",
+      "recovered_by": "2026-11-06T03:21:47Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": 5.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913431?outcomes=0HC86963153P550_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": -5.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913431?outcomes=0HC86963153N550_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 170,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913431?outcomes=0ML86963153_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -205,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913431?outcomes=0ML86963153_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 38.5,
+          "price": -115,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913431?outcomes=0OU86963153O3850_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 38.5,
+          "price": -105,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913431?outcomes=0OU86963153U3850_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "condition_check": {
+        "original_limit": {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 5.5,
+          "minimum_price": -110,
+          "direction": "AT_LEAST"
+        },
+        "window": {
+          "start_utc": "2026-11-05T01:38:23.554417+00:00",
+          "end_utc": "2026-11-06T19:00:00Z"
+        },
+        "benchmark_pair": {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": 5.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913431?outcomes=0HC86963153P550_1"
+        },
+        "number_price_match": false,
+        "classification": "IDENTIFIED_RETRIEVAL_ONLY",
+        "decision_change": "NONE"
+      }
+    },
+    "401858516": {
+      "matchup": [
+        "Penn State",
+        "Washington"
+      ],
+      "kickoff": "2026-11-07T20:30Z",
+      "team_ids": {
+        "home": "264",
+        "away": "213"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858516",
+      "raw_sha256": "d2bad518436c90d62b5a243cd607542874b224d314501e47fc0ad18e609b650d",
+      "recovered_by": "2026-11-06T03:21:40Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -2.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913532?outcomes=0HC86963316N250_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 2.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913532?outcomes=0HC86963316P250_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -135,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913532?outcomes=0ML86963316_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 114,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913532?outcomes=0ML86963316_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 44.5,
+          "price": -102,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913532?outcomes=0OU86963316O4450_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 44.5,
+          "price": -118,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913532?outcomes=0OU86963316U4450_3"
+        }
+      ],
+      "material": "Both primary game notes confirm Williams played the Nebraska game and the late TD pass to Lawson. They do not independently certify the unresolved current role/line status. Total unchanged at 44.5 with a worse under price. Preserve open spread/QB-sensitive review; no selection.",
+      "material_sources": [
+        "https://gohuskies.com/news/2026/11/2/football-huskies-to-welcome-penn-state-for-first-time-in-105-years",
+        "https://gopsusports.com/news/2026/11/2/game-notes-penn-state-vs-washington-2026"
+      ],
+      "decision_change": "NONE; retained role-sensitive decision with new price observation"
+    },
+    "401862821": {
+      "matchup": [
+        "Rice",
+        "North Texas"
+      ],
+      "kickoff": "2026-11-07T21:00Z",
+      "team_ids": {
+        "home": "249",
+        "away": "242"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862821",
+      "raw_sha256": "64d7fe9a7b3fca37dd5cda92726353ca10e77d54c71f149e102ce9d57210864d",
+      "recovered_by": "2026-11-06T03:21:40Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -17.5,
+          "price": -102,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913512?outcomes=0HC86963278N1750_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 17.5,
+          "price": -118,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913512?outcomes=0HC86963278P1750_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -900,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913512?outcomes=0ML86963278_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 600,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913512?outcomes=0ML86963278_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 64.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913512?outcomes=0OU86963278O6450_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 64.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913512?outcomes=0OU86963278U6450_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "decision_change": "NONE; retained role-sensitive decision with new price observation"
+    },
+    "401862822": {
+      "matchup": [
+        "Tulsa",
+        "Tulane"
+      ],
+      "kickoff": "2026-11-07T17:00Z",
+      "team_ids": {
+        "home": "2655",
+        "away": "202"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862822",
+      "raw_sha256": "cc31e3d5a4c231efdd0524f275c6c079b77c52066a5900dbff883c88c91a4a00",
+      "recovered_by": "2026-11-06T03:21:47Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": 2.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913603?outcomes=0HC86963467P250_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": -2.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913603?outcomes=0HC86963467N250_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913603?outcomes=0ML86963467_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -130,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913603?outcomes=0ML86963467_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 49.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913603?outcomes=0OU86963467O4950_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 49.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913603?outcomes=0OU86963467U4950_3"
+        }
+      ],
+      "material": "November 5 Tulsa notes support the Hayes passing route (990 conference yards, nine TDs) and note Tulsa's plus-10 turnover margin. Those takeaways create short-field scoring but can also suppress Tulane possessions. No new Tulane personnel clearance or venue verification.",
+      "material_sources": [
+        "https://tulsahurricane.com/news/2026/11/5/football-tulsa-continues-american-conference-play-at-tulane"
+      ],
+      "condition_check": {
+        "original_limit": {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 49.5,
+          "minimum_price": -112,
+          "direction": "AT_MOST"
+        },
+        "window": {
+          "start_utc": "2026-11-05T01:38:23.555034+00:00",
+          "end_utc": "2026-11-06T19:00:00Z"
+        },
+        "benchmark_pair": {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 49.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913603?outcomes=0OU86963467O4950_1"
+        },
+        "number_price_match": true,
+        "classification": "IDENTIFIED_RETRIEVAL_ONLY",
+        "decision_change": "NONE"
+      }
+    },
+    "401864533": {
+      "matchup": [
+        "New Mexico",
+        "Nevada"
+      ],
+      "kickoff": "2026-11-07T02:00Z",
+      "team_ids": {
+        "home": "2440",
+        "away": "167"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864533",
+      "raw_sha256": "a95cceb7dfa84e86af51b5eebc61d08eca781aa7d906ddda14748b0867317332",
+      "recovered_by": "2026-11-06T03:21:36Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": 10.0,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913375?outcomes=0HC86963025P1000_1",
+          "disposition": "PASS",
+          "reason": "Nevada +10 buys a push on a ten-point loss, and home defense can keep the game close. Nevada's own UCLA recap now establishes Duncan's three first-quarter interceptions and replacement by Bianco, 111 team passing yards and 65 rushing yards. New Mexico's 11.9 points allowed per game and Nevada's offensive floor make this number insufficient across the known fallback scenarios; this judgment does not assume an announced starter."
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": -10.0,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913375?outcomes=0HC86963025N1000_3",
+          "disposition": "PASS",
+          "reason": "New Mexico can win through its defense and running game, but -10 needs an 11-point margin and the home defense can compress possessions. The matchup does not earn laying double digits."
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 310,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913375?outcomes=0ML86963025_1",
+          "disposition": "PASS",
+          "reason": "Nevada's field-position route supports hanging around more than winning. Its recent protection and quarterback execution do not earn +310."
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -395,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913375?outcomes=0ML86963025_3",
+          "disposition": "PASS",
+          "reason": "New Mexico is the stronger side, but -395 is too expensive for a short, low-total road game without independent high-confidence win calibration."
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 38.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913375?outcomes=0OU86963025O3850_1",
+          "disposition": "PASS",
+          "reason": "New Mexico can score and Nevada turnovers could create short fields. The move from 36.5 to 38.5 plus Nevada's limited offense weakens the over enough to pass."
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 38.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913375?outcomes=0OU86963025U3850_3",
+          "disposition": "PASS",
+          "reason": "New Mexico's scoring profile can get close to the total by itself and Nevada turnover variance can create points. A weak home offense does not establish under 38.5 at -112."
+        }
+      ],
+      "material": null,
+      "material_sources": [
+        "https://nevadawolfpack.com/news/2026/10/31/football-pack-drops-non-conference-finale-at-no-7-7-ucla.aspx",
+        "https://themw.com/news/2026/11/3/2026-mw-football-weekly-release-week-10.aspx"
+      ]
+    },
+    "401864534": {
+      "matchup": [
+        "Northern Illinois",
+        "San Jos\u00e9 State"
+      ],
+      "kickoff": "2026-11-07T21:00Z",
+      "team_ids": {
+        "home": "23",
+        "away": "2459"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864534",
+      "raw_sha256": "9cbc78a13b66229a3e1b04d909c7b92257b0779b8c0d133bad045646ab59f96b",
+      "recovered_by": "2026-11-06T03:21:40Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -10.0,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913521?outcomes=0HC86963289N1000_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 10.0,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913521?outcomes=0HC86963289P1000_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -380,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913521?outcomes=0ML86963289_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 300,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913521?outcomes=0ML86963289_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 52.5,
+          "price": -105,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913521?outcomes=0OU86963289O5250_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 52.5,
+          "price": -115,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913521?outcomes=0OU86963289U5250_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "decision_change": "NONE; retained role-sensitive decision with new price observation"
+    },
+    "401864535": {
+      "matchup": [
+        "Wyoming",
+        "UNLV"
+      ],
+      "kickoff": "2026-11-08T03:30Z",
+      "team_ids": {
+        "home": "2439",
+        "away": "2751"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864535",
+      "raw_sha256": "f35b4cdbc759256698b4caa21cdacefbffd3d53bf4e820275bb0f25cfcbd1170",
+      "recovered_by": "2026-11-06T03:21:50Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -5.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913639?outcomes=0HC86963547N550_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 5.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913639?outcomes=0HC86963547P550_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -218,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913639?outcomes=0ML86963547_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 180,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913639?outcomes=0ML86963547_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 48.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913639?outcomes=0OU86963547O4850_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 48.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913639?outcomes=0OU86963547U4850_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "condition_check": {
+        "original_limit": {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 6.0,
+          "minimum_price": -112,
+          "direction": "AT_LEAST"
+        },
+        "window": {
+          "start_utc": "2026-11-05T01:38:23.559751+00:00",
+          "end_utc": "2026-11-06T19:00:00Z"
+        },
+        "benchmark_pair": {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 5.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913639?outcomes=0HC86963547P550_3"
+        },
+        "number_price_match": false,
+        "classification": "IDENTIFIED_RETRIEVAL_ONLY",
+        "decision_change": "NONE"
+      }
+    },
+    "401869927": {
+      "matchup": [
+        "Georgia State",
+        "App State"
+      ],
+      "kickoff": "2026-11-07T19:30Z",
+      "team_ids": {
+        "home": "2026",
+        "away": "2247"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869927",
+      "raw_sha256": "60c0e0d96bea8109a32054bbfe9766078cc8fcef19284cbe0ad2c95d467b2077",
+      "recovered_by": "2026-11-06T03:21:47Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -6.0,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913392?outcomes=0HC86963058N600_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 6.0,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913392?outcomes=0HC86963058P600_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -230,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913392?outcomes=0ML86963058_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 190,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913392?outcomes=0ML86963058_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 54.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913392?outcomes=0OU86963058O5450_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 54.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913392?outcomes=0OU86963058U5450_3"
+        }
+      ],
+      "material": "Georgia State's official preview identifies App State's Singleton passing route and his primary receivers; no full current App State OL clearance or venue verification.",
+      "material_sources": [
+        "https://d1qdi747ml35tg.cloudfront.net/news/2026/11/1/football-panthers-head-to-high-country-to-face-mountaineers.aspx"
+      ],
+      "condition_check": {
+        "original_limit": {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 6.0,
+          "minimum_price": -112,
+          "direction": "AT_LEAST"
+        },
+        "window": {
+          "start_utc": "2026-11-05T01:38:23.555364+00:00",
+          "end_utc": "2026-11-06T19:00:00Z"
+        },
+        "benchmark_pair": {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 6.0,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913392?outcomes=0HC86963058P600_3"
+        },
+        "number_price_match": true,
+        "classification": "IDENTIFIED_RETRIEVAL_ONLY",
+        "decision_change": "NONE"
+      }
+    },
+    "401869936": {
+      "matchup": [
+        "UL Monroe",
+        "Arkansas State"
+      ],
+      "kickoff": "2026-11-07T20:00Z",
+      "team_ids": {
+        "home": "2032",
+        "away": "2433"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869936",
+      "raw_sha256": "1535a7fb17e27fe171fbb1a20c392e0898f2a56c86478a3151ee54dcf079672a",
+      "recovered_by": "2026-11-06T03:21:40Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -14.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913432?outcomes=0HC86963154N1450_1",
+          "disposition": "PASS",
+          "reason": "Owens's school-confirmed 309 passing yards and four combined touchdowns against Georgia State establish a viable scoring ceiling. Arkansas State still allowed 32 in that game, and -14.5 needs more than a two-touchdown win. No selection."
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 14.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913432?outcomes=0HC86963154P1450_3",
+          "disposition": "PASS",
+          "reason": "ULM can use the more-than-two-touchdown cushion, but Armenta's late production and the opponent's recent concessions do not overcome A-State's dual-threat production and a post-bye home matchup."
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -700,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913432?outcomes=0ML86963154_1",
+          "disposition": "PASS",
+          "reason": "A-State has the stronger win route, but -700 prices away almost all uncertainty and there is no independently calibrated probability supporting it."
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 500,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913432?outcomes=0ML86963154_3",
+          "disposition": "PASS",
+          "reason": "The ULM case is a cover or late-score route. The available evidence does not support +500 for an outright upset against the stronger dual-threat offense."
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 53.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913432?outcomes=0OU86963154O5350_1",
+          "disposition": "PASS",
+          "reason": "Owens and prior ULM defensive concessions support points. ULM's inconsistent scoring and A-State's ability to run with a lead make 53.5 an unearned over."
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 53.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913432?outcomes=0OU86963154U5350_3",
+          "disposition": "PASS",
+          "reason": "ULM's inconsistency can stall points, but A-State's latest four-touchdown QB performance and ULM's late score route oppose the under at 53.5."
+        }
+      ],
+      "material": null,
+      "material_sources": [
+        "https://astateredwolves.com/news/2026/10/26/football-owens-named-sun-belt-conference-offensive-player-of-the-week.aspx",
+        "https://astateredwolves.com/gameday/football-vs-ulm/football/827/"
+      ]
+    },
+    "401869968": {
+      "matchup": [
+        "South Alabama",
+        "Louisiana"
+      ],
+      "kickoff": "2026-11-07T22:00Z",
+      "team_ids": {
+        "home": "309",
+        "away": "6"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869968",
+      "raw_sha256": "701bf65faf73370517c565a15f8bea4f64f41dd7d84497a05dc8a9faee8142bf",
+      "recovered_by": "2026-11-06T03:21:51Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -7.5,
+          "price": -105,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913546?outcomes=0HC86963339N750_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 7.5,
+          "price": -115,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913546?outcomes=0HC86963339P750_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -310,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913546?outcomes=0ML86963339_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 250,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913546?outcomes=0ML86963339_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 57.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913546?outcomes=0OU86963339O5750_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 57.5,
+          "price": -110,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913546?outcomes=0OU86963339U5750_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "condition_check": {
+        "original_limit": {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 7.5,
+          "minimum_price": -110,
+          "direction": "AT_LEAST"
+        },
+        "window": {
+          "start_utc": "2026-11-05T01:38:23.558937+00:00",
+          "end_utc": "2026-11-06T19:00:00Z"
+        },
+        "benchmark_pair": {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 7.5,
+          "price": -115,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913546?outcomes=0HC86963339P750_3"
+        },
+        "number_price_match": false,
+        "classification": "IDENTIFIED_RETRIEVAL_ONLY",
+        "decision_change": "NONE"
+      }
+    },
+    "401871074": {
+      "matchup": [
+        "Missouri State",
+        "Florida International"
+      ],
+      "kickoff": "2026-11-07T21:00Z",
+      "team_ids": {
+        "home": "2229",
+        "away": "2623"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871074",
+      "raw_sha256": "d0c69ae2c1a6d52d4b0d23d33e0556c033d3f0c094a6aeb9699c0dd6eb8b9ab2",
+      "recovered_by": "2026-11-06T03:21:50Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -4.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913529?outcomes=0HC86963311N450_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 4.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913529?outcomes=0HC86963311P450_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -205,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913529?outcomes=0ML86963311_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 170,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913529?outcomes=0ML86963311_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 49.5,
+          "price": -115,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913529?outcomes=0OU86963311O4950_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 49.5,
+          "price": -105,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913529?outcomes=0OU86963311U4950_3"
+        }
+      ],
+      "material": "Missouri State's game-week preview independently binds the current matchup. No independently verified material update to the existing Belin/Myers cover mechanism and no venue proof.",
+      "material_sources": [
+        "https://missouristatebears.com/news/2026/11/3/football-bears-begin-november-stretch-with-trip-to-fiu"
+      ],
+      "condition_check": {
+        "original_limit": {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 4.5,
+          "minimum_price": -108,
+          "direction": "AT_LEAST"
+        },
+        "window": {
+          "start_utc": "2026-11-05T01:38:23.556479+00:00",
+          "end_utc": "2026-11-06T19:00:00Z"
+        },
+        "benchmark_pair": {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 4.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913529?outcomes=0HC86963311P450_3"
+        },
+        "number_price_match": true,
+        "classification": "IDENTIFIED_RETRIEVAL_ONLY",
+        "decision_change": "NONE"
+      }
+    },
+    "401871075": {
+      "matchup": [
+        "Sam Houston",
+        "Jacksonville State"
+      ],
+      "kickoff": "2026-11-08T00:00Z",
+      "team_ids": {
+        "home": "55",
+        "away": "2534"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871075",
+      "raw_sha256": "02a440fd19a501354c4a2697f5cfc2333d6384d57e8207eb0cf0569adc60b295",
+      "recovered_by": "2026-11-06T03:21:50Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": -17.5,
+          "price": -102,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913601?outcomes=0HC86963461N1750_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": 17.5,
+          "price": -118,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913601?outcomes=0HC86963461P1750_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -850,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913601?outcomes=0ML86963461_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 575,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913601?outcomes=0ML86963461_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 47.5,
+          "price": -120,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913601?outcomes=0OU86963461O4750_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 47.5,
+          "price": 100,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913601?outcomes=0OU86963461U4750_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "condition_check": {
+        "original_limit": {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 48.5,
+          "minimum_price": -118,
+          "direction": "AT_LEAST"
+        },
+        "window": {
+          "start_utc": "2026-11-05T01:38:23.559188+00:00",
+          "end_utc": "2026-11-06T19:00:00Z"
+        },
+        "benchmark_pair": {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 47.5,
+          "price": 100,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913601?outcomes=0OU86963461U4750_3"
+        },
+        "number_price_match": false,
+        "classification": "IDENTIFIED_RETRIEVAL_ONLY",
+        "decision_change": "NONE"
+      }
+    },
+    "401871076": {
+      "matchup": [
+        "Western Kentucky",
+        "Middle Tennessee"
+      ],
+      "kickoff": "2026-11-07T20:30Z",
+      "team_ids": {
+        "home": "2393",
+        "away": "98"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871076",
+      "raw_sha256": "bff0358a5cc48ce7678c72e0f3d53035dcdbc35aee0115bb40b15c21a3b0d554",
+      "recovered_by": "2026-11-06T03:21:50Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": 1.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913508?outcomes=0HC86963270P150_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": -1.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913508?outcomes=0HC86963270N150_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 102,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913508?outcomes=0ML86963270_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -122,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913508?outcomes=0ML86963270_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 53.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913508?outcomes=0OU86963270O5350_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 53.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913508?outcomes=0OU86963270U5350_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "condition_check": {
+        "original_limit": {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": -1.5,
+          "minimum_price": -102,
+          "direction": "AT_LEAST"
+        },
+        "window": {
+          "start_utc": "2026-11-05T01:38:23.556170+00:00",
+          "end_utc": "2026-11-06T19:00:00Z"
+        },
+        "benchmark_pair": {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": -1.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913508?outcomes=0HC86963270N150_3"
+        },
+        "number_price_match": false,
+        "classification": "IDENTIFIED_RETRIEVAL_ONLY",
+        "decision_change": "NONE"
+      }
+    },
+    "401871098": {
+      "matchup": [
+        "Louisiana Tech",
+        "Troy"
+      ],
+      "kickoff": "2026-11-07T21:00Z",
+      "team_ids": {
+        "home": "2653",
+        "away": "2348"
+      },
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871098",
+      "raw_sha256": "aca7de3be713f8197116913e874742a455124cbfe2a34f589fc12bed26169a1a",
+      "recovered_by": "2026-11-06T03:21:40Z",
+      "provider_id": "100",
+      "provider": "DraftKings",
+      "offer_updated_at": null,
+      "venue_execution": "UNVERIFIED",
+      "quotes": [
+        {
+          "market": "SPREAD",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": 5.5,
+          "price": -115,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913531?outcomes=0HC86963315P550_1"
+        },
+        {
+          "market": "SPREAD",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": -5.5,
+          "price": -105,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913531?outcomes=0HC86963315N550_3"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "home",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": 170,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913531?outcomes=0ML86963315_1"
+        },
+        {
+          "market": "MONEYLINE",
+          "side": "away",
+          "status": "DISPLAYED",
+          "line": null,
+          "price": -205,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913531?outcomes=0ML86963315_3"
+        },
+        {
+          "market": "TOTAL",
+          "side": "over",
+          "status": "DISPLAYED",
+          "line": 47.5,
+          "price": -108,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913531?outcomes=0OU86963315O4750_1"
+        },
+        {
+          "market": "TOTAL",
+          "side": "under",
+          "status": "DISPLAYED",
+          "line": 47.5,
+          "price": -112,
+          "operator_url": "https://sportsbook.draftkings.com/event/34913531?outcomes=0OU86963315U4750_3"
+        }
+      ],
+      "material": null,
+      "material_sources": [],
+      "decision_change": "NONE; retained role-sensitive decision with new price observation"
+    }
+  },
+  "scope": "26 current event/market checks, three complete new six-market PASS judgments, three targeted role follow-ups, thirteen exact original-condition numeric screens. No original condition extended or venue verified."
+}
