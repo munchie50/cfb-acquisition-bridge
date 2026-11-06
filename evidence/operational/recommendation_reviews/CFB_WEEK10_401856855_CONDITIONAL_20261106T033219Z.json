@@ -1,0 +1,73 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401856855",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-06T03:35:29.926334+00:00",
+  "original_lineage_blob": "47736c0fd9ff49545db7e46b508805658a1c7a92",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "away",
+  "rationale": "TCU +7.5 at -112 is a controlled-Beta preference for keeping the full touchdown cushion. TCU limits touchdowns and has a field-position path. Thursday’s official report improves the offensive floor: Payne is probable, Camacho available, and Powers probable. Arizona’s explosive Fifita passing and pressure still give the home team a two-score path, especially if TCU cannot protect or finish drives.",
+  "model_review": "Immutable Week10 original context {\"game_id\": \"401856855\", \"away_team\": \"TCU\", \"home_team\": \"Arizona\", \"first_frozen_start\": \"2026-11-07 03:15:00+00:00\", \"first_frozen_status\": \"PREDICTION\", \"original_numeric_strings\": {\"pred_margin\": \"1.5517727433164694\", \"pred_total\": \"48.752150569762044\", \"pred_win\": \"0.5446892660956925\"}, \"display\": \"FIRST_FROZEN: Arizona -1.6 / 48.8 / 0.545 home\", \"first_frozen_exclusion\": null, \"current_qualified_kickoff_utc\": null}; the older model is context rather than a current fair line or calibrated probability. Current defense, field position, personnel change and the touchdown hook govern the qualitative selection.",
+  "material_sources": [
+    {
+      "url": "https://app.hdintelligence.com/api/get-publish-public",
+      "retrieved_at": "2026-11-06T03:35:29.926334+00:00",
+      "finding": "Public Big 12 report 10002946, Thursday Nov 5 21:00 CT Update 2, SHA256 22f3e018308a9d0411acf2bdf0a09ca25e0a8f2a1f04ef5ed54f9c8e131e90cd. TCU Craig and Camacho available, Payne and Powers probable, Denman and Bennett out. Arizona Fifita available, Chapa out, Mahdi questionable and Stovall probable. This is a time-stamped status report; starting usage or final clearance is not inferred."
+    },
+    {
+      "url": "https://gofrogs.com/news/2026/11/5/football-tcu-set-to-face-arizona-in-friday-primetime-matchup",
+      "retrieved_at": "2026-11-06T03:34:39Z",
+      "finding": "School confirms 9:15 p.m. CT kickoff and reports 1.5 touchdowns allowed per game with half of Chance punts downed inside the 20. Response SHA256 92f5a6e723960320a1d5baeff3eab8b69dc1f669b08afc0ab38acd1ab08c5d9b."
+    },
+    {
+      "url": "https://arizonawildcats.com/news/2026/11/2/football-no-24-wildcats-to-host-horned-frogs-on-friday-night",
+      "retrieved_at": "2026-11-06T03:34:38Z",
+      "finding": "School reports 324.1 passing yards per game and 25 sacks, plus Fifita to Mizell for a 94-yard score last game. Arizona can score quickly and create drive-ending pressure. Response SHA256 bb7fbd7f7dd002436cd7ab39d86b79e65483f3e14847cb17e2e17fadf1f92da8."
+    }
+  ],
+  "uncertainty": "Qualitative controlled Beta. Payne and Powers are probable, with final availability, workload and adverse late personnel news still subject to recheck. Arizona pressure and explosive passing could win by eight or more. No calibrated EV, current book update time, consensus or executable venue price asserted.",
+  "decision_rule": "TCU full-game spread +7.5 or better and -112 or better. Do not give up the touchdown hook. Reassess materially adverse RB/line/defense news. Venue confirmation pending.",
+  "source_qualification": "ESPN primary pregame response matched event 401856855, directed team IDs 2628/12 and DraftKings provider 100 with paired +7.5/-112 and selection-specific link. Response SHA256 030f669b6c8329c1d7e5cd6ecc255397e9ab05fb8348bcb8be0a632b8a4d3063. Unknown offer-update clock; retrieval-only.",
+  "market_reference": {
+    "game_id": "401856855",
+    "market": "SPREAD",
+    "selection": "away",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-07T03:15:00Z",
+    "kickoff_source_url": "https://gofrogs.com/news/2026/11/5/football-tcu-set-to-face-arizona-in-friday-primetime-matchup",
+    "collection_start": "2026-11-06T03:33:08Z",
+    "collection_end": "2026-11-06T03:33:08Z",
+    "quotes": [
+      {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 7.5,
+        "price": -112,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913380?outcomes=0HC86963030P750_3",
+        "game_id": "401856855",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856855",
+        "retrieved_at": "2026-11-06T03:33:08Z",
+        "offer_updated_at": null
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "away",
+    "line": 7.5,
+    "minimum_price": -112,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-06T19:00:00Z",
+  "planning_cutoff_utc": "2026-11-06T19:00:00Z",
+  "cutoff_basis": "This new review expires at the existing Friday 1 p.m. CT reconciliation boundary, well ahead of the verified Friday kickoff. This is a conservative review validity boundary and does not imply a new placement instruction.",
+  "execution_window": {
+    "start_utc": "2026-11-06T03:35:29.926334+00:00",
+    "end_utc": "2026-11-06T19:00:00Z"
+  }
+}
