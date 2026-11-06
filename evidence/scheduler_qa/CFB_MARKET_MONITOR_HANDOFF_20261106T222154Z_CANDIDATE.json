@@ -1,0 +1,24 @@
+{
+  "state": "MANUAL_RUNTIME_DEMONSTRATED_INSTALLATION_PENDING",
+  "at_utc": "2026-11-06T22:21:54.541Z",
+  "task_id": "6ae766e788d881919726d0eeb44450dd",
+  "baseline_updated_at": "2026-11-06T18:59:10.175578+00:00",
+  "baseline_schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260930T070000\nRRULE:FREQ=WEEKLY;BYDAY=SU,MO,TU,WE,TH,FR,SA;BYHOUR=7,13;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+  "baseline_enabled": true,
+  "insertion_anchor": "2. Execute the unchanged verified helper once",
+  "insertion": "EXECUTE THE FILE HANDOFF IN THE SAME TOOL CALL AS THE FETCH WHEN CODE ORCHESTRATION IS EXPOSED. After connector main identity and helper blob/byte count are established, use functions.exec to call github_fetch_file with repository_full_name=munchie50/cfb-acquisition-bridge, ref=<exact observed main commit>, path=scripts/cfb_runtime_checkout.py, encoding=base64, then pass its structuredContent.content directly to exec_command in the same JavaScript cell. Keep the full response in the cell; never print or manually transcribe it. Require structuredContent.encoding=base64, returned sha equal to the independently resolved helper blob, nonempty base64 after whitespace stripping, alphabet /^[A-Za-z0-9+/]+={0,2}$/ and length divisible by four. Validate head and blob as 40 lowercase hex characters and expected size as a positive integer before constructing shell input. If the exact known helper blob b13930cb714eb87c8dce6136ffab6fbceeb44898 is resolved, its independently verified size is 3780; any other blob requires its own independently verified byte count.\n\nUse this exact shell operation shape with validated values substituted, in a single real runtime call. Create a fresh private temporary directory. Record only stage verdicts and verified metadata, never the payload:\nset -eu\numask 077\nbridge_dir=$(mktemp -d)\nprintf '%s\\n' '<validated base64>' | base64 -d > \"$bridge_dir/helper.py\"\ntest \"$(wc -c < \"$bridge_dir/helper.py\")\" -eq '<expected bytes>'\ntest \"$(git hash-object \"$bridge_dir/helper.py\")\" = '<expected blob>'\nprintf '%s\\n' 'HELPER_TRANSPORT_VERIFIED'\npython3 \"$bridge_dir/helper.py\" --destination \"$bridge_dir/checkout\" --expected-head '<connector-observed main>'\n\nIf tools are exposed individually, use the same binary shell operation with the complete structured connector base64 response. A generic text file upload, blob read, or description of a command does not prove a write. If no shell or executable binary writer is exposed, report TOOL_NOT_EXPOSED and the capability actually missing. If an exposed command fails, report its first failing stage separately from a missing tool. The last line above is the single step-2 checkout, so do not execute it again. Use the same returned pinned worktree for subsequent production work and verify the helper result as specified below.\n\n",
+  "rollback": "Remove exactly insertion preceding anchor. Preserve all other current fields.",
+  "failure_traces": [
+    "evidence/run_receipts/CFB_MARKET_MONITOR_AUTO11-20261106T130456107Z_STAGE_TRACE.md",
+    "evidence/run_receipts/CFBMM-AUTO11-20261106T185750460Z_STAGE_TRACE.md"
+  ],
+  "proof": {
+    "head": "4c518009f88c61036159a5a0a15d4731f5744815",
+    "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "verified_bytes": 3780,
+    "checkout_status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+    "immutable_reviews": 51,
+    "scope": "manual Work Mode only"
+  },
+  "next_proof": "Next existing Saturday 07:00 America/Chicago scheduled Market Monitor. Require actual helper write and hash, pinned checkout, then current production workload and closure."
+}
