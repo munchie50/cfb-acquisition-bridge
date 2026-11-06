@@ -1,0 +1,35 @@
+{
+  "schema": "CFB_COMPLETE_SHADOW_EXECUTION_CLOSURE_V1",
+  "correlation_id": "CFB_EXECUTION_20261106T030123Z_vz8rxk3",
+  "invocation_id": "44088861-988c-8325-aaef-7ba861e523ca",
+  "closure_observed_utc": "2026-11-06T03:05:40Z",
+  "final_verdict": "TEST_PASS_EXECUTION",
+  "closure_status": "CLOSED_PASS_BOUNDED_EXECUTION_ONLY",
+  "issued_only_after_independent_exact_candidate_readback": true,
+  "candidate": {
+    "path": "evidence/scheduler_qa/CFB_EXECUTION_20261106T030123Z_vz8rxk3_TERMINAL_CANDIDATE.json",
+    "blob": "2a0754cc00f83501a681c72d6c520692c9766fea",
+    "commit": "c8b758a435ba216cb67deb66d7da9600a340d7bf",
+    "independent_exact_readback": true
+  },
+  "result": {
+    "path": "evidence/scheduler_qa/CFB_EXECUTION_20261106T030123Z_vz8rxk3_RESULT.json",
+    "blob": "592477708e84679dad5272cff9a9f84af1ead357",
+    "commit": "cb51f4e96cd5d02480d7a39170a42a234bf65f26",
+    "independent_exact_readback": true
+  },
+  "startup": {
+    "path": "evidence/scheduler_qa/CFB_EXECUTION_20261106T030123Z_vz8rxk3_STARTED.json",
+    "blob": "777f0491583185615245b46d18ef13f5f3b8278b",
+    "independent_exact_readback": true
+  },
+  "certified": "Single verified normal bootstrap, fresh verified accepted archive, actual retained compile/render exact saved hashes, all 63/55/8/165 invariants, separate pregame live source access, and exact isolation/readback",
+  "first_unproved_boundary": null,
+  "comparison": "Prior production helper-transport and checkout DNS failures did not reproduce in this worker; previous classifications preserved. No claim of production platform DNS repair or recurring reliability.",
+  "timing": "No material impact; original fixture clocks untouched",
+  "isolation": "No canonical writes; all four production tasks exactly match authorized amended baseline. No task or schedule changes.",
+  "scientific_effect": "NONE",
+  "champion_effect": "NONE",
+  "lifecycle": "One-time normal expiry",
+  "delivery": "UNKNOWN"
+}
