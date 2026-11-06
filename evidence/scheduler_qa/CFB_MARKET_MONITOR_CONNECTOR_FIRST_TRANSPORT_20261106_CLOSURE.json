@@ -1,0 +1,18 @@
+{
+  "schema": "CFB_PRODUCTION_TASK_CHANGE_CLOSURE_V1",
+  "observed_utc": "2026-11-06T03:08:33Z",
+  "task_id": "6ae766e788d881919726d0eeb44450dd",
+  "final_change_state": "CONFIGURATION_APPLIED_AND_INDEPENDENTLY_VERIFIED",
+  "candidate": {
+    "path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_CONNECTOR_FIRST_TRANSPORT_20261106_TERMINAL_CANDIDATE.json",
+    "blob": "78eccfcc5a0d91580e4c75e930fc43a4ec0af470"
+  },
+  "issued_only_after_exact_independent_candidate_readback": true,
+  "shadow_proof": {
+    "path": "evidence/scheduler_qa/CFB_EXECUTION_20261106T030123Z_vz8rxk3_CLOSURE.json",
+    "blob": "e9aaf066bdd5844e5b1aee4b6680bde0049e36bc",
+    "invocation": "44088861-988c-8325-aaef-7ba861e523ca"
+  },
+  "production_scheduled_proof": "PENDING_NEXT_EXISTING_07:00_AMERICA_CHICAGO_RUN_2026-11-06",
+  "scope": "Monitor prompt only. Existing 07:00/13:00 CT cadence and four enabled production tasks preserved. No test rearm, publication, or model/wager changes."
+}
