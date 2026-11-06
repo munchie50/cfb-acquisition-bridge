@@ -1,0 +1,35 @@
+{
+  "schema": "CFB_PRODUCTION_TASK_CHANGE_TERMINAL_CANDIDATE_V1",
+  "observed_utc": "2026-11-06T03:08:33Z",
+  "task_id": "6ae766e788d881919726d0eeb44450dd",
+  "configuration_state": "APPLIED_AND_INDEPENDENTLY_READ_BACK",
+  "authority": "User directed installation on production Market Monitor, November 5 CT. Established routine v5.0, v5.1 A/C, v5.2 D/E/F.",
+  "failure": {
+    "path": "evidence/run_receipts/CFB_MARKET_MONITOR_AUTO11-20261105T185747724Z_RUN_CLOSURE.md",
+    "blob": "0bf2001fc22dd1352439942a6ff002026f16aa6f",
+    "first_boundary": "raw.githubusercontent.com DNS during helper transport, before helper execution"
+  },
+  "proof": {
+    "path": "evidence/scheduler_qa/CFB_EXECUTION_20261106T030123Z_vz8rxk3_CLOSURE.json",
+    "blob": "e9aaf066bdd5844e5b1aee4b6680bde0049e36bc",
+    "invocation": "44088861-988c-8325-aaef-7ba861e523ca"
+  },
+  "amendment": "\n\nPRODUCTION CHECKOUT-HELPER TRANSPORT — user-authorized November 5 CT. Apply this immediately after the required startup receipt/readback, as the first runtime preparation after authenticating the current main commit. Follow the connector-first helper path demonstrated by natural shadow 44088861-988c-8325-aaef-7ba861e523ca, evidence/scheduler_qa/CFB_EXECUTION_20261106T030123Z_vz8rxk3_CLOSURE.json @e9aaf066bdd5844e5b1aee4b6680bde0049e36bc. This ordering supersedes any historical instruction or example that downloads the helper using raw-content curl. Do not require or attempt raw.githubusercontent.com to obtain scripts/cfb_runtime_checkout.py.\n1. Via the authenticated GitHub connection, resolve fresh main commit and its tree entry for scripts/cfb_runtime_checkout.py. Retrieve complete helper bytes by exact Git blob SHA. Prefer structured base64 content, decode once with a binary writer into a new scratch file, and require exact nonzero tree byte count and Git blob hash before execution. Preserve every byte. On incomplete transport or mismatch, record HELPER_TRANSPORT_UNVERIFIED and do not execute it.\n2. Execute the unchanged verified helper once in a supported computation runtime against that exact fresh main commit, with a new scratch destination. Accept the worktree only when the actual command exits successfully and the helper result confirms supported full Git ancestry and exact pinned HEAD. Record helper transport verification, bootstrap outcome and pin/ancestry outcome separately. If Git itself fails with observed github.com DNS resolution, record the sanitized exact failure at the checkout stage and apply the existing bounded fallback; do not alter resolver settings or repeat the same checkout. If the helper only returns a generic failure, retain that observation and do not infer DNS. Connector reads alone do not prove computation. Continue independently feasible prospective stages and preserve exact terminal evidence as required.\n3. Use this runtime for the actual current production workload under the existing timing, research, review, publication and closure requirements. The retained shadow fixture is evidence for the transport and bootstrap procedure only. Do not add a mandatory replay, modify the 07:00/13:00 America/Chicago cadence, or change any other task. The next existing scheduled invocation must provide natural production proof.",
+  "rollback": {
+    "path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_PRODUCTION_EXECUTION_ADOPTION_20261105.json",
+    "blob": "41a76b49fb1d712c1482fe47c6095793853a133b",
+    "field": "proposed_prompt",
+    "exact_baseline_verified": true
+  },
+  "configuration_readback": {
+    "exactPrompt": true,
+    "originalPromptRestorable": true,
+    "otherMonitorFields": true,
+    "otherTaskDefinitions": true,
+    "enabledCount": 4,
+    "testExpired": true
+  },
+  "benefit": "Eliminates the raw-content DNS dependency for helper delivery and distinguishes transport from Git clone and worktree acceptance.",
+  "cost": "One authenticated helper blob read, byte verification and the existing single checkout.",
+  "remaining": "Next existing production Market Monitor cycle at November 6 07:00 America/Chicago must verify actual checkout, live work and closure. Git clone DNS and recurring reliability remain unproved."
+}
