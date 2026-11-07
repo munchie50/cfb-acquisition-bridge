@@ -1,0 +1,35 @@
+{
+  "schema": "CFB_RAPID_BOUNDARY_CLOSURE_V1",
+  "correlation_id": "CFB_BOUNDARY_20261107T191241Z_9og56mt",
+  "invocation_id": "1b8b084f-cb78-832e-bf3a-2e2fa0bee0cb",
+  "observed_at_utc": "2026-11-07T19:15:20Z",
+  "final_verdict": "BOUNDARY_PASS",
+  "issued_only_after_independent_exact_candidate_readback": true,
+  "candidate": {
+    "path": "evidence/scheduler_qa/CFB_BOUNDARY_20261107T191241Z_9og56mt_TERMINAL_CANDIDATE.json",
+    "blob": "f34c2ad07a01208e6029d803c49ca9b068fb2e2a",
+    "commit": "3c482dbe0a25e3875c2d1dd039bb0746b977f1f2",
+    "independent_exact_readback": true
+  },
+  "result": {
+    "path": "evidence/scheduler_qa/CFB_BOUNDARY_20261107T191241Z_9og56mt_RESULT.json",
+    "blob": "5d76fc234319997ec1a18a3402a7261f9edb0014",
+    "commit": "cd6abc4b2a6cacabc1c1c07c05545cb180a64c32",
+    "independent_exact_readback": true
+  },
+  "fresh_production_baseline": {
+    "path": "evidence/scheduler_qa/CFB_BOUNDARY_20261107T191241Z_9og56mt_BASELINE.json",
+    "blob": "5cd762e6905ba248bd2f2718ad5f00fb8ee425ab",
+    "commit": "0640b7adecdc4df2fcca305f3813dafe3828f95e",
+    "independent_exact_readback": true
+  },
+  "boundary": "Exact authenticated base64 helper -> supported same-cell binary writer -> preexecution exact3780bytes/git-hash-object -> one normal pinned checkout -> fullGit/51reviews:PASS",
+  "first_absent_artifact": null,
+  "observed_error": null,
+  "production_definitions": "All four exact prompt/schedule/enabled fields independently compared unchanged",
+  "qualification": "Scheduled runtime proof for this worker only; Monitor environment equivalence/provisioning repair/full production completion not certified. Prior afternoon failure preserved.",
+  "canonical_mutations": "NONE",
+  "task_workflow_infrastructure_mutations": "NONE",
+  "scientific_champion_wager_money_effect": "NONE",
+  "lifecycle": "Normal one-time expiry; no repetition/self-reschedule"
+}
