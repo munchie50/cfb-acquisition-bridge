@@ -1,0 +1,283 @@
+{
+  "schema": "CFB_SHADOW_TEST_REPAIR_RESULT_V1",
+  "correlation_id": "CFB_TEST_REPAIR_20261107T1736Z",
+  "recorded_at_utc": "2026-11-07T17:39:49.259Z",
+  "trigger": "USER_DIRECTED_MANUAL_DIAGNOSTIC",
+  "workload_verdict": "PASS_MANUAL_SHADOW_EXECUTION",
+  "repair_stage": "INSTALLED_READ_BACK_MANUALLY_DEMONSTRATED; NATURAL_SCHEDULED_DEMONSTRATION_PENDING",
+  "authority": {
+    "main": "265b71e8dade60126380e0877cce29e381b5bef4",
+    "index": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_260.md",
+    "index_blob": "0e9b802b390ba823e79428c3e04d84537c052c90",
+    "routine": "v5.0 + accepted v5.1 A/C + v5.2 D/E/F",
+    "proposal_path": "evidence/scheduler_qa/CFB_TEST_REPAIR_20261107T1736Z_PROPOSAL.json",
+    "proposal_blob": "cfcf5fe2a8419675b6692e0728ff53e9a746c862"
+  },
+  "startup": {
+    "path": "evidence/scheduler_qa/CFB_TEST_REPAIR_20261107T1736Z_STARTED.json",
+    "blob": "4be3b44494afb44be842eade116e957de68723cd",
+    "readback": true
+  },
+  "runtime": {
+    "helper_path": "scripts/cfb_runtime_checkout.py",
+    "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "bytes": 3780,
+    "transport": "Authenticated connector base64 response passed directly to exec_command in same functions.exec cell; wc/git hash-object checked before execution",
+    "helper_transport": "PASS",
+    "shell_exposed": true,
+    "normal_checkout_executions": 1,
+    "checkout_exit_code": 0,
+    "pinned_head": "265b71e8dade60126380e0877cce29e381b5bef4",
+    "full_history": true,
+    "bootstrap_result": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+    "worktree": "/tmp/tmp.GMWcm5h7EE/checkout",
+    "tracked_code_changes": false,
+    "untracked": "scripts/__pycache__/ only",
+    "command": "python3 /tmp/tmp.GMWcm5h7EE/helper.py --destination /tmp/tmp.GMWcm5h7EE/checkout --expected-head 265b71e8dade60126380e0877cce29e381b5bef4"
+  },
+  "archive": {
+    "artifact_id": 10897612260,
+    "sha256": "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf",
+    "connected_download_this_invocation": true
+  },
+  "compiler_command": "python3 qa/cfb_monitor_execution_smoke.py --first /tmp/tmp.GMWcm5h7EE/original.zip --output-dir /tmp/tmp.GMWcm5h7EE/smoke_output",
+  "compiler_exit_code": 0,
+  "retained_execution": {
+    "schema": "CFB_MONITOR_EXECUTION_SMOKE_V1",
+    "observed_start_utc": "2026-11-07T17:37:27.463682+00:00",
+    "head": "265b71e8dade60126380e0877cce29e381b5bef4",
+    "fixture": {
+      "cycle": "CFB_MARKET_MONITOR_20261105T012111Z",
+      "publication_utc": "2026-11-05T01:48:11.126910+00:00",
+      "source_utc": "2026-11-05T01:40:33.495311+00:00",
+      "prior_market": "841ec2f36afea32f290ca4d383e2a9b78e33d4b0",
+      "prior_decision": "0c389170f46c3bb373e6961a4f55416476f760e5",
+      "market": "87c455f1451b26587ac30489562285c0cfe0c9f5",
+      "decision": "822bccb7370a5dfbe22c1994bdf525457d17066e",
+      "sheet": "10d642137570317017934b8b1b85f8c0345f1f61",
+      "execution": "f6c3147100e21a4ea97dff8423fd70f06c45123c",
+      "scorecard": "65d212f05e56ab7bd89244c9f4bccff4763c0077",
+      "capture_path": "evidence/operational/CFB_CBS_WEEK10_TABLE_CAPTURE_20261105T014033Z.md",
+      "capture_blob": "48484afff21eda509a80bf26bd90b6c7c68df54f",
+      "lineage_path": "evidence/scheduler_qa/CFB_WEEK10_ORIGINAL_ANCESTRY_RECOVERY_20261104.json",
+      "lineage_blob": "47736c0fd9ff49545db7e46b508805658a1c7a92"
+    },
+    "stages": [
+      {
+        "stage": "AUTHENTIC_INPUTS",
+        "outcome": "PASS",
+        "games": 63
+      },
+      {
+        "stage": "REAL_COMPILER",
+        "outcome": "PASS",
+        "exact_saved_bytes": true
+      },
+      {
+        "stage": "REAL_RENDER",
+        "outcome": "PASS",
+        "exact_saved_bytes": true
+      },
+      {
+        "stage": "ORIGINAL_ARCHIVE_INVARIANT",
+        "outcome": "PASS",
+        "evidence": {
+          "verdict": "PASS_WEEK10_ORIGINAL_FROZEN_FIELDS_ONLY",
+          "games": 63,
+          "predictions": 55,
+          "exclusions": 8,
+          "numeric_fields": 165,
+          "scope": "original fields only, not market/review/publication/betting acceptance"
+        }
+      }
+    ],
+    "status": "PASS_RETAINED_MONITOR_EXECUTION_ONLY",
+    "scope": "Authentic retained compiler/render/frozen-field execution only; no fresh quote, live decision, production acceptance or recurring reliability.",
+    "observed_end_utc": "2026-11-07T17:37:36.608214+00:00"
+  },
+  "live_source_access": {
+    "observed_start_utc": "2026-11-07T17:37:42.039302+00:00",
+    "raw_bytes": 117425,
+    "raw_sha256": "b10b7f485c2e80cfedbbea37edde95293292bc36b69a02b65eef356599c884fa",
+    "event": "401856739",
+    "kickoff": "2026-11-08T00:45Z",
+    "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1,
+      "logos": [
+        {
+          "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
+          "rel": [
+            "light"
+          ]
+        },
+        {
+          "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
+          "rel": [
+            "dark"
+          ]
+        }
+      ]
+    },
+    "teams": [
+      [
+        "home",
+        "57",
+        "Florida Gators"
+      ],
+      [
+        "away",
+        "201",
+        "Oklahoma Sooners"
+      ]
+    ],
+    "offers": [
+      {
+        "market": "moneyline",
+        "side": "home",
+        "line": null,
+        "price": "-198",
+        "operator_link": "https://sportsbook.draftkings.com/event/34913630?outcomes=0ML86963519_1"
+      },
+      {
+        "market": "moneyline",
+        "side": "away",
+        "line": null,
+        "price": "+164",
+        "operator_link": "https://sportsbook.draftkings.com/event/34913630?outcomes=0ML86963519_3"
+      },
+      {
+        "market": "pointSpread",
+        "side": "home",
+        "line": "-4.5",
+        "price": "-108",
+        "operator_link": "https://sportsbook.draftkings.com/event/34913630?outcomes=0HC86963519N450_1"
+      },
+      {
+        "market": "pointSpread",
+        "side": "away",
+        "line": "+4.5",
+        "price": "-112",
+        "operator_link": "https://sportsbook.draftkings.com/event/34913630?outcomes=0HC86963519P450_3"
+      },
+      {
+        "market": "total",
+        "side": "over",
+        "line": "o45.5",
+        "price": "-105",
+        "operator_link": "https://sportsbook.draftkings.com/event/34913630?outcomes=0OU86963519O4550_1"
+      },
+      {
+        "market": "total",
+        "side": "under",
+        "line": "u45.5",
+        "price": "-115",
+        "operator_link": "https://sportsbook.draftkings.com/event/34913630?outcomes=0OU86963519U4550_3"
+      }
+    ],
+    "offer_updated_at": null,
+    "scope": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK; no execution or decision",
+    "raw_file_write_completed_utc": "2026-11-07T17:37:48.133621+00:00",
+    "metadata_verified_utc": "2026-11-07T17:38:35.275929+00:00"
+  },
+  "live_source_verdict": "PASS_EXACT_EVENT_TEAMS_PROVIDER_PREGAME_SIX_SELECTION_LINKS; retrieval-only not execution",
+  "test_repair": {
+    "id": "6aeb87dd781481919f9f190e69cb5422",
+    "changes": [
+      "Explicit tested connector-to-shell exact-byte handoff and capability distinction",
+      "Fresh before/after production isolation replaces stale November5 prompt baseline"
+    ],
+    "prompt_sha256": "9185d1cee314d59efd9298ac99df2eb7e2c35263a3a9500a7579e1ffe3e1b6b4",
+    "exact_prompt_readback": true,
+    "original_prompt_preserved_in_proposal": true,
+    "formatting_correction": "Before final readback normalized shell printf format to one literal backslash-n and umask 077; proposal preserved",
+    "schedule_unchanged": true,
+    "enabled_unchanged": true,
+    "disabled": true,
+    "amendment": "\n\nUSER-DIRECTED NOVEMBER7 TEST REPAIR — supersedes only conflicting runtime-handoff and historical isolation-baseline instructions above.\nCapability and transport: determine tools actually exposed in THIS invocation; distinguish orchestration from shell execution. When functions.exec and tools.exec_command are exposed, fetch helper with github_fetch_file(ref=<fresh authenticated main>, path=scripts/cfb_runtime_checkout.py, encoding=base64) and pass the COMPLETE structuredContent.content directly to exec_command in that SAME orchestration cell. Validate returned encoding=base64 and sha against the fresh independent tree entry; strip only base64 whitespace, require nonempty /^[A-Za-z0-9+/]+={0,2}$/ and length divisible by four; validate head/blob as 40 lowercase hex and positive integer size before shell construction. Use umask 077, a new mktemp directory, printf '%s\\n' '<validated base64>' | base64 -d > helper.py, then require wc -c and git hash-object equal the independently resolved size/blob BEFORE executing the unchanged helper ONCE with --destination NEW_DIR/checkout --expected-head AUTHENTICATED_HEAD. Inspect actual exit and returned head/full ancestry. Never print payload. If a supported shell is exposed individually rather than inside orchestration, use the complete structured response and the same exact binary writer/verification; lack of a nested name alone is not lack of every runtime. Do not invent a tool or execute mismatched bytes. If no supported binary writer is exposed, record TOOL_NOT_EXPOSED with the missing capability; a prompt cannot provision runtime tools. Preserve one-bootstrap and existing bounded error handling. This path passed user-directed manual shadow on November7, not scheduled reliability.\nProduction isolation baseline: November5 prompt snapshots are HISTORICAL comparison evidence. They are not current production configuration and must never be restored. Before this test's work, freshly peek all four current production task IDs and retain exact prompt/schedule/is_enabled/title plus actual observation clock and hashes in bounded QA evidence. Read back after work and require exact before/after equality and exactly four enabled recurring production tasks. Preserve current Monitor 07/13 CT schedule, sole publication ownership and the existing other task scopes. Report any already-present difference from historical snapshots separately; it is not a test-caused mutation. A concurrent change during the test is ISOLATION_UNVERIFIED until exact permitted read-only reconciliation, never silently accepted. No production-task modification is authorized. The isolated test's own prompt repair does not count as production mutation.\nKeep the existing disabled state and one-time schedule unless the user separately requests a scheduled follow-up. Manual diagnostic success cannot prove scheduled execution. Complete the same retained workload, separate live-source check and two-phase closure under existing isolation. No new scientific/market gate or historical status upgrade.\n"
+  },
+  "production_isolation": {
+    "comparisons": [
+      {
+        "id": "6ae76df2ece4819197f91fb10076dea7",
+        "equal": true
+      },
+      {
+        "id": "6ae766e788d881919726d0eeb44450dd",
+        "equal": true
+      },
+      {
+        "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+        "equal": true
+      },
+      {
+        "id": "6ae76df60e0c819182e2cfab1b83846a",
+        "equal": true
+      }
+    ],
+    "enabled_recurring_count": 4,
+    "baseline": [
+      {
+        "id": "6ae76df2ece4819197f91fb10076dea7",
+        "title": "CFB Engine Health Rebuilt",
+        "prompt_sha256": "ed853cea94c296869ad19fca993db174c8d60eb2819688a4e20fb40dc2642e57",
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260927T163000\nRRULE:FREQ=DAILY;BYHOUR=16;BYMINUTE=30;BYSECOND=0\nEND:VEVENT",
+        "is_enabled": true
+      },
+      {
+        "id": "6ae766e788d881919726d0eeb44450dd",
+        "title": "CFB Market Monitor Rebuilt",
+        "prompt_sha256": "460256237b589cd837de7668b2f3399b657a3d9e67fc873290d42fdba20e989a",
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260930T070000\nRRULE:FREQ=WEEKLY;BYDAY=SU,MO,TU,WE,TH,FR,SA;BYHOUR=7,13;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+        "is_enabled": true
+      },
+      {
+        "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+        "title": "CFB Weekly Engine QA Rebuilt",
+        "prompt_sha256": "52b6b45b3014a4f19eaff55fef0e4b39428a453332ecd79f93bf921cab6ed731",
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260927T090000\nRRULE:FREQ=WEEKLY;BYDAY=SA,SU;BYHOUR=9;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+        "is_enabled": true
+      },
+      {
+        "id": "6ae76df60e0c819182e2cfab1b83846a",
+        "title": "CFB Evening Availability Rebuilt",
+        "prompt_sha256": "41b56de9e006aa5d5805aa80f297604244162b5ac914e4729a6dcfd1c0a62684",
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260923T193000\nRRULE:FREQ=WEEKLY;BYDAY=WE,TH,FR;BYHOUR=19;BYMINUTE=30;BYSECOND=0\nEND:VEVENT",
+        "is_enabled": true
+      }
+    ],
+    "canonical_market_decisions_sheet_models_wagers_money": "UNCHANGED"
+  },
+  "hypotheses": [
+    {
+      "hypothesis": "Current shadow runtime cannot transfer helper bytes",
+      "result": "REJECTED_IN_THIS_MANUAL_WORKER",
+      "evidence": "Exact transfer verified and single checkout exit0"
+    },
+    {
+      "hypothesis": "Compiler/render/frozen fields broken",
+      "result": "REJECTED_FOR_AUTHENTIC_RETAINED_FIXTURE",
+      "evidence": "Real unchanged compiler/render/archive pass"
+    },
+    {
+      "hypothesis": "Historical test isolation baseline stale",
+      "result": "CONFIRMED",
+      "evidence": "Monitor and Health prompt mismatches; same schedule/enabled fields"
+    },
+    {
+      "hypothesis": "Production scheduled worker lacked exposed execution capability",
+      "result": "REPORTED_BY_ORIGINAL_RUN; PLATFORM_CAUSE_OPEN",
+      "evidence": "November7 original closure; manual proof does not reproduce worker or change tool provisioning"
+    }
+  ],
+  "benefit": "Removes stale isolation false failures; exact demonstrated handoff ready for next separately authorized test",
+  "cost": "One checkout, one retained execution, one separate live-source request; no added recurring work",
+  "remaining": [
+    "Scheduled runtime tool exposure/reliability remains unproved",
+    "Today's original Market Monitor remains RUN_INCOMPLETE",
+    "No new live six-market decisions or Hot Sheet from shadow"
+  ],
+  "next_action": "Use next existing production invocation for natural proof; isolated test remains disabled and requires separate user-directed scheduling to run naturally",
+  "scientific_champion_effect": "NONE"
+}
