@@ -1,0 +1,22 @@
+{
+  "schema": "CFB_MONITOR_BOUNDED_REPAIR_CLOSURE_V1",
+  "correlation_id": "CFB_MONITOR_REPAIR_20261107T190633705Z",
+  "recorded_at_utc": "2026-11-07T19:08:15.139Z",
+  "terminal": "RUN_INCOMPLETE",
+  "scope": "User-directed production task troubleshooting and bounded prompt correction",
+  "candidate": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_REPAIR_20261107T190633705Z_TERMINAL_CANDIDATE.json",
+    "blob": "4bc34668e9a28a81a8caed936acc0a40170b5f0c",
+    "exact_independent_readback": true
+  },
+  "closure_issued_only_after_candidate_readback": true,
+  "verified": [
+    "Production prompt exact independent readback",
+    "Four enabled recurring production tasks; schedules and other prompts unchanged",
+    "Manual helper exact-byte handoff and single genuine pinned checkout"
+  ],
+  "correction_stage": "PERSISTED_READ_BACK_MANUAL_RUNTIME_DEMONSTRATED; NATURAL_TASK_BEHAVIOR_PENDING",
+  "unresolved": "Scheduled worker shell provisioning not changed or repaired; full production decisions/publication not executed; original afternoon run remains incomplete",
+  "next_action": "Attach/restore a supported execution-capable environment for existing Monitor through exposed product configuration, then use next natural invocation for proof. No equivalent prompt-only runtime fix.",
+  "scientific_champion_wager_money_effect": "NONE"
+}
