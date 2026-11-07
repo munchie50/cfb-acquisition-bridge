@@ -1,0 +1,163 @@
+{
+  "schema": "CFB_MONITOR_BOUNDED_REPAIR_TERMINAL_CANDIDATE_V1",
+  "correlation_id": "CFB_MONITOR_REPAIR_20261107T190633705Z",
+  "recorded_at_utc": "2026-11-07T19:08:01.369Z",
+  "result": "RUN_INCOMPLETE",
+  "correction_stage": "PERSISTED_READ_BACK; natural behavior demonstration pending",
+  "startup": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_REPAIR_20261107T190633705Z_STARTED.json",
+    "blob": "8f6ab275a5ad6baec3e268626b93221db31b8ce6"
+  },
+  "proposal": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_REPAIR_20261107T190633705Z_PROPOSAL.json",
+    "blob": "a6bbee8baf94dc75fd446b981584a581e20cd4d1"
+  },
+  "production_task": {
+    "id": "6ae766e788d881919726d0eeb44450dd",
+    "exact_prompt_readback": true,
+    "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260930T070000\nRRULE:FREQ=WEEKLY;BYDAY=SU,MO,TU,WE,TH,FR,SA;BYHOUR=7,13;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+    "enabled": true,
+    "changes": [
+      "Continue independently executable useful work after shell block",
+      "Always candidate -> independent readback -> separate closure"
+    ]
+  },
+  "runtime": {
+    "execution_class": "THIS_MANUAL_WORKER",
+    "helper_transport": "PASS_EXACT_3780_BYTES_AND_GIT_BLOB",
+    "checkout_executions": 1,
+    "checkout_exit_code": 0,
+    "pinned_head": "cc2672574f26baab50956d29a738eebf0c72509a",
+    "immutable_review_count": 51,
+    "production_decisions_or_publication": "NOT_EXECUTED_NOT_REQUESTED_AS_LIVE_REVIEW"
+  },
+  "hypotheses": [
+    {
+      "hypothesis": "Helper bytes or Git ancestry prevent bootstrap in this worker",
+      "status": "REJECTED_FOR_THIS_MANUAL_WORKER",
+      "evidence": "Exact helper transfer, single checkout exit0 and 51 immutable reviews"
+    },
+    {
+      "hypothesis": "Afternoon scheduled worker has no shell",
+      "status": "REPORTED_BY_SCHEDULED_RUN; PROVISIONING_CAUSE_OPEN",
+      "evidence": "Matching run id/output and immutable e8079fa0feaa68b277ffc48b5f08b0d3e44ab458; cannot independently inspect past worker inventory"
+    },
+    {
+      "hypothesis": "Task failure containment and closure instructions need correction",
+      "status": "CONFIRMED_IN_OBSERVED_OUTPUT",
+      "evidence": "No independent research; tree has startup and closure but no candidate for exact correlation"
+    }
+  ],
+  "topology": [
+    {
+      "id": "6ae766e788d881919726d0eeb44450dd",
+      "title": "CFB Market Monitor Rebuilt",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ae76df2ece4819197f91fb10076dea7",
+      "title": "CFB Engine Health Rebuilt",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+      "title": "CFB Weekly Engine QA Rebuilt",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ae76df60e0c819182e2cfab1b83846a",
+      "title": "CFB Evening Availability Rebuilt",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6aeb87dd781481919f9f190e69cb5422",
+      "title": "CFB Monitor Production Test",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ae93a129ae881919fd1c1d5615397ee",
+      "title": "CFB Monday Recovery — One Time",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ab4296f9fec8191a8d35056b70d17cb",
+      "title": "CFB Evening Availability",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ab4296b60608191a7ebb238d4fa70bd",
+      "title": "CFB Engine Health",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ab4297470448191b96d8542283c1808",
+      "title": "CFB Weekly Engine QA",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ab42966c2e081919f956c941e6e0fff",
+      "title": "CFB Market Monitor",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ae52a1dd8cc8191847c0df286514e0e",
+      "title": "CFB Week 9 Top 10 Decision Rescue",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ae5221a22a081918e0cb3841a0cd0a2",
+      "title": "CFB Hot Sheet Recovery",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ae508f0cdb88191b519d3fc951687dd",
+      "title": "Temporary Friday CFB Completion",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ac4e807aaac8191b3255fae8ab82577",
+      "title": "CFB Scheduler Canary V7",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6abcfac5efe481919c4fd2a68223e9aa",
+      "title": "CFB Monitor Receipt Watch",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6abc5ec0814081918b8fac08e3eed129",
+      "title": "CFB Hot Sheet Refresh",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ab92f7a8d74819194696e20da23340b",
+      "title": "CFB Plumbing Test",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ab92c3936d081918bfb8dac57b20c4a",
+      "title": "CFB QA Repaired Rerun",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ab929c27920819198aad5007003cf25",
+      "title": "CFB QA Recovery Rerun",
+      "unchanged_except_authorized_monitor_prompt": true
+    },
+    {
+      "id": "6ab50942b8c88191870a546250607052",
+      "title": "CFB PBP Completion",
+      "unchanged_except_authorized_monitor_prompt": true
+    }
+  ],
+  "benefit": "Preserve useful independent progress and prevent one-phase terminal self-certification",
+  "cost": "One bounded manual checkout and two surgical prompt changes; no extra scheduled run",
+  "unresolved": [
+    "Scheduled worker shell provisioning is not repaired; automation update exposes no environment/tool provisioning arguments",
+    "Natural full production execution and delivery remain unproved",
+    "Prior scheduled run remains RUN_INCOMPLETE and Hot Sheet unchanged"
+  ],
+  "next_action": "Configure/restore execution-capable scheduled environment using supported task/environment controls, then verify the next existing natural Monitor invocation; do not repeat equivalent prompt handoff patches",
+  "scientific_champion_wager_money_effect": "NONE",
+  "applicable_surfaces": "QA repair evidence and existing Market Monitor prompt only"
+}
