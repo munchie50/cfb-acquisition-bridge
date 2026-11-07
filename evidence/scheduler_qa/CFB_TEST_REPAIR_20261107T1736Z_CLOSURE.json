@@ -1,0 +1,15 @@
+{
+  "schema": "CFB_SHADOW_REPAIR_CLOSURE_V1",
+  "correlation_id": "CFB_TEST_REPAIR_20261107T1736Z",
+  "recorded_at_utc": "2026-11-07T17:40:09.278Z",
+  "terminal": "PASS_MANUAL_SHADOW_EXECUTION",
+  "repair_state": "INSTALLED_READ_BACK_MANUALLY_DEMONSTRATED; NATURAL_PROOF_PENDING",
+  "candidate_path": "evidence/scheduler_qa/CFB_TEST_REPAIR_20261107T1736Z_TERMINAL_CANDIDATE.json",
+  "candidate_blob": "89651422ea2b30a97006ad78dbe890c4d3912fe8",
+  "closure_issued_only_after_independent_exact_candidate_readback": true,
+  "result_path": "evidence/scheduler_qa/CFB_TEST_REPAIR_20261107T1736Z_RESULT.json",
+  "result_blob": "5c76be78e49c0ef5d39df6b0f011abb84a0c29a3",
+  "applicable_surfaces": "QA result, proposal, test prompt and four production task before/after readbacks; no canonical mutation",
+  "remaining": "Natural scheduled-worker capability and recurring production reliability unproved; test remains disabled; failed original production cycle preserved",
+  "scientific_champion_effect": "NONE"
+}
