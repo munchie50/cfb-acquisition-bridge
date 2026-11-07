@@ -1,0 +1,10 @@
+# CFB Weekly QA Saturday — terminal candidate
+
+Correlation: CFB_WEEKLY_QA_SATURDAY_20261107T150455Z
+Trigger: scheduled. Invocation ID: UNAVAILABLE. Observed runtime local: 2026-11-07 09:04:55 CT, UTC derived 15:04:55Z.
+
+Terminal state: **RUN_INCOMPLETE** (current pre-kickoff certification not independently verified). Startup receipt `evidence/run_receipts/CFB_WEEKLY_QA_SATURDAY_20261107T150455Z_RUN_STARTED.md` blob `3c99d6d521703a7886b0e073c55b90369fb3bbf4`. Required QA report `evidence/audits/CFB_WEEKLY_SATURDAY_PREGAME_QA_20261107.md` blob `78923eaced2da9d25b93be0343d0dc5890c53bff`, persisted/read back exact expected text. Current recovery index v1.260 `0e9b802b390ba823e79428c3e04d84537c052c90`; canonical market `72d67a4cf9c52b281b76ec38170d5165ca75b7a0`, decision `1cae5d7eaab912f8a9e47b603fb588c05c70fdfc`, execution `f6c3147100e21a4ea97dff8423fd70f06c45123c`, scorecard `65d212f05e56ab7bd89244c9f4bccff4763c0077`. Decision and market full contents recovered by exact blob after large-file contents transport returned empty; no authority downgrade.
+
+Stages: STARTED PERSISTED/READ_BACK; canonical saved-source QA EXECUTED/VERIFIED; Saturday QA artifact PERSISTED/READ_BACK; **current-game-day qualified quotes/material/venue and natural full-slate decision certification NOT VERIFIED/NOT ACCEPTED**. First unresolved dependency: new independently qualified Saturday source/market/material evidence under Monitor ownership before each practical cutoff. Saved Nov6 21:44Z Hot Sheet is ~17h old at observed runtime. No fresh current offers invented. Historical Week9 scorecard and 8 user tickets already graded; actual sportsbook settlement remains open. Routine v6 HOLD, S2_K1 HOLD. No model, betting, cash, canonical market/decision, task or schedule mutation. No Firecrawl charges.
+
+Exact next executable step: Monitor's existing pregame natural capture/review and source-clock verification; Sunday independent outcomes/learning only after games final. Terminal candidate is not closure; separate closure follows successful candidate readback.
