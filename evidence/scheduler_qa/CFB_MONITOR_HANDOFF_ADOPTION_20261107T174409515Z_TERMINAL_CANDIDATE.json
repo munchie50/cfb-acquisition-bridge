@@ -1,0 +1,200 @@
+{
+  "schema": "CFB_PRODUCTION_MONITOR_AMENDMENT_TERMINAL_V1",
+  "correlation_id": "CFB_MONITOR_HANDOFF_ADOPTION_20261107T174409515Z",
+  "recorded_at_utc": "2026-11-07T17:44:41.674Z",
+  "authorization": "Current user explicitly directed production Market Monitor update",
+  "terminal": "PASS_CONFIGURATION_UPDATE_ONLY",
+  "repair_state": "INSTALLED_AND_INDEPENDENTLY_READ_BACK; NATURAL_PRODUCTION_PROOF_PENDING",
+  "target_id": "6ae766e788d881919726d0eeb44450dd",
+  "proposal_path": "evidence/scheduler_qa/CFB_MONITOR_HANDOFF_ADOPTION_20261107T174409515Z_PROPOSAL.json",
+  "proposal_blob": "19786123961fc179048b7c9251a732b149d52d66",
+  "change": "Replaced one capability/handoff paragraph with demonstrated direct execution and accurate missing-tool classification",
+  "demonstration": "Prior manual shadow proves exact-byte handoff, single checkout, retained compiler/render/archive and separate live source. No repeat replay required.",
+  "not_transferred": "Stale shadow isolation baselines and shadow replay workload",
+  "task_readback": {
+    "observed_utc": "2026-11-07T17:44:30.572Z",
+    "exact_target_prompt_readback": true,
+    "all_task_comparisons": [
+      {
+        "id": "6ae76df2ece4819197f91fb10076dea7",
+        "title": "CFB Engine Health Rebuilt",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ae766e788d881919726d0eeb44450dd",
+        "title": "CFB Market Monitor Rebuilt",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+        "title": "CFB Weekly Engine QA Rebuilt",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ae76df60e0c819182e2cfab1b83846a",
+        "title": "CFB Evening Availability Rebuilt",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6aeb87dd781481919f9f190e69cb5422",
+        "title": "CFB Monitor Production Test",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ae93a129ae881919fd1c1d5615397ee",
+        "title": "CFB Monday Recovery — One Time",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ab4296f9fec8191a8d35056b70d17cb",
+        "title": "CFB Evening Availability",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ab4296b60608191a7ebb238d4fa70bd",
+        "title": "CFB Engine Health",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ab4297470448191b96d8542283c1808",
+        "title": "CFB Weekly Engine QA",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ab42966c2e081919f956c941e6e0fff",
+        "title": "CFB Market Monitor",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ae52a1dd8cc8191847c0df286514e0e",
+        "title": "CFB Week 9 Top 10 Decision Rescue",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ae5221a22a081918e0cb3841a0cd0a2",
+        "title": "CFB Hot Sheet Recovery",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ae508f0cdb88191b519d3fc951687dd",
+        "title": "Temporary Friday CFB Completion",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ac4e807aaac8191b3255fae8ab82577",
+        "title": "CFB Scheduler Canary V7",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6abcfac5efe481919c4fd2a68223e9aa",
+        "title": "CFB Monitor Receipt Watch",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6abc5ec0814081918b8fac08e3eed129",
+        "title": "CFB Hot Sheet Refresh",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ab92f7a8d74819194696e20da23340b",
+        "title": "CFB Plumbing Test",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ab92c3936d081918bfb8dac57b20c4a",
+        "title": "CFB QA Repaired Rerun",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ab929c27920819198aad5007003cf25",
+        "title": "CFB QA Recovery Rerun",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      },
+      {
+        "id": "6ab50942b8c88191870a546250607052",
+        "title": "CFB PBP Completion",
+        "prompt_expected": true,
+        "schedule_unchanged": true,
+        "enabled_unchanged": true,
+        "title_unchanged": true
+      }
+    ],
+    "enabled_recurring_count": 4,
+    "enabled_titles": [
+      "CFB Market Monitor Rebuilt",
+      "CFB Engine Health Rebuilt",
+      "CFB Weekly Engine QA Rebuilt",
+      "CFB Evening Availability Rebuilt"
+    ],
+    "primary_hot_sheet_producer": "6ae766e788d881919726d0eeb44450dd",
+    "monitor_schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260930T070000\nRRULE:FREQ=WEEKLY;BYDAY=SU,MO,TU,WE,TH,FR,SA;BYHOUR=7,13;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+    "downstream_scopes_unchanged": true,
+    "test_disabled": true,
+    "open_task_slot_preserved": true
+  },
+  "next_natural_trigger": "2026-11-07 13:00 America/Chicago per unchanged existing daily07/13 schedule; API next_run_time unavailable",
+  "remaining": "Natural scheduled worker must actually execute runtime, current six-market authoring/publication and applicable closure; prompt installation is not tool provisioning or recurring reliability",
+  "historical_failure": "November7 morning original RUN_INCOMPLETE retained",
+  "scientific_champion_effect": "NONE",
+  "market_decision_execution_money_effect": "NONE",
+  "benefit": "Avoid falsely declaring every execution surface absent based on a deferred-tool search or missing nested alias",
+  "cost": "One prompt paragraph; no additional mandatory work or schedules",
+  "rollback": "Exact previous paragraph preserved in proposal; fresh read required before any later rollback"
+}
