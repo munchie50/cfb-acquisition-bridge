@@ -1,0 +1,32 @@
+# CFB Health terminal candidate
+correlation_id: CFB_HEALTH_20261107T222919152Z
+trigger: scheduled
+invocation_id: UNAVAILABLE
+observed_start_utc: 2026-11-07T22:29:19.152Z
+terminal: RUN_INCOMPLETE
+coverage: COVERAGE_UNVERIFIED
+startup_path: evidence/run_receipts/CFB_HEALTH_20261107T222919152Z_RUN_STARTED.md
+startup_commit: f0faee9d95e976cba7431fe5eedd263b2f48866b
+health_audit_path: evidence/scheduler_qa/CFB_HEALTH_20261107T222919152Z_AUDIT.md
+health_audit_blob: 0783f197ffee1dcfb0fe235176f2f34772bc2a3c
+health_audit_commit: d95a20f22350bd9afbd31c2eb601308a936560c1
+health_audit_exact_readback: PASS
+main_tree_sha: af1d66857e4c797a48e6b60ad654c8b2485ca20f
+main_tree_truncated: false
+recovery_index: evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_260.md
+recovery_index_blob: 0e9b802b390ba823e79428c3e04d84537c052c90
+canonical_large_blob_connector_REST_text_and_UTF8_size: PASS_TWO_OF_TWO
+independent_raw_SHA1_recomputation: UNVERIFIED
+market_monitor_nov7_0700: RUN_INCOMPLETE
+market_monitor_nov7_1300: RUN_INCOMPLETE
+manual_inline_nov7_1331: RUN_INCOMPLETE_WITH_REAL_RUNTIME_CAPTURE
+friday_evening: RUN_INCOMPLETE
+saturday_weekly_qa: RUN_INCOMPLETE
+production_tasks_enabled: FOUR
+ownership: SOLE_MONITOR_PRODUCER_VERIFIED
+historical_coverage: UNVERIFIED_CARRIED_FORWARD
+no_material_change: Canonical market/decision/scorecard/execution/HotSheet unchanged by Health, all independently read or exact blob recovered; no production writes required.
+first_health_tool_error: container HTTP DNS could not resolve api.github.com; connected REST succeeded.
+remaining: scheduled connector-to-shell transport, current six-market decisions, Hot Sheet publication/CI, historical coverage proof, book settlement, raw byte SHA-1 recomputation.
+scientific_champion_wager_money_effect: NONE
+scheduler_lifecycle_effect: NONE
