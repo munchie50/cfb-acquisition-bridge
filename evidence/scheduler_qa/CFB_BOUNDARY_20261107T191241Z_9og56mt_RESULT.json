@@ -1,0 +1,184 @@
+{
+  "schema": "CFB_RAPID_BOUNDARY_RESULT_V1",
+  "correlation_id": "CFB_BOUNDARY_20261107T191241Z_9og56mt",
+  "recorded_at_utc": "2026-11-07T19:14:26Z",
+  "verdict": "BOUNDARY_PASS",
+  "trigger": "NATURAL_ONE_TIME_SCHEDULED",
+  "invocation_id": "1b8b084f-cb78-832e-bf3a-2e2fa0bee0cb",
+  "startup": {
+    "path": "evidence/scheduler_qa/CFB_BOUNDARY_20261107T191241Z_9og56mt_STARTED.json",
+    "blob": "ee6f6b13b60a878a7a23fc0d1d05bddc42f3d5dd",
+    "independent_exact_readback": true,
+    "association_note": "Initial general task inventory omitted run details, so STARTED fields stayed null. Subsequent task-specific peek independently associated current run; original STARTED unchanged."
+  },
+  "timing": {
+    "actual_first_utc": "2026-11-07T19:12:41Z",
+    "clock_source": "clock__curr_time first tool operation",
+    "scheduled_for": "2026-11-07T19:13:59Z",
+    "recorded_started_at": "2026-11-07T19:12:22.331324Z",
+    "actual_delta_seconds": -78,
+    "recorded_delta_seconds": -96.669,
+    "latest_result_run_id": "44088861-988c-8325-aaef-7ba861e523ca",
+    "latest_result_is_current": false,
+    "waited_until_nominal_start": false
+  },
+  "capabilities": {
+    "connector_orchestration": {
+      "tool": "functions.exec",
+      "available": true,
+      "role": "Orchestrates connector/tool calls; alone does not prove OS execution."
+    },
+    "documented_shell": {
+      "tool": "tools.exec_command",
+      "exposed": true,
+      "actually_executed": true
+    },
+    "binary_writer": {
+      "method": "Python3 Path.write_bytes via tools.exec_command in SAME functions.exec cell as authenticated base64 fetch",
+      "actually_executed": true,
+      "preverification": {
+        "binary_write": "PASS",
+        "encoding": "base64",
+        "base64_syntax": "PASS",
+        "bytes": 3780,
+        "git_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+        "git_hash_object": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+        "complete_payload_verified_before_execution": true
+      }
+    },
+    "metadata": "Monitor environment_selection=inherited, environments=null. These fields do not identify actual past runtime or establish parity."
+  },
+  "authority": {
+    "pinned_main": "95018efdc588da21fa014d6b1593687807236b4a",
+    "recovery": {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_260.md",
+      "blob": "0e9b802b390ba823e79428c3e04d84537c052c90"
+    },
+    "routine": "Fresh v5.0+accepted v5.1A/C+v5.2D/E/F, persistence and two-phase closure read",
+    "bindings": {
+      "repair": {
+        "path": "evidence/scheduler_qa/CFB_MONITOR_REPAIR_20261107T190633705Z_CLOSURE.json",
+        "blob": "af5d7f4292cc674121daf23a7984d4c01dbc139f"
+      },
+      "index": {
+        "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_260.md",
+        "blob": "0e9b802b390ba823e79428c3e04d84537c052c90"
+      },
+      "v5": {
+        "path": "evidence/CFB_ENGINE_ROUTINE_V5_PRODUCTION_PROMOTION_v1_103.md",
+        "blob": "0a1e87375e83d46662943f061ec8a11463b64c17"
+      },
+      "a": {
+        "path": "evidence/CFB_ROUTINE_V5_1_SELECTIVE_PRODUCTION_AMENDMENT_20261030.md",
+        "blob": "066174f7333d2925d6605b2cbdd0a38b1ec3eb17"
+      },
+      "b": {
+        "path": "evidence/CFB_ROUTINE_V5_2_SELECTIVE_DIAGNOSTIC_AMENDMENT_20261031.md",
+        "blob": "92dfd2fd569601e6f42504022c6a7b8935f19e7b"
+      },
+      "persistence": {
+        "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
+        "blob": "78e3f2e12cbcf8213f87c28a580f39c0aabff8e0"
+      },
+      "closure": {
+        "path": "evidence/CFB_TERMINAL_RUN_RECEIPT_CLOSURE_CONTRACT_2026-10-05.md",
+        "blob": "501cda05d80229402a485493f10b1a4bbb76d3b8"
+      }
+    }
+  },
+  "helper": {
+    "path": "scripts/cfb_runtime_checkout.py",
+    "encoding": "base64",
+    "authenticated_tree_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "expected_bytes": 3780,
+    "transport": "Complete structured base64 response, strict syntax/canonical validation, binary write, exact count/SHA1/git hash-object before execution; no payload reconstruction or editor transport",
+    "preexecution_verified": true
+  },
+  "checkout": {
+    "command": "GIT_TRACE2_EVENT=/workspace/scratch/13df5b80aaf6/boundary_20261107T191241Z/git-trace.jsonl python3 cfb_runtime_checkout.py --destination /workspace/scratch/13df5b80aaf6/boundary_20261107T191241Z/checkout --expected-head 95018efdc588da21fa014d6b1593687807236b4a > runtime.json",
+    "execution_count": 1,
+    "exit_code": 0,
+    "result": {
+      "status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+      "head": "95018efdc588da21fa014d6b1593687807236b4a",
+      "full_history": true,
+      "immutable_review_count": 51,
+      "python": "3.12.14",
+      "runtime_result_sha256": "4667d057cbd0948555962b6f180767d1d18cc21ff2bd7941426be6f9bb5628be",
+      "helper_matches_real_checkout": true
+    },
+    "pinned_head_verified": true,
+    "full_ancestry_verified": true,
+    "corrective_second_checkout": false
+  },
+  "comparisons": {
+    "manual": {
+      "evidence": "evidence/scheduler_qa/CFB_MONITOR_REPAIR_20261107T190633705Z_TERMINAL_CANDIDATE.json",
+      "blob": "4bc34668e9a28a81a8caed936acc0a40170b5f0c",
+      "classification": "MANUAL_RUNTIME_DEMONSTRATED / NATURAL_TASK_BEHAVIOR_PENDING",
+      "manual_checkout_exit_code": 0,
+      "manual_immutable_reviews": 51,
+      "comparison": "Current scheduled worker also exposes shell/binarywriter and passes exact single checkout51reviews. This does not prove actual Monitor environment equivalence."
+    },
+    "afternoon": {
+      "invocation_id": "be77cec8-21f4-8320-b297-dec48f7fb269",
+      "matching_monitor_last_run": true,
+      "closure": "evidence/run_receipts/CFBMM-SCHED11-20261107T185830694Z_RUN_CLOSURE.md",
+      "blob": "e8079fa0feaa68b277ffc48b5f08b0d3e44ab458",
+      "classification": "RUN_INCOMPLETE / TOOL_NOT_EXPOSED_IN_CONNECTOR_ORCHESTRATION",
+      "reported_first_absent_artifact": "Byte-preserving connector-to-container binary handoff; checkout not executed",
+      "historical_inventory_independently_observable": false,
+      "comparison": "That run reported no exec_command inside orchestration. This worker actually exposes and executes it in same-cell base64 handoff. Past cause remains provisioning/capability OPEN, not inferred DNS or permission denial."
+    }
+  },
+  "production_isolation": {
+    "fresh_exact_definitions": {
+      "path": "evidence/scheduler_qa/CFB_BOUNDARY_20261107T191241Z_9og56mt_BASELINE.json",
+      "blob": "5cd762e6905ba248bd2f2718ad5f00fb8ee425ab",
+      "commit": "0640b7adecdc4df2fcca305f3813dafe3828f95e",
+      "independent_exact_readback": true
+    },
+    "postwork_checks": [
+      {
+        "id": "6ae766e788d881919726d0eeb44450dd",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76df2ece4819197f91fb10076dea7",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76df60e0c819182e2cfab1b83846a",
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      }
+    ],
+    "all_four_unchanged": true,
+    "no_restoration_or_task_mutation": true
+  },
+  "first_absent_artifact": null,
+  "exact_observed_error": null,
+  "next_action": "For the actual existing Monitor, confirm documented shell and binary-writer exposure in its own natural worker or configure supported execution-capable environment through authorized product controls. This boundary pass does not itself configure or repair Monitor.",
+  "scope": {
+    "stop_at_checkout": true,
+    "compiler_regression_live_source_publication": "NOT_RUN_AS_REQUIRED",
+    "canonical_hot_sheet_index_writes": "NONE",
+    "scientific_champion_wager_money_effect": "NONE",
+    "tool_install_network_resolver_changes": "NONE",
+    "tasks_workflows_infrastructure_changes": "NONE",
+    "history": "All prior failed/incomplete records preserved",
+    "one_off_lifecycle": "Normal expiry; no repeat/self-reschedule/run_now"
+  },
+  "closure": "Candidate/readback followed by separate closure required; this RESULT alone does not self-certify terminal persistence."
+}
