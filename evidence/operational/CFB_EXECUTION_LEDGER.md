@@ -266,3 +266,25 @@ Friday batch: `0 WIN / 2 LOSS / 0 PUSH`, `$8.00` graded stake, `$0.00` result re
 | CFB_OCT31-08 | 401856847 | IOWA_STATE_SPREAD | 9.5 | -105 | $3.00 | 49-51 | WIN | UNVERIFIED |
 
 **Batch:** 8 distinct confirmed actual tickets; 5 score-graded WIN, 3 LOSS, 0 PUSH; $30.00 stake. Hypothetical odds-derived full-game return $40.40 and net $10.40 **only if settled at listed odds without adjustments**; not a printed sportsbook payout, confirmed settlement, profit booking, or voucher change. Earlier 32 established tickets/$123.50 cumulative stake + these eight/$30.00 = **40 recorded distinct actual tickets / $153.50 cumulative historical stakes** at this inventory boundary; historical totals are not a current cash balance or complete lifetime record beyond established evidence. The canonical money ledger already contains the October31 user-confirmed snapshot **$25.30 + $13.75 vouchers + $30.00 open tickets = $69.05 holdings at cost**, not another deposit/withdrawal and not recalculated from the final-score grades. Original image identifiers, exact issue clocks, sportsbook settlement, cash collection, production versus $20 sandbox, and any unrecorded intervening movements remain UNVERIFIED. Do not rebook the $20 funding or infer a $25.30 withdrawal. Frozen model predictions, pregame recommendations, market/decision state and bankroll allocation unchanged.
+
+
+## November 6 issued tickets — user-confirmed weekend intake November 7
+
+Source: ten original user-uploaded Caesars Sportsbook / Harrah's Columbus issued ticket photographs in this conversation. ACTUAL_REAL_MONEY. Ten distinct private ticket serials visually checked; no raw cashable identifiers copied to repository. Fresh canonical ledger contains no November6 intake; prior40 tickets issued on earlier dates. No duplicate added.
+
+| Execution ID | Game | Selection | Odds | Stake USD | Issued November 6 as printed | Receipt event date/time | Printed max win | Printed max payout |
+|---|---|---|---:|---:|---|---|---:|---:|
+| CFB_NOV06-01 | Tulsa at Tulane | Over 50 | -110 | $5.00 | 17:59 | 2026-11-07 11:10 | $4.55 | $9.55 |
+| CFB_NOV06-02 | Texas at Missouri | Over 42.5 | -106 | $5.00 | 17:58 | 2026-11-07 11:10 | $4.70 | $9.70 |
+| CFB_NOV06-03 | Iowa State at Baylor | Baylor -10 | -105 | $5.00 | 18:08 | 2026-11-07 11:05 | $4.75 | $9.75 |
+| CFB_NOV06-04 | Oregon at Ohio State | Over 45 | -110 | $5.00 | 18:00 | 2026-11-07 14:40 | $4.55 | $9.55 |
+| CFB_NOV06-05 | BYU at Utah | Utah -4.5 | -106 | $5.00 | 17:59 | 2026-11-07 11:10 | $4.70 | $9.70 |
+| CFB_NOV06-06 | Colorado at Arizona State | Arizona State -3.5 | -104 | $5.00 | 18:02 | 2026-11-07 18:40 | $4.80 | $9.80 |
+| CFB_NOV06-07 | Missouri State at Florida International | Missouri State +4.5 | -109 | $5.00 | 18:09 | 2026-11-07 15:05 | $4.60 | $9.60 |
+| CFB_NOV06-08 | Alabama at LSU | LSU -6 | -113 | $5.00 | 18:02 | 2026-11-07 14:40 | $4.40 | $9.40 |
+| CFB_NOV06-09 | Illinois vs Nebraska | Nebraska -4 | -110 | $5.00 | 18:05 | 2026-11-06 19:08 | $4.55 | $9.55 |
+| CFB_NOV06-10 | Virginia Tech at SMU | Virginia Tech +6 | -113 | $5.00 | 18:04 | 2026-11-06 18:05 | $4.40 | $9.40 |
+
+Batch: 10 straight tickets, $50.00 stake, $46.00 printed maximum win, $96.00 printed maximum payout if all win. Prior40/$153.50 plus10/$50.00 =50 recorded actual tickets/$203.50 cumulative historical stakes; this is inventory, not current balance or complete lifetime history. Printed amounts retained without replacing cents with theoretical odds arithmetic.
+
+Budget production/sandbox UNASSIGNED; receipt timezone UNSPECIFIED; no live labels. Printed issue precedes printed event for all ten (VT by one printed minute); independent actual kickoff/pregame chronology UNVERIFIED. Results, book settlement, redemption, paid returns, CLV, frozen-reference and causal recommendation attribution UNVERIFIED. Intake does not certify these as engine recommendations. No new deposit, withdrawal, current holdings balance or sportsbook payout inferred. Screenshots are downstream execution evidence only, excluded from model/training/calibration and retrospective decision changes. Original image provenance is retained in the intake receipt.
