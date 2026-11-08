@@ -143,3 +143,10 @@ User explicitly instructed an additional $20.00 contribution, separate from the 
 ```
 
 Confirmed explicit funding transactions recorded to date: two totaling $40.00. This is the sum of these recorded contributions, not total lifetime investment or current bankroll. Earlier holdings snapshots remain historical snapshots and are not rebooked.
+
+
+## November 7 prospective bankroll reconciliation — estimate only
+
+Run CFB_PRODUCTION_READINESS_20261108T043547Z. Direct user outcome statement establishes reported weekend 8-3 ticket record, not collection/payment. Eleven existing tickets cost $55.00; printed payouts applied to reported winners give $102.90 result return and +$47.90 result net. This is a reconciliation note, not another funding record, cash credit, wager debit, payout confirmation or holdings snapshot.
+
+Estimated holdings: October31 user-confirmed $69.05 at-cost snapshot + Week9 hypothetical odds-derived $10.40 net + separately posted November7 $20.00 new funding + November6-ticket user-reported $47.90 net = $147.35. Assumptions: prior wagers settled as calculated, current tickets settle at their printed payouts, no other deposits/withdrawals/adjustments. Week9 $40.40 return is theoretical odds arithmetic, not recovered printed payouts or paid cash. Actual cash/voucher/uncashed-ticket holdings remain NOT_RECONCILED; $147.35 is not a verified cash balance. Do not add $102.90 again on top of the $47.90 net or re-add the original funding included in the October31 snapshot. Ticket redemption later is a holdings transfer, not profit/funding again. No sandbox allocation or ceiling change.
