@@ -1,0 +1,93 @@
+{
+  "schema": "CFB_CURRENT_CANONICAL_RAW_INTEGRITY_QA_V1",
+  "boundary": "2026-11-08T16:43:18Z manual priority continuation",
+  "authority": "Productionv5+acceptedv5.1A/C+v5.2D/E/F;currentrecoveryv1.264",
+  "head": "13a5362195fdd0f63e3b107178060c4919f262dd",
+  "checks": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "sha": "72d67a4cf9c52b281b76ec38170d5165ca75b7a0",
+      "size": 4740140,
+      "observed_bytes": 4740140,
+      "observed_git_blob": "72d67a4cf9c52b281b76ec38170d5165ca75b7a0",
+      "sha256": "81e390e19e5726f908b36442db0782f453b16d2be2ed5360d83ee5dbe6bec65e",
+      "request_start": "2026-11-08T16:43:42.240028+00:00",
+      "response_complete": "2026-11-08T16:43:47.906508+00:00",
+      "verdict": "PASS"
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "sha": "1cae5d7eaab912f8a9e47b603fb588c05c70fdfc",
+      "size": 2701355,
+      "observed_bytes": 2701355,
+      "observed_git_blob": "1cae5d7eaab912f8a9e47b603fb588c05c70fdfc",
+      "sha256": "a51a518ceba95837c8db1eca94e55a35e5470198f82846dd784f4aec6c2b8f70",
+      "request_start": "2026-11-08T16:43:42.241061+00:00",
+      "response_complete": "2026-11-08T16:43:47.916579+00:00",
+      "verdict": "PASS"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "sha": "2c0fbcb0314839deb60823e48adbbd24d5423147",
+      "size": 46312,
+      "observed_bytes": 46312,
+      "observed_git_blob": "2c0fbcb0314839deb60823e48adbbd24d5423147",
+      "sha256": "4ff5966300dd1eee2a434dc80ec36fe33799e3a8078dc25837fbd2ad0bbde107",
+      "request_start": "2026-11-08T16:43:42.241679+00:00",
+      "response_complete": "2026-11-08T16:43:47.690695+00:00",
+      "verdict": "PASS"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "sha": "851efb1dc33e6efb044a5c3bdbd358cf28216f2e",
+      "size": 87860,
+      "observed_bytes": 87860,
+      "observed_git_blob": "851efb1dc33e6efb044a5c3bdbd358cf28216f2e",
+      "sha256": "e4bcbca44cf2b9d4be34838789d916f46f37449fdedfa10ad38923c90d20ddf7",
+      "request_start": "2026-11-08T16:43:47.690907+00:00",
+      "response_complete": "2026-11-08T16:43:50.978224+00:00",
+      "verdict": "PASS"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_264.md",
+      "sha": "365d73c66cdbfbd5bc31e95903f69eebe1dbc5e1",
+      "size": 117131,
+      "observed_bytes": 117131,
+      "observed_git_blob": "365d73c66cdbfbd5bc31e95903f69eebe1dbc5e1",
+      "sha256": "8200043cc79edca391c9fd70ebf1d4baa2fcb0bcb5fe47e02b1617b72cc8fe17",
+      "request_start": "2026-11-08T16:43:47.932278+00:00",
+      "response_complete": "2026-11-08T16:43:50.970898+00:00",
+      "verdict": "PASS"
+    },
+    {
+      "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-11-08_R2.md",
+      "sha": "c2d095a4766be648a33cab11d9fb77c0741d4030",
+      "size": 6049,
+      "observed_bytes": 6049,
+      "observed_git_blob": "c2d095a4766be648a33cab11d9fb77c0741d4030",
+      "sha256": "9d5c3c1ff3a005d80be0c800c96abcbd25a668b1884262a823557c64c5d01c7c",
+      "request_start": "2026-11-08T16:43:47.933231+00:00",
+      "response_complete": "2026-11-08T16:43:50.907292+00:00",
+      "verdict": "PASS"
+    }
+  ],
+  "scope": "Exact pinned raw bytes vs independently connected tree; integrity only, not semantic or historical coverage",
+  "prior_gap": "Nov7Health proved connector/REST equality and lengths but could not independently recompute rawGitblobSHA1 due unavailable byte-transfer/DNS path.",
+  "disposition": "CURRENT_SIX_SURFACE_RAW_BYTE_INTEGRITY_DEMONSTRATED;not retrospective HealthRUN_PASS or full historical auditcoverage",
+  "interpretation": "Allsixexact pinnedrawfiles matched independently recovered Git tree sizes/blobs. Market4,740,140bytes anddecision2,701,355bytes fully verified;nonemptyfilesnotlost. CurrentrawHTTPaccessworked inthismanualruntime;noresolver/securitychange. DoesnotestablishEveningorscheduledMonitorconnectivity.",
+  "monitor": {
+    "latest_invocation": "3781dcdc-a300-8320-99cf-057774376099",
+    "status": "HistoricalRUN_INCOMPLETE",
+    "narrow_conflict_correction": "Installed/readback;existing13:00CTnaturalproofpending",
+    "repeat_equivalent_shadow": "NOT_RUN"
+  },
+  "remaining": [
+    "ActualscheduledMonitorcapability/transferworkloadproof",
+    "EveningDNS/connectivityandtypedhandoffinnaturalworker",
+    "Healthfullhistoricalcyclecoveragewatermark;currenthashproofdoesnotcertifyhistory",
+    "Booksettlement/currentcashandscientificerrorcausefollowthrough"
+  ],
+  "effects": "Read-only;no task/cadence/model/Champion/wager/money/canonical mutation.",
+  "next": "ExistingHealth16:30CTmayreuseexactblob-boundproofifcanonicalidentitiesunchanged;changedblobsrequirefreshverification. ExistingMonitor13:00CTmustdemonstrateactualproductionruntime.",
+  "closure": "Independentcandidatefetchthen separateclosure required"
+}
