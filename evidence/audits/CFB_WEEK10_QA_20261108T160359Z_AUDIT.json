@@ -1,0 +1,103 @@
+{
+  "schema": "CFB_MANUAL_QA_AUDIT_V1",
+  "correlation_id": "CFB_WEEK10_QA_20261108T160359Z",
+  "state": "OUTCOME_AND_LEARNING_VERIFIED_INTEGRATION_CI_PENDING",
+  "scope": "Manual QA and scheduled-test reconciliation; not live Monitor publication",
+  "runtime": {
+    "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "bytes": 3780,
+    "preexecution_hash_verified": true,
+    "checkout_executions": 1,
+    "exit_code": 0,
+    "pinned_head": "637409099c0715ef8e9ad8a7ec771d7782f4131e",
+    "full_ancestry": true
+  },
+  "outcome": {
+    "path": "evidence/operational/CFB_WEEK10_OFFICIAL_OUTCOME_QA_20261108T160449Z.json",
+    "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f",
+    "independent_exact_readback": true,
+    "newly_qualified": 17,
+    "total_official": 63,
+    "modeled": 55,
+    "exclusions": 8,
+    "original_structures_exact": 63,
+    "numeric_strings_preserved": 165,
+    "decimal_metrics": {
+      "n": 55,
+      "margin_direction_correct": 27,
+      "probability_classifier_correct": 30,
+      "margin_mae": "17.23919997835150850618181818",
+      "total_mae": "15.19184934836414950909090909",
+      "home_win_brier": "0.2698566683962613094096467027"
+    },
+    "independent_float_agreement": "within1e-12",
+    "source_routes": "15direct official HTML captures with clocks/hash;2web-retrieved official pages, direct404 and raw digest unavailable",
+    "raw_archive": "NOT_DURABLY_SAVED; metadata/derived facts retained"
+  },
+  "canonical_scorecard": {
+    "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+    "baseline_blob": "a40d38541509f0a4bd58ea6493f4b0bb974f87c2",
+    "blob": "851efb1dc33e6efb044a5c3bdbd358cf28216f2e",
+    "append_only_preserved_prefix": true,
+    "independent_exact_readback": true
+  },
+  "weekly": {
+    "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-11-08_R2.md",
+    "blob": "c2d095a4766be648a33cab11d9fb77c0741d4030",
+    "independent_exact_readback": true,
+    "prior_r1_preserved": true
+  },
+  "recovery": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_264.md",
+    "blob": "365d73c66cdbfbd5bc31e95903f69eebe1dbc5e1",
+    "commit": "73f6cb13f112cf76b0ae38843bd130eb4e36a3a1",
+    "prewrite_consumer_preflight": "PASS416pointers",
+    "postreadback_consumer_preflight": "PASS416pointers",
+    "navigation_reader_exit": 0,
+    "independent_exact_readback": true,
+    "local_proposal_error": "Initial regex returned no match; no index mutation attempted. Recovered exact fencedJSON by delimiters and unchanged full preflight passed."
+  },
+  "scheduled_test": {
+    "invocation": "0ed6057b-8c70-8327-9230-825d1d104f2e",
+    "verdict": "BOUNDARY_PASS",
+    "result_blob": "9c0687a2a2884b6ace78ce3112b6f04da2746047",
+    "closure_blob": "19eab6fb173f53d27e824da5d108caf67345dd38",
+    "candidate_blob": "e29e081998f15291ae10f7393eada214b97f5f1d",
+    "independent_readback": true,
+    "checkout_executions": 1,
+    "immutable_reviews": 51,
+    "production_parity": "UNPROVED",
+    "lifecycle": "expired normally; four production definitions unchanged"
+  },
+  "integration_ci": {
+    "id": 42498305011,
+    "head": "73f6cb13f112cf76b0ae38843bd130eb4e36a3a1",
+    "status_at_audit": "IN_PROGRESS31of45stepscomplete",
+    "acceptance": "PENDING; terminal candidate must record actual final result"
+  },
+  "budget": {
+    "remainingCredits": 238,
+    "planCredits": 1000,
+    "billingPeriodStart": "2026-10-27T17:16:35.203Z",
+    "billingPeriodEnd": "2026-11-27T17:16:35.203Z",
+    "cfb_released_cap": 387,
+    "account_usage": 762,
+    "released_allowance": 0,
+    "firecrawl_paid_requests": 0
+  },
+  "remaining": [
+    "Actual Monitor scheduled worker provisioning/capability-detection root cause; existing prompt already has supported alternatives",
+    "Evening runtime connectivity and typed handoff",
+    "Health exact historical coverage watermark/raw-hash proof",
+    "Actual sportsbook settlement/holdings and production/sandbox classification",
+    "Scientific causal investigation of extreme prediction errors, no retuning or promotion"
+  ],
+  "effects": {
+    "Champion": "NONE",
+    "predictions": "UNCHANGED",
+    "market_decisions_sheet": "UNCHANGED",
+    "wagers_money": "UNCHANGED",
+    "tasks_schedules": "UNCHANGED"
+  },
+  "closure": "Candidate/readback then separate closure required; broader QA remains RUN_INCOMPLETE"
+}
