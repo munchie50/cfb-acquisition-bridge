@@ -1,0 +1,14 @@
+# Health terminal candidate
+cycle_id: CFB_HEALTH_20261108T223043419Z
+result: RUN_INCOMPLETE
+coverage: COVERAGE_UNVERIFIED
+reason: independent REST tree/blob hash proof and live automation topology unavailable; current Nov8 producer/QA closures unproved
+startup_path: evidence/run_receipts/CFB_HEALTH_20261108T223043419Z_RUN_STARTED.md
+startup_blob: a607a773c6e64209c99b09707e6a92a72dd7ac95
+audit_path: evidence/scheduler_qa/CFB_HEALTH_20261108T223043419Z_AUDIT.md
+audit_blob: d9938383e9530970c065e28db1a172ff6efcc698
+audit_readback: true
+operational_mutation: NO_MATERIAL_CHANGE
+historical_gaps: RETAINED
+coverage_boundary_advanced: false
+terminal_closure: PENDING_SEPARATE_READBACK
