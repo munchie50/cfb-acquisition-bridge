@@ -1,0 +1,132 @@
+{
+  "schema": "CFB_PRODUCTION_READINESS_AUDIT_V1",
+  "run_id": "CFB_PRODUCTION_READINESS_20261108T043547Z",
+  "observed_at_utc": "2026-11-08T04:42:18Z",
+  "authority": {
+    "routine": "v5.0+acceptedv5.1A/C+v5.2D/E/F",
+    "recovery_predecessor": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_260.md",
+    "recovery_current": {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_261.md",
+      "blob": "aa0c6ce963db3f1819352a496678922eba705ec0"
+    },
+    "persistence": "78e3f2e12cbcf8213f87c28a580f39c0aabff8e0",
+    "closure": "501cda05d80229402a485493f10b1a4bbb76d3b8"
+  },
+  "production": {
+    "last_actual_run": "be77cec8-21f4-8320-b297-dec48f7fb269",
+    "scheduled_for": "2026-11-07T19:00:00Z",
+    "recorded_started_at": "2026-11-07T18:58:23.508737Z",
+    "engine_state": "RUN_INCOMPLETE",
+    "first_reported_block": "connector-to-binary execution handoff TOOL_NOT_EXPOSED",
+    "task_last_update": "2026-11-07T19:41:07.686894+00:00",
+    "newer_actual_result_observed": false,
+    "judgment": "Latest actual invocation predates installed corrections; no new failure after those corrections proved.",
+    "unresolved": "Actual scheduled Monitor worker capability and complete source-analysis-publication path, then independent closure.",
+    "available_management_boundary": "Exposed automation update schema has no execution environment field; inherited/null metadata is not proof of the worker's cause. No new equivalent prompt patch or diagnostic replay.",
+    "next_natural_trigger": "Existing Sunday November8 07:00 America/Chicago Monitor recurrence; no schedule change or extra run requested."
+  },
+  "independent_work": {
+    "defect": "Current authorized second20 funding record rejected by original-only funding guard with unsupported funding schema",
+    "source": "Direct user additional20 instruction, immutable source commit c914b1192f27f0328afb5f17d70422b676c5bf9e",
+    "correction": "Qualify only exact additional20 identity/schema/source/clock/amount, preserve unchanged original validation and no-new-risk controls.",
+    "tests": {
+      "passed": 39,
+      "coverage": "Original historical boundary plus duplicate/sourcekey/source/amount/time/risk/missing-extra/full-current-money-digest checks"
+    },
+    "scripts": {
+      "scripts/cfb_money_ledger_guard.py": "7d31929408d9e6f06355bfb92711e1dd4acceb54",
+      "scripts/test_cfb_money_ledger_guard.py": "9a974f44815b8ea22c5dcdae2d2a4f7e9a0ec980"
+    },
+    "boundaries": "Additional arbitrary funding remains rejected; user confirmation is bookkeeping, not bank transfer or sandbox allocation."
+  },
+  "canonical": {
+    "execution": {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "7f5e645d6905a7d0bc1354fa5cb43d3a2bb8aa6f",
+      "meaning": "11 existing tickets user-reported8WIN3LOSS,55stake,102.90printed-resultreturn,+47.90net; no independent official-score/paid-cash claim"
+    },
+    "money": {
+      "path": "evidence/operational/CFB_MONEY_LEDGER.md",
+      "blob": "0f6804969e91d32c41e545b0c8cd718e34033d56",
+      "meaning": "Additional20postedonce;147.35conditionalestimate;actualholdingsNOT_RECONCILED"
+    },
+    "register": {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "blob": "19c434c23cfde56eafd534746b6cfae06e1ef30c"
+    }
+  },
+  "verification": {
+    "canonical_full_readbacks": "EXACT",
+    "planned_append_metadata": [
+      {
+        "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+        "prior_git_blob": "d24ccccd3143efe2067c3c3e91eeb3b9396c5a3c",
+        "proposed_git_blob": "7f5e645d6905a7d0bc1354fa5cb43d3a2bb8aa6f",
+        "proposal_sha256": "5c556ff2d29212417e099037788a63fbff41bf75b44cab09501d2b56033eaa8c",
+        "delta_sha256": "ca9f4c45a8572a7ab9bc70f969da2b84310e6b2b7ef9ce3114c5c8c3456aa7e8",
+        "bytes": 43825,
+        "prior_bytes_preserved": true
+      },
+      {
+        "path": "evidence/operational/CFB_MONEY_LEDGER.md",
+        "prior_git_blob": "114c282ae91bc28359dd58a5cda2df08ca91e543",
+        "proposed_git_blob": "0f6804969e91d32c41e545b0c8cd718e34033d56",
+        "proposal_sha256": "0359c2aec13a797692734255233532520f98f90fcefa3d002524b61ec418d0d1",
+        "delta_sha256": "c35013a94d3252c775ae6c454a77e0c20a9b403d350ef8ef487a8ba4a9f58462",
+        "bytes": 11456,
+        "prior_bytes_preserved": true
+      }
+    ],
+    "recovery_prewrite": "PASS408pointers;no current sheet/decision changes",
+    "recovery_saved_readback": "Exact115607bytes, Gitblobaa0c6ce963db3f1819352a496678922eba705ec0; SHA256451bd17c5e2db9852b4fac25add014819374f24c0d57884e384edb0de05f506d",
+    "independent_remote_git_preflight": "PASS408savedGitobjects;existing prior selectedNov6sheetstillbound",
+    "funding_cli": "PASS_QUALIFIED_FUNDING_RECORDS_ONLY;40USD2explicitfundingrecords;exacthistorical15ticketreference",
+    "selected_ci": {
+      "run_id": 42447789904,
+      "head": "36bd6a941758fa3c2c131e96a1b4489631da8b54",
+      "state_at_audit": "IN_PROGRESS; final conclusion belongs in terminal candidate/closure"
+    },
+    "topology": {
+      "enabled": [
+        {
+          "id": "6ae766e788d881919726d0eeb44450dd",
+          "title": "CFB Market Monitor Rebuilt"
+        },
+        {
+          "id": "6ae76df2ece4819197f91fb10076dea7",
+          "title": "CFB Engine Health Rebuilt"
+        },
+        {
+          "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+          "title": "CFB Weekly Engine QA Rebuilt"
+        },
+        {
+          "id": "6ae76df60e0c819182e2cfab1b83846a",
+          "title": "CFB Evening Availability Rebuilt"
+        }
+      ],
+      "four_unchanged": true
+    }
+  },
+  "operational_observations": [
+    "One register update was rejected at argument binding because a fresh large-file fetch lacked SHA; no mutation. Full exact blob recovery matched earlier baseline; SHA-guarded complete append subsequently saved/read back.",
+    "Initial intermediate commits intentionally retain failed pre-integration CI; latest complete recovery checkpoint is separate proof and does not rewrite prior run outcomes."
+  ],
+  "scope": {
+    "no_model_or_frozen_prediction_change": true,
+    "no_market_or_historical_decision_change": true,
+    "no_new_tasks_or_cadence_change": true,
+    "no_paid_research": true,
+    "no_extra_funding_or_wager_created": true
+  },
+  "cost_benefit": {
+    "benefit": "Unblocks integrity validation for user-authorized additional funding; durable outcome/accounting/recovery agreement.",
+    "cost": "One necessary pinned full checkout for integration computation,39boundedtests,408pointerpreflight and existing automaticQA; no repeated historical runtime smoke.",
+    "classification": "Bounded producer repair demonstrated; general scheduled production remains SCHEDULED_PROOF_PENDING"
+  },
+  "remaining": [
+    "Actual Monitor natural full production proof",
+    "Week10 official finals/frozen scoring and Sunday learning",
+    "Confirmed sportsbook settlement/currentholdings"
+  ]
+}
