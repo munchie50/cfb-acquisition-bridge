@@ -1,0 +1,27 @@
+{
+  "schema": "CFB_DIRECT_IMMUTABLE_BLOB_TRANSPORT_PLAN_V1",
+  "authorization": "User-directedhighest-prioritytroubleshooting;standingexistingfifthslottestauthorization",
+  "problem": "Nov8production1PMrun1c91e8ef-d80c-8326-9311-4fc64ebdd1a7hadaseparateshellbutnocompleteconnectorpayloadbridge;nohelperexecution",
+  "new_route": "Independentlyauthenticateexactmain/helperblob/sizeviaconnectedGitHub;separateshellfetchespublicimmutableRESTblobdirectly;strictdecodeandcontent-addressverificationbeforeunchangedhelperexecution.NoJSONpayloadcrossestools.",
+  "manual_proof": {
+    "status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+    "head": "b7671857605d2390613783da8cd46d8eea42e7af",
+    "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "helper_bytes": 3780,
+    "public_API_transport": "PASS2026-11-08T20:16:27.827446Zto20:16:34.000422Z",
+    "checkout_executions": 1,
+    "exit": 0,
+    "full_history": true,
+    "immutable_reviews": 51,
+    "runtime_sha256": "4091683cad2536dc19357f4021bd44edcf353d2dc1d488b70c21c900dfbeac5a"
+  },
+  "regression": {
+    "valid_payload": "PASS",
+    "rejected_mutations": 8,
+    "no_extra_checkout": true
+  },
+  "recipe": "import base64, hashlib, json, pathlib, re, tempfile, urllib.request\nexpected_head = \"<fresh connector-observed main commit>\"\nexpected_blob = \"<fresh connector-observed helper blob>\"\nexpected_size = <fresh connector-observed positive byte count>\nassert re.fullmatch(r\"[0-9a-f]{40}\", expected_head)\nassert re.fullmatch(r\"[0-9a-f]{40}\", expected_blob)\nassert isinstance(expected_size, int) and expected_size > 0\nrequest = urllib.request.Request(\n    \"https://api.github.com/repos/munchie50/cfb-acquisition-bridge/git/blobs/\" + expected_blob,\n    headers={\"Accept\": \"application/vnd.github+json\", \"User-Agent\": \"CFB-runtime-byte-verification\"})\nwith urllib.request.urlopen(request, timeout=20) as response:\n    obj = json.load(response)\nassert isinstance(obj, dict)\nassert obj.get(\"sha\") == expected_blob and obj.get(\"size\") == expected_size\nassert obj.get(\"encoding\") == \"base64\"\nencoded = \"\".join(obj[\"content\"].split())\npayload = base64.b64decode(encoded, validate=True)\nassert base64.b64encode(payload).decode(\"ascii\") == encoded\nassert len(payload) == expected_size\nactual_blob = hashlib.sha1(b\"blob \" + str(len(payload)).encode(\"ascii\") + b\"\\0\" + payload).hexdigest()\nassert actual_blob == expected_blob\ndirectory = pathlib.Path(tempfile.mkdtemp(prefix=\"cfb-direct-blob-\"))\n(directory / \"helper.py\").write_bytes(payload)\nprint(json.dumps({\"status\": \"DIRECT_IMMUTABLE_API_BYTES_VERIFIED\", \"directory\": str(directory),\n                  \"expected_head\": expected_head, \"git_blob\": actual_blob, \"bytes\": len(payload)}))\n# Only after inspecting this real PASS, execute unchanged helper ONCE:\n# python3 <directory>/helper.py --destination <directory>/checkout --expected-head <expected_head>\n",
+  "security": "PublicAPIrequestusesnocredentials;authenticityfromexacthash/sizeagainstindependentlyauthenticatedtree. No raw.githubusercontent helperroute,network/resolver/securitychange,credentialrequest,permissionbypassorfabricatedancestry. IfHTTP/DNS/permissionfails,reportactualerrorandstopthisroute;nohosthopping.",
+  "test": "One natural occurrence of existingCFBMonitorProductionTest;directAPIrouteonly;stopatcheckout,retainfourproductiondefinitions,normalexpiry",
+  "production_adoption": "Onlyaftertestresultindependentreadback;scientific/publicationguardsunchanged;rootworkerparityandfullproductionremainseparate"
+}
