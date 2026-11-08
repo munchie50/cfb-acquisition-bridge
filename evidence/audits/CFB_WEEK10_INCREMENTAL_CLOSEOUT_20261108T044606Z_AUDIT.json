@@ -1,0 +1,208 @@
+{
+  "schema": "CFB_WEEK10_INCREMENTAL_CLOSEOUT_AUDIT_V1",
+  "run_id": "CFB_WEEK10_CLOSEOUT_20261108T044606Z",
+  "observed_at_utc": "2026-11-08T04:59:52Z",
+  "startup": {
+    "path": "evidence/run_receipts/CFB_WEEK10_CLOSEOUT_20261108T044606Z_RUN_STARTED.json",
+    "blob": "77e7e9dcd6655b48502f2aefaa0f679446ba2056"
+  },
+  "previous_closure": "evidence/run_receipts/CFB_PRODUCTION_READINESS_20261108T043547Z_RUN_CLOSURE.json",
+  "routine": "v5.0+acceptedv5.1A/C+v5.2D/E/F",
+  "production_check": "Task-specific Monitor last_actual_run be77cec8-21f4-8320-b297-dec48f7fb269 unchanged; predates installed19:41Zcorrections. No extra run/task/diagnostic started.",
+  "source_boundary": {
+    "cbs_observed_at_utc": "2026-11-08T04:46:54.652100+00:00",
+    "targets": 63,
+    "cbs_final": 58,
+    "cbs_not_final": 5,
+    "official_verified": 42,
+    "cbs_only_official_pending": 16,
+    "final_guard": "ExactCSSclassOddsBlock-game--final; a column titledFinal is not a final-status signal.",
+    "snapshot_not_retimed": true
+  },
+  "original_boundary": {
+    "artifact_id": 10897612260,
+    "sha256": "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf",
+    "unchanged_producer": "scripts/cfb_week10_original_ancestry_recovery.py",
+    "recovered_63_directed_identities": 63,
+    "modeled": 55,
+    "exclusions": 8,
+    "exact_numeric_strings": 165,
+    "full_replay_matches_accepted_lineage": true
+  },
+  "verified_results": {
+    "official_games": 42,
+    "modeled": 37,
+    "excluded_unscored": 5,
+    "margin_direction_correct": 20,
+    "probability_classifier_correct": 20,
+    "margin_mae": 18.053524068390985,
+    "total_mae": 13.807902564479283,
+    "brier": 0.26203091615709784,
+    "independent_decimal_recompute": "PASSabs1e-12; exactinputstrings,no roundedrowaggregation",
+    "interpretation": "Subset only; no fullweek/causal improvement claim."
+  },
+  "nonaccepted_diagnostics": {
+    "cbs58final_subset": {
+      "modeled": 50,
+      "excluded": 8,
+      "margin_direction_correct": 26,
+      "probability_classifier_correct": 27
+    },
+    "qualification": "Source-only diagnostic separate from42official;5livegames never scored"
+  },
+  "wagers": {
+    "tickets": 11,
+    "wins": 8,
+    "losses": 3,
+    "stake_usd": "55.00",
+    "printed_result_return_usd": "102.90",
+    "result_net_usd": "47.90",
+    "official_supported_tickets": 10,
+    "cbs_AP_supported_ASU_tickets": 1,
+    "book_payment": "UNVERIFIED",
+    "bankroll": "147.35conditionalestimateunchanged"
+  },
+  "saved_outputs": [
+    {
+      "path": "evidence/operational/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z.json",
+      "blob": "eb7b3a51acb43eb5e4ea39f5a119c70858497c1f",
+      "transport_manifest": {
+        "schema": "CFB_EXACT_TEXT_TRANSFER_V1",
+        "status": "TRANSPORT_ONLY_NOT_WRITE_SUCCESS",
+        "git_blob": "eb7b3a51acb43eb5e4ea39f5a119c70858497c1f",
+        "sha256": "99cd1a684de11dc1e3c68cf394348d74b49678a538507b9f310d47644dd88486",
+        "bytes": 117457,
+        "characters": 117457,
+        "chunk_characters": 12000,
+        "chunk_count": 10,
+        "raw_content_included": false
+      }
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_CBS_RESULT_CAPTURE_20261108T044606Z.html.gz.b64",
+      "blob": "123ebd03e3cdb17a31f64da25504d8f72e371853",
+      "transport_manifest": {
+        "schema": "CFB_EXACT_TEXT_TRANSFER_V1",
+        "status": "TRANSPORT_ONLY_NOT_WRITE_SUCCESS",
+        "git_blob": "123ebd03e3cdb17a31f64da25504d8f72e371853",
+        "sha256": "a4b4ca053fcf9c0c9e8247cd834a7e5a3118b6af7e02ea0e2c0123b80002eb88",
+        "bytes": 149461,
+        "characters": 149461,
+        "chunk_characters": 12000,
+        "chunk_count": 13,
+        "raw_content_included": false
+      }
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z.md",
+      "blob": "327056dddb138a90b4e813f43373dde34623055c",
+      "transport_manifest": {
+        "schema": "CFB_EXACT_TEXT_TRANSFER_V1",
+        "status": "TRANSPORT_ONLY_NOT_WRITE_SUCCESS",
+        "git_blob": "327056dddb138a90b4e813f43373dde34623055c",
+        "sha256": "10779ac7d6b51fdb068621246e34ceb3f19fe7585751175c2f8a35d44f90567b",
+        "bytes": 12477,
+        "characters": 12474,
+        "chunk_characters": 12000,
+        "chunk_count": 2,
+        "raw_content_included": false
+      }
+    }
+  ],
+  "canonical_outputs": {
+    "scorecard": {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "06b381b3d8336b5ab4d2c960b4a17f45af6ef6de",
+      "append_metadata": {
+        "schema": "CFB_PLANNED_APPEND_METADATA_V1",
+        "status": "PROPOSED_ONLY_NOT_WRITE_SUCCESS",
+        "prior_git_blob_sha": "65d212f05e56ab7bd89244c9f4bccff4763c0077",
+        "proposed_git_blob_sha": "06b381b3d8336b5ab4d2c960b4a17f45af6ef6de",
+        "prior_sha256": "e97437bc87b73d8d7a4ef745a958e549ea1a33866a7905f9938d8ad8fd670375",
+        "proposed_sha256": "4331b248b73be6fae95bc8f67b380ea5d96bacab58caead04338e6841ebcc371",
+        "delta_sha256": "86e7f3256dc586d72912bb6518d11cf0f3e0421f7c0cdc0094953a3147b3b7c9",
+        "prior_bytes": 68148,
+        "proposed_bytes": 81158,
+        "delta_bytes": 13010,
+        "prior_characters": 67963,
+        "proposed_characters": 80970,
+        "delta_characters": 13007,
+        "prior_bytes_preserved": true,
+        "field_inventory": [
+          "champion_snapshot",
+          "game_identity",
+          "provenance",
+          "source"
+        ],
+        "inventory_basis": "CALLER_DECLARED_NOT_SEMANTICALLY_VALIDATED",
+        "raw_content_included": false
+      }
+    },
+    "execution": {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "2c0fbcb0314839deb60823e48adbbd24d5423147",
+      "append_metadata": {
+        "schema": "CFB_PLANNED_APPEND_METADATA_V1",
+        "status": "PROPOSED_ONLY_NOT_WRITE_SUCCESS",
+        "prior_git_blob_sha": "7f5e645d6905a7d0bc1354fa5cb43d3a2bb8aa6f",
+        "proposed_git_blob_sha": "2c0fbcb0314839deb60823e48adbbd24d5423147",
+        "prior_sha256": "5c556ff2d29212417e099037788a63fbff41bf75b44cab09501d2b56033eaa8c",
+        "proposed_sha256": "4ff5966300dd1eee2a434dc80ec36fe33799e3a8078dc25837fbd2ad0bbde107",
+        "delta_sha256": "05772951ef62ffb584bef872dacd7c1c63e440c88d229132f6fd5a634d791418",
+        "prior_bytes": 43825,
+        "proposed_bytes": 46312,
+        "delta_bytes": 2487,
+        "prior_characters": 43779,
+        "proposed_characters": 46264,
+        "delta_characters": 2485,
+        "prior_bytes_preserved": true,
+        "field_inventory": [
+          "game_identity",
+          "provenance",
+          "source"
+        ],
+        "inventory_basis": "CALLER_DECLARED_NOT_SEMANTICALLY_VALIDATED",
+        "raw_content_included": false
+      }
+    },
+    "register": {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "blob": "22ddaf28dae2c335bc6748b90fedd1300dd5801a"
+    },
+    "recovery": {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_262.md",
+      "blob": "e47c3333e8e39785d7e362bdde4d4fbe8d9e7dc5",
+      "bytes": 116689,
+      "sha256": "6cfd590bce8bf8d158cdc51298962ed25b3d101bdc21a3ba241738195b86d32b",
+      "prewrite": "PASS412",
+      "independent_saved_git_object_preflight": "PASS412"
+    }
+  },
+  "evidence_errors_preserved": [
+    "requests package unavailable before network attempt; standard-libraryurllib acquiredCBS successfully.",
+    "Four direct school recaps404; Navy/Kennesaw independently read via web, ULM/GeorgiaState webDisabledError retained as official-pending. Not proof of all-source unavailability.",
+    "Liberty pregamePDF candidate contained matching historical score text but no currentfinal; rejected and not counted.",
+    "Initial receiver-side shell hashing of149461byte rawcapture transport exceeded OS argument size; source unchanged, bounded chunk retransmission with independently recomputed whole receiver Gitblob/byte length passed. No restricted write evasion or truncated content accepted.",
+    "Ad hoc original-name alias mismatch for Hawaii was resolved using existing canonical aliasHawai'i; production source baseline explicitlypinsHawaii andpublicationbridgeconvertsit. No production alias defect established."
+  ],
+  "learning": {
+    "benefit": "42officialresultsnowrecoverable, authentic37modelscoring and11ticketcorroboration; excludesliveandunqualifiedfinals.",
+    "cost": "Boundedrawcapture,47targetedofficialqueriesplusselectedfallbacksand43directdownloads, exactoriginalreplay andoneexistingCI;no paidFirecrawl, no historicalsmoke/testsrepeated.",
+    "net": "HELPFULboundedcloseoutprogress;completeweeknotyetearned",
+    "next": "Resume16official-sourcequalifications and5finals;reuse42verifiedrows andunchangedoriginal;Sundayreviewafterfullqualifiedresults."
+  },
+  "pending": [
+    "Five not-final games at captured boundary",
+    "Sixteen CBS finals without admitted official corroboration",
+    "FullSundayweeklylearning/currentreviewqualification",
+    "ActualnaturalMonitorfullproductionproof",
+    "Cash/voucher/booksettlement"
+  ],
+  "selected_ci": {
+    "run_id": 42448901462,
+    "head": "4357a887038f96730e7d3436e61f955530d6e2af",
+    "state_at_audit": "IN_PROGRESS;finalconclusioninterminalcandidate"
+  },
+  "scientific_champion_effect": "NONE",
+  "market_decision_schedule_funding_effect": "NONE"
+}
