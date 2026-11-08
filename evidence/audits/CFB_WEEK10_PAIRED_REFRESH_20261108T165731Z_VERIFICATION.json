@@ -1,0 +1,84 @@
+{
+  "schema": "CFB_PAIRED_REFRESH_LEARNING_AUDIT_V1",
+  "scope": "CloseindependentmatchedcohortlearninggapwhileMonitorawaitsnaturalproof",
+  "report": {
+    "path": "evidence/audits/CFB_WEEK10_ORIGINAL_REFRESH_PAIRED_QA_20261108T165731Z.json",
+    "blob": "9e3edface3fb828f69ff145ffab454a31bae799c",
+    "independent_exact_readback": true
+  },
+  "inputs": {
+    "accepted_refresh_join_blob": "8fd0ba1f85e37b940d9bfe5f13188e2da956b32d",
+    "accepted_refresh_artifact": 13193176113,
+    "zip_sha256": "98e6af5534b233f3284b6178fe410a1fffcb80420e0da3dae8b1c92a13c52567",
+    "cutoff": "2026-11-03T00:17:26.895461+00:00",
+    "original_accepted_cutoff": "2026-09-26T03:47:37.497112+00:00",
+    "official_outcome_parent": "evidence/operational/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z_R2.json",
+    "official_outcome_delta": "evidence/operational/CFB_WEEK10_OFFICIAL_OUTCOME_QA_20261108T160449Z.json"
+  },
+  "validation": {
+    "exact_directed_ids_and_team_pairs": 63,
+    "matched_original_predictions": 55,
+    "exclusions_preserved": 8,
+    "Decimal_and_independent_float": "PASS1e-12",
+    "register_outgoing_bytes": 201481,
+    "register_blob": "e4a48cac22e51a01474639c7ecaf706d3c6b33b4",
+    "register_append_only_exact_readback": true,
+    "index": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_266.md",
+    "index_blob": "4abcf1ebf4406ac6a278587849d5d40e10183d1e",
+    "pre_and_post_readback_consumer_preflight": "PASS423pointers",
+    "ci": {
+      "id": 42502620906,
+      "status_at_audit": "PENDING"
+    }
+  },
+  "summary": {
+    "original_matched55": {
+      "n": 55,
+      "margin_abs_mean": "17.23919997835150850618181818",
+      "total_abs_mean": "15.19184934836414950909090909",
+      "brier_mean": "0.2698566683962613094096467027",
+      "margin_direction_correct": 27,
+      "probability_classifier_correct": 30
+    },
+    "refresh_matched55": {
+      "n": 55,
+      "margin_abs_mean": "14.86770563117816688127272727",
+      "total_abs_mean": "13.84711823043108703636363636",
+      "brier_mean": "0.2262437826821760815083317493",
+      "margin_direction_correct": 33,
+      "probability_classifier_correct": 33
+    },
+    "refresh_all63_separate_population": {
+      "n": 63,
+      "margin_abs_mean": "14.15884022428765875984126984",
+      "total_abs_mean": "14.03801037821151377777777778",
+      "brier_mean": "0.2283121895879279625473243006",
+      "margin_direction_correct": 37,
+      "probability_classifier_correct": 37
+    }
+  },
+  "paired55": {
+    "margin_abs": {
+      "mean_refresh_minus_original": "-2.371494347173341624909090909",
+      "improved": 34,
+      "worse": 21,
+      "equal": 0
+    },
+    "total_abs": {
+      "mean_refresh_minus_original": "-1.344731117933062472727272727",
+      "improved": 35,
+      "worse": 20,
+      "equal": 0
+    },
+    "brier": {
+      "mean_refresh_minus_original": "-0.04361288571408522790131495315",
+      "improved": 34,
+      "worse": 21,
+      "equal": 0
+    }
+  },
+  "conclusion": "AcceptedREFRESHimproveddescriptivesame55performance;largesterrorsremain.Nocausalclaim,originalsubstitution,Challengerpromotion,modeltrainingorbettingEV.",
+  "open": "Originalpre-eventfeature/identity/coveragecauses;actualscheduledMonitorruntime;EveningDNS;Healthhistory;booksettlement",
+  "effects": "NoChampion/model/frozenprediction/market/decision/sheet/wager/money/task/schedulechange",
+  "closure": "Terminalcandidate/readback/closureafteractualintegrationCI"
+}
