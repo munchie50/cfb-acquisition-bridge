@@ -1,0 +1,80 @@
+{
+  "schema": "CFB_VERIFIED_TRANSPORT_PRODUCTION_ADOPTION_CANDIDATE_V1",
+  "correlation_id": "CFB_DIRECT_API_PRODUCTION_ADOPTION_20261108T2024Z",
+  "scope": "Startup transport correction only; not full production completion",
+  "scheduled_proof": {
+    "invocation_id": "522b00e6-92a8-8322-a12f-5291a6ea4c00",
+    "verdict": "DIRECT_API_BOUNDARY_PASS",
+    "result_blob": "d21af49392abe1d42a01a9c7e6fbbeac5b6385bb",
+    "closure_blob": "e03daa9e67ab99e6f9cd13db78f681fd9a24a387",
+    "independent_readback": true
+  },
+  "failure_preserved": {
+    "invocation_id": "1c91e8ef-d80c-8326-9311-4fc64ebdd1a7",
+    "verdict": "RUN_INCOMPLETE",
+    "boundary": "before helper execution; absent connector-to-shell payload bridge"
+  },
+  "procedure": {
+    "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
+    "commit_sha": "29ab4562233484a0b0e586c5ac9c0a48b3c19c54",
+    "content_sha": "bf4383f28cca17e3994339340a62d81962d26bfa",
+    "exact_readback": true
+  },
+  "action_register": {
+    "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+    "commit_sha": "5f1904381a333f3428f9887d7bfdfe172fef49b4",
+    "content_sha": "e9f2791dac5d0a10745e77a19d3c891ec84b043f",
+    "exact_readback": true
+  },
+  "recovery_index": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_267.md",
+    "blob": "9301495ba36a0cec61550d03c86a9a749b44e4bc",
+    "commit_sha": "d63ffda43048e66136368d32282150c13d9a1aef",
+    "exact_readback": true,
+    "preflight": "PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY",
+    "pointers": 426
+  },
+  "task_change": {
+    "id": "6ae766e788d881919726d0eeb44450dd",
+    "updated_at": "2026-11-08T20:28:12.987754+00:00",
+    "mutation": "Prompt-only additive verified-route insertion; baseline bytes preserved",
+    "preservation_checks": [
+      {
+        "id": "6ae76df60e0c819182e2cfab1b83846a",
+        "fields": true,
+        "prompt": true
+      },
+      {
+        "id": "6ae766e788d881919726d0eeb44450dd",
+        "fields": true,
+        "prompt": true
+      },
+      {
+        "id": "6ae76df2ece4819197f91fb10076dea7",
+        "fields": true,
+        "prompt": true
+      },
+      {
+        "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+        "fields": true,
+        "prompt": true
+      }
+    ],
+    "enabled_production": 4,
+    "test_enabled": false
+  },
+  "source_classification": "Public immutable API bytes, hash-verified against authenticated connector tree identity",
+  "security": "No credentials, sign-in, resolver/network/security/permission changes or denied-operation bypass",
+  "scientific_market_champion_wager_money_changes": "NONE",
+  "production_worker_parity": "UNPROVED",
+  "full_monitor_completion": "UNPROVED",
+  "next_proof": "Next actual production Monitor invocation must execute selected route, complete applicable workload and separate verified closure",
+  "integration_ci": {
+    "id": 42520379644,
+    "head_sha": "d63ffda43048e66136368d32282150c13d9a1aef",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "terminal_verdict": "VERIFIED_STARTUP_CORRECTION_ADOPTED_PRODUCTION_COMPLETION_OPEN",
+  "candidate_created_utc": "2026-11-08T20:32:07.933Z"
+}
