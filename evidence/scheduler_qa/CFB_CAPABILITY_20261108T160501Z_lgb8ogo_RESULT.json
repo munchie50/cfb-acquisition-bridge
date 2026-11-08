@@ -1,0 +1,229 @@
+{
+  "schema": "CFB_WORKER_CAPABILITY_COMPARISON_RESULT_V1",
+  "correlation_id": "CFB_CAPABILITY_20261108T160501Z_lgb8ogo",
+  "invocation_id": "0ed6057b-8c70-8327-9230-825d1d104f2e",
+  "trigger": "NATURAL_ONE_TIME_SCHEDULED",
+  "recorded_at_utc": "2026-11-08T16:06:59Z",
+  "verdict": "BOUNDARY_PASS",
+  "startup": {
+    "path": "evidence/scheduler_qa/CFB_CAPABILITY_20261108T160501Z_lgb8ogo_STARTED.json",
+    "blob": "13228bea8a2e622995dbd824038dda1050f2a434",
+    "independent_exact_readback": true
+  },
+  "timing": {
+    "actual_first_utc": "2026-11-08T16:05:01Z",
+    "scheduled_for": "2026-11-08T16:02:00Z",
+    "recorded_started_at": "2026-11-08T16:04:44.956262Z",
+    "actual_delta_seconds": 181,
+    "recorded_delta_seconds": 164.956,
+    "prior_result_id": "1b8b084f-cb78-832e-bf3a-2e2fa0bee0cb",
+    "prior_result_matches_this_run": false,
+    "material_impact": "None established for this capability boundary; did not wait for nominal time"
+  },
+  "authority": {
+    "authenticated_main": "c26e08e408fc5398014cf6479e1b51c912da02f4",
+    "recovery": {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_263.md",
+      "blob": "f37614204d25b1758ade4e7afd333044b45bd9d6"
+    },
+    "bindings": {
+      "prior": {
+        "path": "evidence/scheduler_qa/CFB_BOUNDARY_20261107T191241Z_9og56mt_RESULT.json",
+        "blob": "5d76fc234319997ec1a18a3402a7261f9edb0014"
+      },
+      "production": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TERMINAL_CANDIDATE_20261108T130117_scheduled11_20261108T130117.md",
+        "blob": "fede83988b5b02c892e735074b75a14befb96604"
+      },
+      "diagnosis": {
+        "path": "evidence/audits/CFB_FOUR_TASK_DIAGNOSIS_20261108T155508Z.md",
+        "blob": "3beee5e48058d0b0bc440731eb7347624e4b6c3a"
+      },
+      "v5": {
+        "path": "evidence/CFB_ENGINE_ROUTINE_V5_PRODUCTION_PROMOTION_v1_103.md",
+        "blob": "0a1e87375e83d46662943f061ec8a11463b64c17"
+      },
+      "a": {
+        "path": "evidence/CFB_ROUTINE_V5_1_SELECTIVE_PRODUCTION_AMENDMENT_20261030.md",
+        "blob": "066174f7333d2925d6605b2cbdd0a38b1ec3eb17"
+      },
+      "b": {
+        "path": "evidence/CFB_ROUTINE_V5_2_SELECTIVE_DIAGNOSTIC_AMENDMENT_20261031.md",
+        "blob": "92dfd2fd569601e6f42504022c6a7b8935f19e7b"
+      },
+      "persistence": {
+        "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
+        "blob": "78e3f2e12cbcf8213f87c28a580f39c0aabff8e0"
+      },
+      "closure": {
+        "path": "evidence/CFB_TERMINAL_RUN_RECEIPT_CLOSURE_CONTRACT_2026-10-05.md",
+        "blob": "501cda05d80229402a485493f10b1a4bbb76d3b8"
+      }
+    },
+    "routine": "Productionv5.0+acceptedv5.1A/C+v5.2D/E/F and persistence/two-phase closure fresh recovered"
+  },
+  "capability_inventory": {
+    "scope": "Content-free documented current-worker capabilities; no original failed-worker complete inventory available.",
+    "orchestration": {
+      "method": "functions.exec",
+      "available": true,
+      "direct_os_filesystem_or_process": "Not provided by JS isolate; documented tools must be invoked."
+    },
+    "nested_execution": {
+      "method": "tools.exec_command",
+      "documented": true,
+      "callable_typeof": "function",
+      "actual_execution": "PASS",
+      "session_completion": "tools.write_stdin, documented and actually used to obtain checkout exit"
+    },
+    "separately_exposed_runtime": {
+      "documented_top_level_os_shell_methods": [],
+      "qualification": "No separately documented OS-shell invocation interface in this worker's top-level tool declarations. This does not establish absence in prior production worker. Computer-use JS is UI automation, not a documented connector-to-shell transfer route and was not used."
+    },
+    "binary_file_writer": {
+      "method": "Python3 pathlib.Path.write_bytes through tools.exec_command",
+      "actual_execution": "PASS"
+    },
+    "connector_to_runtime": {
+      "supported_method": "Complete structured authenticated GitHub base64 response serialized directly to documented tools.exec_command in SAME functions.exec cell; strict binary decode and independent hashes",
+      "actual_execution": "PASS",
+      "manual_abbreviated_output_transcription": false
+    },
+    "actually_measured_versions": {
+      "python": "3.12.14",
+      "git": "git version 2.52.0"
+    },
+    "metadata": {
+      "test_environment_selection": "inherited",
+      "test_environments": null,
+      "production_environment_selection": "inherited",
+      "production_environments": null,
+      "actual_provisioning_identity": "UNAVAILABLE",
+      "interpretation": "Inherited/null describes configuration metadata; not actual past runtime identity or environment parity."
+    },
+    "method_absence_vs_errors": {
+      "current_documented_exec_missing": false,
+      "actual_returned_execution_errors": [],
+      "unsupported_method_probes": "NONE",
+      "historical_tools_exec_undefined": "Reported by prior production evidence only; no inaccessible original inventory reconstructed."
+    }
+  },
+  "stages": {
+    "SHELL_EXPOSURE": {
+      "outcome": "EXECUTED_PASS",
+      "evidence": "Documented tools.exec_command executed Python and Git, not merely name discovery"
+    },
+    "CONNECTOR_TO_BINARY_TRANSFER": {
+      "outcome": "PASS",
+      "exact_authenticated_helper_response": {
+        "path": "scripts/cfb_runtime_checkout.py",
+        "sha": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+        "size": 3780,
+        "encoding": "base64",
+        "response_sha": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+        "ref": "c26e08e408fc5398014cf6479e1b51c912da02f4"
+      },
+      "binary_writer_exit_code": 0,
+      "no_truncation_or_payload_reconstruction": true
+    },
+    "HELPER_VERIFICATION": {
+      "outcome": "PASS",
+      "evidence": {
+        "SHELL_EXPOSURE": "EXECUTED_PASS",
+        "CONNECTOR_TO_BINARY_TRANSFER": "PASS",
+        "HELPER_VERIFICATION": "PASS",
+        "encoding": "base64",
+        "base64_syntax": "VALID",
+        "decoded_bytes": 3780,
+        "git_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+        "git_hash_object": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+        "python": "3.12.14",
+        "git_version": "git version 2.52.0",
+        "binary_writer": "Python pathlib.Path.write_bytes invoked through documented tools.exec_command in same functions.exec cell as authenticated response",
+        "no_payload_transcription": true
+      },
+      "checks": "base64 encoding, strict syntax/canonical roundtrip, UTF8 decoding, 3780nonzero bytes, manualGitblob computation and actual git hash-object before execution"
+    },
+    "CHECKOUT": {
+      "outcome": "PASS",
+      "command": "GIT_TRACE2_EVENT=/workspace/scratch/13df5b80aaf6/capability_20261108T160501Z/git-trace.jsonl python3 cfb_runtime_checkout.py --destination /workspace/scratch/13df5b80aaf6/capability_20261108T160501Z/checkout --expected-head c26e08e408fc5398014cf6479e1b51c912da02f4 > runtime.json",
+      "checkout_executions": 1,
+      "exit_code": 0,
+      "returned_status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+      "pinned_head": "c26e08e408fc5398014cf6479e1b51c912da02f4",
+      "pinned_head_independently_checked": true,
+      "full_ancestry": true,
+      "immutable_review_count": 51,
+      "helper_readback_exact": true,
+      "runtime_result_sha256": "7a29ce0c54e01243822f40b2208861fef479e76042c4e824b62a7b3a550235fd",
+      "actual_git_errors": []
+    },
+    "PRODUCTION_PARITY": {
+      "outcome": "UNPROVED",
+      "reason": "This worker proves supported same-cell handoff and checkout. Production3781dcdc reported undefinednestedmethod and mentioned separate shell without accessible full inventory or verified transfer. Neither provisioning equivalence nor absence of another supported historical transfer is proved."
+    }
+  },
+  "comparison": {
+    "passing_test": {
+      "run_id": "1b8b084f-cb78-832e-bf3a-2e2fa0bee0cb",
+      "result": "BOUNDARY_PASS",
+      "current_worker": "Reproduced exact handoff/singlecheckout51reviews; prior result unchanged"
+    },
+    "production": {
+      "run_id": "3781dcdc-a300-8320-99cf-057774376099",
+      "run_id_matched_from_current_task_metadata": true,
+      "candidate_classification": "RUN_INCOMPLETE / COMPUTATION_RUNTIME_UNAVAILABLE / TOOL_NOT_EXPOSED in orchestration; separate shell mentioned",
+      "observed_historical_dns_error": false,
+      "checkout_attempted_in_historical_candidate": false,
+      "interpretation": "Potential complete-data transfer through reported separate shell remains unverified. Do not impose one nested alias as a universal requirement; any documented complete verifiable transfer can satisfy exactbytes."
+    }
+  },
+  "production_isolation": {
+    "fresh_exact_definitions": {
+      "path": "evidence/scheduler_qa/CFB_CAPABILITY_20261108T160501Z_lgb8ogo_BASELINE.json",
+      "blob": "ebdc991671d1c0912c182d2626a3ca690eeab547",
+      "commit": "c26e08e408fc5398014cf6479e1b51c912da02f4",
+      "independent_exact_readback": true
+    },
+    "postwork_checks": [
+      {
+        "id": "6ae766e788d881919726d0eeb44450dd",
+        "title_exact": true,
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76df2ece4819197f91fb10076dea7",
+        "title_exact": true,
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+        "title_exact": true,
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76df60e0c819182e2cfab1b83846a",
+        "title_exact": true,
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "enabled_exact": true
+      }
+    ],
+    "unchanged": true,
+    "task_mutations": "NONE"
+  },
+  "first_absent_artifact": null,
+  "exact_observed_error": null,
+  "supported_next_action": "Capture documented shell/runtime and complete-data transfer interface inside actual production worker; use supported exact transfer whether nested or separate. If unavailable, configure an execution-capable environment through exposed authorized product controls. This invocation does not change provisioning.",
+  "stopped_at": "CAPABILITY_TRANSPORT_CHECKOUT",
+  "forbidden_work_not_performed": "No compiler, regression, paid acquisition, live decisions, publication, canonical/recovery-index/model/Champion/wager/money/task/workflow/network changes",
+  "history": "All prior classifications retained; no prompt installation or local command alone called a fix",
+  "terminal_persistence": "Result to be independently read back; separate candidate/readback/closure follows",
+  "one_time_lifecycle": "Normal expiry; no self-reschedule/newtask/run_now"
+}
