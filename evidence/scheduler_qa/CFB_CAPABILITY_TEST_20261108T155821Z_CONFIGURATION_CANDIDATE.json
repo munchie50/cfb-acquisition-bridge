@@ -1,0 +1,32 @@
+{
+  "schema": "CFB_TEST_CONFIGURATION_CANDIDATE_V1",
+  "test_id": "6aeb87dd781481919f9f190e69cb5422",
+  "state": "PERSISTED_READ_BACK_SCHEDULED_PROOF_PENDING",
+  "plan": "evidence/scheduler_qa/CFB_CAPABILITY_TEST_20261108T155821Z_PLAN.json",
+  "plan_commit": "3fec1026c6c480aecf1dade3bc506040e5f884b1",
+  "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20261108T100200\nEND:VEVENT",
+  "prompt_exact_readback": true,
+  "first_update": "Unexpected service error; private readback proved unchanged disabled state and old prompt/schedule. No duplicate created.",
+  "bounded_correction": "Explicit timezone-preserving absolute VEVENT instead of empty schedule with relative offset; update success and independent task readback.",
+  "production_checks": [
+    {
+      "id": "6ae766e788d881919726d0eeb44450dd",
+      "unchanged": true
+    },
+    {
+      "id": "6ae76df2ece4819197f91fb10076dea7",
+      "unchanged": true
+    },
+    {
+      "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+      "unchanged": true
+    },
+    {
+      "id": "6ae76df60e0c819182e2cfab1b83846a",
+      "unchanged": true
+    }
+  ],
+  "test_scope": "capability inventory and one pinned checkout only",
+  "production_runtime_repair": "NOT_PROVED",
+  "next": "Inspect own natural scheduled result, preserving original failures; no inference of liveness from enabled state"
+}
