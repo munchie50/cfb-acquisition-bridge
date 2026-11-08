@@ -1,0 +1,61 @@
+{
+  "schema": "CFB_WORKER_CAPABILITY_TERMINAL_CANDIDATE_V1",
+  "correlation_id": "CFB_CAPABILITY_20261108T160501Z_lgb8ogo",
+  "invocation_id": "0ed6057b-8c70-8327-9230-825d1d104f2e",
+  "recorded_at_utc": "2026-11-08T16:07:45Z",
+  "terminal_candidate": "BOUNDARY_PASS",
+  "result": {
+    "path": "evidence/scheduler_qa/CFB_CAPABILITY_20261108T160501Z_lgb8ogo_RESULT.json",
+    "blob": "9c0687a2a2884b6ace78ce3112b6f04da2746047",
+    "commit": "85c7f98714e24b03460f8989faee2d3e84a85f26",
+    "independent_exact_readback": true
+  },
+  "stages": {
+    "SHELL_EXPOSURE": "EXECUTED_PASS tools.exec_command Python3.12.14/Git2.52.0",
+    "CONNECTOR_TO_BINARY_TRANSFER": "PASS complete authenticated base64 same-cell supported binarywriter",
+    "HELPER_VERIFICATION": "PASS3780bytes/Gitblob/hash-object before execution",
+    "CHECKOUT": "PASS single execution, authenticated pinned HEAD/fullancestry51reviews",
+    "PRODUCTION_PARITY": "UNPROVED"
+  },
+  "production_baseline": {
+    "path": "evidence/scheduler_qa/CFB_CAPABILITY_20261108T160501Z_lgb8ogo_BASELINE.json",
+    "blob": "ebdc991671d1c0912c182d2626a3ca690eeab547",
+    "commit": "c26e08e408fc5398014cf6479e1b51c912da02f4",
+    "independent_exact_readback": true
+  },
+  "unchanged_postchecks": [
+    {
+      "id": "6ae766e788d881919726d0eeb44450dd",
+      "title_exact": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true
+    },
+    {
+      "id": "6ae76df2ece4819197f91fb10076dea7",
+      "title_exact": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true
+    },
+    {
+      "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+      "title_exact": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true
+    },
+    {
+      "id": "6ae76df60e0c819182e2cfab1b83846a",
+      "title_exact": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true
+    }
+  ],
+  "first_absent_artifact": null,
+  "exact_observed_error": null,
+  "historical_interpretation": "Prior production candidate does not prove no shell anywhere; separately mentioned shell's complete-data transfer contract remains unverified. Successful current worker does not identify past provisioning.",
+  "scope": "Capability/transport/checkout only; no canonical/task/runtimeconfiguration mutation. Historical results retained.",
+  "closure_requirement": "Separate closure only after independently fetching exact candidate"
+}
