@@ -1,0 +1,58 @@
+{
+  "run_id": "CFB_WEEK10_CLOSEOUT_20261108T044606Z",
+  "recorded_at_utc": "2026-11-08T05:11:07Z",
+  "terminal": "RUN_INCOMPLETE",
+  "bounded_stage": "INDEPENDENTLY_RECONCILED46_OFFICIAL_OUTCOMES_AND41_ORIGINAL_MODEL_SCORES",
+  "audit": {
+    "path": "evidence/audits/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z_R2_AUDIT.json",
+    "blob": "c24e4d98cb1c92aa719806127cc3d84a38295252"
+  },
+  "source_outputs": [
+    {
+      "path": "evidence/operational/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z_R2.json",
+      "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z_R2.md",
+      "blob": "388a15710cf93a3ed31638ab1fd7db83fa255791"
+    }
+  ],
+  "applicable_surfaces": {
+    "scorecard": {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "blob": "a40d38541509f0a4bd58ea6493f4b0bb974f87c2"
+    },
+    "execution": {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "blob": "2c0fbcb0314839deb60823e48adbbd24d5423147"
+    },
+    "register": {
+      "path": "evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md",
+      "blob": "a6487c18a1d0f21487c9ed45472942b60777dd7d"
+    },
+    "recovery": {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_263.md",
+      "blob": "f37614204d25b1758ade4e7afd333044b45bd9d6"
+    }
+  },
+  "verification": "Completeindependentcanonical/artifactreadbacks;sourcebyte/hashtransferverified;exactoriginalarchive/63ID/165stringreplay;independentDecimalmetrics;prewriteandactualsaved414pointerpreflight;finalconnectedtree414bindingsstillmatch.",
+  "ci": {
+    "run_id": 42449548183,
+    "head": "b65adc9689a80e8ede64e37a3396c823599c4038",
+    "job_id": 128635616747,
+    "conclusion": "success",
+    "steps": 46
+  },
+  "unresolved": [
+    "Refreshfive late-gamefinals fromretainednot-finalboundary",
+    "Qualify12otherCBSfinalsagainstofficialsources;sourceattemptsretained,notall-sourceunavailabilityclaim",
+    "FullSundaylearningafterqualifiedcompletecohort",
+    "ActualscheduledMonitorfullproductionproofafterinstalledcorrections",
+    "Confirmedbookpayment/currentholdings"
+  ],
+  "resume": "Reuse46verifiedrowsandunchangedoriginalsource;do not regrade/reappendthem. R2supersedesR1partialcoverage/clocklabels only. ExistingSundayMonitor07:00CTthen09:00CTQAarethenaturaltriggers;no new task/cadence.",
+  "accounting": "Existing11tickets8-3and102.90resultreturn/47.90netcorroborated;147.35estimateunchanged;no paidcashbooking",
+  "task_effect": "NONE;Monitorprompt/cadencefreshreadbackunchanged",
+  "scientific_champion_effect": "NONE;nofrozenprediction,model,market,decisionorSundayreviewpromotion",
+  "candidate_readback": "NOT_SELF_CERTIFIED;separateclosurefollowsindependentexactfetch"
+}
