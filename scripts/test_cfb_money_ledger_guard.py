@@ -12,12 +12,12 @@ class MoneyTests(unittest.TestCase):
             from test_cfb_week7_opening_display_gate import snapshot
             cls.m=(ROOT/gate.PATH).read_text();cls.e=snapshot('evidence/operational/CFB_EXECUTION_LEDGER.md',gate.EXECUTION_SHA)
         cls.body=gate.re.findall(r'```cfb-funding-json\n(.*?)\n```',cls.m,gate.re.S)[0];cls.record=json.loads(cls.body)
-    def check(self,m=None,e=None):return gate.audit(self.m if m is None else m,self.e if e is None else e,'2026-10-12T01:34:27Z')
+    def check(self,m=None,e=None):return gate.audit(self.m if m is None else m,self.e if e is None else e,'2026-11-08T04:40:00Z')
     def altered(self,change):
         x=json.loads(self.body);change(x);return self.m.replace(self.body,json.dumps(x,indent=2))
     def reject(self,m):
         with self.assertRaises(ValueError):self.check(m)
-    def test_actual(self):self.assertEqual(self.check()['funding_usd'],'20.00')
+    def test_actual(self):self.assertEqual(self.check()['funding_usd'],'40.00' if gate.ADHOC_ID in self.m else '20.00')
     def test_duplicate_same_record(self):self.reject(self.m+'\n```cfb-funding-json\n'+self.body+'\n```\n')
     def test_duplicate_source_key(self):
         x=json.loads(self.body);x['funding_id']='OTHER';self.reject(self.m+'\n```cfb-funding-json\n'+json.dumps(x)+'\n```\n')
@@ -33,7 +33,7 @@ class MoneyTests(unittest.TestCase):
     def test_cash_balance_inference(self):self.reject(self.altered(lambda x:x.update(cash_balance='40.00')))
     def test_ceiling_increase(self):self.reject(self.altered(lambda x:x.update(changes_sandbox_ceiling=True)))
     def test_event_backdate(self):self.reject(self.altered(lambda x:x.update(funding_event_time='2026-10-09T20:26:00-05:00')))
-    def test_future_record(self):self.reject(self.altered(lambda x:x.update(recorded_at_utc='2026-10-13T01:24:34Z')))
+    def test_future_record(self):self.reject(self.altered(lambda x:x.update(recorded_at_utc='2026-11-09T01:24:34Z')))
     def test_forged_source(self):self.reject(self.altered(lambda x:x['source'].update(evidence_type='ASSISTANT_INFERENCE')))
     def test_wrong_execution_reference(self):self.reject(self.altered(lambda x:x['execution_reference'].update(blob='0'*40)))
     def test_duplicate_related_execution(self):self.reject(self.altered(lambda x:x['related_execution_ids'].__setitem__(0,'CFB_OCT09-02')))
@@ -46,6 +46,28 @@ class MoneyTests(unittest.TestCase):
     def test_execution_snapshot_changed(self):
         with self.assertRaises(ValueError):self.check(e=self.e+'\n')
     def test_missing_record(self):self.reject(self.m.replace('```cfb-funding-json','```other-json'))
+    def adhoc_altered(self,change):
+        body=next(b for b in gate.re.findall(r'```cfb-funding-json\n(.*?)\n```',self.m,gate.re.S) if gate.ADHOC_ID in b)
+        row=json.loads(body);change(row)
+        return self.m.replace(body,json.dumps(row,indent=2))
+    def test_adhoc_amount(self):self.reject(self.adhoc_altered(lambda x:x.update(amount_usd='25.00')))
+    def test_adhoc_source(self):self.reject(self.adhoc_altered(lambda x:x['source'].update(evidence_type='ASSISTANT_INFERENCE')))
+    def test_adhoc_duplicate(self):
+        self.reject(self.m+'\n```cfb-funding-json\n'+json.dumps(gate.ADHOC)+'\n```\n')
+    def test_adhoc_source_key_reuse(self):
+        x=dict(gate.ADHOC);x['funding_id']='OTHER'
+        self.reject(self.m+'\n```cfb-funding-json\n'+json.dumps(x)+'\n```\n')
+    def test_adhoc_future(self):
+        with self.assertRaises(ValueError):gate.audit(self.m,self.e,'2026-11-08T00:43:51Z')
+    def test_adhoc_total(self):self.reject(self.m.replace(gate.ADHOC_TOTAL,gate.ADHOC_TOTAL.replace('40.00','45.00')))
+    def test_adhoc_sandbox(self):self.reject(self.adhoc_altered(lambda x:x.update(changes_sandbox_ceiling=True)))
+    def test_adhoc_unknown_field(self):self.reject(self.adhoc_altered(lambda x:x.update(bank_transfer_done=True)))
+    def test_adhoc_removed(self):
+        m=gate.re.sub(r'^```cfb-funding-json\s*\n(.*?)^```\s*$',lambda x:'' if gate.ADHOC_ID in x.group(1) else x.group(0),self.m,flags=gate.re.M|gate.re.S)
+        self.reject(m)
+    def test_historical_original_boundary(self):
+        m=gate.re.sub(r'^```cfb-funding-json\s*\n(.*?)^```\s*$',lambda x:'' if gate.ADHOC_ID in x.group(1) else x.group(0),self.m,flags=gate.re.M|gate.re.S).replace(gate.ADHOC_TOTAL,'')
+        self.assertEqual(gate.audit(m,self.e,'2026-10-12T01:34:27Z')['funding_usd'],'20.00')
     def nav(self,change=None):
         p=[{'path':gate.PATH,'blob':gate.blob(self.m),'purpose':'CURRENT_MONEY_LEDGER: confirmed funding'}]
         if change:change(p)
