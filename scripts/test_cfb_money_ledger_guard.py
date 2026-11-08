@@ -50,6 +50,7 @@ class MoneyTests(unittest.TestCase):
         body=next(b for b in gate.re.findall(r'```cfb-funding-json\n(.*?)\n```',self.m,gate.re.S) if gate.ADHOC_ID in b)
         row=json.loads(body);change(row)
         return self.m.replace(body,json.dumps(row,indent=2))
+    def test_complete_money_hash(self):self.assertEqual(self.check()['money_blob'],gate.blob(self.m))
     def test_adhoc_amount(self):self.reject(self.adhoc_altered(lambda x:x.update(amount_usd='25.00')))
     def test_adhoc_source(self):self.reject(self.adhoc_altered(lambda x:x['source'].update(evidence_type='ASSISTANT_INFERENCE')))
     def test_adhoc_duplicate(self):
