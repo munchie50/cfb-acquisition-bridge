@@ -1,0 +1,39 @@
+{
+  "schema": "CFB_GAP_REPAIR_TERMINAL_CANDIDATE_V1",
+  "recorded_at_utc": "2026-11-08T16:52:27Z",
+  "scope": "Weeklyselector/currenthandoffrepaironly",
+  "terminal": "BOUNDED_REPAIR_PASS;OVERALL_PRODUCTION_INCOMPLETE",
+  "audit": {
+    "path": "evidence/audits/CFB_WEEKLY_SELECTOR_HANDOFF_GAPS_20261108T164549Z_AUDIT.json",
+    "blob": "3dda78c7557abaa4de94357995e1815cf632b853",
+    "independent_exact_readback": true
+  },
+  "proof": {
+    "tests": 37,
+    "targeted": "PASS",
+    "prewrite_and_postreadback_preflight": "PASS421pointers",
+    "code_blob": "56bbb5d61bfaff01fc2bfa2216c504a9514e1c90",
+    "tests_blob": "96622cc1e5adb817701c29abaca45f9195ac2647",
+    "register_blob": "7c6fdbeeb97a25c28e6eed0414e85e405983768e",
+    "index_blob": "8e8482d11921c8e01f689769cf0e77e166b70aac",
+    "existing_integration_ci": {
+      "id": 42501871373,
+      "head": "6845d162465090c517457754ac7ef85e4613b606",
+      "conclusion": "success"
+    }
+  },
+  "completed": [
+    "ExactqualifiedWeek10R2currentselector",
+    "Stale17outcomequeueandASUofficialgapdispositioncorrected",
+    "OlderHealthrecordlabelhistorical;currentboundedproofsintegrated"
+  ],
+  "remaining": [
+    "Monitor13CTnaturalproductionproof",
+    "EveningworkerDNS/handoff",
+    "Healthhistoricalcoverage",
+    "Booksettlement/cash",
+    "Scientificinput/errorcauses"
+  ],
+  "effects": "NoChampion/model/frozenprediction/market/decision/sheet/wager/money/task/schedulechange",
+  "closure": "Separateclosureafterexactcandidatereadback"
+}
