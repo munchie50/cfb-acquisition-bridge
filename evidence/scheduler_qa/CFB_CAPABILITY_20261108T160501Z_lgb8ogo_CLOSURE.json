@@ -1,0 +1,75 @@
+{
+  "schema": "CFB_WORKER_CAPABILITY_CLOSURE_V1",
+  "correlation_id": "CFB_CAPABILITY_20261108T160501Z_lgb8ogo",
+  "invocation_id": "0ed6057b-8c70-8327-9230-825d1d104f2e",
+  "closed_at_utc": "2026-11-08T16:07:57Z",
+  "final_verdict": "BOUNDARY_PASS",
+  "issued_only_after_independent_exact_candidate_readback": true,
+  "candidate": {
+    "path": "evidence/scheduler_qa/CFB_CAPABILITY_20261108T160501Z_lgb8ogo_TERMINAL_CANDIDATE.json",
+    "blob": "e29e081998f15291ae10f7393eada214b97f5f1d",
+    "commit": "97181f45fb9182f2bc8a66f061bfce2497de3352",
+    "independent_exact_readback": true
+  },
+  "result": {
+    "path": "evidence/scheduler_qa/CFB_CAPABILITY_20261108T160501Z_lgb8ogo_RESULT.json",
+    "blob": "9c0687a2a2884b6ace78ce3112b6f04da2746047",
+    "commit": "85c7f98714e24b03460f8989faee2d3e84a85f26",
+    "independent_exact_readback": true
+  },
+  "startup": {
+    "path": "evidence/scheduler_qa/CFB_CAPABILITY_20261108T160501Z_lgb8ogo_STARTED.json",
+    "blob": "13228bea8a2e622995dbd824038dda1050f2a434",
+    "independent_exact_readback": true
+  },
+  "production_definitions": {
+    "path": "evidence/scheduler_qa/CFB_CAPABILITY_20261108T160501Z_lgb8ogo_BASELINE.json",
+    "blob": "ebdc991671d1c0912c182d2626a3ca690eeab547",
+    "commit": "c26e08e408fc5398014cf6479e1b51c912da02f4",
+    "independent_exact_readback": true
+  },
+  "postwork_exact_comparison": [
+    {
+      "id": "6ae766e788d881919726d0eeb44450dd",
+      "title_exact": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true
+    },
+    {
+      "id": "6ae76df2ece4819197f91fb10076dea7",
+      "title_exact": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true
+    },
+    {
+      "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+      "title_exact": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true
+    },
+    {
+      "id": "6ae76df60e0c819182e2cfab1b83846a",
+      "title_exact": true,
+      "prompt_exact": true,
+      "schedule_exact": true,
+      "enabled_exact": true
+    }
+  ],
+  "verified_stages": [
+    "SHELL_EXPOSURE",
+    "CONNECTOR_TO_BINARY_TRANSFER",
+    "HELPER_VERIFICATION",
+    "CHECKOUT"
+  ],
+  "checkout": "Single exact-byte normal helper execution exit0; pinned fresh main/fullancestry/51immutable reviews",
+  "production_parity": "UNPROVED; original production inventories inaccessible; separate historical container shell/transfer support not established",
+  "first_absent_artifact": null,
+  "observed_error": null,
+  "scope": "Bounded worker proof only; not production completion or configuration repair. No compiler/regression/research/publication/canonical/model/wager/money/task/environment changes.",
+  "history": "Prior results and failures retained",
+  "next_action": "Verify actual production worker's documented shell and verifiable complete-data transfer path without mandating one alias; configure supported environment only through authorized product controls if missing",
+  "lifecycle": "Normal one-time expiry; no task mutations"
+}
