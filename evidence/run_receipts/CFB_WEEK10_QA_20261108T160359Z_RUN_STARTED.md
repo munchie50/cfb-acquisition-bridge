@@ -1,0 +1,2 @@
+# Manual Week10 QA continuation
+Recorded at actual 2026-11-08T16:03:59Z before canonical mutation. Read-only recovery/source work began earlier at observed16:00:40Z; this receipt is not backdated to that start. Scope: qualify remaining official outcomes, independent scorecard arithmetic, learning update and scheduled-test reconciliation. Runtime helper exact bytes verified and one pinned full checkout succeeded at637409099c0715ef8e9ad8a7ec771d7782f4131e. No current betting decisions or historical run upgrade. Champion/wager/money/task effects NONE.
