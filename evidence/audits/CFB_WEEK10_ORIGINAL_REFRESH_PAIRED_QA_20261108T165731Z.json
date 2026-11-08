@@ -1,0 +1,1662 @@
+{
+  "schema": "CFB_WEEK10_ORIGINAL_VS_ACCEPTED_REFRESH_POSTGAME_DIAGNOSTIC_V1",
+  "scope": "Paired55only;separateall63refreshdescriptive;notChampion/Challengercomparison,scientificreacceptance,trainingorbettingedge",
+  "original_cutoff_utc": "2026-09-26T03:47:37.497112+00:00",
+  "refresh_cutoff_utc": "2026-11-03T00:17:26.895461+00:00",
+  "accepted_refresh_artifact_id": 13193176113,
+  "accepted_refresh_zip_sha256": "98e6af5534b233f3284b6178fe410a1fffcb80420e0da3dae8b1c92a13c52567",
+  "summary": {
+    "original_matched55": {
+      "n": 55,
+      "margin_abs_mean": "17.23919997835150850618181818",
+      "total_abs_mean": "15.19184934836414950909090909",
+      "brier_mean": "0.2698566683962613094096467027",
+      "margin_direction_correct": 27,
+      "probability_classifier_correct": 30
+    },
+    "refresh_matched55": {
+      "n": 55,
+      "margin_abs_mean": "14.86770563117816688127272727",
+      "total_abs_mean": "13.84711823043108703636363636",
+      "brier_mean": "0.2262437826821760815083317493",
+      "margin_direction_correct": 33,
+      "probability_classifier_correct": 33
+    },
+    "refresh_all63_separate_population": {
+      "n": 63,
+      "margin_abs_mean": "14.15884022428765875984126984",
+      "total_abs_mean": "14.03801037821151377777777778",
+      "brier_mean": "0.2283121895879279625473243006",
+      "margin_direction_correct": 37,
+      "probability_classifier_correct": 37
+    }
+  },
+  "paired55": {
+    "margin_abs": {
+      "mean_refresh_minus_original": "-2.371494347173341624909090909",
+      "improved": 34,
+      "worse": 21,
+      "equal": 0
+    },
+    "total_abs": {
+      "mean_refresh_minus_original": "-1.344731117933062472727272727",
+      "improved": 35,
+      "worse": 20,
+      "equal": 0
+    },
+    "brier": {
+      "mean_refresh_minus_original": "-0.04361288571408522790131495315",
+      "improved": 34,
+      "worse": 21,
+      "equal": 0
+    }
+  },
+  "rows": [
+    {
+      "game_id": "401860913",
+      "away_team": "Fresno State",
+      "home_team": "Utah State",
+      "away_score": 10,
+      "home_score": 17,
+      "original": {
+        "margin_abs": "12.165970677350148",
+        "total_abs": "17.0004645862941",
+        "brier": "0.3864889278695646822817981144",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "7.33994508318430483",
+        "total_abs": "21.92593907018468",
+        "brier": "0.2695957881110469624116388012",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-0.33994508318430483",
+        "pred_total": "48.92593907018468",
+        "pred_win": "0.4807738564834712"
+      }
+    },
+    {
+      "game_id": "401864532",
+      "away_team": "Hawai'i",
+      "home_team": "UTEP",
+      "away_score": 17,
+      "home_score": 14,
+      "original": {
+        "margin_abs": "3.8180999427252562",
+        "total_abs": "16.37022218931154",
+        "brier": "0.2369695099266874670344442757",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "1.307713251578955",
+        "total_abs": "18.849915363214386",
+        "brier": "0.1240029491579881905349906465",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-4.307713251578955",
+        "pred_total": "49.849915363214386",
+        "pred_win": "0.3521405247312331"
+      }
+    },
+    {
+      "game_id": "401856856",
+      "away_team": "West Virginia",
+      "home_team": "Texas Tech",
+      "away_score": 48,
+      "home_score": 53,
+      "original": {
+        "margin_abs": "4.8011550927987613",
+        "total_abs": "47.375532410626455",
+        "brier": "0.1493838030281033783168418273",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "5.35936271949545",
+        "total_abs": "40.29112732304915",
+        "brier": "0.03569349111414493790763894640",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "10.35936271949545",
+        "pred_total": "60.70887267695085",
+        "pred_win": "0.8110727888467494"
+      }
+    },
+    {
+      "game_id": "401864535",
+      "away_team": "Wyoming",
+      "home_team": "UNLV",
+      "away_score": 41,
+      "home_score": 35,
+      "original": {
+        "margin_abs": "7.7513344391580845",
+        "total_abs": "31.49681229237582",
+        "brier": "0.2317152156626866374174972047",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "10.272996602803708",
+        "total_abs": "25.05323959008441",
+        "brier": "0.3501381947116663259448551371",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "4.272996602803708",
+        "pred_total": "50.94676040991559",
+        "pred_win": "0.5917247626318053"
+      }
+    },
+    {
+      "game_id": "401860912",
+      "away_team": "Texas State",
+      "home_team": "Oregon State",
+      "away_score": 42,
+      "home_score": 21,
+      "original": {
+        "margin_abs": "28.596247276148411",
+        "total_abs": "2.11107277964203",
+        "brier": "0.4918017595789886508469892718",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "29.380567655947193",
+        "total_abs": "4.05227618737068",
+        "brier": "0.5165994731356374880655291012",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "8.380567655947193",
+        "pred_total": "67.05227618737068",
+        "pred_win": "0.7187485465276695"
+      }
+    },
+    {
+      "game_id": "401870795",
+      "away_team": "Liberty",
+      "home_team": "New Mexico State",
+      "away_score": 30,
+      "home_score": 14,
+      "original": null,
+      "accepted_refresh": {
+        "margin_abs": "7.47671311741988",
+        "total_abs": "4.71870205752175",
+        "brier": "0.09454301632083405096155679575",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-8.52328688258012",
+        "pred_total": "48.71870205752175",
+        "pred_win": "0.3074784810695442"
+      }
+    },
+    {
+      "game_id": "401856739",
+      "away_team": "Oklahoma",
+      "home_team": "Florida",
+      "away_score": 23,
+      "home_score": 7,
+      "original": {
+        "margin_abs": "25.171592972348307",
+        "total_abs": "21.110471208670816",
+        "brier": "0.5133230243717707452560459155",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "21.8461330512594305",
+        "total_abs": "22.19943198276177",
+        "brier": "0.4077855991533710148522954440",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "5.8461330512594305",
+        "pred_total": "52.19943198276177",
+        "pred_win": "0.6385809260801414"
+      }
+    },
+    {
+      "game_id": "401862823",
+      "away_team": "Air Force",
+      "home_team": "Army",
+      "away_score": 24,
+      "home_score": 21,
+      "original": null,
+      "accepted_refresh": {
+        "margin_abs": "4.9155239482459474",
+        "total_abs": "5.99643067365018",
+        "brier": "0.3703305262747432286418768071",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "1.9155239482459474",
+        "pred_total": "50.99643067365018",
+        "pred_win": "0.6085478833047924"
+      }
+    },
+    {
+      "game_id": "401856852",
+      "away_team": "Colorado",
+      "home_team": "Arizona State",
+      "away_score": 10,
+      "home_score": 20,
+      "original": {
+        "margin_abs": "1.534212571441335",
+        "total_abs": "22.14262652604433",
+        "brier": "0.08589891728038345881215912897",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "3.497850913718023",
+        "total_abs": "25.30478711197899",
+        "brier": "0.1189228522477781163286063313",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "6.502149086281977",
+        "pred_total": "55.30478711197899",
+        "pred_win": "0.6551480719964319"
+      }
+    },
+    {
+      "game_id": "401856741",
+      "away_team": "Georgia",
+      "home_team": "Ole Miss",
+      "away_score": 42,
+      "home_score": 7,
+      "original": {
+        "margin_abs": "23.964577970882003",
+        "total_abs": "13.08393125657636",
+        "brier": "0.06928934758734077958519165026",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "32.2297266089211387",
+        "total_abs": "9.56843510857537",
+        "brier": "0.2007421032774397674891822110",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-2.7702733910788613",
+        "pred_total": "58.56843510857537",
+        "pred_win": "0.4480425239611077"
+      }
+    },
+    {
+      "game_id": "401858513",
+      "away_team": "Iowa",
+      "home_team": "Northwestern",
+      "away_score": 24,
+      "home_score": 10,
+      "original": null,
+      "accepted_refresh": {
+        "margin_abs": "18.62639480907203",
+        "total_abs": "16.10429611031789",
+        "brier": "0.3827492217229633428271623267",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "4.62639480907203",
+        "pred_total": "50.10429611031789",
+        "pred_win": "0.6186672948548059"
+      }
+    },
+    {
+      "game_id": "401858291",
+      "away_team": "Miami",
+      "home_team": "Notre Dame",
+      "away_score": 24,
+      "home_score": 31,
+      "original": {
+        "margin_abs": "7.2668060664913918",
+        "total_abs": "4.01774061869604",
+        "brier": "0.2403810202786703829253822621",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "3.455801015105353",
+        "total_abs": "1.54318349987581",
+        "brier": "0.1425268529838559655919066299",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "3.544198984894647",
+        "pred_total": "56.54318349987581",
+        "pred_win": "0.6224727122659132"
+      }
+    },
+    {
+      "game_id": "401858511",
+      "away_team": "Michigan State",
+      "home_team": "Michigan",
+      "away_score": 15,
+      "home_score": 6,
+      "original": {
+        "margin_abs": "19.64459588763575",
+        "total_abs": "16.84522705231792",
+        "brier": "0.5349050746682802187646625779",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "20.898320411660634",
+        "total_abs": "21.65446412049769",
+        "brier": "0.5588794934942006120645735772",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "11.898320411660634",
+        "pred_total": "42.65446412049769",
+        "pred_win": "0.7475824325746296"
+      }
+    },
+    {
+      "game_id": "401858287",
+      "away_team": "Louisville",
+      "home_team": "Georgia Tech",
+      "away_score": 44,
+      "home_score": 17,
+      "original": {
+        "margin_abs": "22.801463241899241",
+        "total_abs": "1.775155970970424",
+        "brier": "0.1925596213908532792075250868",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "20.675032794319047",
+        "total_abs": "1.322049221420095",
+        "brier": "0.1307270505684697860397808338",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-6.324967205680953",
+        "pred_total": "62.322049221420095",
+        "pred_win": "0.36156195951519815"
+      }
+    },
+    {
+      "game_id": "401871075",
+      "away_team": "Sam Houston",
+      "home_team": "Jacksonville State",
+      "away_score": 14,
+      "home_score": 47,
+      "original": {
+        "margin_abs": "37.468927683321684",
+        "total_abs": "13.218702983697035",
+        "brier": "0.3760640446021682898632635470",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "20.509745126350545",
+        "total_abs": "12.336138097056356",
+        "brier": "0.05032285414462102789084142681",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "12.490254873649455",
+        "pred_total": "48.663861902943644",
+        "pred_win": "0.7756724400689451"
+      }
+    },
+    {
+      "game_id": "401856745",
+      "away_team": "Kentucky",
+      "home_team": "Tennessee",
+      "away_score": 6,
+      "home_score": 34,
+      "original": {
+        "margin_abs": "12.61542678054232",
+        "total_abs": "17.266263746361346",
+        "brier": "0.02809328051192170807533928337",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "21.332481501708924",
+        "total_abs": "13.022739994021194",
+        "brier": "0.1150058414214987106876132240",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "6.667518498291076",
+        "pred_total": "53.022739994021194",
+        "pred_win": "0.6608748882469794"
+      }
+    },
+    {
+      "game_id": "401860911",
+      "away_team": "Boise State",
+      "home_team": "Colorado State",
+      "away_score": 64,
+      "home_score": 38,
+      "original": {
+        "margin_abs": "26.7553368849316238",
+        "total_abs": "45.151564789227514",
+        "brier": "0.3054397896049423474068365106",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "16.667215039232959",
+        "total_abs": "39.17435630606233",
+        "brier": "0.09550329936672283416212866173",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-9.332784960767041",
+        "pred_total": "62.82564369393767",
+        "pred_win": "0.3090360810111383"
+      }
+    },
+    {
+      "game_id": "401869968",
+      "away_team": "South Alabama",
+      "home_team": "Louisiana",
+      "away_score": 26,
+      "home_score": 28,
+      "original": {
+        "margin_abs": "2.078471967246623",
+        "total_abs": "3.85133280677704",
+        "brier": "0.1359541707126163113651858834",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "6.114315486810618",
+        "total_abs": "0.229368715421934",
+        "brier": "0.07984753630023431248487794603",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "8.114315486810618",
+        "pred_total": "53.770631284578066",
+        "pred_win": "0.7174269363505532"
+      }
+    },
+    {
+      "game_id": "401858517",
+      "away_team": "Rutgers",
+      "home_team": "Wisconsin",
+      "away_score": 10,
+      "home_score": 31,
+      "original": null,
+      "accepted_refresh": {
+        "margin_abs": "9.471839523447054",
+        "total_abs": "10.704549689317695",
+        "brier": "0.06286316912905138077567648172",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "11.528160476552946",
+        "pred_total": "51.704549689317695",
+        "pred_win": "0.7492747138219773"
+      }
+    },
+    {
+      "game_id": "401856742",
+      "away_team": "Vanderbilt",
+      "home_team": "Mississippi State",
+      "away_score": 25,
+      "home_score": 23,
+      "original": {
+        "margin_abs": "17.549626345548761",
+        "total_abs": "7.56747078426483",
+        "brier": "0.6694522089531403082501379172",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "11.206496668819883",
+        "total_abs": "7.28310532506843",
+        "brier": "0.4600301480924519103123019036",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "9.206496668819883",
+        "pred_total": "55.28310532506843",
+        "pred_win": "0.6782552234170054"
+      }
+    },
+    {
+      "game_id": "401871074",
+      "away_team": "Missouri State",
+      "home_team": "Florida International",
+      "away_score": 20,
+      "home_score": 23,
+      "original": {
+        "margin_abs": "3.471677799283147",
+        "total_abs": "7.89495186078102",
+        "brier": "0.1352548308978075076577595823",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "3.486211719326694",
+        "total_abs": "8.50744316747735",
+        "brier": "0.1259540582160127892298018048",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "6.486211719326694",
+        "pred_total": "51.50744316747735",
+        "pred_win": "0.6450999320709944"
+      }
+    },
+    {
+      "game_id": "401864534",
+      "away_team": "Northern Illinois",
+      "home_team": "San Jos\u00e9 State",
+      "away_score": 19,
+      "home_score": 30,
+      "original": {
+        "margin_abs": "1.216751671820077",
+        "total_abs": "1.109095593377916",
+        "brier": "0.06532567574649096164648981558",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "0.523582646536692",
+        "total_abs": "3.78392603671246",
+        "brier": "0.06207404035443027801124181580",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "11.523582646536692",
+        "pred_total": "52.78392603671246",
+        "pred_win": "0.7508533757916229"
+      }
+    },
+    {
+      "game_id": "401871098",
+      "away_team": "Louisiana Tech",
+      "home_team": "Troy",
+      "away_score": 41,
+      "home_score": 17,
+      "original": {
+        "margin_abs": "31.926645201733717",
+        "total_abs": "11.44634123897655",
+        "brier": "0.4328628871360528658162485079",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "23.5417622148002972",
+        "total_abs": "9.12410855761521",
+        "brier": "0.2262894146901795346058608397",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-0.4582377851997028",
+        "pred_total": "48.87589144238479",
+        "pred_win": "0.47569886975919917"
+      }
+    },
+    {
+      "game_id": "401862821",
+      "away_team": "Rice",
+      "home_team": "North Texas",
+      "away_score": 23,
+      "home_score": 52,
+      "original": {
+        "margin_abs": "26.3772278190726666",
+        "total_abs": "22.264456960173135",
+        "brier": "0.1561445083839269755622461642",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "15.648363443291835",
+        "total_abs": "13.17391059238081",
+        "brier": "0.03089762313755071378032618473",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "13.351636556708165",
+        "pred_total": "61.82608940761919",
+        "pred_win": "0.8242228025665709"
+      }
+    },
+    {
+      "game_id": "401856850",
+      "away_team": "UCF",
+      "home_team": "Kansas",
+      "away_score": 33,
+      "home_score": 32,
+      "original": {
+        "margin_abs": "2.060836045636887",
+        "total_abs": "14.917026522160796",
+        "brier": "0.2791491969899134308046338324",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "8.039243083522649",
+        "total_abs": "10.65995191438284",
+        "brier": "0.4333451558797567848427208153",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "7.039243083522649",
+        "pred_total": "54.34004808561716",
+        "pred_win": "0.6582895684117718"
+      }
+    },
+    {
+      "game_id": "401858290",
+      "away_team": "Merrimack",
+      "home_team": "Wake Forest",
+      "away_score": 0,
+      "home_score": 77,
+      "original": {
+        "margin_abs": "49.880127050381216",
+        "total_abs": "23.200269061402835",
+        "brier": "0.004634976937698719372349391104",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "32.742901569209195",
+        "total_abs": "20.39880459417023",
+        "brier": "0.0001488686274447754024099068617",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "44.257098430790805",
+        "pred_total": "56.60119540582977",
+        "pred_win": "0.9877988268004763"
+      }
+    },
+    {
+      "game_id": "401871076",
+      "away_team": "Western Kentucky",
+      "home_team": "Middle Tennessee",
+      "away_score": 42,
+      "home_score": 51,
+      "original": {
+        "margin_abs": "18.857095018909256",
+        "total_abs": "42.46375284730357",
+        "brier": "0.003695587157491562804493997346",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "5.3363015864422807",
+        "total_abs": "39.990820765456284",
+        "brier": "0.1749914679969927625287130020",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "3.6636984135577193",
+        "pred_total": "53.009179234543716",
+        "pred_win": "0.5816801845513498"
+      }
+    },
+    {
+      "game_id": "401858516",
+      "away_team": "Penn State",
+      "home_team": "Washington",
+      "away_score": 28,
+      "home_score": 25,
+      "original": {
+        "margin_abs": "0.1495475114994615",
+        "total_abs": "5.195647383724115",
+        "brier": "0.1877557616004230634642523573",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "5.9236371687896896",
+        "total_abs": "2.89225766085262",
+        "brier": "0.3274371825972171877207557028",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "2.9236371687896896",
+        "pred_total": "50.10774233914738",
+        "pred_win": "0.5722212706612864"
+      }
+    },
+    {
+      "game_id": "401862819",
+      "away_team": "Charlotte",
+      "home_team": "UAB",
+      "away_score": 12,
+      "home_score": 23,
+      "original": null,
+      "accepted_refresh": {
+        "margin_abs": "1.058097101402375",
+        "total_abs": "17.880669788904605",
+        "brier": "0.05388712682745175669981702305",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "12.058097101402375",
+        "pred_total": "52.880669788904605",
+        "pred_win": "0.7678639906704439"
+      }
+    },
+    {
+      "game_id": "401856740",
+      "away_team": "Alabama",
+      "home_team": "LSU",
+      "away_score": 31,
+      "home_score": 13,
+      "original": {
+        "margin_abs": "21.5090584473900757",
+        "total_abs": "10.06402401878285",
+        "brier": "0.3242822961791674522916605157",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "27.789364222685926",
+        "total_abs": "11.638871599174216",
+        "brier": "0.5286213238316670035540268483",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "9.789364222685926",
+        "pred_total": "55.638871599174216",
+        "pred_win": "0.7270634936727789"
+      }
+    },
+    {
+      "game_id": "401856851",
+      "away_team": "Cincinnati",
+      "home_team": "Houston",
+      "away_score": 24,
+      "home_score": 31,
+      "original": {
+        "margin_abs": "0.466094858371314",
+        "total_abs": "2.33789708596704",
+        "brier": "0.09563394023614171637647474931",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "0.62640664988836",
+        "total_abs": "5.233803856563696",
+        "brier": "0.08285097813896031160387497729",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "7.62640664988836",
+        "pred_total": "60.233803856563696",
+        "pred_win": "0.7121615415915373"
+      }
+    },
+    {
+      "game_id": "401858514",
+      "away_team": "Oregon",
+      "home_team": "Ohio State",
+      "away_score": 41,
+      "home_score": 28,
+      "original": {
+        "margin_abs": "25.6572944597905",
+        "total_abs": "11.54374747295359",
+        "brier": "0.6193772181772899105082567799",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "23.776621827802861",
+        "total_abs": "15.455443614450836",
+        "brier": "0.5691747593721316348783825302",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "10.776621827802861",
+        "pred_total": "53.544556385549164",
+        "pred_win": "0.7544367166118916"
+      }
+    },
+    {
+      "game_id": "401862820",
+      "away_team": "Temple",
+      "home_team": "Navy",
+      "away_score": 35,
+      "home_score": 42,
+      "original": null,
+      "accepted_refresh": {
+        "margin_abs": "1.373766500481221",
+        "total_abs": "24.21929391432779",
+        "brier": "0.1215774545808419384172995254",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "5.626233499518779",
+        "pred_total": "52.78070608567221",
+        "pred_win": "0.6513204127270397"
+      }
+    },
+    {
+      "game_id": "401869951",
+      "away_team": "Marshall",
+      "home_team": "Georgia Southern",
+      "away_score": 13,
+      "home_score": 49,
+      "original": {
+        "margin_abs": "20.970158892038686",
+        "total_abs": "16.947515880785154",
+        "brier": "0.04150769715562290815546849618",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "26.275483320988979",
+        "total_abs": "9.871475024907454",
+        "brier": "0.07645689770229262621220128793",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "9.724516679011021",
+        "pred_total": "52.128524975092546",
+        "pred_win": "0.7234915956027871"
+      }
+    },
+    {
+      "game_id": "401871073",
+      "away_team": "Delaware",
+      "home_team": "Kennesaw State",
+      "away_score": 40,
+      "home_score": 42,
+      "original": {
+        "margin_abs": "1.82441840982329304",
+        "total_abs": "31.886697293109435",
+        "brier": "0.2604306808755562103680161026",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "1.7411894045167347",
+        "total_abs": "27.320681882806404",
+        "brier": "0.1624365538847220646571421296",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "3.7411894045167347",
+        "pred_total": "54.679318117193596",
+        "pred_win": "0.5969658154886585"
+      }
+    },
+    {
+      "game_id": "401869936",
+      "away_team": "UL Monroe",
+      "home_team": "Arkansas State",
+      "away_score": 19,
+      "home_score": 17,
+      "original": {
+        "margin_abs": "15.976858604363448",
+        "total_abs": "21.45655141204326",
+        "brier": "0.6473614466647475233665666437",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "12.621861627024163",
+        "total_abs": "19.44044329101636",
+        "brier": "0.5555440878856626154478571526",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "10.621861627024163",
+        "pred_total": "55.44044329101636",
+        "pred_win": "0.7453482997134042"
+      }
+    },
+    {
+      "game_id": "401856744",
+      "away_team": "Texas A&M",
+      "home_team": "South Carolina",
+      "away_score": 9,
+      "home_score": 17,
+      "original": {
+        "margin_abs": "4.715251331697846",
+        "total_abs": "24.5036568944936",
+        "brier": "0.06479201829035725512454261538",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "0.414051784456282",
+        "total_abs": "26.76133614687476",
+        "brier": "0.1032257361948661201893572648",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "8.414051784456282",
+        "pred_total": "52.76133614687476",
+        "pred_win": "0.6787123777751995"
+      }
+    },
+    {
+      "game_id": "401869927",
+      "away_team": "Georgia State",
+      "home_team": "App State",
+      "away_score": 39,
+      "home_score": 23,
+      "original": {
+        "margin_abs": "23.049278887884242",
+        "total_abs": "5.881989750169126",
+        "brier": "0.4565518919516685440909793111",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "19.190847687981535",
+        "total_abs": "6.36820774756406",
+        "brier": "0.3477413613569397831585630480",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "3.190847687981535",
+        "pred_total": "55.63179225243594",
+        "pred_win": "0.5896959906230835"
+      }
+    },
+    {
+      "game_id": "401856854",
+      "away_team": "Oklahoma State",
+      "home_team": "Kansas State",
+      "away_score": 66,
+      "home_score": 28,
+      "original": {
+        "margin_abs": "53.665675902746544",
+        "total_abs": "42.68473790376151",
+        "brier": "0.6869600775623116054580260192",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "41.2186945706929873",
+        "total_abs": "34.22355927483245",
+        "brier": "0.3309947903245342476259053037",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "3.2186945706929873",
+        "pred_total": "59.77644072516755",
+        "pred_win": "0.5753214669422081"
+      }
+    },
+    {
+      "game_id": "401869945",
+      "away_team": "Old Dominion",
+      "home_team": "Coastal Carolina",
+      "away_score": 21,
+      "home_score": 8,
+      "original": null,
+      "accepted_refresh": {
+        "margin_abs": "21.982300132629632",
+        "total_abs": "21.259066946515865",
+        "brier": "0.5036888886895258342956216662",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "8.982300132629632",
+        "pred_total": "50.259066946515865",
+        "pred_win": "0.7097104259411199"
+      }
+    },
+    {
+      "game_id": "401856738",
+      "away_team": "Arkansas",
+      "home_team": "Auburn",
+      "away_score": 23,
+      "home_score": 26,
+      "original": {
+        "margin_abs": "13.28981148199242",
+        "total_abs": "5.4504980271418",
+        "brier": "0.03651231266740233795599463490",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "2.205667587291583",
+        "total_abs": "3.57288799441639",
+        "brier": "0.1532654653739515489922283073",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "5.205667587291583",
+        "pred_total": "52.57288799441639",
+        "pred_win": "0.6085086650078299"
+      }
+    },
+    {
+      "game_id": "401858515",
+      "away_team": "Maryland",
+      "home_team": "Purdue",
+      "away_score": 34,
+      "home_score": 29,
+      "original": {
+        "margin_abs": "3.130447755193787",
+        "total_abs": "2.6043902762204",
+        "brier": "0.09101481865864156400021019084",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "9.096437992564919",
+        "total_abs": "5.683469438750336",
+        "brier": "0.3429709380469793816652037359",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "4.096437992564919",
+        "pred_total": "57.316530561249664",
+        "pred_win": "0.5856372068499229"
+      }
+    },
+    {
+      "game_id": "401858286",
+      "away_team": "Duke",
+      "home_team": "NC State",
+      "away_score": 41,
+      "home_score": 3,
+      "original": {
+        "margin_abs": "42.228345707284807",
+        "total_abs": "4.620614746519706",
+        "brier": "0.3959931088353740676638136598",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "37.6377603901938962",
+        "total_abs": "8.08220871987871",
+        "brier": "0.2609833656179069646595658038",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-0.3622396098061038",
+        "pred_total": "52.08220871987871",
+        "pred_win": "0.5108653106425479"
+      }
+    },
+    {
+      "game_id": "401858512",
+      "away_team": "UCLA",
+      "home_team": "Minnesota",
+      "away_score": 34,
+      "home_score": 20,
+      "original": {
+        "margin_abs": "16.747681980467277",
+        "total_abs": "1.15854610269629",
+        "brier": "0.3411718708867399241759973710",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "8.91747080461705",
+        "total_abs": "7.59920338145551",
+        "brier": "0.1401510038580433938885144089",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-5.08252919538295",
+        "pred_total": "46.40079661854449",
+        "pred_win": "0.3743674716879705"
+      }
+    },
+    {
+      "game_id": "401858289",
+      "away_team": "Florida State",
+      "home_team": "Boston College",
+      "away_score": 31,
+      "home_score": 24,
+      "original": {
+        "margin_abs": "12.987680854824376",
+        "total_abs": "1.295428054446354",
+        "brier": "0.4309180778033464468705120868",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "8.8885441829902212",
+        "total_abs": "0.01839095234059",
+        "brier": "0.2989039563546603329237179534",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "1.8885441829902212",
+        "pred_total": "54.98160904765941",
+        "pred_win": "0.5467210955822542"
+      }
+    },
+    {
+      "game_id": "401858292",
+      "away_team": "North Carolina",
+      "home_team": "UConn",
+      "away_score": 38,
+      "home_score": 21,
+      "original": {
+        "margin_abs": "21.074878832877464",
+        "total_abs": "7.61817339646106",
+        "brier": "0.3626253198975500783470127297",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "22.480677576150656",
+        "total_abs": "1.41919063491636",
+        "brier": "0.3703515417037591461260809235",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "5.480677576150656",
+        "pred_total": "57.58080936508364",
+        "pred_win": "0.6085651499254284"
+      }
+    },
+    {
+      "game_id": "401858285",
+      "away_team": "Clemson",
+      "home_team": "Syracuse",
+      "away_score": 18,
+      "home_score": 13,
+      "original": null,
+      "accepted_refresh": {
+        "margin_abs": "9.378489282625184",
+        "total_abs": "21.920141973059806",
+        "brier": "0.3506204929743656249041741171",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "4.378489282625184",
+        "pred_total": "52.920141973059806",
+        "pred_win": "0.5921321583686919"
+      }
+    },
+    {
+      "game_id": "401856743",
+      "away_team": "Texas",
+      "home_team": "Missouri",
+      "away_score": 34,
+      "home_score": 20,
+      "original": {
+        "margin_abs": "16.9866386354064347",
+        "total_abs": "6.3683098355131",
+        "brier": "0.2847374987729488424301379541",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "16.541512622194416",
+        "total_abs": "3.09530951086087",
+        "brier": "0.2786942151717629293193400372",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "2.541512622194416",
+        "pred_total": "50.90469048913913",
+        "pred_win": "0.5279149696416677"
+      }
+    },
+    {
+      "game_id": "401856853",
+      "away_team": "Iowa State",
+      "home_team": "Baylor",
+      "away_score": 31,
+      "home_score": 42,
+      "original": {
+        "margin_abs": "6.177778139268866",
+        "total_abs": "26.62498835639547",
+        "brier": "0.1517606753886925045692632302",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "0.631206172555267",
+        "total_abs": "18.76031236777285",
+        "brier": "0.05978399731685682581703722480",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "11.631206172555267",
+        "pred_total": "54.23968763222715",
+        "pred_win": "0.7554923368954322"
+      }
+    },
+    {
+      "game_id": "401862822",
+      "away_team": "Tulsa",
+      "home_team": "Tulane",
+      "away_score": 60,
+      "home_score": 10,
+      "original": {
+        "margin_abs": "42.546618004512178",
+        "total_abs": "24.63026258964693",
+        "brier": "0.09479013329644441587535615513",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "51.6566529471681464",
+        "total_abs": "16.03640001837795",
+        "brier": "0.2777159953332768970848279624",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "1.6566529471681464",
+        "pred_total": "53.96359998162205",
+        "pred_win": "0.5269876614620848"
+      }
+    },
+    {
+      "game_id": "401856849",
+      "away_team": "BYU",
+      "home_team": "Utah",
+      "away_score": 20,
+      "home_score": 28,
+      "original": {
+        "margin_abs": "0.263300728609402",
+        "total_abs": "7.90234467514159",
+        "brier": "0.09471070512175066850477490966",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "0.144562650252796",
+        "total_abs": "7.67350821499952",
+        "brier": "0.09008129860501829126115046195",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "8.144562650252796",
+        "pred_total": "55.67350821499952",
+        "pred_win": "0.6998645329105234"
+      }
+    },
+    {
+      "game_id": "401856855",
+      "away_team": "TCU",
+      "home_team": "Arizona",
+      "away_score": 28,
+      "home_score": 29,
+      "original": {
+        "margin_abs": "0.5517727433164694",
+        "total_abs": "8.247849430237956",
+        "brier": "0.2073078644084791111825670546",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "6.177729519520605",
+        "total_abs": "6.32300229885557",
+        "brier": "0.1129850431152453246385164544",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "7.177729519520605",
+        "pred_total": "50.67699770114443",
+        "pred_win": "0.66386752148112"
+      }
+    },
+    {
+      "game_id": "401864533",
+      "away_team": "New Mexico",
+      "home_team": "Nevada",
+      "away_score": 31,
+      "home_score": 3,
+      "original": {
+        "margin_abs": "24.6215036606532793",
+        "total_abs": "8.162809399335046",
+        "brier": "0.1801447921455283299479402713",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "24.345066777045379",
+        "total_abs": "11.486299811120915",
+        "brier": "0.1803091891748501317320815489",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-3.654933222954621",
+        "pred_total": "45.486299811120915",
+        "pred_win": "0.42462829530643637"
+      }
+    },
+    {
+      "game_id": "401858510",
+      "away_team": "Nebraska",
+      "home_team": "Illinois",
+      "away_score": 13,
+      "home_score": 24,
+      "original": {
+        "margin_abs": "12.761681196539541",
+        "total_abs": "18.71166433271795",
+        "brier": "0.2280857206235757734234824780",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "11.4316927989632904",
+        "total_abs": "15.930468670139426",
+        "brier": "0.2450435818450336174475235632",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-0.4316927989632904",
+        "pred_total": "52.930468670139426",
+        "pred_win": "0.5049812308154027"
+      }
+    },
+    {
+      "game_id": "401862818",
+      "away_team": "South Florida",
+      "home_team": "East Carolina",
+      "away_score": 17,
+      "home_score": 20,
+      "original": {
+        "margin_abs": "14.807863806889149",
+        "total_abs": "11.45215367034799",
+        "brier": "0.6065114482077880059379040534",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "5.1409539548006404",
+        "total_abs": "9.37332343573143",
+        "brier": "0.3271660057041327801713001421",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-2.1409539548006404",
+        "pred_total": "46.37332343573143",
+        "pred_win": "0.42801572949587785"
+      }
+    },
+    {
+      "game_id": "401858288",
+      "away_team": "Virginia Tech",
+      "home_team": "SMU",
+      "away_score": 28,
+      "home_score": 51,
+      "original": {
+        "margin_abs": "25.8565813934429176",
+        "total_abs": "21.49629980267429",
+        "brier": "0.3483312089037767464198479154",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "16.763149991041947",
+        "total_abs": "23.658424630376246",
+        "brier": "0.1234870039066825230988569975",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "6.236850008958053",
+        "pred_total": "55.341575369623754",
+        "pred_win": "0.6485928231998064"
+      }
+    },
+    {
+      "game_id": "401869964",
+      "away_team": "James Madison",
+      "home_team": "Southern Miss",
+      "away_score": 54,
+      "home_score": 23,
+      "original": {
+        "margin_abs": "16.595932138304503",
+        "total_abs": "24.01337658363001",
+        "brier": "0.04323023267030405147984975602",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "24.537909512654872",
+        "total_abs": "18.65500302524202",
+        "brier": "0.1239727396447902819503874121",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-6.462090487345128",
+        "pred_total": "58.34499697475798",
+        "pred_win": "0.35209762800222083"
+      }
+    },
+    {
+      "game_id": "401862817",
+      "away_team": "UTSA",
+      "home_team": "Florida Atlantic",
+      "away_score": 29,
+      "home_score": 60,
+      "original": {
+        "margin_abs": "36.195659872391833",
+        "total_abs": "34.684505080043024",
+        "brier": "0.4132101610975185570261123710",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "30.52587213395365784",
+        "total_abs": "27.17731264323921",
+        "brier": "0.2186561522766234587144763336",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "0.47412786604634216",
+        "pred_total": "61.82268735676079",
+        "pred_win": "0.5323931648525404"
+      }
+    },
+    {
+      "game_id": "401866456",
+      "away_team": "Central Michigan",
+      "home_team": "Eastern Michigan",
+      "away_score": 35,
+      "home_score": 7,
+      "original": {
+        "margin_abs": "25.2139782725279424",
+        "total_abs": "0.92255127170241",
+        "brier": "0.1547854825015533076739188354",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "31.6339012883577855",
+        "total_abs": "5.600109440721525",
+        "brier": "0.3175584465945437260794643817",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "3.6339012883577855",
+        "pred_total": "47.600109440721525",
+        "pred_win": "0.563523244058791"
+      }
+    },
+    {
+      "game_id": "401866455",
+      "away_team": "Ball State",
+      "home_team": "Massachusetts",
+      "away_score": 30,
+      "home_score": 31,
+      "original": {
+        "margin_abs": "25.11695812114495",
+        "total_abs": "10.028786002735345",
+        "brier": "0.004630796375069962225724078085",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "12.048248364461054",
+        "total_abs": "9.24842577148352",
+        "brier": "0.04653752761568884099519956900",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "13.048248364461054",
+        "pred_total": "51.75157422851648",
+        "pred_win": "0.7842744159454219"
+      }
+    },
+    {
+      "game_id": "401866457",
+      "away_team": "Toledo",
+      "home_team": "Sacramento State",
+      "away_score": 20,
+      "home_score": 17,
+      "original": {
+        "margin_abs": "2.156938754516926",
+        "total_abs": "17.25392295084098",
+        "brier": "0.1200092282053700352163679945",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "accepted_refresh": {
+        "margin_abs": "4.125335229332889",
+        "total_abs": "15.38426309505735",
+        "brier": "0.1067417049184351489283775706",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-7.125335229332889",
+        "pred_total": "52.38426309505735",
+        "pred_win": "0.32671349056694177"
+      }
+    },
+    {
+      "game_id": "401866454",
+      "away_team": "Buffalo",
+      "home_team": "Miami (OH)",
+      "away_score": 34,
+      "home_score": 31,
+      "original": {
+        "margin_abs": "14.720713530764943",
+        "total_abs": "11.3606445205235",
+        "brier": "0.5928335085348127757425125023",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "9.388553723149317",
+        "total_abs": "14.17133359494852",
+        "brier": "0.4296702166342417451226408089",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "6.388553723149317",
+        "pred_total": "50.82866640505148",
+        "pred_win": "0.655492346739641"
+      }
+    },
+    {
+      "game_id": "401866453",
+      "away_team": "Ohio",
+      "home_team": "Akron",
+      "away_score": 28,
+      "home_score": 20,
+      "original": {
+        "margin_abs": "18.365389485491425",
+        "total_abs": "4.76064387323792",
+        "brier": "0.5493613888209176525835030765",
+        "margin_direction_correct": 0,
+        "probability_classifier_correct": 0
+      },
+      "accepted_refresh": {
+        "margin_abs": "2.414675036665464",
+        "total_abs": "3.987052279143654",
+        "brier": "0.1438708312347119961238531846",
+        "margin_direction_correct": 1,
+        "probability_classifier_correct": 1
+      },
+      "refresh_numeric_strings": {
+        "pred_margin": "-5.585324963334536",
+        "pred_total": "51.987052279143654",
+        "pred_win": "0.3793030862446442"
+      }
+    }
+  ],
+  "limits": [
+    "Bothsnapshotsremainunchanged;original8exclusionsnotfilled",
+    "Diagnosticoutcomesneverbecameinputstofrozenpredictions",
+    "Singleweekpairedperformancecannotestablishcause,profitabilityorapromotiongate",
+    "Currenttaskruntime/publicationreliabilityisaseparateopenissue"
+  ],
+  "verification": {
+    "accepted_refresh_join_git_blob": "8fd0ba1f85e37b940d9bfe5f13188e2da956b32d",
+    "original_official_outcome_parent": "evidence/operational/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z_R2.json",
+    "official_outcome_delta": "evidence/operational/CFB_WEEK10_OFFICIAL_OUTCOME_QA_20261108T160449Z.json",
+    "exact_directed_ids_and_team_pairs": 63,
+    "matched_original_predictions": 55,
+    "original_exclusions_retained": 8,
+    "independent_float_check": "PASS_1e-12",
+    "scientific_effect": "NONE;acceptedfrozeninputreused,norefit/promotion"
+  }
+}
