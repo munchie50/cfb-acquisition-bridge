@@ -1,0 +1,173 @@
+{
+  "schema": "CFB_DIRECT_IMMUTABLE_BLOB_RESULT_V1",
+  "correlation_id": "CFB_DIRECT_BLOB_20261108T202130Z_srvbimn",
+  "invocation_id": "522b00e6-92a8-8322-a12f-5291a6ea4c00",
+  "trigger": "NATURAL_ONE_TIME_SCHEDULED",
+  "recorded_utc": "2026-11-08T20:23:16Z",
+  "verdict": "DIRECT_API_BOUNDARY_PASS",
+  "startup": {
+    "path": "evidence/scheduler_qa/CFB_DIRECT_BLOB_20261108T202130Z_srvbimn_STARTED.json",
+    "blob": "aea118a80d407c995ab29fd52fd0a0c2a755f587",
+    "independent_exact_readback": true
+  },
+  "timing": {
+    "first_actual_utc": "2026-11-08T20:21:30Z",
+    "scheduled_for": "2026-11-08T20:21:00Z",
+    "recorded_started_at": "2026-11-08T20:21:14.027318Z",
+    "first_actual_delta_seconds": 30,
+    "prior_result_id": "0ed6057b-8c70-8327-9230-825d1d104f2e",
+    "prior_result_is_this_run": false,
+    "material_impact": "None established for direct-blob/checkout boundary; no wait or schedule changes"
+  },
+  "authority": {
+    "authenticated_main": "223fa2c3816d2e89f5953182d39013e2f9e317d4",
+    "authenticated_helper": {
+      "path": "scripts/cfb_runtime_checkout.py",
+      "blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "bytes": 3780
+    },
+    "recovery": {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_266.md",
+      "blob": "4abcf1ebf4406ac6a278587849d5d40e10183d1e"
+    },
+    "plan": {
+      "path": "evidence/scheduler_qa/CFB_DIRECT_BLOB_TRANSPORT_20261108T201627Z_PLAN.json",
+      "blob": "50e8429902b481033163f804e43836146de9a127",
+      "manual_proof": {
+        "status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+        "head": "b7671857605d2390613783da8cd46d8eea42e7af",
+        "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+        "helper_bytes": 3780,
+        "public_API_transport": "PASS2026-11-08T20:16:27.827446Zto20:16:34.000422Z",
+        "checkout_executions": 1,
+        "exit": 0,
+        "full_history": true,
+        "immutable_reviews": 51,
+        "runtime_sha256": "4091683cad2536dc19357f4021bd44edcf353d2dc1d488b70c21c900dfbeac5a"
+      }
+    },
+    "routine": "Freshv5.0+acceptedv5.1A/C+v5.2D/E/F, persistence and two-phase closure read"
+  },
+  "capabilities": {
+    "documented_shell": "tools.exec_command through functions.exec; actually executed Python3.12.14",
+    "binary_writer": "Pythonstdlib pathlib.Path.write_bytes after direct JSON/base64/size/hash checks",
+    "helper_transport": "Shell itself requests public immutable GitHub REST blob; only fresh validated main/blob40hex and positive integer size supplied as dynamic identity inputs. No structured connector helperpayload transferred.",
+    "production_separate_shell": "Reported for1c91e8ef-d80c-8326-9311-4fc64ebdd1a7 in plan; parity remainsUNPROVED"
+  },
+  "direct_api": {
+    "outcome": "PASS",
+    "command": "python3 - <<'PY'\nfrom datetime import datetime, timezone\nimport base64, hashlib, json, pathlib, re, tempfile, urllib.request\nexpected_head = \"223fa2c3816d2e89f5953182d39013e2f9e317d4\"\nexpected_blob = \"b13930cb714eb87c8dce6136ffab6fbceeb44898\"\nexpected_size = 3780\nassert re.fullmatch(r\"[0-9a-f]{40}\", expected_head)\nassert re.fullmatch(r\"[0-9a-f]{40}\", expected_blob)\nassert isinstance(expected_size, int) and expected_size > 0\nrequest = urllib.request.Request(\n    \"https://api.github.com/repos/munchie50/cfb-acquisition-bridge/git/blobs/\" + expected_blob,\n    headers={\"Accept\": \"application/vnd.github+json\", \"User-Agent\": \"CFB-runtime-byte-verification\"})\nrequest_started_utc = datetime.now(timezone.utc).isoformat()\nwith urllib.request.urlopen(request, timeout=20) as response:\n    obj = json.load(response)\nresponse_recovered_by_utc = datetime.now(timezone.utc).isoformat()\nassert isinstance(obj, dict)\nassert obj.get(\"sha\") == expected_blob and obj.get(\"size\") == expected_size\nassert obj.get(\"encoding\") == \"base64\"\nencoded = \"\".join(obj[\"content\"].split())\npayload = base64.b64decode(encoded, validate=True)\nassert base64.b64encode(payload).decode(\"ascii\") == encoded\nassert len(payload) == expected_size\nactual_blob = hashlib.sha1(b\"blob \" + str(len(payload)).encode(\"ascii\") + b\"\\0\" + payload).hexdigest()\nassert actual_blob == expected_blob\ndirectory = pathlib.Path(tempfile.mkdtemp(prefix=\"cfb-direct-blob-\"))\n(directory / \"helper.py\").write_bytes(payload)\nprint(json.dumps({\"status\": \"DIRECT_IMMUTABLE_API_BYTES_VERIFIED\", \"directory\": str(directory),\n                  \"expected_head\": expected_head, \"git_blob\": actual_blob, \"bytes\": len(payload),\n                  \"request_started_utc\": request_started_utc, \"response_recovered_by_utc\": response_recovered_by_utc,\n                  \"response_sha\": obj.get(\"sha\"), \"response_size\": obj.get(\"size\"), \"response_encoding\": obj.get(\"encoding\"),\n                  \"request_url\": request.full_url, \"http_status\": response.status,\n                  \"source_classification\": \"PUBLIC_IMMUTABLE_API_BYTES_VERIFIED_AGAINST_AUTHENTICATED_TREE\"}))\n\nPY",
+    "recipe_policy": "PLAN recipe as written with fresh values; only request/response UTC/status/source-classification observability added. Placeholder comments not executed.",
+    "exit_code": 0,
+    "proof": {
+      "status": "DIRECT_IMMUTABLE_API_BYTES_VERIFIED",
+      "directory": "/tmp/cfb-direct-blob-wes0jzfd",
+      "expected_head": "223fa2c3816d2e89f5953182d39013e2f9e317d4",
+      "git_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "bytes": 3780,
+      "request_started_utc": "2026-11-08T20:22:37.824031+00:00",
+      "response_recovered_by_utc": "2026-11-08T20:22:43.148675+00:00",
+      "response_sha": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "response_size": 3780,
+      "response_encoding": "base64",
+      "request_url": "https://api.github.com/repos/munchie50/cfb-acquisition-bridge/git/blobs/b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "http_status": 200,
+      "source_classification": "PUBLIC_IMMUTABLE_API_BYTES_VERIFIED_AGAINST_AUTHENTICATED_TREE"
+    },
+    "request_timeout_seconds": 20,
+    "request_attempts": 1,
+    "alternate_hosts_or_retries": "NONE",
+    "credential_use": "NONE",
+    "source_classification": "PUBLIC_IMMUTABLE_API_BYTES_VERIFIED_AGAINST_AUTHENTICATED_TREE",
+    "not_claimed": "Authenticated API transport",
+    "pre_binary_write_validation": [
+      "JSONdict",
+      "returnedsha==authenticatedhelperblob",
+      "returnedencodingbase64",
+      "returnedsize==authenticatedtreesize",
+      "strictbase64decode",
+      "canonicalbase64roundtrip",
+      "exactnonzerodecodedbytes",
+      "GitSHA1blobheader+bytes==authenticatedblob"
+    ]
+  },
+  "checkout": {
+    "command": "GIT_TRACE2_EVENT=/tmp/cfb-direct-blob-wes0jzfd/git-trace.jsonl python3 /tmp/cfb-direct-blob-wes0jzfd/helper.py --destination /tmp/cfb-direct-blob-wes0jzfd/checkout --expected-head 223fa2c3816d2e89f5953182d39013e2f9e317d4 > /tmp/cfb-direct-blob-wes0jzfd/runtime.json",
+    "execution_count": 1,
+    "exit_code": 0,
+    "runtime": {
+      "status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+      "repository": "https://github.com/munchie50/cfb-acquisition-bridge.git",
+      "head": "223fa2c3816d2e89f5953182d39013e2f9e317d4",
+      "worktree": "/tmp/cfb-direct-blob-wes0jzfd/checkout",
+      "python": "3.12.14",
+      "scope": "runtime and ancestry only; no research, publication or run acceptance",
+      "immutable_review_count": 51,
+      "runtime_sha256": "51c3e16ada1b12ca02fb5db6ee7dd78f488410564325b0a4905953ab39c04f8f",
+      "pinned_head_verified": true,
+      "full_ancestry": true,
+      "helper_matches_checkout": true
+    },
+    "independent_verification": "Actual real pinned HEAD, full/nonshallow ancestry and helper exact byte equality with checked-out repository",
+    "second_checkout": false
+  },
+  "first_absent_artifact": null,
+  "exact_observed_error": null,
+  "production_definitions": {
+    "fresh_exact_baseline": {
+      "path": "evidence/scheduler_qa/CFB_DIRECT_BLOB_20261108T202130Z_srvbimn_BASELINE.json",
+      "blob": "dec2821477b1f3d0ce3fd33e34cbe52755d9ee49",
+      "commit": "223fa2c3816d2e89f5953182d39013e2f9e317d4",
+      "independent_exact_readback": true
+    },
+    "postwork_checks": [
+      {
+        "id": "6ae76df60e0c819182e2cfab1b83846a",
+        "title_exact": true,
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "timezone_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae766e788d881919726d0eeb44450dd",
+        "title_exact": true,
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "timezone_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76df2ece4819197f91fb10076dea7",
+        "title_exact": true,
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "timezone_exact": true,
+        "enabled_exact": true
+      },
+      {
+        "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+        "title_exact": true,
+        "prompt_exact": true,
+        "schedule_exact": true,
+        "timezone_exact": true,
+        "enabled_exact": true
+      }
+    ],
+    "unchanged": true
+  },
+  "scope": {
+    "production_worker_parity": "UNPROVED",
+    "full_production_completion": "UNPROVED",
+    "compiler_replay": "NOT_RUN",
+    "external_football_paid_research": "NOT_RUN",
+    "live_decisions": "NONE",
+    "canonical_hot_sheet_recovery_model_champion_wager_money_changes": "NONE",
+    "task_workflow_infrastructure_changes": "NONE",
+    "resolver_security_network_settings_changes": "NONE",
+    "history": "All earlier failure and success classifications retained unchanged",
+    "lifecycle": "One occurrence; normal expiry; no run_now/selfschedule/newtask"
+  },
+  "next_action": "Use independent scheduled test readback to assess narrowly qualified production adoption through separately authorized work. This invocation neither changes production nor proves actualproductionworkerparity.",
+  "closure": "Result readback then terminalcandidate exact independent readback before separateclosure"
+}
