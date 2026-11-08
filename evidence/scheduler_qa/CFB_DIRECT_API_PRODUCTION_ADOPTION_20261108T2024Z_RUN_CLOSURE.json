@@ -1,0 +1,39 @@
+{
+  "schema": "CFB_PRODUCTION_TRANSPORT_ADOPTION_CLOSURE_V1",
+  "correlation_id": "CFB_DIRECT_API_PRODUCTION_ADOPTION_20261108T2024Z",
+  "closed_utc": "2026-11-08T20:32:23.311Z",
+  "final_verdict": "VERIFIED_STARTUP_CORRECTION_ADOPTED_PRODUCTION_COMPLETION_OPEN",
+  "issued_after_independent_exact_candidate_readback": true,
+  "candidate": {
+    "path": "evidence/scheduler_qa/CFB_DIRECT_API_PRODUCTION_ADOPTION_20261108T2024Z_TERMINAL_CANDIDATE.json",
+    "blob": "613bf01b8b6e8fe0ae058cf59d77c3f1d9730f58",
+    "commit_sha": "f7cc15a9519a104b276520c8eb1d005341e3785f",
+    "exact_readback": true
+  },
+  "procedure_blob": "bf4383f28cca17e3994339340a62d81962d26bfa",
+  "action_register_blob": "e9f2791dac5d0a10745e77a19d3c891ec84b043f",
+  "recovery_index": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_267.md",
+    "blob": "9301495ba36a0cec61550d03c86a9a749b44e4bc",
+    "pointers": 426,
+    "preflight": "PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY"
+  },
+  "integration_ci": {
+    "id": 42520379644,
+    "head_sha": "d63ffda43048e66136368d32282150c13d9a1aef",
+    "conclusion": "success"
+  },
+  "task_readback": {
+    "monitor_prompt_exact": true,
+    "all_four_schedule_metadata_preserved": true,
+    "other_three_prompts_exact": true,
+    "production_enabled": 4,
+    "test_enabled": false
+  },
+  "proof": "Manual and natural scheduled direct API retrieval/hash verification/one pinned checkout PASS",
+  "production_worker_parity": "UNPROVED",
+  "full_monitor_completion": "UNPROVED",
+  "next": "Next actual production Monitor invocation must demonstrate route plus applicable complete workload and verified closure",
+  "historical_failures": "Preserved; neither Sunday production failure relabelled",
+  "scientific_market_champion_wager_money_changes": "NONE"
+}
