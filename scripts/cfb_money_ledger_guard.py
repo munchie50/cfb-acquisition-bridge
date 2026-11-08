@@ -23,7 +23,7 @@ def dollars(value):
     if not isinstance(value,str) or not re.fullmatch(r'\d+\.\d{2}',value):raise ValueError('USD two-decimal amount required')
     return Decimal(value)
 
-def audit(money,execution,as_of):
+def _audit_original(money,execution,as_of):
     if blob(execution)!=EXECUTION_SHA:raise ValueError('execution reference snapshot not qualified')
     markers=re.findall(r'^```cfb-funding-json\s*$',money,re.M)
     bodies=re.findall(r'^```cfb-funding-json\s*\n(.*?)^```\s*$',money,re.M|re.S)
@@ -67,6 +67,51 @@ def audit(money,execution,as_of):
             'historical_execution_count':15,'historical_stake_usd':'53.45','related_four_stake_usd':'20.00',
             'allocation':'UNASSIGNED','cash_balance':'NOT_COMPUTABLE','money_blob':blob(money),'execution_snapshot_blob':EXECUTION_SHA,
             'scope':'qualified funding record/table/deduplication/reference only; no bank transfer, paid-out return, available bankroll or new allocation/risk authority'}
+
+
+# Explicit direct user authorization, posted in immutable commit
+# c914b1192f27f0328afb5f17d70422b676c5bf9e. This qualifies only this
+# additional transaction; it does not admit arbitrary funding records.
+ADHOC_ID='CFB_ADHOC_ADD20_20261107_001'
+ADHOC={
+    'schema':'CFB_FUNDING_TRANSACTION_V1',
+    'funding_id':ADHOC_ID,
+    'idempotency_key':'USER_ADDITIONAL_20_ADHOC_20261107_AFTER_NOV06_TICKET_INTAKE',
+    'transaction_type':'BANKROLL_FUNDING', 'amount_usd':'20.00',
+    'status':'POSTED_USER_CONFIRMED_ALLOCATION_UNASSIGNED',
+    'budget_class':'UNASSIGNED', 'funding_event_time':'UNSPECIFIED',
+    'recorded_at_utc':'2026-11-08T00:43:52Z',
+    'source':{
+        'original_instruction':'Add twenty additional dollars as an ad hoc entry to the money ledger',
+        'evidence_type':'DIRECT_USER_INSTRUCTION'},
+    'is_wager':False, 'is_wager_return':False,
+    'changes_sandbox_ceiling':False, 'cash_balance':'NOT_RECONCILED'}
+ADHOC_TOTAL='Confirmed explicit funding transactions recorded to date: two totaling $40.00.'
+
+def audit(money,execution,as_of):
+    pattern=r'^```cfb-funding-json\s*\n(.*?)^```\s*$'
+    matches=list(re.finditer(pattern,money,re.M|re.S))
+    rows=[json.loads(m.group(1),object_pairs_hook=unique) for m in matches]
+    extra=[(m,r) for m,r in zip(matches,rows) if isinstance(r,dict) and r.get('funding_id')==ADHOC_ID]
+    if not extra:
+        if ADHOC_TOTAL in money:raise ValueError('additional funding display lacks qualified record')
+        return _audit_original(money,execution,as_of)
+    if len(extra)!=1:raise ValueError('duplicate additional funding')
+    match,row=extra[0]
+    # JSON true must not pass as integer 1 (or conversely) for money/risk flags.
+    if row!=ADHOC or any(row[k] is not False for k in ('is_wager','is_wager_return','changes_sandbox_ceiling')):
+        raise ValueError('additional funding differs from qualified direct instruction')
+    now=datetime.fromisoformat(as_of.replace('Z','+00:00'))
+    at=datetime.fromisoformat(row['recorded_at_utc'].replace('Z','+00:00'))
+    if now.tzinfo is None or at>now:raise ValueError('additional funding recording clock invalid/future')
+    if money.count(ADHOC_TOTAL)!=1:raise ValueError('additional funding total/count mismatch')
+    # Retain every original schema, amount, table, snapshot and deduplication check.
+    original=money[:match.start()]+money[match.end():]
+    result=_audit_original(original,execution,as_of)
+    result.update(verdict='PASS_QUALIFIED_FUNDING_RECORDS_ONLY',
+                  funding_transactions=2,funding_usd='40.00',
+                  qualified_additional_source_commit='c914b1192f27f0328afb5f17d70422b676c5bf9e')
+    return result
 
 def binding(index,money,as_of):
     pointers=read(index,as_of)['frontier']['pointers']
