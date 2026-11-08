@@ -109,7 +109,7 @@ def audit(money,execution,as_of):
     original=money[:match.start()]+money[match.end():]
     result=_audit_original(original,execution,as_of)
     result.update(verdict='PASS_QUALIFIED_FUNDING_RECORDS_ONLY',
-                  funding_transactions=2,funding_usd='40.00',
+                  funding_transactions=2,funding_usd='40.00',money_blob=blob(money),
                   qualified_additional_source_commit='c914b1192f27f0328afb5f17d70422b676c5bf9e')
     return result
 
