@@ -1,0 +1,31 @@
+{
+  "schema": "CFB_MANUAL_QA_TERMINAL_CANDIDATE_V1",
+  "correlation_id": "CFB_WEEK10_QA_20261108T160359Z",
+  "terminal": "RUN_INCOMPLETE",
+  "bounded_completed": [
+    "All63Week10officialfinalsqualified;55modeled8exclusions",
+    "FulloriginalscorecardandSundayR2learningpersisted/readback",
+    "416pointerpreflightandnavigationpassed;exactindexreadback",
+    "ExistingintegrationCI42498305011SUCCESSat73f6cb13f112cf76b0ae38843bd130eb4e36a3a1",
+    "Scheduledcapabilitytest0ed6057b-8c70-8327-9230-825d1d104f2eBOUNDARY_PASSandclosureindependentlyreconciled"
+  ],
+  "audit": {
+    "path": "evidence/audits/CFB_WEEK10_QA_20261108T160359Z_AUDIT.json",
+    "blob": "662ab3b7a7f362304b88c1d79c67ebcc72db6af1",
+    "independent_exact_readback": true
+  },
+  "outcome": {
+    "path": "evidence/operational/CFB_WEEK10_OFFICIAL_OUTCOME_QA_20261108T160449Z.json",
+    "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+  },
+  "weekly": {
+    "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-11-08_R2.md",
+    "blob": "c2d095a4766be648a33cab11d9fb77c0741d4030"
+  },
+  "scorecard_blob": "851efb1dc33e6efb044a5c3bdbd358cf28216f2e",
+  "index_blob": "365d73c66cdbfbd5bc31e95903f69eebe1dbc5e1",
+  "remaining": "Production worker parity/rootcause,Eveningconnectivity,Healthhistoricalcoverage,financialsettlement and scientificfollowthrough remainOPEN;no fullproductionRUN_PASS",
+  "effects": "NoChampion/model/prediction/market/decision/sheet/wager/money/task/schedulechange",
+  "historical_failures": "Preserved;manualoutcomecloseoutdoesnotupgradeSunday9AMorMonitor7AM",
+  "closure": "Separateclosureonlyafterindependentexactcandidatereadback"
+}
