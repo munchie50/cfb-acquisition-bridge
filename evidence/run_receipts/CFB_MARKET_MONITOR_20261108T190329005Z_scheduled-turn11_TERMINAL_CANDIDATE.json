@@ -1,0 +1,31 @@
+{
+  "timestamp_utc": "2026-11-08T19:03:42.146Z",
+  "correlation_id": "scheduled-turn11-20261108T190329005Z",
+  "terminal_status": "RUN_INCOMPLETE",
+  "startup": {
+    "outcome": "PASS",
+    "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261108T190329005Z_scheduled-turn11-20261108T190329005Z.md",
+    "blob": "f120db49f4072495de6d90f30d0f014f595b4c61"
+  },
+  "helper_fetch": {
+    "outcome": "PASS_METADATA_ONLY",
+    "sha": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "encoding": "base64",
+    "base64_length": 5124
+  },
+  "runtime": {
+    "outcome": "BLOCKED",
+    "failure_category": "TOOL_NOT_EXPOSED_IN_ORCHESTRATOR",
+    "detail": "functions.exec documented tool catalog does not expose exec_command; separately available container shell cannot receive unprinted structured connector payload in same cell. No complete authenticated cross-tool binary handoff performed; no checkout attempted.",
+    "classifier_execution": "NOT_RUN"
+  },
+  "stages": {
+    "checkout": "NOT_EXECUTED",
+    "ancestry": "NOT_EXECUTED",
+    "live_source": "NOT_EXECUTED",
+    "decisions": "NOT_EXECUTED",
+    "publication": "NOT_EXECUTED"
+  },
+  "next_action": "Provide documented complete-data bridge from GitHub connector structured base64 to executable binary writer in scheduled worker, then verify unchanged helper and pinned worktree. Preserve existing production cadence.",
+  "no_wager_changes": true
+}
