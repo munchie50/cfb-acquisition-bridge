@@ -640,3 +640,32 @@ Updated officialsubset metrics {"n": 41, "margin_direction_correct": 21, "probab
 Source clocks: requeststarted04:46:54.652100Z; responsecomplete by retainedfilewrite04:47:00.013653Z. R1earlyclocklabels qualified, not silently retimed. Official direct request-start fields likewise separated from completed-response bounds. Providerupdateclockunknown.
 
 Sourceclockclarification supersedes earlierlabels only: CBS04:46:54.652100Z was requeststart, complete response by retainedfilewrite04:47:00.013653Z. Not a providerupdateclock. Official HTMLrequeststart and responsebounds are separately preserved in R2. No outcome, score, wager timing or prediction changed.
+
+
+## Week10 full official outcome qualification — November8 manual QA
+
+Outcome supplement: evidence/operational/CFB_WEEK10_OFFICIAL_OUTCOME_QA_20261108T160449Z.json Git blob f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f. Seventeen newly qualified results appended; prior46official outcomes retained. All63unique games now final/official-source qualified;55modeled and8original exclusions. Five previously in-progress scores are superseded prospectively by their final scores, not rewritten at their old observation boundary.
+
+| Game ID | Away @ home | Final away-home | Original status | Source |
+|---|---|---|---|---|
+| 401860913 | Fresno State @ Utah State | 10-17 | PREDICTION | [official](https://gobulldogs.com/news/2026/11/7/football-bulldogs-drop-road-test-to-aggies) |
+| 401864532 | Hawai'i @ UTEP | 17-14 | PREDICTION | [official](https://hawaiiathletics.com/news/2026/11/7/football-warriors-get-past-utep-to-pick-up-second-straight-road-win.aspx) |
+| 401856856 | West Virginia @ Texas Tech | 48-53 | PREDICTION | [official](https://wvusports.com/game-center/21493) |
+| 401864535 | Wyoming @ UNLV | 41-35 | PREDICTION | [official](https://unlvrebels.com/news/2026/11/8/football-cowboys-hold-off-rebel-rally) |
+| 401860912 | Texas State @ Oregon State | 42-21 | PREDICTION | [official](https://osubeavers.com/sports/football/stats/2026/texas-state/boxscore/22717) |
+| 401870795 | Liberty @ New Mexico State | 30-14 | EXCLUDED | [official](https://libertyflames.com/news/2026/11/8/football-late-scores-and-reeves-leg-lifts-flames-over-aggies) |
+| 401862823 | Air Force @ Army | 24-21 | EXCLUDED | [official](https://goarmywestpoint.com/news/2026/11/8/football-falls-to-air-force-24-21) |
+| 401856852 | Colorado @ Arizona State | 10-20 | PREDICTION | [official](https://thesundevils.com/news/2026/11/07/defense-and-freshmen-phenoms-propel-sun-devil-football-to-win-over-colorado) |
+| 401856741 | Georgia @ Ole Miss | 42-7 | PREDICTION | [official](https://olemisssports.com/news/2026/11/7/football-falls-to-no-2-georgia) |
+| 401858513 | Iowa @ Northwestern | 24-10 | EXCLUDED | [official](https://hawkeyesports.com/news/2026/11/7/hawkeyes-handle-wildcats-24-10) |
+| 401858291 | Miami @ Notre Dame | 24-31 | PREDICTION | [official](https://fightingirish.com/news/2026/11/7/irish-triumph-over-miami-fl-31-24) |
+| 401858511 | Michigan State @ Michigan | 15-6 | PREDICTION | [official](https://mgoblue.com/news/2026/11/7/football-u-m-offense-struggles-as-wolverines-drop-bunyan-trophy-to-msu) |
+| 401858287 | Louisville @ Georgia Tech | 44-17 | PREDICTION | [official](https://gocards.com/news/2026/11/7/louisville-football-postgame-notes-vs-georgia-tech) |
+| 401871075 | Sam Houston @ Jacksonville State | 14-47 | PREDICTION | [official](https://gobearkats.com/news/2026/11/7/football-jax-state-downs-kats) |
+| 401856745 | Kentucky @ Tennessee | 6-34 | PREDICTION | [official](https://utsports.com/news/2026/11/7/football-postgame-notes-13-tennessee-34-6-kentucky-6) |
+| 401869968 | South Alabama @ Louisiana | 26-28 | PREDICTION | [official](https://usajaguars.com/sports/football/stats/2026/louisiana/boxscore/11384) |
+| 401869936 | UL Monroe @ Arkansas State | 19-17 | PREDICTION | [official](https://astateredwolves.com/news/2026/11/7/football-a-state-falls-in-final-minutes-versus-ulm-19-17.aspx) |
+
+Full55modeled FIRST_FROZEN metrics: margin-direction27/55 (49.09%); home-probability classifier30/55 (54.55%); marginMAE 17.23919997835150850618181818; totalMAE 15.19184934836414950909090909; Brier 0.2698566683962613094096467027. Decimal computation and independent float/math.fsum agree within1e-12; all63original structures/165numeric strings exact against accepted R2. Earlier partial metrics remain historical.
+
+Source qualification:15direct officialHTML captures have actual request/response bounds, byte counts andSHA256 in supplement; Hawaii/ULM retrieved official pages through web tool (direct shell404), raw digests unavailable for those2. No claim of durable raw archive for these17; source metadata and fact extraction retained. Provider update unknown. Outcome-only, never prediction inputs/training or pregame recommendation evidence. ASUofficial20-10 now independently corroborated; no wager/money rewrite or sportsbook settlement claim. Natural scheduled Monitor reliability remainsOPEN.
