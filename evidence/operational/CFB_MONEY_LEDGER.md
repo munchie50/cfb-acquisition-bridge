@@ -114,3 +114,32 @@ Prospective arithmetic: total pot = available cash/vouchers + open stakes at cos
 ## October 31 user-confirmed complete holdings snapshot
 
 User supplied photographs of two distinct Caesars Harrah's Columbus vouchers ($25.30 issued October 23, $13.75 issued October 31) and eight October 31 straight-bet tickets totaling $30.00 at cost. User explicitly confirmed these two vouchers plus the placed bets are the *entire current investment*. Snapshot: available vouchers $39.05 + open wagers at cost $30.00 = **$69.05**. This is a holdings snapshot, NOT a deposit, realized P/L, redemption, or independent verification of sportsbook settlement. Eight October 31 tickets: Ohio State-USC over 51 $3 -110; Maryland +2.5 $3 -105; Florida-Georgia over 56.5 $3 -105; Penn State -10.5 $5 -109; Iowa -2.5 $5 -110; Missouri -10 $5 -108; Air Force ML $3 -108; Iowa State +9.5 $3 -105. Distinct ticket images provided in conversation; full ticket identifiers/barcodes omitted from repository. Do not treat tickets as model inputs or recommendation proof. October 23 opening snapshot $61.30 plus Week 8 final-score derived net +$7.75 equals $69.05 arithmetically; sportsbook settlement and intervening cash flows are not independently established. Earlier conversational inference of a $25.30 withdrawal is explicitly superseded: original $25.30 voucher remains held. Do not book withdrawal. No other holdings claimed by user. Production/sandbox allocation remains unassigned. No schedule, decision or model change.
+
+
+## Additional ad hoc funding — November 7, 2026
+
+User explicitly instructed an additional $20.00 contribution, separate from the previously posted original $20 funding and the $55 weekend wager stakes. Post once as new bankroll funding; no duplicate wager debit, payout, profit, withdrawal or transfer. Actual contribution time and production/sandbox allocation unspecified. Current cash/holdings balance remains unreconciled; sandbox ceiling unchanged.
+
+```cfb-funding-json
+{
+  "schema": "CFB_FUNDING_TRANSACTION_V1",
+  "funding_id": "CFB_ADHOC_ADD20_20261107_001",
+  "idempotency_key": "USER_ADDITIONAL_20_ADHOC_20261107_AFTER_NOV06_TICKET_INTAKE",
+  "transaction_type": "BANKROLL_FUNDING",
+  "amount_usd": "20.00",
+  "status": "POSTED_USER_CONFIRMED_ALLOCATION_UNASSIGNED",
+  "budget_class": "UNASSIGNED",
+  "funding_event_time": "UNSPECIFIED",
+  "recorded_at_utc": "2026-11-08T00:43:52Z",
+  "source": {
+    "original_instruction": "Add twenty additional dollars as an ad hoc entry to the money ledger",
+    "evidence_type": "DIRECT_USER_INSTRUCTION"
+  },
+  "is_wager": false,
+  "is_wager_return": false,
+  "changes_sandbox_ceiling": false,
+  "cash_balance": "NOT_RECONCILED"
+}
+```
+
+Confirmed explicit funding transactions recorded to date: two totaling $40.00. This is the sum of these recorded contributions, not total lifetime investment or current bankroll. Earlier holdings snapshots remain historical snapshots and are not rebooked.
