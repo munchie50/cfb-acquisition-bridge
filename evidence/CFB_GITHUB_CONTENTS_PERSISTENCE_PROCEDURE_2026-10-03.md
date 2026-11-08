@@ -203,3 +203,49 @@ User-directed test/script troubleshooting: evidence/scheduler_qa/CFB_TEST_SCRIPT
 4. Check available acquisition/parser dependencies before starting source freshness clocks. The shadow's bs4 import was unavailable; its successful fallback used installed lxml without upgrading/installing packages. HTML-to-table callers must exclude non-team footer rows and preserve the last complete printed team label when duplicate short/full labels tie; then require unchanged exact directed identity/63-game/126-team normalizer validation. A heuristic is not independent identity proof.
 5. Use the current-week unchanged compiler with its explicit input/output paths, actual cycle/as-of/recovered-by clocks and authentic caller-authored rows. Distinct output paths must never overwrite source files. A source capture, scratch render or previous successful shadow does not prove current full-slate research, live publication, venue execution or natural recurring reliability.
 Bounded verification: exact-byte single-bootstrap manual proof and relevant existing regression results are recorded in the linked audit. Natural adoption remains pending at the next existing primary Monitor; no new run/task/schedule required. This is caller/transport repair, not a scientific producer or acceptance-gate change.
+
+
+## November8 content-addressed direct API helper transport — verified separate-shell alternative
+
+Problem observed: natural Monitor13CT invocation1c91e8ef-d80c-8326-9311-4fc64ebdd1a7 exposed a separate shell but reported no complete structured connector-to-shell payload bridge. This is distinct from DNS, missing shell, compiler or model failure. Same-cell transfer remains preferred where actually supported; a shell-only worker can use the following exact-content alternative.
+
+1. Resolve FRESH main commit and scripts/cfb_runtime_checkout.py tree entry through the authenticated GitHub connector. Independently retain exact40lowercasehex head/blob and positive integer tree size. Do not reuse an old main or infer byte count from base64 length.
+2. In the actually documented shell/Python runtime, retrieve the PUBLIC immutable REST Git blob by that exact independently authenticated helperSHA. This carries no connector payload across tools and needs no credentials. It is PUBLIC_IMMUTABLE_API_BYTES_VERIFIED_AGAINST_AUTHENTICATED_TREE, not authenticated shell API transport. No raw.githubusercontent helper download is needed or authorized by this alternative.
+3. Require JSONobject/encodingbase64/returnedSHA/size, strictbase64 decode and canonicalroundtrip, exactbinarylength and GitSHA1(blob header+bytes) equal the authenticated tree BEFORE helperexecution. Write complete bytes unchanged into a new private scratch directory. Read back the actual file and require its byte count and git hash-object match before ONE unchanged helper execution with exact authenticated --expected-head. Accept only actualexit0, pinnedHEAD/fullhistory/immutable-review verification. Reuse returned worktree; no secondcheckout.
+4. On HTTP/DNS/networkpolicy/permission or bytevalidation failure, retain the authentic first error. No hostname hopping, resolver/securitychange, credential request, permissionbypass, loaderpatch or simulatedcheckout. Continue existing permitted independent-work sweep and truthful two-phase incompleteclosure. Hash identity cannot override a denied operation.
+
+Verified caller recipe (substitute only independently validated metadata; do not execute placeholders):
+
+```python
+import base64, hashlib, json, pathlib, re, tempfile, urllib.request
+expected_head = "<fresh connector-observed main commit>"
+expected_blob = "<fresh connector-observed helper blob>"
+expected_size = <fresh connector-observed positive byte count>
+assert re.fullmatch(r"[0-9a-f]{40}", expected_head)
+assert re.fullmatch(r"[0-9a-f]{40}", expected_blob)
+assert isinstance(expected_size, int) and expected_size > 0
+request = urllib.request.Request(
+    "https://api.github.com/repos/munchie50/cfb-acquisition-bridge/git/blobs/" + expected_blob,
+    headers={"Accept": "application/vnd.github+json", "User-Agent": "CFB-runtime-byte-verification"})
+with urllib.request.urlopen(request, timeout=20) as response:
+    obj = json.load(response)
+assert isinstance(obj, dict)
+assert obj.get("sha") == expected_blob and obj.get("size") == expected_size
+assert obj.get("encoding") == "base64"
+encoded = "".join(obj["content"].split())
+payload = base64.b64decode(encoded, validate=True)
+assert base64.b64encode(payload).decode("ascii") == encoded
+assert len(payload) == expected_size
+actual_blob = hashlib.sha1(b"blob " + str(len(payload)).encode("ascii") + b"\0" + payload).hexdigest()
+assert actual_blob == expected_blob
+directory = pathlib.Path(tempfile.mkdtemp(prefix="cfb-direct-blob-"))
+(directory / "helper.py").write_bytes(payload)
+print(json.dumps({"status": "DIRECT_IMMUTABLE_API_BYTES_VERIFIED", "directory": str(directory),
+                  "expected_head": expected_head, "git_blob": actual_blob, "bytes": len(payload)}))
+# Only after inspecting this real PASS, execute unchanged helper ONCE:
+# python3 <directory>/helper.py --destination <directory>/checkout --expected-head <expected_head>
+```
+
+Before the ONE helper execution, additionally inspect the written file: assert helper_path.read_bytes()==payload and exact git hash-object/size. No network or filesystem writes beyond ordinary public retrieval/private scratch preparation. Original helper/scientific/provenance/publication gates unchanged.
+
+Manual proof: exact3780byte helperb13930cb714eb87c8dce6136ffab6fbceeb44898, directAPIretrieval20:16:27.827446–20:16:34.000422Z, onefullcheckout atb7671857605d2390613783da8cd46d8eea42e7af,51reviews; runtimeSHA2564091683cad2536dc19357f4021bd44edcf353d2dc1d488b70c21c900dfbeac5a. Validpayload+8rejectionmutations passed without additionalcheckout. Natural scheduled proof: 522b00e6-92a8-8322-a12f-5291a6ea4c00 DIRECT_API_BOUNDARY_PASS; RESULT d21af49392abe1d42a01a9c7e6fbbeac5b6385bb, independently closed by e03daa9e67ab99e6f9cd13db78f681fd9a24a387. PublicAPI20:22:37.824031–20:22:43.148675Z returned HTTP200; one pinned full checkout at223fa2c3816d2e89f5953182d39013e2f9e317d4/51reviews. This user-directed alternative is active after exact persistence/readback. It supersedes only the requirement to transfer connector helperpayload when a documented shell can directly retrieve the exact content-addressed bytes; all metadata authentication/preexecution/ancestry/scientific/publication controls remain strict. Productionworkerparity and fullworkload proof remain OPEN. No retrospectiveproductionupgrade.
