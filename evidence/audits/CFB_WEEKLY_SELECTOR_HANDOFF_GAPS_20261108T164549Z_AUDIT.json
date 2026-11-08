@@ -1,0 +1,53 @@
+{
+  "schema": "CFB_WEEKLY_SELECTOR_AND_HANDOFF_GAP_QA_V1",
+  "observed_start_utc": "2026-11-08T16:45:49Z",
+  "scope": "User-directedpriority/gapfix;productionv5+v5.1A/C+v5.2D/E/F",
+  "confirmed_defects": [
+    "Current action register still queued12+5officialoutcomesalreadycompleted",
+    "Currentweeklyselector supportedonlythroughWeek8;Week10R2wasoutsideactualCURRENT_WEEKLY_REVIEW",
+    "OlderOctober23HealthpointerstilllabelledLATESTbesideNovember7Health"
+  ],
+  "correction": {
+    "code": "scripts/cfb_weekly_carry_forward_gate.py",
+    "code_blob": "56bbb5d61bfaff01fc2bfa2216c504a9514e1c90",
+    "test_blob": "96622cc1e5adb817701c29abaca45f9195ac2647",
+    "qualification": "ONLYexactNov8R2path/hashc2d095a4766be648a33cab11d9fb77c0741d4030;retainOctober11R2/Week7/Week8predecessors;unsupportedWeek9andunqualifiedpathsremainrejected",
+    "register_blob": "7c6fdbeeb97a25c28e6eed0414e85e405983768e",
+    "register_append_only": true,
+    "index": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_265.md",
+    "index_blob": "8e8482d11921c8e01f689769cf0e77e166b70aac",
+    "index_commit": "6845d162465090c517457754ac7ef85e4613b606",
+    "current_weekly": "Nov8R2",
+    "older_Health_label": "Historical",
+    "integrated_proofs": "Naturalcapabilitytest/Monitorinstructioncorrection/currentrawintegritywithboundedscopes"
+  },
+  "verification": {
+    "targeted_tests": 37,
+    "result": "ALL_PASS",
+    "rejections": "Wrongpath/hash,missing/stalepredecessors,competingselector,historicalfieldmutations",
+    "prewrite_consumer_preflight": "PASS421pointers",
+    "post_readback_preflight": "PASS421pointers",
+    "exact_code_register_index_readbacks": true,
+    "transport": "CompleteoutgoingregisterUTF8bytes/GitblobindependentlyrecomputedinJSandPythonmatch199191bytes/7c6fdbeeb97a25c28e6eed0414e85e405983768e",
+    "initial_preflight": "Attemptedbeforeasyncpointerdownloadfinished;localproposalabsent;noindexmutation. Afterpreparationexit0,completepreflightPASS.",
+    "existing_ci": {
+      "id": 42501871373,
+      "head": "6845d162465090c517457754ac7ef85e4613b606",
+      "status_at_audit": "IN_PROGRESS;terminalmustuseactualfinalresult"
+    }
+  },
+  "work_disposition": {
+    "outcome17queue": "CLOSED_BOUNDED",
+    "ASUofficialsource": "CLOSED_BOUNDED",
+    "sixexactrawfileproof": "DEMONSTRATED_FOR_BOUND_BLOBS",
+    "weeklyselector": "CORRECTED_PERSISTED_READ_BACK_TARGETED_DEMONSTRATED;fullCIpending",
+    "Monitor": "Correctioninstalled;actualproductionnatural13CTproofpending",
+    "Evening": "WorkerDNS/typedhandoffOPEN",
+    "Health": "FullhistoricalcoverageOPEN",
+    "financial": "Settlement/cashandproduction-sandboxclassificationOPEN"
+  },
+  "risk": "Navigation-onlyexactqualification;noarbitrarylatestreviewadmission,scientificacceptanceorhistoricalstatusupgrade",
+  "effects": "NoChampion/model/frozenprediction/market/decision/sheet/wager/money/task/cadencemutation",
+  "benefit": "Avoidreopeningcompleted17outcomequeueandstaleweeklyreview;currentConsumersselectactualverifiedWeek10review",
+  "closure": "Candidate/readback/separateclosureafterintegrationCI"
+}
