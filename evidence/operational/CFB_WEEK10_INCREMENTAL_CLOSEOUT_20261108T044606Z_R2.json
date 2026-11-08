@@ -1,0 +1,3137 @@
+{
+  "schema": "CFB_WEEK10_INCREMENTAL_ORIGINAL_OUTCOME_CLOSEOUT_V1",
+  "recorded_at_utc": "2026-11-08T05:05:06.289740+00:00",
+  "cbs_source_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-10/",
+  "cbs_raw_sha256": "47d0ef2cf455f10c71ca0216cdf8ebb005f4314ff7fc2708b69c6dcdb1e998b0",
+  "cbs_raw_bytes": 2230848,
+  "final_detection": "Exact OddsBlock-game--final CSS token, not Final column heading; OddsBlock-game--notFinal explicitly unscored",
+  "original_artifact_id": 10897612260,
+  "original_zip_sha256": "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf",
+  "original_lineage_exact_replay_matches_saved": true,
+  "population": {
+    "targets": 63,
+    "original_modeled": 55,
+    "original_exclusions": 8,
+    "cbs_final_observed": 58,
+    "official_final_verified": 46,
+    "cbs_final_only_official_pending": 12,
+    "in_progress_unscored": 5
+  },
+  "official_subset_metrics": {
+    "n": 41,
+    "margin_direction_correct": 21,
+    "probability_classifier_correct": 21,
+    "margin_mae": 18.235898795300695,
+    "total_mae": 14.818050671421819,
+    "home_win_brier": 0.2691524541958868
+  },
+  "cbs_all_final_subset_metrics_NOT_FULL_OFFICIAL_WEEK": {
+    "n": 50,
+    "margin_direction_correct": 26,
+    "probability_classifier_correct": 27,
+    "margin_mae": 17.820463827623044,
+    "total_mae": 14.423952198035565,
+    "home_win_brier": 0.26691515091456686
+  },
+  "rows": [
+    {
+      "game_id": "401860913",
+      "away_team": "Fresno State",
+      "home_team": "Utah State",
+      "away_score": 3,
+      "home_score": 14,
+      "is_final": false,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--notFinal",
+      "source_game_key": "NCAAF_20261107_FRESNO@UTAHST",
+      "source_game_id": "50028621",
+      "original": {
+        "game_id": "401860913",
+        "away_team": "Fresno State",
+        "home_team": "Utah State",
+        "first_frozen_start": "2026-11-08 02:30:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-5.165970677350148",
+          "pred_total": "44.0004645862941",
+          "pred_win": "0.3783176632157186"
+        },
+        "display": "FIRST_FROZEN: Fresno State -5.2 / 44.0 / 0.378 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "IN_PROGRESS_NOT_SCORED",
+      "official_source": null,
+      "scoring": null
+    },
+    {
+      "game_id": "401864532",
+      "away_team": "Hawai'i",
+      "home_team": "UTEP",
+      "away_score": 10,
+      "home_score": 7,
+      "is_final": false,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--notFinal",
+      "source_game_key": "NCAAF_20261107_HAWAII@UTEP",
+      "source_game_id": "50028619",
+      "original": {
+        "game_id": "401864532",
+        "away_team": "Hawai'i",
+        "home_team": "UTEP",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "0.8180999427252562",
+          "pred_total": "47.37022218931154",
+          "pred_win": "0.48679514164244436"
+        },
+        "display": "FIRST_FROZEN: UTEP -0.8 / 47.4 / 0.487 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "IN_PROGRESS_NOT_SCORED",
+      "official_source": null,
+      "scoring": null
+    },
+    {
+      "game_id": "401856856",
+      "away_team": "West Virginia",
+      "home_team": "Texas Tech",
+      "away_score": 27,
+      "home_score": 41,
+      "is_final": false,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--notFinal",
+      "source_game_key": "NCAAF_20261107_WVU@TXTECH",
+      "source_game_id": "50028605",
+      "original": {
+        "game_id": "401856856",
+        "away_team": "West Virginia",
+        "home_team": "Texas Tech",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "0.1988449072012387",
+          "pred_total": "53.624467589373545",
+          "pred_win": "0.6134979909132381"
+        },
+        "display": "FIRST_FROZEN: Texas Tech -0.2 / 53.6 / 0.613 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "IN_PROGRESS_NOT_SCORED",
+      "official_source": null,
+      "scoring": null
+    },
+    {
+      "game_id": "401864535",
+      "away_team": "Wyoming",
+      "home_team": "UNLV",
+      "away_score": 24,
+      "home_score": 7,
+      "is_final": false,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--notFinal",
+      "source_game_key": "NCAAF_20261107_WYO@UNLV",
+      "source_game_id": "50028629",
+      "original": {
+        "game_id": "401864535",
+        "away_team": "Wyoming",
+        "home_team": "UNLV",
+        "first_frozen_start": "2026-11-08 03:30:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "1.7513344391580845",
+          "pred_total": "44.50318770762418",
+          "pred_win": "0.48136806672512733"
+        },
+        "display": "FIRST_FROZEN: UNLV -1.8 / 44.5 / 0.481 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "IN_PROGRESS_NOT_SCORED",
+      "official_source": null,
+      "scoring": null
+    },
+    {
+      "game_id": "401860912",
+      "away_team": "Texas State",
+      "home_team": "Oregon State",
+      "away_score": 21,
+      "home_score": 7,
+      "is_final": false,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--notFinal",
+      "source_game_key": "NCAAF_20261107_TXSTSM@OREGST",
+      "source_game_id": "50028626",
+      "original": {
+        "game_id": "401860912",
+        "away_team": "Texas State",
+        "home_team": "Oregon State",
+        "first_frozen_start": "2026-11-08 03:30:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "7.596247276148411",
+          "pred_total": "65.11107277964203",
+          "pred_win": "0.7012857902303373"
+        },
+        "display": "FIRST_FROZEN: Oregon State -7.6 / 65.1 / 0.701 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "IN_PROGRESS_NOT_SCORED",
+      "official_source": null,
+      "scoring": null
+    },
+    {
+      "game_id": "401870795",
+      "away_team": "Liberty",
+      "home_team": "New Mexico State",
+      "away_score": 30,
+      "home_score": 14,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_LIB@NMEXST",
+      "source_game_id": "50028617",
+      "original": {
+        "game_id": "401870795",
+        "away_team": "Liberty",
+        "home_team": "New Mexico State",
+        "first_frozen_start": "2026-11-07 22:00:00+00:00",
+        "first_frozen_status": "EXCLUDED",
+        "original_numeric_strings": null,
+        "display": "FIRST_FROZEN EXCLUDED \u2014 away_prior_pbp_missing",
+        "first_frozen_exclusion": "away_prior_pbp_missing",
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "CBS_FINAL_OBSERVED_OFFICIAL_PENDING",
+      "official_source": null,
+      "scoring": null
+    },
+    {
+      "game_id": "401856739",
+      "away_team": "Oklahoma",
+      "home_team": "Florida",
+      "away_score": 23,
+      "home_score": 7,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_OKLA@FLA",
+      "source_game_id": "50028533",
+      "original": {
+        "game_id": "401856739",
+        "away_team": "Oklahoma",
+        "home_team": "Florida",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "9.171592972348307",
+          "pred_total": "51.110471208670816",
+          "pred_win": "0.7164656477262331"
+        },
+        "display": "FIRST_FROZEN: Florida -9.2 / 51.1 / 0.716 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "url": "https://floridagators.com/news/2026/11/7/football-final-florida-vs-oklahoma-nov-7-2026",
+        "request_started_at_utc": "2026-11-08T05:02:36.846993+00:00",
+        "response_recovered_by_utc": "2026-11-08T05:02:41.230825+00:00",
+        "raw_sha256": "5938c32611309c02382753f86dfadc9c9e2ad9c4f0c5b1ccb39f8fdbaab7a309",
+        "raw_bytes": 898914,
+        "source_route": "DIRECT_OFFICIAL_HTML"
+      },
+      "scoring": {
+        "actual_home_margin": -16,
+        "actual_total": 30,
+        "margin_error_actual_minus_predicted": -25.171592972348307,
+        "total_error_actual_minus_predicted": -21.110471208670816,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.5133230243717708
+      }
+    },
+    {
+      "game_id": "401862823",
+      "away_team": "Air Force",
+      "home_team": "Army",
+      "away_score": 24,
+      "home_score": 21,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_AF@ARMY",
+      "source_game_id": "50028519",
+      "original": {
+        "game_id": "401862823",
+        "away_team": "Air Force",
+        "home_team": "Army",
+        "first_frozen_start": "2026-11-08 00:30:00+00:00",
+        "first_frozen_status": "EXCLUDED",
+        "original_numeric_strings": null,
+        "display": "FIRST_FROZEN EXCLUDED \u2014 home_prior_pbp_missing",
+        "first_frozen_exclusion": "home_prior_pbp_missing",
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "CBS_FINAL_OBSERVED_OFFICIAL_PENDING",
+      "official_source": null,
+      "scoring": null
+    },
+    {
+      "game_id": "401856852",
+      "away_team": "Colorado",
+      "home_team": "Arizona State",
+      "away_score": 10,
+      "home_score": 20,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_COLO@ARIZST",
+      "source_game_id": "50028611",
+      "original": {
+        "game_id": "401856852",
+        "away_team": "Colorado",
+        "home_team": "Arizona State",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "8.465787428558665",
+          "pred_total": "52.14262652604433",
+          "pred_win": "0.7069148293065931"
+        },
+        "display": "FIRST_FROZEN: Arizona State -8.5 / 52.1 / 0.707 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "CBS_FINAL_OBSERVED_OFFICIAL_PENDING",
+      "official_source": null,
+      "scoring": {
+        "actual_home_margin": 10,
+        "actual_total": 30,
+        "margin_error_actual_minus_predicted": 1.5342125714413353,
+        "total_error_actual_minus_predicted": -22.14262652604433,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.08589891728038346
+      }
+    },
+    {
+      "game_id": "401856741",
+      "away_team": "Georgia",
+      "home_team": "Ole Miss",
+      "away_score": 42,
+      "home_score": 7,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_UGA@MISS",
+      "source_game_id": "50028596",
+      "original": {
+        "game_id": "401856741",
+        "away_team": "Georgia",
+        "home_team": "Ole Miss",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-11.035422029117997",
+          "pred_total": "62.08393125657636",
+          "pred_win": "0.2632286982594048"
+        },
+        "display": "FIRST_FROZEN: Georgia -11.0 / 62.1 / 0.263 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "CBS_FINAL_OBSERVED_OFFICIAL_PENDING",
+      "official_source": null,
+      "scoring": {
+        "actual_home_margin": -35,
+        "actual_total": 49,
+        "margin_error_actual_minus_predicted": -23.964577970882004,
+        "total_error_actual_minus_predicted": -13.083931256576363,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.06928934758734079
+      }
+    },
+    {
+      "game_id": "401858513",
+      "away_team": "Iowa",
+      "home_team": "Northwestern",
+      "away_score": 24,
+      "home_score": 10,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_IOWA@NWEST",
+      "source_game_id": "50028594",
+      "original": {
+        "game_id": "401858513",
+        "away_team": "Iowa",
+        "home_team": "Northwestern",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "EXCLUDED",
+        "original_numeric_strings": null,
+        "display": "FIRST_FROZEN EXCLUDED \u2014 home_prior_points_missing",
+        "first_frozen_exclusion": "home_prior_points_missing",
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "CBS_FINAL_OBSERVED_OFFICIAL_PENDING",
+      "official_source": null,
+      "scoring": null
+    },
+    {
+      "game_id": "401858291",
+      "away_team": "Miami",
+      "home_team": "Notre Dame",
+      "away_score": 24,
+      "home_score": 31,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_MIAMI@ND",
+      "source_game_id": "50028551",
+      "original": {
+        "game_id": "401858291",
+        "away_team": "Miami",
+        "home_team": "Notre Dame",
+        "first_frozen_start": "2026-11-08 00:30:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-0.2668060664913918",
+          "pred_total": "50.98225938130396",
+          "pred_win": "0.5097133284713214"
+        },
+        "display": "FIRST_FROZEN: Miami -0.3 / 51.0 / 0.510 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "CBS_FINAL_OBSERVED_OFFICIAL_PENDING",
+      "official_source": null,
+      "scoring": {
+        "actual_home_margin": 7,
+        "actual_total": 55,
+        "margin_error_actual_minus_predicted": 7.266806066491392,
+        "total_error_actual_minus_predicted": 4.017740618696038,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.24038102027867034
+      }
+    },
+    {
+      "game_id": "401858511",
+      "away_team": "Michigan State",
+      "home_team": "Michigan",
+      "away_score": 15,
+      "home_score": 6,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_MICHST@MICH",
+      "source_game_id": "50028545",
+      "original": {
+        "game_id": "401858511",
+        "away_team": "Michigan State",
+        "home_team": "Michigan",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "10.64459588763575",
+          "pred_total": "37.84522705231792",
+          "pred_win": "0.7313720494169026"
+        },
+        "display": "FIRST_FROZEN: Michigan -10.6 / 37.8 / 0.731 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "CBS_FINAL_OBSERVED_OFFICIAL_PENDING",
+      "official_source": null,
+      "scoring": {
+        "actual_home_margin": -9,
+        "actual_total": 21,
+        "margin_error_actual_minus_predicted": -19.644595887635752,
+        "total_error_actual_minus_predicted": -16.845227052317917,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.5349050746682802
+      }
+    },
+    {
+      "game_id": "401858287",
+      "away_team": "Louisville",
+      "home_team": "Georgia Tech",
+      "away_score": 44,
+      "home_score": 17,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_LVILLE@GATECH",
+      "source_game_id": "50028537",
+      "original": {
+        "game_id": "401858287",
+        "away_team": "Louisville",
+        "home_team": "Georgia Tech",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-4.198536758100759",
+          "pred_total": "59.224844029029576",
+          "pred_win": "0.43881615899013254"
+        },
+        "display": "FIRST_FROZEN: Louisville -4.2 / 59.2 / 0.439 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "CBS_FINAL_OBSERVED_OFFICIAL_PENDING",
+      "official_source": null,
+      "scoring": {
+        "actual_home_margin": -27,
+        "actual_total": 61,
+        "margin_error_actual_minus_predicted": -22.801463241899242,
+        "total_error_actual_minus_predicted": 1.7751559709704239,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.19255962139085328
+      }
+    },
+    {
+      "game_id": "401871075",
+      "away_team": "Sam Houston",
+      "home_team": "Jacksonville State",
+      "away_score": 14,
+      "home_score": 47,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_SAMST@JAXST",
+      "source_game_id": "50029096",
+      "original": {
+        "game_id": "401871075",
+        "away_team": "Sam Houston",
+        "home_team": "Jacksonville State",
+        "first_frozen_start": "2026-11-08 00:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-4.468927683321684",
+          "pred_total": "47.781297016302965",
+          "pred_win": "0.3867593909384602"
+        },
+        "display": "FIRST_FROZEN: Sam Houston -4.5 / 47.8 / 0.387 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "CBS_FINAL_OBSERVED_OFFICIAL_PENDING",
+      "official_source": null,
+      "scoring": {
+        "actual_home_margin": 33,
+        "actual_total": 61,
+        "margin_error_actual_minus_predicted": 37.46892768332168,
+        "total_error_actual_minus_predicted": 13.218702983697035,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.37606404460216836
+      }
+    },
+    {
+      "game_id": "401856745",
+      "away_team": "Kentucky",
+      "home_team": "Tennessee",
+      "away_score": 6,
+      "home_score": 34,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_UK@TENN",
+      "source_game_id": "50028559",
+      "original": {
+        "game_id": "401856745",
+        "away_team": "Kentucky",
+        "home_team": "Tennessee",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "15.38457321945768",
+          "pred_total": "57.266263746361346",
+          "pred_win": "0.8323894976085278"
+        },
+        "display": "FIRST_FROZEN: Tennessee -15.4 / 57.3 / 0.832 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "CBS_FINAL_OBSERVED_OFFICIAL_PENDING",
+      "official_source": null,
+      "scoring": {
+        "actual_home_margin": 28,
+        "actual_total": 40,
+        "margin_error_actual_minus_predicted": 12.61542678054232,
+        "total_error_actual_minus_predicted": -17.266263746361346,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.028093280511921722
+      }
+    },
+    {
+      "game_id": "401860911",
+      "away_team": "Boise State",
+      "home_team": "Colorado State",
+      "away_score": 64,
+      "home_score": 38,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_BOISE@COLOST",
+      "source_game_id": "50028613",
+      "original": {
+        "game_id": "401860911",
+        "away_team": "Boise State",
+        "home_team": "Colorado State",
+        "first_frozen_start": "2026-11-07 23:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "0.7553368849316238",
+          "pred_total": "56.848435210772486",
+          "pred_win": "0.5526660742301289"
+        },
+        "display": "FIRST_FROZEN: Colorado State -0.8 / 56.8 / 0.553 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "url": "https://csurams.com/sports/football/stats/2026/boise-state/boxscore/21971",
+        "request_started_at_utc": "2026-11-08T05:02:40.129611+00:00",
+        "response_recovered_by_utc": "2026-11-08T05:02:44.274640+00:00",
+        "raw_sha256": "f2574f87005f7ba3ad9f1e8f2dfc211150173ada5cc7bf3b26698853aac9a962",
+        "raw_bytes": 1853066,
+        "source_route": "DIRECT_OFFICIAL_BOX_SCORE"
+      },
+      "scoring": {
+        "actual_home_margin": -26,
+        "actual_total": 102,
+        "margin_error_actual_minus_predicted": -26.755336884931623,
+        "total_error_actual_minus_predicted": 45.151564789227514,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.3054397896049424
+      }
+    },
+    {
+      "game_id": "401869968",
+      "away_team": "South Alabama",
+      "home_team": "Louisiana",
+      "away_score": 26,
+      "home_score": 28,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_SALA@UL",
+      "source_game_id": "50028583",
+      "original": {
+        "game_id": "401869968",
+        "away_team": "South Alabama",
+        "home_team": "Louisiana",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "4.078471967246623",
+          "pred_total": "50.14866719322296",
+          "pred_win": "0.6312803629956545"
+        },
+        "display": "FIRST_FROZEN: Louisiana -4.1 / 50.1 / 0.631 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "CBS_FINAL_OBSERVED_OFFICIAL_PENDING",
+      "official_source": null,
+      "scoring": {
+        "actual_home_margin": 2,
+        "actual_total": 54,
+        "margin_error_actual_minus_predicted": -2.0784719672466228,
+        "total_error_actual_minus_predicted": 3.8513328067770374,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.1359541707126163
+      }
+    },
+    {
+      "game_id": "401858517",
+      "away_team": "Rutgers",
+      "home_team": "Wisconsin",
+      "away_score": 10,
+      "home_score": 31,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_RUT@WISC",
+      "source_game_id": "50028610",
+      "original": {
+        "game_id": "401858517",
+        "away_team": "Rutgers",
+        "home_team": "Wisconsin",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "EXCLUDED",
+        "original_numeric_strings": null,
+        "display": "FIRST_FROZEN EXCLUDED \u2014 away_prior_points_missing",
+        "first_frozen_exclusion": "away_prior_points_missing",
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401858517",
+        "away_team": "Rutgers",
+        "home_team": "Wisconsin",
+        "away_score": 10,
+        "home_score": 31,
+        "url": "https://uwbadgers.com/news/2026/11/7/football-wisconsin-defeats-rutgers-31-10",
+        "local_file": "official_401858517.html",
+        "raw_sha256": "189f216a871ed6688465d374ec69af14eb9029f3c8049e63c1564507737ea5f3",
+        "raw_bytes": 673585,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:30.923044+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:35.125554+00:00"
+      },
+      "scoring": null
+    },
+    {
+      "game_id": "401856742",
+      "away_team": "Vanderbilt",
+      "home_team": "Mississippi State",
+      "away_score": 25,
+      "home_score": 23,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_VANDY@MISSST",
+      "source_game_id": "50028586",
+      "original": {
+        "game_id": "401856742",
+        "away_team": "Vanderbilt",
+        "home_team": "Mississippi State",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "15.549626345548761",
+          "pred_total": "55.56747078426483",
+          "pred_win": "0.8182005921246576"
+        },
+        "display": "FIRST_FROZEN: Mississippi State -15.5 / 55.6 / 0.818 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401856742",
+        "away_team": "Vanderbilt",
+        "home_team": "Mississippi State",
+        "away_score": 25,
+        "home_score": 23,
+        "url": "https://vucommodores.com/news/2026/11/07/taylor-helps-dores-top-mississippi-state",
+        "local_file": "official_401856742.html",
+        "raw_sha256": "77b2c3601136beb7c68327be1b262eb2d956aea00491740e5fa7fecacd219cbb",
+        "raw_bytes": 570977,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:30.923727+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:34.826176+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -2,
+        "actual_total": 48,
+        "margin_error_actual_minus_predicted": -17.54962634554876,
+        "total_error_actual_minus_predicted": -7.567470784264827,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.6694522089531403
+      }
+    },
+    {
+      "game_id": "401871074",
+      "away_team": "Missouri State",
+      "home_team": "Florida International",
+      "away_score": 20,
+      "home_score": 23,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_MOST@FIU",
+      "source_game_id": "50029094",
+      "original": {
+        "game_id": "401871074",
+        "away_team": "Missouri State",
+        "home_team": "Florida International",
+        "first_frozen_start": "2026-11-07 21:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "6.471677799283147",
+          "pred_total": "50.89495186078102",
+          "pred_win": "0.6322299211493579"
+        },
+        "display": "FIRST_FROZEN: Florida International -6.5 / 50.9 / 0.632 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401871074",
+        "url": "https://missouristatebears.com/sports/football/stats/2026/fiu/boxscore/7865",
+        "away_team": "Missouri State",
+        "home_team": "Florida International",
+        "away_score": 20,
+        "home_score": 23,
+        "raw_sha256": "abce5962c2787e10bbc20b3da77344df4aa0734624b89ada1dbaaf32aaf622a5",
+        "raw_bytes": 1843951,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Manual official final table or recap body; independently matches CBS",
+        "local_file": "official_6.html",
+        "request_started_at_utc": "2026-11-08T04:48:45.868790+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:48:50.143620+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 3,
+        "actual_total": 43,
+        "margin_error_actual_minus_predicted": -3.471677799283147,
+        "total_error_actual_minus_predicted": -7.8949518607810205,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.1352548308978075
+      }
+    },
+    {
+      "game_id": "401864534",
+      "away_team": "Northern Illinois",
+      "home_team": "San Jos\u00e9 State",
+      "away_score": 19,
+      "home_score": 30,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_NILL@SJST",
+      "source_game_id": "50028627",
+      "original": {
+        "game_id": "401864534",
+        "away_team": "Northern Illinois",
+        "home_team": "San Jos\u00e9 State",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "12.216751671820077",
+          "pred_total": "50.109095593377916",
+          "pred_win": "0.7444111196736232"
+        },
+        "display": "FIRST_FROZEN: San Jos\u00e9 State -12.2 / 50.1 / 0.744 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401864534",
+        "away_team": "Northern Illinois",
+        "home_team": "San Jos\u00e9 State",
+        "away_score": 19,
+        "home_score": 30,
+        "url": "https://niuhuskies.com/news/2026/11/7/football-big-third-quarter-powers-san-jos-state-past-niu.aspx",
+        "source_route": "WEB_OPEN_AND_FIND",
+        "ref": "turn23view4",
+        "proof": "NIU lost at San Jose State 30-19 on November 7, 2026."
+      },
+      "scoring": {
+        "actual_home_margin": 11,
+        "actual_total": 49,
+        "margin_error_actual_minus_predicted": -1.2167516718200773,
+        "total_error_actual_minus_predicted": -1.1090955933779156,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.06532567574649098
+      }
+    },
+    {
+      "game_id": "401871098",
+      "away_team": "Louisiana Tech",
+      "home_team": "Troy",
+      "away_score": 41,
+      "home_score": 17,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_LATECH@TROY",
+      "source_game_id": "50028606",
+      "original": {
+        "game_id": "401871098",
+        "away_team": "Louisiana Tech",
+        "home_team": "Troy",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "7.926645201733717",
+          "pred_total": "46.55365876102345",
+          "pred_win": "0.6579231620303794"
+        },
+        "display": "FIRST_FROZEN: Troy -7.9 / 46.6 / 0.658 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401871098",
+        "away_team": "Louisiana Tech",
+        "home_team": "Troy",
+        "away_score": 41,
+        "home_score": 17,
+        "url": "https://latechsports.com/news/2026/11/7/football-bulldogs-showcase-defensively-down-troy-to-remain-undefeated-in-sun-belt-play",
+        "local_file": "official_401871098.html",
+        "raw_sha256": "eaa9a6dddf907c8dd0a7fe9aca32a843f88273dd95d409629b009480e258d79c",
+        "raw_bytes": 858941,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:30.924297+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:35.650942+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -24,
+        "actual_total": 58,
+        "margin_error_actual_minus_predicted": -31.926645201733717,
+        "total_error_actual_minus_predicted": 11.44634123897655,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.4328628871360528
+      }
+    },
+    {
+      "game_id": "401862821",
+      "away_team": "Rice",
+      "home_team": "North Texas",
+      "away_score": 23,
+      "home_score": 52,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_RICE@NTEXAS",
+      "source_game_id": "50028593",
+      "original": {
+        "game_id": "401862821",
+        "away_team": "Rice",
+        "home_team": "North Texas",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "2.6227721809273334",
+          "pred_total": "52.735543039826865",
+          "pred_win": "0.604848752521358"
+        },
+        "display": "FIRST_FROZEN: North Texas -2.6 / 52.7 / 0.605 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401862821",
+        "away_team": "Rice",
+        "home_team": "North Texas",
+        "away_score": 23,
+        "home_score": 52,
+        "url": "https://meangreensports.com/sports/football/schedule/",
+        "local_file": "official_401862821.html",
+        "raw_sha256": "a45bd10093a949af417ea3ca83e339d60ffd1e323a746a1d2c87dad9c5e79286",
+        "raw_bytes": 658097,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:35.137166+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:38.915549+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 29,
+        "actual_total": 75,
+        "margin_error_actual_minus_predicted": 26.377227819072665,
+        "total_error_actual_minus_predicted": 22.264456960173135,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.15614450838392702
+      }
+    },
+    {
+      "game_id": "401856850",
+      "away_team": "UCF",
+      "home_team": "Kansas",
+      "away_score": 33,
+      "home_score": 32,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_UCF@KANSAS",
+      "source_game_id": "50028579",
+      "original": {
+        "game_id": "401856850",
+        "away_team": "UCF",
+        "home_team": "Kansas",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "1.060836045636887",
+          "pred_total": "50.082973477839204",
+          "pred_win": "0.5283457173006264"
+        },
+        "display": "FIRST_FROZEN: Kansas -1.1 / 50.1 / 0.528 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401856850",
+        "away_team": "UCF",
+        "home_team": "Kansas",
+        "away_score": 33,
+        "home_score": 32,
+        "url": "https://ucfknights.com/sports/football/schedule",
+        "local_file": "official_401856850.html",
+        "raw_sha256": "90cad7f6412ce99927450f09aee11fdf174a12a91d6231e9928064375b531ac3",
+        "raw_bytes": 501899,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:30.925194+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:35.517532+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -1,
+        "actual_total": 65,
+        "margin_error_actual_minus_predicted": -2.0608360456368873,
+        "total_error_actual_minus_predicted": 14.917026522160796,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.2791491969899134
+      }
+    },
+    {
+      "game_id": "401858290",
+      "away_team": "Merrimack",
+      "home_team": "Wake Forest",
+      "away_score": 0,
+      "home_score": 77,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_MERMAK@WAKE",
+      "source_game_id": "50028561",
+      "original": {
+        "game_id": "401858290",
+        "away_team": "Merrimack",
+        "home_team": "Wake Forest",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "27.119872949618784",
+          "pred_total": "53.799730938597165",
+          "pred_win": "0.931919335067152"
+        },
+        "display": "FIRST_FROZEN: Wake Forest -27.1 / 53.8 / 0.932 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401858290",
+        "away_team": "Merrimack",
+        "home_team": "Wake Forest",
+        "away_score": 0,
+        "home_score": 77,
+        "url": "https://godeacs.com/news/2026/11/7/football-dominant-overall-team-performance-by-no-16-wake-forest-leads-to-77-0-victory-over-merrimack",
+        "local_file": "official_401858290.html",
+        "raw_sha256": "41ae32c2a08b85ea37ff413e507a3e9aee98346bbd9c24534238f976dde3f863",
+        "raw_bytes": 372498,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:30.926137+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:38.259432+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 77,
+        "actual_total": 77,
+        "margin_error_actual_minus_predicted": 49.88012705038122,
+        "total_error_actual_minus_predicted": 23.200269061402835,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.004634976937698724
+      }
+    },
+    {
+      "game_id": "401871076",
+      "away_team": "Western Kentucky",
+      "home_team": "Middle Tennessee",
+      "away_score": 42,
+      "home_score": 51,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_WKY@MTSU",
+      "source_game_id": "50029097",
+      "original": {
+        "game_id": "401871076",
+        "away_team": "Western Kentucky",
+        "home_team": "Middle Tennessee",
+        "first_frozen_start": "2026-11-07 20:30:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "27.857095018909256",
+          "pred_total": "50.53624715269643",
+          "pred_win": "0.9392086588608907"
+        },
+        "display": "FIRST_FROZEN: Middle Tennessee -27.9 / 50.5 / 0.939 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401871076",
+        "away_team": "Western Kentucky",
+        "home_team": "Middle Tennessee",
+        "away_score": 42,
+        "home_score": 51,
+        "url": "https://goblueraiders.com/news/2026/11/7/football-late-heroics-lead-the-way-as-blue-raiders-down-wku-on-homecoming",
+        "local_file": "official_401871076.html",
+        "raw_sha256": "c3adc89e6cbaa02af80dc69cbcd452e54f97e2883dd2b721cc1826fbbe5bea09",
+        "raw_bytes": 319193,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:34.838383+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:39.317789+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 9,
+        "actual_total": 93,
+        "margin_error_actual_minus_predicted": -18.857095018909256,
+        "total_error_actual_minus_predicted": 42.46375284730357,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.003695587157491567
+      }
+    },
+    {
+      "game_id": "401858516",
+      "away_team": "Penn State",
+      "home_team": "Washington",
+      "away_score": 28,
+      "home_score": 25,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_PSU@WASH",
+      "source_game_id": "50028630",
+      "original": {
+        "game_id": "401858516",
+        "away_team": "Penn State",
+        "home_team": "Washington",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-3.1495475114994615",
+          "pred_total": "47.804352616275885",
+          "pred_win": "0.4333079293071188"
+        },
+        "display": "FIRST_FROZEN: Penn State -3.1 / 47.8 / 0.433 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401858516",
+        "away_team": "Penn State",
+        "home_team": "Washington",
+        "away_score": 28,
+        "home_score": 25,
+        "url": "https://gopsusports.com/news/2026/11/8/penn-state-football-secures-28-25-road-victory-at-washington",
+        "local_file": "official_401858516.html",
+        "raw_sha256": "efec9c75badecbf086c85f637984e62ab9aeeaec0ea8f4da2af0963aee13890d",
+        "raw_bytes": 638827,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:35.198570+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:39.477584+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -3,
+        "actual_total": 53,
+        "margin_error_actual_minus_predicted": 0.14954751149946155,
+        "total_error_actual_minus_predicted": 5.195647383724115,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.18775576160042307
+      }
+    },
+    {
+      "game_id": "401862819",
+      "away_team": "Charlotte",
+      "home_team": "UAB",
+      "away_score": 12,
+      "home_score": 23,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_CHARLO@UAB",
+      "source_game_id": "50028608",
+      "original": {
+        "game_id": "401862819",
+        "away_team": "Charlotte",
+        "home_team": "UAB",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "EXCLUDED",
+        "original_numeric_strings": null,
+        "display": "FIRST_FROZEN EXCLUDED \u2014 home_prior_points_missing",
+        "first_frozen_exclusion": "home_prior_points_missing",
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401862819",
+        "away_team": "Charlotte",
+        "home_team": "UAB",
+        "away_score": 12,
+        "home_score": 23,
+        "url": "https://uabsports.com/news/2026/11/7/football-uab-pulls-away-from-charlotte-in-fourth-quarter-for-23-12-victory",
+        "local_file": "official_401862819.html",
+        "raw_sha256": "41a55369271a0982fbffe54166220ec08609bf5b2b50774a0f882d97a9da9f82",
+        "raw_bytes": 585636,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:35.535871+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:40.018821+00:00"
+      },
+      "scoring": null
+    },
+    {
+      "game_id": "401856740",
+      "away_team": "Alabama",
+      "home_team": "LSU",
+      "away_score": 31,
+      "home_score": 13,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_BAMA@LSU",
+      "source_game_id": "50028581",
+      "original": {
+        "game_id": "401856740",
+        "away_team": "Alabama",
+        "home_team": "LSU",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "3.5090584473900757",
+          "pred_total": "54.06402401878285",
+          "pred_win": "0.5694578967572295"
+        },
+        "display": "FIRST_FROZEN: LSU -3.5 / 54.1 / 0.569 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401856740",
+        "url": "https://lsusports.net/news/2026/11/7/football-falls-to-no-5-alabama-31-13",
+        "away_team": "Alabama",
+        "home_team": "LSU",
+        "away_score": 31,
+        "home_score": 13,
+        "raw_sha256": "ea4c2fb1095e9fa15c92097b0144e1299eff162d62b6a134e2b7ecf3453d95a5",
+        "raw_bytes": 603783,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Manual official final table or recap body; independently matches CBS",
+        "local_file": "official_7.html",
+        "request_started_at_utc": "2026-11-08T04:48:46.278256+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:48:50.367660+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -18,
+        "actual_total": 44,
+        "margin_error_actual_minus_predicted": -21.509058447390075,
+        "total_error_actual_minus_predicted": -10.064024018782852,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.32428229617916743
+      }
+    },
+    {
+      "game_id": "401856851",
+      "away_team": "Cincinnati",
+      "home_team": "Houston",
+      "away_score": 24,
+      "home_score": 31,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_CIN@HOU",
+      "source_game_id": "50028575",
+      "original": {
+        "game_id": "401856851",
+        "away_team": "Cincinnati",
+        "home_team": "Houston",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "7.466094858371314",
+          "pred_total": "57.33789708596704",
+          "pred_win": "0.6907526229114599"
+        },
+        "display": "FIRST_FROZEN: Houston -7.5 / 57.3 / 0.691 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401856851",
+        "url": "https://gobearcats.com/news/2026/11/7/cincinnati-falls-at-no-17-houston-31-24",
+        "away_team": "Cincinnati",
+        "home_team": "Houston",
+        "away_score": 24,
+        "home_score": 31,
+        "raw_sha256": "d64a81eda853a3991aa96576f310e4104824cf32b833bddcb085a6f9418d0192",
+        "raw_bytes": 411092,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Manual official final table or recap body; independently matches CBS",
+        "local_file": "official_10.html",
+        "request_started_at_utc": "2026-11-08T04:48:47.909049+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:48:52.676105+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 7,
+        "actual_total": 55,
+        "margin_error_actual_minus_predicted": -0.4660948583713136,
+        "total_error_actual_minus_predicted": -2.337897085967043,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.09563394023614172
+      }
+    },
+    {
+      "game_id": "401858514",
+      "away_team": "Oregon",
+      "home_team": "Ohio State",
+      "away_score": 41,
+      "home_score": 28,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_OREG@OHIOST",
+      "source_game_id": "50028552",
+      "original": {
+        "game_id": "401858514",
+        "away_team": "Oregon",
+        "home_team": "Ohio State",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "12.6572944597905",
+          "pred_total": "57.45625252704641",
+          "pred_win": "0.7870052211880744"
+        },
+        "display": "FIRST_FROZEN: Ohio State -12.7 / 57.5 / 0.787 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401858514",
+        "url": "https://ohiostatebuckeyes.com/news/2026/11/8/football-buckeyes-drop-home-contest-to-oregon",
+        "away_team": "Oregon",
+        "home_team": "Ohio State",
+        "away_score": 41,
+        "home_score": 28,
+        "raw_sha256": "3bb8760c8f081cc7c7c86be9cd408a1b4ddb476f2d79285e4c553f234146ff1c",
+        "raw_bytes": 1863208,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Manual official final table or recap body; independently matches CBS",
+        "local_file": "official_5.html",
+        "request_started_at_utc": "2026-11-08T04:48:40.991013+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:48:47.843499+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -13,
+        "actual_total": 69,
+        "margin_error_actual_minus_predicted": -25.6572944597905,
+        "total_error_actual_minus_predicted": 11.54374747295359,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.6193772181772899
+      }
+    },
+    {
+      "game_id": "401862820",
+      "away_team": "Temple",
+      "home_team": "Navy",
+      "away_score": 35,
+      "home_score": 42,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_TEMPLE@NAVY",
+      "source_game_id": "50028547",
+      "original": {
+        "game_id": "401862820",
+        "away_team": "Temple",
+        "home_team": "Navy",
+        "first_frozen_start": "2026-11-07 20:30:00+00:00",
+        "first_frozen_status": "EXCLUDED",
+        "original_numeric_strings": null,
+        "display": "FIRST_FROZEN EXCLUDED \u2014 away_prior_pbp_missing|home_prior_points_missing",
+        "first_frozen_exclusion": "away_prior_pbp_missing|home_prior_points_missing",
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401862820",
+        "away_team": "Temple",
+        "home_team": "Navy",
+        "away_score": 35,
+        "home_score": 42,
+        "url": "https://navysports.com/news/2026/11/7/football-gutierrez-accounts-for-six-touchdowns-as-navy-holds-off-temple-42-35.aspx",
+        "source_route": "WEB_OPEN_AND_FIND",
+        "ref": "turn23view0",
+        "proof": "Navy defeated Temple 42-35 on November 7, 2026; final possession ran out clock."
+      },
+      "scoring": null
+    },
+    {
+      "game_id": "401869951",
+      "away_team": "Marshall",
+      "home_team": "Georgia Southern",
+      "away_score": 13,
+      "home_score": 49,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_MRSHL@GAS",
+      "source_game_id": "50028536",
+      "original": {
+        "game_id": "401869951",
+        "away_team": "Marshall",
+        "home_team": "Georgia Southern",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "15.029841107961314",
+          "pred_total": "45.052484119214846",
+          "pred_win": "0.7962656210758162"
+        },
+        "display": "FIRST_FROZEN: Georgia Southern -15.0 / 45.1 / 0.796 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401869951",
+        "away_team": "Marshall",
+        "home_team": "Georgia Southern",
+        "away_score": 13,
+        "home_score": 49,
+        "url": "https://gseagles.com/news/2026/11/7/football-johnson-leads-eagles-to-big-win-over-marshall",
+        "local_file": "official_401869951.html",
+        "raw_sha256": "d3a59996fcb49d207aa343b882995d1eae8c247c12de054e0ba9b809c1ac0ca7",
+        "raw_bytes": 807652,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:38.270093+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:41.863476+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 36,
+        "actual_total": 62,
+        "margin_error_actual_minus_predicted": 20.970158892038686,
+        "total_error_actual_minus_predicted": 16.947515880785154,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.0415076971556229
+      }
+    },
+    {
+      "game_id": "401871073",
+      "away_team": "Delaware",
+      "home_team": "Kennesaw State",
+      "away_score": 40,
+      "home_score": 42,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_DE@KENSAW",
+      "source_game_id": "50029095",
+      "original": {
+        "game_id": "401871073",
+        "away_team": "Delaware",
+        "home_team": "Kennesaw State",
+        "first_frozen_start": "2026-11-07 20:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "0.17558159017670696",
+          "pred_total": "50.113302706890565",
+          "pred_win": "0.4896759060405278"
+        },
+        "display": "FIRST_FROZEN: Kennesaw State -0.2 / 50.1 / 0.490 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401871073",
+        "away_team": "Delaware",
+        "home_team": "Kennesaw State",
+        "away_score": 40,
+        "home_score": 42,
+        "url": "https://ksuowls.com/news/2026/11/7/football-postgame-notes-kennesaw-state-clips-fightin-blue-hens-42-40.aspx",
+        "source_route": "WEB_OPEN_AND_FIND",
+        "ref": "turn23view1",
+        "proof": "Kennesaw State defeated Delaware 42-40 on November 7, 2026."
+      },
+      "scoring": {
+        "actual_home_margin": 2,
+        "actual_total": 82,
+        "margin_error_actual_minus_predicted": 1.824418409823293,
+        "total_error_actual_minus_predicted": 31.886697293109435,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.2604306808755562
+      }
+    },
+    {
+      "game_id": "401869936",
+      "away_team": "UL Monroe",
+      "home_team": "Arkansas State",
+      "away_score": 19,
+      "home_score": 17,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_LAMON@ARKST",
+      "source_game_id": "50028565",
+      "original": {
+        "game_id": "401869936",
+        "away_team": "UL Monroe",
+        "home_team": "Arkansas State",
+        "first_frozen_start": "2026-11-07 20:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "13.976858604363448",
+          "pred_total": "57.45655141204326",
+          "pred_win": "0.8045877495119768"
+        },
+        "display": "FIRST_FROZEN: Arkansas State -14.0 / 57.5 / 0.805 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "CBS_FINAL_OBSERVED_OFFICIAL_PENDING",
+      "official_source": null,
+      "scoring": {
+        "actual_home_margin": -2,
+        "actual_total": 36,
+        "margin_error_actual_minus_predicted": -15.976858604363448,
+        "total_error_actual_minus_predicted": -21.45655141204326,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.6473614466647475
+      }
+    },
+    {
+      "game_id": "401856744",
+      "away_team": "Texas A&M",
+      "home_team": "South Carolina",
+      "away_score": 9,
+      "home_score": 17,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_TXAM@SC",
+      "source_game_id": "50028556",
+      "original": {
+        "game_id": "401856744",
+        "away_team": "Texas A&M",
+        "home_team": "South Carolina",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "12.715251331697846",
+          "pred_total": "50.5036568944936",
+          "pred_win": "0.7454572368140134"
+        },
+        "display": "FIRST_FROZEN: South Carolina -12.7 / 50.5 / 0.745 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "url": "https://12thman.com/news/2026/11/07/aggies-at-south-carolina",
+        "request_started_at_utc": "2026-11-08T05:02:36.848883+00:00",
+        "response_recovered_by_utc": "2026-11-08T05:02:42.645693+00:00",
+        "raw_sha256": "5fda2a3e6aa829173b58c0589de534ac96e4decbe2a60bf565b190121616eb39",
+        "raw_bytes": 420371,
+        "source_route": "DIRECT_OFFICIAL_HTML"
+      },
+      "scoring": {
+        "actual_home_margin": 8,
+        "actual_total": 26,
+        "margin_error_actual_minus_predicted": -4.715251331697846,
+        "total_error_actual_minus_predicted": -24.503656894493602,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.06479201829035723
+      }
+    },
+    {
+      "game_id": "401869927",
+      "away_team": "Georgia State",
+      "home_team": "App State",
+      "away_score": 39,
+      "home_score": 23,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_GAST@APLST",
+      "source_game_id": "50028518",
+      "original": {
+        "game_id": "401869927",
+        "away_team": "Georgia State",
+        "home_team": "App State",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "7.049278887884242",
+          "pred_total": "56.118010249830874",
+          "pred_win": "0.6756862377995193"
+        },
+        "display": "FIRST_FROZEN: App State -7.0 / 56.1 / 0.676 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "url": "https://appstatesports.com/news/2026/11/7/football-postgame-notes-from-app-state-vs-georgia-state.aspx",
+        "source_route": "WEB_OPEN_AND_FIND",
+        "ref": "turn31view0",
+        "proof": "POSTGAME NOTES: Georgia State 39, App State 23",
+        "web_response_recovered_by_utc": "2026-11-08T05:04:03Z",
+        "raw_html_hash": "UNAVAILABLE"
+      },
+      "scoring": {
+        "actual_home_margin": -16,
+        "actual_total": 62,
+        "margin_error_actual_minus_predicted": -23.049278887884242,
+        "total_error_actual_minus_predicted": 5.881989750169126,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.45655189195166856
+      }
+    },
+    {
+      "game_id": "401856854",
+      "away_team": "Oklahoma State",
+      "home_team": "Kansas State",
+      "away_score": 66,
+      "home_score": 28,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_OKLAST@KSTATE",
+      "source_game_id": "50028580",
+      "original": {
+        "game_id": "401856854",
+        "away_team": "Oklahoma State",
+        "home_team": "Kansas State",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "15.665675902746544",
+          "pred_total": "51.31526209623849",
+          "pred_win": "0.8288305481594604"
+        },
+        "display": "FIRST_FROZEN: Kansas State -15.7 / 51.3 / 0.829 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401856854",
+        "away_team": "Oklahoma State",
+        "home_team": "Kansas State",
+        "away_score": 66,
+        "home_score": 28,
+        "url": "https://okstate.com/news/2026/11/7/cowboy-football-cowboys-dominate-k-state-66-28",
+        "local_file": "official_401856854.html",
+        "raw_sha256": "cb200caa36f633c9ec0c2eaf906aab174d764cd53453971b1774830ebfb4be7a",
+        "raw_bytes": 644123,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:39.490134+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:43.988939+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -38,
+        "actual_total": 94,
+        "margin_error_actual_minus_predicted": -53.66567590274654,
+        "total_error_actual_minus_predicted": 42.68473790376151,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.6869600775623117
+      }
+    },
+    {
+      "game_id": "401869945",
+      "away_team": "Old Dominion",
+      "home_team": "Coastal Carolina",
+      "away_score": 21,
+      "home_score": 8,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_ODU@CSTCAR",
+      "source_game_id": "50028525",
+      "original": {
+        "game_id": "401869945",
+        "away_team": "Old Dominion",
+        "home_team": "Coastal Carolina",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "EXCLUDED",
+        "original_numeric_strings": null,
+        "display": "FIRST_FROZEN EXCLUDED \u2014 home_prior_pbp_missing",
+        "first_frozen_exclusion": "home_prior_pbp_missing",
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401869945",
+        "away_team": "Old Dominion",
+        "home_team": "Coastal Carolina",
+        "away_score": 21,
+        "home_score": 8,
+        "url": "https://odusports.com/news/2026/11/7/six-takeaways-power-odu-to-21-8-win-at-coastal-carolina",
+        "local_file": "official_401869945.html",
+        "raw_sha256": "93adfb38b54a5cbe197fad1c16228d2f29cb362835e8a2300ab7eb43f1c88637",
+        "raw_bytes": 416696,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:40.026905+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:43.678429+00:00"
+      },
+      "scoring": null
+    },
+    {
+      "game_id": "401856738",
+      "away_team": "Arkansas",
+      "home_team": "Auburn",
+      "away_score": 23,
+      "home_score": 26,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_ARK@AUBURN",
+      "source_game_id": "50028566",
+      "original": {
+        "game_id": "401856738",
+        "away_team": "Arkansas",
+        "home_team": "Auburn",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "16.28981148199242",
+          "pred_total": "54.4504980271418",
+          "pred_win": "0.8089180472483015"
+        },
+        "display": "FIRST_FROZEN: Auburn -16.3 / 54.5 / 0.809 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401856738",
+        "away_team": "Arkansas",
+        "home_team": "Auburn",
+        "away_score": 23,
+        "home_score": 26,
+        "url": "https://auburntigers.com/news/2026/11/7/auburn-rallies-beats-arkansas-26-23-on-last-minute-drive",
+        "local_file": "official_401856738.html",
+        "raw_sha256": "0a09cc7dd87a04ace0c30030488819b69b8652ea4f9609d117078d6e27f16587",
+        "raw_bytes": 598592,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:41.876351+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:45.413565+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 3,
+        "actual_total": 49,
+        "margin_error_actual_minus_predicted": -13.28981148199242,
+        "total_error_actual_minus_predicted": -5.450498027141798,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.03651231266740233
+      }
+    },
+    {
+      "game_id": "401858515",
+      "away_team": "Maryland",
+      "home_team": "Purdue",
+      "away_score": 34,
+      "home_score": 29,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_MD@PURDUE",
+      "source_game_id": "50028554",
+      "original": {
+        "game_id": "401858515",
+        "away_team": "Maryland",
+        "home_team": "Purdue",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-8.130447755193787",
+          "pred_total": "60.3956097237796",
+          "pred_win": "0.3016866232676576"
+        },
+        "display": "FIRST_FROZEN: Maryland -8.1 / 60.4 / 0.302 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401858515",
+        "away_team": "Maryland",
+        "home_team": "Purdue",
+        "away_score": 34,
+        "home_score": 29,
+        "url": "https://umterps.com/news/2026/11/7/football-purdue-recap",
+        "local_file": "official_401858515.html",
+        "raw_sha256": "fa1968d2da793f2d6917591b76fd446c510e90cc1157034be084238cbf7b3145",
+        "raw_bytes": 1179466,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:42.654652+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:45.591208+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -5,
+        "actual_total": 63,
+        "margin_error_actual_minus_predicted": 3.130447755193787,
+        "total_error_actual_minus_predicted": 2.6043902762204,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.09101481865864157
+      }
+    },
+    {
+      "game_id": "401858286",
+      "away_team": "Duke",
+      "home_team": "NC State",
+      "away_score": 41,
+      "home_score": 3,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_DUKE@NCST",
+      "source_game_id": "50028550",
+      "original": {
+        "game_id": "401858286",
+        "away_team": "Duke",
+        "home_team": "NC State",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "4.228345707284807",
+          "pred_total": "48.620614746519706",
+          "pred_win": "0.6292798334885475"
+        },
+        "display": "FIRST_FROZEN: NC State -4.2 / 48.6 / 0.629 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401858286",
+        "away_team": "Duke",
+        "home_team": "NC State",
+        "away_score": 41,
+        "home_score": 3,
+        "url": "https://goduke.com/news/2026/11/7/football-duke-explodes-in-second-quarter-tops-ncsu-41-3",
+        "local_file": "official_401858286.html",
+        "raw_sha256": "01e5266f81c9bd72f5a80ffc985da03953251e545cfc365cb8e6ec4da22ca441",
+        "raw_bytes": 757492,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:42.673983+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:46.533036+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -38,
+        "actual_total": 44,
+        "margin_error_actual_minus_predicted": -42.22834570728481,
+        "total_error_actual_minus_predicted": -4.620614746519706,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.39599310883537414
+      }
+    },
+    {
+      "game_id": "401858512",
+      "away_team": "UCLA",
+      "home_team": "Minnesota",
+      "away_score": 34,
+      "home_score": 20,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_UCLA@MINN",
+      "source_game_id": "50028585",
+      "original": {
+        "game_id": "401858512",
+        "away_team": "UCLA",
+        "home_team": "Minnesota",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "2.747681980467277",
+          "pred_total": "55.15854610269629",
+          "pred_win": "0.5840991961017751"
+        },
+        "display": "FIRST_FROZEN: Minnesota -2.7 / 55.2 / 0.584 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401858512",
+        "away_team": "UCLA",
+        "home_team": "Minnesota",
+        "away_score": 34,
+        "home_score": 20,
+        "url": "https://uclabruins.com/news/2026/11/7/no-5-ucla-remains-unbeaten-after-34-20-win-at-minnesota",
+        "local_file": "official_401858512.html",
+        "raw_sha256": "4f9e8f5ac993e205312e5528a7d9c8567359abe350ebe0cbc8af84cd55816be6",
+        "raw_bytes": 518472,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:42.772512+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:46.357601+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -14,
+        "actual_total": 54,
+        "margin_error_actual_minus_predicted": -16.747681980467277,
+        "total_error_actual_minus_predicted": -1.1585461026962918,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.3411718708867399
+      }
+    },
+    {
+      "game_id": "401858289",
+      "away_team": "Florida State",
+      "home_team": "Boston College",
+      "away_score": 31,
+      "home_score": 24,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_FSU@BC",
+      "source_game_id": "50028520",
+      "original": {
+        "game_id": "401858289",
+        "away_team": "Florida State",
+        "home_team": "Boston College",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "5.987680854824376",
+          "pred_total": "53.704571945553646",
+          "pred_win": "0.6564435069397415"
+        },
+        "display": "FIRST_FROZEN: Boston College -6.0 / 53.7 / 0.656 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401858289",
+        "away_team": "Florida State",
+        "home_team": "Boston College",
+        "away_score": 31,
+        "home_score": 24,
+        "url": "https://seminoles.com/news/2026/11/7/football-seminoles-battle-past-boston-college-for-road-victory",
+        "local_file": "official_401858289.html",
+        "raw_sha256": "d2f2ba4afcced91c8d2a9f0af09c0666143fd8510f11037a12e60682620157af",
+        "raw_bytes": 678156,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:43.683717+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:47.310268+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -7,
+        "actual_total": 55,
+        "margin_error_actual_minus_predicted": -12.987680854824376,
+        "total_error_actual_minus_predicted": 1.2954280544463543,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.43091807780334646
+      }
+    },
+    {
+      "game_id": "401858292",
+      "away_team": "North Carolina",
+      "home_team": "UConn",
+      "away_score": 38,
+      "home_score": 21,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_UNC@UCONN",
+      "source_game_id": "50028526",
+      "original": {
+        "game_id": "401858292",
+        "away_team": "North Carolina",
+        "home_team": "UConn",
+        "first_frozen_start": "2026-11-07 17:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "4.074878832877464",
+          "pred_total": "51.38182660353894",
+          "pred_win": "0.6021837924567134"
+        },
+        "display": "FIRST_FROZEN: UConn -4.1 / 51.4 / 0.602 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401858292",
+        "away_team": "North Carolina",
+        "home_team": "UConn",
+        "away_score": 38,
+        "home_score": 21,
+        "url": "https://goheels.com/news/2026/11/7/football-fb-recap-at-uconn",
+        "local_file": "official_401858292.html",
+        "raw_sha256": "5d932c840600507ff49e7f43ba8fa0933076072cc86640752c4ab8cc9ad2b6b4",
+        "raw_bytes": 842344,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:43.997131+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:47.517480+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -17,
+        "actual_total": 59,
+        "margin_error_actual_minus_predicted": -21.074878832877463,
+        "total_error_actual_minus_predicted": 7.61817339646106,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.36262531989755004
+      }
+    },
+    {
+      "game_id": "401858285",
+      "away_team": "Clemson",
+      "home_team": "Syracuse",
+      "away_score": 18,
+      "home_score": 13,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_CLEM@CUSE",
+      "source_game_id": "50028558",
+      "original": {
+        "game_id": "401858285",
+        "away_team": "Clemson",
+        "home_team": "Syracuse",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "EXCLUDED",
+        "original_numeric_strings": null,
+        "display": "FIRST_FROZEN EXCLUDED \u2014 away_prior_points_missing",
+        "first_frozen_exclusion": "away_prior_points_missing",
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401858285",
+        "away_team": "Clemson",
+        "home_team": "Syracuse",
+        "away_score": 18,
+        "home_score": 13,
+        "url": "https://clemsontigers.com/news/2026/11/7/clemson-defense-lifts-tigers-to-18-13-road-victory",
+        "local_file": "official_401858285.html",
+        "raw_sha256": "fa8a62554667b99e5d39e600b4b3aaa8f10c808346a48ffe1bb2b567aa3fab46",
+        "raw_bytes": 438142,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:45.419392+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:48.617475+00:00"
+      },
+      "scoring": null
+    },
+    {
+      "game_id": "401856743",
+      "away_team": "Texas",
+      "home_team": "Missouri",
+      "away_score": 34,
+      "home_score": 20,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_TEXAS@MIZZOU",
+      "source_game_id": "50028587",
+      "original": {
+        "game_id": "401856743",
+        "away_team": "Texas",
+        "home_team": "Missouri",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "2.9866386354064347",
+          "pred_total": "47.6316901644869",
+          "pred_win": "0.5336080010391044"
+        },
+        "display": "FIRST_FROZEN: Missouri -3.0 / 47.6 / 0.534 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401856743",
+        "url": "https://texaslonghorns.com/sports/football/stats/2026/missouri/boxscore/22502",
+        "away_team": "Texas",
+        "home_team": "Missouri",
+        "away_score": 34,
+        "home_score": 20,
+        "raw_sha256": "8c214623dcd646ccca30246fb9b5f0c463b6cf66a23c2c34eac189bdacf0c2c5",
+        "raw_bytes": 1830519,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Manual official final table or recap body; independently matches CBS",
+        "local_file": "official_2.html",
+        "request_started_at_utc": "2026-11-08T04:48:40.988829+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:48:46.263806+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -14,
+        "actual_total": 54,
+        "margin_error_actual_minus_predicted": -16.986638635406436,
+        "total_error_actual_minus_predicted": 6.368309835513102,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.2847374987729489
+      }
+    },
+    {
+      "game_id": "401856853",
+      "away_team": "Iowa State",
+      "home_team": "Baylor",
+      "away_score": 31,
+      "home_score": 42,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_IOWAST@BAYLOR",
+      "source_game_id": "50028568",
+      "original": {
+        "game_id": "401856853",
+        "away_team": "Iowa State",
+        "home_team": "Baylor",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "4.822221860731134",
+          "pred_total": "46.37501164360453",
+          "pred_win": "0.610435274455332"
+        },
+        "display": "FIRST_FROZEN: Baylor -4.8 / 46.4 / 0.610 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401856853",
+        "url": "https://baylorbears.com/sports/football/stats/2026/iowa-state/boxscore/29752",
+        "away_team": "Iowa State",
+        "home_team": "Baylor",
+        "away_score": 31,
+        "home_score": 42,
+        "raw_sha256": "26e6a0cffc1f0017af6af59afe45150ba4f3a98da4db36e614a995dc37511401",
+        "raw_bytes": 1936458,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Manual official final table or recap body; independently matches CBS",
+        "local_file": "official_3.html",
+        "request_started_at_utc": "2026-11-08T04:48:40.989536+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:48:47.589426+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 11,
+        "actual_total": 73,
+        "margin_error_actual_minus_predicted": 6.177778139268866,
+        "total_error_actual_minus_predicted": 26.62498835639547,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.15176067538869253
+      }
+    },
+    {
+      "game_id": "401862822",
+      "away_team": "Tulsa",
+      "home_team": "Tulane",
+      "away_score": 60,
+      "home_score": 10,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_TULSA@TULANE",
+      "source_game_id": "50028607",
+      "original": {
+        "game_id": "401862822",
+        "away_team": "Tulsa",
+        "home_team": "Tulane",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-7.453381995487822",
+          "pred_total": "45.36973741035307",
+          "pred_win": "0.3078800631681831"
+        },
+        "display": "FIRST_FROZEN: Tulsa -7.5 / 45.4 / 0.308 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401862822",
+        "url": "https://tulsahurricane.com/sports/football/stats/2026/tulane/boxscore/16255",
+        "away_team": "Tulsa",
+        "home_team": "Tulane",
+        "away_score": 60,
+        "home_score": 10,
+        "raw_sha256": "da072e5f106c962ee6136e741229ac31bfc4c3c569f05568961e5db25225f156",
+        "raw_bytes": 2203786,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Manual official final table or recap body; independently matches CBS",
+        "local_file": "official_1.html",
+        "request_started_at_utc": "2026-11-08T04:48:40.987947+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:48:47.899935+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -50,
+        "actual_total": 70,
+        "margin_error_actual_minus_predicted": -42.546618004512176,
+        "total_error_actual_minus_predicted": 24.630262589646932,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.09479013329644442
+      }
+    },
+    {
+      "game_id": "401856849",
+      "away_team": "BYU",
+      "home_team": "Utah",
+      "away_score": 20,
+      "home_score": 28,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261107_BYU@UTAH",
+      "source_game_id": "50028620",
+      "original": {
+        "game_id": "401856849",
+        "away_team": "BYU",
+        "home_team": "Utah",
+        "first_frozen_start": "2026-11-07 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "7.736699271390598",
+          "pred_total": "55.90234467514159",
+          "pred_win": "0.6922489559371883"
+        },
+        "display": "FIRST_FROZEN: Utah -7.7 / 55.9 / 0.692 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401856849",
+        "url": "https://utahutes.com/news/2026/11/7/football-no-3-utah-moves-to-9-0-with-rivalry-win-over-no-9-byu",
+        "away_team": "BYU",
+        "home_team": "Utah",
+        "away_score": 20,
+        "home_score": 28,
+        "raw_sha256": "8175b68443fa20d33c4eba5c6182d77e40f494c5d7cc421a89a6460777302200",
+        "raw_bytes": 818398,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Manual official final table or recap body; independently matches CBS",
+        "local_file": "official_4.html",
+        "request_started_at_utc": "2026-11-08T04:48:40.990195+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:48:45.862232+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 8,
+        "actual_total": 48,
+        "margin_error_actual_minus_predicted": 0.26330072860940223,
+        "total_error_actual_minus_predicted": -7.902344675141592,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.09471070512175069
+      }
+    },
+    {
+      "game_id": "401856855",
+      "away_team": "TCU",
+      "home_team": "Arizona",
+      "away_score": 28,
+      "home_score": 29,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261106_TCU@ARIZ",
+      "source_game_id": "50028517",
+      "original": {
+        "game_id": "401856855",
+        "away_team": "TCU",
+        "home_team": "Arizona",
+        "first_frozen_start": "2026-11-07 03:15:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "1.5517727433164694",
+          "pred_total": "48.752150569762044",
+          "pred_win": "0.5446892660956925"
+        },
+        "display": "FIRST_FROZEN: Arizona -1.6 / 48.8 / 0.545 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401856855",
+        "away_team": "TCU",
+        "home_team": "Arizona",
+        "away_score": 28,
+        "home_score": 29,
+        "url": "https://arizonawildcats.com/news/2026/11/7/football-salgado-medina-late-field-goal-pushes-no-22-arizona-over-tcu-29-28",
+        "local_file": "official_401856855.html",
+        "raw_sha256": "31df8ff40be14eba24bf29bae86a68ce71698e0a9c7757488d8e34cf79837b2d",
+        "raw_bytes": 782742,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:45.606927+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:49.309902+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 1,
+        "actual_total": 57,
+        "margin_error_actual_minus_predicted": -0.5517727433164694,
+        "total_error_actual_minus_predicted": 8.247849430237956,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.20730786440847915
+      }
+    },
+    {
+      "game_id": "401864533",
+      "away_team": "New Mexico",
+      "home_team": "Nevada",
+      "away_score": 31,
+      "home_score": 3,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261106_NMEX@NEVADA",
+      "source_game_id": "50028625",
+      "original": {
+        "game_id": "401864533",
+        "away_team": "New Mexico",
+        "home_team": "Nevada",
+        "first_frozen_start": "2026-11-07 02:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-3.3784963393467207",
+          "pred_total": "42.162809399335046",
+          "pred_win": "0.42443467359009246"
+        },
+        "display": "FIRST_FROZEN: New Mexico -3.4 / 42.2 / 0.424 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401864533",
+        "away_team": "New Mexico",
+        "home_team": "Nevada",
+        "away_score": 31,
+        "home_score": 3,
+        "url": "https://golobos.com/news/2026/11/6/nationally-ranked-lobos-dismantle-nevada-31-3",
+        "local_file": "official_401864533.html",
+        "raw_sha256": "7363bbb44d0cb48c2719b2d91bbf8a0b820729e5dccd705a7d2c98d335b97eb5",
+        "raw_bytes": 497771,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:46.364035+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:50.489539+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -28,
+        "actual_total": 34,
+        "margin_error_actual_minus_predicted": -24.62150366065328,
+        "total_error_actual_minus_predicted": -8.162809399335046,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.18014479214552834
+      }
+    },
+    {
+      "game_id": "401858510",
+      "away_team": "Nebraska",
+      "home_team": "Illinois",
+      "away_score": 13,
+      "home_score": 24,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261106_NEB@ILL",
+      "source_game_id": "50028577",
+      "original": {
+        "game_id": "401858510",
+        "away_team": "Nebraska",
+        "home_team": "Illinois",
+        "first_frozen_start": "2026-11-07 01:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-1.761681196539541",
+          "pred_total": "55.71166433271795",
+          "pred_win": "0.522416791937179"
+        },
+        "display": "FIRST_FROZEN: Nebraska -1.8 / 55.7 / 0.522 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401858510",
+        "url": "https://huskers.com/news/2026/11/6/huskers-fall-at-illinois-24-13",
+        "away_team": "Nebraska",
+        "home_team": "Illinois",
+        "away_score": 13,
+        "home_score": 24,
+        "raw_sha256": "d30302fd552427c56ef2bbb956149bbd4d27af0e8c3f938c5226653120d05117",
+        "raw_bytes": 650963,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Manual official final table or recap body; independently matches CBS",
+        "local_file": "official_9.html",
+        "request_started_at_utc": "2026-11-08T04:48:47.865171+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:48:51.450122+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 11,
+        "actual_total": 37,
+        "margin_error_actual_minus_predicted": 12.761681196539541,
+        "total_error_actual_minus_predicted": -18.71166433271795,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.22808572062357574
+      }
+    },
+    {
+      "game_id": "401862818",
+      "away_team": "South Florida",
+      "home_team": "East Carolina",
+      "away_score": 17,
+      "home_score": 20,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261106_SFLA@ECU",
+      "source_game_id": "50028516",
+      "original": {
+        "game_id": "401862818",
+        "away_team": "South Florida",
+        "home_team": "East Carolina",
+        "first_frozen_start": "2026-11-07 00:30:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-11.807863806889149",
+          "pred_total": "48.45215367034799",
+          "pred_win": "0.22121155105652215"
+        },
+        "display": "FIRST_FROZEN: South Florida -11.8 / 48.5 / 0.221 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401862818",
+        "away_team": "South Florida",
+        "home_team": "East Carolina",
+        "away_score": 17,
+        "home_score": 20,
+        "url": "https://ecupirates.com/news/2026/11/7/football-conrad-drills-55-yard-game-winning-field-goal-to-lift-ecu-past-south-florida-20-17",
+        "local_file": "official_401862818.html",
+        "raw_sha256": "4b883e25e7490f1365e888caa788a3d203e1b6a0be650275e7c35792a281a7cc",
+        "raw_bytes": 668692,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:46.542951+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:50.959386+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 3,
+        "actual_total": 37,
+        "margin_error_actual_minus_predicted": 14.807863806889149,
+        "total_error_actual_minus_predicted": -11.45215367034799,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.606511448207788
+      }
+    },
+    {
+      "game_id": "401858288",
+      "away_team": "Virginia Tech",
+      "home_team": "SMU",
+      "away_score": 28,
+      "home_score": 51,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261106_VATECH@SMU",
+      "source_game_id": "50028598",
+      "original": {
+        "game_id": "401858288",
+        "away_team": "Virginia Tech",
+        "home_team": "SMU",
+        "first_frozen_start": "2026-11-07 00:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-2.8565813934429176",
+          "pred_total": "57.50370019732571",
+          "pred_win": "0.4098040927761556"
+        },
+        "display": "FIRST_FROZEN: Virginia Tech -2.9 / 57.5 / 0.410 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401858288",
+        "url": "https://smumustangs.com/game-center/14455",
+        "away_team": "Virginia Tech",
+        "home_team": "SMU",
+        "away_score": 28,
+        "home_score": 51,
+        "raw_sha256": "c378fbd044867b10561a87957740ea73cec62988ea5b40594f9c470344e6ecde",
+        "raw_bytes": 756678,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Manual official final table or recap body; independently matches CBS",
+        "local_file": "official_8.html",
+        "request_started_at_utc": "2026-11-08T04:48:47.598655+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:48:52.128390+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 23,
+        "actual_total": 79,
+        "margin_error_actual_minus_predicted": 25.856581393442916,
+        "total_error_actual_minus_predicted": 21.496299802674287,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.3483312089037768
+      }
+    },
+    {
+      "game_id": "401869964",
+      "away_team": "James Madison",
+      "home_team": "Southern Miss",
+      "away_score": 54,
+      "home_score": 23,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261105_JMAD@USM",
+      "source_game_id": "50028515",
+      "original": {
+        "game_id": "401869964",
+        "away_team": "James Madison",
+        "home_team": "Southern Miss",
+        "first_frozen_start": "2026-11-06 01:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-14.404067861695497",
+          "pred_total": "52.98662341636999",
+          "pred_win": "0.20791881268972284"
+        },
+        "display": "FIRST_FROZEN: James Madison -14.4 / 53.0 / 0.208 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401869964",
+        "away_team": "James Madison",
+        "home_team": "Southern Miss",
+        "away_score": 54,
+        "home_score": 23,
+        "url": "https://jmusports.com/news/2026/11/6/football-evans-leads-dukes-in-road-win-at-southern-miss",
+        "local_file": "official_401869964.html",
+        "raw_sha256": "2bb2ea7bb2f972b9b857b25fe0e163ecb0b5559e27b7a448ccf591a2db418634",
+        "raw_bytes": 842018,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:47.321001+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:50.816351+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -31,
+        "actual_total": 77,
+        "margin_error_actual_minus_predicted": -16.595932138304505,
+        "total_error_actual_minus_predicted": 24.013376583630013,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.043230232670304056
+      }
+    },
+    {
+      "game_id": "401862817",
+      "away_team": "UTSA",
+      "home_team": "Florida Atlantic",
+      "away_score": 29,
+      "home_score": 60,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261105_TXSA@FAU",
+      "source_game_id": "50028514",
+      "original": {
+        "game_id": "401862817",
+        "away_team": "UTSA",
+        "home_team": "Florida Atlantic",
+        "first_frozen_start": "2026-11-06 01:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-5.195659872391833",
+          "pred_total": "54.315494919956976",
+          "pred_win": "0.3571857491486996"
+        },
+        "display": "FIRST_FROZEN: UTSA -5.2 / 54.3 / 0.357 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401862817",
+        "away_team": "UTSA",
+        "home_team": "Florida Atlantic",
+        "away_score": 29,
+        "home_score": 60,
+        "url": "https://fausports.com/news/2026/11/6/football-owls-bowl-bound-after-scoring-60-against-first-place-utsa",
+        "local_file": "official_401862817.html",
+        "raw_sha256": "ce6b87dc1fbca6070b3ac9ebfab87f02f445eb948ef6ebb056abc168257824c4",
+        "raw_bytes": 649985,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:47.528415+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:52.331883+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 31,
+        "actual_total": 89,
+        "margin_error_actual_minus_predicted": 36.19565987239183,
+        "total_error_actual_minus_predicted": 34.684505080043024,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.41321016109751857
+      }
+    },
+    {
+      "game_id": "401866456",
+      "away_team": "Central Michigan",
+      "home_team": "Eastern Michigan",
+      "away_score": 35,
+      "home_score": 7,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261104_CMICH@EMICH",
+      "source_game_id": "50028511",
+      "original": {
+        "game_id": "401866456",
+        "away_team": "Central Michigan",
+        "home_team": "Eastern Michigan",
+        "first_frozen_start": "2026-11-04 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-2.7860217274720576",
+          "pred_total": "42.92255127170241",
+          "pred_win": "0.3934278618775662"
+        },
+        "display": "FIRST_FROZEN: Central Michigan -2.8 / 42.9 / 0.393 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401866456",
+        "away_team": "Central Michigan",
+        "home_team": "Eastern Michigan",
+        "away_score": 35,
+        "home_score": 7,
+        "url": "https://cmuchippewas.com/news/2026/11/5/football-chippewas-roll-past-eastern-in-motor-city-maction",
+        "local_file": "official_401866456.html",
+        "raw_sha256": "9027e7d8d7dfb48581a2d03c853152c7eddb6c35e237373e577527029d42b5a4",
+        "raw_bytes": 1049880,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:48.621900+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:52.798003+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -28,
+        "actual_total": 42,
+        "margin_error_actual_minus_predicted": -25.213978272527942,
+        "total_error_actual_minus_predicted": -0.9225512717024102,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.1547854825015533
+      }
+    },
+    {
+      "game_id": "401866455",
+      "away_team": "Ball State",
+      "home_team": "Massachusetts",
+      "away_score": 30,
+      "home_score": 31,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261104_BALLST@UMASS",
+      "source_game_id": "50028512",
+      "original": {
+        "game_id": "401866455",
+        "away_team": "Ball State",
+        "home_team": "Massachusetts",
+        "first_frozen_start": "2026-11-04 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "26.11695812114495",
+          "pred_total": "50.971213997264655",
+          "pred_win": "0.9319500450031746"
+        },
+        "display": "FIRST_FROZEN: Massachusetts -26.1 / 51.0 / 0.932 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401866455",
+        "away_team": "Ball State",
+        "home_team": "Massachusetts",
+        "away_score": 30,
+        "home_score": 31,
+        "url": "https://umassathletics.com/news/2026/11/5/football-minutemen-outlast-ball-state-in-overtime-thriller-31-30",
+        "local_file": "official_401866455.html",
+        "raw_sha256": "f1e368d162a4a811adef9d2d22042c08bf9983e788d6621193e005001a7459de",
+        "raw_bytes": 603964,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:49.318155+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:53.643474+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": 1,
+        "actual_total": 61,
+        "margin_error_actual_minus_predicted": -25.11695812114495,
+        "total_error_actual_minus_predicted": 10.028786002735345,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.004630796375069965
+      }
+    },
+    {
+      "game_id": "401866457",
+      "away_team": "Toledo",
+      "home_team": "Sacramento State",
+      "away_score": 20,
+      "home_score": 17,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261104_TOLEDO@SACST",
+      "source_game_id": "50028513",
+      "original": {
+        "game_id": "401866457",
+        "away_team": "Toledo",
+        "home_team": "Sacramento State",
+        "first_frozen_start": "2026-11-04 05:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "-5.156938754516926",
+          "pred_total": "54.25392295084098",
+          "pred_win": "0.3464234810248434"
+        },
+        "display": "FIRST_FROZEN: Toledo -5.2 / 54.3 / 0.346 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401866457",
+        "away_team": "Toledo",
+        "home_team": "Sacramento State",
+        "away_score": 20,
+        "home_score": 17,
+        "url": "https://utrockets.com/news/2026/11/4/football-rockets-swarm-hornets-for-mac-win-in-california-20-17",
+        "local_file": "official_401866457.html",
+        "raw_sha256": "8c09a2872279885a5bf3a690d8e52215db9894fb5e3c81a3f941bbe14f871733",
+        "raw_bytes": 744685,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:50.494899+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:54.935472+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -3,
+        "actual_total": 37,
+        "margin_error_actual_minus_predicted": 2.1569387545169256,
+        "total_error_actual_minus_predicted": -17.25392295084098,
+        "margin_direction_correct": true,
+        "probability_classifier_correct": true,
+        "home_win_brier": 0.12000922820537002
+      }
+    },
+    {
+      "game_id": "401866454",
+      "away_team": "Buffalo",
+      "home_team": "Miami (OH)",
+      "away_score": 34,
+      "home_score": 31,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261103_BUFF@MIAOH",
+      "source_game_id": "50028510",
+      "original": {
+        "game_id": "401866454",
+        "away_team": "Buffalo",
+        "home_team": "Miami (OH)",
+        "first_frozen_start": "2026-11-04 00:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "11.720713530764943",
+          "pred_total": "53.6393554794765",
+          "pred_win": "0.769956822513323"
+        },
+        "display": "FIRST_FROZEN: Miami (OH) -11.7 / 53.6 / 0.770 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401866454",
+        "away_team": "Buffalo",
+        "home_team": "Miami (OH)",
+        "away_score": 34,
+        "home_score": 31,
+        "url": "https://ubbulls.com/news/2026/11/4/football-bulls-clip-redhawks-in-overtime-34-31",
+        "local_file": "official_401866454.html",
+        "raw_sha256": "fd703b551490d7672e30da1eecd6e42ee962f8c500a577334c686e5f14630d14",
+        "raw_bytes": 601106,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:50.828508+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:54.973912+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -3,
+        "actual_total": 65,
+        "margin_error_actual_minus_predicted": -14.720713530764943,
+        "total_error_actual_minus_predicted": 11.3606445205235,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.5928335085348128
+      }
+    },
+    {
+      "game_id": "401866453",
+      "away_team": "Ohio",
+      "home_team": "Akron",
+      "away_score": 28,
+      "home_score": 20,
+      "is_final": true,
+      "cbs_status_class": "OddsBlock-game OddsBlock-game--final",
+      "source_game_key": "NCAAF_20261103_OHIO@AKRON",
+      "source_game_id": "50028509",
+      "original": {
+        "game_id": "401866453",
+        "away_team": "Ohio",
+        "home_team": "Akron",
+        "first_frozen_start": "2026-11-04 00:00:00+00:00",
+        "first_frozen_status": "PREDICTION",
+        "original_numeric_strings": {
+          "pred_margin": "10.365389485491425",
+          "pred_total": "52.76064387323792",
+          "pred_win": "0.7411891720882852"
+        },
+        "display": "FIRST_FROZEN: Akron -10.4 / 52.8 / 0.741 home",
+        "first_frozen_exclusion": null,
+        "current_qualified_kickoff_utc": null
+      },
+      "outcome_class": "OFFICIAL_FINAL_VERIFIED",
+      "official_source": {
+        "game_id": "401866453",
+        "away_team": "Ohio",
+        "home_team": "Akron",
+        "away_score": 28,
+        "home_score": 20,
+        "url": "https://ohiobobcats.com/news/2026/11/3/ohio-football-wins-on-the-road-at-akron",
+        "local_file": "official_401866453.html",
+        "raw_sha256": "b1750466c6d4c39b6cc3c00036a52f584515cc6917fd6e0b5e6fdb417a488076",
+        "raw_bytes": 712510,
+        "source_route": "DIRECT_OFFICIAL_HTML",
+        "verification": "Full official page title/body or dated schedule final matched; preview/historical-stat-only results excluded",
+        "request_started_at_utc": "2026-11-08T04:51:50.966322+00:00",
+        "response_recovered_by_file_write_utc": "2026-11-08T04:51:53.927599+00:00"
+      },
+      "scoring": {
+        "actual_home_margin": -8,
+        "actual_total": 48,
+        "margin_error_actual_minus_predicted": -18.365389485491427,
+        "total_error_actual_minus_predicted": -4.7606438732379175,
+        "margin_direction_correct": false,
+        "probability_classifier_correct": false,
+        "home_win_brier": 0.5493613888209176
+      }
+    }
+  ],
+  "acceptance": "INCREMENTAL_OFFICIAL46_SUBSET_ONLY;12CBSfinal official qualifications and5not-final remain;notfullSundayreview",
+  "book_settlement": "UNVERIFIED; no paidcash movement",
+  "source_fallback_notes": [
+    "Four direct school recap downloads returned404; two were independently recovered/read via web and two remain unqualified after web DisabledError. No error cause inferred.",
+    "Official ASU/Colorado pages remained stale despite CBS20-10final; preserve independent corroboration pending.",
+    "One automatically nominated Liberty pregame PDF matched unrelated historical score strings; rejected from official outcomes. Only matching currentgame completed records admitted.",
+    "Full direct requests package unavailable; standard-library urllib succeeded forCBS; not a networkfailure."
+  ],
+  "independent_decimal_reconciliation": {
+    "margin_mae": "18.23589879530069539121951219512195121951",
+    "total_mae": "14.81805067142181763414634146341463414634",
+    "home_win_brier": "0.2691524541958868109675054119428448707317",
+    "official_modeled_n": 41,
+    "float_metrics_agree_within_absolute_1e_12": true
+  },
+  "official_source_attempt_queue": [
+    {
+      "game_id": "401870795",
+      "q": "site:libertyflames.com Liberty New Mexico State football November 2026",
+      "domain": "libertyflames.com"
+    },
+    {
+      "game_id": "401856739",
+      "q": "site:soonersports.com Oklahoma Florida football November 2026",
+      "domain": "soonersports.com"
+    },
+    {
+      "game_id": "401862823",
+      "q": "site:goairforcefalcons.com Air Force Army football November 2026",
+      "domain": "goairforcefalcons.com"
+    },
+    {
+      "game_id": "401856741",
+      "q": "site:georgiadogs.com Georgia Ole Miss football November 2026",
+      "domain": "georgiadogs.com"
+    },
+    {
+      "game_id": "401858513",
+      "q": "site:hawkeyesports.com Iowa Northwestern football November 2026",
+      "domain": "hawkeyesports.com"
+    },
+    {
+      "game_id": "401858291",
+      "q": "site:fightingirish.com Miami Notre Dame football November 2026",
+      "domain": "fightingirish.com"
+    },
+    {
+      "game_id": "401858511",
+      "q": "site:msuspartans.com Michigan State Michigan football November 2026",
+      "domain": "msuspartans.com"
+    },
+    {
+      "game_id": "401858287",
+      "q": "site:gocards.com Louisville Georgia Tech football November 2026",
+      "domain": "gocards.com"
+    },
+    {
+      "game_id": "401871075",
+      "q": "site:jaxstatesports.com Sam Houston Jacksonville State football November 2026",
+      "domain": "jaxstatesports.com"
+    },
+    {
+      "game_id": "401856745",
+      "q": "site:utsports.com Kentucky Tennessee football November 2026",
+      "domain": "utsports.com"
+    },
+    {
+      "game_id": "401860911",
+      "q": "site:broncosports.com Boise State Colorado State football November 2026",
+      "domain": "broncosports.com"
+    },
+    {
+      "game_id": "401869968",
+      "q": "site:ragincajuns.com South Alabama Louisiana football November 2026",
+      "domain": "ragincajuns.com"
+    },
+    {
+      "game_id": "401858517",
+      "q": "site:uwbadgers.com Rutgers Wisconsin football November 2026",
+      "domain": "uwbadgers.com"
+    },
+    {
+      "game_id": "401856742",
+      "q": "site:vucommodores.com Vanderbilt Mississippi State football November 2026",
+      "domain": "vucommodores.com"
+    },
+    {
+      "game_id": "401864534",
+      "q": "site:sjsuspartans.com Northern Illinois San Jos\u00e9 State football November 2026",
+      "domain": "sjsuspartans.com"
+    },
+    {
+      "game_id": "401871098",
+      "q": "site:latechsports.com Louisiana Tech Troy football November 2026",
+      "domain": "latechsports.com"
+    },
+    {
+      "game_id": "401862821",
+      "q": "site:meangreensports.com Rice North Texas football November 2026",
+      "domain": "meangreensports.com"
+    },
+    {
+      "game_id": "401856850",
+      "q": "site:ucfknights.com UCF Kansas football November 2026",
+      "domain": "ucfknights.com"
+    },
+    {
+      "game_id": "401858290",
+      "q": "site:godeacs.com Merrimack Wake Forest football November 2026",
+      "domain": "godeacs.com"
+    },
+    {
+      "game_id": "401871076",
+      "q": "site:goblueraiders.com Western Kentucky Middle Tennessee football November 2026",
+      "domain": "goblueraiders.com"
+    },
+    {
+      "game_id": "401858516",
+      "q": "site:gopsusports.com Penn State Washington football November 2026",
+      "domain": "gopsusports.com"
+    },
+    {
+      "game_id": "401862819",
+      "q": "site:uabsports.com Charlotte UAB football November 2026",
+      "domain": "uabsports.com"
+    },
+    {
+      "game_id": "401862820",
+      "q": "site:navysports.com Temple Navy football November 2026",
+      "domain": "navysports.com"
+    },
+    {
+      "game_id": "401869951",
+      "q": "site:gseagles.com Marshall Georgia Southern football November 2026",
+      "domain": "gseagles.com"
+    },
+    {
+      "game_id": "401871073",
+      "q": "site:ksuowls.com Delaware Kennesaw State football November 2026",
+      "domain": "ksuowls.com"
+    },
+    {
+      "game_id": "401869936",
+      "q": "site:ulmwarhawks.com UL Monroe Arkansas State football November 2026",
+      "domain": "ulmwarhawks.com"
+    },
+    {
+      "game_id": "401856744",
+      "q": "site:gamecocksonline.com Texas A&M South Carolina football November 2026",
+      "domain": "gamecocksonline.com"
+    },
+    {
+      "game_id": "401869927",
+      "q": "site:georgiastatesports.com Georgia State App State football November 2026",
+      "domain": "georgiastatesports.com"
+    },
+    {
+      "game_id": "401856854",
+      "q": "site:okstate.com Oklahoma State Kansas State football November 2026",
+      "domain": "okstate.com"
+    },
+    {
+      "game_id": "401869945",
+      "q": "site:odusports.com Old Dominion Coastal Carolina football November 2026",
+      "domain": "odusports.com"
+    },
+    {
+      "game_id": "401856738",
+      "q": "site:auburntigers.com Arkansas Auburn football November 2026",
+      "domain": "auburntigers.com"
+    },
+    {
+      "game_id": "401858515",
+      "q": "site:umterps.com Maryland Purdue football November 2026",
+      "domain": "umterps.com"
+    },
+    {
+      "game_id": "401858286",
+      "q": "site:goduke.com Duke NC State football November 2026",
+      "domain": "goduke.com"
+    },
+    {
+      "game_id": "401858512",
+      "q": "site:uclabruins.com UCLA Minnesota football November 2026",
+      "domain": "uclabruins.com"
+    },
+    {
+      "game_id": "401858289",
+      "q": "site:seminoles.com Florida State Boston College football November 2026",
+      "domain": "seminoles.com"
+    },
+    {
+      "game_id": "401858292",
+      "q": "site:goheels.com North Carolina UConn football November 2026",
+      "domain": "goheels.com"
+    },
+    {
+      "game_id": "401858285",
+      "q": "site:clemsontigers.com Clemson Syracuse football November 2026",
+      "domain": "clemsontigers.com"
+    },
+    {
+      "game_id": "401856855",
+      "q": "site:arizonawildcats.com TCU Arizona football November 2026",
+      "domain": "arizonawildcats.com"
+    },
+    {
+      "game_id": "401864533",
+      "q": "site:golobos.com New Mexico Nevada football November 2026",
+      "domain": "golobos.com"
+    },
+    {
+      "game_id": "401862818",
+      "q": "site:ecupirates.com South Florida East Carolina football November 2026",
+      "domain": "ecupirates.com"
+    },
+    {
+      "game_id": "401869964",
+      "q": "site:jmusports.com James Madison Southern Miss football November 2026",
+      "domain": "jmusports.com"
+    },
+    {
+      "game_id": "401862817",
+      "q": "site:fausports.com UTSA Florida Atlantic football November 2026",
+      "domain": "fausports.com"
+    },
+    {
+      "game_id": "401866456",
+      "q": "site:cmuchippewas.com Central Michigan Eastern Michigan football November 2026",
+      "domain": "cmuchippewas.com"
+    },
+    {
+      "game_id": "401866455",
+      "q": "site:umassathletics.com Ball State Massachusetts football November 2026",
+      "domain": "umassathletics.com"
+    },
+    {
+      "game_id": "401866457",
+      "q": "site:utrockets.com Toledo Sacramento State football November 2026",
+      "domain": "utrockets.com"
+    },
+    {
+      "game_id": "401866454",
+      "q": "site:ubbulls.com Buffalo Miami (OH) football November 2026",
+      "domain": "ubbulls.com"
+    },
+    {
+      "game_id": "401866453",
+      "q": "site:ohiobobcats.com Ohio Akron football November 2026",
+      "domain": "ohiobobcats.com"
+    }
+  ],
+  "source_request_started_at_utc": "2026-11-08T04:46:54.652100+00:00",
+  "source_response_recovered_by_file_write_utc": "2026-11-08T04:47:00.013653+00:00",
+  "source_clock_qualification": {
+    "supersedes_R1_observation_label_only": "R1source_observation_utc and directofficialobserved_at_utc were request-start timestamps, not responsecompletion/providerupdate. R2renames those fields and supplies file-write-derived completed-response upperbounds where retained bytes exist. No data retimed, no wagerchronology certified.",
+    "CBSfile_write_bound": "Raw response bytes were read completely beforewrite; retained filemtime bounds completed receipt.",
+    "source_provider_update_time": "UNKNOWN"
+  },
+  "newly_verified_game_ids": [
+    "401856739",
+    "401856744",
+    "401860911",
+    "401869927"
+  ],
+  "alternate_source_attempts": [
+    [
+      "401856739",
+      "https://floridagators.com/news/2026/11/7/football-final-florida-vs-oklahoma-nov-7-2026"
+    ],
+    [
+      "401869968",
+      "https://usajaguars.com/news/2026/11/8/football-south-alabama-rally-falls-short-at-cajun-field.aspx"
+    ],
+    [
+      "401869936",
+      "https://astateredwolves.com/news/2026/11/7/football-a-state-falls-in-final-minutes-versus-ulm-19-17.aspx"
+    ],
+    [
+      "401856744",
+      "https://12thman.com/news/2026/11/07/aggies-at-south-carolina"
+    ],
+    [
+      "401869927",
+      "https://appstatesports.com/news/2026/11/7/football-postgame-notes-from-app-state-vs-georgia-state.aspx"
+    ],
+    [
+      "401860911",
+      "https://csurams.com/sports/football/stats/2026/boise-state/boxscore/21971"
+    ],
+    [
+      "401858287",
+      "https://ramblinwreck.com/news/2026/11/7/fb-recap-ul-26"
+    ]
+  ],
+  "additional_source_errors": [
+    "SouthAlabama/ArkansasState recapraw404 and webDisabledError;remainunqualified.",
+    "GT currentrecapdidnotcontainfinalnumeric score;linkedFinalStatsPDFdownloadwasnotvalidPDF(pdftotextexit1);nocurrentfinalacceptedfromit.",
+    "EarlierCBS source facts/data remain same retained capture;sourceclocklabelsqualified explicitly inR2."
+  ]
+}
