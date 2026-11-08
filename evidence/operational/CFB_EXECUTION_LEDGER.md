@@ -326,3 +326,24 @@ Run CFB_PRODUCTION_READINESS_20261108T043547Z. Source: user stated, "All bets hi
 | CFB_NOV06-11 | Utah/Cincinnati/Missouri State three-leg parlay | WIN | 35.25 | +30.25 |
 
 User-reported aggregate 8 WIN /3 LOSS /0 PUSH, $55.00 stake, $102.90 printed-result return, +$47.90 net. Seven winning straights return $67.65; winning parlay returns $35.25. This records one result per existing ticket and no new wager or extra leg stake. No full-game scores, Champion scoring, book cash movement, or historical recommendation attribution inferred. User-confirmed funding remains separate.
+
+
+## November7 actual tickets — independent final-score corroboration
+
+Run CFB_WEEK10_CLOSEOUT_20261108T044606Z. Source evidence/operational/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z.json, Git blob eb7b3a51acb43eb5e4ea39f5a119c70858497c1f; exact directed identities joined to authenticated original cohort. Final-score evidence corroborates the earlier user-reported8WIN3LOSS; book adjudication/redemption/payment remain UNVERIFIED. No new wager, stake debit, funding or cash return posted.
+
+| Execution ID | Selection | Final away-home | Grade calculation | Final-score grade | Source class |
+|---|---|---|---|---|---|
+| CFB_NOV06-01 | Tulsa-Tulane over50 | Tulsa60-Tulane10 |70-50=20|WIN|OFFICIAL_FINAL_VERIFIED|
+| CFB_NOV06-02 | Texas-Missouri over42.5 |Texas34-Missouri20|54-42.5=11.5|WIN|OFFICIAL_FINAL_VERIFIED|
+| CFB_NOV06-03 | Baylor-10 |IowaState31-Baylor42|42-31-10=1|WIN|OFFICIAL_FINAL_VERIFIED|
+| CFB_NOV06-04 | Oregon-OhioState over45 |Oregon41-OhioState28|69-45=24|WIN|OFFICIAL_FINAL_VERIFIED|
+| CFB_NOV06-05 | Utah-4.5 |BYU20-Utah28|28-20-4.5=3.5|WIN|OFFICIAL_FINAL_VERIFIED|
+| CFB_NOV06-06 | ArizonaState-3.5 |Colorado10-ArizonaState20|20-10-3.5=6.5|WIN|CBS_FINAL_CORROBORATED_OFFICIAL_PENDING|
+| CFB_NOV06-07 | MissouriState+4.5 |MissouriState20-FIU23|20-23+4.5=1.5|WIN|OFFICIAL_FINAL_VERIFIED|
+| CFB_NOV06-08 | LSU-6 |Alabama31-LSU13|13-31-6=-24|LOSS|OFFICIAL_FINAL_VERIFIED|
+| CFB_NOV06-09 | Nebraska-4 |Nebraska13-Illinois24|13-24-4=-15|LOSS|OFFICIAL_FINAL_VERIFIED|
+| CFB_NOV06-10 | VirginiaTech+6 |VirginiaTech28-SMU51|28-51+6=-17|LOSS|OFFICIAL_FINAL_VERIFIED|
+| CFB_NOV06-11 | Utah-4.5/Cincinnati+10.5/MissouriState+4.5 |Utah28-20;Cincinnati24-Houston31;MissouriState20-FIU23|leg cushions+3.5/+3.5/+1.5;allthreecover|WIN|OFFICIAL_FINAL_VERIFIED_ALL3LEGS|
+
+ArizonaState20-10 is additionally corroborated by the AP recap hosted by CBS: https://www.cbssports.com/college-football/news/jake-fette-leads-arizona-state-past-colorado-in-20-10-win/ . School sources reached in this invocation remained stale; do not label this one independently official-verified. Ten tickets have official-game final support (nine straights plus parlay); one straight remains CBS-corroborated. Ticket printed payouts still give $102.90 result return/$47.90 net on $55 stakes. These are existing result arithmetic, not additional cash postings. $147.35 bankroll remains conditional estimate. Frozen predictions, original decision history and recommendation attribution unchanged.
