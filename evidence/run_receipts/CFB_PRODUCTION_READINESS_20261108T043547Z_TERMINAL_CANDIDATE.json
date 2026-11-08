@@ -1,0 +1,67 @@
+{
+  "run_id": "CFB_PRODUCTION_READINESS_20261108T043547Z",
+  "recorded_at_utc": "2026-11-08T04:43:30Z",
+  "terminal": "RUN_INCOMPLETE",
+  "completed_scope": "INDEPENDENTLY_RECONCILED funding-validator repair, user-reported ticket outcome accounting, and current recovery integration",
+  "audit": {
+    "path": "evidence/scheduler_qa/CFB_PRODUCTION_READINESS_20261108T043547Z_AUDIT.json",
+    "blob": "76b4cc4808367f930a5109ad90727b3384e30ebe"
+  },
+  "startup": {
+    "path": "evidence/run_receipts/CFB_PRODUCTION_READINESS_20261108T043547Z_RUN_STARTED.md",
+    "blob": "70aa0213d3fda0791409ec702299f3e659de03df"
+  },
+  "surfaces": {
+    "execution": "7f5e645d6905a7d0bc1354fa5cb43d3a2bb8aa6f",
+    "money": "0f6804969e91d32c41e545b0c8cd718e34033d56",
+    "register": "19c434c23cfde56eafd534746b6cfae06e1ef30c",
+    "recovery": {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_261.md",
+      "blob": "aa0c6ce963db3f1819352a496678922eba705ec0"
+    },
+    "guard": "7d31929408d9e6f06355bfb92711e1dd4acceb54",
+    "tests": "9a974f44815b8ea22c5dcdae2d2a4f7e9a0ec980"
+  },
+  "readbacks": "All applicable saved bytes independently matched; prewrite and independently recovered saved Git-object consumer preflight PASS408pointers; final connected main tree408pointers unchanged.",
+  "validation": {
+    "local_regressions": 39,
+    "actual_funding_cli": "PASS40USD2explicitrecords;notavailablecash",
+    "selected_ci": {
+      "run_id": 42447789904,
+      "head_sha": "36bd6a941758fa3c2c131e96a1b4489631da8b54",
+      "conclusion": "success",
+      "job_id": 128630300337,
+      "steps_completed_successfully": 46,
+      "url": "https://github.com/munchie50/cfb-acquisition-bridge/actions/runs/42447789904"
+    }
+  },
+  "unresolved": [
+    "Actual next natural Monitor complete runtime/source-analysis/publication path after installed corrections",
+    "Week10 official-score closeout and Sunday learning",
+    "Bookpaid/currentholdingsreconciliation;147.35remainsestimate"
+  ],
+  "next": "Existing SundayNovember8 07:00CT Monitor natural proof; independent Week10 official closeout can proceed under established authority. Do not repeat accepted39testrepair or historicalruntime smoke withoutnewcontradiction.",
+  "task_topology": {
+    "enabled": [
+      {
+        "id": "6ae766e788d881919726d0eeb44450dd",
+        "title": "CFB Market Monitor Rebuilt"
+      },
+      {
+        "id": "6ae76df2ece4819197f91fb10076dea7",
+        "title": "CFB Engine Health Rebuilt"
+      },
+      {
+        "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+        "title": "CFB Weekly Engine QA Rebuilt"
+      },
+      {
+        "id": "6ae76df60e0c819182e2cfab1b83846a",
+        "title": "CFB Evening Availability Rebuilt"
+      }
+    ],
+    "four_unchanged": true
+  },
+  "scientific_champion_effect": "NONE",
+  "terminal_semantics": "This candidate does not certify its own persistence; separate closure follows exact independent readback."
+}
