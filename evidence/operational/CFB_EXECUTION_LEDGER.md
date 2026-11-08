@@ -288,3 +288,20 @@ Source: ten original user-uploaded Caesars Sportsbook / Harrah's Columbus issued
 Batch: 10 straight tickets, $50.00 stake, $46.00 printed maximum win, $96.00 printed maximum payout if all win. Prior40/$153.50 plus10/$50.00 =50 recorded actual tickets/$203.50 cumulative historical stakes; this is inventory, not current balance or complete lifetime history. Printed amounts retained without replacing cents with theoretical odds arithmetic.
 
 Budget production/sandbox UNASSIGNED; receipt timezone UNSPECIFIED; no live labels. Printed issue precedes printed event for all ten (VT by one printed minute); independent actual kickoff/pregame chronology UNVERIFIED. Results, book settlement, redemption, paid returns, CLV, frozen-reference and causal recommendation attribution UNVERIFIED. Intake does not certify these as engine recommendations. No new deposit, withdrawal, current holdings balance or sportsbook payout inferred. Screenshots are downstream execution evidence only, excluded from model/training/calibration and retrospective decision changes. Original image provenance is retained in the intake receipt.
+
+
+## November 6 additional three-leg parlay — November 7 user-confirmed intake
+
+Execution ID: CFB_NOV06-11. ACTUAL_REAL_MONEY; Caesars Sportsbook / Harrah's Columbus. User instruction: "Add this too." Original issued ticket photograph Library identity libfile_93d918f140108191a90c1fdfe3d57499; filename IMG_DA9D5B63-2F07-41FA-A850-48C3D18E0A81.jpeg; SHA256 4accc95b789c162fc747faae9675fe30b1270078e93de89bbbe1886784a7477b; 397957 bytes. Recorded at observed UTC 2026-11-08T00:42:41.846016+00:00. Private serial visually distinct from prior ten; no existing CFB_NOV06-11 or parlay intake at fresh baseline cb061b61a73bc3b710a8f06c81bc7f686a95c15a. Cashable serial/barcode omitted.
+
+Issued as printed: November6,2026 17:57; receipt timezone UNSPECIFIED. One $5.00 three-leg parlay at +605. Printed max win $30.25; printed max payout $35.25.
+
+| Leg | Game | Selection | Printed leg odds | Receipt event time |
+|---|---|---|---:|---|
+| 1 | BYU at Utah | Utah -4.5 spread | -106 | 2026-11-07 11:10 |
+| 2 | Cincinnati at Houston | Cincinnati +10.5 spread | -112 | 2026-11-07 14:40 |
+| 3 | Missouri State at Florida International | Missouri State +4.5 spread | -109 | 2026-11-07 15:05 |
+
+Count as ONE wager and ONE $5 stake, not three additional stakes. Utah and Missouri State overlap separate straight tickets CFB_NOV06-05 and07; those are distinct wagers, not duplicates. Weekend aggregate: 11 tickets (10 straight plus1parlay), $55.00 stake, $76.25 printed maximum profit, $131.25 maximum combined payout if all tickets win. seven spread straights/$35 plus three total straights/$15, and one parlay/$5. Prior40/$153.50 plus11/$55.00 =51 recorded tickets/$208.50 cumulative historical stakes.
+
+No live label; printed issue precedes printed event. Independent actual kickoff/pregame chronology, results, book settlement/redemption/payment, CLV and genuine pre-event model/decision attribution UNVERIFIED. Production/sandbox budget UNASSIGNED. No funding, withdrawal or current cash balance inferred. Downstream execution evidence only; no model/training/calibration, frozen prediction, historical recommendation, market publication or schedule change.
