@@ -305,3 +305,24 @@ Issued as printed: November6,2026 17:57; receipt timezone UNSPECIFIED. One $5.00
 Count as ONE wager and ONE $5 stake, not three additional stakes. Utah and Missouri State overlap separate straight tickets CFB_NOV06-05 and07; those are distinct wagers, not duplicates. Weekend aggregate: 11 tickets (10 straight plus1parlay), $55.00 stake, $76.25 printed maximum profit, $131.25 maximum combined payout if all tickets win. seven spread straights/$35 plus three total straights/$15, and one parlay/$5. Prior40/$153.50 plus11/$55.00 =51 recorded tickets/$208.50 cumulative historical stakes.
 
 No live label; printed issue precedes printed event. Independent actual kickoff/pregame chronology, results, book settlement/redemption/payment, CLV and genuine pre-event model/decision attribution UNVERIFIED. Production/sandbox budget UNASSIGNED. No funding, withdrawal or current cash balance inferred. Downstream execution evidence only; no model/training/calibration, frozen prediction, historical recommendation, market publication or schedule change.
+
+
+## November 7 weekend results — direct user confirmation
+
+Run CFB_PRODUCTION_READINESS_20261108T043547Z. Source: user stated, "All bets hit except lsu, va tech and Nebraska." Applies to the eleven November6-issued tickets already recorded, including the three-leg parlay. Classification USER_REPORTED_TICKET_RESULTS, not independently verified official scores, book settlement, redemption or paid cash. Original execution facts and prior unknown-at-intake records retained.
+
+| Execution ID | Selection | User-reported result | Printed result return USD | Net USD |
+|---|---|---|---:|---:|
+| CFB_NOV06-01 | Tulsa-Tulane over50 | WIN | 9.55 | +4.55 |
+| CFB_NOV06-02 | Texas-Missouri over42.5 | WIN | 9.70 | +4.70 |
+| CFB_NOV06-03 | Baylor -10 | WIN | 9.75 | +4.75 |
+| CFB_NOV06-04 | Oregon-Ohio State over45 | WIN | 9.55 | +4.55 |
+| CFB_NOV06-05 | Utah -4.5 | WIN | 9.70 | +4.70 |
+| CFB_NOV06-06 | Arizona State -3.5 | WIN | 9.80 | +4.80 |
+| CFB_NOV06-07 | Missouri State +4.5 | WIN | 9.60 | +4.60 |
+| CFB_NOV06-08 | LSU -6 | LOSS | 0.00 | -5.00 |
+| CFB_NOV06-09 | Nebraska -4 | LOSS | 0.00 | -5.00 |
+| CFB_NOV06-10 | Virginia Tech +6 | LOSS | 0.00 | -5.00 |
+| CFB_NOV06-11 | Utah/Cincinnati/Missouri State three-leg parlay | WIN | 35.25 | +30.25 |
+
+User-reported aggregate 8 WIN /3 LOSS /0 PUSH, $55.00 stake, $102.90 printed-result return, +$47.90 net. Seven winning straights return $67.65; winning parlay returns $35.25. This records one result per existing ticket and no new wager or extra leg stake. No full-game scores, Champion scoring, book cash movement, or historical recommendation attribution inferred. User-confirmed funding remains separate.
