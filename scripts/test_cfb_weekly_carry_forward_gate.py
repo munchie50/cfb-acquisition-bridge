@@ -107,4 +107,30 @@ class CarryTests(unittest.TestCase):
     def test_unqualified_week9_review_still_rejected(self):
         with self.assertRaisesRegex(ValueError,'weekly review selector'):
             gate.bind(self.week8_navigation(lambda p:p[-1].update(path='evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-11-01_R1.md')),self.review,self.lineage,self.health,'2026-10-25T15:40:00Z')
+    def week10_navigation(self,change=None):
+        def advance(p):
+            p[-1]['purpose']='HISTORICAL_WEEKLY_REVIEW: Week8 retained'
+            p.append({'path':gate.WEEK10_REVIEW,'blob':gate.WEEK10_REVIEW_SHA,'purpose':'CURRENT_WEEKLY_REVIEW: Week10 R2'})
+            if change:change(p)
+        return self.week8_navigation(advance)
+    def test_exact_week10_successor(self):
+        self.assertEqual(gate.blob((ROOT/gate.WEEK10_REVIEW).read_text()),gate.WEEK10_REVIEW_SHA)
+        result=gate.bind(self.week10_navigation(),self.review,self.lineage,self.health,'2026-11-08T16:45:49Z')
+        self.assertEqual(result['current_weekly_review_blob'],gate.WEEK10_REVIEW_SHA)
+    def test_week10_wrong_hash_or_path_rejected(self):
+        for change in (lambda p:p[-1].update(blob='0'*40),lambda p:p[-1].update(path=gate.WEEK10_REVIEW.replace('_R2','_R1'))):
+            with self.subTest(change=change),self.assertRaisesRegex(ValueError,'weekly review selector'):
+                gate.bind(self.week10_navigation(change),self.review,self.lineage,self.health,'2026-11-08T16:45:49Z')
+    def test_week10_missing_or_stale_predecessors_rejected(self):
+        for path in (gate.R2,gate.WEEK7_REVIEW,gate.WEEK8_REVIEW):
+            for remove in (False,True):
+                def change(p):
+                    target=next(x for x in p if x['path']==path)
+                    if remove:p.remove(target)
+                    else:target['blob']='0'*40
+                with self.subTest(path=path,remove=remove),self.assertRaises(ValueError):
+                    gate.bind(self.week10_navigation(change),self.review,self.lineage,self.health,'2026-11-08T16:45:49Z')
+    def test_week10_competing_selector_rejected(self):
+        with self.assertRaisesRegex(ValueError,'weekly review selector'):
+            gate.bind(self.week10_navigation(lambda p:p[-2].update(purpose='CURRENT_WEEKLY_REVIEW: competing')),self.review,self.lineage,self.health,'2026-11-08T16:45:49Z')
 if __name__=='__main__':unittest.main()
