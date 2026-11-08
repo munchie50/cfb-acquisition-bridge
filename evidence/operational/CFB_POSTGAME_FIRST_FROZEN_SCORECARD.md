@@ -622,3 +622,21 @@ Official corroboration still required for these CBS finals: 401870795 Liberty @ 
 Not-final identities at captured boundary: 401860913 Fresno State @ Utah State, 401864532 Hawai'i @ UTEP, 401856856 West Virginia @ Texas Tech, 401864535 Wyoming @ UNLV, 401860912 Texas State @ Oregon State.
 
 All eleven actual tickets are consistent with final-score evidence: ten underlying games independently official-verified, ASU20-10 corroborated by CBS final and AP recap while school sources remain stale. Reported8WIN3LOSS/$55stake/$102.90printedreturn/+$47.90net retained. These results do not prove sportsbook payment, current available cash, CLV, recommendation attribution or a model promotion. No model/market/decision/task change.
+
+
+## Week10 four additional official finals and R2 source-clock qualification — November7 CT
+
+Run CFB_WEEK10_CLOSEOUT_20261108T044606Z. R2 artifact evidence/operational/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z_R2.json, blob 0f107b4e4c990f754a7477e58a4296ed7127d8ad. Only these four rows are new official results. Preserve prior42rows; cumulative46games=41modeled+5originalexclusions. TwelveCBSonlyfinals andfivependingfinals remain outside fullofficialacceptance.
+
+| Game ID | Away @ home | Final away-home | Original home margin | Original total | Original home p | Official source |
+|---|---|---|---:|---:|---:|---|
+| 401856739 | Oklahoma @ Florida | 23-7 | 9.171592972348307 | 51.110471208670816 | 0.7164656477262331 | [official](https://floridagators.com/news/2026/11/7/football-final-florida-vs-oklahoma-nov-7-2026) |
+| 401860911 | Boise State @ Colorado State | 64-38 | 0.7553368849316238 | 56.848435210772486 | 0.5526660742301289 | [official](https://csurams.com/sports/football/stats/2026/boise-state/boxscore/21971) |
+| 401856744 | Texas A&M @ South Carolina | 9-17 | 12.715251331697846 | 50.5036568944936 | 0.7454572368140134 | [official](https://12thman.com/news/2026/11/07/aggies-at-south-carolina) |
+| 401869927 | Georgia State @ App State | 39-23 | 7.049278887884242 | 56.118010249830874 | 0.6756862377995193 | [official](https://appstatesports.com/news/2026/11/7/football-postgame-notes-from-app-state-vs-georgia-state.aspx) |
+
+Updated officialsubset metrics {"n": 41, "margin_direction_correct": 21, "probability_classifier_correct": 21, "margin_mae": 18.235898795300695, "total_mae": 14.818050671421819, "home_win_brier": 0.2691524541958868}. Exact fullprecisionoriginalstrings; independentlyDecimalchecked. Earlier42subsetmetrics remain historically correct for their own population.
+
+Source clocks: requeststarted04:46:54.652100Z; responsecomplete by retainedfilewrite04:47:00.013653Z. R1earlyclocklabels qualified, not silently retimed. Official direct request-start fields likewise separated from completed-response bounds. Providerupdateclockunknown.
+
+Sourceclockclarification supersedes earlierlabels only: CBS04:46:54.652100Z was requeststart, complete response by retainedfilewrite04:47:00.013653Z. Not a providerupdateclock. Official HTMLrequeststart and responsebounds are separately preserved in R2. No outcome, score, wager timing or prediction changed.
