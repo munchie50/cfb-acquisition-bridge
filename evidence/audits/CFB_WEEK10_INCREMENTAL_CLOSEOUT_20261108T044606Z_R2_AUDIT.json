@@ -1,0 +1,200 @@
+{
+  "schema": "CFB_WEEK10_INCREMENTAL_CLOSEOUT_R2_AUDIT_V1",
+  "run_id": "CFB_WEEK10_CLOSEOUT_20261108T044606Z",
+  "phase1_audit": {
+    "path": "evidence/audits/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z_AUDIT.json",
+    "blob": "e3c8219ed7d350b01101f61133bedcdd988ed202"
+  },
+  "status": "INDEPENDENTLY_RECONCILED_INCREMENTAL46_OFFICIAL_RESULTS;FULL_WEEK_OPEN",
+  "official_games": 46,
+  "original_modeled_scored": 41,
+  "original_exclusions_unscored": 5,
+  "additional_official_game_ids": [
+    "401856739",
+    "401856744",
+    "401860911",
+    "401869927"
+  ],
+  "metrics": {
+    "n": 41,
+    "margin_direction_correct": 21,
+    "probability_classifier_correct": 21,
+    "margin_mae": 18.235898795300695,
+    "total_mae": 14.818050671421819,
+    "home_win_brier": 0.2691524541958868
+  },
+  "independent_decimal": "PASSabs1e-12",
+  "source_clock_qualification": {
+    "request_started_at_utc": "2026-11-08T04:46:54.652100+00:00",
+    "completed_response_upper_bound_from_retained_file_write": "2026-11-08T04:47:00.013653+00:00",
+    "superseded_labels": "R1 source_observation_utc and direct-schoolobserved_at fields were request-start clocks. R2 explicitly qualifies/renames without changing source data or inferring providerupdates.",
+    "web_proof_clock_scope": "Broadly recovered before observed05:04:03Zbound where per-page clocks unavailable; raw HTML unavailable for web-only sources."
+  },
+  "source_attempt_disposition": {
+    "phase1_direct_school_download_attempts": 44,
+    "phase2_direct_alternate_download_attempts": 7,
+    "extra_linked_GT_file_attempts": 1,
+    "phase1_cost_count_correction": "Earlierauditcosttext43directdownloads corrected to44attempts=10+34includingrejectedLibertyPDF; not a result-count change.",
+    "new_admitted": "OU/Florida andTAMU/SC directrecaps;Boise/CSU exactfinalboxtable;GSU/AppState fullwebpostgamenotes.",
+    "not_admitted": "SAla/ULM alternate raw404+webDisabledError;GTcurrentrecap lacksnumericfinal,linkedPDFnotvalidPDF;current-game previews/historicalscorementionsnotadmitted."
+  },
+  "artifacts": [
+    {
+      "path": "evidence/operational/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z_R2.json",
+      "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad",
+      "transport": {
+        "schema": "CFB_EXACT_TEXT_TRANSFER_V1",
+        "status": "TRANSPORT_ONLY_NOT_WRITE_SUCCESS",
+        "git_blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad",
+        "sha256": "b07b1779fce9c2b847eceabb6befa88330db744e36b4b00114a3216ebc016c95",
+        "bytes": 124534,
+        "characters": 124534,
+        "chunk_characters": 12000,
+        "chunk_count": 11,
+        "raw_content_included": false
+      }
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z_R2.md",
+      "blob": "388a15710cf93a3ed31638ab1fd7db83fa255791",
+      "transport": {
+        "schema": "CFB_EXACT_TEXT_TRANSFER_V1",
+        "status": "TRANSPORT_ONLY_NOT_WRITE_SUCCESS",
+        "git_blob": "388a15710cf93a3ed31638ab1fd7db83fa255791",
+        "sha256": "53dbe948f3d885a922ca8fb5a5f19458c2f3f26f9ae9503ec69f9bfb262b6082",
+        "bytes": 11517,
+        "characters": 11514,
+        "chunk_characters": 12000,
+        "chunk_count": 1,
+        "raw_content_included": false
+      }
+    }
+  ],
+  "canonical_scorecard": {
+    "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+    "blob": "a40d38541509f0a4bd58ea6493f4b0bb974f87c2",
+    "append_metadata": {
+      "schema": "CFB_PLANNED_APPEND_METADATA_V1",
+      "status": "PROPOSED_ONLY_NOT_WRITE_SUCCESS",
+      "prior_git_blob_sha": "06b381b3d8336b5ab4d2c960b4a17f45af6ef6de",
+      "proposed_git_blob_sha": "a40d38541509f0a4bd58ea6493f4b0bb974f87c2",
+      "prior_sha256": "4331b248b73be6fae95bc8f67b380ea5d96bacab58caead04338e6841ebcc371",
+      "proposed_sha256": "e62d2ab2ad9fa77c852e6a5c7e99557a7da1ea2961a37e596255b9d116628f43",
+      "delta_sha256": "347c361c2521dd253fc90e5e918266183a6484411c906c132bb29b87af60f20c",
+      "prior_bytes": 81158,
+      "proposed_bytes": 83551,
+      "delta_bytes": 2393,
+      "prior_characters": 80970,
+      "proposed_characters": 83361,
+      "delta_characters": 2391,
+      "prior_bytes_preserved": true,
+      "field_inventory": [
+        "champion_snapshot",
+        "game_identity",
+        "provenance",
+        "source"
+      ],
+      "inventory_basis": "CALLER_DECLARED_NOT_SEMANTICALLY_VALIDATED",
+      "raw_content_included": false
+    }
+  },
+  "register": {
+    "blob": "a6487c18a1d0f21487c9ed45472942b60777dd7d",
+    "append_metadata": {
+      "schema": "CFB_PLANNED_APPEND_METADATA_V1",
+      "status": "PROPOSED_ONLY_NOT_WRITE_SUCCESS",
+      "prior_git_blob_sha": "22ddaf28dae2c335bc6748b90fedd1300dd5801a",
+      "proposed_git_blob_sha": "a6487c18a1d0f21487c9ed45472942b60777dd7d",
+      "prior_sha256": "5ac30a039b030710d313d809eb885f930be32da717ef9cae2e55448964156858",
+      "proposed_sha256": "961f91612d18dae2a7b47fa730e7a22e6da736fbe49bc889bb68b8906350f65f",
+      "delta_sha256": "281d8d9e1ee27e7924d73a2fe850030ec02d11850bed73aed5743813e262aa02",
+      "prior_bytes": 193513,
+      "proposed_bytes": 195566,
+      "delta_bytes": 2053,
+      "prior_characters": 193313,
+      "proposed_characters": 195364,
+      "delta_characters": 2051,
+      "prior_bytes_preserved": true,
+      "field_inventory": [
+        "provenance",
+        "source"
+      ],
+      "inventory_basis": "CALLER_DECLARED_NOT_SEMANTICALLY_VALIDATED",
+      "raw_content_included": false
+    }
+  },
+  "recovery": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_263.md",
+    "blob": "f37614204d25b1758ade4e7afd333044b45bd9d6",
+    "metadata": {
+      "blob": "f37614204d25b1758ade4e7afd333044b45bd9d6",
+      "bytes": 117287,
+      "sha256": "f5ccb05178e724bf46b961affc7fcecd3960f716a73b4d59bfc3092c138c0791"
+    },
+    "prewrite": "PASS414",
+    "independent_saved_git_objects": "PASS414"
+  },
+  "selected_ci": {
+    "phase1": {
+      "run_id": 42448901462,
+      "conclusion": "success",
+      "steps": 46
+    },
+    "phase2": {
+      "run_id": 42449548183,
+      "head": "b65adc9689a80e8ede64e37a3396c823599c4038",
+      "job_id": 128635616747,
+      "conclusion": "success",
+      "steps": 46,
+      "url": "https://github.com/munchie50/cfb-acquisition-bridge/actions/runs/42449548183"
+    }
+  },
+  "remaining": {
+    "not_final_at_retained_boundary": [
+      {
+        "game_id": "401860913",
+        "away": "Fresno State",
+        "home": "Utah State"
+      },
+      {
+        "game_id": "401864532",
+        "away": "Hawai'i",
+        "home": "UTEP"
+      },
+      {
+        "game_id": "401856856",
+        "away": "West Virginia",
+        "home": "Texas Tech"
+      },
+      {
+        "game_id": "401864535",
+        "away": "Wyoming",
+        "home": "UNLV"
+      },
+      {
+        "game_id": "401860912",
+        "away": "Texas State",
+        "home": "Oregon State"
+      }
+    ],
+    "official_final_qualifications": [
+      "401870795",
+      "401862823",
+      "401856852",
+      "401856741",
+      "401858513",
+      "401858291",
+      "401858511",
+      "401858287",
+      "401871075",
+      "401856745",
+      "401869968",
+      "401869936"
+    ],
+    "sunday_learning": "NOT_YET_COMPLETE",
+    "production": "LastactualMonitorbe77cec8-21f4-8320-b297-dec48f7fb269stillpredatesinstalledcorrections;SCHEDULED_PROOF_PENDING",
+    "paid_cash_holdings": "UNVERIFIED;147.35conditionalestimateunchanged"
+  },
+  "task_readback": "Monitorprompt/scheduleunchanged;no task mutation inthisrun",
+  "frozen_model_market_decision_funding_effect": "NONE"
+}
