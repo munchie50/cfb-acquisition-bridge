@@ -1,0 +1,8 @@
+# RUN_CLOSURE
+correlation_id: auto11_20261109T185839130Z
+terminal_candidate_path: evidence/run_receipts/CFB_MARKET_MONITOR_TERMINAL_CANDIDATE_auto11_20261109T185839130Z.md
+terminal_candidate_blob: 19ab89e01d7b7b78aaf9a0dac72836579910466c
+terminal_candidate_independent_readback: PASS
+outcome: RUN_INCOMPLETE
+reason: Direct immutable GitHub API helper transport failed DNS resolution; no verified checkout, current Week11 compiler run or publication.
+startup_receipt_blob: 633fe1f777a0d27b0f1ce54421e5cfa1e3d55c31
