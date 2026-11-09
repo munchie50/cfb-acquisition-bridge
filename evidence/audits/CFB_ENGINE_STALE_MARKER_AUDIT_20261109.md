@@ -1,0 +1,14 @@
+# CFB stale marker audit — November 9 CT
+
+Reviewed repository main 29519fe8, recovery index v1.268, the accepted Week 10 outcome review, and live production Market Monitor prompt. The existing consumer preflight passed all 426 pointer hashes and selected the Week 10 Nov. 6 Hot Sheet. Hash integrity and semantic freshness are separate.
+
+| Marker | Classification | Cause or dependency |
+|---|---|---|
+| CURRENT_EXECUTION_LEDGER description: one ASU official result pending | Stale label | Sunday R2 confirmed Arizona State officially. The index claims correctly close the gap while the pointer purpose retained prior wording through v1.264–v1.268. Actual sportsbook settlement remains unverified. |
+| LATEST_HEALTH_AUDIT: Nov. 7 | Stale selector label | The Nov. 9 Health audit and closure exist at 132696d7 and e907516d. The closure remains COVERAGE_UNVERIFIED. Its existence supersedes the older latest label without advancing coverage. |
+| CURRENT_CBS_CAPTURE: 63-game Week 10 capture | Ambiguous stale navigation | The newer Week 11 67-game observation exists at 19d117d2 and screening at b77b359bf. They were appended after the index reconciliation. Preserve the Week 10 capture as lineage for the selected publication, and surface the Week 11 observation independently as the newest observed board. |
+| Active Monitor prompt contains UNFINISHED WEEK10, a Week 10 compiler example in a current command, and a hardcoded Week 10 REFRESH pointer | Stale or ambiguous live instructions | Multiple bounded repairs inserted new instructions and retained older week-specific paragraphs. Newer controls require fresh authority, but the older active wording creates a competing work-selection cue. No evidence that this caused Monday's transport failure. |
+| Current Hot Sheet and canonical market/decision streams select Week 10 | Old but correctly retained | Week 11 has no accepted publication and verified handoff. Source capture and screening cannot replace the selected sheet. |
+| Accepted weekly REFRESH pointer points to Nov. 3 | Old but correctly retained | A separate later weekly REFRESH must be independently accepted before advancement. Week 11 accepted original archive projection is a separate lineage. |
+
+Recurring mechanisms: successor indexes carry forward descriptive purposes while verifying object hashes; separate evidence-only runs append artifacts without advancing publication; later task instructions are layered over older prompt text. The October 23 persistence procedure already requires selection reconciliation and readback before RUN_PASS. Reuse that closeout for navigation checks, and retire dated prompt directives from active work selection once superseded. Keep observed source, accepted publication, original prediction lineage, weekly REFRESH, and verified run coverage separate. This audit changes no selectors, task prompts, or canonical records.
