@@ -1,0 +1,19 @@
+# TERMINAL_CANDIDATE
+cycle_id: CFB_HEALTH_20261109T223314261Z
+type: CFB_ENGINE_HEALTH
+result: RUN_INCOMPLETE
+coverage: COVERAGE_UNVERIFIED
+startup_blob: 39e700d6c3c5f45bd54f9f15ef6a91a083b05c7f
+audit_path: evidence/scheduler_qa/CFB_HEALTH_20261109T223314261Z_AUDIT.md
+audit_blob: 68f37463c73234b159a8c004d3e36a9e9528a6c2
+audit_readback: PASS
+current_monitor_0700: RUN_INCOMPLETE
+current_monitor_1300: RUN_INCOMPLETE
+evening_new_due: NONE
+live_four_task_topology: PASS
+evening_timing_mode_drift: exact_schedule versus historical flexible_schedule
+full_raw_blob_hash_check: UNVERIFIED
+historical_gaps: RETAINED
+operational_change: NO_MATERIAL_CHANGE
+coverage_boundary_advanced: false
+next_safe_action: repair scheduled worker helper transport and qualify Week11 lineage/profile prospectively; reconcile historical receipts without replay
