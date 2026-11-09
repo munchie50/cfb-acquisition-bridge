@@ -141,7 +141,7 @@ def reconsideration(row, previous, as_of):
 
 
 def validate(row, market_row, model, as_of, lineage_sha=gate.LINEAGE_SHA):
-    if lineage_sha not in tuple(gate.profile_config(p)['lineage'] for p in ('WEEK7','WEEK8','WEEK9','WEEK10')):raise ValueError('unqualified conditional lineage profile')
+    if lineage_sha not in tuple(gate.profile_config(p)['lineage'] for p in ('WEEK7','WEEK8','WEEK9','WEEK10','WEEK11')):raise ValueError('unqualified conditional lineage profile')
     content, committed_at = load_review(row['review_ref'])
     r = json.loads(content, object_pairs_hook=gate.unique)
     gate.keys(r, ['schema', 'game_id', 'state', 'recorded_at_utc', 'original_lineage_blob',

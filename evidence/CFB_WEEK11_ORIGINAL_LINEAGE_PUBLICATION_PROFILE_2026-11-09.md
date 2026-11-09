@@ -1,0 +1,9 @@
+# Week 11 original-lineage publication profile
+
+The profile binds 67 directed game identities to the original September 26 archive, with 59 predictions, eight exclusions, and 177 unchanged numeric strings. The verified projection is `evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json` at blob `3a337e8bdf5cd732fb76697cf2a87b2d74ba8ce9`. Weekly REFRESH stays separate.
+
+The initial typed display source is the CBS FBS Week 11 odds-table extract at `evidence/operational/CFB_WEEK11_CBS_FBS_TABLES_20261109.md`, scrape ID `01a1c27c-4995-7249-a069-d44619fac53a`. The source clock is a recovered-by upper bound, with no claimed operator update time. Earlier Sunday and Monday observational boards remain separate evidence. The parser requires the complete directed cohort, treats the CBS prices as display fallback, and excludes Final and Open columns from current market evidence. Conflicting spread and moneyline directions are quarantined.
+
+Initial publication must preserve the complete Week 10 market and decision parent bytes, pair the Week 11 streams to the same source and decision boundary, and reject any elapsed initial game. Use a fresh complete CBS capture within 15 minutes of compilation. Callers must supply independently earned current decisions, actual reconciliation times where applicable, and immutable review references for conditional entries. Preserve original exclusions, exact review origins, and closed limits. No new historical-gap disposition is authorized by this profile.
+
+Use `cfb_week11_publication.py` to prepare proposals, then the shared renderer, readiness, and saved-publication audit with `WEEK11`. Require independent archive comparison, current consumer readback and selected CI before accepting the publication. The test fixture exercises the path using synthetic decisions. Production still requires live reviewed decisions and the sole Market Monitor's governed writeback.
