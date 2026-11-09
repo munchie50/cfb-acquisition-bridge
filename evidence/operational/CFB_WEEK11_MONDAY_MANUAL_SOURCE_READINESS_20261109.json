@@ -1,0 +1,647 @@
+{
+  "status": "MANUAL_MONDAY_SOURCE_PREFLIGHT_PASS",
+  "scope": "Readiness only. No prediction freeze, accepted Week 11 lineage, publication profile, or market join.",
+  "producer": "scripts/phase4_challenger_b_2026_refresh_source_preflight_v1_217.py",
+  "producer_verified_against_main": "421be2aa736a6b4323cf4f0ff6a2b469626f5fb5",
+  "prior_monitor_manual_closure": "2ae3b51c95384087f16639c62544e4d13cc40ef5",
+  "raw_inputs": [
+    "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-cfb-data/main/cfb/cfb_schedules/parquet/cfb_schedules_2026.parquet",
+    "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/cfbfastR_cfb_pbp/play_by_play_2026.rds"
+  ],
+  "retention": "Raw source bytes and full projection are in this manual session's scratch; hashes and Week 11 projection are persisted here. No GitHub Actions artifact or immutable freeze is claimed.",
+  "report": {
+    "completed_spent_games": 685,
+    "completed_spent_missing_pbp": 0,
+    "cutoff_utc": "2026-11-09T13:14:42.478820+00:00",
+    "future_at_cutoff": 203,
+    "future_fbs_vs_fbs": 199,
+    "future_fbs_vs_nonfbs": 4,
+    "market_joined": false,
+    "membership_count": 138,
+    "missing_pbp_game_ids": [],
+    "model_prediction_performed": false,
+    "pbp_sha256": "0c39f50b5437f6c668c1e56f3824094d7e9100f38ceda670c59c127c808086e3",
+    "qualified_relevant_fbs_rows": 888,
+    "raw_schedule_rows_2026": 3678,
+    "schedule_sha256": "64f462842449332d63aab2713ebc45f51f90b079586f4a02920e22eadea4c8dc",
+    "spent_at_cutoff": 685,
+    "status": "PASS_REFRESH_SOURCE_PREFLIGHT",
+    "target_outcomes_projected": false
+  },
+  "week11_by_ct_date": {
+    "2026-11-10": 3,
+    "2026-11-11": 3,
+    "2026-11-12": 2,
+    "2026-11-13": 17,
+    "2026-11-14": 42
+  },
+  "week11_by_class": {
+    "FBS_VS_FBS": 67
+  },
+  "projection_sha256": "ce6b63eca399f4caf467687b2fc997538e7eff1f610d9d59131e28a14549dbac",
+  "week11_rows": [
+    {
+      "season": "2026",
+      "game_id": "401866458",
+      "start_date": "2026-11-11 00:00:00+00:00",
+      "home_team": "Akron",
+      "away_team": "Western Michigan",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401866459",
+      "start_date": "2026-11-11 00:00:00+00:00",
+      "home_team": "Bowling Green",
+      "away_team": "Kent State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401866460",
+      "start_date": "2026-11-11 01:00:00+00:00",
+      "home_team": "Miami (OH)",
+      "away_team": "Ohio",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401866461",
+      "start_date": "2026-11-12 00:30:00+00:00",
+      "home_team": "Ball State",
+      "away_team": "Buffalo",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401866462",
+      "start_date": "2026-11-12 00:30:00+00:00",
+      "home_team": "Central Michigan",
+      "away_team": "Sacramento State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401866463",
+      "start_date": "2026-11-12 00:30:00+00:00",
+      "home_team": "Toledo",
+      "away_team": "Massachusetts",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401862824",
+      "start_date": "2026-11-13 01:00:00+00:00",
+      "home_team": "South Florida",
+      "away_team": "Memphis",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401869969",
+      "start_date": "2026-11-13 02:00:00+00:00",
+      "home_team": "UL Monroe",
+      "away_team": "Louisiana",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858293",
+      "start_date": "2026-11-14 00:00:00+00:00",
+      "home_team": "Pittsburgh",
+      "away_team": "Florida State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858526",
+      "start_date": "2026-11-14 02:00:00+00:00",
+      "home_team": "UCLA",
+      "away_team": "Illinois",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856860",
+      "start_date": "2026-11-14 03:15:00+00:00",
+      "home_team": "Colorado",
+      "away_team": "Houston",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856857",
+      "start_date": "2026-11-14 05:00:00+00:00",
+      "home_team": "UCF",
+      "away_team": "Arizona State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856858",
+      "start_date": "2026-11-14 05:00:00+00:00",
+      "home_team": "BYU",
+      "away_team": "Baylor",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856859",
+      "start_date": "2026-11-14 05:00:00+00:00",
+      "home_team": "Iowa State",
+      "away_team": "Cincinnati",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856861",
+      "start_date": "2026-11-14 05:00:00+00:00",
+      "home_team": "West Virginia",
+      "away_team": "Kansas",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856862",
+      "start_date": "2026-11-14 05:00:00+00:00",
+      "home_team": "TCU",
+      "away_team": "Kansas State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856863",
+      "start_date": "2026-11-14 05:00:00+00:00",
+      "home_team": "Oklahoma State",
+      "away_team": "Texas Tech",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856864",
+      "start_date": "2026-11-14 05:00:00+00:00",
+      "home_team": "Arizona",
+      "away_team": "Utah",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856883",
+      "start_date": "2026-11-14 05:00:00+00:00",
+      "home_team": "Georgia",
+      "away_team": "Missouri",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856884",
+      "start_date": "2026-11-14 05:00:00+00:00",
+      "home_team": "Kentucky",
+      "away_team": "Florida",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856885",
+      "start_date": "2026-11-14 05:00:00+00:00",
+      "home_team": "LSU",
+      "away_team": "Texas",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856887",
+      "start_date": "2026-11-14 05:00:00+00:00",
+      "home_team": "Oklahoma",
+      "away_team": "Ole Miss",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856888",
+      "start_date": "2026-11-14 05:00:00+00:00",
+      "home_team": "Texas A&M",
+      "away_team": "Tennessee",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858298",
+      "start_date": "2026-11-14 05:00:00+00:00",
+      "home_team": "North Carolina",
+      "away_team": "Louisville",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858299",
+      "start_date": "2026-11-14 05:00:00+00:00",
+      "home_team": "Virginia Tech",
+      "away_team": "Stanford",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856886",
+      "start_date": "2026-11-14 17:00:00+00:00",
+      "home_team": "Mississippi State",
+      "away_team": "Auburn",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858296",
+      "start_date": "2026-11-14 17:00:00+00:00",
+      "home_team": "Miami",
+      "away_team": "Duke",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858300",
+      "start_date": "2026-11-14 17:00:00+00:00",
+      "home_team": "NC State",
+      "away_team": "Syracuse",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858301",
+      "start_date": "2026-11-14 17:00:00+00:00",
+      "home_team": "SMU",
+      "away_team": "Wake Forest",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858520",
+      "start_date": "2026-11-14 17:00:00+00:00",
+      "home_team": "Maryland",
+      "away_team": "Wisconsin",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858522",
+      "start_date": "2026-11-14 17:00:00+00:00",
+      "home_team": "Ohio State",
+      "away_team": "Northwestern",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401861967",
+      "start_date": "2026-11-14 17:00:00+00:00",
+      "home_team": "UConn",
+      "away_team": "James Madison",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858297",
+      "start_date": "2026-11-14 17:30:00+00:00",
+      "home_team": "Clemson",
+      "away_team": "Georgia Tech",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858525",
+      "start_date": "2026-11-14 17:30:00+00:00",
+      "home_team": "Rutgers",
+      "away_team": "Nebraska",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856889",
+      "start_date": "2026-11-14 17:45:00+00:00",
+      "home_team": "Vanderbilt",
+      "away_team": "Alabama",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401862825",
+      "start_date": "2026-11-14 18:00:00+00:00",
+      "home_team": "Charlotte",
+      "away_team": "East Carolina",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401862829",
+      "start_date": "2026-11-14 18:00:00+00:00",
+      "home_team": "Temple",
+      "away_team": "UAB",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401869937",
+      "start_date": "2026-11-14 18:00:00+00:00",
+      "home_team": "Coastal Carolina",
+      "away_team": "Arkansas State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401862828",
+      "start_date": "2026-11-14 19:00:00+00:00",
+      "home_team": "Rice",
+      "away_team": "Tulane",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401870769",
+      "start_date": "2026-11-14 19:00:00+00:00",
+      "home_team": "Sam Houston",
+      "away_team": "Kennesaw State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401870796",
+      "start_date": "2026-11-14 20:00:00+00:00",
+      "home_team": "Missouri State",
+      "away_team": "New Mexico State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401871060",
+      "start_date": "2026-11-14 20:00:00+00:00",
+      "home_team": "Delaware",
+      "away_team": "Florida International",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858294",
+      "start_date": "2026-11-14 20:30:00+00:00",
+      "home_team": "Notre Dame",
+      "away_team": "Boston College",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858295",
+      "start_date": "2026-11-14 20:30:00+00:00",
+      "home_team": "Virginia",
+      "away_team": "California",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858518",
+      "start_date": "2026-11-14 20:30:00+00:00",
+      "home_team": "Indiana",
+      "away_team": "USC",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858523",
+      "start_date": "2026-11-14 20:30:00+00:00",
+      "home_team": "Oregon",
+      "away_team": "Michigan",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401862826",
+      "start_date": "2026-11-14 20:30:00+00:00",
+      "home_team": "Tulsa",
+      "away_team": "Florida Atlantic",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401864536",
+      "start_date": "2026-11-14 20:30:00+00:00",
+      "home_team": "Northern Illinois",
+      "away_team": "Nevada",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401869952",
+      "start_date": "2026-11-14 20:30:00+00:00",
+      "home_team": "Georgia State",
+      "away_team": "Georgia Southern",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401870752",
+      "start_date": "2026-11-14 20:30:00+00:00",
+      "home_team": "Western Kentucky",
+      "away_team": "Jacksonville State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401871061",
+      "start_date": "2026-11-14 20:30:00+00:00",
+      "home_team": "Liberty",
+      "away_team": "Middle Tennessee",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401860916",
+      "start_date": "2026-11-14 21:00:00+00:00",
+      "home_team": "Texas State",
+      "away_team": "Fresno State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858521",
+      "start_date": "2026-11-14 21:15:00+00:00",
+      "home_team": "Michigan State",
+      "away_team": "Washington",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401871099",
+      "start_date": "2026-11-14 22:00:00+00:00",
+      "home_team": "Louisiana Tech",
+      "away_team": "Southern Miss",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401860914",
+      "start_date": "2026-11-14 23:00:00+00:00",
+      "home_team": "Boise State",
+      "away_team": "Oregon State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401869928",
+      "start_date": "2026-11-14 23:00:00+00:00",
+      "home_team": "Marshall",
+      "away_team": "App State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858524",
+      "start_date": "2026-11-15 00:00:00+00:00",
+      "home_team": "Penn State",
+      "away_team": "Minnesota",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401864538",
+      "start_date": "2026-11-15 00:00:00+00:00",
+      "home_team": "Air Force",
+      "away_team": "San José State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401871100",
+      "start_date": "2026-11-15 00:00:00+00:00",
+      "home_team": "South Alabama",
+      "away_team": "Troy",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401858519",
+      "start_date": "2026-11-15 00:30:00+00:00",
+      "home_team": "Iowa",
+      "away_team": "Purdue",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401864539",
+      "start_date": "2026-11-15 00:30:00+00:00",
+      "home_team": "New Mexico",
+      "away_team": "UNLV",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401856882",
+      "start_date": "2026-11-15 00:45:00+00:00",
+      "home_team": "Arkansas",
+      "away_team": "South Carolina",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401862827",
+      "start_date": "2026-11-15 02:00:00+00:00",
+      "home_team": "UTSA",
+      "away_team": "North Texas",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401860915",
+      "start_date": "2026-11-15 02:30:00+00:00",
+      "home_team": "San Diego State",
+      "away_team": "Utah State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401864540",
+      "start_date": "2026-11-15 03:00:00+00:00",
+      "home_team": "UTEP",
+      "away_team": "Wyoming",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401860917",
+      "start_date": "2026-11-15 03:30:00+00:00",
+      "home_team": "Washington State",
+      "away_team": "Colorado State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    },
+    {
+      "season": "2026",
+      "game_id": "401864537",
+      "start_date": "2026-11-15 04:00:00+00:00",
+      "home_team": "Hawai'i",
+      "away_team": "North Dakota State",
+      "neutral_site": "False",
+      "population_class": "FBS_VS_FBS"
+    }
+  ]
+}
