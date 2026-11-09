@@ -1,0 +1,51 @@
+{
+  "correlation_id": "auto11-20261109T130041641Z",
+  "status": "RUN_INCOMPLETE",
+  "timestamp_utc": "2026-11-09T13:02:05.255Z",
+  "startup": {
+    "outcome": "PASS",
+    "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_auto11-20261109T130041641Z.md",
+    "blob": "f87528b15c1ae84d76f7ce6b51d5867b1dd20386"
+  },
+  "stages": [
+    {
+      "stage": "AUTHENTICATED_HELPER_IDENTITY",
+      "outcome": "PASS",
+      "head": "99ada4a47445af09f27514dabfa6e8d33c3ae6b7",
+      "blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "expected_size": 3780
+    },
+    {
+      "stage": "DIRECT_API_TRANSPORT",
+      "outcome": "FAILED",
+      "failure_category": "DNS_RESOLUTION",
+      "sanitized_error_excerpt": "URLError <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "fallback_attempted": true,
+      "fallback_result": "Authenticated GitHub connector read remains available; no verified cross-tool binary handoff",
+      "required_for_this_invocation": true
+    },
+    {
+      "stage": "WORKTREE_BOOTSTRAP",
+      "outcome": "BLOCKED",
+      "reason": "Helper bytes not transported to shell; helper not executed"
+    },
+    {
+      "stage": "ACCEPTED_PREDICTION_POINTER",
+      "outcome": "PASS",
+      "blob": "7fe8df30d5b75d5ba57e8680d98265ba691f598b"
+    },
+    {
+      "stage": "CBS_INDEPENDENT_SOURCE",
+      "outcome": "PARTIAL",
+      "source": "https://www.cbssports.com/college-football/scoreboard/",
+      "observation": "Live scrape returned 200 and week navigation; no normalized full-board or qualified offer evidence persisted"
+    },
+    {
+      "stage": "COMPILER_AND_PUBLICATION",
+      "outcome": "NOT_EXECUTED",
+      "reason": "No pinned worktree, qualified current six-market rows, or accepted current publication"
+    }
+  ],
+  "classifier_execution": "NOT_RUN",
+  "next_action": "Restore shell network access to api.github.com or documented complete connector-to-shell byte transfer; verify immutable helper and perform one pinned checkout, then prospective source/decision/compiler/publication."
+}
