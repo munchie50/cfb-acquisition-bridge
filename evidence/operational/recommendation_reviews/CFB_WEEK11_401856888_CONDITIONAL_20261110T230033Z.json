@@ -1,0 +1,73 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401856888",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-10T23:00:33.227999+00:00",
+  "original_lineage_blob": "3a337e8bdf5cd732fb76697cf2a87b2d74ba8ce9",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "away",
+  "rationale": "Tennessee -2.5 at -115 or better is a controlled-Beta preference for its current rushing and defensive matchup, while keeping a field-goal win sufficient to cover. Its defense has held SEC opponents to 27 or fewer and just limited Kentucky to six; the current case does not depend on treating the old -4.9 as a fair line. Texas A&M's good defense, difficult schedule and home field keep this a modest preference rather than a confident margin forecast.",
+  "model_review": "Original Week11 Tennessee -4.9 / total52.9 is retained historical context. Current Tennessee216 rushing yards/game and15.11 points allowed support the favorite, but A&M allows18.67, controls possession and has faced five ranked opponents already. The old over gap is contradicted by present defenses/limited passing; no total recommendation.",
+  "material_sources": [
+    {
+      "url": "https://utsports.com/sports/football/stats/2026",
+      "retrieved_at": "2026-11-10T23:00:33.227999+00:00",
+      "finding": "Official nine-game totals:32.44 points scored/15.11 allowed;216.0 rushing yards/game at5.0/carry;177.9 passing yards/game. SEC scores include17-20Texas,24-14Auburn,24-17Arkansas,26-10Alabama,24-27SouthCarolina,34-6Kentucky. Current low passing volume and road possession risk matter."
+    },
+    {
+      "url": "https://12thman.com/sports/football/stats/2026",
+      "retrieved_at": "2026-11-10T23:00:33.227999+00:00",
+      "finding": "Official A&M averages26.11 points scored/18.67 allowed,198.2 passing/161.0 rushing; opponents convert31.5% on third down. These support a credible home-defense counterargument. No future player clearance is inferred."
+    },
+    {
+      "url": "https://12thman.com/news/2026/11/9/tennessee-game-week-press-conference-and-game-notes",
+      "retrieved_at": "2026-11-10T23:00:33.227999+00:00",
+      "finding": "Official preview confirms SaturdayNov14 2p.m.CT kickoff and sixth ranked opponent this season. Elko discussed finishing drives and late receiver absences in the previous game; that is historical availability, not Saturday clearance. Coach expects Tennessee to stay with MacIntyre; final role/receiver status still needs recheck."
+    }
+  ],
+  "uncertainty": "Qualitative Beta, no calibrated EV. A&M home field, strong defense, possession and schedule strength make a close finish plausible; Tennessee's passing limitations and adverse late QB/line/receiver news can change the case. Recheck current SEC availability and actual venue price Friday. Do not lay three; retrieval-only benchmark update clock unknown.",
+  "decision_rule": "Tennessee full-game spread -2.5 or better at -115 or better. Revalidate current personnel/weather and venue quote ahead of Friday afternoon placement. No automatic wager.",
+  "source_qualification": "Primary ESPN pregame response matched event401856888, directed team IDs{\"home\":\"245\",\"away\":\"2633\"}, DraftKingsprovider100 and paired pointSpread close/display values; selected outcomehttps://sportsbook.draftkings.com/event/34226137?outcomes=0HC84998513N250_3. Raw SHA25621c7494de64a01d3b115db0c7d028eb4a2db338c4fa2557f65c5b0cb52236b02. Current pregame display is not a claimed eventual closing line; update timestamp unknown.",
+  "market_reference": {
+    "game_id": "401856888",
+    "market": "SPREAD",
+    "selection": "away",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-14T20:00:00Z",
+    "kickoff_source_url": "https://12thman.com/news/2026/11/9/tennessee-game-week-press-conference-and-game-notes",
+    "collection_start": "2026-11-10T22:56:29.132051+00:00",
+    "collection_end": "2026-11-10T22:56:29.132051+00:00",
+    "quotes": [
+      {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": -2.5,
+        "price": -115,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34226137?outcomes=0HC84998513N250_3",
+        "game_id": "401856888",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856888",
+        "retrieved_at": "2026-11-10T22:56:29.132051+00:00",
+        "offer_updated_at": null
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "away",
+    "line": -2.5,
+    "minimum_price": -115,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-13T13:00:00Z",
+  "planning_cutoff_utc": "2026-11-14T13:00:00Z",
+  "cutoff_basis": "Friday07CT review is the saved handoff's primary pre-trip revalidation checkpoint. Saturday07CT is the existing v1.237 default reconciliation deadline for this afternoon game and the conservative maximum validity bound of this new review, not permission to defer Friday delivery. Actual Friday arrival/last placement time remains unknown; any independently established earlier practical cutoff controls. KickoffSaturday14:30CT is later. No prior issued limit/cutoff exists for this game.",
+  "execution_window": {
+    "start_utc": "2026-11-10T23:00:33.227999+00:00",
+    "end_utc": "2026-11-14T13:00:00Z"
+  }
+}
