@@ -1,0 +1,18 @@
+{
+  "id": "6abcfac5efe481919c4fd2a68223e9aa",
+  "team_id": null,
+  "title": "CFB Monitor Production Verification — Temporary",
+  "prompt": "Run the temporary CFB Market Monitor production verification test under the established routine. Read evidence/scheduler_qa/CFB_MONITOR_PRODUCTION_PARITY_WATCH_20261109.md from current authenticated munchie50/cfb-acquisition-bridge main. This test observes the actual production Monitor task 6ae766e788d881919726d0eeb44450dd and independently checks its GitHub receipts, stage trace and publication. It must not act as a second producer or change any task.\n\nRead the latest due 07:00 or 13:00 CT production slot and the actual run identity, then match same-cycle GitHub evidence. Report the schedule status separately from engine closure. If startup, probe, clone, pin, review verification, publication, CI or closure is unproved, name the earliest missing or failed stage. In-progress is not a failure. Same-cycle verified publication and closure are required for VERIFIED_DELIVERY. A test-worker PASS, scheduler completed, a manual result or a prior selected sheet cannot qualify the slot. If no new evidence exists, use the last verified observation and report unchanged. Persist and read back the initial observation and material changes as specified by the contract. Keep the checks short and read-only on canonical surfaces. No additional task, run-now dispatch, live market fetch, checkout loop, or automatic recovery.",
+  "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20261109T205700\nRRULE:FREQ=HOURLY;COUNT=24\nEND:VEVENT",
+  "timing_mode": "exact_schedule",
+  "display_schedule": null,
+  "is_enabled": true,
+  "conversation_id": "6af288dd-4b20-83e9-9402-62a09d6d5623",
+  "is_self_owned_automation": false,
+  "default_timezone": "America/Chicago",
+  "next_run_time": "2026-11-10T14:57:00-06:00",
+  "last_run_time": "2026-11-10T20:00:53.029227+00:00",
+  "updated_at": "2026-11-10T20:01:17.483732+00:00",
+  "environment_selection": "inherited",
+  "environments": null
+}
