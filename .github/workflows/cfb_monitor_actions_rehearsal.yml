@@ -1,0 +1,62 @@
+name: CFB Monitor Actions rehearsal
+on:
+  push:
+    branches: [qa/monitor-actions-rehearsal-20261110]
+    paths: [.github/workflows/cfb_monitor_actions_rehearsal.yml]
+permissions:
+  contents: read
+jobs:
+  rehearsal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONPATH: scripts
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify pinned checkout and immutable reviews
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          python3 scripts/cfb_runtime_checkout.py --destination "$RUNNER_TEMP/verified-repo" --expected-head "$GITHUB_SHA" > "$RUNNER_TEMP/runtime.json"
+          python3 -c 'import json, sys; x = json.load(open(sys.argv[1])); print(x["status"], x["head"], len(x["immutable_reviews"]))' "$RUNNER_TEMP/runtime.json"
+      - name: Execute Week 11 producer and reject invalid inputs
+        working-directory: ${{ runner.temp }}/verified-repo
+        run: python3 -m unittest -v scripts.test_cfb_week11_publication
+      - name: Save and verify isolated fixture outputs
+        working-directory: ${{ runner.temp }}/verified-repo
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          from scripts.test_cfb_week11_publication import Week11PublicationTest, gate
+
+          fixture = Week11PublicationTest()
+          fixture.setUpClass()
+          market, decision = fixture.proposal()
+          args = (market, decision, '', '', fixture.lineage, fixture.as_of, 'WEEK11')
+          sheet = gate.render(*args)
+          output = Path(os.environ['RUNNER_TEMP']) / 'cfb-rehearsal'
+          output.mkdir()
+          for name, data in [('market.md', market), ('decision.md', decision), ('sheet.md', sheet)]:
+              target = output / name
+              target.write_text(data)
+              if target.read_text() != data:
+                  raise ValueError(f'fixture output readback mismatch: {name}')
+          audit = gate.audit((output / 'sheet.md').read_text(), *args)
+          if audit['games'] != 67:
+              raise ValueError('unexpected Week 11 fixture population')
+          proof = {'scope': 'fixture only', 'head': os.environ['GITHUB_SHA'],
+                   'games': audit['games'], 'sheet_blob': gate.blob(sheet)}
+          (output / 'result.json').write_text(json.dumps(proof, indent=2))
+          (output / 'runtime.json').write_bytes((output.parent / 'runtime.json').read_bytes())
+          print(json.dumps(proof))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: week11-fixture-rehearsal
+          path: ${{ runner.temp }}/cfb-rehearsal/
+          if-no-files-found: error
