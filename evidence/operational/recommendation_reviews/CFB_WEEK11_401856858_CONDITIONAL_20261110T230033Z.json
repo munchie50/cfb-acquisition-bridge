@@ -1,0 +1,73 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401856858",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-10T23:00:33.227999+00:00",
+  "original_lineage_blob": "3a337e8bdf5cd732fb76697cf2a87b2d74ba8ce9",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "away",
+  "rationale": "Baylor +7.5 at -118 or better is a controlled-Beta preference for keeping the full touchdown cushion with a defense that has limited touchdowns and a productive passing offense. BYU's strong defense, efficient third downs and home field still support the favorite, but do not make a multi-score result automatic. The higher price is accepted for this specific hook and matchup, not rejected by a blanket -115 rule.",
+  "model_review": "Original Week11 BYU -10.6 / total52.1 favors the home team and is retained as explicit counterevidence, not silently replaced. Current Baylor31.89 scoring/17.00 allowed and red-zone defense19scores on26trips,10TD, give a competitive-game path. BYU's current31.0/19.8 and50.9% third-down offense, Baylor penalties and Lagway's low season completion percentage keep confidence modest. Four BYU interceptions last game are not assumed to repeat.",
+  "material_sources": [
+    {
+      "url": "https://baylorbears.com/sports/football/stats/2026",
+      "retrieved_at": "2026-11-10T23:00:33.227999+00:00",
+      "finding": "Official totals:31.89 points scored/17.00 allowed;433.4 offensive yards/game,277.8 passing;4.7 yards/play allowed; opponents score19/26red-zone trips with10TD. Baylor won41-9UCF and42-31IowaState after losses6-17TCU and24-25Kansas. Penalties average68.56yards/game, a material road risk."
+    },
+    {
+      "url": "https://www.espn.com/college-football/preview/_/gameId/401856858",
+      "retrieved_at": "2026-11-10T23:00:33.227999+00:00",
+      "finding": "Nov8 secondary matchup preview reports BYU31.0scoring/19.8allowed and50.9% offensive third downs, plus Baylor Lagway53.7% season completions. BYU lost28-20Utah with four Bachmeier interceptions; Baylor won42-31IowaState with119Lagway rushing yards. One-game turnovers are not a forecast."
+    },
+    {
+      "url": "https://byucougars.com/news/2026/11/9/byu-football-game-week-2026-baylor",
+      "retrieved_at": "2026-11-10T23:00:33.227999+00:00",
+      "finding": "Official current game-week page confirms SaturdayNov14 1:30p.m.MT at LaVellEdwardsStadium, matching20:30Z. Final Big12 availability/workload remains for later recheck; a separate guessed BYU stats route returned404 and supplied no evidence."
+    }
+  ],
+  "uncertainty": "Qualitative Beta, no calibrated EV or upset probability. BYU home field/defense and third-down efficiency can produce a two-score win; Baylor penalties and passing consistency can erase the hook. Recheck Big12 personnel/weather and actual Friday venue price. Keep +7.5; no chasing seven or worse than-118.",
+  "decision_rule": "Baylor full-game spread +7.5 or better at -118 or better. Revalidate current personnel/weather and venue quote ahead of Friday afternoon placement. No automatic wager.",
+  "source_qualification": "Primary ESPN pregame response matched event401856858, directed team IDs{\"home\":\"252\",\"away\":\"239\"}, DraftKingsprovider100 and paired pointSpread close/display values; selected outcomehttps://sportsbook.draftkings.com/event/34964236?outcomes=0HC87098833P750_3. Raw SHA256c1319958de9775699b784b048bfe862a3b1ba1aea6c3d2f150a6119a4599a7f2. Current pregame display is not a claimed eventual closing line; update timestamp unknown.",
+  "market_reference": {
+    "game_id": "401856858",
+    "market": "SPREAD",
+    "selection": "away",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-14T20:30:00Z",
+    "kickoff_source_url": "https://byucougars.com/news/2026/11/9/byu-football-game-week-2026-baylor",
+    "collection_start": "2026-11-10T22:56:28.369753+00:00",
+    "collection_end": "2026-11-10T22:56:28.369753+00:00",
+    "quotes": [
+      {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 7.5,
+        "price": -118,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34964236?outcomes=0HC87098833P750_3",
+        "game_id": "401856858",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856858",
+        "retrieved_at": "2026-11-10T22:56:28.369753+00:00",
+        "offer_updated_at": null
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "away",
+    "line": 7.5,
+    "minimum_price": -118,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-13T13:00:00Z",
+  "planning_cutoff_utc": "2026-11-14T13:00:00Z",
+  "cutoff_basis": "Friday07CT review is the saved handoff's primary pre-trip revalidation checkpoint. Saturday07CT is the existing v1.237 default reconciliation deadline for this afternoon game and the conservative maximum validity bound of this new review, not permission to defer Friday delivery. Actual Friday arrival/last placement time remains unknown; any independently established earlier practical cutoff controls. KickoffSaturday14:30CT is later. No prior issued limit/cutoff exists for this game.",
+  "execution_window": {
+    "start_utc": "2026-11-10T23:00:33.227999+00:00",
+    "end_utc": "2026-11-14T13:00:00Z"
+  }
+}
