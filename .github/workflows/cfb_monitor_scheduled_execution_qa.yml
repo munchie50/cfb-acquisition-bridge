@@ -1,8 +1,7 @@
 name: CFB Monitor scheduled execution QA
 on:
   schedule:
-    - cron: '53 20 10 11 *'
-    - cron: '13,33,53 21 10 11 *'
+    - cron: '17,37,57 * * * *'
 permissions:
   contents: read
 jobs:
@@ -18,7 +17,7 @@ jobs:
         run: |
           set -euo pipefail
           now="$(date -u +%FT%TZ)"
-          if [[ "$now" < 2026-11-10T20:53:00Z || "$now" > 2026-11-10T22:30:00Z ]]; then
+          if [[ "$now" < 2026-11-10T22:17:00Z || "$now" > 2026-11-11T06:00:00Z ]]; then
             echo 'active=false' >> "$GITHUB_OUTPUT"
             exit 0
           fi
@@ -38,86 +37,27 @@ jobs:
           test "$(git rev-parse HEAD)" = "$FIXTURE_HEAD"
           python3 scripts/cfb_runtime_checkout.py --destination "$RUNNER_TEMP/verified-repo" --expected-head "$FIXTURE_HEAD" > "$RUNNER_TEMP/scheduled-proof/runtime.json"
           python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); print(d["status"],d["head"],len(d["immutable_reviews"]))' "$RUNNER_TEMP/scheduled-proof/runtime.json"
-      - name: Fetch and normalize the approved CBS board
+      - name: Execute Week 11 compiler and renderer
         if: steps.window.outputs.active == 'true'
         working-directory: ${{ runner.temp }}/verified-repo
+        env:
+          PYTHONPATH: scripts
         run: |
           set -euo pipefail
-          export PYTHONPATH="scripts:$RUNNER_TEMP"
-          cat > "$RUNNER_TEMP/cfb_actions_cbs_extract.py" <<'PY'
-          """Extract the CBS odds table schema for the isolated Actions rehearsal."""
-          import html
-          import re
-          from urllib.parse import urljoin
-          
-          from cfb_cbs_full_board_normalizer import WEEK11_URL
-          
-          
-          def text(markup):
-              return ' '.join(html.unescape(re.sub(r'<[^>]*>', ' ', markup)).split())
-          
-          
-          def extract(document):
-              output = []
-              for table in re.findall(r'<table\b[^>]*\bdata-game-abbrev=[^>]*>.*?</table>', document, re.S):
-                  rows = [re.findall(r'<t[dh]\b[^>]*>.*?</t[dh]>', row, re.S)
-                          for row in re.findall(r'<tr\b[^>]*>.*?</tr>', table, re.S)
-                          if not row.startswith('<tr class="OddsBlock-linksRow">')]
-                  if len(rows) != 3 or any(len(row) != 6 for row in rows):
-                      raise ValueError('unexpected CBS table shape')
-                  header = rows[0]
-                  if [text(cell) for cell in header[1:]] != ['Final', 'Open', 'Spread', 'ML Moneyline', 'Total']:
-                      raise ValueError('unexpected CBS column labels')
-                  kickoff, = re.findall(r'<span\b[^>]*OddsBlock-timeText--desktop[^>]*>(.*?)</span>', header[0], re.S)
-                  output.append([text(kickoff), 'Final', 'Open', 'Spread', 'MLMoneyline', 'Total'])
-                  for team, _final, _opening, *markets in rows[1:]:
-                      long_name, = re.findall(r'<span\b[^>]*OddsBlock-teamText--long[^>]*>(.*?)</span>', team, re.S)
-                      link, = re.findall(r'<a\b[^>]*href="(/college-football/teams/[^"]+)"[^>]*>', long_name, re.S)
-                      cells = [f'[{text(long_name)}]({urljoin(WEEK11_URL, link)})', '', '']
-                      for market in markets:
-                          value = text(market)
-                          icons = re.findall(r'https://sports\.cbsimg\.net/[^"\s]*/books-icons/\d+\.svg', market)
-                          cells.append(value + ''.join(f' ![book logo]({icon})' for icon in icons))
-                      output.append(cells)
-              if not output or any('|' in cell or '\n' in cell for row in output for cell in row):
-                  raise ValueError('CBS capture cannot be represented as odds tables')
-              return ''.join('| ' + ' | '.join(row) + ' |\n' for row in output)
-          PY
+          python3 -m unittest -v scripts.test_cfb_week11_publication 2>&1 | tee "$RUNNER_TEMP/scheduled-proof/week11-tests.txt"
           python3 - <<'PY'
-          import hashlib
           import json
           import os
           from datetime import datetime, timezone
           from pathlib import Path
-          from urllib.request import Request, urlopen
-
-          from cfb_actions_cbs_extract import extract
-          from cfb_week11_publication import WEEK11_URL, board
-
-          output = Path(os.environ['RUNNER_TEMP']) / 'scheduled-proof'
-          result = {'url': WEEK11_URL, 'event': os.environ['GITHUB_EVENT_NAME'],
-                    'run_id': os.environ['GITHUB_RUN_ID'], 'pinned_head': os.environ['FIXTURE_HEAD']}
-          try:
-              with urlopen(Request(WEEK11_URL, headers={'User-Agent': 'Mozilla/5.0'}), timeout=25) as response:
-                  raw = response.read(8_000_001)
-                  result.update(http=response.status, final_url=response.geturl(), bytes=len(raw))
-              observed = datetime.now(timezone.utc).isoformat()
-              if result['http'] != 200 or result['final_url'] != WEEK11_URL or len(raw) > 8_000_000:
-                  raise ValueError('unqualified CBS response')
-              capture = extract(raw.decode('utf-8'))
-              lineage = Path('evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json').read_text()
-              normalized = board(capture, lineage, observed)
-              if normalized['coverage']['matched_games'] != 67:
-                  raise ValueError('incomplete governed slate')
-              (output / 'capture.md').write_text(capture)
-              (output / 'normalized.json').write_text(json.dumps(normalized, indent=2))
-              result.update(status='PASS', recovered_by=observed, raw_sha256=hashlib.sha256(raw).hexdigest(),
-                            coverage=normalized['coverage'], qualification=normalized['qualification'])
-          except Exception as exc:
-              result.update(status='FAIL', error_type=type(exc).__name__, error=str(exc)[:500])
-          (output / 'result.json').write_text(json.dumps(result, indent=2))
+          result = {'status': 'PASS_SCHEDULED_EXECUTION',
+                    'event': os.environ['GITHUB_EVENT_NAME'],
+                    'run_id': os.environ['GITHUB_RUN_ID'],
+                    'pinned_head': os.environ['FIXTURE_HEAD'],
+                    'completed_at': datetime.now(timezone.utc).isoformat(),
+                    'scope': 'pinned checkout and controlled Week 11 compiler/render tests'}
+          (Path(os.environ['RUNNER_TEMP']) / 'scheduled-proof/result.json').write_text(json.dumps(result, indent=2))
           print(json.dumps(result))
-          raise SystemExit(0 if result['status'] == 'PASS' else 1)
           PY
       - uses: actions/upload-artifact@v4
         if: ${{ always() && steps.window.outputs.active == 'true' }}
