@@ -1,0 +1,27 @@
+# Week11 follow-on pending-game review and publication audit
+
+RunCFB_MARKET_MONITOR_20261110T230033Z; repeated user-directed continuation. Productionv5+acceptedv5.1A/C+v5.2D/E/F. PriorWeek11publication has successful selectedCI42918597405and separate closureda086e3553b6f61f6c4dcd0a55d7ab11fee369e3. This phase resumes33INCONCLUSIVE games rather than silently treating prior33PASSas a freshly completed all67review.
+
+## Decisions and sources
+
+All33previouslypendingidentities reconciled exactly once in evidence/audits/CFB_WEEK11_PENDING_33_REVIEW_20261110T230405Z.json @93574b73bc6f4b234955f63cec8063ce7e42d4ec.16earnedPASS,2newcontrolledBetaCONDITIONAL,15specificreassessments. Current49PASSincludes8originalexclusions;15INCONCLUSIVE;3CONDITIONAL. No wager/stake/probability/EV or forcedTop10quota. Current material, both side/ML directions, totals and relevant portfolio limits are distinct; weak model-gap-only total cases rejected rather than held indefinitely. Reassessment candidates remain unranked/nonrecommendations.
+
+Tennessee-2.5minimum-115 reviewa5936459e7399e733fc7e99b2633988c34e5555f atcommit8039726bfe8fb8cbffa417105583ba55953d648e and Baylor+7.5minimum-118 review31ce7f33db5f1d0a60a969dac96771942ec5e784 atcommitaae572451b11e216f0e38cab1e0fbc0d527244fc independently read back before canonicaldecision. Current paired DraftKings primaryresponses retained with SHA25621c7494de64a01d3b115db0c7d028eb4a2db338c4fa2557f65c5b0cb52236b02 andc1319958de9775699b784b048bfe862a3b1ba1aea6c3d2f150a6119a4599a7f2. Directed IDs/provider100/selectionlinks/kickoffmatched. Official Tennessee/A&M and Baylor statistics plus official A&M/BYU current previews inform preferences and counterarguments. Guessed BYUstats route404 was not evidence. Prices accept each independently reviewed observedpair; no blanket-115ceiling. Friday07CTrevalidation ahead of afternoontrip and Saturday07CTmaximumvalidity retained; exact Fridayarrival remains unknown and earlier establishedpracticalcutoffscontrol.
+
+Original JaxState-7.5minimum-105 review/limit/finalcutoff unchanged. Fresh primaryrecheck at23:03:39.624062Z matchedDraftKings-7.5/-102,opposite+7.5/-118. This is quote revalidation, not silently renewing an expired review. Officialcurrentmaterial was reviewed earlier in the samecontinuation. Updateclocks/consensus/venueunverified; no Caesars requirement.
+
+## Actual live producer and durable integration
+
+New completeCBSgovernedWeek11FBS source recoveredby23:03:30Z,scrape01a1c7b3-aaf6-74fe-9913-2850216ef0e4,HTTP200. Saved/readback evidence/operational/CFB_WEEK11_CBS_FBS_CAPTURE_20261110T230330Z.md @011509932fbe76644eda48c58701bbea5e5f0b5b.67directedgames/134teamrows;unknownbookupdates;Final/Openquarantined;nooutcomesorcurrentfairlineinference.
+
+Actual-clockWeek11compiler23:04:05.879516Z produced the exact49/15/3packet; conditionalrenderer/auditPASS67games. New canonical marketc23bcc384e0c9491e12657ff4470f1cb17af6ad0(commita1a1f2fe17d2be5e1b471487c42980769326b433),decision3c89e0752e8aa246f856af52fcdab41408009b3c(commit04377e73bf3e154e6ec76eda5d4d2b6a12ae5168). Fresh SHAguardedserialupdate_file,independentfullblobcontent equality/Githash and preservation of every priorbytePASS. Exact67identity/transition reconciliation:33oldPASSunchanged,16newPASS,2newCONDITIONAL,15stillopen,1Jaxconditionalpreserved. All59originalpredictions/8exclusions/177numericstrings remain under originallineage; no REFRESH substitution.
+
+Current sheet evidence/operational/CFB_WEEK11_HOT_SHEET_2026-11-10_1704CT.md @607d4d4f79031c0e2b9d990efcb9fb02c39ee3b9 and Top10companion @e757a79da83cbcddb6bd798e6b371716f6ac50a1 saved/fullreadback. v1.272 @bd9db53b7d9373cea5f9657b740d78e74ccdbebe selects them;446pointerconsumerpreflightPASS. November10Healthaudit/closure navigation recovered without advancing its COVERAGE_UNVERIFIEDwatermark. SavedpublicationintegrityPASSat23:07:36.495245Z,zeroelapsed/overdueexceptionsatthatobservation; not a newmarketfreshness or fullrunacceptanceclaim.
+
+SelectedpublicationCI42920688631 at exactheade30ee72c084e63269c4bc073dec820958aa860d3 was in progress at this audit's first boundary. Final result requires reconciliation before closure. PriorCIpass does not substitute for this newboundary. NoextraCIor taskdispatch.
+
+## Learning and remaining work
+
+Benefit:18of33pendinggames gained finalcurrentdispositions;currentcardexpands to3independentlydefinedpairs while15remainingcasesgain concrete evidence/counterarguments. Cost:boundedpublicpreviews/officialmaterial/primarybenchmarks,onefreshfullboard,existingcompiler/hash/readback/bindingchecksandnaturalpushCI. Net: more timelyusefulmanualdeliverywithhonestremainingdebt; scientificpredictive/financialbenefit unproved. No newframework/checklist/task/model/Champion/moneychange.
+
+NEXT: finish15specificreassessments, then revalidateallstill-actionablegamesincludingpriorPASS/conditionals against actualFridayprices/material and placementwindow; no guarantee of unattendedrecovery. ActualscheduledMonitorGitHubDNS/transfer, nativeexecutionQAabsence, Evening/Healthhistoricalcoverage and authenticsettlementremainOPEN. Historicalfailedcycles retained. FullreviewstatusRUN_INCOMPLETE, irrespective of boundedpublicationproof.
