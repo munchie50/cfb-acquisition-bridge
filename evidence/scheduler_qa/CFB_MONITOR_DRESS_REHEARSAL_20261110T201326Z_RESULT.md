@@ -1,0 +1,28 @@
+# Scheduled QA dress rehearsal — RESULT
+
+- startup_receipt: evidence/scheduler_qa/CFB_MONITOR_DRESS_REHEARSAL_20261110T201326Z_STARTUP.md
+- startup_verified_blob: 17056f212f0c21efb6596eaeae467ab154b788a8
+- trigger: natural scheduled QA one-shot
+- invocation_id: UNKNOWN
+- worker_environment_id: UNKNOWN; observed hostname 2eb7ef85bf17 is not scheduler identity
+- shell: container.exec; git: /usr/bin/git; python: /opt/pyvenv/bin/python3
+- scratch: /tmp/cfb-qa-dress-OPVebPiy (private)
+- production_task: 6ae766e788d881919726d0eeb44450dd; metadata read; inherited environment does not prove parity
+- authenticated_helper: scripts/cfb_runtime_checkout.py, 3780 UTF-8 bytes, blob b13930cb714eb87c8dce6136ffab6fbceeb44898
+- startup: PASS, append-only write and independent readback
+- git_probe: FAIL; 2026-11-10T20:13:37Z; GIT_TERMINAL_PROMPT=0 GCM_INTERACTIVE=never timeout 10 git ls-remote https://github.com/munchie50/cfb-acquisition-bridge.git refs/heads/main; exit 128; "Could not resolve host: github.com"
+- command_level_network_permission: UNAVAILABLE (not exposed)
+- git_clone: BLOCKED, NOT_ATTEMPTED
+- connector_to_shell_complete_binary_transfer: UNAVAILABLE in exposed tool interface; connector can read text but no documented complete binary transfer to container.exec
+- immutable_api_fallback: FAIL; 2026-11-10T20:13:39Z; bounded curl GitHub git/blobs/b13930cb714eb87c8dce6136ffab6fbceeb44898; exit 6; "Could not resolve host: api.github.com"
+- helper_local_byte_count_and_hash: NOT_VERIFIED; no complete transferred file
+- pinned_full_checkout: BLOCKED
+- current_producer_presence_in_checkout: BLOCKED
+- immutable_review_refs_validation: BLOCKED
+- fixture_unittest: NOT_RUN, checkout prerequisite unproved
+- 67-row compiler_render_readback: NOT_RUN
+- fail_closed_cases: NOT_RUN
+- earliest_failure: DNS_RESOLUTION at ordinary Git probe
+- worker_parity: UNPROVED; environment identity UNKNOWN; inherited settings are not parity evidence
+- QA_result: RUN_INCOMPLETE; not a fixture PASS or production delivery
+- production_publication: NONE; canonical writes: NONE; dispatch: NONE; task changes: NONE
