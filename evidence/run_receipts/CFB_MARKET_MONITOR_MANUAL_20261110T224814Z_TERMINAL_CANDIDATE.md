@@ -1,0 +1,10 @@
+# Manual Week11 publication terminal candidate
+
+status: RUN_INCOMPLETE
+cycle: CFB_MARKET_MONITOR_20261110T224814Z
+
+Canonical Week11 publication phase: COMPLETED_AND_INDEPENDENTLY_RECONCILED. Sourceffb8e0ef946a2617580c3646c645bfd2d4ac2176; market84124c2b3e070fde9ed54d6dba68e8ad79ddda4b; decisionf9595651bae5b40a32ae2079f42e32aa8cb7af11; current sheetd678fdf120ee0b3d1b4b4c74a7f68433b651a762; Top10companiondd8d33cfe6bbeac3fb0353e094194cdb194e2094; recoveryv1.27198e38315e3b1d865bcce9eac2754399e013c6b63. Exact independent readbacks/Gitblobhashes and append-onlyhistory preservationPASS. Full438pointerconsumerpreflightPASS. SelectedCI42918597405/job130187351128 athead16a1f9c7220e6a9e33d55ce227aa80f9a3c4a981 SUCCESS, including originalarchive/frozenfield/savedpublication/currentbindings. Actual-clockcompiler/renderPASS at22:50:16.006922Z; savedintegrityPASSat22:53:27.758748Z with no overdue exceptions at that observation. Audit evidence/audits/CFB_WEEK11_MANUAL_PUBLICATION_20261110T224814Z_AUDIT.md @73c8e9ec21b7fdf7b8ceda0a95edb97b06fa2f5d.
+
+Current canonical counts33PASS(including8originalexclusions)/33INCONCLUSIVE/1CONDITIONAL. Rankedconditional JaxState-7.5minimum-105, currentbenchmark-102, venueunverified, Friday07CTrecheck andSaturday07CTmaximumsavedvalidity. No wagers/stakes/EV invented. All67games/59originalpredictions/8exclusions/177numericstrings preserved. Week10selectedview superseded prospectively only.
+
+Fulluserdecision remains INCOMPLETE:33remainingqualifications, currentmaterial/pricefollow-through, Fridaytrip revalidation; scheduledworkerDNS andnaturalproducercompletion, Evening/Healthhistory/financialsettlement remainOPEN. No fullslateRUN_PASS or scheduledreliabilityclaim. Ongoing independentgame reviews are follow-on research, not retroactive changes to this accepted boundary. Newestcanonical source outranks olderworkingrows on nextresume. No model/Champion/task/cadence/money mutation.
