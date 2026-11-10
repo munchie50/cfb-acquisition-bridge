@@ -1,0 +1,3 @@
+# Manual Monitor recovery candidate
+
+User-directed prospective continuation 2026-11-10T13:51:32.345Z. Original failed 07:00 CT closure 3d41cec5dfd43ea296462536ab5f496337fa6dd7. Saved evidence/audits/CFB_WEEK11_SATURDAY_LATE_MANUAL_REVIEW_20261110.md @ 89f8e0ef028a1226fa98e0eeae13fcfa271b6f73. Completed 25 new preliminary matchup comparisons, bringing Saturday to 48 modeled comparisons and eight retained original exclusions. Proposed RUN_INCOMPLETE pending Friday/Saturday final review qualification, canonical decisions, fresh compile, publication and selected CI. No scientific or Champion effect.
