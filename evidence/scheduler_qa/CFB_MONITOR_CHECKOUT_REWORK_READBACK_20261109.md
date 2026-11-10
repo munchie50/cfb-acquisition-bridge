@@ -1,0 +1,7 @@
+# Production Monitor checkout rework readback
+
+The existing production task 6ae766e788d881919726d0eeb44450dd now uses one ordered checkout procedure in place of layered transport instructions. Exact prompt readback passed, along with task identity, title, schedule, timezone, enabled state, timing mode and inherited environment selection. Prompt length fell from 37,681 to 22,204 characters. Exact prior prompt and source timeline: evidence/scheduler_qa/CFB_MONITOR_CHECKOUT_REWORK_BASELINE_20261109.json.
+
+Scheduled path: authenticate main and helper identity, try ordinary Git, perform at most one pinned full clone and verify the retained review history. Before a clone has been attempted, authenticated helper handoff or the verified immutable API route remain available under the existing limits. A successful checkout continues to the actual producer. Failure is logged by stage, with independent eligible work retained. Existing publication and decision checks continue to govern acceptance.
+
+This is an installed prompt rework, not proof of natural execution. October 29 scheduled success recorded the identical helper and full publication, but no exact transfer route or worker provisioning. November 5 raw helper download DNS failure, later connector adoption, and November 9 handoff/API failure are documented in the archived timeline. The operational gap is whether ordinary Git works in the actual rebuilt scheduled worker. Next proof is the existing Tuesday 07:00 CT invocation. No extra run or task was created.
