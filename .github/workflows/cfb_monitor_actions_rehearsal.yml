@@ -76,20 +76,27 @@ jobs:
           (output / 'result.json').write_text(json.dumps(proof, indent=2))
           print(json.dumps(proof))
           PY
-      - name: Probe approved live CBS board independently
+      - name: Normalize fresh CBS board and compare reviewed prices
         if: ${{ always() }}
+        working-directory: ${{ runner.temp }}/verified-repo
+        env:
+          PYTHONPATH: scripts:${{ github.workspace }}/qa
         run: |
-          mkdir -p "$RUNNER_TEMP/cbs-probe"
           python3 - <<'PY'
           import hashlib
           import json
           import os
-          import re
           from datetime import datetime, timezone
           from pathlib import Path
           from urllib.request import Request, urlopen
 
-          url = 'https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-11/'
+          from cfb_actions_cbs_extract import extract
+          from cfb_week11_publication import board, WEEK11_URL
+          from cfb_neutral_publication_gate import blob
+
+          output = Path(os.environ['RUNNER_TEMP']) / 'cbs-probe'
+          output.mkdir(exist_ok=True)
+          url = WEEK11_URL
           result = {'source': url, 'started_at': datetime.now(timezone.utc).isoformat()}
           passed = False
           try:
@@ -97,15 +104,30 @@ jobs:
                   body = response.read(8_000_001)
                   result.update(http=response.status, final_url=response.geturl(), bytes=len(body),
                                 sha256=hashlib.sha256(body).hexdigest())
-              teams = set(re.findall(rb'/college-football/teams/([A-Z0-9]+)/', body))
-              result['distinct_team_links'] = len(teams)
-              passed = (result['http'] == 200 and result['final_url'] == url and len(body) <= 8_000_000
-                        and len(teams) >= 100 and b'Moneyline' in body and b'Spread' in body)
+              recovered_at = datetime.now(timezone.utc).isoformat()
+              if result['http'] != 200 or result['final_url'] != url or len(body) > 8_000_000:
+                  raise ValueError('unqualified CBS response')
+              capture = extract(body.decode('utf-8'))
+              lineage = Path('evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json').read_text()
+              fresh = board(capture, lineage, recovered_at)
+              prior = Path('evidence/operational/CFB_WEEK11_CBS_FBS_TABLES_20261110T140351Z.md').read_text()
+              if blob(prior) != 'eb7b960239ef4f791faf32962b1f97abafea537d':
+                  raise ValueError('review source identity mismatch')
+              reviewed = board(prior, lineage, '2026-11-10T14:03:51Z')
+              original = {game['game_id']: game for game in reviewed['games']}
+              changed = [game['game_id'] for game in fresh['games']
+                         if game['team_offers'] != original[game['game_id']]['team_offers']]
+              (output / 'capture.md').write_text(capture)
+              (output / 'normalized.json').write_text(json.dumps(fresh, indent=2))
+              result.update(coverage=fresh['coverage'], capture_blob=blob(capture),
+                            recovered_by=recovered_at, qualification=fresh['qualification'],
+                            changed_market_game_ids=changed, changed_market_games=len(changed))
+              passed = fresh['coverage']['matched_games'] == 67
           except Exception as exc:
               result.update(error_type=type(exc).__name__, error=str(exc)[:400])
           result.update(retrieved_at=datetime.now(timezone.utc).isoformat(), board_access=passed,
-                        scope='reachability and HTML signals only')
-          (Path(os.environ['RUNNER_TEMP']) / 'cbs-probe/result.json').write_text(json.dumps(result, indent=2))
+                        scope='normalized live display, separate from historical reviewed replay')
+          (output / 'result.json').write_text(json.dumps(result, indent=2))
           print(json.dumps(result))
           raise SystemExit(0 if passed else 1)
           PY
