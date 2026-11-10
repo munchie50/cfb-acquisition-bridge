@@ -1,7 +1,8 @@
 name: CFB Monitor scheduled execution QA
 on:
   schedule:
-    - cron: '34,39 20 10 11 *'
+    - cron: '53 20 10 11 *'
+    - cron: '13,33,53 21 10 11 *'
 permissions:
   contents: read
 jobs:
@@ -12,12 +13,12 @@ jobs:
     env:
       FIXTURE_HEAD: 37d692d65b05632a376d31cdefbd3ec23ef5103e
     steps:
-      - name: Record clock and enforce the one-day test window
+      - name: Record clock and enforce the bounded test window
         id: window
         run: |
           set -euo pipefail
           now="$(date -u +%FT%TZ)"
-          if [[ "$now" != 2026-11-10T20:* ]]; then
+          if [[ "$now" < 2026-11-10T20:53:00Z || "$now" > 2026-11-10T22:30:00Z ]]; then
             echo 'active=false' >> "$GITHUB_OUTPUT"
             exit 0
           fi
