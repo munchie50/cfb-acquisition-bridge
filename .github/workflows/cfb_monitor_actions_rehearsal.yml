@@ -1,4 +1,4 @@
-name: CFB Monitor Actions rehearsal
+name: CFB Monitor source and handoff QA
 on:
   push:
     branches: [qa/monitor-actions-rehearsal-20261110]
@@ -25,41 +25,95 @@ jobs:
           test "$(git hash-object scripts/cfb_runtime_checkout.py)" = "$(git rev-parse "$FIXTURE_HEAD:scripts/cfb_runtime_checkout.py")"
           python3 scripts/cfb_runtime_checkout.py --destination "$RUNNER_TEMP/verified-repo" --expected-head "$FIXTURE_HEAD" > "$RUNNER_TEMP/runtime.json"
           python3 -c 'import json, sys; x = json.load(open(sys.argv[1])); print(x["status"], x["head"], len(x["immutable_reviews"]))' "$RUNNER_TEMP/runtime.json"
-      - name: Execute Week 11 producer and reject invalid inputs
-        working-directory: ${{ runner.temp }}/verified-repo
-        run: python3 -m unittest -v scripts.test_cfb_week11_publication
-      - name: Save and verify isolated fixture outputs
+      - name: Replay independently reviewed Week 11 packet
         working-directory: ${{ runner.temp }}/verified-repo
         run: |
           python3 - <<'PY'
+          import collections
           import json
           import os
           from pathlib import Path
-          from scripts.test_cfb_week11_publication import Week11PublicationTest, gate
+          import cfb_week11_publication as week
+          import cfb_neutral_publication_gate as gate
 
-          fixture = Week11PublicationTest()
-          fixture.setUpClass()
-          market, decision = fixture.proposal()
-          args = (market, decision, '', '', fixture.lineage, fixture.as_of, 'WEEK11')
+          def bound(path, expected):
+              value = Path(path).read_text()
+              if gate.blob(value) != expected:
+                  raise ValueError(f'packet identity mismatch: {path}')
+              return value
+
+          e = 'evidence/'
+          op = e + 'operational/'
+          capture = bound(op + 'CFB_WEEK11_CBS_FBS_TABLES_20261110T140351Z.md', 'eb7b960239ef4f791faf32962b1f97abafea537d')
+          reviewed = bound(e + 'audits/CFB_WEEK11_WORKING_DECISION_ROWS_20261110T140911Z.json', '4b25f9f0cd720f964aabf06a2c953cda52414586')
+          lineage = bound(e + 'audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json', week.WEEK11_LINEAGE_SHA)
+          rows = json.loads(reviewed, object_pairs_hook=gate.unique)
+          counts = collections.Counter(row['state'] for row in rows)
+          if counts != {'PASS': 30, 'INCONCLUSIVE': 37}:
+              raise ValueError('unexpected reviewed decision state counts')
+          as_of = '2026-11-10T14:09:11Z'
+          source_at = '2026-11-10T14:03:51Z'
+          marker = '```' + week.SOURCE_TAG + '\n'
+          market = Path(op + 'CFB_MARKET_MONITOR_STATE.md').read_text().split(marker, 1)[0]
+          decision = Path(op + 'CFB_DECISION_WAIT_LEDGER.md').read_text().split(marker, 1)[0]
+          market, decision = week.compile(market, decision, capture, lineage,
+                                           'CFB_MARKET_MONITOR_20261110T140911Z', as_of, source_at, rows)
+          args = (market, decision, Path(op + 'CFB_EXECUTION_LEDGER.md').read_text(),
+                  Path(op + 'CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md').read_text(), lineage, as_of, 'WEEK11')
           sheet = gate.render(*args)
-          output = Path(os.environ['RUNNER_TEMP']) / 'cfb-rehearsal'
+          output = Path(os.environ['RUNNER_TEMP']) / 'reviewed-handoff'
           output.mkdir()
           for name, data in [('market.md', market), ('decision.md', decision), ('sheet.md', sheet)]:
               target = output / name
               target.write_text(data)
               if target.read_text() != data:
-                  raise ValueError(f'fixture output readback mismatch: {name}')
+                  raise ValueError(f'readback mismatch: {name}')
           audit = gate.audit((output / 'sheet.md').read_text(), *args)
           if audit['games'] != 67:
-              raise ValueError('unexpected Week 11 fixture population')
-          proof = {'scope': 'fixture only', 'head': os.environ['FIXTURE_HEAD'], 'workflow_head': os.environ['GITHUB_SHA'],
-                   'games': audit['games'], 'sheet_blob': gate.blob(sheet)}
+              raise ValueError('unexpected reviewed game population')
+          proof = {'scope': 'historical reviewed packet', 'as_of': as_of, 'source_at': source_at,
+                   'games': audit['games'], 'states': dict(counts), 'sheet_blob': gate.blob(sheet)}
           (output / 'result.json').write_text(json.dumps(proof, indent=2))
-          (output / 'runtime.json').write_bytes((output.parent / 'runtime.json').read_bytes())
           print(json.dumps(proof))
           PY
+      - name: Probe approved live CBS board independently
+        if: ${{ always() }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/cbs-probe"
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          import re
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+
+          url = 'https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-11/'
+          result = {'source': url, 'started_at': datetime.now(timezone.utc).isoformat()}
+          passed = False
+          try:
+              with urlopen(Request(url, headers={'User-Agent': 'Mozilla/5.0'}), timeout=25) as response:
+                  body = response.read(8_000_001)
+                  result.update(http=response.status, final_url=response.geturl(), bytes=len(body),
+                                sha256=hashlib.sha256(body).hexdigest())
+              teams = set(re.findall(rb'/college-football/teams/([A-Z0-9]+)/', body))
+              result['distinct_team_links'] = len(teams)
+              passed = (result['http'] == 200 and result['final_url'] == url and len(body) <= 8_000_000
+                        and len(teams) >= 100 and b'Moneyline' in body and b'Spread' in body)
+          except Exception as exc:
+              result.update(error_type=type(exc).__name__, error=str(exc)[:400])
+          result.update(retrieved_at=datetime.now(timezone.utc).isoformat(), board_access=passed,
+                        scope='reachability and HTML signals only')
+          (Path(os.environ['RUNNER_TEMP']) / 'cbs-probe/result.json').write_text(json.dumps(result, indent=2))
+          print(json.dumps(result))
+          raise SystemExit(0 if passed else 1)
+          PY
       - uses: actions/upload-artifact@v4
+        if: ${{ always() }}
         with:
-          name: week11-fixture-rehearsal
-          path: ${{ runner.temp }}/cfb-rehearsal/
+          name: week11-source-and-reviewed-handoff
+          path: |
+            ${{ runner.temp }}/reviewed-handoff/
+            ${{ runner.temp }}/cbs-probe/
           if-no-files-found: error
