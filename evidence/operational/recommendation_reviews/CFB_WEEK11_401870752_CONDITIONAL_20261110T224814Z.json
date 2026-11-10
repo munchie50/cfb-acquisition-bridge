@@ -1,0 +1,73 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401870752",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-10T22:48:14.085478+00:00",
+  "original_lineage_blob": "3a337e8bdf5cd732fb76697cf2a87b2d74ba8ce9",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "away",
+  "rationale": "Jax State -7.5 at -105 or better is a controlled-Beta preference for its dual-threat rushing matchup against WKU's vulnerable run defense. Current official scoring and per-play profiles support the favorite independently of the older frozen margin. This is a modest preference: Jax State has several narrow conference wins, permits long drives and must win by eight on the road; WKU's tougher early opponents inflate its full-season defensive averages.",
+  "model_review": "Week11 immutable original lineage keeps Jacksonville State -21.6 / total51.1 as historical context, not a current fair line or calibrated cover probability. Current official rushing, scoring, QB production, opponent schedule and key-number cost govern this selection; the large frozen spread disagreement alone does not earn it.",
+  "material_sources": [
+    {
+      "url": "https://jaxstatesports.com/sports/football/stats/2026",
+      "retrieved_at": "2026-11-10T22:48:14.085478+00:00",
+      "finding": "Official cumulative through nine games: 29.11 points scored/19.22 allowed, 6.5 offensive/5.1 defensive yards per play, 174.7 rushing yards/game at5.0/carry. Creel leads passing and rushing. Opponents convert42.975% on third down. Wins over Kennesaw27-26 and FIU27-24 show margin fragility; six straight wins include47-14 Sam Houston."
+    },
+    {
+      "url": "https://wkusports.com/sports/football/stats/2026",
+      "retrieved_at": "2026-11-10T22:48:14.085478+00:00",
+      "finding": "Official nine-game totals:23.56 points scored/33.33 allowed,174.4 rushing yards allowed/game at5.4/carry; opponents score on26/27 red-zone trips,22TD. WKU ran238 yards and scored42 last game despite allowing51. Georgia/Indiana early losses make raw full-season defense an imperfect schedule-adjusted comparison. Glen/Glenn QB label not used as future availability proof."
+    },
+    {
+      "url": "https://jaxstatesports.com/game-center/8717",
+      "retrieved_at": "2026-11-10T22:48:14.085478+00:00",
+      "finding": "School confirms SaturdayNovember14 at2:30p.m. localCT against WesternKentucky. Current leaders list CadenCreel1987passing/800rushing yards. ESPN primary event independently matches20:30Z and directed team IDs55away/98home; no final medical clearance inferred."
+    }
+  ],
+  "uncertainty": "Qualitative controlled Beta, not calibrated EV. Creel-dependent offense, road/key-number risk, close recent conference wins, opponent-adjustment uncertainty and WKU's productive latest rushing game limit conviction. Final personnel/weather and Friday trip quote require recheck. Named public benchmark has unknown update clock; consensus and venue execution unverified.",
+  "decision_rule": "Full-game Jacksonville State -7.5 or better at -105 or better. Do not lay eight or accept worse than -105. Reassess materially adverse Creel/line/defense news and any venue price before Friday placement; no automatic wager.",
+  "source_qualification": "ESPN primary pregame summary matched event401870752, directed team IDs55/98, DraftKings provider100, paired -7.5/-102 and +7.5/-118 and away-specific outcome link. Raw response SHA256 3d928be44555c76adeef7a5cd431f12872171b1c94fabf4453a5a91cb3bccbe9. The primary's close field is a current pregame display in an unstarted event, not a claimed eventual closing line. Offer-update timestamp unavailable; retrieval-only.",
+  "market_reference": {
+    "game_id": "401870752",
+    "market": "SPREAD",
+    "selection": "away",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-14T20:30:00Z",
+    "kickoff_source_url": "https://jaxstatesports.com/game-center/8717",
+    "collection_start": "2026-11-10T22:46:20.880998+00:00",
+    "collection_end": "2026-11-10T22:46:20.880998+00:00",
+    "quotes": [
+      {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": -7.5,
+        "price": -102,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34964183?outcomes=0HC87098662N750_3",
+        "game_id": "401870752",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401870752",
+        "retrieved_at": "2026-11-10T22:46:20.880998+00:00",
+        "offer_updated_at": null
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "away",
+    "line": -7.5,
+    "minimum_price": -105,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-13T13:00:00Z",
+  "planning_cutoff_utc": "2026-11-14T13:00:00Z",
+  "cutoff_basis": "Friday07CT review is the saved handoff's primary pre-trip revalidation checkpoint. Saturday07CT is the existing v1.237 default reconciliation deadline for this afternoon game and the conservative maximum validity bound of this new review, not permission to defer Friday delivery. Actual Friday arrival/last placement time remains unknown; any independently established earlier practical cutoff controls. KickoffSaturday14:30CT is later. No prior issued limit/cutoff exists for this game.",
+  "execution_window": {
+    "start_utc": "2026-11-10T22:48:14.085478+00:00",
+    "end_utc": "2026-11-14T13:00:00Z"
+  }
+}
