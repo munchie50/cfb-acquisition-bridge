@@ -1,0 +1,3 @@
+# Manual Monitor continuation
+
+RUN_STARTED. User-directed continuation recovered4fe32f40f3f0db6ae9054ab8761814c6ed6929a2 and current v1.270; production v5 plus acceptedv5.1A/C andv5.2D/E/F. Prior67-game working input33PASS/34INCONCLUSIVE read from Git. New JaxState controlled-Beta immutable review003ba67f22cf6856abf9bff7537ee706e22a07ee read back, existing original59/8binding preserved. Scope: current source qualification and sole-Monitor canonical Week11 publication, independent readback/integration/selectedCI. Fullslate research and scheduledreliability remain separate open objectives. No task/cadence/money/Champion change.
