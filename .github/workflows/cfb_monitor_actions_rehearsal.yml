@@ -11,6 +11,7 @@ jobs:
     timeout-minutes: 10
     env:
       PYTHONPATH: scripts
+      FIXTURE_HEAD: 37d692d65b05632a376d31cdefbd3ec23ef5103e
     steps:
       - uses: actions/checkout@v4
         with:
@@ -20,7 +21,9 @@ jobs:
         run: |
           set -euo pipefail
           test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
-          python3 scripts/cfb_runtime_checkout.py --destination "$RUNNER_TEMP/verified-repo" --expected-head "$GITHUB_SHA" > "$RUNNER_TEMP/runtime.json"
+          git merge-base --is-ancestor "$FIXTURE_HEAD" "$GITHUB_SHA"
+          test "$(git hash-object scripts/cfb_runtime_checkout.py)" = "$(git rev-parse "$FIXTURE_HEAD:scripts/cfb_runtime_checkout.py")"
+          python3 scripts/cfb_runtime_checkout.py --destination "$RUNNER_TEMP/verified-repo" --expected-head "$FIXTURE_HEAD" > "$RUNNER_TEMP/runtime.json"
           python3 -c 'import json, sys; x = json.load(open(sys.argv[1])); print(x["status"], x["head"], len(x["immutable_reviews"]))' "$RUNNER_TEMP/runtime.json"
       - name: Execute Week 11 producer and reject invalid inputs
         working-directory: ${{ runner.temp }}/verified-repo
@@ -49,7 +52,7 @@ jobs:
           audit = gate.audit((output / 'sheet.md').read_text(), *args)
           if audit['games'] != 67:
               raise ValueError('unexpected Week 11 fixture population')
-          proof = {'scope': 'fixture only', 'head': os.environ['GITHUB_SHA'],
+          proof = {'scope': 'fixture only', 'head': os.environ['FIXTURE_HEAD'], 'workflow_head': os.environ['GITHUB_SHA'],
                    'games': audit['games'], 'sheet_blob': gate.blob(sheet)}
           (output / 'result.json').write_text(json.dumps(proof, indent=2))
           (output / 'runtime.json').write_bytes((output.parent / 'runtime.json').read_bytes())
