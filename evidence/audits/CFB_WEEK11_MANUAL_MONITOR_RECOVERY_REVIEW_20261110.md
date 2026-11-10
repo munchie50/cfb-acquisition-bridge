@@ -1,0 +1,32 @@
+# Week 11 manual Market Monitor recovery review — November 10 CT
+
+Prospective continuation of the 07:00 CT incomplete cycle. Morning closure 3d41cec5dfd43ea296462536ab5f496337fa6dd7. That cycle failed before checkout, fresh market research, current decision authoring, compiler execution, publication and selected CI.
+
+## Recovered boundaries
+
+- Full Work Mode Git checkout at 3d41cec5dfd43ea296462536ab5f496337fa6dd7 validated 51 immutable review references. Re-pinned at source-capture commit c00aa44401c8262f3ba280a74f8f78e878ed8d5b and verified all three existing Week 11 compiler regression tests pass. Fixture execution is separate from a live compilation.
+- CBS FBS source https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-11/ requested at 13:41:05.039 UTC and recovered by 13:41:09.682 UTC, HTTP 200, scrape 01a1c5b0-e0a9-70cb-a104-c6fee3312ea8. Saved table extract evidence/operational/CFB_WEEK11_CBS_FBS_TABLES_20261110T134109Z.md at blob 6b81d3c7afba98aa3e007e79e9f4ac87276da619, exact independent Git readback. The Week 11 normalizer matched 67 of 67 directed games and 134 team rows, all pregame at capture. These are mixed-book displays with opaque book icons, no consensus, operator update clock or venue quote inferred.
+- Original binding evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json at 3a337e8bdf5cd732fb76697cf2a87b2d74ba8ce9 retains 59 predictions, eight exclusions and 177 numeric strings. Weekly REFRESH is separate.
+
+## Tuesday decision review
+
+All three Tuesday games were checked against the fresh board, the DraftKings public splits benchmark and the official MAC preview. DraftKings prices below are public benchmark observations from the 6:29 a.m. ET board, with no per-offer timestamp or local venue confirmation. Tuesday is outside the established Friday placement window. Dispositions below are for this manual review and are prospective, without a canonical decision packet.
+
+- 401866458, Western Michigan at Akron, 6 p.m. CT. **No play this review.** Akron +14.5 -115 on CBS versus +14 -110 at DraftKings is the only spread side with enough original margin separation to revisit, but the official preview shows Akron 1–8 and 0–5 in conference, while WMU remains in MAC title contention. The frozen WMU -1.3 offers too little basis to estimate an outright Akron chance at +440 or justify the WMU -600 premium. The DraftKings 48.5 total is near the frozen 46.3 after allowing for uncertainty, and the CBS over and under are at different numbers. No total or derivative earned a limit.
+- 401866459, Kent State at Bowling Green, 6 p.m. CT. **No play this review.** Kent +5.5 costs -112 at DraftKings and no longer reaches the +6 in the earlier benchmark. Both teams are 2–3 in MAC play. The spread difference alone supports neither paying the extra juice on Kent nor laying beyond the original BGSU -3. Over 44.5 -108 is the better total to revisit against the original 48.2, but pace and current QB efficiency remain insufficiently corroborated. Under needs a separate slowdown case. Kent +180 and BGSU -218 did not earn independent outright-win support.
+- 401866460, Ohio at Miami (OH), 7 p.m. CT. **No play this review.** Ohio's 5–0 conference start and Miami's two season-ending QB injuries materially weaken the September Miami -9.2 / 57.8 baseline. Miami +1.5 and -102 lack support from a refreshed offense assessment. Ohio -1.5 and -118 reflect the reversal already and lack a demonstrated remaining price edge. Over and under at 46.5 both require a current scoring assessment centered on Caleb Heavner's offense; the original total gap is insufficient. No Tuesday parlay or supported derivative qualified.
+
+Sources: https://getsomemaction.com/news/2026/11/9/week-11-mac-football-preview.aspx ; https://wmubroncos.com/news/2026/11/9/football-opens-maction-on-the-road-at-akron-on-tuesday.aspx ; https://bgsufalcons.com/news/2026/11/5/football-lights-cameras-maction-falcons-return-home-tuesday-night-to-host-kent-state ; https://miamiredhawks.com/news/2026/11/6/football-redhawks-host-ohio-on-senior-night ; https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?itm_content=NCAA%20Football&tb_edate=n30days&tb_emt=0
+
+## Next windows
+
+- Wednesday 401866461, 401866462, 401866463: Official MAC kickoff clocks corroborated. Recheck Ball State +2.5 against Buffalo's four straight wins, Sacramento State +18.5 against Central Michigan's rebound and UMass +14.5 against Toledo's recent defensive performance. All three remain research priorities, with moneylines and totals requiring independent judgment.
+- Thursday 401862824, 401869969: Investigate the South Florida +4.5 and Memphis–USF total divergences with current team data. Louisiana–UL Monroe spread centers agree around Louisiana -10.5, so start with the 49.5 total and current offensive evidence.
+- Friday 401858293, 401858526, 401856860: Pittsburgh -3.5 warrants first review against the original -17.3, conditional on current personnel and practical access before the 6 p.m. CT kickoff. Illinois +10.5 and the UCLA total are separate follow-ups. Prior-game availability is historical and needs fresh corroboration. Houston -10.5 is close to the original -10.6 and provides little spread separation. Recheck the total and prices with current material. Kickoffs are 6:00, 8:00 and 9:15 p.m. CT. These are research priorities, with no certified limit or venue quote.
+- Saturday: All 56 directed rows have source coverage in the fresh extract. Material reviews and final decisions remain due for eligible games. Preserve the eight original exclusions across the full slate and quarantine conflicting display directions under the source adapter. Review the Friday/Saturday trip separately from midweek.
+
+Sources: https://www.cbssports.com/college-football/schedule/FBS/2026/regular/11/ ; https://fightingillini.com/news/2026/11/9/football-illinois-ucla-set-for-friday-night-matchup-at-the-rose-bowl ; https://uhcougars.com/sports/football/schedule/2026 ; https://gousfbulls.com/sports/football/schedule
+
+## Publication status
+
+The live compiler requires independently authored decisions for the full governed cohort. Source acquisition and Tuesday review do not supply the remaining decision packet. No canonical decision or market stream, Hot Sheet selector or selected CI was advanced. Refresh CBS within the 15-minute compilation limit after the decision inputs are ready. Preserve the original 07:00 CT closure separately.
