@@ -1,0 +1,22 @@
+# Market Monitor terminal candidate
+
+- correlation_id: scheduled-20261110-0700-ct-turn11
+- timestamp_utc: 2026-11-10T13:06:23.187Z
+- outcome: RUN_INCOMPLETE
+- startup: PASS; receipt CFB_MARKET_MONITOR_TRACE_20261110T130523534Z_scheduled-20261110-0700-ct-turn11.md blob 11eb36e70afe6f8eaa241a846d437eba164e0fb7
+- git_probe: FAILED; git ls-remote https://github.com/munchie50/cfb-acquisition-bridge.git refs/heads/main; exit 128; Could not resolve host: github.com; bounded 10 seconds
+- git_clone: NOT_ATTEMPTED, probe failed
+- authenticated_helper: connector fetch PASS, blob b13930cb714eb87c8dce6136ffab6fbceeb44898, structured base64 length 5124; verified historic tree byte count 3780; no binary writer handoff through same orchestration cell
+- direct_immutable_api: FAILED; curl https://api.github.com/repos/munchie50/cfb-acquisition-bridge/git/blobs/b13930cb714eb87c8dce6136ffab6fbceeb44898; exit 6; Could not resolve host: api.github.com
+- checkout_pin_ancestry: BLOCKED; no worktree, no helper execution
+- authority_recovery: PARTIAL PASS; Week11 handoff blob f37deb16080c8d31837ee479a5839b7d16ba18ce, screening blob 2800859d47dcfd91209120231b8f74ab6a458d47, original lineage blob 3a337e8bdf5cd732fb76697cf2a87b2d74ba8ce9, prediction pointer blob 7fe8df30d5b75d5ba57e8680d98265ba691f598b
+- independent_work_sweep: existing 67-game Nov9 display screening recovered; 59 original predictions and eight exclusions; Friday/Saturday remain review due. No fresh qualified source or accepted review established this invocation.
+- source_research: NOT_EXECUTED; priority was blocked compute and authority recovery; no current qualified source verified
+- current_week_compiler: BLOCKED by checkout and current qualified review/input requirements
+- publication: BLOCKED; previous accepted sheet unchanged; no current Week11 Hot Sheet claim
+- classifier_execution: NOT_RUN
+- failure_category: DNS_RESOLUTION for git probe and direct API transport; distinct downstream MISSING_INPUT for current accepted decision rows
+- fallback_attempted: connector authority recovery
+- fallback_result: partial verified reads, not computation
+- next_action: next existing scheduled invocation should first verify startup and actual git network; if available resume Week11 reviews with fresh qualified sources and original cutoffs; do not repeat stale accepted work.
+- no schedules, models, wagers or canonical publications changed.
