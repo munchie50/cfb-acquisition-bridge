@@ -1,0 +1,357 @@
+{
+  "schema": "CFB_EARLY_PRICE_REPLAY_AND_PROVENANCE_V1",
+  "input_head": "cee99a3a0f08fc8401b485f655a9aeafe28b784f",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_COMPLETED_WEEK5_BASELINE_20261025.json",
+      "sha": "15980c694fa75098104fd22f81d400e704db8d98"
+    },
+    {
+      "path": "evidence/CFB_QA_WEEK4_FULL_SLATE_MARKET_CONTROL_2026-09-27.md",
+      "sha": "5b97d7d2b20aae952a9d3bf63371260066434bb2"
+    },
+    {
+      "path": "evidence/CFB_QA_WEEK4_CONTROL_CHECK_2026-09-27.md",
+      "sha": "eef7fde8f5227bf0e825b66528db0d34d950c2d0"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_RUN_RECEIPT_2026-09-27_131316CT_SUNDAY_MARKET.md",
+      "sha": "808f8f04dce0f86f8deb6c556459db097a2d69c4"
+    }
+  ],
+  "market_state": {
+    "commit": "0bc32066ac39beeb470ea07a2f4cf3f610a498ac",
+    "blob": "e568d4ed143a977e676d1f0202b349b287f3c16c"
+  },
+  "week5_later_comparator_blob": "ecbbbc5e35cc94e40c8382f79f67f01a190094fa",
+  "week5": {
+    "observation": "2026-09-27 13:08 CT, minute-level historical observation",
+    "rows": [
+      {
+        "id": "401858475",
+        "book": "DraftKings",
+        "kick": "2026-10-03T15:00:00-05:00",
+        "spread": [
+          [
+            12.5,
+            -110
+          ],
+          null
+        ],
+        "ml": [
+          410,
+          null
+        ],
+        "total": [
+          [
+            52.5,
+            -110
+          ],
+          [
+            52.5,
+            -110
+          ]
+        ],
+        "source_line": "- Game 401858475 — Maryland at Nebraska, 2026-10-03 15:00 CT. ESPN/DraftKings: Maryland +12.5 (-110); total 52.5 (-110 each side shown); Maryland ML +410. Availability: executable market displayed. Champion FIRST_FROZEN: Nebraska by 10.5205; total 56.0116; Nebraska win 0.733503. Market-vs-Champion: market makes Nebraska a larger favorite than Champion by about 1.98 points; market total about 3.51 below Champion.",
+        "frozen_and_final": {
+          "game_id": "401858475",
+          "away_team": "Maryland",
+          "home_team": "Nebraska",
+          "pred_margin": 10.520501969798485,
+          "pred_total": 56.011601162645434,
+          "pred_home_win": 0.7335030658717283,
+          "actual_home_margin": 25,
+          "actual_total": 71,
+          "margin_error": 14.479498030201515,
+          "total_error": 14.988398837354566,
+          "margin_direction_correct": 1,
+          "home_win_outcome": 1,
+          "brier_component": 0.07102061589976838
+        }
+      },
+      {
+        "id": "401856707",
+        "book": "DraftKings",
+        "kick": "2026-10-03T11:00:00-05:00",
+        "spread": [
+          [
+            -5.5,
+            -110
+          ],
+          [
+            5.5,
+            -110
+          ]
+        ],
+        "ml": [
+          -218,
+          180
+        ],
+        "total_line": 59.5,
+        "total_unassigned_price": -110,
+        "source_line": "- Game 401856707 — Alabama at Mississippi State, 2026-10-03 11:00 CT. ESPN/DraftKings: Alabama -5.5 (-110), Mississippi State +5.5 (-110); total 59.5 (-110); Alabama ML -218, Mississippi State +180. Availability: executable market displayed. Champion FIRST_FROZEN: Mississippi State by 9.8652; total 60.0377; Mississippi State win 0.743319. Market-vs-Champion: major side disagreement; Champion favors Mississippi State outright while market favors Alabama by 5.5. Total nearly aligned.",
+        "frozen_and_final": {
+          "game_id": "401856707",
+          "away_team": "Alabama",
+          "home_team": "Mississippi State",
+          "pred_margin": 9.865156064596746,
+          "pred_total": 60.037746578134076,
+          "pred_home_win": 0.7433194642034139,
+          "actual_home_margin": -33,
+          "actual_total": 79,
+          "margin_error": -42.865156064596746,
+          "total_error": 18.962253421865924,
+          "margin_direction_correct": 0,
+          "home_win_outcome": 0,
+          "brier_component": 0.5525238258636503
+        }
+      },
+      {
+        "id": "401856705",
+        "book": "DraftKings",
+        "kick": "2026-10-03T11:45:00-05:00",
+        "spread": [
+          [
+            25.5,
+            -110
+          ],
+          [
+            -25.5,
+            -110
+          ]
+        ],
+        "ml": [
+          1700,
+          -4500
+        ],
+        "total_line": 53.5,
+        "total_unassigned_price": -110,
+        "source_line": "- Game 401856705 — Vanderbilt at Georgia, 2026-10-03 11:45 CT. ESPN/DraftKings: Vanderbilt +25.5 (-110), Georgia -25.5 (-110); total 53.5 (-110); Vanderbilt ML +1700, Georgia -4500. Availability: executable market displayed. Champion FIRST_FROZEN: Georgia by 24.5805; total 57.5598; Georgia win 0.922243. Market-vs-Champion: side near alignment; market total about 4.06 below Champion.",
+        "frozen_and_final": {
+          "game_id": "401856705",
+          "away_team": "Vanderbilt",
+          "home_team": "Georgia",
+          "pred_margin": 24.580532580436614,
+          "pred_total": 57.559802896476285,
+          "pred_home_win": 0.9222429508535277,
+          "actual_home_margin": 24,
+          "actual_total": 52,
+          "margin_error": -0.5805325804366142,
+          "total_error": -5.559802896476285,
+          "margin_direction_correct": 1,
+          "home_win_outcome": 1,
+          "brier_component": 0.0060461586919669085
+        }
+      },
+      {
+        "id": "401858473",
+        "book": "FanDuel",
+        "kick": "2026-10-03T14:30:00-05:00",
+        "spread": [
+          [
+            -14.5,
+            100
+          ],
+          [
+            14.5,
+            -122
+          ]
+        ],
+        "ml": [
+          -720,
+          500
+        ],
+        "total_line": 43.5,
+        "total_unassigned_price": -110,
+        "source_line": "- Game 401858473 — Ohio State at Iowa, 2026-10-03 14:30 CT. FanDuel: Ohio State -14.5 (+100), Iowa +14.5 (-122); total 43.5 (-110); Ohio State ML -720, Iowa +500. Availability: executable market displayed. Champion FIRST_FROZEN: Iowa by 6.2898; total 51.1058; Iowa win 0.593141. Market-vs-Champion: major side disagreement; Champion favors Iowa outright while market favors Ohio State by 14.5. Market total about 7.61 below Champion.",
+        "frozen_and_final": {
+          "game_id": "401858473",
+          "away_team": "Ohio State",
+          "home_team": "Iowa",
+          "pred_margin": 6.289813955569433,
+          "pred_total": 51.105813732935516,
+          "pred_home_win": 0.5931405891357918,
+          "actual_home_margin": -17,
+          "actual_total": 45,
+          "margin_error": -23.289813955569432,
+          "total_error": -6.105813732935516,
+          "margin_direction_correct": 0,
+          "home_win_outcome": 0,
+          "brier_component": 0.3518157584803542
+        }
+      }
+    ],
+    "tickets": [
+      {
+        "id": "401858475",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 52.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455,
+        "later_same_selection": {
+          "game_id": "401858475",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 52.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      },
+      {
+        "id": "401856707",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 5.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500,
+        "later_same_selection": {
+          "game_id": "401856707",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 5.5,
+          "price": -113,
+          "grade": "L",
+          "net_cents": -500
+        }
+      },
+      {
+        "id": "401856707",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 180,
+        "grade": "L",
+        "net_cents": -500,
+        "later_same_selection": {
+          "game_id": "401856707",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 177,
+          "grade": "L",
+          "net_cents": -500
+        }
+      },
+      {
+        "id": "401856705",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 25.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455,
+        "later_same_selection": {
+          "game_id": "401856705",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 25,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      },
+      {
+        "id": "401856705",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -4500,
+        "grade": "W",
+        "net_cents": 11,
+        "later_same_selection": {
+          "game_id": "401856705",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -5633,
+          "grade": "W",
+          "net_cents": 9
+        }
+      },
+      {
+        "id": "401858473",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 14.5,
+        "price": -122,
+        "grade": "L",
+        "net_cents": -500,
+        "later_same_selection": {
+          "game_id": "401858473",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 14.5,
+          "price": -117,
+          "grade": "L",
+          "net_cents": -500
+        }
+      },
+      {
+        "id": "401858473",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 500,
+        "grade": "L",
+        "net_cents": -500,
+        "later_same_selection": {
+          "game_id": "401858473",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 477,
+          "grade": "L",
+          "net_cents": -500
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "id": "401858475",
+        "market": "SPREAD",
+        "reason": "Missing usable side price or branch pair"
+      },
+      {
+        "id": "401858475",
+        "market": "ML",
+        "reason": "Missing usable side price or branch pair"
+      },
+      {
+        "id": "401856707",
+        "market": "TOTAL",
+        "reason": "Missing usable side price or branch pair"
+      },
+      {
+        "id": "401856705",
+        "market": "TOTAL",
+        "reason": "Missing usable side price or branch pair"
+      },
+      {
+        "id": "401858473",
+        "market": "TOTAL",
+        "reason": "Missing usable side price or branch pair"
+      }
+    ],
+    "summary": {
+      "n": 7,
+      "w": 3,
+      "l": 4,
+      "stake_cents": 3500,
+      "net_cents": -1079
+    }
+  },
+  "week4": {
+    "saturday_archived_side_diagnostic": 44,
+    "modeled_finals": 53,
+    "priced_opening_cohort_established": 0,
+    "reason": "Canonical state begins September 27 and explicitly disallows reconstructed earlier observations. The postgame-recovered CBS Week 4 betting-guide audit establishes 44 archived pregame spread comparators for directional QA. It does not establish synchronized opening quotes, individual price pairs or qualified closes."
+  },
+  "limitations": [
+    "The unchanged selection rule scored each available market independently at $5 hypothetical. Three totals listed a single price without explicit attribution to the selected side and were withheld. Maryland’s missing opposing spread prevents comparing both projected cover margins and the selected home ML lacks a price. No whole-board or combined-offer eligibility is implied.",
+    "The later Week 5 board is retained only as an overlap comparator; matching rows share results and are not additional independent observations."
+  ]
+}
