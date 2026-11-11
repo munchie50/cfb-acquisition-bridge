@@ -1,0 +1,27 @@
+{
+  "schema": "CFB_OFFLINE_BUNDLE_SCHEDULED_CLOSURE_V1",
+  "closed_utc": "2026-11-11 19:34:26 UTC",
+  "verdict": "OFFLINE_BUNDLE_CHECKOUT_PASS",
+  "issued_after_independent_exact_result_readback": true,
+  "result": {
+    "path": "evidence/scheduler_qa/CFB_BUNDLE_CHECKOUT_20261111193215Z_2h2my5_RESULT.json",
+    "blob": "8776a41d11c6c1c0dd4239f10ab11334db775a38",
+    "commit": "38dff8fd942ca74fa5dd2996b5c901cb2033161e",
+    "exact_readback": true
+  },
+  "startup": {
+    "path": "evidence/scheduler_qa/CFB_BUNDLE_CHECKOUT_20261111193215Z_2h2my5_STARTED.json",
+    "blob": "81f871d9da629e9f28f0b2235e82a91b75587190",
+    "commit": "e9bbaa2118009fefb47b917c2650709a199e7921",
+    "exact_readback": true
+  },
+  "artifact_id": 13862091095,
+  "workflow_run_id": 43032938219,
+  "first_failing_boundary": null,
+  "sanitized_error": null,
+  "proof": "Exact connector ZIP and sole bundle member size/SHA256; exact candidate helper Git blob before execution; one file-only checkout at authenticated historical fixture pin, full nonshallow history, original helper blob and 56 immutable reviews verified.",
+  "qualification": "Observed scheduled QA worker only. Production parity, current-main production bundle and production completion not established.",
+  "production_or_canonical_writes": "NONE",
+  "task_mutations": "NONE",
+  "lifecycle": "Normal one-time expiry"
+}
