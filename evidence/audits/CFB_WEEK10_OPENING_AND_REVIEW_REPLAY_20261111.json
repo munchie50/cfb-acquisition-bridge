@@ -1,0 +1,1595 @@
+{
+  "schema": "CFB_WEEK10_BOUNDED_EXPLORATORY_REPLAY_V1",
+  "pinned_head": "7a762c60d31ba017230ee2728e83e5a4cb56fe88",
+  "join": {
+    "path": "evidence/audits/CFB_WEEK10_TIMED_QUOTE_JOIN_20261111.json",
+    "blob": "ba103de23e25b16d9c869a52e1202c1c7b755417"
+  },
+  "scope": [
+    "Opening-board cohort requires original prediction, qualified final and retained evidence that fixed CBS capture precedes kickoff. Of 55 modeled games, 25 eligible and 30 excluded for unavailable qualified kickoff in this join, including two also unpriced on the fixed board. Eight original exclusions are outside the modeled denominator.",
+    "Reviewed quote cohort is the 18 immutable retained conditional decisions, evaluated at their own exact one-side quote pairs. All pass ID, market, side, price, line and pre-cutoff chronology checks. The quoted benchmarks are observed before the reviews; sportsbook update and executable venue prices remain unverified.",
+    "Both are distinct from the published ten and actual executions. The three opening markets share games. The 18 reviews are a selected cohort and differences mix selection, timing and price. Hypothetical graded P&L only."
+  ],
+  "review_sources": [
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_UMASS_POINTS_RECHECK_20261104T191608Z.json",
+      "blob": "14329717deeff1629d7b90f321a27cda4f1753ca"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_FAU_POINTS_CONDITIONAL_20261104T191819Z.json",
+      "blob": "1fe244d4fd1a54309caef592f2e295763f3df136"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_USM_POINTS_CONDITIONAL_20261105T010620Z.json",
+      "blob": "9625ef5a64219882ac5a47aef4999ead336acda9"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_ILLINOIS_POINTS_CONDITIONAL_20261105T010809Z.json",
+      "blob": "cdf4ccc860d4893136d1fffe801b46f750976a0f"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_WEEK10_401856855_CONDITIONAL_20261106T033219Z.json",
+      "blob": "22ae4afd519e011928c9b9fc92b3c372f57991cd"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_WEEK10_401856740_CONDITIONAL_20261105T013823Z.json",
+      "blob": "3e59d6dc899ab2fa3c760172d42626969edbd3ce"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_WEEK10_401856849_CONDITIONAL_20261105T013823Z.json",
+      "blob": "39719168738adabbd416638c3413d9e5a9fb42b9"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_WEEK10_401856851_CONDITIONAL_20261105T013823Z.json",
+      "blob": "74bc1140fac964789451078324c799a07ebccd4b"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_WEEK10_401856852_CONDITIONAL_20261105T013823Z.json",
+      "blob": "a5564026a631fbe5001f79895a1977a5a2a5eee7"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_WEEK10_401856853_CONDITIONAL_20261105T013823Z.json",
+      "blob": "d2448611ec3c5489477de74c9b3ad07cf4a7be25"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_WEEK10_401858512_CONDITIONAL_20261105T013823Z.json",
+      "blob": "fd55c3c471a90d9e22dc0659a2d9929c9b08b812"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_WEEK10_401862822_CONDITIONAL_20261105T013823Z.json",
+      "blob": "4f82649531fe88cd217e4074faed1a19c0daf54b"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_WEEK10_401869927_CONDITIONAL_20261105T013823Z.json",
+      "blob": "d02ef5bad84c4dad6d8fecfa407fd3cc4a83a855"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_WEEK10_401869968_CONDITIONAL_20261105T013823Z.json",
+      "blob": "8be01a07b8e5a6690fad00ab0f99ff80f205674f"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_WEEK10_401871076_CONDITIONAL_20261105T013823Z.json",
+      "blob": "05238b006814dd158fc09da70122c91c38708fd3"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_WEEK10_401871074_CONDITIONAL_20261105T013823Z.json",
+      "blob": "f99308b96c5bef4f8cd3bca84c4f13ae8e11ec25"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_WEEK10_401871075_CONDITIONAL_20261105T013823Z.json",
+      "blob": "49217a99e228714097ee90b858577416783c7e70"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_WEEK10_401864535_CONDITIONAL_20261105T013823Z.json",
+      "blob": "cbb054d12984835eb8232af4ae0237aceb2efc80"
+    }
+  ],
+  "rule": {
+    "spread": "Choose the side with the larger strictly positive projected cover margin. Home projection = pred_margin + home line. Away projection = -pred_margin + away line. Skip equal positive margins or no positive margin.",
+    "ml": "Choose home if frozen home win probability exceeds 0.5, away if below 0.5, and skip equality. No price or EV threshold.",
+    "total": "Choose the side with the larger strictly positive projected margin over its own line. Over = pred_total minus over line. Under = under line minus pred_total. Skip equal positive margins or no positive margin.",
+    "grading": "Flat hypothetical $5 per selection, score from qualified full-game finals, pushes refund. Round positive profits half up per ticket to cents. Zero selection yields zero net and undefined ROI. Fixed rule specified before this calculation on an already completed historical cohort, so exploratory only."
+  },
+  "opening": [
+    {
+      "game_id": "401866453",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 12.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401866453",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": 420,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401866453",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 48.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401866454",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -5.5,
+      "price": -115,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401866454",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -220,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401866454",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 44.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401866455",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -3.5,
+      "price": -115,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401866455",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -170,
+      "grade": "W",
+      "net_cents": 294
+    },
+    {
+      "game_id": "401866455",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 48.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401866456",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 1.5,
+      "price": -108,
+      "grade": "W",
+      "net_cents": 463
+    },
+    {
+      "game_id": "401866456",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -102,
+      "grade": "W",
+      "net_cents": 490
+    },
+    {
+      "game_id": "401866456",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 45.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401866457",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 27.5,
+      "price": -102,
+      "grade": "W",
+      "net_cents": 490
+    },
+    {
+      "game_id": "401866457",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -4545,
+      "grade": "W",
+      "net_cents": 11
+    },
+    {
+      "game_id": "401866457",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 51.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401862817",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 7.5,
+      "price": -118,
+      "grade": "W",
+      "net_cents": 424
+    },
+    {
+      "game_id": "401862817",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -225,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401862817",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 73.5,
+      "price": -118,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401869964",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 14.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401869964",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -599,
+      "grade": "W",
+      "net_cents": 83
+    },
+    {
+      "game_id": "401869964",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 55.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858288",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 6.5,
+      "price": -115,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858288",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": 176,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858288",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 55.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401862818",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": -1.5,
+      "price": -105,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401862818",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -111,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401862818",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 45.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858510",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 5.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401858510",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": 172,
+      "grade": "W",
+      "net_cents": 860
+    },
+    {
+      "game_id": "401858510",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 47.5,
+      "price": -115,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401864533",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 12.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401864533",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -455,
+      "grade": "W",
+      "net_cents": 110
+    },
+    {
+      "game_id": "401864533",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 43.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401856855",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 8.5,
+      "price": -105,
+      "grade": "W",
+      "net_cents": 476
+    },
+    {
+      "game_id": "401856855",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -300,
+      "grade": "W",
+      "net_cents": 167
+    },
+    {
+      "game_id": "401856855",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 44.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401856740",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 4.5,
+      "price": -115,
+      "grade": "W",
+      "net_cents": 435
+    },
+    {
+      "game_id": "401856740",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -175,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856740",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 52.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856849",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -5.5,
+      "price": -108,
+      "grade": "W",
+      "net_cents": 463
+    },
+    {
+      "game_id": "401856849",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -170,
+      "grade": "W",
+      "net_cents": 294
+    },
+    {
+      "game_id": "401856849",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 45.5,
+      "price": -105,
+      "grade": "W",
+      "net_cents": 476
+    },
+    {
+      "game_id": "401856851",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 10.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401856851",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -400,
+      "grade": "W",
+      "net_cents": 125
+    },
+    {
+      "game_id": "401856851",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 62.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401856852",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -3.5,
+      "price": -122,
+      "grade": "W",
+      "net_cents": 410
+    },
+    {
+      "game_id": "401856852",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -170,
+      "grade": "W",
+      "net_cents": 294
+    },
+    {
+      "game_id": "401856852",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 48.5,
+      "price": -114,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856853",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 9.5,
+      "price": -112,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856853",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -330,
+      "grade": "W",
+      "net_cents": 152
+    },
+    {
+      "game_id": "401856853",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 51.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858512",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 6.5,
+      "price": -102,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858512",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": 210,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858512",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 38.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401862822",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": -3,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401862822",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -142,
+      "grade": "W",
+      "net_cents": 352
+    },
+    {
+      "game_id": "401862822",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 48.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401869927",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -3.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401869927",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -162,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401869927",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 57.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401869968",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 5.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401869968",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -175,
+      "grade": "W",
+      "net_cents": 286
+    },
+    {
+      "game_id": "401869968",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 57.5,
+      "price": -102,
+      "grade": "W",
+      "net_cents": 490
+    },
+    {
+      "game_id": "401871076",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -1.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401871076",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -118,
+      "grade": "W",
+      "net_cents": 424
+    },
+    {
+      "game_id": "401871076",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 52.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401871074",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -5.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401871074",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -198,
+      "grade": "W",
+      "net_cents": 253
+    },
+    {
+      "game_id": "401871074",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 49.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401871075",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 14.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401871075",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": 455,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401871075",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 47.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401864535",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 8.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401864535",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": 230,
+      "grade": "W",
+      "net_cents": 1150
+    },
+    {
+      "game_id": "401864535",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 45.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    }
+  ],
+  "skips": [],
+  "later": [
+    {
+      "game_id": "401866455",
+      "review_blob": "14329717deeff1629d7b90f321a27cda4f1753ca",
+      "review_recorded_at": "2026-11-04T19:16:08Z",
+      "cutoff": "2026-11-04T23:00:00Z",
+      "kickoff": "2026-11-05T00:00:00Z",
+      "quote": {
+        "game_id": "401866455",
+        "market": "SPREAD",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913151?outcomes=0HC86962570N250_1",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866455",
+        "retrieved_at": "2026-11-04T19:15:01.865490+00:00",
+        "offer_updated_at": null,
+        "line": -2.5,
+        "price": -115
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401866455",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -2.5,
+        "price": -115,
+        "grade": "L",
+        "net_cents": -500
+      }
+    },
+    {
+      "game_id": "401862817",
+      "review_blob": "1fe244d4fd1a54309caef592f2e295763f3df136",
+      "review_recorded_at": "2026-11-04T19:18:19Z",
+      "cutoff": "2026-11-05T19:00:00Z",
+      "kickoff": "2026-11-06T00:30:00Z",
+      "quote": {
+        "game_id": "401862817",
+        "market": "SPREAD",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913358?outcomes=0HC86962987P700_1",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862817",
+        "retrieved_at": "2026-11-04T19:15:01.869189+00:00",
+        "offer_updated_at": null,
+        "line": 7,
+        "price": -112
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401862817",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 7,
+        "price": -112,
+        "grade": "W",
+        "net_cents": 446
+      }
+    },
+    {
+      "game_id": "401869964",
+      "review_blob": "9625ef5a64219882ac5a47aef4999ead336acda9",
+      "review_recorded_at": "2026-11-05T01:06:20.115696+00:00",
+      "cutoff": "2026-11-05T19:00:00Z",
+      "kickoff": "2026-11-06T01:00:00Z",
+      "quote": {
+        "game_id": "401869964",
+        "market": "SPREAD",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913359?outcomes=0HC86962988P1450_1",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869964",
+        "retrieved_at": "2026-11-05T01:05:12.143073+00:00",
+        "offer_updated_at": null,
+        "line": 14.5,
+        "price": -112
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401869964",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 14.5,
+        "price": -112,
+        "grade": "L",
+        "net_cents": -500
+      }
+    },
+    {
+      "game_id": "401858510",
+      "review_blob": "cdf4ccc860d4893136d1fffe801b46f750976a0f",
+      "review_recorded_at": "2026-11-05T01:08:22.161316+00:00",
+      "cutoff": "2026-11-05T19:00:00Z",
+      "kickoff": "2026-11-07T01:00:00Z",
+      "quote": {
+        "game_id": "401858510",
+        "market": "SPREAD",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913367?outcomes=0HC86962999P450_1",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858510",
+        "retrieved_at": "2026-11-05T01:04:16.427186+00:00",
+        "offer_updated_at": null,
+        "line": 4.5,
+        "price": -108
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401858510",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 4.5,
+        "price": -108,
+        "grade": "W",
+        "net_cents": 463
+      }
+    },
+    {
+      "game_id": "401856855",
+      "review_blob": "22ae4afd519e011928c9b9fc92b3c372f57991cd",
+      "review_recorded_at": "2026-11-06T03:35:29.926334+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "kickoff": "2026-11-07T03:15:00Z",
+      "quote": {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 7.5,
+        "price": -112,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913380?outcomes=0HC86963030P750_3",
+        "game_id": "401856855",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856855",
+        "retrieved_at": "2026-11-06T03:33:08Z",
+        "offer_updated_at": null
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401856855",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 7.5,
+        "price": -112,
+        "grade": "W",
+        "net_cents": 446
+      }
+    },
+    {
+      "game_id": "401856740",
+      "review_blob": "3e59d6dc899ab2fa3c760172d42626969edbd3ce",
+      "review_recorded_at": "2026-11-05T01:38:23.555719+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "kickoff": "2026-11-07T20:30:00Z",
+      "quote": {
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -6,
+        "price": -110,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34226128?outcomes=0HC84998504N600_1",
+        "game_id": "401856740",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856740",
+        "retrieved_at": "2026-11-05T01:28:11.110836+00:00",
+        "offer_updated_at": null
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401856740",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -6,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      }
+    },
+    {
+      "game_id": "401856849",
+      "review_blob": "39719168738adabbd416638c3413d9e5a9fb42b9",
+      "review_recorded_at": "2026-11-05T01:38:23.551739+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "kickoff": "2026-11-07T17:00:00Z",
+      "quote": {
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -5.5,
+        "price": -105,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34226130?outcomes=0HC84998506N550_1",
+        "game_id": "401856849",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856849",
+        "retrieved_at": "2026-11-05T01:28:03.359279+00:00",
+        "offer_updated_at": null
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401856849",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -5.5,
+        "price": -105,
+        "grade": "W",
+        "net_cents": 476
+      }
+    },
+    {
+      "game_id": "401856851",
+      "review_blob": "74bc1140fac964789451078324c799a07ebccd4b",
+      "review_recorded_at": "2026-11-05T01:38:23.555957+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "kickoff": "2026-11-07T20:30:00Z",
+      "quote": {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 10.5,
+        "price": -108,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913455?outcomes=0HC86963191P1050_3",
+        "game_id": "401856851",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856851",
+        "retrieved_at": "2026-11-05T01:28:11.158856+00:00",
+        "offer_updated_at": null
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401856851",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 10.5,
+        "price": -108,
+        "grade": "W",
+        "net_cents": 463
+      }
+    },
+    {
+      "game_id": "401856852",
+      "review_blob": "a5564026a631fbe5001f79895a1977a5a2a5eee7",
+      "review_recorded_at": "2026-11-05T01:38:23.559456+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "kickoff": "2026-11-08T00:30:00Z",
+      "quote": {
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -3,
+        "price": -118,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913609?outcomes=0HC86963473N300_1",
+        "game_id": "401856852",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856852",
+        "retrieved_at": "2026-11-05T01:28:17.766238+00:00",
+        "offer_updated_at": null
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401856852",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -3,
+        "price": -118,
+        "grade": "W",
+        "net_cents": 424
+      }
+    },
+    {
+      "game_id": "401856853",
+      "review_blob": "d2448611ec3c5489477de74c9b3ad07cf4a7be25",
+      "review_recorded_at": "2026-11-05T01:38:23.552996+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "kickoff": "2026-11-07T17:00:00Z",
+      "quote": {
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -10,
+        "price": -108,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913513?outcomes=0HC86963279N1000_1",
+        "game_id": "401856853",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856853",
+        "retrieved_at": "2026-11-05T01:28:03.367136+00:00",
+        "offer_updated_at": null
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401856853",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -10,
+        "price": -108,
+        "grade": "W",
+        "net_cents": 463
+      }
+    },
+    {
+      "game_id": "401858512",
+      "review_blob": "fd55c3c471a90d9e22dc0659a2d9929c9b08b812",
+      "review_recorded_at": "2026-11-05T01:38:23.554417+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "kickoff": "2026-11-07T17:00:00Z",
+      "quote": {
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 5.5,
+        "price": -110,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913431?outcomes=0HC86963153P550_1",
+        "game_id": "401858512",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858512",
+        "retrieved_at": "2026-11-05T01:28:03.364749+00:00",
+        "offer_updated_at": null
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401858512",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 5.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      }
+    },
+    {
+      "game_id": "401862822",
+      "review_blob": "4f82649531fe88cd217e4074faed1a19c0daf54b",
+      "review_recorded_at": "2026-11-05T01:38:23.555034+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "kickoff": "2026-11-07T17:00:00Z",
+      "quote": {
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 49.5,
+        "price": -112,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913603?outcomes=0OU86963467O4950_1",
+        "game_id": "401862822",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862822",
+        "retrieved_at": "2026-11-05T01:28:03.378810+00:00",
+        "offer_updated_at": null
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401862822",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 49.5,
+        "price": -112,
+        "grade": "W",
+        "net_cents": 446
+      }
+    },
+    {
+      "game_id": "401869927",
+      "review_blob": "d02ef5bad84c4dad6d8fecfa407fd3cc4a83a855",
+      "review_recorded_at": "2026-11-05T01:38:23.555364+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "kickoff": "2026-11-07T19:30:00Z",
+      "quote": {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 6,
+        "price": -112,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913392?outcomes=0HC86963058P600_3",
+        "game_id": "401869927",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869927",
+        "retrieved_at": "2026-11-05T01:28:06.783104+00:00",
+        "offer_updated_at": null
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401869927",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 6,
+        "price": -112,
+        "grade": "W",
+        "net_cents": 446
+      }
+    },
+    {
+      "game_id": "401869968",
+      "review_blob": "8be01a07b8e5a6690fad00ab0f99ff80f205674f",
+      "review_recorded_at": "2026-11-05T01:38:23.558937+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "kickoff": "2026-11-07T22:00:00Z",
+      "quote": {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 7.5,
+        "price": -110,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913546?outcomes=0HC86963339P750_3",
+        "game_id": "401869968",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869968",
+        "retrieved_at": "2026-11-05T01:28:17.773288+00:00",
+        "offer_updated_at": null
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401869968",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 7.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      }
+    },
+    {
+      "game_id": "401871076",
+      "review_blob": "05238b006814dd158fc09da70122c91c38708fd3",
+      "review_recorded_at": "2026-11-05T01:38:23.556170+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "kickoff": "2026-11-07T20:30:00Z",
+      "quote": {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": -1.5,
+        "price": -102,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913508?outcomes=0HC86963270N150_3",
+        "game_id": "401871076",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871076",
+        "retrieved_at": "2026-11-05T01:28:14.550862+00:00",
+        "offer_updated_at": null
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401871076",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": -1.5,
+        "price": -102,
+        "grade": "L",
+        "net_cents": -500
+      }
+    },
+    {
+      "game_id": "401871074",
+      "review_blob": "f99308b96c5bef4f8cd3bca84c4f13ae8e11ec25",
+      "review_recorded_at": "2026-11-05T01:38:23.556479+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "kickoff": "2026-11-07T21:00:00Z",
+      "quote": {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 4.5,
+        "price": -108,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913529?outcomes=0HC86963311P450_3",
+        "game_id": "401871074",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871074",
+        "retrieved_at": "2026-11-05T01:28:14.746925+00:00",
+        "offer_updated_at": null
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401871074",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 4.5,
+        "price": -108,
+        "grade": "W",
+        "net_cents": 463
+      }
+    },
+    {
+      "game_id": "401871075",
+      "review_blob": "49217a99e228714097ee90b858577416783c7e70",
+      "review_recorded_at": "2026-11-05T01:38:23.559188+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "kickoff": "2026-11-08T00:00:00Z",
+      "quote": {
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 48.5,
+        "price": -118,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913601?outcomes=0OU86963461U4850_3",
+        "game_id": "401871075",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871075",
+        "retrieved_at": "2026-11-05T01:28:17.735798+00:00",
+        "offer_updated_at": null
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401871075",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 48.5,
+        "price": -118,
+        "grade": "L",
+        "net_cents": -500
+      }
+    },
+    {
+      "game_id": "401864535",
+      "review_blob": "cbb054d12984835eb8232af4ae0237aceb2efc80",
+      "review_recorded_at": "2026-11-05T01:38:23.559751+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "kickoff": "2026-11-08T03:30:00Z",
+      "quote": {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 6,
+        "price": -112,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34913639?outcomes=0HC86963547P600_3",
+        "game_id": "401864535",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864535",
+        "retrieved_at": "2026-11-05T01:28:25.219070+00:00",
+        "offer_updated_at": null
+      },
+      "chronology_pass": true,
+      "binding_pass": true,
+      "graded": {
+        "game_id": "401864535",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 6,
+        "price": -112,
+        "grade": "W",
+        "net_cents": 446
+      }
+    }
+  ],
+  "s": {
+    "opening": {
+      "SPREAD": {
+        "n": 25,
+        "w": 14,
+        "l": 11,
+        "p": 0,
+        "stake_cents": 12500,
+        "net_cents": 846,
+        "roi_pct": 6.768
+      },
+      "ML": {
+        "n": 25,
+        "w": 16,
+        "l": 9,
+        "p": 0,
+        "stake_cents": 12500,
+        "net_cents": 845,
+        "roi_pct": 6.76
+      },
+      "TOTAL": {
+        "n": 25,
+        "w": 11,
+        "l": 14,
+        "p": 0,
+        "stake_cents": 12500,
+        "net_cents": -1939,
+        "roi_pct": -15.512
+      },
+      "ALL": {
+        "n": 75,
+        "w": 41,
+        "l": 34,
+        "p": 0,
+        "stake_cents": 37500,
+        "net_cents": -248,
+        "roi_pct": -0.6613333333333333
+      }
+    },
+    "review": {
+      "SPREAD": {
+        "n": 16,
+        "w": 11,
+        "l": 5,
+        "p": 0,
+        "stake_cents": 8000,
+        "net_cents": 2491,
+        "roi_pct": 31.1375
+      },
+      "ML": {
+        "n": 0,
+        "w": 0,
+        "l": 0,
+        "p": 0,
+        "stake_cents": 0,
+        "net_cents": 0,
+        "roi_pct": null
+      },
+      "TOTAL": {
+        "n": 2,
+        "w": 1,
+        "l": 1,
+        "p": 0,
+        "stake_cents": 1000,
+        "net_cents": -54,
+        "roi_pct": -5.4
+      },
+      "ALL": {
+        "n": 18,
+        "w": 12,
+        "l": 6,
+        "p": 0,
+        "stake_cents": 9000,
+        "net_cents": 2437,
+        "roi_pct": 27.07777777777778
+      }
+    }
+  },
+  "matched": {
+    "same_side": 11,
+    "different_side": 7,
+    "rows": [
+      {
+        "game_id": "401866455",
+        "market": "SPREAD",
+        "opening_selection": "home",
+        "review_selection": "home",
+        "same_side": true,
+        "opening_grade": "L",
+        "review_grade": "L"
+      },
+      {
+        "game_id": "401862817",
+        "market": "SPREAD",
+        "opening_selection": "home",
+        "review_selection": "home",
+        "same_side": true,
+        "opening_grade": "W",
+        "review_grade": "W"
+      },
+      {
+        "game_id": "401869964",
+        "market": "SPREAD",
+        "opening_selection": "home",
+        "review_selection": "home",
+        "same_side": true,
+        "opening_grade": "L",
+        "review_grade": "L"
+      },
+      {
+        "game_id": "401858510",
+        "market": "SPREAD",
+        "opening_selection": "home",
+        "review_selection": "home",
+        "same_side": true,
+        "opening_grade": "W",
+        "review_grade": "W"
+      },
+      {
+        "game_id": "401856855",
+        "market": "SPREAD",
+        "opening_selection": "away",
+        "review_selection": "away",
+        "same_side": true,
+        "opening_grade": "W",
+        "review_grade": "W"
+      },
+      {
+        "game_id": "401856740",
+        "market": "SPREAD",
+        "opening_selection": "away",
+        "review_selection": "home",
+        "same_side": false,
+        "opening_grade": "W",
+        "review_grade": "L"
+      },
+      {
+        "game_id": "401856849",
+        "market": "SPREAD",
+        "opening_selection": "home",
+        "review_selection": "home",
+        "same_side": true,
+        "opening_grade": "W",
+        "review_grade": "W"
+      },
+      {
+        "game_id": "401856851",
+        "market": "SPREAD",
+        "opening_selection": "away",
+        "review_selection": "away",
+        "same_side": true,
+        "opening_grade": "W",
+        "review_grade": "W"
+      },
+      {
+        "game_id": "401856852",
+        "market": "SPREAD",
+        "opening_selection": "home",
+        "review_selection": "home",
+        "same_side": true,
+        "opening_grade": "W",
+        "review_grade": "W"
+      },
+      {
+        "game_id": "401856853",
+        "market": "SPREAD",
+        "opening_selection": "away",
+        "review_selection": "home",
+        "same_side": false,
+        "opening_grade": "L",
+        "review_grade": "W"
+      },
+      {
+        "game_id": "401858512",
+        "market": "SPREAD",
+        "opening_selection": "home",
+        "review_selection": "home",
+        "same_side": true,
+        "opening_grade": "L",
+        "review_grade": "L"
+      },
+      {
+        "game_id": "401862822",
+        "market": "TOTAL",
+        "opening_selection": "under",
+        "review_selection": "over",
+        "same_side": false,
+        "opening_grade": "L",
+        "review_grade": "W"
+      },
+      {
+        "game_id": "401869927",
+        "market": "SPREAD",
+        "opening_selection": "home",
+        "review_selection": "away",
+        "same_side": false,
+        "opening_grade": "L",
+        "review_grade": "W"
+      },
+      {
+        "game_id": "401869968",
+        "market": "SPREAD",
+        "opening_selection": "away",
+        "review_selection": "away",
+        "same_side": true,
+        "opening_grade": "W",
+        "review_grade": "W"
+      },
+      {
+        "game_id": "401871076",
+        "market": "SPREAD",
+        "opening_selection": "home",
+        "review_selection": "away",
+        "same_side": false,
+        "opening_grade": "W",
+        "review_grade": "L"
+      },
+      {
+        "game_id": "401871074",
+        "market": "SPREAD",
+        "opening_selection": "home",
+        "review_selection": "away",
+        "same_side": false,
+        "opening_grade": "L",
+        "review_grade": "W"
+      },
+      {
+        "game_id": "401871075",
+        "market": "TOTAL",
+        "opening_selection": "over",
+        "review_selection": "under",
+        "same_side": false,
+        "opening_grade": "W",
+        "review_grade": "L"
+      },
+      {
+        "game_id": "401864535",
+        "market": "SPREAD",
+        "opening_selection": "away",
+        "review_selection": "away",
+        "same_side": true,
+        "opening_grade": "W",
+        "review_grade": "W"
+      }
+    ]
+  }
+}
