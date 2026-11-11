@@ -1,0 +1,9 @@
+# Manual Market Monitor terminal candidate — 20261111T002726Z
+
+Terminal state:RUN_INCOMPLETE for fullreview. Bounded eight-case qualification/publication phase DEMONSTRATED and INDEPENDENTLY_RECONCILED. Current59PASS3INCONCLUSIVE5controlledBetaCONDITIONAL;3newPASS2newCONDITIONAL. No freshall67claim or automatic wager. NTqualitativepreference explicitly opposes originalUTSAfavorite;59originalpredictions8exclusions177numericstrings remainunchanged.
+
+Saved/readback current market9f8e7323f939c754f6d90304d5ec3a9958e1fbcb;decisiond67ecceea8d6201f589bca644dd88476c6492c91;sheet377c95dbb800e8596314bc8d1729c94aa4bd6ab1;indexv1.2745e7572c4dd03d1e61b54e764434e2cf6ed798af4. Fullsavedbytecomparisons,456pointerconsumerpreflight,67gamepresentation,immutable review and existing selectedCI42932595261/job130234760063SUCCESS at755be1642b9a05aa484216aa225d41ba4605e8d1. Source/review/Top10companion independentlyreadback. No later operationaldrift observed.
+
+Remaining:Pitt/FSU,Wake/SMU,Louisville/UNC currentpersonnel/margin reviews; expected officialreleasesTuesday19CTPitt,Wednesday20CTWake,Wednesday19CTLouisville require actualobservation. FridayNov13 07CTall-actionable price/personnel/weather revalidation before Fridayafternoon trip, including priorPASS/conditionals; SaturdayNov14 07CTmaximumreviewvalidity or earlier practicalcutoff controls. NaturalMonitor/Eveningreliability,Healthhistoricalcoverage,booksettlementOPEN. NativeQAworkflowACTIVE/defaultmainconfirmed but no schedule-eventrun observed; no dispatchproof or speculativefix.
+
+No scientific/Champion/task/cadence/wager/money effect. This candidate cannot certify its own persistence. Separate closure only after independent full candidate readback. Supporting audit:evidence/audits/CFB_WEEK11_PENDING8_PUBLICATION_20261111T002726Z_AUDIT.md.
