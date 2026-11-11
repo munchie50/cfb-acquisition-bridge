@@ -1,0 +1,11 @@
+# RUN_CLOSURE
+correlation_id: scheduled-11-20261111T190135Z
+status: RUN_INCOMPLETE
+startup_verified_blob: 7961558042f128bc06fb08e1a383d14e7f7ac858
+terminal_candidate_path: evidence/run_receipts/CFB_MARKET_MONITOR_TERMINAL_CANDIDATE_20261111T190135Z_scheduled-11.md
+terminal_candidate_blob: c9abae1842c6f6882d36627c0a2a2146d52c9b88
+terminal_candidate_readback: VERIFIED_AT_COMMIT_e6981dd2a71a1cbfa1793b0c805e149432eb4994
+first_blocker: ordinary Git ls-remote failed DNS github.com exit 128
+production_delivery: NOT_VERIFIED
+selected_sheet: UNCHANGED
+next_action: existing natural scheduled Monitor retries with fresh authenticated authority and transport; no added task
