@@ -1,0 +1,12 @@
+{
+  "request_id": "monitor-connector-handoff-20261110",
+  "request_commit": "763c4f486d48423ca4e682da03dd32e7d7beaa10",
+  "fixture_head": "37d692d65b05632a376d31cdefbd3ec23ef5103e",
+  "workflow_blob_verified": "3b4f4318c99c6e7b29b554b1c2024112c97c3f75",
+  "request_readback_blob": "35212991eec38e350ef824d72a65b20643ebbb2c",
+  "status": "ACTIONS_RUN_UNPROVED",
+  "last_proved_stage": "request committed and independently read back at exact commit",
+  "missing_evidence": "push-triggered Actions run ID and exact matching run checkout, immutable reviews, fixture tests, result.json/log",
+  "run_listing_limitation": "authenticated fetch_commit_workflow_runs filters pull_request only; returned empty; public API endpoint inaccessible",
+  "scope": "QA-only; no production changes"
+}
