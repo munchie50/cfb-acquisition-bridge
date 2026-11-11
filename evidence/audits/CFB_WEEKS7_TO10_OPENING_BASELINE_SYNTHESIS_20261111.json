@@ -1,0 +1,608 @@
+{
+  "schema": "CFB_OPENING_BASELINE_SYNTHESIS_V1",
+  "input_head": "e911d4542c02150524f09f541e77702e192034ea",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK6_OPENING_COVERAGE_AND_FRIDAY_REPLAY_20261111.json",
+      "sha": "55a6b5274f3f806acb155e07629cecc1a4837dc6"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK6_PRODUCER_AND_WEEK5_SATURDAY_REPLAY_20261111.json",
+      "sha": "ecbbbc5e35cc94e40c8382f79f67f01a190094fa"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK7_OPENING_BOARD_REPLAY_20261111.json",
+      "sha": "a19979dc708e2337f75cc85933f4893893e02c8f"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK8_WEEK9_OPENING_REPLAY_CONTINUATION_20261111.json",
+      "sha": "243da617787e24154c77a0953d6641eed1761d39"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK9_WEEK10_OPENING_BASELINE_COMPARISON_20261111.json",
+      "sha": "a48415c51c3892c69526df2d1fd0700918d96bd7"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_WEEK7_TUESDAY_SOURCE_READINESS_2026-10-12.json",
+      "sha": "7f6d913dc7afd192219db2bdc3be50f66976ae5d"
+    }
+  ],
+  "additions": [
+    {
+      "game_id": "401871067",
+      "kickoff": "2026-10-13T23:00:00Z",
+      "kickoff_source": "https://goblueraiders.com/sports/football/schedule/2026",
+      "tickets": [
+        {
+          "id": "401871067",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 1.5,
+          "price": -105,
+          "grade": "W",
+          "net_cents": 476
+        },
+        {
+          "id": "401871067",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 104,
+          "grade": "W",
+          "net_cents": 520
+        },
+        {
+          "id": "401871067",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 47.5,
+          "price": -106,
+          "grade": "W",
+          "net_cents": 472
+        }
+      ]
+    },
+    {
+      "game_id": "401871053",
+      "kickoff": "2026-10-14T00:00:00Z",
+      "kickoff_source": "https://jaxstatesports.com/sports/football/schedule/2026",
+      "tickets": [
+        {
+          "id": "401871053",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -3,
+          "price": -115,
+          "grade": "P",
+          "net_cents": 0
+        },
+        {
+          "id": "401871053",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -148,
+          "grade": "W",
+          "net_cents": 338
+        },
+        {
+          "id": "401871053",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 44.5,
+          "price": -106,
+          "grade": "W",
+          "net_cents": 472
+        }
+      ]
+    }
+  ],
+  "strict": [
+    {
+      "week": 7,
+      "modeled": 51,
+      "fully_priced": 30,
+      "games": 4,
+      "summary": {
+        "SPREAD": {
+          "n": 4,
+          "w": 2,
+          "l": 1,
+          "p": 1,
+          "stake_cents": 2000,
+          "net_cents": 452
+        },
+        "ML": {
+          "n": 4,
+          "w": 3,
+          "l": 1,
+          "p": 0,
+          "stake_cents": 2000,
+          "net_cents": 652
+        },
+        "TOTAL": {
+          "n": 4,
+          "w": 3,
+          "l": 1,
+          "p": 0,
+          "stake_cents": 2000,
+          "net_cents": 899
+        },
+        "ALL": {
+          "n": 12,
+          "w": 8,
+          "l": 3,
+          "p": 1,
+          "stake_cents": 6000,
+          "net_cents": 2003
+        }
+      }
+    },
+    {
+      "week": 8,
+      "modeled": 49,
+      "fully_priced": 31,
+      "games": 4,
+      "summary": {
+        "SPREAD": {
+          "n": 4,
+          "w": 2,
+          "l": 2,
+          "p": 0,
+          "stake_cents": 2000,
+          "net_cents": -73
+        },
+        "ML": {
+          "n": 4,
+          "w": 2,
+          "l": 2,
+          "p": 0,
+          "stake_cents": 2000,
+          "net_cents": 888
+        },
+        "TOTAL": {
+          "n": 4,
+          "w": 2,
+          "l": 2,
+          "p": 0,
+          "stake_cents": 2000,
+          "net_cents": -99
+        },
+        "ALL": {
+          "n": 12,
+          "w": 6,
+          "l": 6,
+          "p": 0,
+          "stake_cents": 6000,
+          "net_cents": 716
+        }
+      }
+    },
+    {
+      "week": 9,
+      "modeled": 45,
+      "fully_priced": 36,
+      "games": 31,
+      "summary": {
+        "SPREAD": {
+          "n": 31,
+          "w": 19,
+          "l": 11,
+          "p": 1,
+          "stake_cents": 15500,
+          "net_cents": 3168
+        },
+        "ML": {
+          "n": 31,
+          "w": 21,
+          "l": 10,
+          "p": 0,
+          "stake_cents": 15500,
+          "net_cents": 1715
+        },
+        "TOTAL": {
+          "n": 31,
+          "w": 13,
+          "l": 18,
+          "p": 0,
+          "stake_cents": 15500,
+          "net_cents": -3037
+        },
+        "ALL": {
+          "n": 93,
+          "w": 53,
+          "l": 39,
+          "p": 1,
+          "stake_cents": 46500,
+          "net_cents": 1846
+        }
+      }
+    },
+    {
+      "week": 10,
+      "modeled": 55,
+      "fully_priced": 53,
+      "games": 53,
+      "summary": {
+        "SPREAD": {
+          "n": 53,
+          "w": 27,
+          "l": 26,
+          "p": 0,
+          "stake_cents": 26500,
+          "net_cents": -860
+        },
+        "ML": {
+          "n": 53,
+          "w": 29,
+          "l": 24,
+          "p": 0,
+          "stake_cents": 26500,
+          "net_cents": -3502
+        },
+        "TOTAL": {
+          "n": 53,
+          "w": 25,
+          "l": 28,
+          "p": 0,
+          "stake_cents": 26500,
+          "net_cents": -2558
+        },
+        "ALL": {
+          "n": 159,
+          "w": 81,
+          "l": 78,
+          "p": 0,
+          "stake_cents": 79500,
+          "net_cents": -6920
+        }
+      }
+    }
+  ],
+  "pooled": {
+    "SPREAD": {
+      "n": 92,
+      "w": 50,
+      "l": 40,
+      "p": 2,
+      "stake_cents": 46000,
+      "net_cents": 2687
+    },
+    "ML": {
+      "n": 92,
+      "w": 55,
+      "l": 37,
+      "p": 0,
+      "stake_cents": 46000,
+      "net_cents": -247
+    },
+    "TOTAL": {
+      "n": 92,
+      "w": 43,
+      "l": 49,
+      "p": 0,
+      "stake_cents": 46000,
+      "net_cents": -4795
+    },
+    "ALL": {
+      "n": 276,
+      "w": 148,
+      "l": 126,
+      "p": 2,
+      "stake_cents": 138000,
+      "net_cents": -2355
+    }
+  },
+  "leave_one_out": [
+    {
+      "week_removed": 7,
+      "summary": {
+        "SPREAD": {
+          "n": 88,
+          "w": 48,
+          "l": 39,
+          "p": 1,
+          "stake_cents": 44000,
+          "net_cents": 2235
+        },
+        "ML": {
+          "n": 88,
+          "w": 52,
+          "l": 36,
+          "p": 0,
+          "stake_cents": 44000,
+          "net_cents": -899
+        },
+        "TOTAL": {
+          "n": 88,
+          "w": 40,
+          "l": 48,
+          "p": 0,
+          "stake_cents": 44000,
+          "net_cents": -5694
+        },
+        "ALL": {
+          "n": 264,
+          "w": 140,
+          "l": 123,
+          "p": 1,
+          "stake_cents": 132000,
+          "net_cents": -4358
+        }
+      }
+    },
+    {
+      "week_removed": 8,
+      "summary": {
+        "SPREAD": {
+          "n": 88,
+          "w": 48,
+          "l": 38,
+          "p": 2,
+          "stake_cents": 44000,
+          "net_cents": 2760
+        },
+        "ML": {
+          "n": 88,
+          "w": 53,
+          "l": 35,
+          "p": 0,
+          "stake_cents": 44000,
+          "net_cents": -1135
+        },
+        "TOTAL": {
+          "n": 88,
+          "w": 41,
+          "l": 47,
+          "p": 0,
+          "stake_cents": 44000,
+          "net_cents": -4696
+        },
+        "ALL": {
+          "n": 264,
+          "w": 142,
+          "l": 120,
+          "p": 2,
+          "stake_cents": 132000,
+          "net_cents": -3071
+        }
+      }
+    },
+    {
+      "week_removed": 9,
+      "summary": {
+        "SPREAD": {
+          "n": 61,
+          "w": 31,
+          "l": 29,
+          "p": 1,
+          "stake_cents": 30500,
+          "net_cents": -481
+        },
+        "ML": {
+          "n": 61,
+          "w": 34,
+          "l": 27,
+          "p": 0,
+          "stake_cents": 30500,
+          "net_cents": -1962
+        },
+        "TOTAL": {
+          "n": 61,
+          "w": 30,
+          "l": 31,
+          "p": 0,
+          "stake_cents": 30500,
+          "net_cents": -1758
+        },
+        "ALL": {
+          "n": 183,
+          "w": 95,
+          "l": 87,
+          "p": 1,
+          "stake_cents": 91500,
+          "net_cents": -4201
+        }
+      }
+    },
+    {
+      "week_removed": 10,
+      "summary": {
+        "SPREAD": {
+          "n": 39,
+          "w": 23,
+          "l": 14,
+          "p": 2,
+          "stake_cents": 19500,
+          "net_cents": 3547
+        },
+        "ML": {
+          "n": 39,
+          "w": 26,
+          "l": 13,
+          "p": 0,
+          "stake_cents": 19500,
+          "net_cents": 3255
+        },
+        "TOTAL": {
+          "n": 39,
+          "w": 18,
+          "l": 21,
+          "p": 0,
+          "stake_cents": 19500,
+          "net_cents": -2237
+        },
+        "ALL": {
+          "n": 117,
+          "w": 67,
+          "l": 48,
+          "p": 2,
+          "stake_cents": 58500,
+          "net_cents": 4565
+        }
+      }
+    }
+  ],
+  "sensitivity7and8": [
+    {
+      "week": 7,
+      "games": 30,
+      "summary": {
+        "SPREAD": {
+          "n": 30,
+          "w": 17,
+          "l": 12,
+          "p": 1,
+          "stake_cents": 15000,
+          "net_cents": 1865
+        },
+        "ML": {
+          "n": 30,
+          "w": 18,
+          "l": 12,
+          "p": 0,
+          "stake_cents": 15000,
+          "net_cents": 1985
+        },
+        "TOTAL": {
+          "n": 30,
+          "w": 17,
+          "l": 13,
+          "p": 0,
+          "stake_cents": 15000,
+          "net_cents": 1338
+        },
+        "ALL": {
+          "n": 90,
+          "w": 52,
+          "l": 37,
+          "p": 1,
+          "stake_cents": 45000,
+          "net_cents": 5188
+        }
+      }
+    },
+    {
+      "week": 8,
+      "games": 31,
+      "summary": {
+        "SPREAD": {
+          "n": 31,
+          "w": 16,
+          "l": 15,
+          "p": 0,
+          "stake_cents": 15500,
+          "net_cents": -329
+        },
+        "ML": {
+          "n": 31,
+          "w": 17,
+          "l": 14,
+          "p": 0,
+          "stake_cents": 15500,
+          "net_cents": -1396
+        },
+        "TOTAL": {
+          "n": 31,
+          "w": 18,
+          "l": 13,
+          "p": 0,
+          "stake_cents": 15500,
+          "net_cents": 1678
+        },
+        "ALL": {
+          "n": 93,
+          "w": 51,
+          "l": 42,
+          "p": 0,
+          "stake_cents": 46500,
+          "net_cents": -47
+        }
+      }
+    }
+  ],
+  "secondary": [
+    {
+      "week": 5,
+      "cohort": "Saturday board",
+      "summary": {
+        "SPREAD": {
+          "n": 44,
+          "w": 24,
+          "l": 19,
+          "p": 1,
+          "stake_cents": 22000,
+          "net_cents": 1269
+        },
+        "ML": {
+          "n": 44,
+          "w": 31,
+          "l": 13,
+          "p": 0,
+          "stake_cents": 22000,
+          "net_cents": 267
+        },
+        "TOTAL": {
+          "n": 44,
+          "w": 19,
+          "l": 25,
+          "p": 0,
+          "stake_cents": 22000,
+          "net_cents": -3929
+        },
+        "ALL": {
+          "n": 132,
+          "w": 74,
+          "l": 57,
+          "p": 1,
+          "stake_cents": 66000,
+          "net_cents": -2393
+        }
+      }
+    },
+    {
+      "week": 6,
+      "cohort": "Friday benchmark",
+      "summary": {
+        "SPREAD": {
+          "n": 5,
+          "w": 4,
+          "l": 1,
+          "p": 0,
+          "stake_cents": 2500,
+          "net_cents": 1331
+        },
+        "ML": {
+          "n": 5,
+          "w": 3,
+          "l": 2,
+          "p": 0,
+          "stake_cents": 2500,
+          "net_cents": 16
+        },
+        "TOTAL": {
+          "n": 5,
+          "w": 2,
+          "l": 3,
+          "p": 0,
+          "stake_cents": 2500,
+          "net_cents": -578
+        },
+        "ALL": {
+          "n": 15,
+          "w": 9,
+          "l": 6,
+          "p": 0,
+          "stake_cents": 7500,
+          "net_cents": 769
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Week 7 two added Tuesday kickoff clocks match the original board by game ID and UTC and are supported by contemporaneous official school schedules. No later quote was substituted. Week 7 and 8 each contribute four qualified games, with overlapping date-only cohorts kept separate.",
+    "Week 7 later review clocks were inspected and are not assumed independent of CBS on rows without separate source linkage. Week 8 and Week 9 denominators remain as last verified. Week 5 and Week 6 are differently timed source cohorts and excluded from the opening pool.",
+    "This pool is coverage-constrained and uneven. Three selections per game are dependent. Week 10 contributes 53/92 games. Leave-one-week-out is a sensitivity check, not held-out validation or evidence of a market-selection edge."
+  ],
+  "research_question": "Does the fixed opening-total rule underperform after verifying the remaining priced kickoff rows and applying the same rule to an untouched cohort? Report market coverage, quote price and over/under mix, paired same-game timing sensitivity and week-level effects before considering any change."
+}
