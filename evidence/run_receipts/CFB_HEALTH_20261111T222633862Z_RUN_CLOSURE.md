@@ -1,0 +1,16 @@
+# RUN_CLOSURE
+cycle_id: CFB_HEALTH_20261111T222633862Z
+status: RUN_INCOMPLETE
+coverage: COVERAGE_UNVERIFIED
+terminal_candidate_path: evidence/run_receipts/CFB_HEALTH_20261111T222633862Z_TERMINAL_CANDIDATE.md
+terminal_candidate_blob: e4d13cec1e8ad4ed0ac4493bb5a6620077886033
+terminal_candidate_independent_readback: PASS
+audit_path: evidence/scheduler_qa/CFB_HEALTH_20261111T222633862Z_AUDIT.md
+audit_blob: 301be665e5ff6fefd0167554e3c12a67d44fedc6
+audit_independent_readback: PASS
+first_error: api.github.com DNS resolution failure (independent REST integrity route)
+monitor_07CT: RUN_INCOMPLETE_VERIFIED
+monitor_13CT: RUN_INCOMPLETE_VERIFIED
+coverage_advanced: NO
+no_material_change: YES
+next_action: preserve four tasks; prospective Monitor Git DNS/transport repair; bounded historical evidence reconciliation
