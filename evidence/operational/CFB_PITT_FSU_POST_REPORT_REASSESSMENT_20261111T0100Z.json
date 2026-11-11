@@ -1,0 +1,89 @@
+{
+  "schema": "CFB_CURRENT_OFFICIAL_MATERIAL_REASSESSMENT_V1",
+  "observed_by_utc": "2026-11-11T01:02:18.879Z",
+  "game_id": "401858293",
+  "source": {
+    "url": "https://theacc.com/sports/2025/8/28/availability-reporting-football.aspx",
+    "scrape_id": "01a1c81f-64f8-745b-b5bf-1855296d3734",
+    "status": "INITIAL_REPORT",
+    "posted_label": "Tuesday November10 8:00pm ET",
+    "game": "FloridaState at Pittsburgh FridayNovember13 7:00pm ET",
+    "source_kind": "OFFICIAL_ACC_AVAILABILITY"
+  },
+  "material": {
+    "FloridaState": {
+      "OUT": [
+        "RB Samuel Singleton Jr.",
+        "RB Quintrevion Wisner",
+        "RB Ousmane Kromah",
+        "WR Duce Robinson",
+        "DB Quindarrius Jones",
+        "DB Karson Hobbs",
+        "OL Bradyn Welch-Joiner"
+      ],
+      "note": "Selected material rows, not exhaustive fullreport; other OUT/QUESTIONABLE/PROBABLE entries retained at official source. Do not infer an unlisted player is cleared."
+    },
+    "Pittsburgh": {
+      "OUT": [
+        "QB Mason Heintschel",
+        "TE Elijah Lagg",
+        "TE Max Hunt"
+      ],
+      "QUESTIONABLE": [
+        "RB Ja’Kyrian Turner",
+        "LB DeMarco Ward",
+        "DL Eliyt Nairne",
+        "DL Sean FitzSimmons"
+      ],
+      "note": "Selected material rows; other OUT entries remain official. Geriner/Ferguson usage is earlier official current context, not an inferred return."
+    }
+  },
+  "named_reference": {
+    "source_url": "https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?itm_content=NCAA+Football&tb_edate=n30days&tb_eg=87637&tb_page=1",
+    "scrape_id": "01a1c818-9b48-747c-937c-90636aeb6f2b",
+    "scope": "DRAFTKINGS_PUBLIC_AGGREGATE_TABLE;ALL_JURISDICTIONS_NOT_A_VENUE_OFFER",
+    "observation_clock": "Response retained earlier in samecontinuation; rawpageUpdated7:53PMET is page-level, not selection-offer update",
+    "spread_pairs": [
+      {
+        "selection": "Pittsburgh",
+        "line": -3.5,
+        "price": -108
+      },
+      {
+        "selection": "FloridaState",
+        "line": 3.5,
+        "price": -112
+      }
+    ],
+    "ml_pairs": [
+      {
+        "selection": "Pittsburgh",
+        "price": -170
+      },
+      {
+        "selection": "FloridaState",
+        "price": 142
+      }
+    ],
+    "total_pairs": [
+      {
+        "selection": "over",
+        "line": 53.5,
+        "price": -115
+      },
+      {
+        "selection": "under",
+        "line": 53.5,
+        "price": -105
+      }
+    ],
+    "offer_updated_at": null,
+    "venue_verified": false
+  },
+  "reassessment": {
+    "disposition": "PASS_RETAINED_THIS_BOUNDED_REVIEW",
+    "rationale": "FSU backfield attrition strengthens Pitt's run-front matchup, and defensive absences can help Pitt's passing. It does not independently settle a beyond-field-goal favorite margin with Pitt's current passing efficiency/penalties and its own personnel losses. Amari Thomas's prior winning-drive production and Daniels's mobility remain counterarguments, without inferring either is cleared. FSU points/ML have less backfield support yet Pitt margin/ML price remains unearned. The under faces weaker FSU backfield and Pitt QB continuity effects; over retains defensive/tempo routes. Neither total earns a limit from the report alone. Existing PASS remains appropriate at the retained pair; no new side/ML/total recommendation."
+  },
+  "scope": "Actual post-release current material reassessment using permitted official/book routes; no ESPNAPI, automatic renewal, canonical rewrite, new limit or placed wager",
+  "next": "Recheck updated official reports/material changes and actual paired prices at existing review opportunities, including Friday07CT before trip. Saved canonical decision timestamp remains unchanged; this evidence must be consumed before claiming a later fullreview."
+}
