@@ -1,0 +1,4656 @@
+{
+  "schema": "CFB_OPENING_REPLAY_CONTINUATION_V1",
+  "pinned_head": "72a18bec4863ae8d5e702af7fc0f68d67bedb16e",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK9_WEEK10_OPENING_BASELINE_COMPARISON_20261111.json",
+      "sha": "a48415c51c3892c69526df2d1fd0700918d96bd7"
+    },
+    {
+      "path": "evidence/operational/CFB_CBS_WEEK8_FULL_BOARD_CAPTURE_20261018T120200Z.json",
+      "sha": "2693d9cbd387e6e201d6fcd658a0a3bd30e7cf7a"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_WEEK8_ORIGINAL_ANCESTRY_RECOVERY_20261020.json",
+      "sha": "337a23b03a10617ff87d9ba8c1c224cd3ebe1d9c"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "sha": "851efb1dc33e6efb044a5c3bdbd358cf28216f2e"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK8_HOT_SHEET_2026-10-24_1310CT.md",
+      "sha": "affb3451505c77e2a3a528a74cd78e5f1db316e3"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK9_TUESDAY_PARTIAL_RESEARCH_2026-10-25.md",
+      "sha": "d194b7f4834e33bbdac0fa091705a8c00c4c8232"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK9_THURSDAY_SOURCE_ADDENDUM_20261026T235050Z.json",
+      "sha": "111f530d357d27705e21851330bd31dc60426b03"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-29_2008CT.md",
+      "sha": "f05173046e51ab9634d47b1be5fe90c2a5026c96"
+    }
+  ],
+  "original_artifact": {
+    "id": 10897612260,
+    "sha256": "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf"
+  },
+  "notes": [
+    "Week 9 reproduced all 78 prior tickets exactly. Added five modeled kickoff bindings: three from contemporaneous primary-school schedule evidence and two from unflagged canonical conditional kickoff displays that agree with the original CBS table. All five were fully priced on the fixed board. Five modeled kickoff gaps remain; Sam Houston at Missouri State retains a 7:00 versus 7:05 CT source difference.",
+    "Week 8 used the October 18 12:02Z fixed board. Exact original forecast strings were extracted after checking accepted ZIP SHA-256. All 49 modeled directed IDs joined to canonical finals and original board rows. The strict replay used five matching qualified saved kickoff clocks, of which four had six numeric price branches. The schedule-date sensitivity cohort requires the original target UTC date and the CBS display UTC date to agree, plus six numeric prices. It is exploratory and provides no independent exact kickoff verification. It overlaps the strict sample and must not be pooled with it.",
+    "All results use hypothetical $5 selections. Week 8 broader totals reversed the Week 9 and Week 10 direction, so the early apparent weakness is coverage-sensitive."
+  ],
+  "r9": {
+    "eligible": [
+      "401871071",
+      "401862812",
+      "401869963",
+      "401862813",
+      "401856844",
+      "401866451",
+      "401856733",
+      "401856735",
+      "401856736",
+      "401856737",
+      "401856843",
+      "401856845",
+      "401856846",
+      "401856847",
+      "401858278",
+      "401858279",
+      "401858281",
+      "401858282",
+      "401858283",
+      "401858284",
+      "401858502",
+      "401858503",
+      "401858504",
+      "401858506",
+      "401858508",
+      "401858509",
+      "401860924",
+      "401864529",
+      "401871097",
+      "401856734",
+      "401860908"
+    ],
+    "excluded": [
+      {
+        "id": "401871072",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401871058",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401871057",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401856842",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401856848",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401869846",
+        "priced": false,
+        "kickoff": "2026-10-31T22:30:00.000Z"
+      },
+      {
+        "id": "401871095",
+        "priced": false,
+        "kickoff": "2026-10-31T19:30:00.000Z"
+      },
+      {
+        "id": "401871096",
+        "priced": false,
+        "kickoff": "2026-10-31T17:00:00.000Z"
+      },
+      {
+        "id": "401866452",
+        "priced": false,
+        "kickoff": "2026-10-31T16:00:00.000Z"
+      },
+      {
+        "id": "401861966",
+        "priced": false,
+        "kickoff": "2026-10-31T19:00:00.000Z"
+      },
+      {
+        "id": "401860910",
+        "priced": false,
+        "kickoff": "2026-10-31T19:30:00.000Z"
+      },
+      {
+        "id": "401864531",
+        "priced": false,
+        "kickoff": "2026-10-31T19:30:00.000Z"
+      },
+      {
+        "id": "401860909",
+        "priced": false,
+        "kickoff": "2026-10-31T23:00:00.000Z"
+      },
+      {
+        "id": "401864530",
+        "priced": false,
+        "kickoff": "2026-11-01T02:30:00.000Z"
+      }
+    ],
+    "summary": {
+      "SPREAD": {
+        "n": 31,
+        "w": 19,
+        "l": 11,
+        "p": 1,
+        "stake_cents": 15500,
+        "net_cents": 3168
+      },
+      "ML": {
+        "n": 31,
+        "w": 21,
+        "l": 10,
+        "p": 0,
+        "stake_cents": 15500,
+        "net_cents": 1715
+      },
+      "TOTAL": {
+        "n": 31,
+        "w": 13,
+        "l": 18,
+        "p": 0,
+        "stake_cents": 15500,
+        "net_cents": -3037
+      },
+      "ALL": {
+        "n": 93,
+        "w": 53,
+        "l": 39,
+        "p": 1,
+        "stake_cents": 46500,
+        "net_cents": 1846
+      }
+    },
+    "tickets": [
+      {
+        "game_id": "401871071",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": -2,
+        "price": -111,
+        "grade": "W",
+        "net_cents": 450
+      },
+      {
+        "game_id": "401871071",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -126,
+        "grade": "W",
+        "net_cents": 397
+      },
+      {
+        "game_id": "401871071",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 59.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401862812",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 12.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401862812",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -450,
+        "grade": "W",
+        "net_cents": 111
+      },
+      {
+        "game_id": "401862812",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 71.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401869963",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -17.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401869963",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -800,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401869963",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 52.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401862813",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 13.5,
+        "price": -105,
+        "grade": "W",
+        "net_cents": 476
+      },
+      {
+        "game_id": "401862813",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -521,
+        "grade": "W",
+        "net_cents": 96
+      },
+      {
+        "game_id": "401862813",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 47.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401856844",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -2,
+        "price": -111,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856844",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -122,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856844",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 47.5,
+        "price": -118,
+        "grade": "W",
+        "net_cents": 424
+      },
+      {
+        "game_id": "401866451",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 11,
+        "price": -111,
+        "grade": "W",
+        "net_cents": 450
+      },
+      {
+        "game_id": "401866451",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 360,
+        "grade": "W",
+        "net_cents": 1800
+      },
+      {
+        "game_id": "401866451",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 46.5,
+        "price": -108,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856733",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": -9.5,
+        "price": -120,
+        "grade": "W",
+        "net_cents": 417
+      },
+      {
+        "game_id": "401856733",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -375,
+        "grade": "W",
+        "net_cents": 133
+      },
+      {
+        "game_id": "401856733",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 47.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856735",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 12.5,
+        "price": -108,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856735",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -455,
+        "grade": "W",
+        "net_cents": 110
+      },
+      {
+        "game_id": "401856735",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 55.5,
+        "price": -105,
+        "grade": "W",
+        "net_cents": 476
+      },
+      {
+        "game_id": "401856736",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 3.5,
+        "price": -105,
+        "grade": "W",
+        "net_cents": 476
+      },
+      {
+        "game_id": "401856736",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -170,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856736",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 44.5,
+        "price": -105,
+        "grade": "W",
+        "net_cents": 476
+      },
+      {
+        "game_id": "401856737",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 20.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856737",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -1351,
+        "grade": "W",
+        "net_cents": 37
+      },
+      {
+        "game_id": "401856737",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 50.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856843",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -14.5,
+        "price": -105,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856843",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -625,
+        "grade": "W",
+        "net_cents": 80
+      },
+      {
+        "game_id": "401856843",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 49.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856845",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -5.5,
+        "price": -106,
+        "grade": "W",
+        "net_cents": 472
+      },
+      {
+        "game_id": "401856845",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -200,
+        "grade": "W",
+        "net_cents": 250
+      },
+      {
+        "game_id": "401856845",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 49.5,
+        "price": -108,
+        "grade": "W",
+        "net_cents": 463
+      },
+      {
+        "game_id": "401856846",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": -3.5,
+        "price": -102,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856846",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -152,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856846",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 47.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401856847",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 9.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401856847",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 265,
+        "grade": "W",
+        "net_cents": 1325
+      },
+      {
+        "game_id": "401856847",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 57.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858278",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 10,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401858278",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -345,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858278",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 57.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401858279",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -7,
+        "price": -115,
+        "grade": "W",
+        "net_cents": 435
+      },
+      {
+        "game_id": "401858279",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -258,
+        "grade": "W",
+        "net_cents": 194
+      },
+      {
+        "game_id": "401858279",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 47.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858281",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -7,
+        "price": -111,
+        "grade": "W",
+        "net_cents": 450
+      },
+      {
+        "game_id": "401858281",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -270,
+        "grade": "W",
+        "net_cents": 185
+      },
+      {
+        "game_id": "401858281",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 52.5,
+        "price": -108,
+        "grade": "W",
+        "net_cents": 463
+      },
+      {
+        "game_id": "401858282",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 16.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401858282",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -800,
+        "grade": "W",
+        "net_cents": 63
+      },
+      {
+        "game_id": "401858282",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 51.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401858283",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -21.5,
+        "price": -105,
+        "grade": "W",
+        "net_cents": 476
+      },
+      {
+        "game_id": "401858283",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -1818,
+        "grade": "W",
+        "net_cents": 28
+      },
+      {
+        "game_id": "401858283",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 62.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858284",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 13.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858284",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": 440,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858284",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 49.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401858502",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -3.5,
+        "price": -105,
+        "grade": "W",
+        "net_cents": 476
+      },
+      {
+        "game_id": "401858502",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -155,
+        "grade": "W",
+        "net_cents": 323
+      },
+      {
+        "game_id": "401858502",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 37.5,
+        "price": -112,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858503",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 3,
+        "price": -110,
+        "grade": "P",
+        "net_cents": 0
+      },
+      {
+        "game_id": "401858503",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 120,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858503",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 50.5,
+        "price": -115,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858504",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -9.5,
+        "price": -105,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858504",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -325,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858504",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 49.5,
+        "price": -108,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858506",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -7.5,
+        "price": 100,
+        "grade": "W",
+        "net_cents": 500
+      },
+      {
+        "game_id": "401858506",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -280,
+        "grade": "W",
+        "net_cents": 179
+      },
+      {
+        "game_id": "401858506",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 51.5,
+        "price": -114,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858508",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 23.5,
+        "price": 100,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858508",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -2778,
+        "grade": "W",
+        "net_cents": 18
+      },
+      {
+        "game_id": "401858508",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 45.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858509",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 7,
+        "price": -115,
+        "grade": "W",
+        "net_cents": 435
+      },
+      {
+        "game_id": "401858509",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -245,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858509",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 50.5,
+        "price": -108,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401860924",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 7,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401860924",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 215,
+        "grade": "W",
+        "net_cents": 1075
+      },
+      {
+        "game_id": "401860924",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 57.5,
+        "price": -105,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401864529",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 14.5,
+        "price": -120,
+        "grade": "W",
+        "net_cents": 417
+      },
+      {
+        "game_id": "401864529",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -690,
+        "grade": "W",
+        "net_cents": 72
+      },
+      {
+        "game_id": "401864529",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 41.5,
+        "price": -105,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401871097",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 3.5,
+        "price": -108,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401871097",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 146,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401871097",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 56.5,
+        "price": -105,
+        "grade": "W",
+        "net_cents": 476
+      },
+      {
+        "game_id": "401856734",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -10,
+        "price": -108,
+        "grade": "W",
+        "net_cents": 463
+      },
+      {
+        "game_id": "401856734",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -410,
+        "grade": "W",
+        "net_cents": 122
+      },
+      {
+        "game_id": "401856734",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 55.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401860908",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -10.5,
+        "price": -108,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401860908",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -429,
+        "grade": "W",
+        "net_cents": 117
+      },
+      {
+        "game_id": "401860908",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 65.5,
+        "price": -114,
+        "grade": "L",
+        "net_cents": -500
+      }
+    ]
+  },
+  "r8": {
+    "eligible": [
+      "401864525",
+      "401856728",
+      "401856841",
+      "401856840"
+    ],
+    "excluded": [
+      {
+        "id": "401871069",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401871055",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401871092",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401871070",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401869845",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401862807",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401861965",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401858271",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401858272",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401866450",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401858274",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401862809",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401866476",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401866446",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401856834",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401858495",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401856727",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401858499",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401864526",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401856730",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401858497",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401856835",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401856731",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401858273",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401866448",
+        "priced": false,
+        "kickoff": "2026-10-24T19:30:00.000Z"
+      },
+      {
+        "id": "401866447",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401856839",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401866449",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401871094",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401871093",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401869967",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401864528",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401860907",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401860905",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401869935",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401856836",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401856729",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401858275",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401856732",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401860906",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401858500",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401856838",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401862811",
+        "priced": false,
+        "kickoff": null
+      },
+      {
+        "id": "401864527",
+        "priced": true,
+        "kickoff": null
+      },
+      {
+        "id": "401856837",
+        "priced": true,
+        "kickoff": null
+      }
+    ],
+    "summary": {
+      "SPREAD": {
+        "n": 4,
+        "w": 2,
+        "l": 2,
+        "p": 0,
+        "stake_cents": 2000,
+        "net_cents": -73
+      },
+      "ML": {
+        "n": 4,
+        "w": 2,
+        "l": 2,
+        "p": 0,
+        "stake_cents": 2000,
+        "net_cents": 888
+      },
+      "TOTAL": {
+        "n": 4,
+        "w": 2,
+        "l": 2,
+        "p": 0,
+        "stake_cents": 2000,
+        "net_cents": -99
+      },
+      "ALL": {
+        "n": 12,
+        "w": 6,
+        "l": 6,
+        "p": 0,
+        "stake_cents": 6000,
+        "net_cents": 716
+      }
+    },
+    "tickets": [
+      {
+        "game_id": "401864525",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": -7.5,
+        "price": -105,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401864525",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -300,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401864525",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 43.5,
+        "price": -118,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856728",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 6.5,
+        "price": -118,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856728",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -210,
+        "grade": "W",
+        "net_cents": 238
+      },
+      {
+        "game_id": "401856728",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 50.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401856841",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 6.5,
+        "price": -106,
+        "grade": "W",
+        "net_cents": 472
+      },
+      {
+        "game_id": "401856841",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -250,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856841",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 58.5,
+        "price": -112,
+        "grade": "W",
+        "net_cents": 446
+      },
+      {
+        "game_id": "401856840",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 11.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401856840",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 330,
+        "grade": "W",
+        "net_cents": 1650
+      },
+      {
+        "game_id": "401856840",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 56.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      }
+    ]
+  },
+  "r8date": {
+    "eligible": [
+      "401871069",
+      "401871055",
+      "401871092",
+      "401871070",
+      "401869845",
+      "401862807",
+      "401861965",
+      "401858271",
+      "401864525",
+      "401858272",
+      "401856728",
+      "401856841",
+      "401858274",
+      "401856840",
+      "401856727",
+      "401858499",
+      "401856730",
+      "401858497",
+      "401856835",
+      "401856731",
+      "401858273",
+      "401860907",
+      "401860905",
+      "401856729",
+      "401858275",
+      "401856732",
+      "401860906",
+      "401858500",
+      "401856838",
+      "401864527",
+      "401856837"
+    ],
+    "excluded": [
+      {
+        "id": "401866450",
+        "priced": false,
+        "kickoff": "2026-10-24T16:00:00.000Z"
+      },
+      {
+        "id": "401862809",
+        "priced": false,
+        "kickoff": "2026-10-24T16:00:00.000Z"
+      },
+      {
+        "id": "401866476",
+        "priced": false,
+        "kickoff": "2026-10-24T17:00:00.000Z"
+      },
+      {
+        "id": "401866446",
+        "priced": false,
+        "kickoff": "2026-10-24T17:00:00.000Z"
+      },
+      {
+        "id": "401856834",
+        "priced": false,
+        "kickoff": "2026-10-24T17:00:00.000Z"
+      },
+      {
+        "id": "401858495",
+        "priced": false,
+        "kickoff": "2026-10-24T19:00:00.000Z"
+      },
+      {
+        "id": "401864526",
+        "priced": false,
+        "kickoff": "2026-10-24T19:30:00.000Z"
+      },
+      {
+        "id": "401866448",
+        "priced": false,
+        "kickoff": "2026-10-24T19:30:00.000Z"
+      },
+      {
+        "id": "401866447",
+        "priced": false,
+        "kickoff": "2026-10-24T19:30:00.000Z"
+      },
+      {
+        "id": "401856839",
+        "priced": false,
+        "kickoff": "2026-10-24T19:00:00.000Z"
+      },
+      {
+        "id": "401866449",
+        "priced": false,
+        "kickoff": "2026-10-24T20:00:00.000Z"
+      },
+      {
+        "id": "401871094",
+        "priced": false,
+        "kickoff": "2026-10-24T20:00:00.000Z"
+      },
+      {
+        "id": "401871093",
+        "priced": false,
+        "kickoff": "2026-10-24T21:00:00.000Z"
+      },
+      {
+        "id": "401869967",
+        "priced": false,
+        "kickoff": "2026-10-24T21:00:00.000Z"
+      },
+      {
+        "id": "401864528",
+        "priced": false,
+        "kickoff": "2026-10-24T21:00:00.000Z"
+      },
+      {
+        "id": "401869935",
+        "priced": false,
+        "kickoff": "2026-10-24T23:00:00.000Z"
+      },
+      {
+        "id": "401856836",
+        "priced": false,
+        "kickoff": "2026-10-24T17:00:00.000Z"
+      },
+      {
+        "id": "401862811",
+        "priced": false,
+        "kickoff": null
+      }
+    ],
+    "summary": {
+      "SPREAD": {
+        "n": 31,
+        "w": 16,
+        "l": 15,
+        "p": 0,
+        "stake_cents": 15500,
+        "net_cents": -329
+      },
+      "ML": {
+        "n": 31,
+        "w": 17,
+        "l": 14,
+        "p": 0,
+        "stake_cents": 15500,
+        "net_cents": -1396
+      },
+      "TOTAL": {
+        "n": 31,
+        "w": 18,
+        "l": 13,
+        "p": 0,
+        "stake_cents": 15500,
+        "net_cents": 1678
+      },
+      "ALL": {
+        "n": 93,
+        "w": 51,
+        "l": 42,
+        "p": 0,
+        "stake_cents": 46500,
+        "net_cents": -47
+      }
+    },
+    "tickets": [
+      {
+        "game_id": "401871069",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -2.5,
+        "price": -120,
+        "grade": "W",
+        "net_cents": 417
+      },
+      {
+        "game_id": "401871069",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -140,
+        "grade": "W",
+        "net_cents": 357
+      },
+      {
+        "game_id": "401871069",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 51.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401871055",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 10.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401871055",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -410,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401871055",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 45.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401871092",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": -2.5,
+        "price": -120,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401871092",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -154,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401871092",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 62.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401871070",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 2.5,
+        "price": 102,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401871070",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 125,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401871070",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 45.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401869845",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 10.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401869845",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -330,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401869845",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 58.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401862807",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -9.5,
+        "price": -115,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401862807",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -395,
+        "grade": "W",
+        "net_cents": 127
+      },
+      {
+        "game_id": "401862807",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 53.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401861965",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 16.5,
+        "price": -114,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401861965",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -800,
+        "grade": "W",
+        "net_cents": 63
+      },
+      {
+        "game_id": "401861965",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 47.5,
+        "price": -115,
+        "grade": "W",
+        "net_cents": 435
+      },
+      {
+        "game_id": "401858271",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -2.5,
+        "price": -105,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858271",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -125,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858271",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 48.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401864525",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": -7.5,
+        "price": -105,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401864525",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -300,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401864525",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 43.5,
+        "price": -118,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858272",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": -7.5,
+        "price": -105,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858272",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -278,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858272",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 56.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856728",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 6.5,
+        "price": -118,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856728",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -210,
+        "grade": "W",
+        "net_cents": 238
+      },
+      {
+        "game_id": "401856728",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 50.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401856841",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 6.5,
+        "price": -106,
+        "grade": "W",
+        "net_cents": 472
+      },
+      {
+        "game_id": "401856841",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -250,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856841",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 58.5,
+        "price": -112,
+        "grade": "W",
+        "net_cents": 446
+      },
+      {
+        "game_id": "401858274",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 23.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858274",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -2381,
+        "grade": "W",
+        "net_cents": 21
+      },
+      {
+        "game_id": "401858274",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 50.5,
+        "price": -106,
+        "grade": "W",
+        "net_cents": 472
+      },
+      {
+        "game_id": "401856840",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 11.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401856840",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 330,
+        "grade": "W",
+        "net_cents": 1650
+      },
+      {
+        "game_id": "401856840",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 56.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856727",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 15.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401856727",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -676,
+        "grade": "W",
+        "net_cents": 74
+      },
+      {
+        "game_id": "401856727",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 50.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401858499",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 13.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858499",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -535,
+        "grade": "W",
+        "net_cents": 93
+      },
+      {
+        "game_id": "401858499",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 47.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856730",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 2.5,
+        "price": -104,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856730",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 118,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856730",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 46.5,
+        "price": -115,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858497",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 5.5,
+        "price": -115,
+        "grade": "W",
+        "net_cents": 435
+      },
+      {
+        "game_id": "401858497",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -185,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858497",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 41.5,
+        "price": -105,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856835",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 7.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401856835",
+        "market": "ML",
+        "selection": "away",
+        "line": null,
+        "price": -295,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856835",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 45.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401856731",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 3,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401856731",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 130,
+        "grade": "W",
+        "net_cents": 650
+      },
+      {
+        "game_id": "401856731",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 51.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858273",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -4.5,
+        "price": -115,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858273",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -200,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858273",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 50.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401860907",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 15.5,
+        "price": -115,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401860907",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 550,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401860907",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 50.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401860905",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 2.5,
+        "price": -114,
+        "grade": "W",
+        "net_cents": 439
+      },
+      {
+        "game_id": "401860905",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 105,
+        "grade": "W",
+        "net_cents": 525
+      },
+      {
+        "game_id": "401860905",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 59.5,
+        "price": -115,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856729",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 11.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856729",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -450,
+        "grade": "W",
+        "net_cents": 111
+      },
+      {
+        "game_id": "401856729",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 51.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858275",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 9.5,
+        "price": -115,
+        "grade": "W",
+        "net_cents": 435
+      },
+      {
+        "game_id": "401858275",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -350,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401858275",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 44.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401856732",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -3,
+        "price": -115,
+        "grade": "W",
+        "net_cents": 435
+      },
+      {
+        "game_id": "401856732",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -146,
+        "grade": "W",
+        "net_cents": 342
+      },
+      {
+        "game_id": "401856732",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 55.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401860906",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 8.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401860906",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -345,
+        "grade": "W",
+        "net_cents": 145
+      },
+      {
+        "game_id": "401860906",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 59.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401858500",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": 2.5,
+        "price": -108,
+        "grade": "W",
+        "net_cents": 463
+      },
+      {
+        "game_id": "401858500",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": 114,
+        "grade": "W",
+        "net_cents": 570
+      },
+      {
+        "game_id": "401858500",
+        "market": "TOTAL",
+        "selection": "over",
+        "line": 49.5,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856838",
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 10,
+        "price": -110,
+        "grade": "L",
+        "net_cents": -500
+      },
+      {
+        "game_id": "401856838",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -395,
+        "grade": "W",
+        "net_cents": 127
+      },
+      {
+        "game_id": "401856838",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 50.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401864527",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -3.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401864527",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -166,
+        "grade": "W",
+        "net_cents": 301
+      },
+      {
+        "game_id": "401864527",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 47.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      },
+      {
+        "game_id": "401856837",
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -6.5,
+        "price": -115,
+        "grade": "W",
+        "net_cents": 435
+      },
+      {
+        "game_id": "401856837",
+        "market": "ML",
+        "selection": "home",
+        "line": null,
+        "price": -238,
+        "grade": "W",
+        "net_cents": 210
+      },
+      {
+        "game_id": "401856837",
+        "market": "TOTAL",
+        "selection": "under",
+        "line": 56.5,
+        "price": -110,
+        "grade": "W",
+        "net_cents": 455
+      }
+    ]
+  },
+  "rule": {
+    "spread": "Choose the side with the larger strictly positive projected cover margin. Home projection = pred_margin + home line. Away projection = -pred_margin + away line. Skip equal positive margins or no positive margin.",
+    "ml": "Choose home if frozen home win probability exceeds 0.5, away if below 0.5, and skip equality. No price or EV threshold.",
+    "total": "Choose the side with the larger strictly positive projected margin over its own line. Over = pred_total minus over line. Under = under line minus pred_total. Skip equal positive margins or no positive margin.",
+    "grading": "Flat hypothetical $5 per selection, score from qualified full-game finals, pushes refund. Round positive profits half up per ticket to cents. Zero selection yields zero net and undefined ROI. Fixed rule specified before this calculation on an already completed historical cohort, so exploratory only."
+  },
+  "week8_join": [
+    {
+      "game_id": "401871069",
+      "away": "Missouri State",
+      "home": "Delaware",
+      "source_game_id": "50029088",
+      "original": {
+        "pred_margin": "11.052087078052816",
+        "pred_total": "55.262825868315595",
+        "pred_win": "0.7677415229543094"
+      },
+      "final": {
+        "match": "Missouri State @ Delaware",
+        "away": 38,
+        "home": 61
+      },
+      "quote": {
+        "away_spread": {
+          "line": 3,
+          "price": -110
+        },
+        "away_ml": {
+          "line": null,
+          "price": 120
+        },
+        "over_total": {
+          "line": 51.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": -2.5,
+          "price": -120
+        },
+        "home_ml": {
+          "line": null,
+          "price": -140
+        },
+        "under_total": {
+          "line": 52.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-20T23:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401871055",
+      "away": "Middle Tennessee",
+      "home": "Florida International",
+      "source_game_id": "50028288",
+      "original": {
+        "pred_margin": "3.158469793327981",
+        "pred_total": "47.30549453365021",
+        "pred_win": "0.5069200438967745"
+      },
+      "final": {
+        "match": "Middle Tennessee @ Florida International",
+        "away": 26,
+        "home": 23
+      },
+      "quote": {
+        "away_spread": {
+          "line": 10.5,
+          "price": -110
+        },
+        "away_ml": {
+          "line": null,
+          "price": 340
+        },
+        "over_total": {
+          "line": 45.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": -9.5,
+          "price": -122
+        },
+        "home_ml": {
+          "line": null,
+          "price": -410
+        },
+        "under_total": {
+          "line": 45.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-20T23:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401871092",
+      "away": "South Alabama",
+      "home": "Marshall",
+      "source_game_id": "50028290",
+      "original": {
+        "pred_margin": "-4.406519075719454",
+        "pred_total": "50.173725413679996",
+        "pred_win": "0.41984747771781433"
+      },
+      "final": {
+        "match": "South Alabama @ Marshall",
+        "away": 13,
+        "home": 20
+      },
+      "quote": {
+        "away_spread": {
+          "line": -2.5,
+          "price": -120
+        },
+        "away_ml": {
+          "line": null,
+          "price": -154
+        },
+        "over_total": {
+          "line": 62.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": 3.5,
+          "price": -110
+        },
+        "home_ml": {
+          "line": null,
+          "price": 136
+        },
+        "under_total": {
+          "line": 62.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-20T23:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401871070",
+      "away": "New Mexico State",
+      "home": "Sam Houston",
+      "source_game_id": "50029090",
+      "original": {
+        "pred_margin": "13.845780696156837",
+        "pred_total": "53.826395576518905",
+        "pred_win": "0.7859887816218116"
+      },
+      "final": {
+        "match": "New Mexico State @ Sam Houston",
+        "away": 30,
+        "home": 24
+      },
+      "quote": {
+        "away_spread": {
+          "line": -2.5,
+          "price": -110
+        },
+        "away_ml": {
+          "line": null,
+          "price": -130
+        },
+        "over_total": {
+          "line": 45.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": 2.5,
+          "price": 102
+        },
+        "home_ml": {
+          "line": null,
+          "price": 125
+        },
+        "under_total": {
+          "line": 46.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-22T00:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401869845",
+      "away": "James Madison",
+      "home": "App State",
+      "source_game_id": "50028293",
+      "original": {
+        "pred_margin": "-3.633842641689051",
+        "pred_total": "52.54474155449564",
+        "pred_win": "0.4337423895739514"
+      },
+      "final": {
+        "match": "James Madison @ Appalachian State",
+        "away": 31,
+        "home": 34
+      },
+      "quote": {
+        "away_spread": {
+          "line": -9.5,
+          "price": -105
+        },
+        "away_ml": {
+          "line": null,
+          "price": -330
+        },
+        "over_total": {
+          "line": 57.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": 10.5,
+          "price": -110
+        },
+        "home_ml": {
+          "line": null,
+          "price": 330
+        },
+        "under_total": {
+          "line": 58.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-22T23:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401862807",
+      "away": "East Carolina",
+      "home": "Memphis",
+      "source_game_id": "50028294",
+      "original": {
+        "pred_margin": "15.642414344575881",
+        "pred_total": "55.455592760664764",
+        "pred_win": "0.8317838790550852"
+      },
+      "final": {
+        "match": "East Carolina @ Memphis",
+        "away": 34,
+        "home": 41
+      },
+      "quote": {
+        "away_spread": {
+          "line": 10.5,
+          "price": -118
+        },
+        "away_ml": {
+          "line": null,
+          "price": 320
+        },
+        "over_total": {
+          "line": 53.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": -9.5,
+          "price": -115
+        },
+        "home_ml": {
+          "line": null,
+          "price": -395
+        },
+        "under_total": {
+          "line": 53.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-22T23:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401861965",
+      "away": "Massachusetts",
+      "home": "UConn",
+      "source_game_id": "50028306",
+      "original": {
+        "pred_margin": "3.1515872225501327",
+        "pred_total": "52.33308349100785",
+        "pred_win": "0.5873704305907194"
+      },
+      "final": {
+        "match": "Massachusetts @ Connecticut",
+        "away": 16,
+        "home": 35
+      },
+      "quote": {
+        "away_spread": {
+          "line": 16.5,
+          "price": -114
+        },
+        "away_ml": {
+          "line": null,
+          "price": 550
+        },
+        "over_total": {
+          "line": 47.5,
+          "price": -115
+        },
+        "home_spread": {
+          "line": -16.5,
+          "price": -105
+        },
+        "home_ml": {
+          "line": null,
+          "price": -800
+        },
+        "under_total": {
+          "line": 47.5,
+          "price": -105
+        }
+      },
+      "display_kickoff_utc": "2026-10-23T23:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401858271",
+      "away": "Duke",
+      "home": "Virginia",
+      "source_game_id": "50028337",
+      "original": {
+        "pred_margin": "9.341087439784662",
+        "pred_total": "46.783453701623806",
+        "pred_win": "0.7447985895990173"
+      },
+      "final": {
+        "match": "Duke @ Virginia",
+        "away": 19,
+        "home": 16
+      },
+      "quote": {
+        "away_spread": {
+          "line": 2.5,
+          "price": -110
+        },
+        "away_ml": {
+          "line": null,
+          "price": 110
+        },
+        "over_total": {
+          "line": 48.5,
+          "price": -105
+        },
+        "home_spread": {
+          "line": -2.5,
+          "price": -105
+        },
+        "home_ml": {
+          "line": null,
+          "price": -125
+        },
+        "under_total": {
+          "line": 48.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-23T23:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401864525",
+      "away": "Air Force",
+      "home": "Wyoming",
+      "source_game_id": "50028383",
+      "original": {
+        "pred_margin": "-8.075476636011992",
+        "pred_total": "45.9729030505466",
+        "pred_win": "0.3431222488437303"
+      },
+      "final": {
+        "match": "Air Force @ Wyoming",
+        "away": 14,
+        "home": 28
+      },
+      "quote": {
+        "away_spread": {
+          "line": -7.5,
+          "price": -105
+        },
+        "away_ml": {
+          "line": null,
+          "price": -300
+        },
+        "over_total": {
+          "line": 43.5,
+          "price": -118
+        },
+        "home_spread": {
+          "line": 7.5,
+          "price": -110
+        },
+        "home_ml": {
+          "line": null,
+          "price": 245
+        },
+        "under_total": {
+          "line": 44.5,
+          "price": -105
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T01:00:00.000Z",
+      "kickoff": {
+        "utc": "2026-10-24T01:00:00.000Z",
+        "blob": "affb3451505c77e2a3a528a74cd78e5f1db316e3"
+      },
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401858272",
+      "away": "NC State",
+      "home": "Stanford",
+      "source_game_id": "50028389",
+      "original": {
+        "pred_margin": "-9.035325096486142",
+        "pred_total": "54.28178967654236",
+        "pred_win": "0.2713309132665429"
+      },
+      "final": {
+        "match": "NC State @ Stanford",
+        "away": 28,
+        "home": 31
+      },
+      "quote": {
+        "away_spread": {
+          "line": -7.5,
+          "price": -105
+        },
+        "away_ml": {
+          "line": null,
+          "price": -278
+        },
+        "over_total": {
+          "line": 55.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": 7.5,
+          "price": 100
+        },
+        "home_ml": {
+          "line": null,
+          "price": 270
+        },
+        "under_total": {
+          "line": 56.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T02:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401856728",
+      "away": "LSU",
+      "home": "Auburn",
+      "source_game_id": "50028343",
+      "original": {
+        "pred_margin": "-0.8711365042119377",
+        "pred_total": "56.18548095821134",
+        "pred_win": "0.48371023794902623"
+      },
+      "final": {
+        "match": "LSU @ Auburn",
+        "away": 38,
+        "home": 17
+      },
+      "quote": {
+        "away_spread": {
+          "line": -5.5,
+          "price": -110
+        },
+        "away_ml": {
+          "line": null,
+          "price": -210
+        },
+        "over_total": {
+          "line": 50.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": 6.5,
+          "price": -118
+        },
+        "home_ml": {
+          "line": null,
+          "price": 180
+        },
+        "under_total": {
+          "line": 51.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T16:00:00.000Z",
+      "kickoff": {
+        "utc": "2026-10-24T16:00:00.000Z",
+        "blob": "affb3451505c77e2a3a528a74cd78e5f1db316e3"
+      },
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401856841",
+      "away": "West Virginia",
+      "home": "TCU",
+      "source_game_id": "50028365",
+      "original": {
+        "pred_margin": "6.1592187984895945",
+        "pred_total": "52.990729677435546",
+        "pred_win": "0.7127324637683089"
+      },
+      "final": {
+        "match": "West Virginia @ TCU",
+        "away": 24,
+        "home": 20
+      },
+      "quote": {
+        "away_spread": {
+          "line": 6.5,
+          "price": -106
+        },
+        "away_ml": {
+          "line": null,
+          "price": 198
+        },
+        "over_total": {
+          "line": 58.5,
+          "price": -108
+        },
+        "home_spread": {
+          "line": -6.5,
+          "price": -114
+        },
+        "home_ml": {
+          "line": null,
+          "price": -250
+        },
+        "under_total": {
+          "line": 58.5,
+          "price": -112
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T16:00:00.000Z",
+      "kickoff": {
+        "utc": "2026-10-24T16:00:00.000Z",
+        "blob": "affb3451505c77e2a3a528a74cd78e5f1db316e3"
+      },
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401866450",
+      "away": "Western Michigan",
+      "home": "Toledo",
+      "source_game_id": "50028333",
+      "original": {
+        "pred_margin": "7.922921918780994",
+        "pred_total": "53.88188880969711",
+        "pred_win": "0.6906483382620578"
+      },
+      "final": {
+        "match": "Western Michigan @ Toledo",
+        "away": 38,
+        "home": 45
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T16:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401858274",
+      "away": "Pittsburgh",
+      "home": "Miami",
+      "source_game_id": "50028322",
+      "original": {
+        "pred_margin": "15.137422658347798",
+        "pred_total": "52.99305710225746",
+        "pred_win": "0.8297171098813314"
+      },
+      "final": {
+        "match": "Pittsburgh @ Miami",
+        "away": 23,
+        "home": 52
+      },
+      "quote": {
+        "away_spread": {
+          "line": 23.5,
+          "price": -110
+        },
+        "away_ml": {
+          "line": null,
+          "price": 1200
+        },
+        "over_total": {
+          "line": 50.5,
+          "price": -106
+        },
+        "home_spread": {
+          "line": -22.5,
+          "price": -114
+        },
+        "home_ml": {
+          "line": null,
+          "price": -2381
+        },
+        "under_total": {
+          "line": 51.5,
+          "price": -120
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T16:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401862809",
+      "away": "Rice",
+      "home": "Florida Atlantic",
+      "source_game_id": "50028312",
+      "original": {
+        "pred_margin": "-0.49640533693919153",
+        "pred_total": "49.32384044619648",
+        "pred_win": "0.5292034217497429"
+      },
+      "final": {
+        "match": "Rice @ Florida Atlantic",
+        "away": 49,
+        "home": 51
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T16:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401856840",
+      "away": "Texas Tech",
+      "home": "Cincinnati",
+      "source_game_id": "50028302",
+      "original": {
+        "pred_margin": "9.431036021168717",
+        "pred_total": "55.3414808392483",
+        "pred_win": "0.7194543001475886"
+      },
+      "final": {
+        "match": "Texas Tech @ Cincinnati",
+        "away": 24,
+        "home": 37
+      },
+      "quote": {
+        "away_spread": {
+          "line": -10.5,
+          "price": -110
+        },
+        "away_ml": {
+          "line": null,
+          "price": -426
+        },
+        "over_total": {
+          "line": 56.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": 11.5,
+          "price": -110
+        },
+        "home_ml": {
+          "line": null,
+          "price": 330
+        },
+        "under_total": {
+          "line": 56.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T16:00:00.000Z",
+      "kickoff": {
+        "utc": "2026-10-24T16:00:00.000Z",
+        "blob": "affb3451505c77e2a3a528a74cd78e5f1db316e3"
+      },
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401866476",
+      "away": "Miami (OH)",
+      "home": "Central Michigan",
+      "source_game_id": "50028301",
+      "original": {
+        "pred_margin": "1.319396204372365",
+        "pred_total": "47.727340921362234",
+        "pred_win": "0.5248792920137595"
+      },
+      "final": {
+        "match": "Miami (OH) @ Central Michigan",
+        "away": 28,
+        "home": 27
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T17:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401866446",
+      "away": "Akron",
+      "home": "Kent State",
+      "source_game_id": "50028317",
+      "original": {
+        "pred_margin": "-15.10896369903658",
+        "pred_total": "49.52143042313919",
+        "pred_win": "0.15681170808334385"
+      },
+      "final": {
+        "match": "Akron @ Kent State",
+        "away": 20,
+        "home": 35
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T17:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401856834",
+      "away": "Baylor",
+      "home": "Kansas",
+      "source_game_id": "50028349",
+      "original": {
+        "pred_margin": "0.00015294677993171746",
+        "pred_total": "48.482589474680644",
+        "pred_win": "0.4871823940151343"
+      },
+      "final": {
+        "match": "Baylor @ Kansas",
+        "away": 24,
+        "home": 25
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T17:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401858495",
+      "away": "Oregon",
+      "home": "Illinois",
+      "source_game_id": "50028347",
+      "original": {
+        "pred_margin": "4.53418381466772",
+        "pred_total": "59.10663468613125",
+        "pred_win": "0.659916993590125"
+      },
+      "final": {
+        "match": "Oregon @ Illinois",
+        "away": 10,
+        "home": 21
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T19:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401856727",
+      "away": "Texas A&M",
+      "home": "Alabama",
+      "source_game_id": "50028341",
+      "original": {
+        "pred_margin": "8.707796990791033",
+        "pred_total": "51.13146126724257",
+        "pred_win": "0.6722338620649371"
+      },
+      "final": {
+        "match": "Texas A&M @ Alabama",
+        "away": 20,
+        "home": 31
+      },
+      "quote": {
+        "away_spread": {
+          "line": 15.5,
+          "price": -110
+        },
+        "away_ml": {
+          "line": null,
+          "price": 520
+        },
+        "over_total": {
+          "line": 50.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": -15.5,
+          "price": -108
+        },
+        "home_ml": {
+          "line": null,
+          "price": -676
+        },
+        "under_total": {
+          "line": 51.5,
+          "price": -102
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T19:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401858499",
+      "away": "Michigan State",
+      "home": "UCLA",
+      "source_game_id": "50028391",
+      "original": {
+        "pred_margin": "11.215116612831169",
+        "pred_total": "51.49634363612604",
+        "pred_win": "0.7505999694785355"
+      },
+      "final": {
+        "match": "Michigan State @ UCLA",
+        "away": 10,
+        "home": 28
+      },
+      "quote": {
+        "away_spread": {
+          "line": 13.5,
+          "price": -110
+        },
+        "away_ml": {
+          "line": null,
+          "price": 400
+        },
+        "over_total": {
+          "line": 47.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": -13.5,
+          "price": -110
+        },
+        "home_ml": {
+          "line": null,
+          "price": -535
+        },
+        "under_total": {
+          "line": 47.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T19:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401864526",
+      "away": "Hawai'i",
+      "home": "Northern Illinois",
+      "source_game_id": "50028355",
+      "original": {
+        "pred_margin": "-3.59547446400116",
+        "pred_total": "48.59693311855972",
+        "pred_win": "0.3706396736739403"
+      },
+      "final": {
+        "match": "Hawai'i @ Northern Illinois",
+        "away": 56,
+        "home": 21
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T19:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401856730",
+      "away": "Oklahoma",
+      "home": "Mississippi State",
+      "source_game_id": "50028354",
+      "original": {
+        "pred_margin": "9.393299052345856",
+        "pred_total": "50.18050634021117",
+        "pred_win": "0.7118286128355338"
+      },
+      "final": {
+        "match": "Oklahoma @ Mississippi State",
+        "away": 23,
+        "home": 15
+      },
+      "quote": {
+        "away_spread": {
+          "line": -2.5,
+          "price": -118
+        },
+        "away_ml": {
+          "line": null,
+          "price": -142
+        },
+        "over_total": {
+          "line": 46.5,
+          "price": -115
+        },
+        "home_spread": {
+          "line": 2.5,
+          "price": -104
+        },
+        "home_ml": {
+          "line": null,
+          "price": 118
+        },
+        "under_total": {
+          "line": 46.5,
+          "price": -105
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T19:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401858497",
+      "away": "Iowa",
+      "home": "Minnesota",
+      "source_game_id": "50028353",
+      "original": {
+        "pred_margin": "-3.348685894223009",
+        "pred_total": "45.832614863241844",
+        "pred_win": "0.4156020387766438"
+      },
+      "final": {
+        "match": "Iowa @ Minnesota",
+        "away": 10,
+        "home": 13
+      },
+      "quote": {
+        "away_spread": {
+          "line": -5.5,
+          "price": -105
+        },
+        "away_ml": {
+          "line": null,
+          "price": -185
+        },
+        "over_total": {
+          "line": 41.5,
+          "price": -105
+        },
+        "home_spread": {
+          "line": 5.5,
+          "price": -115
+        },
+        "home_ml": {
+          "line": null,
+          "price": 154
+        },
+        "under_total": {
+          "line": 41.5,
+          "price": -115
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T19:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401856835",
+      "away": "BYU",
+      "home": "UCF",
+      "source_game_id": "50028334",
+      "original": {
+        "pred_margin": "-1.54853915270721",
+        "pred_total": "57.49378288237806",
+        "pred_win": "0.4632028626013713"
+      },
+      "final": {
+        "match": "BYU @ UCF",
+        "away": 31,
+        "home": 39
+      },
+      "quote": {
+        "away_spread": {
+          "line": -7.5,
+          "price": -102
+        },
+        "away_ml": {
+          "line": null,
+          "price": -295
+        },
+        "over_total": {
+          "line": 45.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": 7.5,
+          "price": -110
+        },
+        "home_ml": {
+          "line": null,
+          "price": 250
+        },
+        "under_total": {
+          "line": 45.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T16:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401856731",
+      "away": "Tennessee",
+      "home": "South Carolina",
+      "source_game_id": "50028332",
+      "original": {
+        "pred_margin": "3.84068714904487",
+        "pred_total": "57.59336694348268",
+        "pred_win": "0.6022519615713626"
+      },
+      "final": {
+        "match": "Tennessee @ South Carolina",
+        "away": 24,
+        "home": 27
+      },
+      "quote": {
+        "away_spread": {
+          "line": -2.5,
+          "price": -114
+        },
+        "away_ml": {
+          "line": null,
+          "price": -132
+        },
+        "over_total": {
+          "line": 51.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": 3,
+          "price": -110
+        },
+        "home_ml": {
+          "line": null,
+          "price": 130
+        },
+        "under_total": {
+          "line": 52.5,
+          "price": -115
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T19:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401858273",
+      "away": "Boston College",
+      "home": "Georgia Tech",
+      "source_game_id": "50028314",
+      "original": {
+        "pred_margin": "6.5002464035985765",
+        "pred_total": "50.10521239606959",
+        "pred_win": "0.6633069899865586"
+      },
+      "final": {
+        "match": "Boston College @ Georgia Tech",
+        "away": 49,
+        "home": 27
+      },
+      "quote": {
+        "away_spread": {
+          "line": 4.5,
+          "price": -105
+        },
+        "away_ml": {
+          "line": null,
+          "price": 164
+        },
+        "over_total": {
+          "line": 50.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": -4.5,
+          "price": -115
+        },
+        "home_ml": {
+          "line": null,
+          "price": -200
+        },
+        "under_total": {
+          "line": 50.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T19:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401866448",
+      "away": "Bowling Green",
+      "home": "Buffalo",
+      "source_game_id": "50028299",
+      "original": {
+        "pred_margin": "10.828476423442087",
+        "pred_total": "48.45819732285142",
+        "pred_win": "0.7361592124071417"
+      },
+      "final": {
+        "match": "Bowling Green @ Buffalo",
+        "away": 24,
+        "home": 31
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T19:30:00.000Z",
+      "kickoff": {
+        "utc": "2026-10-24T19:30:00.000Z",
+        "blob": "affb3451505c77e2a3a528a74cd78e5f1db316e3"
+      },
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401866447",
+      "away": "Sacramento State",
+      "home": "Ball State",
+      "source_game_id": "50028296",
+      "original": {
+        "pred_margin": "-7.1440935889682216",
+        "pred_total": "49.611443023809684",
+        "pred_win": "0.3124479800484244"
+      },
+      "final": {
+        "match": "Sacramento State @ Ball State",
+        "away": 17,
+        "home": 34
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T19:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401856839",
+      "away": "Kansas State",
+      "home": "Arizona State",
+      "source_game_id": "50028385",
+      "original": {
+        "pred_margin": "-9.27384104640805",
+        "pred_total": "53.867722620873025",
+        "pred_win": "0.27463329224048943"
+      },
+      "final": {
+        "match": "Kansas State @ Arizona State",
+        "away": 17,
+        "home": 28
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T19:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401866449",
+      "away": "Eastern Michigan",
+      "home": "Ohio",
+      "source_game_id": "50028328",
+      "original": {
+        "pred_margin": "4.084405538229835",
+        "pred_total": "52.91422264934882",
+        "pred_win": "0.5792143678434468"
+      },
+      "final": {
+        "match": "Eastern Michigan @ Ohio",
+        "away": 20,
+        "home": 24
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T20:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401871094",
+      "away": "UL Monroe",
+      "home": "Troy",
+      "source_game_id": "50028369",
+      "original": {
+        "pred_margin": "16.994752924846946",
+        "pred_total": "51.347170302877494",
+        "pred_win": "0.8171784912144542"
+      },
+      "final": {
+        "match": "UL Monroe @ Troy",
+        "away": 21,
+        "home": 14
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T20:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401871093",
+      "away": "Old Dominion",
+      "home": "Louisiana Tech",
+      "source_game_id": "50028351",
+      "original": {
+        "pred_margin": "2.440864076361497",
+        "pred_total": "48.76474947876028",
+        "pred_win": "0.5632657667483524"
+      },
+      "final": {
+        "match": "Old Dominion @ Louisiana Tech",
+        "away": 0,
+        "home": 26
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T21:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401869967",
+      "away": "Louisiana",
+      "home": "Southern Miss",
+      "source_game_id": "50028363",
+      "original": {
+        "pred_margin": "1.044246081350753",
+        "pred_total": "55.53782526070203",
+        "pred_win": "0.5449067315357353"
+      },
+      "final": {
+        "match": "Louisiana @ Southern Miss",
+        "away": 31,
+        "home": 35
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T21:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401864528",
+      "away": "San José State",
+      "home": "Nevada",
+      "source_game_id": "50028388",
+      "original": {
+        "pred_margin": "7.802399745703202",
+        "pred_total": "51.572702031246145",
+        "pred_win": "0.6832338904029684"
+      },
+      "final": {
+        "match": "San José State @ Nevada",
+        "away": 13,
+        "home": 28
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T21:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401860907",
+      "away": "Boise State",
+      "home": "Washington State",
+      "source_game_id": "50028392",
+      "original": {
+        "pred_margin": "-0.3728364799523932",
+        "pred_total": "47.38979246427261",
+        "pred_win": "0.5162056508900937"
+      },
+      "final": {
+        "match": "Boise State @ Washington State",
+        "away": 31,
+        "home": 10
+      },
+      "quote": {
+        "away_spread": {
+          "line": -15.5,
+          "price": -105
+        },
+        "away_ml": {
+          "line": null,
+          "price": -820
+        },
+        "over_total": {
+          "line": 50.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": 15.5,
+          "price": -115
+        },
+        "home_ml": {
+          "line": null,
+          "price": 550
+        },
+        "under_total": {
+          "line": 50.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T22:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401860905",
+      "away": "San Diego State",
+      "home": "Colorado State",
+      "source_game_id": "50028377",
+      "original": {
+        "pred_margin": "7.646789995191985",
+        "pred_total": "57.1140468919476",
+        "pred_win": "0.6910630007810431"
+      },
+      "final": {
+        "match": "San Diego State @ Colorado State",
+        "away": 49,
+        "home": 56
+      },
+      "quote": {
+        "away_spread": {
+          "line": -2.5,
+          "price": -106
+        },
+        "away_ml": {
+          "line": null,
+          "price": -126
+        },
+        "over_total": {
+          "line": 59.5,
+          "price": -105
+        },
+        "home_spread": {
+          "line": 2.5,
+          "price": -114
+        },
+        "home_ml": {
+          "line": null,
+          "price": 105
+        },
+        "under_total": {
+          "line": 59.5,
+          "price": -115
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T22:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401869935",
+      "away": "Georgia State",
+      "home": "Arkansas State",
+      "source_game_id": "50028342",
+      "original": {
+        "pred_margin": "-3.4790490905812397",
+        "pred_total": "57.829093212155065",
+        "pred_win": "0.4394872790023098"
+      },
+      "final": {
+        "match": "Georgia State @ Arkansas State",
+        "away": 32,
+        "home": 38
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T23:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401856836",
+      "away": "Colorado",
+      "home": "Oklahoma State",
+      "source_game_id": "50028358",
+      "original": {
+        "pred_margin": "12.522669849250885",
+        "pred_total": "52.91032136982464",
+        "pred_win": "0.7687865613412421"
+      },
+      "final": {
+        "match": "Colorado @ Oklahoma State",
+        "away": 24,
+        "home": 57
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T17:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401856729",
+      "away": "Vanderbilt",
+      "home": "Kentucky",
+      "source_game_id": "50028318",
+      "original": {
+        "pred_margin": "3.718765407969158",
+        "pred_total": "52.30964710576842",
+        "pred_win": "0.5814646187223093"
+      },
+      "final": {
+        "match": "Vanderbilt @ Kentucky",
+        "away": 17,
+        "home": 34
+      },
+      "quote": {
+        "away_spread": {
+          "line": 11.5,
+          "price": -110
+        },
+        "away_ml": {
+          "line": null,
+          "price": 360
+        },
+        "over_total": {
+          "line": 51.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": -11.5,
+          "price": -106
+        },
+        "home_ml": {
+          "line": null,
+          "price": -450
+        },
+        "under_total": {
+          "line": 51.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T23:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401858275",
+      "away": "Syracuse",
+      "home": "North Carolina",
+      "source_game_id": "50028327",
+      "original": {
+        "pred_margin": "6.738316129674724",
+        "pred_total": "47.593183563846566",
+        "pred_win": "0.6571773542765398"
+      },
+      "final": {
+        "match": "Syracuse @ North Carolina",
+        "away": 31,
+        "home": 30
+      },
+      "quote": {
+        "away_spread": {
+          "line": 9.5,
+          "price": -115
+        },
+        "away_ml": {
+          "line": null,
+          "price": 275
+        },
+        "over_total": {
+          "line": 44.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": -9.5,
+          "price": -105
+        },
+        "home_ml": {
+          "line": null,
+          "price": -350
+        },
+        "under_total": {
+          "line": 44.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T23:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401856732",
+      "away": "Ole Miss",
+      "home": "Texas",
+      "source_game_id": "50028367",
+      "original": {
+        "pred_margin": "7.885313850744536",
+        "pred_total": "53.05461706582098",
+        "pred_win": "0.6774687289902716"
+      },
+      "final": {
+        "match": "Ole Miss @ Texas",
+        "away": 27,
+        "home": 34
+      },
+      "quote": {
+        "away_spread": {
+          "line": 3.5,
+          "price": -122
+        },
+        "away_ml": {
+          "line": null,
+          "price": 130
+        },
+        "over_total": {
+          "line": 53.5,
+          "price": -115
+        },
+        "home_spread": {
+          "line": -3,
+          "price": -115
+        },
+        "home_ml": {
+          "line": null,
+          "price": -146
+        },
+        "under_total": {
+          "line": 55.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T23:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401860906",
+      "away": "Utah State",
+      "home": "Texas State",
+      "source_game_id": "50028368",
+      "original": {
+        "pred_margin": "5.885268691037356",
+        "pred_total": "55.78149505100044",
+        "pred_win": "0.6240251895821233"
+      },
+      "final": {
+        "match": "Utah State @ Texas State",
+        "away": 17,
+        "home": 20
+      },
+      "quote": {
+        "away_spread": {
+          "line": 8.5,
+          "price": -110
+        },
+        "away_ml": {
+          "line": null,
+          "price": 270
+        },
+        "over_total": {
+          "line": 59.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": -8.5,
+          "price": -110
+        },
+        "home_ml": {
+          "line": null,
+          "price": -345
+        },
+        "under_total": {
+          "line": 59.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T23:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401858500",
+      "away": "USC",
+      "home": "Wisconsin",
+      "source_game_id": "50028374",
+      "original": {
+        "pred_margin": "0.3200162737463917",
+        "pred_total": "55.63997626676458",
+        "pred_win": "0.5081832618822972"
+      },
+      "final": {
+        "match": "USC @ Wisconsin",
+        "away": 7,
+        "home": 24
+      },
+      "quote": {
+        "away_spread": {
+          "line": -2.5,
+          "price": -110
+        },
+        "away_ml": {
+          "line": null,
+          "price": -130
+        },
+        "over_total": {
+          "line": 49.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": 2.5,
+          "price": -108
+        },
+        "home_ml": {
+          "line": null,
+          "price": 114
+        },
+        "under_total": {
+          "line": 50.5,
+          "price": 100
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T23:30:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401856838",
+      "away": "Iowa State",
+      "home": "Arizona",
+      "source_game_id": "50028384",
+      "original": {
+        "pred_margin": "5.1947606675107805",
+        "pred_total": "48.48828158158465",
+        "pred_win": "0.6467459943798374"
+      },
+      "final": {
+        "match": "Iowa State @ Arizona",
+        "away": 3,
+        "home": 39
+      },
+      "quote": {
+        "away_spread": {
+          "line": 10,
+          "price": -110
+        },
+        "away_ml": {
+          "line": null,
+          "price": 310
+        },
+        "over_total": {
+          "line": 50.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": -10,
+          "price": -110
+        },
+        "home_ml": {
+          "line": null,
+          "price": -395
+        },
+        "under_total": {
+          "line": 50.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T19:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401862811",
+      "away": "UTSA",
+      "home": "Tulane",
+      "source_game_id": "50028370",
+      "original": {
+        "pred_margin": "-1.0498972446349377",
+        "pred_total": "50.44985914681684",
+        "pred_win": "0.4249224156304389"
+      },
+      "final": {
+        "match": "UTSA @ Tulane",
+        "away": 42,
+        "home": 19
+      },
+      "quote": {
+        "away_spread": {
+          "line": null,
+          "price": null
+        },
+        "away_ml": {
+          "line": null,
+          "price": null
+        },
+        "over_total": {
+          "line": null,
+          "price": null
+        },
+        "home_spread": {
+          "line": null,
+          "price": null
+        },
+        "home_ml": {
+          "line": null,
+          "price": null
+        },
+        "under_total": {
+          "line": null,
+          "price": null
+        }
+      },
+      "display_kickoff_utc": "2026-10-25T00:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": false
+    },
+    {
+      "game_id": "401864527",
+      "away": "North Dakota State",
+      "home": "New Mexico",
+      "source_game_id": "50028381",
+      "original": {
+        "pred_margin": "6.534245324419096",
+        "pred_total": "41.49471702378732",
+        "pred_win": "0.660054767068486"
+      },
+      "final": {
+        "match": "North Dakota State @ New Mexico",
+        "away": 16,
+        "home": 21
+      },
+      "quote": {
+        "away_spread": {
+          "line": 4.5,
+          "price": -105
+        },
+        "away_ml": {
+          "line": null,
+          "price": 160
+        },
+        "over_total": {
+          "line": 46.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": -3.5,
+          "price": -110
+        },
+        "home_ml": {
+          "line": null,
+          "price": -166
+        },
+        "under_total": {
+          "line": 47.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-25T02:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    },
+    {
+      "game_id": "401856837",
+      "away": "Houston",
+      "home": "Utah",
+      "source_game_id": "50028382",
+      "original": {
+        "pred_margin": "9.66476316162209",
+        "pred_total": "55.60467979208094",
+        "pred_win": "0.7427070625807063"
+      },
+      "final": {
+        "match": "Houston @ Utah",
+        "away": 13,
+        "home": 21
+      },
+      "quote": {
+        "away_spread": {
+          "line": 6.5,
+          "price": -105
+        },
+        "away_ml": {
+          "line": null,
+          "price": 195
+        },
+        "over_total": {
+          "line": 56.5,
+          "price": -110
+        },
+        "home_spread": {
+          "line": -6.5,
+          "price": -115
+        },
+        "home_ml": {
+          "line": null,
+          "price": -238
+        },
+        "under_total": {
+          "line": 56.5,
+          "price": -110
+        }
+      },
+      "display_kickoff_utc": "2026-10-24T18:00:00.000Z",
+      "kickoff": null,
+      "original_schedule_date_matches": true
+    }
+  ],
+  "week9_new_kickoffs": {
+    "401858279": [
+      "2026-10-31T16:00:00Z",
+      "WEEK9_HOT_SHEET_2026-10-29_2008"
+    ],
+    "401858281": [
+      "2026-10-31T23:30:00Z",
+      "WEEK9_HOT_SHEET_2026-10-29_2008"
+    ],
+    "401862812": [
+      "2026-10-29T23:30:00Z",
+      "WEEK9_THURSDAY_SOURCE_ADDENDUM"
+    ],
+    "401869963": [
+      "2026-10-29T23:30:00Z",
+      "WEEK9_THURSDAY_SOURCE_ADDENDUM"
+    ],
+    "401871071": [
+      "2026-10-27T23:00:00Z",
+      "WEEK9_TUESDAY_PARTIAL"
+    ]
+  }
+}
