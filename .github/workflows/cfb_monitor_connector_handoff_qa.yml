@@ -2,9 +2,9 @@ name: CFB Monitor connector handoff QA
 on:
   push:
     branches: [qa/monitor-actions-rehearsal-20261110]
-    paths: [qa/monitor-connector-handoff-20261110.json]
+    paths: [qa/monitor-connector-readback-20261110.json]
 permissions:
-  contents: read
+  contents: write
 jobs:
   handoff:
     runs-on: ubuntu-latest
@@ -25,12 +25,12 @@ jobs:
           import os
           from pathlib import Path
 
-          request = json.loads(Path('qa/monitor-connector-handoff-20261110.json').read_text())
-          if request != {'request_id': 'monitor-connector-handoff-20261110', 'fixture_head': os.environ['FIXTURE_HEAD']}:
+          request = json.loads(Path('qa/monitor-connector-readback-20261110.json').read_text())
+          if request != {'request_id': 'monitor-connector-readback-20261110', 'fixture_head': os.environ['FIXTURE_HEAD']}:
               raise ValueError('Unexpected test request')
           print(json.dumps(request))
           PY
-          cp 'qa/monitor-connector-handoff-20261110.json' "$RUNNER_TEMP/scheduled-proof/request.json"
+          cp 'qa/monitor-connector-readback-20261110.json' "$RUNNER_TEMP/scheduled-proof/request.json"
       - uses: actions/checkout@v4
         with:
           ref: ${{ env.FIXTURE_HEAD }}
@@ -57,7 +57,7 @@ jobs:
           result = {'status': 'PASS_CONNECTOR_HANDOFF',
                     'event': os.environ['GITHUB_EVENT_NAME'],
                     'run_id': os.environ['GITHUB_RUN_ID'],
-                    'request_id': 'monitor-connector-handoff-20261110',
+                    'request_id': 'monitor-connector-readback-20261110',
                     'request_commit': os.environ['GITHUB_SHA'],
                     'pinned_head': os.environ['FIXTURE_HEAD'],
                     'completed_at': datetime.now(timezone.utc).isoformat(),
@@ -72,3 +72,15 @@ jobs:
           path: ${{ runner.temp }}/scheduled-proof/
           retention-days: 7
           if-no-files-found: error
+      - name: Publish QA result for connector readback
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = 'qa/monitor-actions-rehearsal-20261110'
+          receipt="$RUNNER_TEMP/scheduled-proof/result.json"
+          content="$(base64 -w0 "$receipt")"
+          gh api --method PUT "repos/$GITHUB_REPOSITORY/contents/qa/monitor-connector-readback-20261110-result.json" \
+            -f branch="$GITHUB_REF_NAME" \
+            -f message='Record isolated Market Monitor QA result' \
+            -f content="$content" --jq '.commit.sha'
