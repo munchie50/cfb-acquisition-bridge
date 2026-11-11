@@ -1,0 +1,63 @@
+# CFB Integrated Betting Intelligence — Governed Implementation Roadmap
+Version: PLAN v0.1 | Created: 2026-11-11 | Status: PLANNED / NOT BUILT / NOT PROMOTED
+Owner: CFB Engine established governance | Scope: 2026 learning and 2027 readiness
+Authority: This is a tracking/implementation plan only, NOT a new master contract, Champion change, betting rule, or production authorization.
+
+## North-star objective
+Use every authentic pregame game evaluation, archived odds/market quote, ranked recommendation, actual execution, and final result to discover, test and eventually promote evidence-supported betting advantages. Maximize reproducible net value and practical opportunity coverage while containing downside, avoiding overfitting, preserving user-facing straight-bet consistency, and maintaining reliable weekly delivery. No strategy guarantees profits.
+
+## Governing authority and anchors
+Follow current constitution/master spec/contracts and latest recoverable current-state/recovery frontier before every build/write. This plan is subordinate to them.
+- Existing weekly learning contract: evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_CONTRACT_v1_233.md (including November 11 confidence, season backfill, shared exposure and missed-opportunity additions).
+- Existing execution ledger: evidence/operational/CFB_EXECUTION_LEDGER.md (actual tickets only; no prediction/training contamination).
+- Existing season replay: evidence/audits/CFB_2026_SEASON_BETTING_REPLAY_BACKFILL_20261111.md (November 11 checkpoint; historical cohort and timing work remains incomplete).
+- Established production Champion/fallback v5.0 and accepted governed controls as determined by FRESH current authority (never infer from this plan alone).
+- Preserve the existing four production scheduled tasks; no new scheduled task is authorized by this plan. Reuse existing Sunday weekly QA/learning cycle.
+- Original frozen Champion predictions must remain unchanged; actual wager tickets are execution evidence, not model inputs. No hindsight odds/rank reconstruction.
+- Historical read-only simulation is not bookmaker execution evidence. Preserve provenance and qualifiers.
+
+## Design commitments (user-confirmed November 11)
+1. Whole-slate game-by-game examination, not merely tickets or Top 10: independently evaluate spread, moneyline and over/under where authentic original model/prospective decision and quoted market evidence exist.
+2. Two-track outputs sharing one evidence foundation: stable independently chosen Top 10 straight-bet recommendations; separate value-ranked parlay research with overlap permitted and explicitly measured. Do NOT automatically demote parlays to ranks 11–30, or automatically exclude ranks 1–10.
+3. Sliding-scale parlay matrix: confidence depth Top 10, 15, 20, 25, 30 crossed with 2, 3, 4, 5 legs (extend only on justified evidence). Mixed spreads/ML/totals allowed; no same-game multi-leg builder without qualified joint offer and specific authorization. Four-leg Top 30 is first research benchmark, not mandatory final output.
+4. For each valid time snapshot analyze candidate success probability, offered odds, payout, expected net return, loss probability, calibration error, correlation/dependence, shared-leg exposure, max drawdown, and opportunity count. High payout alone and high hit rate alone never qualify a strategy.
+5. Illustrative research: 10 distinct hypothetical parlays at $5 each ($50 risk) with observed hit count and gross/net payout. Do not force 10 picks/week. User also values meaningful high-payout two-leg tickets (e.g. $2 returning $20–$30 gross) IF plausibly positive-value; break-even joint probability must be computed at actual offered odds.
+6. Avoid runaway over-tightening: no automatic restriction of confidence window, markets, recommendation coverage or betting frequency. Track coverage and missed opportunities, foregone EV, delivery time, and operational burden alongside any projected ROI improvement. The best filter must beat unchanged baseline on comparable forward evidence and benefit/cost. No blind retrofitting.
+7. Autonomous READ-ONLY pattern discovery and hypothesis generation permitted within already authorized runs; promotion, model tuning, changed selection thresholds, changed betting risk rules, or production output modifications require explicit governed validation/approval.
+8. Keep proven pregame/published recommendations, published parlay builds, unrecommended but pre-event documented watch/PASS cases, actual tickets, and shadow simulations separate. Do not rewrite what was recommended. Preserve absent price/rank evidence as missing.
+9. Preserve operational reliability and 1–2 weekly execution-trip practical window; no added operational block, source gate, extra schedule or unnecessary maintenance load.
+10. Weekly learning should generate its own falsifiable, prioritized hypotheses (including what went RIGHT and missed opportunities), compare against alternatives, independently verify, and carry unresolved items to the existing learning ledger; do not create a competing hypothesis ledger.
+
+## Study methods and evidence boundaries
+- Rank only by authentic published frozen decision window; use a consistent prospective cutoff. Track frozen line vs decision quote vs execution quote vs qualified close separately, with UTC and source reference.
+- Grade game-by-game outcome using authentic final results, keeping market-specific definitions, pushes, voids, and payout rules.
+- Price evidence classes: VERIFIED_EXECUTABLE (proof of actual combined odds/offer in shared window), INDICATIVE_REPLAY (genuine synchronized pregame leg quotes but combination inferred), RESEARCH_ONLY (insufficient chronology/offer), EXCLUDED. No invented lines/odds, synthetic available offers or hindsight-selected winners.
+- For 30 distinct eligible legs, C(30,4)=27,405 theoretical four-leg combinations before qualification. If a game has alternative selections, do not put two selections from the same game in the same standard combination. Deduplicate and identify mutually related bets.
+- Evaluate joint probabilities with explicit independence benchmark plus correlation/model-error sensitivity; reject unsupported exact confidence claims. Track odds-to-probability implied thresholds and price drift.
+- Rank hypothetical portfolios using PREDECLARED selection policy, not selection after outcomes. Compare top-k 0 through 10 builds, flat theoretical $2 and $5 stakes, payout and portfolio net returns, overlap and adverse shared-loss scenarios. Use time-split historical discovery vs later prospective validation; avoid treating overlapping parlays as independent observations.
+- Baselines: existing straight Top 10, full eligible slate, existing archived parlays, no-parlay portfolio; compare like-for-like time windows, price availability, and sample coverage. Track net profit/ROI, expected value uncertainty, calibration/Brier where applicable, drawdown, CLV when qualified, coverage, timing, misses, and execution burden.
+- The objective is positive prospective risk-adjusted net value with usable coverage, not an arbitrary 70–80% four-leg hit promise or fixed number of picks. Small samples and confounded results are hypotheses, not proven edges.
+
+## Milestone tracker (must be updated with hard evidence, not optimistic colors)
+M0 — PLAN_PERSISTED: Create, read back and reference this roadmap; record exact commit/blob and future resume instruction. Acceptance: verified persisted text. Status: PENDING until independently read back.
+M1 — AUTHORITY_AND_DATA_INVENTORY: Pin current recovery/current-state, original weekly frozen outputs, quotes, actual published cards, result grades, execution ledger; inventory weeks and gaps by field, source revision and cutoff; resolve precedence without guessing. Acceptance: evidence manifest with true coverage and exact source IDs. Status: NOT_STARTED.
+M2 — SEASON_BASELINES: Extend the existing November 11 historical replay, source-grounded game/market performance and published vs missed opportunities; separate actual and shadow returns. Acceptance: reproducible populated week/market/rank rows with priced denominators, gaps and exact arithmetic. Status: NOT_STARTED.
+M3 — READ_ONLY_MATRIX_IMPLEMENTATION: Enumerate depth x legs x market combinations and freeze historical selections/quotes, shared exposure; compare payout eligibility. Acceptance: deterministic rerun, validity and missing-evidence tests, no production changes. Status: NOT_STARTED.
+M4 — DISCOVERY_AND_HYPOTHESIS_REVIEW: Study rank depth, leg count, price bands, mixed markets, probability calibration, edge/ROI, concentration, price timing, missed recommendations and opportunity loss; generate falsifiable hypotheses and negative controls. Acceptance: claims tied to counts and alternative explanations in existing weekly learning review. Status: NOT_STARTED.
+M5 — PROSPECTIVE_SHADOW_VALIDATION: Freeze selected methods BEFORE future kickoffs; evaluate later untouched games/weeks, no result-based edits. Acceptance: documented out-of-sample performance, stability, uncertainty, opportunity coverage and weekly repeatability. Status: NOT_STARTED.
+M6 — GOVERNED_PROMOTION_DECISION: Assess whether limited analytical/Hot Sheet improvements materially beat unchanged baseline without harming production reliability or losing valuable bets; explicit authorization and rollback. Acceptance: source/QA evidence + specific promotion approval, independent production readback and natural-cycle verification. Status: NOT_AUTHORIZED.
+M7 — SUSTAINED_OPERATION: Sunday learning outputs reproducibly consume data, retain lessons, show measured changes and watch opportunity coverage/operational burden. Acceptance: multiple natural scheduled cycles and independent readback with unchanged authorized governance. Status: NOT_STARTED.
+
+## Current starting evidence / established incomplete work (November 11)
+- Current replay checkpoint commit b8f4c69188f8df8197ff3808deca61c2e922f05c: actual wager census and Week 10 ranked replay, simulated historical cohorts and window reconciliation incomplete. Read exact file above before proceeding.
+- November 11 weekly learning contract already orders season backfill, confidence replay, shared exposure, missed opportunities, and one useful weekly diagnostic. Do not duplicate tasks.
+- Week 10 archived simulated three- and four-leg builds were overlapping; one win is not independent support. One actual three-leg ticket does not prove durable four-leg hit rate.
+- Existing market monitor stability and current user-facing recommendation delivery outrank discretionary research work.
+- No data inventory, completed four-leg Top30 historical matrix, candidate outcome statistics, or promotion has been established by this roadmap.
+
+## Recovery / anti-loss protocol
+On any future 'continue plan' or routine request: (1) read live current authority/recovery frontier and this plan; (2) re-read last verified evidence/checkpoints; (3) pick the highest-priority unaccepted milestone or narrowly useful independent subtask; (4) do smallest bounded work without altering production; (5) persist dated evidence and explicit resume point; (6) independently read back; (7) update THIS plan's milestone status only with a concrete evidence link/commit and next actionable step. Keep changes serialized where dependent and reconcile independent runner outputs. NEVER mark built as executed, verified, accepted, or production by implication. Preserve failed/negative attempts and supersession. If blocked, audit original records/logs selectively before asking user.
+Use the existing weekly learning review and recovery conventions, not a new monitoring task or parallel authority structure.
+
+## Decision log
+2026-11-11: User confirmed integrated plan and requested durable long-lived tracking. Scope approved for design and read-only research; production promotions NOT authorized. Top 30 four-leg research broadened into sliding-scale matrix, including all three market styles and protected Top 10.
