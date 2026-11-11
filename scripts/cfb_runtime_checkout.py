@@ -1,5 +1,6 @@
 """Prepare a real, pinned CFB Git worktree before research; never publish or write back."""
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -12,7 +13,7 @@ REQUIRED = ('cfb_week9_publication.py', 'cfb_hot_sheet_readiness.py',
             'cfb_neutral_publication_gate.py', 'cfb_recovery_consumer_preflight.py')
 
 
-def prepare(destination, expected_head):
+def prepare(destination, expected_head, *, bundle=None, bundle_sha256=None):
     if not re.fullmatch(r'[0-9a-f]{40}', expected_head):
         raise ValueError('exact connector-observed main commit required')
     destination = Path(destination).resolve()
@@ -22,11 +23,24 @@ def prepare(destination, expected_head):
     def git(*args):
         return subprocess.check_output(['git', *args], env=env, stderr=subprocess.PIPE,
                                        timeout=180).decode('utf-8').strip()
-    # A normal full clone preserves genuine commit/tree/blob ancestry. No graft,
-    # replacement object, forged commit, synthetic ref or validator patch is used.
-    git('clone', '--no-checkout', REPOSITORY, str(destination))
-    git('-C', str(destination), 'cat-file', '-e', expected_head + '^{commit}')
-    git('-C', str(destination), 'merge-base', '--is-ancestor', expected_head, 'origin/main')
+    if bundle is None:
+        if bundle_sha256 is not None:
+            raise ValueError('bundle SHA-256 requires a bundle')
+        git('clone', '--no-checkout', REPOSITORY, str(destination))
+        git('-C', str(destination), 'merge-base', '--is-ancestor', expected_head, 'origin/main')
+    else:
+        if not bundle_sha256 or not re.fullmatch(r'[0-9a-f]{64}', bundle_sha256):
+            raise ValueError('exact authenticated bundle SHA-256 required')
+        bundle = Path(bundle).resolve(strict=True)
+        with bundle.open('rb') as source:
+            digest = hashlib.file_digest(source, 'sha256').hexdigest()
+        if digest != bundle_sha256:
+            raise ValueError('bundle SHA-256 differs from connector authority')
+        heads = git('bundle', 'list-heads', str(bundle)).splitlines()
+        if not any(head.split()[0] == expected_head for head in heads):
+            raise ValueError('bundle does not advertise the authenticated engine pin')
+        git('-c', 'protocol.allow=never', '-c', 'protocol.file.allow=always',
+            'clone', '--no-checkout', str(bundle), str(destination))
     git('-C', str(destination), 'checkout', '--detach', expected_head)
     if git('-C', str(destination), 'rev-parse', 'HEAD') != expected_head:
         raise ValueError('checkout HEAD differs from connector authority')
@@ -63,9 +77,12 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--destination', type=Path, required=True)
     p.add_argument('--expected-head', required=True)
+    p.add_argument('--bundle', type=Path)
+    p.add_argument('--bundle-sha256')
     a = p.parse_args()
     try:
-        print(json.dumps(prepare(a.destination, a.expected_head), indent=2))
+        print(json.dumps(prepare(a.destination, a.expected_head,
+                                 bundle=a.bundle, bundle_sha256=a.bundle_sha256), indent=2))
     except (ValueError, OSError, subprocess.SubprocessError) as exc:
         print(json.dumps({'status': 'COMPUTATION_RUNTIME_UNAVAILABLE',
                           'error_type': type(exc).__name__,
