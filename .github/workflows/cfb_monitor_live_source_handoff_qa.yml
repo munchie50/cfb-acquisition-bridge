@@ -2,7 +2,7 @@ name: CFB Monitor live-source handoff QA
 on:
   push:
     branches: [qa/monitor-actions-rehearsal-20261110]
-    paths: [qa/monitor-live-source-readback-20261110-retry.json]
+    paths: [qa/monitor-live-source-readback-20261110-elapsed.json]
 permissions:
   contents: write
 jobs:
@@ -24,8 +24,8 @@ jobs:
           import os
           from pathlib import Path
 
-          request = json.loads(Path('qa/monitor-live-source-readback-20261110-retry.json').read_text())
-          if request != {'request_id': 'monitor-live-source-readback-20261110-retry', 'fixture_head': os.environ['FIXTURE_HEAD']}:
+          request = json.loads(Path('qa/monitor-live-source-readback-20261110-elapsed.json').read_text())
+          if request != {'request_id': 'monitor-live-source-readback-20261110-elapsed', 'fixture_head': os.environ['FIXTURE_HEAD']}:
               raise ValueError('Unexpected test request')
           PY
       - name: Verify pinned checkout and immutable reviews
@@ -119,11 +119,13 @@ jobs:
                   raise ValueError('unqualified CBS response')
               capture = extract(body.decode('utf-8'))
               lineage = Path('evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json').read_text()
-              fresh = board(capture, lineage, recovered_at)
               prior = Path('evidence/operational/CFB_WEEK11_CBS_FBS_TABLES_20261110T140351Z.md').read_text()
               if blob(prior) != 'eb7b960239ef4f791faf32962b1f97abafea537d':
                   raise ValueError('review source identity mismatch')
               reviewed = board(prior, lineage, '2026-11-10T14:03:51Z')
+              elapsed = {game['game_id']: game['source_kickoff_utc'] for game in reviewed['games']
+                         if game['source_kickoff_utc'] and game['source_kickoff_utc'] < recovered_at}
+              fresh = board(capture, lineage, recovered_at, retained_elapsed_kickoffs=elapsed)
               original = {game['game_id']: game for game in reviewed['games']}
               changed = [game['game_id'] for game in fresh['games']
                          if game['team_offers'] != original[game['game_id']]['team_offers']]
@@ -167,7 +169,7 @@ jobs:
               raise ValueError('Required QA coverage missing')
           result = {
               'status': 'PASS_LIVE_SOURCE_HANDOFF',
-              'request_id': 'monitor-live-source-readback-20261110-retry',
+              'request_id': 'monitor-live-source-readback-20261110-elapsed',
               'request_commit': os.environ['GITHUB_SHA'],
               'run_id': os.environ['GITHUB_RUN_ID'],
               'pinned_head': os.environ['FIXTURE_HEAD'],
@@ -176,7 +178,7 @@ jobs:
           }
           (root / 'live-source-result.json').write_text(json.dumps(result, indent=2))
           PY
-          gh api --method PUT "repos/$GITHUB_REPOSITORY/contents/qa/monitor-live-source-readback-20261110-retry-result.json" \
+          gh api --method PUT "repos/$GITHUB_REPOSITORY/contents/qa/monitor-live-source-readback-20261110-elapsed-result.json" \
             -f branch="$GITHUB_REF_NAME" \
             -f message='Record isolated Market Monitor live-source QA result' \
             -f content="$(base64 -w0 "$RUNNER_TEMP/live-source-result.json")" --jq '.commit.sha'
