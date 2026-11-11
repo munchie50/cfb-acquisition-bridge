@@ -1,0 +1,79 @@
+name: CFB Cloud Interrupted Worker Recovery QA
+on:
+  push:
+    branches: [qa/cloud-source-preparation-20261030]
+    paths: ['.github/workflows/cfb_cloud_recovery_qa.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: cfb-cloud-interrupted-worker-recovery-qa
+  cancel-in-progress: false
+env:
+  CFB_PHASE: RESTORE
+  CFB_CAPTURE_RUN: '40989123458'
+  CFB_CAPTURE_COMMIT: '398541d00e8f919994e3f97b00dc76ee4654a0b6'
+jobs:
+  interrupted-worker-recovery-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test actual worker termination and damaged or expired restore rejection
+        run: python -m unittest discover -s scripts -p test_cfb_cloud_recovery_probe.py -v
+      - name: Terminate actual worker after one saved response
+        if: env.CFB_PHASE == 'CAPTURE'
+        run: >-
+          python scripts/cfb_cloud_recovery_probe.py capture
+          --input evidence/scheduler_qa/CFB_CLOUD_SOURCE_QA_INPUT_20261030.json
+          --expected-sha256 f96b129bfafd019607c54d48614aabc6dcd0feaa1d17d4736f0ea78fc2fefd73
+          --output recovery-qa
+      - name: Verify exact capture run before restoring its artifact
+        if: env.CFB_PHASE == 'RESTORE'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [[ "$CFB_CAPTURE_RUN" =~ ^[0-9]+$ ]]
+          [[ "$CFB_CAPTURE_COMMIT" =~ ^[0-9a-f]{40}$ ]]
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$CFB_CAPTURE_RUN" > "$RUNNER_TEMP/capture-run.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          r=json.loads((Path(os.environ['RUNNER_TEMP'])/'capture-run.json').read_text())
+          assert r['head_sha']==os.environ['CFB_CAPTURE_COMMIT']
+          assert r['head_branch']=='qa/cloud-source-preparation-20261030'
+          assert r['path']=='.github/workflows/cfb_cloud_recovery_qa.yml'
+          assert r['status']=='completed' and r['conclusion']=='success'
+          assert r['repository']['full_name']==os.environ['GITHUB_REPOSITORY']
+          print('EXACT_CAPTURE_RUN_VERIFIED',r['id'],r['head_sha'])
+          PY
+      - name: Restore partial checkpoint from the verified separate run
+        if: env.CFB_PHASE == 'RESTORE'
+        uses: actions/download-artifact@v4
+        with:
+          name: cfb-cloud-interruption-checkpoint
+          path: recovery-qa
+          run-id: ${{ env.CFB_CAPTURE_RUN }}
+          github-token: ${{ github.token }}
+      - name: Resume only unfinished sources and preserve original source clock
+        if: env.CFB_PHASE == 'RESTORE'
+        run: >-
+          python scripts/cfb_cloud_recovery_probe.py restore
+          --input evidence/scheduler_qa/CFB_CLOUD_SOURCE_QA_INPUT_20261030.json
+          --expected-sha256 f96b129bfafd019607c54d48614aabc6dcd0feaa1d17d4736f0ea78fc2fefd73
+          --output recovery-qa
+          --source-commit "$CFB_CAPTURE_COMMIT"
+      - name: Preserve partial checkpoint or completed restore evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-cloud-interruption-checkpoint
+          path: recovery-qa/
+          if-no-files-found: error
+          retention-days: 30
+
+# Capture retry follows fixture-only environment repair; failed run40988964945 retained.
