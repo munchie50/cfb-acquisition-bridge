@@ -1,0 +1,27 @@
+{
+  "status": "RUN_INCOMPLETE",
+  "correlation_id": "CFB_MARKET_MONITOR_20261111T130218Z_AUTO11",
+  "trigger": "NATURAL_SCHEDULED",
+  "startup_receipt_blob": "92ae8caff95fed7ff3717a1508a3f29b65798bc4",
+  "stage_trace_blob": "0e782d73bdd868c883bf22b267b6e512b08ffece",
+  "request_commit": "796ddc4bd187e9cc2d624ae38c357d3f5974cb94",
+  "result_blob": "9c8a0007988271a9c8d59170a2f032e035d31d05",
+  "source_blob": "ede082c6311b79d5357a4744296372147995b544",
+  "actions_run_id": "43025582572",
+  "candidate_sheet_blob": "00f74860987660ccb2f00934fdb474a8eeb8e84c",
+  "stages": {
+    "startup": "PASS",
+    "pinned_handoff": "PASS",
+    "fresh_cbs": "PASS",
+    "candidate_presentation": "PASS",
+    "ordinary_git_probe": "FAILED_DNS_RESOLUTION",
+    "checkout": "BLOCKED",
+    "new_material_review": "NOT_EXECUTED",
+    "live_compiler": "NOT_EXECUTED",
+    "canonical_publication": "NOT_EXECUTED",
+    "live_sheet_readback": "NOT_EXECUTED"
+  },
+  "blocker": "Staged candidate is retained-decision technical presentation only; no current material review or authorized canonical publication; ordinary Git probe DNS failed",
+  "next_action": "Resume current Friday/Saturday reviews and qualified publication through verified sole-publisher runtime, preserve prior sheet",
+  "classifier_execution": "NOT_RUN"
+}
