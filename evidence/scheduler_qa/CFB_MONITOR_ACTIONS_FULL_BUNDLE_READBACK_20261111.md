@@ -1,0 +1,9 @@
+# Market Monitor Actions full-bundle transport — November 11, 2026
+
+Status: PASS_ACTIONS_TO_WORK_MODE_FULL_BUNDLE. Isolated QA continuation of dd4b33db02d28df7dcd3328a8fc63036bfc06064.
+
+- QA branch qa/monitor-offline-bundle-20261111, workflow commit 3ace5c8b2fa0cef335753d306a603bf0b7b482c5, workflow blob 97f3561fa7983144a1d143042ef84340aa9ec316. One push-triggered run, 43032938219, completed successfully. The workflow writes its result only to the QA branch.
+- The QA result blob 54c560811ea0284747c6d853546a36dace24e182 binds the exact engine pin dd4b33db02d28df7dcd3328a8fc63036bfc06064 and artifact 13862091095. The returned archive was materialized from the GitHub connector in Work Mode. Independently checked 11,101,636 bytes and archive SHA-256 f33cc2c33f71a16e91854d959e5584fb5fe773318bedbcda7b45ba0c54482aa6 against Actions metadata. The sole member engine.bundle matched 11,101,496 bytes and SHA-256 3d5265a7558f40a570852cdee02e9d40defb43619920b10002229f340192b3ce against the QA receipt.
+- File-only Git clone restored the exact engine pin with full ancestry. Governed compiler files, helper blob b13930cb714eb87c8dce6136ffab6fbceeb44898 and 56 immutable reviews verified with unchanged validators. The test did not need direct GitHub DNS from the consuming Git process.
+- Remaining diagnostic: the scheduled production worker must independently demonstrate artifact access, file materialization, exact byte validation, and verified checkout. Any production handoff must authenticate fresh main and reject a stale engine pin when canonical or applicable authority has changed. This QA artifact is pinned and time-limited. The workflow is not deployed to main or wired to the 13 CT production task.
+- Friday and Saturday work remains at 72b16818cdee078063a1d93d2f93769beaf4a3c5 and 544e8b42e27c9e499109c869c8c328b66556c1ae. No canonical decisions, live Hot Sheet, schedules or task definitions were modified.
