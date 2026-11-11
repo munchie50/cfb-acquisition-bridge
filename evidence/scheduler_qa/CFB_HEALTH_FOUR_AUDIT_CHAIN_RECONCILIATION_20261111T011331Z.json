@@ -1,0 +1,147 @@
+{
+  "schema": "CFB_BOUNDED_HEALTH_AUDIT_CHAIN_RECONCILIATION_V1",
+  "observed_at": "2026-11-11T01:20:38.242Z",
+  "authenticated_main": "c0eb49c5b3a8b5872fa18903510fa711f4c59605",
+  "scope": "Four retained November7-10 Health artifact chains; sixteen exact files. Receipt linkage/bytes only, not whole-history audit coverage or scheduler-event census.",
+  "files_verified": 16,
+  "rows": [
+    {
+      "cycle_id": "CFB_HEALTH_20261107T222919152Z",
+      "result": "RETAINED_ARTIFACT_LINKAGE_AND_BYTES_PASS",
+      "historical_run_state": "RUN_INCOMPLETE",
+      "historical_coverage": "COVERAGE_UNVERIFIED",
+      "startup_proof": "AUTHENTIC_ANCESTOR_COMMIT_PATH_EXACT_BYTES",
+      "startup": {
+        "path": "evidence/run_receipts/CFB_HEALTH_20261107T222919152Z_RUN_STARTED.md",
+        "git_blob": "3235585605862d2aed6231cd0d0f7e9e895f6745",
+        "bytes": 215,
+        "sha256": "60165eb9ac9f426d008e3d59679aa5ee4103a7ad676ddb3402057c6acc14708d"
+      },
+      "audit": {
+        "path": "evidence/scheduler_qa/CFB_HEALTH_20261107T222919152Z_AUDIT.md",
+        "git_blob": "0783f197ffee1dcfb0fe235176f2f34772bc2a3c",
+        "bytes": 7985,
+        "sha256": "342064b8087e36e18310f924d2a24cf8e77f5270c4709b67d244e787a0898ee4"
+      },
+      "candidate": {
+        "path": "evidence/run_receipts/CFB_HEALTH_20261107T222919152Z_TERMINAL_CANDIDATE.md",
+        "git_blob": "57c105921b169d1d318d16416ba0181d236c50e9",
+        "bytes": 1807,
+        "sha256": "66c0a6b2efd0cfd7b7f07eaf5e9956108885951e6a3718db4db0e44d3a9a8704"
+      },
+      "closure": {
+        "path": "evidence/run_receipts/CFB_HEALTH_20261107T222919152Z_RUN_CLOSURE.md",
+        "git_blob": "68f5df254569cd73ed1017545e684bc4e09cec15",
+        "bytes": 2393,
+        "sha256": "9172bb812e655d18ebcb737f0fbad5c46081d02029df93ba15a48bc5cd99d680"
+      },
+      "invocation_id": "UNAVAILABLE_NOT_RECONSTRUCTED",
+      "no_historical_status_upgrade": true
+    },
+    {
+      "cycle_id": "CFB_HEALTH_20261108T223043419Z",
+      "result": "RETAINED_ARTIFACT_LINKAGE_AND_BYTES_PASS",
+      "historical_run_state": "RUN_INCOMPLETE",
+      "historical_coverage": "COVERAGE_UNVERIFIED",
+      "startup_proof": "EXPLICIT_BLOB_BINDING",
+      "startup": {
+        "path": "evidence/run_receipts/CFB_HEALTH_20261108T223043419Z_RUN_STARTED.md",
+        "git_blob": "a607a773c6e64209c99b09707e6a92a72dd7ac95",
+        "bytes": 233,
+        "sha256": "e29d71c4c8296dd73ab16161fc9fb6c4dff71c29192b2f115683bfba6555b00b"
+      },
+      "audit": {
+        "path": "evidence/scheduler_qa/CFB_HEALTH_20261108T223043419Z_AUDIT.md",
+        "git_blob": "d9938383e9530970c065e28db1a172ff6efcc698",
+        "bytes": 6051,
+        "sha256": "30192c7428d3224e37637e8942cfbc810af02db579b5462a4cf8a56b9db2fe39"
+      },
+      "candidate": {
+        "path": "evidence/run_receipts/CFB_HEALTH_20261108T223043419Z_TERMINAL_CANDIDATE.md",
+        "git_blob": "d9b59e2ab61bb7372b4b2c171c592c159403bb7a",
+        "bytes": 683,
+        "sha256": "cb80e6ca034a62b098c7b8f9224b704a9fd0e4456571884b791b755f4d978e08"
+      },
+      "closure": {
+        "path": "evidence/run_receipts/CFB_HEALTH_20261108T223043419Z_RUN_CLOSURE.md",
+        "git_blob": "f3f1aa0b3cce3b644d34503e45c613a0ffa9c8d0",
+        "bytes": 761,
+        "sha256": "d2097ad1a350fa4ded78168d53fa25b7c9edb07a517fc50f38edaa38f7e36a26"
+      },
+      "invocation_id": "UNAVAILABLE_NOT_RECONSTRUCTED",
+      "no_historical_status_upgrade": true
+    },
+    {
+      "cycle_id": "CFB_HEALTH_20261109T223314261Z",
+      "result": "RETAINED_ARTIFACT_LINKAGE_AND_BYTES_PASS",
+      "historical_run_state": "RUN_INCOMPLETE",
+      "historical_coverage": "COVERAGE_UNVERIFIED",
+      "startup_proof": "EXPLICIT_BLOB_BINDING",
+      "startup": {
+        "path": "evidence/run_receipts/CFB_HEALTH_20261109T223314261Z_RUN_STARTED.md",
+        "git_blob": "39e700d6c3c5f45bd54f9f15ef6a91a083b05c7f",
+        "bytes": 296,
+        "sha256": "fdba73e375024475ebb49ce5d9ad781c4b1a3df8092d9892422e9ffd9952daea"
+      },
+      "audit": {
+        "path": "evidence/scheduler_qa/CFB_HEALTH_20261109T223314261Z_AUDIT.md",
+        "git_blob": "68f37463c73234b159a8c004d3e36a9e9528a6c2",
+        "bytes": 4731,
+        "sha256": "f5a9d6b236b0c54b1c431d543d26c51d81d3c800635c3b08632008bf5c9b1949"
+      },
+      "candidate": {
+        "path": "evidence/run_receipts/CFB_HEALTH_20261109T223314261Z_TERMINAL_CANDIDATE.md",
+        "git_blob": "59de4b71b42379f8b214a4358eb7e8d6235f67f5",
+        "bytes": 836,
+        "sha256": "1e0037d40f67de0ccc198cce4eb1f972d0348aba19d4be8434bb3f9c1595e660"
+      },
+      "closure": {
+        "path": "evidence/run_receipts/CFB_HEALTH_20261109T223314261Z_RUN_CLOSURE.md",
+        "git_blob": "29f0fe1eb47d03dcd3bf891cf3ce4198cecca8a2",
+        "bytes": 739,
+        "sha256": "b7edb86013f4f7eab4958596f1b5f236b5d5f09c3259741d6fefb9c10e645007"
+      },
+      "invocation_id": "UNAVAILABLE_NOT_RECONSTRUCTED",
+      "no_historical_status_upgrade": true
+    },
+    {
+      "cycle_id": "CFB_HEALTH_20261110T223113381Z",
+      "result": "RETAINED_ARTIFACT_LINKAGE_AND_BYTES_PASS",
+      "historical_run_state": "RUN_INCOMPLETE",
+      "historical_coverage": "COVERAGE_UNVERIFIED",
+      "startup_proof": "EXPLICIT_BLOB_BINDING",
+      "startup": {
+        "path": "evidence/run_receipts/CFB_HEALTH_20261110T223113381Z_RUN_STARTED.md",
+        "git_blob": "937b691780bac39936d268f6332aaa2c32c5d8c4",
+        "bytes": 328,
+        "sha256": "1beceaef6910767fda11aa042753e0d0981c5a9d93521766ec8c52cc176ba17e"
+      },
+      "audit": {
+        "path": "evidence/scheduler_qa/CFB_HEALTH_20261110T223113381Z_AUDIT.md",
+        "git_blob": "9c12b98ac8111e4370901bef617097a03b958373",
+        "bytes": 5377,
+        "sha256": "f018f01443f4668912abf93e2e0ee29d6c26c7cfb7504749024b0074dd2cd013"
+      },
+      "candidate": {
+        "path": "evidence/run_receipts/CFB_HEALTH_20261110T223113381Z_TERMINAL_CANDIDATE.md",
+        "git_blob": "8d69169fcb8e4616a3e5f7e309140a55fe5161a6",
+        "bytes": 1033,
+        "sha256": "2a3609f0e5bd08661f951286521a6a735b8ce068a02642d9133114eeccf80110"
+      },
+      "closure": {
+        "path": "evidence/run_receipts/CFB_HEALTH_20261110T223113381Z_RUN_CLOSURE.md",
+        "git_blob": "3ba88d3649a88b1fd4199b913981beb409be6b56",
+        "bytes": 989,
+        "sha256": "ea6fff07ba20edede3b22413ea56f42e99bd031f15d864833e08119b56bdb93a"
+      },
+      "invocation_id": "UNAVAILABLE_NOT_RECONSTRUCTED",
+      "no_historical_status_upgrade": true
+    }
+  ],
+  "proof": "Exact Gitblob,size,SHA256 match fresh authenticated tree entries; audit/candidate/startup/closure bindings checked. Nov7 startup lacks direct digest in closure and was independently resolved via authentic ancestor commit/path/full bytes.",
+  "original_readback_timing": "Historical claims retained; current proof independently checks present complete bytes/links. No reconstruction of missing invocation IDs or retrospective producer success.",
+  "result": "FOUR_RETAINED_HEALTH_CHAINS_INDEPENDENTLY_RECONCILED",
+  "cumulative_health_watermark": "UNCHANGED_COVERAGE_UNVERIFIED",
+  "historical_run_states": "All four remain RUN_INCOMPLETE",
+  "scope_boundary": "Earlier six Monitor chains remain separate qualified evidence; neither result certifies all intervening obligations, Evening/Weekly completeness or recurring reliability."
+}
