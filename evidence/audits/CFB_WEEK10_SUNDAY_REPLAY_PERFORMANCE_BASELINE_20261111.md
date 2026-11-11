@@ -22,3 +22,8 @@ Published parlay simulations: Utah/Cincinnati/Missouri State at estimated +618 w
 Actual Week 10: 8–3, +$47.90 on $55, +87.09% result ROI. Actual season ledger: 33–17–1, about +$89.30 on $208.50, +42.83% result ROI. Sources: evidence/operational/CFB_EXECUTION_LEDGER.md blob 2c0fbcb0314839deb60823e48adbbd24d5423147; evidence/operational/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z.json. Older payout arithmetic is estimated when no printed payouts are retained.
 
 The full-slate $5 baseline was not computed in this demonstration. It needs the eligible archived pre-event side and price census; postgame quote reconstruction cannot fill that gap. Next comparable test: grade subsequent archived Top 10 rank bands and parlay leg counts at their original prices and report whether results persist across weeks and independent games. Week 10 alone does not establish durable rank separation or parlay profitability.
+
+
+## User-confirmed selection rationale
+
+November 11 follow-up: the user reported choosing the Utah and Missouri State straight bets because of the confidence shown and identified the actual Utah/Cincinnati/Missouri State ticket as their first parlay this season from the assistant's recommendations. This is user-reported adoption evidence for that build and those two singles, separate from settlement and season-wide attribution. The same Utah and Missouri State outcomes each affected a $5 straight and the $5 parlay. Use this as an observed deliberate-overlap case in Sunday learning, and compare separately with the unplaced four-leg replay.
