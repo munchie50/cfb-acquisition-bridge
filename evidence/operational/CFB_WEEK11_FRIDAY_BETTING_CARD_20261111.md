@@ -1,10 +1,10 @@
-# Week 11 betting card for the Friday afternoon trip
+# Week 11 Friday betting card — Top 10 across all markets
 
 **Wednesday, November 11 CT. Zero venue-confirmed bets. Five conditional Saturday spreads. Four prior PASS games reopened.** This delivery summary reflects the saved Hot Sheet and the 8:02 AM CT game-by-game screen. Friday's 7 AM CT review is the next scheduled decision check.
 
-## Saturday conditional plays
+## Top 10 across spreads, moneylines, and totals
 
-Keep the saved ranking and limits. Each review is valid through Saturday at 7 AM CT at the latest. Any earlier practical cutoff controls. Each still needs the Friday price and material checks before placement.
+Five plays earned a ranking, all Saturday spreads. Spots 6–10 are open. Keep the saved ranking and limits. Each review is valid through Saturday at 7 AM CT at the latest. Any earlier practical cutoff controls. Each still needs the Friday price and material checks before placement.
 
 | Rank | Play | Worst acceptable number and price | Kickoff CT | Friday check |
 |---|---|---|---|---|
@@ -13,6 +13,17 @@ Keep the saved ranking and limits. Each review is valid through Saturday at 7 AM
 | 3 | Jacksonville State at Western Kentucky | Jacksonville State -7.5, -105 | 2:30 PM | Personnel and direct paired price |
 | 4 | Missouri at Georgia | Georgia -15.5, -110 | 2:30 PM | SEC personnel and direct paired price |
 | 5 | North Texas at UTSA | North Texas -2.5, -105 | 8 PM | Personnel and actual price |
+
+## Two parlays to price Friday
+
+Both are watch builds. Each leg must pass its Friday recheck at the listed number and juice or better. Verify the actual combined sportsbook payout and assess the legs together before either build can earn a recommendation.
+
+| Build | Legs | Status |
+|---|---|---|
+| 3-leg | Tennessee -2.5 (-115), Baylor +7.5 (-118), Jacksonville State -7.5 (-105) | Conditional legs; combined price unverified |
+| 4-leg | Tennessee -2.5 (-115), Baylor +7.5 (-118), Georgia -15.5 (-110), North Texas -2.5 (-105) | Conditional legs; combined price unverified |
+
+Both builds share Tennessee and Baylor. Taking both would double exposure to those two outcomes.
 
 ## Friday games worth another look
 
