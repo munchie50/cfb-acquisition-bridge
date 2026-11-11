@@ -17,7 +17,18 @@
 
 Moneylines were weighed separately. JMU -182, Tennessee -135 and North Texas -125 illustrate the tradeoff for a potential three-leg moneyline build: outright legs avoid winning-margin requirements, but each needs a separate case at its price and the combination needs an actual quote. No moneyline displaced a ranked spread or total. No derivative earned a ranked slot.
 
-**Parlays: none qualifies.** The three-leg moneyline route lacks sufficiently supported outright prices, and adding a fourth leg has no independently supported payout case. No combined sportsbook quote was verified.
+## Parlay review
+
+**First to price Friday: Tennessee -2.5, Baylor +7.5, Jacksonville State -7.5. Conditional watch build.** Tennessee can cover with a field goal, Baylor can cover in a one-touchdown loss, and Jacksonville State contributes a separate rushing-matchup case. The three legs are in different games. Jacksonville State needing an eight-point road win is the build's weakest leg. Price from the 8:36 AM CT individual CBS observations (-114, -115, -102) is estimated +595 under straight multiplication, equivalent to $11.90 net profit if a $2 stake wins and a 14.39% break-even hit rate. The sportsbook combined quote and leg revalidation remain pending; no calibrated joint win estimate or positive EV finding. If the Friday case and actual price qualify, $2 is the stake under consideration.
+
+Alternatives compared at the same observation:
+- Replacing Jacksonville State spread with its -285 moneyline reduces the required margin but drops the estimate to +374 ($7.48 net on $2) and raises break-even to 21.09%. Its outright price has not earned support.
+- Replacing Jacksonville State with North Texas -2.5 gives estimated +585 ($11.70 net on $2). It adds another short road favorite and the largest conflict with the frozen engine, with no payout improvement.
+- Adding Georgia -15.5 as a fourth leg gives estimated +1227 ($24.54 net on $2). The extra condition is a 16-point win, with late-cover risk, and the build repeats all three legs of the first ticket. At these estimated prices, the fourth leg needs better than a 52.38% conditional chance of covering for the add-on to improve expected return. No such estimate has been established. No second ticket recommended.
+- The all-moneyline build with Tennessee, James Madison and North Texas is estimated +385, but the underlying outright prices remain unqualified.
+
+Current disposition: no approved parlay and no $4–$6 stake supported. These are arithmetic estimates from display quotes, not actual combined offers. Recheck Friday personnel and exact numbers first, then obtain the actual combined price.
+
 
 Friday watch: Pitt -3.5/-105 remains outside the ranked list pending official personnel and quarterback review. Saturday watch: Mississippi State's display reverted to +2.5/+100, leaving the prior PASS in place.
 
