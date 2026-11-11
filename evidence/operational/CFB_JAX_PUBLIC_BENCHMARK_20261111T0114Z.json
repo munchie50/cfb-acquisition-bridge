@@ -1,0 +1,66 @@
+{
+  "schema": "CFB_PUBLIC_QUOTE_ACCESS_SCOPE_VERIFICATION_V1",
+  "observed_by_utc": "2026-11-11T01:15:45.357Z",
+  "game_id": "401870752",
+  "source_url": "https://sportsbook.draftkings.com/event/34964183?outcomes=0HC87098662N750_3",
+  "source_scrape_id": "01a1c82b-93ee-7319-8d5f-bba50bf64b41",
+  "source_kind": "DIRECT_IDENTIFIED_DRAFTKINGS_PUBLIC_BENCHMARK",
+  "source_class": "IDENTIFIED_RETRIEVAL_ONLY_BENCHMARK",
+  "access_scope": {
+    "result": "PUBLIC_GAME_LINES_CONFIRMED_VISUALLY",
+    "facts": [
+      "Anonymous viewport shows JacksonvilleState atWesternKentucky title and public unblurred Game spread/total/moneyline rows.",
+      "LogIn is visible separately in the sidebar and DraftKingsSocial panel; it does not cover or gate the Game quote panel.",
+      "No signin, cookie/access dismissal, geolocation change, wager selection or other interaction occurred."
+    ],
+    "supersedes": "Earlier direct-page markdown ambiguity in CFB_SOURCE_PATH_CONFORMANCE_RECONCILIATION_20261111T005148Z.json is historical and now resolved FOR THIS PUBLIC PANEL ONLY.",
+    "not_authorized": "No gated social/account content or execution readiness inferred."
+  },
+  "visible_quotes": {
+    "away": {
+      "team": "JacksonvilleState",
+      "spread": -7.5,
+      "spread_price": -102,
+      "total_over": 54.5,
+      "total_over_price": -110,
+      "moneyline": -285
+    },
+    "home": {
+      "team": "WesternKentucky",
+      "spread": 7.5,
+      "spread_price": -118,
+      "total_under": 54.5,
+      "total_under_price": -110,
+      "moneyline": 230
+    }
+  },
+  "identity": {
+    "operator_event": "34964183",
+    "selected_outcome": "0HC87098662N750_3",
+    "displayed_kickoff": "SaturdayNovember14 3:30PM",
+    "source_timezone": "America/New_York",
+    "meaning": "Matches saved directed game and earlier independently qualified official Saturday14:30CT kickoff; displayed time alone is not a new kickoff qualification."
+  },
+  "image": {
+    "path": "evidence/scheduler_qa/CFB_JAX_PUBLIC_QUOTE_ACCESS_20261111T0114Z.png.b64",
+    "png_bytes": 234299,
+    "png_sha256": "3bebb9f1285510cb62349b3e0fc64db15d87256226a3bdf8bbbed746231b3999",
+    "base64_bytes": 312401,
+    "base64_git_blob": "983bee198ab606390a2fcb764ba14da7b1fff97e",
+    "format": "PNG bytes encoded as strictbase64 with one finalnewline; complete content independently readback"
+  },
+  "source_clock": {
+    "semantics": "OBSERVED_BY_UPPER_BOUND",
+    "image_server_label": "11/10/2026 8:14:25PM",
+    "offer_updated_at": null
+  },
+  "original_limit": {
+    "selection": "JacksonvilleState",
+    "line": -7.5,
+    "minimum_price": -105,
+    "status": "OBSERVED_PAIR_MEETS_EXISTING_LIMIT"
+  },
+  "verdict": "BOUNDED_NEW_BENCHMARK_GAP_CLOSED;NO_REVIEW_RENEWAL",
+  "preserved": "Current recommendations, original limits/final cutoffs, immutable review/source history, model, tasks, wagers and money unchanged. This price/access proof does not repair earlier excluded API acquisition, certify materialreview, make consensus or establish executable venue offer.",
+  "next": "Consume allowed directpublicbenchmark during next applicable full review; recheck real market/personnel/weather before Fridaytrip. Actual natural producer source compliance remains to demonstrate."
+}
