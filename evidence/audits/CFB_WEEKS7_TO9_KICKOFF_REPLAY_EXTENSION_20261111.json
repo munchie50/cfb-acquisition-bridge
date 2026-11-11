@@ -1,0 +1,2666 @@
+{
+  "schema": "CFB_WEEKS7_TO9_KICKOFF_REPLAY_EXTENSION_V1",
+  "input_head": "22025d6c0bd33e65699cc8a87ddba073e8f84abf",
+  "prior_baseline": {
+    "path": "evidence/audits/CFB_WEEKS7_TO10_OPENING_BASELINE_SYNTHESIS_20261111.json",
+    "sha": "095a3fe7b22c7e6fa35a16fd93ce37b2fc8b97b4"
+  },
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK7_OPENING_BOARD_REPLAY_20261111.json",
+      "sha": "a19979dc708e2337f75cc85933f4893893e02c8f"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK8_WEEK9_OPENING_REPLAY_CONTINUATION_20261111.json",
+      "sha": "243da617787e24154c77a0953d6641eed1761d39"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK9_WEEK10_OPENING_BASELINE_COMPARISON_20261111.json",
+      "sha": "a48415c51c3892c69526df2d1fd0700918d96bd7"
+    }
+  ],
+  "method": "Independently published scheduled time converted to UTC must match the fixed CBS display. Scheduled time and actual first play are distinct. Week 7/8 reuse the already graded same-game fixed-board tickets from the date sensitivities after timing qualification. Week 9 grades recomputed from original forecasts, branch-specific prices and qualified finals under the same $5 rule. All added ticket payouts checked.",
+  "additions": [
+    {
+      "week": 7,
+      "id": "401871068",
+      "game": "W. Kentucky @ Sam Houston",
+      "source": "https://gobearkats.com/news/2026/10/13/football-game-6-preview-vs-wku",
+      "source_local": "2026-10-14T19:00:00-05:00",
+      "utc": "2026-10-15T00:00:00.000Z",
+      "board_utc": "2026-10-15T00:00:00.000Z",
+      "tickets": [
+        {
+          "id": "401871068",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 2.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401871068",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 112,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401871068",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 50.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401869950",
+      "game": "Ga. Southern @ Old Dominion",
+      "source": "https://odusports.com/news/2026/10/13/game-seven-preview-old-dominion-vs-georgia-southern-thursday-night",
+      "source_local": "2026-10-15T19:30:00-04:00",
+      "utc": "2026-10-15T23:30:00.000Z",
+      "board_utc": "2026-10-15T23:30:00.000Z",
+      "tickets": [
+        {
+          "id": "401869950",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 2.5,
+          "price": 106,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401869950",
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -152,
+          "grade": "W",
+          "net_cents": 329
+        },
+        {
+          "id": "401869950",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 50.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401860923",
+      "game": "Colorado St. @ Texas St.",
+      "source": "https://txst.com/news/2026/10/13/football-game-preview-txst-vs-colorado-state.aspx",
+      "source_local": "2026-10-15T19:00:00-05:00",
+      "utc": "2026-10-16T00:00:00.000Z",
+      "board_utc": "2026-10-16T00:00:00.000Z",
+      "tickets": [
+        {
+          "id": "401860923",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 11.5,
+          "price": -108,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401860923",
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": 350,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401860923",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 67.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401862801",
+      "game": "Memphis @ Tulane",
+      "source": "https://gotigersgo.com/news/2026/10/15/football-tigers-trek-to-tulane-for-friday-night-matchup",
+      "source_local": "2026-10-16T18:30:00-05:00",
+      "utc": "2026-10-16T23:30:00.000Z",
+      "board_utc": "2026-10-16T23:30:00.000Z",
+      "tickets": [
+        {
+          "id": "401862801",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 6.5,
+          "price": -105,
+          "grade": "W",
+          "net_cents": 476
+        },
+        {
+          "id": "401862801",
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -250,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401862801",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 54.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401858493",
+      "game": "Washington @ Purdue",
+      "source": "https://purduesports.com/news/2026/10/12/game-7-prep-head-coach-barry-odom-press-conference",
+      "source_local": "2026-10-16T20:00:00-04:00",
+      "utc": "2026-10-17T00:00:00.000Z",
+      "board_utc": "2026-10-17T00:00:00.000Z",
+      "tickets": [
+        {
+          "id": "401858493",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 2.5,
+          "price": 104,
+          "grade": "W",
+          "net_cents": 520
+        },
+        {
+          "id": "401858493",
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": 125,
+          "grade": "W",
+          "net_cents": 625
+        },
+        {
+          "id": "401858493",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 51.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401858268",
+      "game": "Virginia @ SMU",
+      "source": "https://theacc.com/news/2026/10/5/acc-football-week-7-tv-networks-and-game-times-announced.aspx",
+      "source_local": "2026-10-17T12:00:00-04:00",
+      "utc": "2026-10-17T16:00:00.000Z",
+      "board_utc": "2026-10-17T16:00:00.000Z",
+      "tickets": [
+        {
+          "id": "401858268",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 7.5,
+          "price": -105,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401858268",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -315,
+          "grade": "W",
+          "net_cents": 159
+        },
+        {
+          "id": "401858268",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 54.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401858267",
+      "game": "Pittsburgh @ Boston College",
+      "source": "https://theacc.com/news/2026/10/5/acc-football-week-7-tv-networks-and-game-times-announced.aspx",
+      "source_local": "2026-10-17T12:00:00-04:00",
+      "utc": "2026-10-17T16:00:00.000Z",
+      "board_utc": "2026-10-17T16:00:00.000Z",
+      "tickets": [
+        {
+          "id": "401858267",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 6.5,
+          "price": 100,
+          "grade": "W",
+          "net_cents": 500
+        },
+        {
+          "id": "401858267",
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -265,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401858267",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 45.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401858266",
+      "game": "North Carolina @ Duke",
+      "source": "https://theacc.com/news/2026/10/5/acc-football-week-7-tv-networks-and-game-times-announced.aspx",
+      "source_local": "2026-10-17T15:30:00-04:00",
+      "utc": "2026-10-17T19:30:00.000Z",
+      "board_utc": "2026-10-17T19:30:00.000Z",
+      "tickets": [
+        {
+          "id": "401858266",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 3.5,
+          "price": -115,
+          "grade": "W",
+          "net_cents": 435
+        },
+        {
+          "id": "401858266",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -155,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401858266",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 47.5,
+          "price": -115,
+          "grade": "W",
+          "net_cents": 435
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401858263",
+      "game": "Florida State @ Miami (Fla.)",
+      "source": "https://theacc.com/news/2026/10/5/acc-football-week-7-tv-networks-and-game-times-announced.aspx",
+      "source_local": "2026-10-17T19:00:00-04:00",
+      "utc": "2026-10-17T23:00:00.000Z",
+      "board_utc": "2026-10-17T23:00:00.000Z",
+      "tickets": [
+        {
+          "id": "401858263",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -21,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401858263",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -2326,
+          "grade": "W",
+          "net_cents": 21
+        },
+        {
+          "id": "401858263",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 55.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401858265",
+      "game": "Louisville @ Syracuse",
+      "source": "https://theacc.com/news/2026/10/5/acc-football-week-7-tv-networks-and-game-times-announced.aspx",
+      "source_local": "2026-10-17T19:30:00-04:00",
+      "utc": "2026-10-17T23:30:00.000Z",
+      "board_utc": "2026-10-17T23:30:00.000Z",
+      "tickets": [
+        {
+          "id": "401858265",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 11.5,
+          "price": -106,
+          "grade": "W",
+          "net_cents": 472
+        },
+        {
+          "id": "401858265",
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -529,
+          "grade": "W",
+          "net_cents": 95
+        },
+        {
+          "id": "401858265",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 55.5,
+          "price": -104,
+          "grade": "W",
+          "net_cents": 481
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401856724",
+      "game": "Florida @ Texas",
+      "source": "https://www.secsports.com/news/2026/10/sec-football-on-tv-oct-24",
+      "source_local": "2026-10-17T12:00:00-04:00",
+      "utc": "2026-10-17T16:00:00.000Z",
+      "board_utc": "2026-10-17T16:00:00.000Z",
+      "tickets": [
+        {
+          "id": "401856724",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 10.5,
+          "price": -124,
+          "grade": "W",
+          "net_cents": 403
+        },
+        {
+          "id": "401856724",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -345,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401856724",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 53.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401856720",
+      "game": "Miss. State @ LSU",
+      "source": "https://www.secsports.com/news/2026/10/sec-football-on-tv-oct-24",
+      "source_local": "2026-10-17T12:00:00-04:00",
+      "utc": "2026-10-17T16:00:00.000Z",
+      "board_utc": "2026-10-17T16:00:00.000Z",
+      "tickets": [
+        {
+          "id": "401856720",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 11.5,
+          "price": -105,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401856720",
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": 350,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401856720",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 59.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401856721",
+      "game": "Missouri @ Ole Miss",
+      "source": "https://www.secsports.com/news/2026/10/sec-football-on-tv-oct-24",
+      "source_local": "2026-10-17T15:30:00-04:00",
+      "utc": "2026-10-17T19:30:00.000Z",
+      "board_utc": "2026-10-17T19:30:00.000Z",
+      "tickets": [
+        {
+          "id": "401856721",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 6.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401856721",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -225,
+          "grade": "W",
+          "net_cents": 222
+        },
+        {
+          "id": "401856721",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 58.5,
+          "price": -105,
+          "grade": "W",
+          "net_cents": 476
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401856723",
+      "game": "Alabama @ Tennessee",
+      "source": "https://www.secsports.com/news/2026/10/sec-football-on-tv-oct-24",
+      "source_local": "2026-10-17T15:30:00-04:00",
+      "utc": "2026-10-17T19:30:00.000Z",
+      "board_utc": "2026-10-17T19:30:00.000Z",
+      "tickets": [
+        {
+          "id": "401856723",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 6.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        },
+        {
+          "id": "401856723",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 200,
+          "grade": "W",
+          "net_cents": 1000
+        },
+        {
+          "id": "401856723",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 56.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401856719",
+      "game": "Auburn @ Georgia",
+      "source": "https://www.secsports.com/news/2026/10/sec-football-on-tv-oct-24",
+      "source_local": "2026-10-17T15:30:00-04:00",
+      "utc": "2026-10-17T19:30:00.000Z",
+      "board_utc": "2026-10-17T19:30:00.000Z",
+      "tickets": [
+        {
+          "id": "401856719",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -18.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401856719",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -1449,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401856719",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 49.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401856722",
+      "game": "Kentucky @ Oklahoma",
+      "source": "https://www.secsports.com/news/2026/10/sec-football-on-tv-oct-24",
+      "source_local": "2026-10-17T19:30:00-04:00",
+      "utc": "2026-10-17T23:30:00.000Z",
+      "board_utc": "2026-10-17T23:30:00.000Z",
+      "tickets": [
+        {
+          "id": "401856722",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -6.5,
+          "price": -115,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401856722",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -230,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401856722",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 42.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401858494",
+      "game": "Wisconsin @ UCLA",
+      "source": "https://huskers.com/news/2026/10/11/nebraska-oregon-kickoff-time-and-tv-set",
+      "source_local": "2026-10-17T18:30:00-05:00",
+      "utc": "2026-10-17T23:30:00.000Z",
+      "board_utc": "2026-10-17T23:30:00.000Z",
+      "tickets": [
+        {
+          "id": "401858494",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -3.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        },
+        {
+          "id": "401858494",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -162,
+          "grade": "W",
+          "net_cents": 309
+        },
+        {
+          "id": "401858494",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 49.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401856830",
+      "game": "Kansas @ Kansas State",
+      "source": "https://www.kstatesports.com/news/2026/10/12/football-k-state-hosts-rival-kansas-in-morning-tilt",
+      "source_local": "2026-10-17T11:00:00-05:00",
+      "utc": "2026-10-17T16:00:00.000Z",
+      "board_utc": "2026-10-17T16:00:00.000Z",
+      "tickets": [
+        {
+          "id": "401856830",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -8.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        },
+        {
+          "id": "401856830",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -325,
+          "grade": "W",
+          "net_cents": 154
+        },
+        {
+          "id": "401856830",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 54.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401856829",
+      "game": "Cincinnati @ West Virginia",
+      "source": "https://texastech.com/documents/download/2026/10/12/2026_Texas_Tech_Game_Notes_-_GM6_-_Arizona_State.pdf",
+      "source_local": "2026-10-17T11:00:00-05:00",
+      "utc": "2026-10-17T16:00:00.000Z",
+      "board_utc": "2026-10-17T16:00:00.000Z",
+      "tickets": [
+        {
+          "id": "401856829",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -2.5,
+          "price": -108,
+          "grade": "W",
+          "net_cents": 463
+        },
+        {
+          "id": "401856829",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -132,
+          "grade": "W",
+          "net_cents": 379
+        },
+        {
+          "id": "401856829",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 62.5,
+          "price": -118,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401856828",
+      "game": "Arizona St. @ Texas Tech",
+      "source": "https://texastech.com/documents/download/2026/10/12/2026_Texas_Tech_Game_Notes_-_GM6_-_Arizona_State.pdf",
+      "source_local": "2026-10-17T14:30:00-05:00",
+      "utc": "2026-10-17T19:30:00.000Z",
+      "board_utc": "2026-10-17T19:30:00.000Z",
+      "tickets": [
+        {
+          "id": "401856828",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 13.5,
+          "price": -112,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401856828",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -581,
+          "grade": "W",
+          "net_cents": 86
+        },
+        {
+          "id": "401856828",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 50.5,
+          "price": -105,
+          "grade": "W",
+          "net_cents": 476
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "id": "401856809",
+      "game": "Notre Dame @ BYU",
+      "source": "https://texastech.com/documents/download/2026/10/12/2026_Texas_Tech_Game_Notes_-_GM6_-_Arizona_State.pdf",
+      "source_local": "2026-10-17T18:30:00-05:00",
+      "utc": "2026-10-17T23:30:00.000Z",
+      "board_utc": "2026-10-17T23:30:00.000Z",
+      "tickets": [
+        {
+          "id": "401856809",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 12.5,
+          "price": -105,
+          "grade": "W",
+          "net_cents": 476
+        },
+        {
+          "id": "401856809",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 390,
+          "grade": "W",
+          "net_cents": 1950
+        },
+        {
+          "id": "401856809",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 46.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "id": "401871069",
+      "game": "Missouri State @ Delaware",
+      "source": "https://bluehens.com/news/2026/10/17/football-plays-host-to-missouri-state-on-tuesday-for-senior-day",
+      "source_local": "2026-10-20T19:00:00-04:00",
+      "utc": "2026-10-20T23:00:00.000Z",
+      "board_utc": "2026-10-20T23:00:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401871069",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -2.5,
+          "price": -120,
+          "grade": "W",
+          "net_cents": 417
+        },
+        {
+          "game_id": "401871069",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -140,
+          "grade": "W",
+          "net_cents": 357
+        },
+        {
+          "game_id": "401871069",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 51.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "id": "401871092",
+      "game": "South Alabama @ Marshall",
+      "source": "https://herdzone.com/news/2026/10/16/marshall-football-hosts-south-alabama-at-7-30-pm-on-tuesday",
+      "source_local": "2026-10-20T19:30:00-04:00",
+      "utc": "2026-10-20T23:30:00.000Z",
+      "board_utc": "2026-10-20T23:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401871092",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": -2.5,
+          "price": -120,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401871092",
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -154,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401871092",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 62.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "id": "401871070",
+      "game": "New Mexico State @ Sam Houston",
+      "source": "https://gobearkats.com/news/2026/5/27/football-cusa-announces-2026-broadcast-schedule",
+      "source_local": "2026-10-21T19:00:00-05:00",
+      "utc": "2026-10-22T00:00:00.000Z",
+      "board_utc": "2026-10-22T00:00:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401871070",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 2.5,
+          "price": 102,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401871070",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 125,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401871070",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 45.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "id": "401869845",
+      "game": "James Madison @ App State",
+      "source": "https://appstatesports.com/sports/football/schedule",
+      "source_local": "2026-10-22T19:00:00-04:00",
+      "utc": "2026-10-22T23:00:00.000Z",
+      "board_utc": "2026-10-22T23:00:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401869845",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 10.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        },
+        {
+          "game_id": "401869845",
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -330,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401869845",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 58.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "id": "401862807",
+      "game": "East Carolina @ Memphis",
+      "source": "https://gotigersgo.com/sports/football/schedule/text/2026",
+      "source_local": "2026-10-22T18:30:00-05:00",
+      "utc": "2026-10-22T23:30:00.000Z",
+      "board_utc": "2026-10-22T23:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401862807",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -9.5,
+          "price": -115,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401862807",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -395,
+          "grade": "W",
+          "net_cents": 127
+        },
+        {
+          "game_id": "401862807",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 53.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "id": "401861965",
+      "game": "Massachusetts @ UConn",
+      "source": "https://uconnhuskies.com/news/2026/5/27/football-announces-home-game-times-for-2026",
+      "source_local": "2026-10-23T19:00:00-04:00",
+      "utc": "2026-10-23T23:00:00.000Z",
+      "board_utc": "2026-10-23T23:00:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401861965",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 16.5,
+          "price": -114,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401861965",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -800,
+          "grade": "W",
+          "net_cents": 63
+        },
+        {
+          "game_id": "401861965",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 47.5,
+          "price": -115,
+          "grade": "W",
+          "net_cents": 435
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "id": "401858271",
+      "game": "Duke @ Virginia",
+      "source": "https://theacc.com/news/2026/10/20/acc-football-week-8-features-seven-game-two-day-conference-slate.aspx",
+      "source_local": "2026-10-23T19:00:00-04:00",
+      "utc": "2026-10-23T23:00:00.000Z",
+      "board_utc": "2026-10-23T23:00:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401858271",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -2.5,
+          "price": -105,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401858271",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -125,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401858271",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 48.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "id": "401858272",
+      "game": "NC State @ Stanford",
+      "source": "https://theacc.com/news/2026/10/20/acc-football-week-8-features-seven-game-two-day-conference-slate.aspx",
+      "source_local": "2026-10-23T22:30:00-04:00",
+      "utc": "2026-10-24T02:30:00.000Z",
+      "board_utc": "2026-10-24T02:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401858272",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": -7.5,
+          "price": -105,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401858272",
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -278,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401858272",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 56.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "id": "401871058",
+      "game": "Kennesaw State @ Middle Tennessee",
+      "source": "https://conferenceusa.com/news/2026/5/27/fb-cusa-announces-broadcast-schedule-for-2026-football-season.aspx",
+      "source_local": "2026-10-28T18:00:00-05:00",
+      "utc": "2026-10-28T23:00:00.000Z",
+      "board_utc": "2026-10-28T23:00:00.000Z",
+      "tickets": [
+        {
+          "id": "401871058",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -2.5,
+          "price": -115,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401871058",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -135,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401871058",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 50.5,
+          "price": -115,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "id": "401871057",
+      "game": "Jacksonville State @ New Mexico State",
+      "source": "https://nmstatesports.com/news/2026/5/27/football-conference-usa-reveals-kickoff-times-and-television-schedule.aspx",
+      "source_local": "2026-10-28T18:00:00-06:00",
+      "utc": "2026-10-29T00:00:00.000Z",
+      "board_utc": "2026-10-29T00:00:00.000Z",
+      "tickets": [
+        {
+          "id": "401871057",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 3,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401871057",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 126,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401871057",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 49.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "id": "401856842",
+      "game": "Arizona @ Texas Tech",
+      "source": "https://texastech.com/news/2026/10/26/football-no-13-texas-tech-no-22-arizona-collide-saturday-for-top-25-thriller",
+      "source_local": "2026-10-31T11:00:00-05:00",
+      "utc": "2026-10-31T16:00:00.000Z",
+      "board_utc": "2026-10-31T16:00:00.000Z",
+      "tickets": [
+        {
+          "id": "401856842",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 4.5,
+          "price": -112,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401856842",
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": 155,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401856842",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 55.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "id": "401856848",
+      "game": "Utah @ Cincinnati",
+      "source": "https://gobearcats.com/news/2026/10/19/cincinnati-footballs-week-9-matchup-vs-utah-set-for-345-pm-et-kickoff",
+      "source_local": "2026-10-31T15:45:00-04:00",
+      "utc": "2026-10-31T19:45:00.000Z",
+      "board_utc": "2026-10-31T19:45:00.000Z",
+      "tickets": [
+        {
+          "id": "401856848",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 7,
+          "price": -111,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "id": "401856848",
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -245,
+          "grade": "W",
+          "net_cents": 204
+        },
+        {
+          "id": "401856848",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 55.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "id": "401858274",
+      "game": "Pittsburgh @ Miami",
+      "board_utc": "2026-10-24T16:00:00.000Z",
+      "week": 8,
+      "source": "https://theacc.com/news/2026/10/20/acc-football-week-8-features-seven-game-two-day-conference-slate.aspx",
+      "source_local": "2026-10-24T12:00:00-04:00",
+      "utc": "2026-10-24T16:00:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401858274",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 23.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401858274",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -2381,
+          "grade": "W",
+          "net_cents": 21
+        },
+        {
+          "game_id": "401858274",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 50.5,
+          "price": -106,
+          "grade": "W",
+          "net_cents": 472
+        }
+      ]
+    },
+    {
+      "id": "401858273",
+      "game": "Boston College @ Georgia Tech",
+      "board_utc": "2026-10-24T19:30:00.000Z",
+      "week": 8,
+      "source": "https://theacc.com/news/2026/10/20/acc-football-week-8-features-seven-game-two-day-conference-slate.aspx",
+      "source_local": "2026-10-24T15:30:00-04:00",
+      "utc": "2026-10-24T19:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401858273",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -4.5,
+          "price": -115,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401858273",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -200,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401858273",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 50.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "id": "401858275",
+      "game": "Syracuse @ North Carolina",
+      "board_utc": "2026-10-24T23:30:00.000Z",
+      "week": 8,
+      "source": "https://theacc.com/news/2026/10/20/acc-football-week-8-features-seven-game-two-day-conference-slate.aspx",
+      "source_local": "2026-10-24T19:30:00-04:00",
+      "utc": "2026-10-24T23:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401858275",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 9.5,
+          "price": -115,
+          "grade": "W",
+          "net_cents": 435
+        },
+        {
+          "game_id": "401858275",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -350,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401858275",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 44.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "id": "401856727",
+      "game": "Texas A&M @ Alabama",
+      "board_utc": "2026-10-24T19:30:00.000Z",
+      "week": 8,
+      "source": "https://www.secsports.com/fbtv",
+      "source_local": "2026-10-24T15:30:00-04:00",
+      "utc": "2026-10-24T19:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401856727",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 15.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        },
+        {
+          "game_id": "401856727",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -676,
+          "grade": "W",
+          "net_cents": 74
+        },
+        {
+          "game_id": "401856727",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 50.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "id": "401856730",
+      "game": "Oklahoma @ Mississippi State",
+      "board_utc": "2026-10-24T19:30:00.000Z",
+      "week": 8,
+      "source": "https://www.secsports.com/fbtv",
+      "source_local": "2026-10-24T15:30:00-04:00",
+      "utc": "2026-10-24T19:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401856730",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 2.5,
+          "price": -104,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401856730",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 118,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401856730",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 46.5,
+          "price": -115,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "id": "401856731",
+      "game": "Tennessee @ South Carolina",
+      "board_utc": "2026-10-24T19:30:00.000Z",
+      "week": 8,
+      "source": "https://www.secsports.com/fbtv",
+      "source_local": "2026-10-24T15:30:00-04:00",
+      "utc": "2026-10-24T19:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401856731",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 3,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        },
+        {
+          "game_id": "401856731",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 130,
+          "grade": "W",
+          "net_cents": 650
+        },
+        {
+          "game_id": "401856731",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 51.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "id": "401856729",
+      "game": "Vanderbilt @ Kentucky",
+      "board_utc": "2026-10-24T23:30:00.000Z",
+      "week": 8,
+      "source": "https://www.secsports.com/fbtv",
+      "source_local": "2026-10-24T19:30:00-04:00",
+      "utc": "2026-10-24T23:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401856729",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 11.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401856729",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -450,
+          "grade": "W",
+          "net_cents": 111
+        },
+        {
+          "game_id": "401856729",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 51.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "id": "401856732",
+      "game": "Ole Miss @ Texas",
+      "board_utc": "2026-10-24T23:30:00.000Z",
+      "week": 8,
+      "source": "https://www.secsports.com/fbtv",
+      "source_local": "2026-10-24T19:30:00-04:00",
+      "utc": "2026-10-24T23:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401856732",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -3,
+          "price": -115,
+          "grade": "W",
+          "net_cents": 435
+        },
+        {
+          "game_id": "401856732",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -146,
+          "grade": "W",
+          "net_cents": 342
+        },
+        {
+          "game_id": "401856732",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 55.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "id": "401860907",
+      "game": "Boise State @ Washington State",
+      "board_utc": "2026-10-24T22:00:00.000Z",
+      "week": 8,
+      "source": "https://pac-12.com/news/2026/10/21/this-week-in-pac-12-football-week-8.aspx",
+      "source_local": "2026-10-24T15:00:00-07:00",
+      "utc": "2026-10-24T22:00:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401860907",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 15.5,
+          "price": -115,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401860907",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 550,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401860907",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 50.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "id": "401860905",
+      "game": "San Diego State @ Colorado State",
+      "board_utc": "2026-10-24T22:30:00.000Z",
+      "week": 8,
+      "source": "https://pac-12.com/news/2026/10/21/this-week-in-pac-12-football-week-8.aspx",
+      "source_local": "2026-10-24T15:30:00-07:00",
+      "utc": "2026-10-24T22:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401860905",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 2.5,
+          "price": -114,
+          "grade": "W",
+          "net_cents": 439
+        },
+        {
+          "game_id": "401860905",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 105,
+          "grade": "W",
+          "net_cents": 525
+        },
+        {
+          "game_id": "401860905",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 59.5,
+          "price": -115,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "id": "401860906",
+      "game": "Utah State @ Texas State",
+      "board_utc": "2026-10-24T23:30:00.000Z",
+      "week": 8,
+      "source": "https://pac-12.com/news/2026/10/21/this-week-in-pac-12-football-week-8.aspx",
+      "source_local": "2026-10-24T16:30:00-07:00",
+      "utc": "2026-10-24T23:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401860906",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 8.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        },
+        {
+          "game_id": "401860906",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -345,
+          "grade": "W",
+          "net_cents": 145
+        },
+        {
+          "game_id": "401860906",
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 59.5,
+          "price": -110,
+          "grade": "W",
+          "net_cents": 455
+        }
+      ]
+    },
+    {
+      "id": "401858497",
+      "game": "Iowa @ Minnesota",
+      "board_utc": "2026-10-24T19:30:00.000Z",
+      "week": 8,
+      "source": "https://gophersports.com/news/2026/10/21/football-game-7-preview-minnesota-vs-iowa",
+      "source_local": "2026-10-24T14:30:00-05:00",
+      "utc": "2026-10-24T19:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401858497",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 5.5,
+          "price": -115,
+          "grade": "W",
+          "net_cents": 435
+        },
+        {
+          "game_id": "401858497",
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -185,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401858497",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 41.5,
+          "price": -105,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "id": "401858499",
+      "game": "Michigan State @ UCLA",
+      "board_utc": "2026-10-24T19:30:00.000Z",
+      "week": 8,
+      "source": "https://uclabruins.com/news/2026/10/22/gameday-information-ucla-vs-michigan-state",
+      "source_local": "2026-10-24T12:30:00-07:00",
+      "utc": "2026-10-24T19:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401858499",
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 13.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        },
+        {
+          "game_id": "401858499",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -535,
+          "grade": "W",
+          "net_cents": 93
+        },
+        {
+          "game_id": "401858499",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 47.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    },
+    {
+      "id": "401858500",
+      "game": "USC @ Wisconsin",
+      "board_utc": "2026-10-24T23:30:00.000Z",
+      "week": 8,
+      "source": "https://uwbadgers.com/game-center/17147",
+      "source_local": "2026-10-24T18:30:00-05:00",
+      "utc": "2026-10-24T23:30:00.000Z",
+      "tickets": [
+        {
+          "game_id": "401858500",
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 2.5,
+          "price": -108,
+          "grade": "W",
+          "net_cents": 463
+        },
+        {
+          "game_id": "401858500",
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 114,
+          "grade": "W",
+          "net_cents": 570
+        },
+        {
+          "game_id": "401858500",
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 49.5,
+          "price": -110,
+          "grade": "L",
+          "net_cents": -500
+        }
+      ]
+    }
+  ],
+  "updated": [
+    {
+      "week": 7,
+      "modeled": 51,
+      "fully_priced": 30,
+      "games": 4,
+      "summary": {
+        "SPREAD": {
+          "n": 4,
+          "w": 2,
+          "l": 1,
+          "p": 1,
+          "stake_cents": 2000,
+          "net_cents": 452
+        },
+        "ML": {
+          "n": 4,
+          "w": 3,
+          "l": 1,
+          "p": 0,
+          "stake_cents": 2000,
+          "net_cents": 652
+        },
+        "TOTAL": {
+          "n": 4,
+          "w": 3,
+          "l": 1,
+          "p": 0,
+          "stake_cents": 2000,
+          "net_cents": 899
+        },
+        "ALL": {
+          "n": 12,
+          "w": 8,
+          "l": 3,
+          "p": 1,
+          "stake_cents": 6000,
+          "net_cents": 2003
+        }
+      },
+      "added": 21,
+      "remaining": 5,
+      "delta": {
+        "SPREAD": {
+          "n": 21,
+          "w": 11,
+          "l": 10,
+          "p": 0,
+          "stake_cents": 10500,
+          "net_cents": 110
+        },
+        "ML": {
+          "n": 21,
+          "w": 12,
+          "l": 9,
+          "p": 0,
+          "stake_cents": 10500,
+          "net_cents": 829
+        },
+        "TOTAL": {
+          "n": 21,
+          "w": 11,
+          "l": 10,
+          "p": 0,
+          "stake_cents": 10500,
+          "net_cents": 53
+        },
+        "ALL": {
+          "n": 63,
+          "w": 34,
+          "l": 29,
+          "p": 0,
+          "stake_cents": 31500,
+          "net_cents": 992
+        }
+      },
+      "updated": {
+        "SPREAD": {
+          "n": 25,
+          "w": 13,
+          "l": 11,
+          "p": 1,
+          "stake_cents": 12500,
+          "net_cents": 562
+        },
+        "ML": {
+          "n": 25,
+          "w": 15,
+          "l": 10,
+          "p": 0,
+          "stake_cents": 12500,
+          "net_cents": 1481
+        },
+        "TOTAL": {
+          "n": 25,
+          "w": 14,
+          "l": 11,
+          "p": 0,
+          "stake_cents": 12500,
+          "net_cents": 952
+        },
+        "ALL": {
+          "n": 75,
+          "w": 42,
+          "l": 32,
+          "p": 1,
+          "stake_cents": 37500,
+          "net_cents": 2995
+        }
+      }
+    },
+    {
+      "week": 8,
+      "modeled": 49,
+      "fully_priced": 31,
+      "games": 4,
+      "summary": {
+        "SPREAD": {
+          "n": 4,
+          "w": 2,
+          "l": 2,
+          "p": 0,
+          "stake_cents": 2000,
+          "net_cents": -73
+        },
+        "ML": {
+          "n": 4,
+          "w": 2,
+          "l": 2,
+          "p": 0,
+          "stake_cents": 2000,
+          "net_cents": 888
+        },
+        "TOTAL": {
+          "n": 4,
+          "w": 2,
+          "l": 2,
+          "p": 0,
+          "stake_cents": 2000,
+          "net_cents": -99
+        },
+        "ALL": {
+          "n": 12,
+          "w": 6,
+          "l": 6,
+          "p": 0,
+          "stake_cents": 6000,
+          "net_cents": 716
+        }
+      },
+      "added": 22,
+      "remaining": 5,
+      "delta": {
+        "SPREAD": {
+          "n": 22,
+          "w": 10,
+          "l": 12,
+          "p": 0,
+          "stake_cents": 11000,
+          "net_cents": -1556
+        },
+        "ML": {
+          "n": 22,
+          "w": 12,
+          "l": 10,
+          "p": 0,
+          "stake_cents": 11000,
+          "net_cents": -1922
+        },
+        "TOTAL": {
+          "n": 22,
+          "w": 11,
+          "l": 11,
+          "p": 0,
+          "stake_cents": 11000,
+          "net_cents": -498
+        },
+        "ALL": {
+          "n": 66,
+          "w": 33,
+          "l": 33,
+          "p": 0,
+          "stake_cents": 33000,
+          "net_cents": -3976
+        }
+      },
+      "updated": {
+        "SPREAD": {
+          "n": 26,
+          "w": 12,
+          "l": 14,
+          "p": 0,
+          "stake_cents": 13000,
+          "net_cents": -1629
+        },
+        "ML": {
+          "n": 26,
+          "w": 14,
+          "l": 12,
+          "p": 0,
+          "stake_cents": 13000,
+          "net_cents": -1034
+        },
+        "TOTAL": {
+          "n": 26,
+          "w": 13,
+          "l": 13,
+          "p": 0,
+          "stake_cents": 13000,
+          "net_cents": -597
+        },
+        "ALL": {
+          "n": 78,
+          "w": 39,
+          "l": 39,
+          "p": 0,
+          "stake_cents": 39000,
+          "net_cents": -3260
+        }
+      }
+    },
+    {
+      "week": 9,
+      "modeled": 45,
+      "fully_priced": 36,
+      "games": 31,
+      "summary": {
+        "SPREAD": {
+          "n": 31,
+          "w": 19,
+          "l": 11,
+          "p": 1,
+          "stake_cents": 15500,
+          "net_cents": 3168
+        },
+        "ML": {
+          "n": 31,
+          "w": 21,
+          "l": 10,
+          "p": 0,
+          "stake_cents": 15500,
+          "net_cents": 1715
+        },
+        "TOTAL": {
+          "n": 31,
+          "w": 13,
+          "l": 18,
+          "p": 0,
+          "stake_cents": 15500,
+          "net_cents": -3037
+        },
+        "ALL": {
+          "n": 93,
+          "w": 53,
+          "l": 39,
+          "p": 1,
+          "stake_cents": 46500,
+          "net_cents": 1846
+        }
+      },
+      "added": 4,
+      "remaining": 1,
+      "delta": {
+        "SPREAD": {
+          "n": 4,
+          "w": 0,
+          "l": 4,
+          "p": 0,
+          "stake_cents": 2000,
+          "net_cents": -2000
+        },
+        "ML": {
+          "n": 4,
+          "w": 1,
+          "l": 3,
+          "p": 0,
+          "stake_cents": 2000,
+          "net_cents": -1296
+        },
+        "TOTAL": {
+          "n": 4,
+          "w": 0,
+          "l": 4,
+          "p": 0,
+          "stake_cents": 2000,
+          "net_cents": -2000
+        },
+        "ALL": {
+          "n": 12,
+          "w": 1,
+          "l": 11,
+          "p": 0,
+          "stake_cents": 6000,
+          "net_cents": -5296
+        }
+      },
+      "updated": {
+        "SPREAD": {
+          "n": 35,
+          "w": 19,
+          "l": 15,
+          "p": 1,
+          "stake_cents": 17500,
+          "net_cents": 1168
+        },
+        "ML": {
+          "n": 35,
+          "w": 22,
+          "l": 13,
+          "p": 0,
+          "stake_cents": 17500,
+          "net_cents": 419
+        },
+        "TOTAL": {
+          "n": 35,
+          "w": 13,
+          "l": 22,
+          "p": 0,
+          "stake_cents": 17500,
+          "net_cents": -5037
+        },
+        "ALL": {
+          "n": 105,
+          "w": 54,
+          "l": 50,
+          "p": 1,
+          "stake_cents": 52500,
+          "net_cents": -3450
+        }
+      }
+    },
+    {
+      "week": 10,
+      "modeled": 55,
+      "fully_priced": 53,
+      "games": 53,
+      "summary": {
+        "SPREAD": {
+          "n": 53,
+          "w": 27,
+          "l": 26,
+          "p": 0,
+          "stake_cents": 26500,
+          "net_cents": -860
+        },
+        "ML": {
+          "n": 53,
+          "w": 29,
+          "l": 24,
+          "p": 0,
+          "stake_cents": 26500,
+          "net_cents": -3502
+        },
+        "TOTAL": {
+          "n": 53,
+          "w": 25,
+          "l": 28,
+          "p": 0,
+          "stake_cents": 26500,
+          "net_cents": -2558
+        },
+        "ALL": {
+          "n": 159,
+          "w": 81,
+          "l": 78,
+          "p": 0,
+          "stake_cents": 79500,
+          "net_cents": -6920
+        }
+      },
+      "added": 0,
+      "remaining": 0,
+      "delta": {
+        "SPREAD": {
+          "n": 0,
+          "w": 0,
+          "l": 0,
+          "p": 0,
+          "stake_cents": 0,
+          "net_cents": 0
+        },
+        "ML": {
+          "n": 0,
+          "w": 0,
+          "l": 0,
+          "p": 0,
+          "stake_cents": 0,
+          "net_cents": 0
+        },
+        "TOTAL": {
+          "n": 0,
+          "w": 0,
+          "l": 0,
+          "p": 0,
+          "stake_cents": 0,
+          "net_cents": 0
+        },
+        "ALL": {
+          "n": 0,
+          "w": 0,
+          "l": 0,
+          "p": 0,
+          "stake_cents": 0,
+          "net_cents": 0
+        }
+      },
+      "updated": {
+        "SPREAD": {
+          "n": 53,
+          "w": 27,
+          "l": 26,
+          "p": 0,
+          "stake_cents": 26500,
+          "net_cents": -860
+        },
+        "ML": {
+          "n": 53,
+          "w": 29,
+          "l": 24,
+          "p": 0,
+          "stake_cents": 26500,
+          "net_cents": -3502
+        },
+        "TOTAL": {
+          "n": 53,
+          "w": 25,
+          "l": 28,
+          "p": 0,
+          "stake_cents": 26500,
+          "net_cents": -2558
+        },
+        "ALL": {
+          "n": 159,
+          "w": 81,
+          "l": 78,
+          "p": 0,
+          "stake_cents": 79500,
+          "net_cents": -6920
+        }
+      }
+    }
+  ],
+  "pool": {
+    "SPREAD": {
+      "n": 139,
+      "w": 71,
+      "l": 66,
+      "p": 2,
+      "stake_cents": 69500,
+      "net_cents": -759
+    },
+    "ML": {
+      "n": 139,
+      "w": 80,
+      "l": 59,
+      "p": 0,
+      "stake_cents": 69500,
+      "net_cents": -2636
+    },
+    "TOTAL": {
+      "n": 139,
+      "w": 65,
+      "l": 74,
+      "p": 0,
+      "stake_cents": 69500,
+      "net_cents": -7240
+    },
+    "ALL": {
+      "n": 417,
+      "w": 216,
+      "l": 199,
+      "p": 2,
+      "stake_cents": 208500,
+      "net_cents": -10635
+    }
+  },
+  "leave_one_out": [
+    {
+      "week": 7,
+      "summary": {
+        "SPREAD": {
+          "n": 114,
+          "w": 58,
+          "l": 55,
+          "p": 1,
+          "stake_cents": 57000,
+          "net_cents": -1321
+        },
+        "ML": {
+          "n": 114,
+          "w": 65,
+          "l": 49,
+          "p": 0,
+          "stake_cents": 57000,
+          "net_cents": -4117
+        },
+        "TOTAL": {
+          "n": 114,
+          "w": 51,
+          "l": 63,
+          "p": 0,
+          "stake_cents": 57000,
+          "net_cents": -8192
+        },
+        "ALL": {
+          "n": 342,
+          "w": 174,
+          "l": 167,
+          "p": 1,
+          "stake_cents": 171000,
+          "net_cents": -13630
+        }
+      }
+    },
+    {
+      "week": 8,
+      "summary": {
+        "SPREAD": {
+          "n": 113,
+          "w": 59,
+          "l": 52,
+          "p": 2,
+          "stake_cents": 56500,
+          "net_cents": 870
+        },
+        "ML": {
+          "n": 113,
+          "w": 66,
+          "l": 47,
+          "p": 0,
+          "stake_cents": 56500,
+          "net_cents": -1602
+        },
+        "TOTAL": {
+          "n": 113,
+          "w": 52,
+          "l": 61,
+          "p": 0,
+          "stake_cents": 56500,
+          "net_cents": -6643
+        },
+        "ALL": {
+          "n": 339,
+          "w": 177,
+          "l": 160,
+          "p": 2,
+          "stake_cents": 169500,
+          "net_cents": -7375
+        }
+      }
+    },
+    {
+      "week": 9,
+      "summary": {
+        "SPREAD": {
+          "n": 104,
+          "w": 52,
+          "l": 51,
+          "p": 1,
+          "stake_cents": 52000,
+          "net_cents": -1927
+        },
+        "ML": {
+          "n": 104,
+          "w": 58,
+          "l": 46,
+          "p": 0,
+          "stake_cents": 52000,
+          "net_cents": -3055
+        },
+        "TOTAL": {
+          "n": 104,
+          "w": 52,
+          "l": 52,
+          "p": 0,
+          "stake_cents": 52000,
+          "net_cents": -2203
+        },
+        "ALL": {
+          "n": 312,
+          "w": 162,
+          "l": 149,
+          "p": 1,
+          "stake_cents": 156000,
+          "net_cents": -7185
+        }
+      }
+    },
+    {
+      "week": 10,
+      "summary": {
+        "SPREAD": {
+          "n": 86,
+          "w": 44,
+          "l": 40,
+          "p": 2,
+          "stake_cents": 43000,
+          "net_cents": 101
+        },
+        "ML": {
+          "n": 86,
+          "w": 51,
+          "l": 35,
+          "p": 0,
+          "stake_cents": 43000,
+          "net_cents": 866
+        },
+        "TOTAL": {
+          "n": 86,
+          "w": 40,
+          "l": 46,
+          "p": 0,
+          "stake_cents": 43000,
+          "net_cents": -4682
+        },
+        "ALL": {
+          "n": 258,
+          "w": 135,
+          "l": 121,
+          "p": 2,
+          "stake_cents": 129000,
+          "net_cents": -3715
+        }
+      }
+    }
+  ],
+  "over_under_new": [
+    {
+      "week": 7,
+      "over": {
+        "n": 14,
+        "w": 7,
+        "l": 7,
+        "p": 0,
+        "stake_cents": 7000,
+        "net_cents": -268,
+        "prices": [
+          -110,
+          -110,
+          -110,
+          -110,
+          -110,
+          -110,
+          -104,
+          -110,
+          -110,
+          -110,
+          -110,
+          -110,
+          -105,
+          -110
+        ]
+      },
+      "under": {
+        "n": 7,
+        "w": 4,
+        "l": 3,
+        "p": 0,
+        "stake_cents": 3500,
+        "net_cents": 321,
+        "prices": [
+          -110,
+          -110,
+          -115,
+          -105,
+          -110,
+          -110,
+          -118
+        ]
+      }
+    },
+    {
+      "week": 8,
+      "over": {
+        "n": 13,
+        "w": 7,
+        "l": 6,
+        "p": 0,
+        "stake_cents": 6500,
+        "net_cents": 182,
+        "prices": [
+          -110,
+          -110,
+          -110,
+          -115,
+          -106,
+          -110,
+          -110,
+          -115,
+          -110,
+          -110,
+          -105,
+          -110,
+          -110
+        ]
+      },
+      "under": {
+        "n": 9,
+        "w": 4,
+        "l": 5,
+        "p": 0,
+        "stake_cents": 4500,
+        "net_cents": -680,
+        "prices": [
+          -110,
+          -110,
+          -110,
+          -110,
+          -110,
+          -110,
+          -110,
+          -115,
+          -110
+        ]
+      }
+    },
+    {
+      "week": 9,
+      "over": {
+        "n": 1,
+        "w": 0,
+        "l": 1,
+        "p": 0,
+        "stake_cents": 500,
+        "net_cents": -500,
+        "prices": [
+          -110
+        ]
+      },
+      "under": {
+        "n": 3,
+        "w": 0,
+        "l": 3,
+        "p": 0,
+        "stake_cents": 1500,
+        "net_cents": -1500,
+        "prices": [
+          -115,
+          -110,
+          -110
+        ]
+      }
+    },
+    {
+      "week": 10,
+      "over": {
+        "n": 0,
+        "w": 0,
+        "l": 0,
+        "p": 0,
+        "stake_cents": 0,
+        "net_cents": 0,
+        "prices": []
+      },
+      "under": {
+        "n": 0,
+        "w": 0,
+        "l": 0,
+        "p": 0,
+        "stake_cents": 0,
+        "net_cents": 0,
+        "prices": []
+      }
+    }
+  ],
+  "unresolved": {
+    "7": [
+      {
+        "id": "401871054",
+        "game": "Kennesaw St. @ Missouri St.",
+        "board_utc": "2026-10-14T23:30:00.000Z"
+      },
+      {
+        "id": "401866443",
+        "game": "W. Michigan @ C. Michigan",
+        "board_utc": "2026-10-17T17:30:00.000Z"
+      },
+      {
+        "id": "401860903",
+        "game": "Washington St. @ Oregon State",
+        "board_utc": "2026-10-17T22:00:00.000Z"
+      },
+      {
+        "id": "401860904",
+        "game": "Fresno St. @ San Diego St.",
+        "board_utc": "2026-10-18T02:30:00.000Z"
+      },
+      {
+        "id": "401858492",
+        "game": "Nebraska @ Oregon",
+        "board_utc": "2026-10-17T19:00:00.000Z"
+      }
+    ],
+    "8": [
+      {
+        "id": "401871055",
+        "game": "Middle Tennessee @ Florida International",
+        "board_utc": "2026-10-20T23:00:00.000Z"
+      },
+      {
+        "id": "401856835",
+        "game": "BYU @ UCF",
+        "board_utc": "2026-10-24T16:00:00.000Z"
+      },
+      {
+        "id": "401856838",
+        "game": "Iowa State @ Arizona",
+        "board_utc": "2026-10-24T19:00:00.000Z"
+      },
+      {
+        "id": "401864527",
+        "game": "North Dakota State @ New Mexico",
+        "board_utc": "2026-10-25T02:00:00.000Z"
+      },
+      {
+        "id": "401856837",
+        "game": "Houston @ Utah",
+        "board_utc": "2026-10-24T18:00:00.000Z"
+      }
+    ],
+    "9": [
+      {
+        "id": "401871072",
+        "game": "Sam Houston @ Missouri State",
+        "board_utc": "2026-10-28T00:00:00.000Z"
+      }
+    ]
+  },
+  "clock_conflicts": [
+    {
+      "id": "401858492",
+      "detail": "CBS 19:00Z versus Nebraska announcement 22:00 CT (03:00Z Sunday)",
+      "source": "https://huskers.com/news/2026/10/11/nebraska-oregon-kickoff-time-and-tv-set"
+    },
+    {
+      "id": "401871072",
+      "detail": "Home preview lists 7:00 and 7:05 CT",
+      "source": "https://missouristatebears.com/news/2026/10/23/football-bears-back-home-tuesday-to-host-sam-houston"
+    },
+    {
+      "id": "401871055",
+      "detail": "Home pregame headline 7:02 ET, body 7:00 ET",
+      "source": "https://fiusports.com/news/2026/10/19/football-preps-for-middle-tennessee-hosts-blue-raiders-tuesday-night-in-final-weekday-cusa-game.aspx"
+    },
+    {
+      "id": "401871054",
+      "detail": "Home pregame preview lists 6:32 CT while schedule lists 6:30 CT",
+      "source": "https://missouristatebears.com/news/2026/10/11/football-bears-back-home-wednesday-to-take-on-defending-cusa-champions"
+    }
+  ],
+  "notes": [
+    "Research replay only. Timing matches cannot establish a forward betting edge.",
+    "The older CUSA announcement for Jacksonville State at New Mexico State gave a different time. The host's 6 p.m. Mountain and October broadcast schedule agree with CBS. The October host preview supersedes the older conference announcement for WKU at Sam Houston.",
+    "Washington at Purdue uses the host's local 8 p.m. announcement, corroborated by the host's May announcement, over the Nebraska roundup's 8 p.m. CT label."
+  ]
+}
