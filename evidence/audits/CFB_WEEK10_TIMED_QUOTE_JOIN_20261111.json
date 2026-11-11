@@ -1,0 +1,4324 @@
+{
+  "schema": "CFB_ROADMAP_M1_TIMED_QUOTE_JOIN_V1",
+  "pinned_head": "a5955c25d818e0502e8765d8b1e68efb741e857c",
+  "sources": [
+    {
+      "path": "evidence/scheduler_qa/CFB_WEEK10_ORIGINAL_ANCESTRY_RECOVERY_20261104.json",
+      "sha": "47736c0fd9ff49545db7e46b508805658a1c7a92"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z_R2.json",
+      "sha": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_OFFICIAL_OUTCOME_QA_20261108T160449Z.json",
+      "sha": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_R91_CBS_DIRECTED_SIX_BRANCH_SOURCE_INVENTORY_20261101T173123853Z.json",
+      "sha": "abe0afe3f7e435875645d029faa57b7cdc7ddec0"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_R90_CBS_FRESH_SOURCE_CAPTURE_20261101T173123853Z.md",
+      "sha": "1b9605ef579aad8e55e2a7f116f7b817f2bb988a"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_CBS_ESPN_DIRECTED_IDENTITY_JOIN_20261031.json",
+      "sha": "4618ed4052381613095f9486f729c6ebc14821a8"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_HOT_SHEET_2026-11-06_1544CT.md",
+      "sha": "57c55e6c68943d8e0ce5ab700f42e3328570b8bb"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_R83_EARLY_WEEK_KICKOFF_VERIFICATION_20261031.json",
+      "sha": "4d3043d5e71f6d420a942714478157d9c7aba5db"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_WED_THU_OFFICIAL_KICKOFF_PROVENANCE_20261101.json",
+      "sha": "8df78ac8abd1f94423ef92f0a4679e9acfdf1153"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_FRIDAY_OFFICIAL_KICKOFF_PROVENANCE_20261101.json",
+      "sha": "8a9ce163a877ba2adde582b11ecb06a6bb838bad"
+    },
+    {
+      "path": "evidence/operational/CFB_CBS_WEEK10_TABLE_CAPTURE_20261104T182916Z.md",
+      "sha": "30d0fbbd7e7ceb460171c8bbfa0896722e259284"
+    }
+  ],
+  "quote_recovered_by": "2026-11-01T17:31:25.116Z",
+  "method": [
+    "Unique directed game-ID joins across 63 original, quote and final rows. Source short names follow the persisted directed crosswalk. All 165 original numeric strings matched the outcome parent exactly.",
+    "Qualified finals are the mutually exclusive union of 46 official parent rows and 17 official supplement rows.",
+    "Kickoff checks use retained source audits or qualified saved presentation clocks. Every observed planning cutoff was matched to its immutable original review by blob and game ID.",
+    "Use the single R91 board for comparable denominators. The two modeled gaps have prices in a later retained capture and stay outside the single-snapshot cohort.",
+    "The R91 snapshot precedes the 18 retained conditional review windows. Their cutoff checks establish chronology only. Those prices do not represent the later reviewed number, execution window or venue offer. Mixed-book display prices are exploratory only. No CLV or combined odds inferred."
+  ],
+  "modeled_denominators": {
+    "all": {
+      "games": 55,
+      "priced": {
+        "away_spread": 53,
+        "home_spread": 53,
+        "away_ml": 53,
+        "home_ml": 53,
+        "over_total": 53,
+        "under_total": 53
+      }
+    },
+    "pregame": {
+      "games": 25,
+      "priced": {
+        "away_spread": 25,
+        "home_spread": 25,
+        "away_ml": 25,
+        "home_ml": 25,
+        "over_total": 25,
+        "under_total": 25
+      }
+    },
+    "pregame_and_review_cutoff": {
+      "games": 18,
+      "priced": {
+        "away_spread": 18,
+        "home_spread": 18,
+        "away_ml": 18,
+        "home_ml": 18,
+        "over_total": 18,
+        "under_total": 18
+      }
+    }
+  },
+  "rows": [
+    {
+      "game_id": "401866453",
+      "away": "Ohio",
+      "home": "Akron",
+      "source_away": "Ohio",
+      "source_home": "Akron",
+      "original": {
+        "pred_margin": "10.365389485491425",
+        "pred_total": "52.76064387323792",
+        "pred_win": "0.7411891720882852"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 28,
+        "home": 20,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-04T00:00:00.000Z",
+        "blob": "4d3043d5e71f6d420a942714478157d9c7aba5db",
+        "route": "SOURCE_AUDIT"
+      },
+      "decision": "HISTORICAL_GAP",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -12.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 12.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -469,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 420,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 48.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 48.5,
+          "price": -105,
+          "book_icon_id": "35",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401866454",
+      "away": "Buffalo",
+      "home": "Miami (OH)",
+      "source_away": "Buffalo",
+      "source_home": "Miami-OH",
+      "original": {
+        "pred_margin": "11.720713530764943",
+        "pred_total": "53.6393554794765",
+        "pred_win": "0.769956822513323"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 34,
+        "home": 31,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-04T01:00:00.000Z",
+        "blob": "4d3043d5e71f6d420a942714478157d9c7aba5db",
+        "route": "SOURCE_AUDIT"
+      },
+      "decision": "HISTORICAL_GAP",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 6.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -5.5,
+          "price": -115,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 195,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -220,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 44.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 44.5,
+          "price": -104,
+          "book_icon_id": "35",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401866455",
+      "away": "Ball State",
+      "home": "Massachusetts",
+      "source_away": "Ball St.",
+      "source_home": "UMass",
+      "original": {
+        "pred_margin": "26.11695812114495",
+        "pred_total": "50.971213997264655",
+        "pred_win": "0.9319500450031746"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 30,
+        "home": 31,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-05T00:00:00.000Z",
+        "blob": "8df78ac8abd1f94423ef92f0a4679e9acfdf1153",
+        "route": "SOURCE_AUDIT"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-04T23:00:00Z",
+        "blob": "14329717deeff1629d7b90f321a27cda4f1753ca"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 4.5,
+          "price": -115,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -3.5,
+          "price": -115,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 142,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -170,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 48.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 48.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401866456",
+      "away": "Central Michigan",
+      "home": "Eastern Michigan",
+      "source_away": "C. Michigan",
+      "source_home": "E. Michigan",
+      "original": {
+        "pred_margin": "-2.7860217274720576",
+        "pred_total": "42.92255127170241",
+        "pred_win": "0.3934278618775662"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 35,
+        "home": 7,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-05T00:30:00.000Z",
+        "blob": "8df78ac8abd1f94423ef92f0a4679e9acfdf1153",
+        "route": "SOURCE_AUDIT"
+      },
+      "decision": "HISTORICAL_GAP",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 1.5,
+          "price": -108,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -1.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -102,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -118,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 45.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 45.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401866457",
+      "away": "Toledo",
+      "home": "Sacramento State",
+      "source_away": "Toledo",
+      "source_home": "Sacramento St.",
+      "original": {
+        "pred_margin": "-5.156938754516926",
+        "pred_total": "54.25392295084098",
+        "pred_win": "0.3464234810248434"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 20,
+        "home": 17,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-05T00:00:00.000Z",
+        "blob": "8df78ac8abd1f94423ef92f0a4679e9acfdf1153",
+        "route": "SOURCE_AUDIT"
+      },
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -27.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 27.5,
+          "price": -102,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -4545,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 2000,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401862817",
+      "away": "UTSA",
+      "home": "Florida Atlantic",
+      "source_away": "UTSA",
+      "source_home": "FAU",
+      "original": {
+        "pred_margin": "-5.195659872391833",
+        "pred_total": "54.315494919956976",
+        "pred_win": "0.3571857491486996"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 29,
+        "home": 60,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-06T00:30:00.000Z",
+        "blob": "8df78ac8abd1f94423ef92f0a4679e9acfdf1153",
+        "route": "SOURCE_AUDIT"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-05T19:00:00Z",
+        "blob": "1fe244d4fd1a54309caef592f2e295763f3df136"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -7.5,
+          "price": 112,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 7.5,
+          "price": -118,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -225,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 220,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 72.5,
+          "price": -118,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 73.5,
+          "price": -118,
+          "book_icon_id": "35",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401869964",
+      "away": "James Madison",
+      "home": "Southern Miss",
+      "source_away": "James Madison",
+      "source_home": "So. Miss",
+      "original": {
+        "pred_margin": "-14.404067861695497",
+        "pred_total": "52.98662341636999",
+        "pred_win": "0.20791881268972284"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 54,
+        "home": 23,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-06T01:00:00.000Z",
+        "blob": "8df78ac8abd1f94423ef92f0a4679e9acfdf1153",
+        "route": "SOURCE_AUDIT"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-05T19:00:00Z",
+        "blob": "9625ef5a64219882ac5a47aef4999ead336acda9"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -14.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 14.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -599,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 490,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 55.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 55.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858288",
+      "away": "Virginia Tech",
+      "home": "SMU",
+      "source_away": "Virginia Tech",
+      "source_home": "SMU",
+      "original": {
+        "pred_margin": "-2.8565813934429176",
+        "pred_total": "57.50370019732571",
+        "pred_win": "0.4098040927761556"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 28,
+        "home": 51,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T00:00:00.000Z",
+        "blob": "8a9ce163a877ba2adde582b11ecb06a6bb838bad",
+        "route": "SOURCE_AUDIT"
+      },
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 6.5,
+          "price": -115,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -6.5,
+          "price": -105,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 176,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -205,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 55.5,
+          "price": -110,
+          "book_icon_id": "35",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 56.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401862818",
+      "away": "South Florida",
+      "home": "East Carolina",
+      "source_away": "South Florida",
+      "source_home": "East Carolina",
+      "original": {
+        "pred_margin": "-11.807863806889149",
+        "pred_total": "48.45215367034799",
+        "pred_win": "0.22121155105652215"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 17,
+        "home": 20,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T00:30:00.000Z",
+        "blob": "8a9ce163a877ba2adde582b11ecb06a6bb838bad",
+        "route": "SOURCE_AUDIT"
+      },
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -1.5,
+          "price": -105,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 1.5,
+          "price": -115,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -111,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -108,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 45.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 45.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858510",
+      "away": "Nebraska",
+      "home": "Illinois",
+      "source_away": "Nebraska",
+      "source_home": "Illinois",
+      "original": {
+        "pred_margin": "-1.761681196539541",
+        "pred_total": "55.71166433271795",
+        "pred_win": "0.522416791937179"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 13,
+        "home": 24,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T01:00:00.000Z",
+        "blob": "8a9ce163a877ba2adde582b11ecb06a6bb838bad",
+        "route": "SOURCE_AUDIT"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-05T19:00:00Z",
+        "blob": "cdf4ccc860d4893136d1fffe801b46f750976a0f"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -5.5,
+          "price": -105,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 5.5,
+          "price": -110,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -198,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 172,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 47.5,
+          "price": -115,
+          "book_icon_id": "35",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 48.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401864533",
+      "away": "New Mexico",
+      "home": "Nevada",
+      "source_away": "New Mexico",
+      "source_home": "Nevada",
+      "original": {
+        "pred_margin": "-3.3784963393467207",
+        "pred_total": "42.162809399335046",
+        "pred_win": "0.42443467359009246"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 31,
+        "home": 3,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T02:00:00.000Z",
+        "blob": "8a9ce163a877ba2adde582b11ecb06a6bb838bad",
+        "route": "SOURCE_AUDIT"
+      },
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -12.5,
+          "price": -104,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 12.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -455,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 390,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 42.5,
+          "price": -106,
+          "book_icon_id": "35",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 43.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856855",
+      "away": "TCU",
+      "home": "Arizona",
+      "source_away": "TCU",
+      "source_home": "Arizona",
+      "original": {
+        "pred_margin": "1.5517727433164694",
+        "pred_total": "48.752150569762044",
+        "pred_win": "0.5446892660956925"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 28,
+        "home": 29,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T03:15:00.000Z",
+        "blob": "8a9ce163a877ba2adde582b11ecb06a6bb838bad",
+        "route": "SOURCE_AUDIT"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-06T19:00:00Z",
+        "blob": "22ae4afd519e011928c9b9fc92b3c372f57991cd"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 8.5,
+          "price": -105,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -7.5,
+          "price": -114,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 260,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -300,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 44.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 44.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856738",
+      "away": "Arkansas",
+      "home": "Auburn",
+      "source_away": "Arkansas",
+      "source_home": "Auburn",
+      "original": {
+        "pred_margin": "16.28981148199242",
+        "pred_total": "54.4504980271418",
+        "pred_win": "0.8089180472483015"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 23,
+        "home": 26,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 10.5,
+          "price": -105,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -10.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 330,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -380,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 50.5,
+          "price": -106,
+          "book_icon_id": "35",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 50.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856739",
+      "away": "Oklahoma",
+      "home": "Florida",
+      "source_away": "Oklahoma",
+      "source_home": "Florida",
+      "original": {
+        "pred_margin": "9.171592972348307",
+        "pred_total": "51.110471208670816",
+        "pred_win": "0.7164656477262331"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 23,
+        "home": 7,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 5.5,
+          "price": -105,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -5.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 180,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -198,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 46.5,
+          "price": -110,
+          "book_icon_id": "35",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 47.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856740",
+      "away": "Alabama",
+      "home": "LSU",
+      "source_away": "Alabama",
+      "source_home": "LSU",
+      "original": {
+        "pred_margin": "3.5090584473900757",
+        "pred_total": "54.06402401878285",
+        "pred_win": "0.5694578967572295"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 31,
+        "home": 13,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T20:30:00.000Z",
+        "blob": "57c55e6c68943d8e0ce5ab700f42e3328570b8bb",
+        "route": "QUALIFIED_SAVED_PRESENTATION"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-06T19:00:00Z",
+        "blob": "3e59d6dc899ab2fa3c760172d42626969edbd3ce"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 4.5,
+          "price": -115,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -3.5,
+          "price": -115,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 146,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -175,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 52.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 52.5,
+          "price": -108,
+          "book_icon_id": "34",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856741",
+      "away": "Georgia",
+      "home": "Ole Miss",
+      "source_away": "Georgia",
+      "source_home": "Ole Miss",
+      "original": {
+        "pred_margin": "-11.035422029117997",
+        "pred_total": "62.08393125657636",
+        "pred_win": "0.2632286982594048"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 42,
+        "home": 7,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -3,
+          "price": -105,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 3,
+          "price": -111,
+          "book_icon_id": "34"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -142,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 120,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 56.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 56.5,
+          "price": -108,
+          "book_icon_id": "34",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856742",
+      "away": "Vanderbilt",
+      "home": "Mississippi State",
+      "source_away": "Vanderbilt",
+      "source_home": "Miss. State",
+      "original": {
+        "pred_margin": "15.549626345548761",
+        "pred_total": "55.56747078426483",
+        "pred_win": "0.8182005921246576"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 25,
+        "home": 23,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 3.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -3.5,
+          "price": 100,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 126,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -148,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 47.5,
+          "price": -115,
+          "book_icon_id": "35",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 48.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856743",
+      "away": "Texas",
+      "home": "Missouri",
+      "source_away": "Texas",
+      "source_home": "Missouri",
+      "original": {
+        "pred_margin": "2.9866386354064347",
+        "pred_total": "47.6316901644869",
+        "pred_win": "0.5336080010391044"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 34,
+        "home": 20,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -3,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 3.5,
+          "price": -106,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -148,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 136,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 46.5,
+          "price": -112,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 47.5,
+          "price": -110,
+          "book_icon_id": "35",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856744",
+      "away": "Texas A&M",
+      "home": "South Carolina",
+      "source_away": "Texas A&M",
+      "source_home": "South Carolina",
+      "original": {
+        "pred_margin": "12.715251331697846",
+        "pred_total": "50.5036568944936",
+        "pred_win": "0.7454572368140134"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 9,
+        "home": 17,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 7.5,
+          "price": -122,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -7,
+          "price": -115,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 220,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -258,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856745",
+      "away": "Kentucky",
+      "home": "Tennessee",
+      "source_away": "Kentucky",
+      "source_home": "Tennessee",
+      "original": {
+        "pred_margin": "15.38457321945768",
+        "pred_total": "57.266263746361346",
+        "pred_win": "0.8323894976085278"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 6,
+        "home": 34,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 6.5,
+          "price": -118,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -6,
+          "price": -111,
+          "book_icon_id": "34"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 184,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -198,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 50.5,
+          "price": -108,
+          "book_icon_id": "34",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 50.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856849",
+      "away": "BYU",
+      "home": "Utah",
+      "source_away": "BYU",
+      "source_home": "Utah",
+      "original": {
+        "pred_margin": "7.736699271390598",
+        "pred_total": "55.90234467514159",
+        "pred_win": "0.6922489559371883"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 20,
+        "home": 28,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T17:00:00.000Z",
+        "blob": "57c55e6c68943d8e0ce5ab700f42e3328570b8bb",
+        "route": "QUALIFIED_SAVED_PRESENTATION"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-06T19:00:00Z",
+        "blob": "39719168738adabbd416638c3413d9e5a9fb42b9"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 5.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -5.5,
+          "price": -108,
+          "book_icon_id": "34"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 164,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -170,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 45.5,
+          "price": -105,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 45.5,
+          "price": -105,
+          "book_icon_id": "35",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856850",
+      "away": "UCF",
+      "home": "Kansas",
+      "source_away": "UCF",
+      "source_home": "Kansas",
+      "original": {
+        "pred_margin": "1.060836045636887",
+        "pred_total": "50.082973477839204",
+        "pred_win": "0.5283457173006264"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 33,
+        "home": 32,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "home_spread": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "away_ml": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "home_ml": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "over_total": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "under_total": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        }
+      },
+      "later_display": {
+        "source_blob": "30d0fbbd7e7ceb460171c8bbfa0896722e259284",
+        "recovered_by": "2026-11-04T18:29:16.263750+00:00",
+        "rows": [
+          "| [UCF](https://www.cbssports.com/college-football/teams/UCF/ucf-knights/) | QUARANTINED | QUARANTINED | ![](https://sports.cbsimg.net/fly/images/books-icons/34.svg) +3 -108 Remove | ![](https://sports.cbsimg.net/fly/images/books-icons/34.svg) +125 Remove | ![](https://sports.cbsimg.net/fly/images/books-icons/34.svg) o48.5 -105 Remove |",
+          "| [Kansas](https://www.cbssports.com/college-football/teams/KANSAS/kansas-jayhawks/) | QUARANTINED | QUARANTINED | ![](https://sports.cbsimg.net/fly/images/books-icons/34.svg) -3 -111 Remove | ![](https://sports.cbsimg.net/fly/images/books-icons/34.svg) -152 Remove | ![](https://sports.cbsimg.net/fly/images/books-icons/34.svg) u48.5 -114 Remove |"
+        ],
+        "kickoff_and_cutoff_qualified": false
+      }
+    },
+    {
+      "game_id": "401856851",
+      "away": "Cincinnati",
+      "home": "Houston",
+      "source_away": "Cincinnati",
+      "source_home": "Houston",
+      "original": {
+        "pred_margin": "7.466094858371314",
+        "pred_total": "57.33789708596704",
+        "pred_win": "0.6907526229114599"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 24,
+        "home": 31,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T20:30:00.000Z",
+        "blob": "57c55e6c68943d8e0ce5ab700f42e3328570b8bb",
+        "route": "QUALIFIED_SAVED_PRESENTATION"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-06T19:00:00Z",
+        "blob": "74bc1140fac964789451078324c799a07ebccd4b"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 10.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -10.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 320,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -400,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 61.5,
+          "price": -105,
+          "book_icon_id": "35",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 62.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856852",
+      "away": "Colorado",
+      "home": "Arizona State",
+      "source_away": "Colorado",
+      "source_home": "Arizona St.",
+      "original": {
+        "pred_margin": "8.465787428558665",
+        "pred_total": "52.14262652604433",
+        "pred_win": "0.7069148293065931"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 10,
+        "home": 20,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": {
+        "utc": "2026-11-08T00:30:00.000Z",
+        "blob": "57c55e6c68943d8e0ce5ab700f42e3328570b8bb",
+        "route": "QUALIFIED_SAVED_PRESENTATION"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-06T19:00:00Z",
+        "blob": "a5564026a631fbe5001f79895a1977a5a2a5eee7"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 4,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -3.5,
+          "price": -122,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 155,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -170,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 48.5,
+          "price": -114,
+          "book_icon_id": "35",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 49.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856853",
+      "away": "Iowa State",
+      "home": "Baylor",
+      "source_away": "Iowa St.",
+      "source_home": "Baylor",
+      "original": {
+        "pred_margin": "4.822221860731134",
+        "pred_total": "46.37501164360453",
+        "pred_win": "0.610435274455332"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 31,
+        "home": 42,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T17:00:00.000Z",
+        "blob": "57c55e6c68943d8e0ce5ab700f42e3328570b8bb",
+        "route": "QUALIFIED_SAVED_PRESENTATION"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-06T19:00:00Z",
+        "blob": "d2448611ec3c5489477de74c9b3ad07cf4a7be25"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 9.5,
+          "price": -112,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -8.5,
+          "price": -114,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 270,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -330,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856854",
+      "away": "Oklahoma State",
+      "home": "Kansas State",
+      "source_away": "Oklahoma State",
+      "source_home": "Kansas State",
+      "original": {
+        "pred_margin": "15.665675902746544",
+        "pred_total": "51.31526209623849",
+        "pred_win": "0.8288305481594604"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 66,
+        "home": 28,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -6.5,
+          "price": -105,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 6.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -192,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 172,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 60.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 61.5,
+          "price": -105,
+          "book_icon_id": "35",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401856856",
+      "away": "West Virginia",
+      "home": "Texas Tech",
+      "source_away": "West Virginia",
+      "source_home": "Texas Tech",
+      "original": {
+        "pred_margin": "0.1988449072012387",
+        "pred_total": "53.624467589373545",
+        "pred_win": "0.6134979909132381"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 48,
+        "home": 53,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 17.5,
+          "price": -122,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -17.5,
+          "price": 100,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 570,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -800,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 63.5,
+          "price": -110,
+          "book_icon_id": "35",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 63.5,
+          "price": -110,
+          "book_icon_id": "35",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858285",
+      "away": "Clemson",
+      "home": "Syracuse",
+      "source_away": "Clemson",
+      "source_home": "Syracuse",
+      "original": null,
+      "exclusion": "away_prior_points_missing",
+      "final": {
+        "away": 18,
+        "home": 13,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -1.5,
+          "price": -105,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 1.5,
+          "price": -112,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -113,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -105,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 49.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 50.5,
+          "price": -112,
+          "book_icon_id": "35",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858286",
+      "away": "Duke",
+      "home": "NC State",
+      "source_away": "Duke",
+      "source_home": "NC State",
+      "original": {
+        "pred_margin": "4.228345707284807",
+        "pred_total": "48.620614746519706",
+        "pred_win": "0.6292798334885475"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 41,
+        "home": 3,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -5.5,
+          "price": -122,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 6,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -225,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 188,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 49.5,
+          "price": -110,
+          "book_icon_id": "35",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 50.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858287",
+      "away": "Louisville",
+      "home": "Georgia Tech",
+      "source_away": "Louisville",
+      "source_home": "Georgia Tech",
+      "original": {
+        "pred_margin": "-4.198536758100759",
+        "pred_total": "59.224844029029576",
+        "pred_win": "0.43881615899013254"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 44,
+        "home": 17,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -13.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 13.5,
+          "price": -104,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -581,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 440,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 58.5,
+          "price": -110,
+          "book_icon_id": "35",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 59.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858289",
+      "away": "Florida State",
+      "home": "Boston College",
+      "source_away": "Florida State",
+      "source_home": "Boston College",
+      "original": {
+        "pred_margin": "5.987680854824376",
+        "pred_total": "53.704571945553646",
+        "pred_win": "0.6564435069397415"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 31,
+        "home": 24,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -6.5,
+          "price": -115,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 7.5,
+          "price": -140,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -238,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 198,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 52.5,
+          "price": -115,
+          "book_icon_id": "35",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858290",
+      "away": "Merrimack",
+      "home": "Wake Forest",
+      "source_away": "Merrimack",
+      "source_home": "Wake Forest",
+      "original": {
+        "pred_margin": "27.119872949618784",
+        "pred_total": "53.799730938597165",
+        "pred_win": "0.931919335067152"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 0,
+        "home": 77,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 47.5,
+          "price": -115,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -47.5,
+          "price": -105,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 7000,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -100000,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 58.5,
+          "price": -108,
+          "book_icon_id": "35",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 58.5,
+          "price": -112,
+          "book_icon_id": "35",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858511",
+      "away": "Michigan State",
+      "home": "Michigan",
+      "source_away": "Michigan St.",
+      "source_home": "Michigan",
+      "original": {
+        "pred_margin": "10.64459588763575",
+        "pred_total": "37.84522705231792",
+        "pred_win": "0.7313720494169026"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 15,
+        "home": 6,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 13.5,
+          "price": -110,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -12.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 460,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -549,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 39.5,
+          "price": -118,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 40.5,
+          "price": -114,
+          "book_icon_id": "35",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858512",
+      "away": "UCLA",
+      "home": "Minnesota",
+      "source_away": "UCLA",
+      "source_home": "Minnesota",
+      "original": {
+        "pred_margin": "2.747681980467277",
+        "pred_total": "55.15854610269629",
+        "pred_win": "0.5840991961017751"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 34,
+        "home": 20,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T17:00:00.000Z",
+        "blob": "57c55e6c68943d8e0ce5ab700f42e3328570b8bb",
+        "route": "QUALIFIED_SAVED_PRESENTATION"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-06T19:00:00Z",
+        "blob": "fd55c3c471a90d9e22dc0659a2d9929c9b08b812"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -6.5,
+          "price": -118,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 6.5,
+          "price": -102,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -258,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 210,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 38.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 38.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858513",
+      "away": "Iowa",
+      "home": "Northwestern",
+      "source_away": "Iowa",
+      "source_home": "Northwestern",
+      "original": null,
+      "exclusion": "home_prior_points_missing",
+      "final": {
+        "away": 24,
+        "home": 10,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 1.5,
+          "price": -105,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -1.5,
+          "price": -115,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 105,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -125,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 42.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 42.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858514",
+      "away": "Oregon",
+      "home": "Ohio State",
+      "source_away": "Oregon",
+      "source_home": "Ohio State",
+      "original": {
+        "pred_margin": "12.6572944597905",
+        "pred_total": "57.45625252704641",
+        "pred_win": "0.7870052211880744"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 41,
+        "home": 28,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 9.5,
+          "price": -106,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -9.5,
+          "price": -105,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 280,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -325,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 47.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 47.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858515",
+      "away": "Maryland",
+      "home": "Purdue",
+      "source_away": "Maryland",
+      "source_home": "Purdue",
+      "original": {
+        "pred_margin": "-8.130447755193787",
+        "pred_total": "60.3956097237796",
+        "pred_win": "0.3016866232676576"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 34,
+        "home": 29,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 6.5,
+          "price": -104,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -6.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 195,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -218,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 57.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 57.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858516",
+      "away": "Penn State",
+      "home": "Washington",
+      "source_away": "Penn State",
+      "source_home": "Washington",
+      "original": {
+        "pred_margin": "-3.1495475114994615",
+        "pred_total": "47.804352616275885",
+        "pred_win": "0.4333079293071188"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 28,
+        "home": 25,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 1.5,
+          "price": -110,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -1.5,
+          "price": -110,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -102,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -118,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 43.5,
+          "price": -110,
+          "book_icon_id": "35",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 43.5,
+          "price": -110,
+          "book_icon_id": "35",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858517",
+      "away": "Rutgers",
+      "home": "Wisconsin",
+      "source_away": "Rutgers",
+      "source_home": "Wisconsin",
+      "original": null,
+      "exclusion": "away_prior_points_missing",
+      "final": {
+        "away": 10,
+        "home": 31,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "home_spread": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "away_ml": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "home_ml": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "over_total": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "under_total": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        }
+      }
+    },
+    {
+      "game_id": "401862819",
+      "away": "Charlotte",
+      "home": "UAB",
+      "source_away": "Charlotte",
+      "source_home": "UAB",
+      "original": null,
+      "exclusion": "home_prior_points_missing",
+      "final": {
+        "away": 12,
+        "home": 23,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 10.5,
+          "price": -105,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -10.5,
+          "price": -115,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 320,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -410,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401862821",
+      "away": "Rice",
+      "home": "North Texas",
+      "source_away": "Rice",
+      "source_home": "North Texas",
+      "original": {
+        "pred_margin": "2.6227721809273334",
+        "pred_total": "52.735543039826865",
+        "pred_win": "0.604848752521358"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 23,
+        "home": 52,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 16.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -16.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 625,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -952,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 64.5,
+          "price": -118,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 64.5,
+          "price": -102,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401862822",
+      "away": "Tulsa",
+      "home": "Tulane",
+      "source_away": "Tulsa",
+      "source_home": "Tulane",
+      "original": {
+        "pred_margin": "-7.453381995487822",
+        "pred_total": "45.36973741035307",
+        "pred_win": "0.3078800631681831"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 60,
+        "home": 10,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T17:00:00.000Z",
+        "blob": "57c55e6c68943d8e0ce5ab700f42e3328570b8bb",
+        "route": "QUALIFIED_SAVED_PRESENTATION"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-06T19:00:00Z",
+        "blob": "4f82649531fe88cd217e4074faed1a19c0daf54b"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -3,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 3,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -142,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 120,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 48.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 48.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401864532",
+      "away": "Hawai'i",
+      "home": "UTEP",
+      "source_away": "Hawaii",
+      "source_home": "UTEP",
+      "original": {
+        "pred_margin": "0.8180999427252562",
+        "pred_total": "47.37022218931154",
+        "pred_win": "0.48679514164244436"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 17,
+        "home": 14,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -10.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 10.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -395,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 310,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 49.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 49.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401864534",
+      "away": "Northern Illinois",
+      "home": "San José State",
+      "source_away": "N. Illinois",
+      "source_home": "San Jose St.",
+      "original": {
+        "pred_margin": "12.216751671820077",
+        "pred_total": "50.109095593377916",
+        "pred_win": "0.7444111196736232"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 19,
+        "home": 30,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "home_spread": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "away_ml": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "home_ml": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "over_total": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        },
+        "under_total": {
+          "status": "UNAVAILABLE",
+          "line": null,
+          "price": null,
+          "book_icon_id": null
+        }
+      },
+      "later_display": {
+        "source_blob": "30d0fbbd7e7ceb460171c8bbfa0896722e259284",
+        "recovered_by": "2026-11-04T18:29:16.263750+00:00",
+        "rows": [
+          "| [N. Illinois](https://www.cbssports.com/college-football/teams/NILL/northern-illinois-huskies/) | QUARANTINED | QUARANTINED | ![](https://sports.cbsimg.net/fly/images/books-icons/30.svg) +10 -110 Remove | ![](https://sports.cbsimg.net/fly/images/books-icons/35.svg) +320 Remove | ![](https://sports.cbsimg.net/fly/images/books-icons/34.svg) o51.5 -111 Remove |",
+          "| [San Jose St.](https://www.cbssports.com/college-football/teams/SJST/san-jose-state-spartans/) | QUARANTINED | QUARANTINED | ![](https://sports.cbsimg.net/fly/images/books-icons/35.svg) -9.5 -122 Remove | ![](https://sports.cbsimg.net/fly/images/books-icons/34.svg) -385 Remove | ![](https://sports.cbsimg.net/fly/images/books-icons/30.svg) u51.5 -102 Remove |"
+        ],
+        "kickoff_and_cutoff_qualified": false
+      }
+    },
+    {
+      "game_id": "401869927",
+      "away": "Georgia State",
+      "home": "App State",
+      "source_away": "Georgia St.",
+      "source_home": "App. St.",
+      "original": {
+        "pred_margin": "7.049278887884242",
+        "pred_total": "56.118010249830874",
+        "pred_win": "0.6756862377995193"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 39,
+        "home": 23,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T19:30:00.000Z",
+        "blob": "57c55e6c68943d8e0ce5ab700f42e3328570b8bb",
+        "route": "QUALIFIED_SAVED_PRESENTATION"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-06T19:00:00Z",
+        "blob": "d02ef5bad84c4dad6d8fecfa407fd3cc4a83a855"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 3.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -3.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 136,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -162,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 57.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 57.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401869945",
+      "away": "Old Dominion",
+      "home": "Coastal Carolina",
+      "source_away": "Old Dominion",
+      "source_home": "C. Carolina",
+      "original": null,
+      "exclusion": "home_prior_pbp_missing",
+      "final": {
+        "away": 21,
+        "home": 8,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 6.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -6.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 180,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -218,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 45.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 45.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401869951",
+      "away": "Marshall",
+      "home": "Georgia Southern",
+      "source_away": "Marshall",
+      "source_home": "Ga. Southern",
+      "original": {
+        "pred_margin": "15.029841107961314",
+        "pred_total": "45.052484119214846",
+        "pred_win": "0.7962656210758162"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 13,
+        "home": 49,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 8.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -8.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 250,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -310,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 53.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 53.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401869968",
+      "away": "South Alabama",
+      "home": "Louisiana",
+      "source_away": "South Alabama",
+      "source_home": "Louisiana",
+      "original": {
+        "pred_margin": "4.078471967246623",
+        "pred_total": "50.14866719322296",
+        "pred_win": "0.6312803629956545"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 26,
+        "home": 28,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T22:00:00.000Z",
+        "blob": "57c55e6c68943d8e0ce5ab700f42e3328570b8bb",
+        "route": "QUALIFIED_SAVED_PRESENTATION"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-06T19:00:00Z",
+        "blob": "8be01a07b8e5a6690fad00ab0f99ff80f205674f"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 5.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -5.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 145,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -175,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 57.5,
+          "price": -118,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 57.5,
+          "price": -102,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401871098",
+      "away": "Louisiana Tech",
+      "home": "Troy",
+      "source_away": "Louisiana Tech",
+      "source_home": "Troy",
+      "original": {
+        "pred_margin": "7.926645201733717",
+        "pred_total": "46.55365876102345",
+        "pred_win": "0.6579231620303794"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 41,
+        "home": 17,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -6.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 6.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -218,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 180,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 45.5,
+          "price": -102,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 45.5,
+          "price": -118,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858292",
+      "away": "North Carolina",
+      "home": "UConn",
+      "source_away": "North Carolina",
+      "source_home": "UConn",
+      "original": {
+        "pred_margin": "4.074878832877464",
+        "pred_total": "51.38182660353894",
+        "pred_win": "0.6021837924567134"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 38,
+        "home": 21,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -7.5,
+          "price": -110,
+          "book_icon_id": "35"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 8.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -300,
+          "book_icon_id": "35"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 260,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 53.5,
+          "price": -110,
+          "book_icon_id": "35",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401869936",
+      "away": "UL Monroe",
+      "home": "Arkansas State",
+      "source_away": "UL-Monroe",
+      "source_home": "Arkansas St.",
+      "original": {
+        "pred_margin": "13.976858604363448",
+        "pred_total": "57.45655141204326",
+        "pred_win": "0.8045877495119768"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 19,
+        "home": 17,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 14.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -14.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 490,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -676,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401871073",
+      "away": "Delaware",
+      "home": "Kennesaw State",
+      "source_away": "Delaware",
+      "source_home": "Kennesaw St.",
+      "original": {
+        "pred_margin": "0.17558159017670696",
+        "pred_total": "50.113302706890565",
+        "pred_win": "0.4896759060405278"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 40,
+        "home": 42,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -3,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 3,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -148,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 124,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401862820",
+      "away": "Temple",
+      "home": "Navy",
+      "source_away": "Temple",
+      "source_home": "Navy",
+      "original": null,
+      "exclusion": "away_prior_pbp_missing|home_prior_points_missing",
+      "final": {
+        "away": 35,
+        "home": 42,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 7.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -7.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 250,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -310,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 52.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 52.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401871076",
+      "away": "Western Kentucky",
+      "home": "Middle Tennessee",
+      "source_away": "W. Kentucky",
+      "source_home": "Middle Tenn.",
+      "original": {
+        "pred_margin": "27.857095018909256",
+        "pred_total": "50.53624715269643",
+        "pred_win": "0.9392086588608907"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 42,
+        "home": 51,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T20:30:00.000Z",
+        "blob": "57c55e6c68943d8e0ce5ab700f42e3328570b8bb",
+        "route": "QUALIFIED_SAVED_PRESENTATION"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-06T19:00:00Z",
+        "blob": "05238b006814dd158fc09da70122c91c38708fd3"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 1.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -1.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -102,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -118,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 52.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 52.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401871074",
+      "away": "Missouri State",
+      "home": "Florida International",
+      "source_away": "Missouri St.",
+      "source_home": "FIU",
+      "original": {
+        "pred_margin": "6.471677799283147",
+        "pred_total": "50.89495186078102",
+        "pred_win": "0.6322299211493579"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 20,
+        "home": 23,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": {
+        "utc": "2026-11-07T21:00:00.000Z",
+        "blob": "57c55e6c68943d8e0ce5ab700f42e3328570b8bb",
+        "route": "QUALIFIED_SAVED_PRESENTATION"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-06T19:00:00Z",
+        "blob": "f99308b96c5bef4f8cd3bca84c4f13ae8e11ec25"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 5.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -5.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 164,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -198,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 49.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 49.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401870795",
+      "away": "Liberty",
+      "home": "New Mexico State",
+      "source_away": "Liberty",
+      "source_home": "New Mexico St.",
+      "original": null,
+      "exclusion": "away_prior_pbp_missing",
+      "final": {
+        "away": 30,
+        "home": 14,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -13.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 13.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -500,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 380,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 47.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 47.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401860911",
+      "away": "Boise State",
+      "home": "Colorado State",
+      "source_away": "Boise St.",
+      "source_home": "Colorado St.",
+      "original": {
+        "pred_margin": "0.7553368849316238",
+        "pred_total": "56.848435210772486",
+        "pred_win": "0.5526660742301289"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 64,
+        "home": 38,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -18.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 18.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -1205,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 750,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 68.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 68.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401871075",
+      "away": "Sam Houston",
+      "home": "Jacksonville State",
+      "source_away": "Sam Houston",
+      "source_home": "Jacksonville St.",
+      "original": {
+        "pred_margin": "-4.468927683321684",
+        "pred_total": "47.781297016302965",
+        "pred_win": "0.3867593909384602"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 14,
+        "home": 47,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": {
+        "utc": "2026-11-08T00:00:00.000Z",
+        "blob": "57c55e6c68943d8e0ce5ab700f42e3328570b8bb",
+        "route": "QUALIFIED_SAVED_PRESENTATION"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-06T19:00:00Z",
+        "blob": "49217a99e228714097ee90b858577416783c7e70"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 14.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -14.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 455,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -625,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 47.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 47.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401858291",
+      "away": "Miami",
+      "home": "Notre Dame",
+      "source_away": "Miami (Fla.)",
+      "source_home": "Notre Dame",
+      "original": {
+        "pred_margin": "-0.2668060664913918",
+        "pred_total": "50.98225938130396",
+        "pred_win": "0.5097133284713214"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 24,
+        "home": 31,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 4.5,
+          "price": -105,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -4.5,
+          "price": -108,
+          "book_icon_id": "35"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 160,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -188,
+          "book_icon_id": "35"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 55.5,
+          "price": -122,
+          "book_icon_id": "35",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 57.5,
+          "price": -105,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401862823",
+      "away": "Air Force",
+      "home": "Army",
+      "source_away": "Air Force",
+      "source_home": "Army",
+      "original": null,
+      "exclusion": "home_prior_pbp_missing",
+      "final": {
+        "away": 24,
+        "home": 21,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 5.5,
+          "price": -115,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -5.5,
+          "price": -105,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 154,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -185,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 51.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401860913",
+      "away": "Fresno State",
+      "home": "Utah State",
+      "source_away": "Fresno St.",
+      "source_home": "Utah St.",
+      "original": {
+        "pred_margin": "-5.165970677350148",
+        "pred_total": "44.0004645862941",
+        "pred_win": "0.3783176632157186"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 10,
+        "home": 17,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -2.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 2.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -130,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 110,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 41.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 41.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401860912",
+      "away": "Texas State",
+      "home": "Oregon State",
+      "source_away": "Texas St.",
+      "source_home": "Oregon State",
+      "original": {
+        "pred_margin": "7.596247276148411",
+        "pred_total": "65.11107277964203",
+        "pred_win": "0.7012857902303373"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 42,
+        "home": 21,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": null,
+      "decision": "PASS",
+      "cutoff": null,
+      "flags": {
+        "before_kickoff": null,
+        "before_review_cutoff": null
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 8.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -8.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 235,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -290,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 66.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 66.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    },
+    {
+      "game_id": "401864535",
+      "away": "Wyoming",
+      "home": "UNLV",
+      "source_away": "Wyoming",
+      "source_home": "UNLV",
+      "original": {
+        "pred_margin": "1.7513344391580845",
+        "pred_total": "44.50318770762418",
+        "pred_win": "0.48136806672512733"
+      },
+      "exclusion": null,
+      "final": {
+        "away": 41,
+        "home": 35,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "kickoff": {
+        "utc": "2026-11-08T03:30:00.000Z",
+        "blob": "57c55e6c68943d8e0ce5ab700f42e3328570b8bb",
+        "route": "QUALIFIED_SAVED_PRESENTATION"
+      },
+      "decision": "HISTORICAL CONDITIONAL — WINDOW CLOSED",
+      "cutoff": {
+        "utc": "2026-11-06T19:00:00Z",
+        "blob": "cbb054d12984835eb8232af4ae0237aceb2efc80"
+      },
+      "flags": {
+        "before_kickoff": true,
+        "before_review_cutoff": true
+      },
+      "quote": {
+        "away_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 8.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "home_spread": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": -8.5,
+          "price": -110,
+          "book_icon_id": "30"
+        },
+        "away_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": 230,
+          "book_icon_id": "30"
+        },
+        "home_ml": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": null,
+          "price": -285,
+          "book_icon_id": "30"
+        },
+        "over_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 45.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "over"
+        },
+        "under_total": {
+          "status": "DISPLAYED_UNQUALIFIED",
+          "line": 45.5,
+          "price": -110,
+          "book_icon_id": "30",
+          "selection": "under"
+        }
+      }
+    }
+  ]
+}
