@@ -21,8 +21,17 @@ def extract(document):
         header = rows[0]
         if [text(cell) for cell in header[1:]] != ['Final', 'Open', 'Spread', 'ML Moneyline', 'Total']:
             raise ValueError('unexpected CBS column labels')
-        kickoff, = re.findall(r'<span\b[^>]*OddsBlock-timeText--desktop[^>]*>(.*?)</span>', header[0], re.S)
-        output.append([text(kickoff), 'Final', 'Open', 'Spread', 'MLMoneyline', 'Total'])
+        kickoff_labels = re.findall(r'<span\b[^>]*OddsBlock-timeText--desktop[^>]*>(.*?)</span>', header[0], re.S)
+        table_tag = table.split('>', 1)[0]
+        if len(kickoff_labels) == 1:
+            kickoff = text(kickoff_labels[0])
+        elif not kickoff_labels and 'OddsBlock-game--final' in table_tag:
+            kickoff = text(header[0])
+        else:
+            raise ValueError('unexpected CBS kickoff label')
+        if not kickoff:
+            raise ValueError('empty CBS kickoff label')
+        output.append([kickoff, 'Final', 'Open', 'Spread', 'MLMoneyline', 'Total'])
         for team, _final, _opening, *markets in rows[1:]:
             long_name, = re.findall(r'<span\b[^>]*OddsBlock-teamText--long[^>]*>(.*?)</span>', team, re.S)
             link, = re.findall(r'<a\b[^>]*href="(/college-football/teams/[^"]+)"[^>]*>', long_name, re.S)
