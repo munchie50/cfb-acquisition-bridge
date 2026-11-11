@@ -1,0 +1,68 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401862827",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-11T00:31:25.052Z",
+  "original_lineage_blob": "3a337e8bdf5cd732fb76697cf2a87b2d74ba8ce9",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "away",
+  "rationale": "North Texas -2.5 at -105 or better is a modest controlled-Beta preference for its productive current passing/rushing offense against UTSA's vulnerable defense, keeping a field-goal win sufficient to cover. Current Jackson/White roles and improved ball security support the case. UTSA's experienced quarterback, rushing attack and strong home environment keep a close finish credible.",
+  "model_review": "Original FIRST_FROZEN favors UTSA -7.9 / total58.0: it disagrees with this qualitative NorthTexas preference and remains unchanged. Current534.7yards/44.7points and Jackson/White balance versus UTSA410.6yards/29.8pointsallowed support a prospective controlledBeta override, not a model correction. NorthTexas30.9points/172.3rushyardsallowed gives UTSA a real counterpath. UTSA+2.5/-115 and both MLs earn no separate limit.76.5over-108/under-112 is not a mechanical under from58.",
+  "material_sources": [
+    {
+      "url": "https://meangreensports.com/news/2026/11/10/football-mean-green-ready-for-pivotal-road-game-at-utsa",
+      "retrieved_at": "2026-11-11T00:31:25.052Z",
+      "finding": "Official Nov10 preview confirms Saturday8p.m.CT kickoff, current Jackson/White offensive core and center Strong context; recent four-game ball security supports sustaining offense. McCown and UTSA's strong Alamodome record are explicit counterarguments. Home history is context, not calibrated ATS evidence; no future clearance."
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862827",
+      "retrieved_at": "2026-11-11T00:29:03.582295+00:00",
+      "finding": "Primary pregame event/team/provider100/selection links matched; current nine-game fields and paired prices kept separate from article opener. Unknown offer-update time; venue unverified."
+    }
+  ],
+  "uncertainty": "Qualitative Beta override explicitly disagrees with frozen favorite. UTSA homefield/QB experience and NT rush defense/penalties increase risk. Recheck QB/line/personnel and venue Friday; do not lay3 or pay worse than-105. No calibrated EV, stake or automatic wager.",
+  "decision_rule": "Full-game away spread -2.5 or better at -105 or better. Revalidate personnel/weather and venue quote before Friday afternoon placement. No automatic wager.",
+  "source_qualification": "Primary ESPN event/teamIDs/DraftKingsprovider100 paired spreads matched; selected outcomehttps://sportsbook.draftkings.com/event/34964220?outcomes=0HC87098817N250_3;rawSHA256d810cc6885a628e1ad5066b1eea9e81950194f9326e1b8d60f7c6df522102dca. Collection2026-11-11T00:28:59.733960+00:00–2026-11-11T00:29:03.582295+00:00. Unknown operatorupdate; not consensus/venueproof.",
+  "market_reference": {
+    "game_id": "401862827",
+    "market": "SPREAD",
+    "selection": "away",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-15T02:00:00Z",
+    "kickoff_source_url": "https://meangreensports.com/news/2026/11/10/football-mean-green-ready-for-pivotal-road-game-at-utsa",
+    "collection_start": "2026-11-11T00:28:59.733960+00:00",
+    "collection_end": "2026-11-11T00:29:03.582295+00:00",
+    "quotes": [
+      {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": -2.5,
+        "price": -105,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34964220?outcomes=0HC87098817N250_3",
+        "game_id": "401862827",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862827",
+        "retrieved_at": "2026-11-11T00:29:03.582295+00:00",
+        "offer_updated_at": null
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "away",
+    "line": -2.5,
+    "minimum_price": -105,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-13T13:00:00Z",
+  "planning_cutoff_utc": "2026-11-14T13:00:00Z",
+  "cutoff_basis": "FridayNov13 07CTpre-trip revalidation is primary. SaturdayNov14 07CT is conservative maximum review validity for this afternoon/evening game, not permission to defer Friday delivery. Exact Friday arrival unknown; earlier established practical deadline controls. No prior conditional for this game.",
+  "execution_window": {
+    "start_utc": "2026-11-11T00:31:25.052Z",
+    "end_utc": "2026-11-14T13:00:00Z"
+  }
+}
