@@ -1,0 +1,3 @@
+# Operational recovery scope record
+
+Observed continuation start00:51:48Z; this marker is recorded after inspection and evidence/register/index writes, not claimed prospective persistence. Scope: bounded historical receipt-chain reconciliation, current schedule diagnosis and explicit source-path conformance exception under establishedv5+v5.1A/C+v5.2D/E/F. No market/decision/HotSheet/model/task/cadence/wager/money mutation. Research and saved integration remain separate proof classes; final two-phase terminal evidence still required. Current operational frontierv1.276, no cumulativeHealthwatermark advancement.
