@@ -1,0 +1,70 @@
+name: CFB Monitor offline bundle rollout
+on:
+  push:
+    branches: [ops/monitor-offline-bundle-20261112]
+    paths: [.github/workflows/cfb_monitor_offline_bundle_qa.yml]
+permissions:
+  contents: write
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      ENGINE_PIN: 42ecacdd6fc2b303edacfaec2370ee4f3e825887
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Create and verify full-history engine bundle
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse --is-shallow-repository)" = false
+          git merge-base --is-ancestor "$ENGINE_PIN" HEAD
+          git branch offline-engine "$ENGINE_PIN"
+          git bundle create "$RUNNER_TEMP/engine.bundle" refs/heads/offline-engine
+          git bundle verify "$RUNNER_TEMP/engine.bundle"
+          GIT_ALLOW_PROTOCOL=file git clone --branch offline-engine "$RUNNER_TEMP/engine.bundle" "$RUNNER_TEMP/offline"
+          test "$(git -C "$RUNNER_TEMP/offline" rev-parse HEAD)" = "$ENGINE_PIN"
+          test "$(git -C "$RUNNER_TEMP/offline" rev-parse --is-shallow-repository)" = false
+      - uses: actions/upload-artifact@v4
+        id: upload
+        with:
+          name: cfb-monitor-offline-bundle
+          path: ${{ runner.temp }}/engine.bundle
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0
+      - name: Persist QA result on the QA branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_ID: ${{ steps.upload.outputs.artifact-id }}
+          ARTIFACT_DIGEST: ${{ steps.upload.outputs.artifact-digest }}
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = 'ops/monitor-offline-bundle-20261112'
+          python3 - <<'PY' > "$RUNNER_TEMP/result-payload.json"
+          import base64
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+
+          bundle = (Path(os.environ["RUNNER_TEMP"]) / "engine.bundle").read_bytes()
+          result = {
+              "status": "PASS_ACTIONS_OFFLINE_BUNDLE_PRODUCER",
+              "run_id": int(os.environ["GITHUB_RUN_ID"]),
+              "workflow_commit": os.environ["GITHUB_SHA"],
+              "engine_pin": os.environ["ENGINE_PIN"],
+              "artifact_id": int(os.environ["ARTIFACT_ID"]),
+              "artifact_digest": os.environ["ARTIFACT_DIGEST"],
+              "bundle_bytes": len(bundle),
+              "bundle_sha256": hashlib.sha256(bundle).hexdigest(),
+          }
+          print(json.dumps({
+              "branch": os.environ["GITHUB_REF_NAME"],
+              "message": "Record offline bundle rollout producer evidence",
+              "content": base64.b64encode((json.dumps(result, indent=2) + "\n").encode()).decode(),
+          }))
+          PY
+          gh api --method PUT "repos/$GITHUB_REPOSITORY/contents/handoff/monitor-offline-bundle-20261112-result.json" --input "$RUNNER_TEMP/result-payload.json" --jq '.content.sha'
