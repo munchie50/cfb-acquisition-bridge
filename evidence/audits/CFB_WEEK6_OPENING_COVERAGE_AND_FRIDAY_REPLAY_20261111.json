@@ -1,0 +1,552 @@
+{
+  "schema": "CFB_WEEK6_OPENING_COVERAGE_AND_FRIDAY_REPLAY_V1",
+  "input_head": "ab2561e1811cc1a0a362a45997338d36474576bc",
+  "sources": [
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-04_0840CT.md",
+      "sha": "8fcb2847aae1f649e9102e73794aafb034c1ea69"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-06_0704CT.md",
+      "sha": "913be01ddc21d78a1b42e92ee0d3f09de52faba8"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_OCT09_FRIDAY_PROSPECTIVE_BENCHMARK_AND_DECISION_REVIEW.md",
+      "sha": "de96db0eb8c227ead026f5251a0f3fe1962d11c0"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_THU_FRI_MARKET_EXPRESSIONS_2026-10-07.md",
+      "sha": "4d0f041428f194b09c56c9c9f569329300a581a2"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK6_HOT_SHEET_2026-10-10_0708CT.md",
+      "sha": "7ba3defaabb1f5092b45c9b8d69d51131b1fe9ef"
+    },
+    {
+      "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
+      "sha": "851efb1dc33e6efb044a5c3bdbd358cf28216f2e"
+    }
+  ],
+  "original_artifact": {
+    "id": 10897612260,
+    "verified_sha256": "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf"
+  },
+  "opening_coverage": {
+    "modeled": 49,
+    "unqualified_market_rows": 31,
+    "rows_with_displayed_numbers": 18,
+    "complete_price_rows_in_saved_sheet": 0
+  },
+  "notes": [
+    "October 4 opening display retains spread and total numbers for 18 modeled games with no six-branch prices in that saved sheet. October 6 updates nearest games and carries older rows; it cannot supply a common opening clock. October 7 provides eight paired rows, without an exact retrieval clock in the retained research document. The October 10 display mixes retained and newer observations. Do not splice these into an October 4 opening board.",
+    "The October 9 12:34:26.452Z named DraftKings benchmark supplies a single pregame retrieval clock, five exact directed game IDs and full six-branch prices. Joined to SHA-verified original prediction bytes and retained canonical Week 6 finals. This is a Friday benchmark cohort and the five Friday decisions were PASS. Scoring uses the existing forecast rule at $5 hypothetical per selection, separate from decision outcomes and actual wagers."
+  ],
+  "rows": [
+    {
+      "game": "Florida State @ Louisville",
+      "id": "401858254",
+      "kick": "2026-10-09T23:00Z",
+      "original": {
+        "game_id": "401858254",
+        "home_team": "Louisville",
+        "away_team": "Florida State",
+        "pred_margin": "17.487813645750585",
+        "pred_total": "64.75773125128157",
+        "pred_win": "0.8727571026790482"
+      },
+      "final": [
+        20,
+        44
+      ],
+      "branches": {
+        "SPREAD": [
+          [
+            13.987813645750585,
+            "home",
+            -3.5,
+            -112,
+            20.5
+          ],
+          [
+            -13.987813645750585,
+            "away",
+            3.5,
+            -108,
+            -20.5
+          ]
+        ],
+        "ML": [
+          [
+            0.37275710267904816,
+            "home",
+            null,
+            -180,
+            24
+          ],
+          [
+            -0.37275710267904816,
+            "away",
+            null,
+            150,
+            -24
+          ]
+        ],
+        "TOTAL": [
+          [
+            5.2577312512815695,
+            "over",
+            59.5,
+            -112,
+            4.5
+          ],
+          [
+            -5.2577312512815695,
+            "under",
+            59.5,
+            -108,
+            -4.5
+          ]
+        ]
+      }
+    },
+    {
+      "game": "Iowa @ Washington",
+      "id": "401858487",
+      "kick": "2026-10-10T01:00Z",
+      "original": {
+        "game_id": "401858487",
+        "home_team": "Washington",
+        "away_team": "Iowa",
+        "pred_margin": "-1.9138651344299056",
+        "pred_total": "45.97548225324205",
+        "pred_win": "0.4573300810801033"
+      },
+      "final": [
+        41,
+        24
+      ],
+      "branches": {
+        "SPREAD": [
+          [
+            4.413865134429906,
+            "away",
+            2.5,
+            -105,
+            19.5
+          ],
+          [
+            -4.413865134429906,
+            "home",
+            -2.5,
+            -115,
+            -19.5
+          ]
+        ],
+        "ML": [
+          [
+            0.04266991891989669,
+            "away",
+            null,
+            124,
+            17
+          ],
+          [
+            -0.04266991891989669,
+            "home",
+            null,
+            -148,
+            -17
+          ]
+        ],
+        "TOTAL": [
+          [
+            4.475482253242049,
+            "over",
+            41.5,
+            -105,
+            23.5
+          ],
+          [
+            -4.475482253242049,
+            "under",
+            41.5,
+            -115,
+            -23.5
+          ]
+        ]
+      }
+    },
+    {
+      "game": "Washington State @ Utah State",
+      "id": "401860922",
+      "kick": "2026-10-10T01:00Z",
+      "original": {
+        "game_id": "401860922",
+        "home_team": "Utah State",
+        "away_team": "Washington State",
+        "pred_margin": "-1.6839035337092185",
+        "pred_total": "44.85382443331362",
+        "pred_win": "0.4463413675753255"
+      },
+      "final": [
+        16,
+        17
+      ],
+      "branches": {
+        "SPREAD": [
+          [
+            7.183903533709218,
+            "away",
+            5.5,
+            -112,
+            4.5
+          ],
+          [
+            -7.183903533709218,
+            "home",
+            -5.5,
+            -108,
+            -4.5
+          ]
+        ],
+        "ML": [
+          [
+            0.0536586324246745,
+            "away",
+            null,
+            170,
+            -1
+          ],
+          [
+            -0.0536586324246745,
+            "home",
+            null,
+            -205,
+            1
+          ]
+        ],
+        "TOTAL": [
+          [
+            1.3538244333136191,
+            "over",
+            43.5,
+            -115,
+            -10.5
+          ],
+          [
+            -1.3538244333136191,
+            "under",
+            43.5,
+            -105,
+            10.5
+          ]
+        ]
+      }
+    },
+    {
+      "game": "Wyoming @ San Jose State",
+      "id": "401864519",
+      "kick": "2026-10-10T01:00Z",
+      "original": {
+        "game_id": "401864519",
+        "home_team": "San José State",
+        "away_team": "Wyoming",
+        "pred_margin": "5.068699099017564",
+        "pred_total": "50.1499702384619",
+        "pred_win": "0.602231937660305"
+      },
+      "final": [
+        16,
+        13
+      ],
+      "branches": {
+        "SPREAD": [
+          [
+            0.5686990990175644,
+            "home",
+            -4.5,
+            -108,
+            -7.5
+          ],
+          [
+            -0.5686990990175644,
+            "away",
+            4.5,
+            -112,
+            7.5
+          ]
+        ],
+        "ML": [
+          [
+            0.10223193766030503,
+            "home",
+            null,
+            -192,
+            -3
+          ],
+          [
+            -0.10223193766030503,
+            "away",
+            null,
+            160,
+            3
+          ]
+        ],
+        "TOTAL": [
+          [
+            7.649970238461897,
+            "over",
+            42.5,
+            -112,
+            -13.5
+          ],
+          [
+            -7.649970238461897,
+            "under",
+            42.5,
+            -108,
+            13.5
+          ]
+        ]
+      }
+    },
+    {
+      "game": "Iowa State @ BYU",
+      "id": "401856826",
+      "kick": "2026-10-10T02:15Z",
+      "original": {
+        "game_id": "401856826",
+        "home_team": "BYU",
+        "away_team": "Iowa State",
+        "pred_margin": "11.751193071632532",
+        "pred_total": "51.667541338143046",
+        "pred_win": "0.8044455337845308"
+      },
+      "final": [
+        10,
+        24
+      ],
+      "branches": {
+        "SPREAD": [
+          [
+            1.2511930716325317,
+            "home",
+            -10.5,
+            -108,
+            3.5
+          ],
+          [
+            -1.2511930716325317,
+            "away",
+            10.5,
+            -112,
+            -3.5
+          ]
+        ],
+        "ML": [
+          [
+            0.30444553378453076,
+            "home",
+            null,
+            -425,
+            14
+          ],
+          [
+            -0.30444553378453076,
+            "away",
+            null,
+            330,
+            -14
+          ]
+        ],
+        "TOTAL": [
+          [
+            5.167541338143046,
+            "over",
+            46.5,
+            -108,
+            -12.5
+          ],
+          [
+            -5.167541338143046,
+            "under",
+            46.5,
+            -112,
+            12.5
+          ]
+        ]
+      }
+    }
+  ],
+  "tickets": [
+    {
+      "id": "401858254",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -3.5,
+      "price": -112,
+      "grade": "W",
+      "net_cents": 446
+    },
+    {
+      "id": "401858254",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -180,
+      "grade": "W",
+      "net_cents": 278
+    },
+    {
+      "id": "401858254",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 59.5,
+      "price": -112,
+      "grade": "W",
+      "net_cents": 446
+    },
+    {
+      "id": "401858487",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 2.5,
+      "price": -105,
+      "grade": "W",
+      "net_cents": 476
+    },
+    {
+      "id": "401858487",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": 124,
+      "grade": "W",
+      "net_cents": 620
+    },
+    {
+      "id": "401858487",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 41.5,
+      "price": -105,
+      "grade": "W",
+      "net_cents": 476
+    },
+    {
+      "id": "401860922",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 5.5,
+      "price": -112,
+      "grade": "W",
+      "net_cents": 446
+    },
+    {
+      "id": "401860922",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": 170,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "id": "401860922",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 43.5,
+      "price": -115,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "id": "401864519",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -4.5,
+      "price": -108,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "id": "401864519",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -192,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "id": "401864519",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 42.5,
+      "price": -112,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "id": "401856826",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -10.5,
+      "price": -108,
+      "grade": "W",
+      "net_cents": 463
+    },
+    {
+      "id": "401856826",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -425,
+      "grade": "W",
+      "net_cents": 118
+    },
+    {
+      "id": "401856826",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 46.5,
+      "price": -108,
+      "grade": "L",
+      "net_cents": -500
+    }
+  ],
+  "summary": {
+    "SPREAD": {
+      "n": 5,
+      "w": 4,
+      "l": 1,
+      "p": 0,
+      "stake_cents": 2500,
+      "net_cents": 1331
+    },
+    "ML": {
+      "n": 5,
+      "w": 3,
+      "l": 2,
+      "p": 0,
+      "stake_cents": 2500,
+      "net_cents": 16
+    },
+    "TOTAL": {
+      "n": 5,
+      "w": 2,
+      "l": 3,
+      "p": 0,
+      "stake_cents": 2500,
+      "net_cents": -578
+    },
+    "ALL": {
+      "n": 15,
+      "w": 9,
+      "l": 6,
+      "p": 0,
+      "stake_cents": 7500,
+      "net_cents": 769
+    }
+  }
+}
