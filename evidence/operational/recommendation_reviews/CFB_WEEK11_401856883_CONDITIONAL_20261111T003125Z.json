@@ -1,0 +1,73 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401856883",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-11T00:31:25.052Z",
+  "original_lineage_blob": "3a337e8bdf5cd732fb76697cf2a87b2d74ba8ce9",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "home",
+  "rationale": "Georgia -15.5 at -110 or better is a modest controlled-Beta preference for its stable offensive line, efficient current quarterback and multiple rushing options against Missouri's weaker pass defense, backed by current defensive suppression. Missouri's run defense, low-turnover passing and ability to lead Texas into the third quarter keep a close/backdoor result credible. This is a qualified favorite preference, not a guaranteed three-score margin.",
+  "model_review": "Original Georgia -19.9 / total55.0 remains historical context, not current fair value. Current stable line, balanced offense and defense support favorite direction independently; Missouri's95.8rushyardsallowed and late Texas competitiveness oppose simplistic extrapolation. Missouri+15.5 is credible but less preferred here. ML-750/+525 and47.5over-108/under-112 earn no separate limits; no total from the old55 alone.",
+  "material_sources": [
+    {
+      "url": "https://georgiadogs.com/news/2026/11/9/football-returns-home-to-host-missouri-on-saturday",
+      "retrieved_at": "2026-11-11T00:31:25.052Z",
+      "finding": "Official Nov9 notes report unchanged starting five linemen, Stockton's current role, Frazier's return and Bowens' recent absence. Current41.1scored/14.0allowed align with primary nine-game fields. Recent Florida/OleMiss suppression supports the favorite. Inconsistent aggregate370-26 and duplicate partial-season rows excluded; no future clearance."
+    },
+    {
+      "url": "https://mutigers.com/news/2026/11/7/no-18-football-falls-to-no-7-texas",
+      "retrieved_at": "2026-11-11T00:31:25.052Z",
+      "finding": "Official Texas recap shows Missouri led20-13 late in the third, forced three fumbles and allowed373totalyards; Simmons passed for252. Final14point loss includes a late shortfield score after a fumble return. This is substantive resilience evidence, not an automatic blowout assumption."
+    },
+    {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856883",
+      "retrieved_at": "2026-11-11T00:29:03.545963+00:00",
+      "finding": "Primary pregame event/team/provider100/selection links matched; current nine-game fields and paired prices kept separate from article opener. Unknown offer-update time; venue unverified."
+    }
+  ],
+  "uncertainty": "Qualitative Beta, no calibrated EV. Large-favorite late-score/possession risk remains. Recheck SEC availability, weather and venue Friday; adverse Stockton/line/running-back or Missouri news may invalidate. Do not lay16. Internally inconsistent official aggregate370-26 and duplicate partial-season rows excluded.",
+  "decision_rule": "Full-game home spread -15.5 or better at -110 or better. Revalidate personnel/weather and venue quote before Friday afternoon placement. No automatic wager.",
+  "source_qualification": "Primary ESPN event/teamIDs/DraftKingsprovider100 paired spreads matched; selected outcomehttps://sportsbook.draftkings.com/event/34964626?outcomes=0HC87100043N1550_1;rawSHA2560c2e8e5e9b72ac9d0526033e667c4b8b3a9eba2a7bdc921f21d4de8c0a5d8647. Collection2026-11-11T00:28:59.733144+00:00–2026-11-11T00:29:03.545963+00:00. Unknown operatorupdate; not consensus/venueproof.",
+  "market_reference": {
+    "game_id": "401856883",
+    "market": "SPREAD",
+    "selection": "home",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-14T20:30:00Z",
+    "kickoff_source_url": "https://georgiadogs.com/news/2026/11/9/football-returns-home-to-host-missouri-on-saturday",
+    "collection_start": "2026-11-11T00:28:59.733144+00:00",
+    "collection_end": "2026-11-11T00:29:03.545963+00:00",
+    "quotes": [
+      {
+        "market": "SPREAD",
+        "selection": "home",
+        "line": -15.5,
+        "price": -110,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/34964626?outcomes=0HC87100043N1550_1",
+        "game_id": "401856883",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856883",
+        "retrieved_at": "2026-11-11T00:29:03.545963+00:00",
+        "offer_updated_at": null
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "home",
+    "line": -15.5,
+    "minimum_price": -110,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-13T13:00:00Z",
+  "planning_cutoff_utc": "2026-11-14T13:00:00Z",
+  "cutoff_basis": "FridayNov13 07CTpre-trip revalidation is primary. SaturdayNov14 07CT is conservative maximum review validity for this afternoon/evening game, not permission to defer Friday delivery. Exact Friday arrival unknown; earlier established practical deadline controls. No prior conditional for this game.",
+  "execution_window": {
+    "start_utc": "2026-11-11T00:31:25.052Z",
+    "end_utc": "2026-11-14T13:00:00Z"
+  }
+}
