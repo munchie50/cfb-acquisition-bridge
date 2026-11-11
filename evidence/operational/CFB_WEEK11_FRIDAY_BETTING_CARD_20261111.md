@@ -14,16 +14,9 @@ Five plays earned a ranking, all Saturday spreads. Spots 6–10 are open. Keep t
 | 4 | Missouri at Georgia | Georgia -15.5, -110 | 2:30 PM | SEC personnel and direct paired price |
 | 5 | North Texas at UTSA | North Texas -2.5, -105 | 8 PM | Personnel and actual price |
 
-## Two parlays to price Friday
+## Parlays
 
-Both are watch builds. Each leg must pass its Friday recheck at the listed number and juice or better. Verify the actual combined sportsbook payout and assess the legs together before either build can earn a recommendation.
-
-| Build | Legs | Status |
-|---|---|---|
-| 3-leg | Tennessee -2.5 (-115), Baylor +7.5 (-118), Jacksonville State -7.5 (-105) | Conditional legs; combined price unverified |
-| 4-leg | Tennessee -2.5 (-115), Baylor +7.5 (-118), Georgia -15.5 (-110), North Texas -2.5 (-105) | Conditional legs; combined price unverified |
-
-Both builds share Tennessee and Baylor. Taking both would double exposure to those two outcomes.
+**No preferred parlay yet.** The five singles are conditional, and a three- or four-leg combination has yet to earn its own case at a verified combined payout. The weekly review will look for a small-stake build with a meaningful net payoff and evaluate the legs together before including it.
 
 ## Friday games worth another look
 
