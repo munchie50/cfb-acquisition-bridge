@@ -1,0 +1,110 @@
+name: CFB Monitor controlled production handoff
+on:
+  push:
+    branches: [qa/monitor-actions-rehearsal-20261110]
+    paths: [handoff/monitor-production-20261111-0700.json]
+permissions:
+  contents: write
+jobs:
+  proposal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: 97f7fb74451f8548f7a188f4594f13da3d683dc6
+          path: engine
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify request and run governed candidate compiler
+        env:
+          PYTHONPATH: engine/scripts:qa
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          test "$(git -C engine rev-parse HEAD)" = '97f7fb74451f8548f7a188f4594f13da3d683dc6'
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          assert json.loads(Path('handoff/monitor-production-20261111-0700.json').read_text()) == {'request_id':'monitor-production-20261111-0700','pinned_head':'97f7fb74451f8548f7a188f4594f13da3d683dc6'}
+          PY
+          cd engine
+          PYTHONPATH="$GITHUB_WORKSPACE/engine/scripts:$GITHUB_WORKSPACE/qa" python3 - <<'PY'
+          from pathlib import Path
+          import json
+          import os
+          from datetime import datetime, timezone
+          from urllib.request import Request, urlopen
+          from collections import Counter
+          import cfb_week11_publication as week
+          import cfb_neutral_publication_gate as gate
+          from cfb_actions_cbs_extract import extract
+          
+          root = Path(os.environ['GITHUB_WORKSPACE']) / 'engine'
+          out = Path(os.environ['RUNNER_TEMP']) / 'proposal'
+          out.mkdir()
+          def read(name):
+              return (root / 'evidence/operational' / name).read_text()
+          
+          lineage = (root / 'evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json').read_text()
+          market = read('CFB_MARKET_MONITOR_STATE.md')
+          decision = read('CFB_DECISION_WAIT_LEDGER.md')
+          execution = read('CFB_EXECUTION_LEDGER.md')
+          scorecard = read('CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md')
+          with urlopen(Request(week.WEEK11_URL, headers={'User-Agent': 'Mozilla/5.0'}), timeout=25) as response:
+              raw = response.read(8_000_001)
+              if response.geturl() != week.WEEK11_URL or len(raw) > 8_000_000:
+                  raise ValueError('Unqualified CBS response')
+          observed = datetime.now(timezone.utc).isoformat()
+          capture = extract(raw.decode('utf-8'))
+          (out / 'fresh-cbs.md').write_text(capture)
+          previous = gate.selected_block(market, week.MARKET_TAG, gate.WEEKLY_MARKET_SCHEMA, gate.clock(observed))
+          prior = gate.inputs(market, decision, lineage, previous['as_of_utc'], week.PROFILE)
+          rows = [{k: v for k, v in row.items() if k not in ('state_recorded_at_utc', 'state_evidence')}
+                  for row in prior[4].values()]
+          print('source', observed, gate.blob(capture), 'retained', Counter(r['state'] for r in rows), flush=True)
+          cycle = 'CFB_MARKET_MONITOR_' + datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+          as_of = datetime.now(timezone.utc).isoformat()
+          pm, pd = week.compile(market, decision, capture, lineage, cycle, as_of, observed, rows)
+          assert pm.startswith(market) and pd.startswith(decision)
+          args = pm, pd, execution, scorecard, lineage, as_of, week.PROFILE
+          sheet = gate.render(*args)
+          for name, data in [('market.md', pm), ('decision.md', pd), ('sheet.md', sheet)]:
+              path = out / name
+              path.write_text(data)
+              assert path.read_text() == data
+          audit = gate.audit((out / 'sheet.md').read_text(), *args)
+          assert audit['games'] == 67
+          proof = {'status': 'PASS_PRODUCTION_CANDIDATE', 'request_commit': os.environ['GITHUB_SHA'],
+                   'run_id': os.environ['GITHUB_RUN_ID'], 'pinned_head': '97f7fb74451f8548f7a188f4594f13da3d683dc6',
+                   'source_at': observed, 'source_blob': gate.blob(capture), 'audit': audit,
+                   'decision_scope': 'retained decisions; no new material review'}
+          (out / 'result.json').write_text(json.dumps(proof, indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-monitor-production-candidate
+          path: ${{ runner.temp }}/proposal/
+          if-no-files-found: error
+          retention-days: 7
+      - name: Return source and candidate proof
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = 'qa/monitor-actions-rehearsal-20261110'
+          python3 - <<'PY' > "$RUNNER_TEMP/capture-payload.json"
+          import base64
+          import json
+          import os
+          from pathlib import Path
+          raw = (Path(os.environ['RUNNER_TEMP']) / 'proposal/fresh-cbs.md').read_bytes()
+          print(json.dumps({'branch': os.environ['GITHUB_REF_NAME'],
+                            'message': 'Save controlled Monitor CBS capture',
+                            'content': base64.b64encode(raw).decode()}))
+          PY
+          gh api --method PUT "repos/$GITHUB_REPOSITORY/contents/handoff/monitor-production-20261111-0700-cbs.md" --input "$RUNNER_TEMP/capture-payload.json" --jq '.content.sha'
+          gh api --method PUT "repos/$GITHUB_REPOSITORY/contents/handoff/monitor-production-20261111-0700-result.json" -f branch="$GITHUB_REF_NAME" -f message='Save controlled Monitor candidate proof' -f content="$(base64 -w0 "$RUNNER_TEMP/proposal/result.json")" --jq '.commit.sha'
