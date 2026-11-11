@@ -1,0 +1,3021 @@
+{
+  "schema": "CFB_WEEK10_HISTORY_COVERAGE_DESCRIPTIVE_V1",
+  "recorded_at": "2026-11-11T01:48:46.689429+00:00",
+  "authority_head": "6a15ace6e513f07e027ba185830bc38096f35b67",
+  "scope": "Postgame exploratory descriptive comparison of the same55 ORIGINAL-modeled games; not preregistered, causal, training, model selection or betting evidence. All8 original exclusions remain outside the matched cohort.",
+  "sources": {
+    "original": {
+      "archive_sha256": "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf",
+      "manifest_sha256": "3ef556f2507b1d9a5b480d74b36bc3d31b3c5d55747f31e5d1203ddc1bbb7f9c",
+      "cutoff": "2026-09-26T03:47:37.497112+00:00",
+      "manifest_hashes_verified": 5
+    },
+    "refresh": {
+      "archive_sha256": "98e6af5534b233f3284b6178fe410a1fffcb80420e0da3dae8b1c92a13c52567",
+      "manifest_sha256": "b51ff07994f437c0f90be417705cb631c69423ce630c98da90059a4ce8b8d4ae",
+      "cutoff": "2026-11-03T00:17:26.895461+00:00",
+      "manifest_hashes_verified": 6
+    }
+  },
+  "paired_evidence_sha256": "76f272bd4f0951965f8048218207827a3f9fd1a89ebdb2062b78724365383e13",
+  "all55": {
+    "games": 55,
+    "original": {
+      "prior_games": {
+        "min": 1,
+        "median": 3.0,
+        "max": 4
+      },
+      "days_since_last_qualified_prior": {
+        "min": 45.041666666666664,
+        "median": 48.36979166666667,
+        "max": 64.25
+      },
+      "days_cutoff_to_target": {
+        "min": 38.84192711675926,
+        "median": 42.050260450092594,
+        "max": 42.987760450092594
+      },
+      "margin_abs_mean": "17.23919997835150850618181818",
+      "total_abs_mean": "15.19184934836414950909090909",
+      "brier_mean": "0.2698566683962613094096467027"
+    },
+    "refresh": {
+      "prior_games": {
+        "min": 1,
+        "median": 8.0,
+        "max": 9
+      },
+      "days_since_last_qualified_prior": {
+        "min": 4.895833333333333,
+        "median": 7.072916666666666,
+        "max": 64.89583333333333
+      },
+      "days_cutoff_to_target": {
+        "min": 0.9878831543865741,
+        "median": 4.842049821053241,
+        "max": 5.133716487719908
+      },
+      "margin_abs_mean": "14.86770563117816688127272727",
+      "total_abs_mean": "13.84711823043108703636363636",
+      "brier_mean": "0.2262437826821760815083317493"
+    }
+  },
+  "coverage_groups": {
+    "minimum_original_priors_below3": {
+      "games": 1,
+      "original": {
+        "prior_games": {
+          "min": 1,
+          "median": 2.0,
+          "max": 3
+        },
+        "days_since_last_qualified_prior": {
+          "min": 49.229166666666664,
+          "median": 56.73958333333333,
+          "max": 64.25
+        },
+        "days_cutoff_to_target": {
+          "min": 42.050260450092594,
+          "median": 42.050260450092594,
+          "max": 42.050260450092594
+        },
+        "margin_abs_mean": "49.880127050381216",
+        "total_abs_mean": "23.200269061402835",
+        "brier_mean": "0.004634976937698719372349391104"
+      },
+      "refresh": {
+        "prior_games": {
+          "min": 1,
+          "median": 4.5,
+          "max": 8
+        },
+        "days_since_last_qualified_prior": {
+          "min": 7.03125,
+          "median": 35.963541666666664,
+          "max": 64.89583333333333
+        },
+        "days_cutoff_to_target": {
+          "min": 4.842049821053241,
+          "median": 4.842049821053241,
+          "max": 4.842049821053241
+        },
+        "margin_abs_mean": "32.742901569209195",
+        "total_abs_mean": "20.39880459417023",
+        "brier_mean": "0.0001488686274447754024099068617"
+      }
+    },
+    "minimum_original_priors_at_least3": {
+      "games": 54,
+      "original": {
+        "prior_games": {
+          "min": 3,
+          "median": 3.0,
+          "max": 4
+        },
+        "days_since_last_qualified_prior": {
+          "min": 45.041666666666664,
+          "median": 48.364583333333336,
+          "max": 56.322916666666664
+        },
+        "days_cutoff_to_target": {
+          "min": 38.84192711675926,
+          "median": 42.050260450092594,
+          "max": 42.987760450092594
+        },
+        "margin_abs_mean": "16.63473836590651392296296296",
+        "total_abs_mean": "15.04354527960417385185185185",
+        "brier_mean": "0.2747681812010495055214485048"
+      },
+      "refresh": {
+        "prior_games": {
+          "min": 8,
+          "median": 8.0,
+          "max": 9
+        },
+        "days_since_last_qualified_prior": {
+          "min": 4.895833333333333,
+          "median": 7.072916666666666,
+          "max": 15.104166666666666
+        },
+        "days_cutoff_to_target": {
+          "min": 0.9878831543865741,
+          "median": 4.831633154386575,
+          "max": 5.133716487719908
+        },
+        "margin_abs_mean": "14.53668348417759228648148148",
+        "total_abs_mean": "13.72579070517665846296296296",
+        "brier_mean": "0.2304307255350414760658488204"
+      }
+    }
+  },
+  "rows": [
+    {
+      "game_id": "401860913",
+      "away_team": "Fresno State",
+      "home_team": "Utah State",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 49.291666666666664,
+            "days_cutoff_to_target": 42.94609378342593,
+            "target_kickoff": "2026-11-08T02:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.979166666666664,
+            "days_cutoff_to_target": 42.94609378342593,
+            "target_kickoff": "2026-11-08T02:30:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.291666666666667,
+            "days_cutoff_to_target": 5.092049821053241,
+            "target_kickoff": "2026-11-08T02:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.979166666666667,
+            "days_cutoff_to_target": 5.092049821053241,
+            "target_kickoff": "2026-11-08T02:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "12.165970677350148",
+          "total_abs": "17.0004645862941",
+          "brier": "0.3864889278695646822817981144",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "7.33994508318430483",
+          "total_abs": "21.92593907018468",
+          "brier": "0.2695957881110469624116388012",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401864532",
+      "away_team": "Hawai'i",
+      "home_team": "UTEP",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.395833333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 55.04236111111111,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.291666666666667,
+            "days_cutoff_to_target": 5.092049821053241,
+            "target_kickoff": "2026-11-08T02:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 14.291666666666666,
+            "days_cutoff_to_target": 5.092049821053241,
+            "target_kickoff": "2026-11-08T02:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "3.8180999427252562",
+          "total_abs": "16.37022218931154",
+          "brier": "0.2369695099266874670344442757",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "1.307713251578955",
+          "total_abs": "18.849915363214386",
+          "brier": "0.1240029491579881905349906465",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856856",
+      "away_team": "West Virginia",
+      "home_team": "Texas Tech",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 49.208333333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.229166666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.4375,
+            "days_cutoff_to_target": 5.092049821053241,
+            "target_kickoff": "2026-11-08T02:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 14.4375,
+            "days_cutoff_to_target": 5.092049821053241,
+            "target_kickoff": "2026-11-08T02:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "4.8011550927987613",
+          "total_abs": "47.375532410626455",
+          "brier": "0.1493838030281033783168418273",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "5.35936271949545",
+          "total_abs": "40.29112732304915",
+          "brier": "0.03569349111414493790763894640",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401864535",
+      "away_team": "Wyoming",
+      "home_team": "UNLV",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 56.322916666666664,
+            "days_cutoff_to_target": 42.987760450092594,
+            "target_kickoff": "2026-11-08T03:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 49.4375,
+            "days_cutoff_to_target": 42.987760450092594,
+            "target_kickoff": "2026-11-08T03:30:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.041666666666667,
+            "days_cutoff_to_target": 5.133716487719908,
+            "target_kickoff": "2026-11-08T03:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 15.104166666666666,
+            "days_cutoff_to_target": 5.133716487719908,
+            "target_kickoff": "2026-11-08T03:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "7.7513344391580845",
+          "total_abs": "31.49681229237582",
+          "brier": "0.2317152156626866374174972047",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "10.272996602803708",
+          "total_abs": "25.05323959008441",
+          "brier": "0.3501381947116663259448551371",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401860912",
+      "away_team": "Texas State",
+      "home_team": "Oregon State",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 49.020833333333336,
+            "days_cutoff_to_target": 42.987760450092594,
+            "target_kickoff": "2026-11-08T03:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 49.479166666666664,
+            "days_cutoff_to_target": 42.987760450092594,
+            "target_kickoff": "2026-11-08T03:30:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.020833333333333,
+            "days_cutoff_to_target": 5.133716487719908,
+            "target_kickoff": "2026-11-08T03:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.0625,
+            "days_cutoff_to_target": 5.133716487719908,
+            "target_kickoff": "2026-11-08T03:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "28.596247276148411",
+          "total_abs": "2.11107277964203",
+          "brier": "0.4918017595789886508469892718",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "29.380567655947193",
+          "total_abs": "4.05227618737068",
+          "brier": "0.5165994731356374880655291012",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856739",
+      "away_team": "Oklahoma",
+      "home_team": "Florida",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.25,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.229166666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.21875,
+            "days_cutoff_to_target": 5.019133154386575,
+            "target_kickoff": "2026-11-08T00:45:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.1875,
+            "days_cutoff_to_target": 5.019133154386575,
+            "target_kickoff": "2026-11-08T00:45:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "25.171592972348307",
+          "total_abs": "21.110471208670816",
+          "brier": "0.5133230243717707452560459155",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "21.8461330512594305",
+          "total_abs": "22.19943198276177",
+          "brier": "0.4077855991533710148522954440",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856852",
+      "away_team": "Colorado",
+      "home_team": "Arizona State",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.541666666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.229166666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.208333333333333,
+            "days_cutoff_to_target": 5.008716487719908,
+            "target_kickoff": "2026-11-08T00:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.270833333333333,
+            "days_cutoff_to_target": 5.008716487719908,
+            "target_kickoff": "2026-11-08T00:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "1.534212571441335",
+          "total_abs": "22.14262652604433",
+          "brier": "0.08589891728038345881215912897",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "3.497850913718023",
+          "total_abs": "25.30478711197899",
+          "brier": "0.1189228522477781163286063313",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856741",
+      "away_team": "Georgia",
+      "home_team": "Ole Miss",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.229166666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.541666666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.322916666666667,
+            "days_cutoff_to_target": 5.008716487719908,
+            "target_kickoff": "2026-11-08T00:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.208333333333333,
+            "days_cutoff_to_target": 5.008716487719908,
+            "target_kickoff": "2026-11-08T00:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "23.964577970882003",
+          "total_abs": "13.08393125657636",
+          "brier": "0.06928934758734077958519165026",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "32.2297266089211387",
+          "total_abs": "9.56843510857537",
+          "brier": "0.2007421032774397674891822110",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401858291",
+      "away_team": "Miami",
+      "home_team": "Notre Dame",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 49.041666666666664,
+            "days_cutoff_to_target": 42.862760450092594,
+            "target_kickoff": "2026-11-08T00:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 50.041666666666664,
+            "days_cutoff_to_target": 42.862760450092594,
+            "target_kickoff": "2026-11-08T00:30:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.354166666666667,
+            "days_cutoff_to_target": 5.008716487719908,
+            "target_kickoff": "2026-11-08T00:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.041666666666667,
+            "days_cutoff_to_target": 5.008716487719908,
+            "target_kickoff": "2026-11-08T00:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "7.2668060664913918",
+          "total_abs": "4.01774061869604",
+          "brier": "0.2403810202786703829253822621",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "3.455801015105353",
+          "total_abs": "1.54318349987581",
+          "brier": "0.1425268529838559655919066299",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401858511",
+      "away_team": "Michigan State",
+      "home_team": "Michigan",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.395833333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.229166666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.333333333333333,
+            "days_cutoff_to_target": 5.008716487719908,
+            "target_kickoff": "2026-11-08T00:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 14.208333333333334,
+            "days_cutoff_to_target": 5.008716487719908,
+            "target_kickoff": "2026-11-08T00:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "19.64459588763575",
+          "total_abs": "16.84522705231792",
+          "brier": "0.5349050746682802187646625779",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "20.898320411660634",
+          "total_abs": "21.65446412049769",
+          "brier": "0.5588794934942006120645735772",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401858287",
+      "away_team": "Louisville",
+      "home_team": "Georgia Tech",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.541666666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.395833333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.041666666666667,
+            "days_cutoff_to_target": 5.008716487719908,
+            "target_kickoff": "2026-11-08T00:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.21875,
+            "days_cutoff_to_target": 5.008716487719908,
+            "target_kickoff": "2026-11-08T00:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "22.801463241899241",
+          "total_abs": "1.775155970970424",
+          "brier": "0.1925596213908532792075250868",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "20.675032794319047",
+          "total_abs": "1.322049221420095",
+          "brier": "0.1307270505684697860397808338",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401871075",
+      "away_team": "Sam Houston",
+      "home_team": "Jacksonville State",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 4,
+            "days_since_last_qualified_prior": 49.041666666666664,
+            "days_cutoff_to_target": 42.84192711675926,
+            "target_kickoff": "2026-11-08T00:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 49.041666666666664,
+            "days_cutoff_to_target": 42.84192711675926,
+            "target_kickoff": "2026-11-08T00:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 10.0,
+            "days_cutoff_to_target": 4.987883154386575,
+            "target_kickoff": "2026-11-08T00:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 11.0,
+            "days_cutoff_to_target": 4.987883154386575,
+            "target_kickoff": "2026-11-08T00:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "37.468927683321684",
+          "total_abs": "13.218702983697035",
+          "brier": "0.3760640446021682898632635470",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "20.509745126350545",
+          "total_abs": "12.336138097056356",
+          "brier": "0.05032285414462102789084142681",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856745",
+      "away_team": "Kentucky",
+      "home_team": "Tennessee",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.21875,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.395833333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 14.15625,
+            "days_cutoff_to_target": 4.956633154386575,
+            "target_kickoff": "2026-11-07T23:15:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 13.989583333333334,
+            "days_cutoff_to_target": 4.956633154386575,
+            "target_kickoff": "2026-11-07T23:15:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "12.61542678054232",
+          "total_abs": "17.266263746361346",
+          "brier": "0.02809328051192170807533928337",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "21.332481501708924",
+          "total_abs": "13.022739994021194",
+          "brier": "0.1150058414214987106876132240",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401860911",
+      "away_team": "Boise State",
+      "home_team": "Colorado State",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.979166666666664,
+            "days_cutoff_to_target": 42.800260450092594,
+            "target_kickoff": "2026-11-07T23:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.875,
+            "days_cutoff_to_target": 42.800260450092594,
+            "target_kickoff": "2026-11-07T23:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.145833333333333,
+            "days_cutoff_to_target": 4.946216487719908,
+            "target_kickoff": "2026-11-07T23:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.875,
+            "days_cutoff_to_target": 4.946216487719908,
+            "target_kickoff": "2026-11-07T23:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "26.7553368849316238",
+          "total_abs": "45.151564789227514",
+          "brier": "0.3054397896049423474068365106",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "16.667215039232959",
+          "total_abs": "39.17435630606233",
+          "brier": "0.09550329936672283416212866173",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401869968",
+      "away_team": "South Alabama",
+      "home_team": "Louisiana",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.208333333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.25,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 14.041666666666666,
+            "days_cutoff_to_target": 4.904549821053241,
+            "target_kickoff": "2026-11-07T22:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.125,
+            "days_cutoff_to_target": 4.904549821053241,
+            "target_kickoff": "2026-11-07T22:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "2.078471967246623",
+          "total_abs": "3.85133280677704",
+          "brier": "0.1359541707126163113651858834",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "6.114315486810618",
+          "total_abs": "0.229368715421934",
+          "brier": "0.07984753630023431248487794603",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856742",
+      "away_team": "Vanderbilt",
+      "home_team": "Mississippi State",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.364583333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.510416666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.90625,
+            "days_cutoff_to_target": 4.873299821053241,
+            "target_kickoff": "2026-11-07T21:15:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 13.90625,
+            "days_cutoff_to_target": 4.873299821053241,
+            "target_kickoff": "2026-11-07T21:15:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "17.549626345548761",
+          "total_abs": "7.56747078426483",
+          "brier": "0.6694522089531403082501379172",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "11.206496668819883",
+          "total_abs": "7.28310532506843",
+          "brier": "0.4600301480924519103123019036",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401871074",
+      "away_team": "Missouri State",
+      "home_team": "Florida International",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.958333333333336,
+            "days_cutoff_to_target": 42.71692711675926,
+            "target_kickoff": "2026-11-07T21:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.9375,
+            "days_cutoff_to_target": 42.71692711675926,
+            "target_kickoff": "2026-11-07T21:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.0625,
+            "days_cutoff_to_target": 4.862883154386575,
+            "target_kickoff": "2026-11-07T21:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 10.875,
+            "days_cutoff_to_target": 4.862883154386575,
+            "target_kickoff": "2026-11-07T21:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "3.471677799283147",
+          "total_abs": "7.89495186078102",
+          "brier": "0.1352548308978075076577595823",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "3.486211719326694",
+          "total_abs": "8.50744316747735",
+          "brier": "0.1259540582160127892298018048",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401864534",
+      "away_team": "Northern Illinois",
+      "home_team": "San Jos\u00e9 State",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 4,
+            "days_since_last_qualified_prior": 48.083333333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.104166666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 9,
+            "days_since_last_qualified_prior": 7.041666666666667,
+            "days_cutoff_to_target": 4.862883154386575,
+            "target_kickoff": "2026-11-07T21:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.770833333333333,
+            "days_cutoff_to_target": 4.862883154386575,
+            "target_kickoff": "2026-11-07T21:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "1.216751671820077",
+          "total_abs": "1.109095593377916",
+          "brier": "0.06532567574649096164648981558",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "0.523582646536692",
+          "total_abs": "3.78392603671246",
+          "brier": "0.06207404035443027801124181580",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401871098",
+      "away_team": "Louisiana Tech",
+      "home_team": "Troy",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.25,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.375,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 8.895833333333334,
+            "days_cutoff_to_target": 4.862883154386575,
+            "target_kickoff": "2026-11-07T21:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.083333333333333,
+            "days_cutoff_to_target": 4.862883154386575,
+            "target_kickoff": "2026-11-07T21:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "31.926645201733717",
+          "total_abs": "11.44634123897655",
+          "brier": "0.4328628871360528658162485079",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "23.5417622148002972",
+          "total_abs": "9.12410855761521",
+          "brier": "0.2262894146901795346058608397",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401862821",
+      "away_team": "Rice",
+      "home_team": "North Texas",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.541666666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.25,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 8.895833333333334,
+            "days_cutoff_to_target": 4.862883154386575,
+            "target_kickoff": "2026-11-07T21:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 14.208333333333334,
+            "days_cutoff_to_target": 4.862883154386575,
+            "target_kickoff": "2026-11-07T21:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "26.3772278190726666",
+          "total_abs": "22.264456960173135",
+          "brier": "0.1561445083839269755622461642",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "15.648363443291835",
+          "total_abs": "13.17391059238081",
+          "brier": "0.03089762313755071378032618473",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856850",
+      "away_team": "UCF",
+      "home_team": "Kansas",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.541666666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.25,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.052083333333333,
+            "days_cutoff_to_target": 4.852466487719908,
+            "target_kickoff": "2026-11-07T20:45:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.885416666666667,
+            "days_cutoff_to_target": 4.852466487719908,
+            "target_kickoff": "2026-11-07T20:45:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "2.060836045636887",
+          "total_abs": "14.917026522160796",
+          "brier": "0.2791491969899134308046338324",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "8.039243083522649",
+          "total_abs": "10.65995191438284",
+          "brier": "0.4333451558797567848427208153",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401858290",
+      "away_team": "Merrimack",
+      "home_team": "Wake Forest",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 49.229166666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 1,
+            "days_since_last_qualified_prior": 64.25,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.03125,
+            "days_cutoff_to_target": 4.842049821053241,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 1,
+            "days_since_last_qualified_prior": 64.89583333333333,
+            "days_cutoff_to_target": 4.842049821053241,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "49.880127050381216",
+          "total_abs": "23.200269061402835",
+          "brier": "0.004634976937698719372349391104",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "32.742901569209195",
+          "total_abs": "20.39880459417023",
+          "brier": "0.0001488686274447754024099068617",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 1
+    },
+    {
+      "game_id": "401871076",
+      "away_team": "Western Kentucky",
+      "home_team": "Middle Tennessee",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.895833333333336,
+            "days_cutoff_to_target": 42.69609378342593,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 49.020833333333336,
+            "days_cutoff_to_target": 42.69609378342593,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 9.895833333333334,
+            "days_cutoff_to_target": 4.842049821053241,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 10.895833333333334,
+            "days_cutoff_to_target": 4.842049821053241,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "18.857095018909256",
+          "total_abs": "42.46375284730357",
+          "brier": "0.003695587157491562804493997346",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "5.3363015864422807",
+          "total_abs": "39.990820765456284",
+          "brier": "0.1749914679969927625287130020",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401858516",
+      "away_team": "Penn State",
+      "home_team": "Washington",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.239583333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.541666666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.854166666666667,
+            "days_cutoff_to_target": 4.842049821053241,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.010416666666667,
+            "days_cutoff_to_target": 4.842049821053241,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "0.1495475114994615",
+          "total_abs": "5.195647383724115",
+          "brier": "0.1877557616004230634642523573",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "5.9236371687896896",
+          "total_abs": "2.89225766085262",
+          "brier": "0.3274371825972171877207557028",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856740",
+      "away_team": "Alabama",
+      "home_team": "LSU",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.229166666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.395833333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 14.1875,
+            "days_cutoff_to_target": 4.842049821053241,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 14.041666666666666,
+            "days_cutoff_to_target": 4.842049821053241,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "21.5090584473900757",
+          "total_abs": "10.06402401878285",
+          "brier": "0.3242822961791674522916605157",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "27.789364222685926",
+          "total_abs": "11.638871599174216",
+          "brier": "0.5286213238316670035540268483",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856851",
+      "away_team": "Cincinnati",
+      "home_team": "Houston",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 49.208333333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.395833333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 13.760416666666666,
+            "days_cutoff_to_target": 4.842049821053241,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.03125,
+            "days_cutoff_to_target": 4.842049821053241,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "0.466094858371314",
+          "total_abs": "2.33789708596704",
+          "brier": "0.09563394023614171637647474931",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "0.62640664988836",
+          "total_abs": "5.233803856563696",
+          "brier": "0.08285097813896031160387497729",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401858514",
+      "away_team": "Oregon",
+      "home_team": "Ohio State",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.541666666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 49.104166666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.875,
+            "days_cutoff_to_target": 4.842049821053241,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.041666666666667,
+            "days_cutoff_to_target": 4.842049821053241,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "25.6572944597905",
+          "total_abs": "11.54374747295359",
+          "brier": "0.6193772181772899105082567799",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "23.776621827802861",
+          "total_abs": "15.455443614450836",
+          "brier": "0.5691747593721316348783825302",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401869951",
+      "away_team": "Marshall",
+      "home_team": "Georgia Southern",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.25,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.270833333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.916666666666667,
+            "days_cutoff_to_target": 4.842049821053241,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.145833333333333,
+            "days_cutoff_to_target": 4.842049821053241,
+            "target_kickoff": "2026-11-07T20:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "20.970158892038686",
+          "total_abs": "16.947515880785154",
+          "brier": "0.04150769715562290815546849618",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "26.275483320988979",
+          "total_abs": "9.871475024907454",
+          "brier": "0.07645689770229262621220128793",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401871073",
+      "away_team": "Delaware",
+      "home_team": "Kennesaw State",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.84375,
+            "days_cutoff_to_target": 42.675260450092594,
+            "target_kickoff": "2026-11-07T20:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 49.1875,
+            "days_cutoff_to_target": 42.675260450092594,
+            "target_kickoff": "2026-11-07T20:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 9.875,
+            "days_cutoff_to_target": 4.821216487719908,
+            "target_kickoff": "2026-11-07T20:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 10.875,
+            "days_cutoff_to_target": 4.821216487719908,
+            "target_kickoff": "2026-11-07T20:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "1.82441840982329304",
+          "total_abs": "31.886697293109435",
+          "brier": "0.2604306808755562103680161026",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "1.7411894045167347",
+          "total_abs": "27.320681882806404",
+          "brier": "0.1624365538847220646571421296",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401869936",
+      "away_team": "UL Monroe",
+      "home_team": "Arkansas State",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.833333333333336,
+            "days_cutoff_to_target": 42.675260450092594,
+            "target_kickoff": "2026-11-07T20:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.979166666666664,
+            "days_cutoff_to_target": 42.675260450092594,
+            "target_kickoff": "2026-11-07T20:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 13.875,
+            "days_cutoff_to_target": 4.821216487719908,
+            "target_kickoff": "2026-11-07T20:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.020833333333333,
+            "days_cutoff_to_target": 4.821216487719908,
+            "target_kickoff": "2026-11-07T20:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "15.976858604363448",
+          "total_abs": "21.45655141204326",
+          "brier": "0.6473614466647475233665666437",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "12.621861627024163",
+          "total_abs": "19.44044329101636",
+          "brier": "0.5555440878856626154478571526",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856744",
+      "away_team": "Texas A&M",
+      "home_team": "South Carolina",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.364583333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.395833333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.989583333333333,
+            "days_cutoff_to_target": 4.821216487719908,
+            "target_kickoff": "2026-11-07T20:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 14.020833333333334,
+            "days_cutoff_to_target": 4.821216487719908,
+            "target_kickoff": "2026-11-07T20:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "4.715251331697846",
+          "total_abs": "24.5036568944936",
+          "brier": "0.06479201829035725512454261538",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "0.414051784456282",
+          "total_abs": "26.76133614687476",
+          "brier": "0.1032257361948661201893572648",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401869927",
+      "away_team": "Georgia State",
+      "home_team": "App State",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.291666666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.25,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.875,
+            "days_cutoff_to_target": 4.800383154386575,
+            "target_kickoff": "2026-11-07T19:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.0625,
+            "days_cutoff_to_target": 4.800383154386575,
+            "target_kickoff": "2026-11-07T19:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "23.049278887884242",
+          "total_abs": "5.881989750169126",
+          "brier": "0.4565518919516685440909793111",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "19.190847687981535",
+          "total_abs": "6.36820774756406",
+          "brier": "0.3477413613569397831585630480",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856854",
+      "away_team": "Oklahoma State",
+      "home_team": "Kansas State",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.541666666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.25,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.0,
+            "days_cutoff_to_target": 4.737883154386575,
+            "target_kickoff": "2026-11-07T18:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.791666666666667,
+            "days_cutoff_to_target": 4.737883154386575,
+            "target_kickoff": "2026-11-07T18:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "53.665675902746544",
+          "total_abs": "42.68473790376151",
+          "brier": "0.6869600775623116054580260192",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "41.2186945706929873",
+          "total_abs": "34.22355927483245",
+          "brier": "0.3309947903245342476259053037",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856738",
+      "away_team": "Arkansas",
+      "home_team": "Auburn",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.25,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.541666666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.041666666666667,
+            "days_cutoff_to_target": 4.727466487719908,
+            "target_kickoff": "2026-11-07T17:45:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.75,
+            "days_cutoff_to_target": 4.727466487719908,
+            "target_kickoff": "2026-11-07T17:45:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "13.28981148199242",
+          "total_abs": "5.4504980271418",
+          "brier": "0.03651231266740233795599463490",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "2.205667587291583",
+          "total_abs": "3.57288799441639",
+          "brier": "0.1532654653739515489922283073",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401858515",
+      "away_team": "Maryland",
+      "home_team": "Purdue",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.083333333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.229166666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.885416666666667,
+            "days_cutoff_to_target": 4.717049821053241,
+            "target_kickoff": "2026-11-07T17:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.0625,
+            "days_cutoff_to_target": 4.717049821053241,
+            "target_kickoff": "2026-11-07T17:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "3.130447755193787",
+          "total_abs": "2.6043902762204",
+          "brier": "0.09101481865864156400021019084",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "9.096437992564919",
+          "total_abs": "5.683469438750336",
+          "brier": "0.3429709380469793816652037359",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401858286",
+      "away_team": "Duke",
+      "home_team": "NC State",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.510416666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.375,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.0625,
+            "days_cutoff_to_target": 4.717049821053241,
+            "target_kickoff": "2026-11-07T17:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.0625,
+            "days_cutoff_to_target": 4.717049821053241,
+            "target_kickoff": "2026-11-07T17:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "42.228345707284807",
+          "total_abs": "4.620614746519706",
+          "brier": "0.3959931088353740676638136598",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "37.6377603901938962",
+          "total_abs": "8.08220871987871",
+          "brier": "0.2609833656179069646595658038",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401858512",
+      "away_team": "UCLA",
+      "home_team": "Minnesota",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.541666666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.083333333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.895833333333333,
+            "days_cutoff_to_target": 4.696216487719908,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.864583333333333,
+            "days_cutoff_to_target": 4.696216487719908,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "16.747681980467277",
+          "total_abs": "1.15854610269629",
+          "brier": "0.3411718708867399241759973710",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "8.91747080461705",
+          "total_abs": "7.59920338145551",
+          "brier": "0.1401510038580433938885144089",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401858289",
+      "away_team": "Florida State",
+      "home_team": "Boston College",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.458333333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.395833333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.041666666666667,
+            "days_cutoff_to_target": 4.696216487719908,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.75,
+            "days_cutoff_to_target": 4.696216487719908,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "12.987680854824376",
+          "total_abs": "1.295428054446354",
+          "brier": "0.4309180778033464468705120868",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "8.8885441829902212",
+          "total_abs": "0.01839095234059",
+          "brier": "0.2989039563546603329237179534",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401858292",
+      "away_team": "North Carolina",
+      "home_team": "UConn",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.75,
+            "days_cutoff_to_target": 42.550260450092594,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 49.041666666666664,
+            "days_cutoff_to_target": 42.550260450092594,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.916666666666667,
+            "days_cutoff_to_target": 4.696216487719908,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.729166666666667,
+            "days_cutoff_to_target": 4.696216487719908,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "21.074878832877464",
+          "total_abs": "7.61817339646106",
+          "brier": "0.3626253198975500783470127297",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "22.480677576150656",
+          "total_abs": "1.41919063491636",
+          "brier": "0.3703515417037591461260809235",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856743",
+      "away_team": "Texas",
+      "home_team": "Missouri",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.25,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.208333333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.71875,
+            "days_cutoff_to_target": 4.696216487719908,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.729166666666667,
+            "days_cutoff_to_target": 4.696216487719908,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "16.9866386354064347",
+          "total_abs": "6.3683098355131",
+          "brier": "0.2847374987729488424301379541",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "16.541512622194416",
+          "total_abs": "3.09530951086087",
+          "brier": "0.2786942151717629293193400372",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856853",
+      "away_team": "Iowa State",
+      "home_team": "Baylor",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.375,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.541666666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.729166666666667,
+            "days_cutoff_to_target": 4.696216487719908,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.75,
+            "days_cutoff_to_target": 4.696216487719908,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "6.177778139268866",
+          "total_abs": "26.62498835639547",
+          "brier": "0.1517606753886925045692632302",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "0.631206172555267",
+          "total_abs": "18.76031236777285",
+          "brier": "0.05978399731685682581703722480",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401862822",
+      "away_team": "Tulsa",
+      "home_team": "Tulane",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.541666666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.208333333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.75,
+            "days_cutoff_to_target": 4.696216487719908,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 14.6875,
+            "days_cutoff_to_target": 4.696216487719908,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "42.546618004512178",
+          "total_abs": "24.63026258964693",
+          "brier": "0.09479013329644441587535615513",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "51.6566529471681464",
+          "total_abs": "16.03640001837795",
+          "brier": "0.2777159953332768970848279624",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856849",
+      "away_team": "BYU",
+      "home_team": "Utah",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.395833333333336,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.229166666666664,
+            "days_cutoff_to_target": 42.050260450092594,
+            "target_kickoff": "2026-11-07T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.885416666666667,
+            "days_cutoff_to_target": 4.696216487719908,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.895833333333333,
+            "days_cutoff_to_target": 4.696216487719908,
+            "target_kickoff": "2026-11-07T17:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "0.263300728609402",
+          "total_abs": "7.90234467514159",
+          "brier": "0.09471070512175066850477490966",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "0.144562650252796",
+          "total_abs": "7.67350821499952",
+          "brier": "0.09008129860501829126115046195",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401856855",
+      "away_team": "TCU",
+      "home_team": "Arizona",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.03125,
+            "days_cutoff_to_target": 41.97734378342593,
+            "target_kickoff": "2026-11-07T03:15:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.135416666666664,
+            "days_cutoff_to_target": 41.97734378342593,
+            "target_kickoff": "2026-11-07T03:15:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.46875,
+            "days_cutoff_to_target": 4.123299821053241,
+            "target_kickoff": "2026-11-07T03:15:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.322916666666667,
+            "days_cutoff_to_target": 4.123299821053241,
+            "target_kickoff": "2026-11-07T03:15:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "0.5517727433164694",
+          "total_abs": "8.247849430237956",
+          "brier": "0.2073078644084791111825670546",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "6.177729519520605",
+          "total_abs": "6.32300229885557",
+          "brier": "0.1129850431152453246385164544",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401864533",
+      "away_team": "New Mexico",
+      "home_team": "Nevada",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.125,
+            "days_cutoff_to_target": 41.925260450092594,
+            "target_kickoff": "2026-11-07T02:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.104166666666664,
+            "days_cutoff_to_target": 41.925260450092594,
+            "target_kickoff": "2026-11-07T02:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.239583333333333,
+            "days_cutoff_to_target": 4.071216487719908,
+            "target_kickoff": "2026-11-07T02:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.25,
+            "days_cutoff_to_target": 4.071216487719908,
+            "target_kickoff": "2026-11-07T02:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "24.6215036606532793",
+          "total_abs": "8.162809399335046",
+          "brier": "0.1801447921455283299479402713",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "24.345066777045379",
+          "total_abs": "11.486299811120915",
+          "brier": "0.1803091891748501317320815489",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401858510",
+      "away_team": "Nebraska",
+      "home_team": "Illinois",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.291666666666664,
+            "days_cutoff_to_target": 41.88359378342593,
+            "target_kickoff": "2026-11-07T01:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.072916666666664,
+            "days_cutoff_to_target": 41.88359378342593,
+            "target_kickoff": "2026-11-07T01:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.375,
+            "days_cutoff_to_target": 4.029549821053241,
+            "target_kickoff": "2026-11-07T01:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.041666666666667,
+            "days_cutoff_to_target": 4.029549821053241,
+            "target_kickoff": "2026-11-07T01:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "12.761681196539541",
+          "total_abs": "18.71166433271795",
+          "brier": "0.2280857206235757734234824780",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "11.4316927989632904",
+          "total_abs": "15.930468670139426",
+          "brier": "0.2450435818450336174475235632",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401862818",
+      "away_team": "South Florida",
+      "home_team": "East Carolina",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.104166666666664,
+            "days_cutoff_to_target": 41.862760450092594,
+            "target_kickoff": "2026-11-07T00:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.0625,
+            "days_cutoff_to_target": 41.862760450092594,
+            "target_kickoff": "2026-11-07T00:30:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.229166666666667,
+            "days_cutoff_to_target": 4.008716487719908,
+            "target_kickoff": "2026-11-07T00:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.354166666666667,
+            "days_cutoff_to_target": 4.008716487719908,
+            "target_kickoff": "2026-11-07T00:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "14.807863806889149",
+          "total_abs": "11.45215367034799",
+          "brier": "0.6065114482077880059379040534",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "5.1409539548006404",
+          "total_abs": "9.37332343573143",
+          "brier": "0.3271660057041327801713001421",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401858288",
+      "away_team": "Virginia Tech",
+      "home_team": "SMU",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.1875,
+            "days_cutoff_to_target": 41.84192711675926,
+            "target_kickoff": "2026-11-07T00:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 48.020833333333336,
+            "days_cutoff_to_target": 41.84192711675926,
+            "target_kickoff": "2026-11-07T00:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 6.333333333333333,
+            "days_cutoff_to_target": 3.9878831543865743,
+            "target_kickoff": "2026-11-07T00:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 13.041666666666666,
+            "days_cutoff_to_target": 3.9878831543865743,
+            "target_kickoff": "2026-11-07T00:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "25.8565813934429176",
+          "total_abs": "21.49629980267429",
+          "brier": "0.3483312089037767464198479154",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "16.763149991041947",
+          "total_abs": "23.658424630376246",
+          "brier": "0.1234870039066825230988569975",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401869964",
+      "away_team": "James Madison",
+      "home_team": "Southern Miss",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 47.083333333333336,
+            "days_cutoff_to_target": 40.88359378342593,
+            "target_kickoff": "2026-11-06T01:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 46.958333333333336,
+            "days_cutoff_to_target": 40.88359378342593,
+            "target_kickoff": "2026-11-06T01:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 5.229166666666667,
+            "days_cutoff_to_target": 3.0295498210532408,
+            "target_kickoff": "2026-11-06T01:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 9,
+            "days_since_last_qualified_prior": 7.0625,
+            "days_cutoff_to_target": 3.0295498210532408,
+            "target_kickoff": "2026-11-06T01:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "16.595932138304503",
+          "total_abs": "24.01337658363001",
+          "brier": "0.04323023267030405147984975602",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "24.537909512654872",
+          "total_abs": "18.65500302524202",
+          "brier": "0.1239727396447902819503874121",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401862817",
+      "away_team": "UTSA",
+      "home_team": "Florida Atlantic",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 47.125,
+            "days_cutoff_to_target": 40.88359378342593,
+            "target_kickoff": "2026-11-06T01:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 47.041666666666664,
+            "days_cutoff_to_target": 40.88359378342593,
+            "target_kickoff": "2026-11-06T01:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 7.041666666666667,
+            "days_cutoff_to_target": 3.0087164877199073,
+            "target_kickoff": "2026-11-06T00:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 12.020833333333334,
+            "days_cutoff_to_target": 3.0087164877199073,
+            "target_kickoff": "2026-11-06T00:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "36.195659872391833",
+          "total_abs": "34.684505080043024",
+          "brier": "0.4132101610975185570261123710",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "30.52587213395365784",
+          "total_abs": "27.17731264323921",
+          "brier": "0.2186561522766234587144763336",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401866456",
+      "away_team": "Central Michigan",
+      "home_team": "Eastern Michigan",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 4,
+            "days_since_last_qualified_prior": 45.520833333333336,
+            "days_cutoff_to_target": 39.050260450092594,
+            "target_kickoff": "2026-11-04T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 45.5,
+            "days_cutoff_to_target": 39.050260450092594,
+            "target_kickoff": "2026-11-04T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 9,
+            "days_since_last_qualified_prior": 11.1875,
+            "days_cutoff_to_target": 2.0087164877199073,
+            "target_kickoff": "2026-11-05T00:30:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 11.3125,
+            "days_cutoff_to_target": 2.0087164877199073,
+            "target_kickoff": "2026-11-05T00:30:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "25.2139782725279424",
+          "total_abs": "0.92255127170241",
+          "brier": "0.1547854825015533076739188354",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "31.6339012883577855",
+          "total_abs": "5.600109440721525",
+          "brier": "0.3175584465945437260794643817",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401866455",
+      "away_team": "Ball State",
+      "home_team": "Massachusetts",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 45.395833333333336,
+            "days_cutoff_to_target": 39.050260450092594,
+            "target_kickoff": "2026-11-04T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 45.375,
+            "days_cutoff_to_target": 39.050260450092594,
+            "target_kickoff": "2026-11-04T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 12.041666666666666,
+            "days_cutoff_to_target": 1.987883154386574,
+            "target_kickoff": "2026-11-05T00:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 11.1875,
+            "days_cutoff_to_target": 1.987883154386574,
+            "target_kickoff": "2026-11-05T00:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "25.11695812114495",
+          "total_abs": "10.028786002735345",
+          "brier": "0.004630796375069962225724078085",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "12.048248364461054",
+          "total_abs": "9.24842577148352",
+          "brier": "0.04653752761568884099519956900",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401866457",
+      "away_team": "Toledo",
+      "home_team": "Sacramento State",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 4,
+            "days_since_last_qualified_prior": 45.104166666666664,
+            "days_cutoff_to_target": 39.050260450092594,
+            "target_kickoff": "2026-11-04T05:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 45.416666666666664,
+            "days_cutoff_to_target": 39.050260450092594,
+            "target_kickoff": "2026-11-04T05:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 9,
+            "days_since_last_qualified_prior": 4.895833333333333,
+            "days_cutoff_to_target": 1.987883154386574,
+            "target_kickoff": "2026-11-05T00:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 11.333333333333334,
+            "days_cutoff_to_target": 1.987883154386574,
+            "target_kickoff": "2026-11-05T00:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "2.156938754516926",
+          "total_abs": "17.25392295084098",
+          "brier": "0.1200092282053700352163679945",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        },
+        "refresh": {
+          "margin_abs": "4.125335229332889",
+          "total_abs": "15.38426309505735",
+          "brier": "0.1067417049184351489283775706",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401866454",
+      "away_team": "Buffalo",
+      "home_team": "Miami (OH)",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 45.1875,
+            "days_cutoff_to_target": 38.84192711675926,
+            "target_kickoff": "2026-11-04T00:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 45.333333333333336,
+            "days_cutoff_to_target": 38.84192711675926,
+            "target_kickoff": "2026-11-04T00:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 10.333333333333334,
+            "days_cutoff_to_target": 1.0295498210532408,
+            "target_kickoff": "2026-11-04T01:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 10.229166666666666,
+            "days_cutoff_to_target": 1.0295498210532408,
+            "target_kickoff": "2026-11-04T01:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "14.720713530764943",
+          "total_abs": "11.3606445205235",
+          "brier": "0.5928335085348127757425125023",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "9.388553723149317",
+          "total_abs": "14.17133359494852",
+          "brier": "0.4296702166342417451226408089",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        }
+      },
+      "minimum_original_prior_games": 3
+    },
+    {
+      "game_id": "401866453",
+      "away_team": "Ohio",
+      "home_team": "Akron",
+      "inputs": {
+        "original": {
+          "home": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 45.333333333333336,
+            "days_cutoff_to_target": 38.84192711675926,
+            "target_kickoff": "2026-11-04T00:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 3,
+            "days_since_last_qualified_prior": 45.041666666666664,
+            "days_cutoff_to_target": 38.84192711675926,
+            "target_kickoff": "2026-11-04T00:00:00+00:00"
+          }
+        },
+        "refresh": {
+          "home": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 10.291666666666666,
+            "days_cutoff_to_target": 0.9878831543865741,
+            "target_kickoff": "2026-11-04T00:00:00+00:00"
+          },
+          "away": {
+            "prior_games": 8,
+            "days_since_last_qualified_prior": 10.166666666666666,
+            "days_cutoff_to_target": 0.9878831543865741,
+            "target_kickoff": "2026-11-04T00:00:00+00:00"
+          }
+        }
+      },
+      "errors": {
+        "original": {
+          "margin_abs": "18.365389485491425",
+          "total_abs": "4.76064387323792",
+          "brier": "0.5493613888209176525835030765",
+          "margin_direction_correct": 0,
+          "probability_classifier_correct": 0
+        },
+        "refresh": {
+          "margin_abs": "2.414675036665464",
+          "total_abs": "3.987052279143654",
+          "brier": "0.1438708312347119961238531846",
+          "margin_direction_correct": 1,
+          "probability_classifier_correct": 1
+        }
+      },
+      "minimum_original_prior_games": 3
+    }
+  ],
+  "limits": [
+    "Same single week, narrow original lead-time range; cannot isolate a lead-time effect.",
+    "Refresh jointly changes history, all derived features and source schedule; cannot attribute gains to sample size or rest alone.",
+    "Exploratory strata selected after outcomes were known; no held-out confirmation or causal significance claim.",
+    "No original prediction substitution, threshold tuning, scientific promotion or model/routine/task/wager/money mutation."
+  ],
+  "next": "Before any held-out comparison, predeclare independent temporal/coverage cohorts and metrics under existing protected-split authority; this single-week descriptive result cannot justify a model change."
+}
