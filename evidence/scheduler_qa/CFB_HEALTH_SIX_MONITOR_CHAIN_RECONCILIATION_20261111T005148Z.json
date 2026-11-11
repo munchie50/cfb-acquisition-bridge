@@ -1,0 +1,185 @@
+{
+  "schema": "CFB_BOUNDED_HISTORICAL_RECEIPT_RECONCILIATION_V1",
+  "observed_at": "2026-11-11T00:57:53.105Z",
+  "authenticated_tree": "9f3f00223a4642aa4434039fd031ce86f37da7aa",
+  "scope": "Six retained Monitor receipt chains associated with Nov8-10 07/13CT slots; no complete scheduler-event census or cumulative Health coverage claim",
+  "source_files_verified": 18,
+  "rows": [
+    {
+      "correlation_id": "scheduled11_20261108T130117",
+      "observed_slot_association": "2026-11-08 07:00 CT",
+      "state": "RUN_INCOMPLETE",
+      "failure_class": "SHELL_TOOL_UNAVAILABLE",
+      "closure": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_RUN_CLOSURE_20261108T130117_scheduled11_20261108T130117.md",
+        "git_blob": "7025752550a5bfb3d59c70ca33473e07f7463ce6",
+        "bytes": 946,
+        "sha256": "36a79a827080154019cef65b0a3ed3a9431c8469aa533b1b8288f0db5dc9d3d9"
+      },
+      "candidate": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TERMINAL_CANDIDATE_20261108T130117_scheduled11_20261108T130117.md",
+        "git_blob": "fede83988b5b02c892e735074b75a14befb96604",
+        "bytes": 2766,
+        "sha256": "58370e9689b9ad67baf54961b2376be1a1f89f9ef851df920133fa8d722d213c"
+      },
+      "startup": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261108T130117_scheduled11_20261108T130117.md",
+        "git_blob": "a46c9003e46e68bc1e794aa207a0251a8d692f3c",
+        "bytes": 485,
+        "sha256": "eb283f8da504cc9811a683e8452b48758922a226dbd72b33ce5e39999c49aa0c"
+      },
+      "link_checks": "PASS",
+      "invocation_binding": "SLOT_TIME_ONLY; Nov10 13CT independently matched latest automation run0073eedc-afd4-8333-93f5-ecffc5e5797b",
+      "classification": "CLOSED_INCOMPLETE_NOT_SUCCESS"
+    },
+    {
+      "correlation_id": "scheduled-turn11-20261108T190329005Z",
+      "observed_slot_association": "2026-11-08 13:00 CT",
+      "state": "RUN_INCOMPLETE",
+      "failure_class": "STRUCTURED_HANDOFF_UNAVAILABLE",
+      "closure": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261108T190329005Z_scheduled-turn11_RUN_CLOSURE.json",
+        "git_blob": "e6c3229602528a086010856eaba7428667ccc058",
+        "bytes": 629,
+        "sha256": "51b89a6443af1677b9c8c4b6ee294acbba242766e8a3012df59dc6f8d5d12e19"
+      },
+      "candidate": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261108T190329005Z_scheduled-turn11_TERMINAL_CANDIDATE.json",
+        "git_blob": "1847fe47b342c19005dc567fa23e07e574e567ac",
+        "bytes": 1409,
+        "sha256": "548dfee7ce0a7f211a511e5ddfa570e651007327600f3114675c1facb98fa724"
+      },
+      "startup": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261108T190329005Z_scheduled-turn11-20261108T190329005Z.md",
+        "git_blob": "f120db49f4072495de6d90f30d0f014f595b4c61",
+        "bytes": 405,
+        "sha256": "9d22db74d7e89fddd787b18dbd79137345f88e7026d2a1b0772e3ce96747e77c"
+      },
+      "link_checks": "PASS",
+      "invocation_binding": "SLOT_TIME_ONLY; Nov10 13CT independently matched latest automation run0073eedc-afd4-8333-93f5-ecffc5e5797b",
+      "classification": "CLOSED_INCOMPLETE_NOT_SUCCESS"
+    },
+    {
+      "correlation_id": "auto11-20261109T130041641Z",
+      "observed_slot_association": "2026-11-09 07:00 CT",
+      "state": "RUN_INCOMPLETE",
+      "failure_class": "DNS_RESOLUTION",
+      "closure": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_auto11-20261109T130041641Z_RUN_CLOSURE.json",
+        "git_blob": "31a3156ae98380e154effd17b13e797af4034e0c",
+        "bytes": 671,
+        "sha256": "ab24e2a24a13ca27f55045820dc695d30845c855686ae2e528cf1476bdde71d2"
+      },
+      "candidate": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_auto11-20261109T130041641Z_TERMINAL_CANDIDATE.json",
+        "git_blob": "21cc566f79e9296f93bfdbcbe92dd1fa1ec33360",
+        "bytes": 2049,
+        "sha256": "db9f227de14ec5c51f2433f997695102aea4abfb0f6b079c657eef6e97290418"
+      },
+      "startup": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_auto11-20261109T130041641Z.md",
+        "git_blob": "f87528b15c1ae84d76f7ce6b51d5867b1dd20386",
+        "bytes": 301,
+        "sha256": "9ccaf4bff31c56020b8a8fbdca3f31a800f518934fbf3a558c97730e6abd3224"
+      },
+      "link_checks": "PASS",
+      "invocation_binding": "SLOT_TIME_ONLY; Nov10 13CT independently matched latest automation run0073eedc-afd4-8333-93f5-ecffc5e5797b",
+      "classification": "CLOSED_INCOMPLETE_NOT_SUCCESS"
+    },
+    {
+      "correlation_id": "auto11_20261109T185839130Z",
+      "observed_slot_association": "2026-11-09 13:00 CT",
+      "state": "RUN_INCOMPLETE",
+      "failure_class": "DNS_RESOLUTION",
+      "closure": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_RUN_CLOSURE_auto11_20261109T185839130Z.md",
+        "git_blob": "14fad31c1917cd56c7ed3456cdbced73ef4368cb",
+        "bytes": 513,
+        "sha256": "97e58a5efd18941d16de4a0947599ab46d8bcd28be2209155c323b5dc2449b4d"
+      },
+      "candidate": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TERMINAL_CANDIDATE_auto11_20261109T185839130Z.md",
+        "git_blob": "19ab89e01d7b7b78aaf9a0dac72836579910466c",
+        "bytes": 1181,
+        "sha256": "a4a79106068847d33708d828a39e27284dcf4973e10c206ebfdc4269c66ce666"
+      },
+      "startup": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_auto11_20261109T185839130Z.md",
+        "git_blob": "633fe1f777a0d27b0f1ce54421e5cfa1e3d55c31",
+        "bytes": 260,
+        "sha256": "4f35a03fe9f5a71fb0d0f0c4cb31c9b019081cb9bbeb85e57f5d05549e4b39ee"
+      },
+      "link_checks": "PASS",
+      "invocation_binding": "SLOT_TIME_ONLY; Nov10 13CT independently matched latest automation run0073eedc-afd4-8333-93f5-ecffc5e5797b",
+      "classification": "CLOSED_INCOMPLETE_NOT_SUCCESS"
+    },
+    {
+      "correlation_id": "scheduled-20261110-0700-ct-turn11",
+      "observed_slot_association": "2026-11-10 07:00 CT",
+      "state": "RUN_INCOMPLETE",
+      "failure_class": "DNS_RESOLUTION",
+      "closure": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_RUN_CLOSURE_20261110T130523534Z_scheduled-20261110-0700-ct-turn11.md",
+        "git_blob": "0cceed79b1a484fafe76eb5a6f413d6aa9922d5e",
+        "bytes": 806,
+        "sha256": "81b9e66fc2034ebc6792752584a7b0e8ad82a2afeb96e030d88565cf041be2a4"
+      },
+      "candidate": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TERMINAL_CANDIDATE_20261110T130523534Z_scheduled-20261110-0700-ct-turn11.md",
+        "git_blob": "e9179b3ec4320e1636f8ecd7227be9f72627aa7a",
+        "bytes": 2410,
+        "sha256": "fa4cff2886459dd08fef7c436276e6fb16dd44300c9d1671618922e9d378bbc0"
+      },
+      "startup": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261110T130523534Z_scheduled-20261110-0700-ct-turn11.md",
+        "git_blob": "11eb36e70afe6f8eaa241a846d437eba164e0fb7",
+        "bytes": 400,
+        "sha256": "c51000702cbd6e76b8321fded29bce9902bf0d071919cb368bd168563f6af554"
+      },
+      "link_checks": "PASS",
+      "invocation_binding": "SLOT_TIME_ONLY; Nov10 13CT independently matched latest automation run0073eedc-afd4-8333-93f5-ecffc5e5797b",
+      "classification": "CLOSED_INCOMPLETE_NOT_SUCCESS"
+    },
+    {
+      "correlation_id": "CFB_MARKET_MONITOR_20261110T185743Z_AUTO11",
+      "observed_slot_association": "2026-11-10 13:00 CT",
+      "state": "RUN_INCOMPLETE",
+      "failure_class": "DNS_RESOLUTION",
+      "closure": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_RUN_CLOSURE_20261110T185743Z_AUTO11.md",
+        "git_blob": "3fc96ac40173568a135970534436d1cd7d7264d6",
+        "bytes": 728,
+        "sha256": "3023856c320f4431ba4e42ace3551cf56b1cf4f58b1b5aa0251ae2f765d70631"
+      },
+      "candidate": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TERMINAL_CANDIDATE_20261110T185743Z_AUTO11.md",
+        "git_blob": "13cc12e77cbbf98c329c50baf612242a9af54a05",
+        "bytes": 2097,
+        "sha256": "b782aa1c93ca12c14198434384a8946b1abfe11f218e76872edf24417373eb38"
+      },
+      "startup": {
+        "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261110T185743Z_AUTO11.md",
+        "git_blob": "962f25e77914e3f0dc8f427277c4bb5350f1a563",
+        "bytes": 274,
+        "sha256": "b150023ed78a58ca75b6215166df57f9e9d710ed3355ac8e81abef4a916c4625"
+      },
+      "link_checks": "PASS",
+      "invocation_binding": "SLOT_TIME_ONLY; Nov10 13CT independently matched latest automation run0073eedc-afd4-8333-93f5-ecffc5e5797b",
+      "classification": "CLOSED_INCOMPLETE_NOT_SUCCESS"
+    }
+  ],
+  "failure_class_semantics": "Reported runtime failure classes from authentic retained receipts, not new network probes or independent diagnosis of worker provisioning",
+  "result": "SIX_RETAINED_CHAINS_INDEPENDENTLY_RECONCILED_CLOSED_INCOMPLETE",
+  "cumulative_health_watermark": "UNCHANGED_COVERAGE_UNVERIFIED",
+  "remaining": "Older Health/Evening/Monitor history and exact scheduler invocation associations require independent retained evidence; no replay or historical success upgrade",
+  "current_topology": "20definitions;4enabledproduction;16disabled;no mutation;envinherited/null does not identify actual worker",
+  "monitor_run_match": {
+    "run_id": "0073eedc-afd4-8333-93f5-ecffc5e5797b",
+    "scheduled_for": "2026-11-10T19:00:00Z",
+    "started_at": "2026-11-10T18:57:30.581544Z",
+    "recorded_status": "completed",
+    "engine_result": "RUN_INCOMPLETE",
+    "result_run_id_matched": true,
+    "result_within_run_clock": true
+  }
+}
