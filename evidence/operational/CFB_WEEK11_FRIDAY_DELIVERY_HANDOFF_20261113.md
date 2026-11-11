@@ -15,3 +15,8 @@ Status: READY_TO_RESUME_REVIEW. User's main sportsbook window is Friday afternoo
 3. If a run stops, preserve the actual failure and reference the last verified stage in its normal receipt when persistence is available. The next existing scheduled Monitor or a user-directed manual Monitor resumes from those artifacts, refreshing stale inputs and retaining useful reviewed analysis. Re-read canonical files before each write and honor existing ownership and SHA guards. A completed canonical publication still requires the existing render, readback, selection and closure checks.
 
 The next scheduled invocation is an opportunity to resume on the existing cadence. A failed invocation does not dispatch an independent recovery worker. If the scheduled environment stays blocked, its normal receipt records the failure when possible; a capable manual Monitor can use this same handoff. No extra task, schedule change, wager, or model change.
+
+
+## November 13 user-facing delivery check
+
+Use the November 11 weekly betting card and sportsbook-trip delivery provisions in `evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md`. Update the existing Friday betting card at `evidence/operational/CFB_WEEK11_FRIDAY_BETTING_CARD_20261111.md` from verified current review. Lead the user-facing result with the cross-market ranked card and exact playable terms, then the separately assessed parlay disposition, followed by only the open cases that could change the Friday afternoon card. Explicitly identify any unresolved game-level work if a partial review is delivered. Check price, status, and cutoff before calling the Friday handoff complete. The normal 07:00 and 13:00 CT slots apply.
