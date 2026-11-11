@@ -1,0 +1,2744 @@
+{
+  "schema": "CFB_WEEK11_PENDING15_FOLLOWUP_V1",
+  "cycle_id": "CFB_MARKET_MONITOR_20261111T001552Z",
+  "scope": "actual manual Monitor review; not scheduled proof or execution",
+  "source_recovered_by": "2026-11-11T00:17:12.349Z",
+  "cbs": {
+    "path": "evidence/operational/CFB_WEEK11_CBS_FBS_CAPTURE_20261111T001712Z.md",
+    "scrape_id": "01a1c7f7-0955-750d-b0d6-e263c1bb5b2e"
+  },
+  "quote_checks": [
+    {
+      "game_id": "401856883",
+      "request_started_at": "2026-11-11T00:15:52.746725+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856883",
+      "raw_sha256": "e423c166dd48bef8b9012eef6e327a3d8c71cdc1d77f5e371d746a2e3af72220",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "Georgia Bulldogs"
+        ],
+        [
+          "away",
+          "Missouri Tigers"
+        ]
+      ],
+      "kickoff_utc": "2026-11-14T20:30Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "UGA -15.5",
+      "away": {
+        "teamId": "142",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 525,
+        "spreadOdds": -110
+      },
+      "home": {
+        "teamId": "61",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -750,
+        "spreadOdds": -110
+      },
+      "total": 47.5,
+      "over_price": -108,
+      "under_price": -112,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964626%3Foutcomes%3D0ML87100043_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401856883,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964626%3Foutcomes%3D0ML87100043_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401856883,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964626%3Foutcomes%3D0HC87100043N1550_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401856883,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:UGA-15.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964626%3Foutcomes%3D0HC87100043P1550_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401856883,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:MIZ+15.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964626%3Foutcomes%3D0OU87100043O4750_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401856883,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:47.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964626%3Foutcomes%3D0OU87100043U4750_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401856883,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:47.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964626",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401856883,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    },
+    {
+      "game_id": "401856884",
+      "request_started_at": "2026-11-11T00:15:52.747556+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856884",
+      "raw_sha256": "11cf9c9208ad8872d75166283f87d316ebee21627555f1df722dbd561834598f",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "Kentucky Wildcats"
+        ],
+        [
+          "away",
+          "Florida Gators"
+        ]
+      ],
+      "kickoff_utc": "2026-11-14T23:15Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "UK -3.5",
+      "away": {
+        "teamId": "57",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 145,
+        "spreadOdds": -115
+      },
+      "home": {
+        "teamId": "96",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -175,
+        "spreadOdds": -105
+      },
+      "total": 52.5,
+      "over_price": -110,
+      "under_price": -110,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964190%3Foutcomes%3D0ML87098669_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401856884,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964190%3Foutcomes%3D0ML87098669_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401856884,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964190%3Foutcomes%3D0HC87098669N350_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401856884,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:UK-3.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964190%3Foutcomes%3D0HC87098669P350_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401856884,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:FLA+3.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964190%3Foutcomes%3D0OU87098669O5250_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401856884,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:52.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964190%3Foutcomes%3D0OU87098669U5250_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401856884,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:52.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964190",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401856884,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    },
+    {
+      "game_id": "401858293",
+      "request_started_at": "2026-11-11T00:15:52.748262+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858293",
+      "raw_sha256": "dfcd6cf73d4d235461acd7b83e12ad60cd042c2d944b85457fa15ddaad2c10e8",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "Pittsburgh Panthers"
+        ],
+        [
+          "away",
+          "Florida State Seminoles"
+        ]
+      ],
+      "kickoff_utc": "2026-11-14T00:00Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "PITT -3.5",
+      "away": {
+        "teamId": "52",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 142,
+        "spreadOdds": -112
+      },
+      "home": {
+        "teamId": "221",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -170,
+        "spreadOdds": -108
+      },
+      "total": 53.5,
+      "over_price": -115,
+      "under_price": -105,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964162%3Foutcomes%3D0ML87098641_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858293,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964162%3Foutcomes%3D0ML87098641_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858293,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964162%3Foutcomes%3D0HC87098641N350_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858293,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:PITT-3.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964162%3Foutcomes%3D0HC87098641P350_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858293,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:FSU+3.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964162%3Foutcomes%3D0OU87098641O5350_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858293,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:53.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964162%3Foutcomes%3D0OU87098641U5350_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858293,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:53.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964162",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858293,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    },
+    {
+      "game_id": "401858298",
+      "request_started_at": "2026-11-11T00:15:52.748778+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858298",
+      "raw_sha256": "6d81fb645843d15aa56b62c05ff4d5a154e03bb591b8df0a61352ea8f5db9af8",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "North Carolina Tar Heels"
+        ],
+        [
+          "away",
+          "Louisville Cardinals"
+        ]
+      ],
+      "kickoff_utc": "2026-11-15T00:00Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "LOU -3.5",
+      "away": {
+        "teamId": "97",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -170,
+        "spreadOdds": -110
+      },
+      "home": {
+        "teamId": "153",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 142,
+        "spreadOdds": -110
+      },
+      "total": 59.5,
+      "over_price": -112,
+      "under_price": -108,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964191%3Foutcomes%3D0ML87098670_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858298,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964191%3Foutcomes%3D0ML87098670_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858298,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964191%3Foutcomes%3D0HC87098670P350_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858298,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:UNC+3.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964191%3Foutcomes%3D0HC87098670N350_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858298,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:LOU-3.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964191%3Foutcomes%3D0OU87098670O5950_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858298,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:59.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964191%3Foutcomes%3D0OU87098670U5950_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858298,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:59.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964191",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858298,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    },
+    {
+      "game_id": "401858299",
+      "request_started_at": "2026-11-11T00:15:52.749690+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858299",
+      "raw_sha256": "c855d3e820920a47c676b404aa578cf5c0539502dda317614c7edf084f34d721",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "Virginia Tech Hokies"
+        ],
+        [
+          "away",
+          "Stanford Cardinal"
+        ]
+      ],
+      "kickoff_utc": "2026-11-15T00:30Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "VT -15.5",
+      "away": {
+        "teamId": "24",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 500,
+        "spreadOdds": -112
+      },
+      "home": {
+        "teamId": "259",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -700,
+        "spreadOdds": -108
+      },
+      "total": 58.5,
+      "over_price": -108,
+      "under_price": -112,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964179%3Foutcomes%3D0ML87098658_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858299,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964179%3Foutcomes%3D0ML87098658_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858299,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964179%3Foutcomes%3D0HC87098658N1550_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858299,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:VT-15.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964179%3Foutcomes%3D0HC87098658P1550_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858299,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:STAN+15.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964179%3Foutcomes%3D0OU87098658O5850_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858299,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:58.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964179%3Foutcomes%3D0OU87098658U5850_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858299,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:58.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964179",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858299,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    },
+    {
+      "game_id": "401858301",
+      "request_started_at": "2026-11-11T00:15:58.949128+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858301",
+      "raw_sha256": "401744879e1f8b7a24d8bfef1d40ad2ac93042192edbcfd0a7d7959d9c9f09dd",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "SMU Mustangs"
+        ],
+        [
+          "away",
+          "Wake Forest Demon Deacons"
+        ]
+      ],
+      "kickoff_utc": "2026-11-14T17:00Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "SMU -1.5",
+      "away": {
+        "teamId": "154",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": -110,
+        "spreadOdds": -120
+      },
+      "home": {
+        "teamId": "2567",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -110,
+        "spreadOdds": 100
+      },
+      "total": 61.5,
+      "over_price": -105,
+      "under_price": -115,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964200%3Foutcomes%3D0ML87098689_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858301,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964200%3Foutcomes%3D0ML87098689_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858301,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964200%3Foutcomes%3D0HC87098689N150_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858301,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:SMU-1.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964200%3Foutcomes%3D0HC87098689P150_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858301,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:WAKE+1.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964200%3Foutcomes%3D0OU87098689O6150_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858301,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:61.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964200%3Foutcomes%3D0OU87098689U6150_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858301,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:61.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964200",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858301,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    },
+    {
+      "game_id": "401858519",
+      "request_started_at": "2026-11-11T00:15:58.984148+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858519",
+      "raw_sha256": "36bea7b912ac77c1ecc0de2ce021b7cafb6cb879807b84bf56bbce037484698f",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "Iowa Hawkeyes"
+        ],
+        [
+          "away",
+          "Purdue Boilermakers"
+        ]
+      ],
+      "kickoff_utc": "2026-11-15T00:30Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "IOWA -16.5",
+      "away": {
+        "teamId": "2509",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 625,
+        "spreadOdds": -105
+      },
+      "home": {
+        "teamId": "2294",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -950,
+        "spreadOdds": -115
+      },
+      "total": 47.5,
+      "over_price": -112,
+      "under_price": -108,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964202%3Foutcomes%3D0ML87098691_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858519,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964202%3Foutcomes%3D0ML87098691_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858519,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964202%3Foutcomes%3D0HC87098691N1650_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858519,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:IOWA-16.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964202%3Foutcomes%3D0HC87098691P1650_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858519,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:PUR+16.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964202%3Foutcomes%3D0OU87098691O4750_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858519,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:47.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964202%3Foutcomes%3D0OU87098691U4750_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858519,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:47.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964202",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401858519,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    },
+    {
+      "game_id": "401860914",
+      "request_started_at": "2026-11-11T00:15:59.091398+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860914",
+      "raw_sha256": "02ce89b53ef1615b63c07aac42c8a569ef00e091bfaee25a478e09ed686a75b7",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "Boise State Broncos"
+        ],
+        [
+          "away",
+          "Oregon State Beavers"
+        ]
+      ],
+      "kickoff_utc": "2026-11-14T23:00Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "BOIS -13.5",
+      "away": {
+        "teamId": "204",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 390,
+        "spreadOdds": -108
+      },
+      "home": {
+        "teamId": "68",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -520,
+        "spreadOdds": -112
+      },
+      "total": 65.5,
+      "over_price": -112,
+      "under_price": -108,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964188%3Foutcomes%3D0ML87098667_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860914,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964188%3Foutcomes%3D0ML87098667_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860914,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964188%3Foutcomes%3D0HC87098667N1350_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860914,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:BOIS-13.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964188%3Foutcomes%3D0HC87098667P1350_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860914,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:ORST+13.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964188%3Foutcomes%3D0OU87098667O6550_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860914,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:65.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964188%3Foutcomes%3D0OU87098667U6550_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860914,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:65.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964188",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860914,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    },
+    {
+      "game_id": "401860916",
+      "request_started_at": "2026-11-11T00:15:59.108419+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860916",
+      "raw_sha256": "b0c300481709f96375f661f539809cfeba36a765cf35371128b6f6a407830603",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "Texas State Bobcats"
+        ],
+        [
+          "away",
+          "Fresno State Bulldogs"
+        ]
+      ],
+      "kickoff_utc": "2026-11-14T21:00Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "TXST -10",
+      "away": {
+        "teamId": "278",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 295,
+        "spreadOdds": -115
+      },
+      "home": {
+        "teamId": "326",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -375,
+        "spreadOdds": -105
+      },
+      "total": 59.5,
+      "over_price": -112,
+      "under_price": -108,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964186%3Foutcomes%3D0ML87098665_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860916,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964186%3Foutcomes%3D0ML87098665_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860916,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964186%3Foutcomes%3D0HC87098665N1000_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860916,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:TXST-10"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964186%3Foutcomes%3D0HC87098665P1000_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860916,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:FRES+10"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964186%3Foutcomes%3D0OU87098665O5950_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860916,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:59.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964186%3Foutcomes%3D0OU87098665U5950_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860916,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:59.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964186",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860916,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    },
+    {
+      "game_id": "401860917",
+      "request_started_at": "2026-11-11T00:15:59.264268+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860917",
+      "raw_sha256": "8c96a343ee1531e082490b451281bab799017eed5bf800243abc0a754a76fcae",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "Washington State Cougars"
+        ],
+        [
+          "away",
+          "Colorado State Rams"
+        ]
+      ],
+      "kickoff_utc": "2026-11-15T03:30Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "WSU -9.5",
+      "away": {
+        "teamId": "36",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 285,
+        "spreadOdds": -110
+      },
+      "home": {
+        "teamId": "265",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -360,
+        "spreadOdds": -110
+      },
+      "total": 67.5,
+      "over_price": -110,
+      "under_price": -110,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964197%3Foutcomes%3D0ML87098686_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860917,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964197%3Foutcomes%3D0ML87098686_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860917,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964197%3Foutcomes%3D0HC87098686N950_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860917,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:WSU-9.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964197%3Foutcomes%3D0HC87098686P950_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860917,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:CSU+9.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964197%3Foutcomes%3D0OU87098686O6750_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860917,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:67.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964197%3Foutcomes%3D0OU87098686U6750_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860917,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:67.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964197",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401860917,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    },
+    {
+      "game_id": "401862827",
+      "request_started_at": "2026-11-11T00:16:03.560177+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862827",
+      "raw_sha256": "4998fde142e28193907d4d410b7f3d1130f81f460d6462abb90f0f651d73e33f",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "UTSA Roadrunners"
+        ],
+        [
+          "away",
+          "North Texas Mean Green"
+        ]
+      ],
+      "kickoff_utc": "2026-11-15T02:00Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "UNT -2.5",
+      "away": {
+        "teamId": "249",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -125,
+        "spreadOdds": -105
+      },
+      "home": {
+        "teamId": "2636",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 105,
+        "spreadOdds": -115
+      },
+      "total": 76.5,
+      "over_price": -108,
+      "under_price": -112,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964220%3Foutcomes%3D0ML87098817_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401862827,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964220%3Foutcomes%3D0ML87098817_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401862827,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964220%3Foutcomes%3D0HC87098817P250_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401862827,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:UTSA+2.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964220%3Foutcomes%3D0HC87098817N250_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401862827,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:UNT-2.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964220%3Foutcomes%3D0OU87098817O7650_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401862827,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:76.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964220%3Foutcomes%3D0OU87098817U7650_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401862827,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:76.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964220",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401862827,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    },
+    {
+      "game_id": "401864537",
+      "request_started_at": "2026-11-11T00:16:03.609087+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864537",
+      "raw_sha256": "4b652df80be87ecc35c97707aa8ede77521eea4f1c84843d5333bba64943d7d9",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "Hawai'i Rainbow Warriors"
+        ],
+        [
+          "away",
+          "North Dakota State Bison"
+        ]
+      ],
+      "kickoff_utc": "2026-11-15T04:00Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "NDSU -6.5",
+      "away": {
+        "teamId": "2449",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -245,
+        "spreadOdds": -108
+      },
+      "home": {
+        "teamId": "62",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 200,
+        "spreadOdds": -112
+      },
+      "total": 38.5,
+      "over_price": -105,
+      "under_price": -115,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964199%3Foutcomes%3D0ML87098688_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401864537,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964199%3Foutcomes%3D0ML87098688_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401864537,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964199%3Foutcomes%3D0HC87098688P650_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401864537,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:HAW+6.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964199%3Foutcomes%3D0HC87098688N650_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401864537,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:NDSU-6.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964199%3Foutcomes%3D0OU87098688O3850_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401864537,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:38.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964199%3Foutcomes%3D0OU87098688U3850_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401864537,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:38.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964199",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401864537,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    },
+    {
+      "game_id": "401864539",
+      "request_started_at": "2026-11-11T00:16:03.683885+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864539",
+      "raw_sha256": "0c18b0095655d602bd30030d9e716240728387d243b707d2a27ca2ba838d87e5",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "New Mexico Lobos"
+        ],
+        [
+          "away",
+          "UNLV Rebels"
+        ]
+      ],
+      "kickoff_utc": "2026-11-15T00:30Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "UNM -14",
+      "away": {
+        "teamId": "2439",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 440,
+        "spreadOdds": -110
+      },
+      "home": {
+        "teamId": "167",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -600,
+        "spreadOdds": -110
+      },
+      "total": 46.5,
+      "over_price": -115,
+      "under_price": -105,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964193%3Foutcomes%3D0ML87098672_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401864539,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964193%3Foutcomes%3D0ML87098672_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401864539,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964193%3Foutcomes%3D0HC87098672N1400_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401864539,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:UNM-14"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964193%3Foutcomes%3D0HC87098672P1400_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401864539,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:UNLV+14"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964193%3Foutcomes%3D0OU87098672O4650_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401864539,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:46.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964193%3Foutcomes%3D0OU87098672U4650_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401864539,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:46.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964193",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401864539,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    },
+    {
+      "game_id": "401869928",
+      "request_started_at": "2026-11-11T00:16:03.712016+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869928",
+      "raw_sha256": "90e10c7fda95ebae991dc17531b548fec2ae0a039f60404bbc91f172398b451c",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "Marshall Thundering Herd"
+        ],
+        [
+          "away",
+          "App State Mountaineers"
+        ]
+      ],
+      "kickoff_utc": "2026-11-14T23:00Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "APP -1.5",
+      "away": {
+        "teamId": "2026",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -120,
+        "spreadOdds": -112
+      },
+      "home": {
+        "teamId": "276",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 100,
+        "spreadOdds": -108
+      },
+      "total": 53.5,
+      "over_price": -115,
+      "under_price": -105,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964187%3Foutcomes%3D0ML87098666_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401869928,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964187%3Foutcomes%3D0ML87098666_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401869928,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964187%3Foutcomes%3D0HC87098666P150_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401869928,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:MRSH+1.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964187%3Foutcomes%3D0HC87098666N150_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401869928,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:APP-1.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964187%3Foutcomes%3D0OU87098666O5350_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401869928,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:53.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964187%3Foutcomes%3D0OU87098666U5350_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401869928,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:53.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964187",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401869928,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    },
+    {
+      "game_id": "401871060",
+      "request_started_at": "2026-11-11T00:16:03.727833+00:00",
+      "recovered_by": "2026-11-11T00:16:36Z",
+      "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871060",
+      "raw_sha256": "6ea5f7ef35792a271949bda41925db2fc49ee42f3b962c1613ab377ec50930b9",
+      "raw_sha_note": "full response verified in scratch; this retained record is a field projection, not full raw retention",
+      "teams": [
+        [
+          "home",
+          "Delaware Blue Hens"
+        ],
+        [
+          "away",
+          "Florida International Panthers"
+        ]
+      ],
+      "kickoff_utc": "2026-11-14T20:00Z",
+      "provider": "DraftKings",
+      "provider_id": "100",
+      "details": "DEL -5.5",
+      "away": {
+        "teamId": "2229",
+        "favorite": false,
+        "underdog": true,
+        "moneyLine": 180,
+        "spreadOdds": -112
+      },
+      "home": {
+        "teamId": "48",
+        "favorite": true,
+        "underdog": false,
+        "moneyLine": -218,
+        "spreadOdds": -108
+      },
+      "total": 54.5,
+      "over_price": -110,
+      "under_price": -110,
+      "links": [
+        {
+          "rel": [
+            "home",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964169%3Foutcomes%3D0ML87098648_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401871060,
+              "betSide": "home",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "away",
+            "desktop",
+            "bets",
+            "draftkings"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964169%3Foutcomes%3D0ML87098648_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401871060,
+              "betSide": "away",
+              "betType": "straight"
+            }
+          }
+        },
+        {
+          "rel": [
+            "homeSpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964169%3Foutcomes%3D0HC87098648N550_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401871060,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:DEL-5.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "awaySpread",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964169%3Foutcomes%3D0HC87098648P550_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401871060,
+              "betSide": "none",
+              "betType": "straight",
+              "betDetails": "Spread:FIU+5.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "over",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964169%3Foutcomes%3D0OU87098648O5450_1",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401871060,
+              "betSide": "over",
+              "betType": "straight",
+              "betDetails": "Over:54.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "under",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964169%3Foutcomes%3D0OU87098648U5450_3",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401871060,
+              "betSide": "under",
+              "betType": "straight",
+              "betDetails": "Under:54.5"
+            }
+          }
+        },
+        {
+          "rel": [
+            "game",
+            "desktop",
+            "bets"
+          ],
+          "url": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34964169",
+          "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+              "league": "college-football",
+              "sport": "football",
+              "gameId": 401871060,
+              "betSide": "none",
+              "betType": "straight"
+            }
+          }
+        }
+      ],
+      "offer_updated_at": null,
+      "venue_verified": false,
+      "consensus_verified": false
+    }
+  ],
+  "official_material": {
+    "url": "https://pittsburghpanthers.com/news/2026/11/10/football-talkin-pitt-more-to-finish",
+    "scrape_id": "01a1c7f5-a202-77ac-b9ee-a161da1482a7",
+    "published": "2026-11-10 15:18 site-local",
+    "assessment": "Pitt official current report supports Geriner's present role and growing confidence, offensive-line continuity, and Ferguson's expanded protection/routing workload. This supplements season-leader statistics; it is not an availability clearance. FSU quarterback mobility remains an explicit defensive concern.",
+    "status": "material_context_only_not_recommendation"
+  },
+  "reviews": [
+    {
+      "game_id": "401856883",
+      "disposition": "INCONCLUSIVE",
+      "rationale": "Georgia -15.5/-110 and Missouri +15.5/-110; total47.5 over-108/under-112 now identified. Georgia's offense/defense supports favorite direction; Missouri's run defense and low-turnover passing oppose easy margin extrapolation. Current personnel and independent large-margin assessment remain open. Both ML/total directions reviewed without a limit; no recommendation."
+    },
+    {
+      "game_id": "401856884",
+      "disposition": "INCONCLUSIVE",
+      "rationale": "Florida +3.5/-115, Kentucky -3.5/-105;52.5/-110 both ways identified. Florida season-leader Philo versus recent Jones usage remains unresolved; no injury inference. Kentucky turnover/discipline strengths oppose dog preference; pass-defense weaknesses oppose assuming suppression from two poor recent scoring games. Need current QB role before side/ML/total limit."
+    },
+    {
+      "game_id": "401858293",
+      "disposition": "INCONCLUSIVE",
+      "rationale": "Reassessment remains OPEN, not a recommendation: named pair Pitt -3.5/-108, FSU +3.5/-112; total 53.5 over -115/under -105. New official Nov10 report supports Geriner's present role, offensive-line chemistry and Ferguson's expanded workload; does not clear Turner's availability. FSU mobile QB/changed tempo and Pitt pass defense/penalties oppose laying beyond three. Need current availability and independent margin assessment before side/ML or total limit. Friday07CT checkpoint retained."
+    },
+    {
+      "game_id": "401858298",
+      "disposition": "INCONCLUSIVE",
+      "rationale": "Louisville -3.5/-110, UNC +3.5/-110; total59.5 over-112/under-108 identified. Current Kienholz rushing/passing and UNC Edwards passing confirm recent usage but not availability clearance. Louisville run/third-down matchup is opposed by its secondary and penalties; need official QB/line context and independent beyond-three margin assessment. No side/ML/total limit."
+    },
+    {
+      "game_id": "401858299",
+      "disposition": "PASS",
+      "rationale": "PASS this review: VT -15.5/-108 asks for a multi-score margin despite its vulnerable secondary and turnovers; Stanford's recent 270-yard, three-TD passing game supports a backdoor route. Stanford +15.5/-112 is also unsupported against VT's productive passing and rushing. Neither ML earns a price limit. At 58.5 (-108 over/-112 under), the offensive routes oppose a frozen-gap-only under; no independent total edge."
+    },
+    {
+      "game_id": "401858301",
+      "disposition": "INCONCLUSIVE",
+      "rationale": "CBS direction conflict resolved for this observation by identified DraftKings pair SMU -1.5/+100, Wake +1.5/-120; total61.5 over-105/under-115. That coherent reference does not resolve Gio Lopez knee status or authorize inferring clearance from Pizzella's Merrimack performance. Need official current QB role and opponent-adjusted drive assessment before either side/ML/total. No recommendation or limit."
+    },
+    {
+      "game_id": "401858519",
+      "disposition": "PASS",
+      "rationale": "PASS this review: Iowa -16.5/-115 requires a margin not earned by its modest current passing production; Purdue's recent 296 passing yards and 29 points preserve backdoor risk. Purdue +16.5/-105 still faces Iowa's defense and a rushing mismatch, so the dog and both MLs lack a supported limit. At 47.5 (-112 over/-108 under), Iowa suppression and Purdue vulnerability conflict; no total recommendation."
+    },
+    {
+      "game_id": "401860914",
+      "disposition": "PASS",
+      "rationale": "PASS this review: OSU +13.5/-108 depends on an offensive rebound after Atkinson's 192-yard, zero-TD game, while Boise's Cutforth just produced four passing TDs and Riley's rushing creates another route. Boise -13.5/-112 still needs a large-margin judgment beyond that last game. Both MLs lack a limit. At 65.5 (-112 over/-108 under), Boise scoring upside and OSU contribution uncertainty prevent either total; frozen 56.7 is not current fair value."
+    },
+    {
+      "game_id": "401860916",
+      "disposition": "PASS",
+      "rationale": "PASS this review: Fresno +10/-115 has passing and discipline support but just scored ten with little rushing; Texas State's current dual rushing threat attacks the central matchup concern. Texas State -10/-105 still faces Fresno's pass-game and ball-security countercase. No ML limit. At 59.5 (-112 over/-108 under), the Texas State rushing route and Fresno low scoring oppose one another; neither total earns a limit."
+    },
+    {
+      "game_id": "401860917",
+      "disposition": "PASS",
+      "rationale": "PASS this review: CSU +9.5/-110 has productive passing but a defense that just conceded 64, while WSU -9.5/-110 requires relying on a changing offense and weak season scoring baseline. Eshelman's recent passing/rushing confirms usage, not a reliable current margin. No ML limit. The 67.5/-110 total is not an automatic under against CSU's defense or an over when WSU finishing and drives remain uneven."
+    },
+    {
+      "game_id": "401862827",
+      "disposition": "INCONCLUSIVE",
+      "rationale": "NorthTexas -2.5/-105, UTSA +2.5/-115;76.5 over-108/under-112 identified. NT offense/red-zone production and UTSA's recent defensive failure support favorite; NT rush defense/penalties remain close-game countercase. Named offer gap is closed; official current QB/line evidence and modest margin judgment remain open. Neither mechanical under nor ML/over limit earned."
+    },
+    {
+      "game_id": "401864537",
+      "disposition": "PASS",
+      "rationale": "PASS this review at identified NDSU -6.5/-108, Hawaii +6.5/-112: NDSU's defensive/rushing case does not independently earn nearly a touchdown on the island. Hawaii's recent passing and home field oppose that favorite margin; its weak rushing/finishing versus NDSU also leave the dog and both MLs unsupported. At 38.5 (-105 over/-115 under), strong defense conflicts with possible passing efficiency; no frozen-gap-only over. Earlier short-spread candidate is not authority to chase this number."
+    },
+    {
+      "game_id": "401864539",
+      "disposition": "INCONCLUSIVE",
+      "rationale": "NewMexico -14/-110, UNLV +14/-110;46.5 over-115/under-105 identified. NewMexico rush/run-defense matchup supports favorite, but plus18 turnover margin and low passing output must not be treated as sustainable guaranteed margin. Current personnel and independent two-touchdown judgment still needed; no ML/total limit."
+    },
+    {
+      "game_id": "401869928",
+      "disposition": "INCONCLUSIVE",
+      "rationale": "AppState -1.5/-112, Marshall +1.5/-108;53.5 over-115/under-105 identified. Recent Singleton and Marshall Turner usage is retained distinctly from season leaders; no injury inference. App passing attacks Marshall secondary but App third-down/red-zone weaknesses create opposing drives. Need official current QB roles and independent short-margin judgment; no side/ML/total limit."
+    },
+    {
+      "game_id": "401871060",
+      "disposition": "PASS",
+      "rationale": "PASS this review: under 54.5/-110 is opposed by Delaware's passing/red-zone production and vulnerable pass defense, even though FIU's defense and possession support suppression. Over also depends on FIU converting yards into points. FIU +5.5/-112 has a defensive cushion case but turnovers/low scoring oppose it; Delaware -5.5/-108 meets FIU third-down defense. Neither side or ML earns a supported limit."
+    }
+  ],
+  "counts": {
+    "prior_unresolved": 15,
+    "new_pass": 7,
+    "still_unresolved": 8,
+    "current_pass": 56,
+    "current_conditional": 3
+  },
+  "remaining": "Eight specific official personnel/margin assessments; Friday Nov13 07CT full actionable revalidation including prior PASS; full natural Monitor/Evening/Health historical coverage and settlement unchanged."
+}
