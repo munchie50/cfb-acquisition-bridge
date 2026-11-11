@@ -1,0 +1,2628 @@
+{
+  "schema": "CFB_WEEK6_PRODUCER_AND_WEEK5_SATURDAY_REPLAY_V1",
+  "input_head": "6eeb13bc397346893f7e3c7fa062712b2c922202",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_COMPLETED_WEEK5_BASELINE_20261025.json",
+      "sha": "15980c694fa75098104fd22f81d400e704db8d98"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK5_HOT_SHEET_2026-09-29_2020CT.md",
+      "sha": "ae97ddad71d7ff98965b605b55465771160f37f4"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK5_SUNDAY_EARLY_BOARD_2026-09-27_1313CT.md",
+      "sha": "825fd131b0365d77daf26d986e95d3e040f452a8"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_RUN_RECEIPT_2026-10-03_0719CT_MARKET_MONITOR.md",
+      "sha": "4bcb80b7fa7b9a13187d281ed0002001ec6ca3ee"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_RUN_RECEIPT_2026-10-04_0840CT_MANUAL_MARKET_MONITOR.md",
+      "sha": "d4bd143a57df87450d5ed3920b141e77f9842970"
+    }
+  ],
+  "canonical_market": {
+    "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+    "week6_commit": "0bc32066ac39beeb470ea07a2f4cf3f610a498ac",
+    "week6_blob": "e568d4ed143a977e676d1f0202b349b287f3c16c",
+    "week5_commit": "0ca5543876fca8ac6b010fa8267f214829228ee9",
+    "week5_blob": "a654adff7d73a9d003396d02f95fbd2ac7274915"
+  },
+  "findings": [
+    "Week 6: original October 4 canonical producer append confirms 18 modeled spread/total pairs and no retained price or ML fields, plus one separately excluded Indiana–Nebraska observation. The other 31 modeled rows were unavailable. No fixed opening-board payout replay can be scored from these records.",
+    "Week 5: October 3 07:19 CT Saturday run used one prospective FantasyData benchmark board. Its retained 44 fully priced directed rows match the Saturday Hot Sheet and exact original forecast/final audit. Three Thursday/Friday modeled games are outside this Saturday cohort. The 07:19 time is the run start, with retrieval thereafter. Exact response-completion clock and independent kickoff clocks are unavailable in the inspected records. Treat this as a late-week replay using saved publication schedule, separate from strict opening cohorts.",
+    "The September 27 Week 5 broad board reported 44 benchmark rows without displayed prices and three unavailable. Separately retained early individual book observations must retain their own clocks. Apply the same $5 hypothetical forecast rule to the Saturday cohort only."
+  ],
+  "rows": [
+    {
+      "game_id": "401862787",
+      "game": "Memphis @ Charlotte",
+      "kickoff_display_ct": "14:30",
+      "quote": {
+        "al": -20.5,
+        "ap": -111,
+        "hl": 20.5,
+        "hp": -110,
+        "am": -2122,
+        "hm": 955,
+        "total": 52.5,
+        "op": -108,
+        "up": -114
+      },
+      "frozen_and_final": {
+        "game_id": "401862787",
+        "away_team": "Memphis",
+        "home_team": "Charlotte",
+        "pred_margin": -10.004585696131514,
+        "pred_total": 61.34182868539894,
+        "pred_home_win": 0.29058779275811825,
+        "actual_home_margin": -51,
+        "actual_total": 67,
+        "margin_error": -40.995414303868486,
+        "total_error": 5.658171314601063,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 0,
+        "brier_component": 0.08444126530003508
+      }
+    },
+    {
+      "game_id": "401856707",
+      "game": "Alabama @ Mississippi State",
+      "kickoff_display_ct": "11:00",
+      "quote": {
+        "al": -5.5,
+        "ap": -109,
+        "hl": 5.5,
+        "hp": -113,
+        "am": -217,
+        "hm": 177,
+        "total": 60.5,
+        "op": -114,
+        "up": -108
+      },
+      "frozen_and_final": {
+        "game_id": "401856707",
+        "away_team": "Alabama",
+        "home_team": "Mississippi State",
+        "pred_margin": 9.865156064596746,
+        "pred_total": 60.037746578134076,
+        "pred_home_win": 0.7433194642034139,
+        "actual_home_margin": -33,
+        "actual_total": 79,
+        "margin_error": -42.865156064596746,
+        "total_error": 18.962253421865924,
+        "margin_direction_correct": 0,
+        "home_win_outcome": 0,
+        "brier_component": 0.5525238258636503
+      }
+    },
+    {
+      "game_id": "401858252",
+      "game": "Syracuse @ UConn",
+      "kickoff_display_ct": "11:00",
+      "quote": {
+        "al": -6.5,
+        "ap": -115,
+        "hl": 6.5,
+        "hp": -106,
+        "am": -264,
+        "hm": 211,
+        "total": 50.5,
+        "op": -110,
+        "up": -112
+      },
+      "frozen_and_final": {
+        "game_id": "401858252",
+        "away_team": "Syracuse",
+        "home_team": "UConn",
+        "pred_margin": 6.881658939922917,
+        "pred_total": 55.63158552141954,
+        "pred_home_win": 0.6700832592439423,
+        "actual_home_margin": -1,
+        "actual_total": 83,
+        "margin_error": -7.881658939922917,
+        "total_error": 27.368414478580462,
+        "margin_direction_correct": 0,
+        "home_win_outcome": 0,
+        "brier_component": 0.44901157431898436
+      }
+    },
+    {
+      "game_id": "401858474",
+      "game": "Michigan @ Minnesota",
+      "kickoff_display_ct": "11:00",
+      "quote": {
+        "al": -6.5,
+        "ap": -107,
+        "hl": 6.5,
+        "hp": -115,
+        "am": -232,
+        "hm": 189,
+        "total": 43.5,
+        "op": -110,
+        "up": -111
+      },
+      "frozen_and_final": {
+        "game_id": "401858474",
+        "away_team": "Michigan",
+        "home_team": "Minnesota",
+        "pred_margin": 5.659717827206948,
+        "pred_total": 45.29858095372723,
+        "pred_home_win": 0.6143907854141829,
+        "actual_home_margin": 6,
+        "actual_total": 34,
+        "margin_error": 0.34028217279305206,
+        "total_error": -11.298580953727232,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.14869446637349074
+      }
+    },
+    {
+      "game_id": "401858250",
+      "game": "Notre Dame @ North Carolina",
+      "kickoff_display_ct": "11:00",
+      "quote": {
+        "al": -21,
+        "ap": -112,
+        "hl": 21,
+        "hp": -110,
+        "am": -2776,
+        "hm": 1093,
+        "total": 46.5,
+        "op": -113,
+        "up": -107
+      },
+      "frozen_and_final": {
+        "game_id": "401858250",
+        "away_team": "Notre Dame",
+        "home_team": "North Carolina",
+        "pred_margin": -3.1262284392834747,
+        "pred_total": 45.32418809878474,
+        "pred_home_win": 0.4065688080172651,
+        "actual_home_margin": -11,
+        "actual_total": 63,
+        "margin_error": -7.873771560716525,
+        "total_error": 17.675811901215262,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 0,
+        "brier_component": 0.16529819565257975
+      }
+    },
+    {
+      "game_id": "401856807",
+      "game": "Middle Tennessee @ Kansas",
+      "kickoff_display_ct": "11:00",
+      "quote": {
+        "al": 20.5,
+        "ap": -108,
+        "hl": -20.5,
+        "hp": -112,
+        "am": 959,
+        "hm": -2083,
+        "total": 50.5,
+        "op": -110,
+        "up": -112
+      },
+      "frozen_and_final": {
+        "game_id": "401856807",
+        "away_team": "Middle Tennessee",
+        "home_team": "Kansas",
+        "pred_margin": 8.38086661586452,
+        "pred_total": 49.68965414153562,
+        "pred_home_win": 0.6577753494822218,
+        "actual_home_margin": 55,
+        "actual_total": 55,
+        "margin_error": 46.61913338413548,
+        "total_error": 5.31034585846438,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.11711771142201541
+      }
+    },
+    {
+      "game_id": "401858251",
+      "game": "Stanford @ Wake Forest",
+      "kickoff_display_ct": "11:00",
+      "quote": {
+        "al": 14.5,
+        "ap": -110,
+        "hl": -14.5,
+        "hp": -110,
+        "am": 464,
+        "hm": -650,
+        "total": 53.5,
+        "op": -113,
+        "up": -109
+      },
+      "frozen_and_final": {
+        "game_id": "401858251",
+        "away_team": "Stanford",
+        "home_team": "Wake Forest",
+        "pred_margin": 13.469117778162733,
+        "pred_total": 57.63923438773145,
+        "pred_home_win": 0.791886047679103,
+        "actual_home_margin": 54,
+        "actual_total": 60,
+        "margin_error": 40.53088222183727,
+        "total_error": 2.360765612268551,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.0433114171506246
+      }
+    },
+    {
+      "game_id": "401856822",
+      "game": "West Virginia @ Iowa State",
+      "kickoff_display_ct": "11:00",
+      "quote": {
+        "al": 3,
+        "ap": -106,
+        "hl": -3,
+        "hp": -116,
+        "am": 134,
+        "hm": -163,
+        "total": 53.5,
+        "op": -115,
+        "up": -108
+      },
+      "frozen_and_final": {
+        "game_id": "401856822",
+        "away_team": "West Virginia",
+        "home_team": "Iowa State",
+        "pred_margin": 5.353971660089986,
+        "pred_total": 50.077902938324634,
+        "pred_home_win": 0.6991705244586341,
+        "actual_home_margin": 3,
+        "actual_total": 87,
+        "margin_error": -2.353971660089986,
+        "total_error": 36.922097061675366,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.09049837335449323
+      }
+    },
+    {
+      "game_id": "401856819",
+      "game": "UCF @ Houston",
+      "kickoff_display_ct": "11:00",
+      "quote": {
+        "al": 11.5,
+        "ap": -112,
+        "hl": -11.5,
+        "hp": -112,
+        "am": 331,
+        "hm": -443,
+        "total": 51,
+        "op": -113,
+        "up": -109
+      },
+      "frozen_and_final": {
+        "game_id": "401856819",
+        "away_team": "UCF",
+        "home_team": "Houston",
+        "pred_margin": 9.049098096062043,
+        "pred_total": 57.65806945199615,
+        "pred_home_win": 0.7323493583987409,
+        "actual_home_margin": 10,
+        "actual_total": 44,
+        "margin_error": 0.9509019039379574,
+        "total_error": -13.658069451996148,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.07163686594956563
+      }
+    },
+    {
+      "game_id": "401858246",
+      "game": "Boston College @ SMU",
+      "kickoff_display_ct": "11:00",
+      "quote": {
+        "al": 21.5,
+        "ap": -113,
+        "hl": -21.5,
+        "hp": -107,
+        "am": 965,
+        "hm": -1955,
+        "total": 55.5,
+        "op": -108,
+        "up": -114
+      },
+      "frozen_and_final": {
+        "game_id": "401858246",
+        "away_team": "Boston College",
+        "home_team": "SMU",
+        "pred_margin": 11.061323274710114,
+        "pred_total": 57.28725039432775,
+        "pred_home_win": 0.7463060715342527,
+        "actual_home_margin": 9,
+        "actual_total": 41,
+        "margin_error": -2.061323274710114,
+        "total_error": -16.28725039432775,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.06436060934038373
+      }
+    },
+    {
+      "game_id": "401858479",
+      "game": "Michigan State @ Wisconsin",
+      "kickoff_display_ct": "11:30",
+      "quote": {
+        "al": 9.5,
+        "ap": -110,
+        "hl": -9.5,
+        "hp": -112,
+        "am": 281,
+        "hm": -369,
+        "total": 43.5,
+        "op": -110,
+        "up": -112
+      },
+      "frozen_and_final": {
+        "game_id": "401858479",
+        "away_team": "Michigan State",
+        "home_team": "Wisconsin",
+        "pred_margin": 8.874255344240948,
+        "pred_total": 47.43952131745562,
+        "pred_home_win": 0.711063361374149,
+        "actual_home_margin": 28,
+        "actual_total": 34,
+        "margin_error": 19.12574465575905,
+        "total_error": -13.439521317455622,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.08348438114040559
+      }
+    },
+    {
+      "game_id": "401856705",
+      "game": "Vanderbilt @ Georgia",
+      "kickoff_display_ct": "11:45",
+      "quote": {
+        "al": 25,
+        "ap": -110,
+        "hl": -25,
+        "hp": -112,
+        "am": 1471,
+        "hm": -5633,
+        "total": 50.5,
+        "op": -114,
+        "up": -108
+      },
+      "frozen_and_final": {
+        "game_id": "401856705",
+        "away_team": "Vanderbilt",
+        "home_team": "Georgia",
+        "pred_margin": 24.580532580436614,
+        "pred_total": 57.559802896476285,
+        "pred_home_win": 0.9222429508535277,
+        "actual_home_margin": 24,
+        "actual_total": 52,
+        "margin_error": -0.5805325804366142,
+        "total_error": -5.559802896476285,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.0060461586919669085
+      }
+    },
+    {
+      "game_id": "401866432",
+      "game": "Western Michigan @ Buffalo",
+      "kickoff_display_ct": "12:00",
+      "quote": {
+        "al": -12.5,
+        "ap": -112,
+        "hl": 12.5,
+        "hp": -112,
+        "am": -612,
+        "hm": 435,
+        "total": 46.5,
+        "op": -109,
+        "up": -114
+      },
+      "frozen_and_final": {
+        "game_id": "401866432",
+        "away_team": "Western Michigan",
+        "home_team": "Buffalo",
+        "pred_margin": -9.338161053201029,
+        "pred_total": 48.043723097263495,
+        "pred_home_win": 0.27599636757136214,
+        "actual_home_margin": -3,
+        "actual_total": 37,
+        "margin_error": 6.338161053201029,
+        "total_error": -11.043723097263495,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 0,
+        "brier_component": 0.07617399491258645
+      }
+    },
+    {
+      "game_id": "401866431",
+      "game": "Toledo @ Ball State",
+      "kickoff_display_ct": "13:00",
+      "quote": {
+        "al": -21,
+        "ap": -107,
+        "hl": 21,
+        "hp": -115,
+        "am": -3559,
+        "hm": 967,
+        "total": 51.5,
+        "op": -113,
+        "up": -109
+      },
+      "frozen_and_final": {
+        "game_id": "401866431",
+        "away_team": "Toledo",
+        "home_team": "Ball State",
+        "pred_margin": -15.504960067166888,
+        "pred_total": 60.17382504627338,
+        "pred_home_win": 0.173545658247942,
+        "actual_home_margin": -15,
+        "actual_total": 63,
+        "margin_error": 0.5049600671668877,
+        "total_error": 2.826174953726621,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 0,
+        "brier_component": 0.030118095496711475
+      }
+    },
+    {
+      "game_id": "401866430",
+      "game": "Akron @ Central Michigan",
+      "kickoff_display_ct": "14:30",
+      "quote": {
+        "al": 7,
+        "ap": -114,
+        "hl": -7,
+        "hp": -109,
+        "am": 216,
+        "hm": -268,
+        "total": 47.5,
+        "op": -108,
+        "up": -114
+      },
+      "frozen_and_final": {
+        "game_id": "401866430",
+        "away_team": "Akron",
+        "home_team": "Central Michigan",
+        "pred_margin": 2.081730593191486,
+        "pred_total": 42.746499445756434,
+        "pred_home_win": 0.5275417743203608,
+        "actual_home_margin": 24,
+        "actual_total": 58,
+        "margin_error": 21.918269406808513,
+        "total_error": 15.253500554243566,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.22321677501235293
+      }
+    },
+    {
+      "game_id": "401866434",
+      "game": "Ohio @ Kent State",
+      "kickoff_display_ct": "14:30",
+      "quote": {
+        "al": -3.5,
+        "ap": -109,
+        "hl": 3.5,
+        "hp": -113,
+        "am": -174,
+        "hm": 142,
+        "total": 50.5,
+        "op": -111,
+        "up": -111
+      },
+      "frozen_and_final": {
+        "game_id": "401866434",
+        "away_team": "Ohio",
+        "home_team": "Kent State",
+        "pred_margin": -8.949833763244166,
+        "pred_total": 54.63413209564618,
+        "pred_home_win": 0.2692647754596137,
+        "actual_home_margin": -3,
+        "actual_total": 23,
+        "margin_error": 5.9498337632441665,
+        "total_error": -31.63413209564618,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 0,
+        "brier_component": 0.07250351930331618
+      }
+    },
+    {
+      "game_id": "401864515",
+      "game": "Wyoming @ North Dakota State",
+      "kickoff_display_ct": "14:30",
+      "quote": {
+        "al": 17,
+        "ap": -110,
+        "hl": -17,
+        "hp": -110,
+        "am": 695,
+        "hm": -1150,
+        "total": 44.5,
+        "op": -110,
+        "up": -110
+      },
+      "frozen_and_final": {
+        "game_id": "401864515",
+        "away_team": "Wyoming",
+        "home_team": "North Dakota State",
+        "pred_margin": 15.299709466736903,
+        "pred_total": 47.15354166889797,
+        "pred_home_win": 0.807867185459004,
+        "actual_home_margin": 28,
+        "actual_total": 28,
+        "margin_error": 12.700290533263097,
+        "total_error": -19.153541668897972,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.036915018423444745
+      }
+    },
+    {
+      "game_id": "401869956",
+      "game": "Old Dominion @ Georgia State",
+      "kickoff_display_ct": "14:30",
+      "quote": {
+        "al": 2.5,
+        "ap": -110,
+        "hl": -2.5,
+        "hp": -112,
+        "am": 115,
+        "hm": -140,
+        "total": 51.5,
+        "op": -109,
+        "up": -113
+      },
+      "frozen_and_final": {
+        "game_id": "401869956",
+        "away_team": "Old Dominion",
+        "home_team": "Georgia State",
+        "pred_margin": 11.115094312587281,
+        "pred_total": 52.76305924894188,
+        "pred_home_win": 0.7679879275210292,
+        "actual_home_margin": 32,
+        "actual_total": 52,
+        "margin_error": 20.88490568741272,
+        "total_error": -0.7630592489418788,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.05382960177598721
+      }
+    },
+    {
+      "game_id": "401858253",
+      "game": "Virginia @ Florida State",
+      "kickoff_display_ct": "14:30",
+      "quote": {
+        "al": -1.5,
+        "ap": -110,
+        "hl": 1.5,
+        "hp": -110,
+        "am": -123,
+        "hm": 101,
+        "total": 51.5,
+        "op": -109,
+        "up": -112
+      },
+      "frozen_and_final": {
+        "game_id": "401858253",
+        "away_team": "Virginia",
+        "home_team": "Florida State",
+        "pred_margin": -10.144372974629862,
+        "pred_total": 56.467944432664225,
+        "pred_home_win": 0.29554025993874344,
+        "actual_home_margin": 31,
+        "actual_total": 45,
+        "margin_error": 41.14437297462986,
+        "total_error": -11.467944432664225,
+        "margin_direction_correct": 0,
+        "home_win_outcome": 1,
+        "brier_component": 0.49626352536717316
+      }
+    },
+    {
+      "game_id": "401856710",
+      "game": "Auburn @ Tennessee",
+      "kickoff_display_ct": "14:30",
+      "quote": {
+        "al": 6.5,
+        "ap": -107,
+        "hl": -6.5,
+        "hp": -114,
+        "am": 205,
+        "hm": -253,
+        "total": 54.5,
+        "op": -112,
+        "up": -112
+      },
+      "frozen_and_final": {
+        "game_id": "401856710",
+        "away_team": "Auburn",
+        "home_team": "Tennessee",
+        "pred_margin": 14.358507895203749,
+        "pred_total": 59.10955912252559,
+        "pred_home_win": 0.8243420993476069,
+        "actual_home_margin": 10,
+        "actual_total": 38,
+        "margin_error": -4.358507895203749,
+        "total_error": -21.10955912252559,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.030855698061605992
+      }
+    },
+    {
+      "game_id": "401858248",
+      "game": "Louisville @ NC State",
+      "kickoff_display_ct": "14:30",
+      "quote": {
+        "al": -3.5,
+        "ap": -104,
+        "hl": 3.5,
+        "hp": -119,
+        "am": -166,
+        "hm": 136,
+        "total": 58,
+        "op": -109,
+        "up": -113
+      },
+      "frozen_and_final": {
+        "game_id": "401858248",
+        "away_team": "Louisville",
+        "home_team": "NC State",
+        "pred_margin": -0.38014114160753915,
+        "pred_total": 63.17804155998143,
+        "pred_home_win": 0.5244159683061599,
+        "actual_home_margin": 3,
+        "actual_total": 59,
+        "margin_error": 3.380141141607539,
+        "total_error": -4.1780415599814305,
+        "margin_direction_correct": 0,
+        "home_win_outcome": 1,
+        "brier_component": 0.22618017120216752
+      }
+    },
+    {
+      "game_id": "401866433",
+      "game": "Eastern Michigan @ UMass",
+      "kickoff_display_ct": "14:30",
+      "quote": {
+        "al": 5.5,
+        "ap": -111,
+        "hl": -5.5,
+        "hp": -109,
+        "am": 179,
+        "hm": -222,
+        "total": 48.5,
+        "op": -111,
+        "up": -111
+      },
+      "frozen_and_final": {
+        "game_id": "401866433",
+        "away_team": "Eastern Michigan",
+        "home_team": "Massachusetts",
+        "pred_margin": 22.0802222588034,
+        "pred_total": 49.02692253191459,
+        "pred_home_win": 0.894631584898086,
+        "actual_home_margin": -24,
+        "actual_total": 52,
+        "margin_error": -46.0802222588034,
+        "total_error": 2.973077468085407,
+        "margin_direction_correct": 0,
+        "home_win_outcome": 0,
+        "brier_component": 0.8003656726972613
+      }
+    },
+    {
+      "game_id": "401858473",
+      "game": "Ohio State @ Iowa",
+      "kickoff_display_ct": "14:30",
+      "quote": {
+        "al": -14.5,
+        "ap": -107,
+        "hl": 14.5,
+        "hp": -117,
+        "am": -696,
+        "hm": 477,
+        "total": 45.5,
+        "op": -110,
+        "up": -111
+      },
+      "frozen_and_final": {
+        "game_id": "401858473",
+        "away_team": "Ohio State",
+        "home_team": "Iowa",
+        "pred_margin": 6.289813955569433,
+        "pred_total": 51.105813732935516,
+        "pred_home_win": 0.5931405891357918,
+        "actual_home_margin": -17,
+        "actual_total": 45,
+        "margin_error": -23.289813955569432,
+        "total_error": -6.105813732935516,
+        "margin_direction_correct": 0,
+        "home_win_outcome": 0,
+        "brier_component": 0.3518157584803542
+      }
+    },
+    {
+      "game_id": "401856708",
+      "game": "Florida @ Missouri",
+      "kickoff_display_ct": "14:30",
+      "quote": {
+        "al": -5.5,
+        "ap": -112,
+        "hl": 5.5,
+        "hp": -110,
+        "am": -221,
+        "hm": 178,
+        "total": 57.5,
+        "op": -113,
+        "up": -109
+      },
+      "frozen_and_final": {
+        "game_id": "401856708",
+        "away_team": "Florida",
+        "home_team": "Missouri",
+        "pred_margin": -0.4672553562744195,
+        "pred_total": 60.352660566220955,
+        "pred_home_win": 0.4911104624255683,
+        "actual_home_margin": 28,
+        "actual_total": 62,
+        "margin_error": 28.46725535627442,
+        "total_error": 1.6473394337790452,
+        "margin_direction_correct": 0,
+        "home_win_outcome": 1,
+        "brier_component": 0.258968561452719
+      }
+    },
+    {
+      "game_id": "401866477",
+      "game": "Bowling Green @ Miami (OH)",
+      "kickoff_display_ct": "14:30",
+      "quote": {
+        "al": 12.5,
+        "ap": -110,
+        "hl": -12.5,
+        "hp": -112,
+        "am": 422,
+        "hm": -591,
+        "total": 43,
+        "op": -110,
+        "up": -110
+      },
+      "frozen_and_final": {
+        "game_id": "401866477",
+        "away_team": "Bowling Green",
+        "home_team": "Miami (OH)",
+        "pred_margin": 18.20805514904084,
+        "pred_total": 55.22101172693364,
+        "pred_home_win": 0.8688787936756835,
+        "actual_home_margin": -4,
+        "actual_total": 44,
+        "margin_error": -22.20805514904084,
+        "total_error": -11.22101172693364,
+        "margin_direction_correct": 0,
+        "home_win_outcome": 0,
+        "brier_component": 0.7549503580993111
+      }
+    },
+    {
+      "game_id": "401869962",
+      "game": "Marshall @ James Madison",
+      "kickoff_display_ct": "14:45",
+      "quote": {
+        "al": 18,
+        "ap": -110,
+        "hl": -18,
+        "hp": -110,
+        "am": 730,
+        "hm": -1280,
+        "total": 56.5,
+        "op": -111,
+        "up": -112
+      },
+      "frozen_and_final": {
+        "game_id": "401869962",
+        "away_team": "Marshall",
+        "home_team": "James Madison",
+        "pred_margin": 29.506224880058177,
+        "pred_total": 51.91700798184163,
+        "pred_home_win": 0.9557148793806688,
+        "actual_home_margin": 28,
+        "actual_total": 62,
+        "margin_error": -1.506224880058177,
+        "total_error": 10.082992018158372,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.001961171908268714
+      }
+    },
+    {
+      "game_id": "401864514",
+      "game": "UTEP @ New Mexico",
+      "kickoff_display_ct": "15:00",
+      "quote": {
+        "al": 22.5,
+        "ap": -110,
+        "hl": -22.5,
+        "hp": -112,
+        "am": 1170,
+        "hm": -4131,
+        "total": 48.5,
+        "op": -112,
+        "up": -112
+      },
+      "frozen_and_final": {
+        "game_id": "401864514",
+        "away_team": "UTEP",
+        "home_team": "New Mexico",
+        "pred_margin": 22.599378921746847,
+        "pred_total": 46.02679188361889,
+        "pred_home_win": 0.8985899562942085,
+        "actual_home_margin": 54,
+        "actual_total": 68,
+        "margin_error": 31.400621078253153,
+        "total_error": 21.97320811638111,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.01028399696441055
+      }
+    },
+    {
+      "game_id": "401858475",
+      "game": "Maryland @ Nebraska",
+      "kickoff_display_ct": "15:00",
+      "quote": {
+        "al": 14.5,
+        "ap": -110,
+        "hl": -14.5,
+        "hp": -110,
+        "am": 503,
+        "hm": -756,
+        "total": 52.5,
+        "op": -110,
+        "up": -110
+      },
+      "frozen_and_final": {
+        "game_id": "401858475",
+        "away_team": "Maryland",
+        "home_team": "Nebraska",
+        "pred_margin": 10.520501969798485,
+        "pred_total": 56.011601162645434,
+        "pred_home_win": 0.7335030658717283,
+        "actual_home_margin": 25,
+        "actual_total": 71,
+        "margin_error": 14.479498030201515,
+        "total_error": 14.988398837354566,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.07102061589976838
+      }
+    },
+    {
+      "game_id": "401858472",
+      "game": "Purdue @ Illinois",
+      "kickoff_display_ct": "15:15",
+      "quote": {
+        "al": 10,
+        "ap": -112,
+        "hl": -10,
+        "hp": -110,
+        "am": 318,
+        "hm": -422,
+        "total": 62.5,
+        "op": -112,
+        "up": -110
+      },
+      "frozen_and_final": {
+        "game_id": "401858472",
+        "away_team": "Purdue",
+        "home_team": "Illinois",
+        "pred_margin": 13.478180256367299,
+        "pred_total": 63.61738307479391,
+        "pred_home_win": 0.826128636692943,
+        "actual_home_margin": -7,
+        "actual_total": 41,
+        "margin_error": -20.4781802563673,
+        "total_error": -22.617383074793914,
+        "margin_direction_correct": 0,
+        "home_win_outcome": 0,
+        "brier_component": 0.6824885243641406
+      }
+    },
+    {
+      "game_id": "401856709",
+      "game": "Kentucky @ South Carolina",
+      "kickoff_display_ct": "15:15",
+      "quote": {
+        "al": 2.5,
+        "ap": -107,
+        "hl": -2.5,
+        "hp": -115,
+        "am": 117,
+        "hm": -143,
+        "total": 53.5,
+        "op": -114,
+        "up": -108
+      },
+      "frozen_and_final": {
+        "game_id": "401856709",
+        "away_team": "Kentucky",
+        "home_team": "South Carolina",
+        "pred_margin": 13.77092154605478,
+        "pred_total": 58.71095485326192,
+        "pred_home_win": 0.792394916724028,
+        "actual_home_margin": -1,
+        "actual_total": 69,
+        "margin_error": -14.77092154605478,
+        "total_error": 10.289045146738083,
+        "margin_direction_correct": 0,
+        "home_win_outcome": 0,
+        "brier_component": 0.6278897040500792
+      }
+    },
+    {
+      "game_id": "401860899",
+      "game": "Oregon State @ Colorado State",
+      "kickoff_display_ct": "17:00",
+      "quote": {
+        "al": -6.5,
+        "ap": -113,
+        "hl": 6.5,
+        "hp": -110,
+        "am": -248,
+        "hm": 201,
+        "total": 62.5,
+        "op": -106,
+        "up": -114
+      },
+      "frozen_and_final": {
+        "game_id": "401860899",
+        "away_team": "Oregon State",
+        "home_team": "Colorado State",
+        "pred_margin": 3.8167069414460166,
+        "pred_total": 63.34733855978934,
+        "pred_home_win": 0.5875045769672005,
+        "actual_home_margin": -30,
+        "actual_total": 82,
+        "margin_error": -33.816706941446014,
+        "total_error": 18.652661440210657,
+        "margin_direction_correct": 0,
+        "home_win_outcome": 0,
+        "brier_component": 0.3451616279574092
+      }
+    },
+    {
+      "game_id": "401862788",
+      "game": "UTSA @ Rice",
+      "kickoff_display_ct": "18:00",
+      "quote": {
+        "al": -13,
+        "ap": -113,
+        "hl": 13,
+        "hp": -110,
+        "am": -591,
+        "hm": 424,
+        "total": 56,
+        "op": -110,
+        "up": -110
+      },
+      "frozen_and_final": {
+        "game_id": "401862788",
+        "away_team": "UTSA",
+        "home_team": "Rice",
+        "pred_margin": -2.178993205877506,
+        "pred_total": 47.531644977811446,
+        "pred_home_win": 0.4141544304901772,
+        "actual_home_margin": -2,
+        "actual_total": 30,
+        "margin_error": 0.1789932058775059,
+        "total_error": -17.531644977811446,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 0,
+        "brier_component": 0.17152389229464302
+      }
+    },
+    {
+      "game_id": "401856711",
+      "game": "Arkansas @ Texas A&M",
+      "kickoff_display_ct": "18:00",
+      "quote": {
+        "al": 14,
+        "ap": -111,
+        "hl": -14,
+        "hp": -111,
+        "am": 457,
+        "hm": -650,
+        "total": 50.5,
+        "op": -107,
+        "up": -113
+      },
+      "frozen_and_final": {
+        "game_id": "401856711",
+        "away_team": "Arkansas",
+        "home_team": "Texas A&M",
+        "pred_margin": 16.804445439273664,
+        "pred_total": 51.370933902452926,
+        "pred_home_win": 0.8284397658311163,
+        "actual_home_margin": 27,
+        "actual_total": 41,
+        "margin_error": 10.195554560726336,
+        "total_error": -10.370933902452926,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.029432913948082198
+      }
+    },
+    {
+      "game_id": "401856818",
+      "game": "BYU @ TCU",
+      "kickoff_display_ct": "18:00",
+      "quote": {
+        "al": -6,
+        "ap": -111,
+        "hl": 6,
+        "hp": -112,
+        "am": -233,
+        "hm": 189,
+        "total": 47.5,
+        "op": -114,
+        "up": -108
+      },
+      "frozen_and_final": {
+        "game_id": "401856818",
+        "away_team": "BYU",
+        "home_team": "TCU",
+        "pred_margin": -0.09100103532054682,
+        "pred_total": 55.749310310200045,
+        "pred_home_win": 0.5035401672569222,
+        "actual_home_margin": -7,
+        "actual_total": 27,
+        "margin_error": -6.908998964679453,
+        "total_error": -28.749310310200045,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 0,
+        "brier_component": 0.2535527000411292
+      }
+    },
+    {
+      "game_id": "401871089",
+      "game": "UL Monroe @ South Alabama",
+      "kickoff_display_ct": "18:00",
+      "quote": {
+        "al": 14,
+        "ap": -107,
+        "hl": -14,
+        "hp": -115,
+        "am": 490,
+        "hm": -726,
+        "total": 56.5,
+        "op": -111,
+        "up": -111
+      },
+      "frozen_and_final": {
+        "game_id": "401871089",
+        "away_team": "UL Monroe",
+        "home_team": "South Alabama",
+        "pred_margin": 14.874191556625707,
+        "pred_total": 57.09658524753065,
+        "pred_home_win": 0.8055114911143758,
+        "actual_home_margin": 17,
+        "actual_total": 87,
+        "margin_error": 2.125808443374293,
+        "total_error": 29.903414752469352,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.03782578008855352
+      }
+    },
+    {
+      "game_id": "401858478",
+      "game": "Washington @ USC",
+      "kickoff_display_ct": "18:30",
+      "quote": {
+        "al": 9.5,
+        "ap": -109,
+        "hl": -9.5,
+        "hp": -113,
+        "am": 297,
+        "hm": -381,
+        "total": 58.5,
+        "op": -108,
+        "up": -114
+      },
+      "frozen_and_final": {
+        "game_id": "401858478",
+        "away_team": "Washington",
+        "home_team": "USC",
+        "pred_margin": 4.365727073277652,
+        "pred_total": 54.58063732956911,
+        "pred_home_win": 0.6174633954589437,
+        "actual_home_margin": 4,
+        "actual_total": 46,
+        "margin_error": -0.3657270732776521,
+        "total_error": -8.580637329569107,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.1463342538138005
+      }
+    },
+    {
+      "game_id": "401856821",
+      "game": "Texas Tech @ Colorado",
+      "kickoff_display_ct": "18:30",
+      "quote": {
+        "al": -13.5,
+        "ap": -110,
+        "hl": 13.5,
+        "hp": -110,
+        "am": -572,
+        "hm": 409,
+        "total": 50.5,
+        "op": -108,
+        "up": -115
+      },
+      "frozen_and_final": {
+        "game_id": "401856821",
+        "away_team": "Texas Tech",
+        "home_team": "Colorado",
+        "pred_margin": -1.7697294970253643,
+        "pred_total": 53.27896722666624,
+        "pred_home_win": 0.410557826874118,
+        "actual_home_margin": -22,
+        "actual_total": 36,
+        "margin_error": -20.230270502974637,
+        "total_error": -17.27896722666624,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 0,
+        "brier_component": 0.16855772920759826
+      }
+    },
+    {
+      "game_id": "401860898",
+      "game": "Utah State @ Boise State",
+      "kickoff_display_ct": "18:30",
+      "quote": {
+        "al": 19.5,
+        "ap": -112,
+        "hl": -19.5,
+        "hp": -110,
+        "am": 971,
+        "hm": -2106,
+        "total": 51.5,
+        "op": -111,
+        "up": -110
+      },
+      "frozen_and_final": {
+        "game_id": "401860898",
+        "away_team": "Utah State",
+        "home_team": "Boise State",
+        "pred_margin": 15.326750197379166,
+        "pred_total": 51.13933035992582,
+        "pred_home_win": 0.8109855524800542,
+        "actual_home_margin": 19,
+        "actual_total": 55,
+        "margin_error": 3.673249802620834,
+        "total_error": 3.8606696400741782,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.03572646137127034
+      }
+    },
+    {
+      "game_id": "401869932",
+      "game": "Arkansas State @ Louisiana",
+      "kickoff_display_ct": "19:00",
+      "quote": {
+        "al": 6.5,
+        "ap": -109,
+        "hl": -6.5,
+        "hp": -113,
+        "am": 195,
+        "hm": -244,
+        "total": 48.5,
+        "op": -107,
+        "up": -116
+      },
+      "frozen_and_final": {
+        "game_id": "401869932",
+        "away_team": "Arkansas State",
+        "home_team": "Louisiana",
+        "pred_margin": 3.79561767530499,
+        "pred_total": 53.849003353155304,
+        "pred_home_win": 0.6052049057140324,
+        "actual_home_margin": 3,
+        "actual_total": 43,
+        "margin_error": -0.7956176753049902,
+        "total_error": -10.849003353155304,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.15586316647226606
+      }
+    },
+    {
+      "game_id": "401860921",
+      "game": "Fresno State @ Washington State",
+      "kickoff_display_ct": "20:30",
+      "quote": {
+        "al": 2,
+        "ap": -112,
+        "hl": -2,
+        "hp": -111,
+        "am": 105,
+        "hm": -127,
+        "total": 45.5,
+        "op": -110,
+        "up": -111
+      },
+      "frozen_and_final": {
+        "game_id": "401860921",
+        "away_team": "Fresno State",
+        "home_team": "Washington State",
+        "pred_margin": 1.8703682293359738,
+        "pred_total": 45.25907337070001,
+        "pred_home_win": 0.5669480948463628,
+        "actual_home_margin": -20,
+        "actual_total": 32,
+        "margin_error": -21.870368229335973,
+        "total_error": -13.259073370700008,
+        "margin_direction_correct": 0,
+        "home_win_outcome": 0,
+        "brier_component": 0.32143014224992034
+      }
+    },
+    {
+      "game_id": "401860900",
+      "game": "Texas State @ San Diego State",
+      "kickoff_display_ct": "21:30",
+      "quote": {
+        "al": -9.5,
+        "ap": -113,
+        "hl": 9.5,
+        "hp": -109,
+        "am": -392,
+        "hm": 302,
+        "total": 57.5,
+        "op": -110,
+        "up": -112
+      },
+      "frozen_and_final": {
+        "game_id": "401860900",
+        "away_team": "Texas State",
+        "home_team": "San Diego State",
+        "pred_margin": 4.697906887121519,
+        "pred_total": 59.63257795640437,
+        "pred_home_win": 0.6515530163398756,
+        "actual_home_margin": 2,
+        "actual_total": 60,
+        "margin_error": -2.697906887121519,
+        "total_error": 0.36742204359563146,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.121415300421839
+      }
+    },
+    {
+      "game_id": "401856817",
+      "game": "Baylor @ Arizona State",
+      "kickoff_display_ct": "21:30",
+      "quote": {
+        "al": 3.5,
+        "ap": -108,
+        "hl": -3.5,
+        "hp": -115,
+        "am": 148,
+        "hm": -180,
+        "total": 48.5,
+        "op": -111,
+        "up": -111
+      },
+      "frozen_and_final": {
+        "game_id": "401856817",
+        "away_team": "Baylor",
+        "home_team": "Arizona State",
+        "pred_margin": -0.7217700151719222,
+        "pred_total": 53.0693307141215,
+        "pred_home_win": 0.4823009360427909,
+        "actual_home_margin": -36,
+        "actual_total": 74,
+        "margin_error": -35.27822998482808,
+        "total_error": 20.9306692858785,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 0,
+        "brier_component": 0.2326141929077523
+      }
+    },
+    {
+      "game_id": "401856820",
+      "game": "Cincinnati @ Arizona",
+      "kickoff_display_ct": "22:00",
+      "quote": {
+        "al": 7,
+        "ap": -117,
+        "hl": -7,
+        "hp": -106,
+        "am": 207,
+        "hm": -257,
+        "total": 55.5,
+        "op": -111,
+        "up": -111
+      },
+      "frozen_and_final": {
+        "game_id": "401856820",
+        "away_team": "Cincinnati",
+        "home_team": "Arizona",
+        "pred_margin": 4.376235005916887,
+        "pred_total": 55.63804549204241,
+        "pred_home_win": 0.6273828142062631,
+        "actual_home_margin": 27,
+        "actual_total": 41,
+        "margin_error": 22.623764994083114,
+        "total_error": -14.638045492042409,
+        "margin_direction_correct": 1,
+        "home_win_outcome": 1,
+        "brier_component": 0.13884356714884427
+      }
+    },
+    {
+      "game_id": "401864513",
+      "game": "San Jose State @ Hawai'i",
+      "kickoff_display_ct": "22:59",
+      "quote": {
+        "al": 3,
+        "ap": -111,
+        "hl": -3,
+        "hp": -111,
+        "am": 128,
+        "hm": -155,
+        "total": 50.5,
+        "op": -114,
+        "up": -108
+      },
+      "frozen_and_final": {
+        "game_id": "401864513",
+        "away_team": "San José State",
+        "home_team": "Hawai'i",
+        "pred_margin": 1.3577689382385913,
+        "pred_total": 52.92832213672375,
+        "pred_home_win": 0.5165069939037249,
+        "actual_home_margin": -4,
+        "actual_total": 36,
+        "margin_error": -5.357768938238591,
+        "total_error": -16.92832213672375,
+        "margin_direction_correct": 0,
+        "home_win_outcome": 0,
+        "brier_component": 0.2667794747514625
+      }
+    }
+  ],
+  "tickets": [
+    {
+      "game_id": "401862787",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 20.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401862787",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -2122,
+      "grade": "W",
+      "net_cents": 24
+    },
+    {
+      "game_id": "401862787",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 52.5,
+      "price": -108,
+      "grade": "W",
+      "net_cents": 463
+    },
+    {
+      "game_id": "401856707",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 5.5,
+      "price": -113,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856707",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": 177,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856707",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 60.5,
+      "price": -108,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858252",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 6.5,
+      "price": -106,
+      "grade": "W",
+      "net_cents": 472
+    },
+    {
+      "game_id": "401858252",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": 211,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858252",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 50.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401858474",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 6.5,
+      "price": -115,
+      "grade": "W",
+      "net_cents": 435
+    },
+    {
+      "game_id": "401858474",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": 189,
+      "grade": "W",
+      "net_cents": 945
+    },
+    {
+      "game_id": "401858474",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 43.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858250",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 21,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401858250",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -2776,
+      "grade": "W",
+      "net_cents": 18
+    },
+    {
+      "game_id": "401858250",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 46.5,
+      "price": -107,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856807",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 20.5,
+      "price": -108,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856807",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -2083,
+      "grade": "W",
+      "net_cents": 24
+    },
+    {
+      "game_id": "401856807",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 50.5,
+      "price": -112,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858251",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 14.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858251",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -650,
+      "grade": "W",
+      "net_cents": 77
+    },
+    {
+      "game_id": "401858251",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 53.5,
+      "price": -113,
+      "grade": "W",
+      "net_cents": 442
+    },
+    {
+      "game_id": "401856822",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -3,
+      "price": -116,
+      "grade": "P",
+      "net_cents": 0
+    },
+    {
+      "game_id": "401856822",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -163,
+      "grade": "W",
+      "net_cents": 307
+    },
+    {
+      "game_id": "401856822",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 53.5,
+      "price": -108,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856819",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 11.5,
+      "price": -112,
+      "grade": "W",
+      "net_cents": 446
+    },
+    {
+      "game_id": "401856819",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -443,
+      "grade": "W",
+      "net_cents": 113
+    },
+    {
+      "game_id": "401856819",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 51,
+      "price": -113,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858246",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 21.5,
+      "price": -113,
+      "grade": "W",
+      "net_cents": 442
+    },
+    {
+      "game_id": "401858246",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -1955,
+      "grade": "W",
+      "net_cents": 26
+    },
+    {
+      "game_id": "401858246",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 55.5,
+      "price": -108,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858479",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 9.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858479",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -369,
+      "grade": "W",
+      "net_cents": 136
+    },
+    {
+      "game_id": "401858479",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 43.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856705",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 25,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401856705",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -5633,
+      "grade": "W",
+      "net_cents": 9
+    },
+    {
+      "game_id": "401856705",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 50.5,
+      "price": -114,
+      "grade": "W",
+      "net_cents": 439
+    },
+    {
+      "game_id": "401866432",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 12.5,
+      "price": -112,
+      "grade": "W",
+      "net_cents": 446
+    },
+    {
+      "game_id": "401866432",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -612,
+      "grade": "W",
+      "net_cents": 82
+    },
+    {
+      "game_id": "401866432",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 46.5,
+      "price": -109,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401866431",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 21,
+      "price": -115,
+      "grade": "W",
+      "net_cents": 435
+    },
+    {
+      "game_id": "401866431",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -3559,
+      "grade": "W",
+      "net_cents": 14
+    },
+    {
+      "game_id": "401866431",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 51.5,
+      "price": -113,
+      "grade": "W",
+      "net_cents": 442
+    },
+    {
+      "game_id": "401866430",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 7,
+      "price": -114,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401866430",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -268,
+      "grade": "W",
+      "net_cents": 187
+    },
+    {
+      "game_id": "401866430",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 47.5,
+      "price": -114,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401866434",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": -3.5,
+      "price": -109,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401866434",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -174,
+      "grade": "W",
+      "net_cents": 287
+    },
+    {
+      "game_id": "401866434",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 50.5,
+      "price": -111,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401864515",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 17,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401864515",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -1150,
+      "grade": "W",
+      "net_cents": 43
+    },
+    {
+      "game_id": "401864515",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 44.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401869956",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -2.5,
+      "price": -112,
+      "grade": "W",
+      "net_cents": 446
+    },
+    {
+      "game_id": "401869956",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -140,
+      "grade": "W",
+      "net_cents": 357
+    },
+    {
+      "game_id": "401869956",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 51.5,
+      "price": -109,
+      "grade": "W",
+      "net_cents": 459
+    },
+    {
+      "game_id": "401858253",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": -1.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858253",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -123,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858253",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 51.5,
+      "price": -109,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856710",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -6.5,
+      "price": -114,
+      "grade": "W",
+      "net_cents": 439
+    },
+    {
+      "game_id": "401856710",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -253,
+      "grade": "W",
+      "net_cents": 198
+    },
+    {
+      "game_id": "401856710",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 54.5,
+      "price": -112,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858248",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 3.5,
+      "price": -119,
+      "grade": "W",
+      "net_cents": 420
+    },
+    {
+      "game_id": "401858248",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": 136,
+      "grade": "W",
+      "net_cents": 680
+    },
+    {
+      "game_id": "401858248",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 58,
+      "price": -109,
+      "grade": "W",
+      "net_cents": 459
+    },
+    {
+      "game_id": "401866433",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -5.5,
+      "price": -109,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401866433",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -222,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401866433",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 48.5,
+      "price": -111,
+      "grade": "W",
+      "net_cents": 450
+    },
+    {
+      "game_id": "401858473",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 14.5,
+      "price": -117,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858473",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": 477,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858473",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 45.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856708",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 5.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401856708",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -221,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856708",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 57.5,
+      "price": -113,
+      "grade": "W",
+      "net_cents": 442
+    },
+    {
+      "game_id": "401866477",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -12.5,
+      "price": -112,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401866477",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -591,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401866477",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 43,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401869962",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -18,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401869962",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -1280,
+      "grade": "W",
+      "net_cents": 39
+    },
+    {
+      "game_id": "401869962",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 56.5,
+      "price": -112,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401864514",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -22.5,
+      "price": -112,
+      "grade": "W",
+      "net_cents": 446
+    },
+    {
+      "game_id": "401864514",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -4131,
+      "grade": "W",
+      "net_cents": 12
+    },
+    {
+      "game_id": "401864514",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 48.5,
+      "price": -112,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858475",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 14.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858475",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -756,
+      "grade": "W",
+      "net_cents": 66
+    },
+    {
+      "game_id": "401858475",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 52.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401858472",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -10,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858472",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -422,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401858472",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 62.5,
+      "price": -112,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856709",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -2.5,
+      "price": -115,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856709",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -143,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856709",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 53.5,
+      "price": -114,
+      "grade": "W",
+      "net_cents": 439
+    },
+    {
+      "game_id": "401860899",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 6.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401860899",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": 201,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401860899",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 62.5,
+      "price": -106,
+      "grade": "W",
+      "net_cents": 472
+    },
+    {
+      "game_id": "401862788",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 13,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401862788",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -591,
+      "grade": "W",
+      "net_cents": 85
+    },
+    {
+      "game_id": "401862788",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 56,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401856711",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -14,
+      "price": -111,
+      "grade": "W",
+      "net_cents": 450
+    },
+    {
+      "game_id": "401856711",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -650,
+      "grade": "W",
+      "net_cents": 77
+    },
+    {
+      "game_id": "401856711",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 50.5,
+      "price": -107,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856818",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 6,
+      "price": -112,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856818",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": 189,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856818",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 47.5,
+      "price": -114,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401871089",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -14,
+      "price": -115,
+      "grade": "W",
+      "net_cents": 435
+    },
+    {
+      "game_id": "401871089",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -726,
+      "grade": "W",
+      "net_cents": 69
+    },
+    {
+      "game_id": "401871089",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 56.5,
+      "price": -111,
+      "grade": "W",
+      "net_cents": 450
+    },
+    {
+      "game_id": "401858478",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 9.5,
+      "price": -109,
+      "grade": "W",
+      "net_cents": 459
+    },
+    {
+      "game_id": "401858478",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -381,
+      "grade": "W",
+      "net_cents": 131
+    },
+    {
+      "game_id": "401858478",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 58.5,
+      "price": -114,
+      "grade": "W",
+      "net_cents": 439
+    },
+    {
+      "game_id": "401856821",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 13.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856821",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": -572,
+      "grade": "W",
+      "net_cents": 87
+    },
+    {
+      "game_id": "401856821",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 50.5,
+      "price": -108,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401860898",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 19.5,
+      "price": -112,
+      "grade": "W",
+      "net_cents": 446
+    },
+    {
+      "game_id": "401860898",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -2106,
+      "grade": "W",
+      "net_cents": 24
+    },
+    {
+      "game_id": "401860898",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 51.5,
+      "price": -110,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401869932",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 6.5,
+      "price": -109,
+      "grade": "W",
+      "net_cents": 459
+    },
+    {
+      "game_id": "401869932",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -244,
+      "grade": "W",
+      "net_cents": 205
+    },
+    {
+      "game_id": "401869932",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 48.5,
+      "price": -107,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401860921",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 2,
+      "price": -112,
+      "grade": "W",
+      "net_cents": 446
+    },
+    {
+      "game_id": "401860921",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -127,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401860921",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 45.5,
+      "price": -111,
+      "grade": "W",
+      "net_cents": 450
+    },
+    {
+      "game_id": "401860900",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 9.5,
+      "price": -109,
+      "grade": "W",
+      "net_cents": 459
+    },
+    {
+      "game_id": "401860900",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": 302,
+      "grade": "W",
+      "net_cents": 1510
+    },
+    {
+      "game_id": "401860900",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 57.5,
+      "price": -110,
+      "grade": "W",
+      "net_cents": 455
+    },
+    {
+      "game_id": "401856817",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 3.5,
+      "price": -108,
+      "grade": "W",
+      "net_cents": 463
+    },
+    {
+      "game_id": "401856817",
+      "market": "ML",
+      "selection": "away",
+      "line": null,
+      "price": 148,
+      "grade": "W",
+      "net_cents": 740
+    },
+    {
+      "game_id": "401856817",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 48.5,
+      "price": -111,
+      "grade": "W",
+      "net_cents": 450
+    },
+    {
+      "game_id": "401856820",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 7,
+      "price": -117,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401856820",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -257,
+      "grade": "W",
+      "net_cents": 195
+    },
+    {
+      "game_id": "401856820",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 55.5,
+      "price": -111,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401864513",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 3,
+      "price": -111,
+      "grade": "W",
+      "net_cents": 450
+    },
+    {
+      "game_id": "401864513",
+      "market": "ML",
+      "selection": "home",
+      "line": null,
+      "price": -155,
+      "grade": "L",
+      "net_cents": -500
+    },
+    {
+      "game_id": "401864513",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 50.5,
+      "price": -114,
+      "grade": "L",
+      "net_cents": -500
+    }
+  ],
+  "summary": {
+    "SPREAD": {
+      "n": 44,
+      "w": 24,
+      "l": 19,
+      "p": 1,
+      "stake_cents": 22000,
+      "net_cents": 1269
+    },
+    "ML": {
+      "n": 44,
+      "w": 31,
+      "l": 13,
+      "p": 0,
+      "stake_cents": 22000,
+      "net_cents": 267
+    },
+    "TOTAL": {
+      "n": 44,
+      "w": 19,
+      "l": 25,
+      "p": 0,
+      "stake_cents": 22000,
+      "net_cents": -3929
+    },
+    "ALL": {
+      "n": 132,
+      "w": 74,
+      "l": 57,
+      "p": 1,
+      "stake_cents": 66000,
+      "net_cents": -2393
+    }
+  }
+}
