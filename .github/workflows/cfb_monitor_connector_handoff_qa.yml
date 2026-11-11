@@ -1,0 +1,74 @@
+name: CFB Monitor connector handoff QA
+on:
+  push:
+    branches: [qa/monitor-actions-rehearsal-20261110]
+    paths: [qa/monitor-connector-handoff-20261110.json]
+permissions:
+  contents: read
+jobs:
+  handoff:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      FIXTURE_HEAD: 37d692d65b05632a376d31cdefbd3ec23ef5103e
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate connector request
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          mkdir -p "$RUNNER_TEMP/scheduled-proof"
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          request = json.loads(Path('qa/monitor-connector-handoff-20261110.json').read_text())
+          if request != {'request_id': 'monitor-connector-handoff-20261110', 'fixture_head': os.environ['FIXTURE_HEAD']}:
+              raise ValueError('Unexpected test request')
+          print(json.dumps(request))
+          PY
+          cp 'qa/monitor-connector-handoff-20261110.json' "$RUNNER_TEMP/scheduled-proof/request.json"
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.FIXTURE_HEAD }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify pinned runtime and immutable reviews
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$FIXTURE_HEAD"
+          python3 scripts/cfb_runtime_checkout.py --destination "$RUNNER_TEMP/verified-repo" --expected-head "$FIXTURE_HEAD" > "$RUNNER_TEMP/scheduled-proof/runtime.json"
+          python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); print(d["status"],d["head"],len(d["immutable_reviews"]))' "$RUNNER_TEMP/scheduled-proof/runtime.json"
+      - name: Execute Week 11 compiler and renderer
+        working-directory: ${{ runner.temp }}/verified-repo
+        env:
+          PYTHONPATH: scripts
+        run: |
+          set -euo pipefail
+          python3 -m unittest -v scripts.test_cfb_week11_publication 2>&1 | tee "$RUNNER_TEMP/scheduled-proof/week11-tests.txt"
+          python3 - <<'PY'
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+          result = {'status': 'PASS_CONNECTOR_HANDOFF',
+                    'event': os.environ['GITHUB_EVENT_NAME'],
+                    'run_id': os.environ['GITHUB_RUN_ID'],
+                    'request_id': 'monitor-connector-handoff-20261110',
+                    'request_commit': os.environ['GITHUB_SHA'],
+                    'pinned_head': os.environ['FIXTURE_HEAD'],
+                    'completed_at': datetime.now(timezone.utc).isoformat(),
+                    'scope': 'pinned checkout and controlled Week 11 compiler/render tests'}
+          (Path(os.environ['RUNNER_TEMP']) / 'scheduled-proof/result.json').write_text(json.dumps(result, indent=2))
+          print(json.dumps(result))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scheduled-execution-proof
+          path: ${{ runner.temp }}/scheduled-proof/
+          retention-days: 7
+          if-no-files-found: error
