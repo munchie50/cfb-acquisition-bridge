@@ -1,0 +1,7 @@
+# Market Monitor controlled production rollout — November 11, 2026
+
+Scope: existing 07:00 America/Chicago production slot only. Existing Market Monitor is sole publisher. Actions performs CBS acquisition and produces a staged technical candidate; retained reviews do not establish current qualification. No Actions canonical writes. After this slot the added instruction is inert. Existing fallback and normal cadence remain available.
+
+QA acceptance: run 42970783013 and receipt commit 9d3346b80a96b920369d7e154460860c33457375. Deployment target task 6ae766e788d881919726d0eeb44450dd. Worker workflow .github/workflows/cfb_monitor_controlled_production_handoff.yml at f34e03b9c34deae71faf71322222c50e30361368, blob 8633ff69c5fb710ebf9079a5cd3b896744ebfe57. Engine pin 97f7fb74451f8548f7a188f4594f13da3d683dc6; fail closed on material canonical/authority drift. Request handoff/monitor-production-20261111-0700.json; connector-readable source handoff/monitor-production-20261111-0700-cbs.md and bound result handoff/monitor-production-20261111-0700-result.json, branch qa/monitor-actions-rehearsal-20261110.
+
+Rollback: restore exact prior task prompt from handoff/monitor-production-20261111-0700-rollback-prompt.txt at 77b77a12bb0bfb31a3def97dda99463bd3d9af40, blob a1544ce0f1c73e57d057c3f7b2b7905c23418253. Do not change cadence or ownership. If invocation or any required stage fails, preserve prior verified sheet and use governed manual Monitor recovery. Separate execution result and live publication/closure evidence are due after the slot.
