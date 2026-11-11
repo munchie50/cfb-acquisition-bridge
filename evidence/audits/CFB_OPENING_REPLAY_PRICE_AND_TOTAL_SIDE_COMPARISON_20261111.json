@@ -1,0 +1,547 @@
+{
+  "schema": "CFB_OPENING_REPLAY_MARKET_AND_TOTAL_SIDE_COMPARISON_V1",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK7_OPENING_BOARD_REPLAY_20261111.json",
+      "sha": "a19979dc708e2337f75cc85933f4893893e02c8f"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK8_WEEK9_OPENING_REPLAY_CONTINUATION_20261111.json",
+      "sha": "243da617787e24154c77a0953d6641eed1761d39"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK9_WEEK10_OPENING_BASELINE_COMPARISON_20261111.json",
+      "sha": "a48415c51c3892c69526df2d1fd0700918d96bd7"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEKS7_TO10_OPENING_BASELINE_SYNTHESIS_20261111.json",
+      "sha": "095a3fe7b22c7e6fa35a16fd93ce37b2fc8b97b4"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEKS7_TO9_KICKOFF_REPLAY_EXTENSION_20261111.json",
+      "sha": "451e3f6392cbb2c7b4768400fa59bb5ef97e423b"
+    },
+    {
+      "path": "evidence/audits/CFB_OPENING_REPLAY_CLOCK_CLOSEOUT_AND_WEEK11_PROTOCOL_20261111.json",
+      "sha": "4b5e9cf56fccb46594af4674c327d52323fa2f1d"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK11_PROSPECTIVE_REPLAY_SCHEDULE_AND_SELECTIONS_20261111.json",
+      "sha": "93dd7729ad0375a5f0f484a3ddc88c2b748008e2"
+    }
+  ],
+  "history": {
+    "SPREAD": {
+      "n": 141,
+      "stake_cents": 70500,
+      "mean_quote_implied_probability": 0.523142023860555,
+      "plus_money": 7,
+      "min_price": -140,
+      "max_price": 106,
+      "w": 72,
+      "l": 67,
+      "p": 2,
+      "net_cents": -804,
+      "roi": -0.011404255319148937
+    },
+    "ML": {
+      "n": 141,
+      "stake_cents": 70500,
+      "mean_quote_implied_probability": 0.6256828574156628,
+      "plus_money": 38,
+      "min_price": -100000,
+      "max_price": 750,
+      "w": 82,
+      "l": 59,
+      "p": 0,
+      "net_cents": -1275,
+      "roi": -0.018085106382978722
+    },
+    "TOTAL": {
+      "n": 141,
+      "stake_cents": 70500,
+      "mean_quote_implied_probability": 0.5233673384779541,
+      "plus_money": 0,
+      "min_price": -118,
+      "max_price": -102,
+      "w": 67,
+      "l": 74,
+      "p": 0,
+      "net_cents": -6309,
+      "roi": -0.08948936170212766
+    },
+    "OVER": {
+      "n": 81,
+      "stake_cents": 40500,
+      "mean_quote_implied_probability": 0.5231631146001507,
+      "plus_money": 0,
+      "min_price": -118,
+      "max_price": -102,
+      "w": 41,
+      "l": 40,
+      "p": 0,
+      "net_cents": -1208,
+      "roi": -0.02982716049382716
+    },
+    "UNDER": {
+      "n": 60,
+      "stake_cents": 30000,
+      "mean_quote_implied_probability": 0.5236430407129898,
+      "plus_money": 0,
+      "min_price": -118,
+      "max_price": -102,
+      "w": 26,
+      "l": 34,
+      "p": 0,
+      "net_cents": -5101,
+      "roi": -0.17003333333333334
+    }
+  },
+  "candidate": {
+    "SPREAD": {
+      "n": 55,
+      "stake_cents": 27500,
+      "mean_quote_implied_probability": 0.5235317431546498,
+      "plus_money": 2,
+      "min_price": -125,
+      "max_price": 100
+    },
+    "ML": {
+      "n": 55,
+      "stake_cents": 27500,
+      "mean_quote_implied_probability": 0.6296317036006476,
+      "plus_money": 15,
+      "min_price": -5000,
+      "max_price": 360
+    },
+    "TOTAL": {
+      "n": 55,
+      "stake_cents": 27500,
+      "mean_quote_implied_probability": 0.5220050302120653,
+      "plus_money": 0,
+      "min_price": -120,
+      "max_price": -102
+    },
+    "OVER": {
+      "n": 27,
+      "stake_cents": 13500,
+      "mean_quote_implied_probability": 0.5215042594647867,
+      "plus_money": 0,
+      "min_price": -120,
+      "max_price": -102
+    },
+    "UNDER": {
+      "n": 28,
+      "stake_cents": 14000,
+      "mean_quote_implied_probability": 0.5224879162897978,
+      "plus_money": 0,
+      "min_price": -120,
+      "max_price": -105
+    }
+  },
+  "week_breakdown": [
+    {
+      "week": 7,
+      "stats": {
+        "SPREAD": {
+          "n": 27,
+          "stake_cents": 13500,
+          "mean_quote_implied_probability": 0.5196644602901102,
+          "plus_money": 3,
+          "min_price": -124,
+          "max_price": 106,
+          "w": 14,
+          "l": 12,
+          "p": 1,
+          "net_cents": 517,
+          "roi": 0.038296296296296294
+        },
+        "ML": {
+          "n": 27,
+          "stake_cents": 13500,
+          "mean_quote_implied_probability": 0.6009950688174528,
+          "plus_money": 9,
+          "min_price": -2326,
+          "max_price": 390,
+          "w": 17,
+          "l": 10,
+          "p": 0,
+          "net_cents": 2842,
+          "roi": 0.21051851851851852
+        },
+        "TOTAL": {
+          "n": 27,
+          "stake_cents": 13500,
+          "mean_quote_implied_probability": 0.5223727621479788,
+          "plus_money": 0,
+          "min_price": -118,
+          "max_price": -104,
+          "w": 16,
+          "l": 11,
+          "p": 0,
+          "net_cents": 1883,
+          "roi": 0.13948148148148148
+        },
+        "OVER": {
+          "n": 18,
+          "stake_cents": 9000,
+          "mean_quote_implied_probability": 0.5207135660326171,
+          "plus_money": 0,
+          "min_price": -110,
+          "max_price": -104,
+          "w": 11,
+          "l": 7,
+          "p": 0,
+          "net_cents": 1607,
+          "roi": 0.17855555555555555
+        },
+        "UNDER": {
+          "n": 9,
+          "stake_cents": 4500,
+          "mean_quote_implied_probability": 0.5256911543787022,
+          "plus_money": 0,
+          "min_price": -118,
+          "max_price": -105,
+          "w": 5,
+          "l": 4,
+          "p": 0,
+          "net_cents": 276,
+          "roi": 0.06133333333333333
+        }
+      }
+    },
+    {
+      "week": 8,
+      "stats": {
+        "SPREAD": {
+          "n": 26,
+          "stake_cents": 13000,
+          "mean_quote_implied_probability": 0.5258702015301435,
+          "plus_money": 1,
+          "min_price": -120,
+          "max_price": 102,
+          "w": 12,
+          "l": 14,
+          "p": 0,
+          "net_cents": -1629,
+          "roi": -0.12530769230769231
+        },
+        "ML": {
+          "n": 26,
+          "stake_cents": 13000,
+          "mean_quote_implied_probability": 0.6426910874986775,
+          "plus_money": 7,
+          "min_price": -2381,
+          "max_price": 550,
+          "w": 14,
+          "l": 12,
+          "p": 0,
+          "net_cents": -1034,
+          "roi": -0.07953846153846154
+        },
+        "TOTAL": {
+          "n": 26,
+          "stake_cents": 13000,
+          "mean_quote_implied_probability": 0.5251298705531215,
+          "plus_money": 0,
+          "min_price": -118,
+          "max_price": -105,
+          "w": 13,
+          "l": 13,
+          "p": 0,
+          "net_cents": -597,
+          "roi": -0.04592307692307692
+        },
+        "OVER": {
+          "n": 15,
+          "stake_cents": 7500,
+          "mean_quote_implied_probability": 0.5250603541581842,
+          "plus_money": 0,
+          "min_price": -118,
+          "max_price": -105,
+          "w": 8,
+          "l": 7,
+          "p": 0,
+          "net_cents": 137,
+          "roi": 0.018266666666666667
+        },
+        "UNDER": {
+          "n": 11,
+          "stake_cents": 5500,
+          "mean_quote_implied_probability": 0.5252246656371272,
+          "plus_money": 0,
+          "min_price": -115,
+          "max_price": -110,
+          "w": 5,
+          "l": 6,
+          "p": 0,
+          "net_cents": -734,
+          "roi": -0.13345454545454546
+        }
+      }
+    },
+    {
+      "week": 9,
+      "stats": {
+        "SPREAD": {
+          "n": 35,
+          "stake_cents": 17500,
+          "mean_quote_implied_probability": 0.5217684726462285,
+          "plus_money": 2,
+          "min_price": -120,
+          "max_price": 100,
+          "w": 19,
+          "l": 15,
+          "p": 1,
+          "net_cents": 1168,
+          "roi": 0.06674285714285715
+        },
+        "ML": {
+          "n": 35,
+          "stake_cents": 17500,
+          "mean_quote_implied_probability": 0.6647102624631999,
+          "plus_money": 8,
+          "min_price": -2778,
+          "max_price": 440,
+          "w": 22,
+          "l": 13,
+          "p": 0,
+          "net_cents": 419,
+          "roi": 0.023942857142857144
+        },
+        "TOTAL": {
+          "n": 35,
+          "stake_cents": 17500,
+          "mean_quote_implied_probability": 0.5232652771817488,
+          "plus_money": 0,
+          "min_price": -118,
+          "max_price": -105,
+          "w": 13,
+          "l": 22,
+          "p": 0,
+          "net_cents": -5037,
+          "roi": -0.28782857142857143
+        },
+        "OVER": {
+          "n": 20,
+          "stake_cents": 10000,
+          "mean_quote_implied_probability": 0.5234776601703723,
+          "plus_money": 0,
+          "min_price": -118,
+          "max_price": -105,
+          "w": 7,
+          "l": 13,
+          "p": 0,
+          "net_cents": -3304,
+          "roi": -0.3304
+        },
+        "UNDER": {
+          "n": 15,
+          "stake_cents": 7500,
+          "mean_quote_implied_probability": 0.5229820998635837,
+          "plus_money": 0,
+          "min_price": -115,
+          "max_price": -105,
+          "w": 6,
+          "l": 9,
+          "p": 0,
+          "net_cents": -1733,
+          "roi": -0.23106666666666667
+        }
+      }
+    },
+    {
+      "week": 10,
+      "stats": {
+        "SPREAD": {
+          "n": 53,
+          "stake_cents": 26500,
+          "mean_quote_implied_probability": 0.5244823236623325,
+          "plus_money": 1,
+          "min_price": -140,
+          "max_price": 100,
+          "w": 27,
+          "l": 26,
+          "p": 0,
+          "net_cents": -860,
+          "roi": -0.03245283018867925
+        },
+        "ML": {
+          "n": 53,
+          "stake_cents": 26500,
+          "mean_quote_implied_probability": 0.6041431806860315,
+          "plus_money": 14,
+          "min_price": -100000,
+          "max_price": 750,
+          "w": 29,
+          "l": 24,
+          "p": 0,
+          "net_cents": -3502,
+          "roi": -0.1321509433962264
+        },
+        "TOTAL": {
+          "n": 53,
+          "stake_cents": 26500,
+          "mean_quote_implied_probability": 0.523076770031203,
+          "plus_money": 0,
+          "min_price": -118,
+          "max_price": -102,
+          "w": 25,
+          "l": 28,
+          "p": 0,
+          "net_cents": -2558,
+          "roi": -0.09652830188679246
+        },
+        "OVER": {
+          "n": 28,
+          "stake_cents": 14000,
+          "mean_quote_implied_probability": 0.5234967706516013,
+          "plus_money": 0,
+          "min_price": -115,
+          "max_price": -102,
+          "w": 15,
+          "l": 13,
+          "p": 0,
+          "net_cents": 352,
+          "roi": 0.025142857142857144
+        },
+        "UNDER": {
+          "n": 25,
+          "stake_cents": 12500,
+          "mean_quote_implied_probability": 0.5226063693363554,
+          "plus_money": 0,
+          "min_price": -118,
+          "max_price": -102,
+          "w": 10,
+          "l": 15,
+          "p": 0,
+          "net_cents": -2910,
+          "roi": -0.2328
+        }
+      }
+    }
+  ],
+  "omit_week_totals": [
+    {
+      "week": 7,
+      "over": {
+        "n": 63,
+        "stake_cents": 31500,
+        "mean_quote_implied_probability": 0.5238629856194458,
+        "plus_money": 0,
+        "min_price": -118,
+        "max_price": -102,
+        "w": 30,
+        "l": 33,
+        "p": 0,
+        "net_cents": -2815,
+        "roi": -0.08936507936507937
+      },
+      "under": {
+        "n": 51,
+        "stake_cents": 25500,
+        "mean_quote_implied_probability": 0.5232816088896287,
+        "plus_money": 0,
+        "min_price": -118,
+        "max_price": -102,
+        "w": 21,
+        "l": 30,
+        "p": 0,
+        "net_cents": -5377,
+        "roi": -0.2108627450980392
+      }
+    },
+    {
+      "week": 8,
+      "over": {
+        "n": 66,
+        "stake_cents": 33000,
+        "mean_quote_implied_probability": 0.5227319237915065,
+        "plus_money": 0,
+        "min_price": -118,
+        "max_price": -102,
+        "w": 33,
+        "l": 33,
+        "p": 0,
+        "net_cents": -1345,
+        "roi": -0.040757575757575756
+      },
+      "under": {
+        "n": 49,
+        "stake_cents": 24500,
+        "mean_quote_implied_probability": 0.5232879820565507,
+        "plus_money": 0,
+        "min_price": -118,
+        "max_price": -102,
+        "w": 21,
+        "l": 28,
+        "p": 0,
+        "net_cents": -4367,
+        "roi": -0.17824489795918366
+      }
+    },
+    {
+      "week": 9,
+      "over": {
+        "n": 61,
+        "stake_cents": 30500,
+        "mean_quote_implied_probability": 0.5230599849049957,
+        "plus_money": 0,
+        "min_price": -118,
+        "max_price": -102,
+        "w": 34,
+        "l": 27,
+        "p": 0,
+        "net_cents": 2096,
+        "roi": 0.06872131147540983
+      },
+      "under": {
+        "n": 45,
+        "stake_cents": 22500,
+        "mean_quote_implied_probability": 0.5238633543294583,
+        "plus_money": 0,
+        "min_price": -118,
+        "max_price": -102,
+        "w": 20,
+        "l": 25,
+        "p": 0,
+        "net_cents": -3368,
+        "roi": -0.1496888888888889
+      }
+    },
+    {
+      "week": 10,
+      "over": {
+        "n": 53,
+        "stake_cents": 26500,
+        "mean_quote_implied_probability": 0.5229868434786289,
+        "plus_money": 0,
+        "min_price": -118,
+        "max_price": -104,
+        "w": 26,
+        "l": 27,
+        "p": 0,
+        "net_cents": -1560,
+        "roi": -0.05886792452830188
+      },
+      "under": {
+        "n": 35,
+        "stake_cents": 17500,
+        "mean_quote_implied_probability": 0.5243835202677278,
+        "plus_money": 0,
+        "min_price": -118,
+        "max_price": -105,
+        "w": 16,
+        "l": 19,
+        "p": 0,
+        "net_cents": -2191,
+        "roi": -0.1252
+      }
+    }
+  ],
+  "notes": [
+    "Mean quote-implied probability describes the selected prices, including vig. It is not a model probability, a pooled break-even rate for unequal payouts, or evidence of an edge.",
+    "The split is retrospective and exploratory. Keep both directions in the frozen prospective test and report them after qualified finals. Holdout price and side mix are pre-outcome descriptors only.",
+    "Week 10 game 401858290 carries the archived −100000 price and 1-cent recorded payout; the historical comparison retains the accepted per-ticket rounding. Week 11 includes the archived −5000 price for game 401858294. Neither price changes the fixed selection rule."
+  ]
+}
