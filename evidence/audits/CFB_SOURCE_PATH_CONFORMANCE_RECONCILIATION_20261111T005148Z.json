@@ -1,0 +1,217 @@
+{
+  "schema": "CFB_SOURCE_PATH_CONFORMANCE_RECONCILIATION_V1",
+  "observed_at": "2026-11-11T00:57:54.092Z",
+  "scope": "Source instruction reconciliation and independent quote corroboration; no recommendation renewal or canonical mutation",
+  "governing_evidence": {
+    "nov7proposal": "evidence/scheduler_qa/CFB_MONITOR_SOURCE_CORRECTION_20261107T193742179Z_PROPOSAL.json",
+    "nov7closure": "evidence/scheduler_qa/CFB_MONITOR_SOURCE_CORRECTION_20261107T193742179Z_CLOSURE.json",
+    "current_task": "6ae766e788d881919726d0eeb44450dd",
+    "task_source_clause": "Do not call site.api.espn.com as part of this production Monitor's acquisition path.",
+    "older_contract": "October17 V2 allowed identified DraftKings/ESPN benchmark; later Nov7 source instruction must be honored for production acquisition"
+  },
+  "finding": "Earlier November10 manual continuations used the excluded API route for benchmarks/material fields. Source-routing conformance was not included in the earlier technical publication acceptance. This is a procedural source-path exception; raw observations/history/immutable reviews must not be rewritten. Earlier RUN_PASS closure is historical bounded technical proof, not proof this source instruction was followed.",
+  "forward_correction": "Use current CBS full-board acquisition and already permitted independent DraftKings/FanDuel benchmark routes. Do not resume ESPN API acquisition. Do not alter parser historical source support or task prompts to authorize the excluded route.",
+  "allowed_route_corroborations": [
+    {
+      "game_id": "401856888",
+      "title": "Tennessee @ Texas A&M",
+      "source_url": "https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?itm_content=NCAA+Football&tb_edate=n30days&tb_eg=87637&tb_page=3",
+      "scrape_id": "01a1c819-7a7f-776a-83b2-a29656ad4761",
+      "selection": {
+        "selection": "Tennessee -2.5",
+        "price": -115,
+        "url": "https://sportsbook.draftkings.com/event/34226137?outcomes=0HC84998513N250_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+      },
+      "paired_quotes": [
+        {
+          "selection": "Texas A&M",
+          "price": 114,
+          "url": "https://sportsbook.draftkings.com/event/34226137?outcomes=0ML84998513_1&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Tennessee",
+          "price": -135,
+          "url": "https://sportsbook.draftkings.com/event/34226137?outcomes=0ML84998513_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Tennessee -2.5",
+          "price": -115,
+          "url": "https://sportsbook.draftkings.com/event/34226137?outcomes=0HC84998513N250_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Texas A&M +2.5",
+          "price": -105,
+          "url": "https://sportsbook.draftkings.com/event/34226137?outcomes=0HC84998513P250_1&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Over 43.5",
+          "price": -105,
+          "url": "https://sportsbook.draftkings.com/event/34226137?outcomes=0OU84998513O4350_1&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Under 43.5",
+          "price": -115,
+          "url": "https://sportsbook.draftkings.com/event/34226137?outcomes=0OU84998513U4350_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        }
+      ],
+      "source_class": "DRAFTKINGS_PUBLIC_AGGREGATE_TABLE",
+      "scope": "ALL_JURISDICTIONS_NOT_A_VENUE_OFFER",
+      "offer_updated_at": null,
+      "consensus": "UNAVAILABLE",
+      "readback_meaning": "current quote corroboration only; not original source-route compliance, material renewal, execution or new recommendation"
+    },
+    {
+      "game_id": "401856883",
+      "title": "Missouri @ Georgia",
+      "source_url": "https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?itm_content=NCAA+Football&tb_edate=n30days&tb_eg=87637&tb_page=3",
+      "scrape_id": "01a1c819-7a7f-776a-83b2-a29656ad4761",
+      "selection": {
+        "selection": "Georgia -15.5",
+        "price": -110,
+        "url": "https://sportsbook.draftkings.com/event/34964626?outcomes=0HC87100043N1550_1&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+      },
+      "paired_quotes": [
+        {
+          "selection": "Georgia",
+          "price": -750,
+          "url": "https://sportsbook.draftkings.com/event/34964626?outcomes=0ML87100043_1&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Missouri",
+          "price": 525,
+          "url": "https://sportsbook.draftkings.com/event/34964626?outcomes=0ML87100043_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Georgia -15.5",
+          "price": -110,
+          "url": "https://sportsbook.draftkings.com/event/34964626?outcomes=0HC87100043N1550_1&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Missouri +15.5",
+          "price": -110,
+          "url": "https://sportsbook.draftkings.com/event/34964626?outcomes=0HC87100043P1550_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Over 47.5",
+          "price": -108,
+          "url": "https://sportsbook.draftkings.com/event/34964626?outcomes=0OU87100043O4750_1&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Under 47.5",
+          "price": -112,
+          "url": "https://sportsbook.draftkings.com/event/34964626?outcomes=0OU87100043U4750_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        }
+      ],
+      "source_class": "DRAFTKINGS_PUBLIC_AGGREGATE_TABLE",
+      "scope": "ALL_JURISDICTIONS_NOT_A_VENUE_OFFER",
+      "offer_updated_at": null,
+      "consensus": "UNAVAILABLE",
+      "readback_meaning": "current quote corroboration only; not original source-route compliance, material renewal, execution or new recommendation"
+    },
+    {
+      "game_id": "401856858",
+      "title": "Baylor @ BYU",
+      "source_url": "https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?itm_content=NCAA+Football&tb_edate=n30days&tb_eg=87637&tb_page=3",
+      "scrape_id": "01a1c819-7a7f-776a-83b2-a29656ad4761",
+      "selection": {
+        "selection": "Baylor +7.5",
+        "price": -118,
+        "url": "https://sportsbook.draftkings.com/event/34964236?outcomes=0HC87098833P750_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+      },
+      "paired_quotes": [
+        {
+          "selection": "BYU",
+          "price": -298,
+          "url": "https://sportsbook.draftkings.com/event/34964236?outcomes=0ML87098833_1&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Baylor",
+          "price": 240,
+          "url": "https://sportsbook.draftkings.com/event/34964236?outcomes=0ML87098833_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "BYU -7.5",
+          "price": -102,
+          "url": "https://sportsbook.draftkings.com/event/34964236?outcomes=0HC87098833N750_1&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Baylor +7.5",
+          "price": -118,
+          "url": "https://sportsbook.draftkings.com/event/34964236?outcomes=0HC87098833P750_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Over 49.5",
+          "price": -105,
+          "url": "https://sportsbook.draftkings.com/event/34964236?outcomes=0OU87098833O4950_1&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Under 49.5",
+          "price": -115,
+          "url": "https://sportsbook.draftkings.com/event/34964236?outcomes=0OU87098833U4950_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        }
+      ],
+      "source_class": "DRAFTKINGS_PUBLIC_AGGREGATE_TABLE",
+      "scope": "ALL_JURISDICTIONS_NOT_A_VENUE_OFFER",
+      "offer_updated_at": null,
+      "consensus": "UNAVAILABLE",
+      "readback_meaning": "current quote corroboration only; not original source-route compliance, material renewal, execution or new recommendation"
+    },
+    {
+      "game_id": "401862827",
+      "title": "North Texas @ UTSA",
+      "source_url": "https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?itm_content=NCAA+Football&tb_edate=n30days&tb_eg=87637&tb_page=5",
+      "scrape_id": "01a1c819-7abf-7711-b83a-d6a491182eae",
+      "selection": {
+        "selection": "North Texas -2.5",
+        "price": -105,
+        "url": "https://sportsbook.draftkings.com/event/34964220?outcomes=0HC87098817N250_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+      },
+      "paired_quotes": [
+        {
+          "selection": "UTSA",
+          "price": 105,
+          "url": "https://sportsbook.draftkings.com/event/34964220?outcomes=0ML87098817_1&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "North Texas",
+          "price": -125,
+          "url": "https://sportsbook.draftkings.com/event/34964220?outcomes=0ML87098817_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "North Texas -2.5",
+          "price": -105,
+          "url": "https://sportsbook.draftkings.com/event/34964220?outcomes=0HC87098817N250_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "UTSA +2.5",
+          "price": -115,
+          "url": "https://sportsbook.draftkings.com/event/34964220?outcomes=0HC87098817P250_1&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Over 75.5",
+          "price": -115,
+          "url": "https://sportsbook.draftkings.com/event/34964220?outcomes=0OU87098817O7550_1&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        },
+        {
+          "selection": "Under 75.5",
+          "price": -105,
+          "url": "https://sportsbook.draftkings.com/event/34964220?outcomes=0OU87098817U7550_3&dkinternal_referrer_source=dknetwork&dkinternal_referrer_article_id=115891"
+        }
+      ],
+      "source_class": "DRAFTKINGS_PUBLIC_AGGREGATE_TABLE",
+      "scope": "ALL_JURISDICTIONS_NOT_A_VENUE_OFFER",
+      "offer_updated_at": null,
+      "consensus": "UNAVAILABLE",
+      "readback_meaning": "current quote corroboration only; not original source-route compliance, material renewal, execution or new recommendation"
+    }
+  ],
+  "jax_replacement_route": {
+    "url": "https://sportsbook.draftkings.com/event/34964183?outcomes=0HC87098662N750_3",
+    "scrape_id": "01a1c81a-5975-724a-b603-176ceab9a6c9",
+    "status": "NOT_QUALIFIED_LOGIN_SCOPE_AMBIGUOUS",
+    "finding": "Direct page shows a login-required message. Stop at access/semantic qualification; no numerical quote ingested from that page. Jax is absent from the public aggregate table's five returned pages; do not infer loss of its market."
+  },
+  "limits": "All original selections/limits/cutoffs unchanged. Four matching current pairs do not renew material reviews, repair earlier source-path compliance or prove venue execution. No handle/bet-percent inference, calibratedEV, wager or model change.",
+  "current_acceptance": "SOURCE_PATH_CONFORMANCE_OPEN; earlier technical publication proof preserved with this explicit limitation",
+  "next": "Next applicable current review must use permitted sources and preserve original review/limit history. Qualify Jax public benchmark via another already permitted accessible source or report that specific field unavailable. Friday07CT pre-trip material/price revalidation remains due."
+}
