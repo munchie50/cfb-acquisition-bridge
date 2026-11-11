@@ -61,3 +61,9 @@ Use the existing weekly learning review and recovery conventions, not a new moni
 
 ## Decision log
 2026-11-11: User confirmed integrated plan and requested durable long-lived tracking. Scope approved for design and read-only research; production promotions NOT authorized. Top 30 four-leg research broadened into sliding-scale matrix, including all three market styles and protected Top 10.
+
+## M1 continuation checkpoint — November 11, 2026
+
+M1 — **IN_PROGRESS / bounded inventory VERIFIED**, superseding the initial NOT_STARTED entry above. [Source inventory](../audits/CFB_INTEGRATED_BETTING_INTELLIGENCE_M1_INVENTORY_20261111.md) persisted at commit `3c22ace02ec8fd21dd7a293678d7c957a58fd2fa`, blob `903606c040c7fa3a0fe370505128fbd938fddbdc`, and fetched back with identical text. Verified source coverage includes 349 modeled final joins across Weeks 4–10, 199/200 modeled rows displaying all three market pairs across the selected Weeks 7–10 sheets, and one recovered 10-rank card for Week 10. The archive quotes and published ranks retain separate denominators.
+
+Resume at the Week 10 exact directed-ID join of original forecasts, original quote records and qualified finals. Validate kickoff and decision timing, then record priced denominators by market before baseline scoring. M1 remains open for exact quote and cutoff qualification, Weeks 1–6 inventory gaps, and additional authentic ranked-card recovery. M2–M7 statuses remain governed by their original acceptance criteria.
