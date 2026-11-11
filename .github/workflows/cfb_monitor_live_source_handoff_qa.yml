@@ -2,7 +2,7 @@ name: CFB Monitor live-source handoff QA
 on:
   push:
     branches: [qa/monitor-actions-rehearsal-20261110]
-    paths: [qa/monitor-live-source-readback-20261110-elapsed.json]
+    paths: [qa/monitor-live-source-readback-20261110-scheduled.json]
 permissions:
   contents: write
 jobs:
@@ -24,8 +24,8 @@ jobs:
           import os
           from pathlib import Path
 
-          request = json.loads(Path('qa/monitor-live-source-readback-20261110-elapsed.json').read_text())
-          if request != {'request_id': 'monitor-live-source-readback-20261110-elapsed', 'fixture_head': os.environ['FIXTURE_HEAD']}:
+          request = json.loads(Path('qa/monitor-live-source-readback-20261110-scheduled.json').read_text())
+          if request != {'request_id': 'monitor-live-source-readback-20261110-scheduled', 'fixture_head': os.environ['FIXTURE_HEAD']}:
               raise ValueError('Unexpected test request')
           PY
       - name: Verify pinned checkout and immutable reviews
@@ -169,7 +169,7 @@ jobs:
               raise ValueError('Required QA coverage missing')
           result = {
               'status': 'PASS_LIVE_SOURCE_HANDOFF',
-              'request_id': 'monitor-live-source-readback-20261110-elapsed',
+              'request_id': 'monitor-live-source-readback-20261110-scheduled',
               'request_commit': os.environ['GITHUB_SHA'],
               'run_id': os.environ['GITHUB_RUN_ID'],
               'pinned_head': os.environ['FIXTURE_HEAD'],
@@ -178,7 +178,7 @@ jobs:
           }
           (root / 'live-source-result.json').write_text(json.dumps(result, indent=2))
           PY
-          gh api --method PUT "repos/$GITHUB_REPOSITORY/contents/qa/monitor-live-source-readback-20261110-elapsed-result.json" \
+          gh api --method PUT "repos/$GITHUB_REPOSITORY/contents/qa/monitor-live-source-readback-20261110-scheduled-result.json" \
             -f branch="$GITHUB_REF_NAME" \
             -f message='Record isolated Market Monitor live-source QA result' \
             -f content="$(base64 -w0 "$RUNNER_TEMP/live-source-result.json")" --jq '.commit.sha'
