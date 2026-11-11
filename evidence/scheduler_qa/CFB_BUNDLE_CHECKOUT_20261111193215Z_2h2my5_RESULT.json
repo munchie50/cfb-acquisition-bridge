@@ -1,0 +1,91 @@
+{
+  "schema": "CFB_OFFLINE_BUNDLE_SCHEDULED_RESULT_V1",
+  "recorded_utc": "2026-11-11 19:34:17 UTC",
+  "verdict": "OFFLINE_BUNDLE_CHECKOUT_PASS",
+  "first_failing_boundary": null,
+  "sanitized_error": null,
+  "receipt_branch": "qa/monitor-bundle-checkout-20261111",
+  "startup": {
+    "path": "evidence/scheduler_qa/CFB_BUNDLE_CHECKOUT_20261111193215Z_2h2my5_STARTED.json",
+    "blob": "81f871d9da629e9f28f0b2235e82a91b75587190",
+    "commit": "e9bbaa2118009fefb47b917c2650709a199e7921",
+    "exact_readback": true
+  },
+  "observed_invocation": {
+    "status": "STARTED",
+    "trigger": "NATURAL_ONE_TIME_SCHEDULED",
+    "first_actual_utc": "2026-11-11 19:32:15 UTC",
+    "clock_source": "clock__curr_time first tool operation",
+    "invocation": "09ef50be-bce8-8327-9870-7319fbb85a21",
+    "scheduled_for": "2026-11-11T19:28:18Z",
+    "recorded_started_at": "2026-11-11T19:31:57.092551Z",
+    "prior_result_id": "522b00e6-92a8-8322-a12f-5291a6ea4c00",
+    "capabilities": {
+      "orchestration": "functions.exec",
+      "documented_shell_exposed": true,
+      "artifact_connector": true
+    },
+    "scope": "QA-only offline bundle fixture; no production edits"
+  },
+  "clock_impact": "No material timing impact on historical QA fixture; older result not attributed to this invocation",
+  "authority": {
+    "current_main_readonly": "26b96bf8777bd1fabaf818747bc8859a58346163",
+    "recovery": {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_283.md",
+      "blob": "5a030e90df65f0261140e36920e3c89d3b0490dc"
+    },
+    "checkpoint": {
+      "path": "evidence/scheduler_qa/CFB_MONITOR_BUNDLE_CHECKOUT_CANDIDATE_20261111.md",
+      "commit": "2e9e2d1797ab60ae5c0d969e426b0348bc82367c",
+      "blob": "0e1eff677ea7baeea403c79a334c1612cbbc8c45"
+    }
+  },
+  "artifact": {
+    "id": 13862091095,
+    "run_id": 43032938219,
+    "connector_operation": "github_download_workflow_artifact with repo_full_name only, succeeded",
+    "published_digest": "sha256:f33cc2c33f71a16e91854d959e5584fb5fe773318bedbcda7b45ba0c54482aa6",
+    "signed_reference_redacted": true
+  },
+  "stages": {
+    "request_started_utc": "2026-11-11T19:33:54.076726+00:00",
+    "response_recovered_by_utc": "2026-11-11T19:33:55.989281+00:00",
+    "http_status": 200,
+    "zip_bytes": 11101636,
+    "zip_sha256": "f33cc2c33f71a16e91854d959e5584fb5fe773318bedbcda7b45ba0c54482aa6",
+    "materialization": "Connector file reference signed HTTPS; URL redacted",
+    "sole_member": "engine.bundle",
+    "bundle_bytes": 11101496,
+    "bundle_sha256": "3d5265a7558f40a570852cdee02e9d40defb43619920b10002229f340192b3ce",
+    "candidate_helper_blob": "86a3d765655a04160e78c3bf4ed556d9fcbdc030",
+    "candidate_helper_bytes": 4707,
+    "candidate_commit": "85f14ad4b6b7cb59639c8c4c5514321f472f4054",
+    "python": "3.12.14",
+    "git": "git version 2.52.0",
+    "checkout_command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/tmp/cfb-qa-bundle-n1omdmzp/helper.py",
+      "--destination",
+      "/tmp/cfb-qa-bundle-n1omdmzp/checkout",
+      "--expected-head",
+      "dd4b33db02d28df7dcd3328a8fc63036bfc06064",
+      "--bundle",
+      "/tmp/cfb-qa-bundle-n1omdmzp/engine.bundle",
+      "--bundle-sha256",
+      "3d5265a7558f40a570852cdee02e9d40defb43619920b10002229f340192b3ce"
+    ],
+    "helper_exit": 0,
+    "checkout_attempts": 1,
+    "helper_status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+    "pinned_head": "dd4b33db02d28df7dcd3328a8fc63036bfc06064",
+    "full_nonshallow": true,
+    "original_helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "immutable_review_count": 56,
+    "runtime_sha256": "158ae09f5c705e1153d1816a6d455b2b3ac9bcb9139eb4357e37382d9d6f9cd3",
+    "validator": "Unchanged load_review imported from fixture; candidate helper enumerated all typed-ledger review_ref tuples and verified each"
+  },
+  "shell_exit": 0,
+  "completed_at": "2026-11-11T19:33:58.412659+00:00",
+  "fixture_scope": "One file-only checkout of historical QA pin; no direct GitHub DNS dependency or DNS repair claim; actual scheduled QA worker only",
+  "isolation": "Only append-only QA-branch evidence writes and private scratch files; no research, publication, production task edits, canonical changes, browser/sign-in or follow-up schedule"
+}
