@@ -1,0 +1,2145 @@
+{
+  "schema": "CFB_WEEK11_SATURDAY_PASS_PRICE_AND_LINE_MOVEMENT_V1",
+  "input_head": "110c543e75eed3fbbf127f10ac9d0658700b6f90",
+  "source": {
+    "path": "evidence/audits/CFB_WEEK11_SATURDAY_PASS_PREGAME_BASELINE_20261112.json",
+    "blob": "f1b8eda1cd69f3aa4e3e5cf47c94f271ec1c1a24"
+  },
+  "groups": {
+    "ALL": {
+      "same_line": {
+        "n": 86,
+        "price_direction": {
+          "better": 25,
+          "worse": 25,
+          "unchanged": 36
+        },
+        "mean_break_even_delta_pp": -0.0658709204490236,
+        "mean_win_profit_delta_cents": 3.0930232558139537
+      },
+      "changed_line": {
+        "n": 31,
+        "line_direction": {
+          "better": 14,
+          "worse": 17,
+          "unchanged": 0
+        },
+        "joint_direction": {
+          "better_line_better_price": 1,
+          "better_line_worse_price": 13,
+          "better_line_unchanged_price": 0,
+          "worse_line_better_price": 14,
+          "worse_line_worse_price": 1,
+          "worse_line_unchanged_price": 2
+        }
+      },
+      "unavailable": 3
+    },
+    "SPREAD": {
+      "same_line": {
+        "n": 20,
+        "price_direction": {
+          "better": 2,
+          "worse": 10,
+          "unchanged": 8
+        },
+        "mean_break_even_delta_pp": 0.26610353133574965,
+        "mean_win_profit_delta_cents": -4.95
+      },
+      "changed_line": {
+        "n": 19,
+        "line_direction": {
+          "better": 10,
+          "worse": 9,
+          "unchanged": 0
+        },
+        "joint_direction": {
+          "better_line_better_price": 1,
+          "better_line_worse_price": 9,
+          "better_line_unchanged_price": 0,
+          "worse_line_better_price": 7,
+          "worse_line_worse_price": 1,
+          "worse_line_unchanged_price": 1
+        }
+      },
+      "unavailable": 1
+    },
+    "ML": {
+      "same_line": {
+        "n": 39,
+        "price_direction": {
+          "better": 18,
+          "worse": 9,
+          "unchanged": 12
+        },
+        "mean_break_even_delta_pp": -0.3401068799417924,
+        "mean_win_profit_delta_cents": 10.435897435897436
+      },
+      "changed_line": {
+        "n": 0,
+        "line_direction": {
+          "better": 0,
+          "worse": 0,
+          "unchanged": 0
+        },
+        "joint_direction": {
+          "better_line_better_price": 0,
+          "better_line_worse_price": 0,
+          "better_line_unchanged_price": 0,
+          "worse_line_better_price": 0,
+          "worse_line_worse_price": 0,
+          "worse_line_unchanged_price": 0
+        }
+      },
+      "unavailable": 1
+    },
+    "TOTAL": {
+      "same_line": {
+        "n": 27,
+        "price_direction": {
+          "better": 5,
+          "worse": 6,
+          "unchanged": 16
+        },
+        "mean_break_even_delta_pp": 0.08434068638514382,
+        "mean_win_profit_delta_cents": -1.5555555555555556
+      },
+      "changed_line": {
+        "n": 12,
+        "line_direction": {
+          "better": 4,
+          "worse": 8,
+          "unchanged": 0
+        },
+        "joint_direction": {
+          "better_line_better_price": 0,
+          "better_line_worse_price": 4,
+          "better_line_unchanged_price": 0,
+          "worse_line_better_price": 7,
+          "worse_line_worse_price": 0,
+          "worse_line_unchanged_price": 1
+        }
+      },
+      "unavailable": 1
+    }
+  },
+  "pairs": [
+    {
+      "id": "401856859",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": -2.5,
+      "opening_price": -125,
+      "thursday": {
+        "line": -2.5,
+        "price": -125,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856859",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -146,
+      "thursday": {
+        "price": -142,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -0.6719075455217327,
+      "win_profit_delta_cents": 10,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856859",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 60.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 59.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "under"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401858296",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": -13,
+      "opening_price": -111,
+      "thursday": {
+        "line": -13.5,
+        "price": -110,
+        "book_icon": "35"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -0.22568269013766296,
+      "win_profit_delta_cents": 5,
+      "price_direction": "better",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401858296",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -521,
+      "thursday": {
+        "price": -549,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.6947390882542037,
+      "win_profit_delta_cents": -5,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858296",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 54.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 54.5,
+        "price": -108,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -0.45787545787545625,
+      "win_profit_delta_cents": 8,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856886",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": 2.5,
+      "opening_price": 100,
+      "thursday": {
+        "line": 2.5,
+        "price": 100,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856886",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": 120,
+      "thursday": {
+        "price": 120,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856886",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 49.5,
+      "opening_price": -120,
+      "thursday": {
+        "line": 50.5,
+        "price": -110,
+        "book_icon": "30",
+        "side": "over"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -2.164502164502158,
+      "win_profit_delta_cents": 38,
+      "price_direction": "better",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401858300",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": 3,
+      "opening_price": -118,
+      "thursday": {
+        "line": 3,
+        "price": -115,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -0.6400682739492236,
+      "win_profit_delta_cents": 11,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858300",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": 120,
+      "thursday": {
+        "price": 125,
+        "book_icon": "34"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -1.010101010101011,
+      "win_profit_delta_cents": 25,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858300",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 54.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 53.5,
+        "price": -108,
+        "book_icon": "34",
+        "side": "under"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -0.45787545787545625,
+      "win_profit_delta_cents": 8,
+      "price_direction": "better",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401858520",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": 8.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 9,
+        "price": -111,
+        "book_icon": "34"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 0.22568269013766296,
+      "win_profit_delta_cents": -5,
+      "price_direction": "worse",
+      "line_direction": "better"
+    },
+    {
+      "id": "401858520",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": 260,
+      "thursday": {
+        "price": 275,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -1.1111111111111127,
+      "win_profit_delta_cents": 75,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858520",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 43.5,
+      "opening_price": -105,
+      "thursday": {
+        "line": 42.5,
+        "price": -108,
+        "book_icon": "34",
+        "side": "over"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 0.703564727954975,
+      "win_profit_delta_cents": -13,
+      "price_direction": "worse",
+      "line_direction": "better"
+    },
+    {
+      "id": "401861967",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": -4,
+      "opening_price": -110,
+      "thursday": {
+        "line": -3.5,
+        "price": -120,
+        "book_icon": "35"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 2.164502164502158,
+      "win_profit_delta_cents": -38,
+      "price_direction": "worse",
+      "line_direction": "better"
+    },
+    {
+      "id": "401861967",
+      "market": "ML",
+      "selection": "away",
+      "opening_line": null,
+      "opening_price": -182,
+      "thursday": {
+        "price": -182,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401861967",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 57.5,
+      "opening_price": -105,
+      "thursday": {
+        "line": 57.5,
+        "price": -105,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401862825",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": 12,
+      "opening_price": -108,
+      "thursday": {
+        "line": 12,
+        "price": -108,
+        "book_icon": "34"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401862825",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": 360,
+      "thursday": {
+        "price": 375,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -0.6864988558352408,
+      "win_profit_delta_cents": 75,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401862825",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 44.5,
+      "opening_price": -118,
+      "thursday": {
+        "line": 45.5,
+        "price": -105,
+        "book_icon": "30",
+        "side": "over"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -2.908928171850522,
+      "win_profit_delta_cents": 52,
+      "price_direction": "better",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401870769",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": 7.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 7.5,
+        "price": -110,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401870769",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": 240,
+      "thursday": {
+        "price": 240,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401870769",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 46.5,
+      "opening_price": -108,
+      "thursday": {
+        "line": 46.5,
+        "price": -108,
+        "book_icon": "34",
+        "side": "over"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856862",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": 10.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 10.5,
+        "price": -110,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856862",
+      "market": "ML",
+      "selection": "away",
+      "opening_line": null,
+      "opening_price": 320,
+      "thursday": {
+        "price": 320,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856862",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 45.5,
+      "opening_price": -105,
+      "thursday": {
+        "line": 44.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "over"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 1.1614401858304313,
+      "win_profit_delta_cents": -21,
+      "price_direction": "worse",
+      "line_direction": "better"
+    },
+    {
+      "id": "401862828",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": -1.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": -2.5,
+        "price": -110,
+        "book_icon": "30"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401862828",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -118,
+      "thursday": {
+        "price": -132,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 2.768111357165459,
+      "win_profit_delta_cents": -45,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401862828",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 48.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 48.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401871060",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": -5,
+      "opening_price": -111,
+      "thursday": {
+        "line": -4.5,
+        "price": -110,
+        "book_icon": "30"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -0.22568269013766296,
+      "win_profit_delta_cents": 5,
+      "price_direction": "better",
+      "line_direction": "better"
+    },
+    {
+      "id": "401871060",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -210,
+      "thursday": {
+        "price": -204,
+        "book_icon": "34"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -0.6366723259762286,
+      "win_profit_delta_cents": 7,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401871060",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 54.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 54.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401870796",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": 1.5,
+      "opening_price": -105,
+      "thursday": {
+        "line": 1.5,
+        "price": -110,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 1.1614401858304313,
+      "win_profit_delta_cents": -21,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401870796",
+      "market": "ML",
+      "selection": "away",
+      "opening_line": null,
+      "opening_price": 105,
+      "thursday": {
+        "price": 100,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 1.2195121951219523,
+      "win_profit_delta_cents": -25,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401870796",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 48.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 48.5,
+        "price": -114,
+        "book_icon": "34",
+        "side": "over"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.8900756564307888,
+      "win_profit_delta_cents": -16,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858294",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": 29.5,
+      "opening_price": -108,
+      "thursday": {
+        "line": 29.5,
+        "price": -110,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.45787545787545625,
+      "win_profit_delta_cents": -8,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858294",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -5000,
+      "thursday": {
+        "price": -5000,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858294",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 52.5,
+      "opening_price": -112,
+      "thursday": {
+        "line": 52.5,
+        "price": -108,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -0.907111756168355,
+      "win_profit_delta_cents": 17,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401862826",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": -5.5,
+      "opening_price": -108,
+      "thursday": {
+        "line": -5.5,
+        "price": -112,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.907111756168355,
+      "win_profit_delta_cents": -17,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401862826",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -205,
+      "thursday": {
+        "price": -217,
+        "book_icon": "34"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 1.241143920980503,
+      "win_profit_delta_cents": -14,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401862826",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 74.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 74.5,
+        "price": -108,
+        "book_icon": "34",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -0.45787545787545625,
+      "win_profit_delta_cents": 8,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858523",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": 11.5,
+      "opening_price": -112,
+      "thursday": {
+        "line": 10.5,
+        "price": -108,
+        "book_icon": "34"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -0.907111756168355,
+      "win_profit_delta_cents": 17,
+      "price_direction": "better",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401858523",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -435,
+      "thursday": {
+        "price": -426,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -0.3198180590597288,
+      "win_profit_delta_cents": 2,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858523",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 38.5,
+      "opening_price": -105,
+      "thursday": {
+        "line": 38.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "over"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 1.1614401858304313,
+      "win_profit_delta_cents": -21,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401864536",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": -7,
+      "opening_price": -110,
+      "thursday": {
+        "line": -6.5,
+        "price": -115,
+        "book_icon": "35"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 1.1074197120708673,
+      "win_profit_delta_cents": -20,
+      "price_direction": "worse",
+      "line_direction": "better"
+    },
+    {
+      "id": "401864536",
+      "market": "ML",
+      "selection": "away",
+      "opening_line": null,
+      "opening_price": -270,
+      "thursday": {
+        "price": -245,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -1.9584802193497786,
+      "win_profit_delta_cents": 19,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401864536",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 47.5,
+      "opening_price": -108,
+      "thursday": {
+        "line": 47.5,
+        "price": -108,
+        "book_icon": "30",
+        "side": "over"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856857",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": -3.5,
+      "opening_price": -102,
+      "thursday": {
+        "line": -3,
+        "price": -112,
+        "book_icon": "30"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 2.335139174294787,
+      "win_profit_delta_cents": -44,
+      "price_direction": "worse",
+      "line_direction": "better"
+    },
+    {
+      "id": "401856857",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -164,
+      "thursday": {
+        "price": -154,
+        "book_icon": "34"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -1.4912908613695985,
+      "win_profit_delta_cents": 20,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856857",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 48.5,
+      "opening_price": -115,
+      "thursday": {
+        "line": 48.5,
+        "price": -111,
+        "book_icon": "34",
+        "side": "over"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -0.8817370219332044,
+      "win_profit_delta_cents": 15,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401869952",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": 5.5,
+      "opening_price": -108,
+      "thursday": {
+        "line": 6.5,
+        "price": -110,
+        "book_icon": "35"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 0.45787545787545625,
+      "win_profit_delta_cents": -8,
+      "price_direction": "worse",
+      "line_direction": "better"
+    },
+    {
+      "id": "401869952",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": 170,
+      "thursday": {
+        "price": 195,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -3.1387319522912738,
+      "win_profit_delta_cents": 125,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401869952",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 56.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 56.5,
+        "price": -110,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401860916",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": 10,
+      "opening_price": -115,
+      "thursday": {
+        "line": 9.5,
+        "price": -108,
+        "book_icon": "30"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -1.5652951699463236,
+      "win_profit_delta_cents": 28,
+      "price_direction": "better",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401860916",
+      "market": "ML",
+      "selection": "away",
+      "opening_line": null,
+      "opening_price": 295,
+      "thursday": {
+        "price": 295,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401860916",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 60.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 59.5,
+        "price": -108,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -0.45787545787545625,
+      "win_profit_delta_cents": 8,
+      "price_direction": "better",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401856887",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": 1.5,
+      "opening_price": -118,
+      "thursday": {
+        "line": 1.5,
+        "price": -120,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.4170141784820669,
+      "win_profit_delta_cents": -7,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856887",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -105,
+      "thursday": {
+        "price": -108,
+        "book_icon": "34"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.703564727954975,
+      "win_profit_delta_cents": -13,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856887",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 49.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 49.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858521",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": -3,
+      "opening_price": -120,
+      "thursday": {
+        "line": -3.5,
+        "price": -102,
+        "book_icon": "34"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -4.050405040504046,
+      "win_profit_delta_cents": 73,
+      "price_direction": "better",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401858521",
+      "market": "ML",
+      "selection": "away",
+      "opening_line": null,
+      "opening_price": -166,
+      "thursday": {
+        "price": -156,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -1.468515037593987,
+      "win_profit_delta_cents": 20,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858521",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 43.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 42.5,
+        "price": -105,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -1.1614401858304313,
+      "win_profit_delta_cents": 21,
+      "price_direction": "better",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401871099",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": 17.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 17.5,
+        "price": -112,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.4492362982928988,
+      "win_profit_delta_cents": -9,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401871099",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -909,
+      "thursday": {
+        "price": -877,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -0.32461175926385977,
+      "win_profit_delta_cents": 2,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401871099",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 56.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 56.5,
+        "price": -110,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856861",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": -3,
+      "opening_price": -102,
+      "thursday": {
+        "line": -3,
+        "price": -105,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.7244626901714568,
+      "win_profit_delta_cents": -14,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856861",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -142,
+      "thursday": {
+        "price": -142,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856861",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 67.5,
+      "opening_price": -108,
+      "thursday": {
+        "line": 67.5,
+        "price": -108,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401869928",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": -1.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": -1,
+        "price": -111,
+        "book_icon": "34"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 0.22568269013766296,
+      "win_profit_delta_cents": -5,
+      "price_direction": "worse",
+      "line_direction": "better"
+    },
+    {
+      "id": "401869928",
+      "market": "ML",
+      "selection": "away",
+      "opening_line": null,
+      "opening_price": -120,
+      "thursday": {
+        "price": -111,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -1.9388194743644949,
+      "win_profit_delta_cents": 33,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401869928",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 53.5,
+      "opening_price": -105,
+      "thursday": {
+        "line": 54.5,
+        "price": -115,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 2.2688598979012986,
+      "win_profit_delta_cents": -41,
+      "price_direction": "worse",
+      "line_direction": "better"
+    },
+    {
+      "id": "401856884",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": 3.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 3.5,
+        "price": -115,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 1.1074197120708673,
+      "win_profit_delta_cents": -20,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856884",
+      "market": "ML",
+      "selection": "away",
+      "opening_line": null,
+      "opening_price": 145,
+      "thursday": {
+        "price": 145,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856884",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 52.5,
+      "opening_price": -105,
+      "thursday": {
+        "line": 52.5,
+        "price": -110,
+        "book_icon": "30",
+        "side": "over"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 1.1614401858304313,
+      "win_profit_delta_cents": -21,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858298",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": 3.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 3.5,
+        "price": -110,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858298",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": 142,
+      "thursday": {
+        "price": 150,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -1.3223140495867758,
+      "win_profit_delta_cents": 40,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858298",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 59.5,
+      "opening_price": -108,
+      "thursday": {
+        "line": 59.5,
+        "price": -110,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.45787545787545625,
+      "win_profit_delta_cents": -8,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401871100",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": 3.5,
+      "opening_price": -122,
+      "thursday": {
+        "line": 3,
+        "price": -108,
+        "book_icon": "30"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -3.0318780318780325,
+      "win_profit_delta_cents": 53,
+      "price_direction": "better",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401871100",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -152,
+      "thursday": {
+        "price": -146,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -0.9678668215253539,
+      "win_profit_delta_cents": 13,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401871100",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 56.5,
+      "opening_price": -111,
+      "thursday": {
+        "line": 55.5,
+        "price": -108,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -0.6835581480131192,
+      "win_profit_delta_cents": 13,
+      "price_direction": "better",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401864538",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": -11.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": -12,
+        "price": -111,
+        "book_icon": "34"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 0.22568269013766296,
+      "win_profit_delta_cents": -5,
+      "price_direction": "worse",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401864538",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -469,
+      "thursday": {
+        "price": -469,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401864538",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 47.5,
+      "opening_price": -108,
+      "thursday": {
+        "line": 47.5,
+        "price": -105,
+        "book_icon": "35",
+        "side": "over"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -0.703564727954975,
+      "win_profit_delta_cents": 13,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858524",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": -9.5,
+      "opening_price": -108,
+      "thursday": {
+        "line": -9.5,
+        "price": -110,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.45787545787545625,
+      "win_profit_delta_cents": -8,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858524",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -340,
+      "thursday": {
+        "price": -355,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.7492507492507516,
+      "win_profit_delta_cents": -6,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858524",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 41.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 41.5,
+        "price": -112,
+        "book_icon": "30",
+        "side": "over"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.4492362982928988,
+      "win_profit_delta_cents": -9,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856864",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": -2.5,
+      "opening_price": -115,
+      "thursday": {
+        "line": -2.5,
+        "price": -110,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -1.1074197120708673,
+      "win_profit_delta_cents": 20,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856864",
+      "market": "ML",
+      "selection": "away",
+      "opening_line": null,
+      "opening_price": -141,
+      "thursday": {
+        "price": -133,
+        "book_icon": "34"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -1.4246790020123634,
+      "win_profit_delta_cents": 21,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856864",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 54.5,
+      "opening_price": -105,
+      "thursday": {
+        "line": 54.5,
+        "price": -105,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856885",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": 4,
+      "opening_price": -105,
+      "thursday": {
+        "line": 4,
+        "price": -108,
+        "book_icon": "34"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.703564727954975,
+      "win_profit_delta_cents": -13,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856885",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -180,
+      "thursday": {
+        "price": -182,
+        "book_icon": "34"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.2532928064842954,
+      "win_profit_delta_cents": -3,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856885",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 45.5,
+      "opening_price": -111,
+      "thursday": {
+        "line": 46.5,
+        "price": -105,
+        "book_icon": "30",
+        "side": "over"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -1.3871228759680942,
+      "win_profit_delta_cents": 26,
+      "price_direction": "better",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401858519",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": -17,
+      "opening_price": -114,
+      "thursday": {
+        "line": -17,
+        "price": -114,
+        "book_icon": "34"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858519",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -909,
+      "thursday": {
+        "price": -909,
+        "book_icon": "34"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858519",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 47.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 47.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "over"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858299",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": -15,
+      "opening_price": -111,
+      "thursday": {
+        "line": -15.5,
+        "price": -108,
+        "book_icon": "34"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -0.6835581480131192,
+      "win_profit_delta_cents": 13,
+      "price_direction": "better",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401858299",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -714,
+      "thursday": {
+        "price": -709,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -0.07592714638450238,
+      "win_profit_delta_cents": 1,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401858299",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 58.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 58.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401864539",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": -14,
+      "opening_price": -110,
+      "thursday": {
+        "line": -14.5,
+        "price": -108,
+        "book_icon": "34"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": -0.45787545787545625,
+      "win_profit_delta_cents": 8,
+      "price_direction": "better",
+      "line_direction": "worse"
+    },
+    {
+      "id": "401864539",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -588,
+      "thursday": {
+        "price": -599,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.22873207572279286,
+      "win_profit_delta_cents": -2,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401864539",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 46.5,
+      "opening_price": -105,
+      "thursday": {
+        "line": 46.5,
+        "price": -105,
+        "book_icon": "35",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856882",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": -7.5,
+      "opening_price": -105,
+      "thursday": {
+        "line": -7,
+        "price": -108,
+        "book_icon": "34"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 0.703564727954975,
+      "win_profit_delta_cents": -13,
+      "price_direction": "worse",
+      "line_direction": "better"
+    },
+    {
+      "id": "401856882",
+      "market": "ML",
+      "selection": "away",
+      "opening_line": null,
+      "opening_price": -294,
+      "thursday": {
+        "price": -265,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -2.0165496140741257,
+      "win_profit_delta_cents": 19,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856882",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 51.5,
+      "opening_price": -108,
+      "thursday": {
+        "line": 51.5,
+        "price": -115,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 1.5652951699463236,
+      "win_profit_delta_cents": -28,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856863",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": -3.5,
+      "opening_price": -105,
+      "thursday": {
+        "line": -3.5,
+        "price": -105,
+        "book_icon": "30"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856863",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -167,
+      "thursday": {
+        "price": -156,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": -1.6093164794007464,
+      "win_profit_delta_cents": 22,
+      "price_direction": "better",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401856863",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 72.5,
+      "opening_price": -105,
+      "thursday": {
+        "line": 73.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "under"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 1.1614401858304313,
+      "win_profit_delta_cents": -21,
+      "price_direction": "worse",
+      "line_direction": "better"
+    },
+    {
+      "id": "401860915",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": 2.5,
+      "opening_price": 100,
+      "thursday": {
+        "line": 3,
+        "price": -114,
+        "book_icon": "34"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 3.2710280373831724,
+      "win_profit_delta_cents": -61,
+      "price_direction": "worse",
+      "line_direction": "better"
+    },
+    {
+      "id": "401860915",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": 122,
+      "thursday": {
+        "price": 122,
+        "book_icon": "35"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401860915",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 42.5,
+      "opening_price": -108,
+      "thursday": {
+        "line": 42.5,
+        "price": -108,
+        "book_icon": "30",
+        "side": "over"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401864540",
+      "market": "SPREAD",
+      "selection": "home",
+      "opening_line": 7.5,
+      "opening_price": -108,
+      "thursday": {
+        "line": 8.5,
+        "price": -115,
+        "book_icon": "30"
+      },
+      "match": "CHANGED_LINE",
+      "break_even_delta_percentage_points": 1.5652951699463236,
+      "win_profit_delta_cents": -28,
+      "price_direction": "worse",
+      "line_direction": "better"
+    },
+    {
+      "id": "401864540",
+      "market": "ML",
+      "selection": "away",
+      "opening_line": null,
+      "opening_price": -305,
+      "thursday": {
+        "price": -323,
+        "book_icon": "34"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 1.0506960861570769,
+      "win_profit_delta_cents": -9,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401864540",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 39.5,
+      "opening_price": -110,
+      "thursday": {
+        "line": 39.5,
+        "price": -110,
+        "book_icon": "30",
+        "side": "over"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401860917",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": 9.5,
+      "opening_price": -110,
+      "thursday": null,
+      "match": "UNAVAILABLE"
+    },
+    {
+      "id": "401860917",
+      "market": "ML",
+      "selection": "home",
+      "opening_line": null,
+      "opening_price": -334,
+      "thursday": null,
+      "match": "UNAVAILABLE"
+    },
+    {
+      "id": "401860917",
+      "market": "TOTAL",
+      "selection": "under",
+      "opening_line": 67.5,
+      "opening_price": -108,
+      "thursday": null,
+      "match": "UNAVAILABLE"
+    },
+    {
+      "id": "401864537",
+      "market": "SPREAD",
+      "selection": "away",
+      "opening_line": -6.5,
+      "opening_price": -108,
+      "thursday": {
+        "line": -6.5,
+        "price": -111,
+        "book_icon": "34"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0.6835581480131192,
+      "win_profit_delta_cents": -13,
+      "price_direction": "worse",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401864537",
+      "market": "ML",
+      "selection": "away",
+      "opening_line": null,
+      "opening_price": -244,
+      "thursday": {
+        "price": -244,
+        "book_icon": "34"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    },
+    {
+      "id": "401864537",
+      "market": "TOTAL",
+      "selection": "over",
+      "opening_line": 38.5,
+      "opening_price": -105,
+      "thursday": {
+        "line": 38.5,
+        "price": -105,
+        "book_icon": "30",
+        "side": "over"
+      },
+      "match": "SAME_LINE",
+      "break_even_delta_percentage_points": 0,
+      "win_profit_delta_cents": 0,
+      "price_direction": "unchanged",
+      "line_direction": "unchanged"
+    }
+  ],
+  "scope": "Outcome-free comparison of the identical frozen selection in two archived mixed-book CBS displays. Quote-implied break-even describes the price including vig, not model probability or estimated edge. Win-profit differences use a hypothetical $5 stake and assume a win only for payout comparison. Changed lines affect win and push conditions. Price and line direction are both retained; cross-source display changes do not establish sportsbook-specific movement or closing-line value. No wagers, eligibility changes, or rule promotion."
+}
