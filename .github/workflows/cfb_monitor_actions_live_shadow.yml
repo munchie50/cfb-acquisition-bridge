@@ -1,0 +1,99 @@
+name: Market Monitor fresh shadow build
+on:
+  push:
+    branches: [qa/monitor-actions-live-shadow-20261112]
+    paths: [handoff/monitor-actions-live-shadow/request.json]
+permissions:
+  contents: write
+concurrency:
+  group: monitor-actions-live-shadow-20261112
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Compile and verify draft
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF" = refs/heads/qa/monitor-actions-live-shadow-20261112
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          test "$(git rev-parse --is-shallow-repository)" = false
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          import re
+          import subprocess
+          import sys
+          from datetime import datetime, timezone
+          from pathlib import Path
+          
+          sys.path.insert(0, 'scripts')
+          import cfb_neutral_publication_gate as gate
+          import cfb_week11_publication as week
+          
+          root = Path('handoff/monitor-actions-live-shadow')
+          request_text = (root / 'request.json').read_text()
+          request = json.loads(request_text, object_pairs_hook=gate.unique)
+          gate.keys(request, ['schema', 'parent', 'cycle', 'as_of', 'recovered_by', 'capture_blob', 'rows_blob'])
+          if request['schema'] != 'CFB_MONITOR_LIVE_SHADOW_V1':
+              raise ValueError('unexpected request schema')
+          parent = request['parent']
+          if not re.fullmatch(r'[0-9a-f]{40}', parent):
+              raise ValueError('exact parent SHA required')
+          subprocess.run(['git', 'merge-base', '--is-ancestor', parent, 'origin/main'], check=True)
+          if gate.clock(request['as_of']).strftime('CFB_MARKET_MONITOR_%Y%m%dT%H%M%SZ') != request['cycle']:
+              raise ValueError('cycle must match as-of clock')
+          now = datetime.now(timezone.utc)
+          if not 0 <= (now - gate.clock(request['recovered_by'])).total_seconds() <= 900:
+              raise ValueError('actual Actions build outside 15-minute capture window')
+          if not gate.clock(request['recovered_by']) <= gate.clock(request['as_of']) <= now:
+              raise ValueError('invalid source and proposal clock order')
+          def at_parent(path):
+              return subprocess.check_output(['git', 'show', f'{parent}:{path}']).decode()
+          def input_text(name, key):
+              value = (root / name).read_text()
+              if gate.blob(value) != request[key]:
+                  raise ValueError(f'{name} blob does not match request')
+              return value
+          for path in Path('scripts').glob('cfb_*.py'):
+              if path.read_text() != at_parent(path.as_posix()):
+                  raise ValueError(f'producer code drift: {path}')
+          capture = input_text('capture.md', 'capture_blob')
+          rows = json.loads(input_text('rows.json', 'rows_blob'), object_pairs_hook=gate.unique)
+          lineage = at_parent('evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json')
+          market, decision = week.compile(
+              at_parent('evidence/operational/CFB_MARKET_MONITOR_STATE.md'),
+              at_parent('evidence/operational/CFB_DECISION_WAIT_LEDGER.md'),
+              capture, lineage, request['cycle'], request['as_of'], request['recovered_by'], rows,
+          )
+          args = (market, decision,
+                  at_parent('evidence/operational/CFB_EXECUTION_LEDGER.md'),
+                  at_parent('evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md'),
+                  lineage, request['as_of'], 'WEEK11')
+          draft = gate.render(*args)
+          audit = gate.audit(draft, *args)
+          out = root / 'result'
+          out.mkdir(exist_ok=False)
+          (out / 'draft.md').write_text(draft)
+          receipt = dict(status='PASS_FRESH_SHADOW_BUILD', parent=parent, cycle=request['cycle'],
+                         request_commit=os.environ['GITHUB_SHA'], workflow_run_id=os.environ['GITHUB_RUN_ID'],
+                         request_blob=gate.blob(request_text), capture_blob=request['capture_blob'],
+                         rows_blob=request['rows_blob'], draft_blob=gate.blob(draft),
+                         draft_sha256=hashlib.sha256(draft.encode()).hexdigest(), games=audit['games'],
+                         market_blob=gate.blob(market), decision_blob=gate.blob(decision),
+                         built_at=datetime.now(timezone.utc).isoformat())
+          (out / 'receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
+          PY
+      - name: Return result to QA branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add handoff/monitor-actions-live-shadow/result/
+          git -c user.name=github-actions -c user.email=41898282+github-actions[bot]@users.noreply.github.com commit -m "Return fresh Market Monitor shadow draft"
+          git push origin HEAD:refs/heads/qa/monitor-actions-live-shadow-20261112
