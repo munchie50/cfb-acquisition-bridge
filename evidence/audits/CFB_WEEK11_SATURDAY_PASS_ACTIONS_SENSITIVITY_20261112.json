@@ -1,0 +1,3308 @@
+{
+  "schema": "CFB_WEEK11_SATURDAY_PASS_ACTIONS_SENSITIVITY_V1",
+  "input_head": "1a1d49bfeb78e57808149daba061feb14dacd820",
+  "capture_utc": "2026-11-12T19:59:54.673957Z",
+  "collector": {
+    "run": "43295802238",
+    "artifact": "13977489871"
+  },
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK11_SATURDAY_PASS_PREGAME_BASELINE_20261112.json",
+      "blob": "f1b8eda1cd69f3aa4e3e5cf47c94f271ec1c1a24"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK11_CBS_FBS_CAPTURE_20261112T195954Z_ACTIONS.md",
+      "blob": "ae726b5f20247e27d4f93e8ac4831f4262f7aeae"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK11_HOT_SHEET_2026-11-12_1401CT.md",
+      "blob": "55e6a8da230de0ac8d3b62a006c145b6fef9f1b6"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK11_MONITOR_COLLECTION_LIVE_READBACK_20261112.md",
+      "blob": "e432e38b7c3d5f7b55cd8d4eb00fefc078dd78c2"
+    }
+  ],
+  "rows": [
+    {
+      "id": "401856859",
+      "pair": [
+        "Cincinnati",
+        "Iowa State"
+      ],
+      "decision": "PASS",
+      "table_line": 17,
+      "quotes": {
+        "away_spread": {
+          "line": 3,
+          "price": -111,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": 124,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 59.5,
+          "price": -105,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -2.5,
+          "price": -125,
+          "book_icon": "35"
+        },
+        "home_moneyline": {
+          "price": -142,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 59.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "under"
+        }
+      },
+      "changed_cells": [
+        "away_moneyline"
+      ],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -2.5,
+          "price": -125,
+          "collector_quote": {
+            "line": -2.5,
+            "price": -125,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -146,
+          "collector_quote": {
+            "price": -142,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 60.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 59.5,
+            "price": -110,
+            "book_icon": "35",
+            "side": "under"
+          },
+          "match": "CHANGED_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401858296",
+      "pair": [
+        "Duke",
+        "Miami"
+      ],
+      "decision": "PASS",
+      "table_line": 20,
+      "quotes": {
+        "away_spread": {
+          "line": 13.5,
+          "price": -108,
+          "book_icon": "30"
+        },
+        "away_moneyline": {
+          "price": 425,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 54.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -13.5,
+          "price": -110,
+          "book_icon": "35"
+        },
+        "home_moneyline": {
+          "price": -549,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 54.5,
+          "price": -108,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -13,
+          "price": -111,
+          "collector_quote": {
+            "line": -13.5,
+            "price": -110,
+            "book_icon": "35"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -521,
+          "collector_quote": {
+            "price": -549,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 54.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 54.5,
+            "price": -108,
+            "book_icon": "30",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401856886",
+      "pair": [
+        "Auburn",
+        "Mississippi State"
+      ],
+      "decision": "PASS",
+      "table_line": 26,
+      "quotes": {
+        "away_spread": {
+          "line": -2.5,
+          "price": -118,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": -142,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 50.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 2.5,
+          "price": 100,
+          "book_icon": "35"
+        },
+        "home_moneyline": {
+          "price": 120,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 50.5,
+          "price": -105,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [
+        "away_spread",
+        "away_moneyline",
+        "away_total",
+        "home_moneyline",
+        "home_total"
+      ],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 2.5,
+          "price": 100,
+          "collector_quote": {
+            "line": 2.5,
+            "price": 100,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 120,
+          "collector_quote": {
+            "price": 120,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 49.5,
+          "price": -120,
+          "collector_quote": {
+            "line": 50.5,
+            "price": -110,
+            "book_icon": "35",
+            "side": "over"
+          },
+          "match": "CHANGED_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401858300",
+      "pair": [
+        "Syracuse",
+        "NC State"
+      ],
+      "decision": "PASS",
+      "table_line": 32,
+      "quotes": {
+        "away_spread": {
+          "line": -2.5,
+          "price": -120,
+          "book_icon": "35"
+        },
+        "away_moneyline": {
+          "price": -142,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 53.5,
+          "price": -108,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 3,
+          "price": -115,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": 125,
+          "book_icon": "34"
+        },
+        "home_total": {
+          "line": 53.5,
+          "price": -108,
+          "book_icon": "34",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 3,
+          "price": -118,
+          "collector_quote": {
+            "line": 3,
+            "price": -115,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 120,
+          "collector_quote": {
+            "price": 125,
+            "book_icon": "34"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 54.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 53.5,
+            "price": -108,
+            "book_icon": "34",
+            "side": "under"
+          },
+          "match": "CHANGED_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401858520",
+      "pair": [
+        "Wisconsin",
+        "Maryland"
+      ],
+      "decision": "PASS",
+      "table_line": 35,
+      "quotes": {
+        "away_spread": {
+          "line": -7.5,
+          "price": -120,
+          "book_icon": "35"
+        },
+        "away_moneyline": {
+          "price": -319,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 42.5,
+          "price": -108,
+          "book_icon": "34",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 9,
+          "price": -111,
+          "book_icon": "34"
+        },
+        "home_moneyline": {
+          "price": 275,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 42.5,
+          "price": -110,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 8.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 9,
+            "price": -111,
+            "book_icon": "34"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 260,
+          "collector_quote": {
+            "price": 275,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 43.5,
+          "price": -105,
+          "collector_quote": {
+            "line": 42.5,
+            "price": -108,
+            "book_icon": "34",
+            "side": "over"
+          },
+          "match": "CHANGED_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401861967",
+      "pair": [
+        "James Madison",
+        "UConn"
+      ],
+      "decision": "PASS",
+      "table_line": 38,
+      "quotes": {
+        "away_spread": {
+          "line": -3.5,
+          "price": -120,
+          "book_icon": "35"
+        },
+        "away_moneyline": {
+          "price": -182,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 57.5,
+          "price": -114,
+          "book_icon": "34",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 4,
+          "price": -108,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": 160,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 57.5,
+          "price": -105,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": -4,
+          "price": -110,
+          "collector_quote": {
+            "line": -3.5,
+            "price": -120,
+            "book_icon": "35"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -182,
+          "collector_quote": {
+            "price": -182,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 57.5,
+          "price": -105,
+          "collector_quote": {
+            "line": 57.5,
+            "price": -105,
+            "book_icon": "30",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401862825",
+      "pair": [
+        "East Carolina",
+        "Charlotte"
+      ],
+      "decision": "PASS",
+      "table_line": 53,
+      "quotes": {
+        "away_spread": {
+          "line": -11.5,
+          "price": -112,
+          "book_icon": "30"
+        },
+        "away_moneyline": {
+          "price": -455,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 45.5,
+          "price": -105,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 12,
+          "price": -108,
+          "book_icon": "34"
+        },
+        "home_moneyline": {
+          "price": 375,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 45.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 12,
+          "price": -108,
+          "collector_quote": {
+            "line": 12,
+            "price": -108,
+            "book_icon": "34"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 360,
+          "collector_quote": {
+            "price": 375,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 44.5,
+          "price": -118,
+          "collector_quote": {
+            "line": 45.5,
+            "price": -105,
+            "book_icon": "30",
+            "side": "over"
+          },
+          "match": "CHANGED_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401870769",
+      "pair": [
+        "Kennesaw State",
+        "Sam Houston"
+      ],
+      "decision": "PASS",
+      "table_line": 59,
+      "quotes": {
+        "away_spread": {
+          "line": -7,
+          "price": -115,
+          "book_icon": "30"
+        },
+        "away_moneyline": {
+          "price": -286,
+          "book_icon": "34"
+        },
+        "away_total": {
+          "line": 46.5,
+          "price": -108,
+          "book_icon": "34",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 7.5,
+          "price": -110,
+          "book_icon": "35"
+        },
+        "home_moneyline": {
+          "price": 240,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 46.5,
+          "price": -110,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 7.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 7.5,
+            "price": -110,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 240,
+          "collector_quote": {
+            "price": 240,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 46.5,
+          "price": -108,
+          "collector_quote": {
+            "line": 46.5,
+            "price": -108,
+            "book_icon": "34",
+            "side": "over"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401856862",
+      "pair": [
+        "Kansas State",
+        "TCU"
+      ],
+      "decision": "PASS",
+      "table_line": 62,
+      "quotes": {
+        "away_spread": {
+          "line": 10.5,
+          "price": -110,
+          "book_icon": "35"
+        },
+        "away_moneyline": {
+          "price": 320,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 44.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -10.5,
+          "price": -108,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": -395,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 44.5,
+          "price": -105,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 10.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 10.5,
+            "price": -110,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": 320,
+          "collector_quote": {
+            "price": 320,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 45.5,
+          "price": -105,
+          "collector_quote": {
+            "line": 44.5,
+            "price": -110,
+            "book_icon": "35",
+            "side": "over"
+          },
+          "match": "CHANGED_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401862828",
+      "pair": [
+        "Tulane",
+        "Rice"
+      ],
+      "decision": "PASS",
+      "table_line": 65,
+      "quotes": {
+        "away_spread": {
+          "line": 2.5,
+          "price": -108,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": 115,
+          "book_icon": "34"
+        },
+        "away_total": {
+          "line": 48.5,
+          "price": -105,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -2.5,
+          "price": -110,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": -132,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 48.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "under"
+        }
+      },
+      "changed_cells": [
+        "away_total"
+      ],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -1.5,
+          "price": -110,
+          "collector_quote": {
+            "line": -2.5,
+            "price": -110,
+            "book_icon": "30"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -118,
+          "collector_quote": {
+            "price": -132,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 48.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 48.5,
+            "price": -110,
+            "book_icon": "35",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401871060",
+      "pair": [
+        "Florida International",
+        "Delaware"
+      ],
+      "decision": "PASS",
+      "table_line": 68,
+      "quotes": {
+        "away_spread": {
+          "line": 5.5,
+          "price": -110,
+          "book_icon": "35"
+        },
+        "away_moneyline": {
+          "price": 172,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 53.5,
+          "price": -114,
+          "book_icon": "34",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -4.5,
+          "price": -110,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": -204,
+          "book_icon": "34"
+        },
+        "home_total": {
+          "line": 54.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -5,
+          "price": -111,
+          "collector_quote": {
+            "line": -4.5,
+            "price": -110,
+            "book_icon": "30"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -210,
+          "collector_quote": {
+            "price": -204,
+            "book_icon": "34"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 54.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 54.5,
+            "price": -110,
+            "book_icon": "35",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401870796",
+      "pair": [
+        "New Mexico State",
+        "Missouri State"
+      ],
+      "decision": "PASS",
+      "table_line": 71,
+      "quotes": {
+        "away_spread": {
+          "line": 1.5,
+          "price": -110,
+          "book_icon": "35"
+        },
+        "away_moneyline": {
+          "price": 100,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 48.5,
+          "price": -114,
+          "book_icon": "34",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -1.5,
+          "price": -108,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": -118,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 49.5,
+          "price": -115,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 1.5,
+          "price": -105,
+          "collector_quote": {
+            "line": 1.5,
+            "price": -110,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": 105,
+          "collector_quote": {
+            "price": 100,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 48.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 48.5,
+            "price": -114,
+            "book_icon": "34",
+            "side": "over"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401858294",
+      "pair": [
+        "Boston College",
+        "Notre Dame"
+      ],
+      "decision": "PASS",
+      "table_line": 77,
+      "quotes": {
+        "away_spread": {
+          "line": 29.5,
+          "price": -110,
+          "book_icon": "35"
+        },
+        "away_moneyline": {
+          "price": 2200,
+          "book_icon": "34"
+        },
+        "away_total": {
+          "line": 52.5,
+          "price": -108,
+          "book_icon": "34",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -29,
+          "price": -111,
+          "book_icon": "34"
+        },
+        "home_moneyline": {
+          "price": -5000,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 52.5,
+          "price": -108,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 29.5,
+          "price": -108,
+          "collector_quote": {
+            "line": 29.5,
+            "price": -110,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -5000,
+          "collector_quote": {
+            "price": -5000,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 52.5,
+          "price": -112,
+          "collector_quote": {
+            "line": 52.5,
+            "price": -108,
+            "book_icon": "30",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401862826",
+      "pair": [
+        "Florida Atlantic",
+        "Tulsa"
+      ],
+      "decision": "PASS",
+      "table_line": 80,
+      "quotes": {
+        "away_spread": {
+          "line": 6,
+          "price": -108,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": 184,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 74.5,
+          "price": -110,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -5.5,
+          "price": -112,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": -217,
+          "book_icon": "34"
+        },
+        "home_total": {
+          "line": 74.5,
+          "price": -108,
+          "book_icon": "34",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -5.5,
+          "price": -108,
+          "collector_quote": {
+            "line": -5.5,
+            "price": -112,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -205,
+          "collector_quote": {
+            "price": -217,
+            "book_icon": "34"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 74.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 74.5,
+            "price": -108,
+            "book_icon": "34",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401858523",
+      "pair": [
+        "Michigan",
+        "Oregon"
+      ],
+      "decision": "PASS",
+      "table_line": 89,
+      "quotes": {
+        "away_spread": {
+          "line": 11,
+          "price": -111,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": 365,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 38.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -10.5,
+          "price": -110,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": -426,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 38.5,
+          "price": -108,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [
+        "away_spread",
+        "away_moneyline"
+      ],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 11.5,
+          "price": -112,
+          "collector_quote": {
+            "line": 11,
+            "price": -111,
+            "book_icon": "34"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -435,
+          "collector_quote": {
+            "price": -426,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 38.5,
+          "price": -105,
+          "collector_quote": {
+            "line": 38.5,
+            "price": -110,
+            "book_icon": "35",
+            "side": "over"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401864536",
+      "pair": [
+        "Nevada",
+        "Northern Illinois"
+      ],
+      "decision": "PASS",
+      "table_line": 92,
+      "quotes": {
+        "away_spread": {
+          "line": -6.5,
+          "price": -115,
+          "book_icon": "35"
+        },
+        "away_moneyline": {
+          "price": -245,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 47.5,
+          "price": -108,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 7,
+          "price": -118,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": 220,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 47.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": -7,
+          "price": -110,
+          "collector_quote": {
+            "line": -6.5,
+            "price": -115,
+            "book_icon": "35"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -270,
+          "collector_quote": {
+            "price": -245,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 47.5,
+          "price": -108,
+          "collector_quote": {
+            "line": 47.5,
+            "price": -108,
+            "book_icon": "30",
+            "side": "over"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401856857",
+      "pair": [
+        "Arizona State",
+        "UCF"
+      ],
+      "decision": "PASS",
+      "table_line": 98,
+      "quotes": {
+        "away_spread": {
+          "line": 3,
+          "price": -105,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": 136,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 48.5,
+          "price": -111,
+          "book_icon": "34",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -3,
+          "price": -112,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": -154,
+          "book_icon": "34"
+        },
+        "home_total": {
+          "line": 48.5,
+          "price": -108,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -3.5,
+          "price": -102,
+          "collector_quote": {
+            "line": -3,
+            "price": -112,
+            "book_icon": "30"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -164,
+          "collector_quote": {
+            "price": -154,
+            "book_icon": "34"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 48.5,
+          "price": -115,
+          "collector_quote": {
+            "line": 48.5,
+            "price": -111,
+            "book_icon": "34",
+            "side": "over"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401869952",
+      "pair": [
+        "Georgia Southern",
+        "Georgia State"
+      ],
+      "decision": "PASS",
+      "table_line": 107,
+      "quotes": {
+        "away_spread": {
+          "line": -6,
+          "price": -111,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": -225,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 56.5,
+          "price": -110,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 6.5,
+          "price": -110,
+          "book_icon": "35"
+        },
+        "home_moneyline": {
+          "price": 195,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 56.5,
+          "price": -110,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 5.5,
+          "price": -108,
+          "collector_quote": {
+            "line": 6.5,
+            "price": -110,
+            "book_icon": "35"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 170,
+          "collector_quote": {
+            "price": 195,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 56.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 56.5,
+            "price": -110,
+            "book_icon": "30",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401860916",
+      "pair": [
+        "Fresno State",
+        "Texas State"
+      ],
+      "decision": "PASS",
+      "table_line": 113,
+      "quotes": {
+        "away_spread": {
+          "line": 9.5,
+          "price": -108,
+          "book_icon": "30"
+        },
+        "away_moneyline": {
+          "price": 295,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 59.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -8.5,
+          "price": -115,
+          "book_icon": "35"
+        },
+        "home_moneyline": {
+          "price": -345,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 59.5,
+          "price": -108,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 10,
+          "price": -115,
+          "collector_quote": {
+            "line": 9.5,
+            "price": -108,
+            "book_icon": "30"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": 295,
+          "collector_quote": {
+            "price": 295,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 60.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 59.5,
+            "price": -108,
+            "book_icon": "30",
+            "side": "under"
+          },
+          "match": "CHANGED_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401856887",
+      "pair": [
+        "Ole Miss",
+        "Oklahoma"
+      ],
+      "decision": "PASS",
+      "table_line": 116,
+      "quotes": {
+        "away_spread": {
+          "line": 1.5,
+          "price": -122,
+          "book_icon": "30"
+        },
+        "away_moneyline": {
+          "price": -108,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 49.5,
+          "price": -108,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 1.5,
+          "price": -120,
+          "book_icon": "35"
+        },
+        "home_moneyline": {
+          "price": -108,
+          "book_icon": "34"
+        },
+        "home_total": {
+          "line": 49.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 1.5,
+          "price": -118,
+          "collector_quote": {
+            "line": 1.5,
+            "price": -120,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -105,
+          "collector_quote": {
+            "price": -108,
+            "book_icon": "34"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 49.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 49.5,
+            "price": -110,
+            "book_icon": "35",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401858521",
+      "pair": [
+        "Washington",
+        "Michigan State"
+      ],
+      "decision": "PASS",
+      "table_line": 119,
+      "quotes": {
+        "away_spread": {
+          "line": -3.5,
+          "price": -102,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": -156,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 42.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 3.5,
+          "price": -115,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": 142,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 42.5,
+          "price": -105,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": -3,
+          "price": -120,
+          "collector_quote": {
+            "line": -3.5,
+            "price": -102,
+            "book_icon": "34"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -166,
+          "collector_quote": {
+            "price": -156,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 43.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 42.5,
+            "price": -105,
+            "book_icon": "30",
+            "side": "under"
+          },
+          "match": "CHANGED_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401871099",
+      "pair": [
+        "Southern Miss",
+        "Louisiana Tech"
+      ],
+      "decision": "PASS",
+      "table_line": 122,
+      "quotes": {
+        "away_spread": {
+          "line": 17.5,
+          "price": -112,
+          "book_icon": "30"
+        },
+        "away_moneyline": {
+          "price": 650,
+          "book_icon": "34"
+        },
+        "away_total": {
+          "line": 56.5,
+          "price": -108,
+          "book_icon": "34",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -16.5,
+          "price": -115,
+          "book_icon": "35"
+        },
+        "home_moneyline": {
+          "price": -877,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 56.5,
+          "price": -110,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 17.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 17.5,
+            "price": -112,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -909,
+          "collector_quote": {
+            "price": -877,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 56.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 56.5,
+            "price": -110,
+            "book_icon": "30",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401856861",
+      "pair": [
+        "Kansas",
+        "West Virginia"
+      ],
+      "decision": "PASS",
+      "table_line": 125,
+      "quotes": {
+        "away_spread": {
+          "line": 3,
+          "price": -111,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": 120,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 67.5,
+          "price": -111,
+          "book_icon": "34",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -3,
+          "price": -105,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": -142,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 67.5,
+          "price": -108,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -3,
+          "price": -102,
+          "collector_quote": {
+            "line": -3,
+            "price": -105,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -142,
+          "collector_quote": {
+            "price": -142,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 67.5,
+          "price": -108,
+          "collector_quote": {
+            "line": 67.5,
+            "price": -108,
+            "book_icon": "30",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401869928",
+      "pair": [
+        "App State",
+        "Marshall"
+      ],
+      "decision": "PASS",
+      "table_line": 128,
+      "quotes": {
+        "away_spread": {
+          "line": -1,
+          "price": -111,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": -111,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 53.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 1.5,
+          "price": -108,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": 100,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 54.5,
+          "price": -115,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": -1.5,
+          "price": -110,
+          "collector_quote": {
+            "line": -1,
+            "price": -111,
+            "book_icon": "34"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -120,
+          "collector_quote": {
+            "price": -111,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 53.5,
+          "price": -105,
+          "collector_quote": {
+            "line": 54.5,
+            "price": -115,
+            "book_icon": "30",
+            "side": "under"
+          },
+          "match": "CHANGED_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401856884",
+      "pair": [
+        "Florida",
+        "Kentucky"
+      ],
+      "decision": "PASS",
+      "table_line": 134,
+      "quotes": {
+        "away_spread": {
+          "line": 3.5,
+          "price": -115,
+          "book_icon": "30"
+        },
+        "away_moneyline": {
+          "price": 145,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 52.5,
+          "price": -110,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -3.5,
+          "price": -105,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": -160,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 52.5,
+          "price": -108,
+          "book_icon": "34",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 3.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 3.5,
+            "price": -115,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": 145,
+          "collector_quote": {
+            "price": 145,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 52.5,
+          "price": -105,
+          "collector_quote": {
+            "line": 52.5,
+            "price": -110,
+            "book_icon": "30",
+            "side": "over"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401858298",
+      "pair": [
+        "Louisville",
+        "North Carolina"
+      ],
+      "decision": "PASS",
+      "table_line": 137,
+      "quotes": {
+        "away_spread": {
+          "line": -3.5,
+          "price": -108,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": -166,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 59.5,
+          "price": -108,
+          "book_icon": "34",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 3.5,
+          "price": -110,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": 150,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 59.5,
+          "price": -110,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 3.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 3.5,
+            "price": -110,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 142,
+          "collector_quote": {
+            "price": 150,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 59.5,
+          "price": -108,
+          "collector_quote": {
+            "line": 59.5,
+            "price": -110,
+            "book_icon": "30",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401871100",
+      "pair": [
+        "Troy",
+        "South Alabama"
+      ],
+      "decision": "PASS",
+      "table_line": 140,
+      "quotes": {
+        "away_spread": {
+          "line": 3,
+          "price": -108,
+          "book_icon": "30"
+        },
+        "away_moneyline": {
+          "price": 130,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 55.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -2.5,
+          "price": -120,
+          "book_icon": "35"
+        },
+        "home_moneyline": {
+          "price": -146,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 55.5,
+          "price": -108,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 3.5,
+          "price": -122,
+          "collector_quote": {
+            "line": 3,
+            "price": -108,
+            "book_icon": "30"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -152,
+          "collector_quote": {
+            "price": -146,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 56.5,
+          "price": -111,
+          "collector_quote": {
+            "line": 55.5,
+            "price": -108,
+            "book_icon": "30",
+            "side": "under"
+          },
+          "match": "CHANGED_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401864538",
+      "pair": [
+        "San José State",
+        "Air Force"
+      ],
+      "decision": "PASS",
+      "table_line": 143,
+      "quotes": {
+        "away_spread": {
+          "line": 12.5,
+          "price": -110,
+          "book_icon": "35"
+        },
+        "away_moneyline": {
+          "price": 390,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 47.5,
+          "price": -105,
+          "book_icon": "35",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -12,
+          "price": -111,
+          "book_icon": "34"
+        },
+        "home_moneyline": {
+          "price": -469,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 47.5,
+          "price": -111,
+          "book_icon": "34",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -11.5,
+          "price": -110,
+          "collector_quote": {
+            "line": -12,
+            "price": -111,
+            "book_icon": "34"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -469,
+          "collector_quote": {
+            "price": -469,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 47.5,
+          "price": -108,
+          "collector_quote": {
+            "line": 47.5,
+            "price": -105,
+            "book_icon": "35",
+            "side": "over"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401858524",
+      "pair": [
+        "Minnesota",
+        "Penn State"
+      ],
+      "decision": "PASS",
+      "table_line": 146,
+      "quotes": {
+        "away_spread": {
+          "line": 9.5,
+          "price": -108,
+          "book_icon": "30"
+        },
+        "away_moneyline": {
+          "price": 290,
+          "book_icon": "34"
+        },
+        "away_total": {
+          "line": 41.5,
+          "price": -112,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -9.5,
+          "price": -110,
+          "book_icon": "35"
+        },
+        "home_moneyline": {
+          "price": -355,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 42.5,
+          "price": -111,
+          "book_icon": "34",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -9.5,
+          "price": -108,
+          "collector_quote": {
+            "line": -9.5,
+            "price": -110,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -340,
+          "collector_quote": {
+            "price": -355,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 41.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 41.5,
+            "price": -112,
+            "book_icon": "30",
+            "side": "over"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401856864",
+      "pair": [
+        "Utah",
+        "Arizona"
+      ],
+      "decision": "PASS",
+      "table_line": 149,
+      "quotes": {
+        "away_spread": {
+          "line": -2.5,
+          "price": -110,
+          "book_icon": "35"
+        },
+        "away_moneyline": {
+          "price": -133,
+          "book_icon": "34"
+        },
+        "away_total": {
+          "line": 54.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 2.5,
+          "price": -105,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": 114,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 54.5,
+          "price": -105,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": -2.5,
+          "price": -115,
+          "collector_quote": {
+            "line": -2.5,
+            "price": -110,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -141,
+          "collector_quote": {
+            "price": -133,
+            "book_icon": "34"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 54.5,
+          "price": -105,
+          "collector_quote": {
+            "line": 54.5,
+            "price": -105,
+            "book_icon": "30",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401856885",
+      "pair": [
+        "Texas",
+        "LSU"
+      ],
+      "decision": "PASS",
+      "table_line": 152,
+      "quotes": {
+        "away_spread": {
+          "line": 4,
+          "price": -108,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": 154,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 46.5,
+          "price": -105,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -4,
+          "price": -110,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": -182,
+          "book_icon": "34"
+        },
+        "home_total": {
+          "line": 46.5,
+          "price": -111,
+          "book_icon": "34",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 4,
+          "price": -105,
+          "collector_quote": {
+            "line": 4,
+            "price": -108,
+            "book_icon": "34"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -180,
+          "collector_quote": {
+            "price": -182,
+            "book_icon": "34"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 45.5,
+          "price": -111,
+          "collector_quote": {
+            "line": 46.5,
+            "price": -105,
+            "book_icon": "30",
+            "side": "over"
+          },
+          "match": "CHANGED_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401858519",
+      "pair": [
+        "Purdue",
+        "Iowa"
+      ],
+      "decision": "PASS",
+      "table_line": 155,
+      "quotes": {
+        "away_spread": {
+          "line": 17.5,
+          "price": -120,
+          "book_icon": "35"
+        },
+        "away_moneyline": {
+          "price": 720,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 47.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -17,
+          "price": -114,
+          "book_icon": "34"
+        },
+        "home_moneyline": {
+          "price": -909,
+          "book_icon": "34"
+        },
+        "home_total": {
+          "line": 47.5,
+          "price": -108,
+          "book_icon": "34",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -17,
+          "price": -114,
+          "collector_quote": {
+            "line": -17,
+            "price": -114,
+            "book_icon": "34"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -909,
+          "collector_quote": {
+            "price": -909,
+            "book_icon": "34"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 47.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 47.5,
+            "price": -110,
+            "book_icon": "35",
+            "side": "over"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401858299",
+      "pair": [
+        "Stanford",
+        "Virginia Tech"
+      ],
+      "decision": "PASS",
+      "table_line": 158,
+      "quotes": {
+        "away_spread": {
+          "line": 15.5,
+          "price": -110,
+          "book_icon": "35"
+        },
+        "away_moneyline": {
+          "price": 525,
+          "book_icon": "34"
+        },
+        "away_total": {
+          "line": 58.5,
+          "price": -105,
+          "book_icon": "34",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -15.5,
+          "price": -108,
+          "book_icon": "34"
+        },
+        "home_moneyline": {
+          "price": -709,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 58.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -15,
+          "price": -111,
+          "collector_quote": {
+            "line": -15.5,
+            "price": -108,
+            "book_icon": "34"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -714,
+          "collector_quote": {
+            "price": -709,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 58.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 58.5,
+            "price": -110,
+            "book_icon": "35",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401864539",
+      "pair": [
+        "UNLV",
+        "New Mexico"
+      ],
+      "decision": "PASS",
+      "table_line": 161,
+      "quotes": {
+        "away_spread": {
+          "line": 14.5,
+          "price": -110,
+          "book_icon": "30"
+        },
+        "away_moneyline": {
+          "price": 500,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 46.5,
+          "price": -110,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -14.5,
+          "price": -108,
+          "book_icon": "34"
+        },
+        "home_moneyline": {
+          "price": -599,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 46.5,
+          "price": -105,
+          "book_icon": "35",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -14,
+          "price": -110,
+          "collector_quote": {
+            "line": -14.5,
+            "price": -108,
+            "book_icon": "34"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -588,
+          "collector_quote": {
+            "price": -599,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 46.5,
+          "price": -105,
+          "collector_quote": {
+            "line": 46.5,
+            "price": -105,
+            "book_icon": "35",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401856882",
+      "pair": [
+        "South Carolina",
+        "Arkansas"
+      ],
+      "decision": "PASS",
+      "table_line": 164,
+      "quotes": {
+        "away_spread": {
+          "line": -7,
+          "price": -108,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": -265,
+          "book_icon": "35"
+        },
+        "away_total": {
+          "line": 51.5,
+          "price": -105,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 7.5,
+          "price": -120,
+          "book_icon": "35"
+        },
+        "home_moneyline": {
+          "price": 235,
+          "book_icon": "30"
+        },
+        "home_total": {
+          "line": 51.5,
+          "price": -115,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": -7.5,
+          "price": -105,
+          "collector_quote": {
+            "line": -7,
+            "price": -108,
+            "book_icon": "34"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -294,
+          "collector_quote": {
+            "price": -265,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 51.5,
+          "price": -108,
+          "collector_quote": {
+            "line": 51.5,
+            "price": -115,
+            "book_icon": "30",
+            "side": "under"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401856863",
+      "pair": [
+        "Texas Tech",
+        "Oklahoma State"
+      ],
+      "decision": "PASS",
+      "table_line": 170,
+      "quotes": {
+        "away_spread": {
+          "line": 3.5,
+          "price": -114,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": 142,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 72.5,
+          "price": -115,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -3.5,
+          "price": -105,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": -156,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 73.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": -3.5,
+          "price": -105,
+          "collector_quote": {
+            "line": -3.5,
+            "price": -105,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -167,
+          "collector_quote": {
+            "price": -156,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 72.5,
+          "price": -105,
+          "collector_quote": {
+            "line": 73.5,
+            "price": -110,
+            "book_icon": "35",
+            "side": "under"
+          },
+          "match": "CHANGED_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401860915",
+      "pair": [
+        "Utah State",
+        "San Diego State"
+      ],
+      "decision": "PASS",
+      "table_line": 173,
+      "quotes": {
+        "away_spread": {
+          "line": -2.5,
+          "price": -118,
+          "book_icon": "30"
+        },
+        "away_moneyline": {
+          "price": -142,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 42.5,
+          "price": -108,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 3,
+          "price": -114,
+          "book_icon": "34"
+        },
+        "home_moneyline": {
+          "price": 122,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 42.5,
+          "price": -108,
+          "book_icon": "34",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 2.5,
+          "price": 100,
+          "collector_quote": {
+            "line": 3,
+            "price": -114,
+            "book_icon": "34"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 122,
+          "collector_quote": {
+            "price": 122,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 42.5,
+          "price": -108,
+          "collector_quote": {
+            "line": 42.5,
+            "price": -108,
+            "book_icon": "30",
+            "side": "over"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401864540",
+      "pair": [
+        "Wyoming",
+        "UTEP"
+      ],
+      "decision": "PASS",
+      "table_line": 176,
+      "quotes": {
+        "away_spread": {
+          "line": -7.5,
+          "price": -115,
+          "book_icon": "35"
+        },
+        "away_moneyline": {
+          "price": -323,
+          "book_icon": "34"
+        },
+        "away_total": {
+          "line": 39.5,
+          "price": -110,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 8.5,
+          "price": -115,
+          "book_icon": "30"
+        },
+        "home_moneyline": {
+          "price": 280,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 39.5,
+          "price": -105,
+          "book_icon": "35",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 7.5,
+          "price": -108,
+          "collector_quote": {
+            "line": 8.5,
+            "price": -115,
+            "book_icon": "30"
+          },
+          "match": "CHANGED_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -305,
+          "collector_quote": {
+            "price": -323,
+            "book_icon": "34"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 39.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 39.5,
+            "price": -110,
+            "book_icon": "30",
+            "side": "over"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401860917",
+      "pair": [
+        "Colorado State",
+        "Washington State"
+      ],
+      "decision": "PASS",
+      "table_line": 179,
+      "quotes": {
+        "away_spread": {
+          "line": 9.5,
+          "price": -110,
+          "book_icon": "30"
+        },
+        "away_moneyline": {
+          "price": 285,
+          "book_icon": "30"
+        },
+        "away_total": {
+          "line": 66.5,
+          "price": -110,
+          "book_icon": "35",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": -8.5,
+          "price": -112,
+          "book_icon": "35"
+        },
+        "home_moneyline": {
+          "price": -345,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 66.5,
+          "price": -108,
+          "book_icon": "30",
+          "side": "under"
+        }
+      },
+      "changed_cells": [
+        "away_spread",
+        "away_moneyline",
+        "away_total",
+        "home_spread",
+        "home_moneyline",
+        "home_total"
+      ],
+      "restored_cells": [
+        "away_spread",
+        "away_moneyline",
+        "away_total",
+        "home_spread",
+        "home_moneyline",
+        "home_total"
+      ],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": 9.5,
+          "price": -110,
+          "collector_quote": {
+            "line": 9.5,
+            "price": -110,
+            "book_icon": "30"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": -334,
+          "collector_quote": {
+            "price": -345,
+            "book_icon": "35"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "under",
+          "line": 67.5,
+          "price": -108,
+          "collector_quote": {
+            "line": 66.5,
+            "price": -108,
+            "book_icon": "30",
+            "side": "under"
+          },
+          "match": "CHANGED_LINE"
+        }
+      ]
+    },
+    {
+      "id": "401864537",
+      "pair": [
+        "North Dakota State",
+        "Hawai'i"
+      ],
+      "decision": "PASS",
+      "table_line": 182,
+      "quotes": {
+        "away_spread": {
+          "line": -6.5,
+          "price": -111,
+          "book_icon": "34"
+        },
+        "away_moneyline": {
+          "price": -244,
+          "book_icon": "34"
+        },
+        "away_total": {
+          "line": 38.5,
+          "price": -105,
+          "book_icon": "30",
+          "side": "over"
+        },
+        "home_spread": {
+          "line": 6.5,
+          "price": -105,
+          "book_icon": "35"
+        },
+        "home_moneyline": {
+          "price": 205,
+          "book_icon": "35"
+        },
+        "home_total": {
+          "line": 38.5,
+          "price": -108,
+          "book_icon": "34",
+          "side": "under"
+        }
+      },
+      "changed_cells": [],
+      "restored_cells": [],
+      "pairs": [
+        {
+          "market": "SPREAD",
+          "selection": "away",
+          "line": -6.5,
+          "price": -108,
+          "collector_quote": {
+            "line": -6.5,
+            "price": -111,
+            "book_icon": "34"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -244,
+          "collector_quote": {
+            "price": -244,
+            "book_icon": "34"
+          },
+          "match": "SAME_LINE"
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 38.5,
+          "price": -105,
+          "collector_quote": {
+            "line": 38.5,
+            "price": -105,
+            "book_icon": "30",
+            "side": "over"
+          },
+          "match": "SAME_LINE"
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "games": 40,
+    "priced_cells": 240,
+    "changed_games": 5,
+    "restored_cells": 6,
+    "pairing": {
+      "SAME_LINE": 88,
+      "CHANGED_LINE": 32,
+      "UNAVAILABLE": 0
+    }
+  },
+  "scope": "Additional pregame comparison for the same 40 directed PASS games and 120 already-frozen opening selections. The original 1:35 p.m. CT comparison remains the primary paired test. Report the 1:59 p.m. CT snapshot separately as sensitivity, with no pooling, substitute prices or outcome-driven selection. All current fields are public mixed-book benchmarks, not venue evidence. The collector produced singles display fields only; neither this capture nor Thursday's Friday card supplies a qualifying Friday combined offer."
+}
