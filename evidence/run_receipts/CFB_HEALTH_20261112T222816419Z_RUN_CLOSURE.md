@@ -1,0 +1,17 @@
+# RUN_CLOSURE
+cycle_id: CFB_HEALTH_20261112T222816419Z
+status: RUN_INCOMPLETE
+coverage: COVERAGE_UNVERIFIED
+terminal_candidate_path: evidence/run_receipts/CFB_HEALTH_20261112T222816419Z_TERMINAL_CANDIDATE.md
+terminal_candidate_blob: f8fda5d6cf7b3ac54536a3cfd13fafe1c31014f9
+terminal_candidate_independent_readback: PASS
+audit_path: evidence/scheduler_qa/CFB_HEALTH_20261112T222816419Z_AUDIT.md
+audit_blob: 7eca20c9d4abe20aaf9b1a44cbc424a2b3103196
+audit_independent_readback: PASS
+first_error: api.github.com DNS NameResolutionError for independent REST tree/blob route
+market_07CT: CLOSED_INCOMPLETE
+market_13CT: STARTUP_UNPROVEN_SCHEDULED
+nov11_evening: STARTED_CLOSURE_UNPROVEN
+coverage_advanced: NO
+no_material_change: YES
+next_action: retain four-task governance; reconcile scheduled receipts and evening closure; prospective producer work only by Monitor
