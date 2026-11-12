@@ -1,0 +1,165 @@
+{
+  "schema": "CFB_WEEK11_STRAIGHT_PRICE_AFTERNOON_COMPARISON_V1",
+  "input_head": "58d7057141b0838b42c65fcb25fbb326d82f0afd",
+  "sources": [
+    {
+      "path": "evidence/operational/CFB_WEEK11_FRIDAY_BETTING_CARD_20261111.md",
+      "blob": "9e46751f3a75e0c356aff34fa9ed339725603d62",
+      "ref": "58d7057141b0838b42c65fcb25fbb326d82f0afd"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK11_HOT_SHEET_2026-11-12_1326CT.md",
+      "blob": "0ecce54ecb683635164e95b404d911c2a269f597",
+      "ref": "50d12f44988b8f21d08ff618fb7011ed1989df12"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK11_CBS_FBS_CAPTURE_20261112T192439Z.md",
+      "blob": "99f5a81ba5a1deab01e14b849e651d9874367dc7",
+      "ref": "8972b793a19a7797413efb2492b8b131fc868fa3"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK11_PRICE_SHADOW_AND_REPLAY_PROGRESS_20261112.json",
+      "blob": "930d3cb9893014769e7f068d1ceaba7d36379c53",
+      "ref": "58d7057141b0838b42c65fcb25fbb326d82f0afd"
+    }
+  ],
+  "afternoon_recovered_by_utc": "2026-11-12T19:24:39Z",
+  "rows": [
+    {
+      "id": "401856888",
+      "team": "Tennessee",
+      "line": -2.5,
+      "limit": -115,
+      "morning_display": -115,
+      "afternoon_display": {
+        "line": -2.5,
+        "price": -114,
+        "book_icon": "34"
+      },
+      "opposing_display": {
+        "line": 2.5,
+        "price": -105,
+        "book_icon": "30"
+      },
+      "exact_opposing_line": true,
+      "shortfall": 0,
+      "venue_confirmed": false
+    },
+    {
+      "id": "401856858",
+      "team": "Baylor",
+      "line": 7.5,
+      "limit": -118,
+      "morning_display": -112,
+      "afternoon_display": {
+        "line": 7.5,
+        "price": -112,
+        "book_icon": "30"
+      },
+      "opposing_display": {
+        "line": -7.5,
+        "price": -105,
+        "book_icon": "34"
+      },
+      "exact_opposing_line": true,
+      "shortfall": 0,
+      "venue_confirmed": false
+    },
+    {
+      "id": "401870752",
+      "team": "Jacksonville State",
+      "line": -7.5,
+      "limit": -105,
+      "morning_display": null,
+      "afternoon_display": {
+        "line": -7.5,
+        "price": 100,
+        "book_icon": "35"
+      },
+      "opposing_display": {
+        "line": 7.5,
+        "price": -112,
+        "book_icon": "30"
+      },
+      "exact_opposing_line": true,
+      "shortfall": 0,
+      "venue_confirmed": false
+    },
+    {
+      "id": "401856883",
+      "team": "Georgia",
+      "line": -15.5,
+      "limit": -110,
+      "morning_display": -110,
+      "afternoon_display": {
+        "line": -15.5,
+        "price": -110,
+        "book_icon": "30"
+      },
+      "opposing_display": {
+        "line": 16,
+        "price": -111,
+        "book_icon": "34"
+      },
+      "exact_opposing_line": false,
+      "shortfall": 0,
+      "venue_confirmed": false
+    },
+    {
+      "id": "401862827",
+      "team": "North Texas",
+      "line": -2.5,
+      "limit": -105,
+      "morning_display": -108,
+      "afternoon_display": {
+        "line": -2.5,
+        "price": -108,
+        "book_icon": "30"
+      },
+      "opposing_display": {
+        "line": 2.5,
+        "price": -110,
+        "book_icon": "35"
+      },
+      "exact_opposing_line": true,
+      "shortfall": 3,
+      "venue_confirmed": false
+    }
+  ],
+  "morning_counts": [
+    {
+      "tolerance": 0,
+      "display_price_pass": 3,
+      "incremental_display_pass": 0
+    },
+    {
+      "tolerance": 1,
+      "display_price_pass": 3,
+      "incremental_display_pass": 0
+    },
+    {
+      "tolerance": 2,
+      "display_price_pass": 3,
+      "incremental_display_pass": 0
+    }
+  ],
+  "afternoon_counts": [
+    {
+      "tolerance": 0,
+      "display_price_pass": 4,
+      "incremental_display_pass": 0
+    },
+    {
+      "tolerance": 1,
+      "display_price_pass": 4,
+      "incremental_display_pass": 0
+    },
+    {
+      "tolerance": 2,
+      "display_price_pass": 4,
+      "incremental_display_pass": 0
+    }
+  ],
+  "confirmed_price_only_rejections": 0,
+  "limits": "Same five saved conditionals, deduplicated by directed game ID. Mixed-book display, venue, remaining material checks and operator offer-update times unverified. Jacksonville State changed from unavailable in the morning current recheck to display available in the afternoon, not from a failed price to a passing price. The morning and afternoon are different sources; compare coverage and recorded displays without asserting same-book line movement. Thursday quotes predate the registered Friday parlay window and lack a combined quote."
+}
