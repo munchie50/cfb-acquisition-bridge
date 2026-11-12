@@ -1,0 +1,320 @@
+{
+  "schema": "CFB_WEEK10_STRAIGHT_PRICE_DEADLINE_RECONCILIATION_V1",
+  "input_head": "4c25aafb24c3afaae4e00bd687a7c66122052d64",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK10_OPENING_AND_REVIEW_REPLAY_20261111.json",
+      "blob": "3ed68ebea809591b0b44af70e1df0a0a5fe8d494",
+      "ref": "4c25aafb24c3afaae4e00bd687a7c66122052d64"
+    },
+    {
+      "path": "evidence/audits/CFB_STRAIGHT_PRICE_SHADOW_WEEK10_FAU_20261112.json",
+      "blob": "980577b397260e016caf25433dc5f3890148ed7a",
+      "ref": "4c25aafb24c3afaae4e00bd687a7c66122052d64"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261106T212829Z_POST_CUTOFF_TERMINAL_CANDIDATE.md",
+      "blob": "9907eda416889e1680d927181ba7141d4d979b89",
+      "ref": "190a908922a8e78bb442f4ee05cac8a80ac53741"
+    },
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_AUTO10-20261105T125657Z_PARTIAL_SOURCE_RECHECK.md",
+      "blob": "90273a1c40acd7994425c89534d5cb58bdac2195",
+      "ref": "9c39c405fb3dc6c21e0014919ab29f7102c679de"
+    },
+    {
+      "path": "evidence/operational/CFB_CBS_WEEK10_TABLE_CAPTURE_20261106T214137Z.md",
+      "blob": "26d7fc6b0c7c86bd68e29553e5288a1c809afd25",
+      "ref": "ff0f2d78e165865750a0ed59eafe9018446fc3a1"
+    },
+    {
+      "path": "evidence/run_receipts/CFBMM-AUTO11-20261106T185750460Z_STAGE_TRACE.md",
+      "blob": "6925176ac58d1b8dc28b8c68dd041449ab075807",
+      "commit": "98a94159368913fcef5f04266565d5846b4cce14"
+    }
+  ],
+  "counts": {
+    "SAME_LINE_NEAR_MISS_THEN_LINE_CHANGE": 1,
+    "SAME_LINE_AND_PRICE_MATCH": 1,
+    "FRIDAY_REFRESH_AFTER_CUTOFF": 14,
+    "POST_REVIEW_PRE_CUTOFF_RECHECK_UNESTABLISHED": 2
+  },
+  "rows": [
+    {
+      "id": "401866455",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -2.5,
+      "review_price": -115,
+      "review_at": "2026-11-04T19:16:08Z",
+      "cutoff": "2026-11-04T23:00:00Z",
+      "review_blob": "14329717deeff1629d7b90f321a27cda4f1753ca",
+      "grade_at_review_line": "L",
+      "group": "POST_REVIEW_PRE_CUTOFF_RECHECK_UNESTABLISHED"
+    },
+    {
+      "id": "401862817",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 7,
+      "review_price": -112,
+      "review_at": "2026-11-04T19:18:19Z",
+      "cutoff": "2026-11-05T19:00:00Z",
+      "review_blob": "1fe244d4fd1a54309caef592f2e295763f3df136",
+      "grade_at_review_line": "W",
+      "group": "SAME_LINE_NEAR_MISS_THEN_LINE_CHANGE"
+    },
+    {
+      "id": "401869964",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 14.5,
+      "review_price": -112,
+      "review_at": "2026-11-05T01:06:20.115696+00:00",
+      "cutoff": "2026-11-05T19:00:00Z",
+      "review_blob": "9625ef5a64219882ac5a47aef4999ead336acda9",
+      "grade_at_review_line": "L",
+      "group": "SAME_LINE_AND_PRICE_MATCH"
+    },
+    {
+      "id": "401858510",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 4.5,
+      "review_price": -108,
+      "review_at": "2026-11-05T01:08:22.161316+00:00",
+      "cutoff": "2026-11-05T19:00:00Z",
+      "review_blob": "cdf4ccc860d4893136d1fffe801b46f750976a0f",
+      "grade_at_review_line": "W",
+      "group": "POST_REVIEW_PRE_CUTOFF_RECHECK_UNESTABLISHED"
+    },
+    {
+      "id": "401856855",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 7.5,
+      "review_price": -112,
+      "review_at": "2026-11-06T03:35:29.926334+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "review_blob": "22ae4afd519e011928c9b9fc92b3c372f57991cd",
+      "grade_at_review_line": "W",
+      "group": "FRIDAY_REFRESH_AFTER_CUTOFF"
+    },
+    {
+      "id": "401856740",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -6,
+      "review_price": -110,
+      "review_at": "2026-11-05T01:38:23.555719+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "review_blob": "3e59d6dc899ab2fa3c760172d42626969edbd3ce",
+      "grade_at_review_line": "L",
+      "group": "FRIDAY_REFRESH_AFTER_CUTOFF"
+    },
+    {
+      "id": "401856849",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -5.5,
+      "review_price": -105,
+      "review_at": "2026-11-05T01:38:23.551739+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "review_blob": "39719168738adabbd416638c3413d9e5a9fb42b9",
+      "grade_at_review_line": "W",
+      "group": "FRIDAY_REFRESH_AFTER_CUTOFF"
+    },
+    {
+      "id": "401856851",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 10.5,
+      "review_price": -108,
+      "review_at": "2026-11-05T01:38:23.555957+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "review_blob": "74bc1140fac964789451078324c799a07ebccd4b",
+      "grade_at_review_line": "W",
+      "group": "FRIDAY_REFRESH_AFTER_CUTOFF"
+    },
+    {
+      "id": "401856852",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -3,
+      "review_price": -118,
+      "review_at": "2026-11-05T01:38:23.559456+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "review_blob": "a5564026a631fbe5001f79895a1977a5a2a5eee7",
+      "grade_at_review_line": "W",
+      "group": "FRIDAY_REFRESH_AFTER_CUTOFF"
+    },
+    {
+      "id": "401856853",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": -10,
+      "review_price": -108,
+      "review_at": "2026-11-05T01:38:23.552996+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "review_blob": "d2448611ec3c5489477de74c9b3ad07cf4a7be25",
+      "grade_at_review_line": "W",
+      "group": "FRIDAY_REFRESH_AFTER_CUTOFF"
+    },
+    {
+      "id": "401858512",
+      "market": "SPREAD",
+      "selection": "home",
+      "line": 5.5,
+      "review_price": -110,
+      "review_at": "2026-11-05T01:38:23.554417+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "review_blob": "fd55c3c471a90d9e22dc0659a2d9929c9b08b812",
+      "grade_at_review_line": "L",
+      "group": "FRIDAY_REFRESH_AFTER_CUTOFF"
+    },
+    {
+      "id": "401862822",
+      "market": "TOTAL",
+      "selection": "over",
+      "line": 49.5,
+      "review_price": -112,
+      "review_at": "2026-11-05T01:38:23.555034+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "review_blob": "4f82649531fe88cd217e4074faed1a19c0daf54b",
+      "grade_at_review_line": "W",
+      "group": "FRIDAY_REFRESH_AFTER_CUTOFF"
+    },
+    {
+      "id": "401869927",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 6,
+      "review_price": -112,
+      "review_at": "2026-11-05T01:38:23.555364+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "review_blob": "d02ef5bad84c4dad6d8fecfa407fd3cc4a83a855",
+      "grade_at_review_line": "W",
+      "group": "FRIDAY_REFRESH_AFTER_CUTOFF"
+    },
+    {
+      "id": "401869968",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 7.5,
+      "review_price": -110,
+      "review_at": "2026-11-05T01:38:23.558937+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "review_blob": "8be01a07b8e5a6690fad00ab0f99ff80f205674f",
+      "grade_at_review_line": "W",
+      "group": "FRIDAY_REFRESH_AFTER_CUTOFF"
+    },
+    {
+      "id": "401871076",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": -1.5,
+      "review_price": -102,
+      "review_at": "2026-11-05T01:38:23.556170+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "review_blob": "05238b006814dd158fc09da70122c91c38708fd3",
+      "grade_at_review_line": "L",
+      "group": "FRIDAY_REFRESH_AFTER_CUTOFF"
+    },
+    {
+      "id": "401871074",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 4.5,
+      "review_price": -108,
+      "review_at": "2026-11-05T01:38:23.556479+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "review_blob": "f99308b96c5bef4f8cd3bca84c4f13ae8e11ec25",
+      "grade_at_review_line": "W",
+      "group": "FRIDAY_REFRESH_AFTER_CUTOFF"
+    },
+    {
+      "id": "401871075",
+      "market": "TOTAL",
+      "selection": "under",
+      "line": 48.5,
+      "review_price": -118,
+      "review_at": "2026-11-05T01:38:23.559188+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "review_blob": "49217a99e228714097ee90b858577416783c7e70",
+      "grade_at_review_line": "L",
+      "group": "FRIDAY_REFRESH_AFTER_CUTOFF"
+    },
+    {
+      "id": "401864535",
+      "market": "SPREAD",
+      "selection": "away",
+      "line": 6,
+      "review_price": -112,
+      "review_at": "2026-11-05T01:38:23.559751+00:00",
+      "cutoff": "2026-11-06T19:00:00Z",
+      "review_blob": "cbb054d12984835eb8232af4ae0237aceb2efc80",
+      "grade_at_review_line": "W",
+      "group": "FRIDAY_REFRESH_AFTER_CUTOFF"
+    }
+  ],
+  "thursday_recheck": {
+    "receipt_persisted_at": "2026-11-05T12:57:58Z",
+    "retrieval_timestamp_supplied": false,
+    "scope": "Pre-cutoff retrieval evidenced by timestamped receipt. Display stage only.",
+    "fau": [
+      {
+        "source": "evidence/operational/CFB_MARKET_MONITOR_20261105T005623Z_OPPORTUNITIES.md",
+        "line": 7,
+        "price": -115,
+        "source_label": "primary benchmark",
+        "observed_at": "2026-11-05T01:05:15Z",
+        "exact_line_shortfall": 3,
+        "passes": {
+          "strict": false,
+          "one_point": false,
+          "two_points": false
+        }
+      },
+      {
+        "source": "evidence/operational/CFB_MARKET_MONITOR_20261105T005623Z_OPPORTUNITIES.md",
+        "line": 7,
+        "price": -114,
+        "source_label": "CBS public display",
+        "exact_line_shortfall": 2,
+        "passes": {
+          "strict": false,
+          "one_point": false,
+          "two_points": true
+        }
+      },
+      {
+        "source": "evidence/operational/CFB_MARKET_MONITOR_AUTO10-20261105T125657Z_PARTIAL_SOURCE_RECHECK.md",
+        "line": 6.5,
+        "price": -102,
+        "source_label": "later DraftKings display",
+        "passes": {
+          "strict": false,
+          "one_point": false,
+          "two_points": false
+        },
+        "reason": "different spread"
+      }
+    ],
+    "usm": {
+      "id": "401869964",
+      "line": 14.5,
+      "price": -112,
+      "grade": "L",
+      "hypothetical_net_cents": -500
+    }
+  },
+  "friday": {
+    "cutoff": "2026-11-06T19:00:00Z",
+    "manual_recovery_boundary": "2026-11-06T21:28:29.007329Z",
+    "seconds_after_cutoff": 8909,
+    "scheduled_failure": "Helper transfer to runtime blocked before live market collection and publication.",
+    "status": "Late evidence cannot establish price or opportunity at cutoff."
+  },
+  "confirmed_price_only_rejections": 0,
+  "limits": "Bounded to the retained sources listed. Classification is coverage of identified rechecks; it does not claim there was no other market quote. Do not infer unavailability at the venue or count potential outcomes as missed bets."
+}
