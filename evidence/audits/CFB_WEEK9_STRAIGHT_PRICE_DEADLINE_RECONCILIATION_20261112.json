@@ -1,0 +1,109 @@
+{
+  "schema": "CFB_WEEK9_STRAIGHT_PRICE_DEADLINE_RECONCILIATION_V1",
+  "input_head": "7ebfc8616b484b61a7c4e7163d456318e6fe9b84",
+  "sources": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_20261030T010121Z_OPPORTUNITIES.md",
+      "commit": "0124903c6688a1ab8a1eb1b1954f9b5194fa157e",
+      "blob": "1b2e1939f13cdd3bb4084521c4e16e7e16693ee5"
+    },
+    {
+      "path": "evidence/operational/CFB_FRIDAY_20261030_NAMED_BOOK_RECHECK_R4.md",
+      "commit": "052a6532db9d7d29b6f457f978d99457bcb745f9",
+      "blob": "70f04884c92bde8b46d6ce9756bd349f576ffba8"
+    },
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_UCF_POINTS_RECONSIDERATION_20261029T223706Z.json",
+      "commit": "86473485fbf1db5d97673d54f923a184b3228ef8",
+      "blob": "0c436f203c0e59a415d305ffa750155e73c96d5b"
+    },
+    {
+      "path": "evidence/operational/CFB_FRIDAY_20261030_POST_13CT_PRIORITY_RECHECK_RESEARCH.md",
+      "commit": "1a53aefc054961d91d39f92f24f2fdd7bfad1ef2",
+      "blob": "c2b6bab34074b2855b482e9bd45b05f5760d8c2b"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK9_CANONICAL_56_OFFICIAL_OUTCOME_RECONCILIATION_20261101.json",
+      "blob": "296b18dd97c1bb0c2d68281fe24506bf27fe7dbc",
+      "commit": "6657ebee835cc476feac1427149262781c16ba90"
+    }
+  ],
+  "cohort": "All three entries in the saved October 29 ranked conditional companion. Recheck bounds use archive commit time and stated retrieval window; offer-update times and venue execution remain unverified.",
+  "rows": [
+    {
+      "id": "401856844",
+      "market": "SPREAD",
+      "line": 2.5,
+      "limit": -115,
+      "original_display_price": -110,
+      "recheck_price": -106,
+      "cutoff": "2026-10-30T18:00:00Z",
+      "recheck_source": "evidence/operational/CFB_FRIDAY_20261030_POST_13CT_PRIORITY_RECHECK_RESEARCH.md",
+      "timing": "AFTER_CUTOFF",
+      "material": "Personnel and venue pending",
+      "note": "Same-line named-book price met the numerical cap after the original expiry. Editorial +1.5 was a different line and source.",
+      "away": "Baylor",
+      "home": "UCF",
+      "away_final": 41,
+      "home_final": 9,
+      "official_final": "https://d1nnrx9kca53zl.cloudfront.net/news/2026/10/30/football-recap-at-ucf",
+      "grade": "L",
+      "original_display_net_cents": -500,
+      "recheck_net_cents": null
+    },
+    {
+      "id": "401858503",
+      "market": "SPREAD",
+      "line": 2.5,
+      "limit": -125,
+      "original_display_price": -110,
+      "recheck_price": -102,
+      "cutoff": "2026-10-31T14:00:00Z",
+      "recheck_source": "evidence/operational/CFB_FRIDAY_20261030_NAMED_BOOK_RECHECK_R4.md",
+      "timing": "BEFORE_CUTOFF",
+      "material": "Final personnel and venue unverified",
+      "away": "Illinois",
+      "home": "Maryland",
+      "away_final": 20,
+      "home_final": 17,
+      "official_final": "https://umterps.com/news/2026/10/31/football-vs-illinois-recap",
+      "grade": "L",
+      "original_display_net_cents": -500,
+      "recheck_net_cents": -500
+    },
+    {
+      "id": "401858509",
+      "market": "UNDER",
+      "line": 51.5,
+      "limit": -120,
+      "original_display_price": -112,
+      "recheck_price": -115,
+      "cutoff": "2026-10-31T20:00:00Z",
+      "recheck_source": "evidence/operational/CFB_FRIDAY_20261030_NAMED_BOOK_RECHECK_R4.md",
+      "timing": "BEFORE_CUTOFF",
+      "material": "Starting QB unconfirmed and venue unverified",
+      "away": "Ohio State",
+      "home": "USC",
+      "away_final": 18,
+      "home_final": 30,
+      "official_final": "https://usctrojans.com/news/2026/10/31/usc-trojans-football-game-recap-associated-press-ap-ohio-state-buckeyes-lincoln-riley-trent-mosley-mark-bowman",
+      "grade": "W",
+      "original_display_net_cents": 446,
+      "recheck_net_cents": 435
+    }
+  ],
+  "summary": {
+    "original_display": {
+      "n": 3,
+      "stake_cents": 1500,
+      "net_cents": -554
+    },
+    "pre_cutoff_recheck": {
+      "n": 2,
+      "stake_cents": 1000,
+      "net_cents": -65
+    },
+    "price_only_rejections_confirmed": 0
+  },
+  "limits": "Public-display scenarios only. Two timely rechecks met the original exact number and odds caps. UCF later matched its cap after expiry. Grading original benchmarks includes both losses and the winner. Do not infer any placement or automatic approval."
+}
