@@ -1,0 +1,1126 @@
+{
+  "schema": "CFB_PARLAY_MATRIX_EVIDENCE_COVERAGE_V1",
+  "input_head": "012a090bf18ef2c118d61552af17f6f8bf9b6641",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK7_RANKED_CARD_AND_PARLAY_COVERAGE_20261111.json",
+      "sha": "0ea28b8c02c27c1b3c7d7a79fdda90d286094b08"
+    },
+    {
+      "path": "evidence/operational/CFB_FRIDAY_20261030_PARLAY_LAYER_OUTPUT_GAP.md",
+      "sha": "2338f165b0270c1be8282c353bb9bceea3158f56"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK8_HOT_SHEET_2026-10-24_1310CT.md",
+      "sha": "affb3451505c77e2a3a528a74cd78e5f1db316e3"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-29_2008CT.md",
+      "sha": "f05173046e51ab9634d47b1be5fe90c2a5026c96"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK11_FRIDAY_BETTING_CARD_20261111.md",
+      "sha": "ad26aad424b9695e92879836a9d3a7058d0b63da"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK10_SUNDAY_REPLAY_PERFORMANCE_BASELINE_20261111.md",
+      "sha": "99395f7ca3468d47b07734a0e69847cdd716c529"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK8_HOT_SHEET_2026-10-23_0632CT.md",
+      "sha": "77106eeee5237a1d129150a014af63677bbc2276"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK9_HOT_SHEET_2026-10-25_1106CT.md",
+      "sha": "e42179c8a5b1f287e433deb02d0d7aa4833728e4"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+      "sha": "2c0fbcb0314839deb60823e48adbbd24d5423147"
+    }
+  ],
+  "weeks": [
+    {
+      "week": 7,
+      "ranks": 5,
+      "basis": "Five verified pregame ranks; archived two-leg idea has no combined offer."
+    },
+    {
+      "week": 8,
+      "ranks": 0,
+      "basis": "Inspected two canonical Hot Sheets. Day sections and priority watchlists have no explicit ordinal cross-market card. No ranked combined offer located."
+    },
+    {
+      "week": 9,
+      "ranks": 0,
+      "basis": "Inspected opening and Thursday canonical sheets and Friday parlay gap record. Two conditional watch legs, no ordinal rank binding or offered combined price."
+    },
+    {
+      "week": 10,
+      "ranks": 10,
+      "basis": "Ten published pregame ranks retained in prior verified replay. Three- and four-leg published builds have arithmetic estimates. Executed three-leg price belongs to one ticket."
+    },
+    {
+      "week": 11,
+      "ranks": 10,
+      "basis": "Inspected the 08:36 CT archived research card with five conditionals and five leans. Preserve as a historical snapshot, including later watch-build supersession. Its combined prices are estimates."
+    }
+  ],
+  "matrix": [
+    {
+      "week": 7,
+      "depth": 10,
+      "legs": 2,
+      "documented_ranks": 5,
+      "missing_rank_slots": 5,
+      "full_depth": false,
+      "rank_subset_count": 10,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 10,
+      "legs": 3,
+      "documented_ranks": 5,
+      "missing_rank_slots": 5,
+      "full_depth": false,
+      "rank_subset_count": 10,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 10,
+      "legs": 4,
+      "documented_ranks": 5,
+      "missing_rank_slots": 5,
+      "full_depth": false,
+      "rank_subset_count": 5,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 10,
+      "legs": 5,
+      "documented_ranks": 5,
+      "missing_rank_slots": 5,
+      "full_depth": false,
+      "rank_subset_count": 1,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 15,
+      "legs": 2,
+      "documented_ranks": 5,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 10,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 15,
+      "legs": 3,
+      "documented_ranks": 5,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 10,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 15,
+      "legs": 4,
+      "documented_ranks": 5,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 5,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 15,
+      "legs": 5,
+      "documented_ranks": 5,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 1,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 20,
+      "legs": 2,
+      "documented_ranks": 5,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 10,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 20,
+      "legs": 3,
+      "documented_ranks": 5,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 10,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 20,
+      "legs": 4,
+      "documented_ranks": 5,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 5,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 20,
+      "legs": 5,
+      "documented_ranks": 5,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 1,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 25,
+      "legs": 2,
+      "documented_ranks": 5,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 10,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 25,
+      "legs": 3,
+      "documented_ranks": 5,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 10,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 25,
+      "legs": 4,
+      "documented_ranks": 5,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 5,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 25,
+      "legs": 5,
+      "documented_ranks": 5,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 1,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 30,
+      "legs": 2,
+      "documented_ranks": 5,
+      "missing_rank_slots": 25,
+      "full_depth": false,
+      "rank_subset_count": 10,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 30,
+      "legs": 3,
+      "documented_ranks": 5,
+      "missing_rank_slots": 25,
+      "full_depth": false,
+      "rank_subset_count": 10,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 30,
+      "legs": 4,
+      "documented_ranks": 5,
+      "missing_rank_slots": 25,
+      "full_depth": false,
+      "rank_subset_count": 5,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 7,
+      "depth": 30,
+      "legs": 5,
+      "documented_ranks": 5,
+      "missing_rank_slots": 25,
+      "full_depth": false,
+      "rank_subset_count": 1,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 10,
+      "legs": 2,
+      "documented_ranks": 0,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 10,
+      "legs": 3,
+      "documented_ranks": 0,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 10,
+      "legs": 4,
+      "documented_ranks": 0,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 10,
+      "legs": 5,
+      "documented_ranks": 0,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 15,
+      "legs": 2,
+      "documented_ranks": 0,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 15,
+      "legs": 3,
+      "documented_ranks": 0,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 15,
+      "legs": 4,
+      "documented_ranks": 0,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 15,
+      "legs": 5,
+      "documented_ranks": 0,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 20,
+      "legs": 2,
+      "documented_ranks": 0,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 20,
+      "legs": 3,
+      "documented_ranks": 0,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 20,
+      "legs": 4,
+      "documented_ranks": 0,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 20,
+      "legs": 5,
+      "documented_ranks": 0,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 25,
+      "legs": 2,
+      "documented_ranks": 0,
+      "missing_rank_slots": 25,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 25,
+      "legs": 3,
+      "documented_ranks": 0,
+      "missing_rank_slots": 25,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 25,
+      "legs": 4,
+      "documented_ranks": 0,
+      "missing_rank_slots": 25,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 25,
+      "legs": 5,
+      "documented_ranks": 0,
+      "missing_rank_slots": 25,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 30,
+      "legs": 2,
+      "documented_ranks": 0,
+      "missing_rank_slots": 30,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 30,
+      "legs": 3,
+      "documented_ranks": 0,
+      "missing_rank_slots": 30,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 30,
+      "legs": 4,
+      "documented_ranks": 0,
+      "missing_rank_slots": 30,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 8,
+      "depth": 30,
+      "legs": 5,
+      "documented_ranks": 0,
+      "missing_rank_slots": 30,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 10,
+      "legs": 2,
+      "documented_ranks": 0,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 10,
+      "legs": 3,
+      "documented_ranks": 0,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 10,
+      "legs": 4,
+      "documented_ranks": 0,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 10,
+      "legs": 5,
+      "documented_ranks": 0,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 15,
+      "legs": 2,
+      "documented_ranks": 0,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 15,
+      "legs": 3,
+      "documented_ranks": 0,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 15,
+      "legs": 4,
+      "documented_ranks": 0,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 15,
+      "legs": 5,
+      "documented_ranks": 0,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 20,
+      "legs": 2,
+      "documented_ranks": 0,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 20,
+      "legs": 3,
+      "documented_ranks": 0,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 20,
+      "legs": 4,
+      "documented_ranks": 0,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 20,
+      "legs": 5,
+      "documented_ranks": 0,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 25,
+      "legs": 2,
+      "documented_ranks": 0,
+      "missing_rank_slots": 25,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 25,
+      "legs": 3,
+      "documented_ranks": 0,
+      "missing_rank_slots": 25,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 25,
+      "legs": 4,
+      "documented_ranks": 0,
+      "missing_rank_slots": 25,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 25,
+      "legs": 5,
+      "documented_ranks": 0,
+      "missing_rank_slots": 25,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 30,
+      "legs": 2,
+      "documented_ranks": 0,
+      "missing_rank_slots": 30,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 30,
+      "legs": 3,
+      "documented_ranks": 0,
+      "missing_rank_slots": 30,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 30,
+      "legs": 4,
+      "documented_ranks": 0,
+      "missing_rank_slots": 30,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 9,
+      "depth": 30,
+      "legs": 5,
+      "documented_ranks": 0,
+      "missing_rank_slots": 30,
+      "full_depth": false,
+      "rank_subset_count": 0,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 10,
+      "legs": 2,
+      "documented_ranks": 10,
+      "missing_rank_slots": 0,
+      "full_depth": true,
+      "rank_subset_count": 45,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 10,
+      "legs": 3,
+      "documented_ranks": 10,
+      "missing_rank_slots": 0,
+      "full_depth": true,
+      "rank_subset_count": 120,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 10,
+      "legs": 4,
+      "documented_ranks": 10,
+      "missing_rank_slots": 0,
+      "full_depth": true,
+      "rank_subset_count": 210,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 10,
+      "legs": 5,
+      "documented_ranks": 10,
+      "missing_rank_slots": 0,
+      "full_depth": true,
+      "rank_subset_count": 252,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 15,
+      "legs": 2,
+      "documented_ranks": 10,
+      "missing_rank_slots": 5,
+      "full_depth": false,
+      "rank_subset_count": 45,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 15,
+      "legs": 3,
+      "documented_ranks": 10,
+      "missing_rank_slots": 5,
+      "full_depth": false,
+      "rank_subset_count": 120,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 15,
+      "legs": 4,
+      "documented_ranks": 10,
+      "missing_rank_slots": 5,
+      "full_depth": false,
+      "rank_subset_count": 210,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 15,
+      "legs": 5,
+      "documented_ranks": 10,
+      "missing_rank_slots": 5,
+      "full_depth": false,
+      "rank_subset_count": 252,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 20,
+      "legs": 2,
+      "documented_ranks": 10,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 45,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 20,
+      "legs": 3,
+      "documented_ranks": 10,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 120,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 20,
+      "legs": 4,
+      "documented_ranks": 10,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 210,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 20,
+      "legs": 5,
+      "documented_ranks": 10,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 252,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 25,
+      "legs": 2,
+      "documented_ranks": 10,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 45,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 25,
+      "legs": 3,
+      "documented_ranks": 10,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 120,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 25,
+      "legs": 4,
+      "documented_ranks": 10,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 210,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 25,
+      "legs": 5,
+      "documented_ranks": 10,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 252,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 30,
+      "legs": 2,
+      "documented_ranks": 10,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 45,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 30,
+      "legs": 3,
+      "documented_ranks": 10,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 120,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 30,
+      "legs": 4,
+      "documented_ranks": 10,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 210,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 10,
+      "depth": 30,
+      "legs": 5,
+      "documented_ranks": 10,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 252,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 10,
+      "legs": 2,
+      "documented_ranks": 10,
+      "missing_rank_slots": 0,
+      "full_depth": true,
+      "rank_subset_count": 45,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 10,
+      "legs": 3,
+      "documented_ranks": 10,
+      "missing_rank_slots": 0,
+      "full_depth": true,
+      "rank_subset_count": 120,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 10,
+      "legs": 4,
+      "documented_ranks": 10,
+      "missing_rank_slots": 0,
+      "full_depth": true,
+      "rank_subset_count": 210,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 10,
+      "legs": 5,
+      "documented_ranks": 10,
+      "missing_rank_slots": 0,
+      "full_depth": true,
+      "rank_subset_count": 252,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 15,
+      "legs": 2,
+      "documented_ranks": 10,
+      "missing_rank_slots": 5,
+      "full_depth": false,
+      "rank_subset_count": 45,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 15,
+      "legs": 3,
+      "documented_ranks": 10,
+      "missing_rank_slots": 5,
+      "full_depth": false,
+      "rank_subset_count": 120,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 15,
+      "legs": 4,
+      "documented_ranks": 10,
+      "missing_rank_slots": 5,
+      "full_depth": false,
+      "rank_subset_count": 210,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 15,
+      "legs": 5,
+      "documented_ranks": 10,
+      "missing_rank_slots": 5,
+      "full_depth": false,
+      "rank_subset_count": 252,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 20,
+      "legs": 2,
+      "documented_ranks": 10,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 45,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 20,
+      "legs": 3,
+      "documented_ranks": 10,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 120,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 20,
+      "legs": 4,
+      "documented_ranks": 10,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 210,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 20,
+      "legs": 5,
+      "documented_ranks": 10,
+      "missing_rank_slots": 10,
+      "full_depth": false,
+      "rank_subset_count": 252,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 25,
+      "legs": 2,
+      "documented_ranks": 10,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 45,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 25,
+      "legs": 3,
+      "documented_ranks": 10,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 120,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 25,
+      "legs": 4,
+      "documented_ranks": 10,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 210,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 25,
+      "legs": 5,
+      "documented_ranks": 10,
+      "missing_rank_slots": 15,
+      "full_depth": false,
+      "rank_subset_count": 252,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 30,
+      "legs": 2,
+      "documented_ranks": 10,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 45,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 30,
+      "legs": 3,
+      "documented_ranks": 10,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 120,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 30,
+      "legs": 4,
+      "documented_ranks": 10,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 210,
+      "qualified_combined_offer_count": 0
+    },
+    {
+      "week": 11,
+      "depth": 30,
+      "legs": 5,
+      "documented_ranks": 10,
+      "missing_rank_slots": 20,
+      "full_depth": false,
+      "rank_subset_count": 252,
+      "qualified_combined_offer_count": 0
+    }
+  ],
+  "week10": {
+    "published_estimate_builds": [
+      {
+        "ranks": [
+          1,
+          2,
+          4
+        ],
+        "estimated_odds": 618
+      },
+      {
+        "ranks": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "estimated_odds": 1302
+      }
+    ],
+    "execution": {
+      "id": "CFB_NOV06-11",
+      "ranks_by_exact_line_match": [
+        1,
+        2,
+        4
+      ],
+      "receipt_odds": 605,
+      "stake_cents": 500,
+      "printed_max_profit_cents": 3025,
+      "printed_max_payout_cents": 3525,
+      "receipt_timezone": "unspecified",
+      "printed_leg_odds": [
+        -106,
+        -112,
+        -109
+      ],
+      "archived_card_leg_odds": [
+        -105,
+        -106,
+        -108
+      ],
+      "overlap_with_separate_actual_straights": [
+        1,
+        4
+      ]
+    },
+    "shared_legs_between_estimate_builds": 3
+  },
+  "limits": [
+    "Coverage of inspected sources only. Rank subset counts use n choose k and do not imply offer eligibility or independent trials. Counts at wider depth repeat the known prefix and do not represent incremental coverage.",
+    "No synchronized combined quote qualified in this inspected sample. The accepted execution receipt verifies a price for one wager and is excluded from the pregame opportunity denominator.",
+    "Week 11 is the archived card snapshot, including five leans. No outcome join in this audit."
+  ],
+  "resume": "Implement and test the read-only evaluator for exact leg/game IDs, per-build offer and cutoff binding, and shared exposure. Recover authentic deeper ranks and combined quotes prospectively for a priced matrix."
+}
