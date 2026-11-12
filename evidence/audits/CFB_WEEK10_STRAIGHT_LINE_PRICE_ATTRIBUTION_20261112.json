@@ -1,0 +1,651 @@
+{
+  "schema": "CFB_WEEK10_STRAIGHT_LINE_PRICE_ATTRIBUTION_V1",
+  "input_head": "085d80bd6bd199b07a3c6f77c8d8965bcf5e2a08",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK10_STRAIGHT_PRICE_PAIRED_BASELINE_20261112.json",
+      "blob": "fe8c6cd421d00a6c7146140792ccdf28ddcc12a0"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK10_TIMED_QUOTE_JOIN_20261111.json",
+      "blob": "ba103de23e25b16d9c869a52e1202c1c7b755417"
+    },
+    {
+      "path": "scripts/cfb_grade_paired_straights.py",
+      "blob": "8a3dc5c074f682631a3257b9b52bdf38ee1c2d2f"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK10_OPENING_AND_REVIEW_REPLAY_20261111.json",
+      "blob": "3ed68ebea809591b0b44af70e1df0a0a5fe8d494"
+    }
+  ],
+  "groups": {
+    "ALL": {
+      "opening": {
+        "selections": 18,
+        "graded": 18,
+        "wins": 12,
+        "losses": 6,
+        "pushes": 0,
+        "pending": 0,
+        "graded_stake_cents": 9000,
+        "graded_net_cents": 2397
+      },
+      "review": {
+        "selections": 18,
+        "graded": 18,
+        "wins": 12,
+        "losses": 6,
+        "pushes": 0,
+        "pending": 0,
+        "graded_stake_cents": 9000,
+        "graded_net_cents": 2437
+      },
+      "line_effect_cents": 0,
+      "price_effect_cents": 40,
+      "transitions": {
+        "LOSS_TO_LOSS": 6,
+        "WIN_TO_WIN": 12
+      }
+    },
+    "SAME_LINE": {
+      "opening": {
+        "selections": 3,
+        "graded": 3,
+        "wins": 2,
+        "losses": 1,
+        "pushes": 0,
+        "pending": 0,
+        "graded_stake_cents": 1500,
+        "graded_net_cents": 418
+      },
+      "review": {
+        "selections": 3,
+        "graded": 3,
+        "wins": 2,
+        "losses": 1,
+        "pushes": 0,
+        "pending": 0,
+        "graded_stake_cents": 1500,
+        "graded_net_cents": 439
+      },
+      "line_effect_cents": 0,
+      "price_effect_cents": 21,
+      "transitions": {
+        "LOSS_TO_LOSS": 1,
+        "WIN_TO_WIN": 2
+      }
+    },
+    "CHANGED_LINE": {
+      "opening": {
+        "selections": 15,
+        "graded": 15,
+        "wins": 10,
+        "losses": 5,
+        "pushes": 0,
+        "pending": 0,
+        "graded_stake_cents": 7500,
+        "graded_net_cents": 1979
+      },
+      "review": {
+        "selections": 15,
+        "graded": 15,
+        "wins": 10,
+        "losses": 5,
+        "pushes": 0,
+        "pending": 0,
+        "graded_stake_cents": 7500,
+        "graded_net_cents": 1998
+      },
+      "line_effect_cents": 0,
+      "price_effect_cents": 19,
+      "transitions": {
+        "LOSS_TO_LOSS": 5,
+        "WIN_TO_WIN": 10
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "401866455",
+      "away": "Ball State",
+      "home": "Massachusetts",
+      "market": "SPREAD",
+      "selection": "home",
+      "final": {
+        "away": 30,
+        "home": 31,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "same_line": false,
+      "opening": {
+        "line": -3.5,
+        "price": -115,
+        "grade": "LOSS",
+        "net_cents": -500
+      },
+      "review": {
+        "line": -2.5,
+        "price": -115,
+        "grade": "LOSS",
+        "net_cents": -500
+      },
+      "effects": {
+        "transition": "LOSS_TO_LOSS",
+        "line_effect_cents": 0,
+        "price_effect_cents": 0
+      }
+    },
+    {
+      "id": "401862817",
+      "away": "UTSA",
+      "home": "Florida Atlantic",
+      "market": "SPREAD",
+      "selection": "home",
+      "final": {
+        "away": 29,
+        "home": 60,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "same_line": false,
+      "opening": {
+        "line": 7.5,
+        "price": -118,
+        "grade": "WIN",
+        "net_cents": 424
+      },
+      "review": {
+        "line": 7,
+        "price": -112,
+        "grade": "WIN",
+        "net_cents": 446
+      },
+      "effects": {
+        "transition": "WIN_TO_WIN",
+        "line_effect_cents": 0,
+        "price_effect_cents": 22
+      }
+    },
+    {
+      "id": "401869964",
+      "away": "James Madison",
+      "home": "Southern Miss",
+      "market": "SPREAD",
+      "selection": "home",
+      "final": {
+        "away": 54,
+        "home": 23,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "same_line": true,
+      "opening": {
+        "line": 14.5,
+        "price": -110,
+        "grade": "LOSS",
+        "net_cents": -500
+      },
+      "review": {
+        "line": 14.5,
+        "price": -112,
+        "grade": "LOSS",
+        "net_cents": -500
+      },
+      "effects": {
+        "transition": "LOSS_TO_LOSS",
+        "line_effect_cents": 0,
+        "price_effect_cents": 0
+      }
+    },
+    {
+      "id": "401858510",
+      "away": "Nebraska",
+      "home": "Illinois",
+      "market": "SPREAD",
+      "selection": "home",
+      "final": {
+        "away": 13,
+        "home": 24,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "same_line": false,
+      "opening": {
+        "line": 5.5,
+        "price": -110,
+        "grade": "WIN",
+        "net_cents": 455
+      },
+      "review": {
+        "line": 4.5,
+        "price": -108,
+        "grade": "WIN",
+        "net_cents": 463
+      },
+      "effects": {
+        "transition": "WIN_TO_WIN",
+        "line_effect_cents": 0,
+        "price_effect_cents": 8
+      }
+    },
+    {
+      "id": "401856855",
+      "away": "TCU",
+      "home": "Arizona",
+      "market": "SPREAD",
+      "selection": "away",
+      "final": {
+        "away": 28,
+        "home": 29,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "same_line": false,
+      "opening": {
+        "line": 8.5,
+        "price": -105,
+        "grade": "WIN",
+        "net_cents": 476
+      },
+      "review": {
+        "line": 7.5,
+        "price": -112,
+        "grade": "WIN",
+        "net_cents": 446
+      },
+      "effects": {
+        "transition": "WIN_TO_WIN",
+        "line_effect_cents": 0,
+        "price_effect_cents": -30
+      }
+    },
+    {
+      "id": "401856740",
+      "away": "Alabama",
+      "home": "LSU",
+      "market": "SPREAD",
+      "selection": "home",
+      "final": {
+        "away": 31,
+        "home": 13,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "same_line": false,
+      "opening": {
+        "line": -3.5,
+        "price": -115,
+        "grade": "LOSS",
+        "net_cents": -500
+      },
+      "review": {
+        "line": -6,
+        "price": -110,
+        "grade": "LOSS",
+        "net_cents": -500
+      },
+      "effects": {
+        "transition": "LOSS_TO_LOSS",
+        "line_effect_cents": 0,
+        "price_effect_cents": 0
+      }
+    },
+    {
+      "id": "401856849",
+      "away": "BYU",
+      "home": "Utah",
+      "market": "SPREAD",
+      "selection": "home",
+      "final": {
+        "away": 20,
+        "home": 28,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "same_line": true,
+      "opening": {
+        "line": -5.5,
+        "price": -108,
+        "grade": "WIN",
+        "net_cents": 463
+      },
+      "review": {
+        "line": -5.5,
+        "price": -105,
+        "grade": "WIN",
+        "net_cents": 476
+      },
+      "effects": {
+        "transition": "WIN_TO_WIN",
+        "line_effect_cents": 0,
+        "price_effect_cents": 13
+      }
+    },
+    {
+      "id": "401856851",
+      "away": "Cincinnati",
+      "home": "Houston",
+      "market": "SPREAD",
+      "selection": "away",
+      "final": {
+        "away": 24,
+        "home": 31,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "same_line": true,
+      "opening": {
+        "line": 10.5,
+        "price": -110,
+        "grade": "WIN",
+        "net_cents": 455
+      },
+      "review": {
+        "line": 10.5,
+        "price": -108,
+        "grade": "WIN",
+        "net_cents": 463
+      },
+      "effects": {
+        "transition": "WIN_TO_WIN",
+        "line_effect_cents": 0,
+        "price_effect_cents": 8
+      }
+    },
+    {
+      "id": "401856852",
+      "away": "Colorado",
+      "home": "Arizona State",
+      "market": "SPREAD",
+      "selection": "home",
+      "final": {
+        "away": 10,
+        "home": 20,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "same_line": false,
+      "opening": {
+        "line": -3.5,
+        "price": -122,
+        "grade": "WIN",
+        "net_cents": 410
+      },
+      "review": {
+        "line": -3,
+        "price": -118,
+        "grade": "WIN",
+        "net_cents": 424
+      },
+      "effects": {
+        "transition": "WIN_TO_WIN",
+        "line_effect_cents": 0,
+        "price_effect_cents": 14
+      }
+    },
+    {
+      "id": "401856853",
+      "away": "Iowa State",
+      "home": "Baylor",
+      "market": "SPREAD",
+      "selection": "home",
+      "final": {
+        "away": 31,
+        "home": 42,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "same_line": false,
+      "opening": {
+        "line": -8.5,
+        "price": -114,
+        "grade": "WIN",
+        "net_cents": 439
+      },
+      "review": {
+        "line": -10,
+        "price": -108,
+        "grade": "WIN",
+        "net_cents": 463
+      },
+      "effects": {
+        "transition": "WIN_TO_WIN",
+        "line_effect_cents": 0,
+        "price_effect_cents": 24
+      }
+    },
+    {
+      "id": "401858512",
+      "away": "UCLA",
+      "home": "Minnesota",
+      "market": "SPREAD",
+      "selection": "home",
+      "final": {
+        "away": 34,
+        "home": 20,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "same_line": false,
+      "opening": {
+        "line": 6.5,
+        "price": -102,
+        "grade": "LOSS",
+        "net_cents": -500
+      },
+      "review": {
+        "line": 5.5,
+        "price": -110,
+        "grade": "LOSS",
+        "net_cents": -500
+      },
+      "effects": {
+        "transition": "LOSS_TO_LOSS",
+        "line_effect_cents": 0,
+        "price_effect_cents": 0
+      }
+    },
+    {
+      "id": "401862822",
+      "away": "Tulsa",
+      "home": "Tulane",
+      "market": "TOTAL",
+      "selection": "over",
+      "final": {
+        "away": 60,
+        "home": 10,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "same_line": false,
+      "opening": {
+        "line": 48.5,
+        "price": -110,
+        "grade": "WIN",
+        "net_cents": 455
+      },
+      "review": {
+        "line": 49.5,
+        "price": -112,
+        "grade": "WIN",
+        "net_cents": 446
+      },
+      "effects": {
+        "transition": "WIN_TO_WIN",
+        "line_effect_cents": 0,
+        "price_effect_cents": -9
+      }
+    },
+    {
+      "id": "401869927",
+      "away": "Georgia State",
+      "home": "App State",
+      "market": "SPREAD",
+      "selection": "away",
+      "final": {
+        "away": 39,
+        "home": 23,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "same_line": false,
+      "opening": {
+        "line": 3.5,
+        "price": -110,
+        "grade": "WIN",
+        "net_cents": 455
+      },
+      "review": {
+        "line": 6,
+        "price": -112,
+        "grade": "WIN",
+        "net_cents": 446
+      },
+      "effects": {
+        "transition": "WIN_TO_WIN",
+        "line_effect_cents": 0,
+        "price_effect_cents": -9
+      }
+    },
+    {
+      "id": "401869968",
+      "away": "South Alabama",
+      "home": "Louisiana",
+      "market": "SPREAD",
+      "selection": "away",
+      "final": {
+        "away": 26,
+        "home": 28,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "same_line": false,
+      "opening": {
+        "line": 5.5,
+        "price": -110,
+        "grade": "WIN",
+        "net_cents": 455
+      },
+      "review": {
+        "line": 7.5,
+        "price": -110,
+        "grade": "WIN",
+        "net_cents": 455
+      },
+      "effects": {
+        "transition": "WIN_TO_WIN",
+        "line_effect_cents": 0,
+        "price_effect_cents": 0
+      }
+    },
+    {
+      "id": "401871076",
+      "away": "Western Kentucky",
+      "home": "Middle Tennessee",
+      "market": "SPREAD",
+      "selection": "away",
+      "final": {
+        "away": 42,
+        "home": 51,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "same_line": false,
+      "opening": {
+        "line": 1.5,
+        "price": -110,
+        "grade": "LOSS",
+        "net_cents": -500
+      },
+      "review": {
+        "line": -1.5,
+        "price": -102,
+        "grade": "LOSS",
+        "net_cents": -500
+      },
+      "effects": {
+        "transition": "LOSS_TO_LOSS",
+        "line_effect_cents": 0,
+        "price_effect_cents": 0
+      }
+    },
+    {
+      "id": "401871074",
+      "away": "Missouri State",
+      "home": "Florida International",
+      "market": "SPREAD",
+      "selection": "away",
+      "final": {
+        "away": 20,
+        "home": 23,
+        "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+      },
+      "same_line": false,
+      "opening": {
+        "line": 5.5,
+        "price": -110,
+        "grade": "WIN",
+        "net_cents": 455
+      },
+      "review": {
+        "line": 4.5,
+        "price": -108,
+        "grade": "WIN",
+        "net_cents": 463
+      },
+      "effects": {
+        "transition": "WIN_TO_WIN",
+        "line_effect_cents": 0,
+        "price_effect_cents": 8
+      }
+    },
+    {
+      "id": "401871075",
+      "away": "Sam Houston",
+      "home": "Jacksonville State",
+      "market": "TOTAL",
+      "selection": "under",
+      "final": {
+        "away": 14,
+        "home": 47,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "same_line": false,
+      "opening": {
+        "line": 47.5,
+        "price": -110,
+        "grade": "LOSS",
+        "net_cents": -500
+      },
+      "review": {
+        "line": 48.5,
+        "price": -118,
+        "grade": "LOSS",
+        "net_cents": -500
+      },
+      "effects": {
+        "transition": "LOSS_TO_LOSS",
+        "line_effect_cents": 0,
+        "price_effect_cents": 0
+      }
+    },
+    {
+      "id": "401864535",
+      "away": "Wyoming",
+      "home": "UNLV",
+      "market": "SPREAD",
+      "selection": "away",
+      "final": {
+        "away": 41,
+        "home": 35,
+        "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+      },
+      "same_line": false,
+      "opening": {
+        "line": 8.5,
+        "price": -110,
+        "grade": "WIN",
+        "net_cents": 455
+      },
+      "review": {
+        "line": 6,
+        "price": -112,
+        "grade": "WIN",
+        "net_cents": 446
+      },
+      "effects": {
+        "transition": "WIN_TO_WIN",
+        "line_effect_cents": 0,
+        "price_effect_cents": -9
+      }
+    }
+  ],
+  "scope": "Retrospective same-selection check across all 18 saved Week 10 conditionals. Opening prices predate the reviewed decisions. This does not measure an actionable bet, causal timing edge, or return of the fixed opening selection rule. Calculate line effect at opening odds first, then substitute reviewed odds. $5 hypothetical per row, cents rounded per selection."
+}
