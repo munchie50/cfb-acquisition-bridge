@@ -1,5 +1,11 @@
 # Week 11 Friday betting card — Top 10 across all markets
 
+## November 12, 2:01 PM CT — verified GitHub collection input
+
+GitHub Actions deployment run 43295802238 collected the CBS board at 1:59:54 PM CT. Manual Market Monitor verified and used the exact artifact 13977489871. All 67 identities were present, and the prior Alabama–Vanderbilt and Colorado State–Washington State price gaps were filled on the CBS display. Both remain PASS after price review.
+
+The five conditional display prices and original limits below are unchanged. North Texas remains on hold at -108 against -105. No venue offers or parlays were verified. Friday pre-trip price and personnel revalidation remains due. [Verified Hot Sheet](CFB_WEEK11_HOT_SHEET_2026-11-12_1401CT.md).
+
 ## November 12, 1:37 PM CT — Saturday review follow-through
 
 **Five existing Saturday conditionals, zero venue-confirmed plays, no approved parlay.** The refreshed CBS board was recovered by 1:35:39 PM CT. All 40 Saturday cases from the prior handoff received a six-market decision or an explicit price/availability disposition at the available Thursday evidence boundary. No new limit earned. Friday games still carry PASS. The existing Friday 7 a.m. CT recheck and Saturday 7 a.m. CT maximum validity apply, subject to earlier practical cutoffs.
