@@ -1,0 +1,86 @@
+{
+  "schema": "CFB_STRAIGHT_PRICE_SHADOW_HISTORICAL_CASE_V1",
+  "case": {
+    "game_id": "401862817",
+    "away": "UTSA",
+    "home": "Florida Atlantic",
+    "selection": "FAU +7",
+    "original_minimum_price": -112,
+    "cutoff_utc": "2026-11-05T19:00:00Z"
+  },
+  "sources": [
+    {
+      "path": "evidence/operational/recommendation_reviews/CFB_FAU_POINTS_CONDITIONAL_20261104T191819Z.json",
+      "commit": "79cc64ff6ae13859cdaa5422df5e4d25f22aea79",
+      "blob": "1fe244d4fd1a54309caef592f2e295763f3df136"
+    },
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_20261105T005623Z_OPPORTUNITIES.md",
+      "commit": "d0749fd862449d55e1773d5a127a1b66936929e7",
+      "blob": "82e4c7ec09ae4fb0f6b64111df0d8248f7d3d5a2"
+    },
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_AUTO10-20261105T125657Z_PARTIAL_SOURCE_RECHECK.md",
+      "commit": "9c39c405fb3dc6c21e0014919ab29f7102c679de",
+      "blob": "90273a1c40acd7994425c89534d5cb58bdac2195"
+    }
+  ],
+  "observations": [
+    {
+      "source": "evidence/operational/CFB_MARKET_MONITOR_20261105T005623Z_OPPORTUNITIES.md",
+      "line": 7,
+      "price": -115,
+      "source_label": "primary benchmark",
+      "observed_at": "2026-11-05T01:05:15Z",
+      "exact_line_shortfall": 3,
+      "passes": {
+        "strict": false,
+        "one_point": false,
+        "two_points": false
+      }
+    },
+    {
+      "source": "evidence/operational/CFB_MARKET_MONITOR_20261105T005623Z_OPPORTUNITIES.md",
+      "line": 7,
+      "price": -114,
+      "source_label": "CBS public display",
+      "exact_line_shortfall": 2,
+      "passes": {
+        "strict": false,
+        "one_point": false,
+        "two_points": true
+      }
+    },
+    {
+      "source": "evidence/operational/CFB_MARKET_MONITOR_AUTO10-20261105T125657Z_PARTIAL_SOURCE_RECHECK.md",
+      "line": 6.5,
+      "price": -102,
+      "source_label": "later DraftKings display",
+      "passes": {
+        "strict": false,
+        "one_point": false,
+        "two_points": false
+      },
+      "reason": "different spread"
+    }
+  ],
+  "qualified_final": {
+    "away": 29,
+    "home": 60,
+    "source": "https://fausports.com/sports/football/stats/2026/rv-utsa/boxscore/24584"
+  },
+  "display_counterfactual": {
+    "price": -114,
+    "stake_cents": 500,
+    "grade": "WIN",
+    "net_cents": 439,
+    "original_limit_win_net_cents": 446
+  },
+  "counts": {
+    "unique_cases_reviewed": 1,
+    "exact_line_display_cases_recovered_by_one_point": 0,
+    "exact_line_display_cases_recovered_by_two_points": 1,
+    "confirmed_price_only_rejections": 0
+  },
+  "limits": "Retrospective example selected from an explicit pregame near-miss record. It is a display-stage illustration only. The source does not verify an executable venue quote, sole-blocker status, or persistence of +7 through the decision window. Do not count both display quotes as two opportunities or include the hypothetical return in confirmed opportunity ROI."
+}
