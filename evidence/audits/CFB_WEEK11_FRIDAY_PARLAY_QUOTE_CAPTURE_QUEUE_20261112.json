@@ -1,0 +1,364 @@
+{
+  "schema": "CFB_WEEK11_FRIDAY_PARLAY_QUOTE_CAPTURE_QUEUE_V1",
+  "input_head": "30dfca70d3ae19e8cea61bb7a744bccb876a2f5c",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK11_PARLAY_RESEARCH_REGISTRATION_20261111.json",
+      "blob": "96642b7e4d5af045cc319803720e50b4bbe25eef"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK11_FRIDAY_BETTING_CARD_20261111.md",
+      "blob": "989b3841a5d5060683c6eccdfb102f9fb99a3cd8"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK11_STRAIGHT_PRICE_AFTERNOON_COMPARISON_20261112.json",
+      "blob": "d636b88dd387e00a6504157276621550c145ad6d"
+    }
+  ],
+  "quote_window_utc": [
+    "2026-11-13T13:00:00Z",
+    "2026-11-13T19:00:00Z"
+  ],
+  "legs": [
+    {
+      "rank": 1,
+      "game_id": "401856888",
+      "team": "Tennessee",
+      "line": -2.5,
+      "minimum_price": -115,
+      "thursday_display": -114,
+      "display_pass": true
+    },
+    {
+      "rank": 2,
+      "game_id": "401856858",
+      "team": "Baylor",
+      "line": 7.5,
+      "minimum_price": -118,
+      "thursday_display": -112,
+      "display_pass": true
+    },
+    {
+      "rank": 3,
+      "game_id": "401870752",
+      "team": "Jacksonville State",
+      "line": -7.5,
+      "minimum_price": -105,
+      "thursday_display": 100,
+      "display_pass": true
+    },
+    {
+      "rank": 4,
+      "game_id": "401856883",
+      "team": "Georgia",
+      "line": -15.5,
+      "minimum_price": -110,
+      "thursday_display": -110,
+      "display_pass": true
+    },
+    {
+      "rank": 5,
+      "game_id": "401862827",
+      "team": "North Texas",
+      "line": -2.5,
+      "minimum_price": -105,
+      "thursday_display": -108,
+      "display_pass": false
+    }
+  ],
+  "cells": [
+    {
+      "legs": 3,
+      "registered": 10,
+      "thursday_display_checks_passed": 4,
+      "qualified_offers": 0,
+      "rows": [
+        {
+          "ranks": [
+            1,
+            2,
+            3
+          ],
+          "game_ids": [
+            "401856888",
+            "401856858",
+            "401870752"
+          ],
+          "display_price_holds": [],
+          "straight_overlap": 3,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        },
+        {
+          "ranks": [
+            1,
+            2,
+            4
+          ],
+          "game_ids": [
+            "401856888",
+            "401856858",
+            "401856883"
+          ],
+          "display_price_holds": [],
+          "straight_overlap": 3,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        },
+        {
+          "ranks": [
+            1,
+            2,
+            5
+          ],
+          "game_ids": [
+            "401856888",
+            "401856858",
+            "401862827"
+          ],
+          "display_price_holds": [
+            5
+          ],
+          "straight_overlap": 3,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        },
+        {
+          "ranks": [
+            1,
+            3,
+            4
+          ],
+          "game_ids": [
+            "401856888",
+            "401870752",
+            "401856883"
+          ],
+          "display_price_holds": [],
+          "straight_overlap": 3,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        },
+        {
+          "ranks": [
+            1,
+            3,
+            5
+          ],
+          "game_ids": [
+            "401856888",
+            "401870752",
+            "401862827"
+          ],
+          "display_price_holds": [
+            5
+          ],
+          "straight_overlap": 3,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        },
+        {
+          "ranks": [
+            1,
+            4,
+            5
+          ],
+          "game_ids": [
+            "401856888",
+            "401856883",
+            "401862827"
+          ],
+          "display_price_holds": [
+            5
+          ],
+          "straight_overlap": 3,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        },
+        {
+          "ranks": [
+            2,
+            3,
+            4
+          ],
+          "game_ids": [
+            "401856858",
+            "401870752",
+            "401856883"
+          ],
+          "display_price_holds": [],
+          "straight_overlap": 3,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        },
+        {
+          "ranks": [
+            2,
+            3,
+            5
+          ],
+          "game_ids": [
+            "401856858",
+            "401870752",
+            "401862827"
+          ],
+          "display_price_holds": [
+            5
+          ],
+          "straight_overlap": 3,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        },
+        {
+          "ranks": [
+            2,
+            4,
+            5
+          ],
+          "game_ids": [
+            "401856858",
+            "401856883",
+            "401862827"
+          ],
+          "display_price_holds": [
+            5
+          ],
+          "straight_overlap": 3,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        },
+        {
+          "ranks": [
+            3,
+            4,
+            5
+          ],
+          "game_ids": [
+            "401870752",
+            "401856883",
+            "401862827"
+          ],
+          "display_price_holds": [
+            5
+          ],
+          "straight_overlap": 3,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "legs": 4,
+      "registered": 5,
+      "thursday_display_checks_passed": 1,
+      "qualified_offers": 0,
+      "rows": [
+        {
+          "ranks": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "game_ids": [
+            "401856888",
+            "401856858",
+            "401870752",
+            "401856883"
+          ],
+          "display_price_holds": [],
+          "straight_overlap": 4,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        },
+        {
+          "ranks": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "game_ids": [
+            "401856888",
+            "401856858",
+            "401870752",
+            "401862827"
+          ],
+          "display_price_holds": [
+            5
+          ],
+          "straight_overlap": 4,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        },
+        {
+          "ranks": [
+            1,
+            2,
+            4,
+            5
+          ],
+          "game_ids": [
+            "401856888",
+            "401856858",
+            "401856883",
+            "401862827"
+          ],
+          "display_price_holds": [
+            5
+          ],
+          "straight_overlap": 4,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        },
+        {
+          "ranks": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "game_ids": [
+            "401856888",
+            "401870752",
+            "401856883",
+            "401862827"
+          ],
+          "display_price_holds": [
+            5
+          ],
+          "straight_overlap": 4,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        },
+        {
+          "ranks": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "game_ids": [
+            "401856858",
+            "401870752",
+            "401856883",
+            "401862827"
+          ],
+          "display_price_holds": [
+            5
+          ],
+          "straight_overlap": 4,
+          "combined_offer": null,
+          "qualification": "PENDING_FRIDAY_EVIDENCE"
+        }
+      ]
+    }
+  ],
+  "quote_evidence": [
+    "observed_at UTC and source or immutable capture pointer",
+    "sportsbook and venue/jurisdiction if established",
+    "exact directed game IDs, sides, lines and displayed individual prices from the same build",
+    "actual combined American odds and current leg eligibility through selection time"
+  ],
+  "scope": "Outcome-free queue covering every registered combination. Thursday screens are single-leg mixed-book display diagnostics, never Friday qualification. Record absent offers explicitly; never infer a combined offer from individual odds. All builds overlap the straight card. Under original rank ordering evaluate the primary four-leg and secondary three-leg cells using Friday evidence only."
+}
