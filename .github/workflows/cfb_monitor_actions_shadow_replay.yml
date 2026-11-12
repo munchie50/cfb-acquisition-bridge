@@ -1,0 +1,98 @@
+name: Monitor Actions shadow replay
+on:
+  push:
+    branches:
+      - qa/monitor-actions-roundtrip-20261112
+    paths:
+      - handoff/monitor-actions-shadow/request.json
+permissions:
+  contents: write
+concurrency:
+  group: monitor-actions-shadow-replay
+  cancel-in-progress: false
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Compile retained real review and verify exact draft parity
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF" = refs/heads/qa/monitor-actions-roundtrip-20261112
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          test "$(git rev-parse --is-shallow-repository)" = false
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          import re
+          import subprocess
+          import sys
+          from pathlib import Path
+          
+          sys.path.insert(0, "scripts")
+          import cfb_week11_publication as week
+          import cfb_neutral_publication_gate as gate
+          
+          request_path = Path("handoff/monitor-actions-shadow/request.json")
+          request = json.loads(request_path.read_text(), object_pairs_hook=gate.unique)
+          out = Path("handoff/monitor-actions-shadow/result")
+          out.mkdir(parents=True, exist_ok=False)
+          market_path = "evidence/operational/CFB_MARKET_MONITOR_STATE.md"
+          decision_path = "evidence/operational/CFB_DECISION_WAIT_LEDGER.md"
+          
+          def read_at(commit, path):
+              if not re.fullmatch(r"[0-9a-f]{40}", commit):
+                  raise ValueError("expected exact commit SHA")
+              return subprocess.check_output(["git", "show", f"{commit}:{path}"]).decode()
+          
+          if request["mode"] != "retained_real_review_replay":
+              raise ValueError("unsupported shadow request")
+          as_of = request["as_of"]
+          retained = read_at(request["decision_commit"], decision_path)
+          packet = gate.selected_block(retained, week.DECISION_TAG, gate.CONDITIONAL_DECISION_SCHEMA, gate.clock(as_of))
+          if packet["cycle_id"] != request["cycle"] or packet["as_of_utc"] != as_of:
+              raise ValueError("retained review boundary mismatch")
+          rows = [{k: v for k, v in row.items() if k not in ("state_recorded_at_utc", "state_evidence")} for row in packet["rows"]]
+          lineage = Path("evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json").read_text()
+          market, decision = week.compile(
+              read_at(request["parent"], market_path),
+              read_at(request["parent"], decision_path),
+              Path(request["capture"]).read_text(),
+              lineage, request["cycle"], as_of, request["recovered_by"], rows,
+          )
+          if market != read_at(request["market_commit"], market_path) or decision != retained:
+              raise ValueError("compiled proposals differ from verified retained proposals")
+          execution = Path("evidence/operational/CFB_EXECUTION_LEDGER.md").read_text()
+          scorecard = Path("evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md").read_text()
+          args = (market, decision, execution, scorecard, lineage, as_of, "WEEK11")
+          draft = gate.render(*args)
+          audit = gate.audit(draft, *args)
+          if draft != Path(request["saved_sheet"]).read_text():
+              raise ValueError("rendered draft differs from saved verified Hot Sheet")
+          (out / "draft.md").write_text(draft)
+          receipt = {
+              "status": "PASS_RETAINED_REAL_REVIEW_REPLAY",
+              "request_commit": os.environ["GITHUB_SHA"],
+              "workflow_run_id": os.environ["GITHUB_RUN_ID"],
+              "request_blob": gate.blob(request_path.read_text()),
+              "market_blob": gate.blob(market),
+              "decision_blob": gate.blob(decision),
+              "draft_blob": gate.blob(draft),
+              "draft_sha256": hashlib.sha256(draft.encode()).hexdigest(),
+              "games": audit["games"],
+              "scope": "Historical-clock replay with actual reviewed inputs and byte parity. Shadow branch only.",
+          }
+          (out / "receipt.json").write_text(json.dumps(receipt, indent=2) + "\n")
+          PY
+      - name: Return draft and receipt on isolated QA branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add handoff/monitor-actions-shadow/result/
+          git -c user.name=github-actions -c user.email=41898282+github-actions[bot]@users.noreply.github.com commit -m "Return Monitor shadow draft and verified receipt"
+          git push origin HEAD:refs/heads/qa/monitor-actions-roundtrip-20261112
