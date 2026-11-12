@@ -1,0 +1,76 @@
+{
+  "status": "TEST_INCOMPLETE",
+  "first_actual_utc": "2026-11-12T14:12:51.418Z",
+  "clock_source": "JavaScript runtime UTC",
+  "trigger": "NATURAL_ONE_TIME_SCHEDULED",
+  "task_id": "6aeb87dd781481919f9f190e69cb5422",
+  "invocation_id": "08fc2d0d-c830-832e-a3b2-57d21128a418",
+  "scheduled_for": "2026-11-12T14:07:13Z",
+  "scheduler_recorded_start": "2026-11-12T14:12:38.591550Z",
+  "hard_deadline_utc": "2026-11-12T14:27:13.764Z",
+  "main": "c8b36fae34e235966f8fba2b5329f1101c373efd",
+  "recovery_index": "v1.284",
+  "workflow_blob": "5efe28c1d4f52f4b7372d7f18016240981d1174b",
+  "capture": {
+    "started_utc": "2026-11-12T14:13:08.744Z",
+    "recovered_by_utc": "2026-11-12T14:13:16.207Z",
+    "provider": "Firecrawl",
+    "max_age": 0,
+    "http_status": 200,
+    "scrape_id": "01a1d01a-f561-7744-970d-7a2a73effed8",
+    "calls": 1,
+    "actual_credits": 1,
+    "starting_balance": 223,
+    "games": 67,
+    "team_rows": 134,
+    "verified_input": {
+      "commit": "4a6fbe7c61325468d31e17d35dfc99531dc4b308",
+      "blob": "094a9716a09429f7285b84ab97278e221aa24d0a",
+      "exact": true,
+      "n": 121375
+    }
+  },
+  "rows": {
+    "verified_input": {
+      "commit": "44a02ca3d35b0bf021726b53765e47a6d655520e",
+      "blob": "6b81565ff02a3b8b0aacba4b27aea1233f3245e1",
+      "exact": true,
+      "n": 38531
+    },
+    "proposed_counts": {
+      "PASS": 57,
+      "INCONCLUSIVE": 5,
+      "CONDITIONAL": 5
+    },
+    "existing_conditional_limits_unchanged": true,
+    "independent_gaps": "No new venue confirmation, exact North Texas at-limit offer, Jacksonville State current paired benchmark, or complete new personnel review. Retained benchmarks and personnel checks were used within their scope."
+  },
+  "request": {
+    "commit": "983910affdd6d52fa26f8b1ac754feffe39e0ff8",
+    "blob": "df274958aec171d59b40bbca491b629ce460a6ac",
+    "exact": true,
+    "submitted_utc": "2026-11-12T14:16:27.553Z"
+  },
+  "actions": {
+    "run_id": 43235486092,
+    "job_id": 131241598420,
+    "step": "Compile and verify draft",
+    "failure_utc": "2026-11-12T14:16:40.208657Z",
+    "exit": 1,
+    "error": "ValueError: closed PASS reopened without qualified conditional reconsideration",
+    "first_failing_boundary": "Caller decision rows attempted PASS to INCONCLUSIVE, rejected by selected_block -> reconsideration. First submitted affected game is 401869969 by proposal order; stack trace does not name a game.",
+    "affected_proposed_ids": [
+      "401869969",
+      "401858300",
+      "401870796",
+      "401860914",
+      "401858524"
+    ],
+    "receipt_publishing": "SKIPPED",
+    "verified_result_utc": null,
+    "draft": null
+  },
+  "next_action": "For a separately authorized attempt, validate proposed row transitions before the trigger. Preserve closed PASS where no qualified conditional reconsideration exists and retain review gaps separately. Use a fresh board and honor original deadlines.",
+  "production_writes": 0,
+  "qa_triggers": 1
+}
