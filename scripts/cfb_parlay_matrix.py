@@ -9,6 +9,9 @@ identities from the independently selected straight card, if available.
 Optional finals are keyed by game_id and contain status, source, away,
 and home. Only QUALIFIED_FINAL scores are graded. Push-adjusted book
 payouts require separate evidence and are left unresolved.
+Optional portfolio_policy specifies depth, legs, quote_from, and select_at.
+The policy ranks builds lexicographically by original leg ranks and selects
+the best latest observed quote per build within the declared time window.
 """
 
 import argparse
@@ -80,6 +83,77 @@ def scenario_returns(result, price):
             net = None
         returns[str(stake)] = {"net_cents": net, "gross_cents": None if net is None else stake + net}
     return returns
+
+
+def compare_portfolios(policy, builds, legs, card_at):
+    depth, count = policy["depth"], policy["legs"]
+    start, end = timestamp(policy["quote_from"]), timestamp(policy["select_at"])
+    if depth not in (10, 15, 20, 25, 30) or count not in (2, 3, 4, 5):
+        raise ValueError("invalid portfolio matrix cell")
+    if not card_at <= start <= end:
+        raise ValueError("invalid portfolio quote window")
+
+    selected = []
+    for build in builds:
+        ranks = build["ranks"]
+        if len(ranks) != count or max(ranks) > depth:
+            continue
+        if any(end > timestamp(legs[rank - 1]["cutoff"]) or
+               end >= timestamp(legs[rank - 1]["kickoff"]) for rank in ranks):
+            continue
+        latest = {}
+        for offer in build["offers"]:
+            observed = timestamp(offer["observed_at"])
+            if start <= observed <= end:
+                current = latest.get(offer["book"])
+                if current is None or observed > timestamp(current["observed_at"]):
+                    latest[offer["book"]] = offer
+                elif observed == timestamp(current["observed_at"]) and offer["price"] != current["price"]:
+                    raise ValueError("conflicting prices from one book at the same time")
+        if latest:
+            def quote_order(offer):
+                price = offer["price"]
+                decimal_profit = Fraction(price, 100) if price > 0 else Fraction(100, -price)
+                return -decimal_profit, offer["book"], offer["source"]
+
+            selected.append((build, min(latest.values(), key=quote_order)))
+
+    scenarios = []
+    for requested in range(11):
+        positions = selected[:requested]
+        games = Counter(game for build, _ in positions for game in build["game_ids"])
+        outcomes = Counter(build["result"] for build, _ in positions)
+        loss_by_game = Counter(game for build, _ in positions if build["result"] == "LOSS"
+                               for game in build["losing_game_ids"])
+        returns = {}
+        for stake in (200, 500):
+            nets = [offer["scenario_returns_by_stake_cents"][str(stake)]["net_cents"]
+                    for _, offer in positions]
+            net = None if any(value is None for value in nets) else sum(nets)
+            returns[str(stake)] = {
+                "stake_cents": stake * len(positions),
+                "net_cents": net,
+                "gross_cents": None if net is None else stake * len(positions) + net,
+                "max_stake_exposed_to_one_game_cents": stake * max(games.values(), default=0),
+            }
+        scenarios.append({
+            "requested_builds": requested, "selected_builds": len(positions),
+            "unfilled_slots": requested - len(positions),
+            "result_counts": dict(sorted(outcomes.items())),
+            "shared_game_build_counts": dict(sorted(games.items())),
+            "losing_builds_by_game": dict(sorted(loss_by_game.items())),
+            "returns_by_stake_cents": returns,
+        })
+
+    return {
+        "policy": {"depth": depth, "legs": count, "quote_from": start.isoformat(),
+                   "select_at": end.isoformat(), "ordering": "ORIGINAL_LEG_RANKS"},
+        "available_builds": len(selected),
+        "positions": [{"ranks": build["ranks"], "offer": offer,
+                       "straight_overlap": build["straight_overlap"]}
+                      for build, offer in selected[:10]],
+        "scenarios": scenarios,
+    }
 
 
 def evaluate(data):
@@ -185,7 +259,10 @@ def evaluate(data):
                 "distinct_game_combinations_by_market": dict(sorted(market_mix.items())),
                 "qualified_builds": len(offered), "shared_game_build_counts": dict(sorted(exposure.items())),
             })
-    return {"cells": cells, "builds": builds, "rejected_offers": dict(sorted(rejected.items()))}
+    report = {"cells": cells, "builds": builds, "rejected_offers": dict(sorted(rejected.items()))}
+    if "portfolio_policy" in data:
+        report["portfolio"] = compare_portfolios(data["portfolio_policy"], builds, legs, card_at)
+    return report
 
 
 def main():
