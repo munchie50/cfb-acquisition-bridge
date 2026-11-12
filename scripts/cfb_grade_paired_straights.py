@@ -120,16 +120,61 @@ def grade(baseline, finals):
     }
 
 
+def grade_snapshots(baseline, sensitivity, finals):
+    """Compare a later board while preserving the primary frozen cohort."""
+    if sensitivity["schema"] != "CFB_WEEK11_SATURDAY_PASS_ACTIONS_SENSITIVITY_V1":
+        raise ValueError("unsupported sensitivity schema")
+    by_id = {row["id"]: row for row in sensitivity["rows"]}
+    primary_ids = {row["id"] for row in baseline["rows"]}
+    if set(by_id) != primary_ids or len(by_id) != len(sensitivity["rows"]):
+        raise ValueError("sensitivity game coverage differs from primary")
+
+    primary_report = grade(baseline, finals)
+    alternate_rows = []
+    for row in baseline["rows"]:
+        later = by_id[row["id"]]
+        if later["pair"] != row["pair"] or later["decision"] != row["decision"]:
+            raise ValueError(f"sensitivity directed decision mismatch for {row['id']}")
+        later_markets = {pair["market"]: pair for pair in later["pairs"]}
+        if set(later_markets) != {"SPREAD", "ML", "TOTAL"} or len(later["pairs"]) != 3:
+            raise ValueError(f"invalid sensitivity markets for {row['id']}")
+        pairs = []
+        for original in row["paired_opening_selections"]:
+            pair = later_markets[original["market"]]
+            if (pair["selection"], pair["line"], pair["price"]) != (
+                original["selection"], original["opening_line"], original["opening_price"]
+            ):
+                raise ValueError(f"sensitivity changed a frozen selection for {row['id']}")
+            pairs.append({
+                **original, "thursday": pair["collector_quote"], "match": pair["match"],
+            })
+        alternate_rows.append({**row, "paired_opening_selections": pairs})
+
+    later_report = grade({
+        **baseline, "rows": alternate_rows, "pairing": sensitivity["counts"]["pairing"],
+    }, finals)
+    return {
+        "primary": {"capture_utc": baseline["as_of_capture_utc"], "report": primary_report},
+        "sensitivity": {"capture_utc": sensitivity["capture_utc"], "report": later_report},
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("baseline")
     parser.add_argument("finals")
+    parser.add_argument("--sensitivity", help="optional later collector snapshot JSON")
     args = parser.parse_args()
     with open(args.baseline, encoding="utf-8") as source:
         baseline = json.load(source)
     with open(args.finals, encoding="utf-8") as source:
         finals = json.load(source)
-    print(json.dumps(grade(baseline, finals), indent=2, allow_nan=False))
+    if args.sensitivity:
+        with open(args.sensitivity, encoding="utf-8") as source:
+            result = grade_snapshots(baseline, json.load(source), finals)
+    else:
+        result = grade(baseline, finals)
+    print(json.dumps(result, indent=2, allow_nan=False))
 
 
 if __name__ == "__main__":
