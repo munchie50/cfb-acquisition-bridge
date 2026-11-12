@@ -1,0 +1,180 @@
+{
+  "schema": "CFB_WEEK11_PRICE_SHADOW_AND_REPLAY_PROGRESS_V1",
+  "input_head": "96d75294a875cd873706392a9c8608573002e220",
+  "sources": {
+    "sweep": {
+      "path": "evidence/audits/CFB_WEEK11_SATURDAY_MATERIAL_SWEEP_20261112T134431Z.md",
+      "blob": "7b2b2923da8944c497ea5a4024ad28f3b60dcdbd"
+    },
+    "hot_sheet": {
+      "path": "evidence/operational/CFB_WEEK11_HOT_SHEET_2026-11-12_0734CT.md",
+      "blob": "a0f421fe590a15b2f79e55d390ade91f1bb34952"
+    },
+    "replay": {
+      "path": "evidence/audits/CFB_WEEK11_PROSPECTIVE_REPLAY_SCHEDULE_AND_SELECTIONS_20261111.json",
+      "blob": "93dd7729ad0375a5f0f484a3ddc88c2b748008e2"
+    }
+  },
+  "price_shadow": {
+    "scope": "Five existing conditionals only. One observed public display per case in the same saved sweep; stale earlier displays do not substitute for the missing current Jacksonville State pair. Require exact line, timestamped pre-deadline sportsbook quote and positive evidence that price was the sole remaining rejection before admitting a bet to outcome scoring. Pending personnel, venue or source remain distinct. Compare 0/1/2 American-odds points at the same line, $5 hypothetical per admitted opportunity, one per directed game/market/selection/window, grading after official finals. This snapshot is display-stage only.",
+    "observations": [
+      {
+        "id": "401856888",
+        "team": "Tennessee",
+        "line": -2.5,
+        "limit": -115,
+        "observed": -115,
+        "price_shortfall": 0
+      },
+      {
+        "id": "401856858",
+        "team": "Baylor",
+        "line": 7.5,
+        "limit": -118,
+        "observed": -112,
+        "price_shortfall": 0
+      },
+      {
+        "id": "401870752",
+        "team": "Jacksonville State",
+        "line": -7.5,
+        "limit": -105,
+        "observed": null,
+        "price_shortfall": null
+      },
+      {
+        "id": "401856883",
+        "team": "Georgia",
+        "line": -15.5,
+        "limit": -110,
+        "observed": -110,
+        "price_shortfall": 0
+      },
+      {
+        "id": "401862827",
+        "team": "North Texas",
+        "line": -2.5,
+        "limit": -105,
+        "observed": -108,
+        "price_shortfall": 3
+      }
+    ],
+    "counts": [
+      {
+        "tolerance": 0,
+        "display_price_pass": 3,
+        "incremental_display_pass": 0
+      },
+      {
+        "tolerance": 1,
+        "display_price_pass": 3,
+        "incremental_display_pass": 0
+      },
+      {
+        "tolerance": 2,
+        "display_price_pass": 3,
+        "incremental_display_pass": 0
+      }
+    ],
+    "confirmed_price_only_misses": 0
+  },
+  "replay_partial": {
+    "finals": [
+      {
+        "id": "401866461",
+        "away": "Buffalo",
+        "home": "Ball State",
+        "away_final": 28,
+        "home_final": 7,
+        "source": "https://ubbulls.com/sports/football/stats/2026/ball-state/boxscore/8305",
+        "scheduled_kickoff": "2026-11-12T00:30:00.000Z",
+        "actual_kickoff": "2026-11-12T00:45:00Z",
+        "grades": [
+          {
+            "market": "SPREAD",
+            "selection": "home",
+            "line": 2.5,
+            "price": -108,
+            "cbs_book_icon": "30",
+            "stake_cents": 500,
+            "grade": "L",
+            "net_cents": -500
+          },
+          {
+            "market": "ML",
+            "selection": "home",
+            "line": null,
+            "price": 114,
+            "cbs_book_icon": "30",
+            "stake_cents": 500,
+            "grade": "L",
+            "net_cents": -500
+          },
+          {
+            "market": "TOTAL",
+            "selection": "under",
+            "line": 51.5,
+            "price": -115,
+            "cbs_book_icon": "35",
+            "stake_cents": 500,
+            "grade": "W",
+            "net_cents": 435
+          }
+        ]
+      },
+      {
+        "id": "401866463",
+        "away": "Massachusetts",
+        "home": "Toledo",
+        "away_final": 0,
+        "home_final": 24,
+        "source": "https://umassathletics.com/sports/football/stats/2026/toledo/boxscore/16723",
+        "scheduled_kickoff": "2026-11-12T00:30:00.000Z",
+        "actual_kickoff": "2026-11-12T00:45:00Z",
+        "grades": [
+          {
+            "market": "SPREAD",
+            "selection": "away",
+            "line": 14.5,
+            "price": -112,
+            "cbs_book_icon": "30",
+            "stake_cents": 500,
+            "grade": "L",
+            "net_cents": -500
+          },
+          {
+            "market": "ML",
+            "selection": "home",
+            "line": null,
+            "price": -581,
+            "cbs_book_icon": "35",
+            "stake_cents": 500,
+            "grade": "W",
+            "net_cents": 86
+          },
+          {
+            "market": "TOTAL",
+            "selection": "over",
+            "line": 51.5,
+            "price": -114,
+            "cbs_book_icon": "34",
+            "stake_cents": 500,
+            "grade": "L",
+            "net_cents": -500
+          }
+        ]
+      }
+    ],
+    "net_cents": -1479,
+    "stake_cents": 3000,
+    "remaining_corroborated": 53,
+    "clock_hold": {
+      "id": "401866462",
+      "away_final": 7,
+      "home_final": 28,
+      "actual_kickoff": "2026-11-12T00:32:00Z",
+      "source": "https://cmuchippewas.com/sports/football/stats/2026/sacramento-state/boxscore/11277"
+    },
+    "timing_note": "The two graded games had corroborated scheduled kickoff times. Their later actual starts follow registration and do not change the scheduled clock comparison. Central Michigan's known pregame clock conflict remains excluded."
+  }
+}
