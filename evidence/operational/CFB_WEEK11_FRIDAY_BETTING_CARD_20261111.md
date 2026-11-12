@@ -1,5 +1,19 @@
 # Week 11 Friday betting card — Top 10 across all markets
 
+## November 12, 7:45 AM CT — latest price and personnel check
+
+**Zero venue-confirmed plays.** The original five Saturday conditionals remain on the Friday card. North Texas is on price hold at the latest observed quote.
+
+| Selection | Original limit | Latest observed public evidence |
+|---|---|---|
+| Tennessee spread | -2.5 at -115 or better | DraftKings display -115. A&M WR Mario Craver questionable, OL Trovon Baugh doubtful, Tennessee DL Tyree Weathersby out. |
+| Baylor spread | +7.5 at -118 or better | DraftKings display -112. BYU RB LJ Martin probable and LB Isaiah Glasker questionable. Baylor secondary availability and weather remain material. |
+| Jacksonville State spread | -7.5 at -105 or better | Earlier DraftKings display -102. Latest re-pull did not reproduce the exact pair. CUSA report pending in tracker. |
+| Georgia spread | -15.5 at -110 or better | DraftKings display -110. Missouri WR Cayden Lee was absent from the initial limited list, Georgia DT Josh Horton questionable. |
+| North Texas spread | -2.5 at -105 or better | Latest DraftKings display -108. Earlier -105 observed. Hold for exact price at or above the floor and current material evidence. |
+
+No approved parlay. The Friday 7 a.m. CT recheck and Saturday 7 a.m. CT maximum validity remain in effect, subject to earlier practical cutoffs. Saturday report screen matched 56 games, with 40 reports visible and 16 pending in the tracker. The dated quarterback row lists Wake Forest's Gio Lopez probable. Recheck his role, the exact Wake–SMU pair, and Boise State QB Maddux Madsen's status before revisiting those watch cases. This supplements the 7:34 a.m. CT Hot Sheet. [Saturday review](../audits/CFB_WEEK11_SATURDAY_MATERIAL_SWEEP_20261112T134431Z.md)
+
 **November 11, 8:36 AM CT. Five conditionals, five leans, zero venue-confirmed plays.** Display prices below are the 8:36 AM CBS observations. Book-specific availability and offer-update times are unverified. Leans are ranked research ideas without an established acceptable betting limit. The five existing conditionals retain their Friday review and Saturday 7 AM CT maximum validity; earlier practical cutoffs govern.
 
 | Rank | Play | Observed line and price | Status / established limit | Case and main risk |
