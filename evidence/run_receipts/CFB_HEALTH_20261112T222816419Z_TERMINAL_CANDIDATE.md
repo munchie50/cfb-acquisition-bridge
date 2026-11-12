@@ -1,0 +1,17 @@
+# CFB Health terminal candidate
+cycle_id: CFB_HEALTH_20261112T222816419Z
+status: RUN_INCOMPLETE
+coverage: COVERAGE_UNVERIFIED
+audit_path: evidence/scheduler_qa/CFB_HEALTH_20261112T222816419Z_AUDIT.md
+audit_blob: 7eca20c9d4abe20aaf9b1a44cbc424a2b3103196
+audit_readback: VERIFIED
+startup_blob: aad77e3db410c237bf3ebc7f9e2f5e1875b35a4a
+market_07CT: CLOSED_INCOMPLETE
+market_13CT: STARTUP_UNPROVEN (scheduled binding)
+evening_Nov11: STARTED_CLOSURE_UNPROVEN
+evening_Nov12: NOT_YET_DUE
+independent_rest: UNAVAILABLE_DNS
+live_task_topology: UNVERIFIED_AUTOMATIONS_404
+coverage_advanced: NO
+no_material_change: YES
+closure_pending: YES
