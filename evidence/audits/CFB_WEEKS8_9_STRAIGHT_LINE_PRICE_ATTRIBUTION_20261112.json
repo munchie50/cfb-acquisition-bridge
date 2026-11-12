@@ -1,0 +1,272 @@
+{
+  "schema": "CFB_WEEKS8_9_STRAIGHT_LINE_PRICE_ATTRIBUTION_V1",
+  "input_head": "eaf916e5311b1d5e6b2dd2d50d66571e03f9e75a",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK8_STRAIGHT_PRICE_REVIEW_REFERENCE_20261112.json",
+      "blob": "4bd7fc59664cbee4088dbe6eb9d8c0c2ff0200fc"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK8_WEEK9_OPENING_REPLAY_CONTINUATION_20261111.json",
+      "blob": "243da617787e24154c77a0953d6641eed1761d39"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK9_STRAIGHT_PRICE_DEADLINE_RECONCILIATION_20261112.json",
+      "blob": "8011fd59eb251954e31c512031a70d579bbd95e7"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK9_WEEK10_OPENING_BASELINE_COMPARISON_20261111.json",
+      "blob": "a48415c51c3892c69526df2d1fd0700918d96bd7"
+    }
+  ],
+  "weeks": {
+    "8": {
+      "rows": [
+        {
+          "id": "401856840",
+          "away": "Texas Tech",
+          "home": "Cincinnati",
+          "market": "SPREAD",
+          "side": "home",
+          "final": {
+            "match": "Texas Tech @ Cincinnati",
+            "away": 24,
+            "home": 37
+          },
+          "opening": {
+            "line": 11.5,
+            "price": -110,
+            "grade": "W",
+            "net_cents": 455
+          },
+          "reviewed": {
+            "line": 11.5,
+            "price": -112,
+            "grade": "W",
+            "net_cents": 446
+          },
+          "effects": {
+            "transition": "W_TO_W",
+            "line_cents": 0,
+            "price_cents": -9
+          }
+        },
+        {
+          "id": "401866448",
+          "away": "Bowling Green",
+          "home": "Buffalo",
+          "market": "SPREAD",
+          "side": "home",
+          "final": {
+            "match": "Bowling Green @ Buffalo",
+            "away": 24,
+            "home": 31
+          },
+          "opening": null,
+          "reviewed": {
+            "line": -3,
+            "price": -112,
+            "grade": "W",
+            "net_cents": 446
+          },
+          "effects": null
+        },
+        {
+          "id": "401856728",
+          "away": "LSU",
+          "home": "Auburn",
+          "market": "SPREAD",
+          "side": "home",
+          "final": {
+            "match": "LSU @ Auburn",
+            "away": 38,
+            "home": 17
+          },
+          "opening": {
+            "line": 6.5,
+            "price": -118,
+            "grade": "L",
+            "net_cents": -500
+          },
+          "reviewed": {
+            "line": 7,
+            "price": 100,
+            "grade": "L",
+            "net_cents": -500
+          },
+          "effects": {
+            "transition": "L_TO_L",
+            "line_cents": 0,
+            "price_cents": 0
+          }
+        },
+        {
+          "id": "401864525",
+          "away": "Air Force",
+          "home": "Wyoming",
+          "market": "SPREAD",
+          "side": "away",
+          "final": {
+            "match": "Air Force @ Wyoming",
+            "away": 14,
+            "home": 28
+          },
+          "opening": {
+            "line": -7.5,
+            "price": -105,
+            "grade": "L",
+            "net_cents": -500
+          },
+          "reviewed": {
+            "line": -5.5,
+            "price": -110,
+            "grade": "L",
+            "net_cents": -500
+          },
+          "effects": {
+            "transition": "L_TO_L",
+            "line_cents": 0,
+            "price_cents": 0
+          }
+        },
+        {
+          "id": "401856841",
+          "away": "West Virginia",
+          "home": "TCU",
+          "market": "SPREAD",
+          "side": "away",
+          "final": {
+            "match": "West Virginia @ TCU",
+            "away": 24,
+            "home": 20
+          },
+          "opening": {
+            "line": 6.5,
+            "price": -106,
+            "grade": "W",
+            "net_cents": 472
+          },
+          "reviewed": {
+            "line": 10.5,
+            "price": -108,
+            "grade": "W",
+            "net_cents": 463
+          },
+          "effects": {
+            "transition": "W_TO_W",
+            "line_cents": 0,
+            "price_cents": -9
+          }
+        }
+      ],
+      "paired": 4,
+      "missing": 1,
+      "stake_cents": 2000,
+      "opening_net_cents": -73,
+      "reviewed_net_cents": -91,
+      "line_cents": 0,
+      "price_cents": -18,
+      "grade_changes": []
+    },
+    "9": {
+      "rows": [
+        {
+          "id": "401856844",
+          "away": "Baylor",
+          "home": "UCF",
+          "market": "SPREAD",
+          "side": "home",
+          "final": {
+            "away": 41,
+            "home": 9
+          },
+          "opening": {
+            "line": -2,
+            "price": -111,
+            "grade": "L",
+            "net_cents": -500
+          },
+          "reviewed": {
+            "line": 2.5,
+            "price": -110,
+            "grade": "L",
+            "net_cents": -500
+          },
+          "effects": {
+            "transition": "L_TO_L",
+            "line_cents": 0,
+            "price_cents": 0
+          }
+        },
+        {
+          "id": "401858503",
+          "away": "Illinois",
+          "home": "Maryland",
+          "market": "SPREAD",
+          "side": "home",
+          "final": {
+            "away": 20,
+            "home": 17
+          },
+          "opening": {
+            "line": 3,
+            "price": -110,
+            "grade": "P",
+            "net_cents": 0
+          },
+          "reviewed": {
+            "line": 2.5,
+            "price": -110,
+            "grade": "L",
+            "net_cents": -500
+          },
+          "effects": {
+            "transition": "P_TO_L",
+            "line_cents": -500,
+            "price_cents": 0
+          }
+        },
+        {
+          "id": "401858509",
+          "away": "Ohio State",
+          "home": "USC",
+          "market": "TOTAL",
+          "side": "under",
+          "final": {
+            "away": 18,
+            "home": 30
+          },
+          "opening": {
+            "line": 50.5,
+            "price": -110,
+            "grade": "W",
+            "net_cents": 455
+          },
+          "reviewed": {
+            "line": 51.5,
+            "price": -112,
+            "grade": "W",
+            "net_cents": 446
+          },
+          "effects": {
+            "transition": "W_TO_W",
+            "line_cents": 0,
+            "price_cents": -9
+          }
+        }
+      ],
+      "paired": 3,
+      "missing": 0,
+      "stake_cents": 1500,
+      "opening_net_cents": -45,
+      "reviewed_net_cents": -554,
+      "line_cents": -500,
+      "price_cents": -9,
+      "grade_changes": [
+        "401858503"
+      ]
+    }
+  },
+  "scope": "Retrospective same-selection comparisons on all archived conditionals in the two source cohorts. Grade against retained official finals. Opening prices predate review. The intermediate line at opening odds is hypothetical. Keep Week 8 Buffalo out of paired totals because the opening spread price and line are missing. Returns do not establish an executable bet or a timing edge.",
+  "verification": "Directed teams joined by ID, recorded review grades reproduced, Week 9 final scores cross-checked across two evidence files, and total changes reconcile to line and price effects. Independent JavaScript arithmetic used when shell transport was unavailable."
+}
