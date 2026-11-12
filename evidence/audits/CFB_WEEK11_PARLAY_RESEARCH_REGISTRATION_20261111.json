@@ -1,0 +1,127 @@
+{
+  "schema": "CFB_WEEK11_PARLAY_RESEARCH_REGISTRATION_V1",
+  "registered_as_of_utc": "2026-11-12T00:14:00Z",
+  "input_head": "49d0268b827b37bfe5f9c21482334171bcf53093",
+  "sources": [
+    {
+      "path": "evidence/operational/CFB_WEEK11_FRIDAY_BETTING_CARD_20261111.md",
+      "blob": "ad26aad424b9695e92879836a9d3a7058d0b63da"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK11_HOT_SHEET_2026-11-10_1843CT.md",
+      "blob": "ec07f3c03fe192cd7ef9b549119995fe11f817af"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK11_PROSPECTIVE_REPLAY_SCHEDULE_AND_SELECTIONS_20261111.json",
+      "blob": "93dd7729ad0375a5f0f484a3ddc88c2b748008e2"
+    }
+  ],
+  "card_at": "2026-11-11T14:37:48Z",
+  "legs": [
+    {
+      "rank": 1,
+      "game_id": "401856888",
+      "market": "SPREAD",
+      "side": "away",
+      "line": -2.5,
+      "min_leg_price": -115,
+      "kickoff": "2026-11-14T20:00:00.000Z",
+      "cutoff": "2026-11-14T13:00:00Z"
+    },
+    {
+      "rank": 2,
+      "game_id": "401856858",
+      "market": "SPREAD",
+      "side": "away",
+      "line": 7.5,
+      "min_leg_price": -118,
+      "kickoff": "2026-11-14T20:30:00.000Z",
+      "cutoff": "2026-11-14T13:00:00Z"
+    },
+    {
+      "rank": 3,
+      "game_id": "401870752",
+      "market": "SPREAD",
+      "side": "away",
+      "line": -7.5,
+      "min_leg_price": -105,
+      "kickoff": "2026-11-14T20:30:00.000Z",
+      "cutoff": "2026-11-14T13:00:00Z"
+    },
+    {
+      "rank": 4,
+      "game_id": "401856883",
+      "market": "SPREAD",
+      "side": "home",
+      "line": -15.5,
+      "min_leg_price": -110,
+      "kickoff": "2026-11-14T20:30:00.000Z",
+      "cutoff": "2026-11-14T13:00:00Z"
+    },
+    {
+      "rank": 5,
+      "game_id": "401862827",
+      "market": "SPREAD",
+      "side": "away",
+      "line": -2.5,
+      "min_leg_price": -105,
+      "kickoff": "2026-11-15T02:00:00.000Z",
+      "cutoff": "2026-11-14T13:00:00Z"
+    }
+  ],
+  "straight_top10": [
+    {
+      "game_id": "401856888",
+      "market": "SPREAD",
+      "side": "away",
+      "line": -2.5
+    },
+    {
+      "game_id": "401856858",
+      "market": "SPREAD",
+      "side": "away",
+      "line": 7.5
+    },
+    {
+      "game_id": "401870752",
+      "market": "SPREAD",
+      "side": "away",
+      "line": -7.5
+    },
+    {
+      "game_id": "401856883",
+      "market": "SPREAD",
+      "side": "home",
+      "line": -15.5
+    },
+    {
+      "game_id": "401862827",
+      "market": "SPREAD",
+      "side": "away",
+      "line": -2.5
+    }
+  ],
+  "straight_overlap_scope": "Restricted to the five conditional lines documented in the same straight card. All possible test legs overlap this straight-card subset. This tests quote collection and shared exposure, and cannot test independent deeper-rank parlay selection.",
+  "portfolio_policy": {
+    "depth": 10,
+    "legs": 4,
+    "quote_from": "2026-11-13T13:00:00Z",
+    "select_at": "2026-11-13T19:00:00Z"
+  },
+  "secondary_cell": {
+    "depth": 10,
+    "legs": 3
+  },
+  "expected_rank_coverage": {
+    "available": 5,
+    "missing_in_top10": 5,
+    "three_leg_sets": 10,
+    "four_leg_sets": 5
+  },
+  "offers": [],
+  "rules": [
+    "Research only. Use the exact recorded lines, and require contemporaneous documented sportsbook combined odds and displayed leg prices meeting the preserved caps, plus continued leg eligibility at selection. The evaluator validates exact leg identities and timing; cap and eligibility evidence must be checked before accepting an input offer.",
+    "Use the same quote window and original rank ordering for the three-leg secondary comparison. Do not fill missing ranks, move the window based on results, reuse estimated prices or insert execution-only receipts.",
+    "When zero offers qualify, retain the zero-build baseline and count unfilled slots. Grade only after qualified official finals. No publication or wagering authority is created."
+  ]
+}
