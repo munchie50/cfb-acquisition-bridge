@@ -6,12 +6,16 @@ and cutoff. Moneyline line is null. Each offer has kind, book, source,
 observed_at, price (American odds), and its exact leg identities. Only
 BOOK_OFFER observations qualify. straight_top10 contains exact leg
 identities from the independently selected straight card, if available.
+Optional finals are keyed by game_id and contain status, source, away,
+and home. Only QUALIFIED_FINAL scores are graded. Push-adjusted book
+payouts require separate evidence and are left unresolved.
 """
 
 import argparse
 from collections import Counter, defaultdict
 from datetime import datetime
 from itertools import combinations
+from fractions import Fraction
 import json
 import math
 
@@ -40,6 +44,42 @@ def identity(leg):
     elif type(line) not in (int, float) or not math.isfinite(line):
         raise ValueError("market requires a finite line")
     return game, market, side, line
+
+
+def grade_leg(key, finals):
+    game, market, side, line = key
+    final = finals.get(game)
+    if not final or final.get("status") != "QUALIFIED_FINAL":
+        return "PENDING"
+    away, home = final["away"], final["home"]
+    if any(type(score) is not int or score < 0 for score in (away, home)):
+        raise ValueError(f"invalid qualified score for {game}")
+    if not final["source"].strip():
+        raise ValueError(f"missing final provenance for {game}")
+    if market == "TOTAL":
+        margin = home + away - line
+        margin = margin if side == "over" else -margin
+    else:
+        margin = home - away if side == "home" else away - home
+        if market == "SPREAD":
+            margin += line
+    return "WIN" if margin > 0 else "LOSS" if margin < 0 else "PUSH"
+
+
+def scenario_returns(result, price):
+    returns = {}
+    for stake in (200, 500):
+        if result == "WIN":
+            profit = Fraction(stake * price, 100) if price > 0 else Fraction(stake * 100, -price)
+            net = int(profit + Fraction(1, 2))
+        elif result == "LOSS":
+            net = -stake
+        elif result == "ALL_PUSH":
+            net = 0
+        else:
+            net = None
+        returns[str(stake)] = {"net_cents": net, "gross_cents": None if net is None else stake + net}
+    return returns
 
 
 def evaluate(data):
@@ -96,10 +136,27 @@ def evaluate(data):
             "break_even_probability": -price / (100 - price) if price < 0 else 100 / (100 + price),
         })
 
+    finals = data.get("finals", {})
     builds = []
     for ranks, offers in sorted(qualified.items()):
         keys = [identity(legs[rank - 1]) for rank in ranks]
+        grades = [grade_leg(key, finals) for key in keys]
+        if "PENDING" in grades:
+            result = "PENDING"
+        elif "LOSS" in grades:
+            result = "LOSS"
+        elif all(grade == "PUSH" for grade in grades):
+            result = "ALL_PUSH"
+        elif "PUSH" in grades:
+            result = "PUSH_REPRICE_REQUIRED"
+        else:
+            result = "WIN"
+        for offer in offers:
+            offer["scenario_returns_by_stake_cents"] = scenario_returns(result, offer["price"])
         builds.append({
+            "result": result,
+            "leg_grades": grades,
+            "losing_game_ids": [key[0] for key, grade in zip(keys, grades) if grade == "LOSS"],
             "ranks": list(ranks),
             "game_ids": [key[0] for key in keys],
             "straight_overlap": None if straight_keys is None else sum(key in straight_keys for key in keys),
@@ -118,7 +175,12 @@ def evaluate(data):
                     market_mix["+".join(sorted(key[1] for key in keys))] += 1
             offered = [build for build in builds if len(build["ranks"]) == count and max(build["ranks"]) <= depth]
             exposure = Counter(game for build in offered for game in build["game_ids"])
+            losing_exposure = Counter(
+                game for build in offered if build["result"] == "LOSS" for game in build["losing_game_ids"]
+            )
             cells.append({
+                "losing_builds_by_game": dict(sorted(losing_exposure.items())),
+                "build_result_counts": dict(sorted(Counter(build["result"] for build in offered).items())),
                 "depth": depth, "legs": count, "missing_ranks": max(0, depth - len(prefix)),
                 "distinct_game_combinations_by_market": dict(sorted(market_mix.items())),
                 "qualified_builds": len(offered), "shared_game_build_counts": dict(sorted(exposure.items())),
