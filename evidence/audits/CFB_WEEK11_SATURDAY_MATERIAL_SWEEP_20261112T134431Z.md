@@ -96,3 +96,49 @@ Times below are the selected canonical planning times in CT. Report links do not
 | 401864537 | North Dakota State at Hawai'i | 10:00 PM | PASS | [Initial](https://kickoffstatus.com/games/2026-11-14-north-dakota-state-at-hawaii/) |
 
 Next existing opportunity is Thursday 1 p.m. CT to review new material and decisions with a practical same-day window. American tracker expects Memphis–USF availability at 5 p.m. CT, after that slot, for 7 p.m. CT kickoff. Friday 7 a.m. CT is the existing pre-trip revalidation. The scope here is morning source and decision support. Thirty-one modeled PASS games with reports need their game-specific review compared to the retained record except for the targeted cases documented here and earlier, and twelve modeled PASS games show reports pending. The selected published sheet remains the 7:34 a.m. CT cycle. No new canonical compiler cycle or scheduled run is claimed for this checkpoint.
+
+
+## Quarterback follow-up across the 31 modeled PASS games with a report
+
+Recovered by 2026-11-12T13:45:50.737Z. Checked dated matchup report rows for all 31. 18 matchups surfaced a current quarterback designation. The other rows are search results without a surfaced quarterback designation, not proof of clearance. Stale or unofficial notes are excluded.
+
+| Game ID | Matchup | Current report finding |
+|---|---|---|
+| 401856886 | [Auburn at Mississippi State](https://kickoffstatus.com/games/2026-11-14-auburn-at-mississippi-state/) | Kamario Taylor #1, out |
+| 401856859 | [Cincinnati at Iowa State](https://kickoffstatus.com/games/2026-11-14-cincinnati-at-iowa-state/) | Connor Moberly (Iowa State), out |
+| 401858301 | [Wake Forest at SMU](https://kickoffstatus.com/games/2026-11-14-wake-forest-at-smu/) | Gio Lopez #3, probable |
+| 401858300 | [Syracuse at NC State](https://kickoffstatus.com/games/2026-11-14-syracuse-at-nc-state/) | Amari Odom #12, out; Malachi Nelson #16, questionable; Will Wilson #10, out |
+| 401858520 | [Wisconsin at Maryland](https://kickoffstatus.com/games/2026-11-14-wisconsin-at-maryland/) | Malik Washington #7, questionable |
+| 401858296 | [Duke at Miami](https://kickoffstatus.com/games/2026-11-14-duke-at-miami/) | Terry Walker III #13, questionable |
+| 401856889 | [Alabama at Vanderbilt](https://kickoffstatus.com/games/2026-11-14-alabama-at-vanderbilt/) | Keelon Russell #12, probable; Blaze Berlowitz #1, out |
+| 401856862 | [Kansas State at TCU](https://kickoffstatus.com/games/2026-11-14-kansas-state-at-tcu/) | Avery Johnson #2, out; Jacob Knuth #7, out |
+| 401858523 | [Michigan at Oregon](https://kickoffstatus.com/games/2026-11-14-michigan-at-oregon/) | Dante Moore #5, out |
+| 401856857 | [Arizona State at UCF](https://kickoffstatus.com/games/2026-11-14-arizona-state-at-ucf/) | Keyone Jenkins (UCF), questionable |
+| 401869952 | [Georgia Southern at Georgia State](https://kickoffstatus.com/games/2026-11-14-georgia-southern-at-georgia-state/) | Cameran Brown, doubtful |
+| 401860916 | [Fresno State at Texas State](https://kickoffstatus.com/games/2026-11-14-fresno-state-at-texas-state/) | No current QB row surfaced in text query |
+| 401858521 | [Washington at Michigan State](https://kickoffstatus.com/games/2026-11-14-washington-at-michigan-state/) | Demond Williams Jr. (Washington) and Cam Fancher (Michigan State), questionable |
+| 401856887 | [Ole Miss at Oklahoma](https://kickoffstatus.com/games/2026-11-14-ole-miss-at-oklahoma/) | Trinidad Chambliss #6, probable |
+| 401871099 | [Southern Miss at Louisiana Tech](https://kickoffstatus.com/games/2026-11-14-southern-miss-at-louisiana-tech/) | Blake Baker, probable |
+| 401856861 | [Kansas at West Virginia](https://kickoffstatus.com/games/2026-11-14-kansas-at-west-virginia/) | Cole Ballard #15, questionable |
+| 401869928 | [App State at Marshall](https://kickoffstatus.com/games/2026-11-14-app-state-at-marshall/) | No current QB row surfaced in text query |
+| 401860914 | [Oregon State at Boise State](https://kickoffstatus.com/games/2026-11-14-oregon-state-at-boise-state/) | Braden Atkinson, doubtful; Maddux Madsen, questionable |
+| 401856884 | [Florida at Kentucky](https://kickoffstatus.com/games/2026-11-14-florida-at-kentucky/) | No current QB row surfaced in text query |
+| 401858524 | [Minnesota at Penn State](https://kickoffstatus.com/games/2026-11-14-minnesota-at-penn-state/) | No current QB row surfaced in text query |
+| 401871100 | [Troy at South Alabama](https://kickoffstatus.com/games/2026-11-14-troy-at-south-alabama/) | No current QB row surfaced in text query |
+| 401858298 | [Louisville at North Carolina](https://kickoffstatus.com/games/2026-11-14-louisville-at-north-carolina/) | No current QB row surfaced in text query |
+| 401858299 | [Stanford at Virginia Tech](https://kickoffstatus.com/games/2026-11-14-stanford-at-virginia-tech/) | No current QB row surfaced in text query |
+| 401858519 | [Purdue at Iowa](https://kickoffstatus.com/games/2026-11-14-purdue-at-iowa/) | No current QB row surfaced in text query |
+| 401856885 | [Texas at LSU](https://kickoffstatus.com/games/2026-11-14-texas-at-lsu/) | No current QB row surfaced in text query |
+| 401856864 | [Utah at Arizona](https://kickoffstatus.com/games/2026-11-14-utah-at-arizona/) | No current QB row surfaced in text query |
+| 401856882 | [South Carolina at Arkansas](https://kickoffstatus.com/games/2026-11-14-south-carolina-at-arkansas/) | LaNorris Sellers #16, questionable |
+| 401856863 | [Texas Tech at Oklahoma State](https://kickoffstatus.com/games/2026-11-14-texas-tech-at-oklahoma-state/) | No current QB row surfaced in text query |
+| 401860915 | [Utah State at San Diego State](https://kickoffstatus.com/games/2026-11-14-utah-state-at-san-diego-state/) | Jayden Denegal, probable |
+| 401860917 | [Colorado State at Washington State](https://kickoffstatus.com/games/2026-11-14-colorado-state-at-washington-state/) | No current QB row surfaced in text query |
+| 401864537 | [North Dakota State at Hawai'i](https://kickoffstatus.com/games/2026-11-14-north-dakota-state-at-hawaii/) | No QB row surfaced in dated table |
+
+- Wake Forest–SMU: the actual dated player row shows Gio Lopez **probable**. This supersedes the earlier summary-level reading above, which omitted probable players. The report still leaves the starting assignment open. The original SMU -9.9 gives a reason to revisit the spread, but the CBS split numbers and price qualification keep the current six markets PASS. A 60.5/61.5 split near the frozen 61.4 does not independently qualify either total. Neither outright nor a combined offer qualified.
+- Washington–Michigan State: Washington starter Demond Williams Jr. and Michigan State backup Cam Fancher questionable. Washington -3.5 (+100) is close to frozen -4.1, and the dog price +3.5 (-114) depends on Washington's offensive downside. Neither outright at -150/+142 nor the 42.5/43.5 mixed total earns a limit with the role and pace uncertainty. Retain PASS. https://sports.yahoo.com/articles/msu-football-gets-good-news-012333024.html
+- Auburn–Mississippi State: Mississippi State QB Kamario Taylor out. +2.5 (+100) and over 50.5 (-110) have large frozen differences, but losing a quarterback reduces both the dog and scoring cases. Auburn -2.5 (-115), the two outrights and under 50.5 (-108) still need a separate current advantage. Retain PASS and recheck replacement role before the early kickoff window.
+- Syracuse–NC State: Syracuse lists QB Amari Odom out and Malachi Nelson questionable. NC State QB Will Wilson is out. NC State +2.5 (+100) reverses the original NC State -4.8 and merits recheck if starting roles stabilize. The favorite and both outright prices lack a qualified edge. 53.5 is near frozen 51.5 and QB changes could affect both scoring and possessions. Retain PASS on all six.
+- Utah State–San Diego State: SDSU QB Jayden Denegal probable. The frozen SDSU -8.3 vs CBS SDSU +3 (-115) is a meaningful reversal, with the hook price and current offense still requiring review. Utah State -2.5 (-118), both moneylines and both 42.5 totals remain unsupported for a limit. Keep SDSU as a spread watch and retain PASS.
+- Ole Miss–Oklahoma: Ole Miss QB Trinidad Chambliss probable. Oklahoma +1.5 (-120) reverses frozen Oklahoma -7.8 but carries a premium. Ole Miss -1 (-105), the two outrights and both sides of 49.5 lack a separate sufficiently supported edge at current terms. Retain PASS and recheck a cheaper Oklahoma spread if matchup evidence supports it.
