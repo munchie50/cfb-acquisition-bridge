@@ -1,5 +1,21 @@
 # Week 11 Friday betting card — Top 10 across all markets
 
+## November 12, 1:37 PM CT — Saturday review follow-through
+
+**Five existing Saturday conditionals, zero venue-confirmed plays, no approved parlay.** The refreshed CBS board was recovered by 1:35:39 PM CT. All 40 Saturday cases from the prior handoff received a six-market decision or an explicit price/availability disposition at the available Thursday evidence boundary. No new limit earned. Friday games still carry PASS. The existing Friday 7 a.m. CT recheck and Saturday 7 a.m. CT maximum validity apply, subject to earlier practical cutoffs.
+
+| Rank | Original limit | Latest CBS public display | Status |
+|---:|---|---|---|
+| 1 | Tennessee -2.5 at -115 or better | -2.5/-114 | Within terms on display; recheck Texas A&M WR Craver and OL Baugh. |
+| 2 | Baylor +7.5 at -118 or better | +7.5/-112 | Within terms on display; recheck BYU RB Martin, LB Glasker, Baylor secondary and weather. |
+| 3 | Jacksonville State -7.5 at -105 or better | -7.5/+100 | Within terms on display; conference report pending and exact venue pair still due. |
+| 4 | Georgia -15.5 at -110 or better | -15.5/-110 | At the limit on display. Opposite CBS side differs by half a point; verify the exact offer and SEC personnel. |
+| 5 | North Texas -2.5 at -105 or better | -2.5/-108 | **Price hold.** American report pending. |
+
+The Tennessee/Baylor/Jacksonville State watch build still requires individual-leg revalidation and the actual combined offer. No derivatives earned an independent limit. Michigan–Oregon, Ole Miss–Oklahoma, Fresno State–Texas State and Southern Miss–Louisiana Tech remain PASS after the price and availability comparisons. Public comparison prices recovered for Alabama–Vanderbilt and Colorado State–Washington State left their PASS decisions in place. CBS had no current prices for either at this capture. Do not treat the comparison prices as venue quotes. 
+
+[Selected Hot Sheet](CFB_WEEK11_HOT_SHEET_2026-11-12_1337CT.md) · [CBS capture](CFB_WEEK11_CBS_FBS_CAPTURE_20261112T193539Z.md) · [Availability tracker](https://kickoffstatus.com/).
+
 ## November 12, 1:26 PM CT — manual Monitor partial update
 
 **Five existing Saturday conditionals. Zero venue-confirmed plays. No approved parlay.** The CBS board was recovered by 1:24:39 PM CT. These are public mixed-book observations with unknown offer-update times. The original Friday 7 a.m. CT recheck and Saturday 7 a.m. CT maximum validity still apply, subject to earlier practical cutoffs. No immutable review was renewed.
