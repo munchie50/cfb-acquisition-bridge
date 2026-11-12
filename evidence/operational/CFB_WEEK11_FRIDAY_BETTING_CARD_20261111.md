@@ -1,5 +1,23 @@
 # Week 11 Friday betting card — Top 10 across all markets
 
+## November 12, 1:26 PM CT — manual Monitor partial update
+
+**Five existing Saturday conditionals. Zero venue-confirmed plays. No approved parlay.** The CBS board was recovered by 1:24:39 PM CT. These are public mixed-book observations with unknown offer-update times. The original Friday 7 a.m. CT recheck and Saturday 7 a.m. CT maximum validity still apply, subject to earlier practical cutoffs. No immutable review was renewed.
+
+| Rank | Original limit | CBS display | Material recheck |
+|---:|---|---|---|
+| 1 | Tennessee -2.5 at -115 or better | -2.5/-114 | Within limit on display. Texas A&M WR Mario Craver questionable, OL Trovon Baugh doubtful. Tennessee DL Tyree Weathersby out. |
+| 2 | Baylor +7.5 at -118 or better | +7.5/-112 | Within limit on display. BYU RB LJ Martin probable, LB Isaiah Glasker questionable. Baylor secondary and Provo weather remain relevant. |
+| 3 | Jacksonville State -7.5 at -105 or better | -7.5/+100 | Within limit on display. CUSA game report still pending; confirm exact pair and venue. |
+| 4 | Georgia -15.5 at -110 or better | -15.5/-110 | At limit on display. DT Josh Horton questionable; Missouri run game and late margin risk remain. Opposite CBS side showed Missouri +16, so treat this as a mixed-book display. |
+| 5 | North Texas -2.5 at -105 or better | -2.5/-108 | **Price hold.** American game report pending; UTSA home QB/rushing matchup and the disagreement with the original model remain material. |
+
+Friday's three games remain PASS across all six markets. Planning kickoffs are Pitt 6:00 p.m., UCLA 8:00 p.m., and Colorado 9:15 p.m. CT. Saturday Wake–SMU, Alabama–Vanderbilt, and Oregon State–Boise State remain PASS after focused review. The next Friday update should revisit the remaining Saturday games with changed markets, then confirm venue and placement windows for the five conditionals.
+
+Tennessee/Baylor/Jacksonville State remains a watch build. The three displayed prices multiply to approximately +611 before book terms, with roughly 14.07% break-even. Jacksonville State's eight-point road-cover requirement and pending personnel report remain the weak leg. Georgia adds a 16-point margin requirement and duplicates all existing exposure if booked as a second ticket. North Texas fails its straight-price floor. The moneyline variants have no independently supported price limits. No actual combined or alternate quote was verified, so no derivative or parlay earned a limit.
+
+Sources: [CBS capture](CFB_WEEK11_CBS_FBS_CAPTURE_20261112T192439Z.md) · [Week 11 availability tracker](https://kickoffstatus.com/) · [Afternoon Hot Sheet](CFB_WEEK11_HOT_SHEET_2026-11-12_1326CT.md).
+
 ## November 12, 7:45 AM CT — latest price and personnel check
 
 **Zero venue-confirmed plays.** The original five Saturday conditionals remain on the Friday card. North Texas is on price hold at the latest observed quote.
