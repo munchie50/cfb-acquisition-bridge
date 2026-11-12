@@ -33,3 +33,28 @@ Current disposition: no approved parlay and no $4–$6 stake supported. These ar
 Friday watch: Pitt -3.5/-105 remains outside the ranked list pending official personnel and quarterback review. Saturday watch: Mississippi State's display reverted to +2.5/+100, leaving the prior PASS in place.
 
 Sources: [8:36 AM CBS capture](https://github.com/munchie50/cfb-acquisition-bridge/blob/main/evidence/operational/CFB_WEEK11_CBS_FBS_CAPTURE_20261111T143635Z.md) · [Game-by-game screen](https://github.com/munchie50/cfb-acquisition-bridge/commit/4301ede18223ec592f8d1efb4bbaea6903190302) · [Canonical Hot Sheet](https://github.com/munchie50/cfb-acquisition-bridge/blob/main/evidence/operational/CFB_WEEK11_HOT_SHEET_2026-11-10_1843CT.md).
+
+
+## November 12 morning manual update
+
+**Zero venue-confirmed plays.** The 7:34 a.m. CT Hot Sheet refresh preserves the November 11 pregame card above. Thursday and Friday game rechecks earned no new limits. Friday's sportsbook window remains the target for the five Saturday conditionals.
+
+| Conditional in prior rank order | Original minimum terms | Public display observed this morning |
+|---|---|---|
+| Tennessee spread | -2.5 at -115 or better | DraftKings -115, CBS -114 |
+| Baylor spread | +7.5 at -118 or better | DraftKings -118 and -112, CBS -111 |
+| Jacksonville State spread | -7.5 at -105 or better | DraftKings -102, CBS +100 |
+| Georgia spread | -15.5 at -110 or better | DraftKings and CBS -110 |
+| North Texas spread | -2.5 at -105 or better | DraftKings showed -105 and -108 in separate observations. CBS showed -1.5 at -110. Verify the exact offer. |
+
+All five retain the Friday 7 a.m. CT review and Saturday 7 a.m. CT maximum validity, subject to earlier practical cutoffs. Public displays are retrieval-only. No venue or actual combined parlay quote was verified. No parlay earned approval.
+
+Friday watch remains Illinois at UCLA, with Illinois +10.5 at -120 on CBS and the QB/price tradeoff unresolved, and Pitt, where QB and backfield absences offset the large original margin. Houston, both Thursday games, and the other Friday markets remain PASS after reassessment.
+
+Saturday movement check identified five spreads with at least 1.5 points of change on a side from the selected prior market. Northwestern at Ohio State and USC at Indiana remain original exclusions. The other three are prioritized for the next material check:
+
+- Wake Forest at SMU (401858301). CBS home spread moved from +1 to -1, while the away and home prices come from a mixed-book display. Reporting conflicts on Gio Lopez's status, and Pizzella's production against Merrimack does not establish the same matchup expectation against SMU. Retain PASS and require the current ACC/team QB status and coherent paired market before reconsideration. https://www.rotowire.com/cfootball/headlines/steele-pizzella-news-piles-up-passing-yardage-in-spot-start-239343
+- Alabama at Vanderbilt (401856889). Vanderbilt +17.5 at -110 increases the dog spread cushion against the frozen Alabama -1.7, but Alabama QB Keelon Russell is probable in initial report coverage and Vanderbilt's own absences remain material. Keep as a spread watch at the observed number, pending the next report and exact paired price. Neither outright nor the 50.5 total earned a limit in this movement screen. https://tuscaloosathread.com/ixp/531/p/initial-availability-report-alabama-vanderbilt-2026/
+- Oregon State at Boise State (401860914). Oregon State +15.5 at -112 and under 65.5 at -118 warrant reassessment against the frozen Boise -6.9 and 56.7 total. Boise's official initial report lists QB Maddux Madsen and RB Sire Gaines questionable, leaving scoring and margin assumptions unstable. Keep both as watch cases with no limit until the quarterback status and current paired total are checked. https://broncosports.com/news/2026/11/11/football-week-11-availability-report
+
+Selected slate: evidence/operational/CFB_WEEK11_HOT_SHEET_2026-11-12_0734CT.md. Source and review audit: evidence/audits/CFB_WEEK11_MANUAL_CATCHUP_20261112T133426Z.md.
