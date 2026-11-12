@@ -249,3 +249,9 @@ Ran the grader on the saved 40-game cohort with no finals and reproduced 120 pen
 ## Week 11 PASS pregame price and line movement — November 12, 2026
 
 [Verified movement audit](../audits/CFB_WEEK11_SATURDAY_PASS_PRICE_AND_LINE_MOVEMENT_20261112.json) commit `060ce10c804f095ac360268162ff8bdb9a0feaea`, blob `b949ee5ad8e29adf9b610dbcaab195a13c39dafb`. At the same line, 25 Thursday prices improved, 25 worsened and 36 were unchanged. Same-line spread prices worsened on 10 of 20 and improved on two. Moneylines improved on 18 of 39 and worsened on nine. In the 31 changed-line pairs, 27 traded better odds for a worse line or better line for worse odds. These are mixed-book display comparisons. The paired grader will quantify how the changed numbers affected wins and pushes once official finals qualify. Retain all 40 PASS decisions and the separately registered Friday parlay protocol.
+
+## Paired line and price outcome attribution — November 12, 2026
+
+[Verified grader extension](../../scripts/cfb_grade_paired_straights.py) commit `d203c6892c395d88b980668cc65f1f57d77cdeee`, blob `8d1a31dbf50db2da7d9acc03a01c2c00f3ba554f`. The grader records opening-to-Thursday win/loss/push transitions and reconciles the dollar difference by first applying the Thursday line at the opening price, then applying the Thursday price. The intermediate line and price combination is research arithmetic. This ordering is explicit so the result can be reproduced. No movement is assigned to an ungraded or unavailable pair.
+
+Verified all 120 pending selections against the saved baseline and ran synthetic loss-to-push, push-to-win, win-to-loss and same-line price cases. All attributed components summed to the total payout difference. Week 11 Saturday scoring still awaits qualified official finals. The separately registered Friday parlay comparison awaits combined sportsbook quotes.
