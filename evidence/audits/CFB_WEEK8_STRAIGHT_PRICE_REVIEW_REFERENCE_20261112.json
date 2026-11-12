@@ -1,0 +1,167 @@
+{
+  "schema": "CFB_WEEK8_STRAIGHT_PRICE_REVIEW_REFERENCE_V1",
+  "input_head": "77fd3040ad08600dd3377f83708f52169eb3225e",
+  "sources": [
+    {
+      "path": "evidence/operational/CFB_WEEK8_HOT_SHEET_2026-10-24_1310CT.md",
+      "blob": "affb3451505c77e2a3a528a74cd78e5f1db316e3"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK8_SATURDAY_MORNING_REVALIDATION_20261024T121000Z.md",
+      "blob": "2d42e9bba18510bda53580c6946e91f8d19301fb"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK8_WEEK9_OPENING_REPLAY_CONTINUATION_20261111.json",
+      "blob": "243da617787e24154c77a0953d6641eed1761d39"
+    }
+  ],
+  "rows": [
+    {
+      "id": "401856840",
+      "away": "Texas Tech",
+      "home": "Cincinnati",
+      "selection": "home",
+      "line": 11.5,
+      "limit": -112,
+      "reference_price": -112,
+      "price_shortfall": 0,
+      "quote_recovered_by": "2026-10-23T18:12:30Z",
+      "cutoff": "2026-10-24T00:00:00Z",
+      "final": {
+        "match": "Texas Tech @ Cincinnati",
+        "away": 24,
+        "home": 37
+      },
+      "grade": "W",
+      "net_cents": 446,
+      "review": {
+        "path": "evidence/operational/recommendation_reviews/CFB_CINCINNATI_CONTROLLED_BETA_20261023T181230Z.json",
+        "commit": "86659bedfda1fee7f0dcab0a4dae163b967f740a",
+        "blob": "f8055368eb3f02e748a410f716c9194f8a344278"
+      },
+      "narrative_conflict": null
+    },
+    {
+      "id": "401866448",
+      "away": "Bowling Green",
+      "home": "Buffalo",
+      "selection": "home",
+      "line": -3,
+      "limit": -112,
+      "reference_price": -112,
+      "price_shortfall": 0,
+      "quote_recovered_by": "2026-10-23T18:12:30Z",
+      "cutoff": "2026-10-24T00:00:00Z",
+      "final": {
+        "match": "Bowling Green @ Buffalo",
+        "away": 24,
+        "home": 31
+      },
+      "grade": "W",
+      "net_cents": 446,
+      "review": {
+        "path": "evidence/operational/recommendation_reviews/CFB_BUFFALO_CONTROLLED_BETA_20261023T181230Z.json",
+        "commit": "be7d9b1220748c15170da571950dce7912f63589",
+        "blob": "6e166d3e6c8120a3ae65d3dd8a2b6033b537329c"
+      },
+      "narrative_conflict": null
+    },
+    {
+      "id": "401856728",
+      "away": "LSU",
+      "home": "Auburn",
+      "selection": "home",
+      "line": 7,
+      "limit": -108,
+      "reference_price": 100,
+      "price_shortfall": 0,
+      "quote_recovered_by": "2026-10-23T18:12:30Z",
+      "cutoff": "2026-10-24T00:00:00Z",
+      "final": {
+        "match": "LSU @ Auburn",
+        "away": 38,
+        "home": 17
+      },
+      "grade": "L",
+      "net_cents": -500,
+      "review": {
+        "path": "evidence/operational/recommendation_reviews/CFB_AUBURN_CONTROLLED_BETA_20261023T181230Z.json",
+        "commit": "29d12b67ed55c7cd61a398fed3d36afac19c7d7e",
+        "blob": "2e2ed9a5cfe894ea0b7bb2f9ae1afa6e5e4ec8e8"
+      },
+      "narrative_conflict": null
+    },
+    {
+      "id": "401864525",
+      "away": "Air Force",
+      "home": "Wyoming",
+      "selection": "away",
+      "line": -5.5,
+      "limit": -105,
+      "reference_price": -110,
+      "price_shortfall": 5,
+      "quote_recovered_by": "2026-10-23T18:12:30Z",
+      "cutoff": "2026-10-24T00:00:00Z",
+      "final": {
+        "match": "Air Force @ Wyoming",
+        "away": 14,
+        "home": 28
+      },
+      "grade": "L",
+      "net_cents": -500,
+      "review": {
+        "path": "evidence/operational/recommendation_reviews/CFB_AIR_FORCE_CONTROLLED_BETA_20261023T181230Z.json",
+        "commit": "81e6da9676a6192e96f7403d32156ff294f4ee24",
+        "blob": "7bc25bd945829d9b5af0112d6bc155c4e76b3c63"
+      },
+      "narrative_conflict": "Hot Sheet recheck prose calls DraftKings -105; immutable quote object and rendered reference say -110."
+    },
+    {
+      "id": "401856841",
+      "away": "West Virginia",
+      "home": "TCU",
+      "selection": "away",
+      "line": 10.5,
+      "limit": -105,
+      "reference_price": -108,
+      "price_shortfall": 3,
+      "quote_recovered_by": "2026-10-23T18:12:30Z",
+      "cutoff": "2026-10-24T00:00:00Z",
+      "final": {
+        "match": "West Virginia @ TCU",
+        "away": 24,
+        "home": 20
+      },
+      "grade": "W",
+      "net_cents": 463,
+      "review": {
+        "path": "evidence/operational/recommendation_reviews/CFB_WEST_VIRGINIA_CONTROLLED_BETA_20261023T181230Z.json",
+        "commit": "9d670c78ff27f041674f796994539a6a4e54b6d3",
+        "blob": "5544fa149f016f27e495b3de3426a2ae38654e5e"
+      },
+      "narrative_conflict": "Hot Sheet recheck prose calls DraftKings -105; immutable quote object and rendered reference say -108."
+    }
+  ],
+  "tiers": [
+    {
+      "allowance": 0,
+      "n": 3,
+      "stake_cents": 1500,
+      "net_cents": 392
+    },
+    {
+      "allowance": 1,
+      "n": 3,
+      "stake_cents": 1500,
+      "net_cents": 392
+    },
+    {
+      "allowance": 2,
+      "n": 3,
+      "stake_cents": 1500,
+      "net_cents": 392
+    }
+  ],
+  "confirmed_price_only_rejections": 0,
+  "limitations": "The immutable recorded review quote is the controlled comparison input. Disagreements between prose and quote objects stay explicit. No venue offer or sole blocker confirmed. Saturday morning revalidation was after the saved Friday 7 p.m. CT cutoff for all five; four were still pregame on Saturday, which does not reopen the decisions. All returns hypothetical and separate from actual execution."
+}
