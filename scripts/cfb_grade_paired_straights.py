@@ -32,6 +32,18 @@ def summary(tickets):
     }
 
 
+def compare_graded_pair(opening, thursday):
+    if thursday is None or opening["grade"] == "PENDING":
+        return None
+    result = "ALL_PUSH" if thursday["grade"] == "PUSH" else thursday["grade"]
+    thursday_at_opening_price = scenario_returns(result, opening["price"])["500"]["net_cents"]
+    return {
+        "transition": f'{opening["grade"]}_TO_{thursday["grade"]}',
+        "line_effect_cents": thursday_at_opening_price - opening["net_cents"],
+        "price_effect_cents": thursday["net_cents"] - thursday_at_opening_price,
+    }
+
+
 def grade(baseline, finals):
     if baseline["schema"] != "CFB_WEEK11_SATURDAY_PASS_PREGAME_BASELINE_V1":
         raise ValueError("unsupported pregame baseline schema")
@@ -66,6 +78,7 @@ def grade(baseline, finals):
             results.append({
                 "id": game, "market": market, "side": side, "comparison": comparison,
                 "opening": opening, "thursday": thursday,
+                "paired_effects": compare_graded_pair(opening, thursday),
                 "qualified_final_source": final["source"] if opening["grade"] != "PENDING" else None,
             })
         if markets != {"SPREAD", "ML", "TOTAL"}:
@@ -87,9 +100,24 @@ def grade(baseline, finals):
             net = None
             if key != "UNAVAILABLE" and opening["graded"]:
                 net = thursday["graded_net_cents"] - opening["graded_net_cents"]
-            comparisons[key] = {"opening": opening, "thursday": thursday, "net_delta_cents": net}
+            effects = [r["paired_effects"] for r in rows if r["paired_effects"] is not None]
+            line_net = sum(e["line_effect_cents"] for e in effects) if effects else None
+            price_net = sum(e["price_effect_cents"] for e in effects) if effects else None
+            if effects and line_net + price_net != net:
+                raise ValueError("paired effects do not reconcile")
+            comparisons[key] = {
+                "opening": opening, "thursday": thursday, "net_delta_cents": net,
+                "grade_transitions": dict(sorted(Counter(e["transition"] for e in effects).items())),
+                "line_effect_cents": line_net, "price_effect_cents": price_net,
+            }
         groups[market] = {"opening": summary([r["opening"] for r in selected]), "pairs": comparisons}
-    return {"games": len(games), "by_market": groups, "rows": results}
+    return {
+        "games": len(games), "by_market": groups, "rows": results,
+        "effect_method": (
+            "Research arithmetic. Apply the Thursday line at the opening price first, then "
+            "apply the Thursday price. The intermediate line and price combination is hypothetical."
+        ),
+    }
 
 
 def main():
