@@ -1,0 +1,11 @@
+# RUN_STARTED
+observed_utc: 2026-11-12T13:04:02.809Z
+trigger_type: NATURAL_SCHEDULED
+scheduled_for_utc: 2026-11-12T13:00:00Z
+invocation_id: UNKNOWN
+correlation_id: scheduled-20261112-0700-11
+runner_id: UNKNOWN
+stage: STARTUP_TRACE
+connector_attempt: mcp__GitHub__create_file
+status: RUN_STARTED
+credentials_logged: false
