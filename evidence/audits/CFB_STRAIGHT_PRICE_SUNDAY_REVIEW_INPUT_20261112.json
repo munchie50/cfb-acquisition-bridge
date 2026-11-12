@@ -1,0 +1,118 @@
+{
+  "schema": "CFB_STRAIGHT_PRICE_SUNDAY_REVIEW_INPUT_V1",
+  "input_head": "bcbce15218c0dcb0b0f7278169dd1c8123a238a1",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK8_STRAIGHT_PRICE_REVIEW_REFERENCE_20261112.json",
+      "blob": "4bd7fc59664cbee4088dbe6eb9d8c0c2ff0200fc"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK9_STRAIGHT_PRICE_DEADLINE_RECONCILIATION_20261112.json",
+      "blob": "8011fd59eb251954e31c512031a70d579bbd95e7"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK10_STRAIGHT_PRICE_DEADLINE_RECONCILIATION_20261112.json",
+      "blob": "ad61fc8fa33aafafc32ef7b16a62a05d2ff3608f"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK10_STRAIGHT_PRICE_PAIRED_BASELINE_20261112.json",
+      "blob": "fe8c6cd421d00a6c7146140792ccdf28ddcc12a0"
+    },
+    {
+      "path": "evidence/audits/CFB_STRAIGHT_PRICE_SHADOW_WEEK10_FAU_20261112.json",
+      "blob": "980577b397260e016caf25433dc5f3890148ed7a"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK11_STRAIGHT_PRICE_AFTERNOON_COMPARISON_20261112.json",
+      "blob": "d636b88dd387e00a6504157276621550c145ad6d"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK11_CBS_FBS_CAPTURE_20261112T193539Z.md",
+      "blob": "2f7a4f91176154d041e6dbf2186ecad9e642e7e6",
+      "ref": "a79af6fc244e42978af59be4b34631d743d46519"
+    }
+  ],
+  "coverage": {
+    "unique_review_cases": 31,
+    "closed_cases": 26,
+    "week11_cases_awaiting_finals": 5,
+    "confirmed_price_only_rejections": 0,
+    "week10_opening_sensitivity_is_subset": true,
+    "fau_later_case_is_subset": true
+  },
+  "weekly": [
+    {
+      "week": 8,
+      "cases": 5,
+      "basis": "Immutable review references; two prose/quote conflicts. Saturday recheck after cutoff.",
+      "price_pass_by_allowance": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "week": 9,
+      "cases": 3,
+      "basis": "Two documented timely rechecks, both meet caps. UCF's later matching display after expiry.",
+      "timely_display_net_cents": -65
+    },
+    {
+      "week": 10,
+      "cases": 18,
+      "basis": "Two timely documented rechecks; 14 Friday cases reached expiry before manual recovery; two other rechecks unestablished.",
+      "predecision_opening_same_line_pairs": 3,
+      "display_only_two_point_fau_case": 1
+    },
+    {
+      "week": 11,
+      "cases": 5,
+      "basis": "Same five Saturday conditionals; latest Thursday mixed-book spread fields reproduced the earlier afternoon display. Venue and material clearance unverified.",
+      "latest_capture_utc": "2026-11-12T19:35:39Z",
+      "follow": [
+        {
+          "id": "401856888",
+          "line": -2.5,
+          "price": -114,
+          "book_icon": "34",
+          "limit": -115
+        },
+        {
+          "id": "401856858",
+          "line": 7.5,
+          "price": -112,
+          "book_icon": "30",
+          "limit": -118
+        },
+        {
+          "id": "401870752",
+          "line": -7.5,
+          "price": 100,
+          "book_icon": "35",
+          "limit": -105
+        },
+        {
+          "id": "401856883",
+          "line": -15.5,
+          "price": -110,
+          "book_icon": "30",
+          "limit": -110
+        },
+        {
+          "id": "401862827",
+          "line": -2.5,
+          "price": -108,
+          "book_icon": "30",
+          "limit": -105
+        }
+      ],
+      "price_pass_by_allowance": [
+        4,
+        4,
+        4
+      ]
+    }
+  ],
+  "sunday_review": "Reuse as input to the existing missed-opportunity review. Keep predecision observations, review-reference quotes, verified post-review pre-deadline quotes, and post-cutoff recovery distinct. Report eligible opportunity denominators and hypothetical results only within like-for-like windows; count a confirmed price-only miss only with documented timely exact-line venue evidence and other conditions satisfied. Hold the Week 11 cohort open through official finals; capture parlay quotes under its own registered window.",
+  "limits": "These are bounded audited cases, not a league-wide price rejection rate. No pooled ROI across the differently timed cohorts and no production change."
+}
