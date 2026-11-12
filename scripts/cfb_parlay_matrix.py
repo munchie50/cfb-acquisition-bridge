@@ -4,7 +4,8 @@ Input JSON contains card_at, legs, and optional offers and straight_top10.
 Each leg has rank, game_id, market (SPREAD/ML/MONEYLINE/TOTAL), side, line, kickoff
 and cutoff. Moneyline line is null. Each offer has kind, book, source,
 observed_at, price (American odds), and its exact leg identities. Only
-BOOK_OFFER observations qualify. straight_top10 contains exact leg
+BOOK_OFFER observations qualify. A ranked leg with min_leg_price requires
+a matching displayed price on the offered leg in the combined observation. straight_top10 contains exact leg
 identities from the independently selected straight card, if available.
 Optional finals are keyed by game_id and contain status, source, away,
 and home. Only QUALIFIED_FINAL scores are graded. Push-adjusted book
@@ -85,7 +86,7 @@ def scenario_returns(result, price):
     return returns
 
 
-def compare_portfolios(policy, builds, legs, card_at):
+def compare_portfolios(policy, builds, legs, card_at, ineligible_prices):
     depth, count = policy["depth"], policy["legs"]
     start, end = timestamp(policy["quote_from"]), timestamp(policy["select_at"])
     if depth not in (10, 15, 20, 25, 30) or count not in (2, 3, 4, 5):
@@ -108,8 +109,14 @@ def compare_portfolios(policy, builds, legs, card_at):
                 current = latest.get(offer["book"])
                 if current is None or observed > timestamp(current["observed_at"]):
                     latest[offer["book"]] = offer
-                elif observed == timestamp(current["observed_at"]) and offer["price"] != current["price"]:
+                elif observed == timestamp(current["observed_at"]) and (
+                    offer["price"], offer["displayed_leg_prices_by_rank"]
+                ) != (current["price"], current["displayed_leg_prices_by_rank"]):
                     raise ValueError("conflicting prices from one book at the same time")
+        for book, offer in list(latest.items()):
+            observed = timestamp(offer["observed_at"])
+            if any(observed <= invalid <= end for invalid in ineligible_prices[tuple(ranks), book]):
+                del latest[book]
         if latest:
             def quote_order(offer):
                 price = offer["price"]
@@ -166,6 +173,10 @@ def evaluate(data):
     by_identity = {identity(leg): leg for leg in legs}
     if len(by_identity) != len(legs):
         raise ValueError("duplicate ranked leg")
+    minimum_prices = {key: leg["min_leg_price"] for key, leg in by_identity.items()
+                      if "min_leg_price" in leg}
+    if any(type(price) is not int or abs(price) < 100 for price in minimum_prices.values()):
+        raise ValueError("invalid registered minimum leg price")
     timing = {
         key: (timestamp(leg["cutoff"]), timestamp(leg["kickoff"]))
         for key, leg in by_identity.items()
@@ -176,6 +187,7 @@ def evaluate(data):
         raise ValueError("invalid straight Top 10")
     qualified = defaultdict(list)
     rejected = Counter()
+    ineligible_prices = defaultdict(list)
     seen = set()
     for offer in data.get("offers", []):
         if offer.get("kind") != "BOOK_OFFER":
@@ -200,13 +212,26 @@ def evaluate(data):
             rejected["outside_pregame_window"] += 1
             continue
         ranks = tuple(sorted(by_identity[key]["rank"] for key in keys))
-        token = (ranks, book, source, observed, price)
+        displayed = {key: leg.get("price") for key, leg in zip(keys, offer["legs"])}
+        if any(type(displayed[key]) is not int or abs(displayed[key]) < 100
+               for key in keys if key in minimum_prices):
+            rejected["missing_or_invalid_displayed_leg_price"] += 1
+            ineligible_prices[ranks, book].append(observed)
+            continue
+        if any(displayed[key] < minimum_prices[key] for key in keys if key in minimum_prices):
+            rejected["below_registered_leg_price"] += 1
+            ineligible_prices[ranks, book].append(observed)
+            continue
+        displayed_by_rank = {by_identity[key]["rank"]: displayed[key]
+                             for key in keys if key in minimum_prices}
+        token = (ranks, book, source, observed, price, tuple(sorted(displayed_by_rank.items())))
         if token in seen:
             rejected["duplicate_observation"] += 1
             continue
         seen.add(token)
         qualified[ranks].append({
             "book": book, "source": source, "observed_at": observed.isoformat(), "price": price,
+            "displayed_leg_prices_by_rank": dict(sorted(displayed_by_rank.items())),
             "break_even_probability": -price / (100 - price) if price < 0 else 100 / (100 + price),
         })
 
@@ -261,7 +286,7 @@ def evaluate(data):
             })
     report = {"cells": cells, "builds": builds, "rejected_offers": dict(sorted(rejected.items()))}
     if "portfolio_policy" in data:
-        report["portfolio"] = compare_portfolios(data["portfolio_policy"], builds, legs, card_at)
+        report["portfolio"] = compare_portfolios(data["portfolio_policy"], builds, legs, card_at, ineligible_prices)
     return report
 
 
