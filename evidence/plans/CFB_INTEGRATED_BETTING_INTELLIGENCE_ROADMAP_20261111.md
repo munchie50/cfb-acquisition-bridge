@@ -317,3 +317,7 @@ The user set the default prospective parlay research target to 30 distinct games
 ## Week 11 Top 30 football review triage — November 12, 2026
 
 [Verified triage](../audits/CFB_WEEK11_TOP30_FOOTBALL_REVIEW_TRIAGE_20261112.json) commit `92c3011e336e588fef197ad911aba5028eaea6ad`, blob `59db9590f4097455f0e97f8f521f966776e20962`. Matched all 37 unranked intake games to their saved football assessments and preserved their PASS decisions. Identified six initial spread follow-ups with specific personnel or matchup questions. These are an unranked review queue chosen from saved evidence. Refresh material evidence and all available market branches in the next review before deciding whether any game earns a prospective research rank. Verified rank depth remains ten.
+
+## Week 11 Top 30 first six follow-ups — November 12, 2026
+
+[Verified display recheck](../audits/CFB_WEEK11_TOP30_SIX_GAME_RECHECK_20261112.json) commit `477efc43bc916bef21ed7bac728840a120ee834c`, blob `f9afeba9027043fc9ca095c7a6c82e6142d9ffa9`. Captured 36 public spread, moneyline and total prices across the six triaged games. Five selected spread prices were unchanged and Virginia Tech -15.5 went from -108 to -110. Kansas offensive-line statuses surfaced in a secondary tracker and remain a lead for primary-source verification. All six retained PASS. Verified rank depth remains ten. Resume with dated material availability evidence, refreshed prices, and the remaining 31 unranked games as their windows permit.
