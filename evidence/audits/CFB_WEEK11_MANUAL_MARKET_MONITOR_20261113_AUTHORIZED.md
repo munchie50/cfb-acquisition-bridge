@@ -1,0 +1,3 @@
+# Friday manual Market Monitor publication audit
+
+CBS response recovered by 2026-11-13T13:43:38.149475+00:00. Coverage {'governed_games': 67, 'matched_games': 67, 'source_team_rows': 134, 'future_games': 59, 'future_team_rows': 118, 'past_or_started_games': 8, 'missing_game_ids': []}. Gaps {}. Three Friday games and five Saturday cases reassessed. Further Saturday material review open. No venue or parlay offer verified. Local deterministic audit {'verdict': 'PASS_CONDITIONAL_CANONICAL_PRESENTATION_ONLY', 'games': 67, 'sheet_blob': '4b84e0a7e051c00549e0b0b2aa323a546a8939f1', 'scope': 'typed canonical display only; no source truth/betting/natural-run acceptance'}.
