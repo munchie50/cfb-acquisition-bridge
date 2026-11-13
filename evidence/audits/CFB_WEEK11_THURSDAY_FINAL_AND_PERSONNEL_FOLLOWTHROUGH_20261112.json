@@ -1,0 +1,136 @@
+{
+  "schema": "CFB_WEEK11_THURSDAY_FINAL_AND_PERSONNEL_FOLLOWTHROUGH_V1",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK11_PROSPECTIVE_REPLAY_SCHEDULE_AND_SELECTIONS_20261111.json",
+      "blob": "93dd7729ad0375a5f0f484a3ddc88c2b748008e2"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK11_TOP30_REMAINING_PERSONNEL_RECHECK_20261112.json",
+      "blob": "ff108da271c07818b410792166ea0d1cb7757542"
+    }
+  ],
+  "checks": [
+    {
+      "id": "401862824",
+      "away": "Memphis",
+      "home": "South Florida",
+      "kickoff_utc": "2026-11-13T01:00:00.000Z",
+      "ncaa_schedule_line": 228,
+      "official_final": null,
+      "selections": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 3.5,
+          "price": -105,
+          "cbs_book_icon": "35",
+          "stake_cents": 500
+        },
+        {
+          "market": "ML",
+          "selection": "home",
+          "line": null,
+          "price": 150,
+          "cbs_book_icon": "30",
+          "stake_cents": 500
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 49.5,
+          "price": -115,
+          "cbs_book_icon": "30",
+          "stake_cents": 500
+        }
+      ],
+      "kickoff_status": "PUBLISHED_CLOCK_CORROBORATED",
+      "status": "FINAL_UNVERIFIED",
+      "source_checks": [
+        "https://www.espn.com/college-football/game/_/gameId/401862824",
+        "https://gousfbulls.com/sports/football/schedule"
+      ],
+      "source_result": "ESPN web retrieval encountered a JavaScript verification page. Official school schedule exposed the fixture without a confirmed final."
+    },
+    {
+      "id": "401869969",
+      "away": "Louisiana",
+      "home": "UL Monroe",
+      "kickoff_utc": "2026-11-13T02:00:00.000Z",
+      "ncaa_schedule_line": 229,
+      "official_final": null,
+      "selections": [
+        {
+          "market": "SPREAD",
+          "selection": "home",
+          "line": 10.5,
+          "price": -110,
+          "cbs_book_icon": "35",
+          "stake_cents": 500
+        },
+        {
+          "market": "ML",
+          "selection": "away",
+          "line": null,
+          "price": -400,
+          "cbs_book_icon": "34",
+          "stake_cents": 500
+        },
+        {
+          "market": "TOTAL",
+          "selection": "over",
+          "line": 49.5,
+          "price": -105,
+          "cbs_book_icon": "34",
+          "stake_cents": 500
+        }
+      ],
+      "kickoff_status": "PUBLISHED_CLOCK_CORROBORATED",
+      "status": "FINAL_UNVERIFIED",
+      "source_checks": [
+        "https://www.espn.com/college-football/game/_/gameId/401869969",
+        "https://ulmwarhawks.com/sports/football/schedule"
+      ],
+      "source_result": "ESPN web retrieval encountered a JavaScript verification page. Official school schedule exposed the fixture without a confirmed final."
+    }
+  ],
+  "pending_personnel": [
+    {
+      "id": "401862825",
+      "game": "East Carolina at Charlotte",
+      "next": "American game-day report pending. ECU’s recent wins support direction, while the saved road-margin and Charlotte contribution questions remain."
+    },
+    {
+      "id": "401870769",
+      "game": "Kennesaw State at Sam Houston",
+      "next": "CUSA game-day report pending. Sam Houston’s explosive passing gives it a route to stay inside the margin despite its conference record."
+    },
+    {
+      "id": "401862828",
+      "game": "Tulane at Rice",
+      "next": "American game-day report pending. Tulane’s red-zone defense supports suppression, but does not resolve Rice’s scoring contribution or the total."
+    },
+    {
+      "id": "401871060",
+      "game": "Florida International at Delaware",
+      "next": "CUSA game-day report pending. Delaware’s explosive passing and Minicucci’s recent production support the favorite case. FIU’s third-down defense and the spread gap still matter."
+    },
+    {
+      "id": "401870796",
+      "game": "New Mexico State at Missouri State",
+      "next": "CUSA game-day report pending. Missouri State’s explosive receiver supports its home offense, with a weak defense still offsetting the case."
+    },
+    {
+      "id": "401858294",
+      "game": "Boston College at Notre Dame",
+      "next": "Tracker showed no dated matchup report. The favorite’s large margin and the underdog’s scoring contribution remain unresolved."
+    },
+    {
+      "id": "401862826",
+      "game": "Florida Atlantic at Tulsa",
+      "next": "American game-day report pending. Both teams scored at least 60 in their prior games. The unusually high total still requires sustained scoring from both."
+    }
+  ],
+  "personnel_tracker": "https://kickoffstatus.com/",
+  "note": "The tracker search still showed the three CUSA games pending and did not provide enough dated evidence to change the saved outstanding personnel list. Preserve the previous partial grading and original research ranks. Grade these six frozen selections only after official directed finals qualify."
+}
