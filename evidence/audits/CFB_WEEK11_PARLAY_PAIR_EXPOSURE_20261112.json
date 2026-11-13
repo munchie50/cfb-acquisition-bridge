@@ -1,0 +1,59 @@
+{
+  "schema": "CFB_WEEK11_PARLAY_PAIR_EXPOSURE_V1",
+  "source": {
+    "path": "evidence/audits/CFB_WEEK11_PARLAY_STRAIGHT_OVERLAP_RESEARCH_20261112.json",
+    "blob": "9bcaa1270a04192f7257169e1b32fb254870a0a9"
+  },
+  "method": "Enumerate unordered distinct same-size pairs and all mixed-size pairs, each build with at most one straight-card leg. Count common directed games. A loss on a common leg loses both builds. Counts describe structural possibilities before offer, price-limit or football eligibility checks.",
+  "results": [
+    {
+      "leg_counts": [
+        3,
+        3
+      ],
+      "pairs": 1770,
+      "shared_game_histogram": {
+        "0": 350,
+        "1": 990,
+        "2": 430
+      },
+      "zero_straight_leg_in_both_histogram": {
+        "1": 15,
+        "2": 30
+      }
+    },
+    {
+      "leg_counts": [
+        3,
+        4
+      ],
+      "pairs": 3300,
+      "shared_game_histogram": {
+        "0": 200,
+        "1": 1500,
+        "2": 1380,
+        "3": 220
+      },
+      "zero_straight_leg_in_both_histogram": {
+        "2": 30,
+        "3": 20
+      }
+    },
+    {
+      "leg_counts": [
+        4,
+        4
+      ],
+      "pairs": 1485,
+      "shared_game_histogram": {
+        "1": 300,
+        "2": 825,
+        "3": 360
+      },
+      "zero_straight_leg_in_both_histogram": {
+        "3": 10
+      }
+    }
+  ],
+  "next": "For future qualified offers compare the original ranking with the observed shared-game count, payout and coverage. Preserve the Friday registration and its original selection policy."
+}
