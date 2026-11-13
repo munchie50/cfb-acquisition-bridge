@@ -68,7 +68,7 @@ jobs:
           parent = os.environ['CFB_EXPECTED_PARENT']
           governed = ['scripts', 'evidence/operational', 'evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json']
           subprocess.run(['git', 'diff', '--exit-code', parent, 'HEAD', '--', *governed], check=True)
-          now = datetime.now(timezone.utc).replace(microsecond=0)
+          now = datetime.now(timezone.utc)
           as_of = now.strftime('%Y-%m-%dT%H:%M:%SZ')
           cycle = now.strftime('CFB_MARKET_MONITOR_%Y%m%dT%H%M%SZ')
           request_text = Path('handoff/monitor-qa/request.json').read_text()
@@ -147,7 +147,7 @@ jobs:
           PY
           echo 'Shadow draft compiled and audited with retained decisions' >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: success()
         with:
           name: cfb-external-monitor-handoff-${{ github.run_id }}-${{ github.run_attempt }}
           path: ${{ runner.temp }}/proof/
