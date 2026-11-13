@@ -1,17 +1,9 @@
 name: CFB Market Monitor collection
 
 on:
-  schedule:
-    - cron: '52 6,12 * * *'
-      timezone: America/Chicago
-    - cron: '22 19 * * 3-5'
-      timezone: America/Chicago
-  workflow_dispatch:
   push:
-    branches: [main]
-    paths:
-      - '.github/workflows/cfb_monitor_collection.yml'
-      - 'scripts/cfb_monitor_collection.py'
+    branches: [qa/cfb-preflight-failure-20261112]
+    paths: ['.github/workflows/cfb_monitor_collection.yml']
 
 permissions:
   contents: read
@@ -61,6 +53,8 @@ jobs:
         env:
           PYTHONPATH: scripts
         run: |
+          echo 'Intentional QA compiler failure'
+          exit 19
           python - <<'PY'
           import hashlib
           import json
