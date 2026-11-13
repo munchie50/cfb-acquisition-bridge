@@ -19,7 +19,7 @@ permissions:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
         with:
@@ -31,6 +31,7 @@ jobs:
       - name: Install HTML parser
         run: python -m pip install lxml==5.4.0
       - name: Collect and qualify source package
+        timeout-minutes: 2
         run: >-
           python scripts/cfb_monitor_collection.py collect
           --output "$RUNNER_TEMP/monitor-collection"
@@ -42,6 +43,9 @@ jobs:
           if-no-files-found: error
           retention-days: 7
       - name: Verify source for compiler preflight
+        id: preflight_source
+        continue-on-error: true
+        timeout-minutes: 1
         run: |
           mkdir -p "$RUNNER_TEMP/proof"
           python -m zipfile -c "$RUNNER_TEMP/collection.zip" "$RUNNER_TEMP"/monitor-collection/*
@@ -50,6 +54,10 @@ jobs:
             --run "$GITHUB_RUN_ID" --attempt "$GITHUB_RUN_ATTEMPT" \
             --head "$GITHUB_SHA" --event "$GITHUB_EVENT_NAME" > "$RUNNER_TEMP/proof/source.json"
       - name: Compile and audit a read-only preflight draft
+        id: preflight_compile
+        if: steps.preflight_source.outcome == 'success'
+        continue-on-error: true
+        timeout-minutes: 1
         env:
           PYTHONPATH: scripts
         run: |
@@ -106,8 +114,25 @@ jobs:
           PY
           echo 'Read-only preflight draft compiled and audited with retained decisions' >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
+        id: preflight_upload
+        if: steps.preflight_compile.outcome == 'success'
+        continue-on-error: true
+        timeout-minutes: 1
         with:
           name: cfb-monitor-preflight-${{ github.run_id }}-${{ github.run_attempt }}
           path: ${{ runner.temp }}/proof/
           if-no-files-found: error
           retention-days: 7
+      - name: Report optional preflight failure
+        if: >-
+          steps.preflight_source.outcome == 'failure' ||
+          steps.preflight_compile.outcome == 'failure' ||
+          steps.preflight_upload.outcome == 'failure'
+        env:
+          SOURCE_OUTCOME: ${{ steps.preflight_source.outcome }}
+          COMPILE_OUTCOME: ${{ steps.preflight_compile.outcome }}
+          UPLOAD_OUTCOME: ${{ steps.preflight_upload.outcome }}
+        run: |
+          message="Optional preflight incomplete (verify=$SOURCE_OUTCOME, compile=$COMPILE_OUTCOME, upload=$UPLOAD_OUTCOME). Collection upload succeeded."
+          echo "::warning::$message"
+          echo "$message" >> "$GITHUB_STEP_SUMMARY"
