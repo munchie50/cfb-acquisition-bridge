@@ -111,9 +111,9 @@ jobs:
               ('source outside freshness window', handoff, parent, packet, now + timedelta(seconds=901)),
           ]
           rejected = []
-          for reason, request, observed_parent, payload, clock in cases:
+          for reason, mutated, observed_parent, payload, clock in cases:
               try:
-                  validate(request, observed_parent, payload, clock)
+                  validate(mutated, observed_parent, payload, clock)
               except ValueError as error:
                   if str(error) != reason:
                       raise
