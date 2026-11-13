@@ -1,5 +1,10 @@
 # Week 11 Friday betting card — Top 10 across all markets
 
+## November 13, 1:22 PM CT — manual 1 p.m. continuation
+
+Friday games remain PASS. CBS public display still showed Tennessee -2.5 at -114 and Baylor +7.5 at -112, within the original analytical limits of Tennessee -2.5 at -115 or better and Baylor +7.5 at -118 or better. Both retain the 3 p.m. CT reconciliation and Saturday 7 a.m. CT final cutoff. For placement after 4 p.m., revalidate both before treating the conditions as current. Jacksonville State, Georgia and North Texas remain holds. No venue-confirmed offer or approved parlay. [Hot Sheet](CFB_WEEK11_HOT_SHEET_2026-11-13_1322CT.md)
+
+
 ## November 13, 07:43 AM CT — manual Monitor update
 
 Tennessee -2.5 at -115 or better and Baylor +7.5 at -118 or better are conditional. DraftKings public display showed -115 and -112 respectively. Recheck 3 p.m. CT Friday. Original final cutoff 7 a.m. CT Saturday. Jacksonville State, Georgia and North Texas are holds at current terms. Friday games remain PASS. No verified venue offer or approved parlay. [Hot Sheet](CFB_WEEK11_HOT_SHEET_2026-11-13_0743CT.md)
