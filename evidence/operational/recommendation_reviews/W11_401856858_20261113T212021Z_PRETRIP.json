@@ -1,0 +1,68 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2",
+  "game_id": "401856858",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-13T21:20:58Z",
+  "original_lineage_blob": "3a337e8bdf5cd732fb76697cf2a87b2d74ba8ce9",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "away",
+  "rationale": "Retain Baylor with the full +7.5 cushion. Beaty remains questionable and BYU's Johnson doubtful, while Martin and Glasker are probable. DraftKings public +7.5/-112 qualifies at the original limit. Other markets did not earn a limit.",
+  "model_review": "Original Week11 BYU -10.6 / total52.1 favors the home team and is retained as explicit counterevidence, not silently replaced. Current Baylor31.89 scoring/17.00 allowed and red-zone defense19scores on26trips,10TD, give a competitive-game path. BYU's current31.0/19.8 and50.9% third-down offense, Baylor penalties and Lagway's low season completion percentage keep confidence modest. Four BYU interceptions last game are not assumed to repeat.",
+  "material_sources": [
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-baylor-at-byu/",
+      "retrieved_at": "2026-11-13T21:20:58Z",
+      "finding": "Thursday Big 12 reproduction remains latest in the pre-trip fetch. Beaty questionable, Johnson doubtful, Martin and Glasker probable."
+    },
+    {
+      "url": "https://weather.football/college/game/baylor-at-byu-2026-11-14",
+      "retrieved_at": "2026-11-13T21:20:58Z",
+      "finding": "Provo forecast has negligible impact."
+    }
+  ],
+  "uncertainty": "Retain Baylor with the full +7.5 cushion. Beaty remains questionable and BYU's Johnson doubtful, while Martin and Glasker are probable. DraftKings public +7.5/-112 qualifies at the original limit. Other markets did not earn a limit. Confirm the actual venue price and any new personnel or weather changes.",
+  "decision_rule": "Baylor full-game spread +7.5 or better at -118 or better.",
+  "source_qualification": "DraftKings US-VA public league display. Offer update and actual venue execution are unknown.",
+  "market_reference": {
+    "game_id": "401856858",
+    "market": "SPREAD",
+    "selection": "away",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-14T20:30:00Z",
+    "kickoff_source_url": "https://byucougars.com/news/2026/11/9/byu-football-game-week-2026-baylor",
+    "collection_start": "2026-11-13T21:19:35Z",
+    "collection_end": "2026-11-13T21:19:35Z",
+    "quotes": [
+      {
+        "market": "SPREAD",
+        "selection": "away",
+        "line": 7.5,
+        "price": -112,
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/baylor-%40-byu/34964236",
+        "game_id": "401856858",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://sportsbook.draftkings.com/leagues/football/ncaaf?category=games&subcategory=game-lines",
+        "retrieved_at": "2026-11-13T21:19:35Z",
+        "offer_updated_at": null
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "away",
+    "line": 7.5,
+    "minimum_price": -118,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-14T01:30:00Z",
+  "planning_cutoff_utc": "2026-11-14T13:00:00Z",
+  "cutoff_basis": "Actual after-3 p.m. CT pre-trip review. Recheck at the existing 7:30 p.m. CT evening availability boundary or sooner on a material change. Original Saturday 7 a.m. CT final cutoff retained.",
+  "execution_window": {
+    "start_utc": "2026-11-13T21:20:58Z",
+    "end_utc": "2026-11-14T13:00:00Z"
+  }
+}
