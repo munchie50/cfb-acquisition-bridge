@@ -1,0 +1,153 @@
+name: CFB external Monitor handoff QA
+on:
+  push:
+    branches: [qa/cfb-external-monitor-handoff-20261112]
+    paths: ['.github/workflows/cfb_external_monitor_handoff_qa.yml']
+permissions:
+  contents: read
+jobs:
+  monitor-shadow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify checkout and initialize diagnostic output
+        run: |
+          mkdir -p "$RUNNER_TEMP/proof"
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          test "$(git rev-parse --is-shallow-repository)" = false
+          git rev-parse HEAD > "$RUNNER_TEMP/proof/checkout.txt"
+          echo 'Checkout verified' >> "$GITHUB_STEP_SUMMARY"
+      - name: Collect fresh source
+        run: |
+          python -m pip install lxml==5.4.0
+          python scripts/cfb_monitor_collection.py collect \
+            --output "$RUNNER_TEMP/collection" --run "$GITHUB_RUN_ID" \
+            --attempt "$GITHUB_RUN_ATTEMPT" --event "$GITHUB_EVENT_NAME"
+          python -m zipfile -c "$RUNNER_TEMP/proof/collection.zip" "$RUNNER_TEMP"/collection/*
+          echo 'Fresh CBS source collected' >> "$GITHUB_STEP_SUMMARY"
+      - name: Verify source identity, freshness and reconstruction
+        run: |
+          python scripts/cfb_monitor_collection.py verify \
+            --archive "$RUNNER_TEMP/proof/collection.zip" --output "$RUNNER_TEMP/verified" \
+            --run "$GITHUB_RUN_ID" --attempt "$GITHUB_RUN_ATTEMPT" \
+            --head "$GITHUB_SHA" --event "$GITHUB_EVENT_NAME" > "$RUNNER_TEMP/proof/source.json"
+          echo 'Source package verified' >> "$GITHUB_STEP_SUMMARY"
+      - name: Validate publishing handoff and compile draft
+        env:
+          PYTHONPATH: scripts
+          CFB_EXPECTED_PARENT: 7dfcefff2bcb28c47e8055fd0a34efca5de41672
+          CFB_EXPECTED_REQUEST: e50dd0af7e9ea5bc6fc2c02a802ec8689baba03e
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          import os
+          import subprocess
+          from datetime import timedelta
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          import cfb_week11_publication as week
+
+          gate = week.gate
+          temp = Path(os.environ['RUNNER_TEMP'])
+          verified = temp / 'verified'
+          proof = temp / 'proof'
+          manifest = json.loads((verified / 'manifest.json').read_text())
+          capture = (verified / 'capture.md').read_text()
+          lineage = Path('evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json').read_text()
+          ops = Path('evidence/operational')
+          market = (ops / 'CFB_MARKET_MONITOR_STATE.md').read_text()
+          decision = (ops / 'CFB_DECISION_WAIT_LEDGER.md').read_text()
+          parent = os.environ['CFB_EXPECTED_PARENT']
+          governed = ['scripts', 'evidence/operational', 'evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json']
+          subprocess.run(['git', 'diff', '--exit-code', parent, 'HEAD', '--', *governed], check=True)
+          now = datetime.now(timezone.utc).replace(microsecond=0)
+          as_of = now.strftime('%Y-%m-%dT%H:%M:%SZ')
+          cycle = now.strftime('CFB_MARKET_MONITOR_%Y%m%dT%H%M%SZ')
+          request_text = Path('handoff/monitor-qa/request.json').read_text()
+          if gate.blob(request_text) != os.environ['CFB_EXPECTED_REQUEST']:
+              raise ValueError('request bytes changed')
+          request = json.loads(request_text, object_pairs_hook=gate.unique)
+          gate.keys(request, ['schema', 'parent', 'rows'])
+          if request['schema'] != 'CFB_MONITOR_EXTERNAL_QA_V1' or request['parent'] != parent:
+              raise ValueError('request schema or review parent mismatch')
+          rows = request['rows']
+
+          def encode(value):
+              return json.dumps(value, sort_keys=True, separators=(',', ':'))
+
+          packet = encode(rows)
+          handoff = dict(parent=parent, market_blob=gate.blob(market),
+                         decision_blob=gate.blob(decision), capture_blob=gate.blob(capture),
+                         rows_blob=gate.blob(packet), source_recovered_by=manifest['recovered_by'])
+
+          def validate(request, observed_parent, packet_text, clock):
+              if request['parent'] != observed_parent:
+                  raise ValueError('parent changed')
+              if (request['market_blob'], request['decision_blob']) != (gate.blob(market), gate.blob(decision)):
+                  raise ValueError('canonical input changed')
+              if request['capture_blob'] != gate.blob(capture) or request['rows_blob'] != gate.blob(packet_text):
+                  raise ValueError('payload changed')
+              if request['source_recovered_by'] != manifest['recovered_by']:
+                  raise ValueError('source timestamp changed')
+              if not 0 <= (clock - gate.clock(request['source_recovered_by'])).total_seconds() <= 900:
+                  raise ValueError('source outside freshness window')
+              return json.loads(packet_text, object_pairs_hook=gate.unique)
+
+          cases = [
+              ('parent changed', handoff, '0' * 40, packet, now),
+              ('canonical input changed', dict(handoff, decision_blob='0' * 40), parent, packet, now),
+              ('payload changed', handoff, parent, packet + ' ', now),
+              ('source timestamp changed', dict(handoff, source_recovered_by=as_of), parent, packet, now),
+              ('source outside freshness window', handoff, parent, packet, now + timedelta(seconds=901)),
+          ]
+          rejected = []
+          for reason, request, observed_parent, payload, clock in cases:
+              try:
+                  validate(request, observed_parent, payload, clock)
+              except ValueError as error:
+                  if str(error) != reason:
+                      raise
+                  rejected.append(reason)
+              else:
+                  raise AssertionError(f'accepted invalid handoff: {reason}')
+          rows = validate(handoff, parent, packet, now)
+          (proof / 'handoff.json').write_text(encode(handoff))
+          (proof / 'rows.json').write_text(packet)
+          market, decision = week.compile(market, decision, capture, lineage, cycle,
+                                          as_of, manifest['recovered_by'], rows)
+          args = (market, decision, (ops / 'CFB_EXECUTION_LEDGER.md').read_text(),
+                  (ops / 'CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md').read_text(),
+                  lineage, as_of, week.PROFILE)
+          draft = gate.render(*args)
+          audit = gate.audit(draft, *args)
+          (proof / 'draft.md').write_text(draft)
+          receipt = {
+              'status': 'SHADOW_DRAFT_VERIFIED',
+              'scope': 'Fresh source and deterministic draft from externally supplied retained decisions',
+              'run_id': manifest['run_id'], 'attempt': manifest['run_attempt'],
+              'event': manifest['event'], 'head': manifest['producer_head'],
+              'source_recovered_by': manifest['recovered_by'], 'compiled_at': as_of,
+              'request_blob': gate.blob(request_text), 'handoff_parent': parent, 'rejected_cases': rejected,
+              'games': audit['games'], 'draft_blob': gate.blob(draft),
+              'draft_sha256': hashlib.sha256(draft.encode()).hexdigest(),
+          }
+          (proof / 'receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
+          print(json.dumps(receipt))
+          PY
+          echo 'Shadow draft compiled and audited with retained decisions' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfb-external-monitor-handoff-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/proof/
+          if-no-files-found: error
+          retention-days: 7
