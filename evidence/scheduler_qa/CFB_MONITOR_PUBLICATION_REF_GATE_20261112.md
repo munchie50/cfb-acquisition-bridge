@@ -1,0 +1,7 @@
+# Market Monitor publication ref gate QA
+
+The controlled publication boundary used an isolated fixture commit 08935ee6c6807966d5c1eaeb717c2a4d0d596faa based on production main a227db5aaf270503467104c00e7f7b9a2fa4b6ad. The positive QA ref advanced from the exact parent with a non-force connector update. Fresh ref readback and exact fixture content matched.
+
+On a separate QA ref, a concurrent commit advanced the branch to c6f8df278374b545ae46fa213a60337a74e8e425 before the same candidate was submitted. The non-force attempt returned a generic GraphQL error, rather than a typed stale-parent response. Fresh readback proved the concurrent commit remained selected and the candidate did not replace it. This demonstrates the sibling-history race case. It leaves precise API error classification and any other connector semantics open. Never retry an ambiguous ref write without rereading the ref. For production, verify candidate direct-parent identity, use non-force advancement, and independently read back the committed publication and governed files.
+
+The fixture had no operational content. Main was independently read back at the original parent before this evidence-only write. No scheduled collector run was visible in the current Actions history. The real scheduled worker, authored review, freshness at publication, and Hot Sheet publication/readback are still open. No production task or workflow changed.
