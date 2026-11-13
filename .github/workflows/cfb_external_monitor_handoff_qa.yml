@@ -2,7 +2,7 @@ name: CFB external Monitor handoff QA
 on:
   push:
     branches: [qa/cfb-external-monitor-handoff-20261112]
-    paths: ['.github/workflows/cfb_external_monitor_handoff_qa.yml']
+    paths: ['handoff/monitor-qa/request.json']
 permissions:
   contents: read
 jobs:
@@ -43,7 +43,6 @@ jobs:
         env:
           PYTHONPATH: scripts
           CFB_EXPECTED_PARENT: 7dfcefff2bcb28c47e8055fd0a34efca5de41672
-          CFB_EXPECTED_REQUEST: e50dd0af7e9ea5bc6fc2c02a802ec8689baba03e
         run: |
           python - <<'PY'
           import hashlib
@@ -73,10 +72,13 @@ jobs:
           as_of = now.strftime('%Y-%m-%dT%H:%M:%SZ')
           cycle = now.strftime('CFB_MARKET_MONITOR_%Y%m%dT%H%M%SZ')
           request_text = Path('handoff/monitor-qa/request.json').read_text()
-          if gate.blob(request_text) != os.environ['CFB_EXPECTED_REQUEST']:
+          tracked_request = subprocess.check_output(['git', 'rev-parse', 'HEAD:handoff/monitor-qa/request.json'], text=True).strip()
+          if gate.blob(request_text) != tracked_request:
               raise ValueError('request bytes changed')
           request = json.loads(request_text, object_pairs_hook=gate.unique)
-          gate.keys(request, ['schema', 'parent', 'rows'])
+          gate.keys(request, ['schema', 'parent', 'rows', 'correlation_id'])
+          if not isinstance(request['correlation_id'], str) or not request['correlation_id']:
+              raise ValueError('missing correlation ID')
           if request['schema'] != 'CFB_MONITOR_EXTERNAL_QA_V1' or request['parent'] != parent:
               raise ValueError('request schema or review parent mismatch')
           rows = request['rows']
@@ -136,7 +138,7 @@ jobs:
               'run_id': manifest['run_id'], 'attempt': manifest['run_attempt'],
               'event': manifest['event'], 'head': manifest['producer_head'],
               'source_recovered_by': manifest['recovered_by'], 'compiled_at': as_of,
-              'request_blob': gate.blob(request_text), 'handoff_parent': parent, 'rejected_cases': rejected,
+              'correlation_id': request['correlation_id'], 'request_blob': gate.blob(request_text), 'handoff_parent': parent, 'rejected_cases': rejected,
               'games': audit['games'], 'draft_blob': gate.blob(draft),
               'draft_sha256': hashlib.sha256(draft.encode()).hexdigest(),
           }
