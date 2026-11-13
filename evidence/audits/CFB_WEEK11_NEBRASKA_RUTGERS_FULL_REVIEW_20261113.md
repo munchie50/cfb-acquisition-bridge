@@ -1,0 +1,13 @@
+# Nebraska at Rutgers — November 13 Week 11 pregame review
+
+Game 401858525. Saturday November 14 at 11:30 a.m. CT. FIRST_FROZEN excluded under home_prior_points_missing. The accepted November 10 S0 refresh artifact 13801939868 ZIP matched SHA-256 baef80458c9c57707eefadbcce674bf38b4e7c324e2f1c4de507bff76b4ff871. Exact prediction row pred_margin=-7.606434238764116 (home-minus-away), pred_total=52.57690915436823, pred_win=0.33186384691069165 (Rutgers). Implied points 30.09 Nebraska and 22.49 Rutgers. Both teams had nine qualified prior games. This is accepted refresh context alongside the original exclusion.
+
+Fresh DraftKings public display 01a1d709-51f9-7628-a4f1-240d2cf473d2: Nebraska -15.5/-105, Rutgers +15.5/-115, Nebraska moneyline -675, Rutgers +490, 51.5 both -110. Independent Tempo Odds listing displayed Nebraska -14.5/-110 at Fanatics and Caesars -15/-112. Venue and operator update times unverified.
+
+- Spread: Nebraska has the stronger ground matchup (5.74 yards per rush in the refresh and Rutgers allowed 186.3 rush yards per game in the published matchup profile), and Nebraska's defense limits Rutgers' scoring path. Laying over two touchdowns asks for materially more than the model margin and is a pass. Rutgers +15.5 is the strongest market lean, 7.89 points above the refresh margin, but the dated report has QB Lonergan and WR Duff out, QB Surace questionable and OL Asamoah out. The weakened scoring path and rushing mismatch leave no earned price limit.
+- Moneyline: Nebraska is the expected winner, but -675 requires 87.1% to break even, versus 66.8% raw model direction. Rutgers +490 requires 16.9%; the model's raw 33.2% makes it a price discrepancy worth noting. Availability materially weakens the outright upset path, and the raw model output does not independently establish win-price value. Both PASS.
+- Total: 52.58 model vs 51.5 market, roughly 1.08 points toward over. Nebraska rushing can lift scoring, while Rutgers personnel losses and forecast gusts around 20 mph offset it. Nebraska's own scoring and potential short fields counter the under. Both PASS; no independently qualified derivative or parlay leg.
+
+Disposition: PASS across spread, moneyline and total after substantive review. Rutgers +15.5/-115 strongest lean with no take-at terms. No original exclusion or canonical state rewritten.
+
+Sources: https://sportsbook.draftkings.com/event/nebraska-%40-rutgers/34964205 ; https://www.tempoodds.com/games/nebraska-cornhuskers-at-rutgers-scarlet-knights-2026-11-14 ; https://kickoffstatus.com/games/2026-11-14-nebraska-at-rutgers/ ; https://weather.football/college/game/nebraska-at-rutgers-2026-11-14 ; https://abcnews.com/Sports/wireStory/nebraska-rutgers-meet-big-ten-play-137959375 .
