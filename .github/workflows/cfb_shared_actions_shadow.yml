@@ -39,14 +39,17 @@ jobs:
             --run "$GITHUB_RUN_ID" --attempt "$GITHUB_RUN_ATTEMPT" \
             --head "$GITHUB_SHA" --event "$GITHUB_EVENT_NAME" > "$RUNNER_TEMP/proof/source.json"
           echo 'Source package verified' >> "$GITHUB_STEP_SUMMARY"
-      - name: Compile and audit a draft with retained decisions
+      - name: Validate publishing handoff and compile draft
         env:
           PYTHONPATH: scripts
+          CFB_EXPECTED_PARENT: 53baab7c3e1376abad7e524928eaf59ab1075a98
         run: |
           python - <<'PY'
           import hashlib
           import json
           import os
+          import subprocess
+          from datetime import timedelta
           from datetime import datetime, timezone
           from pathlib import Path
 
@@ -62,6 +65,9 @@ jobs:
           ops = Path('evidence/operational')
           market = (ops / 'CFB_MARKET_MONITOR_STATE.md').read_text()
           decision = (ops / 'CFB_DECISION_WAIT_LEDGER.md').read_text()
+          parent = os.environ['CFB_EXPECTED_PARENT']
+          governed = ['scripts', 'evidence/operational', 'evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json']
+          subprocess.run(['git', 'diff', '--exit-code', parent, 'HEAD', '--', *governed], check=True)
           now = datetime.now(timezone.utc).replace(microsecond=0)
           as_of = now.strftime('%Y-%m-%dT%H:%M:%SZ')
           cycle = now.strftime('CFB_MARKET_MONITOR_%Y%m%dT%H%M%SZ')
@@ -70,6 +76,47 @@ jobs:
           rows = [{key: value for key, value in row.items()
                    if key not in ('state_recorded_at_utc', 'state_evidence')}
                   for row in accepted.values()]
+          def encode(value):
+              return json.dumps(value, sort_keys=True, separators=(',', ':'))
+
+          packet = encode(rows)
+          handoff = dict(parent=parent, market_blob=gate.blob(market),
+                         decision_blob=gate.blob(decision), capture_blob=gate.blob(capture),
+                         rows_blob=gate.blob(packet), source_recovered_by=manifest['recovered_by'])
+
+          def validate(request, observed_parent, packet_text, clock):
+              if request['parent'] != observed_parent:
+                  raise ValueError('parent changed')
+              if (request['market_blob'], request['decision_blob']) != (gate.blob(market), gate.blob(decision)):
+                  raise ValueError('canonical input changed')
+              if request['capture_blob'] != gate.blob(capture) or request['rows_blob'] != gate.blob(packet_text):
+                  raise ValueError('payload changed')
+              if request['source_recovered_by'] != manifest['recovered_by']:
+                  raise ValueError('source timestamp changed')
+              if not 0 <= (clock - gate.clock(request['source_recovered_by'])).total_seconds() <= 900:
+                  raise ValueError('source outside freshness window')
+              return json.loads(packet_text, object_pairs_hook=gate.unique)
+
+          cases = [
+              ('parent changed', handoff, '0' * 40, packet, now),
+              ('canonical input changed', dict(handoff, decision_blob='0' * 40), parent, packet, now),
+              ('payload changed', handoff, parent, packet + ' ', now),
+              ('source timestamp changed', dict(handoff, source_recovered_by=as_of), parent, packet, now),
+              ('source outside freshness window', handoff, parent, packet, now + timedelta(seconds=901)),
+          ]
+          rejected = []
+          for reason, request, observed_parent, payload, clock in cases:
+              try:
+                  validate(request, observed_parent, payload, clock)
+              except ValueError as error:
+                  if str(error) != reason:
+                      raise
+                  rejected.append(reason)
+              else:
+                  raise AssertionError(f'accepted invalid handoff: {reason}')
+          rows = validate(handoff, parent, packet, now)
+          (proof / 'handoff.json').write_text(encode(handoff))
+          (proof / 'rows.json').write_text(packet)
           market, decision = week.compile(market, decision, capture, lineage, cycle,
                                           as_of, manifest['recovered_by'], rows)
           args = (market, decision, (ops / 'CFB_EXECUTION_LEDGER.md').read_text(),
@@ -84,6 +131,7 @@ jobs:
               'run_id': manifest['run_id'], 'attempt': manifest['run_attempt'],
               'event': manifest['event'], 'head': manifest['producer_head'],
               'source_recovered_by': manifest['recovered_by'], 'compiled_at': as_of,
+              'handoff_parent': parent, 'rejected_cases': rejected,
               'games': audit['games'], 'draft_blob': gate.blob(draft),
               'draft_sha256': hashlib.sha256(draft.encode()).hexdigest(),
           }
