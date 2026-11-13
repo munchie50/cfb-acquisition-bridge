@@ -69,3 +69,68 @@ Remaining work is player-level reconciliation where a report or other material e
 | 401864540 | Wyoming at UTEP | PASS | Mountain West · Sat Nov 14 · 7:00 PM PTInitial · Thu 2:49 PM PT Wyoming8 Out1 Quest. @ UTEP8 Out | None |
 | 401860917 | Colorado State at Washington State | PASS | Pac-12 · Sat Nov 14 · 7:30 PM PTUpdate · Thu 7:04 PM PT Colorado State2 Out5 Quest. @ Washington State1 Out1 Quest. | None |
 | 401864537 | North Dakota State at Hawai'i | PASS | Mountain West · Sat Nov 14 · 8:00 PM PTInitial · Wed 5:27 PM PT North Dakota State10 Out1 Quest. @ Hawaiʻi7 Out3 Quest. | None |
+
+## Focused personnel follow-through
+
+Eight game-specific tracker pages were reopened and tied to their observed report clock. No decision changed. Oregon QB Dante Moore remains out and Boise QB Maddux Madsen remains questionable. Wake–SMU still has unresolved secondary availability. Cincinnati–Iowa State and Syracuse–NC State have absences on both sides, with no support for a new price limit. Florida's secondary uncertainty and Kentucky's receiving absences pull against each other. Utah State's injury list adds uncertainty to a price-only total change. Alabama–Vanderbilt remains PASS given Alabama's unsettled availability and the previously conflicting spread evidence.
+
+```json
+[
+  [
+    "401856859",
+    "Cincinnati at Iowa State",
+    "2026-11-13T14:22:34.891935+00:00",
+    "https://kickoffstatus.com/games/2026-11-14-cincinnati-at-iowa-state/",
+    "Who’s out for Cincinnati vs Iowa State? Last updated Nov 13, 12:24 AM PT · latest official report (Update) posted Thu Nov 12, 7:00 PM PT Cincinnati — Out: Filip Maciorowski, Grant Edgington, JV Gibson, Montay Weedon.Iowa State — Out: Cody Jackson, Connor Moberly, Ka'Mori Moore."
+  ],
+  [
+    "401858301",
+    "Wake Forest at SMU",
+    "2026-11-13T14:22:34.861667+00:00",
+    "https://kickoffstatus.com/games/2026-11-14-wake-forest-at-smu/",
+    "Who’s out for Wake Forest vs SMU? Last updated Nov 13, 12:24 AM PT · latest official report (Update) posted Thu Nov 12, 6:00 PM PT Wake Forest — Out: Dalton DeBoer, Devin Cook, Elijah Otieno, Landon Morris, Tolu Olajide.SMU — Out: Abel Hoopii, Caden Marshall, Carterrious Brown, Evan Goodwin, I'Zayah Young, Ira Singleton IV +5 more; Questionable: Ahmaad Moses, Jaden Milliner-Jones."
+  ],
+  [
+    "401858300",
+    "Syracuse at NC State",
+    "2026-11-13T14:22:35.079528+00:00",
+    "https://kickoffstatus.com/games/2026-11-14-syracuse-at-nc-state/",
+    "Who’s out for Syracuse vs NC State? Last updated Nov 13, 12:24 AM PT · latest official report (Update) posted Thu Nov 12, 5:00 PM PT Syracuse — Out: Amari Odom, Darien Williams, Jackson Iak, Jai Eugene Jr., Jayden Mann, Shavane Anderson Jr. +1 more; Questionable: Alex Haskell, Chris D'Appolonia, Dillan Fontus, Malachi Nelson, Trevion Mack.NC State — Out: AJ Richardson, Daniel Cruz, Hunter Provience, Ian Flynt, Isaiah Crowell, Nick Konieczynski +7 more; Questionable: Harvey Dyson III, Jaren Sensabaugh, Rico Jackson."
+  ],
+  [
+    "401856889",
+    "Alabama at Vanderbilt",
+    "2026-11-13T14:22:35.078016+00:00",
+    "https://kickoffstatus.com/games/2026-11-14-alabama-at-vanderbilt/",
+    "Who’s out for Alabama vs Vanderbilt? Last updated Nov 13, 12:24 AM PT · latest official report (Update) posted Thu Nov 12, 5:10 PM PT Alabama — Out: Casey Poe, Cayden Jones, Desmond Umeozulu, Jeremiah Beaman, Josh Ford, Mhari Johnson +1 more.Vanderbilt — Out: Aaron Bryant, Blaze Berlowitz, Daniel Vollmer Jr., Edwin Kolenge, Evan Hampton, Gunner Givens +2 more."
+  ],
+  [
+    "401858523",
+    "Michigan at Oregon",
+    "2026-11-13T14:22:34.957863+00:00",
+    "https://kickoffstatus.com/games/2026-11-14-michigan-at-oregon/",
+    "Who’s out for Michigan vs Oregon? Last updated Nov 13, 12:24 AM PT · latest official report (Update) posted Thu Nov 12, 5:00 PM PT Michigan — Out: Ace Hamilton, Andrew Sprague, Braydon Alford, Julius Holly, Kendrick Bell, Micah Ka'apana; Doubtful: Blake Frazier, Channing Goodwin; Questionable: Brady Norton, Dom Nichols, Hogan Hansen, Jalen Hoffman, John Henry Daley, Rod Moore.Oregon — Out: Aaron Flowers, Brayden Platt, Dante Moore, Dave Iuli, Jordon Davison, Matthew Johnson +2 more; Doubtful: Andrew Olesh."
+  ],
+  [
+    "401860914",
+    "Oregon State at Boise State",
+    "2026-11-13T14:22:34.858176+00:00",
+    "https://kickoffstatus.com/games/2026-11-14-oregon-state-at-boise-state/",
+    "Who’s out for Oregon State vs Boise State? Last updated Nov 13, 12:24 AM PT · latest official report (Update) posted Thu Nov 12, 7:01 PM PT Oregon State — Out: Eddie Freauff, Kai Wheaton, Kord Shaw, Ryan Whitten, Sailasa Vadrawale; Doubtful: Braden Atkinson, Jacob Anderson, Will Haverland.Boise State — Out: Carson Rasmussen; Questionable: Maddux Madsen, Sire Gaines, Travis Anderson."
+  ],
+  [
+    "401856884",
+    "Florida at Kentucky",
+    "2026-11-13T14:22:35.010190+00:00",
+    "https://kickoffstatus.com/games/2026-11-14-florida-at-kentucky/",
+    "Who’s out for Florida vs Kentucky? Last updated Nov 13, 12:24 AM PT · latest official report (Update) posted Thu Nov 12, 5:10 PM PT Florida — Out: Bryce Thornton, Evan Chieca, Jaden Robinson, Vernell Brown III; Doubtful: Dijon Johnson; Questionable: DK Kalu, Kofi Asare.Kentucky — Out: Antwan Smith, Grant Grayton, Jaden Smith, Nic Anderson."
+  ],
+  [
+    "401860915",
+    "Utah State at San Diego State",
+    "2026-11-13T14:22:35.050766+00:00",
+    "https://kickoffstatus.com/games/2026-11-14-utah-state-at-san-diego-state/",
+    "Who’s out for Utah State vs San Diego State? Last updated Nov 13, 12:24 AM PT · latest official report (Update) posted Thu Nov 12, 7:04 PM PT Utah State — Out: Chris Joe, Harrison Taggart, Jackson Nelson, John McClellan, Jude Nelson, Kauasi Hansen +2 more; Doubtful: Chapman Lewis, Eli Wood, Jimmy Liston; Questionable: K'Leyone Iosua, Landon Rehkow.San Diego State — Out: DJ Overstreet, Dalesean Staley, Jack Ellis, Jacob Bostick, Josh Hunter, Luke Williams +1 more."
+  ]
+]
+```
