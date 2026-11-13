@@ -1,0 +1,564 @@
+{
+  "schema": "CFB_WEEK11_PARLAY_STRAIGHT_OVERLAP_RESEARCH_V1",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_RANKED_CARD_ARCHIVE_RECOVERY_20261112.json",
+      "blob": "d7ece1efe60c197caf5aaedf3da4450ee292a679"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK11_FRIDAY_PARLAY_QUOTE_CAPTURE_QUEUE_20261112.json",
+      "blob": "3f72aa2bd1fc67171a0130dbef28b83cc558169b"
+    }
+  ],
+  "method": "Enumerate every distinct-game subset from the ten original ranks. Compare shared legs with the five registered straight conditionals and count how many enumerated builds contain each directed game. A loss in a selected leg loses every build containing it. These counts describe the candidate pool, not the exposure of any selected portfolio.",
+  "scope": "Outcome-free research. Ranks 6–10 are historical leans without established limits. No new qualified offers or recommendations are asserted. Friday's original registered test remains ranks 1–5.",
+  "cases": [
+    {
+      "leg_count": 3,
+      "all_builds": {
+        "builds": 120,
+        "by_game": [
+          {
+            "rank": 1,
+            "id": "401856888",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 36
+          },
+          {
+            "rank": 2,
+            "id": "401856858",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 36
+          },
+          {
+            "rank": 3,
+            "id": "401870752",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 36
+          },
+          {
+            "rank": 4,
+            "id": "401856883",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 36
+          },
+          {
+            "rank": 5,
+            "id": "401862827",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 36
+          },
+          {
+            "rank": 6,
+            "id": "401856860",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 36
+          },
+          {
+            "rank": 7,
+            "id": "401858526",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 36
+          },
+          {
+            "rank": 8,
+            "id": "401858521",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 36
+          },
+          {
+            "rank": 9,
+            "id": "401858524",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 36
+          },
+          {
+            "rank": 10,
+            "id": "401861967",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 36
+          }
+        ],
+        "worst_two_distinct_leg_losses": 64
+      },
+      "build_count_by_number_of_straight_legs": [
+        10,
+        50,
+        50,
+        10
+      ],
+      "registered_straight_only": {
+        "builds": 10,
+        "by_game": [
+          {
+            "rank": 1,
+            "id": "401856888",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 6
+          },
+          {
+            "rank": 2,
+            "id": "401856858",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 6
+          },
+          {
+            "rank": 3,
+            "id": "401870752",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 6
+          },
+          {
+            "rank": 4,
+            "id": "401856883",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 6
+          },
+          {
+            "rank": 5,
+            "id": "401862827",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 6
+          },
+          {
+            "rank": 6,
+            "id": "401856860",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 7,
+            "id": "401858526",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 8,
+            "id": "401858521",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 9,
+            "id": "401858524",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 10,
+            "id": "401861967",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 0
+          }
+        ],
+        "worst_two_distinct_leg_losses": 9
+      },
+      "at_most_one_straight_leg": {
+        "builds": 60,
+        "by_game": [
+          {
+            "rank": 1,
+            "id": "401856888",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 10
+          },
+          {
+            "rank": 2,
+            "id": "401856858",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 10
+          },
+          {
+            "rank": 3,
+            "id": "401870752",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 10
+          },
+          {
+            "rank": 4,
+            "id": "401856883",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 10
+          },
+          {
+            "rank": 5,
+            "id": "401862827",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 10
+          },
+          {
+            "rank": 6,
+            "id": "401856860",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 26
+          },
+          {
+            "rank": 7,
+            "id": "401858526",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 26
+          },
+          {
+            "rank": 8,
+            "id": "401858521",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 26
+          },
+          {
+            "rank": 9,
+            "id": "401858524",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 26
+          },
+          {
+            "rank": 10,
+            "id": "401861967",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 26
+          }
+        ],
+        "worst_two_distinct_leg_losses": 44
+      },
+      "leans_only": {
+        "builds": 10,
+        "by_game": [
+          {
+            "rank": 1,
+            "id": "401856888",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 2,
+            "id": "401856858",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 3,
+            "id": "401870752",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 4,
+            "id": "401856883",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 5,
+            "id": "401862827",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 6,
+            "id": "401856860",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 6
+          },
+          {
+            "rank": 7,
+            "id": "401858526",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 6
+          },
+          {
+            "rank": 8,
+            "id": "401858521",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 6
+          },
+          {
+            "rank": 9,
+            "id": "401858524",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 6
+          },
+          {
+            "rank": 10,
+            "id": "401861967",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 6
+          }
+        ],
+        "worst_two_distinct_leg_losses": 9
+      }
+    },
+    {
+      "leg_count": 4,
+      "all_builds": {
+        "builds": 210,
+        "by_game": [
+          {
+            "rank": 1,
+            "id": "401856888",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 84
+          },
+          {
+            "rank": 2,
+            "id": "401856858",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 84
+          },
+          {
+            "rank": 3,
+            "id": "401870752",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 84
+          },
+          {
+            "rank": 4,
+            "id": "401856883",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 84
+          },
+          {
+            "rank": 5,
+            "id": "401862827",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 84
+          },
+          {
+            "rank": 6,
+            "id": "401856860",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 84
+          },
+          {
+            "rank": 7,
+            "id": "401858526",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 84
+          },
+          {
+            "rank": 8,
+            "id": "401858521",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 84
+          },
+          {
+            "rank": 9,
+            "id": "401858524",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 84
+          },
+          {
+            "rank": 10,
+            "id": "401861967",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 84
+          }
+        ],
+        "worst_two_distinct_leg_losses": 140
+      },
+      "build_count_by_number_of_straight_legs": [
+        5,
+        50,
+        100,
+        50,
+        5
+      ],
+      "registered_straight_only": {
+        "builds": 5,
+        "by_game": [
+          {
+            "rank": 1,
+            "id": "401856888",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 4
+          },
+          {
+            "rank": 2,
+            "id": "401856858",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 4
+          },
+          {
+            "rank": 3,
+            "id": "401870752",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 4
+          },
+          {
+            "rank": 4,
+            "id": "401856883",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 4
+          },
+          {
+            "rank": 5,
+            "id": "401862827",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 4
+          },
+          {
+            "rank": 6,
+            "id": "401856860",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 7,
+            "id": "401858526",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 8,
+            "id": "401858521",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 9,
+            "id": "401858524",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 10,
+            "id": "401861967",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 0
+          }
+        ],
+        "worst_two_distinct_leg_losses": 5
+      },
+      "at_most_one_straight_leg": {
+        "builds": 55,
+        "by_game": [
+          {
+            "rank": 1,
+            "id": "401856888",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 10
+          },
+          {
+            "rank": 2,
+            "id": "401856858",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 10
+          },
+          {
+            "rank": 3,
+            "id": "401870752",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 10
+          },
+          {
+            "rank": 4,
+            "id": "401856883",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 10
+          },
+          {
+            "rank": 5,
+            "id": "401862827",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 10
+          },
+          {
+            "rank": 6,
+            "id": "401856860",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 34
+          },
+          {
+            "rank": 7,
+            "id": "401858526",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 34
+          },
+          {
+            "rank": 8,
+            "id": "401858521",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 34
+          },
+          {
+            "rank": 9,
+            "id": "401858524",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 34
+          },
+          {
+            "rank": 10,
+            "id": "401861967",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 34
+          }
+        ],
+        "worst_two_distinct_leg_losses": 50
+      },
+      "leans_only": {
+        "builds": 5,
+        "by_game": [
+          {
+            "rank": 1,
+            "id": "401856888",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 2,
+            "id": "401856858",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 3,
+            "id": "401870752",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 4,
+            "id": "401856883",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 5,
+            "id": "401862827",
+            "group": "straight_conditional",
+            "builds_lost_if_leg_loses": 0
+          },
+          {
+            "rank": 6,
+            "id": "401856860",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 4
+          },
+          {
+            "rank": 7,
+            "id": "401858526",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 4
+          },
+          {
+            "rank": 8,
+            "id": "401858521",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 4
+          },
+          {
+            "rank": 9,
+            "id": "401858524",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 4
+          },
+          {
+            "rank": 10,
+            "id": "401861967",
+            "group": "research_lean",
+            "builds_lost_if_leg_loses": 4
+          }
+        ],
+        "worst_two_distinct_leg_losses": 5
+      }
+    }
+  ]
+}
