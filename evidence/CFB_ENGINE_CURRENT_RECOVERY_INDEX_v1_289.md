@@ -2,6 +2,12 @@
 
 Status: CURRENT RECOVERY DOORWAY. Selects November 13 afternoon manual partial Market Monitor publication.
 
+## Production checkout and runtime verification
+
+Start with [the checkout helper](../scripts/cfb_runtime_checkout.py) and the checkout and immutable REST transfer sections of the [persistence procedure](CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md). Resolve fresh authenticated main and helper blob/size, verify exact helper bytes, and run `python <verified-helper> --expected-head <authenticated-main-sha> --destination <new-private-scratch-directory>`. A successful run reports `SUPPORTED_GIT_RUNTIME_VERIFIED` after validating pinned full ancestry and all retained immutable reviews from the [Decision/WAIT ledger](operational/CFB_DECISION_WAIT_LEDGER.md) using the [conditional review validator](../scripts/cfb_conditional_recommendation_profile.py). Verify the current task's required scripts in that worktree. The helper's built-in compiler check names Week 9, so Week 11 requires a separate check of the [Week 11 compiler](../scripts/cfb_week11_publication.py).
+
+The helper clones over ordinary HTTPS and requires working DNS for github.com. Immutable REST transfer retrieves helper bytes and has its own connectivity requirements. Use the [failure classifier](../qa/cfb_runtime_failure_trace_readonly.py) to record the actual boundary. The [October 29 natural Monitor candidate](run_receipts/CFB_MARKET_MONITOR_20261029T180541Z_TERMINAL_CANDIDATE.md) and [closure](run_receipts/CFB_MARKET_MONITOR_20261029T180541Z_RUN_CLOSURE.md) document successful checkout and production delivery. The [November 13 morning closure](run_receipts/CFB_MARKET_MONITOR_RUN_CLOSURE_20261113T125554Z_NATURAL0700.md) documents DNS failure before checkout. [Scheduled execution QA](../.github/workflows/cfb_monitor_scheduled_execution_qa.yml) and [manual runtime smoke](../.github/workflows/cfb_producer_runtime_smoke_manual.yml) supply diagnostic evidence. Current scheduled-worker reliability requires evidence from its own natural runs.
+
 ```cfb-frontier-json
 {
   "schema": "CFB_RECOVERY_NAVIGATION_FRONTIER_V1",
@@ -2502,6 +2508,46 @@ Status: CURRENT RECOVERY DOORWAY. Selects November 13 afternoon manual partial M
       "path": "evidence/audits/CFB_WEEK11_MARKET_MONITOR_1300_CONTINUATION_20261113.md",
       "blob": "c32da5805514e41532883190cdb4cbd25b66d1c0",
       "purpose": "CURRENT_PUBLICATION_AUDIT:Friday afternoon manual partial Monitor"
+    },
+    {
+      "path": "scripts/cfb_runtime_checkout.py",
+      "blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "purpose": "RUNTIME_CHECKOUT_REFERENCE:Runtime checkout helper"
+    },
+    {
+      "path": "scripts/cfb_conditional_recommendation_profile.py",
+      "blob": "c0c3cd090074a659f66ccc38f03fe12bf670b186",
+      "purpose": "RUNTIME_CHECKOUT_REFERENCE:Immutable review validator used by checkout"
+    },
+    {
+      "path": "scripts/cfb_week11_publication.py",
+      "blob": "1fd070df5b2ad67327b1a3a0a173b6a810fddb58",
+      "purpose": "RUNTIME_CHECKOUT_REFERENCE:Week 11 compiler checked by caller"
+    },
+    {
+      "path": "qa/cfb_runtime_failure_trace_readonly.py",
+      "blob": "79c18f69574bd6fa042b29613b465495402fa94d",
+      "purpose": "RUNTIME_CHECKOUT_REFERENCE:Runtime failure classifier"
+    },
+    {
+      "path": ".github/workflows/cfb_monitor_scheduled_execution_qa.yml",
+      "blob": "4fb895e81552ed291e4ab0aac0e65fc4c6e08370",
+      "purpose": "RUNTIME_CHECKOUT_REFERENCE:Scheduled runtime QA workflow"
+    },
+    {
+      "path": ".github/workflows/cfb_producer_runtime_smoke_manual.yml",
+      "blob": "ec3a747a2cca47ae119cab35193fde7cee63e01c",
+      "purpose": "RUNTIME_CHECKOUT_REFERENCE:Manual runtime smoke workflow"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261029T180541Z_TERMINAL_CANDIDATE.md",
+      "blob": "e97a0723bc6a7d5c1572ceb2e1d1e24d53288c8f",
+      "purpose": "RUNTIME_CHECKOUT_REFERENCE:October 29 successful natural production checkout"
+    },
+    {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_RUN_CLOSURE_20261113T125554Z_NATURAL0700.md",
+      "blob": "1a50cb7c8fd65b162810ab40999c2b3055243bb9",
+      "purpose": "RUNTIME_CHECKOUT_REFERENCE:November 13 natural worker DNS failure"
     }
   ]
 }
