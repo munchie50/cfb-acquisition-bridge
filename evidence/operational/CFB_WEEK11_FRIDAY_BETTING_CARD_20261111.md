@@ -121,3 +121,7 @@ Saturday movement check identified five spreads with at least 1.5 points of chan
 - Oregon State at Boise State (401860914). Oregon State +15.5 at -112 and under 65.5 at -118 warrant reassessment against the frozen Boise -6.9 and 56.7 total. Boise's official initial report lists QB Maddux Madsen and RB Sire Gaines questionable, leaving scoring and margin assumptions unstable. Keep both as watch cases with no limit until the quarterback status and current paired total are checked. https://broncosports.com/news/2026/11/11/football-week-11-availability-report
 
 Selected slate: evidence/operational/CFB_WEEK11_HOT_SHEET_2026-11-12_0734CT.md. Source and review audit: evidence/audits/CFB_WEEK11_MANUAL_CATCHUP_20261112T133426Z.md.
+
+## Friday 3:21 p.m. CT pre-trip reconciliation
+
+Saturday conditionals renewed at the original limits: Tennessee -2.5 at -115 or better and Baylor +7.5 at -118 or better. DraftKings public US-VA display showed -115 and -112 respectively. Recheck actual venue price and any material news at placement. The existing 7:30 p.m. CT evening boundary is the next reconciliation and Saturday 7 a.m. CT remains the final cutoff. Friday games are PASS. Jacksonville State, North Texas and Georgia remain PASS. No verified combined parlay or venue offer. [Hot Sheet](CFB_WEEK11_HOT_SHEET_2026-11-13_1521CT.md)
