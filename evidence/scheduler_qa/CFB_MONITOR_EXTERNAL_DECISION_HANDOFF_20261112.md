@@ -1,0 +1,7 @@
+# Market Monitor external decision handoff QA
+
+Verified November 12 CT. Previously accepted 67 decision rows were exported from the digest-verified handoff QA artifact and submitted from Work Mode via GitHub Contents to a dedicated QA branch. The submitted file was independently read back before dispatch. Request Git blob e50dd0af7e9ea5bc6fc2c02a802ec8689baba03e binds main review parent 7dfcefff2bcb28c47e8055fd0a34efca5de41672.
+
+Push run 43356542649 at QA commit e8266d02b6f0f1efacd89779a8c9900478dd8abb compared governed files to that pinned parent, checked exact request bytes and schema, collected and verified fresh CBS source, and compiled and audited 67 games. Five negative cases rejected changed parent, canonical input, payload, source clock and expired source. Artifact 14006510969 was independently downloaded and verified against archive SHA-256 5cf0c1f4b061aa25c6d8065ab5a7a3f57d715027b933753509d48a42b03ade1c, request and parent bindings, rows Git blob and draft Git blob 601d20ab4e2fc17a25d966eae2a6ac1d396006a3.
+
+The test proves transport from Work Mode into the compiler and back using retained decisions. It does not prove newly authored review, automatic worker submission, live parent validation at write time or production publication. No production workflow, task, canonical state or Hot Sheet changed. Next prove the scheduled collector and worker handoff, then live parent validation and publication readback through Market Monitor.
