@@ -1,0 +1,7 @@
+# Market Monitor read-only production preflight — November 12 CT
+
+Installed on main at c2591b384d984642a2ca91419cb0a58d703a64d1 in the existing collector. Collection is uploaded under its existing name and format before preflight. The compiler output uses a separate artifact. The workflow has contents: read. Existing schedules and publication ownership are preserved.
+
+Main push run 43356048060, attempt 1, completed successfully. Collection artifact 14005613571 was published. Preflight verified exact source identity, freshness and reconstruction, and compiled/rendered/audited 67 games using retained decisions. Independently downloaded artifact 14006356114, matched archive SHA-256 f4feb3fe7a4e65597a91bd1beebb7d3665fce4fe7cd17ca9b4ab6daa9512f03e, and verified run/attempt/head/source-clock bindings and draft Git blob 5d0df427e1e714fba2d85d5754fcfbd8cd76f208 and SHA-256 404212b531186f1334a51bb6b8938c2a25d53a5905b899c90c1718ab556405ee. Source recovered 2026-11-13T03:01:01.027018Z. This draft is a proof artifact, not a publication.
+
+Open: schedule-origin dispatch and consumption, worker-side use without a Git checkout, externally authored decisions, final canonical state/readback, and Week 12 rollover. The existing consumer expects a successful run; if a future preflight fails after source upload, the source artifact exists but the scheduled consumer may fall back. Monitor this boundary at the next existing Friday 06:52/07:00 CT pair. No new task, prompt change or canonical Hot Sheet write.
