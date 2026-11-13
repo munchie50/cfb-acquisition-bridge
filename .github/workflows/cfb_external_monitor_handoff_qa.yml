@@ -39,7 +39,7 @@ jobs:
             --run "$GITHUB_RUN_ID" --attempt "$GITHUB_RUN_ATTEMPT" \
             --head "$GITHUB_SHA" --event "$GITHUB_EVENT_NAME" > "$RUNNER_TEMP/proof/source.json"
           echo 'Source package verified' >> "$GITHUB_STEP_SUMMARY"
-      - name: Validate publishing handoff and compile draft
+      - name: Validate connector request and source bindings
         env:
           PYTHONPATH: scripts
           CFB_EXPECTED_PARENT: 7dfcefff2bcb28c47e8055fd0a34efca5de41672
@@ -70,7 +70,6 @@ jobs:
           subprocess.run(['git', 'diff', '--exit-code', parent, 'HEAD', '--', *governed], check=True)
           now = datetime.now(timezone.utc)
           as_of = now.strftime('%Y-%m-%dT%H:%M:%SZ')
-          cycle = now.strftime('CFB_MARKET_MONITOR_%Y%m%dT%H%M%SZ')
           request_text = Path('handoff/monitor-qa/request.json').read_text()
           tracked_request = subprocess.check_output(['git', 'rev-parse', 'HEAD:handoff/monitor-qa/request.json'], text=True).strip()
           if gate.blob(request_text) != tracked_request:
@@ -124,28 +123,23 @@ jobs:
           rows = validate(handoff, parent, packet, now)
           (proof / 'handoff.json').write_text(encode(handoff))
           (proof / 'rows.json').write_text(packet)
-          market, decision = week.compile(market, decision, capture, lineage, cycle,
-                                          as_of, manifest['recovered_by'], rows)
-          args = (market, decision, (ops / 'CFB_EXECUTION_LEDGER.md').read_text(),
-                  (ops / 'CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md').read_text(),
-                  lineage, as_of, week.PROFILE)
-          draft = gate.render(*args)
-          audit = gate.audit(draft, *args)
-          (proof / 'draft.md').write_text(draft)
           receipt = {
-              'status': 'SHADOW_DRAFT_VERIFIED',
-              'scope': 'Fresh source and deterministic draft from externally supplied retained decisions',
-              'run_id': manifest['run_id'], 'attempt': manifest['run_attempt'],
-              'event': manifest['event'], 'head': manifest['producer_head'],
-              'source_recovered_by': manifest['recovered_by'], 'compiled_at': as_of,
-              'correlation_id': request['correlation_id'], 'request_blob': gate.blob(request_text), 'handoff_parent': parent, 'rejected_cases': rejected,
-              'games': audit['games'], 'draft_blob': gate.blob(draft),
-              'draft_sha256': hashlib.sha256(draft.encode()).hexdigest(),
+              'status': 'CHECKOUT_BYPASS_TRANSPORT_VERIFIED',
+              'correlation_id': request['correlation_id'],
+              'request_blob': tracked_request,
+              'handoff_parent': parent,
+              'run_id': manifest['run_id'],
+              'attempt': manifest['run_attempt'],
+              'head': manifest['producer_head'],
+              'source_recovered_by': manifest['recovered_by'],
+              'capture_blob': gate.blob(capture),
+              'rows_blob': gate.blob(packet),
+              'rejected_cases': rejected,
           }
           (proof / 'receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
           print(json.dumps(receipt))
           PY
-          echo 'Shadow draft compiled and audited with retained decisions' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Connector request and fresh source bindings verified' >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         if: success()
         with:
