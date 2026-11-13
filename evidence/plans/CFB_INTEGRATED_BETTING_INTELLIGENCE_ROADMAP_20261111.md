@@ -313,3 +313,7 @@ The user set the default prospective parlay research target to 30 distinct games
 ## Week 11 Top 30 pregame research intake — November 12, 2026
 
 [Verified intake](../audits/CFB_WEEK11_TOP30_PREGAME_RESEARCH_INTAKE_20261112.json) commit `b13e2826279a5487f4bf070d50c7ee5416572d6f`, blob `f2e52a533086baa52b9ed4f15e02a3c44563ef91`. Matched 40 pregame PASS games to corroborated kickoff clocks and all 240 display prices in the November 12 Actions capture. Three games appear on the earlier research card and 37 have no documented rank. The earlier ten ranks remain the verified historical depth. Zero new ranks were assigned because the intake establishes game, time and price coverage and retains the recorded football decisions. At the next eligible research review, reassess supporting football evidence and refresh prices before assigning prospective ranks. M3 remains open.
+
+## Week 11 Top 30 football review triage — November 12, 2026
+
+[Verified triage](../audits/CFB_WEEK11_TOP30_FOOTBALL_REVIEW_TRIAGE_20261112.json) commit `92c3011e336e588fef197ad911aba5028eaea6ad`, blob `59db9590f4097455f0e97f8f521f966776e20962`. Matched all 37 unranked intake games to their saved football assessments and preserved their PASS decisions. Identified six initial spread follow-ups with specific personnel or matchup questions. These are an unranked review queue chosen from saved evidence. Refresh material evidence and all available market branches in the next review before deciding whether any game earns a prospective research rank. Verified rank depth remains ten.
