@@ -1,0 +1,7 @@
+# Friday 1 p.m. CT Market Monitor checkout bypass setup
+
+Existing enabled production task 6ae766e788d881919726d0eeb44450dd was amended for scheduled_for 2026-11-13T19:00:00Z only. Independent readback matched the full prompt and exact existing VEVENT, timing mode and next slot. The production worker uses the connector to write a uniquely correlated request on qa/cfb-external-monitor-handoff-20261112 and verify the returned artifact. Workflow blob 1eee17500c36a0e849e0aaa3faa4a2055ec2ebd5. No production workflow or publication gate changed.
+
+Work Mode preflight 43445205221 passed from request commit 816174b393800610a10186fb5e79e0038faece93. Artifact 14047128582 independently downloaded, SHA-256 matched sha256:1c4389ddd0b886d6e6a9f05dc3cc4e8c2b394aed854da4ab4135f91584426dec, and receipt matched request blob, run and correlation. Earlier attempts exposed clock precision, expired retained conditional review and correlation variable errors. Clock and correlation were corrected. The diagnostic validates source and request binding and returns a transport receipt; expired historical rows are not compiled or published.
+
+Actual scheduled-worker transport remains pending. Ordinary live Monitor work continues after the bounded diagnostic. Full no-local-checkout live compilation and publication remain open and require a live request bound to the source the current rows reviewed and publication at the verified current parent.
