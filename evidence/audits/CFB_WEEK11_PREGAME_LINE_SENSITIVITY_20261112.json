@@ -1,0 +1,1340 @@
+{
+  "schema": "CFB_WEEK11_PREGAME_LINE_SENSITIVITY_V1",
+  "date_ct": "2026-11-12",
+  "roadmap_input_blob": "8f51fe5ffea7ff8687111149a903e4a785866c21",
+  "recovery_index": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_287.md",
+    "blob": "1d45bd5995f5cab1b43679a69c6bc3678a66a0ef"
+  },
+  "inputs": [
+    {
+      "path": "evidence/audits/CFB_WEEK11_SATURDAY_PASS_PREGAME_BASELINE_20261112.json",
+      "blob": "f1b8eda1cd69f3aa4e3e5cf47c94f271ec1c1a24"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK11_SATURDAY_PASS_ACTIONS_SENSITIVITY_20261112.json",
+      "blob": "747794ca72cb39a5bff3b91dc7bcf52ad618d249"
+    },
+    {
+      "path": "scripts/cfb_grade_paired_straights.py",
+      "blob": "8a3dc5c074f682631a3257b9b52bdf38ee1c2d2f"
+    },
+    {
+      "path": "scripts/cfb_parlay_matrix.py",
+      "blob": "79eba3e1c4efb09a30737028e8287e5c7b49c06c"
+    }
+  ],
+  "frozen_games": 40,
+  "frozen_selections": 120,
+  "score_conditions_checked": 63,
+  "method": "Use the archived grader to enumerate integer game-score boundaries where a displayed spread or total movement could flip the grade at the same frozen selection. Independently reconcile every score condition by the integer thresholds implied by the two lines. Dollar figures are arithmetic on $5 hypothetical stakes. Scenario scores are synthetic; no official results or sportsbook offers are used.",
+  "coverage": {
+    "primary": {
+      "SPREAD": {
+        "SAME_GRADE_FOR_ALL_SCORE_SCENARIOS": 20,
+        "GRADE_CAN_CHANGE": 19,
+        "MISSING": 1
+      },
+      "ML": {
+        "SAME_GRADE_FOR_ALL_SCORE_SCENARIOS": 39,
+        "MISSING": 1
+      },
+      "TOTAL": {
+        "GRADE_CAN_CHANGE": 12,
+        "SAME_GRADE_FOR_ALL_SCORE_SCENARIOS": 27,
+        "MISSING": 1
+      }
+    },
+    "later": {
+      "SPREAD": {
+        "SAME_GRADE_FOR_ALL_SCORE_SCENARIOS": 21,
+        "GRADE_CAN_CHANGE": 19
+      },
+      "ML": {
+        "SAME_GRADE_FOR_ALL_SCORE_SCENARIOS": 40
+      },
+      "TOTAL": {
+        "GRADE_CAN_CHANGE": 13,
+        "SAME_GRADE_FOR_ALL_SCORE_SCENARIOS": 27
+      }
+    }
+  },
+  "direct_changes": [
+    {
+      "id": "401858523",
+      "pair": [
+        "Michigan",
+        "Oregon"
+      ],
+      "market": "SPREAD",
+      "side": "away",
+      "primary": {
+        "line": 10.5,
+        "price": -108,
+        "book_icon": "34"
+      },
+      "later": {
+        "line": 11,
+        "price": -111,
+        "book_icon": "34"
+      },
+      "direct_flip_conditions": [
+        {
+          "selected_team_margin": -11,
+          "transition": "LOSS_TO_PUSH",
+          "line_effect_cents": 500,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401860917",
+      "pair": [
+        "Colorado State",
+        "Washington State"
+      ],
+      "market": "SPREAD",
+      "side": "away",
+      "primary": null,
+      "later": {
+        "line": 9.5,
+        "price": -110,
+        "book_icon": "30"
+      },
+      "direct_flip_conditions": null
+    },
+    {
+      "id": "401860917",
+      "pair": [
+        "Colorado State",
+        "Washington State"
+      ],
+      "market": "ML",
+      "side": "home",
+      "primary": null,
+      "later": {
+        "price": -345,
+        "book_icon": "35"
+      },
+      "direct_flip_conditions": null
+    },
+    {
+      "id": "401860917",
+      "pair": [
+        "Colorado State",
+        "Washington State"
+      ],
+      "market": "TOTAL",
+      "side": "under",
+      "primary": null,
+      "later": {
+        "line": 66.5,
+        "price": -108,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "direct_flip_conditions": null
+    }
+  ],
+  "condition_rows": [
+    {
+      "id": "401856859",
+      "pair": [
+        "Cincinnati",
+        "Iowa State"
+      ],
+      "market": "TOTAL",
+      "side": "under",
+      "opening_line": 60.5,
+      "opening_price": -110,
+      "primary": {
+        "line": 59.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "under"
+      },
+      "later": {
+        "line": 59.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "under"
+      },
+      "primary_flip_conditions": [
+        {
+          "combined_points": 60,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -955,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "combined_points": 60,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -955,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401858296",
+      "pair": [
+        "Duke",
+        "Miami"
+      ],
+      "market": "SPREAD",
+      "side": "home",
+      "opening_line": -13,
+      "opening_price": -111,
+      "primary": {
+        "line": -13.5,
+        "price": -110,
+        "book_icon": "35"
+      },
+      "later": {
+        "line": -13.5,
+        "price": -110,
+        "book_icon": "35"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": 13,
+          "transition": "PUSH_TO_LOSS",
+          "line_effect_cents": -500,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": 13,
+          "transition": "PUSH_TO_LOSS",
+          "line_effect_cents": -500,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401856886",
+      "pair": [
+        "Auburn",
+        "Mississippi State"
+      ],
+      "market": "TOTAL",
+      "side": "over",
+      "opening_line": 49.5,
+      "opening_price": -120,
+      "primary": {
+        "line": 50.5,
+        "price": -110,
+        "book_icon": "30",
+        "side": "over"
+      },
+      "later": {
+        "line": 50.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "over"
+      },
+      "primary_flip_conditions": [
+        {
+          "combined_points": 50,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -917,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "combined_points": 50,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -917,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401858300",
+      "pair": [
+        "Syracuse",
+        "NC State"
+      ],
+      "market": "TOTAL",
+      "side": "under",
+      "opening_line": 54.5,
+      "opening_price": -110,
+      "primary": {
+        "line": 53.5,
+        "price": -108,
+        "book_icon": "34",
+        "side": "under"
+      },
+      "later": {
+        "line": 53.5,
+        "price": -108,
+        "book_icon": "34",
+        "side": "under"
+      },
+      "primary_flip_conditions": [
+        {
+          "combined_points": 54,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -955,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "combined_points": 54,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -955,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401858520",
+      "pair": [
+        "Wisconsin",
+        "Maryland"
+      ],
+      "market": "SPREAD",
+      "side": "home",
+      "opening_line": 8.5,
+      "opening_price": -110,
+      "primary": {
+        "line": 9,
+        "price": -111,
+        "book_icon": "34"
+      },
+      "later": {
+        "line": 9,
+        "price": -111,
+        "book_icon": "34"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": -9,
+          "transition": "LOSS_TO_PUSH",
+          "line_effect_cents": 500,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": -9,
+          "transition": "LOSS_TO_PUSH",
+          "line_effect_cents": 500,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401858520",
+      "pair": [
+        "Wisconsin",
+        "Maryland"
+      ],
+      "market": "TOTAL",
+      "side": "over",
+      "opening_line": 43.5,
+      "opening_price": -105,
+      "primary": {
+        "line": 42.5,
+        "price": -108,
+        "book_icon": "34",
+        "side": "over"
+      },
+      "later": {
+        "line": 42.5,
+        "price": -108,
+        "book_icon": "34",
+        "side": "over"
+      },
+      "primary_flip_conditions": [
+        {
+          "combined_points": 43,
+          "transition": "LOSS_TO_WIN",
+          "line_effect_cents": 976,
+          "price_effect_cents": -13
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "combined_points": 43,
+          "transition": "LOSS_TO_WIN",
+          "line_effect_cents": 976,
+          "price_effect_cents": -13
+        }
+      ]
+    },
+    {
+      "id": "401861967",
+      "pair": [
+        "James Madison",
+        "UConn"
+      ],
+      "market": "SPREAD",
+      "side": "away",
+      "opening_line": -4,
+      "opening_price": -110,
+      "primary": {
+        "line": -3.5,
+        "price": -120,
+        "book_icon": "35"
+      },
+      "later": {
+        "line": -3.5,
+        "price": -120,
+        "book_icon": "35"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": 4,
+          "transition": "PUSH_TO_WIN",
+          "line_effect_cents": 455,
+          "price_effect_cents": -38
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": 4,
+          "transition": "PUSH_TO_WIN",
+          "line_effect_cents": 455,
+          "price_effect_cents": -38
+        }
+      ]
+    },
+    {
+      "id": "401862825",
+      "pair": [
+        "East Carolina",
+        "Charlotte"
+      ],
+      "market": "TOTAL",
+      "side": "over",
+      "opening_line": 44.5,
+      "opening_price": -118,
+      "primary": {
+        "line": 45.5,
+        "price": -105,
+        "book_icon": "30",
+        "side": "over"
+      },
+      "later": {
+        "line": 45.5,
+        "price": -105,
+        "book_icon": "30",
+        "side": "over"
+      },
+      "primary_flip_conditions": [
+        {
+          "combined_points": 45,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -924,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "combined_points": 45,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -924,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401856862",
+      "pair": [
+        "Kansas State",
+        "TCU"
+      ],
+      "market": "TOTAL",
+      "side": "over",
+      "opening_line": 45.5,
+      "opening_price": -105,
+      "primary": {
+        "line": 44.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "over"
+      },
+      "later": {
+        "line": 44.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "over"
+      },
+      "primary_flip_conditions": [
+        {
+          "combined_points": 45,
+          "transition": "LOSS_TO_WIN",
+          "line_effect_cents": 976,
+          "price_effect_cents": -21
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "combined_points": 45,
+          "transition": "LOSS_TO_WIN",
+          "line_effect_cents": 976,
+          "price_effect_cents": -21
+        }
+      ]
+    },
+    {
+      "id": "401862828",
+      "pair": [
+        "Tulane",
+        "Rice"
+      ],
+      "market": "SPREAD",
+      "side": "home",
+      "opening_line": -1.5,
+      "opening_price": -110,
+      "primary": {
+        "line": -2.5,
+        "price": -110,
+        "book_icon": "30"
+      },
+      "later": {
+        "line": -2.5,
+        "price": -110,
+        "book_icon": "30"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": 2,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -955,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": 2,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -955,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401871060",
+      "pair": [
+        "Florida International",
+        "Delaware"
+      ],
+      "market": "SPREAD",
+      "side": "home",
+      "opening_line": -5,
+      "opening_price": -111,
+      "primary": {
+        "line": -4.5,
+        "price": -110,
+        "book_icon": "30"
+      },
+      "later": {
+        "line": -4.5,
+        "price": -110,
+        "book_icon": "30"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": 5,
+          "transition": "PUSH_TO_WIN",
+          "line_effect_cents": 450,
+          "price_effect_cents": 5
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": 5,
+          "transition": "PUSH_TO_WIN",
+          "line_effect_cents": 450,
+          "price_effect_cents": 5
+        }
+      ]
+    },
+    {
+      "id": "401858523",
+      "pair": [
+        "Michigan",
+        "Oregon"
+      ],
+      "market": "SPREAD",
+      "side": "away",
+      "opening_line": 11.5,
+      "opening_price": -112,
+      "primary": {
+        "line": 10.5,
+        "price": -108,
+        "book_icon": "34"
+      },
+      "later": {
+        "line": 11,
+        "price": -111,
+        "book_icon": "34"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": -11,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -946,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": -11,
+          "transition": "WIN_TO_PUSH",
+          "line_effect_cents": -446,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401864536",
+      "pair": [
+        "Nevada",
+        "Northern Illinois"
+      ],
+      "market": "SPREAD",
+      "side": "away",
+      "opening_line": -7,
+      "opening_price": -110,
+      "primary": {
+        "line": -6.5,
+        "price": -115,
+        "book_icon": "35"
+      },
+      "later": {
+        "line": -6.5,
+        "price": -115,
+        "book_icon": "35"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": 7,
+          "transition": "PUSH_TO_WIN",
+          "line_effect_cents": 455,
+          "price_effect_cents": -20
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": 7,
+          "transition": "PUSH_TO_WIN",
+          "line_effect_cents": 455,
+          "price_effect_cents": -20
+        }
+      ]
+    },
+    {
+      "id": "401856857",
+      "pair": [
+        "Arizona State",
+        "UCF"
+      ],
+      "market": "SPREAD",
+      "side": "home",
+      "opening_line": -3.5,
+      "opening_price": -102,
+      "primary": {
+        "line": -3,
+        "price": -112,
+        "book_icon": "30"
+      },
+      "later": {
+        "line": -3,
+        "price": -112,
+        "book_icon": "30"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": 3,
+          "transition": "LOSS_TO_PUSH",
+          "line_effect_cents": 500,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": 3,
+          "transition": "LOSS_TO_PUSH",
+          "line_effect_cents": 500,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401869952",
+      "pair": [
+        "Georgia Southern",
+        "Georgia State"
+      ],
+      "market": "SPREAD",
+      "side": "home",
+      "opening_line": 5.5,
+      "opening_price": -108,
+      "primary": {
+        "line": 6.5,
+        "price": -110,
+        "book_icon": "35"
+      },
+      "later": {
+        "line": 6.5,
+        "price": -110,
+        "book_icon": "35"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": -6,
+          "transition": "LOSS_TO_WIN",
+          "line_effect_cents": 963,
+          "price_effect_cents": -8
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": -6,
+          "transition": "LOSS_TO_WIN",
+          "line_effect_cents": 963,
+          "price_effect_cents": -8
+        }
+      ]
+    },
+    {
+      "id": "401860916",
+      "pair": [
+        "Fresno State",
+        "Texas State"
+      ],
+      "market": "SPREAD",
+      "side": "away",
+      "opening_line": 10,
+      "opening_price": -115,
+      "primary": {
+        "line": 9.5,
+        "price": -108,
+        "book_icon": "30"
+      },
+      "later": {
+        "line": 9.5,
+        "price": -108,
+        "book_icon": "30"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": -10,
+          "transition": "PUSH_TO_LOSS",
+          "line_effect_cents": -500,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": -10,
+          "transition": "PUSH_TO_LOSS",
+          "line_effect_cents": -500,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401860916",
+      "pair": [
+        "Fresno State",
+        "Texas State"
+      ],
+      "market": "TOTAL",
+      "side": "under",
+      "opening_line": 60.5,
+      "opening_price": -110,
+      "primary": {
+        "line": 59.5,
+        "price": -108,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "later": {
+        "line": 59.5,
+        "price": -108,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "primary_flip_conditions": [
+        {
+          "combined_points": 60,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -955,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "combined_points": 60,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -955,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401858521",
+      "pair": [
+        "Washington",
+        "Michigan State"
+      ],
+      "market": "SPREAD",
+      "side": "away",
+      "opening_line": -3,
+      "opening_price": -120,
+      "primary": {
+        "line": -3.5,
+        "price": -102,
+        "book_icon": "34"
+      },
+      "later": {
+        "line": -3.5,
+        "price": -102,
+        "book_icon": "34"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": 3,
+          "transition": "PUSH_TO_LOSS",
+          "line_effect_cents": -500,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": 3,
+          "transition": "PUSH_TO_LOSS",
+          "line_effect_cents": -500,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401858521",
+      "pair": [
+        "Washington",
+        "Michigan State"
+      ],
+      "market": "TOTAL",
+      "side": "under",
+      "opening_line": 43.5,
+      "opening_price": -110,
+      "primary": {
+        "line": 42.5,
+        "price": -105,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "later": {
+        "line": 42.5,
+        "price": -105,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "primary_flip_conditions": [
+        {
+          "combined_points": 43,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -955,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "combined_points": 43,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -955,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401869928",
+      "pair": [
+        "App State",
+        "Marshall"
+      ],
+      "market": "SPREAD",
+      "side": "away",
+      "opening_line": -1.5,
+      "opening_price": -110,
+      "primary": {
+        "line": -1,
+        "price": -111,
+        "book_icon": "34"
+      },
+      "later": {
+        "line": -1,
+        "price": -111,
+        "book_icon": "34"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": 1,
+          "transition": "LOSS_TO_PUSH",
+          "line_effect_cents": 500,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": 1,
+          "transition": "LOSS_TO_PUSH",
+          "line_effect_cents": 500,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401869928",
+      "pair": [
+        "App State",
+        "Marshall"
+      ],
+      "market": "TOTAL",
+      "side": "under",
+      "opening_line": 53.5,
+      "opening_price": -105,
+      "primary": {
+        "line": 54.5,
+        "price": -115,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "later": {
+        "line": 54.5,
+        "price": -115,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "primary_flip_conditions": [
+        {
+          "combined_points": 54,
+          "transition": "LOSS_TO_WIN",
+          "line_effect_cents": 976,
+          "price_effect_cents": -41
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "combined_points": 54,
+          "transition": "LOSS_TO_WIN",
+          "line_effect_cents": 976,
+          "price_effect_cents": -41
+        }
+      ]
+    },
+    {
+      "id": "401871100",
+      "pair": [
+        "Troy",
+        "South Alabama"
+      ],
+      "market": "SPREAD",
+      "side": "away",
+      "opening_line": 3.5,
+      "opening_price": -122,
+      "primary": {
+        "line": 3,
+        "price": -108,
+        "book_icon": "30"
+      },
+      "later": {
+        "line": 3,
+        "price": -108,
+        "book_icon": "30"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": -3,
+          "transition": "WIN_TO_PUSH",
+          "line_effect_cents": -410,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": -3,
+          "transition": "WIN_TO_PUSH",
+          "line_effect_cents": -410,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401871100",
+      "pair": [
+        "Troy",
+        "South Alabama"
+      ],
+      "market": "TOTAL",
+      "side": "under",
+      "opening_line": 56.5,
+      "opening_price": -111,
+      "primary": {
+        "line": 55.5,
+        "price": -108,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "later": {
+        "line": 55.5,
+        "price": -108,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "primary_flip_conditions": [
+        {
+          "combined_points": 56,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -950,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "combined_points": 56,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -950,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401864538",
+      "pair": [
+        "San José State",
+        "Air Force"
+      ],
+      "market": "SPREAD",
+      "side": "home",
+      "opening_line": -11.5,
+      "opening_price": -110,
+      "primary": {
+        "line": -12,
+        "price": -111,
+        "book_icon": "34"
+      },
+      "later": {
+        "line": -12,
+        "price": -111,
+        "book_icon": "34"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": 12,
+          "transition": "WIN_TO_PUSH",
+          "line_effect_cents": -455,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": 12,
+          "transition": "WIN_TO_PUSH",
+          "line_effect_cents": -455,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401856885",
+      "pair": [
+        "Texas",
+        "LSU"
+      ],
+      "market": "TOTAL",
+      "side": "over",
+      "opening_line": 45.5,
+      "opening_price": -111,
+      "primary": {
+        "line": 46.5,
+        "price": -105,
+        "book_icon": "30",
+        "side": "over"
+      },
+      "later": {
+        "line": 46.5,
+        "price": -105,
+        "book_icon": "30",
+        "side": "over"
+      },
+      "primary_flip_conditions": [
+        {
+          "combined_points": 46,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -950,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "combined_points": 46,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -950,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401858299",
+      "pair": [
+        "Stanford",
+        "Virginia Tech"
+      ],
+      "market": "SPREAD",
+      "side": "home",
+      "opening_line": -15,
+      "opening_price": -111,
+      "primary": {
+        "line": -15.5,
+        "price": -108,
+        "book_icon": "34"
+      },
+      "later": {
+        "line": -15.5,
+        "price": -108,
+        "book_icon": "34"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": 15,
+          "transition": "PUSH_TO_LOSS",
+          "line_effect_cents": -500,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": 15,
+          "transition": "PUSH_TO_LOSS",
+          "line_effect_cents": -500,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401864539",
+      "pair": [
+        "UNLV",
+        "New Mexico"
+      ],
+      "market": "SPREAD",
+      "side": "home",
+      "opening_line": -14,
+      "opening_price": -110,
+      "primary": {
+        "line": -14.5,
+        "price": -108,
+        "book_icon": "34"
+      },
+      "later": {
+        "line": -14.5,
+        "price": -108,
+        "book_icon": "34"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": 14,
+          "transition": "PUSH_TO_LOSS",
+          "line_effect_cents": -500,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": 14,
+          "transition": "PUSH_TO_LOSS",
+          "line_effect_cents": -500,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401856882",
+      "pair": [
+        "South Carolina",
+        "Arkansas"
+      ],
+      "market": "SPREAD",
+      "side": "away",
+      "opening_line": -7.5,
+      "opening_price": -105,
+      "primary": {
+        "line": -7,
+        "price": -108,
+        "book_icon": "34"
+      },
+      "later": {
+        "line": -7,
+        "price": -108,
+        "book_icon": "34"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": 7,
+          "transition": "LOSS_TO_PUSH",
+          "line_effect_cents": 500,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": 7,
+          "transition": "LOSS_TO_PUSH",
+          "line_effect_cents": 500,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401856863",
+      "pair": [
+        "Texas Tech",
+        "Oklahoma State"
+      ],
+      "market": "TOTAL",
+      "side": "under",
+      "opening_line": 72.5,
+      "opening_price": -105,
+      "primary": {
+        "line": 73.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "under"
+      },
+      "later": {
+        "line": 73.5,
+        "price": -110,
+        "book_icon": "35",
+        "side": "under"
+      },
+      "primary_flip_conditions": [
+        {
+          "combined_points": 73,
+          "transition": "LOSS_TO_WIN",
+          "line_effect_cents": 976,
+          "price_effect_cents": -21
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "combined_points": 73,
+          "transition": "LOSS_TO_WIN",
+          "line_effect_cents": 976,
+          "price_effect_cents": -21
+        }
+      ]
+    },
+    {
+      "id": "401860915",
+      "pair": [
+        "Utah State",
+        "San Diego State"
+      ],
+      "market": "SPREAD",
+      "side": "home",
+      "opening_line": 2.5,
+      "opening_price": 100,
+      "primary": {
+        "line": 3,
+        "price": -114,
+        "book_icon": "34"
+      },
+      "later": {
+        "line": 3,
+        "price": -114,
+        "book_icon": "34"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": -3,
+          "transition": "LOSS_TO_PUSH",
+          "line_effect_cents": 500,
+          "price_effect_cents": 0
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": -3,
+          "transition": "LOSS_TO_PUSH",
+          "line_effect_cents": 500,
+          "price_effect_cents": 0
+        }
+      ]
+    },
+    {
+      "id": "401864540",
+      "pair": [
+        "Wyoming",
+        "UTEP"
+      ],
+      "market": "SPREAD",
+      "side": "home",
+      "opening_line": 7.5,
+      "opening_price": -108,
+      "primary": {
+        "line": 8.5,
+        "price": -115,
+        "book_icon": "30"
+      },
+      "later": {
+        "line": 8.5,
+        "price": -115,
+        "book_icon": "30"
+      },
+      "primary_flip_conditions": [
+        {
+          "selected_team_margin": -8,
+          "transition": "LOSS_TO_WIN",
+          "line_effect_cents": 963,
+          "price_effect_cents": -28
+        }
+      ],
+      "later_flip_conditions": [
+        {
+          "selected_team_margin": -8,
+          "transition": "LOSS_TO_WIN",
+          "line_effect_cents": 963,
+          "price_effect_cents": -28
+        }
+      ]
+    },
+    {
+      "id": "401860917",
+      "pair": [
+        "Colorado State",
+        "Washington State"
+      ],
+      "market": "TOTAL",
+      "side": "under",
+      "opening_line": 67.5,
+      "opening_price": -108,
+      "primary": null,
+      "later": {
+        "line": 66.5,
+        "price": -108,
+        "book_icon": "30",
+        "side": "under"
+      },
+      "primary_flip_conditions": [],
+      "later_flip_conditions": [
+        {
+          "combined_points": 67,
+          "transition": "WIN_TO_LOSS",
+          "line_effect_cents": -963,
+          "price_effect_cents": 0
+        }
+      ]
+    }
+  ],
+  "sunday_use": "Apply official directed finals to both frozen boards using the existing Sunday review, then compare observed grade transitions with these pregame boundaries. Keep three primary missing quote pairs visible and show the later board's coverage gain separately from price and grade effects."
+}
