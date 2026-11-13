@@ -1,0 +1,5 @@
+# Friday pre-trip Market Monitor terminal candidate
+
+RUN_INCOMPLETE for full review scope. The manual pre-trip reconciliation is complete and published prospectively after the missed 15:00 CT checkpoint. The current 15:21 CT sheet has 67 games, 65 PASS and two renewed CONDITIONAL, with original limits and Saturday 07:00 CT final cutoff. No venue quote or parlay was verified. Saturday game-day reports and remaining player-level material work are open. Natural scheduled producer parity remains open.
+
+Verified from the repository: 499 recovery pointers, all 67 games in the whole-sheet audit, and 28 focused local tests. Current sheet evidence/operational/CFB_WEEK11_HOT_SHEET_2026-11-13_1521CT.md, blob 448318f57dabe7a47e3b8e08e9f78c7cf97042f0. Index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_290.md at 11dab4e053e5d939f487534f20f7790c6fd6d461. Review evidence evidence/audits/CFB_WEEK11_PRETRIP_RECONCILIATION_20261113T212021Z.md. Exact selected publication CI run 43510343175, in progress at this candidate boundary.
