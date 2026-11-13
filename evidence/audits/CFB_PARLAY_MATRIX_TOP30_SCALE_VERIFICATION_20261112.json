@@ -1,0 +1,446 @@
+{
+  "schema": "CFB_PARLAY_MATRIX_TOP30_SCALE_VERIFICATION_V1",
+  "source": {
+    "path": "scripts/cfb_parlay_matrix.py",
+    "blob": "79eba3e1c4efb09a30737028e8287e5c7b49c06c"
+  },
+  "test": "Executed the saved Python CLI with synthetic 30-, 10- and five-game cards, each with one spread selection per distinct game and no offers. Compared all 60 cells against the binomial coefficient, expected missing rank count and zero qualified builds.",
+  "fixtures": [
+    {
+      "ranks": 30,
+      "cells": [
+        {
+          "depth": 10,
+          "legs": 2,
+          "combinations": 45,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 10,
+          "legs": 3,
+          "combinations": 120,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 10,
+          "legs": 4,
+          "combinations": 210,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 10,
+          "legs": 5,
+          "combinations": 252,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 15,
+          "legs": 2,
+          "combinations": 105,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 15,
+          "legs": 3,
+          "combinations": 455,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 15,
+          "legs": 4,
+          "combinations": 1365,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 15,
+          "legs": 5,
+          "combinations": 3003,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 20,
+          "legs": 2,
+          "combinations": 190,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 20,
+          "legs": 3,
+          "combinations": 1140,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 20,
+          "legs": 4,
+          "combinations": 4845,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 20,
+          "legs": 5,
+          "combinations": 15504,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 25,
+          "legs": 2,
+          "combinations": 300,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 25,
+          "legs": 3,
+          "combinations": 2300,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 25,
+          "legs": 4,
+          "combinations": 12650,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 25,
+          "legs": 5,
+          "combinations": 53130,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 30,
+          "legs": 2,
+          "combinations": 435,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 30,
+          "legs": 3,
+          "combinations": 4060,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 30,
+          "legs": 4,
+          "combinations": 27405,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 30,
+          "legs": 5,
+          "combinations": 142506,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        }
+      ]
+    },
+    {
+      "ranks": 10,
+      "cells": [
+        {
+          "depth": 10,
+          "legs": 2,
+          "combinations": 45,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 10,
+          "legs": 3,
+          "combinations": 120,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 10,
+          "legs": 4,
+          "combinations": 210,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 10,
+          "legs": 5,
+          "combinations": 252,
+          "missing_ranks": 0,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 15,
+          "legs": 2,
+          "combinations": 45,
+          "missing_ranks": 5,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 15,
+          "legs": 3,
+          "combinations": 120,
+          "missing_ranks": 5,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 15,
+          "legs": 4,
+          "combinations": 210,
+          "missing_ranks": 5,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 15,
+          "legs": 5,
+          "combinations": 252,
+          "missing_ranks": 5,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 20,
+          "legs": 2,
+          "combinations": 45,
+          "missing_ranks": 10,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 20,
+          "legs": 3,
+          "combinations": 120,
+          "missing_ranks": 10,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 20,
+          "legs": 4,
+          "combinations": 210,
+          "missing_ranks": 10,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 20,
+          "legs": 5,
+          "combinations": 252,
+          "missing_ranks": 10,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 25,
+          "legs": 2,
+          "combinations": 45,
+          "missing_ranks": 15,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 25,
+          "legs": 3,
+          "combinations": 120,
+          "missing_ranks": 15,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 25,
+          "legs": 4,
+          "combinations": 210,
+          "missing_ranks": 15,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 25,
+          "legs": 5,
+          "combinations": 252,
+          "missing_ranks": 15,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 30,
+          "legs": 2,
+          "combinations": 45,
+          "missing_ranks": 20,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 30,
+          "legs": 3,
+          "combinations": 120,
+          "missing_ranks": 20,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 30,
+          "legs": 4,
+          "combinations": 210,
+          "missing_ranks": 20,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 30,
+          "legs": 5,
+          "combinations": 252,
+          "missing_ranks": 20,
+          "qualified_builds": 0
+        }
+      ]
+    },
+    {
+      "ranks": 5,
+      "cells": [
+        {
+          "depth": 10,
+          "legs": 2,
+          "combinations": 10,
+          "missing_ranks": 5,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 10,
+          "legs": 3,
+          "combinations": 10,
+          "missing_ranks": 5,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 10,
+          "legs": 4,
+          "combinations": 5,
+          "missing_ranks": 5,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 10,
+          "legs": 5,
+          "combinations": 1,
+          "missing_ranks": 5,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 15,
+          "legs": 2,
+          "combinations": 10,
+          "missing_ranks": 10,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 15,
+          "legs": 3,
+          "combinations": 10,
+          "missing_ranks": 10,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 15,
+          "legs": 4,
+          "combinations": 5,
+          "missing_ranks": 10,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 15,
+          "legs": 5,
+          "combinations": 1,
+          "missing_ranks": 10,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 20,
+          "legs": 2,
+          "combinations": 10,
+          "missing_ranks": 15,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 20,
+          "legs": 3,
+          "combinations": 10,
+          "missing_ranks": 15,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 20,
+          "legs": 4,
+          "combinations": 5,
+          "missing_ranks": 15,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 20,
+          "legs": 5,
+          "combinations": 1,
+          "missing_ranks": 15,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 25,
+          "legs": 2,
+          "combinations": 10,
+          "missing_ranks": 20,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 25,
+          "legs": 3,
+          "combinations": 10,
+          "missing_ranks": 20,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 25,
+          "legs": 4,
+          "combinations": 5,
+          "missing_ranks": 20,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 25,
+          "legs": 5,
+          "combinations": 1,
+          "missing_ranks": 20,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 30,
+          "legs": 2,
+          "combinations": 10,
+          "missing_ranks": 25,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 30,
+          "legs": 3,
+          "combinations": 10,
+          "missing_ranks": 25,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 30,
+          "legs": 4,
+          "combinations": 5,
+          "missing_ranks": 25,
+          "qualified_builds": 0
+        },
+        {
+          "depth": 30,
+          "legs": 5,
+          "combinations": 1,
+          "missing_ranks": 25,
+          "qualified_builds": 0
+        }
+      ]
+    }
+  ],
+  "next": "Capture authentic ranked pregame evidence at the next eligible snapshot. This test demonstrates capacity only."
+}
