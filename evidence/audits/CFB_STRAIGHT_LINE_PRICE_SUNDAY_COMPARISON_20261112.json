@@ -1,0 +1,215 @@
+{
+  "schema": "CFB_STRAIGHT_LINE_PRICE_SUNDAY_COMPARISON_V1",
+  "date_ct": "2026-11-12",
+  "recovery_index": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_287.md",
+    "blob": "1d45bd5995f5cab1b43679a69c6bc3678a66a0ef"
+  },
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEKS8_9_STRAIGHT_LINE_PRICE_ATTRIBUTION_20261112.json",
+      "blob": "2649a5ffdb748cb97932bb710f7972005c56ae8c"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK10_STRAIGHT_LINE_PRICE_ATTRIBUTION_20261112.json",
+      "blob": "6d2a19730ceb0d09ae4f2fd9fe2ecda965112271"
+    }
+  ],
+  "totals": {
+    "audited": 26,
+    "paired": 25,
+    "changed_lines": 21,
+    "stake_cents": 12500,
+    "opening_grades": {
+      "W": 15,
+      "L": 9,
+      "P": 1
+    },
+    "review_grades": {
+      "W": 15,
+      "L": 10,
+      "P": 0
+    },
+    "opening_net_cents": 2279,
+    "review_net_cents": 1792,
+    "line_effect_cents": -500,
+    "price_effect_cents": 13
+  },
+  "by_week": {
+    "8": {
+      "audited": 5,
+      "paired": 4,
+      "changed_lines": 3,
+      "stake_cents": 2000,
+      "opening_grades": {
+        "W": 2,
+        "L": 2,
+        "P": 0
+      },
+      "review_grades": {
+        "W": 2,
+        "L": 2,
+        "P": 0
+      },
+      "opening_net_cents": -73,
+      "review_net_cents": -91,
+      "line_effect_cents": 0,
+      "price_effect_cents": -18
+    },
+    "9": {
+      "audited": 3,
+      "paired": 3,
+      "changed_lines": 3,
+      "stake_cents": 1500,
+      "opening_grades": {
+        "W": 1,
+        "L": 1,
+        "P": 1
+      },
+      "review_grades": {
+        "W": 1,
+        "L": 2,
+        "P": 0
+      },
+      "opening_net_cents": -45,
+      "review_net_cents": -554,
+      "line_effect_cents": -500,
+      "price_effect_cents": -9
+    },
+    "10": {
+      "audited": 18,
+      "paired": 18,
+      "changed_lines": 15,
+      "stake_cents": 9000,
+      "opening_grades": {
+        "W": 12,
+        "L": 6,
+        "P": 0
+      },
+      "review_grades": {
+        "W": 12,
+        "L": 6,
+        "P": 0
+      },
+      "opening_net_cents": 2397,
+      "review_net_cents": 2437,
+      "line_effect_cents": 0,
+      "price_effect_cents": 40
+    }
+  },
+  "by_market": {
+    "SPREAD": {
+      "audited": 23,
+      "paired": 22,
+      "changed_lines": 18,
+      "stake_cents": 11000,
+      "opening_grades": {
+        "W": 13,
+        "L": 8,
+        "P": 1
+      },
+      "review_grades": {
+        "W": 13,
+        "L": 9,
+        "P": 0
+      },
+      "opening_net_cents": 1869,
+      "review_net_cents": 1400,
+      "line_effect_cents": -500,
+      "price_effect_cents": 31
+    },
+    "TOTAL": {
+      "audited": 3,
+      "paired": 3,
+      "changed_lines": 3,
+      "stake_cents": 1500,
+      "opening_grades": {
+        "W": 2,
+        "L": 1,
+        "P": 0
+      },
+      "review_grades": {
+        "W": 2,
+        "L": 1,
+        "P": 0
+      },
+      "opening_net_cents": 410,
+      "review_net_cents": 392,
+      "line_effect_cents": 0,
+      "price_effect_cents": -18
+    }
+  },
+  "leave_one_week_out": {
+    "8": {
+      "audited": 21,
+      "paired": 21,
+      "changed_lines": 18,
+      "stake_cents": 10500,
+      "opening_grades": {
+        "W": 13,
+        "L": 7,
+        "P": 1
+      },
+      "review_grades": {
+        "W": 13,
+        "L": 8,
+        "P": 0
+      },
+      "opening_net_cents": 2352,
+      "review_net_cents": 1883,
+      "line_effect_cents": -500,
+      "price_effect_cents": 31
+    },
+    "9": {
+      "audited": 23,
+      "paired": 22,
+      "changed_lines": 18,
+      "stake_cents": 11000,
+      "opening_grades": {
+        "W": 14,
+        "L": 8,
+        "P": 0
+      },
+      "review_grades": {
+        "W": 14,
+        "L": 8,
+        "P": 0
+      },
+      "opening_net_cents": 2324,
+      "review_net_cents": 2346,
+      "line_effect_cents": 0,
+      "price_effect_cents": 22
+    },
+    "10": {
+      "audited": 8,
+      "paired": 7,
+      "changed_lines": 6,
+      "stake_cents": 3500,
+      "opening_grades": {
+        "W": 3,
+        "L": 3,
+        "P": 1
+      },
+      "review_grades": {
+        "W": 3,
+        "L": 4,
+        "P": 0
+      },
+      "opening_net_cents": -118,
+      "review_net_cents": -645,
+      "line_effect_cents": -500,
+      "price_effect_cents": -27
+    }
+  },
+  "missing": [
+    "401866448"
+  ],
+  "grade_changes": [
+    {
+      "id": "401858503",
+      "transition": "P_TO_L"
+    }
+  ],
+  "interpretation": "Retrospective archived conditionals with $5 hypothetical stake per selection. Compare the same selection at opening and reviewed displays. Attribution applies the reviewed line at the opening price before applying the reviewed price. Later selection, week mix, deadline coverage and venue uncertainty prevent causal or execution claims.",
+  "next": "Use the separately frozen 40-game Week 11 PASS cohort and one qualified official-final input to compare the primary and collector sensitivity reports in the existing Sunday review. Keep the cohorts distinct and report missing pairs, grade transitions, line and price effects by market."
+}
