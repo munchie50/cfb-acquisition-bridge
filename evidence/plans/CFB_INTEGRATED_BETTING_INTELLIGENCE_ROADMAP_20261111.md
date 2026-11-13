@@ -305,3 +305,7 @@ M3 remains open for qualified same-build odds and actionable deeper ranks. The f
 ## Prospective matrix depth decision — November 12, 2026
 
 The user set the default prospective parlay research target to 30 distinct games. Apply it at the next eligible pregame research snapshot. Preserve the independently chosen straight card and compare its overlap at each nested depth. Historical rank gaps remain documented. The registered Week 11 Friday test retains its original five-game pool and 15 builds, and any prospective offer comparison requires contemporaneous combined sportsbook odds. This changes the research target only.
+
+## Top 30 evaluator capacity — November 12, 2026
+
+[Verified CLI run](../audits/CFB_PARLAY_MATRIX_TOP30_SCALE_VERIFICATION_20261112.json) commit `54f2afaac9fbc97ca091b44964caf898e6871031`, blob `cfa67eeb6d91fc38ecdf2dab5315c57b8aecaac4`. The existing evaluator matched all 60 depth/leg cells on synthetic 30-, 10- and five-game inputs. Top 30 produced 435 two-leg, 4,060 three-leg, 27,405 four-leg and 142,506 five-leg combinations. Smaller inputs preserved missing rank counts and zero combined offers in all fixtures. M3 remains open for authentic pregame rankings and qualified combined sportsbook odds. Capture the actual rank depth at the next eligible snapshot. Friday's existing registration remains the next live quote test.
