@@ -41,3 +41,73 @@ jobs:
           path: ${{ runner.temp }}/monitor-collection/
           if-no-files-found: error
           retention-days: 7
+      - name: Verify source for compiler preflight
+        run: |
+          mkdir -p "$RUNNER_TEMP/proof"
+          python -m zipfile -c "$RUNNER_TEMP/collection.zip" "$RUNNER_TEMP"/monitor-collection/*
+          python scripts/cfb_monitor_collection.py verify \
+            --archive "$RUNNER_TEMP/collection.zip" --output "$RUNNER_TEMP/verified" \
+            --run "$GITHUB_RUN_ID" --attempt "$GITHUB_RUN_ATTEMPT" \
+            --head "$GITHUB_SHA" --event "$GITHUB_EVENT_NAME" > "$RUNNER_TEMP/proof/source.json"
+      - name: Compile and audit a read-only preflight draft
+        env:
+          PYTHONPATH: scripts
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          import os
+          import subprocess
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          import cfb_week11_publication as week
+
+          gate = week.gate
+          temp = Path(os.environ['RUNNER_TEMP'])
+          verified = temp / 'verified'
+          proof = temp / 'proof'
+          head = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+          if head != os.environ['GITHUB_SHA']:
+              raise ValueError('checkout head differs from workflow event')
+          manifest = json.loads((verified / 'manifest.json').read_text())
+          capture = (verified / 'capture.md').read_text()
+          lineage = Path('evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json').read_text()
+          ops = Path('evidence/operational')
+          market = (ops / 'CFB_MARKET_MONITOR_STATE.md').read_text()
+          decision = (ops / 'CFB_DECISION_WAIT_LEDGER.md').read_text()
+          now = datetime.now(timezone.utc)
+          as_of = now.isoformat().replace('+00:00', 'Z')
+          cycle = now.strftime('CFB_MARKET_MONITOR_%Y%m%dT%H%M%SZ')
+          saved = gate.selected_block(market, week.MARKET_TAG, gate.WEEKLY_MARKET_SCHEMA, now)
+          _, _, _, _, accepted = gate.inputs(market, decision, lineage, saved['as_of_utc'], week.PROFILE)
+          rows = [{key: value for key, value in row.items()
+                   if key not in ('state_recorded_at_utc', 'state_evidence')}
+                  for row in accepted.values()]
+          market, decision = week.compile(market, decision, capture, lineage, cycle,
+                                          as_of, manifest['recovered_by'], rows)
+          args = (market, decision, (ops / 'CFB_EXECUTION_LEDGER.md').read_text(),
+                  (ops / 'CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md').read_text(),
+                  lineage, as_of, week.PROFILE)
+          draft = gate.render(*args)
+          audit = gate.audit(draft, *args)
+          (proof / 'draft.md').write_text(draft)
+          receipt = {
+              'status': 'READ_ONLY_PREFLIGHT_VERIFIED',
+              'scope': 'Fresh source and deterministic draft with retained decisions',
+              'run_id': manifest['run_id'], 'attempt': manifest['run_attempt'],
+              'event': manifest['event'], 'head': manifest['producer_head'],
+              'source_recovered_by': manifest['recovered_by'], 'compiled_at': as_of,
+              'games': audit['games'], 'draft_blob': gate.blob(draft),
+              'draft_sha256': hashlib.sha256(draft.encode()).hexdigest(),
+          }
+          (proof / 'receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
+          print(json.dumps(receipt))
+          PY
+          echo 'Read-only preflight draft compiled and audited with retained decisions' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-monitor-preflight-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/proof/
+          if-no-files-found: error
+          retention-days: 7
