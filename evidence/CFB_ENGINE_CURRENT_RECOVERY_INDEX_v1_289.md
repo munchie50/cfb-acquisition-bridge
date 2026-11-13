@@ -2510,36 +2510,6 @@ The helper clones over ordinary HTTPS and requires working DNS for github.com. I
       "purpose": "CURRENT_PUBLICATION_AUDIT:Friday afternoon manual partial Monitor"
     },
     {
-      "path": "scripts/cfb_runtime_checkout.py",
-      "blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
-      "purpose": "RUNTIME_CHECKOUT_REFERENCE:Runtime checkout helper"
-    },
-    {
-      "path": "scripts/cfb_conditional_recommendation_profile.py",
-      "blob": "c0c3cd090074a659f66ccc38f03fe12bf670b186",
-      "purpose": "RUNTIME_CHECKOUT_REFERENCE:Immutable review validator used by checkout"
-    },
-    {
-      "path": "scripts/cfb_week11_publication.py",
-      "blob": "1fd070df5b2ad67327b1a3a0a173b6a810fddb58",
-      "purpose": "RUNTIME_CHECKOUT_REFERENCE:Week 11 compiler checked by caller"
-    },
-    {
-      "path": "qa/cfb_runtime_failure_trace_readonly.py",
-      "blob": "79c18f69574bd6fa042b29613b465495402fa94d",
-      "purpose": "RUNTIME_CHECKOUT_REFERENCE:Runtime failure classifier"
-    },
-    {
-      "path": ".github/workflows/cfb_monitor_scheduled_execution_qa.yml",
-      "blob": "4fb895e81552ed291e4ab0aac0e65fc4c6e08370",
-      "purpose": "RUNTIME_CHECKOUT_REFERENCE:Scheduled runtime QA workflow"
-    },
-    {
-      "path": ".github/workflows/cfb_producer_runtime_smoke_manual.yml",
-      "blob": "ec3a747a2cca47ae119cab35193fde7cee63e01c",
-      "purpose": "RUNTIME_CHECKOUT_REFERENCE:Manual runtime smoke workflow"
-    },
-    {
       "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261029T180541Z_TERMINAL_CANDIDATE.md",
       "blob": "e97a0723bc6a7d5c1572ceb2e1d1e24d53288c8f",
       "purpose": "RUNTIME_CHECKOUT_REFERENCE:October 29 successful natural production checkout"
