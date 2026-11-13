@@ -2544,6 +2544,11 @@ The helper clones over ordinary HTTPS and requires working DNS for github.com. I
       "path": "evidence/operational/recommendation_reviews/W11_401856858_20261113T212021Z_PRETRIP.json",
       "blob": "5023e44aff90f48e6c1e919f16ee7b21c080df6d",
       "purpose": "CURRENT_IMMUTABLE_REVIEW:Baylor pre-trip"
+    },
+    {
+      "path": "evidence/operational/CFB_DATA_GAP_FOLLOW_THROUGH_20261113.md",
+      "blob": "57957924106e28d3619565306a82125919f22472",
+      "purpose": "ACTIVE_DATA_GAP_FOLLOW_THROUGH:ticket linkage, timed market coverage, quote provenance and settlement"
     }
   ]
 }
