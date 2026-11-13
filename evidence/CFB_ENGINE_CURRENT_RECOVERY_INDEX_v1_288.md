@@ -1,6 +1,6 @@
 # CFB Engine — Current Recovery Index v1.288
 
-Status: selects the November 13 manual partial Market Monitor publication.
+Status: CURRENT RECOVERY DOORWAY. Selects the November 13 manual partial Market Monitor publication.
 
 ```cfb-frontier-json
 {
