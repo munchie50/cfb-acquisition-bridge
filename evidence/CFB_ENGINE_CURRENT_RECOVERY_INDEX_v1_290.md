@@ -62,8 +62,8 @@ The helper clones over ordinary HTTPS and requires working DNS for github.com. I
     },
     {
       "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
-      "blob": "dac23edbcae26e5aea1ad37ff2b941efaa67e0d8",
-      "purpose": "CURRENT_EXECUTION_LEDGER:58 actual tickets; seven Week 11 tickets at $40.00 stake, settlement pending"
+      "blob": "5f098136e7c2719731d49d5bbe98752df0775e9f",
+      "purpose": "CURRENT_EXECUTION_LEDGER:64 actual tickets; 13 Week 11 tickets at $82.00 stake, settlement pending"
     },
     {
       "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
@@ -97,8 +97,8 @@ The helper clones over ordinary HTTPS and requires working DNS for github.com. I
     },
     {
       "path": "evidence/operational/CFB_MONEY_LEDGER.md",
-      "blob": "0f6804969e91d32c41e545b0c8cd718e34033d56",
-      "purpose": "CURRENT_MONEY_LEDGER:additional20postedonce;147.35conditionalestimate;actualholdingsunreconciled"
+      "blob": "5e998c014cbddb5822c63f61f10f6c3deb565a29",
+      "purpose": "CURRENT_MONEY_LEDGER: $11.15 November 13 voucher observed; complete holdings unreconciled"
     },
     {
       "path": "evidence/CFB_ENGINE_WEEKLY_BETA_LEARNING_REVIEW_2026-10-11_R2.md",
@@ -2554,6 +2554,11 @@ The helper clones over ordinary HTTPS and requires working DNS for github.com. I
       "path": "evidence/operational/CFB_NOV13_SEVEN_TICKET_INTAKE_20261113.json",
       "blob": "ca73629cad6befb9df8f4a80978c715d1a106c32",
       "purpose": "CURRENT_WEEK11_TICKET_INTAKE: seven straight wagers with immutable evidence and comparison dispositions"
+    },
+    {
+      "path": "evidence/operational/CFB_NOV13_ADDITIONAL_TICKET_AND_VOUCHER_INTAKE_20261113.json",
+      "blob": "113710ee0c2cca0f52b311c093631c97bb235299",
+      "purpose": "WEEK11_ADDITIONAL_TICKET_INTAKE: six additional wagers and one observed voucher"
     }
   ]
 }
