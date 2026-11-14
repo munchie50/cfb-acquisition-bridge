@@ -1,0 +1,22 @@
+# Health RUN_CLOSURE
+cycle_id: CFB_HEALTH_20261114T222936611Z
+final_status: RUN_INCOMPLETE
+coverage: COVERAGE_UNVERIFIED
+terminal_candidate_path: evidence/run_receipts/CFB_HEALTH_20261114T222936611Z_TERMINAL_CANDIDATE.md
+terminal_candidate_blob: 08970f1ed272bb0b7f9a1f04818d4b743b78ce7d
+terminal_candidate_independent_readback: PASS BEFORE THIS CLOSURE
+audit_path: evidence/scheduler_qa/CFB_HEALTH_20261114T222936611Z_AUDIT.md
+audit_blob: 82adb10914bc2c3fca00fe86fac4858ed75a968f
+audit_readback: PASS
+startup_blob: 7d5beada9c21e470aa787ba8b976b72ff2354db0
+market_07CT: CLOSED_INCOMPLETE
+market_13CT: CLOSED_INCOMPLETE
+evening_Friday: CLOSED_INCOMPLETE
+weekly_Saturday: CLOSED_INCOMPLETE
+first_own_unverified_check: independent full-byte and Git SHA-1 verification of canonical files
+coverage_advanced: NO
+historical_unresolved: retained in audit
+no_material_change: YES
+scientific_effect: NONE
+Champion_effect: NONE
+next_action: next existing Health completes hash/semantic verification; existing producer owns future prospective collection and publication
