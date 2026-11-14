@@ -1,0 +1,267 @@
+{
+  "schema": "CFB_ACTUAL_TICKET_INTAKE_RECEIPT_V1",
+  "status": "EXECUTION_AND_VOUCHER_SAVED_AND_FULL_READBACK_VERIFIED",
+  "recorded_at_utc": "2026-11-14T00:34:28.453Z",
+  "venue": "Caesars Sportsbook / Harrah's Columbus",
+  "issue_date": "2026-11-13",
+  "event_date": "2026-11-14",
+  "receipt_timezone": "UNSPECIFIED; likely Central based on venue and retained clocks",
+  "budget_class": "UNASSIGNED",
+  "settlement": "PENDING_UNVERIFIED",
+  "ticket_count": 6,
+  "stake_usd": "42.00",
+  "printed_max_win_usd": "61.40",
+  "printed_max_payout_usd": "103.40",
+  "canonical_path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+  "verified_blob": "5f098136e7c2719731d49d5bbe98752df0775e9f",
+  "money_path": "evidence/operational/CFB_MONEY_LEDGER.md",
+  "money_verified_blob": "5e998c014cbddb5822c63f61f10f6c3deb565a29",
+  "saved_card": {
+    "path": "evidence/operational/CFB_WEEK11_HOT_SHEET_2026-11-13_1521CT.md",
+    "blob": "448318f57dabe7a47e3b8e08e9f78c7cf97042f0"
+  },
+  "comparison_basis": "Line and American odds deltas are accepted minus saved limit. Tennessee and Baylor printed times fall between publication 15:21 and evening checkpoint 19:30 if local Central. Placement-time conditions remain unverified. Parlay leg comparisons are informational only.",
+  "tickets": [
+    {
+      "game_id": "401856888",
+      "game": "Tennessee at Texas A&M",
+      "selection": "Tennessee",
+      "market": "SPREAD",
+      "line": -2.5,
+      "american_odds": -110,
+      "issue": "16:39",
+      "event": "14:00",
+      "disposition": "CONDITIONAL_TERMS_MET_TIMING_UNVERIFIED",
+      "reference": {
+        "path": "evidence/operational/recommendation_reviews/W11_401856888_20261113T212021Z_PRETRIP.json",
+        "blob": "5b43b15cd5f55a68a48e1251c56d6ab2d79fb0d1",
+        "line": -2.5,
+        "minimum_price": -115,
+        "line_delta": 0,
+        "odds_delta": 5,
+        "cutoff_utc": "2026-11-14T13:00:00Z"
+      },
+      "execution_id": "CFB_NOV13-08",
+      "stake_usd": "10.00",
+      "printed_max_win_usd": "9.10",
+      "printed_max_payout_usd": "19.10",
+      "source_image": {
+        "filename": "IMG_5BD96AA0-2886-44D5-ACEE-F44DEF0BAAD3.jpeg",
+        "sha256": "a08ae182566e36eea1563e9bfe9f7c8fc138f7e888e0b1a9df2b79af2692026d",
+        "bytes": 381476
+      }
+    },
+    {
+      "game_id": "401856858",
+      "game": "Baylor at BYU",
+      "selection": "Baylor",
+      "market": "SPREAD",
+      "line": 7.5,
+      "american_odds": -115,
+      "issue": "16:40",
+      "event": "14:30",
+      "disposition": "CONDITIONAL_TERMS_MET_TIMING_UNVERIFIED",
+      "reference": {
+        "path": "evidence/operational/recommendation_reviews/W11_401856858_20261113T212021Z_PRETRIP.json",
+        "blob": "5023e44aff90f48e6c1e919f16ee7b21c080df6d",
+        "line": 7.5,
+        "minimum_price": -118,
+        "line_delta": 0,
+        "odds_delta": 3,
+        "cutoff_utc": "2026-11-14T13:00:00Z"
+      },
+      "execution_id": "CFB_NOV13-09",
+      "stake_usd": "10.00",
+      "printed_max_win_usd": "8.70",
+      "printed_max_payout_usd": "18.70",
+      "source_image": {
+        "filename": "IMG_B9828CF0-30BF-44EB-A5A4-18A835E58ABA.jpeg",
+        "sha256": "e174b4338781ad10519295771d9aab2d1588264a4d26405da06dbf9f91050944",
+        "bytes": 367500
+      }
+    },
+    {
+      "game_id": "401858525",
+      "game": "Nebraska at Rutgers",
+      "selection": "Nebraska",
+      "market": "SPREAD",
+      "line": -13.5,
+      "american_odds": -110,
+      "issue": "16:48",
+      "event": "11:35",
+      "disposition": "OFF_CARD_PASS_OPPOSITE_REVIEW_LEAN",
+      "reference": {
+        "path": "evidence/audits/CFB_WEEK11_NEBRASKA_RUTGERS_FULL_REVIEW_20261113.md",
+        "blob": "b02e7a1b40464c5379e702f58846567e057852f5",
+        "note": "Rutgers +15.5 lean without take-at terms; no recommendation delta"
+      },
+      "execution_id": "CFB_NOV13-10",
+      "stake_usd": "10.00",
+      "printed_max_win_usd": "9.10",
+      "printed_max_payout_usd": "19.10",
+      "source_image": {
+        "filename": "IMG_EC93E4C6-36CF-4B44-BEBD-FA057054F027.jpeg",
+        "sha256": "f53919eab73256fcf3a60a7d8cc60afca2e9213870631d439949acd7a8d22588",
+        "bytes": 421435
+      },
+      "event_clock_note": "Printed clock appears 11:35 in slightly blurred source; saved schedule is 11:30 CT. Preserve discrepancy and verify actual start if needed."
+    },
+    {
+      "selection": "Four-leg parlay",
+      "market": "PARLAY",
+      "american_odds": 1248,
+      "issue": "16:49",
+      "disposition": "UNMATCHED_PARLAY",
+      "legs": [
+        {
+          "game_id": "401856888",
+          "game": "Tennessee at Texas A&M",
+          "selection": "Tennessee",
+          "market": "SPREAD",
+          "line": -2,
+          "american_odds": -110,
+          "event": "14:00",
+          "disposition": "CONDITIONAL_TERMS_MET_TIMING_UNVERIFIED",
+          "reference": {
+            "path": "evidence/operational/recommendation_reviews/W11_401856888_20261113T212021Z_PRETRIP.json",
+            "blob": "5b43b15cd5f55a68a48e1251c56d6ab2d79fb0d1",
+            "line": -2.5,
+            "minimum_price": -115,
+            "line_delta": 0.5,
+            "odds_delta": 5,
+            "cutoff_utc": "2026-11-14T13:00:00Z"
+          }
+        },
+        {
+          "game_id": "401856858",
+          "game": "Baylor at BYU",
+          "selection": "Baylor",
+          "market": "SPREAD",
+          "line": 7.5,
+          "american_odds": -115,
+          "event": "14:30",
+          "disposition": "CONDITIONAL_TERMS_MET_TIMING_UNVERIFIED",
+          "reference": {
+            "path": "evidence/operational/recommendation_reviews/W11_401856858_20261113T212021Z_PRETRIP.json",
+            "blob": "5023e44aff90f48e6c1e919f16ee7b21c080df6d",
+            "line": 7.5,
+            "minimum_price": -118,
+            "line_delta": 0,
+            "odds_delta": 3,
+            "cutoff_utc": "2026-11-14T13:00:00Z"
+          }
+        },
+        {
+          "game_id": "401870752",
+          "game": "Jacksonville State at Western Kentucky",
+          "selection": "Jacksonville State",
+          "market": "SPREAD",
+          "line": -7.5,
+          "american_odds": -105,
+          "event": "14:30",
+          "disposition": "HISTORICAL_TERMS_MATCH_OFF_CARD",
+          "reference": {
+            "path": "evidence/operational/recommendation_reviews/CFB_WEEK11_401870752_CONDITIONAL_20261110T224814Z.json",
+            "blob": "003ba67f22cf6856abf9bff7537ee706e22a07ee",
+            "line": -7.5,
+            "minimum_price": -105,
+            "line_delta": 0,
+            "odds_delta": 0,
+            "cutoff_utc": "2026-11-14T13:00:00Z"
+          }
+        },
+        {
+          "game_id": "401856883",
+          "game": "Missouri at Georgia",
+          "selection": "Georgia",
+          "market": "SPREAD",
+          "line": -16.5,
+          "american_odds": -107,
+          "event": "14:30",
+          "disposition": "OFF_CARD_HISTORICAL_SPREAD_LIMIT_MISSED",
+          "reference": {
+            "path": "evidence/operational/recommendation_reviews/CFB_WEEK11_401856883_CONDITIONAL_20261111T003125Z.json",
+            "blob": "b9a3d7b2eae55a7c9a77cbc0ca248220faa2de1e",
+            "line": -15.5,
+            "minimum_price": -110,
+            "line_delta": -1,
+            "odds_delta": 3,
+            "cutoff_utc": "2026-11-14T13:00:00Z"
+          }
+        }
+      ],
+      "execution_id": "CFB_NOV13-11",
+      "stake_usd": "2.00",
+      "printed_max_win_usd": "24.95",
+      "printed_max_payout_usd": "26.95",
+      "source_image": {
+        "filename": "IMG_89B56C76-484F-4F57-AD61-904B11969902.jpeg",
+        "sha256": "04b8ce4ea9ab912bf2ce668abda0d815848724b1b916afb3932f37287e7a126f",
+        "bytes": 448390
+      }
+    },
+    {
+      "game_id": "401856883",
+      "game": "Missouri at Georgia",
+      "selection": "Georgia",
+      "market": "SPREAD",
+      "line": -16.5,
+      "american_odds": -107,
+      "issue": "16:50",
+      "event": "14:30",
+      "disposition": "OFF_CARD_HISTORICAL_SPREAD_LIMIT_MISSED",
+      "reference": {
+        "path": "evidence/operational/recommendation_reviews/CFB_WEEK11_401856883_CONDITIONAL_20261111T003125Z.json",
+        "blob": "b9a3d7b2eae55a7c9a77cbc0ca248220faa2de1e",
+        "line": -15.5,
+        "minimum_price": -110,
+        "line_delta": -1,
+        "odds_delta": 3,
+        "cutoff_utc": "2026-11-14T13:00:00Z"
+      },
+      "execution_id": "CFB_NOV13-12",
+      "stake_usd": "5.00",
+      "printed_max_win_usd": "4.65",
+      "printed_max_payout_usd": "9.65",
+      "source_image": {
+        "filename": "IMG_194910A6-7FF5-4893-BD21-317A62EEDF8F.jpeg",
+        "sha256": "b8d642897d1eb21753510db5f324665547249002f09c408d6ae2d9c89e321764",
+        "bytes": 392928
+      }
+    },
+    {
+      "game_id": "401858519",
+      "game": "Purdue at Iowa",
+      "selection": "Iowa",
+      "market": "SPREAD",
+      "line": -17.5,
+      "american_odds": -102,
+      "issue": "16:52",
+      "event": "18:30",
+      "disposition": "OFF_CARD_PASS",
+      "execution_id": "CFB_NOV13-13",
+      "stake_usd": "5.00",
+      "printed_max_win_usd": "4.90",
+      "printed_max_payout_usd": "9.90",
+      "source_image": {
+        "filename": "IMG_55AD1EA1-5C99-470E-BF7E-90CB480B5442.jpeg",
+        "sha256": "13effad7271ccb632387035ac627f6f371090931487d03d1d33e74e44a6cecaa",
+        "bytes": 371111
+      }
+    }
+  ],
+  "voucher": {
+    "observation_id": "CFB_NOV13_VOUCHER_01",
+    "amount_usd": "11.15",
+    "issued_printed": "2026-11-13 16:53",
+    "expires_printed": "2027-11-13 16:53",
+    "timezone": "UNSPECIFIED",
+    "status": "ISSUED_VOUCHER_OBSERVED",
+    "source_image": {
+      "filename": "IMG_7469667D-8D5B-4FEA-B46A-BB3F8734603B.jpeg",
+      "sha256": "5a13fa55e1e62ecdfcfd6b91faab20b89f4d6c2b85509c05710e2c2a6b5a732d",
+      "bytes": 402442
+    }
+  },
+  "next_action": "Weekly QA to grade tickets and reconcile sportsbook settlement and complete holdings using observed evidence."
+}
