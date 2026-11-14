@@ -62,8 +62,8 @@ The helper clones over ordinary HTTPS and requires working DNS for github.com. I
     },
     {
       "path": "evidence/operational/CFB_EXECUTION_LEDGER.md",
-      "blob": "2c0fbcb0314839deb60823e48adbbd24d5423147",
-      "purpose": "CURRENT_EXECUTION_LEDGER:51tickets;Week10eleventickets8-3corroborated;ASUofficialresultconfirmedbySundayR2;bookpaymentunverified"
+      "blob": "dac23edbcae26e5aea1ad37ff2b941efaa67e0d8",
+      "purpose": "CURRENT_EXECUTION_LEDGER:58 actual tickets; seven Week 11 tickets at $40.00 stake, settlement pending"
     },
     {
       "path": "evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md",
@@ -2549,6 +2549,11 @@ The helper clones over ordinary HTTPS and requires working DNS for github.com. I
       "path": "evidence/operational/CFB_DATA_GAP_FOLLOW_THROUGH_20261113.md",
       "blob": "57957924106e28d3619565306a82125919f22472",
       "purpose": "ACTIVE_DATA_GAP_FOLLOW_THROUGH:ticket linkage, timed market coverage, quote provenance and settlement"
+    },
+    {
+      "path": "evidence/operational/CFB_NOV13_SEVEN_TICKET_INTAKE_20261113.json",
+      "blob": "ca73629cad6befb9df8f4a80978c715d1a106c32",
+      "purpose": "CURRENT_WEEK11_TICKET_INTAKE: seven straight wagers with immutable evidence and comparison dispositions"
     }
   ]
 }
