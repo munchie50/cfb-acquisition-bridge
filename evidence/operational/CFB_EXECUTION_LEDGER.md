@@ -364,3 +364,21 @@ Seven visually distinct Caesars Sportsbook / Harrah's Columbus original issued t
 | CFB_NOV13-07 | 401861967 | James Madison at UConn | James Madison -5 | -105 | $5.00 | 16:47 | 2026-11-14 11:00 | $4.75 | $9.75 |
 
 Batch: seven straight tickets, six spreads and one total, $40.00 stake, $36.80 printed maximum win and $76.80 printed maximum payout. Prior 51 tickets / $208.50 plus seven / $40.00 gives 58 recorded actual tickets / $248.50 historical stakes. Available cash/holdings are unverified. The saved 15:21 CT pre-trip Hot Sheet recorded PASS for all seven. Jacksonville State matched its prior conditional number and price floor (0 points, 0 odds points); North Texas matched the prior number and missed the prior price floor (0 points, −3 odds points). Both prior limits had been superseded in the saved pre-trip card. The other five executions were off-card and had no recovered recommendation terms for a numeric comparison. No active recommendation match is established for this batch.
+
+
+## November 13 additional Week 11 issued tickets
+
+Five straights and one four-leg parlay, six distinct Caesars Sportsbook / Harrah's Columbus actual real-money tickets, issued November 13, 2026. Visually deduplicated against the earlier seven; private cashable identifiers omitted. Evidence and term comparisons: `evidence/operational/CFB_NOV13_ADDITIONAL_TICKET_AND_VOUCHER_INTAKE_20261113.json`. Printed clock timezone unspecified, consistent with venue Central time and retained schedule where corroborated. Result grades and sportsbook settlement pending. Budget unassigned. Observational execution evidence only.
+
+| Execution ID | Game ID | Game | Accepted selection | Odds | Stake | Printed issue time | Printed max win | Printed max payout |
+|---|---|---|---|---:|---:|---|---:|---:|
+| CFB_NOV13-08 | 401856888 | Tennessee at Texas A&M | Tennessee -2.5 | -110 | $10.00 | 16:39 | $9.10 | $19.10 |
+| CFB_NOV13-09 | 401856858 | Baylor at BYU | Baylor +7.5 | -115 | $10.00 | 16:40 | $8.70 | $18.70 |
+| CFB_NOV13-10 | 401858525 | Nebraska at Rutgers | Nebraska -13.5 | -110 | $10.00 | 16:48 | $9.10 | $19.10 |
+| CFB_NOV13-11 | Multiple | Four games | Four-leg parlay | +1248 | $2.00 | 16:49 | $24.95 | $26.95 |
+| CFB_NOV13-12 | 401856883 | Missouri at Georgia | Georgia -16.5 | -107 | $5.00 | 16:50 | $4.65 | $9.65 |
+| CFB_NOV13-13 | 401858519 | Purdue at Iowa | Iowa -17.5 | -102 | $5.00 | 16:52 | $4.90 | $9.90 |
+
+Parlay legs: Tennessee -2/-110, Baylor +7.5/-115, Jacksonville State -7.5/-105, Georgia -16.5/-107. One $2 stake at the printed combined +1248 with $26.95 printed maximum payout. No matching advised combined parlay. Baylor and Tennessee met saved conditional terms, with printed timezone and full placement-time condition verification unresolved. Nebraska and Iowa were off-card PASS. Georgia was off-card PASS and laid one point beyond its prior -15.5 limit at three odds points better than -110.
+
+Batch: six wagers, $42.00 stake, $61.40 printed maximum win, $103.40 printed maximum payout. November 13 combined: 13 wagers, $82.00 stake, $180.20 printed maximum payout. Ledger cumulative: 64 tickets / $290.50 historical stakes. Voucher evidence is tracked in the money ledger.
