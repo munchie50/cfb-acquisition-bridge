@@ -347,3 +347,20 @@ Run CFB_WEEK10_CLOSEOUT_20261108T044606Z. Source evidence/operational/CFB_WEEK10
 | CFB_NOV06-11 | Utah-4.5/Cincinnati+10.5/MissouriState+4.5 |Utah28-20;Cincinnati24-Houston31;MissouriState20-FIU23|leg cushions+3.5/+3.5/+1.5;allthreecover|WIN|OFFICIAL_FINAL_VERIFIED_ALL3LEGS|
 
 ArizonaState20-10 is additionally corroborated by the AP recap hosted by CBS: https://www.cbssports.com/college-football/news/jake-fette-leads-arizona-state-past-colorado-in-20-10-win/ . School sources reached in this invocation remained stale; do not label this one independently official-verified. Ten tickets have official-game final support (nine straights plus parlay); one straight remains CBS-corroborated. Ticket printed payouts still give $102.90 result return/$47.90 net on $55 stakes. These are existing result arithmetic, not additional cash postings. $147.35 bankroll remains conditional estimate. Frozen predictions, original decision history and recommendation attribution unchanged.
+
+
+## November 13 Week 11 actual issued-ticket intake
+
+Seven visually distinct Caesars Sportsbook / Harrah's Columbus original issued tickets, confirmed actual real-money executions by user submission. Private cashable identifiers are omitted. Source evidence and comparison detail: `evidence/operational/CFB_NOV13_SEVEN_TICKET_INTAKE_20261113.json`. The printed issue date is November 13, 2026. Receipt timezone is unspecified. All issue clocks precede their printed event clocks and agree with the saved slate on the event time if interpreted as Central. Actual kickoff was not independently verified. Budget allocation UNASSIGNED. Result grades and sportsbook settlement pending. Ticket evidence is downstream only.
+
+| Execution ID | Game ID | Game | Accepted selection | Odds | Stake | Issue time as printed | Event date/time as printed | Printed max win | Printed max payout |
+|---|---|---|---|---:|---:|---|---|---:|---:|
+| CFB_NOV13-01 | 401870752 | Jacksonville State at Western Kentucky | Jacksonville State -7.5 | -105 | $10.00 | 16:41 | 2026-11-14 14:30 | $9.50 | $19.50 |
+| CFB_NOV13-02 | 401862827 | North Texas at UTSA | North Texas -2.5 | -108 | $5.00 | 16:42 | 2026-11-14 20:00 | $4.65 | $9.65 |
+| CFB_NOV13-03 | 401856860 | Houston at Colorado | Houston -7.5 | -109 | $5.00 | 16:43 | 2026-11-13 21:15 | $4.60 | $9.60 |
+| CFB_NOV13-04 | 401858526 | Illinois at UCLA | Illinois +10.5 | -115 | $5.00 | 16:44 | 2026-11-13 20:00 | $4.35 | $9.35 |
+| CFB_NOV13-05 | 401858521 | Washington at Michigan State | Washington -3 | -110 | $5.00 | 16:44 | 2026-11-14 15:15 | $4.55 | $9.55 |
+| CFB_NOV13-06 | 401858524 | Minnesota at Penn State | Under 42 | -114 | $5.00 | 16:45 | 2026-11-14 18:00 | $4.40 | $9.40 |
+| CFB_NOV13-07 | 401861967 | James Madison at UConn | James Madison -5 | -105 | $5.00 | 16:47 | 2026-11-14 11:00 | $4.75 | $9.75 |
+
+Batch: seven straight tickets, six spreads and one total, $40.00 stake, $36.80 printed maximum win and $76.80 printed maximum payout. Prior 51 tickets / $208.50 plus seven / $40.00 gives 58 recorded actual tickets / $248.50 historical stakes. Available cash/holdings are unverified. The saved 15:21 CT pre-trip Hot Sheet recorded PASS for all seven. Jacksonville State matched its prior conditional number and price floor (0 points, 0 odds points); North Texas matched the prior number and missed the prior price floor (0 points, −3 odds points). Both prior limits had been superseded in the saved pre-trip card. The other five executions were off-card and had no recovered recommendation terms for a numeric comparison. No active recommendation match is established for this batch.
