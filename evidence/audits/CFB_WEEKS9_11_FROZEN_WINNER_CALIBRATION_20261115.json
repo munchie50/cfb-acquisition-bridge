@@ -1,0 +1,3291 @@
+{
+  "schema": "CFB_WEEKS9_11_FROZEN_WINNER_CALIBRATION_V1",
+  "sources": [
+    {
+      "path": "evidence/operational/CFB_WEEK9_CANONICAL_56_OFFICIAL_OUTCOME_RECONCILIATION_20261101.json",
+      "blob": "296b18dd97c1bb0c2d68281fe24506bf27fe7dbc"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json",
+      "blob": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_INCREMENTAL_CLOSEOUT_20261108T044606Z_R2.json",
+      "blob": "0f107b4e4c990f754a7477e58a4296ed7127d8ad"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK10_OFFICIAL_OUTCOME_QA_20261108T160449Z.json",
+      "blob": "f0e0d09cb0083a49c18c6c7913ec2ec657b7eb5f"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK11_FROZEN_MODEL_MISS_TRIAGE_20261115.json",
+      "blob": "3462a0388ee573931700b647ab4e8f180cadd9a4"
+    },
+    {
+      "path": "evidence/scheduler_qa/CFB_WEEK10_ORIGINAL_ANCESTRY_RECOVERY_20261104.json",
+      "blob": "47736c0fd9ff49545db7e46b508805658a1c7a92"
+    }
+  ],
+  "method": "All 186 verified finals joined by unique directed ID. Exclude 27 original exclusions from model metrics. Classify winner by frozen home win probability and compare signed projected margin separately. Use the fixed Week 11 confidence bands. Brier is mean squared home-win probability error; 0.25 is the uninformative 50/50 reference.",
+  "scope": "Descriptive historical evaluation only. Not betting confidence, odds value, causal diagnosis, or production calibration. Week sizes differ and three-week outcomes warrant a prospective test.",
+  "agg": {
+    "pooled": {
+      "finals": 186,
+      "excluded": 27,
+      "overall": {
+        "n": 159,
+        "correct": 93,
+        "margin_correct": 90,
+        "mean_conf": 0.6826344392391009,
+        "brier": 0.25518053853683054
+      },
+      "bands": {
+        "50–<60%": {
+          "n": 46,
+          "correct": 25,
+          "margin_correct": 22,
+          "mean_conf": 0.5476657518469008,
+          "brier": 0.2490988984634381
+        },
+        "60–<70%": {
+          "n": 46,
+          "correct": 28,
+          "margin_correct": 28,
+          "mean_conf": 0.6432110176174716,
+          "brier": 0.2295894206036052
+        },
+        "70–<80%": {
+          "n": 36,
+          "correct": 20,
+          "margin_correct": 20,
+          "mean_conf": 0.7451563858430206,
+          "brier": 0.2811467694157522
+        },
+        "80–100%": {
+          "n": 31,
+          "correct": 20,
+          "margin_correct": 20,
+          "mean_conf": 0.8688036952679735,
+          "brier": 0.27202449197758083
+        }
+      }
+    },
+    "by_week": {
+      "9": {
+        "finals": 56,
+        "excluded": 11,
+        "overall": {
+          "n": 45,
+          "correct": 28,
+          "margin_correct": 28,
+          "mean_conf": 0.6976872449858678,
+          "brier": 0.21846569064633645
+        },
+        "bands": {
+          "50–<60%": {
+            "n": 11,
+            "correct": 5,
+            "margin_correct": 5,
+            "mean_conf": 0.5486151851999914,
+            "brier": 0.25510786344188213
+          },
+          "60–<70%": {
+            "n": 14,
+            "correct": 8,
+            "margin_correct": 8,
+            "mean_conf": 0.6425204079088793,
+            "brier": 0.23439694979947864
+          },
+          "70–<80%": {
+            "n": 10,
+            "correct": 7,
+            "margin_correct": 7,
+            "mean_conf": 0.7558237508753887,
+            "brier": 0.20879931268390245
+          },
+          "80–100%": {
+            "n": 10,
+            "correct": 8,
+            "margin_correct": 8,
+            "mean_conf": 0.8807635767685941,
+            "brier": 0.16552191571927138
+          }
+        }
+      },
+      "10": {
+        "finals": 63,
+        "excluded": 8,
+        "overall": {
+          "n": 55,
+          "correct": 30,
+          "margin_correct": 27,
+          "mean_conf": 0.6736344146441909,
+          "brier": 0.26985666839626127
+        },
+        "bands": {
+          "50–<60%": {
+            "n": 15,
+            "correct": 8,
+            "margin_correct": 5,
+            "mean_conf": 0.5453862868574304,
+            "brier": 0.25656413654999655
+          },
+          "60–<70%": {
+            "n": 19,
+            "correct": 11,
+            "margin_correct": 11,
+            "mean_conf": 0.6434278726819664,
+            "brier": 0.24390298503285743
+          },
+          "70–<80%": {
+            "n": 13,
+            "correct": 6,
+            "margin_correct": 6,
+            "mean_conf": 0.7498434190790425,
+            "brier": 0.3290890239300267
+          },
+          "80–100%": {
+            "n": 8,
+            "correct": 5,
+            "margin_correct": 5,
+            "mean_conf": 0.8620005591980178,
+            "brier": 0.26016758585372296
+          }
+        }
+      },
+      "11": {
+        "finals": 67,
+        "excluded": 8,
+        "overall": {
+          "n": 59,
+          "correct": 35,
+          "margin_correct": 35,
+          "mean_conf": 0.6795433391393644,
+          "brier": 0.2695022506182468
+        },
+        "bands": {
+          "50–<60%": {
+            "n": 20,
+            "correct": 12,
+            "margin_correct": 12,
+            "mean_conf": 0.5488531622448041,
+            "brier": 0.24019503916037488
+          },
+          "60–<70%": {
+            "n": 13,
+            "correct": 9,
+            "margin_correct": 9,
+            "mean_conf": 0.643637809132463,
+            "brier": 0.2034922565345268
+          },
+          "70–<80%": {
+            "n": 13,
+            "correct": 7,
+            "margin_correct": 7,
+            "mean_conf": 0.732263687197485,
+            "brier": 0.2888564046952082
+          },
+          "80–100%": {
+            "n": 13,
+            "correct": 7,
+            "margin_correct": 7,
+            "mean_conf": 0.8637903316951606,
+            "brier": 0.3612461082525007
+          }
+        }
+      }
+    }
+  },
+  "z": [
+    {
+      "week": 9,
+      "id": "401871071",
+      "team": "Delaware @ Western Kentucky",
+      "final": [
+        35,
+        21
+      ],
+      "p": 0.06732082932182616,
+      "m": -24.589309998726918,
+      "y": 0,
+      "c": 0.9326791706781739,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.004532094060578449
+    },
+    {
+      "week": 9,
+      "id": "401871072",
+      "team": "Sam Houston @ Missouri State",
+      "final": [
+        3,
+        24
+      ],
+      "p": 0.25305849065417035,
+      "m": -10.06432554167998,
+      "y": 1,
+      "c": 0.7469415093458296,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.557921618383826
+    },
+    {
+      "week": 9,
+      "id": "401871058",
+      "team": "Kennesaw State @ Middle Tennessee",
+      "final": [
+        44,
+        28
+      ],
+      "p": 0.6241309956314895,
+      "m": 5.766353300442534,
+      "y": 0,
+      "c": 0.6241309956314895,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.38953949970795443
+    },
+    {
+      "week": 9,
+      "id": "401871057",
+      "team": "Jacksonville State @ New Mexico State",
+      "final": [
+        24,
+        0
+      ],
+      "p": 0.557874929363733,
+      "m": 3.224185684204581,
+      "y": 0,
+      "c": 0.557874929363733,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.31122443681259004
+    },
+    {
+      "week": 9,
+      "id": "401862812",
+      "team": "Florida Atlantic @ North Texas",
+      "final": [
+        41,
+        48
+      ],
+      "p": 0.6127138097014136,
+      "m": 5.362079711020188,
+      "y": 1,
+      "c": 0.6127138097014136,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.14999059319599284
+    },
+    {
+      "week": 9,
+      "id": "401869963",
+      "team": "Troy @ James Madison",
+      "final": [
+        24,
+        21
+      ],
+      "p": 0.9130829522301803,
+      "m": 22.59239737183265,
+      "y": 0,
+      "c": 0.9130829522301803,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.8337204776533818
+    },
+    {
+      "week": 9,
+      "id": "401862813",
+      "team": "Tulane @ Charlotte",
+      "final": [
+        38,
+        31
+      ],
+      "p": 0.46730125958103885,
+      "m": -1.9022945223044858,
+      "y": 0,
+      "c": 0.5326987404189611,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.21837046720602546
+    },
+    {
+      "week": 9,
+      "id": "401856844",
+      "team": "Baylor @ UCF",
+      "final": [
+        41,
+        9
+      ],
+      "p": 0.6122139916103446,
+      "m": 4.539985769818523,
+      "y": 0,
+      "c": 0.6122139916103446,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.3748059715234711
+    },
+    {
+      "week": 9,
+      "id": "401866451",
+      "team": "Kent State @ Sacramento State",
+      "final": [
+        10,
+        31
+      ],
+      "p": 0.8695363256687552,
+      "m": 19.37754914129643,
+      "y": 1,
+      "c": 0.8695363256687552,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.017020770320009114
+    },
+    {
+      "week": 9,
+      "id": "401856733",
+      "team": "Missouri @ Arkansas",
+      "final": [
+        34,
+        10
+      ],
+      "p": 0.22032417143604363,
+      "m": -13.144660542665587,
+      "y": 0,
+      "c": 0.7796758285639563,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.048542740518979145
+    },
+    {
+      "week": 9,
+      "id": "401856735",
+      "team": "Auburn @ Ole Miss",
+      "final": [
+        15,
+        45
+      ],
+      "p": 0.6322317619339572,
+      "m": 4.319371690827976,
+      "y": 1,
+      "c": 0.6322317619339572,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.1352534769302015
+    },
+    {
+      "week": 9,
+      "id": "401856736",
+      "team": "South Carolina @ Oklahoma",
+      "final": [
+        42,
+        25
+      ],
+      "p": 0.544129647344929,
+      "m": 1.9976207150226601,
+      "y": 0,
+      "c": 0.544129647344929,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.29607707311971676
+    },
+    {
+      "week": 9,
+      "id": "401856737",
+      "team": "Mississippi State @ Texas",
+      "final": [
+        3,
+        31
+      ],
+      "p": 0.5258970500003277,
+      "m": -0.17926022771447103,
+      "y": 1,
+      "c": 0.5258970500003277,
+      "hit": true,
+      "marginCorrect": false,
+      "b": 0.22477360719839176
+    },
+    {
+      "week": 9,
+      "id": "401856842",
+      "team": "Arizona @ Texas Tech",
+      "final": [
+        26,
+        34
+      ],
+      "p": 0.4906285969365313,
+      "m": -0.781300536738725,
+      "y": 1,
+      "c": 0.5093714030634686,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.2594592262588466
+    },
+    {
+      "week": 9,
+      "id": "401856843",
+      "team": "Arizona State @ BYU",
+      "final": [
+        20,
+        27
+      ],
+      "p": 0.8511204113016558,
+      "m": 16.187459572143922,
+      "y": 1,
+      "c": 0.8511204113016558,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.022165131930988128
+    },
+    {
+      "week": 9,
+      "id": "401856845",
+      "team": "Kansas @ TCU",
+      "final": [
+        16,
+        22
+      ],
+      "p": 0.7411277196150335,
+      "m": 10.61882799787693,
+      "y": 1,
+      "c": 0.7411277196150335,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.06701485755171269
+    },
+    {
+      "week": 9,
+      "id": "401856846",
+      "team": "Kansas State @ Colorado",
+      "final": [
+        24,
+        27
+      ],
+      "p": 0.164036895339676,
+      "m": -14.59982171248134,
+      "y": 1,
+      "c": 0.835963104660324,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.6988343123533278
+    },
+    {
+      "week": 9,
+      "id": "401856847",
+      "team": "Oklahoma State @ Iowa State",
+      "final": [
+        49,
+        51
+      ],
+      "p": 0.6442862899563238,
+      "m": 5.838154696866955,
+      "y": 1,
+      "c": 0.6442862899563238,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.12653224351303657
+    },
+    {
+      "week": 9,
+      "id": "401856848",
+      "team": "Utah @ Cincinnati",
+      "final": [
+        49,
+        25
+      ],
+      "p": 0.44842329150992816,
+      "m": -2.677975269910328,
+      "y": 0,
+      "c": 0.5515767084900718,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.201083448368598
+    },
+    {
+      "week": 9,
+      "id": "401858277",
+      "team": "California @ NC State",
+      "final": [
+        10,
+        31
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 9,
+      "id": "401858278",
+      "team": "SMU @ Syracuse",
+      "final": [
+        27,
+        30
+      ],
+      "p": 0.48963770327433453,
+      "m": 0.7535424806658062,
+      "y": 1,
+      "c": 0.5103622967256655,
+      "hit": false,
+      "marginCorrect": true,
+      "b": 0.2604696739190962
+    },
+    {
+      "week": 9,
+      "id": "401858279",
+      "team": "Boston College @ Duke",
+      "final": [
+        2,
+        47
+      ],
+      "p": 0.7094212158876784,
+      "m": 9.924307992400811,
+      "y": 1,
+      "c": 0.7094212158876784,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.08443602977619521
+    },
+    {
+      "week": 9,
+      "id": "401858280",
+      "team": "Clemson @ Florida State",
+      "final": [
+        36,
+        24
+      ],
+      "p": null,
+      "m": null,
+      "y": 0,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 9,
+      "id": "401858281",
+      "team": "Georgia Tech @ Pittsburgh",
+      "final": [
+        11,
+        34
+      ],
+      "p": 0.7536399190438945,
+      "m": 12.302429198272325,
+      "y": 1,
+      "c": 0.7536399190438945,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.060693289488698864
+    },
+    {
+      "week": 9,
+      "id": "401858282",
+      "team": "Miami @ North Carolina",
+      "final": [
+        38,
+        35
+      ],
+      "p": 0.31101386981043655,
+      "m": -8.03641328815152,
+      "y": 0,
+      "c": 0.6889861301895635,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.09672962721446318
+    },
+    {
+      "week": 9,
+      "id": "401858283",
+      "team": "Stanford @ Louisville",
+      "final": [
+        24,
+        52
+      ],
+      "p": 0.9154723210286189,
+      "m": 23.45577448110459,
+      "y": 1,
+      "c": 0.9154723210286189,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.0071449285122888685
+    },
+    {
+      "week": 9,
+      "id": "401858284",
+      "team": "Virginia @ Wake Forest",
+      "final": [
+        7,
+        51
+      ],
+      "p": 0.3802425820196452,
+      "m": -5.690307368948456,
+      "y": 1,
+      "c": 0.6197574179803548,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.3840992571416762
+    },
+    {
+      "week": 9,
+      "id": "401858501",
+      "team": "Minnesota @ Indiana",
+      "final": [
+        16,
+        23
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 9,
+      "id": "401858502",
+      "team": "Wisconsin @ Iowa",
+      "final": [
+        0,
+        30
+      ],
+      "p": 0.8105510430012315,
+      "m": 16.953003336948186,
+      "y": 1,
+      "c": 0.8105510430012315,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.035890907307921244
+    },
+    {
+      "week": 9,
+      "id": "401858503",
+      "team": "Illinois @ Maryland",
+      "final": [
+        20,
+        17
+      ],
+      "p": 0.6251673219208373,
+      "m": 6.678168905095836,
+      "y": 0,
+      "c": 0.6251673219208373,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.39083418039767187
+    },
+    {
+      "week": 9,
+      "id": "401858504",
+      "team": "Washington @ Nebraska",
+      "final": [
+        17,
+        10
+      ],
+      "p": 0.7722918506128544,
+      "m": 12.685528847014263,
+      "y": 0,
+      "c": 0.7722918506128544,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.5964347025230274
+    },
+    {
+      "week": 9,
+      "id": "401858505",
+      "team": "Northwestern @ Oregon",
+      "final": [
+        26,
+        34
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 9,
+      "id": "401858506",
+      "team": "Purdue @ Penn State",
+      "final": [
+        17,
+        31
+      ],
+      "p": 0.8787915153960462,
+      "m": 20.645638272387664,
+      "y": 1,
+      "c": 0.8787915153960462,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.014691496739986914
+    },
+    {
+      "week": 9,
+      "id": "401858507",
+      "team": "Michigan @ Rutgers",
+      "final": [
+        28,
+        21
+      ],
+      "p": null,
+      "m": null,
+      "y": 0,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 9,
+      "id": "401858508",
+      "team": "Nevada @ UCLA",
+      "final": [
+        0,
+        27
+      ],
+      "p": 0.7592982366080254,
+      "m": 11.487055478910321,
+      "y": 1,
+      "c": 0.7592982366080254,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.05793733890000611
+    },
+    {
+      "week": 9,
+      "id": "401858509",
+      "team": "Ohio State @ USC",
+      "final": [
+        18,
+        30
+      ],
+      "p": 0.4104226295196134,
+      "m": -3.5107340607820996,
+      "y": 1,
+      "c": 0.5895773704803866,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.34760147578256706
+    },
+    {
+      "week": 9,
+      "id": "401860924",
+      "team": "Oregon State @ Fresno State",
+      "final": [
+        22,
+        38
+      ],
+      "p": 0.5758261080522452,
+      "m": 4.265824312937047,
+      "y": 1,
+      "c": 0.5758261080522452,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.17992349061010554
+    },
+    {
+      "week": 9,
+      "id": "401862814",
+      "team": "Army @ Memphis",
+      "final": [
+        22,
+        49
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 9,
+      "id": "401862815",
+      "team": "Temple @ East Carolina",
+      "final": [
+        9,
+        17
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 9,
+      "id": "401862816",
+      "team": "UAB @ South Florida",
+      "final": [
+        10,
+        30
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 9,
+      "id": "401864529",
+      "team": "New Mexico @ San José State",
+      "final": [
+        21,
+        16
+      ],
+      "p": 0.31769446869000484,
+      "m": -7.33449986256627,
+      "y": 0,
+      "c": 0.6823055313099952,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.10092977543622446
+    },
+    {
+      "week": 9,
+      "id": "401869846",
+      "team": "App State @ Georgia Southern",
+      "final": [
+        3,
+        19
+      ],
+      "p": 0.43239638661503443,
+      "m": -1.2164781787103556,
+      "y": 1,
+      "c": 0.5676036133849656,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.32217386192766945
+    },
+    {
+      "week": 9,
+      "id": "401869944",
+      "team": "Coastal Carolina @ Georgia State",
+      "final": [
+        31,
+        20
+      ],
+      "p": null,
+      "m": null,
+      "y": 0,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 9,
+      "id": "401871095",
+      "team": "Southern Miss @ UL Monroe",
+      "final": [
+        35,
+        21
+      ],
+      "p": 0.3136982404826161,
+      "m": -8.106471857997493,
+      "y": 0,
+      "c": 0.6863017595173839,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.09840658608188922
+    },
+    {
+      "week": 9,
+      "id": "401871096",
+      "team": "Marshall @ Old Dominion",
+      "final": [
+        36,
+        23
+      ],
+      "p": 0.723554751309223,
+      "m": 10.531260063331388,
+      "y": 0,
+      "c": 0.723554751309223,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.5235314781421515
+    },
+    {
+      "week": 9,
+      "id": "401871097",
+      "team": "Louisiana Tech @ South Alabama",
+      "final": [
+        35,
+        20
+      ],
+      "p": 0.6363063614314357,
+      "m": 5.700510476284662,
+      "y": 0,
+      "c": 0.6363063614314357,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.4048857855981129
+    },
+    {
+      "week": 9,
+      "id": "401859185",
+      "team": "Notre Dame @ Navy",
+      "final": [
+        35,
+        13
+      ],
+      "p": null,
+      "m": null,
+      "y": 0,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 9,
+      "id": "401866452",
+      "team": "Bowling Green @ Western Michigan",
+      "final": [
+        10,
+        23
+      ],
+      "p": 0.9257804353494328,
+      "m": 24.79105402559233,
+      "y": 1,
+      "c": 0.9257804353494328,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.0055085437769197285
+    },
+    {
+      "week": 9,
+      "id": "401861966",
+      "team": "UConn @ Air Force",
+      "final": [
+        26,
+        35
+      ],
+      "p": 0.654638460129586,
+      "m": 4.495233795120177,
+      "y": 1,
+      "c": 0.654638460129586,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.11927459322166353
+    },
+    {
+      "week": 9,
+      "id": "401856734",
+      "team": "Florida @ Georgia",
+      "final": [
+        8,
+        27
+      ],
+      "p": 0.7885560177914632,
+      "m": 13.358480139729341,
+      "y": 1,
+      "c": 0.7885560177914632,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.04470855761220401
+    },
+    {
+      "week": 9,
+      "id": "401860910",
+      "team": "Colorado State @ Utah State",
+      "final": [
+        14,
+        31
+      ],
+      "p": 0.37601709369661257,
+      "m": -4.686728804289869,
+      "y": 1,
+      "c": 0.6239829063033875,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.38935466735882207
+    },
+    {
+      "week": 9,
+      "id": "401864531",
+      "team": "UTEP @ North Dakota State",
+      "final": [
+        7,
+        31
+      ],
+      "p": 0.8746584883715226,
+      "m": 20.311538771491833,
+      "y": 1,
+      "c": 0.8746584883715226,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.015710494537311735
+    },
+    {
+      "week": 9,
+      "id": "401871059",
+      "team": "Florida International @ Liberty",
+      "final": [
+        10,
+        49
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 9,
+      "id": "401860909",
+      "team": "Washington State @ San Diego State",
+      "final": [
+        20,
+        26
+      ],
+      "p": 0.5698491698751513,
+      "m": 2.8553657293259267,
+      "y": 1,
+      "c": 0.5698491698751513,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.1850297366570964
+    },
+    {
+      "week": 9,
+      "id": "401860908",
+      "team": "Texas State @ Boise State",
+      "final": [
+        45,
+        46
+      ],
+      "p": 0.7837304599759275,
+      "m": 11.186323722125593,
+      "y": 1,
+      "c": 0.7837304599759275,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.0467725139422239
+    },
+    {
+      "week": 9,
+      "id": "401864530",
+      "team": "Northern Illinois @ UNLV",
+      "final": [
+        24,
+        31
+      ],
+      "p": 0.6522629731082384,
+      "m": 9.181695514674217,
+      "y": 1,
+      "c": 0.6522629731082384,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.1209210398715217
+    },
+    {
+      "week": 10,
+      "id": "401860913",
+      "team": "Fresno State @ Utah State",
+      "final": [
+        10,
+        17
+      ],
+      "p": 0.3783176632157186,
+      "m": -5.165970677350148,
+      "y": 1,
+      "c": 0.6216823367842814,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.3864889278695647
+    },
+    {
+      "week": 10,
+      "id": "401864532",
+      "team": "Hawai'i @ UTEP",
+      "final": [
+        17,
+        14
+      ],
+      "p": 0.48679514164244436,
+      "m": 0.8180999427252562,
+      "y": 0,
+      "c": 0.5132048583575557,
+      "hit": true,
+      "marginCorrect": false,
+      "b": 0.23696950992668747
+    },
+    {
+      "week": 10,
+      "id": "401856856",
+      "team": "West Virginia @ Texas Tech",
+      "final": [
+        48,
+        53
+      ],
+      "p": 0.6134979909132381,
+      "m": 0.1988449072012387,
+      "y": 1,
+      "c": 0.6134979909132381,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.1493838030281034
+    },
+    {
+      "week": 10,
+      "id": "401864535",
+      "team": "Wyoming @ UNLV",
+      "final": [
+        41,
+        35
+      ],
+      "p": 0.48136806672512733,
+      "m": 1.7513344391580845,
+      "y": 0,
+      "c": 0.5186319332748727,
+      "hit": true,
+      "marginCorrect": false,
+      "b": 0.23171521566268663
+    },
+    {
+      "week": 10,
+      "id": "401860912",
+      "team": "Texas State @ Oregon State",
+      "final": [
+        42,
+        21
+      ],
+      "p": 0.7012857902303373,
+      "m": 7.596247276148411,
+      "y": 0,
+      "c": 0.7012857902303373,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.4918017595789887
+    },
+    {
+      "week": 10,
+      "id": "401870795",
+      "team": "Liberty @ New Mexico State",
+      "final": [
+        30,
+        14
+      ],
+      "p": null,
+      "m": null,
+      "y": 0,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 10,
+      "id": "401856739",
+      "team": "Oklahoma @ Florida",
+      "final": [
+        23,
+        7
+      ],
+      "p": 0.7164656477262331,
+      "m": 9.171592972348307,
+      "y": 0,
+      "c": 0.7164656477262331,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.5133230243717708
+    },
+    {
+      "week": 10,
+      "id": "401862823",
+      "team": "Air Force @ Army",
+      "final": [
+        24,
+        21
+      ],
+      "p": null,
+      "m": null,
+      "y": 0,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 10,
+      "id": "401856852",
+      "team": "Colorado @ Arizona State",
+      "final": [
+        10,
+        20
+      ],
+      "p": 0.7069148293065931,
+      "m": 8.465787428558665,
+      "y": 1,
+      "c": 0.7069148293065931,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.08589891728038346
+    },
+    {
+      "week": 10,
+      "id": "401856741",
+      "team": "Georgia @ Ole Miss",
+      "final": [
+        42,
+        7
+      ],
+      "p": 0.2632286982594048,
+      "m": -11.035422029117997,
+      "y": 0,
+      "c": 0.7367713017405952,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.06928934758734079
+    },
+    {
+      "week": 10,
+      "id": "401858513",
+      "team": "Iowa @ Northwestern",
+      "final": [
+        24,
+        10
+      ],
+      "p": null,
+      "m": null,
+      "y": 0,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 10,
+      "id": "401858291",
+      "team": "Miami @ Notre Dame",
+      "final": [
+        24,
+        31
+      ],
+      "p": 0.5097133284713214,
+      "m": -0.2668060664913918,
+      "y": 1,
+      "c": 0.5097133284713214,
+      "hit": true,
+      "marginCorrect": false,
+      "b": 0.24038102027867034
+    },
+    {
+      "week": 10,
+      "id": "401858511",
+      "team": "Michigan State @ Michigan",
+      "final": [
+        15,
+        6
+      ],
+      "p": 0.7313720494169026,
+      "m": 10.64459588763575,
+      "y": 0,
+      "c": 0.7313720494169026,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.5349050746682802
+    },
+    {
+      "week": 10,
+      "id": "401858287",
+      "team": "Louisville @ Georgia Tech",
+      "final": [
+        44,
+        17
+      ],
+      "p": 0.43881615899013254,
+      "m": -4.198536758100759,
+      "y": 0,
+      "c": 0.5611838410098675,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.19255962139085328
+    },
+    {
+      "week": 10,
+      "id": "401871075",
+      "team": "Sam Houston @ Jacksonville State",
+      "final": [
+        14,
+        47
+      ],
+      "p": 0.3867593909384602,
+      "m": -4.468927683321684,
+      "y": 1,
+      "c": 0.6132406090615399,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.37606404460216836
+    },
+    {
+      "week": 10,
+      "id": "401856745",
+      "team": "Kentucky @ Tennessee",
+      "final": [
+        6,
+        34
+      ],
+      "p": 0.8323894976085278,
+      "m": 15.38457321945768,
+      "y": 1,
+      "c": 0.8323894976085278,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.028093280511921722
+    },
+    {
+      "week": 10,
+      "id": "401860911",
+      "team": "Boise State @ Colorado State",
+      "final": [
+        64,
+        38
+      ],
+      "p": 0.5526660742301289,
+      "m": 0.7553368849316238,
+      "y": 0,
+      "c": 0.5526660742301289,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.3054397896049424
+    },
+    {
+      "week": 10,
+      "id": "401869968",
+      "team": "South Alabama @ Louisiana",
+      "final": [
+        26,
+        28
+      ],
+      "p": 0.6312803629956545,
+      "m": 4.078471967246623,
+      "y": 1,
+      "c": 0.6312803629956545,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.1359541707126163
+    },
+    {
+      "week": 10,
+      "id": "401858517",
+      "team": "Rutgers @ Wisconsin",
+      "final": [
+        10,
+        31
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 10,
+      "id": "401856742",
+      "team": "Vanderbilt @ Mississippi State",
+      "final": [
+        25,
+        23
+      ],
+      "p": 0.8182005921246576,
+      "m": 15.549626345548761,
+      "y": 0,
+      "c": 0.8182005921246576,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.6694522089531403
+    },
+    {
+      "week": 10,
+      "id": "401871074",
+      "team": "Missouri State @ Florida International",
+      "final": [
+        20,
+        23
+      ],
+      "p": 0.6322299211493579,
+      "m": 6.471677799283147,
+      "y": 1,
+      "c": 0.6322299211493579,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.1352548308978075
+    },
+    {
+      "week": 10,
+      "id": "401864534",
+      "team": "Northern Illinois @ San José State",
+      "final": [
+        19,
+        30
+      ],
+      "p": 0.7444111196736232,
+      "m": 12.216751671820077,
+      "y": 1,
+      "c": 0.7444111196736232,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.06532567574649098
+    },
+    {
+      "week": 10,
+      "id": "401871098",
+      "team": "Louisiana Tech @ Troy",
+      "final": [
+        41,
+        17
+      ],
+      "p": 0.6579231620303794,
+      "m": 7.926645201733717,
+      "y": 0,
+      "c": 0.6579231620303794,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.4328628871360528
+    },
+    {
+      "week": 10,
+      "id": "401862821",
+      "team": "Rice @ North Texas",
+      "final": [
+        23,
+        52
+      ],
+      "p": 0.604848752521358,
+      "m": 2.6227721809273334,
+      "y": 1,
+      "c": 0.604848752521358,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.15614450838392702
+    },
+    {
+      "week": 10,
+      "id": "401856850",
+      "team": "UCF @ Kansas",
+      "final": [
+        33,
+        32
+      ],
+      "p": 0.5283457173006264,
+      "m": 1.060836045636887,
+      "y": 0,
+      "c": 0.5283457173006264,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.2791491969899134
+    },
+    {
+      "week": 10,
+      "id": "401858290",
+      "team": "Merrimack @ Wake Forest",
+      "final": [
+        0,
+        77
+      ],
+      "p": 0.931919335067152,
+      "m": 27.119872949618784,
+      "y": 1,
+      "c": 0.931919335067152,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.004634976937698724
+    },
+    {
+      "week": 10,
+      "id": "401871076",
+      "team": "Western Kentucky @ Middle Tennessee",
+      "final": [
+        42,
+        51
+      ],
+      "p": 0.9392086588608907,
+      "m": 27.857095018909256,
+      "y": 1,
+      "c": 0.9392086588608907,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.003695587157491567
+    },
+    {
+      "week": 10,
+      "id": "401858516",
+      "team": "Penn State @ Washington",
+      "final": [
+        28,
+        25
+      ],
+      "p": 0.4333079293071188,
+      "m": -3.1495475114994615,
+      "y": 0,
+      "c": 0.5666920706928812,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.18775576160042307
+    },
+    {
+      "week": 10,
+      "id": "401862819",
+      "team": "Charlotte @ UAB",
+      "final": [
+        12,
+        23
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 10,
+      "id": "401856740",
+      "team": "Alabama @ LSU",
+      "final": [
+        31,
+        13
+      ],
+      "p": 0.5694578967572295,
+      "m": 3.5090584473900757,
+      "y": 0,
+      "c": 0.5694578967572295,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.32428229617916743
+    },
+    {
+      "week": 10,
+      "id": "401856851",
+      "team": "Cincinnati @ Houston",
+      "final": [
+        24,
+        31
+      ],
+      "p": 0.6907526229114599,
+      "m": 7.466094858371314,
+      "y": 1,
+      "c": 0.6907526229114599,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.09563394023614172
+    },
+    {
+      "week": 10,
+      "id": "401858514",
+      "team": "Oregon @ Ohio State",
+      "final": [
+        41,
+        28
+      ],
+      "p": 0.7870052211880744,
+      "m": 12.6572944597905,
+      "y": 0,
+      "c": 0.7870052211880744,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.6193772181772899
+    },
+    {
+      "week": 10,
+      "id": "401862820",
+      "team": "Temple @ Navy",
+      "final": [
+        35,
+        42
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 10,
+      "id": "401869951",
+      "team": "Marshall @ Georgia Southern",
+      "final": [
+        13,
+        49
+      ],
+      "p": 0.7962656210758162,
+      "m": 15.029841107961314,
+      "y": 1,
+      "c": 0.7962656210758162,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.0415076971556229
+    },
+    {
+      "week": 10,
+      "id": "401871073",
+      "team": "Delaware @ Kennesaw State",
+      "final": [
+        40,
+        42
+      ],
+      "p": 0.4896759060405278,
+      "m": 0.17558159017670696,
+      "y": 1,
+      "c": 0.5103240939594722,
+      "hit": false,
+      "marginCorrect": true,
+      "b": 0.2604306808755562
+    },
+    {
+      "week": 10,
+      "id": "401869936",
+      "team": "UL Monroe @ Arkansas State",
+      "final": [
+        19,
+        17
+      ],
+      "p": 0.8045877495119768,
+      "m": 13.976858604363448,
+      "y": 0,
+      "c": 0.8045877495119768,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.6473614466647475
+    },
+    {
+      "week": 10,
+      "id": "401856744",
+      "team": "Texas A&M @ South Carolina",
+      "final": [
+        9,
+        17
+      ],
+      "p": 0.7454572368140134,
+      "m": 12.715251331697846,
+      "y": 1,
+      "c": 0.7454572368140134,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.06479201829035723
+    },
+    {
+      "week": 10,
+      "id": "401869927",
+      "team": "Georgia State @ App State",
+      "final": [
+        39,
+        23
+      ],
+      "p": 0.6756862377995193,
+      "m": 7.049278887884242,
+      "y": 0,
+      "c": 0.6756862377995193,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.45655189195166856
+    },
+    {
+      "week": 10,
+      "id": "401856854",
+      "team": "Oklahoma State @ Kansas State",
+      "final": [
+        66,
+        28
+      ],
+      "p": 0.8288305481594604,
+      "m": 15.665675902746544,
+      "y": 0,
+      "c": 0.8288305481594604,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.6869600775623117
+    },
+    {
+      "week": 10,
+      "id": "401869945",
+      "team": "Old Dominion @ Coastal Carolina",
+      "final": [
+        21,
+        8
+      ],
+      "p": null,
+      "m": null,
+      "y": 0,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 10,
+      "id": "401856738",
+      "team": "Arkansas @ Auburn",
+      "final": [
+        23,
+        26
+      ],
+      "p": 0.8089180472483015,
+      "m": 16.28981148199242,
+      "y": 1,
+      "c": 0.8089180472483015,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.03651231266740233
+    },
+    {
+      "week": 10,
+      "id": "401858515",
+      "team": "Maryland @ Purdue",
+      "final": [
+        34,
+        29
+      ],
+      "p": 0.3016866232676576,
+      "m": -8.130447755193787,
+      "y": 0,
+      "c": 0.6983133767323424,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.09101481865864157
+    },
+    {
+      "week": 10,
+      "id": "401858286",
+      "team": "Duke @ NC State",
+      "final": [
+        41,
+        3
+      ],
+      "p": 0.6292798334885475,
+      "m": 4.228345707284807,
+      "y": 0,
+      "c": 0.6292798334885475,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.39599310883537414
+    },
+    {
+      "week": 10,
+      "id": "401858512",
+      "team": "UCLA @ Minnesota",
+      "final": [
+        34,
+        20
+      ],
+      "p": 0.5840991961017751,
+      "m": 2.747681980467277,
+      "y": 0,
+      "c": 0.5840991961017751,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.3411718708867399
+    },
+    {
+      "week": 10,
+      "id": "401858289",
+      "team": "Florida State @ Boston College",
+      "final": [
+        31,
+        24
+      ],
+      "p": 0.6564435069397415,
+      "m": 5.987680854824376,
+      "y": 0,
+      "c": 0.6564435069397415,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.43091807780334646
+    },
+    {
+      "week": 10,
+      "id": "401858292",
+      "team": "North Carolina @ UConn",
+      "final": [
+        38,
+        21
+      ],
+      "p": 0.6021837924567134,
+      "m": 4.074878832877464,
+      "y": 0,
+      "c": 0.6021837924567134,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.36262531989755004
+    },
+    {
+      "week": 10,
+      "id": "401858285",
+      "team": "Clemson @ Syracuse",
+      "final": [
+        18,
+        13
+      ],
+      "p": null,
+      "m": null,
+      "y": 0,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 10,
+      "id": "401856743",
+      "team": "Texas @ Missouri",
+      "final": [
+        34,
+        20
+      ],
+      "p": 0.5336080010391044,
+      "m": 2.9866386354064347,
+      "y": 0,
+      "c": 0.5336080010391044,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.2847374987729489
+    },
+    {
+      "week": 10,
+      "id": "401856853",
+      "team": "Iowa State @ Baylor",
+      "final": [
+        31,
+        42
+      ],
+      "p": 0.610435274455332,
+      "m": 4.822221860731134,
+      "y": 1,
+      "c": 0.610435274455332,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.15176067538869253
+    },
+    {
+      "week": 10,
+      "id": "401862822",
+      "team": "Tulsa @ Tulane",
+      "final": [
+        60,
+        10
+      ],
+      "p": 0.3078800631681831,
+      "m": -7.453381995487822,
+      "y": 0,
+      "c": 0.6921199368318169,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.09479013329644442
+    },
+    {
+      "week": 10,
+      "id": "401856849",
+      "team": "BYU @ Utah",
+      "final": [
+        20,
+        28
+      ],
+      "p": 0.6922489559371883,
+      "m": 7.736699271390598,
+      "y": 1,
+      "c": 0.6922489559371883,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.09471070512175069
+    },
+    {
+      "week": 10,
+      "id": "401856855",
+      "team": "TCU @ Arizona",
+      "final": [
+        28,
+        29
+      ],
+      "p": 0.5446892660956925,
+      "m": 1.5517727433164694,
+      "y": 1,
+      "c": 0.5446892660956925,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.20730786440847915
+    },
+    {
+      "week": 10,
+      "id": "401864533",
+      "team": "New Mexico @ Nevada",
+      "final": [
+        31,
+        3
+      ],
+      "p": 0.42443467359009246,
+      "m": -3.3784963393467207,
+      "y": 0,
+      "c": 0.5755653264099075,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.18014479214552834
+    },
+    {
+      "week": 10,
+      "id": "401858510",
+      "team": "Nebraska @ Illinois",
+      "final": [
+        13,
+        24
+      ],
+      "p": 0.522416791937179,
+      "m": -1.761681196539541,
+      "y": 1,
+      "c": 0.522416791937179,
+      "hit": true,
+      "marginCorrect": false,
+      "b": 0.22808572062357574
+    },
+    {
+      "week": 10,
+      "id": "401862818",
+      "team": "South Florida @ East Carolina",
+      "final": [
+        17,
+        20
+      ],
+      "p": 0.22121155105652215,
+      "m": -11.807863806889149,
+      "y": 1,
+      "c": 0.7787884489434779,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.606511448207788
+    },
+    {
+      "week": 10,
+      "id": "401858288",
+      "team": "Virginia Tech @ SMU",
+      "final": [
+        28,
+        51
+      ],
+      "p": 0.4098040927761556,
+      "m": -2.8565813934429176,
+      "y": 1,
+      "c": 0.5901959072238444,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.3483312089037768
+    },
+    {
+      "week": 10,
+      "id": "401869964",
+      "team": "James Madison @ Southern Miss",
+      "final": [
+        54,
+        23
+      ],
+      "p": 0.20791881268972284,
+      "m": -14.404067861695497,
+      "y": 0,
+      "c": 0.7920811873102771,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.043230232670304056
+    },
+    {
+      "week": 10,
+      "id": "401862817",
+      "team": "UTSA @ Florida Atlantic",
+      "final": [
+        29,
+        60
+      ],
+      "p": 0.3571857491486996,
+      "m": -5.195659872391833,
+      "y": 1,
+      "c": 0.6428142508513004,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.41321016109751857
+    },
+    {
+      "week": 10,
+      "id": "401866456",
+      "team": "Central Michigan @ Eastern Michigan",
+      "final": [
+        35,
+        7
+      ],
+      "p": 0.3934278618775662,
+      "m": -2.7860217274720576,
+      "y": 0,
+      "c": 0.6065721381224338,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.1547854825015533
+    },
+    {
+      "week": 10,
+      "id": "401866455",
+      "team": "Ball State @ Massachusetts",
+      "final": [
+        30,
+        31
+      ],
+      "p": 0.9319500450031746,
+      "m": 26.11695812114495,
+      "y": 1,
+      "c": 0.9319500450031746,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.004630796375069965
+    },
+    {
+      "week": 10,
+      "id": "401866457",
+      "team": "Toledo @ Sacramento State",
+      "final": [
+        20,
+        17
+      ],
+      "p": 0.3464234810248434,
+      "m": -5.156938754516926,
+      "y": 0,
+      "c": 0.6535765189751566,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.12000922820537002
+    },
+    {
+      "week": 10,
+      "id": "401866454",
+      "team": "Buffalo @ Miami (OH)",
+      "final": [
+        34,
+        31
+      ],
+      "p": 0.769956822513323,
+      "m": 11.720713530764943,
+      "y": 0,
+      "c": 0.769956822513323,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.5928335085348128
+    },
+    {
+      "week": 10,
+      "id": "401866453",
+      "team": "Ohio @ Akron",
+      "final": [
+        28,
+        20
+      ],
+      "p": 0.7411891720882852,
+      "m": 10.365389485491425,
+      "y": 0,
+      "c": 0.7411891720882852,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.5493613888209176
+    },
+    {
+      "week": 11,
+      "id": "401862825",
+      "team": "East Carolina @ Charlotte",
+      "final": [
+        17,
+        16
+      ],
+      "p": 0.5074864349790272,
+      "m": 0.7500422238799413,
+      "y": 0,
+      "c": 0.5074864349790272,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.2575424816877224
+    },
+    {
+      "week": 11,
+      "id": "401862829",
+      "team": "UAB @ Temple",
+      "final": [
+        36,
+        10
+      ],
+      "p": null,
+      "m": null,
+      "y": 0,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 11,
+      "id": "401869937",
+      "team": "Arkansas State @ Coastal Carolina",
+      "final": [
+        21,
+        28
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 11,
+      "id": "401856862",
+      "team": "Kansas State @ TCU",
+      "final": [
+        10,
+        20
+      ],
+      "p": 0.42499421258039405,
+      "m": -2.6698091954347256,
+      "y": 1,
+      "c": 0.575005787419606,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.33063165556604107
+    },
+    {
+      "week": 11,
+      "id": "401862828",
+      "team": "Tulane @ Rice",
+      "final": [
+        20,
+        17
+      ],
+      "p": 0.5681939842309666,
+      "m": 2.822292059417623,
+      "y": 0,
+      "c": 0.5681939842309666,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.3228444037162599
+    },
+    {
+      "week": 11,
+      "id": "401870769",
+      "team": "Kennesaw State @ Sam Houston",
+      "final": [
+        26,
+        7
+      ],
+      "p": 0.7812031886995784,
+      "m": 14.10732171705284,
+      "y": 0,
+      "c": 0.7812031886995784,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.6102784220343891
+    },
+    {
+      "week": 11,
+      "id": "401856888",
+      "team": "Tennessee @ Texas A&M",
+      "final": [
+        22,
+        7
+      ],
+      "p": 0.4159159150868798,
+      "m": -4.890858383129388,
+      "y": 0,
+      "c": 0.5840840849131201,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.1729860484225566
+    },
+    {
+      "week": 11,
+      "id": "401870796",
+      "team": "New Mexico State @ Missouri State",
+      "final": [
+        21,
+        27
+      ],
+      "p": 0.4572648881452714,
+      "m": -1.2670104510276587,
+      "y": 1,
+      "c": 0.5427351118547286,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.2945614016399647
+    },
+    {
+      "week": 11,
+      "id": "401871060",
+      "team": "Florida International @ Delaware",
+      "final": [
+        16,
+        24
+      ],
+      "p": 0.6571029994634735,
+      "m": 7.135355123315394,
+      "y": 1,
+      "c": 0.6571029994634735,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.11757835297694666
+    },
+    {
+      "week": 11,
+      "id": "401856857",
+      "team": "Arizona State @ UCF",
+      "final": [
+        26,
+        13
+      ],
+      "p": 0.7185025380736391,
+      "m": 9.877583562959918,
+      "y": 0,
+      "c": 0.7185025380736391,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.5162458972182612
+    },
+    {
+      "week": 11,
+      "id": "401856858",
+      "team": "Baylor @ BYU",
+      "final": [
+        7,
+        28
+      ],
+      "p": 0.7726615392316482,
+      "m": 10.623179744575086,
+      "y": 1,
+      "c": 0.7726615392316482,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.05168277574452345
+    },
+    {
+      "week": 11,
+      "id": "401856883",
+      "team": "Missouri @ Georgia",
+      "final": [
+        21,
+        48
+      ],
+      "p": 0.8907871197509241,
+      "m": 19.85053122517932,
+      "y": 1,
+      "c": 0.8907871197509241,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.011927453212299
+    },
+    {
+      "week": 11,
+      "id": "401858294",
+      "team": "Boston College @ Notre Dame",
+      "final": [
+        7,
+        41
+      ],
+      "p": 0.8783011682154961,
+      "m": 19.4530058638094,
+      "y": 1,
+      "c": 0.8783011682154961,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.01481060565771298
+    },
+    {
+      "week": 11,
+      "id": "401858295",
+      "team": "California @ Virginia",
+      "final": [
+        7,
+        36
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 11,
+      "id": "401858518",
+      "team": "USC @ Indiana",
+      "final": [
+        13,
+        27
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 11,
+      "id": "401858523",
+      "team": "Michigan @ Oregon",
+      "final": [
+        7,
+        31
+      ],
+      "p": 0.6616607854058527,
+      "m": 7.474183360141813,
+      "y": 1,
+      "c": 0.6616607854058527,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.11447342413218445
+    },
+    {
+      "week": 11,
+      "id": "401862826",
+      "team": "Florida Atlantic @ Tulsa",
+      "final": [
+        21,
+        38
+      ],
+      "p": 0.851898925382518,
+      "m": 18.174831303283373,
+      "y": 1,
+      "c": 0.851898925382518,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.021933928302852974
+    },
+    {
+      "week": 11,
+      "id": "401864536",
+      "team": "Nevada @ Northern Illinois",
+      "final": [
+        28,
+        7
+      ],
+      "p": 0.2523107593029004,
+      "m": -9.925978600670197,
+      "y": 0,
+      "c": 0.7476892406970996,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.06366071926000615
+    },
+    {
+      "week": 11,
+      "id": "401869952",
+      "team": "Georgia Southern @ Georgia State",
+      "final": [
+        34,
+        17
+      ],
+      "p": 0.6383193114894558,
+      "m": 6.7099231062751326,
+      "y": 0,
+      "c": 0.6383193114894558,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.4074515434203728
+    },
+    {
+      "week": 11,
+      "id": "401870752",
+      "team": "Jacksonville State @ Western Kentucky",
+      "final": [
+        24,
+        34
+      ],
+      "p": 0.08811149418185302,
+      "m": -21.600324973937493,
+      "y": 1,
+      "c": 0.911888505818147,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.8315406470432526
+    },
+    {
+      "week": 11,
+      "id": "401871061",
+      "team": "Middle Tennessee @ Liberty",
+      "final": [
+        23,
+        28
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 11,
+      "id": "401860916",
+      "team": "Fresno State @ Texas State",
+      "final": [
+        35,
+        37
+      ],
+      "p": 0.45059405824596593,
+      "m": -3.065597108521065,
+      "y": 1,
+      "c": 0.549405941754034,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.301846888834637
+    },
+    {
+      "week": 11,
+      "id": "401856887",
+      "team": "Ole Miss @ Oklahoma",
+      "final": [
+        17,
+        24
+      ],
+      "p": 0.6539402794474861,
+      "m": 7.8476117539310115,
+      "y": 1,
+      "c": 0.6539402794474861,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.119757330188884
+    },
+    {
+      "week": 11,
+      "id": "401858521",
+      "team": "Washington @ Michigan State",
+      "final": [
+        21,
+        14
+      ],
+      "p": 0.3706439204440725,
+      "m": -4.05337936202728,
+      "y": 0,
+      "c": 0.6293560795559274,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.13737691576215197
+    },
+    {
+      "week": 11,
+      "id": "401871099",
+      "team": "Southern Miss @ Louisiana Tech",
+      "final": [
+        31,
+        63
+      ],
+      "p": 0.5182528780871494,
+      "m": 2.0821759202493046,
+      "y": 1,
+      "c": 0.5182528780871494,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.23208028947131495
+    },
+    {
+      "week": 11,
+      "id": "401856861",
+      "team": "Kansas @ West Virginia",
+      "final": [
+        37,
+        14
+      ],
+      "p": 0.7045907170024432,
+      "m": 8.663614814698018,
+      "y": 0,
+      "c": 0.7045907170024432,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.4964480784860171
+    },
+    {
+      "week": 11,
+      "id": "401866458",
+      "team": "Western Michigan @ Akron",
+      "final": [
+        42,
+        14
+      ],
+      "p": 0.4883660351251533,
+      "m": -1.28864057177388,
+      "y": 0,
+      "c": 0.5116339648748467,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.23850138426386247
+    },
+    {
+      "week": 11,
+      "id": "401866459",
+      "team": "Kent State @ Bowling Green",
+      "final": [
+        28,
+        33
+      ],
+      "p": 0.5728613696198465,
+      "m": 2.9770383995374727,
+      "y": 1,
+      "c": 0.5728613696198465,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.18244740956303343
+    },
+    {
+      "week": 11,
+      "id": "401866460",
+      "team": "Ohio @ Miami (OH)",
+      "final": [
+        17,
+        34
+      ],
+      "p": 0.7124533641960549,
+      "m": 9.16908436158574,
+      "y": 1,
+      "c": 0.7124533641960549,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.08268306776216666
+    },
+    {
+      "week": 11,
+      "id": "401866461",
+      "team": "Buffalo @ Ball State",
+      "final": [
+        28,
+        7
+      ],
+      "p": 0.5221609192877782,
+      "m": 0.7466839249484133,
+      "y": 0,
+      "c": 0.5221609192877782,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.27265202563145763
+    },
+    {
+      "week": 11,
+      "id": "401866462",
+      "team": "Sacramento State @ Central Michigan",
+      "final": [
+        7,
+        28
+      ],
+      "p": 0.5249898591558017,
+      "m": 2.229851357078304,
+      "y": 1,
+      "c": 0.5249898591558017,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.22563463390482516
+    },
+    {
+      "week": 11,
+      "id": "401866463",
+      "team": "Massachusetts @ Toledo",
+      "final": [
+        0,
+        24
+      ],
+      "p": 0.5627615925475309,
+      "m": 2.903424040327316,
+      "y": 1,
+      "c": 0.5627615925475309,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.1911774249515714
+    },
+    {
+      "week": 11,
+      "id": "401862824",
+      "team": "Memphis @ South Florida",
+      "final": [
+        52,
+        41
+      ],
+      "p": 0.7321352065535716,
+      "m": 7.677987406440237,
+      "y": 0,
+      "c": 0.7321352065535716,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.5360219606752409
+    },
+    {
+      "week": 11,
+      "id": "401869969",
+      "team": "Louisiana @ UL Monroe",
+      "final": [
+        42,
+        21
+      ],
+      "p": 0.2821887136661538,
+      "m": -10.474777937373187,
+      "y": 0,
+      "c": 0.7178112863338462,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.07963047012055853
+    },
+    {
+      "week": 11,
+      "id": "401858293",
+      "team": "Florida State @ Pittsburgh",
+      "final": [
+        16,
+        10
+      ],
+      "p": 0.8529566111378338,
+      "m": 17.32856830270096,
+      "y": 0,
+      "c": 0.8529566111378338,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.7275349804837379
+    },
+    {
+      "week": 11,
+      "id": "401858526",
+      "team": "Illinois @ UCLA",
+      "final": [
+        14,
+        22
+      ],
+      "p": 0.5587152327079223,
+      "m": 3.2411115764549794,
+      "y": 1,
+      "c": 0.5587152327079223,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.19473224584402313
+    },
+    {
+      "week": 11,
+      "id": "401856860",
+      "team": "Houston @ Colorado",
+      "final": [
+        32,
+        42
+      ],
+      "p": 0.2387392520681754,
+      "m": -10.648295589515213,
+      "y": 1,
+      "c": 0.7612607479318246,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.5795179263417211
+    },
+    {
+      "week": 11,
+      "id": "401856859",
+      "team": "Cincinnati @ Iowa State",
+      "final": [
+        13,
+        41
+      ],
+      "p": 0.6238342199291472,
+      "m": 4.619007442322305,
+      "y": 1,
+      "c": 0.6238342199291472,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.1415006940963132
+    },
+    {
+      "week": 11,
+      "id": "401856886",
+      "team": "Auburn @ Mississippi State",
+      "final": [
+        41,
+        9
+      ],
+      "p": 0.8050372580641508,
+      "m": 13.56041041865685,
+      "y": 0,
+      "c": 0.8050372580641508,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.6480849868714462
+    },
+    {
+      "week": 11,
+      "id": "401858296",
+      "team": "Duke @ Miami",
+      "final": [
+        25,
+        36
+      ],
+      "p": 0.8960815913689655,
+      "m": 19.990030962030026,
+      "y": 1,
+      "c": 0.8960815913689655,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.01079903565240667
+    },
+    {
+      "week": 11,
+      "id": "401858300",
+      "team": "Syracuse @ NC State",
+      "final": [
+        34,
+        31
+      ],
+      "p": 0.6066603209565414,
+      "m": 4.818130057012046,
+      "y": 0,
+      "c": 0.6066603209565414,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.36803674502309386
+    },
+    {
+      "week": 11,
+      "id": "401858301",
+      "team": "Wake Forest @ SMU",
+      "final": [
+        49,
+        7
+      ],
+      "p": 0.7098014286744013,
+      "m": 9.904033184458946,
+      "y": 0,
+      "c": 0.7098014286744013,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.5038180681482213
+    },
+    {
+      "week": 11,
+      "id": "401858520",
+      "team": "Wisconsin @ Maryland",
+      "final": [
+        21,
+        24
+      ],
+      "p": 0.7112903927155543,
+      "m": 10.378137357288669,
+      "y": 1,
+      "c": 0.7112903927155543,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.08335323733833888
+    },
+    {
+      "week": 11,
+      "id": "401858522",
+      "team": "Northwestern @ Ohio State",
+      "final": [
+        19,
+        28
+      ],
+      "p": null,
+      "m": null,
+      "y": 1,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 11,
+      "id": "401861967",
+      "team": "James Madison @ UConn",
+      "final": [
+        22,
+        46
+      ],
+      "p": 0.38077613911148317,
+      "m": -5.864568866529251,
+      "y": 1,
+      "c": 0.6192238608885168,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.38343818989368117
+    },
+    {
+      "week": 11,
+      "id": "401858297",
+      "team": "Georgia Tech @ Clemson",
+      "final": [
+        20,
+        6
+      ],
+      "p": null,
+      "m": null,
+      "y": 0,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 11,
+      "id": "401858525",
+      "team": "Nebraska @ Rutgers",
+      "final": [
+        31,
+        0
+      ],
+      "p": null,
+      "m": null,
+      "y": 0,
+      "c": null,
+      "hit": null,
+      "marginCorrect": null,
+      "b": null
+    },
+    {
+      "week": 11,
+      "id": "401856889",
+      "team": "Alabama @ Vanderbilt",
+      "final": [
+        21,
+        6
+      ],
+      "p": 0.45849091228263067,
+      "m": -1.7445091026670936,
+      "y": 0,
+      "c": 0.5415090877173694,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.21021391664575892
+    },
+    {
+      "week": 11,
+      "id": "401860914",
+      "team": "Oregon State @ Boise State",
+      "final": [
+        41,
+        46
+      ],
+      "p": 0.6546927623438245,
+      "m": 6.91124010297922,
+      "y": 1,
+      "c": 0.6546927623438245,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.1192370883777385
+    },
+    {
+      "week": 11,
+      "id": "401869928",
+      "team": "App State @ Marshall",
+      "final": [
+        20,
+        16
+      ],
+      "p": 0.19574206429385074,
+      "m": -14.191351604955358,
+      "y": 0,
+      "c": 0.8042579357061492,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.038314955734018
+    },
+    {
+      "week": 11,
+      "id": "401856884",
+      "team": "Florida @ Kentucky",
+      "final": [
+        21,
+        14
+      ],
+      "p": 0.37285694001328806,
+      "m": -6.05560618669351,
+      "y": 0,
+      "c": 0.6271430599867119,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.1390222977160727
+    },
+    {
+      "week": 11,
+      "id": "401858298",
+      "team": "Louisville @ North Carolina",
+      "final": [
+        16,
+        14
+      ],
+      "p": 0.5566889413017644,
+      "m": 1.039406716479561,
+      "y": 0,
+      "c": 0.5566889413017644,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.3099025773676793
+    },
+    {
+      "week": 11,
+      "id": "401858524",
+      "team": "Minnesota @ Penn State",
+      "final": [
+        14,
+        42
+      ],
+      "p": 0.7417203293547995,
+      "m": 12.47122807041999,
+      "y": 1,
+      "c": 0.7417203293547995,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.06670838826859325
+    },
+    {
+      "week": 11,
+      "id": "401864538",
+      "team": "San José State @ Air Force",
+      "final": [
+        3,
+        24
+      ],
+      "p": 0.8151620444429238,
+      "m": 14.091962396837074,
+      "y": 1,
+      "c": 0.8151620444429238,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.03416506981451966
+    },
+    {
+      "week": 11,
+      "id": "401871100",
+      "team": "Troy @ South Alabama",
+      "final": [
+        14,
+        27
+      ],
+      "p": 0.5680441745745718,
+      "m": 2.674460310248997,
+      "y": 1,
+      "c": 0.5680441745745718,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.186585835118963
+    },
+    {
+      "week": 11,
+      "id": "401856864",
+      "team": "Utah @ Arizona",
+      "final": [
+        40,
+        39
+      ],
+      "p": 0.4136268449733743,
+      "m": -3.6524051672539306,
+      "y": 0,
+      "c": 0.5863731550266257,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.17108716688262784
+    },
+    {
+      "week": 11,
+      "id": "401856885",
+      "team": "Texas @ LSU",
+      "final": [
+        22,
+        21
+      ],
+      "p": 0.5396419985285336,
+      "m": 3.54240625575879,
+      "y": 0,
+      "c": 0.5396419985285336,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.2912134865758698
+    },
+    {
+      "week": 11,
+      "id": "401858299",
+      "team": "Stanford @ Virginia Tech",
+      "final": [
+        40,
+        22
+      ],
+      "p": 0.926115979213719,
+      "m": 26.136729250184594,
+      "y": 0,
+      "c": 0.926115979213719,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.8576908069549857
+    },
+    {
+      "week": 11,
+      "id": "401858519",
+      "team": "Purdue @ Iowa",
+      "final": [
+        7,
+        28
+      ],
+      "p": 0.8743600312413987,
+      "m": 21.447881364188717,
+      "y": 1,
+      "c": 0.8743600312413987,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.015785401749662305
+    },
+    {
+      "week": 11,
+      "id": "401864539",
+      "team": "UNLV @ New Mexico",
+      "final": [
+        21,
+        17
+      ],
+      "p": 0.8720280653350624,
+      "m": 18.769738825783676,
+      "y": 0,
+      "c": 0.8720280653350624,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.7604329467320118
+    },
+    {
+      "week": 11,
+      "id": "401856882",
+      "team": "South Carolina @ Arkansas",
+      "final": [
+        6,
+        34
+      ],
+      "p": 0.14960092364019856,
+      "m": -17.381709311645945,
+      "y": 1,
+      "c": 0.8503990763598015,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.7231785890736036
+    },
+    {
+      "week": 11,
+      "id": "401862827",
+      "team": "North Texas @ UTSA",
+      "final": [
+        16,
+        35
+      ],
+      "p": 0.7083079541028433,
+      "m": 7.875718742722357,
+      "y": 1,
+      "c": 0.7083079541028433,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.08508424963966897
+    },
+    {
+      "week": 11,
+      "id": "401856863",
+      "team": "Texas Tech @ Oklahoma State",
+      "final": [
+        52,
+        27
+      ],
+      "p": 0.6293430206798761,
+      "m": 7.113831746775047,
+      "y": 0,
+      "c": 0.6293430206798761,
+      "hit": false,
+      "marginCorrect": false,
+      "b": 0.396072637678471
+    },
+    {
+      "week": 11,
+      "id": "401860915",
+      "team": "Utah State @ San Diego State",
+      "final": [
+        13,
+        30
+      ],
+      "p": 0.6674268035576609,
+      "m": 8.276222053717492,
+      "y": 1,
+      "c": 0.6674268035576609,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.11060493099187466
+    },
+    {
+      "week": 11,
+      "id": "401864540",
+      "team": "Wyoming @ UTEP",
+      "final": [
+        27,
+        15
+      ],
+      "p": 0.4609530252750947,
+      "m": -0.5840492596206761,
+      "y": 0,
+      "c": 0.5390469747249054,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.21247769151026208
+    },
+    {
+      "week": 11,
+      "id": "401860917",
+      "team": "Colorado State @ Washington State",
+      "final": [
+        7,
+        73
+      ],
+      "p": 0.5474717515899505,
+      "m": 1.9537100127919387,
+      "y": 1,
+      "c": 0.5474717515899505,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.20478181560906744
+    },
+    {
+      "week": 11,
+      "id": "401864537",
+      "team": "North Dakota State @ Hawai'i",
+      "final": [
+        21,
+        13
+      ],
+      "p": 0.3014119849824544,
+      "m": -8.478912057144855,
+      "y": 0,
+      "c": 0.6985880150175456,
+      "hit": true,
+      "marginCorrect": true,
+      "b": 0.09084918469106333
+    }
+  ],
+  "diverge": [
+    {
+      "week": 9,
+      "id": "401856737",
+      "team": "Mississippi State @ Texas",
+      "final": [
+        3,
+        31
+      ],
+      "p": 0.5258970500003277,
+      "m": -0.17926022771447103,
+      "y": 1,
+      "c": 0.5258970500003277,
+      "hit": true,
+      "marginCorrect": false,
+      "b": 0.22477360719839176
+    },
+    {
+      "week": 9,
+      "id": "401858278",
+      "team": "SMU @ Syracuse",
+      "final": [
+        27,
+        30
+      ],
+      "p": 0.48963770327433453,
+      "m": 0.7535424806658062,
+      "y": 1,
+      "c": 0.5103622967256655,
+      "hit": false,
+      "marginCorrect": true,
+      "b": 0.2604696739190962
+    },
+    {
+      "week": 10,
+      "id": "401864532",
+      "team": "Hawai'i @ UTEP",
+      "final": [
+        17,
+        14
+      ],
+      "p": 0.48679514164244436,
+      "m": 0.8180999427252562,
+      "y": 0,
+      "c": 0.5132048583575557,
+      "hit": true,
+      "marginCorrect": false,
+      "b": 0.23696950992668747
+    },
+    {
+      "week": 10,
+      "id": "401864535",
+      "team": "Wyoming @ UNLV",
+      "final": [
+        41,
+        35
+      ],
+      "p": 0.48136806672512733,
+      "m": 1.7513344391580845,
+      "y": 0,
+      "c": 0.5186319332748727,
+      "hit": true,
+      "marginCorrect": false,
+      "b": 0.23171521566268663
+    },
+    {
+      "week": 10,
+      "id": "401858291",
+      "team": "Miami @ Notre Dame",
+      "final": [
+        24,
+        31
+      ],
+      "p": 0.5097133284713214,
+      "m": -0.2668060664913918,
+      "y": 1,
+      "c": 0.5097133284713214,
+      "hit": true,
+      "marginCorrect": false,
+      "b": 0.24038102027867034
+    },
+    {
+      "week": 10,
+      "id": "401871073",
+      "team": "Delaware @ Kennesaw State",
+      "final": [
+        40,
+        42
+      ],
+      "p": 0.4896759060405278,
+      "m": 0.17558159017670696,
+      "y": 1,
+      "c": 0.5103240939594722,
+      "hit": false,
+      "marginCorrect": true,
+      "b": 0.2604306808755562
+    },
+    {
+      "week": 10,
+      "id": "401858510",
+      "team": "Nebraska @ Illinois",
+      "final": [
+        13,
+        24
+      ],
+      "p": 0.522416791937179,
+      "m": -1.761681196539541,
+      "y": 1,
+      "c": 0.522416791937179,
+      "hit": true,
+      "marginCorrect": false,
+      "b": 0.22808572062357574
+    }
+  ]
+}
