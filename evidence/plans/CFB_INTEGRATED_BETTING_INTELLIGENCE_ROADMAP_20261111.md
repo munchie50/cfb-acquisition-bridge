@@ -424,3 +424,7 @@ Next Sunday Weekly QA: join qualified Week 12 finals to the preregistered cohort
 ### First two high-confidence miss diagnoses completed
 
 [Verified two-game audit](https://github.com/munchie50/cfb-acquisition-bridge/blob/58c3beeb3127e0cc3e6d2bfe62f8fc55b23fa765/evidence/audits/CFB_WEEK11_HIGH_CONFIDENCE_MISS_MECHANISMS_20261115.md). Stanford's run production and defensive disruption and Western Kentucky's containment of Jacksonville State's rushing case are confirmed postgame mechanisms. Neither establishes a pregame feature defect. Both saved decisions were PASS. QA disposition: test prospectively identifiable countercases against comparable high-confidence winners. Next unprocessed cases: Colorado State–Washington State and Wake Forest–SMU margin residuals, plus comparable winners as controls. Week 12 confidence shadow remains registered separately.
+
+### Week 11 largest margin error diagnoses completed
+
+[Verified two-case audit](https://github.com/munchie50/cfb-acquisition-bridge/blob/54e9d3ee4a4bf484d484c1d03356cbcb38b75c44/evidence/audits/CFB_WEEK11_LARGEST_MARGIN_MISS_MECHANISMS_20261115.md). Washington State's ground production and red-zone finishing drove the 64.05-point home-margin residual. Wake–SMU was primarily a scoring split failure, with a 51.90-point home-margin residual and a 5.40-point total error. The existing PASS decisions remain. Next QA work is matched controls using only demonstrable pregame rushing, finishing, and QB-role evidence, including winners and failed covers. No production change.
