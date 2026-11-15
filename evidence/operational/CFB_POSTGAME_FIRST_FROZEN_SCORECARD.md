@@ -681,3 +681,15 @@ Source qualification:15direct officialHTML captures have actual request/response
 | 58 | 34/58 | 16.227099 | 14.262189 | 0.272084 |
 
 Ticket arithmetic: six wins, seven losses, zero pushes, $82.00 staked, $76.65 gross return from the printed terms and -$5.35 net. Parlay counted as one ticket. Sportsbook settlement remains unverified. No pregame decision, frozen prediction, or cash record changes.
+
+## Week 11 official outcome closeout — November 15 manual QA
+
+Oklahoma defeated Ole Miss 24–17. CBS rescheduled event 50051570 and NCAA game 6604193 independently agree on the exact final and orientation, joined to original game 401856887. The original frozen projection was Oklahoma by 7.8476117539310115, total 46.71694194916834, home-win probability 0.6539402794474861. Realized home margin 7 and total 41. Signed margin error −0.8476117539310115 and total error −5.71694194916834. No original numerical string or exclusion was altered.
+
+The [immutable final supplement](https://github.com/munchie50/cfb-acquisition-bridge/blob/7d668770ccd4679dd48a93517ff0100a11fe1330/evidence/operational/CFB_WEEK11_OFFICIAL_OUTCOME_QA_20261115_R2.json) and its exact R1 parent now cover all 67 governed Week 11 results, including all 59 FIRST_FROZEN predictions and eight original exclusions. No unresolved outcome identities.
+
+| Modeled finals | Winner direction | Margin MAE | Total MAE | Brier |
+|---:|---:|---:|---:|---:|
+| 59 | 35/59 | 15.966430 | 14.117354 | 0.269502 |
+
+Week 11 ticket score grades remain six wins, seven losses and no pushes. No recorded Week 11 ticket involves this final. Settlement remains unverified.
