@@ -1,0 +1,1326 @@
+{
+  "schema": "CFB_WEEK11_FROZEN_MODEL_MISS_TRIAGE_V1",
+  "scope": "All 67 games; descriptive single-week triage only. Winner model probabilities are not ATS edge or recommendation confidence. Causal diagnoses require separate verified football evidence.",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json",
+      "blob": "3a337e8bdf5cd732fb76697cf2a87b2d74ba8ce9"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK11_FULL_SLATE_LOST_OPPORTUNITY_CENSUS_20261115.json",
+      "blob": "6335a7cdc083484dbdaa3bfe2ab051cb38081d22"
+    }
+  ],
+  "overall": {
+    "games": 59,
+    "correct": 35,
+    "mean_confidence": 0.6795433391393644,
+    "mean_signed_margin_error": -1.0607102150606298,
+    "mean_signed_total_error": -2.099776796085323
+  },
+  "groups": {
+    "50–<60%": {
+      "games": 20,
+      "correct": 12,
+      "mean_confidence": 0.5488531622448041,
+      "mean_signed_margin_error": 4.010013822112788,
+      "mean_signed_total_error": -3.702529371440984
+    },
+    "60–<70%": {
+      "games": 13,
+      "correct": 9,
+      "mean_confidence": 0.643637809132463,
+      "mean_signed_margin_error": 0.734381671225033,
+      "mean_signed_total_error": 1.4343219402043543
+    },
+    "70–<80%": {
+      "games": 13,
+      "correct": 7,
+      "mean_confidence": 0.732263687197485,
+      "mean_signed_margin_error": -9.361448987280244,
+      "mean_signed_total_error": -1.2023408745624478
+    },
+    "80–100%": {
+      "games": 13,
+      "correct": 7,
+      "mean_confidence": 0.8637903316951606,
+      "mean_signed_margin_error": -2.3561772324703987,
+      "mean_signed_total_error": -4.065538261043006
+    }
+  },
+  "exclusion_reason_counts": {
+    "away_prior_points_missing": 3,
+    "home_prior_pbp_missing": 3,
+    "home_prior_points_missing": 3
+  },
+  "largest_margin_errors": [
+    "401860917",
+    "401858301",
+    "401856886",
+    "401856882",
+    "401858299",
+    "401870769"
+  ],
+  "highest_confidence_wrong": [
+    "401858299",
+    "401870752",
+    "401864539",
+    "401858293",
+    "401856882",
+    "401856886"
+  ],
+  "rows": [
+    {
+      "id": "401862825",
+      "game": "East Carolina @ Charlotte",
+      "decision": "PASS",
+      "final": [
+        17,
+        16
+      ],
+      "pregame_case": "Charlotte defense supports ECU -11.5 direction, but ECU finishing makes the road margin expensive. Charlotte +12 and +375 lack offensive support, and -455 is costly. Over 45.5 needs ECU conversion or Charlotte contribution, while the under faces Charlotte defensive weakness. American report pending.",
+      "original": {
+        "pred_margin": "0.7500422238799413",
+        "pred_total": "51.265192648193235",
+        "pred_win": "0.5074864349790272"
+      },
+      "home_margin_error": -1.7500422238799413,
+      "total_error": -18.265192648193235,
+      "confidence": 0.5074864349790272,
+      "correct": false,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401862829",
+      "game": "UAB @ Temple",
+      "exclusion": "away_prior_points_missing|home_prior_pbp_missing",
+      "final": [
+        36,
+        10
+      ]
+    },
+    {
+      "id": "401869937",
+      "game": "Arkansas State @ Coastal Carolina",
+      "exclusion": "home_prior_pbp_missing",
+      "final": [
+        21,
+        28
+      ]
+    },
+    {
+      "id": "401856862",
+      "game": "Kansas State @ TCU",
+      "decision": "PASS",
+      "final": [
+        10,
+        20
+      ],
+      "pregame_case": "Kansas State +12 buys more cushion but replacement quarterback uncertainty still weakens the dog and +375. TCU -11.5 and -465 demand more margin or win conviction. Small under price deterioration does not change the prior total case. Retain PASS.",
+      "original": {
+        "pred_margin": "-2.6698091954347256",
+        "pred_total": "49.81669631137061",
+        "pred_win": "0.42499421258039405"
+      },
+      "home_margin_error": 12.669809195434725,
+      "total_error": -19.816696311370613,
+      "confidence": 0.575005787419606,
+      "correct": false,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401862828",
+      "game": "Tulane @ Rice",
+      "decision": "PASS",
+      "final": [
+        20,
+        17
+      ],
+      "pregame_case": "PASS retained. CBS now shows 48.5 on both total sides, with over -105 and under -110. Rice rushing and uneven finishing still conflict. Neither spread nor outright gains a new case, with the American availability report pending.",
+      "original": {
+        "pred_margin": "2.822292059417623",
+        "pred_total": "40.641522944125335",
+        "pred_win": "0.5681939842309666"
+      },
+      "home_margin_error": -5.822292059417623,
+      "total_error": -3.6415229441253345,
+      "confidence": 0.5681939842309666,
+      "correct": false,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401870769",
+      "game": "Kennesaw State @ Sam Houston",
+      "decision": "PASS",
+      "final": [
+        26,
+        7
+      ],
+      "pregame_case": "Kennesaw -7 at -115 restores push protection relative to -7.5 but the offense has limited margin support; Sam Houston +7.5 or +240 is tempered by winless conference form. Kennesaw -286 is costly. At 46.5 weak offense supports the under and defensive errors favor the over; CUSA report pending.",
+      "original": {
+        "pred_margin": "14.10732171705284",
+        "pred_total": "49.357280618642214",
+        "pred_win": "0.7812031886995784"
+      },
+      "home_margin_error": -33.10732171705284,
+      "total_error": -16.357280618642214,
+      "confidence": 0.7812031886995784,
+      "correct": false,
+      "band": "70–<80%"
+    },
+    {
+      "id": "401856888",
+      "game": "Tennessee @ Texas A&M",
+      "decision": "CONDITIONAL",
+      "final": [
+        22,
+        7
+      ],
+      "pregame_case": "CONTROLLED BETA CONDITIONAL — Retain Tennessee at -2.5. A&M protection and receiver absences persist, with Baugh out and Craver questionable. Tennessee's own line absences and forecast gusts preserve margin risk. DraftKings public -2.5/-115 qualifies at the original limit. Other markets did not earn a limit.; review 5b43b15cd5f55a68a48e1251c56d6ab2d79fb0d1",
+      "original": {
+        "pred_margin": "-4.890858383129388",
+        "pred_total": "52.916784952555766",
+        "pred_win": "0.4159159150868798"
+      },
+      "home_margin_error": -10.109141616870613,
+      "total_error": -23.916784952555766,
+      "confidence": 0.5840840849131201,
+      "correct": true,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401870796",
+      "game": "New Mexico State @ Missouri State",
+      "decision": "PASS",
+      "final": [
+        21,
+        27
+      ],
+      "pregame_case": "New Mexico State +1.5/+100 has a defense case but low output and turnovers. Missouri State -1.5/-118 has home support against that offense, offset by weak defense and penalties. The 48.5 over and 49.5 under are unpaired and low offensive output competes with Missouri State's vulnerable defense. CUSA report pending.",
+      "original": {
+        "pred_margin": "-1.2670104510276587",
+        "pred_total": "54.258089729577634",
+        "pred_win": "0.4572648881452714"
+      },
+      "home_margin_error": 7.267010451027659,
+      "total_error": -6.258089729577634,
+      "confidence": 0.5427351118547286,
+      "correct": false,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401871060",
+      "game": "Florida International @ Delaware",
+      "decision": "PASS",
+      "final": [
+        16,
+        24
+      ],
+      "pregame_case": "Delaware -4.5 is a cheaper number than the older review but FIU's third-down defense can keep it close. FIU +5.5/+172 still faces weak finishing and turnover risk; Delaware -204 lacks separate support. Under 54.5 meets Delaware passing upside and over 53.5 needs FIU contribution. CUSA report pending.",
+      "original": {
+        "pred_margin": "7.135355123315394",
+        "pred_total": "47.488070368006",
+        "pred_win": "0.6571029994634735"
+      },
+      "home_margin_error": 0.864644876684606,
+      "total_error": -7.4880703680059995,
+      "confidence": 0.6571029994634735,
+      "correct": true,
+      "band": "60–<70%"
+    },
+    {
+      "id": "401856857",
+      "game": "Arizona State @ UCF",
+      "decision": "PASS",
+      "final": [
+        26,
+        13
+      ],
+      "pregame_case": "ASU +3/+136 has a passing matchup but inconsistent third-down offense. UCF -3/-154 has a home case but Duke Watson out weakens its run route and the ASU passing countercase remains. The same loss supports under 48.5, while UCF secondary exposure favors the over; neither qualifies.",
+      "original": {
+        "pred_margin": "9.877583562959918",
+        "pred_total": "54.736699128885355",
+        "pred_win": "0.7185025380736391"
+      },
+      "home_margin_error": -22.87758356295992,
+      "total_error": -15.736699128885355,
+      "confidence": 0.7185025380736391,
+      "correct": false,
+      "band": "70–<80%"
+    },
+    {
+      "id": "401856858",
+      "game": "Baylor @ BYU",
+      "decision": "CONDITIONAL",
+      "final": [
+        7,
+        28
+      ],
+      "pregame_case": "CONTROLLED BETA CONDITIONAL — Retain Baylor with the full +7.5 cushion. Beaty remains questionable and BYU's Johnson doubtful, while Martin and Glasker are probable. DraftKings public +7.5/-112 qualifies at the original limit. Other markets did not earn a limit.; review 5023e44aff90f48e6c1e919f16ee7b21c080df6d",
+      "original": {
+        "pred_margin": "10.623179744575086",
+        "pred_total": "52.139463667736734",
+        "pred_win": "0.7726615392316482"
+      },
+      "home_margin_error": 10.376820255424914,
+      "total_error": -17.139463667736734,
+      "confidence": 0.7726615392316482,
+      "correct": true,
+      "band": "70–<80%"
+    },
+    {
+      "id": "401856883",
+      "game": "Missouri @ Georgia",
+      "decision": "PASS",
+      "final": [
+        21,
+        48
+      ],
+      "pregame_case": "Current no play. DraftKings -16.5 at -108 misses the original -15.5 limit; Bobo and Horton questionable. Prior terms remain in immutable history.",
+      "original": {
+        "pred_margin": "19.85053122517932",
+        "pred_total": "54.95108472148233",
+        "pred_win": "0.8907871197509241"
+      },
+      "home_margin_error": 7.149468774820679,
+      "total_error": 14.048915278517669,
+      "confidence": 0.8907871197509241,
+      "correct": true,
+      "band": "80–100%"
+    },
+    {
+      "id": "401858294",
+      "game": "Boston College @ Notre Dame",
+      "decision": "PASS",
+      "final": [
+        7,
+        41
+      ],
+      "pregame_case": "Notre Dame -29 and -5000 charge heavily for favorite dominance; BC +29.5/+2200 faces an elite defense and turnover disadvantage. Notre Dame can threaten 52.5 alone, but BC contribution is uncertain. Neither total qualifies and the independent game report is pending.",
+      "original": {
+        "pred_margin": "19.4530058638094",
+        "pred_total": "45.36879101782121",
+        "pred_win": "0.8783011682154961"
+      },
+      "home_margin_error": 14.546994136190602,
+      "total_error": 2.6312089821787907,
+      "confidence": 0.8783011682154961,
+      "correct": true,
+      "band": "80–100%"
+    },
+    {
+      "id": "401858295",
+      "game": "California @ Virginia",
+      "exclusion": "away_prior_points_missing",
+      "final": [
+        7,
+        36
+      ]
+    },
+    {
+      "id": "401858518",
+      "game": "USC @ Indiana",
+      "exclusion": "home_prior_points_missing",
+      "final": [
+        13,
+        27
+      ]
+    },
+    {
+      "id": "401858523",
+      "game": "Michigan @ Oregon",
+      "decision": "PASS",
+      "final": [
+        7,
+        31
+      ],
+      "pregame_case": "PASS retained. Michigan +11/-111 restores a half-point and +365 improves the outright display, but its low recent output and Oregon's QB absence still leave the outright and 38.5 totals without independent limits. Oregon -10.5/-110 remains a large favorite premium.",
+      "original": {
+        "pred_margin": "7.474183360141813",
+        "pred_total": "49.363396815312775",
+        "pred_win": "0.6616607854058527"
+      },
+      "home_margin_error": 16.525816639858185,
+      "total_error": -11.363396815312775,
+      "confidence": 0.6616607854058527,
+      "correct": true,
+      "band": "60–<70%"
+    },
+    {
+      "id": "401862826",
+      "game": "Florida Atlantic @ Tulsa",
+      "decision": "PASS",
+      "final": [
+        21,
+        38
+      ],
+      "pregame_case": "Both offenses and the defensive profiles make a mechanical frozen under at 74.5 unreliable, while the over needs sustained scoring. FAU +6/+184 has offensive upside but Tulsa's own production counters it. Tulsa -5.5/-217 needs a stronger separation case. American report pending.",
+      "original": {
+        "pred_margin": "18.174831303283373",
+        "pred_total": "49.04533302580234",
+        "pred_win": "0.851898925382518"
+      },
+      "home_margin_error": -1.1748313032833728,
+      "total_error": 9.954666974197657,
+      "confidence": 0.851898925382518,
+      "correct": true,
+      "band": "80–100%"
+    },
+    {
+      "id": "401864536",
+      "game": "Nevada @ Northern Illinois",
+      "decision": "PASS",
+      "final": [
+        28,
+        7
+      ],
+      "pregame_case": "Nevada -6 now costs -108 and -215 is cheaper, but turnover and low-scoring risks remain. NIU +6.5 loses seven-point protection and +195 pays less. Weak finishing offsets over support; total price changes do not qualify an under. Retain PASS.",
+      "original": {
+        "pred_margin": "-9.925978600670197",
+        "pred_total": "48.23697931953057",
+        "pred_win": "0.2523107593029004"
+      },
+      "home_margin_error": -11.074021399329803,
+      "total_error": -13.236979319530569,
+      "confidence": 0.7476892406970996,
+      "correct": true,
+      "band": "70–<80%"
+    },
+    {
+      "id": "401869952",
+      "game": "Georgia Southern @ Georgia State",
+      "decision": "PASS",
+      "final": [
+        34,
+        17
+      ],
+      "pregame_case": "Southern -6/-225 has passing and turnover advantages, tempered by 11 initial outs and Georgia State's run defense. State +6.5/+195 needs more offensive consistency. State's scoring and Southern's possession case pull opposite ways at 56.5; the unpaired spread gives no derivative basis.",
+      "original": {
+        "pred_margin": "6.7099231062751326",
+        "pred_total": "48.855463089652964",
+        "pred_win": "0.6383193114894558"
+      },
+      "home_margin_error": -23.709923106275134,
+      "total_error": 2.1445369103470355,
+      "confidence": 0.6383193114894558,
+      "correct": false,
+      "band": "60–<70%"
+    },
+    {
+      "id": "401870752",
+      "game": "Jacksonville State @ Western Kentucky",
+      "decision": "PASS",
+      "final": [
+        24,
+        34
+      ],
+      "pregame_case": "Current no play. DraftKings -7.5 at -108 misses -105; C-USA report pending. Prior terms remain in immutable history.",
+      "original": {
+        "pred_margin": "-21.600324973937493",
+        "pred_total": "51.1254395395364",
+        "pred_win": "0.08811149418185302"
+      },
+      "home_margin_error": 31.600324973937493,
+      "total_error": 6.874560460463599,
+      "confidence": 0.911888505818147,
+      "correct": false,
+      "band": "80–100%"
+    },
+    {
+      "id": "401871061",
+      "game": "Middle Tennessee @ Liberty",
+      "exclusion": "home_prior_pbp_missing",
+      "final": [
+        23,
+        28
+      ]
+    },
+    {
+      "id": "401860916",
+      "game": "Fresno State @ Texas State",
+      "decision": "PASS",
+      "final": [
+        35,
+        37
+      ],
+      "pregame_case": "Fresno +9.5/+295 has passing and discipline support but low recent output. Texas State -8.5/-345 has a rushing case, with both teams' listed absences and Fresno ball security opposing the margin. Texas State rushing can lift 59.5, while Fresno scoring uncertainty supports the under.",
+      "original": {
+        "pred_margin": "-3.065597108521065",
+        "pred_total": "54.576210566492875",
+        "pred_win": "0.45059405824596593"
+      },
+      "home_margin_error": 5.0655971085210645,
+      "total_error": 17.423789433507125,
+      "confidence": 0.549405941754034,
+      "correct": false,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401856887",
+      "game": "Ole Miss @ Oklahoma",
+      "decision": "PASS",
+      "final": [
+        17,
+        24
+      ],
+      "pregame_case": "Both teams display +1.5 and -108, so the spread and outright pairs are directionally unusable. Oklahoma defense and Ole Miss offensive strength offset each other, with absences on both sides. At 49.5 Oklahoma scoring limitations support the under, and Ole Miss production supplies the over countercase.",
+      "original": {
+        "pred_margin": "7.8476117539310115",
+        "pred_total": "46.71694194916834",
+        "pred_win": "0.6539402794474861"
+      },
+      "home_margin_error": -0.8476117539310115,
+      "total_error": -5.716941949168337,
+      "confidence": 0.6539402794474861,
+      "correct": true,
+      "band": "60–<70%"
+    },
+    {
+      "id": "401858521",
+      "game": "Washington @ Michigan State",
+      "decision": "PASS",
+      "final": [
+        21,
+        14
+      ],
+      "pregame_case": "Washington -3.5/-102 saves juice but a three-point win now loses, and Michigan State +3.5/-115 charges for the hook. Neither -156 nor +142 has separate support. Michigan State's recent suppression favors under 42.5 but the lower number and defensive availability prevent a limit; the over needs more offensive support.",
+      "original": {
+        "pred_margin": "-4.05337936202728",
+        "pred_total": "43.11765338124613",
+        "pred_win": "0.3706439204440725"
+      },
+      "home_margin_error": -2.9466206379727202,
+      "total_error": -8.117653381246129,
+      "confidence": 0.6293560795559274,
+      "correct": true,
+      "band": "60–<70%"
+    },
+    {
+      "id": "401871099",
+      "game": "Southern Miss @ Louisiana Tech",
+      "decision": "PASS",
+      "final": [
+        31,
+        63
+      ],
+      "pregame_case": "Louisiana Tech -16.5 is a better number but still needs a 17-point win. Southern Miss +17.5/+650 faces a strong home favorite and eight listed outs, while -877 is expensive. At 56.5 Louisiana Tech can drive scoring, but Southern Miss contribution is uncertain. Neither side of the total earned a limit.",
+      "original": {
+        "pred_margin": "2.0821759202493046",
+        "pred_total": "55.18879828143836",
+        "pred_win": "0.5182528780871494"
+      },
+      "home_margin_error": 29.917824079750694,
+      "total_error": 38.81120171856164,
+      "confidence": 0.5182528780871494,
+      "correct": true,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401856861",
+      "game": "Kansas @ West Virginia",
+      "decision": "PASS",
+      "final": [
+        37,
+        14
+      ],
+      "pregame_case": "WVU -3/-142 has a rushing and third-down case but its pass defense gives Kansas +3/+120 a real route. Kansas' own availability and WVU scoring weaken the dog. Current offense and recent shootout make under 67.5 risky; over still requires sustained scoring at a high threshold.",
+      "original": {
+        "pred_margin": "8.663614814698018",
+        "pred_total": "50.97503668493277",
+        "pred_win": "0.7045907170024432"
+      },
+      "home_margin_error": -31.66361481469802,
+      "total_error": 0.024963315067232372,
+      "confidence": 0.7045907170024432,
+      "correct": false,
+      "band": "70–<80%"
+    },
+    {
+      "id": "401866458",
+      "game": "Western Michigan @ Akron",
+      "decision": "PASS",
+      "final": [
+        42,
+        14
+      ],
+      "pregame_case": "Akron competitiveness and total edge uncorroborated",
+      "original": {
+        "pred_margin": "-1.28864057177388",
+        "pred_total": "46.32523517727576",
+        "pred_win": "0.4883660351251533"
+      },
+      "home_margin_error": -26.71135942822612,
+      "total_error": 9.674764822724242,
+      "confidence": 0.5116339648748467,
+      "correct": true,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401866459",
+      "game": "Kent State @ Bowling Green",
+      "decision": "PASS",
+      "final": [
+        28,
+        33
+      ],
+      "pregame_case": "Kent spread price and total pace case did not qualify",
+      "original": {
+        "pred_margin": "2.9770383995374727",
+        "pred_total": "48.22547729629186",
+        "pred_win": "0.5728613696198465"
+      },
+      "home_margin_error": 2.0229616004625273,
+      "total_error": 12.774522703708143,
+      "confidence": 0.5728613696198465,
+      "correct": true,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401866460",
+      "game": "Ohio @ Miami (OH)",
+      "decision": "PASS",
+      "final": [
+        17,
+        34
+      ],
+      "pregame_case": "Miami quarterback turnover weakens frozen comparison",
+      "original": {
+        "pred_margin": "9.16908436158574",
+        "pred_total": "57.82635588649196",
+        "pred_win": "0.7124533641960549"
+      },
+      "home_margin_error": 7.830915638414259,
+      "total_error": -6.82635588649196,
+      "confidence": 0.7124533641960549,
+      "correct": true,
+      "band": "70–<80%"
+    },
+    {
+      "id": "401866461",
+      "game": "Buffalo @ Ball State",
+      "decision": "PASS",
+      "final": [
+        28,
+        7
+      ],
+      "pregame_case": "Buffalo current form offsets Ball State spread comparison. Neither outright price nor near-frozen total qualified.",
+      "original": {
+        "pred_margin": "0.7466839249484133",
+        "pred_total": "50.860051270337095",
+        "pred_win": "0.5221609192877782"
+      },
+      "home_margin_error": -21.746683924948414,
+      "total_error": -15.860051270337095,
+      "confidence": 0.5221609192877782,
+      "correct": false,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401866462",
+      "game": "Sacramento State @ Central Michigan",
+      "decision": "PASS",
+      "final": [
+        7,
+        28
+      ],
+      "pregame_case": "Sacramento State competitiveness and Central Michigan recent rebound offset. No total or outright qualified.",
+      "original": {
+        "pred_margin": "2.229851357078304",
+        "pred_total": "38.06386405148612",
+        "pred_win": "0.5249898591558017"
+      },
+      "home_margin_error": 18.770148642921697,
+      "total_error": -3.063864051486121,
+      "confidence": 0.5249898591558017,
+      "correct": true,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401866463",
+      "game": "Massachusetts @ Toledo",
+      "decision": "PASS",
+      "final": [
+        0,
+        24
+      ],
+      "pregame_case": "Toledo defense and improved UMass passing offset the spread case. Total near frozen and neither outright qualified.",
+      "original": {
+        "pred_margin": "2.903424040327316",
+        "pred_total": "53.01632285918723",
+        "pred_win": "0.5627615925475309"
+      },
+      "home_margin_error": 21.096575959672684,
+      "total_error": -29.016322859187227,
+      "confidence": 0.5627615925475309,
+      "correct": true,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401862824",
+      "game": "Memphis @ South Florida",
+      "decision": "PASS",
+      "final": [
+        52,
+        41
+      ],
+      "pregame_case": "Memphis -3.5/-120 and USF +4/-108 remain unpaired. Memphis -182 and USF +155 lack an independently earned win limit. Memphis scoring favors over 49.5 but the American report is still pending, and the under is vulnerable to normal Memphis offensive production. Retain PASS at the refreshed display.",
+      "original": {
+        "pred_margin": "7.677987406440237",
+        "pred_total": "57.30214919745141",
+        "pred_win": "0.7321352065535716"
+      },
+      "home_margin_error": -18.677987406440238,
+      "total_error": 35.69785080254859,
+      "confidence": 0.7321352065535716,
+      "correct": false,
+      "band": "70–<80%"
+    },
+    {
+      "id": "401869969",
+      "game": "Louisiana @ UL Monroe",
+      "decision": "PASS",
+      "final": [
+        42,
+        21
+      ],
+      "pregame_case": "PASS retained. ULM moneyline moves from +333 to +330. Louisiana offensive absences and ULM line and secondary absences leave both spreads, both outrights and both 47.5 totals without an earned limit.",
+      "original": {
+        "pred_margin": "-10.474777937373187",
+        "pred_total": "53.65072342986297",
+        "pred_win": "0.2821887136661538"
+      },
+      "home_margin_error": -10.525222062626813,
+      "total_error": 9.349276570137029,
+      "confidence": 0.7178112863338462,
+      "correct": true,
+      "band": "70–<80%"
+    },
+    {
+      "id": "401858293",
+      "game": "Florida State @ Pittsburgh",
+      "decision": "PASS",
+      "final": [
+        16,
+        10
+      ],
+      "pregame_case": "Friday recheck retains PASS. Pitt -3.5 is cheaper and Florida State +3.5 remains available on mixed-book display; Pitt quarterback uncertainty and Florida State receiver attrition offset the sides and outrights. Over 51.5 and under 52.5 show unmatched numbers; neither earns a total limit.",
+      "original": {
+        "pred_margin": "17.32856830270096",
+        "pred_total": "52.51911406902353",
+        "pred_win": "0.8529566111378338"
+      },
+      "home_margin_error": -23.32856830270096,
+      "total_error": -26.51911406902353,
+      "confidence": 0.8529566111378338,
+      "correct": false,
+      "band": "80–100%"
+    },
+    {
+      "id": "401858526",
+      "game": "Illinois @ UCLA",
+      "decision": "PASS",
+      "final": [
+        14,
+        22
+      ],
+      "pregame_case": "Friday recheck retains PASS. Illinois +10.5 improves the cushion but protection and UCLA quarterback uncertainty constrain both spreads and outrights. Unmatched 47.5 over and 48.5 under and uncertain offensive efficiency leave totals without an earned limit.",
+      "original": {
+        "pred_margin": "3.2411115764549794",
+        "pred_total": "59.232157820096006",
+        "pred_win": "0.5587152327079223"
+      },
+      "home_margin_error": 4.75888842354502,
+      "total_error": -23.232157820096006,
+      "confidence": 0.5587152327079223,
+      "correct": true,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401856860",
+      "game": "Houston @ Colorado",
+      "decision": "PASS",
+      "final": [
+        32,
+        42
+      ],
+      "pregame_case": "Friday recheck retains PASS. Houston -7.5 improves a point but still requires more than a touchdown; Colorado +8.5 is unpaired and receiver and backfield attrition weaken both its cover and upset case. Houston -315 demands strong win conviction. Neither 51.5 total has enough independent support.",
+      "original": {
+        "pred_margin": "-10.648295589515213",
+        "pred_total": "53.18418594413872",
+        "pred_win": "0.2387392520681754"
+      },
+      "home_margin_error": 20.648295589515214,
+      "total_error": 20.81581405586128,
+      "confidence": 0.7612607479318246,
+      "correct": false,
+      "band": "70–<80%"
+    },
+    {
+      "id": "401856859",
+      "game": "Cincinnati @ Iowa State",
+      "decision": "PASS",
+      "final": [
+        13,
+        41
+      ],
+      "pregame_case": "Iowa State -2.5 costs -125; Cincinnati +3 at -111 has push protection but its defensive exposure remains. Neither outright gains a supported case. At 58.5 the cheaper number does not resolve competing offensive and defensive factors. Retain PASS.",
+      "original": {
+        "pred_margin": "4.619007442322305",
+        "pred_total": "47.80301785537136",
+        "pred_win": "0.6238342199291472"
+      },
+      "home_margin_error": 23.380992557677693,
+      "total_error": 6.196982144628642,
+      "confidence": 0.6238342199291472,
+      "correct": true,
+      "band": "60–<70%"
+    },
+    {
+      "id": "401856886",
+      "game": "Auburn @ Mississippi State",
+      "decision": "PASS",
+      "final": [
+        41,
+        9
+      ],
+      "pregame_case": "PASS retained. Auburn -2.5 now costs -118 and the 50.5 under improves to -105. The dog price is unchanged, while the prior Mississippi State form and Auburn road margin concerns persist. No outright or total limit earned.",
+      "original": {
+        "pred_margin": "13.56041041865685",
+        "pred_total": "60.05343354622278",
+        "pred_win": "0.8050372580641508"
+      },
+      "home_margin_error": -45.56041041865685,
+      "total_error": -10.053433546222777,
+      "confidence": 0.8050372580641508,
+      "correct": false,
+      "band": "80–100%"
+    },
+    {
+      "id": "401858296",
+      "game": "Duke @ Miami",
+      "decision": "PASS",
+      "final": [
+        25,
+        36
+      ],
+      "pregame_case": "Miami's passing and run defense support favorite direction, but Duke's defense makes laying 13.5 demanding. Duke +13.5 misses a two-touchdown cushion, and neither +425 nor -549 earns a separate win case. At 54.5 Miami's scoring upside and Duke's run-dependent offense pull the over and under in opposite directions.",
+      "original": {
+        "pred_margin": "19.990030962030026",
+        "pred_total": "50.854380892834364",
+        "pred_win": "0.8960815913689655"
+      },
+      "home_margin_error": -8.990030962030026,
+      "total_error": 10.145619107165636,
+      "confidence": 0.8960815913689655,
+      "correct": true,
+      "band": "80–100%"
+    },
+    {
+      "id": "401858300",
+      "game": "Syracuse @ NC State",
+      "decision": "PASS",
+      "final": [
+        34,
+        31
+      ],
+      "pregame_case": "Syracuse's yardage advantage supports direction, but -2.5 at -120 costs more and its penalties oppose a road cover. NC State +3 gets the key number but its offensive form and 12 initial outs weaken both the spread and +125. Syracuse -142 lacks a separate price case. At 53.5 NC State finishing weighs against the over and Syracuse production against the under.",
+      "original": {
+        "pred_margin": "4.818130057012046",
+        "pred_total": "51.534927864303995",
+        "pred_win": "0.6066603209565414"
+      },
+      "home_margin_error": -7.818130057012046,
+      "total_error": 13.465072135696005,
+      "confidence": 0.6066603209565414,
+      "correct": false,
+      "band": "60–<70%"
+    },
+    {
+      "id": "401858301",
+      "game": "Wake Forest @ SMU",
+      "decision": "PASS",
+      "final": [
+        49,
+        7
+      ],
+      "pregame_case": "PASS. Lopez is probable on the dated report; actual role and SMU personnel matter. Wake +1.5 and SMU -1 are unmatched and the two negative moneylines are weak evidence of side value. The 60.5 over depends on normal QB production and the 61.5 under still faces the risk of healthier offensive personnel. Require an updated role and coherent market before changing the decision.",
+      "original": {
+        "pred_margin": "9.904033184458946",
+        "pred_total": "61.39853271821294",
+        "pred_win": "0.7098014286744013"
+      },
+      "home_margin_error": -51.904033184458946,
+      "total_error": -5.398532718212941,
+      "confidence": 0.7098014286744013,
+      "correct": false,
+      "band": "70–<80%"
+    },
+    {
+      "id": "401858520",
+      "game": "Wisconsin @ Maryland",
+      "decision": "PASS",
+      "final": [
+        21,
+        24
+      ],
+      "pregame_case": "Maryland +9 and +275 retain a home countercase, but current Maryland form and Wisconsin defense weaken it. Wisconsin -7.5/-120 and -319 demand more margin or win confidence. The defense favors a lower score but the mismatched spreads and multiple unsettled Maryland designations leave both 42.5 sides without a limit.",
+      "original": {
+        "pred_margin": "10.378137357288669",
+        "pred_total": "53.39302997548633",
+        "pred_win": "0.7112903927155543"
+      },
+      "home_margin_error": -7.378137357288669,
+      "total_error": -8.393029975486328,
+      "confidence": 0.7112903927155543,
+      "correct": true,
+      "band": "70–<80%"
+    },
+    {
+      "id": "401858522",
+      "game": "Northwestern @ Ohio State",
+      "exclusion": "away_prior_points_missing",
+      "final": [
+        19,
+        28
+      ]
+    },
+    {
+      "id": "401861967",
+      "game": "James Madison @ UConn",
+      "decision": "PASS",
+      "final": [
+        22,
+        46
+      ],
+      "pregame_case": "JMU -4.5 loses the earlier four-point margin protection. UConn +5 improves the home-offense countercase but the personnel report is pending. Neither -188 nor +170 independently qualifies and existing finishing concerns remain across both total sides. Retain PASS.",
+      "original": {
+        "pred_margin": "-5.864568866529251",
+        "pred_total": "53.46810857692422",
+        "pred_win": "0.38077613911148317"
+      },
+      "home_margin_error": 29.86456886652925,
+      "total_error": 14.531891423075777,
+      "confidence": 0.6192238608885168,
+      "correct": false,
+      "band": "60–<70%"
+    },
+    {
+      "id": "401858297",
+      "game": "Georgia Tech @ Clemson",
+      "exclusion": "home_prior_points_missing",
+      "final": [
+        20,
+        6
+      ]
+    },
+    {
+      "id": "401858525",
+      "game": "Nebraska @ Rutgers",
+      "exclusion": "home_prior_points_missing",
+      "final": [
+        31,
+        0
+      ]
+    },
+    {
+      "id": "401856889",
+      "game": "Alabama @ Vanderbilt",
+      "decision": "PASS",
+      "final": [
+        21,
+        6
+      ],
+      "pregame_case": "Alabama -16.5 costs -120 and Vanderbilt +17.5 is an unmatched public display. Existing personnel uncertainty limits the dog cushion and upset case, while -800 remains expensive. Unchanged total terms add no independent edge. Retain PASS.",
+      "original": {
+        "pred_margin": "-1.7445091026670936",
+        "pred_total": "50.84574803210484",
+        "pred_win": "0.45849091228263067"
+      },
+      "home_margin_error": -13.255490897332907,
+      "total_error": -23.845748032104837,
+      "confidence": 0.5415090877173694,
+      "correct": true,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401860914",
+      "game": "Oregon State @ Boise State",
+      "decision": "PASS",
+      "final": [
+        41,
+        46
+      ],
+      "pregame_case": "PASS. Oregon State +14.5 gives away a point from the prior watch; Boise -14.5 remains sensitive to questionable Madsen and Gaines. Oregon State's doubtful QB Atkinson weakens +500 and Boise -649 pays little for personnel risk. The 63.5 under gives away two points from the prior watch; the over relies on offensive availability and efficiency still unresolved.",
+      "original": {
+        "pred_margin": "6.91124010297922",
+        "pred_total": "56.72850665624595",
+        "pred_win": "0.6546927623438245"
+      },
+      "home_margin_error": -1.91124010297922,
+      "total_error": 30.271493343754052,
+      "confidence": 0.6546927623438245,
+      "correct": true,
+      "band": "60–<70%"
+    },
+    {
+      "id": "401869928",
+      "game": "App State @ Marshall",
+      "decision": "PASS",
+      "final": [
+        20,
+        16
+      ],
+      "pregame_case": "App State -1/-111 improves the spread but its recent protection problems remain material and this report does not resolve the starting line. Marshall +1.5/+100 has a home case but its own usage and defense are unsettled. At 53.5/54.5, weak protection aids suppression while defensive vulnerability and short fields favor scoring.",
+      "original": {
+        "pred_margin": "-14.191351604955358",
+        "pred_total": "50.56701347866751",
+        "pred_win": "0.19574206429385074"
+      },
+      "home_margin_error": 10.191351604955358,
+      "total_error": -14.567013478667512,
+      "confidence": 0.8042579357061492,
+      "correct": true,
+      "band": "80–100%"
+    },
+    {
+      "id": "401856884",
+      "game": "Florida @ Kentucky",
+      "decision": "PASS",
+      "final": [
+        21,
+        14
+      ],
+      "pregame_case": "Florida +3.5/+145 has a matchup against the Kentucky secondary but its QB and protection concerns remain. Kentucky -3.5/-160 needs offensive finishing beyond a field goal. At 52.5 weak secondaries counter the under and Florida disruption counters the over.",
+      "original": {
+        "pred_margin": "-6.05560618669351",
+        "pred_total": "61.06741306267394",
+        "pred_win": "0.37285694001328806"
+      },
+      "home_margin_error": -0.9443938133064904,
+      "total_error": -26.067413062673943,
+      "confidence": 0.6271430599867119,
+      "correct": true,
+      "band": "60–<70%"
+    },
+    {
+      "id": "401858298",
+      "game": "Louisville @ North Carolina",
+      "decision": "PASS",
+      "final": [
+        16,
+        14
+      ],
+      "pregame_case": "Louisville -3.5/-166 has rushing and form support, but UNC passing against the Louisville secondary threatens the cover. UNC +3.5/+150 remains sensitive to how much recent production came on short fields. Over 59.5 has viable offensive routes; UNC possession and defensive finishing support the under.",
+      "original": {
+        "pred_margin": "1.039406716479561",
+        "pred_total": "55.98763836980161",
+        "pred_win": "0.5566889413017644"
+      },
+      "home_margin_error": -3.039406716479561,
+      "total_error": -25.98763836980161,
+      "confidence": 0.5566889413017644,
+      "correct": false,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401858524",
+      "game": "Minnesota @ Penn State",
+      "decision": "PASS",
+      "final": [
+        14,
+        42
+      ],
+      "pregame_case": "Minnesota +9.5/+290 lacks offensive support against Penn State's pass defense. Penn State -9.5/-355 still needs reliable margin and faces backdoor risk. Under 42.5/-111 improves the number but the paired display is over 41.5/-112, and the Minnesota uncertainty and PSU finishing offset scoring confidence.",
+      "original": {
+        "pred_margin": "12.47122807041999",
+        "pred_total": "47.41831834060458",
+        "pred_win": "0.7417203293547995"
+      },
+      "home_margin_error": 15.52877192958001,
+      "total_error": 8.581681659395421,
+      "confidence": 0.7417203293547995,
+      "correct": true,
+      "band": "70–<80%"
+    },
+    {
+      "id": "401864538",
+      "game": "San José State @ Air Force",
+      "decision": "PASS",
+      "final": [
+        3,
+        24
+      ],
+      "pregame_case": "Air Force -12/-469 has a frozen-direction case but requires a large margin without new role evidence. San José State +12.5/+390 lacks a qualified offensive or win case. The 47.5 total is near the frozen estimate and neither direction has a distinct material edge. Report pending.",
+      "original": {
+        "pred_margin": "14.091962396837074",
+        "pred_total": "47.56862012381404",
+        "pred_win": "0.8151620444429238"
+      },
+      "home_margin_error": 6.908037603162926,
+      "total_error": -20.568620123814043,
+      "confidence": 0.8151620444429238,
+      "correct": true,
+      "band": "80–100%"
+    },
+    {
+      "id": "401871100",
+      "game": "Troy @ South Alabama",
+      "decision": "PASS",
+      "final": [
+        14,
+        27
+      ],
+      "pregame_case": "South Alabama -2.5/-120 and -146 have home rushing support, but Troy's run defense and the 16 listed South Alabama outs temper the edge. Troy +3/+130 lacks enough offensive certainty. The rushing matchup and the favorite's own defense point opposite ways at 55.5.",
+      "original": {
+        "pred_margin": "2.674460310248997",
+        "pred_total": "47.77120182769941",
+        "pred_win": "0.5680441745745718"
+      },
+      "home_margin_error": 10.325539689751004,
+      "total_error": -6.771201827699407,
+      "confidence": 0.5680441745745718,
+      "correct": true,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401856864",
+      "game": "Utah @ Arizona",
+      "decision": "PASS",
+      "final": [
+        40,
+        39
+      ],
+      "pregame_case": "Utah -2.5/-133 retains a field-goal cover route, while Arizona +2.5/+114 has a home case but no full three points. Both strong teams and unresolved Arizona designations weaken any directional limit. At 54.5 both offenses supply scoring potential and the defensive matchup keeps the over from qualifying.",
+      "original": {
+        "pred_margin": "-3.6524051672539306",
+        "pred_total": "51.6243057619008",
+        "pred_win": "0.4136268449733743"
+      },
+      "home_margin_error": 2.6524051672539306,
+      "total_error": 27.3756942380992,
+      "confidence": 0.5863731550266257,
+      "correct": true,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401856885",
+      "game": "Texas @ LSU",
+      "decision": "PASS",
+      "final": [
+        22,
+        21
+      ],
+      "pregame_case": "LSU -4/-182 asks for more than the frozen center; Texas +4/+154 has a competitive route without enough current evidence for a limit. The 46.5 under is below the frozen 50 and the over depends on unverified offensive efficiency. Multiple designations remain on both sides.",
+      "original": {
+        "pred_margin": "3.54240625575879",
+        "pred_total": "49.97401263931687",
+        "pred_win": "0.5396419985285336"
+      },
+      "home_margin_error": -4.54240625575879,
+      "total_error": -6.974012639316868,
+      "confidence": 0.5396419985285336,
+      "correct": false,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401858299",
+      "game": "Stanford @ Virginia Tech",
+      "decision": "PASS",
+      "final": [
+        40,
+        22
+      ],
+      "pregame_case": "Stanford +15.5/+525 has recent passing support but 14 listed outs and VT's scoring routes weaken both. VT -15.5/-709 still requires margin against its own vulnerable secondary. At 58.5 productive passing opposes the under, while turnovers and Stanford personnel can derail the over.",
+      "original": {
+        "pred_margin": "26.136729250184594",
+        "pred_total": "53.45365523854528",
+        "pred_win": "0.926115979213719"
+      },
+      "home_margin_error": -44.136729250184594,
+      "total_error": 8.54634476145472,
+      "confidence": 0.926115979213719,
+      "correct": false,
+      "band": "80–100%"
+    },
+    {
+      "id": "401858519",
+      "game": "Purdue @ Iowa",
+      "decision": "PASS",
+      "final": [
+        7,
+        28
+      ],
+      "pregame_case": "Iowa -17/-909 has defense and rushing support but a large margin against Purdue's passing and backdoor route. Purdue +17.5/-120 is expensive and +720 lacks win support. At 47.5 Iowa suppression offsets Purdue defensive vulnerability; no independent over or under limit.",
+      "original": {
+        "pred_margin": "21.447881364188717",
+        "pred_total": "53.930275246236384",
+        "pred_win": "0.8743600312413987"
+      },
+      "home_margin_error": -0.44788136418871716,
+      "total_error": -18.930275246236384,
+      "confidence": 0.8743600312413987,
+      "correct": true,
+      "band": "80–100%"
+    },
+    {
+      "id": "401864539",
+      "game": "UNLV @ New Mexico",
+      "decision": "PASS",
+      "final": [
+        21,
+        17
+      ],
+      "pregame_case": "New Mexico -14.5/-599 has home defense and rushing support but the spread now needs more than two touchdowns. UNLV +14.5/+500 has comeback potential against lower passing volume, while New Mexico defense limits it. At 46.5 favorite scoring and UNLV contribution remain unresolved. Report pending.",
+      "original": {
+        "pred_margin": "18.769738825783676",
+        "pred_total": "41.00488113050702",
+        "pred_win": "0.8720280653350624"
+      },
+      "home_margin_error": -22.769738825783676,
+      "total_error": -3.004881130507023,
+      "confidence": 0.8720280653350624,
+      "correct": false,
+      "band": "80–100%"
+    },
+    {
+      "id": "401856882",
+      "game": "South Carolina @ Arkansas",
+      "decision": "PASS",
+      "final": [
+        6,
+        34
+      ],
+      "pregame_case": "South Carolina -7 permits a push at seven, but Arkansas rushing and recent defensive disruption weaken the favorite margin and -265. Arkansas +7.5/-120 buys the hook at a premium and +235 lacks a separate win-price case. 51.5 is near frozen 51.4; neither total has a current matchup advantage strong enough for a limit.",
+      "original": {
+        "pred_margin": "-17.381709311645945",
+        "pred_total": "51.40997536306588",
+        "pred_win": "0.14960092364019856"
+      },
+      "home_margin_error": 45.38170931164595,
+      "total_error": -11.409975363065882,
+      "confidence": 0.8503990763598015,
+      "correct": false,
+      "band": "80–100%"
+    },
+    {
+      "id": "401862827",
+      "game": "North Texas @ UTSA",
+      "decision": "PASS",
+      "final": [
+        16,
+        35
+      ],
+      "pregame_case": "North Texas stays a price hold: CBS mixed-book display -2.5/-110 misses the original -105 floor. UTSA home quarterback and rushing case and pending American report remain material. UTSA +3 and +110, North Texas -125 and the unmatched 75.5 over/76.5 under earn no independent limit.",
+      "original": {
+        "pred_margin": "7.875718742722357",
+        "pred_total": "58.01167645733528",
+        "pred_win": "0.7083079541028433"
+      },
+      "home_margin_error": 11.124281257277643,
+      "total_error": -7.011676457335277,
+      "confidence": 0.7083079541028433,
+      "correct": true,
+      "band": "70–<80%"
+    },
+    {
+      "id": "401856863",
+      "game": "Texas Tech @ Oklahoma State",
+      "decision": "PASS",
+      "final": [
+        52,
+        27
+      ],
+      "pregame_case": "Oklahoma State -3.5/-156 has the passing matchup, while Texas Tech rushing supports +3.5/+142 without resolving its pass defense risk. Current production makes a mechanical frozen under unreliable. Over 72.5 asks for sustained scoring and under 73.5 comes from another cell; neither earns a limit.",
+      "original": {
+        "pred_margin": "7.113831746775047",
+        "pred_total": "53.521501583249126",
+        "pred_win": "0.6293430206798761"
+      },
+      "home_margin_error": -32.11383174677505,
+      "total_error": 25.478498416750874,
+      "confidence": 0.6293430206798761,
+      "correct": false,
+      "band": "60–<70%"
+    },
+    {
+      "id": "401860915",
+      "game": "Utah State @ San Diego State",
+      "decision": "PASS",
+      "final": [
+        13,
+        30
+      ],
+      "pregame_case": "Utah State -2.5/-118 has the stronger defense but low scoring. SDSU +3/-114 and +122 have an offensive countercase but weak defense. At 42.5 Utah State suppression favors the under and SDSU scoring opposes it; the advance report leaves multiple designations unresolved.",
+      "original": {
+        "pred_margin": "8.276222053717492",
+        "pred_total": "45.09583229203976",
+        "pred_win": "0.6674268035576609"
+      },
+      "home_margin_error": 8.723777946282508,
+      "total_error": -2.095832292039759,
+      "confidence": 0.6674268035576609,
+      "correct": true,
+      "band": "60–<70%"
+    },
+    {
+      "id": "401864540",
+      "game": "Wyoming @ UTEP",
+      "decision": "PASS",
+      "final": [
+        27,
+        15
+      ],
+      "pregame_case": "Wyoming's rushing case supports favorite direction but its low scoring makes the prior -7.5/-323 demanding. UTEP +8.5/+280 has a cushion case without offensive finishing. At 39.5 weak offenses aid the under and Wyoming rushing threatens it; neither total earns a limit. Report pending.",
+      "original": {
+        "pred_margin": "-0.5840492596206761",
+        "pred_total": "45.16045662803573",
+        "pred_win": "0.4609530252750947"
+      },
+      "home_margin_error": -11.415950740379325,
+      "total_error": -3.160456628035732,
+      "confidence": 0.5390469747249054,
+      "correct": true,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401860917",
+      "game": "Colorado State @ Washington State",
+      "decision": "PASS",
+      "final": [
+        7,
+        73
+      ],
+      "pregame_case": "PASS after CBS restored all six prices. CSU +9.5/-110 and WSU -8.5/-112 remain unpaired. CSU passing and weak defense pull opposite ways; WSU finishing tempers the home margin. Neither +285/-345 nor either 66.5 total earns a limit.",
+      "original": {
+        "pred_margin": "1.9537100127919387",
+        "pred_total": "50.30082026153256",
+        "pred_win": "0.5474717515899505"
+      },
+      "home_margin_error": 64.04628998720806,
+      "total_error": 29.699179738467443,
+      "confidence": 0.5474717515899505,
+      "correct": true,
+      "band": "50–<60%"
+    },
+    {
+      "id": "401864537",
+      "game": "North Dakota State @ Hawai'i",
+      "decision": "PASS",
+      "final": [
+        21,
+        13
+      ],
+      "pregame_case": "NDSU -6.5/-244 has rushing and defense support, but island travel and Hawai'i passing weaken the margin case. Hawai'i +6.5/+205 still faces weak rushing and finishing. At 38.5 NDSU defense supports the under while Hawai'i passing offers an over route. The initial report leaves several player designations unresolved.",
+      "original": {
+        "pred_margin": "-8.478912057144855",
+        "pred_total": "46.59298128314884",
+        "pred_win": "0.3014119849824544"
+      },
+      "home_margin_error": 0.4789120571448553,
+      "total_error": -12.592981283148838,
+      "confidence": 0.6985880150175456,
+      "correct": true,
+      "band": "60–<70%"
+    }
+  ]
+}
