@@ -1,0 +1,6571 @@
+{
+ "schema": "CFB_WEEK11_PASS_LOST_OPPORTUNITY_REPLAY_V1",
+ "roadmap_registration_commit": "46fc4e843c9ef4db9db417ee16b2004c189cd789",
+ "pregame_line_sensitivity_blob": "be1234167b68c57020c5156694596518c0610b2e",
+ "inputs": [
+  {
+   "path": "evidence/audits/CFB_WEEK11_SATURDAY_PASS_PREGAME_BASELINE_20261112.json",
+   "blob": "f1b8eda1cd69f3aa4e3e5cf47c94f271ec1c1a24"
+  },
+  {
+   "path": "evidence/audits/CFB_WEEK11_SATURDAY_PASS_ACTIONS_SENSITIVITY_20261112.json",
+   "blob": "747794ca72cb39a5bff3b91dc7bcf52ad618d249"
+  },
+  {
+   "path": "scripts/cfb_grade_paired_straights.py",
+   "blob": "8a3dc5c074f682631a3257b9b52bdf38ee1c2d2f"
+  },
+  {
+   "path": "scripts/cfb_parlay_matrix.py",
+   "blob": "79eba3e1c4efb09a30737028e8287e5c7b49c06c"
+  }
+ ],
+ "official_outcomes": {
+  "R1": "99f12421f23bc74f3e6da67cc2c628b3622bfe2a",
+  "R2": "ded268079ded6db056cd04439a7f4796eec00a9a"
+ },
+ "scope": "Fixed pregame research selections covering 40 archived PASS games; CBS display prices and hypothetical $5 stake. Not evidence of a delivered recommendation, executable quote, or validated production threshold change.",
+ "report": {
+  "primary": {
+   "capture_utc": "2026-11-12T19:35:39Z",
+   "report": {
+    "games": 40,
+    "by_market": {
+     "ALL": {
+      "opening": {
+       "selections": 120,
+       "graded": 120,
+       "wins": 60,
+       "losses": 59,
+       "pushes": 1,
+       "pending": 0,
+       "graded_stake_cents": 60000,
+       "graded_net_cents": -5608
+      },
+      "pairs": {
+       "SAME_LINE": {
+        "opening": {
+         "selections": 86,
+         "graded": 86,
+         "wins": 45,
+         "losses": 40,
+         "pushes": 1,
+         "pending": 0,
+         "graded_stake_cents": 43000,
+         "graded_net_cents": -2609
+        },
+        "thursday": {
+         "selections": 86,
+         "graded": 86,
+         "wins": 45,
+         "losses": 40,
+         "pushes": 1,
+         "pending": 0,
+         "graded_stake_cents": 43000,
+         "graded_net_cents": -2552
+        },
+        "net_delta_cents": 57,
+        "grade_transitions": {
+         "LOSS_TO_LOSS": 40,
+         "PUSH_TO_PUSH": 1,
+         "WIN_TO_WIN": 45
+        },
+        "line_effect_cents": 0,
+        "price_effect_cents": 57
+       },
+       "CHANGED_LINE": {
+        "opening": {
+         "selections": 31,
+         "graded": 31,
+         "wins": 14,
+         "losses": 17,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 15500,
+         "graded_net_cents": -2149
+        },
+        "thursday": {
+         "selections": 31,
+         "graded": 31,
+         "wins": 13,
+         "losses": 18,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 15500,
+         "graded_net_cents": -3076
+        },
+        "net_delta_cents": -927,
+        "grade_transitions": {
+         "LOSS_TO_LOSS": 17,
+         "WIN_TO_LOSS": 1,
+         "WIN_TO_WIN": 13
+        },
+        "line_effect_cents": -917,
+        "price_effect_cents": -10
+       },
+       "UNAVAILABLE": {
+        "opening": {
+         "selections": 3,
+         "graded": 3,
+         "wins": 1,
+         "losses": 2,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 1500,
+         "graded_net_cents": -850
+        },
+        "thursday": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "net_delta_cents": null,
+        "grade_transitions": {},
+        "line_effect_cents": null,
+        "price_effect_cents": null
+       }
+      }
+     },
+     "SPREAD": {
+      "opening": {
+       "selections": 40,
+       "graded": 40,
+       "wins": 19,
+       "losses": 20,
+       "pushes": 1,
+       "pending": 0,
+       "graded_stake_cents": 20000,
+       "graded_net_cents": -1422
+      },
+      "pairs": {
+       "SAME_LINE": {
+        "opening": {
+         "selections": 20,
+         "graded": 20,
+         "wins": 11,
+         "losses": 8,
+         "pushes": 1,
+         "pending": 0,
+         "graded_stake_cents": 10000,
+         "graded_net_cents": 956
+        },
+        "thursday": {
+         "selections": 20,
+         "graded": 20,
+         "wins": 11,
+         "losses": 8,
+         "pushes": 1,
+         "pending": 0,
+         "graded_stake_cents": 10000,
+         "graded_net_cents": 878
+        },
+        "net_delta_cents": -78,
+        "grade_transitions": {
+         "LOSS_TO_LOSS": 8,
+         "PUSH_TO_PUSH": 1,
+         "WIN_TO_WIN": 11
+        },
+        "line_effect_cents": 0,
+        "price_effect_cents": -78
+       },
+       "CHANGED_LINE": {
+        "opening": {
+         "selections": 19,
+         "graded": 19,
+         "wins": 8,
+         "losses": 11,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 9500,
+         "graded_net_cents": -1878
+        },
+        "thursday": {
+         "selections": 19,
+         "graded": 19,
+         "wins": 8,
+         "losses": 11,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 9500,
+         "graded_net_cents": -1868
+        },
+        "net_delta_cents": 10,
+        "grade_transitions": {
+         "LOSS_TO_LOSS": 11,
+         "WIN_TO_WIN": 8
+        },
+        "line_effect_cents": 0,
+        "price_effect_cents": 10
+       },
+       "UNAVAILABLE": {
+        "opening": {
+         "selections": 1,
+         "graded": 1,
+         "wins": 0,
+         "losses": 1,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 500,
+         "graded_net_cents": -500
+        },
+        "thursday": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "net_delta_cents": null,
+        "grade_transitions": {},
+        "line_effect_cents": null,
+        "price_effect_cents": null
+       }
+      }
+     },
+     "ML": {
+      "opening": {
+       "selections": 40,
+       "graded": 40,
+       "wins": 22,
+       "losses": 18,
+       "pushes": 0,
+       "pending": 0,
+       "graded_stake_cents": 20000,
+       "graded_net_cents": -2374
+      },
+      "pairs": {
+       "SAME_LINE": {
+        "opening": {
+         "selections": 39,
+         "graded": 39,
+         "wins": 21,
+         "losses": 18,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 19500,
+         "graded_net_cents": -2524
+        },
+        "thursday": {
+         "selections": 39,
+         "graded": 39,
+         "wins": 21,
+         "losses": 18,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 19500,
+         "graded_net_cents": -2369
+        },
+        "net_delta_cents": 155,
+        "grade_transitions": {
+         "LOSS_TO_LOSS": 18,
+         "WIN_TO_WIN": 21
+        },
+        "line_effect_cents": 0,
+        "price_effect_cents": 155
+       },
+       "CHANGED_LINE": {
+        "opening": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "thursday": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "net_delta_cents": null,
+        "grade_transitions": {},
+        "line_effect_cents": null,
+        "price_effect_cents": null
+       },
+       "UNAVAILABLE": {
+        "opening": {
+         "selections": 1,
+         "graded": 1,
+         "wins": 1,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 500,
+         "graded_net_cents": 150
+        },
+        "thursday": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "net_delta_cents": null,
+        "grade_transitions": {},
+        "line_effect_cents": null,
+        "price_effect_cents": null
+       }
+      }
+     },
+     "TOTAL": {
+      "opening": {
+       "selections": 40,
+       "graded": 40,
+       "wins": 19,
+       "losses": 21,
+       "pushes": 0,
+       "pending": 0,
+       "graded_stake_cents": 20000,
+       "graded_net_cents": -1812
+      },
+      "pairs": {
+       "SAME_LINE": {
+        "opening": {
+         "selections": 27,
+         "graded": 27,
+         "wins": 13,
+         "losses": 14,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 13500,
+         "graded_net_cents": -1041
+        },
+        "thursday": {
+         "selections": 27,
+         "graded": 27,
+         "wins": 13,
+         "losses": 14,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 13500,
+         "graded_net_cents": -1061
+        },
+        "net_delta_cents": -20,
+        "grade_transitions": {
+         "LOSS_TO_LOSS": 14,
+         "WIN_TO_WIN": 13
+        },
+        "line_effect_cents": 0,
+        "price_effect_cents": -20
+       },
+       "CHANGED_LINE": {
+        "opening": {
+         "selections": 12,
+         "graded": 12,
+         "wins": 6,
+         "losses": 6,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 6000,
+         "graded_net_cents": -271
+        },
+        "thursday": {
+         "selections": 12,
+         "graded": 12,
+         "wins": 5,
+         "losses": 7,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 6000,
+         "graded_net_cents": -1208
+        },
+        "net_delta_cents": -937,
+        "grade_transitions": {
+         "LOSS_TO_LOSS": 6,
+         "WIN_TO_LOSS": 1,
+         "WIN_TO_WIN": 5
+        },
+        "line_effect_cents": -917,
+        "price_effect_cents": -20
+       },
+       "UNAVAILABLE": {
+        "opening": {
+         "selections": 1,
+         "graded": 1,
+         "wins": 0,
+         "losses": 1,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 500,
+         "graded_net_cents": -500
+        },
+        "thursday": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "net_delta_cents": null,
+        "grade_transitions": {},
+        "line_effect_cents": null,
+        "price_effect_cents": null
+       }
+      }
+     }
+    },
+    "rows": [
+     {
+      "id": "401856859",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -2.5,
+       "price": -125,
+       "grade": "WIN",
+       "net_cents": 400
+      },
+      "thursday": {
+       "line": -2.5,
+       "price": -125,
+       "grade": "WIN",
+       "net_cents": 400
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603664"
+     },
+     {
+      "id": "401856859",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -146,
+       "grade": "WIN",
+       "net_cents": 342
+      },
+      "thursday": {
+       "line": null,
+       "price": -142,
+       "grade": "WIN",
+       "net_cents": 352
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 10
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603664"
+     },
+     {
+      "id": "401856859",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 60.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 59.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603664"
+     },
+     {
+      "id": "401858296",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -13,
+       "price": -111,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -13.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603674"
+     },
+     {
+      "id": "401858296",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -521,
+       "grade": "WIN",
+       "net_cents": 96
+      },
+      "thursday": {
+       "line": null,
+       "price": -549,
+       "grade": "WIN",
+       "net_cents": 91
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -5
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603674"
+     },
+     {
+      "id": "401858296",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 54.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 54.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603674"
+     },
+     {
+      "id": "401856886",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 2.5,
+       "price": 100,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 2.5,
+       "price": 100,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604342"
+     },
+     {
+      "id": "401856886",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 120,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 120,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604342"
+     },
+     {
+      "id": "401856886",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 49.5,
+       "price": -120,
+       "grade": "WIN",
+       "net_cents": 417
+      },
+      "thursday": {
+       "line": 50.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_LOSS",
+       "line_effect_cents": -917,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604342"
+     },
+     {
+      "id": "401858300",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 3,
+       "price": -118,
+       "grade": "PUSH",
+       "net_cents": 0
+      },
+      "thursday": {
+       "line": 3,
+       "price": -115,
+       "grade": "PUSH",
+       "net_cents": 0
+      },
+      "paired_effects": {
+       "transition": "PUSH_TO_PUSH",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640450"
+     },
+     {
+      "id": "401858300",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 120,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 125,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640450"
+     },
+     {
+      "id": "401858300",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 54.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 53.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640450"
+     },
+     {
+      "id": "401858520",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 8.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 9,
+       "price": -111,
+       "grade": "WIN",
+       "net_cents": 450
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -5
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604151"
+     },
+     {
+      "id": "401858520",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 260,
+       "grade": "WIN",
+       "net_cents": 1300
+      },
+      "thursday": {
+       "line": null,
+       "price": 275,
+       "grade": "WIN",
+       "net_cents": 1375
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 75
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604151"
+     },
+     {
+      "id": "401858520",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 43.5,
+       "price": -105,
+       "grade": "WIN",
+       "net_cents": 476
+      },
+      "thursday": {
+       "line": 42.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -13
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604151"
+     },
+     {
+      "id": "401861967",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -4,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -3.5,
+       "price": -120,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603941"
+     },
+     {
+      "id": "401861967",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -182,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -182,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603941"
+     },
+     {
+      "id": "401861967",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 57.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 57.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603941"
+     },
+     {
+      "id": "401862825",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 12,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": 12,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604298"
+     },
+     {
+      "id": "401862825",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 360,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 375,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604298"
+     },
+     {
+      "id": "401862825",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 44.5,
+       "price": -118,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 45.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604298"
+     },
+     {
+      "id": "401870769",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 7.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 7.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603886"
+     },
+     {
+      "id": "401870769",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 240,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 240,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603886"
+     },
+     {
+      "id": "401870769",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 46.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 46.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603886"
+     },
+     {
+      "id": "401856862",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 10.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 10.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604233"
+     },
+     {
+      "id": "401856862",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 320,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 320,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604233"
+     },
+     {
+      "id": "401856862",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 45.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 44.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604233"
+     },
+     {
+      "id": "401862828",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -1.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -2.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603731"
+     },
+     {
+      "id": "401862828",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -118,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -132,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603731"
+     },
+     {
+      "id": "401862828",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 48.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 48.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603731"
+     },
+     {
+      "id": "401871060",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -5,
+       "price": -111,
+       "grade": "WIN",
+       "net_cents": 450
+      },
+      "thursday": {
+       "line": -4.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 5
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603853"
+     },
+     {
+      "id": "401871060",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -210,
+       "grade": "WIN",
+       "net_cents": 238
+      },
+      "thursday": {
+       "line": null,
+       "price": -204,
+       "grade": "WIN",
+       "net_cents": 245
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 7
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603853"
+     },
+     {
+      "id": "401871060",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 54.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 54.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603853"
+     },
+     {
+      "id": "401870796",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 1.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 1.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604186"
+     },
+     {
+      "id": "401870796",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 100,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604186"
+     },
+     {
+      "id": "401870796",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 48.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 48.5,
+       "price": -114,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604186"
+     },
+     {
+      "id": "401858294",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 29.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 29.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604144"
+     },
+     {
+      "id": "401858294",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -5000,
+       "grade": "WIN",
+       "net_cents": 10
+      },
+      "thursday": {
+       "line": null,
+       "price": -5000,
+       "grade": "WIN",
+       "net_cents": 10
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604144"
+     },
+     {
+      "id": "401858294",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 52.5,
+       "price": -112,
+       "grade": "WIN",
+       "net_cents": 446
+      },
+      "thursday": {
+       "line": 52.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 17
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604144"
+     },
+     {
+      "id": "401862826",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -5.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": -5.5,
+       "price": -112,
+       "grade": "WIN",
+       "net_cents": 446
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -17
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603621"
+     },
+     {
+      "id": "401862826",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -205,
+       "grade": "WIN",
+       "net_cents": 244
+      },
+      "thursday": {
+       "line": null,
+       "price": -217,
+       "grade": "WIN",
+       "net_cents": 230
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -14
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603621"
+     },
+     {
+      "id": "401862826",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 74.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 74.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 8
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603621"
+     },
+     {
+      "id": "401858523",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 11.5,
+       "price": -112,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 10.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604307"
+     },
+     {
+      "id": "401858523",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -435,
+       "grade": "WIN",
+       "net_cents": 115
+      },
+      "thursday": {
+       "line": null,
+       "price": -426,
+       "grade": "WIN",
+       "net_cents": 117
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 2
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604307"
+     },
+     {
+      "id": "401858523",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 38.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 38.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604307"
+     },
+     {
+      "id": "401864536",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -7,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": -6.5,
+       "price": -115,
+       "grade": "WIN",
+       "net_cents": 435
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -20
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604330"
+     },
+     {
+      "id": "401864536",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -270,
+       "grade": "WIN",
+       "net_cents": 185
+      },
+      "thursday": {
+       "line": null,
+       "price": -245,
+       "grade": "WIN",
+       "net_cents": 204
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 19
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604330"
+     },
+     {
+      "id": "401864536",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 47.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 47.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604330"
+     },
+     {
+      "id": "401856857",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -3.5,
+       "price": -102,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -3,
+       "price": -112,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603633"
+     },
+     {
+      "id": "401856857",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -164,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -154,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603633"
+     },
+     {
+      "id": "401856857",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 48.5,
+       "price": -115,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 48.5,
+       "price": -111,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603633"
+     },
+     {
+      "id": "401869952",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 5.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 6.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603787"
+     },
+     {
+      "id": "401869952",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 170,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 195,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603787"
+     },
+     {
+      "id": "401869952",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 56.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 56.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603787"
+     },
+     {
+      "id": "401860916",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 10,
+       "price": -115,
+       "grade": "WIN",
+       "net_cents": 435
+      },
+      "thursday": {
+       "line": 9.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 28
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604225"
+     },
+     {
+      "id": "401860916",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 295,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 295,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604225"
+     },
+     {
+      "id": "401860916",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 60.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 59.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604225"
+     },
+     {
+      "id": "401856887",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 1.5,
+       "price": -118,
+       "grade": "WIN",
+       "net_cents": 424
+      },
+      "thursday": {
+       "line": 1.5,
+       "price": -120,
+       "grade": "WIN",
+       "net_cents": 417
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -7
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604193"
+     },
+     {
+      "id": "401856887",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -105,
+       "grade": "WIN",
+       "net_cents": 476
+      },
+      "thursday": {
+       "line": null,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -13
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604193"
+     },
+     {
+      "id": "401856887",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 49.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 49.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604193"
+     },
+     {
+      "id": "401858521",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -3,
+       "price": -120,
+       "grade": "WIN",
+       "net_cents": 417
+      },
+      "thursday": {
+       "line": -3.5,
+       "price": -102,
+       "grade": "WIN",
+       "net_cents": 490
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 73
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640651"
+     },
+     {
+      "id": "401858521",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -166,
+       "grade": "WIN",
+       "net_cents": 301
+      },
+      "thursday": {
+       "line": null,
+       "price": -156,
+       "grade": "WIN",
+       "net_cents": 321
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 20
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640651"
+     },
+     {
+      "id": "401858521",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 43.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 42.5,
+       "price": -105,
+       "grade": "WIN",
+       "net_cents": 476
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 21
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640651"
+     },
+     {
+      "id": "401871099",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 17.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 17.5,
+       "price": -112,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603919"
+     },
+     {
+      "id": "401871099",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -909,
+       "grade": "WIN",
+       "net_cents": 55
+      },
+      "thursday": {
+       "line": null,
+       "price": -877,
+       "grade": "WIN",
+       "net_cents": 57
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 2
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603919"
+     },
+     {
+      "id": "401871099",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 56.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 56.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603919"
+     },
+     {
+      "id": "401856861",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -3,
+       "price": -102,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -3,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604063"
+     },
+     {
+      "id": "401856861",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -142,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -142,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604063"
+     },
+     {
+      "id": "401856861",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 67.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": 67.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604063"
+     },
+     {
+      "id": "401869928",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -1.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": -1,
+       "price": -111,
+       "grade": "WIN",
+       "net_cents": 450
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -5
+      },
+      "qualified_final_source": "https://appstatesports.com/news/2026/11/14/football-postgame-notes-from-app-states-win-at-marshall.aspx"
+     },
+     {
+      "id": "401869928",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -120,
+       "grade": "WIN",
+       "net_cents": 417
+      },
+      "thursday": {
+       "line": null,
+       "price": -111,
+       "grade": "WIN",
+       "net_cents": 450
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 33
+      },
+      "qualified_final_source": "https://appstatesports.com/news/2026/11/14/football-postgame-notes-from-app-states-win-at-marshall.aspx"
+     },
+     {
+      "id": "401869928",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 53.5,
+       "price": -105,
+       "grade": "WIN",
+       "net_cents": 476
+      },
+      "thursday": {
+       "line": 54.5,
+       "price": -115,
+       "grade": "WIN",
+       "net_cents": 435
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -41
+      },
+      "qualified_final_source": "https://appstatesports.com/news/2026/11/14/football-postgame-notes-from-app-states-win-at-marshall.aspx"
+     },
+     {
+      "id": "401856884",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 3.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 3.5,
+       "price": -115,
+       "grade": "WIN",
+       "net_cents": 435
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -20
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603652"
+     },
+     {
+      "id": "401856884",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 145,
+       "grade": "WIN",
+       "net_cents": 725
+      },
+      "thursday": {
+       "line": null,
+       "price": 145,
+       "grade": "WIN",
+       "net_cents": 725
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603652"
+     },
+     {
+      "id": "401856884",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 52.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 52.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603652"
+     },
+     {
+      "id": "401858298",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 3.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 3.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640404"
+     },
+     {
+      "id": "401858298",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 142,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 150,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640404"
+     },
+     {
+      "id": "401858298",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 59.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": 59.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -8
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640404"
+     },
+     {
+      "id": "401871100",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 3.5,
+       "price": -122,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 3,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604348"
+     },
+     {
+      "id": "401871100",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -152,
+       "grade": "WIN",
+       "net_cents": 329
+      },
+      "thursday": {
+       "line": null,
+       "price": -146,
+       "grade": "WIN",
+       "net_cents": 342
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 13
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604348"
+     },
+     {
+      "id": "401871100",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 56.5,
+       "price": -111,
+       "grade": "WIN",
+       "net_cents": 450
+      },
+      "thursday": {
+       "line": 55.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 13
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604348"
+     },
+     {
+      "id": "401864538",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -11.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": -12,
+       "price": -111,
+       "grade": "WIN",
+       "net_cents": 450
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -5
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603960"
+     },
+     {
+      "id": "401864538",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -469,
+       "grade": "WIN",
+       "net_cents": 107
+      },
+      "thursday": {
+       "line": null,
+       "price": -469,
+       "grade": "WIN",
+       "net_cents": 107
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603960"
+     },
+     {
+      "id": "401864538",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 47.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 47.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603960"
+     },
+     {
+      "id": "401858524",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -9.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": -9.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -8
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603690"
+     },
+     {
+      "id": "401858524",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -340,
+       "grade": "WIN",
+       "net_cents": 147
+      },
+      "thursday": {
+       "line": null,
+       "price": -355,
+       "grade": "WIN",
+       "net_cents": 141
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -6
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603690"
+     },
+     {
+      "id": "401858524",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 41.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 41.5,
+       "price": -112,
+       "grade": "WIN",
+       "net_cents": 446
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -9
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603690"
+     },
+     {
+      "id": "401856864",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -2.5,
+       "price": -115,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -2.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604103"
+     },
+     {
+      "id": "401856864",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -141,
+       "grade": "WIN",
+       "net_cents": 355
+      },
+      "thursday": {
+       "line": null,
+       "price": -133,
+       "grade": "WIN",
+       "net_cents": 376
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 21
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604103"
+     },
+     {
+      "id": "401856864",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 54.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 54.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604103"
+     },
+     {
+      "id": "401856885",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 4,
+       "price": -105,
+       "grade": "WIN",
+       "net_cents": 476
+      },
+      "thursday": {
+       "line": 4,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -13
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603821"
+     },
+     {
+      "id": "401856885",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -180,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -182,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603821"
+     },
+     {
+      "id": "401856885",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 45.5,
+       "price": -111,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 46.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603821"
+     },
+     {
+      "id": "401858519",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -17,
+       "price": -114,
+       "grade": "WIN",
+       "net_cents": 439
+      },
+      "thursday": {
+       "line": -17,
+       "price": -114,
+       "grade": "WIN",
+       "net_cents": 439
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603610"
+     },
+     {
+      "id": "401858519",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -909,
+       "grade": "WIN",
+       "net_cents": 55
+      },
+      "thursday": {
+       "line": null,
+       "price": -909,
+       "grade": "WIN",
+       "net_cents": 55
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603610"
+     },
+     {
+      "id": "401858519",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 47.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 47.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603610"
+     },
+     {
+      "id": "401858299",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -15,
+       "price": -111,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -15.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603808"
+     },
+     {
+      "id": "401858299",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -714,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -709,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603808"
+     },
+     {
+      "id": "401858299",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 58.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 58.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603808"
+     },
+     {
+      "id": "401864539",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -14,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -14.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640498"
+     },
+     {
+      "id": "401864539",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -588,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -599,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640498"
+     },
+     {
+      "id": "401864539",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 46.5,
+       "price": -105,
+       "grade": "WIN",
+       "net_cents": 476
+      },
+      "thursday": {
+       "line": 46.5,
+       "price": -105,
+       "grade": "WIN",
+       "net_cents": 476
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640498"
+     },
+     {
+      "id": "401856882",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -7.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -7,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603775"
+     },
+     {
+      "id": "401856882",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -294,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -265,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603775"
+     },
+     {
+      "id": "401856882",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 51.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": 51.5,
+       "price": -115,
+       "grade": "WIN",
+       "net_cents": 435
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -28
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603775"
+     },
+     {
+      "id": "401856863",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -3.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -3.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603841"
+     },
+     {
+      "id": "401856863",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -167,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -156,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603841"
+     },
+     {
+      "id": "401856863",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 72.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 73.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603841"
+     },
+     {
+      "id": "401860915",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 2.5,
+       "price": 100,
+       "grade": "WIN",
+       "net_cents": 500
+      },
+      "thursday": {
+       "line": 3,
+       "price": -114,
+       "grade": "WIN",
+       "net_cents": 439
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -61
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640772"
+     },
+     {
+      "id": "401860915",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 122,
+       "grade": "WIN",
+       "net_cents": 610
+      },
+      "thursday": {
+       "line": null,
+       "price": 122,
+       "grade": "WIN",
+       "net_cents": 610
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640772"
+     },
+     {
+      "id": "401860915",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 42.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": 42.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640772"
+     },
+     {
+      "id": "401864540",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 7.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 8.5,
+       "price": -115,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603911"
+     },
+     {
+      "id": "401864540",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -305,
+       "grade": "WIN",
+       "net_cents": 164
+      },
+      "thursday": {
+       "line": null,
+       "price": -323,
+       "grade": "WIN",
+       "net_cents": 155
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -9
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603911"
+     },
+     {
+      "id": "401864540",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 39.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 39.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603911"
+     },
+     {
+      "id": "401860917",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "UNAVAILABLE",
+      "opening": {
+       "line": 9.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": null,
+      "paired_effects": null,
+      "qualified_final_source": "https://www.ncaa.com/game/6604204"
+     },
+     {
+      "id": "401860917",
+      "market": "ML",
+      "side": "home",
+      "comparison": "UNAVAILABLE",
+      "opening": {
+       "line": null,
+       "price": -334,
+       "grade": "WIN",
+       "net_cents": 150
+      },
+      "thursday": null,
+      "paired_effects": null,
+      "qualified_final_source": "https://www.ncaa.com/game/6604204"
+     },
+     {
+      "id": "401860917",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "UNAVAILABLE",
+      "opening": {
+       "line": 67.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": null,
+      "paired_effects": null,
+      "qualified_final_source": "https://www.ncaa.com/game/6604204"
+     },
+     {
+      "id": "401864537",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -6.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": -6.5,
+       "price": -111,
+       "grade": "WIN",
+       "net_cents": 450
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -13
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604132"
+     },
+     {
+      "id": "401864537",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -244,
+       "grade": "WIN",
+       "net_cents": 205
+      },
+      "thursday": {
+       "line": null,
+       "price": -244,
+       "grade": "WIN",
+       "net_cents": 205
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604132"
+     },
+     {
+      "id": "401864537",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 38.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 38.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604132"
+     }
+    ],
+    "effect_method": "Research arithmetic. Apply the Thursday line at the opening price first, then apply the Thursday price. The intermediate line and price combination is hypothetical."
+   }
+  },
+  "sensitivity": {
+   "capture_utc": "2026-11-12T19:59:54.673957Z",
+   "report": {
+    "games": 40,
+    "by_market": {
+     "ALL": {
+      "opening": {
+       "selections": 120,
+       "graded": 120,
+       "wins": 60,
+       "losses": 59,
+       "pushes": 1,
+       "pending": 0,
+       "graded_stake_cents": 60000,
+       "graded_net_cents": -5608
+      },
+      "pairs": {
+       "SAME_LINE": {
+        "opening": {
+         "selections": 88,
+         "graded": 88,
+         "wins": 46,
+         "losses": 41,
+         "pushes": 1,
+         "pending": 0,
+         "graded_stake_cents": 44000,
+         "graded_net_cents": -2959
+        },
+        "thursday": {
+         "selections": 88,
+         "graded": 88,
+         "wins": 46,
+         "losses": 41,
+         "pushes": 1,
+         "pending": 0,
+         "graded_stake_cents": 44000,
+         "graded_net_cents": -2907
+        },
+        "net_delta_cents": 52,
+        "grade_transitions": {
+         "LOSS_TO_LOSS": 41,
+         "PUSH_TO_PUSH": 1,
+         "WIN_TO_WIN": 46
+        },
+        "line_effect_cents": 0,
+        "price_effect_cents": 52
+       },
+       "CHANGED_LINE": {
+        "opening": {
+         "selections": 32,
+         "graded": 32,
+         "wins": 14,
+         "losses": 18,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 16000,
+         "graded_net_cents": -2649
+        },
+        "thursday": {
+         "selections": 32,
+         "graded": 32,
+         "wins": 13,
+         "losses": 19,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 16000,
+         "graded_net_cents": -3576
+        },
+        "net_delta_cents": -927,
+        "grade_transitions": {
+         "LOSS_TO_LOSS": 18,
+         "WIN_TO_LOSS": 1,
+         "WIN_TO_WIN": 13
+        },
+        "line_effect_cents": -917,
+        "price_effect_cents": -10
+       },
+       "UNAVAILABLE": {
+        "opening": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "thursday": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "net_delta_cents": null,
+        "grade_transitions": {},
+        "line_effect_cents": null,
+        "price_effect_cents": null
+       }
+      }
+     },
+     "SPREAD": {
+      "opening": {
+       "selections": 40,
+       "graded": 40,
+       "wins": 19,
+       "losses": 20,
+       "pushes": 1,
+       "pending": 0,
+       "graded_stake_cents": 20000,
+       "graded_net_cents": -1422
+      },
+      "pairs": {
+       "SAME_LINE": {
+        "opening": {
+         "selections": 21,
+         "graded": 21,
+         "wins": 11,
+         "losses": 9,
+         "pushes": 1,
+         "pending": 0,
+         "graded_stake_cents": 10500,
+         "graded_net_cents": 456
+        },
+        "thursday": {
+         "selections": 21,
+         "graded": 21,
+         "wins": 11,
+         "losses": 9,
+         "pushes": 1,
+         "pending": 0,
+         "graded_stake_cents": 10500,
+         "graded_net_cents": 378
+        },
+        "net_delta_cents": -78,
+        "grade_transitions": {
+         "LOSS_TO_LOSS": 9,
+         "PUSH_TO_PUSH": 1,
+         "WIN_TO_WIN": 11
+        },
+        "line_effect_cents": 0,
+        "price_effect_cents": -78
+       },
+       "CHANGED_LINE": {
+        "opening": {
+         "selections": 19,
+         "graded": 19,
+         "wins": 8,
+         "losses": 11,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 9500,
+         "graded_net_cents": -1878
+        },
+        "thursday": {
+         "selections": 19,
+         "graded": 19,
+         "wins": 8,
+         "losses": 11,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 9500,
+         "graded_net_cents": -1868
+        },
+        "net_delta_cents": 10,
+        "grade_transitions": {
+         "LOSS_TO_LOSS": 11,
+         "WIN_TO_WIN": 8
+        },
+        "line_effect_cents": 0,
+        "price_effect_cents": 10
+       },
+       "UNAVAILABLE": {
+        "opening": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "thursday": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "net_delta_cents": null,
+        "grade_transitions": {},
+        "line_effect_cents": null,
+        "price_effect_cents": null
+       }
+      }
+     },
+     "ML": {
+      "opening": {
+       "selections": 40,
+       "graded": 40,
+       "wins": 22,
+       "losses": 18,
+       "pushes": 0,
+       "pending": 0,
+       "graded_stake_cents": 20000,
+       "graded_net_cents": -2374
+      },
+      "pairs": {
+       "SAME_LINE": {
+        "opening": {
+         "selections": 40,
+         "graded": 40,
+         "wins": 22,
+         "losses": 18,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 20000,
+         "graded_net_cents": -2374
+        },
+        "thursday": {
+         "selections": 40,
+         "graded": 40,
+         "wins": 22,
+         "losses": 18,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 20000,
+         "graded_net_cents": -2224
+        },
+        "net_delta_cents": 150,
+        "grade_transitions": {
+         "LOSS_TO_LOSS": 18,
+         "WIN_TO_WIN": 22
+        },
+        "line_effect_cents": 0,
+        "price_effect_cents": 150
+       },
+       "CHANGED_LINE": {
+        "opening": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "thursday": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "net_delta_cents": null,
+        "grade_transitions": {},
+        "line_effect_cents": null,
+        "price_effect_cents": null
+       },
+       "UNAVAILABLE": {
+        "opening": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "thursday": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "net_delta_cents": null,
+        "grade_transitions": {},
+        "line_effect_cents": null,
+        "price_effect_cents": null
+       }
+      }
+     },
+     "TOTAL": {
+      "opening": {
+       "selections": 40,
+       "graded": 40,
+       "wins": 19,
+       "losses": 21,
+       "pushes": 0,
+       "pending": 0,
+       "graded_stake_cents": 20000,
+       "graded_net_cents": -1812
+      },
+      "pairs": {
+       "SAME_LINE": {
+        "opening": {
+         "selections": 27,
+         "graded": 27,
+         "wins": 13,
+         "losses": 14,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 13500,
+         "graded_net_cents": -1041
+        },
+        "thursday": {
+         "selections": 27,
+         "graded": 27,
+         "wins": 13,
+         "losses": 14,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 13500,
+         "graded_net_cents": -1061
+        },
+        "net_delta_cents": -20,
+        "grade_transitions": {
+         "LOSS_TO_LOSS": 14,
+         "WIN_TO_WIN": 13
+        },
+        "line_effect_cents": 0,
+        "price_effect_cents": -20
+       },
+       "CHANGED_LINE": {
+        "opening": {
+         "selections": 13,
+         "graded": 13,
+         "wins": 6,
+         "losses": 7,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 6500,
+         "graded_net_cents": -771
+        },
+        "thursday": {
+         "selections": 13,
+         "graded": 13,
+         "wins": 5,
+         "losses": 8,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 6500,
+         "graded_net_cents": -1708
+        },
+        "net_delta_cents": -937,
+        "grade_transitions": {
+         "LOSS_TO_LOSS": 7,
+         "WIN_TO_LOSS": 1,
+         "WIN_TO_WIN": 5
+        },
+        "line_effect_cents": -917,
+        "price_effect_cents": -20
+       },
+       "UNAVAILABLE": {
+        "opening": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "thursday": {
+         "selections": 0,
+         "graded": 0,
+         "wins": 0,
+         "losses": 0,
+         "pushes": 0,
+         "pending": 0,
+         "graded_stake_cents": 0,
+         "graded_net_cents": null
+        },
+        "net_delta_cents": null,
+        "grade_transitions": {},
+        "line_effect_cents": null,
+        "price_effect_cents": null
+       }
+      }
+     }
+    },
+    "rows": [
+     {
+      "id": "401856859",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -2.5,
+       "price": -125,
+       "grade": "WIN",
+       "net_cents": 400
+      },
+      "thursday": {
+       "line": -2.5,
+       "price": -125,
+       "grade": "WIN",
+       "net_cents": 400
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603664"
+     },
+     {
+      "id": "401856859",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -146,
+       "grade": "WIN",
+       "net_cents": 342
+      },
+      "thursday": {
+       "line": null,
+       "price": -142,
+       "grade": "WIN",
+       "net_cents": 352
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 10
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603664"
+     },
+     {
+      "id": "401856859",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 60.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 59.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603664"
+     },
+     {
+      "id": "401858296",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -13,
+       "price": -111,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -13.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603674"
+     },
+     {
+      "id": "401858296",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -521,
+       "grade": "WIN",
+       "net_cents": 96
+      },
+      "thursday": {
+       "line": null,
+       "price": -549,
+       "grade": "WIN",
+       "net_cents": 91
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -5
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603674"
+     },
+     {
+      "id": "401858296",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 54.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 54.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603674"
+     },
+     {
+      "id": "401856886",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 2.5,
+       "price": 100,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 2.5,
+       "price": 100,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604342"
+     },
+     {
+      "id": "401856886",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 120,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 120,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604342"
+     },
+     {
+      "id": "401856886",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 49.5,
+       "price": -120,
+       "grade": "WIN",
+       "net_cents": 417
+      },
+      "thursday": {
+       "line": 50.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_LOSS",
+       "line_effect_cents": -917,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604342"
+     },
+     {
+      "id": "401858300",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 3,
+       "price": -118,
+       "grade": "PUSH",
+       "net_cents": 0
+      },
+      "thursday": {
+       "line": 3,
+       "price": -115,
+       "grade": "PUSH",
+       "net_cents": 0
+      },
+      "paired_effects": {
+       "transition": "PUSH_TO_PUSH",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640450"
+     },
+     {
+      "id": "401858300",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 120,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 125,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640450"
+     },
+     {
+      "id": "401858300",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 54.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 53.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640450"
+     },
+     {
+      "id": "401858520",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 8.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 9,
+       "price": -111,
+       "grade": "WIN",
+       "net_cents": 450
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -5
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604151"
+     },
+     {
+      "id": "401858520",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 260,
+       "grade": "WIN",
+       "net_cents": 1300
+      },
+      "thursday": {
+       "line": null,
+       "price": 275,
+       "grade": "WIN",
+       "net_cents": 1375
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 75
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604151"
+     },
+     {
+      "id": "401858520",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 43.5,
+       "price": -105,
+       "grade": "WIN",
+       "net_cents": 476
+      },
+      "thursday": {
+       "line": 42.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -13
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604151"
+     },
+     {
+      "id": "401861967",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -4,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -3.5,
+       "price": -120,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603941"
+     },
+     {
+      "id": "401861967",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -182,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -182,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603941"
+     },
+     {
+      "id": "401861967",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 57.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 57.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603941"
+     },
+     {
+      "id": "401862825",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 12,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": 12,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604298"
+     },
+     {
+      "id": "401862825",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 360,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 375,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604298"
+     },
+     {
+      "id": "401862825",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 44.5,
+       "price": -118,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 45.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604298"
+     },
+     {
+      "id": "401870769",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 7.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 7.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603886"
+     },
+     {
+      "id": "401870769",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 240,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 240,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603886"
+     },
+     {
+      "id": "401870769",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 46.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 46.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603886"
+     },
+     {
+      "id": "401856862",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 10.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 10.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604233"
+     },
+     {
+      "id": "401856862",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 320,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 320,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604233"
+     },
+     {
+      "id": "401856862",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 45.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 44.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604233"
+     },
+     {
+      "id": "401862828",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -1.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -2.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603731"
+     },
+     {
+      "id": "401862828",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -118,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -132,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603731"
+     },
+     {
+      "id": "401862828",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 48.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 48.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603731"
+     },
+     {
+      "id": "401871060",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -5,
+       "price": -111,
+       "grade": "WIN",
+       "net_cents": 450
+      },
+      "thursday": {
+       "line": -4.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 5
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603853"
+     },
+     {
+      "id": "401871060",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -210,
+       "grade": "WIN",
+       "net_cents": 238
+      },
+      "thursday": {
+       "line": null,
+       "price": -204,
+       "grade": "WIN",
+       "net_cents": 245
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 7
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603853"
+     },
+     {
+      "id": "401871060",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 54.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 54.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603853"
+     },
+     {
+      "id": "401870796",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 1.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 1.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604186"
+     },
+     {
+      "id": "401870796",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 100,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604186"
+     },
+     {
+      "id": "401870796",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 48.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 48.5,
+       "price": -114,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604186"
+     },
+     {
+      "id": "401858294",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 29.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 29.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604144"
+     },
+     {
+      "id": "401858294",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -5000,
+       "grade": "WIN",
+       "net_cents": 10
+      },
+      "thursday": {
+       "line": null,
+       "price": -5000,
+       "grade": "WIN",
+       "net_cents": 10
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604144"
+     },
+     {
+      "id": "401858294",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 52.5,
+       "price": -112,
+       "grade": "WIN",
+       "net_cents": 446
+      },
+      "thursday": {
+       "line": 52.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 17
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604144"
+     },
+     {
+      "id": "401862826",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -5.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": -5.5,
+       "price": -112,
+       "grade": "WIN",
+       "net_cents": 446
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -17
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603621"
+     },
+     {
+      "id": "401862826",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -205,
+       "grade": "WIN",
+       "net_cents": 244
+      },
+      "thursday": {
+       "line": null,
+       "price": -217,
+       "grade": "WIN",
+       "net_cents": 230
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -14
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603621"
+     },
+     {
+      "id": "401862826",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 74.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 74.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 8
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603621"
+     },
+     {
+      "id": "401858523",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 11.5,
+       "price": -112,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 11,
+       "price": -111,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604307"
+     },
+     {
+      "id": "401858523",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -435,
+       "grade": "WIN",
+       "net_cents": 115
+      },
+      "thursday": {
+       "line": null,
+       "price": -426,
+       "grade": "WIN",
+       "net_cents": 117
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 2
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604307"
+     },
+     {
+      "id": "401858523",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 38.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 38.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604307"
+     },
+     {
+      "id": "401864536",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -7,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": -6.5,
+       "price": -115,
+       "grade": "WIN",
+       "net_cents": 435
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -20
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604330"
+     },
+     {
+      "id": "401864536",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -270,
+       "grade": "WIN",
+       "net_cents": 185
+      },
+      "thursday": {
+       "line": null,
+       "price": -245,
+       "grade": "WIN",
+       "net_cents": 204
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 19
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604330"
+     },
+     {
+      "id": "401864536",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 47.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 47.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604330"
+     },
+     {
+      "id": "401856857",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -3.5,
+       "price": -102,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -3,
+       "price": -112,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603633"
+     },
+     {
+      "id": "401856857",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -164,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -154,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603633"
+     },
+     {
+      "id": "401856857",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 48.5,
+       "price": -115,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 48.5,
+       "price": -111,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603633"
+     },
+     {
+      "id": "401869952",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 5.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 6.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603787"
+     },
+     {
+      "id": "401869952",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 170,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 195,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603787"
+     },
+     {
+      "id": "401869952",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 56.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 56.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603787"
+     },
+     {
+      "id": "401860916",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 10,
+       "price": -115,
+       "grade": "WIN",
+       "net_cents": 435
+      },
+      "thursday": {
+       "line": 9.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 28
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604225"
+     },
+     {
+      "id": "401860916",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 295,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 295,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604225"
+     },
+     {
+      "id": "401860916",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 60.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 59.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604225"
+     },
+     {
+      "id": "401856887",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 1.5,
+       "price": -118,
+       "grade": "WIN",
+       "net_cents": 424
+      },
+      "thursday": {
+       "line": 1.5,
+       "price": -120,
+       "grade": "WIN",
+       "net_cents": 417
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -7
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604193"
+     },
+     {
+      "id": "401856887",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -105,
+       "grade": "WIN",
+       "net_cents": 476
+      },
+      "thursday": {
+       "line": null,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -13
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604193"
+     },
+     {
+      "id": "401856887",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 49.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 49.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604193"
+     },
+     {
+      "id": "401858521",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -3,
+       "price": -120,
+       "grade": "WIN",
+       "net_cents": 417
+      },
+      "thursday": {
+       "line": -3.5,
+       "price": -102,
+       "grade": "WIN",
+       "net_cents": 490
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 73
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640651"
+     },
+     {
+      "id": "401858521",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -166,
+       "grade": "WIN",
+       "net_cents": 301
+      },
+      "thursday": {
+       "line": null,
+       "price": -156,
+       "grade": "WIN",
+       "net_cents": 321
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 20
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640651"
+     },
+     {
+      "id": "401858521",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 43.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 42.5,
+       "price": -105,
+       "grade": "WIN",
+       "net_cents": 476
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 21
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640651"
+     },
+     {
+      "id": "401871099",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 17.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 17.5,
+       "price": -112,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603919"
+     },
+     {
+      "id": "401871099",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -909,
+       "grade": "WIN",
+       "net_cents": 55
+      },
+      "thursday": {
+       "line": null,
+       "price": -877,
+       "grade": "WIN",
+       "net_cents": 57
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 2
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603919"
+     },
+     {
+      "id": "401871099",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 56.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 56.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603919"
+     },
+     {
+      "id": "401856861",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -3,
+       "price": -102,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -3,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604063"
+     },
+     {
+      "id": "401856861",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -142,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -142,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604063"
+     },
+     {
+      "id": "401856861",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 67.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": 67.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604063"
+     },
+     {
+      "id": "401869928",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -1.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": -1,
+       "price": -111,
+       "grade": "WIN",
+       "net_cents": 450
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -5
+      },
+      "qualified_final_source": "https://appstatesports.com/news/2026/11/14/football-postgame-notes-from-app-states-win-at-marshall.aspx"
+     },
+     {
+      "id": "401869928",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -120,
+       "grade": "WIN",
+       "net_cents": 417
+      },
+      "thursday": {
+       "line": null,
+       "price": -111,
+       "grade": "WIN",
+       "net_cents": 450
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 33
+      },
+      "qualified_final_source": "https://appstatesports.com/news/2026/11/14/football-postgame-notes-from-app-states-win-at-marshall.aspx"
+     },
+     {
+      "id": "401869928",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 53.5,
+       "price": -105,
+       "grade": "WIN",
+       "net_cents": 476
+      },
+      "thursday": {
+       "line": 54.5,
+       "price": -115,
+       "grade": "WIN",
+       "net_cents": 435
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -41
+      },
+      "qualified_final_source": "https://appstatesports.com/news/2026/11/14/football-postgame-notes-from-app-states-win-at-marshall.aspx"
+     },
+     {
+      "id": "401856884",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 3.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 3.5,
+       "price": -115,
+       "grade": "WIN",
+       "net_cents": 435
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -20
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603652"
+     },
+     {
+      "id": "401856884",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 145,
+       "grade": "WIN",
+       "net_cents": 725
+      },
+      "thursday": {
+       "line": null,
+       "price": 145,
+       "grade": "WIN",
+       "net_cents": 725
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603652"
+     },
+     {
+      "id": "401856884",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 52.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 52.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603652"
+     },
+     {
+      "id": "401858298",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 3.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 3.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640404"
+     },
+     {
+      "id": "401858298",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 142,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": 150,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640404"
+     },
+     {
+      "id": "401858298",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 59.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": 59.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -8
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640404"
+     },
+     {
+      "id": "401871100",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 3.5,
+       "price": -122,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 3,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604348"
+     },
+     {
+      "id": "401871100",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -152,
+       "grade": "WIN",
+       "net_cents": 329
+      },
+      "thursday": {
+       "line": null,
+       "price": -146,
+       "grade": "WIN",
+       "net_cents": 342
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 13
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604348"
+     },
+     {
+      "id": "401871100",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 56.5,
+       "price": -111,
+       "grade": "WIN",
+       "net_cents": 450
+      },
+      "thursday": {
+       "line": 55.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 13
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604348"
+     },
+     {
+      "id": "401864538",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -11.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": -12,
+       "price": -111,
+       "grade": "WIN",
+       "net_cents": 450
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -5
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603960"
+     },
+     {
+      "id": "401864538",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -469,
+       "grade": "WIN",
+       "net_cents": 107
+      },
+      "thursday": {
+       "line": null,
+       "price": -469,
+       "grade": "WIN",
+       "net_cents": 107
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603960"
+     },
+     {
+      "id": "401864538",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 47.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 47.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603960"
+     },
+     {
+      "id": "401858524",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -9.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": -9.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -8
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603690"
+     },
+     {
+      "id": "401858524",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -340,
+       "grade": "WIN",
+       "net_cents": 147
+      },
+      "thursday": {
+       "line": null,
+       "price": -355,
+       "grade": "WIN",
+       "net_cents": 141
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -6
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603690"
+     },
+     {
+      "id": "401858524",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 41.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 41.5,
+       "price": -112,
+       "grade": "WIN",
+       "net_cents": 446
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -9
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603690"
+     },
+     {
+      "id": "401856864",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -2.5,
+       "price": -115,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -2.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604103"
+     },
+     {
+      "id": "401856864",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -141,
+       "grade": "WIN",
+       "net_cents": 355
+      },
+      "thursday": {
+       "line": null,
+       "price": -133,
+       "grade": "WIN",
+       "net_cents": 376
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 21
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604103"
+     },
+     {
+      "id": "401856864",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 54.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 54.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604103"
+     },
+     {
+      "id": "401856885",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 4,
+       "price": -105,
+       "grade": "WIN",
+       "net_cents": 476
+      },
+      "thursday": {
+       "line": 4,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -13
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603821"
+     },
+     {
+      "id": "401856885",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -180,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -182,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603821"
+     },
+     {
+      "id": "401856885",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 45.5,
+       "price": -111,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 46.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603821"
+     },
+     {
+      "id": "401858519",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -17,
+       "price": -114,
+       "grade": "WIN",
+       "net_cents": 439
+      },
+      "thursday": {
+       "line": -17,
+       "price": -114,
+       "grade": "WIN",
+       "net_cents": 439
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603610"
+     },
+     {
+      "id": "401858519",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -909,
+       "grade": "WIN",
+       "net_cents": 55
+      },
+      "thursday": {
+       "line": null,
+       "price": -909,
+       "grade": "WIN",
+       "net_cents": 55
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603610"
+     },
+     {
+      "id": "401858519",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 47.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 47.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603610"
+     },
+     {
+      "id": "401858299",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -15,
+       "price": -111,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -15.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603808"
+     },
+     {
+      "id": "401858299",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -714,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -709,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603808"
+     },
+     {
+      "id": "401858299",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 58.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 58.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603808"
+     },
+     {
+      "id": "401864539",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -14,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -14.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640498"
+     },
+     {
+      "id": "401864539",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -588,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -599,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640498"
+     },
+     {
+      "id": "401864539",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 46.5,
+       "price": -105,
+       "grade": "WIN",
+       "net_cents": 476
+      },
+      "thursday": {
+       "line": 46.5,
+       "price": -105,
+       "grade": "WIN",
+       "net_cents": 476
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640498"
+     },
+     {
+      "id": "401856882",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": -7.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -7,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603775"
+     },
+     {
+      "id": "401856882",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -294,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -265,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603775"
+     },
+     {
+      "id": "401856882",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 51.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": 51.5,
+       "price": -115,
+       "grade": "WIN",
+       "net_cents": 435
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -28
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603775"
+     },
+     {
+      "id": "401856863",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -3.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": -3.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603841"
+     },
+     {
+      "id": "401856863",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -167,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": null,
+       "price": -156,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603841"
+     },
+     {
+      "id": "401856863",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 72.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 73.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603841"
+     },
+     {
+      "id": "401860915",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 2.5,
+       "price": 100,
+       "grade": "WIN",
+       "net_cents": 500
+      },
+      "thursday": {
+       "line": 3,
+       "price": -114,
+       "grade": "WIN",
+       "net_cents": 439
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -61
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640772"
+     },
+     {
+      "id": "401860915",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": 122,
+       "grade": "WIN",
+       "net_cents": 610
+      },
+      "thursday": {
+       "line": null,
+       "price": 122,
+       "grade": "WIN",
+       "net_cents": 610
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640772"
+     },
+     {
+      "id": "401860915",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 42.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": 42.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6640772"
+     },
+     {
+      "id": "401864540",
+      "market": "SPREAD",
+      "side": "home",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 7.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 8.5,
+       "price": -115,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603911"
+     },
+     {
+      "id": "401864540",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -305,
+       "grade": "WIN",
+       "net_cents": 164
+      },
+      "thursday": {
+       "line": null,
+       "price": -323,
+       "grade": "WIN",
+       "net_cents": 155
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -9
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603911"
+     },
+     {
+      "id": "401864540",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 39.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "thursday": {
+       "line": 39.5,
+       "price": -110,
+       "grade": "WIN",
+       "net_cents": 455
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6603911"
+     },
+     {
+      "id": "401860917",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 9.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 9.5,
+       "price": -110,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604204"
+     },
+     {
+      "id": "401860917",
+      "market": "ML",
+      "side": "home",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -334,
+       "grade": "WIN",
+       "net_cents": 150
+      },
+      "thursday": {
+       "line": null,
+       "price": -345,
+       "grade": "WIN",
+       "net_cents": 145
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -5
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604204"
+     },
+     {
+      "id": "401860917",
+      "market": "TOTAL",
+      "side": "under",
+      "comparison": "CHANGED_LINE",
+      "opening": {
+       "line": 67.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 66.5,
+       "price": -108,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604204"
+     },
+     {
+      "id": "401864537",
+      "market": "SPREAD",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": -6.5,
+       "price": -108,
+       "grade": "WIN",
+       "net_cents": 463
+      },
+      "thursday": {
+       "line": -6.5,
+       "price": -111,
+       "grade": "WIN",
+       "net_cents": 450
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": -13
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604132"
+     },
+     {
+      "id": "401864537",
+      "market": "ML",
+      "side": "away",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": null,
+       "price": -244,
+       "grade": "WIN",
+       "net_cents": 205
+      },
+      "thursday": {
+       "line": null,
+       "price": -244,
+       "grade": "WIN",
+       "net_cents": 205
+      },
+      "paired_effects": {
+       "transition": "WIN_TO_WIN",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604132"
+     },
+     {
+      "id": "401864537",
+      "market": "TOTAL",
+      "side": "over",
+      "comparison": "SAME_LINE",
+      "opening": {
+       "line": 38.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "thursday": {
+       "line": 38.5,
+       "price": -105,
+       "grade": "LOSS",
+       "net_cents": -500
+      },
+      "paired_effects": {
+       "transition": "LOSS_TO_LOSS",
+       "line_effect_cents": 0,
+       "price_effect_cents": 0
+      },
+      "qualified_final_source": "https://www.ncaa.com/game/6604132"
+     }
+    ],
+    "effect_method": "Research arithmetic. Apply the Thursday line at the opening price first, then apply the Thursday price. The intermediate line and price combination is hypothetical."
+   }
+  }
+ }
+}
