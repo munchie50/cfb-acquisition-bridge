@@ -669,3 +669,15 @@ Outcome supplement: evidence/operational/CFB_WEEK10_OFFICIAL_OUTCOME_QA_20261108
 Full55modeled FIRST_FROZEN metrics: margin-direction27/55 (49.09%); home-probability classifier30/55 (54.55%); marginMAE 17.23919997835150850618181818; totalMAE 15.19184934836414950909090909; Brier 0.2698566683962613094096467027. Decimal computation and independent float/math.fsum agree within1e-12; all63original structures/165numeric strings exact against accepted R2. Earlier partial metrics remain historical.
 
 Source qualification:15direct officialHTML captures have actual request/response bounds, byte counts andSHA256 in supplement; Hawaii/ULM retrieved official pages through web tool (direct shell404), raw digests unavailable for those2. No claim of durable raw archive for these17; source metadata and fact extraction retained. Provider update unknown. Outcome-only, never prediction inputs/training or pregame recommendation evidence. ASUofficial20-10 now independently corroborated; no wager/money rewrite or sportsbook settlement claim. Natural scheduled Monitor reliability remainsOPEN.
+
+## Week 11 partial official outcome qualification — November 15 manual QA
+
+66 of 67 governed games have qualified finals: 58 of 59 FIRST_FROZEN predictions and all eight original exclusions. Ole Miss at Oklahoma (401856887) was pregame at capture after the official move to Sunday noon CT and is pending. The original Saturday CBS event was postponed. The one pending prediction is excluded from these interim denominators.
+
+[Immutable outcome and grading record](https://github.com/munchie50/cfb-acquisition-bridge/blob/e4f463d8ee9f0f1a4c2ea9914cc7361895654d79/evidence/operational/CFB_WEEK11_OFFICIAL_OUTCOME_QA_20261115_R1.json) binds all 66 directed identities, source evidence and retrieval clocks, original freeze lineage and exact numerical strings, realized margin/total/winner, signed errors and Brier pairings, exclusions, and the 13 established ticket grades. CBS and NCAA or school athletics corroboration were required for each admitted final. Independently rejoined the immutable lineage and recomputed the interim metrics.
+
+| Modeled finals | Winner direction | Margin MAE | Total MAE | Brier |
+|---:|---:|---:|---:|---:|
+| 58 | 34/58 | 16.227099 | 14.262189 | 0.272084 |
+
+Ticket arithmetic: six wins, seven losses, zero pushes, $82.00 staked, $76.65 gross return from the printed terms and -$5.35 net. Parlay counted as one ticket. Sportsbook settlement remains unverified. No pregame decision, frozen prediction, or cash record changes.
