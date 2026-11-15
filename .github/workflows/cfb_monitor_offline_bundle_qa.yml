@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 8
     env:
-      ENGINE_PIN: 55f49e805ee00d316f09d1f85290bb35c2957071
+      ENGINE_PIN: d792d0a95d4af36e6df7b5c352a74cd9deeea92b
     steps:
       - uses: actions/checkout@v4
         with:
@@ -27,6 +27,25 @@ jobs:
           GIT_ALLOW_PROTOCOL=file git clone --branch offline-engine "$RUNNER_TEMP/engine.bundle" "$RUNNER_TEMP/offline"
           test "$(git -C "$RUNNER_TEMP/offline" rev-parse HEAD)" = "$ENGINE_PIN"
           test "$(git -C "$RUNNER_TEMP/offline" rev-parse --is-shallow-repository)" = false
+      - name: Diagnose artifact, pin, checkout, and current profile independently
+        run: |
+          set -euo pipefail
+          archive="$RUNNER_TEMP/probe.zip"
+          python3 -m zipfile -c "$archive" "$RUNNER_TEMP/engine.bundle"
+          digest="$(sha256sum "$archive" | cut -d' ' -f1)"
+          args=(--archive "$archive" --profile-script cfb_week12_publication.py)
+          python3 qa/cfb_monitor_offline_bundle_probe.py "${args[@]}" --archive-digest "$digest" --expected-head "$ENGINE_PIN" --destination "$RUNNER_TEMP/diag-valid" | tee "$RUNNER_TEMP/valid.json"
+          if python3 qa/cfb_monitor_offline_bundle_probe.py "${args[@]}" --archive-digest "$digest" --expected-head dd4b33db02d28df7dcd3328a8fc63036bfc06064 --destination "$RUNNER_TEMP/diag-stale" > "$RUNNER_TEMP/stale.json"; then exit 1; fi
+          if python3 qa/cfb_monitor_offline_bundle_probe.py "${args[@]}" --archive-digest wrong --expected-head "$ENGINE_PIN" --destination "$RUNNER_TEMP/diag-corrupt" > "$RUNNER_TEMP/corrupt.json"; then exit 1; fi
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          d = Path(os.environ["RUNNER_TEMP"])
+          valid, stale, corrupt = [json.loads((d / f"{name}.json").read_text()) for name in ("valid", "stale", "corrupt")]
+          assert valid["status"] == "FILE_ONLY_CHECKOUT_VERIFIED" and valid["immutable_reviews"] > 0
+          assert stale["stage"] == "PIN_VALIDATION" and corrupt["stage"] == "ARCHIVE_INTEGRITY"
+          print(json.dumps({"valid": valid, "stale": stale, "digest_mismatch": corrupt}))
+          PY
       - uses: actions/upload-artifact@v4
         id: upload
         with:
