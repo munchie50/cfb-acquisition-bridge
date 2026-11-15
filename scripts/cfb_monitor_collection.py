@@ -22,6 +22,10 @@ START = week.gate.clock("2026-11-10T00:00:00-06:00")
 END = week.gate.clock("2026-11-16T00:00:00-06:00")
 SCHEMA = "CFB_WEEK11_MONITOR_COLLECTION_V1"
 MAX_BYTES = 8_000_000
+# CBS kept both event IDs after the SEC moved the same Week 11 game.
+# https://soonersports.com/news/2026/11/14/ou-ole-miss-football-game-moved-to-sunday-at-noon
+OLE_MISS_OKLAHOMA_ORIGINAL = ("50028715", "NCAAF_20261114_MISS@OKLA")
+OLE_MISS_OKLAHOMA_RESCHEDULED = ("50051570", "NCAAF_20261115_MISS@OKLA")
 
 
 def git(*args):
@@ -47,8 +51,22 @@ def board_projection(payload):
     def text(node):
         return " ".join(node.text_content().split())
 
+    def event(table):
+        return table.get("data-game-id"), table.get("data-game-abbrev")
+
     output = []
-    for table in html.fromstring(payload).xpath("//table"):
+    tables = html.fromstring(payload).xpath("//table")
+    events = [event(table) for table in tables]
+    # Drop only the corroborated obsolete record when both exact records occur
+    # once. Preserve archived single-record captures and let any other duplicate
+    # reach the normalizer's identity gate. The artifact retains the raw HTML.
+    has_reschedule_pair = (
+        events.count(OLE_MISS_OKLAHOMA_ORIGINAL) == 1
+        and events.count(OLE_MISS_OKLAHOMA_RESCHEDULED) == 1
+    )
+    for table, identity in zip(tables, events):
+        if has_reschedule_pair and identity == OLE_MISS_OKLAHOMA_ORIGINAL:
+            continue
         rows = table.xpath(".//tr")
         header = [text(cell) for cell in rows[0].xpath("./th|./td")]
         if header[1:] != ["Final", "Open", "Spread", "ML Moneyline", "Total"]:
