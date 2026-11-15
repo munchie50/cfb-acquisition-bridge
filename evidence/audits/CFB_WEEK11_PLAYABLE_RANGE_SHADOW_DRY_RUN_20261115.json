@@ -1,0 +1,114 @@
+{
+  "schema": "CFB_WEEK11_PLAYABLE_RANGE_SHADOW_DRY_RUN_V1",
+  "registration_commit": "d026d681ccb4f99d2807e5c421bc503762d1f231",
+  "source": {
+    "path": "evidence/audits/CFB_WEEK11_FULL_SLATE_LOST_OPPORTUNITY_CENSUS_20261115.json",
+    "blob": "6335a7cdc083484dbdaa3bfe2ab051cb38081d22"
+  },
+  "scope": "Retrospective diagnostic on three exact archived limit misses. Measures mechanical quote eligibility only; public display terms, no venue fills or operational clearance established. Neither tested rule is production policy.",
+  "baseline": {
+    "eligible_at_original_terms": 0
+  },
+  "results": {
+    "price_only": {
+      "cases": 2,
+      "wins": 0,
+      "losses": 2,
+      "pushes": 0,
+      "hypothetical_net_cents": -1000
+    },
+    "spread_only": {
+      "cases": 1,
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "hypothetical_net_cents": 463
+    }
+  },
+  "rows": [
+    {
+      "id": "401870752",
+      "game": "Jacksonville State @ Western Kentucky",
+      "rank": null,
+      "side": "away",
+      "line": -7.5,
+      "price": -108,
+      "grade": "LOSS",
+      "net_cents": -500,
+      "saved_number": -7.5,
+      "saved_minimum_price": -105,
+      "final": [
+        24,
+        34
+      ],
+      "selected_margin": -10,
+      "price_points_worse": 3,
+      "spread_points_worse": 0,
+      "break_even_percentage_point_change": 0.703564727954975,
+      "price_only_shadow_eligible": true,
+      "spread_only_shadow_eligible": false,
+      "integer_margins_changing_grade": [],
+      "material_review": "Current no play. DraftKings -7.5 at -108 misses -105; C-USA report pending. Prior terms remain in immutable history.",
+      "original_number_grade": "LOSS",
+      "live_disposition": "No renewal inferred; material and venue checks retained"
+    },
+    {
+      "id": "401856883",
+      "game": "Missouri @ Georgia",
+      "rank": null,
+      "side": "home",
+      "line": -16.5,
+      "price": -108,
+      "grade": "WIN",
+      "net_cents": 463,
+      "saved_number": -15.5,
+      "saved_minimum_price": -110,
+      "final": [
+        21,
+        48
+      ],
+      "selected_margin": 27,
+      "price_points_worse": -2,
+      "spread_points_worse": 1,
+      "break_even_percentage_point_change": -0.45787545787545625,
+      "price_only_shadow_eligible": false,
+      "spread_only_shadow_eligible": true,
+      "integer_margins_changing_grade": [
+        {
+          "margin": 16,
+          "original_grade": "WIN",
+          "new_grade": "LOSS"
+        }
+      ],
+      "material_review": "Current no play. DraftKings -16.5 at -108 misses the original -15.5 limit; Bobo and Horton questionable. Prior terms remain in immutable history.",
+      "original_number_grade": "WIN",
+      "live_disposition": "No renewal inferred; material and venue checks retained"
+    },
+    {
+      "id": "401862827",
+      "game": "North Texas @ UTSA",
+      "rank": null,
+      "side": "away",
+      "line": -2.5,
+      "price": -110,
+      "grade": "LOSS",
+      "net_cents": -500,
+      "saved_number": -2.5,
+      "saved_minimum_price": -105,
+      "final": [
+        16,
+        35
+      ],
+      "selected_margin": -19,
+      "price_points_worse": 5,
+      "spread_points_worse": 0,
+      "break_even_percentage_point_change": 1.1614401858304313,
+      "price_only_shadow_eligible": true,
+      "spread_only_shadow_eligible": false,
+      "integer_margins_changing_grade": [],
+      "material_review": "North Texas stays a price hold: CBS mixed-book display -2.5/-110 misses the original -105 floor. UTSA home quarterback and rushing case and pending American report remain material. UTSA +3 and +110, North Texas -125 and the unmatched 75.5 over/76.5 under earn no independent limit.",
+      "original_number_grade": "LOSS",
+      "live_disposition": "No renewal inferred; material and venue checks retained"
+    }
+  ]
+}
