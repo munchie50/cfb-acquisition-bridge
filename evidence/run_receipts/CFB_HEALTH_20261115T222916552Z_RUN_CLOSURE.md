@@ -1,0 +1,21 @@
+# CFB Health RUN_CLOSURE
+cycle_id: CFB_HEALTH_20261115T222916552Z
+final_status: RUN_INCOMPLETE
+coverage: COVERAGE_UNVERIFIED
+terminal_candidate_path: evidence/run_receipts/CFB_HEALTH_20261115T222916552Z_TERMINAL_CANDIDATE.md
+terminal_candidate_blob: 44a91349d36948e811764632e3e685def4c6a0bf
+terminal_candidate_independent_readback: PASS BEFORE CLOSURE
+audit_path: evidence/scheduler_qa/CFB_HEALTH_20261115T222916552Z_AUDIT.md
+audit_blob: 4e8eaea60facbcfe278f4276f286f9c8156b9064
+audit_independent_readback: PASS
+startup_blob: 6569678b88799ec4d81df6ba68009ec7a35dccb4
+monitor_07CT: CLOSED_INCOMPLETE
+monitor_13CT: CLOSED_INCOMPLETE
+weekly_Sunday: CLOSED_INCOMPLETE
+new_evening_due: NONE; historical Friday CLOSED_INCOMPLETE
+first_own_unverified_check: independent full-byte and Git SHA1 verification of canonical files; full semantic reconciliation
+coverage_advanced: NO
+historical_unresolved: RETAINED IN AUDIT
+no_material_change: YES
+scientific_champion_wager_schedule_effect: NONE
+next_action: next existing Health performs supported independent hash/semantic checks; producer-owned next natural Monitor addresses DNS/verified runtime and fresh sources
