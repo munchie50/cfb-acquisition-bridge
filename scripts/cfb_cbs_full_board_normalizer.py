@@ -15,6 +15,8 @@ WEEK10_LINEAGE_SHA='80c406cc4fe6276c2cf38c2d02e505c3ef60d22b'
 WEEK10_URL=URL.replace('week-7','week-10')
 WEEK11_LINEAGE_SHA='3a337e8bdf5cd732fb76697cf2a87b2d74ba8ce9'
 WEEK11_URL=URL.replace('week-7','week-11')
+WEEK12_URL=URL.replace('week-7','week-12')
+WEEK12_LINEAGE_SHA='8e019d9b502067c0a669e860a70e177b8e5ecda6'
 def blob(s):
     b=s.encode();return hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()
 def at(s):
@@ -50,19 +52,22 @@ def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='Amer
     profiles={'WEEK7':(URL,LINEAGE_SHA,62),'WEEK8':(WEEK8_URL,WEEK8_LINEAGE_SHA,56),
               'WEEK9':(WEEK9_URL,WEEK9_LINEAGE_SHA,56),
               'WEEK10':(WEEK10_URL,WEEK10_LINEAGE_SHA,63),
-              'WEEK11':(WEEK11_URL,WEEK11_LINEAGE_SHA,67)}
+              'WEEK11':(WEEK11_URL,WEEK11_LINEAGE_SHA,67),
+              'WEEK12':(WEEK12_URL,WEEK12_LINEAGE_SHA,70)}
     if profile not in profiles:raise ValueError('unqualified source profile')
     page,digest,count=profiles[profile]
     if source_url!=page or source_timezone!='America/New_York':raise ValueError('unqualified source page/year/timezone')
     if blob(lineage)!=digest:raise ValueError('unqualified original identity baseline')
-    census=json.loads(lineage)['rows'];expected={(r['away_team'],r['home_team']):r['game_id'] for r in census}
+    lineage_data=json.loads(lineage)
+    census=lineage_data['rows'];expected={(r['away_team'],r['home_team']):r['game_id'] for r in census}
     if len(expected)!=count:raise ValueError('identity baseline mismatch')
     retained_elapsed_kickoffs={} if retained_elapsed_kickoffs is None else retained_elapsed_kickoffs
     if not isinstance(retained_elapsed_kickoffs,dict) or set(retained_elapsed_kickoffs)-set(expected.values()):raise ValueError('unqualified retained elapsed identities')
-    if retained_elapsed_kickoffs and profile not in ('WEEK8','WEEK9','WEEK10','WEEK11'):raise ValueError('unqualified retained elapsed context profile')
+    if retained_elapsed_kickoffs and profile not in ('WEEK8','WEEK9','WEEK10','WEEK11','WEEK12'):raise ValueError('unqualified retained elapsed context profile')
     elapsed={gid:at(stamp) for gid,stamp in retained_elapsed_kickoffs.items()}
     if any(kick>=observed for kick in elapsed.values()):raise ValueError('retained elapsed context must precede observation')
-    aliases={**ALIASES,**({'Iowa St.':'Iowa State','Utah St.':'Utah State','Hawaii':'Hawaii'} if profile=='WEEK10' else {}),**({'New Mexico St.':'New Mexico State','Boise St.':'Boise State','Utah St.':'Utah State','Iowa St.':'Iowa State'} if profile in ('WEEK8','WEEK9','WEEK10','WEEK11') else {})}
+    aliases={**ALIASES,**({'Iowa St.':'Iowa State','Utah St.':'Utah State','Hawaii':'Hawaii'} if profile=='WEEK10' else {}),**({'New Mexico St.':'New Mexico State','Boise St.':'Boise State','Utah St.':'Utah State','Iowa St.':'Iowa State'} if profile in ('WEEK8','WEEK9','WEEK10','WEEK11','WEEK12') else {})}
+    if profile=='WEEK12':aliases.update(lineage_data['aliases'])
     result=[];pending=None;rows=[];all_team_rows=0
     def finish():
         nonlocal pending,rows
@@ -116,7 +121,7 @@ def normalize(markdown,lineage,recovered_by,source_url=URL,source_timezone='Amer
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--markdown',required=True,type=Path);p.add_argument('--lineage',required=True,type=Path);p.add_argument('--recovered-by',required=True);p.add_argument('--output',type=Path)
-    p.add_argument('--profile',choices=('WEEK7','WEEK8','WEEK9','WEEK10','WEEK11'),default='WEEK7')
-    a=p.parse_args();r=normalize(a.markdown.read_text(),a.lineage.read_text(),a.recovered_by,source_url={'WEEK7':URL,'WEEK8':WEEK8_URL,'WEEK9':WEEK9_URL,'WEEK10':WEEK10_URL,'WEEK11':WEEK11_URL}[a.profile],profile=a.profile)
+    p.add_argument('--profile',choices=('WEEK7','WEEK8','WEEK9','WEEK10','WEEK11','WEEK12'),default='WEEK7')
+    a=p.parse_args();r=normalize(a.markdown.read_text(),a.lineage.read_text(),a.recovered_by,source_url={'WEEK7':URL,'WEEK8':WEEK8_URL,'WEEK9':WEEK9_URL,'WEEK10':WEEK10_URL,'WEEK11':WEEK11_URL,'WEEK12':WEEK12_URL}[a.profile],profile=a.profile)
     if a.output:a.output.write_text(json.dumps(r,indent=2)+'\n')
     print(json.dumps({k:v for k,v in r.items() if k!='games'},indent=2))
