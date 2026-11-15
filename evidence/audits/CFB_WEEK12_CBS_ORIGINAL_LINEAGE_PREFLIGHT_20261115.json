@@ -1,0 +1,2322 @@
+{
+  "schema": "CFB_WEEK12_CBS_TO_ORIGINAL_PREFLIGHT_V1",
+  "status": "EXACT_ORIGINAL_ARCHIVE_JOIN_VERIFIED_PROFILE_ACTIVATION_PENDING",
+  "scope": "Original lineage and CBS display readiness. No current kickoff qualification, market review, recommendation, accepted refresh or production publication. Presence order is spread, moneyline, total. Source mixed-book display and raw response retained in scratch; durable source digest and projected rows below.",
+  "original_artifact_id": 10897612260,
+  "original_zip_sha256": "772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf",
+  "original_cutoff_utc": "2026-09-26T03:47:37.497112+00:00",
+  "cbs": {
+    "source": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-12/",
+    "bytes": 3011648,
+    "sha256": "8b8c68d2a733b5ae7392bdb5d0b205b11cc0f40102d4c74d70fb2fbe8c8a30f1",
+    "recovered_utc": "2026-11-15T21:21:42.725568+00:00"
+  },
+  "coverage": {
+    "games": 70,
+    "predictions": 56,
+    "exclusions": 14,
+    "display_all_six": 65,
+    "days": {
+      "20261117": 3,
+      "20261118": 2,
+      "20261119": 1,
+      "20261120": 6,
+      "20261121": 58
+    }
+  },
+  "aliases": {
+    "E. Michigan": "Eastern Michigan",
+    "W. Michigan": "Western Michigan",
+    "Miami-OH": "Miami (OH)",
+    "Kent St.": "Kent State",
+    "Ball St.": "Ball State",
+    "UMass": "Massachusetts",
+    "C. Michigan": "Central Michigan",
+    "Iowa St.": "Iowa State",
+    "Michigan St.": "Michigan State",
+    "Miami (Fla.)": "Miami",
+    "Tenn. Tech": "Tennessee Tech",
+    "Miss. State": "Mississippi State",
+    "W. Kentucky": "Western Kentucky",
+    "Missouri St.": "Missouri State",
+    "Jacksonville St.": "Jacksonville State",
+    "Middle Tenn.": "Middle Tennessee",
+    "App. St.": "App State",
+    "FAU": "Florida Atlantic",
+    "FIU": "Florida International",
+    "Kennesaw St.": "Kennesaw State",
+    "New Mexico St.": "New Mexico State",
+    "C. Carolina": "Coastal Carolina",
+    "So. Miss": "Southern Miss",
+    "Ga. Southern": "Georgia Southern",
+    "N. Illinois": "Northern Illinois",
+    "N. Dakota St.": "North Dakota State",
+    "Georgia St.": "Georgia State",
+    "Washington St.": "Washington State",
+    "Texas St.": "Texas State",
+    "Arkansas St.": "Arkansas State",
+    "San Jose St.": "San José State",
+    "Colorado St.": "Colorado State",
+    "Fresno St.": "Fresno State",
+    "San Diego St.": "San Diego State",
+    "Boise St.": "Boise State",
+    "Arizona St.": "Arizona State",
+    "Utah St.": "Utah State"
+  },
+  "rows": [
+    {
+      "cbs_event": "NCAAF_20261117_EMICH@WMICH",
+      "cbs_id": "50028762",
+      "away_home": [
+        "E. Michigan",
+        "W. Michigan"
+      ],
+      "display_kickoff": "Tue Nov 17, 6:00pm Tue 6:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401866465",
+      "away_team": "Eastern Michigan",
+      "home_team": "Western Michigan",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-18 00:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "16.506209923741544",
+        "pred_total": "44.97449475461319",
+        "pred_win": "0.8262359403202044"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261117_MIAOH@KENTST",
+      "cbs_id": "50028760",
+      "away_home": [
+        "Miami-OH",
+        "Kent St."
+      ],
+      "display_kickoff": "Tue Nov 17, 7:00pm Tue 7:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401866466",
+      "away_team": "Miami (OH)",
+      "home_team": "Kent State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-18 00:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-15.907213074887313",
+        "pred_total": "54.26921829137418",
+        "pred_win": "0.15458317639549893"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261117_BALLST@OHIO",
+      "cbs_id": "50028761",
+      "away_home": [
+        "Ball St.",
+        "Ohio"
+      ],
+      "display_kickoff": "Tue Nov 17, 7:00pm Tue 7:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401866464",
+      "away_team": "Ball State",
+      "home_team": "Ohio",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-18 00:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "8.173761032733989",
+        "pred_total": "55.199964748753786",
+        "pred_win": "0.6914333386345607"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261118_AKRON@UMASS",
+      "cbs_id": "50028764",
+      "away_home": [
+        "Akron",
+        "UMass"
+      ],
+      "display_kickoff": "Wed Nov 18, 7:00pm Wed 7:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401866467",
+      "away_team": "Akron",
+      "home_team": "Massachusetts",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-18 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "15.133389300693386",
+        "pred_total": "46.56792980994399",
+        "pred_win": "0.8068967398079216"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261118_CMICH@BUFF",
+      "cbs_id": "50028763",
+      "away_home": [
+        "C. Michigan",
+        "Buffalo"
+      ],
+      "display_kickoff": "Wed Nov 18, 7:30pm Wed 7:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401866469",
+      "away_team": "Central Michigan",
+      "home_team": "Buffalo",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-18 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-2.7698582224395967",
+        "pred_total": "42.58033798209041",
+        "pred_win": "0.41201303940323963"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261119_RICE@TEMPLE",
+      "cbs_id": "50028766",
+      "away_home": [
+        "Rice",
+        "Temple"
+      ],
+      "display_kickoff": "Thu Nov 19, 7:30pm Thu 7:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401862830",
+      "away_team": "Rice",
+      "home_team": "Temple",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-20 00:30:00+00:00",
+      "first_frozen_status": "EXCLUDED",
+      "original_numeric_strings": null,
+      "original_exclusion": "home_prior_pbp_missing"
+    },
+    {
+      "cbs_event": "NCAAF_20261120_IOWAST@UCF",
+      "cbs_id": "50028770",
+      "away_home": [
+        "Iowa St.",
+        "UCF"
+      ],
+      "display_kickoff": "Fri Nov 20, 6:00pm Fri 6:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401856869",
+      "away_team": "Iowa State",
+      "home_team": "UCF",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-20 23:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "5.218226526724237",
+        "pred_total": "48.12020418785435",
+        "pred_win": "0.6385265665171552"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261120_BGREEN@TOLEDO",
+      "cbs_id": "50028765",
+      "away_home": [
+        "Bowling Green",
+        "Toledo"
+      ],
+      "display_kickoff": "Fri Nov 20, 7:30pm Fri 7:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401866468",
+      "away_team": "Bowling Green",
+      "home_team": "Toledo",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 00:30:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "28.03025790520912",
+        "pred_total": "53.91155359055649",
+        "pred_win": "0.9417668264651046"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261120_CLEM@DUKE",
+      "cbs_id": "50028782",
+      "away_home": [
+        "Clemson",
+        "Duke"
+      ],
+      "display_kickoff": "Fri Nov 20, 7:30pm Fri 7:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858303",
+      "away_team": "Clemson",
+      "home_team": "Duke",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 00:30:00+00:00",
+      "first_frozen_status": "EXCLUDED",
+      "original_numeric_strings": null,
+      "original_exclusion": "away_prior_points_missing"
+    },
+    {
+      "cbs_event": "NCAAF_20261120_UTEP@AF",
+      "cbs_id": "50028863",
+      "away_home": [
+        "UTEP",
+        "Air Force"
+      ],
+      "display_kickoff": "Fri Nov 20, 8:00pm Fri 8:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401864545",
+      "away_team": "UTEP",
+      "home_team": "Air Force",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 01:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "20.43868388630875",
+        "pred_total": "46.532805078994116",
+        "pred_win": "0.8924532014526221"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261120_OREG@MICHST",
+      "cbs_id": "50028796",
+      "away_home": [
+        "Oregon",
+        "Michigan St."
+      ],
+      "display_kickoff": "Fri Nov 20, 8:00pm Fri 8:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858529",
+      "away_team": "Oregon",
+      "home_team": "Michigan State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 01:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-5.057690034232242",
+        "pred_total": "49.25975606742563",
+        "pred_win": "0.3571127320723306"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261120_NMEX@WYO",
+      "cbs_id": "50028871",
+      "away_home": [
+        "New Mexico",
+        "Wyoming"
+      ],
+      "display_kickoff": "Fri Nov 20, 9:00pm Fri 9:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401864542",
+      "away_team": "New Mexico",
+      "home_team": "Wyoming",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-22 02:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-9.30064187351353",
+        "pred_total": "38.98474314718637",
+        "pred_win": "0.2838859004837682"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_NTEXAS@TULANE",
+      "cbs_id": "50028857",
+      "away_home": [
+        "North Texas",
+        "Tulane"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401862835",
+      "away_team": "North Texas",
+      "home_team": "Tulane",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "2.5838153744749297",
+        "pred_total": "53.428119026128996",
+        "pred_win": "0.524325603490124"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_WOFF@MISS",
+      "cbs_id": "50028847",
+      "away_home": [
+        "Wofford",
+        "Ole Miss"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "game_id": "401856749",
+      "away_team": "Wofford",
+      "home_team": "Ole Miss",
+      "population_class": "FBS_VS_NONFBS",
+      "first_frozen_start": "2026-11-21 17:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "23.50914362467388",
+        "pred_total": "52.30165536686363",
+        "pred_win": "0.9067499944602779"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_TXAM@OKLA",
+      "cbs_id": "50028846",
+      "away_home": [
+        "Texas A&M",
+        "Oklahoma"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401856752",
+      "away_team": "Texas A&M",
+      "home_team": "Oklahoma",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "8.934908479704605",
+        "pred_total": "40.057857193606075",
+        "pred_win": "0.6745925027902632"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_OHIOST@NEB",
+      "cbs_id": "50028843",
+      "away_home": [
+        "Ohio State",
+        "Nebraska"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858531",
+      "away_team": "Ohio State",
+      "home_team": "Nebraska",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "4.858346416090912",
+        "pred_total": "54.49409165888514",
+        "pred_win": "0.5960159030209125"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_NWEST@MINN",
+      "cbs_id": "50028837",
+      "away_home": [
+        "Northwestern",
+        "Minnesota"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858530",
+      "away_team": "Northwestern",
+      "home_team": "Minnesota",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "EXCLUDED",
+      "original_numeric_strings": null,
+      "original_exclusion": "away_prior_points_missing"
+    },
+    {
+      "cbs_event": "NCAAF_20261121_BYU@KANSAS",
+      "cbs_id": "50028829",
+      "away_home": [
+        "BYU",
+        "Kansas"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401856866",
+      "away_team": "BYU",
+      "home_team": "Kansas",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-6.367840688787156",
+        "pred_total": "52.652173639716395",
+        "pred_win": "0.3308854912128962"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_WISC@PURDUE",
+      "cbs_id": "50028804",
+      "away_home": [
+        "Wisconsin",
+        "Purdue"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858533",
+      "away_team": "Wisconsin",
+      "home_team": "Purdue",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-2.6344552922915634",
+        "pred_total": "58.41737034074974",
+        "pred_win": "0.4256147704194494"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_MEMP@NAVY",
+      "cbs_id": "50028797",
+      "away_home": [
+        "Memphis",
+        "Navy"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401862834",
+      "away_team": "Memphis",
+      "home_team": "Navy",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 17:00:00+00:00",
+      "first_frozen_status": "EXCLUDED",
+      "original_numeric_strings": null,
+      "original_exclusion": "home_prior_points_missing"
+    },
+    {
+      "cbs_event": "NCAAF_20261121_WAKE@GATECH",
+      "cbs_id": "50028787",
+      "away_home": [
+        "Wake Forest",
+        "Georgia Tech"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858310",
+      "away_team": "Wake Forest",
+      "home_team": "Georgia Tech",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "5.451202413796183",
+        "pred_total": "54.918907452867714",
+        "pred_win": "0.6253659778927851"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_VANDY@FLA",
+      "cbs_id": "50028783",
+      "away_home": [
+        "Vanderbilt",
+        "Florida"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401856748",
+      "away_team": "Vanderbilt",
+      "home_team": "Florida",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "15.328254358453833",
+        "pred_total": "56.499603593258165",
+        "pred_win": "0.8215636126769137"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_COLO@CINCY",
+      "cbs_id": "50028778",
+      "away_home": [
+        "Colorado",
+        "Cincinnati"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401856867",
+      "away_team": "Colorado",
+      "home_team": "Cincinnati",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "14.446312684358583",
+        "pred_total": "52.17646667714648",
+        "pred_win": "0.8242022067691598"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_CUSE@BC",
+      "cbs_id": "50028774",
+      "away_home": [
+        "Syracuse",
+        "Boston College"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858309",
+      "away_team": "Syracuse",
+      "home_team": "Boston College",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-0.9445098026535553",
+        "pred_total": "47.790568238394975",
+        "pred_win": "0.4548034942674996"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_ECU@ARMY",
+      "cbs_id": "50028772",
+      "away_home": [
+        "East Carolina",
+        "Army"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401862831",
+      "away_team": "East Carolina",
+      "home_team": "Army",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 17:00:00+00:00",
+      "first_frozen_status": "EXCLUDED",
+      "original_numeric_strings": null,
+      "original_exclusion": "home_prior_pbp_missing"
+    },
+    {
+      "cbs_event": "NCAAF_20261121_VATECH@MIAMI",
+      "cbs_id": "50028769",
+      "away_home": [
+        "Virginia Tech",
+        "Miami (Fla.)"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858302",
+      "away_team": "Virginia Tech",
+      "home_team": "Miami",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "11.993204551507121",
+        "pred_total": "55.410563996024145",
+        "pred_win": "0.7638187718812526"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_PITT@LVILLE",
+      "cbs_id": "50028790",
+      "away_home": [
+        "Pittsburgh",
+        "Louisville"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:00pm Sat 12:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858306",
+      "away_team": "Pittsburgh",
+      "home_team": "Louisville",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "4.661870823424009",
+        "pred_total": "55.13920297475742",
+        "pred_win": "0.632505609617573"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_UNC@UVA",
+      "cbs_id": "50028813",
+      "away_home": [
+        "North Carolina",
+        "Virginia"
+      ],
+      "display_kickoff": "Sat Nov 21, 12:30pm Sat 12:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858305",
+      "away_team": "North Carolina",
+      "home_team": "Virginia",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "7.234676433233561",
+        "pred_total": "46.16559621817622",
+        "pred_win": "0.6683109587371198"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_HOU@WVU",
+      "cbs_id": "50028815",
+      "away_home": [
+        "Houston",
+        "West Virginia"
+      ],
+      "display_kickoff": "Sat Nov 21, 1:00pm Sat 1:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401856868",
+      "away_team": "Houston",
+      "home_team": "West Virginia",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-0.505029909501546",
+        "pred_total": "54.69664180879432",
+        "pred_win": "0.5033573365494463"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_TNTECH@MISSST",
+      "cbs_id": "50028838",
+      "away_home": [
+        "Tenn. Tech",
+        "Miss. State"
+      ],
+      "display_kickoff": "Sat Nov 21, 1:00pm Sat 1:00pm",
+      "display_market_present": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "game_id": "401856750",
+      "away_team": "Tennessee Tech",
+      "home_team": "Mississippi State",
+      "population_class": "FBS_VS_NONFBS",
+      "first_frozen_start": "2026-11-21 18:00:00+00:00",
+      "first_frozen_status": "EXCLUDED",
+      "original_numeric_strings": null,
+      "original_exclusion": "away_opening_no_prior"
+    },
+    {
+      "cbs_event": "NCAAF_20261121_WKY@LIB",
+      "cbs_id": "50029098",
+      "away_home": [
+        "W. Kentucky",
+        "Liberty"
+      ],
+      "display_kickoff": "Sat Nov 21, 1:00pm Sat 1:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401871080",
+      "away_team": "Western Kentucky",
+      "home_team": "Liberty",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 18:00:00+00:00",
+      "first_frozen_status": "EXCLUDED",
+      "original_numeric_strings": null,
+      "original_exclusion": "home_prior_pbp_missing"
+    },
+    {
+      "cbs_event": "NCAAF_20261121_TNCHAT@BAMA",
+      "cbs_id": "50028818",
+      "away_home": [
+        "Chattanooga",
+        "Alabama"
+      ],
+      "display_kickoff": "Sat Nov 21, 2:00pm Sat 2:00pm",
+      "display_market_present": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "game_id": "401856746",
+      "away_team": "Chattanooga",
+      "home_team": "Alabama",
+      "population_class": "FBS_VS_NONFBS",
+      "first_frozen_start": "2026-11-21 19:00:00+00:00",
+      "first_frozen_status": "EXCLUDED",
+      "original_numeric_strings": null,
+      "original_exclusion": "away_opening_no_prior"
+    },
+    {
+      "cbs_event": "NCAAF_20261121_CHARLO@TULSA",
+      "cbs_id": "50028858",
+      "away_home": [
+        "Charlotte",
+        "Tulsa"
+      ],
+      "display_kickoff": "Sat Nov 21, 2:00pm Sat 2:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401862832",
+      "away_team": "Charlotte",
+      "home_team": "Tulsa",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "20.417418088038847",
+        "pred_total": "51.3888591327854",
+        "pred_win": "0.8764070709597174"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_MOST@JAXST",
+      "cbs_id": "50029099",
+      "away_home": [
+        "Missouri St.",
+        "Jacksonville St."
+      ],
+      "display_kickoff": "Sat Nov 21, 2:00pm Sat 2:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401871079",
+      "away_team": "Missouri State",
+      "home_team": "Jacksonville State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 19:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "7.923618504937133",
+        "pred_total": "52.16206774389663",
+        "pred_win": "0.7152306941783096"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_MTSU@SAMST",
+      "cbs_id": "50029100",
+      "away_home": [
+        "Middle Tenn.",
+        "Sam Houston"
+      ],
+      "display_kickoff": "Sat Nov 21, 2:00pm Sat 2:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401871081",
+      "away_team": "Middle Tennessee",
+      "home_team": "Sam Houston",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 19:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "13.704842173091654",
+        "pred_total": "48.035684646392625",
+        "pred_win": "0.7656286114896474"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_IOWA@ILL",
+      "cbs_id": "50028826",
+      "away_home": [
+        "Iowa",
+        "Illinois"
+      ],
+      "display_kickoff": "Sat Nov 21, 2:30pm Sat 2:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858527",
+      "away_team": "Iowa",
+      "home_team": "Illinois",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-1.241885100937957",
+        "pred_total": "48.40477982046755",
+        "pred_win": "0.5290830004200684"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_LAMON@APLST",
+      "cbs_id": "50028771",
+      "away_home": [
+        "UL-Monroe",
+        "App. St."
+      ],
+      "display_kickoff": "Sat Nov 21, 2:30pm Sat 2:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401869929",
+      "away_team": "UL Monroe",
+      "home_team": "App State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "24.504184304121072",
+        "pred_total": "55.73896462811803",
+        "pred_win": "0.9162385641029841"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_SFLA@FAU",
+      "cbs_id": "50028784",
+      "away_home": [
+        "South Florida",
+        "FAU"
+      ],
+      "display_kickoff": "Sat Nov 21, 2:30pm Sat 2:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401862833",
+      "away_team": "South Florida",
+      "home_team": "Florida Atlantic",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-12.743993607675195",
+        "pred_total": "52.876150216281665",
+        "pred_win": "0.211084094694443"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_FIU@KENSAW",
+      "cbs_id": "50028979",
+      "away_home": [
+        "FIU",
+        "Kennesaw St."
+      ],
+      "display_kickoff": "Sat Nov 21, 3:00pm Sat 3:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401871078",
+      "away_team": "Florida International",
+      "home_team": "Kennesaw State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 20:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "3.5277341087177336",
+        "pred_total": "46.00426584701404",
+        "pred_win": "0.5738050025067719"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_DE@NMEXST",
+      "cbs_id": "50029101",
+      "away_home": [
+        "Delaware",
+        "New Mexico St."
+      ],
+      "display_kickoff": "Sat Nov 21, 3:00pm Sat 3:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401871077",
+      "away_team": "Delaware",
+      "home_team": "New Mexico State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 20:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-0.09939338255844918",
+        "pred_total": "51.70933161156549",
+        "pred_win": "0.47063831766224645"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_CSTCAR@UL",
+      "cbs_id": "50028832",
+      "away_home": [
+        "C. Carolina",
+        "Louisiana"
+      ],
+      "display_kickoff": "Sat Nov 21, 3:00pm Sat 3:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401869946",
+      "away_team": "Coastal Carolina",
+      "home_team": "Louisiana",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "EXCLUDED",
+      "original_numeric_strings": null,
+      "original_exclusion": "away_prior_pbp_missing"
+    },
+    {
+      "cbs_event": "NCAAF_20261121_ODU@UCONN",
+      "cbs_id": "50028780",
+      "away_home": [
+        "Old Dominion",
+        "UConn"
+      ],
+      "display_kickoff": "Sat Nov 21, 3:30pm Sat 3:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401861968",
+      "away_team": "Old Dominion",
+      "home_team": "UConn",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 20:30:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "11.877921956661101",
+        "pred_total": "49.945086556862094",
+        "pred_win": "0.7837908325427771"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_NCST@FSU",
+      "cbs_id": "50028785",
+      "away_home": [
+        "NC State",
+        "Florida State"
+      ],
+      "display_kickoff": "Sat Nov 21, 3:30pm Sat 3:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858304",
+      "away_team": "NC State",
+      "home_team": "Florida State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-4.387499738093197",
+        "pred_total": "56.99080805809464",
+        "pred_win": "0.4000334329200598"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_UCLA@MICH",
+      "cbs_id": "50028795",
+      "away_home": [
+        "UCLA",
+        "Michigan"
+      ],
+      "display_kickoff": "Sat Nov 21, 3:30pm Sat 3:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858528",
+      "away_team": "UCLA",
+      "home_team": "Michigan",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "3.02276553117708",
+        "pred_total": "47.2710679796691",
+        "pred_win": "0.5956238124552673"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_RUT@PSU",
+      "cbs_id": "50028802",
+      "away_home": [
+        "Rutgers",
+        "Penn State"
+      ],
+      "display_kickoff": "Sat Nov 21, 3:30pm Sat 3:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858532",
+      "away_team": "Rutgers",
+      "home_team": "Penn State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "EXCLUDED",
+      "original_numeric_strings": null,
+      "original_exclusion": "away_prior_points_missing"
+    },
+    {
+      "cbs_event": "NCAAF_20261121_LSU@TENN",
+      "cbs_id": "50028810",
+      "away_home": [
+        "LSU",
+        "Tennessee"
+      ],
+      "display_kickoff": "Sat Nov 21, 3:30pm Sat 3:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401856754",
+      "away_team": "LSU",
+      "home_team": "Tennessee",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "9.600061089674124",
+        "pred_total": "53.81595089174327",
+        "pred_win": "0.7342317321458661"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_SAMF@AUBURN",
+      "cbs_id": "50028819",
+      "away_home": [
+        "Samford",
+        "Auburn"
+      ],
+      "display_kickoff": "Sat Nov 21, 3:30pm Sat 3:30pm",
+      "display_market_present": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "game_id": "401856747",
+      "away_team": "Samford",
+      "home_team": "Auburn",
+      "population_class": "FBS_VS_NONFBS",
+      "first_frozen_start": "2026-11-21 20:30:00+00:00",
+      "first_frozen_status": "EXCLUDED",
+      "original_numeric_strings": null,
+      "original_exclusion": "away_opening_no_prior"
+    },
+    {
+      "cbs_event": "NCAAF_20261121_TXTECH@BAYLOR",
+      "cbs_id": "50028820",
+      "away_home": [
+        "Texas Tech",
+        "Baylor"
+      ],
+      "display_kickoff": "Sat Nov 21, 3:30pm Sat 3:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401856871",
+      "away_team": "Texas Tech",
+      "home_team": "Baylor",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "8.08440140994809",
+        "pred_total": "50.49928316031695",
+        "pred_win": "0.6557117059311383"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_ARK@TEXAS",
+      "cbs_id": "50028852",
+      "away_home": [
+        "Arkansas",
+        "Texas"
+      ],
+      "display_kickoff": "Sat Nov 21, 3:30pm Sat 3:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401856755",
+      "away_team": "Arkansas",
+      "home_team": "Texas",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "21.181292018668962",
+        "pred_total": "47.967724251439606",
+        "pred_win": "0.8789340237111584"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_IND@WASH",
+      "cbs_id": "50028883",
+      "away_home": [
+        "Indiana",
+        "Washington"
+      ],
+      "display_kickoff": "Sat Nov 21, 3:30pm Sat 3:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858535",
+      "away_team": "Indiana",
+      "home_team": "Washington",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "EXCLUDED",
+      "original_numeric_strings": null,
+      "original_exclusion": "away_prior_points_missing"
+    },
+    {
+      "cbs_event": "NCAAF_20261121_SALA@USM",
+      "cbs_id": "50028850",
+      "away_home": [
+        "South Alabama",
+        "So. Miss"
+      ],
+      "display_kickoff": "Sat Nov 21, 4:00pm Sat 4:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401871101",
+      "away_team": "South Alabama",
+      "home_team": "Southern Miss",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "1.969780420171038",
+        "pred_total": "52.66198367962101",
+        "pred_win": "0.5855719758816506"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_GAS@TROY",
+      "cbs_id": "50028856",
+      "away_home": [
+        "Ga. Southern",
+        "Troy"
+      ],
+      "display_kickoff": "Sat Nov 21, 4:00pm Sat 4:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401869953",
+      "away_team": "Georgia Southern",
+      "home_team": "Troy",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "2.1238860863648945",
+        "pred_total": "40.26706153783086",
+        "pred_win": "0.4928586620385629"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_NILL@NDST",
+      "cbs_id": "50028845",
+      "away_home": [
+        "N. Illinois",
+        "N. Dakota St."
+      ],
+      "display_kickoff": "Sat Nov 21, 4:00pm Sat 4:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401864543",
+      "away_team": "Northern Illinois",
+      "home_team": "North Dakota State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 21:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "22.28021444887564",
+        "pred_total": "46.02544484617248",
+        "pred_win": "0.8870737447752038"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_GAST@MRSHL",
+      "cbs_id": "50028791",
+      "away_home": [
+        "Georgia St.",
+        "Marshall"
+      ],
+      "display_kickoff": "Sat Nov 21, 4:00pm Sat 4:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401869958",
+      "away_team": "Georgia State",
+      "home_team": "Marshall",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-10.346980272720904",
+        "pred_total": "52.45109829683694",
+        "pred_win": "0.2592992964070824"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_WASHST@TXSTSM",
+      "cbs_id": "50028854",
+      "away_home": [
+        "Washington St.",
+        "Texas St."
+      ],
+      "display_kickoff": "Sat Nov 21, 6:00pm Sat 6:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401860920",
+      "away_team": "Washington State",
+      "home_team": "Texas State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 23:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "0.12664444209730263",
+        "pred_total": "53.548882000543294",
+        "pred_win": "0.5080825615606716"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_MD@USC",
+      "cbs_id": "50028882",
+      "away_home": [
+        "Maryland",
+        "USC"
+      ],
+      "display_kickoff": "Sat Nov 21, 6:15pm Sat 6:15pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858534",
+      "away_team": "Maryland",
+      "home_team": "USC",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "1.594822717161102",
+        "pred_total": "56.04444659953657",
+        "pred_win": "0.5409410206791054"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_ARIZ@KSTATE",
+      "cbs_id": "50028830",
+      "away_home": [
+        "Arizona",
+        "Kansas State"
+      ],
+      "display_kickoff": "Sat Nov 21, 7:00pm Sat 7:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401856865",
+      "away_team": "Arizona",
+      "home_team": "Kansas State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "13.812129190477693",
+        "pred_total": "49.80203005288483",
+        "pred_win": "0.7788843959655496"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_ARKST@LATECH",
+      "cbs_id": "50028833",
+      "away_home": [
+        "Arkansas St.",
+        "Louisiana Tech"
+      ],
+      "display_kickoff": "Sat Nov 21, 7:00pm Sat 7:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401869938",
+      "away_team": "Arkansas State",
+      "home_team": "Louisiana Tech",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "0.35454533033654334",
+        "pred_total": "52.84189331741871",
+        "pred_win": "0.49425357422556077"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_UNLV@SJST",
+      "cbs_id": "50028880",
+      "away_home": [
+        "UNLV",
+        "San Jose St."
+      ],
+      "display_kickoff": "Sat Nov 21, 7:00pm Sat 7:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401864544",
+      "away_team": "UNLV",
+      "home_team": "San José State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-22 00:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "6.469218019671271",
+        "pred_total": "48.594949193969455",
+        "pred_win": "0.6674885936052322"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_COLOST@FRESNO",
+      "cbs_id": "50028876",
+      "away_home": [
+        "Colorado St.",
+        "Fresno St."
+      ],
+      "display_kickoff": "Sat Nov 21, 7:30pm Sat 7:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401860918",
+      "away_team": "Colorado State",
+      "home_team": "Fresno State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-22 00:30:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "3.806961486730838",
+        "pred_total": "51.476425182064595",
+        "pred_win": "0.5835277857806527"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_STNFRD@CAL",
+      "cbs_id": "50028874",
+      "away_home": [
+        "Stanford",
+        "California"
+      ],
+      "display_kickoff": "Sat Nov 21, 7:30pm Sat 7:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858308",
+      "away_team": "Stanford",
+      "home_team": "California",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "EXCLUDED",
+      "original_numeric_strings": null,
+      "original_exclusion": "home_prior_points_missing"
+    },
+    {
+      "cbs_event": "NCAAF_20261121_UK@MIZZOU",
+      "cbs_id": "50028840",
+      "away_home": [
+        "Kentucky",
+        "Missouri"
+      ],
+      "display_kickoff": "Sat Nov 21, 7:30pm Sat 7:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401856751",
+      "away_team": "Kentucky",
+      "home_team": "Missouri",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "8.119121112287228",
+        "pred_total": "52.77853801594118",
+        "pred_win": "0.6779610866455147"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_UGA@SC",
+      "cbs_id": "50028807",
+      "away_home": [
+        "Georgia",
+        "South Carolina"
+      ],
+      "display_kickoff": "Sat Nov 21, 7:30pm Sat 7:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401856753",
+      "away_team": "Georgia",
+      "home_team": "South Carolina",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-3.2170678254307234",
+        "pred_total": "59.56816123477145",
+        "pred_win": "0.4026827107510357"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_SMU@ND",
+      "cbs_id": "50028801",
+      "away_home": [
+        "SMU",
+        "Notre Dame"
+      ],
+      "display_kickoff": "Sat Nov 21, 7:30pm Sat 7:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401858307",
+      "away_team": "SMU",
+      "home_team": "Notre Dame",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-22 00:30:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "11.624651940188746",
+        "pred_total": "50.96021979045832",
+        "pred_win": "0.7691796532262895"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_TXSA@UAB",
+      "cbs_id": "50028859",
+      "away_home": [
+        "UTSA",
+        "UAB"
+      ],
+      "display_kickoff": "Sat Nov 21, 8:00pm Sat 8:00pm",
+      "display_market_present": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "game_id": "401862836",
+      "away_team": "UTSA",
+      "home_team": "UAB",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "EXCLUDED",
+      "original_numeric_strings": null,
+      "original_exclusion": "home_prior_points_missing"
+    },
+    {
+      "cbs_event": "NCAAF_20261121_UTAH@TCU",
+      "cbs_id": "50028851",
+      "away_home": [
+        "Utah",
+        "TCU"
+      ],
+      "display_kickoff": "Sat Nov 21, 9:00pm Sat 9:00pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401856872",
+      "away_team": "Utah",
+      "home_team": "TCU",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-2.166723890017133",
+        "pred_total": "49.54210696346403",
+        "pred_win": "0.444640245910468"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_SDGST@BOISE",
+      "cbs_id": "50028865",
+      "away_home": [
+        "San Diego St.",
+        "Boise St."
+      ],
+      "display_kickoff": "Sat Nov 21, 9:30pm Sat 9:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401860925",
+      "away_team": "San Diego State",
+      "home_team": "Boise State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-22 02:30:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "10.852576093297541",
+        "pred_total": "51.2171391861203",
+        "pred_win": "0.7522409426066918"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_OKLAST@ARIZST",
+      "cbs_id": "50028864",
+      "away_home": [
+        "Oklahoma State",
+        "Arizona St."
+      ],
+      "display_kickoff": "Sat Nov 21, 10:15pm Sat 10:15pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401856870",
+      "away_team": "Oklahoma State",
+      "home_team": "Arizona State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "-0.13369013926374906",
+        "pred_total": "52.894735954209196",
+        "pred_win": "0.4900492375011539"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_HAWAII@NEVADA",
+      "cbs_id": "50028877",
+      "away_home": [
+        "Hawaii",
+        "Nevada"
+      ],
+      "display_kickoff": "Sat Nov 21, 10:30pm Sat 10:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401864541",
+      "away_team": "Hawai'i",
+      "home_team": "Nevada",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-21 05:00:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "10.088081621326703",
+        "pred_total": "47.76762431683945",
+        "pred_win": "0.7148514674473431"
+      },
+      "original_exclusion": null
+    },
+    {
+      "cbs_event": "NCAAF_20261121_UTAHST@OREGST",
+      "cbs_id": "50028878",
+      "away_home": [
+        "Utah St.",
+        "Oregon State"
+      ],
+      "display_kickoff": "Sat Nov 21, 10:30pm Sat 10:30pm",
+      "display_market_present": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "game_id": "401860919",
+      "away_team": "Utah State",
+      "home_team": "Oregon State",
+      "population_class": "FBS_VS_FBS",
+      "first_frozen_start": "2026-11-22 03:30:00+00:00",
+      "first_frozen_status": "PREDICTION",
+      "original_numeric_strings": {
+        "pred_margin": "11.399072873304801",
+        "pred_total": "52.03118315391169",
+        "pred_win": "0.7237906162921877"
+      },
+      "original_exclusion": null
+    }
+  ]
+}
