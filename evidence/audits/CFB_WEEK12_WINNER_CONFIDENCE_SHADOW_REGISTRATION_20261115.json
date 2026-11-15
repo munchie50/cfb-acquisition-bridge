@@ -1,0 +1,628 @@
+{
+  "schema": "CFB_WEEK12_WINNER_CONFIDENCE_SHADOW_REGISTRATION_V1",
+  "registered_at_utc": "2026-11-15T22:14:52.610Z",
+  "scope": "QA only; prospective frozen Week 12 model cohort. No betting confidence, price, selected margin, Champion, source acceptance, or recommendation change.",
+  "sources": {
+    "cohort": {
+      "path": "evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json",
+      "blob": "8e019d9b502067c0a669e860a70e177b8e5ecda6"
+    },
+    "historical": {
+      "path": "evidence/audits/CFB_WEEKS9_11_FROZEN_WINNER_CALIBRATION_20261115.json",
+      "blob": "57ec454e18bc1a2a0d044a8cd2b9d6bfc69f287c"
+    }
+  },
+  "candidate": {
+    "rule": "p_shadow = 0.5 + 0.75 * (p_original - 0.5)",
+    "choice": "Fixed illustrative 25% shrink of distance from 50%; no optimization or claim of independent historical validation.",
+    "baseline": "Exact original home-winner probability",
+    "reference": 0.5
+  },
+  "grading": {
+    "primary": "Paired mean Brier difference on the same qualified finals, original versus shadow; negative favors shadow",
+    "secondary": "Show same original confidence bands and outcomes, top-band observed winner rate versus mean reported original and shadow confidence; report all exclusions, pending finals and direction checks.",
+    "complete_when": "All 70 directed identities reconciled, grade only the 56 frozen probabilities with qualified finals or explicitly account for remaining gaps. Keep original season scoring separate.",
+    "disposition": "Keep in QA after first cohort. Carry forward the same fixed rule unchanged for comparable future weeks; report whether the Brier improvement repeats and where it costs accuracy of probability. Apply existing approval and production verification before any promotion."
+  },
+  "historical_dry_run": {
+    "pooled": {
+      "n": 159,
+      "original_brier": 0.25518053853683054,
+      "shadow_brier": 0.24494068528086518,
+      "reference_brier": 0.25,
+      "direction_changes": 0
+    },
+    "by_week": {
+      "9": {
+        "n": 45,
+        "original_brier": 0.21846569064633645,
+        "shadow_brier": 0.2161315294153759,
+        "reference_brier": 0.25,
+        "direction_changes": 0
+      },
+      "10": {
+        "n": 55,
+        "original_brier": 0.26985666839626127,
+        "shadow_brier": 0.25687860044024935,
+        "reference_brier": 0.25,
+        "direction_changes": 0
+      },
+      "11": {
+        "n": 59,
+        "original_brier": 0.2695022506182468,
+        "shadow_brier": 0.2557852052839318,
+        "reference_brier": 0.25,
+        "direction_changes": 0
+      }
+    },
+    "original_top_band": {
+      "n": 31,
+      "original_brier": 0.27202449197758083,
+      "shadow_brier": 0.24064643600305533,
+      "reference_brier": 0.25,
+      "direction_changes": 0
+    }
+  },
+  "cohort": [
+    {
+      "game_id": "401866465",
+      "away": "Eastern Michigan",
+      "home": "Western Michigan",
+      "original_probability_string": "0.8262359403202044",
+      "shadow_home_win_probability": 0.7446769552401533,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401866466",
+      "away": "Miami (OH)",
+      "home": "Kent State",
+      "original_probability_string": "0.15458317639549893",
+      "shadow_home_win_probability": 0.2409373822966242,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401866464",
+      "away": "Ball State",
+      "home": "Ohio",
+      "original_probability_string": "0.6914333386345607",
+      "shadow_home_win_probability": 0.6435750039759205,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401866467",
+      "away": "Akron",
+      "home": "Massachusetts",
+      "original_probability_string": "0.8068967398079216",
+      "shadow_home_win_probability": 0.7301725548559412,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401866469",
+      "away": "Central Michigan",
+      "home": "Buffalo",
+      "original_probability_string": "0.41201303940323963",
+      "shadow_home_win_probability": 0.4340097795524297,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401862830",
+      "away": "Rice",
+      "home": "Temple",
+      "original_probability_string": null,
+      "shadow_home_win_probability": null,
+      "original_exclusion": "home_prior_pbp_missing"
+    },
+    {
+      "game_id": "401856869",
+      "away": "Iowa State",
+      "home": "UCF",
+      "original_probability_string": "0.6385265665171552",
+      "shadow_home_win_probability": 0.6038949248878664,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401866468",
+      "away": "Bowling Green",
+      "home": "Toledo",
+      "original_probability_string": "0.9417668264651046",
+      "shadow_home_win_probability": 0.8313251198488284,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858303",
+      "away": "Clemson",
+      "home": "Duke",
+      "original_probability_string": null,
+      "shadow_home_win_probability": null,
+      "original_exclusion": "away_prior_points_missing"
+    },
+    {
+      "game_id": "401864545",
+      "away": "UTEP",
+      "home": "Air Force",
+      "original_probability_string": "0.8924532014526221",
+      "shadow_home_win_probability": 0.7943399010894665,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858529",
+      "away": "Oregon",
+      "home": "Michigan State",
+      "original_probability_string": "0.3571127320723306",
+      "shadow_home_win_probability": 0.3928345490542479,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401864542",
+      "away": "New Mexico",
+      "home": "Wyoming",
+      "original_probability_string": "0.2838859004837682",
+      "shadow_home_win_probability": 0.3379144253628262,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401862835",
+      "away": "North Texas",
+      "home": "Tulane",
+      "original_probability_string": "0.524325603490124",
+      "shadow_home_win_probability": 0.5182442026175931,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401856749",
+      "away": "Wofford",
+      "home": "Ole Miss",
+      "original_probability_string": "0.9067499944602779",
+      "shadow_home_win_probability": 0.8050624958452084,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401856752",
+      "away": "Texas A&M",
+      "home": "Oklahoma",
+      "original_probability_string": "0.6745925027902632",
+      "shadow_home_win_probability": 0.6309443770926974,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858531",
+      "away": "Ohio State",
+      "home": "Nebraska",
+      "original_probability_string": "0.5960159030209125",
+      "shadow_home_win_probability": 0.5720119272656843,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858530",
+      "away": "Northwestern",
+      "home": "Minnesota",
+      "original_probability_string": null,
+      "shadow_home_win_probability": null,
+      "original_exclusion": "away_prior_points_missing"
+    },
+    {
+      "game_id": "401856866",
+      "away": "BYU",
+      "home": "Kansas",
+      "original_probability_string": "0.3308854912128962",
+      "shadow_home_win_probability": 0.3731641184096721,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858533",
+      "away": "Wisconsin",
+      "home": "Purdue",
+      "original_probability_string": "0.4256147704194494",
+      "shadow_home_win_probability": 0.444211077814587,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401862834",
+      "away": "Memphis",
+      "home": "Navy",
+      "original_probability_string": null,
+      "shadow_home_win_probability": null,
+      "original_exclusion": "home_prior_points_missing"
+    },
+    {
+      "game_id": "401858310",
+      "away": "Wake Forest",
+      "home": "Georgia Tech",
+      "original_probability_string": "0.6253659778927851",
+      "shadow_home_win_probability": 0.5940244834195889,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401856748",
+      "away": "Vanderbilt",
+      "home": "Florida",
+      "original_probability_string": "0.8215636126769137",
+      "shadow_home_win_probability": 0.7411727095076852,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401856867",
+      "away": "Colorado",
+      "home": "Cincinnati",
+      "original_probability_string": "0.8242022067691598",
+      "shadow_home_win_probability": 0.7431516550768699,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858309",
+      "away": "Syracuse",
+      "home": "Boston College",
+      "original_probability_string": "0.4548034942674996",
+      "shadow_home_win_probability": 0.4661026207006247,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401862831",
+      "away": "East Carolina",
+      "home": "Army",
+      "original_probability_string": null,
+      "shadow_home_win_probability": null,
+      "original_exclusion": "home_prior_pbp_missing"
+    },
+    {
+      "game_id": "401858302",
+      "away": "Virginia Tech",
+      "home": "Miami",
+      "original_probability_string": "0.7638187718812526",
+      "shadow_home_win_probability": 0.6978640789109394,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858306",
+      "away": "Pittsburgh",
+      "home": "Louisville",
+      "original_probability_string": "0.632505609617573",
+      "shadow_home_win_probability": 0.5993792072131797,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858305",
+      "away": "North Carolina",
+      "home": "Virginia",
+      "original_probability_string": "0.6683109587371198",
+      "shadow_home_win_probability": 0.6262332190528398,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401856868",
+      "away": "Houston",
+      "home": "West Virginia",
+      "original_probability_string": "0.5033573365494463",
+      "shadow_home_win_probability": 0.5025180024120847,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401856750",
+      "away": "Tennessee Tech",
+      "home": "Mississippi State",
+      "original_probability_string": null,
+      "shadow_home_win_probability": null,
+      "original_exclusion": "away_opening_no_prior"
+    },
+    {
+      "game_id": "401871080",
+      "away": "Western Kentucky",
+      "home": "Liberty",
+      "original_probability_string": null,
+      "shadow_home_win_probability": null,
+      "original_exclusion": "home_prior_pbp_missing"
+    },
+    {
+      "game_id": "401856746",
+      "away": "Chattanooga",
+      "home": "Alabama",
+      "original_probability_string": null,
+      "shadow_home_win_probability": null,
+      "original_exclusion": "away_opening_no_prior"
+    },
+    {
+      "game_id": "401862832",
+      "away": "Charlotte",
+      "home": "Tulsa",
+      "original_probability_string": "0.8764070709597174",
+      "shadow_home_win_probability": 0.782305303219788,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401871079",
+      "away": "Missouri State",
+      "home": "Jacksonville State",
+      "original_probability_string": "0.7152306941783096",
+      "shadow_home_win_probability": 0.6614230206337323,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401871081",
+      "away": "Middle Tennessee",
+      "home": "Sam Houston",
+      "original_probability_string": "0.7656286114896474",
+      "shadow_home_win_probability": 0.6992214586172356,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858527",
+      "away": "Iowa",
+      "home": "Illinois",
+      "original_probability_string": "0.5290830004200684",
+      "shadow_home_win_probability": 0.5218122503150513,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401869929",
+      "away": "UL Monroe",
+      "home": "App State",
+      "original_probability_string": "0.9162385641029841",
+      "shadow_home_win_probability": 0.812178923077238,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401862833",
+      "away": "South Florida",
+      "home": "Florida Atlantic",
+      "original_probability_string": "0.211084094694443",
+      "shadow_home_win_probability": 0.28331307102083225,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401871078",
+      "away": "Florida International",
+      "home": "Kennesaw State",
+      "original_probability_string": "0.5738050025067719",
+      "shadow_home_win_probability": 0.555353751880079,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401871077",
+      "away": "Delaware",
+      "home": "New Mexico State",
+      "original_probability_string": "0.47063831766224645",
+      "shadow_home_win_probability": 0.47797873824668485,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401869946",
+      "away": "Coastal Carolina",
+      "home": "Louisiana",
+      "original_probability_string": null,
+      "shadow_home_win_probability": null,
+      "original_exclusion": "away_prior_pbp_missing"
+    },
+    {
+      "game_id": "401861968",
+      "away": "Old Dominion",
+      "home": "UConn",
+      "original_probability_string": "0.7837908325427771",
+      "shadow_home_win_probability": 0.7128431244070829,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858304",
+      "away": "NC State",
+      "home": "Florida State",
+      "original_probability_string": "0.4000334329200598",
+      "shadow_home_win_probability": 0.4250250746900448,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858528",
+      "away": "UCLA",
+      "home": "Michigan",
+      "original_probability_string": "0.5956238124552673",
+      "shadow_home_win_probability": 0.5717178593414505,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858532",
+      "away": "Rutgers",
+      "home": "Penn State",
+      "original_probability_string": null,
+      "shadow_home_win_probability": null,
+      "original_exclusion": "away_prior_points_missing"
+    },
+    {
+      "game_id": "401856754",
+      "away": "LSU",
+      "home": "Tennessee",
+      "original_probability_string": "0.7342317321458661",
+      "shadow_home_win_probability": 0.6756737991093996,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401856747",
+      "away": "Samford",
+      "home": "Auburn",
+      "original_probability_string": null,
+      "shadow_home_win_probability": null,
+      "original_exclusion": "away_opening_no_prior"
+    },
+    {
+      "game_id": "401856871",
+      "away": "Texas Tech",
+      "home": "Baylor",
+      "original_probability_string": "0.6557117059311383",
+      "shadow_home_win_probability": 0.6167837794483537,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401856755",
+      "away": "Arkansas",
+      "home": "Texas",
+      "original_probability_string": "0.8789340237111584",
+      "shadow_home_win_probability": 0.7842005177833687,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858535",
+      "away": "Indiana",
+      "home": "Washington",
+      "original_probability_string": null,
+      "shadow_home_win_probability": null,
+      "original_exclusion": "away_prior_points_missing"
+    },
+    {
+      "game_id": "401871101",
+      "away": "South Alabama",
+      "home": "Southern Miss",
+      "original_probability_string": "0.5855719758816506",
+      "shadow_home_win_probability": 0.5641789819112379,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401869953",
+      "away": "Georgia Southern",
+      "home": "Troy",
+      "original_probability_string": "0.4928586620385629",
+      "shadow_home_win_probability": 0.49464399652892216,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401864543",
+      "away": "Northern Illinois",
+      "home": "North Dakota State",
+      "original_probability_string": "0.8870737447752038",
+      "shadow_home_win_probability": 0.7903053085814029,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401869958",
+      "away": "Georgia State",
+      "home": "Marshall",
+      "original_probability_string": "0.2592992964070824",
+      "shadow_home_win_probability": 0.3194744723053118,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401860920",
+      "away": "Washington State",
+      "home": "Texas State",
+      "original_probability_string": "0.5080825615606716",
+      "shadow_home_win_probability": 0.5060619211705036,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858534",
+      "away": "Maryland",
+      "home": "USC",
+      "original_probability_string": "0.5409410206791054",
+      "shadow_home_win_probability": 0.530705765509329,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401856865",
+      "away": "Arizona",
+      "home": "Kansas State",
+      "original_probability_string": "0.7788843959655496",
+      "shadow_home_win_probability": 0.7091632969741621,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401869938",
+      "away": "Arkansas State",
+      "home": "Louisiana Tech",
+      "original_probability_string": "0.49425357422556077",
+      "shadow_home_win_probability": 0.4956901806691706,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401864544",
+      "away": "UNLV",
+      "home": "San José State",
+      "original_probability_string": "0.6674885936052322",
+      "shadow_home_win_probability": 0.6256164452039241,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401860918",
+      "away": "Colorado State",
+      "home": "Fresno State",
+      "original_probability_string": "0.5835277857806527",
+      "shadow_home_win_probability": 0.5626458393354895,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858308",
+      "away": "Stanford",
+      "home": "California",
+      "original_probability_string": null,
+      "shadow_home_win_probability": null,
+      "original_exclusion": "home_prior_points_missing"
+    },
+    {
+      "game_id": "401856751",
+      "away": "Kentucky",
+      "home": "Missouri",
+      "original_probability_string": "0.6779610866455147",
+      "shadow_home_win_probability": 0.633470814984136,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401856753",
+      "away": "Georgia",
+      "home": "South Carolina",
+      "original_probability_string": "0.4026827107510357",
+      "shadow_home_win_probability": 0.42701203306327673,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401858307",
+      "away": "SMU",
+      "home": "Notre Dame",
+      "original_probability_string": "0.7691796532262895",
+      "shadow_home_win_probability": 0.7018847399197171,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401862836",
+      "away": "UTSA",
+      "home": "UAB",
+      "original_probability_string": null,
+      "shadow_home_win_probability": null,
+      "original_exclusion": "home_prior_points_missing"
+    },
+    {
+      "game_id": "401856872",
+      "away": "Utah",
+      "home": "TCU",
+      "original_probability_string": "0.444640245910468",
+      "shadow_home_win_probability": 0.458480184432851,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401860925",
+      "away": "San Diego State",
+      "home": "Boise State",
+      "original_probability_string": "0.7522409426066918",
+      "shadow_home_win_probability": 0.6891807069550189,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401856870",
+      "away": "Oklahoma State",
+      "home": "Arizona State",
+      "original_probability_string": "0.4900492375011539",
+      "shadow_home_win_probability": 0.49253692812586547,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401864541",
+      "away": "Hawai'i",
+      "home": "Nevada",
+      "original_probability_string": "0.7148514674473431",
+      "shadow_home_win_probability": 0.6611386005855073,
+      "original_exclusion": null
+    },
+    {
+      "game_id": "401860919",
+      "away": "Utah State",
+      "home": "Oregon State",
+      "original_probability_string": "0.7237906162921877",
+      "shadow_home_win_probability": 0.6678429622191407,
+      "original_exclusion": null
+    }
+  ]
+}
