@@ -1,0 +1,189 @@
+{
+  "schema": "CFB_WEEK11_OFFICIAL_OUTCOME_FINAL_SUPPLEMENT_V1",
+  "recorded_at_utc": "2026-11-15T21:18:49.441Z",
+  "parent": {
+    "path": "evidence/operational/CFB_WEEK11_OFFICIAL_OUTCOME_QA_20261115_R1.json",
+    "blob": "99f12421f23bc74f3e6da67cc2c628b3622bfe2a"
+  },
+  "first_frozen_lineage": {
+    "path": "evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json",
+    "git_blob": "3a337e8bdf5cd732fb76697cf2a87b2d74ba8ce9"
+  },
+  "final": {
+    "game_id": "401856887",
+    "away_team": "Ole Miss",
+    "home_team": "Oklahoma",
+    "away_score": 17,
+    "home_score": 24,
+    "original_status": "PREDICTION",
+    "original_numeric_strings": {
+      "pred_margin": "7.8476117539310115",
+      "pred_total": "46.71694194916834",
+      "pred_win": "0.6539402794474861"
+    }
+  },
+  "cbs": {
+    "url": "https://www.cbssports.com/college-football/scoreboard/FBS/2026/regular/11/",
+    "event": "NCAAF_20261115_MISS@OKLA",
+    "id": "50051570",
+    "status": "final",
+    "recovered_by_utc": "2026-11-15T21:16:23.332390Z",
+    "bytes": 4924622,
+    "sha256": "dce98f41e9661ca030ecb554c4fbba00f483e17a41ee91253fb6d78de4789910"
+  },
+  "ncaa": {
+    "game_page": "https://www.ncaa.com/game/6604193",
+    "feed": "https://sdataprod.ncaa.com",
+    "operation": "GetGamecenterGameById_web",
+    "recovered_by_utc": "2026-11-15T21:18:18.320277Z",
+    "bytes": 1955,
+    "sha256": "2f3ccb0c1b37069782e6ba035f5b249e9577f29201fa331988b47faf12da58e0",
+    "payload": {
+      "data": {
+        "contests": [
+          {
+            "__typename": "Contest",
+            "id": "6604193",
+            "isChampionship": false,
+            "isConferenceTournament": false,
+            "source": "ORG-SPORTS",
+            "sportCode": "MFB",
+            "sportUrl": "football",
+            "division": 11,
+            "divisionName": "fbs",
+            "clock": "",
+            "currentPeriod": "FINAL",
+            "finalMessage": "FINAL",
+            "statusCodeDisplay": "final",
+            "gameState": "F",
+            "network": null,
+            "startTime": "13:00",
+            "startTimeEpoch": 1794765600,
+            "week": "11",
+            "seasonYear": 2026,
+            "winner": 574,
+            "hasStartTime": true,
+            "hasBoxscore": true,
+            "hasPbp": true,
+            "hasScoringSummary": true,
+            "hasPreview": false,
+            "hasRecap": false,
+            "hasTeamStats": true,
+            "linescores": [
+              {
+                "__typename": "Linescore",
+                "period": "1",
+                "home": "14",
+                "visit": "0"
+              },
+              {
+                "__typename": "Linescore",
+                "period": "2",
+                "home": "0",
+                "visit": "7"
+              },
+              {
+                "__typename": "Linescore",
+                "period": "3",
+                "home": "7",
+                "visit": "0"
+              },
+              {
+                "__typename": "Linescore",
+                "period": "4",
+                "home": "3",
+                "visit": "10"
+              }
+            ],
+            "teams": [
+              {
+                "__typename": "ContestTeam",
+                "teamId": "574",
+                "isHome": true,
+                "color": "#9D2235",
+                "seoname": "oklahoma",
+                "nameFull": "University of Oklahoma",
+                "nameShort": "Oklahoma",
+                "name6Char": "OKLA",
+                "collegeNameFull": "University of Oklahoma",
+                "collegeNameShort": "Oklahoma",
+                "collegeName6char": "OKLA",
+                "teamRank": null,
+                "gameRank": null,
+                "score": 24,
+                "seed": null,
+                "record": "(5-4)",
+                "divisionName": "fbs",
+                "division": 11,
+                "isWinner": true
+              },
+              {
+                "__typename": "ContestTeam",
+                "teamId": "1851",
+                "isHome": false,
+                "color": "#C8102E",
+                "seoname": "ole-miss",
+                "nameFull": "University of Mississippi",
+                "nameShort": "Ole Miss",
+                "name6Char": "MISS",
+                "collegeNameFull": "University of Mississippi",
+                "collegeNameShort": "Ole Miss",
+                "collegeName6char": "MISS",
+                "teamRank": 19,
+                "gameRank": 19,
+                "score": 17,
+                "seed": null,
+                "record": "(6-3)",
+                "divisionName": "fbs",
+                "division": 11,
+                "isWinner": false
+              }
+            ],
+            "liveVideos": [],
+            "championship": null,
+            "championshipGame": null,
+            "links": [],
+            "location": {
+              "__typename": "Location",
+              "venue": "Gaylord Family - Oklahoma Memorial Stadium",
+              "city": "Norman",
+              "stateUsps": "OK"
+            },
+            "stats": {
+              "__typename": "LinescoreStatsFootball",
+              "down": 3,
+              "distance": 9,
+              "possession": "visit",
+              "yardline": null,
+              "yardsFromGoal": 29
+            }
+          }
+        ]
+      }
+    }
+  },
+  "final_row_scoring": {
+    "home_margin": 7,
+    "total": 41,
+    "home_win": 1,
+    "margin_error": -0.8476117539310115,
+    "total_error": -5.716941949168337,
+    "brier": 0.119757330188884,
+    "winner_correct": true
+  },
+  "coverage": {
+    "governed": 67,
+    "official_finals": 67,
+    "modeled": 59,
+    "excluded": 8,
+    "pending": 0
+  },
+  "metrics": {
+    "n": 59,
+    "w": 35,
+    "margin_mae": 15.966430022675926,
+    "total_mae": 14.117354050197447,
+    "brier": 0.2695022506182468
+  },
+  "ticket_scope": "No Week 11 ticket involves this game; R1 grade results and settlement status remain as recorded."
+}
