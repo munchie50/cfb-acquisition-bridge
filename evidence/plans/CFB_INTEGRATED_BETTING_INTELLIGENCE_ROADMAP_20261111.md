@@ -345,3 +345,17 @@ During the existing Sunday review, apply official directed finals to both frozen
 ## Week 11 Thursday finals and personnel follow-through — November 12, 2026
 
 [Verified source-check record](../audits/CFB_WEEK11_THURSDAY_FINAL_AND_PERSONNEL_FOLLOWTHROUGH_20261112.json) commit `ef8c623306fae3058cbc31b151887311138af922`, blob `90bd16c3304af73a05c09b6c7f4a34c1043bd58d`. Bound the next two eligible games and six frozen selections to their original directed identities. The official school schedule views did not establish finals and ESPN web retrieval was blocked by JavaScript verification. Prior partial grading stands. Seven personnel checks remain open; the three CUSA games still showed pending in tracker coverage. Resume grading on qualified finals and retain the registered Friday 7 a.m.–1 p.m. CT combined-quote window.
+
+## Postgame diagnostic QA and lost-opportunity review — November 15, 2026
+
+Owner: existing Sunday Weekly QA for audit, review and shadow comparison; existing Market Monitor for prospective capture and any eventual authorized Hot Sheet presentation. Track completion here and carry the dispositions in the existing Weekly Beta Learning Review. No new task.
+
+| Deliverable | Closure evidence | State |
+|---|---|---|
+| Week 11 full slate diagnosis | Reconcile all 67 IDs to frozen forecasts, verified finals and saved decisions; identify model misses, exclusions, timing and evidence gaps per game; mark causal hypotheses and missing evidence explicitly | OPEN |
+| Archived opportunity and line sensitivity | Grade all supported pregame selections regardless of outcome, at exact recorded lines and prices. Complete the registered 40-game replay; count unavailable, unpriced, late and incomplete cases separately | OPEN |
+| Confidence, market depth and delivery | Report coverage by decision, confidence band, market, pre-trip deadline and reason withheld. Compare straight picks and credible priced combined parlays with overlap; preserve unavailable combined quotes | OPEN |
+| Near Misses and Watch display | Use saved supporting evidence, exact hurdle, clock and practical cutoff; distinguish football confidence from venue verification. Rank supported candidates without imposing a minimum count. Verify renderer and normal publication readback | OPEN |
+| Prospective shadow comparison | Freeze baseline and small threshold variants before games over several comparable weeks. Compare additional candidates, wins/losses/pushes, quoted-price returns, timely delivery and false suppressions. Explicitly keep, adjust, defer or reject each proposed change in weekly QA | OPEN |
+
+Use prior Week 11 market and research records as immutable evidence. Do not promote a market-only price observation into a historical pick or use tickets as model inputs. No automatic limits, model or production changes. First due action: join the existing pregame line-sensitivity registration to the official Week 11 finals and save the result.
