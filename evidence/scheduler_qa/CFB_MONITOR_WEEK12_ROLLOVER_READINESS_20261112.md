@@ -11,3 +11,11 @@ The collector's Week 11 clock is inclusive at 00:00 CT November 10 and exclusive
 3. Run one read-only collection and compiler proof, independently verify the package and draft, then verify scheduled delivery through the existing Monitor. If the Week 12 authority is still pending when the first slot arrives, record the unsupported profile clearly and retain the last verified sheet with its date.
 
 The latest repository Actions schedule inventory showed no run for collector workflow 416507937, and the next saved Monitor slot was Friday 07:00 CT. Keep Friday's scheduled handoff proof distinct from Week 12 readiness. No production configuration, lineage or schedule changed.
+
+## November 15 manual rollover preflight
+
+The archived-source gap is closed for original lineage. [Week 12 preflight and exact directed joins](https://github.com/munchie50/cfb-acquisition-bridge/blob/031353ea764443d0f8294b82684df1d43758d194/evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json) was saved and independently read back at blob `8e019d9b502067c0a669e860a70e177b8e5ecda6`. Recovered accepted September 26 artifact 10897612260, verified the ZIP SHA-256, and joined 70 unique CBS event IDs one-to-one to 70 governed archive IDs with directed team identities. The result carries 56 exact original predictions (168 unchanged numerical strings) and 14 original exclusions. The CBS event-date distribution is Tuesday 3, Wednesday 2, Thursday 1, Friday 6 and Saturday 58. Archive start clocks remain historical source fields; use independent prospective kickoff qualification.
+
+CBS had all six display cells present for 65 games. Wofford–Ole Miss, Tennessee Tech–Mississippi State, Chattanooga–Alabama, Samford–Auburn, and UTSA–UAB had no offered values in those displayed columns at capture. Presence is source scouting only, with no consensus or venue execution verification. Reacquire at the real Monitor clock. The original snapshot now exists for early-week review independently of Tuesday's REFRESH candidate.
+
+Week 12 collector and compiler profile, current kickoff and market qualification, candidate REFRESH acceptance, and natural Monitor runtime proof remain open. The Week 11 collector will still reject Monday's clock by design. The accepted prediction-source pointer remains the November 10 REFRESH. No task, schedule, model or publication was changed.
