@@ -1,0 +1,44 @@
+{
+  "schema": "CFB_MONITOR_NATIVE_HOURLY_CLOSURE_v1",
+  "task_id": "6ac4e807aaac8191b3255fae8ab82577",
+  "invocation_run_id": "28f0d585-4c60-8329-b862-479204fa3140",
+  "correlation_id": "20261116T195908405Z_28f0d585",
+  "closed_at_utc": "2026-11-16T20:01:54.319Z",
+  "terminal_status": "BOUNDARY_PASS",
+  "started": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T195908405Z_28f0d585_STARTED.json",
+    "blob": "1b07adabb08fc9841d0526a5338fc8541672eaf7",
+    "exact_readback": true
+  },
+  "terminal_candidate": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T195908405Z_28f0d585_TERMINAL_CANDIDATE.json",
+    "blob": "c96e25e4dd749719374c6e388c9a904c83c0a2d0",
+    "chars": 8722,
+    "exact_readback": true
+  },
+  "prior_hourly_candidate": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T191407713Z_a37af080_TERMINAL_CANDIDATE.json",
+    "blob": "3130b46d11c6468c67c4a82bd3b881be3be8b46d",
+    "verdict": "BOUNDARY_PASS"
+  },
+  "paired_result": "SECOND_CONSECUTIVE_BOUNDARY_PASS_NO_CAPABILITY_DIFFERENCE",
+  "phase_proof": {
+    "shell": "PASS",
+    "authenticated_connector_read": "PASS",
+    "exact_helper_transfer": "PASS_3780_BYTES_b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "raw_dns": "FAIL_gaierror_-3_both_hosts",
+    "default_proxy_aware_git": "PASS",
+    "default_proxy_aware_urllib": "PASS_HTTP_200_EXACT_BLOB",
+    "no_proxy_control": "FAIL_gaierror_-3",
+    "unchanged_helper": "PASS_SUPPORTED_GIT_RUNTIME_VERIFIED",
+    "checkout": "PASS_HEAD_5b47b0b82b1a4f8e43cd5f8aaf20e006e384dc02_FULL_ANCESTRY_60_REVIEWS",
+    "week12_compiler_collector": "PRESENT_SYNTAX_IMPORT_PASS"
+  },
+  "classification": "The second hourly invocation passed the same transport/helper/checkout boundary. This strengthens canary repeatability evidence but does not certify production host parity, acquisition, decisions, publication, or Market Monitor reliability.",
+  "first_difference_from_failed_production": "The hourly runtime again had documented exact handoff and functioning sanctioned proxy-aware transport; failed production did not.",
+  "next_observation": "Compare the third hourly invocation and next natural production invocation at these exact layers by run ID.",
+  "production_effect": "ZERO",
+  "task_or_schedule_mutation": "NONE",
+  "closure_issued_after_candidate_exact_readback": true,
+  "closure_self_certification": false
+}
