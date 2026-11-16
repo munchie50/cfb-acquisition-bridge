@@ -1,0 +1,19 @@
+# Week 12 Tuesday pregame reconciliation — November 16
+
+Manual continuation of Monday's 07 CT Market Monitor workload. Tuesday-first research evidence for the existing Monitor. Final review and actionable decisions remain open.
+
+The pricing comparison uses the independently read-back [Monday 12:42 CT CBS display capture](../operational/CFB_CBS_WEEK12_TEXT_TABLE_CAPTURE_20261116T184258Z.md), blob 7a8a0501ccf999352a73098175658b15f89454db. It is a mixed-book observation at the retrieval boundary. Some opposing lines use different points and prices. No paired consensus, live venue confirmation, executable quote, or newly qualified decision is inferred. Original numbers are from the [frozen lineage](CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json) and were not recomputed.
+
+| Tuesday matchup | Official kickoff CT | Frozen model | CBS display at 12:42 CT |
+|---|---|---|---|
+| Eastern Michigan at Western Michigan (401866465) | 5:00 p.m. | WMU by 16.51, total 44.97, WMU win 82.62% | EMU +14.5 −108 / WMU −14.5 −110; EMU +500 / WMU −667; O46.5 −108 / U46.5 −110 |
+| Miami (OH) at Kent State (401866466) | 6:00 p.m. | Miami by 15.91, total 54.27, Miami win 84.54% | Miami −8.5 −105 / Kent +9.5 −112; Miami −310 / Kent +280; O45.5 −111 / U46.5 −115 |
+| Ball State at Ohio (401866464) | 6:00 p.m. | Ohio by 8.17, total 55.20, Ohio win 69.14% | Ball State +11.5 −112 / Ohio −10.5 −115; Ball State +360 / Ohio −455; O49.5 −110 / U49.5 −108 |
+
+## Material conditions and remaining evidence
+
+- **Eastern Michigan–Western Michigan.** Western's published preview confirms 6 p.m. ET, and identifies Brogan McCaughey as the starter in Eastern's prior two games in place of Noah Kim. The two programs' previews do not settle Tuesday's starting role. The frozen number is near the displayed spread and total. The favored-side moneyline is expensive relative to the frozen winner estimate. Refresh same-number spread and total pairs and resolve Eastern's quarterback status before deciding. [Western Michigan preview](https://wmubroncos.com/news/2026/11/16/football-broncos-welcome-eastern-michigan-for-tuesday-night-maction.aspx) · [Eastern Michigan preview](https://emueagles.com/news/2026/11/12/football-hits-the-road-for-a-tuesday-battle-in-kalamazoo)
+- **Miami–Kent State.** Both schools support 7 p.m. ET. Miami's official preview says its starting quarterback was knocked out of the previous game and describes the subsequent comeback, including a defensive touchdown. The display's split spread and total points cannot be treated as a single pair. Resolve the starter/availability question and refresh matched spreads, both moneylines and matched totals. The frozen spread and total differ materially from the display, making this an early recheck priority. [Miami preview](https://miamiredhawks.com/news/2026/11/13/football-redhawks-travel-to-face-kent-state-tuesday-night) · [Kent State schedule](https://kentstatesports.com/sports/football/schedule)
+- **Ball State–Ohio.** Ohio's game center confirms 7 p.m. ET. Ohio's preview reports QB Nick Poulos threw for 193 yards and rushed for 63 in its previous game. The displayed Ohio spread and moneyline ask more of the favorite than the original model's margin and winner estimate, while the displayed total is below the model. Current roster/availability, weather and independent same-number quotes remain due. [Ohio game center](https://ohiobobcats.com/game-center/9724) · [Ohio preview](https://ohiobobcats.com/news/2026/11/14/ohio-football-returns-home-to-host-ball-state)
+
+All three independent official kickoff checks agree with the CBS normalization's UTC times (23:00Z, 00:00Z and 00:00Z). No new decision/WAIT, cutoff, recommendations, parlay shortlist, authentic joint price, or Hot Sheet was published on these observations. Refresh quotes and complete material conditions during the existing afternoon Monitor. Remaining slate and publication remain open.
