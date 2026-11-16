@@ -50,6 +50,11 @@ def profile_config(profile):
         return {'week':11,'lineage':'3a337e8bdf5cd732fb76697cf2a87b2d74ba8ce9','count':67,'predictions':59,'exclusions':8,
                 'market_tag':'cfb-week11-market-v1','decision_tag':'cfb-week11-decision-v1',
                 'start':datetime(2026,11,10,tzinfo=CT),'end':datetime(2026,11,15,tzinfo=CT)}
+    if profile == 'WEEK12':
+        from cfb_cbs_full_board_normalizer import WEEK12_LINEAGE_SHA
+        return {'week':12,'lineage':WEEK12_LINEAGE_SHA,'count':70,'predictions':56,'exclusions':14,
+                'market_tag':'cfb-week12-market-v1','decision_tag':'cfb-week12-decision-v1',
+                'start':datetime(2026,11,16,tzinfo=CT),'end':datetime(2026,11,23,tzinfo=CT)}
     raise ValueError('unqualified publication profile')
 
 def keys(value,expected):
@@ -416,7 +421,15 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
         cutoff=('Reconcile '+y['reconciliation_utc'] if y['reconciliation_utc'] else 'Reconciliation unavailable')+'; planning cutoff '+(y['planning_cutoff_utc'] or 'UNAVAILABLE')+'; CUTOFF_AUTHORITY_UNVERIFIED'
         if m['schema']==WEEKLY_MARKET_SCHEMA:
             cutoff+='; state recorded '+y['state_recorded_at_utc']+('; source-declared minute precision' if y['state_evidence']==PASS_ANCESTOR else '')+'; evidence '+y['state_evidence']
-        model_display=c[gid]['display'].replace('|','&#124;') if profile in ('WEEK8','WEEK9','WEEK10','WEEK11') else c[gid]['display']
+        if profile == 'WEEK12':
+            original = c[gid]['original_numeric_strings']
+            if original is None:
+                model_display = ('FIRST_FROZEN EXCLUDED — ' + c[gid]['original_exclusion']).replace('|', '&#124;')
+            else:
+                from cfb_week7_first_frozen_projection_gate import fair
+                model_display = fair({**original, 'away_team': c[gid]['away_team'], 'home_team': c[gid]['home_team']})
+        else:
+            model_display=c[gid]['display'].replace('|','&#124;') if profile in ('WEEK8','WEEK9','WEEK10','WEEK11') else c[gid]['display']
         row=[display,c[gid]['away_team']+' @ '+c[gid]['home_team'],model_display,current,movement,y['state'],y['reason'],cutoff,'Not established; no executable recommendation']
         if y['state']=='CONDITIONAL':
             from cfb_conditional_recommendation_profile import display as conditional_display
@@ -475,6 +488,9 @@ def audit(sheet,market,decision,execution,scorecard,lineage,as_of,profile='WEEK7
 
 def bootstrap(market,decision,lineage,profile='WEEK7'):
     profile_config(profile)
+    if profile == 'WEEK12':
+        from cfb_week12_publication import bootstrap_check
+        return bootstrap_check(market,decision,lineage)
     if profile == 'WEEK11':
         from cfb_week11_publication import bootstrap_check
         return bootstrap_check(market,decision,lineage)
@@ -511,7 +527,7 @@ def bootstrap(market,decision,lineage,profile='WEEK7'):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     for n in ['market','decision','execution','scorecard','lineage']:p.add_argument('--'+n,required=True,type=Path)
-    p.add_argument('--profile',choices=('WEEK7','WEEK8','WEEK9','WEEK10','WEEK11'),default='WEEK7')
+    p.add_argument('--profile',choices=('WEEK7','WEEK8','WEEK9','WEEK10','WEEK11','WEEK12'),default='WEEK7')
     p.add_argument('--as-of',required=True);p.add_argument('--sheet',type=Path);p.add_argument('--render-output',type=Path)
     a=p.parse_args();values=[getattr(a,n).read_text() for n in ['market','decision','execution','scorecard','lineage']]
     if bool(a.sheet)==bool(a.render_output):p.error('choose exactly one --sheet or --render-output')
