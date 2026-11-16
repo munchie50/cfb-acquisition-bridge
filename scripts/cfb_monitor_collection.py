@@ -1,6 +1,7 @@
-"""Collect and verify the Week 11 Monitor input artifact. Read-only for engine state."""
+"""Collect and verify the active weekly Monitor input. Read-only for engine state."""
 
 import argparse
+from dataclasses import dataclass
 from datetime import datetime, timezone
 import hashlib
 import json
@@ -13,19 +14,53 @@ from zipfile import ZipFile
 from lxml import html
 
 import cfb_week11_publication as week
+from cfb_cbs_full_board_normalizer import WEEK12_LINEAGE_SHA, WEEK12_URL, normalize
 
 ROOT = Path(__file__).resolve().parents[1]
-LINEAGE = ROOT / "evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json"
 MARKET = ROOT / "evidence/operational/CFB_MARKET_MONITOR_STATE.md"
 PERSONNEL_URL = "https://kickoffstatus.com/"
-START = week.gate.clock("2026-11-10T00:00:00-06:00")
-END = week.gate.clock("2026-11-16T00:00:00-06:00")
-SCHEMA = "CFB_WEEK11_MONITOR_COLLECTION_V1"
 MAX_BYTES = 8_000_000
 # CBS kept both event IDs after the SEC moved the same Week 11 game.
 # https://soonersports.com/news/2026/11/14/ou-ole-miss-football-game-moved-to-sunday-at-noon
 OLE_MISS_OKLAHOMA_ORIGINAL = ("50028715", "NCAAF_20261114_MISS@OKLA")
 OLE_MISS_OKLAHOMA_RESCHEDULED = ("50051570", "NCAAF_20261115_MISS@OKLA")
+
+
+@dataclass(frozen=True)
+class CollectionProfile:
+    name: str
+    start: datetime
+    end: datetime
+    url: str
+    lineage: Path
+    lineage_blob: str
+
+    @property
+    def schema(self):
+        return f"CFB_{self.name}_MONITOR_COLLECTION_V1"
+
+
+PROFILES = (
+    CollectionProfile(
+        "WEEK11", week.gate.clock("2026-11-10T00:00:00-06:00"),
+        week.gate.clock("2026-11-16T00:00:00-06:00"), week.WEEK11_URL,
+        ROOT / "evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json",
+        week.WEEK11_LINEAGE_SHA,
+    ),
+    CollectionProfile(
+        "WEEK12", week.gate.clock("2026-11-16T00:00:00-06:00"),
+        week.gate.clock("2026-11-23T00:00:00-06:00"), WEEK12_URL,
+        ROOT / "evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json",
+        WEEK12_LINEAGE_SHA,
+    ),
+)
+
+
+def active_profile(observed):
+    for profile in PROFILES:
+        if profile.start <= observed < profile.end:
+            return profile
+    raise ValueError("no accepted collection profile at this clock")
 
 
 def git(*args):
@@ -91,15 +126,17 @@ def board_projection(payload):
 
 def inspect(payload, recovered_by):
     observed = week.gate.clock(recovered_by)
-    if not START <= observed < END:
-        raise ValueError("no accepted collection profile at this clock")
+    profile = active_profile(observed)
     capture = board_projection(payload)
-    prior = week.gate.selected_block(MARKET.read_text(), week.MARKET_TAG,
-                                     week.gate.WEEKLY_MARKET_SCHEMA, observed)
-    elapsed = {r["game_id"]: r["kickoff_utc"] for r in prior["rows"]
-               if r["kickoff_utc"] and week.gate.clock(r["kickoff_utc"]) < observed}
-    board = week.board(capture, LINEAGE.read_text(), recovered_by,
-                       retained_elapsed_kickoffs=elapsed)
+    elapsed = {}
+    if profile.name == "WEEK11":
+        prior = week.gate.selected_block(MARKET.read_text(), week.MARKET_TAG,
+                                         week.gate.WEEKLY_MARKET_SCHEMA, observed)
+        elapsed = {r["game_id"]: r["kickoff_utc"] for r in prior["rows"]
+                   if r["kickoff_utc"] and week.gate.clock(r["kickoff_utc"]) < observed}
+    board = normalize(capture, profile.lineage.read_text(), recovered_by,
+                      source_url=profile.url, profile=profile.name,
+                      retained_elapsed_kickoffs=elapsed)
     missing = {g["game_id"]: [f"{t['team']}:{k}" for t in g["team_offers"]
                             for k in ("spread", "moneyline", "total")
                             if t[k]["availability"] == "UNAVAILABLE"]
@@ -112,23 +149,25 @@ def digest(payload):
 
 
 def collect(out, run, attempt, event):
-    if not START <= utc() < END:
-        raise ValueError("no accepted collection profile at this clock")
-    raw, recovered_by = acquire(week.WEEK11_URL)
+    profile = active_profile(utc())
+    raw, recovered_by = acquire(profile.url)
+    if active_profile(week.gate.clock(recovered_by)) != profile:
+        raise ValueError("source acquisition crossed the collection profile boundary")
     capture, coverage, gaps = inspect(raw, recovered_by)
     files = {"cbs.html": raw, "capture.md": capture.encode()}
     personnel = {"url": PERSONNEL_URL, "status": "UNAVAILABLE", "recovered_by": None}
     try:
         report, personnel_at = acquire(PERSONNEL_URL)
-        if "Week 11" not in html.fromstring(report).text_content():
-            raise ValueError("personnel page does not identify Week 11")
+        label = profile.name.replace("WEEK", "Week ")
+        if label not in html.fromstring(report).text_content():
+            raise ValueError(f"personnel page does not identify {label}")
         files["personnel.html"] = report
         personnel.update(status="RAW_REPORT_REQUIRES_GAME_LEVEL_REVIEW", recovered_by=personnel_at)
     except (OSError, ValueError) as exc:
         personnel["reason"] = str(exc)[:200]
-    manifest = dict(schema=SCHEMA, profile="WEEK11", producer_head=git("rev-parse", "HEAD"),
-                    run_id=run, run_attempt=attempt, event=event, source_url=week.WEEK11_URL,
-                    recovered_by=recovered_by, lineage_blob=week.WEEK11_LINEAGE_SHA,
+    manifest = dict(schema=profile.schema, profile=profile.name, producer_head=git("rev-parse", "HEAD"),
+                    run_id=run, run_attempt=attempt, event=event, source_url=profile.url,
+                    recovered_by=recovered_by, lineage_blob=profile.lineage_blob,
                     coverage=coverage, missing_markets=gaps, personnel=personnel,
                     files={name: digest(data) for name, data in files.items()})
     out.mkdir()
@@ -147,15 +186,19 @@ def verify(archive, output, run, attempt, head, event):
                 or sum(m.file_size for m in members) > 3 * MAX_BYTES):
             raise ValueError("invalid artifact member set or size")
         manifest = json.loads(package.read("manifest.json"), object_pairs_hook=week.gate.unique)
-        expected = (SCHEMA, "WEEK11", run, attempt, head, event,
-                    week.WEEK11_URL, week.WEEK11_LINEAGE_SHA)
+        now = utc()
+        profile = active_profile(now)
+        expected = (profile.schema, profile.name, run, attempt, head, event,
+                    profile.url, profile.lineage_blob)
         fields = ("schema", "profile", "run_id", "run_attempt", "producer_head",
                   "event", "source_url", "lineage_blob")
         if tuple(manifest[k] for k in fields) != expected:
             raise ValueError("artifact identity differs from trusted run metadata")
         observed = week.gate.clock(manifest["recovered_by"])
-        if not 0 <= (utc() - observed).total_seconds() <= 900:
+        if not 0 <= (now - observed).total_seconds() <= 900:
             raise ValueError("collection package stale or future-dated")
+        if active_profile(observed) != profile:
+            raise ValueError("artifact observed in a different collection profile")
         subprocess.run(["git", "-C", str(ROOT), "merge-base", "--is-ancestor", head,
                         "HEAD"], check=True)
         files = {name: package.read(name) for name in names if name != "manifest.json"}

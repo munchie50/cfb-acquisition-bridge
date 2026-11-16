@@ -53,9 +53,14 @@ jobs:
             --archive "$RUNNER_TEMP/collection.zip" --output "$RUNNER_TEMP/verified" \
             --run "$GITHUB_RUN_ID" --attempt "$GITHUB_RUN_ATTEMPT" \
             --head "$GITHUB_SHA" --event "$GITHUB_EVENT_NAME" > "$RUNNER_TEMP/proof/source.json"
+          profile="$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["profile"])' "$RUNNER_TEMP/proof/source.json")"
+          echo "profile=$profile" >> "$GITHUB_OUTPUT"
+          if [ "$profile" = WEEK12 ]; then
+            echo "Week 12 source verified. Compiler preflight awaits a qualified Week 12 compiler." >> "$GITHUB_STEP_SUMMARY"
+          fi
       - name: Compile and audit a read-only preflight draft
         id: preflight_compile
-        if: steps.preflight_source.outcome == 'success'
+        if: steps.preflight_source.outcome == 'success' && steps.preflight_source.outputs.profile == 'WEEK11'
         continue-on-error: true
         timeout-minutes: 1
         env:
