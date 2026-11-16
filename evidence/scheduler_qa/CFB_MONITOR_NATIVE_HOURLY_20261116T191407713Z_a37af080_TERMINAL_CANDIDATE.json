@@ -1,0 +1,201 @@
+{
+  "schema": "CFB_MONITOR_NATIVE_HOURLY_TERMINAL_CANDIDATE_v1",
+  "task_id": "6ac4e807aaac8191b3255fae8ab82577",
+  "invocation_run_id": "a37af080-a610-8328-91d8-b9bc3e7ec706",
+  "correlation_id": "20261116T191407713Z_a37af080",
+  "nominal_slot_utc": "2026-11-16T19:12:00Z",
+  "actual_started_at_utc": "2026-11-16T19:13:10.220677Z",
+  "candidate_recorded_at_utc": "2026-11-16T19:17:41.135Z",
+  "verdict": "BOUNDARY_PASS",
+  "execution_scope": "QA_ONLY",
+  "started": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T191407713Z_a37af080_STARTED.json",
+    "blob": "7c6dc3eb5ec9e1eb696c26ed27ffefee52f9aa26",
+    "independent_exact_readback": true
+  },
+  "runtime_metadata": {
+    "environment_selection_reported": "inherited",
+    "environments_reported": null,
+    "stable_worker_identity": "UNAVAILABLE_NOT_INFERRED"
+  },
+  "authority": {
+    "pinned_main": "9ed35fd50cab3b9b04597f8372ce1bc04a4ba099",
+    "recovery": {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_290.md",
+      "blob": "f7d4db46ae089d4bd6c7258bc30bdb0f943cbb4a",
+      "complete_connector_read": true,
+      "chars": 149681
+    },
+    "persistence": {
+      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
+      "blob": "bf4383f28cca17e3994339340a62d81962d26bfa",
+      "complete_connector_read": true,
+      "chars": 39092
+    },
+    "closure": {
+      "path": "evidence/CFB_TERMINAL_RUN_RECEIPT_CLOSURE_CONTRACT_2026-10-05.md",
+      "blob": "501cda05d80229402a485493f10b1a4bbb76d3b8",
+      "complete_connector_read": true,
+      "chars": 3943
+    }
+  },
+  "prior_hourly_pairing": {
+    "earlier_hourly_result_found": false,
+    "observation": "Fresh scheduler_qa directory enumeration found only this invocation's STARTED artifact under the CFB_MONITOR_NATIVE_HOURLY prefix."
+  },
+  "measured_layers": {
+    "orchestration": {
+      "functions_exec": true,
+      "documented_exec_command": true,
+      "shell_execution": "PASS",
+      "python": "3.12.14",
+      "git": "git version 2.52.0"
+    },
+    "connector_transfer": {
+      "path": "scripts/cfb_runtime_checkout.py",
+      "ref": "9ed35fd50cab3b9b04597f8372ce1bc04a4ba099",
+      "authenticated_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "response_encoding": "base64",
+      "response_chars": 5124,
+      "normalized_base64_chars": 5040,
+      "decoded_bytes": 3780,
+      "strict_decode_after_documented_whitespace_normalization": "PASS",
+      "manual_git_blob_sha1": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "git_hash_object": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "exact_match": true,
+      "no_transcription_or_patching": true,
+      "initial_raw_strict_decode_note": "Raw response includes base64 line breaks; strict decode before whitespace normalization returned binascii.Error: Only base64 data is allowed. No bytes were written by that rejected attempt."
+    },
+    "connectivity": {
+      "raw_dns": {
+        "github.com": {
+          "success": false,
+          "error_type": "gaierror",
+          "error_code": -3
+        },
+        "api.github.com": {
+          "success": false,
+          "error_type": "gaierror",
+          "error_code": -3
+        }
+      },
+      "proxy_environment_key_presence": {
+        "HTTP_PROXY": true,
+        "HTTPS_PROXY": true,
+        "ALL_PROXY": true,
+        "NO_PROXY": true,
+        "http_proxy": true,
+        "https_proxy": true,
+        "all_proxy": true,
+        "no_proxy": true
+      },
+      "git_ls_remote": {
+        "success": true,
+        "head": "9ed35fd50cab3b9b04597f8372ce1bc04a4ba099"
+      },
+      "urllib_environment_default": {
+        "success": true,
+        "http_status": 200,
+        "decoded_bytes": 3780,
+        "exact_blob_match": true
+      },
+      "urllib_ProxyHandler_empty": {
+        "success": false,
+        "error_type": "URLError",
+        "reason_type": "gaierror",
+        "reason_code": -3
+      },
+      "interpretation": "This runtime's sanctioned default proxy-aware routes work while raw DNS and the no-proxy control fail. No proxy values, endpoints, traces, credentials, or global settings were read or changed."
+    },
+    "helper": {
+      "executions": 1,
+      "exit_code": 0,
+      "status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+      "exact_head": true,
+      "head": "9ed35fd50cab3b9b04597f8372ce1bc04a4ba099",
+      "shallow_repository": false,
+      "full_ancestry": true,
+      "commit_count": 4238,
+      "immutable_review_count": 60,
+      "stderr_bytes": 0
+    },
+    "current_prerequisites": {
+      "week12_compiler": {
+        "path": "scripts/cfb_week12_publication.py",
+        "blob": "8656a3f8cc511715fc3a7a5905de1d5b2e3055bf",
+        "bytes": 10782,
+        "syntax": "PASS",
+        "import": "PASS"
+      },
+      "cbs_collector": {
+        "path": "scripts/cfb_monitor_collection.py",
+        "blob": "7f379b082d3c1676a87f456856ccc7fe1fbe43c0",
+        "bytes": 10672,
+        "syntax": "PASS",
+        "import": "PASS"
+      },
+      "cbs_normalizer": {
+        "path": "scripts/cfb_cbs_full_board_normalizer.py",
+        "blob": "35536c3e4988640935e7754be08c3ec464e29215",
+        "bytes": 9832,
+        "syntax": "PASS",
+        "import": "PASS"
+      }
+    }
+  },
+  "comparison": {
+    "oct29_natural_morning": {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261029T115755Z_TERMINAL_CANDIDATE.md",
+      "blob": "4a50f42f25feb409531dcba2e1f30f0867babcee",
+      "helper_checkout": "PASS"
+    },
+    "oct29_natural_afternoon": {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261029T180541Z_TERMINAL_CANDIDATE.md",
+      "blob": "e97a0723bc6a7d5c1572ceb2e1d1e24d53288c8f",
+      "helper_checkout": "PASS"
+    },
+    "nov8_scheduled_capability": {
+      "path": "evidence/scheduler_qa/CFB_CAPABILITY_20261108T160501Z_lgb8ogo_RESULT.json",
+      "blob": "9c0687a2a2884b6ace78ce3112b6f04da2746047",
+      "verdict": "BOUNDARY_PASS"
+    },
+    "nov16_production": {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261116T185552Z_299da847_RUN_CLOSURE.md",
+      "blob": "72cebb8315605e7adb097627c2d78a0a1b8a2ac4",
+      "verdict": "RUN_INCOMPLETE",
+      "reported_boundary": "connector-to-runtime handoff unavailable and immutable REST fallback DNS failure"
+    },
+    "differential": {
+      "path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_RUNTIME_PROXY_DIFFERENTIAL_20261116.md",
+      "blob": "72522ef47b849e7435f5d914de8df2c4c89c6b03"
+    }
+  },
+  "first_difference": "Unlike the Nov 16 13 CT production invocation, this actual hourly invocation exposed documented exec_command, completed exact connector-to-runtime transfer, and had working sanctioned proxy-aware GitHub transport; helper execution and checkout therefore completed.",
+  "observed_capabilities": [
+    "scheduled dispatch",
+    "GitHub QA write/readback",
+    "shell Python/Git",
+    "structured connector-to-runtime transfer",
+    "proxy-aware Git and urllib",
+    "unchanged helper checkout",
+    "full ancestry and 60-review verification",
+    "Week 12 compiler/collector syntax and import"
+  ],
+  "unknowns": [
+    "stable worker identity",
+    "host parity with Oct 29 or Nov 16 production workers",
+    "whether the next production Market Monitor receives the same provisioning",
+    "end-to-end fresh acquisition/publication reliability"
+  ],
+  "next_discriminating_observation": "Measure the same handoff, proxy-aware transport, and helper status in the next hourly invocation and the next natural production invocation; compare by actual run ID rather than wall clock.",
+  "supported_reversible_restoration_not_applied": "Assign the existing production Market Monitor to the supported execution-capable environment class that exposes documented connector-to-runtime transfer and sanctioned proxy-aware GitHub transport, preserving prompt, cadence, and sole publication authority; then verify by a natural production run. Current automation controls do not expose a safe environment-assignment field.",
+  "production_effect": "ZERO",
+  "forbidden_work_not_performed": [
+    "no fresh CBS request",
+    "no decisions or publication",
+    "no production artifact mutation",
+    "no task/schedule/worker/network/workflow/model/market/Hot Sheet/wager/ledger change",
+    "no GitHub Actions dispatch"
+  ],
+  "candidate_self_certification": false
+}
