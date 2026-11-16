@@ -1,0 +1,187 @@
+{
+  "schema": "CFB_MONITOR_NATIVE_HOURLY_TERMINAL_CANDIDATE_v1",
+  "task_id": "6ac4e807aaac8191b3255fae8ab82577",
+  "invocation_run_id": "c35e6357-2424-8320-90fc-a2f0d035eb42",
+  "correlation_id": "20261116T205917860Z_c35e6357",
+  "nominal_slot_utc": "2026-11-16T21:00:00Z",
+  "actual_started_at_utc": "2026-11-16T20:59:00.823144Z",
+  "candidate_recorded_at_utc": "2026-11-16T21:00:48.878Z",
+  "verdict": "TEST_INCOMPLETE",
+  "first_unavailable_stage": "SHELL_EXECUTION_ENVIRONMENT",
+  "exact_first_error": "No usable execution environment is available. Wait for an environment to become available before using this tool.",
+  "started": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T205917860Z_c35e6357_STARTED.json",
+    "blob": "91e1122095ce2e22b2d88a2287004cac2072bdfc",
+    "independent_exact_readback": true
+  },
+  "timing": {
+    "dispatch_delta_seconds": -59.176856,
+    "interpretation": "Observed early start relative to recorded nominal slot; no exact-second adherence or causation inferred."
+  },
+  "runtime_metadata": {
+    "environment_selection_reported": "inherited",
+    "environments_reported": null,
+    "executor_environment_availability": "unavailable",
+    "stable_worker_identity": "UNAVAILABLE_NOT_INFERRED"
+  },
+  "authority": {
+    "pinned_main": "217cd4dce59288b1980b67eceda208a9e4c3a398",
+    "recovery": {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_290.md",
+      "blob": "f7d4db46ae089d4bd6c7258bc30bdb0f943cbb4a",
+      "complete_connector_read": true,
+      "chars": 149681
+    },
+    "persistence": {
+      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
+      "blob": "bf4383f28cca17e3994339340a62d81962d26bfa",
+      "complete_connector_read": true,
+      "chars": 39092
+    },
+    "closure": {
+      "path": "evidence/CFB_TERMINAL_RUN_RECEIPT_CLOSURE_CONTRACT_2026-10-05.md",
+      "blob": "501cda05d80229402a485493f10b1a4bbb76d3b8",
+      "complete_connector_read": true,
+      "chars": 3943
+    }
+  },
+  "prior_hourly_pairing": {
+    "candidate_path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T195908405Z_28f0d585_TERMINAL_CANDIDATE.json",
+    "candidate_blob": "c96e25e4dd749719374c6e388c9a904c83c0a2d0",
+    "closure_path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T195908405Z_28f0d585_CLOSURE.json",
+    "closure_blob": "fc082161454e0eb5c19219feaaa849d20e2cbba9",
+    "prior_verdict": "BOUNDARY_PASS",
+    "current_difference": "Prior two hourly invocations exposed a usable executor and completed helper checkout; this invocation reports the execution environment unavailable before any shell command."
+  },
+  "measured_layers": {
+    "scheduling_dispatch": {
+      "outcome": "OBSERVED",
+      "receipt_persisted": true
+    },
+    "github_connector": {
+      "outcome": "PASS",
+      "authenticated_main": "217cd4dce59288b1980b67eceda208a9e4c3a398",
+      "qa_write_readback": "PASS"
+    },
+    "connector_payload_verification": {
+      "outcome": "PASS_WITHIN_ORCHESTRATION_ISOLATE",
+      "path": "scripts/cfb_runtime_checkout.py",
+      "ref": "217cd4dce59288b1980b67eceda208a9e4c3a398",
+      "authenticated_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "response_encoding": "base64",
+      "response_chars": 5124,
+      "decoded_bytes": 3780,
+      "independent_git_blob_sha1": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "exact_match": true,
+      "method": "Complete connector response decoded strictly and Git blob SHA-1 recomputed in functions.exec isolate; no transcription, patching, or filesystem write.",
+      "limitation": "Verified bytes could not be handed to an OS filesystem because no usable executor was available."
+    },
+    "orchestration": {
+      "functions_exec": true,
+      "documented_exec_command": true,
+      "actual_python_git_probe": "UNAVAILABLE",
+      "exact_error": "No usable execution environment is available. Wait for an environment to become available before using this tool.",
+      "inference": "This is an explicit environment-availability failure, not evidence from a missing alias."
+    },
+    "dns": {
+      "github.com": "UNEXECUTED_NO_EXECUTOR",
+      "api.github.com": "UNEXECUTED_NO_EXECUTOR"
+    },
+    "proxy_environment_key_presence": "UNAVAILABLE_NO_EXECUTOR",
+    "git_ls_remote": "UNEXECUTED_NO_EXECUTOR",
+    "urllib_environment_default": "UNEXECUTED_NO_EXECUTOR",
+    "urllib_ProxyHandler_empty": "UNEXECUTED_NO_EXECUTOR",
+    "helper": {
+      "executions": 0,
+      "status": "UNEXECUTED_NO_EXECUTOR",
+      "checkout": "UNVERIFIED"
+    },
+    "current_prerequisites": {
+      "week12_compiler": {
+        "path": "scripts/cfb_week12_publication.py",
+        "blob": "8656a3f8cc511715fc3a7a5905de1d5b2e3055bf",
+        "chars": 10782,
+        "connector_presence": "PASS",
+        "syntax": "UNEXECUTED_NO_EXECUTOR",
+        "import": "UNEXECUTED_NO_EXECUTOR"
+      },
+      "cbs_collector": {
+        "path": "scripts/cfb_monitor_collection.py",
+        "blob": "7f379b082d3c1676a87f456856ccc7fe1fbe43c0",
+        "chars": 10672,
+        "connector_presence": "PASS",
+        "syntax": "UNEXECUTED_NO_EXECUTOR",
+        "import": "UNEXECUTED_NO_EXECUTOR"
+      },
+      "cbs_normalizer": {
+        "path": "scripts/cfb_cbs_full_board_normalizer.py",
+        "blob": "35536c3e4988640935e7754be08c3ec464e29215",
+        "chars": 9830,
+        "connector_presence": "PASS",
+        "syntax": "UNEXECUTED_NO_EXECUTOR",
+        "import": "UNEXECUTED_NO_EXECUTOR"
+      }
+    }
+  },
+  "historical_comparison": {
+    "oct29_morning": {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261029T115755Z_TERMINAL_CANDIDATE.md",
+      "blob": "4a50f42f25feb409531dcba2e1f30f0867babcee",
+      "helper_checkout": "PASS"
+    },
+    "oct29_afternoon": {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261029T180541Z_TERMINAL_CANDIDATE.md",
+      "blob": "e97a0723bc6a7d5c1572ceb2e1d1e24d53288c8f",
+      "helper_checkout": "PASS"
+    },
+    "nov8_capability": {
+      "path": "evidence/scheduler_qa/CFB_CAPABILITY_20261108T160501Z_lgb8ogo_RESULT.json",
+      "blob": "9c0687a2a2884b6ace78ce3112b6f04da2746047",
+      "verdict": "BOUNDARY_PASS"
+    },
+    "nov16_production": {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261116T185552Z_299da847_RUN_CLOSURE.md",
+      "blob": "72cebb8315605e7adb097627c2d78a0a1b8a2ac4",
+      "verdict": "RUN_INCOMPLETE"
+    },
+    "differential": {
+      "path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_RUNTIME_PROXY_DIFFERENTIAL_20261116.md",
+      "blob": "72522ef47b849e7435f5d914de8df2c4c89c6b03"
+    }
+  },
+  "first_difference": "The third hourly invocation retained scheduler dispatch and GitHub connector read/write/byte verification, but lost the usable execution environment that the preceding two hourly invocations had.",
+  "hypothesis_update": {
+    "scheduling_dispatch": "EXONERATED_FOR_THIS_INVOCATION",
+    "github_connector": "EXONERATED_FOR_READ_WRITE_AND_EXACT_PAYLOAD_BYTES",
+    "runtime_tool_provisioning": "OBSERVED_INTERMITTENT_FAILURE",
+    "structured_connector_to_os_transfer": "BLOCKED_BY_NO_EXECUTOR",
+    "proxy_aware_connectivity": "UNKNOWN_THIS_INVOCATION",
+    "helper_checkout": "UNKNOWN_THIS_INVOCATION",
+    "compiler_prerequisites": "CONNECTOR_PRESENCE_PROVED_EXECUTABILITY_UNKNOWN"
+  },
+  "observed_capabilities": [
+    "scheduled dispatch",
+    "GitHub QA persistence/readback",
+    "complete connector base64 response",
+    "independent helper byte count and Git blob SHA-1 in orchestration isolate"
+  ],
+  "unknowns": [
+    "why executor provisioning changed between hourly invocations",
+    "stable worker identity",
+    "DNS and proxy disposition in this invocation",
+    "helper checkout and compiler import",
+    "production host parity"
+  ],
+  "next_discriminating_observation": "Check whether the next hourly invocation regains an executor under the same task and prompt. Alternation between PASS and no-executor under identical task definition would isolate intermittent runtime provisioning above Git, DNS, helper, and compiler layers.",
+  "supported_reversible_restoration_not_applied": "Restore or pin the existing production Market Monitor to an execution-capable environment class with documented connector-to-runtime transfer and sanctioned GitHub transport, preserving prompt, cadence, and publication authority. No safe environment-assignment control is exposed here.",
+  "production_effect": "ZERO",
+  "forbidden_work_not_performed": [
+    "no fresh CBS request",
+    "no helper execution",
+    "no decisions or publication",
+    "no production artifact mutation",
+    "no task/schedule/worker/network/workflow/model/market/Hot Sheet/wager/ledger change",
+    "no GitHub Actions dispatch"
+  ],
+  "candidate_self_certification": false
+}
