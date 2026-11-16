@@ -1,14 +1,16 @@
-"""Build and verify Week 12 neutral proposals from a retained CBS capture."""
+"""Build and verify Week 12 publication proposals from a retained CBS capture."""
 
 import json
 from pathlib import Path
 import re
+from urllib.parse import urlparse
 
 import cfb_neutral_publication_gate as gate
 from cfb_cbs_full_board_normalizer import WEEK12_LINEAGE_SHA, WEEK12_URL, normalize
 from cfb_neutral_publication_legacy_replay import packet
 from cfb_neutral_weekly_reconciliation import board_offer
 from cfb_week8_publication import apply
+from cfb_conditional_recommendation_profile import load_review
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -65,8 +67,8 @@ def bootstrap_check(market, decision, lineage):
     declarations = []
     packets = []
     for content, parent, tag, schema in (
-        (market, MARKET_PARENT, CFG['market_tag'], gate.WEEKLY_MARKET_SCHEMA),
-        (decision, DECISION_PARENT, CFG['decision_tag'], gate.WEEKLY_DECISION_SCHEMA),
+        (market, MARKET_PARENT, CFG['market_tag'], (gate.WEEKLY_MARKET_SCHEMA,)),
+        (decision, DECISION_PARENT, CFG['decision_tag'], gate.WEEKLY_DECISION_SCHEMAS),
     ):
         root = list(re.finditer(r'^\x60\x60\x60' + SOURCE_TAG + r'\n(.*?)^\x60\x60\x60[ \t]*$', content, re.M | re.S))
         if len(root) != 1 or gate.blob(content[:root[0].start()]) != parent:
@@ -82,8 +84,8 @@ def bootstrap_check(market, decision, lineage):
         if not matches or re.sub(pattern, '', tail, flags=re.M | re.S).strip():
             raise ValueError('missing or untyped Week12 packet stream')
         stream = [json.loads(match[1], object_pairs_hook=gate.unique) for match in matches]
-        if any(obj['schema'] != schema for obj in stream):
-            raise ValueError('unsupported Week12 neutral schema')
+        if any(obj['schema'] not in schema for obj in stream):
+            raise ValueError('unsupported Week12 publication schema')
         packets.append(stream)
     if declarations[0] != declarations[1]:
         raise ValueError('Week12 source roots disagree')
@@ -94,9 +96,16 @@ def bootstrap_check(market, decision, lineage):
     if boundaries(packets[0]) != boundaries(packets[1]):
         raise ValueError('Week12 market and decision packet boundaries disagree')
     first = packets[0][0]
-    if first['rows'] != initial_rows(declarations[0]['first_source'], lineage, first['as_of_utc']):
+    expected = initial_rows(declarations[0]['first_source'], lineage, first['as_of_utc'])
+    expected_by_id = {row['game_id']: row for row in expected}
+    for row in packets[1][0]['rows']:
+        if row['state'] == 'CONDITIONAL':
+            qualify_kickoff(expected_by_id[row['game_id']], row)
+    if first['rows'] != expected:
         raise ValueError('Week12 opening rows differ from retained capture')
     gate.inputs(market, decision, lineage, packets[0][-1]['as_of_utc'], PROFILE)
+    if packets[1][-1]['schema'] == gate.CONDITIONAL_DECISION_SCHEMA:
+        return 'PASS_WEEK12_CONDITIONAL_PROPOSAL_ONLY'
     return 'PASS_WEEK12_OPENING_NEUTRAL_PROPOSAL_ONLY' if len(packets[0]) == 1 else 'PASS_WEEK12_NEUTRAL_CONTINUATION_ONLY'
 
 
@@ -124,6 +133,21 @@ def refresh_rows(prior, source, lineage, as_of):
     return list(rows.values())
 
 
+def qualify_kickoff(source_row, decision_row):
+    content, _ = load_review(decision_row['review_ref'])
+    review = json.loads(content, object_pairs_hook=gate.unique)
+    reference = review['market_reference']
+    if (review['game_id'] != source_row['game_id']
+            or review['original_lineage_blob'] != WEEK12_LINEAGE_SHA
+            or reference['kickoff_utc'] != source_row['kickoff_utc']):
+        raise ValueError('Week12 review/source kickoff or lineage mismatch')
+    kickoff_source = urlparse(reference['kickoff_source_url'])
+    if (kickoff_source.hostname in ('cbssports.com', 'www.cbssports.com')
+            and kickoff_source.path.rstrip('/').lower().startswith('/college-football/odds')):
+        raise ValueError('CBS display alone cannot qualify conditional kickoff')
+    source_row.update(kickoff_status='QUALIFIED', kickoff_source_url=reference['kickoff_source_url'])
+
+
 def compile(market, decision, source, lineage, cycle, as_of, decision_rows):
     prior = None
     root = ''
@@ -139,29 +163,44 @@ def compile(market, decision, source, lineage, cycle, as_of, decision_rows):
         root = packet(dict(profile=PROFILE, lineage_blob=WEEK12_LINEAGE_SHA,
                            first_source=source), SOURCE_TAG).lstrip('\n')
 
-    kickoffs = {row['game_id']: row['kickoff_utc'] for row in source_rows}
+    sources = {row['game_id']: row for row in source_rows}
+    conditional = (any(row.get('state') == 'CONDITIONAL' for row in decision_rows)
+                   or (prior is not None and prior[1]['schema'] == gate.CONDITIONAL_DECISION_SCHEMA))
     rows = []
-    for row in decision_rows:
+    for candidate in decision_rows:
+        row = dict(candidate)
+        if conditional:
+            row.setdefault('review_ref', None)
         gate.keys(row, ['game_id', 'state', 'reason', 'reconciliation_utc',
                         'planning_cutoff_utc', 'cutoff_authority',
-                        'acceptable_number', 'execution_window'])
-        if row['state'] not in ('PASS', 'INCONCLUSIVE'):
-            raise ValueError('earned richer decision requires a qualified Week12 continuation')
+                        'acceptable_number', 'execution_window']
+                  + (['review_ref'] if conditional else []))
+        if row['state'] not in ('PASS', 'INCONCLUSIVE', 'CONDITIONAL'):
+            raise ValueError('unsupported Week12 decision state')
+        source_row = sources.get(row['game_id'])
+        if source_row is None:
+            raise ValueError('unknown Week12 decision identity')
         old = prior[4].get(row['game_id']) if prior else None
-        if old and old['state'] == row['state'] == 'PASS':
-            prior_terms = {k: old[k] for k in row}
-            kickoff = kickoffs[row['game_id']]
-            if kickoff and gate.clock(kickoff) <= gate.clock(as_of) and row != prior_terms:
-                raise ValueError('elapsed PASS cannot rewrite pregame decision')
-            rows.append(dict(row, state_recorded_at_utc=old['state_recorded_at_utc'],
-                             state_evidence=old['state_evidence']))
-        else:
-            rows.append(dict(row, state_recorded_at_utc=as_of, state_evidence=cycle))
+        saved = {k: v for k, v in old.items() if k not in ('state_recorded_at_utc', 'state_evidence')} if old else None
+        retained = old and gate.closed_conditional(old, as_of) and row == saved
+        if row['state'] == 'CONDITIONAL' and not retained:
+            qualify_kickoff(source_row, row)
+        same_pass = old and old['state'] == row['state'] == 'PASS'
+        if same_pass:
+            kickoff = source_row['kickoff_utc']
+            if kickoff and gate.clock(kickoff) <= gate.clock(as_of):
+                comparable = {k: v for k, v in row.items() if k != 'review_ref' or k in saved}
+                if comparable != saved:
+                    raise ValueError('elapsed PASS cannot rewrite pregame decision')
+        origin = old if same_pass or retained else None
+        rows.append(dict(row, state_recorded_at_utc=origin['state_recorded_at_utc'] if origin else as_of,
+                         state_evidence=origin['state_evidence'] if origin else cycle))
 
     def boundary(schema, rows):
         return dict(schema=schema, cycle_id=cycle, as_of_utc=as_of, rows=rows)
 
     market += root + packet(boundary(gate.WEEKLY_MARKET_SCHEMA, source_rows), CFG['market_tag']).lstrip('\n')
-    decision += root + packet(boundary(gate.WEEKLY_DECISION_SCHEMA, rows), CFG['decision_tag']).lstrip('\n')
+    schema = gate.CONDITIONAL_DECISION_SCHEMA if conditional else gate.WEEKLY_DECISION_SCHEMA
+    decision += root + packet(boundary(schema, rows), CFG['decision_tag']).lstrip('\n')
     bootstrap_check(market, decision, lineage)
     return market, decision
