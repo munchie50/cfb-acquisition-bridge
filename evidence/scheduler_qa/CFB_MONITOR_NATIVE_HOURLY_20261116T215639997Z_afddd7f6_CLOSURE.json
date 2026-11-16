@@ -1,0 +1,48 @@
+{
+  "schema": "CFB_MONITOR_NATIVE_HOURLY_CLOSURE_v1",
+  "task_id": "6ac4e807aaac8191b3255fae8ab82577",
+  "invocation_run_id": "afddd7f6-27a8-832b-bd64-621c9627dc99",
+  "correlation_id": "20261116T215639997Z_afddd7f6",
+  "closed_at_utc": "2026-11-16T21:58:42.073Z",
+  "terminal_status": "TEST_INCOMPLETE",
+  "first_unavailable_stage": "SHELL_EXECUTION_ENVIRONMENT",
+  "exact_first_error": "No usable execution environment is available. Wait for an environment to become available before using this tool.",
+  "started": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T215639997Z_afddd7f6_STARTED.json",
+    "blob": "db12221270d16243a2262ac9db21138edd33999d",
+    "exact_readback": true
+  },
+  "terminal_candidate": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T215639997Z_afddd7f6_TERMINAL_CANDIDATE.json",
+    "blob": "7b976acd610f0c898237a37db9397d03ce363e63",
+    "chars": 8021,
+    "exact_readback": true
+  },
+  "prior_hourly_candidate": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T205917860Z_c35e6357_TERMINAL_CANDIDATE.json",
+    "blob": "343a57531637c8597aa6fc5d3a4b1828a86e8c30",
+    "verdict": "TEST_INCOMPLETE"
+  },
+  "paired_result": "SECOND_CONSECUTIVE_NO_EXECUTOR_AFTER_TWO_BOUNDARY_PASS_INVOCATIONS",
+  "phase_proof": {
+    "scheduled_dispatch": "OBSERVED",
+    "github_connector_read_write": "PASS",
+    "exact_helper_connector_payload": "PASS_3780_BYTES_b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "shell": "UNAVAILABLE_EXPLICIT_ENVIRONMENT_ERROR",
+    "dns": "UNEXECUTED",
+    "proxy_comparison": "UNEXECUTED",
+    "git_ls_remote": "UNEXECUTED",
+    "urllib": "UNEXECUTED",
+    "unchanged_helper": "UNEXECUTED",
+    "checkout": "UNVERIFIED",
+    "week12_compiler_collector": "CONNECTOR_PRESENCE_PASS_EXECUTABILITY_UNVERIFIED"
+  },
+  "classification": "A second consecutive invocation lacked any usable executor while scheduler dispatch, GitHub persistence, and exact helper-byte verification remained healthy. The first unavailable boundary is runtime provisioning, before DNS, Git, helper, or compiler execution.",
+  "first_difference_from_immediately_prior_hourly": "NONE; the no-executor boundary repeated.",
+  "next_observation": "Observe whether a later invocation regains the executor; recovery would demonstrate alternating provisioning, while continued absence would demonstrate a sustained post-pass state change.",
+  "supported_reversible_restoration_not_applied": "Restore or pin production to an execution-capable environment class while preserving prompt and cadence; no safe assignment control is exposed here.",
+  "production_effect": "ZERO",
+  "task_or_schedule_mutation": "NONE",
+  "closure_issued_after_candidate_exact_readback": true,
+  "closure_self_certification": false
+}
