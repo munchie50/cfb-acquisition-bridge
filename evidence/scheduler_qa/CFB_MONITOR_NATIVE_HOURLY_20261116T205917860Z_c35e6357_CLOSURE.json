@@ -1,0 +1,48 @@
+{
+  "schema": "CFB_MONITOR_NATIVE_HOURLY_CLOSURE_v1",
+  "task_id": "6ac4e807aaac8191b3255fae8ab82577",
+  "invocation_run_id": "c35e6357-2424-8320-90fc-a2f0d035eb42",
+  "correlation_id": "20261116T205917860Z_c35e6357",
+  "closed_at_utc": "2026-11-16T21:01:56.100Z",
+  "terminal_status": "TEST_INCOMPLETE",
+  "first_unavailable_stage": "SHELL_EXECUTION_ENVIRONMENT",
+  "exact_first_error": "No usable execution environment is available. Wait for an environment to become available before using this tool.",
+  "started": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T205917860Z_c35e6357_STARTED.json",
+    "blob": "91e1122095ce2e22b2d88a2287004cac2072bdfc",
+    "exact_readback": true
+  },
+  "terminal_candidate": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T205917860Z_c35e6357_TERMINAL_CANDIDATE.json",
+    "blob": "343a57531637c8597aa6fc5d3a4b1828a86e8c30",
+    "chars": 8776,
+    "exact_readback": true
+  },
+  "prior_hourly_candidate": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T195908405Z_28f0d585_TERMINAL_CANDIDATE.json",
+    "blob": "c96e25e4dd749719374c6e388c9a904c83c0a2d0",
+    "verdict": "BOUNDARY_PASS"
+  },
+  "paired_result": "FIRST_CROSS_HOURLY_CAPABILITY_BREAK_AFTER_TWO_BOUNDARY_PASS_INVOCATIONS",
+  "phase_proof": {
+    "scheduled_dispatch": "OBSERVED",
+    "github_connector_read_write": "PASS",
+    "exact_helper_connector_payload": "PASS_3780_BYTES_b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "shell": "UNAVAILABLE_EXPLICIT_ENVIRONMENT_ERROR",
+    "dns": "UNEXECUTED",
+    "proxy_comparison": "UNEXECUTED",
+    "git_ls_remote": "UNEXECUTED",
+    "urllib": "UNEXECUTED",
+    "unchanged_helper": "UNEXECUTED",
+    "checkout": "UNVERIFIED",
+    "week12_compiler_collector": "CONNECTOR_PRESENCE_PASS_EXECUTABILITY_UNVERIFIED"
+  },
+  "classification": "This is not a DNS, Git, helper, or compiler failure: execution stopped one layer earlier because no usable executor was provisioned. Connector-side exact bytes and QA persistence still worked.",
+  "first_difference": "The prior two hourly invocations had a working executor; this invocation did not, under the same task and prompt.",
+  "next_observation": "Determine whether the next hourly invocation regains the executor. Alternation under the same task definition would directly demonstrate intermittent runtime provisioning.",
+  "supported_reversible_restoration_not_applied": "Restore or pin production to an execution-capable environment class while preserving prompt and cadence; no safe assignment control is exposed in this invocation.",
+  "production_effect": "ZERO",
+  "task_or_schedule_mutation": "NONE",
+  "closure_issued_after_candidate_exact_readback": true,
+  "closure_self_certification": false
+}
