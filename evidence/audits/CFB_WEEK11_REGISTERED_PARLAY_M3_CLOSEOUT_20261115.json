@@ -1,0 +1,368 @@
+{
+  "schema": "CFB_WEEK11_REGISTERED_PARLAY_M3_CLOSEOUT_V1",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK11_FRIDAY_PARLAY_QUOTE_CAPTURE_QUEUE_20261112.json",
+      "blob": "3f72aa2bd1fc67171a0130dbef28b83cc558169b"
+    },
+    {
+      "path": "evidence/operational/CFB_WEEK11_OFFICIAL_OUTCOME_QA_20261115_R1.json",
+      "blob": "99f12421f23bc74f3e6da67cc2c628b3622bfe2a"
+    }
+  ],
+  "scope": "Outcome-only closure for the preregistered 15 builds. All lost on fixed lines, zero had qualified combined sportsbook quotes. No portfolio return, funded execution or financial entry is inferred.",
+  "legs": [
+    {
+      "rank": 1,
+      "game_id": "401856888",
+      "team": "Tennessee",
+      "line": -2.5,
+      "minimum_price": -115,
+      "thursday_display": -114,
+      "display_pass": true,
+      "final": [
+        22,
+        7
+      ],
+      "grade": "WIN"
+    },
+    {
+      "rank": 2,
+      "game_id": "401856858",
+      "team": "Baylor",
+      "line": 7.5,
+      "minimum_price": -118,
+      "thursday_display": -112,
+      "display_pass": true,
+      "final": [
+        7,
+        28
+      ],
+      "grade": "LOSS"
+    },
+    {
+      "rank": 3,
+      "game_id": "401870752",
+      "team": "Jacksonville State",
+      "line": -7.5,
+      "minimum_price": -105,
+      "thursday_display": 100,
+      "display_pass": true,
+      "final": [
+        24,
+        34
+      ],
+      "grade": "LOSS"
+    },
+    {
+      "rank": 4,
+      "game_id": "401856883",
+      "team": "Georgia",
+      "line": -15.5,
+      "minimum_price": -110,
+      "thursday_display": -110,
+      "display_pass": true,
+      "final": [
+        21,
+        48
+      ],
+      "grade": "WIN"
+    },
+    {
+      "rank": 5,
+      "game_id": "401862827",
+      "team": "North Texas",
+      "line": -2.5,
+      "minimum_price": -105,
+      "thursday_display": -108,
+      "display_pass": false,
+      "final": [
+        16,
+        35
+      ],
+      "grade": "LOSS"
+    }
+  ],
+  "builds": [
+    {
+      "ranks": [
+        1,
+        2,
+        3
+      ],
+      "ids": [
+        "401856888",
+        "401856858",
+        "401870752"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        2,
+        3
+      ],
+      "qualified_combined_offer": null
+    },
+    {
+      "ranks": [
+        1,
+        2,
+        4
+      ],
+      "ids": [
+        "401856888",
+        "401856858",
+        "401856883"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        2
+      ],
+      "qualified_combined_offer": null
+    },
+    {
+      "ranks": [
+        1,
+        2,
+        5
+      ],
+      "ids": [
+        "401856888",
+        "401856858",
+        "401862827"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        2,
+        5
+      ],
+      "qualified_combined_offer": null
+    },
+    {
+      "ranks": [
+        1,
+        3,
+        4
+      ],
+      "ids": [
+        "401856888",
+        "401870752",
+        "401856883"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        3
+      ],
+      "qualified_combined_offer": null
+    },
+    {
+      "ranks": [
+        1,
+        3,
+        5
+      ],
+      "ids": [
+        "401856888",
+        "401870752",
+        "401862827"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        3,
+        5
+      ],
+      "qualified_combined_offer": null
+    },
+    {
+      "ranks": [
+        1,
+        4,
+        5
+      ],
+      "ids": [
+        "401856888",
+        "401856883",
+        "401862827"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        5
+      ],
+      "qualified_combined_offer": null
+    },
+    {
+      "ranks": [
+        2,
+        3,
+        4
+      ],
+      "ids": [
+        "401856858",
+        "401870752",
+        "401856883"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        2,
+        3
+      ],
+      "qualified_combined_offer": null
+    },
+    {
+      "ranks": [
+        2,
+        3,
+        5
+      ],
+      "ids": [
+        "401856858",
+        "401870752",
+        "401862827"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        2,
+        3,
+        5
+      ],
+      "qualified_combined_offer": null
+    },
+    {
+      "ranks": [
+        2,
+        4,
+        5
+      ],
+      "ids": [
+        "401856858",
+        "401856883",
+        "401862827"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        2,
+        5
+      ],
+      "qualified_combined_offer": null
+    },
+    {
+      "ranks": [
+        3,
+        4,
+        5
+      ],
+      "ids": [
+        "401870752",
+        "401856883",
+        "401862827"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        3,
+        5
+      ],
+      "qualified_combined_offer": null
+    },
+    {
+      "ranks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "ids": [
+        "401856888",
+        "401856858",
+        "401870752",
+        "401856883"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        2,
+        3
+      ],
+      "qualified_combined_offer": null
+    },
+    {
+      "ranks": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "ids": [
+        "401856888",
+        "401856858",
+        "401870752",
+        "401862827"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        2,
+        3,
+        5
+      ],
+      "qualified_combined_offer": null
+    },
+    {
+      "ranks": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "ids": [
+        "401856888",
+        "401856858",
+        "401856883",
+        "401862827"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        2,
+        5
+      ],
+      "qualified_combined_offer": null
+    },
+    {
+      "ranks": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "ids": [
+        "401856888",
+        "401870752",
+        "401856883",
+        "401862827"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        3,
+        5
+      ],
+      "qualified_combined_offer": null
+    },
+    {
+      "ranks": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "ids": [
+        "401856858",
+        "401870752",
+        "401856883",
+        "401862827"
+      ],
+      "grade": "LOSS",
+      "losing_ranks": [
+        2,
+        3,
+        5
+      ],
+      "qualified_combined_offer": null
+    }
+  ]
+}
