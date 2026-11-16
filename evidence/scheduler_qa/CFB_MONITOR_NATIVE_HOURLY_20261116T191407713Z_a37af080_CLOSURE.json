@@ -1,0 +1,38 @@
+{
+  "schema": "CFB_MONITOR_NATIVE_HOURLY_CLOSURE_v1",
+  "task_id": "6ac4e807aaac8191b3255fae8ab82577",
+  "invocation_run_id": "a37af080-a610-8328-91d8-b9bc3e7ec706",
+  "correlation_id": "20261116T191407713Z_a37af080",
+  "closed_at_utc": "2026-11-16T19:18:34.269Z",
+  "terminal_status": "BOUNDARY_PASS",
+  "started": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T191407713Z_a37af080_STARTED.json",
+    "blob": "7c6dc3eb5ec9e1eb696c26ed27ffefee52f9aa26",
+    "exact_readback": true
+  },
+  "terminal_candidate": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T191407713Z_a37af080_TERMINAL_CANDIDATE.json",
+    "blob": "3130b46d11c6468c67c4a82bd3b881be3be8b46d",
+    "chars": 8313,
+    "exact_readback": true
+  },
+  "phase_proof": {
+    "shell": "PASS",
+    "authenticated_connector_read": "PASS",
+    "exact_helper_transfer": "PASS_3780_BYTES_b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "raw_dns": "FAIL_gaierror_-3_both_hosts",
+    "default_proxy_aware_git": "PASS",
+    "default_proxy_aware_urllib": "PASS_HTTP_200_EXACT_BLOB",
+    "no_proxy_control": "FAIL_gaierror_-3",
+    "unchanged_helper": "PASS_SUPPORTED_GIT_RUNTIME_VERIFIED",
+    "checkout": "PASS_HEAD_9ed35fd50cab3b9b04597f8372ce1bc04a4ba099_FULL_ANCESTRY_60_REVIEWS",
+    "week12_compiler_collector": "PRESENT_SYNTAX_IMPORT_PASS"
+  },
+  "classification": "This invocation passed the transport/helper/checkout boundary. It does not certify production host parity, acquisition, decisions, publication, or Market Monitor reliability.",
+  "first_difference": "The hourly invocation had documented connector-to-runtime execution plus working sanctioned proxy-aware GitHub transport; the Nov 16 13 CT production receipt reported neither a usable handoff nor a successful REST fallback.",
+  "next_observation": "Compare the same measured stages in the next hourly run and next natural production run using actual invocation IDs.",
+  "production_effect": "ZERO",
+  "task_or_schedule_mutation": "NONE",
+  "closure_issued_after_candidate_exact_readback": true,
+  "closure_self_certification": false
+}
