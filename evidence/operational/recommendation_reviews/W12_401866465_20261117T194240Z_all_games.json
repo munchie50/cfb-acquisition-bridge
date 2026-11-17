@@ -1,0 +1,73 @@
+{
+  "schema": "CFB_PROSPECTIVE_RECONSIDERATION_REVIEW_V3",
+  "game_id": "401866465",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-17T20:03:30.517161+00:00",
+  "original_lineage_blob": "8e019d9b502067c0a669e860a70e177b8e5ecda6",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "TOTAL",
+  "selection": "under",
+  "rationale": "Current EMU QB/offensive limitation and WMU possession control support the under at46.5/-112; explosive Bronco runs are the strongest countercase.",
+  "model_review": "Original44.974total is below46.5; acceptedNov10REFRESH46.783is slightlyabove, so modelagreementdoesnotdrivebet. Both showaWMUfavorite, but currentreplacement-QBEMUoffense+WMUclockcontrolisthespecificundermechanism. No calibratedcurrentunderprobabilityorEVclaimed.",
+  "material_sources": [
+    {
+      "url": "https://wmubroncos.com/news/2026/11/16/football-broncos-welcome-eastern-michigan-for-tuesday-night-maction.aspx",
+      "retrieved_at": "2026-11-17T19:56:23.708128+00:00",
+      "finding": "Kim/McCaughey current deployment and WMU extended possession; explosive rushing countercase."
+    },
+    {
+      "url": "https://emueagles.com/news/2026/11/12/football-hits-the-road-for-a-tuesday-battle-in-kalamazoo",
+      "retrieved_at": "2026-11-17T19:56:23.708128+00:00",
+      "finding": "Independent6PM_ET kickoff,13-day rest and recent177-yard offensive outing."
+    }
+  ],
+  "uncertainty": "Cabana has consecutive82-yard rushingTDs; WMU explosive runs and short fields can beat a slow-game total. Accepted refresh46.78 does not independently support under46.5. Kill/review triggers: NoahKim cleared to start or a material reversal of the confirmed McCaughey deployment premise; Material WMU line/ground-role or either defense news that reverses possession/scoring mechanism; Total below46.5 or Americanprice worse than-112; At or after2026-11-17T22:30:00Z finalexpiry",
+  "decision_rule": "Require the joint acceptable number and price. Current EMU QB/offensive limitation and WMU possession control support the under at46.5/-112; explosive Bronco runs are the strongest countercase.",
+  "source_qualification": "Approved DraftKings all-jurisdiction aggregate with literal linked selection. Unknown operator-update clock, verified retrieval bound, no verified venue execution. Betting/handle percentages unused.",
+  "market_reference": {
+    "game_id": "401866465",
+    "market": "TOTAL",
+    "selection": "under",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-17T23:00:00Z",
+    "kickoff_source_url": "https://emueagles.com/news/2026/11/12/football-hits-the-road-for-a-tuesday-battle-in-kalamazoo",
+    "collection_start": "2026-11-17T20:00:58.680Z",
+    "collection_end": "2026-11-17T20:01:00.012Z",
+    "quotes": [
+      {
+        "game_id": "401866465",
+        "market": "TOTAL",
+        "selection": "under",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/eastern-michigan-@-western-michigan/34999608?dkinternal_referrer_article_id=115891&dkinternal_referrer_source=dknetwork&outcomes=0OU87191392U4650_3",
+        "source_url": "https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?itm_content=NCAA+Football&tb_edate=n30days&tb_eg=87637&tb_page=1",
+        "retrieved_at": "2026-11-17T20:01:00.012Z",
+        "offer_updated_at": null,
+        "line": 46.5,
+        "price": -112
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY",
+    "source_kind": "DRAFTKINGS_PUBLIC_AGGREGATE_TABLE"
+  },
+  "acceptable_number": {
+    "market": "TOTAL",
+    "selection": "under",
+    "line": 46.5,
+    "minimum_price": -112,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-17T22:00:00Z",
+  "planning_cutoff_utc": "2026-11-17T22:30:00Z",
+  "cutoff_basis": "New prospective review at actual recording clock. Same-day limits expire before kickoff. For new Saturday cases root chooses Wednesday/Thursday13CT first review and Saturday07CT final validity, preserving Friday batched placement with current-price/material rechecks. Draft runnerFriday13CTexpiry was never issued. No previous limit or final cutoff extended.",
+  "execution_window": {
+    "start_utc": "2026-11-17T20:03:30.517161+00:00",
+    "end_utc": "2026-11-17T22:30:00Z"
+  },
+  "reconsideration": {
+    "prior_row_blob": "593a8048931a3e6979ac19b7ccd91871b1ca96d5",
+    "reason": "User directs full-slate reconsideration. Newly recovered current quarterback deployment and possession evidence plus new approved same-book benchmark support prospective market-specific reassessment. Earlier PASS and its exact clock/row remain preserved."
+  }
+}
