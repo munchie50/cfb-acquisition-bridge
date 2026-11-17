@@ -18,14 +18,12 @@ Akron–UMass and Central Michigan–Buffalo remain specific material reviews, w
 
 ## Friday and Saturday research watches
 
-The following cases have concrete supporting mechanisms and counterarguments. Each still requires the named material work before an acceptable pair can be earned. These ten watches are not an earned confidence ranking. Ranked actionable depth remains0, target30 remains unfilled.
+The following cases have concrete supporting mechanisms and counterarguments. Each still requires the named material work before an acceptable pair can be earned. This research list is not an earned confidence ranking. Ranked actionable depth remains0, target30 remains unfilled.
 
 | Watch | Observed benchmark | Supporting mechanism | Outstanding work |
 |---|---|---|---|
 | Toledo spread |DraftKings−15.5/−110 via Covers|Run-control and defensive form|BG Novosad's new role, Bradley pressure versus Toledo protection|
 | Nebraska spread |CBS+3.5/−120|Current defense and Colandrea/run continuity|Nebraska injury updates and Ohio State quarterback applicability|
-| Illinois spread |DraftKings+8.5/−110 via Covers|Recent defense and touchdown-loss protection|Receiver Clement status and current offensive fit against Iowa defense|
-| Michigan spread |DraftKings+3.5/−108 via Covers|Current quarterback deployment and points protection merit review|Carr/Underwood roles and opponent matchup|
 | Maryland spread |CBS+17.5/−110|Large spread protection against the original close forecast|Current offense/personnel and USC passing matchup; official kickoff5:15p.m.CT conflicts with CBS|
 | Tulane spread |CBS+6.5/−111|North Texas Jackson injury changes current offense|Tulane defensive weakness and current Jackson/Jimerson role|
 | West Virginia–Houston under |CBS70.5/−112|Recent WVU offensive limitation and original lower total|Current QB/offense and explosive-score risks|
@@ -44,3 +42,12 @@ Zero supported builds. None of the watch legs has an issued limit, and no authen
 [Full70-game Hot Sheet](CFB_WEEK12_HOT_SHEET_2026-11-17_1317CT.md) · [All current reviews](../audits/CFB_WEEK12_CURRENT_REVIEWS_20261117T190454Z_manual.json) · [Publication audit](../audits/CFB_WEEK12_MARKET_MONITOR_20261117T190454Z_manual.md)
 
 This is a partial current manual Market Monitor delivery. Thirty-seven material follow-ups and natural recurring delivery proof remain open.
+
+
+## Targeted follow-up after the saved publication boundary
+
+Illinois+8.5/−110 and Michigan+3.5/−108 now receive spread-specific PASS after injury and quarterback evidence was resolved. Other market branches keep their separately recorded status, so the canonical whole-game totals remain33PASS/37INCONCLUSIVE. [Exact follow-up](../audits/CFB_WEEK12_TARGETED_MIDDLE_FOLLOWUP_20261117T190454Z_manual.json).
+
+Arizona State+3.5/−120 is an analytical conditional proposal supported by possession control and protection of a three-point loss. FanDuel named-book terms were observed through Covers. The current immutable review validator supports direct sportsbook bindings and its existing DK aggregate route. This relayed Covers row cannot yet populate that canonical route. The proposed pair is pending source qualification and has no issued canonical limit. Proposed review Friday7a.m.CT and final validity Friday1p.m.CT are prospective proposal terms. Nevada remains blocked by conflicting quarterback status. OklahomaState–ASU under receives PASS after targeted comparative review. [Exact analysis and source attempts](../audits/CFB_WEEK12_TARGETED_LATE_FOLLOWUP_20261117T190454Z_manual.json).
+
+Selected publication CI44158290601 succeeded at commit38f6c17431f9b1d7b9406ebf7b4a3dc5c2ef132e. The earlier unknown-profile test failures remain recorded. They were corrected with an unsupported-profile sentinel while preserving rejection coverage.
