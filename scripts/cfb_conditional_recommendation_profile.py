@@ -30,7 +30,9 @@ def market_reference(review, as_of):
     # benchmark. This never turns unknown update clocks into current consensus.
     allowed = ['game_id', 'market', 'selection', 'period', 'kickoff_utc',
                'kickoff_source_url', 'collection_start', 'collection_end', 'quotes', 'clock_semantics']
-    aggregate = review['schema'] == AGGREGATE_REVIEW_SCHEMA
+    aggregate = (review['schema'] == AGGREGATE_REVIEW_SCHEMA
+                 or (review['schema'] == RECONSIDERATION_REVIEW_SCHEMA
+                     and 'source_kind' in packet))
     if aggregate: allowed.append('source_kind')
     gate.keys(packet, allowed)
     if packet['clock_semantics'] not in ('EXACT_RETRIEVAL', 'RESPONSE_RECOVERED_BY'):
