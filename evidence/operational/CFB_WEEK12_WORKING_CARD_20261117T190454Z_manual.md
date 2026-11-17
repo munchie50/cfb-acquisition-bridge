@@ -31,9 +31,9 @@ The following cases have concrete supporting mechanisms and counterarguments. Ea
 | West Virginia–Houston under |CBS70.5/−105|Recent WVU offensive limitation and original lower total|Current QB/offense and explosive-score risks|
 | Nevada spread |CBS−3.5/−120|Nevada pass defense versus pass-heavy Hawaii|Current QB/OL, Hawaii matchup and forecast|
 | Arizona State spread |CBS+3.5/−120|Fette/Mack offensive control mechanism|Current personnel and Oklahoma State high-scoring countercase|
-| Pittsburgh spread |CBS+14.5/−120|Rush-defense protection|Dailey's current QB role, protection and Clemson passing matchup|
+| Pittsburgh spread |CBS+14.5/−120|Rush-defense protection|Dailey's current QB role, protection and Louisville passing matchup|
 
-All CBS cells were recovered by1:07:48p.m.CT, with field-level book mixing and unknown offer-update clocks. The original runner reports preserve full exact quotes and primary sources. Maryland/WestVirginia watch terms should be checked against the exact retained source before use. The prospective working follow-up target for unresolved Friday/Saturday cases is Thursday1p.m.CT through the existing Monitor. This working target creates no new task or schedule.
+All CBS cells were recovered by1:07:48p.m.CT, with field-level book mixing and unknown offer-update clocks. The original runner reports preserve full exact quotes and primary sources. The prospective working follow-up target for unresolved Friday/Saturday cases is Thursday1p.m.CT through the existing Monitor. This working target creates no new task or schedule.
 
 ## Parlays
 
