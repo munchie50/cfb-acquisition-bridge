@@ -1,0 +1,74 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V4",
+  "game_id": "401858531",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-17T20:03:30.517161+00:00",
+  "original_lineage_blob": "8e019d9b502067c0a669e860a70e177b8e5ecda6",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "home",
+  "rationale": "Nebraska +3.5 or better at -120 or better earns a controlled Beta conditional from home defense, Colandrea/run-led possession and field-goal-loss protection. Ohio State passing weapons/defense and Nebraska injuries remain strong countercases. Approved DraftKings +3/+100 fails the +3.5 number limit: NUMBER_HOLD.",
+  "model_review": "Original Nebraska margin4.858346416090912,total54.49409165888514,homewin0.5960159030209125 retained. Separately accepted Nov10 refresh margin1.14439731421288,total52.810149274626845,homewin0.5041892185584437 narrows the case. Current run/defense mechanism supports paying for three-point-loss protection at the exact +3.5/-120 pair. No calibrated cover probability or EV.",
+  "material_sources": [
+    {
+      "url": "https://ohiostatebuckeyes.com/news/2026/11/16/football-fahey-earns-big-ten-player-of-the-week-honors",
+      "retrieved_at": "2026-11-17T19:49:58.001064+00:00",
+      "finding": "Ohio State confirms Fahey made his third start against Northwestern and passed for 201 yards and three touchdowns. Nebraska current primary previews document defensive strength, Colandrea continuity, and run-led possession. Rhule identifies injury attrition and Glenn Thomas playcalling. The separate refresh favors Nebraska by 1.14, less than the original 4.86. Smith and OSU defensive quality remain substantial countercases."
+    },
+    {
+      "url": "https://huskers.com/news/2026/11/16/huskers-host-no-16-ohio-state-for-senior-day",
+      "retrieved_at": "2026-11-17T19:49:58.001064+00:00",
+      "finding": "Ohio State confirms Fahey made his third start against Northwestern and passed for 201 yards and three touchdowns. Nebraska current primary previews document defensive strength, Colandrea continuity, and run-led possession. Rhule identifies injury attrition and Glenn Thomas playcalling. The separate refresh favors Nebraska by 1.14, less than the original 4.86. Smith and OSU defensive quality remain substantial countercases."
+    },
+    {
+      "url": "https://huskers.com/news/2026/11/16/rhule-recaps-rutgers-game-previews-ohio-state",
+      "retrieved_at": "2026-11-17T19:49:58.001064+00:00",
+      "finding": "Ohio State confirms Fahey made his third start against Northwestern and passed for 201 yards and three touchdowns. Nebraska current primary previews document defensive strength, Colandrea continuity, and run-led possession. Rhule identifies injury attrition and Glenn Thomas playcalling. The separate refresh favors Nebraska by 1.14, less than the original 4.86. Smith and OSU defensive quality remain substantial countercases."
+    }
+  ],
+  "uncertainty": "Fahey has three starts and recent201yards/3TD. OSU receivers and Nebraska injury attrition are material downside. Recheck substantive QB/OL/secondary changes and Wednesday updates. No automatic substitution of +3 at another price.",
+  "decision_rule": "Require the joint acceptable number and price. Nebraska +3.5 or better at -120 or better earns a controlled Beta conditional from home defense, Colandrea/run-led possession and field-goal-loss protection. Ohio State passing weapons/defense and Nebraska injuries remain strong countercases. Approved DraftKings +3/+100 fails the +3.5 number limit: NUMBER_HOLD.",
+  "source_qualification": "Approved DraftKings all-jurisdiction aggregate with literal linked selection. Unknown operator-update clock, verified retrieval bound, no verified venue execution. Betting/handle percentages unused.",
+  "market_reference": {
+    "game_id": "401858531",
+    "market": "SPREAD",
+    "selection": "home",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-21T17:00:00Z",
+    "kickoff_source_url": "https://ohiostatebuckeyes.com/news/2026/11/14/football-kickoff-time-at-nebraska-announced-for-noon-et-on-fox",
+    "collection_start": "2026-11-17T20:00:58.680Z",
+    "collection_end": "2026-11-17T20:01:00.012Z",
+    "quotes": [
+      {
+        "game_id": "401858531",
+        "market": "SPREAD",
+        "selection": "home",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/ohio-state-@-nebraska/34999640?dkinternal_referrer_article_id=115891&dkinternal_referrer_source=dknetwork&outcomes=0HC87191492P300_1",
+        "source_url": "https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?itm_content=NCAA+Football&tb_edate=n30days&tb_eg=87637&tb_page=2",
+        "retrieved_at": "2026-11-17T20:01:00.012Z",
+        "offer_updated_at": null,
+        "line": 3,
+        "price": 100
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY",
+    "source_kind": "DRAFTKINGS_PUBLIC_AGGREGATE_TABLE"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "home",
+    "line": 3.5,
+    "minimum_price": -120,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-18T19:00:00Z",
+  "planning_cutoff_utc": "2026-11-21T13:00:00Z",
+  "cutoff_basis": "New prospective review at actual recording clock. Same-day limits expire before kickoff. For new Saturday cases root chooses Wednesday/Thursday13CT first review and Saturday07CT final validity, preserving Friday batched placement with current-price/material rechecks. Draft runnerFriday13CTexpiry was never issued. No previous limit or final cutoff extended.",
+  "execution_window": {
+    "start_utc": "2026-11-17T20:03:30.517161+00:00",
+    "end_utc": "2026-11-21T13:00:00Z"
+  }
+}
