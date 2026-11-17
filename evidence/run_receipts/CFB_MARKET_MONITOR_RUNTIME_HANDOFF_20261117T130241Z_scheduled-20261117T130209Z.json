@@ -1,0 +1,25 @@
+{
+  "schema": "CFB_MONITOR_WORK_MODE_RUNTIME_RECOVERY_v1",
+  "observed_utc": "2026-11-17T13:02:41.732Z",
+  "observed_invocation_id": "UNKNOWN",
+  "correlation_id": "scheduled-20261117T130209Z",
+  "repository": "munchie50/cfb-acquisition-bridge",
+  "branch": "main",
+  "pinned_head": "0769274b854d45e5547c7262ecce91ca53c29a5e",
+  "inputs": {
+    "helper": {
+      "path": "scripts/cfb_runtime_checkout.py",
+      "blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898"
+    },
+    "index": {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_290.md",
+      "blob": "f7d4db46ae089d4bd6c7258bc30bdb0f943cbb4a"
+    }
+  },
+  "helper_bytes": 3780,
+  "producer": "CFB Market Monitor",
+  "startup_receipt": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261117T130209Z_scheduled-20261117T130209Z.md",
+  "first_failure": "Connector-to-container structured binary transfer surface not exposed; cannot materialize verified helper bytes in shell.",
+  "fallback_outcome": "Python urllib HTTPS immutable Git blob GET failed: URLError [Errno -3] Temporary failure in name resolution",
+  "scope": "WORK_MODE_RUNTIME_RECOVERY_ONLY"
+}
