@@ -1,0 +1,88 @@
+{
+  "schema": "CFB_MARKET_MONITOR_TERMINAL_CANDIDATE_V1",
+  "correlation_id": "20261117T194240Z_all_games",
+  "started_utc": "2026-11-17T19:42:40.942Z",
+  "closed_candidate_utc": "2026-11-17T20:19:19.972Z",
+  "trigger": "USER_DIRECTED_MANUAL_MONITOR_REVIEW",
+  "invocation_id": null,
+  "outcome": "RUN_INCOMPLETE",
+  "completed_scope": {
+    "games": 70,
+    "principal_market_branches": 420,
+    "prior_pass_reconsidered": true,
+    "original_exclusions_reviewed": 14
+  },
+  "counts": {
+    "CONDITIONAL": 4,
+    "INCONCLUSIVE": 13,
+    "PASS": 53,
+    "pass_components": {
+      "current_modeled_pass": 38,
+      "preserved_original_exclusions": 14,
+      "retained_kansas_pass_current_lean": 1
+    }
+  },
+  "sheet": {
+    "path": "evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-17_1408CT.md",
+    "commit": "a09fe986464c2962d945f8af69684211af44cc5e",
+    "blob": "61d0723b46543d0a47c1269e43920f32f83a8084"
+  },
+  "index": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_292.md",
+    "commit": "b8dd70d932ec1ae7a194c02b9ab99fd824452f4b",
+    "blob": "c7066c5126536060b85c93e7baaf6371eb95669e"
+  },
+  "card": {
+    "path": "evidence/operational/CFB_WEEK12_ALL_GAMES_CARD_20261117T194240Z_all_games.md",
+    "commit": "0ed55dfe31695da7e5f48c35172ba976a9bfb177",
+    "blob": "42b4c7882e715e0b2f342fa6af485bf06dcdc125"
+  },
+  "independent_live_proof": {
+    "path": "evidence/audits/CFB_WEEK12_ALL_GAMES_LIVE_PROOF_20261117T194240Z_all_games.json",
+    "commit": "83d5f9b22756f7ea35cf532da59c03954be96d19",
+    "blob": "6029f9564b06e05e07ac0cef92971c79305c8c1a"
+  },
+  "verified": {
+    "saved_integrity": "PASS",
+    "recovery_pointers": 507,
+    "original_numeric_fields": 168,
+    "compatibility_regression_tests": 45,
+    "reviewed_accepted_refresh": {
+      "predictions": 68,
+      "exclusions": 2,
+      "original_preserved": true
+    }
+  },
+  "corrections": [
+    "Recovered previously omitted accepted Nov10 REFRESH coverage",
+    "Composed existing V3 reconsideration with strict approved aggregate source predicates; 45 tests passed"
+  ],
+  "ci": {
+    "run": 44167042989,
+    "head": "b8dd70d932ec1ae7a194c02b9ab99fd824452f4b",
+    "outcome": "FAIL",
+    "first_blocked_step": "Recover authenticated accepted FIRST_FROZEN archive",
+    "exact_error": "gh: HTTP 503",
+    "downstream": "SKIPPED",
+    "separate_local_saved_archive_invariant": "PASS"
+  },
+  "remaining": [
+    "13 specific material/quote cases",
+    "Kansas current lean has no newly issued cap",
+    "Authentic combined parlay quote absent; zero builds issued",
+    "Nebraska benchmark +3 fails required +3.5",
+    "Natural scheduled reliability not proved by manual review",
+    "CI archive fetch failed; full CI not passed"
+  ],
+  "next_deadline": "2026-11-17T22:00:00Z EMU-WMU recheck; final expiry22:30Z",
+  "no_new_scheduled_checks": true,
+  "production_acceptance": "NOT_CERTIFIED",
+  "mutations_excluded": [
+    "wagers",
+    "money",
+    "model promotion",
+    "task settings",
+    "schedules",
+    "Actions"
+  ]
+}
