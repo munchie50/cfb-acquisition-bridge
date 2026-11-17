@@ -1,0 +1,12 @@
+# RUN_STARTED
+observed_utc: 2026-11-17T13:02:09.451Z
+trigger_type: scheduled
+scheduled_for: 2026-11-17T13:00:00Z
+invocation_id: UNKNOWN
+correlation_id: scheduled-20261117T130209Z
+repository: munchie50/cfb-acquisition-bridge
+branch: main
+stage: RUN_STARTED
+outcome: STARTUP_ATTEMPT
+connector_operation: mcp__GitHub__create_file
+credentials_logged: false
