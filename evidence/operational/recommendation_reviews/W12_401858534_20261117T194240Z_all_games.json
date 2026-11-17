@@ -1,0 +1,89 @@
+{
+  "schema": "CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V4",
+  "game_id": "401858534",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-17T20:03:30.517161+00:00",
+  "original_lineage_blob": "8e019d9b502067c0a669e860a70e177b8e5ecda6",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "SPREAD",
+  "selection": "away",
+  "rationale": "Maryland +17.5 or better at -115 or better earns a controlled Beta conditional. Williams replacement-QB efficiency and recent defensive performance support a competitive-loss pathway with more than two touchdowns protection. USC home passing upside, opponent quality and turnover regression remain material countercases.",
+  "model_review": "Original USC margin1.594822717161102,total56.04444659953657,homewin0.5409410206791054 retained. Accepted Nov10 supplementary USC10.405817171787533,total55.43498863050967 narrows the original gap. Current Williams21/23,183passing and2rushingTD, Maryland201yardsallowed/3takeaways and USC1TDin5red-zone trips/3INT support the competitive-loss mechanism. No calibrated cover probability or EV.",
+  "material_sources": [
+    {
+      "url": "https://umterps.com/news/2026/11/16/football-game-11-maryland-at-usc-preview",
+      "retrieved_at": "2026-11-17T19:12:20.115351+00:00",
+      "finding": "Independent primary kickoff and current team context retained in full review."
+    },
+    {
+      "url": "https://usctrojans.evenue.net/event/F26/F7",
+      "retrieved_at": "2026-11-17T19:12:20.115351+00:00",
+      "finding": "Independent primary kickoff and current team context retained in full review."
+    },
+    {
+      "url": "https://usctrojans.com/sports/2026/8/10/usc-trojans-football-media-center-2026",
+      "retrieved_at": "2026-11-17T19:12:20.115351+00:00",
+      "finding": "Independent primary kickoff and current team context retained in full review."
+    },
+    {
+      "url": "https://umterps.com/news/2026/11/14/football-vs-wisconsin-recap",
+      "retrieved_at": "2026-11-17T19:55:52.632305+00:00",
+      "finding": "Latest Maryland official recap: Washington injured; Williams21/23,183yd1TD plus2rushingTD and19 consecutive completions. Maryland held Wisconsin201total/77passing with3takeaways;2-1 under interim Abdul-Rahim. USC official latest recap: Maiava26/42,311yd1TD3INT, Mosley9/130, only1TD in5red-zone trips in27-13 Indiana loss."
+    },
+    {
+      "url": "https://umterps.com/news/2026/11/16/football-cardell-williams-named-manning-award-star-of-the-week",
+      "retrieved_at": "2026-11-17T19:55:52.632305+00:00",
+      "finding": "Latest Maryland official recap: Washington injured; Williams21/23,183yd1TD plus2rushingTD and19 consecutive completions. Maryland held Wisconsin201total/77passing with3takeaways;2-1 under interim Abdul-Rahim. USC official latest recap: Maiava26/42,311yd1TD3INT, Mosley9/130, only1TD in5red-zone trips in27-13 Indiana loss."
+    },
+    {
+      "url": "https://usctrojans.com/news/2026/11/14/usc-trojans-football-game-recap-associated-press-ap-indiana-hoosiers-big-ten-jayden-maiava-lincoln-riley",
+      "retrieved_at": "2026-11-17T19:55:52.632305+00:00",
+      "finding": "Latest Maryland official recap: Washington injured; Williams21/23,183yd1TD plus2rushingTD and19 consecutive completions. Maryland held Wisconsin201total/77passing with3takeaways;2-1 under interim Abdul-Rahim. USC official latest recap: Maiava26/42,311yd1TD3INT, Mosley9/130, only1TD in5red-zone trips in27-13 Indiana loss."
+    }
+  ],
+  "uncertainty": "USC home offense can rebound; Maiava311yd/Mosley production demonstrates upside despite turnovers. Maryland latest opponent and three takeaways flatter its defense; Williams one efficient replacement start is not a calibrated stable level. Accepted refresh USC10.41 supports cushion versus17.5 but is not sufficient alone. Reassess substantive Williams/Washington deployment, new OL or USC personnel changes, severe conditions and actual price.",
+  "decision_rule": "Require the joint acceptable number and price. Maryland +17.5 or better at -115 or better earns a controlled Beta conditional. Williams replacement-QB efficiency and recent defensive performance support a competitive-loss pathway with more than two touchdowns protection. USC home passing upside, opponent quality and turnover regression remain material countercases.",
+  "source_qualification": "Approved DraftKings all-jurisdiction aggregate with literal linked selection. Unknown operator-update clock, verified retrieval bound, no verified venue execution. Betting/handle percentages unused.",
+  "market_reference": {
+    "game_id": "401858534",
+    "market": "SPREAD",
+    "selection": "away",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-21T23:15:00Z",
+    "kickoff_source_url": "https://umterps.com/news/2026/11/16/football-game-11-maryland-at-usc-preview",
+    "collection_start": "2026-11-17T20:00:58.680Z",
+    "collection_end": "2026-11-17T20:01:00.012Z",
+    "quotes": [
+      {
+        "game_id": "401858534",
+        "market": "SPREAD",
+        "selection": "away",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/maryland-@-usc/34999696?dkinternal_referrer_article_id=115891&dkinternal_referrer_source=dknetwork&outcomes=0HC87191619P1750_3",
+        "source_url": "https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?itm_content=NCAA+Football&tb_edate=n30days&tb_eg=87637&tb_page=4",
+        "retrieved_at": "2026-11-17T20:01:00.012Z",
+        "offer_updated_at": null,
+        "line": 17.5,
+        "price": -115
+      }
+    ],
+    "clock_semantics": "RESPONSE_RECOVERED_BY",
+    "source_kind": "DRAFTKINGS_PUBLIC_AGGREGATE_TABLE"
+  },
+  "acceptable_number": {
+    "market": "SPREAD",
+    "selection": "away",
+    "line": 17.5,
+    "minimum_price": -115,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-19T19:00:00Z",
+  "planning_cutoff_utc": "2026-11-21T13:00:00Z",
+  "cutoff_basis": "New prospective review at actual recording clock. Same-day limits expire before kickoff. For new Saturday cases root chooses Wednesday/Thursday13CT first review and Saturday07CT final validity, preserving Friday batched placement with current-price/material rechecks. Draft runnerFriday13CTexpiry was never issued. No previous limit or final cutoff extended.",
+  "execution_window": {
+    "start_utc": "2026-11-17T20:03:30.517161+00:00",
+    "end_utc": "2026-11-21T13:00:00Z"
+  }
+}
