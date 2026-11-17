@@ -1,0 +1,32 @@
+{
+  "schema": "CFB_MONITOR_WORK_MODE_HANDOFF_QA_RESULT_v1",
+  "verdict": "QA_HANDOFF_PASS",
+  "request": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_WORK_MODE_HANDOFF_20261117T011821711Z_REQUEST.json",
+    "commit": "12ee539674bd4af21f6cb2c186ce6e3e26545db5",
+    "blob": "8019e7ad1e9e2380294941f59d7c3e436cb3fb30"
+  },
+  "verified": {
+    "status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+    "head": "c5bc370c2b19db4f7f8a1077c92a458c71f28151",
+    "python": "3.12.14",
+    "immutable_reviews": 60,
+    "full_ancestry": true,
+    "request_exact_readback": true,
+    "recovery_index_blob_match": true,
+    "modified_helper_rejected": true,
+    "prerequisites_syntax_pass": [
+      "scripts/cfb_week12_publication.py",
+      "scripts/cfb_monitor_collection.py",
+      "scripts/cfb_cbs_full_board_normalizer.py"
+    ]
+  },
+  "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+  "helper_bytes": 3780,
+  "producer": "Connector QA simulation initiated in Work Mode",
+  "consumer": "Work Mode, invoked directly",
+  "automatic_pickup": "UNVERIFIED_NO_SUPPORTED_TRIGGER_IDENTIFIED",
+  "natural_scheduled_producer": "UNTESTED",
+  "production_publication": "UNEXECUTED",
+  "production_task_or_schedule_changes": false
+}
