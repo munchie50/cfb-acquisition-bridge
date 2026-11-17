@@ -198,6 +198,45 @@ class ConditionalTests(unittest.TestCase):
         self.assertIn('offer-update UNKNOWN',sheet)
         self.assertIn('VENUE_CONFIRMATION_PENDING',sheet)
 
+    def test_reconsideration_composes_approved_aggregate_source(self):
+        prior = self.reconsideration_fixture()
+        unchanged = copy.deepcopy(prior)
+        self.aggregate_table_review()
+        self.review['schema'] = profile.RECONSIDERATION_REVIEW_SCHEMA
+        with self.mocked():
+            profile.reconsideration(self.target, prior, AT)
+            sheet = gate.render(*self.args())
+            gate.audit(sheet, *self.args())
+        self.assertEqual(prior, unchanged)
+        self.assertIn('DRAFTKINGS_PUBLIC_AGGREGATE_TABLE', sheet)
+        self.assertIn('ALL_JURISDICTIONS_NOT_A_VENUE_OFFER', sheet)
+
+    def test_reconsideration_aggregate_retains_source_rejections(self):
+        for changes in (
+            {'source_kind': 'EXECUTION_CONFIRMED'},
+            {'source_url': 'https://example.org/not-the-approved-table'},
+            {'operator': 'FanDuel', 'book': 'FanDuel'},
+        ):
+            with self.subTest(changes=changes):
+                self.setUp()
+                self.reconsideration_fixture()
+                self.aggregate_table_review()
+                self.review['schema'] = profile.RECONSIDERATION_REVIEW_SCHEMA
+                packet = self.review['market_reference']
+                if 'source_kind' in changes:
+                    packet.update(changes)
+                else:
+                    packet['quotes'][0].update(changes)
+                self.reject()
+
+    def test_reconsideration_aggregate_keeps_prior_pass_binding(self):
+        prior = self.reconsideration_fixture()
+        self.aggregate_table_review()
+        self.review['schema'] = profile.RECONSIDERATION_REVIEW_SCHEMA
+        self.review['reconsideration']['prior_row_blob'] = '0' * 40
+        with self.mocked(), self.assertRaisesRegex(ValueError, 'binding mismatch'):
+            profile.reconsideration(self.target, prior, AT)
+
     def test_aggregate_host_is_not_silently_added_to_prior_review_versions(self):
         for version in ('CFB_PROSPECTIVE_CONDITIONAL_REVIEW_V2','CFB_PROSPECTIVE_RECONSIDERATION_REVIEW_V3'):
             self.setUp();self.aggregate_table_review()
