@@ -1,0 +1,40 @@
+{
+  "schema": "CFB_MARKET_MONITOR_RUN_CLOSURE_V1",
+  "observed_utc": "2026-11-17T19:31:24.207Z",
+  "correlation_id": "20261117T190454Z_manual",
+  "status": "RUN_INCOMPLETE",
+  "trigger": "USER_RUN_NOW_INLINE_WORK_MODE",
+  "terminal_candidate": {
+    "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261117T190454Z_manual_TERMINAL_CANDIDATE.json",
+    "commit": "776173d47f6fd9605c0d07c6714950d97b812e21",
+    "blob": "51fe908eac0dd59bbe85d1d8f412dd07d3b2d957",
+    "independent_full_readback": "PASS"
+  },
+  "current_saved_sheet": {
+    "path": "evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-17_1317CT.md",
+    "commit": "9de178bb8c53ace79326d4975d358ae4f88fc6d5",
+    "saved_integrity": "PASS",
+    "original_frozen_invariant": "PASS",
+    "recovery_consumer_bindings": "PASS",
+    "selected_ci": {
+      "run": 44158290601,
+      "commit": "38f6c17431f9b1d7b9406ebf7b4a3dc5c2ef132e",
+      "job": 134304860455,
+      "conclusion": "success",
+      "matched_log_lines": [
+        "2026-11-17T19:25:02.5377005Z   \"verdict\": \"PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY\",",
+        "2026-11-17T19:27:11.6327916Z   \"verdict\": \"PASS_NEUTRAL_CANONICAL_PRESENTATION_ONLY\",",
+        "2026-11-17T19:27:12.5145900Z   \"verdict\": \"PASS_WEEK12_ORIGINAL_FROZEN_FIELDS_ONLY\",",
+        "2026-11-17T19:27:13.5427135Z   \"verdict\": \"PASS_SAVED_PUBLICATION_INTEGRITY_ONLY\",",
+        "2026-11-17T19:27:13.5429193Z     \"verdict\": \"PASS_NEUTRAL_CANONICAL_PRESENTATION_ONLY\","
+      ]
+    }
+  },
+  "working_card": {
+    "path": "evidence/operational/CFB_WEEK12_WORKING_CARD_20261117T190454Z_manual.md",
+    "commit": "146bf6395efca28b92c333ac5579ced99fd5cd5f"
+  },
+  "summary": "Immediate manual task execution passed startup, published and independently verified current70-game Week12 partial HotSheet, recovered504indexbindings and exact56originalpredictions/14exclusions/168strings.19modeledPASS/37specificINCONCLUSIVE/14originalexclusions. Zero issued recommendations or qualified parlay builds. Targeted Illinois/Michigan spreadsPASS; other branches remain separate. ASU analytical proposal awaits approved quote binding. Runtime and publication are proved in this manual invocation;37business qualifications and natural scheduled reliability remain open.",
+  "next_due": "Tuesday Miami–Kent and BallState–Ohio working17:15CT material/price reconciliation remains unexecuted; do not claim full workload completion.",
+  "closure_scope": "Verified durable partial production execution. No full RUN_PASS."
+}
