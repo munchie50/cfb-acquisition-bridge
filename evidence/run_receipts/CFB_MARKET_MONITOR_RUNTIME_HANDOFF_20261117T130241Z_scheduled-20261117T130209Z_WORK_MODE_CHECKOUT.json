@@ -1,0 +1,28 @@
+{
+  "schema": "CFB_MONITOR_WORK_MODE_RUNTIME_RECOVERY_RESULT_v1",
+  "correlation_id": "scheduled-20261117T130209Z",
+  "request": {
+    "path": "evidence/run_receipts/CFB_MARKET_MONITOR_RUNTIME_HANDOFF_20261117T130241Z_scheduled-20261117T130209Z.json",
+    "commit": "10c251a15c4bef9e6b1f699494fe1240a8d21714",
+    "blob": "9b228c0ae20cd3ca4f0a830db1c21b380c5823b3"
+  },
+  "status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+  "runtime": "Work Mode, invoked directly",
+  "head": "0769274b854d45e5547c7262ecce91ca53c29a5e",
+  "full_ancestry": true,
+  "ancestor_commit_count": 4277,
+  "immutable_reviews_validated": 60,
+  "index_blob": "f7d4db46ae089d4bd6c7258bc30bdb0f943cbb4a",
+  "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+  "helper_bytes": 3780,
+  "week12_prerequisites_syntax_pass": [
+    "cfb_week12_publication.py",
+    "cfb_monitor_collection.py",
+    "cfb_cbs_full_board_normalizer.py"
+  ],
+  "scheduled_first_block": "TRANSFER_UNAVAILABLE",
+  "scheduled_rest_fallback": "DNS_RESOLUTION",
+  "scope": "WORK_MODE_RUNTIME_RECOVERY_ONLY",
+  "automatic_pickup": "UNVERIFIED",
+  "production_publication": "UNEXECUTED"
+}
