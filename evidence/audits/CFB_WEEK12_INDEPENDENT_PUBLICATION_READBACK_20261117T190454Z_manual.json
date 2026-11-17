@@ -1,0 +1,41 @@
+{
+  "recovered_commit": "7349ac7670ae8f358b5d3a1666bcb1ec529a5a00",
+  "observed_utc": "2026-11-17T19:23:08.464597+00:00",
+  "recovery": {
+    "verdict": "PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY",
+    "verified_pointers": 504,
+    "sheet_path": "evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-17_1317CT.md",
+    "index_blob": "5580109a429a69310e61ca567b5a5548dd5183b6",
+    "scope": "qualified money/weekly/current-publication navigation bindings; not semantic or operational acceptance"
+  },
+  "saved": {
+    "verdict": "PASS_SAVED_PUBLICATION_INTEGRITY_ONLY",
+    "publication_boundary_utc": "2026-11-17T19:17:00.559893+00:00",
+    "audit_as_of_utc": "2026-11-17T19:23:08.464597+00:00",
+    "integrity": {
+      "verdict": "PASS_NEUTRAL_CANONICAL_PRESENTATION_ONLY",
+      "games": 70,
+      "sheet_blob": "444464039edd17313c634f80a43ee752503fd46e",
+      "scope": "typed neutral canonical display only; no source truth/betting/natural-run acceptance"
+    },
+    "operational_exceptions": [],
+    "elapsed_current_quote_game_ids": [],
+    "overdue_open_decision_game_ids": [],
+    "current_operational_acceptance": "NOT_CERTIFIED",
+    "scope": "CODE_QA_SAVED_VIEW_ONLY_NOT_FRESH_MARKET_OR_RUN_PASS",
+    "saved_canonical_blobs": {
+      "CFB_MARKET_MONITOR_STATE.md": "bc2b23611950cf5c62da46afa592bcbeb3d860dd",
+      "CFB_DECISION_WAIT_LEDGER.md": "eab7e0c0c590f5547cdedf2e73764590f244653a",
+      "CFB_EXECUTION_LEDGER.md": "5f098136e7c2719731d49d5bbe98752df0775e9f",
+      "CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md": "8e158d780b29f529cc029daf9383c19a68819157"
+    }
+  },
+  "original": {
+    "verdict": "PASS_WEEK12_ORIGINAL_FROZEN_FIELDS_ONLY",
+    "games": 70,
+    "predictions": 56,
+    "exclusions": 14,
+    "numeric_fields": 168,
+    "scope": "original fields only, not market/review/publication/betting acceptance"
+  }
+}
