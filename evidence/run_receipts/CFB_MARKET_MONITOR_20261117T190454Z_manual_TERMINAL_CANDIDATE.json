@@ -1,0 +1,301 @@
+{
+  "schema": "CFB_MARKET_MONITOR_TERMINAL_CANDIDATE_V1",
+  "observed_utc": "2026-11-17T19:31:08.849Z",
+  "correlation_id": "20261117T190454Z_manual",
+  "trigger": "USER_RUN_NOW_INLINE_WORK_MODE",
+  "invocation_id": null,
+  "outcome": "RUN_INCOMPLETE",
+  "startup_revision": "CFB_EMBEDDED_STARTUP_ORDER_20261117_R2",
+  "startup_receipt": {
+    "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261117T190454Z_manual.md",
+    "content": "# Market Monitor startup trace\n\nobserved_utc: 2026-11-17T19:04:54.671Z\ntrigger_type: user_requested_run_now_inline_work_mode\ninvocation_id: unavailable\ncorrelation_id: 20261117T190454Z_manual\nstartup_revision: CFB_EMBEDDED_STARTUP_ORDER_20261117_R2\nembedded_payload_present: true\nembedded_payload_characters: 2312\nstage: RUN_STARTED\n",
+    "commit": "a37437463159a6309e313a9ae59535b35cef1341"
+  },
+  "runtime": {
+    "status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+    "head": "a37437463159a6309e313a9ae59535b35cef1341",
+    "retained_reviews": 60,
+    "embedded_bytes": 3780,
+    "embedded_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898"
+  },
+  "classifier_execution": "EXECUTED",
+  "stages": [
+    {
+      "schema": "CFB_RUNTIME_DIAGNOSTIC_V1",
+      "timestamp_utc": "2026-11-17T19:30:36.068251+00:00",
+      "correlation_id": "20261117T190454Z_manual",
+      "stage": "connector",
+      "outcome": "PASS",
+      "failure_category": null,
+      "error_excerpt": "",
+      "scope": "DIAGNOSTIC_ONLY_NO_PRODUCTION_ACCEPTANCE",
+      "required_for_this_invocation": true,
+      "fallback_attempted": false,
+      "fallback_result": null,
+      "timestamp_semantics": "diagnostic recording time; stage execution proofs separately linked"
+    },
+    {
+      "schema": "CFB_RUNTIME_DIAGNOSTIC_V1",
+      "timestamp_utc": "2026-11-17T19:30:36.068294+00:00",
+      "correlation_id": "20261117T190454Z_manual",
+      "stage": "shell",
+      "outcome": "PASS",
+      "failure_category": null,
+      "error_excerpt": "",
+      "scope": "DIAGNOSTIC_ONLY_NO_PRODUCTION_ACCEPTANCE",
+      "required_for_this_invocation": true,
+      "fallback_attempted": false,
+      "fallback_result": null,
+      "timestamp_semantics": "diagnostic recording time; stage execution proofs separately linked"
+    },
+    {
+      "schema": "CFB_RUNTIME_DIAGNOSTIC_V1",
+      "timestamp_utc": "2026-11-17T19:30:36.068301+00:00",
+      "correlation_id": "20261117T190454Z_manual",
+      "stage": "embedded_helper",
+      "outcome": "PASS",
+      "failure_category": null,
+      "error_excerpt": "",
+      "scope": "DIAGNOSTIC_ONLY_NO_PRODUCTION_ACCEPTANCE",
+      "required_for_this_invocation": true,
+      "fallback_attempted": false,
+      "fallback_result": null,
+      "timestamp_semantics": "diagnostic recording time; stage execution proofs separately linked"
+    },
+    {
+      "schema": "CFB_RUNTIME_DIAGNOSTIC_V1",
+      "timestamp_utc": "2026-11-17T19:30:36.068305+00:00",
+      "correlation_id": "20261117T190454Z_manual",
+      "stage": "git_checkout",
+      "outcome": "PASS",
+      "failure_category": null,
+      "error_excerpt": "",
+      "scope": "DIAGNOSTIC_ONLY_NO_PRODUCTION_ACCEPTANCE",
+      "required_for_this_invocation": true,
+      "fallback_attempted": false,
+      "fallback_result": null,
+      "timestamp_semantics": "diagnostic recording time; stage execution proofs separately linked"
+    },
+    {
+      "schema": "CFB_RUNTIME_DIAGNOSTIC_V1",
+      "timestamp_utc": "2026-11-17T19:30:36.068308+00:00",
+      "correlation_id": "20261117T190454Z_manual",
+      "stage": "source_capture",
+      "outcome": "PASS",
+      "failure_category": null,
+      "error_excerpt": "",
+      "scope": "DIAGNOSTIC_ONLY_NO_PRODUCTION_ACCEPTANCE",
+      "required_for_this_invocation": true,
+      "fallback_attempted": false,
+      "fallback_result": null,
+      "timestamp_semantics": "diagnostic recording time; stage execution proofs separately linked"
+    },
+    {
+      "schema": "CFB_RUNTIME_DIAGNOSTIC_V1",
+      "timestamp_utc": "2026-11-17T19:30:36.068320+00:00",
+      "correlation_id": "20261117T190454Z_manual",
+      "stage": "decision_producer",
+      "outcome": "BLOCKED",
+      "failure_category": "MISSING_INPUT",
+      "error_excerpt": "missing input: specific remaining material qualification for37 cases; honest partial current review persisted",
+      "scope": "DIAGNOSTIC_ONLY_NO_PRODUCTION_ACCEPTANCE",
+      "required_for_this_invocation": true,
+      "fallback_attempted": false,
+      "fallback_result": null,
+      "timestamp_semantics": "diagnostic recording time; stage execution proofs separately linked"
+    },
+    {
+      "schema": "CFB_RUNTIME_DIAGNOSTIC_V1",
+      "timestamp_utc": "2026-11-17T19:30:36.068332+00:00",
+      "correlation_id": "20261117T190454Z_manual",
+      "stage": "compiler",
+      "outcome": "PASS",
+      "failure_category": null,
+      "error_excerpt": "",
+      "scope": "DIAGNOSTIC_ONLY_NO_PRODUCTION_ACCEPTANCE",
+      "required_for_this_invocation": true,
+      "fallback_attempted": false,
+      "fallback_result": null,
+      "timestamp_semantics": "diagnostic recording time; stage execution proofs separately linked"
+    },
+    {
+      "schema": "CFB_RUNTIME_DIAGNOSTIC_V1",
+      "timestamp_utc": "2026-11-17T19:30:36.068335+00:00",
+      "correlation_id": "20261117T190454Z_manual",
+      "stage": "publication",
+      "outcome": "PASS",
+      "failure_category": null,
+      "error_excerpt": "",
+      "scope": "DIAGNOSTIC_ONLY_NO_PRODUCTION_ACCEPTANCE",
+      "required_for_this_invocation": true,
+      "fallback_attempted": false,
+      "fallback_result": null,
+      "timestamp_semantics": "diagnostic recording time; stage execution proofs separately linked"
+    },
+    {
+      "schema": "CFB_RUNTIME_DIAGNOSTIC_V1",
+      "timestamp_utc": "2026-11-17T19:30:36.068338+00:00",
+      "correlation_id": "20261117T190454Z_manual",
+      "stage": "current_recovery",
+      "outcome": "PASS",
+      "failure_category": null,
+      "error_excerpt": "",
+      "scope": "DIAGNOSTIC_ONLY_NO_PRODUCTION_ACCEPTANCE",
+      "required_for_this_invocation": true,
+      "fallback_attempted": false,
+      "fallback_result": null,
+      "timestamp_semantics": "diagnostic recording time; stage execution proofs separately linked"
+    },
+    {
+      "schema": "CFB_RUNTIME_DIAGNOSTIC_V1",
+      "timestamp_utc": "2026-11-17T19:30:36.068341+00:00",
+      "correlation_id": "20261117T190454Z_manual",
+      "stage": "selected_ci",
+      "outcome": "PASS",
+      "failure_category": null,
+      "error_excerpt": "",
+      "scope": "DIAGNOSTIC_ONLY_NO_PRODUCTION_ACCEPTANCE",
+      "required_for_this_invocation": true,
+      "fallback_attempted": false,
+      "fallback_result": null,
+      "timestamp_semantics": "diagnostic recording time; stage execution proofs separately linked"
+    },
+    {
+      "schema": "CFB_RUNTIME_DIAGNOSTIC_V1",
+      "timestamp_utc": "2026-11-17T19:30:36.068347+00:00",
+      "correlation_id": "20261117T190454Z_manual",
+      "stage": "parlay",
+      "outcome": "BLOCKED",
+      "failure_category": "MISSING_INPUT",
+      "error_excerpt": "missing input: qualifying leg limits and authentic combined offers",
+      "scope": "DIAGNOSTIC_ONLY_NO_PRODUCTION_ACCEPTANCE",
+      "required_for_this_invocation": true,
+      "fallback_attempted": false,
+      "fallback_result": null,
+      "timestamp_semantics": "diagnostic recording time; stage execution proofs separately linked"
+    }
+  ],
+  "canonical_writes": [
+    {
+      "path": "evidence/operational/CFB_MARKET_MONITOR_STATE.md",
+      "commit": "2c811dfcfbc8ee0c67379b25e9fca0ac201bcb36",
+      "blob": "bc2b23611950cf5c62da46afa592bcbeb3d860dd",
+      "readback": true
+    },
+    {
+      "path": "evidence/operational/CFB_DECISION_WAIT_LEDGER.md",
+      "commit": "aa8559f01f5bd8e3e51d13632c01d9165c3d6c86",
+      "blob": "eab7e0c0c590f5547cdedf2e73764590f244653a",
+      "readback": true
+    }
+  ],
+  "saved_sheet": {
+    "path": "evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-17_1317CT.md",
+    "commit": "9de178bb8c53ace79326d4975d358ae4f88fc6d5",
+    "blob": "444464039edd17313c634f80a43ee752503fd46e",
+    "publication_boundary_utc": "2026-11-17T19:17:00.559893+00:00",
+    "scope": "CURRENT_PARTIAL_WEEK12_PUBLICATION"
+  },
+  "recovery": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_291.md",
+    "commit": "191fdc8d9f6e1660e12d13302bf913346ab21970",
+    "blob": "5580109a429a69310e61ca567b5a5548dd5183b6",
+    "verified_pointers": 504
+  },
+  "fresh_final_binding_head": "146bf6395efca28b92c333ac5579ced99fd5cd5f",
+  "independent_live_proof": {
+    "path": "evidence/audits/CFB_WEEK12_INDEPENDENT_PUBLICATION_READBACK_20261117T190454Z_manual.json",
+    "commit": "7ba31df02458411a9bc5955a71bc725f5bf79dcb",
+    "blob": "e262191438f6ec8cd54960cfe33784f5565a4f2f"
+  },
+  "source_provenance": {
+    "path": "evidence/audits/CFB_WEEK12_CBS_SOURCE_PROVENANCE_20261117T190454Z_manual.json",
+    "commit": "6fb30e4a7673988737ebaa24825059b2032845a4",
+    "blob": "47133dca838d99426552697b22a1206f2f76a3d3"
+  },
+  "publication_audit": {
+    "path": "evidence/audits/CFB_WEEK12_MARKET_MONITOR_20261117T190454Z_manual.md",
+    "commit": "69662907dbd8edfec991a93828c7cc81c2608f67"
+  },
+  "reviews": {
+    "path": "evidence/audits/CFB_WEEK12_CURRENT_REVIEWS_20261117T190454Z_manual.json",
+    "commit": "597ac047f413b7e1b84611a2843975c59a423638",
+    "blob": "bd627ee69685a49bfbb81cd4788cdb574f1c57ea"
+  },
+  "working_card": {
+    "path": "evidence/operational/CFB_WEEK12_WORKING_CARD_20261117T190454Z_manual.md",
+    "commit": "146bf6395efca28b92c333ac5579ced99fd5cd5f"
+  },
+  "targeted_followups": [
+    {
+      "path": "evidence/audits/CFB_WEEK12_TARGETED_MIDDLE_FOLLOWUP_20261117T190454Z_manual.json",
+      "commit": "efe728d63b1c5e49a48b59d61b82668cbbbe4b15"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK12_TARGETED_LATE_FOLLOWUP_20261117T190454Z_manual.json",
+      "commit": "f351c363a4ac8901967613f49f56b52dfbbaed88"
+    }
+  ],
+  "counts": {
+    "games": 70,
+    "original_predictions": 56,
+    "original_exclusions": 14,
+    "original_numeric_fields": 168,
+    "modeled_pass": 19,
+    "inconclusive": 37,
+    "canonical_pass_including_exclusions": 33,
+    "issued_recommendations": 0,
+    "qualified_parlay_builds": 0
+  },
+  "selected_ci": {
+    "run": 44158290601,
+    "commit": "38f6c17431f9b1d7b9406ebf7b4a3dc5c2ef132e",
+    "job": 134304860455,
+    "conclusion": "success",
+    "matched_log_lines": [
+      "2026-11-17T19:25:02.5377005Z   \"verdict\": \"PASS_CURRENT_RECOVERY_CONSUMER_BINDINGS_ONLY\",",
+      "2026-11-17T19:27:11.6327916Z   \"verdict\": \"PASS_NEUTRAL_CANONICAL_PRESENTATION_ONLY\",",
+      "2026-11-17T19:27:12.5145900Z   \"verdict\": \"PASS_WEEK12_ORIGINAL_FROZEN_FIELDS_ONLY\",",
+      "2026-11-17T19:27:13.5427135Z   \"verdict\": \"PASS_SAVED_PUBLICATION_INTEGRITY_ONLY\",",
+      "2026-11-17T19:27:13.5429193Z     \"verdict\": \"PASS_NEUTRAL_CANONICAL_PRESENTATION_ONLY\","
+    ]
+  },
+  "repairs": {
+    "publication_support_commits": [
+      {
+        "path": "scripts/cfb_saved_publication_audit.py",
+        "commit": "8a79a70fab1d6797ce4baee162a2c69a3bc8d37d"
+      },
+      {
+        "path": "scripts/cfb_week10_frozen_field_invariant.py",
+        "commit": "b5a2204357fca08347b11260ed5bd80bc38aea0b"
+      },
+      {
+        "path": ".github/workflows/cfb_qa_hot_sheet_kickoff_section_static_gate.yml",
+        "commit": "6791310b3de30638f0b205edd8a2a093ce79a891"
+      }
+    ],
+    "stale_unknown_profile_assertions_corrected": [
+      "7349ac7670ae8f358b5d3a1666bcb1ec529a5a00",
+      "38f6c17431f9b1d7b9406ebf7b4a3dc5c2ef132e"
+    ],
+    "local_tests": "25 initial relevant existing tests,51Week8 and34Week9 passed; earlier local Week8 invocation missing required archive environment failed and was rerun with authenticated archive",
+    "earlier_remote_failures": [
+      44157505033,
+      44157818131
+    ],
+    "limits": "No scientific acceptance or number/price limits changed"
+  },
+  "first_unfinished_business_stage": "37 specific material/market qualifications and parlay M3 remain open, rather than runtime or current publication persistence",
+  "remaining_work": [
+    "Miami-Kent and BallState-Ohio working17:15CT November17 availability/offense/price reconciliation remains due and unexecuted",
+    "Wednesday two-game working13CT November18 material review",
+    "Later-game working13CT November19 reviews, including quote/availability gaps named per case",
+    "ArizonaState analytical proposal needs an approved source binding before canonical conditional issuance; proposed pair+3.5/-120 is not an issued limit",
+    "Nevada conflicting quarterback availability remains unresolved",
+    "Other Illinois/Michigan branches remain separately unresolved although targeted spread selections nowPASS",
+    "Parlay ranked depth/eligible exact combined offers/selection remain open",
+    "Natural scheduled production reliability remains unproved"
+  ],
+  "terminal_protocol": "Candidate must be independently read back before separate closure"
+}
