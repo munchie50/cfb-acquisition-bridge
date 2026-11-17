@@ -28,7 +28,7 @@ The following cases have concrete supporting mechanisms and counterarguments. Ea
 | Michigan spread |DraftKings+3.5/−108 via Covers|Current quarterback deployment and points protection merit review|Carr/Underwood roles and opponent matchup|
 | Maryland spread |CBS+17.5/−110|Large spread protection against the original close forecast|Current offense/personnel and USC passing matchup; official kickoff5:15p.m.CT conflicts with CBS|
 | Tulane spread |CBS+6.5/−111|North Texas Jackson injury changes current offense|Tulane defensive weakness and current Jackson/Jimerson role|
-| West Virginia–Houston under |CBS70.5/−105|Recent WVU offensive limitation and original lower total|Current QB/offense and explosive-score risks|
+| West Virginia–Houston under |CBS70.5/−112|Recent WVU offensive limitation and original lower total|Current QB/offense and explosive-score risks|
 | Nevada spread |CBS−3.5/−120|Nevada pass defense versus pass-heavy Hawaii|Current QB/OL, Hawaii matchup and forecast|
 | Arizona State spread |CBS+3.5/−120|Fette/Mack offensive control mechanism|Current personnel and Oklahoma State high-scoring countercase|
 | Pittsburgh spread |CBS+14.5/−120|Rush-defense protection|Dailey's current QB role, protection and Louisville passing matchup|
