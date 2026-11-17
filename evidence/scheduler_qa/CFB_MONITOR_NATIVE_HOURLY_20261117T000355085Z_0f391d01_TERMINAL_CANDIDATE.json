@@ -1,0 +1,189 @@
+{
+  "schema": "CFB_MONITOR_NATIVE_HOURLY_TERMINAL_CANDIDATE_v1",
+  "task_id": "6ac4e807aaac8191b3255fae8ab82577",
+  "invocation_run_id": "0f391d01-59e4-832b-a43b-aaac35413c63",
+  "correlation_id": "20261117T000355085Z_0f391d01",
+  "nominal_slot_utc": "2026-11-17T00:00:00Z",
+  "actual_started_at_utc": "2026-11-17T00:03:38.709649Z",
+  "candidate_recorded_at_utc": "2026-11-17T00:05:40.407Z",
+  "verdict": "TEST_INCOMPLETE",
+  "series_terminal": true,
+  "first_unavailable_stage": "SHELL_EXECUTION_ENVIRONMENT",
+  "exact_first_error": "No usable execution environment is available. Wait for an environment to become available before using this tool.",
+  "started": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261117T000355085Z_0f391d01_STARTED.json",
+    "blob": "0285b05e3d05b64f8b631fa50e855cf1c32880a1",
+    "independent_exact_readback": true
+  },
+  "runtime_metadata": {
+    "environment_selection_reported": "inherited",
+    "environments_reported": null,
+    "executor_environment_availability": "unavailable",
+    "stable_worker_identity": "UNAVAILABLE_NOT_INFERRED"
+  },
+  "authority": {
+    "pinned_main": "4035b79d611babe7689a0e36628e1384214b87a8",
+    "recovery": {
+      "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_290.md",
+      "blob": "f7d4db46ae089d4bd6c7258bc30bdb0f943cbb4a",
+      "complete_connector_read": true,
+      "chars": 149681
+    },
+    "persistence": {
+      "path": "evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md",
+      "blob": "bf4383f28cca17e3994339340a62d81962d26bfa",
+      "complete_connector_read": true,
+      "chars": 39092
+    },
+    "closure": {
+      "path": "evidence/CFB_TERMINAL_RUN_RECEIPT_CLOSURE_CONTRACT_2026-10-05.md",
+      "blob": "501cda05d80229402a485493f10b1a4bbb76d3b8",
+      "complete_connector_read": true,
+      "chars": 3943
+    }
+  },
+  "prior_hourly_pairing": {
+    "candidate_path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T230428434Z_17597ee9_TERMINAL_CANDIDATE.json",
+    "candidate_blob": "862e6c962c9bd7ca5ae7c2c12c25a1baa25436ad",
+    "closure_path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T230428434Z_17597ee9_CLOSURE.json",
+    "closure_blob": "f84f1529b46f47f76c0e18861a3d70e293118d44",
+    "prior_verdict": "TEST_INCOMPLETE",
+    "immediate_capability_difference": "NONE_OBSERVED"
+  },
+  "six_run_reconciliation": {
+    "invocation_count": 6,
+    "ordered_outcomes": [
+      "BOUNDARY_PASS",
+      "BOUNDARY_PASS",
+      "TEST_INCOMPLETE_NO_EXECUTOR",
+      "TEST_INCOMPLETE_NO_EXECUTOR",
+      "TEST_INCOMPLETE_NO_EXECUTOR",
+      "TEST_INCOMPLETE_NO_EXECUTOR"
+    ],
+    "boundary_pass_count": 2,
+    "no_executor_count": 4,
+    "transition": "Usable executor present for first two invocations, then absent for four consecutive invocations under the same task and prompt.",
+    "connector_invariant": "GitHub QA persistence, complete helper fetch, 3780-byte decode and exact helper blob SHA-1 remained successful in every invocation.",
+    "conclusion": "Sustained runtime-provisioning state transition is demonstrated within the six-run sample. Scheduler dispatch and GitHub connector are not the failing boundary. DNS, proxy transport, Git, helper and compiler execution cannot be blamed for no-executor runs because execution never reached them."
+  },
+  "measured_layers": {
+    "scheduling_dispatch": {
+      "outcome": "OBSERVED",
+      "receipt_persisted": true
+    },
+    "github_connector": {
+      "outcome": "PASS",
+      "authenticated_main": "4035b79d611babe7689a0e36628e1384214b87a8",
+      "qa_write_readback": "PASS"
+    },
+    "connector_payload_verification": {
+      "outcome": "PASS_WITHIN_ORCHESTRATION_ISOLATE",
+      "path": "scripts/cfb_runtime_checkout.py",
+      "ref": "4035b79d611babe7689a0e36628e1384214b87a8",
+      "authenticated_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "decoded_bytes": 3780,
+      "independent_git_blob_sha1": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "exact_match": true,
+      "method": "Complete connector base64 strictly decoded and Git blob SHA-1 recomputed in functions.exec isolate; no transcription or patching.",
+      "limitation": "No OS filesystem handoff because no usable executor was available."
+    },
+    "orchestration": {
+      "functions_exec": true,
+      "documented_exec_command": true,
+      "actual_python_git_probe": "UNAVAILABLE",
+      "exact_error": "No usable execution environment is available. Wait for an environment to become available before using this tool."
+    },
+    "dns": {
+      "github.com": "UNEXECUTED_NO_EXECUTOR",
+      "api.github.com": "UNEXECUTED_NO_EXECUTOR"
+    },
+    "proxy_environment_key_presence": "UNAVAILABLE_NO_EXECUTOR",
+    "git_ls_remote": "UNEXECUTED_NO_EXECUTOR",
+    "urllib_environment_default": "UNEXECUTED_NO_EXECUTOR",
+    "urllib_ProxyHandler_empty": "UNEXECUTED_NO_EXECUTOR",
+    "helper": {
+      "executions": 0,
+      "status": "UNEXECUTED_NO_EXECUTOR",
+      "checkout": "UNVERIFIED"
+    },
+    "current_prerequisites": {
+      "week12_compiler": {
+        "path": "scripts/cfb_week12_publication.py",
+        "blob": "8656a3f8cc511715fc3a7a5905de1d5b2e3055bf",
+        "chars": 10782,
+        "connector_presence": "PASS",
+        "syntax": "UNEXECUTED_NO_EXECUTOR",
+        "import": "UNEXECUTED_NO_EXECUTOR"
+      },
+      "cbs_collector": {
+        "path": "scripts/cfb_monitor_collection.py",
+        "blob": "7f379b082d3c1676a87f456856ccc7fe1fbe43c0",
+        "chars": 10672,
+        "connector_presence": "PASS",
+        "syntax": "UNEXECUTED_NO_EXECUTOR",
+        "import": "UNEXECUTED_NO_EXECUTOR"
+      },
+      "cbs_normalizer": {
+        "path": "scripts/cfb_cbs_full_board_normalizer.py",
+        "blob": "35536c3e4988640935e7754be08c3ec464e29215",
+        "chars": 9830,
+        "connector_presence": "PASS",
+        "syntax": "UNEXECUTED_NO_EXECUTOR",
+        "import": "UNEXECUTED_NO_EXECUTOR"
+      }
+    }
+  },
+  "historical_comparison": {
+    "oct29_morning": {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261029T115755Z_TERMINAL_CANDIDATE.md",
+      "blob": "4a50f42f25feb409531dcba2e1f30f0867babcee",
+      "helper_checkout": "PASS"
+    },
+    "oct29_afternoon": {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261029T180541Z_TERMINAL_CANDIDATE.md",
+      "blob": "e97a0723bc6a7d5c1572ceb2e1d1e24d53288c8f",
+      "helper_checkout": "PASS"
+    },
+    "nov8_capability": {
+      "path": "evidence/scheduler_qa/CFB_CAPABILITY_20261108T160501Z_lgb8ogo_RESULT.json",
+      "blob": "9c0687a2a2884b6ace78ce3112b6f04da2746047",
+      "verdict": "BOUNDARY_PASS"
+    },
+    "nov16_production": {
+      "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261116T185552Z_299da847_RUN_CLOSURE.md",
+      "blob": "72cebb8315605e7adb097627c2d78a0a1b8a2ac4",
+      "verdict": "RUN_INCOMPLETE"
+    },
+    "differential": {
+      "path": "evidence/scheduler_qa/CFB_MARKET_MONITOR_RUNTIME_PROXY_DIFFERENTIAL_20261116.md",
+      "blob": "72522ef47b849e7435f5d914de8df2c4c89c6b03"
+    }
+  },
+  "first_difference": "The stable cross-run boundary is executor provisioning: the first two hourly invocations had it and completed checkout; the final four did not. Connector behavior and helper bytes did not change.",
+  "observed_capabilities": [
+    "scheduled dispatch in all six runs",
+    "GitHub QA write/readback in all six runs",
+    "complete exact helper connector payload in all six runs",
+    "helper checkout and compiler verification only when executor was provisioned"
+  ],
+  "unknowns": [
+    "terminating actor or policy behind executor deprovisioning",
+    "stable worker identities",
+    "whether production can be pinned through a product control not exposed here",
+    "end-to-end production reliability after restoration"
+  ],
+  "next_discriminating_observation": "The six-run sample is complete. The next useful test is not another identical canary: restore or explicitly assign an execution-capable environment to the existing production task, then verify the same shell/transfer/helper boundary in a natural production invocation.",
+  "supported_reversible_restoration_not_applied": "Restore or pin the production Market Monitor to an execution-capable environment class with documented exact connector-to-runtime transfer and sanctioned GitHub transport, preserving prompt, cadence and sole publication authority. No safe environment-assignment control is exposed in this runtime.",
+  "production_effect": "ZERO",
+  "task_or_schedule_mutation": "NONE",
+  "lifecycle": "Six-run schedule ends normally; no follow-up automation created and no mutation required.",
+  "forbidden_work_not_performed": [
+    "no fresh CBS request",
+    "no helper execution in this invocation",
+    "no decisions or publication",
+    "no production artifact mutation",
+    "no task/schedule/worker/network/workflow/model/market/Hot Sheet/wager/ledger change",
+    "no GitHub Actions dispatch"
+  ],
+  "candidate_self_certification": false
+}
