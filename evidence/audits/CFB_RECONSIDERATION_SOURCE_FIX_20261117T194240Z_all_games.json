@@ -1,0 +1,18 @@
+{
+  "changed_paths": [
+    "scripts/cfb_conditional_recommendation_profile.py",
+    "scripts/test_cfb_conditional_recommendation_profile.py"
+  ],
+  "change": "V3 prospective reconsideration can use the already approved DraftKings aggregate source when source_kind is explicitly present. Existing exact source, operator, outcome-link, chronology, prior PASS binding and cutoff checks remain operative. V3 without source_kind retains its original source route. V4 still cannot reopen PASS without V3 reconsideration.",
+  "verification": {
+    "suite": "test_cfb_conditional_recommendation_profile.py",
+    "tests": 45,
+    "result": "PASS",
+    "new_regressions": [
+      "V3 aggregate source validates, renders, audits, and preserves prior PASS",
+      "Wrong source kind, URL and operator rejected in V3 aggregate path",
+      "V3 aggregate still requires exact prior PASS digest"
+    ]
+  },
+  "scope": "Local producer compatibility repair only. No new schema, source host, operator, model rule, scientific acceptance, canonical data, task, schedule, commit or GitHub write."
+}
