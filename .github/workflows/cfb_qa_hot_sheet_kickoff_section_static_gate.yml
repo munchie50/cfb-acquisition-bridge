@@ -3,6 +3,9 @@ on:
   push:
     branches: [main]
     paths:
+      - 'scripts/cfb_week12_publication.py'
+      - 'evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json'
+      - 'evidence/operational/CFB_WEEK12_HOT_SHEET_*.md'
       - 'scripts/cfb_week10_publication.py'
       - 'scripts/cfb_week10_missed_review.py'
       - 'scripts/test_cfb_week10_missed_review.py'
@@ -118,6 +121,9 @@ on:
     branches: [main]
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
+      - 'scripts/cfb_week12_publication.py'
+      - 'evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json'
+      - 'evidence/operational/CFB_WEEK12_HOT_SHEET_*.md'
       - 'scripts/cfb_week10_publication.py'
       - 'scripts/cfb_week10_missed_review.py'
       - 'scripts/test_cfb_week10_missed_review.py'
@@ -317,6 +323,9 @@ jobs:
             evidence/operational/CFB_WEEK11_HOT_SHEET_*)
               python scripts/cfb_week10_frozen_field_invariant.py --profile WEEK11 --sheet "$cfb_current_sheet" --first "$RUNNER_TEMP/cfb_first_frozen.zip" --lineage evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json
               python scripts/cfb_saved_publication_audit.py --profile WEEK11 --recover-saved-inputs --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md --lineage evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json --as-of "$(date -u +%Y-%m-%dT%H:%M:%SZ)" ;;
+            evidence/operational/CFB_WEEK12_HOT_SHEET_*)
+              python scripts/cfb_week10_frozen_field_invariant.py --profile WEEK12 --sheet "$cfb_current_sheet" --first "$RUNNER_TEMP/cfb_first_frozen.zip" --lineage evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json
+              python scripts/cfb_saved_publication_audit.py --profile WEEK12 --recover-saved-inputs --sheet "$cfb_current_sheet" --market evidence/operational/CFB_MARKET_MONITOR_STATE.md --decision evidence/operational/CFB_DECISION_WAIT_LEDGER.md --execution evidence/operational/CFB_EXECUTION_LEDGER.md --scorecard evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md --lineage evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json --as-of "$(date -u +%Y-%m-%dT%H:%M:%SZ)" ;;
             *) echo "Unsupported current publication requires qualification"; exit 1 ;;
           esac
       - name: Report saved timing exceptions without certifying practical deadlines
