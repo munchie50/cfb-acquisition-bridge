@@ -1,0 +1,29 @@
+{
+  "schema": "CFB_MONITOR_WORK_MODE_HANDOFF_QA_RESULT_v1",
+  "verdict": "QA_HANDOFF_PASS",
+  "request": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_SCHEDULED_HANDOFF_20261117T012200897Z_REQUEST.json",
+    "commit": "5b73e02795480f60245592560c3cc0606af58bd2",
+    "blob": "65da07fda020f7b7a89945fc9b91f187d64edc83"
+  },
+  "verified": {
+    "status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+    "head": "ec5b110bf28557048d8d3999cba70be1c0e3a66f",
+    "python": "3.12.14",
+    "immutable_reviews": 60,
+    "full_ancestry": true,
+    "request_exact_blob_match": true,
+    "recovery_index_blob_match": true,
+    "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "helper_bytes": 3780,
+    "prerequisites_syntax_pass": [
+      "scripts/cfb_week12_publication.py",
+      "scripts/cfb_monitor_collection.py",
+      "scripts/cfb_cbs_full_board_normalizer.py"
+    ]
+  },
+  "producer": "scheduled canary",
+  "consumer": "Work Mode, invoked directly",
+  "automatic_pickup": "UNVERIFIED",
+  "production_publication": "UNEXECUTED"
+}
