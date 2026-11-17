@@ -1,0 +1,62 @@
+{
+  "schema": "CFB_MONITOR_NATIVE_HOURLY_CLOSURE_v1",
+  "task_id": "6ac4e807aaac8191b3255fae8ab82577",
+  "invocation_run_id": "0f391d01-59e4-832b-a43b-aaac35413c63",
+  "correlation_id": "20261117T000355085Z_0f391d01",
+  "closed_at_utc": "2026-11-17T00:06:05.972Z",
+  "terminal_status": "TEST_INCOMPLETE",
+  "series_terminal": true,
+  "first_unavailable_stage": "SHELL_EXECUTION_ENVIRONMENT",
+  "exact_first_error": "No usable execution environment is available. Wait for an environment to become available before using this tool.",
+  "started": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261117T000355085Z_0f391d01_STARTED.json",
+    "blob": "0285b05e3d05b64f8b631fa50e855cf1c32880a1",
+    "exact_readback": true
+  },
+  "terminal_candidate": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261117T000355085Z_0f391d01_TERMINAL_CANDIDATE.json",
+    "blob": "8bb7d61469272fcdba4c22f9192f496131e1d00c",
+    "chars": 8973,
+    "exact_readback": true
+  },
+  "prior_hourly_candidate": {
+    "path": "evidence/scheduler_qa/CFB_MONITOR_NATIVE_HOURLY_20261116T230428434Z_17597ee9_TERMINAL_CANDIDATE.json",
+    "blob": "862e6c962c9bd7ca5ae7c2c12c25a1baa25436ad",
+    "verdict": "TEST_INCOMPLETE"
+  },
+  "six_run_result": {
+    "outcomes": [
+      "BOUNDARY_PASS",
+      "BOUNDARY_PASS",
+      "TEST_INCOMPLETE_NO_EXECUTOR",
+      "TEST_INCOMPLETE_NO_EXECUTOR",
+      "TEST_INCOMPLETE_NO_EXECUTOR",
+      "TEST_INCOMPLETE_NO_EXECUTOR"
+    ],
+    "boundary_pass_count": 2,
+    "no_executor_count": 4,
+    "terminal_conclusion": "Sustained executor-provisioning transition after two passes; scheduler dispatch and GitHub connector remained healthy throughout."
+  },
+  "phase_proof": {
+    "scheduled_dispatch": "OBSERVED",
+    "github_connector_read_write": "PASS",
+    "exact_helper_connector_payload": "PASS_3780_BYTES_b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "shell": "UNAVAILABLE_EXPLICIT_ENVIRONMENT_ERROR",
+    "dns": "UNEXECUTED",
+    "proxy_comparison": "UNEXECUTED",
+    "git_ls_remote": "UNEXECUTED",
+    "urllib": "UNEXECUTED",
+    "unchanged_helper": "UNEXECUTED",
+    "checkout": "UNVERIFIED",
+    "week12_compiler_collector": "CONNECTOR_PRESENCE_PASS_EXECUTABILITY_UNVERIFIED"
+  },
+  "classification": "The six-run sample isolates runtime provisioning as the first unstable boundary. Two initial invocations executed the unchanged helper and full checkout; four consecutive later invocations had no usable executor. GitHub persistence and exact helper payload verification passed every time.",
+  "first_difference": "Executor availability changed; task prompt, connector behavior and helper bytes did not.",
+  "next_action": "Do not repeat the identical canary. Restore or explicitly assign an execution-capable environment to the existing production task and verify shell/transfer/helper checkout in a natural production invocation.",
+  "supported_reversible_restoration_not_applied": "Pin production to an execution-capable environment class while preserving prompt, cadence and publication authority; no safe assignment control is exposed here.",
+  "production_effect": "ZERO",
+  "task_or_schedule_mutation": "NONE",
+  "lifecycle": "Six-run schedule completed normally; no follow-up automation created.",
+  "closure_issued_after_candidate_exact_readback": true,
+  "closure_self_certification": false
+}
