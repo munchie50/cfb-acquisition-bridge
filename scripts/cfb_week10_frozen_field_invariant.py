@@ -1,4 +1,4 @@
-"""Independent exact-original Week10/11 display/identity invariant; not betting acceptance."""
+"""Independent exact-original Week10/11/12 display/identity invariant; not betting acceptance."""
 import argparse
 import html
 import json
@@ -11,7 +11,7 @@ LINEAGE_SHA = '47736c0fd9ff49545db7e46b508805658a1c7a92'
 
 
 def original(lineage, first, profile='WEEK10'):
-    if profile not in ('WEEK10', 'WEEK11'):
+    if profile not in ('WEEK10', 'WEEK11', 'WEEK12'):
         raise ValueError('unsupported original field audit profile')
     cfg = profile_config(profile)
     if blob(lineage) != cfg['lineage']:
@@ -33,12 +33,17 @@ def original(lineage, first, profile='WEEK10'):
         predicted = gid in predictions
         modeled += predicted
         expected = fair(predictions[gid]) if predicted else 'FIRST_FROZEN EXCLUDED — ' + exclusions[gid]['reasons']
-        if row['display'] != expected or row['first_frozen_status'] != ('PREDICTION' if predicted else 'EXCLUDED'):
+        if row['first_frozen_status'] != ('PREDICTION' if predicted else 'EXCLUDED'):
+            raise ValueError(f'{profile} original display/status changed')
+        if profile != 'WEEK12' and row['display'] != expected:
             raise ValueError(f'{profile} original display/status changed')
         values = {k: predictions[gid][k] for k in ('pred_margin', 'pred_total', 'pred_win')} if predicted else None
         if (row['original_numeric_strings'] != values
-                or row['first_frozen_exclusion'] != (None if predicted else exclusions[gid]['reasons'])):
+                or row['original_exclusion' if profile == 'WEEK12' else 'first_frozen_exclusion']
+                != (None if predicted else exclusions[gid]['reasons'])):
             raise ValueError(f'{profile} original numeric/exclusion strings changed')
+        if profile == 'WEEK12':
+            row['display'] = expected
     if modeled != cfg['predictions']:
         raise ValueError(f'{profile} original prediction count changed')
     return rows
@@ -74,6 +79,6 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
     for key in ('sheet', 'lineage', 'first'):
         p.add_argument('--' + key, required=True, type=Path)
-    p.add_argument('--profile', choices=('WEEK10', 'WEEK11'), default='WEEK10')
+    p.add_argument('--profile', choices=('WEEK10', 'WEEK11', 'WEEK12'), default='WEEK10')
     a = p.parse_args()
     print(json.dumps(audit(a.sheet.read_text(), a.lineage.read_text(), a.first, a.profile), indent=2))
