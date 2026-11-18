@@ -1,0 +1,11 @@
+# RUN_CLOSURE
+status: RUN_INCOMPLETE
+correlation_id: scheduled11-20261118T190445
+terminal_candidate: evidence/run_receipts/CFB_MARKET_MONITOR_20261118T190534Z_scheduled11-20261118T190445_TERMINAL_CANDIDATE.md
+terminal_candidate_commit: 108ecbd0594678843258ec1de5fed67d3722065c
+terminal_candidate_blob: 5efd3c6808a6aa7f2fa649fedef27756bd2774e4
+terminal_candidate_independent_readback: PASS (1555 characters, status RUN_INCOMPLETE)
+blocker: verified embedded helper exited COMPUTATION_RUNTIME_UNAVAILABLE / CalledProcessError at checkout; underlying Git diagnostic unavailable
+publication: NOT_ATTEMPTED
+previous_accepted_publication: UNCHANGED
+next_action: use persisted Work Mode runtime handoff to recover checkout and resume producer
