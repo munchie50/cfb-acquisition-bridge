@@ -1,0 +1,172 @@
+{
+  "status": "REHEARSAL_PARTIAL_COMPILER_RENDER_PASS",
+  "as_of": "2026-11-18T23:50:45.880232+00:00",
+  "cycle": "CFB_MARKET_MONITOR_20261118T235045Z",
+  "audit": {
+    "verdict": "PASS_CONDITIONAL_CANONICAL_PRESENTATION_ONLY",
+    "games": 70,
+    "sheet_blob": "4b8cef2753e685d5eed063db61720fcedf9bbffd",
+    "scope": "typed canonical display only; no source truth/betting/natural-run acceptance"
+  },
+  "coverage": {
+    "governed_games": 70,
+    "matched_games": 70,
+    "source_team_rows": 140,
+    "future_games": 67,
+    "future_team_rows": 134,
+    "past_or_started_games": 3,
+    "missing_game_ids": []
+  },
+  "reviewed_six_market_games": [
+    "401862830",
+    "401856869",
+    "401866468",
+    "401858529",
+    "401864545",
+    "401864542"
+  ],
+  "live_review_branches": 36,
+  "retained_other_decisions": 64,
+  "immutable_review_count": 64,
+  "head": "91648b9812e29bcf4de0fba2cdda4fa21a91b3fc",
+  "nonshallow": "false",
+  "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+  "market_prefix_preserved": true,
+  "decision_prefix_preserved": true,
+  "proposal_blobs": {
+    "market": "043d299d13b5b4aed9d49126b914ea1616f592ee",
+    "decision": "7fa676850cda1334a08ff1919057a42fd77438f1",
+    "sheet": "4b8cef2753e685d5eed063db61720fcedf9bbffd"
+  },
+  "source": {
+    "path": "evidence/operational/CFB_REHEARSAL_PRIVATE_SOURCE.md",
+    "blob": "5819251186e2f4ff3f220f80a8101c891a22e769",
+    "recovered_by": "2026-11-18T23:47:55.010069+00:00"
+  },
+  "first_failed_operation": "Optional parser import bs4 failed with ModuleNotFoundError; existing lxml used for deterministic table serialization. Initial serializer omitted th team cells; corrected to th|td before normalizer acceptance.",
+  "review_gap": "Full current slate material review, named operator price/selection binding and venue confirmation remain incomplete. Existing Maryland limit retained only within prior review validity. No new recommendation issued.",
+  "maryland_current_cbs": [
+    {
+      "team": "Maryland",
+      "spread": {
+        "availability": "DISPLAYED",
+        "line": 17.5,
+        "price": -110,
+        "side": null,
+        "opaque_book_icon_id": "35"
+      },
+      "moneyline": {
+        "availability": "DISPLAYED",
+        "line": null,
+        "price": 640,
+        "side": null,
+        "opaque_book_icon_id": "35"
+      },
+      "total": {
+        "availability": "DISPLAYED",
+        "line": 56.5,
+        "price": -115,
+        "side": "o",
+        "opaque_book_icon_id": "35"
+      }
+    },
+    {
+      "team": "USC",
+      "spread": {
+        "availability": "DISPLAYED",
+        "line": -17,
+        "price": -108,
+        "side": null,
+        "opaque_book_icon_id": "34"
+      },
+      "moneyline": {
+        "availability": "DISPLAYED",
+        "line": null,
+        "price": -901,
+        "side": null,
+        "opaque_book_icon_id": "30"
+      },
+      "total": {
+        "availability": "DISPLAYED",
+        "line": 57.5,
+        "price": -111,
+        "side": "u",
+        "opaque_book_icon_id": "34"
+      }
+    }
+  ],
+  "raw_cbs_sha256": "3b7ec53edb7a8abf42027e40ad268104b9a8af374e94a7a1e03fd52d48a8ea5b",
+  "raw_cbs_bytes": 3054576,
+  "terminal_verdict": "REHEARSAL_INCOMPLETE_PARTIAL_SHEET_VERIFIED",
+  "first_actual_utc": "2026-11-18T23:46:23.606Z",
+  "clock_source": "functions JavaScript Date UTC",
+  "trigger": "NATURAL_SCHEDULED_ONE_TIME",
+  "task_id": "6aeb87dd781481919f9f190e69cb5422",
+  "run": {
+    "id": "07603148-a7dc-832f-a066-8512d7c877e2",
+    "recorded_status": "in_progress",
+    "scheduled_for": "2026-11-18T23:44:22Z",
+    "started_at": "2026-11-18T23:46:09.071798Z",
+    "completed_at": null,
+    "chat_ref": null
+  },
+  "started_marker": {
+    "commit": "91648b9812e29bcf4de0fba2cdda4fa21a91b3fc",
+    "blob": "c421956233b1eb799da48c505518af19c229d278",
+    "path": "evidence/scheduler_qa/CFB_REHEARSAL_20261118T234623606Z_unknown_STARTED.json"
+  },
+  "startup_revision": "CFB_MONITOR_LIVE_CONNECTOR_SHELL_20261119",
+  "startup": {
+    "pin": "91648b9812e29bcf4de0fba2cdda4fa21a91b3fc",
+    "blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "size": 3780
+  },
+  "shell": {
+    "exit_code": 0,
+    "python": "3.12.14",
+    "git": "2.52.0",
+    "normal_checkout_executions": 1,
+    "status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+    "session_poll": "No checkout session returned; private compiler session polled to exit0"
+  },
+  "recovery_index": "v1.294",
+  "source_clock": "RESPONSE_RECOVERED_BY_NOT_EXACT_BOOK_UPDATE",
+  "source_capture": {
+    "commit": "b273b4f8102a90a56f3306362259922c300a3ae7",
+    "path": "evidence/scheduler_qa/CFB_REHEARSAL_20261118T234623606Z_unknown_CBS_CAPTURE.md",
+    "blob": "5819251186e2f4ff3f220f80a8101c891a22e769",
+    "exact": true
+  },
+  "sheet": {
+    "path": "evidence/scheduler_qa/CFB_REHEARSAL_20261118T234623606Z_unknown_SHEET.md",
+    "commit_sha": "4fa364c9aed778c25ff14eef83207f1ee0715511",
+    "blob": "ed4c1deda0bb72d8c5649e28fcb0376429a8e322",
+    "exact": true,
+    "verified": "2026-11-18T23:51:30.881Z",
+    "url": "https://github.com/munchie50/cfb-acquisition-bridge/blob/4fa364c9aed778c25ff14eef83207f1ee0715511/evidence/scheduler_qa/CFB_REHEARSAL_20261118T234623606Z_unknown_SHEET.md"
+  },
+  "named_operator_attempt": {
+    "url": "https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/?itm_content=NCAA+Football&tb_edate=n30days&tb_eg=NCAA+Football&tb_emt=Spread&tb_page=1",
+    "http_status": 200,
+    "bytes": 195,
+    "body_class": "Site Unavailable; Unable to access this site.",
+    "recovered_by": "2026-11-18T23:49:40.204760+00:00",
+    "quotes_qualified": 0
+  },
+  "source_transformation": "lxml HTML table serialization preserves source headers, directed team links, all five other columns and per-cell opaque book icons. Unchanged normalizer verified70 IDs/140rows. Private source path is compiler staging only; committed capture under scheduler_qa.",
+  "canonical_isolation": {
+    "verified_at_head": "b273b4f8102a90a56f3306362259922c300a3ae7",
+    "market": "319d022064de2f215c980971d1eccc7b117e401b",
+    "decision": "e442f0bea249ea706726c76b214d396523d2df9d",
+    "execution": "5f098136e7c2719731d49d5bbe98752df0775e9f",
+    "scorecard": "8e158d780b29f529cc029daf9383c19a68819157",
+    "money": "5e998c014cbddb5822c63f61f10f6c3deb565a29",
+    "all_match_start": true,
+    "production_task_mutations": 0
+  },
+  "paid_calls": 0,
+  "new_recommendations": 0,
+  "first_unproved_boundary": "Current named operator quote/selection qualification and remaining full-slate material review. Compiler/render and persistence proved for a partial live review.",
+  "limitations": "No full70-game current analytical completion or production reliability claim. No new conditional issuance. Fresh research limited to six Thursday/Friday games;64other decisions retained, including two closed conditions.",
+  "completed_utc": "2026-11-18T23:52:05.354Z"
+}
