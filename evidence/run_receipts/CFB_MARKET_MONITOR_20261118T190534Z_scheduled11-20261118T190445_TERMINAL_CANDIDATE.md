@@ -1,0 +1,28 @@
+# TERMINAL_CANDIDATE
+observed_utc: 2026-11-18T19:05:34.107Z
+correlation_id: scheduled11-20261118T190445
+status: RUN_INCOMPLETE
+startup_receipt: evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261118T190445Z_scheduled11-20261118T190445.md
+startup_receipt_blob: 3e318bf840e039dfa63d5b43076c65578afdb73f
+pinned_head: a05600d4e46fd196df1750bde907c667041ce15b
+helper_blob: b13930cb714eb87c8dce6136ffab6fbceeb44898
+index: evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_292.md
+index_blob: c7066c5126536060b85c93e7baaf6371eb95669e
+shell_probe: EXECUTED_PASS Python 3.13.5 Git 2.47.3
+embedded_helper: EXECUTED_PASS 3780 bytes verified exact blob
+checkout: FAILED status 1 COMPUTATION_RUNTIME_UNAVAILABLE CalledProcessError; underlying Git diagnostics unavailable
+runtime_handoff: evidence/run_receipts/CFB_MARKET_MONITOR_RUNTIME_HANDOFF_20261118T190523Z_scheduled11-20261118T190445.json
+runtime_handoff_commit: 8c313fe9bdaebcb55adc858f574d7d7c06618082
+runtime_handoff_blob: b8c32cdaef1a40bc791acf7837c62339c9578e66
+fallback_attempted: false
+fallback_result: ineligible after verified helper execution
+classifier_execution: NOT_RUN
+source_acquisition: NOT_EXECUTED
+six_market_decisions: NOT_EXECUTED
+compiler: BLOCKED
+publication: BLOCKED
+selected_CI: NOT_EXECUTED
+recovery_integration: NOT_EXECUTED
+Nebraska_and_other_data_gaps: NOT_RECONCILED
+parlay_M3: NOT_EXECUTED
+next_action: Work Mode checkout from exact pinned inputs; recover full authority and current producer, qualify live sources and finish governed publication; preserve previous accepted publication
