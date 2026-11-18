@@ -1,0 +1,11 @@
+# CFB Health RUN_CLOSURE
+correlation_id: CFB_HEALTH_20261118T223115Z
+status: RUN_INCOMPLETE
+coverage: COVERAGE_UNVERIFIED
+candidate_path: evidence/run_receipts/CFB_HEALTH_20261118T223115Z_TERMINAL_CANDIDATE.md
+candidate_blob: 2e0d5add1ba29eaa18fc61abaa7e550e0334c40e
+candidate_readback: PASS
+bundle_result_readback: PASS
+five_independent_blob_identity_checks: PASS
+first_unverified_check: one-time bundle connector-to-shell delivery, execution unavailable
+no_schedule_or_producer_changes: true
