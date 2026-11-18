@@ -1,0 +1,12 @@
+# RUN_STARTED
+observed_utc: 2026-11-18T19:04:45.206Z
+trigger_type: scheduled_automation
+invocation_id: not_exposed
+correlation_id: scheduled11-20261118T190445
+revision: CFB_MONITOR_SINGLE_CALL_20261118_R3
+embedded_payload_present: true
+embedded_payload_character_count: not_measured_in_runtime
+stage: STARTUP_RECEIPT
+outcome: RUN_STARTED_PENDING_INDEPENDENT_READBACK
+connector_attempt: GitHub create_file
+credentials_logged: false
