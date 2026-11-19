@@ -1,0 +1,57 @@
+{
+  "status": "RUN_INCOMPLETE",
+  "correlation_id": "scheduled11_20261119T130253Z",
+  "observed_utc": "2026-11-19T13:02:53Z",
+  "startup_trace": {
+    "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261119T130253Z_scheduled11_20261119T130253Z.md",
+    "blob": "649e084ae0f795d99a4376c8213410fc2e7ce10d",
+    "readback": "PASS"
+  },
+  "pinned_head": "6a2ed66cfa43f80a14bcc35e00e3e73b96823c83",
+  "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+  "index_path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_294.md",
+  "index_blob": "437d20464b3caa01fbbe0d3e051eb47c7c62c397",
+  "runtime_handoff": {
+    "path": "evidence/run_receipts/CFB_MARKET_MONITOR_RUNTIME_HANDOFF_20261119T130253Z_scheduled11_20261119T130253Z.json",
+    "commit": "9dd1c51fb10e80abdf26682fa3b83e0a14b7ca36",
+    "blob": "93058535ac41e8f23bac7d3d7b5a87642a5b1dc3",
+    "readback": "PASS"
+  },
+  "stages": [
+    {
+      "stage": "STARTUP_RECEIPT",
+      "outcome": "PASS"
+    },
+    {
+      "stage": "AUTHENTICATED_MAIN_AND_HELPER",
+      "outcome": "PASS"
+    },
+    {
+      "stage": "CONNECTOR_TO_SHELL",
+      "outcome": "BLOCKED",
+      "failure_category": "EXECUTION_TOOL_UNAVAILABLE",
+      "sanitized_error_excerpt": "tools.exec_command not exposed in this automation tool namespace",
+      "fallback_attempted": false,
+      "required_for_this_invocation": true
+    },
+    {
+      "stage": "WORKTREE_AND_ANCESTRY",
+      "outcome": "NOT_EXECUTED"
+    },
+    {
+      "stage": "CURRENT_AUTHORITY_CONTENT",
+      "outcome": "NOT_EXECUTED"
+    },
+    {
+      "stage": "LIVE_CBS_AND_SIX_MARKET_REVIEW",
+      "outcome": "NOT_EXECUTED"
+    },
+    {
+      "stage": "COMPILER_PUBLICATION_CI",
+      "outcome": "NOT_EXECUTED"
+    }
+  ],
+  "classifier_execution": "NOT_RUN",
+  "canonical_publication": "UNCHANGED",
+  "next_action": "Work Mode: use verified handoff to execute exact pinned checkout, recover accepted authority, complete live workload and governed publication. Do not infer RUN_PASS."
+}
