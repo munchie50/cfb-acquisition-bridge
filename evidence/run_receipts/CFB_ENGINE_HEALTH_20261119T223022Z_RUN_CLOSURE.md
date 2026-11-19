@@ -1,0 +1,10 @@
+# CFB Health RUN_CLOSURE
+correlation_id: CFB_ENGINE_HEALTH_20261119T223022Z
+status: RUN_INCOMPLETE
+coverage: COVERAGE_UNVERIFIED
+terminal_candidate: evidence/run_receipts/CFB_ENGINE_HEALTH_20261119T223022Z_TERMINAL_CANDIDATE.md
+terminal_candidate_blob: 68db6f9715607c3fddd33cd744ed4beb99ae234d
+terminal_candidate_readback: PASS
+health_audit_readback: PASS
+first_unverified_check: comprehensive semantic and historical coverage; checkout/readiness unverified
+no_schedule_or_producer_changes: true
