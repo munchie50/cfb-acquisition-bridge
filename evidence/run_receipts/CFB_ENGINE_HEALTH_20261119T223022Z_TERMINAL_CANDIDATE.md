@@ -1,0 +1,20 @@
+# CFB Health terminal candidate
+correlation_id: CFB_ENGINE_HEALTH_20261119T223022Z
+status: RUN_INCOMPLETE
+coverage: COVERAGE_UNVERIFIED
+startup_readback: PASS
+health_audit: evidence/run_receipts/CFB_ENGINE_HEALTH_20261119T223022Z_HEALTH_AUDIT.md
+health_audit_blob: c6621d3c3cfe509ed498a849baffba929d40fd57
+health_audit_readback: PASS
+five_git_blob_identity_checks: PASS
+four_task_topology: PASS
+monitor_0700CT: RUN_INCOMPLETE
+monitor_1300CT: RUN_INCOMPLETE
+evening_prior_due: RUN_INCOMPLETE
+evening_today: NOT_YET_DUE
+direct_shell_probe: PASS
+combined_exec_command: NOT_EXPOSED
+repository_checkout_and_readiness: UNVERIFIED
+comprehensive_semantic_and_historical_coverage: UNVERIFIED
+first_unverified_health_boundary: comprehensive semantic and historical coverage
+no_task_or_champion_mutation: true
