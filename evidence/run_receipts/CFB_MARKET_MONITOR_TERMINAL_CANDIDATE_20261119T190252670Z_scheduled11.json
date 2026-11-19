@@ -1,0 +1,58 @@
+{
+  "schema": "CFB_MONITOR_TERMINAL_CANDIDATE",
+  "timestamp_utc": "2026-11-19T19:03:15.201Z",
+  "correlation_id": "20261119T190252670Z_scheduled11",
+  "trigger": "natural_scheduled",
+  "status": "RUN_INCOMPLETE",
+  "startup_receipt": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261119T190252670Z_scheduled11.md",
+  "startup_blob": "47d4d8eb506580f8017059d227747bba48d959d7",
+  "pinned_head": "bb7c7de95398fa396ed5a5168bf9552fe91dded9",
+  "stages": [
+    {
+      "stage": "RUN_STARTED",
+      "outcome": "PASS"
+    },
+    {
+      "stage": "DIRECT_SHELL_PROBE",
+      "outcome": "PASS",
+      "evidence": "CFB_DIRECT_SHELL_STARTED; Python 3.13.5; git 2.47.3"
+    },
+    {
+      "stage": "CONNECTOR_ORCHESTRATED_EXEC",
+      "outcome": "BLOCKED",
+      "failure_category": "TOOL_NOT_EXPOSED",
+      "error": "exec_command not exposed in connector orchestration"
+    },
+    {
+      "stage": "PINNED_HELPER_CONNECTOR",
+      "outcome": "PASS",
+      "blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+      "bytes": 3780
+    },
+    {
+      "stage": "HELPER_TRANSFER",
+      "outcome": "FAILED",
+      "failure_category": "DNS_RESOLUTION",
+      "error": "URLError <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "fallback_attempted": true
+    },
+    {
+      "stage": "HELPER_EXECUTION",
+      "outcome": "NOT_EXECUTED"
+    },
+    {
+      "stage": "LIVE_SOURCE",
+      "outcome": "NOT_EXECUTED"
+    },
+    {
+      "stage": "DECISION_PRODUCER",
+      "outcome": "NOT_EXECUTED"
+    },
+    {
+      "stage": "PUBLICATION",
+      "outcome": "NOT_EXECUTED"
+    }
+  ],
+  "classifier_execution": "NOT_RUN",
+  "next_action": "Provide supported exact-byte connector-to-direct-shell transfer or restore proxy-aware network access, then verify helper hash and execute pinned checkout. No production decisions or publication verified."
+}
