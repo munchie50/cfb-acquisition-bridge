@@ -1,0 +1,80 @@
+{
+  "timestamp_utc": "2026-11-19T19:42:36.670Z",
+  "status": "RUN_INCOMPLETE",
+  "trigger": "manual_run_now_inline",
+  "startup": {
+    "stamp": "20261119T193412736Z",
+    "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261119T193412736Z_manual_catchup.md",
+    "blob": "1b79163291c7d4b3981f4f5dba631e401b996793"
+  },
+  "recovery_for": [
+    "November 19 07:00 CT scheduled incomplete",
+    "November 19 13:00 CT scheduled incomplete"
+  ],
+  "scheduled_statuses": "preserved",
+  "production_change": {
+    "installed_readback": "PASS",
+    "actual_next": "2026-11-20T07:00:00-06:00",
+    "enabled_cfb_count": 4,
+    "natural_execution_of_exact_byte_fallback": "UNVERIFIED"
+  },
+  "runtime": {
+    "status": "SUPPORTED_GIT_RUNTIME_VERIFIED",
+    "head": "4cc5235f85b01ad9b6de0e85b38a12e215a23511",
+    "retained_reviews": 64,
+    "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+    "bytes": 3780
+  },
+  "board": {
+    "normalized": {
+      "path": "evidence/operational/CFB_WEEK12_CBS_FULL_BOARD_20261119T193447Z_MANUAL_CATCHUP.md",
+      "blob": "7a1a374c2802dea2ccbf3f9e09872a2c73a04cc3",
+      "recovered_by": "2026-11-19T19:34:47.100493+00:00",
+      "sha": "7c8f5aa8a1a35d267a8d75a2bae3909700ca8777"
+    },
+    "raw": {
+      "path": "evidence/operational/CFB_WEEK12_CBS_RAW_20261119T193447Z_MANUAL_CATCHUP.html.gz.b64",
+      "blob": "51790026653c60801a7387dc7f93d10caf29a3f3",
+      "ref": "f2056d90f9b36d438ceca2197eca2ad5cc577e44"
+    },
+    "raw_readback": "PASS",
+    "games": 70,
+    "directed_rows": 140,
+    "future_games": 65,
+    "main_market_fields": 390,
+    "changed_fields": 244,
+    "changed_games": 61
+  },
+  "decisions": {
+    "fresh_full_six_market": 7,
+    "focused_follow_ups": 11,
+    "future_price_only_material_open": 47,
+    "due_neutral_resolved_pass": 10,
+    "maryland_prior_conditional": "not renewed after required recheck; original retained",
+    "new_recommendations": 0,
+    "new_venues_verified": 0,
+    "parlay": "no qualified combined quote; broader research depth remains open"
+  },
+  "publication": {
+    "status": "PARTIAL_CURRENT",
+    "persisted": {
+      "market": "2d2e4359afb84adb565a7d8659e8c63688b766bb",
+      "decision": "2e7cdf776c062c9480c30511a792c6013c5a63ee",
+      "sheet": "7191a79950d0a3d19e3601cdca9c263a785471da",
+      "review": "324b0fb372c76239cbc544950758f94e9ef10a2a",
+      "index": "86174329f2175f8fda12b62f23d5f7586369f226"
+    },
+    "hot_sheet": "evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-19_1338CT.md",
+    "index": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_295.md",
+    "readback": "PASS",
+    "recovery_consumer_bindings": 517,
+    "selected_ci": {
+      "id": 44600667713,
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "86174329f2175f8fda12b62f23d5f7586369f226",
+      "html_url": "https://github.com/munchie50/cfb-acquisition-bridge/actions/runs/44600667713"
+    }
+  },
+  "outstanding": "Fresh game-level material analysis across 47 Saturday cases and parlay depth, plus natural scheduled production proof. Local broad historical unit suite had two Week8 errors for missing CFB_ACCEPTED_FREEZE_ARCHIVE; selected CI at the exact integration commit passed."
+}
