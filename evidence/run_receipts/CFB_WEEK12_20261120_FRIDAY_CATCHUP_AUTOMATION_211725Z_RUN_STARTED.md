@@ -1,0 +1,3 @@
+# RUN_STARTED — Friday 2026-11-20 07CT/13CT catch-up
+
+Invocation correlation: `CFB_FRIDAY_CATCHUP_RECOVERY_20261120T211725Z`; invocation scheduled 2026-11-20T21:17:25Z, actual processing 2026-11-20 ~21:14–21:20Z. Scope: missed Friday 07CT and 13CT market-monitor work, all 70 Week12 games including 58 Saturday. This is an append-only STARTED receipt, not proof of completion. Latest persisted main, current authority and accepted canonical records must be re-read before writes. Use alternate exposed Python runtime, no direct Git HTTPS/DNS-first probe. Do not backdate Friday deadline or alter existing production tasks. Terminal closure and rollback evidence to follow.
