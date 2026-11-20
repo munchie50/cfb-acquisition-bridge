@@ -1,0 +1,9 @@
+# Week12 Friday manual 07CT/13CT recovery — canonical large-write transport boundary
+
+STATUS: RUN_INCOMPLETE; CANONICAL_PUBLICATION_NOT_PERFORMED; NO ACCEPTED HOT SHEET.
+
+Continuation resumed from verified November 20 packet reconciliation; no replay of completed normalization, source refresh, compilation, or packet identity work. Baseline main before attempts `d997ebeccd343512c4184c960a4ef76ee64e2c19`. Existing market canonical blob `21e2172c709dcf482c4750a7490b82aacac05949`, 6,815,072 characters; verified market delta 127,606 characters SHA256 `ed0f13e69f0ea9e402de8d92cfca105482d6dec1b931048ca339902af17b4aae`. Proposed concatenation 6,942,678 characters; no historical bytes rewritten in proposal.
+
+Observed boundaries: authenticated GitHub `fetch_blob` successfully returned full canonical market text; GitHub `update_file` for full-content append returned `h2 protocol error: error reading a body from connection`; immediate SHA readback confirmed original unchanged. Separate `create_blob` of complete candidate also returned the same HTTP/2 error. An alternate Firecrawl full Git checkout at same HEAD succeeded, but `git push --dry-run` reported `fatal: could not read Username for 'https://github.com': No such device or address`. This is an authentication boundary for that runtime, not a DNS failure or an authorization to transfer secrets. No canonical mutation was made.
+
+Previously independently verified market and decision packets remain noncanonical, with 70 matching IDs and latest 68 PASS / two expired Tuesday CONDITIONAL. No Saturday betting authorization. No attempt to bypass the controlled canonical persistence contract, downgrade immutable review or misstate the Friday 13CT deadline. The next dependency is an authenticated large-file write route with SHA concurrency control and independent readback, then separate decision-ledger and Hot Sheet acceptance. Scheduled-worker parity remains unverified.
