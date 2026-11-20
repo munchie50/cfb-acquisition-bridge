@@ -10,7 +10,7 @@
 
 ## Required closure gates
 1. Authenticated pinned full checkout using scripts/cfb_runtime_checkout.py; GitHub HTTPS DNS, head, ancestry and immutable reviews must verify. Raw GitHub file fetch is not equivalent.
-2. Typed CBS Week12 normalizer using original source markdown and governed lineage; validate 64 game identities and 128 team rows. Working card alone is not accepted typed source.
+2. Typed CBS Week12 normalizer using original source markdown and governed lineage; validate all 70 governed Week12 identities (the Friday/Saturday working card covers only 64 and cannot by itself satisfy the normalizer); six earlier-week identities must be preserved from governed retained sources or an authorized complete capture. Working card alone is not accepted typed source.
 3. Fresh prospective personnel and named-book price qualification, with deadlines and root review provenance. Do not retroactively certify Friday 1pm CT.
 4. Execute scripts/cfb_week12_publication.py and scripts/cfb_neutral_publication_gate.py against actual market/decision/execution/scorecard/lineage sources and as-of clock. Presentation validator is not bet selector.
 5. Only after acceptance, write canonical publication and independent readback of blobs/selector/CI.
@@ -24,3 +24,8 @@
 
 ## Runtime handoff
 A supported authenticated shell/worktree is required for the pinned full checkout and local Python validation. GitHub connector file access alone does not prove these steps.
+## Nov20 additional code-level drift finding
+- Direct inspection of scripts/cfb_cbs_full_board_normalizer.py: WEEK12 profile expects **70** governed game identities and checks exact identity-set equality. The 64-game Friday/Saturday working card is not an input-complete 70-game normalizer source.
+- Direct inspection of scripts/cfb_week12_publication.py: proposal source must be captured within **900 seconds (15 minutes)** of as-of time; a Nov20 morning board cannot be reused as a fresh later publication quote. Refresh path preserves elapsed game kickoff identities and prohibits hindsight backfill.
+- Direct CBS table check: columns are Final, Open, Spread, ML, Total; earlier six-market working card correctly extracted Spread/ML/Total, quarantining Final/Open. Source time is recovered-by, not bookmaker update time.
+- This finding supersedes any earlier shorthand that 64/64 working-card completeness satisfies the 70-game compiler source census.
