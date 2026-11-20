@@ -1,0 +1,20 @@
+{
+  "status": "RUN_INCOMPLETE",
+  "trigger": "manual_run_now_inline",
+  "scope": [
+    "2026-11-20 07:00 CT",
+    "2026-11-20 13:00 CT"
+  ],
+  "startup_receipt": "evidence/run_receipts/CFB_FRIDAY_CATCHUP_TRACE_manual-fifth-slot-20261120191732375.md",
+  "startup_readback": true,
+  "python_git_probe": "PASS",
+  "git_https": "DNS_RESOLUTION github.com",
+  "github_connector": "PASS",
+  "cbs_source_discovery": "PASS_UNQUALIFIED_WEB_SNAPSHOT",
+  "full_slate_reconciliation": "NOT_VERIFIED",
+  "production_compiler": "BLOCKED_AUTHENTICATED_CHECKOUT",
+  "publication": "NOT_ATTEMPTED",
+  "hot_sheet": "UNCHANGED",
+  "deadline": "MISSED",
+  "next": "Restore authenticated production runtime or approve governed connector-based equivalent; validate complete CBS slate, qualified markets, compiler and publication readback"
+}
