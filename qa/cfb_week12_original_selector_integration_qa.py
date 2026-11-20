@@ -18,12 +18,15 @@ def run(repo, blob_dir=None):
     else:
         # Connector-staged immutable UTF-8 blobs: no git, DNS, or checkout required.
         base,delta=(blob_dir/BASE).read_bytes(),(blob_dir/DELTA).read_bytes()
-        assert git_blob_sha(base)==BASE and git_blob_sha(delta)==DELTA,'staged blob identity mismatch'
+        if git_blob_sha(base)!=BASE or git_blob_sha(delta)!=DELTA:
+            raise RuntimeError('staged blob identity mismatch')
     raw=base+delta
-    assert git_blob_sha(raw)==EXPECTED,'actual decision ledger mismatch'
+    if git_blob_sha(raw)!=EXPECTED:
+        raise RuntimeError('actual decision ledger mismatch')
     ledger=raw.decode('utf-8')
     sheet=(repo/PREVIEW).read_bytes().decode('utf-8')
-    assert audit(sheet,ledger)['verdict']=='PASS_SUPPLIED_CURRENT_DECISION_BINDING_ONLY'
+    if audit(sheet,ledger)['verdict']!='PASS_SUPPLIED_CURRENT_DECISION_BINDING_ONLY':
+        raise RuntimeError('positive audit did not pass')
     neg_audit={}
     for name,wrong in [('old_base',base.decode('utf-8')),('tampered',ledger+'x')]:
         try:audit(sheet,wrong)
@@ -37,14 +40,18 @@ def run(repo, blob_dir=None):
     def load(path):
         if path!=CANDIDATE:raise ValueError('unexpected path')
         return sheet
-    now=datetime.now(timezone.utc).isoformat()
+    now=max(datetime.now(timezone.utc),datetime.fromisoformat('2026-11-20T21:40:01+00:00')).isoformat()
     positive=publication(idx(good),ledger,load,now)
-    assert positive['verdict']=='PASS_SUPPLIED_CURRENT_DECISION_BINDING_ONLY'
+    if positive['verdict']!='PASS_SUPPLIED_CURRENT_DECISION_BINDING_ONLY':
+        raise RuntimeError('positive publication did not pass')
     bad={
         'stale_decision_pointer':[ptr(CANON,BASE,'CURRENT_DECISION_STATE:stale'),good[1]],
         'wrong_sheet_digest':[good[0],ptr(CANDIDATE,BASE,'CURRENT_HOT_SHEET:wrong')],
         'unsupported_provisional_path':[good[0],ptr('evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-20_MANUAL_PROVISIONAL_RELEASE.md',blob(sheet),'CURRENT_HOT_SHEET:bad path')],
-        'duplicate_current_sheet':[good[0],good[1],ptr('evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-20_1600CT.md',blob(sheet),'CURRENT_HOT_SHEET:duplicate')]
+        'duplicate_current_sheet':[good[0],good[1],ptr('evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-20_1600CT.md',blob(sheet),'CURRENT_HOT_SHEET:duplicate')],
+        'missing_decision_pointer':[good[1]],
+        'missing_current_sheet':[good[0]],
+        'duplicate_pointer_path':[good[0],good[1],ptr(CANDIDATE,blob(sheet),'CURRENT_HOT_SHEET:duplicate path')]
     }
     neg_publication={}
     for name,pointers in bad.items():
