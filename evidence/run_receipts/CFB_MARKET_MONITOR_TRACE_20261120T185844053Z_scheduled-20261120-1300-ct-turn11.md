@@ -1,0 +1,9 @@
+# RUN_STARTED
+observed_utc: 2026-11-20T18:58:44.053Z
+trigger: natural_scheduled
+invocation_id: not_exposed
+correlation_id: scheduled-20261120-1300-ct-turn11
+repository: munchie50/cfb-acquisition-bridge
+branch: main
+stage: STARTUP_TRACE
+outcome: ATTEMPTED
