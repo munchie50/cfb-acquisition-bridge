@@ -1,0 +1,13 @@
+# Friday Nov20 07CT/13CT manual Market Monitor — retained conditional limit recheck and drift audit
+
+Authority: recovered current index v1.295 blob ebc25a8385ba82b0988cdbe39507d3a793c71e1e. Previously saved canonical conditional presentation evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-17_1408CT.md Git blob 61d0723b46543d0a47c1269e43920f32f83a8084. Historical November17 all-game accepted publication evidence/audits/CFB_WEEK12_ALL_GAMES_PUBLICATION_20261117T194240Z_all_games.md documents 70-game 420-branch review, 4 conditionals, 53 PASS, 13 INCONCLUSIVE and accepted REFRESH supplemental coverage. Distinguish original FIRST_FROZEN 56 modeled /14 exclusions from separately accepted REFRESH supplemental 68 predictions /2 exclusions. Previous manual working card 51 modeled/13 exclusions Fri-Sat is FIRST_FROZEN-only, not complete supplemental candidate coverage. No substitution or promotion.
+
+Fresh source evidence/operational/CFB_WEEK12_20261120_MANUAL_FRESH_CBS_SOURCE_RAW_20261120T201925Z.md blob 01980f097247a4e8a03b6c925bc7faf63997c3a4, response recovered by 2026-11-20T20:19:25.829Z, after missed Friday 13CT publication deadline. Raw CBS display field-level only, book mapping/execution unverified.
+
+Rechecked all four prior CONDITIONAL rows from canonical saved sheet:
+1. Eastern Michigan @ Western Michigan under total 46.5 or higher, price -112 or better; planning cutoff 2026-11-17T22:30:00Z. Expired. Do not reactivate or backdate.
+2. Ball State @ Ohio home spread -10 or better, price -108 or better; cutoff 2026-11-17T23:30:00Z. Expired.
+3. Ohio State @ Nebraska Nebraska +3.5 or better, price -120 or better; cutoff 2026-11-21T13:00:00Z. Fresh CBS display Nebraska +3.5 at -114: numeric pair meets limit, but mixed-book CBS display is not a qualified named venue offer, and material revalidation not completed. RETAINED_CONDITIONAL_NUMERIC_SCREEN_ONLY, NOT BET.
+4. Maryland @ USC Maryland +17.5 or better, price -115 or better; cutoff 2026-11-21T13:00:00Z. Fresh CBS display Maryland +17.5 at -105: numeric pair meets limit, but same venue/material restrictions. RETAINED_CONDITIONAL_NUMERIC_SCREEN_ONLY, NOT BET.
+
+Do not confuse a saved conditional presentation or a numeric screen with a newly compiled champion v1 RUN_PASS or real-money recommendation. Prior research already included all 70 games and 420 branches as of Nov17; new Friday market/material/venue refresh is due, not a total rebuild. Need direct verified full checkout, official Python normalization, qualified actual sportsbook offer, material review and independent canonical readback. Existing 07CT and 13CT runs remain RUN_INCOMPLETE. No wager, frozen model, task or money ledger change.
