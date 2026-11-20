@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 def git_blob_sha(raw):
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + bytes([0]) + raw).hexdigest()
 
 
 def checked_blob(repo, sha):
@@ -34,7 +34,7 @@ def reconstruct(repo, manifest):
             raise ValueError("invalid surface entry")
         base = checked_blob(repo, entry["base"])
         delta = checked_blob(repo, entry["delta"])
-        if not delta.startswith(("\\x60" * 3 + "cfb-week12-" + surface + "-v1\\n").encode()):
+        if not delta.startswith(("`" * 3 + "cfb-week12-" + surface + "-v1" + chr(10)).encode()):
             raise ValueError("wrong packet type")
         raw = base + delta
         if git_blob_sha(raw) != entry["expected_blob"]:
