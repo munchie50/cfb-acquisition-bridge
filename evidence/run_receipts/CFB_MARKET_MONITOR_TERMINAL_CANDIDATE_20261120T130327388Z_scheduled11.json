@@ -1,0 +1,39 @@
+{
+  "schema": "CFB_MONITOR_TERMINAL_CANDIDATE",
+  "observed_utc": "2026-11-20T13:04:56.264Z",
+  "correlation_id": "20261120T130327388Z_scheduled11",
+  "trigger": "natural_scheduled",
+  "status": "RUN_INCOMPLETE",
+  "startup_receipt": {
+    "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261120T130327388Z_scheduled11.md",
+    "commit": "9c83e5bd6e812167d581095a9fc0ef8ade1a13f6",
+    "blob": "9868563b6c8b9e1f09de1160847506845308fab1"
+  },
+  "pinned_head": "9c83e5bd6e812167d581095a9fc0ef8ade1a13f6",
+  "helper_blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898",
+  "index": {
+    "path": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_295.md",
+    "blob": "ebc25a8385ba82b0988cdbe39507d3a793c71e1e"
+  },
+  "stages": {
+    "startup_receipt": "PASS_INDEPENDENT_READBACK",
+    "direct_shell": "PASS Python 3.13.5 Git 2.47.3",
+    "connector_shell": "NOT_EXPOSED",
+    "git_connectivity": "FAILED DNS_RESOLUTION github.com; git ls-remote exit 128",
+    "helper_metadata": "PASS 3780 bytes exact expected blob",
+    "helper_execution": "BLOCKED_DEPENDENCY",
+    "checkout": "NOT_EXECUTED",
+    "fresh_CBS": "NOT_EXECUTED",
+    "six_market_decisions": "NOT_EXECUTED",
+    "compiler": "NOT_EXECUTED",
+    "publication": "NOT_EXECUTED"
+  },
+  "proxy_present": true,
+  "first_failure": "git ls-remote https://github.com/munchie50/cfb-acquisition-bridge.git HEAD: fatal: unable to access: Could not resolve host: github.com",
+  "fallback_attempted": false,
+  "classification": "DNS_RESOLUTION",
+  "classifier_execution": "NOT_RUN",
+  "prior_publication": "PRESERVED",
+  "deadline": "2026-11-20 13:00 America/Chicago",
+  "next_action": "Restore normal worker Git HTTPS DNS/proxy-aware connectivity, verify pinned checkout and ancestry; continue Saturday full review and publish before deadline. No unsupported claims of current qualified bets."
+}
