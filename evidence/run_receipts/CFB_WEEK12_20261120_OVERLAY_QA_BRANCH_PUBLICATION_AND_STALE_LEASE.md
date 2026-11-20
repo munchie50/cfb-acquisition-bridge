@@ -1,0 +1,9 @@
+# Week12 overdue Friday 07CT/13CT recovery — QA branch manifest publication and stale lease test
+
+STATUS: QA_BRANCH_PUBLICATION_PASS; STALE_LEASE_NONMUTATION_OBSERVED; STALE_LEASE_ERROR_CLASS_UNRESOLVED; NOT_PRODUCTION; RUN_INCOMPLETE.
+
+Source main checkpoint `7893eda42028326bd7cf9b8db8398ccc0870dc8c`. Created isolated branch `cfb-overlay-lease-qa-20261120` at that commit. Git Data create_tree with small immutable manifest blob `71cdacc68bce638fee87fff7126cb432487967ba` returned tree `005452564c9fc8d26e4ec6056080125a284b7e3d`; create_commit with expected parent returned `1facf4f56d5f8b53c0fa9fb33a166b7de8dd5056`. update_ref(branch, sha=new, expected_sha=original) returned success; independent branch fetch returned exact new commit. This is real authenticated QA branch publication, not detached-only.
+
+Negative stale-lease tests: update_ref with wrong expected old SHA and force=true returned generic GitHub GraphQL API error, branch independently remained at `1facf4f56d5f8b53c0fa9fb33a166b7de8dd5056`. A second stale-lease test used valid fast-forward child `cd0b4b5f173ac84fc145024ffdf3d524f37c96f6` but wrong expected SHA; again generic GitHub GraphQL API error, branch remained at the prior commit. Thus the observed outcome is nonmutation on mismatched expected_sha, but the generic error prevents asserting the exact cause was a proven CAS rejection; distinguish error classification from branch state. No production branch ref update was attempted.
+
+Next gates: test correct expected SHA fast-forward child on QA branch to prove continuation, verify two competing writers, test parent manifest lineage and immutable packet pairing in reader, explicit contract amendment for overlay authority, downstream Hot Sheet readback and terminal acceptance. Do not promote this QA artifact to production under existing canonical persistence contract. Friday 07CT and 13CT RUN_INCOMPLETE, no new betting authorization.
