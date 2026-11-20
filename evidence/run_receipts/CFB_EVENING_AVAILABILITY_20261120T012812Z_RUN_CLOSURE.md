@@ -1,0 +1,15 @@
+# RUN_CLOSURE
+cycle: CFB_EVENING_AVAILABILITY_20261120T012812Z
+final_state: RUN_INCOMPLETE
+startup_receipt: evidence/run_receipts/CFB_EVENING_AVAILABILITY_20261120T012812Z_RUN_STARTED.md
+startup_blob: 6ab0923e37e25152caee8e8f40654cb0d6798d2b
+terminal_candidate: evidence/run_receipts/CFB_EVENING_AVAILABILITY_20261120T012812Z_TERMINAL_CANDIDATE.md
+terminal_candidate_blob: 555c62bcb2723d2970720cf8e214ac1508597b55
+terminal_candidate_independent_readback: PASS
+closure_issued_after_candidate_readback: YES
+canonical_operational_writes: NONE
+blocking_stage: GIT_CLONE_NETWORK_DNS; github.com unresolved from direct shell
+fresh_source_and_typed_handoff: NOT_REACHED
+scientific_effect: NONE
+Champion_effect: NONE
+production_task_schedules: UNCHANGED
