@@ -1,10 +1,10 @@
 # Week12 Nov20 7am manual catch-up — accepted REFRESH versus frozen and market
 
-**Status: SOURCE_LINEAGE_JOIN / ANALYTICAL_TRIAGE_ONLY / NO_BET_APPROVAL**
+**Status: CORRECTED_SOURCE_LINEAGE_JOIN / ANALYTICAL_TRIAGE_ONLY / NO_BET_APPROVAL**
 
-The accepted Nov10 REFRESH prediction rows are from `evidence/audits/CFB_WEEK12_ALL_GAMES_REVIEW_20261117T194240Z_all_games.json` under `accepted_refresh_exact_coverage.week12_predictions`. The original FIRST_FROZEN remains the model authority and is NOT replaced. Joined by exact normalized away/home names, not by row position. Market home spread is public mixed-book CBS Nov20 from the full working card; spread difference is arithmetic only, not a bet edge. REFRESH pred_margin positive means home team favored in projected margin; therefore for spread comparisons convert refresh margin to **negative** projected home spread. The table shows margin and the CBS home spread separately; divergence is abs((-refresh margin) - CBS home spread).
+CORRECTION: this replaces the initial sign-inverted draft of this same file. Both original frozen home margin and accepted REFRESH pred_margin are POSITIVE for a projected home win, NEGATIVE for away. CBS home spread is the opposite sign to projected home margin. Comparison gap = abs((-REFRESH home margin) - CBS home spread). Preserve original FIRST_FROZEN separately; REFRESH never substitutes it.
 
-| Day | Matchup | Original frozen home margin | Accepted Nov10 refresh home margin | Friday CBS home spread | Abs refresh-to-market spread gap | Frozen/refresh direction conflict |
+| Day | Matchup | Frozen home margin | Accepted Nov10 REFRESH home margin | Friday CBS home spread | Abs REFRESH-to-market gap | Frozen/REFRESH winner conflict |
 |---|---|---:|---:|---:|---:|---|
 | Fri Nov 20 | Iowa State @ UCF | -5.2 | 6.23 | +1.5 | 7.73 | YES |
 | Fri Nov 20 | Bowling Green @ Toledo | -28.0 | 17.33 | -16.5 | 0.83 | YES |
@@ -69,7 +69,7 @@ The accepted Nov10 REFRESH prediction rows are from `evidence/audits/CFB_WEEK12_
 | Sat Nov 21 | Hawai'i @ Nevada | -10.1 | 3.31 | -5.5 | 2.19 | YES |
 | Sat Nov 21 | Utah State @ Oregon State | -11.4 | 10.09 | -8 | 2.09 | YES |
 
-Exact name join: 62/64; unmatched: Tennessee Tech @ Mississippi State; Chattanooga @ Alabama. Unmatched are not assigned predictions by inference.
-Direction conflicts among matched numerical frozen rows: 42.
+Matched 62/64 by exact normalized away/home. Unmatched: Tennessee Tech @ Mississippi State; Chattanooga @ Alabama.
+Actual frozen-versus-refresh projected winner conflicts: 42.
 
-No fresh 2026-11-20 accepted model run is implied. No new CONDITIONAL, acceptable price, execution, or publication promotion. Personnel/market gate still required.
+This is a comparison only; no wager approved, venue confirmed or production publication superseded.
