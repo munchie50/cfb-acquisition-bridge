@@ -1,0 +1,11 @@
+# Friday Nov20 07CT/13CT — manual recovery lane and supersession reconciliation
+
+STATUS: MANUAL_RECOVERY_PRESENTATION_REVERIFIED / PRODUCTION_RUN_INCOMPLETE / NO_WAGER_AUTHORIZATION.
+
+Fresh independent Firecrawl-hosted Python runtime installed Git and cloned main at `ce7dc205cad87928466ea58b37dcd742609d6704`. Read exact retained `evidence/operational/CFB_WEEK12_20261120_MANUAL_RENDERED_HOT_SHEET_PREVIEW_NOT_ACCEPTED.md` (140,912 characters). Confirmed 7 weekday sections and 70 rendered decision rows, 68 PASS and 2 HISTORICAL CONDITIONAL — WINDOW CLOSED. Preview explicitly says no open neutral decisions. This is a presentation/consistency readback, not a new source or sportsbook offer.
+
+Supersession: early `evidence/audits/CFB_WEEK12_NOV20_MANUAL_RECOVERY_REMAINING_GATES.md` and 07CT/13CT stage reconciliation correctly recorded historical deadline failures but their checkout/compiler-not-executed descriptions were superseded by later `CFB_WEEK12_20261120_FULL_GIT_CHECKOUT_AND_BOOTSTRAP_VERIFIED.md`, `...FRESH_SOURCE_REFRESH_AND_COMPILER_EXECUTION.md`, `...REGENERATED_BOTH_PACKET_DELTAS_VERIFIED.md` and independent overlay reconstruction retest. The earlier 64-game working card is Friday/Saturday subset; 70-game source and rendered preview cover full week.
+
+Due-cycle status: 07CT and 13CT research recovery and current saved packet reconstruction verified, but neither cycle can be retroactively certified as having met its original deadline; no accepted canonical publication/readback, no current named-book executable offers or fresh material personnel clearance. Both production RUN_INCOMPLETE. No current actionable wager. The preserved 68 PASS are decision states, not 68 recommendations.
+
+Recommended manual bypass: continue delivering the explicitly NONCANONICAL temporary preview and stage receipts independently of canonical large-file publication; do not block review work on DNS, GitHub Actions timing, or oversized ledger writes. Engineering in separate QA lane: manifest-backed content-addressed overlay consumer, negative tests (stale parent, two writers, missing/duplicate/out-of-order pair), downstream Week12 binding compatibility and governed persistence-contract approval. Keep canonical acceptance intact until approved. No task, model, wager or canonical ledger mutation.
