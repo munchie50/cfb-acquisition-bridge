@@ -1,0 +1,9 @@
+# Friday 07CT + 13CT inline recovery — terminal candidate
+
+Correlation: CFB_INLINE_CATCHUP_20261120_1415CT. Trigger: user immediate automation run_now on existing one-time fifth task 6b009cc5e07481918961e875536098e0. Returned inline_run, not independent background job. RUN_STARTED independently persisted in evidence/run_receipts/CFB_MANUAL_INLINE_CATCHUP_RUN_STARTED_20261120_1415CT.md.
+
+Fresh source: Firecrawl live scrape of https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-12/ returned 143058 markdown characters including Nov21 teams. This is source discovery only: full exact source bytes not persisted as an accepted capture and no qualified book-specific paired offers, timestamps, or game decisions inferred. Previous 64-game frozen/market research working card exists, but is not a current accepted publication.
+
+Actual direct shell test in this invocation: git ls-remote https://github.com/munchie50/cfb-acquisition-bridge.git HEAD failed 'Could not resolve host: github.com'. Authenticated GitHub connector remains usable for persisted evidence, but no verified full ancestry checkout or champion v1 runtime. Existing Nov11/Nov18 bundle checkout evidence is historical, not same-run transport. No candidate bundle promoted or claimed. Friday 13CT publication deadline missed and not backdated.
+
+Stage results: trigger ACCEPTED_INLINE; RUN_STARTED_READBACK PASS; fresh CBS discovery PASS; git checkout FAIL_DNS; same-run bundle transfer UNVERIFIED; all 64 games prior research available; current book-identified price qualification UNVERIFIED; champion v1 compilation NOT_EXECUTED; independent canonical Hot Sheet publication NOT_EXECUTED; wager approvals NONE. RUN_INCOMPLETE. No changes to four permanent tasks, frozen model, or money ledger. Next action is same-run verified full checkout/bundle handoff and qualified offers, not more isolated news files.
