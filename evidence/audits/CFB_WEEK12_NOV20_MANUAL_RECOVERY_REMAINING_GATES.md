@@ -32,3 +32,8 @@ A supported authenticated shell/worktree is required for the pinned full checkou
 
 ## Direct raw-source census correction
 - Fresh read of evidence/operational/CFB_WEEK12_CBS_FULL_BOARD_20261120_MANUAL_0700_CATCHUP.md found 70 game headers: Tue 3, Wed 2, Thu 1, Fri 6, Sat 58. Previous assertion that the *raw source* had only 64 was false; only the derived working card is 64. No missing six-game raw capture reconstruction is needed. Normalizer runtime validation remains open.
+
+## Additional structural preflight (Nov20)
+- evidence/audits/CFB_WEEK12_NOV20_RAW_SOURCE_70_GAME_SCHEMA_PREFLIGHT.md independently parses 70 headers, 140 team rows, 420 market positions, and 70 unique directed CBS ID pairs. 136/140 moneyline cells available; four UNAVAILABLE moneyline cells are both sides of Chattanooga @ Alabama and Samford @ Auburn, supported by the normalizer. No other field-format failures observed.
+- The earlier 128 team rows refers only to the 64-game Friday/Saturday working subset, not the 70-game source. The raw source structural preflight is not a substitute for governed normalizer/lineage execution.
+- Local shell attempt to resolve github.com failed (DNS), so no pinned full checkout or compiler acceptance claimed.
