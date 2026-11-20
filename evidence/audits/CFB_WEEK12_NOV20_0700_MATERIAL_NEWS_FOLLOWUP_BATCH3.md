@@ -1,0 +1,12 @@
+# Week12 Nov20 Friday 7am recovery — material news batch 3
+
+Status: SIX_ADDITIONAL_FLAGS_REVIEWED / NOT_FINAL_AVAILABILITY / NO_BET_APPROVAL
+
+1. Texas Tech @ Baylor: https://www.on3.com/sites/red-raider-sports/news/everything-came-back-clean-texas-techs-thomas-castellanos-discusses-injury-his-leadership-on-offense-and-baylor-game/ quotes QB Thomas Castellanos saying post-hit X-rays were clean and he expects to play normally against Baylor. This materially narrows but does not independently certify game-day availability. Earlier Hot Sheet noted Baylor QB deployment question; still requires current status and price qualification.
+2. San Diego State @ Boise State: https://www.usatoday.com/story/sports/ncaaf/pac12/2026/11/20/san-diego-state-football-mumps-outbreak-vs-boise-state-pac-12-title-shot/92869041007/ reports serious season-wide mumps outbreak with large numbers previously in protocols. This is historical context, NOT evidence that 30-40 players are currently unavailable. https://www.rotowire.com/cfootball/headlines/jayden-denegal-news-will-be-available-for-saturday-240531 reports QB Denegal cleared for Saturday, but Saunders recent starts and workload division still need verified confirmation.
+3. Maryland @ USC: https://sports.yahoo.com/articles/why-malik-washington-isn-t-213728049.html confirms Maryland QB Malik Washington missed prior Wisconsin game injured; contemporaneous https://x.com/mzenitz/status/2123192169045393526 reports expectation of return, not definitive clearance. Prior Maryland +17.5 conditional threshold cannot be promoted without final QB status and venue quote.
+4. Pittsburgh @ Louisville: current search results for Geriner questionable were for *Florida State*, a different matchup. Do not misattribute to Louisville. Prior Nov19 Geriner deployment uncertainty remains unresolved.
+5. Colorado @ Cincinnati: https://www.si.com/college/colorado/football/colorado-buffaloes-injury-report-major-concern-cincinnati-bearcats discusses Colorado defensive injury absences and questionable personnel; need original full injury listing and model materiality, no new bet approval.
+6. Utah @ TCU: contemporary status search failed to find authoritative final availability; older 2025 Dampier reports rejected as stale. Retain prior PASS.
+
+This batch advances review, not final production publication. Preserve FIRST_FROZEN and all prior decision/ledger boundaries. No canonical Hot Sheet supersession.
