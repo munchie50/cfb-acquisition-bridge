@@ -30,8 +30,11 @@ def run(repo, blob_dir=None):
     neg_audit={}
     for name,wrong in [('old_base',base.decode('utf-8')),('tampered',ledger+'x')]:
         try:audit(sheet,wrong)
-        except ValueError as e:neg_audit[name]=str(e)
-        else:raise AssertionError(name+' should reject')
+        except ValueError as e:
+            if 'stale current publication' not in str(e):
+                raise RuntimeError(name+' rejected for unexpected reason: '+str(e)) from e
+            neg_audit[name]=str(e)
+        else:raise RuntimeError(name+' should reject')
     def ptr(path,digest,purpose):return {'path':path,'blob':digest,'purpose':purpose}
     def idx(pointers):
         record={'schema':'CFB_RECOVERY_NAVIGATION_FRONTIER_V1','as_of_utc':'2026-11-20T21:40:00+00:00','scope':'NAVIGATION_ONLY_NOT_AUTHORITY','claims':['QA-only candidate; not canonical promotion'],'pointers':pointers}
@@ -53,11 +56,23 @@ def run(repo, blob_dir=None):
         'missing_current_sheet':[good[0]],
         'duplicate_pointer_path':[good[0],good[1],ptr(CANDIDATE,blob(sheet),'CURRENT_HOT_SHEET:duplicate path')]
     }
+    expected_reasons={
+        'stale_decision_pointer':'recovery canonical decision pointer is stale or missing',
+        'wrong_sheet_digest':'current publication bytes differ from recovery pointer',
+        'unsupported_provisional_path':'unsupported current publication path',
+        'duplicate_current_sheet':'one explicit CURRENT_HOT_SHEET pointer required',
+        'missing_decision_pointer':'recovery canonical decision pointer is stale or missing',
+        'missing_current_sheet':'one explicit CURRENT_HOT_SHEET pointer required',
+        'duplicate_pointer_path':'duplicate pointer path',
+    }
     neg_publication={}
     for name,pointers in bad.items():
         try:publication(idx(pointers),ledger,load,now)
-        except ValueError as e:neg_publication[name]=str(e)
-        else:raise AssertionError(name+' should reject')
+        except ValueError as e:
+            if expected_reasons[name] not in str(e):
+                raise RuntimeError(name+' rejected for unexpected reason: '+str(e)) from e
+            neg_publication[name]=str(e)
+        else:raise RuntimeError(name+' should reject')
     print(json.dumps({'status':'QA_ORIGINAL_MODULE_INTEGRATION_PASS_NOT_PRODUCTION','decision_blob':EXPECTED,'positive':positive['verdict'],'negative_audit':neg_audit,'negative_publication':neg_publication},indent=2))
 if __name__=='__main__':
     p=argparse.ArgumentParser()
