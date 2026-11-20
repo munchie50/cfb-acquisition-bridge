@@ -1,0 +1,7 @@
+# Friday 07CT and 13CT manual catch-up — fresh CBS capture structure readback
+
+Observed recovery time 2026-11-20T20:19:25.829Z (14:19:25 CT), after Friday 13CT publication deadline. Raw source exact file evidence/operational/CFB_WEEK12_20261120_MANUAL_FRESH_CBS_SOURCE_RAW_20261120T201925Z.md, independently byte-read back, Git blob 01980f097247a4e8a03b6c925bc7faf63997c3a4, 143058 characters.
+
+Connector-based structural parsing of retained raw markdown found exactly 70 CBS game header rows, by date: Friday Nov20 6, Saturday Nov21 58, Thursday Nov19 1, Wednesday Nov18 2, Tuesday Nov17 3. This matches Week12 source normalizer's expected profile 70 and prior working 64 Friday/Saturday subset. 6 elapsed earlier-week games must remain elapsed, not reconstructed as new opening proposals. Structural count does not prove all 140 team rows parsed, directed identity matched, or offer qualification; official Python normalizer and champion v1 compiler were not run. No inference from CBS Final/0 column for future games.
+
+This materially closes RAW_CAPTURE_PERSISTENCE and HEADER_COUNT_RECONCILIATION, not qualified prices, full runtime, champion v1 acceptance or Hot Sheet publication. No book consensus, Caesars requirement, or sportsbook executable quote inferred. Prior run remains incomplete. Next target: governed Python normalization and eligible-game current-market review, using verified same-run checkout/bundle when feasible.
