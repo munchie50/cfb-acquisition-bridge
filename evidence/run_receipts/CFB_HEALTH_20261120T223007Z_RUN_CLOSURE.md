@@ -1,0 +1,11 @@
+# CFB Health RUN_CLOSURE
+correlation_id: CFB_HEALTH_20261120T223007Z
+status: RUN_INCOMPLETE
+coverage: COVERAGE_UNVERIFIED
+terminal_candidate: evidence/run_receipts/CFB_HEALTH_20261120T223007Z_TERMINAL_CANDIDATE.md
+terminal_candidate_blob: 461657d4581f1f5f94e36571c26468ec2c1561c1
+terminal_candidate_independent_readback: PASS
+health_audit_readback: PASS
+first_unverified_check: complete five-blob hash and historical semantic/coverage reconciliation
+runtime_blocker: Git HTTPS DNS_RESOLUTION github.com; readiness code check not executed
+no_schedule_or_producer_changes: true
