@@ -1,3 +1,5 @@
+> **ACTIVE RESUME ROUTING — NOV 20:** This document is a historical handoff. Before acting, open `evidence/CFB_ENGINE_SINGLE_ACTIVE_RESUME_FRONTIER_20261120.md` and fresh `main`. The single active frontier supersedes this file's next-action instructions. After each verified engineering slice, update/supersede that frontier and read it back; do not restart completed work. This is a repository discovery pointer, not an automatic session-start hook.
+
 # CFB Market Monitor — ACTIVE CONTINUATION CHECKPOINT (Nov 20, 2026)
 
 **Purpose:** conversation-limit emergency handoff. Read this first, then latest main and superseding receipts. Do not treat screenshots as a request to restart work.
