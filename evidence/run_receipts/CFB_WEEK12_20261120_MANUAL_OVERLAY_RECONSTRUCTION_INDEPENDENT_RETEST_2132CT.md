@@ -1,0 +1,9 @@
+# Week12 overdue 07CT/13CT manual continuation — independent overlay retest
+
+Status: READ_ONLY_RECONSTRUCTION_PASS; PRODUCTION_RUN_INCOMPLETE.
+
+2026-11-20 CT manual user-requested continuation. Firecrawl-hosted Python session installed git 2.39.5, cloned full repository at `6ea8fa9eb9831c2866bdec9c2c9f6716e1389640` (clean fresh clone), imported unchanged `scripts/cfb_overlay_publication_probe.py` and `scripts/cfb_week12_publication.py`. Used original canonical Git blobs market `21e2172c709dcf482c4750a7490b82aacac05949`, decision `6862be6a1bd88a3290b1e90a49c33a7a87e92559`, delta market `754856df54bfb5040f552e827f44d9cd8dd30afd`, delta decision `646bbe85edba726037e1b98125783ff2cd87a4e8`. Expected reconstructed Git blobs market `c81855dc8f3ff002082e9c105b2d8d9c2e9bc684`, decision `98941e228072e6941b1c33e42d4d8dba570f7182`.
+
+Actual `reconstruct` returned market 6,942,678 characters and decision 3,669,052 characters; actual original `bootstrap_check` returned `PASS_WEEK12_CONDITIONAL_PROPOSAL_ONLY`. Latest typed market and decision packets each had 70 unique matching game IDs and same cycle `CFB_MARKET_MONITOR_20261120T204508Z`; latest decision state counts 68 PASS and 2 historical CONDITIONAL. Negative tests wrong cycle, wrong market expected blob, and wrong decision delta each rejected with ValueError as expected.
+
+No fresh sportsbook-specific executable pricing, current personnel clearance, canonical append, Hot Sheet acceptance or terminal RUN_PASS. The historical Friday 13CT deadline remains missed; both overdue cycles remain RUN_INCOMPLETE. No scheduler, production ledgers, model or wagers changed. Next: independent Week12 overlay reader integration and adversarial/competing writer tests under existing governance; explicit contract amendment required for overlay production authority.
