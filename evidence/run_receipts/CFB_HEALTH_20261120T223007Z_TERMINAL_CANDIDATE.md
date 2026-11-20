@@ -1,0 +1,16 @@
+# Health terminal candidate
+correlation_id: CFB_HEALTH_20261120T223007Z
+status: RUN_INCOMPLETE
+coverage: COVERAGE_UNVERIFIED
+startup_readback: PASS
+health_audit: evidence/run_receipts/CFB_HEALTH_20261120T223007Z_HEALTH_AUDIT.md
+health_audit_blob: abb5a3977911a64aaf0cf9281fdaa15c7beb10ad
+health_audit_readback: PASS
+first_health_unverified: complete five-blob SHA recomputation and comprehensive semantic/historical coverage
+named_checkout_check: cfb_hot_sheet_readiness.py NOT_EXECUTED due DNS_RESOLUTION github.com
+monitor_07CT: RUN_INCOMPLETE
+monitor_13CT: RUN_INCOMPLETE
+evening_prior_due: RUN_INCOMPLETE
+Friday_evening: NOT_YET_DUE
+canonical_production_mutations: NONE
+task_lifecycle_mutations: NONE
