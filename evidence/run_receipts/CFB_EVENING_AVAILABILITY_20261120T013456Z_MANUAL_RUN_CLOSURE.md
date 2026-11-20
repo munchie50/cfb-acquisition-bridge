@@ -1,0 +1,8 @@
+# RUN_CLOSURE
+final_state: RUN_INCOMPLETE
+terminal_candidate: evidence/run_receipts/CFB_EVENING_AVAILABILITY_20261120T013456Z_MANUAL_TERMINAL_CANDIDATE.md
+terminal_candidate_blob: 06db66a43ff2d9b117884f27804149fcc5816b39
+terminal_candidate_independent_readback: PASS
+completed_scope: pinned full checkout, fresh complete CBS capture and diagnostic Week12 proposal validation
+remaining_scope: governed material and price review and verified typed downstream handoff
+canonical_operational_writes: NONE
