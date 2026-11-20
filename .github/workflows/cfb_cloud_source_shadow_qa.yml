@@ -1,0 +1,51 @@
+name: CFB Current Snapshot Source Shadow QA
+on:
+  push:
+    branches: [qa/cloud-source-preparation-20261030]
+    paths: ['.github/workflows/cfb_cloud_source_shadow_qa.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: cfb-current-snapshot-source-shadow-qa
+  cancel-in-progress: false
+jobs:
+  current-source-shadow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test source authority, populations and independent material coverage
+        run: |
+          python -m unittest discover -s scripts -p test_cfb_cloud_source_manifest.py -v
+          python -m unittest discover -s scripts -p test_cfb_cloud_source_shadow.py -v
+      - name: Build source plan from exact connector-observed accepted main snapshot
+        run: >-
+          python scripts/cfb_cloud_source_manifest.py
+          --authority-commit 8df63ed20c2cc53f41ec93815c6a2895bac06892
+          --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_245.md
+          --expected-index-blob c82beea44dcd7300728a965a6cfe423467701ced
+          --lineage evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json
+          --research evidence/operational/CFB_WEEK9_POPULATION_RESEARCH_20261026T225722Z.json
+          --revalidation evidence/operational/CFB_MARKET_MONITOR_20261030T010121Z_REVALIDATION.json
+          --market-url https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/
+          --extra-links evidence/scheduler_qa/CFB_CLOUD_SOURCE_ASSOCIATIONS_20261030.json
+          --expected-extra-sha256 2c390564d67abb4fb42091bf4cb3912fe4afd632c29be0fd632fde8dc7790ad7
+          --output shadow-qa/plan
+      - name: Fetch unreviewed sources and report actual source-role coverage
+        run: |
+          plan_sha=$(sha256sum shadow-qa/plan/source-plan.json | cut -d ' ' -f 1)
+          python scripts/cfb_cloud_source_shadow.py --input shadow-qa/plan/source-plan.json --expected-sha256 "$plan_sha" --output shadow-qa/collection
+      - name: Preserve incomplete sources as well as completed evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-current-source-shadow-qa
+          path: shadow-qa/
+          if-no-files-found: error
+          retention-days: 30

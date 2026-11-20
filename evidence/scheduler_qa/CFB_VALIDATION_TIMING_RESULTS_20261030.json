@@ -1,0 +1,387 @@
+{
+  "schema": "CFB_VALIDATION_TIMING_VERIFIED_V1",
+  "run_id": 40991413382,
+  "tested_commit": "501ff87570e3e6fa44fee5045a28592e302d1e1c",
+  "all_six_timing_artifact_digests_independently_verified": true,
+  "comparison_recomputed_independently": true,
+  "comparison": {
+    "schema": "CFB_VALIDATION_PARALLEL_COMPARISON_V1",
+    "recorded_at_utc": "2026-10-30T02:27:50.722859+00:00",
+    "status": "PASS_IDENTICAL_REGRESSION_INVENTORY_ONLY",
+    "commit": "501ff87570e3e6fa44fee5045a28592e302d1e1c",
+    "protected_inputs_sha256": "d21fb6c15d1ae657fbb3df4215b481e304fdda12224c62c108724cba02335259",
+    "patterns": 9,
+    "tests": 216,
+    "skipped_tests": 0,
+    "serial_test_seconds": 187.498085619,
+    "parallel_test_span_seconds": 222.245506,
+    "parallel_sum_test_seconds": 390.41926382299994,
+    "observed_stage_seconds_saved": -34.74742038100001,
+    "limits": [
+      "One paired QA measurement; includes runner/network variation and excludes setup/artifact/summary overhead.",
+      "Only the original nine-pattern stage is tested here; the complete45step production workflow is unchanged.",
+      "No claim of whole-Monitor savings, source freshness, football truth or production acceptance."
+    ]
+  },
+  "group_results": [
+    {
+      "schema": "CFB_VALIDATION_TIMING_GROUP_V1",
+      "group": "presentation",
+      "started_at_utc": "2026-10-30T02:24:03.070184+00:00",
+      "commit": "501ff87570e3e6fa44fee5045a28592e302d1e1c",
+      "protected_inputs_sha256": "d21fb6c15d1ae657fbb3df4215b481e304fdda12224c62c108724cba02335259",
+      "original_inventory": [
+        "test_cfb_week8_publication.py",
+        "test_cfb_week8_closed_conditional.py",
+        "test_cfb_week9*.py",
+        "test_cfb_week7_accepted_s0_ancestry_audit.py",
+        "test_cfb_week7_first_frozen_projection_gate.py",
+        "test_cfb_week7_frozen_field_invariant.py",
+        "test_cfb_accepted_refresh_field_adapter.py",
+        "test_cfb_week7_opening_display_gate.py",
+        "test_cfb_week7_afternoon_display_gate.py"
+      ],
+      "runs": [
+        {
+          "pattern": "test_cfb_week7_opening_display_gate.py",
+          "returncode": 0,
+          "elapsed_seconds": 0.5068038600000051,
+          "tests": 16,
+          "skipped": 0
+        },
+        {
+          "pattern": "test_cfb_week7_afternoon_display_gate.py",
+          "returncode": 0,
+          "elapsed_seconds": 0.660178049999999,
+          "tests": 22,
+          "skipped": 0
+        }
+      ],
+      "status": "PASS_UNCHANGED_REGRESSION_GROUP_ONLY",
+      "ended_at_utc": "2026-10-30T02:24:04.239546+00:00",
+      "elapsed_seconds": 1.167164561000007
+    },
+    {
+      "schema": "CFB_VALIDATION_TIMING_GROUP_V1",
+      "group": "week9",
+      "started_at_utc": "2026-10-30T02:24:02.736417+00:00",
+      "commit": "501ff87570e3e6fa44fee5045a28592e302d1e1c",
+      "protected_inputs_sha256": "d21fb6c15d1ae657fbb3df4215b481e304fdda12224c62c108724cba02335259",
+      "original_inventory": [
+        "test_cfb_week8_publication.py",
+        "test_cfb_week8_closed_conditional.py",
+        "test_cfb_week9*.py",
+        "test_cfb_week7_accepted_s0_ancestry_audit.py",
+        "test_cfb_week7_first_frozen_projection_gate.py",
+        "test_cfb_week7_frozen_field_invariant.py",
+        "test_cfb_accepted_refresh_field_adapter.py",
+        "test_cfb_week7_opening_display_gate.py",
+        "test_cfb_week7_afternoon_display_gate.py"
+      ],
+      "runs": [
+        {
+          "pattern": "test_cfb_week9*.py",
+          "returncode": 0,
+          "elapsed_seconds": 162.40999915100002,
+          "tests": 34,
+          "skipped": 0
+        }
+      ],
+      "status": "PASS_UNCHANGED_REGRESSION_GROUP_ONLY",
+      "ended_at_utc": "2026-10-30T02:26:45.148719+00:00",
+      "elapsed_seconds": 162.410146775
+    },
+    {
+      "schema": "CFB_VALIDATION_TIMING_GROUP_V1",
+      "group": "serial",
+      "started_at_utc": "2026-10-30T02:24:00.640285+00:00",
+      "commit": "501ff87570e3e6fa44fee5045a28592e302d1e1c",
+      "protected_inputs_sha256": "d21fb6c15d1ae657fbb3df4215b481e304fdda12224c62c108724cba02335259",
+      "original_inventory": [
+        "test_cfb_week8_publication.py",
+        "test_cfb_week8_closed_conditional.py",
+        "test_cfb_week9*.py",
+        "test_cfb_week7_accepted_s0_ancestry_audit.py",
+        "test_cfb_week7_first_frozen_projection_gate.py",
+        "test_cfb_week7_frozen_field_invariant.py",
+        "test_cfb_accepted_refresh_field_adapter.py",
+        "test_cfb_week7_opening_display_gate.py",
+        "test_cfb_week7_afternoon_display_gate.py"
+      ],
+      "runs": [
+        {
+          "pattern": "test_cfb_week8_publication.py",
+          "returncode": 0,
+          "elapsed_seconds": 10.579098267000006,
+          "tests": 51,
+          "skipped": 0
+        },
+        {
+          "pattern": "test_cfb_week8_closed_conditional.py",
+          "returncode": 0,
+          "elapsed_seconds": 94.296022581,
+          "tests": 8,
+          "skipped": 0
+        },
+        {
+          "pattern": "test_cfb_week9*.py",
+          "returncode": 0,
+          "elapsed_seconds": 78.88939789100002,
+          "tests": 34,
+          "skipped": 0
+        },
+        {
+          "pattern": "test_cfb_week7_accepted_s0_ancestry_audit.py",
+          "returncode": 0,
+          "elapsed_seconds": 0.046936533999996755,
+          "tests": 12,
+          "skipped": 0
+        },
+        {
+          "pattern": "test_cfb_week7_first_frozen_projection_gate.py",
+          "returncode": 0,
+          "elapsed_seconds": 1.1820997479999846,
+          "tests": 23,
+          "skipped": 0
+        },
+        {
+          "pattern": "test_cfb_week7_frozen_field_invariant.py",
+          "returncode": 0,
+          "elapsed_seconds": 0.8559213099999852,
+          "tests": 26,
+          "skipped": 0
+        },
+        {
+          "pattern": "test_cfb_accepted_refresh_field_adapter.py",
+          "returncode": 0,
+          "elapsed_seconds": 1.0236414419999846,
+          "tests": 24,
+          "skipped": 0
+        },
+        {
+          "pattern": "test_cfb_week7_opening_display_gate.py",
+          "returncode": 0,
+          "elapsed_seconds": 0.19132465200002002,
+          "tests": 16,
+          "skipped": 0
+        },
+        {
+          "pattern": "test_cfb_week7_afternoon_display_gate.py",
+          "returncode": 0,
+          "elapsed_seconds": 0.43344586800000684,
+          "tests": 22,
+          "skipped": 0
+        }
+      ],
+      "status": "PASS_UNCHANGED_REGRESSION_GROUP_ONLY",
+      "ended_at_utc": "2026-10-30T02:27:08.140168+00:00",
+      "elapsed_seconds": 187.498085619
+    },
+    {
+      "schema": "CFB_VALIDATION_TIMING_GROUP_V1",
+      "group": "week8",
+      "started_at_utc": "2026-10-30T02:23:59.542681+00:00",
+      "commit": "501ff87570e3e6fa44fee5045a28592e302d1e1c",
+      "protected_inputs_sha256": "d21fb6c15d1ae657fbb3df4215b481e304fdda12224c62c108724cba02335259",
+      "original_inventory": [
+        "test_cfb_week8_publication.py",
+        "test_cfb_week8_closed_conditional.py",
+        "test_cfb_week9*.py",
+        "test_cfb_week7_accepted_s0_ancestry_audit.py",
+        "test_cfb_week7_first_frozen_projection_gate.py",
+        "test_cfb_week7_frozen_field_invariant.py",
+        "test_cfb_accepted_refresh_field_adapter.py",
+        "test_cfb_week7_opening_display_gate.py",
+        "test_cfb_week7_afternoon_display_gate.py"
+      ],
+      "runs": [
+        {
+          "pattern": "test_cfb_week8_publication.py",
+          "returncode": 0,
+          "elapsed_seconds": 21.633499985,
+          "tests": 51,
+          "skipped": 0
+        },
+        {
+          "pattern": "test_cfb_week8_closed_conditional.py",
+          "returncode": 0,
+          "elapsed_seconds": 200.610030663,
+          "tests": 8,
+          "skipped": 0
+        }
+      ],
+      "status": "PASS_UNCHANGED_REGRESSION_GROUP_ONLY",
+      "ended_at_utc": "2026-10-30T02:27:41.788187+00:00",
+      "elapsed_seconds": 222.24366674299998
+    },
+    {
+      "schema": "CFB_VALIDATION_TIMING_GROUP_V1",
+      "group": "frozen",
+      "started_at_utc": "2026-10-30T02:24:01.821346+00:00",
+      "commit": "501ff87570e3e6fa44fee5045a28592e302d1e1c",
+      "protected_inputs_sha256": "d21fb6c15d1ae657fbb3df4215b481e304fdda12224c62c108724cba02335259",
+      "original_inventory": [
+        "test_cfb_week8_publication.py",
+        "test_cfb_week8_closed_conditional.py",
+        "test_cfb_week9*.py",
+        "test_cfb_week7_accepted_s0_ancestry_audit.py",
+        "test_cfb_week7_first_frozen_projection_gate.py",
+        "test_cfb_week7_frozen_field_invariant.py",
+        "test_cfb_accepted_refresh_field_adapter.py",
+        "test_cfb_week7_opening_display_gate.py",
+        "test_cfb_week7_afternoon_display_gate.py"
+      ],
+      "runs": [
+        {
+          "pattern": "test_cfb_week7_accepted_s0_ancestry_audit.py",
+          "returncode": 0,
+          "elapsed_seconds": 0.12940584700000102,
+          "tests": 12,
+          "skipped": 0
+        },
+        {
+          "pattern": "test_cfb_week7_first_frozen_projection_gate.py",
+          "returncode": 0,
+          "elapsed_seconds": 1.7292698239999993,
+          "tests": 23,
+          "skipped": 0
+        },
+        {
+          "pattern": "test_cfb_week7_frozen_field_invariant.py",
+          "returncode": 0,
+          "elapsed_seconds": 1.2761276429999953,
+          "tests": 26,
+          "skipped": 0
+        },
+        {
+          "pattern": "test_cfb_accepted_refresh_field_adapter.py",
+          "returncode": 0,
+          "elapsed_seconds": 1.4633174930000052,
+          "tests": 24,
+          "skipped": 0
+        }
+      ],
+      "status": "PASS_UNCHANGED_REGRESSION_GROUP_ONLY",
+      "ended_at_utc": "2026-10-30T02:24:06.421725+00:00",
+      "elapsed_seconds": 4.598285743999995
+    }
+  ],
+  "jobs": [
+    {
+      "id": 123854458709,
+      "name": "archives",
+      "started_at": "2026-10-30T02:23:39Z",
+      "completed_at": "2026-10-30T02:23:51Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 123854535485,
+      "name": "serial",
+      "started_at": "2026-10-30T02:23:53Z",
+      "completed_at": "2026-10-30T02:27:12Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 123854535506,
+      "name": "parallel (week9)",
+      "started_at": "2026-10-30T02:23:54Z",
+      "completed_at": "2026-10-30T02:26:49Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 123854535555,
+      "name": "parallel (frozen)",
+      "started_at": "2026-10-30T02:23:54Z",
+      "completed_at": "2026-10-30T02:24:10Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 123854535568,
+      "name": "parallel (week8)",
+      "started_at": "2026-10-30T02:23:53Z",
+      "completed_at": "2026-10-30T02:27:44Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 123854535579,
+      "name": "parallel (presentation)",
+      "started_at": "2026-10-30T02:23:54Z",
+      "completed_at": "2026-10-30T02:24:09Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 123855771619,
+      "name": "comparison",
+      "started_at": "2026-10-30T02:27:46Z",
+      "completed_at": "2026-10-30T02:27:54Z",
+      "conclusion": "success"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 12949720582,
+      "name": "cfb-validation-timing-presentation",
+      "sha256": "3a33d6d765734f75d6a6884b73462f0b76caab0d4a252c4c7767636db8e0cf4b"
+    },
+    {
+      "id": 12949716162,
+      "name": "cfb-validation-timing-serial",
+      "sha256": "8423c2b209031c3864fc41c7ac6950e7547490fcdb8c095bc31c9c94f3fc4b30"
+    },
+    {
+      "id": 12949701398,
+      "name": "cfb-validation-timing-week8",
+      "sha256": "7a17ef480870304b5c30827e0c55b644c4c4a55ac60e44c68970ece9f9f6f3ed"
+    },
+    {
+      "id": 12949651403,
+      "name": "cfb-validation-timing-week9",
+      "sha256": "5ebe4664dc0383aa6e46ab81dfc07c1dea0d7a0c0082a5b4d4e55af5f6976419"
+    },
+    {
+      "id": 12949452666,
+      "name": "cfb-validation-timing-comparison",
+      "sha256": "d9a2cdc0b1f1290d9dd43631828676d0b1558e0932a8dc219cf47601d5ac123f"
+    },
+    {
+      "id": 12948764983,
+      "name": "cfb-validation-timing-frozen",
+      "sha256": "ffdc94ddc2d47b36db4173e3fb4d3fe70c18011d8e84b3265b2bdeab3b10a71f"
+    }
+  ],
+  "decision": "KEEP_EXISTING_SERIAL_PRODUCTION_STAGE; DO_NOT_ADOPT_FOUR_GROUP_ARRANGEMENT",
+  "findings": [
+    "Identical9patterns/216tests/0skips, exactsamecommit andprotectedinputdigest, allchecks passed.",
+    "Paralleltestspan222.245506s exceeded serial187.498085619s by34.747420381s. Sumparalleltestexecution390.419263823s vs187.498085619s serial, before setup/artifact overhead.",
+    "Week8 and week9 dominate. Exact per-group and corresponding serial-pattern totals are recomputed from independently verified group_results in group_timing_detail; runner performance differences remain unexplained.",
+    "RunnerCPU/hardware/cachecomparability was not instrumented; cannot attributeall slowdown to orchestration or treat it as a universal result about parallelism.",
+    "The production45stepworkflow and canonical/model/taskstate remain unchanged."
+  ],
+  "next": "Profile one representative expensive closed-conditional test and immutable input loading before another optimization. Do not repeat fullbenchmark without a specific proposed change and benefit hypothesis.",
+  "group_timing_detail": [
+    {
+      "group": "presentation",
+      "parallel_elapsed_seconds": 1.167164561000007,
+      "corresponding_serial_pattern_seconds": 0.6247705200000269
+    },
+    {
+      "group": "week9",
+      "parallel_elapsed_seconds": 162.410146775,
+      "corresponding_serial_pattern_seconds": 78.88939789100002
+    },
+    {
+      "group": "week8",
+      "parallel_elapsed_seconds": 222.24366674299998,
+      "corresponding_serial_pattern_seconds": 104.87512084800001
+    },
+    {
+      "group": "frozen",
+      "parallel_elapsed_seconds": 4.598285743999995,
+      "corresponding_serial_pattern_seconds": 3.108599033999951
+    }
+  ],
+  "superseded_prose_precision_correction": {
+    "superseded_unverified_decimal_prose": "Week8parallel222.243814s and week9parallel162.410456s dominate. Correspondingserialpatterns sum104.874s and78.889s. Everyparallelgroup ran slower; causalreason not established from onepaired measurement.",
+    "correction": "The initial detailed-decimal sentence was not bound to exact group values. It is superseded by computed group_timing_detail; original comparison/group_results were already exact and unchanged."
+  }
+}

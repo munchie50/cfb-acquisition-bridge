@@ -1,0 +1,223 @@
+{
+  "schema": "CFB_ORIGIN_INDEX_INDEPENDENT_VERIFICATION_V1",
+  "run_id": 40994113067,
+  "job_id": 123863121001,
+  "artifact_id": 12950867028,
+  "artifact_sha256": "88c48217d25e72da94959302b4ad4848cf21bbcfc313c40991b0cc5e4c456912",
+  "archive_digest_independently_verified": true,
+  "raw_unittest_summaries_independently_verified": 18,
+  "new_boundary_tests_passed_in_cloud": 7,
+  "comparison": {
+    "schema": "CFB_ORIGIN_TEXT_INDEX_COMPARISON_V1",
+    "recorded_at_utc": "2026-10-30T02:58:21.833717+00:00",
+    "baseline_commit": "d4361825d7499f0aace070dbfd092957dc976fc0",
+    "candidate_commit": "3c2fcb3cfa9aa1c96bd15e504e34af96e8aaf312",
+    "preserved_baseline_tracked_files": 1615,
+    "preserved_inputs_sha256": "f326904e096ee0f34b8acd9d413a37a921e343c43e1e1cc8c6fcb997842073e0",
+    "gate_source_sha256": {
+      "original": "ca050a9e1c66f20791912c15b25acd14148e9938260a2841d82d67371a0e49f7",
+      "candidate": "612367587ad55fe0396eb9d7d65a9174647d5a5e1722b8ec3ef81fa154a40b80"
+    },
+    "original": {
+      "label": "original",
+      "started_at_utc": "2026-10-30T02:51:49.366244+00:00",
+      "runs": [
+        {
+          "pattern": "test_cfb_week8_publication.py",
+          "returncode": 0,
+          "tests": 51,
+          "skipped": 0,
+          "elapsed_seconds": 16.014795135,
+          "child_cpu_seconds": 15.708442
+        },
+        {
+          "pattern": "test_cfb_week8_closed_conditional.py",
+          "returncode": 0,
+          "tests": 8,
+          "skipped": 0,
+          "elapsed_seconds": 153.524721985,
+          "child_cpu_seconds": 153.647059
+        },
+        {
+          "pattern": "test_cfb_week9*.py",
+          "returncode": 0,
+          "tests": 34,
+          "skipped": 0,
+          "elapsed_seconds": 124.41416062800002,
+          "child_cpu_seconds": 124.54562900000006
+        },
+        {
+          "pattern": "test_cfb_week7_accepted_s0_ancestry_audit.py",
+          "returncode": 0,
+          "tests": 12,
+          "skipped": 0,
+          "elapsed_seconds": 0.06071540900001082,
+          "child_cpu_seconds": 0.06026899999997681
+        },
+        {
+          "pattern": "test_cfb_week7_first_frozen_projection_gate.py",
+          "returncode": 0,
+          "tests": 23,
+          "skipped": 0,
+          "elapsed_seconds": 1.4909350350000068,
+          "child_cpu_seconds": 1.4911949999999932
+        },
+        {
+          "pattern": "test_cfb_week7_frozen_field_invariant.py",
+          "returncode": 0,
+          "tests": 26,
+          "skipped": 0,
+          "elapsed_seconds": 1.1855147499999816,
+          "child_cpu_seconds": 1.1873249999999915
+        },
+        {
+          "pattern": "test_cfb_accepted_refresh_field_adapter.py",
+          "returncode": 0,
+          "tests": 24,
+          "skipped": 0,
+          "elapsed_seconds": 1.3045422250000343,
+          "child_cpu_seconds": 1.3041879999999848
+        },
+        {
+          "pattern": "test_cfb_week7_opening_display_gate.py",
+          "returncode": 0,
+          "tests": 16,
+          "skipped": 0,
+          "elapsed_seconds": 0.2554258080000409,
+          "child_cpu_seconds": 0.2565369999999749
+        },
+        {
+          "pattern": "test_cfb_week7_afternoon_display_gate.py",
+          "returncode": 0,
+          "tests": 22,
+          "skipped": 0,
+          "elapsed_seconds": 0.589207708999993,
+          "child_cpu_seconds": 0.5925210000000138
+        }
+      ],
+      "status": "PASS_EXISTING_REGRESSIONS_ONLY",
+      "ended_at_utc": "2026-10-30T02:56:48.216840+00:00",
+      "elapsed_seconds": 298.850481688
+    },
+    "candidate": {
+      "label": "candidate",
+      "started_at_utc": "2026-10-30T02:56:48.217607+00:00",
+      "runs": [
+        {
+          "pattern": "test_cfb_week8_publication.py",
+          "returncode": 0,
+          "tests": 51,
+          "skipped": 0,
+          "elapsed_seconds": 8.745298892999983,
+          "child_cpu_seconds": 8.751020999999996
+        },
+        {
+          "pattern": "test_cfb_week8_closed_conditional.py",
+          "returncode": 0,
+          "tests": 8,
+          "skipped": 0,
+          "elapsed_seconds": 16.67468787399997,
+          "child_cpu_seconds": 16.779811999999982
+        },
+        {
+          "pattern": "test_cfb_week9*.py",
+          "returncode": 0,
+          "tests": 34,
+          "skipped": 0,
+          "elapsed_seconds": 29.257359088999976,
+          "child_cpu_seconds": 29.390753999999998
+        },
+        {
+          "pattern": "test_cfb_week7_accepted_s0_ancestry_audit.py",
+          "returncode": 0,
+          "tests": 12,
+          "skipped": 0,
+          "elapsed_seconds": 0.06183964600000991,
+          "child_cpu_seconds": 0.061364999999980796
+        },
+        {
+          "pattern": "test_cfb_week7_first_frozen_projection_gate.py",
+          "returncode": 0,
+          "tests": 23,
+          "skipped": 0,
+          "elapsed_seconds": 1.496995448000007,
+          "child_cpu_seconds": 1.4972169999999547
+        },
+        {
+          "pattern": "test_cfb_week7_frozen_field_invariant.py",
+          "returncode": 0,
+          "tests": 26,
+          "skipped": 0,
+          "elapsed_seconds": 1.159384781999961,
+          "child_cpu_seconds": 1.1612400000000491
+        },
+        {
+          "pattern": "test_cfb_accepted_refresh_field_adapter.py",
+          "returncode": 0,
+          "tests": 24,
+          "skipped": 0,
+          "elapsed_seconds": 1.2749697020000212,
+          "child_cpu_seconds": 1.2741479999999648
+        },
+        {
+          "pattern": "test_cfb_week7_opening_display_gate.py",
+          "returncode": 0,
+          "tests": 16,
+          "skipped": 0,
+          "elapsed_seconds": 0.2541679990000034,
+          "child_cpu_seconds": 0.255144999999958
+        },
+        {
+          "pattern": "test_cfb_week7_afternoon_display_gate.py",
+          "returncode": 0,
+          "tests": 22,
+          "skipped": 0,
+          "elapsed_seconds": 0.5915880989999778,
+          "child_cpu_seconds": 0.594764000000044
+        }
+      ],
+      "status": "PASS_EXISTING_REGRESSIONS_ONLY",
+      "ended_at_utc": "2026-10-30T02:57:47.738607+00:00",
+      "elapsed_seconds": 59.520824774999994
+    },
+    "patterns": 9,
+    "tests": 216,
+    "skipped": 0,
+    "observed_regression_seconds_saved": 239.329656913,
+    "saved_view_comparison_as_of_utc": "2026-10-30T02:57:47.739134+00:00",
+    "identical_saved_view_audit": {
+      "verdict": "PASS_SAVED_PUBLICATION_INTEGRITY_ONLY",
+      "publication_boundary_utc": "2026-10-30T01:08:20.301277+00:00",
+      "audit_as_of_utc": "2026-10-30T02:57:47.739134+00:00",
+      "integrity": {
+        "verdict": "PASS_CONDITIONAL_CANONICAL_PRESENTATION_ONLY",
+        "games": 56,
+        "sheet_blob": "f05173046e51ab9634d47b1be5fe90c2a5026c96",
+        "scope": "typed canonical display only; no source truth/betting/natural-run acceptance"
+      },
+      "operational_exceptions": [],
+      "elapsed_current_quote_game_ids": [],
+      "overdue_open_decision_game_ids": [],
+      "current_operational_acceptance": "NOT_CERTIFIED",
+      "scope": "CODE_QA_SAVED_VIEW_ONLY_NOT_FRESH_MARKET_OR_RUN_PASS",
+      "saved_canonical_blobs": {
+        "CFB_MARKET_MONITOR_STATE.md": "69caf5b1184eedccc90be7562e4a3bd7cb8b7375",
+        "CFB_DECISION_WAIT_LEDGER.md": "bb5a9cc83b6a1425dc2972ca84b33aa2bbbf8fa9",
+        "CFB_EXECUTION_LEDGER.md": "1a938f42e9f03e723bd50348f8a78dbd8b7098e9",
+        "CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md": "fd6529a4ab27ac12d74ace4441005535c605cadb"
+      }
+    },
+    "status": "PASS_IDENTICAL_REGRESSIONS_AND_SAVED_VIEW_ONLY",
+    "limits": [
+      "Same cloud job/runner, original first then candidate; one paired measurement, order/cache effects possible.",
+      "Only parsing is reused; no acceptance, clock, expiry, source or decision result cached.",
+      "Full45step workflow/natural production/model or betting quality not certified. No production publication."
+    ]
+  },
+  "decision": "QA_CANDIDATE_BENEFIT_VERIFIED; FULL_EXISTING_45STEP_INTEGRATION_AND_PRODUCTION_ADOPTION_PENDING",
+  "limits": [
+    "One same-runner serial-original then serial-candidate comparison; order/cache effects possible.",
+    "Saved-view rendering equivalence, not fresh market/football/venue acceptance or model promotion.",
+    "Production main gate is unchanged. Source preparation/recovery work remains separately qualified."
+  ]
+}

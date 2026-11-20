@@ -1,0 +1,100 @@
+{
+  "schema": "CFB_ORIGIN_INDEX_LOCAL_PROFILE_V1",
+  "baseline_commit": "d4361825d7499f0aace070dbfd092957dc976fc0",
+  "test": "test_cfb_week8_closed_conditional.ClosedConditionalTests.test_authentic_failed_case_advances_and_preserves_all_decisions",
+  "timings": {
+    "baseline": {
+      "group": "original",
+      "elapsed_seconds": 42.5928589819996,
+      "started_at_utc": "2026-10-30T02:43:02.033545+00:00",
+      "ended_at_utc": "2026-10-30T02:43:44.626643+00:00",
+      "source_sha256": "ca050a9e1c66f20791912c15b25acd14148e9938260a2841d82d67371a0e49f7",
+      "returncode": 0,
+      "stdout": ".\n----------------------------------------------------------------------\nRan 1 test in 42.524s\n\nOK\n"
+    },
+    "candidate": {
+      "group": "candidate",
+      "elapsed_seconds": 5.18832334200124,
+      "started_at_utc": "2026-10-30T02:44:36.889716+00:00",
+      "ended_at_utc": "2026-10-30T02:44:42.078039+00:00",
+      "source_sha256": "612367587ad55fe0396eb9d7d65a9174647d5a5e1722b8ec3ef81fa154a40b80",
+      "returncode": 0,
+      "stdout": ".\n----------------------------------------------------------------------\nRan 1 test in 5.113s\n\nOK\n"
+    }
+  },
+  "profiles": {
+    "baseline": {
+      "total_seconds": 44.142893930000035,
+      "total_calls": 9973330,
+      "gate_functions": [
+        {
+          "function": "state_evidence",
+          "primitive_calls": 2800,
+          "calls": 2800,
+          "self_seconds": 28.253599418,
+          "cumulative_seconds": 37.459401480000004
+        },
+        {
+          "function": "conditional_boundary",
+          "primitive_calls": 186,
+          "calls": 186,
+          "self_seconds": 0.001583668,
+          "cumulative_seconds": 0.917444327
+        },
+        {
+          "function": "inputs",
+          "primitive_calls": 4,
+          "calls": 4,
+          "self_seconds": 0.21120547,
+          "cumulative_seconds": 43.253559634000005
+        }
+      ]
+    },
+    "candidate": {
+      "total_seconds": 5.967794530999989,
+      "total_calls": 7441545,
+      "gate_functions": [
+        {
+          "function": "_origin_packet_index",
+          "primitive_calls": 4,
+          "calls": 4,
+          "self_seconds": 0.051868421000000005,
+          "cumulative_seconds": 0.07047903700000001
+        },
+        {
+          "function": "_matching_origin_packets",
+          "primitive_calls": 2640,
+          "calls": 2640,
+          "self_seconds": 0.01797294,
+          "cumulative_seconds": 0.73000357
+        },
+        {
+          "function": "conditional_boundary",
+          "primitive_calls": 186,
+          "calls": 186,
+          "self_seconds": 0.001061317,
+          "cumulative_seconds": 0.067422851
+        },
+        {
+          "function": "state_evidence",
+          "primitive_calls": 2800,
+          "calls": 2800,
+          "self_seconds": 0.023965332000000002,
+          "cumulative_seconds": 0.785039826
+        },
+        {
+          "function": "inputs",
+          "primitive_calls": 4,
+          "calls": 4,
+          "self_seconds": 0.15876636900000002,
+          "cumulative_seconds": 5.30719766
+        }
+      ]
+    }
+  },
+  "new_boundary_tests_passed_locally": 7,
+  "limits": [
+    "Local targeted measurement only; archive and preserved input identities checked.",
+    "No validation acceptance result is cached. Full cloud regression/saved-view comparison pending."
+  ]
+}

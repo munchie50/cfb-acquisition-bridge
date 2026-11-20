@@ -1,0 +1,844 @@
+{
+  "schema": "CFB_CURRENT_SOURCE_SHADOW_VERIFIED_V1",
+  "run_id": 40990645553,
+  "job_id": 123851929798,
+  "tested_commit": "cb720c838a6da3532933f7ed098b5da40151f500",
+  "authority_commit": "8df63ed20c2cc53f41ec93815c6a2895bac06892",
+  "artifact_id": 12948643648,
+  "artifact_sha256": "218a3e0971ac9d512879975c5f250b045dfca129a545955eb55ca9d62e27d145",
+  "artifact_digest_independently_verified": true,
+  "raw_source_hashes_and_sizes_verified": 48,
+  "new_tests_passed_in_cloud": 15,
+  "initial_unassigned_global_source_urls": 4,
+  "resolution": "Four explicit QA game associations pinned to exact accepted review and commit; no production evidence rewritten.",
+  "source_title_block_markers": [],
+  "role_coverage": {
+    "active_games_without_fetched_football_source": [],
+    "authority_commit": "8df63ed20c2cc53f41ec93815c6a2895bac06892",
+    "collector_elapsed_seconds": 9.612499,
+    "failed_sources": [],
+    "fetched_sources": 48,
+    "football_analysis": "NOT_PERFORMED",
+    "football_raw_linked_saved_active_games": 35,
+    "football_required_saved_active_games": 35,
+    "governed_games": 56,
+    "index_blob": "c82beea44dcd7300728a965a6cfe423467701ced",
+    "input_sha256": "33a2cbdca3b5befb70c216c0809ad19c2f8836941b6051af4556ae5cc8d56354",
+    "invalid_or_stale_raw_source_ids": [],
+    "limitations": [
+      "HTTP success and role associations do not qualify text, matchup, medical facts or prices.",
+      "Saved active game population is as-of the accepted review, not independently re-established current eligibility.",
+      "No whole-Monitor timing comparison, analytical quality or natural-production reliability claim."
+    ],
+    "market_raw_linked_games": 56,
+    "planned_sources": 48,
+    "production_publication_or_model_change": false,
+    "quote_or_source_semantic_freshness": "NOT_CERTIFIED",
+    "recorded_at_utc": "2026-10-30T02:16:01.753494+00:00",
+    "reused_sources": 0,
+    "saved_review_boundary_utc": "2026-10-30T01:08:20.301277+00:00",
+    "schema": "CFB_SOURCE_ROLE_SHADOW_QA_V1",
+    "status": "COMPLETE_UNREVIEWED_COLLECTION_ONLY"
+  },
+  "limits": [
+    "Raw HTTP bodies remain UNREVIEWED; title scan is not semantic fact/market qualification.",
+    "48URLs collected in9.612499seconds; no same-sample serial baseline or wholeMonitor savings claim.",
+    "Active35game scope is as-of saved01:08review; current eligibility is not independently asserted.",
+    "No Monitor artifact-consumption hook or production rollout; source preparation remains QA."
+  ],
+  "authority_input_bindings": {
+    "evidence/operational/CFB_MARKET_MONITOR_20261030T010121Z_CBS_TABLES.md": "60bb9ed117fe36004585ba01079f24f345cb6ddf",
+    "evidence/operational/CFB_MARKET_MONITOR_20261030T010121Z_REVALIDATION.json": "729121affc87955276511c1dc4187f5664f08d6b",
+    "evidence/operational/CFB_WEEK9_POPULATION_RESEARCH_20261026T225722Z.json": "5ca0e153ce79978ae7c0823a21ba331f2b4ae395",
+    "evidence/operational/recommendation_reviews/CFB_MARYLAND_POINTS_RECONSIDERATION_20261030T010359Z.json": "7864632f15634cb997819bc4c54dc0194fd2cbf9",
+    "evidence/operational/recommendation_reviews/CFB_OHIO_STATE_USC_UNDER_RECONSIDERATION_20261030T010401Z.json": "f93bc42dad561f914456ceff488ddd24d90ca580",
+    "evidence/operational/recommendation_reviews/CFB_UCF_POINTS_RECONSIDERATION_20261029T223706Z.json": "0c436f203c0e59a415d305ffa750155e73c96d5b",
+    "evidence/scheduler_qa/CFB_WEEK9_ORIGINAL_ANCESTRY_RECOVERY_20261025.json": "57afbbbc65d58d9ee739bcb2823685e3fc0a5cb9"
+  },
+  "source_plan_sha256": "33a2cbdca3b5befb70c216c0809ad19c2f8836941b6051af4556ae5cc8d56354",
+  "collection_manifest_sha256": "baa7ce0b4d0881b1bd1ac0228fa7d2116444c3386517f49f0e952ed9660b4c80",
+  "source_inventory": [
+    {
+      "id": "e8c3f05e6fbb5ccccc7eeb23",
+      "url": "https://baylorbears.com/news/2026/10/25/football-fb-continues-road-swing-at-ucf-on-friday-night",
+      "kind": "football_material",
+      "game_ids": [
+        "401856844"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 658035,
+      "sha256": "f242890f0a9b0cf35fefd7f70b4733fb35435e673f0c91a32c6e1c9c621704ee",
+      "response_recovered_by_utc": "2026-10-30T02:15:52.729031+00:00",
+      "http_status": 200,
+      "final_url": "https://baylorbears.com/news/2026/10/25/football-fb-continues-road-swing-at-ucf-on-friday-night",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "cbac462af8ce5a8f3007f80a",
+      "url": "https://broncosports.com/news/2026/10/24/football-dominant-fourth-quarter-propels-no-21-22-broncos-past-cougars",
+      "kind": "football_material",
+      "game_ids": [
+        "401860908"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 595398,
+      "sha256": "adb484e60aabcb62e65c381db76cca6cd1759623b05b803a3320ac167a0fa110",
+      "response_recovered_by_utc": "2026-10-30T02:15:52.671079+00:00",
+      "http_status": 200,
+      "final_url": "https://broncosports.com/news/2026/10/24/football-dominant-fourth-quarter-propels-no-21-22-broncos-past-cougars",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "8ee14cbb9fcb50b378913762",
+      "url": "https://cuse.com/news/2026/10/24/football-cardiac-cuse-top-carolina-in-overtime",
+      "kind": "football_material",
+      "game_ids": [
+        "401858278",
+        "401858282"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 734034,
+      "sha256": "fc37b74d401181d43c8d81c6c5d7e68e4736e93586d9a670cad964d9d2bba649",
+      "response_recovered_by_utc": "2026-10-30T02:15:52.831085+00:00",
+      "http_status": 200,
+      "final_url": "https://cuse.com/news/2026/10/24/football-cardiac-cuse-top-carolina-in-overtime",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "c242f5dfbb02a0a572a34f73",
+      "url": "https://d1tacpi2k4cwvj.cloudfront.net/news/2026/10/24/football-cyclones-fall-at-no-25-arizona-39-3",
+      "kind": "football_material",
+      "game_ids": [
+        "401856847"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 721008,
+      "sha256": "08c94da68e784d008a72514e566ab82e95d2b817e2e6cff5dc84aa49f6ed710a",
+      "response_recovered_by_utc": "2026-10-30T02:15:52.537063+00:00",
+      "http_status": 200,
+      "final_url": "https://d1tacpi2k4cwvj.cloudfront.net/news/2026/10/24/football-cyclones-fall-at-no-25-arizona-39-3",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "4349992575d04e014a3c3203",
+      "url": "https://fightingillini.com/news/2026/10/26/football-illinois-travels-east-for-matchup-at-maryland",
+      "kind": "football_material",
+      "game_ids": [
+        "401858503"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 821124,
+      "sha256": "3088a70f869eedf53eeccae375c7644de7b9a8962283aefa50f908a5799b6daf",
+      "response_recovered_by_utc": "2026-10-30T02:15:53.134037+00:00",
+      "http_status": 200,
+      "final_url": "https://fightingillini.com/news/2026/10/26/football-illinois-travels-east-for-matchup-at-maryland",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "0d87ede6fe1492c4420b7899",
+      "url": "https://georgiadogs.com/news/2026/10/26/football-georgia-takes-on-florida-in-atlanta-for-the-first-time",
+      "kind": "football_material",
+      "game_ids": [
+        "401856734"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 1067982,
+      "sha256": "ce3ae0313fcfd7ab8eb88a2277ca462c82e8361377f7669a735d6782ad3dd8d9",
+      "response_recovered_by_utc": "2026-10-30T02:15:53.437206+00:00",
+      "http_status": 200,
+      "final_url": "https://georgiadogs.com/news/2026/10/26/football-georgia-takes-on-florida-in-atlanta-for-the-first-time",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "a36fcf73d84dc31e0b2bf89d",
+      "url": "https://goairforcefalcons.com/news/2026/10/26/football-game-8-air-force-vs-uconn",
+      "kind": "football_material",
+      "game_ids": [
+        "401861966"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 305477,
+      "sha256": "bc9137272a1f166a180617fb11714d72bc167b9c15a8fcb57a4062714c4c7e4b",
+      "response_recovered_by_utc": "2026-10-30T02:15:53.645871+00:00",
+      "http_status": 200,
+      "final_url": "https://goairforcefalcons.com/news/2026/10/26/football-game-8-air-force-vs-uconn",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "40edb5fb47908cf323e9a0f7",
+      "url": "https://goaztecs.com/news/2026/10/26/aztecs-return-home-to-face-washington-state-for-halloween-clash",
+      "kind": "football_material",
+      "game_ids": [
+        "401860909",
+        "401860910"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 604382,
+      "sha256": "8dce2f883a28bb84fb66025d33c9ac30f9bcef21d964c6558c0616344aad2e6e",
+      "response_recovered_by_utc": "2026-10-30T02:15:53.621478+00:00",
+      "http_status": 200,
+      "final_url": "https://goaztecs.com/news/2026/10/26/aztecs-return-home-to-face-washington-state-for-halloween-clash",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "ca88afeb51be0c7e5e3f14e7",
+      "url": "https://gobulldogs.com/news/2026/10/26/football-bulldogs-host-oregon-state-on-halloween-night",
+      "kind": "football_material",
+      "game_ids": [
+        "401860924"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 363806,
+      "sha256": "39fb2bb8c29bd20a531800c3d753bd18118d453553f1e028478909e844e4fef5",
+      "response_recovered_by_utc": "2026-10-30T02:15:53.705054+00:00",
+      "http_status": 200,
+      "final_url": "https://gobulldogs.com/news/2026/10/26/football-bulldogs-host-oregon-state-on-halloween-night",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "4972a0f18c4f2f8083e4d50b",
+      "url": "https://golobos.com/news/2026/10/25/brawleys-pick-6-lifts-new-mexico-past-north-dakota-state-21-16",
+      "kind": "football_material",
+      "game_ids": [
+        "401864529",
+        "401864531"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 550967,
+      "sha256": "07a6b5d3cf13d1d0eed3fc0bd62083e5f928231b27902df4ecd64562a1f390fe",
+      "response_recovered_by_utc": "2026-10-30T02:15:54.235166+00:00",
+      "http_status": 200,
+      "final_url": "https://golobos.com/news/2026/10/25/brawleys-pick-6-lifts-new-mexico-past-north-dakota-state-21-16",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "b651beab58b334ba850d61b1",
+      "url": "https://gopsusports.com/news/2026/10/26/game-notes-penn-state-vs-purdue-2026",
+      "kind": "football_material",
+      "game_ids": [
+        "401858506"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 1369209,
+      "sha256": "a8b78a6290a9afe184a3f4431975ea4ee6102e90d6d9415cc2b1e3ef40b376bc",
+      "response_recovered_by_utc": "2026-10-30T02:15:54.475758+00:00",
+      "http_status": 200,
+      "final_url": "https://gopsusports.com/news/2026/10/26/game-notes-penn-state-vs-purdue-2026",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "91db0276225fbdce758e3a24",
+      "url": "https://gostanford.com/news/2026/10/26/cardinal-takes-on-cardinals-in-halloween-matchup",
+      "kind": "football_material",
+      "game_ids": [
+        "401858283"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 649049,
+      "sha256": "e0099f7ef72a4ee187ed82d5093759eafda98be3bd77b1bd8b477754a15f17a3",
+      "response_recovered_by_utc": "2026-10-30T02:15:54.006742+00:00",
+      "http_status": 200,
+      "final_url": "https://gostanford.com/news/2026/10/26/cardinal-takes-on-cardinals-in-halloween-matchup",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "36b5aab720e10b654b1b7f7b",
+      "url": "https://gseagles.com/news/2026/10/26/football-game-preview-old-rivals-renew-acquaintances-saturday",
+      "kind": "football_material",
+      "game_ids": [
+        "401869846"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 735049,
+      "sha256": "2adcd3f503408b3a8e04231f28461ce892569f64b0f9d07162ff248af8be776c",
+      "response_recovered_by_utc": "2026-10-30T02:15:54.123250+00:00",
+      "http_status": 200,
+      "final_url": "https://gseagles.com/news/2026/10/26/football-game-preview-old-rivals-renew-acquaintances-saturday",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "ce92e5642ea4b917de11442e",
+      "url": "https://hornetsports.com/sports/football/stats/2026/ball-state/boxscore/16623",
+      "kind": "football_material",
+      "game_ids": [
+        "401866451"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 1153439,
+      "sha256": "04514bb191b64be1cf3966fb9abf42d30c3a58e94426a91a00e4f3c2743ea9c4",
+      "response_recovered_by_utc": "2026-10-30T02:15:54.466796+00:00",
+      "http_status": 200,
+      "final_url": "https://hornetsports.com/sports/football/stats/2026/ball-state/boxscore/16623",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "6b5dba5a0e46c3ef88b66b2b",
+      "url": "https://huskers.com/news/2026/10/26/huskers-return-home-to-host-washington",
+      "kind": "football_material",
+      "game_ids": [
+        "401858504"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 700719,
+      "sha256": "9dc4e53fb4e8bcef0544810ebad7be38caea68aaecc331ba952c7c86f9f232f5",
+      "response_recovered_by_utc": "2026-10-30T02:15:54.791110+00:00",
+      "http_status": 200,
+      "final_url": "https://huskers.com/news/2026/10/26/huskers-return-home-to-host-washington",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "543ce5e680327b1158f78a8b",
+      "url": "https://huskers.com/news/2026/10/26/rhule-talks-injuries-previews-washington-game",
+      "kind": "football_material",
+      "game_ids": [
+        "401858504"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 653079,
+      "sha256": "744046270d87d41a0b8e7c162ca258413a44d2ac0779c01d148066cab475c0df",
+      "response_recovered_by_utc": "2026-10-30T02:15:54.861268+00:00",
+      "http_status": 200,
+      "final_url": "https://huskers.com/news/2026/10/26/rhule-talks-injuries-previews-washington-game",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "b81977d85fda606bbb3870a9",
+      "url": "https://kentstatesports.com/sports/football/stats/2026/akron/boxscore/9739",
+      "kind": "football_material",
+      "game_ids": [
+        "401866451"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 1913776,
+      "sha256": "803ae096c6972981a97d9ffb28589c7ea23e4fc657a90b926c0ba6cf1a9f2922",
+      "response_recovered_by_utc": "2026-10-30T02:15:55.823695+00:00",
+      "http_status": 200,
+      "final_url": "https://kentstatesports.com/sports/football/stats/2026/akron/boxscore/9739",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "bfa9e90e69f4b61736f77f59",
+      "url": "https://kuathletics.com/news/2026/10/26/football-jayhawks-travel-to-tcu-to-take-on-horned-frogs",
+      "kind": "football_material",
+      "game_ids": [
+        "401856845"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 579314,
+      "sha256": "8743a3a4758c6068880a4363522ba173845e013664f0b3f72554697050e8d74f",
+      "response_recovered_by_utc": "2026-10-30T02:15:54.890451+00:00",
+      "http_status": 200,
+      "final_url": "https://kuathletics.com/news/2026/10/26/football-jayhawks-travel-to-tcu-to-take-on-horned-frogs",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "697ef71c3d83a2df061893a8",
+      "url": "https://miamihurricanes.com/news/2026/10/25/fb-2026-canes-rewind-a-look-back-at-the-win-over-pittsburgh",
+      "kind": "football_material",
+      "game_ids": [
+        "401858282"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 598288,
+      "sha256": "247224e4ddf8a7ef29bda2c3bc95d089b500bc2b5e9798e1d6abcfc27511db3b",
+      "response_recovered_by_utc": "2026-10-30T02:15:55.083435+00:00",
+      "http_status": 200,
+      "final_url": "https://miamihurricanes.com/news/2026/10/25/fb-2026-canes-rewind-a-look-back-at-the-win-over-pittsburgh",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "81e63148c56e7bbdb7017b3b",
+      "url": "https://mutigers.com/news/2026/10/17/no-13-football-stumbles-at-no-9-ole-miss",
+      "kind": "football_material",
+      "game_ids": [
+        "401856733"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 428762,
+      "sha256": "7cf2a11bac56bc3ccc4257116cf119c8e4d2ff333bbf8173cae5fdb0e5476693",
+      "response_recovered_by_utc": "2026-10-30T02:15:56.182675+00:00",
+      "http_status": 200,
+      "final_url": "https://mutigers.com/news/2026/10/17/no-13-football-stumbles-at-no-9-ole-miss",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "0b112ba7587b72c43f1405e8",
+      "url": "https://nevadawolfpack.com/boxscore.aspx?id=14076&path=football",
+      "kind": "football_material",
+      "game_ids": [
+        "401858508",
+        "401864529"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 1061958,
+      "sha256": "6a103ccc75a8266b244a6305e07a625ce4932cbfbba556a297d2508fa1956c92",
+      "response_recovered_by_utc": "2026-10-30T02:15:57.012806+00:00",
+      "http_status": 200,
+      "final_url": "https://nevadawolfpack.com/sports/football/stats/2026/san-jos-state/boxscore/14076",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "c328f42fad3b1cae17c96cc8",
+      "url": "https://niuhuskies.com/boxscore.aspx?id=25012&path=football",
+      "kind": "football_material",
+      "game_ids": [
+        "401864530"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 967258,
+      "sha256": "fe047be6990661c34de2e012c3250bda95d9b4f634dbdba92e992013eb82a17f",
+      "response_recovered_by_utc": "2026-10-30T02:15:56.925988+00:00",
+      "http_status": 200,
+      "final_url": "https://niuhuskies.com/sports/football/stats/2026/hawai-i/boxscore/25012",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "4d51c60faa3a63cbfb4cf092",
+      "url": "https://odusports.com/news/2026/10/24/football-falls-at-louisiana-tech-26-0",
+      "kind": "football_material",
+      "game_ids": [
+        "401871096",
+        "401871097"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 340271,
+      "sha256": "4920b5299d42aa7001d1347922ead5f838148288e617f08936a519696e93a3f8",
+      "response_recovered_by_utc": "2026-10-30T02:15:56.541007+00:00",
+      "http_status": 200,
+      "final_url": "https://odusports.com/news/2026/10/24/football-falls-at-louisiana-tech-26-0",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "c585b60a8a052531e56744b0",
+      "url": "https://olemisssports.com/news/2026/10/26/football-vs-auburn-first-look",
+      "kind": "football_material",
+      "game_ids": [
+        "401856735"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 1108350,
+      "sha256": "e4524aa95f0127316cd6e661f34fb122e2bcfb30f77ccbad5224263192dafb7c",
+      "response_recovered_by_utc": "2026-10-30T02:15:56.687778+00:00",
+      "http_status": 200,
+      "final_url": "https://olemisssports.com/news/2026/10/26/football-vs-auburn-first-look",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "c402ecbdd9dc61aecaa1bd4d",
+      "url": "https://osubeavers.com/news/2026/10/26/football-oregon-state-returns-from-bye-week-visits-fresno-state-halloween-night",
+      "kind": "football_material",
+      "game_ids": [
+        "401860924"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 901548,
+      "sha256": "3934ca2ee95df407a438c9ea4d198264a6d6b0827ad430597ce61da547a3a07c",
+      "response_recovered_by_utc": "2026-10-30T02:15:57.703121+00:00",
+      "http_status": 200,
+      "final_url": "https://osubeavers.com/news/2026/10/26/football-oregon-state-returns-from-bye-week-visits-fresno-state-halloween-night",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "b1ae0130d045665030cf062e",
+      "url": "https://soonersports.com/news/2026/10/24/football-sooners-prevail-in-first-ever-meeting-against-mississippi-state",
+      "kind": "football_material",
+      "game_ids": [
+        "401856736",
+        "401856737"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 685435,
+      "sha256": "7c72a36711617dbd3325adb615103b3dee24b8a1e6c29d26d8132740e4bd5652",
+      "response_recovered_by_utc": "2026-10-30T02:15:57.374230+00:00",
+      "http_status": 200,
+      "final_url": "https://soonersports.com/news/2026/10/24/football-sooners-prevail-in-first-ever-meeting-against-mississippi-state",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "b2a3803134ac355b0673bba4",
+      "url": "https://southernmiss.com/news/2026/10/24/late-touchdown-lifts-football-over-louisiana-35-31-in-homecoming-victory",
+      "kind": "football_material",
+      "game_ids": [
+        "401871095"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 600994,
+      "sha256": "372b8bce67af9b9a36f6608a7a11defdd5ea8ab3ebf168063c3a99406f8e3adf",
+      "response_recovered_by_utc": "2026-10-30T02:15:57.308325+00:00",
+      "http_status": 200,
+      "final_url": "https://southernmiss.com/news/2026/10/24/late-touchdown-lifts-football-over-louisiana-35-31-in-homecoming-victory",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "73f65489ff26f7b41cf75a0c",
+      "url": "https://sports.yahoo.com/articles/ahmad-hardy-play-week-why-160842816.html",
+      "kind": "football_material",
+      "game_ids": [
+        "401856733"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 561688,
+      "sha256": "69e3be0b591b8518749fe90c02bc1c2652409ce3e06c873ea7def6b6f4a66b03",
+      "response_recovered_by_utc": "2026-10-30T02:15:57.685583+00:00",
+      "http_status": 200,
+      "final_url": "https://sports.yahoo.com/articles/ahmad-hardy-play-week-why-160842816.html",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "7569820b98f03e922fedd58d",
+      "url": "https://texaslonghorns.com/news/2026/10/24/no-19-18-football-prevails-against-no-7-7-ole-miss-34-27",
+      "kind": "football_material",
+      "game_ids": [
+        "401856737"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 655792,
+      "sha256": "ead40013998d2cd75876dee9f0c53d73ee364e8b897af0883cc702ce93d96138",
+      "response_recovered_by_utc": "2026-10-30T02:15:57.887284+00:00",
+      "http_status": 200,
+      "final_url": "https://texaslonghorns.com/news/2026/10/24/no-19-18-football-prevails-against-no-7-7-ole-miss-34-27",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "725c5d85e1feffe16ceba88c",
+      "url": "https://thesundevils.com/news/2026/10/25/return-of-the-mack-cardae-with-four-touchdowns-as-sun-devils-top-kansas-state-28-17",
+      "kind": "football_material",
+      "game_ids": [
+        "401856843"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 572454,
+      "sha256": "e40238e64bbb7ada6b509c6c142da787fcbf7b445b6572a21fc50d01664c5fbe",
+      "response_recovered_by_utc": "2026-10-30T02:15:57.934491+00:00",
+      "http_status": 200,
+      "final_url": "https://thesundevils.com/news/2026/10/25/return-of-the-mack-cardae-with-four-touchdowns-as-sun-devils-top-kansas-state-28-17",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "dceacf1d84377cc6a458e22e",
+      "url": "https://troytrojans.com/news/2026/10/24/football-troy-falls-to-ulm",
+      "kind": "football_material",
+      "game_ids": [
+        "401871095"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 535666,
+      "sha256": "5ef7ba97f56f34297ef43ea515151708a0931d05630162ebbfa95b35044a4792",
+      "response_recovered_by_utc": "2026-10-30T02:15:58.495213+00:00",
+      "http_status": 200,
+      "final_url": "https://troytrojans.com/news/2026/10/24/football-troy-falls-to-ulm",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "84736b1d4c95175a0feb6c9d",
+      "url": "https://tulanegreenwave.com/news/2026/10/24/football-falls-42-19-to-utsa",
+      "kind": "football_material",
+      "game_ids": [
+        "401862813"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 666084,
+      "sha256": "b1c1d96516a5b574ea00a882fb5a8d5adf3eeae48df5d3ae21f135783c767a87",
+      "response_recovered_by_utc": "2026-10-30T02:15:58.246385+00:00",
+      "http_status": 200,
+      "final_url": "https://tulanegreenwave.com/news/2026/10/24/football-falls-42-19-to-utsa",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "22c7abc1e18c16a8c40286ca",
+      "url": "https://txst.com/news/2026/10/25/football-game-recap-bobcats-defeat-utah-state-20-17-in-front-of-homecoming-crowd.aspx",
+      "kind": "football_material",
+      "game_ids": [
+        "401860908"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 909820,
+      "sha256": "68435ed5f10eecc3070f5c114df0ae9fd6a8a52434de2f7e16ee30db767584fe",
+      "response_recovered_by_utc": "2026-10-30T02:15:59.811681+00:00",
+      "http_status": 200,
+      "final_url": "https://txst.com/news/2026/10/25/football-game-recap-bobcats-defeat-utah-state-20-17-in-front-of-homecoming-crowd.aspx",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "30a9b6c6a8979bd3ed55477e",
+      "url": "https://ucfknights.com/news/2026/10/24/ucf-stuns-no-2-byu-in-overtime-victory-39-31",
+      "kind": "football_material",
+      "game_ids": [
+        "401856843",
+        "401856844"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 406205,
+      "sha256": "c6e7d73f7a0f2ce9ab5291325f762cb1f60d3c56b625d32493597cbb545c8646",
+      "response_recovered_by_utc": "2026-10-30T02:15:58.624830+00:00",
+      "http_status": 200,
+      "final_url": "https://ucfknights.com/news/2026/10/24/ucf-stuns-no-2-byu-in-overtime-victory-39-31",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "7e490fbdb002a8085c6ae4aa",
+      "url": "https://ucfknights.com/news/2026/10/27/mission-x-set-for-launch-friday-night-vs-baylor",
+      "kind": "football_material",
+      "game_ids": [
+        "401856844"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 529305,
+      "sha256": "4b99c87c6fc9b55118ed17dd04021851c033f17675ba5376ec08fa25e435dd12",
+      "response_recovered_by_utc": "2026-10-30T02:15:58.550218+00:00",
+      "http_status": 200,
+      "final_url": "https://ucfknights.com/news/2026/10/27/mission-x-set-for-launch-friday-night-vs-baylor",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "60c45773a0e5c68e420d65b0",
+      "url": "https://uclabruins.com/news/2026/10/25/postgame-notes-ucla-vs-msu-2026",
+      "kind": "football_material",
+      "game_ids": [
+        "401858508"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 446570,
+      "sha256": "d7d29f42d0d2ecbfadd029f9465cae83212c95e23a1876e2e5f8a0d122ea4849",
+      "response_recovered_by_utc": "2026-10-30T02:15:59.046272+00:00",
+      "http_status": 200,
+      "final_url": "https://uclabruins.com/news/2026/10/25/postgame-notes-ucla-vs-msu-2026",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "a12427621e9564a38f9b2ebf",
+      "url": "https://umterps.com/news/2026/10/26/football-game-7-rutgers-at-maryland-preview",
+      "kind": "football_material",
+      "game_ids": [
+        "401858503"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 1069351,
+      "sha256": "37770289cc2c0883d289708201bdb7ba3adf6aa8b1feccf78e23759f6bef1957",
+      "response_recovered_by_utc": "2026-10-30T02:15:59.259454+00:00",
+      "http_status": 200,
+      "final_url": "https://umterps.com/news/2026/10/26/football-game-7-rutgers-at-maryland-preview",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "48f0356d50b7042c1ea29dfc",
+      "url": "https://unlvrebels.com/news/2026/10/17/football-falcons-snap-unlvs-three-game-win-streak",
+      "kind": "football_material",
+      "game_ids": [
+        "401864530"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 811088,
+      "sha256": "e997d6afc2d38f2aac1919899ae8e737beeadc4b2383ca911fe42a322bdc0ceb",
+      "response_recovered_by_utc": "2026-10-30T02:15:59.083473+00:00",
+      "http_status": 200,
+      "final_url": "https://unlvrebels.com/news/2026/10/17/football-falcons-snap-unlvs-three-game-win-streak",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "e0ef63a62e326fe28d8732bb",
+      "url": "https://usctrojans.com/news/2026/10/24/usc-trojans-football-game-recap-associated-press-ap-wisconsin-badgers-jayden-maiava-taniela-tupou",
+      "kind": "football_material",
+      "game_ids": [
+        "401858509"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 957417,
+      "sha256": "46776d0be62cacc606fbdb3e03eb0f466b22c10f42a933f36ba3931eb69ca79c",
+      "response_recovered_by_utc": "2026-10-30T02:15:59.351319+00:00",
+      "http_status": 200,
+      "final_url": "https://usctrojans.com/news/2026/10/24/usc-trojans-football-game-recap-associated-press-ap-wisconsin-badgers-jayden-maiava-taniela-tupou",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "af1f6a9a4a9d4c834ec744c0",
+      "url": "https://usctrojans.com/news/2026/10/27/usc-trojans-football-game-preview-notes-ohio-state-buckeyes-nbc-sports-halloween-lincoln-riley",
+      "kind": "football_material",
+      "game_ids": [
+        "401858509"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 1144606,
+      "sha256": "e7033c41889acc360f72b06211fdf43e529f9f9f5a44debb261682d8253f3a16",
+      "response_recovered_by_utc": "2026-10-30T02:15:59.830656+00:00",
+      "http_status": 200,
+      "final_url": "https://usctrojans.com/news/2026/10/27/usc-trojans-football-game-preview-notes-ohio-state-buckeyes-nbc-sports-halloween-lincoln-riley",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "0de4f90cdbcc6dc0882cf277",
+      "url": "https://uwbadgers.com/news/2026/10/24/football-badgers-take-down-no-16-usc-24-7",
+      "kind": "football_material",
+      "game_ids": [
+        "401858502"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 689548,
+      "sha256": "88e08f412c4c55d48a5080ea90c102247fb2b4924161df65508a739efa0b20da",
+      "response_recovered_by_utc": "2026-10-30T02:15:59.978804+00:00",
+      "http_status": 200,
+      "final_url": "https://uwbadgers.com/news/2026/10/24/football-badgers-take-down-no-16-usc-24-7",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "2eb442c4a5749d1bb5ddadc2",
+      "url": "https://virginiasports.com/news/2026/10/24/late-touchdown-lifts-duke-over-virginia-19-16",
+      "kind": "football_material",
+      "game_ids": [
+        "401858284"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 701475,
+      "sha256": "a3d3edf330a49606a848936757bef28553fe0e31bd4b155a21cf8146a7be5233",
+      "response_recovered_by_utc": "2026-10-30T02:16:00.231040+00:00",
+      "http_status": 200,
+      "final_url": "https://virginiasports.com/news/2026/10/24/late-touchdown-lifts-duke-over-virginia-19-16",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "8f709d8bc53116ee7d5cfe77",
+      "url": "https://wmubroncos.com/news/2026/10/24/football-wmus-comeback-falls-short-at-toledo.aspx",
+      "kind": "football_material",
+      "game_ids": [
+        "401866452"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 449406,
+      "sha256": "8dfa2746d99836414b357fd384ca7736a433e483bfff822909c08d6f4abd24c8",
+      "response_recovered_by_utc": "2026-10-30T02:16:00.795509+00:00",
+      "http_status": 200,
+      "final_url": "https://wmubroncos.com/news/2026/10/24/football-wmus-comeback-falls-short-at-toledo.aspx",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "c83a03747fcb08310aaec0cf",
+      "url": "https://www.cbssports.com/college-football/news/ahmad-hardy-missouri-debut-2026-injury-gunshot-wound-arkansas/",
+      "kind": "football_material",
+      "game_ids": [
+        "401856733"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 569975,
+      "sha256": "e5027086152b316b4b34dce45b61825daa5451810da047f766fd76c56966e409",
+      "response_recovered_by_utc": "2026-10-30T02:16:00.568703+00:00",
+      "http_status": 200,
+      "final_url": "https://www.cbssports.com/college-football/news/ahmad-hardy-missouri-debut-2026-injury-gunshot-wound-arkansas/",
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "ad64c0d1fc49df9791df4761",
+      "url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+      "kind": "market_board",
+      "game_ids": [
+        "401856733",
+        "401856734",
+        "401856735",
+        "401856736",
+        "401856737",
+        "401856842",
+        "401856843",
+        "401856844",
+        "401856845",
+        "401856846",
+        "401856847",
+        "401856848",
+        "401858277",
+        "401858278",
+        "401858279",
+        "401858280",
+        "401858281",
+        "401858282",
+        "401858283",
+        "401858284",
+        "401858501",
+        "401858502",
+        "401858503",
+        "401858504",
+        "401858505",
+        "401858506",
+        "401858507",
+        "401858508",
+        "401858509",
+        "401859185",
+        "401860908",
+        "401860909",
+        "401860910",
+        "401860924",
+        "401861966",
+        "401862812",
+        "401862813",
+        "401862814",
+        "401862815",
+        "401862816",
+        "401864529",
+        "401864530",
+        "401864531",
+        "401866451",
+        "401866452",
+        "401869846",
+        "401869944",
+        "401869963",
+        "401871057",
+        "401871058",
+        "401871059",
+        "401871071",
+        "401871072",
+        "401871095",
+        "401871096",
+        "401871097"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 2576978,
+      "sha256": "2e96a9097351fec76e8683ae5fe48b83314e0c4174db714a6962a85cfdcfc784",
+      "response_recovered_by_utc": "2026-10-30T02:16:01.749467+00:00",
+      "http_status": 200,
+      "final_url": "https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-9/",
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "c005d90c8cd5e19d6981d576",
+      "url": "https://www.kstatesports.com/news/2026/10/26/football-k-state-looks-to-bounce-back-at-colorado",
+      "kind": "football_material",
+      "game_ids": [
+        "401856846"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 907705,
+      "sha256": "db0feae1916f19dc1e009d5daa1f7f64ccf6b7d522e95951315e38a10b5920e7",
+      "response_recovered_by_utc": "2026-10-30T02:16:00.477825+00:00",
+      "http_status": 200,
+      "final_url": "https://www.kstatesports.com/news/2026/10/26/football-k-state-looks-to-bounce-back-at-colorado",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "id": "345ad69d8ffd3de906c08608",
+      "url": "https://www.rotowire.com/cfootball/headlines/blake-barnett-news-ready-to-rock-versus-colorado-237403",
+      "kind": "football_material",
+      "game_ids": [
+        "401856846"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 325849,
+      "sha256": "fc88f3045676174a7798cc5b367d02bd18b31c13b9afd30fb1c19fbcf7d1e81a",
+      "response_recovered_by_utc": "2026-10-30T02:16:01.085414+00:00",
+      "http_status": 200,
+      "final_url": "https://www.rotowire.com/cfootball/headlines/blake-barnett-news-ready-to-rock-versus-colorado-237403",
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "f78f70181a12ad99e522c533",
+      "url": "https://www.wibw.com/2026/10/29/k-state-quarterback-avery-johnson-ruled-out-again-backup-jacob-knuth-doubtful/",
+      "kind": "football_material",
+      "game_ids": [
+        "401856846"
+      ],
+      "status": "FETCHED_UNREVIEWED",
+      "bytes": 168796,
+      "sha256": "284f46af3c7c615b5991e69ce9b03e60ddd56b07c24f6e1b1b51cdce2befa394",
+      "response_recovered_by_utc": "2026-10-30T02:16:00.986637+00:00",
+      "http_status": 200,
+      "final_url": "https://www.wibw.com/2026/10/29/k-state-quarterback-avery-johnson-ruled-out-again-backup-jacob-knuth-doubtful/",
+      "content_type": "text/html; charset=utf-8"
+    }
+  ]
+}
