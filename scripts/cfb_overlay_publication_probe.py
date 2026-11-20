@@ -39,6 +39,13 @@ def reconstruct(repo, manifest):
         raw = base + delta
         if git_blob_sha(raw) != entry["expected_blob"]:
             raise ValueError("reconstruction digest mismatch")
+        import re
+        match = re.fullmatch(r"```cfb-week12-" + surface + r"-v1\\n(.*?)```\\s*", delta.decode("utf-8"), re.S)
+        if match is None:
+            raise ValueError("invalid typed packet framing")
+        packet = json.loads(match.group(1))
+        if (packet.get("cycle_id"), packet.get("as_of_utc")) != (manifest["cycle_id"], manifest["as_of_utc"]):
+            raise ValueError("packet and manifest boundary mismatch")
         outputs[surface] = raw.decode("utf-8")
     return outputs
 
