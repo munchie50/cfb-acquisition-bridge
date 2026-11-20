@@ -1,0 +1,54 @@
+{
+  "schema": "CFB_MONITOR_TERMINAL_CANDIDATE",
+  "timestamp_utc": "2026-11-20T18:59:05.893Z",
+  "correlation_id": "scheduled-20261120-1300-ct-turn11",
+  "trigger": "natural_scheduled",
+  "status": "RUN_INCOMPLETE",
+  "startup_receipt": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261120T185844053Z_scheduled-20261120-1300-ct-turn11.md",
+  "startup_readback_blob": "bd83dde37630cfb5fa268fbb1b449ed225a83e00",
+  "stages": [
+    {
+      "stage": "RUN_STARTED",
+      "outcome": "PASS"
+    },
+    {
+      "stage": "DIRECT_SHELL_PROBE",
+      "outcome": "PASS",
+      "tool": "container.exec",
+      "marker": "CFB_DIRECT_SHELL_STARTED"
+    },
+    {
+      "stage": "COMBINED_SHELL",
+      "outcome": "BLOCKED",
+      "failure_category": "TOOL_NOT_EXPOSED"
+    },
+    {
+      "stage": "GIT_LS_REMOTE",
+      "outcome": "FAILED",
+      "failure_category": "DNS_RESOLUTION",
+      "sanitized_error_excerpt": "Could not resolve host: github.com",
+      "proxy_present": true,
+      "host": "github.com"
+    },
+    {
+      "stage": "HELPER_METADATA",
+      "outcome": "PASS",
+      "blob": "b13930cb714eb87c8dce6136ffab6fbceeb44898"
+    },
+    {
+      "stage": "CHECKOUT",
+      "outcome": "BLOCKED"
+    },
+    {
+      "stage": "LIVE_SIX_MARKET_REVIEW",
+      "outcome": "NOT_EXECUTED"
+    },
+    {
+      "stage": "COMPILER_AND_PUBLICATION",
+      "outcome": "NOT_EXECUTED"
+    }
+  ],
+  "next_action": "Restore Git HTTPS DNS in worker, perform authenticated pinned checkout, then current CBS and full Saturday review and publication; preserve original limits",
+  "classifier_execution": "NOT_RUN",
+  "no_wagers": true
+}
