@@ -9,11 +9,16 @@ EXPECTED='98941e228072e6941b1c33e42d4d8dba570f7182'
 PREVIEW='evidence/operational/CFB_WEEK12_20261120_MANUAL_RENDERED_HOT_SHEET_PREVIEW_NOT_ACCEPTED.md'
 CANON='evidence/operational/CFB_DECISION_WAIT_LEDGER.md'
 CANDIDATE='evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-20_1545CT.md'
-def run(repo):
+def run(repo, blob_dir=None):
     sys.path.insert(0,str(repo/'scripts'))
     from cfb_overlay_publication_probe import checked_blob,git_blob_sha
     from cfb_hot_sheet_current_decision_binding_gate import audit,publication,blob
-    base,delta=checked_blob(repo,BASE),checked_blob(repo,DELTA)
+    if blob_dir is None:
+        base,delta=checked_blob(repo,BASE),checked_blob(repo,DELTA)
+    else:
+        # Connector-staged immutable UTF-8 blobs: no git, DNS, or checkout required.
+        base,delta=(blob_dir/BASE).read_bytes(),(blob_dir/DELTA).read_bytes()
+        assert git_blob_sha(base)==BASE and git_blob_sha(delta)==DELTA,'staged blob identity mismatch'
     raw=base+delta
     assert git_blob_sha(raw)==EXPECTED,'actual decision ledger mismatch'
     ledger=raw.decode('utf-8')
@@ -50,5 +55,6 @@ def run(repo):
 if __name__=='__main__':
     p=argparse.ArgumentParser()
     p.add_argument('--repo',type=Path,default=Path('.'))
+    p.add_argument('--blob-dir',type=Path,help='Offline connector-staged immutable Git blob files named by SHA')
     args=p.parse_args()
-    run(args.repo.resolve())
+    run(args.repo.resolve(),args.blob_dir.resolve() if args.blob_dir else None)
