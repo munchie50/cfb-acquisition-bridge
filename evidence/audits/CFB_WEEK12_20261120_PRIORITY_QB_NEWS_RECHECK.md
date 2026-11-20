@@ -1,0 +1,13 @@
+# Week12 manual catch-up — priority quarterback and Friday injury report recheck
+
+STATUS: BOUNDED MATERIAL-NEWS RECHECK; NO NEW PRODUCTION DECISION, OFFER, OR WAGER.
+
+Source chronology (external, verify official original before acceptance):
+
+1. Ohio State @ Nebraska, Nov21: Nov20 Friday injury report reproduced at https://www.carrikerchronicles.com/depth-charts-nebraska-ohio-state shows Ohio State QB Julian Sayin OUT, RB Ja'Kobi Jackson OUT, and Nebraska LB Owen Chambliss and DL Jahsear Whittington OUT, among additional unavailable players. Independent Ohio State reporting https://www.elevenwarriors.com/ohio-state-football/2026/11/165548/ohio-state-injury-report-luke-montgomery-cleared-to-return-vs-nebraska-phillip-daniels-and-brock-boyd-questionable also confirms Sayin OUT; Thursday/Friday statuses can change. Source https://kickoffstatus.com/teams/ohio-state/ records Brock Boyd available in later snapshot, whereas earlier report has him questionable: retain revision distinction, not a conflict falsely 'resolved' by inference. Frozen home Nebraska -4.9, CBS home Nebraska +3.5, total frozen54.5/CBS41.5. The material QB absence and Nebraska defensive absences are known research facts but are not quantified as an adjustment or assumed unknown to market.
+
+2. Arizona @ Kansas State, Nov21: Nov19 published https://sports.yahoo.com/articles/kansas-state-football-vs-arizona-030235258.html reports K-State QBs Avery Johnson and Jacob Knuth OUT, Dillon Duff likely to start second consecutive game; Arizona RB Ismail Mahdi OUT, six Arizona players QUESTIONABLE. This report says subsequent Thu/Fri and pregame updates are due; this source alone cannot certify latest Friday status. Frozen home Kansas State -13.8, CBS home +7.5. The 21.3-point frozen/market difference must not be converted to a K-State wager without verifying original model timing, QB absences, current official report and actual book quote.
+
+3. Source quality: https://www.covers.com/sport/football/ncaaf/matchup/378961 lists older October injury updates and is not sufficient for Friday clearance. https://linesmart.app/ncaaf/games/ohio-state-buckeyes-at-nebraska-cornhuskers-2026-11-21/ describes a named Hard Rock Bet Ohio State -4.5 market reference at 2026-11-20 08:15 ET, but this is third-party historical display, not authenticated currently executable sportsbook offer; it cannot pass venue execution gate.
+
+Disposition: Both games MATERIAL_RECHECK_REQUIRED / BOOK_QUOTE_UNVERIFIED / NO_NEW_APPROVAL. Do not overwrite original frozen numbers or prior Decision/WAIT ledger. Follow up other 11 favorite-direction disagreements, time-qualified source, official Friday injury report, and accepted champion v1 review. Friday 13CT deadline not certified.
