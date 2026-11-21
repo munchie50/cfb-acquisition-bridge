@@ -68,7 +68,7 @@ def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_in
     sheet_text = loader(path)
     # Inspect the bounded publication header, not only its first line: a
     # title or blank line must not conceal a later explicit rejection marker.
-    header = '\\n'.join(sheet_text.splitlines()[:20]).upper()
+    header = '\n'.join(sheet_text.splitlines()[:20]).upper()
     provisional_markers = ('NONCANONICAL', 'NOT ACCEPTED', 'NOT_ACCEPTED', 'NO ACTIONABLE WAGERS')
     if any(marker in header for marker in provisional_markers):
         raise ValueError('explicitly provisional current sheet cannot pass canonical QA readback')
