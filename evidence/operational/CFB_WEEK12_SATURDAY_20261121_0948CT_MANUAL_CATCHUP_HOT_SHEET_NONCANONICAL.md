@@ -2,6 +2,32 @@
 
 **STATUS: UPDATED MANUAL TRIAGE / NOT CANONICAL / NOT EXECUTABLE.** Freshness refers to the November 21 reconciliation and explicit as-of cutoff classification, **not** to fresh sportsbook quotes, current injury news, or newly accepted engine decisions. No executable wagers or parlays are authorized by this document. The last source-derived quotes are from the November 19 mixed-book fallback; those stale quotes are intentionally **not reproduced** as current lines.
 
+## Latest decision desk — Nov21 continuation (supersedes the 09:48 audit summary only)
+
+**CASINO-READY PICKS: ZERO.** The 09:48 label in this document is the *baseline snapshot*, not the update time of all subsequent research. Later findings are separately dated below. There is no completed Saturday production selector run, qualified local executable six-side offer, or canonical Hot Sheet promotion. The 58-game frozen slate is complete, not a certified betting slate. **Do not place wagers based on this provisional sheet.**
+
+### Material watchlist (NOT ranked bets)
+
+| Saved kickoff CT | Game | FIRST_FROZEN reference | Material issue requiring decision review | Current status |
+|---|---|---|---|---|
+| 1:30 PM | Iowa @ Illinois | Iowa -1.2 | Public Iowa -8.5; large margin discrepancy; operator freshness/venue unresolved | HOLD |
+| 2:30 PM | LSU @ Tennessee | Tennessee -9.6 | Public LSU -1.5 reverses favorite; Tennessee QB starter not verified, other absences | HOLD |
+| 2:30 PM | Texas Tech @ Baylor | Baylor -8.1 | Public Texas Tech -5.5 reverses favorite; Castellanos available, other absences unresolved | HOLD |
+| 2:30 PM | UCLA @ Michigan | Michigan -3.0 | Public UCLA -3.5 reverses favorite; market quote not certified | HOLD |
+| 6:00 PM | Arizona @ Kansas State | Kansas State -13.8 | Public Arizona -7.5 reverses favorite; market quote not certified | HOLD |
+| 8:00 PM | Utah @ TCU | Utah -2.2 | Official 8PM CT kickoff confirmed; historical six-side DK/FD public quotes found, not current executable | HOLD |
+
+**Do not mistake this watchlist for confidence ranking or bet recommendations.** Prices above are source-reported indicative spreads from separate clocks/operators, not current local executable offers. Other games remain in the full 58-game table; these six are highlighted solely for material contradiction triage. For evidence and sources see [Nov21 targeted decision audit](CFB_WEEK12_SATURDAY_20261121_0952CT_DECISION_TRIAGE_DELTA_NONCANONICAL.md).
+
+### Exact remaining execution gates
+
+1. Confirm original decision cutoff for each still-open game; close expired windows rather than extending them.
+2. Confirm authoritative kickoff, QB/roster availability and locally executable sportsbook's *current same-book* spread, moneyline and total with offer clock.
+3. Apply the unchanged approved champion selector and read back decision output; do not turn a large frozen-market gap into an automatic wager.
+4. Publish accepted canonical Hot Sheet and independently read back only if original authority and binding checks pass. If not, remain RUN_INCOMPLETE and zero authorized picks.
+
+**Drift fixed in this view:** Previously the latest personnel and cross-slate contradiction work was saved in a separate delta, leaving the top of the primary Hot Sheet stale and easy to misread as ready. This section reconciles that delta without changing the original 58 rows, frozen numbers, exclusions, or cutoffs.
+
 ## Saturday next-up and deadlines
 - Local audit time: 2026-11-21 09:48 CT. Original saved kickoffs are RETAINED_UNVERIFIED and require independent live confirmation before any action.
 - 58 Saturday obligations: 46 FIRST_FROZEN numeric and 12 originally excluded; 16 saved early games through noon CT, 4 saved at 1 PM CT, 38 later. The original 70-game weekly obligation remains unchanged.
