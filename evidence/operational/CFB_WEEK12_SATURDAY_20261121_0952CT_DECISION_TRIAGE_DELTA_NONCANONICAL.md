@@ -55,7 +55,7 @@ Readback of the 58-game retained FIRST_FROZEN rows identifies **four** numeric o
 
 | Game | Frozen predicted spread favorite | Frozen home-win probability | Classification |
 |---|---|---:|---|
-| Houston @ West Virginia | Houston -0.1 | 0.503 (West Virginia slight win favorite) | NEAR_ZERO_THRESHOLD |
+| Houston @ West Virginia | Houston -0.5 | 0.503 (West Virginia slight win favorite) | NEAR_ZERO_THRESHOLD |
 | Iowa @ Illinois | Iowa -1.2 | 0.529 (Illinois slight win favorite) | DIRECTION_MISMATCH |
 | Georgia Southern @ Troy | Troy -2.1 | 0.493 (Georgia Southern slight win favorite) | DIRECTION_MISMATCH |
 | Arkansas State @ Louisiana Tech | Louisiana Tech -0.4 | 0.494 (Arkansas State slight win favorite) | NEAR_ZERO_THRESHOLD |
