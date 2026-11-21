@@ -76,9 +76,9 @@ def analyze(data):
                 category = "QUOTE_UNAVAILABLE_NOT_GRADED"
             elif state in {"SPECIFIC_RECHECK", "RESEARCH_LEAN"}:
                 category = "ANALYTICAL_RECHECK_NOT_CANONICAL_DECISION"
-            elif state.startswith("PASS_"):
+            elif state == "PASS_CURRENT_REVIEW":
                 category = "ANALYTICAL_PASS_NOT_CANONICAL_DECISION"
-            elif state.startswith("ANALYTICAL_"):
+            elif state in {"ANALYTICAL_CONDITIONAL", "ANALYTICAL_CONDITIONAL_PROPOSAL"}:
                 category = "ANALYTICAL_PROPOSAL_NOT_CANONICAL_DECISION"
             elif state == "INCONCLUSIVE":
                 category = "UNRESOLVED"
