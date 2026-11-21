@@ -1,0 +1,39 @@
+{
+  "schema": "CFB_WEEK12_PARLAY_CURRENT_CANONICAL_INPUT_COVERAGE_V1",
+  "observed_utc": "2026-11-20",
+  "scope": "READ_ONLY_CANONICAL_INPUT_COVERAGE_NOT_ORIGINAL_PYTHON_EXECUTION_NOT_PRODUCTION",
+  "source": {
+    "path": "evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-19_1338CT.md",
+    "blob_sha": "4c8ebeb5dd95b7ea7309f45a9275f7509a198905",
+    "publication_boundary": "2026-11-19T19:38:09.145027+00:00"
+  },
+  "observations": {
+    "canonical_primary_section": "NONE — no open neutral decisions",
+    "canonical_decision_summary": "0 INCONCLUSIVE; 68 PASS; 2 CONDITIONAL; venue confirmation separate",
+    "authentic_ranked_leg_list_present": false,
+    "qualified_combined_book_offers_documented_in_selected_sheet": false,
+    "rank_depth_qualified_from_selected_sheet": 0,
+    "offers_qualified_from_selected_sheet": 0
+  },
+  "matrix_input_gate": {
+    "status": "BLOCKED_MISSING_AUTHENTIC_RANKED_LEGS_AND_COMBINED_OFFERS",
+    "depths": [
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "leg_counts": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "cells_requiring_research": 20,
+    "original_python_evaluator_executed": false,
+    "reason": "No authoritative current Week12 ranked parlay legs and combined book offers in selected canonical Hot Sheet; PASS and mixed-book displays cannot be promoted to ranked legs or executable parlay quotes."
+  },
+  "next_action": "At next current-week Market Monitor review freeze authentic ranked selections with exact directed game IDs, market/side/line, cutoff and kickoff, record qualified same-build book quotes, execute original scripts/cfb_parlay_matrix.py, persist exact output and independently read back; do not fabricate missing ranks or claim a priced parlay.",
+  "acceptance": "NOT_ACCEPTED_NOT_ACTIONABLE"
+}
