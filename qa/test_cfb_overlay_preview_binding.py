@@ -105,6 +105,29 @@ class OverlayBindingTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "packet rows must be a list"):
                 probe.reconstruct(None, manifest)
 
+    def test_cli_sheet_option_invokes_paired_consumer(self):
+        import json
+        from tempfile import TemporaryDirectory
+        with TemporaryDirectory() as td:
+            root = Path(td)
+            manifest = root / "manifest.json"
+            lineage = root / "lineage.md"
+            sheet = root / "preview.md"
+            manifest.write_text(json.dumps({"cycle_id": "cycle", "as_of_utc": "2026-11-21T15:00:00Z"}))
+            lineage.write_text("lineage")
+            sheet.write_text("preview")
+            argv = ["probe", "--repo", td, "--manifest", str(manifest),
+                    "--lineage", str(lineage), "--sheet", str(sheet)]
+            with patch.object(sys, "argv", argv):
+                with patch.object(probe, "inspect_pair", return_value={
+                        "status": "READ_ONLY_VERIFIED_PREVIEW", "production_acceptance": False}) as paired:
+                    with patch("builtins.print") as printed:
+                        probe.main()
+            paired.assert_called_once_with(root, json.loads(manifest.read_text()),
+                                           "preview", "lineage")
+            self.assertFalse(json.loads(printed.call_args.args[0])["production_acceptance"])
+
+
 
 if __name__ == "__main__":
     unittest.main()
