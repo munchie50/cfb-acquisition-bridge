@@ -35,7 +35,7 @@ def verify(root, input_file, as_of):
     result["provenance_scope"] = "LOCAL_GIT_BLOB_IDENTITY_ONLY_NOT_UPSTREAM_CERTIFICATION"
     result["status"] = "INCOMPLETE" if errors or not rows else "UNVERIFIED_SOURCE_ATTESTATION"
     result["eligible_for_production_learning"] = False
-    result["verified_market_rows"] = checked_market - sum("row " in e for e in errors)
+    result["market_rows_examined"] = checked_market
     return result
 
 def main():
