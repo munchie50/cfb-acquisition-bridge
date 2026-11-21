@@ -30,6 +30,10 @@ def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_in
     canonical = [p for p in pointers if p["path"] == LEDGER]
     if len(current) != 1 or len(canonical) != 1:
         raise ValueError("exactly one current sheet and canonical ledger pointer required")
+    if current[0]["blob"] != expected_sheet:
+        raise ValueError('selected sheet pointer differs from pinned repository snapshot')
+    if canonical[0]["blob"] != expected_ledger:
+        raise ValueError('selected ledger pointer differs from pinned repository snapshot')
     if canonical[0]["blob"] != blob(ledger):
         raise ValueError("actual canonical ledger bytes differ from index pointer")
     path = current[0]["path"]
@@ -48,12 +52,15 @@ def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_in
     print(json.dumps({
         "status": "QA_ACTUAL_CANONICAL_SELECTOR_BINDING_ONLY_NOT_PRODUCTION",
         "index_blob": nav["index_blob"],
+        "navigation_age_seconds": nav["age_seconds"],
+        "navigation_scope": nav["status"],
         "ledger_blob": blob(ledger),
         "sheet_path": result["sheet_path"],
         "sheet_blob": result["sheet_blob"],
         "verdict": result["verdict"],
         "limitations": [
             "Expected blob SHA values must be sourced from the same verified remote commit; this script cannot prove remote commit provenance",
+            "Navigation age is reported, not a freshness certification",
             "No market/source freshness, offer qualification, scheduled-run, or betting acceptance",
         ],
     }, indent=2))
