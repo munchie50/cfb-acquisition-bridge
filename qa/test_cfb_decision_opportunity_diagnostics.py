@@ -73,6 +73,13 @@ class DecisionDiagnosticsTests(unittest.TestCase):
         self.assertEqual(out["missing_market_slots"], 6)
         self.assertEqual(out["reviewed_nonconflicted_market_slots"], 0)
 
+    def test_unknown_prefix_statuses_are_not_reviewed(self):
+        out = analyze(review([{"game_id": "11", "six_markets": {
+            "over": {"state": "PASS_FUTURE_UNVERIFIED"},
+            "under": {"analytical_status": "ANALYTICAL_FUTURE_UNVERIFIED"}}}]))
+        self.assertEqual(out["unclassified_market_slots"], 2)
+        self.assertEqual(out["reviewed_nonconflicted_market_slots"], 0)
+
     def test_unrecognized_market_state_does_not_inflate_coverage(self):
         out = analyze(review([{"game_id": "9", "six_markets": {"over": {"state": "NOT_A_DECISION", "reason": "unknown"}}}]))
         self.assertEqual(out["unclassified_market_slots"], 1)
