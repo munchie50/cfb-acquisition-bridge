@@ -1,0 +1,84 @@
+# Week12 Saturday full 58-game decision-reference companion — NONCANONICAL
+
+Source: evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-19_1338CT.md; verified source blob `4c8ebeb5dd95b7ea7309f45a9275f7509a198905`. Prepared Nov20 evening CT. **Historical display only. NOT current sportsbook offers, accepted current six-market review, new predictions, executable picks or canonical publication.** Every quoted number below is the Nov19 CBS multi-book mixed fallback, not a verified same-book executable pair. Source observation clock recovered Nov19, actual bookmaker update clocks UNKNOWN, venue/jurisdiction qualification UNVERIFIED. Saved kickoffs are mostly RETAINED_UNVERIFIED. Original model frozen; do not update it from displayed lines. The full 70-game Week12 obligation is not reduced by this Saturday subset.
+
+**Coverage:** 58 Saturday rows = 46 numeric FIRST_FROZEN + 12 original FIRST_FROZEN EXCLUDED. Morning 16 = 11 numeric + 5 excluded; later 42 = 35 numeric + 7 excluded. Historical row extraction 58/58; fresh qualified six-market reviews 0/58 in this supplement. All original exclusions remain coverage obligations but are not prediction-backed wagers. No fresh recommendation authorized.
+
+## Early (through noon CT) — 16 games
+
+| Saved kickoff CT | Matchup | Frozen original | Historical CBS mixed-book display (NOT executable) | Eligibility / attention |
+|---|---|---|---|---|
+| Sat Nov 21 11:00 AM CT | Vanderbilt @ Florida | FIRST_FROZEN: Florida -15.3 / 56.5 / 0.822 home | away 13.5 -108, ML +400; home -12.5 -120, ML -521; o46.5 -108 / u46.5 -110 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 11:00 AM CT | Wofford @ Ole Miss | FIRST_FROZEN: Ole Miss -23.5 / 52.3 / 0.907 home | away 49.5 -110, ML +7000; home -48.5 -120, ML -100000; o60.5 -110 / u60.5 -110 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 11:00 AM CT | BYU @ Kansas | FIRST_FROZEN: BYU -6.4 / 52.7 / 0.331 home | away -5.5 -111, ML -225; home 5.5 -105, ML +188; o47.5 -105 / u47.5 -112 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 11:00 AM CT | Colorado @ Cincinnati | FIRST_FROZEN: Cincinnati -14.4 / 52.2 / 0.824 home | away 3 -105, ML +136; home -2.5 -120, ML -150; o57.5 -115 / u58.5 -116 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 11:00 AM CT | Syracuse @ Boston College | FIRST_FROZEN: Syracuse -0.9 / 47.8 / 0.455 home | away -2.5 -112, ML -135; home 2.5 -104, ML +115; o50.5 -114 / u50.5 -105 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 11:00 AM CT | Wake Forest @ Georgia Tech | FIRST_FROZEN: Georgia Tech -5.5 / 54.9 / 0.625 home | away -20.5 -108, ML -1429; home 20.5 -110, ML +950; o55.5 -115 / u56.5 -115 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 11:00 AM CT | Northwestern @ Minnesota | FIRST_FROZEN EXCLUDED — away_prior_points_missing | away -2.5 -110, ML -134; home 2.5 -108, ML +115; o41.5 -108 / u41.5 -110 | EXCLUDED — preserve reason |
+| Sat Nov 21 11:00 AM CT | Ohio State @ Nebraska | FIRST_FROZEN: Nebraska -4.9 / 54.5 / 0.596 home | away -3.5 -105, ML -166; home 3.5 -114, ML +140; o41.5 -105 / u41.5 -110 | NUMERIC FROZEN — fresh review required; 07:00 CT cutoff collision / authority UNVERIFIED |
+| Sat Nov 21 11:00 AM CT | Wisconsin @ Purdue | FIRST_FROZEN: Wisconsin -2.6 / 58.4 / 0.426 home | away -5.5 -115, ML -210; home 6 -108, ML +190; o46.5 -106 / u46.5 -111 | NUMERIC FROZEN — fresh review required; material QB change |
+| Sat Nov 21 11:00 AM CT | East Carolina @ Army | FIRST_FROZEN EXCLUDED — home_prior_pbp_missing | away 6.5 -111, ML +195; home -5.5 -124, ML -230; o45.5 -110 / u46.5 -111 | EXCLUDED — preserve reason |
+| Sat Nov 21 11:00 AM CT | Memphis @ Navy | FIRST_FROZEN EXCLUDED — home_prior_points_missing | away -2.5 -120, ML -147; home 3 -118, ML +125; o66.5 -115 / u67.5 -111 | EXCLUDED — preserve reason |
+| Sat Nov 21 11:00 AM CT | North Texas @ Tulane | FIRST_FROZEN: Tulane -2.6 / 53.4 / 0.524 home | away -6.5 -108, ML -238; home 6.5 -111, ML +195; o55.5 -108 / u55.5 -105 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 11:30 AM CT | North Carolina @ Virginia | FIRST_FROZEN: Virginia -7.2 / 46.2 / 0.668 home | away 1.5 -108, ML +100; home -1.5 -110, ML -118; o43.5 -110 / u43.5 -108 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 12:00 PM CT | Tennessee Tech @ Mississippi State | FIRST_FROZEN EXCLUDED — away_opening_no_prior | away 35.5 -110, ML +2000; home -34.5 -110, ML -7692; o59.5 -110 / u60.5 -110 | EXCLUDED — preserve reason |
+| Sat Nov 21 12:00 PM CT | Houston @ West Virginia | FIRST_FROZEN: Houston -0.5 / 54.7 / 0.503 home | away -7.5 -115, ML -310; home 8 -111, ML +250; o70.5 -108 / u70.5 -112 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 12:00 PM CT | Western Kentucky @ Liberty | FIRST_FROZEN EXCLUDED — home_prior_pbp_missing | away 17.5 -118, ML +600; home -16.5 -120, ML -833; o52.5 -116 / u53.5 -111 | EXCLUDED — preserve reason |
+
+## Afternoon and evening — 42 games
+
+| Saved kickoff CT | Matchup | Frozen original | Historical CBS mixed-book display (NOT executable) | Eligibility / attention |
+|---|---|---|---|---|
+| Sat Nov 21 1:00 PM CT | Chattanooga @ Alabama | FIRST_FROZEN EXCLUDED — away_opening_no_prior | away 49.5 -110, ML +7000; home -48.5 -115, ML -100000; o57.5 -114 / u58.5 -110 | EXCLUDED — preserve reason |
+| Sat Nov 21 1:00 PM CT | Charlotte @ Tulsa | FIRST_FROZEN: Tulsa -20.4 / 51.4 / 0.876 home | away 22.5 -108, ML +1200; home -22.5 -110, ML -2000; o52.5 -105 / u52.5 -114 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 1:00 PM CT | Missouri State @ Jacksonville State | FIRST_FROZEN: Jacksonville State -7.9 / 52.2 / 0.715 home | away 10.5 -108, ML +333; home -10.5 -110, ML -410; o52.5 -110 / u52.5 -108 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 1:00 PM CT | Middle Tennessee @ Sam Houston | FIRST_FROZEN: Sam Houston -13.7 / 48.0 / 0.766 home | away -5.5 -112, ML -215; home 6 -108, ML +180; o47.5 -115 / u48.5 -115 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 1:30 PM CT | Iowa @ Illinois | FIRST_FROZEN: Iowa -1.2 / 48.4 / 0.529 home | away -8.5 -110, ML -325; home 9 -108, ML +290; o40.5 -108 / u40.5 -102 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 1:30 PM CT | South Florida @ Florida Atlantic | FIRST_FROZEN: South Florida -12.7 / 52.9 / 0.211 home | away -1 -105, ML -110; home 1.5 -112, ML -105; o64.5 -108 / u64.5 -110 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 1:30 PM CT | UL Monroe @ App State | FIRST_FROZEN: App State -24.5 / 55.7 / 0.916 home | away 13.5 -104, ML +455; home -13.5 -114, ML -581; o49.5 -114 / u50.5 -115 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 2:00 PM CT | Coastal Carolina @ Louisiana | FIRST_FROZEN EXCLUDED — away_prior_pbp_missing | away 10.5 -115, ML +320; home -10 -114, ML -395; o50.5 -105 / u50.5 -108 | EXCLUDED — preserve reason |
+| Sat Nov 21 2:00 PM CT | Delaware @ New Mexico State | FIRST_FROZEN: Delaware -0.1 / 51.7 / 0.471 home | away -3 -115, ML -150; home 3.5 -122, ML +140; o54.5 -110 / u54.5 -108 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 2:00 PM CT | Florida International @ Kennesaw State | FIRST_FROZEN: Kennesaw State -3.5 / 46.0 / 0.574 home | away 3.5 -112, ML +138; home -3.5 -105, ML -162; o44.5 -110 / u44.5 -108 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 2:30 PM CT | Samford @ Auburn | FIRST_FROZEN EXCLUDED — away_opening_no_prior | away 48.5 -110, ML +7000; home -48.5 -110, ML -100000; o59.5 -110 / u59.5 -110 | EXCLUDED — preserve reason |
+| Sat Nov 21 2:30 PM CT | LSU @ Tennessee | FIRST_FROZEN: Tennessee -9.6 / 53.8 / 0.734 home | away -1 -108, ML -111; home 1.5 -115, ML -105; o45.5 -110 / u45.5 -108 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 2:30 PM CT | Arkansas @ Texas | FIRST_FROZEN: Texas -21.2 / 48.0 / 0.879 home | away 20.5 -108, ML +950; home -20.5 -110, ML -1429; o47.5 -108 / u47.5 -108 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 2:30 PM CT | Texas Tech @ Baylor | FIRST_FROZEN: Baylor -8.1 / 50.5 / 0.656 home | away -3.5 -110, ML -170; home 3.5 -108, ML +145; o55.5 -110 / u55.5 -108 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 2:30 PM CT | NC State @ Florida State | FIRST_FROZEN: NC State -4.4 / 57.0 / 0.400 home | away 10.5 -112, ML +320; home -10 -114, ML -395; o56.5 -108 / u56.5 -108 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 2:30 PM CT | UCLA @ Michigan | FIRST_FROZEN: Michigan -3.0 / 47.3 / 0.596 home | away -3.5 -105, ML -170; home 3.5 -112, ML +145; o37.5 -105 / u37.5 -110 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 2:30 PM CT | Rutgers @ Penn State | FIRST_FROZEN EXCLUDED — away_prior_points_missing | away 25.5 -110, ML +1400; home -25.5 -110, ML -2778; o49.5 -106 / u49.5 -112 | EXCLUDED — preserve reason; QB uncertainty |
+| Sat Nov 21 2:30 PM CT | Indiana @ Washington | FIRST_FROZEN EXCLUDED — away_prior_points_missing | away -7.5 -108, ML -295; home 7.5 -110, ML +250; o43.5 -115 / u43.5 -104 | EXCLUDED — preserve reason |
+| Sat Nov 21 2:30 PM CT | Old Dominion @ UConn | FIRST_FROZEN: UConn -11.9 / 49.9 / 0.784 home | away 13.5 -105, ML +425; home -13.5 -110, ML -521; o47.5 -108 / u47.5 -110 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 2:45 PM CT | Texas A&M @ Oklahoma | FIRST_FROZEN: Oklahoma -8.9 / 40.1 / 0.675 home | away 7.5 -114, ML +250; home -7.5 -105, ML -294; o38.5 -108 / u38.5 -110 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 3:00 PM CT | Northern Illinois @ North Dakota State | FIRST_FROZEN: North Dakota State -22.3 / 46.0 / 0.887 home | away 25.5 -115, ML +1550; home -24.5 -115, ML -2857; o43.5 -111 / u43.5 -105 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 3:00 PM CT | Georgia Southern @ Troy | FIRST_FROZEN: Troy -2.1 / 40.3 / 0.493 home | away -9 -108, ML -334; home 9.5 -110, ML +280; o48.5 -108 / u48.5 -110 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 3:00 PM CT | Georgia State @ Marshall | FIRST_FROZEN: Georgia State -10.3 / 52.5 / 0.259 home | away 2.5 -108, ML +110; home -2 -111, ML -130; o55.5 -106 / u55.5 -111 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 3:00 PM CT | South Alabama @ Southern Miss | FIRST_FROZEN: Southern Miss -2.0 / 52.7 / 0.586 home | away -3.5 -112, ML -185; home 4 -111, ML +155; o66.5 -108 / u66.5 -110 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 5:00 PM CT | Washington State @ Texas State | FIRST_FROZEN: Texas State -0.1 / 53.5 / 0.508 home | away 12.5 -108, ML +375; home -12.5 -110, ML -465; o62.5 -105 / u62.5 -111 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 5:15 PM CT | Maryland @ USC | FIRST_FROZEN: USC -1.6 / 56.0 / 0.541 home | away 17.5 -110, ML +650; home -17.5 -108, ML -901; o57.5 -108 / u57.5 -110 | NUMERIC FROZEN — fresh review required; 07:00 CT cutoff collision / authority UNVERIFIED |
+| Sat Nov 21 6:00 PM CT | Arizona @ Kansas State | FIRST_FROZEN: Kansas State -13.8 / 49.8 / 0.779 home | away -7 -110, ML -286; home 7.5 -120, ML +240; o52.5 -105 / u52.5 -110 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 6:00 PM CT | Virginia Tech @ Miami | FIRST_FROZEN: Miami -12.0 / 55.4 / 0.764 home | away 20.5 -108, ML +900; home -20.5 -110, ML -1408; o60.5 -115 / u61.5 -114 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 6:00 PM CT | UNLV @ San José State | FIRST_FROZEN: San José State -6.5 / 48.6 / 0.667 home | away -6.5 -118, ML -255; home 7 -115, ML +210; o46.5 -110 / u46.5 -108 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 6:00 PM CT | Arkansas State @ Louisiana Tech | FIRST_FROZEN: Louisiana Tech -0.4 / 52.8 / 0.494 home | away 14.5 -114, ML +470; home -14 -111, ML -575; o53.5 -112 / u54.5 -104 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 6:30 PM CT | Kentucky @ Missouri | FIRST_FROZEN: Missouri -8.1 / 52.8 / 0.678 home | away 5.5 -110, ML +172; home -4.5 -115, ML -204; o48.5 -108 / u48.5 -110 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 6:30 PM CT | Georgia @ South Carolina | FIRST_FROZEN: Georgia -3.2 / 59.6 / 0.403 home | away -14.5 -112, ML -709; home 15 -111, ML +525; o51.5 -105 / u51.5 -106 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 6:30 PM CT | Pittsburgh @ Louisville | FIRST_FROZEN: Louisville -4.7 / 55.1 / 0.633 home | away 13.5 -105, ML +460; home -13.5 -112, ML -556; o50.5 -105 / u50.5 -112 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 6:30 PM CT | SMU @ Notre Dame | FIRST_FROZEN: Notre Dame -11.6 / 51.0 / 0.769 home | away 20.5 -105, ML +950; home -20.5 -110, ML -1429; o56.5 -108 / u56.5 -108 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 6:30 PM CT | Stanford @ California | FIRST_FROZEN EXCLUDED — home_prior_points_missing | away -2.5 -108, ML -130; home 2.5 -110, ML +112; o55.5 -111 / u56.5 -112 | EXCLUDED — preserve reason |
+| Sat Nov 21 6:30 PM CT | Colorado State @ Fresno State | FIRST_FROZEN: Fresno State -3.8 / 51.5 / 0.584 home | away 20.5 -115, ML +850; home -20 -111, ML -1250; o65.5 -118 / u66.5 -118 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 7:00 PM CT | UTSA @ UAB | FIRST_FROZEN EXCLUDED — home_prior_points_missing | away -6.5 -106, ML -215; home 6.5 -108, ML +200; o51.5 -108 / u51.5 -110 | EXCLUDED — preserve reason |
+| Sat Nov 21 8:00 PM CT | Utah @ TCU | FIRST_FROZEN: Utah -2.2 / 49.5 / 0.445 home | away -7 -111, ML -270; home 7 -108, ML +220; o45.5 -111 / u46.5 -112 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 8:30 PM CT | San Diego State @ Boise State | FIRST_FROZEN: Boise State -10.9 / 51.2 / 0.752 home | away 17.5 -110, ML +640; home -17 -108, ML -833; o60.5 -108 / u60.5 -110 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 9:15 PM CT | Oklahoma State @ Arizona State | FIRST_FROZEN: Oklahoma State -0.1 / 52.9 / 0.490 home | away -2.5 -112, ML -138; home 2.5 -105, ML +120; o59.5 -111 / u59.5 -105 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 9:30 PM CT | Utah State @ Oregon State | FIRST_FROZEN: Oregon State -11.4 / 52.0 / 0.724 home | away 9.5 -112, ML +280; home -9 -108, ML -334; o50.5 -108 / u50.5 -105 | NUMERIC FROZEN — fresh review required |
+| Sat Nov 21 9:30 PM CT | Hawai'i @ Nevada | FIRST_FROZEN: Nevada -10.1 / 47.8 / 0.715 home | away 5 -111, ML +172; home -4.5 -112, ML -204; o40.5 -110 / u40.5 -108 | NUMERIC FROZEN — fresh review required |
+
+## No-bet and execution controls
+
+- **Ohio State @ Nebraska and Maryland @ USC:** both retained original 2026-11-21T13:00:00Z (07:00 CT) planning cutoff, authority UNVERIFIED. Scheduled 07:00 startup is not pre-cutoff publication. No revival of historical Nebraska +3.5/-120 or Maryland +17.5/-115.
+- **Wisconsin @ Purdue:** Friday material QB change; prior PASS cannot be renewed without full fresh material review.
+- **Rutgers @ Penn State:** original FIRST_FROZEN EXCLUDED, not eligible for numeric frozen-based recommendation; QB uncertainty additionally unresolved.
+- No quote in this file is qualified for wagering. Before any recommendation: verify official kickoff/game ID, original cutoff authority, actual named venue and jurisdiction, current bookmaker update clock, current material news, six-market decision_rows, unchanged frozen threshold, compiler/selector, accepted canonical Hot Sheet and independent readback. Preserve Friday 13:00 CT missed deadline as missed. Do not infer new bets from historical 68 PASS/2 conditional labels.
+
+## Extraction QA
+
+Expected 58 Saturday rows, 16 early and 42 later; 46 numeric and 12 excluded. Each row must have a recovered Nov19 market display. No duplicates, no blank market cells, and no numeric frozen prediction invented for excluded rows. The 16-game early companion remains a narrower convenience view, not a different source of truth.
