@@ -50,6 +50,38 @@ def reconstruct(repo, manifest):
     return outputs
 
 
+
+def inspect_binding(repo, manifest, sheet):
+    """Inspect exact overlay-to-sheet binding without granting publication authority.
+
+    The existing audit deliberately rejects explicitly provisional previews.
+    Report that gate separately from immutable decision-byte identity.
+    """
+    outputs = reconstruct(repo, manifest)
+    from cfb_hot_sheet_current_decision_binding_gate import audit, blob
+    declared = []
+    for line in sheet.splitlines():
+        if "Canonical inputs:" in line:
+            import re
+            declared.extend(re.findall(r"decision ([0-9a-f]{40})", line))
+    if len(declared) != 1:
+        raise ValueError("unique sheet decision declaration required")
+    expected = blob(outputs["decision"])
+    if declared[0] != expected:
+        raise ValueError("sheet declaration differs from reconstructed decision")
+    try:
+        result = audit(sheet, outputs["decision"])
+    except ValueError as exc:
+        if "explicitly provisional publication" not in str(exc):
+            raise
+        return {"status": "OVERLAY_BYTES_MATCH_PREVIEW_ONLY",
+                "decision_blob": expected, "canonical_binding": "REJECTED_PROVISIONAL",
+                "production_acceptance": False, "canonical_mutation": False}
+    return {"status": "OVERLAY_BYTES_MATCH_NONPROVISIONAL_UNPUBLISHED",
+            "decision_blob": expected, "canonical_binding": result["verdict"],
+            "production_acceptance": False, "canonical_mutation": False}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--repo", type=Path, required=True)
