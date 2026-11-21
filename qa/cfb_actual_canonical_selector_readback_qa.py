@@ -19,6 +19,10 @@ def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_in
     for p in (index_path, ledger_path):
         if not p.is_relative_to(root):
             raise ValueError('input file escapes pinned repository root')
+    if index_path != root / 'evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_295.md':
+        raise ValueError('index input must be the pinned canonical recovery index path')
+    if ledger_path != root / 'evidence/operational/CFB_DECISION_WAIT_LEDGER.md':
+        raise ValueError('ledger input must be the canonical decision ledger path')
     index = index_path.read_bytes().decode("utf-8")
     ledger = ledger_path.read_bytes().decode("utf-8")
     for name, digest in [('index', expected_index), ('ledger', expected_ledger), ('sheet', expected_sheet),
@@ -70,6 +74,8 @@ def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_in
         "navigation_age_seconds": nav["age_seconds"],
         "navigation_scope": nav["status"],
         "ledger_blob": blob(ledger),
+        "original_navigation_module_blob": expected_navigation_module,
+        "original_binding_module_blob": expected_binding_module,
         "sheet_path": result["sheet_path"],
         "sheet_blob": result["sheet_blob"],
         "verdict": result["verdict"],
