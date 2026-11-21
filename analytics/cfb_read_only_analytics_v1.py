@@ -38,6 +38,9 @@ def load(path, as_of):
             if row["source_kind"] not in ("CERTIFIED_MARKET", "ENGINE_DECISION", "SCHEDULER_RECEIPT", "EXECUTION"):
                 raise ValueError("unapproved source kind")
             if row["source_kind"] == "CERTIFIED_MARKET":
+                required_market = ("market", "side", "book", "price_unit", "quote_type", "price")
+                if any(not row.get(k) for k in required_market if k != "price") or type(row.get("price")) not in (int, float) or not math.isfinite(row["price"]):
+                    raise ValueError("incomplete or invalid certified market quote")
                 if not row.get("source_path") or not re.fullmatch(r"[0-9a-f]{40}", str(row.get("source_blob", ""))):
                     raise ValueError("certified market provenance missing")
             if row["source_kind"] == "ENGINE_DECISION":
