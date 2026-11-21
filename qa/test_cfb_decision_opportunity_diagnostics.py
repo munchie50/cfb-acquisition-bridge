@@ -38,6 +38,15 @@ class DecisionDiagnosticsTests(unittest.TestCase):
         self.assertEqual(out["game_count"], 1)
         self.assertEqual(out["market_slots"], 6)
         self.assertEqual(out["duplicate_identity_conflicts"], [{"game_id": "5", "additional_section": "sat"}])
+        self.assertEqual(out["market_slot_counts"], {"DUPLICATE_IDENTITY_CONFLICT": 6})
+
+    def test_friday_and_late_branches_are_extracted(self):
+        out = analyze(review([{"game_id": "6", "branches": {
+            "home_moneyline": {"state": "PASS", "reason": "Price is expensive"},
+            "under": "PASS under 40.5: number too low"}}]))
+        self.assertEqual(out["rows"][3]["category"], "PASS_WITH_PRICE_FACTOR_NOT_PRICE_ONLY_PROVEN")
+        self.assertEqual(out["rows"][5]["original_state"], "PASS")
+        self.assertEqual(out["market_slot_counts"]["MARKET_REVIEW_NOT_EXTRACTABLE"], 4)
 
     def test_missing_reports_fails_closed(self):
         with self.assertRaises(ValueError):
