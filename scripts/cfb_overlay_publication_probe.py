@@ -70,6 +70,26 @@ def reconstruct(repo, manifest):
         outputs[surface] = raw.decode("utf-8")
     if streams["market"] != streams["decision"]:
         raise ValueError("market and decision overlay packet boundaries disagree")
+    # Reject replayed or out-of-order cycles even when both streams agree.
+    # This is a read-only continuity check, never publication authority.
+    from datetime import datetime, timezone
+    seen_cycles = set()
+    previous = None
+    for cycle, instant in streams["market"]:
+        if not isinstance(cycle, str) or not cycle.strip() or cycle in seen_cycles:
+            raise ValueError("missing or duplicate overlay cycle")
+        seen_cycles.add(cycle)
+        if not isinstance(instant, str):
+            raise ValueError("invalid overlay timestamp")
+        try:
+            at = datetime.fromisoformat(instant.replace("Z", "+00:00"))
+        except ValueError as exc:
+            raise ValueError("invalid overlay timestamp") from exc
+        if at.tzinfo is None or at.utcoffset() != timezone.utc.utcoffset(at):
+            raise ValueError("overlay timestamp must be UTC")
+        if previous is not None and at <= previous:
+            raise ValueError("reordered or duplicate overlay timestamp")
+        previous = at
     return outputs
 
 
