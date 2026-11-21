@@ -32,3 +32,25 @@ First recover immutable receipt coverage and game-level due/verified/blocked mat
 
 ## First unfinished action
 Reconcile the exact immutable Friday Nov20 and Saturday Nov21 Market Monitor run closures (07CT/13CT) into a per-cycle due/verified/blocked ledger, then inspect Evening and QA cross-task handoff discrepancies. Only after readback should this register's row statuses be advanced. This file is a working action register, not proof that the full reconciliation has been executed.
+
+
+## Checkpoint 1 — exact natural Monitor receipt reconciliation (Nov 21, 2026)
+
+Source: independently enumerated GitHub main tree, four natural RUN_STARTED traces and four immutable RUN_CLOSURE files; all exact closure blobs checked against main. This is historical evidence classification, NOT engine acceptance.
+
+| Cycle / correlation | Observed startup UTC | Closure UTC | Due / verified / blocked | First supported failure boundary |
+|---|---|---|---|---|
+| Fri Nov20 07CT `20261120T130327388Z_scheduled11` | 13:03:27.388 | 13:05:04.672 | DUE natural cycle; VERIFIED start + terminal readback + closure; BLOCKED current six-market review, checkout and canonical publication | Git HTTPS probe DNS resolution of github.com; `RUN_INCOMPLETE` |
+| Fri Nov20 13CT `scheduled-20261120-1300-ct-turn11` | 18:58:44.053 (12:58:44 CT, before nominal 13CT) | 18:59:08.597 (12:59:08 CT) | DUE nominal 13CT; VERIFIED natural trace and terminal readback + closure; BLOCKED full Saturday publication; recorded before nominal deadline | Worker GitHub DNS failure, no verified publication; `RUN_INCOMPLETE`. Timestamp discrepancy preserved, not silently normalized |
+| Sat Nov21 07CT `scheduled-20261121-0700-ct-turn11` | 13:03:27.265 | 13:04:39.331 | DUE natural cycle; VERIFIED trace, terminal exact-byte readback, noncanonical research and closure; BLOCKED full due slate and canonical publication | `SUPPORTED_GIT_RUNTIME_VERIFIED` absent; authenticated full checkout/ancestry not established; `RUN_INCOMPLETE` |
+| Sat Nov21 13CT `scheduled-20261121-1300-ct-turn11` | 19:02:08.161 | closure record timestamp not supplied; candidate identified by 19:02:08Z | DUE natural cycle; VERIFIED trace, terminal JSON readback and closure; BLOCKED original current decision binding, canonical pointer and fresh qualified offers; no wager | Original decision binding/canonical recovery pointer unsatisfied; `RUN_INCOMPLETE` |
+
+Exact immutable closure blob SHAs, in row order:
+`2c52d227de2acb0368d46e0d1f950ea0d162ac58`,
+`8a7c9acd7c56061242909c7b52bc4d9ec6784733`,
+`013f3f30d1e9dec925cdcca9a473215d29c5610e`,
+`3e2eaf98823eee255ac08a4b1da08a6020f08b0d`.
+
+**Disposition:** W12-01 and W12-02 exact four-cycle receipt coverage RECONCILED_AS_HISTORICAL_INCOMPLETE; their prospective full market/decision/canonical work is NOT marked complete. Friday 13CT receipt's observed clock precedes nominal schedule; retain as provenance anomaly rather than claim post-deadline run. No retroactive wager, no deadline backdating, no DNS retest, no task changes.
+
+**Next unfinished action:** W12-03 reconcile exact Friday Evening handoff (2/5 obligations, 3/70 researched) against Saturday QA and the above four closures; then W12-04 QA coverage. Recheck latest main before any mutation. Preserve four production tasks and accepted recovery index v1.295.
