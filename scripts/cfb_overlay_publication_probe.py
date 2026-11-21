@@ -23,6 +23,8 @@ def checked_blob(repo, sha):
 
 
 def reconstruct(repo, manifest):
+    if not isinstance(manifest, dict):
+        raise ValueError("overlay manifest must be a JSON object")
     if manifest.get("schema") != "cfb-overlay-probe-v1":
         raise ValueError("unsupported manifest")
     if set(manifest) != {"schema", "cycle_id", "as_of_utc", "market", "decision"}:
@@ -30,7 +32,7 @@ def reconstruct(repo, manifest):
     outputs = {}
     for surface in ("market", "decision"):
         entry = manifest[surface]
-        if set(entry) != {"base", "delta", "expected_blob"}:
+        if not isinstance(entry, dict) or set(entry) != {"base", "delta", "expected_blob"}:
             raise ValueError("invalid surface entry")
         base = checked_blob(repo, entry["base"])
         delta = checked_blob(repo, entry["delta"])
@@ -55,6 +57,8 @@ def reconstruct(repo, manifest):
             raise ValueError("overlay packet must be a JSON object")
         if (packet.get("cycle_id"), packet.get("as_of_utc")) != (manifest["cycle_id"], manifest["as_of_utc"]):
             raise ValueError("packet and manifest boundary mismatch")
+        if not isinstance(packet.get("rows"), list):
+            raise ValueError("overlay packet rows must be a list")
         outputs[surface] = raw.decode("utf-8")
     return outputs
 
