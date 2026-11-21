@@ -1,4 +1,7 @@
 import unittest
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from cfb_decision_attribution import attribute
 BASE = dict(game_id='1',market='home_spread',as_of_utc='2026-11-20T18:00:00Z',source_ref='saved-review-1',reason='supported but price fails',original_state='PASS',evidence_tags=['FOOTBALL_SUPPORT','PRICE_HOLD'],price_only=True)
 class AttributionTests(unittest.TestCase):
