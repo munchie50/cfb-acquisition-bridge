@@ -24,3 +24,10 @@ Authority: original contracts, recovery index v1.295, retained November 20 recon
 5. Record final RUN_PASS only if all original production obligations genuinely met; otherwise RUN_INCOMPLETE with precise remaining blockers.
 
 Do not repeat abandoned DNS troubleshooting or already completed CBS 70/70 normalization/compiler. No fifth automation.
+
+## Subsequent manual catch-up increment — execution boundary audit
+- Fresh-read this checkpoint at blob b2cb994c9fca4118868cf66173f7841f8bf73b5f and the corrective GitHub commit ac6c23bb0c1e315a2acdbc951ebbf1f4ceb0d01a.
+- Queried commit-associated GitHub workflow runs: empty list. This endpoint is scoped to pull-request-triggered runs, so empty is NOT proof that no other CI ran. Do not claim regression tests passed.
+- Attempted local repository access once; unavailable in the current runtime. Do not pursue DNS or checkout diagnostics; avoid fabricating execution evidence.
+- Current result: code and fixture are persisted, QA EXECUTION_UNVERIFIED, original publication BLOCKED, production RUN_INCOMPLETE. No production mutations or schedule changes.
+- First unfinished action remains execute corrected qa/test_cfb_overlay_preview_binding.py and original selector integration QA in a working repository runtime, capture actual stdout/exit codes and pinned commit. Next, validate immutable real Week12 pair and governance gate. No premature acceptance.
