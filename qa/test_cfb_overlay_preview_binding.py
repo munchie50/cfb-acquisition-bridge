@@ -43,6 +43,27 @@ class OverlayBindingTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unique sheet"):
             self.check(self.sheet + self.sheet)
 
+    def test_duplicate_overlay_packet_key_rejected(self):
+        import hashlib
+
+        def sha(raw):
+            return hashlib.sha1(b"blob " + str(len(raw)).encode() + bytes([0]) + raw).hexdigest()
+
+        base = b"base\\n"
+        delta = (b"```cfb-week12-market-v1\\n"
+                 b'{"cycle_id":"c1","cycle_id":"c2","as_of_utc":"2026-11-21T15:00:00Z"}'
+                 b"\\n```")
+        manifest = {"schema": "cfb-overlay-probe-v1", "cycle_id": "c1",
+                    "as_of_utc": "2026-11-21T15:00:00Z",
+                    "market": {"base": sha(base), "delta": sha(delta),
+                               "expected_blob": sha(base + delta)},
+                    "decision": {"base": sha(base), "delta": sha(delta),
+                                 "expected_blob": sha(base + delta)}}
+        with patch.object(probe, "checked_blob", side_effect=lambda repo, digest:
+                          base if digest == sha(base) else delta):
+            with self.assertRaisesRegex(ValueError, "duplicate overlay packet JSON key"):
+                probe.reconstruct(None, manifest)
+
 
 if __name__ == "__main__":
     unittest.main()
