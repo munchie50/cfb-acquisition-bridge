@@ -1,0 +1,14 @@
+# Nov21 immediate Market Monitor request — execution and permanent-worker boundary
+
+Status: IMMEDIATE_RUN_INVOKED_INLINE / HOSTED_SESSION_DESTROYED / PERMANENT_WORKER_NOT_REPAIRED / ENGINE_RUN_INCOMPLETE.
+
+Authority: preceding verified main commit 814f05d9a28d248a6b2fb7d69fd627e9ec1b2d60; predecessor checkpoint evidence/run_receipts/CFB_MARKET_MONITOR_20261121_PROSPECTIVE_ELIGIBILITY_AND_SCHEDULER_BOUNDARY.md.
+
+## Executed in this turn
+1. Invoked existing enabled CFB Market Monitor Rebuilt automation ID 6ae766e788d881919726d0eeb44450dd with run_now. Tool returned success:true and 'Ready to run in this conversation', with inline_run prompt; it did NOT start a separate background worker. No new task, no changed schedule.
+2. Fresh-read verified active production-facing display override evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-20_MANUAL_PROVISIONAL_RELEASE.md Git blob 359357d1b42074ff09eb11245aa4cc492e7457a8 and historical frontier receipt evidence/run_receipts/CFB_WEEK12_20261120_CONTINUATION_FRONTIER_BINDING_DEEP_DIVE.md blob dbf16aa2b616d9dfae7c428b990421783b300311. Nov20 70-game preview remains display-only, no actionable wagers; historical frontier's proposed adapter is superseded by Nov21 executed selector QA.
+3. Attempted to reuse previously recovered full-history Git hosted session with original runtime and consumer checks; tool returned INVALID_ARGUMENT 'Browser session has been destroyed'. No shell commands ran in this attempt. This is ephemeral hosted-session lifecycle failure, NOT a regression of original Git validator, NOT DNS, and NOT proof of permanent worker failure. Do not report a new test PASS.
+4. Read-only inspected existing automation: enabled true; environment_selection inherited; environments null. Its last recorded scheduled run remains Nov21 19:00Z, recorded_status completed, engine output RUN_INCOMPLETE; next scheduled run Nov22 07:00 CT. The run_now inline invocation is not a new independently executed scheduled-worker run and cannot prove scheduled-worker provisioning.
+
+## Exact next boundary
+Permanent worker environment configuration/provisioning is not exposed by the available automation update action (which supports task prompt/schedule/enabled only). No verified managed environment ID is exposed in this automation's configuration. Do not change task prompt to pretend Git is provisioned. To actually fix persistent runtime, a supported managed execution environment must be provisioned and attached, or the existing scheduled worker must independently demonstrate a durable Git-capable full-history checkout. After that run original validators, current source/market qualification, governed selector and canonical publication gates. This is a genuine external execution-environment boundary, not a request to rebuild Nov20 source/compile work. No canonical publication, schedule, Champion, frozen records, wagers or money changed. Current result RUN_INCOMPLETE.
