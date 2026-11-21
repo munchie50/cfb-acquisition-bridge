@@ -1,0 +1,206 @@
+# Original task prompt backup
+Task ID: 6ae76df60e0c819182e2cfab1b83846a
+
+ACTIVE TRANSPORT ORDER OVERRIDE — 2026-11-20: This supersedes ONLY the older DNS-first git ls-remote diagnosis below. For any repository-code checkout requirement, first attempt an actually exposed API/connector-backed commit-pinned repository ZIP or verified offline Git bundle in a Python-capable execution runtime. Authenticate commit pin and archive SHA256, safely extract, verify required exact Git blobs and original scripts, then continue the task's own work in this SAME RUN; do not stop after a transport success. The Firecrawl-hosted ZIP path was proven only in a separate manual environment; never assume it is exposed to this worker. ZIP alone is not full ancestry or production acceptance; where required, obtain verified Git bundle/ancestry or fail closed. If alternate runtime unavailable, record tool availability and exact blocked stage; do NOT repeatedly spend the run on known-failing Git DNS. Preserve original ownership, receipt/readback, four-task topology, frozen Champion and all acceptance gates. 
+
+SAME-RUN CONTINUATION AND CHECKOUT DIAGNOSIS — Nov 19 CT
+After verified RUN_STARTED and fresh authority recovery, when this task needs a real checkout and direct shell is available, make one bounded noninteractive Git HTTPS connectivity check using the normal worker network settings (git ls-remote on the canonical repository). Record proxy presence as a boolean only, without proxy values or credentials, and the exact sanitized failure category and host if it fails. If Git connects, run the accepted exact-byte helper on the authenticated pin, verify full ancestry and required scripts, and immediately continue the applicable work in this same invocation. A passing probe or checkout is an intermediate result. Continue through fresh complete CBS acquisition, material availability review, compiler/readiness, and independently verified typed downstream handoff within surviving decision windows. Preserve sole Market Monitor publication ownership. If the required checkout fails, continue independent authorized work, document the blocked stages, and persist/read back the governed terminal candidate and separate closure. Preserve existing source, decision, ownership and persistence gates.
+
+FIRST ACTION — STARTUP TRACE AND RECOVERY (NOV1 VERIFIED): Before expensive GitHub authority reads or source research, record observed UTC, trigger type, invocation ID when available and correlation ID; persist permitted append-only RUN_STARTED under evidence/run_receipts/ and independently read back. Absence of a marker is ambiguous, not proof of scheduler dispatch failure. Discover canonical latest accepted files from fresh main tree with exact nonzero size and blob SHA. If fetch_file returns empty for a nonempty file, Use the connected GitHub dedicated fetch_blob operation with the exact blob SHA from the pinned main tree and independently verify the complete content by recomputing the UTF-8 byte count and Git blob SHA-1 against that same tree entry. Use standard hashing or same-cell connector orchestration without printing raw content or passing large bodies as shell arguments. Use direct REST only as an available bounded fallback; report unavailable verification without weakening the existing gate. Never downgrade to older index, truncate authority or invent data. Log stage boundaries and exact first error; distinguish scheduler no_update/null chat_ref, retrieval failure and downstream workflow incompleteness. Preserve own task's original scope and ownership; Health is integrity-only, Evening is downstream and not competing Hot Sheet producer. Compiler historical replay is not current authored six-market decision evidence. Respect existing permissions, persistence contracts, Champion protection, four-enabled-task topology and fail-closed closure.
+
+
+
+Run the CFB Beta Production incremental evening availability and wager-management workflow on Wednesday, Thursday and Friday evenings. Begin at connected GitHub repository munchie50/cfb-acquisition-bridge; deterministically discover/read back the newest accepted CFB_ENGINE_CURRENT_RECOVERY_INDEX_v*.md and active cadence/output controls from repository state/commit history, not stale version anchors or code-search indexing. Follow active v1.247 football-week cadence or later accepted superseding authority. Persist/read back a conforming evidence/run_receipts/ receipt and terminate RUN_PASS/RUN_INCOMPLETE/RUN_FAIL. Read canonical CFB_MARKET_MONITOR_STATE.md, CFB_DECISION_WAIT_LEDGER.md, CFB_EXECUTION_LEDGER.md and CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md as applicable. This evening run is downstream of the daytime CFB Market Monitor and must reconcile its latest persisted market/decision state rather than creating a competing baseline. Preserve accepted frozen Champion/FIRST_FROZEN/REFRESH lineage; never alter model predictions from market, injury, wager, execution, or outcome information. Refresh material injuries/QB/player availability, weather, qualified market observations, executable prices and movement. Append genuinely new observations/decisions with provenance; never overwrite/backfill. Reassess BET EARLY/BET NOW/WAIT/PASS/INCONCLUSIVE states, established minimum acceptable line/price, WAIT reason/trigger, urgency and realistic execution window. Apply the active kickoff-window reconciliation deadlines. Prioritize the nearest active chronological section (Thursday, Friday, Saturday morning, Saturday afternoon, Saturday evening/night). If this evening run reaches or passes a game's reconciliation deadline, INCONCLUSIVE may not simply roll forward: transition to an earned actionable state, a governed WAIT with explicit trigger and hard final execution cutoff, or PASS. Never force a bet. At final practical execution cutoff, resolve WAIT to actionable or PASS. Persist all transitions append-only so the next Market Monitor uses the same canonical state. Optimize at portfolio/trip level for roughly 1–2 casino trips/week; third only for a compelling documented reason; kickoff windows do not independently create extra trips; never chase. Manage production and $20 sandbox separately. Only established executions enter execution ledger. Experimental parlays remain governed separately without invented probability/EV. If evening information materially changes the working Hot Sheet, persist the changed operational state so the next Market Monitor incorporates it; do not create a separate competing Hot Sheet. Preserve screenshot boundary and append-only history. No automatic Champion mutation, Challenger promotion, scientific acceptance, or outcome-informed reconstruction. SCHEDULED-RUN FAILURE CONTAINMENT: obey evidence/CFB_GITHUB_CONTENTS_PERSISTENCE_PROCEDURE_2026-10-03.md including its 2026-10-09 task lifecycle guard. Within this scheduled engine invocation, do not call automation-management mutations, disable this or another task, change prompts/schedules, create replacement tasks or trigger another run because of a repository/tool failure. Preserve the existing four recurring production schedules. Fail closed on the affected operational work and report the actual blocker; preserving schedules never authorizes bypassing tool restrictions. Under evidence/CFB_TERMINAL_RUN_RECEIPT_CLOSURE_CONTRACT_2026-10-05.md, attempt a permitted terminal candidate, independently read it back, then persist/read back separate RUN_CLOSURE. If terminal persistence itself is blocked, report TERMINAL_PERSISTENCE_UNAVAILABLE without inventing closure. Task lifecycle changes belong to explicit user-directed scheduling/QA work.
+USER-APPROVED CONSENSUS / CAESARS CONTROL: recover and obey evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md. Apply this control to downstream canonical observations and decisions without creating a competing Hot Sheet. Prefer qualified multi-book consensus as the market benchmark, Caesars as the independently verified execution offer, and Engine Prediction (Frozen) as the unchanged independent model opinion. Preserve identified constituent line/price pairs, clocks, count and dispersion; single/mixed-book observations are labelled fallback, never consensus. Missing qualification means CONSENSUS_UNAVAILABLE; unverified actual Caesars remains UNVERIFIED. No automatic bet from book disagreement, no invented price/EV, no loosening established limits or practical cutoffs. Preserve all existing scope, authority, persistence/closure, ownership and schedule controls.
+
+TYPED DOWNSTREAM HANDOFF — USER-DIRECTED QA INTEGRATION: Recover evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md including the qualified V2 Evening-to-Monitor handoff and evidence/CFB_CBS_COMPLETE_RESPONSE_CAPTURE_PROCEDURE_2026-10-14.md, or accepted superseding controls. After authority recovery persist/read back the actual cycle RUN_STARTED before operational mutation. Verify a supported computation runtime in THIS invocation before canonical publication mutations; if unavailable report COMPUTATION_RUNTIME_UNAVAILABLE / RUN_INCOMPLETE with truthful permitted terminal closure, never simulated execution or untyped substitute updates. When current neutral weekly V2 scope applies, consume the latest complete typed Monitor/canonical state; retrieve and retain a genuinely fresh complete source response, supply all governed independently earned decision rows including material availability/provenance, and execute scripts/cfb_neutral_weekly_reconciliation.py normal advance with the ACTUAL CFB_EVENING_AVAILABILITY_<UTC> cycle, actual as_of and honest recovered-by bound. Inspect complete proposal validation before serial SHA-guarded market/decision writes and independent readbacks. End each applicable append with the validated typed boundary; do not leave a prose-only tail for the next Monitor to repair. Never use --bootstrap-saved, disguise this run as a Monitor, discard an existing untyped tail, force PASS, extend deadlines automatically or downgrade richer facts to fit neutral scope. A pre-existing unsupported tail/phase requires qualified reconciliation or RUN_INCOMPLETE. Preserve all source, consensus/Caesars, cutoff, execution/settlement and scientific boundaries. Do not create, select or publish a competing Hot Sheet: canonical typed packets are the downstream handoff, and the next scheduled Monitor remains sole primary sheet producer. Scoped Evening completion does not upgrade an earlier sheet or Monitor failure. Natural runtime/handoff adoption must be demonstrated, not inferred from installed instructions.
+
+USER-DIRECTED RECOMMENDATION / VENUE SEPARATION — October16: Recover the October16 decoupling section of evidence/CFB_CONSENSUS_BENCHMARK_AND_CAESARS_EXECUTION_CONTROL_2026-10-10.md. It supersedes any older interpretation of this prompt requiring a Caesars line to form, display or rank a supported recommendation. Missing Caesars alone is NOT a recommendation blocker: show venue confirmation pending separately; do not claim a verified offer or actual execution. Preserve all independently earned maturity labels, model/market/material evidence, original acceptable number/price and deadlines; never invent a pick, threshold, EV, stake, source clock or consensus. Current neutral publishing supports only PASS/INCONCLUSIVE; qualifying richer recommendation/WAIT presentation remains OPEN, never downgrade an earned richer state to fit it. When computation is available, execute scripts/cfb_hot_sheet_readiness.py against the actual canonical market/decision/original-lineage files with the actual audit clock to report individual blockers, saved-source boundary, elapsed current quotes and overdue decisions. It validates saved packets at their own boundary and diagnoses age separately, never refreshes or retimes them. For a qualified multi-book collection, scripts/cfb_consensus_reference.py provides a bounded descriptive formatter; independently qualify source truth/operator identities first, retain all constituents/clocks, exclude Caesars, preserve unknown updates and honest unavailable status. Formatter success is not acquisition, a recommendation or full-run acceptance. Do not impose betting/execution prerequisites on an observation or experimental lean. Preserve sole Monitor publication ownership, downstream Evening scope, integrity-only QA roles, four-task topology, all schedules and scientific/execution boundaries. Natural use of these additions remains to be demonstrated.
+
+BOUNDED CONDITIONAL V3 — USER-DIRECTED HOT SHEET QA: The October16 V3 section of evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md supersedes only the earlier claim that all conditional publication is unsupported. A genuinely earned CONDITIONAL row may use the normal compiler/renderer with an already persisted immutable review_ref, accepted original prediction, qualified future kickoff, independently qualified non-Caesars constituents, material/rule review, original line/price limits and preserved practical cutoff. Recover the actual review commit in accepted runtime ancestry first. No review or bet may be invented to pass the schema. Neutral V1/V2 remain unchanged; WAIT/BET NOW and unsupported richer facts still need separate qualification. Caesars remains optional venue confirmation. No source/review acquisition or natural adoption is proved by code tests. Preserve ownership, all four schedules and all prior controls.
+
+USER-DIRECTED STANDING FULL-EVALUATION STANDARD — October17 11:14CT: Recover the standing full-evaluation section and bounded prospective PASS-reconsideration profile in evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md. Preserve true full-slate evaluation across favorite/underdog spreads, overs/unders, moneylines and bounded plausible parlays; do not return a static five-pick list, refresh only existing picks or copy all PASS decisions without checking continuing justification. Rank defensible current opportunities after weighing supporting evidence AND ordinary risks; latest4–5 request/prior5–7weeklyaim are not quotas. Reuse prior analysis only after checking material changes and its ongoing applicability; distinguish newly assessed, revalidated and missing research in existing provenance/reasons. Missing research is not proof of no value. Qualified new prospective reviews may reconsider earlier PASS, preserving exact prior records, original established limits/cutoffs and all model/source guards; no silent reopen or no-chase relaxation. Assess totals and ML independently; bounded parlay assessment compares quoted joint price when available, dependence, fragility and duplicate exposure with singles under existing production/sandbox authority. NO_PREFERRED_PARLAY is valid; no invented joint probability/EV/payout/stake. Keep supporting code QA separate from useful complete user decisions. User says they will MOST LIKELY bet: this is intent only, never create execution/money records without actual confirmation/tickets; actual tickets are real-money unless explicitly stated otherwise. Frozen predictions stay independent from bets/outcomes. Use existing four tasks and artifacts, no new framework/schedule/task. Big Nine remains PAUSED. Configuration installation is not demonstrated natural consistency. Apply the sweep and material reconsideration within existing downstream Evening scope; preserve typed canonical handoff and sole Monitor sheet ownership. Do not publish a competing card.
+
+USER-DIRECTED HOT SHEET STABILIZATION — October17 15:23CT: Follow the stabilization section of evidence/CFB_NEUTRAL_SOURCE_DERIVED_PUBLICATION_CONTRACT_2026-10-12.md and the active/deferred October17 entry in evidence/CFB_ENGINE_REVIEW_FINDINGS_AND_DURABLE_ACTION_REGISTER_2026-09-28.md. TOP 10 OPPORTUNITIES supersedes older card-width targets; distinguish supported actionable/conditional entries and never manufacture ten bets. At every existing applicable review, include all games with remaining practical windows, including PASS, across both spread sides, both moneylines and over/under independently; explicitly address alternates/team totals where offered/supported or explain unavailable/not evaluated, plus plausible parlay suitability. Use existing readiness audit review_required_game_ids/review_window to select work, not as proof research occurred or authority to reopen. Preserve original limits/cutoffs and use existing prospective reconsideration evidence for changed decisions. Missing timing/research remains visible debt. Existing cycles only: do not add tasks, triggers or gates; report unserved final-review windows honestly. Monitor publishes, Evening supplies downstream updates, Health/Weekly audit within existing ownership. Deferred ideas 5–19 are preserved for later evaluation, not automatic implementation: inspect the durable register at existing Weekly QA/manual maintenance and prioritize small justified changes. Installation/tests do not prove natural recurring consistency.
+INTEGRATION / RENEWAL STATUS — October17 15:32CT: PR2 merged834d9d09e3f555fe009f66d49cbe80edc437004b and existing CI39067045249/job117496760706 SUCCESS. Earlier pending-PR note is superseded: use current readiness review_required_game_ids/review_window. Queue enumeration is not completed analytical review. Before assuming a new BET NOW/WAIT adapter is necessary, apply the October17 existing conditional-renewal clarification in the active publication contract: a genuinely NEW immutable source/material/price review can issue a new CONDITIONAL review checkpoint after an earlier checkpoint while preserving original line/price and final practical cutoff. Existing full-history/render replay supports that path; old expired review remains invalid. Synthetic replay is not actual research or a live recommendation. Keep unsupported richer semantics separate; no final-cutoff extension. Natural full-cycle/top10/all-market consistency remains open.
+
+WEEK8 ORIGINAL-LINEAGE ROUTE — USER-DIRECTED OCT19 CT QA: Recover evidence/CFB_WEEK8_ORIGINAL_LINEAGE_PUBLICATION_PROFILE_2026-10-20.md and its exact accepted original56-target census (49 predictions/7 exclusions). Existing original FIRST_FROZEN is available; Tuesday REFRESH generation/acceptance is separate and never substitutes. For applicable Week8 source/canonical proposal work, use scripts/cfb_week8_publication.py instead of forcing Week8 through the Week7 compiler. Use --profile WEEK8 for the shared renderer, saved-source audit and readiness, plus the independent Week8 original-archive field invariant. Prove actual runtime and follow the profile's complete source/root/decision/history/readback/closure requirements; a saved replay or test PASS is not a fresh source, earned review, kickoff qualification or natural completion. Source-display kickoff alone stays RETAINED_UNVERIFIED; unavailable independently qualified kickoff/immutable review means an explicit remaining phase, never invented evidence, forced PASS or downgraded richer decision. Preserve all genuine states and prior week/history/earliest observations. Complete the existing all-game/all-market/top10 user decision where inputs are earned; otherwise name the exact current blocker, not a blanket missing-prediction claim. No new schedule/model/freeze merely to activate this route.
+
+USER-DIRECTED SHARED FIRECRAWL BUDGET — OCT24: Before chargeable Firecrawl work recover evidence/CFB_FIRECRAWL_CYCLE_BUDGET_CONTROL_2026-10-24.md and obey its shared at-most1000-credit limit and cumulative daily pacing across all CFB scheduled/manual work. Read actual provider balance/cycle bounds; never issue a paid no-credit probe at zero. For B=min(1000,planCredits), N=ceil(actual cycle seconds/86400), current cycle-day bucket k, release only C=floor(B*k/N); subtract account-observed cycle consumption and confirmed/reserved unsettled cost, sharing unused released allowance rather than giving each task a new pool. Recheck before each serial request and require a known upper cost within remaining allowance; defer on unknown costs, concurrent/unsettled acquisition or invalid cycle metadata. Prioritize complete Monitor captures/material evidence, then genuinely new Evening evidence and necessary WeeklyQA checks; Health ordinarily uses saved repository/receipt/task/account state without chargeable Firecrawl research. Preserve source freshness/completeness and sole Monitor ownership: missing budget means an explicitly unserved research phase/incomplete result, never stale-as-fresh, forced PASS or invented completeness. Record bounded budget facts in existing receipts; no new tracker/task, billing/top-up/upgrade/account change or cadence mutation. Do not spend just to hit1000 or promise exact provider enforcement; apply the actual28–31day cycle and read renewed metadata after reset. Current balance was0; do not repeatedly call paid acquisition while exhausted. No quota multiplier per task or manual invocation. Installation is not natural compliance.
+
+VERIFIED PYTHON CHECKOUT — PRODUCTION EXACT-BYTE DIRECT SHELL (2026-11-19). This is the runtime routing used by the production CFB Market Monitor. Apply after verified RUN_STARTED and fresh authority recovery. Use this checkout for the required Evening compiler, readiness and typed downstream handoff. With verified checkout, Evening itself retrieves and retains fresh complete current-week CBS data under the accepted current profile, runs the current compiler, verifies its typed handoff and closes. The November 12–13 advance Actions package experiment has ended. No such package is an Evening prerequisite. Record available scheduled, scheduler-reported and worker-observed clocks separately.
+
+Check actual availability of a direct terminal tool and of exec_command inside the connector orchestration cell independently. When direct shell exists, invoke it directly once with printf '%s\n' CFB_DIRECT_SHELL_STARTED, then record Python and Git versions, tool identifier and exit. A tool being named in the prompt is not execution evidence. If combined connector execution is callable, use the verified combined checkout cell below and poll any returned shell session to completion. If the combined route is unavailable before the helper starts and direct shell passed, use the exact-byte direct fallback below.
+
+For the direct fallback, authenticate fresh main and the helper's exact blob and positive byte count through the connected GitHub repository at that exact commit. When the authenticated metadata matches the embedded helper (3,780 bytes; Git blob b13930cb714eb87c8dce6136ffab6fbceeb44898), submit the entire shell command below as one direct terminal action, replacing only REPLACE_WITH_FRESH_AUTHENTICATED_MAIN_SHA with the fresh 40-hex SHA. The command decodes the embedded bytes and checks length and Git hash before it starts the unchanged helper. Do not re-download the helper from the shell, retype its source, or use a stale pin. If the authenticated helper changes, obtain exact base64 from the connector and verify its size and Git hash in direct shell before execution, or record HELPER_TRANSFER as blocked. If authority points to a different helper, follow that accepted authority. Poll any launched shell session. Use adequate output or retained result readback to recover the complete result.
+
+Record direct-shell probe, combined-shell availability, byte verification, helper execution, and Git checkout independently. DIRECT_HELPER_BYTES_VERIFIED proves transfer only. Require SUPPORTED_GIT_RUNTIME_VERIFIED, exact HEAD, full ancestry, required current-task scripts and retained-review validation before using the resulting worktree. Checkout still requires Git HTTPS connectivity. On failure record the actual stage and exact sanitized error, preserve the runtime handoff and continue connector-supported independent work and normal closure. Run a verified checkout only once per invocation. Preserve default proxy and Git settings, task ownership, source gates and canonical write rules.
+
+```sh
+expected_size=3780
+expected_blob=b13930cb714eb87c8dce6136ffab6fbceeb44898
+set -eu
+pinned_head='REPLACE_WITH_FRESH_AUTHENTICATED_MAIN_SHA'
+case "$pinned_head" in ''|*[!0-9a-f]*) exit 2;; esac
+test "${#pinned_head}" -eq 40
+if command -v python3 >/dev/null 2>&1; then
+  checkout_python=python3
+else
+  checkout_python=python
+fi
+"$checkout_python" --version
+git --version
+printf '%s\n' SHELL_PROBE_PASS
+umask 077
+scratch=$(mktemp -d)
+base64 -d > "$scratch/cfb_runtime_checkout.py" <<'CFB_EXACT_HELPER_B64'
+IiIiUHJlcGFyZSBhIHJlYWwsIHBpbm5lZCBDRkIgR2l0IHdvcmt0cmVlIGJlZm9yZSByZXNlYXJj
+aDsgbmV2ZXIgcHVibGlzaCBvciB3cml0ZSBiYWNrLiIiIgppbXBvcnQgYXJncGFyc2UKaW1wb3J0
+IGpzb24KaW1wb3J0IG9zCmltcG9ydCByZQppbXBvcnQgc3VicHJvY2VzcwppbXBvcnQgc3lzCmZy
+b20gcGF0aGxpYiBpbXBvcnQgUGF0aAoKUkVQT1NJVE9SWSA9ICdodHRwczovL2dpdGh1Yi5jb20v
+bXVuY2hpZTUwL2NmYi1hY3F1aXNpdGlvbi1icmlkZ2UuZ2l0JwpSRVFVSVJFRCA9ICgnY2ZiX3dl
+ZWs5X3B1YmxpY2F0aW9uLnB5JywgJ2NmYl9ob3Rfc2hlZXRfcmVhZGluZXNzLnB5JywKICAgICAg
+ICAgICAgJ2NmYl9uZXV0cmFsX3B1YmxpY2F0aW9uX2dhdGUucHknLCAnY2ZiX3JlY292ZXJ5X2Nv
+bnN1bWVyX3ByZWZsaWdodC5weScpCgoKZGVmIHByZXBhcmUoZGVzdGluYXRpb24sIGV4cGVjdGVk
+X2hlYWQpOgogICAgaWYgbm90IHJlLmZ1bGxtYXRjaChyJ1swLTlhLWZdezQwfScsIGV4cGVjdGVk
+X2hlYWQpOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoJ2V4YWN0IGNvbm5lY3Rvci1vYnNlcnZl
+ZCBtYWluIGNvbW1pdCByZXF1aXJlZCcpCiAgICBkZXN0aW5hdGlvbiA9IFBhdGgoZGVzdGluYXRp
+b24pLnJlc29sdmUoKQogICAgaWYgZGVzdGluYXRpb24uZXhpc3RzKCk6CiAgICAgICAgcmFpc2Ug
+VmFsdWVFcnJvcignZGVzdGluYXRpb24gbXVzdCBiZSBuZXc7IG5ldmVyIHJlc2V0IGFuIGV4aXN0
+aW5nIHdvcmt0cmVlJykKICAgIGVudiA9IGRpY3Qob3MuZW52aXJvbiwgR0lUX1RFUk1JTkFMX1BS
+T01QVD0nMCcsIEdDTV9JTlRFUkFDVElWRT0nbmV2ZXInKQogICAgZGVmIGdpdCgqYXJncyk6CiAg
+ICAgICAgcmV0dXJuIHN1YnByb2Nlc3MuY2hlY2tfb3V0cHV0KFsnZ2l0JywgKmFyZ3NdLCBlbnY9
+ZW52LCBzdGRlcnI9c3VicHJvY2Vzcy5QSVBFLAogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICB0aW1lb3V0PTE4MCkuZGVjb2RlKCd1dGYtOCcpLnN0cmlwKCkKICAgICMgQSBu
+b3JtYWwgZnVsbCBjbG9uZSBwcmVzZXJ2ZXMgZ2VudWluZSBjb21taXQvdHJlZS9ibG9iIGFuY2Vz
+dHJ5LiBObyBncmFmdCwKICAgICMgcmVwbGFjZW1lbnQgb2JqZWN0LCBmb3JnZWQgY29tbWl0LCBz
+eW50aGV0aWMgcmVmIG9yIHZhbGlkYXRvciBwYXRjaCBpcyB1c2VkLgogICAgZ2l0KCdjbG9uZScs
+ICctLW5vLWNoZWNrb3V0JywgUkVQT1NJVE9SWSwgc3RyKGRlc3RpbmF0aW9uKSkKICAgIGdpdCgn
+LUMnLCBzdHIoZGVzdGluYXRpb24pLCAnY2F0LWZpbGUnLCAnLWUnLCBleHBlY3RlZF9oZWFkICsg
+J157Y29tbWl0fScpCiAgICBnaXQoJy1DJywgc3RyKGRlc3RpbmF0aW9uKSwgJ21lcmdlLWJhc2Un
+LCAnLS1pcy1hbmNlc3RvcicsIGV4cGVjdGVkX2hlYWQsICdvcmlnaW4vbWFpbicpCiAgICBnaXQo
+Jy1DJywgc3RyKGRlc3RpbmF0aW9uKSwgJ2NoZWNrb3V0JywgJy0tZGV0YWNoJywgZXhwZWN0ZWRf
+aGVhZCkKICAgIGlmIGdpdCgnLUMnLCBzdHIoZGVzdGluYXRpb24pLCAncmV2LXBhcnNlJywgJ0hF
+QUQnKSAhPSBleHBlY3RlZF9oZWFkOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoJ2NoZWNrb3V0
+IEhFQUQgZGlmZmVycyBmcm9tIGNvbm5lY3RvciBhdXRob3JpdHknKQogICAgaWYgZ2l0KCctQycs
+IHN0cihkZXN0aW5hdGlvbiksICdyZXYtcGFyc2UnLCAnLS1pcy1zaGFsbG93LXJlcG9zaXRvcnkn
+KSAhPSAnZmFsc2UnOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoJ2Z1bGwgYWNjZXB0ZWQgYW5j
+ZXN0cnkgcmVxdWlyZWQnKQogICAgZm9yIG5hbWUgaW4gUkVRVUlSRUQ6CiAgICAgICAgaWYgbm90
+IChkZXN0aW5hdGlvbiAvICdzY3JpcHRzJyAvIG5hbWUpLmlzX2ZpbGUoKToKICAgICAgICAgICAg
+cmFpc2UgVmFsdWVFcnJvcignbWlzc2luZyBnb3Zlcm5lZCBjb21waWxlcjogJyArIG5hbWUpCiAg
+ICBzeXMucGF0aC5pbnNlcnQoMCwgc3RyKGRlc3RpbmF0aW9uIC8gJ3NjcmlwdHMnKSkKICAgIGZy
+b20gY2ZiX2NvbmRpdGlvbmFsX3JlY29tbWVuZGF0aW9uX3Byb2ZpbGUgaW1wb3J0IGxvYWRfcmV2
+aWV3CiAgICAjIFZlcmlmeSBldmVyeSBpbW11dGFibGUgcmVmIGluIHJldGFpbmVkIGNhbm9uaWNh
+bCBoaXN0b3J5LCBpbmNsdWRpbmcgY2xvc2VkCiAgICAjIHJldmlld3M7IHRob3NlIG9iamVjdHMg
+cmVtYWluIG5lY2Vzc2FyeSB0byB2YWxpZGF0ZSBsYXRlciB0eXBlZCBwYWNrZXRzLgogICAgcmVm
+cyA9IHt9CiAgICBsZWRnZXIgPSBkZXN0aW5hdGlvbiAvICdldmlkZW5jZS9vcGVyYXRpb25hbC9D
+RkJfREVDSVNJT05fV0FJVF9MRURHRVIubWQnCiAgICBmb3IgYm9keSBpbiByZS5maW5kYWxsKHIn
+XmBgYGNmYi1bXlxuXStcbiguKj8pXmBgYFxzKiQnLCBsZWRnZXIucmVhZF90ZXh0KCksIHJlLk0g
+fCByZS5TKToKICAgICAgICBwYWNrZXQgPSBqc29uLmxvYWRzKGJvZHkpCiAgICAgICAgZm9yIHJv
+dyBpbiBwYWNrZXQuZ2V0KCdyb3dzJywgW10pOgogICAgICAgICAgICByZWYgPSByb3cuZ2V0KCdy
+ZXZpZXdfcmVmJykKICAgICAgICAgICAgaWYgcmVmOgogICAgICAgICAgICAgICAgcmVmc1socmVm
+Wydjb21taXQnXSwgcmVmWydwYXRoJ10sIHJlZlsnYmxvYiddKV0gPSByZWYKICAgIGlmIG5vdCBy
+ZWZzOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoJ25vIGdvdmVybmVkIGltbXV0YWJsZSByZXZp
+ZXcgcmVmcyByZWNvdmVyZWQnKQogICAgdmVyaWZpZWQgPSBbXQogICAgZm9yIHJlZiBpbiByZWZz
+LnZhbHVlcygpOgogICAgICAgIF8sIGNvbW1pdHRlZCA9IGxvYWRfcmV2aWV3KHJlZikKICAgICAg
+ICB2ZXJpZmllZC5hcHBlbmQoZGljdChyZWYsIGNvbW1pdHRlZF9hdD1jb21taXR0ZWQpKQogICAg
+cmV0dXJuIHsnc3RhdHVzJzogJ1NVUFBPUlRFRF9HSVRfUlVOVElNRV9WRVJJRklFRCcsICdyZXBv
+c2l0b3J5JzogUkVQT1NJVE9SWSwKICAgICAgICAgICAgJ2hlYWQnOiBleHBlY3RlZF9oZWFkLCAn
+d29ya3RyZWUnOiBzdHIoZGVzdGluYXRpb24pLAogICAgICAgICAgICAncHl0aG9uJzogc3lzLnZl
+cnNpb24uc3BsaXQoKVswXSwgJ2ltbXV0YWJsZV9yZXZpZXdzJzogdmVyaWZpZWQsCiAgICAgICAg
+ICAgICdzY29wZSc6ICdydW50aW1lIGFuZCBhbmNlc3RyeSBvbmx5OyBubyByZXNlYXJjaCwgcHVi
+bGljYXRpb24gb3IgcnVuIGFjY2VwdGFuY2UnfQoKCmlmIF9fbmFtZV9fID09ICdfX21haW5fXyc6
+CiAgICBwID0gYXJncGFyc2UuQXJndW1lbnRQYXJzZXIoZGVzY3JpcHRpb249X19kb2NfXykKICAg
+IHAuYWRkX2FyZ3VtZW50KCctLWRlc3RpbmF0aW9uJywgdHlwZT1QYXRoLCByZXF1aXJlZD1UcnVl
+KQogICAgcC5hZGRfYXJndW1lbnQoJy0tZXhwZWN0ZWQtaGVhZCcsIHJlcXVpcmVkPVRydWUpCiAg
+ICBhID0gcC5wYXJzZV9hcmdzKCkKICAgIHRyeToKICAgICAgICBwcmludChqc29uLmR1bXBzKHBy
+ZXBhcmUoYS5kZXN0aW5hdGlvbiwgYS5leHBlY3RlZF9oZWFkKSwgaW5kZW50PTIpKQogICAgZXhj
+ZXB0IChWYWx1ZUVycm9yLCBPU0Vycm9yLCBzdWJwcm9jZXNzLlN1YnByb2Nlc3NFcnJvcikgYXMg
+ZXhjOgogICAgICAgIHByaW50KGpzb24uZHVtcHMoeydzdGF0dXMnOiAnQ09NUFVUQVRJT05fUlVO
+VElNRV9VTkFWQUlMQUJMRScsCiAgICAgICAgICAgICAgICAgICAgICAgICAgJ2Vycm9yX3R5cGUn
+OiB0eXBlKGV4YykuX19uYW1lX18sCiAgICAgICAgICAgICAgICAgICAgICAgICAgJ3Njb3BlJzog
+J25vIHB1YmxpY2F0aW9uIGF0dGVtcHRlZDsgcHJlc2VydmUgdGFzayBzY2hlZHVsZXMnfSkpCiAg
+ICAgICAgc3lzLmV4aXQoMSkK
+CFB_EXACT_HELPER_B64
+test "$(wc -c < "$scratch/cfb_runtime_checkout.py")" -eq "$expected_size"
+test "$(git hash-object "$scratch/cfb_runtime_checkout.py")" = "$expected_blob"
+printf '%s\n' DIRECT_HELPER_BYTES_VERIFIED
+"$checkout_python" - "$scratch/cfb_runtime_checkout.py" "$pinned_head" "$scratch/checkout" <<'CFB_CHECKOUT_PY'
+import json
+import runpy
+import subprocess
+import sys
+
+def report(stage, error, category, **extra):
+    print(json.dumps({
+        "status": "COMPUTATION_RUNTIME_UNAVAILABLE",
+        "stage": stage,
+        "error_type": type(error).__name__,
+        "failure_category": category,
+        **extra,
+    }))
+    raise SystemExit(1)
+
+def git_stage(error):
+    command = error.cmd
+    if not isinstance(command, (list, tuple)) or not command or command[0] != "git":
+        return "RETAINED_REVIEW_OR_OTHER_SUBPROCESS"
+    verb = command[3] if len(command) > 3 and command[1] == "-C" else command[1]
+    return {
+        "clone": "GIT_CLONE",
+        "cat-file": "PINNED_COMMIT_LOOKUP",
+        "merge-base": "PINNED_ANCESTRY",
+        "checkout": "DETACHED_CHECKOUT",
+        "rev-parse": "HEAD_OR_SHALLOW_CHECK",
+        "show": "RETAINED_REVIEW_LOOKUP",
+    }.get(verb, "OTHER_GIT_SUBPROCESS")
+
+helper, head, destination = sys.argv[1:]
+prepare = runpy.run_path(helper)["prepare"]
+try:
+    result = prepare(destination, head)
+except subprocess.CalledProcessError as error:
+    stage = git_stage(error)
+    stderr = error.stderr or ""
+    if isinstance(stderr, bytes):
+        stderr = stderr.decode("utf-8", "replace")
+    stderr = stderr.casefold()
+    signatures = (
+        ("DNS_RESOLUTION", ("could not resolve host", "could not resolve proxy", "temporary failure in name resolution")),
+        ("AUTHORIZATION", ("authentication failed", "could not read username", "repository not found", "error: 401", "error: 403", "terminal prompts disabled")),
+        ("TLS_VERIFICATION", ("certificate problem", "certificate verify failed", "ssl certificate")),
+        ("NETWORK_TIMEOUT", ("timed out", "timeout", "connection reset", "could not connect", "failed to connect")),
+        ("MISSING_GIT_OBJECT", ("bad object", "not a valid object", "unknown revision")),
+    )
+    category = next((name for name, terms in signatures if any(term in stderr for term in terms)), None)
+    if category is None:
+        category = "PIN_NOT_ANCESTOR" if stage == "PINNED_ANCESTRY" and error.returncode == 1 else "UNCLASSIFIED_GIT_FAILURE"
+    report(stage, error, category, exit_code=error.returncode, stderr_present=bool(stderr))
+except subprocess.TimeoutExpired as error:
+    report(git_stage(error), error, "NETWORK_OR_SUBPROCESS_TIMEOUT")
+except (ValueError, OSError) as error:
+    report("WORKTREE_OR_RETAINED_REVIEW_VALIDATION", error, "VALIDATION_OR_LOCAL_RUNTIME")
+
+print(json.dumps(result))
+CFB_CHECKOUT_PY
+```
+
+```javascript
+const repository_full_name = "munchie50/cfb-acquisition-bridge";
+const tip = await tools.mcp__codex_apps__github_fetch({url:"https://api.github.com/repos/" + repository_full_name + "/branches/main"});
+if (tip.isError || !tip.structuredContent?.content) throw Error("MAIN_CONNECTOR_READ_FAILED");
+const pin = JSON.parse(tip.structuredContent.content).commit?.sha;
+if (!/^[0-9a-f]{40}$/.test(pin || "")) throw Error("MAIN_PIN_INVALID");
+const helper = await tools.mcp__codex_apps__github_fetch_file({repository_full_name,path:"scripts/cfb_runtime_checkout.py",ref:pin});
+const file = helper.structuredContent;
+if (helper.isError || !/^[0-9a-f]{40}$/.test(file?.sha || "") || typeof file?.content !== "string" || !file.content.length) throw Error("PINNED_HELPER_CONNECTOR_READ_FAILED");
+const shell = "set -eu\npinned_head='PINNED_MAIN_SHA'\ncase \"$pinned_head\" in ''|*[!0-9a-f]*) exit 2;; esac\ntest \"${#pinned_head}\" -eq 40\nif command -v python3 >/dev/null 2>&1; then\n  checkout_python=python3\nelse\n  checkout_python=python\nfi\n\"$checkout_python\" --version\ngit --version\nprintf '%s\\n' SHELL_PROBE_PASS\numask 077\nscratch=$(mktemp -d)\nprintf '%s' HELPER_LITERAL > \"$scratch/cfb_runtime_checkout.py\"\ntest \"$(wc -c < \"$scratch/cfb_runtime_checkout.py\")\" -eq \"$expected_size\"\ntest \"$(git hash-object \"$scratch/cfb_runtime_checkout.py\")\" = \"$expected_blob\"\nprintf '%s\\n' CONNECTOR_HELPER_VERIFIED\n\"$checkout_python\" - \"$scratch/cfb_runtime_checkout.py\" \"$pinned_head\" \"$scratch/checkout\" <<'CFB_CHECKOUT_PY'\nimport json\nimport runpy\nimport subprocess\nimport sys\n\ndef report(stage, error, category, **extra):\n    print(json.dumps({\n        \"status\": \"COMPUTATION_RUNTIME_UNAVAILABLE\",\n        \"stage\": stage,\n        \"error_type\": type(error).__name__,\n        \"failure_category\": category,\n        **extra,\n    }))\n    raise SystemExit(1)\n\ndef git_stage(error):\n    command = error.cmd\n    if not isinstance(command, (list, tuple)) or not command or command[0] != \"git\":\n        return \"RETAINED_REVIEW_OR_OTHER_SUBPROCESS\"\n    verb = command[3] if len(command) > 3 and command[1] == \"-C\" else command[1]\n    return {\n        \"clone\": \"GIT_CLONE\",\n        \"cat-file\": \"PINNED_COMMIT_LOOKUP\",\n        \"merge-base\": \"PINNED_ANCESTRY\",\n        \"checkout\": \"DETACHED_CHECKOUT\",\n        \"rev-parse\": \"HEAD_OR_SHALLOW_CHECK\",\n        \"show\": \"RETAINED_REVIEW_LOOKUP\",\n    }.get(verb, \"OTHER_GIT_SUBPROCESS\")\n\nhelper, head, destination = sys.argv[1:]\nprepare = runpy.run_path(helper)[\"prepare\"]\ntry:\n    result = prepare(destination, head)\nexcept subprocess.CalledProcessError as error:\n    stage = git_stage(error)\n    stderr = error.stderr or \"\"\n    if isinstance(stderr, bytes):\n        stderr = stderr.decode(\"utf-8\", \"replace\")\n    stderr = stderr.casefold()\n    signatures = (\n        (\"DNS_RESOLUTION\", (\"could not resolve host\", \"could not resolve proxy\", \"temporary failure in name resolution\")),\n        (\"AUTHORIZATION\", (\"authentication failed\", \"could not read username\", \"repository not found\", \"error: 401\", \"error: 403\", \"terminal prompts disabled\")),\n        (\"TLS_VERIFICATION\", (\"certificate problem\", \"certificate verify failed\", \"ssl certificate\")),\n        (\"NETWORK_TIMEOUT\", (\"timed out\", \"timeout\", \"connection reset\", \"could not connect\", \"failed to connect\")),\n        (\"MISSING_GIT_OBJECT\", (\"bad object\", \"not a valid object\", \"unknown revision\")),\n    )\n    category = next((name for name, terms in signatures if any(term in stderr for term in terms)), None)\n    if category is None:\n        category = \"PIN_NOT_ANCESTOR\" if stage == \"PINNED_ANCESTRY\" and error.returncode == 1 else \"UNCLASSIFIED_GIT_FAILURE\"\n    report(stage, error, category, exit_code=error.returncode, stderr_present=bool(stderr))\nexcept subprocess.TimeoutExpired as error:\n    report(git_stage(error), error, \"NETWORK_OR_SUBPROCESS_TIMEOUT\")\nexcept (ValueError, OSError) as error:\n    report(\"WORKTREE_OR_RETAINED_REVIEW_VALIDATION\", error, \"VALIDATION_OR_LOCAL_RUNTIME\")\n\nprint(json.dumps(result))\nCFB_CHECKOUT_PY";
+const make = (pin,sha,body) =>{const q=s=>"'"+s.replaceAll("'","'\\''")+"'";return "expected_size="+unescape(encodeURIComponent(body)).length+"\nexpected_blob="+sha+"\n"+shell.replace("PINNED_MAIN_SHA",pin).replace("HELPER_LITERAL",()=>q(body))};
+text(await tools.exec_command({cmd:make(pin,file.sha,file.content),yield_time_ms:10000,max_output_tokens:8000}));
+```
+
+USER-DIRECTED CLOCK / READINESS INTERPRETATION CORRECTION — OCT29 CT: Recover evidence/audits/CFB_NUMBER_PRICE_REVIEW_20261030T004657Z_CLOCK_CORRECTION.md and its accepted superseding evidence. Evening cycle CFB_EVENING_AVAILABILITY_20261030T004547Z falsely called UCF's Oct30 18:00Z cutoff past at Oct30 00:55Z. Preserve that original failed report. Determine expiry per case using timezone-aware actual UTC against the exact immutable planning_cutoff_utc and any earlier qualified kickoff; compare full instants, not calendar dates. Before declaring a review closed, report the actual audit time, original cutoff and per-case review_window/disposition. At the failed boundary UCF was17hours5minutes before expiry and JMU was actually closed. UCF's original Oct30 17Z reconciliation/18Z final cutoff and issued limits are unchanged; a valid window is not a fresh quote, revalidation or execution. Do not revive a genuinely expired review.
+The readiness aggregate open_games is the count of INCONCLUSIVE packet rows, NOT all active conditional windows. Zero cannot establish no valid conditional. NOT_CERTIFIED means analytical review is not proved by the packet and may exist in separately bound revalidation/research evidence; recover that evidence before claiming all such games unreviewed. Queue membership/counts are neither completed research nor proof none occurred. Resolve the actual remaining material research by game under the existing all-market standard. Missing consensus/constituent identity retains an honest allowed fallback label; it does not itself invalidate an otherwise qualified fallback observation, and missing venue confirmation alone does not block a supported recommendation. Preserve conditional source qualification and all current integrity/decision gates. Do not demand exhaustive final all-player/weather certainty or force/copy PASS. Preserve sole Monitor Hot Sheet ownership and typed downstream scope. If a concurrent manual Monitor is advancing the same surfaces, recover its latest accepted state, avoid conflicting writes/duplicate paid acquisition, and name independent unfinished work without treating STARTED as completed. This correction changes interpretation/instructions only; installed correction is not proof of a completed natural Evening run.
+
+
+CFB DATA GAP FOLLOW-THROUGH — Apply evidence/operational/CFB_DATA_GAP_FOLLOW_THROUGH_20261113.md in this existing run. Carry unresolved game IDs and material changes into the existing Monitor handoff before the practical cutoff. Verify the durable receipt before closure.
