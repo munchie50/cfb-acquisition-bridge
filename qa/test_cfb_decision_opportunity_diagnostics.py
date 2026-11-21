@@ -60,6 +60,22 @@ class DecisionDiagnosticsTests(unittest.TestCase):
         self.assertEqual(out["rows"][5]["category"], "ANALYTICAL_RECHECK_NOT_CANONICAL_DECISION")
         self.assertFalse(out["rows"][0]["bet_authorized"])
 
+    def test_malformed_section_fails_closed(self):
+        with self.assertRaises(ValueError):
+            analyze({"reports": {"sat": None}})
+
+    def test_malformed_rows_fails_closed(self):
+        with self.assertRaises(ValueError):
+            analyze({"reports": {"sat": {"rows": "not a list"}}})
+
+    def test_unidentified_game_fails_closed(self):
+        with self.assertRaises(ValueError):
+            analyze(review([{"six_markets": {"over": "PASS"}}]))
+
+    def test_empty_reports_fails_closed(self):
+        with self.assertRaises(ValueError):
+            analyze({"reports": {}})
+
     def test_missing_reports_fails_closed(self):
         with self.assertRaises(ValueError):
             analyze({})
