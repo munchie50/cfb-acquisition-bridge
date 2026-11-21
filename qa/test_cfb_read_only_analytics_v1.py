@@ -63,4 +63,11 @@ conflict["_deadline"] = timestamp(conflict["decision_deadline"])
 conflicted = analyze(rows + [conflict], [], as_of)
 require(conflicted["status"] == "INCOMPLETE", "conflicted[\"status\"] == \"INCOMPLETE\"")
 require(not conflicted["market_movements"], "not conflicted[\"market_movements\"]")
+with tempfile.TemporaryDirectory() as d:
+    p = Path(d) / "invalid_market.jsonl"
+    invalid = row("PASS", "2026-11-20T18:00:00Z", "CERTIFIED_MARKET", market="spread", side="home", book="BOOK_A", price_unit="points", quote_type="spread", price=-3.5)
+    del invalid["book"]
+    p.write_text(json.dumps(invalid), encoding="utf-8")
+    loaded, errors = load(p, as_of)
+    require(not loaded and "incomplete or invalid certified market quote" in errors[0], "malformed market quote must fail closed")
 print("QA_PASS: deterministic read-only analytics invariants")
