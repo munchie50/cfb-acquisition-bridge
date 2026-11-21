@@ -102,7 +102,7 @@ def analyze(data):
     conflict_count = counts.get("DUPLICATE_IDENTITY_CONFLICT", 0)
     unclassified_count = counts.get("UNCLASSIFIED_REVIEW", 0)
     quote_unavailable_count = counts.get("QUOTE_UNAVAILABLE_NOT_GRADED", 0)
-    reviewed_count = len(rows) - missing_count - conflict_count - unclassified_count
+    reviewed_count = len(rows) - missing_count - conflict_count - unclassified_count - quote_unavailable_count
     return {"schema": "CFB_DECISION_OPPORTUNITY_DIAGNOSTICS_V1",
             "status": "READ_ONLY_NOT_PRODUCTION_NOT_WAGER_AUTHORITY",
             "game_count": len(seen), "market_slots": len(rows),
