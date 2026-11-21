@@ -66,7 +66,7 @@ def analyze(data):
             price_signal = any(word in lower for word in PRICE_WORDS)
             football_signal = any(word in lower for word in FOOTBALL_WORDS)
             # A price mention does not establish price-only causation.
-            if raw is None:
+            if raw is None or state == "UNSPECIFIED":
                 category = "MARKET_REVIEW_NOT_EXTRACTABLE"
             elif state in {"CONDITIONAL", "CONDITIONAL_PROPOSAL"}:
                 category = "PROPOSAL_REQUIRES_QUALIFICATION"
@@ -112,7 +112,7 @@ def analyze(data):
                 "Review-source state is not canonical decision state; analytical_status is retained separately.",
                 "Keyword price factors are not proof that price alone caused PASS.",
                 "No calibrated probability, EV, quote qualification, or ranking is inferred.",
-                "Missing review slots are visible, not converted to PASS.",
+                "Missing or unrecognized market state is not counted as a completed review.",
                 "Duplicate game identities mark all retained market slots conflicted and quarantine later rows."
             ], "rows": rows}
 
