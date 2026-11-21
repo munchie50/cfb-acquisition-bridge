@@ -92,3 +92,17 @@ A public-web lookup during this continuation located the CBS Sports Week12 FBS o
 Illustrative source cross-check, not actionable quotes: Ohio State @ Nebraska appears on both boards around Ohio State -3.5 / total 41.5; BYU @ Kansas appears around BYU -5.5; Wisconsin @ Purdue appears around Wisconsin -5.5 to -6, with mixed-book spread-side disagreement on CBS. These are independently surfaced public displays, NOT same-book matched pairs or verified live offers. Preserve original cutoff expiration for Ohio State @ Nebraska and QB reassessment for Wisconsin @ Purdue. No accepted model edge or confidence rank inferred from these displays.
 
 **Evidence state:** public market discovery newly performed; 58/58 source-saved slate coverage retained; qualified current operator offers 0/58; complete six-market gate NOT VERIFIED. Source retrieval clock is not equivalent to bookmaker update time. No canonical decision or wager mutation.
+
+## Nov21 supplemental named-book market discovery — newly retrieved (NOT executable)
+
+New public-web discovery on Nov21 located BetSharp's 23-game Top-25-filtered odds board at https://betsharp.com/ncaaf/?day=2026-11-21&top25=1 and ATS.io's bookmaker comparison at https://www.ats.io/odds/college-football/. These identify individual sportsbook names and quote sides, unlike the earlier mixed-book fallback. However **no per-offer last-update timestamp, venue/jurisdiction execution confirmation, full six-market per-game certification, or accepted selector decision** was established. The filtered 23-game board cannot replace 58-game Saturday coverage. Public webpage crawl time is not an offer-update clock.
+
+| Matchup | Newly surfaced identified-book observations (source display, not executable) | Frozen reference | Deadline / gate |
+|---|---|---|---|
+| Ohio State @ Nebraska | BetSharp: Ohio State -3.5 -104 FanDuel; Nebraska +3.5 -108 Kalshi; total O41.5 -105 FanDuel / U41.5 -110 BetMGM | Nebraska -4.9 / 54.5 / 0.596 home | Original 07CT planning cutoff passed; HOLD |
+| BYU @ Kansas | BetSharp: BYU -5.5 -105 DraftKings; Kansas +5.5 -110 BetRivers; O47.5 -104 Kalshi / U46.5 -105 DraftKings | BYU -6.4 / 52.7 / 0.331 home | Named-book discovery only; total sides differ; HOLD |
+| Vanderbilt @ Florida | BetSharp: Vanderbilt +13.5 -110 BetMGM; Florida -13.5 -105 DraftKings; O46.5 -109 BetRivers / U46.5 -105 BetMGM | Florida -15.3 / 56.5 / 0.822 home | Named-book discovery only; HOLD |
+| Maryland @ USC | BetSharp: Maryland +17.5 -104 Kalshi; USC -17.5 -110 DraftKings; O57.5 -105 BetMGM / U57.5 -110 FanDuel | Refer to frozen Saturday row | Original 07CT planning cutoff passed; HOLD |
+| Utah @ TCU | BetSharp: Utah -8.5 -108 DraftKings; TCU +8.5 -108 BetMGM; O46.5 -108 DraftKings / U46.5 -107 BetRivers | Utah -2.2 / 49.5 / 0.445 home | Named-book discovery only; HOLD |
+
+**Drift discovery:** BetSharp's source displays sportsbook-specific sides drawn from different operators; it is not a single-book two-sided market. The original frozen prediction must not be replaced with the current market line. The Ohio State/Nebraska planning cutoff is already expired even though the public page still shows odds. Market discovery is now **nonzero**, but the certified qualified-offer count remains **0/58** until timestamp, venue, full-market and original-cutoff gates pass. No bet/parlay authorization.
