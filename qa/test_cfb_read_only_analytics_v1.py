@@ -14,8 +14,8 @@ def row(status, observed, kind="ENGINE_DECISION", **extra):
 as_of = timestamp("2026-11-20T22:00:00Z")
 rows = [row("PASS", "2026-11-20T18:00:00Z"),
         row("REJECT", "2026-11-20T20:00:00Z", reason="NO_VENUE_QUOTE"),
-        row("PASS", "2026-11-20T18:00:00Z", "CERTIFIED_MARKET", market="spread", side="home", price=-3.5),
-        row("PASS", "2026-11-20T21:00:00Z", "CERTIFIED_MARKET", market="spread", side="home", price=-4.0)]
+        row("PASS", "2026-11-20T18:00:00Z", "CERTIFIED_MARKET", market="spread", side="home", book="BOOK_A", price_unit="points", quote_type="spread", price=-3.5),
+        row("PASS", "2026-11-20T21:00:00Z", "CERTIFIED_MARKET", market="spread", side="home", book="BOOK_A", price_unit="points", quote_type="spread", price=-4.0)]
 for r in rows:
     r["_observed"] = timestamp(r["observed_at"])
     r["_deadline"] = timestamp(r["decision_deadline"])
@@ -26,4 +26,9 @@ assert result["nonpass_reasons"]["NO_VENUE_QUOTE"] == 1
 assert result["market_movements"][0]["movement"] == -0.5
 assert result["market_movements"][0]["label"] == "OBSERVED_MOVEMENT_NOT_CLV"
 assert analyze([], ["MISSING_INPUT"], as_of)["status"] == "INCOMPLETE"
+other = row("PASS", "2026-11-20T21:30:00Z", "CERTIFIED_MARKET", market="spread", side="home", book="BOOK_B", price_unit="points", quote_type="spread", price=-9.0)
+other["_observed"] = timestamp(other["observed_at"])
+other["_deadline"] = timestamp(other["decision_deadline"])
+assert len(analyze(rows + [other], [], as_of)["market_movements"]) == 1
+assert analyze(rows + [other], [], as_of)["market_movements"][0]["movement"] == -0.5
 print("QA_PASS: deterministic read-only analytics invariants")
