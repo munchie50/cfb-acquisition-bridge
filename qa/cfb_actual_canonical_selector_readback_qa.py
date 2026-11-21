@@ -63,6 +63,13 @@ def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_in
         if not resolved.is_relative_to(root.resolve()):
             raise ValueError("publication path escapes repository")
         return resolved.read_bytes().decode("utf-8")
+    # Selector binding is not acceptance. Fail closed on explicitly provisional
+    # artifacts even when every Git pointer and decision hash matches.
+    sheet_text = loader(path)
+    first_line = next((line.strip() for line in sheet_text.splitlines() if line.strip()), '')
+    provisional_markers = ('NONCANONICAL', 'NOT ACCEPTED', 'NOT_ACCEPTED', 'NO ACTIONABLE WAGERS')
+    if any(marker in first_line.upper() for marker in provisional_markers):
+        raise ValueError('explicitly provisional current sheet cannot pass canonical QA readback')
     result = publication(index, ledger, loader, as_of)
     if result["sheet_blob"] != expected_sheet:
         raise ValueError('staged sheet differs from pinned repository snapshot')
