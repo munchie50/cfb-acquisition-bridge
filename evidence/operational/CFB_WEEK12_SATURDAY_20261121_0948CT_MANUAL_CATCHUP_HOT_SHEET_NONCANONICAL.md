@@ -2,6 +2,12 @@
 
 **STATUS: UPDATED MANUAL TRIAGE / NOT CANONICAL / NOT EXECUTABLE.** Freshness refers to the November 21 reconciliation and explicit as-of cutoff classification, **not** to fresh sportsbook quotes, current injury news, or newly accepted engine decisions. No executable wagers or parlays are authorized by this document. The last source-derived quotes are from the November 19 mixed-book fallback; those stale quotes are intentionally **not reproduced** as current lines.
 
+## Nov21 overdue-monitor material-news correction — supersedes Iowa watchlist status only
+
+**Iowa @ Illinois: PERSONNEL_HOLD / NO_BET.** Nov21 DraftKings Network pregame reporting identifies Illinois QB Katin Houser as questionable, backup Michael Clayton II as unavailable, and third-string Carson Boyd as a potential starter. This is a material offensive personnel uncertainty not resolved by the frozen Iowa -1.2 estimate or the public Iowa -8.5 market. Source: https://dknetwork.draftkings.com/2026/11/21/illinois-fighting-illini-vs-iowa-hawkeyes-prediction-pick-for-college-football-on-11-21-26/ . Independently observed LineSmart six-side DraftKings display was timestamped Nov21 00:15 ET; it is not a current venue-qualified offer: https://linesmart.app/ncaaf/games/iowa-hawkeyes-at-illinois-fighting-illini-2026-11-21/ . An additional DraftKings Network article lists kickoff 14:15 ET while LineSmart lists 14:30 ET; this 15-minute conflict means the saved 13:30 CT kickoff is RETAINED_UNVERIFIED, not a qualified timing authority. Do not use either report to extend an original earlier decision deadline.
+
+**Monitor execution boundary:** Existing Market Monitor run_now invoked inline; actual manual receipt evidence/run_receipts/CFB_MARKET_MONITOR_20261121_MANUAL_OVERDUE_INLINE_1020CT.md blob dc9c9c4f9a79e3dce5b9aa173ce813db67ea9eec (prior readback, later amended). RUN_INCOMPLETE / NO_BET. Historical 70-game CBS normalization and compiler are retained. No original selector execution or canonical ledger publication. This note is NONCANONICAL research only and does not modify 58 frozen rows, exclusions, or cutoffs.
+
 ## Nov21 10:10 CT current decision-state refresh — supersedes older desk status only
 
 **FRESHNESS LIMITATION:** This refresh is a verified reconciliation of the preserved 58-game Hot Sheet and already collected Nov21 public market/personnel observations. It is **not** a new qualified sportsbook pull, CBS ingestion, selector run, or approved publication. All 58 original rows and cutoffs remain unchanged. **Approved wagers: 0.**
