@@ -60,6 +60,16 @@ class DecisionDiagnosticsTests(unittest.TestCase):
         self.assertEqual(out["rows"][5]["category"], "ANALYTICAL_RECHECK_NOT_CANONICAL_DECISION")
         self.assertFalse(out["rows"][0]["bet_authorized"])
 
+    def test_empty_market_object_does_not_inflate_coverage(self):
+        out = analyze(review([{"game_id": "8", "six_markets": {"over": {}}}]))
+        self.assertEqual(out["missing_market_slots"], 6)
+        self.assertEqual(out["reviewed_nonconflicted_market_slots"], 0)
+
+    def test_unrecognized_market_state_does_not_inflate_coverage(self):
+        out = analyze(review([{"game_id": "9", "six_markets": {"over": {"state": "NOT_A_DECISION", "reason": "unknown"}}}]))
+        self.assertEqual(out["unclassified_market_slots"], 1)
+        self.assertEqual(out["reviewed_nonconflicted_market_slots"], 0)
+
     def test_malformed_section_fails_closed(self):
         with self.assertRaises(ValueError):
             analyze({"reports": {"sat": None}})
