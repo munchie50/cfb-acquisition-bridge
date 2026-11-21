@@ -137,13 +137,20 @@ def main():
     ap.add_argument("--repo", type=Path, required=True)
     ap.add_argument("--manifest", type=Path, required=True)
     ap.add_argument("--lineage", type=Path, required=True)
+    ap.add_argument("--sheet", type=Path, help="Optional preview sheet for paired market/decision binding")
     args = ap.parse_args()
     manifest = json.loads(args.manifest.read_text())
+    lineage = args.lineage.read_text()
+    if args.sheet:
+        result = inspect_pair(args.repo, manifest, args.sheet.read_text(), lineage)
+        print(json.dumps({**result, "cycle_id": manifest["cycle_id"],
+                          "as_of_utc": manifest["as_of_utc"]}, sort_keys=True))
+        return
     outputs = reconstruct(args.repo, manifest)
     import sys
     sys.path.insert(0, str(args.repo / "scripts"))
     import cfb_week12_publication as week
-    result = week.bootstrap_check(outputs["market"], outputs["decision"], args.lineage.read_text())
+    result = week.bootstrap_check(outputs["market"], outputs["decision"], lineage)
     print(json.dumps({"status": "READ_ONLY_PROBE_ONLY", "bootstrap": result,
                       "cycle_id": manifest["cycle_id"], "as_of_utc": manifest["as_of_utc"]}, sort_keys=True))
 
