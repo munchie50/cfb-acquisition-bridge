@@ -11,7 +11,13 @@ import sys
 from pathlib import Path
 
 
-def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_index: str, expected_ledger: str, expected_sheet: str):
+def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_index: str, expected_ledger: str, expected_sheet: str, expected_navigation_module: str, expected_binding_module: str):
+    root = root.resolve()
+    index_path = index_path.resolve()
+    ledger_path = ledger_path.resolve()
+    for p in (index_path, ledger_path):
+        if not p.is_relative_to(root):
+            raise ValueError('input file escapes pinned repository root')
     sys.path.insert(0, str(root / "scripts"))
     from cfb_recovery_navigation_reader import read
     from cfb_hot_sheet_current_decision_binding_gate import (
@@ -19,9 +25,15 @@ def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_in
     )
     index = index_path.read_bytes().decode("utf-8")
     ledger = ledger_path.read_bytes().decode("utf-8")
-    for name, digest in [('index', expected_index), ('ledger', expected_ledger), ('sheet', expected_sheet)]:
+    for name, digest in [('index', expected_index), ('ledger', expected_ledger), ('sheet', expected_sheet),
+                         ('navigation module', expected_navigation_module), ('binding module', expected_binding_module)]:
         if len(digest) != 40 or any(c not in '0123456789abcdef' for c in digest):
             raise ValueError('invalid expected ' + name + ' blob SHA')
+    modules = [('scripts/cfb_recovery_navigation_reader.py', expected_navigation_module),
+               ('scripts/cfb_hot_sheet_current_decision_binding_gate.py', expected_binding_module)]
+    for relative, expected in modules:
+        if blob((root / relative).read_bytes().decode('utf-8')) != expected:
+            raise ValueError('staged original Python module differs from pinned snapshot: ' + relative)
     if blob(index) != expected_index or blob(ledger) != expected_ledger:
         raise ValueError('staged index or ledger differs from pinned repository snapshot')
     nav = read(index, as_of)
@@ -75,6 +87,9 @@ if __name__ == "__main__":
     ap.add_argument("--expected-index-blob", required=True)
     ap.add_argument("--expected-ledger-blob", required=True)
     ap.add_argument("--expected-sheet-blob", required=True)
+    ap.add_argument("--expected-navigation-module-blob", required=True)
+    ap.add_argument("--expected-binding-module-blob", required=True)
     a = ap.parse_args()
     run(a.repo.resolve(), a.index.resolve(), a.ledger.resolve(), a.as_of,
-        a.expected_index_blob, a.expected_ledger_blob, a.expected_sheet_blob)
+        a.expected_index_blob, a.expected_ledger_blob, a.expected_sheet_blob,
+        a.expected_navigation_module_blob, a.expected_binding_module_blob)
