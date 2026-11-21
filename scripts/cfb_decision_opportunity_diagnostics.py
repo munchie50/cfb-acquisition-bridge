@@ -57,10 +57,10 @@ def analyze(data):
         seen.add(game_id)
         market_sources = [key for key in ("six_markets", "six_market_review", "branches")
                           if isinstance(game.get(key), dict)]
-        if len(market_sources) != 1:
-            raise ValueError("Expected exactly one six-market review source for game " + game_id)
-        source_shapes[game_id] = market_sources[0]
-        markets = game[market_sources[0]]
+        if len(market_sources) > 1:
+            raise ValueError("Conflicting six-market review sources for game " + game_id)
+        source_shapes[game_id] = market_sources[0] if market_sources else "MISSING"
+        markets = game[market_sources[0]] if market_sources else {}
         for market in MARKETS:
             raw = markets.get(market)
             if raw is None:
