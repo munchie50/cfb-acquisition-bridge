@@ -40,6 +40,13 @@ def load(path, as_of):
             if row["source_kind"] == "CERTIFIED_MARKET":
                 if not row.get("source_path") or not re.fullmatch(r"[0-9a-f]{40}", str(row.get("source_blob", ""))):
                     raise ValueError("certified market provenance missing")
+            if row["source_kind"] == "ENGINE_DECISION":
+                if not row.get("decision_at"):
+                    raise ValueError("decision_at required for lateness")
+                decision_at = timestamp(row["decision_at"])
+                if decision_at > as_of or decision_at < observed:
+                    raise ValueError("invalid decision_at chronology")
+                row["_decision_at"] = decision_at
             if row.get("actual_wager") and row["source_kind"] != "EXECUTION":
                 raise ValueError("execution evidence boundary")
             row["_observed"] = observed
@@ -52,7 +59,7 @@ def analyze(rows, errors, as_of):
     by_status = Counter(r["status"] for r in rows)
     by_source = Counter(r["source_kind"] for r in rows)
     by_reason = Counter(r.get("reason", "UNSPECIFIED") for r in rows if r["status"] != "PASS")
-    late = sum(r["_observed"] > r["_deadline"] for r in rows if r["source_kind"] == "ENGINE_DECISION")
+    late = sum(r["_decision_at"] > r["_deadline"] for r in rows if r["source_kind"] == "ENGINE_DECISION")
     # Never pair different books, units, or quote types as one movement series.
     quotes = defaultdict(list)
     for r in rows:
@@ -62,6 +69,9 @@ def analyze(rows, errors, as_of):
     for key, observations in sorted(quotes.items()):
         observations.sort(key=lambda r: r["_observed"])
         if len(observations) < 2:
+            continue
+        if any(observations[i]["_observed"] == observations[i-1]["_observed"] and observations[i]["price"] != observations[i-1]["price"] for i in range(1, len(observations))):
+            errors.append("conflicting same-time market observations for " + repr(key))
             continue
         first, last = observations[0], observations[-1]
         movement.append({"event_id": key[0], "market": key[1], "side": key[2], "book": key[3], "price_unit": key[4], "quote_type": key[5],
