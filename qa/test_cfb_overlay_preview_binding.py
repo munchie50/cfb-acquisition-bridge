@@ -172,11 +172,11 @@ class OverlayBindingTests(unittest.TestCase):
 
     def test_duplicate_and_reordered_cycles_rejected_even_if_streams_agree(self):
         import json
-        base = b"base\\n"
+        base = b"base\n"
         def packet(surface, cycle, instant):
-            return ("\\x60\\x60\\x60cfb-week12-" + surface + "-v1\\n" +
+            return ("\x60\x60\x60cfb-week12-" + surface + "-v1\n" +
                     json.dumps({"cycle_id": cycle, "as_of_utc": instant, "rows": []}) +
-                    "\\n\\x60\\x60\\x60\\n").encode()
+                    "\n\x60\x60\x60\n").encode()
         def check(boundaries, expected):
             market = b"".join(packet("market", *b) for b in boundaries)
             decision = b"".join(packet("decision", *b) for b in boundaries)
