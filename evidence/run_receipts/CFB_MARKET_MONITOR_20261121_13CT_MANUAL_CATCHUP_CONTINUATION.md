@@ -38,3 +38,9 @@ Do not repeat abandoned DNS troubleshooting or already completed CBS 70/70 norma
 - No local runnable checkout: direct attempt failed at host resolution; abandoned network diagnostics not reopened. Connector reads remain available. Commit-associated workflow query returned no PR-triggered runs, not an exhaustive CI inventory.
 - Tests remain EXECUTION_UNVERIFIED, not PASS. Original selector still rejects noncanonical preview and requires canonical recovery pointer; no authorized canonical promotion.
 - Next: inspect provenance of changed QA blob, execute real regression suite in an authorized runner, then actual pinned Week12 reconstruction; do not rerun completed CBS acquisition.
+
+## Resolved false-positive drift — verified GitHub commit provenance
+- GitHub commit-history query for qa/test_cfb_overlay_preview_binding.py shows latest path change ac6c23bb0c1e315a2acdbc951ebbf1f4ceb0d01a (fixture escaping correction).
+- GitHub commit details for ac6c23b identify resulting file blob 6c4a7f1ed7cdb670c447fde8d2bc4174c9658b89.
+- Fresh fetch_file at exact commit and at main both return that same blob, with identical 11134-character content. The earlier reported 4985caa326dc7a41cb0c2273231d16b6d8d54bb9 was a bad prior readback identity, NOT evidence of an intervening modification.
+- Close QA-file drift finding as FALSE_POSITIVE_PROVENANCE; no code rewrite necessary. Preserve corrected fixture and focus next on actual test execution and real-data integration. Do not mark execution PASS from GitHub commit identity alone.
