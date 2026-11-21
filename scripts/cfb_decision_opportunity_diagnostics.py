@@ -89,11 +89,21 @@ def analyze(data):
                          "reason": reason,
                          "bet_authorized": False})
     counts = Counter(r["category"] for r in rows)
+    section_counts = {}
+    for row in rows:
+        section_counts.setdefault(row["section"], Counter())[row["category"]] += 1
+    missing_count = counts.get("MARKET_REVIEW_NOT_EXTRACTABLE", 0)
+    conflict_count = counts.get("DUPLICATE_IDENTITY_CONFLICT", 0)
+    reviewed_count = len(rows) - missing_count - conflict_count
     return {"schema": "CFB_DECISION_OPPORTUNITY_DIAGNOSTICS_V1",
             "status": "READ_ONLY_NOT_PRODUCTION_NOT_WAGER_AUTHORITY",
             "game_count": len(seen), "market_slots": len(rows),
             "duplicate_identity_conflicts": duplicates,
             "market_slot_counts": dict(sorted(counts.items())),
+            "reviewed_nonconflicted_market_slots": reviewed_count,
+            "missing_market_slots": missing_count,
+            "conflicted_market_slots": conflict_count,
+            "section_market_slot_counts": {k: dict(sorted(v.items())) for k, v in section_counts.items()},
             "method_limitations": [
                 "Review-source state is not canonical decision state; analytical_status is retained separately.",
                 "Keyword price factors are not proof that price alone caused PASS.",
