@@ -17,3 +17,7 @@ Every week maintain: hypothesis, evidence window and immutable input refs, measu
 
 ## Verification stages
 BUILT = source committed; EXECUTED = actual Python exit/stdout captured; VERIFIED = exact input/output digests and independent readback; ACCEPTED = governed contract and QA passed; PRODUCTION = demonstrated in natural scheduled run. No stage skipping.
+
+## Nov20 market-movement isolation correction
+
+The first analytics implementation risked combining prices from different sportsbooks or incompatible quote units. Corrected source commit `b0913d1dc0bab8d7949a229cd732c9e1d7de917f` groups by event, market, side, book, price_unit and quote_type, and requires these fields for movement observations. Updated isolated QA commit `e222804baceaeb5af8530c0913ed2879cddec552` adds a different-book contamination case. This is **CORRECTED / PERSISTED** only, not EXECUTED or accepted. Existing JSONL adapters must supply these fields and a genuine certified provenance reference before any movement claim. Do not silently aggregate incompatible odds, lines, venue quotes, or snapshots.
