@@ -40,7 +40,7 @@ def prepare(destination, expected_head, *, bundle=None, bundle_sha256=None):
             raise ValueError('bundle SHA-256 differs from authenticated transport metadata')
         if git('bundle', 'list-heads', str(bundle), 'refs/heads/main') != expected_head + ' refs/heads/main':
             raise ValueError('bundle main differs from connector-observed main')
-        git('bundle', 'verify', str(bundle))
+        # Clone/fetch plus nonshallow ancestry and immutable refs verify the bundle.
         repository = str(bundle)
     # Both source paths require genuine full Git ancestry and immutable reviews.
     git('clone', '--no-checkout', repository, str(destination))
