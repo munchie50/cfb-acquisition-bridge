@@ -44,3 +44,11 @@ Do not repeat abandoned DNS troubleshooting or already completed CBS 70/70 norma
 - GitHub commit details for ac6c23b identify resulting file blob 6c4a7f1ed7cdb670c447fde8d2bc4174c9658b89.
 - Fresh fetch_file at exact commit and at main both return that same blob, with identical 11134-character content. The earlier reported 4985caa326dc7a41cb0c2273231d16b6d8d54bb9 was a bad prior readback identity, NOT evidence of an intervening modification.
 - Close QA-file drift finding as FALSE_POSITIVE_PROVENANCE; no code rewrite necessary. Preserve corrected fixture and focus next on actual test execution and real-data integration. Do not mark execution PASS from GitHub commit identity alone.
+
+## Confirmed root-cause correction — wrong first-failure path
+- Saturday 13CT receipt first_failure attempted evidence/operational/CFB_WEEK12_20261120_MANUAL_PROVISIONAL_RELEASE.md and got HTTP 404.
+- Fresh GitHub directory enumeration of evidence/operational on main reveals the ACTUAL release path evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-20_MANUAL_PROVISIONAL_RELEASE.md, Git blob 80d2974a40e07481f4886568ee79ca8c7109290b. Fresh fetch_file succeeded and read its full release contract.
+- Thus the 404 was a WRONG_PATH retrieval defect, not proof the release was missing or that source acquisition needed restarting. Existing release explicitly authorizes noncanonical manual delivery of the preserved 70-game preview, but disclaims canonical acceptance, original deadline satisfaction and wagering authority.
+- Canonical selector design evidence/operational/CFB_WEEK12_SELECTOR_PUBLICATION_TRANSACTION_DESIGN_20261120.md blob 90573bccd14ad5139628fdb40b992b705be10536 independently confirms the selector mismatch is distinct and already designed as a governed, unapproved transaction; don't duplicate or promote its detached QA candidates.
+- Operational fix for future Monitor handoffs: use the actual verified release path above and follow its linked rendered preview. Do not edit historical immutable run receipts or loosen canonical gate. Any production automation prompt edit requires fresh prompt read and scoped change review.
+- Remaining: test execution evidence and canonical integration remain unverified. No accepted wagers or RUN_PASS.
