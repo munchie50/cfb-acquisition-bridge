@@ -31,3 +31,20 @@ Prioritize current per-offer refresh and QB/roster evidence for **LSU–Tennesse
 **Source integrity defect:** Generic matchup injury aggregators displayed older October questionable statuses for players while current conference reports showed different Nov20 statuses. Prioritize dated official conference availability over undated/stale aggregator injury boxes. This fixes source-priority drift in manual review, but does not mutate frozen predictions or bypass original selector.
 
 **Execution gate remains:** No current locally executable six-side quote, no accepted full QB/roster reconciliation, and no canonical selector pass; therefore 0 approved bets. Do not label the two partial personnel reviews as full 58-game clearance.
+
+## Nov21 additional cross-slate opposite-favorite drift audit — same-day public board
+
+**Source:** https://betsharp.com/ncaaf/?day=2026-11-21&top25=1 (23-game Top25-filtered public comparison, retrieved Nov21; per-offer timestamps not certified). Preserve FIRST_FROZEN predictions, no model refit and no automatic wagers.
+
+| Game | Frozen favorite and margin | Nov21 displayed market favorite (operator on selected away side) | Discrepancy | Decision |
+|---|---|---|---|---|
+| UCLA @ Michigan | Michigan -3.0 | UCLA -3.5 (Kalshi, -108) | Favorite reverses; 6.5-point direction difference | HOLD |
+| Arizona @ Kansas State | Kansas State -13.8 | Arizona -7.5 (BetMGM, -105) | Favorite reverses; 21.3-point direction difference | HOLD |
+| Georgia @ South Carolina | Georgia -3.2 | Georgia -15 (BetMGM, -108) | Same favorite, 11.8-point margin gap | HOLD |
+| SMU @ Notre Dame | Notre Dame -11.6 | Notre Dame -21 (Fanatics, -105) | Same favorite, 9.4-point margin gap | HOLD |
+| Utah @ TCU | Utah -2.2 | Utah -8.5 (DraftKings, -108) | Same favorite, 6.3-point margin gap | HOLD |
+| Virginia Tech @ Miami | Miami -12.0 | Miami -21 (Fanatics, -105) | Same favorite, 9.0-point margin gap | HOLD |
+
+**Scope:** these are *six newly tabulated* examples from the 23-game filtered board; not six accepted full market reviews. The selected comparison may combine operators and clocks across columns, and the local execution/cutoff/personnel selector gates have not passed. In particular Kalshi display is not a sportsbook execution qualification. No implied point value is certified. **Zero approved casino picks** remains correct.
+
+**Diagnostic priority:** opposite-favorite disagreements (UCLA–Michigan and Arizona–Kansas State) outrank small market price differences for data/roster/schedule sanity checks; large same-direction discrepancies next. The purpose is to prevent a false confidence ranking based solely on absolute difference between frozen and market spreads. The correct output remains HOLD until independently qualified.
