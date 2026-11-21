@@ -10,6 +10,11 @@ Status: PREPARED / NOT EXECUTED. Operational playbook only; no change to authori
 - 09:00 Weekly QA: inspect existing scheduled task and its receipt separately. QA green does not promote Market Monitor; QA failure does not silently modify champion.
 - Before 11:00: either independently verified canonical accepted Hot Sheet, or prominently labeled INCOMPLETE informational sheet with no executable recommendation. Never present historical Nov19 mixed-book displays as current or executable. Preserve any missed reconciliation deadlines and original cutoffs.
 - 13:00 Market Monitor: check actual run timing and engine receipt, reconcile later Saturday games (42) and the full 70-game weekly obligation; no backdating or cutoff extensions. After kickoff, no pregame issuance for that game.
+- 16:30 Engine Health: inspect the existing daily task's actual start/end and engine receipt, independently compare the morning and afternoon Market Monitor evidence and unresolved gaps. Health completion does not substitute for accepted Hot Sheet publication.
+- Saturday evening: the existing Evening Availability task is scheduled Wednesday/Thursday/Friday at 19:30 CT, **not Saturday**. Do not wait for or promise an automatic Saturday evening recovery. Any further same-day recovery must be explicitly authorized and evidenced, without creating a fifth automation.
+
+## Verified live automation schedule snapshot (read-only Nov20)
+Market Monitor: enabled, 07:00 and 13:00 CT daily; Weekly QA: enabled, Saturday/Sunday 09:00 CT; Engine Health: enabled, daily 16:30 CT; Evening Availability: enabled, Wednesday/Thursday/Friday 19:30 CT only. Exactly four tasks observed; no schedules or prompts mutated by this plan audit. Do not confuse a planned manual recovery with an automatic additional Saturday run.
 
 ## Acceptance evidence and escalation
 Require: verified current source acquisition, material roster/news assessment, qualified operator/jurisdiction/timestamp market evidence, six-market full-slate coverage or explicit unresolved counts, frozen champion selector and deadline integrity, accepted canonical write plus independent readback, complete run receipt. No qualified offer => no executable wager/parlay. Separate historical model win probability from spread-cover probability and betting edge. Track due/blocked/verified counts explicitly.
