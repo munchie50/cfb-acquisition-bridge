@@ -72,6 +72,8 @@ def analyze(data):
                 category = "PROPOSAL_REQUIRES_QUALIFICATION"
             elif state == "LEAN":
                 category = "LEAN_REQUIRES_REVIEW"
+            elif state == "QUOTE_UNAVAILABLE":
+                category = "QUOTE_UNAVAILABLE_NOT_GRADED"
             elif state in {"SPECIFIC_RECHECK", "RESEARCH_LEAN"}:
                 category = "ANALYTICAL_RECHECK_NOT_CANONICAL_DECISION"
             elif state.startswith("PASS_"):
@@ -99,6 +101,7 @@ def analyze(data):
     missing_count = counts.get("MARKET_REVIEW_NOT_EXTRACTABLE", 0)
     conflict_count = counts.get("DUPLICATE_IDENTITY_CONFLICT", 0)
     unclassified_count = counts.get("UNCLASSIFIED_REVIEW", 0)
+    quote_unavailable_count = counts.get("QUOTE_UNAVAILABLE_NOT_GRADED", 0)
     reviewed_count = len(rows) - missing_count - conflict_count - unclassified_count
     return {"schema": "CFB_DECISION_OPPORTUNITY_DIAGNOSTICS_V1",
             "status": "READ_ONLY_NOT_PRODUCTION_NOT_WAGER_AUTHORITY",
@@ -108,12 +111,14 @@ def analyze(data):
             "reviewed_nonconflicted_market_slots": reviewed_count,
             "missing_market_slots": missing_count,
             "unclassified_market_slots": unclassified_count,
+            "quote_unavailable_market_slots": quote_unavailable_count,
             "conflicted_market_slots": conflict_count,
             "section_market_slot_counts": {k: dict(sorted(v.items())) for k, v in section_counts.items()},
             "method_limitations": [
                 "Review-source state is not canonical decision state; analytical_status is retained separately.",
                 "Keyword price factors are not proof that price alone caused PASS.",
                 "No calibrated probability, EV, quote qualification, or ranking is inferred.",
+                "QUOTE_UNAVAILABLE is a source-availability state, not a graded price or betting decision.",
                 "Missing or unrecognized market state is not counted as a completed review.",
                 "Duplicate game identities mark all retained market slots conflicted and quarantine later rows."
             ], "rows": rows}
