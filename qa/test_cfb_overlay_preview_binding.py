@@ -170,5 +170,34 @@ class OverlayBindingTests(unittest.TestCase):
                 probe.reconstruct(None, manifest(market, divergent))
 
 
+    def test_duplicate_and_reordered_cycles_rejected_even_if_streams_agree(self):
+        import json
+        base = b"base\\n"
+        def packet(surface, cycle, instant):
+            return ("\\x60\\x60\\x60cfb-week12-" + surface + "-v1\\n" +
+                    json.dumps({"cycle_id": cycle, "as_of_utc": instant, "rows": []}) +
+                    "\\n\\x60\\x60\\x60\\n").encode()
+        def check(boundaries, expected):
+            market = b"".join(packet("market", *b) for b in boundaries)
+            decision = b"".join(packet("decision", *b) for b in boundaries)
+            blobs = {probe.git_blob_sha(raw): raw for raw in (base, market, decision)}
+            manifest = {"schema": "cfb-overlay-probe-v1",
+                        "cycle_id": boundaries[-1][0], "as_of_utc": boundaries[-1][1],
+                        "market": {"base": probe.git_blob_sha(base),
+                                   "delta": probe.git_blob_sha(market),
+                                   "expected_blob": probe.git_blob_sha(base + market)},
+                        "decision": {"base": probe.git_blob_sha(base),
+                                     "delta": probe.git_blob_sha(decision),
+                                     "expected_blob": probe.git_blob_sha(base + decision)}}
+            with patch.object(probe, "checked_blob", side_effect=lambda repo, sha: blobs[sha]):
+                with self.assertRaisesRegex(ValueError, expected):
+                    probe.reconstruct(None, manifest)
+        t1 = "2026-11-21T15:00:00Z"
+        t2 = "2026-11-21T16:00:00Z"
+        check([("c1", t1), ("c1", t2)], "duplicate overlay cycle")
+        check([("c1", t2), ("c2", t1)], "reordered or duplicate overlay timestamp")
+        check([("c1", t1), ("c2", t1)], "reordered or duplicate overlay timestamp")
+
+
 if __name__ == "__main__":
     unittest.main()
