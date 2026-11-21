@@ -2,6 +2,14 @@
 
 **STATUS: UPDATED MANUAL TRIAGE / NOT CANONICAL / NOT EXECUTABLE.** Freshness refers to the November 21 reconciliation and explicit as-of cutoff classification, **not** to fresh sportsbook quotes, current injury news, or newly accepted engine decisions. No executable wagers or parlays are authorized by this document. The last source-derived quotes are from the November 19 mixed-book fallback; those stale quotes are intentionally **not reproduced** as current lines.
 
+## Nov21 independent market-source drift check — public displays only
+
+**Iowa @ Illinois: quote-source drift is material.** A DraftKings sportsbook search result crawled five days earlier displays Iowa -6.5, Illinois +6.5, total 43.5, Iowa ML -245, Illinois +200 (https://sportsbook.draftkings.com/leagues/football/ncaaf?category=games&sf218255546=1&subcategory=game-lines). A Nov21 BetSharp comparison shows Iowa -8.5 at DraftKings, and a separate odds-gap board shows Iowa -8.5 at Caesars (https://betsharp.com/ncaaf/?day=2026-11-21&top25=1 ; https://theoddsgap.com/weeklyslate/college-football). These are **different source clocks and possibly different operators**, not a confirmed current DraftKings move. Do not splice either into a same-book six-side offer. The 2-point spread and 3-point total discrepancy is a freshness warning, not model edge or betting authorization.
+
+**Source completeness:** BetSharp Top25 subset covers 23 games, not the 58 Saturday governed games; FantasyData https://fantasydata.com/ncaa-football/odds shows broader six-side rows but no verified locally executable operator and update timestamp. Both are research-only, never 58/58 qualified market coverage.
+
+**Unchanged production state:** 0 independently venue-qualified same-book six-side offers, no executed champion selector, no canonical Hot Sheet publication. Previously closed deadlines remain closed. Preserve Iowa QB/personnel hold and official 13:30 CT kickoff.
+
 ## Nov21 authoritative kickoff reconciliation — Iowa @ Illinois
 
 **RESOLVED: official scheduled kickoff 1:30 PM CT (19:30 UTC).** Illinois official game center https://fightingillini.com/game-center/29216 and Illinois athletics Nov20 release https://d1iubivivot1gj.cloudfront.net/news/2026/11/20/football-illinois-vs-13-iowa-game-sold-out both specify 1:30 PM CT; Iowa's official schedule https://hawkeyesports.com/sports/football/schedule/season/2026-27 independently agrees. Iowa's Nov16 game notes describe 1:35 PM CT, a five-minute operational discrepancy, but both teams' official current schedules agree 1:30. The prior conflicting 2:15 ET editorial report is superseded for scheduled kickoff by primary team sources. Kickoff schedule VERIFIED, original betting decision cutoff still UNVERIFIED; personnel HOLD and unqualified current offers unchanged. This correction affects research metadata only, not frozen ledger or selector.
