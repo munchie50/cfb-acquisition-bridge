@@ -28,3 +28,13 @@ Concrete progress: content-addressed audit/overlay reconstruction safeguards, re
 6. Persist audit increments to THIS FILE (update_file using fresh SHA), with latest repo head and next exact action. New chat: user says 'resume integrity audit' -> first read THIS FILE and authoritative latest sources, continue from next step, do NOT restart.
 
 This file itself must be independently read back and commit confirmed before calling it persisted.
+
+## Nov21 resumed audit increment — Nov16 change baseline (read-only)
+- Reopened this exact checkpoint blob 2553b8624ab47b1ca3bbb13aadbeb10e4a054859 and checked current main commit af1838cde68d62ba72da7b60466c49d3a3e48aa7 (audit checkpoint commit). No restart of previously inspected Nov21 99-commit slice.
+- Established a verified Nov16 reference commit 921a37013bafa70ff840d19238e7d70726c6e1b0, timestamp 2026-11-16 16:26:09 -06:00 (health integrity audit). It is a within-Nov16 baseline, NOT the start-of-week baseline. GitHub compare to main reports 568 commits ahead. The API returned exactly 300 changed files; treat file inventory as potentially TRUNCATED, not exhaustive.
+- Returned 300-file partial inventory: 297 evidence/docs (294 added, 3 modified); 2 runtime scripts added; 1 existing .github workflow modified. The three modified evidence files are evidence/CFB_ENGINE_FOOTBALL_WEEK_OPERATING_CADENCE_CONTRACT_v1_247.md, evidence/operational/CFB_DECISION_WAIT_LEDGER.md (+4692/-0 lines), and evidence/operational/CFB_MARKET_MONITOR_STATE.md. Modified workflow .github/workflows/cfb_qa_hot_sheet_kickoff_section_static_gate.yml. This is an inventory observation, NOT a proof of no other modifications outside the 300-file cap.
+- Search for Nov16 monitor commits independently located 05baaab034e7e240078a6d48cd50c818559266ac at 07:08:28 -06:00 and 53484cd8272a72715fde14c1fa0bc17e9a02de26 at 07:06:31 -06:00, establishing earlier Nov16 commits exist. No assumption that 921a... is earliest.
+- No production/model/ledger/task mutation made in this resumed audit. No tests executed or natural scheduler acceptance proven in this increment. Status AUDIT IN PROGRESS / READ ONLY.
+
+## Exact next action (supersedes the previous step-1 wording only)
+Find an exact Nov15 end-of-day or Nov16 start-of-day Git commit boundary via bounded commit search and compare. Because GitHub compare truncates at 300 changed files, segment comparisons by successive day commits (Nov16,17,18,19,20,21), reconcile union and changed critical paths, and explicitly flag any capped segments. Then compare frozen Champion and canonical pointer/blob identities at baseline vs current. Do not re-run the 99-commit Nov21 slice or repeat DNS diagnostics. Persist next evidence here with fresh SHA/readback.
