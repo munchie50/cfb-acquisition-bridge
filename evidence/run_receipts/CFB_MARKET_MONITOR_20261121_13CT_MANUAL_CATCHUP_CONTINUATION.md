@@ -31,3 +31,10 @@ Do not repeat abandoned DNS troubleshooting or already completed CBS 70/70 norma
 - Attempted local repository access once; unavailable in the current runtime. Do not pursue DNS or checkout diagnostics; avoid fabricating execution evidence.
 - Current result: code and fixture are persisted, QA EXECUTION_UNVERIFIED, original publication BLOCKED, production RUN_INCOMPLETE. No production mutations or schedule changes.
 - First unfinished action remains execute corrected qa/test_cfb_overlay_preview_binding.py and original selector integration QA in a working repository runtime, capture actual stdout/exit codes and pinned commit. Next, validate immutable real Week12 pair and governance gate. No premature acceptance.
+
+## Drift review — later same-day manual continuation
+- Fresh-read source identities on main: overlay probe 16028db308e15399e0c3de036d05d01fa4d5525a; original canonical binding gate 8a6022e3aeea0d5c5fc0e9d455a9b56b4f1eb581. Both unchanged from the previously reviewed versions.
+- QA file now has blob 6c4a7f1ed7cdb670c447fde8d2bc4174c9658b89 rather than the earlier readback SHA after the fixture fix. The corrected packet framing remains present. Treat this as a concurrent content change requiring commit-level provenance before attributing it; do not blindly overwrite.
+- No local runnable checkout: direct attempt failed at host resolution; abandoned network diagnostics not reopened. Connector reads remain available. Commit-associated workflow query returned no PR-triggered runs, not an exhaustive CI inventory.
+- Tests remain EXECUTION_UNVERIFIED, not PASS. Original selector still rejects noncanonical preview and requires canonical recovery pointer; no authorized canonical promotion.
+- Next: inspect provenance of changed QA blob, execute real regression suite in an authorized runner, then actual pinned Week12 reconstruction; do not rerun completed CBS acquisition.
