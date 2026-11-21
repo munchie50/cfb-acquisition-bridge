@@ -2,6 +2,18 @@
 
 **STATUS: UPDATED MANUAL TRIAGE / NOT CANONICAL / NOT EXECUTABLE.** Freshness refers to the November 21 reconciliation and explicit as-of cutoff classification, **not** to fresh sportsbook quotes, current injury news, or newly accepted engine decisions. No executable wagers or parlays are authorized by this document. The last source-derived quotes are from the November 19 mixed-book fallback; those stale quotes are intentionally **not reproduced** as current lines.
 
+## Nov21 10:10 CT current decision-state refresh — supersedes older desk status only
+
+**FRESHNESS LIMITATION:** This refresh is a verified reconciliation of the preserved 58-game Hot Sheet and already collected Nov21 public market/personnel observations. It is **not** a new qualified sportsbook pull, CBS ingestion, selector run, or approved publication. All 58 original rows and cutoffs remain unchanged. **Approved wagers: 0.**
+
+**Before the next saved kickoff:** The first 11:00 CT block is 50 minutes away at this refresh. It includes 13 games; 10 numeric frozen predictions and three original exclusions. Ohio State @ Nebraska retains its expired 07:00 CT decision deadline; it is not reopened. The next saved blocks are 11:30 CT (1 game), noon CT (3), 13:00 CT (4), and 13:30 CT (3). Saved kickoff times are generally not independently verified; BYU @ Kansas 11:00 CT and Utah @ TCU 20:00 CT were independently confirmed previously. A saved kickoff does not override the earlier original decision cutoff.
+
+**Decision shortlist, research only:** Iowa @ Illinois 13:30 CT (Iowa frozen -1.2 vs public -8.5); LSU @ Tennessee 14:30 (Tennessee frozen -9.6 vs public LSU -1.5, Tennessee starter unresolved); Texas Tech @ Baylor 14:30 (Baylor frozen -8.1 vs public Texas Tech -5.5, roster concerns); UCLA @ Michigan 14:30 (Michigan frozen -3.0 vs public UCLA -3.5); Arizona @ Kansas State 18:00 (Kansas State frozen -13.8 vs public Arizona -7.5); Utah @ TCU 20:00 (Utah frozen -2.2 vs public -8.5). These public spreads are **previously observed, not live executable offers**. Opposite-favorite discrepancies are investigation triggers, not bets.
+
+**Internal cross-field QA:** Four of 46 numeric frozen rows have spread-favorite versus home-win-probability sign disagreements: Houston @ West Virginia (Houston -0.5, WVU home win 0.503), Iowa @ Illinois (Iowa -1.2, Illinois home win 0.529), Georgia Southern @ Troy (Troy -2.1, Troy home win 0.493), Arkansas State @ Louisiana Tech (Louisiana Tech -0.4, home win 0.494). They remain unchanged and are not standalone selector defects. The Houston -0.5 value was independently read back from this Hot Sheet and a previously transcribed -0.1 in the supporting audit was corrected.
+
+**Acceptance boundary:** The source-bound canonical decision ledger, current qualified same-book offer and personnel evidence, champion selector execution, and recovery-index publication are still incomplete. The Nov21 07:00 CT scheduled Market Monitor transport reported completed but its internal result was RUN_INCOMPLETE. Do not claim a casino-ready pick, confidence ranking, or parlay.
+
 ## Latest decision desk — Nov21 continuation (supersedes the 09:48 audit summary only)
 
 **CASINO-READY PICKS: ZERO.** The 09:48 label in this document is the *baseline snapshot*, not the update time of all subsequent research. Later findings are separately dated below. There is no completed Saturday production selector run, qualified local executable six-side offer, or canonical Hot Sheet promotion. The 58-game frozen slate is complete, not a certified betting slate. **Do not place wagers based on this provisional sheet.**
