@@ -49,18 +49,18 @@ def analyze(rows, errors, as_of):
     by_source = Counter(r["source_kind"] for r in rows)
     by_reason = Counter(r.get("reason", "UNSPECIFIED") for r in rows if r["status"] != "PASS")
     late = sum(r["_observed"] > r["_deadline"] for r in rows if r["source_kind"] == "ENGINE_DECISION")
-    # Only pair certified, contemporaneous quotes for the same event, market and side.
+    # Never pair different books, units, or quote types as one movement series.
     quotes = defaultdict(list)
     for r in rows:
-        if r["source_kind"] == "CERTIFIED_MARKET" and r.get("market") and r.get("side") and isinstance(r.get("price"), (int, float)) and math.isfinite(r["price"]):
-            quotes[(r["event_id"], r["market"], r["side"])].append(r)
+        if r["source_kind"] == "CERTIFIED_MARKET" and r.get("market") and r.get("side") and r.get("book") and r.get("price_unit") and r.get("quote_type") and type(r.get("price")) in (int, float) and math.isfinite(r["price"]):
+            quotes[(r["event_id"], r["market"], r["side"], r["book"], r["price_unit"], r["quote_type"])].append(r)
     movement = []
     for key, observations in sorted(quotes.items()):
         observations.sort(key=lambda r: r["_observed"])
         if len(observations) < 2:
             continue
         first, last = observations[0], observations[-1]
-        movement.append({"event_id": key[0], "market": key[1], "side": key[2],
+        movement.append({"event_id": key[0], "market": key[1], "side": key[2], "book": key[3], "price_unit": key[4], "quote_type": key[5],
                          "first": first["price"], "last": last["price"],
                          "movement": round(last["price"] - first["price"], 4),
                          "first_at": first["observed_at"], "last_at": last["observed_at"],
