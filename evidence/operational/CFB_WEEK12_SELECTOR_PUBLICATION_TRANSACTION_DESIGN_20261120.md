@@ -1,3 +1,8 @@
+## NOV21 CURRENT EVIDENCE SUPERSESSION — READ BEFORE HISTORICAL STATUS BELOW
+The older design paragraphs below are a historical development record, NOT the current work queue. Both original-module integration QA and pinned actual canonical selector readback QA were **actually executed and passed** on Nov21; execution receipts and exact identities are recorded in `evidence/run_receipts/CFB_MARKET_MONITOR_20261121_13CT_MANUAL_CATCHUP_CONTINUATION.md`. Do not rerun either based on historical `BUILT, NOT EXECUTED` statements below. The current canonical index still selects the Nov19 sheet; the Nov20 70-game provisional review sheet is now **actively deployed as production-facing DISPLAY ONLY** under user authorization at `evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-20_MANUAL_PROVISIONAL_RELEASE.md` (Git blob `7ec0aaafdb9ebb8e7f30cbd564606c8757ec09da`). Independent live smoke test verified release SHA, linked sheet SHA `00cb3eac893e34187769b56924e553d52681cb92`, and all 56 frozen predictions + 14 exclusions. All four existing task prompts were aligned. No genuine Nov20 canonical acceptance, sportsbook executable offer, or post-override natural-worker delivery PASS is proven. **Next unfinished actions:** observe next natural worker delivery and assess acceptance requirements only where a genuine prospective publication remains possible. Never mistake historical TODO text for active status, and never bypass verification by relabeling preview.
+
+---
+
 # Week12 selector publication transaction — candidate design, NOT approved or executed
 
 ## Scope and observed mismatch
