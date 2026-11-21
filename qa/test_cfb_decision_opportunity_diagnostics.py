@@ -60,6 +60,14 @@ class DecisionDiagnosticsTests(unittest.TestCase):
         self.assertEqual(out["rows"][5]["category"], "ANALYTICAL_RECHECK_NOT_CANONICAL_DECISION")
         self.assertFalse(out["rows"][0]["bet_authorized"])
 
+    def test_quote_unavailable_is_separate_and_not_reviewed(self):
+        out = analyze(review([{"game_id": "10", "six_markets": {"over": {
+            "analytical_status": "QUOTE_UNAVAILABLE", "reason": "No market quote"}}}]))
+        self.assertEqual(out["quote_unavailable_market_slots"], 1)
+        self.assertEqual(out["reviewed_nonconflicted_market_slots"], 0)
+        self.assertEqual(out["missing_market_slots"], 5)
+        self.assertFalse(out["rows"][4]["bet_authorized"])
+
     def test_empty_market_object_does_not_inflate_coverage(self):
         out = analyze(review([{"game_id": "8", "six_markets": {"over": {}}}]))
         self.assertEqual(out["missing_market_slots"], 6)
