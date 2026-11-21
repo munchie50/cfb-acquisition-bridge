@@ -24,3 +24,10 @@ C. Only after original QA and approved canonical publication transaction: perfor
 D. Scheduled Evening repair must demonstrate a natural worker's complete current CBS capture, original typed compiler/handoff and independent readback in one invocation. A separate manual or other-runtime success is diagnostic only.
 
 Classification: FAILURE IS DOWNSTREAM RUNTIME/CANONICAL HANDOFF; scheduler dispatch and noncanonical persistence are verified operational. No production status upgraded. No task schedules, canonical ledgers, Hot Sheet or bets changed by this triage.
+
+## Independent continuation check — original modules and actual Monitor schedule
+Fresh connector readback: scripts/cfb_hot_sheet_current_decision_binding_gate.py blob 9ff23f2ada4c99a94757fa5f5a86c2f071e54b2a; scripts/cfb_recovery_navigation_reader.py blob b6901d80f3535ee8e218755dda830ef13d3c2869; scripts/cfb_overlay_publication_probe.py blob 298c8ef0245ccfb2ee8bffdf8f7aaa7114ff96b8. The checked-in QA file uses --blob-dir to avoid git cat-file for the immutable ledger bytes. It still requires actual staged files and a Python runtime; its existence is not execution evidence.
+
+Automation readback confirms existing CFB Market Monitor Rebuilt task 6ae766e788d881919726d0eeb44450dd is enabled, scheduled daily at 07:00 and 13:00 America/Chicago, with next slot Saturday Nov21 07:00 CT. This resolves the earlier conditional "if scheduled" handoff language without changing the immutable prior receipt. Existing Evening task next slot Wed Nov25 19:30 CT. No new automation or schedule edit required.
+
+Root-cause split: (i) original selector QA can be exercised with offline exact bytes, but source/blob transfer into same runtime is not verified; (ii) scheduled Evening original compiler and full source capture are a distinct natural-worker capability gap. Do not mark (ii) repaired when (i) eventually passes. No actual test run, typed handoff or canonical publication was performed by this continuation.
