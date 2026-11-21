@@ -1,0 +1,51 @@
+{
+  "schema": "CFB_MONITOR_TERMINAL_CANDIDATE",
+  "observed_utc": "2026-11-21T13:04:33.386Z",
+  "trigger": "natural_scheduled",
+  "scheduled_for": "2026-11-21T13:00:00Z",
+  "correlation_id": "scheduled-20261121-0700-ct-turn11",
+  "status": "RUN_INCOMPLETE",
+  "first_failure": "ORIGINAL_AUTHENTICATED_GIT_RUNTIME_NOT_VERIFIED_IN_THIS_INVOCATION; retired DNS/HTTPS probes intentionally not retried",
+  "startup": {
+    "status": "PASS",
+    "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261121T130327265Z_scheduled-20261121-0700-ct-turn11.md",
+    "blob": "e1429969b133f874a78fbb58bed393b53d41d2bb"
+  },
+  "stages": {
+    "connector_read": "PASS",
+    "direct_shell_probe": "PASS",
+    "full_checkout_ancestry": "BLOCKED",
+    "fresh_cbs_capture": "NOT_ATTEMPTED",
+    "six_market_review": "BLOCKED",
+    "named_offer_qualification": "BLOCKED",
+    "compiler": "BLOCKED",
+    "canonical_write_transport": "NOT_ATTEMPTED",
+    "selector_publication": "BLOCKED",
+    "canonical_readback": "NOT_ATTEMPTED",
+    "independent_research": "PASS",
+    "analytics": "ANALYTICS_INPUT_UNAVAILABLE"
+  },
+  "counts": {
+    "saturday_due": 58,
+    "original_numeric": 46,
+    "original_excluded": 12,
+    "early_due": 16,
+    "early_excluded": 5,
+    "new_six_market_certified": 0,
+    "remaining": 58,
+    "week12_historical": 70
+  },
+  "research": {
+    "path": "evidence/run_receipts/CFB_MARKET_MONITOR_NONCANONICAL_RESEARCH_20261121_scheduled-20261121-0700-ct-turn11.md",
+    "blob": "44af0b74056df9d575bdb4f9b358087294b39c1d"
+  },
+  "material_flags": [
+    "Wisconsin @ Purdue QB change; historical PASS stale",
+    "Ohio State @ Nebraska original 07CT cutoff collision",
+    "Maryland @ USC original 07CT cutoff collision",
+    "Rutgers @ Penn State frozen exclusion"
+  ],
+  "next_owner": "existing Market Monitor",
+  "next_action": "Recover verified original runtime/ancestry without retired probes, qualify fresh sources and original deadlines, review all remaining markets, compile and publish only through canonical selector.",
+  "changes": "No canonical Hot Sheet, ledger, Champion, task, wager or schedule changes."
+}
