@@ -98,7 +98,8 @@ def analyze(data):
         section_counts.setdefault(row["section"], Counter())[row["category"]] += 1
     missing_count = counts.get("MARKET_REVIEW_NOT_EXTRACTABLE", 0)
     conflict_count = counts.get("DUPLICATE_IDENTITY_CONFLICT", 0)
-    reviewed_count = len(rows) - missing_count - conflict_count
+    unclassified_count = counts.get("UNCLASSIFIED_REVIEW", 0)
+    reviewed_count = len(rows) - missing_count - conflict_count - unclassified_count
     return {"schema": "CFB_DECISION_OPPORTUNITY_DIAGNOSTICS_V1",
             "status": "READ_ONLY_NOT_PRODUCTION_NOT_WAGER_AUTHORITY",
             "game_count": len(seen), "market_slots": len(rows),
@@ -106,6 +107,7 @@ def analyze(data):
             "market_slot_counts": dict(sorted(counts.items())),
             "reviewed_nonconflicted_market_slots": reviewed_count,
             "missing_market_slots": missing_count,
+            "unclassified_market_slots": unclassified_count,
             "conflicted_market_slots": conflict_count,
             "section_market_slot_counts": {k: dict(sorted(v.items())) for k, v in section_counts.items()},
             "method_limitations": [
