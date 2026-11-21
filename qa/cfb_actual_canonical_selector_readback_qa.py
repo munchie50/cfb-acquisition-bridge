@@ -8,6 +8,7 @@ This QA does not certify live markets, bets, freshness, or scheduled execution.
 import argparse
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -15,8 +16,12 @@ from pathlib import Path
 def assert_not_explicitly_provisional(sheet_text: str) -> None:
     """Fail closed on explicit rejection labels; absence is NOT acceptance."""
     text = sheet_text.upper()
-    markers = ('NONCANONICAL', 'NOT ACCEPTED', 'NOT_ACCEPTED', 'NO ACTIONABLE WAGERS')
-    if any(marker in text for marker in markers):
+    # Normalize whitespace, underscores and common hyphen forms in explicit labels.
+    separator = r'[\s_\-\u2010-\u2015\u2212]+'
+    patterns = (r'NON' + separator + r'CANONICAL',
+                r'NOT' + separator + r'ACCEPTED',
+                r'NO' + separator + r'ACTIONABLE' + separator + r'WAGERS')
+    if 'NONCANONICAL' in text or any(re.search(pattern, text) for pattern in patterns):
         raise ValueError('explicitly provisional current sheet cannot pass canonical QA readback')
 
 
