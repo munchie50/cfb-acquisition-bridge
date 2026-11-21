@@ -41,9 +41,12 @@ def reconstruct(repo, manifest):
         raw = base + delta
         if git_blob_sha(raw) != entry["expected_blob"]:
             raise ValueError("reconstruction digest mismatch")
-        prefix = ("\x60\x60\x60cfb-week12-" + surface + "-v1" + chr(10))
+        import re
         text = delta.decode("utf-8")
-        if not text.startswith(prefix) or not text.rstrip().endswith("\x60\x60\x60"):
+        tag = "cfb-week12-" + surface + "-v1"
+        pattern = r"^```" + tag + r"\\n(.*?)^```[ \\t]*$"
+        matches = list(re.finditer(pattern, text, re.M | re.S))
+        if not matches or re.sub(pattern, "", text, flags=re.M | re.S).strip():
             raise ValueError("invalid typed packet framing")
         def reject_duplicate_keys(pairs):
             result = {}
@@ -52,13 +55,16 @@ def reconstruct(repo, manifest):
                     raise ValueError("duplicate overlay packet JSON key")
                 result[key] = value
             return result
-        packet = json.loads(text[len(prefix):].rstrip()[:-3], object_pairs_hook=reject_duplicate_keys)
-        if not isinstance(packet, dict):
-            raise ValueError("overlay packet must be a JSON object")
-        if (packet.get("cycle_id"), packet.get("as_of_utc")) != (manifest["cycle_id"], manifest["as_of_utc"]):
+        boundaries = []
+        for match in matches:
+            packet = json.loads(match.group(1), object_pairs_hook=reject_duplicate_keys)
+            if not isinstance(packet, dict):
+                raise ValueError("overlay packet must be a JSON object")
+            if not isinstance(packet.get("rows"), list):
+                raise ValueError("overlay packet rows must be a list")
+            boundaries.append((packet.get("cycle_id"), packet.get("as_of_utc")))
+        if boundaries[-1] != (manifest["cycle_id"], manifest["as_of_utc"]):
             raise ValueError("packet and manifest boundary mismatch")
-        if not isinstance(packet.get("rows"), list):
-            raise ValueError("overlay packet rows must be a list")
         outputs[surface] = raw.decode("utf-8")
     return outputs
 
