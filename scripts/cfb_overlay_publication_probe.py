@@ -30,6 +30,7 @@ def reconstruct(repo, manifest):
     if set(manifest) != {"schema", "cycle_id", "as_of_utc", "market", "decision"}:
         raise ValueError("unexpected manifest fields")
     outputs = {}
+    streams = {}
     for surface in ("market", "decision"):
         entry = manifest[surface]
         if not isinstance(entry, dict) or set(entry) != {"base", "delta", "expected_blob"}:
@@ -63,9 +64,12 @@ def reconstruct(repo, manifest):
             if not isinstance(packet.get("rows"), list):
                 raise ValueError("overlay packet rows must be a list")
             boundaries.append((packet.get("cycle_id"), packet.get("as_of_utc")))
+        streams[surface] = boundaries
         if boundaries[-1] != (manifest["cycle_id"], manifest["as_of_utc"]):
             raise ValueError("packet and manifest boundary mismatch")
         outputs[surface] = raw.decode("utf-8")
+    if streams["market"] != streams["decision"]:
+        raise ValueError("market and decision overlay packet boundaries disagree")
     return outputs
 
 
