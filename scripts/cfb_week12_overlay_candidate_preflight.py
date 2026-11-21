@@ -7,10 +7,10 @@ EXPECTED_BASE = "6862be6a1bd88a3290b1e90a49c33a7a87e92559"
 EXPECTED_DELTA = "646bbe85edba726037e1b98125783ff2cd87a4e8"
 EXPECTED_RESULT = "98941e228072e6941b1c33e42d4d8dba570f7182"
 CANONICAL_LEDGER = "evidence/operational/CFB_DECISION_WAIT_LEDGER.md"
-SHEET_PATTERN = re.compile(r"evidence/operational/CFB_WEEK[0-9]{1,2}_HOT_SHEET_[0-9]{4}-[0-9]{2}-[0-9]{2}_[0-9]{4}CT\\.md")
+SHEET_PATTERN = re.compile(r"evidence/operational/CFB_WEEK[0-9]{1,2}_HOT_SHEET_[0-9]{4}-[0-9]{2}-[0-9]{2}_[0-9]{4}CT\.md")
 
 def blob(raw):
-    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 def utc(value):
     if not isinstance(value, str):
