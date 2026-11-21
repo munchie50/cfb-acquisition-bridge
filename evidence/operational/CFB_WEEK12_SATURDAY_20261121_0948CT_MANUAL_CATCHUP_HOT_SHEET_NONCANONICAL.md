@@ -106,3 +106,76 @@ New public-web discovery on Nov21 located BetSharp's 23-game Top-25-filtered odd
 | Utah @ TCU | BetSharp: Utah -8.5 -108 DraftKings; TCU +8.5 -108 BetMGM; O46.5 -108 DraftKings / U46.5 -107 BetRivers | Utah -2.2 / 49.5 / 0.445 home | Named-book discovery only; HOLD |
 
 **Drift discovery:** BetSharp's source displays sportsbook-specific sides drawn from different operators; it is not a single-book two-sided market. The original frozen prediction must not be replaced with the current market line. The Ohio State/Nebraska planning cutoff is already expired even though the public page still shows odds. Market discovery is now **nonzero**, but the certified qualified-offer count remains **0/58** until timestamp, venue, full-market and original-cutoff gates pass. No bet/parlay authorization.
+
+## Nov21 operational deadline-first recovery queue (source-clock groups, NOT live kickoff confirmation)
+
+**Reason for this additional view:** The 58-row alphabetical-by-kickoff sheet did not separate the four exactly-at-1PM kickoff collisions from the 16 earlier games and the 38 later games. A 1PM monitor cannot issue pregame picks for the first 20 even if it starts precisely on time. Original decision cutoffs may be earlier. All listed times remain source-saved/unverified; this is a work queue, not a promise that games are still unstarted.
+
+### Priority A: saved kickoffs before 1PM CT — 16 games (11 numeric / 5 exclusions)
+
+- **11:00 AM CT — Vanderbilt @ Florida:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **11:00 AM CT — Wofford @ Ole Miss:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **11:00 AM CT — BYU @ Kansas:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **11:00 AM CT — Colorado @ Cincinnati:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **11:00 AM CT — Syracuse @ Boston College:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **11:00 AM CT — Wake Forest @ Georgia Tech:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **11:00 AM CT — Northwestern @ Minnesota:** originally excluded; Original cutoff unverified; no qualified executable offer
+- **11:00 AM CT — Ohio State @ Nebraska:** frozen numeric reference retained; 7 AM CT original planning cutoff passed; no qualified executable offer
+- **11:00 AM CT — Wisconsin @ Purdue:** frozen numeric reference retained; Material QB reassessment required; no qualified executable offer
+- **11:00 AM CT — East Carolina @ Army:** originally excluded; Original cutoff unverified; no qualified executable offer
+- **11:00 AM CT — Memphis @ Navy:** originally excluded; Original cutoff unverified; no qualified executable offer
+- **11:00 AM CT — North Texas @ Tulane:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **11:30 AM CT — North Carolina @ Virginia:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **12:00 PM CT — Tennessee Tech @ Mississippi State:** originally excluded; Original cutoff unverified; no qualified executable offer
+- **12:00 PM CT — Houston @ West Virginia:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **12:00 PM CT — Western Kentucky @ Liberty:** originally excluded; Original cutoff unverified; no qualified executable offer
+
+### Priority B: exactly 1PM CT kickoff collision — 4 games (3 numeric / 1 exclusions)
+
+- **1:00 PM CT — Chattanooga @ Alabama:** originally excluded; 1 PM monitor/kickoff collision; no qualified executable offer
+- **1:00 PM CT — Charlotte @ Tulsa:** frozen numeric reference retained; 1 PM monitor/kickoff collision; no qualified executable offer
+- **1:00 PM CT — Missouri State @ Jacksonville State:** frozen numeric reference retained; 1 PM monitor/kickoff collision; no qualified executable offer
+- **1:00 PM CT — Middle Tennessee @ Sam Houston:** frozen numeric reference retained; 1 PM monitor/kickoff collision; no qualified executable offer
+
+### Priority C: saved kickoffs after 1PM CT — 38 games (32 numeric / 6 exclusions)
+
+- **1:30 PM CT — Iowa @ Illinois:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **1:30 PM CT — South Florida @ Florida Atlantic:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **1:30 PM CT — UL Monroe @ App State:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **2:00 PM CT — Coastal Carolina @ Louisiana:** originally excluded; Original cutoff unverified; no qualified executable offer
+- **2:00 PM CT — Delaware @ New Mexico State:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **2:00 PM CT — Florida International @ Kennesaw State:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **2:30 PM CT — Samford @ Auburn:** originally excluded; Original cutoff unverified; no qualified executable offer
+- **2:30 PM CT — LSU @ Tennessee:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **2:30 PM CT — Arkansas @ Texas:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **2:30 PM CT — Texas Tech @ Baylor:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **2:30 PM CT — NC State @ Florida State:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **2:30 PM CT — UCLA @ Michigan:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **2:30 PM CT — Rutgers @ Penn State:** originally excluded; QB uncertainty / original exclusion retained; no qualified executable offer
+- **2:30 PM CT — Indiana @ Washington:** originally excluded; Original cutoff unverified; no qualified executable offer
+- **2:30 PM CT — Old Dominion @ UConn:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **2:45 PM CT — Texas A&M @ Oklahoma:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **3:00 PM CT — Northern Illinois @ North Dakota State:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **3:00 PM CT — Georgia Southern @ Troy:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **3:00 PM CT — Georgia State @ Marshall:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **3:00 PM CT — South Alabama @ Southern Miss:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **5:00 PM CT — Washington State @ Texas State:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **5:15 PM CT — Maryland @ USC:** frozen numeric reference retained; 7 AM CT original planning cutoff passed; no qualified executable offer
+- **6:00 PM CT — Arizona @ Kansas State:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **6:00 PM CT — Virginia Tech @ Miami:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **6:00 PM CT — UNLV @ San José State:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **6:00 PM CT — Arkansas State @ Louisiana Tech:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **6:30 PM CT — Kentucky @ Missouri:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **6:30 PM CT — Georgia @ South Carolina:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **6:30 PM CT — Pittsburgh @ Louisville:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **6:30 PM CT — SMU @ Notre Dame:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **6:30 PM CT — Stanford @ California:** originally excluded; Original cutoff unverified; no qualified executable offer
+- **6:30 PM CT — Colorado State @ Fresno State:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **7:00 PM CT — UTSA @ UAB:** originally excluded; Original cutoff unverified; no qualified executable offer
+- **8:00 PM CT — Utah @ TCU:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **8:30 PM CT — San Diego State @ Boise State:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **9:15 PM CT — Oklahoma State @ Arizona State:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **9:30 PM CT — Utah State @ Oregon State:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+- **9:30 PM CT — Hawai'i @ Nevada:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
+
+**Queue reconciliation:** 16+4+38=58; frozen numeric 46, original exclusions 12. The two saved 7AM planning cutoff conflicts are Ohio State @ Nebraska and Maryland @ USC; they are not reopened by this queue. Material QB uncertainty at Wisconsin @ Purdue remains unresolved. This queue is triage only: it neither asserts a newly refreshed bookmaker offer nor supersedes the original accepted cutoff ledger.
