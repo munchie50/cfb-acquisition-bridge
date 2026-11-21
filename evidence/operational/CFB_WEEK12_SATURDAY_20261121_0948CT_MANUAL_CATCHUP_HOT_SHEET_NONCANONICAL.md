@@ -197,3 +197,11 @@ New public-web discovery on Nov21 located BetSharp's 23-game Top-25-filtered odd
 **Important scope distinction:** Four complete **public six-side display snapshots** were located across two games; **zero** have passed the production qualified-offer/venue/cutoff/current-time and canonical selector gates. The 58-game obligation is unchanged. The original FIRST_FROZEN numbers remain unchanged; no betting edge, pick or parlay is inferred from price comparison alone. In particular, BYU–Kansas kickoff conflict is an active time-authority blocker, not a reason to extend any original cutoff.
 
 **Additional clock drift:** Betwatch's public page is marked 07:09 AM ET; LineSmart 07:45 AM ET; The Odds Gap 09:05 AM ET. These are three different source clocks, not one synchronized live market. Do not combine their sides into a fictitious single-book six-market observation.
+
+## Nov21 authoritative schedule adjudication — two games resolved
+
+The earlier BYU @ Kansas 12PM ET versus 5PM display conflict is **RESOLVED** against first-party athletics schedules. Both BYU and Kansas confirm **Saturday Nov21 11:00 AM CT** (12PM ET), not 5PM. Sources: https://byucougars.com/news/2026/11/16/byu-football-game-week-2026-at-kansas and https://kuathletics.com/news/2026/11/15/football-senior-day-vs-byu-set-for-11-am-kickoff-on-abc . Source-saved kickoff 11AM CT was correct. This resolution does NOT revive any expired decision cutoff.
+
+Utah @ TCU **8:00 PM CT** is also confirmed by TCU's official schedule (local Fort Worth CT) and Utah's 7PM Mountain announcement: https://gofrogs.com/news/2026/11/15/football-big-12-and-fox-set-kick-time-for-tcu-vs-no-2-utah and https://utahutes.com/news/2026/11/15/football-kickoff-time-network-set-for-no-2-utah-at-tcu . Source-saved 8PM CT was correct. Earlier conflicting source presentation is not authoritative.
+
+**Schedule verification progress: 2/58 official game kickoff pairs adjudicated in this continuation, 56/58 not newly adjudicated.** Market qualification remains 0/58, no acceptance or new executable wager. This is a verified source-authority fix, not a new frozen-model computation.
