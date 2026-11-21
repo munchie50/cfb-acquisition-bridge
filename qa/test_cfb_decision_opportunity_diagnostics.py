@@ -33,9 +33,11 @@ class DecisionDiagnosticsTests(unittest.TestCase):
         self.assertEqual(row["original_state"], "PASS")
         self.assertTrue(row["price_factor_mentioned"])
 
-    def test_duplicate_identity_fails_closed(self):
-        with self.assertRaisesRegex(ValueError, "Duplicate game"):
-            analyze(review([{"game_id": "5"}, {"game_id": "5"}]))
+    def test_duplicate_identity_quarantined_and_reported(self):
+        out = analyze(review([{"game_id": "5"}, {"game_id": "5"}]))
+        self.assertEqual(out["game_count"], 1)
+        self.assertEqual(out["market_slots"], 6)
+        self.assertEqual(out["duplicate_identity_conflicts"], [{"game_id": "5", "additional_section": "sat"}])
 
     def test_missing_reports_fails_closed(self):
         with self.assertRaises(ValueError):
