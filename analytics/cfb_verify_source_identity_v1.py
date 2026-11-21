@@ -29,7 +29,7 @@ def verify(root, input_file, as_of):
     # A blob hash proves byte identity only; it does not certify that the upstream
     # quote is genuine or was captured contemporaneously.
     result["provenance_scope"] = "LOCAL_GIT_BLOB_IDENTITY_ONLY_NOT_UPSTREAM_CERTIFICATION"
-    result["status"] = "INCOMPLETE" if errors else "UNVERIFIED_SOURCE_ATTESTATION"
+    result["status"] = "INCOMPLETE" if errors or not rows else "UNVERIFIED_SOURCE_ATTESTATION"
     result["eligible_for_production_learning"] = False
     return result
 
