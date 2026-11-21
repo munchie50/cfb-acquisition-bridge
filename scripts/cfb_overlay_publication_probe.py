@@ -77,6 +77,8 @@ def inspect_pair(repo, manifest, sheet, lineage):
         sys.path.insert(0, scripts)
     import cfb_week12_publication as week
     bootstrap = week.bootstrap_check(outputs["market"], outputs["decision"], lineage)
+    if not isinstance(bootstrap, str) or not bootstrap.startswith("PASS_WEEK12_"):
+        raise ValueError("Week12 bootstrap did not return an accepted read-only proposal verdict")
     from cfb_hot_sheet_current_decision_binding_gate import audit, blob
     import re
     declarations = [line for line in sheet.splitlines() if "Canonical inputs:" in line]
