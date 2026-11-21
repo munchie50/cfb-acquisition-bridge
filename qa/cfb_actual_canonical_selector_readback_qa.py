@@ -12,6 +12,14 @@ import sys
 from pathlib import Path
 
 
+def assert_not_explicitly_provisional(sheet_text: str) -> None:
+    """Fail closed on explicit rejection labels; absence is NOT acceptance."""
+    text = sheet_text.upper()
+    markers = ('NONCANONICAL', 'NOT ACCEPTED', 'NOT_ACCEPTED', 'NO ACTIONABLE WAGERS')
+    if any(marker in text for marker in markers):
+        raise ValueError('explicitly provisional current sheet cannot pass canonical QA readback')
+
+
 def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_index: str, expected_ledger: str, expected_sheet: str, expected_navigation_module: str, expected_binding_module: str):
     root = root.resolve()
     index_path = index_path.resolve()
@@ -63,15 +71,9 @@ def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_in
         if not resolved.is_relative_to(root.resolve()):
             raise ValueError("publication path escapes repository")
         return resolved.read_bytes().decode("utf-8")
-    # Selector binding is not acceptance. Fail closed on explicitly provisional
-    # artifacts even when every Git pointer and decision hash matches.
+    # Selector binding is not acceptance. Reject explicitly provisional sheets.
     sheet_text = loader(path)
-    # A header-length limit is bypassable by padding the first 20 lines.
-    # Fail closed on explicit nonacceptance anywhere in the publication.
-    publication_text = sheet_text.upper()
-    provisional_markers = ('NONCANONICAL', 'NOT ACCEPTED', 'NOT_ACCEPTED', 'NO ACTIONABLE WAGERS')
-    if any(marker in publication_text for marker in provisional_markers):
-        raise ValueError('explicitly provisional current sheet cannot pass canonical QA readback')
+    assert_not_explicitly_provisional(sheet_text)
     result = publication(index, ledger, loader, as_of)
     if result["sheet_blob"] != expected_sheet:
         raise ValueError('staged sheet differs from pinned repository snapshot')
