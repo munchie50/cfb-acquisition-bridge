@@ -12,9 +12,11 @@ def git_blob(data):
 def verify(root, input_file, as_of):
     rows, errors = load(input_file, timestamp(as_of))
     base = root.resolve()
+    checked_market = 0
     for i, row in enumerate(rows, 1):
         if row["source_kind"] != "CERTIFIED_MARKET":
             continue
+        checked_market += 1
         rel = Path(row["source_path"])
         if rel.is_absolute() or ".." in rel.parts:
             errors.append("row %d: invalid source path" % i)
@@ -25,12 +27,15 @@ def verify(root, input_file, as_of):
             continue
         if git_blob(src.read_bytes()) != row["source_blob"]:
             errors.append("row %d: source blob mismatch" % i)
+    if checked_market == 0:
+        errors.append("NO_MARKET_ROWS_TO_VERIFY")
     result = analyze(rows, errors, timestamp(as_of))
     # A blob hash proves byte identity only; it does not certify that the upstream
     # quote is genuine or was captured contemporaneously.
     result["provenance_scope"] = "LOCAL_GIT_BLOB_IDENTITY_ONLY_NOT_UPSTREAM_CERTIFICATION"
     result["status"] = "INCOMPLETE" if errors or not rows else "UNVERIFIED_SOURCE_ATTESTATION"
     result["eligible_for_production_learning"] = False
+    result["verified_market_rows"] = checked_market - sum("row " in e for e in errors)
     return result
 
 def main():
