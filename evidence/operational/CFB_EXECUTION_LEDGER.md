@@ -382,3 +382,27 @@ Five straights and one four-leg parlay, six distinct Caesars Sportsbook / Harrah
 Parlay legs: Tennessee -2/-110, Baylor +7.5/-115, Jacksonville State -7.5/-105, Georgia -16.5/-107. One $2 stake at the printed combined +1248 with $26.95 printed maximum payout. No matching advised combined parlay. Baylor and Tennessee met saved conditional terms, with printed timezone and full placement-time condition verification unresolved. Nebraska and Iowa were off-card PASS. Georgia was off-card PASS and laid one point beyond its prior -15.5 limit at three odds points better than -110.
 
 Batch: six wagers, $42.00 stake, $61.40 printed maximum win, $103.40 printed maximum payout. November 13 combined: 13 wagers, $82.00 stake, $180.20 printed maximum payout. Ledger cumulative: 64 tickets / $290.50 historical stakes. Voucher evidence is tracked in the money ledger.
+
+## November 21 Week 12 actual issued-ticket reconciliation — 13 straights
+
+User-submitted original Caesars Sportsbook / Harrah's Columbus ticket photos; source extraction and ticket suffix dedup evidence: `evidence/operational/CFB_EXECUTION_TICKETS_20261121_USER_PHOTO_INTAKE.md`. Thirteen distinct receipt IDs, none duplicated within this batch or matching prior dated tickets. Cashable full identifiers deliberately omitted from this canonical ledger. All actual real-money execution evidence; not a recommendation, not model input. Printed issue and event clocks are receipt observations (timezone unspecified), not independently confirmed kickoff times; timing class NOT_LIVE_LABELLED, actual pregame status unverified. Budget class UNASSIGNED. Champion/decision linkage UNRECONCILED. All sportsbook settlements PENDING / UNVERIFIED.
+
+| Execution ID | Matchup | Accepted selection / spread | Odds | Stake | Printed issue | Printed event | Max win | Max payout |
+|---|---|---|---:|---:|---|---|---:|---:|
+| CFB_NOV21-01 | Arizona at Kansas State | Kansas State +10 | -113 | $5.00 | 11:04 | Nov21 18:05 | $4.40 | $9.40 |
+| CFB_NOV21-02 | Georgia at South Carolina | Georgia -15 | -107 | $5.00 | 11:03 | Nov21 18:40 | $4.65 | $9.65 |
+| CFB_NOV21-03 | Maryland at USC | USC -17.5 | -110 | $5.00 | 11:03 | Nov21 17:20 | $4.55 | $9.55 |
+| CFB_NOV21-04 | Texas Tech at Baylor | Baylor +5.5 | -114 | $5.00 | 11:02 | Nov21 14:45 | $4.40 | $9.40 |
+| CFB_NOV21-05 | LSU at Tennessee | Tennessee +1 | -110 | $10.00 | 11:01 | Nov21 14:45 | $9.10 | $19.10 |
+| CFB_NOV21-06 | UCLA at Michigan | Michigan +3.5 | -110 | $5.00 | 11:01 | Nov21 14:40 | $4.55 | $9.55 |
+| CFB_NOV21-07 | Indiana at Washington | Indiana -9 | -110 | $5.00 | 11:00 | Nov21 14:40 | $4.55 | $9.55 |
+| CFB_NOV21-08 | Iowa at Illinois | Illinois +9.5 | -110 | $10.00 | 10:59 | Nov21 13:35 | $9.10 | $19.10 |
+| CFB_NOV21-09 | Louisiana-Monroe at Appalachian State | Appalachian State -14 | -107 | $5.00 | 10:59 | Nov21 13:35 | $4.65 | $9.65 |
+| CFB_NOV21-10 | North Carolina at Virginia | North Carolina -1 | -114 | $5.00 | 10:57 | Nov21 11:35 | $4.40 | $9.40 |
+| CFB_NOV21-11 | Northwestern at Minnesota | Northwestern -3 | -104 | $5.00 | 10:56 | Nov21 11:05 | $4.80 | $9.80 |
+| CFB_NOV21-12 | Wisconsin at Purdue | Wisconsin -4.5 | -112 | $5.00 | 10:56 | Nov21 11:05 | $4.45 | $9.45 |
+| CFB_NOV21-13 | Wofford at Ole Miss | Ole Miss -50 | -106 | $5.00 | 10:52 | Nov21 11:00 | $4.70 | $9.70 |
+
+**Timing caution:** Northwestern and Wisconsin receipts show only nine minutes between printed issue and event times; Ole Miss shows eight minutes. Do not classify these as confirmed pregame merely because receipts lack a LIVE label. Source photo time versus event time alone is not sufficient to certify actual kickoff.
+
+Batch 13 tickets, $75.00 stake, $68.30 printed potential win, $143.30 printed potential gross payout. Previous 64 tickets / $290.50 historical stakes -> 77 tickets / $365.50 historical stakes. This is cumulative historical wagering volume, not bankroll balance or new funding. No verified W/L/P or realized P&L posted. Reconcile against saved pre-placement decisions only when exact timestamped decision evidence supports attribution; never infer engine approval from a ticket. Separate $2.90 payout voucher is money-ledger observation only.
