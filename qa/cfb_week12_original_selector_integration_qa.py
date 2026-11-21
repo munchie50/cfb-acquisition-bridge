@@ -36,7 +36,7 @@ def run(repo, blob_dir=None):
         raise RuntimeError('provisional preview must never pass original gate')
     # Synthetic QA-only fixture exercises original module binding without laundering
     # the rejected preview into a canonical sheet or an accepted wager.
-    sheet='Canonical inputs: market '+BASE+'; decision '+EXPECTED+'.\\n'
+    sheet='Canonical inputs: market '+BASE+'; decision '+EXPECTED+'.\n'
     if audit(sheet,ledger)['verdict']!='PASS_SUPPLIED_CURRENT_DECISION_BINDING_ONLY':
         raise RuntimeError('synthetic QA fixture did not pass narrow binding')
     neg_audit={}
