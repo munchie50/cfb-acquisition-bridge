@@ -60,6 +60,43 @@ def reconstruct(repo, manifest):
 
 
 
+
+def inspect_pair(repo, manifest, sheet, lineage):
+    """Reconstruct a pinned pair and verify Week12 parent/sequence and preview binding.
+
+    This is a read-only consumer adapter, not a canonical publication or wager gate.
+    """
+    outputs = reconstruct(repo, manifest)
+    import sys
+    scripts = str(Path(__file__).resolve().parent)
+    if scripts not in sys.path:
+        sys.path.insert(0, scripts)
+    import cfb_week12_publication as week
+    bootstrap = week.bootstrap_check(outputs["market"], outputs["decision"], lineage)
+    from cfb_hot_sheet_current_decision_binding_gate import audit, blob
+    import re
+    declarations = [line for line in sheet.splitlines() if "Canonical inputs:" in line]
+    if len(declarations) != 1:
+        raise ValueError("unique sheet canonical declaration required")
+    match = re.search(r"market ([0-9a-f]{40}); decision ([0-9a-f]{40})", declarations[0])
+    if not match:
+        raise ValueError("malformed sheet canonical declaration")
+    market_sha, decision_sha = match.groups()
+    if market_sha != blob(outputs["market"]) or decision_sha != blob(outputs["decision"]):
+        raise ValueError("sheet canonical pair differs from reconstructed overlay")
+    try:
+        binding = audit(sheet, outputs["decision"])
+    except ValueError as exc:
+        if "explicitly provisional publication" not in str(exc):
+            raise
+        return {"status": "READ_ONLY_VERIFIED_PREVIEW", "bootstrap": bootstrap,
+                "market_blob": market_sha, "decision_blob": decision_sha,
+                "binding": "REJECTED_PROVISIONAL", "production_acceptance": False}
+    return {"status": "READ_ONLY_VERIFIED_UNPUBLISHED", "bootstrap": bootstrap,
+            "market_blob": market_sha, "decision_blob": decision_sha,
+            "binding": binding["verdict"], "production_acceptance": False}
+
+
 def inspect_binding(repo, manifest, sheet):
     """Inspect exact overlay-to-sheet binding without granting publication authority.
 
