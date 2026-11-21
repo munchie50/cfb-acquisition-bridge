@@ -1,3 +1,13 @@
+# CFB Week 12 — production-facing display override (user authorized Nov 21)
+
+**ACTIVE DISPLAY STATUS: PRODUCTION-FACING MANUAL OVERRIDE — PROVISIONAL DATA / NO ACTIONABLE WAGERS / NOT CANONICAL RUN_PASS.**
+
+The user authorized immediate production-facing display of the completed 70-game Week12 Hot Sheet. This overrides distribution/visibility only, not verification status or canonical decision authority. Full retained artifact: [Week12 70-game Hot Sheet](CFB_WEEK12_20261120_MANUAL_RENDERED_HOT_SHEET_PREVIEW_NOT_ACCEPTED.md). Display as the latest available Week12 review sheet, prominently labeled as data from 2026-11-20T20:50:24Z; expired kickoff windows are historical. No sportsbook-executable wagers or claimed scheduled-worker RUN_PASS.
+
+**Consumer routing:** Existing Market Monitor and Hot Sheet delivery tasks should lead with this explicit display override when a newer accepted Week12 publication is absent. Report the older canonical selector pointer separately; do not replace the canonical CURRENT_HOT_SHEET pointer or present this as selector acceptance. A genuinely accepted canonical publication supersedes this override. Champion, FIRST_FROZEN, canonical ledgers, money ledger, and four production schedules remain unchanged.
+
+---
+
 # CFB Week 12 — Friday November 20 manual provisional Hot Sheet release
 
 **PUBLICATION STATUS: MANUAL PROVISIONAL RELEASE — NOT CANONICAL PRODUCTION ACCEPTANCE.**
