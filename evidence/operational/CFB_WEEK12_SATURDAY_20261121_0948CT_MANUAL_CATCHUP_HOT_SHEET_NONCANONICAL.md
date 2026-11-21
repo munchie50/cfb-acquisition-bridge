@@ -84,3 +84,11 @@
 - Failure plan: evidence/operational/CFB_SATURDAY_NOV21_RUN_FAILURE_RECOVERY_ACTION_PLAN_20261120.md.
 - Saturday QA: evidence/run_receipts/CFB_WEEKLY_QA_SATURDAY_20261121T150245Z_RUN_CLOSURE.md (RUN_INCOMPLETE).
 - No change to Champion v1, FIRST_FROZEN, canonical ledgers, wager records, deadlines, four tasks, or schedules.
+
+## Nov21 external market-source cross-check (informational; NOT six-market certification)
+
+A public-web lookup during this continuation located the CBS Sports Week12 FBS odds board (https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-12/) and Betwatch's college-football comparison board (https://betwatch.io/odds/college-football). Both display November 21 matchup prices, but the returned pages do not establish an independently certified named-book, jurisdiction-specific, executable offer with a reliable per-offer update timestamp. Betwatch's displayed update marker was Sat Nov21 07:09 ET, older than this sheet's 09:48 CT audit time. CBS explicitly warns that lines are subject to change, and its retrieved text suppresses bookmaker-logo identity. Therefore these sources are **discovery/research only** and do not clear any game for wagering.
+
+Illustrative source cross-check, not actionable quotes: Ohio State @ Nebraska appears on both boards around Ohio State -3.5 / total 41.5; BYU @ Kansas appears around BYU -5.5; Wisconsin @ Purdue appears around Wisconsin -5.5 to -6, with mixed-book spread-side disagreement on CBS. These are independently surfaced public displays, NOT same-book matched pairs or verified live offers. Preserve original cutoff expiration for Ohio State @ Nebraska and QB reassessment for Wisconsin @ Purdue. No accepted model edge or confidence rank inferred from these displays.
+
+**Evidence state:** public market discovery newly performed; 58/58 source-saved slate coverage retained; qualified current operator offers 0/58; complete six-market gate NOT VERIFIED. Source retrieval clock is not equivalent to bookmaker update time. No canonical decision or wager mutation.
