@@ -28,10 +28,11 @@ rows = [row("PASS", "2026-11-20T18:00:00Z"),
 for r in rows:
     r["_observed"] = timestamp(r["observed_at"])
     r["_deadline"] = timestamp(r["decision_deadline"])
+    if r["source_kind"] == "ENGINE_DECISION":
+        r["_decision_at"] = timestamp(r["decision_at"])
 result = analyze(rows, [], as_of)
 require(result["status"] == "DESCRIPTIVE_ONLY", "result[\"status\"] == \"DESCRIPTIVE_ONLY\"")
 require(result["late_engine_decisions"] == 1, "result[\"late_engine_decisions\"] == 1")
-require(result["status"] == "DESCRIPTIVE_ONLY", "result[\"status\"] == \"DESCRIPTIVE_ONLY\"")
 require(result["nonpass_reasons"]["NO_VENUE_QUOTE"] == 1, "result[\"nonpass_reasons\"][\"NO_VENUE_QUOTE\"] == 1")
 require(result["market_movements"][0]["movement"] == -0.5, "result[\"market_movements\"][0][\"movement\"] == -0.5")
 require(result["market_movements"][0]["label"] == "OBSERVED_MOVEMENT_NOT_CLV", "result[\"market_movements\"][0][\"label\"] == \"OBSERVED_MOVEMENT_NOT_CLV\"")
