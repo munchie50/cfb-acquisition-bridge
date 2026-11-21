@@ -1,0 +1,49 @@
+{
+  "schema": "CFB_MARKET_MONITOR_TERMINAL_CANDIDATE_v1",
+  "correlation_id": "scheduled-20261121-1300-ct-turn11",
+  "observed_utc": "2026-11-21T19:02:08.161Z",
+  "trigger": "natural_scheduled",
+  "status": "RUN_INCOMPLETE",
+  "startup": {
+    "path": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261121T190208161Z_scheduled-20261121-1300-ct-turn11.md",
+    "blob": "9f9bea998c3e2dc18b516fd0e4c75ada0fa225aa"
+  },
+  "research": {
+    "path": "evidence/run_receipts/CFB_MARKET_MONITOR_20261121T190208Z_13CT_FRONTIER_RECONCILIATION_NONCANONICAL.md",
+    "blob": "978b23cff1ddbd3d2d335107b18801bb6e6b442f"
+  },
+  "first_failure": {
+    "stage": "PROVISIONAL_RELEASE_READ",
+    "category": "MISSING_INPUT_PATH",
+    "error": "GitHub fetch_file evidence/operational/CFB_WEEK12_20261120_MANUAL_PROVISIONAL_RELEASE.md returned 404 NOT_FOUND",
+    "fallback": "verified existing deep-dive and preview read directly"
+  },
+  "stages": {
+    "startup": "PASS",
+    "startup_readback": "PASS",
+    "frontier_deep_dive": "PASS",
+    "preview_readback": "PASS",
+    "evening_handoff": "PASS",
+    "binding_gate_inspection": "PASS",
+    "fresh_source": "NOT_ATTEMPTED_EXISTING_RETAINED_SOURCE",
+    "new_six_market_reviews": "BLOCKED_UNQUALIFIED_OFFERS_AND_CUTOFFS",
+    "overlay_adapter_tests": "NOT_ATTEMPTED",
+    "canonical_ledger_write": "BLOCKED",
+    "selector_publication": "BLOCKED",
+    "analytics": "NOT_ATTEMPTED",
+    "terminal_candidate": "PENDING",
+    "closure": "PENDING"
+  },
+  "coverage": {
+    "historical_week12": 70,
+    "saturday": 58,
+    "retained_frozen_numeric": 46,
+    "retained_excluded": 12,
+    "new_certified_reviews": 0,
+    "preview_pass": 68,
+    "preview_closed_conditional": 2
+  },
+  "canonical_change": false,
+  "wager_authorization": false,
+  "next": "Verify manifest-pinned overlay consumer with negative tests, governed selector contract decision, fresh qualified offers and original cutoffs for still-open games; preserve accepted Hot Sheet."
+}
