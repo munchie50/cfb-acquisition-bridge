@@ -39,6 +39,8 @@ class DecisionDiagnosticsTests(unittest.TestCase):
         self.assertEqual(out["market_slots"], 6)
         self.assertEqual(out["duplicate_identity_conflicts"], [{"game_id": "5", "additional_section": "sat"}])
         self.assertEqual(out["market_slot_counts"], {"DUPLICATE_IDENTITY_CONFLICT": 6})
+        self.assertEqual(out["reviewed_nonconflicted_market_slots"], 0)
+        self.assertEqual(out["conflicted_market_slots"], 6)
 
     def test_friday_and_late_branches_are_extracted(self):
         out = analyze(review([{"game_id": "6", "branches": {
@@ -47,6 +49,8 @@ class DecisionDiagnosticsTests(unittest.TestCase):
         self.assertEqual(out["rows"][3]["category"], "PASS_WITH_PRICE_FACTOR_NOT_PRICE_ONLY_PROVEN")
         self.assertEqual(out["rows"][5]["original_state"], "PASS")
         self.assertEqual(out["market_slot_counts"]["MARKET_REVIEW_NOT_EXTRACTABLE"], 4)
+        self.assertEqual(out["reviewed_nonconflicted_market_slots"], 2)
+        self.assertEqual(sum(out["section_market_slot_counts"]["sat"].values()), 6)
 
     def test_exclusion_analytical_status_is_not_canonical_pass(self):
         out = analyze(review([{"game_id": "7", "six_markets": {
