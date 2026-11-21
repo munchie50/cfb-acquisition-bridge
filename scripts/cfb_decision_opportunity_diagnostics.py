@@ -17,15 +17,19 @@ FOOTBALL_WORDS = ("quarterback", "qb", "injur", "personnel", "deployment", "unce
 def games_from_review(data):
     if not isinstance(data, dict) or not isinstance(data.get("reports"), dict):
         raise ValueError("Expected a reports object; refusing to infer game coverage")
+    if not data["reports"]:
+        raise ValueError("Empty reports object; refusing to claim zero-game coverage")
     for section, report in data["reports"].items():
         if not isinstance(report, dict):
-            continue
+            raise ValueError("Malformed review section: " + str(section))
         for key in ("rows", "games"):
             entries = report.get(key, [])
-            if isinstance(entries, list):
-                for game in entries:
-                    if isinstance(game, dict) and game.get("game_id"):
-                        yield section, game
+            if not isinstance(entries, list):
+                raise ValueError("Malformed review entries: " + str(section) + "." + key)
+            for game in entries:
+                if not isinstance(game, dict) or not game.get("game_id"):
+                    raise ValueError("Unidentified game in review section: " + str(section))
+                yield section, game
 
 def normalize_market(value):
     if isinstance(value, dict):
