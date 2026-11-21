@@ -29,3 +29,9 @@ Existing learning contract already owns Sunday scorecards, missed opportunities,
 ## November 20 execution checkpoint
 - Added `scripts/cfb_decision_attribution.py` and `qa/test_cfb_decision_attribution.py`; six targeted local regression tests passed. The implementation requires explicit evidence tags and source references, rejects contradictory price-only claims, and never authorizes bets.
 - Both files independently fetched from main with exact content readback after commit. This is a standalone read-only building block, not yet wired to canonical source reviews or weekly QA. Next: run the full pinned regression suite and build an exact provenance-backed Week12 attribution join, preserving unsupported fields as gaps.
+
+## November 20 deep-dive diagnostic correction checkpoint
+- Inspected authentic Week12 all-game review schema: early_week/sat_early/exclusions use `six_markets`, sat_middle uses `six_market_review`, Friday and sat_late use `branches`. Previous diagnostic ignored `branches`, falsely inflating missing-market counts. Fixed in `scripts/cfb_decision_opportunity_diagnostics.py` with regression coverage.
+- Same source has duplicate game `401858303` in Friday and exclusions. Previous diagnostic quarantined later row but left earlier row as clean. Fixed to mark all retained six market slots `DUPLICATE_IDENTITY_CONFLICT`, with explicit conflict list and regression assertion. Do not treat duplicate as two distinct games or a qualified bet.
+- Source and QA fixes independently read back on main; exact Python execution of the newly committed diagnostic against canonical Week12 bytes is still UNEXECUTED in this session. Do not call this an accepted full-slate report.
+- Next: execute pinned original diagnostic and tests, inspect all six report groups, reconcile game identity against canonical 70-game population, and then implement provenance-backed explicit attribution joins; do not invent ranks or price-only causes.
