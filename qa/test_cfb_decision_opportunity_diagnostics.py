@@ -73,6 +73,20 @@ class DecisionDiagnosticsTests(unittest.TestCase):
         self.assertEqual(out["missing_market_slots"], 6)
         self.assertEqual(out["reviewed_nonconflicted_market_slots"], 0)
 
+    def test_ambiguous_review_shapes_fail_closed(self):
+        with self.assertRaises(ValueError):
+            analyze(review([{"game_id": "13", "six_markets": {}, "branches": {}}]))
+
+    def test_conflicting_moneyline_aliases_fail_closed(self):
+        with self.assertRaises(ValueError):
+            analyze(review([{"game_id": "14", "six_markets": {
+                "away_moneyline": "PASS price too high", "away_ml": "LEAN price fine"}}]))
+
+    def test_missing_review_shape_is_visible(self):
+        out = analyze(review([{"game_id": "15"}]))
+        self.assertEqual(out["source_review_shapes"]["15"], "MISSING")
+        self.assertEqual(out["missing_market_slots"], 6)
+
     def test_colon_terminated_string_state(self):
         out = analyze(review([{"game_id": "12", "branches": {"over": "PASS: price insufficient"}}]))
         self.assertEqual(out["rows"][4]["original_state"], "PASS")
