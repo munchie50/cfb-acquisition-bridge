@@ -49,10 +49,10 @@ class OverlayBindingTests(unittest.TestCase):
         def sha(raw):
             return hashlib.sha1(b"blob " + str(len(raw)).encode() + bytes([0]) + raw).hexdigest()
 
-        base = b"base\\n"
-        delta = (b"```cfb-week12-market-v1\\n"
+        base = b"base\n"
+        delta = (b"```cfb-week12-market-v1\n"
                  b'{"cycle_id":"c1","cycle_id":"c2","as_of_utc":"2026-11-21T15:00:00Z"}'
-                 b"\\n```")
+                 b"\n```")
         manifest = {"schema": "cfb-overlay-probe-v1", "cycle_id": "c1",
                     "as_of_utc": "2026-11-21T15:00:00Z",
                     "market": {"base": sha(base), "delta": sha(delta),
