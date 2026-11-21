@@ -137,6 +137,38 @@ class OverlayBindingTests(unittest.TestCase):
             self.assertFalse(json.loads(printed.call_args.args[0])["production_acceptance"])
 
 
+    def test_reconstruction_multiple_packets_and_divergent_intermediate_boundary(self):
+        import json
+        base = b"base\n"
+        last = ("c2", "2026-11-21T16:00:00Z")
+        def delta(surface, first):
+            def packet(boundary):
+                return ("\x60\x60\x60cfb-week12-" + surface + "-v1\n" +
+                        json.dumps({"cycle_id": boundary[0], "as_of_utc": boundary[1],
+                                    "rows": []}) + "\n\x60\x60\x60\n")
+            return (packet(first) + packet(last)).encode()
+        market = delta("market", ("c1", "2026-11-21T15:00:00Z"))
+        decision = delta("decision", ("c1", "2026-11-21T15:00:00Z"))
+        def manifest(m, d):
+            return {"schema": "cfb-overlay-probe-v1", "cycle_id": last[0],
+                    "as_of_utc": last[1],
+                    "market": {"base": probe.git_blob_sha(base),
+                               "delta": probe.git_blob_sha(m),
+                               "expected_blob": probe.git_blob_sha(base + m)},
+                    "decision": {"base": probe.git_blob_sha(base),
+                                 "delta": probe.git_blob_sha(d),
+                                 "expected_blob": probe.git_blob_sha(base + d)}}
+        blobs = {probe.git_blob_sha(raw): raw for raw in (base, market, decision)}
+        with patch.object(probe, "checked_blob", side_effect=lambda repo, sha: blobs[sha]):
+            result = probe.reconstruct(None, manifest(market, decision))
+            self.assertEqual(result["market"], (base + market).decode())
+            self.assertEqual(result["decision"], (base + decision).decode())
+        divergent = delta("decision", ("wrong", "2026-11-21T15:00:00Z"))
+        blobs[probe.git_blob_sha(divergent)] = divergent
+        with patch.object(probe, "checked_blob", side_effect=lambda repo, sha: blobs[sha]):
+            with self.assertRaisesRegex(ValueError, "boundaries disagree"):
+                probe.reconstruct(None, manifest(market, divergent))
+
 
 if __name__ == "__main__":
     unittest.main()
