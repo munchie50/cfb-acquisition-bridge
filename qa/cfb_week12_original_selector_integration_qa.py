@@ -8,7 +8,7 @@ DELTA='646bbe85edba726037e1b98125783ff2cd87a4e8'
 EXPECTED='98941e228072e6941b1c33e42d4d8dba570f7182'
 PREVIEW='evidence/operational/CFB_WEEK12_20261120_MANUAL_RENDERED_HOT_SHEET_PREVIEW_NOT_ACCEPTED.md'
 CANON='evidence/operational/CFB_DECISION_WAIT_LEDGER.md'
-CANDIDATE='evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-20_1545CT.md'
+CANDIDATE='evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-20_1450CT.md'
 def run(repo, blob_dir=None):
     sys.path.insert(0,str(repo/'scripts'))
     from cfb_overlay_publication_probe import checked_blob,git_blob_sha
