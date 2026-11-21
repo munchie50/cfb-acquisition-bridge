@@ -1,0 +1,11 @@
+# RUN_STARTED
+observed_utc: 2026-11-21T13:03:27.265Z
+trigger: natural_scheduled
+scheduled_for: 2026-11-21T13:00:00Z
+invocation_id: not_exposed
+correlation_id: scheduled-20261121-0700-ct-turn11
+repository: munchie50/cfb-acquisition-bridge
+branch: main
+stage: STARTUP_RECEIPT
+status: RUN_STARTED_PENDING_READBACK
+credentials: not_recorded
