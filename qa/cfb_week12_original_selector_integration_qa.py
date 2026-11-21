@@ -24,9 +24,21 @@ def run(repo, blob_dir=None):
     if git_blob_sha(raw)!=EXPECTED:
         raise RuntimeError('actual decision ledger mismatch')
     ledger=raw.decode('utf-8')
-    sheet=(repo/PREVIEW).read_bytes().decode('utf-8')
+    preview=(repo/PREVIEW).read_bytes().decode('utf-8')
+    # The historical preview is explicitly NONCANONICAL. Its rejection is required.
+    try:
+        audit(preview, ledger)
+    except ValueError as exc:
+        if 'explicitly provisional publication' not in str(exc):
+            raise RuntimeError('preview rejected for unexpected reason: '+str(exc)) from exc
+        preview_rejection=str(exc)
+    else:
+        raise RuntimeError('provisional preview must never pass original gate')
+    # Synthetic QA-only fixture exercises original module binding without laundering
+    # the rejected preview into a canonical sheet or an accepted wager.
+    sheet='Canonical inputs: market '+BASE+'; decision '+EXPECTED+'.\\n'
     if audit(sheet,ledger)['verdict']!='PASS_SUPPLIED_CURRENT_DECISION_BINDING_ONLY':
-        raise RuntimeError('positive audit did not pass')
+        raise RuntimeError('synthetic QA fixture did not pass narrow binding')
     neg_audit={}
     for name,wrong in [('old_base',base.decode('utf-8')),('tampered',ledger+'x')]:
         try:audit(sheet,wrong)
@@ -73,7 +85,7 @@ def run(repo, blob_dir=None):
                 raise RuntimeError(name+' rejected for unexpected reason: '+str(e)) from e
             neg_publication[name]=str(e)
         else:raise RuntimeError(name+' should reject')
-    print(json.dumps({'status':'QA_ORIGINAL_MODULE_INTEGRATION_PASS_NOT_PRODUCTION','decision_blob':EXPECTED,'positive':positive['verdict'],'negative_audit':neg_audit,'negative_publication':neg_publication},indent=2))
+    print(json.dumps({'status':'QA_ORIGINAL_MODULE_INTEGRATION_PASS_NOT_PRODUCTION','decision_blob':EXPECTED,'positive':positive['verdict'],'preview_rejection':preview_rejection,'fixture_scope':'SYNTHETIC_QA_ONLY_NOT_PUBLICATION','negative_audit':neg_audit,'negative_publication':neg_publication},indent=2))
 if __name__=='__main__':
     p=argparse.ArgumentParser()
     p.add_argument('--repo',type=Path,default=Path('.'))
