@@ -90,10 +90,10 @@ class OverlayBindingTests(unittest.TestCase):
                 "cycle_id": "c", "as_of_utc": "2026-11-21T15:00:00Z",
                 "market": [], "decision": {}})
         import json
-        base = b"base\\n"
+        base = b"base\n"
         packet = {"cycle_id": "c", "as_of_utc": "2026-11-21T15:00:00Z", "rows": {}}
-        delta = ("\x60\x60\x60cfb-week12-market-v1\\n" +
-                 json.dumps(packet) + "\\n\x60\x60\x60").encode()
+        delta = ("\x60\x60\x60cfb-week12-market-v1\n" +
+                 json.dumps(packet) + "\n\x60\x60\x60").encode()
         manifest = {"schema": "cfb-overlay-probe-v1", "cycle_id": "c",
                     "as_of_utc": "2026-11-21T15:00:00Z",
                     "market": {"base": probe.git_blob_sha(base),
