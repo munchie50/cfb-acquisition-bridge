@@ -19,6 +19,12 @@ class ProvisionalGuardTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             assert_not_explicitly_provisional("Status: Not Accepted")
 
+    def test_separator_variants_cannot_hide_rejection(self):
+        for label in ('NOT-ACCEPTED', 'NOT\u00a0ACCEPTED', 'NOT\nACCEPTED',
+                      'NON-CANONICAL', 'NO\nACTIONABLE WAGERS'):
+            with self.subTest(label=label), self.assertRaises(ValueError):
+                assert_not_explicitly_provisional('Status: ' + label)
+
     def test_no_rejection_label_is_not_acceptance(self):
         # This function only rejects explicit warnings; it does not grant acceptance.
         self.assertIsNone(assert_not_explicitly_provisional("# CFB Week12 source-derived conditional Hot Sheet"))
