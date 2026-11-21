@@ -48,6 +48,14 @@ class DecisionDiagnosticsTests(unittest.TestCase):
         self.assertEqual(out["rows"][5]["original_state"], "PASS")
         self.assertEqual(out["market_slot_counts"]["MARKET_REVIEW_NOT_EXTRACTABLE"], 4)
 
+    def test_exclusion_analytical_status_is_not_canonical_pass(self):
+        out = analyze(review([{"game_id": "7", "six_markets": {
+            "away_spread": {"analytical_status": "PASS_CURRENT_REVIEW", "reason": "No edge"},
+            "under": {"analytical_status": "SPECIFIC_RECHECK", "reason": "Need QB evidence"}}}]))
+        self.assertEqual(out["rows"][0]["category"], "ANALYTICAL_PASS_NOT_CANONICAL_DECISION")
+        self.assertEqual(out["rows"][5]["category"], "ANALYTICAL_RECHECK_NOT_CANONICAL_DECISION")
+        self.assertFalse(out["rows"][0]["bet_authorized"])
+
     def test_missing_reports_fails_closed(self):
         with self.assertRaises(ValueError):
             analyze({})
