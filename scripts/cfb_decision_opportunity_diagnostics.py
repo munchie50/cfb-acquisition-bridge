@@ -43,6 +43,7 @@ def normalize_market(value):
 
 def analyze(data):
     rows, seen, duplicates = [], set(), []
+    source_shapes = {}
     for section, game in games_from_review(data):
         game_id = str(game["game_id"])
         if game_id in seen:
@@ -54,15 +55,21 @@ def analyze(data):
                     prior["bet_authorized"] = False
             continue  # Quarantine both interpretations; never treat the first as clean.
         seen.add(game_id)
-        markets = next((game[k] for k in ("six_markets", "six_market_review", "branches")
-                        if isinstance(game.get(k), dict)), {})
-        if not isinstance(markets, dict):
-            markets = {}
+        market_sources = [key for key in ("six_markets", "six_market_review", "branches")
+                          if isinstance(game.get(key), dict)]
+        if len(market_sources) != 1:
+            raise ValueError("Expected exactly one six-market review source for game " + game_id)
+        source_shapes[game_id] = market_sources[0]
+        markets = game[market_sources[0]]
         for market in MARKETS:
             raw = markets.get(market)
             if raw is None:
                 alias = next((a for a, canonical in ALIASES.items() if canonical == market and a in markets), None)
                 raw = markets.get(alias) if alias else None
+            if market in {"away_moneyline", "home_moneyline"}:
+                alias = "away_ml" if market == "away_moneyline" else "home_ml"
+                if market in markets and alias in markets and markets[market] != markets[alias]:
+                    raise ValueError("Conflicting market aliases for game " + game_id + ": " + market)
             state, reason = normalize_market(raw)
             lower = reason.lower()
             price_signal = any(word in lower for word in PRICE_WORDS)
@@ -111,6 +118,7 @@ def analyze(data):
             "status": "READ_ONLY_NOT_PRODUCTION_NOT_WAGER_AUTHORITY",
             "game_count": len(seen), "market_slots": len(rows),
             "duplicate_identity_conflicts": duplicates,
+            "source_review_shapes": dict(sorted(source_shapes.items())),
             "market_slot_counts": dict(sorted(counts.items())),
             "reviewed_nonconflicted_market_slots": reviewed_count,
             "missing_market_slots": missing_count,
