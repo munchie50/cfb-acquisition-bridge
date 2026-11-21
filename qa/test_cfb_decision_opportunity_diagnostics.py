@@ -73,6 +73,19 @@ class DecisionDiagnosticsTests(unittest.TestCase):
         self.assertEqual(out["missing_market_slots"], 6)
         self.assertEqual(out["reviewed_nonconflicted_market_slots"], 0)
 
+    def test_colon_terminated_string_state(self):
+        out = analyze(review([{"game_id": "12", "branches": {"over": "PASS: price insufficient"}}]))
+        self.assertEqual(out["rows"][4]["original_state"], "PASS")
+        self.assertEqual(out["reviewed_nonconflicted_market_slots"], 1)
+
+    def test_section_without_rows_or_games_fails_closed(self):
+        with self.assertRaises(ValueError):
+            analyze({"reports": {"sat": {"metadata": "no game list"}}})
+
+    def test_no_games_fails_closed(self):
+        with self.assertRaises(ValueError):
+            analyze({"reports": {"sat": {"rows": []}}})
+
     def test_unknown_prefix_statuses_are_not_reviewed(self):
         out = analyze(review([{"game_id": "11", "six_markets": {
             "over": {"state": "PASS_FUTURE_UNVERIFIED"},
