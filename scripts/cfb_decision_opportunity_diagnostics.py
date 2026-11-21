@@ -41,9 +41,15 @@ def analyze(data):
         game_id = str(game["game_id"])
         if game_id in seen:
             duplicates.append({"game_id": game_id, "additional_section": section})
-            continue  # Quarantine later duplicate; never overwrite first review.
+            for prior in rows:
+                if prior["game_id"] == game_id:
+                    prior["identity_conflict"] = True
+                    prior["category"] = "DUPLICATE_IDENTITY_CONFLICT"
+                    prior["bet_authorized"] = False
+            continue  # Quarantine both interpretations; never treat the first as clean.
         seen.add(game_id)
-        markets = game.get("six_markets", game.get("six_market_review", {}))
+        markets = next((game[k] for k in ("six_markets", "six_market_review", "branches")
+                        if isinstance(game.get(k), dict)), {})
         if not isinstance(markets, dict):
             markets = {}
         for market in MARKETS:
@@ -87,7 +93,7 @@ def analyze(data):
                 "Keyword price factors are not proof that price alone caused PASS.",
                 "No calibrated probability, EV, quote qualification, or ranking is inferred.",
                 "Missing review slots are visible, not converted to PASS.",
-                "Duplicate game identities are reported and later rows quarantined, never silently merged."
+                "Duplicate game identities mark all retained market slots conflicted and quarantine later rows."
             ], "rows": rows}
 
 def main():
