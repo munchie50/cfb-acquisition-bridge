@@ -44,7 +44,7 @@ def reconstruct(repo, manifest):
         import re
         text = delta.decode("utf-8")
         tag = "cfb-week12-" + surface + "-v1"
-        pattern = r"^```" + tag + r"\\n(.*?)^```[ \\t]*$"
+        pattern = r"^```" + tag + chr(10) + r"(.*?)^```[ ]*$"
         matches = list(re.finditer(pattern, text, re.M | re.S))
         if not matches or re.sub(pattern, "", text, flags=re.M | re.S).strip():
             raise ValueError("invalid typed packet framing")
