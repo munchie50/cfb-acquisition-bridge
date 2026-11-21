@@ -22,6 +22,8 @@ def games_from_review(data):
     for section, report in data["reports"].items():
         if not isinstance(report, dict):
             raise ValueError("Malformed review section: " + str(section))
+        if not any(key in report for key in ("rows", "games")):
+            raise ValueError("Review section has no rows or games: " + str(section))
         for key in ("rows", "games"):
             entries = report.get(key, [])
             if not isinstance(entries, list):
@@ -94,6 +96,8 @@ def analyze(data):
                          "football_factor_mentioned": football_signal,
                          "reason": reason,
                          "bet_authorized": False})
+    if not seen:
+        raise ValueError("No identifiable games; refusing zero-game diagnostic")
     counts = Counter(r["category"] for r in rows)
     section_counts = {}
     for row in rows:
