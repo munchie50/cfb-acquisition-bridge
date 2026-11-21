@@ -155,3 +155,13 @@ Estimated holdings: October31 user-confirmed $69.05 at-cost snapshot + Week9 hyp
 ## November 13 observed Caesars payout voucher
 
 CFB_NOV13_VOUCHER_01. Original user-uploaded Harrah's Columbus cashable voucher shows $11.15 issued November 13, 2026 at 16:53 and expiring November 13, 2027 at 16:53 as printed. Timezone unspecified. Source image fingerprint and provenance: `evidence/operational/CFB_NOV13_ADDITIONAL_TICKET_AND_VOUCHER_INTAKE_20261113.json`. Record once as an observed voucher holding. Source of funds, continued possession/redemption, and complete holdings are unconfirmed. This $11.15 observation does not establish new funding, profit, a withdrawal, or settlement of a specific wager. Week 11 issued tickets total $82.00 at cost in the execution ledger. No complete bankroll balance is inferred and older vouchers are not re-counted.
+
+## November 21 execution exposure and observed payout voucher — reconciliation only
+
+Reference: canonical `evidence/operational/CFB_EXECUTION_LEDGER.md` November 21 entries CFB_NOV21-01 through CFB_NOV21-13; original photo-derived intake `evidence/operational/CFB_EXECUTION_TICKETS_20261121_USER_PHOTO_INTAKE.md`.
+
+**CFB_NOV21_TICKET_EXPOSURE**: Thirteen distinct user-confirmed actual wagers totaling **$75.00 stake at cost**, with printed potential gross payout **$143.30** and potential profit **$68.30**. This is a reference to existing ticket outlay, NOT a new deposit, separate second stake debit, realized P&L, confirmed sportsbook settlement or confirmed current cash balance. Production/sandbox allocation UNASSIGNED; opening and current holdings remain NOT_RECONCILED. Never sum this note as an additional cash transaction on top of execution ledger entries. Game outcomes and redemption unverified.
+
+**CFB_NOV21_VOUCHER_01**: Separate user-photographed Caesars Harrah's Columbus **$2.90** payout voucher issued November 21 2026 at 11:05, printed expiration November 21 2027 at 11:05. Observed holding only; cashable identifier omitted. Source wager/transaction, possession and redemption status UNVERIFIED. Do not treat as new funding, profit, settlement of one of the 13 wagers, or withdrawal. Do not combine with older voucher snapshots to assert current holdings without a complete fresh user-confirmed snapshot.
+
+Idempotency: CFB_NOV21_TICKET_EXPOSURE and CFB_NOV21_VOUCHER_01 each documented once. No new funding transaction posted. Existing two explicit +$20 funding records ($40 total) unchanged; no sandbox ceiling change. No engine science or task/schedule changes.
