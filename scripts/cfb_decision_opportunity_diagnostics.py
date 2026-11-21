@@ -35,7 +35,7 @@ def normalize_market(value):
     if isinstance(value, dict):
         return str(value.get("state") or value.get("analytical_status") or "UNSPECIFIED").upper(), str(value.get("reason") or "")
     if isinstance(value, str):
-        prefix = value.strip().split(" ", 1)[0].upper()
+        prefix = value.strip().split(None, 1)[0].rstrip(":").upper() if value.strip() else "UNSPECIFIED"
         return (prefix if prefix in {"PASS", "LEAN", "INCONCLUSIVE", "CONDITIONAL", "CONDITIONAL_PROPOSAL"} else "UNSPECIFIED"), value
     return "UNSPECIFIED", ""
 
