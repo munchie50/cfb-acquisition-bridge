@@ -64,6 +64,24 @@ class OverlayBindingTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "duplicate overlay packet JSON key"):
                 probe.reconstruct(None, manifest)
 
+    def test_pair_adapter_rejects_stale_market_declaration(self):
+        from types import SimpleNamespace
+        from unittest.mock import patch
+        market = "market ledger\n"
+        decision = self.ledger
+        good = ("**Canonical inputs:** market " + blob(market) +
+                "; decision " + blob(decision) + "; execution " + "b" * 40 +
+                "; scorecard " + "c" * 40 + ".\n")
+        fake_week = SimpleNamespace(bootstrap_check=lambda m, d, l: "PASS_PAIR_ONLY")
+        with patch.object(probe, "reconstruct", return_value={"market": market, "decision": decision}):
+            with patch.dict(sys.modules, {"cfb_week12_publication": fake_week}):
+                with self.assertRaisesRegex(ValueError, "canonical pair differs"):
+                    probe.inspect_pair(None, {}, good.replace(blob(market), "0" * 40), "lineage")
+                result = probe.inspect_pair(None, {}, "NONCANONICAL\n" + good, "lineage")
+                self.assertEqual(result["status"], "READ_ONLY_VERIFIED_PREVIEW")
+                self.assertFalse(result["production_acceptance"])
+
+
 
 if __name__ == "__main__":
     unittest.main()
