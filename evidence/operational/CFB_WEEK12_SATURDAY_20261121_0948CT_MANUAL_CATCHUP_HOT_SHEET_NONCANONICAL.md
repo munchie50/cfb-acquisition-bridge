@@ -179,3 +179,21 @@ New public-web discovery on Nov21 located BetSharp's 23-game Top-25-filtered odd
 - **9:30 PM CT — Hawai'i @ Nevada:** frozen numeric reference retained; Original cutoff unverified; no qualified executable offer
 
 **Queue reconciliation:** 16+4+38=58; frozen numeric 46, original exclusions 12. The two saved 7AM planning cutoff conflicts are Ohio State @ Nebraska and Maryland @ USC; they are not reopened by this queue. Material QB uncertainty at Wisconsin @ Purdue remains unresolved. This queue is triage only: it neither asserts a newly refreshed bookmaker offer nor supersedes the original accepted cutoff ledger.
+
+
+## Nov21 09:52 CT source conflict and same-book six-side research
+
+**Critical schedule drift:** BetSharp's Nov21 Top-25 odds page (https://betsharp.com/ncaaf/?day=2026-11-21&top25=1) lists BYU @ Kansas at 12:00 PM ET, whereas The Odds Gap weekly board (https://theoddsgap.com/weeklyslate/college-football) labels the same matchup Sat Nov21 5:00 PM. The retained frozen Saturday companion says 11:00 AM CT (12:00 ET). **Do not replace the retained schedule with the contradictory 5PM label.** Verify with authoritative schedule/game feed before treating any offer as pregame or deadline-valid. The Odds Gap page also uses 9:05 AM ET quote clocks; a quote clock is not kickoff verification.
+
+**New stronger operator-specific research** from LineSmart (https://linesmart.app/ncaaf/games/utah-utes-at-tcu-horned-frogs-2026-11-21/ and https://linesmart.app/ncaaf/games/byu-cougars-at-kansas-jayhawks-2026-11-21/), with reported per-operator snapshot **Sat Nov21 07:45 AM ET**. These are source-reported observation timestamps, NOT proof of live execution at the 09:52 CT audit time:
+
+| Game | Operator / source-reported time | Away spread / home spread | Away ML / home ML | Over / Under | Acceptance |
+|---|---|---|---|---|---|
+| Utah @ TCU | DraftKings, 07:45 ET | Utah -8.5 -108 / TCU +8.5 -112 | Utah -325 / TCU +260 | O46.5 -108 / U46.5 -112 | SIX DISPLAY SIDES FOUND; HOLD |
+| Utah @ TCU | FanDuel, 07:45 ET | Utah -7.5 -116 / TCU +7.5 -104 | Utah -310 / TCU +250 | O46.5 -110 / U46.5 -110 | SIX DISPLAY SIDES FOUND; HOLD |
+| BYU @ Kansas | DraftKings, 07:45 ET | BYU -5.5 -105 / Kansas +5.5 -115 | BYU -205 / Kansas +170 | O46.5 -115 / U46.5 -105 | SIX DISPLAY SIDES FOUND; HOLD |
+| BYU @ Kansas | FanDuel, 07:45 ET | BYU -5.5 -110 / Kansas +5.5 -110 | BYU -215 / Kansas +180 | O47.5 -105 / U47.5 -115 | SIX DISPLAY SIDES FOUND; HOLD |
+
+**Important scope distinction:** Four complete **public six-side display snapshots** were located across two games; **zero** have passed the production qualified-offer/venue/cutoff/current-time and canonical selector gates. The 58-game obligation is unchanged. The original FIRST_FROZEN numbers remain unchanged; no betting edge, pick or parlay is inferred from price comparison alone. In particular, BYU–Kansas kickoff conflict is an active time-authority blocker, not a reason to extend any original cutoff.
+
+**Additional clock drift:** Betwatch's public page is marked 07:09 AM ET; LineSmart 07:45 AM ET; The Odds Gap 09:05 AM ET. These are three different source clocks, not one synchronized live market. Do not combine their sides into a fictitious single-book six-market observation.
