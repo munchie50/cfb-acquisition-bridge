@@ -58,3 +58,10 @@ Do not repeat abandoned DNS troubleshooting or already completed CBS 70/70 norma
 - Applied smallest possible in-place prompt correction, replacing that exact path with evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-20_MANUAL_PROVISIONAL_RELEASE.md; no other prompt text altered.
 - Independent automation peek readback verified entire replacement prompt byte-for-byte, stale path absent, correct path present, identical schedule and enabled status. No new task, no schedule change, no canonical ledger/index or wager mutation.
 - Status: WRONG_PATH_INSTRUCTION_DEFECT_FIXED_AND_READBACK_VERIFIED. Future worker execution still unverified; publication selector and executable-offer blockers remain distinct and unresolved. Do not claim RUN_PASS from task prompt update.
+
+## Actual Python execution — overlay regression QA PASS
+- Staged exact main sources via authenticated GitHub fetch_file into isolated hosted Python 3.11 environment: scripts/cfb_overlay_publication_probe.py blob 16028db308e15399e0c3de036d05d01fa4d5525a, qa/test_cfb_overlay_preview_binding.py blob 6c4a7f1ed7cdb670c447fde8d2bc4174c9658b89, plus original cfb_hot_sheet_current_decision_binding_gate.py, cfb_week12_publication.py and cfb_recovery_navigation_reader.py.
+- First test attempt returned exit 1 because isolated staging omitted existing cfb_recovery_navigation_reader module (ModuleNotFoundError). Staged that existing dependency; no source patch needed.
+- Reran exact command python -m unittest discover -s qa -p test_cfb_overlay_preview_binding.py -v; subprocess exit 0; 11 tests in 0.008s, OK. Explicitly includes duplicate/reordered cycle regression and provisional fail-closed binding cases.
+- This is EXECUTED/PASS for the 11-test overlay unit suite, not actual Week12 manifest data, canonical selector integration, lease/CAS proof, fresh sportsbook qualification, or scheduled worker RUN_PASS.
+- Next unfinished: run original selector integration QA and actual immutable manifest-pinned reconstructed pair, then governed publication decision. No production data/schedules changed.
