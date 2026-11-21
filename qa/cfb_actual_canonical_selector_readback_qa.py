@@ -29,14 +29,14 @@ def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_in
                ('scripts/cfb_hot_sheet_current_decision_binding_gate.py', expected_binding_module)]
     for relative, expected in modules:
         raw = (root / relative).read_bytes()
-        actual = hashlib.sha1(b'blob ' + str(len(raw)).encode() + b'\\0' + raw).hexdigest()
-        if actual != expected    sys.path.insert(0, str(root / "scripts"))
+        actual = hashlib.sha1(b'blob ' + str(len(raw)).encode() + b'\0' + raw).hexdigest()
+        if actual != expected:
+            raise ValueError('staged original Python module differs from pinned snapshot: ' + relative)
+    sys.path.insert(0, str(root / "scripts"))
     from cfb_recovery_navigation_reader import read
     from cfb_hot_sheet_current_decision_binding_gate import (
         publication, blob, LEDGER, CURRENT_ROLE,
     )
-:
-            raise ValueError('staged original Python module differs from pinned snapshot: ' + relative)
     if blob(index) != expected_index or blob(ledger) != expected_ledger:
         raise ValueError('staged index or ledger differs from pinned repository snapshot')
     nav = read(index, as_of)
