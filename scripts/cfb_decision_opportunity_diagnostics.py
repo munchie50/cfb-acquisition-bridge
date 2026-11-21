@@ -29,7 +29,7 @@ def games_from_review(data):
 
 def normalize_market(value):
     if isinstance(value, dict):
-        return str(value.get("state") or "UNSPECIFIED"), str(value.get("reason") or "")
+        return str(value.get("state") or value.get("analytical_status") or "UNSPECIFIED").upper(), str(value.get("reason") or "")
     if isinstance(value, str):
         prefix = value.strip().split(" ", 1)[0].upper()
         return (prefix if prefix in {"PASS", "LEAN", "INCONCLUSIVE", "CONDITIONAL", "CONDITIONAL_PROPOSAL"} else "UNSPECIFIED"), value
@@ -68,6 +68,12 @@ def analyze(data):
                 category = "PROPOSAL_REQUIRES_QUALIFICATION"
             elif state == "LEAN":
                 category = "LEAN_REQUIRES_REVIEW"
+            elif state in {"SPECIFIC_RECHECK", "RESEARCH_LEAN"}:
+                category = "ANALYTICAL_RECHECK_NOT_CANONICAL_DECISION"
+            elif state.startswith("PASS_"):
+                category = "ANALYTICAL_PASS_NOT_CANONICAL_DECISION"
+            elif state.startswith("ANALYTICAL_"):
+                category = "ANALYTICAL_PROPOSAL_NOT_CANONICAL_DECISION"
             elif state == "INCONCLUSIVE":
                 category = "UNRESOLVED"
             elif state == "PASS" and price_signal:
@@ -89,7 +95,7 @@ def analyze(data):
             "duplicate_identity_conflicts": duplicates,
             "market_slot_counts": dict(sorted(counts.items())),
             "method_limitations": [
-                "Review-source state is not canonical decision state.",
+                "Review-source state is not canonical decision state; analytical_status is retained separately.",
                 "Keyword price factors are not proof that price alone caused PASS.",
                 "No calibrated probability, EV, quote qualification, or ranking is inferred.",
                 "Missing review slots are visible, not converted to PASS.",
