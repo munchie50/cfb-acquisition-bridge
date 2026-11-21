@@ -77,3 +77,8 @@ Existing learning contract already owns Sunday scorecards, missed opportunities,
 - Fixed string review parsing of colon-terminated states (`PASS:`), and refused reports that contain sections with neither `rows` nor `games` or that contain zero identified games. Added three regression tests and exact GitHub readback verified.
 - Exact committed Python diagnostic suite and pinned Week12 Python execution remain **not run**. Independent Week12 census is source-derived only: 70 unique games, 420 slots = 396 recognized nonconflicted reviews + 18 quote unavailable + six duplicate conflicts.
 - Next high-value step is to execute byte-identical committed module and full tests against pinned Week12 JSON via an available repository-content transfer, not continue accumulating unexecuted test fixtures. No production changes.
+
+## Source shape ambiguity deep-dive
+- Independently enumerated all 71 original Week12 section records and verified each has exactly one of `six_markets`, `six_market_review`, `branches`, containing all six expected market keys. This is a source-structure check, not exact Python execution.
+- Fixed ambiguous source selection: diagnostic now raises on multiple market review structures in a game and on conflicting canonical vs abbreviated moneyline aliases; retains explicit MISSING when no market review structure exists. Records `source_review_shapes` for provenance. Added three targeted regression tests, exact GitHub readback passed.
+- Next: run byte-identical committed Python and full QA against pinned Week12, reconcile category/section coverage, then join outcomes. Do not claim executed tests or acceptance for this checkpoint; no production changes.
