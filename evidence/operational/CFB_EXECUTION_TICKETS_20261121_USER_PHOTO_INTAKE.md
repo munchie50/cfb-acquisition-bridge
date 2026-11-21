@@ -20,3 +20,19 @@ Eight unique tickets. Total stake $50.00, sum printed potential profit $45.30, t
 Separate ninth photo: payout voucher for $2.90, issued Nov 21 2026 11:05am, expiration Nov 21 2027 11:05am, voucher suffix 9084. This is a redeemable voucher, NOT a ninth bet, NOT proof of settled win from the eight tickets, and NOT automatically a new deposit, realized profit, or wager stake. Financial reconciliation requires provenance and redemption confirmation.
 
 Governance: append-only observation record; no canonical ledger, money ledger, Hot Sheet, prediction source, frozen champion, task, or scheduler changes. Deduplicate against ticket identifiers before canonical ledger import. Preserve screenshot evidence as execution-only; exclude from training, recommendation generation, backtesting, calibration and market source inference. Await separate verified settlement results before updating W/L/P and realized P&L.
+
+## Second photo batch — five additional tickets (Nov 21, 2026)
+
+Five unique ticket suffixes not present in the first batch. User-supplied execution evidence, NOT model input, recommendation proof, or settlement.
+
+| Ticket suffix | Issued | Matchup | Bet | American odds | Stake | Printed max win | Printed max payout |
+|---|---|---|---|---:|---:|---:|---:|
+| 9562 | 10:59am | Louisiana-Monroe at Appalachian State | Appalachian State -14 | -107 | $5.00 | $4.65 | $9.65 |
+| 2588 | 10:57am | North Carolina at Virginia | North Carolina -1 | -114 | $5.00 | $4.40 | $9.40 |
+| 5509 | 10:56am | Northwestern at Minnesota | Northwestern -3 | -104 | $5.00 | $4.80 | $9.80 |
+| 7685 | 10:56am | Wisconsin at Purdue | Wisconsin -4.5 | -112 | $5.00 | $4.45 | $9.45 |
+| 7389 | 10:52am | Wofford at Ole Miss | Ole Miss -50 | -106 | $5.00 | $4.70 | $9.70 |
+
+Second batch: five wagers, $25.00 stakes, $23.00 potential profit, $48.00 potential gross payout. Combined November 21 intake: 13 unique wagers, $75.00 staked, $68.30 potential profit, $143.30 potential gross payout if all win. The separate $2.90 payout voucher remains excluded from stakes and settlement.
+
+All five outcomes PENDING / NOT VERIFIED. Source photographs remain in the conversation, not committed as binaries. No canonical betting/money ledger import or production changes; perform ticket-ID deduplication and independently verify outcomes before posting realized P&L.
