@@ -6,6 +6,10 @@ The user authorized immediate production-facing display of the completed 70-game
 
 **Consumer routing:** Existing Market Monitor and Hot Sheet delivery tasks should lead with this explicit display override when a newer accepted Week12 publication is absent. Report the older canonical selector pointer separately; do not replace the canonical CURRENT_HOT_SHEET pointer or present this as selector acceptance. A genuinely accepted canonical publication supersedes this override. Champion, FIRST_FROZEN, canonical ledgers, money ledger, and four production schedules remain unchanged.
 
+## Nov21 downstream continuation — supersedes historical handoff below
+
+**ACTIVE FRONTIER:** production-facing review display is deployed and live GitHub readback verified (this release SHA `7ec0aaafdb9ebb8e7f30cbd564606c8757ec09da` before this status addendum; linked full-sheet SHA `00cb3eac893e34187769b56924e553d52681cb92`). Four existing task prompts were aligned; original selector integration and pinned canonical selector QA were executed PASS. The old handoff below saying the next engineering action is to resolve selector mismatch is **historical**, not a prerequisite to using this display. Continue with downstream worker output and delivery verification, current/future market readiness, and specific handoff coverage defects. Do not recreate the 70-game sheet or re-execute unchanged QA. Canonical Nov20 acceptance and executable sportsbook offers remain unverified; no wagers. See `evidence/run_receipts/CFB_MARKET_MONITOR_20261121_13CT_MANUAL_CATCHUP_CONTINUATION.md` for exact executed proof and continuation.
+
 ---
 
 # CFB Week 12 — Friday November 20 manual provisional Hot Sheet release
