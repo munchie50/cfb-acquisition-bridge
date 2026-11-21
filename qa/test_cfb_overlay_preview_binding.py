@@ -72,7 +72,7 @@ class OverlayBindingTests(unittest.TestCase):
         good = ("**Canonical inputs:** market " + blob(market) +
                 "; decision " + blob(decision) + "; execution " + "b" * 40 +
                 "; scorecard " + "c" * 40 + ".\n")
-        fake_week = SimpleNamespace(bootstrap_check=lambda m, d, l: "PASS_PAIR_ONLY")
+        fake_week = SimpleNamespace(bootstrap_check=lambda m, d, l: "PASS_WEEK12_CONDITIONAL_PROPOSAL_ONLY")
         with patch.object(probe, "reconstruct", return_value={"market": market, "decision": decision}):
             with patch.dict(sys.modules, {"cfb_week12_publication": fake_week}):
                 with self.assertRaisesRegex(ValueError, "canonical pair differs"):
@@ -104,6 +104,15 @@ class OverlayBindingTests(unittest.TestCase):
                           base if digest == probe.git_blob_sha(base) else delta):
             with self.assertRaisesRegex(ValueError, "packet rows must be a list"):
                 probe.reconstruct(None, manifest)
+
+    def test_pair_adapter_rejects_nonpassing_bootstrap(self):
+        from types import SimpleNamespace
+        with patch.object(probe, "reconstruct", return_value={
+                "market": "market", "decision": self.ledger}):
+            with patch.dict(sys.modules, {"cfb_week12_publication":
+                    SimpleNamespace(bootstrap_check=lambda *args: "RUN_INCOMPLETE")}):
+                with self.assertRaisesRegex(ValueError, "bootstrap did not return"):
+                    probe.inspect_pair(None, {}, self.sheet, "lineage")
 
     def test_cli_sheet_option_invokes_paired_consumer(self):
         import json
