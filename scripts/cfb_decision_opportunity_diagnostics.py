@@ -36,11 +36,12 @@ def normalize_market(value):
     return "UNSPECIFIED", ""
 
 def analyze(data):
-    rows, seen = [], set()
+    rows, seen, duplicates = [], set(), []
     for section, game in games_from_review(data):
         game_id = str(game["game_id"])
         if game_id in seen:
-            raise ValueError("Duplicate game identity across report sections: " + game_id)
+            duplicates.append({"game_id": game_id, "additional_section": section})
+            continue  # Quarantine later duplicate; never overwrite first review.
         seen.add(game_id)
         markets = game.get("six_markets", game.get("six_market_review", {}))
         if not isinstance(markets, dict):
@@ -79,13 +80,14 @@ def analyze(data):
     return {"schema": "CFB_DECISION_OPPORTUNITY_DIAGNOSTICS_V1",
             "status": "READ_ONLY_NOT_PRODUCTION_NOT_WAGER_AUTHORITY",
             "game_count": len(seen), "market_slots": len(rows),
+            "duplicate_identity_conflicts": duplicates,
             "market_slot_counts": dict(sorted(counts.items())),
             "method_limitations": [
                 "Review-source state is not canonical decision state.",
                 "Keyword price factors are not proof that price alone caused PASS.",
                 "No calibrated probability, EV, quote qualification, or ranking is inferred.",
                 "Missing review slots are visible, not converted to PASS.",
-                "Duplicate game identities fail closed."
+                "Duplicate game identities are reported and later rows quarantined, never silently merged."
             ], "rows": rows}
 
 def main():
