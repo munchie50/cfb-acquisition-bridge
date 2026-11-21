@@ -6,6 +6,7 @@ against the corresponding remote Git blob IDs before relying on this result.
 This QA does not certify live markets, bets, freshness, or scheduled execution.
 """
 import argparse
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -18,11 +19,6 @@ def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_in
     for p in (index_path, ledger_path):
         if not p.is_relative_to(root):
             raise ValueError('input file escapes pinned repository root')
-    sys.path.insert(0, str(root / "scripts"))
-    from cfb_recovery_navigation_reader import read
-    from cfb_hot_sheet_current_decision_binding_gate import (
-        publication, blob, LEDGER, CURRENT_ROLE,
-    )
     index = index_path.read_bytes().decode("utf-8")
     ledger = ledger_path.read_bytes().decode("utf-8")
     for name, digest in [('index', expected_index), ('ledger', expected_ledger), ('sheet', expected_sheet),
@@ -32,7 +28,14 @@ def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_in
     modules = [('scripts/cfb_recovery_navigation_reader.py', expected_navigation_module),
                ('scripts/cfb_hot_sheet_current_decision_binding_gate.py', expected_binding_module)]
     for relative, expected in modules:
-        if blob((root / relative).read_bytes().decode('utf-8')) != expected:
+        raw = (root / relative).read_bytes()
+        actual = hashlib.sha1(b'blob ' + str(len(raw)).encode() + b'\\0' + raw).hexdigest()
+        if actual != expected    sys.path.insert(0, str(root / "scripts"))
+    from cfb_recovery_navigation_reader import read
+    from cfb_hot_sheet_current_decision_binding_gate import (
+        publication, blob, LEDGER, CURRENT_ROLE,
+    )
+:
             raise ValueError('staged original Python module differs from pinned snapshot: ' + relative)
     if blob(index) != expected_index or blob(ledger) != expected_ledger:
         raise ValueError('staged index or ledger differs from pinned repository snapshot')
