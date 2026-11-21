@@ -1,5 +1,6 @@
 """Prepare a real, pinned CFB Git worktree before research; never publish or write back."""
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -12,7 +13,7 @@ REQUIRED = ('cfb_week9_publication.py', 'cfb_hot_sheet_readiness.py',
             'cfb_neutral_publication_gate.py', 'cfb_recovery_consumer_preflight.py')
 
 
-def prepare(destination, expected_head):
+def prepare(destination, expected_head, *, bundle=None, bundle_sha256=None):
     if not re.fullmatch(r'[0-9a-f]{40}', expected_head):
         raise ValueError('exact connector-observed main commit required')
     destination = Path(destination).resolve()
@@ -22,10 +23,32 @@ def prepare(destination, expected_head):
     def git(*args):
         return subprocess.check_output(['git', *args], env=env, stderr=subprocess.PIPE,
                                        timeout=180).decode('utf-8').strip()
-    # A normal full clone preserves genuine commit/tree/blob ancestry. No graft,
-    # replacement object, forged commit, synthetic ref or validator patch is used.
-    git('clone', '--no-checkout', REPOSITORY, str(destination))
+    # Authenticate the local transport against the separately observed current main.
+    # Do not accept stale, corrupted, shallow, or synthetic history.
+    if (bundle is None) != (bundle_sha256 is None):
+        raise ValueError('bundle and expected SHA-256 must be supplied together')
+    repository = REPOSITORY
+    if bundle is not None:
+        if not re.fullmatch(r'[0-9a-f]{64}', bundle_sha256):
+            raise ValueError('exact trusted SHA-256 digest required')
+        bundle = Path(bundle).resolve(strict=True)
+        if not bundle.is_file():
+            raise ValueError('bundle must be a regular file')
+        with bundle.open('rb') as stream:
+            actual = hashlib.file_digest(stream, 'sha256').hexdigest()
+        if actual != bundle_sha256:
+            raise ValueError('bundle SHA-256 differs from authenticated transport metadata')
+        if git('bundle', 'list-heads', str(bundle), 'refs/heads/main') != expected_head + ' refs/heads/main':
+            raise ValueError('bundle main differs from connector-observed main')
+        git('bundle', 'verify', str(bundle))
+        repository = str(bundle)
+    # Both source paths require genuine full Git ancestry and immutable reviews.
+    git('clone', '--no-checkout', repository, str(destination))
     git('-C', str(destination), 'cat-file', '-e', expected_head + '^{commit}')
+    if bundle is not None:
+        # Local clone may not import the main remote-tracking ref by default.
+        git('-C', str(destination), 'fetch', '--no-tags', str(bundle),
+            'refs/heads/main:refs/remotes/origin/main')
     git('-C', str(destination), 'merge-base', '--is-ancestor', expected_head, 'origin/main')
     git('-C', str(destination), 'checkout', '--detach', expected_head)
     if git('-C', str(destination), 'rev-parse', 'HEAD') != expected_head:
@@ -56,6 +79,7 @@ def prepare(destination, expected_head):
     return {'status': 'SUPPORTED_GIT_RUNTIME_VERIFIED', 'repository': REPOSITORY,
             'head': expected_head, 'worktree': str(destination),
             'python': sys.version.split()[0], 'immutable_reviews': verified,
+            'checkout_source': 'local_git_bundle' if bundle is not None else 'github_https',
             'scope': 'runtime and ancestry only; no research, publication or run acceptance'}
 
 
@@ -63,9 +87,12 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--destination', type=Path, required=True)
     p.add_argument('--expected-head', required=True)
+    p.add_argument('--bundle', type=Path)
+    p.add_argument('--bundle-sha256')
     a = p.parse_args()
     try:
-        print(json.dumps(prepare(a.destination, a.expected_head), indent=2))
+        print(json.dumps(prepare(a.destination, a.expected_head, bundle=a.bundle,
+                                 bundle_sha256=a.bundle_sha256), indent=2))
     except (ValueError, OSError, subprocess.SubprocessError) as exc:
         print(json.dumps({'status': 'COMPUTATION_RUNTIME_UNAVAILABLE',
                           'error_type': type(exc).__name__,
