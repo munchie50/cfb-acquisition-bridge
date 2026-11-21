@@ -43,7 +43,16 @@ def reconstruct(repo, manifest):
         text = delta.decode("utf-8")
         if not text.startswith(prefix) or not text.rstrip().endswith("\x60\x60\x60"):
             raise ValueError("invalid typed packet framing")
-        packet = json.loads(text[len(prefix):].rstrip()[:-3])
+        def reject_duplicate_keys(pairs):
+            result = {}
+            for key, value in pairs:
+                if key in result:
+                    raise ValueError("duplicate overlay packet JSON key")
+                result[key] = value
+            return result
+        packet = json.loads(text[len(prefix):].rstrip()[:-3], object_pairs_hook=reject_duplicate_keys)
+        if not isinstance(packet, dict):
+            raise ValueError("overlay packet must be a JSON object")
         if (packet.get("cycle_id"), packet.get("as_of_utc")) != (manifest["cycle_id"], manifest["as_of_utc"]):
             raise ValueError("packet and manifest boundary mismatch")
         outputs[surface] = raw.decode("utf-8")
