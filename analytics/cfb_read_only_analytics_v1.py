@@ -5,6 +5,7 @@ No betting advice, source mutation, gate relaxation or model training.
 import argparse
 import json
 import math
+import re
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -36,6 +37,9 @@ def load(path, as_of):
                 continue
             if row["source_kind"] not in ("CERTIFIED_MARKET", "ENGINE_DECISION", "SCHEDULER_RECEIPT", "EXECUTION"):
                 raise ValueError("unapproved source kind")
+            if row["source_kind"] == "CERTIFIED_MARKET":
+                if not row.get("source_path") or not re.fullmatch(r"[0-9a-f]{40}", str(row.get("source_blob", ""))):
+                    raise ValueError("certified market provenance missing")
             if row.get("actual_wager") and row["source_kind"] != "EXECUTION":
                 raise ValueError("execution evidence boundary")
             row["_observed"] = observed
