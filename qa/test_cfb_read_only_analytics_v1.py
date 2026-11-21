@@ -7,6 +7,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "analytics"))
 from cfb_read_only_analytics_v1 import analyze, timestamp, load
 
 def row(status, observed, kind="ENGINE_DECISION", **extra):
+    if kind == "ENGINE_DECISION":
+        extra.setdefault("decision_at", observed)
     if kind == "CERTIFIED_MARKET":
         extra.setdefault("source_path", "evidence/market/verified.json")
         extra.setdefault("source_blob", "a" * 40)
@@ -25,6 +27,7 @@ for r in rows:
 result = analyze(rows, [], as_of)
 assert result["status"] == "DESCRIPTIVE_ONLY"
 assert result["late_engine_decisions"] == 1
+assert result["status"] == "DESCRIPTIVE_ONLY"
 assert result["nonpass_reasons"]["NO_VENUE_QUOTE"] == 1
 assert result["market_movements"][0]["movement"] == -0.5
 assert result["market_movements"][0]["label"] == "OBSERVED_MOVEMENT_NOT_CLV"
@@ -42,4 +45,17 @@ with tempfile.TemporaryDirectory() as d:
     p.write_text(json.dumps(invalid), encoding="utf-8")
     loaded, errors = load(p, as_of)
     assert not loaded and errors and "provenance missing" in errors[0]
+with tempfile.TemporaryDirectory() as d:
+    p = Path(d) / "decision.jsonl"
+    invalid = row("PASS", "2026-11-20T18:00:00Z")
+    del invalid["decision_at"]
+    p.write_text(json.dumps(invalid), encoding="utf-8")
+    loaded, errors = load(p, as_of)
+    assert not loaded and "decision_at required" in errors[0]
+conflict = row("PASS", "2026-11-20T21:00:00Z", "CERTIFIED_MARKET", market="spread", side="home", book="BOOK_A", price_unit="points", quote_type="spread", price=-8.0)
+conflict["_observed"] = timestamp(conflict["observed_at"])
+conflict["_deadline"] = timestamp(conflict["decision_deadline"])
+conflicted = analyze(rows + [conflict], [], as_of)
+assert conflicted["status"] == "INCOMPLETE"
+assert not conflicted["market_movements"]
 print("QA_PASS: deterministic read-only analytics invariants")
