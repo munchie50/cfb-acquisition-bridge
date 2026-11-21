@@ -66,11 +66,11 @@ def run(root: Path, index_path: Path, ledger_path: Path, as_of: str, expected_in
     # Selector binding is not acceptance. Fail closed on explicitly provisional
     # artifacts even when every Git pointer and decision hash matches.
     sheet_text = loader(path)
-    # Inspect the bounded publication header, not only its first line: a
-    # title or blank line must not conceal a later explicit rejection marker.
-    header = '\n'.join(sheet_text.splitlines()[:20]).upper()
+    # A header-length limit is bypassable by padding the first 20 lines.
+    # Fail closed on explicit nonacceptance anywhere in the publication.
+    publication_text = sheet_text.upper()
     provisional_markers = ('NONCANONICAL', 'NOT ACCEPTED', 'NOT_ACCEPTED', 'NO ACTIONABLE WAGERS')
-    if any(marker in header for marker in provisional_markers):
+    if any(marker in publication_text for marker in provisional_markers):
         raise ValueError('explicitly provisional current sheet cannot pass canonical QA readback')
     result = publication(index, ledger, loader, as_of)
     if result["sheet_blob"] != expected_sheet:
