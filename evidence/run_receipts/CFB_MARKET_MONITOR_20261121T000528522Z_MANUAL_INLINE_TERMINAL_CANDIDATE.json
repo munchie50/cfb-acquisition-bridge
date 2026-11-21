@@ -1,0 +1,28 @@
+{
+  "schema": "CFB_MANUAL_INLINE_TERMINAL_CANDIDATE_V1",
+  "trigger": "manual run_now inline; not scheduled-worker proof",
+  "startup_receipt": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261121T000528522Z_MANUAL_INLINE.md",
+  "repo_head_at_authority_read": "f1fba99a1b56ea79826fb94fdb1459b1b162f089",
+  "source_proof": {
+    "normalizer_blob": "35536c3e4988640935e7754be08c3ec464e29215",
+    "week12_producer_blob": "8656a3f8cc511715fc3a7a5905de1d5b2e3055bf",
+    "market_blob": "21e2172c709dcf482c4750a7490b82aacac05949",
+    "decision_blob": "6862be6a1bd88a3290b1e90a49c33a7a87e92559",
+    "lineage_blob": "8e019d9b502067c0a669e860a70e177b8e5ecda6"
+  },
+  "runtime": {
+    "direct_shell": "PASS: python3 3.13.5; git 2.47.3",
+    "github_connector": "PASS: authenticated fresh tree",
+    "connector_shell_combination": "NOT_EXPOSED",
+    "remote_python_archive_execution": "NOT_EXECUTED; previous Firecrawl remote credits exhausted"
+  },
+  "work": {
+    "fresh_CBS_capture": "NOT_EXECUTED",
+    "refresh_rows": "NOT_EXECUTED",
+    "compiler": "NOT_EXECUTED",
+    "current_qualified_offers": "NOT_VERIFIED",
+    "canonical_publication": "NOT_EXECUTED"
+  },
+  "verdict": "RUN_INCOMPLETE",
+  "reason": "No authenticated full checkout/alternate Python runtime with GitHub transport and fresh CBS acquisition in this manual inline invocation. No gate relaxation or backdating."
+}
