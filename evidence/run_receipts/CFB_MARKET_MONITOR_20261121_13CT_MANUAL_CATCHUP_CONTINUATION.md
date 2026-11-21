@@ -52,3 +52,9 @@ Do not repeat abandoned DNS troubleshooting or already completed CBS 70/70 norma
 - Canonical selector design evidence/operational/CFB_WEEK12_SELECTOR_PUBLICATION_TRANSACTION_DESIGN_20261120.md blob 90573bccd14ad5139628fdb40b992b705be10536 independently confirms the selector mismatch is distinct and already designed as a governed, unapproved transaction; don't duplicate or promote its detached QA candidates.
 - Operational fix for future Monitor handoffs: use the actual verified release path above and follow its linked rendered preview. Do not edit historical immutable run receipts or loosen canonical gate. Any production automation prompt edit requires fresh prompt read and scoped change review.
 - Remaining: test execution evidence and canonical integration remain unverified. No accepted wagers or RUN_PASS.
+
+## Production task instruction correction — verified
+- Read live existing Market Monitor task 6ae766e788d881919726d0eeb44450dd. Its active prompt contained exactly one stale path evidence/operational/CFB_WEEK12_20261120_MANUAL_PROVISIONAL_RELEASE.md and no occurrence of the actual release path.
+- Applied smallest possible in-place prompt correction, replacing that exact path with evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-20_MANUAL_PROVISIONAL_RELEASE.md; no other prompt text altered.
+- Independent automation peek readback verified entire replacement prompt byte-for-byte, stale path absent, correct path present, identical schedule and enabled status. No new task, no schedule change, no canonical ledger/index or wager mutation.
+- Status: WRONG_PATH_INSTRUCTION_DEFECT_FIXED_AND_READBACK_VERIFIED. Future worker execution still unverified; publication selector and executable-offer blockers remain distinct and unresolved. Do not claim RUN_PASS from task prompt update.
