@@ -13,6 +13,14 @@ def blob(text):
     return hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()
 
 def audit(sheet, ledger):
+    # Binding PASS must never be emitted for an explicitly rejected publication.
+    separator = r'[\s_\-\u2010-\u2015\u2212]+'
+    upper = sheet.upper()
+    provisional = (r'NON' + separator + r'CANONICAL',
+                   r'NOT' + separator + r'ACCEPTED',
+                   r'NO' + separator + r'ACTIONABLE' + separator + r'WAGERS')
+    if 'NONCANONICAL' in upper or any(re.search(p, upper) for p in provisional):
+        raise ValueError('explicitly provisional publication cannot pass current decision binding')
     # A qualified execution reference is optional metadata, not decision authority.
     plain=r'^Canonical inputs: market [0-9a-f]{40}; decision ([0-9a-f]{40})(?:; execution [0-9a-f]{40})?\.$'
     bold=r'^\*\*Canonical inputs:\*\* market [0-9a-f]{40}; decision ([0-9a-f]{40}); execution [0-9a-f]{40}; scorecard [0-9a-f]{40}\.$'
