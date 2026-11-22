@@ -2,7 +2,7 @@
 
 Status: USER-SUPPLIED REAL-MONEY EXECUTION EVIDENCE; independently extracted from nine uploaded photos. NOT engine recommendations, model features, calibration, prediction approval, or outcome settlement. Source photos remain in conversation; no claim that binary images were uploaded to GitHub.
 
-Venue: Caesars Sportsbook, Harrah's Columbus. All eight bets are straight pregame spread tickets issued Nov 21 2026 (times as printed, local venue). User convention: all tickets are real money unless explicitly stated otherwise.
+Venue: Caesars Sportsbook, Harrah's Columbus. All eight bets are straight spread tickets issued Nov 21 2026 (times as printed, local venue); **pregame versus live timing is NOT independently verified**. Printed issue/event clocks and absence of a LIVE label are insufficient to certify actual pre-kickoff placement. User convention: all tickets are real money unless explicitly stated otherwise.
 
 | Ticket suffix | Issued | Matchup | Bet | American odds | Stake | Printed max win | Printed max payout |
 |---|---|---|---|---:|---:|---:|---:|
