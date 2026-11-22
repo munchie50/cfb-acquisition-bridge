@@ -1,6 +1,6 @@
 {
   "schema": "CFB_WEEK12_FIRST_FROZEN_SCORING_CANDIDATE_V1",
-  "status": "CBS_70_OF_70_RECONCILED_QA_ONLY_NOT_CANONICAL",
+  "status": "CBS_69_PLUS_NCAA_1_FINAL_QA_ONLY_NOT_CANONICAL",
   "source_final_candidate_path": "evidence/audits/CFB_WEEK12_CBS_FINAL_CANDIDATE_20261122_RESEARCH_ONLY.json",
   "source_final_candidate_blob": "548b1a19f337e00a0a18b8ee8fa45345cd959ce3",
   "original_lineage_path": "evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json",
@@ -1219,5 +1219,20 @@
       "away_points": 21,
       "home_points": 29
     }
-  ]
+  ],
+  "effective_final_source_policy": {
+    "scope": "WEEK12_70_GAME_QA_ONLY",
+    "default": "CBS_WEEK12_GAME_SPECIFIC_FINAL",
+    "overrides": [
+      {
+        "game_id": "401861968",
+        "effective_source": "NCAA_OFFICIAL_GAME_6604217",
+        "away_points": 21,
+        "home_points": 29,
+        "cbs_header_away_points": 20
+      }
+    ],
+    "historical_corrections": "APPEND_ONLY_AUDIT_HISTORY_NOT_CURRENT_SOURCE_AUTHORITY",
+    "canonical_acceptance": "PENDING"
+  }
 }
