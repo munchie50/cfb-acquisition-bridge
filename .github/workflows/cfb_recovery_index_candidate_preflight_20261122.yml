@@ -1,0 +1,65 @@
+name: CFB recovery-index candidate preflight (read-only)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_recovery_index_candidate_preflight_20261122.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  original-consumer-preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build prospective navigation checkpoint without modifying canonical index
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, re, subprocess
+          from datetime import datetime, timezone
+          from pathlib import Path
+          source=Path('evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_295.md')
+          original=source.read_text()
+          matches=list(re.finditer(r'^\x60\x60\x60cfb-frontier-json[ \t]*\n(.*?)^\x60\x60\x60[ \t]*$',original,re.M|re.S))
+          assert len(matches)==2 and not original[matches[-1].end():].strip()
+          frontier=json.loads(matches[-1].group(1))
+          assert len(frontier['pointers'])==517
+          replacements={
+            'evidence/operational/CFB_EXECUTION_LEDGER.md':('5f098136e7c2719731d49d5bbe98752df0775e9f','4ffc6866b629b2350dc782288426f4ba0a32988d'),
+            'evidence/operational/CFB_MONEY_LEDGER.md':('5e998c014cbddb5822c63f61f10f6c3deb565a29','46ba2d67b32fe4a688c2fa2867d59ffe933fb651')
+          }
+          changed=[]
+          for p in frontier['pointers']:
+            actual=subprocess.check_output(['git','hash-object',p['path']],text=True).strip()
+            if p['path'] in replacements:
+              old,new=replacements[p['path']]
+              assert p['blob']==old and actual==new,(p['path'],p['blob'],actual)
+              p['blob']=new
+              changed.append(p['path'])
+            else:
+              assert p['blob']==actual,(p['path'],p['blob'],actual)
+          assert set(changed)==set(replacements)
+          frontier['as_of_utc']=datetime.now(timezone.utc).isoformat()
+          frontier['claims'].append('Prospective navigation-only repair of exactly two stale current execution/money ledger blob references, independently checked against all 517 repository files; no financial or wager mutation, no operational or scientific acceptance.')
+          target=Path('/tmp/cfb_recovery_index_candidate.md')
+          target.write_text(original.rstrip()+'\n\n\x60\x60\x60cfb-frontier-json\n'+json.dumps(frontier,indent=2)+'\n\x60\x60\x60\n')
+          print('CANDIDATE_BUILT pointer_count=517 changed=2 canonical_unchanged=true')
+          PY
+      - name: Execute original recovery consumer preflight on candidate
+        run: |
+          set -euo pipefail
+          python scripts/cfb_recovery_consumer_preflight.py --index /tmp/cfb_recovery_index_candidate.md --repository-root .
+      - name: Verify canonical file remains unchanged
+        run: |
+          set -euo pipefail
+          git diff --exit-code -- evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_295.md
+          echo 'READ_ONLY_CANDIDATE_PREFLIGHT_COMPLETED'
