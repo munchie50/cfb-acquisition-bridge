@@ -1,0 +1,29 @@
+name: CFB manual catch-up read-only guards
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_manual_catchup_readonly_qa.yml'
+permissions:
+  contents: read
+jobs:
+  verify-retained-catchup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Execute Week12 retained evidence integrity guard
+        run: python scripts/cfb_week12_catchup_integrity_guard.py
+      - name: Execute Week13 missing-profile fail-closed regression
+        run: python qa/cfb_week13_rollover_profile_guard_qa.py
+      - name: Record read-only test scope
+        run: |
+          echo 'Executed retained source-integrity and rollover guards only.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'No official final admission, FIRST_FROZEN activation, settlement, or canonical publication is certified by these tests.' >> "$GITHUB_STEP_SUMMARY"
