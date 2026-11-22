@@ -2,7 +2,7 @@
   "schema": "CFB_WEEK12_TICKET_SCORE_RESEARCH_CANDIDATE_V1",
   "status": "CBS_69_PLUS_NCAA_1_CONDITIONAL_TICKET_GRADES_NO_BOOK_SETTLEMENT",
   "source_final_blob": "232f0c2d008a77520d78e85f066886fe28d14dfe",
-  "execution_ledger_blob": "ede69ea6fbe16900d162dd03987883715a1dbe97",
+  "execution_ledger_blob": "d9669fd0f6734094b32ca20917ba0131f29e45fb",
   "notes": "Pure conditional arithmetic on 13 user-recorded tickets against the QA-only effective Week12 final candidate (69 CBS finals plus NCAA official override for Old Dominion 21 at UConn 29). Not canonical official-result admission, pregame validation, sportsbook settlement, or money-ledger movement. Ticket observations never enter model training.",
   "summary": {
     "tickets": 13,
@@ -286,5 +286,13 @@
     ],
     "historical_corrections": "APPEND_ONLY_AUDIT_HISTORY_NOT_CURRENT_SOURCE_AUTHORITY",
     "canonical_acceptance": "PENDING"
+  },
+  "ledger_readback_reconciliation": {
+    "prior_execution_ledger_blob": "ede69ea6fbe16900d162dd03987883715a1dbe97",
+    "current_execution_ledger_blob": "d9669fd0f6734094b32ca20917ba0131f29e45fb",
+    "reason": "Canonical execution ledger received append-only actual-kickoff evidence supersession, without changing the 13 original ticket entries.",
+    "matched_unique_execution_ids": 13,
+    "grade_or_money_changes": "NONE",
+    "book_settlement": "UNVERIFIED"
   }
 }
