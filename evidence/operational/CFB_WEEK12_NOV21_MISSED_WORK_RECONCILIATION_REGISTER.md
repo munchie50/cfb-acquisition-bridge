@@ -512,3 +512,32 @@ Fresh live Automations schedule readback (all four enabled; unchanged) yields fo
 ### Nov20 Evening handoff historical SHA mismatch — RESOLVED by exact blob ancestry
 
 Targeted repair of a genuine cross-task integrity discrepancy, not a new natural-run PASS. Friday Nov20 19:30 CT Evening original closure `evidence/run_receipts/CFB_EVENING_AVAILABILITY_20261121T013041433Z_RUN_CLOSURE.md` at `2bc8e5b6c4c9be8e83ab6ac7eb11e7e525fc57a1` pins handoff blob `7b510b22ceb6d3b2c8df9e490ec492321aa8ea55`. Current `main` handoff file `evidence/run_receipts/CFB_EVENING_AVAILABILITY_20261121T013041433Z_EVENING_DOWNSTREAM_HANDOFF.md` instead has blob `c588f7e4307b7ff4f8a7112dd4596e7fefaafeb5`. **Both exact immutable blobs independently fetched**: historical 4,674 characters; current 9,247 characters. Byte-for-byte text comparison confirms the historical closure-pinned content is an **exact prefix** of the current handoff; the 4,573-character suffix is a subsequent explicitly marked read-only `Independent accepted-Hot-Sheet reconciliation` addendum. Therefore the closure's historical readback is authentic, not a broken hash, and the current expanded file is a superseding append-only enrichment. **Disposition: HANDOFF_SHA_MISMATCH_EXPLAINED / NO_REPAIR_WRITE_NEEDED.** Downstream should pin the original blob for as-of-closure claims and the current blob for later independent accepted-Hot-Sheet reconciliation; never claim the closure attested to the later suffix. This closes the known Friday Evening handoff cross-task identity discrepancy without rewriting the immutable closure, modifying the handoff, or upgrading the still-`RUN_INCOMPLETE` task.
+
+
+### Nov18–22 due-slot closure enumeration — COMPLETE BOUNDED COVERAGE (not engine PASS)
+
+Recovered authenticated GitHub recursive tree from `main` at commit `a2885c6d75e1209d51786c7fb2e5188db58b5f14`: **3,329 entries, `truncated=false`**, unlike the stale recovery-index file inventory. Directly fetched the 18 distinct natural closure files and checked recorded `RUN_INCOMPLETE` status. The four live production RRULEs yield **19 due slots** through Nov22 13CT (Nov22 16:30 Health still future at this observation). Exact slot-to-closure match:
+
+| CT scheduled slot | Exact closure blob | Natural outcome |
+|---|---|---|
+| Nov18 Monitor 07 | `5d2f61488a44a991e001c4bb719df942f1189ce1` | RUN_INCOMPLETE |
+| Nov18 Monitor 13 | `1e8c944952bde9f402146cf27227e61ebdebc6c5` | RUN_INCOMPLETE |
+| Nov19 Monitor 07 | `3afb7e4ea3386c03278c6eece70e1946c8a82385` | RUN_INCOMPLETE |
+| Nov19 Monitor 13 | `0aa052e4c6a299902d159d0b5c6dd6cbbbb35f3d` | RUN_INCOMPLETE |
+| Nov20 Monitor 07 | `2c52d227de2acb0368d46e0d1f950ea0d162ac58` | RUN_INCOMPLETE |
+| Nov20 Monitor 13 | `8a7c9acd7c56061242909c7b52bc4d9ec6784733` | RUN_INCOMPLETE |
+| Nov21 Monitor 07 | `013f3f30d1e9dec925cdcca9a473215d29c5610e` | RUN_INCOMPLETE |
+| Nov21 Monitor 13 | `3e2eaf98823eee255ac08a4b1da08a6020f08b0d` | RUN_INCOMPLETE |
+| Nov22 Monitor 07 | `2a5d39e41b1caff93f18d2fa9fdf0768a2cc81cf` | RUN_INCOMPLETE |
+| Nov22 Monitor 13 | **NO ORIGINAL CLOSURE**; live automation run `fe2289a5-4944-832c-9a9e-34c5ee89be76` | Startup HTTP409, original RUN_STARTED write failed; NOT RUN_PASS |
+| Nov18 Health 16:30 | `85cab4115e8151a69bf8ea92215389500b4af951` | RUN_INCOMPLETE |
+| Nov19 Health 16:30 | `9e371a6a78ad88452ee31152f869faad3d1d390b` | RUN_INCOMPLETE |
+| Nov20 Health 16:30 | `a5d93ca9d7daaa826f207f23183a1a4f197f1d9f` | RUN_INCOMPLETE |
+| Nov21 Health 16:30 | `ede00faebd76ccc5cb0afbe12411204e24e31644` | RUN_INCOMPLETE |
+| Nov18 Evening 19:30 | `4ec33c7916e74e39ac37801cc895230ff58bdb62` | RUN_INCOMPLETE |
+| Nov19 Evening 19:30 | `2e0aa92042ee80143ba374f66b6f2d45d05b45b3` | RUN_INCOMPLETE |
+| Nov20 Evening 19:30 | `2bc8e5b6c4c9be8e83ab6ac7eb11e7e525fc57a1` | RUN_INCOMPLETE |
+| Nov21 Weekly QA 09 | `7f6995cdcfae296e5123e194a9c05b7ce2b74603` | RUN_INCOMPLETE |
+| Nov22 Weekly QA 09 | `67d070edcc3d20dfaf21507340ffaf930dd78bff` | RUN_INCOMPLETE |
+
+**Bounded Nov18–22 coverage: 19/19 due slots accounted for** (18 immutable original natural closures, one independently observed scheduler/engine startup failure without a closure). **Engine RUN_PASS: 0/19.** This resolves the previously open *Nov18–22 expected-slot denominator and identity join*, but does **not** establish all-history Oct/Nov coverage, missing Oct24 acceptance, or natural W12-05/W12-08 success. No historical receipts rewritten and no acceptance watermarks advanced. The existing Nov22 manual Market Monitor receipts are separate manual catch-up, not substitutions for the failed 13CT natural slot. The 16:30 Nov22 Health slot must be appended only after actually due and verified.
