@@ -167,3 +167,20 @@ Sunday 09CT Weekly QA scheduler run id `e843a3a9-061c-832a-9ad4-c06eb4944811`, s
 Health latest natural run Saturday Nov21 16:30CT id `3c9dab6f-c5c8-8326-a6bc-f1a14a679a72`: engine RUN_INCOMPLETE, 5/8 bounded categories verified, 3 unverified. Evening latest Friday Nov20 19:30CT id `27a7b535-d820-8325-8bb2-4597a6556aa2`: engine RUN_INCOMPLETE, 2/5 obligations verified, 3 blocked, 3/70 games researched. No new Health or Evening run was due by Sunday morning. Scheduler `completed` means invocation terminal, **not engine RUN_PASS**.
 
 **Priority supersession:** W12-05 natural runtime / W12-02 canonical decision-pointer reconciliation is the next operational acceptance frontier. W12-07 score corroboration remains useful independent postgame work but is NOT the critical path for fixing scheduled producer end-to-end failure. Do not keep generating score spotchecks while the producer is blocked. Do not blindly append the expired Nov20 packet or bypass original selector/acceptance gates. First inspect the Sunday terminal candidate and the exact accepted decision-pointer/retained Nov20 decision packet ancestry; identify the first genuinely executable recovery step. If no admissible historical publication exists, record HISTORICAL_MISSED and prepare prospective next-week pipeline, not backdated Week12 bets. Preserve exactly four tasks, no fifth, and no unsupported production mutation.
+
+
+## Nov22 terminal-stage deep dive — blocker attribution corrected
+
+Fresh Git blob readback of the **actual Sunday Market Monitor terminal candidate** `evidence/run_receipts/CFB_MARKET_MONITOR_TERMINAL_CANDIDATE_20261122T125753Z_AUTO11.json`, blob `87b66167429e9f7e309ea9bbb1ad2dc8be53718c`, and separate closure blob `2a5d39e41b1caff93f18d2fa9fdf0768a2cc81cf`:
+
+- PASS: startup receipt, provisional release readback, linked full preview readback, current main read.
+- BLOCKED: named-book qualified offers (`BLOCKED_NO_VERIFIED_OFFERS`), canonical publication (`BLOCKED_UNACCEPTED_LEDGER_AND_POINTER`).
+- NOT ATTEMPTED: current-week source capture (Nov20 retained), fresh decision rows (Week12 elapsed), original runtime checkout (`NOT_ATTEMPTED_NO_REQUIRED_FRESH_COMPUTE_STAGE`).
+- Read-only analytics: `ANALYTICS_INPUT_UNAVAILABLE`.
+- Exact first_failure field: `CURRENT_CANONICAL_DECISION_LEDGER_POINTER_NOT_BOUND_TO_NOV20_RECONSTRUCTED_DECISION_BLOB`.
+
+**Defect attribution correction:** The Sunday run does NOT establish a new runtime-checkout failure; checkout was deliberately not attempted. Earlier Nov21 one-time worker DID encounter an unavailable authenticated original full-history Git runtime. Do not merge these different failure stages or claim provisioning was retested Sunday.
+
+**Selector constraints verified against** `evidence/operational/CFB_WEEK12_SELECTOR_PUBLICATION_TRANSACTION_DESIGN_20261120.md`, blob `6d237f55a09b6564e04d6339c29959764771f923`: accepted current index still selects Nov19; provisional Nov20 overlay reconstructs ledger blob `98941e228072e6941b1c33e42d4d8dba570f7182` from immutable base `6862be6a1bd88a3290b1e90a49c33a7a87e92559` and delta `646bbe85edba726037e1b98125783ff2cd87a4e8`, but is NOT canonical. Original binding gate requires actual accepted ledger and canonical sheet naming; changing display pointer alone or copying preview into canonical name would be an acceptance bypass. Sunday is after all Week12 kickoff deadlines, so retrospective promotion cannot produce authorized wagers.
+
+**Bounded disposition:** W12-02 historical Nov20/21 market publication = MISSED_NOT_RECOVERABLE_AS_PREGAME; W12-05 Sunday 07CT producer invocation = RUN_INCOMPLETE_CANONICAL_POINTER_BLOCKED, not scheduler trigger failure and not newly observed runtime checkout failure. W12-07 postgame scoring remains separate. Next prospective production work is to establish accepted source/decision/offer path for the next unexpired profile under original controls and verify on the next eligible run; do not backdate Week12, modify canonical index, or create a fifth task. Sunday Health at 16:30CT remains next existing natural diagnostic run; do not represent it as executed before it runs.
