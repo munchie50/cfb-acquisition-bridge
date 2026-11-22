@@ -1,6 +1,6 @@
 {
   "schema": "CFB_WEEK12_CBS_FINAL_CANDIDATE_V1",
-  "status": "CBS_SCOREBOARD_70_OF_70_DIRECTLY_RECONCILED_QA_CANDIDATE_NOT_CANONICAL",
+  "status": "CBS_70_OF_70_RECONCILED_WITH_NCAA_PRIMARY_OVERRIDE_ONE_GAME_QA_ONLY",
   "source_url": "https://www.cbssports.com/college-football/scoreboard/FBS/2026/regular/12/",
   "source_scope": "CBS Week 12 Nov 17-21 2026 displayed finals; manually transcribed in immutable preflight 70-game ID order. Requires independent score cross-check and original scorecard QA before acceptance.",
   "lineage_path": "evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json",
@@ -343,7 +343,7 @@
       "game_id": "401861968",
       "away": "Old Dominion",
       "home": "UConn",
-      "away_points": 20,
+      "away_points": 21,
       "home_points": 29,
       "original_status": "PREDICTION"
     },
@@ -604,6 +604,15 @@
         28
       ],
       "source": "CBS_WEEK12_FINAL_SCOREBOARD_DIRECT_70_ROW_CHECK"
+    },
+    {
+      "game_id": "401861968",
+      "previous_away_points": 20,
+      "corrected_away_points": 21,
+      "home_points": 29,
+      "source": "https://www.ncaa.com/game/6604217",
+      "source_class": "NCAA_OFFICIAL_GAME_SPECIFIC_FINAL",
+      "reason": "NCAA game 6604217 final and quarter sum 0+14+0+7=21; CBS header 20 is internally inconsistent with its AP recap 21; explicit NCAA override"
     }
   ],
   "cbs_final_provenance": [
@@ -1166,6 +1175,17 @@
       "home_points": 3,
       "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261117_MIAOH@KENTST/",
       "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    }
+  ],
+  "official_source_overrides": [
+    {
+      "game_id": "401861968",
+      "ncaa_game_id": "6604217",
+      "source_url": "https://www.ncaa.com/game/6604217",
+      "away_points": 21,
+      "home_points": 29,
+      "cbs_header_away_points": 20,
+      "disposition": "NCAA_PRIMARY_FINAL_SUPERSEDES_CBS_HEADER"
     }
   ]
 }
