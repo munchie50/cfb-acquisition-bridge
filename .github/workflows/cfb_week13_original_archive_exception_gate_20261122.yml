@@ -56,7 +56,7 @@ jobs:
                     '50052032':'NCAAF_20261128_SDGST@WASHST',
                     '50052033':'NCAAF_20261128_TXSTSM@UTAHST',
                     '50052034':'NCAAF_20261128_OREGST@FRESNO'}
-          assert ids['status']=='QA_ONLY'
+          assert ids['status']=='PARSED_UNQUALIFIED_NOT_ACCEPTED'
           assert ids['original_lineage_accepted'] is False
           assert ids['canonical_publication_eligible'] is False
           assert ids['wager_eligible'] is False
