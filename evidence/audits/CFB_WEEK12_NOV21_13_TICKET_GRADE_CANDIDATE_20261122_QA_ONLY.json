@@ -1,6 +1,6 @@
 {
   "schema": "CFB_WEEK12_TICKET_SCORE_RESEARCH_CANDIDATE_V1",
-  "status": "CBS_70_OF_70_RECONCILED_CONDITIONAL_TICKET_GRADES_NO_BOOK_SETTLEMENT",
+  "status": "CBS_69_PLUS_NCAA_1_CONDITIONAL_TICKET_GRADES_NO_BOOK_SETTLEMENT",
   "source_final_blob": "548b1a19f337e00a0a18b8ee8fa45345cd959ce3",
   "execution_ledger_blob": "ede69ea6fbe16900d162dd03987883715a1dbe97",
   "notes": "Pure arithmetic on user-recorded tickets and unaccepted CBS-score candidate. Not official result certification, not pregame validation, not settlement or money-ledger movement. Ticket observations never enter model training.",
@@ -271,5 +271,20 @@
       "ticket_grade_impact": "NONE_NO_TICKET_FOR_GAME",
       "reason": "Source rebind to official corrected score"
     }
-  ]
+  ],
+  "effective_final_source_policy": {
+    "scope": "WEEK12_70_GAME_QA_ONLY",
+    "default": "CBS_WEEK12_GAME_SPECIFIC_FINAL",
+    "overrides": [
+      {
+        "game_id": "401861968",
+        "effective_source": "NCAA_OFFICIAL_GAME_6604217",
+        "away_points": 21,
+        "home_points": 29,
+        "cbs_header_away_points": 20
+      }
+    ],
+    "historical_corrections": "APPEND_ONLY_AUDIT_HISTORY_NOT_CURRENT_SOURCE_AUTHORITY",
+    "canonical_acceptance": "PENDING"
+  }
 }
