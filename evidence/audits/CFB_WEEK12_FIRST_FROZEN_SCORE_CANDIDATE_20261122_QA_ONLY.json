@@ -2,7 +2,7 @@
   "schema": "CFB_WEEK12_FIRST_FROZEN_SCORING_CANDIDATE_V1",
   "status": "QA_ONLY_UNACCEPTED_PENDING_INDEPENDENT_CBS_SCORE_VALIDATION",
   "source_final_candidate_path": "evidence/audits/CFB_WEEK12_CBS_FINAL_CANDIDATE_20261122_RESEARCH_ONLY.json",
-  "source_final_candidate_blob": "7b5bc9f5bf85ef35839add8e08b22007b786c5a7",
+  "source_final_candidate_blob": "351e81134ea184e207075ea176056a64596ebf3c",
   "original_lineage_path": "evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json",
   "original_lineage_blob": "8e019d9b502067c0a669e860a70e177b8e5ecda6",
   "margin_convention": "home-minus-away",
@@ -12,8 +12,8 @@
     "scored": 56,
     "excluded": 14,
     "winner_correct": 44,
-    "margin_mae": 13.468254103895376,
-    "total_mae": 11.627854203068864,
+    "margin_mae": 13.486111246752518,
+    "total_mae": 11.611958254609505,
     "brier": 0.18722209345053917
   },
   "rows": [
@@ -696,16 +696,16 @@
       "game_id": "401861968",
       "away": "Old Dominion",
       "home": "UConn",
-      "away_points": 20,
+      "away_points": 21,
       "home_points": 29,
       "original_status": "PREDICTION",
-      "realized_home_margin": 9,
-      "realized_total": 49,
+      "realized_home_margin": 8,
+      "realized_total": 50,
       "pred_home_margin": 11.877921956661101,
       "pred_total": 49.945086556862094,
       "pred_home_win_probability": 0.7837908325427771,
-      "margin_error": -2.877921956661101,
-      "total_error": -0.9450865568620941,
+      "margin_error": -3.877921956661101,
+      "total_error": 0.054913443137905915,
       "winner_correct": true,
       "brier": 0.046746404092545435,
       "grade": "QA_CANDIDATE_ONLY"
@@ -1178,6 +1178,15 @@
       "winner_correct": true,
       "brier": 0.07629162364824951,
       "grade": "QA_CANDIDATE_ONLY"
+    }
+  ],
+  "corrections": [
+    {
+      "game_id": "401861968",
+      "source": "https://www.ncaa.com/scoreboard/football/fbs",
+      "original_candidate_away": 20,
+      "corrected_away": 21,
+      "scoring_only": true
     }
   ]
 }
