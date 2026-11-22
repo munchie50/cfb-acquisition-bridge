@@ -1,0 +1,183 @@
+{
+  "schema": "CFB_NOV21_PRINTED_TICKET_TERMS_CONDITIONAL_PAYOUT_QA_V1",
+  "status": "QA_ONLY_CONDITIONAL_NOT_BOOK_SETTLEMENT",
+  "sources": [
+    {
+      "path": "evidence/audits/CFB_WEEK12_NOV21_13_TICKET_GRADE_CANDIDATE_20261122_QA_ONLY.json",
+      "blob": "04d09b5ea06aff4ef3936c6d269ebbc560c0f3a6"
+    },
+    {
+      "path": "evidence/operational/CFB_EXECUTION_TICKETS_20261121_USER_PHOTO_INTAKE.md",
+      "blob": "eb6540638a2fe793a942c23c5121a29b9289f2ee"
+    }
+  ],
+  "method": "Exact 13 printed ticket suffixes, stake, odds, max profit and gross payout joined to 13 conditional score grades. WIN: gross=printed max payout and net=printed max profit; LOSS: gross=0 net=-stake. No odds-derived rounding substitution, no book payment inference.",
+  "summary": {
+    "tickets": 13,
+    "source_terms_matches": 13,
+    "stake_usd": 75,
+    "conditional_wins": 5,
+    "conditional_losses": 8,
+    "conditional_gross_usd": 57.15,
+    "conditional_net_usd": -17.85,
+    "verified_book_settlements": 0
+  },
+  "rows": [
+    {
+      "execution_id": "CFB_NOV21-01",
+      "ticket_suffix": "8886",
+      "conditional_grade": "WIN",
+      "printed_stake_usd": 5,
+      "printed_odds": -113,
+      "printed_max_profit_usd": 4.4,
+      "printed_max_gross_usd": 9.4,
+      "conditional_gross_usd": 9.4,
+      "conditional_net_usd": 4.4,
+      "book_settlement": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_NOV21-02",
+      "ticket_suffix": "9797",
+      "conditional_grade": "WIN",
+      "printed_stake_usd": 5,
+      "printed_odds": -107,
+      "printed_max_profit_usd": 4.65,
+      "printed_max_gross_usd": 9.65,
+      "conditional_gross_usd": 9.65,
+      "conditional_net_usd": 4.65,
+      "book_settlement": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_NOV21-03",
+      "ticket_suffix": "9469",
+      "conditional_grade": "LOSS",
+      "printed_stake_usd": 5,
+      "printed_odds": -110,
+      "printed_max_profit_usd": 4.55,
+      "printed_max_gross_usd": 9.55,
+      "conditional_gross_usd": 0,
+      "conditional_net_usd": -5,
+      "book_settlement": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_NOV21-04",
+      "ticket_suffix": "7780",
+      "conditional_grade": "LOSS",
+      "printed_stake_usd": 5,
+      "printed_odds": -114,
+      "printed_max_profit_usd": 4.4,
+      "printed_max_gross_usd": 9.4,
+      "conditional_gross_usd": 0,
+      "conditional_net_usd": -5,
+      "book_settlement": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_NOV21-05",
+      "ticket_suffix": "5053",
+      "conditional_grade": "WIN",
+      "printed_stake_usd": 10,
+      "printed_odds": -110,
+      "printed_max_profit_usd": 9.1,
+      "printed_max_gross_usd": 19.1,
+      "conditional_gross_usd": 19.1,
+      "conditional_net_usd": 9.1,
+      "book_settlement": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_NOV21-06",
+      "ticket_suffix": "1499",
+      "conditional_grade": "WIN",
+      "printed_stake_usd": 5,
+      "printed_odds": -110,
+      "printed_max_profit_usd": 4.55,
+      "printed_max_gross_usd": 9.55,
+      "conditional_gross_usd": 9.55,
+      "conditional_net_usd": 4.55,
+      "book_settlement": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_NOV21-07",
+      "ticket_suffix": "2221",
+      "conditional_grade": "LOSS",
+      "printed_stake_usd": 5,
+      "printed_odds": -110,
+      "printed_max_profit_usd": 4.55,
+      "printed_max_gross_usd": 9.55,
+      "conditional_gross_usd": 0,
+      "conditional_net_usd": -5,
+      "book_settlement": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_NOV21-08",
+      "ticket_suffix": "0695",
+      "conditional_grade": "LOSS",
+      "printed_stake_usd": 10,
+      "printed_odds": -110,
+      "printed_max_profit_usd": 9.1,
+      "printed_max_gross_usd": 19.1,
+      "conditional_gross_usd": 0,
+      "conditional_net_usd": -10,
+      "book_settlement": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_NOV21-09",
+      "ticket_suffix": "9562",
+      "conditional_grade": "LOSS",
+      "printed_stake_usd": 5,
+      "printed_odds": -107,
+      "printed_max_profit_usd": 4.65,
+      "printed_max_gross_usd": 9.65,
+      "conditional_gross_usd": 0,
+      "conditional_net_usd": -5,
+      "book_settlement": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_NOV21-10",
+      "ticket_suffix": "2588",
+      "conditional_grade": "LOSS",
+      "printed_stake_usd": 5,
+      "printed_odds": -114,
+      "printed_max_profit_usd": 4.4,
+      "printed_max_gross_usd": 9.4,
+      "conditional_gross_usd": 0,
+      "conditional_net_usd": -5,
+      "book_settlement": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_NOV21-11",
+      "ticket_suffix": "5509",
+      "conditional_grade": "LOSS",
+      "printed_stake_usd": 5,
+      "printed_odds": -104,
+      "printed_max_profit_usd": 4.8,
+      "printed_max_gross_usd": 9.8,
+      "conditional_gross_usd": 0,
+      "conditional_net_usd": -5,
+      "book_settlement": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_NOV21-12",
+      "ticket_suffix": "7685",
+      "conditional_grade": "WIN",
+      "printed_stake_usd": 5,
+      "printed_odds": -112,
+      "printed_max_profit_usd": 4.45,
+      "printed_max_gross_usd": 9.45,
+      "conditional_gross_usd": 9.45,
+      "conditional_net_usd": 4.45,
+      "book_settlement": "UNVERIFIED"
+    },
+    {
+      "execution_id": "CFB_NOV21-13",
+      "ticket_suffix": "7389",
+      "conditional_grade": "LOSS",
+      "printed_stake_usd": 5,
+      "printed_odds": -106,
+      "printed_max_profit_usd": 4.7,
+      "printed_max_gross_usd": 9.7,
+      "conditional_gross_usd": 0,
+      "conditional_net_usd": -5,
+      "book_settlement": "UNVERIFIED"
+    }
+  ]
+}
