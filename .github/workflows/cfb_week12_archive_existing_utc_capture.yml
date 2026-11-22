@@ -1,0 +1,46 @@
+name: CFB Week12 archive EXISTING UTC capture (one-time)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_week12_archive_existing_utc_capture.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  archive-existing-capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download already-completed run artifact; NO new NCAA retrieval
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 45060768565 --name cfb-week12-ncaa-source-utc-capture --dir /tmp/cfb-week12-capture
+      - name: Verify exact 70-game receipt and stage durable audit file
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          src=pathlib.Path('/tmp/cfb-week12-capture/week12_official_timestamp_capture.json')
+          data=src.read_bytes()
+          expected='163e2463f5dca67de587d82ae5759b1ecf846ff6b6e9da3e91e6b4d4f2c46275'
+          actual=hashlib.sha256(data).hexdigest()
+          assert actual==expected,(actual,expected)
+          d=json.loads(data)
+          a=d['rows']
+          assert len(a)==70 and len({x['game_id'] for x in a})==70
+          assert all(x.get('http_status')==200 and x.get('request_started_utc') and x.get('response_completed_utc') and x.get('sha256') and x.get('game_id_in_response') and x.get('final_token_in_response') and not x.get('truncated') for x in a)
+          out=pathlib.Path('evidence/audits/CFB_WEEK12_NCAA_70_GAME_UTC_CAPTURE_20261122_QA_ONLY.json')
+          out.parent.mkdir(parents=True,exist_ok=True)
+          out.write_bytes(data)
+          print('PASS existing artifact',actual,'70/70; NO new HTTP acquisition')
+          PY
+      - name: Commit only preserved evidence receipt, never production state
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add evidence/audits/CFB_WEEK12_NCAA_70_GAME_UTC_CAPTURE_20261122_QA_ONLY.json
+          git diff --cached --quiet && { echo 'Receipt already archived'; exit 0; }
+          git commit -m 'Archive original 70-game NCAA UTC capture from completed Week12 catch-up run'
+          git push origin HEAD:main
