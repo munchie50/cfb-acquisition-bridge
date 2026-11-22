@@ -58,6 +58,26 @@ jobs:
           if [ "$profile" = WEEK12 ]; then
             echo "Week 12 source verified. Compiler preflight awaits a qualified Week 12 compiler." >> "$GITHUB_STEP_SUMMARY"
           fi
+      - name: Audit retained Week 12 publication state (read-only)
+        if: steps.preflight_source.outcome == 'success' && steps.preflight_source.outputs.profile == 'WEEK12'
+        id: week12_retained_audit
+        continue-on-error: true
+        timeout-minutes: 1
+        env:
+          PYTHONPATH: scripts
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          import cfb_week12_publication as week
+          ops = Path('evidence/operational')
+          market = (ops / 'CFB_MARKET_MONITOR_STATE.md').read_text()
+          decision = (ops / 'CFB_DECISION_WAIT_LEDGER.md').read_text()
+          lineage = Path('evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json').read_text()
+          result = week.bootstrap_check(market, decision, lineage)
+          print(json.dumps({'profile': 'WEEK12', 'status': result, 'scope': 'RETAINED_PUBLICATION_ONLY_NO_FRESH_COMPILE'}))
+          PY
+          echo 'Week12 retained state checked; no new canonical publication or fresh preflight claimed.' >> "$GITHUB_STEP_SUMMARY"
       - name: Compile and audit a read-only preflight draft
         id: preflight_compile
         if: steps.preflight_source.outcome == 'success' && steps.preflight_source.outputs.profile == 'WEEK11'
