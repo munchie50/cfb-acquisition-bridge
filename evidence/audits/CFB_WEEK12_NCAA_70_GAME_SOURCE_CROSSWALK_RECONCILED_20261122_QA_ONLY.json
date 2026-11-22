@@ -1,0 +1,615 @@
+{
+  "schema": "CFB_WEEK12_NCAA_70_GAME_SOURCE_CROSSWALK_RECONCILED_V1",
+  "status": "70_GAME_OFFICIAL_SOURCE_CROSSWALK_COMPLETE_QA_ONLY_NOT_CANONICAL",
+  "authority": "Original 70-row admission frontier + seven persisted official NCAA direct-page verification batches + separately persisted NCAA 6604217 direct-page observation",
+  "source_artifacts": [
+    {
+      "path": "evidence/audits/CFB_WEEK12_OFFICIAL_FINAL_ADMISSION_FRONTIER_20261122_QA_ONLY.json",
+      "git_blob_sha": "22b41d0dc1cc342f02a56eb00de7ca2f05ce2a78"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK12_NCAA_FIVE_GAME_SPECIFIC_FINALS_20261122_QA_ONLY.json",
+      "git_blob_sha": "8e7d7e73f859b8203f2d85df150b26e6cbfb1711"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK12_NCAA_SEVEN_MORE_GAME_SPECIFIC_FINALS_20261122_QA_ONLY.json",
+      "git_blob_sha": "e12fb0ac275027e2356c2f98ed6a3475e48f4b72"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK12_NCAA_ELEVEN_MORE_GAME_SPECIFIC_FINALS_20261122_QA_ONLY.json",
+      "git_blob_sha": "8832906d0076b3fb2038189a704449089e1da360"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK12_NCAA_TEN_MORE_GAME_SPECIFIC_FINALS_20261122_QA_ONLY.json",
+      "git_blob_sha": "5e524caf1cdf104f0ad793ebc21c53241d5aa12d"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK12_NCAA_TWELVE_MORE_GAME_SPECIFIC_FINALS_20261122_QA_ONLY.json",
+      "git_blob_sha": "446d823a4d100328739019a6a925cec0b584c4f3"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK12_NCAA_TWELVE_LATE_GAME_SPECIFIC_FINALS_20261122_QA_ONLY.json",
+      "git_blob_sha": "588f1aa60206bb631190f8ea9283ee52c20e249f"
+    },
+    {
+      "path": "evidence/audits/CFB_WEEK12_NCAA_FINAL_TWELVE_GAME_SPECIFIC_FINALS_20261122_QA_ONLY.json",
+      "git_blob_sha": "4f982d64f24bbcf254200cdee9f73cd6005d231a"
+    }
+  ],
+  "separate_70th_source": "evidence/audits/CFB_WEEK12_NCAA_GAME_6604217_FRESH_OFFICIAL_RETRIEVAL_20261122_QA_ONLY.md",
+  "summary": {
+    "frontier_games": 70,
+    "batched_games": 69,
+    "batched_unique": 69,
+    "old_dedicated_game": 1,
+    "unique_joined": 70,
+    "score_disagreements": 0,
+    "duplicate_ids": 0,
+    "unmatched_ids": 0,
+    "precise_source_utc": "NOT_RETAINED",
+    "original_first_frozen_profile_activation": "PENDING",
+    "canonical_admitted": 0
+  },
+  "rows": [
+    {
+      "game_id": "401856746",
+      "ncaa_game_id": "6640297",
+      "away_points": 0,
+      "home_points": 47,
+      "source_url": "https://www.ncaa.com/game/6640297",
+      "source_scrape_id": "01a204b5-2158-7084-9135-fddb1921206f"
+    },
+    {
+      "game_id": "401856747",
+      "ncaa_game_id": "6604014",
+      "away_points": 17,
+      "home_points": 59,
+      "source_url": "https://www.ncaa.com/game/6604014",
+      "source_scrape_id": "01a204b6-e0bc-734d-9e67-9860988639bb"
+    },
+    {
+      "game_id": "401856748",
+      "ncaa_game_id": "6603653",
+      "away_points": 27,
+      "home_points": 34,
+      "source_url": "https://www.ncaa.com/game/6603653",
+      "source_scrape_id": "01a204b6-4b72-772f-bdba-22a5ed88d483"
+    },
+    {
+      "game_id": "401856749",
+      "ncaa_game_id": "6604013",
+      "away_points": 17,
+      "home_points": 59,
+      "source_url": "https://www.ncaa.com/game/6604013",
+      "source_scrape_id": "01a204b6-4d12-77aa-a6b1-331406c87588"
+    },
+    {
+      "game_id": "401856750",
+      "ncaa_game_id": "6604343",
+      "away_points": 16,
+      "home_points": 34,
+      "source_url": "https://www.ncaa.com/game/6604343",
+      "source_scrape_id": "01a204b6-6baa-7052-a3f4-4ecb3b266825"
+    },
+    {
+      "game_id": "401856751",
+      "ncaa_game_id": "6604097",
+      "away_points": 14,
+      "home_points": 28,
+      "source_url": "https://www.ncaa.com/game/6604097",
+      "source_scrape_id": "01a204b5-8dfa-701e-81d7-5c716bf63ced"
+    },
+    {
+      "game_id": "401856752",
+      "ncaa_game_id": "6604194",
+      "away_points": 7,
+      "home_points": 28,
+      "source_url": "https://www.ncaa.com/game/6604194",
+      "source_scrape_id": "01a204b6-e07f-7595-9301-e7a4966dc8f2"
+    },
+    {
+      "game_id": "401856753",
+      "ncaa_game_id": "6603931",
+      "away_points": 34,
+      "home_points": 6,
+      "source_url": "https://www.ncaa.com/game/6603931",
+      "source_scrape_id": "01a204b5-20f1-71e9-b4cd-58e5d9cfe3a6"
+    },
+    {
+      "game_id": "401856754",
+      "ncaa_game_id": "6603822",
+      "away_points": 13,
+      "home_points": 27,
+      "source_url": "https://www.ncaa.com/game/6603822",
+      "source_scrape_id": "01a204b5-30c1-7144-8dc3-37342a2316f3"
+    },
+    {
+      "game_id": "401856755",
+      "ncaa_game_id": "6603776",
+      "away_points": 3,
+      "home_points": 45,
+      "source_url": "https://www.ncaa.com/game/6603776",
+      "source_scrape_id": "01a204b5-22a4-7786-908f-0197cf8d1207"
+    },
+    {
+      "game_id": "401856865",
+      "ncaa_game_id": "6604234",
+      "away_points": 35,
+      "home_points": 28,
+      "source_url": "https://www.ncaa.com/game/6604234",
+      "source_scrape_id": "01a204b5-9eae-747f-be9b-01d33d31d017"
+    },
+    {
+      "game_id": "401856866",
+      "ncaa_game_id": "6604064",
+      "away_points": 31,
+      "home_points": 29,
+      "source_url": "https://www.ncaa.com/game/6604064",
+      "source_scrape_id": "01a204b5-309e-752d-b2c0-adda332aecf0"
+    },
+    {
+      "game_id": "401856867",
+      "ncaa_game_id": "6604257",
+      "away_points": 28,
+      "home_points": 35,
+      "source_url": "https://www.ncaa.com/game/6604257",
+      "source_scrape_id": "01a204b6-60ff-735f-9f51-355782a26c75"
+    },
+    {
+      "game_id": "401856868",
+      "ncaa_game_id": "6604073",
+      "away_points": 34,
+      "home_points": 31,
+      "source_url": "https://www.ncaa.com/game/6604073",
+      "source_scrape_id": "01a204b5-9e79-72f9-8c38-9757457ba7b0"
+    },
+    {
+      "game_id": "401856869",
+      "ncaa_game_id": "6603634",
+      "away_points": 17,
+      "home_points": 48,
+      "source_url": "https://www.ncaa.com/game/6603634",
+      "source_scrape_id": "01a204b4-5cab-75d8-9f8d-118e384beccb"
+    },
+    {
+      "game_id": "401856870",
+      "ncaa_game_id": "6603842",
+      "away_points": 30,
+      "home_points": 27,
+      "source_url": "https://www.ncaa.com/game/6603842",
+      "source_scrape_id": "01a204b5-9fdf-74f8-9853-40347b57ce62"
+    },
+    {
+      "game_id": "401856871",
+      "ncaa_game_id": "6604044",
+      "away_points": 20,
+      "home_points": 10,
+      "source_url": "https://www.ncaa.com/game/6604044",
+      "source_scrape_id": "01a204b5-8dfb-7654-9a66-8ea7623ec3c7"
+    },
+    {
+      "game_id": "401856872",
+      "ncaa_game_id": "6604104",
+      "away_points": 38,
+      "home_points": 17,
+      "source_url": "https://www.ncaa.com/game/6604104",
+      "source_scrape_id": "01a204b5-210e-7662-81ac-dba7ad342bce"
+    },
+    {
+      "game_id": "401858302",
+      "ncaa_game_id": "6603809",
+      "away_points": 20,
+      "home_points": 28,
+      "source_url": "https://www.ncaa.com/game/6603809",
+      "source_scrape_id": "01a204b5-2efa-76c9-8ac3-d6355de0d686"
+    },
+    {
+      "game_id": "401858303",
+      "ncaa_game_id": "6603676",
+      "away_points": 20,
+      "home_points": 10,
+      "source_url": "https://www.ncaa.com/game/6603676",
+      "source_scrape_id": "01a204b4-5d3b-73fe-96dd-9b176b33f05e"
+    },
+    {
+      "game_id": "401858304",
+      "ncaa_game_id": "6603971",
+      "away_points": 28,
+      "home_points": 10,
+      "source_url": "https://www.ncaa.com/game/6603971",
+      "source_scrape_id": "01a204b6-d4c1-771d-a013-6d83b70659ce"
+    },
+    {
+      "game_id": "401858305",
+      "ncaa_game_id": "6603999",
+      "away_points": 24,
+      "home_points": 41,
+      "source_url": "https://www.ncaa.com/game/6603999",
+      "source_scrape_id": "01a204b6-615d-753a-82aa-36bbe04bf89c"
+    },
+    {
+      "game_id": "401858306",
+      "ncaa_game_id": "6640735",
+      "away_points": 10,
+      "home_points": 42,
+      "source_url": "https://www.ncaa.com/game/6640735",
+      "source_scrape_id": "01a204b5-a1fc-771a-b30a-f7a5cfd9dad1"
+    },
+    {
+      "game_id": "401858307",
+      "ncaa_game_id": "6604145",
+      "away_points": 3,
+      "home_points": 24,
+      "source_url": "https://www.ncaa.com/game/6604145",
+      "source_scrape_id": "01a204b5-2e6b-72b9-9f64-c8f9a705122f"
+    },
+    {
+      "game_id": "401858308",
+      "ncaa_game_id": "6604113",
+      "away_points": 44,
+      "home_points": 28,
+      "source_url": "https://www.ncaa.com/game/6604113",
+      "source_scrape_id": "01a204b7-3737-769a-9afc-6892b106e94b"
+    },
+    {
+      "game_id": "401858309",
+      "ncaa_game_id": "6640737",
+      "away_points": 15,
+      "home_points": 27,
+      "source_url": "https://www.ncaa.com/game/6640737",
+      "source_scrape_id": "01a204b6-6285-70cf-8d78-bf5c34180f85"
+    },
+    {
+      "game_id": "401858310",
+      "ncaa_game_id": "6604357",
+      "away_points": 50,
+      "home_points": 29,
+      "source_url": "https://www.ncaa.com/game/6604357",
+      "source_scrape_id": "01a204b5-3eb6-7068-9749-ddadd6a56beb"
+    },
+    {
+      "game_id": "401858527",
+      "ncaa_game_id": "6603795",
+      "away_points": 34,
+      "home_points": 17,
+      "source_url": "https://www.ncaa.com/game/6603795",
+      "source_scrape_id": "01a204b5-8dfa-774c-94ae-ef9a9840652a"
+    },
+    {
+      "game_id": "401858528",
+      "ncaa_game_id": "6604124",
+      "away_points": 16,
+      "home_points": 18,
+      "source_url": "https://www.ncaa.com/game/6604124",
+      "source_scrape_id": "01a204b5-22aa-776b-927d-8f41e0ec9d37"
+    },
+    {
+      "game_id": "401858529",
+      "ncaa_game_id": "6640650",
+      "away_points": 45,
+      "home_points": 7,
+      "source_url": "https://www.ncaa.com/game/6640650",
+      "source_scrape_id": "01a204b4-5c42-7689-91c3-1b5f0bcd0bc3"
+    },
+    {
+      "game_id": "401858530",
+      "ncaa_game_id": "6603691",
+      "away_points": 17,
+      "home_points": 20,
+      "source_url": "https://www.ncaa.com/game/6603691",
+      "source_scrape_id": "01a204b6-5d4b-7702-9a04-a9778d4160ef"
+    },
+    {
+      "game_id": "401858531",
+      "ncaa_game_id": "6604337",
+      "away_points": 28,
+      "home_points": 31,
+      "source_url": "https://www.ncaa.com/game/6604337",
+      "source_scrape_id": "01a204b5-8d62-741e-b9fd-36f8a52f5dde"
+    },
+    {
+      "game_id": "401858532",
+      "ncaa_game_id": "6603765",
+      "away_points": 25,
+      "home_points": 24,
+      "source_url": "https://www.ncaa.com/game/6603765",
+      "source_scrape_id": "01a204b6-dafc-7202-a9ff-7ba86fe5cac6"
+    },
+    {
+      "game_id": "401858533",
+      "ncaa_game_id": "6640639",
+      "away_points": 42,
+      "home_points": 10,
+      "source_url": "https://www.ncaa.com/game/6640639",
+      "source_scrape_id": "01a204b6-4d12-7708-9707-02e0446b02a3"
+    },
+    {
+      "game_id": "401858534",
+      "ncaa_game_id": "6604152",
+      "away_points": 21,
+      "home_points": 35,
+      "source_url": "https://www.ncaa.com/game/6604152",
+      "source_scrape_id": "01a204b5-9d02-7789-b22a-2962f24a3d77"
+    },
+    {
+      "game_id": "401858535",
+      "ncaa_game_id": "6603954",
+      "away_points": 24,
+      "home_points": 27,
+      "source_url": "https://www.ncaa.com/game/6603954",
+      "source_scrape_id": "01a204b5-2f83-76d9-93e8-20ad83a41b1f"
+    },
+    {
+      "game_id": "401860918",
+      "ncaa_game_id": "6604205",
+      "away_points": 42,
+      "home_points": 49,
+      "source_url": "https://www.ncaa.com/game/6604205",
+      "source_scrape_id": "01a204b7-3630-77ec-b348-5443353862a1"
+    },
+    {
+      "game_id": "401860919",
+      "ncaa_game_id": "6604305",
+      "away_points": 24,
+      "home_points": 31,
+      "source_url": "https://www.ncaa.com/game/6604305",
+      "source_scrape_id": "01a204b7-4284-7588-b27c-85b5974ea49c"
+    },
+    {
+      "game_id": "401860920",
+      "ncaa_game_id": "6604226",
+      "away_points": 14,
+      "home_points": 42,
+      "source_url": "https://www.ncaa.com/game/6604226",
+      "source_scrape_id": "01a204b7-26bc-71d8-86c6-22ccce05e291"
+    },
+    {
+      "game_id": "401860925",
+      "ncaa_game_id": "6604293",
+      "away_points": 22,
+      "home_points": 20,
+      "source_url": "https://www.ncaa.com/game/6604293",
+      "source_scrape_id": "01a204b5-8dfa-718c-9f86-c1ea0265e60b"
+    },
+    {
+      "game_id": "401861968",
+      "ncaa_game_id": "6604217",
+      "away_points": 21,
+      "home_points": 29,
+      "source_url": "https://www.ncaa.com/game/6604217",
+      "source_scrape_id": "01a204b2-a3c9-7493-9d6e-53580532ea0e"
+    },
+    {
+      "game_id": "401862830",
+      "ncaa_game_id": "6604251",
+      "away_points": 31,
+      "home_points": 27,
+      "source_url": "https://www.ncaa.com/game/6604251",
+      "source_scrape_id": "01a204b4-5cae-752c-9e0c-659a5b3329fc"
+    },
+    {
+      "game_id": "401862831",
+      "ncaa_game_id": "6603864",
+      "away_points": 10,
+      "home_points": 6,
+      "source_url": "https://www.ncaa.com/game/6603864",
+      "source_scrape_id": "01a204b6-603f-7153-a595-c8c42c51b631"
+    },
+    {
+      "game_id": "401862832",
+      "ncaa_game_id": "6603622",
+      "away_points": 14,
+      "home_points": 42,
+      "source_url": "https://www.ncaa.com/game/6603622",
+      "source_scrape_id": "01a204b6-c847-7778-891a-1cf51d7f36b9"
+    },
+    {
+      "game_id": "401862833",
+      "ncaa_game_id": "6604270",
+      "away_points": 14,
+      "home_points": 35,
+      "source_url": "https://www.ncaa.com/game/6604270",
+      "source_scrape_id": "01a204b6-c543-76fe-a22c-5ca95f9a8d79"
+    },
+    {
+      "game_id": "401862834",
+      "ncaa_game_id": "6603723",
+      "away_points": 34,
+      "home_points": 38,
+      "source_url": "https://www.ncaa.com/game/6603723",
+      "source_scrape_id": "01a204b6-4c82-727f-ac3a-5b5439fb9da9"
+    },
+    {
+      "game_id": "401862835",
+      "ncaa_game_id": "6603732",
+      "away_points": 24,
+      "home_points": 28,
+      "source_url": "https://www.ncaa.com/game/6603732",
+      "source_scrape_id": "01a204b6-4c5a-7667-8746-d87b4517dfc6"
+    },
+    {
+      "game_id": "401862836",
+      "ncaa_game_id": "6603742",
+      "away_points": 19,
+      "home_points": 17,
+      "source_url": "https://www.ncaa.com/game/6603742",
+      "source_scrape_id": "01a204b7-388e-75cf-9ca0-16ea20af5b35"
+    },
+    {
+      "game_id": "401864541",
+      "ncaa_game_id": "6604211",
+      "away_points": 8,
+      "home_points": 16,
+      "source_url": "https://www.ncaa.com/game/6604211",
+      "source_scrape_id": "01a204b7-4120-738d-9861-7e5d839101ab"
+    },
+    {
+      "game_id": "401864542",
+      "ncaa_game_id": "6640775",
+      "away_points": 24,
+      "home_points": 17,
+      "source_url": "https://www.ncaa.com/game/6640775",
+      "source_scrape_id": "01a204b4-6aa1-77c9-842b-4bd215cad7b7"
+    },
+    {
+      "game_id": "401864543",
+      "ncaa_game_id": "6604133",
+      "away_points": 25,
+      "home_points": 31,
+      "source_url": "https://www.ncaa.com/game/6604133",
+      "source_scrape_id": "01a204b7-260d-73be-abab-04cef3bde1e4"
+    },
+    {
+      "game_id": "401864544",
+      "ncaa_game_id": "6603641",
+      "away_points": 24,
+      "home_points": 22,
+      "source_url": "https://www.ncaa.com/game/6603641",
+      "source_scrape_id": "01a204b7-35e8-72db-9ae5-532ed027c875"
+    },
+    {
+      "game_id": "401864545",
+      "ncaa_game_id": "6604054",
+      "away_points": 3,
+      "home_points": 52,
+      "source_url": "https://www.ncaa.com/game/6604054",
+      "source_scrape_id": "01a204b4-6e36-7084-b316-aefff841fcad"
+    },
+    {
+      "game_id": "401866464",
+      "ncaa_game_id": "6640716",
+      "away_points": 28,
+      "home_points": 35,
+      "source_url": "https://www.ncaa.com/game/6640716",
+      "source_scrape_id": "01a204b3-7368-712a-8013-8a10126197c1"
+    },
+    {
+      "game_id": "401866465",
+      "ncaa_game_id": "6603834",
+      "away_points": 27,
+      "home_points": 34,
+      "source_url": "https://www.ncaa.com/game/6603834",
+      "source_scrape_id": "01a204b3-7368-76cc-a32a-549ac3b2e434"
+    },
+    {
+      "game_id": "401866466",
+      "ncaa_game_id": "6640719",
+      "away_points": 20,
+      "home_points": 3,
+      "source_url": "https://www.ncaa.com/game/6640719",
+      "source_scrape_id": "01a204b3-739e-732f-986c-bf78a237e441"
+    },
+    {
+      "game_id": "401866467",
+      "ncaa_game_id": "6603876",
+      "away_points": 34,
+      "home_points": 33,
+      "source_url": "https://www.ncaa.com/game/6603876",
+      "source_scrape_id": "01a204b3-736b-732f-b734-c4c90825b45d"
+    },
+    {
+      "game_id": "401866468",
+      "ncaa_game_id": "6604245",
+      "away_points": 0,
+      "home_points": 19,
+      "source_url": "https://www.ncaa.com/game/6604245",
+      "source_scrape_id": "01a204b4-5cd0-707e-a5c1-ddfb600b2460"
+    },
+    {
+      "game_id": "401866469",
+      "ncaa_game_id": "6603899",
+      "away_points": 21,
+      "home_points": 40,
+      "source_url": "https://www.ncaa.com/game/6603899",
+      "source_scrape_id": "01a204b3-73c2-7669-8454-68131108d28d"
+    },
+    {
+      "game_id": "401869929",
+      "ncaa_game_id": "6603709",
+      "away_points": 16,
+      "home_points": 17,
+      "source_url": "https://www.ncaa.com/game/6603709",
+      "source_scrape_id": "01a204b6-c580-72b5-a598-d78d6b990573"
+    },
+    {
+      "game_id": "401869938",
+      "ncaa_game_id": "6640765",
+      "away_points": 3,
+      "home_points": 48,
+      "source_url": "https://www.ncaa.com/game/6640765",
+      "source_scrape_id": "01a204b7-35e4-760d-83b3-8693fc831d62"
+    },
+    {
+      "game_id": "401869946",
+      "ncaa_game_id": "6603754",
+      "away_points": 24,
+      "home_points": 38,
+      "source_url": "https://www.ncaa.com/game/6603754",
+      "source_scrape_id": "01a204b6-d0d0-75b9-a450-0ce0d3533372"
+    },
+    {
+      "game_id": "401869953",
+      "ncaa_game_id": "6603788",
+      "away_points": 45,
+      "home_points": 7,
+      "source_url": "https://www.ncaa.com/game/6603788",
+      "source_scrape_id": "01a204b7-2781-767f-b528-0328732e9eb7"
+    },
+    {
+      "game_id": "401869958",
+      "ncaa_game_id": "6604008",
+      "away_points": 27,
+      "home_points": 28,
+      "source_url": "https://www.ncaa.com/game/6604008",
+      "source_scrape_id": "01a204b7-2688-75fa-ac38-1ba07a42631e"
+    },
+    {
+      "game_id": "401871077",
+      "ncaa_game_id": "6604080",
+      "away_points": 42,
+      "home_points": 30,
+      "source_url": "https://www.ncaa.com/game/6604080",
+      "source_scrape_id": "01a204b6-d051-7621-a7a8-061d684ef1d3"
+    },
+    {
+      "game_id": "401871078",
+      "ncaa_game_id": "6603855",
+      "away_points": 24,
+      "home_points": 35,
+      "source_url": "https://www.ncaa.com/game/6603855",
+      "source_scrape_id": "01a204b6-d18b-7666-bf29-dc6ca861dc06"
+    },
+    {
+      "game_id": "401871079",
+      "ncaa_game_id": "6604179",
+      "away_points": 20,
+      "home_points": 25,
+      "source_url": "https://www.ncaa.com/game/6604179",
+      "source_scrape_id": "01a204b6-c52b-70bb-995b-bd44580b431d"
+    },
+    {
+      "game_id": "401871080",
+      "ncaa_game_id": "6604171",
+      "away_points": 14,
+      "home_points": 45,
+      "source_url": "https://www.ncaa.com/game/6604171",
+      "source_scrape_id": "01a204b6-6fd8-71fd-91e7-1b886bba4109"
+    },
+    {
+      "game_id": "401871081",
+      "ncaa_game_id": "6603887",
+      "away_points": 31,
+      "home_points": 28,
+      "source_url": "https://www.ncaa.com/game/6603887",
+      "source_scrape_id": "01a204b6-c556-76a6-aa86-e3a92e88188b"
+    },
+    {
+      "game_id": "401871101",
+      "ncaa_game_id": "6603920",
+      "away_points": 40,
+      "home_points": 35,
+      "source_url": "https://www.ncaa.com/game/6603920",
+      "source_scrape_id": "01a204b7-2683-70f9-9dff-89b5ba4c0c14"
+    }
+  ]
+}
