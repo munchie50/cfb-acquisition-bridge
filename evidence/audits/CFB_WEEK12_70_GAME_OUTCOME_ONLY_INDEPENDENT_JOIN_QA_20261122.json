@@ -1,0 +1,37 @@
+{
+  "schema": "CFB_WEEK12_70_GAME_OUTCOME_ONLY_INDEPENDENT_JOIN_QA_V1",
+  "status": "PASS_ROW_LEVEL_JOIN_QA_ONLY_NOT_CANONICAL",
+  "source": {
+    "score_candidate": "evidence/audits/CFB_WEEK12_FIRST_FROZEN_SCORE_CANDIDATE_20261122_QA_ONLY.json",
+    "score_candidate_blob": "a48b218b47d2d00629e7de8bd62e03d4b20f4964",
+    "official_score_crosswalk": "evidence/audits/CFB_WEEK12_NCAA_70_GAME_SOURCE_CROSSWALK_RECONCILED_20261122_QA_ONLY.json",
+    "official_score_crosswalk_blob": "a24694591ef7c0fcf1003ec9cdcb60d2b56ffb5b",
+    "original_lineage": "evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json",
+    "original_lineage_blob": "8e019d9b502067c0a669e860a70e177b8e5ecda6"
+  },
+  "executed_checks": {
+    "outcome_rows": 70,
+    "unique_official_crosswalk_games": 70,
+    "unique_original_lineage_games": 70,
+    "modeled_rows": 56,
+    "original_exclusions": 14,
+    "score_mismatches": 0,
+    "original_status_mismatches": 0,
+    "original_numeric_prediction_mismatches": 0,
+    "original_exclusion_missing": 0,
+    "unmatched_ids": 0
+  },
+  "candidate_metrics": {
+    "winner_correct": 43,
+    "margin_mae": 13.736111246752518,
+    "total_mae": 11.611958254609505,
+    "brier": 0.19718225044930882
+  },
+  "hard_gates": {
+    "original_first_frozen_profile_activation": "PENDING",
+    "canonical_outcome_admission": "HOLD",
+    "source_capture": "70_DIRECT_HTTP_UTC_BOUND_RECEIPTS_OBTAINED",
+    "sportsbook_settlement": "NOT_VERIFIED"
+  },
+  "scope": "Independent exact row-level source and immutable original prediction joins, not a new scoring model or a retrospective decision. The score candidate already exists and is not recompiled. Week9/10 publication precedents do not authorize Week12 activation. No canonical scorecard or money ledger mutation."
+}
