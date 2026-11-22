@@ -1,0 +1,29 @@
+{
+  "schema": "CFB_WEEK12_NCAA_70_GAME_UTC_CAPTURE_MANIFEST_V1",
+  "status": "VERIFIED_70_OF_70_HTTP_CAPTURE_NOT_CANONICAL",
+  "source_workflow_run": 45060768565,
+  "source_job": 137325948462,
+  "artifact_id": 14769258017,
+  "artifact_url": "https://github.com/munchie50/cfb-acquisition-bridge/actions/runs/45060768565/artifacts/14769258017",
+  "artifact_zip_sha256": "4865735c69a641aa33aeeb880bf683d3cb7ea7105b70b590c251f9674eb37717",
+  "extracted_filename": "week12_official_timestamp_capture.json",
+  "extracted_json_sha256": "163e2463f5dca67de587d82ae5759b1ecf846ff6b6e9da3e91e6b4d4f2c46275",
+  "extracted_json_bytes": 42754,
+  "artifact_expiration_utc": "2026-12-22T19:26:41Z",
+  "verified": {
+    "rows": 70,
+    "unique_game_ids": 70,
+    "http_200": 70,
+    "game_id_in_response": 70,
+    "final_token_in_response": 70,
+    "untruncated": 70,
+    "utc_request_response_pairs": 70,
+    "failed": 0
+  },
+  "first_request_started_utc": "2026-11-22T19:26:37.320474+00:00",
+  "last_response_completed_utc": "2026-11-22T19:26:40.994811+00:00",
+  "separate_official_score_crosswalk": "evidence/audits/CFB_WEEK12_NCAA_70_GAME_SOURCE_CROSSWALK_RECONCILED_20261122_QA_ONLY.json",
+  "admission": "HOLD",
+  "first_frozen_activation": "PENDING",
+  "note": "This manifest does not preserve full row-level UTC JSON in repository; download linked artifact before expiry. Full copy also delivered in conversation. No historical backdating, no acceptance."
+}
