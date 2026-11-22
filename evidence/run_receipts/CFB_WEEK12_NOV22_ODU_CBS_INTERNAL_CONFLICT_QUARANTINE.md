@@ -14,7 +14,7 @@ Arizona at Kansas State game-specific box score https://www.cbssports.com/colleg
 
 ## Derived-metric sensitivity
 - Published Week12 56-modeled QA candidate currently assumes Old Dominion 20 at UConn 29; modeled 43/56 winner direction, margin MAE 13.718254103895376, total MAE 11.627854203068864, Brier 0.19718225044930882.
-- Under alternate Old Dominion 21 at UConn 29, the single modeled game's realized home margin changes 9 -> 8 and total changes 49 -> 50. Winner direction and Brier are unchanged. Margin MAE changes to 13.486111246752518 only if all else held fixed? NO: that number came from a previous candidate where Arizona was reversed; do not reuse it. Recompute alternate-cohort metrics directly from current 70/70 candidate before any publication.
+- Under alternate Old Dominion 21 at UConn 29, the single modeled game's realized home margin changes 9 -> 8 and total changes 49 -> 50. Winner direction and Brier are unchanged. Recomputed directly from the current corrected Arizona cohort with only Old Dominion changing to 21: winner direction 43/56, margin MAE 13.736111246752518, total MAE 11.611958254609503, Brier 0.19718225044930882. These are sensitivity figures only, not accepted metrics.
 - No Nov21 ticket concerns Old Dominion at UConn, so conditional ticket outcomes are unaffected.
 - This quarantine is a scoped QA hold, not a rollback of CBS scoreboard extraction or an assertion of an official result.
 
