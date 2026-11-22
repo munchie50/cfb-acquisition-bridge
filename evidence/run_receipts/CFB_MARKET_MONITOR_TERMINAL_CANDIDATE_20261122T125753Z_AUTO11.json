@@ -1,0 +1,42 @@
+{
+  "schema": "CFB_MARKET_MONITOR_TERMINAL_CANDIDATE",
+  "correlation_id": "20261122T125753Z_AUTO11",
+  "observed_utc": "2026-11-22T12:57:53Z",
+  "scheduled_for": "2026-11-22T13:00:00Z",
+  "trigger": "natural scheduled",
+  "status": "RUN_INCOMPLETE",
+  "startup_receipt": "evidence/run_receipts/CFB_MARKET_MONITOR_TRACE_20261122T125753Z_AUTO11.md",
+  "display": {
+    "path": "evidence/operational/CFB_WEEK12_HOT_SHEET_2026-11-20_MANUAL_PROVISIONAL_RELEASE.md",
+    "blob": "359357d1b42074ff09eb11245aa4cc492e7457a8",
+    "status": "PASS",
+    "linked_full_sheet_blob": "00cb3eac893e34187769b56924e553d52681cb92",
+    "data_boundary": "2026-11-20T20:50:24.828310Z",
+    "games": 70,
+    "pass_review": 68,
+    "closed_conditional": 2,
+    "actionable_wagers": 0
+  },
+  "stages": {
+    "startup_receipt": "PASS",
+    "display_release_readback": "PASS",
+    "linked_preview_readback": "PASS",
+    "current_main_read": "PASS",
+    "current_week_source_capture": "NOT_ATTEMPTED_ALREADY_RETAINED_NOV20",
+    "current_named_book_offers": "BLOCKED_NO_VERIFIED_OFFERS",
+    "fresh_decision_rows": "NOT_ATTEMPTED_ELAPSED_WEEK12",
+    "canonical_publication": "BLOCKED_UNACCEPTED_LEDGER_AND_POINTER",
+    "runtime_checkout": "NOT_ATTEMPTED_NO_REQUIRED_FRESH_COMPUTE_STAGE",
+    "read_only_analytics": "ANALYTICS_INPUT_UNAVAILABLE"
+  },
+  "first_failure": "CURRENT_CANONICAL_DECISION_LEDGER_POINTER_NOT_BOUND_TO_NOV20_RECONSTRUCTED_DECISION_BLOB",
+  "next_action": "Preserve display override; verify genuine current-week source/accepted state and original selector before any canonical publication; Sunday outcome capture belongs governed outcome pipeline, not invented here",
+  "preserved": [
+    "four task schedules",
+    "Champion v1",
+    "FIRST_FROZEN",
+    "canonical ledgers",
+    "wagers",
+    "money"
+  ]
+}
