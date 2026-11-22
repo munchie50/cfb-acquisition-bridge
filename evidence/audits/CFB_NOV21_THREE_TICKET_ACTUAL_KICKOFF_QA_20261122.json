@@ -1,0 +1,53 @@
+{
+  "schema": "CFB_NOV21_THREE_TICKET_ACTUAL_KICKOFF_QA_V1",
+  "status": "OFFICIAL_ACTUAL_KICKOFF_CORROBORATED_RECEIPT_TIMEZONE_UNVERIFIED_QA_ONLY",
+  "source_intake": "evidence/operational/CFB_EXECUTION_TICKETS_20261121_USER_PHOTO_INTAKE.md",
+  "source_execution_ledger": "evidence/operational/CFB_EXECUTION_LEDGER.md",
+  "rule": "Kickoff times taken from official conference/school postgame box scores. Ticket issue times copied from recorded user photo observations. Comparisons assume printed ticket clock is America/Chicago; venue clock zone not independently verified. No book settlement or pregame certification.",
+  "rows": [
+    {
+      "execution_id": "CFB_NOV21-11",
+      "matchup": "Northwestern at Minnesota",
+      "ticket_issue_printed": "2026-11-21 10:56",
+      "actual_kickoff_local": "2026-11-21 11:03",
+      "actual_kickoff_timezone": "America/Chicago",
+      "actual_kickoff_ct": "2026-11-21 11:03",
+      "conditional_minutes_before_kickoff": 7,
+      "source_urls": [
+        "https://gophersports.com/sports/football/stats/2026/northwestern/boxscore/22843",
+        "https://bigten.org/boxscore.aspx?id=7ltyipP022aUJKmSgYVs3wXi7up73ghniwD5ElWyd07J7BNseBaMQePf0fY%2F3yUP8J7pW8bJraK%2B05bIGCOlLfZwpermrXiM2%2BdizqrQwUgwfJ1rBAKIml0OyfOYqOtopOHrL3DMA5eeO9Dz%2Fg9aslrzsXksZcnORxW3iR3OWQk%3D"
+      ]
+    },
+    {
+      "execution_id": "CFB_NOV21-12",
+      "matchup": "Wisconsin at Purdue",
+      "ticket_issue_printed": "2026-11-21 10:56",
+      "actual_kickoff_local": "2026-11-21 12:06",
+      "actual_kickoff_timezone": "America/New_York",
+      "actual_kickoff_ct": "2026-11-21 11:06",
+      "conditional_minutes_before_kickoff": 10,
+      "source_urls": [
+        "https://uwbadgers.com/sports/football/stats/2026/purdue/boxscore/17151"
+      ]
+    },
+    {
+      "execution_id": "CFB_NOV21-13",
+      "matchup": "Wofford at Ole Miss",
+      "ticket_issue_printed": "2026-11-21 10:52",
+      "actual_kickoff_local": "2026-11-21 11:02",
+      "actual_kickoff_timezone": "America/Chicago",
+      "actual_kickoff_ct": "2026-11-21 11:02",
+      "conditional_minutes_before_kickoff": 10,
+      "source_urls": [
+        "https://woffordterriers.com/sports/football/stats/2026/ole-miss/boxscore/12019",
+        "https://soconsports.com/boxscore.aspx?id=7ltyipP022aUJKmSgYVs3wXi7up73ghniwD5ElWyd07J7BNseBaMQePf0fY%2F3yUPU2iqzJuGrvibprNxltHfhgli2%2BhoQDJ6ex7D2UhtwlN9Pdv2YaPD0MPtPmZ4ZRWvXO0VE71AXl0q9j7bHVFcYSqNfa1OYtB9aJwv73hAS0I%3D"
+      ]
+    }
+  ],
+  "summary": {
+    "official_actual_kickoffs_corroborated": 3,
+    "conditional_prekickoff": 3,
+    "certified_pregame": 0,
+    "book_settled": 0
+  }
+}
