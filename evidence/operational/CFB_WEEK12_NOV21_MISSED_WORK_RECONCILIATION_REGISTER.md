@@ -463,3 +463,8 @@ Fetched the exact current authenticated `main` contents of five mandatory canoni
 | `evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_295.md` | 308845 | `ebc25a8385ba82b0988cdbe39507d3a793c71e1e` | PASS |
 
 **Disposition:** prior full-five-blob BYTE_HASH_UNVERIFIED blocker is resolved for these exact current blobs. Do not conflate byte-integrity PASS with full cross-file semantic certification, historical slot coverage, certified analytics export, or a successful natural Health/Monitor run. No production files modified besides this register.
+
+
+### Nov22 catch-up — post-hash natural-run and analytics discovery gate
+
+After five-blob independent byte hash PASS, fresh Automations readback of Health `6ae76df2ece4819197f91fb10076dea7` still identifies last completed scheduler invocation as Nov21 22:30Z (engine closure RUN_INCOMPLETE) and next scheduled invocation Nov22 16:30 CT. Therefore Nov22 natural Health run remains NOT_YET_EXECUTED at this observation, not a new failure or PASS. Market Monitor `6ae766e788d881919726d0eeb44450dd` latest remains Nov22 19:00Z scheduled / 19:01Z started, previously evidenced HTTP409 startup RUN_INCOMPLETE; next scheduled Nov23 07:00 CT. GitHub code searches for `CFB_HEALTH_20261122`, `CFB_MARKET_MONITOR_RUN_CLOSURE_20261122`, and `analytics certified export` returned no indexed matches; **code search absence is not a comprehensive tree audit** and cannot certify nonexistence of an export. The independent five-blob byte hash obstacle is closed, but eight-category Health certification, complete historical missed-slot enumeration, analytics certified export proof and W12-05/W12-08 natural closures remain held for their distinct evidence. No backdating or task modifications.
