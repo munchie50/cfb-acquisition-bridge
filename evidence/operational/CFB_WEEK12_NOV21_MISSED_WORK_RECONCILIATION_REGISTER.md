@@ -6,7 +6,9 @@ Authority: current constitution/contracts and accepted recovery index v1.295 out
 ## Verified completed (do not redo without regression)
 - Nov20 CBS Week12 70/70 board normalization, original compiler, exact paired market/decision deltas, 70-game provisional rendered review: 68 historical PASS, two closed historical CONDITIONAL, zero INCONCLUSIVE. The preview is production-visible but NO ACTIONABLE WAGERS / NOT CANONICAL RUN_PASS.
 - Nov21 original selector integration and pinned canonical selector readback PASS, recovery consumer preflight PASS for 517 pointers, temporary hosted Git runtime original tests PASS. The temporary hosted session subsequently expired; that is not scheduled-worker proof.
-- Nov21 standardized four-task operating baseline verified at evidence/operational/CFB_FOUR_TASK_NOV20_NOV21_STANDARDIZED## Current reconciled obligation matrix — supersedes original initial matrix (Nov22)
+- Nov21 standardized four-task operating baseline verified at evidence/operational/CFB_FOUR_TASK_NOV20_NOV21_STANDARDIZED_OPERATING_BASELINE_20261121.md.
+
+## Current reconciled obligation matrix — supersedes original initial matrix (Nov22)
 
 The original initial matrix is retained in later checkpoints as historical provenance, but these are the current dispositions. This matrix does NOT certify the original scheduled engine runs as PASS.
 
