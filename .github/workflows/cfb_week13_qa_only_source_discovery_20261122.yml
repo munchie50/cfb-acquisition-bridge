@@ -1,0 +1,63 @@
+name: CFB Week13 independent QA-only CBS source discovery
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_week13_qa_only_source_discovery_20261122.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Capture unqualified Week13 CBS board as raw QA-only evidence
+        env:
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: |
+          python - <<'PY'
+          import hashlib,json,os,re,urllib.request
+          from datetime import datetime,timezone
+          from pathlib import Path
+          out=Path(os.environ['RUNNER_TEMP'])/'week13-discovery'
+          out.mkdir()
+          url='https://www.cbssports.com/college-football/odds/FBS/2026/regular/week-13/'
+          receipt={'schema':'CFB_WEEK13_QA_ONLY_SOURCE_DISCOVERY_V1',
+                   'status':'SOURCE_UNAVAILABLE','scope':'RESEARCH_ONLY_NOT_ACCEPTED_COLLECTION_PROFILE',
+                   'source_url':url,'observed_utc':datetime.now(timezone.utc).isoformat(),
+                   'run_id':os.environ['RUN_ID'],'run_attempt':os.environ['RUN_ATTEMPT'],
+                   'eligible_for_frozen_prediction':False,'eligible_for_wager':False,
+                   'eligible_for_canonical_publication':False}
+          try:
+            req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
+            with urllib.request.urlopen(req,timeout=20) as response:
+              if response.geturl()!=url:raise ValueError('unexpected redirect')
+              data=response.read(8_000_001)
+              if not 0<len(data)<=8_000_000:raise ValueError('invalid byte count')
+            (out/'cbs-week13-raw.html').write_bytes(data)
+            ids=re.findall(rb'data-game-id=["\x27]([^"\x27]+)',data)
+            receipt.update(status='RAW_CAPTURED_QA_ONLY',bytes=len(data),
+                           sha256=hashlib.sha256(data).hexdigest(),
+                           raw_game_id_occurrences=len(ids),
+                           distinct_raw_game_ids=len(set(ids)),
+                           note='Raw game IDs and page data are unqualified; no original-lineage identity, timing or named-book certification')
+          except Exception as exc:
+            receipt['failure_class']=type(exc).__name__
+            receipt['failure_reason']=str(exc)[:300]
+          (out/'manifest.json').write_text(json.dumps(receipt,indent=2)+'\n')
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cfb-week13-qa-only-source-discovery-${{ github.run_id }}
+          path: ${{ runner.temp }}/week13-discovery/
+          retention-days: 14
+          if-no-files-found: error
