@@ -14,3 +14,6 @@ synthetic_identity_fixture: local fixture-only market observation and matching l
 actual_certified_source_export: NOT_OBTAINED
 real_market_CLV_ROI_calibration: NOT_COMPUTED
 conclusion: exact current Python suite and both fail-closed CLI paths executed successfully; original analytics execution gap narrowed to real independently certified point-in-time source and provenance. Fixture is not market evidence and was not committed. No automatic learning, canonical promotion, bet, task, or schedule changes.
+
+## Complete-tree certified-export discovery
+Authenticated GitHub `main` recursive tree at commit `82eb660c96198ecff8e847908926dfd54e906c31`, 3,330+ entries and `truncated=false`: **zero `.jsonl` blobs** and **zero analytics paths with `certif` or `export`**. This establishes absence of a committed certified JSONL input in this exact repository snapshot, unlike earlier inconclusive code-search results. It does not prove a provider export does not exist externally or in an unconnected store. Analytics real-data certification remains `SOURCE_EXPORT_MISSING_IN_REPO`; code execution itself is now verified. No synthetic fixture admitted.
