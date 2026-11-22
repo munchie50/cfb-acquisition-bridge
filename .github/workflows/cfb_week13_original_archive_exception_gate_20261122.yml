@@ -83,6 +83,17 @@ jobs:
             assert cbs_id not in historical,'CBS Week13 identity unexpectedly collides with original ledger'
             assert old_id!=cbs_id
             assert classification in ('same-direction-old-clock','reversed-old-clock')
+            # Derive, rather than trust, direction classification from both artifacts.
+            cbs_home,cbs_away=found[cbs_id]['teams'][1],found[cbs_id]['teams'][0]
+            normalized={'Boise St.':'Boise State','Colorado St.':'Colorado State',
+                        'San Diego St.':'San Diego State','Washington St.':'Washington State',
+                        'Texas St.':'Texas State','Utah St.':'Utah State',
+                        'Fresno St.':'Fresno State','Oregon State':'Oregon State'}
+            cbs_pair=(normalized[cbs_home],normalized[cbs_away])
+            old_pair=(old_home,old_away)
+            observed='same-direction-old-clock' if cbs_pair==old_pair else 'reversed-old-clock' if cbs_pair==old_pair[::-1] else 'unrelated-pair'
+            assert observed==classification,('historical pair direction classification drift',cbs_id,observed,classification)
+            assert old_clock[:10] != found[cbs_id]['cbs_abbrev'][6:14][:4]+'-'+found[cbs_id]['cbs_abbrev'][6:14][4:6]+'-'+found[cbs_id]['cbs_abbrev'][6:14][6:8],('historical clock overlaps CBS Week13 date',cbs_id)
           print('PASS: four historical original IDs, exact clocks, and home/away directions independently confirmed; no cross-week ID substitution')
           print('PASS: 69 retained CBS directed game IDs and four exact exception identifiers verified against original source artifacts')
           print('HOLD: archive kickoff/date reconciliation remains QA-only, no profile activation')
