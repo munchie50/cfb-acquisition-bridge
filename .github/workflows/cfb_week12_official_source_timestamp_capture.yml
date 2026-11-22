@@ -1,0 +1,34 @@
+name: CFB Week12 official source UTC capture (read only)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_week12_official_source_timestamp_capture.yml'
+permissions:
+  contents: read
+jobs:
+  capture-official-source-utc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Capture official NCAA HTTP response UTC bounds and raw digests
+        run: python scripts/cfb_week12_official_timestamp_capture.py
+      - name: Preserve immutable capture receipt even if direct provider fetch fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-week12-ncaa-source-utc-capture
+          path: week12_official_timestamp_capture.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: State no acceptance or scoring
+        if: always()
+        run: |
+          echo 'Read-only source response capture only. No FIRST_FROZEN activation, official admission, scorecard promotion, sportsbook settlement, or canonical publication.' >> "$GITHUB_STEP_SUMMARY"
