@@ -490,3 +490,15 @@ Re-read original natural closure files on authenticated `main`, not only prior n
 | Nov21 16:30 Health | `ede00faebd76ccc5cb0afbe12411204e24e31644` | RUN_INCOMPLETE; full historical coverage and analytics remain unverified; closure persisted |
 
 This targeted original-receipt reconciliation is **EXECUTED** and narrows evidence ambiguity for five named natural slots. The Nov21 13 CT closure's `reason` is the authoritative persisted final disposition; the associated Health audit additionally identified the earlier wrong provisional-display filename in its candidate trace. Neither supports retroactive natural success. The Nov20 13/07 Monitor and Nov20 Evening exceptions remain recorded in earlier Health audits but are not newly certified in this five-row matrix. Full historical expected-slot denominator and Oct24/older Health/QA receipt enumeration remain **COVERAGE_UNVERIFIED**; do not promote watermark. No scheduled task, original closure, accepted pointer or wagering change.
+
+
+### Nov22 natural Monitor 07CT and Weekly QA 09CT — exact closure cross-check
+
+Additional exact authenticated original closure readbacks (not retroactive acceptance):
+
+| Scheduled CT slot | Exact closure path and blob | Recorded status and boundary |
+|---|---|---|
+| Nov22 07:00 Market Monitor | `evidence/run_receipts/CFB_MARKET_MONITOR_RUN_CLOSURE_20261122T125753Z_AUTO11.json` blob `2a5d39e41b1caff93f18d2fa9fdf0768a2cc81cf` | `RUN_INCOMPLETE`; terminal candidate readback PASS, provisional display PASS, canonical publication BLOCKED, `actionable_wagers: 0`; original canonical decision pointer and qualified offers unaccepted |
+| Nov22 09:00 Weekly QA | `evidence/run_receipts/CFB_WEEKLY_QA_SUNDAY_20261122T150000Z_RUN_CLOSURE.md` blob `67d070edcc3d20dfaf21507340ffaf930dd78bff` | `RUN_INCOMPLETE`; startup, dated learning review and terminal candidate independently read back by worker; due-scope engine acceptance not earned |
+
+**Temporal supersession:** Sunday QA closure's 09CT statement that Week12 70-game outcome cohort and 13-ticket grading were not available is a historical as-of-run observation; later manual 70/70 official finals capture and conditional ticket grading/aggregate user settlement attestation supersede those evidence-availability claims. Do not alter immutable QA closure or upgrade its natural-run status; do not duplicate grading, tickets or settlement. The QA closure's separate failure to establish canonical FIRST_FROZEN acceptance and current Monitor binding remains valid. This expands bounded original receipt matrix from five to seven verified named slots, but **does not** establish complete historical expected-slot coverage or W12-05/W12-08 natural end-to-end PASS. No production controls changed.
