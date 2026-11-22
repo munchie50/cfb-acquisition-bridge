@@ -1,7 +1,7 @@
 {
   "schema": "CFB_WEEK12_TICKET_SCORE_RESEARCH_CANDIDATE_V1",
   "status": "UNACCEPTED_CONDITIONAL_GRADES_NO_BOOK_SETTLEMENT",
-  "source_final_blob": "7b5bc9f5bf85ef35839add8e08b22007b786c5a7",
+  "source_final_blob": "351e81134ea184e207075ea176056a64596ebf3c",
   "execution_ledger_blob": "ede69ea6fbe16900d162dd03987883715a1dbe97",
   "notes": "Pure arithmetic on user-recorded tickets and unaccepted CBS-score candidate. Not official result certification, not pregame validation, not settlement or money-ledger movement. Ticket observations never enter model training.",
   "summary": {
@@ -232,6 +232,14 @@
       "source_status": "RESEARCH_CANDIDATE_UNVERIFIED",
       "book_settlement": "UNVERIFIED",
       "timing_class": "UNVERIFIED"
+    }
+  ],
+  "corrections": [
+    {
+      "game_id": "401861968",
+      "reason": "Source final candidate corrected Old Dominion 21 at UConn 29",
+      "ticket_grade_impact": "NONE_NO_TICKET_FOR_GAME",
+      "grades_recomputed": false
     }
   ]
 }
