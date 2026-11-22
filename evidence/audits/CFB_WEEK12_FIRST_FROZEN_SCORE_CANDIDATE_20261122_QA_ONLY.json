@@ -2,7 +2,7 @@
   "schema": "CFB_WEEK12_FIRST_FROZEN_SCORING_CANDIDATE_V1",
   "status": "CBS_70_OF_70_RECONCILED_QA_ONLY_NOT_CANONICAL",
   "source_final_candidate_path": "evidence/audits/CFB_WEEK12_CBS_FINAL_CANDIDATE_20261122_RESEARCH_ONLY.json",
-  "source_final_candidate_blob": "5ff4559fee54abf86a109288514a7f4713824b96",
+  "source_final_candidate_blob": "548b1a19f337e00a0a18b8ee8fa45345cd959ce3",
   "original_lineage_path": "evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json",
   "original_lineage_blob": "8e019d9b502067c0a669e860a70e177b8e5ecda6",
   "margin_convention": "home-minus-away",
@@ -12,8 +12,8 @@
     "scored": 56,
     "excluded": 14,
     "winner_correct": 43,
-    "margin_mae": 13.718254103895376,
-    "total_mae": 11.627854203068864,
+    "margin_mae": 13.736111246752518,
+    "total_mae": 11.611958254609505,
     "brier": 0.19718225044930882
   },
   "rows": [
@@ -696,16 +696,16 @@
       "game_id": "401861968",
       "away": "Old Dominion",
       "home": "UConn",
-      "away_points": 20,
+      "away_points": 21,
       "home_points": 29,
       "original_status": "PREDICTION",
-      "realized_home_margin": 9,
-      "realized_total": 49,
+      "realized_home_margin": 8,
+      "realized_total": 50,
       "pred_home_margin": 11.877921956661101,
       "pred_total": 49.945086556862094,
       "pred_home_win_probability": 0.7837908325427771,
-      "margin_error": -2.877921956661101,
-      "total_error": -0.9450865568620941,
+      "margin_error": -3.877921956661101,
+      "total_error": 0.054913443137905915,
       "winner_correct": true,
       "brier": 0.046746404092545435,
       "grade": "QA_CANDIDATE_ONLY"
@@ -1211,6 +1211,13 @@
         28
       ],
       "reason": "Full CBS scoreboard crosscheck supersedes prior spotcheck"
+    },
+    {
+      "game_id": "401861968",
+      "source": "NCAA_GAME_6604217",
+      "reason": "Primary game-specific official final resolves CBS contradictory header",
+      "away_points": 21,
+      "home_points": 29
     }
   ]
 }
