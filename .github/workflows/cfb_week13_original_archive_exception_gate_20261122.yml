@@ -31,8 +31,10 @@ jobs:
           from pathlib import Path
           base=Path(os.environ['RUNNER_TEMP'])
           raw=list((base/'original').rglob('*.zip'))
-          print('ORIGINAL_ARCHIVE_FILES',json.dumps([str(p.relative_to(base/'original')) for p in (base/'original').rglob('*') if p.is_file()][:35]))
-          assert raw, 'original engine zip absent from retained archive'
+          files=[p for p in (base/'original').rglob('*') if p.is_file()]
+          print('ORIGINAL_ARCHIVE_FILES',json.dumps([{'path':str(p.relative_to(base/'original')),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files][:35]))
+          print('OUTER_ARTIFACT_ZIP',json.dumps({'bytes':(base/'original.zip').stat().st_size,'sha256':hashlib.sha256((base/'original.zip').read_bytes()).hexdigest()}))
+          assert raw, 'original engine zip absent from retained archive; inspect ORIGINAL_ARCHIVE_FILES and OUTER_ARTIFACT_ZIP'
           target=[p for p in raw if hashlib.sha256(p.read_bytes()).hexdigest()=='772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf']
           assert len(target)==1, 'original archive SHA-256 mismatch'
           with zipfile.ZipFile(target[0]) as z:
