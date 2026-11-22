@@ -1,7 +1,7 @@
 {
   "schema": "CFB_WEEK12_CBS_FINAL_CANDIDATE_V1",
-  "status": "SOURCE_RESEARCH_CANDIDATE_NOT_ACCEPTED",
-  "source_url": "https://www.cbssports.com/college-football/schedule/FBS/",
+  "status": "CBS_SCOREBOARD_70_OF_70_DIRECTLY_RECONCILED_QA_CANDIDATE_NOT_CANONICAL",
+  "source_url": "https://www.cbssports.com/college-football/scoreboard/FBS/2026/regular/12/",
   "source_scope": "CBS Week 12 Nov 17-21 2026 displayed finals; manually transcribed in immutable preflight 70-game ID order. Requires independent score cross-check and original scorecard QA before acceptance.",
   "lineage_path": "evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json",
   "lineage_blob": "8e019d9b502067c0a669e860a70e177b8e5ecda6",
@@ -343,7 +343,7 @@
       "game_id": "401861968",
       "away": "Old Dominion",
       "home": "UConn",
-      "away_points": 21,
+      "away_points": 20,
       "home_points": 29,
       "original_status": "PREDICTION"
     },
@@ -463,8 +463,8 @@
       "game_id": "401856865",
       "away": "Arizona",
       "home": "Kansas State",
-      "away_points": 28,
-      "home_points": 35,
+      "away_points": 35,
+      "home_points": 28,
       "original_status": "PREDICTION"
     },
     {
@@ -580,6 +580,592 @@
       "home_points": 29,
       "source": "https://www.ncaa.com/scoreboard/football/fbs",
       "reason": "NCAA scoreboard independent verification; correct transcription"
+    },
+    {
+      "game_id": "401861968",
+      "old": [
+        21,
+        29
+      ],
+      "corrected": [
+        20,
+        29
+      ],
+      "source": "CBS_WEEK12_FINAL_SCOREBOARD_DIRECT_70_ROW_CHECK"
+    },
+    {
+      "game_id": "401856865",
+      "old": [
+        28,
+        35
+      ],
+      "corrected": [
+        35,
+        28
+      ],
+      "source": "CBS_WEEK12_FINAL_SCOREBOARD_DIRECT_70_ROW_CHECK"
+    }
+  ],
+  "cbs_final_provenance": [
+    {
+      "game_id": "401856866",
+      "cbs_event": "NCAAF_20261121_BYU@KANSAS",
+      "away_points": 31,
+      "home_points": 29,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_BYU@KANSAS/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856867",
+      "cbs_event": "NCAAF_20261121_COLO@CINCY",
+      "away_points": 28,
+      "home_points": 35,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_COLO@CINCY/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858309",
+      "cbs_event": "NCAAF_20261121_CUSE@BC",
+      "away_points": 15,
+      "home_points": 27,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_CUSE@BC/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401862831",
+      "cbs_event": "NCAAF_20261121_ECU@ARMY",
+      "away_points": 10,
+      "home_points": 6,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_ECU@ARMY/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401862834",
+      "cbs_event": "NCAAF_20261121_MEMP@NAVY",
+      "away_points": 34,
+      "home_points": 38,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_MEMP@NAVY/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401862835",
+      "cbs_event": "NCAAF_20261121_NTEXAS@TULANE",
+      "away_points": 24,
+      "home_points": 28,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_NTEXAS@TULANE/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858530",
+      "cbs_event": "NCAAF_20261121_NWEST@MINN",
+      "away_points": 17,
+      "home_points": 20,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_NWEST@MINN/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858531",
+      "cbs_event": "NCAAF_20261121_OHIOST@NEB",
+      "away_points": 28,
+      "home_points": 31,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_OHIOST@NEB/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856748",
+      "cbs_event": "NCAAF_20261121_VANDY@FLA",
+      "away_points": 27,
+      "home_points": 34,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_VANDY@FLA/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858310",
+      "cbs_event": "NCAAF_20261121_WAKE@GATECH",
+      "away_points": 50,
+      "home_points": 29,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_WAKE@GATECH/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858533",
+      "cbs_event": "NCAAF_20261121_WISC@PURDUE",
+      "away_points": 42,
+      "home_points": 10,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_WISC@PURDUE/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856749",
+      "cbs_event": "NCAAF_20261121_WOFF@MISS",
+      "away_points": 17,
+      "home_points": 59,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_WOFF@MISS/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858305",
+      "cbs_event": "NCAAF_20261121_UNC@UVA",
+      "away_points": 24,
+      "home_points": 41,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_UNC@UVA/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856868",
+      "cbs_event": "NCAAF_20261121_HOU@WVU",
+      "away_points": 34,
+      "home_points": 31,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_HOU@WVU/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856750",
+      "cbs_event": "NCAAF_20261121_TNTECH@MISSST",
+      "away_points": 16,
+      "home_points": 34,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_TNTECH@MISSST/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401871080",
+      "cbs_event": "NCAAF_20261121_WKY@LIB",
+      "away_points": 14,
+      "home_points": 45,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_WKY@LIB/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401862832",
+      "cbs_event": "NCAAF_20261121_CHARLO@TULSA",
+      "away_points": 14,
+      "home_points": 42,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_CHARLO@TULSA/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401871079",
+      "cbs_event": "NCAAF_20261121_MOST@JAXST",
+      "away_points": 20,
+      "home_points": 25,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_MOST@JAXST/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401871081",
+      "cbs_event": "NCAAF_20261121_MTSU@SAMST",
+      "away_points": 31,
+      "home_points": 28,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_MTSU@SAMST/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856746",
+      "cbs_event": "NCAAF_20261121_TNCHAT@BAMA",
+      "away_points": 0,
+      "home_points": 47,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_TNCHAT@BAMA/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858527",
+      "cbs_event": "NCAAF_20261121_IOWA@ILL",
+      "away_points": 34,
+      "home_points": 17,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_IOWA@ILL/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401869929",
+      "cbs_event": "NCAAF_20261121_LAMON@APLST",
+      "away_points": 16,
+      "home_points": 17,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_LAMON@APLST/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401862833",
+      "cbs_event": "NCAAF_20261121_USF@FLAATL",
+      "away_points": 14,
+      "home_points": 35,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_USF@FLAATL/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401869946",
+      "cbs_event": "NCAAF_20261121_CSTCAR@UL",
+      "away_points": 24,
+      "home_points": 38,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_CSTCAR@UL/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401871077",
+      "cbs_event": "NCAAF_20261121_DE@NMEXST",
+      "away_points": 42,
+      "home_points": 30,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_DE@NMEXST/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401871078",
+      "cbs_event": "NCAAF_20261121_FIU@KENSAW",
+      "away_points": 24,
+      "home_points": 35,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_FIU@KENSAW/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856755",
+      "cbs_event": "NCAAF_20261121_ARK@TEXAS",
+      "away_points": 3,
+      "home_points": 45,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_ARK@TEXAS/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858535",
+      "cbs_event": "NCAAF_20261121_IND@WASH",
+      "away_points": 24,
+      "home_points": 27,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_IND@WASH/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856754",
+      "cbs_event": "NCAAF_20261121_LSU@TENN",
+      "away_points": 13,
+      "home_points": 27,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_LSU@TENN/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858304",
+      "cbs_event": "NCAAF_20261121_NCST@FSU",
+      "away_points": 28,
+      "home_points": 10,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_NCST@FSU/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401861968",
+      "cbs_event": "NCAAF_20261121_ODU@UCONN",
+      "away_points": 20,
+      "home_points": 29,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_ODU@UCONN/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858532",
+      "cbs_event": "NCAAF_20261121_RUT@PSU",
+      "away_points": 25,
+      "home_points": 24,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_RUT@PSU/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856747",
+      "cbs_event": "NCAAF_20261121_SAMF@AUBURN",
+      "away_points": 17,
+      "home_points": 59,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_SAMF@AUBURN/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856871",
+      "cbs_event": "NCAAF_20261121_TXTECH@BAYLOR",
+      "away_points": 20,
+      "home_points": 10,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_TXTECH@BAYLOR/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858528",
+      "cbs_event": "NCAAF_20261121_UCLA@MICH",
+      "away_points": 16,
+      "home_points": 18,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_UCLA@MICH/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856752",
+      "cbs_event": "NCAAF_20261121_TXAM@OKLA",
+      "away_points": 7,
+      "home_points": 28,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_TXAM@OKLA/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401869953",
+      "cbs_event": "NCAAF_20261121_GAS@TROY",
+      "away_points": 45,
+      "home_points": 7,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_GAS@TROY/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401869958",
+      "cbs_event": "NCAAF_20261121_GAST@MRSHL",
+      "away_points": 27,
+      "home_points": 28,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_GAST@MRSHL/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401864543",
+      "cbs_event": "NCAAF_20261121_NILL@NDST",
+      "away_points": 25,
+      "home_points": 31,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_NILL@NDST/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401871101",
+      "cbs_event": "NCAAF_20261121_SALA@USM",
+      "away_points": 40,
+      "home_points": 35,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_SALA@USM/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401860920",
+      "cbs_event": "NCAAF_20261121_WASHST@TXSTSM",
+      "away_points": 14,
+      "home_points": 42,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_WASHST@TXSTSM/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858534",
+      "cbs_event": "NCAAF_20261121_MD@USC",
+      "away_points": 21,
+      "home_points": 35,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_MD@USC/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856865",
+      "cbs_event": "NCAAF_20261121_ARIZ@KSTATE",
+      "away_points": 35,
+      "home_points": 28,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_ARIZ@KSTATE/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401869938",
+      "cbs_event": "NCAAF_20261121_ARKST@LATECH",
+      "away_points": 3,
+      "home_points": 48,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_ARKST@LATECH/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401864544",
+      "cbs_event": "NCAAF_20261121_UNLV@SJST",
+      "away_points": 24,
+      "home_points": 22,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_UNLV@SJST/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858302",
+      "cbs_event": "NCAAF_20261121_VATECH@MIAMI",
+      "away_points": 20,
+      "home_points": 28,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_VATECH@MIAMI/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401860918",
+      "cbs_event": "NCAAF_20261121_COLOST@FRESNO",
+      "away_points": 42,
+      "home_points": 49,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_COLOST@FRESNO/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858306",
+      "cbs_event": "NCAAF_20261121_PITT@LVILLE",
+      "away_points": 10,
+      "home_points": 42,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_PITT@LVILLE/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858307",
+      "cbs_event": "NCAAF_20261121_SMU@ND",
+      "away_points": 3,
+      "home_points": 24,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_SMU@ND/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858308",
+      "cbs_event": "NCAAF_20261121_STNFRD@CAL",
+      "away_points": 44,
+      "home_points": 28,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_STNFRD@CAL/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856753",
+      "cbs_event": "NCAAF_20261121_UGA@SC",
+      "away_points": 34,
+      "home_points": 6,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_UGA@SC/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856751",
+      "cbs_event": "NCAAF_20261121_UK@MIZZOU",
+      "away_points": 14,
+      "home_points": 28,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_UK@MIZZOU/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401862836",
+      "cbs_event": "NCAAF_20261121_TXSA@UAB",
+      "away_points": 19,
+      "home_points": 17,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_TXSA@UAB/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856872",
+      "cbs_event": "NCAAF_20261121_UTAH@TCU",
+      "away_points": 38,
+      "home_points": 17,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_UTAH@TCU/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401860925",
+      "cbs_event": "NCAAF_20261121_SDGST@BOISE",
+      "away_points": 22,
+      "home_points": 20,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_SDGST@BOISE/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856870",
+      "cbs_event": "NCAAF_20261121_OKLAST@ARIZST",
+      "away_points": 30,
+      "home_points": 27,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_OKLAST@ARIZST/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401864541",
+      "cbs_event": "NCAAF_20261121_HAWAII@NEVADA",
+      "away_points": 8,
+      "home_points": 16,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_HAWAII@NEVADA/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401860919",
+      "cbs_event": "NCAAF_20261121_UTAHST@OREGST",
+      "away_points": 24,
+      "home_points": 31,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261121_UTAHST@OREGST/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401856869",
+      "cbs_event": "NCAAF_20261120_IOWAST@UCF",
+      "away_points": 17,
+      "home_points": 48,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261120_IOWAST@UCF/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401866468",
+      "cbs_event": "NCAAF_20261120_BGREEN@TOLEDO",
+      "away_points": 0,
+      "home_points": 19,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261120_BGREEN@TOLEDO/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858303",
+      "cbs_event": "NCAAF_20261120_CLEM@DUKE",
+      "away_points": 20,
+      "home_points": 10,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261120_CLEM@DUKE/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401858529",
+      "cbs_event": "NCAAF_20261120_OREGON@MSU",
+      "away_points": 45,
+      "home_points": 7,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261120_OREGON@MSU/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401864545",
+      "cbs_event": "NCAAF_20261120_UTEP@AF",
+      "away_points": 3,
+      "home_points": 52,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261120_UTEP@AF/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401864542",
+      "cbs_event": "NCAAF_20261120_NMEX@WYO",
+      "away_points": 24,
+      "home_points": 17,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261120_NMEX@WYO/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401862830",
+      "cbs_event": "NCAAF_20261119_RICE@TEMPLE",
+      "away_points": 31,
+      "home_points": 27,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261119_RICE@TEMPLE/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401866467",
+      "cbs_event": "NCAAF_20261118_AKRON@UMASS",
+      "away_points": 34,
+      "home_points": 33,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261118_AKRON@UMASS/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401866469",
+      "cbs_event": "NCAAF_20261118_CMICH@BUFF",
+      "away_points": 21,
+      "home_points": 40,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261118_CMICH@BUFF/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401866465",
+      "cbs_event": "NCAAF_20261117_EMICH@WMICH",
+      "away_points": 27,
+      "home_points": 34,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261117_EMICH@WMICH/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401866464",
+      "cbs_event": "NCAAF_20261117_BALLST@OHIO",
+      "away_points": 28,
+      "home_points": 35,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261117_BALLST@OHIO/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
+    },
+    {
+      "game_id": "401866466",
+      "cbs_event": "NCAAF_20261117_MIAOH@KENTST",
+      "away_points": 20,
+      "home_points": 3,
+      "source_url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20261117_MIAOH@KENTST/",
+      "source_class": "CBS_WEEK12_FINAL_SCOREBOARD"
     }
   ]
 }
