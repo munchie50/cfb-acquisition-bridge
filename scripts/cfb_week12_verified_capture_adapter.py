@@ -27,8 +27,11 @@ def verify(verified_dir, retained_path, as_of):
     if not manifest.get("producer_head") or not manifest.get("run_id"):
         raise ValueError("collection provenance incomplete")
     capture = (verified_dir / "capture.md").read_bytes()
-    if hashlib.sha256(capture).hexdigest() != manifest["files"].get("capture.md"):
-        raise ValueError("collection capture digest mismatch")
+    capture_record = manifest.get("files", {}).get("capture.md")
+    if (not isinstance(capture_record, dict)
+            or capture_record.get("bytes") != len(capture)
+            or capture_record.get("sha256") != hashlib.sha256(capture).hexdigest()):
+        raise ValueError("collection capture digest or length mismatch")
     path = (ROOT / retained_path).resolve()
     if path.parent != OPERATIONS or path.suffix != ".md":
         raise ValueError("capture must be a retained operational Markdown file")
