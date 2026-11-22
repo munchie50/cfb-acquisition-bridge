@@ -141,3 +141,18 @@ Executed fresh connector read and actual JSON parse of `evidence/run_receipts/CF
 This directly confirms `RETAINED_PACKET_PAIR_PARSE_PASS` but `NOV20_PACKET_NOT_SELECTED_IN_CANONICAL_MARKET`. The prior retained-pair and direct-blob receipts are supported by fresh independent parsing, not simply repeated. A valid pair alone cannot satisfy source freshness, deadline, named-book six-market qualification, immutable-review selector, or governed canonical acceptance. **Do not append historical packet blindly:** the current canonical market has later post-parent history and the proposed market full-blob hash has not been independently recovered; any change requires full parent/delta reconstruction and original governed gates.
 
 Earliest outstanding natural worker boundary remains current-main same-run bundle transport. Separate data-governance boundary remains unselected Nov20 historical packet and current prospective offer/deadline evidence. No Git ledger/index/Champion/task/wager mutation; this checkpoint is audit-only.
+
+
+## Nov22 continuation — W12-07 outcome and wager candidate reconciliation (read-only authority update)
+
+Supersedes only the opening W12-07 wording that outcomes and ticket reconciliation were 'not yet independently executed'. Current retained QA candidates:
+- `evidence/audits/CFB_WEEK12_CBS_FINAL_CANDIDATE_20261122_RESEARCH_ONLY.json`: 70 effective finals, 69 CBS and one NCAA official override for Old Dominion @ UConn (21–29); the raw CBS 20-point conflict is retained as provenance, not silently erased.
+- `evidence/audits/CFB_WEEK12_FIRST_FROZEN_SCORE_CANDIDATE_20261122_QA_ONLY.json`: 70 games, 56 original modeled predictions, 14 original exclusions; 43/56 winner direction, margin MAE 13.736111246752518, total MAE 11.611958254609505, Brier 0.19718225044930882.
+- `evidence/audits/CFB_WEEK12_NOV21_13_TICKET_GRADE_CANDIDATE_20261122_QA_ONLY.json`: 13 real-money tickets, $75 staked; conditional 5 wins / 8 losses, $57.15 gross payout, -$17.85 net. Book settlement is NOT verified; no cash-ledger update authorized.
+- `evidence/run_receipts/CFB_WEEK12_NOV22_EFFECTIVE_FINAL_SOURCE_CONTRACT_QA.md` and `evidence/run_receipts/CFB_WEEK12_NOV22_ORIGINAL_ARCHIVE_PROVENANCE_COMPARISON.md` document the corrected source policy and original archive comparison.
+
+W12-07 disposition: **CANDIDATE_BUILT_AND_ARITHMETIC_QA_VERIFIED / CANONICAL_ACCEPTANCE_OPEN / BOOK_SETTLEMENT_OPEN**. Original prediction archive identity is established, but profile activation and genuine pre-event freeze proof are not inferred from kickoff timestamps; independently corroborated game finals still require governed admission. Do not append this QA candidate to the canonical scorecard or settle tickets without these gates.
+
+The recently added `scripts/cfb_week12_verified_capture_adapter.py` and isolated GitHub Actions QA are a separate **future automation integration** workstream; they are NOT prerequisites for historical manual catch-up, not executed/accepted production repair, and must not displace W12-07 acceptance work.
+
+**Next bounded manual-catch-up action:** inspect the exact original profile-activation evidence and accepted Week11/Week5 admission contracts, then reconcile remaining per-game official finals and ticket book settlements. Preserve expired pregame decisions and the current accepted index; no fifth task or production mutation.
