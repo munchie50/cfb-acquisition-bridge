@@ -1187,5 +1187,23 @@
       "cbs_header_away_points": 20,
       "disposition": "NCAA_PRIMARY_FINAL_SUPERSEDES_CBS_HEADER"
     }
-  ]
+  ],
+  "effective_final_source_policy": {
+    "schema": "CFB_WEEK12_EFFECTIVE_FINAL_SOURCE_V1",
+    "default_source": "CBS_WEEK12_FINAL_SCOREBOARD",
+    "source_selection": "Use rows for effective result; cbs_final_provenance is raw observation and may disagree with rows when explicit official_source_overrides contains game_id",
+    "overrides": [
+      {
+        "game_id": "401861968",
+        "source_class": "NCAA_OFFICIAL_GAME_SPECIFIC_FINAL",
+        "source_url": "https://www.ncaa.com/game/6604217",
+        "away_points": 21,
+        "home_points": 29,
+        "raw_cbs_away_points": 20,
+        "raw_cbs_home_points": 29
+      }
+    ],
+    "validation": "For every game, effective rows must equal raw CBS provenance unless one unique explicit official override exists; when overridden, effective rows must equal override and raw CBS values must remain unchanged",
+    "canonical_acceptance": "PENDING"
+  }
 }
