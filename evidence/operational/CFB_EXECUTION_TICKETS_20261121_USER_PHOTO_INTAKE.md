@@ -36,3 +36,10 @@ Five unique ticket suffixes not present in the first batch. User-supplied execut
 Second batch: five wagers, $25.00 stakes, $23.00 potential profit, $48.00 potential gross payout. Combined November 21 intake: 13 unique wagers, $75.00 staked, $68.30 potential profit, $143.30 potential gross payout if all win. The separate $2.90 payout voucher remains excluded from stakes and settlement.
 
 All five outcomes PENDING / NOT VERIFIED. Source photographs remain in the conversation, not committed as binaries. No canonical betting/money ledger import or production changes; perform ticket-ID deduplication and independently verify outcomes before posting realized P&L.
+
+
+## Nov22 current-state supersession — intake instructions are historical, not outstanding import work
+
+The preceding 'await canonical ledger import' and 'no canonical betting ledger import' language describes the original photo-intake checkpoint, **not current work due**. All 13 unique tickets are already present in `evidence/operational/CFB_EXECUTION_LEDGER.md` as `CFB_NOV21-01` through `CFB_NOV21-13`; **do not import again**. Combined 14 user photos comprise 13 wagers and one separate $2.90 voucher. The intake rows, printed terms and user-photo observations above remain unchanged.
+
+Conditional score grades and exact printed payout arithmetic are retained at `evidence/audits/CFB_WEEK12_NOV21_13_TICKET_GRADE_CANDIDATE_20261122_QA_ONLY.json` and `evidence/audits/CFB_NOV21_TICKET_PRINTED_TERMS_CONDITIONAL_PAYOUT_QA_20261122.json`: 5 conditional wins, 8 conditional losses, $75 stake, $57.15 conditional gross return, -$17.85 conditional net. **No sportsbook settlements verified; no cash-ledger posting.** Three near-event actual kickoff observations are retained at `evidence/audits/CFB_NOV21_THREE_TICKET_ACTUAL_KICKOFF_QA_20261122.json`; ticket clock timezone/pregame classification still unverified. Original photo intake remains execution evidence only, never model input.
