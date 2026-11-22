@@ -60,6 +60,20 @@ jobs:
           for gid,abbrev in expected.items():
             assert found[gid]['cbs_abbrev']==abbrev,(gid,found.get(gid))
             assert len(found[gid]['teams'])==2
+          historical={r['game_id']:r for r in rows}
+          conflicts={
+            '50052031':('401860911','Boise State','Colorado State','2026-11-07 23:00:00+00:00','same-direction-old-clock'),
+            '50052032':('401860909','Washington State','San Diego State','2026-10-31 23:00:00+00:00','reversed-old-clock'),
+            '50052033':('401860906','Utah State','Texas State','2026-10-24 23:30:00+00:00','reversed-old-clock'),
+            '50052034':('401860924','Oregon State','Fresno State','2026-10-31 04:00:00+00:00','same-direction-old-clock')
+          }
+          for cbs_id,(old_id,old_away,old_home,old_clock,classification) in conflicts.items():
+            old=historical[old_id]
+            assert (old['away_team'],old['home_team'],old['start_date'])==(old_away,old_home,old_clock),(cbs_id,old)
+            assert cbs_id not in historical,'CBS Week13 identity unexpectedly collides with original ledger'
+            assert old_id!=cbs_id
+            assert classification in ('same-direction-old-clock','reversed-old-clock')
+          print('PASS: four historical original IDs, exact clocks, and home/away directions independently confirmed; no cross-week ID substitution')
           print('PASS: 69 retained CBS directed game IDs and four exact exception identifiers verified against original source artifacts')
           print('HOLD: archive kickoff/date reconciliation remains QA-only, no profile activation')
           PY
