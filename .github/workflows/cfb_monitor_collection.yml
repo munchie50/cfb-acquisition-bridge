@@ -56,7 +56,8 @@ jobs:
           profile="$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["profile"])' "$RUNNER_TEMP/proof/source.json")"
           echo "profile=$profile" >> "$GITHUB_OUTPUT"
           if [ "$profile" = WEEK12 ]; then
-            echo "Week 12 source verified. Compiler preflight awaits a qualified Week 12 compiler." >> "$GITHUB_STEP_SUMMARY"
+            echo "::warning::WEEK12_COMPILER_NOT_EXECUTED: collection/source verification only; Week 12 compiler and publication acceptance NOT established."
+            echo "WEEK12_COMPILER_NOT_EXECUTED — source verified only. No Week 12 compiler preflight, canonical Hot Sheet publication, or end-to-end acceptance was performed by this workflow." >> "$GITHUB_STEP_SUMMARY"
           fi
       - name: Compile and audit a read-only preflight draft
         id: preflight_compile
