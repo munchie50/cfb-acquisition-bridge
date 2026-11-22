@@ -1,0 +1,86 @@
+{
+  "schema": "CFB_WEEK12_FIVE_NCAA_GAME_SPECIFIC_FRESH_FINALS_QA_V1",
+  "status": "SOURCE_CORROBORATED_QA_ONLY_NOT_CANONICAL",
+  "purpose": "Advance five existing date-only NCAA observations to live game-specific official page evidence, not scorecard admission",
+  "source_scoreboard": "https://www.ncaa.com/scoreboard/football/fbs/2026/12",
+  "retrieval_method": "Firecrawl maxAge=0 direct official NCAA pages; HTTP 200; source UTC retrieval timestamp not supplied",
+  "rows": [
+    {
+      "game_id": "401866465",
+      "ncaa_game_id": "6603834",
+      "away": "Eastern Michigan",
+      "home": "Western Michigan",
+      "away_points": 27,
+      "home_points": 34,
+      "source_url": "https://www.ncaa.com/game/6603834",
+      "http_status": 200,
+      "source_observed_status": "FINAL",
+      "scrape_id": "01a204b3-7368-76cc-a32a-549ac3b2e434",
+      "source_retrieval_utc": "NOT_PROVIDED_BY_SCRAPE",
+      "canonical_admission": "HOLD"
+    },
+    {
+      "game_id": "401866466",
+      "ncaa_game_id": "6640719",
+      "away": "Miami (OH)",
+      "home": "Kent State",
+      "away_points": 20,
+      "home_points": 3,
+      "source_url": "https://www.ncaa.com/game/6640719",
+      "http_status": 200,
+      "source_observed_status": "FINAL",
+      "scrape_id": "01a204b3-739e-732f-986c-bf78a237e441",
+      "source_retrieval_utc": "NOT_PROVIDED_BY_SCRAPE",
+      "canonical_admission": "HOLD"
+    },
+    {
+      "game_id": "401866464",
+      "ncaa_game_id": "6640716",
+      "away": "Ball State",
+      "home": "Ohio",
+      "away_points": 28,
+      "home_points": 35,
+      "source_url": "https://www.ncaa.com/game/6640716",
+      "http_status": 200,
+      "source_observed_status": "FINAL",
+      "scrape_id": "01a204b3-7368-712a-8013-8a10126197c1",
+      "source_retrieval_utc": "NOT_PROVIDED_BY_SCRAPE",
+      "canonical_admission": "HOLD"
+    },
+    {
+      "game_id": "401866467",
+      "ncaa_game_id": "6603876",
+      "away": "Akron",
+      "home": "Massachusetts",
+      "away_points": 34,
+      "home_points": 33,
+      "source_url": "https://www.ncaa.com/game/6603876",
+      "http_status": 200,
+      "source_observed_status": "FINAL",
+      "scrape_id": "01a204b3-736b-732f-b734-c4c90825b45d",
+      "source_retrieval_utc": "NOT_PROVIDED_BY_SCRAPE",
+      "canonical_admission": "HOLD"
+    },
+    {
+      "game_id": "401866469",
+      "ncaa_game_id": "6603899",
+      "away": "Central Michigan",
+      "home": "Buffalo",
+      "away_points": 21,
+      "home_points": 40,
+      "source_url": "https://www.ncaa.com/game/6603899",
+      "http_status": 200,
+      "source_observed_status": "FINAL",
+      "scrape_id": "01a204b3-73c2-7669-8454-68131108d28d",
+      "source_retrieval_utc": "NOT_PROVIDED_BY_SCRAPE",
+      "canonical_admission": "HOLD"
+    }
+  ],
+  "summary": {
+    "game_specific_official_verified": 5,
+    "score_disagreements": 0,
+    "canonical_admitted": 0,
+    "missing_precise_source_utc": 5,
+    "original_profile_activation": "PENDING"
+  }
+}
