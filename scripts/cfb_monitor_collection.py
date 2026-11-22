@@ -60,7 +60,7 @@ def active_profile(observed):
     for profile in PROFILES:
         if profile.start <= observed < profile.end:
             return profile
-    raise ValueError("no accepted collection profile at this clock")
+    raise ValueError("NO_ACCEPTED_COLLECTION_PROFILE: no accepted collection profile at this clock; do not extend a prior week or infer a new frozen lineage")
 
 
 def git(*args):
