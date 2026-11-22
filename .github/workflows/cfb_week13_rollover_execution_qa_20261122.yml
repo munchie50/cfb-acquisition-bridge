@@ -1,0 +1,64 @@
+name: CFB Week13 rollover executable fail-closed QA
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_week13_rollover_execution_qa_20261122.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  rollover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run existing Week13 accepted-profile guard
+        run: python qa/cfb_week13_rollover_profile_guard_qa.py
+      - name: Execute actual collector active-profile function at both sides of rollover
+        env:
+          PYTHONPATH: scripts
+        run: |
+          python - <<'PY'
+          import sys,types
+          from datetime import datetime
+          # The collector's profile selector requires no external fetch. Import the
+          # exact function and profile declarations, without running network code.
+          import ast
+          from pathlib import Path
+          source=Path('scripts/cfb_monitor_collection.py').read_text()
+          tree=ast.parse(source)
+          wanted=[n for n in tree.body if isinstance(n,(ast.ClassDef,ast.Assign,ast.FunctionDef)) and
+                  ((isinstance(n,ast.ClassDef) and n.name=='CollectionProfile') or
+                   (isinstance(n,ast.FunctionDef) and n.name=='active_profile') or
+                   (isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='PROFILES' for t in n.targets)))]
+          assert len(wanted)==3
+          from dataclasses import dataclass
+          class Clock:
+            @staticmethod
+            def clock(s):return datetime.fromisoformat(s)
+          class Week:
+            gate=Clock()
+            WEEK11_URL='existing-week11-url'
+            WEEK11_LINEAGE_SHA='existing-week11-sha'
+          week=Week()
+          WEEK12_URL='existing-week12-url'
+          WEEK12_LINEAGE_SHA='existing-week12-sha'
+          ROOT=Path('.')
+          scope={'dataclass':dataclass,'datetime':datetime,'Path':Path,'ROOT':ROOT,
+                 'week':week,'WEEK12_URL':WEEK12_URL,'WEEK12_LINEAGE_SHA':WEEK12_LINEAGE_SHA}
+          exec(compile(ast.Module(body=wanted,type_ignores=[]),'cfb_monitor_collection.py','exec'),scope)
+          active=scope['active_profile']
+          assert active(datetime.fromisoformat('2026-11-22T23:59:59-06:00')).name=='WEEK12'
+          for clock in ['2026-11-23T00:00:00-06:00','2026-11-23T07:00:00-06:00','2026-11-24T00:00:00-06:00']:
+            try:active(datetime.fromisoformat(clock))
+            except ValueError as exc:
+              assert 'NO_ACCEPTED_COLLECTION_PROFILE' in str(exc),str(exc)
+            else:raise AssertionError('unapproved Week13 profile was silently accepted')
+          print('PASS: existing collector selector rejects all tested post-cutoff Week13 clocks')
+          PY
