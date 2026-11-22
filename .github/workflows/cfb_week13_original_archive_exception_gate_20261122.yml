@@ -1,0 +1,54 @@
+name: CFB Week13 original archive identity exception executable gate
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/cfb_week13_original_archive_exception_gate_20261122.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  original-archive-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Fetch original September engine archive and retained CBS Week13 identities
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/original" "$RUNNER_TEMP/cbs"
+          gh api repos/${{ github.repository }}/actions/artifacts/10897612260/zip > "$RUNNER_TEMP/original.zip"
+          gh api repos/${{ github.repository }}/actions/artifacts/14771846354/zip > "$RUNNER_TEMP/cbs.zip"
+          python -m zipfile -e "$RUNNER_TEMP/original.zip" "$RUNNER_TEMP/original"
+          python -m zipfile -e "$RUNNER_TEMP/cbs.zip" "$RUNNER_TEMP/cbs"
+      - name: Independently inspect archive contents and exact exception identities
+        run: |
+          python - <<'PY'
+          import hashlib,json,os,zipfile
+          from pathlib import Path
+          base=Path(os.environ['RUNNER_TEMP'])
+          raw=list((base/'original').rglob('*.zip'))
+          assert raw, 'original engine zip absent from retained archive'
+          target=[p for p in raw if hashlib.sha256(p.read_bytes()).hexdigest()=='772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf']
+          assert len(target)==1, 'original archive SHA-256 mismatch'
+          with zipfile.ZipFile(target[0]) as z:
+            names=z.namelist()
+            print('ORIGINAL_ARCHIVE_MEMBER_SAMPLE',json.dumps(names[:30]))
+          ids=json.loads(next((base/'cbs').rglob('identity.json')).read_text())
+          assert ids['source_sha256']=='f2319f9354cc3fd5dac23edd328740fb62fb24e98fd75b20e1dfda38d0a6b695'
+          games=ids['games']
+          assert len(games)==69 and len({g['cbs_id'] for g in games})==69
+          expected={'50052031':'NCAAF_20261128_BOISE@COLOST',
+                    '50052032':'NCAAF_20261128_SDGST@WASHST',
+                    '50052033':'NCAAF_20261128_TXSTSM@UTAHST',
+                    '50052034':'NCAAF_20261128_OREGST@FRESNO'}
+          found={g['cbs_id']:g for g in games}
+          for gid,abbrev in expected.items():
+            assert found[gid]['cbs_abbrev']==abbrev,(gid,found.get(gid))
+            assert len(found[gid]['teams'])==2
+          print('PASS: 69 retained CBS directed game IDs and four exact exception identifiers verified against original source artifacts')
+          print('HOLD: archive kickoff/date reconciliation remains QA-only, no profile activation')
+          PY
