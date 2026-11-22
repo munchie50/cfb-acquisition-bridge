@@ -30,6 +30,7 @@ jobs:
           import hashlib,json,os,zipfile
           from pathlib import Path
           base=Path(os.environ['RUNNER_TEMP'])
+          assert hashlib.sha256((base/'original.zip').read_bytes()).hexdigest()=='772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf', 'original September artifact outer ZIP hash mismatch'
           import csv,io
           original=base/'original'
           manifest_files=list(original.rglob('manifest_v1_206.json'))
