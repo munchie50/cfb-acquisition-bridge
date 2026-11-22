@@ -448,3 +448,18 @@ Fresh authenticated GitHub `main` file reads established current `evidence/opera
 ### Nov22 Decision/WAIT large-file retrieval workaround — EXECUTED
 
 Instead of treating empty GitHub contents-API response as missing evidence, fetched the pinned Decision/WAIT blob directly by SHA `6862be6a1bd88a3290b1e90a49c33a7a87e92559` through authenticated Git blob retrieval. **SUCCESS:** returned nonempty 3,605,685-character text with 52,216 lines, expected `# CFB Decision and WAIT Ledger` header, append-only prospective decision semantics, and retained final JSON review provenance. This resolves the **read-access blocker** for this ledger without any production mutation. This is a bounded semantic read of pinned blob content; it does NOT independently recompute its Git SHA-1, establish full five-blob integrity, or certify Health PASS. The original Git contents-file endpoint still returned zero body, so prefer SHA-based blob fetch for large ledger inspection. W12-05/W12-08 natural-run evidence remains outstanding.
+
+
+## Nov22 manual catch-up — independent canonical five-blob byte-hash recomputation (EXECUTED PASS)
+
+Fetched the exact current authenticated `main` contents of five mandatory canonical files. For large Market Monitor State and Decision/WAIT Ledger, normal GitHub contents API returned an empty body, so used authenticated Git blob-by-SHA retrieval. Independently UTF-8 encoded the full returned content and computed SHA-1 over Git's `blob <byte_length>\\0` header plus bytes (actual NUL byte in the hash preimage). All five **independently recomputed** Git blob hashes exactly matched current GitHub content SHA identities:
+
+| File | Recomputed bytes | SHA-1 | Result |
+|---|---:|---|---|
+| `evidence/operational/CFB_MARKET_MONITOR_STATE.md` | 6815732 | `21e2172c709dcf482c4750a7490b82aacac05949` | PASS |
+| `evidence/operational/CFB_DECISION_WAIT_LEDGER.md` | 3605925 | `6862be6a1bd88a3290b1e90a49c33a7a87e92559` | PASS |
+| `evidence/operational/CFB_EXECUTION_LEDGER.md` | 56801 | `4ffc6866b629b2350dc782288426f4ba0a32988d` | PASS |
+| `evidence/operational/CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md` | 90544 | `8e158d780b29f529cc029daf9383c19a68819157` | PASS |
+| `evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_295.md` | 308845 | `ebc25a8385ba82b0988cdbe39507d3a793c71e1e` | PASS |
+
+**Disposition:** prior full-five-blob BYTE_HASH_UNVERIFIED blocker is resolved for these exact current blobs. Do not conflate byte-integrity PASS with full cross-file semantic certification, historical slot coverage, certified analytics export, or a successful natural Health/Monitor run. No production files modified besides this register.
