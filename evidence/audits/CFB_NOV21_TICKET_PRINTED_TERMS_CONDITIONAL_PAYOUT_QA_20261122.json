@@ -4,11 +4,11 @@
   "sources": [
     {
       "path": "evidence/audits/CFB_WEEK12_NOV21_13_TICKET_GRADE_CANDIDATE_20261122_QA_ONLY.json",
-      "blob": "04d09b5ea06aff4ef3936c6d269ebbc560c0f3a6"
+      "blob": "beb56ae514441ff256c8831c9610830d88010f1e"
     },
     {
       "path": "evidence/operational/CFB_EXECUTION_TICKETS_20261121_USER_PHOTO_INTAKE.md",
-      "blob": "eb6540638a2fe793a942c23c5121a29b9289f2ee"
+      "blob": "946ade85f8ffb5f78d7937bda024a3c304ce96d6"
     }
   ],
   "method": "Exact 13 printed ticket suffixes, stake, odds, max profit and gross payout joined to 13 conditional score grades. WIN: gross=printed max payout and net=printed max profit; LOSS: gross=0 net=-stake. No odds-derived rounding substitution, no book payment inference.",
@@ -179,5 +179,30 @@
       "conditional_net_usd": -5,
       "book_settlement": "UNVERIFIED"
     }
-  ]
+  ],
+  "source_binding_reconciliation": {
+    "prior_sources": [
+      {
+        "path": "evidence/audits/CFB_WEEK12_NOV21_13_TICKET_GRADE_CANDIDATE_20261122_QA_ONLY.json",
+        "blob": "04d09b5ea06aff4ef3936c6d269ebbc560c0f3a6"
+      },
+      {
+        "path": "evidence/operational/CFB_EXECUTION_TICKETS_20261121_USER_PHOTO_INTAKE.md",
+        "blob": "eb6540638a2fe793a942c23c5121a29b9289f2ee"
+      }
+    ],
+    "current_sources": [
+      {
+        "path": "evidence/audits/CFB_WEEK12_NOV21_13_TICKET_GRADE_CANDIDATE_20261122_QA_ONLY.json",
+        "blob": "beb56ae514441ff256c8831c9610830d88010f1e"
+      },
+      {
+        "path": "evidence/operational/CFB_EXECUTION_TICKETS_20261121_USER_PHOTO_INTAKE.md",
+        "blob": "946ade85f8ffb5f78d7937bda024a3c304ce96d6"
+      }
+    ],
+    "verified_ticket_rows": 13,
+    "changed_outcomes_or_financial_values": false,
+    "reason": "Upstream grade QA ledger binding and original intake current-state supersession moved Git blobs; payout calculations remain unchanged."
+  }
 }
