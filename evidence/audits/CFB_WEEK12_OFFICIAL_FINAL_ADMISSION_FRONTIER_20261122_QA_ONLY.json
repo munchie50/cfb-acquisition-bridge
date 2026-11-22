@@ -1,7 +1,7 @@
 {
   "schema": "CFB_WEEK12_OFFICIAL_FINAL_ADMISSION_FRONTIER_V1",
   "status": "QA_ONLY_NOT_CANONICAL",
-  "purpose": "70-row game-level source/admission worklist; not evidence of newly retrieved finals",
+  "purpose": "70-row game-level source/admission worklist; not evidence of newly retrieved finals Six separately observed NCAA date-only scoreboard matches are annotated as evidence, NOT upgraded to admitted official finals; original admission fields unchanged.",
   "sources": [
     {
       "path": "evidence/audits/CFB_WEEK12_CBS_FINAL_CANDIDATE_20261122_RESEARCH_ONLY.json",
@@ -24,7 +24,10 @@
     "independent_official_not_evidenced": 69,
     "source_retrieval_timestamps_missing": 70,
     "profile_activation_pending": 70,
-    "canonical_admitted": 0
+    "canonical_admitted": 0,
+    "ncaa_date_only_scoreboard_matches": 6,
+    "ncaa_date_only_matches_without_precise_timestamp": 6,
+    "independent_official_admission_qualified": 1
   },
   "rows": [
     {
@@ -40,7 +43,15 @@
       "independent_official_final": "NOT_YET_EVIDENCED",
       "source_retrieval_timestamp": "NOT_IN_SOURCE_CANDIDATE",
       "first_frozen_profile_activation": "PENDING",
-      "canonical_admission": "HOLD"
+      "canonical_admission": "HOLD",
+      "ncaa_scoreboard_observation": {
+        "status": "DATE_ONLY_MATCH_NOT_CANONICAL_ADMISSION",
+        "source_url": "https://www.ncaa.com/scoreboard/football/fbs/2026/12",
+        "observed_date_utc": "2026-11-22",
+        "precise_retrieval_timestamp": "NOT_RETAINED",
+        "game_specific_ncaa_id": "NOT_YET_JOINED",
+        "source_evidence_blob": "185d758cfc28036bbeedab764aa34aad116ccd24"
+      }
     },
     {
       "game_id": "401866466",
@@ -55,7 +66,15 @@
       "independent_official_final": "NOT_YET_EVIDENCED",
       "source_retrieval_timestamp": "NOT_IN_SOURCE_CANDIDATE",
       "first_frozen_profile_activation": "PENDING",
-      "canonical_admission": "HOLD"
+      "canonical_admission": "HOLD",
+      "ncaa_scoreboard_observation": {
+        "status": "DATE_ONLY_MATCH_NOT_CANONICAL_ADMISSION",
+        "source_url": "https://www.ncaa.com/scoreboard/football/fbs/2026/12",
+        "observed_date_utc": "2026-11-22",
+        "precise_retrieval_timestamp": "NOT_RETAINED",
+        "game_specific_ncaa_id": "NOT_YET_JOINED",
+        "source_evidence_blob": "185d758cfc28036bbeedab764aa34aad116ccd24"
+      }
     },
     {
       "game_id": "401866464",
@@ -70,7 +89,15 @@
       "independent_official_final": "NOT_YET_EVIDENCED",
       "source_retrieval_timestamp": "NOT_IN_SOURCE_CANDIDATE",
       "first_frozen_profile_activation": "PENDING",
-      "canonical_admission": "HOLD"
+      "canonical_admission": "HOLD",
+      "ncaa_scoreboard_observation": {
+        "status": "DATE_ONLY_MATCH_NOT_CANONICAL_ADMISSION",
+        "source_url": "https://www.ncaa.com/scoreboard/football/fbs/2026/12",
+        "observed_date_utc": "2026-11-22",
+        "precise_retrieval_timestamp": "NOT_RETAINED",
+        "game_specific_ncaa_id": "NOT_YET_JOINED",
+        "source_evidence_blob": "185d758cfc28036bbeedab764aa34aad116ccd24"
+      }
     },
     {
       "game_id": "401866467",
@@ -85,7 +112,15 @@
       "independent_official_final": "NOT_YET_EVIDENCED",
       "source_retrieval_timestamp": "NOT_IN_SOURCE_CANDIDATE",
       "first_frozen_profile_activation": "PENDING",
-      "canonical_admission": "HOLD"
+      "canonical_admission": "HOLD",
+      "ncaa_scoreboard_observation": {
+        "status": "DATE_ONLY_MATCH_NOT_CANONICAL_ADMISSION",
+        "source_url": "https://www.ncaa.com/scoreboard/football/fbs/2026/12",
+        "observed_date_utc": "2026-11-22",
+        "precise_retrieval_timestamp": "NOT_RETAINED",
+        "game_specific_ncaa_id": "NOT_YET_JOINED",
+        "source_evidence_blob": "185d758cfc28036bbeedab764aa34aad116ccd24"
+      }
     },
     {
       "game_id": "401866469",
@@ -100,7 +135,15 @@
       "independent_official_final": "NOT_YET_EVIDENCED",
       "source_retrieval_timestamp": "NOT_IN_SOURCE_CANDIDATE",
       "first_frozen_profile_activation": "PENDING",
-      "canonical_admission": "HOLD"
+      "canonical_admission": "HOLD",
+      "ncaa_scoreboard_observation": {
+        "status": "DATE_ONLY_MATCH_NOT_CANONICAL_ADMISSION",
+        "source_url": "https://www.ncaa.com/scoreboard/football/fbs/2026/12",
+        "observed_date_utc": "2026-11-22",
+        "precise_retrieval_timestamp": "NOT_RETAINED",
+        "game_specific_ncaa_id": "NOT_YET_JOINED",
+        "source_evidence_blob": "185d758cfc28036bbeedab764aa34aad116ccd24"
+      }
     },
     {
       "game_id": "401862830",
@@ -190,7 +233,15 @@
       "independent_official_final": "NOT_YET_EVIDENCED",
       "source_retrieval_timestamp": "NOT_IN_SOURCE_CANDIDATE",
       "first_frozen_profile_activation": "PENDING",
-      "canonical_admission": "HOLD"
+      "canonical_admission": "HOLD",
+      "ncaa_scoreboard_observation": {
+        "status": "DATE_ONLY_MATCH_NOT_CANONICAL_ADMISSION",
+        "source_url": "https://www.ncaa.com/scoreboard/football/fbs/2026/12",
+        "observed_date_utc": "2026-11-22",
+        "precise_retrieval_timestamp": "NOT_RETAINED",
+        "game_specific_ncaa_id": "NOT_YET_JOINED",
+        "source_evidence_blob": "185d758cfc28036bbeedab764aa34aad116ccd24"
+      }
     },
     {
       "game_id": "401864542",
