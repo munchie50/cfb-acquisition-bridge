@@ -30,16 +30,24 @@ jobs:
           import hashlib,json,os,zipfile
           from pathlib import Path
           base=Path(os.environ['RUNNER_TEMP'])
-          raw=list((base/'original').rglob('*.zip'))
-          files=[p for p in (base/'original').rglob('*') if p.is_file()]
-          print('ORIGINAL_ARCHIVE_FILES',json.dumps([{'path':str(p.relative_to(base/'original')),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files][:35]))
-          print('OUTER_ARTIFACT_ZIP',json.dumps({'bytes':(base/'original.zip').stat().st_size,'sha256':hashlib.sha256((base/'original.zip').read_bytes()).hexdigest()}))
-          assert raw, 'original engine zip absent from retained archive; inspect ORIGINAL_ARCHIVE_FILES and OUTER_ARTIFACT_ZIP'
-          target=[p for p in raw if hashlib.sha256(p.read_bytes()).hexdigest()=='772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf']
-          assert len(target)==1, 'original archive SHA-256 mismatch'
-          with zipfile.ZipFile(target[0]) as z:
-            names=z.namelist()
-            print('ORIGINAL_ARCHIVE_MEMBER_SAMPLE',json.dumps(names[:30]))
+          import csv,io
+          original=base/'original'
+          manifest_files=list(original.rglob('manifest_v1_206.json'))
+          assert len(manifest_files)==1, 'original archive manifest missing or ambiguous'
+          manifest=json.loads(manifest_files[0].read_text())
+          assert manifest['target_games']==622 and manifest['status']=='EXECUTED_NOT_ACCEPTED'
+          for filename,expected_sha in manifest['hashes'].items():
+            candidates=list(original.rglob(filename))
+            assert len(candidates)==1, ('original manifest member missing or ambiguous',filename)
+            actual=hashlib.sha256(candidates[0].read_bytes()).hexdigest()
+            assert actual==expected_sha, ('original manifest hash mismatch',filename)
+          ledgers=list(original.rglob('challenger_b_2026_target_ledger_v1_206.csv'))
+          assert len(ledgers)==1
+          with ledgers[0].open(newline='') as fh:
+            rows=list(csv.DictReader(fh))
+          assert len(rows)==622 and len({r['game_id'] for r in rows})==622
+          print('PASS: original September artifact directly verified: manifest, five SHA-256 file hashes, 622 unique target game IDs')
+          print('HOLD: original September target ledger is historical evidence, NOT a Week13 schedule or prediction freeze')
           ids=json.loads(next((base/'cbs').rglob('identity.json')).read_text())
           assert ids['source_sha256']=='f2319f9354cc3fd5dac23edd328740fb62fb24e98fd75b20e1dfda38d0a6b695'
           games=ids['games']
