@@ -1,0 +1,43 @@
+name: CFB persisted recovery index original preflight
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cfb_recovery_index_persisted_preflight_20261122.yml'
+      - 'evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_295.md'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  original-consumer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Execute original preflight on persisted canonical index
+        run: |
+          set -euo pipefail
+          python scripts/cfb_recovery_consumer_preflight.py --index evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_295.md --repository-root .
+      - name: Assert historical checkpoints and exact current ledger bindings
+        run: |
+          python - <<'PY'
+          import re,json,subprocess
+          from pathlib import Path
+          text=Path('evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_295.md').read_text()
+          blocks=[json.loads(x) for x in re.findall(r'^\x60\x60\x60cfb-frontier-json[ \t]*\n(.*?)^\x60\x60\x60[ \t]*$',text,re.M|re.S)]
+          assert len(blocks)==3
+          assert len(blocks[-1]['pointers'])==517
+          expected={'evidence/operational/CFB_EXECUTION_LEDGER.md':'4ffc6866b629b2350dc782288426f4ba0a32988d','evidence/operational/CFB_MONEY_LEDGER.md':'46ba2d67b32fe4a688c2fa2867d59ffe933fb651'}
+          by_path={p['path']:p['blob'] for p in blocks[-1]['pointers']}
+          for path,sha in expected.items():assert by_path[path]==sha
+          assert next(p['blob'] for p in blocks[0]['pointers'] if p['path']=='evidence/operational/CFB_EXECUTION_LEDGER.md')=='5f098136e7c2719731d49d5bbe98752df0775e9f'
+          for path,sha in by_path.items():
+            assert subprocess.check_output(['git','hash-object',path],text=True).strip()==sha,path
+          print('PERSISTED_CANONICAL_INDEX_VERIFIED checkpoints=3 pointers=517 stale=0')
+          PY
