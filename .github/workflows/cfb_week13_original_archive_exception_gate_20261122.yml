@@ -56,10 +56,20 @@ jobs:
                     '50052032':'NCAAF_20261128_SDGST@WASHST',
                     '50052033':'NCAAF_20261128_TXSTSM@UTAHST',
                     '50052034':'NCAAF_20261128_OREGST@FRESNO'}
+          assert ids['status']=='QA_ONLY'
+          assert ids['original_lineage_accepted'] is False
+          assert ids['canonical_publication_eligible'] is False
+          assert ids['wager_eligible'] is False
           found={g['cbs_id']:g for g in games}
+          exact_teams={
+            '50052031':['Boise St.','Colorado St.'],
+            '50052032':['San Diego St.','Washington St.'],
+            '50052033':['Texas St.','Utah St.'],
+            '50052034':['Oregon State','Fresno St.']
+          }
           for gid,abbrev in expected.items():
             assert found[gid]['cbs_abbrev']==abbrev,(gid,found.get(gid))
-            assert len(found[gid]['teams'])==2
+            assert found[gid]['teams']==exact_teams[gid],('CBS team-direction drift',gid,found[gid])
           historical={r['game_id']:r for r in rows}
           conflicts={
             '50052031':('401860911','Colorado State','Boise State','2026-11-07 23:00:00+00:00','same-direction-old-clock'),
