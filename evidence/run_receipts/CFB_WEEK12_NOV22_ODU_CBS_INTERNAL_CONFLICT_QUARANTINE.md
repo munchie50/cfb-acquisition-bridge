@@ -20,3 +20,12 @@ Arizona at Kansas State game-specific box score https://www.cbssports.com/colleg
 
 ## First unfinished action
 Obtain primary UConn/Old Dominion official game boxscore or NCAA gamecenter final with score and stable game ID. Recompute only affected metric row and supersede this quarantine with an independently evidenced decision. Keep canonical scorecard and book settlement unchanged.
+
+
+## Nov22 resolution — supersedes quarantine
+- NCAA official game-specific https://www.ncaa.com/game/6604217 confirms Old Dominion 21, UConn 29, FINAL; quarter sums ODU 0+14+0+7=21 and UConn 14+6+6+3=29.
+- Independent ESPN game 401861968 also reports 21-29. CBS page header/aggregate 20-29 is a one-point source defect; CBS AP recap says 29-21. Resolved in favor of NCAA official primary game record.
+- Corrected candidate source blob 548b1a19f337e00a0a18b8ee8fa45345cd959ce3 commit c66d82835376653552a58f9f6e45c8164eb2f45c. 70/70 CBS event joins remain, with explicit NCAA official override on game 401861968.
+- Recomputed frozen scoring candidate blob 148e06da9a1cdcbe45cefd5af43843f7c3deb473 commit ea8e911101a72f345a637ff4a1db3913b3789549: 43/56 winner direction, margin MAE 13.736111246752518, total MAE 11.611958254609505, Brier 0.19718225044930882.
+- Rebound ticket candidate blob 8b9018d1a3015281a91547c976855c5d794800d3 commit 048f3e8f51f000b0a6661c4eebfcc5bd91e868b2. No ticket covers this game; 5 conditional wins / 8 losses, $75 stakes unchanged. Actual settlement remains unverified.
+- SHA-guarded writes and independent exact content readbacks passed. Quarantine is RESOLVED_FOR_SOURCE_FINAL_QA, NOT automatic canonical scorecard acceptance. Freeze provenance acceptance still open.
