@@ -1,7 +1,7 @@
 {
   "schema": "CFB_WEEK12_OFFICIAL_FINAL_ADMISSION_FRONTIER_V1",
   "status": "QA_ONLY_NOT_CANONICAL",
-  "purpose": "70-row game-level source/admission worklist; not evidence of newly retrieved finals Six separately observed NCAA date-only scoreboard matches are annotated as evidence, NOT upgraded to admitted official finals; original admission fields unchanged.",
+  "purpose": "70-row game-level source/admission worklist; not evidence of newly retrieved finals Six separately observed NCAA date-only scoreboard matches are annotated as evidence, NOT upgraded to admitted official finals; original admission fields unchanged. Eight independent-media date-only observations now joined to exact games; secondary media does not satisfy official-final admission.",
   "sources": [
     {
       "path": "evidence/audits/CFB_WEEK12_CBS_FINAL_CANDIDATE_20261122_RESEARCH_ONLY.json",
@@ -27,7 +27,10 @@
     "canonical_admitted": 0,
     "ncaa_date_only_scoreboard_matches": 6,
     "ncaa_date_only_matches_without_precise_timestamp": 6,
-    "independent_official_admission_qualified": 1
+    "independent_official_admission_qualified": 1,
+    "independent_media_scoreboard_matches": 8,
+    "unique_games_with_ncaa_date_only_or_media_observation": 13,
+    "games_without_either_observation": 57
   },
   "rows": [
     {
@@ -241,6 +244,14 @@
         "precise_retrieval_timestamp": "NOT_RETAINED",
         "game_specific_ncaa_id": "NOT_YET_JOINED",
         "source_evidence_blob": "185d758cfc28036bbeedab764aa34aad116ccd24"
+      },
+      "independent_media_score_observation": {
+        "status": "MATCH_SECONDARY_MEDIA_NOT_OFFICIAL",
+        "source_class": "ON3_INDEPENDENT_MEDIA_SCOREBOARD_NOT_OFFICIAL",
+        "source_url": "https://www.on3.com/college/football/scoreboard/?filter=fbs&phase=week-12",
+        "checked_date_utc": "2026-11-22",
+        "precise_retrieval_timestamp": "NOT_EVIDENCED",
+        "source_evidence_blob": "608d50bb587ec0a37be49af709b845f294c7309b"
       }
     },
     {
@@ -316,7 +327,15 @@
       "independent_official_final": "NOT_YET_EVIDENCED",
       "source_retrieval_timestamp": "NOT_IN_SOURCE_CANDIDATE",
       "first_frozen_profile_activation": "PENDING",
-      "canonical_admission": "HOLD"
+      "canonical_admission": "HOLD",
+      "independent_media_score_observation": {
+        "status": "MATCH_SECONDARY_MEDIA_NOT_OFFICIAL",
+        "source_class": "ON3_INDEPENDENT_MEDIA_SCOREBOARD_NOT_OFFICIAL",
+        "source_url": "https://www.on3.com/college/football/scoreboard/?filter=fbs&phase=week-12",
+        "checked_date_utc": "2026-11-22",
+        "precise_retrieval_timestamp": "NOT_EVIDENCED",
+        "source_evidence_blob": "608d50bb587ec0a37be49af709b845f294c7309b"
+      }
     },
     {
       "game_id": "401858530",
@@ -346,7 +365,15 @@
       "independent_official_final": "NOT_YET_EVIDENCED",
       "source_retrieval_timestamp": "NOT_IN_SOURCE_CANDIDATE",
       "first_frozen_profile_activation": "PENDING",
-      "canonical_admission": "HOLD"
+      "canonical_admission": "HOLD",
+      "independent_media_score_observation": {
+        "status": "MATCH_SECONDARY_MEDIA_NOT_OFFICIAL",
+        "source_class": "ON3_INDEPENDENT_MEDIA_SCOREBOARD_NOT_OFFICIAL",
+        "source_url": "https://www.on3.com/college/football/scoreboard/?filter=fbs&phase=week-12",
+        "checked_date_utc": "2026-11-22",
+        "precise_retrieval_timestamp": "NOT_EVIDENCED",
+        "source_evidence_blob": "608d50bb587ec0a37be49af709b845f294c7309b"
+      }
     },
     {
       "game_id": "401858533",
@@ -361,7 +388,15 @@
       "independent_official_final": "NOT_YET_EVIDENCED",
       "source_retrieval_timestamp": "NOT_IN_SOURCE_CANDIDATE",
       "first_frozen_profile_activation": "PENDING",
-      "canonical_admission": "HOLD"
+      "canonical_admission": "HOLD",
+      "independent_media_score_observation": {
+        "status": "MATCH_SECONDARY_MEDIA_NOT_OFFICIAL",
+        "source_class": "ON3_INDEPENDENT_MEDIA_SCOREBOARD_NOT_OFFICIAL",
+        "source_url": "https://www.on3.com/college/football/scoreboard/?filter=fbs&phase=week-12",
+        "checked_date_utc": "2026-11-22",
+        "precise_retrieval_timestamp": "NOT_EVIDENCED",
+        "source_evidence_blob": "608d50bb587ec0a37be49af709b845f294c7309b"
+      }
     },
     {
       "game_id": "401862834",
@@ -706,7 +741,15 @@
       "independent_official_final": "EVIDENCED_NCAA_6604217",
       "source_retrieval_timestamp": "NOT_IN_SOURCE_CANDIDATE",
       "first_frozen_profile_activation": "PENDING",
-      "canonical_admission": "HOLD"
+      "canonical_admission": "HOLD",
+      "independent_media_score_observation": {
+        "status": "MATCH_SECONDARY_MEDIA_NOT_OFFICIAL",
+        "source_class": "ON3_INDEPENDENT_MEDIA_SCOREBOARD_NOT_OFFICIAL",
+        "source_url": "https://www.on3.com/college/football/scoreboard/?filter=fbs&phase=week-12",
+        "checked_date_utc": "2026-11-22",
+        "precise_retrieval_timestamp": "NOT_EVIDENCED",
+        "source_evidence_blob": "608d50bb587ec0a37be49af709b845f294c7309b"
+      }
     },
     {
       "game_id": "401858304",
@@ -736,7 +779,15 @@
       "independent_official_final": "NOT_YET_EVIDENCED",
       "source_retrieval_timestamp": "NOT_IN_SOURCE_CANDIDATE",
       "first_frozen_profile_activation": "PENDING",
-      "canonical_admission": "HOLD"
+      "canonical_admission": "HOLD",
+      "independent_media_score_observation": {
+        "status": "MATCH_SECONDARY_MEDIA_NOT_OFFICIAL",
+        "source_class": "ON3_INDEPENDENT_MEDIA_SCOREBOARD_NOT_OFFICIAL",
+        "source_url": "https://www.on3.com/college/football/scoreboard/?filter=fbs&phase=week-12",
+        "checked_date_utc": "2026-11-22",
+        "precise_retrieval_timestamp": "NOT_EVIDENCED",
+        "source_evidence_blob": "608d50bb587ec0a37be49af709b845f294c7309b"
+      }
     },
     {
       "game_id": "401858532",
@@ -751,7 +802,15 @@
       "independent_official_final": "NOT_YET_EVIDENCED",
       "source_retrieval_timestamp": "NOT_IN_SOURCE_CANDIDATE",
       "first_frozen_profile_activation": "PENDING",
-      "canonical_admission": "HOLD"
+      "canonical_admission": "HOLD",
+      "independent_media_score_observation": {
+        "status": "MATCH_SECONDARY_MEDIA_NOT_OFFICIAL",
+        "source_class": "ON3_INDEPENDENT_MEDIA_SCOREBOARD_NOT_OFFICIAL",
+        "source_url": "https://www.on3.com/college/football/scoreboard/?filter=fbs&phase=week-12",
+        "checked_date_utc": "2026-11-22",
+        "precise_retrieval_timestamp": "NOT_EVIDENCED",
+        "source_evidence_blob": "608d50bb587ec0a37be49af709b845f294c7309b"
+      }
     },
     {
       "game_id": "401856754",
@@ -931,7 +990,15 @@
       "independent_official_final": "NOT_YET_EVIDENCED",
       "source_retrieval_timestamp": "NOT_IN_SOURCE_CANDIDATE",
       "first_frozen_profile_activation": "PENDING",
-      "canonical_admission": "HOLD"
+      "canonical_admission": "HOLD",
+      "independent_media_score_observation": {
+        "status": "MATCH_SECONDARY_MEDIA_NOT_OFFICIAL",
+        "source_class": "ON3_INDEPENDENT_MEDIA_SCOREBOARD_NOT_OFFICIAL",
+        "source_url": "https://www.on3.com/college/football/scoreboard/?filter=fbs&phase=week-12",
+        "checked_date_utc": "2026-11-22",
+        "precise_retrieval_timestamp": "NOT_EVIDENCED",
+        "source_evidence_blob": "608d50bb587ec0a37be49af709b845f294c7309b"
+      }
     },
     {
       "game_id": "401869938",
