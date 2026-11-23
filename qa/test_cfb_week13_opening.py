@@ -63,6 +63,20 @@ def check(archive):
             result = publication('```cfb-frontier-json\n' + json.dumps(index) + '\n```\n',
                                  d, {target: sheet}.__getitem__, AS_OF)
             assert result['sheet_path'] == target
+            refresh_at = '2026-11-23T19:01:00Z'
+            refreshed = dict(source, recovered_by=refresh_at)
+            m2, d2 = week.compile(m, d, refreshed, lineage, 'CFB_MARKET_MONITOR_20261123T190100Z',
+                                  refresh_at, rows)
+            assert m2.startswith(m) and d2.startswith(d)
+            args2 = (m2, d2, 'QA execution', 'QA scorecard', lineage, refresh_at, 'WEEK13')
+            assert saved.audit(render(*args2), *args2)['integrity']['games'] == 69
+            try:
+                week.compile(m, d, source, lineage, 'CFB_MARKET_MONITOR_20261123T190100Z',
+                             refresh_at, rows)
+            except ValueError as error:
+                assert 'new capture' in str(error)
+            else:
+                raise AssertionError('reissued opening capture passed continuation')
             for state, replacement in [('OBSERVATION_ONLY', {'state': 'PASS'}),
                                        ('INCONCLUSIVE', {'reconciliation_utc': '2026-11-24T20:00:00Z'})]:
                 bad = [dict(row) for row in rows]
