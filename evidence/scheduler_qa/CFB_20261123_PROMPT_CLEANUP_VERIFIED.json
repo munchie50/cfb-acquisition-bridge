@@ -1,0 +1,131 @@
+{
+  "status": "PROMPT_AND_CONFIGURATION_READBACK_VERIFIED; NATURAL_EXECUTION_PENDING",
+  "base_main": "9b7a83096c57e68388f2ff4f94b3c289462d09a4",
+  "restore_guard": "Before a prompt-only restore, verify task identity, saved backup blob and prompt SHA-256, current revision and prompt SHA-256 against this manifest, and no in-progress run. If another edit intervened, reconcile it before restoring. Independently read back the restored prompt and compare the configuration snapshot.",
+  "tasks": [
+    {
+      "id": "6ae766e788d881919726d0eeb44450dd",
+      "path": "evidence/scheduler_qa/CFB_20261123_PROMPT_CLEANUP_ROLLBACK_market_monitor.json",
+      "configuration": {
+        "team_id": null,
+        "title": "CFB Market Monitor Rebuilt",
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260930T070000\nRRULE:FREQ=WEEKLY;BYDAY=SU,MO,TU,WE,TH,FR,SA;BYHOUR=7,13;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+        "timing_mode": "exact_schedule",
+        "display_schedule": null,
+        "is_enabled": true,
+        "conversation_id": "6ae76939-5964-83ea-bb3c-d67cbe383a22",
+        "is_self_owned_automation": false,
+        "default_timezone": "America/Chicago",
+        "environment_selection": "inherited",
+        "environments": null
+      },
+      "prompt_sha256": "ca0805e18bc88f53c796a9965f09baa539d966247356f9fa462416781f070fd3",
+      "slug": "market_monitor",
+      "blob": "7fadc078af24dbb38d5414424b9717bc0225c812",
+      "newRevision": "2026-11-23T19:17:49.538021+00:00",
+      "newHash": "4fa5ad18d2fc81404d404bdbcd9a2ad13960282695c4b57a25ebca3a89e95168",
+      "nextRun": "2026-11-24T07:00:00-06:00",
+      "edits": [
+        [
+          "5. Where actual verified original runtime/ancestry is available, continue immediately through current CBS capture, exact 70-game source normalization, governed refresh_rows/current-week compiler,",
+          "5. Resolve the active accepted collection profile and its exact directed census (Week 13: 69 games). Complete fresh CBS collection, full table normalization, save, and independent exact-byte/blob readback even if authenticated compiler checkout is blocked. Where the actual verified original runtime/ancestry is available, continue with governed refresh_rows/current-week compiler,"
+        ]
+      ]
+    },
+    {
+      "id": "6ae76df2ece4819197f91fb10076dea7",
+      "path": "evidence/scheduler_qa/CFB_20261123_PROMPT_CLEANUP_ROLLBACK_engine_health.json",
+      "configuration": {
+        "team_id": null,
+        "title": "CFB Engine Health Rebuilt",
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260927T163000\nRRULE:FREQ=DAILY;BYHOUR=16;BYMINUTE=30;BYSECOND=0\nEND:VEVENT",
+        "timing_mode": "exact_schedule",
+        "display_schedule": null,
+        "is_enabled": true,
+        "conversation_id": "6ae7bdde-38bc-83ea-a16a-5a90c693f1b5",
+        "is_self_owned_automation": false,
+        "default_timezone": "America/Chicago",
+        "environment_selection": "inherited",
+        "environments": null
+      },
+      "prompt_sha256": "b18d8c2e3a5d979a88c2220f22ef331b4f3f87ae1d5e070763fae67a52eecfaa",
+      "slug": "engine_health",
+      "blob": "50e1534fe662a35d1e9cd8c2ddcb4e16cff0cd4d",
+      "newRevision": "2026-11-23T19:17:52.478669+00:00",
+      "newHash": "6faac6747bd80c145ca595d27a039659389cbe54af28af377ba7d88450d148d2",
+      "nextRun": "2026-11-23T16:30:00-06:00",
+      "edits": [
+        [
+          "## NOV21 USER-AUTHORIZED WEEK12 DISPLAY OVERRIDE — HEALTH DRIFT CLASSIFICATION",
+          "## NOV21 HISTORICAL WEEK12 DISPLAY OVERRIDE — HEALTH DRIFT CLASSIFICATION"
+        ],
+        [
+          "Existing Market Monitor and Evening Availability route to this complete 70-game provisional review. Health must check display routing separately from canonical selector acceptance (still Nov19),",
+          "At that time, Market Monitor and Evening Availability routed to this complete 70-game provisional review. For historical Week 12 checks, Health must assess that display routing separately from the then-current Nov19 canonical selector. For current work, use the current accepted recovery index and its selected publication. Check"
+        ]
+      ]
+    },
+    {
+      "id": "6ae76df60e0c819182e2cfab1b83846a",
+      "path": "evidence/scheduler_qa/CFB_20261123_PROMPT_CLEANUP_ROLLBACK_evening_availability.json",
+      "configuration": {
+        "team_id": null,
+        "title": "CFB Evening Availability Rebuilt",
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260923T193000\nRRULE:FREQ=WEEKLY;BYDAY=WE,TH,FR;BYHOUR=19;BYMINUTE=30;BYSECOND=0\nEND:VEVENT",
+        "timing_mode": "exact_schedule",
+        "display_schedule": null,
+        "is_enabled": true,
+        "conversation_id": "6aebdbec-d088-83ea-b11a-57952ef0d515",
+        "is_self_owned_automation": false,
+        "default_timezone": "America/Chicago",
+        "environment_selection": "inherited",
+        "environments": null
+      },
+      "prompt_sha256": "f623cc3f6e3c7c623374e8ba1404a51d7a80a157368e1f71de889556c3454459",
+      "slug": "evening_availability",
+      "blob": "a78305220a64ee7d740b1597beab20bc8dda3eed",
+      "newRevision": "2026-11-23T19:17:55.755791+00:00",
+      "newHash": "92073929d1907078b81875c29b810c9389fe9563b9efa1da7bc33598014a7b96",
+      "nextRun": "2026-11-25T19:30:00-06:00",
+      "edits": [
+        [
+          "When current neutral weekly V2 scope applies, consume the latest complete typed Monitor/canonical state;",
+          "Resolve the current Monitor publication through the accepted selector. Use historical capture procedures, adapters, and typed canonical writes only when the active profile and current Evening handoff authority expressly support that operation. When the current profile supports this neutral weekly V2 advance, consume the latest complete typed Monitor/canonical state;"
+        ],
+        [
+          "Production display routing is now active at evidence/operational/CFB_WEEK12",
+          "Historical Week 12 display routing was active at evidence/operational/CFB_WEEK12"
+        ]
+      ]
+    },
+    {
+      "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+      "path": "evidence/scheduler_qa/CFB_20261123_PROMPT_CLEANUP_ROLLBACK_weekly_qa.json",
+      "configuration": {
+        "team_id": null,
+        "title": "CFB Weekly Engine QA Rebuilt",
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260927T090000\nRRULE:FREQ=WEEKLY;BYDAY=SA,SU;BYHOUR=9;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+        "timing_mode": "exact_schedule",
+        "display_schedule": null,
+        "is_enabled": true,
+        "conversation_id": "6aef3e5c-1008-83ea-9a69-8d35b7ef73c8",
+        "is_self_owned_automation": false,
+        "default_timezone": "America/Chicago",
+        "environment_selection": "inherited",
+        "environments": null
+      },
+      "prompt_sha256": "fc45ce5b3e7ebc56d4f7da7d29a6d57db7ce4be81e6d97f22215dbabfde47b3b",
+      "slug": "weekly_qa",
+      "blob": "db2b7dd5d0fc40e7b78cae4b77e671849e06ba39",
+      "newRevision": "2026-11-23T19:17:59.759907+00:00",
+      "newHash": "db564fa249218b7392d4cf3836f1bffb8662634f0d097506c97fb9c23e68d4b5",
+      "nextRun": "2026-11-28T09:00:00-06:00",
+      "edits": [
+        [
+          "Fresh-read latest accepted recovery index, QA checkpoint, Week12 Hot Sheet, current market/decision ledger,",
+          "Fresh-read the latest accepted recovery index, QA checkpoint, the current Hot Sheet selected by that index and its retained capture binding, current market/decision ledger,"
+        ]
+      ]
+    }
+  ]
+}
