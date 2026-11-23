@@ -55,6 +55,12 @@ def profile_config(profile):
         return {'week':12,'lineage':WEEK12_LINEAGE_SHA,'count':70,'predictions':56,'exclusions':14,
                 'market_tag':'cfb-week12-market-v1','decision_tag':'cfb-week12-decision-v1',
                 'start':datetime(2026,11,16,tzinfo=CT),'end':datetime(2026,11,23,tzinfo=CT)}
+    if profile == 'WEEK13':
+        from cfb_cbs_full_board_normalizer import WEEK13_LINEAGE_SHA
+        return {'week': 13, 'lineage': WEEK13_LINEAGE_SHA, 'count': 69,
+                'predictions': 54, 'exclusions': 11,
+                'market_tag': 'cfb-week13-market-v1', 'decision_tag': 'cfb-week13-decision-v1',
+                'start': datetime(2026,11,23,tzinfo=CT), 'end': datetime(2026,11,30,tzinfo=CT)}
     raise ValueError('unqualified publication profile')
 
 def keys(value,expected):
@@ -278,7 +284,17 @@ def inputs(market,decision,lineage,as_of,profile='WEEK7'):
     cfg=profile_config(profile);market_tag=cfg['market_tag'];decision_tag=cfg['decision_tag']
     now=clock(as_of)
     if blob(lineage)!=cfg['lineage']:raise ValueError('unqualified original '+profile+' lineage')
-    census=json.loads(lineage,object_pairs_hook=unique)['rows']; c={r['game_id']:r for r in census}
+    if profile == 'WEEK13':
+        from cfb_cbs_full_board_normalizer import week13_census
+        c = {
+            gid: dict(row, away_team=row['teams'][0], home_team=row['teams'][1],
+                      first_frozen_status=row['status'].removeprefix('ARCHIVE_'))
+            for gid, row in week13_census(lineage).items()
+        }
+        census = list(c.values())
+    else:
+        census = json.loads(lineage, object_pairs_hook=unique)['rows']
+        c = {r['game_id']: r for r in census}
     if len(c)!=cfg['count'] or len(census)!=cfg['count']:raise ValueError('original identity census mismatch')
     m=selected_block(market,market_tag,(MARKET_SCHEMA,WEEKLY_MARKET_SCHEMA),now,set(c));d=selected_block(decision,decision_tag,(DECISION_SCHEMA,)+WEEKLY_DECISION_SCHEMAS,now,set(c))
     weekly=m['schema']==WEEKLY_MARKET_SCHEMA
@@ -324,7 +340,9 @@ def inputs(market,decision,lineage,as_of,profile='WEEK7'):
                 elif row['state']==EXPIRED_UNPUBLISHED:
                     from cfb_expired_unpublished_review import validate as validate_expired
                     validate_expired(row,source_row,c[row['game_id']],packet,decision,profile)
-                elif row['state'] not in (('PASS','INCONCLUSIVE','HISTORICAL_GAP') if gaps else ('PASS','INCONCLUSIVE')) or row['review_ref'] is not None:
+                elif row['state'] not in (('PASS','INCONCLUSIVE','HISTORICAL_GAP') if gaps else
+                                           ('PASS','INCONCLUSIVE','OBSERVATION_ONLY') if profile == 'WEEK13'
+                                           else ('PASS','INCONCLUSIVE')) or row['review_ref'] is not None:
                     raise ValueError('unsupported conditional history state/review')
                 else:
                     text(row['reason'])
@@ -371,6 +389,20 @@ def inputs(market,decision,lineage,as_of,profile='WEEK7'):
         gid=r['game_id']
         if not isinstance(gid,str) or gid not in c or gid in dr:raise ValueError('unknown/duplicate decision identity')
         allowed=('INCONCLUSIVE','PASS','CONDITIONAL') if conditional else ('INCONCLUSIVE','PASS')
+        if profile == 'WEEK13':
+            status = c[gid]['first_frozen_status']
+            if status == 'OBSERVATION_ONLY':
+                allowed = ('OBSERVATION_ONLY',)
+            elif status == 'EXCLUSION':
+                allowed = ('PASS',)
+            approved_deadline = c[gid].get('latest_decision_deadline_utc')
+            if approved_deadline and r['state'] == 'INCONCLUSIVE' and (
+                r['reconciliation_utc'] is None
+                or clock(r['reconciliation_utc']) > clock(approved_deadline)
+            ):
+                raise ValueError('Week13 reconciliation exceeds approved deadline')
+            if approved_deadline and r['state'] == 'CONDITIONAL' and at >= clock(approved_deadline):
+                raise ValueError('Week13 new decision exceeds approved deadline')
         if conditional and profile=='WEEK9':allowed+=(EXPIRED_UNPUBLISHED,)
         if gaps:allowed+=('HISTORICAL_GAP',)
         if r['state'] not in allowed:raise ValueError('unsupported actionable/WAIT decision; separate qualified profile required')
@@ -421,7 +453,16 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
         cutoff=('Reconcile '+y['reconciliation_utc'] if y['reconciliation_utc'] else 'Reconciliation unavailable')+'; planning cutoff '+(y['planning_cutoff_utc'] or 'UNAVAILABLE')+'; CUTOFF_AUTHORITY_UNVERIFIED'
         if m['schema']==WEEKLY_MARKET_SCHEMA:
             cutoff+='; state recorded '+y['state_recorded_at_utc']+('; source-declared minute precision' if y['state_evidence']==PASS_ANCESTOR else '')+'; evidence '+y['state_evidence']
-        if profile == 'WEEK12':
+        if profile == 'WEEK13':
+            frozen = c[gid]
+            if frozen['first_frozen_status'] == 'OBSERVATION_ONLY':
+                model_display = 'OBSERVATION ONLY — no original archive prediction'
+            elif frozen['first_frozen_status'] == 'EXCLUSION':
+                model_display = ('FIRST_FROZEN EXCLUDED — ' + frozen['reasons']).replace('|', '&#124;')
+            else:
+                from cfb_week7_first_frozen_projection_gate import fair
+                model_display = fair(frozen)
+        elif profile == 'WEEK12':
             original = c[gid]['original_numeric_strings']
             if original is None:
                 model_display = ('FIRST_FROZEN EXCLUDED — ' + c[gid]['original_exclusion']).replace('|', '&#124;')
@@ -466,7 +507,7 @@ def render(market,decision,execution,scorecard,lineage,as_of,profile='WEEK7'):
     if gap_count:lines+=['**Permanent coverage gaps:** '+str(gap_count)+' HISTORICAL_GAP; missing pre-event decisions, never PASS or recommendations. Remaining research and natural delivery are not certified by this display.','']
     section_order=SECTIONS
     if m['schema']==WEEKLY_MARKET_SCHEMA:
-        active=[s for s in SECTIONS if any(dr[gid]['state'] not in ('PASS','HISTORICAL_GAP',EXPIRED_UNPUBLISHED) and not (profile in ('WEEK8','WEEK9','WEEK10','WEEK11','WEEK12') and closed_conditional(dr[gid],as_of)) for _,gid,_ in groups[s])]
+        active=[s for s in SECTIONS if any(dr[gid]['state'] not in ('PASS','HISTORICAL_GAP','OBSERVATION_ONLY',EXPIRED_UNPUBLISHED) and not (profile in ('WEEK8','WEEK9','WEEK10','WEEK11','WEEK12') and closed_conditional(dr[gid],as_of)) for _,gid,_ in groups[s])]
         primary=active[0] if active else 'NONE'
         lines+=['**Primary section:** '+primary+' — '+('earliest open neutral decision section; saved kickoff qualification labels remain applicable' if active else 'no open neutral decisions; all governed games remain visible below'), '']
         section_order=active+[s for s in SECTIONS if s not in active]
@@ -488,6 +529,9 @@ def audit(sheet,market,decision,execution,scorecard,lineage,as_of,profile='WEEK7
 
 def bootstrap(market,decision,lineage,profile='WEEK7'):
     profile_config(profile)
+    if profile == 'WEEK13':
+        from cfb_week13_publication import bootstrap_check
+        return bootstrap_check(market,decision,lineage)
     if profile == 'WEEK12':
         from cfb_week12_publication import bootstrap_check
         return bootstrap_check(market,decision,lineage)
@@ -527,7 +571,7 @@ def bootstrap(market,decision,lineage,profile='WEEK7'):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     for n in ['market','decision','execution','scorecard','lineage']:p.add_argument('--'+n,required=True,type=Path)
-    p.add_argument('--profile',choices=('WEEK7','WEEK8','WEEK9','WEEK10','WEEK11','WEEK12'),default='WEEK7')
+    p.add_argument('--profile',choices=('WEEK7','WEEK8','WEEK9','WEEK10','WEEK11','WEEK12','WEEK13'),default='WEEK7')
     p.add_argument('--as-of',required=True);p.add_argument('--sheet',type=Path);p.add_argument('--render-output',type=Path)
     a=p.parse_args();values=[getattr(a,n).read_text() for n in ['market','decision','execution','scorecard','lineage']]
     if bool(a.sheet)==bool(a.render_output):p.error('choose exactly one --sheet or --render-output')

@@ -47,10 +47,14 @@ def evaluation_coverage(census, decisions, rows):
         raise ValueError('coverage requires complete unique census/decision/row identities')
     groups = {name: [] for name in ('ORIGINAL_EXCLUSION', 'HISTORICAL_GAP',
                                    'CONDITIONAL_REVIEW_REFERENCE', 'EXPIRED_UNPUBLISHED_REVIEW', 'NOT_CERTIFIED')}
+    if any(model['first_frozen_status'] == 'OBSERVATION_ONLY' for model in census.values()):
+        groups['OBSERVATION_ONLY'] = []
     pending = []
     for gid, model in census.items():
         state = decisions[gid]['state']
-        if model['first_frozen_status'] != 'PREDICTION':
+        if model['first_frozen_status'] == 'OBSERVATION_ONLY':
+            category = 'OBSERVATION_ONLY'
+        elif model['first_frozen_status'] != 'PREDICTION':
             category = 'ORIGINAL_EXCLUSION'
         elif state == 'HISTORICAL_GAP':
             category = 'HISTORICAL_GAP'
@@ -99,7 +103,7 @@ def review_window(decision, market, as_of):
     bounds = ([gate.clock(cutoff)] if cutoff else [])
     if qualified_kick:
         bounds.append(gate.clock(kick))
-    closed = decision['state'] in ('HISTORICAL_GAP',gate.EXPIRED_UNPUBLISHED) or (bool(bounds) and min(bounds) <= now)
+    closed = decision['state'] in ('HISTORICAL_GAP','OBSERVATION_ONLY',gate.EXPIRED_UNPUBLISHED) or (bool(bounds) and min(bounds) <= now)
     issue = ('KICKOFF_REQUIRES_QUALIFICATION' if not qualified_kick else
              'PRACTICAL_CUTOFF_MISSING' if cutoff is None else None)
     disposition = ('PREGAME_WINDOW_CLOSED' if closed else
@@ -148,6 +152,11 @@ def audit(market, decision, lineage, as_of, profile='WEEK7'):
             elapsed_current.append(gid)
         if row['state'] == 'INCONCLUSIVE' and gate.clock(row['reconciliation_utc']) <= now:
             overdue.append(gid)
+        if row['state'] == 'OBSERVATION_ONLY':
+            rows.append({'game_id': gid, 'state': 'OBSERVATION_ONLY',
+                         'recommendation_blockers': ['NO_ORIGINAL_ARCHIVE_ID'],
+                         'disposition': 'OBSERVATION_ONLY'})
+            continue
         if row['state'] == 'PASS':
             rows.append({'game_id': gid, 'state': 'PASS',
                          'recommendation_blockers': [],
@@ -216,7 +225,7 @@ if __name__ == '__main__':
     for name in ('market', 'decision', 'lineage'):
         p.add_argument('--' + name, type=Path, required=True)
     p.add_argument('--as-of', required=True)
-    p.add_argument('--profile', choices=('WEEK7','WEEK8','WEEK9','WEEK10','WEEK11','WEEK12'), default='WEEK7')
+    p.add_argument('--profile', choices=('WEEK7','WEEK8','WEEK9','WEEK10','WEEK11','WEEK12','WEEK13'), default='WEEK7')
     args = p.parse_args()
     print(json.dumps(audit(args.market.read_text(), args.decision.read_text(),
                            args.lineage.read_text(), args.as_of, args.profile), indent=2))

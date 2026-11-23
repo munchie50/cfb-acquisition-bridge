@@ -1,4 +1,4 @@
-"""Read-only regression test: never silently extend Week12 into Week13."""
+"""Read-only regression test: preserve Week12 and register the approved Week13 boundary."""
 import ast
 from datetime import datetime
 from pathlib import Path
@@ -22,8 +22,10 @@ assert entries == [
      datetime.fromisoformat("2026-11-16T00:00:00-06:00")),
     ("WEEK12", datetime.fromisoformat("2026-11-16T00:00:00-06:00"),
      datetime.fromisoformat("2026-11-23T00:00:00-06:00")),
+    ("WEEK13", datetime.fromisoformat("2026-11-23T00:00:00-06:00"),
+     datetime.fromisoformat("2026-11-30T00:00:00-06:00")),
 ], "profile boundary or accepted profile set changed: independently review authority"
 active = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == "active_profile")
 assert isinstance(active.body[-1], ast.Raise)
 assert "NO_ACCEPTED_COLLECTION_PROFILE" in ast.literal_eval(active.body[-1].exc.args[0])
-print("PASS: Week12 rollover fails closed; Week13 not fabricated")
+print("PASS: Week12 expires and approved Week13 window is registered")

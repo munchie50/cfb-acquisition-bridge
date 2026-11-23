@@ -14,7 +14,10 @@ from zipfile import ZipFile
 from lxml import html
 
 import cfb_week11_publication as week
-from cfb_cbs_full_board_normalizer import WEEK12_LINEAGE_SHA, WEEK12_URL, normalize
+from cfb_cbs_full_board_normalizer import (
+    WEEK12_LINEAGE_SHA, WEEK12_URL, WEEK13_LINEAGE_PATH, WEEK13_LINEAGE_SHA,
+    WEEK13_URL, normalize, week13_census,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 MARKET = ROOT / "evidence/operational/CFB_MARKET_MONITOR_STATE.md"
@@ -53,6 +56,11 @@ PROFILES = (
         ROOT / "evidence/audits/CFB_WEEK12_CBS_ORIGINAL_LINEAGE_PREFLIGHT_20261115.json",
         WEEK12_LINEAGE_SHA,
     ),
+    CollectionProfile(
+        "WEEK13", week.gate.clock("2026-11-23T00:00:00-06:00"),
+        week.gate.clock("2026-11-30T00:00:00-06:00"), WEEK13_URL,
+        ROOT / WEEK13_LINEAGE_PATH, WEEK13_LINEAGE_SHA,
+    ),
 )
 
 
@@ -82,7 +90,7 @@ def acquire(url):
     return payload, utc().isoformat()
 
 
-def board_projection(payload):
+def board_projection(payload, expected_events=None):
     def text(node):
         return " ".join(node.text_content().split())
 
@@ -92,6 +100,10 @@ def board_projection(payload):
     output = []
     tables = html.fromstring(payload).xpath("//table")
     events = [event(table) for table in tables]
+    if expected_events is not None and (
+        len(events) != len(expected_events) or set(events) != expected_events.keys()
+    ):
+        raise ValueError("CBS event census differs from approved Week13 identities")
     # Drop only the corroborated obsolete record when both exact records occur
     # once. Preserve archived single-record captures and let any other duplicate
     # reach the normalizer's identity gate. The artifact retains the raw HTML.
@@ -107,6 +119,7 @@ def board_projection(payload):
         if header[1:] != ["Final", "Open", "Spread", "ML Moneyline", "Total"]:
             raise ValueError("unexpected CBS table headings")
         output.append("| " + " | ".join(header[:4] + ["MLMoneyline", header[5]]) + " |")
+        teams = []
         for row in rows[1:3]:
             cells = row.xpath("./td|./th")
             if len(cells) != 6:
@@ -115,26 +128,36 @@ def board_projection(payload):
             if not links:
                 raise ValueError("CBS team identity absent")
             name = links[-1]
+            teams.append(text(name))
             team = f"[{text(name)}]({urljoin('https://www.cbssports.com', name.get('href'))})"
             offers = []
             for cell in cells[3:]:
                 icons = [url for url in cell.xpath(".//img/@src") if "/books-icons/" in url]
                 offers.append(" ".join([text(cell)] + [f"![book]({url})" for url in icons]))
             output.append("| " + " | ".join([team, text(cells[1]), text(cells[2]), *offers]) + " |")
+        if expected_events is not None and teams != expected_events[identity]:
+            raise ValueError("CBS event teams differ from the approved directed pair")
     return "\n".join(output) + "\n"
 
 
 def inspect(payload, recovered_by):
     observed = week.gate.clock(recovered_by)
     profile = active_profile(observed)
-    capture = board_projection(payload)
+    lineage = profile.lineage.read_text()
+    expected_events = None
+    if profile.name == "WEEK13":
+        expected_events = {
+            (row["cbs_id"], row["cbs_abbrev"]): row["teams"]
+            for row in week13_census(lineage).values()
+        }
+    capture = board_projection(payload, expected_events)
     elapsed = {}
     if profile.name == "WEEK11":
         prior = week.gate.selected_block(MARKET.read_text(), week.MARKET_TAG,
                                          week.gate.WEEKLY_MARKET_SCHEMA, observed)
         elapsed = {r["game_id"]: r["kickoff_utc"] for r in prior["rows"]
                    if r["kickoff_utc"] and week.gate.clock(r["kickoff_utc"]) < observed}
-    board = normalize(capture, profile.lineage.read_text(), recovered_by,
+    board = normalize(capture, lineage, recovered_by,
                       source_url=profile.url, profile=profile.name,
                       retained_elapsed_kickoffs=elapsed)
     missing = {g["game_id"]: [f"{t['team']}:{k}" for t in g["team_offers"]
