@@ -1,0 +1,13 @@
+# Week 13 Tuesday decision and live continuation — terminal candidate
+
+Result RUN_INCOMPLETE for full modeled-slate review; live continuation and Tuesday disposition verified.
+Cycle CFB_MARKET_MONITOR_20261123T135825Z; candidate publication boundary 2026-11-23T13:58:25.890766+00:00.
+Source evidence/operational/CFB_WEEK13_CBS_FBS_TABLES_20261123T135737Z.md blob b5f3d9f5e4ea3fe482eb3c25870637ff90d7b992, actual observation 2026-11-23T13:57:37.183951+00:00.
+Review evidence evidence/operational/CFB_WEEK13_SIX_MARKET_REVIEW_20261123_0758CT.md blob d2fdc8b664c8d1366cad8eb8db38e1ef1d864473.
+Published evidence/operational/CFB_WEEK13_HOT_SHEET_2026-11-23_0758CT.md blob 9e0d9a857e9fcedac645695bb7c047f999549c49. Canonical market 45318879aa8fbbf64f5c2915be535fa6eaca2514; decision 5f536764f433547385106ea9b0e2569a691fb21e. Independent complete-byte readbacks passed. Selector evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_297.md blob 4eff5bf6daf727b08106d237133362614ee56f05; actual selected sheet and canonical decision binding passed.
+
+Two Tuesday modeled games earned current PASS after six-side review and a same-book public DraftKings refresh. Official game-day MAC availability remained pending. No executable offer or actionable recommendation verified. Decision deadline remains November 24 13CT with the earlier-practical-cutoff rule. Market-screen coverage: 54 modeled games in deadline order. The other 52 retain INCONCLUSIVE, with outstanding named-book and material review work. Eleven original exclusions and four observation-only flex fixtures retained.
+
+Next deadline triage: Texas Tech official game center corroborates the TCU fixture, but there is no final material roster/availability corroboration for the large model/market directional disagreement. https://texastech.com/game-center/21736 . Buffalo–Akron and Toledo–Ohio public trackers show MAC reports pending; prior-week statuses are not current confirmation. https://kickoffstatus.com/games/2026-11-27-buffalo-at-akron/ and https://kickoffstatus.com/games/2026-11-27-toledo-at-ohio/ . Nebraska official schedule and UTSA kickoff release corroborate Friday 11CT starts. Iowa/Nebraska, Egg Bowl, Tulsa/UTSA personnel require primary current corroboration beyond preliminary outside updates. https://huskers.com/sports/football/schedule/season/2026 and https://goutsa.com/news/2026/11/16/kickoff-time-announced-for-utsatulsa-game .
+
+Scheduled history: Monday 07CT remains last actual run and Monday 13CT remains next. Existing task prompt was read back with current selector and continuation, schedule and enabled state unchanged. No natural 13CT execution claimed. No certified analytics export on pinned main. Frozen records and financial ledgers preserved.
