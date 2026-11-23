@@ -29,7 +29,8 @@ def build_rows(source, lineage, as_of, prior_rows=None):
     path = (ROOT / source['path']).resolve()
     if path.parent != (ROOT / 'evidence/operational').resolve() or path.suffix != '.md':
         raise ValueError('retained operational capture required')
-    raw = path.read_text()
+    # Preserve the exact retained bytes before decoding for the normalizer.
+    raw = path.read_bytes().decode('utf-8')
     if gate.blob(raw) != source['blob']:
         raise ValueError('retained capture blob mismatch')
     observed, now = gate.clock(source['recovered_by']), gate.clock(as_of)
