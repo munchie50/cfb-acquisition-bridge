@@ -1,0 +1,40 @@
+{
+  "scope": "Week13 neutral publication candidate integrity",
+  "capture": {
+    "path": "evidence/operational/CFB_WEEK13_CBS_FBS_TABLES_20261124T132640Z.md",
+    "blob": "aca29d1ad70324a360636d2a1125db710527b739",
+    "commit": "10798cb9d0f8710b6449596b302a2acc8938995c",
+    "url": "https://github.com/munchie50/cfb-acquisition-bridge/blob/main/evidence/operational/CFB_WEEK13_CBS_FBS_TABLES_20261124T132640Z.md"
+  },
+  "review": {
+    "path": "evidence/operational/CFB_WEEK13_NOV24_MORNING_52_GAME_REVIEW.md",
+    "blob": "221d32c26d7daf774bafc3e081e69195f9eb1816",
+    "commit": "2c983d5185949bb1946114dee5b24fb07745eb3b",
+    "url": "https://github.com/munchie50/cfb-acquisition-bridge/blob/main/evidence/operational/CFB_WEEK13_NOV24_MORNING_52_GAME_REVIEW.md"
+  },
+  "expected": {
+    "cycle": "CFB_MARKET_MONITOR_20261124T132712Z",
+    "as_of": "2026-11-24T13:27:12.668150+00:00",
+    "market": "40843fcaffd146daabbe3000a75c96a7e9ceea57",
+    "decision": "53d9fb86734d044ec0d8014389ed658ccffd85ed",
+    "sheet": "6b8d8410a0ece5c7f6683c45b7d96627cc0f0920",
+    "open": 42,
+    "pass": 23
+  },
+  "result": {
+    "verdict": "PASS_SAVED_PUBLICATION_INTEGRITY_ONLY",
+    "publication_boundary_utc": "2026-11-24T13:27:12.668150+00:00",
+    "audit_as_of_utc": "2026-11-24T13:27:12.668150+00:00",
+    "integrity": {
+      "verdict": "PASS_NEUTRAL_CANONICAL_PRESENTATION_ONLY",
+      "games": 69,
+      "sheet_blob": "6b8d8410a0ece5c7f6683c45b7d96627cc0f0920",
+      "scope": "typed neutral canonical display only; no source truth/betting/natural-run acceptance"
+    },
+    "operational_exceptions": [],
+    "elapsed_current_quote_game_ids": [],
+    "overdue_open_decision_game_ids": [],
+    "current_operational_acceptance": "NOT_CERTIFIED",
+    "scope": "CODE_QA_SAVED_VIEW_ONLY_NOT_FRESH_MARKET_OR_RUN_PASS"
+  }
+}
