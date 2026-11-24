@@ -1,0 +1,45 @@
+{
+  "status": "LIVE_PROMPTS_VERIFIED; NEXT_SCHEDULED_PROOF_PENDING",
+  "authority": {
+    "index": "2999e6763da2fc6cd8325448e02654924330c919",
+    "sheet": "7d6fb44c739effde9760859cd8c37ff5a3b787f9",
+    "CBS_handoff": "3d0917b346689e0ee1492bd6c32980683e64ad6f"
+  },
+  "checks": [
+    "Reviewed live startup ordering, last run and next schedule.",
+    "Bound current index, sheet and CBS procedure; clarified role and historical scope after startup.",
+    "Verified exact rollback, live prompt and unchanged configuration after each edit. Scheduled worker must prove own startup, role output and closure."
+  ],
+  "tasks": [
+    {
+      "task": "CFB Engine Health Rebuilt",
+      "id": "6ae76df2ece4819197f91fb10076dea7",
+      "path": "evidence/scheduler_qa/CFB_20261124_DOWNSTREAM_PREFLIGHT_ROLLBACK_engine_health.json",
+      "backup_blob": "9953a52faea9e1e0e1431dab0303ac77cd716b91",
+      "before": "27bfb53a1e9c155cda73316df6555e7a76fd5eee2c915ee2371f2aa4389f96a0",
+      "after": "2e63b3192b93187a12e7e4268bae9613bf568b872ef0bc9b12440132bcf2afb6",
+      "next": "2026-11-24T16:30:00-06:00",
+      "verified": true
+    },
+    {
+      "task": "CFB Evening Availability Rebuilt",
+      "id": "6ae76df60e0c819182e2cfab1b83846a",
+      "path": "evidence/scheduler_qa/CFB_20261124_DOWNSTREAM_PREFLIGHT_ROLLBACK_evening_availability.json",
+      "backup_blob": "4d9dce8378aeb306aedb704ebbdd27eb968e9ad0",
+      "before": "0d983c2a24fbe9256e610655a8d77738685dd377ec2d71be53779b86ddee4569",
+      "after": "9284d8d68265dbb2cfdd868af1e960f209ebc7a6ae5402965ab33e48628f6da3",
+      "next": "2026-11-25T19:30:00-06:00",
+      "verified": true
+    },
+    {
+      "task": "CFB Weekly Engine QA Rebuilt",
+      "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+      "path": "evidence/scheduler_qa/CFB_20261124_DOWNSTREAM_PREFLIGHT_ROLLBACK_weekly_qa.json",
+      "backup_blob": "9def1bf6228b23b55f09b77e4508f615cadaee88",
+      "before": "41b33813c45d21212b3a60674687b9498ac207c0ff46e2e7448ebecb42c342a9",
+      "after": "10bebd1c5ef21bf82788d368ef54f695da8e99b021b59316eb9b3649e213dad8",
+      "next": "2026-11-28T09:00:00-06:00",
+      "verified": true
+    }
+  ]
+}
