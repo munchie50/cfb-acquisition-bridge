@@ -1,0 +1,3 @@
+# Nov. 24 Week 13 targeted decision recheck — run closure
+
+RUN_INCOMPLETE. Of 42 rechecked games, one resolved PASS, zero expired and 41 remain evidence-blocked. Current canonical Hot Sheet evidence/operational/CFB_WEEK13_HOT_SHEET_2026-11-24_0735CT.md, publication commit 1a363d08c9d696f86b8ae24df09ad84e6eeec037, selection and canonical bindings independently verified. Terminal candidate evidence/run_receipts/CFB_MARKET_MONITOR_20261124_0700CT_MANUAL_GAP_RECHECK_TERMINAL_CANDIDATE.md, blob feaa3a5610ddb7f4bd29623395661a86436a0f88, commit e25ea31a7a94c9bf94cc61427a08cb4467ece425, independently read back in full. Original scheduled failure and controls preserved.
