@@ -1,0 +1,69 @@
+{
+  "status": "PROMPT_AND_CONFIG_VERIFIED; SCHEDULED_PROOF_PENDING",
+  "recovery_index": "evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v1_297.md",
+  "prior_manifest": "evidence/scheduler_qa/CFB_20261123_PROMPT_CLEANUP_VERIFIED.json",
+  "checks": [
+    "Exact rollback prompts and SHA-256 verified by independent GitHub readback before prompt-only updates.",
+    "Live post-edit prompts read back exactly and configuration compared against the verified baseline for each task.",
+    "Startup first, CBS/current authority after startup, role-specific scope and two-phase closure checked. Each next existing slot must prove own startup readback, role output and candidate/closure."
+  ],
+  "sequence_note": "The initial Health and Evening prechecks required explicit closure labels and made no task mutations. Weekly QA was updated before the two corrected prechecks were rerun. Each update and readback was serialized.",
+  "tasks": [
+    {
+      "slug": "market_monitor",
+      "id": "6ae766e788d881919726d0eeb44450dd",
+      "title": "CFB Market Monitor Rebuilt",
+      "backup": "evidence/scheduler_qa/CFB_20261124_STARTUP_ORDER_ROLLBACK_market_monitor.json",
+      "blob": "229e89f0f70379e0ef2f3c538c4712b0be3cd27e",
+      "pre": "4fa5ad18d2fc81404d404bdbcd9a2ad13960282695c4b57a25ebca3a89e95168",
+      "post": "9d9ed15207693c4c6e5f7b0a3ea95cf6bfacf8606ea39bb8c3d4574123933368",
+      "revision": "2026-11-24T13:14:08.834469+00:00",
+      "next": "2026-11-24T13:00:00-06:00",
+      "oldRun": "7f9daec7-8a3c-8332-ab6e-b03fb621b80d",
+      "newRun": "7f9daec7-8a3c-8332-ab6e-b03fb621b80d",
+      "proof": "PENDING_NEXT_SCHEDULED_RUN"
+    },
+    {
+      "slug": "engine_health",
+      "id": "6ae76df2ece4819197f91fb10076dea7",
+      "title": "CFB Engine Health Rebuilt",
+      "backup": "evidence/scheduler_qa/CFB_20261124_STARTUP_ORDER_ROLLBACK_engine_health.json",
+      "blob": "72889ad948a528a75653dbf15530685fb285efde",
+      "pre": "6faac6747bd80c145ca595d27a039659389cbe54af28af377ba7d88450d148d2",
+      "post": "27bfb53a1e9c155cda73316df6555e7a76fd5eee2c915ee2371f2aa4389f96a0",
+      "revision": "2026-11-24T13:14:12.769576+00:00",
+      "next": "2026-11-24T16:30:00-06:00",
+      "oldRun": "28cf2f95-c428-8332-ae0b-f154a672ce19",
+      "newRun": "28cf2f95-c428-8332-ae0b-f154a672ce19",
+      "proof": "PENDING_NEXT_SCHEDULED_RUN"
+    },
+    {
+      "slug": "evening_availability",
+      "id": "6ae76df60e0c819182e2cfab1b83846a",
+      "title": "CFB Evening Availability Rebuilt",
+      "backup": "evidence/scheduler_qa/CFB_20261124_STARTUP_ORDER_ROLLBACK_evening_availability.json",
+      "blob": "bfa3c4d54400e9ed6a01b0125f0f66bbd021acbd",
+      "pre": "92073929d1907078b81875c29b810c9389fe9563b9efa1da7bc33598014a7b96",
+      "post": "0d983c2a24fbe9256e610655a8d77738685dd377ec2d71be53779b86ddee4569",
+      "revision": "2026-11-24T13:14:18.085933+00:00",
+      "next": "2026-11-25T19:30:00-06:00",
+      "oldRun": "27a7b535-d820-8325-8bb2-4597a6556aa2",
+      "newRun": "27a7b535-d820-8325-8bb2-4597a6556aa2",
+      "proof": "PENDING_NEXT_SCHEDULED_RUN"
+    },
+    {
+      "slug": "weekly_qa",
+      "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+      "title": "CFB Weekly Engine QA Rebuilt",
+      "backup": "evidence/scheduler_qa/CFB_20261124_STARTUP_ORDER_ROLLBACK_weekly_qa.json",
+      "blob": "70d7c5ad5d234645537eb3e9b28c8b38d6fc21f2",
+      "pre": "db564fa249218b7392d4cf3836f1bffb8662634f0d097506c97fb9c23e68d4b5",
+      "post": "41b33813c45d21212b3a60674687b9498ac207c0ff46e2e7448ebecb42c342a9",
+      "revision": "2026-11-24T13:14:24.742692+00:00",
+      "next": "2026-11-28T09:00:00-06:00",
+      "oldRun": "e843a3a9-061c-832a-9ad4-c06eb4944811",
+      "newRun": "e843a3a9-061c-832a-9ad4-c06eb4944811",
+      "proof": "PENDING_NEXT_SCHEDULED_RUN"
+    }
+  ]
+}
