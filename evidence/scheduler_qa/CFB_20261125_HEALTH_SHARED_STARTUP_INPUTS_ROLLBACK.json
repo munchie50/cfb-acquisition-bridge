@@ -1,0 +1,27 @@
+{
+  "task_id": "6ae76df2ece4819197f91fb10076dea7",
+  "revision": "2026-11-24T22:35:43.191445+00:00",
+  "configuration": {
+    "id": "6ae76df2ece4819197f91fb10076dea7",
+    "title": "CFB Engine Health Rebuilt",
+    "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260927T163000\nRRULE:FREQ=DAILY;BYHOUR=16;BYMINUTE=30;BYSECOND=0\nEND:VEVENT",
+    "timing_mode": "exact_schedule",
+    "is_enabled": true,
+    "team_id": null,
+    "conversation_id": "6ae7bdde-38bc-83ea-a16a-5a90c693f1b5",
+    "thread_id": null,
+    "is_self_owned_automation": false,
+    "default_timezone": "America/Chicago",
+    "environment_selection": "inherited",
+    "environments": null,
+    "triggers": null
+  },
+  "prompt_sha256": "e5590ba64853eabed0976a97cada2cc31c5ecbbfb7c1329bd2df30a790bed69d",
+  "restore": {
+    "tool": "mcp__codex_apps__automations_update",
+    "arguments": {
+      "jawbone_id": "6ae76df2ece4819197f91fb10076dea7",
+      "prompt": "# CFB Engine Health production execution order\n\n1. Start. Record the actual invocation UTC, scheduled slot, task/trigger, available invocation ID, correlation and tools. On authenticated GitHub main in munchie50/cfb-acquisition-bridge, fresh-read HEAD and the unique run-correlated path under evidence/run_receipts/. Persist append-only RUN_STARTED and independently fetch exact bytes and Git blob. If the unique new receipt path returns HTTP 404, immediately attempt the established append-only RUN_STARTED write to main, then independently read back and verify the exact saved receipt. Follow the working startup path in Market Monitor commit b12971c8ba921b2174a2bda5d075fe4cfbbb49aa. On stale-HEAD 409 fresh-read HEAD and target and retry with the established compare-and-swap guard, at most three total attempts. If the startup write fails or its capability is unavailable, record the attempted operation, tool, path and exact error or unavailable capability. Continue independent Health checks and keep unsafe dependent mutations blocked.\n2. Resolve authority. Read the latest accepted evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v*.md on authenticated main and follow its exact current selector, accepted contracts and task-specific pointers. Read evidence/CFB_CBS_CAPTURE_HANDOFF_20261123.md and evidence/CFB_TERMINAL_RUN_RECEIPT_CLOSURE_CONTRACT_2026-10-05.md. Identify due work, applicable deadlines and exact predecessor artifacts. Historical instructions are references only for applicable historical checks; the archived prior prompt, exact paths and proven recovery procedures are retained at evidence/scheduler_qa/CFB_20261124_ENGINE_HEALTH_ORDERED_RUN_PROMPT_ROLLBACK.json. Use a retained workaround only for the actual dependency it solves. Preserve task configuration, Champion, frozen evidence and exclusions, source authority, cutoffs, controls and financial ledgers. Keep real-money tickets isolated as execution evidence.\n3. Execute and verify owned work. Engine Health owns operational integrity checks. First inspect actual due scheduled Monitor runs and their startup, output and terminal evidence. Classify manual recoveries independently. Verify the current selected Hot Sheet, retained CBS source binding at the original publication clock, and market, decision, execution and scorecard bindings. Reuse accepted integrity and chronology proof only on exact matching blobs. Complete connector-supported checks first. Run repository code only for a named required check lacking reusable proof. Then finish due cross-file chronology and historical coverage using current checkpoints and targeted original evidence; preserve the watermark for missing evidence and intentional pauses. Record actual start, completion and publication against applicable deadlines and flag collisions to Monitor. Save and independently verify Health findings, due/verified/blocked counts and evidence pointers. For a missing runtime or artifact complete independently supported checks and record what remains. Weekly QA owns analytics certification.\n4. Close. Independently fetch exact saved owned outputs and verify path, bytes, Git blob and applicable bindings. For every blocked stage report operation, actual tool, attempted path or capability, exact error, owner and next action. Record each stage's actual status including NOT_ATTEMPTED where applicable. Persist a run-specific TERMINAL_CANDIDATE and independently fetch/check exact bytes and blob. Then persist a distinct RUN_CLOSURE referencing its exact path and blob, output identities, actual boundaries, final classification and unresolved items, and independently fetch/check closure itself. Follow the closure contract for RUN_PASS, RUN_INCOMPLETE or RUN_FAIL. If terminal persistence is unavailable, report its exact failed operation as TERMINAL_PERSISTENCE_UNAVAILABLE. A chat summary or scheduler completion cannot substitute for these records. Do not create a task or publish from a downstream role."
+    }
+  }
+}
