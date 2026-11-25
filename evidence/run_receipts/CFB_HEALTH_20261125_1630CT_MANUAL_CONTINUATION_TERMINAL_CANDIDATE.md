@@ -1,0 +1,5 @@
+# Nov. 25 Engine Health manual continuation terminal candidate
+
+Proposed classification: RUN_INCOMPLETE. The manual audit reconciled both due scheduled Monitor invocations and completed the available Week 13 publication integrity, binding and chronology checks against pin 40b68f4d14b9d89194b47868c7850dcd96dad588. Independently fetched findings evidence/run_receipts/CFB_HEALTH_20261125_1630CT_MANUAL_CONTINUATION_FINDINGS.md, exact blob ef51a0c252fb7e91fe78958b42558c42a86ff694, at 57440aa98f4bcab76f5623c7256135477aa97804; exact bytes matched before issuing this candidate.
+
+Required evidence outstanding: original Nov. 25 07 CT Monitor startup/output/terminal and 13 CT scheduled output/terminal; original Oct. 9 07 CT Monitor terminal and rejection records; original Oct. 10 09 CT QA output and terminal records; operator issue clock, delivery-to-ticket attribution, exposure allocation and ticket settlement evidence listed in findings. Missing evidence does not erase the verified manual catch-ups or alter historical coverage. The original scheduled Health run remains incomplete. Scientific and Champion effect: none.
