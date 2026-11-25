@@ -1,0 +1,5 @@
+# Nov. 25 Health shared startup and input verification
+
+Exact live prompt and configuration readback passed. Same task ID 6ae76df2ece4819197f91fb10076dea7, existing natural slot 2026-11-25T16:30:00-06:00. Backup evidence/scheduler_qa/CFB_20261125_HEALTH_SHARED_STARTUP_INPUTS_ROLLBACK.json, blob 275eeb98477a8c76101f818e53fa5744f59b4332. Installed SHA-256 b1a8d9b519960ae7e28f124b924318e41f535a412cd55ec857c069c824731e47.
+
+Restored the explicit first authenticated GitHub read, receipt write and immediate commit-pinned readback. Added literal verified index fallback preserving newer accepted authority. Use Git blob retrieval only for a required exact-byte ledger check when Contents omits payload and exact-hash prior proof cannot be reused. Health's own verification role and closure are preserved; no CBS producer or publication duties added. The Nov. 25 13 CT scheduled Monitor receipt exists, with its own readback and later production stages unattempted. Health observes the original run evidence. Successful natural Health execution with these instructions remains pending.
