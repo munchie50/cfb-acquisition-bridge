@@ -1,0 +1,27 @@
+{
+  "task_id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+  "revision": "2026-11-24T19:10:08.112673+00:00",
+  "prompt_sha256": "74f1fbe5ba7b8ff7bae6b401e8cca7050b079736347c17fe93ab6885c8c3d503",
+  "configuration": {
+    "id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+    "title": "CFB Weekly Engine QA Rebuilt",
+    "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Chicago:20260927T090000\nRRULE:FREQ=WEEKLY;BYDAY=SA,SU;BYHOUR=9;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+    "timing_mode": "exact_schedule",
+    "is_enabled": true,
+    "team_id": null,
+    "conversation_id": "6aef3e5c-1008-83ea-9a69-8d35b7ef73c8",
+    "thread_id": null,
+    "is_self_owned_automation": false,
+    "default_timezone": "America/Chicago",
+    "environment_selection": "inherited",
+    "environments": null,
+    "triggers": null
+  },
+  "restore": {
+    "tool": "mcp__codex_apps__automations_update",
+    "arguments": {
+      "jawbone_id": "6ae76c7a6d38819190b5cae3bdd6cc53",
+      "prompt": "# CFB Weekly Engine QA production execution order\n\n1. Start. Record the actual invocation UTC, scheduled slot, task/trigger, available invocation ID, correlation and tools. On authenticated GitHub main in munchie50/cfb-acquisition-bridge, fresh-read HEAD and the unique run-correlated path under evidence/run_receipts/. Persist append-only RUN_STARTED and independently fetch exact bytes and Git blob. An absent new path is expected. On stale-HEAD 409 fresh-read HEAD and target and retry with the established compare-and-swap guard, at most three total attempts. If startup persistence fails, record the exact failure, keep unsafe dependent mutations blocked and continue authorized independent work.\n2. Resolve authority. Read the latest accepted evidence/CFB_ENGINE_CURRENT_RECOVERY_INDEX_v*.md on authenticated main and follow its exact current selector, accepted contracts and task-specific pointers. Read evidence/CFB_CBS_CAPTURE_HANDOFF_20261123.md and evidence/CFB_TERMINAL_RUN_RECEIPT_CLOSURE_CONTRACT_2026-10-05.md. Identify due work, applicable deadlines and exact predecessor artifacts. Historical instructions are references only for applicable historical checks; the archived prior prompt, exact paths and proven recovery procedures are retained at evidence/scheduler_qa/CFB_20261124_WEEKLY_ENGINE_QA_ORDERED_RUN_PROMPT_ROLLBACK.json. Use a retained workaround only for the actual dependency it solves. Preserve task configuration, Champion, frozen evidence and exclusions, source authority, cutoffs, controls and financial ledgers. Keep real-money tickets isolated as execution evidence.\n3. Execute and verify owned work. Weekly Engine QA owns verification and certification under the accepted QA contracts. First audit the applicable actual Saturday Monitor slot and current selected publication, including receipt identities, saved source bytes and bindings, decision and publication clocks against actual deadlines, original lineage and independent readback. Apply dated fixtures and counts only to their governed historical obligations. Reuse accepted exact-hash evidence. Use runtime only for required checks whose proof is missing or changed and report the exact unavailable dependency while continuing independent QA. Then complete due official outcomes and game-ID reconciliation, scorecard and analytics certification where governing artifacts and verified inputs exist. Preserve ticket evidence isolation and frozen/challenger rules. Save and independently verify the dated QA artifact with findings, due/verified/blocked counts, evidence and owners. Refer operational repairs to the owning task without changing canonical publication. Weekend QA audits elapsed slots and flags future collisions without reopening them.\n4. Close. Independently fetch exact saved owned outputs and verify path, bytes, Git blob and applicable bindings. For every blocked stage report operation, actual tool, attempted path or capability, exact error, owner and next action. Record each stage's actual status including NOT_ATTEMPTED where applicable. Persist a run-specific TERMINAL_CANDIDATE and independently fetch/check exact bytes and blob. Then persist a distinct RUN_CLOSURE referencing its exact path and blob, output identities, actual boundaries, final classification and unresolved items, and independently fetch/check closure itself. Follow the closure contract for RUN_PASS, RUN_INCOMPLETE or RUN_FAIL. If terminal persistence is unavailable, report its exact failed operation as TERMINAL_PERSISTENCE_UNAVAILABLE. A chat summary or scheduler completion cannot substitute for these records. Do not create a task or publish from a downstream role."
+    }
+  }
+}
