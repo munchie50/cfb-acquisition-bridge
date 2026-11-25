@@ -1,0 +1,5 @@
+# Nov. 25 verified Monitor post-startup input paths
+
+Startup and closure unchanged. Live exact prompt and task configuration read back. Next scheduled slot 2026-11-26T07:00:00-06:00. Verified rollback evidence/scheduler_qa/CFB_20261125_MONITOR_POST_STARTUP_INPUTS_ROLLBACK.json, blob bc2efefe3cee94ce2cad05f34608986a35baca04. Installed SHA-256 065a33b520ac5aee7bcf18410a5a4e6dabe105803061b96143049d5b152d5e77.
+
+After startup: name the verified literal recovery index fallback while preserving newer accepted authority, name the governed Week 13 CBS source and normalizer/lineage, and recover large canonical parents via authenticated Git blob fetch if Contents returns only an identity. The two current canonical Contents reads returned blob IDs with empty content; the corresponding Git blob reads returned nonempty payloads. Scheduled-worker runtime, byte verification/materialization, compilation and publication remain to be proven by that worker. Reuse existing guarded publication and two-phase closure. These checks do not establish the cause of the early exit.
