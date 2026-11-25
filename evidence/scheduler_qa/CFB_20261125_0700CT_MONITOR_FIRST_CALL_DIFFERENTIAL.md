@@ -1,0 +1,9 @@
+# Nov. 25 07 CT Monitor first GitHub call differential
+
+Task 6ae766e788d881919726d0eeb44450dd. Natural run b17a0498-44fc-8324-be67-f50ac5c2dd8f. Scheduled 13:00Z, started 13:00:56.845716Z, ended 13:01:11.023739Z. Recorded completed by scheduler; worker RUN_INCOMPLETE. Its result reports GitHub tool discovery only and no authenticated main call or RUN_STARTED attempt. No returned tool error or termination trace exposed; no user action requested by task result. This is an observer record, not a worker startup or closure.
+
+Prompt hash previously independently matched the Nov25 preflight. Expected 404 and bounded 409 handling were downstream of the first missing call. Nov24 13 CT same task executed main/target reads and persisted startup (b12971c8ba921b2174a2bda5d075fe4cfbbb49aa). Nov24 07 CT reached authenticated GitHub but did not persist startup (b827139d73fd0522ccf3887a3b551d6e5af36e79). These are different observed boundaries.
+
+Existing same-task Run Now diagnostics on Nov10, Nov12 and Nov17 explicitly returned inline Work Mode and supplied no background-worker proof: 833ad958cb142d2fe337a1313992c279d98e9008, c36f30c52808fab935fed314800699676dd3ac7b, 78fa699c020da2a43001353ccbaf00a843304e35. Nov20 DNS/bundle transport evidence at 6ebc278bcfd653d4f8ba100847158f89771e0fda describes a later checkout stage reached after connector access. No inference about today's pre-call exit is supported from those error records.
+
+Next discriminating evidence at existing Nov25 13 CT natural slot: scheduled worker's first authenticated main call result (commit SHA or exact tool error), then its startup receipt and independent readback. If no call occurs, require worker-side invocation or termination trace keyed to the run ID; the exposed scheduler summary cannot distinguish tool invocation suppression from early exit. No task, cadence, environment, or canonical output changes in this diagnostic.
