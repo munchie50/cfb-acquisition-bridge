@@ -1,0 +1,3 @@
+# RUN_CLOSURE — Nov. 25 morning Market Monitor manual recovery
+
+RUN_INCOMPLETE. Independently read back evidence/run_receipts/CFB_MARKET_MONITOR_20261125_0700CT_MANUAL_CATCHUP_TERMINAL_CANDIDATE.md, Git blob 4b4c59218f9d97ecde01002b243edb1f62021189, before recording this separate closure. Scheduled b17a0498-44fc-8324-be67-f50ac5c2dd8f remains RUN_INCOMPLETE. New CBS capture 4a4e5b259fb68c7fda646ec83854d863a24ade85 and review 99c0234900e783854a3471bb264ec6cd7948201e verified. Current selected Nov24 07:35 CT publication and canonical bindings matched. Monitor owns remaining material and quote checks listed in the candidate and recheck. Same-worker startup proof remains pending at the existing 13 CT slot. Scientific and Champion effect: none.
