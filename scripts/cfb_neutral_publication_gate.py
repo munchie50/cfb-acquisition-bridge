@@ -122,6 +122,8 @@ def selected_block(content,tag,schema,as_of,expected_ids=None):
                     raise ValueError('historical original conditional limits cannot change through PASS')
                 previous=old.get(x['game_id'])
                 if previous is not None:
+                    if tag==profile_config('WEEK13')['decision_tag'] and previous['state']=='HISTORICAL_GAP' and x!=previous:
+                        raise ValueError('Week13 historical gap cannot change or reopen')
                     if previous['state']==EXPIRED_UNPUBLISHED and x!=previous:
                         raise ValueError('expired unpublished recognition cannot change or reopen')
                     # Current-cycle clocks cannot erase an earlier constraint.
@@ -304,13 +306,17 @@ def inputs(market,decision,lineage,as_of,profile='WEEK7'):
     if (m['cycle_id'],m['as_of_utc'])!=(d['cycle_id'],d['as_of_utc']):raise ValueError('market/decision boundary mismatch')
     gaps=None
     if any(r.get('state')=='HISTORICAL_GAP' for r in d['rows']):
-        if profile not in ('WEEK8','WEEK10') or not weekly:raise ValueError('historical gap requires qualified recovery profile')
-        if profile=='WEEK10':
-            from cfb_week10_publication import bootstrap_check,recovery_context
+        if profile not in ('WEEK8','WEEK10','WEEK13') or not weekly:raise ValueError('historical gap requires qualified recovery profile')
+        if profile=='WEEK13':
+            from cfb_week13_publication import missed_review_context
+            gaps=missed_review_context(market,decision)
         else:
-            from cfb_week8_publication import bootstrap_check,recovery_context
-        bootstrap_check(market,decision,lineage)
-        gaps=recovery_context(market,decision,lineage)
+            if profile=='WEEK10':
+                from cfb_week10_publication import bootstrap_check,recovery_context
+            else:
+                from cfb_week8_publication import bootstrap_check,recovery_context
+            bootstrap_check(market,decision,lineage)
+            gaps=recovery_context(market,decision,lineage)
         if gaps is None:raise ValueError('historical gap requires recovery declaration')
     if conditional:
         # A later PASS or complete packet cannot conceal an invalid earlier
@@ -341,8 +347,8 @@ def inputs(market,decision,lineage,as_of,profile='WEEK7'):
                 elif row['state']==EXPIRED_UNPUBLISHED:
                     from cfb_expired_unpublished_review import validate as validate_expired
                     validate_expired(row,source_row,c[row['game_id']],packet,decision,profile)
-                elif row['state'] not in (('PASS','INCONCLUSIVE','HISTORICAL_GAP') if gaps else
-                                           ('PASS','INCONCLUSIVE','OBSERVATION_ONLY') if profile == 'WEEK13'
+                elif row['state'] not in (('PASS','INCONCLUSIVE','OBSERVATION_ONLY','HISTORICAL_GAP') if profile == 'WEEK13'
+                                           else ('PASS','INCONCLUSIVE','HISTORICAL_GAP') if gaps
                                            else ('PASS','INCONCLUSIVE')) or row['review_ref'] is not None:
                     raise ValueError('unsupported conditional history state/review')
                 else:

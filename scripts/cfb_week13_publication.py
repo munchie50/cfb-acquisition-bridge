@@ -111,6 +111,71 @@ def streams(content, parent, tag):
     return result
 
 
+MISSED_REVIEW_PATH = 'evidence/operational/CFB_WEEK13_NOV27_1300CT_MANUAL_DECISION_AND_SCORE_RECONCILIATION.md'
+MISSED_REVIEW_BLOB = 'f4985616757eba2fa0a8802ebbbb86b0321ca805'
+MISSED_REVIEW_AT = '2026-11-27T21:20:36.964Z'
+MISSED_REVIEW_KICKOFFS = {
+    '401869930': '2026-11-27T20:00:00Z',
+    '401856759': '2026-11-27T20:30:00Z',
+    '401864549': '2026-11-27T20:30:00Z',
+}
+MISSED_REVIEW_REASON = (
+    'Missed Nov. 27 1 p.m. CT cutoff and kickoff. Late review recorded at '
+    + MISSED_REVIEW_AT + ' in ' + MISSED_REVIEW_PATH
+    + '. No pregame decision or execution reconstructed.'
+)
+
+
+def missed_review_context(market, decision):
+    """Qualify the bounded late recognition against exact pre-recovery history."""
+    prior_market = market.encode()[:7443618].decode()
+    prior_decision = decision.encode()[:3842976].decode()
+    if (gate.blob(prior_market), gate.blob(prior_decision)) != (
+            '8645f143937fe2352a337194f5e9064f9e8f6f12',
+            '93f23d020b7a2af3bcfd261a8b19ac8d3f9e8d61'):
+        raise ValueError('Week13 missed-review parent bytes changed')
+    if gate.blob((ROOT / MISSED_REVIEW_PATH).read_text()) != MISSED_REVIEW_BLOB:
+        raise ValueError('Week13 missed-review evidence bytes changed')
+
+    previous = streams(prior_decision, DECISION_PARENT, CFG['decision_tag'])
+    history = streams(decision, DECISION_PARENT, CFG['decision_tag'])
+    market_history = streams(market, MARKET_PARENT, CFG['market_tag'])
+    new = history[len(previous):]
+    if not new or history[:len(previous)] != previous:
+        raise ValueError('Week13 missed-review must append to the exact prior decision')
+    origin = new[0][1]
+    if gate.clock(origin['as_of_utc']) < gate.clock(MISSED_REVIEW_AT):
+        raise ValueError('Week13 gap predates the actual review')
+    old = {row['game_id']: row for row in previous[-1][1]['rows']}
+    expected = {}
+    for gid, kickoff in MISSED_REVIEW_KICKOFFS.items():
+        if (old[gid]['state'] != 'INCONCLUSIVE'
+                or gate.clock(old[gid]['reconciliation_utc']) != gate.clock('2026-11-27T19:00:00Z')
+                or gate.clock(kickoff) > gate.clock(MISSED_REVIEW_AT)):
+            raise ValueError('Week13 gap requires elapsed unresolved cutoff')
+        expected[gid] = dict(
+            game_id=gid, state='HISTORICAL_GAP', reason=MISSED_REVIEW_REASON,
+            reconciliation_utc=None, planning_cutoff_utc=None, cutoff_authority='UNVERIFIED',
+            acceptable_number=None, execution_window=None, state_recorded_at_utc=origin['as_of_utc'],
+            state_evidence=origin['cycle_id'])
+    for (_, packet, _), (_, source, _) in zip(new, market_history[len(previous):], strict=True):
+        gaps = {row['game_id']: {k: v for k, v in row.items()
+                                if k != 'review_ref' or v is not None}
+                for row in packet['rows'] if row['state'] == 'HISTORICAL_GAP'}
+        if gaps != expected:
+            raise ValueError('Week13 missed-review population or immutable disposition changed')
+        if (source['cycle_id'], source['as_of_utc']) != (packet['cycle_id'], packet['as_of_utc']):
+            raise ValueError('Week13 missed-review paired market boundary changed')
+        for row in source['rows']:
+            gid = row['game_id']
+            if gid in expected and (gate.clock(row['kickoff_utc']) != gate.clock(MISSED_REVIEW_KICKOFFS[gid])
+                                    or row['current'] is not None
+                                    or row['current_availability'] != 'UNAVAILABLE'):
+                raise ValueError('Week13 missed-review requires elapsed kickoff and unavailable quote')
+    return {'recognized_gaps': {gid: {'as_of_utc': origin['as_of_utc'],
+                                      'state_evidence': origin['cycle_id']} for gid in expected}}
+
+
 def bootstrap_check(market, decision, lineage):
     market_stream = streams(market, MARKET_PARENT, CFG['market_tag'])
     decision_stream = streams(decision, DECISION_PARENT, CFG['decision_tag'])
@@ -153,7 +218,7 @@ def compile(market, decision, source, lineage, cycle, as_of, decision_rows):
             if not same and gate.clock(sources[row['game_id']]['kickoff_utc']) <= gate.clock(as_of):
                 raise ValueError('elapsed PASS cannot rewrite pregame rationale')
             origin = old
-        elif same and row['state'] in ('CONDITIONAL', 'OBSERVATION_ONLY'):
+        elif same and row['state'] in ('CONDITIONAL', 'OBSERVATION_ONLY', 'HISTORICAL_GAP'):
             origin = old
         else:
             origin = None
