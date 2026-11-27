@@ -1,0 +1,54 @@
+name: CFB Exact Origin Text Index QA
+on:
+  push:
+    branches: [qa/cloud-source-preparation-20261030]
+    paths: ['.github/workflows/cfb_origin_text_index_qa.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: cfb-origin-text-index-qa
+  cancel-in-progress: false
+env:
+  CFB_ACCEPTED_FREEZE_ARCHIVE: ${{ github.workspace }}/validation-archives/cfb_first_frozen.zip
+  CFB_ACCEPTED_REFRESH_ARCHIVE: ${{ github.workspace }}/validation-archives/cfb_accepted_refresh.zip
+jobs:
+  same-runner-comparison:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: cfb-validation-immutable-archives
+          path: validation-archives
+          run-id: 40991413382
+          github-token: ${{ github.token }}
+      - name: Verify both original immutable archive identities
+        run: |
+          echo '772b8683365ebf62d35fc3813beb138688b84af4172a0b261fd9218691d5adcf  validation-archives/cfb_first_frozen.zip' | sha256sum -c -
+          echo '674501a82f6eb207b58b30c483910304c881b3ce29ba2506258152455cb6047b  validation-archives/cfb_accepted_refresh.zip' | sha256sum -c -
+      - name: Reject stale or mutated history and keep validation per call
+        run: python -m unittest discover -s scripts -p test_cfb_origin_text_index.py -v
+      - name: Recover original unchanged baseline in separate worktree
+        run: git worktree add --detach "$RUNNER_TEMP/cfb-origin-baseline" d4361825d7499f0aace070dbfd092957dc976fc0
+      - name: Compare all original regressions and full saved publication on same runner
+        run: >-
+          python scripts/cfb_origin_index_comparison.py
+          --baseline "$RUNNER_TEMP/cfb-origin-baseline"
+          --candidate "$GITHUB_WORKSPACE"
+          --output origin-index-qa
+      - name: Preserve completed checks and any failure evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfb-origin-text-index-qa
+          path: origin-index-qa/
+          if-no-files-found: error
+          retention-days: 30
