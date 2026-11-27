@@ -1,0 +1,37 @@
+{
+  "cycle": "CFB_MARKET_MONITOR_20261127T134121Z",
+  "as_of": "2026-11-27T13:41:21.611760+00:00",
+  "source": {
+    "path": "evidence/operational/CFB_WEEK13_CBS_FBS_TABLES_20261127T133809Z_MANUAL.md",
+    "blob": "fabe69b920f946f46bca31df3b9311a0ee5c4097",
+    "recovered_by": "2026-11-27T13:38:09.176Z"
+  },
+  "review": {
+    "path": "evidence/operational/CFB_WEEK13_NOV27_0700CT_MANUAL_DECISION_RECHECK.md",
+    "blob": "3f71758a3b9484069290214f73daaf5e111c4eec"
+  },
+  "result": {
+    "verdict": "PASS_SAVED_PUBLICATION_INTEGRITY_ONLY",
+    "publication_boundary_utc": "2026-11-27T13:41:21.611760+00:00",
+    "audit_as_of_utc": "2026-11-27T13:41:21.611760+00:00",
+    "integrity": {
+      "verdict": "PASS_NEUTRAL_CANONICAL_PRESENTATION_ONLY",
+      "games": 69,
+      "sheet_blob": "c4410b6d5b11cddda72ea565cf1828e8d1685f57",
+      "scope": "typed neutral canonical display only; no source truth/betting/natural-run acceptance"
+    },
+    "operational_exceptions": [],
+    "elapsed_current_quote_game_ids": [],
+    "overdue_open_decision_game_ids": [],
+    "current_operational_acceptance": "NOT_CERTIFIED",
+    "scope": "CODE_QA_SAVED_VIEW_ONLY_NOT_FRESH_MARKET_OR_RUN_PASS"
+  },
+  "selector": {
+    "verdict": "PASS_SUPPLIED_CURRENT_DECISION_BINDING_ONLY",
+    "decision_blob": "93f23d020b7a2af3bcfd261a8b19ac8d3f9e8d61",
+    "scope": "caller must freshly recover canonical state; binding alone does not validate verdicts, freshness, availability or bets",
+    "sheet_path": "evidence/operational/CFB_WEEK13_HOT_SHEET_2026-11-27_0741CT.md",
+    "sheet_blob": "c4410b6d5b11cddda72ea565cf1828e8d1685f57",
+    "navigation_index_blob": "b66335e914ec09308d0a60b241d38d8f9f0c3226"
+  }
+}
