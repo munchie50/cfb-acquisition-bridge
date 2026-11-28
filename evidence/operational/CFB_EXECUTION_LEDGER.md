@@ -416,3 +416,22 @@ The Nov21 batch's original **Timing caution** remains valid that printed event t
 ## November 22 user-attested Nov21 settlement amount — operator receipts not independently inspected
 
 User explicitly confirmed in conversation that Caesars settled the November 21 batch and that the **aggregate actual gross payout was $57.15**, matching the independently calculated conditional return for 13 recorded tickets. Aggregate stake was $75.00, so **user-attested batch net is -$17.85**. Evidence class: USER_ATTESTED_SETTLEMENT_AGGREGATE; not OPERATOR_RECEIPT_VERIFIED, and not independent per-ticket redemption confirmation. The 5-win/8-loss result grading remains the existing QA candidate; do not silently upgrade each ticket to operator-verified. This is a historical settlement confirmation, **not** a new $57.15 funding event, additional wager, or instruction to debit stakes again. Preserve the separate $2.90 voucher as unrelated. Cash/bankroll ledger and individually verified operator settlement fields remain unchanged pending reconciliation of actual payment/redemption channel and per-ticket proof. No model, frozen prediction, canonical scorecard, decision attribution or scheduled-task change.
+
+
+## November 28, 2026 — Week 13 Saturday actual ticket intake
+
+Source: nine original user-uploaded Caesars Sportsbook slips from Harrah's Columbus, retained in the conversation. All are real-money straight wagers. Ticket suffixes are retained for deduplication. Issue and event times are November 28 as printed; actual kickoff and receipt-clock timezone are unverified. Timing classification: UNVERIFIED. Production/sandbox allocation: UNASSIGNED. Outcome and sportsbook settlement: pending verification for all nine.
+
+| Execution ID | Ticket suffix | Matchup | Accepted selection | Odds | Stake | Printed issue | Printed event | Printed max win | Printed max payout |
+|---|---|---|---|---:|---:|---|---|---:|---:|
+| CFB_NOV28-01 | 4140 | Central Michigan at Ball State | Central Michigan -3 | -115 | $5.00 | 09:58 | 11:05 | $4.35 | $9.35 |
+| CFB_NOV28-02 | 9218 | Kennesaw State at Western Kentucky | Kennesaw State -3.5 | -107 | $5.00 | 09:58 | 12:05 | $4.65 | $9.65 |
+| CFB_NOV28-03 | 8633 | Kansas State at Iowa State | Under 52.5 | -115 | $5.00 | 09:57 | 13:05 | $4.35 | $9.35 |
+| CFB_NOV28-04 | 7584 | Baylor at Houston | Houston -3.5 | -108 | $5.00 | 09:56 | 20:35 | $4.65 | $9.65 |
+| CFB_NOV28-05 | 1795 | Kansas at Oklahoma State | Under 65.5 | -113 | $10.00 | 09:55 | 17:20 | $8.85 | $18.85 |
+| CFB_NOV28-06 | 9008 | Washington at Oregon | Washington +13.5 | +100 | $10.00 | 09:55 | 18:40 | $10.00 | $20.00 |
+| CFB_NOV28-07 | 2332 | Washington at Oregon | Under 51.5 | -113 | $5.00 | 09:54 | 18:40 | $4.40 | $9.40 |
+| CFB_NOV28-08 | 2588 | Florida Atlantic at East Carolina | Under 58.5 | -112 | $5.00 | 09:53 | 12:05 | $4.45 | $9.45 |
+| CFB_NOV28-09 | 1716 | Louisiana Tech at Georgia Southern | Under 52.5 | -106 | $5.00 | 09:52 | 11:05 | $4.70 | $9.70 |
+
+Nine distinct tickets, $55.00 staked, $50.40 printed maximum profit, $105.40 combined printed maximum payout. Washington spread and Washington–Oregon total are separate straight tickets. The Kansas–Oklahoma State ticket matches the one-trip card's number and price threshold; its 09:55 printed issue is later than the card's 09:45 CT expiration if the ticket clock is CT. See [one-trip pregame card](CFB_WEEK13_NOV28_ONE_TRIP_PREGAME_CARD.md). Engine authorization and Champion linkage are unverified. Execution evidence only. Exclude these tickets from model inputs, recommendations, calibration and training. No realized P&L, cash movement or reconciled holdings inferred.
