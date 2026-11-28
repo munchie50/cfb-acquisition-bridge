@@ -1,0 +1,5 @@
+# TERMINAL_CANDIDATE — Saturday 09:00 CT Weekly QA manual continuation
+
+RUN_INCOMPLETE. Separate manual startup evidence/run_receipts/CFB_WEEKLY_QA_20261128_0900CT_MANUAL_CONTINUATION_RUN_STARTED.md, blob 5bbc10d5ffa3706c6dafb3e05f2292e5cf7d3142; original scheduled run 9f804427-c79c-8326-bfdf-3fdbe79a26ad remains RUN_INCOMPLETE. Startup and authority were recovered during scheduled execution. Dated output and terminal writes were not completed by that original worker.
+
+Dated manual QA findings evidence/audits/CFB_WEEKLY_SATURDAY_QA_20261128_0900CT_MANUAL_CONTINUATION.md, commit 800c83bf55508fb083c525ffa538807f77a3d6e9, blob 94a97bce329df1a7869a5a78fa6ad245cfe2aa43, independently verified. Selected Week 13 publication, 543 bindings, all 13 Friday CBS finals and Week 12 QA-only hold reconciled. Remaining Saturday outcome cohort is future; Week 12 canonical scoring admission and sportsbook settlement require separate evidence. No financial, model, Champion or canonical publication mutation.
