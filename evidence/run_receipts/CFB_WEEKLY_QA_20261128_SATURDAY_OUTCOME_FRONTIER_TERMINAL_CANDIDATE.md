@@ -1,0 +1,3 @@
+# TERMINAL_CANDIDATE — Saturday outcome QA continuation
+
+RUN_INCOMPLETE against the full outcome obligation. Independent readback verified evidence/audits/CFB_WEEKLY_QA_20261128_SATURDAY_OUTCOME_FRONTIER.md at 479e41fa0f24c121cbf50692556b7b274f228cc1, blob 930b07639b14f890820b0646e18da34e3b4fc829. No Saturday fixture had reached kickoff by review, and no new official finals, Week 12 authority or operator settlement evidence qualified. The original scheduled RUN_INCOMPLETE and the verified Friday finals stand. No canonical scorecard, financial ledger, schedule, frozen model or Hot Sheet mutation.
