@@ -1,0 +1,7 @@
+# Market Monitor grouped startup mitigation
+
+The Nov. 27 13:00 CT run b07ccc75-4cd0-8322-9a5c-f40f9c7c649b exited after authenticated main read and write-tool discovery. Its prior prompt grouped only the create and readback, leaving a tool-orchestration break before the receipt lookup and write. The Nov. 26 Health mitigation grouped all four startup operations and the Nov. 27 scheduled Health invocation advanced through receipt readback (fc0f0fd344ab14009e09b8206f28d3275e711f04). Health still did not close. Monitor itself has prior scheduled startup receipts on Nov. 26 at 07 and 13 CT. This evidence supports targeting the transition, while the platform's actual termination reason remains unknown.
+
+Applied only the startup grouping to the existing Monitor prompt. Verified exact live prompt at revision 2026-11-28T02:34:30.274135+00:00 and unchanged task identity, owner fields, schedule, next slot, timezone, enabled state and environment selection. Exact restore payload was read back at a7c7d41394eb3e53b33829bd054d9e5a5db2f3fc, blob 848234a2611d1a048ff1395432839c609f889a93, path evidence/scheduler_qa/CFB_20261127_MONITOR_GROUPED_STARTUP_PROMPT_ROLLBACK.json.
+
+Next natural proof: Nov. 28 07:00 CT. Correlate the run ID with startup write/readback, fresh capture, selected publication and terminal closure. The installed edit is not a scheduled pass. If the worker stops again, the platform needs to recover the per-invocation tool-dispatch and termination events and original prompt snapshot for the failed run. Preserve original incomplete results.
