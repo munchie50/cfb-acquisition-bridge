@@ -1,0 +1,3 @@
+# TERMINAL_CANDIDATE
+
+RUN_PASS for the bounded manual Evening handoff. Shared manual start evidence/run_receipts/CFB_20261127_FRIDAY_OWED_WORK_MANUAL_RUN_STARTED.md blob 4532bf448f632860e33eeb8e64b760eb68609087. Original scheduled run 181f2d0e-3e2c-8327-9b94-086b01548bec stays RUN_INCOMPLETE. The prior deadline was elapsed. Saved and independently verified evidence/operational/CFB_WEEK13_NOV27_1930CT_MANUAL_EVENING_AVAILABILITY_HANDOFF.md at d2852d9ab3f3842f75dff76c3b7d5330ff2cd730, blob d2b420a97280023dd96cd68c941cec8ddfc51c23. Game-day reports, station wind/gusts and book-direct offers still need fresh evidence where material. No new limits or canonical publication.
