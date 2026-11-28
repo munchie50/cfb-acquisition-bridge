@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 import hashlib
 import json
 from pathlib import Path
+from zoneinfo import ZoneInfo
 import subprocess
 from urllib.parse import urljoin
 from urllib.request import Request, urlopen
@@ -27,6 +28,13 @@ MAX_BYTES = 8_000_000
 # https://soonersports.com/news/2026/11/14/ou-ole-miss-football-game-moved-to-sunday-at-noon
 OLE_MISS_OKLAHOMA_ORIGINAL = ("50028715", "NCAAF_20261114_MISS@OKLA")
 OLE_MISS_OKLAHOMA_RESCHEDULED = ("50051570", "NCAAF_20261115_MISS@OKLA")
+
+
+# CBS changed this abbreviation while retaining the same event ID and teams.
+WEEK13_EVENT_ALIASES = {
+    ("50028947", "NCAAF_20261128_WASH@OREGON"):
+        ("50028947", "NCAAF_20261128_WASH@OREG"),
+}
 
 
 @dataclass(frozen=True)
@@ -100,10 +108,18 @@ def board_projection(payload, expected_events=None):
     output = []
     tables = html.fromstring(payload).xpath("//table")
     events = [event(table) for table in tables]
+    if expected_events is not None:
+        events = [WEEK13_EVENT_ALIASES.get(identity, identity) for identity in events]
     if expected_events is not None and (
         len(events) != len(expected_events) or set(events) != expected_events.keys()
     ):
-        raise ValueError("CBS event census differs from approved Week13 identities")
+        missing = sorted(expected_events.keys() - set(events))
+        extra_count = sum(identity not in expected_events for identity in events)
+        raise ValueError(
+            f"CBS event census differs from approved Week13 identities: "
+            f"expected {len(expected_events)}, observed {len(events)}, "
+            f"{extra_count} unexpected, missing {missing}"
+        )
     # Drop only the corroborated obsolete record when both exact records occur
     # once. Preserve archived single-record captures and let any other duplicate
     # reach the normalizer's identity gate. The artifact retains the raw HTML.
@@ -152,9 +168,13 @@ def inspect(payload, recovered_by):
         }
     capture = board_projection(payload, expected_events)
     elapsed = {}
-    if profile.name == "WEEK11":
-        prior = week.gate.selected_block(MARKET.read_text(), week.MARKET_TAG,
-                                         week.gate.WEEKLY_MARKET_SCHEMA, observed)
+    market = MARKET.read_text()
+    tag = week.gate.profile_config(profile.name)["market_tag"]
+    source_date = observed.astimezone(ZoneInfo("America/New_York"))
+    date_only = f"| {source_date:%a %b} {source_date.day} |"
+    needs_elapsed_context = any(line.startswith(date_only) for line in capture.splitlines())
+    if (profile.name == "WEEK11" or needs_elapsed_context) and f"```{tag}\n" in market:
+        prior = week.gate.selected_block(market, tag, week.gate.WEEKLY_MARKET_SCHEMA, observed)
         elapsed = {r["game_id"]: r["kickoff_utc"] for r in prior["rows"]
                    if r["kickoff_utc"] and week.gate.clock(r["kickoff_utc"]) < observed}
     board = normalize(capture, lineage, recovered_by,
