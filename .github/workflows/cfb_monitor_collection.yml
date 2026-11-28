@@ -55,13 +55,9 @@ jobs:
             --head "$GITHUB_SHA" --event "$GITHUB_EVENT_NAME" > "$RUNNER_TEMP/proof/source.json"
           profile="$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["profile"])' "$RUNNER_TEMP/proof/source.json")"
           echo "profile=$profile" >> "$GITHUB_OUTPUT"
-          if [ "$profile" = WEEK12 ]; then
-            echo "::warning::WEEK12_COMPILER_NOT_EXECUTED: collection/source verification only; Week 12 compiler and publication acceptance NOT established."
-            echo "WEEK12_COMPILER_NOT_EXECUTED — source verified only. No Week 12 compiler preflight, canonical Hot Sheet publication, or end-to-end acceptance was performed by this workflow." >> "$GITHUB_STEP_SUMMARY"
-          fi
       - name: Compile and audit a read-only preflight draft
         id: preflight_compile
-        if: steps.preflight_source.outcome == 'success' && steps.preflight_source.outputs.profile == 'WEEK11'
+        if: steps.preflight_source.outcome == 'success'
         continue-on-error: true
         timeout-minutes: 1
         env:
@@ -70,14 +66,15 @@ jobs:
           python - <<'PY'
           import hashlib
           import json
+          import importlib
           import os
           import subprocess
           from datetime import datetime, timezone
           from pathlib import Path
+          from tempfile import NamedTemporaryFile
 
-          import cfb_week11_publication as week
-
-          gate = week.gate
+          import cfb_neutral_publication_gate as gate
+          from cfb_monitor_collection import active_profile
           temp = Path(os.environ['RUNNER_TEMP'])
           verified = temp / 'verified'
           proof = temp / 'proof'
@@ -86,20 +83,35 @@ jobs:
               raise ValueError('checkout head differs from workflow event')
           manifest = json.loads((verified / 'manifest.json').read_text())
           capture = (verified / 'capture.md').read_text()
-          lineage = Path('evidence/audits/CFB_WEEK11_ORIGINAL_ANCESTRY_RECOVERY_20261109.json').read_text()
           ops = Path('evidence/operational')
           market = (ops / 'CFB_MARKET_MONITOR_STATE.md').read_text()
           decision = (ops / 'CFB_DECISION_WAIT_LEDGER.md').read_text()
           now = datetime.now(timezone.utc)
+          profile = active_profile(now)
+          if profile.name != manifest['profile']:
+              raise ValueError('verified package and compiler profile differ')
+          lineage = profile.lineage.read_text()
+          if gate.blob(lineage) != profile.lineage_blob:
+              raise ValueError('compiler lineage does not match the accepted profile')
+          week = importlib.import_module(f'cfb_{profile.name.lower()}_publication')
           as_of = now.isoformat().replace('+00:00', 'Z')
           cycle = now.strftime('CFB_MARKET_MONITOR_%Y%m%dT%H%M%SZ')
-          saved = gate.selected_block(market, week.MARKET_TAG, gate.WEEKLY_MARKET_SCHEMA, now)
+          saved = gate.selected_block(market, gate.profile_config(profile.name)['market_tag'],
+                                      gate.WEEKLY_MARKET_SCHEMA, now)
           _, _, _, _, accepted = gate.inputs(market, decision, lineage, saved['as_of_utc'], week.PROFILE)
           rows = [{key: value for key, value in row.items()
                    if key not in ('state_recorded_at_utc', 'state_evidence')}
                   for row in accepted.values()]
-          market, decision = week.compile(market, decision, capture, lineage, cycle,
-                                          as_of, manifest['recovered_by'], rows)
+          if profile.name == 'WEEK11':
+              market, decision = week.compile(market, decision, capture, lineage, cycle,
+                                              as_of, manifest['recovered_by'], rows)
+          else:
+              with NamedTemporaryFile(dir=ops, suffix='.md', mode='w', encoding='utf-8') as retained:
+                  retained.write(capture)
+                  retained.flush()
+                  source = dict(path=str(Path(retained.name).resolve().relative_to(Path.cwd())),
+                                blob=gate.blob(capture), recovered_by=manifest['recovered_by'])
+                  market, decision = week.compile(market, decision, source, lineage, cycle, as_of, rows)
           args = (market, decision, (ops / 'CFB_EXECUTION_LEDGER.md').read_text(),
                   (ops / 'CFB_POSTGAME_FIRST_FROZEN_SCORECARD.md').read_text(),
                   lineage, as_of, week.PROFILE)

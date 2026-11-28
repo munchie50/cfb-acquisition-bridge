@@ -122,8 +122,12 @@ def selected_block(content,tag,schema,as_of,expected_ids=None):
                     raise ValueError('historical original conditional limits cannot change through PASS')
                 previous=old.get(x['game_id'])
                 if previous is not None:
-                    if tag==profile_config('WEEK13')['decision_tag'] and previous['state']=='HISTORICAL_GAP' and x!=previous:
-                        raise ValueError('Week13 historical gap cannot change or reopen')
+                    if tag==profile_config('WEEK13')['decision_tag'] and previous['state']=='HISTORICAL_GAP':
+                        expected = dict(previous)
+                        if r['schema'] == CONDITIONAL_DECISION_SCHEMA:
+                            expected.setdefault('review_ref', None)
+                        if x != expected:
+                            raise ValueError('Week13 historical gap cannot change or reopen')
                     if previous['state']==EXPIRED_UNPUBLISHED and x!=previous:
                         raise ValueError('expired unpublished recognition cannot change or reopen')
                     # Current-cycle clocks cannot erase an earlier constraint.

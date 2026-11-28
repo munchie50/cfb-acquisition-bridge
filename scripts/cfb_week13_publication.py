@@ -212,8 +212,11 @@ def compile(market, decision, source, lineage, cycle, as_of, decision_rows):
         if conditional:
             row.setdefault('review_ref', None)
         old = prior[4].get(row['game_id']) if prior else None
-        same = old is not None and {k: v for k, v in old.items()
-                                    if k not in ('state_recorded_at_utc', 'state_evidence')} == row
+        prior_fields = {k: v for k, v in (old or {}).items()
+                        if k not in ('state_recorded_at_utc', 'state_evidence')}
+        if conditional and old is not None:
+            prior_fields.setdefault('review_ref', None)
+        same = old is not None and prior_fields == row
         if old and row['state'] == old['state'] == 'PASS':
             if not same and gate.clock(sources[row['game_id']]['kickoff_utc']) <= gate.clock(as_of):
                 raise ValueError('elapsed PASS cannot rewrite pregame rationale')
