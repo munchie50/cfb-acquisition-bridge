@@ -1,0 +1,5 @@
+# Saturday 7 a.m. Market Monitor manual RUN_CLOSURE
+
+RUN_INCOMPLETE. Closure issued after independently reading back the exact terminal candidate `evidence/run_receipts/CFB_MARKET_MONITOR_20261128_0700CT_MANUAL_TERMINAL_CANDIDATE.md` at `0f618c7f027b5df24838580f17874b12a66b1d00`, blob `1fe2ee363b633094e8629e24d22488f2f4541808`. Manual run started 08:11:40 CT. Original scheduled run `298979cb-d6c0-8322-88c5-9d9480b978dc` remains RUN_INCOMPLETE.
+
+Selected publication `6620ef3ad0e67e60dae020544897fd630e0497e3` and selector v1.303 passed independent saved replay and 538-pointer verification from the fresh main checkout at `94c30c7edeee936a71c473e1110b6c76b7afbec6`. Full review `evidence/operational/CFB_WEEK13_NOV28_0700CT_MANUAL_FULL_SATURDAY_REVIEW.md` independently matched blob `cd9f5e8aaeaf57eac466abcc1be36dc86d706c74`. 69 Week 13 games captured, 53 Saturday fixtures reconciled, zero eligible singles or parlays. Further prospective player/scoring and execution evidence remains open as identified in the review. Friday cutoffs and the original natural-run result remain recorded. Scientific and Champion effect: none.
