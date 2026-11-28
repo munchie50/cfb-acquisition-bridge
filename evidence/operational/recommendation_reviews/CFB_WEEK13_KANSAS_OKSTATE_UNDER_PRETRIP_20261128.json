@@ -1,0 +1,82 @@
+{
+  "schema": "CFB_PROSPECTIVE_RECONSIDERATION_REVIEW_V3",
+  "game_id": "401856877",
+  "state": "CONDITIONAL",
+  "recorded_at_utc": "2026-11-28T15:12:47Z",
+  "original_lineage_blob": "7e160e97a511a9dec4535b9864041c27e6567822",
+  "maturity": "CONTROLLED_BETA_RECOMMENDATION",
+  "market": "TOTAL",
+  "selection": "under",
+  "rationale": "Controlled-Beta single for this trip: under 65.5 or higher at -115 or better. Kansas's conference-leading pass defense offers a direct matchup check against Oklahoma State's passing volume. The frozen 50.8 total and independent 47–49 drive screens still leave room at 65.5 under a faster pace and one extra touchdown. Confirm the exact full-game pair at the counter and cancel if material quarterback or scoring information changes before placement.",
+  "model_review": "The accepted frozen total is 50.8; the independently recovered opponent-adjusted and raw possession checks, about 47 and 49 at 11 drives per team, corroborate the direction. At 13 possessions plus a seven-point shock the adjusted scenario reaches 62.6; a second short-field or nonoffensive TD can take it above 65.5. Oklahoma State scored in 94- and 79-point games earlier in November, so the recent scoring tail is real.",
+  "material_sources": [
+    {
+      "url": "https://kuathletics.com/game-center/20539",
+      "retrieved_at": "2026-11-28T15:11:17Z",
+      "finding": "Official schedule confirms 5:15 p.m. CT and Kansas lists Isaiah Marshall as season passing and rushing leader."
+    },
+    {
+      "url": "https://okstate.com/game-center/17445",
+      "retrieved_at": "2026-11-28T15:11:17Z",
+      "finding": "Oklahoma State lists Drew Mestemaker as passing leader."
+    },
+    {
+      "url": "https://kuathletics.com/news/2026/11/23/football-jayhawks-travel-to-stillwater-to-take-on-cowboys",
+      "retrieved_at": "2026-11-28T15:11:17Z",
+      "finding": "Official preview pairs the Big 12's top passing offense with its top passing defense. Stillwater had no material adverse-weather assumption in this under case."
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-28-kansas-at-oklahoma-state/",
+      "retrieved_at": "2026-11-28T15:11:17Z",
+      "finding": "Friday report lists no quarterback availability downgrade for either projected lead QB. Kansas OL Carpenter probable, Oklahoma State WR Coleman available. The late final report is an uncertainty for a morning purchase."
+    }
+  ],
+  "uncertainty": "Conference report lacks final starting assignments. High-volume passing and a second short-field or nonoffensive touchdown can defeat the under. Do not place on new material adverse news or an unavailable exact counter price.",
+  "decision_rule": "Compare price and number jointly in the authorized qualitative Controlled Beta route. At 65.5 a 65-point game wins, unlike under 65. The independent football margin justifies the observed -115 ceiling for this pretrip review (53.49% non-push break-even); no calibrated probability or EV is claimed. Choose the cheaper eligible offer if available. Lower totals and greater juice require separate analysis.",
+  "source_qualification": "ESPN game-specific summary labels and links an identified DraftKings full-game quote. Retrieval-only; offer update and venue availability unverified. Caesars-attributed 65 -113 is below the number floor.",
+  "market_reference": {
+    "game_id": "401856877",
+    "market": "TOTAL",
+    "selection": "under",
+    "period": "PREGAME_FULL_GAME",
+    "kickoff_utc": "2026-11-28T23:15:00Z",
+    "kickoff_source_url": "https://kuathletics.com/game-center/20539",
+    "collection_start": "2026-11-28T15:11:17Z",
+    "collection_end": "2026-11-28T15:11:17Z",
+    "clock_semantics": "RESPONSE_RECOVERED_BY",
+    "quotes": [
+      {
+        "game_id": "401856877",
+        "market": "TOTAL",
+        "selection": "under",
+        "period": "PREGAME_FULL_GAME",
+        "book": "DraftKings",
+        "operator": "DraftKings",
+        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856877",
+        "operator_evidence_url": "https://sportsbook.draftkings.com/event/35043795?outcomes=0OU87304058U6550_3",
+        "retrieved_at": "2026-11-28T15:11:17Z",
+        "offer_updated_at": null,
+        "line": 65.5,
+        "price": -115
+      }
+    ]
+  },
+  "reconsideration": {
+    "prior_row_blob": "16191c381770f2ae65a31b0e8b4d4fecc5d182d1",
+    "reason": "New identified pre-trip quote, independently confirmed team passing matchup and possession stress support the exact price/number pair while the game remains pregame. Original Friday timing miss and prior PASS stay in retained history."
+  },
+  "acceptable_number": {
+    "market": "TOTAL",
+    "selection": "under",
+    "line": 65.5,
+    "minimum_price": -115,
+    "direction": "AT_LEAST"
+  },
+  "reconciliation_utc": "2026-11-28T15:45:00Z",
+  "planning_cutoff_utc": "2026-11-28T15:45:00Z",
+  "cutoff_basis": "User requests one immediate all-day placement window. Use a bounded morning validity window ending 09:45 CT, well before kickoff; counter verify exact line and price and cancel on adverse pre-placement news. This does not reopen Friday's historical delivery deadline.",
+  "execution_window": {
+    "start_utc": "2026-11-28T15:14:00Z",
+    "end_utc": "2026-11-28T15:45:00Z"
+  }
+}
