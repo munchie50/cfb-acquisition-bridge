@@ -435,3 +435,34 @@ Source: nine original user-uploaded Caesars Sportsbook slips from Harrah's Colum
 | CFB_NOV28-09 | 1716 | Louisiana Tech at Georgia Southern | Under 52.5 | -106 | $5.00 | 09:52 | 11:05 | $4.70 | $9.70 |
 
 Nine distinct tickets, $55.00 staked, $50.40 printed maximum profit, $105.40 combined printed maximum payout. Washington spread and Washington–Oregon total are separate straight tickets. The Kansas–Oklahoma State ticket matches the one-trip card's number and price threshold; its 09:55 printed issue is later than the card's 09:45 CT expiration if the ticket clock is CT. See [one-trip pregame card](CFB_WEEK13_NOV28_ONE_TRIP_PREGAME_CARD.md). Engine authorization and Champion linkage are unverified. Execution evidence only. Exclude these tickets from model inputs, recommendations, calibration and training. No realized P&L, cash movement or reconciled holdings inferred.
+
+
+## November 28, 2026 — second Week 13 Saturday ticket batch
+
+Source: eight original user-uploaded Caesars Sportsbook photos from Harrah's Columbus. Seven distinct new real-money tickets. The Louisiana Tech at Georgia Southern under 52.5 straight ticket ending 1716 matches CFB_NOV28-09, including its 09:52 issue, -106 odds, $5.00 stake and $9.70 maximum payout. Count it once. Issue and event times are as printed on November 28. Actual kickoff and receipt-clock timezone remain unverified. Timing classification UNVERIFIED. Production/sandbox allocation UNASSIGNED. Outcome, sportsbook settlement and pre-event engine attribution remain unverified.
+
+| Execution ID | Ticket suffix | Ticket type | Accepted selection | Odds | Stake | Printed issue | Printed event | Printed max win | Printed max payout |
+|---|---|---|---|---:|---:|---|---|---:|---:|
+| CFB_NOV28-10 | 7822 | Straight | Michigan at Ohio State over 36.5 | -110 | $10.00 | 09:52 | 11:10 | $9.10 | $19.10 |
+| CFB_NOV28-11 | 5504 | Straight | USC -4.5 at UCLA | -114 | $5.00 | 10:05 | 14:40 | $4.40 | $9.40 |
+| CFB_NOV28-12 | 4593 | Straight | Penn State -7.5 at Maryland | -103 | $4.15 | 10:07 | 14:35 | $4.05 | $8.20 |
+| CFB_NOV28-13 | 6995 | Straight | North Carolina -5.5 vs. NC State | -110 | $5.00 | 10:05 | 11:05 | $4.55 | $9.55 |
+| CFB_NOV28-14 | 7796 | 3-leg parlay | A | +594 | $5.00 | 10:03 | See legs | $29.70 | $34.70 |
+| CFB_NOV28-15 | 1756 | 3-leg parlay | B | +614 | $5.00 | 10:00 | See legs | $30.70 | $35.70 |
+| CFB_NOV28-16 | 0100 | 6-leg parlay | B followed by A | +4850 | $2.00 | 10:02 | See legs | $97.00 | $99.00 |
+
+Parlay A (CFB_NOV28-14), legs in printed order:
+
+1. Louisiana Tech at Georgia Southern under 52.5 (-106), 11:05.
+2. Michigan at Ohio State over 36.5 (-110), 11:10.
+3. Central Michigan -3 at Ball State (-115), 11:05.
+
+Parlay B (CFB_NOV28-15), legs in printed order:
+
+1. Kansas at Oklahoma State under 65.5 (-113), 17:20.
+2. Florida Atlantic at East Carolina under 58.5 (-112), 12:05.
+3. Washington +13.5 at Oregon (+100), 18:40.
+
+CFB_NOV28-16 is one separate ticket containing all six legs in the printed order B then A. Each parlay's printed stake is booked once at ticket level. Leg overlap with other tickets does not create additional straight executions.
+
+Second batch: four straights and three parlays, $36.15 staked, $179.50 printed maximum profit and $215.65 combined printed maximum payout. November 28 cumulative: 16 distinct tickets (13 straights and three parlays), $91.15 staked, $229.90 printed maximum profit and $321.05 combined printed maximum payout. Execution evidence only. Exclude these slips from model inputs, recommendations, calibration and training. No realized profit or cash movement inferred.
